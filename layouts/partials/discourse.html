@@ -3,8 +3,8 @@
 
 <script type="text/javascript">
   var discourseUrl = '{{ .Site.Params.discourseUrl }}',
-  discourseEmbedUrl =  'http:{{ .Permalink }}';
-alert(discourseEmbedUrl)
+  discourseEmbedUrl =  window.location.href;
+
   (function() {
     var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
       d.src = discourseUrl + 'javascripts/embed.js';
