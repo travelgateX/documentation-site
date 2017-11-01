@@ -1,32 +1,47 @@
 <!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
 <html>
-  <head>
-    <title>{{ block "title" . }}{{ .Page.Title }} | {{ .Site.Title }}{{ end }}</title>
-    {{if .Site.Params.themeStyle}}
-      {{ partial (printf "%s/head.html" .Site.Params.themeStyle) . }}
-    {{else}}
-      {{ partial "original/head.html" . }}
-    {{end}}
-  </head>
-  <body data-url="{{ .RelPermalink }}">
-    {{if .Site.Params.themeStyle}}
-      {{ partial (printf "%s/body-beforecontent.html" .Site.Params.themeStyle) . }}
-    {{else}}
-      {{ partial "original/body-beforecontent.html" . }}
-    {{end}}
-    <h1>asdasdas asd asd</h1>
-    {{ block "main" . }}  
-    {{ end }}
+    <head>
+        {{ partial "home_head.html" .}}
+    </head>
+    <body>
+        {{ partial "home_nav.html" .}}
+
+    {{ partial "home_hero.html" .}}
     
-    {{if .Site.Params.themeStyle}}
-      {{ partial (printf "%s/body-aftercontent.html" .Site.Params.themeStyle) . }}
-    {{else}}
-      {{ partial "original/body-aftercontent.html" . }}
+    {{ partial "home_intro.html" .}}
+
+    {{ if .Site.Params.work.enable }}
+          {{ partial "home_work.html" .}}
+        {{ end }}
+
+    {{ if .Site.Params.testimonials.enable }}
+          {{ partial "home_testimonials.html" .}}
     {{ end }}
 
-    {{ block "footer" . }}
+    {{ if .Site.Params.services.enable }}
+          {{ partial "home_services.html" .}}
     {{ end }}
 
-    {{ partial "custom-footer.html" . }}
-  </body>
+    {{ if .Site.Params.about.enable }}
+          {{ partial "home_about.html" .}}
+    {{ end }}
+
+    {{ if .Site.Params.counters.enable }}
+          {{ partial "home_counters.html" .}}
+        {{ end }}
+
+    {{ if .Site.Params.contact.enable }}
+      {{ partial "home_contact.html" .}}
+    {{ end }}
+
+    {{ if .Site.Params.footer.enable }}
+      {{ partial "home_footer.html" .}}
+    {{ end }}
+
+    {{ partial "home_js.html" .}}
+    </body>
 </html>
