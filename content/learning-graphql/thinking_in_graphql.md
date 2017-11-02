@@ -1,7 +1,7 @@
 +++
 title = "Thinking in GraphQL"
 description = ""
-weight = 3
+weight = 4
 alwaysopen = false
 +++
 
