@@ -2,7 +2,7 @@
 title = "ConnectX"
 description = ""
 weight = 2
-alwaysopen = false
+alwaysopen = true
 +++
 
 ## ConnectX

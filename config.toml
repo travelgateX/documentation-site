@@ -6,6 +6,8 @@ title = "TravelgateX Documentation"
 theme = "docdock"
 #themesdir = "../.."
 
+#GoogleAnalytics: "UA-106994170-2"
+
 [outputs]
 home = [ "HTML", "RSS", "JSON"]
 
@@ -14,7 +16,7 @@ home = [ "HTML", "RSS", "JSON"]
 pre = "<h3>More</h3>"
 name = "<i class='fa fa-github'></i> Github repo"
 identifier = "ds"
-url = "https://github.com/vjeantet/hugo-theme-docdock"
+url = "https://github.com/travelgatex/documentation-site"
 weight = 10
 
 [[menu.shortcuts]]
@@ -40,7 +42,8 @@ weight = 30
 
 ############## docdock params
 
-editURL = "https://github.com/vjeantet/hugo-theme-docdock/edit/master/exampleSite/content/"
+#editURL = "https://github.com/vjeantet/hugo-theme-docdock/edit/master/exampleSite/content/"
+editURL = "https://github.com/travelgateX/documentation-site/edit/master/content/"
 showVisitedLinks = true # default is false
 themeStyle = "original" # "original" or "flex" # default "original"
 themeVariant = "blue" # choose theme variant "green", "gold" , "gray", "blue" (default)
@@ -87,7 +90,7 @@ discourseUrl = "http://discourse.travelgatex.com/"
   
   # Hero section
   [params.hero]
-    title = "Finally, a travel API you'll&nbsp;&nbsp;<i title='love &#9825' class='icon-heart'></i>"
+    title = "Finally, a travel API you'll&nbsp;&nbsp;<i title='love &#9825;' class='icon-heart'></i>"
     subtitle = "At XTG, we've integrated 100s of travel APIs. This is why we've decided to build the first travel API focused on<br/><strong>Developer eXperience</strong>.<p>Welcome to <strong>ConnectX</strong>, the world's most _advanced_ and _disruptive_ <strong>GraphQL</strong> based Travel API.</p>"
  
   # Intro section

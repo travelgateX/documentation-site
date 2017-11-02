@@ -2,7 +2,7 @@
 title = "TravelgateX API Documentation"
 description = ""
 weight = 4
-alwaysopen = false
+alwaysopen = true
 +++
 
 ## GraphQL API Documentation
