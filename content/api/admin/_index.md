@@ -1,5 +1,5 @@
 +++
-title = "Account"
+title = "Admin"
 description = ""
 weight = 1
 alwaysopen = false

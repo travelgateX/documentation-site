@@ -14,26 +14,26 @@ home = [ "HTML", "RSS", "JSON"]
 
 [[menu.shortcuts]]
 pre = "<h3>More</h3>"
-name = "<i class='fa fa-github'></i> Github repo"
+name = "<i class='fa fa-github'></i> GraphQL Playground"
 identifier = "ds"
-url = "https://github.com/travelgatex/documentation-site"
+url = "https://api.travelgatex.com"
 weight = 10
 
-[[menu.shortcuts]]
-name = "<i class='fa fa-camera'></i> Showcases"
-url = "/showcase"
-weight = 11
+#[[menu.shortcuts]]
+#name = "<i class='fa fa-camera'></i> Showcases"
+#url = "/showcase"
+#weight = 11
 
-[[menu.shortcuts]]
-name = "<i class='fa fa-bookmark'></i> Hugo Documentation"
-identifier = "hugodoc"
-url = "https://gohugo.io/"
-weight = 20
+#[[menu.shortcuts]]
+#name = "<i class='fa fa-bookmark'></i> Hugo Documentation"
+#identifier = "hugodoc"
+#url = "https://gohugo.io/"
+#weight = 20
 
-[[menu.shortcuts]]
-name = "<i class='fa fa-bullhorn'></i> Credits"
-url = "/credits"
-weight = 30
+#[[menu.shortcuts]]
+#name = "<i class='fa fa-bullhorn'></i> Credits"
+#url = "/credits"
+#weight = 30
 
 
 #Elade HOME
@@ -45,7 +45,7 @@ weight = 30
 #editURL = "https://github.com/vjeantet/hugo-theme-docdock/edit/master/exampleSite/content/"
 editURL = "https://github.com/travelgateX/documentation-site/edit/master/content/"
 showVisitedLinks = true # default is false
-themeStyle = "original" # "original" or "flex" # default "original"
+themeStyle = "flex" # "original" or "flex" # default "original"
 themeVariant = "blue" # choose theme variant "green", "gold" , "gray", "blue" (default)
 ordersectionsby = "weight" # ordersectionsby = "title"
 disableHomeIcon = false # default is false
