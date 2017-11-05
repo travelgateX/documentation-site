@@ -54,3 +54,7 @@ Build, create and play with queries, it's fun!
 
 {{% alert theme="danger" %}}**TODO: Falta chicha!!**{{% /alert %}}
 
+### Big List
+Very curated list full of different tools, resources, etc
+
+* [Awesome GraphQL](https://github.com/chentsulin/awesome-graphql)

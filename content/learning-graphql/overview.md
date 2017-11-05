@@ -23,13 +23,13 @@ Designed by [Facebook](https://code.facebook.com/posts/1691455094417024/graphql-
 
 ### GraphQL at travelgateX
 
-GraphQL fits perfectly each and every need of our applications:
+GraphQL is a perfect fit for each and every need of our applications:
 
 - **Scalable**: we must be able to handle millions of requests.
 - **Stable**: a change in the API must not break the client.
 - **Fast**: GraphQL not only allows faster response times by *letting you choose exactly what you want*, but also is consumes less bandwidth which makes responses lighter.
  
-We're a company focused in providing APIs for our clients. SOAP APIs are long gone and modelling REST APIs to fit a vast variety of products is not only hard, but the bigger it gets the more unmanageable.
+We're a company focused in providing APIs for our clients. SOAP APIs are long gone and modelling REST APIs to fit a vast variety of products is not only hard, but the bigger it gets, the more unmanageable it becomes.
 
 At travelgateX, we're true believers of the *Kaisen* philosophy. We're constantly researching for new ways of improvement.
 
