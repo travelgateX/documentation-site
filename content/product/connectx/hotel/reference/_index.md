@@ -1,12 +1,11 @@
 +++
-title = "Hotel"
+title = "Reference"
 description = ""
 weight = 5
 alwaysopen = false
 +++
 
-## Hotel
+## Reference
 
-## sdfsdf
+links to quicstarts
 
-### hotelssss

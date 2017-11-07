@@ -20,10 +20,10 @@ We hope you enjoy!
 
 ## Resources
 
+- [GraphQL official documentation](http://graphql.org/learn/)
+- [Apollo](http://dev.apollodata.com/)
+- [Relay official documentation](http://facebook.github.io/relay/docs/getting-started.html) 
 - [Schema first development - Johannes Schickling](https://www.youtube.com/watch?v=SdWI7XaAeeY)
 - [Schema-first development with GraphQL](https://conferences.oreilly.com/fluent/fl-ca-2017/public/schedule/detail/58715)
 - [GraphQL First in practice at Quri](https://dev-blog.apollodata.com/graphql-first-in-practice-at-quri-7bf84b260135)
 - [GraphQL First: A better way to build modern apps](https://dev-blog.apollodata.com/graphql-first-a-better-way-to-build-modern-apps-b5a04f7121a0)
-
-{{% alert theme="danger" %}}**TODO: Falta chicha!!**{{% /alert %}}
-

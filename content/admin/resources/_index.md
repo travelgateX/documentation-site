@@ -1,10 +1,8 @@
-    +++
-title = "ConnectX"
++++
+title = "Resources"
 description = ""
-weight = 2
+weight = 4
 alwaysopen = false
 +++
-
-## ConnectX
 
 {{%children style="h2" description="true"%}}

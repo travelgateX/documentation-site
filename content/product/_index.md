@@ -1,10 +1,10 @@
 +++
-title = "Admin"
+title = "Products"
 description = ""
-weight = 1
+weight = 3
 alwaysopen = false
 +++
 
-## Account
+## Products
 
 {{%children style="h2" description="true"%}}

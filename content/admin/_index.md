@@ -1,7 +1,8 @@
 +++
-title = "Learning GraphQL"
+title = "Admin"
 description = ""
-weight = 5
+weight = 4
 alwaysopen = false
 +++
+
 {{%children style="h2" description="true"%}}

@@ -1,7 +1,10 @@
 +++
-title = "Learning GraphQL"
+title = "ConnectX"
 description = ""
-weight = 5
+weight = 2
 alwaysopen = false
 +++
+
+## ConnectX
+
 {{%children style="h2" description="true"%}}

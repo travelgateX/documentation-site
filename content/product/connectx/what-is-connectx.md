@@ -30,7 +30,7 @@ The main funcionalities of the business logic layer includes, but not limited to
 * Hotel Mapping
 * Room Type Mapping
 * Sort & Filter results
-* Add pricing/margins, on both purchasing side _and_ distribution
+* Add pricing/markups, on both purchasing side _and_ distribution
 * Currency Exchange
 * Plugins: there's a specific section about that [here](/connectx/plugins/).
 

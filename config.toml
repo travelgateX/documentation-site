@@ -146,46 +146,39 @@ discourseUrl = "http://discourse.travelgatex.com/"
     footertext = 'APIs Made With &#9825; For Developers &amp; By Developers'
 
     [[params.work.row]]
-      url = "api/connectx/hotel/"
+      url = "product/connectx/hotel/"
       img = "work_1.jpg"
       alt = "Image2"
-      title = "Hotel Search & Book API"
+      title = "Hotel Search & Book"
       subtitle = "Search & Book on more than 400 hotel suppliers, seamlessly!"
 
     [[params.work.row]]
-      url = "api/connectx/flight/"
+      url = "product/connectx/flight/"
       img = "work_2.jpg"
       alt = "Image2"
-      title = "Flight Search & Book API"
+      title = "Flight Search & Book"
       subtitle = "NDC certified search & book API with many traditional, low cost and NDC carriers + GDS."
 
     [[params.work.row]]
-      url = "api/stats/"
+      url = "product/stats/"
       img = "work_3.jpg"
       alt = "Image3"
-      title = "Stats API"
+      title = "Stats"
       subtitle = "Real-time information about all your requests: totals, response times, status and more."
 
     [[params.work.row]]
-      url = "api/insights/"
+      url = "product/insights/"
       img = "work_4.jpg"
       alt = "Image4"
-      title = "Insights API"
+      title = "Insights"
       subtitle = "Get detailed Business Intelligence data such as ratios per hotel, country, market and many more."
 
     [[params.work.row]]
-      url = "api/mappea/"
+      url = "product/mappea/"
       img = "work_5.jpg"
       alt = "Image5"
       title = "Mappea API"
       subtitle = "Map and de-dupe hotels using our unique collaborative mapping API. More than 19 Million hotels."
-
-    [[params.work.row]]
-      url = "api/account/"
-      img = "work_6.jpg"
-      alt = "Image6"
-      title = "Account API"
-      subtitle = "Create & Manage your users, connections and API keys. Use this API to keep track of your account."
 
   # Testimonials section
   [params.testimonials]

@@ -1,8 +1,11 @@
 +++
 title = "Resources"
 description = ""
-weight = 5
+weight = 6
 alwaysopen = false
 +++
 
 ## Resources
+
+links to quicstarts
+
