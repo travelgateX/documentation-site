@@ -1,11 +1,10 @@
 +++
-title = "Tutorials"
+title = "How-to Guides"
 description = ""
 weight = 3
 alwaysopen = false
 +++
 
-## Tutorials
+How-to Guides
 
-links to quicstarts
 

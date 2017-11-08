@@ -7,5 +7,5 @@ alwaysopen = false
 
 ## Reference
 
-links to quicstarts
+
 

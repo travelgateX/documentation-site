@@ -7,5 +7,3 @@ alwaysopen = false
 
 ## Resources
 
-links to quicstarts
-
