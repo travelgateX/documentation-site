@@ -1,6 +1,6 @@
 +++
-title = "Mappintgs"
+title = "Plugins"
 description = ""
-weight = 2
+weight = 5
 alwaysopen = false
 +++

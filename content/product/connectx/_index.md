@@ -7,4 +7,4 @@ alwaysopen = false
 
 ## ConnectX
 
-{{%children style="h2" description="true"%}}
+{{%children style="h2" description="false"%}}
