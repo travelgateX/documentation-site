@@ -9,16 +9,16 @@ Search & Book Hotels, Flights, etc in more than 600 suppliers seemlessly.
 - Install [Hugo](https://gohugo.io/)
 - Clone the repo:
 
-`$ git clone git@github.com:travelgateX/documentation-site.git`
+`git clone git@github.com:travelgateX/documentation-site.git`
 
 - Init the submodule
 
-`$ git submodule update --init`
+`git submodule update --init`
 
 - Edit the markdown files in the `content` directory
 - Start the local webserver:
 
-`$ hugo server -D`
+`hugo server -D`
 
 - View your changes locally at `http://localhost:1313/`
 
@@ -29,7 +29,7 @@ Hugo generates the static HTML files and in order to deploy we need push the cha
 
 There's a script that does this automatically:
 
-`$ ./deploy.sh`
+`./deploy.sh`
 
 ## Common Pitfalls
 
@@ -38,11 +38,11 @@ There's a script that does this automatically:
 Sometimes we cannot push the submodule to github. In order to fix this issue you need to change to the `public` directory and overwrite the local changes with the uptream version:
 
 ```bash
-$ cd public/
-$ git reset --hard origin/master
-$ git pull origin master
-$ cd ..
-$ ./deploy.sh
+cd public/
+git reset --hard origin/master
+git pull origin master
+cd ..
+./deploy.sh
 ```
 
 ### Submodule not in master branch
@@ -50,16 +50,10 @@ $ ./deploy.sh
 Sometimes the submodule stats checkout in a specific commit. In order to fix it, just change to that directory and checkout master
 
 ```bash
-$ cd public/
-$ git checkout master
-$ git reset --hard origin/master
-$ git pull origin master
-$ cd ..
-$ ./deploy.sh
+cd public/
+git checkout master
+git reset --hard origin/master
+git pull origin master
+cd ..
+./deploy.sh
 ```
-
-
-
-
-
-

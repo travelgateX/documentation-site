@@ -19,11 +19,11 @@ Follow the steps in [Creating an access token](/admin/security/authentication/#c
 Single endpoint which remains constant no matter what operation you perform: https://api.travelgatex.com
 
 ### Communicating with GraphQL
-Because GraphQL operations consist of multiple operations and schemas, XMLTravelgate recommends using the Explorer to make GraphQL calls.
+Because GraphQL operations consist of multiple operations and schemas, TravelgateX recommends using the Explorer to make GraphQL calls.
 There are some alternatives to use GraphQL builtin explorer like GraphQL Playground. You can also use cURL or any other HTTP-speaking library.
 {{% alert theme="info" %}}It's mandatory that production clients enable GZIP compression in HTTP header{{% /alert %}} 
 
-```javascript
+```html
 Accept-Encoding: gzip
 ```
 
