@@ -1,9 +1,31 @@
 +++
-title = "Custom Scalar Types"
+title = "GraphQL Implementation"
 description = ""
-weight = 4
+weight = 1
 alwaysopen = false
 +++
+
+## Overview
+
+The basic idea of travelgateX GraphQL API is to provide a single entry point to manage all products.
+
+travelgateX follow some conventions about schema definition:
+
+* [Relay schema requirements](../relay)
+* [Definition of custom scalar types](../custom-scalar-types)
+* [Token Based Authentication](../travelgatex-graphql-api/#authenticating)
+
+## Relay Implementation
+TravelgateX uses [Relay](https://facebook.github.io/relay/) schema requirements for own Resources.
+Other resources, like supplier search response, are not modeled with Relay practices.
+
+Relay helps travelgateX API in order to standarize:
+
+* Standards for querying paginated collections ("Connections" and "Edges")
+* Identifying objects directly from the root of a query (avoiding long nested queries)
+* Provide mutation input data
+
+## Custom Scalar Types
 
 TravelgateX GraphQL schema implementation defines custom scalar types.
 
@@ -43,6 +65,5 @@ In queries or mutations, Language fields have to be specified in ISO 3166-1 alph
 The Currenty type represents Currency values. A good example might be a Rate Price Currency.
 
 In queries or mutations, Currency fields have to be specified in ISO 4217 format with enclosing double quotes `"EUR"`.
-
 
 

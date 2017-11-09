@@ -3,10 +3,7 @@ title = "Mappea"
 description = ""
 weight = 4
 alwaysopen = false
-type = "product"
-
 +++
-
-## Stats
+## Mappea
 
 {{%children style="h2" description="true"%}}

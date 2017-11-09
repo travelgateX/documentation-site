@@ -13,7 +13,7 @@ TravelgateX is the first-in-the-industry travel API completely based in GraphQL.
 It is a stable, secure and fault tolerant load balanced between many datacenters from 4 different cloud providers, namely [Microsoft Azure](https://azure.microsoft.com/), [Google Cloud Platform](https://cloud.google.com/), [Hetzner](https://www.hetzner.de/) and [TotalUptime](http://totaluptime.com/).
 For the full reasoning behind working with GraphQL please click [here](/learning-graphql/overview/#graphql-at-travelgatex).
 
-For explanation about using TravelgateX GraphQL API please clieck [here](/graphql-api/).
+For explanation about using TravelgateX GraphQL API please click [here](/graphql-api/).
 
 ## Products
 TravelgateX organize resources and it's business rules in order to make up products. 

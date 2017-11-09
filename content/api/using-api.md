@@ -1,7 +1,7 @@
 +++
-title = "GraphQL API"
+title = "Using the API"
 description = ""
-weight = 4
+weight = 2
 alwaysopen = false
 +++
 

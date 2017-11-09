@@ -1,10 +1,8 @@
 +++
-title = "prova"
+title = "Products"
 description = ""
 weight = 3
-type = "product"
+alwaysopen = false
 +++
-
-## Products
 
 {{%children style="h2" description="true"%}}
