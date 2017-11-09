@@ -6,7 +6,7 @@ alwaysopen = false
 isDirectory = false
 +++
 
-## What's ConnectX?
+## Overview
 
 ConnectX is the ultimate connectivity solution, it not only _connects_ you to multiple suppliers, but also _adds_ business logic _solving_ most of the problems commonly found in the travel business in an **elegant and efficient** way.
 

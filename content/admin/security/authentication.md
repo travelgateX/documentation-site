@@ -5,8 +5,7 @@ weight = 1
 alwaysopen = false
 +++
 
-## Authentication
-
+## Overview
 Authentication allows you to know who is the current user, to log user in and to register new users.
 
 Every request to travelgateX GraphQL API may contain a Authorization header with a JSON Web Token or API Key inside.
