@@ -1,0 +1,29 @@
+<div class="mo-header fixed-top">
+    <div class="top-header">
+        <nav class="navbar navbar-toggleable-sm navbar-light bg-primary flex-row align-items-center">
+            <a class="navbar-brand" href="{{"/" | relURL}}">
+                <img src="{{"images/xtg_logo.svg" | relURL}}">
+            </a>
+            <div class="iso-input-search hidden-xs-down">
+                {{- if not .Site.Params.disableSearch}}
+                <div class="ico-label">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                </div>
+                <input data-search-input class="form-control"  id="search-by" type="text" placeholder="{{T " Search-placeholder "}}">
+                <script type="text/javascript" src="{{"js/lunr.min.js" | relURL}}"></script>
+                <script type="text/javascript" src="{{"js/auto-complete.js" | relURL}}"></script>
+                <script type="text/javascript">
+                    {{ if .Site.IsMultiLingual }}
+                    var baseurl = "{{.Site.BaseURL}}{{.Site.LanguagePrefix}}";
+                    {{ else }}
+                    var baseurl = "{{.Site.BaseURL}}";
+                    {{ end }}
+                </script>
+                <script type="text/javascript" src="{{"js/search.js" | relURL}}"></script> {{- end}}
+            </div>
+            <ul class="navbar-nav flex-row ml-auto">
+    
+            </ul>
+        </nav>
+    </div>
+</div>

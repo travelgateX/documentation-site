@@ -1,8 +1,10 @@
 +++
-title = "GraphQL API"
+title = "prova"
 description = ""
-weight = 2
-alwaysopen = false
+weight = 3
+type = "product"
 +++
+
+## Products
 
 {{%children style="h2" description="true"%}}

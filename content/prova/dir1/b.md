@@ -1,10 +1,10 @@
 +++
-title = "Stats"
+title = "b"
 description = ""
-weight = 4
-alwaysopen = false
+weight = 3
+type = "product"
 +++
 
-## Stats
+## Products
 
 {{%children style="h2" description="true"%}}

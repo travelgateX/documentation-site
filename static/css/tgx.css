@@ -1,22 +1,228 @@
-img[src$='#center']
-{
-    display: block;
-    margin: 0.7rem auto; /* you can replace the vertical '0.7rem' by
+img[src$="#center"] {
+  display: block;
+  margin: 0.7rem auto; /* you can replace the vertical '0.7rem' by
                             whatever floats your boat, but keep the
                             horizontal 'auto' for this to work */
-    /* whatever else styles you fancy here */
+  /* whatever else styles you fancy here */
 }
 
-img[src$='#floatleft']
-{
-    float:left;
-    margin: 0.7rem;      /* this margin is totally up to you */
-    /* whatever else styles you fancy here */
+img[src$="#floatleft"] {
+  float: left;
+  margin: 0.7rem; /* this margin is totally up to you */
+  /* whatever else styles you fancy here */
 }
 
-img[src$='#floatright']
-{
-    float:right;
-    margin: 0.7rem;      /* this margin is totally up to you */
-    /* whatever else styles you fancy here */
+img[src$="#floatright"] {
+  float: right;
+  margin: 0.7rem; /* this margin is totally up to you */
+  /* whatever else styles you fancy here */
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+#TableOfContents ul{
+  padding: 5px
+}
+
+body {
+  background-color: #f6f8f9 !important;
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  color: #182945 !important;
+}
+
+.material-box {
+  background-color: #ffffff;
+  -webkit-box-shadow: 1px 1px 3px 0 rgba(216, 227, 232, 0.49);
+  box-shadow: 1px 1px 3px 0 rgba(216, 227, 232, 0.49);
+  border-radius: 2px;
+}
+
+.header-module {
+  top: 54px;
+  background-color: white;
+  z-index: 3;
+}
+
+.bottom-header.header-module .nav-link {
+  font-family: "Lato", sans-serif;
+  color: #182945;
+  border-bottom: 4px solid transparent;
+  margin-right: 20px;
+  padding: 12px;
+}
+.nav-link {
+  display: block;
+  padding: 0.5em 1em;
+}
+
+.bottom-header.header-module {
+  border-bottom: 1px solid rgba(234, 239, 243, 0.6);
+}
+
+.bottom-header {
+  position: fixed;
+  width: 100%;
+}
+
+.menu-left, .menu-right, .content-center{
+  float: left;
+  padding: 0 15px;
+  position: relative;
+}
+
+.menu-left{
+  width: 20%;  
+}
+
+.menu-left nav{
+  position: fixed;
+  width: 250px
+}
+.menu-right{
+  width: 15%;
+}
+
+.menu-right nav{
+  background: transparent;
+  border-left: 2px solid #007bff;
+  position: fixed;
+}
+
+.menu-right nav ul{
+  list-style-type: none;
+}
+
+.clear {
+  clear: both;
+}
+
+/* nav.menu-nav {
+  position: fixed;
+  width:inherit;
+  max-width:inherit;
+} */
+
+.content-center{
+  width: calc(65%); 
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 1084px !important;    
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1300px !important;   
+  }
+}
+.container.main {
+  margin-top: 100px;
+}
+.mo-header {
+  z-index: 10;
+}
+
+.mo-header .top-header .navbar {
+  padding: 5px 30px;
+}
+
+.bg-primary {
+  background: linear-gradient(135deg, #0754ae 0%, #0562ce 100%);
+}
+
+.iso-input-search .form-control {
+  padding-left: 35px;
+}
+
+.iso-input-search input {
+  margin-bottom: auto;
+}
+.iso-input-search .ico-label .fa {
+  padding: 12px 12px;
+  color: #b7c7cf;
+}
+
+
+nav.menu-nav ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+nav a span {
+  display: inline-block;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+}
+div.contenido {
+  margin-left: 255px;
+  margin-top: 53px;
+}
+nav.menu-nav ul li a {
+  height: 30px;
+  display: inline-block;
+  width: 100%;
+  padding: 0 5px;
+}
+
+nav.menu-nav ul li a:hover {
+  background-color: white;
+}
+nav.menu-nav ul li a > * {
+  vertical-align: middle;
+}
+
+.navbar-brand {
+  display: inline-block;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  margin-right: 1rem;
+  font-size: 1.25rem;
+  line-height: inherit;
+  white-space: nowrap;
+}
+
+.navbar-brand img {
+  vertical-align: middle;
+}
+
+.iso-input-search .ico-label {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+}
+
+.align-items-center {
+  -webkit-box-align: center !important;
+  -ms-flex-align: center !important;
+  align-items: center !important;
+}
+
+.top-header > .navbar {
+  padding: 5px 30px;
+}
+
+.iso-input-search {
+  width: 40%;
+}
+
+.mo-header .top-header .navbar .iso-input-search {
+  width: 40%;
+}
+
+.iso-input-search {
+  position: relative;
 }

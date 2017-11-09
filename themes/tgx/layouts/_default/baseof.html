@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{ block "title" . }}{{ .Page.Title }} | {{ .Site.Title }}{{ end }}</title>
+
+  </head>
+  <body data-url="{{ .RelPermalink }}">
+    {{ partial "header.html" . }}
+    
+    {{ block "main" . }}
+    {{ end }}
+
+
+    {{ partial "footer.html" . }}
+  </body>
+</html>
