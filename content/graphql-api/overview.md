@@ -11,6 +11,7 @@ travelgateX follow some conventions about schema definition:
 
 * [Relay schema requirements](../relay)
 * [Definition of custom scalar types](../custom-scalar-types)
+* [Token Based Authentication](../travelgatex-graphql-api/#authenticating)
 
 
 

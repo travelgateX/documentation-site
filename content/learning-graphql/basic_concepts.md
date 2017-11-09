@@ -22,7 +22,7 @@ This fact makes versioning totally unnecessary in GraphQL APIs. There's no need 
 
 As a bonus, the GraphQL specification includes handling of [`deprecated`](http://facebook.github.io/graphql/October2016/#sec-Object-Field-deprecation?utm_source=docs.travelgatex.com) fields and marks a field as `is-deprecated` by adding a [`deprecationReason`](http://graphql.org/graphql-js/type/#graphqlobjecttype?utm_source=docs.travelgatex.com) to the field.
 
-An example query:
+[Query example](/product/connectx/hotel/concepts/book-transactions/#playground-samples)
 
 `EJEMPLO PEQUE DE DISPO`
 {{% alert theme="danger" %}}**TODO: Falta ejemplo!!**{{% /alert %}}
@@ -31,5 +31,4 @@ An example query:
 
 Mutations are methods that _change_ the server. It makes a physical change to the data. Could be inserting a new object in a database, deleting or updating. Queries take care of POST, PUT and DELETE methods in a REST API or INSERT, UPDATE and DELETE in SQL.
 
-{{% alert theme="danger" %}}**TODO: Falta chicha!!**{{% /alert %}}
-
+[Mutation example](/product/connectx/hotel/concepts/book-transactions/#playground-samples):
