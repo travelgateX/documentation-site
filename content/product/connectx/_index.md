@@ -1,5 +1,5 @@
 +++
-title = "Products"
+title = "ConnectX"
 description = ""
 weight = 1
 alwaysopen = false

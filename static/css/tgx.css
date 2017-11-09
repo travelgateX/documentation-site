@@ -96,6 +96,12 @@ body {
 .menu-right nav ul{
   list-style-type: none;
 }
+.pageTitle{
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(204, 213, 218, 0.6);
+  margin-bottom: 40px;
+  color: #292b2c;
+}
 
 .clear {
   clear: both;

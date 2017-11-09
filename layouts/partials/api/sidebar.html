@@ -25,7 +25,9 @@
             {{- if eq .URL $currentNode.URL}} active{{end}}
             {{- if .Params.alwaysopen}} alwaysopen{{end -}}
             ">
-          <a href="#" class="directory">
+
+            <a href="{{if ne .Params.isDirectory true}}{{ .RelPermalink}}{{else}}#{{end}}" class="{{if ne .Params.isDirectory false}}directory{{end}}">
+       
             <span>
                 {{- $numberOfPages := (add (len .Pages) (len .Sections)) }}
                 {{- if ne $numberOfPages 0 }}
@@ -73,7 +75,7 @@
          {{- if eq .URL $currentNode.URL}} active{{end -}}
           ">
             <a href="{{ .RelPermalink}}">
-              <span>{{safeHTML .Params.Pre}}{{.Title}}{{safeHTML .Params.Post}}</span>
+              <span style="padding-left: 8px;">{{safeHTML .Params.Pre}}{{.Title}}{{safeHTML .Params.Post}}</span>
               {{- if $showvisitedlinks}}<i class="fa fa-circle-thin read-icon"></i>{{end}}
             </a>
         </li>
@@ -90,9 +92,10 @@
   $(document).ready(()=>{
     $('.directory').click((event)=>{
       if($(event.currentTarget.parentElement).hasClass("parent")){
-        $(event.currentTarget.parentElement).addClass("active parent")
+        $(event.currentTarget.parentElement).removeClass("parent")
+        // $(event.currentTarget).find('.category-icon')[0]
       }else{
-        event.currentTarget.parentElement.setAttribute("class","dd-item active parent"); 
+        event.currentTarget.parentElement.setAttribute("class","dd-item parent"); 
       }
      return false;
     })
