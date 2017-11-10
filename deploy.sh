@@ -6,9 +6,10 @@ echo -e "\033[0;32mDeploying updates to GitHub...\033[0m"
 cd public
 
 #checkout master and revert changes
-git checkout master
 git reset --hard origin/master
+git checkout master
 git pull origin master
+rm -rf *
 cd ..
 
 # Build the project.
@@ -32,3 +33,7 @@ git push origin master
 
 # Come Back up to the Project Root
 cd ..
+
+# Commit & push main repo
+git commit -m "$msg" -a
+git push origin master

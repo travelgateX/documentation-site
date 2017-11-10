@@ -1,19 +1,34 @@
 +++
-title = "GraphQL Implementation"
+title = "GraphQL and TravelgateX"
 description = ""
-weight = 1
+weight = 5
 alwaysopen = false
 +++
 
-## Overview
+## Using the API
 
-The basic idea of travelgateX GraphQL API is to provide a single entry point to manage all products.
+The two types of allowed operations in TravelgateX GraphQL API are:
 
-travelgateX follow some conventions about schema definition:
+* [Queries](http://graphql.org/learn/queries/)
+* [Mutations](http://graphql.org/learn/queries/)
 
-* [Relay schema requirements](../relay)
-* [Definition of custom scalar types](../custom-scalar-types)
-* [Token Based Authentication](../travelgatex-graphql-api/#authenticating)
+For more information about using a GraphQL API click [here](/learning-graphql/).
+
+## Examples
+We share [GraphQL Playgrounds](https://github.com/graphcool/graphql-playground) with common scenarios using products.
+Playgrounds are shared in [product](/product/) reference sections, for example you can use  [ConnectX Hotel Playground](https://graphqlbin.com/JYRtB)
+
+It's important to use the correct Headers. If you want to use test headers, insert `"Authorization":"Apikey q8ggxpoVDW76Kw918hwnnRvxlZmAP2QZ"`
+
+You can easily [share](https://github.com/graphcool/graphql-playground#how-does-graphql-bin-work) your Queries with others by clicking on the "Share" button and sharing the generated link. You can think about GraphQL Bin like Pastebin for your GraphQL queries including the context (endpoint, HTTP headers, open tabs etc).
+
+## Conventions
+
+TravelgateX follow some conventions about schema definition:
+
+* [Relay schema requirements](#Relay Implementation)
+* [Definition of custom scalar types](#Custom Scalar Types)
+* [Token Based Authentication](/getting-started/security/#Authentication)
 
 ## Relay Implementation
 TravelgateX uses [Relay](https://facebook.github.io/relay/) schema requirements for own Resources.
@@ -65,5 +80,3 @@ In queries or mutations, Language fields have to be specified in ISO 3166-1 alph
 The Currenty type represents Currency values. A good example might be a Rate Price Currency.
 
 In queries or mutations, Currency fields have to be specified in ISO 4217 format with enclosing double quotes `"EUR"`.
-
-
