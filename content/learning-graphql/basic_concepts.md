@@ -12,7 +12,8 @@ alwaysopen = false
  
 There are 2 basic operations in GraphQL schemas:
 
-### Queries <cite>http://graphql.org/learn/queries/?utm_source=docs.travelgatex.com</cite>
+### Queries 
+<cite>http://graphql.org/learn/queries/?utm_source=docs.travelgatex.com</cite>
 
 Just like a RESTful _Get_ method, queries _query_ the system. This operation reads values from the server using a Graph Object and gets a JSON as a response.
 
@@ -27,7 +28,8 @@ As a bonus, the GraphQL specification includes handling of [`deprecated`](http:/
 `EJEMPLO PEQUE DE DISPO`
 {{% alert theme="danger" %}}**TODO: Falta ejemplo!!**{{% /alert %}}
 
-### Mutations <cite>http://graphql.org/learn/queries/#mutations?utm_source=docs.travelgatex.com</cite>
+### Mutations 
+<cite>http://graphql.org/learn/queries/#mutations?utm_source=docs.travelgatex.com</cite>
 
 Mutations are methods that _change_ the server. It makes a physical change to the data. Could be inserting a new object in a database, deleting or updating. Queries take care of POST, PUT and DELETE methods in a REST API or INSERT, UPDATE and DELETE in SQL.
 
