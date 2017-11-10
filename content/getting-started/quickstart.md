@@ -1,5 +1,5 @@
 +++
-title = "The Basics"
+title = "Quickstart"
 description = ""
 weight = 2
 alwaysopen = false
@@ -13,7 +13,7 @@ At this moment, please [contact us](mailto:sales@travelgatex.com) in order to be
 
 We will be publishing a registration website so each developer can register for an account with us. Please bear with us.
 
-## Create your API key
+## Communicate with GraphQL Server
 
 To communicate with the GraphQL server, you'll need an access token with the right scopes.
 
@@ -29,44 +29,13 @@ One of the great things we love about GraphQL is that there's only one single en
 
 {{% alert theme="warning" %}}https://api.travelgatex.com{{% /alert %}} 
 
-## Making Requests
-
-Because GraphQL operations consist of multiple operations and schemas, we recommend using the Explorer to make GraphQL calls.
-There are some alternatives to use GraphQL builtin explorer like GraphQL Playground. You can also use cURL or any other HTTP-speaking library.
-
-{{% alert theme="danger" %}}All **LIVE** traffic **MUST** enable GZIP compression in the HTTP header{{% /alert %}} 
-
-```html
-Accept-Encoding: gzip
-```
-
-To query GraphQL using cURL, make a POST request with a JSON payload. The payload must contain a string called query:
-
-```bash
-curl -X\
-   POST\
-   -H "Content-Type: application/json" \
-   -H "Authorization: Apikey q8ggxpoVDW76Kw918hwnnRvxlZmAP2QZ"  \
-   --data '{"query":"{searchStatusService{code description}}"}' \
-   --compressed \
-   https://api.travelgatex.com
-```
-
-
-## Debugging requests
-
-{{% alert theme="danger" %}}**TODO: Falta chicha!!**{{% /alert %}}
-
-## API Call Limits
-
-{{% alert theme="danger" %}}**TODO: Falta chicha!!**{{% /alert %}}
 
 ## Product Specific Quick Start
 
 Although there's only one endpoint, our GraphQL API models all the products and services we offer. Please navigate to the desired product documentation in order to start building your app.
 
-- [ConnectX Hotel](/connectx/hotel/): Next generation hotel search & booking API.
-- [ConnectX Flights](/connectx/flight): Next generation _NDC compliant_ flight search & booking API.
+- [ConnectX Hotel](/products/connectx/hotel/quickstart/): Next generation hotel search & booking API.
+- ConnectX Flights: Next generation _NDC compliant_ flight search & booking API.
 - Stats: All the requests sent and received, their response times and status codes.
 - Insights: Become a true data-first decision maker by leveraging our rich Insights API. All the requests, all the searches, everything you've made with us available here.
 - Mappea: Collaborative Hotel Mapping. Use this API to map your suppliers or to make that everything you have mapped is accurate.

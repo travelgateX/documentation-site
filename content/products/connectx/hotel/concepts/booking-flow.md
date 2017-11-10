@@ -1,5 +1,5 @@
 +++
-title = "Book Transactions"
+title = "Booking Flow"
 description = ""
 weight = 3
 alwaysopen = false

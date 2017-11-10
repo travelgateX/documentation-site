@@ -17,11 +17,10 @@ For explanation about using TravelgateX GraphQL API please click [here](/graphql
 
 ## Partner
 
-A _Partner_ is someone or _something_ that can interact with any TravelgateX APIs or apps. It can be either a user (person) or an API key.
+A _Partner_ is someone or _something_ that can interact with any TravelgateX APIs or apps. It can be either a _User_, which identifies a person, or _Service Account_ which identifies an applicattion.
 
-## Resources
-Resources are entities that define common objects in all our API domains.
-We have 4 _Resources_:
+## Entities
+Entities or core resources are entities that define common objects in all our API domains.
 
 ### 1. Supplier
   
@@ -33,7 +32,7 @@ An _Access_ is a set of credentials _and_ configuration in order to access a _Su
 
 ### 3. Context
 
-A _Context_ is one or more _Suppliers_ which use the same _Integration_.
+A _Context_ is one or more _Suppliers_ which use the same _codes_.
 
 ## Organization
 

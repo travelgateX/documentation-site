@@ -1,11 +1,11 @@
 +++
-title = "Operative Transactions"
+title = "Manamgement Flow"
 description = ""
 weight = 4
 alwaysopen = false
 +++
 
-Operative transactions can be used in order to operate above supplier's bookings.
+Manage operations can be used in order to operate above supplier's bookings.
 
 ## Cancel
 Performs a supplier [booking](/product/connectx/hotel/concepts/book-transactions/#book) cancellation.

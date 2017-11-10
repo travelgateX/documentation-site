@@ -1,5 +1,5 @@
 +++
-title = "Quickstart Using Playground"
+title = "Quickstart"
 description = ""
 weight = 1
 alwaysopen = false
