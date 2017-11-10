@@ -37,16 +37,6 @@ curl -X\
    https://api.travelgatex.com
 ```
 
-## Debugging requests
-
-{{% alert theme="danger" %}}**TODO: Falta chicha!!**{{% /alert %}}
-
-## API Call Limits
-
-{{% alert theme="danger" %}}**TODO: Falta chicha!!**{{% /alert %}}
-
-
-
 ## Examples
 We share [GraphQL Playgrounds](https://github.com/graphcool/graphql-playground) with common scenarios using products.
 Playgrounds are shared in [product](/product/) reference sections, for example you can use  [ConnectX Hotel Playground](https://graphqlbin.com/JYRtB)
