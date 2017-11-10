@@ -98,9 +98,9 @@ discourseUrl = "http://discourse.travelgatex.com/"
   [params.intro]
 
   [[params.intro.item]]
-    title = "The Basics"
+    title = "Getting Started"
     description = "The inner workings of our APIs. Search, book, retrieve stats and much more."
-    url = "the-basics/"
+    url = "getting-started/"
     button = "Go Get Started"
     icon = "icon-fire"
     img = "img_8.jpg"
