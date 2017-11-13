@@ -1,0 +1,54 @@
+{{- $showhidden := .Get "showhidden"}}
+{{- $depth :=  .Get "depth" | default 1 }}
+{{- $sortTerm :=  .Get "sort" | default "Weight" }}
+
+{{- .Scratch.Set "current" .Page }}
+
+{{- if (.Get "page")}}
+	{{- with .Site.GetPage "section" (.Get "page") }}
+		{{- $.Scratch.Set "current" . }}
+	{{- end }}
+{{- end }}
+
+{{- $cpage := (.Scratch.Get "current") }}
+
+<div class="flex">
+	{{- .Scratch.Set "pages" $cpage.Pages }}
+    {{- if $cpage.Sections}}
+	    {{- .Scratch.Set "pages" ($cpage.Pages | union $cpage.Sections) }}
+    {{- end}}
+    {{- $pages := (.Scratch.Get "pages") }}
+
+	{{- if eq $sortTerm "Weight"}}
+		{{template "customChilds" dict "menu" $pages.ByWeight "showhidden" $showhidden "count" 1 "depth" $depth "pages" .Site.Pages "sortTerm" $sortTerm }}
+	{{- else if eq $sortTerm "Name"}}
+		{{template "customChilds" dict "menu" $pages.ByTitle "showhidden" $showhidden "count" 1 "depth" $depth "pages" .Site.Pages "sortTerm" $sortTerm }}
+	{{- else if eq $sortTerm "PublishDate"}}
+		{{template "customChilds" dict "menu" $pages.ByPublishDate "showhidden" $showhidden "count" 1 "depth" $depth "pages" .Site.Pages "sortTerm" $sortTerm }}
+	{{- else if eq $sortTerm "Date"}}
+		{{template "customChilds" dict "menu" $pages.ByDate "showhidden" $showhidden "count" 1 "depth" $depth "pages" .Site.Pages "sortTerm" $sortTerm }}
+	{{- else if eq $sortTerm "Length"}}
+		{{template "customChilds" dict "menu" $pages.ByLength "showhidden" $showhidden "count" 1 "depth" $depth "pages" .Site.Pages "sortTerm" $sortTerm }}
+	{{- else}}
+		{{template "customChilds" dict "menu" $pages "showhidden" $showhidden "count" 1 "depth" $depth "pages" .Site.Pages "sortTerm" $sortTerm }}
+	{{end}}
+</div>
+
+{{ define "customChilds" }}
+	{{- range .menu }}
+	<a href="{{.URL}}" class="card">
+		<div class="inner-card">
+			{{- if .Params.icon}}
+				<div class="material-icons fa {{.Params.icon}}"></div>
+			{{- end}}		
+			<div>
+				<h3 class="text-headline">{{ .Title }}</h3>
+				{{- if .Description}}
+					<p>{{.Description}}</p>
+				{{- end}}
+			</div>
+		</div>
+	</a>		
+	{{- end }}
+{{- end }}
+
