@@ -11,6 +11,10 @@ Search & Book Hotels, Flights, etc in more than 600 suppliers seemlessly.
 
 `git clone git@github.com:travelgateX/documentation-site.git`
 
+- Go into the repository folder
+
+`cd documentation-site`
+
 - Init the submodule
 
 `git submodule update --init`
@@ -24,7 +28,7 @@ Search & Book Hotels, Flights, etc in more than 600 suppliers seemlessly.
 
 ## Deployment
 
-The website is hoted in [Github Pages](https://pages.github.com/).
+The website is hosted in [Github Pages](https://pages.github.com/).
 Hugo generates the static HTML files and in order to deploy we need push the changes to the [travelgatex.github.io](https://github.com/travelgateX/travelgatex.github.io) repository.
 
 There's a script that does this automatically:

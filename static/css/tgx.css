@@ -110,8 +110,27 @@ iframe {
   color: #292b2c;
 }
 
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+  font-weight: 400 !important;
+}
+
+h2{
+  margin-top: 45px !important;
+  margin-bottom: 10px !important;
+}
+
+h3{
+  margin-top: 35px !important;
+  margin-bottom: 10px !important;
+}
+
 .clear {
   clear: both;
+}
+
+.fa.fa-link{
+  font-size: 24px;
+  display: none;
 }
 
 /* nav.menu-nav {
@@ -122,6 +141,7 @@ iframe {
 
 .content-center {
   width: calc(65%);
+  text-align: justify;
 }
 
 @media (min-width: 768px) {
