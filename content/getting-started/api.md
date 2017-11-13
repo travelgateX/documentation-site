@@ -1,6 +1,7 @@
 +++
-title = "API"
-description = ""
+title = "API & Reference"
+description = "API and Reference documentation"
+icon = "fa-book"
 weight = 5
 alwaysopen = false
 +++

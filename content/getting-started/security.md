@@ -1,6 +1,7 @@
 +++
 title = "Security"
-description = ""
+description = "Learn Platform Security"
+icon = "fa-shield"
 weight = 4
 alwaysopen = false
 +++

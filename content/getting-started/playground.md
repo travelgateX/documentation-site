@@ -1,6 +1,7 @@
 +++
 title = "Playground"
-description = ""
+description = "Test inline"
+icon = "fa-play"
 weight = 10
 alwaysopen = false
 +++
