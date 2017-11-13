@@ -1,6 +1,6 @@
 +++
 title = "Voyager"
-description = "With graphql-voyager you can visually explore our GraphQL API as an interactive graph."
+description = "Visually explore our GraphQL API"
 date= 2017-11-13T12:30:06+01:00
 weight = 11
 alwaysopen = false
