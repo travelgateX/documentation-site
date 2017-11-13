@@ -1,6 +1,7 @@
 +++
 title = "How-to Guides"
-description = ""
+description = "Perform specific tasks"
+icon = "fa-list"
 weight = 3
 alwaysopen = false
 +++

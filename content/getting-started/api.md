@@ -1,6 +1,6 @@
 +++
 title = "API & Reference"
-description = "API and Reference documentation"
+description = "Reference Documentation"
 icon = "fa-book"
 weight = 5
 alwaysopen = false

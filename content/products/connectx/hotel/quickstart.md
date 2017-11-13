@@ -1,6 +1,7 @@
 +++
 title = "Quickstart"
-description = ""
+description = "Playground Quickstart"
+icon = "fa-clock-o"
 weight = 1
 alwaysopen = false
 +++
