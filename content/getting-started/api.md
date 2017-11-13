@@ -14,6 +14,23 @@ The two types of allowed operations in TravelgateX GraphQL API are:
 
 For more information about using a GraphQL API click [here](/learning-graphql/).
 
+## GraphQL Endpoint
+One of the great things we love about GraphQL is that there's only one single endpoint. Use this endpoint for all operations you want to perform: 
+
+{{% alert theme="warning" %}}https://api.travelgatex.com{{% /alert %}} 
+
+## Communicate with GraphQL Server
+
+To communicate with the GraphQL server, you'll need an access token with the right scopes.
+
+This access token could be an [API Key](/admin/security/authentication/#api-keys) or a [JSON Web Token](/admin/security/authentication/#json-web-tokens), and the correct way to send it to GraphQL server is via HTTP Header:
+
+* API key: `"Authorization: Apikey xxxxxxxxx"`
+* JWT: `"Authorization: Bearer xxxxxxxxx"`
+
+Follow the steps in [Creating an access token](/admin/security/authentication/#creating-an-access-token) to create a token.
+
+
 ## Making Requests
 
 Because GraphQL operations consist of multiple operations and schemas, we recommend using the Explorer to make GraphQL calls.

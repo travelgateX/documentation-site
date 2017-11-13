@@ -13,24 +13,7 @@ At this moment, please [contact us](mailto:sales@travelgatex.com) in order to be
 
 We will be publishing a registration website so each developer can register for an account with us. Please bear with us.
 
-## Communicate with GraphQL Server
-
-To communicate with the GraphQL server, you'll need an access token with the right scopes.
-
-This access token could be an [API Key](/admin/security/authentication/#api-keys) or a [JSON Web Token](/admin/security/authentication/#json-web-tokens), and the correct way to send it to GraphQL server is via HTTP Header:
-
-* API key: `"Authorization: Apikey xxxxxxxxx"`
-* JWT: `"Authorization: Bearer xxxxxxxxx"`
-
-Follow the steps in [Creating an access token](/admin/security/authentication/#creating-an-access-token) to create a token.
-
-### GraphQL Endpoint
-One of the great things we love about GraphQL is that there's only one single endpoint. Use this endpoint for all operations you want to perform: 
-
-{{% alert theme="warning" %}}https://api.travelgatex.com{{% /alert %}} 
-
-
-## Product Specific Quick Start
+## Product Quick Start
 
 Although there's only one endpoint, our GraphQL API models all the products and services we offer. Please navigate to the desired product documentation in order to start building your app.
 
