@@ -35,3 +35,8 @@ Once the _Partner_ is authenticated we must authorize the partner to use the req
 Role based access control (RBAC) is the de facto standard for authorization. However, it introduces many complexities for practical applications: roles can be inflexible to change and additional mapping between users and roles must be maintained separately.
 
 TravelgateX permissions are Resource Group Assigned rules, defined using GraphQL API and determined at runtime by the data graph of the application.
+
+## Further Reading
+
+- https://hackernoon.com/how-do-you-authenticate-mate-f2b70904cc3a
+- 
