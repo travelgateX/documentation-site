@@ -1,6 +1,7 @@
 +++
 title = "Voyager"
 description = "Visually explore our GraphQL API"
+icon = "fa-globe"
 date= 2017-11-13T12:30:06+01:00
 weight = 11
 alwaysopen = false

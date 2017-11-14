@@ -52,7 +52,7 @@ ordersectionsby = "weight" # ordersectionsby = "title"
 disableSearch = false # default is false
 #disableNavChevron = false # set true to hide next/prev chevron, default is false
 
-discourseUrl = "http://discourse.travelgatex.com/"
+discourseUrl = "http://community.travelgatex.com/"
 
 ############## docdock params
 
