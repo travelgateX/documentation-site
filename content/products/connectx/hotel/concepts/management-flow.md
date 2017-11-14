@@ -1,6 +1,6 @@
 +++
-title = "Manamgement Flow"
-description = ""
+title = "Management Flow"
+description = "Learn about Management Flow. Cancellations and Booking List"
 weight = 4
 alwaysopen = false
 +++
