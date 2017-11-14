@@ -306,7 +306,7 @@ pre .copy-to-clipboard:hover {
   padding: 18px 12px;
 }
 
-.flex .card:hover {
+.flex .card:hover, .card-lv2:hover {
   box-shadow: 0 4px 4px rgba(1,67,163,.24), 0 0 4px rgba(1,67,163,.12), 0 6px 18px rgba(43,133,231,.12);
   cursor: pointer;
   transform: translate3d(0,-2px,0);
@@ -342,7 +342,7 @@ pre .copy-to-clipboard:hover {
   margin: 0;
 }
 
-a.card:hover {
+a.card:hover, a.card-lv2:hover {
   text-decoration: none;
 }
 
@@ -367,4 +367,65 @@ a.card:hover {
   word-wrap: normal;
   direction: ltr;
   -webkit-font-smoothing: antialiased;
+}
+
+.card-lv2{
+  width: 100%;
+  margin: 20px 0;
+  min-height: 90px;
+  padding: 20px
+}
+
+
+.card-lv2 h5 {
+  color: rgba(23,42,58,.9);
+  font-size: 20px;
+  font-weight: 400;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  -webkit-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  min-width: 0;
+  min-height: 0;
+}
+
+.card-lv2 p{
+  margin-right: 50px
+}
+.card-lv2 .topic{
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -ms-grid-row-align: center;
+  -webkit-align-items: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: rgba(23,42,58,.40);
+  font-size: 14px;
+}
+
+.card-lv2 .icon{
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -ms-grid-row-align: center;
+  -webkit-align-items: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 22px;
 }

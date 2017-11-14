@@ -1,0 +1,55 @@
+{{- $showhidden := .Get "showhidden"}}
+{{- $depth :=  .Get "depth" | default 1 }}
+{{- $sortTerm :=  .Get "sort" | default "Weight" }}
+
+{{- .Scratch.Set "current" .Page }}
+
+{{- if (.Get "page")}}
+	{{- with .Site.GetPage "section" (.Get "page") }}
+		{{- $.Scratch.Set "current" . }}
+	{{- end }}
+{{- end }}
+
+{{- $cpage := (.Scratch.Get "current") }}
+
+<div class="flex card-lv2-div">
+	{{- .Scratch.Set "pages" $cpage.Pages }}
+    {{- if $cpage.Sections}}
+	    {{- .Scratch.Set "pages" ($cpage.Pages | union $cpage.Sections) }}
+    {{- end}}
+    {{- $pages := (.Scratch.Get "pages") }}
+
+	{{- if eq $sortTerm "Weight"}}
+		{{template "customChildsLv2" dict "menu" $pages.ByWeight "showhidden" $showhidden "count" 1 "depth" $depth "pages" .Site.Pages "sortTerm" $sortTerm }}
+	{{- else if eq $sortTerm "Name"}}
+		{{template "customChildsLv2" dict "menu" $pages.ByTitle "showhidden" $showhidden "count" 1 "depth" $depth "pages" .Site.Pages "sortTerm" $sortTerm }}
+	{{- else if eq $sortTerm "PublishDate"}}
+		{{template "customChildsLv2" dict "menu" $pages.ByPublishDate "showhidden" $showhidden "count" 1 "depth" $depth "pages" .Site.Pages "sortTerm" $sortTerm }}
+	{{- else if eq $sortTerm "Date"}}
+		{{template "customChildsLv2" dict "menu" $pages.ByDate "showhidden" $showhidden "count" 1 "depth" $depth "pages" .Site.Pages "sortTerm" $sortTerm }}
+	{{- else if eq $sortTerm "Length"}}
+		{{template "customChildsLv2" dict "menu" $pages.ByLength "showhidden" $showhidden "count" 1 "depth" $depth "pages" .Site.Pages "sortTerm" $sortTerm }}
+	{{- else}}
+		{{template "customChildsLv2" dict "menu" $pages "showhidden" $showhidden "count" 1 "depth" $depth "pages" .Site.Pages "sortTerm" $sortTerm }}
+	{{end}}
+</div>
+
+
+
+{{ define "customChildsLv2" }}
+	{{- range .menu }}
+	<a class="card card-lv2" href="{{.URL}}">
+        <h5 class="text-headline">{{ .Title }}</h5>
+        <div class="topic">
+            {{- if .Params.icon}}
+            <div class="material-icons fa {{.Params.icon}}"></div>
+            {{- end}}
+            {{- if .Description}}
+                <p>{{.Description}}</p>
+            {{- end}}
+        </div>
+        <div class="icon fa fa-arrow-right"></div>
+    </a>
+	{{- end }}
+{{- end }}
+
