@@ -347,7 +347,7 @@ a.card:hover, a.card-lv2:hover {
 }
 
 
-.flex p {
+.flex p, .colorGray {
   color: #637d88;
   font-size: 13px;
   line-height: 1.2em;

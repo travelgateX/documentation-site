@@ -37,19 +37,31 @@
 
 
 {{ define "customChildsLv2" }}
-	{{- range .menu }}
-	<a class="card card-lv2" href="{{.URL}}">
-        <h5 class="text-headline">{{ .Title }}</h5>
-        <div class="topic">
-            {{- if .Params.icon}}
-            <div class="material-icons fa {{.Params.icon}}"></div>
+    {{- range .menu }}
+        <a class="card card-lv2" href="{{.URL}}">
+            <h5 class="text-headline">{{ .Title }}</h5>
+            <div class="topic">
+                {{- if .Description}}
+                    <p>{{.Description}}</p>
+                {{- end}}
+            </div>
+            {{- if .IsPage}}
+            {{- else}}
+            <div class="colorGray">
+                <ul>
+                    {{- range .Pages}}
+                        <li>
+                            <b>{{.Title}}:</b>
+                            {{- if .Description}}
+                            <span>{{.Description}}</span>
+                            {{- end}}
+                        </li>
+                    {{- end}}
+                </ul>
+            </div> 
             {{- end}}
-            {{- if .Description}}
-                <p>{{.Description}}</p>
-            {{- end}}
-        </div>
-        <div class="icon fa fa-arrow-right"></div>
-    </a>
+            <div class="icon fa fa-arrow-right"></div>
+        </a>
 	{{- end }}
 {{- end }}
 
