@@ -1,4 +1,4 @@
-<nav class="menu-nav material-box">
+<nav  class="navbar navbar-default menu-nav material-box">
   <ul class="topics">
     {{- $currentNode := . }}
     {{- $showvisitedlinks := .Site.Params.showVisitedLinks -}}
@@ -100,6 +100,21 @@
       }
      return false;
     })
+
+    $('#menu').click((event)=>{
+      if($('#navbar').hasClass('toogled')){
+        $('#navbar').removeClass('toogled');
+        $('#backgroundMenu').removeClass('toogled');
+      }else{
+        $('#navbar').addClass('toogled');
+        $('#backgroundMenu').addClass('toogled');
+      }
+    });
+
+    $('#backgroundMenu').click((event)=>{
+      $('#navbar').removeClass('toogled');
+      $('#backgroundMenu').removeClass('toogled');
+    });
   })
 
 </script>
