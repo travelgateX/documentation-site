@@ -20,7 +20,7 @@ One of the great things we love about GraphQL is that there's only one single en
 
 {{% alert theme="warning" %}}https://api.travelgatex.com{{% /alert %}} 
 
-## Communicate with GraphQL Server
+## Communicate with Server
 
 To communicate with the GraphQL server, you'll need an access token with the right scopes.
 
@@ -54,6 +54,21 @@ curl -X\
    --compressed \
    https://api.travelgatex.com
 ```
+
+## View the Graph
+
+Using [graphql-voyager](https://github.com/APIs-guru/graphql-voyager), we represent [our GraphQL API](https://api.travelgatex.com) as an interactive graph.
+
+> * Quick navigation on graph
+> * Left panel which provides more detailed information about every type
+> * "Skip Relay" option that simplifies graph by removing Relay wrapper classes
+> * Ability to choose any type to be a root of the graph
+
+
+Open in a new tab [here](https://api.travelgatex.com/voyager)
+
+{{<figure src="/images/voyager.gif" link="https://api.travelgatex.com/voyager"  alt="travelgateX Schema Documentation">}}
+
 
 ## Examples
 We share [GraphQL Playgrounds](https://github.com/graphcool/graphql-playground) with common scenarios using products.
