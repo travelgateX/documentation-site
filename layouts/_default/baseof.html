@@ -22,6 +22,8 @@
             <h1 class="pageTitle">{{.Title}}</h1>
             {{ block "main" . }}
             {{ end }}
+            <hr/>            
+            {{ partial "discourse.html" .}}            
           </div>
         </div>
         <div class="menu-right">

@@ -1,0 +1,30 @@
+{{ define "main" }}
+    {{$plugin := .Params.Plugin}}
+    {{- if $plugin}}
+        {{- if $plugin.description}}
+            <h2>Description</h2>
+            <p>{{$plugin.description | markdownify}}</p>      
+        {{- end}}
+        {{- if $plugin.usage}}
+            <h2>Usage</h2>
+            <p>{{$plugin.usage | markdownify}}</p>      
+        {{- end}}
+        {{- if $plugin.inputs}}
+            <h2>Inputs</h2>
+            <ul>
+                {{- range $plugin.inputs}}
+                    <li><b>{{.input | markdownify}}</b>: {{.description | markdownify}}</li>
+                {{- end}} 
+            </ul>
+        {{- end}}
+        {{- if $plugin.outputs}}
+            <h2>Outputs</h2>
+            <ul>
+                {{- range $plugin.outputs}}
+                    <li><b>{{.output | markdownify}}</b>: {{.description | markdownify}}</li>
+                {{- end}} 
+            </ul>
+        {{- end}}
+        {{ .Content }}        
+    {{- end}}
+{{ end }}
