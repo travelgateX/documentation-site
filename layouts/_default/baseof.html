@@ -14,7 +14,7 @@
     {{ partial "content/navbar.html" . }}
     <div class="container main">
       <div class="row">
-        <div class="menu-left sticky">
+        <div id="navbar" class="menu-left hidden-xs hidden-sm">
             {{ partial "content/sidebar.html" . }}
         </div>
         <div class="content-center">
@@ -25,6 +25,7 @@
             <hr/>            
             {{ partial "discourse.html" .}}            
           </div>
+          <div id="backgroundMenu"></div>
         </div>
         <div class="menu-right">
           <div>
