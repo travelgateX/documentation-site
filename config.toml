@@ -146,35 +146,35 @@ discourseUrl = "http://community.travelgatex.com/"
     footertext = 'APIs Made With &#9825; For Developers &amp; By Developers'
 
     [[params.work.row]]
-      url = "product/connectx/hotel/"
+      url = "hotelx"
       img = "work_1.jpg"
       alt = "Image2"
       title = "Hotel Search & Book"
       subtitle = "Search & Book on more than 400 hotel suppliers, seamlessly!"
 
     [[params.work.row]]
-      url = "product/connectx/flight/"
+      url = "flightx"
       img = "work_2.jpg"
       alt = "Image2"
       title = "Flight Search & Book"
       subtitle = "NDC certified search & book API with many traditional, low cost and NDC carriers + GDS."
 
     [[params.work.row]]
-      url = "product/stats/"
+      url = "stats"
       img = "work_3.jpg"
       alt = "Image3"
       title = "Stats"
       subtitle = "Real-time information about all your requests: totals, response times, status and more."
 
     [[params.work.row]]
-      url = "product/insights/"
+      url = "insights"
       img = "work_4.jpg"
       alt = "Image4"
       title = "Insights"
       subtitle = "Get detailed Business Intelligence data such as ratios per hotel, country, market and many more."
 
     [[params.work.row]]
-      url = "product/mappea/"
+      url = "mappea"
       img = "work_5.jpg"
       alt = "Image5"
       title = "Mappea API"
