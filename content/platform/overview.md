@@ -6,6 +6,14 @@ weight = 1
 alwaysopen = false
 +++
 
+### GraphQL Gateway
+
+ConnectX is the first-in-the-industry travel API completely based in GraphQL. Most travel APIs are old legacy XML Soap APIs. We know that, because we've integrated too many of them. The problems with that technology are well-known and we won't get into details here. One of the things we really like about GraphQL, is that each client is ultimately responsible over what it wants to be returned. For the full reasoning behind working with GraphQL please click [here](/learning-graphql/overview/#graphql-at-travelgatex).
+
+The architecture doest not differ from many modern APIs. There's an API Gateway, which takes care of basic stuff like authentication and authorization. It also acts like a shield protecting us from DoS attacks and handles throttling. Analytics takes also an important part in the gateway. Moreover, our Gateway is **the only endpoint** to access all of our APIs.
+
+It is written in NodeJS, _fast_, stable, secure and fault tolerant load balanced between many datacenters from 4 different cloud providers, namely [Microsoft Azure](https://azure.microsoft.com/), [Google Cloud Platform](https://cloud.google.com/), [Hetzner](https://www.hetzner.de/) and [TotalUptime](http://totaluptime.com/).
+
 ## Using the API
 
 The two types of allowed operations in TravelgateX GraphQL API are:
