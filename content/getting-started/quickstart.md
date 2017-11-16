@@ -24,14 +24,14 @@ Although there's only one endpoint, our GraphQL API models all the products and 
 - Insights: Become a true data-first decision maker by leveraging our rich Insights API. All the requests, all the searches, everything you've made with us available here.
 - Mappea: Collaborative Hotel Mapping. Use this API to map your suppliers or to make that everything you have mapped is accurate.
 
-## Get Engaged
-
-You are not alone! The API is designed to be very intuitive and easy to read. Nevertheless, although we strive to keep things simple, some concepts can be confusing and we understand learning a new API can be overwhelming. There are many ways of getting help. The [Playground](https://api.travelgatex.com) contains the API's documentation. As an alternative you can get help from the community or raise a ticket and our support staff will be delighted to solve any doubts, complaints or suggestions you might have.
-
-### Documentation
+## Documentation
 Documentation is generated from GraphQL schema.You can use multiple columns and keyboard-based navigation via the [Playground](https://api.travelgatex.com)
 
 {{<figure src="/images/graphql_playground.gif" link="https://api.travelgatex.com"  alt="travelgateX Schema Documenation">}}
+
+## Get Engaged
+
+You are not alone! The API is designed to be very intuitive and easy to read. Nevertheless, although we strive to keep things simple, some concepts can be confusing and we understand learning a new API can be overwhelming. There are many ways of getting help. The [Playground](https://api.travelgatex.com) contains the API's documentation. As an alternative you can get help from the community or raise a ticket and our support staff will be delighted to solve any doubts, complaints or suggestions you might have.
 
 ### Community
 

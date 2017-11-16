@@ -1,7 +1,10 @@
+
+
 {{ define "main" }}
 {{if .Content}}
-{{ .Content }}
+	{{ .Content }}
 {{else }}
+
 {{ $paginator := .Paginator }}
 
 <div class="extra-pagination inner">
