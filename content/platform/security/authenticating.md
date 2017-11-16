@@ -1,5 +1,5 @@
 +++
-title = "Overview"
+title = "Authenticating"
 description = "Learn Platform Security"
 icon = "fa-shield"
 weight = 4
