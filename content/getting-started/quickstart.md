@@ -2,7 +2,7 @@
 title = "Quickstart"
 description = "Learn in 5 minutes"
 icon = "fa-clock-o"
-weight = 2
+weight = 1
 alwaysopen = false
 +++
 

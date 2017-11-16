@@ -1,8 +1,8 @@
 +++
-title = "Aggregation"
-description = "Aggregate plugins"
-icon = "fa-compress"
-weight = 3
+title = "Exchange"
+description = "Exchange plugins"
+icon = "fa-exchange"
+weight = 5
 alwaysopen = false
 +++
 

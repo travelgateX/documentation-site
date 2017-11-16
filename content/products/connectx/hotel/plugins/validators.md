@@ -1,9 +1,9 @@
 +++
-title = "Validators"
-description = ""
-weight = 2
+title = "Validator"
+description = "Validate plugins"
+icon = "fa-check"
+weight = 1
 alwaysopen = false
-isDirectory = false
 +++
 
 ## Validators

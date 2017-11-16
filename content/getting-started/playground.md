@@ -2,7 +2,7 @@
 title = "Playground"
 description = "Test inline"
 icon = "fa-play"
-weight = 5
+weight = 3
 alwaysopen = false
 +++
 

@@ -1,10 +1,12 @@
 +++
-title = "Mappings"
-description = ""
-weight = 4
+title = "Mapping"
+description = "Map plugins"
+icon = "fa-sitemap"
+weight = 2
 alwaysopen = false
-isDirectory = false
 +++
+
+Map plugins
 
 ## Input Mapping
 * [Mapping Hotel](https://github.com/travelgateX)

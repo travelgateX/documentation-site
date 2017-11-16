@@ -1,9 +1,11 @@
 +++
-title = "Overview"
+title = "SFTP"
 description = ""
 weight = 1
 alwaysopen = false
 +++
+
+## Introduction
 
 SFTP, or Secure File Transfer Protocol, is a network protocol that provides completely secure access, transfer, and management of data files programmatically. This protocol is used by the largest organizations in Finance, Technology, and Consulting to transfer data such as Personally Identifiable Information (PII) to ensure it remains 100% secure.
 
@@ -19,5 +21,6 @@ To ensure the security of your data, we adhere to the highest standards in data 
 ## Setup
 
 To get your FTP Credential Details raise a _customer care request_ in [Jira Service Desk](/getting-started/quickstart/#jira-service-desk).
+
 
 

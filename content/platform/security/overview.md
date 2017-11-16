@@ -1,12 +1,12 @@
 +++
-title = "Security"
+title = "Overview"
 description = "Learn Platform Security"
 icon = "fa-shield"
 weight = 4
 alwaysopen = false
 +++
 
-## Overview
+## Introduction
 
 _Products_ and _Resources_ are granted to _Partners_ belonging to _Organizations_. 
 

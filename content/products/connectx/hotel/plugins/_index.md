@@ -7,4 +7,4 @@ alwaysopen = false
 isDirectory = false
 +++
 
-{{%custom-children-lv2%}}
+{{%custom-children%}}

@@ -1,7 +1,8 @@
 +++
 title = "Markup"
-description = ""
-weight = 5
+description = "Markup plugins"
+icon = "fa-money"
+weight = 6
 alwaysopen = false
 isDirectory = false
 +++
