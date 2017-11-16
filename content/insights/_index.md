@@ -1,8 +1,10 @@
 +++
 title = "Insights"
 description = ""
-weight = 10
+weight = 5
 alwaysopen = false
+isDirectory = false
 +++
 
-{{%children style="h2" description="true"%}}
+{{%custom-children%}}
+

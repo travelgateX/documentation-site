@@ -1,7 +1,7 @@
 +++
 title = "Build An OTA"
 description = ""
-weight = 2
+weight = 1
 alwaysopen = false
 +++
 

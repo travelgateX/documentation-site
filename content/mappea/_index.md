@@ -1,8 +1,10 @@
 +++
 title = "Mappea"
 description = ""
-weight = 4
+weight = 6
 alwaysopen = false
+isDirectory = false
 +++
 
-{{%children style="h2" description="true"%}}
+{{%custom-children%}}
+

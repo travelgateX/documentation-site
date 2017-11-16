@@ -2,7 +2,7 @@
 title = "Resources"
 description = "Quotas, release notes"
 icon="fa-file-text"
-weight = 6
+weight = 7
 alwaysopen = false
 +++
 

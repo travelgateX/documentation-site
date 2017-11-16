@@ -1,7 +1,7 @@
 +++
-title = "Hotel"
+title = "HotelX"
 description = ""
-weight = 2
+weight = 3
 alwaysopen = false
 isDirectory = false
 +++

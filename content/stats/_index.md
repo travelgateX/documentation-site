@@ -3,7 +3,8 @@ title = "Stats"
 description = ""
 weight = 4
 alwaysopen = false
+isDirectory = false
 +++
 
+{{%custom-children%}}
 
-{{%children style="h2" description="true"%}}

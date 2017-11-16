@@ -2,7 +2,7 @@
 title = "Concepts"
 description = "Understand travelgateX concepts"
 icon = "fa-question-circle" 
-weight = 4
+weight = 3
 alwaysopen = false
 +++
 
