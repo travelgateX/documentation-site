@@ -22,12 +22,12 @@ Although there's only one endpoint, our GraphQL API models all the products and 
 - ConnectX Flights: Next generation _NDC compliant_ flight search & booking API.
 - Stats: All the requests sent and received, their response times and status codes.
 - Insights: Become a true data-first decision maker by leveraging our rich Insights API. All the requests, all the searches, everything you've made with us available here.
-- Mappea: Collaborative Hotel Mapping. Use this API to map your suppliers or to make that everything you have mapped is accurate.
+- Mappea: Collaborative Hotel Mapping. Use this API to map your `sellers` or to make that everything you have mapped is accurate.
 
 ## Documentation
 Documentation is generated from GraphQL schema.You can use multiple columns and keyboard-based navigation via the [Playground](https://api.travelgatex.com)
 
-{{<figure src="/images/graphql_playground.gif" link="https://api.travelgatex.com"  alt="travelgateX Schema Documenation">}}
+{{<figure src="/images/graphql_playground.gif" link="https://api.travelgatex.com"  alt="TravelgateX Schema Documenation">}}
 
 ## Get Engaged
 

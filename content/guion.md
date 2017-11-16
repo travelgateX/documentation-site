@@ -76,7 +76,7 @@ INTRO: Explica lo que se necesita saber para utilizar un producto, se utiliza co
 -- Connect to more than 600 sellers of travel products.
 -- Allow customers to search & book through a number of sellers
 -- Gain complete control of the number and quality of requests sent and received
--- Map new suppliers to your existing hotel codes
+-- Map new `sellers` to your existing hotel codes
 
 - HOW: implementación API en GraphQL
 - HOW: como funciona?

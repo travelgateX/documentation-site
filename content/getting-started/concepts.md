@@ -18,30 +18,41 @@ For explanation about using TravelgateX GraphQL API please click [here](/getting
 
 ## Partner
 
-A _Partner_ is someone or _something_ that can interact with any TravelgateX APIs or apps. It can be either a _User_, which identifies a person, or _Service Account_ which identifies an applicattion.
+A `Partner` is someone or `something` that can interact with any TravelgateX APIs or apps. It can be either a `User`, which identifies a person, or `Service Account` which is identified by an API Key.
 
 ## Organization
 
-Each [_Partner_](#Partner) belongs to one or more _Organizations_. 
+Each [`Partner`](#Partner) belongs to one or more `Organizations`. 
 
-An _Organization_ is made up of _Partners_, _Resources_, _Settings_, _Permissions_ and other _Metadata_.
+An `Organization` is made up of `Partners`, `Resources`, `Settings`, `Permissions` and other `Metadata`.
 
 ## Product
-We organize our APIs by similarity and common features. A _Product_ is an API domain which is available for the consumption of _Resources_. 
+We organize our APIs by similarity and common features. A `Product` is an API domain which is available for the consumption of `Resources`. 
 
-For detailed _Product_ information please click [here] (/products).
-
+For detailed `Product` information please click [here](/products).
 
 ## Entities
-_Entities_ or core resources are entities that define common objects in all our API domains.
+`Entities` or core resources are entities that define common objects in all our API domains.
 
-### Supplier
+### Buyer
   
-A _Supplier_ is a physical connection or _integration_ to a third party provider.
+A `Buyer` is a `Partner` who is connected to TravelgateX in the demand side in order to **buy** travel products from `Sellers`.
+
+### Seller
+  
+A `Seller` is a `Partner` who is connected to TravelgateX on the supply side in order to **sell** their product to connected `Buyers`Ma.
+
+### Tech Platform
+  
+Many `Partners`, `Buyers` _or_ `Sellers` use a third party platform in order to **buy** _or_ **sell** travel products. These are usually tech companies specialized in developing custom software to other companies.
+
+### Context
+  
+A `Context` refers to the `Seller` codes the request is using. It's a way of specifiying which `Seller` codes is being used so it can be transformed and standardized.
 
 ### Access
 
-An _Access_ is a set of credentials _and_ configuration in order to access a _Supplier_.
+An `Access` is a set of credentials **and** configuration in order to access a `Seller`.
 
 
 

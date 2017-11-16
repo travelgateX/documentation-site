@@ -9,7 +9,7 @@ alwaysopen = false
 Map plugins
 
 ## Input Mapping
-* [Mapping Hotel](https://github.com/travelgateX)
+* [Mapping Hotel](https://github.com/TravelgateX)
 
 ## Output Mapping
-* [Mapping Room](https://github.com/travelgateX)
+* [Mapping Room](https://github.com/TravelgateX)

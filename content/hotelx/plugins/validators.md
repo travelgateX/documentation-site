@@ -7,4 +7,4 @@ alwaysopen = false
 +++
 
 ## Validators
-* [Validate Request](https://github.com/travelgateX)
+* [Validate Request](https://github.com/TravelgateX)

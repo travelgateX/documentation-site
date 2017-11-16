@@ -21,7 +21,7 @@ Designed by [Facebook](https://code.facebook.com/posts/1691455094417024/graphql-
 
 >GraphQL is a query language for your API, and a server-side runtime for executing queries by using a type system you define for your data. GraphQL isn't tied to any specific database or storage engine and is instead backed by your existing code and data. <cite>[graphql.org/learn](http://graphql.org/learn?utm_source=docs.travelgatex.com)</cite>
 
-### GraphQL at travelgateX
+### GraphQL at TravelgateX
 
 GraphQL is a perfect fit for each and every need of our applications:
 
@@ -31,7 +31,7 @@ GraphQL is a perfect fit for each and every need of our applications:
  
 We're a company focused in providing APIs for our clients. SOAP APIs are long gone and modelling REST APIs to fit a vast variety of products is not only hard, but the bigger it gets, the more unmanageable it becomes.
 
-At travelgateX, we're true believers of the *Kaisen* philosophy. We're constantly researching for new ways of improvement.
+At TravelgateX, we're true believers of the *Kaisen* philosophy. We're constantly researching for new ways of improvement.
 
 >GraphQL allows us to think of our APIs as a whole, giving a coherence in all our products & services, accessible from one single endpoint. It's like a showcase for our APIs.
 ><cite>Oscar Perez, CTO</cite>
