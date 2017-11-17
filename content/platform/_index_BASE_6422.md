@@ -5,5 +5,5 @@ weight = 2
 alwaysopen = false
 isDirectory = false
 +++
-Run your applications using TravelgateX _platform_.
+How travelgateX _platform_ works
 {{%custom-children%}}

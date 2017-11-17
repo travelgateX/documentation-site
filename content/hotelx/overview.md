@@ -8,9 +8,9 @@ alwaysopen = false
 
 ## Overview
 
-HotelX is the ultimate connectivity solution, it not only _connects_ you to multiple suppliers, but also _adds_ business logic _solving_ most of the problems commonly found in the travel business in an **elegant and efficient** way.
+HotelX is the ultimate connectivity solution, it not only _connects_ you to multiple `Sellers`, but also _adds_ business logic _solving_ most of the problems commonly found in the travel business in an **elegant and efficient** way.
 
-{{< figure src="/images/connectx_diagram.png#floatleft" alt="High Level ConnectX Architecture" width="500px" attr="" >}}
+{{< figure src="/images/connectx_diagram.png#center" alt="High Level ConnectX Architecture" width="500px" attr="" >}}
 
 Each and every layer discribed in the this figure is explained as follows:
 
@@ -37,16 +37,16 @@ For more information and how to write and build plugins please go to the relevan
 
 ### Transformation
 
-The transformation layer takes care of the actual trasformation into the supplier's specific format and back. It generates requests to the supplier in an optimal way, we call it *Optimal Connector*. The Optimal connector is the result of years of interacting with the suppliers and learning from them _and_ from experience how to send requests to them. Each different supplier has a different logic, and is more efficient in one way. We use this now how to send exactly the request which the supplier will handle more effectively, being that a per hotel list, or destination or anythign that over the time we0ve learned from their responses.
-The transformation layer keeps each and every supplier integration in an optimal level. If a new version is released, we will update our integration. Our team is constantly monitoring the traffic, both automatically _and_ manually in order to make sure the connectivity just works.
+The transformation layer takes care of the actual trasformation into the Seller's specific format and back. It generates requests to the supplier in an optimal way, we call it *Optimal Connector*. The Optimal connector is the result of years of interacting with the `Sellers` and learning from them _and_ from experience how to send requests to them. Each different supplier has a different logic, and is more efficient in one way. We use this now how to send exactly the request which the supplier will handle more effectively, being that a per hotel list, or destination or anythign that over the time we0ve learned from their responses.
+The transformation layer keeps each and every Seller integration in an optimal level. If a new version is released, we will update our integration. Our team is constantly monitoring the traffic, both automatically _and_ manually in order to make sure the connectivity just works.
 
 ### [_Optional_] Cache Layer
 
-Our cache layer, called [Speed](https://www.travelgatex.com/products/speed.html) does exactly what the name says, it caches results so that we don't knock out the suppliers. From a high level perspective it is just a cache. Our secret sauce is _how we expire the cache_. We use advanced Machine Learning models to predict how long each cached item will be valid from taking into account a large number of variables set in the request.
+Our cache layer, called [Speed](https://www.travelgatex.com/products/speed.html) does exactly what the name says, it caches results so that we don't knock out the `Sellers`. From a high level perspective it is just a cache. Our secret sauce is _how we expire the cache_. We use advanced Machine Learning models to predict how long each cached item will be valid from taking into account a large number of variables set in the request.
 The cache is hosted in [Google's BigTable](https://cloud.google.com/bigtable/), a "Massively Scalable NoSQL" database built with performance and scalability in mind.
 
-### Suppliers
+### `Sellers`
 
-Each and every supplier works in a different way. Most are old, legacy SOAP APIs, very few are RESTful APIs and none of them is GraphQL. We have developed them all, and ~~suffered~~ learned from all of them. 
+Each and every Seller works in a different way. Most are old, legacy SOAP APIs, very few are RESTful APIs and none of them is GraphQL. We have developed them all, and ~~suffered~~ learned from all of them. 
 
-We connect seemlessly to more than 600 suppliers.
+We connect seemlessly to more than 600 `Sellers`.

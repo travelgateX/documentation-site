@@ -5,10 +5,10 @@ weight = 4
 alwaysopen = false
 +++
 
-Manage operations can be used in order to operate above supplier's bookings.
+Manage operations can be used in order to operate above Seller's bookings.
 
 ## Cancel
-Performs a supplier [booking](/product/connectx/hotel/concepts/book-transactions/#book) cancellation.
+Performs a Seller [booking](/product/connectx/hotel/concepts/book-transactions/#book) cancellation.
 
 ### Operation
 ```json
@@ -26,7 +26,7 @@ Performs a supplier [booking](/product/connectx/hotel/concepts/book-transactions
 
 
 ## Booking
-Performs a supplier booking list or detail.
+Performs a Seller booking list or detail.
 
 ### Operation
 ```json

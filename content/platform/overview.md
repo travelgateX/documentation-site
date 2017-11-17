@@ -77,7 +77,7 @@ Using [graphql-voyager](https://github.com/APIs-guru/graphql-voyager), we repres
 
 Open in a new tab [here](https://api.travelgatex.com/voyager)
 
-{{<figure src="/images/voyager.gif" link="https://api.travelgatex.com/voyager"  alt="travelgateX Schema Documentation">}}
+{{<figure src="/images/voyager.gif" link="https://api.travelgatex.com/voyager"  alt="TravelgateX Schema Documentation">}}
 
 
 ## Examples
@@ -98,9 +98,9 @@ TravelgateX follow some conventions about schema definition:
 
 ### Relay Implementation
 TravelgateX uses [Relay](https://facebook.github.io/relay/) schema requirements for own Resources.
-Other resources, like supplier search response, are not modeled with Relay practices.
+Other resources, like Seller search response, are not modeled with Relay practices.
 
-Relay helps travelgateX API in order to standarize:
+Relay helps TravelgateX API in order to standarize:
 
 * Standards for querying paginated collections ("Connections" and "Edges")
 * Identifying objects directly from the root of a query (avoiding long nested queries)

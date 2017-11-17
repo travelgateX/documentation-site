@@ -5,12 +5,12 @@ weight = 3
 alwaysopen = false
 +++
 
-[Search](#search), [Quote](#quote) and [Book](#book) transactions must be executed sequentally in order to book hotel rooms in a supplier.
+[Search](#search), [Quote](#quote) and [Book](#book) transactions must be executed sequentally in order to book hotel rooms in a Seller.
 
 ## Search
-Performs an hotel availability search over 1 or more [supplier accesses](/admin/resources/common-resources/#accesses)
+Performs an hotel availability search over 1 or more [Seller accesses](/admin/resources/common-resources/#accesses)
 
-Depending supplier, search operations implitiy use supplier's cache.
+Depending Seller, search operations implitiy use supplier's cache.
 
 ### Operation
 ```json

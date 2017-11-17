@@ -24,4 +24,4 @@ This page shows you how to perform basic hotel book using GraphQL Playground.
 ### Book Hotel
 1. Click on `hotelBook` tab
 2. In `Query Variables` modify `optionRefId` with `optionRefId` value returned in quote response and send the request.
-3. Next other information you can chek for book `supplier reference`
+3. Next other information you can chek for book `Seller reference`
