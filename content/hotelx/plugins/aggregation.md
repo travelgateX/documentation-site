@@ -1,5 +1,6 @@
 +++
 title = "Aggregation"
+pagetitle = ""
 description = "Aggregate plugins"
 icon = "fa-compress"
 weight = 3

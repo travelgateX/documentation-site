@@ -1,7 +1,8 @@
 +++
 title = "HotelX"
+pagetitle = ""
 description = ""
-weight = 3
+weight = 4
 alwaysopen = false
 isDirectory = false
 +++

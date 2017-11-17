@@ -1,5 +1,6 @@
 +++
 title = "Playground"
+pagetitle = ""
 description = "Test inline"
 icon = "fa-play"
 weight = 3

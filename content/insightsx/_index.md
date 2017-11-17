@@ -1,7 +1,8 @@
 +++
 title = "InsightsX"
+pagetitle = ""
 description = ""
-weight = 5
+weight = 7
 alwaysopen = false
 isDirectory = false
 +++

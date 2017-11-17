@@ -1,5 +1,6 @@
 +++
 title = "Tutorials & Resources"
+pagetitle = ""
 description = ""
 weight = 6
 alwaysopen = false

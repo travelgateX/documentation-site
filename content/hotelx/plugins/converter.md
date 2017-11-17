@@ -1,5 +1,6 @@
 +++
 title = "Exchange"
+pagetitle = ""
 description = "Exchange plugins"
 icon = "fa-exchange"
 weight = 5

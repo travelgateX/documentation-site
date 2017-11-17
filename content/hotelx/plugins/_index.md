@@ -1,5 +1,6 @@
 +++
 title = "Plugins"
+pagetitle = ""
 description = "Additional logic to your App"
 icon = "fa-plug"
 weight = 5

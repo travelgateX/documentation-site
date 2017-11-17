@@ -1,7 +1,8 @@
 +++
 title = "StatsX"
+pagetitle = ""
 description = ""
-weight = 4
+weight = 5
 alwaysopen = false
 isDirectory = false
 +++

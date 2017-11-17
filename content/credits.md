@@ -1,5 +1,6 @@
 +++
 title = "Credits"
+pagetitle = ""
 description = "contributors and packages used by hugo-theme-docdock"
 +++
 

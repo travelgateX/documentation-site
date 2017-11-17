@@ -1,5 +1,6 @@
 +++
 title = "Authenticating"
+pagetitle = ""
 description = "Learn Platform Security"
 icon = "fa-shield"
 weight = 4

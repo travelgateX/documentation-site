@@ -1,5 +1,6 @@
 +++
 title = "Getting Started"
+pagetitle = ""
 description = ""
 weight = 1
 alwaysopen = false

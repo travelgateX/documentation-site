@@ -1,5 +1,6 @@
 # Getting Started
 
+pagetitle = ""
 GOAL: información basica para empezar a desarrollar
 
 ## Overview

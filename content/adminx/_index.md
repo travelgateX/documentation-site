@@ -1,8 +1,8 @@
 +++
-title = "FlightX"
+title = "AdminX"
 pagetitle = ""
 description = ""
-weight = 5
+weight = 3
 alwaysopen = false
 isDirectory = false
 +++

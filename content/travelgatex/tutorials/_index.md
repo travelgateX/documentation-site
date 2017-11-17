@@ -1,5 +1,6 @@
 +++
 title = "Tutorials"
+pagetitle = ""
 description = "Walkthrouhgs of common applications"
 icon="fa-list"
 weight = 5

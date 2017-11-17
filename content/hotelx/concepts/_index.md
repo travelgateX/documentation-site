@@ -1,5 +1,6 @@
 +++
 title = "Concepts"
+pagetitle = ""
 description = "Understand TravelgateX concepts"
 icon = "fa-question-circle" 
 weight = 3

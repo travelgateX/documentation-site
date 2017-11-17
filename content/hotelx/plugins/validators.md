@@ -1,5 +1,6 @@
 +++
 title = "Validator"
+pagetitle = ""
 description = "Validate plugins"
 icon = "fa-check"
 weight = 1

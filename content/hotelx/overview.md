@@ -1,5 +1,6 @@
 +++
 title = "Overview"
+pagetitle = ""
 description = "HotelX Information"
 icon = "fa-info-circle"
 weight = 1

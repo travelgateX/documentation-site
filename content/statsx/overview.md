@@ -1,5 +1,6 @@
 +++
 title = "Overview"
+pagetitle = ""
 description = "StatsX Information"
 icon = "fa-info-circle"
 weight = 1

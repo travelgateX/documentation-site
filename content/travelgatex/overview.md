@@ -1,5 +1,6 @@
 +++
 title = "Overview"
+pagetitle = ""
 description = "Platform information"
 icon = "fa-info-circle"
 weight = 1

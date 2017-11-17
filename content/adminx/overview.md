@@ -1,7 +1,7 @@
 +++
 title = "Overview"
 pagetitle = ""
-description = "FlightX Information"
+description = "AdminX Information"
 icon = "fa-info-circle"
 weight = 1
 alwaysopen = false

@@ -1,5 +1,6 @@
 +++
 title = "Basic Concepts"
+pagetitle = ""
 description = ""
 weight = 3
 alwaysopen = false

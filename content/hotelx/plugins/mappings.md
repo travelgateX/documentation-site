@@ -1,5 +1,6 @@
 +++
 title = "Mapping"
+pagetitle = ""
 description = "Map plugins"
 icon = "fa-sitemap"
 weight = 2

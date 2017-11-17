@@ -1,5 +1,6 @@
 +++
 title = "Overview"
+pagetitle = ""
 description = "TravelgateX Information"
 icon = "fa-info-circle"
 weight = 1

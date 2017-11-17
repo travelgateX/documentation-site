@@ -1,5 +1,6 @@
 +++
 title = "API Reference"
+pagetitle = ""
 description = ""
 weight = 1
 alwaysopen = false

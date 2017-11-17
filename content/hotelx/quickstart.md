@@ -1,5 +1,6 @@
 +++
 title = "Quickstart"
+pagetitle = ""
 description = "Playground Quickstart"
 icon = "fa-clock-o"
 weight = 2

@@ -1,5 +1,6 @@
 +++
 title = "SFTP"
+pagetitle = ""
 description = ""
 weight = 1
 alwaysopen = false
