@@ -1,6 +1,6 @@
 +++
 title = "Overview"
-description = "FlightX Information"
+description = "StatsX Information"
 icon = "fa-info-circle"
 weight = 1
 alwaysopen = false

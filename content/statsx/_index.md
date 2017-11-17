@@ -1,7 +1,7 @@
 +++
-title = "Insights"
+title = "StatsX"
 description = ""
-weight = 5
+weight = 4
 alwaysopen = false
 isDirectory = false
 +++

@@ -1,5 +1,5 @@
 +++
-title = "Mappea"
+title = "MappeaX"
 description = ""
 weight = 6
 alwaysopen = false
