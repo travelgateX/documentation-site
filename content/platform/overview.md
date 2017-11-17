@@ -6,6 +6,8 @@ weight = 1
 alwaysopen = false
 +++
 
+This page provides an overview of _travelgateX_ platform. It's used as reference 
+
 ### GraphQL Gateway
 
 ConnectX is the first-in-the-industry travel API completely based in GraphQL. Most travel APIs are old legacy XML Soap APIs. We know that, because we've integrated too many of them. The problems with that technology are well-known and we won't get into details here. One of the things we really like about GraphQL, is that each client is ultimately responsible over what it wants to be returned. For the full reasoning behind working with GraphQL please click [here](/learning-graphql/overview/#graphql-at-travelgatex).
