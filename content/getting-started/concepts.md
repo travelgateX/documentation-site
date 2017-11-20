@@ -1,6 +1,6 @@
 +++
 title = "Concepts"
-pagetitle = ""
+pagetitle = "Concepts: Understanding Common Concepts"
 description = "Understand concepts"
 icon = "fa-question-circle" 
 weight = 3

@@ -1,6 +1,6 @@
 +++
 title = "Quickstart"
-pagetitle = ""
+pagetitle = "Quickstart: Getting Started in 5min"
 description = "Learn in 5 minutes"
 icon = "fa-clock-o"
 weight = 1
