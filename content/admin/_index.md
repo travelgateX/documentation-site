@@ -1,8 +1,8 @@
 +++
-title = "AdminX"
+title = "Admin"
 pagetitle = ""
 description = ""
-weight = 3
+weight = 9
 alwaysopen = false
 isDirectory = false
 +++

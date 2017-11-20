@@ -5,6 +5,7 @@ description = ""
 weight = 5
 alwaysopen = false
 isDirectory = false
+hidden = true
 +++
 
 _FlightX_ _connects_ you to multiple `sellers` _addding_ business logic _solving_ most of the problems commonly found in the travel business in an **elegant and efficient** way.
