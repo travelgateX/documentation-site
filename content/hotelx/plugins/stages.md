@@ -19,8 +19,8 @@ _After_ `Buyer` requests _search hotel_ message.
 | HotelSettingsInput | Merged settings from Request and hotelX configuration |
 
 ### Default Plugins
-1. [ValidateRequestX](../reference)
-* [MapRequestX](../reference)
+1. [ValidateRequest](../reference)
+* [MapRequest](../reference)
 
 ## Access Request
 _After_ `Accesses` has been resolved and _before_ send request to `Supplier` using `Access` configuration.
@@ -41,8 +41,8 @@ _After_ `Supplier` responses _search hotel_ message. For every option returned b
 | HotelOptionSearch | Option returned by `Supplier` |  
 
 ### Default Plugins
-1. [MapResponseX](../reference)
-* [PriceResponseX](../reference)
+1. [MapResponse](../reference)
+* [PriceResponse](../reference)
 
 ## Access Response
 _After_ `Access` `Supplier` responses _search hotel_ message. For all options returned by `Supplier`
@@ -52,7 +52,7 @@ _After_ `Access` `Supplier` responses _search hotel_ message. For all options re
 | HotelOptionSearchResponse | Search Response returned by `Supplier` |  
 
 ### Default Plugins
-1. [AggregateResponseX](../reference)
+1. [AggregateResponse](../reference)
 
 ## Response
 _Before_ `Buyer` response _search hotel_ message.
@@ -62,4 +62,4 @@ _Before_ `Buyer` response _search hotel_ message.
 | HotelSearchReponse | Search Response to be returned to `Supplier` |  
 
 ### Default Plugins
-1. [AggregateResponseX](../reference)
+1. [AggregateResponse](../reference)

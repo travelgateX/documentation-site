@@ -9,11 +9,11 @@ alwaysopen = false
 
 | Name | Description | Parameters |
 | --- | --- | --- |
-| _ValidateRequestPluginX_ | Validate user request | |
-| _MapRequestPluginX_ | Map Hotels ||
-| _SplitAccessesPluginX_ | Split requests to multiple `Suppliers`| |
-| _MapResponsePluginX_ | Map _Hotels_, _Rooms_ and _Boards_ |  mapHotels **bool** <br> mapRooms **bool** <br> mapBoards **bool** |
-| _PriceResponsePluginX_ | Currency conversion and markups |  currencyConversion **bool** <br> applyMarkups **bool** |
-| _AggregateResponsePluginX_ | Aggregates options based on Primary Key and Price Comparer | primaryKey **string** <br> priceComparer **string** |
+| _ValidateRequest_ | Validate user request | |
+| _MapRequest_ | Map Hotels ||
+| _SplitAccesses_ | Split requests to multiple `Suppliers`| |
+| _MapResponse_ | Map _Hotels_, _Rooms_ and _Boards_ |  mapHotels **bool** <br> mapRooms **bool** <br> mapBoards **bool** |
+| _PriceResponse_ | Currency conversion and markups |  currencyConversion **bool** <br> applyMarkups **bool** |
+| _AggregateResponse_ | Aggregates options based on Primary Key and Price Comparer | primaryKey **string** <br> priceComparer **string** |
 
 
