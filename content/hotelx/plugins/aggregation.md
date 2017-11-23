@@ -7,9 +7,9 @@ weight = 3
 alwaysopen = false
 +++
 
- # Overview
+# Overview
 
- Aggregation plugins extends [HotelX](/hotelx/) allowing filtering `Supplier` options and respones using different business rules.
+Aggregation plugins extends [HotelX](/hotelx/) allowing filtering `Supplier` options and respones using different business rules.
 
 # KeyFilter
 
@@ -49,8 +49,6 @@ Value must be a valid Function.
 ### value: String!
 Value must be a valid Field Value.
 
-
-## FAQ
 
  
  

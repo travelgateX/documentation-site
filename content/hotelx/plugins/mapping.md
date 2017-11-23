@@ -1,56 +1,52 @@
 +++
 title = "Mapping"
 pagetitle = ""
-description = "Mapper plugins"
+description = "Map plugins"
 icon = "fa-sitemap"
 weight = 2
 alwaysopen = false
 +++
 
- # Overview
+# Overview
 
- Aggregation plugins extends [HotelX](/hotelx/) allowing filtering `Supplier` options and respones using different business rules.
+Map plugins extends [HotelX](/hotelx/) allowing to match `Supplier` codes based on contexts.
 
-# KeyFilter
+# HotelCodeMatching
 
-Filters `Supplier` options based on _field keys_ applying a selector _function_ over _field values_. 
+Matches `Supplier` hotel codes based on file code mapping. 
 
-It's based on [SQL Aggregate Functions](https://www.postgresql.org/docs/current/static/functions-aggregate.html) but filtering, not aggregating.
+## File Requirements
 
-* **_Field Keys_** as a combination of:
+The file should be in the below format:
 
-    * SupplierCode
-    * HotelCode
-    * BoardCode
-    * RoomCode
-    * Refundable
-* **_Functions_**:
-    * Min
-    * Max
-* **_Field Values_**:
-    * PriceNet
-    * PriceGross
+* **Encoding**: UTF-8
+* **File Name**: [Code Context Buyer]_hotel_map.csv
+* **Header Row**: Code Context, Supplier Context, Code Supplier Context
+* **Delimiter**: Comma
+
+```text
+Code Context, Supplier Context, Code Supplier Context
+10,GUE,c11#10
+10000,JCB,7604
+10000,TOU,1274249
+```
+
+File must be uploaded to your organization directory [SFTP](/travelgatex/data-automation/ftp)
 
 ## Configuration
 
 ```json
 {
+
 }
 ```
 
 ## Parameters
 
-### keys: [String!]
-Values must be a valid Field Key.
+### stopsOnMatchError: [Boolean]
+Stops message execution when hotel matching can not be done. Default value _False_
 
-### function: String!
-Value must be a valid Function.
-
-### value: String!
-Value must be a valid Field Value.
-
-
-## FAQ
-
+# BoardCodeMatching
  
  
+# RoomSemanticMatching

@@ -37,14 +37,14 @@ _Step_ is the minium container where _plugins_ are executed **sequentially**.
 
 [HotelX](/hotelx/) supports different plugin types: 
 
-1. [Pre Step](../pre-step): First execution on every _step_.
-* [Hotel Map](../hotel-map): Hotel mapping codes.
-* [Board Map](../board-map): Board mapping codes.
-* [Room Map](../room-map): Room mapping codes.
-* [Currency Conversion](../currency-conversion): Currency rate conversion. 
+1. [Pre Step](../processor): First execution on every _step_.
+* [Hotel Map](../mapping): Hotel mapping codes.
+* [Board Map](../mapping): Board mapping codes.
+* [Room Map](../mapping): Room mapping codes.
+* [Currency Conversion](../converter): Currency rate conversion. 
 * [Markup](../markup): Markups to `supplier` price.
 * [Aggregation](../aggregation): Aggregate multiple `supplier` options.
-* [Post Step](../post-step): Last execution on every _step_.
+* [Post Step](../processor): Last execution on every _step_.
 
 
 # Plugin Context Execution
@@ -65,10 +65,10 @@ With _context_ information developers can personalize _plugin_ features, more in
 
 | | **search** | **quote** | **hotelBook** | **hotelCancel** |
 | --- | --- | --- | --- | --- |
-| _Request_ | [Pre Step](../pre-step)<br>[Hotel Map](../hotel-map)<br>[Post Step](../post-step)|[Pre Step](../pre-step)<br>[Post Step](../post-step)|[Pre Step](../pre-step)<br>[Post Step](../post-step)|[Pre Step](../pre-step) <br>[Post Step](../post-step)|[Post Step](../post-step)|[Pre Step](../pre-step) <br>[Post Step](../post-step)|
+| _Request_ | [Pre Step](../pre-step)<br>[Hotel Map](../mapping)<br>[Post Step](../post-step)|[Pre Step](../pre-step)<br>[Post Step](../post-step)|[Pre Step](../pre-step)<br>[Post Step](../post-step)|[Pre Step](../pre-step) <br>[Post Step](../post-step)|[Post Step](../post-step)|[Pre Step](../pre-step) <br>[Post Step](../post-step)|
 | _Request Access_ | [Pre Step](../pre-step) <br>[Post Step](../post-step) |[Pre Step](../pre-step) <br>[Post Step](../post-step)|[Pre Step](../pre-step) <br>[Post Step](../post-step)|[Pre Step](../pre-step) <br>[Post Step](../post-step)|
-| _Response Option_ |[Pre Step](../pre-step)<br>[Hotel Map](../hotel-map)<br>[Board Map](../hotel-map)<br>[Room Map](../room-map)<br>[Currency Conversion](../currency-conversion)<br>[Markup](../markup)<br>[Aggregation](../aggregation)<br>[Post Step](../post-step)| |  | |
-| _Response Access_ |[Pre Step](../pre-step)<br>[Post Step](../post-step)|[Pre Step](../pre-step)<br>[Hotel Map](../hotel-map)<br>[Board Map](../hotel-map)<br>[Room Map](../room-map)<br>[Currency Conversion](../currency-conversion)<br>[Markup](../markup)<br>[Post Step](../post-step)|[Pre Step](../pre-step)<br>[Hotel Map](../hotel-map)<br>[Board Map](../hotel-map)<br>[Room Map](../room-map)<br>[Currency Conversion](../currency-conversion)<br>[Post Step](../post-step)| [Pre Step](../pre-step)<br>[Hotel Map](../hotel-map)<br>[Board Map](../hotel-map)<br>[Room Map](../room-map)<br>[Currency Conversion](../currency-conversion)<br>[Post Step](../post-step)|
+| _Response Option_ |[Pre Step](../pre-step)<br>[Hotel Map](../mapping)<br>[Board Map](../mapping)<br>[Room Map](../mapping)<br>[Currency Conversion](../currency-conversion)<br>[Markup](../markup)<br>[Aggregation](../aggregation)<br>[Post Step](../post-step)| |  | |
+| _Response Access_ |[Pre Step](../pre-step)<br>[Post Step](../post-step)|[Pre Step](../pre-step)<br>[Hotel Map](../mapping)<br>[Board Map](../mapping)<br>[Room Map](../mapping)<br>[Currency Conversion](../currency-conversion)<br>[Markup](../markup)<br>[Post Step](../post-step)|[Pre Step](../pre-step)<br>[Hotel Map](../mapping)<br>[Board Map](../mapping)<br>[Room Map](../mapping)<br>[Currency Conversion](../currency-conversion)<br>[Post Step](../post-step)| [Pre Step](../pre-step)<br>[Hotel Map](../mapping)<br>[Board Map](../mapping)<br>[Room Map](../mapping)<br>[Currency Conversion](../currency-conversion)<br>[Post Step](../post-step)|
 | _Response_ |[Pre Step](../pre-step)<br>[Aggregation](../aggregation)<br>[Post Step](../post-step)|[Pre Step](../pre-step) <br>[Post Step](../post-step)|[Pre Step](../pre-step) <br>[Post Step](../post-step)|[Pre Step](../pre-step) <br>[Post Step](../post-step)|
 
 
