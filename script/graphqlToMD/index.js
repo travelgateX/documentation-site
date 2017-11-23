@@ -1,7 +1,5 @@
 const loadSchemaJSON = require("./loadSchemaJSON");
 const renderToHugo = require("./renderSchemaToHugo");
-const updateSchema = require("./updateSchema");
-const diffSchema = require("./diffSchema");
 const config = require("./config");
 const fs = require("fs");
 const fsex = require("fs.extra");
