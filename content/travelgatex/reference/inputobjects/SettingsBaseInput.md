@@ -1,0 +1,58 @@
+{
+  "title": "SettingsBaseInput",
+  "description": "",
+  "weight": 1,
+  "fields": [
+    {
+      "typeString": "Int",
+      "name": "timeout",
+      "url": "/travelgatex/reference/scalars/int",
+      "description": "Milliseconds before the connection is closed.",
+      "isDeprecated": "",
+      "args": null
+    },
+    {
+      "typeString": "Boolean",
+      "name": "auditTransactions",
+      "url": "/travelgatex/reference/scalars/boolean",
+      "description": "Specifies if transactions exchanged with the supplier have to be logged or not.",
+      "isDeprecated": "",
+      "args": null
+    },
+    {
+      "typeString": "BusinessRulesInput",
+      "name": "businessRules",
+      "url": "/travelgatex/reference/inputobjects/businessrulesinput",
+      "description": "Business rules.",
+      "isDeprecated": "",
+      "args": null
+    }
+  ],
+  "requireby": [
+    {
+      "name": "SupplierInput",
+      "description": "Supplier object. Contains its own settings, code and access.",
+      "url": "/travelgatex/reference/inputobjects/supplierinput"
+    },
+    {
+      "name": "AccessInput",
+      "description": "AccessInput overwrites an existent access in our Back Office or creates a new\none to be used in this search query only. An access object contains its own code, configuration and settings.",
+      "url": "/travelgatex/reference/inputobjects/accessinput"
+    }
+  ],
+  "enumValues": null,
+  "operator": "type",
+  "typename": "SettingsBaseInput"
+}
+Contains the time out and business rules of a supplier or an access.
+## GraphQL Schema definition
+
+{{% graphql-schema-type %}}
+
+## Fields
+
+{{% graphql-field %}}
+
+## Require by
+
+{{% graphql-require-by %}}

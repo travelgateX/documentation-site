@@ -1,0 +1,10 @@
+<ul class="require-by">
+    {{- range $.Page.Params.requireby}}
+        <li class="lifields">
+            <a href="{{.url}}">
+                {{.name}}: 
+            </a>
+            <span>{{.description}}</span>
+        </li>
+    {{end}}
+</ul>
