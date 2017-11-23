@@ -189,7 +189,18 @@ nav.menu-nav ul {
 nav.menu-nav > ul {
   overflow: hidden;
   overflow-y: auto;
-  height: 500px;
+  height: 100%;
+}
+
+nav.menu-nav > ul::-webkit-scrollbar{
+  width: 4px;
+  background-color: transparent;
+  color: #007bff
+}
+
+nav.menu-nav > ul::-webkit-scrollbar-thumb{
+  background: rgba(0,0,0,.26);
+  
 }
 
 nav a span {
@@ -513,23 +524,22 @@ a.card-lv2:hover {
   }
   .menu-left {
     display: block;
-    position: relative;
+    position: fixed;
+    width: 290px;
+    height: calc(100vh - 150px);
     transform: translateX(0%);
   }
 
   .menu-left nav {
-    position: fixed;
-    width: 250px;
-    height: inherit;
-    left: inherit;
-    top: inherit;
+    position: relative;
+    width: 100%;
+    height: 100%;
   }
   .content-center {
-    width: 65%;
+    width: calc(100% - 450px);
+    margin-left: 270px;    
   }
-  .menu-right {
-    width: 15%;
-  }
+
   .card {
     width: 235px;
     margin: 12px 20px 12px 0;
