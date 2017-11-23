@@ -35,7 +35,7 @@ _Step_ is the minium container where _plugins_ are executed **sequentially**.
 
 # Plugin Types
 
-[HotelX](/hotelx/) supports different plugin types: 
+Plugin types supported by [HotelX](/hotelx/): 
 
 * [Pre Step](../processor): First execution on every _step_.
 * [Hotel Map](../mapping): Hotel mapping codes.
