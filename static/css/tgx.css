@@ -29,14 +29,14 @@ img[src$="#floatright"] {
 }
 
 body {
-  background-color: #f6f8f9 !important;
+  background-color: white !important;
   font-size: 14px;
   font-family: "Roboto", sans-serif;
   color: #182945 !important;
 }
 
 .material-box {
-  background-color: #ffffff;
+  background-color: #f6f8f9;
   -webkit-box-shadow: 1px 1px 3px 0 rgba(216, 227, 232, 0.49);
   box-shadow: 1px 1px 3px 0 rgba(216, 227, 232, 0.49);
   border-radius: 2px;
@@ -188,8 +188,8 @@ nav.menu-nav ul {
 
 nav.menu-nav > ul {
   overflow: hidden;
-  overflow-y: scroll;
-  max-height: 500px;
+  overflow-y: auto;
+  height: 500px;
 }
 
 nav a span {
@@ -210,8 +210,12 @@ nav.menu-nav ul li a {
   padding: 0 5px;
 }
 
-nav.menu-nav ul li a:hover {
-  background-color: white;
+nav.menu-nav ul li a:hover, nav.menu-nav ul li a span:hover {
+  background-color: #f6f8f9;
+}
+
+nav.menu-nav ul li a span:hover {
+  background-color: #f6f8f9;
 }
 nav.menu-nav ul li a > * {
   vertical-align: middle;
@@ -797,4 +801,29 @@ ul.field table a{
 .customTable thead{
   background-color: #0882b7;
   color: white;
+}
+
+table thead td, table thead th {
+  border-bottom-width: 2px;
+}
+
+table thead th {
+  vertical-align: bottom;
+  border-bottom: 2px solid #e9ecef;
+  background-color: #f6f8f9;
+}
+
+table td, table th {
+  padding: 15px 16px;
+  vertical-align: top;
+  border-top: 1px solid #e9ecef;
+}
+
+table {
+  border: 1px solid #e9ecef;
+}
+table {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 1rem;
 }
