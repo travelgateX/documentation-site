@@ -9,11 +9,11 @@ alwaysopen = false
 
 # Overview
 
-Map plugins extends [HotelX](/hotelx/) allowing to match `Supplier` codes based on contexts.
+Map plugins extends [HotelX](/hotelx/) allowing to match `Seller` and `Buyer` codes based on contexts.
 
 # HotelCodeMatching
 
-Matches `Supplier` hotel codes based on file code mapping. 
+Matches `Seller` hotel codes based on file code mapping. 
 
 ## File Requirements
 
@@ -21,11 +21,11 @@ The file should be in the below format:
 
 * **Encoding**: UTF-8
 * **File Name**: [Code Context Buyer]_hotel_map.csv
-* **Header Row**: Code Context, Supplier Context, Code Supplier Context
+* **Header Row**: Code Context, Seller Context, Code Seller Context
 * **Delimiter**: Comma
 
 ```text
-Code Context, Supplier Context, Code Supplier Context
+Code Context, Seller Context, Code Seller Context
 10,GUE,c11#10
 10000,JCB,7604
 10000,TOU,1274249
