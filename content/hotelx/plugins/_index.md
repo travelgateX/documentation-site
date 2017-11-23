@@ -7,6 +7,6 @@ weight = 5
 alwaysopen = false
 isDirectory = false
 +++
-Manage your additional business logic. 
+Customize your additional features. 
 
 {{%custom-children%}}
