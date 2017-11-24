@@ -1,4 +1,4 @@
-<nav  class="navbar navbar-default menu-nav material-box">
+<nav  class="menu-nav material-box">
   <ul class="topics">
     {{- $currentNode := . }}
     {{- $showvisitedlinks := .Site.Params.showVisitedLinks -}}
@@ -115,6 +115,16 @@
       $('#navbar').removeClass('toogled');
       $('#backgroundMenu').removeClass('toogled');
     });
+
+    $('a[href^="#"]').on('click',function (e) {
+	    e.preventDefault();
+
+	    var target = this.hash;
+	    var $target = $(target);
+      $('html, body').animate({
+        scrollTop: $target.offset().top - 60
+      }, 500);
+	});
   })
 
 </script>

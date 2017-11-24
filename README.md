@@ -61,3 +61,12 @@ git pull origin master
 cd ..
 ./deploy.sh
 ```
+
+## Graphql documentation generator
+
+```bash
+cd script
+npm install
+npm start
+cd ..
+```

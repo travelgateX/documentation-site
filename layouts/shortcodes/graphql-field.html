@@ -1,0 +1,8 @@
+<ul class="field">
+    {{- range $.Page.Params.fields}}
+    <li class="lifields">
+        <a href="{{.url}}">{{- .name}}({{- .typeString}}):</a>
+        <span class="description">{{- .description}}</span>
+    </li>
+    {{end}}
+</ul>

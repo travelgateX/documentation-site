@@ -1,0 +1,16 @@
+<div class="highlight">
+    <ul class="code">
+        <li>
+            <span class="keyword operator ts">{{$.Page.Params.operator}}</span>
+            <span class="identifier">{{ $.Page.Params.typename }}</span>{
+        </li>
+        {{range $.Page.Params.enumValues}}
+        <li>
+            <span class="tab">
+                <span class="meta">{{.name}}</span>,
+            </span>
+        </li>
+        {{end}}
+        <li>}</li>        
+    </ul>
+</div>
