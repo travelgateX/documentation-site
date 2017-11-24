@@ -1,6 +1,6 @@
 +++
 title = "Overview"
-pagetitle = ""
+pagetitle = "TravelgateX Platform Information"
 description = "Platform information"
 icon = "fa-info-circle"
 weight = 1

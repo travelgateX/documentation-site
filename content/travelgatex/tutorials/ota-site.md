@@ -1,9 +1,9 @@
 +++
 title = "Build An OTA"
-pagetitle = ""
-description = ""
+pagetitle = "Build Your Own Full Fledged OTA"
+description = "Build Your Own Full Fledged OTA"
 weight = 1
 alwaysopen = false
 +++
 
-## Build Your Own Full Fledged OTA
+## 

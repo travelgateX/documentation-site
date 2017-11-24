@@ -1,7 +1,7 @@
 +++
 title = "HotelX"
-pagetitle = ""
-description = ""
+pagetitle = "HotelX: NextGen Hotel Searching API"
+description = "HotelX: NextGen Hotel Searching API"
 weight = 4
 alwaysopen = false
 isDirectory = false

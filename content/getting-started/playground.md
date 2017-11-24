@@ -1,7 +1,7 @@
 +++
 title = "Playground"
-pagetitle = ""
-description = "Test inline"
+pagetitle = "Play Around with the API"
+description = "Embedded GraphQL Client"
 icon = "fa-play"
 weight = 3
 alwaysopen = false

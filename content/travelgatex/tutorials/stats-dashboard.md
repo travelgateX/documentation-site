@@ -1,9 +1,9 @@
 +++
 title = "Build a Dashboard"
-pagetitle = ""
-description = ""
+pagetitle = "Build a Dashboard"
+description = "Build a Dashboard"
 weight = 2
 alwaysopen = false
 +++
 
-## Build Your Own Full Fledged OTA
+## Build a Dashboard

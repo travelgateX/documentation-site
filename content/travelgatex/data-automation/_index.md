@@ -1,7 +1,7 @@
 +++
 title = "Data Automation"
-pagetitle = ""
-description = "Automate data bulk operations"
+pagetitle = "Bulk Data Automation"
+description = "Automate bulk data operations"
 icon = "fa-database" 
 weight = 4
 alwaysopen = false

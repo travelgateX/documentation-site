@@ -1,7 +1,7 @@
 +++
 title = "Resources"
-pagetitle = ""
-description = "Quotas, release notes"
+pagetitle = "Important Information"
+description = "Quotas, Release notes"
 icon="fa-file-text"
 weight = 6
 alwaysopen = false

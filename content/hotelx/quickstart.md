@@ -1,7 +1,7 @@
 +++
 title = "Quickstart"
-pagetitle = ""
-description = "Playground Quickstart"
+pagetitle = "HotelX Quickstart"
+description = "HotelX Quickstart"
 icon = "fa-clock-o"
 weight = 2
 alwaysopen = false

@@ -1,7 +1,7 @@
 +++
 title = "API Reference"
-pagetitle = ""
-description = ""
+pagetitle = "Platform-wide API Reference"
+description = "Platform-wide API Reference"
 weight = 1
 alwaysopen = false
 +++

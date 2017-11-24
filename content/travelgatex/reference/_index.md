@@ -1,6 +1,6 @@
 +++
 title = "Reference"
-pagetitle = ""
+pagetitle = "API Reference"
 description = "Reference Documentation"
 icon = "fa-book"
 weight = 4

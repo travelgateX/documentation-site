@@ -1,13 +1,11 @@
 +++
 title = "Overview"
-pagetitle = ""
+pagetitle = "HotelX Intro"
 description = "HotelX Information"
 icon = "fa-info-circle"
 weight = 1
 alwaysopen = false
 +++
-
-## Overview
 
 HotelX is the ultimate connectivity solution, it not only _connects_ you to multiple `Sellers`, but also _adds_ business logic _solving_ most of the problems commonly found in the travel business in an **elegant and efficient** way.
 

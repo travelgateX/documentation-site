@@ -1,10 +1,15 @@
 +++
 title = "Getting Started"
-pagetitle = "Getting Started: Learning The Basics"
+pagetitle = "Get Started with TravelgateX"
 description = ""
 weight = 1
 alwaysopen = false
 isDirectory=false
 +++
-Information to start developing
+
+Welcome to TravelgateX! Get familiar with the TravelgateX products and explore their features:
+
 {{%custom-children%}}
+
+
+

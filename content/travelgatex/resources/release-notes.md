@@ -1,7 +1,7 @@
 +++
 title = "Release Notes"
-pagetitle = ""
-description = ""
+pagetitle = "Release Notes and Changelog"
+description = "Release Notes and Changelog"
 weight = 2
 alwaysopen = false
 +++

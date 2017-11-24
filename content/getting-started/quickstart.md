@@ -1,11 +1,15 @@
 +++
 title = "Quickstart"
-pagetitle = "Quickstart: Getting Started in 5min"
-description = "Learn in 5 minutes"
+pagetitle = "Get Started in Seconds"
+description = "Try the API now"
 icon = "fa-clock-o"
 weight = 1
 alwaysopen = false
 +++
+
+## Try Now
+
+Try the TravelgateX API in a few seconds. Search for a hotel, quote and book and by following the steps below.
 
 ## Become a TravelgateX Partner
 
