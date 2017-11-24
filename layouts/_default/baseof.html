@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>{{ block "title" . }}{{ .Params.Pagetitle }} | {{ .Site.Title }}{{ end }}</title>
+    <title>{{ block "title" . }}{{if .Params.Pagetitle }}{{ .Params.Pagetitle }}{{else}}{{ .Params.Title }}{{end}} | {{ .Site.Title }}{{ end }}</title>
     {{if .Site.Params.themeStyle}}
       {{ partial (printf "%s/head.html" .Site.Params.themeStyle) . }}
     {{else}}
