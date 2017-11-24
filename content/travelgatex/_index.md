@@ -1,7 +1,7 @@
 +++
 title = "TravelgateX"
-pagetitle = "TravelgateX - The Platform"
-description = "TravelgateX - The Platform"
+pagetitle = "The Platform"
+description = "TravelgateX - The Ultimate Platform For The Travel Trade"
 weight = 2
 alwaysopen = false
 isDirectory = false

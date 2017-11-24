@@ -1,6 +1,6 @@
 +++
 title = "SFTP"
-pagetitle = "Secure File Transfer Protocol (SFTP)"
+pagetitle = "Secure File Transfer Protocol"
 description = "Secure File Transfer Protocol (SFTP)"
 weight = 1
 alwaysopen = false

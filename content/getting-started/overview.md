@@ -20,7 +20,6 @@ We will be publishing a registration website so each developer can register for 
 Although there's only one endpoint, our GraphQL API models all the products and services we offer. Please navigate to the desired product documentation in order to start building your app.
 
 - [HotelX](/hotelx/): Next generation hotel search & booking API.
->>>>>>> 2c305f682fad809d6b53283ffb4bbbe3a0495009
 - ConnectX Flights: Next generation _NDC compliant_ flight search & booking API.
 - Stats: All the requests sent and received, their response times and status codes.
 - Insights: Become a true data-first decision maker by leveraging our rich Insights API. All the requests, all the searches, everything you've made with us available here.
