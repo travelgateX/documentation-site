@@ -20,12 +20,12 @@ Matches `Seller` hotel codes based on file code mapping.
 The file should be in the below format:
 
 * **Encoding**: UTF-8
-* **File Name**: [Code Context Buyer]_hotel_map.csv
-* **Header Row**: Code Context, Seller Context, Code Seller Context
+* **File Name**: [Context Source]_hotel_map.csv
+* **Header Row**: Code Source, Context Destination, Code Destination
 * **Delimiter**: Comma
 
 ```text
-Code Context, Seller Context, Code Seller Context
+Code Source, Context Destination, Code Destination
 10,GUE,c11#10
 10000,JCB,7604
 10000,TOU,1274249
