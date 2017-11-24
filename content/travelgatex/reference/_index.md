@@ -1,10 +1,8 @@
-+++
-title = "Reference"
-pagetitle = "API Reference"
-description = "Reference Documentation"
-icon = "fa-book"
-weight = 4
-alwaysopen = false
-+++
-
-## Reference
+{
+  "title": "Reference",
+  "pagetitle": "Reference Documentation",
+  "description": "Reference Documentation",
+  "weight": 2,
+  "icon": "fa-book",
+  "alwaysopen": false
+}

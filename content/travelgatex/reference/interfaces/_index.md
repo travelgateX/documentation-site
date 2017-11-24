@@ -1,5 +1,8 @@
-+++
-title = "Interfaces"
-description = ""
-weight = 4
-+++
+{
+  "title": "Interfaces",
+  "pagetitle": null,
+  "description": "",
+  "weight": 4,
+  "icon": null,
+  "alwaysopen": false
+}

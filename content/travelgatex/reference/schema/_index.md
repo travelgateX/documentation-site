@@ -1,6 +1,8 @@
-+++
-title = "Schema"
-pagetitle = "as"
-description = ""
-weight = 1
-+++
+{
+  "title": "Schema",
+  "pagetitle": null,
+  "description": "",
+  "weight": 1,
+  "icon": null,
+  "alwaysopen": false
+}

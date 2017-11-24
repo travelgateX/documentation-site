@@ -75,17 +75,17 @@ function renderObject(lines, type, types, template, operator = template) {
     printer(lines, `${type.description}`);
   }
 
-  printer(lines, `## GraphQL Schema definition\n`);
+  printer(lines, `## ${config.SECTION1}\n`);
   printer(lines, `{{% graphql-schema-${template} %}}\n`);
 
   let fields = frontMatter.fields;
   if (fields && fields.length) {
-    printer(lines, `## Fields\n`);
+    printer(lines, `## ${config.SECTION2}\n`);
     printer(lines, `{{% graphql-field %}}\n`);    
   }
 
   if (frontMatter.requireby && frontMatter.requireby.length) {
-    printer(lines, `## Require by\n`);
+    printer(lines, `## ${config.SECTION3}\n`);
     printer(lines, `{{% graphql-require-by %}}\n`);
   }
 }
