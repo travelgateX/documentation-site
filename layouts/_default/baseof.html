@@ -19,7 +19,7 @@
         </div>
         <div class="content-center">
           <div class="p-4">
-            <h1 class="pageTitle">{{.Params.Title}}</h1>
+            <h1 class="pageTitle">{{if .Params.Pagetitle }}{{ .Params.Title }}: {{ .Params.Pagetitle }}{{else}}{{ .Params.Title }}{{end}}</h1>
             {{ block "main" . }}
             {{ end }}    
           </div>
