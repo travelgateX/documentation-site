@@ -1,6 +1,6 @@
 +++
 title = "Overview"
-pagetitle = ""
+pagetitle = ""All About Plugins
 description = "Plugins workflow execution"
 icon = "fa-info-circle"
 weight = 1

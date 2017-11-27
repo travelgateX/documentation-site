@@ -1,6 +1,6 @@
 +++
 title = "How-to Guides"
-pagetitle = ""
+pagetitle = "HotelX How Tos"
 description = "Perform specific tasks"
 icon = "fa-list"
 weight = 4

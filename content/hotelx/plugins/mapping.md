@@ -1,6 +1,6 @@
 +++
 title = "Mapping"
-pagetitle = ""
+pagetitle = "HotelX Mapping"
 description = "Map plugins"
 icon = "fa-sitemap"
 weight = 2

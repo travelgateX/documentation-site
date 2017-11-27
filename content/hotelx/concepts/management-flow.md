@@ -1,6 +1,6 @@
 +++
 title = "Management Flow"
-pagetitle = ""
+pagetitle = "Manage and Control Bookings"
 description = "Learn about Management Flow. Cancellations and Booking List"
 weight = 4
 alwaysopen = false

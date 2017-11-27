@@ -1,6 +1,6 @@
 +++
 title = "Release Notes"
-pagetitle = "Release Notes and Changelog"
+pagetitle = "Platform Changelog"
 description = "Release Notes and Changelog"
 weight = 2
 alwaysopen = false

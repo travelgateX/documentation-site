@@ -1,6 +1,6 @@
 +++
 title = "Book"
-pagetitle = ""
+pagetitle = "How To Perform a Booking"
 description = ""
 weight = 1
 alwaysopen = false
