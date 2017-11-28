@@ -9,7 +9,7 @@ alwaysopen = false
 
 This page provides an overview of _travelgateX_ platform. It's used as reference 
 
-### GraphQL Gateway
+# GraphQL Gateway
 
 ConnectX is the first-in-the-industry travel API completely based in GraphQL. Most travel APIs are old legacy XML Soap APIs. We know that, because we've integrated too many of them. The problems with that technology are well-known and we won't get into details here. One of the things we really like about GraphQL, is that each client is ultimately responsible over what it wants to be returned. For the full reasoning behind working with GraphQL please click [here](/learning-graphql/overview/#graphql-at-travelgatex).
 
@@ -17,7 +17,7 @@ The architecture doest not differ from many modern APIs. There's an API Gateway,
 
 It is written in NodeJS, _fast_, stable, secure and fault tolerant load balanced between many datacenters from 4 different cloud providers, namely [Microsoft Azure](https://azure.microsoft.com/), [Google Cloud Platform](https://cloud.google.com/), [Hetzner](https://www.hetzner.de/) and [TotalUptime](http://totaluptime.com/).
 
-## Using the API
+# Using the API
 
 The two types of allowed operations in TravelgateX GraphQL API are:
 
@@ -66,7 +66,7 @@ curl -X\
    https://api.travelgatex.com
 ```
 
-## View the Graph
+# View the Graph
 
 Using [graphql-voyager](https://github.com/APIs-guru/graphql-voyager), we represent [our GraphQL API](https://api.travelgatex.com) as an interactive graph.
 
@@ -81,7 +81,7 @@ Open in a new tab [here](https://api.travelgatex.com/voyager)
 {{<figure src="/images/voyager.gif" link="https://api.travelgatex.com/voyager"  alt="TravelgateX Schema Documentation">}}
 
 
-## Examples
+# Examples
 We share [GraphQL Playgrounds](https://github.com/graphcool/graphql-playground) with common scenarios using products.
 Playgrounds are shared in [product](/product/) reference sections, for example you can use  [ConnectX Hotel Playground](https://graphqlbin.com/JYRtB)
 
@@ -89,7 +89,7 @@ It's important to use the correct Headers. If you want to use test headers, inse
 
 You can easily [share](https://github.com/graphcool/graphql-playground#how-does-graphql-bin-work) your Queries with others by clicking on the "Share" button and sharing the generated link. You can think about GraphQL Bin like Pastebin for your GraphQL queries including the context (endpoint, HTTP headers, open tabs etc).
 
-## Conventions
+# Conventions
 
 TravelgateX follow some conventions about schema definition:
 
@@ -97,7 +97,7 @@ TravelgateX follow some conventions about schema definition:
 * [Definition of custom scalar types](#Custom Scalar Types)
 * [Token Based Authentication](/getting-started/security/#Authentication)
 
-### Relay Implementation
+## Relay Implementation
 TravelgateX uses [Relay](https://facebook.github.io/relay/) schema requirements for own Resources.
 Other resources, like Seller search response, are not modeled with Relay practices.
 
