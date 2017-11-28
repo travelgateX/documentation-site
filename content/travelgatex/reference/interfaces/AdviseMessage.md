@@ -15,7 +15,7 @@
       "typeString": "String!",
       "name": "type",
       "url": "/travelgatex/reference/scalars/string",
-      "description": "TODO:\nError type: The following types are valid:\nXXX: asd asdÃ±oajskd lÃ±a ld ",
+      "description": "TODO:\nError type: The following types are valid:",
       "isDeprecated": "",
       "args": null
     },

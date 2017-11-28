@@ -10,34 +10,14 @@
       "url": "/travelgatex/reference/inputobjects/accessinput"
     },
     {
-      "name": "Access",
-      "description": "",
-      "url": "/travelgatex/reference/objects/access"
+      "name": "Hotel",
+      "description": "Hotel type",
+      "url": "/travelgatex/reference/objects/hotel"
     },
     {
       "name": "Node",
       "description": "",
       "url": "/travelgatex/reference/interfaces/node"
-    },
-    {
-      "name": "AccessData",
-      "description": "",
-      "url": "/travelgatex/reference/objects/accessdata"
-    },
-    {
-      "name": "Supplier",
-      "description": "",
-      "url": "/travelgatex/reference/objects/supplier"
-    },
-    {
-      "name": "SupplierData",
-      "description": "",
-      "url": "/travelgatex/reference/objects/supplierdata"
-    },
-    {
-      "name": "Hotel",
-      "description": "Hotel type",
-      "url": "/travelgatex/reference/objects/hotel"
     },
     {
       "name": "HotelData",
@@ -60,9 +40,114 @@
       "url": "/travelgatex/reference/objects/amenitydata"
     },
     {
+      "name": "Supplier",
+      "description": "",
+      "url": "/travelgatex/reference/objects/supplier"
+    },
+    {
+      "name": "SupplierData",
+      "description": "",
+      "url": "/travelgatex/reference/objects/supplierdata"
+    },
+    {
+      "name": "Access",
+      "description": "",
+      "url": "/travelgatex/reference/objects/access"
+    },
+    {
+      "name": "AccessData",
+      "description": "",
+      "url": "/travelgatex/reference/objects/accessdata"
+    },
+    {
       "name": "IdAccessConfigurationInput",
       "description": "",
       "url": "/travelgatex/reference/inputobjects/idaccessconfigurationinput"
+    },
+    {
+      "name": "GroupCommonData",
+      "description": "",
+      "url": "/travelgatex/reference/interfaces/groupcommondata"
+    },
+    {
+      "name": "Member",
+      "description": "",
+      "url": "/travelgatex/reference/objects/member"
+    },
+    {
+      "name": "MemberData",
+      "description": "",
+      "url": "/travelgatex/reference/objects/memberdata"
+    },
+    {
+      "name": "Group",
+      "description": "",
+      "url": "/travelgatex/reference/objects/group"
+    },
+    {
+      "name": "GroupData",
+      "description": "",
+      "url": "/travelgatex/reference/objects/groupdata"
+    },
+    {
+      "name": "API",
+      "description": "",
+      "url": "/travelgatex/reference/objects/api"
+    },
+    {
+      "name": "APIData",
+      "description": "",
+      "url": "/travelgatex/reference/objects/apidata"
+    },
+    {
+      "name": "Resource",
+      "description": "",
+      "url": "/travelgatex/reference/objects/resource"
+    },
+    {
+      "name": "ResourceData",
+      "description": "",
+      "url": "/travelgatex/reference/objects/resourcedata"
+    },
+    {
+      "name": "Role",
+      "description": "",
+      "url": "/travelgatex/reference/objects/role"
+    },
+    {
+      "name": "RoleData",
+      "description": "",
+      "url": "/travelgatex/reference/objects/roledata"
+    },
+    {
+      "name": "CreateGroupInput",
+      "description": "",
+      "url": "/travelgatex/reference/inputobjects/creategroupinput"
+    },
+    {
+      "name": "DeleteMemberInput",
+      "description": "",
+      "url": "/travelgatex/reference/inputobjects/deletememberinput"
+    },
+    {
+      "name": "Organization",
+      "description": "",
+      "url": "/travelgatex/reference/objects/organization"
+    },
+    {
+      "name": "OrganizationData",
+      "description": "",
+      "url": "/travelgatex/reference/objects/organizationdata"
+    },
+    {
+      "name": "Product",
+      "description": "",
+      "url": "/travelgatex/reference/objects/product"
+    },
+    {
+      "name": "ProductData",
+      "description": "",
+      "url": "/travelgatex/reference/objects/productdata"
     }
   ],
   "enumValues": null,

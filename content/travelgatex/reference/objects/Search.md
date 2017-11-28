@@ -8,7 +8,7 @@
       "name": "hotel",
       "url": "/travelgatex/reference/objects/hotelsearch",
       "description": "Available options of an hotel for a given date and itinerary. It does not filter different classes, times or\nfares. It will always retrieve all results returned by the suppliers. The availability request is very straight\nforward. It only requires the criteria of search (destination, travel dates and the number of pax in each room).\nBut you must preload the other fields in our system by complete the fields absents.",
-      "isDeprecated": "",
+      "isDeprecated": " ⚠️",
       "args": [
         {
           "typeString": "String",
@@ -44,7 +44,7 @@
   "requireby": [
     {
       "name": "Query",
-      "description": "The query type, represents all of the entry points into our object graph.",
+      "description": "",
       "url": "/travelgatex/reference/schema/query"
     }
   ],

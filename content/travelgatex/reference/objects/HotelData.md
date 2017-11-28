@@ -58,7 +58,7 @@
         },
         {
           "typeString": "Int",
-          "name": "Last",
+          "name": "last",
           "url": "/travelgatex/reference/scalars/int",
           "description": "",
           "isDeprecated": ""
@@ -102,7 +102,7 @@
         },
         {
           "typeString": "Int",
-          "name": "Last",
+          "name": "last",
           "url": "/travelgatex/reference/scalars/int",
           "description": "",
           "isDeprecated": ""

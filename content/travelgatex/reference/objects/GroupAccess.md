@@ -20,13 +20,7 @@
       "args": null
     }
   ],
-  "requireby": [
-    {
-      "name": "Mutation",
-      "description": "Mutations are operations that change or update data in the server.",
-      "url": "/travelgatex/reference/schema/mutation"
-    }
-  ],
+  "requireby": null,
   "enumValues": null,
   "operator": "type",
   "typename": "GroupAccess"
@@ -39,7 +33,3 @@ Pair of groups and accesses. All accesses returned will belong to all the groups
 ## Fields
 
 {{% graphql-field %}}
-
-## Require by
-
-{{% graphql-require-by %}}

@@ -10,11 +10,6 @@
       "url": "/travelgatex/reference/inputobjects/urlsinput"
     },
     {
-      "name": "Urls",
-      "description": "Url's",
-      "url": "/travelgatex/reference/objects/urls"
-    },
-    {
       "name": "MediaData",
       "description": "",
       "url": "/travelgatex/reference/objects/mediadata"
@@ -23,6 +18,11 @@
       "name": "Contact",
       "description": "Contact type",
       "url": "/travelgatex/reference/objects/contact"
+    },
+    {
+      "name": "Urls",
+      "description": "Url's",
+      "url": "/travelgatex/reference/objects/urls"
     }
   ],
   "enumValues": null,

@@ -185,56 +185,6 @@
       "url": "/travelgatex/reference/objects/bookingroom"
     },
     {
-      "name": "AccessData",
-      "description": "",
-      "url": "/travelgatex/reference/objects/accessdata"
-    },
-    {
-      "name": "SupplierData",
-      "description": "",
-      "url": "/travelgatex/reference/objects/supplierdata"
-    },
-    {
-      "name": "SupplierGroup",
-      "description": "group related to a supplier",
-      "url": "/travelgatex/reference/objects/suppliergroup"
-    },
-    {
-      "name": "Parameter",
-      "description": "Parameters for additional information for the supplier's configuration.",
-      "url": "/travelgatex/reference/objects/parameter"
-    },
-    {
-      "name": "DefaultSettings",
-      "description": "",
-      "url": "/travelgatex/reference/objects/defaultsettings"
-    },
-    {
-      "name": "ConnectUser",
-      "description": "data related to a connect user and its groups",
-      "url": "/travelgatex/reference/objects/connectuser"
-    },
-    {
-      "name": "ConnectUserGroup",
-      "description": "group related to a connect user",
-      "url": "/travelgatex/reference/objects/connectusergroup"
-    },
-    {
-      "name": "MappingContext",
-      "description": "Returns the differents group contexts",
-      "url": "/travelgatex/reference/objects/mappingcontext"
-    },
-    {
-      "name": "MappingEntity",
-      "description": "Mapping about client codes with the equivalence per supplier.",
-      "url": "/travelgatex/reference/objects/mappingentity"
-    },
-    {
-      "name": "Map",
-      "description": "Map codes.",
-      "url": "/travelgatex/reference/objects/map"
-    },
-    {
       "name": "ServiceStatus",
       "description": "Indicates the status of the service",
       "url": "/travelgatex/reference/objects/servicestatus"
@@ -290,6 +240,26 @@
       "url": "/travelgatex/reference/objects/destination"
     },
     {
+      "name": "DefaultSettings",
+      "description": "",
+      "url": "/travelgatex/reference/objects/defaultsettings"
+    },
+    {
+      "name": "MappingContext",
+      "description": "Returns the differents group contexts",
+      "url": "/travelgatex/reference/objects/mappingcontext"
+    },
+    {
+      "name": "MappingEntity",
+      "description": "Mapping about client codes with the equivalence per supplier.",
+      "url": "/travelgatex/reference/objects/mappingentity"
+    },
+    {
+      "name": "Map",
+      "description": "Map codes.",
+      "url": "/travelgatex/reference/objects/map"
+    },
+    {
       "name": "Mutation",
       "description": "Mutations are operations that change or update data in the server.",
       "url": "/travelgatex/reference/schema/mutation"
@@ -325,29 +295,54 @@
       "url": "/travelgatex/reference/objects/hotelcanceldetail"
     },
     {
-      "name": "AccessConfigurationInput",
-      "description": "The information required to access the supplier's system.",
-      "url": "/travelgatex/reference/inputobjects/accessconfigurationinput"
-    },
-    {
-      "name": "IdAccessConfigurationInput",
-      "description": "",
-      "url": "/travelgatex/reference/inputobjects/idaccessconfigurationinput"
-    },
-    {
       "name": "DefaultSettingsInput",
       "description": "",
       "url": "/travelgatex/reference/inputobjects/defaultsettingsinput"
     },
     {
-      "name": "AccessSupplierInput",
-      "description": "Supplier input for data access management API",
-      "url": "/travelgatex/reference/inputobjects/accesssupplierinput"
+      "name": "Parameter",
+      "description": "Parameters for additional information for the supplier's configuration.",
+      "url": "/travelgatex/reference/objects/parameter"
     },
     {
-      "name": "SupplierGroupInput",
+      "name": "SupplierData",
+      "description": "",
+      "url": "/travelgatex/reference/objects/supplierdata"
+    },
+    {
+      "name": "SupplierGroup",
       "description": "group related to a supplier",
-      "url": "/travelgatex/reference/inputobjects/suppliergroupinput"
+      "url": "/travelgatex/reference/objects/suppliergroup"
+    },
+    {
+      "name": "AccessData",
+      "description": "",
+      "url": "/travelgatex/reference/objects/accessdata"
+    },
+    {
+      "name": "AccessEdge",
+      "description": "",
+      "url": "/travelgatex/reference/objects/accessedge"
+    },
+    {
+      "name": "GiataID",
+      "description": "Giata System ID.",
+      "url": "/travelgatex/reference/objects/giataid"
+    },
+    {
+      "name": "ConnectUser",
+      "description": "data related to a connect user and its groups",
+      "url": "/travelgatex/reference/objects/connectuser"
+    },
+    {
+      "name": "ConnectUserGroup",
+      "description": "group related to a connect user",
+      "url": "/travelgatex/reference/objects/connectusergroup"
+    },
+    {
+      "name": "AccessConfigurationInput",
+      "description": "The information required to access the supplier's system.",
+      "url": "/travelgatex/reference/inputobjects/accessconfigurationinput"
     },
     {
       "name": "AccessConnectUserInput",
@@ -360,9 +355,84 @@
       "url": "/travelgatex/reference/inputobjects/connectusergroupinput"
     },
     {
-      "name": "AccessEdge",
+      "name": "AccessSupplierInput",
+      "description": "Supplier input for data access management API",
+      "url": "/travelgatex/reference/inputobjects/accesssupplierinput"
+    },
+    {
+      "name": "SupplierGroupInput",
+      "description": "group related to a supplier",
+      "url": "/travelgatex/reference/inputobjects/suppliergroupinput"
+    },
+    {
+      "name": "IdAccessConfigurationInput",
       "description": "",
-      "url": "/travelgatex/reference/objects/accessedge"
+      "url": "/travelgatex/reference/inputobjects/idaccessconfigurationinput"
+    },
+    {
+      "name": "MemberEdge",
+      "description": "",
+      "url": "/travelgatex/reference/objects/memberedge"
+    },
+    {
+      "name": "MemberData",
+      "description": "",
+      "url": "/travelgatex/reference/objects/memberdata"
+    },
+    {
+      "name": "GroupEdge",
+      "description": "",
+      "url": "/travelgatex/reference/objects/groupedge"
+    },
+    {
+      "name": "APIEdge",
+      "description": "",
+      "url": "/travelgatex/reference/objects/apiedge"
+    },
+    {
+      "name": "ResourceEdge",
+      "description": "",
+      "url": "/travelgatex/reference/objects/resourceedge"
+    },
+    {
+      "name": "RoleEdge",
+      "description": "",
+      "url": "/travelgatex/reference/objects/roleedge"
+    },
+    {
+      "name": "RoleData",
+      "description": "",
+      "url": "/travelgatex/reference/objects/roledata"
+    },
+    {
+      "name": "CreateMemberInput",
+      "description": "",
+      "url": "/travelgatex/reference/inputobjects/creatememberinput"
+    },
+    {
+      "name": "CreateGroupInput",
+      "description": "",
+      "url": "/travelgatex/reference/inputobjects/creategroupinput"
+    },
+    {
+      "name": "UpdateMemberInput",
+      "description": "",
+      "url": "/travelgatex/reference/inputobjects/updatememberinput"
+    },
+    {
+      "name": "UpdateGroupInput",
+      "description": "",
+      "url": "/travelgatex/reference/inputobjects/updategroupinput"
+    },
+    {
+      "name": "OrganizationEdge",
+      "description": "",
+      "url": "/travelgatex/reference/objects/organizationedge"
+    },
+    {
+      "name": "ProductEdge",
+      "description": "",
+      "url": "/travelgatex/reference/objects/productedge"
     }
   ],
   "enumValues": null,

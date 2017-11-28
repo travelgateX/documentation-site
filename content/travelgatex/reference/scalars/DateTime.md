@@ -20,24 +20,14 @@
       "url": "/travelgatex/reference/objects/transactions"
     },
     {
-      "name": "Access",
-      "description": "",
-      "url": "/travelgatex/reference/objects/access"
+      "name": "Hotel",
+      "description": "Hotel type",
+      "url": "/travelgatex/reference/objects/hotel"
     },
     {
       "name": "Node",
       "description": "",
       "url": "/travelgatex/reference/interfaces/node"
-    },
-    {
-      "name": "Supplier",
-      "description": "",
-      "url": "/travelgatex/reference/objects/supplier"
-    },
-    {
-      "name": "Hotel",
-      "description": "Hotel type",
-      "url": "/travelgatex/reference/objects/hotel"
     },
     {
       "name": "Media",
@@ -48,6 +38,51 @@
       "name": "Amenity",
       "description": "",
       "url": "/travelgatex/reference/objects/amenity"
+    },
+    {
+      "name": "Supplier",
+      "description": "",
+      "url": "/travelgatex/reference/objects/supplier"
+    },
+    {
+      "name": "Access",
+      "description": "",
+      "url": "/travelgatex/reference/objects/access"
+    },
+    {
+      "name": "Member",
+      "description": "",
+      "url": "/travelgatex/reference/objects/member"
+    },
+    {
+      "name": "Group",
+      "description": "",
+      "url": "/travelgatex/reference/objects/group"
+    },
+    {
+      "name": "API",
+      "description": "",
+      "url": "/travelgatex/reference/objects/api"
+    },
+    {
+      "name": "Resource",
+      "description": "",
+      "url": "/travelgatex/reference/objects/resource"
+    },
+    {
+      "name": "Role",
+      "description": "",
+      "url": "/travelgatex/reference/objects/role"
+    },
+    {
+      "name": "Organization",
+      "description": "",
+      "url": "/travelgatex/reference/objects/organization"
+    },
+    {
+      "name": "Product",
+      "description": "",
+      "url": "/travelgatex/reference/objects/product"
     }
   ],
   "enumValues": null,

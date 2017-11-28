@@ -28,13 +28,7 @@
       "args": null
     }
   ],
-  "requireby": [
-    {
-      "name": "Mutation",
-      "description": "Mutations are operations that change or update data in the server.",
-      "url": "/travelgatex/reference/schema/mutation"
-    }
-  ],
+  "requireby": null,
   "enumValues": null,
   "operator": "type",
   "typename": "ConnectUser"
@@ -47,7 +41,3 @@ data related to a connect user and its groups
 ## Fields
 
 {{% graphql-field %}}
-
-## Require by
-
-{{% graphql-require-by %}}

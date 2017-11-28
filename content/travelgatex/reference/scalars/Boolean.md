@@ -55,31 +55,6 @@
       "url": "/travelgatex/reference/objects/cancelpolicy"
     },
     {
-      "name": "AccessData",
-      "description": "",
-      "url": "/travelgatex/reference/objects/accessdata"
-    },
-    {
-      "name": "SupplierData",
-      "description": "",
-      "url": "/travelgatex/reference/objects/supplierdata"
-    },
-    {
-      "name": "SupplierGroup",
-      "description": "group related to a supplier",
-      "url": "/travelgatex/reference/objects/suppliergroup"
-    },
-    {
-      "name": "ConnectUser",
-      "description": "data related to a connect user and its groups",
-      "url": "/travelgatex/reference/objects/connectuser"
-    },
-    {
-      "name": "ConnectUserGroup",
-      "description": "group related to a connect user",
-      "url": "/travelgatex/reference/objects/connectusergroup"
-    },
-    {
       "name": "HotelData",
       "description": "Hotel data",
       "url": "/travelgatex/reference/objects/hoteldata"
@@ -105,14 +80,44 @@
       "url": "/travelgatex/reference/inputobjects/deltapriceinput"
     },
     {
+      "name": "SupplierData",
+      "description": "",
+      "url": "/travelgatex/reference/objects/supplierdata"
+    },
+    {
+      "name": "SupplierGroup",
+      "description": "group related to a supplier",
+      "url": "/travelgatex/reference/objects/suppliergroup"
+    },
+    {
+      "name": "AccessData",
+      "description": "",
+      "url": "/travelgatex/reference/objects/accessdata"
+    },
+    {
+      "name": "ConnectUser",
+      "description": "data related to a connect user and its groups",
+      "url": "/travelgatex/reference/objects/connectuser"
+    },
+    {
+      "name": "ConnectUserGroup",
+      "description": "group related to a connect user",
+      "url": "/travelgatex/reference/objects/connectusergroup"
+    },
+    {
       "name": "AccessConfigurationInput",
       "description": "The information required to access the supplier's system.",
       "url": "/travelgatex/reference/inputobjects/accessconfigurationinput"
     },
     {
-      "name": "IdAccessConfigurationInput",
-      "description": "",
-      "url": "/travelgatex/reference/inputobjects/idaccessconfigurationinput"
+      "name": "AccessConnectUserInput",
+      "description": "Connect user input for data access management API",
+      "url": "/travelgatex/reference/inputobjects/accessconnectuserinput"
+    },
+    {
+      "name": "ConnectUserGroupInput",
+      "description": "group related to a connect user",
+      "url": "/travelgatex/reference/inputobjects/connectusergroupinput"
     },
     {
       "name": "AccessSupplierInput",
@@ -125,14 +130,19 @@
       "url": "/travelgatex/reference/inputobjects/suppliergroupinput"
     },
     {
-      "name": "AccessConnectUserInput",
-      "description": "Connect user input for data access management API",
-      "url": "/travelgatex/reference/inputobjects/accessconnectuserinput"
+      "name": "IdAccessConfigurationInput",
+      "description": "",
+      "url": "/travelgatex/reference/inputobjects/idaccessconfigurationinput"
     },
     {
-      "name": "ConnectUserGroupInput",
-      "description": "group related to a connect user",
-      "url": "/travelgatex/reference/inputobjects/connectusergroupinput"
+      "name": "Member",
+      "description": "",
+      "url": "/travelgatex/reference/objects/member"
+    },
+    {
+      "name": "RoleData",
+      "description": "",
+      "url": "/travelgatex/reference/objects/roledata"
     }
   ],
   "enumValues": null,

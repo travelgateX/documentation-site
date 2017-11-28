@@ -54,6 +54,11 @@
   ],
   "requireby": [
     {
+      "name": "HotelXQuery",
+      "description": "A Query is an entry point into the object graph.",
+      "url": "/travelgatex/reference/objects/hotelxquery"
+    },
+    {
       "name": "Quote",
       "description": "Returns the total price and cancellation policies of the Option selected in the previous step (Search).",
       "url": "/travelgatex/reference/objects/quote"

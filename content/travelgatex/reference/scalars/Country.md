@@ -15,14 +15,14 @@
       "url": "/travelgatex/reference/objects/criteriasearch"
     },
     {
-      "name": "DefaultSettings",
-      "description": "",
-      "url": "/travelgatex/reference/objects/defaultsettings"
-    },
-    {
       "name": "Location",
       "description": "Location",
       "url": "/travelgatex/reference/objects/location"
+    },
+    {
+      "name": "DefaultSettings",
+      "description": "",
+      "url": "/travelgatex/reference/objects/defaultsettings"
     },
     {
       "name": "DefaultSettingsInput",

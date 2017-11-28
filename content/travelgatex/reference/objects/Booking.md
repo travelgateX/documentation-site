@@ -8,7 +8,7 @@
       "name": "hotel",
       "url": "/travelgatex/reference/objects/hotelbooking",
       "description": "Returns detailed information about books, you can indicated a list of locators or a range date.",
-      "isDeprecated": "",
+      "isDeprecated": " ⚠️",
       "args": [
         {
           "typeString": "HotelCriteriaBookingInput!",
@@ -30,7 +30,7 @@
   "requireby": [
     {
       "name": "Query",
-      "description": "The query type, represents all of the entry points into our object graph.",
+      "description": "",
       "url": "/travelgatex/reference/schema/query"
     }
   ],

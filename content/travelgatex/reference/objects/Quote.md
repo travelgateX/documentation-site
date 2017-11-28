@@ -8,7 +8,7 @@
       "name": "hotel",
       "url": "/travelgatex/reference/objects/hotelquote",
       "description": "Returns the total price and cancellation policies of the Option selected in the previous step (Search).",
-      "isDeprecated": "",
+      "isDeprecated": " ⚠️",
       "args": [
         {
           "typeString": "HotelCriteriaQuoteInput!",
@@ -30,7 +30,7 @@
   "requireby": [
     {
       "name": "Query",
-      "description": "The query type, represents all of the entry points into our object graph.",
+      "description": "",
       "url": "/travelgatex/reference/schema/query"
     }
   ],

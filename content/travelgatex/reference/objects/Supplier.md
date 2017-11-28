@@ -51,11 +51,6 @@
       "url": "/travelgatex/reference/objects/accessdata"
     },
     {
-      "name": "Mutation",
-      "description": "Mutations are operations that change or update data in the server.",
-      "url": "/travelgatex/reference/schema/mutation"
-    },
-    {
       "name": "AccessEdge",
       "description": "",
       "url": "/travelgatex/reference/objects/accessedge"

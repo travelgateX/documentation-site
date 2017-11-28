@@ -4,7 +4,7 @@
   "weight": 1,
   "fields": [
     {
-      "typeString": "URI",
+      "typeString": "URI!",
       "name": "search",
       "url": "/travelgatex/reference/scalars/uri",
       "description": "Specific Url for Availability method.",
@@ -12,7 +12,7 @@
       "args": null
     },
     {
-      "typeString": "URI",
+      "typeString": "URI!",
       "name": "quote",
       "url": "/travelgatex/reference/scalars/uri",
       "description": "Specific Url for Reservation method.",
@@ -20,7 +20,7 @@
       "args": null
     },
     {
-      "typeString": "URI",
+      "typeString": "URI!",
       "name": "book",
       "url": "/travelgatex/reference/scalars/uri",
       "description": "Specific Url for Valuation method.",
@@ -28,7 +28,7 @@
       "args": null
     },
     {
-      "typeString": "URI",
+      "typeString": "URI!",
       "name": "generic",
       "url": "/travelgatex/reference/scalars/uri",
       "description": "Supplier URL used for multiple methods.",

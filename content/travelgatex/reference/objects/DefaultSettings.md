@@ -71,7 +71,7 @@
   "requireby": [
     {
       "name": "Query",
-      "description": "The query type, represents all of the entry points into our object graph.",
+      "description": "",
       "url": "/travelgatex/reference/schema/query"
     },
     {

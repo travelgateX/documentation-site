@@ -22,9 +22,9 @@
   ],
   "requireby": [
     {
-      "name": "Query",
-      "description": "The query type, represents all of the entry points into our object graph.",
-      "url": "/travelgatex/reference/schema/query"
+      "name": "HotelXQuery",
+      "description": "A Query is an entry point into the object graph.",
+      "url": "/travelgatex/reference/objects/hotelxquery"
     }
   ],
   "enumValues": null,

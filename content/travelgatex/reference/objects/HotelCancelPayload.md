@@ -57,6 +57,11 @@
       "name": "Mutation",
       "description": "Mutations are operations that change or update data in the server.",
       "url": "/travelgatex/reference/schema/mutation"
+    },
+    {
+      "name": "HotelXMutation",
+      "description": "",
+      "url": "/travelgatex/reference/objects/hotelxmutation"
     }
   ],
   "enumValues": null,

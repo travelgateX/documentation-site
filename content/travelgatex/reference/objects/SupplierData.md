@@ -31,7 +31,7 @@
       "typeString": "ID!",
       "name": "hotelCodes",
       "url": "/travelgatex/reference/scalars/id",
-      "description": "accesses(first: Int, Last: Int, before: String, after:String, criterial: criterialInput): AccessConnection",
+      "description": "accesses(first: Int, last: Int, before: String, after:String, criterial: criterialInput): AccessConnection",
       "isDeprecated": "",
       "args": [
         {

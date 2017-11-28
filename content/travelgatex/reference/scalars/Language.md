@@ -25,14 +25,14 @@
       "url": "/travelgatex/reference/inputobjects/hotelcriteriabookinginput"
     },
     {
-      "name": "DefaultSettings",
-      "description": "",
-      "url": "/travelgatex/reference/objects/defaultsettings"
-    },
-    {
       "name": "Information",
       "description": "",
       "url": "/travelgatex/reference/interfaces/information"
+    },
+    {
+      "name": "DefaultSettings",
+      "description": "",
+      "url": "/travelgatex/reference/objects/defaultsettings"
     },
     {
       "name": "HotelBookInput",

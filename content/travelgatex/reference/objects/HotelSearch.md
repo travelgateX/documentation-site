@@ -70,6 +70,11 @@
   ],
   "requireby": [
     {
+      "name": "HotelXQuery",
+      "description": "A Query is an entry point into the object graph.",
+      "url": "/travelgatex/reference/objects/hotelxquery"
+    },
+    {
       "name": "Search",
       "description": "Available options for a given date and itinerary. It does not filter different classes, times or\nfares. It will always retrieve all results returned by the suppliers. The availability request is very straight\nforward.",
       "url": "/travelgatex/reference/objects/search"

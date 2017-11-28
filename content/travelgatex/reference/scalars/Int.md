@@ -93,6 +93,11 @@
       "name": "DefaultSettingsBusinessRulesInput",
       "description": "Input delta price, indicates the price variation permitted by the client before failing the booking.",
       "url": "/travelgatex/reference/inputobjects/defaultsettingsbusinessrulesinput"
+    },
+    {
+      "name": "GroupData",
+      "description": "",
+      "url": "/travelgatex/reference/objects/groupdata"
     }
   ],
   "enumValues": null,
