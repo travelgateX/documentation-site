@@ -49,7 +49,8 @@
   "operator": "scalar",
   "typename": "Date"
 }
-In queries or mutations, Date fields have to be specified in ISO 8601 format with enclosing double quotes: datetime: "2015-11-22".
+The Date type represents Date values. A good example might be a Hotel CheckIn Date.
+In queries or mutations, DateTime fields have to be specified in ISO 8601 format with enclosing double quotes: "2017-10-22".
 ## GraphQL Schema definition
 
 {{% graphql-schema-scalar %}}

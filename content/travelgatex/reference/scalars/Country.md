@@ -34,7 +34,8 @@
   "operator": "scalar",
   "typename": "Country"
 }
-ISO 3166-1 alpha-2
+The Country type represents Country values. A good example might be a Passenger Nationality.
+In queries or mutations, Country fields have to be specified in ISO 3166-1 alpha-2 format with enclosing double quotes "ES".
 ## GraphQL Schema definition
 
 {{% graphql-schema-scalar %}}

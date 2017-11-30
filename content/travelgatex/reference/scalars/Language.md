@@ -59,7 +59,8 @@
   "operator": "scalar",
   "typename": "Language"
 }
-ISO 3166-1 alpha-2
+The Language type represents Language values. A good example might be a Hotel Description Language.
+In queries or mutations, Language fields have to be specified in ISO 3166-1 alpha-2 format with enclosing double quotes "es".
 ## GraphQL Schema definition
 
 {{% graphql-schema-scalar %}}

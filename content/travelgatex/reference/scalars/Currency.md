@@ -59,7 +59,8 @@
   "operator": "scalar",
   "typename": "Currency"
 }
-ISO 4217
+The Currenty type represents Currency values. A good example might be a Rate Price Currency.
+In queries or mutations, Currency fields have to be specified in ISO 4217 format with enclosing double quotes "EUR".
 ## GraphQL Schema definition
 
 {{% graphql-schema-scalar %}}
