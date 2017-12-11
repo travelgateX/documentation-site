@@ -19,20 +19,19 @@ We've added a new layer of business logic in front of the pure transformation AP
 The main funcionalities of the business logic layer includes, but not limited to:
 
 * Configuration and access management
-* Hotel Mapping
-* Room Type Mapping
+* Hotel, Room and Board Mappings
 * Sort & Filter results
 * Add pricing/markups
 * Currency Exchange
-* [Plugins](#plugins)
+* [Plugins Execution](#plugins)
 
 #### Plugins
 
-ConnectX introduces a new concept to the industry: Plugins.
+HotelX introduces a new concept to the industry: Plugins.
 In a nutshell, a plugin is a piece of code that _is executed inside our application_. There are a few points in the request lifetime where anyone can develop a plugin. It receives the request _or response_ as an input and outputs the _changed_ request _or response_.
 Plugins are a core package in the [Go Programming language](https://golang.org/) and more info about it can be found [here](https://golang.org/pkg/plugin/).
 
-For more information and how to write and build plugins please go to the relevant ConnectX Plugin Documentation Page: [Hotel](/product/connectx/hotel/concepts/plugins/) or [Flight](/product/connectx/flight/concepts/plugins/).
+For more information and how to write and build plugins please go to: [Hotel](/hotelx/plugins/).
 
 ### Transformation
 

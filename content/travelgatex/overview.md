@@ -34,14 +34,7 @@ One of the great things we love about GraphQL is that there's only one single en
 ## Communicate with Server
 
 To communicate with the GraphQL server, you'll need an access token with the right scopes.
-
-This access token could be an [API Key](/admin/security/authentication/#api-keys) or a [JSON Web Token](/admin/security/authentication/#json-web-tokens), and the correct way to send it to GraphQL server is via HTTP Header:
-
-* API key: `"Authorization: Apikey xxxxxxxxx"`
-* JWT: `"Authorization: Bearer xxxxxxxxx"`
-
-Follow the steps in [Creating an access token](/admin/security/authentication/#creating-an-access-token) to create a token.
-
+Follow the steps in  [Security Overview](/travelgatex/security/overview) in order to create a token and how use it.
 
 ## Making Requests
 
