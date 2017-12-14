@@ -39,7 +39,7 @@ Follow the steps in  [Security Overview](/travelgatex/security/overview) in orde
 ## Making Requests
 
 Because GraphQL operations consist of multiple operations and schemas, we recommend using the Explorer to make GraphQL calls.
-There are some alternatives to use GraphQL builtin explorer like GraphQL Playground. You can also use cURL or any other HTTP-speaking library.
+There are some alternatives to use GraphQL builtin explorer like GraphQL Playground. You can also use <a href="https://curl.haxx.se" target="_blank">curl</a> or any other HTTP-speaking library.
 
 {{% alert theme="danger" %}}All **LIVE** traffic **MUST** enable GZIP compression in the HTTP header{{% /alert %}} 
 
@@ -47,7 +47,7 @@ There are some alternatives to use GraphQL builtin explorer like GraphQL Playgr
 Accept-Encoding: gzip
 ```
 
-To query GraphQL using cURL, make a POST request with a JSON payload. The payload must contain a string called query:
+To query GraphQL using <a href="https://curl.haxx.se" target="_blank">curl</a> , make a POST request with a JSON payload. The payload must contain a string called query:
 
 ```bash
 curl -X\
