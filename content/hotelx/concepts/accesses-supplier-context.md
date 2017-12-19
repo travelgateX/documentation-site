@@ -1,21 +1,33 @@
 +++
-title = "Accesses, Sellers and Context"
+title = "Access, Supplier and Context"
 pagetitle = "The Holy Grail"
 description = "Learn about Core Entities used in TravelgateX"
 weight = 1
 alwaysopen = false
 +++
 
-## Access
+# Supplier
 
-## Seller
+Product segmentation over a _provider_ API implementation.
+_Supplier_ codes are uniques ove all TravelgateX organizations. 
 
-## Context
+
+# Access
+
+Configuration to use when interacting with a _supplier_, which includes:
+
+* URLs
+* Credentials
+* Markets
+* Rate Types
+* Specific _supplier_ settings
+
+# Context
 
 _Context_ is the way codes are formed.
 Every _platform_ can manage its own contexts or reuse existing ones. 
-
-That is to say, different _sellers_ and _buyers_ can manage same codes _context_. For example [SmyRooms](https://www.smyrooms.com/) uses **SMY** contexts.
+ 
+That is to say, different _sellers_ and _buyers_ can manage same codes _context_. For example <a href="https://www.smyrooms.com" target="_blank">SmyRooms</a> supplier uses **SMY** contexts.
 
 _Context_ apply to:
 
