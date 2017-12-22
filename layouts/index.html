@@ -14,6 +14,8 @@
     
     {{ partial "home_intro.html" .}}
 
+    {{ partial "home_welcome.html" .}}
+
     {{ if .Site.Params.work.enable }}
           {{ partial "home_work.html" .}}
         {{ end }}

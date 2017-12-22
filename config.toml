@@ -65,7 +65,7 @@ discourseUrl = "http://community.travelgatex.com/"
   email = "tech@travelgatex.com"
   # Navigation
   [params.navigation]
-    brand = '<img src="images/header-logo.png"/>'
+    brand = '<img src="images/xtg_logo.svg"/>'
     home = "Home"
     work = "Our APIs"
     testimonials = "Testimonials"
@@ -137,6 +137,11 @@ discourseUrl = "http://community.travelgatex.com/"
     icon = "icon-play2"
     url = "https://vimeo.com/channels/staffpicks/93951774"
 
+  # Welcome section
+  [params.welcome]
+    enable = true
+    title = "Connecting the dots"
+    description = "At XTG, we’ve integrated 100s of travel APIs. This is why we’ve decided to build the first travel API focused on Developer eXperience. Welcome to ConnectX, the world’s most advanced and disruptive GraphQL based Travel API."
 
   # Work section
   [params.work]
