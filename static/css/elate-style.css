@@ -766,12 +766,10 @@ h1, h2, h3, h4, h5, h6 {
 #fh5co-counters .fh5co-counter .fh5co-counter-number {
   font-size: 70px;
   color: #182945;
-  font-weight: 300;
 }
 #fh5co-counters .fh5co-counter .fh5co-counter-label {
   color: #182945;
   font-size: 18px;
-  font-weight: 400;
 }
 
 #fh5co-testimonials{
@@ -1240,10 +1238,19 @@ h1, h2, h3, h4, h5, h6 {
   text-decoration: none !important;
 }
 #footer .copyright {
-  font-size: 16px;
+  font-size: 14px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  color: rgba(255, 255, 255, 0.7);
+  padding-top: 5px;
+}
+
+#footer .copyright a{
+  font-size: 14px;
   margin-bottom: 0;
   padding-bottom: 0;
   color: #fff;
+  padding-top: 5px;
 }
 
 #footer .top-footer{
@@ -1262,7 +1269,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 17px;
   font-weight: 400;
   color: #fff;
-  margin-bottom: 0;
+  margin-bottom: 5px;
 }
 
 #footer .top-footer a {
@@ -1277,8 +1284,17 @@ h1, h2, h3, h4, h5, h6 {
   text-decoration: none;
 }
 
+#footer .top-footer .certification {
+  margin: 0 10px 10px 10px;
+}
+
 #footer .bottom-footer{
   background-color: #182945;
+  padding: 5px 0;
+}
+
+#footer .bottom-footer img{
+  padding-top: 11px;
 }
 
 .btn {
@@ -1308,7 +1324,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .social {
-  padding: 0;
+  padding: 5px 0 0 0;
   margin: 0;
   display: inline-block;
   position: relative;
@@ -1330,6 +1346,7 @@ h1, h2, h3, h4, h5, h6 {
 .social li a i {
   display: table-cell;
   vertical-align: middle;
+  text-align: center;
 }
 .social li a:hover, .social li a:active, .social li a:focus {
   text-decoration: none;
