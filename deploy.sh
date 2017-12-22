@@ -5,6 +5,7 @@ echo -e "\033[0;32mDeploying updates to GitHub...\033[0m"
 # Go To Public folder
 cd public
 
+git status
 #checkout master and revert changes
 git reset --hard origin/master
 git checkout master
