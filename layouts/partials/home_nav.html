@@ -10,6 +10,7 @@
                 <div id="navbar" class="navbar-collapse collapse">
                   <ul class="nav navbar-nav navbar-right">
 
+                    
                     <li class="active"><a href="#" data-nav-section="home"><span>{{ with .Site.Params.navigation.home }}{{ . | markdownify }}{{ end }}</span></a></li>
 
                     {{ if .Site.Params.welcome.enable }}
@@ -40,9 +41,10 @@
                         <li><a href="{{ .URL }}" class="external"><span>{{ .Name | markdownify }}</span></a></li>
                     {{ end }} -->
 
-                    {{ range .Site.Menus.prostend }}
+                    {{ range .Site.Menus.prepend }}
                         <li><a href="{{ .URL }}" class="external"><span>{{ .Name | markdownify }}</span></a></li>
                     {{ end }}
+                    
                 </ul>
             </div>
         </nav>

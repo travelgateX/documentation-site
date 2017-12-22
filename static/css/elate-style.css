@@ -221,6 +221,12 @@ h1, h2, h3, h4, h5, h6 {
     -o-transition: 0.3s;
     transition: 0.3s;
   }
+  #fh5co-header #navbar li:last-child a {
+    color: #182945 !important;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+  }
   #fh5co-header #navbar li a:hover {
     color: #52d3aa !important;
   }
@@ -249,7 +255,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 300;
 }
 #fh5co-header #navbar li:last-child {
-  background-color: #182945;
+  background-color: #2fd475;
   border-radius: 4px;
   margin-top: 7px;
 }
