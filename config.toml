@@ -91,7 +91,7 @@ discourseUrl = "http://community.travelgatex.com/"
   # Hero section
   [params.hero]
     title = "Finally, a travel API you'll&nbsp;&nbsp;<i title='love &#9825;' class='icon-heart'></i>"
-    subtitle = "At XTG, we've integrated 100s of travel APIs. This is why we've decided to build the first travel API focused on<br/><strong>Developer eXperience</strong>.<p>Welcome to <strong>ConnectX</strong>, the world's most _advanced_ and _disruptive_ <strong>GraphQL</strong> based Travel API.</p>"
+    subtitle = "Add-on solutions specially designed to make the most of your integrations. <p>Welcome to <strong>ConnectX</strong>, the world's most _advanced_ and _disruptive_ <strong>GraphQL</strong> based Travel API.</p>"
  
   # Intro section
   # Available icons: http://simplelineicons.com/
@@ -189,7 +189,7 @@ discourseUrl = "http://community.travelgatex.com/"
   [params.testimonials]
     enable = true
     title = "Testimonials"
-    description = "See what our Beta Testers &amp; Early Adopters have to say.<br/>Learn. Test. Decide."
+    description = "See what our Beta Testers &amp; Early Adopters have to say. Learn. Test. Decide."
 
     [[params.testimonials.item]]
       quote = "&ldquo;We've started working with the legacy API 4 years ago. When they've told us they were developing a new API we _had to be a part of it_. Our developers loved it, and best of all, we can now deliver all the integrations business requires us&rdquo;"
