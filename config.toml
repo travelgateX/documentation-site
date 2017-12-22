@@ -67,6 +67,7 @@ discourseUrl = "http://community.travelgatex.com/"
   [params.navigation]
     brand = '<img src="images/xtg_logo.svg"/>'
     home = "Home"
+    welcome = "About us"
     work = "Our APIs"
     testimonials = "Testimonials"
     services = "Services"
@@ -341,4 +342,4 @@ discourseUrl = "http://community.travelgatex.com/"
   # Footer section
   [params.footer]
     enable = true
-    copyright = '&copy; TravelgateX 2017. All Rights Reserved.<br/>An <a title="XTG" href="https://www.xmltravelgate.com/">XTG</a> Brand.'
+    copyright = '&copy; TravelgateX 2017. All Rights Reserved. An <a title="XTG" href="https://www.xmltravelgate.com/">XTG</a> Brand.'

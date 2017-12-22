@@ -10,12 +10,12 @@
                 <div id="navbar" class="navbar-collapse collapse">
                   <ul class="nav navbar-nav navbar-right">
 
-                    {{ range .Site.Menus.prepend }}
-                        <li><a href="{{ .URL }}" class="external"><span>{{ .Name | markdownify }}</span></a></li>
+                    <li class="active"><a href="#" data-nav-section="home"><span>{{ with .Site.Params.navigation.home }}{{ . | markdownify }}{{ end }}</span></a></li>
+
+                    {{ if .Site.Params.welcome.enable }}
+                    <li><a href="#" data-nav-section="welcome"><span>{{ with .Site.Params.navigation.welcome }}{{ . | markdownify }}{{ end }}</span></a></li> 
                     {{ end }}
 
-                    <li class="active"><a href="#" data-nav-section="home"><span>{{ with .Site.Params.navigation.home }}{{ . | markdownify }}{{ end }}</span></a></li>
-                    
                     {{ if .Site.Params.work.enable }}
                     <li><a href="#" data-nav-section="work"><span>{{ with .Site.Params.navigation.work }}{{ . | markdownify }}{{ end }}</span></a></li> 
                     {{ end }}
@@ -36,7 +36,11 @@
                     <li><a href="#" data-nav-section="contact"><span>{{ with .Site.Params.navigation.contact }}{{ . | markdownify }}{{ end }}</span></a></li> 
                     {{ end }}
 
-                    {{ range .Site.Menus.postpend }}
+                  <!--   {{ range .Site.Menus.postpend }}
+                        <li><a href="{{ .URL }}" class="external"><span>{{ .Name | markdownify }}</span></a></li>
+                    {{ end }} -->
+
+                    {{ range .Site.Menus.prostend }}
                         <li><a href="{{ .URL }}" class="external"><span>{{ .Name | markdownify }}</span></a></li>
                     {{ end }}
                 </ul>
