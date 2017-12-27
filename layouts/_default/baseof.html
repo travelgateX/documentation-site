@@ -12,25 +12,44 @@
   <body data-url="{{ .RelPermalink }}">
     {{ partial "content/header.html" . }}
     {{ partial "content/navbar.html" . }}
-    <div class="container main">
-      <div class="row">
-        <div id="navbar" class="menu-left hidden-xs hidden-sm">
-            {{ partial "content/sidebar.html" . }}
+    <div id="navbar" class="menu-left hidden-xs hidden-sm">
+      {{ partial "content/sidebar.html" . }}
+    </div>
+    <div class="content">
+      <div class="iso-input-search hidden-xs-down">
+        {{- if not .Site.Params.disableSearch}}
+        <div class="ico-label">
+            <i class="fa fa-search" aria-hidden="true"></i>
         </div>
-        <div class="content-center">
-          <div class="p-4">
-            <h1 class="pageTitle">{{if .Params.Pagetitle }}{{ .Params.Title }}: {{ .Params.Pagetitle }}{{else}}{{ .Params.Title }}{{end}}</h1>
-            {{ block "main" . }}
-            {{ end }}    
+        <input data-search-input class="form-control"  id="search-by" type="text" placeholder="Search docs...">
+        <script type="text/javascript" src="{{"js/lunr.min.js" | relURL}}"></script>
+        <script type="text/javascript" src="{{"js/auto-complete.js" | relURL}}"></script>
+        <script type="text/javascript">
+            {{ if .Site.IsMultiLingual }}
+            var baseurl = "{{.Site.BaseURL}}{{.Site.LanguagePrefix}}";
+            {{ else }}
+            var baseurl = "{{.Site.BaseURL}}";
+            {{ end }}
+        </script>
+        <script type="text/javascript" src="{{"js/search.js" | relURL}}"></script> {{- end}}
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="content-center">
+            <div class="p-4">
+              <h1 class="pageTitle">{{if .Params.Pagetitle }}{{ .Params.Title }}: {{ .Params.Pagetitle }}{{else}}{{ .Params.Title }}{{end}}</h1>
+              {{ block "main" . }}
+              {{ end }}    
+            </div>
+            <div id="backgroundMenu"></div>
           </div>
-          <div id="backgroundMenu"></div>
-        </div>
-        <div class="menu-right">
-          <div>
-            {{ .TableOfContents }}
+          <div class="menu-right">
+            <div>
+              {{ .TableOfContents }}
+            </div>
           </div>
+          <div class="clear"></div>
         </div>
-        <div class="clear"></div>
       </div>
     </div>
     {{ partial "content/footer.html" . }}
