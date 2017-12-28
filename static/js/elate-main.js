@@ -208,6 +208,49 @@
 		}
 	};
 
+	var welcomeAnimate = function() {
+		var welcome = $('#fh5co-welcome');
+		if ( welcome.length > 0 ) {	
+
+			welcome.waypoint( function( direction ) {
+										
+				if( direction === 'down' && !$(this.element).hasClass('animated') ) {
+
+					var sec = welcome.find('.to-animate').length,
+						sec = parseInt((sec * 200) - 400);
+
+					setTimeout(function() {
+						welcome.find('.to-animate').each(function( k ) {
+							var el = $(this);
+							
+							setTimeout ( function () {
+								el.addClass('fadeInUp animated');
+							},  k * 200, 'easeInOutExpo' );
+							
+						});
+					}, 200);
+
+					setTimeout(function() {
+						welcome.find('.to-animate-2').each(function( k ) {
+							var el = $(this);
+							
+							setTimeout ( function () {
+								el.addClass('fadeInDown animated');
+							},  k * 200, 'easeInOutExpo' );
+							
+						});
+					}, sec);
+
+					
+					$(this.element).addClass('animated');
+						
+				}
+			} , { offset: '80%' } );
+
+		}
+	};
+
+
 	var workAnimate = function() {
 		if ( $('#fh5co-work').length > 0 ) {	
 

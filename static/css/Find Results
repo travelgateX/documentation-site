@@ -1,0 +1,3828 @@
+Searching 1161 files for "discourse"
+
+/Users/esperanza/Documents/devel/documentation-site/config.toml:
+   53  #disableNavChevron = false # set true to hide next/prev chevron, default is false
+   54  
+   55: discourseUrl = "http://community.travelgatex.com/"
+   56  
+   57  ############## docdock params
+   ..
+   86      # postpended links
+   87      [[menu.postpend]]
+   88:      url = "http://discourse.travelgatex.com/"
+   89       name = "Community"
+   90       weight = 10
+   ..
+  128      #title = "Community"
+  129      #description = "You're never alone. Join our growing community."
+  130:     #url = "http://discourse.travelgatex.com/"
+  131      #button = "Join the Discussion"
+  132      #icon = "icon-rocket"
+
+/Users/esperanza/Documents/devel/documentation-site/content/getting-started/overview.md:
+   37  ### Community
+   38  
+   39: We use [discourse](www.discourse.org) to run our community forum. It's completely free and you can access it [here](discourse.travelgatex.com). Please use your own travelgatex.com username and password in order to log in discourse.
+   40  
+   41  ### Jira Service Desk
+
+/Users/esperanza/Documents/devel/documentation-site/content/getting-started/quickstart.md:
+   41  ### Community
+   42  
+   43: We use [discourse](www.discourse.org) to run our community forum. It's completely free and you can access it [here](discourse.travelgatex.com). Please use your own travelgatex.com username and password in order to log in discourse.
+   44  
+   45  ### Jira Service Desk
+
+/Users/esperanza/Documents/devel/documentation-site/layouts/_default/single.html:
+    7  
+    8  
+    9: {{ partial "discourse.html" .}}   
+   10  {{ end }}
+   11  
+
+/Users/esperanza/Documents/devel/documentation-site/layouts/partials/discourse.html:
+    2  
+    3  <hr/>
+    4: <!-- layouts/partials/discourse.html -->
+    5: <div id="discourse-comments"></div>
+    6  
+    7  <script type="text/javascript">
+    8:   var discourseUrl = '{{ .Site.Params.discourseUrl }}',
+    9:   discourseEmbedUrl =  window.location.href;
+   10  
+   11    (function() {
+   12      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+   13:       d.src = discourseUrl + 'javascripts/embed.js';
+   14      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+   15    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/index.json:
+ 1006  	"tags": [],
+ 1007  	"description": "Learn The Basics",
+ 1008: 	"content": " Become a TravelgateX Partner The first step towards building your next travel API is to become a TravelgateX registered partner.\nAt this moment, please contact us in order to become a partner.\nWe will be publishing a registration website so each developer can register for an account with us. Please bear with us.\nProduct Quick Start Although there\u0026rsquo;s only one endpoint, our GraphQL API models all the products and services we offer. Please navigate to the desired product documentation in order to start building your app.\n HotelX: Next generation hotel search \u0026amp; booking API. ConnectX Flights: Next generation NDC compliant flight search \u0026amp; booking API. Stats: All the requests sent and received, their response times and status codes. Insights: Become a true data-first decision maker by leveraging our rich Insights API. All the requests, all the searches, everything you\u0026rsquo;ve made with us available here. Mappea: Collaborative Hotel Mapping. Use this API to map your sellers or to make that everything you have mapped is accurate.  Documentation Documentation is generated from GraphQL schema.You can use multiple columns and keyboard-based navigation via the Playground\n  Get Engaged You are not alone! The API is designed to be very intuitive and easy to read. Nevertheless, although we strive to keep things simple, some concepts can be confusing and we understand learning a new API can be overwhelming. There are many ways of getting help. The Playground contains the API\u0026rsquo;s documentation. As an alternative you can get help from the community or raise a ticket and our support staff will be delighted to solve any doubts, complaints or suggestions you might have.\nCommunity We use discourse to run our community forum. It\u0026rsquo;s completely free and you can access it here. Please use your own travelgatex.com username and password in order to log in discourse.\nJira Service Desk Our Customer Care Team runs the show using Jira Service Desk. Please raise any questions, complaints, suggestions or any other issues here.\nThe login has been given to you together in the welcome pack. Let us know if you haven\u0026rsquo;t received it or can\u0026rsquo;t find it so we can send it to your email address.\n"
+ 1009  },
+ 1010  {
+ ....
+ 1195  	"tags": [],
+ 1196  	"description": "Try the API now",
+ 1197: 	"content": " Try Now Try the TravelgateX API in a few seconds. Search for a hotel, quote and book and by following the steps below.\nBecome a TravelgateX Partner The first step towards building your next travel API is to become a TravelgateX registered partner.\nAt this moment, please contact us in order to become a partner.\nWe will be publishing a registration website so each developer can register for an account with us. Please bear with us.\nProduct Quick Start Although there\u0026rsquo;s only one endpoint, our GraphQL API models all the products and services we offer. Please navigate to the desired product documentation in order to start building your app.\n ConnectX Hotel: Next generation hotel search \u0026amp; booking API. ConnectX Flights: Next generation NDC compliant flight search \u0026amp; booking API. Stats: All the requests sent and received, their response times and status codes. Insights: Become a true data-first decision maker by leveraging our rich Insights API. All the requests, all the searches, everything you\u0026rsquo;ve made with us available here. Mappea: Collaborative Hotel Mapping. Use this API to map your sellers or to make that everything you have mapped is accurate.  Documentation Documentation is generated from GraphQL schema.You can use multiple columns and keyboard-based navigation via the Playground\n  Get Engaged You are not alone! The API is designed to be very intuitive and easy to read. Nevertheless, although we strive to keep things simple, some concepts can be confusing and we understand learning a new API can be overwhelming. There are many ways of getting help. The Playground contains the API\u0026rsquo;s documentation. As an alternative you can get help from the community or raise a ticket and our support staff will be delighted to solve any doubts, complaints or suggestions you might have.\nCommunity We use discourse to run our community forum. It\u0026rsquo;s completely free and you can access it here. Please use your own travelgatex.com username and password in order to log in discourse.\nJira Service Desk Our Customer Care Team runs the show using Jira Service Desk. Please raise any questions, complaints, suggestions or any other issues here.\nThe login has been given to you together in the welcome pack. Let us know if you haven\u0026rsquo;t received it or can\u0026rsquo;t find it so we can send it to your email address.\n"
+ 1198  },
+ 1199  {
+
+/Users/esperanza/Documents/devel/documentation-site/public/_footer/index.html:
+ 1584  <hr/>
+ 1585  
+ 1586: <div id="discourse-comments"></div>
+ 1587  
+ 1588  <script type="text/javascript">
+ 1589:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1590:   discourseEmbedUrl =  window.location.href;
+ 1591  
+ 1592    (function() {
+ 1593      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1594:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1595      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1596    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/_header/index.html:
+ 1578  <hr/>
+ 1579  
+ 1580: <div id="discourse-comments"></div>
+ 1581  
+ 1582  <script type="text/javascript">
+ 1583:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1584:   discourseEmbedUrl =  window.location.href;
+ 1585  
+ 1586    (function() {
+ 1587      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1588:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1589      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1590    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/admin/account/iam/index.html:
+ 1585  <hr/>
+ 1586  
+ 1587: <div id="discourse-comments"></div>
+ 1588  
+ 1589  <script type="text/javascript">
+ 1590:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1591:   discourseEmbedUrl =  window.location.href;
+ 1592  
+ 1593    (function() {
+ 1594      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1595:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1596      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1597    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/admin/connect/entities/index.html:
+ 1582  
+ 1583  
+ 1584: <div id="discourse-comments"></div>
+ 1585  
+ 1586  <script type="text/javascript">
+ 1587:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1588:   discourseEmbedUrl =  window.location.href;
+ 1589  
+ 1590    (function() {
+ 1591      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1592:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1593      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1594    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/admin/overview/index.html:
+ 1585  <hr/>
+ 1586  
+ 1587: <div id="discourse-comments"></div>
+ 1588  
+ 1589  <script type="text/javascript">
+ 1590:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1591:   discourseEmbedUrl =  window.location.href;
+ 1592  
+ 1593    (function() {
+ 1594      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1595:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1596      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1597    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/credits/index.html:
+ 1846  <hr/>
+ 1847  
+ 1848: <div id="discourse-comments"></div>
+ 1849  
+ 1850  <script type="text/javascript">
+ 1851:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1852:   discourseEmbedUrl =  window.location.href;
+ 1853  
+ 1854    (function() {
+ 1855      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1856:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1857      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1858    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/flightx/overview/index.html:
+ 1584  <hr/>
+ 1585  
+ 1586: <div id="discourse-comments"></div>
+ 1587  
+ 1588  <script type="text/javascript">
+ 1589:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1590:   discourseEmbedUrl =  window.location.href;
+ 1591  
+ 1592    (function() {
+ 1593      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1594:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1595      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1596    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/getting-started/concepts/index.html:
+ 1636  <hr/>
+ 1637  
+ 1638: <div id="discourse-comments"></div>
+ 1639  
+ 1640  <script type="text/javascript">
+ 1641:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1642:   discourseEmbedUrl =  window.location.href;
+ 1643  
+ 1644    (function() {
+ 1645      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1646:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1647      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1648    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/getting-started/overview/index.html:
+ 1616  <h3 id="community">Community</h3>
+ 1617  
+ 1618: <p>We use <a href="www.discourse.org">discourse</a> to run our community forum. It&rsquo;s completely free and you can access it <a href="discourse.travelgatex.com">here</a>. Please use your own travelgatex.com username and password in order to log in discourse.</p>
+ 1619  
+ 1620  <h3 id="jira-service-desk">Jira Service Desk</h3>
+ ....
+ 1632  <hr/>
+ 1633  
+ 1634: <div id="discourse-comments"></div>
+ 1635  
+ 1636  <script type="text/javascript">
+ 1637:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1638:   discourseEmbedUrl =  window.location.href;
+ 1639  
+ 1640    (function() {
+ 1641      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1642:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1643      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1644    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/getting-started/playground/index.html:
+ 1591  <hr/>
+ 1592  
+ 1593: <div id="discourse-comments"></div>
+ 1594  
+ 1595  <script type="text/javascript">
+ 1596:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1597:   discourseEmbedUrl =  window.location.href;
+ 1598  
+ 1599    (function() {
+ 1600      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1601:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1602      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1603    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/getting-started/quickstart/index.html:
+ 1620  <h3 id="community">Community</h3>
+ 1621  
+ 1622: <p>We use <a href="www.discourse.org">discourse</a> to run our community forum. It&rsquo;s completely free and you can access it <a href="discourse.travelgatex.com">here</a>. Please use your own travelgatex.com username and password in order to log in discourse.</p>
+ 1623  
+ 1624  <h3 id="jira-service-desk">Jira Service Desk</h3>
+ ....
+ 1636  <hr/>
+ 1637  
+ 1638: <div id="discourse-comments"></div>
+ 1639  
+ 1640  <script type="text/javascript">
+ 1641:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1642:   discourseEmbedUrl =  window.location.href;
+ 1643  
+ 1644    (function() {
+ 1645      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1646:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1647      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1648    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/guion/index.html:
+ 1798  <hr/>
+ 1799  
+ 1800: <div id="discourse-comments"></div>
+ 1801  
+ 1802  <script type="text/javascript">
+ 1803:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1804:   discourseEmbedUrl =  window.location.href;
+ 1805  
+ 1806    (function() {
+ 1807      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1808:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1809      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1810    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/hotelx/concepts/accesses-supplier-context/index.html:
+ 1622  <hr/>
+ 1623  
+ 1624: <div id="discourse-comments"></div>
+ 1625  
+ 1626  <script type="text/javascript">
+ 1627:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1628:   discourseEmbedUrl =  window.location.href;
+ 1629  
+ 1630    (function() {
+ 1631      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1632:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1633      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1634    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/hotelx/concepts/booking-flow/index.html:
+ 1654  <hr/>
+ 1655  
+ 1656: <div id="discourse-comments"></div>
+ 1657  
+ 1658  <script type="text/javascript">
+ 1659:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1660:   discourseEmbedUrl =  window.location.href;
+ 1661  
+ 1662    (function() {
+ 1663      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1664:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1665      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1666    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/hotelx/concepts/content/index.html:
+ 1585  <hr/>
+ 1586  
+ 1587: <div id="discourse-comments"></div>
+ 1588  
+ 1589  <script type="text/javascript">
+ 1590:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1591:   discourseEmbedUrl =  window.location.href;
+ 1592  
+ 1593    (function() {
+ 1594      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1595:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1596      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1597    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/hotelx/concepts/management-flow/index.html:
+ 1631  <hr/>
+ 1632  
+ 1633: <div id="discourse-comments"></div>
+ 1634  
+ 1635  <script type="text/javascript">
+ 1636:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1637:   discourseEmbedUrl =  window.location.href;
+ 1638  
+ 1639    (function() {
+ 1640      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1641:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1642      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1643    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/hotelx/howtos/howto-book/index.html:
+ 1586  <hr/>
+ 1587  
+ 1588: <div id="discourse-comments"></div>
+ 1589  
+ 1590  <script type="text/javascript">
+ 1591:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1592:   discourseEmbedUrl =  window.location.href;
+ 1593  
+ 1594    (function() {
+ 1595      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1596:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1597      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1598    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/hotelx/overview/index.html:
+ 1636  <hr/>
+ 1637  
+ 1638: <div id="discourse-comments"></div>
+ 1639  
+ 1640  <script type="text/javascript">
+ 1641:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1642:   discourseEmbedUrl =  window.location.href;
+ 1643  
+ 1644    (function() {
+ 1645      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1646:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1647      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1648    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/hotelx/plugins/aggregation/index.html:
+ 1642  <hr/>
+ 1643  
+ 1644: <div id="discourse-comments"></div>
+ 1645  
+ 1646  <script type="text/javascript">
+ 1647:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1648:   discourseEmbedUrl =  window.location.href;
+ 1649  
+ 1650    (function() {
+ 1651      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1652:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1653      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1654    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/hotelx/plugins/converter/index.html:
+ 1588  <hr/>
+ 1589  
+ 1590: <div id="discourse-comments"></div>
+ 1591  
+ 1592  <script type="text/javascript">
+ 1593:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1594:   discourseEmbedUrl =  window.location.href;
+ 1595  
+ 1596    (function() {
+ 1597      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1598:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1599      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1600    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/hotelx/plugins/development/index.html:
+ 1586  <hr/>
+ 1587  
+ 1588: <div id="discourse-comments"></div>
+ 1589  
+ 1590  <script type="text/javascript">
+ 1591:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1592:   discourseEmbedUrl =  window.location.href;
+ 1593  
+ 1594    (function() {
+ 1595      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1596:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1597      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1598    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/hotelx/plugins/mapping/index.html:
+ 1630  <hr/>
+ 1631  
+ 1632: <div id="discourse-comments"></div>
+ 1633  
+ 1634  <script type="text/javascript">
+ 1635:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1636:   discourseEmbedUrl =  window.location.href;
+ 1637  
+ 1638    (function() {
+ 1639      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1640:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1641      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1642    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/hotelx/plugins/markup/index.html:
+ 1588  <hr/>
+ 1589  
+ 1590: <div id="discourse-comments"></div>
+ 1591  
+ 1592  <script type="text/javascript">
+ 1593:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1594:   discourseEmbedUrl =  window.location.href;
+ 1595  
+ 1596    (function() {
+ 1597      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1598:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1599      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1600    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/hotelx/plugins/overview/index.html:
+ 1727  <hr/>
+ 1728  
+ 1729: <div id="discourse-comments"></div>
+ 1730  
+ 1731  <script type="text/javascript">
+ 1732:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1733:   discourseEmbedUrl =  window.location.href;
+ 1734  
+ 1735    (function() {
+ 1736      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1737:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1738      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1739    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/hotelx/plugins/processor/index.html:
+ 1599  <hr/>
+ 1600  
+ 1601: <div id="discourse-comments"></div>
+ 1602  
+ 1603  <script type="text/javascript">
+ 1604:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1605:   discourseEmbedUrl =  window.location.href;
+ 1606  
+ 1607    (function() {
+ 1608      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1609:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1610      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1611    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/hotelx/quickstart/index.html:
+ 1617  <hr/>
+ 1618  
+ 1619: <div id="discourse-comments"></div>
+ 1620  
+ 1621  <script type="text/javascript">
+ 1622:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1623:   discourseEmbedUrl =  window.location.href;
+ 1624  
+ 1625    (function() {
+ 1626      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1627:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1628      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1629    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/hotelx/reference/api-reference/index.html:
+ 1602  <hr/>
+ 1603  
+ 1604: <div id="discourse-comments"></div>
+ 1605  
+ 1606  <script type="text/javascript">
+ 1607:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1608:   discourseEmbedUrl =  window.location.href;
+ 1609  
+ 1610    (function() {
+ 1611      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1612:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1613      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1614    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/hotelx/resources/quotas-limits/index.html:
+ 1587  <hr/>
+ 1588  
+ 1589: <div id="discourse-comments"></div>
+ 1590  
+ 1591  <script type="text/javascript">
+ 1592:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1593:   discourseEmbedUrl =  window.location.href;
+ 1594  
+ 1595    (function() {
+ 1596      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1597:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1598      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1599    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/hotelx/resources/release-notes/index.html:
+ 1586  <hr/>
+ 1587  
+ 1588: <div id="discourse-comments"></div>
+ 1589  
+ 1590  <script type="text/javascript">
+ 1591:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1592:   discourseEmbedUrl =  window.location.href;
+ 1593  
+ 1594    (function() {
+ 1595      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1596:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1597      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1598    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/insightsx/overview/index.html:
+ 1584  <hr/>
+ 1585  
+ 1586: <div id="discourse-comments"></div>
+ 1587  
+ 1588  <script type="text/javascript">
+ 1589:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1590:   discourseEmbedUrl =  window.location.href;
+ 1591  
+ 1592    (function() {
+ 1593      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1594:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1595      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1596    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/learning-graphql/basic_concepts/index.html:
+ 1622  <hr/>
+ 1623  
+ 1624: <div id="discourse-comments"></div>
+ 1625  
+ 1626  <script type="text/javascript">
+ 1627:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1628:   discourseEmbedUrl =  window.location.href;
+ 1629  
+ 1630    (function() {
+ 1631      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1632:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1633      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1634    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/learning-graphql/overview/index.html:
+ 1626  <hr/>
+ 1627  
+ 1628: <div id="discourse-comments"></div>
+ 1629  
+ 1630  <script type="text/javascript">
+ 1631:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1632:   discourseEmbedUrl =  window.location.href;
+ 1633  
+ 1634    (function() {
+ 1635      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1636:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1637      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1638    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/learning-graphql/thinking_in_graphql/index.html:
+ 1631  <hr/>
+ 1632  
+ 1633: <div id="discourse-comments"></div>
+ 1634  
+ 1635  <script type="text/javascript">
+ 1636:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1637:   discourseEmbedUrl =  window.location.href;
+ 1638  
+ 1639    (function() {
+ 1640      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1641:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1642      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1643    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/learning-graphql/tooling/index.html:
+ 1668  <hr/>
+ 1669  
+ 1670: <div id="discourse-comments"></div>
+ 1671  
+ 1672  <script type="text/javascript">
+ 1673:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1674:   discourseEmbedUrl =  window.location.href;
+ 1675  
+ 1676    (function() {
+ 1677      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1678:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1679      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1680    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/learning-graphql/tutorials_resources/index.html:
+ 1615  <hr/>
+ 1616  
+ 1617: <div id="discourse-comments"></div>
+ 1618  
+ 1619  <script type="text/javascript">
+ 1620:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1621:   discourseEmbedUrl =  window.location.href;
+ 1622  
+ 1623    (function() {
+ 1624      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1625:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1626      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1627    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/mappeax/overview/index.html:
+ 1584  <hr/>
+ 1585  
+ 1586: <div id="discourse-comments"></div>
+ 1587  
+ 1588  <script type="text/javascript">
+ 1589:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1590:   discourseEmbedUrl =  window.location.href;
+ 1591  
+ 1592    (function() {
+ 1593      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1594:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1595      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1596    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/statsx/overview/index.html:
+ 1584  <hr/>
+ 1585  
+ 1586: <div id="discourse-comments"></div>
+ 1587  
+ 1588  <script type="text/javascript">
+ 1589:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1590:   discourseEmbedUrl =  window.location.href;
+ 1591  
+ 1592    (function() {
+ 1593      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1594:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1595      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1596    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/data-automation/custom-hotel-list/index.html:
+ 1585  <hr/>
+ 1586  
+ 1587: <div id="discourse-comments"></div>
+ 1588  
+ 1589  <script type="text/javascript">
+ 1590:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1591:   discourseEmbedUrl =  window.location.href;
+ 1592  
+ 1593    (function() {
+ 1594      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1595:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1596      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1597    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/data-automation/hotel-mappings/index.html:
+ 1585  <hr/>
+ 1586  
+ 1587: <div id="discourse-comments"></div>
+ 1588  
+ 1589  <script type="text/javascript">
+ 1590:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1591:   discourseEmbedUrl =  window.location.href;
+ 1592  
+ 1593    (function() {
+ 1594      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1595:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1596      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1597    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/data-automation/pricing-rules/index.html:
+ 1585  <hr/>
+ 1586  
+ 1587: <div id="discourse-comments"></div>
+ 1588  
+ 1589  <script type="text/javascript">
+ 1590:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1591:   discourseEmbedUrl =  window.location.href;
+ 1592  
+ 1593    (function() {
+ 1594      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1595:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1596      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1597    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/data-automation/room-type-mappings/index.html:
+ 1585  <hr/>
+ 1586  
+ 1587: <div id="discourse-comments"></div>
+ 1588  
+ 1589  <script type="text/javascript">
+ 1590:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1591:   discourseEmbedUrl =  window.location.href;
+ 1592  
+ 1593    (function() {
+ 1594      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1595:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1596      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1597    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/data-automation/uploading-strategies/index.html:
+ 1626  <hr/>
+ 1627  
+ 1628: <div id="discourse-comments"></div>
+ 1629  
+ 1630  <script type="text/javascript">
+ 1631:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1632:   discourseEmbedUrl =  window.location.href;
+ 1633  
+ 1634    (function() {
+ 1635      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1636:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1637      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1638    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/overview/index.html:
+ 1702  <hr/>
+ 1703  
+ 1704: <div id="discourse-comments"></div>
+ 1705  
+ 1706  <script type="text/javascript">
+ 1707:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1708:   discourseEmbedUrl =  window.location.href;
+ 1709  
+ 1710    (function() {
+ 1711      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1712:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1713      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1714    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/enums/applicationarea/index.html:
+ 1645  <hr/>
+ 1646  
+ 1647: <div id="discourse-comments"></div>
+ 1648  
+ 1649  <script type="text/javascript">
+ 1650:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1651:   discourseEmbedUrl =  window.location.href;
+ 1652  
+ 1653    (function() {
+ 1654      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1655:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1656      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1657    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/enums/bookingcriteriatype/index.html:
+ 1626  <hr/>
+ 1627  
+ 1628: <div id="discourse-comments"></div>
+ 1629  
+ 1630  <script type="text/javascript">
+ 1631:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1632:   discourseEmbedUrl =  window.location.href;
+ 1633  
+ 1634    (function() {
+ 1635      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1636:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1637      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1638    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/enums/bookstatustype/index.html:
+ 1651  <hr/>
+ 1652  
+ 1653: <div id="discourse-comments"></div>
+ 1654  
+ 1655  <script type="text/javascript">
+ 1656:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1657:   discourseEmbedUrl =  window.location.href;
+ 1658  
+ 1659    (function() {
+ 1660      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1661:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1662      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1663    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/enums/businessrulestype/index.html:
+ 1640  <hr/>
+ 1641  
+ 1642: <div id="discourse-comments"></div>
+ 1643  
+ 1644  <script type="text/javascript">
+ 1645:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1646:   discourseEmbedUrl =  window.location.href;
+ 1647  
+ 1648    (function() {
+ 1649      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1650:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1651      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1652    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/enums/cancelpenaltytype/index.html:
+ 1632  <hr/>
+ 1633  
+ 1634: <div id="discourse-comments"></div>
+ 1635  
+ 1636  <script type="text/javascript">
+ 1637:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1638:   discourseEmbedUrl =  window.location.href;
+ 1639  
+ 1640    (function() {
+ 1641      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1642:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1643      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1644    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/enums/chargetype/index.html:
+ 1633  <hr/>
+ 1634  
+ 1635: <div id="discourse-comments"></div>
+ 1636  
+ 1637  <script type="text/javascript">
+ 1638:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1639:   discourseEmbedUrl =  window.location.href;
+ 1640  
+ 1641    (function() {
+ 1642      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1643:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1644      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1645    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/enums/datetype/index.html:
+ 1626  <hr/>
+ 1627  
+ 1628: <div id="discourse-comments"></div>
+ 1629  
+ 1630  <script type="text/javascript">
+ 1631:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1632:   discourseEmbedUrl =  window.location.href;
+ 1633  
+ 1634    (function() {
+ 1635      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1636:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1637      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1638    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/enums/durationtype/index.html:
+ 1626  <hr/>
+ 1627  
+ 1628: <div id="discourse-comments"></div>
+ 1629  
+ 1630  <script type="text/javascript">
+ 1631:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1632:   discourseEmbedUrl =  window.location.href;
+ 1633  
+ 1634    (function() {
+ 1635      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1636:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1637      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1638    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/enums/grouptype/index.html:
+ 1649  <hr/>
+ 1650  
+ 1651: <div id="discourse-comments"></div>
+ 1652  
+ 1653  <script type="text/javascript">
+ 1654:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1655:   discourseEmbedUrl =  window.location.href;
+ 1656  
+ 1657    (function() {
+ 1658      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1659:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1660      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1661    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/enums/markupruletype/index.html:
+ 1624  <hr/>
+ 1625  
+ 1626: <div id="discourse-comments"></div>
+ 1627  
+ 1628  <script type="text/javascript">
+ 1629:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1630:   discourseEmbedUrl =  window.location.href;
+ 1631  
+ 1632    (function() {
+ 1633      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1634:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1635      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1636    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/enums/membertype/index.html:
+ 1624  <hr/>
+ 1625  
+ 1626: <div id="discourse-comments"></div>
+ 1627  
+ 1628  <script type="text/javascript">
+ 1629:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1630:   discourseEmbedUrl =  window.location.href;
+ 1631  
+ 1632    (function() {
+ 1633      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1634:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1635      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1636    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/enums/method/index.html:
+ 1631  <hr/>
+ 1632  
+ 1633: <div id="discourse-comments"></div>
+ 1634  
+ 1635  <script type="text/javascript">
+ 1636:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1637:   discourseEmbedUrl =  window.location.href;
+ 1638  
+ 1639    (function() {
+ 1640      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1641:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1642      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1643    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/enums/paymenttype/index.html:
+ 1638  <hr/>
+ 1639  
+ 1640: <div id="discourse-comments"></div>
+ 1641  
+ 1642  <script type="text/javascript">
+ 1643:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1644:   discourseEmbedUrl =  window.location.href;
+ 1645  
+ 1646    (function() {
+ 1647      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1648:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1649      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1650    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/enums/pluginsteptype/index.html:
+ 1638  <hr/>
+ 1639  
+ 1640: <div id="discourse-comments"></div>
+ 1641  
+ 1642  <script type="text/javascript">
+ 1643:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1644:   discourseEmbedUrl =  window.location.href;
+ 1645  
+ 1646    (function() {
+ 1647      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1648:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1649      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1650    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/enums/pricetype/index.html:
+ 1620  <hr/>
+ 1621  
+ 1622: <div id="discourse-comments"></div>
+ 1623  
+ 1624  <script type="text/javascript">
+ 1625:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1626:   discourseEmbedUrl =  window.location.href;
+ 1627  
+ 1628    (function() {
+ 1629      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1630:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1631      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1632    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/enums/raterulestype/index.html:
+ 1674  <hr/>
+ 1675  
+ 1676: <div id="discourse-comments"></div>
+ 1677  
+ 1678  <script type="text/javascript">
+ 1679:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1680:   discourseEmbedUrl =  window.location.href;
+ 1681  
+ 1682    (function() {
+ 1683      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1684:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1685      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1686    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/enums/servicetype/index.html:
+ 1608  <hr/>
+ 1609  
+ 1610: <div id="discourse-comments"></div>
+ 1611  
+ 1612  <script type="text/javascript">
+ 1613:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1614:   discourseEmbedUrl =  window.location.href;
+ 1615  
+ 1616    (function() {
+ 1617      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1618:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1619      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1620    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/enums/statustype/index.html:
+ 1633  <hr/>
+ 1634  
+ 1635: <div id="discourse-comments"></div>
+ 1636  
+ 1637  <script type="text/javascript">
+ 1638:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1639:   discourseEmbedUrl =  window.location.href;
+ 1640  
+ 1641    (function() {
+ 1642      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1643:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1644      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1645    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/enums/supplementtype/index.html:
+ 1662  <hr/>
+ 1663  
+ 1664: <div id="discourse-comments"></div>
+ 1665  
+ 1666  <script type="text/javascript">
+ 1667:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1668:   discourseEmbedUrl =  window.location.href;
+ 1669  
+ 1670    (function() {
+ 1671      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1672:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1673      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1674    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/enums/unittimetype/index.html:
+ 1626  <hr/>
+ 1627  
+ 1628: <div id="discourse-comments"></div>
+ 1629  
+ 1630  <script type="text/javascript">
+ 1631:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1632:   discourseEmbedUrl =  window.location.href;
+ 1633  
+ 1634    (function() {
+ 1635      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1636:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1637      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1638    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/inputobjects/accessconfigurationinput/index.html:
+ 1664  <hr/>
+ 1665  
+ 1666: <div id="discourse-comments"></div>
+ 1667  
+ 1668  <script type="text/javascript">
+ 1669:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1670:   discourseEmbedUrl =  window.location.href;
+ 1671  
+ 1672    (function() {
+ 1673      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1674:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1675      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1676    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/inputobjects/accessconnectuserinput/index.html:
+ 1650  <hr/>
+ 1651  
+ 1652: <div id="discourse-comments"></div>
+ 1653  
+ 1654  <script type="text/javascript">
+ 1655:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1656:   discourseEmbedUrl =  window.location.href;
+ 1657  
+ 1658    (function() {
+ 1659      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1660:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1661      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1662    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/inputobjects/accessfilterinput/index.html:
+ 1651  <hr/>
+ 1652  
+ 1653: <div id="discourse-comments"></div>
+ 1654  
+ 1655  <script type="text/javascript">
+ 1656:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1657:   discourseEmbedUrl =  window.location.href;
+ 1658  
+ 1659    (function() {
+ 1660      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1661:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1662      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1663    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/inputobjects/accessinput/index.html:
+ 1652  <hr/>
+ 1653  
+ 1654: <div id="discourse-comments"></div>
+ 1655  
+ 1656  <script type="text/javascript">
+ 1657:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1658:   discourseEmbedUrl =  window.location.href;
+ 1659  
+ 1660    (function() {
+ 1661      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1662:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1663      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1664    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/inputobjects/accesssupplierinput/index.html:
+ 1664  <hr/>
+ 1665  
+ 1666: <div id="discourse-comments"></div>
+ 1667  
+ 1668  <script type="text/javascript">
+ 1669:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1670:   discourseEmbedUrl =  window.location.href;
+ 1671  
+ 1672    (function() {
+ 1673      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1674:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1675      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1676    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/inputobjects/bookpaxinput/index.html:
+ 1650  <hr/>
+ 1651  
+ 1652: <div id="discourse-comments"></div>
+ 1653  
+ 1654  <script type="text/javascript">
+ 1655:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1656:   discourseEmbedUrl =  window.location.href;
+ 1657  
+ 1658    (function() {
+ 1659      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1660:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1661      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1662    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/inputobjects/bookreferenceinput/index.html:
+ 1648  <hr/>
+ 1649  
+ 1650: <div id="discourse-comments"></div>
+ 1651  
+ 1652  <script type="text/javascript">
+ 1653:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1654:   discourseEmbedUrl =  window.location.href;
+ 1655  
+ 1656    (function() {
+ 1657      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1658:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1659      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1660    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/inputobjects/bookroominput/index.html:
+ 1636  <hr/>
+ 1637  
+ 1638: <div id="discourse-comments"></div>
+ 1639  
+ 1640  <script type="text/javascript">
+ 1641:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1642:   discourseEmbedUrl =  window.location.href;
+ 1643  
+ 1644    (function() {
+ 1645      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1646:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1647      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1648    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/inputobjects/businessrulesinput/index.html:
+ 1655  <hr/>
+ 1656  
+ 1657: <div id="discourse-comments"></div>
+ 1658  
+ 1659  <script type="text/javascript">
+ 1660:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1661:   discourseEmbedUrl =  window.location.href;
+ 1662  
+ 1663    (function() {
+ 1664      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1665:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1666      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1667    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/inputobjects/configurationinput/index.html:
+ 1719  <hr/>
+ 1720  
+ 1721: <div id="discourse-comments"></div>
+ 1722  
+ 1723  <script type="text/javascript">
+ 1724:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1725:   discourseEmbedUrl =  window.location.href;
+ 1726  
+ 1727    (function() {
+ 1728      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1729:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1730      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1731    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/inputobjects/connectusergroupinput/index.html:
+ 1636  <hr/>
+ 1637  
+ 1638: <div id="discourse-comments"></div>
+ 1639  
+ 1640  <script type="text/javascript">
+ 1641:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1642:   discourseEmbedUrl =  window.location.href;
+ 1643  
+ 1644    (function() {
+ 1645      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1646:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1647      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1648    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/inputobjects/creategroupinput/index.html:
+ 1676  <hr/>
+ 1677  
+ 1678: <div id="discourse-comments"></div>
+ 1679  
+ 1680  <script type="text/javascript">
+ 1681:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1682:   discourseEmbedUrl =  window.location.href;
+ 1683  
+ 1684    (function() {
+ 1685      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1686:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1687      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1688    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/inputobjects/creatememberinput/index.html:
+ 1690  <hr/>
+ 1691  
+ 1692: <div id="discourse-comments"></div>
+ 1693  
+ 1694  <script type="text/javascript">
+ 1695:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1696:   discourseEmbedUrl =  window.location.href;
+ 1697  
+ 1698    (function() {
+ 1699      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1700:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1701      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1702    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/inputobjects/criteriabookingdatesinput/index.html:
+ 1664  <hr/>
+ 1665  
+ 1666: <div id="discourse-comments"></div>
+ 1667  
+ 1668  <script type="text/javascript">
+ 1669:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1670:   discourseEmbedUrl =  window.location.href;
+ 1671  
+ 1672    (function() {
+ 1673      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1674:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1675      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1676    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/inputobjects/criteriabookingreferencesinput/index.html:
+ 1662  <hr/>
+ 1663  
+ 1664: <div id="discourse-comments"></div>
+ 1665  
+ 1666  <script type="text/javascript">
+ 1667:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1668:   discourseEmbedUrl =  window.location.href;
+ 1669  
+ 1670    (function() {
+ 1671      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1672:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1673      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1674    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/inputobjects/defaultsettingsbusinessrulesinput/index.html:
+ 1648  <hr/>
+ 1649  
+ 1650: <div id="discourse-comments"></div>
+ 1651  
+ 1652  <script type="text/javascript">
+ 1653:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1654:   discourseEmbedUrl =  window.location.href;
+ 1655  
+ 1656    (function() {
+ 1657      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1658:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1659      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1660    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/inputobjects/defaultsettingsinput/index.html:
+ 1733  <hr/>
+ 1734  
+ 1735: <div id="discourse-comments"></div>
+ 1736  
+ 1737  <script type="text/javascript">
+ 1738:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1739:   discourseEmbedUrl =  window.location.href;
+ 1740  
+ 1741    (function() {
+ 1742      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1743:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1744      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1745    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/inputobjects/deletegroupinput/index.html:
+ 1620  <hr/>
+ 1621  
+ 1622: <div id="discourse-comments"></div>
+ 1623  
+ 1624  <script type="text/javascript">
+ 1625:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1626:   discourseEmbedUrl =  window.location.href;
+ 1627  
+ 1628    (function() {
+ 1629      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1630:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1631      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1632    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/inputobjects/deletememberinput/index.html:
+ 1634  <hr/>
+ 1635  
+ 1636: <div id="discourse-comments"></div>
+ 1637  
+ 1638  <script type="text/javascript">
+ 1639:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1640:   discourseEmbedUrl =  window.location.href;
+ 1641  
+ 1642    (function() {
+ 1643      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1644:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1645      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1646    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/inputobjects/deltapriceinput/index.html:
+ 1662  <hr/>
+ 1663  
+ 1664: <div id="discourse-comments"></div>
+ 1665  
+ 1666  <script type="text/javascript">
+ 1667:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1668:   discourseEmbedUrl =  window.location.href;
+ 1669  
+ 1670    (function() {
+ 1671      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1672:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1673      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1674    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/inputobjects/expiredateinput/index.html:
+ 1648  <hr/>
+ 1649  
+ 1650: <div id="discourse-comments"></div>
+ 1651  
+ 1652  <script type="text/javascript">
+ 1653:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1654:   discourseEmbedUrl =  window.location.href;
+ 1655  
+ 1656    (function() {
+ 1657      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1658:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1659      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1660    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/inputobjects/filterinput/index.html:
+ 1638  <hr/>
+ 1639  
+ 1640: <div id="discourse-comments"></div>
+ 1641  
+ 1642  <script type="text/javascript">
+ 1643:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1644:   discourseEmbedUrl =  window.location.href;
+ 1645  
+ 1646    (function() {
+ 1647      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1648:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1649      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1650    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/inputobjects/groupaccessinput/index.html:
+ 1634  <hr/>
+ 1635  
+ 1636: <div id="discourse-comments"></div>
+ 1637  
+ 1638  <script type="text/javascript">
+ 1639:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1640:   discourseEmbedUrl =  window.location.href;
+ 1641  
+ 1642    (function() {
+ 1643      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1644:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1645      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1646    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/inputobjects/holderinput/index.html:
+ 1655  <hr/>
+ 1656  
+ 1657: <div id="discourse-comments"></div>
+ 1658  
+ 1659  <script type="text/javascript">
+ 1660:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1661:   discourseEmbedUrl =  window.location.href;
+ 1662  
+ 1663    (function() {
+ 1664      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1665:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1666      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1667    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/inputobjects/hotelbookinput/index.html:
+ 1720  <hr/>
+ 1721  
+ 1722: <div id="discourse-comments"></div>
+ 1723  
+ 1724  <script type="text/javascript">
+ 1725:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1726:   discourseEmbedUrl =  window.location.href;
+ 1727  
+ 1728    (function() {
+ 1729      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1730:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1731      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1732    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/inputobjects/hotelcancelinput/index.html:
+ 1665  <hr/>
+ 1666  
+ 1667: <div id="discourse-comments"></div>
+ 1668  
+ 1669  <script type="text/javascript">
+ 1670:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1671:   discourseEmbedUrl =  window.location.href;
+ 1672  
+ 1673    (function() {
+ 1674      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1675:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1676      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1677    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/inputobjects/hotelcriteriabookinginput/index.html:
+ 1678  <hr/>
+ 1679  
+ 1680: <div id="discourse-comments"></div>
+ 1681  
+ 1682  <script type="text/javascript">
+ 1683:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1684:   discourseEmbedUrl =  window.location.href;
+ 1685  
+ 1686    (function() {
+ 1687      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1688:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1689      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1690    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/inputobjects/hotelcriteriaquoteinput/index.html:
+ 1636  <hr/>
+ 1637  
+ 1638: <div id="discourse-comments"></div>
+ 1639  
+ 1640  <script type="text/javascript">
+ 1641:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1642:   discourseEmbedUrl =  window.location.href;
+ 1643  
+ 1644    (function() {
+ 1645      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1646:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1647      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1648    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/inputobjects/hotelcriteriasearchinput/index.html:
+ 1724  <hr/>
+ 1725  
+ 1726: <div id="discourse-comments"></div>
+ 1727  
+ 1728  <script type="text/javascript">
+ 1729:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1730:   discourseEmbedUrl =  window.location.href;
+ 1731  
+ 1732    (function() {
+ 1733      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1734:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1735      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1736    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/inputobjects/hotelinput/index.html:
+ 1634  <hr/>
+ 1635  
+ 1636: <div id="discourse-comments"></div>
+ 1637  
+ 1638  <script type="text/javascript">
+ 1639:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1640:   discourseEmbedUrl =  window.location.href;
+ 1641  
+ 1642    (function() {
+ 1643      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1644:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1645      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1646    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/inputobjects/hotelsettingsinput/index.html:
+ 1721  <hr/>
+ 1722  
+ 1723: <div id="discourse-comments"></div>
+ 1724  
+ 1725  <script type="text/javascript">
+ 1726:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1727:   discourseEmbedUrl =  window.location.href;
+ 1728  
+ 1729    (function() {
+ 1730      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1731:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1732      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1733    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/inputobjects/idaccessconfigurationinput/index.html:
+ 1676  <hr/>
+ 1677  
+ 1678: <div id="discourse-comments"></div>
+ 1679  
+ 1680  <script type="text/javascript">
+ 1681:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1682:   discourseEmbedUrl =  window.location.href;
+ 1683  
+ 1684    (function() {
+ 1685      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1686:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1687      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1688    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/inputobjects/idgroupaccessinput/index.html:
+ 1634  <hr/>
+ 1635  
+ 1636: <div id="discourse-comments"></div>
+ 1637  
+ 1638  <script type="text/javascript">
+ 1639:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1640:   discourseEmbedUrl =  window.location.href;
+ 1641  
+ 1642    (function() {
+ 1643      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1644:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1645      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1646    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/inputobjects/parameterinput/index.html:
+ 1636  <hr/>
+ 1637  
+ 1638: <div id="discourse-comments"></div>
+ 1639  
+ 1640  <script type="text/javascript">
+ 1641:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1642:   discourseEmbedUrl =  window.location.href;
+ 1643  
+ 1644    (function() {
+ 1645      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1646:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1647      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1648    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/inputobjects/paxinput/index.html:
+ 1622  <hr/>
+ 1623  
+ 1624: <div id="discourse-comments"></div>
+ 1625  
+ 1626  <script type="text/javascript">
+ 1627:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1628:   discourseEmbedUrl =  window.location.href;
+ 1629  
+ 1630    (function() {
+ 1631      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1632:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1633      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1634    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/inputobjects/paymentcardinput/index.html:
+ 1690  <hr/>
+ 1691  
+ 1692: <div id="discourse-comments"></div>
+ 1693  
+ 1694  <script type="text/javascript">
+ 1695:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1696:   discourseEmbedUrl =  window.location.href;
+ 1697  
+ 1698    (function() {
+ 1699      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1700:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1701      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1702    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/inputobjects/pluginsinput/index.html:
+ 1636  <hr/>
+ 1637  
+ 1638: <div id="discourse-comments"></div>
+ 1639  
+ 1640  <script type="text/javascript">
+ 1641:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1642:   discourseEmbedUrl =  window.location.href;
+ 1643  
+ 1644    (function() {
+ 1645      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1646:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1647      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1648    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/inputobjects/pluginstepinput/index.html:
+ 1636  <hr/>
+ 1637  
+ 1638: <div id="discourse-comments"></div>
+ 1639  
+ 1640  <script type="text/javascript">
+ 1641:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1642:   discourseEmbedUrl =  window.location.href;
+ 1643  
+ 1644    (function() {
+ 1645      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1646:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1647      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1648    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/inputobjects/raterulesfilterinput/index.html:
+ 1650  <hr/>
+ 1651  
+ 1652: <div id="discourse-comments"></div>
+ 1653  
+ 1654  <script type="text/javascript">
+ 1655:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1656:   discourseEmbedUrl =  window.location.href;
+ 1657  
+ 1658    (function() {
+ 1659      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1660:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1661      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1662    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/inputobjects/roominput/index.html:
+ 1622  <hr/>
+ 1623  
+ 1624: <div id="discourse-comments"></div>
+ 1625  
+ 1626  <script type="text/javascript">
+ 1627:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1628:   discourseEmbedUrl =  window.location.href;
+ 1629  
+ 1630    (function() {
+ 1631      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1632:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1633      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1634    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/inputobjects/settingsbaseinput/index.html:
+ 1670  <hr/>
+ 1671  
+ 1672: <div id="discourse-comments"></div>
+ 1673  
+ 1674  <script type="text/javascript">
+ 1675:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1676:   discourseEmbedUrl =  window.location.href;
+ 1677  
+ 1678    (function() {
+ 1679      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1680:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1681      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1682    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/inputobjects/suppliergroupinput/index.html:
+ 1636  <hr/>
+ 1637  
+ 1638: <div id="discourse-comments"></div>
+ 1639  
+ 1640  <script type="text/javascript">
+ 1641:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1642:   discourseEmbedUrl =  window.location.href;
+ 1643  
+ 1644    (function() {
+ 1645      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1646:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1647      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1648    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/inputobjects/supplierinput/index.html:
+ 1652  <hr/>
+ 1653  
+ 1654: <div id="discourse-comments"></div>
+ 1655  
+ 1656  <script type="text/javascript">
+ 1657:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1658:   discourseEmbedUrl =  window.location.href;
+ 1659  
+ 1660    (function() {
+ 1661      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1662:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1663      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1664    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/inputobjects/timeoutinput/index.html:
+ 1660  <hr/>
+ 1661  
+ 1662: <div id="discourse-comments"></div>
+ 1663  
+ 1664  <script type="text/javascript">
+ 1665:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1666:   discourseEmbedUrl =  window.location.href;
+ 1667  
+ 1668    (function() {
+ 1669      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1670:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1671      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1672    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/inputobjects/updategroupinput/index.html:
+ 1662  <hr/>
+ 1663  
+ 1664: <div id="discourse-comments"></div>
+ 1665  
+ 1666  <script type="text/javascript">
+ 1667:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1668:   discourseEmbedUrl =  window.location.href;
+ 1669  
+ 1670    (function() {
+ 1671      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1672:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1673      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1674    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/inputobjects/updatememberinput/index.html:
+ 1690  <hr/>
+ 1691  
+ 1692: <div id="discourse-comments"></div>
+ 1693  
+ 1694  <script type="text/javascript">
+ 1695:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1696:   discourseEmbedUrl =  window.location.href;
+ 1697  
+ 1698    (function() {
+ 1699      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1700:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1701      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1702    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/inputobjects/urlsinput/index.html:
+  498  <hr/>
+  499  
+  500: <div id="discourse-comments"></div>
+  501  
+  502  <script type="text/javascript">
+  503:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+  504:   discourseEmbedUrl =  window.location.href;
+  505  
+  506    (function() {
+  507      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+  508:       d.src = discourseUrl + 'javascripts/embed.js';
+  509      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+  510    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/interfaces/advisemessage/index.html:
+ 1651  <hr/>
+ 1652  
+ 1653: <div id="discourse-comments"></div>
+ 1654  
+ 1655  <script type="text/javascript">
+ 1656:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1657:   discourseEmbedUrl =  window.location.href;
+ 1658  
+ 1659    (function() {
+ 1660      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1661:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1662      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1663    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/interfaces/bookableoptionsearch/index.html:
+ 1648  <hr/>
+ 1649  
+ 1650: <div id="discourse-comments"></div>
+ 1651  
+ 1652  <script type="text/javascript">
+ 1653:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1654:   discourseEmbedUrl =  window.location.href;
+ 1655  
+ 1656    (function() {
+ 1657      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1658:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1659      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1660    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/interfaces/groupcommondata/index.html:
+ 1746  <hr/>
+ 1747  
+ 1748: <div id="discourse-comments"></div>
+ 1749  
+ 1750  <script type="text/javascript">
+ 1751:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1752:   discourseEmbedUrl =  window.location.href;
+ 1753  
+ 1754    (function() {
+ 1755      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1756:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1757      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1758    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/interfaces/information/index.html:
+ 1653  <hr/>
+ 1654  
+ 1655: <div id="discourse-comments"></div>
+ 1656  
+ 1657  <script type="text/javascript">
+ 1658:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1659:   discourseEmbedUrl =  window.location.href;
+ 1660  
+ 1661    (function() {
+ 1662      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1663:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1664      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1665    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/interfaces/node/index.html:
+ 1662  <hr/>
+ 1663  
+ 1664: <div id="discourse-comments"></div>
+ 1665  
+ 1666  <script type="text/javascript">
+ 1667:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1668:   discourseEmbedUrl =  window.location.href;
+ 1669  
+ 1670    (function() {
+ 1671      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1672:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1673      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1674    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/interfaces/priceable/index.html:
+ 1676  <hr/>
+ 1677  
+ 1678: <div id="discourse-comments"></div>
+ 1679  
+ 1680  <script type="text/javascript">
+ 1681:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1682:   discourseEmbedUrl =  window.location.href;
+ 1683  
+ 1684    (function() {
+ 1685      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1686:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1687      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1688    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/interfaces/response/index.html:
+ 1665  <hr/>
+ 1666  
+ 1667: <div id="discourse-comments"></div>
+ 1668  
+ 1669  <script type="text/javascript">
+ 1670:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1671:   discourseEmbedUrl =  window.location.href;
+ 1672  
+ 1673    (function() {
+ 1674      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1675:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1676      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1677    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/objects/access/index.html:
+ 1676  <hr/>
+ 1677  
+ 1678: <div id="discourse-comments"></div>
+ 1679  
+ 1680  <script type="text/javascript">
+ 1681:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1682:   discourseEmbedUrl =  window.location.href;
+ 1683  
+ 1684    (function() {
+ 1685      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1686:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1687      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1688    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/objects/accessconnection/index.html:
+ 1634  <hr/>
+ 1635  
+ 1636: <div id="discourse-comments"></div>
+ 1637  
+ 1638  <script type="text/javascript">
+ 1639:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1640:   discourseEmbedUrl =  window.location.href;
+ 1641  
+ 1642    (function() {
+ 1643      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1644:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1645      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1646    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/objects/accessdata/index.html:
+ 1760  <hr/>
+ 1761  
+ 1762: <div id="discourse-comments"></div>
+ 1763  
+ 1764  <script type="text/javascript">
+ 1765:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1766:   discourseEmbedUrl =  window.location.href;
+ 1767  
+ 1768    (function() {
+ 1769      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1770:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1771      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1772    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/objects/accessedge/index.html:
+ 1646  <hr/>
+ 1647  
+ 1648: <div id="discourse-comments"></div>
+ 1649  
+ 1650  <script type="text/javascript">
+ 1651:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1652:   discourseEmbedUrl =  window.location.href;
+ 1653  
+ 1654    (function() {
+ 1655      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1656:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1657      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1658    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/objects/addons/index.html:
+ 1641  <hr/>
+ 1642  
+ 1643: <div id="discourse-comments"></div>
+ 1644  
+ 1645  <script type="text/javascript">
+ 1646:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1647:   discourseEmbedUrl =  window.location.href;
+ 1648  
+ 1649    (function() {
+ 1650      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1651:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1652      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1653    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/objects/adminmutation/index.html:
+ 1708  <hr/>
+ 1709  
+ 1710: <div id="discourse-comments"></div>
+ 1711  
+ 1712  <script type="text/javascript">
+ 1713:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1714:   discourseEmbedUrl =  window.location.href;
+ 1715  
+ 1716    (function() {
+ 1717      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1718:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1719      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1720    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/objects/adminquery/index.html:
+ 1998  <hr/>
+ 1999  
+ 2000: <div id="discourse-comments"></div>
+ 2001  
+ 2002  <script type="text/javascript">
+ 2003:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 2004:   discourseEmbedUrl =  window.location.href;
+ 2005  
+ 2006    (function() {
+ 2007      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 2008:       d.src = discourseUrl + 'javascripts/embed.js';
+ 2009      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 2010    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/objects/amenity/index.html:
+ 1688  <hr/>
+ 1689  
+ 1690: <div id="discourse-comments"></div>
+ 1691  
+ 1692  <script type="text/javascript">
+ 1693:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1694:   discourseEmbedUrl =  window.location.href;
+ 1695  
+ 1696    (function() {
+ 1697      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1698:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1699      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1700    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/objects/amenityconnection/index.html:
+ 1646  <hr/>
+ 1647  
+ 1648: <div id="discourse-comments"></div>
+ 1649  
+ 1650  <script type="text/javascript">
+ 1651:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1652:   discourseEmbedUrl =  window.location.href;
+ 1653  
+ 1654    (function() {
+ 1655      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1656:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1657      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1658    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/objects/amenitydata/index.html:
+ 1660  <hr/>
+ 1661  
+ 1662: <div id="discourse-comments"></div>
+ 1663  
+ 1664  <script type="text/javascript">
+ 1665:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1666:   discourseEmbedUrl =  window.location.href;
+ 1667  
+ 1668    (function() {
+ 1669      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1670:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1671      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1672    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/objects/amenityedge/index.html:
+ 1648  <hr/>
+ 1649  
+ 1650: <div id="discourse-comments"></div>
+ 1651  
+ 1652  <script type="text/javascript">
+ 1653:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1654:   discourseEmbedUrl =  window.location.href;
+ 1655  
+ 1656    (function() {
+ 1657      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1658:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1659      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1660    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/objects/api/index.html:
+ 1688  <hr/>
+ 1689  
+ 1690: <div id="discourse-comments"></div>
+ 1691  
+ 1692  <script type="text/javascript">
+ 1693:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1694:   discourseEmbedUrl =  window.location.href;
+ 1695  
+ 1696    (function() {
+ 1697      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1698:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1699      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1700    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/objects/apiconnection/index.html:
+ 1681  <hr/>
+ 1682  
+ 1683: <div id="discourse-comments"></div>
+ 1684  
+ 1685  <script type="text/javascript">
+ 1686:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1687:   discourseEmbedUrl =  window.location.href;
+ 1688  
+ 1689    (function() {
+ 1690      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1691:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1692      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1693    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/objects/apidata/index.html:
+ 1758  <hr/>
+ 1759  
+ 1760: <div id="discourse-comments"></div>
+ 1761  
+ 1762  <script type="text/javascript">
+ 1763:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1764:   discourseEmbedUrl =  window.location.href;
+ 1765  
+ 1766    (function() {
+ 1767      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1768:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1769      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1770    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/objects/apiedge/index.html:
+ 1646  <hr/>
+ 1647  
+ 1648: <div id="discourse-comments"></div>
+ 1649  
+ 1650  <script type="text/javascript">
+ 1651:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1652:   discourseEmbedUrl =  window.location.href;
+ 1653  
+ 1654    (function() {
+ 1655      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1656:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1657      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1658    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/objects/auditdata/index.html:
+ 1697  <hr/>
+ 1698  
+ 1699: <div id="discourse-comments"></div>
+ 1700  
+ 1701  <script type="text/javascript">
+ 1702:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1703:   discourseEmbedUrl =  window.location.href;
+ 1704  
+ 1705    (function() {
+ 1706      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1707:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1708      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1709    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/objects/bed/index.html:
+ 1664  <hr/>
+ 1665  
+ 1666: <div id="discourse-comments"></div>
+ 1667  
+ 1668  <script type="text/javascript">
+ 1669:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1670:   discourseEmbedUrl =  window.location.href;
+ 1671  
+ 1672    (function() {
+ 1673      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1674:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1675      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1676    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/objects/booking/index.html:
+ 1638  <hr/>
+ 1639  
+ 1640: <div id="discourse-comments"></div>
+ 1641  
+ 1642  <script type="text/javascript">
+ 1643:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1644:   discourseEmbedUrl =  window.location.href;
+ 1645  
+ 1646    (function() {
+ 1647      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1648:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1649      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1650    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/objects/bookinghotel/index.html:
+ 1733  <hr/>
+ 1734  
+ 1735: <div id="discourse-comments"></div>
+ 1736  
+ 1737  <script type="text/javascript">
+ 1738:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1739:   discourseEmbedUrl =  window.location.href;
+ 1740  
+ 1741    (function() {
+ 1742      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1743:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1744      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1745    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/objects/bookingroom/index.html:
+ 1662  <hr/>
+ 1663  
+ 1664: <div id="discourse-comments"></div>
+ 1665  
+ 1666  <script type="text/javascript">
+ 1667:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1668:   discourseEmbedUrl =  window.location.href;
+ 1669  
+ 1670    (function() {
+ 1671      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1672:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1673      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1674    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/objects/businessrules/index.html:
+ 1648  <hr/>
+ 1649  
+ 1650: <div id="discourse-comments"></div>
+ 1651  
+ 1652  <script type="text/javascript">
+ 1653:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1654:   discourseEmbedUrl =  window.location.href;
+ 1655  
+ 1656    (function() {
+ 1657      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1658:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1659      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1660    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/objects/cancelpenalty/index.html:
+ 1664  <hr/>
+ 1665  
+ 1666: <div id="discourse-comments"></div>
+ 1667  
+ 1668  <script type="text/javascript">
+ 1669:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1670:   discourseEmbedUrl =  window.location.href;
+ 1671  
+ 1672    (function() {
+ 1673      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1674:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1675      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1676    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/objects/cancelpolicy/index.html:
+ 1663  <hr/>
+ 1664  
+ 1665: <div id="discourse-comments"></div>
+ 1666  
+ 1667  <script type="text/javascript">
+ 1668:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1669:   discourseEmbedUrl =  window.location.href;
+ 1670  
+ 1671    (function() {
+ 1672      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1673:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1674      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1675    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/objects/connectuser/index.html:
+ 1650  <hr/>
+ 1651  
+ 1652: <div id="discourse-comments"></div>
+ 1653  
+ 1654  <script type="text/javascript">
+ 1655:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1656:   discourseEmbedUrl =  window.location.href;
+ 1657  
+ 1658    (function() {
+ 1659      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1660:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1661      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1662    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/objects/connectusergroup/index.html:
+ 1636  <hr/>
+ 1637  
+ 1638: <div id="discourse-comments"></div>
+ 1639  
+ 1640  <script type="text/javascript">
+ 1641:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1642:   discourseEmbedUrl =  window.location.href;
+ 1643  
+ 1644    (function() {
+ 1645      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1646:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1647      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1648    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/objects/contact/index.html:
+ 1676  <hr/>
+ 1677  
+ 1678: <div id="discourse-comments"></div>
+ 1679  
+ 1680  <script type="text/javascript">
+ 1681:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1682:   discourseEmbedUrl =  window.location.href;
+ 1683  
+ 1684    (function() {
+ 1685      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1686:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1687      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1688    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/objects/criteriasearch/index.html:
+ 1735  <hr/>
+ 1736  
+ 1737: <div id="discourse-comments"></div>
+ 1738  
+ 1739  <script type="text/javascript">
+ 1740:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1741:   discourseEmbedUrl =  window.location.href;
+ 1742  
+ 1743    (function() {
+ 1744      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1745:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1746      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1747    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/objects/defaultsettings/index.html:
+ 1738  <hr/>
+ 1739  
+ 1740: <div id="discourse-comments"></div>
+ 1741  
+ 1742  <script type="text/javascript">
+ 1743:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1744:   discourseEmbedUrl =  window.location.href;
+ 1745  
+ 1746    (function() {
+ 1747      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1748:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1749      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1750    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/objects/destination/index.html:
+ 1662  <hr/>
+ 1663  
+ 1664: <div id="discourse-comments"></div>
+ 1665  
+ 1666  <script type="text/javascript">
+ 1667:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1668:   discourseEmbedUrl =  window.location.href;
+ 1669  
+ 1670    (function() {
+ 1671      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1672:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1673      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1674    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/objects/error/index.html:
+ 1650  <hr/>
+ 1651  
+ 1652: <div id="discourse-comments"></div>
+ 1653  
+ 1654  <script type="text/javascript">
+ 1655:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1656:   discourseEmbedUrl =  window.location.href;
+ 1657  
+ 1658    (function() {
+ 1659      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1660:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1661      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1662    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/objects/exchange/index.html:
+ 1663  <hr/>
+ 1664  
+ 1665: <div id="discourse-comments"></div>
+ 1666  
+ 1667  <script type="text/javascript">
+ 1668:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1669:   discourseEmbedUrl =  window.location.href;
+ 1670  
+ 1671    (function() {
+ 1672      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1673:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1674      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1675    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/objects/geocode/index.html:
+ 1648  <hr/>
+ 1649  
+ 1650: <div id="discourse-comments"></div>
+ 1651  
+ 1652  <script type="text/javascript">
+ 1653:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1654:   discourseEmbedUrl =  window.location.href;
+ 1655  
+ 1656    (function() {
+ 1657      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1658:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1659      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1660    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/objects/giataid/index.html:
+ 1624  <hr/>
+ 1625  
+ 1626: <div id="discourse-comments"></div>
+ 1627  
+ 1628  <script type="text/javascript">
+ 1629:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1630:   discourseEmbedUrl =  window.location.href;
+ 1631  
+ 1632    (function() {
+ 1633      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1634:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1635      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1636    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/objects/group/index.html:
+ 1695  <hr/>
+ 1696  
+ 1697: <div id="discourse-comments"></div>
+ 1698  
+ 1699  <script type="text/javascript">
+ 1700:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1701:   discourseEmbedUrl =  window.location.href;
+ 1702  
+ 1703    (function() {
+ 1704      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1705:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1706      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1707    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/objects/groupaccess/index.html:
+ 1636  <hr/>
+ 1637  
+ 1638: <div id="discourse-comments"></div>
+ 1639  
+ 1640  <script type="text/javascript">
+ 1641:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1642:   discourseEmbedUrl =  window.location.href;
+ 1643  
+ 1644    (function() {
+ 1645      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1646:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1647      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1648    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/objects/groupconnection/index.html:
+ 1660  <hr/>
+ 1661  
+ 1662: <div id="discourse-comments"></div>
+ 1663  
+ 1664  <script type="text/javascript">
+ 1665:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1666:   discourseEmbedUrl =  window.location.href;
+ 1667  
+ 1668    (function() {
+ 1669      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1670:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1671      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1672    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/objects/groupdata/index.html:
+ 1786  <hr/>
+ 1787  
+ 1788: <div id="discourse-comments"></div>
+ 1789  
+ 1790  <script type="text/javascript">
+ 1791:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1792:   discourseEmbedUrl =  window.location.href;
+ 1793  
+ 1794    (function() {
+ 1795      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1796:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1797      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1798    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/objects/groupedge/index.html:
+ 1646  <hr/>
+ 1647  
+ 1648: <div id="discourse-comments"></div>
+ 1649  
+ 1650  <script type="text/javascript">
+ 1651:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1652:   discourseEmbedUrl =  window.location.href;
+ 1653  
+ 1654    (function() {
+ 1655      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1656:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1657      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1658    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/objects/holder/index.html:
+ 1648  <hr/>
+ 1649  
+ 1650: <div id="discourse-comments"></div>
+ 1651  
+ 1652  <script type="text/javascript">
+ 1653:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1654:   discourseEmbedUrl =  window.location.href;
+ 1655  
+ 1656    (function() {
+ 1657      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1658:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1659      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1660    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/objects/hotel/index.html:
+ 1690  <hr/>
+ 1691  
+ 1692: <div id="discourse-comments"></div>
+ 1693  
+ 1694  <script type="text/javascript">
+ 1695:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1696:   discourseEmbedUrl =  window.location.href;
+ 1697  
+ 1698    (function() {
+ 1699      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1700:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1701      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1702    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/objects/hotelbooking/index.html:
+ 1698  <hr/>
+ 1699  
+ 1700: <div id="discourse-comments"></div>
+ 1701  
+ 1702  <script type="text/javascript">
+ 1703:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1704:   discourseEmbedUrl =  window.location.href;
+ 1705  
+ 1706    (function() {
+ 1707      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1708:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1709      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1710    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/objects/hotelbookingdetail/index.html:
+ 1739  <hr/>
+ 1740  
+ 1741: <div id="discourse-comments"></div>
+ 1742  
+ 1743  <script type="text/javascript">
+ 1744:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1745:   discourseEmbedUrl =  window.location.href;
+ 1746  
+ 1747    (function() {
+ 1748      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1749:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1750      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1751    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/objects/hotelbookpayload/index.html:
+ 1698  <hr/>
+ 1699  
+ 1700: <div id="discourse-comments"></div>
+ 1701  
+ 1702  <script type="text/javascript">
+ 1703:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1704:   discourseEmbedUrl =  window.location.href;
+ 1705  
+ 1706    (function() {
+ 1707      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1708:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1709      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1710    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/objects/hotelcanceldetail/index.html:
+ 1690  <hr/>
+ 1691  
+ 1692: <div id="discourse-comments"></div>
+ 1693  
+ 1694  <script type="text/javascript">
+ 1695:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1696:   discourseEmbedUrl =  window.location.href;
+ 1697  
+ 1698    (function() {
+ 1699      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1700:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1701      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1702    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/objects/hotelcancelpayload/index.html:
+ 1698  <hr/>
+ 1699  
+ 1700: <div id="discourse-comments"></div>
+ 1701  
+ 1702  <script type="text/javascript">
+ 1703:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1704:   discourseEmbedUrl =  window.location.href;
+ 1705  
+ 1706    (function() {
+ 1707      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1708:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1709      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1710    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/objects/hotelconnection/index.html:
+ 1648  <hr/>
+ 1649  
+ 1650: <div id="discourse-comments"></div>
+ 1651  
+ 1652  <script type="text/javascript">
+ 1653:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1654:   discourseEmbedUrl =  window.location.href;
+ 1655  
+ 1656    (function() {
+ 1657      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1658:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1659      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1660    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/objects/hoteldata/index.html:
+ 1864  <hr/>
+ 1865  
+ 1866: <div id="discourse-comments"></div>
+ 1867  
+ 1868  <script type="text/javascript">
+ 1869:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1870:   discourseEmbedUrl =  window.location.href;
+ 1871  
+ 1872    (function() {
+ 1873      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1874:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1875      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1876    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/objects/hoteledge/index.html:
+ 1648  <hr/>
+ 1649  
+ 1650: <div id="discourse-comments"></div>
+ 1651  
+ 1652  <script type="text/javascript">
+ 1653:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1654:   discourseEmbedUrl =  window.location.href;
+ 1655  
+ 1656    (function() {
+ 1657      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1658:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1659      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1660    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/objects/hoteloptionquote/index.html:
+ 1732  <hr/>
+ 1733  
+ 1734: <div id="discourse-comments"></div>
+ 1735  
+ 1736  <script type="text/javascript">
+ 1737:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1738:   discourseEmbedUrl =  window.location.href;
+ 1739  
+ 1740    (function() {
+ 1741      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1742:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1743      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1744    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/objects/hoteloptionsearch/index.html:
+ 1902  <hr/>
+ 1903  
+ 1904: <div id="discourse-comments"></div>
+ 1905  
+ 1906  <script type="text/javascript">
+ 1907:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1908:   discourseEmbedUrl =  window.location.href;
+ 1909  
+ 1910    (function() {
+ 1911      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1912:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1913      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1914    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/objects/hotelquote/index.html:
+ 1698  <hr/>
+ 1699  
+ 1700: <div id="discourse-comments"></div>
+ 1701  
+ 1702  <script type="text/javascript">
+ 1703:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1704:   discourseEmbedUrl =  window.location.href;
+ 1705  
+ 1706    (function() {
+ 1707      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1708:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1709      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1710    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/objects/hotelsearch/index.html:
+ 1730  <hr/>
+ 1731  
+ 1732: <div id="discourse-comments"></div>
+ 1733  
+ 1734  <script type="text/javascript">
+ 1735:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1736:   discourseEmbedUrl =  window.location.href;
+ 1737  
+ 1738    (function() {
+ 1739      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1740:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1741      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1742    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/objects/hotelxmutation/index.html:
+ 1654  <hr/>
+ 1655  
+ 1656: <div id="discourse-comments"></div>
+ 1657  
+ 1658  <script type="text/javascript">
+ 1659:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1660:   discourseEmbedUrl =  window.location.href;
+ 1661  
+ 1662    (function() {
+ 1663      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1664:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1665      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1666    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/objects/hotelxquery/index.html:
+ 1842  <hr/>
+ 1843  
+ 1844: <div id="discourse-comments"></div>
+ 1845  
+ 1846  <script type="text/javascript">
+ 1847:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1848:   discourseEmbedUrl =  window.location.href;
+ 1849  
+ 1850    (function() {
+ 1851      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1852:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1853      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1854    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/objects/location/index.html:
+ 1690  <hr/>
+ 1691  
+ 1692: <div id="discourse-comments"></div>
+ 1693  
+ 1694  <script type="text/javascript">
+ 1695:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1696:   discourseEmbedUrl =  window.location.href;
+ 1697  
+ 1698    (function() {
+ 1699      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1700:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1701      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1702    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/objects/map/index.html:
+ 1636  <hr/>
+ 1637  
+ 1638: <div id="discourse-comments"></div>
+ 1639  
+ 1640  <script type="text/javascript">
+ 1641:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1642:   discourseEmbedUrl =  window.location.href;
+ 1643  
+ 1644    (function() {
+ 1645      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1646:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1647      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1648    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/objects/mapping/index.html:
+ 1638  <hr/>
+ 1639  
+ 1640: <div id="discourse-comments"></div>
+ 1641  
+ 1642  <script type="text/javascript">
+ 1643:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1644:   discourseEmbedUrl =  window.location.href;
+ 1645  
+ 1646    (function() {
+ 1647      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1648:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1649      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1650    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/objects/mappingcontext/index.html:
+ 1690  <hr/>
+ 1691  
+ 1692: <div id="discourse-comments"></div>
+ 1693  
+ 1694  <script type="text/javascript">
+ 1695:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1696:   discourseEmbedUrl =  window.location.href;
+ 1697  
+ 1698    (function() {
+ 1699      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1700:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1701      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1702    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/objects/mappingentity/index.html:
+ 1636  <hr/>
+ 1637  
+ 1638: <div id="discourse-comments"></div>
+ 1639  
+ 1640  <script type="text/javascript">
+ 1641:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1642:   discourseEmbedUrl =  window.location.href;
+ 1643  
+ 1644    (function() {
+ 1645      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1646:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1647      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1648    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/objects/markup/index.html:
+ 1711  <hr/>
+ 1712  
+ 1713: <div id="discourse-comments"></div>
+ 1714  
+ 1715  <script type="text/javascript">
+ 1716:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1717:   discourseEmbedUrl =  window.location.href;
+ 1718  
+ 1719    (function() {
+ 1720      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1721:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1722      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1723    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/objects/media/index.html:
+ 1688  <hr/>
+ 1689  
+ 1690: <div id="discourse-comments"></div>
+ 1691  
+ 1692  <script type="text/javascript">
+ 1693:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1694:   discourseEmbedUrl =  window.location.href;
+ 1695  
+ 1696    (function() {
+ 1697      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1698:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1699      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1700    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/objects/mediaconnection/index.html:
+ 1646  <hr/>
+ 1647  
+ 1648: <div id="discourse-comments"></div>
+ 1649  
+ 1650  <script type="text/javascript">
+ 1651:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1652:   discourseEmbedUrl =  window.location.href;
+ 1653  
+ 1654    (function() {
+ 1655      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1656:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1657      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1658    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/objects/mediadata/index.html:
+ 1646  <hr/>
+ 1647  
+ 1648: <div id="discourse-comments"></div>
+ 1649  
+ 1650  <script type="text/javascript">
+ 1651:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1652:   discourseEmbedUrl =  window.location.href;
+ 1653  
+ 1654    (function() {
+ 1655      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1656:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1657      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1658    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/objects/mediaedge/index.html:
+ 1648  <hr/>
+ 1649  
+ 1650: <div id="discourse-comments"></div>
+ 1651  
+ 1652  <script type="text/javascript">
+ 1653:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1654:   discourseEmbedUrl =  window.location.href;
+ 1655  
+ 1656    (function() {
+ 1657      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1658:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1659      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1660    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/objects/member/index.html:
+ 1716  <hr/>
+ 1717  
+ 1718: <div id="discourse-comments"></div>
+ 1719  
+ 1720  <script type="text/javascript">
+ 1721:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1722:   discourseEmbedUrl =  window.location.href;
+ 1723  
+ 1724    (function() {
+ 1725      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1726:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1727      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1728    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/objects/memberconnection/index.html:
+ 1667  <hr/>
+ 1668  
+ 1669: <div id="discourse-comments"></div>
+ 1670  
+ 1671  <script type="text/javascript">
+ 1672:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1673:   discourseEmbedUrl =  window.location.href;
+ 1674  
+ 1675    (function() {
+ 1676      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1677:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1678      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1679    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/objects/memberdata/index.html:
+ 1730  <hr/>
+ 1731  
+ 1732: <div id="discourse-comments"></div>
+ 1733  
+ 1734  <script type="text/javascript">
+ 1735:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1736:   discourseEmbedUrl =  window.location.href;
+ 1737  
+ 1738    (function() {
+ 1739      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1740:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1741      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1742    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/objects/memberedge/index.html:
+ 1646  <hr/>
+ 1647  
+ 1648: <div id="discourse-comments"></div>
+ 1649  
+ 1650  <script type="text/javascript">
+ 1651:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1652:   discourseEmbedUrl =  window.location.href;
+ 1653  
+ 1654    (function() {
+ 1655      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1656:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1657      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1658    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/objects/occupancy/index.html:
+ 1636  <hr/>
+ 1637  
+ 1638: <div id="discourse-comments"></div>
+ 1639  
+ 1640  <script type="text/javascript">
+ 1641:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1642:   discourseEmbedUrl =  window.location.href;
+ 1643  
+ 1644    (function() {
+ 1645      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1646:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1647      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1648    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/objects/organization/index.html:
+ 1688  <hr/>
+ 1689  
+ 1690: <div id="discourse-comments"></div>
+ 1691  
+ 1692  <script type="text/javascript">
+ 1693:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1694:   discourseEmbedUrl =  window.location.href;
+ 1695  
+ 1696    (function() {
+ 1697      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1698:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1699      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1700    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/objects/organizationconnection/index.html:
+ 1646  <hr/>
+ 1647  
+ 1648: <div id="discourse-comments"></div>
+ 1649  
+ 1650  <script type="text/javascript">
+ 1651:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1652:   discourseEmbedUrl =  window.location.href;
+ 1653  
+ 1654    (function() {
+ 1655      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1656:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1657      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1658    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/objects/organizationdata/index.html:
+ 1828  <hr/>
+ 1829  
+ 1830: <div id="discourse-comments"></div>
+ 1831  
+ 1832  <script type="text/javascript">
+ 1833:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1834:   discourseEmbedUrl =  window.location.href;
+ 1835  
+ 1836    (function() {
+ 1837      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1838:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1839      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1840    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/objects/organizationedge/index.html:
+ 1646  <hr/>
+ 1647  
+ 1648: <div id="discourse-comments"></div>
+ 1649  
+ 1650  <script type="text/javascript">
+ 1651:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1652:   discourseEmbedUrl =  window.location.href;
+ 1653  
+ 1654    (function() {
+ 1655      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1656:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1657      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1658    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/objects/pageinfo/index.html:
+ 1744  <hr/>
+ 1745  
+ 1746: <div id="discourse-comments"></div>
+ 1747  
+ 1748  <script type="text/javascript">
+ 1749:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1750:   discourseEmbedUrl =  window.location.href;
+ 1751  
+ 1752    (function() {
+ 1753      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1754:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1755      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1756    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/objects/parameter/index.html:
+ 1638  <hr/>
+ 1639  
+ 1640: <div id="discourse-comments"></div>
+ 1641  
+ 1642  <script type="text/javascript">
+ 1643:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1644:   discourseEmbedUrl =  window.location.href;
+ 1645  
+ 1646    (function() {
+ 1647      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1648:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1649      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1650    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/objects/pax/index.html:
+ 1622  <hr/>
+ 1623  
+ 1624: <div id="discourse-comments"></div>
+ 1625  
+ 1626  <script type="text/javascript">
+ 1627:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1628:   discourseEmbedUrl =  window.location.href;
+ 1629  
+ 1630    (function() {
+ 1631      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1632:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1633      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1634    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/objects/price/index.html:
+ 1766  <hr/>
+ 1767  
+ 1768: <div id="discourse-comments"></div>
+ 1769  
+ 1770  <script type="text/javascript">
+ 1771:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1772:   discourseEmbedUrl =  window.location.href;
+ 1773  
+ 1774    (function() {
+ 1775      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1776:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1777      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1778    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/objects/pricebreakdown/index.html:
+ 1650  <hr/>
+ 1651  
+ 1652: <div id="discourse-comments"></div>
+ 1653  
+ 1654  <script type="text/javascript">
+ 1655:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1656:   discourseEmbedUrl =  window.location.href;
+ 1657  
+ 1658    (function() {
+ 1659      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1660:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1661      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1662    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/objects/product/index.html:
+ 1688  <hr/>
+ 1689  
+ 1690: <div id="discourse-comments"></div>
+ 1691  
+ 1692  <script type="text/javascript">
+ 1693:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1694:   discourseEmbedUrl =  window.location.href;
+ 1695  
+ 1696    (function() {
+ 1697      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1698:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1699      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1700    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/objects/productconnection/index.html:
+ 1653  <hr/>
+ 1654  
+ 1655: <div id="discourse-comments"></div>
+ 1656  
+ 1657  <script type="text/javascript">
+ 1658:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1659:   discourseEmbedUrl =  window.location.href;
+ 1660  
+ 1661    (function() {
+ 1662      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1663:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1664      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1665    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/objects/productdata/index.html:
+ 1702  <hr/>
+ 1703  
+ 1704: <div id="discourse-comments"></div>
+ 1705  
+ 1706  <script type="text/javascript">
+ 1707:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1708:   discourseEmbedUrl =  window.location.href;
+ 1709  
+ 1710    (function() {
+ 1711      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1712:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1713      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1714    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/objects/productedge/index.html:
+ 1646  <hr/>
+ 1647  
+ 1648: <div id="discourse-comments"></div>
+ 1649  
+ 1650  <script type="text/javascript">
+ 1651:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1652:   discourseEmbedUrl =  window.location.href;
+ 1653  
+ 1654    (function() {
+ 1655      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1656:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1657      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1658    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/objects/promotion/index.html:
+ 1664  <hr/>
+ 1665  
+ 1666: <div id="discourse-comments"></div>
+ 1667  
+ 1668  <script type="text/javascript">
+ 1669:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1670:   discourseEmbedUrl =  window.location.href;
+ 1671  
+ 1672    (function() {
+ 1673      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1674:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1675      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1676    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/objects/quote/index.html:
+ 1638  <hr/>
+ 1639  
+ 1640: <div id="discourse-comments"></div>
+ 1641  
+ 1642  <script type="text/javascript">
+ 1643:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1644:   discourseEmbedUrl =  window.location.href;
+ 1645  
+ 1646    (function() {
+ 1647      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1648:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1649      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1650    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/objects/rateplan/index.html:
+ 1664  <hr/>
+ 1665  
+ 1666: <div id="discourse-comments"></div>
+ 1667  
+ 1668  <script type="text/javascript">
+ 1669:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1670:   discourseEmbedUrl =  window.location.href;
+ 1671  
+ 1672    (function() {
+ 1673      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1674:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1675      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1676    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/objects/reference/index.html:
+ 1655  <hr/>
+ 1656  
+ 1657: <div id="discourse-comments"></div>
+ 1658  
+ 1659  <script type="text/javascript">
+ 1660:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1661:   discourseEmbedUrl =  window.location.href;
+ 1662  
+ 1663    (function() {
+ 1664      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1665:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1666      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1667    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/objects/requeststats/index.html:
+ 1725  <hr/>
+ 1726  
+ 1727: <div id="discourse-comments"></div>
+ 1728  
+ 1729  <script type="text/javascript">
+ 1730:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1731:   discourseEmbedUrl =  window.location.href;
+ 1732  
+ 1733    (function() {
+ 1734      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1735:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1736      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1737    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/objects/resort/index.html:
+ 1662  <hr/>
+ 1663  
+ 1664: <div id="discourse-comments"></div>
+ 1665  
+ 1666  <script type="text/javascript">
+ 1667:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1668:   discourseEmbedUrl =  window.location.href;
+ 1669  
+ 1670    (function() {
+ 1671      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1672:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1673      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1674    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/objects/resource/index.html:
+ 1688  <hr/>
+ 1689  
+ 1690: <div id="discourse-comments"></div>
+ 1691  
+ 1692  <script type="text/javascript">
+ 1693:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1694:   discourseEmbedUrl =  window.location.href;
+ 1695  
+ 1696    (function() {
+ 1697      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1698:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1699      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1700    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/objects/resourceconnection/index.html:
+ 1660  <hr/>
+ 1661  
+ 1662: <div id="discourse-comments"></div>
+ 1663  
+ 1664  <script type="text/javascript">
+ 1665:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1666:   discourseEmbedUrl =  window.location.href;
+ 1667  
+ 1668    (function() {
+ 1669      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1670:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1671      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1672    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/objects/resourcedata/index.html:
+ 1758  <hr/>
+ 1759  
+ 1760: <div id="discourse-comments"></div>
+ 1761  
+ 1762  <script type="text/javascript">
+ 1763:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1764:   discourseEmbedUrl =  window.location.href;
+ 1765  
+ 1766    (function() {
+ 1767      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1768:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1769      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1770    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/objects/resourceedge/index.html:
+ 1646  <hr/>
+ 1647  
+ 1648: <div id="discourse-comments"></div>
+ 1649  
+ 1650  <script type="text/javascript">
+ 1651:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1652:   discourseEmbedUrl =  window.location.href;
+ 1653  
+ 1654    (function() {
+ 1655      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1656:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1657      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1658    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/objects/role/index.html:
+ 1688  <hr/>
+ 1689  
+ 1690: <div id="discourse-comments"></div>
+ 1691  
+ 1692  <script type="text/javascript">
+ 1693:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1694:   discourseEmbedUrl =  window.location.href;
+ 1695  
+ 1696    (function() {
+ 1697      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1698:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1699      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1700    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/objects/roleconnection/index.html:
+ 1653  <hr/>
+ 1654  
+ 1655: <div id="discourse-comments"></div>
+ 1656  
+ 1657  <script type="text/javascript">
+ 1658:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1659:   discourseEmbedUrl =  window.location.href;
+ 1660  
+ 1661    (function() {
+ 1662      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1663:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1664      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1665    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/objects/roledata/index.html:
+ 1828  <hr/>
+ 1829  
+ 1830: <div id="discourse-comments"></div>
+ 1831  
+ 1832  <script type="text/javascript">
+ 1833:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1834:   discourseEmbedUrl =  window.location.href;
+ 1835  
+ 1836    (function() {
+ 1837      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1838:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1839      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1840    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/objects/roleedge/index.html:
+ 1646  <hr/>
+ 1647  
+ 1648: <div id="discourse-comments"></div>
+ 1649  
+ 1650  <script type="text/javascript">
+ 1651:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1652:   discourseEmbedUrl =  window.location.href;
+ 1653  
+ 1654    (function() {
+ 1655      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1656:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1657      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1658    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/objects/room/index.html:
+ 1734  <hr/>
+ 1735  
+ 1736: <div id="discourse-comments"></div>
+ 1737  
+ 1738  <script type="text/javascript">
+ 1739:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1740:   discourseEmbedUrl =  window.location.href;
+ 1741  
+ 1742    (function() {
+ 1743      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1744:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1745      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1746    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/objects/roomcriteria/index.html:
+ 1622  <hr/>
+ 1623  
+ 1624: <div id="discourse-comments"></div>
+ 1625  
+ 1626  <script type="text/javascript">
+ 1627:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1628:   discourseEmbedUrl =  window.location.href;
+ 1629  
+ 1630    (function() {
+ 1631      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1632:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1633      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1634    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/objects/roomprice/index.html:
+ 1648  <hr/>
+ 1649  
+ 1650: <div id="discourse-comments"></div>
+ 1651  
+ 1652  <script type="text/javascript">
+ 1653:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1654:   discourseEmbedUrl =  window.location.href;
+ 1655  
+ 1656    (function() {
+ 1657      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1658:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1659      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1660    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/objects/rule/index.html:
+ 1662  <hr/>
+ 1663  
+ 1664: <div id="discourse-comments"></div>
+ 1665  
+ 1666  <script type="text/javascript">
+ 1667:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1668:   discourseEmbedUrl =  window.location.href;
+ 1669  
+ 1670    (function() {
+ 1671      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1672:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1673      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1674    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/objects/search/index.html:
+ 1674  <hr/>
+ 1675  
+ 1676: <div id="discourse-comments"></div>
+ 1677  
+ 1678  <script type="text/javascript">
+ 1679:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1680:   discourseEmbedUrl =  window.location.href;
+ 1681  
+ 1682    (function() {
+ 1683      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1684:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1685      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1686    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/objects/servicestatus/index.html:
+ 1662  <hr/>
+ 1663  
+ 1664: <div id="discourse-comments"></div>
+ 1665  
+ 1666  <script type="text/javascript">
+ 1667:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1668:   discourseEmbedUrl =  window.location.href;
+ 1669  
+ 1670    (function() {
+ 1671      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1672:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1673      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1674    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/objects/stat/index.html:
+ 1674  <hr/>
+ 1675  
+ 1676: <div id="discourse-comments"></div>
+ 1677  
+ 1678  <script type="text/javascript">
+ 1679:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1680:   discourseEmbedUrl =  window.location.href;
+ 1681  
+ 1682    (function() {
+ 1683      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1684:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1685      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1686    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/objects/stataccess/index.html:
+ 1676  <hr/>
+ 1677  
+ 1678: <div id="discourse-comments"></div>
+ 1679  
+ 1680  <script type="text/javascript">
+ 1681:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1682:   discourseEmbedUrl =  window.location.href;
+ 1683  
+ 1684    (function() {
+ 1685      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1686:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1687      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1688    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/objects/stattransaction/index.html:
+ 1676  <hr/>
+ 1677  
+ 1678: <div id="discourse-comments"></div>
+ 1679  
+ 1680  <script type="text/javascript">
+ 1681:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1682:   discourseEmbedUrl =  window.location.href;
+ 1683  
+ 1684    (function() {
+ 1685      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1686:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1687      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1688    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/objects/supplement/index.html:
+ 1794  <hr/>
+ 1795  
+ 1796: <div id="discourse-comments"></div>
+ 1797  
+ 1798  <script type="text/javascript">
+ 1799:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1800:   discourseEmbedUrl =  window.location.href;
+ 1801  
+ 1802    (function() {
+ 1803      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1804:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1805      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1806    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/objects/supplier/index.html:
+ 1695  <hr/>
+ 1696  
+ 1697: <div id="discourse-comments"></div>
+ 1698  
+ 1699  <script type="text/javascript">
+ 1700:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1701:   discourseEmbedUrl =  window.location.href;
+ 1702  
+ 1703    (function() {
+ 1704      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1705:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1706      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1707    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/objects/supplierdata/index.html:
+ 1691  <hr/>
+ 1692  
+ 1693: <div id="discourse-comments"></div>
+ 1694  
+ 1695  <script type="text/javascript">
+ 1696:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1697:   discourseEmbedUrl =  window.location.href;
+ 1698  
+ 1699    (function() {
+ 1700      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1701:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1702      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1703    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/objects/suppliergroup/index.html:
+ 1636  <hr/>
+ 1637  
+ 1638: <div id="discourse-comments"></div>
+ 1639  
+ 1640  <script type="text/javascript">
+ 1641:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1642:   discourseEmbedUrl =  window.location.href;
+ 1643  
+ 1644    (function() {
+ 1645      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1646:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1647      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1648    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/objects/surcharge/index.html:
+ 1668  <hr/>
+ 1669  
+ 1670: <div id="discourse-comments"></div>
+ 1671  
+ 1672  <script type="text/javascript">
+ 1673:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1674:   discourseEmbedUrl =  window.location.href;
+ 1675  
+ 1676    (function() {
+ 1677      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1678:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1679      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1680    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/objects/timeout/index.html:
+ 1660  <hr/>
+ 1661  
+ 1662: <div id="discourse-comments"></div>
+ 1663  
+ 1664  <script type="text/javascript">
+ 1665:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1666:   discourseEmbedUrl =  window.location.href;
+ 1667  
+ 1668    (function() {
+ 1669      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1670:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1671      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1672    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/objects/transactions/index.html:
+ 1650  <hr/>
+ 1651  
+ 1652: <div id="discourse-comments"></div>
+ 1653  
+ 1654  <script type="text/javascript">
+ 1655:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1656:   discourseEmbedUrl =  window.location.href;
+ 1657  
+ 1658    (function() {
+ 1659      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1660:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1661      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1662    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/objects/urls/index.html:
+ 1676  <hr/>
+ 1677  
+ 1678: <div id="discourse-comments"></div>
+ 1679  
+ 1680  <script type="text/javascript">
+ 1681:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1682:   discourseEmbedUrl =  window.location.href;
+ 1683  
+ 1684    (function() {
+ 1685      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1686:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1687      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1688    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/objects/warning/index.html:
+ 1650  <hr/>
+ 1651  
+ 1652: <div id="discourse-comments"></div>
+ 1653  
+ 1654  <script type="text/javascript">
+ 1655:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1656:   discourseEmbedUrl =  window.location.href;
+ 1657  
+ 1658    (function() {
+ 1659      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1660:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1661      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1662    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/scalars/boolean/index.html:
+ 1802  <hr/>
+ 1803  
+ 1804: <div id="discourse-comments"></div>
+ 1805  
+ 1806  <script type="text/javascript">
+ 1807:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1808:   discourseEmbedUrl =  window.location.href;
+ 1809  
+ 1810    (function() {
+ 1811      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1812:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1813      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1814    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/scalars/country/index.html:
+ 1642  <hr/>
+ 1643  
+ 1644: <div id="discourse-comments"></div>
+ 1645  
+ 1646  <script type="text/javascript">
+ 1647:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1648:   discourseEmbedUrl =  window.location.href;
+ 1649  
+ 1650    (function() {
+ 1651      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1652:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1653      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1654    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/scalars/currency/index.html:
+ 1678  <hr/>
+ 1679  
+ 1680: <div id="discourse-comments"></div>
+ 1681  
+ 1682  <script type="text/javascript">
+ 1683:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1684:   discourseEmbedUrl =  window.location.href;
+ 1685  
+ 1686    (function() {
+ 1687      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1688:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1689      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1690    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/scalars/date/index.html:
+ 1663  <hr/>
+ 1664  
+ 1665: <div id="discourse-comments"></div>
+ 1666  
+ 1667  <script type="text/javascript">
+ 1668:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1669:   discourseEmbedUrl =  window.location.href;
+ 1670  
+ 1671    (function() {
+ 1672      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1673:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1674      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1675    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/scalars/datetime/index.html:
+ 1718  <hr/>
+ 1719  
+ 1720: <div id="discourse-comments"></div>
+ 1721  
+ 1722  <script type="text/javascript">
+ 1723:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1724:   discourseEmbedUrl =  window.location.href;
+ 1725  
+ 1726    (function() {
+ 1727      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1728:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1729      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1730    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/scalars/float/index.html:
+ 1669  <hr/>
+ 1670  
+ 1671: <div id="discourse-comments"></div>
+ 1672  
+ 1673  <script type="text/javascript">
+ 1674:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1675:   discourseEmbedUrl =  window.location.href;
+ 1676  
+ 1677    (function() {
+ 1678      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1679:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1680      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1681    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/scalars/id/index.html:
+ 1809  <hr/>
+ 1810  
+ 1811: <div id="discourse-comments"></div>
+ 1812  
+ 1813  <script type="text/javascript">
+ 1814:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1815:   discourseEmbedUrl =  window.location.href;
+ 1816  
+ 1817    (function() {
+ 1818      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1819:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1820      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1821    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/scalars/int/index.html:
+ 1738  <hr/>
+ 1739  
+ 1740: <div id="discourse-comments"></div>
+ 1741  
+ 1742  <script type="text/javascript">
+ 1743:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1744:   discourseEmbedUrl =  window.location.href;
+ 1745  
+ 1746    (function() {
+ 1747      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1748:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1749      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1750    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/scalars/json/index.html:
+ 1613  <hr/>
+ 1614  
+ 1615: <div id="discourse-comments"></div>
+ 1616  
+ 1617  <script type="text/javascript">
+ 1618:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1619:   discourseEmbedUrl =  window.location.href;
+ 1620  
+ 1621    (function() {
+ 1622      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1623:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1624      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1625    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/scalars/language/index.html:
+ 1677  <hr/>
+ 1678  
+ 1679: <div id="discourse-comments"></div>
+ 1680  
+ 1681  <script type="text/javascript">
+ 1682:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1683:   discourseEmbedUrl =  window.location.href;
+ 1684  
+ 1685    (function() {
+ 1686      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1687:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1688      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1689    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/scalars/string/index.html:
+ 2208  <hr/>
+ 2209  
+ 2210: <div id="discourse-comments"></div>
+ 2211  
+ 2212  <script type="text/javascript">
+ 2213:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 2214:   discourseEmbedUrl =  window.location.href;
+ 2215  
+ 2216    (function() {
+ 2217      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 2218:       d.src = discourseUrl + 'javascripts/embed.js';
+ 2219      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 2220    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/scalars/uri/index.html:
+ 1634  <hr/>
+ 1635  
+ 1636: <div id="discourse-comments"></div>
+ 1637  
+ 1638  <script type="text/javascript">
+ 1639:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1640:   discourseEmbedUrl =  window.location.href;
+ 1641  
+ 1642    (function() {
+ 1643      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1644:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1645      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1646    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/schema/mutation/index.html:
+ 1726  <hr/>
+ 1727  
+ 1728: <div id="discourse-comments"></div>
+ 1729  
+ 1730  <script type="text/javascript">
+ 1731:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1732:   discourseEmbedUrl =  window.location.href;
+ 1733  
+ 1734    (function() {
+ 1735      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1736:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1737      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1738    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/reference/schema/query/index.html:
+ 1696  <hr/>
+ 1697  
+ 1698: <div id="discourse-comments"></div>
+ 1699  
+ 1700  <script type="text/javascript">
+ 1701:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1702:   discourseEmbedUrl =  window.location.href;
+ 1703  
+ 1704    (function() {
+ 1705      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1706:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1707      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1708    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/resources/release-notes/index.html:
+ 1586  <hr/>
+ 1587  
+ 1588: <div id="discourse-comments"></div>
+ 1589  
+ 1590  <script type="text/javascript">
+ 1591:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1592:   discourseEmbedUrl =  window.location.href;
+ 1593  
+ 1594    (function() {
+ 1595      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1596:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1597      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1598    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/security/overview/index.html:
+ 1641  <hr/>
+ 1642  
+ 1643: <div id="discourse-comments"></div>
+ 1644  
+ 1645  <script type="text/javascript">
+ 1646:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1647:   discourseEmbedUrl =  window.location.href;
+ 1648  
+ 1649    (function() {
+ 1650      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1651:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1652      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1653    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/tutorials/ota-site/index.html:
+ 1585  <hr/>
+ 1586  
+ 1587: <div id="discourse-comments"></div>
+ 1588  
+ 1589  <script type="text/javascript">
+ 1590:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1591:   discourseEmbedUrl =  window.location.href;
+ 1592  
+ 1593    (function() {
+ 1594      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1595:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1596      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1597    })();
+
+/Users/esperanza/Documents/devel/documentation-site/public/travelgatex/tutorials/stats-dashboard/index.html:
+ 1585  <hr/>
+ 1586  
+ 1587: <div id="discourse-comments"></div>
+ 1588  
+ 1589  <script type="text/javascript">
+ 1590:   var discourseUrl = 'http:\/\/community.travelgatex.com\/',
+ 1591:   discourseEmbedUrl =  window.location.href;
+ 1592  
+ 1593    (function() {
+ 1594      var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+ 1595:       d.src = discourseUrl + 'javascripts/embed.js';
+ 1596      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+ 1597    })();
+
+1026 matches across 255 files
+
+
+Searching 0 files for "discourse"
+
+0 matches
+
+Searching 0 files for "discourse"
+
+0 matches

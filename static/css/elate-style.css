@@ -628,6 +628,7 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
   font-size: 45px;
   font-weight: 300;
+  margin-top: 26px;
 }
 
 #fh5co-welcome .wrap-inner p{

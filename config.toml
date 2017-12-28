@@ -292,7 +292,7 @@ discourseUrl = "http://community.travelgatex.com/"
       from = 0
       to = 623
       interval = 50
-      speed = 5000
+      speed = 2000
 
     [[params.counters.item]]
       description = "Searches per Minute"
@@ -300,7 +300,7 @@ discourseUrl = "http://community.travelgatex.com/"
       from = 0
       to = 623456
       interval = 50
-      speed = 5000
+      speed = 2000
 
     [[params.counters.item]]
       description = "Bookings Per Day"
@@ -308,7 +308,7 @@ discourseUrl = "http://community.travelgatex.com/"
       from = 0
       to = 23412
       interval = 50
-      speed = 5000
+      speed = 2000
 
     [[params.counters.item]]
       description = "Happy clients"
@@ -316,7 +316,7 @@ discourseUrl = "http://community.travelgatex.com/"
       from = 0
       to = 132
       interval = 50
-      speed = 5000
+      speed = 2000
 
   # Contact section
   [params.contact]
