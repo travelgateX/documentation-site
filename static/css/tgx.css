@@ -68,13 +68,10 @@ nav ul.topics li ul{
   font-size: 14px;
 }
 
-ol ol, ol ul, ul ol, ul ul{
-  padding-left: 13px !important;
-}
-
 img[src$="#center"] {
+  width: auto;
   display: block;
-  margin: 0.7rem auto; /* you can replace the vertical '0.7rem' by whatever floats your boat, but keep the horizontal 'auto' for this to work */
+  margin: 3rem auto; /* you can replace the vertical '0.7rem' by whatever floats your boat, but keep the horizontal 'auto' for this to work */
   /* whatever else styles you fancy here */
 }
 
@@ -97,7 +94,7 @@ img[src$="#floatright"] {
 }
 
 #TableOfContents ul {
-  padding: 5px;
+  padding: 5px 7px;
   margin-bottom: 0;
 }
 
