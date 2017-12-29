@@ -9,7 +9,7 @@
 }
 
 #navbar .menu-nav{
-  margin-top: 53px;
+  margin-top: 62px;
   position: relative;
   overflow-y: auto;
 }
@@ -238,7 +238,7 @@ a:hover{
 
 .iso-input-search {
   position: fixed;
-  margin-left: 27%;
+  left: 30%;
   width: 100%;
   z-index: 9;
 }
@@ -254,10 +254,10 @@ a:hover{
   margin-bottom: 20px;
   border: none !important;
   border-bottom: 1px solid rgba(204, 213, 218, 0.6) !important;
-  padding: 14px 73px;
+  padding: 14px 45px;
 }
 .iso-input-search .ico-label .fa {
-  padding: 17px 46px;
+  padding: 17px;
   color: #b7c7cf;
   font-size: 19px;
 }
@@ -872,4 +872,15 @@ table {
 .alert-danger,
 .alert-warning {
   border-radius: 2px !important;
+}
+
+.autocomplete-suggestions{
+  border: 1px solid rgba(204, 213, 218, 0.6) !important;
+  position: fixed;
+  left: 30% !important;
+  width: 69% !important;
+  top: 114px !important;
+  z-index: 9;
+  max-height: 50%;
+  overflow-y: scroll;
 }
