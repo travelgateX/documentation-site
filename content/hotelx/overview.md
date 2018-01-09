@@ -9,7 +9,7 @@ alwaysopen = false
 
 HotelX is the ultimate connectivity solution, it not only _connects_ you to multiple `Sellers`, but also _adds_ business logic _solving_ most of the problems commonly found in the travel business in an **elegant and efficient** way.
 
-{{< figure src="/images/connectx_diagram.png#center" alt="High Level ConnectX Architecture" width="500px" attr="" >}}
+{{< figure src="/images/connectx_diagram.png#center" alt="High Level ConnectX Architecture" attr="" >}}
 
 Each and every layer discribed in the this figure is explained as follows:
 
