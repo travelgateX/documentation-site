@@ -4,10 +4,18 @@
   "weight": 1,
   "fields": [
     {
+      "typeString": "PluginType!",
+      "name": "type",
+      "url": "/travelgatex/reference/enums/plugintype",
+      "description": "type of the plugins to execute",
+      "isDeprecated": "",
+      "args": null
+    },
+    {
       "typeString": "String!",
       "name": "name",
       "url": "/travelgatex/reference/scalars/string",
-      "description": "Name plugin to execute.",
+      "description": "name of plugin to execute",
       "isDeprecated": "",
       "args": null
     },

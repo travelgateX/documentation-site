@@ -13,7 +13,7 @@
     },
     {
       "typeString": "[PluginsInput!]",
-      "name": "plugins",
+      "name": "pluginsType",
       "url": "/travelgatex/reference/inputobjects/pluginsinput",
       "description": "",
       "isDeprecated": "",

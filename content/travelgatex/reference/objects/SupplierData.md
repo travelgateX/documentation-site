@@ -4,9 +4,9 @@
   "weight": 1,
   "fields": [
     {
-      "typeString": "String!",
+      "typeString": "ID!",
       "name": "code",
-      "url": "/travelgatex/reference/scalars/string",
+      "url": "/travelgatex/reference/scalars/id",
       "description": "unique identifier of a supplier",
       "isDeprecated": "",
       "args": null
@@ -20,9 +20,9 @@
       "args": null
     },
     {
-      "typeString": "String!",
+      "typeString": "ID!",
       "name": "dll",
-      "url": "/travelgatex/reference/scalars/string",
+      "url": "/travelgatex/reference/scalars/id",
       "description": "instance to which this supllier is connected",
       "isDeprecated": "",
       "args": null
@@ -31,7 +31,7 @@
       "typeString": "ID!",
       "name": "hotelCodes",
       "url": "/travelgatex/reference/scalars/id",
-      "description": "accesses(first: Int, last: Int, before: String, after:String, criterial: criterialInput): AccessConnection",
+      "description": "accesses(first: Int, Last: Int, before: String, after:String, criterial: criterialInput): AccessConnection",
       "isDeprecated": "",
       "args": [
         {

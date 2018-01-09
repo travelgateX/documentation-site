@@ -22,6 +22,11 @@
   ],
   "requireby": [
     {
+      "name": "AdminQuery",
+      "description": "",
+      "url": "/travelgatex/reference/objects/adminquery"
+    },
+    {
       "name": "MemberData",
       "description": "",
       "url": "/travelgatex/reference/objects/memberdata"
@@ -30,11 +35,6 @@
       "name": "APIData",
       "description": "",
       "url": "/travelgatex/reference/objects/apidata"
-    },
-    {
-      "name": "AdminQuery",
-      "description": "",
-      "url": "/travelgatex/reference/objects/adminquery"
     }
   ],
   "enumValues": null,

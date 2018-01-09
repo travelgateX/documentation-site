@@ -22,6 +22,11 @@
       "name": "HotelOptionQuote",
       "description": "Contains information about quote.",
       "url": "/travelgatex/reference/objects/hoteloptionquote"
+    },
+    {
+      "name": "HotelBookingDetail",
+      "description": "Contains information about booking.",
+      "url": "/travelgatex/reference/objects/hotelbookingdetail"
     }
   ],
   "enumValues": null,

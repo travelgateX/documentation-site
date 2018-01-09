@@ -5,6 +5,21 @@
   "fields": null,
   "requireby": [
     {
+      "name": "HotelData",
+      "description": "Hotel data",
+      "url": "/travelgatex/reference/objects/hoteldata"
+    },
+    {
+      "name": "PageInfo",
+      "description": "",
+      "url": "/travelgatex/reference/objects/pageinfo"
+    },
+    {
+      "name": "Destination",
+      "description": "Destination type",
+      "url": "/travelgatex/reference/objects/destination"
+    },
+    {
       "name": "HotelSettingsInput",
       "description": "Settings that you can edit for this avail. Values are loaded by default in our Back Office.",
       "url": "/travelgatex/reference/inputobjects/hotelsettingsinput"
@@ -55,19 +70,29 @@
       "url": "/travelgatex/reference/objects/cancelpolicy"
     },
     {
-      "name": "HotelData",
-      "description": "Hotel data",
-      "url": "/travelgatex/reference/objects/hoteldata"
-    },
-    {
-      "name": "PageInfo",
+      "name": "OrganizationData",
       "description": "",
-      "url": "/travelgatex/reference/objects/pageinfo"
+      "url": "/travelgatex/reference/objects/organizationdata"
     },
     {
-      "name": "Destination",
-      "description": "Destination type",
-      "url": "/travelgatex/reference/objects/destination"
+      "name": "GroupCommonData",
+      "description": "",
+      "url": "/travelgatex/reference/interfaces/groupcommondata"
+    },
+    {
+      "name": "Member",
+      "description": "",
+      "url": "/travelgatex/reference/objects/member"
+    },
+    {
+      "name": "GroupData",
+      "description": "",
+      "url": "/travelgatex/reference/objects/groupdata"
+    },
+    {
+      "name": "RoleData",
+      "description": "",
+      "url": "/travelgatex/reference/objects/roledata"
     },
     {
       "name": "Mutation",
@@ -80,6 +105,11 @@
       "url": "/travelgatex/reference/inputobjects/deltapriceinput"
     },
     {
+      "name": "AccessData",
+      "description": "",
+      "url": "/travelgatex/reference/objects/accessdata"
+    },
+    {
       "name": "SupplierData",
       "description": "",
       "url": "/travelgatex/reference/objects/supplierdata"
@@ -88,11 +118,6 @@
       "name": "SupplierGroup",
       "description": "group related to a supplier",
       "url": "/travelgatex/reference/objects/suppliergroup"
-    },
-    {
-      "name": "AccessData",
-      "description": "",
-      "url": "/travelgatex/reference/objects/accessdata"
     },
     {
       "name": "ConnectUser",
@@ -133,16 +158,6 @@
       "name": "IdAccessConfigurationInput",
       "description": "",
       "url": "/travelgatex/reference/inputobjects/idaccessconfigurationinput"
-    },
-    {
-      "name": "Member",
-      "description": "",
-      "url": "/travelgatex/reference/objects/member"
-    },
-    {
-      "name": "RoleData",
-      "description": "",
-      "url": "/travelgatex/reference/objects/roledata"
     }
   ],
   "enumValues": null,

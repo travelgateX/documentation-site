@@ -12,26 +12,32 @@
   ],
   "enumValues": [
     {
-      "name": "AGGREGATE_ACCESS",
-      "description": "Aggregate Access Response.",
+      "name": "REQUEST",
+      "description": "Plugins executed after Buyer requests message to HotelX",
       "isDeprecated": false,
       "deprecationReason": null
     },
     {
-      "name": "AGGREGATE",
-      "description": "Aggregate Response.",
+      "name": "REQUEST_ACCESS",
+      "description": "Plugins executed before sending request to Supplier using Access and after Accesses have been calculated",
       "isDeprecated": false,
       "deprecationReason": null
     },
     {
-      "name": "MAPPING_ROOM",
-      "description": "Room code and descriptions mapping",
+      "name": "RESPONSE_OPTION",
+      "description": "Plugins executed after Supplier responds message. For every option returned",
       "isDeprecated": false,
       "deprecationReason": null
     },
     {
-      "name": "MARKUP",
-      "description": "Markup application",
+      "name": "RESPONSE_ACCESS",
+      "description": "Plugins executed after all Access options has been responded",
+      "isDeprecated": false,
+      "deprecationReason": null
+    },
+    {
+      "name": "RESPONSE",
+      "description": "Plugins executed before HotelX responds message to to Buyer",
       "isDeprecated": false,
       "deprecationReason": null
     }

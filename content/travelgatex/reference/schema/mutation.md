@@ -12,6 +12,14 @@
       "args": null
     },
     {
+      "typeString": "AdminMutation",
+      "name": "admin",
+      "url": "/travelgatex/reference/objects/adminmutation",
+      "description": "",
+      "isDeprecated": "",
+      "args": null
+    },
+    {
       "typeString": "HotelBookPayload",
       "name": "hotelBook",
       "url": "/travelgatex/reference/objects/hotelbookpayload",

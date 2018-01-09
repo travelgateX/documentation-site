@@ -15,7 +15,7 @@
       "typeString": "Boolean",
       "name": "useContext",
       "url": "/travelgatex/reference/scalars/boolean",
-      "description": "Indicates if you want use context, or not, by default is true.",
+      "description": "Indicates if you want use context, or not, by default is true.\n@deprecated(reason: \"deprecated from 2017-12-12. Redundant.\")",
       "isDeprecated": "",
       "args": null
     },
@@ -63,7 +63,7 @@
       "typeString": "[PluginStepInput!]",
       "name": "plugins",
       "url": "/travelgatex/reference/inputobjects/pluginstepinput",
-      "description": "Array of pluggins to execute.",
+      "description": "Array of plugins to execute.",
       "isDeprecated": "",
       "args": null
     }

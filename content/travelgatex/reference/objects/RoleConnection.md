@@ -22,14 +22,14 @@
   ],
   "requireby": [
     {
-      "name": "ResourceData",
-      "description": "",
-      "url": "/travelgatex/reference/objects/resourcedata"
-    },
-    {
       "name": "AdminQuery",
       "description": "",
       "url": "/travelgatex/reference/objects/adminquery"
+    },
+    {
+      "name": "ResourceData",
+      "description": "",
+      "url": "/travelgatex/reference/objects/resourcedata"
     }
   ],
   "enumValues": null,

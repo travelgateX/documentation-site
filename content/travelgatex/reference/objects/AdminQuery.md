@@ -7,13 +7,13 @@
       "typeString": "OrganizationConnection!",
       "name": "organizations",
       "url": "/travelgatex/reference/objects/organizationconnection",
-      "description": "",
+      "description": "Organizations list. Specify organization codes to filter organizations.",
       "isDeprecated": "",
       "args": [
         {
-          "typeString": "[String!]",
+          "typeString": "[ID!]",
           "name": "codes",
-          "url": "/travelgatex/reference/scalars/string",
+          "url": "/travelgatex/reference/scalars/id",
           "description": "",
           "isDeprecated": ""
         },
@@ -49,15 +49,15 @@
     },
     {
       "typeString": "ProductConnection!",
-      "name": "catalog",
+      "name": "products",
       "url": "/travelgatex/reference/objects/productconnection",
-      "description": "",
+      "description": "Products list. Specify product codes to filter products.",
       "isDeprecated": "",
       "args": [
         {
-          "typeString": "[String!]",
+          "typeString": "[ID!]",
           "name": "codes",
-          "url": "/travelgatex/reference/scalars/string",
+          "url": "/travelgatex/reference/scalars/id",
           "description": "",
           "isDeprecated": ""
         },
@@ -95,13 +95,13 @@
       "typeString": "MemberConnection!",
       "name": "members",
       "url": "/travelgatex/reference/objects/memberconnection",
-      "description": "",
+      "description": "Members list. Specify member codes to filter members.",
       "isDeprecated": "",
       "args": [
         {
-          "typeString": "[String!]",
+          "typeString": "[ID!]",
           "name": "codes",
-          "url": "/travelgatex/reference/scalars/string",
+          "url": "/travelgatex/reference/scalars/id",
           "description": "",
           "isDeprecated": ""
         },
@@ -139,13 +139,13 @@
       "typeString": "GroupConnection!",
       "name": "groups",
       "url": "/travelgatex/reference/objects/groupconnection",
-      "description": "",
+      "description": "Groups list. Specify group codes to filter groups.",
       "isDeprecated": "",
       "args": [
         {
-          "typeString": "[String!]",
+          "typeString": "[ID!]",
           "name": "codes",
-          "url": "/travelgatex/reference/scalars/string",
+          "url": "/travelgatex/reference/scalars/id",
           "description": "",
           "isDeprecated": ""
         },
@@ -183,13 +183,13 @@
       "typeString": "APIConnection!",
       "name": "apis",
       "url": "/travelgatex/reference/objects/apiconnection",
-      "description": "",
+      "description": "Apis list. Specify api codes to filter apis.",
       "isDeprecated": "",
       "args": [
         {
-          "typeString": "[String!]",
+          "typeString": "[ID!]",
           "name": "codes",
-          "url": "/travelgatex/reference/scalars/string",
+          "url": "/travelgatex/reference/scalars/id",
           "description": "",
           "isDeprecated": ""
         },
@@ -227,13 +227,13 @@
       "typeString": "ResourceConnection!",
       "name": "resources",
       "url": "/travelgatex/reference/objects/resourceconnection",
-      "description": "",
+      "description": "Resources list. Specify resource codes to filter resources.",
       "isDeprecated": "",
       "args": [
         {
-          "typeString": "[String!]",
+          "typeString": "[ID!]",
           "name": "codes",
-          "url": "/travelgatex/reference/scalars/string",
+          "url": "/travelgatex/reference/scalars/id",
           "description": "",
           "isDeprecated": ""
         },
@@ -271,13 +271,13 @@
       "typeString": "RoleConnection!",
       "name": "roles",
       "url": "/travelgatex/reference/objects/roleconnection",
-      "description": "",
+      "description": "Roles list. Specify role codes to filter roles.",
       "isDeprecated": "",
       "args": [
         {
-          "typeString": "[String!]",
+          "typeString": "[ID!]",
           "name": "codes",
-          "url": "/travelgatex/reference/scalars/string",
+          "url": "/travelgatex/reference/scalars/id",
           "description": "",
           "isDeprecated": ""
         },
@@ -312,7 +312,13 @@
       ]
     }
   ],
-  "requireby": null,
+  "requireby": [
+    {
+      "name": "Query",
+      "description": "",
+      "url": "/travelgatex/reference/schema/query"
+    }
+  ],
   "enumValues": null,
   "operator": "type",
   "typename": "AdminQuery"
@@ -324,3 +330,7 @@
 ## Fields
 
 {{% graphql-field %}}
+
+## Require by
+
+{{% graphql-require-by %}}

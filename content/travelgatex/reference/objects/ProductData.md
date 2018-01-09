@@ -27,9 +27,9 @@
       "isDeprecated": "",
       "args": [
         {
-          "typeString": "[String!]",
+          "typeString": "[ID!]",
           "name": "codes",
-          "url": "/travelgatex/reference/scalars/string",
+          "url": "/travelgatex/reference/scalars/id",
           "description": "",
           "isDeprecated": ""
         },

@@ -66,6 +66,14 @@
       "description": "Payable.",
       "isDeprecated": "",
       "args": null
+    },
+    {
+      "typeString": "AddOns",
+      "name": "addOns",
+      "url": "/travelgatex/reference/objects/addons",
+      "description": "Extra information about the option.",
+      "isDeprecated": "",
+      "args": null
     }
   ],
   "requireby": [

@@ -4,9 +4,9 @@
   "weight": 1,
   "fields": [
     {
-      "typeString": "[String!]!",
-      "name": "codes",
-      "url": "/travelgatex/reference/scalars/string",
+      "typeString": "ID!",
+      "name": "code",
+      "url": "/travelgatex/reference/scalars/id",
       "description": "",
       "isDeprecated": "",
       "args": null

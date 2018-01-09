@@ -4,14 +4,6 @@
   "weight": 1,
   "fields": [
     {
-      "typeString": "String",
-      "name": "user",
-      "url": "/travelgatex/reference/scalars/string",
-      "description": "",
-      "isDeprecated": "",
-      "args": null
-    },
-    {
       "typeString": "String!",
       "name": "code",
       "url": "/travelgatex/reference/scalars/string",
@@ -39,6 +31,14 @@
       "typeString": "ID!",
       "name": "parent",
       "url": "/travelgatex/reference/scalars/id",
+      "description": "",
+      "isDeprecated": "",
+      "args": null
+    },
+    {
+      "typeString": "Template",
+      "name": "template",
+      "url": "/travelgatex/reference/enums/template",
       "description": "",
       "isDeprecated": "",
       "args": null

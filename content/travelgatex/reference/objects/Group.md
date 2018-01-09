@@ -51,6 +51,11 @@
       "url": "/travelgatex/reference/objects/groupedge"
     },
     {
+      "name": "GroupData",
+      "description": "",
+      "url": "/travelgatex/reference/objects/groupdata"
+    },
+    {
       "name": "AdminMutation",
       "description": "",
       "url": "/travelgatex/reference/objects/adminmutation"
