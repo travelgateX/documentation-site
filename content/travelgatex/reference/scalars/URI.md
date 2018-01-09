@@ -5,11 +5,6 @@
   "fields": null,
   "requireby": [
     {
-      "name": "UrlsInput",
-      "description": "Url's",
-      "url": "/travelgatex/reference/inputobjects/urlsinput"
-    },
-    {
       "name": "MediaData",
       "description": "",
       "url": "/travelgatex/reference/objects/mediadata"
@@ -18,6 +13,11 @@
       "name": "Contact",
       "description": "Contact type",
       "url": "/travelgatex/reference/objects/contact"
+    },
+    {
+      "name": "UrlsInput",
+      "description": "Url's",
+      "url": "/travelgatex/reference/inputobjects/urlsinput"
     },
     {
       "name": "Urls",

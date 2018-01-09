@@ -5,6 +5,66 @@
   "fields": null,
   "requireby": [
     {
+      "name": "HotelEdge",
+      "description": "HotelList Edge definition",
+      "url": "/travelgatex/reference/objects/hoteledge"
+    },
+    {
+      "name": "Error",
+      "description": "Application errors",
+      "url": "/travelgatex/reference/objects/error"
+    },
+    {
+      "name": "AdviseMessage",
+      "description": "",
+      "url": "/travelgatex/reference/interfaces/advisemessage"
+    },
+    {
+      "name": "HotelData",
+      "description": "Hotel data",
+      "url": "/travelgatex/reference/objects/hoteldata"
+    },
+    {
+      "name": "MediaEdge",
+      "description": "HotelList Edge definition",
+      "url": "/travelgatex/reference/objects/mediaedge"
+    },
+    {
+      "name": "PageInfo",
+      "description": "",
+      "url": "/travelgatex/reference/objects/pageinfo"
+    },
+    {
+      "name": "AmenityEdge",
+      "description": "HotelList Edge definition",
+      "url": "/travelgatex/reference/objects/amenityedge"
+    },
+    {
+      "name": "Information",
+      "description": "",
+      "url": "/travelgatex/reference/interfaces/information"
+    },
+    {
+      "name": "Location",
+      "description": "Location",
+      "url": "/travelgatex/reference/objects/location"
+    },
+    {
+      "name": "Geocode",
+      "description": "Geocode type",
+      "url": "/travelgatex/reference/objects/geocode"
+    },
+    {
+      "name": "Contact",
+      "description": "Contact type",
+      "url": "/travelgatex/reference/objects/contact"
+    },
+    {
+      "name": "Destination",
+      "description": "Destination type",
+      "url": "/travelgatex/reference/objects/destination"
+    },
+    {
       "name": "HotelCriteriaSearchInput",
       "description": "Criteria of search contains destination, travel dates and the number of pax in each room.\nYou must preload the other fields in our system by complete the fields absents.",
       "url": "/travelgatex/reference/inputobjects/hotelcriteriasearchinput"
@@ -58,16 +118,6 @@
       "name": "Transactions",
       "description": "Supplier transaction",
       "url": "/travelgatex/reference/objects/transactions"
-    },
-    {
-      "name": "Error",
-      "description": "Application errors",
-      "url": "/travelgatex/reference/objects/error"
-    },
-    {
-      "name": "AdviseMessage",
-      "description": "",
-      "url": "/travelgatex/reference/interfaces/advisemessage"
     },
     {
       "name": "Warning",
@@ -190,54 +240,64 @@
       "url": "/travelgatex/reference/objects/servicestatus"
     },
     {
-      "name": "HotelEdge",
-      "description": "HotelList Edge definition",
-      "url": "/travelgatex/reference/objects/hoteledge"
-    },
-    {
-      "name": "HotelData",
-      "description": "Hotel data",
-      "url": "/travelgatex/reference/objects/hoteldata"
-    },
-    {
-      "name": "MediaEdge",
-      "description": "HotelList Edge definition",
-      "url": "/travelgatex/reference/objects/mediaedge"
-    },
-    {
-      "name": "PageInfo",
+      "name": "OrganizationEdge",
       "description": "",
-      "url": "/travelgatex/reference/objects/pageinfo"
+      "url": "/travelgatex/reference/objects/organizationedge"
     },
     {
-      "name": "AmenityEdge",
-      "description": "HotelList Edge definition",
-      "url": "/travelgatex/reference/objects/amenityedge"
-    },
-    {
-      "name": "Information",
+      "name": "OrganizationData",
       "description": "",
-      "url": "/travelgatex/reference/interfaces/information"
+      "url": "/travelgatex/reference/objects/organizationdata"
     },
     {
-      "name": "Location",
-      "description": "Location",
-      "url": "/travelgatex/reference/objects/location"
+      "name": "GroupCommonData",
+      "description": "",
+      "url": "/travelgatex/reference/interfaces/groupcommondata"
     },
     {
-      "name": "Geocode",
-      "description": "Geocode type",
-      "url": "/travelgatex/reference/objects/geocode"
+      "name": "MemberData",
+      "description": "",
+      "url": "/travelgatex/reference/objects/memberdata"
     },
     {
-      "name": "Contact",
-      "description": "Contact type",
-      "url": "/travelgatex/reference/objects/contact"
+      "name": "GroupEdge",
+      "description": "",
+      "url": "/travelgatex/reference/objects/groupedge"
     },
     {
-      "name": "Destination",
-      "description": "Destination type",
-      "url": "/travelgatex/reference/objects/destination"
+      "name": "GroupData",
+      "description": "",
+      "url": "/travelgatex/reference/objects/groupdata"
+    },
+    {
+      "name": "MemberEdge",
+      "description": "",
+      "url": "/travelgatex/reference/objects/memberedge"
+    },
+    {
+      "name": "APIEdge",
+      "description": "",
+      "url": "/travelgatex/reference/objects/apiedge"
+    },
+    {
+      "name": "ResourceEdge",
+      "description": "",
+      "url": "/travelgatex/reference/objects/resourceedge"
+    },
+    {
+      "name": "RoleEdge",
+      "description": "",
+      "url": "/travelgatex/reference/objects/roleedge"
+    },
+    {
+      "name": "RoleData",
+      "description": "",
+      "url": "/travelgatex/reference/objects/roledata"
+    },
+    {
+      "name": "ProductEdge",
+      "description": "",
+      "url": "/travelgatex/reference/objects/productedge"
     },
     {
       "name": "DefaultSettings",
@@ -295,19 +355,34 @@
       "url": "/travelgatex/reference/objects/hotelcanceldetail"
     },
     {
+      "name": "CreateMemberInput",
+      "description": "",
+      "url": "/travelgatex/reference/inputobjects/creatememberinput"
+    },
+    {
+      "name": "CreateGroupInput",
+      "description": "",
+      "url": "/travelgatex/reference/inputobjects/creategroupinput"
+    },
+    {
+      "name": "UpdateMemberInput",
+      "description": "",
+      "url": "/travelgatex/reference/inputobjects/updatememberinput"
+    },
+    {
+      "name": "UpdateGroupInput",
+      "description": "",
+      "url": "/travelgatex/reference/inputobjects/updategroupinput"
+    },
+    {
       "name": "DefaultSettingsInput",
       "description": "",
       "url": "/travelgatex/reference/inputobjects/defaultsettingsinput"
     },
     {
-      "name": "Parameter",
-      "description": "Parameters for additional information for the supplier's configuration.",
-      "url": "/travelgatex/reference/objects/parameter"
-    },
-    {
-      "name": "SupplierData",
+      "name": "AccessData",
       "description": "",
-      "url": "/travelgatex/reference/objects/supplierdata"
+      "url": "/travelgatex/reference/objects/accessdata"
     },
     {
       "name": "SupplierGroup",
@@ -315,9 +390,9 @@
       "url": "/travelgatex/reference/objects/suppliergroup"
     },
     {
-      "name": "AccessData",
-      "description": "",
-      "url": "/travelgatex/reference/objects/accessdata"
+      "name": "Parameter",
+      "description": "Parameters for additional information for the supplier's configuration.",
+      "url": "/travelgatex/reference/objects/parameter"
     },
     {
       "name": "AccessEdge",
@@ -368,71 +443,6 @@
       "name": "IdAccessConfigurationInput",
       "description": "",
       "url": "/travelgatex/reference/inputobjects/idaccessconfigurationinput"
-    },
-    {
-      "name": "MemberEdge",
-      "description": "",
-      "url": "/travelgatex/reference/objects/memberedge"
-    },
-    {
-      "name": "MemberData",
-      "description": "",
-      "url": "/travelgatex/reference/objects/memberdata"
-    },
-    {
-      "name": "GroupEdge",
-      "description": "",
-      "url": "/travelgatex/reference/objects/groupedge"
-    },
-    {
-      "name": "APIEdge",
-      "description": "",
-      "url": "/travelgatex/reference/objects/apiedge"
-    },
-    {
-      "name": "ResourceEdge",
-      "description": "",
-      "url": "/travelgatex/reference/objects/resourceedge"
-    },
-    {
-      "name": "RoleEdge",
-      "description": "",
-      "url": "/travelgatex/reference/objects/roleedge"
-    },
-    {
-      "name": "RoleData",
-      "description": "",
-      "url": "/travelgatex/reference/objects/roledata"
-    },
-    {
-      "name": "CreateMemberInput",
-      "description": "",
-      "url": "/travelgatex/reference/inputobjects/creatememberinput"
-    },
-    {
-      "name": "CreateGroupInput",
-      "description": "",
-      "url": "/travelgatex/reference/inputobjects/creategroupinput"
-    },
-    {
-      "name": "UpdateMemberInput",
-      "description": "",
-      "url": "/travelgatex/reference/inputobjects/updatememberinput"
-    },
-    {
-      "name": "UpdateGroupInput",
-      "description": "",
-      "url": "/travelgatex/reference/inputobjects/updategroupinput"
-    },
-    {
-      "name": "OrganizationEdge",
-      "description": "",
-      "url": "/travelgatex/reference/objects/organizationedge"
-    },
-    {
-      "name": "ProductEdge",
-      "description": "",
-      "url": "/travelgatex/reference/objects/productedge"
     }
   ],
   "enumValues": null,

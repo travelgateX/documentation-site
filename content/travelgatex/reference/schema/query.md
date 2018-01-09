@@ -12,6 +12,14 @@
       "args": null
     },
     {
+      "typeString": "AdminQuery",
+      "name": "admin",
+      "url": "/travelgatex/reference/objects/adminquery",
+      "description": "",
+      "isDeprecated": "",
+      "args": null
+    },
+    {
       "typeString": "Search!",
       "name": "search",
       "url": "/travelgatex/reference/objects/search",

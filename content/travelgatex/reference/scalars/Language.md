@@ -5,6 +5,11 @@
   "fields": null,
   "requireby": [
     {
+      "name": "Information",
+      "description": "",
+      "url": "/travelgatex/reference/interfaces/information"
+    },
+    {
       "name": "HotelCriteriaSearchInput",
       "description": "Criteria of search contains destination, travel dates and the number of pax in each room.\nYou must preload the other fields in our system by complete the fields absents.",
       "url": "/travelgatex/reference/inputobjects/hotelcriteriasearchinput"
@@ -23,11 +28,6 @@
       "name": "HotelCriteriaBookingInput",
       "description": "Criteria of book contains basic information to find a book or books.",
       "url": "/travelgatex/reference/inputobjects/hotelcriteriabookinginput"
-    },
-    {
-      "name": "Information",
-      "description": "",
-      "url": "/travelgatex/reference/interfaces/information"
     },
     {
       "name": "DefaultSettings",

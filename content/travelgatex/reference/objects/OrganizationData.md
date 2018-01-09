@@ -20,6 +20,38 @@
       "args": null
     },
     {
+      "typeString": "GroupType!",
+      "name": "type",
+      "url": "/travelgatex/reference/enums/grouptype",
+      "description": "",
+      "isDeprecated": "",
+      "args": null
+    },
+    {
+      "typeString": "String",
+      "name": "info",
+      "url": "/travelgatex/reference/scalars/string",
+      "description": "",
+      "isDeprecated": "",
+      "args": null
+    },
+    {
+      "typeString": "Member",
+      "name": "owner",
+      "url": "/travelgatex/reference/objects/member",
+      "description": "",
+      "isDeprecated": "",
+      "args": null
+    },
+    {
+      "typeString": "Boolean!",
+      "name": "isEditable",
+      "url": "/travelgatex/reference/scalars/boolean",
+      "description": "",
+      "isDeprecated": "",
+      "args": null
+    },
+    {
       "typeString": "MemberConnection",
       "name": "members",
       "url": "/travelgatex/reference/objects/memberconnection",
@@ -27,9 +59,9 @@
       "isDeprecated": "",
       "args": [
         {
-          "typeString": "[String!]",
+          "typeString": "[ID!]",
           "name": "codes",
-          "url": "/travelgatex/reference/scalars/string",
+          "url": "/travelgatex/reference/scalars/id",
           "description": "",
           "isDeprecated": ""
         },
@@ -71,9 +103,9 @@
       "isDeprecated": "",
       "args": [
         {
-          "typeString": "[String!]",
+          "typeString": "[ID!]",
           "name": "codes",
-          "url": "/travelgatex/reference/scalars/string",
+          "url": "/travelgatex/reference/scalars/id",
           "description": "",
           "isDeprecated": ""
         },
@@ -115,9 +147,9 @@
       "isDeprecated": "",
       "args": [
         {
-          "typeString": "[String!]",
+          "typeString": "[ID!]",
           "name": "codes",
-          "url": "/travelgatex/reference/scalars/string",
+          "url": "/travelgatex/reference/scalars/id",
           "description": "",
           "isDeprecated": ""
         },
@@ -150,14 +182,6 @@
           "isDeprecated": ""
         }
       ]
-    },
-    {
-      "typeString": "Member!",
-      "name": "owner",
-      "url": "/travelgatex/reference/objects/member",
-      "description": "",
-      "isDeprecated": "",
-      "args": null
     }
   ],
   "requireby": [

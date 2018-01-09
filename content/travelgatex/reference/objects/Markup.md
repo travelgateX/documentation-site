@@ -4,7 +4,7 @@
   "weight": 1,
   "fields": [
     {
-      "typeString": "String!",
+      "typeString": "String",
       "name": "channel",
       "url": "/travelgatex/reference/scalars/string",
       "description": "channel of markup application.",

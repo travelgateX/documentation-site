@@ -4,6 +4,57 @@
   "weight": 1,
   "fields": [
     {
+      "typeString": "HotelConnection!",
+      "name": "hotels",
+      "url": "/travelgatex/reference/objects/hotelconnection",
+      "description": "Query to obtain Hotels",
+      "isDeprecated": "",
+      "args": [
+        {
+          "typeString": "[String!]",
+          "name": "codes",
+          "url": "/travelgatex/reference/scalars/string",
+          "description": "",
+          "isDeprecated": ""
+        },
+        {
+          "typeString": "String",
+          "name": "language",
+          "url": "/travelgatex/reference/scalars/string",
+          "description": "",
+          "isDeprecated": ""
+        },
+        {
+          "typeString": "Int",
+          "name": "first",
+          "url": "/travelgatex/reference/scalars/int",
+          "description": "",
+          "isDeprecated": ""
+        },
+        {
+          "typeString": "Int",
+          "name": "last",
+          "url": "/travelgatex/reference/scalars/int",
+          "description": "",
+          "isDeprecated": ""
+        },
+        {
+          "typeString": "String",
+          "name": "before",
+          "url": "/travelgatex/reference/scalars/string",
+          "description": "",
+          "isDeprecated": ""
+        },
+        {
+          "typeString": "String",
+          "name": "after",
+          "url": "/travelgatex/reference/scalars/string",
+          "description": "",
+          "isDeprecated": ""
+        }
+      ]
+    },
+    {
       "typeString": "HotelSearch",
       "name": "search",
       "url": "/travelgatex/reference/objects/hotelsearch",
@@ -125,57 +176,6 @@
       "description": "TODO: me no understand...\nReturns status of the booking service.",
       "isDeprecated": "",
       "args": null
-    },
-    {
-      "typeString": "HotelConnection!",
-      "name": "hotels",
-      "url": "/travelgatex/reference/objects/hotelconnection",
-      "description": "Query to obtain Hotels",
-      "isDeprecated": "",
-      "args": [
-        {
-          "typeString": "[String!]",
-          "name": "codes",
-          "url": "/travelgatex/reference/scalars/string",
-          "description": "",
-          "isDeprecated": ""
-        },
-        {
-          "typeString": "String",
-          "name": "language",
-          "url": "/travelgatex/reference/scalars/string",
-          "description": "",
-          "isDeprecated": ""
-        },
-        {
-          "typeString": "Int",
-          "name": "first",
-          "url": "/travelgatex/reference/scalars/int",
-          "description": "",
-          "isDeprecated": ""
-        },
-        {
-          "typeString": "Int",
-          "name": "last",
-          "url": "/travelgatex/reference/scalars/int",
-          "description": "",
-          "isDeprecated": ""
-        },
-        {
-          "typeString": "String",
-          "name": "before",
-          "url": "/travelgatex/reference/scalars/string",
-          "description": "",
-          "isDeprecated": ""
-        },
-        {
-          "typeString": "String",
-          "name": "after",
-          "url": "/travelgatex/reference/scalars/string",
-          "description": "",
-          "isDeprecated": ""
-        }
-      ]
     }
   ],
   "requireby": [
@@ -189,7 +189,6 @@
   "operator": "type",
   "typename": "HotelXQuery"
 }
-A Query is an entry point into the object graph.
 ## GraphQL Schema definition
 
 {{% graphql-schema-type %}}

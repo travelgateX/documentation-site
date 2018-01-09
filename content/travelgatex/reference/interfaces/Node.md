@@ -23,7 +23,7 @@
       "typeString": "DateTime!",
       "name": "createdAt",
       "url": "/travelgatex/reference/scalars/datetime",
-      "description": "Create date ",
+      "description": "Create date",
       "isDeprecated": "",
       "args": null
     },

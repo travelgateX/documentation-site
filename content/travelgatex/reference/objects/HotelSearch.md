@@ -4,7 +4,7 @@
   "weight": 1,
   "fields": [
     {
-      "typeString": "String",
+      "typeString": "String!",
       "name": "context",
       "url": "/travelgatex/reference/scalars/string",
       "description": "Indicates the context of the response.",
@@ -71,7 +71,7 @@
   "requireby": [
     {
       "name": "HotelXQuery",
-      "description": "A Query is an entry point into the object graph.",
+      "description": "",
       "url": "/travelgatex/reference/objects/hotelxquery"
     },
     {

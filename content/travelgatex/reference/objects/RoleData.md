@@ -77,7 +77,7 @@
     },
     {
       "typeString": "Boolean!",
-      "name": "isEspecial",
+      "name": "isSpecial",
       "url": "/travelgatex/reference/scalars/boolean",
       "description": "",
       "isDeprecated": "",
@@ -85,7 +85,7 @@
     },
     {
       "typeString": "String",
-      "name": "especial",
+      "name": "special",
       "url": "/travelgatex/reference/scalars/string",
       "description": "",
       "isDeprecated": "",
@@ -127,9 +127,9 @@
           "isDeprecated": ""
         },
         {
-          "typeString": "[String!]",
+          "typeString": "[ID!]",
           "name": "codes",
-          "url": "/travelgatex/reference/scalars/string",
+          "url": "/travelgatex/reference/scalars/id",
           "description": "",
           "isDeprecated": ""
         }

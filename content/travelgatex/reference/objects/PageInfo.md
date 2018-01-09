@@ -53,19 +53,19 @@
       "url": "/travelgatex/reference/objects/amenityconnection"
     },
     {
-      "name": "AccessConnection",
+      "name": "OrganizationConnection",
       "description": "",
-      "url": "/travelgatex/reference/objects/accessconnection"
-    },
-    {
-      "name": "MemberConnection",
-      "description": "",
-      "url": "/travelgatex/reference/objects/memberconnection"
+      "url": "/travelgatex/reference/objects/organizationconnection"
     },
     {
       "name": "GroupConnection",
       "description": "",
       "url": "/travelgatex/reference/objects/groupconnection"
+    },
+    {
+      "name": "MemberConnection",
+      "description": "",
+      "url": "/travelgatex/reference/objects/memberconnection"
     },
     {
       "name": "APIConnection",
@@ -83,14 +83,14 @@
       "url": "/travelgatex/reference/objects/roleconnection"
     },
     {
-      "name": "OrganizationConnection",
-      "description": "",
-      "url": "/travelgatex/reference/objects/organizationconnection"
-    },
-    {
       "name": "ProductConnection",
       "description": "",
       "url": "/travelgatex/reference/objects/productconnection"
+    },
+    {
+      "name": "AccessConnection",
+      "description": "",
+      "url": "/travelgatex/reference/objects/accessconnection"
     }
   ],
   "enumValues": null,

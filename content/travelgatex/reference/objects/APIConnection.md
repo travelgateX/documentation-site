@@ -22,6 +22,16 @@
   ],
   "requireby": [
     {
+      "name": "AdminQuery",
+      "description": "",
+      "url": "/travelgatex/reference/objects/adminquery"
+    },
+    {
+      "name": "OrganizationData",
+      "description": "",
+      "url": "/travelgatex/reference/objects/organizationdata"
+    },
+    {
       "name": "GroupCommonData",
       "description": "",
       "url": "/travelgatex/reference/interfaces/groupcommondata"
@@ -35,16 +45,6 @@
       "name": "ResourceData",
       "description": "",
       "url": "/travelgatex/reference/objects/resourcedata"
-    },
-    {
-      "name": "AdminQuery",
-      "description": "",
-      "url": "/travelgatex/reference/objects/adminquery"
-    },
-    {
-      "name": "OrganizationData",
-      "description": "",
-      "url": "/travelgatex/reference/objects/organizationdata"
     },
     {
       "name": "ProductData",

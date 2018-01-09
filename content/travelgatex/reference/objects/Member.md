@@ -54,6 +54,21 @@
   ],
   "requireby": [
     {
+      "name": "OrganizationData",
+      "description": "",
+      "url": "/travelgatex/reference/objects/organizationdata"
+    },
+    {
+      "name": "GroupCommonData",
+      "description": "",
+      "url": "/travelgatex/reference/interfaces/groupcommondata"
+    },
+    {
+      "name": "GroupData",
+      "description": "",
+      "url": "/travelgatex/reference/objects/groupdata"
+    },
+    {
       "name": "MemberEdge",
       "description": "",
       "url": "/travelgatex/reference/objects/memberedge"
@@ -62,11 +77,6 @@
       "name": "AdminMutation",
       "description": "",
       "url": "/travelgatex/reference/objects/adminmutation"
-    },
-    {
-      "name": "OrganizationData",
-      "description": "",
-      "url": "/travelgatex/reference/objects/organizationdata"
     }
   ],
   "enumValues": null,

@@ -7,7 +7,7 @@
       "typeString": "Member!",
       "name": "createMember",
       "url": "/travelgatex/reference/objects/member",
-      "description": "",
+      "description": "Create member. Requires specific group and role.",
       "isDeprecated": "",
       "args": [
         {
@@ -23,7 +23,7 @@
       "typeString": "Group!",
       "name": "createGroup",
       "url": "/travelgatex/reference/objects/group",
-      "description": "",
+      "description": "Create group. Group \"owner\" is optional.",
       "isDeprecated": "",
       "args": [
         {
@@ -39,7 +39,7 @@
       "typeString": "Member!",
       "name": "updateMember",
       "url": "/travelgatex/reference/objects/member",
-      "description": "",
+      "description": "Update member adding or removing roles.",
       "isDeprecated": "",
       "args": [
         {
@@ -55,7 +55,7 @@
       "typeString": "Group!",
       "name": "updateGroup",
       "url": "/travelgatex/reference/objects/group",
-      "description": "",
+      "description": "Update group adding or removing apis.",
       "isDeprecated": "",
       "args": [
         {
@@ -71,7 +71,7 @@
       "typeString": "Member!",
       "name": "deleteMember",
       "url": "/travelgatex/reference/objects/member",
-      "description": "",
+      "description": "Delete member from specific group.",
       "isDeprecated": "",
       "args": [
         {
@@ -87,7 +87,7 @@
       "typeString": "Group!",
       "name": "deleteGroup",
       "url": "/travelgatex/reference/objects/group",
-      "description": "",
+      "description": "Delete group and members from this group.",
       "isDeprecated": "",
       "args": [
         {
@@ -100,7 +100,13 @@
       ]
     }
   ],
-  "requireby": null,
+  "requireby": [
+    {
+      "name": "Mutation",
+      "description": "Mutations are operations that change or update data in the server.",
+      "url": "/travelgatex/reference/schema/mutation"
+    }
+  ],
   "enumValues": null,
   "operator": "type",
   "typename": "AdminMutation"
@@ -112,3 +118,7 @@
 ## Fields
 
 {{% graphql-field %}}
+
+## Require by
+
+{{% graphql-require-by %}}

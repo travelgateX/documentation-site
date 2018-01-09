@@ -22,16 +22,6 @@
   ],
   "requireby": [
     {
-      "name": "GroupCommonData",
-      "description": "",
-      "url": "/travelgatex/reference/interfaces/groupcommondata"
-    },
-    {
-      "name": "GroupData",
-      "description": "",
-      "url": "/travelgatex/reference/objects/groupdata"
-    },
-    {
       "name": "AdminQuery",
       "description": "",
       "url": "/travelgatex/reference/objects/adminquery"
@@ -40,6 +30,16 @@
       "name": "OrganizationData",
       "description": "",
       "url": "/travelgatex/reference/objects/organizationdata"
+    },
+    {
+      "name": "GroupCommonData",
+      "description": "",
+      "url": "/travelgatex/reference/interfaces/groupcommondata"
+    },
+    {
+      "name": "GroupData",
+      "description": "",
+      "url": "/travelgatex/reference/objects/groupdata"
     }
   ],
   "enumValues": null,

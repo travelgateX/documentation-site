@@ -5,11 +5,6 @@
   "fields": null,
   "requireby": [
     {
-      "name": "AccessInput",
-      "description": "AccessInput overwrites an existent access in our Back Office or creates a new\none to be used in this search query only. An access object contains its own code, configuration and settings.",
-      "url": "/travelgatex/reference/inputobjects/accessinput"
-    },
-    {
       "name": "Hotel",
       "description": "Hotel type",
       "url": "/travelgatex/reference/objects/hotel"
@@ -40,29 +35,19 @@
       "url": "/travelgatex/reference/objects/amenitydata"
     },
     {
-      "name": "Supplier",
-      "description": "",
-      "url": "/travelgatex/reference/objects/supplier"
+      "name": "AccessInput",
+      "description": "AccessInput overwrites an existent access in our Back Office or creates a new\none to be used in this search query only. An access object contains its own code, configuration and settings.",
+      "url": "/travelgatex/reference/inputobjects/accessinput"
     },
     {
-      "name": "SupplierData",
+      "name": "Organization",
       "description": "",
-      "url": "/travelgatex/reference/objects/supplierdata"
+      "url": "/travelgatex/reference/objects/organization"
     },
     {
-      "name": "Access",
+      "name": "OrganizationData",
       "description": "",
-      "url": "/travelgatex/reference/objects/access"
-    },
-    {
-      "name": "AccessData",
-      "description": "",
-      "url": "/travelgatex/reference/objects/accessdata"
-    },
-    {
-      "name": "IdAccessConfigurationInput",
-      "description": "",
-      "url": "/travelgatex/reference/inputobjects/idaccessconfigurationinput"
+      "url": "/travelgatex/reference/objects/organizationdata"
     },
     {
       "name": "GroupCommonData",
@@ -120,6 +105,16 @@
       "url": "/travelgatex/reference/objects/roledata"
     },
     {
+      "name": "Product",
+      "description": "",
+      "url": "/travelgatex/reference/objects/product"
+    },
+    {
+      "name": "ProductData",
+      "description": "",
+      "url": "/travelgatex/reference/objects/productdata"
+    },
+    {
       "name": "CreateGroupInput",
       "description": "",
       "url": "/travelgatex/reference/inputobjects/creategroupinput"
@@ -130,24 +125,34 @@
       "url": "/travelgatex/reference/inputobjects/deletememberinput"
     },
     {
-      "name": "Organization",
+      "name": "DeleteGroupInput",
       "description": "",
-      "url": "/travelgatex/reference/objects/organization"
+      "url": "/travelgatex/reference/inputobjects/deletegroupinput"
     },
     {
-      "name": "OrganizationData",
+      "name": "Access",
       "description": "",
-      "url": "/travelgatex/reference/objects/organizationdata"
+      "url": "/travelgatex/reference/objects/access"
     },
     {
-      "name": "Product",
+      "name": "AccessData",
       "description": "",
-      "url": "/travelgatex/reference/objects/product"
+      "url": "/travelgatex/reference/objects/accessdata"
     },
     {
-      "name": "ProductData",
+      "name": "Supplier",
       "description": "",
-      "url": "/travelgatex/reference/objects/productdata"
+      "url": "/travelgatex/reference/objects/supplier"
+    },
+    {
+      "name": "SupplierData",
+      "description": "",
+      "url": "/travelgatex/reference/objects/supplierdata"
+    },
+    {
+      "name": "IdAccessConfigurationInput",
+      "description": "",
+      "url": "/travelgatex/reference/inputobjects/idaccessconfigurationinput"
     }
   ],
   "enumValues": null,

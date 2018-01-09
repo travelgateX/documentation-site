@@ -23,7 +23,7 @@
   "requireby": [
     {
       "name": "HotelXQuery",
-      "description": "A Query is an entry point into the object graph.",
+      "description": "",
       "url": "/travelgatex/reference/objects/hotelxquery"
     }
   ],

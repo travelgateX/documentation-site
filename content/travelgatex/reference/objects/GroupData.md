@@ -28,8 +28,48 @@
       "args": null
     },
     {
-      "typeString": "Int!",
+      "typeString": "String",
+      "name": "info",
+      "url": "/travelgatex/reference/scalars/string",
+      "description": "",
+      "isDeprecated": "",
+      "args": null
+    },
+    {
+      "typeString": "Group",
       "name": "parent",
+      "url": "/travelgatex/reference/objects/group",
+      "description": "",
+      "isDeprecated": "",
+      "args": null
+    },
+    {
+      "typeString": "Member",
+      "name": "owner",
+      "url": "/travelgatex/reference/objects/member",
+      "description": "",
+      "isDeprecated": "",
+      "args": null
+    },
+    {
+      "typeString": "Boolean!",
+      "name": "isEditable",
+      "url": "/travelgatex/reference/scalars/boolean",
+      "description": "",
+      "isDeprecated": "",
+      "args": null
+    },
+    {
+      "typeString": "Int",
+      "name": "productId",
+      "url": "/travelgatex/reference/scalars/int",
+      "description": "",
+      "isDeprecated": "",
+      "args": null
+    },
+    {
+      "typeString": "Int",
+      "name": "resourceId",
       "url": "/travelgatex/reference/scalars/int",
       "description": "",
       "isDeprecated": "",
@@ -43,9 +83,9 @@
       "isDeprecated": "",
       "args": [
         {
-          "typeString": "[String!]",
+          "typeString": "[ID!]",
           "name": "codes",
-          "url": "/travelgatex/reference/scalars/string",
+          "url": "/travelgatex/reference/scalars/id",
           "description": "",
           "isDeprecated": ""
         },
@@ -87,9 +127,9 @@
       "isDeprecated": "",
       "args": [
         {
-          "typeString": "[String!]",
+          "typeString": "[ID!]",
           "name": "codes",
-          "url": "/travelgatex/reference/scalars/string",
+          "url": "/travelgatex/reference/scalars/id",
           "description": "",
           "isDeprecated": ""
         },

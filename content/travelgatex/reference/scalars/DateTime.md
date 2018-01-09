@@ -5,21 +5,6 @@
   "fields": null,
   "requireby": [
     {
-      "name": "Stat",
-      "description": "",
-      "url": "/travelgatex/reference/objects/stat"
-    },
-    {
-      "name": "AuditData",
-      "description": "Data sent & received in the supplierâ€™s native format.",
-      "url": "/travelgatex/reference/objects/auditdata"
-    },
-    {
-      "name": "Transactions",
-      "description": "Supplier transaction",
-      "url": "/travelgatex/reference/objects/transactions"
-    },
-    {
       "name": "Hotel",
       "description": "Hotel type",
       "url": "/travelgatex/reference/objects/hotel"
@@ -40,14 +25,24 @@
       "url": "/travelgatex/reference/objects/amenity"
     },
     {
-      "name": "Supplier",
+      "name": "Stat",
       "description": "",
-      "url": "/travelgatex/reference/objects/supplier"
+      "url": "/travelgatex/reference/objects/stat"
     },
     {
-      "name": "Access",
+      "name": "AuditData",
+      "description": "Data sent & received in the supplierâ€™s native format.",
+      "url": "/travelgatex/reference/objects/auditdata"
+    },
+    {
+      "name": "Transactions",
+      "description": "Supplier transaction",
+      "url": "/travelgatex/reference/objects/transactions"
+    },
+    {
+      "name": "Organization",
       "description": "",
-      "url": "/travelgatex/reference/objects/access"
+      "url": "/travelgatex/reference/objects/organization"
     },
     {
       "name": "Member",
@@ -75,14 +70,19 @@
       "url": "/travelgatex/reference/objects/role"
     },
     {
-      "name": "Organization",
-      "description": "",
-      "url": "/travelgatex/reference/objects/organization"
-    },
-    {
       "name": "Product",
       "description": "",
       "url": "/travelgatex/reference/objects/product"
+    },
+    {
+      "name": "Access",
+      "description": "",
+      "url": "/travelgatex/reference/objects/access"
+    },
+    {
+      "name": "Supplier",
+      "description": "",
+      "url": "/travelgatex/reference/objects/supplier"
     }
   ],
   "enumValues": null,
