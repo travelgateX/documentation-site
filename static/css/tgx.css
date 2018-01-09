@@ -988,11 +988,32 @@ animation-delay: 0.5s;
 #line-1-1{
   stroke-dasharray: 1000;
   stroke-dashoffset: -1000;
-  animation-name: dash;
-  animation-duration: 2s;
-  animation-delay: 9s;
-  animation-fill-mode: forwards;
-  display: none;
+  animation: dash 2s linear 10s 2 alternate;
+}
+#line-2-1{
+  stroke-dasharray: 1000;
+  stroke-dashoffset: -1000;
+  animation: dash 2s linear 12s 2 alternate;
+}
+#line-3-1{
+  stroke-dasharray: 1000;
+  stroke-dashoffset: -1000;
+  animation: dash 2s linear 12s 2 alternate;
+}
+#line-4-1{
+  stroke-dasharray: 1000;
+  stroke-dashoffset: -1000;
+  animation: dash 2s linear 12s 4 alternate;
+}
+#line-5-1{
+  stroke-dasharray: 1000;
+  stroke-dashoffset: -1000;
+  animation: dash 2s linear 12s 4 alternate;
+}
+#line-6-1{
+  stroke-dasharray: 1000;
+  stroke-dashoffset: -1000;
+  animation: dash 2s linear 14s 4 alternate;
 }
 
 @keyframes dash {
