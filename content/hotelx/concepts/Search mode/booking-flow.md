@@ -1,6 +1,6 @@
 +++
 title = "Booking Flow"
-pagetitle = "Search. Quote. Book."
+pagetitle = "Search, Quote and Book"
 description = "Learn about Transactional Booking flow. Search, Quote and Confirm Reservation"
 weight = 3
 alwaysopen = false
@@ -30,24 +30,27 @@ alwaysopen = false
             <g id="Group-3" transform="translate(16.000000, 53.000000)" stroke-width="2" stroke-linecap="square">
                 <polyline id="line-6" stroke="#B7C7CF" transform="translate(170.000000, 171.500000) rotate(90.000000) translate(-170.000000, -171.500000) " points="56.5 337.5 55 338.5 56.5 339 57.5 338 57.5 335 53.5 338 57.5 341 57.5 338 286.5 338 286.5 2"></polyline>
                 <polyline id="line-6-1" stroke-opacity="0.5" stroke="#0469DE" transform="translate(170.000000, 171.500000) rotate(90.000000) translate(-170.000000, -171.500000) " points="56.5 337.5 55 338.5 56.5 339 57.5 338 57.5 335 53.5 338 57.5 341 57.5 338 286.5 338 286.5 2"></polyline>
+                <polyline id="line-6-2" stroke-opacity="0.5" stroke="#0D4CB3" transform="translate(170.000000, 171.500000) rotate(90.000000) translate(-170.000000, -171.500000) " points="56.5 337.5 55 338.5 56.5 339 57.5 338 57.5 335 53.5 338 57.5 341 57.5 338 286.5 338 286.5 2"></polyline>
                 <polyline id="line-5" stroke="#B7C7CF" transform="translate(177.250000, 219.250000) scale(-1, -1) translate(-177.250000, -219.250000) " points="24.5 168 23 169 24.5 169.5 25.5 168.5 25.5 166 21.5 168.5 25.5 171 25.5 168.5 333 168.5 333 272.5"></polyline>
                 <polyline id="line-5-1" stroke-opacity="0.5" stroke="#0469DE" transform="translate(177.250000, 219.250000) scale(-1, -1) translate(-177.250000, -219.250000) " points="24.5 168 23 169 24.5 169.5 25.5 168.5 25.5 166 21.5 168.5 25.5 171 25.5 168.5 333 168.5 333 272.5"></polyline>
+                <polyline id="line-5-2" stroke-opacity="0.5" stroke="#0D4CB3" transform="translate(177.250000, 219.250000) scale(-1, -1) translate(-177.250000, -219.250000) " points="24.5 168 23 169 24.5 169.5 25.5 168.5 25.5 166 21.5 168.5 25.5 171 25.5 168.5 333 168.5 333 272.5"></polyline>
                 <polyline id="line-4" stroke="#B7C7CF" transform="translate(146.000000, 152.750000) rotate(90.000000) translate(-146.000000, -152.750000) " points="141.25 276.75 139.75 277.75 141.25 278.25 142.25 277.25 142.25 274.25 138.25 277.25 142.25 279.75 142.25 277.25 153.75 277.25 153.75 25.75"></polyline>
                 <polyline id="line-4-1" stroke-opacity="0.5" stroke="#0469DE" transform="translate(146.000000, 152.750000) rotate(90.000000) translate(-146.000000, -152.750000) " points="141.25 276.75 139.75 277.75 141.25 278.25 142.25 277.25 142.25 274.25 138.25 277.25 142.25 279.75 142.25 277.25 153.75 277.25 153.75 25.75"></polyline>
+                <polyline id="line-4-2" stroke-opacity="0.5" stroke="#0D4CB3" transform="translate(146.000000, 152.750000) rotate(90.000000) translate(-146.000000, -152.750000) " points="141.25 276.75 139.75 277.75 141.25 278.25 142.25 277.25 142.25 274.25 138.25 277.25 142.25 279.75 142.25 277.25 153.75 277.25 153.75 25.75"></polyline>
                 <polyline id="line-3" stroke="#B7C7CF" transform="translate(143.750000, 97.000000) scale(-1, -1) translate(-143.750000, -97.000000) " points="24.5 52.5 23 53.5 24.5 54 25.5 53 25.5 50 21.5 53 25.5 56 25.5 53 266 53.5 266 144"></polyline>
                 <polyline id="line-3-1" stroke-opacity="0.5" stroke="#0469DE" transform="translate(143.750000, 97.000000) scale(-1, -1) translate(-143.750000, -97.000000) " points="24.5 52.5 23 53.5 24.5 54 25.5 53 25.5 50 21.5 53 25.5 56 25.5 53 266 53.5 266 144"></polyline>
+                <polyline id="line-3-2" stroke-opacity="0.5" stroke="#0D4CB3" transform="translate(143.750000, 97.000000) scale(-1, -1) translate(-143.750000, -97.000000) " points="24.5 52.5 23 53.5 24.5 54 25.5 53 25.5 50 21.5 53 25.5 56 25.5 53 266 53.5 266 144"></polyline>
                 <polyline id="line-2" stroke="#B7C7CF" transform="translate(191.000000, 22.000000) scale(1, -1) translate(-191.000000, -22.000000) " points="45 21.5 43.5 22.5 45 23 46 22 46 19 42 22 46 25 46 22 340 22"></polyline>
                 <polyline id="line-2-1" stroke-opacity="0.5" stroke="#0469DE" transform="translate(191.000000, 22.000000) scale(1, -1) translate(-191.000000, -22.000000) " points="45 21.5 43.5 22.5 45 23 46 22 46 19 42 22 46 25 46 22 340 22"></polyline>
+                <polyline id="line-2-2" stroke-opacity="0.5" stroke="#0D4CB3" transform="translate(191.000000, 22.000000) scale(1, -1) translate(-191.000000, -22.000000) " points="45 21.5 43.5 22.5 45 23 46 22 46 19 42 22 46 25 46 22 340 22"></polyline>
                 <polyline id="line-1" stroke="#B7C7CF" transform="translate(184.000000, 3.000000) scale(-1, -1) translate(-184.000000, -3.000000) " points="39 2.5 37.5 3.5 39 4 40 3 40 -8.8817842e-16 36 3 40 6 40 3 332 3"></polyline>
                 <polyline id="line-1-1" stroke-opacity="0.5" stroke="#0469DE" transform="translate(184.000000, 3.000000) scale(-1, -1) translate(-184.000000, -3.000000) " points="39 2.5 37.5 3.5 39 4 40 3 40 -8.8817842e-16 36 3 40 6 40 3 332 3"></polyline>
+                <polyline id="line-1-2" stroke-opacity="0.5" stroke="#0D4CB3" transform="translate(184.000000, 3.000000) scale(-1, -1) translate(-184.000000, -3.000000) " points="39 2.5 37.5 3.5 39 4 40 3 40 -8.8817842e-16 36 3 40 6 40 3 332 3"></polyline>
             </g>
             <g id="Group-8" transform="translate(0.000000, 9.000000)">
-                <g id="noun_1234724_cc" transform="translate(2.000000, 10.000000)">
-                    <g id="151all"></g>
-                </g>
                 <g id="Group-4">
                     <ellipse id="Oval" fill="#B7C7CF" cx="26.0102201" cy="7.36270023" rx="1.48191824" ry="1.47254005"></ellipse>
-                    <path class="caca" d="M45.1190926,0 L6.88090737,0 C3.08068717,0 3.49227053e-15,3.31207532 0,7.39772727 L0,85.6022727 C0,89.6879247 3.08068717,93 6.88090737,93 L45.1190926,93 C48.9193128,93 52,89.6879247 52,85.6022727 L52,7.39772727 C52,3.31207532 48.9193128,0 45.1190926,0 L45.1190926,0 Z M1.96597353,14.5101136 L50.0340265,14.5101136 L50.0340265,73.5334091 L1.96597353,73.5334091 L1.96597353,14.5101136 Z M45.1190926,90.8863636 L6.88090737,90.8863636 C4.16646437,90.8863636 1.96597353,88.5205956 1.96597353,85.6022727 L1.96597353,75.6470455 L50.0340265,75.6470455 L50.0340265,85.6022727 C50.0340265,88.5205956 47.8335356,90.8863636 45.1190926,90.8863636 L45.1190926,90.8863636 Z M50.0340265,12.3964773 L1.96597353,12.3964773 L1.96597353,7.39772727 C1.96597353,4.47940445 4.16646437,2.11363636 6.88090737,2.11363636 L45.1190926,2.11363636 C47.8335356,2.11363636 50.0340265,4.47940445 50.0340265,7.39772727 L50.0340265,12.3964773 Z" id="Shape" fill="#B7C7CF"></path>
+                    <path d="M45.1190926,0 L6.88090737,0 C3.08068717,0 3.49227053e-15,3.31207532 0,7.39772727 L0,85.6022727 C0,89.6879247 3.08068717,93 6.88090737,93 L45.1190926,93 C48.9193128,93 52,89.6879247 52,85.6022727 L52,7.39772727 C52,3.31207532 48.9193128,0 45.1190926,0 L45.1190926,0 Z M1.96597353,14.5101136 L50.0340265,14.5101136 L50.0340265,73.5334091 L1.96597353,73.5334091 L1.96597353,14.5101136 Z M45.1190926,90.8863636 L6.88090737,90.8863636 C4.16646437,90.8863636 1.96597353,88.5205956 1.96597353,85.6022727 L1.96597353,75.6470455 L50.0340265,75.6470455 L50.0340265,85.6022727 C50.0340265,88.5205956 47.8335356,90.8863636 45.1190926,90.8863636 L45.1190926,90.8863636 Z M50.0340265,12.3964773 L1.96597353,12.3964773 L1.96597353,7.39772727 C1.96597353,4.47940445 4.16646437,2.11363636 6.88090737,2.11363636 L45.1190926,2.11363636 C47.8335356,2.11363636 50.0340265,4.47940445 50.0340265,7.39772727 L50.0340265,12.3964773 Z" id="Shape" fill="#B7C7CF"></path>
                     <rect id="Rectangle-2" fill="#FFFFFF" x="47" y="25" width="10" height="18"></rect>
                     <rect id="Rectangle-path" fill="#B7C7CF" x="15.6981132" y="83.4439359" width="19.6226415" height="1.96338673"></rect>
                     <g id="Group" transform="translate(10.500000, 25.000000)" fill="#B7C7CF">
@@ -157,12 +160,6 @@ Depending Seller, search operations implitiy use supplier's cache.
 
 ### PlayGround Samples
 * [search](https://graphqlbin.com/JYRtB)
-
-## Search Single Mode
-{{< figure src="/images/search_single_mode.png#center" alt="High Level ConnectX Architecture" attr="" >}}
-
-## Search Multi Mode
-{{< figure src="/images/search_multi_mode.png#center" alt="High Level ConnectX Architecture" attr="" >}}
 
 ## Quote
 Performs an hotel quote over an option returned in Search Response.
