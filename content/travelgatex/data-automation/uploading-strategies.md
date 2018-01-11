@@ -32,7 +32,7 @@ To get your FTP Credential Details raise a _customer care request_ in [Jira Serv
 
 ### Naming Conventions
 
-It's imperative that the file is loaded using a specific name depending on the data being uploaded. **Always** overwrite the last file, only the last file is loaded into the platform. But don't worry, we keep the old files in case we need to revert to an old version. For each file name please see the specific file documentation on this section.
+It's imperative that the file is loaded using a specific name depending on the data being uploaded. **Always** overwrite the last file, only the last file is loaded into the platform. But don't worry, we keep the old files in case we need to revert to an old version. For each file name please see the specific file documentation in each product's section.
 
 ## GraphQL Mutation
 

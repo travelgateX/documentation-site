@@ -12,10 +12,11 @@ Many of TravelgateX's products use client's data in order to perform tasks. Thes
 
 The reasoning behind uploading data has to do with the overall performance of the applications. Our APIs have been built from the ground up with performance in mind, this means that we **must** store data _inside_ the application in order we can keep the response time to a minimum. 
 
-The data we **must** to store is the following:
+The data we **must** to store _per product_ is the following:
 
-* Hotel Mappings
-* Room Type Mappings
+### HotelX
+
+* [Mappings](/hotelx/plugins/mapping/)
 * Pricing Rules
 * Custom hotel lists (up to 4 different lists)
 
