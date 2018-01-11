@@ -2,7 +2,7 @@
 title = "Search Multi Mode"
 pagetitle = "Search, Quote and Book"
 description = "Learn about Transactional Booking flow. Search, Quote and Confirm Reservation"
-weight = 3
+weight = 4
 alwaysopen = false
 +++
 
