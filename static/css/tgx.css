@@ -1021,7 +1021,6 @@ animation-delay: 0s;
 }
 .search_single_mode .circle-one, .search_multi_mode .circle-one {
   fill-opacity: 0;
-  stroke:url(#Gradient-1);
   stroke-width: 3;
   stroke-dasharray:670; 
   stroke-dashoffset:-670;
@@ -1030,20 +1029,43 @@ animation-delay: 0s;
 
 .search_single_mode .circle-two, .search_multi_mode .circle-two {
   fill-opacity: 0;
-  stroke:url(#Gradient-2);
   stroke-width: 3;
   stroke-dasharray: 670;
   stroke-dashoffset: -670;
   animation: draw-b 5s forwards;
 }
-.search_single_mode .circle-three {
+.search_single_mode .circle-three, .search_multi_mode .circle-three {
   fill-opacity: 0;
-  stroke:url(#Gradient-3);
   stroke-width: 3;
   stroke-dasharray: 670;
   stroke-dashoffset: -670;
   animation: draw-b 4s 2s forwards;
 }
+
+.search_multi_mode .circle-three.supplier-2 {
+  fill-opacity: 0;
+  stroke-width: 3;
+  stroke-dasharray: 670;
+  stroke-dashoffset: -670;
+  animation: draw-a 4s 2s forwards;
+}
+
+.search_multi_mode .circle-three.supplier-n {
+  fill-opacity: 0;
+  stroke-width: 3;
+  stroke-dasharray: 670;
+  stroke-dashoffset: -670;
+  animation: draw-b 4s 2s forwards;
+}
+
+.search_multi_mode #Line{
+  fill-opacity: 0;
+  stroke-width: 3;
+  stroke-dasharray: 670;
+  stroke-dashoffset: -670;
+  animation: draw-a 4s 2s forwards;
+}
+
 
 @keyframes draw-a {
   from {
@@ -1058,16 +1080,3 @@ animation-delay: 0s;
     stroke-dashoffset: 0;
   }
 }
-
-
-
-.search_single_mode .caca {
-  fill-opacity: 0;
-  fill: #B7C7CF !important;
-  stroke:#B7C7CF;
-  stroke-width: 2;
-  stroke-dasharray: 870;
-  stroke-dashoffset: 870;
-  animation: draw 10s 1 linear;
-}
-
