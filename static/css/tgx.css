@@ -891,6 +891,8 @@ table {
 *
 * ======================================================= */
 
+/*   Booking flow svg
+----------------------------------------------------------------------------------------------------*/
 .booking_flow{
   display: block;
   margin: 35px auto 0 auto;
@@ -922,17 +924,18 @@ table {
   animation-duration:1s;
 } 
 
-.booking_flow.fade-in{
--webkit-animation-delay: 0s;
--moz-animation-delay: 0s;
-animation-delay: 0s;
+/*   Creating draw effect on svg elements 
+----------------------------------------------------------------------------------------------------*/
+@keyframes draw-lines {
+  to {
+    stroke-dashoffset: 0;
+  }
 }
-/**/ 
 
 #line-1, #line-2, #line-3, #line-4, #line-5, #line-6{
   stroke-dasharray: 1000;
   stroke-dashoffset: -1000;
-  animation-name: dash;
+  animation-name: draw-lines;
   animation-duration: 3s;
   animation-delay: -1s;
   animation-fill-mode: forwards;
@@ -941,22 +944,18 @@ animation-delay: 0s;
   animation-duration: 2s;
   animation-delay: 1s;
 }
-
 #line-3{
   animation-duration: 2s;
   animation-delay: 2s;
 }
-
 #line-4{
   animation-duration: 2s;
   animation-delay: 3s;
 }
-
 #line-5{
   animation-duration:3s;
   animation-delay: 4s;
 }
-
 #line-6{
   animation-duration: 3s;
   animation-delay: 6s;
@@ -967,52 +966,59 @@ animation-delay: 0s;
   stroke-dasharray: 1000;
   stroke-dashoffset: -1000;
 }
-
 #line-1-1 {
-  animation: dash 1s linear 8s 2 alternate;
+  animation: draw-lines 1s linear 8s 2 alternate;
 }
 #line-2-1{
-  animation: dash 1s linear 9s 2 alternate;
+  animation: draw-lines 1s linear 9s 2 alternate;
 }
 #line-3-1{
-  animation: dash 1s linear 10s 2 alternate;
+  animation: draw-lines 1s linear 10s 2 alternate;
 }
 #line-4-1{
-  animation: dash 1s linear 11s 2 alternate;
+  animation: draw-lines 1s linear 11s 2 alternate;
 }
 #line-5-1{
-  animation: dash 1s linear 12s 2 alternate;
+  animation: draw-lines 1s linear 12s 2 alternate;
 }
 #line-6-1{
-  animation: dash 1s linear 13s 2 alternate;
+  animation: draw-lines 1s linear 13s 2 alternate;
 }
-
 #line-1-2{
-  animation: dash 2s linear 15s infinite alternate;
+  animation: draw-lines 2s linear 15s infinite alternate;
 }
 #line-2-2{
-  animation: dash 2s linear 15s infinite alternate;
+  animation: draw-lines 2s linear 15s infinite alternate;
 }
 #line-3-2{
-  animation: dash 2s linear 15s infinite alternate;
+  animation: draw-lines 2s linear 15s infinite alternate;
 }
 #line-4-2{
-  animation: dash 2s linear 15s infinite alternate;
+  animation: draw-lines 2s linear 15s infinite alternate;
 }
 #line-5-2{
-  animation: dash 2s linear 15s infinite alternate;
+  animation: draw-lines 2s linear 15s infinite alternate;
 }
 #line-6-2{
-  animation: dash 2s linear 15s infinite alternate;
+  animation: draw-lines 2s linear 15s infinite alternate;
 }
 
-@keyframes dash {
+
+/*   Search modes
+----------------------------------------------------------------------------------------------------*/
+@keyframes draw-a {
+  from {
+    stroke-dashoffset: 670;
+  }
   to {
     stroke-dashoffset: 0;
   }
 }
-
-
+@keyframes draw-b {
+  to {
+    stroke-dashoffset: 0;
+  }
+} 
 .search_single_mode, .search_multi_mode {
   max-width: 95%;
   max-height: 95%;
@@ -1032,22 +1038,28 @@ animation-delay: 0s;
   stroke-width: 3;
   stroke-dasharray: 670;
   stroke-dashoffset: -670;
-  animation: draw-b 5s forwards;
+  animation: draw-a 5s 2s forwards;
 }
-.search_single_mode .circle-three, .search_multi_mode .circle-three {
+.search_single_mode .circle-three{
   fill-opacity: 0;
   stroke-width: 3;
   stroke-dasharray: 670;
   stroke-dashoffset: -670;
-  animation: draw-b 4s 2s forwards;
+  animation: draw-b 4s 3s forwards;
 }
-
+.search_multi_mode .circle-three.supplier-1 {
+  fill-opacity: 0;
+  stroke-width: 3;
+  stroke-dasharray: 670;
+  stroke-dashoffset: -670;
+  animation: draw-a 4s 5s forwards;
+}
 .search_multi_mode .circle-three.supplier-2 {
   fill-opacity: 0;
   stroke-width: 3;
   stroke-dasharray: 670;
   stroke-dashoffset: -670;
-  animation: draw-a 4s 2s forwards;
+  animation: draw-b 3s 6s forwards;
 }
 
 .search_multi_mode .circle-three.supplier-n {
@@ -1055,7 +1067,7 @@ animation-delay: 0s;
   stroke-width: 3;
   stroke-dasharray: 670;
   stroke-dashoffset: -670;
-  animation: draw-b 4s 2s forwards;
+  animation: draw-a 4s 7s forwards;
 }
 
 .search_multi_mode #Line{
@@ -1063,20 +1075,83 @@ animation-delay: 0s;
   stroke-width: 3;
   stroke-dasharray: 670;
   stroke-dashoffset: -670;
-  animation: draw-a 4s 2s forwards;
+  animation: draw-a 8s 5s forwards;
 }
 
+.search_single_mode #line-customer, .search_multi_mode #line-customer{
+  fill-opacity: 0;
+  stroke-width: 3;
+  stroke-dasharray: 670;
+  stroke-dashoffset: -670;
+  animation: draw-b 2s forwards;
+}
 
-@keyframes draw-a {
+.search_single_mode #line-hotelx, .search_multi_mode #line-hotelx{
+  fill-opacity: 0;
+  stroke-width: 3;
+  stroke-dasharray: 670;
+  stroke-dashoffset: -670;
+  animation: draw-b 4s 1s forwards;
+}
+
+.search_single_mode #line-supplier {
+  fill-opacity: 0;
+  stroke-width: 3;
+  stroke-dasharray: 670;
+  stroke-dashoffset: -670;
+  animation: draw-b 6s 1s forwards;
+}
+
+/* Drawing icons
+*/
+@keyframes drawing-icons {
   from {
-    stroke-dashoffset: 670;
+    stroke-dashoffset: -320;
+    fill-opacity: 0;
   }
   to {
     stroke-dashoffset: 0;
+    fill-opacity: 1;
+
   }
 }
-@keyframes draw-b {
-  to {
-    stroke-dashoffset: 0;
-  }
+.search_multi_mode #hotelx-icon, #robot-icon{
+  stroke: #B7C7CF;
+  stroke-dasharray: 320;
+  stroke-dashoffset: 0;
+}
+
+.search_single_mode #robot-icon, .search_multi_mode #robot-icon{
+  fill-opacity: 0;
+  stroke-width: 0;
+  animation: drawing-icons 5s forwards;
+}
+
+/* Fade-in words of the graphic
+*/
+.search_single_mode .customer.fade-in, .search_multi_mode .customer.fade-in{
+  animation-delay: 1.5s;
+}
+
+.search_single_mode .hotelx.fade-in, .search_multi_mode .hotelx.fade-in{
+  animation-delay: 4s;
+}
+
+.search_single_mode .hotelx-icon.fade-in, .search_multi_mode .hotelx-icon.fade-in{
+  animation-duration: 3s;
+  animation-delay: 1.5s;
+}
+.search_single_mode .supplier.fade-in, .search_multi_mode .supplier-1.fade-in{
+  animation-delay: 5.5s;
+}
+
+.search_single_mode .supplier-icon.fade-in{
+  animation-delay: 4.5s;
+}
+
+.search_multi_mode .supplier-2.fade-in{
+  animation-delay: 6.5s;
+}
+.search_multi_mode .supplier-n.fade-in{
+  animation-delay: 7.5s;
 }
