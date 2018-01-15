@@ -28,3 +28,4 @@ We hope you enjoy!
 - [Schema-first development with GraphQL](https://conferences.oreilly.com/fluent/fl-ca-2017/public/schedule/detail/58715)
 - [GraphQL First in practice at Quri](https://dev-blog.apollodata.com/graphql-first-in-practice-at-quri-7bf84b260135)
 - [GraphQL First: A better way to build modern apps](https://dev-blog.apollodata.com/graphql-first-a-better-way-to-build-modern-apps-b5a04f7121a0)
+- [GraphQL User List](http://graphql.org/users/)
