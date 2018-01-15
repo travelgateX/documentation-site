@@ -2,7 +2,7 @@
   position: fixed;
   top:0;
   bottom: 0;
-  width: 30%;
+  width: 20%;
   padding:0;
   border-right: 1px solid rgba(204, 213, 218, 0.6);
   z-index: 999;
@@ -238,7 +238,7 @@ a:hover{
 
 .iso-input-search {
   position: fixed;
-  left: 30%;
+  left: 20%;
   width: 100%;
   z-index: 9;
 }
@@ -535,19 +535,19 @@ a.card-lv2:hover {
 }
 
 .content-center {
-  margin-left: 28%;
+  margin-left: 16%;
   padding: 0 25px;
 }
 
 @media (min-width: 1710px) {
   .content-center {
-    margin-left: 21%;
+    margin-left: 7%;
   }
 }
 
 @media (min-width: 1600px) and (max-width: 1709px) {
   .content-center {
-    margin-left: 24%;
+    margin-left: 10%;
   }
 }
 
@@ -572,8 +572,8 @@ a.card-lv2:hover {
   }
 
   .content-center {
-    width: calc(100% - 450px); 
-    margin-top: 105px;
+    width: calc(100% - 300px); 
+    margin-top: 90px;
   }
 
   .content-center > div {
@@ -896,6 +896,7 @@ table {
 .booking_flow{
   display: block;
   margin: 35px auto 0 auto;
+  max-width: 60%;
 }
 
 @media (min-width: 1200px) {
@@ -1161,4 +1162,212 @@ table {
 }
 .search_multi_mode .supplier-n.fade-in{
   animation-delay: 7.5s;
+}
+
+/*   Platform (Getting started view)
+----------------------------------------------------------------------------------------------------*/
+.platform_getting_started {
+  max-width: 90%;
+  max-height: 90%;
+  display: block;
+  margin: 50px auto;
+}
+
+.platform_getting_started .clients.fade-in, .buyers.fade-in{
+  animation-delay:0.5s;
+}
+
+.platform_getting_started .dashed_line_1.fade-in{
+  animation-delay: 1.5s;
+  animation-duration: 2s;
+}
+
+.platform_getting_started .travelgatex.fade-in{
+  animation-delay: 2.5s;
+}
+
+.platform_getting_started .dashed_line_2.fade-in{
+  animation-delay: 3.5s;
+  animation-duration: 2s;
+}
+
+.platform_getting_started .suppliers.fade-in{
+  animation-delay: 4.5s;
+}
+
+
+.platform_getting_started .clients-icon.fade-in, .sellers.fade-in{
+  animation-delay:5s;
+}
+
+.platform_getting_started #line1{
+  fill-opacity: 0;
+  stroke-width: 3;
+  stroke-dasharray: 670;
+  stroke-dashoffset: -670;
+  animation: draw-a 4s 4s forwards;
+}
+
+.platform_getting_started #api_polygon{
+  fill-opacity: 0;
+  stroke-width: 3;
+  stroke-dasharray: 670;
+  stroke-dashoffset: -670;
+  animation: draw-a 4s 4.5s forwards;
+}
+
+.platform_getting_started .api_text.fade-in{
+  animation-delay: 5s;
+}
+
+.platform_getting_started #line2{
+  fill-opacity: 0;
+  stroke-width: 3;
+  stroke-dasharray: 670;
+  stroke-dashoffset: -670;
+  animation: draw-a 4s 5s forwards;
+}
+
+.platform_getting_started #line3{
+  fill-opacity: 0;
+  stroke-width: 3;
+  stroke-dasharray: 670;
+  stroke-dashoffset: -670;
+  animation: draw-a 4s 6s forwards;
+}
+
+.platform_getting_started .hotelx_icon.fade-in, .hotelx.fade-in{
+  animation-duration: 2s;
+  animation-delay: 6s;
+}
+
+.platform_getting_started #line4{
+  fill-opacity: 0;
+  stroke-width: 3;
+  stroke-dasharray: 670;
+  stroke-dashoffset: -670;
+  animation: draw-a 4s 6.5s forwards;
+}
+
+.platform_getting_started .speed-icon.fade-in, .speed.fade-in{
+  animation-duration: 2s;
+  animation-delay: 6.5s;
+}
+
+.platform_getting_started #line5{
+  fill-opacity: 0;
+  stroke-width: 3;
+  stroke-dasharray: 670;
+  stroke-dashoffset: -670;
+  animation: draw-a 4s 7.5s forwards;
+}
+
+.platform_getting_started .hotel_icon.fade-in, .hotel.fade-in{
+  animation-delay: 8s;
+}
+
+.platform_getting_started .hotel_wholesalers.fade-in, .hotel_wholesalers_icon.fade-in{
+  animation-duration: 2s;
+  animation-delay: 8.5s;
+}
+
+.platform_getting_started #line6{
+  fill-opacity: 0;
+  stroke-width: 3;
+  stroke-dasharray: 670;
+  stroke-dashoffset: -670;
+  animation: draw-a 4s 9s forwards;
+}
+
+.platform_getting_started .mappeax.fade-in, .mappeax_icon.fade-in{
+  animation-delay: 9.5s;
+}
+
+.platform_getting_started #line7{
+  fill-opacity: 0;
+  stroke-width: 3;
+  stroke-dasharray: 670;
+  stroke-dashoffset: -670;
+  animation: draw-a 4s 10s forwards;
+}
+
+.platform_getting_started .database_1{
+  fill-opacity: 0;
+  stroke-width: 3;
+  stroke-dasharray: 670;
+  stroke-dashoffset: -670;
+  animation: draw-a 4s 10.5s forwards;
+}
+
+.platform_getting_started #line8{
+  fill-opacity: 0;
+  stroke-width: 3;
+  stroke-dasharray: 670;
+  stroke-dashoffset: -670;
+  animation: draw-a 4s 11s forwards;
+}
+.platform_getting_started #line3-1{
+  fill-opacity: 0;
+  stroke-width: 3;
+  stroke-dasharray: 670;
+  stroke-dashoffset: -670;
+  animation: draw-b 1s 11.5s alternate;
+}
+
+.platform_getting_started #line9{
+  fill-opacity: 0;
+  stroke-width: 3;
+  stroke-dasharray: 670;
+  stroke-dashoffset: -670;
+  animation: draw-a 4s 12.5s forwards;
+}
+
+.platform_getting_started .database_2{
+  fill-opacity: 0;
+  stroke-width: 3;
+  stroke-dasharray: 670;
+  stroke-dashoffset: -670;
+  animation: draw-a 4s 13s forwards;
+}
+
+.platform_getting_started #line10{
+  fill-opacity: 0;
+  stroke-width: 3;
+  stroke-dasharray: 670;
+  stroke-dashoffset: -670;
+  animation: draw-a 4s 13.5s forwards;
+}
+
+.platform_getting_started .statsx_icon.fade-in, .statsx.fade-in{
+  animation-duration: 2s;
+  animation-delay: 13.5s;
+}
+
+.platform_getting_started #line11{
+  fill-opacity: 0;
+  stroke-width: 3;
+  stroke-dasharray: 670;
+  stroke-dashoffset: -670;
+  animation: draw-a 4s 14.5s forwards;
+}
+
+.platform_getting_started #line12{
+  fill-opacity: 0;
+  stroke-width: 3;
+  stroke-dasharray: 670;
+  stroke-dashoffset: -670;
+  animation: draw-a 4s 15s forwards;
+}
+
+.platform_getting_started .insightsx.fade-in {
+  animation-duration: 2s;
+  animation-delay: 15s;
+}
+
+.platform_getting_started #line13{
+  fill-opacity: 0;
+  stroke-width: 3;
+  stroke-dasharray: 670;
+  stroke-dashoffset: -670;
+  animation: draw-a 4s 16s forwards;
 }

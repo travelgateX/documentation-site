@@ -1,6 +1,6 @@
 +++
 title = "Getting Started"
-pagetitle = "Get Started with TravelgateX"
+pagetitle = "Get started with TravelgateX"
 description = ""
 weight = 1
 alwaysopen = false
