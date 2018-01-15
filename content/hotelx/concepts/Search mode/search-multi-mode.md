@@ -7,10 +7,7 @@ alwaysopen = false
 +++
 
 [Search](#search), [Quote](#quote) and [Book](#book) transactions must be executed sequentally in order to book hotel rooms in a Seller.
-
 Performs an hotel availability search over 1 or more [Seller accesses](/admin/resources/common-resources/#accesses)
-
-Depending Seller, search operations implitiy use supplier's cache.
 
 ## Search Multi Mode
 <svg class="search_multi_mode" width="617px" height="486px" viewBox="75 50 617 486" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">

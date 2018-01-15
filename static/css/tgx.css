@@ -1019,11 +1019,18 @@ table {
     stroke-dashoffset: 0;
   }
 } 
-.search_single_mode, .search_multi_mode {
+.search_single_mode {
   max-width: 95%;
   max-height: 95%;
   display: block;
   margin: 50px auto;
+}
+
+.search_multi_mode{
+  max-width: 95%;
+  max-height: 95%;
+  display: block;
+  margin: 10px auto 40px auto;
 }
 .search_single_mode .circle-one, .search_multi_mode .circle-one {
   fill-opacity: 0;
