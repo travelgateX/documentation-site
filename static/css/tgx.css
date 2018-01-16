@@ -1260,12 +1260,12 @@ table {
 }
 
 .platform_getting_started .hotel_icon.fade-in, .hotel.fade-in{
-  animation-delay: 10s;
+  animation-delay: 9.5s;
 }
 
 .platform_getting_started .hotel_wholesalers.fade-in, .hotel_wholesalers_icon.fade-in{
   animation-duration: 2s;
-  animation-delay: 10.5s;
+  animation-delay: 10s;
 }
 
 .platform_getting_started #line6{
