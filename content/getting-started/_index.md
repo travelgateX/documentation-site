@@ -7,7 +7,7 @@ alwaysopen = false
 isDirectory=false
 +++
 
-Welcome to TravelgateX! Get familiar with the TravelgateX products and explore their features:
+**Welcome to TravelgateX!** Have a look around and get familiar with the TravelgateX products and their features:
 
 {{%custom-children%}}
 
