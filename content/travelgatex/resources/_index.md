@@ -1,10 +1,10 @@
 +++
 title = "Resources"
-pagetitle = "Important Information"
-description = "Quotas, Release notes"
+pagetitle = "New Updates & Releases"
+description = "New Updates & Releases"
 icon="fa-file-text"
 weight = 6
-alwaysopen = false
+alwaysopen = true
 +++
 
 {{%custom-children-lv2%}}
