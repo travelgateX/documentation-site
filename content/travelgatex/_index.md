@@ -1,6 +1,6 @@
 +++
 title = "TravelgateX"
-pagetitle = "The Platform"
+pagetitle = "Platform"
 description = "TravelgateX - The Ultimate Platform For The Travel Trade"
 weight = 2
 alwaysopen = false
