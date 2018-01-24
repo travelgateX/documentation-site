@@ -1,9 +1,9 @@
 +++
-title = "Release Notes"
-pagetitle = "Platform Changelog"
+title = "New Realeases & Updates"
+pagetitle = "on the Platform"
 description = "Release Notes and Changelog"
 weight = 2
 alwaysopen = false
 +++
 
-This page contains release notes for features and updates to the travelgateX GraphQL API.
+Check out this list of new releases and changes applied on the **TravelgateX GraphQL API**.
