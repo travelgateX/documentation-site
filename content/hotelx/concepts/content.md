@@ -18,10 +18,10 @@ Each file has a different function depending of the name has a sense or another 
 
 To process files correctly need to have a specific file names otherwise the process will fault.
 
-* Rank1 (Hotels with sell) Name file --> (rank1.csv)
-* Rank2 (Hotels direct contraction) Name file --> (rank2.csv)
-* Rank3 (Hotels direct sell) Name file --> (rank3.csv)
-* Rank4 (Top sell hotels current year) Name file --> (rank4.csv)
+* Rank1 (Hotels with sell) file name --> (rank1.csv)
+* Rank2 (Hotels direct contraction) file name --> (rank2.csv)
+* Rank3 (Hotels direct sell) file name --> (rank3.csv)
+* Rank4 (Top sell hotels current year) file name --> (rank4.csv)
 
 ### Header fields (mandatory)
 
@@ -40,4 +40,4 @@ Example file format (rank1.csv):
  
 ### Process file
 
-When the file is done the next step is upload it in TRAVELGATEX ftp (Travelgate provided ftp access) and then the process starts automatically with the validation of file name and headers fields, finally we read row by row and update portfolio hotel.
+When the file is done the next step is upload it in TRAVELGATEX ftp (Travelgate provided ftp access) and then the process starts automatically with the validation of file name and headers fields, finally we read row by row and update hotel rank.
