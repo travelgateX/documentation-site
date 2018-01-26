@@ -10,30 +10,34 @@ Content operations can be used in order to upload and update information about d
 
 ## Ranking Hotels process
 
-This process allow to rank hotels from some differents business views, to do this action need to upload a file in csv format with a specific name file and header name too.
+The mail goal of this process is allow to rank hotels to improve the portfolio, to do this action need to upload a file in csv format with a specific name file and headers fields.
 
 ### File names (mandatory)
 
-Configuration to use when interacting with a _supplier_, which includes:
+Each file has a different function depending of the name has a sense or another from the business point of view:
 
-* Rank1 (Top sell hotels)
-* Rank2 (Top sell hotels)
-* Rank3 (Top sell hotels)
-* Rank4 (Top sell hotels)
+To process files correctly need to have a specific file names otherwise the process will fault.
+
+* Rank1 (Hotels with sell) Name file --> (rank1.csv)
+* Rank2 (Hotels direct contraction) Name file --> (rank2.csv)
+* Rank3 (Hotels direct sell) Name file --> (rank3.csv)
+* Rank4 (Top sell hotels current year) Name file --> (rank4.csv)
 
 ### Header fields (mandatory)
 
-To process file correctly need to have a specific names for Header otherwise the process will fault.
+To process file correctly need to have a specifics headers fields names otherwise the process will fault.
 
-* provider_id
-* hotel_code
-* rank
+Names fields (mandatory):
 
-Example:
+* provider_id (string)
+* hotel_code (string)
+* rank (boolean 1,0)
 
-provider_id,hotel_code,rank
-travelgatex,2018,1
+Example file format (rank1.csv):
+
+**provider_id,hotel_code,rank**
+**travelgatex,2018,1**
  
 ### Process file
 
-When the file is done the next step is upload it to ftp (Travelgate provided url, user and password) and then the process starts automatically.
+When the file is done the next step is upload it in TRAVELGATEX ftp (Travelgate provided ftp access) and then the process starts automatically with the validation of file name and headers fields, finally we read row by row and update portfolio hotel.
