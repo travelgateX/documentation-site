@@ -31,7 +31,7 @@ Code Source, Context Destination, Code Destination
 10000,TOU,1274249
 ```
 
-File must be uploaded to your organization directory [SFTP](/travelgatex/data-automation/ftp)
+File must be uploaded to your organization directory [SFTP](/travelgatex/data-automation/uploading-strategies)
 
 ## Configuration
 
