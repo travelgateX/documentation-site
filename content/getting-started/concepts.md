@@ -1,13 +1,13 @@
 +++
-title = "Understanding"
-pagetitle = "the common concepts"
-description = "Understand Concepts"
+title = "Concepts"
+pagetitle = ""
+description = "Understanding the concepts"
 icon = "fa-question-circle" 
 weight = 3
 alwaysopen = false
 +++
 
-TravelgateX offers a set of [Products](/products) ready to be integrated using a single [GraphQL](/graphql-api/) endpoint.
+TravelgateX offers a set of [Products](/products) ready to be integrated using a single [GraphQL](/graphql-api/) endpoint. If you're not sure about a specific concept, feel free to check our guide bellow to understand the basic concepts.
 
 ## GraphQL API
 
