@@ -7,7 +7,7 @@ weight = 1
 alwaysopen = false
 +++
 
-## Quick Start
+## How it works
 
 With GraphQL API you'll have access to all of our products and services through a single endpoint. 
 
