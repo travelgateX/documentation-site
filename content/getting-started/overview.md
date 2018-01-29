@@ -257,7 +257,6 @@ With GraphQL API you'll have access to all of our products and services through 
 </svg>
 
 
-
 ## Our Products
 
 Choose between our different products and start building your app.
@@ -268,22 +267,19 @@ Choose between our different products and start building your app.
 - **Insights API:** Become a true data-first decision maker. All the requests, all the searches, everything you've made with us will be available in Insight.
 - **Mappea:** A collaborative Hotel Mapping. Use this API to map your `providers` or to make that everything you have mapped is accurate.
 
-
-## Join the TravelgateX Partner Program
+## Join the TravelgateX partner program
 
 Start building your travel API by joining the TravelgateX partner program. The design of a registration form for developers is already in process but in the meantime you're able to [sign up through us directly](mailto:sales@travelgatex.com) to become a partner.
 
-## Check the documentation
+## Have a look at the documentation
 
-Documentation is generated from GraphQL schema. Through the [Playground API](https://api.travelgatex.com) you are able to use the multiple columns navigation and understand how every query works and what type of information it returns.
+All the documentation is generated from GraphQL schema. Use the multiple columns navigation of the [Playground](https://api.travelgatex.com) to see and understand what information will be returned by each query.
 
 {{<figure src="/images/graphql_playground.gif" link="https://api.travelgatex.com"  alt="TravelgateX Schema Documenation">}}
 
-## Join our community
+## Be part of the community
 
 Join our [free community forum](discourse.travelgatex.com) using your TravelgateX username and password. Our community is being run by [Discourse](https://www.discourse.org/) to simplify and give the best experience to our members.
-
-## Need more help? Just ask.
 
 Although the API has been designed to be very intuitive and easy to read, we are aware that some concepts can be confusing and the process of creating an API overwhelming. That's why we're here to help! You have access to a complete API documentation guide available inside the [Playground](https://api.travelgatex.com), a large community with questions being answered by experienced members to help each other and a support team ready to solve any doubts that you might have during the process.
 
