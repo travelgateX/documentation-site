@@ -51,3 +51,10 @@ Example file format (rank1.csv):
 ### Process file
 
 In order to process the file it must be uploaded to your organization's FTP folder in the TravelgateX Platform.
+
+### Template File
+
+You can download a temaplate CSV file [here](/content/rank1.csv)
+
+
+
