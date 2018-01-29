@@ -81,6 +81,7 @@
   "operator": "type",
   "typename": "Query"
 }
+A query is a request for information from a database.
 ## GraphQL Schema definition
 
 {{% graphql-schema-type %}}
