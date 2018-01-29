@@ -24,7 +24,7 @@ The two types of allowed operations in TravelgateX GraphQL API are:
 * [Queries](http://graphql.org/learn/queries/)
 * [Mutations](http://graphql.org/learn/queries/)
 
-If you wish to learn [how to use a GraphQL API](/learning-graphql/) feel free to visit our guide.
+If you wish to learn [how to use a GraphQL API](http://docs.travelgatex.com/learning-graphql/) feel free to visit our guide.
 
 ## GraphQL Endpoint
 
