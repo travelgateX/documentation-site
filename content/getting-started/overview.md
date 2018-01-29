@@ -7,6 +7,8 @@ weight = 1
 alwaysopen = false
 +++
 
+## How it works
+
 With GraphQL API you'll have access to all of our products and services through a single endpoint. 
 
 ## How it works
@@ -273,20 +275,20 @@ Choose between our different products and start building your app.
 
 Start building your travel API by joining the TravelgateX partner program. The design of a registration form for developers is already in process but in the meantime you're able to [sign up through us directly](mailto:sales@travelgatex.com) to become a partner.
 
+## Check the documentation
 
-## Documentation
-Documentation is generated from GraphQL schema. You are able to use multiple columns and keyboard-based navigation via the [Playground](https://api.travelgatex.com)API.
+Documentation is generated from GraphQL schema. Through the [Playground API](https://api.travelgatex.com) you are able to use the multiple columns navigation and understand how every query works and what type of information it returns.
 
 {{<figure src="/images/graphql_playground.gif" link="https://api.travelgatex.com"  alt="TravelgateX Schema Documenation">}}
 
-## Join the Community
+## Join our community
 
 Join our [free community forum](discourse.travelgatex.com) using your TravelgateX username and password. Our community is being run by [Discourse](https://www.discourse.org/) to simplify and give the best experience to our members.
 
-## Help: Learn with the Community
+## Need more help? Just ask.
 
 Although the API has been designed to be very intuitive and easy to read, we are aware that some concepts can be confusing and the process of creating an API overwhelming. That's why we're here to help! You have access to a complete API documentation guide available inside the [Playground](https://api.travelgatex.com), a large community with questions being answered by experienced members to help each other and a support team ready to solve any doubts that you might have during the process.
 
-## Can't find your answer?
+## Can't find your answer? Contact our service desk.
 
 Got any technical questions or need support from our team? [We’re here to help. Get in touch](https://xmltravelgate.atlassian.net/servicedesk/customer/portal/7) through Jira Service Desk using the username and password that has been sent to you together with the welcome pack. Let us know if you haven't received it or can't find it so we can send it to your email address again.
