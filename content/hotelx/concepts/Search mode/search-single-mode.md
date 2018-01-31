@@ -6,10 +6,11 @@ weight = 3
 alwaysopen = false
 +++
 
-[Search](#search), [Quote](#quote) and [Book](#book) transactions must be executed sequentally in order to book hotel rooms in a Seller.
-Performs an hotel availability search over 1 or more [Seller accesses](/admin/resources/common-resources/#accesses)
+On this page you will leanr about Transactional Booking Flow. Search, quote and confirm a reservation.
 
 ## Search Single Mode
+[Search](#search), [Quote](#quote) and [Book](#book) transactions must be executed sequentally in order to book hotel rooms in a Seller. Performs an hotel availability search over 1 or more [Seller accesses](/admin/resources/common-resources/#accesses)
+
 <svg class="search_single_mode" width="504px" height="269px" viewBox="59 83 504 269" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <defs>
         <linearGradient x1="100%" y1="50%" x2="0%" y2="50%" id="linearGradient-1">
