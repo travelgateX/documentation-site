@@ -6,7 +6,7 @@ weight = 3
 alwaysopen = false
 +++
 
-On this page you will leanr about Transactional Booking Flow. Search, quote and confirm a reservation.
+On this page you will learn about **Transactional Booking Flow**. Search, quote and confirm a reservation.
 
 ## Search Single Mode
 [Search](#search), [Quote](#quote) and [Book](#book) transactions must be executed sequentally in order to book hotel rooms in a Seller. Performs an hotel availability search over 1 or more [Seller accesses](/admin/resources/common-resources/#accesses)
