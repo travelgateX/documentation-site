@@ -1,17 +1,19 @@
 +++
 title = "Management Flow"
-pagetitle = "Manage and Control Bookings"
+pagetitle = ""
 description = "Learn about Management Flow. Cancellations and Booking List"
 weight = 4
 alwaysopen = false
 +++
 
-Manage operations can be used in order to operate above Seller's bookings.
+On this page you will learn how to manage and control bookings and management flow. Managing operations can be used in order to operate above Seller's bookings.
 
-## Cancel
+## Cancellation
+
 Performs a Seller [booking](/product/connectx/hotel/concepts/book-transactions/#book) cancellation.
 
 ### Operation
+
 ```json
 {
   "mutation": {
@@ -23,13 +25,16 @@ Performs a Seller [booking](/product/connectx/hotel/concepts/book-transactions/#
 ```
 
 ### PlayGround Samples
+
 * [hotelCancel](https://graphqlbin.com/JYRtB)
 
 
 ## Booking
+
 Performs a Seller booking list or detail.
 
 ### Operation
+
 ```json
 {
   "query": {

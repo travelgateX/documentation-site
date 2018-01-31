@@ -1,6 +1,6 @@
 +++
 title = "Data Automation"
-pagetitle = "Bulk Data Automation"
+pagetitle = ""
 description = "Automate bulk data operations"
 icon = "fa-database" 
 weight = 4
@@ -8,11 +8,13 @@ alwaysopen = false
 isDirectory = false
 +++
 
-Many of TravelgateX's products use client's data in order to perform tasks. These data can either be uploaded to our platform via SFTP or there's a `mutation` that does the same job. It's up to you to decide how to get the data to our servers.
+### Bulk Data Automation
 
-The reasoning behind uploading data has to do with the overall performance of the applications. Our APIs have been built from the ground up with performance in mind, this means that we **must** store data _inside_ the application in order we can keep the response time to a minimum. 
+Many of TravelgateX's products use client's data in order to perform tasks. You can upload these data to our platform either by uploading it via SFTP or via a `mutation`. It's up to you to decide how to get the data to our servers.
 
-The data we **must** to store _per product_ is the following:
+Our APIs have been built from the ground up with performance in mind, this means that we must store data _inside_ the application in order to keep the response time to a minimum. 
+
+The data we must store _per product_ is the following:
 
 ### HotelX
 

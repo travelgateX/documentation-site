@@ -49,6 +49,8 @@
   "operator": "type",
   "typename": "Access"
 }
+An Access is a set of credentials and configuration in order to access a Provider.
+
 ## GraphQL Schema definition
 
 {{% graphql-schema-type %}}

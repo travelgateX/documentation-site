@@ -7,24 +7,24 @@ weight = 1
 alwaysopen = false
 +++
 
-This page provides an overview of _travelgateX_ platform. It's used as reference 
+This page provides an overview of _travelgateX_ platform.
 
-# GraphQL Gateway
+## GraphQL Gateway
 
-**ConnectX** is the travel API completely based in GraphQL in the industry. Most travel APIs are old legacy XML Soap APIs. The main benefit of using GraphQL, is that each client is ultimately responsible over what it wants to be returned. If you wish to read more about it, [visit GraphQL guide](/learning-graphql/overview/#graphql-at-travelgatex).
+**ConnectX** is the travel API completely based in GraphQL and unlike many old legacy XML Soap APIs, GraphQL enables each client to return exactly what they want. If you wish to read more about it, [visit GraphQL guide](/learning-graphql/overview/#graphql-at-travelgatex).
 
-The architecture doesn't differ from many modern APIs. There’s an API Gateway, which takes care of basic procedures such as authentication, authorization and it also acts like a shield to protect us from DoS attacks and handles throttling. On the hand, Analytics is also an important part in the gateway. 
+The architecture doesn't differ from many modern APIs. There’s an API Gateway, which takes care of basic procedures such as authentication, authorization and it also acts like a shield to protect us from DoS attacks and also handles throttling. On the other hand, Analytics is also an important part in the gateway. 
 
-Our Gateway is the only endpoint to **access all of our APIs**. It is written in NodeJS, fast, stable, secure and fault tolerant load balanced between many datacenters from four different cloud providers, namely [Microsoft Azure](https://azure.microsoft.com/), [Google Cloud Platform](https://cloud.google.com/), [Hetzner](https://www.hetzner.de/) and [TotalUptime](http://totaluptime.com/).
+Our Gateway is the only endpoint to **access all of our APIs**. It is written in NodeJS, making it fast, stable, secure, fault tolerant and load balanced between many datacenters from four different cloud providers: [Microsoft Azure](https://azure.microsoft.com/), [Google Cloud Platform](https://cloud.google.com/), [Hetzner](https://www.hetzner.de/) and [TotalUptime](http://totaluptime.com/).
 
-# Using the API
+## Using the API
 
 The two types of allowed operations in TravelgateX GraphQL API are:
 
 * [Queries](http://graphql.org/learn/queries/)
 * [Mutations](http://graphql.org/learn/queries/)
 
-If you wish to learn [how to use a GraphQL API](/learning-graphql/) feel free to visit our guide.
+If you wish to learn [how to use a GraphQL API](http://docs.travelgatex.com/learning-graphql/) feel free to visit our guide.
 
 ## GraphQL Endpoint
 
@@ -32,7 +32,7 @@ One of the benefits of using GraphQL is that there's only one single endpoint. Y
 
 {{% alert theme="warning" %}}https://api.travelgatex.com{{% /alert %}} 
 
-## Communicate with Server
+## Communicating with the Server
 
 To communicate with the GraphQL server, you'll need an access token with the right scopes. You are able to create a token by following the steps mentioned in [Security Overview](/travelgatex/security/overview).
 
@@ -58,17 +58,14 @@ curl -X\
    https://api.travelgatex.com
 ```
 
-# View the Graph
+## Viewing the Graph
 
-Using [graphql-voyager](https://github.com/APIs-guru/graphql-voyager), we represent [our GraphQL API](https://api.travelgatex.com) as an interactive graph.
+[Graphql-voyager](https://api.travelgatex.com/voyager) displays [our GraphQL API](https://api.travelgatex.com) in an interactive graph to help you understand its structure.
 
 > * Quick navigation on graph
 > * Left panel which provides more detailed information about every type
 > * "Skip Relay" option that simplifies graph by removing Relay wrapper classes
 > * Ability to choose any type to be a root of the graph
-
-
-You can open it in a new tab [here](https://api.travelgatex.com/voyager) if you wish.
 
 {{<figure src="/images/voyager.gif" link="https://api.travelgatex.com/voyager"  alt="TravelgateX Schema Documentation">}}
 
@@ -78,9 +75,9 @@ You can open it in a new tab [here](https://api.travelgatex.com/voyager) if you 
 We share [GraphQL Playgrounds](https://github.com/graphcool/graphql-playground) with common scenarios using products.
 Playgrounds are shared in [product](/product/) reference sections, for example you can use [ConnectX Hotel Playground](https://graphqlbin.com/JYRtB)
 
-It's important to use the correct Headers. If you want to use test headers, insert `"Authorization":"Apikey q8ggxpoVDW76Kw918hwnnRvxlZmAP2QZ"`
+Keep in mind that it's important to use the correct Headers. If you wish to use test headers, insert `"Authorization":"Apikey q8ggxpoVDW76Kw918hwnnRvxlZmAP2QZ"`
 
-You can easily **share your Queries with other by generating a link** using the _share_ button available on the [GraphQL Bin](https://github.com/graphcool/graphql-playground#how-does-graphql-bin-work). The GraphQL Bin works as a Pastebin for your GraphQL queries including the context (endpoint, HTTP headers, open tabs etc).
+You can easily **share your Queries with others by generating a link** using the _share_ button available on the [GraphQL Bin](https://github.com/graphcool/graphql-playground#how-does-graphql-bin-work). The GraphQL Bin works as a Pastebin for your GraphQL queries including the context (endpoint, HTTP headers, open tabs etc).
 
 ## Conventions
 

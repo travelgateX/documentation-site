@@ -55,6 +55,8 @@
   "operator": "type",
   "typename": "API"
 }
+An API is a set of functions and procedures that allow the creation of applications which access the features or data of an operating system, application, or other service.
+
 ## GraphQL Schema definition
 
 {{% graphql-schema-type %}}
