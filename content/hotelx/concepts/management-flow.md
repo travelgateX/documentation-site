@@ -6,7 +6,7 @@ weight = 4
 alwaysopen = false
 +++
 
-On this page you will understand how to manage and control bookings and management flow. Managing operations can be used in order to operate above Seller's bookings.
+On this page you will learn how to manage and control bookings and management flow. Managing operations can be used in order to operate above Seller's bookings.
 
 ## Cancellation
 
