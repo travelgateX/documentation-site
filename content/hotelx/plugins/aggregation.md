@@ -7,11 +7,9 @@ weight = 3
 alwaysopen = false
 +++
 
-# Overview
+**Aggregation plugins** extends [HotelX](/hotelx/) allowing filtering `Supplier` options and respones using different business rules.
 
-Aggregation plugins extends [HotelX](/hotelx/) allowing filtering `Supplier` options and respones using different business rules.
-
-# KeyFilter
+### KeyFilter
 
 Filters `Supplier` options based on _field keys_ applying a selector _function_ over _field values_. 
 
@@ -31,22 +29,25 @@ It's based on [SQL Aggregate Functions](https://www.postgresql.org/docs/current/
     * PriceNet
     * PriceGross
 
-## Configuration
+### Configuration
 
 ```json
 {
 }
 ```
 
-## Parameters
+### Parameters
 
-### keys: [String!]
+#### keys: [String!]
+
 Values must be a valid Field Key.
 
-### function: String!
+#### function: String!
+
 Value must be a valid Function.
 
-### value: String!
+#### value: String!
+
 Value must be a valid Field Value.
 
 
