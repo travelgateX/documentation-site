@@ -1,6 +1,6 @@
 +++
 title = "Hotel Content"
-pagetitle = "& Static Content"
+pagetitle = "Static Content"
 description = "Learn about how manage content data to manage in your site. Hotel, Boards, Categories..."
 weight = 5
 alwaysopen = false
@@ -12,11 +12,11 @@ On this page you will learn how to manage content data in your site such as hote
 
 The main goal of this process is to create a hotel ranking and divide the whole portfolio so the hotel list is more manageable. Each classification or sub-list responds to specific commercial criteria, such as, the hotels directly contracted, the best offers, the best sales hotels, etc.
 
-Once the hotel ranking file(s) have been uploaded, the static hotel list method can filter hotels according to this ranking. To set up hotel ranking listsm you will need to upload a file in csv format with a specific name to your organisation's FTP.
+Once the hotel ranking file(s) have been uploaded, the static hotel list method can filter hotels according to this ranking. To set up hotel ranking lists you must upload a file in csv format using a specific name to identify the ranking in your organisation's FTP.
 
 ### File Names (mandatory)
 
-Each file has a different function depending on whether the name has one sense or another from a commercial point of view. To process files correctly, they must be named according to the following nameing convention:
+Each file can have different meanings. It's up to the file creator to give it a meaning according to his/her business needs. In order to process files correctly, they must be named according to the following naming convention:
 
 |File Nane| Description|
 |---------|------------|
@@ -48,4 +48,4 @@ To process the file, it must be uploaded to your organization's FTP folder in th
 
 ### Template File
 
-You can [download a template CSV file](/content/rank1.csv).
+For your convinience you can [download a template CSV file](/content/rank1.csv).
