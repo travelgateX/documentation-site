@@ -44,7 +44,7 @@ Example file format (rank1.csv):
  
 ### Process file
 
-To process the file, it must be uploaded to your organization's FTP folder in the TravelgateX Platform.
+To process the file, it must be uploaded to your organization's FTP folder in the TravelgateX Platform. More info on how to upload files please refer to the [data automation section](/travelgatex/data-automation/).
 
 ### Template File
 
