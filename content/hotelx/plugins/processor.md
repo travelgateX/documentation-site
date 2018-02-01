@@ -7,11 +7,7 @@ weight = 4
 alwaysopen = false
 +++
 
-# Overview
-
-Processor plugins extends [HotelX](/hotelx/) allowing multiple operation types.
-
-Processor plugins can modify _request_ and _response_ message, allowing a full range of operations:
+Processor plugins extends [HotelX](/hotelx/) allowing multiple operation types. It can modify _request_ and _response_ messages, allowing a full range of operations:
 
 * Split arrays
 * Join arrays
