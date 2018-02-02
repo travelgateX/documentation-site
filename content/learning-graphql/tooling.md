@@ -1,18 +1,16 @@
 +++
-title = "Tooling"
+title = "Tools"
 pagetitle = ""
 description = ""
 weight = 5
 alwaysopen = false
 +++
 
-## Tooling
+## Top tools to develop in GraphQL
 
-Please find below a collection of tools we've been using to help us develop in GraphQL. We have curated this list with the different goals each of the tools is for:
+Here is a collection of tools we've been using that have help us develop in GraphQL:
 
-### Designing Schemas
-
-We follow the **Schema First** methodology. There are many tools, the ones we tried and like most nowadays are:
+#### To design Schemas
 
 * APIs Guru's graphql-faker: https://github.com/APIs-guru/graphql-faker
 
@@ -56,6 +54,7 @@ Build, create and play with queries, it's fun!
 {{% alert theme="danger" %}}**TODO: Falta chicha!!**{{% /alert %}}
 
 ### Big List
-Very curated list full of different tools, resources, etc
+
+Here's even more tools, resources, etc.
 
 * [Awesome GraphQL](https://github.com/chentsulin/awesome-graphql)
