@@ -1,17 +1,17 @@
 +++
 title = "Overview"
-pagetitle = "All About Plugins"
+pagetitle = "Plugins Workflow"
 description = "Plugins workflow execution"
 icon = "fa-info-circle"
 weight = 1
 alwaysopen = false
 +++
 
-# Introduction
+### Introduction
 
 _Plugins_ are custom code, executed in [HotelX](/hotelx/) servers, that add or modify specific features. `Partner` can develop custom _plugins_, but in most cases, [HotelX](/hotelx/) offers enough basic _plugins_ to use.
 
-# Flows
+### Flows
 
 [HotelX](/hotelx/) _query_ or _mutation_ determine what _flow_ is executed. _Plugins_ can be executed in different _flows_: 
 
@@ -20,7 +20,7 @@ _Plugins_ are custom code, executed in [HotelX](/hotelx/) servers, that add or m
 * [hotelBook](/hotelx/concepts/booking-flow#book)
 * [hotelCancel](/hotelx/concepts/management-flow#cancel)
 
-# Steps
+### Steps
 
 _Step_ is the minium container where _plugins_ are executed **sequentially**.
 
@@ -33,7 +33,7 @@ _Step_ is the minium container where _plugins_ are executed **sequentially**.
 | _Response_ | _Before_ [HotelX](/hotelx/) responds message to to `Buyer`.|
 
 
-# Plugin Types
+### Plugin Types
 
 Plugin types supported by [HotelX](/hotelx/): 
 
@@ -47,7 +47,7 @@ Plugin types supported by [HotelX](/hotelx/):
 * [Post Step](../processor): Last execution on every _step_.
 
 
-# Plugin Context Execution
+### Plugin Context Execution
 
 Once _message_ enters on [HotelX](/hotelx/) it flows over different _flows_ and _steps_. That's why  _plugins_ are executed in different _contexts_.
 
@@ -58,7 +58,7 @@ _Context_ allows:
 
 With _context_ information developers can personalize _plugin_ features, more information about plugin development can be found [here](../development).
 
-# Plugin Step Execution
+### Plugin Step Execution
 
 [HotelX](/hotelx/) determine the order and [plugin types](#plugintypes) executed for each _step_.
 

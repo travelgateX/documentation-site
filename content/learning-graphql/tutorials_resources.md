@@ -6,20 +6,21 @@ weight = 6
 alwaysopen = false
 +++
 
-The GraphQL ecosystem is growing _fast_. Apart from facebook's and Graphql.org's official documentation, each day as more and more development teams embrace the technology new blog posts, articles, tutorials, videos and learning material in general is published online.
+As you can see GraphQL is a fast growing ecosystem. Apart from Facebook's and Graphql.org's official documentation, there are more and more development teams embracing this technology and you can now find a lot of articles, tutorial and videos talking about it.
 
-This list is intended to serve as a examples we've used and found useful when adopting the technology. We've separated between tutorials get-your-hands-dirty full action kind to resources, which are reading materials, podcasts or any other kind of documentation, written or not, which will help you to _Think in GraphQL_.
+However we want to be part of this community and help you discover this new technology and its features. That's why we have gathered some of the best tutorials for you to learn, step by step, how to use it. Have a look at the list bellow and click on any of the resources, materials, podcast and documentation to start.
 
-We hope you enjoy!
+Enjoy it!
 
-## Tutorials
+
+### GraphQL Tutorials
 
 - https://github.com/blog/2412-learn-graphql-with-github 
 
 {{% alert theme="danger" %}}**TODO: Falta chicha!!**{{% /alert %}}
 
 
-## Resources
+### GraphQL Resources
 
 - [GraphQL official documentation](http://graphql.org/learn/)
 - [Apollo](http://dev.apollodata.com/)
