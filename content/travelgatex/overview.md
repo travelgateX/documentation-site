@@ -62,7 +62,7 @@ curl -X\
 
 There are several ways to know about our graph:
 
-* [Reference Documentation](/reference) renders TravelgateX graph in a pretty HTML documentation.
+* [Reference Documentation](/travelgatex/reference/) renders TravelgateX graph in a pretty HTML documentation.
 * [Schema Definition](https://api.travelgatex.com) allows interactive, multi-column schema documentation.
 * [Graphql-voyager](https://api.travelgatex.com/voyager) displays [our GraphQL API](https://api.travelgatex.com) in an interactive graph to help you understand its structure.
 

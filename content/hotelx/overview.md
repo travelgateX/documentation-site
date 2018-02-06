@@ -7,9 +7,9 @@ weight = 1
 alwaysopen = false
 +++
 
-HotelX is the ultimate connectivity solution. Besides **enabling you to connect to multiple `Sellers`**, it also adds business logic **solving most of the problems commonly found in the travel business** in an elegant and efficient way.
+HotelX is the ultimate connectivity solution. Besides **enabling you to connect to multiple `Suppliers`**, it also adds business logic **solving most of the problems commonly found in the travel business** in an elegant and efficient way.
 
-{{< figure src="/images/connectx_diagram.png#center" alt="High Level ConnectX Architecture" attr="" >}}
+{{< figure src="/images/connectx_diagram.png#center" alt="High Level HotelX Architecture" attr="" >}}
 
 Each and every layer discribed in the this figure is explained as follows:
 
@@ -24,7 +24,7 @@ Some of the funcionalities of the business logic layer include:
 * Sort & Filter results
 * Add pricing/markups
 * Currency Exchange
-* [Plugins Execution](#plugins)
+* [Plugins](#plugins)
 
 ### Plugins
 
@@ -42,6 +42,6 @@ Our cache layer, called [Speed](https://www.travelgatex.com/products/speed.html)
 
 We use advanced Machine Learning models to predict how long each cached item will be valid from taking into account a large number of variables set in the request. This cache is hosted in [Google's BigTable](https://cloud.google.com/bigtable/), a "Massively Scalable NoSQL" database built with performance and scalability in mind.
 
-### Sellers
+### Suppliers
 
-Each and every `Seller` works in a different way. Most are old legacy SOAP APIs and none of them are GraphQL. We have developed them all, and learned from it. We are connected to more than 600 `Sellers` seemlessly.
+Each and every `Supplier` works in a different way. Most are old legacy SOAP APIs and none of them are GraphQL. We have developed them all, and learned from it. We are connected to more than 600 `Suppliers` seemlessly.
