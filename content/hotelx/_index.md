@@ -1,6 +1,6 @@
 +++
 title = "HotelX"
-pagetitle = "Hotel Search API"
+pagetitle = "Hotel API"
 description = "HotelX: NextGen Hotel Search API"
 weight = 4
 alwaysopen = false

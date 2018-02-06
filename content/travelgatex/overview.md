@@ -11,7 +11,7 @@ This page provides an overview of _travelgateX_ platform.
 
 ## GraphQL Gateway
 
-**ConnectX** is the travel API completely based in GraphQL and unlike many old legacy XML Soap APIs, GraphQL enables each client to return exactly what they want. If you wish to read more about it, [visit GraphQL guide](/learning-graphql/overview/#graphql-at-travelgatex).
+**TravelgateX** is the travel API completely based in GraphQL and unlike many old legacy XML Soap APIs, GraphQL enables each client to return exactly what they want. If you wish to read more about it, [visit GraphQL guide](/learning-graphql/overview/#graphql-at-travelgatex).
 
 The architecture doesn't differ from many modern APIs. There’s an API Gateway, which takes care of basic procedures such as authentication, authorization and it also acts like a shield to protect us from DoS attacks and also handles throttling. On the other hand, Analytics is also an important part in the gateway. 
 
@@ -53,27 +53,23 @@ curl -X\
    POST\
    -H "Content-Type: application/json" \
    -H "Authorization: Apikey q8ggxpoVDW76Kw918hwnnRvxlZmAP2QZ"  \
-   --data '{"query":"{searchStatusService{code description}}"}' \
+   --data '{"query":"{hotelX{searchStatusService{code description}}}"}' \
    --compressed \
    https://api.travelgatex.com
 ```
 
-## Viewing the Graph
+## Graph Reference
 
-[Graphql-voyager](https://api.travelgatex.com/voyager) displays [our GraphQL API](https://api.travelgatex.com) in an interactive graph to help you understand its structure.
+There are several ways to know about our graph:
 
-> * Quick navigation on graph
-> * Left panel which provides more detailed information about every type
-> * "Skip Relay" option that simplifies graph by removing Relay wrapper classes
-> * Ability to choose any type to be a root of the graph
-
-{{<figure src="/images/voyager.gif" link="https://api.travelgatex.com/voyager"  alt="TravelgateX Schema Documentation">}}
-
+* [Reference Documentation](/reference) renders TravelgateX graph in a pretty HTML documentation.
+* [Schema Definition](https://api.travelgatex.com) allows interactive, multi-column schema documentation.
+* [Graphql-voyager](https://api.travelgatex.com/voyager) displays [our GraphQL API](https://api.travelgatex.com) in an interactive graph to help you understand its structure.
 
 ## Examples
 
 We share [GraphQL Playgrounds](https://github.com/graphcool/graphql-playground) with common scenarios using products.
-Playgrounds are shared in [product](/product/) reference sections, for example you can use [ConnectX Hotel Playground](https://graphqlbin.com/JYRtB)
+Playgrounds are shared per product, for example you can use [HotelX Hotel Playground](https://graphqlbin.com/JYRtB)
 
 Keep in mind that it's important to use the correct Headers. If you wish to use test headers, insert `"Authorization":"Apikey q8ggxpoVDW76Kw918hwnnRvxlZmAP2QZ"`
 
@@ -87,7 +83,7 @@ TravelgateX follows some conventions about schema definition:
 * [Definition of custom scalar types](#Custom Scalar Types)
 * [Token Based Authentication](/getting-started/security/#Authentication)
 
-## Relay Implementation
+### Relay Implementation
 
 TravelgateX uses [Relay](https://facebook.github.io/relay/) schema requirements for its own Resources. Other resources, such as _Seller search response_, are not modeled with Relay practices.
 
