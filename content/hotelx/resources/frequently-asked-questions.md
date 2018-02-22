@@ -30,6 +30,11 @@ Yes, It is possible request availability  using GIATA codes, first of all you ne
 
 ### Can I get Daily-prices in Search Response?
 It will depend if the supplier offer the information. In case that the information is returned by the supplier, you will find it through Roomprice string-->PriceBreakdown.
+ 
+### What happen if I request availability with a currency that the supplier doesn´t have it?
+For these cases you will have two options:
+- Apply the exchange rates using a pluggin (this pluggin contains the exchange rates previously loaded by you)
+- Don´t apply any exchange rate and you will receive the supplier´s currency.
 
 
 
