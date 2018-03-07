@@ -56,7 +56,7 @@ discourseUrl = "http://community.travelgatex.com/"
 
 ############## docdock params
 
-  
+
   #custom_css = ["css/blue.css"]
 
   # Meta
@@ -76,7 +76,7 @@ discourseUrl = "http://community.travelgatex.com/"
 
     # You can add custom links before or after the default links
     # Assign a weight to define the order
-    
+
     # prepended links
     [[menu.prepend]]
       url = "http://api.travelgatex.com"
@@ -88,12 +88,12 @@ discourseUrl = "http://community.travelgatex.com/"
      url = "http://discourse.travelgatex.com/"
      name = "Community"
      weight = 10
-  
+
   # Hero section
   [params.hero]
     title = "Finally, a travel API you'll&nbsp;&nbsp;<i title='love &#9825;' class='icon-heart'></i>"
     subtitle = "Add-on solutions specially designed to make the most of your integrations. <p>Welcome to <strong>ConnectX</strong>, the world's most _advanced_ and _disruptive_ <strong>GraphQL</strong> based Travel API.</p>"
- 
+
   # Intro section
   # Available icons: http://simplelineicons.com/
   [params.intro]
@@ -209,7 +209,7 @@ discourseUrl = "http://community.travelgatex.com/"
       person = 'Vitali, Senior Developer <a href="http://www.roomertravel.com/" target="_blank">Roomer Travel</a> <span class="subtext">CTO</span>'
       img = "person3.jpg"
       alt = "Person3"
-    
+
 
 
 
@@ -235,7 +235,7 @@ discourseUrl = "http://community.travelgatex.com/"
 
       [[params.services.item]]
       title = "CMS &amp; eCommerce"
-      description = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean"      
+      description = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean"
       icon = "icon-monitor"
 
   # About section
@@ -278,13 +278,13 @@ discourseUrl = "http://community.travelgatex.com/"
         ["icon-twitter", "#"],
         ["icon-facebook", "#"],
         ["icon-dribbble", "#"]
-      ]      
+      ]
 
   # Counters section
   [params.counters]
     enable = true
     title = "Stats"
-    background = "full_image_1.jpg"
+    background = "full_image_2.jpg"
 
     [[params.counters.item]]
       description = "Live Suppliers"
@@ -324,7 +324,7 @@ discourseUrl = "http://community.travelgatex.com/"
     map = false
     title = "Get in touch"
     description = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts."
-    
+
     # Available icons: http://simplelineicons.com/
     details = [
         ["icon-home", "5555 Love Paradise 56 New Clity 5655, <br> Excel Tower United Kingdom"],
