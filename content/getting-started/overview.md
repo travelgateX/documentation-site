@@ -7,9 +7,7 @@ weight = 1
 alwaysopen = false
 +++
 
-With GraphQL API you'll have access to all of our products and services through a single endpoint. 
-
-## How it works
+Get access to all of our products and services through a single endpoint API. 
 
 <svg class="platform_getting_started" width="779px" height="564px" viewBox="229 117 779 564" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <defs>
@@ -256,33 +254,3 @@ With GraphQL API you'll have access to all of our products and services through 
     </g>
 </svg>
 
-
-## Our Products
-
-Choose between our different products and start building your app.
-
-- **[HotelX](/hotelx/)**: Hotel search & booking API.
-- **ConnectX Flights:** _NDC compliant_ flight search & booking API.
-- **Stats:** All the requests sent and received, their response times and status codes.
-- **Insights API:** Become a true data-first decision maker. All the requests, all the searches, everything you've made with us will be available in Insight.
-- **Mappea:** A collaborative Hotel Mapping. Use this API to map your `providers` or to make that everything you have mapped is accurate.
-
-## Join the TravelgateX partner program
-
-Start building your travel API by joining the TravelgateX partner program. The design of a registration form for developers is already in process but in the meantime you're able to [sign up through us directly](mailto:sales@travelgatex.com) to become a partner.
-
-## Have a look at the documentation
-
-All the documentation is generated from GraphQL schema. Use the multiple columns navigation of the [Playground](https://api.travelgatex.com) to see and understand what information will be returned by each query.
-
-{{<figure src="/images/graphql_playground.gif" link="https://api.travelgatex.com"  alt="TravelgateX Schema Documenation">}}
-
-## Be part of the community
-
-Join our [free community forum](discourse.travelgatex.com) using your TravelgateX username and password. Our community is being run by [Discourse](https://www.discourse.org/) to simplify and give the best experience to our members.
-
-Although the API has been designed to be very intuitive and easy to read, we are aware that some concepts can be confusing and the process of creating an API overwhelming. That's why we're here to help! You have access to a complete API documentation guide available inside the [Playground](https://api.travelgatex.com), a large community with questions being answered by experienced members to help each other and a support team ready to solve any doubts that you might have during the process.
-
-## Can't find your answer? Contact our service desk.
-
-Got any technical questions or need support from our team? [We’re here to help. Get in touch](https://xmltravelgate.atlassian.net/servicedesk/customer/portal/7) through Jira Service Desk using the username and password that has been sent to you together with the welcome pack. Let us know if you haven't received it or can't find it so we can send it to your email address again.

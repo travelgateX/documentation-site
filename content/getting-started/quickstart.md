@@ -19,17 +19,14 @@ In order to start building your own API, you'll need to join the TravelgateX par
 
 Choose the desired product from the list with which you'd like to start building your app.
 
-- **[ConnectX Hotel](/products/connectx/hotel/quickstart/):** Hotel search & booking API.
-- **ConnectX Flights:** _NDC compliant_ flight search & booking API.
-- **Stats:** all the requests sent and received, their response times and status codes.
-- **Insights:** become a true data-first decision maker by leveraging our rich Insights API. All the requests, all the searches, everything you've made with us will be available through Insights.
-- **Mappea:** use this Hotel Mapping API to map your `sellers` or to check if everything you've mapped is accurate.
+- **[HotelX](/hotelx/)**: Hotel search, booking and content.
+- **StatsX**: Track the messages sent and received, their response times and status codes.
+- **InsightsX**: Become a true data-first decision maker. All the messages, all the searches, everything you've made with us will be available in Insight.
+- **MappeaX**: A collaborative Hotel Mapping. Use this API to map your `suppliers` or to make that everything you have mapped is accurate.
 
 ### Have a look at the documentation
 
 All the documentation is generated from GraphQL schema. Use the multiple columns navigation of the [Playground](https://api.travelgatex.com) to see and understand what information will be returned by each query.
-
-{{<figure src="/images/graphql_playground.gif" link="https://api.travelgatex.com"  alt="TravelgateX Schema Documenation">}}
 
 ### Be part of the community
 
@@ -39,5 +36,6 @@ Although the API has been designed to be very intuitive and easy to read, we are
 
 ### Can't find your answer?
 
-Got any technical questions or need support from our team? [We’re here to help. Get in touch](https://xmltravelgate.atlassian.net/servicedesk/customer/portal/7) through Jira Service Desk using the username and password that has been sent to you together with the welcome pack. Let us know if you haven't received it or can't find it so we can send it to your email address again.
+Got any technical questions or need support from our team? [We’re here to help. Get in touch](https://xmltravelgate.atlassian.net/servicedesk/customer/portal/7) through Jira Service Desk using the username and password that has been sent to you together with the welcome pack. Let us know if you haven't received it or can't find it so we can send it to your email address again
+
 

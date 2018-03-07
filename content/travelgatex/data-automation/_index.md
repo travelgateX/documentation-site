@@ -19,7 +19,6 @@ The data we must store _per product_ is the following:
 ### HotelX
 
 * [Mappings](/hotelx/plugins/mapping/)
-* Pricing Rules
-* Custom hotel lists (up to 4 different lists)
+* [Custom hotel lists](/hotelx/concepts/content/)
 
 {{%custom-children-lv2%}}
