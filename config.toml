@@ -300,7 +300,7 @@ discourseUrl = "http://community.travelgatex.com/"
       from = 0
       to = 623456
       interval = 50
-      speed = 2000
+      speed = 2200
 
     [[params.counters.item]]
       description = "Bookings Per Day"
@@ -316,30 +316,30 @@ discourseUrl = "http://community.travelgatex.com/"
       from = 0
       to = 132
       interval = 50
-      speed = 2000
+      speed = 1000
 
   # Contact section
   [params.contact]
     enable = false
     map = false
     title = "Get in touch"
-    description = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts."
+    description = "We´d love to hear from you! Please feel free to use any of the forms below to get in touch."
 
     # Available icons: http://simplelineicons.com/
     details = [
-        ["icon-home", "5555 Love Paradise 56 New Clity 5655, <br> Excel Tower United Kingdom"],
-        ["icon-phone", "(123) 465-6789"],
-        ["icon-envelope", "info@freehtml5.co"],
-        ["icon-globe", '<a href="http://freehtml5.co/" target="_blank">freehtml5.co</a>']
+        ["icon-home", "Carrer Galileo Galilei,<br>ParcBit 07121 Palma, Illes Balears, Spain"],
+        ["icon-phone", "(+34) 871 968 181"],
+        ["icon-envelope", "info@travelgatex.com"],
+        ["icon-globe", '<a href="http://www.travelgatex.com/" target="_blank">travelgatex.com</a>']
       ]
 
-    name = "Name"
+    name = "Full Name"
     email = "Email"
-    phone = "Phone"
+    phone = "Telephone"
     message = "Message"
     button = "Send message"
 
   # Footer section
   [params.footer]
     enable = true
-    copyright = '&copy; TravelgateX 2017. All Rights Reserved. An <a title="XTG" href="https://www.xmltravelgate.com/">XTG</a> Brand.'
+    copyright = '&copy; TravelgateX 2018. All Rights Reserved.TravelgateX is an <a title="XTG" target="_blank" href="https://www.xmltravelgate.com/">XTG</a> Brand.'
