@@ -284,7 +284,7 @@ discourseUrl = "http://community.travelgatex.com/"
   [params.counters]
     enable = true
     title = "Stats"
-    background = ""
+    background = "none"
 
     [[params.counters.item]]
       description = "Live Suppliers"
@@ -342,4 +342,4 @@ discourseUrl = "http://community.travelgatex.com/"
   # Footer section
   [params.footer]
     enable = true
-    copyright = '&copy; TravelgateX 2018. All Rights Reserved.TravelgateX is an <a title="XTG" target="_blank" href="https://www.xmltravelgate.com/">XTG</a> Brand.'
+    copyright = '&copy; TravelgateX 2018. All Rights Reserved.TravelgateX is an <a title="XTG" target="_blank" href="https://www.xmltravelgate.com/" style="color: white;font-weight: bold;">XTG</a> Brand.'
