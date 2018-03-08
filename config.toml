@@ -342,4 +342,4 @@ discourseUrl = "http://community.travelgatex.com/"
   # Footer section
   [params.footer]
     enable = true
-    copyright = '&copy; TravelgateX 2018. All Rights Reserved.TravelgateX is an <a title="XTG" target="_blank" href="https://www.xmltravelgate.com/" style="color: white;font-weight: bold;">XTG</a> Brand.'
+    copyright = '&copy; <a title="TGX" target="_blank" href="https://www.travelgatex.com/" style="color: white;font-weight: bold;">TravelgateX</a> 2018. All Rights Reserved.TravelgateX is an <a title="XTG" target="_blank" href="https://www.xmltravelgate.com/" style="color: white;font-weight: bold;">XTG</a> Brand.'
