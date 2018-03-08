@@ -5,6 +5,35 @@ weight = 2
 alwaysopen = false
 hidden = false
 +++
+## 2018-03-08
+
+⚠️  Input field `DestinationsCodes` was removed from input object type `HotelXDestinationListInput`
+
+⚠️  Field `boardData` was removed from object type `Destination`
+
+⚠️  Input field `ParameterInput.key` changed type from `ID!` to `String!`
+
+⚠️  Field `DestinationData.code` changed type from `String!` to `ID!`
+
+⚠️  `WebSearchResult` was removed
+
+✅  Enum value `NON_REFUNDABLE` was added to enum `RateRulesType`
+
+✅  Enum value `NORMAL` was added to enum `RateRulesType`
+
+✅  Input field `destinationCodes` was added to input object type `HotelXDestinationListInput`
+
+✅  Field `token` was added to object type `DestinationConnection`
+
+✅  Field `destinationData` was added to object type `Destination`
+
+✅  Field `destinationSearcher` was added to object type `HotelXQuery`
+
+✅  Field `destinations` was added to object type `HotelXQuery`
+
+✅  Type `HotelXDestinationSearcherInput` was added
+
+✅  Type `DestinationSearchResult` was added
 
 ## 2018-03-05
 
