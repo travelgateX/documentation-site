@@ -5,6 +5,14 @@ weight = 2
 alwaysopen = false
 hidden = false
 +++
+## 2018-03-14
+
+✅  Deprecation reason on field `AddOns.distribute` has changed from `` to `deprecated from 2018-03-12. You can find it in distribution AddOn.`
+
+✅  Field `distribution` was added to object type `AddOns`
+
+✅  Type `AddOn` was added
+
 ## 2018-03-08
 
 ⚠️  Input field `DestinationsCodes` was removed from input object type `HotelXDestinationListInput`
