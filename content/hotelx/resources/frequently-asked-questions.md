@@ -36,5 +36,10 @@ For these cases you will have two options:
 - Apply the exchange rates using a pluggin (this pluggin contains the exchange rates previously loaded by you)
 - Don´t apply any exchange rate and you will receive the supplier´s currency.
 
+### How is the response time of the different providers managed in the aggregator mode?
+HotelX will return information from all the suppliers at the same time, once all the responses have been obtained by them. The requests that have timed out, will be signaled by a warning in the response.
+
+### In aggregator mode is it possible to set a time out for each provider?
+No, the time out will be applied to all providers, using the parameter setting: timeout
 
 
