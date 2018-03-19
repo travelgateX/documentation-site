@@ -1,50 +1,77 @@
 <div class="highlight">
     <ul class="code">
-        <li><span class="keyword operator ts">{{$.Page.Params.operator}}</span> <span class="identifier">{{ $.Page.Params.typename }}</span> {</li>
-        {{range $.Page.Params.fields}}
-            {{if .args}}
+        <li>
+            <span class="keyword operator ts">{{$.Page.Params.operator}}</span>
+            <span class="identifier">{{ $.Page.Params.typename }}</span> {</li>
+        {{range $.Page.Params.fields}} {{if .args}} {{if gt (len .args) 2}}
+        <li>
+            <span class="tab">
+                <span class="meta">{{.name}}</span>(
+            </span>
+        </li>
+        {{- template "args" .args}}
+        <li>
+            <span class="tab">
+                ):
+                <a class="support type" href="{{.url}}">{{.typeString}}</a>
+            </span>
+        </li>
+        {{else}}
+        <li>
+            <span class="tab">
+                <span class="meta">{{.name}}</span>({{- template "argsInLine" .args}}):
+                <a class="support type" href="{{.url}}">{{.typeString}}</a>
+            </span>
+        </li>
+        {{end}} {{else}}
+        <li>
+            <span class="tab">
+                {{template "nameType" .}}
+            </span>
+        </li>
+        {{end}} {{end}}
+
+        <!-- Revisamos si hay deprecados. Si los hay, metemos un espacio y un deplegable con los mismos -->
+
+        {{if $.Page.Params.deprecatedFields}}
+        <br> {{end}} 
+        {{range $.Page.Params.deprecatedFields}} 
+            {{if .args}} 
                 {{if gt (len .args) 2}}
-                    <li>
-                        <span class="tab">
-                            <span class="meta">{{.name}}</span>(
-                        </span>
-                    </li>
-                    {{- template "args" .args}}
-                    <li>
-                        <span class="tab">
-                            ): <a class="support type" href="{{.url}}">{{.typeString}}</a> 
-                        </span>
-                    </li>
-                {{else}}
-                    <li>
-                        <span class="tab">
-                            <span class="meta">{{.name}}</span>({{- template "argsInLine" .args}}): <a class="support type" href="{{.url}}">{{.typeString}}</a> 
-                        </span>
-                    </li>
-                {{end}}
-            {{else}}
                 <li>
                     <span class="tab">
-                        {{template "nameType" .}} 
+                        <span class="meta">{{.name}}</span>(
                     </span>
                 </li>
-            {{end}}
+                {{- template "args" .args}}
+                <li>
+                    <span class="tab">
+                        ):
+                        <a class="support type" href="{{.url}}">{{.typeString}}</a>
+                    </span>
+                </li>
+                {{else}}
+                <li>
+                    <span class="tab">
+                        <span class="meta">{{.name}}</span>({{- template "argsInLine" .args}}):
+                        <a class="support type" href="{{.url}}">{{.typeString}}</a>
+                    </span>
+                </li>
+                {{end}} 
+            {{else}} 
+            {{end}} 
         {{end}}
+
         <li>}</li>
     </ul>
 </div>
 
 
 {{- define "nameType" }}
-<span class="meta">{{.name}}</span>: <a class="support type" href="{{.url}}">{{.typeString}}</a> 
-{{- end }}
-
-{{define "argsInLine"}}
-{{- range .}}{{- template "nameType" .}},{{- end}}
-{{end}}
-
-{{define "args"}}
-{{- range .}}
+<span class="meta">{{.name}}</span>:
+<a class="support type" href="{{.url}}">{{.typeString}}</a>
+{{- end }} {{define "argsInLine"}} {{- range .}}{{- template "nameType" .}},{{- end}} {{end}} {{define "args"}} {{- range
+.}}
 <li>
     <span class="tab">
         <span class="tab">
@@ -52,5 +79,4 @@
         </span>
     </span>
 </li>
-{{- end}}
-{{end}}
+{{- end}} {{end}}

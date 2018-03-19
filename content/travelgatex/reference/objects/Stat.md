@@ -28,11 +28,17 @@
       "args": null
     }
   ],
+  "deprecatedFields": null,
   "requireby": [
     {
-      "name": "RequestStats",
+      "name": "StatsRequest",
       "description": "Contains internal information.",
-      "url": "/travelgatex/reference/objects/requeststats"
+      "url": "/travelgatex/reference/objects/statsrequest"
+    },
+    {
+      "name": "StatPlugin",
+      "description": "",
+      "url": "/travelgatex/reference/objects/statplugin"
     },
     {
       "name": "StatAccess",

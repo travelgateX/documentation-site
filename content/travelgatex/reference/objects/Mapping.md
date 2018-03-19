@@ -12,26 +12,41 @@
       "args": [
         {
           "typeString": "[String!]",
-          "name": "contextCodes",
-          "url": "/travelgatex/reference/scalars/string",
-          "description": "",
-          "isDeprecated": ""
-        },
-        {
-          "typeString": "[String!]",
-          "name": "supplierCodes",
+          "name": "codes",
           "url": "/travelgatex/reference/scalars/string",
           "description": "",
           "isDeprecated": ""
         }
       ]
+    },
+    {
+      "typeString": "[Error!]",
+      "name": "errors",
+      "url": "/travelgatex/reference/objects/error",
+      "description": "Errors that will lead the service to abort",
+      "isDeprecated": "",
+      "args": null
+    },
+    {
+      "typeString": "[Warning!]",
+      "name": "warnings",
+      "url": "/travelgatex/reference/objects/warning",
+      "description": "Potentially harmful situations or errors that won't force the service to abort",
+      "isDeprecated": "",
+      "args": null
     }
   ],
+  "deprecatedFields": null,
   "requireby": [
     {
       "name": "Query",
       "description": "",
       "url": "/travelgatex/reference/schema/query"
+    },
+    {
+      "name": "HotelXQuery",
+      "description": "",
+      "url": "/travelgatex/reference/objects/hotelxquery"
     }
   ],
   "enumValues": null,

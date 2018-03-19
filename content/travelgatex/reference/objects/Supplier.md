@@ -12,7 +12,7 @@
       "args": null
     },
     {
-      "typeString": "SupplierData!",
+      "typeString": "SupplierData",
       "name": "supplierData",
       "url": "/travelgatex/reference/objects/supplierdata",
       "description": "",
@@ -44,6 +44,7 @@
       "args": null
     }
   ],
+  "deprecatedFields": null,
   "requireby": [
     {
       "name": "AccessData",
@@ -51,9 +52,14 @@
       "url": "/travelgatex/reference/objects/accessdata"
     },
     {
-      "name": "AccessEdge",
+      "name": "SupplierEdge",
       "description": "",
-      "url": "/travelgatex/reference/objects/accessedge"
+      "url": "/travelgatex/reference/objects/supplieredge"
+    },
+    {
+      "name": "AdminMutation",
+      "description": "",
+      "url": "/travelgatex/reference/objects/adminmutation"
     }
   ],
   "enumValues": null,

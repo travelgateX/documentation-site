@@ -164,6 +164,7 @@
       ]
     }
   ],
+  "deprecatedFields": null,
   "requireby": [
     {
       "name": "Group",

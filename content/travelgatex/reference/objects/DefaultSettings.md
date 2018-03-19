@@ -4,7 +4,7 @@
   "weight": 1,
   "fields": [
     {
-      "typeString": "String!",
+      "typeString": "String",
       "name": "connectUser",
       "url": "/travelgatex/reference/scalars/string",
       "description": "This field is got only if the authorization header is of the type JWT. It is used for to change the user that\nhas been set by default in the preload.",
@@ -44,7 +44,7 @@
       "args": null
     },
     {
-      "typeString": "String!",
+      "typeString": "String",
       "name": "market",
       "url": "/travelgatex/reference/scalars/string",
       "description": "Targeted zone, country or point of sale to be used in request.",
@@ -68,6 +68,7 @@
       "args": null
     }
   ],
+  "deprecatedFields": null,
   "requireby": [
     {
       "name": "Query",

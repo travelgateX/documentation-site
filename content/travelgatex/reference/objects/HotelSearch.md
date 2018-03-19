@@ -4,7 +4,7 @@
   "weight": 1,
   "fields": [
     {
-      "typeString": "String!",
+      "typeString": "String",
       "name": "context",
       "url": "/travelgatex/reference/scalars/string",
       "description": "Indicates the context of the response.",
@@ -12,9 +12,9 @@
       "args": null
     },
     {
-      "typeString": "RequestStats",
+      "typeString": "StatsRequest",
       "name": "stats",
-      "url": "/travelgatex/reference/objects/requeststats",
+      "url": "/travelgatex/reference/objects/statsrequest",
       "description": "Application stats in string format",
       "isDeprecated": "",
       "args": [
@@ -36,7 +36,7 @@
       "args": null
     },
     {
-      "typeString": "CriteriaSearch!",
+      "typeString": "CriteriaSearch",
       "name": "requestCriteria",
       "url": "/travelgatex/reference/objects/criteriasearch",
       "description": "Request Criteria",
@@ -68,6 +68,7 @@
       "args": null
     }
   ],
+  "deprecatedFields": null,
   "requireby": [
     {
       "name": "HotelXQuery",

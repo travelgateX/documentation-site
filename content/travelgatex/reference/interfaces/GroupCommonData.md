@@ -140,6 +140,7 @@
       ]
     }
   ],
+  "deprecatedFields": null,
   "requireby": null,
   "enumValues": null,
   "operator": "interface",

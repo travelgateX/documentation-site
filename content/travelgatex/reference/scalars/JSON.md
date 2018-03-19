@@ -3,11 +3,17 @@
   "description": "",
   "weight": 1,
   "fields": null,
+  "deprecatedFields": null,
   "requireby": [
     {
       "name": "AddOns",
       "description": "Extra information about the option.",
       "url": "/travelgatex/reference/objects/addons"
+    },
+    {
+      "name": "AddOn",
+      "description": "Extra information about the option.",
+      "url": "/travelgatex/reference/objects/addon"
     }
   ],
   "enumValues": null,

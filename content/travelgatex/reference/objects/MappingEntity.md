@@ -13,13 +13,22 @@
     },
     {
       "typeString": "[Map!]",
-      "name": "maps",
+      "name": "contexts",
       "url": "/travelgatex/reference/objects/map",
-      "description": "Supplier code. Filter by supplier.",
+      "description": "You can filter by output context.",
       "isDeprecated": "",
-      "args": null
+      "args": [
+        {
+          "typeString": "[String!]",
+          "name": "codes",
+          "url": "/travelgatex/reference/scalars/string",
+          "description": "",
+          "isDeprecated": ""
+        }
+      ]
     }
   ],
+  "deprecatedFields": null,
   "requireby": null,
   "enumValues": null,
   "operator": "type",

@@ -2,7 +2,8 @@
   "title": "Quote",
   "description": "",
   "weight": 1,
-  "fields": [
+  "fields": null,
+  "deprecatedFields": [
     {
       "typeString": "HotelQuote",
       "name": "hotel",
@@ -42,10 +43,6 @@ Returns the total price and cancellation policies of the Option selected in the 
 ## GraphQL Schema definition
 
 {{% graphql-schema-type %}}
-
-## Fields
-
-{{% graphql-field %}}
 
 ## Require by
 

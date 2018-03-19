@@ -3,6 +3,7 @@
   "description": "",
   "weight": 1,
   "fields": null,
+  "deprecatedFields": null,
   "requireby": null,
   "enumValues": [
     {
@@ -62,6 +63,18 @@
     {
       "name": "UNEMPLOYED",
       "description": "The rate unemployed is applied to those without work.",
+      "isDeprecated": false,
+      "deprecationReason": null
+    },
+    {
+      "name": "NORMAL",
+      "description": "The rate normal refers to options without RateRule",
+      "isDeprecated": false,
+      "deprecationReason": null
+    },
+    {
+      "name": "NON_REFUNDABLE",
+      "description": "The rate non refundable is applied to non refundable options",
       "isDeprecated": false,
       "deprecationReason": null
     }

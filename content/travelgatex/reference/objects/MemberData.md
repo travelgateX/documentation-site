@@ -80,6 +80,7 @@
       ]
     }
   ],
+  "deprecatedFields": null,
   "requireby": [
     {
       "name": "Member",

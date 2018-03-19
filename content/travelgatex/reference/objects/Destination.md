@@ -4,42 +4,59 @@
   "weight": 1,
   "fields": [
     {
-      "typeString": "String",
+      "typeString": "ID!",
       "name": "code",
-      "url": "/travelgatex/reference/scalars/string",
-      "description": "Destination code.",
+      "url": "/travelgatex/reference/scalars/id",
+      "description": "Destination ID",
       "isDeprecated": "",
       "args": null
     },
     {
-      "typeString": "String",
-      "name": "name",
-      "url": "/travelgatex/reference/scalars/string",
-      "description": "Destination name.",
+      "typeString": "DestinationData",
+      "name": "destinationData",
+      "url": "/travelgatex/reference/objects/destinationdata",
+      "description": "Destination data",
       "isDeprecated": "",
       "args": null
     },
     {
-      "typeString": "Boolean!",
-      "name": "avail",
-      "url": "/travelgatex/reference/scalars/boolean",
-      "description": "Indicates if it is allowed in availability.",
+      "typeString": "[Error!]",
+      "name": "error",
+      "url": "/travelgatex/reference/objects/error",
+      "description": "Errors that will lead the service to abort",
+      "isDeprecated": "",
+      "args": null
+    },
+    {
+      "typeString": "DateTime!",
+      "name": "createdAt",
+      "url": "/travelgatex/reference/scalars/datetime",
+      "description": "Create date",
+      "isDeprecated": "",
+      "args": null
+    },
+    {
+      "typeString": "DateTime!",
+      "name": "updatedAt",
+      "url": "/travelgatex/reference/scalars/datetime",
+      "description": "Update date",
       "isDeprecated": "",
       "args": null
     }
   ],
+  "deprecatedFields": null,
   "requireby": [
     {
-      "name": "HotelData",
-      "description": "Hotel data",
-      "url": "/travelgatex/reference/objects/hoteldata"
+      "name": "DestinationEdge",
+      "description": "DestinationList Edge definition",
+      "url": "/travelgatex/reference/objects/destinationedge"
     }
   ],
   "enumValues": null,
   "operator": "type",
   "typename": "Destination"
 }
-Destination type
+Destination Type
 ## GraphQL Schema definition
 
 {{% graphql-schema-type %}}

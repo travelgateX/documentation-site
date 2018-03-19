@@ -3,11 +3,17 @@
   "description": "",
   "weight": 1,
   "fields": null,
+  "deprecatedFields": null,
   "requireby": [
     {
-      "name": "HotelEdge",
-      "description": "HotelList Edge definition",
-      "url": "/travelgatex/reference/objects/hoteledge"
+      "name": "RelayInput",
+      "description": "",
+      "url": "/travelgatex/reference/inputobjects/relayinput"
+    },
+    {
+      "name": "BoardEdge",
+      "description": "BoardList Edge definition",
+      "url": "/travelgatex/reference/objects/boardedge"
     },
     {
       "name": "Error",
@@ -20,14 +26,14 @@
       "url": "/travelgatex/reference/interfaces/advisemessage"
     },
     {
-      "name": "HotelData",
-      "description": "Hotel data",
-      "url": "/travelgatex/reference/objects/hoteldata"
+      "name": "BoardData",
+      "description": "Board data",
+      "url": "/travelgatex/reference/objects/boarddata"
     },
     {
-      "name": "MediaEdge",
-      "description": "HotelList Edge definition",
-      "url": "/travelgatex/reference/objects/mediaedge"
+      "name": "Text",
+      "description": "",
+      "url": "/travelgatex/reference/interfaces/text"
     },
     {
       "name": "PageInfo",
@@ -35,34 +41,84 @@
       "url": "/travelgatex/reference/objects/pageinfo"
     },
     {
-      "name": "AmenityEdge",
-      "description": "HotelList Edge definition",
-      "url": "/travelgatex/reference/objects/amenityedge"
+      "name": "CategoryEdge",
+      "description": "CategoryList Edge definition",
+      "url": "/travelgatex/reference/objects/categoryedge"
     },
     {
-      "name": "Information",
-      "description": "",
-      "url": "/travelgatex/reference/interfaces/information"
+      "name": "CategoryData",
+      "description": "Category data",
+      "url": "/travelgatex/reference/objects/categorydata"
+    },
+    {
+      "name": "RoomEdge",
+      "description": "RoomList Edge definition",
+      "url": "/travelgatex/reference/objects/roomedge"
+    },
+    {
+      "name": "RoomData",
+      "description": "Room data",
+      "url": "/travelgatex/reference/objects/roomdata"
+    },
+    {
+      "name": "HotelConnection",
+      "description": "HotelList definition",
+      "url": "/travelgatex/reference/objects/hotelconnection"
+    },
+    {
+      "name": "HotelEdge",
+      "description": "HotelList Edge definition",
+      "url": "/travelgatex/reference/objects/hoteledge"
+    },
+    {
+      "name": "HotelData",
+      "description": "Hotel data",
+      "url": "/travelgatex/reference/objects/hoteldata"
+    },
+    {
+      "name": "Property",
+      "description": "Indicates Property type",
+      "url": "/travelgatex/reference/objects/property"
     },
     {
       "name": "Location",
-      "description": "Location",
+      "description": "Indicates the location of the hotel.",
       "url": "/travelgatex/reference/objects/location"
     },
     {
-      "name": "Geocode",
-      "description": "Geocode type",
-      "url": "/travelgatex/reference/objects/geocode"
+      "name": "DestinationData",
+      "description": "Information about destinantion",
+      "url": "/travelgatex/reference/objects/destinationdata"
     },
     {
       "name": "Contact",
-      "description": "Contact type",
+      "description": "Contact Data.",
       "url": "/travelgatex/reference/objects/contact"
     },
     {
-      "name": "Destination",
-      "description": "Destination type",
-      "url": "/travelgatex/reference/objects/destination"
+      "name": "Amenity",
+      "description": "Something, such as a swimming pool or shopping centre, that is intended to make life more pleasant or comfortable for the people.",
+      "url": "/travelgatex/reference/objects/amenity"
+    },
+    {
+      "name": "Media",
+      "description": "Contains media information.",
+      "url": "/travelgatex/reference/objects/media"
+    },
+    {
+      "name": "DestinationConnection",
+      "description": "DestinationList definition",
+      "url": "/travelgatex/reference/objects/destinationconnection"
+    },
+    {
+      "name": "DestinationEdge",
+      "description": "DestinationList Edge definition",
+      "url": "/travelgatex/reference/objects/destinationedge"
+    },
+    {
+      "name": "HotelXDestinationSearcherInput",
+      "description": "",
+      "url": "/travelgatex/reference/inputobjects/hotelxdestinationsearcherinput"
     },
     {
       "name": "HotelCriteriaSearchInput",
@@ -75,9 +131,9 @@
       "url": "/travelgatex/reference/inputobjects/hotelsettingsinput"
     },
     {
-      "name": "SupplierInput",
+      "name": "HotelXSupplierInput",
       "description": "Supplier object. Contains its own settings, code and access.",
-      "url": "/travelgatex/reference/inputobjects/supplierinput"
+      "url": "/travelgatex/reference/inputobjects/hotelxsupplierinput"
     },
     {
       "name": "ConfigurationInput",
@@ -86,7 +142,7 @@
     },
     {
       "name": "ParameterInput",
-      "description": "Parameters for additional information for the supplier's configuration.",
+      "description": "Parameters Input.",
       "url": "/travelgatex/reference/inputobjects/parameterinput"
     },
     {
@@ -100,9 +156,14 @@
       "url": "/travelgatex/reference/objects/hotelsearch"
     },
     {
-      "name": "RequestStats",
+      "name": "StatsRequest",
       "description": "Contains internal information.",
-      "url": "/travelgatex/reference/objects/requeststats"
+      "url": "/travelgatex/reference/objects/statsrequest"
+    },
+    {
+      "name": "StatPlugin",
+      "description": "",
+      "url": "/travelgatex/reference/objects/statplugin"
     },
     {
       "name": "StatAccess",
@@ -185,6 +246,11 @@
       "url": "/travelgatex/reference/objects/surcharge"
     },
     {
+      "name": "AddOn",
+      "description": "Extra information about the option.",
+      "url": "/travelgatex/reference/objects/addon"
+    },
+    {
       "name": "HotelCriteriaQuoteInput",
       "description": "The quote criteria contains the option reference id, block and language.",
       "url": "/travelgatex/reference/inputobjects/hotelcriteriaquoteinput"
@@ -238,6 +304,61 @@
       "name": "ServiceStatus",
       "description": "Indicates the status of the service",
       "url": "/travelgatex/reference/objects/servicestatus"
+    },
+    {
+      "name": "MappingContext",
+      "description": "Returns the differents group contexts",
+      "url": "/travelgatex/reference/objects/mappingcontext"
+    },
+    {
+      "name": "MappingEntity",
+      "description": "Mapping about client codes with the equivalence per supplier.",
+      "url": "/travelgatex/reference/objects/mappingentity"
+    },
+    {
+      "name": "Map",
+      "description": "Map codes.",
+      "url": "/travelgatex/reference/objects/map"
+    },
+    {
+      "name": "AccessEdge",
+      "description": "",
+      "url": "/travelgatex/reference/objects/accessedge"
+    },
+    {
+      "name": "AccessData",
+      "description": "",
+      "url": "/travelgatex/reference/objects/accessdata"
+    },
+    {
+      "name": "SupplierData",
+      "description": "",
+      "url": "/travelgatex/reference/objects/supplierdata"
+    },
+    {
+      "name": "Provider",
+      "description": "Temporary type to use only during SQL server's lifetime",
+      "url": "/travelgatex/reference/objects/provider"
+    },
+    {
+      "name": "Parameter",
+      "description": "Parameters for additional information for the supplier's configuration.",
+      "url": "/travelgatex/reference/objects/parameter"
+    },
+    {
+      "name": "SupplierEdge",
+      "description": "",
+      "url": "/travelgatex/reference/objects/supplieredge"
+    },
+    {
+      "name": "ClientEdge",
+      "description": "",
+      "url": "/travelgatex/reference/objects/clientedge"
+    },
+    {
+      "name": "ClientData",
+      "description": "",
+      "url": "/travelgatex/reference/objects/clientdata"
     },
     {
       "name": "OrganizationEdge",
@@ -305,24 +426,14 @@
       "url": "/travelgatex/reference/objects/defaultsettings"
     },
     {
-      "name": "MappingContext",
-      "description": "Returns the differents group contexts",
-      "url": "/travelgatex/reference/objects/mappingcontext"
-    },
-    {
-      "name": "MappingEntity",
-      "description": "Mapping about client codes with the equivalence per supplier.",
-      "url": "/travelgatex/reference/objects/mappingentity"
-    },
-    {
-      "name": "Map",
-      "description": "Map codes.",
-      "url": "/travelgatex/reference/objects/map"
-    },
-    {
       "name": "Mutation",
       "description": "Mutations are operations that change or update data in the server.",
       "url": "/travelgatex/reference/schema/mutation"
+    },
+    {
+      "name": "HotelXMutation",
+      "description": "",
+      "url": "/travelgatex/reference/objects/hotelxmutation"
     },
     {
       "name": "HotelBookInput",
@@ -355,6 +466,16 @@
       "url": "/travelgatex/reference/objects/hotelcanceldetail"
     },
     {
+      "name": "AccessInput",
+      "description": "Access input",
+      "url": "/travelgatex/reference/inputobjects/accessinput"
+    },
+    {
+      "name": "ClientInput",
+      "description": "",
+      "url": "/travelgatex/reference/inputobjects/clientinput"
+    },
+    {
       "name": "CreateMemberInput",
       "description": "",
       "url": "/travelgatex/reference/inputobjects/creatememberinput"
@@ -380,29 +501,9 @@
       "url": "/travelgatex/reference/inputobjects/defaultsettingsinput"
     },
     {
-      "name": "AccessData",
-      "description": "",
-      "url": "/travelgatex/reference/objects/accessdata"
-    },
-    {
       "name": "SupplierGroup",
       "description": "group related to a supplier",
       "url": "/travelgatex/reference/objects/suppliergroup"
-    },
-    {
-      "name": "Parameter",
-      "description": "Parameters for additional information for the supplier's configuration.",
-      "url": "/travelgatex/reference/objects/parameter"
-    },
-    {
-      "name": "AccessEdge",
-      "description": "",
-      "url": "/travelgatex/reference/objects/accessedge"
-    },
-    {
-      "name": "GiataID",
-      "description": "Giata System ID.",
-      "url": "/travelgatex/reference/objects/giataid"
     },
     {
       "name": "ConnectUser",

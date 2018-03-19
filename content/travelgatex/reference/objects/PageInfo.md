@@ -36,21 +36,47 @@
       "args": null
     }
   ],
+  "deprecatedFields": null,
   "requireby": [
+    {
+      "name": "BoardConnection",
+      "description": "BoardList definition",
+      "url": "/travelgatex/reference/objects/boardconnection"
+    },
+    {
+      "name": "CategoryConnection",
+      "description": "CategoryList definition",
+      "url": "/travelgatex/reference/objects/categoryconnection"
+    },
+    {
+      "name": "RoomConnection",
+      "description": "RoomList definition",
+      "url": "/travelgatex/reference/objects/roomconnection"
+    },
     {
       "name": "HotelConnection",
       "description": "HotelList definition",
       "url": "/travelgatex/reference/objects/hotelconnection"
     },
     {
-      "name": "MediaConnection",
-      "description": "",
-      "url": "/travelgatex/reference/objects/mediaconnection"
+      "name": "DestinationConnection",
+      "description": "DestinationList definition",
+      "url": "/travelgatex/reference/objects/destinationconnection"
     },
     {
-      "name": "AmenityConnection",
+      "name": "AccessConnection",
       "description": "",
-      "url": "/travelgatex/reference/objects/amenityconnection"
+      "url": "/travelgatex/reference/objects/accessconnection"
+    },
+    {
+      "name": "SupplierConnection",
+      "description": "",
+      "url": "/travelgatex/reference/objects/supplierconnection"
+    },
+    {
+      "name": "ClientConnection",
+      "description": "",
+      "url": "/travelgatex/reference/objects/clientconnection"
     },
     {
       "name": "OrganizationConnection",
@@ -86,11 +112,6 @@
       "name": "ProductConnection",
       "description": "",
       "url": "/travelgatex/reference/objects/productconnection"
-    },
-    {
-      "name": "AccessConnection",
-      "description": "",
-      "url": "/travelgatex/reference/objects/accessconnection"
     }
   ],
   "enumValues": null,

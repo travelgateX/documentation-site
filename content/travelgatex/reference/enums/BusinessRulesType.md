@@ -3,6 +3,7 @@
   "description": "",
   "weight": 1,
   "fields": null,
+  "deprecatedFields": null,
   "requireby": [
     {
       "name": "BusinessRulesInput",

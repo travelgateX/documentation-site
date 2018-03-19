@@ -3,11 +3,17 @@
   "description": "",
   "weight": 1,
   "fields": null,
+  "deprecatedFields": null,
   "requireby": [
     {
-      "name": "Hotel",
-      "description": "Hotel type",
-      "url": "/travelgatex/reference/objects/hotel"
+      "name": "HotelXBoardQueryInput",
+      "description": "",
+      "url": "/travelgatex/reference/inputobjects/hotelxboardqueryinput"
+    },
+    {
+      "name": "Board",
+      "description": "Board Type",
+      "url": "/travelgatex/reference/objects/board"
     },
     {
       "name": "Node",
@@ -15,29 +21,134 @@
       "url": "/travelgatex/reference/interfaces/node"
     },
     {
+      "name": "BoardData",
+      "description": "Board data",
+      "url": "/travelgatex/reference/objects/boarddata"
+    },
+    {
+      "name": "HotelXCategoryQueryInput",
+      "description": "",
+      "url": "/travelgatex/reference/inputobjects/hotelxcategoryqueryinput"
+    },
+    {
+      "name": "Category",
+      "description": "Category Type",
+      "url": "/travelgatex/reference/objects/category"
+    },
+    {
+      "name": "CategoryData",
+      "description": "Category data",
+      "url": "/travelgatex/reference/objects/categorydata"
+    },
+    {
+      "name": "HotelXRoomQueryInput",
+      "description": "",
+      "url": "/travelgatex/reference/inputobjects/hotelxroomqueryinput"
+    },
+    {
+      "name": "RoomStatic",
+      "description": "Room Type",
+      "url": "/travelgatex/reference/objects/roomstatic"
+    },
+    {
+      "name": "RoomData",
+      "description": "Room data",
+      "url": "/travelgatex/reference/objects/roomdata"
+    },
+    {
+      "name": "HotelXHotelListInput",
+      "description": "",
+      "url": "/travelgatex/reference/inputobjects/hotelxhotellistinput"
+    },
+    {
+      "name": "Hotel",
+      "description": "Hotel Type",
+      "url": "/travelgatex/reference/objects/hotel"
+    },
+    {
       "name": "HotelData",
       "description": "Hotel data",
       "url": "/travelgatex/reference/objects/hoteldata"
     },
     {
-      "name": "Media",
-      "description": "",
-      "url": "/travelgatex/reference/objects/media"
+      "name": "DestinationData",
+      "description": "Information about destinantion",
+      "url": "/travelgatex/reference/objects/destinationdata"
     },
     {
-      "name": "Amenity",
+      "name": "HotelXDestinationListInput",
       "description": "",
-      "url": "/travelgatex/reference/objects/amenity"
+      "url": "/travelgatex/reference/inputobjects/hotelxdestinationlistinput"
     },
     {
-      "name": "AmenityData",
-      "description": "",
-      "url": "/travelgatex/reference/objects/amenitydata"
+      "name": "Destination",
+      "description": "Destination Type",
+      "url": "/travelgatex/reference/objects/destination"
     },
     {
-      "name": "AccessInput",
+      "name": "HotelXDestinationSearcherInput",
+      "description": "",
+      "url": "/travelgatex/reference/inputobjects/hotelxdestinationsearcherinput"
+    },
+    {
+      "name": "HotelXAccessInput",
       "description": "AccessInput overwrites an existent access in our Back Office or creates a new\none to be used in this search query only. An access object contains its own code, configuration and settings.",
-      "url": "/travelgatex/reference/inputobjects/accessinput"
+      "url": "/travelgatex/reference/inputobjects/hotelxaccessinput"
+    },
+    {
+      "name": "AccessFilter",
+      "description": "",
+      "url": "/travelgatex/reference/inputobjects/accessfilter"
+    },
+    {
+      "name": "Access",
+      "description": "",
+      "url": "/travelgatex/reference/objects/access"
+    },
+    {
+      "name": "AccessData",
+      "description": "",
+      "url": "/travelgatex/reference/objects/accessdata"
+    },
+    {
+      "name": "Supplier",
+      "description": "",
+      "url": "/travelgatex/reference/objects/supplier"
+    },
+    {
+      "name": "SupplierData",
+      "description": "",
+      "url": "/travelgatex/reference/objects/supplierdata"
+    },
+    {
+      "name": "Provider",
+      "description": "Temporary type to use only during SQL server's lifetime",
+      "url": "/travelgatex/reference/objects/provider"
+    },
+    {
+      "name": "Parameter",
+      "description": "Parameters for additional information for the supplier's configuration.",
+      "url": "/travelgatex/reference/objects/parameter"
+    },
+    {
+      "name": "SupplierFilter",
+      "description": "",
+      "url": "/travelgatex/reference/inputobjects/supplierfilter"
+    },
+    {
+      "name": "ClientFilter",
+      "description": "",
+      "url": "/travelgatex/reference/inputobjects/clientfilter"
+    },
+    {
+      "name": "Client",
+      "description": "",
+      "url": "/travelgatex/reference/objects/client"
+    },
+    {
+      "name": "ClientData",
+      "description": "",
+      "url": "/travelgatex/reference/objects/clientdata"
     },
     {
       "name": "Organization",
@@ -115,6 +226,21 @@
       "url": "/travelgatex/reference/objects/productdata"
     },
     {
+      "name": "AccessInput",
+      "description": "Access input",
+      "url": "/travelgatex/reference/inputobjects/accessinput"
+    },
+    {
+      "name": "GroupInput",
+      "description": "",
+      "url": "/travelgatex/reference/inputobjects/groupinput"
+    },
+    {
+      "name": "ClientInput",
+      "description": "",
+      "url": "/travelgatex/reference/inputobjects/clientinput"
+    },
+    {
       "name": "CreateGroupInput",
       "description": "",
       "url": "/travelgatex/reference/inputobjects/creategroupinput"
@@ -130,24 +256,9 @@
       "url": "/travelgatex/reference/inputobjects/deletegroupinput"
     },
     {
-      "name": "Access",
-      "description": "",
-      "url": "/travelgatex/reference/objects/access"
-    },
-    {
-      "name": "AccessData",
-      "description": "",
-      "url": "/travelgatex/reference/objects/accessdata"
-    },
-    {
-      "name": "Supplier",
-      "description": "",
-      "url": "/travelgatex/reference/objects/supplier"
-    },
-    {
-      "name": "SupplierData",
-      "description": "",
-      "url": "/travelgatex/reference/objects/supplierdata"
+      "name": "Context",
+      "description": "Context type, for now only Code is necessary",
+      "url": "/travelgatex/reference/objects/context"
     },
     {
       "name": "IdAccessConfigurationInput",

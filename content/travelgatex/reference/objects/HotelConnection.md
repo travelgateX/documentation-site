@@ -12,6 +12,14 @@
       "args": null
     },
     {
+      "typeString": "String",
+      "name": "token",
+      "url": "/travelgatex/reference/scalars/string",
+      "description": "",
+      "isDeprecated": "",
+      "args": null
+    },
+    {
       "typeString": "PageInfo!",
       "name": "pageInfo",
       "url": "/travelgatex/reference/objects/pageinfo",
@@ -20,6 +28,7 @@
       "args": null
     }
   ],
+  "deprecatedFields": null,
   "requireby": [
     {
       "name": "HotelXQuery",

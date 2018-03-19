@@ -4,6 +4,138 @@
   "weight": 1,
   "fields": [
     {
+      "typeString": "AccessConnection",
+      "name": "accesses",
+      "url": "/travelgatex/reference/objects/accessconnection",
+      "description": "Obtain a list of accesses for a filter.",
+      "isDeprecated": "",
+      "args": [
+        {
+          "typeString": "Int",
+          "name": "first",
+          "url": "/travelgatex/reference/scalars/int",
+          "description": "",
+          "isDeprecated": ""
+        },
+        {
+          "typeString": "Int",
+          "name": "Last",
+          "url": "/travelgatex/reference/scalars/int",
+          "description": "",
+          "isDeprecated": ""
+        },
+        {
+          "typeString": "String",
+          "name": "before",
+          "url": "/travelgatex/reference/scalars/string",
+          "description": "",
+          "isDeprecated": ""
+        },
+        {
+          "typeString": "String",
+          "name": "after",
+          "url": "/travelgatex/reference/scalars/string",
+          "description": "",
+          "isDeprecated": ""
+        },
+        {
+          "typeString": "AccessFilter",
+          "name": "filter",
+          "url": "/travelgatex/reference/inputobjects/accessfilter",
+          "description": "",
+          "isDeprecated": ""
+        }
+      ]
+    },
+    {
+      "typeString": "SupplierConnection",
+      "name": "suppliers",
+      "url": "/travelgatex/reference/objects/supplierconnection",
+      "description": "Obtain all suppliers for a filter.",
+      "isDeprecated": "",
+      "args": [
+        {
+          "typeString": "Int",
+          "name": "first",
+          "url": "/travelgatex/reference/scalars/int",
+          "description": "",
+          "isDeprecated": ""
+        },
+        {
+          "typeString": "Int",
+          "name": "Last",
+          "url": "/travelgatex/reference/scalars/int",
+          "description": "",
+          "isDeprecated": ""
+        },
+        {
+          "typeString": "String",
+          "name": "before",
+          "url": "/travelgatex/reference/scalars/string",
+          "description": "",
+          "isDeprecated": ""
+        },
+        {
+          "typeString": "String",
+          "name": "after",
+          "url": "/travelgatex/reference/scalars/string",
+          "description": "",
+          "isDeprecated": ""
+        },
+        {
+          "typeString": "SupplierFilter",
+          "name": "filter",
+          "url": "/travelgatex/reference/inputobjects/supplierfilter",
+          "description": "",
+          "isDeprecated": ""
+        }
+      ]
+    },
+    {
+      "typeString": "ClientConnection",
+      "name": "clients",
+      "url": "/travelgatex/reference/objects/clientconnection",
+      "description": "Obtain all clients for a filter.",
+      "isDeprecated": "",
+      "args": [
+        {
+          "typeString": "Int",
+          "name": "first",
+          "url": "/travelgatex/reference/scalars/int",
+          "description": "",
+          "isDeprecated": ""
+        },
+        {
+          "typeString": "Int",
+          "name": "Last",
+          "url": "/travelgatex/reference/scalars/int",
+          "description": "",
+          "isDeprecated": ""
+        },
+        {
+          "typeString": "String",
+          "name": "before",
+          "url": "/travelgatex/reference/scalars/string",
+          "description": "",
+          "isDeprecated": ""
+        },
+        {
+          "typeString": "String",
+          "name": "after",
+          "url": "/travelgatex/reference/scalars/string",
+          "description": "",
+          "isDeprecated": ""
+        },
+        {
+          "typeString": "ClientFilter",
+          "name": "filter",
+          "url": "/travelgatex/reference/inputobjects/clientfilter",
+          "description": "",
+          "isDeprecated": ""
+        }
+      ]
+    },
+    {
       "typeString": "OrganizationConnection!",
       "name": "organizations",
       "url": "/travelgatex/reference/objects/organizationconnection",
@@ -106,6 +238,13 @@
           "isDeprecated": ""
         },
         {
+          "typeString": "MemberType",
+          "name": "type",
+          "url": "/travelgatex/reference/enums/membertype",
+          "description": "",
+          "isDeprecated": ""
+        },
+        {
           "typeString": "Int",
           "name": "first",
           "url": "/travelgatex/reference/scalars/int",
@@ -146,6 +285,13 @@
           "typeString": "[ID!]",
           "name": "codes",
           "url": "/travelgatex/reference/scalars/id",
+          "description": "",
+          "isDeprecated": ""
+        },
+        {
+          "typeString": "GroupType",
+          "name": "type",
+          "url": "/travelgatex/reference/enums/grouptype",
           "description": "",
           "isDeprecated": ""
         },
@@ -312,6 +458,7 @@
       ]
     }
   ],
+  "deprecatedFields": null,
   "requireby": [
     {
       "name": "Query",

@@ -28,6 +28,7 @@
       "args": null
     }
   ],
+  "deprecatedFields": null,
   "requireby": [
     {
       "name": "HotelXQuery",

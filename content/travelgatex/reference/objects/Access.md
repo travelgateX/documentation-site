@@ -12,7 +12,7 @@
       "args": null
     },
     {
-      "typeString": "AccessData!",
+      "typeString": "AccessData",
       "name": "accessData",
       "url": "/travelgatex/reference/objects/accessdata",
       "description": "",
@@ -44,13 +44,28 @@
       "args": null
     }
   ],
-  "requireby": null,
+  "deprecatedFields": null,
+  "requireby": [
+    {
+      "name": "AccessEdge",
+      "description": "",
+      "url": "/travelgatex/reference/objects/accessedge"
+    },
+    {
+      "name": "AccessData",
+      "description": "",
+      "url": "/travelgatex/reference/objects/accessdata"
+    },
+    {
+      "name": "AdminMutation",
+      "description": "",
+      "url": "/travelgatex/reference/objects/adminmutation"
+    }
+  ],
   "enumValues": null,
   "operator": "type",
   "typename": "Access"
 }
-An Access is a set of credentials and configuration in order to access a Provider.
-
 ## GraphQL Schema definition
 
 {{% graphql-schema-type %}}
@@ -58,3 +73,7 @@ An Access is a set of credentials and configuration in order to access a Provide
 ## Fields
 
 {{% graphql-field %}}
+
+## Require by
+
+{{% graphql-require-by %}}

@@ -12,6 +12,14 @@
       "args": null
     },
     {
+      "typeString": "String!",
+      "name": "name",
+      "url": "/travelgatex/reference/scalars/string",
+      "description": "Supplier complete name",
+      "isDeprecated": "",
+      "args": null
+    },
+    {
       "typeString": "Boolean!",
       "name": "isActive",
       "url": "/travelgatex/reference/scalars/boolean",
@@ -20,38 +28,47 @@
       "args": null
     },
     {
-      "typeString": "ID!",
-      "name": "dll",
-      "url": "/travelgatex/reference/scalars/id",
+      "typeString": "Provider!",
+      "name": "provider",
+      "url": "/travelgatex/reference/objects/provider",
       "description": "instance to which this supllier is connected",
       "isDeprecated": "",
       "args": null
     },
     {
-      "typeString": "ID!",
-      "name": "hotelCodes",
-      "url": "/travelgatex/reference/scalars/id",
-      "description": "accesses(first: Int, Last: Int, before: String, after:String, criterial: criterialInput): AccessConnection",
+      "typeString": "String!",
+      "name": "context",
+      "url": "/travelgatex/reference/scalars/string",
+      "description": "Context where the Supplier belongs to",
       "isDeprecated": "",
-      "args": [
-        {
-          "typeString": "ID!",
-          "name": "hotel",
-          "url": "/travelgatex/reference/scalars/id",
-          "description": "",
-          "isDeprecated": ""
-        }
-      ]
+      "args": null
     },
     {
-      "typeString": "[SupplierGroup!]",
-      "name": "supplierGroups",
-      "url": "/travelgatex/reference/objects/suppliergroup",
-      "description": "supplier's related data of its groups",
+      "typeString": "Int!",
+      "name": "serviceApi",
+      "url": "/travelgatex/reference/scalars/int",
+      "description": "Service API",
+      "isDeprecated": "",
+      "args": null
+    },
+    {
+      "typeString": "ID",
+      "name": "supplierGroup",
+      "url": "/travelgatex/reference/scalars/id",
+      "description": "SupplierGroup Internal Supplier grouping",
+      "isDeprecated": "",
+      "args": null
+    },
+    {
+      "typeString": "AccessConnection",
+      "name": "accesses",
+      "url": "/travelgatex/reference/objects/accessconnection",
+      "description": "Accesses where the supplier is referenced",
       "isDeprecated": "",
       "args": null
     }
   ],
+  "deprecatedFields": null,
   "requireby": [
     {
       "name": "Supplier",

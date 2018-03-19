@@ -36,18 +36,24 @@
       "args": null
     }
   ],
+  "deprecatedFields": null,
   "requireby": [
     {
       "name": "ConfigurationInput",
       "description": "The information and credentials required to access the supplierâ€™s system.",
       "url": "/travelgatex/reference/inputobjects/configurationinput"
+    },
+    {
+      "name": "AccessInput",
+      "description": "Access input",
+      "url": "/travelgatex/reference/inputobjects/accessinput"
     }
   ],
   "enumValues": null,
   "operator": "type",
   "typename": "UrlsInput"
 }
-Url's
+Urls Input
 ## GraphQL Schema definition
 
 {{% graphql-schema-type %}}

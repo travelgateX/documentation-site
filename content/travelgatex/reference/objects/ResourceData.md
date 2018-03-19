@@ -108,6 +108,7 @@
       ]
     }
   ],
+  "deprecatedFields": null,
   "requireby": [
     {
       "name": "Resource",

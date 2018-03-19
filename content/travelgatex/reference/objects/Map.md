@@ -5,21 +5,22 @@
   "fields": [
     {
       "typeString": "String!",
-      "name": "supplierCode",
+      "name": "code",
       "url": "/travelgatex/reference/scalars/string",
-      "description": "Supplier code.",
+      "description": "Context code.",
       "isDeprecated": "",
       "args": null
     },
     {
       "typeString": "[String!]",
-      "name": "codes",
+      "name": "maps",
       "url": "/travelgatex/reference/scalars/string",
       "description": "Equivalences of the supplier for the client code.",
       "isDeprecated": "",
       "args": null
     }
   ],
+  "deprecatedFields": null,
   "requireby": null,
   "enumValues": null,
   "operator": "type",

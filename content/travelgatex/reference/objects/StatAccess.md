@@ -7,7 +7,7 @@
       "typeString": "String!",
       "name": "name",
       "url": "/travelgatex/reference/scalars/string",
-      "description": "",
+      "description": "Access name",
       "isDeprecated": "",
       "args": null
     },
@@ -15,7 +15,7 @@
       "typeString": "Stat!",
       "name": "total",
       "url": "/travelgatex/reference/objects/stat",
-      "description": "",
+      "description": "Total access time",
       "isDeprecated": "",
       "args": null
     },
@@ -23,7 +23,47 @@
       "typeString": "Stat",
       "name": "staticConfiguration",
       "url": "/travelgatex/reference/objects/stat",
-      "description": "",
+      "description": "Static configuration time",
+      "isDeprecated": "",
+      "args": null
+    },
+    {
+      "typeString": "Int!",
+      "name": "hotels",
+      "url": "/travelgatex/reference/scalars/int",
+      "description": "Number of hotels",
+      "isDeprecated": "",
+      "args": null
+    },
+    {
+      "typeString": "Int!",
+      "name": "zones",
+      "url": "/travelgatex/reference/scalars/int",
+      "description": "Number of zones",
+      "isDeprecated": "",
+      "args": null
+    },
+    {
+      "typeString": "Int!",
+      "name": "cities",
+      "url": "/travelgatex/reference/scalars/int",
+      "description": "Number of cities",
+      "isDeprecated": "",
+      "args": null
+    },
+    {
+      "typeString": "StatPlugin",
+      "name": "requestAccess",
+      "url": "/travelgatex/reference/objects/statplugin",
+      "description": "Access request time",
+      "isDeprecated": "",
+      "args": null
+    },
+    {
+      "typeString": "StatPlugin",
+      "name": "responseAccess",
+      "url": "/travelgatex/reference/objects/statplugin",
+      "description": "Access response time",
       "isDeprecated": "",
       "args": null
     },
@@ -31,19 +71,20 @@
       "typeString": "[StatTransaction!]!",
       "name": "transactions",
       "url": "/travelgatex/reference/objects/stattransaction",
-      "description": "",
+      "description": "Detail transaction time",
       "isDeprecated": "",
       "args": null
     },
     {
-      "typeString": "String!",
-      "name": "external",
-      "url": "/travelgatex/reference/scalars/string",
-      "description": "",
+      "typeString": "[StatPlugin!]",
+      "name": "plugins",
+      "url": "/travelgatex/reference/objects/statplugin",
+      "description": "Plugin execution time",
       "isDeprecated": "",
       "args": null
     }
   ],
+  "deprecatedFields": null,
   "requireby": null,
   "enumValues": null,
   "operator": "type",

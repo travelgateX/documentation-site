@@ -2,7 +2,8 @@
   "title": "Search",
   "description": "",
   "weight": 1,
-  "fields": [
+  "fields": null,
+  "deprecatedFields": [
     {
       "typeString": "HotelSearch",
       "name": "hotel",
@@ -58,10 +59,6 @@ forward.
 ## GraphQL Schema definition
 
 {{% graphql-schema-type %}}
-
-## Fields
-
-{{% graphql-field %}}
 
 ## Require by
 

@@ -18,7 +18,9 @@
       "description": "",
       "isDeprecated": "",
       "args": null
-    },
+    }
+  ],
+  "deprecatedFields": [
     {
       "typeString": "Search!",
       "name": "search",
@@ -81,7 +83,6 @@
   "operator": "type",
   "typename": "Query"
 }
-A query is a request for information from a database.
 ## GraphQL Schema definition
 
 {{% graphql-schema-type %}}

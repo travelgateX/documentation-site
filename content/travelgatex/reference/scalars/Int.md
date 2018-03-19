@@ -3,7 +3,28 @@
   "description": "",
   "weight": 1,
   "fields": null,
+  "deprecatedFields": null,
   "requireby": [
+    {
+      "name": "RelayInput",
+      "description": "",
+      "url": "/travelgatex/reference/inputobjects/relayinput"
+    },
+    {
+      "name": "HotelXHotelListInput",
+      "description": "",
+      "url": "/travelgatex/reference/inputobjects/hotelxhotellistinput"
+    },
+    {
+      "name": "HotelXDestinationListInput",
+      "description": "",
+      "url": "/travelgatex/reference/inputobjects/hotelxdestinationlistinput"
+    },
+    {
+      "name": "HotelXDestinationSearcherInput",
+      "description": "",
+      "url": "/travelgatex/reference/inputobjects/hotelxdestinationsearcherinput"
+    },
     {
       "name": "PaxInput",
       "description": "Pax object that contains the pax age.",
@@ -23,6 +44,16 @@
       "name": "SettingsBaseInput",
       "description": "Contains the time out and business rules of a supplier or an access.",
       "url": "/travelgatex/reference/inputobjects/settingsbaseinput"
+    },
+    {
+      "name": "StatsRequest",
+      "description": "Contains internal information.",
+      "url": "/travelgatex/reference/objects/statsrequest"
+    },
+    {
+      "name": "StatAccess",
+      "description": "",
+      "url": "/travelgatex/reference/objects/stataccess"
     },
     {
       "name": "Pax",
@@ -58,6 +89,11 @@
       "name": "BookingRoom",
       "description": "",
       "url": "/travelgatex/reference/objects/bookingroom"
+    },
+    {
+      "name": "SupplierData",
+      "description": "",
+      "url": "/travelgatex/reference/objects/supplierdata"
     },
     {
       "name": "GroupData",

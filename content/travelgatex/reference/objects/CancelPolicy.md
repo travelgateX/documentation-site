@@ -7,7 +7,7 @@
       "typeString": "Boolean!",
       "name": "refundable",
       "url": "/travelgatex/reference/scalars/boolean",
-      "description": "Indicates if the option is refundable or not.\nThis information is mandatory.",
+      "description": "Indicates if the option is refundable or not.",
       "isDeprecated": "",
       "args": null
     },
@@ -20,6 +20,7 @@
       "args": null
     }
   ],
+  "deprecatedFields": null,
   "requireby": [
     {
       "name": "HotelOptionSearch",

@@ -52,11 +52,12 @@
       "args": null
     }
   ],
+  "deprecatedFields": null,
   "requireby": [
     {
-      "name": "AccessInput",
+      "name": "HotelXAccessInput",
       "description": "AccessInput overwrites an existent access in our Back Office or creates a new\none to be used in this search query only. An access object contains its own code, configuration and settings.",
-      "url": "/travelgatex/reference/inputobjects/accessinput"
+      "url": "/travelgatex/reference/inputobjects/hotelxaccessinput"
     },
     {
       "name": "AccessConfigurationInput",

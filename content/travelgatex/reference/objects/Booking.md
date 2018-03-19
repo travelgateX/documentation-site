@@ -2,7 +2,8 @@
   "title": "Booking",
   "description": "",
   "weight": 1,
-  "fields": [
+  "fields": null,
+  "deprecatedFields": [
     {
       "typeString": "HotelBooking",
       "name": "hotel",
@@ -42,10 +43,6 @@ Returns detailed information about books.
 ## GraphQL Schema definition
 
 {{% graphql-schema-type %}}
-
-## Fields
-
-{{% graphql-field %}}
 
 ## Require by
 

@@ -184,6 +184,7 @@
       ]
     }
   ],
+  "deprecatedFields": null,
   "requireby": [
     {
       "name": "Organization",

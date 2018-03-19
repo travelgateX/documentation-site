@@ -52,6 +52,7 @@
       "args": null
     }
   ],
+  "deprecatedFields": null,
   "requireby": [
     {
       "name": "HotelOptionSearch",

@@ -7,15 +7,31 @@
       "typeString": "ID!",
       "name": "code",
       "url": "/travelgatex/reference/scalars/id",
-      "description": "Internal code to perform availability and/or supplier code.",
+      "description": "Internal code.",
       "isDeprecated": "",
       "args": null
     },
     {
       "typeString": "String!",
-      "name": "name",
+      "name": "hotelCode",
       "url": "/travelgatex/reference/scalars/string",
-      "description": "Name.",
+      "description": "Code to perform availability.",
+      "isDeprecated": "",
+      "args": null
+    },
+    {
+      "typeString": "String",
+      "name": "hotelCodeSupplier",
+      "url": "/travelgatex/reference/scalars/string",
+      "description": "Native supplier hotel code.",
+      "isDeprecated": "",
+      "args": null
+    },
+    {
+      "typeString": "String!",
+      "name": "hotelName",
+      "url": "/travelgatex/reference/scalars/string",
+      "description": "Name of the hotel in the Supplier selected.",
       "isDeprecated": "",
       "args": null
     },
@@ -28,6 +44,22 @@
       "args": null
     },
     {
+      "typeString": "Property",
+      "name": "property",
+      "url": "/travelgatex/reference/objects/property",
+      "description": "Indicates property type",
+      "isDeprecated": "",
+      "args": null
+    },
+    {
+      "typeString": "String",
+      "name": "chainCode",
+      "url": "/travelgatex/reference/scalars/string",
+      "description": "Hotel chain code",
+      "isDeprecated": "",
+      "args": null
+    },
+    {
       "typeString": "Boolean!",
       "name": "exclusiveDeal",
       "url": "/travelgatex/reference/scalars/boolean",
@@ -36,154 +68,82 @@
       "args": null
     },
     {
-      "typeString": "MediaConnection",
-      "name": "medias",
-      "url": "/travelgatex/reference/objects/mediaconnection",
-      "description": "",
-      "isDeprecated": "",
-      "args": [
-        {
-          "typeString": "ApplicationArea",
-          "name": "type",
-          "url": "/travelgatex/reference/enums/applicationarea",
-          "description": "",
-          "isDeprecated": ""
-        },
-        {
-          "typeString": "Int",
-          "name": "first",
-          "url": "/travelgatex/reference/scalars/int",
-          "description": "",
-          "isDeprecated": ""
-        },
-        {
-          "typeString": "Int",
-          "name": "last",
-          "url": "/travelgatex/reference/scalars/int",
-          "description": "",
-          "isDeprecated": ""
-        },
-        {
-          "typeString": "String",
-          "name": "before",
-          "url": "/travelgatex/reference/scalars/string",
-          "description": "",
-          "isDeprecated": ""
-        },
-        {
-          "typeString": "String",
-          "name": "after",
-          "url": "/travelgatex/reference/scalars/string",
-          "description": "",
-          "isDeprecated": ""
-        }
-      ]
-    },
-    {
-      "typeString": "AmenityConnection",
-      "name": "amenities",
-      "url": "/travelgatex/reference/objects/amenityconnection",
-      "description": "",
-      "isDeprecated": "",
-      "args": [
-        {
-          "typeString": "Language",
-          "name": "language",
-          "url": "/travelgatex/reference/scalars/language",
-          "description": "",
-          "isDeprecated": ""
-        },
-        {
-          "typeString": "Int",
-          "name": "first",
-          "url": "/travelgatex/reference/scalars/int",
-          "description": "",
-          "isDeprecated": ""
-        },
-        {
-          "typeString": "Int",
-          "name": "last",
-          "url": "/travelgatex/reference/scalars/int",
-          "description": "",
-          "isDeprecated": ""
-        },
-        {
-          "typeString": "String",
-          "name": "before",
-          "url": "/travelgatex/reference/scalars/string",
-          "description": "",
-          "isDeprecated": ""
-        },
-        {
-          "typeString": "String",
-          "name": "after",
-          "url": "/travelgatex/reference/scalars/string",
-          "description": "",
-          "isDeprecated": ""
-        }
-      ]
-    },
-    {
-      "typeString": "Information!",
-      "name": "additionalInformation",
-      "url": "/travelgatex/reference/interfaces/information",
-      "description": "",
-      "isDeprecated": "",
-      "args": [
-        {
-          "typeString": "Language",
-          "name": "language",
-          "url": "/travelgatex/reference/scalars/language",
-          "description": "",
-          "isDeprecated": ""
-        }
-      ]
-    },
-    {
-      "typeString": "Information!",
-      "name": "generalDescription",
-      "url": "/travelgatex/reference/interfaces/information",
-      "description": "",
-      "isDeprecated": "",
-      "args": [
-        {
-          "typeString": "Language",
-          "name": "language",
-          "url": "/travelgatex/reference/scalars/language",
-          "description": "",
-          "isDeprecated": ""
-        }
-      ]
-    },
-    {
       "typeString": "Location!",
       "name": "location",
       "url": "/travelgatex/reference/objects/location",
-      "description": "",
+      "description": "Indicates the location of the hotel.",
       "isDeprecated": "",
       "args": null
     },
     {
-      "typeString": "Contact!",
+      "typeString": "Contact",
       "name": "contact",
       "url": "/travelgatex/reference/objects/contact",
-      "description": "Contact information.",
+      "description": "Contact cotains information about hotel contact.",
       "isDeprecated": "",
       "args": null
     },
     {
-      "typeString": "Destination!",
-      "name": "destination",
-      "url": "/travelgatex/reference/objects/destination",
-      "description": "Destination information.",
+      "typeString": "[Int!]!",
+      "name": "rank",
+      "url": "/travelgatex/reference/scalars/int",
+      "description": "Rank indicates the supplier categorization.",
       "isDeprecated": "",
       "args": null
+    },
+    {
+      "typeString": "[String!]",
+      "name": "cardTypes",
+      "url": "/travelgatex/reference/scalars/string",
+      "description": "List of credit cards",
+      "isDeprecated": "",
+      "args": null
+    },
+    {
+      "typeString": "[Amenity!]",
+      "name": "amenities",
+      "url": "/travelgatex/reference/objects/amenity",
+      "description": "Amenities",
+      "isDeprecated": "",
+      "args": null
+    },
+    {
+      "typeString": "[Media!]",
+      "name": "medias",
+      "url": "/travelgatex/reference/objects/media",
+      "description": "Medias",
+      "isDeprecated": "",
+      "args": null
+    },
+    {
+      "typeString": "[Description!]",
+      "name": "descriptions",
+      "url": "/travelgatex/reference/objects/description",
+      "description": "Descriptions",
+      "isDeprecated": "",
+      "args": [
+        {
+          "typeString": "[DescriptionType!]",
+          "name": "types",
+          "url": "/travelgatex/reference/enums/descriptiontype",
+          "description": "",
+          "isDeprecated": ""
+        },
+        {
+          "typeString": "[Language!]",
+          "name": "languages",
+          "url": "/travelgatex/reference/scalars/language",
+          "description": "",
+          "isDeprecated": ""
+        }
+      ]
     }
   ],
+  "deprecatedFields": null,
   "requireby": [
     {
       "name": "Hotel",
-      "description": "Hotel type",
+      "description": "Hotel Type",
       "url": "/travelgatex/reference/objects/hotel"
     }
   ],

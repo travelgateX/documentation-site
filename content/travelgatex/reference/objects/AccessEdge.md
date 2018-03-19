@@ -12,14 +12,15 @@
       "args": null
     },
     {
-      "typeString": "Supplier",
+      "typeString": "Access",
       "name": "node",
-      "url": "/travelgatex/reference/objects/supplier",
+      "url": "/travelgatex/reference/objects/access",
       "description": "",
       "isDeprecated": "",
       "args": null
     }
   ],
+  "deprecatedFields": null,
   "requireby": [
     {
       "name": "AccessConnection",

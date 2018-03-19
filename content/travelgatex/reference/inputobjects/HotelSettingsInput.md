@@ -52,9 +52,9 @@
       "args": null
     },
     {
-      "typeString": "[SupplierInput!]",
+      "typeString": "[HotelXSupplierInput!]",
       "name": "suppliers",
-      "url": "/travelgatex/reference/inputobjects/supplierinput",
+      "url": "/travelgatex/reference/inputobjects/hotelxsupplierinput",
       "description": "Array of suppliers. Each one contains its own code, settings and accesses.",
       "isDeprecated": "",
       "args": null
@@ -68,6 +68,7 @@
       "args": null
     }
   ],
+  "deprecatedFields": null,
   "requireby": null,
   "enumValues": null,
   "operator": "type",

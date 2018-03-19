@@ -4,6 +4,134 @@
   "weight": 1,
   "fields": [
     {
+      "typeString": "Access",
+      "name": "createAccess",
+      "url": "/travelgatex/reference/objects/access",
+      "description": "Creates an Access.",
+      "isDeprecated": "",
+      "args": [
+        {
+          "typeString": "AccessInput!",
+          "name": "input",
+          "url": "/travelgatex/reference/inputobjects/accessinput",
+          "description": "",
+          "isDeprecated": ""
+        }
+      ]
+    },
+    {
+      "typeString": "Access",
+      "name": "updateAccess",
+      "url": "/travelgatex/reference/objects/access",
+      "description": "Updates an Access.",
+      "isDeprecated": "",
+      "args": [
+        {
+          "typeString": "AccessInput!",
+          "name": "input",
+          "url": "/travelgatex/reference/inputobjects/accessinput",
+          "description": "",
+          "isDeprecated": ""
+        }
+      ]
+    },
+    {
+      "typeString": "Access",
+      "name": "grantAccessToGroup",
+      "url": "/travelgatex/reference/objects/access",
+      "description": "Grants Access visibility to a group.",
+      "isDeprecated": "",
+      "args": [
+        {
+          "typeString": "GroupInput!",
+          "name": "input",
+          "url": "/travelgatex/reference/inputobjects/groupinput",
+          "description": "",
+          "isDeprecated": ""
+        }
+      ]
+    },
+    {
+      "typeString": "Access",
+      "name": "deleteAccessFromGroup",
+      "url": "/travelgatex/reference/objects/access",
+      "description": "Removes Access visibility to groups.",
+      "isDeprecated": "",
+      "args": [
+        {
+          "typeString": "GroupInput!",
+          "name": "input",
+          "url": "/travelgatex/reference/inputobjects/groupinput",
+          "description": "",
+          "isDeprecated": ""
+        }
+      ]
+    },
+    {
+      "typeString": "Supplier",
+      "name": "grantSupplierToGroup",
+      "url": "/travelgatex/reference/objects/supplier",
+      "description": "Grants Supplier visibility to a group.",
+      "isDeprecated": "",
+      "args": [
+        {
+          "typeString": "GroupInput!",
+          "name": "input",
+          "url": "/travelgatex/reference/inputobjects/groupinput",
+          "description": "",
+          "isDeprecated": ""
+        }
+      ]
+    },
+    {
+      "typeString": "Supplier",
+      "name": "deleteSupplierFromGroup",
+      "url": "/travelgatex/reference/objects/supplier",
+      "description": "Removes Supplier visibility to groups.",
+      "isDeprecated": "",
+      "args": [
+        {
+          "typeString": "GroupInput!",
+          "name": "input",
+          "url": "/travelgatex/reference/inputobjects/groupinput",
+          "description": "",
+          "isDeprecated": ""
+        }
+      ]
+    },
+    {
+      "typeString": "Client",
+      "name": "createClient",
+      "url": "/travelgatex/reference/objects/client",
+      "description": "Creates a Client.",
+      "isDeprecated": "",
+      "args": [
+        {
+          "typeString": "ClientInput!",
+          "name": "input",
+          "url": "/travelgatex/reference/inputobjects/clientinput",
+          "description": "",
+          "isDeprecated": ""
+        }
+      ]
+    },
+    {
+      "typeString": "Client",
+      "name": "updateClient",
+      "url": "/travelgatex/reference/objects/client",
+      "description": "Updates a Client.",
+      "isDeprecated": "",
+      "args": [
+        {
+          "typeString": "ClientInput!",
+          "name": "input",
+          "url": "/travelgatex/reference/inputobjects/clientinput",
+          "description": "",
+          "isDeprecated": ""
+        }
+      ]
+    },
+    {
       "typeString": "Member!",
       "name": "createMember",
       "url": "/travelgatex/reference/objects/member",
@@ -100,6 +228,7 @@
       ]
     }
   ],
+  "deprecatedFields": null,
   "requireby": [
     {
       "name": "Mutation",

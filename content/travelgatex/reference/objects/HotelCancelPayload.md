@@ -4,9 +4,9 @@
   "weight": 1,
   "fields": [
     {
-      "typeString": "RequestStats",
+      "typeString": "StatsRequest",
       "name": "stats",
-      "url": "/travelgatex/reference/objects/requeststats",
+      "url": "/travelgatex/reference/objects/statsrequest",
       "description": "Application stats in string format",
       "isDeprecated": "",
       "args": [
@@ -52,6 +52,7 @@
       "args": null
     }
   ],
+  "deprecatedFields": null,
   "requireby": [
     {
       "name": "Mutation",

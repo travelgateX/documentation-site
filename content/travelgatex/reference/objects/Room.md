@@ -76,6 +76,7 @@
       "args": null
     }
   ],
+  "deprecatedFields": null,
   "requireby": null,
   "enumValues": null,
   "operator": "type",

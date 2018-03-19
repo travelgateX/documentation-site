@@ -4,6 +4,75 @@
   "weight": 1,
   "fields": [
     {
+      "typeString": "BoardConnection!",
+      "name": "boards",
+      "url": "/travelgatex/reference/objects/boardconnection",
+      "description": "Query to obtain Boards",
+      "isDeprecated": "",
+      "args": [
+        {
+          "typeString": "HotelXBoardQueryInput!",
+          "name": "criteria",
+          "url": "/travelgatex/reference/inputobjects/hotelxboardqueryinput",
+          "description": "",
+          "isDeprecated": ""
+        },
+        {
+          "typeString": "RelayInput!",
+          "name": "relay",
+          "url": "/travelgatex/reference/inputobjects/relayinput",
+          "description": "",
+          "isDeprecated": ""
+        }
+      ]
+    },
+    {
+      "typeString": "CategoryConnection!",
+      "name": "categories",
+      "url": "/travelgatex/reference/objects/categoryconnection",
+      "description": "Query to obtain Categories",
+      "isDeprecated": "",
+      "args": [
+        {
+          "typeString": "HotelXCategoryQueryInput!",
+          "name": "criteria",
+          "url": "/travelgatex/reference/inputobjects/hotelxcategoryqueryinput",
+          "description": "",
+          "isDeprecated": ""
+        },
+        {
+          "typeString": "RelayInput!",
+          "name": "relay",
+          "url": "/travelgatex/reference/inputobjects/relayinput",
+          "description": "",
+          "isDeprecated": ""
+        }
+      ]
+    },
+    {
+      "typeString": "RoomConnection!",
+      "name": "rooms",
+      "url": "/travelgatex/reference/objects/roomconnection",
+      "description": "Query to obtain rooms",
+      "isDeprecated": "",
+      "args": [
+        {
+          "typeString": "HotelXRoomQueryInput!",
+          "name": "criteria",
+          "url": "/travelgatex/reference/inputobjects/hotelxroomqueryinput",
+          "description": "",
+          "isDeprecated": ""
+        },
+        {
+          "typeString": "RelayInput!",
+          "name": "relay",
+          "url": "/travelgatex/reference/inputobjects/relayinput",
+          "description": "",
+          "isDeprecated": ""
+        }
+      ]
+    },
+    {
       "typeString": "HotelConnection!",
       "name": "hotels",
       "url": "/travelgatex/reference/objects/hotelconnection",
@@ -11,44 +80,69 @@
       "isDeprecated": "",
       "args": [
         {
-          "typeString": "[String!]",
-          "name": "codes",
-          "url": "/travelgatex/reference/scalars/string",
+          "typeString": "HotelXHotelListInput!",
+          "name": "criteria",
+          "url": "/travelgatex/reference/inputobjects/hotelxhotellistinput",
+          "description": "",
+          "isDeprecated": ""
+        },
+        {
+          "typeString": "RelayInput!",
+          "name": "relay",
+          "url": "/travelgatex/reference/inputobjects/relayinput",
           "description": "",
           "isDeprecated": ""
         },
         {
           "typeString": "String",
-          "name": "language",
+          "name": "token",
           "url": "/travelgatex/reference/scalars/string",
           "description": "",
           "isDeprecated": ""
-        },
+        }
+      ]
+    },
+    {
+      "typeString": "DestinationConnection!",
+      "name": "destinations",
+      "url": "/travelgatex/reference/objects/destinationconnection",
+      "description": "Query to obtain Destinations",
+      "isDeprecated": "",
+      "args": [
         {
-          "typeString": "Int",
-          "name": "first",
-          "url": "/travelgatex/reference/scalars/int",
+          "typeString": "HotelXDestinationListInput!",
+          "name": "criteria",
+          "url": "/travelgatex/reference/inputobjects/hotelxdestinationlistinput",
           "description": "",
           "isDeprecated": ""
         },
         {
-          "typeString": "Int",
-          "name": "last",
-          "url": "/travelgatex/reference/scalars/int",
+          "typeString": "RelayInput!",
+          "name": "relay",
+          "url": "/travelgatex/reference/inputobjects/relayinput",
           "description": "",
           "isDeprecated": ""
         },
         {
           "typeString": "String",
-          "name": "before",
+          "name": "token",
           "url": "/travelgatex/reference/scalars/string",
           "description": "",
           "isDeprecated": ""
-        },
+        }
+      ]
+    },
+    {
+      "typeString": "[DestinationSearchResult]!",
+      "name": "destinationSearcher",
+      "url": "#",
+      "description": "Returns hotels and destinations that contains the indicated text. ",
+      "isDeprecated": "",
+      "args": [
         {
-          "typeString": "String",
-          "name": "after",
-          "url": "/travelgatex/reference/scalars/string",
+          "typeString": "HotelXDestinationSearcherInput!",
+          "name": "criteria",
+          "url": "/travelgatex/reference/inputobjects/hotelxdestinationsearcherinput",
           "description": "",
           "isDeprecated": ""
         }
@@ -176,8 +270,25 @@
       "description": "TODO: me no understand...\nReturns status of the booking service.",
       "isDeprecated": "",
       "args": null
+    },
+    {
+      "typeString": "Mapping!",
+      "name": "mapping",
+      "url": "/travelgatex/reference/objects/mapping",
+      "description": "",
+      "isDeprecated": "",
+      "args": [
+        {
+          "typeString": "String!",
+          "name": "groupCode",
+          "url": "/travelgatex/reference/scalars/string",
+          "description": "",
+          "isDeprecated": ""
+        }
+      ]
     }
   ],
+  "deprecatedFields": null,
   "requireby": [
     {
       "name": "Query",

@@ -5,7 +5,7 @@
   "fields": [
     {
       "typeString": "String!",
-      "name": "contextCode",
+      "name": "code",
       "url": "/travelgatex/reference/scalars/string",
       "description": "Code of the context",
       "isDeprecated": "",
@@ -15,12 +15,12 @@
       "typeString": "[MappingEntity!]",
       "name": "hotels",
       "url": "/travelgatex/reference/objects/mappingentity",
-      "description": "Mapping of hotels. Filter by hotel code.",
+      "description": "Mapping of hotels, you can filter by hotel code.",
       "isDeprecated": "",
       "args": [
         {
           "typeString": "[String!]",
-          "name": "hotelCodes",
+          "name": "codes",
           "url": "/travelgatex/reference/scalars/string",
           "description": "",
           "isDeprecated": ""
@@ -31,28 +31,12 @@
       "typeString": "[MappingEntity!]",
       "name": "rooms",
       "url": "/travelgatex/reference/objects/mappingentity",
-      "description": "Mapping of rooms. Filter by room code.",
+      "description": "Mapping of rooms, you can filter by room code.",
       "isDeprecated": "",
       "args": [
         {
           "typeString": "[String!]",
-          "name": "roomCodes",
-          "url": "/travelgatex/reference/scalars/string",
-          "description": "",
-          "isDeprecated": ""
-        }
-      ]
-    },
-    {
-      "typeString": "[MappingEntity!]",
-      "name": "rates",
-      "url": "/travelgatex/reference/objects/mappingentity",
-      "description": "Mapping of rates. Filter by rate code.",
-      "isDeprecated": "",
-      "args": [
-        {
-          "typeString": "[String!]",
-          "name": "rateCodes",
+          "name": "codes",
           "url": "/travelgatex/reference/scalars/string",
           "description": "",
           "isDeprecated": ""
@@ -63,12 +47,12 @@
       "typeString": "[MappingEntity!]",
       "name": "boards",
       "url": "/travelgatex/reference/objects/mappingentity",
-      "description": "Mapping of boards. Filter by board code.",
+      "description": "Mapping of boards, you can filter by board code.",
       "isDeprecated": "",
       "args": [
         {
           "typeString": "[String!]",
-          "name": "BoardCodes",
+          "name": "codes",
           "url": "/travelgatex/reference/scalars/string",
           "description": "",
           "isDeprecated": ""
@@ -76,6 +60,7 @@
       ]
     }
   ],
+  "deprecatedFields": null,
   "requireby": null,
   "enumValues": null,
   "operator": "type",

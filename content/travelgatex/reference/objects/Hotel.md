@@ -44,6 +44,7 @@
       "args": null
     }
   ],
+  "deprecatedFields": null,
   "requireby": [
     {
       "name": "HotelEdge",
@@ -55,7 +56,7 @@
   "operator": "type",
   "typename": "Hotel"
 }
-Hotel type
+Hotel Type
 ## GraphQL Schema definition
 
 {{% graphql-schema-type %}}

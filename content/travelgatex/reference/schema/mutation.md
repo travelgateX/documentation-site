@@ -18,7 +18,9 @@
       "description": "",
       "isDeprecated": "",
       "args": null
-    },
+    }
+  ],
+  "deprecatedFields": [
     {
       "typeString": "HotelBookPayload",
       "name": "hotelBook",

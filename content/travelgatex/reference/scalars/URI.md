@@ -3,20 +3,21 @@
   "description": "",
   "weight": 1,
   "fields": null,
+  "deprecatedFields": null,
   "requireby": [
     {
-      "name": "MediaData",
-      "description": "",
-      "url": "/travelgatex/reference/objects/mediadata"
-    },
-    {
       "name": "Contact",
-      "description": "Contact type",
+      "description": "Contact Data.",
       "url": "/travelgatex/reference/objects/contact"
     },
     {
+      "name": "Media",
+      "description": "Contains media information.",
+      "url": "/travelgatex/reference/objects/media"
+    },
+    {
       "name": "UrlsInput",
-      "description": "Url's",
+      "description": "Urls Input",
       "url": "/travelgatex/reference/inputobjects/urlsinput"
     },
     {

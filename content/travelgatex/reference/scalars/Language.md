@@ -3,11 +3,12 @@
   "description": "",
   "weight": 1,
   "fields": null,
+  "deprecatedFields": null,
   "requireby": [
     {
-      "name": "Information",
+      "name": "Text",
       "description": "",
-      "url": "/travelgatex/reference/interfaces/information"
+      "url": "/travelgatex/reference/interfaces/text"
     },
     {
       "name": "HotelCriteriaSearchInput",
@@ -48,11 +49,6 @@
       "name": "DefaultSettingsInput",
       "description": "",
       "url": "/travelgatex/reference/inputobjects/defaultsettingsinput"
-    },
-    {
-      "name": "HotelInput",
-      "description": "",
-      "url": "/travelgatex/reference/inputobjects/hotelinput"
     }
   ],
   "enumValues": null,

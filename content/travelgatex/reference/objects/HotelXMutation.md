@@ -48,8 +48,25 @@
           "isDeprecated": ""
         }
       ]
+    },
+    {
+      "typeString": "String!",
+      "name": "loadFile",
+      "url": "/travelgatex/reference/scalars/string",
+      "description": "",
+      "isDeprecated": "",
+      "args": [
+        {
+          "typeString": "String!",
+          "name": "input",
+          "url": "/travelgatex/reference/scalars/string",
+          "description": "",
+          "isDeprecated": ""
+        }
+      ]
     }
   ],
+  "deprecatedFields": null,
   "requireby": [
     {
       "name": "Mutation",
