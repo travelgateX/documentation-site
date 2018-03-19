@@ -25,6 +25,7 @@
         <input data-search-input class="form-control"  id="search-by" type="text" placeholder="Search docs...">
         <script type="text/javascript" src="{{"js/lunr.min.js" | relURL}}"></script>
         <script type="text/javascript" src="{{"js/auto-complete.js" | relURL}}"></script>
+        <script type="text/javascript" src="{{"js/functions.js" | relURL}}"></script>
         <script type="text/javascript">
             {{ if .Site.IsMultiLingual }}
             var baseurl = "{{.Site.BaseURL}}{{.Site.LanguagePrefix}}";

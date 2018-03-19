@@ -32,10 +32,10 @@
         {{end}}
 
         {{if $.Page.Params.deprecatedFields}}
-            <div class="deprecated-button-container" style="background-color:white; padding: 1rem 0 1rem 3rem">
-                <button class="btn btn-sm btn-info" onclick="document.getElementsByClassName('deprecated-entities-container')[0].style.display = document.getElementsByClassName('deprecated-entities-container')[0].style.display === 'block' ? 'none' : 'block'">See deprecated fields </button>
+            <div class="deprecated-button-container" >
+                <button class="btn btn-sm btn-info" onclick="toggleDeprecatedEntitiesContainer(this)">Show deprecated fields</button>
             </div>
-            <div class="deprecated-entities-container" style="display:none; background-color: #EEE">
+            <div class="deprecated-entities-container">
             {{range $.Page.Params.deprecatedFields}}
                 {{if .args}}
                     {{if gt (len .args) 2}}
