@@ -30,6 +30,37 @@
                 </li>
             {{end}}
         {{end}}
+
+        {{if $.Page.Params.deprecatedFields}}
+            <div class="deprecated-button-container" style="background-color:white; padding: 1rem 0 1rem 3rem">
+                <button class="btn btn-sm btn-info" onclick="document.getElementsByClassName('deprecated-entities-container')[0].style.display = document.getElementsByClassName('deprecated-entities-container')[0].style.display === 'block' ? 'none' : 'block'">See deprecated fields </button>
+            </div>
+            <div class="deprecated-entities-container" style="display:none; background-color: #EEE">
+            {{range $.Page.Params.deprecatedFields}}
+                {{if .args}}
+                    {{if gt (len .args) 2}}
+                        <li>
+                            <span class="tab">
+                                <span class="meta">{{.name}}</span>(
+                            </span>
+                        </li>
+                        {{- template "args" .args}}
+                        <li>
+                            <span class="tab">
+                                ): <a class="support type" href="{{.url}}">{{.typeString}}</a> 
+                            </span>
+                        </li>
+                    {{else}}
+                        <li>
+                            <span class="tab">
+                                <span class="meta">{{.name}}</span>({{- template "argsInLine" .args}}): <a class="support type" href="{{.url}}">{{.typeString}}</a> 
+                            </span>
+                        </li>
+                    {{end}}
+                {{end}}
+            {{end}}
+            </div>
+        {{end}}
         <li>}</li>
     </ul>
 </div>
