@@ -8,7 +8,6 @@
       "name": "step",
       "url": "/travelgatex/reference/enums/pluginsteptype",
       "description": "Indicates where the plugin will be executed.",
-      "isDeprecated": "",
       "args": null
     },
     {
@@ -16,7 +15,6 @@
       "name": "pluginsType",
       "url": "/travelgatex/reference/inputobjects/pluginsinput",
       "description": "",
-      "isDeprecated": "",
       "args": null
     }
   ],

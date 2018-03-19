@@ -8,7 +8,7 @@
       "name": "address",
       "url": "/travelgatex/reference/scalars/string",
       "description": "Contains Hotel Address",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -16,7 +16,7 @@
       "name": "city",
       "url": "/travelgatex/reference/scalars/string",
       "description": "Contains the city",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -24,7 +24,7 @@
       "name": "zipCode",
       "url": "/travelgatex/reference/scalars/string",
       "description": "Contains the zipCode.",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -32,7 +32,7 @@
       "name": "country",
       "url": "/travelgatex/reference/scalars/country",
       "description": "Country where is the Hotel.",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -40,7 +40,7 @@
       "name": "coordinates",
       "url": "/travelgatex/reference/objects/coordinates",
       "description": "Geographical coordinates corresponding to a location.",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -48,7 +48,7 @@
       "name": "closestDestination",
       "url": "/travelgatex/reference/objects/destinationdata",
       "description": "Closest destination",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     }
   ],

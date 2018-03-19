@@ -8,7 +8,7 @@
       "name": "code",
       "url": "/travelgatex/reference/scalars/string",
       "description": "Specifies the promotion code.",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -16,7 +16,7 @@
       "name": "name",
       "url": "/travelgatex/reference/scalars/string",
       "description": "Specifies the promotion name.",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -24,7 +24,7 @@
       "name": "effectiveDate",
       "url": "/travelgatex/reference/scalars/date",
       "description": "Promotion effective date.",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -32,7 +32,7 @@
       "name": "expireDate",
       "url": "/travelgatex/reference/scalars/date",
       "description": "Promotion expire date.",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     }
   ],

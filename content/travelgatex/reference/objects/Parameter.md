@@ -8,7 +8,7 @@
       "name": "key",
       "url": "/travelgatex/reference/scalars/id",
       "description": "Contains the keyword/Id to identify a parameter.\nThis information is mandatory.",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -16,7 +16,7 @@
       "name": "value",
       "url": "/travelgatex/reference/scalars/string",
       "description": "Contains the parameter values.\nThis information is mandatory.",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     }
   ],

@@ -8,7 +8,7 @@
       "name": "code",
       "url": "/travelgatex/reference/scalars/id",
       "description": "Internal code.",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -16,7 +16,7 @@
       "name": "hotelCode",
       "url": "/travelgatex/reference/scalars/string",
       "description": "Code to perform availability.",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -24,7 +24,7 @@
       "name": "hotelCodeSupplier",
       "url": "/travelgatex/reference/scalars/string",
       "description": "Native supplier hotel code.",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -32,7 +32,7 @@
       "name": "hotelName",
       "url": "/travelgatex/reference/scalars/string",
       "description": "Name of the hotel in the Supplier selected.",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -40,7 +40,7 @@
       "name": "categoryCode",
       "url": "/travelgatex/reference/scalars/string",
       "description": "Hotel category (for example number of stars).",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -48,7 +48,7 @@
       "name": "property",
       "url": "/travelgatex/reference/objects/property",
       "description": "Indicates property type",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -56,7 +56,7 @@
       "name": "chainCode",
       "url": "/travelgatex/reference/scalars/string",
       "description": "Hotel chain code",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -64,7 +64,7 @@
       "name": "exclusiveDeal",
       "url": "/travelgatex/reference/scalars/boolean",
       "description": "Indicates that the Hotel has an Exclusive Deal.",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -72,7 +72,7 @@
       "name": "location",
       "url": "/travelgatex/reference/objects/location",
       "description": "Indicates the location of the hotel.",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -80,7 +80,7 @@
       "name": "contact",
       "url": "/travelgatex/reference/objects/contact",
       "description": "Contact cotains information about hotel contact.",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -88,7 +88,7 @@
       "name": "rank",
       "url": "/travelgatex/reference/scalars/int",
       "description": "Rank indicates the supplier categorization.",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -96,7 +96,7 @@
       "name": "cardTypes",
       "url": "/travelgatex/reference/scalars/string",
       "description": "List of credit cards",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -104,7 +104,7 @@
       "name": "amenities",
       "url": "/travelgatex/reference/objects/amenity",
       "description": "Amenities",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -112,7 +112,7 @@
       "name": "medias",
       "url": "/travelgatex/reference/objects/media",
       "description": "Medias",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -120,21 +120,19 @@
       "name": "descriptions",
       "url": "/travelgatex/reference/objects/description",
       "description": "Descriptions",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": [
         {
           "typeString": "[DescriptionType!]",
           "name": "types",
           "url": "/travelgatex/reference/enums/descriptiontype",
-          "description": "",
-          "isDeprecated": ""
+          "description": ""
         },
         {
           "typeString": "[Language!]",
           "name": "languages",
           "url": "/travelgatex/reference/scalars/language",
-          "description": "",
-          "isDeprecated": ""
+          "description": ""
         }
       ]
     }

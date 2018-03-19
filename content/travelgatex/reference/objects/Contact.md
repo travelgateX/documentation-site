@@ -8,7 +8,7 @@
       "name": "email",
       "url": "/travelgatex/reference/scalars/string",
       "description": "Email",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -16,7 +16,7 @@
       "name": "telephone",
       "url": "/travelgatex/reference/scalars/string",
       "description": "Telephone",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -24,7 +24,7 @@
       "name": "fax",
       "url": "/travelgatex/reference/scalars/string",
       "description": "Fax",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -32,7 +32,7 @@
       "name": "web",
       "url": "/travelgatex/reference/scalars/uri",
       "description": "Web",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     }
   ],

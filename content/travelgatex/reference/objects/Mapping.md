@@ -8,14 +8,13 @@
       "name": "contexts",
       "url": "/travelgatex/reference/objects/mappingcontext",
       "description": "Returns the differents group contexts, you can filter by some contexts.",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": [
         {
           "typeString": "[String!]",
           "name": "codes",
           "url": "/travelgatex/reference/scalars/string",
-          "description": "",
-          "isDeprecated": ""
+          "description": ""
         }
       ]
     },
@@ -24,7 +23,7 @@
       "name": "errors",
       "url": "/travelgatex/reference/objects/error",
       "description": "Errors that will lead the service to abort",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -32,7 +31,7 @@
       "name": "warnings",
       "url": "/travelgatex/reference/objects/warning",
       "description": "Potentially harmful situations or errors that won't force the service to abort",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     }
   ],

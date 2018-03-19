@@ -8,7 +8,6 @@
       "name": "timeout",
       "url": "/travelgatex/reference/scalars/int",
       "description": "Milliseconds before the connection is closed.",
-      "isDeprecated": "",
       "args": null
     },
     {
@@ -16,7 +15,6 @@
       "name": "auditTransactions",
       "url": "/travelgatex/reference/scalars/boolean",
       "description": "Specifies if transactions exchanged with the supplier have to be logged or not.",
-      "isDeprecated": "",
       "args": null
     },
     {
@@ -24,7 +22,6 @@
       "name": "businessRules",
       "url": "/travelgatex/reference/inputobjects/businessrulesinput",
       "description": "Business rules.",
-      "isDeprecated": "",
       "args": null
     }
   ],

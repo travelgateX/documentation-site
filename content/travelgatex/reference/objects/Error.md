@@ -8,7 +8,7 @@
       "name": "code",
       "url": "/travelgatex/reference/scalars/string",
       "description": "Error code",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -16,7 +16,7 @@
       "name": "type",
       "url": "/travelgatex/reference/scalars/string",
       "description": "Error type",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -24,7 +24,7 @@
       "name": "description",
       "url": "/travelgatex/reference/scalars/string",
       "description": "Error description",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     }
   ],

@@ -8,7 +8,7 @@
       "name": "code",
       "url": "/travelgatex/reference/scalars/string",
       "description": "Code",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -16,7 +16,7 @@
       "name": "type",
       "url": "/travelgatex/reference/enums/applicationareatype",
       "description": "Indicates the type of the amenity.",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -24,14 +24,13 @@
       "name": "texts",
       "url": "/travelgatex/reference/interfaces/text",
       "description": "Contains the descriptive",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": [
         {
           "typeString": "[Language!]",
           "name": "languages",
           "url": "/travelgatex/reference/scalars/language",
-          "description": "",
-          "isDeprecated": ""
+          "description": ""
         }
       ]
     }

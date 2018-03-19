@@ -8,7 +8,7 @@
       "name": "refundable",
       "url": "/travelgatex/reference/scalars/boolean",
       "description": "Indicates if the option is refundable or not.",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -16,7 +16,7 @@
       "name": "cancelPenalties",
       "url": "/travelgatex/reference/objects/cancelpenalty",
       "description": "List of cancel penalties.",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     }
   ],

@@ -8,7 +8,6 @@
       "name": "optionsQuota",
       "url": "/travelgatex/reference/scalars/int",
       "description": "Options quota per search. Maximum numbers of options to be returned by the search query.",
-      "isDeprecated": "",
       "args": null
     },
     {
@@ -16,7 +15,6 @@
       "name": "businessRulesType",
       "url": "/travelgatex/reference/enums/businessrulestype",
       "description": "Different business rules to filter the returned options.",
-      "isDeprecated": "",
       "args": null
     }
   ],

@@ -8,7 +8,7 @@
       "name": "hoursBefore",
       "url": "/travelgatex/reference/scalars/int",
       "description": "Cancellation fees applicable x number of hours before the check in date.",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -16,7 +16,7 @@
       "name": "penaltyType",
       "url": "/travelgatex/reference/enums/cancelpenaltytype",
       "description": "Type of penalty. This can be Nights, Percent or Import.",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -24,7 +24,7 @@
       "name": "currency",
       "url": "/travelgatex/reference/scalars/currency",
       "description": "Currency used in the cancel policy.",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -32,7 +32,7 @@
       "name": "value",
       "url": "/travelgatex/reference/scalars/float",
       "description": "Value of the cancel policy.",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     }
   ],

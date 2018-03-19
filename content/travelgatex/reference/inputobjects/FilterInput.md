@@ -8,7 +8,6 @@
       "name": "access",
       "url": "/travelgatex/reference/inputobjects/accessfilterinput",
       "description": "You can specify one of the filters or any of them. In this latter case, all the configurated accesses will be executed.",
-      "isDeprecated": "",
       "args": null
     },
     {
@@ -16,7 +15,6 @@
       "name": "rateRules",
       "url": "/travelgatex/reference/inputobjects/raterulesfilterinput",
       "description": "If requested, only options with the specified rateRules will be returned",
-      "isDeprecated": "",
       "args": null
     }
   ],

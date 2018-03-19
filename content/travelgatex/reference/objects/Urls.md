@@ -8,7 +8,7 @@
       "name": "search",
       "url": "/travelgatex/reference/scalars/uri",
       "description": "Specific Url for Availability method.",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -16,7 +16,7 @@
       "name": "quote",
       "url": "/travelgatex/reference/scalars/uri",
       "description": "Specific Url for Reservation method.",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -24,7 +24,7 @@
       "name": "book",
       "url": "/travelgatex/reference/scalars/uri",
       "description": "Specific Url for Valuation method.",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -32,7 +32,7 @@
       "name": "generic",
       "url": "/travelgatex/reference/scalars/uri",
       "description": "Supplier URL used for multiple methods.",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     }
   ],

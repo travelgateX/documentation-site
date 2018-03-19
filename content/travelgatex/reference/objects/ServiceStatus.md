@@ -8,7 +8,7 @@
       "name": "code",
       "url": "/travelgatex/reference/scalars/string",
       "description": "Status code",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -16,7 +16,7 @@
       "name": "type",
       "url": "/travelgatex/reference/scalars/string",
       "description": "Status type",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -24,7 +24,7 @@
       "name": "description",
       "url": "/travelgatex/reference/scalars/string",
       "description": "Status description",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     }
   ],

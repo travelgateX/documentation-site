@@ -8,7 +8,7 @@
       "name": "optionRefId",
       "url": "/travelgatex/reference/scalars/string",
       "description": "Indicates the valuation key",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -16,7 +16,7 @@
       "name": "status",
       "url": "/travelgatex/reference/enums/statustype",
       "description": "The possible values in status in response are Available (OK) or On Request (RQ).",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -24,7 +24,7 @@
       "name": "price",
       "url": "/travelgatex/reference/objects/price",
       "description": "Specifies the prices (Gross, Net and Amount) of the option returned.",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -32,7 +32,7 @@
       "name": "cancelPolicy",
       "url": "/travelgatex/reference/objects/cancelpolicy",
       "description": "Specifies cancel policies of the option returned.",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -40,7 +40,7 @@
       "name": "remarks",
       "url": "/travelgatex/reference/scalars/string",
       "description": "Additional information about the option.",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -48,7 +48,7 @@
       "name": "surcharges",
       "url": "/travelgatex/reference/objects/surcharge",
       "description": "List of surcharges of the option returned.",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -56,7 +56,7 @@
       "name": "cardTypes",
       "url": "/travelgatex/reference/scalars/string",
       "description": "List of credit cards",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -64,7 +64,7 @@
       "name": "addOns",
       "url": "/travelgatex/reference/objects/addons",
       "description": "Extra information about the option.",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     }
   ],

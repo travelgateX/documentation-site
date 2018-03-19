@@ -8,7 +8,6 @@
       "name": "name",
       "url": "/travelgatex/reference/scalars/string",
       "description": "Access descriptive name",
-      "isDeprecated": "",
       "args": null
     },
     {
@@ -16,7 +15,6 @@
       "name": "isActive",
       "url": "/travelgatex/reference/scalars/boolean",
       "description": "Indicates if the access is active.",
-      "isDeprecated": "",
       "args": null
     },
     {
@@ -24,7 +22,6 @@
       "name": "code",
       "url": "/travelgatex/reference/scalars/id",
       "description": "Access code.",
-      "isDeprecated": "",
       "args": null
     },
     {
@@ -32,7 +29,6 @@
       "name": "supplier",
       "url": "/travelgatex/reference/scalars/string",
       "description": "supplier for this access.",
-      "isDeprecated": "",
       "args": null
     },
     {
@@ -40,7 +36,6 @@
       "name": "isTest",
       "url": "/travelgatex/reference/scalars/boolean",
       "description": "Indicates if this access can be used for testing or not",
-      "isDeprecated": "",
       "args": null
     },
     {
@@ -48,7 +43,6 @@
       "name": "user",
       "url": "/travelgatex/reference/scalars/string",
       "description": "User code to connect to supplier.",
-      "isDeprecated": "",
       "args": null
     },
     {
@@ -56,7 +50,6 @@
       "name": "password",
       "url": "/travelgatex/reference/scalars/string",
       "description": "Password for the connection.",
-      "isDeprecated": "",
       "args": null
     },
     {
@@ -64,7 +57,6 @@
       "name": "urls",
       "url": "/travelgatex/reference/inputobjects/urlsinput",
       "description": "Specific Urls",
-      "isDeprecated": "",
       "args": null
     },
     {
@@ -72,7 +64,6 @@
       "name": "parameters",
       "url": "/travelgatex/reference/inputobjects/parameterinput",
       "description": "List of parameters for additional information.",
-      "isDeprecated": "",
       "args": null
     },
     {
@@ -80,7 +71,6 @@
       "name": "markets",
       "url": "/travelgatex/reference/scalars/string",
       "description": "Markets allowed for the access.",
-      "isDeprecated": "",
       "args": null
     },
     {
@@ -88,7 +78,6 @@
       "name": "rateRules",
       "url": "/travelgatex/reference/enums/raterulestype",
       "description": "Business rules types for the access.",
-      "isDeprecated": "",
       "args": null
     },
     {
@@ -96,7 +85,6 @@
       "name": "shared",
       "url": "/travelgatex/reference/scalars/string",
       "description": "Parent access if Shared access.",
-      "isDeprecated": "",
       "args": null
     },
     {
@@ -104,7 +92,6 @@
       "name": "group",
       "url": "/travelgatex/reference/scalars/id",
       "description": "Default group where the access will be visible.",
-      "isDeprecated": "",
       "args": null
     }
   ],

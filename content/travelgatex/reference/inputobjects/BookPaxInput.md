@@ -8,7 +8,6 @@
       "name": "name",
       "url": "/travelgatex/reference/scalars/string",
       "description": "The guest's first  name",
-      "isDeprecated": "",
       "args": null
     },
     {
@@ -16,7 +15,6 @@
       "name": "surname",
       "url": "/travelgatex/reference/scalars/string",
       "description": "The guest's last name",
-      "isDeprecated": "",
       "args": null
     },
     {
@@ -24,7 +22,6 @@
       "name": "age",
       "url": "/travelgatex/reference/scalars/int",
       "description": "The guest's age",
-      "isDeprecated": "",
       "args": null
     }
   ],

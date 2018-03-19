@@ -8,7 +8,7 @@
       "name": "price",
       "url": "/travelgatex/reference/objects/price",
       "description": "Total price for all days.",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -16,7 +16,7 @@
       "name": "breakdown",
       "url": "/travelgatex/reference/objects/pricebreakdown",
       "description": "Daily break downs price.",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     }
   ],

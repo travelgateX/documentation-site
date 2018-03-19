@@ -8,7 +8,7 @@
       "name": "supplierCode",
       "url": "/travelgatex/reference/scalars/string",
       "description": "Supplier that offers this option.",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -16,7 +16,7 @@
       "name": "accessCode",
       "url": "/travelgatex/reference/scalars/string",
       "description": "Access code of this option.",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -24,7 +24,7 @@
       "name": "market",
       "url": "/travelgatex/reference/scalars/string",
       "description": "Market of this option.",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -32,7 +32,7 @@
       "name": "hotelCode",
       "url": "/travelgatex/reference/scalars/string",
       "description": "Code of the hotel in the context selected.",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -40,7 +40,7 @@
       "name": "hotelCodeSupplier",
       "url": "/travelgatex/reference/scalars/string",
       "description": "Supplier's hotel code.",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -48,7 +48,7 @@
       "name": "hotelName",
       "url": "/travelgatex/reference/scalars/string",
       "description": "Name of the hotel.",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -56,7 +56,7 @@
       "name": "boardCode",
       "url": "/travelgatex/reference/scalars/string",
       "description": "Code of the board in the context selected.",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -64,7 +64,7 @@
       "name": "boardCodeSupplier",
       "url": "/travelgatex/reference/scalars/string",
       "description": "Supplier's board code.",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -72,7 +72,7 @@
       "name": "paymentType",
       "url": "/travelgatex/reference/enums/paymenttype",
       "description": "Indicates the payment type of the option returned. Possible options: Merchant, Direct, Card Booking, Card check in and Mixed.",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -80,7 +80,7 @@
       "name": "status",
       "url": "/travelgatex/reference/enums/statustype",
       "description": "The possible values in status in response are Available (OK) or On Request (RQ).",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -88,7 +88,7 @@
       "name": "occupancies",
       "url": "/travelgatex/reference/objects/occupancy",
       "description": "List of occupancies of the request.",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -96,7 +96,7 @@
       "name": "rooms",
       "url": "/travelgatex/reference/objects/room",
       "description": "List of rooms of the option returned.",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -104,7 +104,7 @@
       "name": "price",
       "url": "/travelgatex/reference/objects/price",
       "description": "Specifies the prices (Gross, Net and Amount) of the option returned.",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -112,7 +112,7 @@
       "name": "supplements",
       "url": "/travelgatex/reference/objects/supplement",
       "description": "List of supplements of the option returned.",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -120,7 +120,7 @@
       "name": "surcharges",
       "url": "/travelgatex/reference/objects/surcharge",
       "description": "List of surcharges of the option returned.",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -128,7 +128,7 @@
       "name": "rateRules",
       "url": "/travelgatex/reference/enums/raterulestype",
       "description": "Specifies rate rules of the option returned.",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -136,7 +136,7 @@
       "name": "cancelPolicy",
       "url": "/travelgatex/reference/objects/cancelpolicy",
       "description": "Specifies cancel policies of the option returned.",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -144,7 +144,7 @@
       "name": "remarks",
       "url": "/travelgatex/reference/scalars/string",
       "description": "Additional information about the option.",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -152,7 +152,7 @@
       "name": "addOns",
       "url": "/travelgatex/reference/objects/addons",
       "description": "Extra information about the option.",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -160,7 +160,7 @@
       "name": "token",
       "url": "/travelgatex/reference/scalars/string",
       "description": "Token for Deep Link",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -168,7 +168,7 @@
       "name": "id",
       "url": "/travelgatex/reference/scalars/string",
       "description": "Indicates the quote key",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     }
   ],

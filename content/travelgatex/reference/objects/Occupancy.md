@@ -8,7 +8,7 @@
       "name": "id",
       "url": "/travelgatex/reference/scalars/int",
       "description": "Unique ID room in this option.",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -16,7 +16,7 @@
       "name": "paxes",
       "url": "/travelgatex/reference/objects/pax",
       "description": "List of pax of this occupancy.",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     }
   ],

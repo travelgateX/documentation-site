@@ -8,7 +8,7 @@
       "name": "cursor",
       "url": "/travelgatex/reference/scalars/string",
       "description": "",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -16,7 +16,7 @@
       "name": "node",
       "url": "/travelgatex/reference/objects/resource",
       "description": "",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     }
   ],

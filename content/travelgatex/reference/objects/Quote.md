@@ -9,21 +9,19 @@
       "name": "hotel",
       "url": "/travelgatex/reference/objects/hotelquote",
       "description": "Returns the total price and cancellation policies of the Option selected in the previous step (Search).",
-      "isDeprecated": " ⚠️",
+      "isDeprecated": true,
       "args": [
         {
           "typeString": "HotelCriteriaQuoteInput!",
           "name": "criteria",
           "url": "/travelgatex/reference/inputobjects/hotelcriteriaquoteinput",
-          "description": "",
-          "isDeprecated": ""
+          "description": ""
         },
         {
           "typeString": "HotelSettingsInput",
           "name": "settings",
           "url": "/travelgatex/reference/inputobjects/hotelsettingsinput",
-          "description": "",
-          "isDeprecated": ""
+          "description": ""
         }
       ]
     }

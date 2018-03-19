@@ -8,7 +8,7 @@
       "name": "id",
       "url": "/travelgatex/reference/scalars/id",
       "description": "",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -16,7 +16,7 @@
       "name": "code",
       "url": "/travelgatex/reference/scalars/id",
       "description": "",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -24,7 +24,7 @@
       "name": "label",
       "url": "/travelgatex/reference/scalars/string",
       "description": "",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -32,7 +32,7 @@
       "name": "isCreate",
       "url": "/travelgatex/reference/scalars/boolean",
       "description": "",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -40,7 +40,7 @@
       "name": "isRead",
       "url": "/travelgatex/reference/scalars/boolean",
       "description": "",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -48,7 +48,7 @@
       "name": "isUpdate",
       "url": "/travelgatex/reference/scalars/boolean",
       "description": "",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -56,7 +56,7 @@
       "name": "isDelete",
       "url": "/travelgatex/reference/scalars/boolean",
       "description": "",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -64,7 +64,7 @@
       "name": "isEnable",
       "url": "/travelgatex/reference/scalars/boolean",
       "description": "",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -72,7 +72,7 @@
       "name": "isExecutable",
       "url": "/travelgatex/reference/scalars/boolean",
       "description": "",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -80,7 +80,7 @@
       "name": "isSpecial",
       "url": "/travelgatex/reference/scalars/boolean",
       "description": "",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -88,7 +88,7 @@
       "name": "special",
       "url": "/travelgatex/reference/scalars/string",
       "description": "",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -96,42 +96,37 @@
       "name": "resources",
       "url": "/travelgatex/reference/objects/resourceconnection",
       "description": "",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": [
         {
           "typeString": "Int",
           "name": "first",
           "url": "/travelgatex/reference/scalars/int",
-          "description": "",
-          "isDeprecated": ""
+          "description": ""
         },
         {
           "typeString": "Int",
           "name": "last",
           "url": "/travelgatex/reference/scalars/int",
-          "description": "",
-          "isDeprecated": ""
+          "description": ""
         },
         {
           "typeString": "String",
           "name": "before",
           "url": "/travelgatex/reference/scalars/string",
-          "description": "",
-          "isDeprecated": ""
+          "description": ""
         },
         {
           "typeString": "String",
           "name": "after",
           "url": "/travelgatex/reference/scalars/string",
-          "description": "",
-          "isDeprecated": ""
+          "description": ""
         },
         {
           "typeString": "[ID!]",
           "name": "codes",
           "url": "/travelgatex/reference/scalars/id",
-          "description": "",
-          "isDeprecated": ""
+          "description": ""
         }
       ]
     }

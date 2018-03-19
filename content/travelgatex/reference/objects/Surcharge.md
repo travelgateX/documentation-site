@@ -8,7 +8,7 @@
       "name": "chargeType",
       "url": "/travelgatex/reference/enums/chargetype",
       "description": "Indicates the charge types. We need to know whether the supplements have to be paid when the consumer gets to the hotel or beforehand.\nPossible charge types: Include or Exclude.\nwhen include: this surcharge is mandatory and included in the option's price\nwhen exclude: this surcharge is not included in the option's price",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -16,7 +16,7 @@
       "name": "mandatory",
       "url": "/travelgatex/reference/scalars/boolean",
       "description": "Indicates if the surcharge is mandatory or not. If mandatory, this surcharge will be applied to this option\nif the chargeType is excluded the customer will have to pay it directly at the hotel",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -24,7 +24,7 @@
       "name": "price",
       "url": "/travelgatex/reference/objects/price",
       "description": "Indicates the surcharge price.",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -32,7 +32,7 @@
       "name": "description",
       "url": "/travelgatex/reference/scalars/string",
       "description": "Specifies the surcharge description.",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     }
   ],

@@ -8,7 +8,6 @@
       "name": "name",
       "url": "/travelgatex/reference/scalars/string",
       "description": "The card holder's name",
-      "isDeprecated": "",
       "args": null
     },
     {
@@ -16,7 +15,6 @@
       "name": "surname",
       "url": "/travelgatex/reference/scalars/string",
       "description": "The card holder's surname",
-      "isDeprecated": "",
       "args": null
     }
   ],

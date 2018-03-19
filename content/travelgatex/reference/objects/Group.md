@@ -8,7 +8,7 @@
       "name": "code",
       "url": "/travelgatex/reference/scalars/id",
       "description": "",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -16,7 +16,7 @@
       "name": "error",
       "url": "/travelgatex/reference/objects/error",
       "description": "",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -24,7 +24,7 @@
       "name": "groupData",
       "url": "/travelgatex/reference/objects/groupdata",
       "description": "",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -32,7 +32,7 @@
       "name": "createdAt",
       "url": "/travelgatex/reference/scalars/datetime",
       "description": "",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -40,7 +40,7 @@
       "name": "updatedAt",
       "url": "/travelgatex/reference/scalars/datetime",
       "description": "",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     }
   ],

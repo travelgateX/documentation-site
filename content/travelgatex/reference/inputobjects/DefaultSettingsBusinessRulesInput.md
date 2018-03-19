@@ -8,7 +8,6 @@
       "name": "optionsQuota",
       "url": "/travelgatex/reference/scalars/int",
       "description": "Options quota per avail. Numbers of options wanted by avail.",
-      "isDeprecated": "",
       "args": null
     },
     {
@@ -16,7 +15,6 @@
       "name": "businessRulesType",
       "url": "/travelgatex/reference/enums/businessrulestype",
       "description": "Different business rules to filter the options that you are interested.",
-      "isDeprecated": "",
       "args": null
     }
   ],

@@ -8,7 +8,7 @@
       "name": "supplierCode",
       "url": "/travelgatex/reference/scalars/string",
       "description": "Supplier that offers this option.",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -16,7 +16,7 @@
       "name": "accessCode",
       "url": "/travelgatex/reference/scalars/string",
       "description": "Access code of this option.",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -24,7 +24,7 @@
       "name": "id",
       "url": "/travelgatex/reference/scalars/string",
       "description": "Indicates the id to be used on Quote as key",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     }
   ],

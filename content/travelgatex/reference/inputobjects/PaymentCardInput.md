@@ -8,7 +8,6 @@
       "name": "cardType",
       "url": "/travelgatex/reference/scalars/string",
       "description": "Indicates the card type.",
-      "isDeprecated": "",
       "args": null
     },
     {
@@ -16,7 +15,6 @@
       "name": "holder",
       "url": "/travelgatex/reference/inputobjects/holderinput",
       "description": "Contains owner's name",
-      "isDeprecated": "",
       "args": null
     },
     {
@@ -24,7 +22,6 @@
       "name": "number",
       "url": "/travelgatex/reference/scalars/string",
       "description": "Contains credit card number",
-      "isDeprecated": "",
       "args": null
     },
     {
@@ -32,7 +29,6 @@
       "name": "CVC",
       "url": "/travelgatex/reference/scalars/string",
       "description": "Contains credit card CVC",
-      "isDeprecated": "",
       "args": null
     },
     {
@@ -40,7 +36,6 @@
       "name": "expire",
       "url": "/travelgatex/reference/inputobjects/expiredateinput",
       "description": "Contains credit card expiration date",
-      "isDeprecated": "",
       "args": null
     }
   ],

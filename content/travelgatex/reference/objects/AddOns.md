@@ -8,7 +8,7 @@
       "name": "distribution",
       "url": "/travelgatex/reference/objects/addon",
       "description": "Extra information from the distribution layer",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     }
   ],
@@ -18,7 +18,7 @@
       "name": "distribute",
       "url": "/travelgatex/reference/scalars/json",
       "description": "Extra information from the distribution layer",
-      "isDeprecated": " ⚠️",
+      "isDeprecated": true,
       "args": null
     }
   ],

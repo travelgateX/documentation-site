@@ -8,7 +8,7 @@
       "name": "transactions",
       "url": "/travelgatex/reference/objects/transactions",
       "description": "List of transactions data.",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -16,7 +16,7 @@
       "name": "timeStamp",
       "url": "/travelgatex/reference/scalars/datetime",
       "description": "TimeStamp",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -24,7 +24,7 @@
       "name": "processTime",
       "url": "/travelgatex/reference/scalars/float",
       "description": "Process time in milliseconds (ms)",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     }
   ],

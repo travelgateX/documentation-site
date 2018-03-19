@@ -8,7 +8,6 @@
       "name": "username",
       "url": "/travelgatex/reference/scalars/string",
       "description": "User name for the connection.",
-      "isDeprecated": "",
       "args": null
     },
     {
@@ -16,7 +15,6 @@
       "name": "password",
       "url": "/travelgatex/reference/scalars/string",
       "description": "Password for the connection.",
-      "isDeprecated": "",
       "args": null
     },
     {
@@ -24,7 +22,6 @@
       "name": "urls",
       "url": "/travelgatex/reference/inputobjects/urlsinput",
       "description": "Url or endpoint for the connection.",
-      "isDeprecated": "",
       "args": null
     },
     {
@@ -32,7 +29,6 @@
       "name": "parameters",
       "url": "/travelgatex/reference/inputobjects/parameterinput",
       "description": "List of parameters with additional required information.",
-      "isDeprecated": "",
       "args": null
     },
     {
@@ -40,7 +36,6 @@
       "name": "markets",
       "url": "/travelgatex/reference/scalars/string",
       "description": "Source markets allowed for the access.",
-      "isDeprecated": "",
       "args": null
     },
     {
@@ -48,7 +43,6 @@
       "name": "rateRules",
       "url": "/travelgatex/reference/enums/raterulestype",
       "description": "RateRules allowed for the access.",
-      "isDeprecated": "",
       "args": null
     }
   ],

@@ -8,7 +8,6 @@
       "name": "age",
       "url": "/travelgatex/reference/scalars/int",
       "description": "Pax age.",
-      "isDeprecated": "",
       "args": null
     }
   ],

@@ -8,7 +8,6 @@
       "name": "id",
       "url": "/travelgatex/reference/scalars/id",
       "description": "access unique identifier",
-      "isDeprecated": "",
       "args": null
     },
     {
@@ -16,7 +15,6 @@
       "name": "isActive",
       "url": "/travelgatex/reference/scalars/boolean",
       "description": "Indicates if the access is active.",
-      "isDeprecated": "",
       "args": null
     },
     {
@@ -24,7 +22,6 @@
       "name": "code",
       "url": "/travelgatex/reference/scalars/string",
       "description": "Arbitrary not unique identifier",
-      "isDeprecated": "",
       "args": null
     },
     {
@@ -32,7 +29,6 @@
       "name": "supplier",
       "url": "/travelgatex/reference/scalars/string",
       "description": "Supplier to which this access belongs",
-      "isDeprecated": "",
       "args": null
     },
     {
@@ -40,7 +36,6 @@
       "name": "configuration",
       "url": "/travelgatex/reference/inputobjects/configurationinput",
       "description": "Information required to access the supplier's system.",
-      "isDeprecated": "",
       "args": null
     }
   ],

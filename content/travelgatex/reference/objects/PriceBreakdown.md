@@ -8,7 +8,7 @@
       "name": "effectiveDate",
       "url": "/travelgatex/reference/scalars/date",
       "description": "Start date in which the price becomes effective.",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -16,7 +16,7 @@
       "name": "expireDate",
       "url": "/travelgatex/reference/scalars/date",
       "description": "Expire date of price.",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -24,7 +24,7 @@
       "name": "price",
       "url": "/travelgatex/reference/objects/price",
       "description": "Specifies the daily price.",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     }
   ],

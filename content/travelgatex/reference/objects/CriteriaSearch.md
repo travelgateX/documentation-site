@@ -8,7 +8,7 @@
       "name": "checkIn",
       "url": "/travelgatex/reference/scalars/date",
       "description": "Check-in date for the booking.\nFormat: yyyy-MM-dd",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -16,7 +16,7 @@
       "name": "checkOut",
       "url": "/travelgatex/reference/scalars/date",
       "description": "Check-out, date for the booking.\nFormat: yyyy-MM-dd",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -24,7 +24,7 @@
       "name": "hotels",
       "url": "/travelgatex/reference/scalars/string",
       "description": "Contains the list of hotels's ID.",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -32,7 +32,7 @@
       "name": "occupancies",
       "url": "/travelgatex/reference/objects/roomcriteria",
       "description": "For multi room bookings, this array will contain multiple elements (rooms).\nFor each room you have to specify its own occupancy.",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -40,7 +40,7 @@
       "name": "language",
       "url": "/travelgatex/reference/scalars/language",
       "description": "Language to be used in request.",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -48,7 +48,7 @@
       "name": "currency",
       "url": "/travelgatex/reference/scalars/currency",
       "description": "Currency requested if supported by supplier.",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -56,7 +56,7 @@
       "name": "nationality",
       "url": "/travelgatex/reference/scalars/country",
       "description": "Nationality of the guest (use ISO3166_1_alfa_2).",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -64,7 +64,7 @@
       "name": "market",
       "url": "/travelgatex/reference/scalars/string",
       "description": "Targeted zone, country or point of sale to be used in request.",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     }
   ],

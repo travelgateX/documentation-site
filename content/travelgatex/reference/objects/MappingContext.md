@@ -8,7 +8,7 @@
       "name": "code",
       "url": "/travelgatex/reference/scalars/string",
       "description": "Code of the context",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -16,14 +16,13 @@
       "name": "hotels",
       "url": "/travelgatex/reference/objects/mappingentity",
       "description": "Mapping of hotels, you can filter by hotel code.",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": [
         {
           "typeString": "[String!]",
           "name": "codes",
           "url": "/travelgatex/reference/scalars/string",
-          "description": "",
-          "isDeprecated": ""
+          "description": ""
         }
       ]
     },
@@ -32,14 +31,13 @@
       "name": "rooms",
       "url": "/travelgatex/reference/objects/mappingentity",
       "description": "Mapping of rooms, you can filter by room code.",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": [
         {
           "typeString": "[String!]",
           "name": "codes",
           "url": "/travelgatex/reference/scalars/string",
-          "description": "",
-          "isDeprecated": ""
+          "description": ""
         }
       ]
     },
@@ -48,14 +46,13 @@
       "name": "boards",
       "url": "/travelgatex/reference/objects/mappingentity",
       "description": "Mapping of boards, you can filter by board code.",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": [
         {
           "typeString": "[String!]",
           "name": "codes",
           "url": "/travelgatex/reference/scalars/string",
-          "description": "",
-          "isDeprecated": ""
+          "description": ""
         }
       ]
     }

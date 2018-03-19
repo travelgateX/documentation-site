@@ -8,7 +8,7 @@
       "name": "code",
       "url": "/travelgatex/reference/scalars/string",
       "description": "Client code",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -16,14 +16,13 @@
       "name": "contexts",
       "url": "/travelgatex/reference/objects/map",
       "description": "You can filter by output context.",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": [
         {
           "typeString": "[String!]",
           "name": "codes",
           "url": "/travelgatex/reference/scalars/string",
-          "description": "",
-          "isDeprecated": ""
+          "description": ""
         }
       ]
     }

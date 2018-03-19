@@ -8,7 +8,7 @@
       "name": "currency",
       "url": "/travelgatex/reference/scalars/currency",
       "description": "Informs about the currency of origin.",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -16,7 +16,7 @@
       "name": "rate",
       "url": "/travelgatex/reference/scalars/float",
       "description": "Informs about the rate applied over result.",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     }
   ],

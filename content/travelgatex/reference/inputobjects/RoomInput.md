@@ -8,7 +8,6 @@
       "name": "paxes",
       "url": "/travelgatex/reference/inputobjects/paxinput",
       "description": "Array of pax ages. The number of items in the array will indicate the pax occupancy.",
-      "isDeprecated": "",
       "args": null
     }
   ],

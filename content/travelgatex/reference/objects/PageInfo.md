@@ -8,7 +8,7 @@
       "name": "hasNextPage",
       "url": "/travelgatex/reference/scalars/boolean",
       "description": "",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -16,7 +16,7 @@
       "name": "hasPreviousPage",
       "url": "/travelgatex/reference/scalars/boolean",
       "description": "",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -24,7 +24,7 @@
       "name": "startCursor",
       "url": "/travelgatex/reference/scalars/string",
       "description": "",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -32,7 +32,7 @@
       "name": "endCursor",
       "url": "/travelgatex/reference/scalars/string",
       "description": "",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     }
   ],

@@ -8,7 +8,7 @@
       "name": "name",
       "url": "/travelgatex/reference/scalars/string",
       "description": "Access name",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -16,7 +16,7 @@
       "name": "total",
       "url": "/travelgatex/reference/objects/stat",
       "description": "Total access time",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -24,7 +24,7 @@
       "name": "staticConfiguration",
       "url": "/travelgatex/reference/objects/stat",
       "description": "Static configuration time",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -32,7 +32,7 @@
       "name": "hotels",
       "url": "/travelgatex/reference/scalars/int",
       "description": "Number of hotels",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -40,7 +40,7 @@
       "name": "zones",
       "url": "/travelgatex/reference/scalars/int",
       "description": "Number of zones",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -48,7 +48,7 @@
       "name": "cities",
       "url": "/travelgatex/reference/scalars/int",
       "description": "Number of cities",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -56,7 +56,7 @@
       "name": "requestAccess",
       "url": "/travelgatex/reference/objects/statplugin",
       "description": "Access request time",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -64,7 +64,7 @@
       "name": "responseAccess",
       "url": "/travelgatex/reference/objects/statplugin",
       "description": "Access response time",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -72,7 +72,7 @@
       "name": "transactions",
       "url": "/travelgatex/reference/objects/stattransaction",
       "description": "Detail transaction time",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -80,7 +80,7 @@
       "name": "plugins",
       "url": "/travelgatex/reference/objects/statplugin",
       "description": "Plugin execution time",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     }
   ],

@@ -8,7 +8,7 @@
       "name": "context",
       "url": "/travelgatex/reference/scalars/string",
       "description": "Indicates the context of the response.",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -16,14 +16,13 @@
       "name": "stats",
       "url": "/travelgatex/reference/objects/statsrequest",
       "description": "Application stats in string format",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": [
         {
           "typeString": "String!",
           "name": "token",
           "url": "/travelgatex/reference/scalars/string",
-          "description": "",
-          "isDeprecated": ""
+          "description": ""
         }
       ]
     },
@@ -32,7 +31,7 @@
       "name": "auditData",
       "url": "/travelgatex/reference/objects/auditdata",
       "description": "Data sent & received in the supplier's native format.",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -40,7 +39,7 @@
       "name": "requestCriteria",
       "url": "/travelgatex/reference/objects/criteriasearch",
       "description": "Request Criteria",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -48,7 +47,7 @@
       "name": "options",
       "url": "/travelgatex/reference/objects/hoteloptionsearch",
       "description": "List of options returned according to the request.",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -56,7 +55,7 @@
       "name": "errors",
       "url": "/travelgatex/reference/objects/error",
       "description": "Errors that will lead the service to abort",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -64,7 +63,7 @@
       "name": "warnings",
       "url": "/travelgatex/reference/objects/warning",
       "description": "Potentially harmful situations or errors that won't force the service to abort",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     }
   ],

@@ -8,7 +8,7 @@
       "name": "code",
       "url": "/travelgatex/reference/scalars/string",
       "description": "Context code.",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -16,7 +16,7 @@
       "name": "maps",
       "url": "/travelgatex/reference/scalars/string",
       "description": "Equivalences of the supplier for the client code.",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     }
   ],

@@ -8,7 +8,6 @@
       "name": "client",
       "url": "/travelgatex/reference/scalars/string",
       "description": "The client's reference",
-      "isDeprecated": "",
       "args": null
     },
     {
@@ -16,7 +15,6 @@
       "name": "supplier",
       "url": "/travelgatex/reference/scalars/string",
       "description": "The Supplier's reference",
-      "isDeprecated": "",
       "args": null
     }
   ],

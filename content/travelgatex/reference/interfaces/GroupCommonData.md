@@ -8,7 +8,7 @@
       "name": "id",
       "url": "/travelgatex/reference/scalars/id",
       "description": "",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -16,7 +16,7 @@
       "name": "code",
       "url": "/travelgatex/reference/scalars/id",
       "description": "",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -24,7 +24,7 @@
       "name": "type",
       "url": "/travelgatex/reference/enums/grouptype",
       "description": "",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -32,7 +32,7 @@
       "name": "info",
       "url": "/travelgatex/reference/scalars/string",
       "description": "",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -40,7 +40,7 @@
       "name": "owner",
       "url": "/travelgatex/reference/objects/member",
       "description": "",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -48,7 +48,7 @@
       "name": "isEditable",
       "url": "/travelgatex/reference/scalars/boolean",
       "description": "",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -56,42 +56,37 @@
       "name": "members",
       "url": "/travelgatex/reference/objects/memberconnection",
       "description": "",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": [
         {
           "typeString": "[ID!]",
           "name": "codes",
           "url": "/travelgatex/reference/scalars/id",
-          "description": "",
-          "isDeprecated": ""
+          "description": ""
         },
         {
           "typeString": "Int",
           "name": "first",
           "url": "/travelgatex/reference/scalars/int",
-          "description": "",
-          "isDeprecated": ""
+          "description": ""
         },
         {
           "typeString": "Int",
           "name": "last",
           "url": "/travelgatex/reference/scalars/int",
-          "description": "",
-          "isDeprecated": ""
+          "description": ""
         },
         {
           "typeString": "String",
           "name": "before",
           "url": "/travelgatex/reference/scalars/string",
-          "description": "",
-          "isDeprecated": ""
+          "description": ""
         },
         {
           "typeString": "String",
           "name": "after",
           "url": "/travelgatex/reference/scalars/string",
-          "description": "",
-          "isDeprecated": ""
+          "description": ""
         }
       ]
     },
@@ -100,42 +95,37 @@
       "name": "apis",
       "url": "/travelgatex/reference/objects/apiconnection",
       "description": "",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": [
         {
           "typeString": "[ID!]",
           "name": "codes",
           "url": "/travelgatex/reference/scalars/id",
-          "description": "",
-          "isDeprecated": ""
+          "description": ""
         },
         {
           "typeString": "Int",
           "name": "first",
           "url": "/travelgatex/reference/scalars/int",
-          "description": "",
-          "isDeprecated": ""
+          "description": ""
         },
         {
           "typeString": "Int",
           "name": "last",
           "url": "/travelgatex/reference/scalars/int",
-          "description": "",
-          "isDeprecated": ""
+          "description": ""
         },
         {
           "typeString": "String",
           "name": "before",
           "url": "/travelgatex/reference/scalars/string",
-          "description": "",
-          "isDeprecated": ""
+          "description": ""
         },
         {
           "typeString": "String",
           "name": "after",
           "url": "/travelgatex/reference/scalars/string",
-          "description": "",
-          "isDeprecated": ""
+          "description": ""
         }
       ]
     }

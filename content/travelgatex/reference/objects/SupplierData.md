@@ -8,7 +8,7 @@
       "name": "code",
       "url": "/travelgatex/reference/scalars/id",
       "description": "unique identifier of a supplier",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -16,7 +16,7 @@
       "name": "name",
       "url": "/travelgatex/reference/scalars/string",
       "description": "Supplier complete name",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -24,7 +24,7 @@
       "name": "isActive",
       "url": "/travelgatex/reference/scalars/boolean",
       "description": "indicates whether a supplier is active",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -32,7 +32,7 @@
       "name": "provider",
       "url": "/travelgatex/reference/objects/provider",
       "description": "instance to which this supllier is connected",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -40,7 +40,7 @@
       "name": "context",
       "url": "/travelgatex/reference/scalars/string",
       "description": "Context where the Supplier belongs to",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -48,7 +48,7 @@
       "name": "serviceApi",
       "url": "/travelgatex/reference/scalars/int",
       "description": "Service API",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -56,7 +56,7 @@
       "name": "supplierGroup",
       "url": "/travelgatex/reference/scalars/id",
       "description": "SupplierGroup Internal Supplier grouping",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -64,7 +64,7 @@
       "name": "accesses",
       "url": "/travelgatex/reference/objects/accessconnection",
       "description": "Accesses where the supplier is referenced",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     }
   ],

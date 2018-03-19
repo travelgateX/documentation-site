@@ -8,7 +8,7 @@
       "name": "reference",
       "url": "/travelgatex/reference/scalars/string",
       "description": "Extra information about transaction.",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -16,7 +16,7 @@
       "name": "total",
       "url": "/travelgatex/reference/objects/stat",
       "description": "Total transaction time",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -24,7 +24,7 @@
       "name": "buildRequest",
       "url": "/travelgatex/reference/objects/stat",
       "description": "Build request time",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -32,7 +32,7 @@
       "name": "workerCommunication",
       "url": "/travelgatex/reference/objects/stat",
       "description": "Worker connection time",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -40,7 +40,7 @@
       "name": "parseResponse",
       "url": "/travelgatex/reference/objects/stat",
       "description": "Parse response time",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     }
   ],

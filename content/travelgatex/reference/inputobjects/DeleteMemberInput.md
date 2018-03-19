@@ -8,7 +8,6 @@
       "name": "code",
       "url": "/travelgatex/reference/scalars/id",
       "description": "",
-      "isDeprecated": "",
       "args": null
     },
     {
@@ -16,7 +15,6 @@
       "name": "group",
       "url": "/travelgatex/reference/scalars/id",
       "description": "",
-      "isDeprecated": "",
       "args": null
     }
   ],

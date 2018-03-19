@@ -8,7 +8,7 @@
       "name": "currency",
       "url": "/travelgatex/reference/scalars/currency",
       "description": "Currency code indicating which currency should be paid.\nThis information is mandatory.",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -16,7 +16,7 @@
       "name": "binding",
       "url": "/travelgatex/reference/scalars/boolean",
       "description": "It indicates if the price indicated in the gross must be respected.\nThat is, the customer can not sell the room / option at a price lower than that established by the supplier.\nThis information is mandatory.",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -24,7 +24,7 @@
       "name": "net",
       "url": "/travelgatex/reference/scalars/float",
       "description": "Indicates the net price that the customer must pay to the supplier.\nThis information is mandatory.",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -32,7 +32,7 @@
       "name": "gross",
       "url": "/travelgatex/reference/scalars/float",
       "description": "Indicates the retail price that the supplier sells to the customer.",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -40,7 +40,7 @@
       "name": "exchange",
       "url": "/travelgatex/reference/objects/exchange",
       "description": "Informs about the currency of origin, and the rate applied over result returned by the supplier.\nThis information is mandatory.",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -48,7 +48,7 @@
       "name": "markups",
       "url": "/travelgatex/reference/objects/markup",
       "description": "Informs markup applied over supplier price.",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     }
   ],

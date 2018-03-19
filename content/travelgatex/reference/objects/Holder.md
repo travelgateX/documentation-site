@@ -8,7 +8,7 @@
       "name": "name",
       "url": "/travelgatex/reference/scalars/string",
       "description": "Holder's name",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -16,7 +16,7 @@
       "name": "surname",
       "url": "/travelgatex/reference/scalars/string",
       "description": "Holder's surname",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     }
   ],

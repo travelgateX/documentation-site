@@ -8,7 +8,7 @@
       "name": "code",
       "url": "/travelgatex/reference/scalars/string",
       "description": "Warning code",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -16,7 +16,7 @@
       "name": "type",
       "url": "/travelgatex/reference/scalars/string",
       "description": "Warning type",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -24,7 +24,7 @@
       "name": "description",
       "url": "/travelgatex/reference/scalars/string",
       "description": "Warning description",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     }
   ],

@@ -9,21 +9,19 @@
       "name": "hotel",
       "url": "/travelgatex/reference/objects/hotelbooking",
       "description": "Returns detailed information about books, you can indicated a list of locators or a range date.",
-      "isDeprecated": " ⚠️",
+      "isDeprecated": true,
       "args": [
         {
           "typeString": "HotelCriteriaBookingInput!",
           "name": "criteria",
           "url": "/travelgatex/reference/inputobjects/hotelcriteriabookinginput",
-          "description": "",
-          "isDeprecated": ""
+          "description": ""
         },
         {
           "typeString": "HotelSettingsInput",
           "name": "settings",
           "url": "/travelgatex/reference/inputobjects/hotelsettingsinput",
-          "description": "",
-          "isDeprecated": ""
+          "description": ""
         }
       ]
     }

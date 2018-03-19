@@ -8,7 +8,7 @@
       "name": "reference",
       "url": "/travelgatex/reference/objects/reference",
       "description": "Booking ID in the Supplier's system",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -16,7 +16,7 @@
       "name": "cancelReference",
       "url": "/travelgatex/reference/scalars/string",
       "description": "Cancellation ID in the Supplier's system",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -24,7 +24,7 @@
       "name": "status",
       "url": "/travelgatex/reference/enums/bookstatustype",
       "description": "Booking Status.",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -32,7 +32,7 @@
       "name": "price",
       "url": "/travelgatex/reference/objects/price",
       "description": "Specifies the prices (Gross, Net and Amount) of the cancellation.",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -40,7 +40,7 @@
       "name": "booking",
       "url": "/travelgatex/reference/objects/hotelbookingdetail",
       "description": "Information about the booking.",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     }
   ],

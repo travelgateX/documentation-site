@@ -8,7 +8,7 @@
       "name": "request",
       "url": "/travelgatex/reference/scalars/string",
       "description": "Transaction Request.",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -16,7 +16,7 @@
       "name": "response",
       "url": "/travelgatex/reference/scalars/string",
       "description": "Transaction Response.",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -24,7 +24,7 @@
       "name": "timeStamp",
       "url": "/travelgatex/reference/scalars/datetime",
       "description": "Time when the request has been processed.",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     }
   ],

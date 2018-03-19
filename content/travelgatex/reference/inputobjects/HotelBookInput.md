@@ -8,7 +8,6 @@
       "name": "optionRefId",
       "url": "/travelgatex/reference/scalars/string",
       "description": "Option ID",
-      "isDeprecated": "",
       "args": null
     },
     {
@@ -16,7 +15,6 @@
       "name": "language",
       "url": "/travelgatex/reference/scalars/language",
       "description": "Language to be used in request.",
-      "isDeprecated": "",
       "args": null
     },
     {
@@ -24,7 +22,6 @@
       "name": "clientReference",
       "url": "/travelgatex/reference/scalars/string",
       "description": "Booking ID in client's system.",
-      "isDeprecated": "",
       "args": null
     },
     {
@@ -32,7 +29,6 @@
       "name": "deltaPrice",
       "url": "/travelgatex/reference/inputobjects/deltapriceinput",
       "description": "Indicates price variation permitted by the client.",
-      "isDeprecated": "",
       "args": null
     },
     {
@@ -40,7 +36,6 @@
       "name": "paymentCard",
       "url": "/travelgatex/reference/inputobjects/paymentcardinput",
       "description": "If the payment is done by credit card, it's mandatory to specify the payment type and the credit card information.",
-      "isDeprecated": "",
       "args": null
     },
     {
@@ -48,7 +43,6 @@
       "name": "remarks",
       "url": "/travelgatex/reference/scalars/string",
       "description": "Any customer comments for the supplier to consider.",
-      "isDeprecated": "",
       "args": null
     },
     {
@@ -56,7 +50,6 @@
       "name": "holder",
       "url": "/travelgatex/reference/inputobjects/holderinput",
       "description": "Holder's basic information.",
-      "isDeprecated": "",
       "args": null
     },
     {
@@ -64,7 +57,6 @@
       "name": "rooms",
       "url": "/travelgatex/reference/inputobjects/bookroominput",
       "description": "Rooms within this option.",
-      "isDeprecated": "",
       "args": null
     }
   ],

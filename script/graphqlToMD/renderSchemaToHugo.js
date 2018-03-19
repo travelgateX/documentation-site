@@ -53,9 +53,9 @@ function parseFields(type, addToDeprecated) {
     }
     let newfield = newArgField(field);
     newfield.args = args;
-    if (addToDeprecated && newfield.isDeprecated !== '') {
+    if (addToDeprecated && newfield.isDeprecated) {
       fieldsList.push(newfield);
-    } else if (!addToDeprecated && newfield.isDeprecated === '') {
+    } else if (!addToDeprecated && !newfield.isDeprecated) {
       fieldsList.push(newfield);
     }
   });

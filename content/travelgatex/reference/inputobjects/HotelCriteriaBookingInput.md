@@ -8,7 +8,6 @@
       "name": "accessCode",
       "url": "/travelgatex/reference/scalars/string",
       "description": "Name of the access that have to use in the request.",
-      "isDeprecated": "",
       "args": null
     },
     {
@@ -16,7 +15,6 @@
       "name": "language",
       "url": "/travelgatex/reference/scalars/language",
       "description": "The language code.",
-      "isDeprecated": "",
       "args": null
     },
     {
@@ -24,7 +22,6 @@
       "name": "typeSearch",
       "url": "/travelgatex/reference/enums/bookingcriteriatype",
       "description": "The search type criteria.",
-      "isDeprecated": "",
       "args": null
     },
     {
@@ -32,7 +29,6 @@
       "name": "references",
       "url": "/travelgatex/reference/inputobjects/criteriabookingreferencesinput",
       "description": "The references criteria.",
-      "isDeprecated": "",
       "args": null
     },
     {
@@ -40,7 +36,6 @@
       "name": "dates",
       "url": "/travelgatex/reference/inputobjects/criteriabookingdatesinput",
       "description": "The dates criteria.",
-      "isDeprecated": "",
       "args": null
     }
   ],

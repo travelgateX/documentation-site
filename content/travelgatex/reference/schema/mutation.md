@@ -8,7 +8,7 @@
       "name": "hotelX",
       "url": "/travelgatex/reference/objects/hotelxmutation",
       "description": "",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -16,7 +16,7 @@
       "name": "admin",
       "url": "/travelgatex/reference/objects/adminmutation",
       "description": "",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     }
   ],
@@ -26,21 +26,19 @@
       "name": "hotelBook",
       "url": "/travelgatex/reference/objects/hotelbookpayload",
       "description": "Creates a new hotel booking consisting of an option of 1 or more rooms.",
-      "isDeprecated": " ⚠️",
+      "isDeprecated": true,
       "args": [
         {
           "typeString": "HotelBookInput!",
           "name": "input",
           "url": "/travelgatex/reference/inputobjects/hotelbookinput",
-          "description": "",
-          "isDeprecated": ""
+          "description": ""
         },
         {
           "typeString": "HotelSettingsInput",
           "name": "settings",
           "url": "/travelgatex/reference/inputobjects/hotelsettingsinput",
-          "description": "",
-          "isDeprecated": ""
+          "description": ""
         }
       ]
     },
@@ -49,21 +47,19 @@
       "name": "hotelCancel",
       "url": "/travelgatex/reference/objects/hotelcancelpayload",
       "description": "Cancels an existing hotel booking consisting of an option of 1 or more rooms.",
-      "isDeprecated": " ⚠️",
+      "isDeprecated": true,
       "args": [
         {
           "typeString": "HotelCancelInput!",
           "name": "input",
           "url": "/travelgatex/reference/inputobjects/hotelcancelinput",
-          "description": "",
-          "isDeprecated": ""
+          "description": ""
         },
         {
           "typeString": "HotelSettingsInput",
           "name": "settings",
           "url": "/travelgatex/reference/inputobjects/hotelsettingsinput",
-          "description": "",
-          "isDeprecated": ""
+          "description": ""
         }
       ]
     },
@@ -72,14 +68,13 @@
       "name": "loadFile",
       "url": "/travelgatex/reference/scalars/string",
       "description": "Load mapping files for a group.",
-      "isDeprecated": " ⚠️",
+      "isDeprecated": true,
       "args": [
         {
           "typeString": "String!",
           "name": "input",
           "url": "/travelgatex/reference/scalars/string",
-          "description": "",
-          "isDeprecated": ""
+          "description": ""
         }
       ]
     },
@@ -88,14 +83,13 @@
       "name": "createDefaultSettings",
       "url": "/travelgatex/reference/objects/defaultsettings",
       "description": "Creates a defaultSettings for a given group",
-      "isDeprecated": " ⚠️",
+      "isDeprecated": true,
       "args": [
         {
           "typeString": "DefaultSettingsInput!",
           "name": "input",
           "url": "/travelgatex/reference/inputobjects/defaultsettingsinput",
-          "description": "",
-          "isDeprecated": ""
+          "description": ""
         }
       ]
     },
@@ -104,14 +98,13 @@
       "name": "updateDefaultSettings",
       "url": "/travelgatex/reference/objects/defaultsettings",
       "description": "Updates a defaultSettings for a given group",
-      "isDeprecated": " ⚠️",
+      "isDeprecated": true,
       "args": [
         {
           "typeString": "DefaultSettingsInput!",
           "name": "input",
           "url": "/travelgatex/reference/inputobjects/defaultsettingsinput",
-          "description": "",
-          "isDeprecated": ""
+          "description": ""
         }
       ]
     },
@@ -120,14 +113,13 @@
       "name": "deleteDefaultSettings",
       "url": "/travelgatex/reference/scalars/boolean",
       "description": "Deletes a defaultSettings for a given group",
-      "isDeprecated": " ⚠️",
+      "isDeprecated": true,
       "args": [
         {
           "typeString": "String!",
           "name": "input",
           "url": "/travelgatex/reference/scalars/string",
-          "description": "",
-          "isDeprecated": ""
+          "description": ""
         }
       ]
     }

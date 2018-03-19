@@ -8,7 +8,6 @@
       "name": "code",
       "url": "/travelgatex/reference/scalars/string",
       "description": "",
-      "isDeprecated": "",
       "args": null
     },
     {
@@ -16,7 +15,6 @@
       "name": "type",
       "url": "/travelgatex/reference/enums/grouptype",
       "description": "",
-      "isDeprecated": "",
       "args": null
     },
     {
@@ -24,7 +22,6 @@
       "name": "info",
       "url": "/travelgatex/reference/scalars/string",
       "description": "",
-      "isDeprecated": "",
       "args": null
     },
     {
@@ -32,7 +29,6 @@
       "name": "parent",
       "url": "/travelgatex/reference/scalars/id",
       "description": "",
-      "isDeprecated": "",
       "args": null
     },
     {
@@ -40,7 +36,6 @@
       "name": "template",
       "url": "/travelgatex/reference/enums/template",
       "description": "",
-      "isDeprecated": "",
       "args": null
     }
   ],

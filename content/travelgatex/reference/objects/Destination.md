@@ -8,7 +8,7 @@
       "name": "code",
       "url": "/travelgatex/reference/scalars/id",
       "description": "Destination ID",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -16,7 +16,7 @@
       "name": "destinationData",
       "url": "/travelgatex/reference/objects/destinationdata",
       "description": "Destination data",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -24,7 +24,7 @@
       "name": "error",
       "url": "/travelgatex/reference/objects/error",
       "description": "Errors that will lead the service to abort",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -32,7 +32,7 @@
       "name": "createdAt",
       "url": "/travelgatex/reference/scalars/datetime",
       "description": "Create date",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -40,7 +40,7 @@
       "name": "updatedAt",
       "url": "/travelgatex/reference/scalars/datetime",
       "description": "Update date",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     }
   ],

@@ -8,7 +8,6 @@
       "name": "code",
       "url": "/travelgatex/reference/scalars/string",
       "description": "supplier code",
-      "isDeprecated": "",
       "args": null
     },
     {
@@ -16,7 +15,6 @@
       "name": "dll",
       "url": "/travelgatex/reference/scalars/string",
       "description": "supplier instance",
-      "isDeprecated": "",
       "args": null
     },
     {
@@ -24,7 +22,6 @@
       "name": "isActive",
       "url": "/travelgatex/reference/scalars/boolean",
       "description": "Indicates if the supplier is active.",
-      "isDeprecated": "",
       "args": null
     },
     {
@@ -32,7 +29,6 @@
       "name": "groups",
       "url": "/travelgatex/reference/inputobjects/suppliergroupinput",
       "description": "groups related to this supplier",
-      "isDeprecated": "",
       "args": null
     }
   ],

@@ -8,7 +8,6 @@
       "name": "code",
       "url": "/travelgatex/reference/scalars/string",
       "description": "connect user code",
-      "isDeprecated": "",
       "args": null
     },
     {
@@ -16,7 +15,6 @@
       "name": "isActive",
       "url": "/travelgatex/reference/scalars/boolean",
       "description": "Indicates if the connect user is active.",
-      "isDeprecated": "",
       "args": null
     },
     {
@@ -24,7 +22,6 @@
       "name": "groups",
       "url": "/travelgatex/reference/inputobjects/connectusergroupinput",
       "description": "groups related to this connect user",
-      "isDeprecated": "",
       "args": null
     }
   ],

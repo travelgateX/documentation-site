@@ -8,7 +8,7 @@
       "name": "hotelX",
       "url": "/travelgatex/reference/objects/hotelxquery",
       "description": "",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -16,7 +16,7 @@
       "name": "admin",
       "url": "/travelgatex/reference/objects/adminquery",
       "description": "",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     }
   ],
@@ -26,7 +26,7 @@
       "name": "search",
       "url": "/travelgatex/reference/objects/search",
       "description": "Available options for a given date and itinerary.",
-      "isDeprecated": " ⚠️",
+      "isDeprecated": true,
       "args": null
     },
     {
@@ -34,7 +34,7 @@
       "name": "quote",
       "url": "/travelgatex/reference/objects/quote",
       "description": "Returns the total price and cancellation policies of the Option selected in the previous step (Search).",
-      "isDeprecated": " ⚠️",
+      "isDeprecated": true,
       "args": null
     },
     {
@@ -42,7 +42,7 @@
       "name": "booking",
       "url": "/travelgatex/reference/objects/booking",
       "description": "Returns detailed information about books.",
-      "isDeprecated": " ⚠️",
+      "isDeprecated": true,
       "args": null
     },
     {
@@ -50,14 +50,13 @@
       "name": "defaultSettings",
       "url": "/travelgatex/reference/objects/defaultsettings",
       "description": "Reads defaultSettings of the given group",
-      "isDeprecated": " ⚠️",
+      "isDeprecated": true,
       "args": [
         {
           "typeString": "String!",
           "name": "groupCode",
           "url": "/travelgatex/reference/scalars/string",
-          "description": "",
-          "isDeprecated": ""
+          "description": ""
         }
       ]
     },
@@ -66,14 +65,13 @@
       "name": "mapping",
       "url": "/travelgatex/reference/objects/mapping",
       "description": "Returns the mapping for a group, is necessary specify the group.",
-      "isDeprecated": " ⚠️",
+      "isDeprecated": true,
       "args": [
         {
           "typeString": "String!",
           "name": "groupCode",
           "url": "/travelgatex/reference/scalars/string",
-          "description": "",
-          "isDeprecated": ""
+          "description": ""
         }
       ]
     }

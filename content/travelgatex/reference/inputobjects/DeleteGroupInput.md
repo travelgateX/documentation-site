@@ -8,7 +8,6 @@
       "name": "code",
       "url": "/travelgatex/reference/scalars/id",
       "description": "",
-      "isDeprecated": "",
       "args": null
     }
   ],

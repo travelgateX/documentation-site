@@ -8,7 +8,6 @@
       "name": "hotelCode",
       "url": "/travelgatex/reference/scalars/string",
       "description": "The hotel code.",
-      "isDeprecated": "",
       "args": null
     },
     {
@@ -16,7 +15,6 @@
       "name": "currency",
       "url": "/travelgatex/reference/scalars/currency",
       "description": "The requested currency. The API will convert to this currency if supplier returns a different one.",
-      "isDeprecated": "",
       "args": null
     },
     {
@@ -24,7 +22,6 @@
       "name": "references",
       "url": "/travelgatex/reference/inputobjects/bookreferenceinput",
       "description": "Contains the client reference and/or supplier reference.",
-      "isDeprecated": "",
       "args": null
     }
   ],

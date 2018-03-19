@@ -8,7 +8,7 @@
       "name": "search",
       "url": "/travelgatex/reference/scalars/int",
       "description": "Milliseconds before the search connection is closed.",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -16,7 +16,7 @@
       "name": "quote",
       "url": "/travelgatex/reference/scalars/int",
       "description": "Milliseconds before the quote connection is closed.",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -24,7 +24,7 @@
       "name": "book",
       "url": "/travelgatex/reference/scalars/int",
       "description": "Milliseconds before the book connection is closed.",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     }
   ],

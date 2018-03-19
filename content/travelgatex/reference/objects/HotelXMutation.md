@@ -8,21 +8,19 @@
       "name": "book",
       "url": "/travelgatex/reference/objects/hotelbookpayload",
       "description": "Creates a new hotel booking consisting of an option of 1 or more rooms.",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": [
         {
           "typeString": "HotelBookInput!",
           "name": "input",
           "url": "/travelgatex/reference/inputobjects/hotelbookinput",
-          "description": "",
-          "isDeprecated": ""
+          "description": ""
         },
         {
           "typeString": "HotelSettingsInput",
           "name": "settings",
           "url": "/travelgatex/reference/inputobjects/hotelsettingsinput",
-          "description": "",
-          "isDeprecated": ""
+          "description": ""
         }
       ]
     },
@@ -31,21 +29,19 @@
       "name": "cancel",
       "url": "/travelgatex/reference/objects/hotelcancelpayload",
       "description": "Cancels an existing hotel booking consisting of an option of 1 or more rooms.",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": [
         {
           "typeString": "HotelCancelInput!",
           "name": "input",
           "url": "/travelgatex/reference/inputobjects/hotelcancelinput",
-          "description": "",
-          "isDeprecated": ""
+          "description": ""
         },
         {
           "typeString": "HotelSettingsInput",
           "name": "settings",
           "url": "/travelgatex/reference/inputobjects/hotelsettingsinput",
-          "description": "",
-          "isDeprecated": ""
+          "description": ""
         }
       ]
     },
@@ -54,14 +50,13 @@
       "name": "loadFile",
       "url": "/travelgatex/reference/scalars/string",
       "description": "",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": [
         {
           "typeString": "String!",
           "name": "input",
           "url": "/travelgatex/reference/scalars/string",
-          "description": "",
-          "isDeprecated": ""
+          "description": ""
         }
       ]
     }
