@@ -7,8 +7,8 @@
       "typeString": "Boolean!",
       "name": "refundable",
       "url": "/travelgatex/reference/scalars/boolean",
-      "description": "Indicates if the option is refundable or not.\nThis information is mandatory.",
-      "isDeprecated": "",
+      "description": "Indicates if the option is refundable or not.",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -16,10 +16,11 @@
       "name": "cancelPenalties",
       "url": "/travelgatex/reference/objects/cancelpenalty",
       "description": "List of cancel penalties.",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     }
   ],
+  "deprecatedFields": null,
   "requireby": [
     {
       "name": "HotelOptionSearch",

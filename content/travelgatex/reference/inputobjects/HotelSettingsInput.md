@@ -8,7 +8,6 @@
       "name": "context",
       "url": "/travelgatex/reference/scalars/string",
       "description": "Indicates the context of the I/O codes (hotel, board, room and rates)",
-      "isDeprecated": "",
       "args": null
     },
     {
@@ -16,15 +15,20 @@
       "name": "useContext",
       "url": "/travelgatex/reference/scalars/boolean",
       "description": "Indicates if you want use context, or not, by default is true.\n@deprecated(reason: \"deprecated from 2017-12-12. Redundant.\")",
-      "isDeprecated": "",
       "args": null
     },
     {
       "typeString": "String",
       "name": "connectUser",
       "url": "/travelgatex/reference/scalars/string",
+      "description": " This field is got only if the authorization header is of the type JWT. It is used for to change the user that\n has been set by default in the preload.\n@deprecated(reason: \"deprecated from 2018-03-19. Redundant.\")",
+      "args": null
+    },
+    {
+      "typeString": "String",
+      "name": "client",
+      "url": "/travelgatex/reference/scalars/string",
       "description": "This field is got only if the authorization header is of the type JWT. It is used for to change the user that\nhas been set by default in the preload.",
-      "isDeprecated": "",
       "args": null
     },
     {
@@ -32,7 +36,6 @@
       "name": "timeout",
       "url": "/travelgatex/reference/scalars/int",
       "description": "Milliseconds before the connection is closed.",
-      "isDeprecated": "",
       "args": null
     },
     {
@@ -40,7 +43,6 @@
       "name": "auditTransactions",
       "url": "/travelgatex/reference/scalars/boolean",
       "description": "Returns all the transactions exchanged with the supplier.",
-      "isDeprecated": "",
       "args": null
     },
     {
@@ -48,15 +50,13 @@
       "name": "businessRules",
       "url": "/travelgatex/reference/inputobjects/businessrulesinput",
       "description": "Business rules.",
-      "isDeprecated": "",
       "args": null
     },
     {
-      "typeString": "[SupplierInput!]",
+      "typeString": "[HotelXSupplierInput!]",
       "name": "suppliers",
-      "url": "/travelgatex/reference/inputobjects/supplierinput",
+      "url": "/travelgatex/reference/inputobjects/hotelxsupplierinput",
       "description": "Array of suppliers. Each one contains its own code, settings and accesses.",
-      "isDeprecated": "",
       "args": null
     },
     {
@@ -64,10 +64,10 @@
       "name": "plugins",
       "url": "/travelgatex/reference/inputobjects/pluginstepinput",
       "description": "Array of plugins to execute.",
-      "isDeprecated": "",
       "args": null
     }
   ],
+  "deprecatedFields": null,
   "requireby": null,
   "enumValues": null,
   "operator": "type",

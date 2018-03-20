@@ -8,7 +8,7 @@
       "name": "cursor",
       "url": "/travelgatex/reference/scalars/string",
       "description": "",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -16,10 +16,11 @@
       "name": "node",
       "url": "/travelgatex/reference/objects/api",
       "description": "",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     }
   ],
+  "deprecatedFields": null,
   "requireby": [
     {
       "name": "APIConnection",

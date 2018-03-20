@@ -8,7 +8,7 @@
       "name": "code",
       "url": "/travelgatex/reference/scalars/string",
       "description": "Specifies the resort code.",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -16,7 +16,7 @@
       "name": "name",
       "url": "/travelgatex/reference/scalars/string",
       "description": "Specifies the resort name.",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -24,10 +24,11 @@
       "name": "description",
       "url": "/travelgatex/reference/scalars/string",
       "description": "Specifies the resort description.",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     }
   ],
+  "deprecatedFields": null,
   "requireby": [
     {
       "name": "Supplement",

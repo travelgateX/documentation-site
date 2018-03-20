@@ -8,7 +8,7 @@
       "name": "groupCode",
       "url": "/travelgatex/reference/scalars/string",
       "description": "group code of the group related to this supplier",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -16,10 +16,11 @@
       "name": "isActive",
       "url": "/travelgatex/reference/scalars/boolean",
       "description": "Indicates if the supplier is active for its supplier",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     }
   ],
+  "deprecatedFields": null,
   "requireby": null,
   "enumValues": null,
   "operator": "type",

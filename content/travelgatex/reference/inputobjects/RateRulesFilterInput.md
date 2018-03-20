@@ -8,7 +8,6 @@
       "name": "includes",
       "url": "/travelgatex/reference/enums/raterulestype",
       "description": "if includes not nil: only options without rate rules and options with rate rules found in includes will be returned",
-      "isDeprecated": "",
       "args": null
     },
     {
@@ -16,10 +15,10 @@
       "name": "excludes",
       "url": "/travelgatex/reference/enums/raterulestype",
       "description": "if excludes not nil: only options without rate rules and options with rate rules that haven't been sent in excludes will be returned",
-      "isDeprecated": "",
       "args": null
     }
   ],
+  "deprecatedFields": null,
   "requireby": [
     {
       "name": "FilterInput",

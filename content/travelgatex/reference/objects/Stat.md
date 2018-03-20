@@ -8,7 +8,7 @@
       "name": "start",
       "url": "/travelgatex/reference/scalars/datetime",
       "description": "Start UTC",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -16,7 +16,7 @@
       "name": "end",
       "url": "/travelgatex/reference/scalars/datetime",
       "description": "End UTC",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -24,15 +24,21 @@
       "name": "duration",
       "url": "/travelgatex/reference/scalars/float",
       "description": "Difference between start and end in miliseconds",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     }
   ],
+  "deprecatedFields": null,
   "requireby": [
     {
-      "name": "RequestStats",
+      "name": "StatsRequest",
       "description": "Contains internal information.",
-      "url": "/travelgatex/reference/objects/requeststats"
+      "url": "/travelgatex/reference/objects/statsrequest"
+    },
+    {
+      "name": "StatPlugin",
+      "description": "",
+      "url": "/travelgatex/reference/objects/statplugin"
     },
     {
       "name": "StatAccess",

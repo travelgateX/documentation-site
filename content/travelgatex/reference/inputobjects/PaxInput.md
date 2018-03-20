@@ -8,10 +8,10 @@
       "name": "age",
       "url": "/travelgatex/reference/scalars/int",
       "description": "Pax age.",
-      "isDeprecated": "",
       "args": null
     }
   ],
+  "deprecatedFields": null,
   "requireby": null,
   "enumValues": null,
   "operator": "type",

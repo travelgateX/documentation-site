@@ -1368,3 +1368,17 @@ table {
   stroke-dashoffset: -670;
   animation: draw-a 4s 16.5s forwards;
 }
+
+div.deprecated-button-container {
+  background-color:white; 
+  padding: 1rem 0 1rem 3rem;
+}
+
+div.deprecated-entities-container {
+  display:none; 
+  background-color: #EEE;
+}
+
+div.deprecated-entities-container.active {
+  display:block; 
+}

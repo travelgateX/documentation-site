@@ -8,18 +8,19 @@
       "name": "cursor",
       "url": "/travelgatex/reference/scalars/string",
       "description": "",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
-      "typeString": "Supplier",
+      "typeString": "Access",
       "name": "node",
-      "url": "/travelgatex/reference/objects/supplier",
+      "url": "/travelgatex/reference/objects/access",
       "description": "",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     }
   ],
+  "deprecatedFields": null,
   "requireby": [
     {
       "name": "AccessConnection",

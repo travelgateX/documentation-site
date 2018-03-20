@@ -8,7 +8,6 @@
       "name": "occupancyRefId",
       "url": "/travelgatex/reference/scalars/int",
       "description": "The room's reference in the booking",
-      "isDeprecated": "",
       "args": null
     },
     {
@@ -16,10 +15,10 @@
       "name": "paxes",
       "url": "/travelgatex/reference/inputobjects/bookpaxinput",
       "description": "The list or lists of paxes of the room",
-      "isDeprecated": "",
       "args": null
     }
   ],
+  "deprecatedFields": null,
   "requireby": null,
   "enumValues": null,
   "operator": "type",

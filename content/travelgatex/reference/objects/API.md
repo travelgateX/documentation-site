@@ -8,7 +8,7 @@
       "name": "code",
       "url": "/travelgatex/reference/scalars/id",
       "description": "",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -16,7 +16,7 @@
       "name": "error",
       "url": "/travelgatex/reference/objects/error",
       "description": "",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -24,7 +24,7 @@
       "name": "apiData",
       "url": "/travelgatex/reference/objects/apidata",
       "description": "",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -32,7 +32,7 @@
       "name": "createdAt",
       "url": "/travelgatex/reference/scalars/datetime",
       "description": "",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -40,10 +40,11 @@
       "name": "updatedAt",
       "url": "/travelgatex/reference/scalars/datetime",
       "description": "",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     }
   ],
+  "deprecatedFields": null,
   "requireby": [
     {
       "name": "APIEdge",
@@ -55,8 +56,6 @@
   "operator": "type",
   "typename": "API"
 }
-An API is a set of functions and procedures that allow the creation of applications which access the features or data of an operating system, application, or other service.
-
 ## GraphQL Schema definition
 
 {{% graphql-schema-type %}}

@@ -1,41 +1,38 @@
 {
-  "title": "Information",
+  "title": "Property",
   "description": "",
   "weight": 1,
   "fields": [
     {
-      "typeString": "String!",
-      "name": "description",
+      "typeString": "String",
+      "name": "name",
       "url": "/travelgatex/reference/scalars/string",
-      "description": "",
-      "isDeprecated": "",
+      "description": "Indicates property type",
+      "isDeprecated": false,
       "args": null
     },
     {
-      "typeString": "Language!",
-      "name": "language",
-      "url": "/travelgatex/reference/scalars/language",
-      "description": "",
-      "isDeprecated": "",
+      "typeString": "String",
+      "name": "code",
+      "url": "/travelgatex/reference/scalars/string",
+      "description": "Indicates property type code",
+      "isDeprecated": false,
       "args": null
     }
   ],
+  "deprecatedFields": null,
   "requireby": [
     {
       "name": "HotelData",
       "description": "Hotel data",
       "url": "/travelgatex/reference/objects/hoteldata"
-    },
-    {
-      "name": "AmenityData",
-      "description": "",
-      "url": "/travelgatex/reference/objects/amenitydata"
     }
   ],
   "enumValues": null,
-  "operator": "interface",
-  "typename": "Information"
+  "operator": "type",
+  "typename": "Property"
 }
+Indicates Property type
 ## GraphQL Schema definition
 
 {{% graphql-schema-type %}}

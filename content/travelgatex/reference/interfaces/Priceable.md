@@ -8,7 +8,7 @@
       "name": "currency",
       "url": "/travelgatex/reference/scalars/currency",
       "description": "Specifies the currency.",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -16,7 +16,7 @@
       "name": "binding",
       "url": "/travelgatex/reference/scalars/boolean",
       "description": "Is binding.",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -24,7 +24,7 @@
       "name": "net",
       "url": "/travelgatex/reference/scalars/float",
       "description": "Specifies the import net.",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -32,7 +32,7 @@
       "name": "gross",
       "url": "/travelgatex/reference/scalars/float",
       "description": "Specifies the import gross.",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -40,10 +40,11 @@
       "name": "exchange",
       "url": "/travelgatex/reference/objects/exchange",
       "description": "Specifies the exchange.",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     }
   ],
+  "deprecatedFields": null,
   "requireby": null,
   "enumValues": null,
   "operator": "interface",

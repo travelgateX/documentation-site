@@ -8,7 +8,6 @@
       "name": "code",
       "url": "/travelgatex/reference/scalars/string",
       "description": "",
-      "isDeprecated": "",
       "args": null
     },
     {
@@ -16,7 +15,6 @@
       "name": "info",
       "url": "/travelgatex/reference/scalars/string",
       "description": "",
-      "isDeprecated": "",
       "args": null
     },
     {
@@ -24,7 +22,6 @@
       "name": "group",
       "url": "/travelgatex/reference/scalars/string",
       "description": "",
-      "isDeprecated": "",
       "args": null
     },
     {
@@ -32,7 +29,6 @@
       "name": "roles",
       "url": "/travelgatex/reference/scalars/string",
       "description": "",
-      "isDeprecated": "",
       "args": null
     },
     {
@@ -40,7 +36,6 @@
       "name": "resource",
       "url": "/travelgatex/reference/scalars/string",
       "description": "",
-      "isDeprecated": "",
       "args": null
     },
     {
@@ -48,10 +43,10 @@
       "name": "method",
       "url": "/travelgatex/reference/enums/method",
       "description": "",
-      "isDeprecated": "",
       "args": null
     }
   ],
+  "deprecatedFields": null,
   "requireby": null,
   "enumValues": null,
   "operator": "type",

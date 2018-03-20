@@ -8,7 +8,7 @@
       "name": "type",
       "url": "/travelgatex/reference/scalars/string",
       "description": "Specifies the bed type.",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -16,7 +16,7 @@
       "name": "description",
       "url": "/travelgatex/reference/scalars/string",
       "description": "Description about the bed.",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -24,7 +24,7 @@
       "name": "count",
       "url": "/travelgatex/reference/scalars/int",
       "description": "Indicates number of beds in the room.",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -32,10 +32,11 @@
       "name": "shared",
       "url": "/travelgatex/reference/scalars/boolean",
       "description": "Specifies if the bed is shared or not.",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     }
   ],
+  "deprecatedFields": null,
   "requireby": null,
   "enumValues": null,
   "operator": "type",

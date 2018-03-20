@@ -4,57 +4,44 @@
   "weight": 1,
   "fields": [
     {
-      "typeString": "ID!",
+      "typeString": "String!",
       "name": "code",
-      "url": "/travelgatex/reference/scalars/id",
-      "description": "",
-      "isDeprecated": "",
+      "url": "/travelgatex/reference/scalars/string",
+      "description": "Code",
+      "isDeprecated": false,
       "args": null
     },
     {
-      "typeString": "AmenityData",
-      "name": "AmenityData",
-      "url": "/travelgatex/reference/objects/amenitydata",
-      "description": "",
-      "isDeprecated": "",
+      "typeString": "ApplicationAreaType!",
+      "name": "type",
+      "url": "/travelgatex/reference/enums/applicationareatype",
+      "description": "Indicates the type of the amenity.",
+      "isDeprecated": false,
       "args": null
     },
     {
-      "typeString": "[Error!]",
-      "name": "error",
-      "url": "/travelgatex/reference/objects/error",
-      "description": "Errors that will lead the service to abort",
-      "isDeprecated": "",
-      "args": null
-    },
-    {
-      "typeString": "DateTime!",
-      "name": "createdAt",
-      "url": "/travelgatex/reference/scalars/datetime",
-      "description": "Create date",
-      "isDeprecated": "",
-      "args": null
-    },
-    {
-      "typeString": "DateTime!",
-      "name": "updatedAt",
-      "url": "/travelgatex/reference/scalars/datetime",
-      "description": "Update date",
-      "isDeprecated": "",
-      "args": null
+      "typeString": "[Text!]!",
+      "name": "texts",
+      "url": "/travelgatex/reference/interfaces/text",
+      "description": "Contains the descriptive",
+      "isDeprecated": false,
+      "args": [
+        {
+          "typeString": "[Language!]",
+          "name": "languages",
+          "url": "/travelgatex/reference/scalars/language",
+          "description": ""
+        }
+      ]
     }
   ],
-  "requireby": [
-    {
-      "name": "AmenityEdge",
-      "description": "HotelList Edge definition",
-      "url": "/travelgatex/reference/objects/amenityedge"
-    }
-  ],
+  "deprecatedFields": null,
+  "requireby": null,
   "enumValues": null,
   "operator": "type",
   "typename": "Amenity"
 }
+Something, such as a swimming pool or shopping centre, that is intended to make life more pleasant or comfortable for the people.
 ## GraphQL Schema definition
 
 {{% graphql-schema-type %}}
@@ -62,7 +49,3 @@
 ## Fields
 
 {{% graphql-field %}}
-
-## Require by
-
-{{% graphql-require-by %}}

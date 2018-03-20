@@ -3,7 +3,13 @@
   "description": "",
   "weight": 1,
   "fields": null,
+  "deprecatedFields": null,
   "requireby": [
+    {
+      "name": "Coordinates",
+      "description": "Geographical coordinates corresponding to a location.",
+      "url": "/travelgatex/reference/objects/coordinates"
+    },
     {
       "name": "Stat",
       "description": "",

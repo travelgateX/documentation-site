@@ -8,7 +8,7 @@
       "name": "client",
       "url": "/travelgatex/reference/scalars/string",
       "description": "Client reference booking",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -16,10 +16,11 @@
       "name": "supplier",
       "url": "/travelgatex/reference/scalars/string",
       "description": "Supplier reference booking",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     }
   ],
+  "deprecatedFields": null,
   "requireby": [
     {
       "name": "HotelBookingDetail",

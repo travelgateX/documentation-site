@@ -8,7 +8,6 @@
       "name": "optionRefId",
       "url": "/travelgatex/reference/scalars/string",
       "description": "Identifier of the option chosen in the search.",
-      "isDeprecated": "",
       "args": null
     },
     {
@@ -16,10 +15,10 @@
       "name": "language",
       "url": "/travelgatex/reference/scalars/language",
       "description": "Language to be used in request.",
-      "isDeprecated": "",
       "args": null
     }
   ],
+  "deprecatedFields": null,
   "requireby": null,
   "enumValues": null,
   "operator": "type",

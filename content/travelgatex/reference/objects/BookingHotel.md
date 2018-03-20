@@ -8,7 +8,7 @@
       "name": "creationDate",
       "url": "/travelgatex/reference/scalars/date",
       "description": "Creation date of the booking.\nFormat: yyyy-MM-dd",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -16,7 +16,7 @@
       "name": "checkIn",
       "url": "/travelgatex/reference/scalars/date",
       "description": "Check-in date for the booking.\nFormat: yyyy-MM-dd",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -24,7 +24,7 @@
       "name": "checkOut",
       "url": "/travelgatex/reference/scalars/date",
       "description": "Check-out date for the booking.\nFormat: yyyy-MM-dd",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -32,7 +32,7 @@
       "name": "hotelCode",
       "url": "/travelgatex/reference/scalars/string",
       "description": "Code of the hotel in the context selected.",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -40,7 +40,7 @@
       "name": "hotelName",
       "url": "/travelgatex/reference/scalars/string",
       "description": "Name of the hotel.",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -48,7 +48,7 @@
       "name": "boardCode",
       "url": "/travelgatex/reference/scalars/string",
       "description": "Code of the board in the context selected.",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -56,7 +56,7 @@
       "name": "occupancies",
       "url": "/travelgatex/reference/objects/occupancy",
       "description": "List of occupancies of the request.",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -64,10 +64,11 @@
       "name": "rooms",
       "url": "/travelgatex/reference/objects/bookingroom",
       "description": "List of rooms.",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     }
   ],
+  "deprecatedFields": null,
   "requireby": [
     {
       "name": "HotelBookingDetail",

@@ -8,7 +8,7 @@
       "name": "code",
       "url": "/travelgatex/reference/scalars/id",
       "description": "Hotel ID",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -16,7 +16,7 @@
       "name": "hotelData",
       "url": "/travelgatex/reference/objects/hoteldata",
       "description": "Hotel data",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -24,7 +24,7 @@
       "name": "error",
       "url": "/travelgatex/reference/objects/error",
       "description": "Errors that will lead the service to abort",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -32,7 +32,7 @@
       "name": "createdAt",
       "url": "/travelgatex/reference/scalars/datetime",
       "description": "Create date",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -40,10 +40,11 @@
       "name": "updatedAt",
       "url": "/travelgatex/reference/scalars/datetime",
       "description": "Update date",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     }
   ],
+  "deprecatedFields": null,
   "requireby": [
     {
       "name": "HotelEdge",
@@ -55,7 +56,7 @@
   "operator": "type",
   "typename": "Hotel"
 }
-Hotel type
+Hotel Type
 ## GraphQL Schema definition
 
 {{% graphql-schema-type %}}

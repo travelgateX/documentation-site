@@ -1,14 +1,14 @@
 {
-  "title": "AmenityConnection",
+  "title": "SupplierConnection",
   "description": "",
   "weight": 1,
   "fields": [
     {
-      "typeString": "[AmenityEdge]",
+      "typeString": "[SupplierEdge]",
       "name": "edges",
-      "url": "/travelgatex/reference/objects/amenityedge",
+      "url": "/travelgatex/reference/objects/supplieredge",
       "description": "",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -16,20 +16,21 @@
       "name": "pageInfo",
       "url": "/travelgatex/reference/objects/pageinfo",
       "description": "",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     }
   ],
+  "deprecatedFields": null,
   "requireby": [
     {
-      "name": "HotelData",
-      "description": "Hotel data",
-      "url": "/travelgatex/reference/objects/hoteldata"
+      "name": "AdminQuery",
+      "description": "",
+      "url": "/travelgatex/reference/objects/adminquery"
     }
   ],
   "enumValues": null,
   "operator": "type",
-  "typename": "AmenityConnection"
+  "typename": "SupplierConnection"
 }
 ## GraphQL Schema definition
 

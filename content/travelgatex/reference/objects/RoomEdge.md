@@ -1,5 +1,5 @@
 {
-  "title": "AmenityEdge",
+  "title": "RoomEdge",
   "description": "",
   "weight": 1,
   "fields": [
@@ -8,30 +8,31 @@
       "name": "cursor",
       "url": "/travelgatex/reference/scalars/string",
       "description": "",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
-      "typeString": "Amenity",
+      "typeString": "RoomStatic",
       "name": "node",
-      "url": "/travelgatex/reference/objects/amenity",
+      "url": "/travelgatex/reference/objects/roomstatic",
       "description": "",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     }
   ],
+  "deprecatedFields": null,
   "requireby": [
     {
-      "name": "AmenityConnection",
-      "description": "",
-      "url": "/travelgatex/reference/objects/amenityconnection"
+      "name": "RoomConnection",
+      "description": "RoomList definition",
+      "url": "/travelgatex/reference/objects/roomconnection"
     }
   ],
   "enumValues": null,
   "operator": "type",
-  "typename": "AmenityEdge"
+  "typename": "RoomEdge"
 }
-HotelList Edge definition
+RoomList Edge definition
 ## GraphQL Schema definition
 
 {{% graphql-schema-type %}}

@@ -8,7 +8,6 @@
       "name": "type",
       "url": "/travelgatex/reference/enums/plugintype",
       "description": "type of the plugins to execute",
-      "isDeprecated": "",
       "args": null
     },
     {
@@ -16,7 +15,6 @@
       "name": "name",
       "url": "/travelgatex/reference/scalars/string",
       "description": "name of plugin to execute",
-      "isDeprecated": "",
       "args": null
     },
     {
@@ -24,10 +22,10 @@
       "name": "parameters",
       "url": "/travelgatex/reference/inputobjects/parameterinput",
       "description": "Plugin's parameters",
-      "isDeprecated": "",
       "args": null
     }
   ],
+  "deprecatedFields": null,
   "requireby": null,
   "enumValues": null,
   "operator": "type",

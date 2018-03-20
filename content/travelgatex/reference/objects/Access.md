@@ -8,15 +8,15 @@
       "name": "code",
       "url": "/travelgatex/reference/scalars/id",
       "description": "",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
-      "typeString": "AccessData!",
+      "typeString": "AccessData",
       "name": "accessData",
       "url": "/travelgatex/reference/objects/accessdata",
       "description": "",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -24,7 +24,7 @@
       "name": "error",
       "url": "/travelgatex/reference/objects/error",
       "description": "Errors that will lead the service to abort",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -32,7 +32,7 @@
       "name": "createdAt",
       "url": "/travelgatex/reference/scalars/datetime",
       "description": "Create date",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -40,17 +40,32 @@
       "name": "updatedAt",
       "url": "/travelgatex/reference/scalars/datetime",
       "description": "Update date",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     }
   ],
-  "requireby": null,
+  "deprecatedFields": null,
+  "requireby": [
+    {
+      "name": "AccessEdge",
+      "description": "",
+      "url": "/travelgatex/reference/objects/accessedge"
+    },
+    {
+      "name": "AccessData",
+      "description": "",
+      "url": "/travelgatex/reference/objects/accessdata"
+    },
+    {
+      "name": "AdminMutation",
+      "description": "",
+      "url": "/travelgatex/reference/objects/adminmutation"
+    }
+  ],
   "enumValues": null,
   "operator": "type",
   "typename": "Access"
 }
-An Access is a set of credentials and configuration in order to access a Provider.
-
 ## GraphQL Schema definition
 
 {{% graphql-schema-type %}}
@@ -58,3 +73,7 @@ An Access is a set of credentials and configuration in order to access a Provide
 ## Fields
 
 {{% graphql-field %}}
+
+## Require by
+
+{{% graphql-require-by %}}

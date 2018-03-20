@@ -3,11 +3,12 @@
   "description": "",
   "weight": 1,
   "fields": null,
+  "deprecatedFields": null,
   "requireby": [
     {
-      "name": "Hotel",
-      "description": "Hotel type",
-      "url": "/travelgatex/reference/objects/hotel"
+      "name": "Board",
+      "description": "Board Type",
+      "url": "/travelgatex/reference/objects/board"
     },
     {
       "name": "Node",
@@ -15,14 +16,29 @@
       "url": "/travelgatex/reference/interfaces/node"
     },
     {
+      "name": "Category",
+      "description": "Category Type",
+      "url": "/travelgatex/reference/objects/category"
+    },
+    {
+      "name": "RoomStatic",
+      "description": "Room Type",
+      "url": "/travelgatex/reference/objects/roomstatic"
+    },
+    {
+      "name": "Hotel",
+      "description": "Hotel Type",
+      "url": "/travelgatex/reference/objects/hotel"
+    },
+    {
       "name": "Media",
-      "description": "",
+      "description": "Contains media information.",
       "url": "/travelgatex/reference/objects/media"
     },
     {
-      "name": "Amenity",
-      "description": "",
-      "url": "/travelgatex/reference/objects/amenity"
+      "name": "Destination",
+      "description": "Destination Type",
+      "url": "/travelgatex/reference/objects/destination"
     },
     {
       "name": "Stat",
@@ -38,6 +54,21 @@
       "name": "Transactions",
       "description": "Supplier transaction",
       "url": "/travelgatex/reference/objects/transactions"
+    },
+    {
+      "name": "Access",
+      "description": "",
+      "url": "/travelgatex/reference/objects/access"
+    },
+    {
+      "name": "Supplier",
+      "description": "",
+      "url": "/travelgatex/reference/objects/supplier"
+    },
+    {
+      "name": "Client",
+      "description": "",
+      "url": "/travelgatex/reference/objects/client"
     },
     {
       "name": "Organization",
@@ -75,14 +106,9 @@
       "url": "/travelgatex/reference/objects/product"
     },
     {
-      "name": "Access",
-      "description": "",
-      "url": "/travelgatex/reference/objects/access"
-    },
-    {
-      "name": "Supplier",
-      "description": "",
-      "url": "/travelgatex/reference/objects/supplier"
+      "name": "Context",
+      "description": "Context type, for now only Code is necessary",
+      "url": "/travelgatex/reference/objects/context"
     }
   ],
   "enumValues": null,

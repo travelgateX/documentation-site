@@ -4,46 +4,55 @@
   "weight": 1,
   "fields": [
     {
-      "typeString": "String!",
+      "typeString": "String",
       "name": "address",
       "url": "/travelgatex/reference/scalars/string",
-      "description": "Street Address",
-      "isDeprecated": "",
+      "description": "Contains Hotel Address",
+      "isDeprecated": false,
       "args": null
     },
     {
-      "typeString": "String!",
+      "typeString": "String",
       "name": "city",
       "url": "/travelgatex/reference/scalars/string",
-      "description": "City",
-      "isDeprecated": "",
+      "description": "Contains the city",
+      "isDeprecated": false,
       "args": null
     },
     {
-      "typeString": "String!",
+      "typeString": "String",
       "name": "zipCode",
       "url": "/travelgatex/reference/scalars/string",
-      "description": "Zip Code",
-      "isDeprecated": "",
+      "description": "Contains the zipCode.",
+      "isDeprecated": false,
       "args": null
     },
     {
       "typeString": "Country!",
       "name": "country",
       "url": "/travelgatex/reference/scalars/country",
-      "description": "Country ISO Code",
-      "isDeprecated": "",
+      "description": "Country where is the Hotel.",
+      "isDeprecated": false,
       "args": null
     },
     {
-      "typeString": "Geocode!",
-      "name": "geocode",
-      "url": "/travelgatex/reference/objects/geocode",
-      "description": "Geocode",
-      "isDeprecated": "",
+      "typeString": "Coordinates",
+      "name": "coordinates",
+      "url": "/travelgatex/reference/objects/coordinates",
+      "description": "Geographical coordinates corresponding to a location.",
+      "isDeprecated": false,
+      "args": null
+    },
+    {
+      "typeString": "DestinationData!",
+      "name": "closestDestination",
+      "url": "/travelgatex/reference/objects/destinationdata",
+      "description": "Closest destination",
+      "isDeprecated": false,
       "args": null
     }
   ],
+  "deprecatedFields": null,
   "requireby": [
     {
       "name": "HotelData",
@@ -55,7 +64,7 @@
   "operator": "type",
   "typename": "Location"
 }
-Location
+Indicates the location of the hotel.
 ## GraphQL Schema definition
 
 {{% graphql-schema-type %}}

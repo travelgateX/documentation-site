@@ -4,57 +4,68 @@
   "weight": 1,
   "fields": [
     {
-      "typeString": "ID!",
+      "typeString": "String",
       "name": "code",
-      "url": "/travelgatex/reference/scalars/id",
-      "description": "",
-      "isDeprecated": "",
+      "url": "/travelgatex/reference/scalars/string",
+      "description": "Code.",
+      "isDeprecated": false,
       "args": null
     },
     {
-      "typeString": "MediaData",
-      "name": "mediaData",
-      "url": "/travelgatex/reference/objects/mediadata",
-      "description": "",
-      "isDeprecated": "",
+      "typeString": "String",
+      "name": "order",
+      "url": "/travelgatex/reference/scalars/string",
+      "description": "Indicates the order priority.",
+      "isDeprecated": false,
       "args": null
     },
     {
-      "typeString": "[Error!]",
-      "name": "error",
-      "url": "/travelgatex/reference/objects/error",
-      "description": "Errors that will lead the service to abort",
-      "isDeprecated": "",
-      "args": null
-    },
-    {
-      "typeString": "DateTime!",
-      "name": "createdAt",
-      "url": "/travelgatex/reference/scalars/datetime",
-      "description": "Create date",
-      "isDeprecated": "",
+      "typeString": "ApplicationAreaType!",
+      "name": "type",
+      "url": "/travelgatex/reference/enums/applicationareatype",
+      "description": "Indicates the type of the media.",
+      "isDeprecated": false,
       "args": null
     },
     {
       "typeString": "DateTime!",
       "name": "updatedAt",
       "url": "/travelgatex/reference/scalars/datetime",
-      "description": "Update date",
-      "isDeprecated": "",
+      "description": "Update date.",
+      "isDeprecated": false,
       "args": null
-    }
-  ],
-  "requireby": [
+    },
     {
-      "name": "MediaEdge",
-      "description": "HotelList Edge definition",
-      "url": "/travelgatex/reference/objects/mediaedge"
+      "typeString": "URI!",
+      "name": "url",
+      "url": "/travelgatex/reference/scalars/uri",
+      "description": "Url.",
+      "isDeprecated": false,
+      "args": null
+    },
+    {
+      "typeString": "[Text!]",
+      "name": "texts",
+      "url": "/travelgatex/reference/interfaces/text",
+      "description": "Contains the descriptive.",
+      "isDeprecated": false,
+      "args": [
+        {
+          "typeString": "[Language!]",
+          "name": "languages",
+          "url": "/travelgatex/reference/scalars/language",
+          "description": ""
+        }
+      ]
     }
   ],
+  "deprecatedFields": null,
+  "requireby": null,
   "enumValues": null,
   "operator": "type",
   "typename": "Media"
 }
+Contains media information.
 ## GraphQL Schema definition
 
 {{% graphql-schema-type %}}
@@ -62,7 +73,3 @@
 ## Fields
 
 {{% graphql-field %}}
-
-## Require by
-
-{{% graphql-require-by %}}

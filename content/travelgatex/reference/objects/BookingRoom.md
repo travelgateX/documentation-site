@@ -8,7 +8,7 @@
       "name": "occupancyRefId",
       "url": "/travelgatex/reference/scalars/int",
       "description": "ID reference to the occupancy.",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -16,7 +16,7 @@
       "name": "code",
       "url": "/travelgatex/reference/scalars/string",
       "description": "Indicates the room code.",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -24,7 +24,7 @@
       "name": "description",
       "url": "/travelgatex/reference/scalars/string",
       "description": "Description about the room.",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -32,10 +32,11 @@
       "name": "price",
       "url": "/travelgatex/reference/objects/price",
       "description": "Total price for all days.",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     }
   ],
+  "deprecatedFields": null,
   "requireby": null,
   "enumValues": null,
   "operator": "type",

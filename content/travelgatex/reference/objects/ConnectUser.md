@@ -8,7 +8,7 @@
       "name": "code",
       "url": "/travelgatex/reference/scalars/string",
       "description": "unique connect user of a supplier",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -16,7 +16,7 @@
       "name": "isActive",
       "url": "/travelgatex/reference/scalars/boolean",
       "description": "indicates whether a connect user is active",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -24,10 +24,11 @@
       "name": "connectUserGroups",
       "url": "/travelgatex/reference/objects/connectusergroup",
       "description": "connect user's related data of its groups",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     }
   ],
+  "deprecatedFields": null,
   "requireby": null,
   "enumValues": null,
   "operator": "type",

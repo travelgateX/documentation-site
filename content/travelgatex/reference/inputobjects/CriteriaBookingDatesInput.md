@@ -8,7 +8,6 @@
       "name": "dateType",
       "url": "/travelgatex/reference/enums/datetype",
       "description": "Type of date. Can be Arrival or Booking date.",
-      "isDeprecated": "",
       "args": null
     },
     {
@@ -16,7 +15,6 @@
       "name": "start",
       "url": "/travelgatex/reference/scalars/date",
       "description": "Start date.\nFormat: yyyy-MM-dd.",
-      "isDeprecated": "",
       "args": null
     },
     {
@@ -24,10 +22,10 @@
       "name": "end",
       "url": "/travelgatex/reference/scalars/date",
       "description": "End date.\nFormat: yyyy-MM-dd.",
-      "isDeprecated": "",
       "args": null
     }
   ],
+  "deprecatedFields": null,
   "requireby": [
     {
       "name": "HotelCriteriaBookingInput",

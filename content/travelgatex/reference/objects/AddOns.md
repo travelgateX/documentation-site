@@ -4,11 +4,21 @@
   "weight": 1,
   "fields": [
     {
+      "typeString": "[AddOn!]",
+      "name": "distribution",
+      "url": "/travelgatex/reference/objects/addon",
+      "description": "Extra information from the distribution layer",
+      "isDeprecated": false,
+      "args": null
+    }
+  ],
+  "deprecatedFields": [
+    {
       "typeString": "JSON",
       "name": "distribute",
       "url": "/travelgatex/reference/scalars/json",
       "description": "Extra information from the distribution layer",
-      "isDeprecated": "",
+      "isDeprecated": true,
       "args": null
     }
   ],

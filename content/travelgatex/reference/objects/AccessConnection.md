@@ -8,7 +8,7 @@
       "name": "edges",
       "url": "/travelgatex/reference/objects/accessedge",
       "description": "",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -16,11 +16,28 @@
       "name": "pageInfo",
       "url": "/travelgatex/reference/objects/pageinfo",
       "description": "",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     }
   ],
-  "requireby": null,
+  "deprecatedFields": null,
+  "requireby": [
+    {
+      "name": "AdminQuery",
+      "description": "",
+      "url": "/travelgatex/reference/objects/adminquery"
+    },
+    {
+      "name": "SupplierData",
+      "description": "",
+      "url": "/travelgatex/reference/objects/supplierdata"
+    },
+    {
+      "name": "ClientData",
+      "description": "",
+      "url": "/travelgatex/reference/objects/clientdata"
+    }
+  ],
   "enumValues": null,
   "operator": "type",
   "typename": "AccessConnection"
@@ -32,3 +49,7 @@
 ## Fields
 
 {{% graphql-field %}}
+
+## Require by
+
+{{% graphql-require-by %}}

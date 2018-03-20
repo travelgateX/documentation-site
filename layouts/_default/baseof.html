@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>{{ block "title" . }}{{if .Params.Pagetitle }}{{ .Params.Pagetitle }}{{else}}{{ .Params.Title }}{{end}} | {{ .Site.Title }}{{ end }}</title>
+    <title>{{ block "title" . }}{{if .Params.title }}{{ .Params.title }}{{else}}{{ .Params.pagetitle }}{{end}} | {{ .Site.Title }}{{ end }}</title>
     {{if .Site.Params.themeStyle}}
       {{ partial (printf "%s/head.html" .Site.Params.themeStyle) . }}
     {{else}}
       {{ partial "original/head.html" . }}
     {{end}}
+    <meta name="description" content="{{if .Params.description}}{{.Params.description}}{{end}}">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
   </head>
   <body data-url="{{ .RelPermalink }}">
@@ -24,6 +25,7 @@
         <input data-search-input class="form-control"  id="search-by" type="text" placeholder="Search docs...">
         <script type="text/javascript" src="{{"js/lunr.min.js" | relURL}}"></script>
         <script type="text/javascript" src="{{"js/auto-complete.js" | relURL}}"></script>
+        <script type="text/javascript" src="{{"js/functions.js" | relURL}}"></script>
         <script type="text/javascript">
             {{ if .Site.IsMultiLingual }}
             var baseurl = "{{.Site.BaseURL}}{{.Site.LanguagePrefix}}";
@@ -37,7 +39,7 @@
         <div class="row">
           <div class="content-center">
             <div class="p-4">
-              <h1 class="pageTitle">{{if .Params.Pagetitle }}{{ .Params.Title }}: {{ .Params.Pagetitle }}{{else}}{{ .Params.Title }}{{end}}</h1>
+              <h1 class="pageTitle">{{if .Params.pagetitle }}{{ .Params.pagetitle }}{{else}}{{ .Params.title }}{{end}}</h1>
               {{ block "main" . }}
               {{ end }}    
             </div>

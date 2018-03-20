@@ -3,6 +3,7 @@
   "description": "",
   "weight": 1,
   "fields": null,
+  "deprecatedFields": null,
   "requireby": [
     {
       "name": "HotelBookingDetail",
@@ -18,7 +19,7 @@
   "enumValues": [
     {
       "name": "OK",
-      "description": "The status of the booking is available",
+      "description": "The reservation was completed with no problems",
       "isDeprecated": false,
       "deprecationReason": null
     },
@@ -30,7 +31,7 @@
     },
     {
       "name": "ON_REQUEST",
-      "description": "The status of the booking is on request",
+      "description": "The reservation was completed but the product is still not available, so the reservation goes into a waiting list. \nIt is the clientâ€™s responsibility to check if the booking is OK",
       "isDeprecated": false,
       "deprecationReason": null
     },
@@ -42,7 +43,7 @@
     },
     {
       "name": "UNKNOWN",
-      "description": "The status of the booking is unknown",
+      "description": "The reservation was completed but due to a supplier error or a timeout, the reservation status is unknown. \nIt is the clientâ€™s responsibility to check if the booking is OK",
       "isDeprecated": false,
       "deprecationReason": null
     }

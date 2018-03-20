@@ -8,7 +8,7 @@
       "name": "code",
       "url": "/travelgatex/reference/scalars/string",
       "description": "TODO:\nError code: The following codes can be returned:\nXXX: XXXXXXXXX XXXXXX",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -16,7 +16,7 @@
       "name": "type",
       "url": "/travelgatex/reference/scalars/string",
       "description": "TODO:\nError type: The following types are valid:\nXXX: asd asdÃ±oajskd lÃ±a ld",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -24,10 +24,11 @@
       "name": "description",
       "url": "/travelgatex/reference/scalars/string",
       "description": "Error description",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     }
   ],
+  "deprecatedFields": null,
   "requireby": null,
   "enumValues": null,
   "operator": "interface",

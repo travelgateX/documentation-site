@@ -1,29 +1,28 @@
 {
-  "title": "HotelInput",
+  "title": "HotelXBoardQueryInput",
   "description": "",
   "weight": 1,
   "fields": [
     {
-      "typeString": "[ID!]",
-      "name": "codes",
-      "url": "/travelgatex/reference/scalars/id",
+      "typeString": "[String!]",
+      "name": "boardCodes",
+      "url": "/travelgatex/reference/scalars/string",
       "description": "",
-      "isDeprecated": "",
       "args": null
     },
     {
-      "typeString": "Language",
-      "name": "language",
-      "url": "/travelgatex/reference/scalars/language",
+      "typeString": "ID!",
+      "name": "access",
+      "url": "/travelgatex/reference/scalars/id",
       "description": "",
-      "isDeprecated": "",
       "args": null
     }
   ],
+  "deprecatedFields": null,
   "requireby": null,
   "enumValues": null,
   "operator": "type",
-  "typename": "HotelInput"
+  "typename": "HotelXBoardQueryInput"
 }
 ## GraphQL Schema definition
 

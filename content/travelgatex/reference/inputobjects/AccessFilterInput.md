@@ -8,7 +8,6 @@
       "name": "includes",
       "url": "/travelgatex/reference/scalars/id",
       "description": "These Access IDs will overwrite the default configuration. Only the IDs on this list will be used in the search query.",
-      "isDeprecated": "",
       "args": null
     },
     {
@@ -16,10 +15,10 @@
       "name": "excludes",
       "url": "/travelgatex/reference/scalars/id",
       "description": "These Access IDs will overwrite the default configuration. The IDs on this list will be excluded from the search query.",
-      "isDeprecated": "",
       "args": null
     }
   ],
+  "deprecatedFields": null,
   "requireby": [
     {
       "name": "FilterInput",

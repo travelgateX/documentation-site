@@ -8,7 +8,7 @@
       "name": "groupCodes",
       "url": "/travelgatex/reference/scalars/string",
       "description": "group identifiers",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -16,10 +16,11 @@
       "name": "accesses",
       "url": "/travelgatex/reference/objects/access",
       "description": "",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     }
   ],
+  "deprecatedFields": null,
   "requireby": null,
   "enumValues": null,
   "operator": "type",

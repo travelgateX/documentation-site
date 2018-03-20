@@ -8,30 +8,44 @@
       "name": "contexts",
       "url": "/travelgatex/reference/objects/mappingcontext",
       "description": "Returns the differents group contexts, you can filter by some contexts.",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": [
         {
           "typeString": "[String!]",
-          "name": "contextCodes",
+          "name": "codes",
           "url": "/travelgatex/reference/scalars/string",
-          "description": "",
-          "isDeprecated": ""
-        },
-        {
-          "typeString": "[String!]",
-          "name": "supplierCodes",
-          "url": "/travelgatex/reference/scalars/string",
-          "description": "",
-          "isDeprecated": ""
+          "description": ""
         }
       ]
+    },
+    {
+      "typeString": "[Error!]",
+      "name": "errors",
+      "url": "/travelgatex/reference/objects/error",
+      "description": "Errors that will lead the service to abort",
+      "isDeprecated": false,
+      "args": null
+    },
+    {
+      "typeString": "[Warning!]",
+      "name": "warnings",
+      "url": "/travelgatex/reference/objects/warning",
+      "description": "Potentially harmful situations or errors that won't force the service to abort",
+      "isDeprecated": false,
+      "args": null
     }
   ],
+  "deprecatedFields": null,
   "requireby": [
     {
       "name": "Query",
       "description": "",
       "url": "/travelgatex/reference/schema/query"
+    },
+    {
+      "name": "HotelXQuery",
+      "description": "",
+      "url": "/travelgatex/reference/objects/hotelxquery"
     }
   ],
   "enumValues": null,

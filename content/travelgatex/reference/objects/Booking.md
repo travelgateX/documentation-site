@@ -2,27 +2,26 @@
   "title": "Booking",
   "description": "",
   "weight": 1,
-  "fields": [
+  "fields": null,
+  "deprecatedFields": [
     {
       "typeString": "HotelBooking",
       "name": "hotel",
       "url": "/travelgatex/reference/objects/hotelbooking",
       "description": "Returns detailed information about books, you can indicated a list of locators or a range date.",
-      "isDeprecated": " ⚠️",
+      "isDeprecated": true,
       "args": [
         {
           "typeString": "HotelCriteriaBookingInput!",
           "name": "criteria",
           "url": "/travelgatex/reference/inputobjects/hotelcriteriabookinginput",
-          "description": "",
-          "isDeprecated": ""
+          "description": ""
         },
         {
           "typeString": "HotelSettingsInput",
           "name": "settings",
           "url": "/travelgatex/reference/inputobjects/hotelsettingsinput",
-          "description": "",
-          "isDeprecated": ""
+          "description": ""
         }
       ]
     }
@@ -42,10 +41,6 @@ Returns detailed information about books.
 ## GraphQL Schema definition
 
 {{% graphql-schema-type %}}
-
-## Fields
-
-{{% graphql-field %}}
 
 ## Require by
 

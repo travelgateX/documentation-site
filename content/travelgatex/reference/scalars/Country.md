@@ -3,10 +3,11 @@
   "description": "",
   "weight": 1,
   "fields": null,
+  "deprecatedFields": null,
   "requireby": [
     {
       "name": "Location",
-      "description": "Location",
+      "description": "Indicates the location of the hotel.",
       "url": "/travelgatex/reference/objects/location"
     },
     {

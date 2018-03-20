@@ -1,5 +1,5 @@
 {
-  "title": "SupplierInput",
+  "title": "HotelXSupplierInput",
   "description": "",
   "weight": 1,
   "fields": [
@@ -8,7 +8,6 @@
       "name": "settings",
       "url": "/travelgatex/reference/inputobjects/settingsbaseinput",
       "description": "You can configure an special settings for any supplier. This level overwrites the avail settings level but not the\naccess settings level.",
-      "isDeprecated": "",
       "args": null
     },
     {
@@ -16,22 +15,21 @@
       "name": "code",
       "url": "/travelgatex/reference/scalars/string",
       "description": "Code that represents a supplier in our system.\nThis information is mandatory.",
-      "isDeprecated": "",
       "args": null
     },
     {
-      "typeString": "[AccessInput!]",
+      "typeString": "[HotelXAccessInput!]",
       "name": "accesses",
-      "url": "/travelgatex/reference/inputobjects/accessinput",
+      "url": "/travelgatex/reference/inputobjects/hotelxaccessinput",
       "description": "Array of accesses that can overwrite an existing access information or include a new access for this avail.",
-      "isDeprecated": "",
       "args": null
     }
   ],
+  "deprecatedFields": null,
   "requireby": null,
   "enumValues": null,
   "operator": "type",
-  "typename": "SupplierInput"
+  "typename": "HotelXSupplierInput"
 }
 Supplier object. Contains its own settings, code and access.
 ## GraphQL Schema definition

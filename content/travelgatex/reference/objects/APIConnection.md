@@ -8,7 +8,7 @@
       "name": "edges",
       "url": "/travelgatex/reference/objects/apiedge",
       "description": "",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -16,10 +16,11 @@
       "name": "pageInfo",
       "url": "/travelgatex/reference/objects/pageinfo",
       "description": "",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     }
   ],
+  "deprecatedFields": null,
   "requireby": [
     {
       "name": "AdminQuery",

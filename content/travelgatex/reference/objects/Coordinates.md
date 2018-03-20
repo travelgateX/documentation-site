@@ -1,37 +1,38 @@
 {
-  "title": "Geocode",
+  "title": "Coordinates",
   "description": "",
   "weight": 1,
   "fields": [
     {
-      "typeString": "String!",
+      "typeString": "Float!",
       "name": "latitude",
-      "url": "/travelgatex/reference/scalars/string",
+      "url": "/travelgatex/reference/scalars/float",
       "description": "Latitude",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
-      "typeString": "String!",
+      "typeString": "Float!",
       "name": "longitude",
-      "url": "/travelgatex/reference/scalars/string",
+      "url": "/travelgatex/reference/scalars/float",
       "description": "Longitude",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     }
   ],
+  "deprecatedFields": null,
   "requireby": [
     {
       "name": "Location",
-      "description": "Location",
+      "description": "Indicates the location of the hotel.",
       "url": "/travelgatex/reference/objects/location"
     }
   ],
   "enumValues": null,
   "operator": "type",
-  "typename": "Geocode"
+  "typename": "Coordinates"
 }
-Geocode type
+Geographical coordinates corresponding to a location.
 ## GraphQL Schema definition
 
 {{% graphql-schema-type %}}

@@ -1,14 +1,14 @@
 {
-  "title": "MediaConnection",
+  "title": "BoardConnection",
   "description": "",
   "weight": 1,
   "fields": [
     {
-      "typeString": "[MediaEdge]",
+      "typeString": "[BoardEdge]",
       "name": "edges",
-      "url": "/travelgatex/reference/objects/mediaedge",
+      "url": "/travelgatex/reference/objects/boardedge",
       "description": "",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -16,21 +16,23 @@
       "name": "pageInfo",
       "url": "/travelgatex/reference/objects/pageinfo",
       "description": "",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     }
   ],
+  "deprecatedFields": null,
   "requireby": [
     {
-      "name": "HotelData",
-      "description": "Hotel data",
-      "url": "/travelgatex/reference/objects/hoteldata"
+      "name": "HotelXQuery",
+      "description": "",
+      "url": "/travelgatex/reference/objects/hotelxquery"
     }
   ],
   "enumValues": null,
   "operator": "type",
-  "typename": "MediaConnection"
+  "typename": "BoardConnection"
 }
+BoardList definition
 ## GraphQL Schema definition
 
 {{% graphql-schema-type %}}

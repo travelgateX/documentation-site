@@ -8,7 +8,7 @@
       "name": "code",
       "url": "/travelgatex/reference/scalars/string",
       "description": "Specifies the rate code.",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -16,7 +16,7 @@
       "name": "name",
       "url": "/travelgatex/reference/scalars/string",
       "description": "Specifies the rate name.",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -24,7 +24,7 @@
       "name": "effectiveDate",
       "url": "/travelgatex/reference/scalars/date",
       "description": "Start date in which the rate becomes effective.",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -32,10 +32,11 @@
       "name": "expireDate",
       "url": "/travelgatex/reference/scalars/date",
       "description": "Expire date of the rate.",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     }
   ],
+  "deprecatedFields": null,
   "requireby": null,
   "enumValues": null,
   "operator": "type",

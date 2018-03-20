@@ -8,7 +8,15 @@
       "name": "edges",
       "url": "/travelgatex/reference/objects/hoteledge",
       "description": "",
-      "isDeprecated": "",
+      "isDeprecated": false,
+      "args": null
+    },
+    {
+      "typeString": "String",
+      "name": "token",
+      "url": "/travelgatex/reference/scalars/string",
+      "description": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -16,10 +24,11 @@
       "name": "pageInfo",
       "url": "/travelgatex/reference/objects/pageinfo",
       "description": "",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     }
   ],
+  "deprecatedFields": null,
   "requireby": [
     {
       "name": "HotelXQuery",

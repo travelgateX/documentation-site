@@ -8,7 +8,6 @@
       "name": "month",
       "url": "/travelgatex/reference/scalars/int",
       "description": "Month MM",
-      "isDeprecated": "",
       "args": null
     },
     {
@@ -16,10 +15,10 @@
       "name": "year",
       "url": "/travelgatex/reference/scalars/int",
       "description": "Year yy",
-      "isDeprecated": "",
       "args": null
     }
   ],
+  "deprecatedFields": null,
   "requireby": [
     {
       "name": "PaymentCardInput",

@@ -7,35 +7,36 @@
       "typeString": "String",
       "name": "email",
       "url": "/travelgatex/reference/scalars/string",
-      "description": "Email.",
-      "isDeprecated": "",
+      "description": "Email",
+      "isDeprecated": false,
       "args": null
     },
     {
       "typeString": "String",
       "name": "telephone",
       "url": "/travelgatex/reference/scalars/string",
-      "description": "Telephone.",
-      "isDeprecated": "",
+      "description": "Telephone",
+      "isDeprecated": false,
       "args": null
     },
     {
       "typeString": "String",
       "name": "fax",
       "url": "/travelgatex/reference/scalars/string",
-      "description": "Fax.",
-      "isDeprecated": "",
+      "description": "Fax",
+      "isDeprecated": false,
       "args": null
     },
     {
-      "typeString": "URI!",
+      "typeString": "URI",
       "name": "web",
       "url": "/travelgatex/reference/scalars/uri",
-      "description": "Web.",
-      "isDeprecated": "",
+      "description": "Web",
+      "isDeprecated": false,
       "args": null
     }
   ],
+  "deprecatedFields": null,
   "requireby": [
     {
       "name": "HotelData",
@@ -47,7 +48,7 @@
   "operator": "type",
   "typename": "Contact"
 }
-Contact type
+Contact Data.
 ## GraphQL Schema definition
 
 {{% graphql-schema-type %}}

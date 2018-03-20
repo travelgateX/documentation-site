@@ -8,7 +8,7 @@
       "name": "id",
       "url": "/travelgatex/reference/scalars/string",
       "description": "rule identifier",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -16,7 +16,7 @@
       "name": "name",
       "url": "/travelgatex/reference/scalars/string",
       "description": "rule name",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -24,7 +24,7 @@
       "name": "type",
       "url": "/travelgatex/reference/enums/markupruletype",
       "description": "type of the value",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -32,10 +32,11 @@
       "name": "value",
       "url": "/travelgatex/reference/scalars/float",
       "description": "value applied by this rule",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     }
   ],
+  "deprecatedFields": null,
   "requireby": null,
   "enumValues": null,
   "operator": "type",

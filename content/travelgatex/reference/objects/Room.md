@@ -8,7 +8,7 @@
       "name": "occupancyRefId",
       "url": "/travelgatex/reference/scalars/int",
       "description": "ID reference to the occupancy.",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -16,7 +16,7 @@
       "name": "code",
       "url": "/travelgatex/reference/scalars/string",
       "description": "Indicates the room code.",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -24,7 +24,7 @@
       "name": "description",
       "url": "/travelgatex/reference/scalars/string",
       "description": "Description about the room.",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -32,7 +32,7 @@
       "name": "refundable",
       "url": "/travelgatex/reference/scalars/boolean",
       "description": "Identifies if the room is refundable or not.",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -40,7 +40,7 @@
       "name": "units",
       "url": "/travelgatex/reference/scalars/int",
       "description": "Number of rooms available with the same type.",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -48,7 +48,7 @@
       "name": "roomPrice",
       "url": "/travelgatex/reference/objects/roomprice",
       "description": "Specifies the room price.",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -56,7 +56,7 @@
       "name": "beds",
       "url": "/travelgatex/reference/objects/bed",
       "description": "List of beds.",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -64,7 +64,7 @@
       "name": "ratePlans",
       "url": "/travelgatex/reference/objects/rateplan",
       "description": "Daily break downs rate plan.",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -72,10 +72,11 @@
       "name": "promotions",
       "url": "/travelgatex/reference/objects/promotion",
       "description": "Daily break downs promotions.",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     }
   ],
+  "deprecatedFields": null,
   "requireby": null,
   "enumValues": null,
   "operator": "type",

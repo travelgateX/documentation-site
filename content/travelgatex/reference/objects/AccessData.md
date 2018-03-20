@@ -4,11 +4,11 @@
   "weight": 1,
   "fields": [
     {
-      "typeString": "Supplier!",
-      "name": "suppliers",
-      "url": "/travelgatex/reference/objects/supplier",
-      "description": "code: ID!\nURL: Url!\nuser: String!",
-      "isDeprecated": "",
+      "typeString": "String!",
+      "name": "name",
+      "url": "/travelgatex/reference/scalars/string",
+      "description": "Access descriptive name",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -16,31 +16,31 @@
       "name": "isActive",
       "url": "/travelgatex/reference/scalars/boolean",
       "description": "Indicates if the access is active.",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
       "typeString": "ID!",
-      "name": "id",
+      "name": "code",
       "url": "/travelgatex/reference/scalars/id",
       "description": "Unique AccessConfiguration identifier",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
-      "typeString": "String!",
-      "name": "code",
-      "url": "/travelgatex/reference/scalars/string",
-      "description": "Access code.",
-      "isDeprecated": "",
-      "args": null
-    },
-    {
-      "typeString": "String!",
+      "typeString": "Supplier!",
       "name": "supplier",
-      "url": "/travelgatex/reference/scalars/string",
+      "url": "/travelgatex/reference/objects/supplier",
       "description": "supplier for this access.",
-      "isDeprecated": "",
+      "isDeprecated": false,
+      "args": null
+    },
+    {
+      "typeString": "Boolean!",
+      "name": "isTest",
+      "url": "/travelgatex/reference/scalars/boolean",
+      "description": "Indicates if this access can be used for testing or not",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -48,7 +48,7 @@
       "name": "user",
       "url": "/travelgatex/reference/scalars/string",
       "description": "User code to connect to supplier.",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -56,23 +56,23 @@
       "name": "password",
       "url": "/travelgatex/reference/scalars/string",
       "description": "Password for the connection.",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
-      "typeString": "Urls!",
+      "typeString": "Urls",
       "name": "urls",
       "url": "/travelgatex/reference/objects/urls",
       "description": "Specific Urls",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
-      "typeString": "[Parameter!]",
+      "typeString": "[Parameter]",
       "name": "parameters",
       "url": "/travelgatex/reference/objects/parameter",
       "description": "List of parameters for additional information.",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
@@ -80,10 +80,27 @@
       "name": "markets",
       "url": "/travelgatex/reference/scalars/string",
       "description": "Markets allowed for the access.",
-      "isDeprecated": "",
+      "isDeprecated": false,
+      "args": null
+    },
+    {
+      "typeString": "[RateRulesType!]",
+      "name": "rateRules",
+      "url": "/travelgatex/reference/enums/raterulestype",
+      "description": "Business rules types for the access.",
+      "isDeprecated": false,
+      "args": null
+    },
+    {
+      "typeString": "Access",
+      "name": "shared",
+      "url": "/travelgatex/reference/objects/access",
+      "description": "Parent access if Shared access",
+      "isDeprecated": false,
       "args": null
     }
   ],
+  "deprecatedFields": null,
   "requireby": [
     {
       "name": "Access",

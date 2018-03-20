@@ -7,25 +7,30 @@
       "typeString": "String!",
       "name": "key",
       "url": "/travelgatex/reference/scalars/string",
-      "description": "Contains the keyword/Id to identify a parameter.",
-      "isDeprecated": "",
+      "description": "Contains the keyword/Id to identify a parameter.\nThis information is mandatory.",
       "args": null
     },
     {
       "typeString": "String!",
       "name": "value",
       "url": "/travelgatex/reference/scalars/string",
-      "description": "Contains the parameter values.",
-      "isDeprecated": "",
+      "description": "Contains the parameter values.\nThis information is mandatory.",
       "args": null
     }
   ],
-  "requireby": null,
+  "deprecatedFields": null,
+  "requireby": [
+    {
+      "name": "AccessInput",
+      "description": "Access input",
+      "url": "/travelgatex/reference/inputobjects/accessinput"
+    }
+  ],
   "enumValues": null,
   "operator": "type",
   "typename": "ParameterInput"
 }
-Parameters for additional information for the supplier's configuration.
+Parameters Input.
 ## GraphQL Schema definition
 
 {{% graphql-schema-type %}}
@@ -33,3 +38,7 @@ Parameters for additional information for the supplier's configuration.
 ## Fields
 
 {{% graphql-field %}}
+
+## Require by
+
+{{% graphql-require-by %}}

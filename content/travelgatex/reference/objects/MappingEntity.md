@@ -8,18 +8,26 @@
       "name": "code",
       "url": "/travelgatex/reference/scalars/string",
       "description": "Client code",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
       "typeString": "[Map!]",
-      "name": "maps",
+      "name": "contexts",
       "url": "/travelgatex/reference/objects/map",
-      "description": "Supplier code. Filter by supplier.",
-      "isDeprecated": "",
-      "args": null
+      "description": "You can filter by output context.",
+      "isDeprecated": false,
+      "args": [
+        {
+          "typeString": "[String!]",
+          "name": "codes",
+          "url": "/travelgatex/reference/scalars/string",
+          "description": ""
+        }
+      ]
     }
   ],
+  "deprecatedFields": null,
   "requireby": null,
   "enumValues": null,
   "operator": "type",

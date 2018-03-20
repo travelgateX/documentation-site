@@ -1,5 +1,5 @@
 {
-  "title": "MediaEdge",
+  "title": "BoardEdge",
   "description": "",
   "weight": 1,
   "fields": [
@@ -8,30 +8,31 @@
       "name": "cursor",
       "url": "/travelgatex/reference/scalars/string",
       "description": "",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     },
     {
-      "typeString": "Media",
+      "typeString": "Board",
       "name": "node",
-      "url": "/travelgatex/reference/objects/media",
+      "url": "/travelgatex/reference/objects/board",
       "description": "",
-      "isDeprecated": "",
+      "isDeprecated": false,
       "args": null
     }
   ],
+  "deprecatedFields": null,
   "requireby": [
     {
-      "name": "MediaConnection",
-      "description": "",
-      "url": "/travelgatex/reference/objects/mediaconnection"
+      "name": "BoardConnection",
+      "description": "BoardList definition",
+      "url": "/travelgatex/reference/objects/boardconnection"
     }
   ],
   "enumValues": null,
   "operator": "type",
-  "typename": "MediaEdge"
+  "typename": "BoardEdge"
 }
-HotelList Edge definition
+BoardList Edge definition
 ## GraphQL Schema definition
 
 {{% graphql-schema-type %}}
