@@ -19,7 +19,8 @@
       "url": "/travelgatex/reference/scalars/json",
       "description": "Extra information from the distribution layer",
       "isDeprecated": true,
-      "args": null
+      "args": null,
+      "deprecationReason": "deprecated from 2018-03-12. You can find it in distribution AddOn."
     }
   ],
   "requireby": [

@@ -35,7 +35,8 @@ function newArgField(fieldOrArg) {
   };
 }
 
-function parseFields(type, addToDeprecated) {
+function parseFields(type, addToDeprecated) {  
+  let invalid = false;
   let fields = [];
   if (type.fields) {
     fields = type.fields;
@@ -45,6 +46,16 @@ function parseFields(type, addToDeprecated) {
   var fieldsList = [];
   fields.forEach(field => {
     var args = null;
+
+    if (field.description.indexOf('@deprecated') !== -1) {
+      if (!addToDeprecated) {
+        invalid = true;
+      } else {
+        field.isDeprecated = true;
+        field.deprecationReason = /\"(.*?)\"/.exec(field.description)[1];
+      }
+    }
+
     if (field.args && field.args.length) {
       args = [];
       field.args.forEach((arg, i) => {
@@ -53,10 +64,16 @@ function parseFields(type, addToDeprecated) {
     }
     let newfield = newArgField(field);
     newfield.args = args;
+
     if (addToDeprecated && newfield.isDeprecated) {
+      if (field.deprecationReason) {
+        newfield.deprecationReason = field.deprecationReason;
+      }
       fieldsList.push(newfield);
     } else if (!addToDeprecated && !newfield.isDeprecated) {
-      fieldsList.push(newfield);
+      if (!invalid) {
+        fieldsList.push(newfield);
+      }
     }
   });
   return fieldsList.length ? fieldsList : null;

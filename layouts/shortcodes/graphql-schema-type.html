@@ -49,14 +49,27 @@
                             <span class="tab">
                                 ): <a class="support type" href="{{.url}}">{{.typeString}}</a> 
                             </span>
+                            {{if .deprecationReason}}
+                            <span class="text-secondary">// {{.deprecationReason}}</span>
+                            {{end}}
                         </li>
                     {{else}}
                         <li>
                             <span class="tab">
                                 <span class="meta">{{.name}}</span>({{- template "argsInLine" .args}}): <a class="support type" href="{{.url}}">{{.typeString}}</a> 
                             </span>
+                            {{if .deprecationReason}}
+                            <span class="text-secondary">// {{.deprecationReason}}</span>
+                            {{end}}
                         </li>
                     {{end}}
+                {{else}}
+                <!-- DEPRECATED INPUT (DOES NOT HAVE ARGS) -->
+                <li>
+                        <span class="tab">
+                            <span class="meta">{{.name}}: : <a class="support type" href="{{.url}}">{{.typeString}}</a> <span class="text-secondary">// {{.deprecationReason}}</span></span>
+                        </span>
+                    </li>
                 {{end}}
             {{end}}
             </div>
