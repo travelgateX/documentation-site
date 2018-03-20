@@ -21,6 +21,13 @@
       "typeString": "String",
       "name": "connectUser",
       "url": "/travelgatex/reference/scalars/string",
+      "description": " This field is got only if the authorization header is of the type JWT. It is used for to change the user that\n has been set by default in the preload.\n@deprecated(reason: \"deprecated from 2018-03-19. Redundant.\")",
+      "args": null
+    },
+    {
+      "typeString": "String",
+      "name": "client",
+      "url": "/travelgatex/reference/scalars/string",
       "description": "This field is got only if the authorization header is of the type JWT. It is used for to change the user that\nhas been set by default in the preload.",
       "args": null
     },
