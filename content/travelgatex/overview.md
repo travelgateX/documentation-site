@@ -1,6 +1,6 @@
 +++
 title = "Overview"
-pagetitle = "of TravelgateX Platform"
+pagetitle = "TravelgateX Platform"
 description = "TravelgateX Platform Information"
 icon = "fa-info-circle"
 weight = 1
@@ -13,7 +13,7 @@ This page provides an overview of _travelgateX_ platform.
 
 **TravelgateX** is the travel API completely based in GraphQL and unlike many old legacy XML Soap APIs, GraphQL enables each client to return exactly what they want. If you wish to read more about it, [visit GraphQL guide](/learning-graphql/overview/#graphql-at-travelgatex).
 
-The architecture doesn't differ from many modern APIs. There’s an API Gateway, which takes care of basic procedures such as authentication, authorization and it also acts like a shield to protect us from DoS attacks and also handles throttling. On the other hand, Analytics is also an important part in the gateway. 
+The architecture doesn't differ from many modern APIs. There’s an API Gateway, which takes care of basic procedures such as authentication, authorization and it also acts like a shield to protect us from DoS attacks and also handles throttling. On the other hand, Analytics is also an important part in the gateway.
 
 Our Gateway is the only endpoint to **access all of our APIs**. It is written in NodeJS, making it fast, stable, secure, fault tolerant and load balanced between many datacenters from four different cloud providers: [Microsoft Azure](https://azure.microsoft.com/), [Google Cloud Platform](https://cloud.google.com/), [Hetzner](https://www.hetzner.de/) and [TotalUptime](http://totaluptime.com/).
 
@@ -28,9 +28,9 @@ If you wish to learn [how to use a GraphQL API](http://docs.travelgatex.com/lear
 
 ## GraphQL Endpoint
 
-One of the benefits of using GraphQL is that there's only one single endpoint. You can use this endpoint for all operations you want to perform: 
+One of the benefits of using GraphQL is that there's only one single endpoint. You can use this endpoint for all operations you want to perform:
 
-{{% alert theme="warning" %}}https://api.travelgatex.com{{% /alert %}} 
+{{% alert theme="warning" %}}https://api.travelgatex.com{{% /alert %}}
 
 ## Communicating with the Server
 
@@ -40,7 +40,7 @@ To communicate with the GraphQL server, you'll need an access token with the rig
 
 Because GraphQL operations consist of multiple operations and schemas, we recommend using the Explorer to make GraphQL calls. There are some alternatives to use GraphQL builtin explorer like GraphQL Playground. You can also use <a href="https://curl.haxx.se" target="_blank">curl</a> or any other HTTP-speaking library.
 
-{{% alert theme="danger" %}}All **LIVE** traffic **MUST** enable GZIP compression in the HTTP header{{% /alert %}} 
+{{% alert theme="danger" %}}All **LIVE** traffic **MUST** enable GZIP compression in the HTTP header{{% /alert %}}
 
 ```html
 Accept-Encoding: gzip
