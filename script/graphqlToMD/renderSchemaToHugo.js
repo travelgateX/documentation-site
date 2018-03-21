@@ -2,6 +2,8 @@
 var fs = require('fs');
 var config = require('./config');
 
+const LOG = [];
+
 function sortBy(arr, property) {
   arr.sort((a, b) => {
     const aValue = a[property];
@@ -35,7 +37,7 @@ function newArgField(fieldOrArg) {
   };
 }
 
-function parseFields(type, addToDeprecated) {  
+function parseFields(type, addToDeprecated) {
   let invalid = false;
   let fields = [];
   if (type.fields) {
@@ -46,6 +48,31 @@ function parseFields(type, addToDeprecated) {
   var fieldsList = [];
   fields.forEach(field => {
     var args = null;
+    let descriptionSplitted = null;
+
+    if (/(\d{4})([\/-])(\d{1,2})\2(\d{1,2})/.test(field.description)) {
+      const splittedDescription = field.description.split(' ');
+
+      let index = splittedDescription.findIndex(d => {
+        if (d.match(/(\d{4})([\/-])(\d{1,2})\2(\d{1,2})/)) return true;
+      });
+      const date = splittedDescription[index].match(
+        /(\d{4})([\/-])(\d{1,2})\2(\d{1,2})/
+      )[0];
+
+      const firstPartDescription = splittedDescription
+        .slice(0, index)
+        .join(' ');
+      const secondPartDescription = splittedDescription
+        .slice(index + 1, splittedDescription.length)
+        .join(' ');
+      descriptionSplitted = {
+        date: date,
+        first: firstPartDescription,
+        second: secondPartDescription
+      };
+      LOG.push({ info: field.description, date: date, name: field.name });
+    }
 
     if (field.description.indexOf('@deprecated') !== -1) {
       if (!addToDeprecated) {
@@ -69,6 +96,10 @@ function parseFields(type, addToDeprecated) {
       if (field.deprecationReason) {
         newfield.deprecationReason = field.deprecationReason;
       }
+      if (descriptionSplitted) {
+        newfield.descriptionSplitted = descriptionSplitted;
+      }
+      console.log(newfield);
       fieldsList.push(newfield);
     } else if (!addToDeprecated && !newfield.isDeprecated) {
       if (!invalid) {
@@ -77,47 +108,6 @@ function parseFields(type, addToDeprecated) {
     }
   });
   return fieldsList.length ? fieldsList : null;
-}
-
-function renderObject(lines, type, types, template, operator = template) {
-  let frontMatter = {
-    title: type.name,
-    description: '',
-    weight: 1,
-    fields: parseFields(type, false),
-    deprecatedFields: parseFields(type, true),
-    requireby: parseRequiredBy(types, type.name),
-    enumValues: type.enumValues,
-    operator: operator,
-    typename: type.name
-  };
-
-  lines.push(JSON.stringify(frontMatter, null, 2));
-  if (type.description) {
-    printer(lines, `${type.description}`);
-  }
-
-  printer(lines, `## ${config.SECTION1}\n`);
-  printer(lines, `{{% graphql-schema-${template} %}}\n`);
-
-  let fields = frontMatter.fields;
-  if (fields && fields.length) {
-    printer(lines, `## ${config.SECTION2}\n`);
-    printer(lines, `{{% graphql-field %}}\n`);
-  }
-
-  if (frontMatter.requireby && frontMatter.requireby.length) {
-    printer(lines, `## ${config.SECTION3}\n`);
-    printer(lines, `{{% graphql-require-by %}}\n`);
-  }
-}
-
-function saveFile(lines, path) {
-  fs.writeFile(`${config.LOCATION}/${path}.md`, lines, function(err) {
-    if (err) {
-      return console.log(err);
-    }
-  });
 }
 
 function escapeHtml(unsafe) {
@@ -176,6 +166,7 @@ function renderSchema(schema) {
       type.name !== schema.mutationType.name &&
       type.name !== schema.queryType.name
   );
+
   render(objects, types, 'objects', 'type');
 
   const enums = types.filter(type => type.kind === 'ENUM');
@@ -207,6 +198,12 @@ function renderSchema(schema) {
 
   const interfaces = types.filter(type => type.kind === 'INTERFACE');
   render(interfaces, types, 'interfaces', 'type', 'interface');
+
+  if (config.frontmatters.CHANGELOG && LOG.length) {
+    const lines = [];
+    renderChangelog(lines, config.frontmatters.CHANGELOG, 'changelog');
+    saveFile(lines.join('\n'), `changelog`);
+  }
 }
 
 function printer(lines, s) {
@@ -226,6 +223,80 @@ function render(objects, types, dirname, template, operator = template) {
       `${dirname}/_index`
     );
   }
+}
+
+function renderObject(lines, type, types, template, operator = template) {
+  let frontMatter = {
+    title: type.name,
+    description: '',
+    weight: 1,
+    fields: parseFields(type, false),
+    deprecatedFields: parseFields(type, true),
+    requireby: parseRequiredBy(types, type.name),
+    enumValues: type.enumValues,
+    operator: operator,
+    typename: type.name
+  };
+
+  lines.push(JSON.stringify(frontMatter, null, 2));
+  if (type.description) {
+    printer(lines, `${type.description}`);
+  }
+
+  printer(lines, `## ${config.SECTION1}\n`);
+  printer(lines, `{{% graphql-schema-${template} %}}\n`);
+
+  let fields = frontMatter.fields;
+  if (fields && fields.length) {
+    printer(lines, `## ${config.SECTION2}\n`);
+    printer(lines, `{{% graphql-field %}}\n`);
+  }
+
+  if (frontMatter.requireby && frontMatter.requireby.length) {
+    printer(lines, `## ${config.SECTION3}\n`);
+    printer(lines, `{{% graphql-require-by %}}\n`);
+  }
+}
+
+function renderChangelog(lines, frontMatter, template) {
+  frontMatter = JSON.parse(frontMatter);
+  const changelog = [];
+  const sortedLog = removeDuplicates(LOG, 'name');
+
+  const changelogDates = Array.from(new Set(sortedLog.map(cl => cl.date)));
+
+  for (const date of changelogDates) {
+    changelog.push({
+      date: date,
+      information: sortedLog.filter(sl => sl.date === date)
+    });
+  }
+  
+  frontMatter.log = changelog;
+  lines.push(JSON.stringify(frontMatter));
+
+  printer(lines, `## Deprecations`);
+  printer(lines, `{{% ${template} %}}\n`);
+}
+
+function removeDuplicates(myArr, prop) {
+  const arr = myArr.filter((obj, pos, arr) => {
+    return arr.map(mapObj => mapObj[prop]).indexOf(obj[prop]) === pos;
+  });
+
+  return arr.sort((a, b) => {
+    if (new Date(a.date) < new Date(b.date)) return 1;
+    if (new Date(b.date) < new Date(a.date)) return -1;
+    return 0;
+  });
+}
+
+function saveFile(lines, path) {
+  fs.writeFile(`${config.LOCATION}/${path}.md`, lines, function(err) {
+    if (err) {
+      return console.log(err);
+    }
+  });
 }
 
 function parseRequiredBy(types, name) {

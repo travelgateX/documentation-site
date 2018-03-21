@@ -19,7 +19,12 @@
       "description": "Indicates if you want use context, or not, by default is true.\n@deprecated(reason: \"deprecated from 2017-12-12. Redundant.\")",
       "isDeprecated": true,
       "args": null,
-      "deprecationReason": "deprecated from 2017-12-12. Redundant."
+      "deprecationReason": "deprecated from 2017-12-12. Redundant.",
+      "descriptionSplitted": {
+        "date": "2017-12-12",
+        "first": "Indicates if you want use context, or not, by default is true.\n@deprecated(reason: \"deprecated from",
+        "second": "Redundant.\")"
+      }
     },
     {
       "typeString": "String",
@@ -28,7 +33,12 @@
       "description": " This field is got only if the authorization header is of the type JWT. It is used for to change the user that\n has been set by default in the preload.\n@deprecated(reason: \"deprecated from 2018-03-19. Redundant.\")",
       "isDeprecated": true,
       "args": null,
-      "deprecationReason": "deprecated from 2018-03-19. Redundant."
+      "deprecationReason": "deprecated from 2018-03-19. Redundant.",
+      "descriptionSplitted": {
+        "date": "2018-03-19",
+        "first": " This field is got only if the authorization header is of the type JWT. It is used for to change the user that\n has been set by default in the preload.\n@deprecated(reason: \"deprecated from",
+        "second": "Redundant.\")"
+      }
     }
   ],
   "requireby": null,

@@ -57,6 +57,7 @@ var INDEXSCALARS = frontMatter("Scalars", null, "", 3, null);
 var INDEXINTERFACES = frontMatter("Interfaces", null, "", 4, null);
 var INDEXINPUTOBJECTS = frontMatter("Input objects", null, "", 5, null);
 var INDEXENUMS = frontMatter("Enums", null, "", 6, null);
+var CHANGELOG = frontMatter("Changelog", null, "", 7, null);
 
 var QUERY = frontMatter("Query", null, "", 1, null);
 var MUTATION = frontMatter("Mutation", null, "", 2, null);
@@ -81,7 +82,8 @@ module.exports = {
     INDEXINPUTOBJECTS,
     INDEXENUMS,
     QUERY,
-    MUTATION
+    MUTATION,
+    CHANGELOG
   },
   SECTION1,
   SECTION2,

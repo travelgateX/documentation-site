@@ -67,7 +67,13 @@
                 <!-- DEPRECATED INPUT (DOES NOT HAVE ARGS) -->
                 <li>
                         <span class="tab">
-                            <span class="meta">{{.name}}: : <a class="support type" href="{{.url}}">{{.typeString}}</a> <span class="text-secondary">// {{.deprecationReason}}</span></span>
+                            <span class="meta">{{.name}}: : <a class="support type" href="{{.url}}">{{.typeString}}</a> <span class="text-secondary">// 
+                                {{if .descriptionSplitted}}
+                                {{.descriptionSplitted.first}}
+                                <a href="/travelgateX/reference/changelog/#{{.descriptionSplitted.date}}">{{.descriptionSplitted.date}}</a>
+                                {{.descriptionSplitted.second}}
+                                {{end}}
+                            </span></span>
                         </span>
                     </li>
                 {{end}}
