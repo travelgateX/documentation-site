@@ -27,7 +27,8 @@
       "url": "/travelgatex/reference/objects/search",
       "description": "Available options for a given date and itinerary.",
       "isDeprecated": true,
-      "args": null
+      "args": null,
+      "deprecationReason": "deprecated from 2017-11-21. You can find it in query at HotelX"
     },
     {
       "typeString": "Quote!",
@@ -35,7 +36,8 @@
       "url": "/travelgatex/reference/objects/quote",
       "description": "Returns the total price and cancellation policies of the Option selected in the previous step (Search).",
       "isDeprecated": true,
-      "args": null
+      "args": null,
+      "deprecationReason": "deprecated from 2017-11-21. You can find it in query at HotelX"
     },
     {
       "typeString": "Booking",
@@ -43,7 +45,8 @@
       "url": "/travelgatex/reference/objects/booking",
       "description": "Returns detailed information about books.",
       "isDeprecated": true,
-      "args": null
+      "args": null,
+      "deprecationReason": "deprecated from 2017-11-21. You can find it in query at HotelX"
     },
     {
       "typeString": "DefaultSettings",
@@ -58,7 +61,8 @@
           "url": "/travelgatex/reference/scalars/string",
           "description": ""
         }
-      ]
+      ],
+      "deprecationReason": "deprecated from 2017-11-21. You can find it in query at Admin"
     },
     {
       "typeString": "Mapping!",
@@ -73,7 +77,8 @@
           "url": "/travelgatex/reference/scalars/string",
           "description": ""
         }
-      ]
+      ],
+      "deprecationReason": "deprecated from 2017-11-21. You can find it in query at Admin"
     }
   ],
   "requireby": null,

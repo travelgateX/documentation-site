@@ -24,6 +24,7 @@ function init() {
       fsex.mkdirpSync(config.LOCATION + "/interfaces");
       fsex.mkdirpSync(config.LOCATION + "/enums");
       fsex.mkdirpSync(config.LOCATION + "/scalars");
+      // fsex.mkdirpSync(config.LOCATION + "/changelog");
     } catch (e) {
       throw e;
     }

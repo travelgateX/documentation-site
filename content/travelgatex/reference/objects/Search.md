@@ -35,7 +35,8 @@
           "url": "/travelgatex/reference/inputobjects/filterinput",
           "description": ""
         }
-      ]
+      ],
+      "deprecationReason": "deprecated from 2017-11-21. You can find it in query at HotelX"
     }
   ],
   "requireby": [

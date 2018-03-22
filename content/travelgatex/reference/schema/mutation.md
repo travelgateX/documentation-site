@@ -40,7 +40,8 @@
           "url": "/travelgatex/reference/inputobjects/hotelsettingsinput",
           "description": ""
         }
-      ]
+      ],
+      "deprecationReason": "deprecated from 2017-11-21. You can find it in query at HotelX"
     },
     {
       "typeString": "HotelCancelPayload",
@@ -61,7 +62,8 @@
           "url": "/travelgatex/reference/inputobjects/hotelsettingsinput",
           "description": ""
         }
-      ]
+      ],
+      "deprecationReason": "deprecated from 2017-11-21. You can find it in query at HotelX"
     },
     {
       "typeString": "String!",
@@ -76,7 +78,8 @@
           "url": "/travelgatex/reference/scalars/string",
           "description": ""
         }
-      ]
+      ],
+      "deprecationReason": "deprecated from 2017-11-21. You can find it in query at Admin"
     },
     {
       "typeString": "DefaultSettings",
@@ -91,7 +94,8 @@
           "url": "/travelgatex/reference/inputobjects/defaultsettingsinput",
           "description": ""
         }
-      ]
+      ],
+      "deprecationReason": "deprecated from 2017-11-21. You can find it in query at Admin"
     },
     {
       "typeString": "DefaultSettings",
@@ -106,7 +110,8 @@
           "url": "/travelgatex/reference/inputobjects/defaultsettingsinput",
           "description": ""
         }
-      ]
+      ],
+      "deprecationReason": "deprecated from 2017-11-21. You can find it in query at Admin"
     },
     {
       "typeString": "Boolean!",
@@ -121,7 +126,8 @@
           "url": "/travelgatex/reference/scalars/string",
           "description": ""
         }
-      ]
+      ],
+      "deprecationReason": "deprecated from 2017-11-21. You can find it in query at Admin"
     }
   ],
   "requireby": null,
