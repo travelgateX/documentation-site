@@ -8,6 +8,11 @@
   border-right: 1px solid rgba(204, 213, 218, 0.6);
   z-index: 999;
 }
+@media (max-width: 991px) {
+  #navbar {
+    width: 26%;
+  }
+}
 
 #navbar .menu-nav{
   margin-top: 62px;
@@ -234,6 +239,18 @@ a:hover{
   left: 20%;
   width: 100%;
   z-index: 9;
+}
+
+@media (max-width: 991px) {
+  .iso-input-search {
+    left: 26%;
+  }
+}
+
+@media (max-width: 767px) {
+  .iso-input-search {
+    left: 0;
+  }
 }
 
 .iso-input-search .ico-label {
@@ -548,6 +565,19 @@ a.card-lv2:hover {
 @media (min-width: 1600px) and (max-width: 1709px) {
   .content-center {
     margin-left: 10%;
+  }
+}
+
+@media (max-width: 991px) {
+  .content-center {
+    margin-left: 21%;
+  }
+}
+
+@media (max-width: 767px) {
+  .content-center {
+    margin-top: 50px;
+    margin-left: 0;
   }
 }
 
