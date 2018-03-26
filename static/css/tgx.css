@@ -1,3 +1,4 @@
+
 #navbar{
   position: fixed;
   top:0;
@@ -228,14 +229,6 @@ a:hover{
   z-index: 10;
 }
 
-.mo-header .top-header .navbar {
-  padding: 9px 30px;
-}
-
-.bg-primary {
-  background: linear-gradient(135deg, #0754ae 0%, #0562ce 100%);
-}
-
 .iso-input-search {
   position: fixed;
   left: 20%;
@@ -267,6 +260,13 @@ a:hover{
   border-color: rgba(204, 213, 218, 0.6) !important;
 }
 
+.bg-primary{
+  background-color: #082da6 !important;
+}
+
+nav{
+  background-color: #082da6;
+}
 
 nav.menu-nav ul li a {
   display: inline-block;
@@ -1173,7 +1173,7 @@ table {
   margin: 50px auto;
 }
 
-.platform_getting_started .clients.fade-in, .buyers.fade-in{
+/*.platform_getting_started .clients.fade-in, .buyers.fade-in{
   animation-delay: 0.5s;
 }
 
@@ -1191,10 +1191,10 @@ table {
 
 .platform_getting_started .suppliers.fade-in, .sellers.fade-in{
   animation-delay: 4.5s;
-}
+}*/
 
 .platform_getting_started .clients-icon.fade-in{
-  animation-delay: 5.5s;
+  animation-delay: 0s;
 }
 
 .platform_getting_started #line1{
@@ -1202,7 +1202,7 @@ table {
   stroke-width: 3;
   stroke-dasharray: 670;
   stroke-dashoffset: -670;
-  animation: draw-a 4s 6s forwards;
+  animation: draw-a 4s 0.5s forwards;
 }
 
 .platform_getting_started #api_polygon{
@@ -1210,11 +1210,11 @@ table {
   stroke-width: 3;
   stroke-dasharray: 670;
   stroke-dashoffset: -670;
-  animation: draw-a 4s 6.5s forwards;
+  animation: draw-a 4s 1s forwards;
 }
 
 .platform_getting_started .api_text.fade-in{
-  animation-delay: 7s;
+  animation-delay: 1.5s;
 }
 
 .platform_getting_started #line2{
@@ -1222,7 +1222,7 @@ table {
   stroke-width: 3;
   stroke-dasharray: 670;
   stroke-dashoffset: -670;
-  animation: draw-a 4s 7s forwards;
+  animation: draw-a 4s 2s forwards;
 }
 
 .platform_getting_started #line3{
@@ -1230,12 +1230,12 @@ table {
   stroke-width: 3;
   stroke-dasharray: 670;
   stroke-dashoffset: -670;
-  animation: draw-a 4s 8s forwards;
+  animation: draw-a 4s 3s forwards;
 }
 
 .platform_getting_started .hotelx_icon.fade-in, .hotelx.fade-in{
   animation-duration: 2s;
-  animation-delay: 8s;
+  animation-delay: 3s;
 }
 
 .platform_getting_started #line4{
@@ -1243,12 +1243,12 @@ table {
   stroke-width: 3;
   stroke-dasharray: 670;
   stroke-dashoffset: -670;
-  animation: draw-a 4s 8.5s forwards;
+  animation: draw-a 4s 3.5s forwards;
 }
 
 .platform_getting_started .speed-icon.fade-in, .speed.fade-in{
   animation-duration: 2s;
-  animation-delay: 8.5s;
+  animation-delay: 3.5s;
 }
 
 .platform_getting_started #line5{
@@ -1256,16 +1256,16 @@ table {
   stroke-width: 3;
   stroke-dasharray: 670;
   stroke-dashoffset: -670;
-  animation: draw-a 4s 9.5s forwards;
+  animation: draw-a 4s 4.5s forwards;
 }
 
 .platform_getting_started .hotel_icon.fade-in, .hotel.fade-in{
-  animation-delay: 9.5s;
+  animation-delay: 4.5s;
 }
 
 .platform_getting_started .hotel_wholesalers.fade-in, .hotel_wholesalers_icon.fade-in{
   animation-duration: 2s;
-  animation-delay: 10s;
+  animation-delay: 5s;
 }
 
 .platform_getting_started #line6{
@@ -1273,11 +1273,11 @@ table {
   stroke-width: 3;
   stroke-dasharray: 670;
   stroke-dashoffset: -670;
-  animation: draw-a 4s 11s forwards;
+  animation: draw-a 4s 6s forwards;
 }
 
 .platform_getting_started .mappeax.fade-in, .mappeax_icon.fade-in{
-  animation-delay: 11s;
+  animation-delay: 6s;
 }
 
 .platform_getting_started #line7{
@@ -1285,7 +1285,7 @@ table {
   stroke-width: 3;
   stroke-dasharray: 670;
   stroke-dashoffset: -670;
-  animation: draw-a 4s 11.5s forwards;
+  animation: draw-a 4s 6.5s forwards;
 }
 
 .platform_getting_started .database_1{
@@ -1293,7 +1293,7 @@ table {
   stroke-width: 3;
   stroke-dasharray: 670;
   stroke-dashoffset: -670;
-  animation: draw-a 4s 12s forwards;
+  animation: draw-a 4s 7s forwards;
 }
 
 .platform_getting_started #line8{
@@ -1301,14 +1301,14 @@ table {
   stroke-width: 3;
   stroke-dasharray: 670;
   stroke-dashoffset: -670;
-  animation: draw-a 4s 12.5s forwards;
+  animation: draw-a 4s 7.5s forwards;
 }
 .platform_getting_started #line3-1{
   fill-opacity: 0;
   stroke-width: 3;
   stroke-dasharray: 670;
   stroke-dashoffset: -670;
-  animation: draw-b 1s 13.5s alternate;
+  animation: draw-b 1s 8.5s alternate;
 }
 
 .platform_getting_started #line9{
@@ -1316,7 +1316,7 @@ table {
   stroke-width: 3;
   stroke-dasharray: 670;
   stroke-dashoffset: -670;
-  animation: draw-a 4s 13.5s forwards;
+  animation: draw-a 4s 8.5s forwards;
 }
 
 .platform_getting_started .database_2{
@@ -1324,7 +1324,7 @@ table {
   stroke-width: 3;
   stroke-dasharray: 670;
   stroke-dashoffset: -670;
-  animation: draw-a 4s 14s forwards;
+  animation: draw-a 4s 9s forwards;
 }
 
 .platform_getting_started #line10{
@@ -1332,12 +1332,12 @@ table {
   stroke-width: 3;
   stroke-dasharray: 670;
   stroke-dashoffset: -670;
-  animation: draw-a 4s 14.5s forwards;
+  animation: draw-a 4s 9.5s forwards;
 }
 
 .platform_getting_started .statsx_icon.fade-in, .statsx.fade-in{
   animation-duration: 2s;
-  animation-delay: 14.5s;
+  animation-delay: 9.5s;
 }
 
 .platform_getting_started #line11{
@@ -1345,7 +1345,7 @@ table {
   stroke-width: 3;
   stroke-dasharray: 670;
   stroke-dashoffset: -670;
-  animation: draw-a 4s 15s forwards;
+  animation: draw-a 4s 10s forwards;
 }
 
 .platform_getting_started #line12{
@@ -1353,12 +1353,12 @@ table {
   stroke-width: 3;
   stroke-dasharray: 670;
   stroke-dashoffset: -670;
-  animation: draw-a 4s 15.5s forwards;
+  animation: draw-a 4s 10.5s forwards;
 }
 
 .platform_getting_started .insightsx.fade-in {
   animation-duration: 2s;
-  animation-delay: 15.7s;
+  animation-delay: 10.7s;
 }
 
 .platform_getting_started #line13{
@@ -1366,7 +1366,7 @@ table {
   stroke-width: 3;
   stroke-dasharray: 670;
   stroke-dashoffset: -670;
-  animation: draw-a 4s 16.5s forwards;
+  animation: draw-a 4s 11.5s forwards;
 }
 
 div.deprecated-button-container {
