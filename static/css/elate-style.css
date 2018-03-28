@@ -13,7 +13,7 @@
 * ======================================================= */
 
 body {
-  font-family: "Source Sans Pro", Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 300;
   font-size: 20px;
   line-height: 1.5;
@@ -40,7 +40,7 @@ p {
 
 h1, h2, h3, h4, h5, h6 {
   color: #182945;
-  font-family: "Source Sans Pro", Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   margin: 0 0 30px 0;
 }
@@ -202,7 +202,6 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   opacity: 1;
   top: 0;
-  margin-top: 8px;
 }
 @media screen and (max-width: 768px) {
   #fh5co-header {
@@ -236,10 +235,10 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 0;}
 
 #fh5co-header #navbar li a {
-  font-family: "Source Sans Pro", Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
   color: rgba(255, 255, 255, 0.5);
   position: relative;
-  font-size: 19px;
+  font-size: 15px !important;
   font-weight: 300;
 }
 #fh5co-header #navbar li:last-child {
@@ -317,20 +316,14 @@ h1, h2, h3, h4, h5, h6 {
   display: block;
   font-size: 30px;
   font-weight: 700;
-  padding: 14px 0;
   color: #fff
 }
+#fh5co-header #navbar {
+  margin-left: auto;
+}
 #fh5co-header.navbar-fixed-top {
-  margin-top: 0 !important; 
   position: fixed !important;
-  background-color: #0562ce;
-  /* IE9, iOS 3.2+ */
-  background-image: -webkit-gradient(linear, 0% 0%, 100% 100%, color-stop(0, #0754ae), color-stop(1, #0562ce));
-  /* Android 2.3 */
-  background-image: -webkit-repeating-linear-gradient(top left, #0754ae 0%, #0562ce 100%);
-  /* IE10+ */
-  background-image: repeating-linear-gradient(to bottom right, #0754ae 0%, #0562ce 100%);
-  background-image: -ms-repeating-linear-gradient(top left, #0754ae 0%,#0562ce 100%);
+  background-color: #082da6;
   -webkit-box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.1);
   -ms-box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.1);
@@ -374,6 +367,8 @@ h1, h2, h3, h4, h5, h6 {
   -moz-border-radius: 0px;
   -ms-border-radius: 0px;
   border-radius: 0px;
+  display: flex;
+  align-items: center;
 }
 @media screen and (max-width: 768px) {
   #fh5co-header .navbar-default {
@@ -416,17 +411,17 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 2;
   opacity: .92;
   -webkit-backface-visibility: hidden;
-  background-color: #0562ce;
+  background-color: #062381;
   /* IE9, iOS 3.2+ */
-  background-image: -webkit-gradient(linear, 0% 0%, 100% 100%, color-stop(0, #082DA6), color-stop(1, #2FD475));
+  background-image: -webkit-gradient(linear, 0% 0%, 100% 100%, color-stop(0, #062381), color-stop(1, #2FD475));
   /* Android 2.3 */
-  background-image: -webkit-repeating-linear-gradient(top left, #082DA6 0%, #2FD475 100%);
+  background-image: -webkit-repeating-linear-gradient(top left, #062381 0%,  #062381 50%, #2FD475 100%);
   /* IE10+ */
-  background-image: repeating-linear-gradient(to bottom right, #082DA6 0%, #2FD475 100%);
-  background-image: -ms-repeating-linear-gradient(top left, #082DA6 0%, #2FD475 100%);
+  background-image: repeating-linear-gradient(to bottom right, #062381 0%, #062381 50%, #2FD475 100%);
+  background-image: -ms-repeating-linear-gradient(top left, #062381 0%, #062381 50%, #2FD475 100%);
 }
 #fh5co-home, #fh5co-home .text-wrap {
-  height: 650px;
+  height: 780px;
 }
 #fh5co-home .text-wrap {
   display: table;
@@ -454,18 +449,19 @@ h1, h2, h3, h4, h5, h6 {
 #fh5co-home .text-inner h1 {
   font-size: 50px;
   color: white;
-  margin: 0 0 46px 0;
+  margin: 0 0 30px 0;
+  font-weight: 300;
 }
 #fh5co-home .text-inner h2 {
-  font-size: 28px;
-  line-height: 38px;
+  font-size: 26px;
+  line-height: 35px;
   font-weight: 300;
   color: #fff;
   margin: 0;
 }
 
 #fh5co-home .text-inner h2 p strong{
-  font-weight: 500;
+  font-weight: 400;
 }
 
 #fh5co-home .text-inner h2 p:first-child{
@@ -475,7 +471,7 @@ h1, h2, h3, h4, h5, h6 {
 #fh5co-intro {
   position: relative;
   bottom: 0;
-  margin-top: -110px;
+  margin-top: -60px;
   z-index: 10;
 }
 @media screen and (max-width: 768px) {
@@ -520,7 +516,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #fh5co-intro .fh5co-block > .fh5co-text .fh5co-intro-icon {
   font-size: 50px;
-  color: #0562CE;
+  color: #1D6986;
   margin-bottom: 30px;
   display: block;
 }
@@ -529,9 +525,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
 }
 
-#fh5co-intro .fh5co-block:hover .btn:hover, #fh5co-intro .fh5co-block:focus .btn:hover {
-  background: #22a459 !important;
-}
+
 
 #fh5co-intro .fh5co-block:hover{
   -webkit-box-shadow: 7px 14px 42px 3px rgba(0, 0, 0, 0.15);
@@ -633,7 +627,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #fh5co-welcome .wrap-inner p{
-  font-size: 18px;
+  font-size: 16px;
 }
 
 #fh5co-welcome .overlay{
@@ -756,7 +750,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 #fh5co-counters .fh5co-counter .fh5co-counter-icon {
   font-size: 40px;
-  color: #0562CE;
+  color: #1D6986;
 }
 #fh5co-counters .fh5co-counter .fh5co-counter-number {
   font-size: 70px;
@@ -764,7 +758,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 #fh5co-counters .fh5co-counter .fh5co-counter-label {
   color: #182945;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 #fh5co-testimonials{
@@ -778,16 +772,16 @@ h1, h2, h3, h4, h5, h6 {
   left: 0;
   right: 0;
   z-index: 0;
-  opacity: .85;
+  opacity: .92;
   -webkit-backface-visibility: hidden;
-  background-color: #0562ce;
+  background-color: #062381;
   /* IE9, iOS 3.2+ */
-  background-image: -webkit-gradient(linear, 0% 0%, 100% 100%, color-stop(0, #082DA6), color-stop(1, #2FD475));
+  background-image: -webkit-gradient(linear, 0% 0%, 100% 100%, color-stop(0, #062381), color-stop(1, #2FD475));
   /* Android 2.3 */
-  background-image: -webkit-repeating-linear-gradient(top left, #082DA6 0%, #2FD475 100%);
+  background-image: -webkit-repeating-linear-gradient(top left, #062381 0%,  #062381 50%, #2FD475 100%);
   /* IE10+ */
-  background-image: repeating-linear-gradient(to bottom right, #082DA6 0%, #2FD475 100%);
-  background-image: -ms-repeating-linear-gradient(top left, #082DA6 0%, #2FD475 100%);
+  background-image: repeating-linear-gradient(to bottom right, #062381 0%, #062381 50%, #2FD475 100%);
+  background-image: -ms-repeating-linear-gradient(top left, #062381 0%, #062381 50%, #2FD475 100%);
 }
 
 #fh5co-testimonials .wrap-inner{
@@ -804,7 +798,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #fh5co-testimonials .section-heading h3 {
   color: #fff;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 #fh5co-testimonials .section-heading h2:after {
@@ -897,7 +891,7 @@ h1, h2, h3, h4, h5, h6 {
 #fh5co-work .section-heading h3 {
   color: #182945;
   margin-bottom: 0;
-  font-size: 18px;
+  font-size: 16px;
 }
 #fh5co-work .section-heading h3 strong{
   font-weight: 500;
@@ -1054,7 +1048,6 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 50px;
   font-weight: 300;
   color: #182945;
-  text-transform: uppercase;
   position: relative;
   display: block;
   padding-bottom: 20px;
@@ -1242,14 +1235,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #footer .top-footer{
   padding-top: 35px;
-  background-color: #0562ce;
-  /* IE9, iOS 3.2+ */
-  background-image: -webkit-gradient(linear, 0% 0%, 100% 100%, color-stop(0, #0754ae), color-stop(1, #0562ce));
-  /* Android 2.3 */
-  background-image: -webkit-repeating-linear-gradient(top left, #0754ae 0%, #0562ce 100%);
-  /* IE10+ */
-  background-image: repeating-linear-gradient(to bottom right, #0754ae 0%, #0562ce 100%);
-  background-image: -ms-repeating-linear-gradient(top left, #0754ae 0%,#0562ce 100%);
+  background-color: #082da6;
 }
 
 #footer .top-footer .tit{
@@ -1292,20 +1278,16 @@ h1, h2, h3, h4, h5, h6 {
   transition: 0.3s;
 }
 .btn.btn-primary {
-  background: #2fd475;
+  background:#0562CE;
   color: #fff;
   border: none !important;
   border: 2px solid transparent !important;
 }
 .btn.btn-primary:hover, .btn.btn-primary:active, .btn.btn-primary:focus {
   box-shadow: none;
-  background: #2fd475;
+  background: #044a9c !important;
 }
-.btn:hover, .btn:active, .btn:focus {
-  background: #22a459 !important;
-  color: #fff;
-  outline: none !important;
-}
+
 .btn.btn-default:hover, .btn.btn-default:focus, .btn.btn-default:active {
   border-color: transparent;
 }
@@ -1461,4 +1443,139 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
+
+
+
+
+/* Make keyframes that tell the start state and the end state of our object */
+
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+.fade-in {
+  opacity:0;  /* make things invisible upon start */
+  -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+  -moz-animation:fadeIn ease-in 1;
+  animation:fadeIn ease-in 1;
+
+  -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+  -moz-animation-fill-mode:forwards;
+  animation-fill-mode:forwards;
+
+  -webkit-animation-duration:1s;
+  -moz-animation-duration:1s;
+  animation-duration:1s;
+} 
+
+
+/* Make keyframes that generate the drawing effect */
+
+@keyframes drawing-graphic-home {
+  from {
+    stroke-dashoffset: 925;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+
+/*.travelgatex_platform #Fill-110{
+  fill-opacity: 1;
+  stroke-width: 2;
+  stroke-dasharray: 670;
+  stroke-dashoffset: -670;
+  animation: draw-a 7s 0s forwards;
+}
+*/
+/*.travelgatex_platform #Rectangle-path{
+  fill-opacity: 1;
+  stroke-width: 2;
+  stroke-dasharray: 670;
+  stroke-dashoffset: -670;
+  animation: draw-aing-graphic-home 7s 0s forwards;
+}*/
+
+/*.travelgatex_platform .device{
+  fill-opacity: 0;
+  stroke-width: 3;
+  stroke-dasharray: 670;
+  stroke-dashoffset: -670;
+  animation: draw-a 4s 0s forwards;
+}
+.travelgatex_platform #Fill-110{
+  fill-opacity: 0;
+  stroke-width: 2;
+  stroke-dasharray: 670;
+  stroke-dashoffset: -670;
+  animation: drawing-graphic-home 4s 0s forwards;
+}
+*/
+
+.travelgatex_platform{
+  width:70%;
+}
+
+.travelgatex_platform #line1{
+  fill-opacity: 0;
+  stroke-width: 2;
+  stroke-dasharray: 670;
+  stroke-dashoffset: -670;
+  animation-name: drawing-graphic-home;
+  animation-fill-mode: forwards;
+  animation-duration: 6s;
+  animation-delay: 0s;
+}
+
+.travelgatex_platform #line2{
+  fill-opacity: 0;
+  stroke-width: 2;
+  stroke-dasharray: 670;
+  stroke-dashoffset: -670;
+  animation: drawing-graphic-home 8s 1s forwards;
+}
+
+.travelgatex_platform #line3{
+  fill-opacity: 0;
+  stroke-width: 2;
+  stroke-dasharray: 670;
+  stroke-dashoffset: -670;
+  animation: drawing-graphic-home 8s 2s forwards;
+}
+
+.travelgatex_platform #line4{
+  fill-opacity: 0;
+  stroke-width: 2;
+  stroke-dasharray: 925;
+  stroke-dashoffset: -925;
+  animation: drawing-graphic-home 4s 4s forwards;
+}
+
+.travelgatex_platform .device.fade-in{
+  animation-delay: 0.5s;
+}
+
+.travelgatex_platform #graphql.fade-in{
+  animation-delay: 1.5s;
+}
+
+.travelgatex_platform .cloud.fade-in{
+  animation-delay: 1s;
+}
+
+.travelgatex_platform .travelgatex.fade-in{
+  animation-delay: 2.8s;
+}
+
+.travelgatex_platform .platform.fade-in{
+  animation-delay: 2.8s;
+}
+
+.travelgatex_platform .api.fade-in{
+  animation-delay: 4s;
+}
+
+
 /*# sourceMappingURL=style.css.map */
+
