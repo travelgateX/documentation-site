@@ -206,12 +206,14 @@ h1, h2, h3, h4, h5, h6 {
 @media screen and (max-width: 768px) {
   #fh5co-header {
     margin-top: 0;
-    background: #fff;
+    background: #082da6;
+    padding: 8px;
     -webkit-box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.1);
     -moz-box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.1);
     -ms-box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.1);
     box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.1);
   }
+
   #fh5co-header .navbar-brand {
     color: #52d3aa !important;
   }
@@ -474,7 +476,21 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: -60px;
   z-index: 10;
 }
+@media screen and (max-width: 1199px) {
+  svg{
+    width: 100% !important;
+  }
+}
 @media screen and (max-width: 768px) {
+  svg{
+    width: 94% !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #fh5co-home .text-inner h1{
+    margin-top: 45px;
+  }
   #fh5co-intro {
     padding-bottom: 3em;
   }
@@ -1178,7 +1194,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .fh5co-nav-toggle {
   position: absolute;
-  top: 2px;
+  top: -7px;
   right: 0px;
   z-index: 21;
   padding: 6px 0 0 0;
@@ -1190,6 +1206,10 @@ h1, h2, h3, h4, h5, h6 {
   border-bottom: none !important;
 }
 @media screen and (max-width: 768px) {
+  .navbar-collapse{
+    border-top: none;
+    box-shadow: none;
+  }
   .fh5co-nav-toggle {
     display: block;
   }
