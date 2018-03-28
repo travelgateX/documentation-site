@@ -1203,26 +1203,6 @@ table {
   margin: 50px auto;
 }
 
-/*.platform_getting_started .clients.fade-in, .buyers.fade-in{
-  animation-delay: 0.5s;
-}
-
-.platform_getting_started .dashed_line_1.fade-in{
-  animation-delay: 1.5s;
-}
-
-.platform_getting_started .travelgatex.fade-in{
-  animation-delay: 2.5s;
-}
-
-.platform_getting_started .dashed_line_2.fade-in{
-  animation-delay: 3.5s;
-}
-
-.platform_getting_started .suppliers.fade-in, .sellers.fade-in{
-  animation-delay: 4.5s;
-}*/
-
 .platform_getting_started .clients-icon.fade-in{
   animation-delay: 0s;
 }
