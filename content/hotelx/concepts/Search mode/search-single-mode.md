@@ -9,8 +9,24 @@ alwaysopen = false
 On this page you will learn about **Transactional Booking Flow** to Search, quote and confirm a reservation. You will also see the difference between the **Search Single Mode** VS **Search Multi Mode**.
 
 ## Search Single Mode
-[Search](#search), [Quote](#quote) and [Book](#book) transactions must be executed sequentally in order to book hotel rooms in a Seller. Performs an hotel availability search over 1 or more [Seller accesses](/admin/resources/common-resources/#accesses)
 
+This mode is used when the client only wants to get options from a single access, for this, the client must indicate in the request the code of the access that them want to use. In the request have to use the access filter, you can find a sample [here](https://graphqlbin.com/n5nXhX):
+
+```
+{
+
+  "filter": {
+
+    "access": {
+
+      "includes": ["yourAccess"]
+
+    }
+
+  }
+
+}
+```
 <svg class="search_single_mode" width="504px" height="269px" viewBox="59 83 504 269" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <defs>
         <linearGradient x1="100%" y1="50%" x2="0%" y2="50%" id="linearGradient-1">
@@ -99,6 +115,10 @@ On this page you will learn about **Transactional Booking Flow** to Search, quot
 </svg>
 
 ## Search Multi Mode
+
+If you don’t have any filter in the request and you have permissions for multimode, the search is multimode. By default, the request is for all the accesses that you have configured in the product, if you want to apply some filter, you have to use the filter and to indicate the rules that you want. Is important to know that you only can use includes or excludes in the same request, but never both in the same request.
+
+
 <svg class="search_multi_mode" width="617px" height="486px" viewBox="75 50 617 486" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
   <defs>
     <linearGradient x1="2.25097656%" y1="49.999848%" x2="100%" y2="49.999848%" id="linearGradient-1">
@@ -192,3 +212,41 @@ On this page you will learn about **Transactional Booking Flow** to Search, quot
     </g>
   </g>
 </svg>
+
+
+
+### Includes Sample
+
+```
+{
+
+  "filter": {
+
+    "access": {
+
+      "includes": ["yourAccess","yourAccess2"]
+
+    }
+
+  }
+
+}
+```
+
+### Excludes Sample
+
+```
+{
+
+  "filter": {
+
+    "access": {
+
+      "excludes": ["yourAccess"]
+
+    }
+
+  }
+
+}
+```
