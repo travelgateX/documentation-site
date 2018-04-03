@@ -17,7 +17,7 @@
     },
     {
       "name": "AuditData",
-      "description": "Data sent & received in the supplierâ€™s native format.",
+      "description": "Data sent & received in the supplier’s native format.",
       "url": "/travelgatex/reference/objects/auditdata"
     },
     {

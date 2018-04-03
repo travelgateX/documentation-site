@@ -31,7 +31,7 @@
     },
     {
       "name": "ON_REQUEST",
-      "description": "The reservation was completed but the product is still not available, so the reservation goes into a waiting list. \nIt is the clientâ€™s responsibility to check if the booking is OK",
+      "description": "The reservation was completed but the product is still not available, so the reservation goes into a waiting list. \nIt is the client’s responsibility to check if the booking is OK",
       "isDeprecated": false,
       "deprecationReason": null
     },
@@ -43,7 +43,7 @@
     },
     {
       "name": "UNKNOWN",
-      "description": "The reservation was completed but due to a supplier error or a timeout, the reservation status is unknown. \nIt is the clientâ€™s responsibility to check if the booking is OK",
+      "description": "The reservation was completed but due to a supplier error or a timeout, the reservation status is unknown. \nIt is the client’s responsibility to check if the booking is OK",
       "isDeprecated": false,
       "deprecationReason": null
     }

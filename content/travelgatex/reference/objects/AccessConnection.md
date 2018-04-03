@@ -31,11 +31,6 @@
       "name": "SupplierData",
       "description": "",
       "url": "/travelgatex/reference/objects/supplierdata"
-    },
-    {
-      "name": "ClientData",
-      "description": "",
-      "url": "/travelgatex/reference/objects/clientdata"
     }
   ],
   "enumValues": null,

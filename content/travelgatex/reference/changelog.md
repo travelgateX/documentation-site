@@ -1,0 +1,9 @@
++++
+"title":"Changelog"
+"pagetitle":null
+"description":""
+"weight":7
+"alwaysopen":false
+"log":[{"date":"2018-03-19","information":[{"info":" This field is got only if the authorization header is of the type JWT. It is used for to change the user that\n has been set by default in the preload.\n@deprecated(reason: \"deprecated from 2018-03-19. Redundant.\")","date":"2018-03-19","name":"connectUser"}]},{"date":"2017-12-12","information":[{"info":"Indicates if you want use context, or not, by default is true.\n@deprecated(reason: \"deprecated from 2017-12-12. Redundant.\")","date":"2017-12-12","name":"useContext"}]}]
+## Deprecations
+{{% log %}}
