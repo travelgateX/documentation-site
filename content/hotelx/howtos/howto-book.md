@@ -21,7 +21,9 @@ In HotelX we have differents levels to configure the settings for a request. Wit
 |Currency|Indicates the currency to send to the suppliers.|
 |Nationality|Indicates the nationality to send to the suppliers.|
 |Market|Indicates the market to send to the suppliers.|
-|Business Rules|This rules are used to send directly to the integration, and affected to the supplier response. * Options Quota: number of options returned via integration. * Type: Choose priority of product |
+|Business Rules|This rules are used to send directly to the integration, and affected to the supplier response.<br>* Options Quota: number of options returned via integration.<br>* Type: Choose priority of product |
+
+
 
 How we have said some lines before, we have three ways to indicated this settings.
 
