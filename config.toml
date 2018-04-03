@@ -68,9 +68,9 @@ discourseUrl = "http://community.travelgatex.com/"
     brand = '<img src="images/xtg_logo.svg"/>'
     home = "Home"
     welcome = "About us"
-    work = "Our APIs"
+    #work = "Product"
     testimonials = "Testimonials"
-    services = "Services"
+    services = "Architecture"
     about = "About"
     contact = "Contact"
 
@@ -87,7 +87,7 @@ discourseUrl = "http://community.travelgatex.com/"
     [[menu.postpend]]
      url = "http://discourse.travelgatex.com/"
      name = "Community"
-     weight = 10
+     weight = 11
 
   # Hero section
   [params.hero]
@@ -142,49 +142,84 @@ discourseUrl = "http://community.travelgatex.com/"
   [params.welcome]
     enable = true
     title = "Connecting the dots"
-    description = "At XTG, we’ve integrated 100s of travel APIs. This is why we’ve decided to build the first travel API focused on Developer eXperience. Welcome to ConnectX, the world’s most advanced and disruptive GraphQL based Travel API."
+    description = "At TravelgateX, we’ve integrated 100s of travel APIs. This is why we’ve decided to build the first travel API focused on Developer eXperience. Welcome to ConnectX, the world’s most advanced and disruptive GraphQL based Travel API."
 
   # Work section
   [params.work]
     enable = true
-    title = "Our APIs"
-    description = "We're true believers in the <strong>API first</strong> philosophy. Anything you can do on any of our sites and tools you can also do using the GraphQL API."
+    title = "Our Products"
+    description = "We’re true believers in the API first philosophy. Anything you can do on any of our sites and tools you can also do using the GraphQL API."
     footertext = 'APIs Made With &#9825; For Developers &amp; By Developers'
 
     [[params.work.row]]
-      url = "hotelx"
-      img = "work_1.jpg"
-      alt = "Image2"
-      title = "Hotel Search & Book"
-      subtitle = "Search & Book on more than 400 hotel suppliers, seamlessly!"
+      url = "https://www.travelgatex.com/products/hotelx"
+      img = "hotelx.svg"
+      alt = "HotelX"
+      title = "HotelX"
+      subtitle = "A single XML Integration to connect with more than 600 hotel product providers."
 
     [[params.work.row]]
-      url = "flightx"
-      img = "work_2.jpg"
-      alt = "Image2"
-      title = "Flight Search & Book"
-      subtitle = "NDC certified search & book API with many traditional, low cost and NDC carriers + GDS."
+      url = "https://www.travelgatex.com/products/channelx"
+      img = "channelx.svg"
+      alt = "channelX"
+      title = "Channelx"
+      subtitle = "With a single connection to our API you will receive the full portfolio of all the channels."
 
     [[params.work.row]]
-      url = "stats"
-      img = "work_3.jpg"
-      alt = "Image3"
-      title = "Stats"
-      subtitle = "Real-time information about all your requests: totals, response times, status and more."
+      url = "https://www.travelgatex.com/products/flightsx"
+      img = "flightx.svg"
+      alt = "flightx"
+      title = "FlightsxX"
+      subtitle = "A single XML Integration to connect with more than 30 flight providers."
 
     [[params.work.row]]
-      url = "insights"
-      img = "work_4.jpg"
-      alt = "Image4"
+      url = "https://www.travelgatex.com/products/mappea"
+      img = "mappea.svg"
+      alt = "Mappea"
+      title = "Mappea"
+      subtitle = "Collaborative Assisted Mapping tool for hotels"
+
+    [[params.work.row]]
+      url = "https://www.travelgatex.com/products/inventory"
+      img = "inventory.svg"
+      alt = "Inventory"
+      title = "Inventory"
+      subtitle = "Inventory is the right solution by XTG for those clients willing to connect their offline product."
+
+
+    [[params.work.row]]
+      url = "https://www.travelgatex.com/products/speed"
+      img = "speed.svg"
+      alt = "Speed"
+      title = "Speed"
+      subtitle = "Speed ​​is the smart cache solution designed entirely by XTG that manages to reduce the number of requests by up to 80%"
+
+
+    [[params.work.row]]
+      url = "https://www.travelgatex.com/products/insights"
+      img = "insights.svg"
+      alt = "Insights"
       title = "Insights"
-      subtitle = "Get detailed Business Intelligence data such as ratios per hotel, country, market and many more."
+      subtitle = "All the data stored in our system is available to you through our Business Intelligence solution"
+
 
     [[params.work.row]]
-      url = "mappea"
-      img = "work_5.jpg"
-      alt = "Image5"
-      title = "Mappea API"
-      subtitle = "Map and de-dupe hotels using our unique collaborative mapping API. More than 19 Million hotels."
+      url = "https://www.travelgatex.com/products/sistribution"
+      img = "distribution.svg"
+      alt = "Distribution"
+      title = "Distribution"
+      subtitle = "We help you grow"
+
+
+    [[params.work.row]]
+      url = "https://www.travelgatex.com/products/stats"
+      img = "stats.svg"
+      alt = "Stats"
+      title = "Stats"
+      subtitle = "The Dashboard is the big data you need to evaluate your suppliers on result, response time and errors."
+
+
+
 
   # Testimonials section
   [params.testimonials]
@@ -215,28 +250,28 @@ discourseUrl = "http://community.travelgatex.com/"
 
   # Services section
   [params.services]
-    enable = false
-    title = "Services"
+    enable = true
+    title = "Architecture"
     description = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts."
 
-    [[params.services.item]]
-      title = "Brand &amp; Strategy"
-      description = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean"
-      icon = "icon-anchor"
-
-    [[params.services.item]]
-      title = "Web &amp; Interface"
-      description = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean"
-      icon = "icon-layers2"
-    [[params.services.item]]
-      title = "Photo &amp; Video"
-      description = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean"
-      icon = "icon-video2"
-
-      [[params.services.item]]
-      title = "CMS &amp; eCommerce"
-      description = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean"
-      icon = "icon-monitor"
+    # [[params.services.item]]
+    #   title = "Brand &amp; Strategy"
+    #   description = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean"
+    #   icon = "icon-anchor"
+    #
+    # [[params.services.item]]
+    #   title = "Web &amp; Interface"
+    #   description = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean"
+    #   icon = "icon-layers2"
+    # [[params.services.item]]
+    #   title = "Photo &amp; Video"
+    #   description = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean"
+    #   icon = "icon-video2"
+    #
+    #   [[params.services.item]]
+    #   title = "CMS &amp; eCommerce"
+    #   description = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean"
+    #   icon = "icon-monitor"
 
   # About section
   [params.about]
