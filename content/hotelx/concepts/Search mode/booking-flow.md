@@ -142,56 +142,85 @@ alwaysopen = false
 
 
 ## Search
-Performs an hotel availability search over 1 or more [Seller accesses](/admin/resources/common-resources/#accesses)
 
-Depending Seller, search operations implitiy use supplier's cache.
+Performs a hotel availability search over 1 or more [Seller accesses](http://docs.travelgatex.com/admin/resources/common-resources/#accesses). Depending Seller, search operations implicit use supplier’s cache.
 
 ### Operation
-```json
+
+```
 {
-  "query": {
-    "search": {
-      "hotel": {
-      }
-    }
-  }
+
+  "query": {
+
+    "hotelX": {
+
+      "search": {
+
+      }
+
+    }
+
+  }
+
 }
 ```
 
 ### PlayGround Samples
-* [search](https://graphqlbin.com/JYRtB)
+
+* [search](https://www.graphqlbin.com/2kzRfE) 
 
 ## Quote
+
 Performs an hotel quote over an option returned in Search Response.
 
 ### Operation
-```json
+
+```
 {
-  "query": {
-    "quote": {
-      "hotel": {
-      }
-    }
-  }
+
+  "query": {
+
+    "hotelX": {
+
+      "quote": {
+
+      }
+
+    }
+
+  }
+
 }
 ```
 
 ### PlayGround Samples
-* [quote](https://graphqlbin.com/JYRtB)
 
+* [quote](https://graphqlbin.com/31B2HR) 
 
 ## Book
-Performs a book or reservation over an option returned in Quote Response
+
+Performs a book or reservation over an option returned in Quote Response.
 
 ### Operation
-```json
+
+```
 {
-  "mutation": {
-    "hotelBook": {
-    }
-  }
+
+  "mutation": {
+
+    "hotelX": {
+
+      "book": {
+
+      }
+
+    }
+
+  }
+
 }
 ```
 
 ### PlayGround Samples
-* [hotelBook](https://graphqlbin.com/JYRtB)
+
+* [book](https://graphqlbin.com/1wxWIp) 
