@@ -22,7 +22,7 @@
       "typeString": "AuditData",
       "name": "auditData",
       "url": "/travelgatex/reference/objects/auditdata",
-      "description": "Data sent & received in the supplierâ€™s original format.",
+      "description": "Data sent & received in the supplier’s original format.",
       "isDeprecated": false,
       "args": null
     },
