@@ -1,55 +1,57 @@
 +++
 title = "Aggregation"
-pagetitle = ""
+pagetitle = "Aggregation"
 description = "Aggregation plugins"
 icon = "fa-compress"
 weight = 3
 alwaysopen = false
 +++
 
-**Aggregation plugins** extends [HotelX](/hotelx/) allowing filtering `Supplier` options and respones using different business rules.
+**Aggregation plugins** extends [HotelX](/hotelx/) allowing filtering `Supplier` options and responses using different business rules.
 
 ### KeyFilter
 
-Filters `Supplier` options based on _field keys_ applying a selector _function_ over _field values_. 
+Filters `Supplier` options based on _field keys_ applying a selector _function_ over _field values_.
 
 It's based on [SQL Aggregate Functions](https://www.postgresql.org/docs/current/static/functions-aggregate.html) but filtering, not aggregating.
 
 * **_Field Keys_** as a combination of:
+  * SupplierCode 
+  * HotelCode
+  * BoardCode
+  * RoomCode
+  * Refundable
+  * Market
+  * PaymentType
+  * Promotion
+  * Supplement
+  * Surcharges
+  * Rate rules 
 
-    * SupplierCode
-    * HotelCode
-    * BoardCode
-    * RoomCode
-    * Refundable
 * **_Functions_**:
-    * Min
-    * Max
+  * Min
+  * Max
+
 * **_Field Values_**:
-    * PriceNet
-    * PriceGross
-
-### Configuration
-
-```json
-{
-}
-```
+  * PriceNet
+  * PriceGross
 
 ### Parameters
 
-#### keys: [String!]
-
-Values must be a valid Field Key.
-
-#### function: String!
-
-Value must be a valid Function.
-
-#### value: String!
-
-Value must be a valid Field Value.
+|key|value type|condition|description|
+|---|----|----|---|
+|primaryKey|string|mandatory|is the criteria used to aggregate, the value is a set of criteria separated by commas, the possible values are:<br>example: “hotel,supplier,room”|
+|function|string|optional|possible values: “min” and “max”, min is the default value.<br>The chosen option will be the cheapest when min function, and the expensivest when max function|
+|priceField|string|optional|possible values: “net” or “gross”, net is the default value.<br>The function will operate over the field determined by this parameter|
+|currency|string|optional|exchanges a price’s currency before applicating the filter. In order to make use of this functionality, the same setup in the CurrencyX plugin is needed.|
+|size|int|optional|number of options in each aggregation group, the default value is 1|
 
 
- 
- 
+### Processor (Pre Step and Post Step)
+
+Processor plugins extends [HotelX](/hotelx/) allowing multiple operation types. It can modify request and response messages, allowing a full range of operations:
+
+* Split arrays
+* Join arrays 
+* Modify object values 
+* Add or remove object instances 
