@@ -13,7 +13,7 @@ _Plugins_ are custom code, executed in [HotelX](/hotelx/) servers, that add or m
 
 ### Flows
 
-[HotelX](/hotelx/) _query_ or _mutation_ determine what _flow_ is executed. _Plugins_ can be executed in different _flows_: 
+[HotelX](/hotelx/) _query_ or _mutation_ determine what _flow_ is executed. _Plugins_ can be executed in different _flows_:
 
 * [search](/hotelx/concepts/booking-flow#search)
 * [quote](/hotelx/concepts/booking-flow#quote)
@@ -25,7 +25,7 @@ _Plugins_ are custom code, executed in [HotelX](/hotelx/) servers, that add or m
 _Step_ is the minium container where _plugins_ are executed **sequentially**.
 
 | Step | When is executed |
-| --- | --- | 
+| --- | --- |
 | _Request_ | _After_ `Buyer` requests message to [HotelX](/hotelx/).|  
 | _Request Access_ | _Before_ send request to `Supplier` using `Access` and _after_ `Accesses` has been calculated.|
 | _Response Option_ |_After_ `Supplier` responds  message. For every option returned.|
@@ -35,13 +35,14 @@ _Step_ is the minium container where _plugins_ are executed **sequentially**.
 
 ### Plugin Types
 
-Plugin types supported by [HotelX](/hotelx/): 
+Plugin types supported by [HotelX](/hotelx/):
 
 * [Pre Step](../processor): First execution on every _step_.
 * [Hotel Map](../mapping): Hotel mapping codes.
 * [Board Map](../mapping): Board mapping codes.
 * [Room Map](../mapping): Room mapping codes.
-* [Currency Conversion](../converter): Currency rate conversion. 
+* [Currency Conversion](../converter): Currency rate conversion.
+* [Net Price](../net-price): Calculate the net price. 
 * [Markup](../markup): Markups to `supplier` price.
 * [Aggregation](../aggregation): Aggregate multiple `supplier` options.
 * [Post Step](../processor): Last execution on every _step_.
@@ -54,7 +55,7 @@ Once _message_ enters on [HotelX](/hotelx/) it flows over different _flows_ and 
 _Context_ allows:
 
 * Read objects involved in current _query_ and/or _mutations_.
-* Read objects available in all [HotelX](/hotelx/) operations. 
+* Read objects available in all [HotelX](/hotelx/) operations.
 
 With _context_ information developers can personalize _plugin_ features, more information about plugin development can be found [here](../development).
 
@@ -67,8 +68,5 @@ With _context_ information developers can personalize _plugin_ features, more in
 | --- | --- | --- | --- | --- |
 | _Request_ | [Pre Step](../processor)<br>[Post Step](../processor)|[Pre Step](../processor)<br>[Post Step](../processor)|[Pre Step](../processor)<br>[Post Step](../processor)|[Pre Step](../processor) <br>[Post Step](../processor)|[Post Step](../processor)|[Pre Step](../processor) <br>[Post Step](../processor)|
 | _Request Access_ | [Pre Step](../processor)<br>[Hotel Map](../mapping)<br>[Post Step](../processor) |[Pre Step](../processor) <br>[Post Step](../processor)|[Pre Step](../processor) <br>[Post Step](../processor)|[Pre Step](../processor) <br>[Post Step](../processor)|
-| _Response Option_ |[Pre Step](../processor)<br>[Hotel Map](../mapping)<br>[Board Map](../mapping)<br>[Room Map](../mapping)<br>[Currency Conversion](../currency-conversion)<br>[Markup](../markup)<br>[Aggregation](../aggregation)<br>[Post Step](../processor)| |  | |
-| _Response Access_ |[Pre Step](../processor)<br>[Post Step](../processor)|[Pre Step](../processor)<br>[Hotel Map](../mapping)<br>[Board Map](../mapping)<br>[Room Map](../mapping)<br>[Currency Conversion](../currency-conversion)<br>[Markup](../markup)<br>[Post Step](../processor)|[Pre Step](../processor)<br>[Hotel Map](../mapping)<br>[Board Map](../mapping)<br>[Room Map](../mapping)<br>[Currency Conversion](../currency-conversion)<br>[Post Step](../processor)| [Pre Step](../processor)<br>[Hotel Map](../mapping)<br>[Board Map](../mapping)<br>[Room Map](../mapping)<br>[Currency Conversion](../currency-conversion)<br>[Post Step](../processor)|
+| _Response Option_ |[Pre Step](../processor)<br>[Hotel Map](../mapping)<br>[Board Map](../mapping)<br>[Room Map](../mapping)<br>[Rate Map](#../rate-map)<br>[Currency Conversion](../currency-conversion)<br>[Net Price](../net-price)<br>[Markup](../markup)<br>[Aggregation](../aggregation)<br>[Post Step](../processor)| [Pre Step](../processor)<br>[Hotel Map](../mapping)<br>[Board Map](../mapping)<br>[Room Map](../mapping)<br>[Currency Conversion](../currency-conversion)<br>[Net Price](../net-price)<br>[Markup](../markup)<br>[Post Step](../processor) |[Pre Step](../processor)<br>[Hotel Map](../mapping)<br>[Board Map](../mapping)<br>[Room Map](../mapping)<br>[Currency Conversion](../currency-conversion)<br>[Net Price](../net-price)<br>[Markup](../markup)<br>[Post Step](../processor) |[Pre Step](../processor)<br>[Hotel Map](../mapping)<br>[Board Map](../mapping)<br>[Room Map](../mapping)<br>[Currency Conversion](../currency-conversion)<br>[Net Price](../net-price)<br>[Post Step](../processor)|
 | _Response_ |[Pre Step](../processor)<br>[Aggregation](../aggregation)<br>[Post Step](../processor)|[Pre Step](../processor) <br>[Post Step](../processor)|[Pre Step](../processor) <br>[Post Step](../processor)|[Pre Step](../processor) <br>[Post Step](../processor)|
-
-
