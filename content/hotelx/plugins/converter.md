@@ -17,15 +17,11 @@ This plugin receives an Option and a currency and returns the same option with c
 
 The file should be in the below format:
 
-* Encoding: UTF-8 
-
-* File Name: currency\_map.csv 
-
-* Header Row: Code, Rate 
-
-* Delimiter:  Comma (“,”) 
-
-* Directory: ftp://ftp.xmltravelgate.com/Purchasing/ 
+* **Encoding**: UTF-8 
+* **File Name**: currency\_map.csv 
+* **Header Row**: Code, Rate 
+* **Delimiter**:  Comma (“,”) 
+* **Directory**: ftp://ftp.xmltravelgate.com/Purchasing/ 
 
 #### Sample File
 
