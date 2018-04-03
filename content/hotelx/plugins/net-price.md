@@ -1,5 +1,5 @@
 +++
-title = "Ne Price"
+title = "Net Price"
 pagetitle = "Net Price"
 description = ""
 icon = "fa-exchange"
