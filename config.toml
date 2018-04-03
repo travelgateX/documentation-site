@@ -68,7 +68,7 @@ discourseUrl = "http://community.travelgatex.com/"
     brand = '<img src="images/xtg_logo.svg"/>'
     home = "Home"
     welcome = "About us"
-    #work = "Product"
+    work = "Product"
     testimonials = "Testimonials"
     services = "Architecture"
     about = "About"
@@ -77,16 +77,20 @@ discourseUrl = "http://community.travelgatex.com/"
     # You can add custom links before or after the default links
     # Assign a weight to define the order
 
-    # prepended links
-    [[menu.prepend]]
-      url = "http://api.travelgatex.com"
-      name = "Playground <i title='Play &rarr;' class='icon-control-play'></i>"
-      weight = 10
-
     # postpended links
-    [[menu.postpend]]
-     url = "http://discourse.travelgatex.com/"
+    [[menu.prepend]]
+     url = "/getting-started/"
+     name = "Docs"
+     weight = 9
+    # postpended links
+    [[menu.prepend]]
+     url = "https://slackin-rtuljhzuqi.now.sh/"
      name = "Community"
+     weight = 10
+     # prepended links
+     [[menu.prepend]]
+     url = "http://api.travelgatex.com"
+     name = "Playground <i title='Play &rarr;' class='icon-control-play'></i>"
      weight = 11
 
   # Hero section
