@@ -60,3 +60,35 @@ To process the file, it must be uploaded to your organization’s FTP folder in 
 ### Template File
 
 For your convinience you can [download a template CSV file](/content/rank1.csv).
+
+## Destinations
+
+Destination query returns a list of static data about destinations for a supplier access. By default if you don’t set the destination codes are all the codes. Like than hotels you can get the other pages with the continuation token.
+
+### Playground Samples
+
+* [destinations](https://graphqlbin.com/763zsZ) 
+
+## Boards
+
+Board static data returns a simple map of the boards that can be returned with its translation to other languages.
+
+### Playground Samples
+
+* [boards](https://graphqlbin.com/6687tV) 
+
+## Rooms
+
+Room static data returns a simple map of the rooms that can be returned with its translation to other languages.
+
+### Playground Samples
+
+* [rooms](https://graphqlbin.com/98rmiY) 
+
+## Categories
+
+Category static data returns a simple map of the categories that can be returned with its translation to other languages.
+
+### Playground Samples
+
+* [categories](https://graphqlbin.com/mwZjT6) 
