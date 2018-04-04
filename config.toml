@@ -153,7 +153,7 @@ discourseUrl = "http://community.travelgatex.com/"
     enable = true
     title = "Our Products"
     description = "We’re true believers in the API first philosophy. Anything you can do on any of our sites and tools you can also do using the GraphQL API."
-    footertext = 'APIs Made With &#9825; For Developers &amp; By Developers'
+    footertext = 'APIs Made With &#9825; For Developers By Developers'
 
     [[params.work.row]]
       url = "https://www.travelgatex.com/products/hotelx"
