@@ -8,7 +8,7 @@ alwaysopen = false
 
 [Search](#search), [Quote](#quote) and [Book](#book) transactions must be executed sequentally in order to book hotel rooms in a Seller.
 
-<!-- {{< figure src="/images/booking_flow.png#center" alt="High Level ConnectX Architecture" attr="" >}} -->
+<!-- {{< figure src="/images/booking_flow.png#center" alt="High Level HotelX Architecture" attr="" >}} -->
 
 <svg class="booking_flow fade-in" width="90%" viewBox="73 33 490 412" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <defs>

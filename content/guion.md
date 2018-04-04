@@ -32,11 +32,11 @@ GOAL: minimo indispensable para hacer una petición
 - INTRO: empezar en 1min
 
 1. API Key test
-2. Ejemplo de búsqueda de ConnectX inline
+2. Ejemplo de búsqueda de HotelX inline
 
 - Product QuickStarts
 
-- CALL2ACTION: Try ConnectX Playground
+- CALL2ACTION: Try HotelX Playground
 
 
 ## Concepts
@@ -161,11 +161,11 @@ GOAL: minimo indispensable para hacer una petición
 - INTRO: empezar en 1min
 
 1. API Key test
-2. Ejemplo de búsqueda de ConnectX inline
+2. Ejemplo de búsqueda de HotelX inline
 
 - Product QuickStarts
 
-- CALL2ACTION: Try ConnectX Playground
+- CALL2ACTION: Try HotelX Playground
 
 
 ## Concepts

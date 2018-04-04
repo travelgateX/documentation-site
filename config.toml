@@ -146,7 +146,7 @@ discourseUrl = "http://community.travelgatex.com/"
   [params.welcome]
     enable = true
     title = "Connecting the dots"
-    description = "At TravelgateX, we’ve integrated 100s of travel APIs. This is why we’ve decided to build the first travel API focused on Developer eXperience. Welcome to ConnectX, the world’s most advanced and disruptive GraphQL based Travel API."
+    description = "At TravelgateX, we’ve integrated 100s of travel APIs. This is why we’ve decided to build the first travel API focused on Developer eXperience. Welcome to HotelX, the world’s most advanced and disruptive GraphQL based Travel API."
 
   # Work section
   [params.work]
@@ -238,7 +238,7 @@ discourseUrl = "http://community.travelgatex.com/"
       alt = "Dani Martin"
 
     [[params.testimonials.item]]
-      quote = "&ldquo;We have started working with ConnectX when it was still under development. Firstly, it was a bit hard since we didn't know GraphQL and the structure kept changing, but in every iteration it got better and more stable. Nowadays, we're happy to have started so early. We're connected to every major Meta Search, respond in less than 1 second and the service is very stable!&rdquo;"
+      quote = "&ldquo;We have started working with HotelX when it was still under development. Firstly, it was a bit hard since we didn't know GraphQL and the structure kept changing, but in every iteration it got better and more stable. Nowadays, we're happy to have started so early. We're connected to every major Meta Search, respond in less than 1 second and the service is very stable!&rdquo;"
       person = 'Vishal, Senior Developer <a href="http://www.trulytravel.com//" target="_blank">Truly Travel</a> <span class="subtext">Tech Lead</span>'
       img = "default-user.png"
       alt = "Vishal"
