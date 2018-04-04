@@ -65,7 +65,7 @@
   "operator": "type",
   "typename": "AuditData"
 }
-Data sent & received in the supplierâ€™s native format.
+Data sent & received in the supplier’s native format.
 ## GraphQL Schema definition
 
 {{% graphql-schema-type %}}

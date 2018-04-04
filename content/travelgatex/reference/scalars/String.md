@@ -137,7 +137,7 @@
     },
     {
       "name": "ConfigurationInput",
-      "description": "The information and credentials required to access the supplierâ€™s system.",
+      "description": "The information and credentials required to access the supplier’s system.",
       "url": "/travelgatex/reference/inputobjects/configurationinput"
     },
     {
@@ -359,6 +359,21 @@
       "name": "ClientData",
       "description": "",
       "url": "/travelgatex/reference/objects/clientdata"
+    },
+    {
+      "name": "ServiceApiFilter",
+      "description": "",
+      "url": "/travelgatex/reference/inputobjects/serviceapifilter"
+    },
+    {
+      "name": "ServiceApi",
+      "description": "Information related to a Service API",
+      "url": "/travelgatex/reference/objects/serviceapi"
+    },
+    {
+      "name": "ServiceOperation",
+      "description": "Information related to an API operation",
+      "url": "/travelgatex/reference/objects/serviceoperation"
     },
     {
       "name": "OrganizationEdge",

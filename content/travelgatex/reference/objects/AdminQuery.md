@@ -121,6 +121,21 @@
       ]
     },
     {
+      "typeString": "ServiceApi",
+      "name": "serviceApi",
+      "url": "/travelgatex/reference/objects/serviceapi",
+      "description": "Obtain a ServiceApi",
+      "isDeprecated": false,
+      "args": [
+        {
+          "typeString": "ServiceApiFilter",
+          "name": "filter",
+          "url": "/travelgatex/reference/inputobjects/serviceapifilter",
+          "description": ""
+        }
+      ]
+    },
+    {
       "typeString": "OrganizationConnection!",
       "name": "organizations",
       "url": "/travelgatex/reference/objects/organizationconnection",

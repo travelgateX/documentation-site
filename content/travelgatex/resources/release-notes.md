@@ -10,6 +10,50 @@ hidden = false
 
 Check out this list of new releases and changes applied on the **TravelgateX GraphQL API**.
 
+## 2018-04-03
+
+⚠️  Input field `accesses` was removed from input object type `ClientInput`
+
+⚠️  Field `accesses` was removed from object type `ClientData`
+
+✅  Input field `groupID` was added to input object type `ClientFilter`
+
+✅  Field `serviceApi` was added to object type `AdminQuery`
+
+✅  Description for enum value `BookStatusType.UNKNOWN` changed from `The reservation was completed but due to a supplier error or a timeout, the reservation status is unknown.
+
+It is the clientâ€™s responsibility to check if the booking is OK` to `The reservation was completed but due to a supplier error or a timeout, the reservation status is unknown.
+
+It is the client’s responsibility to check if the booking is OK`
+
+✅  Description for enum value `BookStatusType.ON_REQUEST` changed from `The reservation was completed but the product is still not available, so the reservation goes into a waiting list.
+
+It is the clientâ€™s responsibility to check if the booking is OK` to `The reservation was completed but the product is still not available, so the reservation goes into a waiting list.
+
+It is the client’s responsibility to check if the booking is OK`
+
+✅  Description `The information and credentials required to access the supplierâ€™s system.` on type `ConfigurationInput` has changed to `The information and credentials required to access the supplier’s system.`
+
+✅  Description `Data sent & received in the supplierâ€™s native format.` on type `AuditData` has changed to `Data sent & received in the supplier’s native format.`
+
+✅  Field `Response.auditData` description changed from `Data sent & received in the supplierâ€™s original format.` to `Data sent & received in the supplier’s original format.`
+
+✅  Field `AdviseMessage.type` description changed from `TODO:
+
+Error type: The following types are valid:
+
+XXX: asd asdÃ±oajskd lÃ±a ld` to `TODO:
+
+Error type: The following types are valid:
+
+XXX: asd asdñoajskd lña ld`
+
+✅  Type `ServiceApiFilter` was added
+
+✅  Type `ServiceOperation` was added
+
+✅  Type `ServiceApi` was added
+
 ## 2018-03-20
 
 ✅  Input field `HotelSettingsInput.connectUser` description changed from `This field is got only if the authorization header is of the type JWT. It is used for to change the user that
@@ -139,7 +183,7 @@ has been set by default in the preload.
 
 ✅  Field `key` was added to object type `Parameter`
 
-✅  Description `XTG Platform API implementation` on type `Provider` has changed to `Temporary type to use only during SQL server's lifetime`
+✅  Description `TGX Platform API implementation` on type `Provider` has changed to `Temporary type to use only during SQL server's lifetime`
 
 ✅  Field `SupplierData.accesses` description changed from `Accesses in a Supplier` to `Accesses where the supplier is referenced`
 

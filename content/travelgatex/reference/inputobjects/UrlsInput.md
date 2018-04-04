@@ -36,7 +36,7 @@
   "requireby": [
     {
       "name": "ConfigurationInput",
-      "description": "The information and credentials required to access the supplierâ€™s system.",
+      "description": "The information and credentials required to access the supplier’s system.",
       "url": "/travelgatex/reference/inputobjects/configurationinput"
     },
     {

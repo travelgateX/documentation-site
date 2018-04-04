@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="52px" height="45px" viewBox="0 0 52 45" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>Polygon 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polyline id="path-1" points="0.554465116 22.5182432 13.286 0.339932432 38.7502791 0.339932432 51.4824186 22.5182432 38.7502791 44.6965541 13.2866047 44.6965541 0.554465116 22.5182432"></polyline>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-168.000000, -172.000000)">
+            <g id="Polygon-2" transform="translate(168.000000, 172.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="Mask" fill-opacity="0.9" fill="#33006A" xlink:href="#path-1"></use>
+                <g id="Group-87" mask="url(#mask-2)">
+                    <g transform="translate(-14.147624, 7.328225)">
+                        <path d="M46.4798543,0.0763839392 L46.4798543,1.0799631 L49.6959503,1.0799631 L41.6126874,9.17934875 L40.55584,5.23177011 L37.4369254,15.6037608 L33.1371559,4.19457104 L26.9145113,24.6736075 L20.070817,12.3376124 L16.2144375,19.9808713 L14.1230134,17.1492727 L10.1532557,23.1230777 L3.49785029,16.0428267 L0.355146494,19.7179336 C0.435118663,20.1334153 0.524707739,20.5448828 0.625938333,20.9528377 L3.53328099,17.5532133 L10.2904231,24.7408473 L14.1665426,18.9075434 L16.3774188,21.9007182 L20.1133338,14.496813 L27.18834,27.250297 L33.239905,7.33527204 L37.544736,18.7575083 L40.499657,8.93297007 L41.0878068,11.1323138 L50.4025399,1.79852579 L50.4025399,4.96883237 L51.4148458,4.96883237 L51.4148458,0.0763839392 L46.4798543,0.0763839392" id="Fill-234" fill="#FFFFFF"></path>
+                        <g id="Group-132" stroke-width="1" fill="none" transform="translate(17.992043, 7.826891)">
+                            <polygon id="Fill-244" fill="#FFFFFF" points="0.639081338 30.2179467 7.49163332 30.2179467 7.49163332 17.8474362 0.639081338 17.8474362"></polygon>
+                            <polygon id="Fill-245" fill="#FFFFFF" points="11.2344749 30.0317306 18.0870269 30.0317306 18.0870269 9.56030534 11.2344749 9.56030534"></polygon>
+                            <polygon id="Fill-246" fill="#FFFFFF" points="21.8298684 30.2179467 28.6824204 30.2179467 28.6824204 0.185713554 21.8298684 0.185713554"></polygon>
+                            <polygon id="Fill-247" fill="#FFFFFF" points="32.4242485 30.0317306 39.2768005 30.0317306 39.2768005 19.796018 32.4242485 19.796018"></polygon>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="52px" height="45px" viewBox="0 0 52 45" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>Polygon 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polyline id="path-1" points="0.554465116 22.5182432 13.286 0.339932432 38.7502791 0.339932432 51.4824186 22.5182432 38.7502791 44.6965541 13.2866047 44.6965541 0.554465116 22.5182432"></polyline>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-168.000000, -104.000000)">
+            <g id="Polygon-2" transform="translate(168.000000, 104.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="Mask" fill="#39B694" xlink:href="#path-1"></use>
+                <path d="M29.3776426,15.6664866 C13.4116973,9.93344411 11.2261148,6.26635416 11.0003472,5 C10.9804265,8.08582853 11.7525898,24.5144691 30.4419757,24.5144691 C30.4419757,24.5144691 23.3891087,27.917614 17.1340174,22.6086304 C17.1340174,22.6086304 20.1951608,36.4938884 36.6961185,36.4938884 C36.6961185,36.4938884 30.9741422,39.6253251 24.8528039,36.4938884 C24.8528039,36.4938884 24.3206374,43.9134623 45.812198,43.096397 C45.812198,43.096397 50.1084232,42.955691 51.0883306,37.3323022 C51.472515,35.1256437 51.0797932,32.8413542 50.051507,30.8617661 C48.0822061,27.0724075 42.8686814,20.5096847 29.3776426,15.6664866 L29.3776426,15.6664866 Z" id="Shape" fill="#FFFFFF" mask="url(#mask-2)"></path>
+            </g>
+        </g>
+    </g>
+</svg>

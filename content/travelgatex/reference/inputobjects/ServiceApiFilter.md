@@ -1,26 +1,26 @@
 {
-  "title": "ClientFilter",
+  "title": "ServiceApiFilter",
   "description": "",
   "weight": 1,
   "fields": [
     {
-      "typeString": "[ID]",
-      "name": "clientID",
-      "url": "/travelgatex/reference/scalars/id",
+      "typeString": "String",
+      "name": "ApiName",
+      "url": "/travelgatex/reference/scalars/string",
       "description": "",
       "args": null
     },
     {
-      "typeString": "[ID]",
-      "name": "groupID",
-      "url": "/travelgatex/reference/scalars/id",
+      "typeString": "String",
+      "name": "OperationName",
+      "url": "/travelgatex/reference/scalars/string",
       "description": "",
       "args": null
     },
     {
-      "typeString": "Boolean",
-      "name": "isActive",
-      "url": "/travelgatex/reference/scalars/boolean",
+      "typeString": "String",
+      "name": "OperationType",
+      "url": "/travelgatex/reference/scalars/string",
       "description": "",
       "args": null
     }
@@ -29,7 +29,7 @@
   "requireby": null,
   "enumValues": null,
   "operator": "type",
-  "typename": "ClientFilter"
+  "typename": "ServiceApiFilter"
 }
 ## GraphQL Schema definition
 

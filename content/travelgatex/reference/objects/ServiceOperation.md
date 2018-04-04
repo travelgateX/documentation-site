@@ -1,5 +1,5 @@
 {
-  "title": "ClientData",
+  "title": "ServiceOperation",
   "description": "",
   "weight": 1,
   "fields": [
@@ -7,7 +7,7 @@
       "typeString": "ID!",
       "name": "code",
       "url": "/travelgatex/reference/scalars/id",
-      "description": "ID identifier of a Client",
+      "description": "Service Operation ID",
       "isDeprecated": false,
       "args": null
     },
@@ -15,15 +15,15 @@
       "typeString": "String!",
       "name": "name",
       "url": "/travelgatex/reference/scalars/string",
-      "description": "Client complete name",
+      "description": "Service Operation name",
       "isDeprecated": false,
       "args": null
     },
     {
-      "typeString": "Boolean!",
-      "name": "isActive",
-      "url": "/travelgatex/reference/scalars/boolean",
-      "description": "Indicates whether a Client is active",
+      "typeString": "String!",
+      "name": "type",
+      "url": "/travelgatex/reference/scalars/string",
+      "description": "Service Operation type",
       "isDeprecated": false,
       "args": null
     }
@@ -31,15 +31,16 @@
   "deprecatedFields": null,
   "requireby": [
     {
-      "name": "Client",
-      "description": "",
-      "url": "/travelgatex/reference/objects/client"
+      "name": "ServiceApi",
+      "description": "Information related to a Service API",
+      "url": "/travelgatex/reference/objects/serviceapi"
     }
   ],
   "enumValues": null,
   "operator": "type",
-  "typename": "ClientData"
+  "typename": "ServiceOperation"
 }
+Information related to an API operation
 ## GraphQL Schema definition
 
 {{% graphql-schema-type %}}

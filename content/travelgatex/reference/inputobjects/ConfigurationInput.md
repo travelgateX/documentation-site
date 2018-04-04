@@ -68,7 +68,7 @@
   "operator": "type",
   "typename": "ConfigurationInput"
 }
-The information and credentials required to access the supplierâ€™s system.
+The information and credentials required to access the supplier’s system.
 ## GraphQL Schema definition
 
 {{% graphql-schema-type %}}
