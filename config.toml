@@ -60,7 +60,7 @@ discourseUrl = "http://community.travelgatex.com/"
   #custom_css = ["css/blue.css"]
 
   # Meta
-  author = "TravelgateX ByXTG"
+  author = "TravelgateX ByTGX"
   description = "All you want and need to know about travelgateX state-of-the-art GraphQL APIs. Start your next travel project here."
   email = "tech@travelgatex.com"
   # Navigation
@@ -188,7 +188,7 @@ discourseUrl = "http://community.travelgatex.com/"
       img = "inventory.svg"
       alt = "Inventory"
       title = "Inventory"
-      subtitle = "Inventory is the right solution by XTG for those clients willing to connect their offline product."
+      subtitle = "Inventory is the right solution by TGX for those clients willing to connect their offline product."
 
 
     [[params.work.row]]
@@ -196,7 +196,7 @@ discourseUrl = "http://community.travelgatex.com/"
       img = "speed.svg"
       alt = "Speed"
       title = "Speed"
-      subtitle = "Speed ​​is the smart cache solution designed entirely by XTG that manages to reduce the number of requests by up to 80%"
+      subtitle = "Speed ​​is the smart cache solution designed entirely by TGX that manages to reduce the number of requests by up to 80%"
 
 
     [[params.work.row]]
@@ -381,4 +381,4 @@ discourseUrl = "http://community.travelgatex.com/"
   # Footer section
   [params.footer]
     enable = true
-    copyright = '&copy; <a title="TGX" target="_blank" href="https://www.travelgatex.com/" style="color: white;font-weight: bold;">TravelgateX</a> 2018. All Rights Reserved.TravelgateX is an <a title="XTG" target="_blank" href="https://www.xmltravelgate.com/" style="color: white;font-weight: bold;">XTG</a> Brand.'
+    copyright = '&copy; <a title="TGX" target="_blank" href="https://www.travelgatex.com/" style="color: white;font-weight: bold;">TravelgateX</a> 2018. All Rights Reserved.TravelgateX is an <a title="TGX" target="_blank" href="https://www.xmltravelgate.com/" style="color: white;font-weight: bold;">TGX</a> Brand.'

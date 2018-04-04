@@ -183,7 +183,7 @@ has been set by default in the preload.
 
 ✅  Field `key` was added to object type `Parameter`
 
-✅  Description `XTG Platform API implementation` on type `Provider` has changed to `Temporary type to use only during SQL server's lifetime`
+✅  Description `TGX Platform API implementation` on type `Provider` has changed to `Temporary type to use only during SQL server's lifetime`
 
 ✅  Field `SupplierData.accesses` description changed from `Accesses in a Supplier` to `Accesses where the supplier is referenced`
 
