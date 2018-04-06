@@ -7,7 +7,7 @@ weight = 2
 alwaysopen = false
 +++
 
-The map plugins are used for to change the supplier codes to client codes or vice versa, depending on the step. There are four types:
+The map plugins are used to change the supplier codes to client codes or vice versa. There are four types:
 
 * Hotel map 
 
@@ -17,12 +17,11 @@ The map plugins are used for to change the supplier codes to client codes or vic
 
 * Rate Map 
 
-Our map formats have a common structure on all of them. Below is shown step by step as load your maps.
-
+Our map formats share a common structure. In order to load your maps you just need to follow the instructions below:
 
 ## Format File
 
-The file should be in the below format:
+The file should be in the following format:
 
 * **Encoding**: UTF-8
 * **File Name**: [Context Source]_hotel_map.csv
@@ -32,7 +31,7 @@ The file should be in the below format:
 
 ### File Names
 
-All files have the same name structure
+All files must have the same name structure
 
 |Entity|File Name|
 |---|----|
@@ -74,24 +73,24 @@ Download file sample [here](../sample.csv).
 
 ## Other Maps
 
-However, for room map, we have an alternative that can you see here.
+However, an alternative for room map is also shown below:
 
 ### Description Room Map
 
-How we have said, for room map we have an alternative, you can generate a room code from room description. This plugin applies some rules over the description and generates code, you need to load other files for this plugin.
+As a room map alternative, you can generate a room code from a room description. This plugin applies some rules over the description and generates a code. You need to load other files for this plugin.
 
 ## Files
 
 We have two files for this plugin:
 
-* Alias Table: is used to replace some words from the description 
-* Noise Words: delete some words from the description 
+* Alias Table: it is used to replace some words from the description 
+* Noise Words: it deletes some words from the description 
 
 ### Alias Table
 
 #### Format File
 
-The file should be in the below format:
+The file must be in the below format:
 
 * Encoding: UTF-8 
 * File Name: roomDescriptionMapX\_aliasTable.csv 
@@ -115,7 +114,7 @@ apartment,apt,902
 
 #### Format File
 
-The file should be in the below format:
+The file must be in the below format:
 
 * **Encoding**: UTF-8 
 * **File Name**: roomDescriptionMapX\_noiseWords.csv 
