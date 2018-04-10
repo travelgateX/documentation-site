@@ -96,6 +96,11 @@
       "url": "/travelgatex/reference/objects/supplierdata"
     },
     {
+      "name": "ServiceOperation",
+      "description": "Information related to an API operation",
+      "url": "/travelgatex/reference/objects/serviceoperation"
+    },
+    {
       "name": "GroupData",
       "description": "",
       "url": "/travelgatex/reference/objects/groupdata"

@@ -23,13 +23,6 @@
       "url": "/travelgatex/reference/scalars/boolean",
       "description": "Indicates whether a Client is active",
       "args": null
-    },
-    {
-      "typeString": "[ID!]",
-      "name": "accesses",
-      "url": "/travelgatex/reference/scalars/id",
-      "description": "Accesses assigned to that Client",
-      "args": null
     }
   ],
   "deprecatedFields": null,

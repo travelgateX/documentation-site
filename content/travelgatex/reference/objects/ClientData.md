@@ -26,14 +26,6 @@
       "description": "Indicates whether a Client is active",
       "isDeprecated": false,
       "args": null
-    },
-    {
-      "typeString": "AccessConnection",
-      "name": "accesses",
-      "url": "/travelgatex/reference/objects/accessconnection",
-      "description": "Accesses assigned to that Client",
-      "isDeprecated": false,
-      "args": null
     }
   ],
   "deprecatedFields": null,

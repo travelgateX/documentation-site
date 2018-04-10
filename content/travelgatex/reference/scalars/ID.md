@@ -151,6 +151,16 @@
       "url": "/travelgatex/reference/objects/clientdata"
     },
     {
+      "name": "ServiceApi",
+      "description": "Information related to a Service API",
+      "url": "/travelgatex/reference/objects/serviceapi"
+    },
+    {
+      "name": "ServiceOperation",
+      "description": "Information related to an API operation",
+      "url": "/travelgatex/reference/objects/serviceoperation"
+    },
+    {
       "name": "Organization",
       "description": "",
       "url": "/travelgatex/reference/objects/organization"

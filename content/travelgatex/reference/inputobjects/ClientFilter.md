@@ -11,6 +11,13 @@
       "args": null
     },
     {
+      "typeString": "[ID]",
+      "name": "groupID",
+      "url": "/travelgatex/reference/scalars/id",
+      "description": "",
+      "args": null
+    },
+    {
       "typeString": "Boolean",
       "name": "isActive",
       "url": "/travelgatex/reference/scalars/boolean",
