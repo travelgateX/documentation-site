@@ -40,7 +40,7 @@ A `Seller` is a `Profile` who is connected to TravelgateX in the offering side i
  A `Supplier` is a `Partner` who is connected to TravelgateX on the supply side in order to **sell their product** to connected `Buyers`.
 
 ### Platform
-Many  `Buyers` or `Providers` use a third party platform in order to **buy or sell travel products**. These are usually tech companies specialized in developing custom software for other companies.
+Many  `Buyers` or `Sellers` use a third party platform in order to **buy or sell travel products**. These are usually tech companies specialized in developing custom software for other companies.
 
 ### Context
 A `Context` refers to the `Supplier` codes the request is using. It's a way of specifiying which `Supplier` codes is being used so it can be transformed and standardized.
