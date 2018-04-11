@@ -16,35 +16,54 @@ Performs a Seller [booking](/product/connectx/hotel/concepts/book-transactions/#
 
 ```json
 {
-  "mutation": {
-    "hotelCancel": {
-      }
-    }
-  }
+
+  "mutation": {
+
+    "hotelX": {
+
+      "cancel": {
+
+      }
+
+    }
+
+  }
+
 }
 ```
 
 ### PlayGround Samples
 
-* [hotelCancel](https://graphqlbin.com/JYRtB)
+* [cancel](https://graphqlbin.com/68LYhr) 
 
 
 ## Booking
 
-Performs a Seller booking list or detail.
+Performs a seller booking list.
+
+In this case you can search the bookings with references or by dates, the dates can be arrival dates or booking dates.
+
 
 ### Operation
 
 ```json
 {
-  "query": {
-    "booking": {
-      "hotel": {
-      }
-    }
-  }
+
+  "query": {
+
+    "hotelX": {
+
+      "booking": {
+
+      }
+
+    }
+
+  }
+
 }
 ```
 
 ### PlayGround Samples
-* [booking](https://graphqlbin.com/JYRtB)
+
+* [booking](https://www.graphqlbin.com/0RvEU2) 

@@ -1,6 +1,6 @@
 +++
 title = "Admin"
-pagetitle = "Account and Connect"
+pagetitle = "Admin"
 description = ""
 weight = 9
 alwaysopen = false
@@ -8,4 +8,3 @@ isDirectory = false
 +++
 
 {{%custom-children%}}
-
