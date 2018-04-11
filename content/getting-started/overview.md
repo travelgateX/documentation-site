@@ -7,7 +7,7 @@ weight = 1
 alwaysopen = false
 +++
 
-Get access to all of our products and services through a single endpoint API. 
+Get access to all of our products through a single endpoint API. 
 
 <svg class="platform_getting_started" width="779px" height="564px" viewBox="229 117 779 564" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <defs>
