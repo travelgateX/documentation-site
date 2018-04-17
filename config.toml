@@ -49,7 +49,7 @@ themeStyle = "flex" # "original" or "flex" # default "original"
 #themeVariant = "blue" # choose theme variant "green", "gold" , "gray", "blue" (default)
 ordersectionsby = "weight" # ordersectionsby = "title"
 #disableHomeIcon = false # default is false
-disableSearch = false # default is false
+disableSearch = true # default is false
 #disableNavChevron = false # set true to hide next/prev chevron, default is false
 
 discourseUrl = "http://community.travelgatex.com/"
@@ -79,19 +79,20 @@ discourseUrl = "http://community.travelgatex.com/"
 
     # postpended links
     [[menu.prepend]]
-     url = "/getting-started/"
-     name = "Docs"
-     weight = 9
-    # postpended links
-    [[menu.prepend]]
      url = "https://slackin-rtuljhzuqi.now.sh/"
-     name = "Community"
-     weight = 10
+     name = "Slack #"
+     weight = 9
+     hrefTargetBlank = true
      # prepended links
      [[menu.prepend]]
-     url = "http://api.travelgatex.com"
+     url = "https://api.travelgatex.com"
      name = "Playground <i title='Play &rarr;' class='icon-control-play'></i>"
-     weight = 11
+     weight = 10
+     # postpended links
+    [[menu.prepend]]
+      url = "/getting-started/"
+      name = "Get Started"
+      weight = 11
 
   # Hero section
   [params.hero]
@@ -359,7 +360,7 @@ discourseUrl = "http://community.travelgatex.com/"
 
   # Contact section
   [params.contact]
-    enable = false
+    enable = true
     map = false
     title = "Get in touch"
     description = "We´d love to hear from you! Please feel free to use any of the forms below to get in touch."
@@ -368,7 +369,7 @@ discourseUrl = "http://community.travelgatex.com/"
     details = [
         ["icon-home", "Carrer Galileo Galilei,<br>ParcBit 07121 Palma, Illes Balears, Spain"],
         ["icon-phone", "(+34) 871 968 181"],
-        ["icon-envelope", "info@travelgatex.com"],
+        ["icon-envelope", "tech@travelgatex.com"],
         ["icon-globe", '<a href="http://www.travelgatex.com/" target="_blank">travelgatex.com</a>']
       ]
 
