@@ -76,19 +76,19 @@
       "url": "/travelgatex/reference/objects/organization"
     },
     {
-      "name": "Member",
-      "description": "",
-      "url": "/travelgatex/reference/objects/member"
-    },
-    {
       "name": "Group",
       "description": "",
       "url": "/travelgatex/reference/objects/group"
     },
     {
-      "name": "API",
+      "name": "Member",
       "description": "",
-      "url": "/travelgatex/reference/objects/api"
+      "url": "/travelgatex/reference/objects/member"
+    },
+    {
+      "name": "Role",
+      "description": "",
+      "url": "/travelgatex/reference/objects/role"
     },
     {
       "name": "Resource",
@@ -96,9 +96,14 @@
       "url": "/travelgatex/reference/objects/resource"
     },
     {
-      "name": "Role",
+      "name": "API",
       "description": "",
-      "url": "/travelgatex/reference/objects/role"
+      "url": "/travelgatex/reference/objects/api"
+    },
+    {
+      "name": "Operation",
+      "description": "",
+      "url": "/travelgatex/reference/objects/operation"
     },
     {
       "name": "Product",

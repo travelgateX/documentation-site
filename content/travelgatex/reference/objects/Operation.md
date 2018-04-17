@@ -1,5 +1,5 @@
 {
-  "title": "API",
+  "title": "Operation",
   "description": "",
   "weight": 1,
   "fields": [
@@ -20,9 +20,9 @@
       "args": null
     },
     {
-      "typeString": "APIData",
-      "name": "apiData",
-      "url": "/travelgatex/reference/objects/apidata",
+      "typeString": "OperationData",
+      "name": "operationData",
+      "url": "/travelgatex/reference/objects/operationdata",
       "description": "",
       "isDeprecated": false,
       "args": null
@@ -47,19 +47,14 @@
   "deprecatedFields": null,
   "requireby": [
     {
-      "name": "APIEdge",
+      "name": "OperationEdge",
       "description": "",
-      "url": "/travelgatex/reference/objects/apiedge"
-    },
-    {
-      "name": "OperationData",
-      "description": "",
-      "url": "/travelgatex/reference/objects/operationdata"
+      "url": "/travelgatex/reference/objects/operationedge"
     }
   ],
   "enumValues": null,
   "operator": "type",
-  "typename": "API"
+  "typename": "Operation"
 }
 ## GraphQL Schema definition
 

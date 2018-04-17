@@ -391,11 +391,6 @@
       "url": "/travelgatex/reference/interfaces/groupcommondata"
     },
     {
-      "name": "MemberData",
-      "description": "",
-      "url": "/travelgatex/reference/objects/memberdata"
-    },
-    {
       "name": "GroupEdge",
       "description": "",
       "url": "/travelgatex/reference/objects/groupedge"
@@ -406,19 +401,9 @@
       "url": "/travelgatex/reference/objects/groupdata"
     },
     {
-      "name": "MemberEdge",
+      "name": "MemberData",
       "description": "",
-      "url": "/travelgatex/reference/objects/memberedge"
-    },
-    {
-      "name": "APIEdge",
-      "description": "",
-      "url": "/travelgatex/reference/objects/apiedge"
-    },
-    {
-      "name": "ResourceEdge",
-      "description": "",
-      "url": "/travelgatex/reference/objects/resourceedge"
+      "url": "/travelgatex/reference/objects/memberdata"
     },
     {
       "name": "RoleEdge",
@@ -429,6 +414,31 @@
       "name": "RoleData",
       "description": "",
       "url": "/travelgatex/reference/objects/roledata"
+    },
+    {
+      "name": "ResourceEdge",
+      "description": "",
+      "url": "/travelgatex/reference/objects/resourceedge"
+    },
+    {
+      "name": "APIEdge",
+      "description": "",
+      "url": "/travelgatex/reference/objects/apiedge"
+    },
+    {
+      "name": "OperationEdge",
+      "description": "",
+      "url": "/travelgatex/reference/objects/operationedge"
+    },
+    {
+      "name": "OperationData",
+      "description": "",
+      "url": "/travelgatex/reference/objects/operationdata"
+    },
+    {
+      "name": "MemberEdge",
+      "description": "",
+      "url": "/travelgatex/reference/objects/memberedge"
     },
     {
       "name": "ProductEdge",

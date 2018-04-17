@@ -1,12 +1,12 @@
 {
-  "title": "ResourceConnection",
+  "title": "OperationConnection",
   "description": "",
   "weight": 1,
   "fields": [
     {
-      "typeString": "[ResourceEdge]",
+      "typeString": "[OperationEdge]",
       "name": "edges",
-      "url": "/travelgatex/reference/objects/resourceedge",
+      "url": "/travelgatex/reference/objects/operationedge",
       "description": "",
       "isDeprecated": false,
       "args": null
@@ -28,11 +28,6 @@
       "url": "/travelgatex/reference/objects/adminquery"
     },
     {
-      "name": "RoleData",
-      "description": "",
-      "url": "/travelgatex/reference/objects/roledata"
-    },
-    {
       "name": "APIData",
       "description": "",
       "url": "/travelgatex/reference/objects/apidata"
@@ -40,7 +35,7 @@
   ],
   "enumValues": null,
   "operator": "type",
-  "typename": "ResourceConnection"
+  "typename": "OperationConnection"
 }
 ## GraphQL Schema definition
 

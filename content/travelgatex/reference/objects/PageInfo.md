@@ -89,14 +89,9 @@
       "url": "/travelgatex/reference/objects/groupconnection"
     },
     {
-      "name": "MemberConnection",
+      "name": "RoleConnection",
       "description": "",
-      "url": "/travelgatex/reference/objects/memberconnection"
-    },
-    {
-      "name": "APIConnection",
-      "description": "",
-      "url": "/travelgatex/reference/objects/apiconnection"
+      "url": "/travelgatex/reference/objects/roleconnection"
     },
     {
       "name": "ResourceConnection",
@@ -104,9 +99,19 @@
       "url": "/travelgatex/reference/objects/resourceconnection"
     },
     {
-      "name": "RoleConnection",
+      "name": "APIConnection",
       "description": "",
-      "url": "/travelgatex/reference/objects/roleconnection"
+      "url": "/travelgatex/reference/objects/apiconnection"
+    },
+    {
+      "name": "OperationConnection",
+      "description": "",
+      "url": "/travelgatex/reference/objects/operationconnection"
+    },
+    {
+      "name": "MemberConnection",
+      "description": "",
+      "url": "/travelgatex/reference/objects/memberconnection"
     },
     {
       "name": "ProductConnection",

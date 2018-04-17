@@ -36,6 +36,45 @@
       "args": null
     },
     {
+      "typeString": "GroupConnection",
+      "name": "children",
+      "url": "/travelgatex/reference/objects/groupconnection",
+      "description": "",
+      "isDeprecated": false,
+      "args": [
+        {
+          "typeString": "[ID!]",
+          "name": "codes",
+          "url": "/travelgatex/reference/scalars/id",
+          "description": ""
+        },
+        {
+          "typeString": "Int",
+          "name": "first",
+          "url": "/travelgatex/reference/scalars/int",
+          "description": ""
+        },
+        {
+          "typeString": "Int",
+          "name": "last",
+          "url": "/travelgatex/reference/scalars/int",
+          "description": ""
+        },
+        {
+          "typeString": "String",
+          "name": "before",
+          "url": "/travelgatex/reference/scalars/string",
+          "description": ""
+        },
+        {
+          "typeString": "String",
+          "name": "after",
+          "url": "/travelgatex/reference/scalars/string",
+          "description": ""
+        }
+      ]
+    },
+    {
       "typeString": "Member",
       "name": "owner",
       "url": "/travelgatex/reference/objects/member",

@@ -176,16 +176,6 @@
       "url": "/travelgatex/reference/interfaces/groupcommondata"
     },
     {
-      "name": "Member",
-      "description": "",
-      "url": "/travelgatex/reference/objects/member"
-    },
-    {
-      "name": "MemberData",
-      "description": "",
-      "url": "/travelgatex/reference/objects/memberdata"
-    },
-    {
       "name": "Group",
       "description": "",
       "url": "/travelgatex/reference/objects/group"
@@ -196,14 +186,24 @@
       "url": "/travelgatex/reference/objects/groupdata"
     },
     {
-      "name": "API",
+      "name": "Member",
       "description": "",
-      "url": "/travelgatex/reference/objects/api"
+      "url": "/travelgatex/reference/objects/member"
     },
     {
-      "name": "APIData",
+      "name": "MemberData",
       "description": "",
-      "url": "/travelgatex/reference/objects/apidata"
+      "url": "/travelgatex/reference/objects/memberdata"
+    },
+    {
+      "name": "Role",
+      "description": "",
+      "url": "/travelgatex/reference/objects/role"
+    },
+    {
+      "name": "RoleData",
+      "description": "",
+      "url": "/travelgatex/reference/objects/roledata"
     },
     {
       "name": "Resource",
@@ -216,14 +216,24 @@
       "url": "/travelgatex/reference/objects/resourcedata"
     },
     {
-      "name": "Role",
+      "name": "API",
       "description": "",
-      "url": "/travelgatex/reference/objects/role"
+      "url": "/travelgatex/reference/objects/api"
     },
     {
-      "name": "RoleData",
+      "name": "APIData",
       "description": "",
-      "url": "/travelgatex/reference/objects/roledata"
+      "url": "/travelgatex/reference/objects/apidata"
+    },
+    {
+      "name": "Operation",
+      "description": "",
+      "url": "/travelgatex/reference/objects/operation"
+    },
+    {
+      "name": "OperationData",
+      "description": "",
+      "url": "/travelgatex/reference/objects/operationdata"
     },
     {
       "name": "Product",

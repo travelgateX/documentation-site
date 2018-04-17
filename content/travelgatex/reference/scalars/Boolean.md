@@ -106,14 +106,14 @@
       "url": "/travelgatex/reference/interfaces/groupcommondata"
     },
     {
-      "name": "Member",
-      "description": "",
-      "url": "/travelgatex/reference/objects/member"
-    },
-    {
       "name": "GroupData",
       "description": "",
       "url": "/travelgatex/reference/objects/groupdata"
+    },
+    {
+      "name": "Member",
+      "description": "",
+      "url": "/travelgatex/reference/objects/member"
     },
     {
       "name": "RoleData",
