@@ -6,21 +6,29 @@ icon = "fa-sitemap"
 weight = 2
 alwaysopen = false
 +++
+
 The map plugins are used to change the supplier codes to client codes or vice versa. There are four types:
+
 * Hotel map 
 * Board Map 
 * Room Map 
 * Rate Map 
+
 Our map formats share a common structure. In order to load your maps you just need to follow the instructions below:
+
 ## Format File
+
 The file should be in the following format:
+
 * **Encoding**: UTF-8
 * **File Name**: [Context Source]_hotel_map.csv
 * **Header Row**: Code Source, Context Destination, Code Destination
 * **Delimiter**: Comma (",")
 * **Directory**: ftp://ftp.xmltravelgate.com/Purchasing/Maps/[entity]/ 
 ### File Names
+
 All files must have the same name structure
+
 |Entity|File Name|
 |---|----|
 |Hotel|[Context Source]\_[Context Destination]\_hotel\_map.csv|
@@ -50,16 +58,26 @@ Download file sample [here](../sample.csv).
 |Room|RoomMapX|
 |Rate|RateMapX|
 ## Other Maps
+
 However, an alternative for room map is also shown below:
+
 ### Description Room Map
+
 As a room map alternative, you can generate a room code from a room description. This plugin applies some rules over the description and generates a code. You need to load other files for this plugin.
+
+
 ## Files
 We have two files for this plugin:
+
 * Alias Table: it is used to replace some words from the description 
 * Noise Words: it deletes some words from the description 
+
+
 ### Alias Table
 #### Format File
+
 The file must be in the below format:
+
 * Encoding: UTF-8 
 * File Name: roomDescriptionMapX\_aliasTable.csv 
 * Header Row: ToReplace, ReplaceWith, Order 
@@ -76,7 +94,9 @@ ToReplace,ReplaceWith,Order
 apartment,apt,902
 ### Noise Words
 #### Format File
+
 The file must be in the below format:
+
 * **Encoding**: UTF-8 
 * **File Name**: roomDescriptionMapX\_noiseWords.csv 
 * **Header Row**: ToRemove 
