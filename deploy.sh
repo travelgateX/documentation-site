@@ -10,7 +10,6 @@ git status
 git reset --hard origin/master
 git checkout master
 git pull origin master
-rm -rf *
 cd ..
 
 # Build the project.
