@@ -10,6 +10,26 @@ hidden = false
 
 Check out this list of new releases and changes applied on the **TravelgateX GraphQL API**.
 
+## 2018-04-18
+
+⚠️  Type for argument `input` on field `AdminMutation.updateClient` changed from `ClientInput!` to `UpdateClientInput!`
+
+⚠️  Type for argument `input` on field `AdminMutation.createClient` changed from `ClientInput!` to `CreateClientInput!`
+
+⚠️  Field `StatsData` was removed from object type `Stats`
+
+⚠️  `ClientInput` was removed
+
+✅  Field `statsData` was added to object type `Stats`
+
+✅  Type `MappeaXEditOrganizationInput` was added
+
+✅  Type `MappeaXAddOrganizationInput` was added
+
+✅  Type `UpdateClientInput` was added
+
+✅  Type `CreateClientInput` was added
+
 ## 2018-04-17
 
 ⚠️  Field `MemberData.roles` changed type from `String` to `RoleConnection`
