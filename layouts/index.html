@@ -20,6 +20,10 @@
           {{ partial "home_work.html" .}}
         {{ end }}
 
+    {{ if .Site.Params.counters.enable }}
+        {{ partial "home_counters.html" .}}
+    {{ end }}
+
     {{ if .Site.Params.testimonials.enable }}
           {{ partial "home_testimonials.html" .}}
     {{ end }}
@@ -31,10 +35,6 @@
     {{ if .Site.Params.about.enable }}
           {{ partial "home_about.html" .}}
     {{ end }}
-
-    {{ if .Site.Params.counters.enable }}
-          {{ partial "home_counters.html" .}}
-        {{ end }}
 
     {{ if .Site.Params.contact.enable }}
       {{ partial "home_contact.html" .}}
