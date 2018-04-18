@@ -6,6 +6,11 @@
   "deprecatedFields": null,
   "requireby": [
     {
+      "name": "Urls",
+      "description": "Url's",
+      "url": "/travelgatex/reference/objects/urls"
+    },
+    {
       "name": "Contact",
       "description": "Contact Data.",
       "url": "/travelgatex/reference/objects/contact"
@@ -19,11 +24,6 @@
       "name": "UrlsInput",
       "description": "Urls Input",
       "url": "/travelgatex/reference/inputobjects/urlsinput"
-    },
-    {
-      "name": "Urls",
-      "description": "Url's",
-      "url": "/travelgatex/reference/objects/urls"
     }
   ],
   "enumValues": null,

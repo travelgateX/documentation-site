@@ -6,59 +6,14 @@
   "deprecatedFields": null,
   "requireby": [
     {
-      "name": "Board",
-      "description": "Board Type",
-      "url": "/travelgatex/reference/objects/board"
+      "name": "Access",
+      "description": "",
+      "url": "/travelgatex/reference/objects/access"
     },
     {
       "name": "Node",
       "description": "",
       "url": "/travelgatex/reference/interfaces/node"
-    },
-    {
-      "name": "Category",
-      "description": "Category Type",
-      "url": "/travelgatex/reference/objects/category"
-    },
-    {
-      "name": "RoomStatic",
-      "description": "Room Type",
-      "url": "/travelgatex/reference/objects/roomstatic"
-    },
-    {
-      "name": "Hotel",
-      "description": "Hotel Type",
-      "url": "/travelgatex/reference/objects/hotel"
-    },
-    {
-      "name": "Media",
-      "description": "Contains media information.",
-      "url": "/travelgatex/reference/objects/media"
-    },
-    {
-      "name": "Destination",
-      "description": "Destination Type",
-      "url": "/travelgatex/reference/objects/destination"
-    },
-    {
-      "name": "Stat",
-      "description": "",
-      "url": "/travelgatex/reference/objects/stat"
-    },
-    {
-      "name": "AuditData",
-      "description": "Data sent & received in the supplier’s native format.",
-      "url": "/travelgatex/reference/objects/auditdata"
-    },
-    {
-      "name": "Transactions",
-      "description": "Supplier transaction",
-      "url": "/travelgatex/reference/objects/transactions"
-    },
-    {
-      "name": "Access",
-      "description": "",
-      "url": "/travelgatex/reference/objects/access"
     },
     {
       "name": "Supplier",
@@ -109,6 +64,66 @@
       "name": "Product",
       "description": "",
       "url": "/travelgatex/reference/objects/product"
+    },
+    {
+      "name": "Board",
+      "description": "Board Type",
+      "url": "/travelgatex/reference/objects/board"
+    },
+    {
+      "name": "Category",
+      "description": "Category Type",
+      "url": "/travelgatex/reference/objects/category"
+    },
+    {
+      "name": "RoomStatic",
+      "description": "Room Type",
+      "url": "/travelgatex/reference/objects/roomstatic"
+    },
+    {
+      "name": "Hotel",
+      "description": "Hotel Type",
+      "url": "/travelgatex/reference/objects/hotel"
+    },
+    {
+      "name": "Media",
+      "description": "Contains media information.",
+      "url": "/travelgatex/reference/objects/media"
+    },
+    {
+      "name": "Destination",
+      "description": "Destination Type",
+      "url": "/travelgatex/reference/objects/destination"
+    },
+    {
+      "name": "Stat",
+      "description": "",
+      "url": "/travelgatex/reference/objects/stat"
+    },
+    {
+      "name": "AuditData",
+      "description": "Data sent & received in the supplier’s native format.",
+      "url": "/travelgatex/reference/objects/auditdata"
+    },
+    {
+      "name": "Transactions",
+      "description": "Supplier transaction",
+      "url": "/travelgatex/reference/objects/transactions"
+    },
+    {
+      "name": "StatsFilterInput",
+      "description": "Filters needed to do a search.\nUsers (List of users), Suppliers (List of suppliers), ServiceApis (List of service apis), From (Start date of search - YYYY-MM-DD HH:mm:ss), To (End date of search - YYYY-MM-DD HH:mm:ss)",
+      "url": "/travelgatex/reference/inputobjects/statsfilterinput"
+    },
+    {
+      "name": "Stats",
+      "description": "The service used to access the stats of every connection that uses the HUB",
+      "url": "/travelgatex/reference/objects/stats"
+    },
+    {
+      "name": "StatsData",
+      "description": "",
+      "url": "/travelgatex/reference/objects/statsdata"
     },
     {
       "name": "Context",

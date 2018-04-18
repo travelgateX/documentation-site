@@ -60,6 +60,11 @@
       "name": "AdminMutation",
       "description": "",
       "url": "/travelgatex/reference/objects/adminmutation"
+    },
+    {
+      "name": "SupplierDetected",
+      "description": "",
+      "url": "/travelgatex/reference/objects/supplierdetected"
     }
   ],
   "enumValues": null,

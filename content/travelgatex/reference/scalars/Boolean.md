@@ -6,9 +6,59 @@
   "deprecatedFields": null,
   "requireby": [
     {
+      "name": "AccessData",
+      "description": "",
+      "url": "/travelgatex/reference/objects/accessdata"
+    },
+    {
+      "name": "SupplierData",
+      "description": "",
+      "url": "/travelgatex/reference/objects/supplierdata"
+    },
+    {
+      "name": "Provider",
+      "description": "Temporary type to use only during SQL server's lifetime",
+      "url": "/travelgatex/reference/objects/provider"
+    },
+    {
       "name": "PageInfo",
       "description": "",
       "url": "/travelgatex/reference/objects/pageinfo"
+    },
+    {
+      "name": "ClientFilter",
+      "description": "",
+      "url": "/travelgatex/reference/inputobjects/clientfilter"
+    },
+    {
+      "name": "ClientData",
+      "description": "",
+      "url": "/travelgatex/reference/objects/clientdata"
+    },
+    {
+      "name": "OrganizationData",
+      "description": "",
+      "url": "/travelgatex/reference/objects/organizationdata"
+    },
+    {
+      "name": "GroupCommonData",
+      "description": "",
+      "url": "/travelgatex/reference/interfaces/groupcommondata"
+    },
+    {
+      "name": "GroupData",
+      "description": "",
+      "url": "/travelgatex/reference/objects/groupdata"
+    },
+    {
+      "name": "Member",
+      "description": "",
+      "url": "/travelgatex/reference/objects/member"
+    },
+    {
+      "name": "RoleData",
+      "description": "",
+      "url": "/travelgatex/reference/objects/roledata"
     },
     {
       "name": "HotelData",
@@ -71,54 +121,14 @@
       "url": "/travelgatex/reference/objects/cancelpolicy"
     },
     {
-      "name": "AccessData",
-      "description": "",
-      "url": "/travelgatex/reference/objects/accessdata"
+      "name": "StatsFilterInput",
+      "description": "Filters needed to do a search.\nUsers (List of users), Suppliers (List of suppliers), ServiceApis (List of service apis), From (Start date of search - YYYY-MM-DD HH:mm:ss), To (End date of search - YYYY-MM-DD HH:mm:ss)",
+      "url": "/travelgatex/reference/inputobjects/statsfilterinput"
     },
     {
-      "name": "SupplierData",
+      "name": "OperationDetailed",
       "description": "",
-      "url": "/travelgatex/reference/objects/supplierdata"
-    },
-    {
-      "name": "Provider",
-      "description": "Temporary type to use only during SQL server's lifetime",
-      "url": "/travelgatex/reference/objects/provider"
-    },
-    {
-      "name": "ClientFilter",
-      "description": "",
-      "url": "/travelgatex/reference/inputobjects/clientfilter"
-    },
-    {
-      "name": "ClientData",
-      "description": "",
-      "url": "/travelgatex/reference/objects/clientdata"
-    },
-    {
-      "name": "OrganizationData",
-      "description": "",
-      "url": "/travelgatex/reference/objects/organizationdata"
-    },
-    {
-      "name": "GroupCommonData",
-      "description": "",
-      "url": "/travelgatex/reference/interfaces/groupcommondata"
-    },
-    {
-      "name": "GroupData",
-      "description": "",
-      "url": "/travelgatex/reference/objects/groupdata"
-    },
-    {
-      "name": "Member",
-      "description": "",
-      "url": "/travelgatex/reference/objects/member"
-    },
-    {
-      "name": "RoleData",
-      "description": "",
-      "url": "/travelgatex/reference/objects/roledata"
+      "url": "/travelgatex/reference/objects/operationdetailed"
     },
     {
       "name": "Mutation",
@@ -126,19 +136,24 @@
       "url": "/travelgatex/reference/schema/mutation"
     },
     {
-      "name": "DeltaPriceInput",
-      "description": "Input delta price, indicates price variation permitted by the client",
-      "url": "/travelgatex/reference/inputobjects/deltapriceinput"
-    },
-    {
       "name": "AccessInput",
       "description": "Access input",
       "url": "/travelgatex/reference/inputobjects/accessinput"
     },
     {
-      "name": "ClientInput",
+      "name": "CreateClientInput",
       "description": "",
-      "url": "/travelgatex/reference/inputobjects/clientinput"
+      "url": "/travelgatex/reference/inputobjects/createclientinput"
+    },
+    {
+      "name": "UpdateClientInput",
+      "description": "",
+      "url": "/travelgatex/reference/inputobjects/updateclientinput"
+    },
+    {
+      "name": "DeltaPriceInput",
+      "description": "Input delta price, indicates price variation permitted by the client",
+      "url": "/travelgatex/reference/inputobjects/deltapriceinput"
     },
     {
       "name": "SupplierGroup",
@@ -184,6 +199,21 @@
       "name": "IdAccessConfigurationInput",
       "description": "",
       "url": "/travelgatex/reference/inputobjects/idaccessconfigurationinput"
+    },
+    {
+      "name": "MappeaXAddOrganizationInput",
+      "description": "# AddOrganization",
+      "url": "/travelgatex/reference/inputobjects/mappeaxaddorganizationinput"
+    },
+    {
+      "name": "MappeaXEditOrganizationInput",
+      "description": "# EditOrganization",
+      "url": "/travelgatex/reference/inputobjects/mappeaxeditorganizationinput"
+    },
+    {
+      "name": "LegacyData",
+      "description": "The URI type represents a URI values. A good example mith be an Hotel Image URL.\nIn queries or mutations, URI fields have to be specified in RFC 3986, RFC 3987, and RFC 6570 (level 4) compliant URI string format with enclosing double quotes: \"http:\\www.travelgatex.com\".",
+      "url": "/travelgatex/reference/objects/legacydata"
     }
   ],
   "enumValues": null,

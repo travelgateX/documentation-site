@@ -29,7 +29,28 @@
     }
   ],
   "deprecatedFields": null,
-  "requireby": null,
+  "requireby": [
+    {
+      "name": "GetUploadedFilesResponse",
+      "description": "## GetUploadedFiles",
+      "url": "/travelgatex/reference/objects/getuploadedfilesresponse"
+    },
+    {
+      "name": "GetMappeaStatsResponse",
+      "description": "",
+      "url": "/travelgatex/reference/objects/getmappeastatsresponse"
+    },
+    {
+      "name": "OnlyStatusResponse",
+      "description": "## Common Items",
+      "url": "/travelgatex/reference/objects/onlystatusresponse"
+    },
+    {
+      "name": "UploadFileResponse",
+      "description": "",
+      "url": "/travelgatex/reference/objects/uploadfileresponse"
+    }
+  ],
   "enumValues": null,
   "operator": "type",
   "typename": "Warning"
@@ -42,3 +63,7 @@ Application warnings
 ## Fields
 
 {{% graphql-field %}}
+
+## Require by
+
+{{% graphql-require-by %}}

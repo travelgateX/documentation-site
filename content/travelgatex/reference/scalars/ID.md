@@ -6,96 +6,6 @@
   "deprecatedFields": null,
   "requireby": [
     {
-      "name": "HotelXBoardQueryInput",
-      "description": "",
-      "url": "/travelgatex/reference/inputobjects/hotelxboardqueryinput"
-    },
-    {
-      "name": "Board",
-      "description": "Board Type",
-      "url": "/travelgatex/reference/objects/board"
-    },
-    {
-      "name": "Node",
-      "description": "",
-      "url": "/travelgatex/reference/interfaces/node"
-    },
-    {
-      "name": "BoardData",
-      "description": "Board data",
-      "url": "/travelgatex/reference/objects/boarddata"
-    },
-    {
-      "name": "HotelXCategoryQueryInput",
-      "description": "",
-      "url": "/travelgatex/reference/inputobjects/hotelxcategoryqueryinput"
-    },
-    {
-      "name": "Category",
-      "description": "Category Type",
-      "url": "/travelgatex/reference/objects/category"
-    },
-    {
-      "name": "CategoryData",
-      "description": "Category data",
-      "url": "/travelgatex/reference/objects/categorydata"
-    },
-    {
-      "name": "HotelXRoomQueryInput",
-      "description": "",
-      "url": "/travelgatex/reference/inputobjects/hotelxroomqueryinput"
-    },
-    {
-      "name": "RoomStatic",
-      "description": "Room Type",
-      "url": "/travelgatex/reference/objects/roomstatic"
-    },
-    {
-      "name": "RoomData",
-      "description": "Room data",
-      "url": "/travelgatex/reference/objects/roomdata"
-    },
-    {
-      "name": "HotelXHotelListInput",
-      "description": "",
-      "url": "/travelgatex/reference/inputobjects/hotelxhotellistinput"
-    },
-    {
-      "name": "Hotel",
-      "description": "Hotel Type",
-      "url": "/travelgatex/reference/objects/hotel"
-    },
-    {
-      "name": "HotelData",
-      "description": "Hotel data",
-      "url": "/travelgatex/reference/objects/hoteldata"
-    },
-    {
-      "name": "DestinationData",
-      "description": "Information about destinantion",
-      "url": "/travelgatex/reference/objects/destinationdata"
-    },
-    {
-      "name": "HotelXDestinationListInput",
-      "description": "",
-      "url": "/travelgatex/reference/inputobjects/hotelxdestinationlistinput"
-    },
-    {
-      "name": "Destination",
-      "description": "Destination Type",
-      "url": "/travelgatex/reference/objects/destination"
-    },
-    {
-      "name": "HotelXDestinationSearcherInput",
-      "description": "",
-      "url": "/travelgatex/reference/inputobjects/hotelxdestinationsearcherinput"
-    },
-    {
-      "name": "HotelXAccessInput",
-      "description": "AccessInput overwrites an existent access in our Back Office or creates a new\none to be used in this search query only. An access object contains its own code, configuration and settings.",
-      "url": "/travelgatex/reference/inputobjects/hotelxaccessinput"
-    },
-    {
       "name": "AccessFilter",
       "description": "",
       "url": "/travelgatex/reference/inputobjects/accessfilter"
@@ -104,6 +14,11 @@
       "name": "Access",
       "description": "",
       "url": "/travelgatex/reference/objects/access"
+    },
+    {
+      "name": "Node",
+      "description": "",
+      "url": "/travelgatex/reference/interfaces/node"
     },
     {
       "name": "AccessData",
@@ -246,6 +161,101 @@
       "url": "/travelgatex/reference/objects/productdata"
     },
     {
+      "name": "HotelXBoardQueryInput",
+      "description": "",
+      "url": "/travelgatex/reference/inputobjects/hotelxboardqueryinput"
+    },
+    {
+      "name": "Board",
+      "description": "Board Type",
+      "url": "/travelgatex/reference/objects/board"
+    },
+    {
+      "name": "BoardData",
+      "description": "Board data",
+      "url": "/travelgatex/reference/objects/boarddata"
+    },
+    {
+      "name": "HotelXCategoryQueryInput",
+      "description": "",
+      "url": "/travelgatex/reference/inputobjects/hotelxcategoryqueryinput"
+    },
+    {
+      "name": "Category",
+      "description": "Category Type",
+      "url": "/travelgatex/reference/objects/category"
+    },
+    {
+      "name": "CategoryData",
+      "description": "Category data",
+      "url": "/travelgatex/reference/objects/categorydata"
+    },
+    {
+      "name": "HotelXRoomQueryInput",
+      "description": "",
+      "url": "/travelgatex/reference/inputobjects/hotelxroomqueryinput"
+    },
+    {
+      "name": "RoomStatic",
+      "description": "Room Type",
+      "url": "/travelgatex/reference/objects/roomstatic"
+    },
+    {
+      "name": "RoomData",
+      "description": "Room data",
+      "url": "/travelgatex/reference/objects/roomdata"
+    },
+    {
+      "name": "HotelXHotelListInput",
+      "description": "",
+      "url": "/travelgatex/reference/inputobjects/hotelxhotellistinput"
+    },
+    {
+      "name": "Hotel",
+      "description": "Hotel Type",
+      "url": "/travelgatex/reference/objects/hotel"
+    },
+    {
+      "name": "HotelData",
+      "description": "Hotel data",
+      "url": "/travelgatex/reference/objects/hoteldata"
+    },
+    {
+      "name": "DestinationData",
+      "description": "Information about destinantion",
+      "url": "/travelgatex/reference/objects/destinationdata"
+    },
+    {
+      "name": "HotelXDestinationListInput",
+      "description": "",
+      "url": "/travelgatex/reference/inputobjects/hotelxdestinationlistinput"
+    },
+    {
+      "name": "Destination",
+      "description": "Destination Type",
+      "url": "/travelgatex/reference/objects/destination"
+    },
+    {
+      "name": "HotelXDestinationSearcherInput",
+      "description": "",
+      "url": "/travelgatex/reference/inputobjects/hotelxdestinationsearcherinput"
+    },
+    {
+      "name": "HotelXAccessInput",
+      "description": "AccessInput overwrites an existent access in our Back Office or creates a new\none to be used in this search query only. An access object contains its own code, configuration and settings.",
+      "url": "/travelgatex/reference/inputobjects/hotelxaccessinput"
+    },
+    {
+      "name": "Stats",
+      "description": "The service used to access the stats of every connection that uses the HUB",
+      "url": "/travelgatex/reference/objects/stats"
+    },
+    {
+      "name": "StatsInfo",
+      "description": "Details of an specific error",
+      "url": "/travelgatex/reference/objects/statsinfo"
+    },
+    {
       "name": "AccessInput",
       "description": "Access input",
       "url": "/travelgatex/reference/inputobjects/accessinput"
@@ -256,9 +266,9 @@
       "url": "/travelgatex/reference/inputobjects/groupinput"
     },
     {
-      "name": "ClientInput",
+      "name": "UpdateClientInput",
       "description": "",
-      "url": "/travelgatex/reference/inputobjects/clientinput"
+      "url": "/travelgatex/reference/inputobjects/updateclientinput"
     },
     {
       "name": "CreateGroupInput",
@@ -274,6 +284,21 @@
       "name": "DeleteGroupInput",
       "description": "",
       "url": "/travelgatex/reference/inputobjects/deletegroupinput"
+    },
+    {
+      "name": "MappeaXSupplierConfirmedInput",
+      "description": "",
+      "url": "/travelgatex/reference/inputobjects/mappeaxsupplierconfirmedinput"
+    },
+    {
+      "name": "SupplierDetected",
+      "description": "",
+      "url": "/travelgatex/reference/objects/supplierdetected"
+    },
+    {
+      "name": "MappeaXMapSupplierInput",
+      "description": "# MapSupplier",
+      "url": "/travelgatex/reference/inputobjects/mappeaxmapsupplierinput"
     },
     {
       "name": "Context",

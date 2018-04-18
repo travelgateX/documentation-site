@@ -50,6 +50,11 @@
       "name": "OperationEdge",
       "description": "",
       "url": "/travelgatex/reference/objects/operationedge"
+    },
+    {
+      "name": "OperationDetailed",
+      "description": "",
+      "url": "/travelgatex/reference/objects/operationdetailed"
     }
   ],
   "enumValues": null,

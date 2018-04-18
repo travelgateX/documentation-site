@@ -4,6 +4,14 @@
   "weight": 1,
   "fields": [
     {
+      "typeString": "AdminMutation",
+      "name": "admin",
+      "url": "/travelgatex/reference/objects/adminmutation",
+      "description": "",
+      "isDeprecated": false,
+      "args": null
+    },
+    {
       "typeString": "HotelXMutation",
       "name": "hotelX",
       "url": "/travelgatex/reference/objects/hotelxmutation",
@@ -12,9 +20,9 @@
       "args": null
     },
     {
-      "typeString": "AdminMutation",
-      "name": "admin",
-      "url": "/travelgatex/reference/objects/adminmutation",
+      "typeString": "MappeaMutation",
+      "name": "mappea",
+      "url": "/travelgatex/reference/objects/mappeamutation",
       "description": "",
       "isDeprecated": false,
       "args": null
