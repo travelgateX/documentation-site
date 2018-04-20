@@ -369,7 +369,7 @@ discourseUrl = "http://community.travelgatex.com/"
     details = [
         ["icon-home", "Carrer Galileo Galilei, <br> ParcBit 07121 Palma, Illes Balears, Spain"],
         ["icon-phone", "(+34) 871 968 181"],
-        ["icon-envelope", "tech@travelgatex.com"],
+        ["icon-envelope", "info@travelgatex.com"],
         ["icon-globe", '<a href="http://www.travelgatex.com/" target="_blank">travelgatex.com</a>']
       ]
 
