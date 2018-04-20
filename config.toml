@@ -84,7 +84,7 @@ discourseUrl = "http://community.travelgatex.com/"
      weight = 9
     # postpended links
     [[menu.prepend]]
-     url = "https://slackin-rtuljhzuqi.now.sh/"
+     url = "https://slack.travelgatex.com/"
      name = "Community"
      weight = 10
      # prepended links
