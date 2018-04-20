@@ -13,7 +13,7 @@ git pull origin master
 cd ..
 
 # Build the project.
-hugo # if using a theme, replace with `hugo -t <YOURTHEME>`
+hugo -d public # if using a theme, replace with `hugo -t <YOURTHEME>`
 
 cd public
 # Add changes to git.
