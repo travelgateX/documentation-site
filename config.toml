@@ -60,9 +60,9 @@ discourseUrl = "http://community.travelgatex.com/"
   #custom_css = ["css/blue.css"]
 
   # Meta
-  author = "TravelgateX ByXTG"
+  author = "TravelgateX By XTG"
   description = "All you want and need to know about travelgateX state-of-the-art GraphQL APIs. Start your next travel project here."
-  email = "info@travelgatex.com"
+  email = "tech@travelgatex.com"
   # Navigation
   [params.navigation]
     brand = '<img src="images/xtg_logo.svg"/>'
