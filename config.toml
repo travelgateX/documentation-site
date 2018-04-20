@@ -49,7 +49,7 @@ themeStyle = "flex" # "original" or "flex" # default "original"
 #themeVariant = "blue" # choose theme variant "green", "gold" , "gray", "blue" (default)
 ordersectionsby = "weight" # ordersectionsby = "title"
 #disableHomeIcon = false # default is false
-disableSearch = true # default is false
+disableSearch = false # default is false
 #disableNavChevron = false # set true to hide next/prev chevron, default is false
 
 discourseUrl = "http://community.travelgatex.com/"
@@ -60,9 +60,9 @@ discourseUrl = "http://community.travelgatex.com/"
   #custom_css = ["css/blue.css"]
 
   # Meta
-  author = "TravelgateX ByTGX"
+  author = "TravelgateX ByXTG"
   description = "All you want and need to know about travelgateX state-of-the-art GraphQL APIs. Start your next travel project here."
-  email = "dcalle@xmltravelgate.com"
+  email = "info@travelgatex.com"
   # Navigation
   [params.navigation]
     brand = '<img src="images/xtg_logo.svg"/>'
@@ -147,7 +147,7 @@ discourseUrl = "http://community.travelgatex.com/"
   [params.welcome]
     enable = true
     title = "Connecting the dots"
-    description = "At TravelgateX, we’ve integrated 100s of travel APIs. This is why we’ve decided to build the first travel API focused on Developer eXperience. Welcome to HotelX, the world’s most advanced and disruptive GraphQL based Travel API."
+    description = "At TravelgateX, we’ve integrated 100s of travel APIs. This is why we’ve decided to build the first travel API focused on Developer eXperience. Welcome to HotelX, the world’s most advanced and disruptive GraphQL based Travel API. HotelX takes care of most pains involved in integrating hotel APIs, and works in a flexible manner so that you are alwayes in charge of what gets executed, how, when and why."
 
   # Work section
   [params.work]
@@ -189,7 +189,7 @@ discourseUrl = "http://community.travelgatex.com/"
       img = "inventory.svg"
       alt = "Inventory"
       title = "Inventory"
-      subtitle = "Inventory is the right solution by TGX for those clients willing to connect their offline product."
+      subtitle = "Inventory is the right solution for those clients willing to connect their offline product."
 
 
     [[params.work.row]]
@@ -197,7 +197,7 @@ discourseUrl = "http://community.travelgatex.com/"
       img = "speed.svg"
       alt = "Speed"
       title = "Speed"
-      subtitle = "Speed ​​is the smart cache solution designed entirely by TGX that manages to reduce the number of requests by up to 80%"
+      subtitle = "Speed is the smart cache solution designed entirely by TravegateX that manages to reduce the number of requests by up to 80%"
 
 
     [[params.work.row]]
@@ -361,13 +361,13 @@ discourseUrl = "http://community.travelgatex.com/"
   # Contact section
   [params.contact]
     enable = true
-    map = false
+    map = true
     title = "Get in touch"
-    description = "We´d love to hear from you! Please feel free to use any of the forms below to get in touch."
+    description = "We´d love to hear from you! Drop us a line and we'll get back to you shortly."
 
     # Available icons: http://simplelineicons.com/
     details = [
-        ["icon-home", "Carrer Galileo Galilei,<br>ParcBit 07121 Palma, Illes Balears, Spain"],
+        ["icon-home", "Carrer Galileo Galilei, <br> ParcBit 07121 Palma, Illes Balears, Spain"],
         ["icon-phone", "(+34) 871 968 181"],
         ["icon-envelope", "tech@travelgatex.com"],
         ["icon-globe", '<a href="http://www.travelgatex.com/" target="_blank">travelgatex.com</a>']
@@ -382,4 +382,4 @@ discourseUrl = "http://community.travelgatex.com/"
   # Footer section
   [params.footer]
     enable = true
-    copyright = '&copy; <a title="TGX" target="_blank" href="https://www.travelgatex.com/" style="color: white;font-weight: bold;">TravelgateX</a> 2018. All Rights Reserved.TravelgateX is an <a title="TGX" target="_blank" href="https://www.xmltravelgate.com/" style="color: white;font-weight: bold;">TGX</a> Brand.'
+    copyright = '&copy; <a title="TravelgateX" target="_blank" href="https://www.travelgatex.com/" style="color: white;font-weight: bold;">TravelgateX</a> 2018. All Rights Reserved. TravelgateX is made with &#9829; in the beaultiful  🏝️ of Mallorca.'
