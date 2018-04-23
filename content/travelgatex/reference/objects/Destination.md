@@ -23,7 +23,7 @@
       "typeString": "[Error!]",
       "name": "error",
       "url": "/travelgatex/reference/objects/error",
-      "description": "Errors that will lead the service to abort",
+      "description": "Errors that will cause the service to abort",
       "isDeprecated": false,
       "args": null
     },
@@ -56,8 +56,8 @@
   "operator": "type",
   "typename": "Destination"
 }
-Destination Type
-## GraphQL Schema definition
+Destination type
+## GraphQL schema definition
 
 {{% graphql-schema-type %}}
 
@@ -65,6 +65,6 @@ Destination Type
 
 {{% graphql-field %}}
 
-## Require by
+## Required by
 
 {{% graphql-require-by %}}
