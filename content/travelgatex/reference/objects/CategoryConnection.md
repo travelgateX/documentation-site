@@ -33,7 +33,7 @@
   "typename": "CategoryConnection"
 }
 CategoryList definition
-## GraphQL Schema definition
+## GraphQL schema definition
 
 {{% graphql-schema-type %}}
 
@@ -41,6 +41,6 @@ CategoryList definition
 
 {{% graphql-field %}}
 
-## Require by
+## Required by
 
 {{% graphql-require-by %}}
