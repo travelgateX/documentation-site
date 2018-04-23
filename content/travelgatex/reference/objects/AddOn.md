@@ -7,7 +7,7 @@
       "typeString": "String!",
       "name": "key",
       "url": "/travelgatex/reference/scalars/string",
-      "description": "Contains the keyword/Id to identify the AddOn.",
+      "description": "Contains keyword/ID to identify the AddOn.",
       "isDeprecated": false,
       "args": null
     },
@@ -15,7 +15,7 @@
       "typeString": "JSON!",
       "name": "value",
       "url": "/travelgatex/reference/scalars/json",
-      "description": "Contains the AddOn values.",
+      "description": "Contains AddOn values.",
       "isDeprecated": false,
       "args": null
     }
@@ -26,8 +26,8 @@
   "operator": "type",
   "typename": "AddOn"
 }
-Extra information about the option.
-## GraphQL Schema definition
+Additional information about the option [Editor's note: "the option" is unclear here. Does it refer to AddOn or something else?].
+## GraphQL schema definition
 
 {{% graphql-schema-type %}}
 
