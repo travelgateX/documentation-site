@@ -21,14 +21,6 @@
     },
     {
       "typeString": "String",
-      "name": "roles",
-      "url": "/travelgatex/reference/scalars/string",
-      "description": "",
-      "isDeprecated": false,
-      "args": null
-    },
-    {
-      "typeString": "String",
       "name": "memberType",
       "url": "/travelgatex/reference/scalars/string",
       "description": "",
@@ -39,6 +31,45 @@
       "typeString": "GroupConnection",
       "name": "groups",
       "url": "/travelgatex/reference/objects/groupconnection",
+      "description": "",
+      "isDeprecated": false,
+      "args": [
+        {
+          "typeString": "Int",
+          "name": "first",
+          "url": "/travelgatex/reference/scalars/int",
+          "description": ""
+        },
+        {
+          "typeString": "Int",
+          "name": "last",
+          "url": "/travelgatex/reference/scalars/int",
+          "description": ""
+        },
+        {
+          "typeString": "String",
+          "name": "before",
+          "url": "/travelgatex/reference/scalars/string",
+          "description": ""
+        },
+        {
+          "typeString": "String",
+          "name": "after",
+          "url": "/travelgatex/reference/scalars/string",
+          "description": ""
+        },
+        {
+          "typeString": "[ID!]",
+          "name": "codes",
+          "url": "/travelgatex/reference/scalars/id",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "typeString": "RoleConnection",
+      "name": "roles",
+      "url": "/travelgatex/reference/objects/roleconnection",
       "description": "",
       "isDeprecated": false,
       "args": [

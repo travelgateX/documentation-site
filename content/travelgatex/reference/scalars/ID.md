@@ -6,6 +6,161 @@
   "deprecatedFields": null,
   "requireby": [
     {
+      "name": "AccessFilter",
+      "description": "",
+      "url": "/travelgatex/reference/inputobjects/accessfilter"
+    },
+    {
+      "name": "Access",
+      "description": "",
+      "url": "/travelgatex/reference/objects/access"
+    },
+    {
+      "name": "Node",
+      "description": "",
+      "url": "/travelgatex/reference/interfaces/node"
+    },
+    {
+      "name": "AccessData",
+      "description": "",
+      "url": "/travelgatex/reference/objects/accessdata"
+    },
+    {
+      "name": "Supplier",
+      "description": "",
+      "url": "/travelgatex/reference/objects/supplier"
+    },
+    {
+      "name": "SupplierData",
+      "description": "",
+      "url": "/travelgatex/reference/objects/supplierdata"
+    },
+    {
+      "name": "Provider",
+      "description": "Temporary type to use only during SQL server's lifetime",
+      "url": "/travelgatex/reference/objects/provider"
+    },
+    {
+      "name": "Parameter",
+      "description": "Parameters for additional information for the supplier's configuration.",
+      "url": "/travelgatex/reference/objects/parameter"
+    },
+    {
+      "name": "SupplierFilter",
+      "description": "",
+      "url": "/travelgatex/reference/inputobjects/supplierfilter"
+    },
+    {
+      "name": "ClientFilter",
+      "description": "",
+      "url": "/travelgatex/reference/inputobjects/clientfilter"
+    },
+    {
+      "name": "Client",
+      "description": "",
+      "url": "/travelgatex/reference/objects/client"
+    },
+    {
+      "name": "ClientData",
+      "description": "",
+      "url": "/travelgatex/reference/objects/clientdata"
+    },
+    {
+      "name": "ServiceApi",
+      "description": "Information related to a Service API",
+      "url": "/travelgatex/reference/objects/serviceapi"
+    },
+    {
+      "name": "ServiceOperation",
+      "description": "Information related to an API operation",
+      "url": "/travelgatex/reference/objects/serviceoperation"
+    },
+    {
+      "name": "Organization",
+      "description": "",
+      "url": "/travelgatex/reference/objects/organization"
+    },
+    {
+      "name": "OrganizationData",
+      "description": "",
+      "url": "/travelgatex/reference/objects/organizationdata"
+    },
+    {
+      "name": "GroupCommonData",
+      "description": "",
+      "url": "/travelgatex/reference/interfaces/groupcommondata"
+    },
+    {
+      "name": "Group",
+      "description": "",
+      "url": "/travelgatex/reference/objects/group"
+    },
+    {
+      "name": "GroupData",
+      "description": "",
+      "url": "/travelgatex/reference/objects/groupdata"
+    },
+    {
+      "name": "Member",
+      "description": "",
+      "url": "/travelgatex/reference/objects/member"
+    },
+    {
+      "name": "MemberData",
+      "description": "",
+      "url": "/travelgatex/reference/objects/memberdata"
+    },
+    {
+      "name": "Role",
+      "description": "",
+      "url": "/travelgatex/reference/objects/role"
+    },
+    {
+      "name": "RoleData",
+      "description": "",
+      "url": "/travelgatex/reference/objects/roledata"
+    },
+    {
+      "name": "Resource",
+      "description": "",
+      "url": "/travelgatex/reference/objects/resource"
+    },
+    {
+      "name": "ResourceData",
+      "description": "",
+      "url": "/travelgatex/reference/objects/resourcedata"
+    },
+    {
+      "name": "API",
+      "description": "",
+      "url": "/travelgatex/reference/objects/api"
+    },
+    {
+      "name": "APIData",
+      "description": "",
+      "url": "/travelgatex/reference/objects/apidata"
+    },
+    {
+      "name": "Operation",
+      "description": "",
+      "url": "/travelgatex/reference/objects/operation"
+    },
+    {
+      "name": "OperationData",
+      "description": "",
+      "url": "/travelgatex/reference/objects/operationdata"
+    },
+    {
+      "name": "Product",
+      "description": "",
+      "url": "/travelgatex/reference/objects/product"
+    },
+    {
+      "name": "ProductData",
+      "description": "",
+      "url": "/travelgatex/reference/objects/productdata"
+    },
+    {
       "name": "HotelXBoardQueryInput",
       "description": "",
       "url": "/travelgatex/reference/inputobjects/hotelxboardqueryinput"
@@ -14,11 +169,6 @@
       "name": "Board",
       "description": "Board Type",
       "url": "/travelgatex/reference/objects/board"
-    },
-    {
-      "name": "Node",
-      "description": "",
-      "url": "/travelgatex/reference/interfaces/node"
     },
     {
       "name": "BoardData",
@@ -96,144 +246,14 @@
       "url": "/travelgatex/reference/inputobjects/hotelxaccessinput"
     },
     {
-      "name": "AccessFilter",
-      "description": "",
-      "url": "/travelgatex/reference/inputobjects/accessfilter"
+      "name": "Stats",
+      "description": "The service used to access the stats of every connection that uses the HUB",
+      "url": "/travelgatex/reference/objects/stats"
     },
     {
-      "name": "Access",
-      "description": "",
-      "url": "/travelgatex/reference/objects/access"
-    },
-    {
-      "name": "AccessData",
-      "description": "",
-      "url": "/travelgatex/reference/objects/accessdata"
-    },
-    {
-      "name": "Supplier",
-      "description": "",
-      "url": "/travelgatex/reference/objects/supplier"
-    },
-    {
-      "name": "SupplierData",
-      "description": "",
-      "url": "/travelgatex/reference/objects/supplierdata"
-    },
-    {
-      "name": "Provider",
-      "description": "Temporary type to use only during SQL server's lifetime",
-      "url": "/travelgatex/reference/objects/provider"
-    },
-    {
-      "name": "Parameter",
-      "description": "Parameters for additional information for the supplier's configuration.",
-      "url": "/travelgatex/reference/objects/parameter"
-    },
-    {
-      "name": "SupplierFilter",
-      "description": "",
-      "url": "/travelgatex/reference/inputobjects/supplierfilter"
-    },
-    {
-      "name": "ClientFilter",
-      "description": "",
-      "url": "/travelgatex/reference/inputobjects/clientfilter"
-    },
-    {
-      "name": "Client",
-      "description": "",
-      "url": "/travelgatex/reference/objects/client"
-    },
-    {
-      "name": "ClientData",
-      "description": "",
-      "url": "/travelgatex/reference/objects/clientdata"
-    },
-    {
-      "name": "ServiceApi",
-      "description": "Information related to a Service API",
-      "url": "/travelgatex/reference/objects/serviceapi"
-    },
-    {
-      "name": "ServiceOperation",
-      "description": "Information related to an API operation",
-      "url": "/travelgatex/reference/objects/serviceoperation"
-    },
-    {
-      "name": "Organization",
-      "description": "",
-      "url": "/travelgatex/reference/objects/organization"
-    },
-    {
-      "name": "OrganizationData",
-      "description": "",
-      "url": "/travelgatex/reference/objects/organizationdata"
-    },
-    {
-      "name": "GroupCommonData",
-      "description": "",
-      "url": "/travelgatex/reference/interfaces/groupcommondata"
-    },
-    {
-      "name": "Member",
-      "description": "",
-      "url": "/travelgatex/reference/objects/member"
-    },
-    {
-      "name": "MemberData",
-      "description": "",
-      "url": "/travelgatex/reference/objects/memberdata"
-    },
-    {
-      "name": "Group",
-      "description": "",
-      "url": "/travelgatex/reference/objects/group"
-    },
-    {
-      "name": "GroupData",
-      "description": "",
-      "url": "/travelgatex/reference/objects/groupdata"
-    },
-    {
-      "name": "API",
-      "description": "",
-      "url": "/travelgatex/reference/objects/api"
-    },
-    {
-      "name": "APIData",
-      "description": "",
-      "url": "/travelgatex/reference/objects/apidata"
-    },
-    {
-      "name": "Resource",
-      "description": "",
-      "url": "/travelgatex/reference/objects/resource"
-    },
-    {
-      "name": "ResourceData",
-      "description": "",
-      "url": "/travelgatex/reference/objects/resourcedata"
-    },
-    {
-      "name": "Role",
-      "description": "",
-      "url": "/travelgatex/reference/objects/role"
-    },
-    {
-      "name": "RoleData",
-      "description": "",
-      "url": "/travelgatex/reference/objects/roledata"
-    },
-    {
-      "name": "Product",
-      "description": "",
-      "url": "/travelgatex/reference/objects/product"
-    },
-    {
-      "name": "ProductData",
-      "description": "",
-      "url": "/travelgatex/reference/objects/productdata"
+      "name": "StatsInfo",
+      "description": "Details of an specific error",
+      "url": "/travelgatex/reference/objects/statsinfo"
     },
     {
       "name": "AccessInput",
@@ -246,9 +266,9 @@
       "url": "/travelgatex/reference/inputobjects/groupinput"
     },
     {
-      "name": "ClientInput",
+      "name": "UpdateClientInput",
       "description": "",
-      "url": "/travelgatex/reference/inputobjects/clientinput"
+      "url": "/travelgatex/reference/inputobjects/updateclientinput"
     },
     {
       "name": "CreateGroupInput",
@@ -264,6 +284,21 @@
       "name": "DeleteGroupInput",
       "description": "",
       "url": "/travelgatex/reference/inputobjects/deletegroupinput"
+    },
+    {
+      "name": "MappeaXSupplierConfirmedInput",
+      "description": "",
+      "url": "/travelgatex/reference/inputobjects/mappeaxsupplierconfirmedinput"
+    },
+    {
+      "name": "SupplierDetected",
+      "description": "",
+      "url": "/travelgatex/reference/objects/supplierdetected"
+    },
+    {
+      "name": "MappeaXMapSupplierInput",
+      "description": "# MapSupplier",
+      "url": "/travelgatex/reference/inputobjects/mappeaxmapsupplierinput"
     },
     {
       "name": "Context",

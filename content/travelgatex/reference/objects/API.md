@@ -50,6 +50,11 @@
       "name": "APIEdge",
       "description": "",
       "url": "/travelgatex/reference/objects/apiedge"
+    },
+    {
+      "name": "OperationData",
+      "description": "",
+      "url": "/travelgatex/reference/objects/operationdata"
     }
   ],
   "enumValues": null,

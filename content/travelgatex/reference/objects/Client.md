@@ -52,6 +52,11 @@
       "url": "/travelgatex/reference/objects/clientedge"
     },
     {
+      "name": "StatsData",
+      "description": "",
+      "url": "/travelgatex/reference/objects/statsdata"
+    },
+    {
       "name": "AdminMutation",
       "description": "",
       "url": "/travelgatex/reference/objects/adminmutation"

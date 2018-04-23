@@ -50,6 +50,8 @@ function parseFields(type, addToDeprecated) {
     var args = null;
     let descriptionSplitted = null;
 
+    // Looks for a date inside the description, which would indicate deprecation. 
+    // Description is splitted so it can be put inside an anchor for reference
     if (/(\d{4})([\/-])(\d{1,2})\2(\d{1,2})/.test(field.description)) {
       const splittedDescription = field.description.split(' ');
 
@@ -74,6 +76,7 @@ function parseFields(type, addToDeprecated) {
       LOG.push({ info: field.description, date: date, name: field.name });
     }
 
+    // Looks for '@deprecated' substring inside the description
     if (field.description.indexOf('@deprecated') !== -1) {
       if (!addToDeprecated) {
         invalid = true;
@@ -99,7 +102,6 @@ function parseFields(type, addToDeprecated) {
       if (descriptionSplitted) {
         newfield.descriptionSplitted = descriptionSplitted;
       }
-      console.log(newfield);
       fieldsList.push(newfield);
     } else if (!addToDeprecated && !newfield.isDeprecated) {
       if (!invalid) {

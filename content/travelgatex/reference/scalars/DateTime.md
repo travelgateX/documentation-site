@@ -6,14 +6,69 @@
   "deprecatedFields": null,
   "requireby": [
     {
-      "name": "Board",
-      "description": "Board Type",
-      "url": "/travelgatex/reference/objects/board"
+      "name": "Access",
+      "description": "",
+      "url": "/travelgatex/reference/objects/access"
     },
     {
       "name": "Node",
       "description": "",
       "url": "/travelgatex/reference/interfaces/node"
+    },
+    {
+      "name": "Supplier",
+      "description": "",
+      "url": "/travelgatex/reference/objects/supplier"
+    },
+    {
+      "name": "Client",
+      "description": "",
+      "url": "/travelgatex/reference/objects/client"
+    },
+    {
+      "name": "Organization",
+      "description": "",
+      "url": "/travelgatex/reference/objects/organization"
+    },
+    {
+      "name": "Group",
+      "description": "",
+      "url": "/travelgatex/reference/objects/group"
+    },
+    {
+      "name": "Member",
+      "description": "",
+      "url": "/travelgatex/reference/objects/member"
+    },
+    {
+      "name": "Role",
+      "description": "",
+      "url": "/travelgatex/reference/objects/role"
+    },
+    {
+      "name": "Resource",
+      "description": "",
+      "url": "/travelgatex/reference/objects/resource"
+    },
+    {
+      "name": "API",
+      "description": "",
+      "url": "/travelgatex/reference/objects/api"
+    },
+    {
+      "name": "Operation",
+      "description": "",
+      "url": "/travelgatex/reference/objects/operation"
+    },
+    {
+      "name": "Product",
+      "description": "",
+      "url": "/travelgatex/reference/objects/product"
+    },
+    {
+      "name": "Board",
+      "description": "Board Type",
+      "url": "/travelgatex/reference/objects/board"
     },
     {
       "name": "Category",
@@ -56,54 +111,19 @@
       "url": "/travelgatex/reference/objects/transactions"
     },
     {
-      "name": "Access",
-      "description": "",
-      "url": "/travelgatex/reference/objects/access"
+      "name": "StatsFilterInput",
+      "description": "Filters needed to do a search.\nUsers (List of users), Suppliers (List of suppliers), ServiceApis (List of service apis), From (Start date of search - YYYY-MM-DD HH:mm:ss), To (End date of search - YYYY-MM-DD HH:mm:ss)",
+      "url": "/travelgatex/reference/inputobjects/statsfilterinput"
     },
     {
-      "name": "Supplier",
-      "description": "",
-      "url": "/travelgatex/reference/objects/supplier"
+      "name": "Stats",
+      "description": "The service used to access the stats of every connection that uses the HUB",
+      "url": "/travelgatex/reference/objects/stats"
     },
     {
-      "name": "Client",
+      "name": "StatsData",
       "description": "",
-      "url": "/travelgatex/reference/objects/client"
-    },
-    {
-      "name": "Organization",
-      "description": "",
-      "url": "/travelgatex/reference/objects/organization"
-    },
-    {
-      "name": "Member",
-      "description": "",
-      "url": "/travelgatex/reference/objects/member"
-    },
-    {
-      "name": "Group",
-      "description": "",
-      "url": "/travelgatex/reference/objects/group"
-    },
-    {
-      "name": "API",
-      "description": "",
-      "url": "/travelgatex/reference/objects/api"
-    },
-    {
-      "name": "Resource",
-      "description": "",
-      "url": "/travelgatex/reference/objects/resource"
-    },
-    {
-      "name": "Role",
-      "description": "",
-      "url": "/travelgatex/reference/objects/role"
-    },
-    {
-      "name": "Product",
-      "description": "",
-      "url": "/travelgatex/reference/objects/product"
+      "url": "/travelgatex/reference/objects/statsdata"
     },
     {
       "name": "Context",

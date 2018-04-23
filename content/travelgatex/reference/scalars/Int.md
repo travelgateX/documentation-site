@@ -6,6 +6,21 @@
   "deprecatedFields": null,
   "requireby": [
     {
+      "name": "SupplierData",
+      "description": "",
+      "url": "/travelgatex/reference/objects/supplierdata"
+    },
+    {
+      "name": "ServiceOperation",
+      "description": "Information related to an API operation",
+      "url": "/travelgatex/reference/objects/serviceoperation"
+    },
+    {
+      "name": "GroupData",
+      "description": "",
+      "url": "/travelgatex/reference/objects/groupdata"
+    },
+    {
       "name": "RelayInput",
       "description": "",
       "url": "/travelgatex/reference/inputobjects/relayinput"
@@ -91,14 +106,29 @@
       "url": "/travelgatex/reference/objects/bookingroom"
     },
     {
-      "name": "SupplierData",
-      "description": "",
-      "url": "/travelgatex/reference/objects/supplierdata"
+      "name": "Ratios",
+      "description": "Details of look to quote and look to book.",
+      "url": "/travelgatex/reference/objects/ratios"
     },
     {
-      "name": "GroupData",
+      "name": "OperationDetailed",
       "description": "",
-      "url": "/travelgatex/reference/objects/groupdata"
+      "url": "/travelgatex/reference/objects/operationdetailed"
+    },
+    {
+      "name": "StatsInfo",
+      "description": "Details of an specific error",
+      "url": "/travelgatex/reference/objects/statsinfo"
+    },
+    {
+      "name": "File",
+      "description": "",
+      "url": "/travelgatex/reference/objects/file"
+    },
+    {
+      "name": "GetMappeaStatsData",
+      "description": "",
+      "url": "/travelgatex/reference/objects/getmappeastatsdata"
     },
     {
       "name": "Timeout",
@@ -124,6 +154,26 @@
       "name": "BookPaxInput",
       "description": "Input BookPax contains basic information abaout pax suach as name, surname and age.",
       "url": "/travelgatex/reference/inputobjects/bookpaxinput"
+    },
+    {
+      "name": "MappeaXConfirmUploadInput",
+      "description": "## ConfirmUpload",
+      "url": "/travelgatex/reference/inputobjects/mappeaxconfirmuploadinput"
+    },
+    {
+      "name": "UploadFileData",
+      "description": "",
+      "url": "/travelgatex/reference/objects/uploadfiledata"
+    },
+    {
+      "name": "SupplierDetected",
+      "description": "",
+      "url": "/travelgatex/reference/objects/supplierdetected"
+    },
+    {
+      "name": "MappeaXMapSupplierInput",
+      "description": "# MapSupplier",
+      "url": "/travelgatex/reference/inputobjects/mappeaxmapsupplierinput"
     },
     {
       "name": "TimeoutInput",

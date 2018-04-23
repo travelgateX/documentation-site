@@ -4,6 +4,14 @@
   "weight": 1,
   "fields": [
     {
+      "typeString": "AdminQuery",
+      "name": "admin",
+      "url": "/travelgatex/reference/objects/adminquery",
+      "description": "",
+      "isDeprecated": false,
+      "args": null
+    },
+    {
       "typeString": "HotelXQuery",
       "name": "hotelX",
       "url": "/travelgatex/reference/objects/hotelxquery",
@@ -12,9 +20,17 @@
       "args": null
     },
     {
-      "typeString": "AdminQuery",
-      "name": "admin",
-      "url": "/travelgatex/reference/objects/adminquery",
+      "typeString": "StatsQuery",
+      "name": "stats",
+      "url": "/travelgatex/reference/objects/statsquery",
+      "description": "",
+      "isDeprecated": false,
+      "args": null
+    },
+    {
+      "typeString": "MappeaQuery",
+      "name": "mappea",
+      "url": "/travelgatex/reference/objects/mappeaquery",
       "description": "",
       "isDeprecated": false,
       "args": null

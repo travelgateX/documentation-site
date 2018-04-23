@@ -101,9 +101,9 @@
       "isDeprecated": false,
       "args": [
         {
-          "typeString": "ClientInput!",
+          "typeString": "CreateClientInput!",
           "name": "input",
-          "url": "/travelgatex/reference/inputobjects/clientinput",
+          "url": "/travelgatex/reference/inputobjects/createclientinput",
           "description": ""
         }
       ]
@@ -116,9 +116,9 @@
       "isDeprecated": false,
       "args": [
         {
-          "typeString": "ClientInput!",
+          "typeString": "UpdateClientInput!",
           "name": "input",
-          "url": "/travelgatex/reference/inputobjects/clientinput",
+          "url": "/travelgatex/reference/inputobjects/updateclientinput",
           "description": ""
         }
       ]

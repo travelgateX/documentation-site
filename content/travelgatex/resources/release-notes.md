@@ -10,6 +10,139 @@ hidden = false
 
 Check out this list of new releases and changes applied on the **TravelgateX GraphQL API**.
 
+## 2018-04-18
+
+⚠️  Type for argument `input` on field `AdminMutation.updateClient` changed from `ClientInput!` to `UpdateClientInput!`
+
+⚠️  Type for argument `input` on field `AdminMutation.createClient` changed from `ClientInput!` to `CreateClientInput!`
+
+⚠️  Field `StatsData` was removed from object type `Stats`
+
+⚠️  `ClientInput` was removed
+
+✅  Field `statsData` was added to object type `Stats`
+
+✅  Type `MappeaXEditOrganizationInput` was added
+
+✅  Type `MappeaXAddOrganizationInput` was added
+
+✅  Type `UpdateClientInput` was added
+
+✅  Type `CreateClientInput` was added
+
+## 2018-04-17
+
+⚠️  Field `MemberData.roles` changed type from `String` to `RoleConnection`
+
+✅  Field `mappea` was added to object type `Mutation`
+
+✅  Field `operations` was added to object type `APIData`
+
+✅  Field `children` was added to object type `GroupData`
+
+✅  Argument `codes: [ID!]` added to field `MemberData.roles`
+
+✅  Argument `after: String` added to field `MemberData.roles`
+
+✅  Argument `before: String` added to field `MemberData.roles`
+
+✅  Argument `last: Int` added to field `MemberData.roles`
+
+✅  Argument `first: Int` added to field `MemberData.roles`
+
+✅  Field `children` was added to object type `GroupCommonData`
+
+✅  Field `children` was added to object type `OrganizationData`
+
+✅  Field `travelOperation` was added to object type `ServiceOperation`
+
+✅  Field `operations` was added to object type `AdminQuery`
+
+✅  Input field `HotelSettingsInput.client` description changed from `This field is got only if the authorization header is of the type JWT. It is used for to change the user that
+
+has been set by default in the preload.` to `This field is got only if the authorization header is of the type JWT. It is used to change the user that has been set by default in the preload.`
+
+✅  Input field `HotelSettingsInput.connectUser` description changed from `This field is got only if the authorization header is of the type JWT. It is used for to change the user that
+
+has been set by default in the preload.
+
+@deprecated(reason: "deprecated from 2018-03-19. Redundant.")` to `This field is got only if the authorization header is of the type JWT. It is used to change the user that has been set by default in the preload.
+
+@deprecated(reason: "deprecated from 2018-03-19. Redundant.")`
+
+✅  Input field `group` was added to input object type `HotelSettingsInput`
+
+✅  Field `mappea` was added to object type `Query`
+
+✅  Field `stats` was added to object type `Query`
+
+✅  Type `LegacyData` was added
+
+✅  Type `MappeaXMapSupplierInput` was added
+
+✅  Type `MappeaXUploadFileInput` was added
+
+✅  Type `SupplierDetected` was added
+
+✅  Type `UploadFileData` was added
+
+✅  Type `UploadFileResponse` was added
+
+✅  Type `MappeaXSupplierConfirmedInput` was added
+
+✅  Type `MappeaXConfirmUploadInput` was added
+
+✅  Type `OnlyStatusResponse` was added
+
+✅  Type `MappeaMutation` was added
+
+✅  Type `MappeaXGetMappeaStatsInput` was added
+
+✅  Type `GetMappeaStatsData` was added
+
+✅  Type `GetMappeaStatsResponse` was added
+
+✅  Type `File` was added
+
+✅  Type `GetUploadedFilesData` was added
+
+✅  Type `GetUploadedFilesResponse` was added
+
+✅  Type `MappeaQuery` was added
+
+✅  Type `ServiceApiType` was added
+
+✅  Type `StatsFilterInput` was added
+
+✅  Type `ServiceOperationType` was added
+
+✅  Type `StatsInfoTypes` was added
+
+✅  Type `StatsInfo` was added
+
+✅  Type `OperationDetailed` was added
+
+✅  Type `Ratios` was added
+
+✅  Type `StatsData` was added
+
+✅  Type `Stats` was added
+
+✅  Type `StatsEdge` was added
+
+✅  Type `StatsConnection` was added
+
+✅  Type `StatsQuery` was added
+
+✅  Type `OperationData` was added
+
+✅  Type `Operation` was added
+
+✅  Type `OperationEdge` was added
+
+✅  Type `OperationConnection` was added
+
+
 ## 2018-04-03
 
 ⚠️  Input field `accesses` was removed from input object type `ClientInput`

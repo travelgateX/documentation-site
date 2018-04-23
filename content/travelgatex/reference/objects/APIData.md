@@ -96,6 +96,45 @@
           "description": ""
         }
       ]
+    },
+    {
+      "typeString": "OperationConnection",
+      "name": "operations",
+      "url": "/travelgatex/reference/objects/operationconnection",
+      "description": "",
+      "isDeprecated": false,
+      "args": [
+        {
+          "typeString": "Int",
+          "name": "first",
+          "url": "/travelgatex/reference/scalars/int",
+          "description": ""
+        },
+        {
+          "typeString": "Int",
+          "name": "last",
+          "url": "/travelgatex/reference/scalars/int",
+          "description": ""
+        },
+        {
+          "typeString": "String",
+          "name": "before",
+          "url": "/travelgatex/reference/scalars/string",
+          "description": ""
+        },
+        {
+          "typeString": "String",
+          "name": "after",
+          "url": "/travelgatex/reference/scalars/string",
+          "description": ""
+        },
+        {
+          "typeString": "[ID!]",
+          "name": "codes",
+          "url": "/travelgatex/reference/scalars/id",
+          "description": ""
+        }
+      ]
     }
   ],
   "deprecatedFields": null,

@@ -28,6 +28,11 @@
       "url": "/travelgatex/reference/objects/adminquery"
     },
     {
+      "name": "MemberData",
+      "description": "",
+      "url": "/travelgatex/reference/objects/memberdata"
+    },
+    {
       "name": "ResourceData",
       "description": "",
       "url": "/travelgatex/reference/objects/resourcedata"

@@ -1,0 +1,14 @@
+
+{{range .Page.Params.log}}
+<div>
+    <h3 id="{{.date}}">{{.date}}</h3>
+    <ul>
+        {{range .information}}
+        <li>
+            <span>
+                <strong>{{.name}}</strong> {{.info}}</span>
+        </li>
+        {{end}}
+    </ul>
+    <div>
+        {{end}}

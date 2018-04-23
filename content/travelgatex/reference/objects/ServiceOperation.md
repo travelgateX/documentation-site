@@ -26,6 +26,14 @@
       "description": "Service Operation type",
       "isDeprecated": false,
       "args": null
+    },
+    {
+      "typeString": "Int!",
+      "name": "travelOperation",
+      "url": "/travelgatex/reference/scalars/int",
+      "description": "Service Operation Travel Operation ID (1: avail) (2: reservation) (3: batch) (4: batchLongRun)",
+      "isDeprecated": false,
+      "args": null
     }
   ],
   "deprecatedFields": null,

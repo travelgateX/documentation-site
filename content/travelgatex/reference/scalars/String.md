@@ -6,14 +6,9 @@
   "deprecatedFields": null,
   "requireby": [
     {
-      "name": "RelayInput",
+      "name": "AccessEdge",
       "description": "",
-      "url": "/travelgatex/reference/inputobjects/relayinput"
-    },
-    {
-      "name": "BoardEdge",
-      "description": "BoardList Edge definition",
-      "url": "/travelgatex/reference/objects/boardedge"
+      "url": "/travelgatex/reference/objects/accessedge"
     },
     {
       "name": "Error",
@@ -26,6 +21,141 @@
       "url": "/travelgatex/reference/interfaces/advisemessage"
     },
     {
+      "name": "AccessData",
+      "description": "",
+      "url": "/travelgatex/reference/objects/accessdata"
+    },
+    {
+      "name": "SupplierData",
+      "description": "",
+      "url": "/travelgatex/reference/objects/supplierdata"
+    },
+    {
+      "name": "Provider",
+      "description": "Temporary type to use only during SQL server's lifetime",
+      "url": "/travelgatex/reference/objects/provider"
+    },
+    {
+      "name": "Parameter",
+      "description": "Parameters for additional information for the supplier's configuration.",
+      "url": "/travelgatex/reference/objects/parameter"
+    },
+    {
+      "name": "PageInfo",
+      "description": "",
+      "url": "/travelgatex/reference/objects/pageinfo"
+    },
+    {
+      "name": "SupplierEdge",
+      "description": "",
+      "url": "/travelgatex/reference/objects/supplieredge"
+    },
+    {
+      "name": "ClientEdge",
+      "description": "",
+      "url": "/travelgatex/reference/objects/clientedge"
+    },
+    {
+      "name": "ClientData",
+      "description": "",
+      "url": "/travelgatex/reference/objects/clientdata"
+    },
+    {
+      "name": "ServiceApiFilter",
+      "description": "",
+      "url": "/travelgatex/reference/inputobjects/serviceapifilter"
+    },
+    {
+      "name": "ServiceApi",
+      "description": "Information related to a Service API",
+      "url": "/travelgatex/reference/objects/serviceapi"
+    },
+    {
+      "name": "ServiceOperation",
+      "description": "Information related to an API operation",
+      "url": "/travelgatex/reference/objects/serviceoperation"
+    },
+    {
+      "name": "OrganizationEdge",
+      "description": "",
+      "url": "/travelgatex/reference/objects/organizationedge"
+    },
+    {
+      "name": "OrganizationData",
+      "description": "",
+      "url": "/travelgatex/reference/objects/organizationdata"
+    },
+    {
+      "name": "GroupCommonData",
+      "description": "",
+      "url": "/travelgatex/reference/interfaces/groupcommondata"
+    },
+    {
+      "name": "GroupEdge",
+      "description": "",
+      "url": "/travelgatex/reference/objects/groupedge"
+    },
+    {
+      "name": "GroupData",
+      "description": "",
+      "url": "/travelgatex/reference/objects/groupdata"
+    },
+    {
+      "name": "MemberData",
+      "description": "",
+      "url": "/travelgatex/reference/objects/memberdata"
+    },
+    {
+      "name": "RoleEdge",
+      "description": "",
+      "url": "/travelgatex/reference/objects/roleedge"
+    },
+    {
+      "name": "RoleData",
+      "description": "",
+      "url": "/travelgatex/reference/objects/roledata"
+    },
+    {
+      "name": "ResourceEdge",
+      "description": "",
+      "url": "/travelgatex/reference/objects/resourceedge"
+    },
+    {
+      "name": "APIEdge",
+      "description": "",
+      "url": "/travelgatex/reference/objects/apiedge"
+    },
+    {
+      "name": "OperationEdge",
+      "description": "",
+      "url": "/travelgatex/reference/objects/operationedge"
+    },
+    {
+      "name": "OperationData",
+      "description": "",
+      "url": "/travelgatex/reference/objects/operationdata"
+    },
+    {
+      "name": "MemberEdge",
+      "description": "",
+      "url": "/travelgatex/reference/objects/memberedge"
+    },
+    {
+      "name": "ProductEdge",
+      "description": "",
+      "url": "/travelgatex/reference/objects/productedge"
+    },
+    {
+      "name": "RelayInput",
+      "description": "",
+      "url": "/travelgatex/reference/inputobjects/relayinput"
+    },
+    {
+      "name": "BoardEdge",
+      "description": "BoardList Edge definition",
+      "url": "/travelgatex/reference/objects/boardedge"
+    },
+    {
       "name": "BoardData",
       "description": "Board data",
       "url": "/travelgatex/reference/objects/boarddata"
@@ -34,11 +164,6 @@
       "name": "Text",
       "description": "",
       "url": "/travelgatex/reference/interfaces/text"
-    },
-    {
-      "name": "PageInfo",
-      "description": "",
-      "url": "/travelgatex/reference/objects/pageinfo"
     },
     {
       "name": "CategoryEdge",
@@ -321,119 +446,24 @@
       "url": "/travelgatex/reference/objects/map"
     },
     {
-      "name": "AccessEdge",
+      "name": "StatsEdge",
       "description": "",
-      "url": "/travelgatex/reference/objects/accessedge"
+      "url": "/travelgatex/reference/objects/statsedge"
     },
     {
-      "name": "AccessData",
+      "name": "File",
       "description": "",
-      "url": "/travelgatex/reference/objects/accessdata"
+      "url": "/travelgatex/reference/objects/file"
     },
     {
-      "name": "SupplierData",
+      "name": "MappeaXGetMappeaStatsInput",
+      "description": "# GetMappeaStats",
+      "url": "/travelgatex/reference/inputobjects/mappeaxgetmappeastatsinput"
+    },
+    {
+      "name": "GetMappeaStatsData",
       "description": "",
-      "url": "/travelgatex/reference/objects/supplierdata"
-    },
-    {
-      "name": "Provider",
-      "description": "Temporary type to use only during SQL server's lifetime",
-      "url": "/travelgatex/reference/objects/provider"
-    },
-    {
-      "name": "Parameter",
-      "description": "Parameters for additional information for the supplier's configuration.",
-      "url": "/travelgatex/reference/objects/parameter"
-    },
-    {
-      "name": "SupplierEdge",
-      "description": "",
-      "url": "/travelgatex/reference/objects/supplieredge"
-    },
-    {
-      "name": "ClientEdge",
-      "description": "",
-      "url": "/travelgatex/reference/objects/clientedge"
-    },
-    {
-      "name": "ClientData",
-      "description": "",
-      "url": "/travelgatex/reference/objects/clientdata"
-    },
-    {
-      "name": "ServiceApiFilter",
-      "description": "",
-      "url": "/travelgatex/reference/inputobjects/serviceapifilter"
-    },
-    {
-      "name": "ServiceApi",
-      "description": "Information related to a Service API",
-      "url": "/travelgatex/reference/objects/serviceapi"
-    },
-    {
-      "name": "ServiceOperation",
-      "description": "Information related to an API operation",
-      "url": "/travelgatex/reference/objects/serviceoperation"
-    },
-    {
-      "name": "OrganizationEdge",
-      "description": "",
-      "url": "/travelgatex/reference/objects/organizationedge"
-    },
-    {
-      "name": "OrganizationData",
-      "description": "",
-      "url": "/travelgatex/reference/objects/organizationdata"
-    },
-    {
-      "name": "GroupCommonData",
-      "description": "",
-      "url": "/travelgatex/reference/interfaces/groupcommondata"
-    },
-    {
-      "name": "MemberData",
-      "description": "",
-      "url": "/travelgatex/reference/objects/memberdata"
-    },
-    {
-      "name": "GroupEdge",
-      "description": "",
-      "url": "/travelgatex/reference/objects/groupedge"
-    },
-    {
-      "name": "GroupData",
-      "description": "",
-      "url": "/travelgatex/reference/objects/groupdata"
-    },
-    {
-      "name": "MemberEdge",
-      "description": "",
-      "url": "/travelgatex/reference/objects/memberedge"
-    },
-    {
-      "name": "APIEdge",
-      "description": "",
-      "url": "/travelgatex/reference/objects/apiedge"
-    },
-    {
-      "name": "ResourceEdge",
-      "description": "",
-      "url": "/travelgatex/reference/objects/resourceedge"
-    },
-    {
-      "name": "RoleEdge",
-      "description": "",
-      "url": "/travelgatex/reference/objects/roleedge"
-    },
-    {
-      "name": "RoleData",
-      "description": "",
-      "url": "/travelgatex/reference/objects/roledata"
-    },
-    {
-      "name": "ProductEdge",
-      "description": "",
-      "url": "/travelgatex/reference/objects/productedge"
+      "url": "/travelgatex/reference/objects/getmappeastatsdata"
     },
     {
       "name": "DefaultSettings",
@@ -444,6 +474,41 @@
       "name": "Mutation",
       "description": "Mutations are operations that change or update data in the server.",
       "url": "/travelgatex/reference/schema/mutation"
+    },
+    {
+      "name": "AccessInput",
+      "description": "Access input",
+      "url": "/travelgatex/reference/inputobjects/accessinput"
+    },
+    {
+      "name": "CreateClientInput",
+      "description": "",
+      "url": "/travelgatex/reference/inputobjects/createclientinput"
+    },
+    {
+      "name": "UpdateClientInput",
+      "description": "",
+      "url": "/travelgatex/reference/inputobjects/updateclientinput"
+    },
+    {
+      "name": "CreateMemberInput",
+      "description": "",
+      "url": "/travelgatex/reference/inputobjects/creatememberinput"
+    },
+    {
+      "name": "CreateGroupInput",
+      "description": "",
+      "url": "/travelgatex/reference/inputobjects/creategroupinput"
+    },
+    {
+      "name": "UpdateMemberInput",
+      "description": "",
+      "url": "/travelgatex/reference/inputobjects/updatememberinput"
+    },
+    {
+      "name": "UpdateGroupInput",
+      "description": "",
+      "url": "/travelgatex/reference/inputobjects/updategroupinput"
     },
     {
       "name": "HotelXMutation",
@@ -481,34 +546,14 @@
       "url": "/travelgatex/reference/objects/hotelcanceldetail"
     },
     {
-      "name": "AccessInput",
-      "description": "Access input",
-      "url": "/travelgatex/reference/inputobjects/accessinput"
+      "name": "MappeaXUploadFileInput",
+      "description": "## UploadFile",
+      "url": "/travelgatex/reference/inputobjects/mappeaxuploadfileinput"
     },
     {
-      "name": "ClientInput",
+      "name": "UploadFileData",
       "description": "",
-      "url": "/travelgatex/reference/inputobjects/clientinput"
-    },
-    {
-      "name": "CreateMemberInput",
-      "description": "",
-      "url": "/travelgatex/reference/inputobjects/creatememberinput"
-    },
-    {
-      "name": "CreateGroupInput",
-      "description": "",
-      "url": "/travelgatex/reference/inputobjects/creategroupinput"
-    },
-    {
-      "name": "UpdateMemberInput",
-      "description": "",
-      "url": "/travelgatex/reference/inputobjects/updatememberinput"
-    },
-    {
-      "name": "UpdateGroupInput",
-      "description": "",
-      "url": "/travelgatex/reference/inputobjects/updategroupinput"
+      "url": "/travelgatex/reference/objects/uploadfiledata"
     },
     {
       "name": "DefaultSettingsInput",
@@ -559,6 +604,21 @@
       "name": "IdAccessConfigurationInput",
       "description": "",
       "url": "/travelgatex/reference/inputobjects/idaccessconfigurationinput"
+    },
+    {
+      "name": "MappeaXAddOrganizationInput",
+      "description": "# AddOrganization",
+      "url": "/travelgatex/reference/inputobjects/mappeaxaddorganizationinput"
+    },
+    {
+      "name": "MappeaXEditOrganizationInput",
+      "description": "# EditOrganization",
+      "url": "/travelgatex/reference/inputobjects/mappeaxeditorganizationinput"
+    },
+    {
+      "name": "LegacyData",
+      "description": "The URI type represents a URI values. A good example mith be an Hotel Image URL.\nIn queries or mutations, URI fields have to be specified in RFC 3986, RFC 3987, and RFC 6570 (level 4) compliant URI string format with enclosing double quotes: \"http:\\www.travelgatex.com\".",
+      "url": "/travelgatex/reference/objects/legacydata"
     }
   ],
   "enumValues": null,

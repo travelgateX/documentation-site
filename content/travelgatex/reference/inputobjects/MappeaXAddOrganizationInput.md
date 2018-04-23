@@ -1,27 +1,27 @@
 {
-  "title": "ClientInput",
+  "title": "MappeaXAddOrganizationInput",
   "description": "",
   "weight": 1,
   "fields": [
     {
-      "typeString": "ID!",
-      "name": "code",
-      "url": "/travelgatex/reference/scalars/id",
-      "description": "ID identifier of a Client",
-      "args": null
-    },
-    {
-      "typeString": "String",
+      "typeString": "String!",
       "name": "name",
       "url": "/travelgatex/reference/scalars/string",
-      "description": "Client complete name",
+      "description": "",
       "args": null
     },
     {
-      "typeString": "Boolean",
+      "typeString": "Boolean!",
       "name": "isActive",
       "url": "/travelgatex/reference/scalars/boolean",
-      "description": "Indicates whether a Client is active",
+      "description": "",
+      "args": null
+    },
+    {
+      "typeString": "Boolean!",
+      "name": "isTest",
+      "url": "/travelgatex/reference/scalars/boolean",
+      "description": "",
       "args": null
     }
   ],
@@ -29,8 +29,9 @@
   "requireby": null,
   "enumValues": null,
   "operator": "type",
-  "typename": "ClientInput"
+  "typename": "MappeaXAddOrganizationInput"
 }
+# AddOrganization
 ## GraphQL Schema definition
 
 {{% graphql-schema-type %}}

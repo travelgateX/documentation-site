@@ -28,7 +28,7 @@ Some of the functionalities of the business logic layer include:
 
 * Hotel, Room and Board Mappings 
 
-* Sort & Filter results 
+* Agggregate, Sort & Filter results 
 
 * Add pricing/markups 
 

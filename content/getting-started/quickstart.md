@@ -20,9 +20,9 @@ In order to start building your own API, you'll need to join the TravelgateX par
 Choose the desired product from the list with which you'd like to start building your app.
 
 - **[HotelX](/hotelx/)**: Hotel search, booking and content.
-- **StatsX**: Track the messages sent and received, their response times and status codes.
-- **InsightsX**: Become a true data-first decision maker. All the messages, all the searches, everything you've made with us will be available in Insight.
-- **MappeaX**: A collaborative Hotel Mapping. Use this API to map your `suppliers` or to make that everything you have mapped is accurate.
+- **Stats**: Track the messages sent and received, their response times and status codes.
+- **Insights**: Become a true data-first decision maker. All the messages, all the searches, everything you've made with us will be available in Insight.
+- **Mappea**: A collaborative Hotel Mapping. Use this API to map your `suppliers` or to make that everything you have mapped is accurate.
 
 ### Have a look at the documentation
 
