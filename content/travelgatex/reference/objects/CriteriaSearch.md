@@ -7,7 +7,7 @@
       "typeString": "Date!",
       "name": "checkIn",
       "url": "/travelgatex/reference/scalars/date",
-      "description": "Check-in date for the booking.\nFormat: yyyy-MM-dd",
+      "description": "Check-in date for booking (\nFormat: YYYY-MM-DD)",
       "isDeprecated": false,
       "args": null
     },
@@ -15,7 +15,7 @@
       "typeString": "Date!",
       "name": "checkOut",
       "url": "/travelgatex/reference/scalars/date",
-      "description": "Check-out, date for the booking.\nFormat: yyyy-MM-dd",
+      "description": "Check-out, booking date (\nFormat: YYYY-MM-DD)",
       "isDeprecated": false,
       "args": null
     },
@@ -23,7 +23,7 @@
       "typeString": "[String!]!",
       "name": "hotels",
       "url": "/travelgatex/reference/scalars/string",
-      "description": "Contains the list of hotels's ID.",
+      "description": "Contains the list of hotels's ID",
       "isDeprecated": false,
       "args": null
     },
@@ -31,7 +31,7 @@
       "typeString": "[RoomCriteria!]!",
       "name": "occupancies",
       "url": "/travelgatex/reference/objects/roomcriteria",
-      "description": "For multi room bookings, this array will contain multiple elements (rooms).\nFor each room you have to specify its own occupancy.",
+      "description": "For multi-room bookings, this array will contain multiple elements (rooms).\nFor each room you have to specify its own occupancy.",
       "isDeprecated": false,
       "args": null
     },
@@ -63,7 +63,7 @@
       "typeString": "String!",
       "name": "market",
       "url": "/travelgatex/reference/scalars/string",
-      "description": "Targeted zone, country or point of sale to be used in request.",
+      "description": "Targeted zone, country or point-of-sale to be used in request.",
       "isDeprecated": false,
       "args": null
     }
@@ -72,7 +72,7 @@
   "requireby": [
     {
       "name": "HotelSearch",
-      "description": "Results of Avail Hotel. Contains all the available options for a given date and itinerary.",
+      "description": "Results from Avail Hotel. Contains all the available options for a given date and itinerary.",
       "url": "/travelgatex/reference/objects/hotelsearch"
     }
   ],
@@ -80,7 +80,7 @@
   "operator": "type",
   "typename": "CriteriaSearch"
 }
-Criteria of search contains destination, travel dates and the number of pax in each room.
+Search criteria contains destination, travel dates and the number of pax in each room.
 ## GraphQL Schema definition
 
 {{% graphql-schema-type %}}
