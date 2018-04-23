@@ -147,7 +147,7 @@ discourseUrl = "http://community.travelgatex.com/"
   [params.welcome]
     enable = true
     title = "Connecting the dots"
-    description = "At TravelgateX, we’ve integrated 100s of travel APIs. This is why we’ve decided to build the first travel API focused on Developer eXperience. Welcome to HotelX, the world’s most advanced and disruptive GraphQL based Travel API. HotelX takes care of most pains involved in integrating hotel APIs, and works in a flexible manner so that you are alwayes in charge of what gets executed, how, when and why."
+    description = "With over 600 suppliers, and growing, our travel APIs focus on making sure you can integrate quickly and securely. Speed up integrations and search extensive supplier catalogues with record response time. Our APIs reduce time to market from 9 months to 2 weeks. See why OTA business developers say it is faster to use Travelgate than to do it themselves."
 
   # Work section
   [params.work]
