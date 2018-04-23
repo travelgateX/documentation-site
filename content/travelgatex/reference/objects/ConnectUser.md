@@ -7,7 +7,7 @@
       "typeString": "String!",
       "name": "code",
       "url": "/travelgatex/reference/scalars/string",
-      "description": "unique connect user of a supplier",
+      "description": "Unique connected user of a supplier",
       "isDeprecated": false,
       "args": null
     },
@@ -15,7 +15,7 @@
       "typeString": "Boolean!",
       "name": "isActive",
       "url": "/travelgatex/reference/scalars/boolean",
-      "description": "indicates whether a connect user is active",
+      "description": "Indicates whether a connected user is active",
       "isDeprecated": false,
       "args": null
     },
@@ -23,7 +23,7 @@
       "typeString": "[ConnectUserGroup!]",
       "name": "connectUserGroups",
       "url": "/travelgatex/reference/objects/connectusergroup",
-      "description": "connect user's related data of its groups",
+      "description": "Connected user's related data based on its groups",
       "isDeprecated": false,
       "args": null
     }
@@ -34,7 +34,7 @@
   "operator": "type",
   "typename": "ConnectUser"
 }
-data related to a connect user and its groups
+Data related to a connected user and its groups
 ## GraphQL Schema definition
 
 {{% graphql-schema-type %}}
