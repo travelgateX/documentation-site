@@ -7,7 +7,7 @@
       "typeString": "[String!]!",
       "name": "groupCodes",
       "url": "/travelgatex/reference/scalars/string",
-      "description": "group identifiers",
+      "description": "Group identifiers",
       "isDeprecated": false,
       "args": null
     },
@@ -26,8 +26,8 @@
   "operator": "type",
   "typename": "GroupAccess"
 }
-Pair of groups and accesses. All accesses returned will belong to all the groups in groupCodes
-## GraphQL Schema definition
+Pairs of Groups and Accesses. All Accesses returned will belong to all the Groups in groupCodes.
+## GraphQL schema definition
 
 {{% graphql-schema-type %}}
 
