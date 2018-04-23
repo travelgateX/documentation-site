@@ -27,7 +27,7 @@
   "typename": "Description"
 }
 Object description indicates the type and the description about something.
-## GraphQL Schema definition
+## GraphQL schema definition
 
 {{% graphql-schema-type %}}
 
