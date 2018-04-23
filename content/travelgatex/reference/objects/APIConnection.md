@@ -65,6 +65,6 @@
 
 {{% graphql-field %}}
 
-## Require by
+## Required by
 
 {{% graphql-require-by %}}
