@@ -143,7 +143,7 @@
   "operator": "type",
   "typename": "Mutation"
 }
-Mutations are operations that change or update data in the server.
+Mutations are operations that change or update data on the server.
 ## GraphQL Schema definition
 
 {{% graphql-schema-type %}}
