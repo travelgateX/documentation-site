@@ -71,7 +71,7 @@
   "operator": "type",
   "typename": "Access"
 }
-## GraphQL Schema definition
+## GraphQL schema definition
 
 {{% graphql-schema-type %}}
 
