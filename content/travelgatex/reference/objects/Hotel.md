@@ -23,7 +23,7 @@
       "typeString": "[Error!]",
       "name": "error",
       "url": "/travelgatex/reference/objects/error",
-      "description": "Errors that will lead the service to abort",
+      "description": "Errors that will cause the service to abort",
       "isDeprecated": false,
       "args": null
     },
@@ -31,7 +31,7 @@
       "typeString": "DateTime!",
       "name": "createdAt",
       "url": "/travelgatex/reference/scalars/datetime",
-      "description": "Create date",
+      "description": "Date created",
       "isDeprecated": false,
       "args": null
     },
@@ -39,7 +39,7 @@
       "typeString": "DateTime!",
       "name": "updatedAt",
       "url": "/travelgatex/reference/scalars/datetime",
-      "description": "Update date",
+      "description": "Date updated",
       "isDeprecated": false,
       "args": null
     }
@@ -56,8 +56,8 @@
   "operator": "type",
   "typename": "Hotel"
 }
-Hotel Type
-## GraphQL Schema definition
+Hotel type.
+## GraphQL schema definition
 
 {{% graphql-schema-type %}}
 
@@ -65,6 +65,6 @@ Hotel Type
 
 {{% graphql-field %}}
 
-## Require by
+## Required by
 
 {{% graphql-require-by %}}
