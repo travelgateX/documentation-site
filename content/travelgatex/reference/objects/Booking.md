@@ -39,10 +39,10 @@
   "typename": "Booking"
 }
 Returns detailed information about books.
-## GraphQL Schema definition
+## GraphQL schema definition
 
 {{% graphql-schema-type %}}
 
-## Require by
+## Required by
 
 {{% graphql-require-by %}}
