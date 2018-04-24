@@ -1,7 +1,7 @@
 +++
 title = "Quickstart"
 pagetitle = ""
-description = "Try the API now"
+description = "How to get support for using our APIs"
 icon = "fa-clock-o"
 weight = 1
 alwaysopen = false

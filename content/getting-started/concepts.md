@@ -1,7 +1,7 @@
 +++
 title = "Concepts"
 pagetitle = ""
-description = "Understanding the concepts"
+description = "Basic concepts for all of the TravelgateX platform"
 icon = "fa-question-circle" 
 weight = 3
 alwaysopen = false

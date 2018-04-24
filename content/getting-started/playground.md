@@ -1,7 +1,7 @@
 +++
 title = "Playground"
 pagetitle = ""
-description = "Try our API"
+description = "Try our API now"
 icon = "fa-play"
 weight = 3
 alwaysopen = false

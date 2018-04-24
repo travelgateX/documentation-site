@@ -14,5 +14,5 @@ isDirectory=false
 
 
 <p><strong>The basic concepts of TravelgateX will help you build a wide range of travel products and services.</strong> 
-From a basic booking website, to curated travel offers for niche markets, to realtime apps revealing the best deals of the moment: anything is possible! "Consider:
+From a basic booking website, to curated travel offers for niche markets, to realtime apps revealing the best deals of the moment: anything is possible!
   </p>
