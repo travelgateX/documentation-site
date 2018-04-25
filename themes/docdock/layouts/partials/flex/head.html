@@ -9,6 +9,15 @@
 <link href="{{"css/hybrid.css" | relURL}}" rel="stylesheet">
 <link href="{{"css/auto-complete.css" | relURL}}" rel="stylesheet">
 <link href="{{(printf "theme-%s/style.css" .Site.Params.themeStyle) | relURL}}" rel="stylesheet">
+
+<link href="{{"css/animate.css" | relURL}}" rel="stylesheet">
+<link href="{{"css/icomoon.css" | relURL}}" rel="stylesheet">
+<link href="{{"css/simple-line-icons.css" | relURL}}" rel="stylesheet">
+<link href="{{"css/magnific-popup.css" | relURL}}" rel="stylesheet">
+<link href="{{"css/bootstrap.css" | relURL}}" rel="stylesheet">
+<link href="{{"css/elate-style.css" | relURL}}" rel="stylesheet">
+<link href="{{"css/https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" | relURL}}" rel="stylesheet">
+
 {{with .Site.Params.themeVariant}}
 	<link href="{{(printf "theme-%s/variant-%s.css" $.Site.Params.themeStyle .) | relURL}}" rel="stylesheet">
 {{end}}
