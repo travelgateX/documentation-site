@@ -10,7 +10,7 @@ Flow to book
 
 ## HotelX Settings
 
-In HotelX we have differents levels to configure the settings for a request. With the settings you can to configure some aspects of the request like:
+In HotelX we have differents configuration level settings for a request. With settings, you can configure some aspect of the request:
 
 
 | Field  | Description |
@@ -27,11 +27,11 @@ In HotelX we have differents levels to configure the settings for a request. Wit
 
 How we have said some lines before, we have three ways to indicated this settings.
 
-We are going to begin with the more specific until the most general.
+We are going to begin with the most specific until the most general.
 
 ### Settings per request
 
-This settings overwrite all others.
+This setting overwrites all others.
 
 You must have permission to overwrite settings, if you don't have this permission you won't be able to change the configuration on runtime, that is, to each request.
 
@@ -43,7 +43,7 @@ The settings in this level are used when you don’t overwrite settings to reque
 
 However, if you have the same client in different groups, you can set different settings to each one. In this case, you must specify which group you want to use in the request, to choose which configuration to use.
 
-### Settings per hotelX
+### Settings per HotelX
 
 And the last one, settings per hotelX instance. These settings are in the higher level, in the case that you haven't got client settings and you don't specify it in the request, the settings are got from hotelX instance, this setting is mandatory.
 

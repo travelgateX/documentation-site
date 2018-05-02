@@ -1,7 +1,7 @@
 +++
 title = "Overview"
 pagetitle = "Learn the basics"
-description = "Learn the basics"
+description = "See how the TravelgateX platform and APIs fit together"
 icon = "fa-info-circle"
 weight = 1
 alwaysopen = false
