@@ -10,6 +10,80 @@ hidden = false
 
 Check out this list of new releases and changes applied on the **TravelgateX GraphQL API**.
 
+## 2018-05-02
+
+🛑  Enum value `BOOK` was removed from enum `OperationType`
+
+⚠️  Enum value `BOOKING` was added to enum `OperationType`
+
+✅  Input field `accesses` was added to input object type `StatsFilterInput`
+
+✅  Field `accesses` was added to object type `GroupData`
+
+✅  Field `allMembers` was added to object type `GroupData`
+
+✅  Field `accesses` was added to object type `GroupCommonData`
+
+✅  Field `allMembers` was added to object type `GroupCommonData`
+
+✅  Field `accesses` was added to object type `OrganizationData`
+
+✅  Field `allMembers` was added to object type `OrganizationData`
+
+## 2018-04-25
+
+⚠️  Field `DestinationData.type` changed type from `DestinationType!` to `DestinationType`
+
+⚠️  Field `type` was removed from object type `OperationData`
+
+⚠️  Field `memberType` was removed from object type `MemberData`
+
+⚠️  Argument `Last: Int` was removed from field `AdminQuery.clients`
+
+⚠️  Argument `Last: Int` was removed from field `AdminQuery.suppliers`
+
+⚠️  Argument `Last: Int` was removed from field `AdminQuery.accesses`
+
+✅  Enum value `ORG` was added to enum `GroupType`
+
+✅  Field `types` was added to object type `OperationData`
+
+✅  Argument `type: OperationType` added to field `APIData.operations`
+
+✅  Argument `type: GroupType` added to field `APIData.groups`
+
+✅  Argument `type: GroupType` added to field `MemberData.groups`
+
+✅  Field `type` was added to object type `MemberData`
+
+✅  Argument `type: MemberType` added to field `GroupData.members`
+
+✅  Argument `type: MemberType` added to field `GroupCommonData.members`
+
+✅  Argument `type: MemberType` added to field `OrganizationData.members`
+
+✅  Argument `type: OperationType` added to field `AdminQuery.operations`
+
+✅  Argument `last: Int` added to field `AdminQuery.clients`
+
+✅  Argument `last: Int` added to field `AdminQuery.suppliers`
+
+✅  Argument `last: Int` added to field `AdminQuery.accesses`
+
+## 2018-04-24
+
+⚠️  Input field `groupUsers` was removed from input object type `StatsFilterInput`
+
+✅  Input field `StatsFilterInput.operation` changed type from `[ServiceOperationType!]!` to `[ServiceOperationType!]`
+
+✅  Field `OperationData.type` description changed from `` to `type: [OperationType!]!`
+
+✅  Field `error` was added to object type `ServiceApi`
+
+✅  Input field `name` was added to input object type `ClientFilter`
+
+✅  Type `OperationType` was added
+
 ## 2018-04-18
 
 ⚠️  Type for argument `input` on field `AdminMutation.updateClient` changed from `ClientInput!` to `UpdateClientInput!`
