@@ -10,6 +10,30 @@ hidden = false
 
 Check out this list of new releases and changes applied on the **TravelgateX GraphQL API**.
 
+## 2018-05-03
+
+✅  Field `asserts` was added to object type `StatsInfo`
+
+✅  Field `clients` was added to object type `GroupData`
+
+✅  Field `suppliers` was added to object type `GroupData`
+
+✅  Field `clients` was added to object type `GroupCommonData`
+
+✅  Field `suppliers` was added to object type `GroupCommonData`
+
+✅  Field `clients` was added to object type `OrganizationData`
+
+✅  Field `suppliers` was added to object type `OrganizationData`
+
+✅  Input field `serviceAPI` was added to input object type `SupplierFilter`
+
+✅  Input field `isActive` was added to input object type `SupplierFilter`
+
+✅  Input field `groupID` was added to input object type `SupplierFilter`
+
+✅  Type `StatsAssert` was added
+
 ## 2018-05-02
 
 🛑  Enum value `BOOK` was removed from enum `OperationType`
