@@ -11,10 +11,11 @@ git reset --hard origin/master
 git checkout master
 git pull origin master
 
-
+cd ..
 # Build the project.
-hugo public # if using a theme, replace with `hugo -t <YOURTHEME>`
+hugo  # if using a theme, replace with `hugo -t <YOURTHEME>`
 
+cd public
 
 # Add changes to git.
 git add .
