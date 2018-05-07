@@ -4657,11 +4657,11 @@ tbody.collapse.in {
 .navbar:after {
   clear: both;
 }
-@media (min-width: 768px) {
+/*@media (min-width: 768px) {
   .navbar {
     border-radius: 4px;
   }
-}
+}*/
 
 .navbar-header:before, .navbar-header:after {
   content: " ";
