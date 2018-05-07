@@ -1026,21 +1026,25 @@ h1, h2, h3, h4, h5, h6 {
 #fh5co-contact {
   padding-bottom: 0;
 }
+
 #fh5co-contact .fh5co-contact-info {
   padding: 0;
   margin: 0 0 1.5em 0;
 }
 #fh5co-contact .fh5co-contact-info li {
   position: relative;
-  padding: 0;
+  padding: 0 0 0 30px;
   margin: 0 0 1.5em 0;
-  padding-left: 50px;
   list-style: none;
+  font-size: 15px;
 }
 #fh5co-contact .fh5co-contact-info li i {
   position: absolute;
   top: .2em;
   left: 0;
+}
+#fh5co-contact .section-heading h3{
+  font-size: 16px;
 }
 
 .section-heading {
@@ -1202,8 +1206,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #footer {
-  margin-top: 50px;
-  color: #7f7f7f;
   position: relative;
 }
 #footer .gotop {
@@ -1251,6 +1253,13 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 5px;
 }
 
+#footer .top-footer .separator{
+  height: 2px;
+  margin:10px 0 15px;
+  background-color: #ffffff;
+  width: 60px;
+}
+
 #footer .top-footer a {
   color: #ffffff;
   opacity: 0.7;
@@ -1260,7 +1269,7 @@ h1, h2, h3, h4, h5, h6 {
 #footer .top-footer a:hover, #footer .top-footer a:focus, #footer .top-footer a:active {
   color: #ffffff;
   opacity: 1;
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 #footer .top-footer .certification {
@@ -1269,10 +1278,10 @@ h1, h2, h3, h4, h5, h6 {
 
 #footer .bottom-footer{
   background-color: #182945;
-  padding: 5px 0;
 }
 
 #footer .bottom-footer img{
+  width: 142px;
   padding-top: 11px;
 }
 

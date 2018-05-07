@@ -1,5 +1,6 @@
-<footer id="footer_docs" role="contentinfo">
-	<!-- <a href="#" class="gotop js-gotop"><i class="icon-arrow-up2"></i></a> -->
+
+<footer id="footer" role="contentinfo">
+	<a href="#" class="gotop js-gotop"><i class="icon-arrow-up2"></i></a>
   <div class="top-footer hidden-sm-down">
     <div class="container">
       <div class="row">
@@ -7,12 +8,12 @@
           <h5 class="tit">Company</h5>
           <div class="separator"></div>
           <ul class="list-unstyled">
-            <li><a title="TGX" target="_blank" href="https://www.travelgatex.com/">XML Travelgate</a></li>
+            <li><a title="TGX" target="_blank" href="https://www.travelgatex.com/" style="color: white;font-weight: bold;">XML Travelgate</a></li>
             <li><a href="#">The Team</a></li>
             <li><a href="#">The Numbers</a></li>
             <li><a href="#">The Platform</a></li>
             <li><a href="#">The Booking Globe</a></li>
-            <li><a title="Blog" target="_blank" href="https://blog.xmltravelgate.com/tagged/traveltech">Blog</a></li>
+            <li><a title="Blog" target="_blank" href="https://blog.xmltravelgate.com/tagged/traveltech" style="color: white;font-weight: bold;">Blog</a></li>
           </ul>
         </div>
         <div class="col-sm-6 col-md-2 col-lg-2">
@@ -54,10 +55,10 @@
           <h5 class="tit">Developers</h5>
           <div class="separator"></div>
           <ul class="list-unstyled">
-            <li><a class="docs" href="http://docs.travelgatex.com/">Documentation</a></li>
-            <li><a class="docs" href="http://docs.travelgatex.com/getting-started/">API Reference</a></li>
-            <li><a class="docs" href="http://status.travelgatex.com/">API Status</a></li>
-            <li><a class="docs" href="https://github.com/travelgateX">Open Source</a></li>
+            <li><a href="http://docs.travelgatex.com/" ">Documentation</a></li>
+            <li><a href="http://docs.travelgatex.com/getting-started/" style="color: white;font-weight: bold;" target="_blank">API Reference</a></li>
+            <li><a href="http://status.travelgatex.com/" style="color: white;font-weight: bold;" target="_blank">API Status</a></li>
+            <li><a href="https://github.com/travelgateX" style="color: white;font-weight: bold;" target="_blank">Open Source</a></li>
           </ul>
         </div>
         <div class="col-sm-6 col-md-2 col-lg-2">
@@ -65,7 +66,7 @@
           <div class="separator"></div>
           <ul class="list-unstyled">
             <li><a href="#">Support Center</a></li>
-            <li><a class="contact" title="TGX" href="https://www.travelgatex.com/contact">Contact us</a></li>
+            <li><a title="TGX" target="_blank" href="https://www.travelgatex.com/contact" style="color: white;font-weight: bold">Contact us</a></li>
             <li><a href="#">White Papers</a></li>
             <li><a href="#">Privacy Policy</a></li>
             <li><a href="#">Cookies</a></li>
@@ -87,15 +88,15 @@
   <div class="bottom-footer">
     <div class="container">
       <div class="row">
-        <div class="hidden-sm-down col-md-3 d-flex align-items-center">
-				  <a title="TGX" target="_blank" href="https://www.travelgatex.com/">
-            <img src="../../images/xtg_logo.svg" alt="travelgatex_logo">
+        <div class="hidden-sm-down col-md-2">
+				<a title="TGX" target="_blank" href="https://www.travelgatex.com/">
+          <img src="../../images/xtg_logo.svg" alt="travelgatex_logo">
 					</a>
         </div>
-        <div class="col-xs-12 col-md-6">
+        <div class="col-sm-12 col-md-8">
           <p class="copyright text-center">{{ with .Site.Params.footer.copyright }}{{ . | markdownify }}{{ end }}</p>
         </div>
-        <div class="hidden-sm-down col-md-3">
+        <div class="hidden-sm-down col-md-2">
           <ul class="social social-circle">
 						<li><a href="https://twitter.com/travelgatex?lang=es"><i class="icon-twitter"></i></a></li>
 						<li><a href="https://www.facebook.com/XmlTravelgate"><i class="icon-facebook"></i></a></li>

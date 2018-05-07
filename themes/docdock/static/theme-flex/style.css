@@ -16,7 +16,6 @@
   font-weight: 700;
   src: local("Lato Bold"), local("Lato-Bold"), url(../fonts/Lato-Bold.woff2) format("woff2"), url(../fonts/Lato-Bold.ttf) format("truetype"); }
 header,
-footer,
 nav,
 article,
 aside,
@@ -298,10 +297,7 @@ section.page aside #navigation {
       text-align: right;
       padding-right: 4rem; }
 
-footer {
-  background: #e5e5e5;
-  background-color: #012a3c;
-  color: white; }
+
 
 #nav-select {
   display: none;
