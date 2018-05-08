@@ -503,7 +503,7 @@ a.card-lv2:hover {
   position: relative;
   float: left;
   width: 100%;
-  height: calc(100% - 400px);
+  height: calc(100% - 388px);
   overflow-y: scroll;
 }
 
@@ -1472,17 +1472,21 @@ div.deprecated-entities-container.active {
   text-decoration: none !important;
 }
 #footer_docs .copyright {
-  font-size: 14px;
+  font-size: 13px;
   margin-bottom: 0;
   padding-bottom: 0;
   color: #fff;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding-top: 16px;
 }
 
+@media (max-width: 1240px) {
+  #footer_docs .copyright {
+    padding-top: 7px;
+  }
+}
 
 #footer_docs .top-footer{
-  padding-top: 35px;
+  padding-top: 25px;
   background-color: #082da6;
 }
 
@@ -1544,6 +1548,6 @@ div.deprecated-entities-container.active {
 
 @media (max-width: 767px){
   #footer_docs{
-    display: bloc
+    display: none;
   }
 }
