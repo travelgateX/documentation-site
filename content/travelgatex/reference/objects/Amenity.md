@@ -15,7 +15,7 @@
       "typeString": "ApplicationAreaType!",
       "name": "type",
       "url": "/travelgatex/reference/enums/applicationareatype",
-      "description": "Indicates the type of the amenity.",
+      "description": "Indicates the type of Amenity",
       "isDeprecated": false,
       "args": null
     },
@@ -41,8 +41,9 @@
   "operator": "type",
   "typename": "Amenity"
 }
-Something, such as a swimming pool or shopping centre, that is intended to make life more pleasant or comfortable for the people.
-## GraphQL Schema definition
+An Amenity is defined as something intended to make life more pleasant or comfortable for people. Examples include: swimming pools, shopping centers, etc.
+
+## GraphQL schema definition
 
 {{% graphql-schema-type %}}
 
