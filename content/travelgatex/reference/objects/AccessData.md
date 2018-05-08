@@ -15,7 +15,7 @@
       "typeString": "Boolean!",
       "name": "isActive",
       "url": "/travelgatex/reference/scalars/boolean",
-      "description": "Indicates if the access is active.",
+      "description": "Indicates if Access is active",
       "isDeprecated": false,
       "args": null
     },
@@ -31,7 +31,7 @@
       "typeString": "Supplier!",
       "name": "supplier",
       "url": "/travelgatex/reference/objects/supplier",
-      "description": "supplier for this access.",
+      "description": "Supplier for this Access",
       "isDeprecated": false,
       "args": null
     },
@@ -39,7 +39,7 @@
       "typeString": "Boolean!",
       "name": "isTest",
       "url": "/travelgatex/reference/scalars/boolean",
-      "description": "Indicates if this access can be used for testing or not",
+      "description": "Indicates if Access can be used for testing or not",
       "isDeprecated": false,
       "args": null
     },
@@ -47,7 +47,7 @@
       "typeString": "String",
       "name": "user",
       "url": "/travelgatex/reference/scalars/string",
-      "description": "User code to connect to supplier.",
+      "description": "User code to connect to supplier",
       "isDeprecated": false,
       "args": null
     },
@@ -55,7 +55,7 @@
       "typeString": "String",
       "name": "password",
       "url": "/travelgatex/reference/scalars/string",
-      "description": "Password for the connection.",
+      "description": "Password for the connection",
       "isDeprecated": false,
       "args": null
     },
@@ -63,7 +63,7 @@
       "typeString": "Urls",
       "name": "urls",
       "url": "/travelgatex/reference/objects/urls",
-      "description": "Specific Urls",
+      "description": "Specific URLs",
       "isDeprecated": false,
       "args": null
     },
@@ -71,7 +71,7 @@
       "typeString": "[Parameter]",
       "name": "parameters",
       "url": "/travelgatex/reference/objects/parameter",
-      "description": "List of parameters for additional information.",
+      "description": "List of parameters for additional information",
       "isDeprecated": false,
       "args": null
     },
@@ -79,7 +79,7 @@
       "typeString": "[String!]",
       "name": "markets",
       "url": "/travelgatex/reference/scalars/string",
-      "description": "Markets allowed for the access.",
+      "description": "Markets allowed for the Access",
       "isDeprecated": false,
       "args": null
     },
@@ -87,7 +87,7 @@
       "typeString": "[RateRulesType!]",
       "name": "rateRules",
       "url": "/travelgatex/reference/enums/raterulestype",
-      "description": "Business rules types for the access.",
+      "description": "Business rule types for the Access",
       "isDeprecated": false,
       "args": null
     },
@@ -95,7 +95,7 @@
       "typeString": "Access",
       "name": "shared",
       "url": "/travelgatex/reference/objects/access",
-      "description": "Parent access if Shared access",
+      "description": "Parent Access if Shared Access",
       "isDeprecated": false,
       "args": null
     }
@@ -112,7 +112,7 @@
   "operator": "type",
   "typename": "AccessData"
 }
-## GraphQL Schema definition
+## GraphQL schema definition
 
 {{% graphql-schema-type %}}
 
@@ -120,6 +120,6 @@
 
 {{% graphql-field %}}
 
-## Require by
+## Required by
 
 {{% graphql-require-by %}}
