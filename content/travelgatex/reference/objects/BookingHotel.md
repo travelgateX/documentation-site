@@ -7,7 +7,7 @@
       "typeString": "Date",
       "name": "creationDate",
       "url": "/travelgatex/reference/scalars/date",
-      "description": "Creation date of the booking.\nFormat: yyyy-MM-dd",
+      "description": "Creation date of the booking(\nFormat: YYYY-MM-DD)",
       "isDeprecated": false,
       "args": null
     },
@@ -15,7 +15,7 @@
       "typeString": "Date",
       "name": "checkIn",
       "url": "/travelgatex/reference/scalars/date",
-      "description": "Check-in date for the booking.\nFormat: yyyy-MM-dd",
+      "description": "Check-in date for the booking(\nFormat: YYYY-MM-DD)",
       "isDeprecated": false,
       "args": null
     },
@@ -23,7 +23,7 @@
       "typeString": "Date",
       "name": "checkOut",
       "url": "/travelgatex/reference/scalars/date",
-      "description": "Check-out date for the booking.\nFormat: yyyy-MM-dd",
+      "description": "Check-out date for the booking(\nFormat: YYYY-MM-DD)",
       "isDeprecated": false,
       "args": null
     },
@@ -31,7 +31,7 @@
       "typeString": "String",
       "name": "hotelCode",
       "url": "/travelgatex/reference/scalars/string",
-      "description": "Code of the hotel in the context selected.",
+      "description": "Code of the hotel in the context selected",
       "isDeprecated": false,
       "args": null
     },
@@ -39,7 +39,7 @@
       "typeString": "String",
       "name": "hotelName",
       "url": "/travelgatex/reference/scalars/string",
-      "description": "Name of the hotel.",
+      "description": "Name of the hotel",
       "isDeprecated": false,
       "args": null
     },
@@ -47,7 +47,7 @@
       "typeString": "String",
       "name": "boardCode",
       "url": "/travelgatex/reference/scalars/string",
-      "description": "Code of the board in the context selected.",
+      "description": "Code of the board in the context selected",
       "isDeprecated": false,
       "args": null
     },
@@ -55,7 +55,7 @@
       "typeString": "[Occupancy!]",
       "name": "occupancies",
       "url": "/travelgatex/reference/objects/occupancy",
-      "description": "List of occupancies of the request.",
+      "description": "List of occupancies for the request",
       "isDeprecated": false,
       "args": null
     },
@@ -63,7 +63,7 @@
       "typeString": "[BookingRoom!]",
       "name": "rooms",
       "url": "/travelgatex/reference/objects/bookingroom",
-      "description": "List of rooms.",
+      "description": "List of rooms",
       "isDeprecated": false,
       "args": null
     }
@@ -80,7 +80,7 @@
   "operator": "type",
   "typename": "BookingHotel"
 }
-## GraphQL Schema definition
+## GraphQL schema definition
 
 {{% graphql-schema-type %}}
 
@@ -88,6 +88,6 @@
 
 {{% graphql-field %}}
 
-## Require by
+## Required by
 
 {{% graphql-require-by %}}
