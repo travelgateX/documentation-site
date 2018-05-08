@@ -1,4 +1,4 @@
-<nav  class="menu-nav">
+<nav  class="menu-nav material-box">
   <ul class="topics">
     {{- $currentNode := . }}
     {{- $showvisitedlinks := .Site.Params.showVisitedLinks -}}
@@ -104,10 +104,10 @@
     $('#menu').click((event)=>{
       if($('#navbar').hasClass('toogled')){
         $('#navbar').removeClass('toogled');
-        // $('#backgroundMenu').removeClass('toogled');
+        $('#backgroundMenu').removeClass('toogled');
       }else{
         $('#navbar').addClass('toogled');
-        // $('#backgroundMenu').addClass('toogled');
+        $('#backgroundMenu').addClass('toogled');
       }
     });
 
