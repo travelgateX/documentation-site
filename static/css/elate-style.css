@@ -748,7 +748,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #1D6986;
 }
 #fh5co-counters .fh5co-counter .fh5co-counter-number {
-  font-size: 60px;
+  font-size: 50px !important;
   color: #182945;
   font-weight: 300;
 }
