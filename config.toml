@@ -105,7 +105,7 @@ discourseUrl = "http://community.travelgatex.com/"
 
   [[params.intro.item]]
     title = "Getting Started"
-    description = "The inner workings of our APIs. Search, book, retrieve stats and much more."
+    description = "The inner workings of our APIs. Search, book, retrieve stats, mapping hotels and much more."
     url = "getting-started/"
     button = "Go Get Started"
     icon = "icon-fire"
@@ -152,7 +152,7 @@ discourseUrl = "http://community.travelgatex.com/"
   # Work section
   [params.work]
     enable = true
-    title = "Our Products"
+    title = "Our products"
     description = "We’re true believers in the API first philosophy. Anything you can do on any of our sites and tools you can also do using the GraphQL API."
     footertext = 'APIs Made With &#9825; For Developers By Developers'
 
@@ -209,7 +209,7 @@ discourseUrl = "http://community.travelgatex.com/"
 
 
     [[params.work.row]]
-      url = "https://www.travelgatex.com/products/sistribution"
+      url = "https://www.travelgatex.com/products/distribution"
       img = "distribution.svg"
       alt = "Distribution"
       title = "Distribution"
