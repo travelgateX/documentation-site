@@ -7,7 +7,7 @@
       "typeString": "[Transactions!]!",
       "name": "transactions",
       "url": "/travelgatex/reference/objects/transactions",
-      "description": "List of transactions data.",
+      "description": "List of transactions data",
       "isDeprecated": false,
       "args": null
     },
@@ -32,7 +32,7 @@
   "requireby": [
     {
       "name": "HotelSearch",
-      "description": "Results of Avail Hotel. Contains all the available options for a given date and itinerary.",
+      "description": "Results from Avail Hotel; contains all the available options for a given date and itinerary",
       "url": "/travelgatex/reference/objects/hotelsearch"
     },
     {
@@ -65,8 +65,8 @@
   "operator": "type",
   "typename": "AuditData"
 }
-Data sent & received in the supplier’s native format.
-## GraphQL Schema definition
+Data sent and received in the supplier’s native format.
+## GraphQL schema definition
 
 {{% graphql-schema-type %}}
 
@@ -74,6 +74,6 @@ Data sent & received in the supplier’s native format.
 
 {{% graphql-field %}}
 
-## Require by
+## Required by
 
 {{% graphql-require-by %}}
