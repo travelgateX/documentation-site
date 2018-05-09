@@ -7,43 +7,38 @@ weight = 3
 alwaysopen = false
 +++
 
-TravelgateX offers a set of products ready to be integrated using a single GraphQL. If you're not sure about a specific concept, feel free to check our guide bellow to understand the basic concepts.
+The TravelgateX platform and APIs all use a consistent set of basic concepts so that whatever API you use on our platform, you can be confident that it will work with the same definitions as all of the others you are familiar with. 
+
+Here is an overview of the key concepts of our platform.
 
 ### API Gateway
+Our API gateway is stable, secure, fault tolerant and load balanced between many datacenters from four different cloud providers: Microsoft Azure, Google Cloud Platform, Hetzner and TotalUptime. We provide realtime details of our uptime and status <a href="http://status.travelgatex.com/">on our Status page</a> and work at maintaining a minimum 99.99% service performance level.
 
-"TravelgateX is the first company in the industry travel with an API completely based in GraphQL. Most travel APIs are old legacy XML Soap APIs and we faced a lot of problems with that kind technology. The benefit of using GraphQL, is that each client is ultimately responsible over what it wants to be returned.
-
-It is a stable, secure and fault tolerant load balanced between many datacenters from four different cloud providers: [Microsoft Azure](https://azure.microsoft.com/), [Google Cloud Platform](https://cloud.google.com/), [Hetzner](https://www.hetzner.de/) and [TotalUptime](http://totaluptime.com/). If you're looking for more detailed [analysis on GraphQL](/learning-graphql/overview/#graphql-at-travelgatex) please have a look at our guide on [how to use TravelgateX GraphQL API](/travelgatex/overview)."
+Our API gateway provides a single GraphQL endpoint which can be used to make queries against all of our APIs and travel services. This makes it easier for your clients (websites, applications and any other interface) to only call for the exact data that is needed, without parsing a heap of extra information in each API call. (Check out our <a href="https://docs.travelgatex.com/learning-graphql/">GraphQL resources</a> to learn more!)
 
 ### Product
-A `Product` is an API domain which is available for the consumption of `Resources`. We organize our APIs by similarity and common features.
+A `Product` is a TravelgateX platform API which is available for the consumption of Resources. We organize our APIs by similarity and common features. Our HotelX API is our first product now available for use in production environments.
 
 ### Entities
-`Entities` or core resources are entities that define common objects in all our API domains.
+`Entities` or core resources define common objects that are consistent across all of our API products.
 
 ### Partner
-A `Partner` can interact with TravelgateX API with a `User` identifying a person or a `Service Account` identifying an application.
+A `Partner` interacts with the TravelgateX API platform. A partners can be a User (that is, a person) or a Service Account (that is, an application). A partner is a member of an Organization, and can be a member of mutiple organizations.
 
 ### Organization
-An `Organization` is made up of [`Partners`](#Partner) (they can belong to one or more organizations), `Resources`, `Settings`, `Permissions` and other `Metadata`. 
+An `Organization` is made up of `Partners`, `Resources`, `Settings`, `Permissions` and other `Metadata`.
 
 ### Profile
-`Organization` use profiles for `Partner` interaction.
+An `Organization` uses profiles to determine what type of interaction is required on TravelgateX. At present, profiles are either a `Buyer` or a `Supplier`.
 
 ### Buyer
-A `Buyer` is a `Profile` who is connected to TravelgateX in the demand side in order to **buy** travel products from `Sellers`.
-
-### Seller
-A `Seller` is a `Profile` who is connected to TravelgateX in the offering side in order to **sell** travel products to `Buyers`.
+A `Buyer` `Profile` uses the TravelgateX platform to book travel services such as hotels for their customers. Buyers include online travel agents, tour operators, niche travel service providers, and travel and pricing apps.
 
 ### Supplier
- A `Supplier` is a `Partner` who is connected to TravelgateX on the supply side in order to **sell their product** to connected `Buyers`.
-
-### Platform
-Many  `Buyers` or `Sellers` use a third party platform in order to **buy or sell travel products**. These are usually tech companies specialized in developing custom software for other companies.
+ A `Supplier` `Profile` uses the TravelgateX platfrom to make travel services available to buyers. Sellers can be suppliers with realtime databases of hotel room vacancies, tours, car rental providers, adventure and activity service suppliers, travel insurance providers or other travel industry service suppliers.
 
 ### Context
-A `Context` refers to the `Supplier` codes the request is using. It's a way of specifiying which `Supplier` codes is being used so it can be transformed and standardized.
+A `Context` refers to the `Supplier` codes the request is using. It's a way of specifiying which `Supplier` codes are being used so they can be transformed and standardized.
 
 ### Access
-An `Access` is a **set of credentials and configuration** in order to access a `Supplier`.
+An `Access` is a set of credentials and the authentication configuration that enables a `Buyer` to access a `Supplier`. To gain access, a `Buyer` needs to confirm with TravelgateX that they have an agreement in place with each `Supplier` with whom they want to integrate.
