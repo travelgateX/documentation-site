@@ -64,7 +64,7 @@
   "operator": "type",
   "typename": "GetMappeaStatsData"
 }
-## GraphQL Schema definition
+## GraphQL schema definition
 
 {{% graphql-schema-type %}}
 
@@ -72,6 +72,6 @@
 
 {{% graphql-field %}}
 
-## Require by
+## Required by
 
 {{% graphql-require-by %}}
