@@ -49,7 +49,7 @@
   "typename": "Contact"
 }
 Contact Data.
-## GraphQL Schema definition
+## GraphQL schema definition
 
 {{% graphql-schema-type %}}
 
@@ -57,6 +57,6 @@ Contact Data.
 
 {{% graphql-field %}}
 
-## Require by
+## Required by
 
 {{% graphql-require-by %}}
