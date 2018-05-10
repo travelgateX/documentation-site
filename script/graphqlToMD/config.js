@@ -62,9 +62,9 @@ var CHANGELOG = frontMatter("Changelog", null, "", 7, null);
 var QUERY = frontMatter("Query", null, "", 1, null);
 var MUTATION = frontMatter("Mutation", null, "", 2, null);
 
-var SECTION1 = "GraphQL Schema definition";
+var SECTION1 = "GraphQL schema definition";
 var SECTION2 = "Fields";
-var SECTION3 = "Require by";
+var SECTION3 = "Required by";
 
 module.exports = {
   URL,
