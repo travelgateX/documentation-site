@@ -17,7 +17,7 @@ The map plugins are used to change the supplier codes to client codes or vice ve
 Our map formats share a common structure. In order to load your maps you just need to follow the instructions below:
 
 ## Example files
-You can download example for the files structure [here](Sample.zip)
+You can download example for the files structure [here](/content/sample_mapping.zip)
 
 ## Ftp Endpoint
  ftp://ftp.xmltravelgate.com
@@ -35,11 +35,11 @@ The structure of the directory should be in the below format, all files should b
 ### Example
 * /F**0**\_**178**/HotelX\_**179**
 
-## Entity Maps 
+## Entity Maps
 ### File Format
 The file should be in the following format:
 
-* **Encoding**: UTF-8 
+* **Encoding**: UTF-8
 * **File Name**: [Context Source]\_[Context Destination]\_[entity]\_map.csv
     * Context Source: correspond to the client code
     * Context Destination: correspond to the supplier code
@@ -53,7 +53,7 @@ The file should be in the following format:
 * **Directory**: /F[folder code]\_[unique code]/HotelX\_[unique code]/Maps/[entity]/
 ### File Names
 
-All map files must have the same name structure as follow, you need create a file for *Context Destionation* 
+All map files must have the same name structure as follow, you need create a file for *Context Destionation*
 
 |Entity|File Name|
 |---|----|
@@ -73,14 +73,14 @@ All map files must have the same name structure as follow, you need create a fil
 Suppose we have the follow client code and supplier code, you need create one file for each supplier you have
 * Client code: GUE
 * Supplier Code: BVJ
- 
-**Name**: GUE\_BVJ\_hotel\_map.csv  
+
+**Name**: GUE\_BVJ\_hotel\_map.csv
 **Data**:
 ```csv
-Code Source, Code Destination  
-10,c11\#10  
-10000,7604  
-10000,1274249  
+Code Source, Code Destination
+10,c11\#10
+10000,7604
+10000,1274249
 ```
 ## Plugin Name
 |Entity Map|Plugin Name|
@@ -119,12 +119,12 @@ The file must be in the below format:
 **Name**: roomDescriptionMapX\_aliasTable.csv
 **Data**:
 ```csv
-ToReplace,ReplaceWith,Order  
-1 bed,apt,102  
-1 bedroom,apt,100  
-2 bedroom,2-bedroom,200  
-3 bed,3-bedroom,303  
-apartment,apt,902  
+ToReplace,ReplaceWith,Order
+1 bed,apt,102
+1 bedroom,apt,100
+2 bedroom,2-bedroom,200
+3 bed,3-bedroom,303
+apartment,apt,902
 ```
 ### Noise Words
 #### Format File
@@ -136,7 +136,7 @@ The file must be in the below format:
 * **Header Row**: ToRemove 
 * **Directory**: /F[folder code]\_[unique code]/HotelX\_[unique code]/Maps/plugin/
 #### Sample File
-**Name**: roomDescriptionMapX\_noiseWords.csv  
+**Name**: roomDescriptionMapX\_noiseWords.csv
 **Data**:
 ``` csv
 ToRemove
