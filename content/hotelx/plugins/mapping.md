@@ -16,18 +16,44 @@ The map plugins are used to change the supplier codes to client codes or vice ve
 
 Our map formats share a common structure. In order to load your maps you just need to follow the instructions below:
 
-## Format File
+## Example files
+You can download example for the files structure [here](Sample.zip)
 
+## Ftp Endpoint
+ ftp://ftp.xmltravelgate.com
+
+## Directory Format
+### Root path
+The structure of the directory should be in the below format, all files should be inside this directory
+
+/F[Folder code]_[Unique code]/HotelX_[Unique code]/
+* F[Folder code]_[Unique code]
+    * **Folder code**: corresponds to the folder number.
+    * **Unique code**: corresponds to the folder unique code in our system.
+* HotelX_[Unique code]
+    * **Unique code**: corresponds to the HotelX unique code in our system.
+### Example
+* /F**0**\_**178**/HotelX\_**179**
+
+## Entity Maps 
+### File Format
 The file should be in the following format:
 
-* **Encoding**: UTF-8
-* **File Name**: [Context Source]_hotel_map.csv
-* **Header Row**: Code Source, Context Destination, Code Destination
+* **Encoding**: UTF-8 
+* **File Name**: [Context Source]\_[Context Destination]\_[entity]\_map.csv
+    * Context Source: correspond to the client code
+    * Context Destination: correspond to the supplier code
+        * 1 file for each supplier
+
+* **Header Row**: Code Source, Code Destination
+    * Context Source: correspond to the client codes
+    * Context Destination: correspond to the supplier codes
+
 * **Delimiter**: Comma (",")
-* **Directory**: ftp://ftp.xmltravelgate.com/Purchasing/Maps/[entity]/ 
+* **Directory**: /F[folder code]\_[unique code]/HotelX\_[unique code]/Maps/[entity]/
 ### File Names
 
-All files must have the same name structure
+All map files must have the same name structure as follow, you need create a file for *Context Destionation* 
 
 |Entity|File Name|
 |---|----|
@@ -38,18 +64,24 @@ All files must have the same name structure
 ### Directories
 |Entity|File Name|
 |---|---|
-|Hotel|ftp://ftp.xmltravelgate.com/Purchasing/Maps/Hotel/|
-|Board|ftp://ftp.xmltravelgate.com/Purchasing/Maps/Board/|
-|Room|ftp://ftp.xmltravelgate.com/Purchasing/Maps/Room/|
-|Rate|ftp://ftp.xmltravelgate.com/Purchasing/Maps/Rate/|
-### Sample File
-**Name**: GUE\_BVJ\_hotel\_map.csv
+|Hotel|/F[folder code]\_[unique code]/HotelX\_[unique code]/Maps/Hotel/|
+|Board|/F[folder code]\_[unique code]/HotelX\_[unique code]/Maps/Board/|
+|Room|/F[folder code]\_[unique code]/HotelX\_[unique code]/Maps/Room/|
+|Rate|/F[folder code]\_[unique code]/HotelX\_[unique code]/Maps/Rate/|
+
+### Samples File
+Suppose we have the follow client code and supplier code, you need create one file for each supplier you have
+* Client code: GUE
+* Supplier Code: BVJ
+ 
+**Name**: GUE\_BVJ\_hotel\_map.csv  
 **Data**:
-Code Source, Code Destination
-10,c11\#10
-10000,7604
-10000,1274249
-Download file sample [here](../sample.csv).
+```csv
+Code Source, Code Destination  
+10,c11\#10  
+10000,7604  
+10000,1274249  
+```
 ## Plugin Name
 |Entity Map|Plugin Name|
 |---|---|
@@ -82,16 +114,18 @@ The file must be in the below format:
 * File Name: roomDescriptionMapX\_aliasTable.csv 
 * Header Row: ToReplace, ReplaceWith, Order 
 * Delimiter:  Comma (“,”) 
-* Directory: ftp://ftp.xmltravelgate.com/Purchasing/Maps/plugin/ 
+* Directory:  /F[folder code]\_[unique code]/HotelX\_[unique code]/Maps/plugin/
 #### Sample File
 **Name**: roomDescriptionMapX\_aliasTable.csv
 **Data**:
-ToReplace,ReplaceWith,Order
-1 bed,apt,102
-1 bedroom,apt,100
-2 bedroom,2-bedroom,200
-3 bed,3-bedroom,303
-apartment,apt,902
+```csv
+ToReplace,ReplaceWith,Order  
+1 bed,apt,102  
+1 bedroom,apt,100  
+2 bedroom,2-bedroom,200  
+3 bed,3-bedroom,303  
+apartment,apt,902  
+```
 ### Noise Words
 #### Format File
 
@@ -100,14 +134,16 @@ The file must be in the below format:
 * **Encoding**: UTF-8 
 * **File Name**: roomDescriptionMapX\_noiseWords.csv 
 * **Header Row**: ToRemove 
-* **Directory**: ftp://ftp.xmltravelgate.com/Purchasing/Maps/plugin/ 
+* **Directory**: /F[folder code]\_[unique code]/HotelX\_[unique code]/Maps/plugin/
 #### Sample File
-**Name**: roomDescriptionMapX\_noiseWords.csv
+**Name**: roomDescriptionMapX\_noiseWords.csv  
 **Data**:
+``` csv
 ToRemove
 ad
 b&b
 breakf
+```
 ## How applies
 When you execute the plugin the steps are:
 1. Get room description.

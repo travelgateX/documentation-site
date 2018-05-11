@@ -20,8 +20,9 @@ The file should be in the below format:
 * **Encoding**: UTF-8 
 * **File Name**: currency\_map.csv 
 * **Header Row**: Code, Rate 
+    * Decimal separator for rate must be point (".")
 * **Delimiter**:  Comma (“,”) 
-* **Directory**: ftp://ftp.xmltravelgate.com/Purchasing/ 
+* **Directory**:  /F[folder code]\_[unique code]/HotelX\_[unique code]/
 
 #### Sample File
 
