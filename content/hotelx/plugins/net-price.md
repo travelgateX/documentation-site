@@ -19,14 +19,14 @@ The file should be in the below format:
 
 * **Encoding**: UTF-8 
 * **File Name**: commission\_supplier.csv 
-* **Header Row**: Supplier, Commission 
+* **Header Row**: Supplier, Commission
 * **Delimiter**:  Comma (“,”) 
-* **Directory**: ftp://ftp.xmltravelgate.com/Purchasing/ 
+* **Directory**: /F[folder code]\_[unique code]/HotelX\_[unique code]/
 
 _Headers_:
 
 * _Supplier_ → supplier code 
-* _Commission_ → commission value 
+* _Commission_ → commission value, decimal separator must be point (".")
 
 #### Sample File
 
@@ -48,13 +48,13 @@ The hotel commission file should be in the below format:
 * **File Name**: commission\_hotel.csv 
 * **Header Row**: Supplier, Hotel, Commission
 * **Delimiter**:  Comma (“,”) 
-* **Directory**: ftp://ftp.xmltravelgate.com/Purchasing/ 
+* **Directory**: /F[folder code]\_[unique code]/HotelX\_[unique code]/
 
 _Headers_:
 
 * _Supplier_ → supplier code 
 * _Hotel_ → hotel code 
-* _Commission_ → commission value 
+* _Commission_ → commission value, decimal separator must be point (".") 
 
 #### Sample File
 

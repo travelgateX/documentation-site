@@ -52,7 +52,7 @@ Two file are needed:
 * **File Name**: [Context Source]\_Porfolio.csv 
 * **Header Row**: HotelCode, CityCode
 * **Delimiter**:  Comma (“,”) 
-* **Directory**: ftp://ftp.xmltravelgate.com/Purchasing/Markup 
+* **Directory**: /F[folder code]\_[unique code]/HotelX\_[unique code]/Markup
 
 #### Destination trees:
 
@@ -60,7 +60,7 @@ Two file are needed:
 * **File Name**: [Context Source]\_DestinationsTree.csv 
 * **Header Row**: DestinationCode, ParentCode, ISOCountryCode 
 * **Delimiter**:  Comma (“,”) 
-* **Directory**: ftp://ftp.xmltravelgate.com/Purchasing/Markup 
+* **Directory**: /F[folder code]\_[unique code]/HotelX\_[unique code]/Markup 
 
 ### Execution example
 
