@@ -26,11 +26,11 @@ You can download example for the files structure [here](/content/sample_mapping.
 ### Root path
 The structure of the directory should be in the below format, all files should be inside this directory
 
-/F[Folder code]_[Unique code]/HotelX_[Unique code]/
-* F[Folder code]_[Unique code]
+/F[Folder code]\_[Unique code]/HotelX\_[Unique code]/
+* F[Folder code]\_[Unique code]
     * **Folder code**: corresponds to the folder number.
     * **Unique code**: corresponds to the folder unique code in our system.
-* HotelX_[Unique code]
+* HotelX\_[Unique code]
     * **Unique code**: corresponds to the HotelX unique code in our system.
 ### Example
 * /F**0**\_**178**/HotelX\_**179**
