@@ -8,7 +8,40 @@ alwaysopen = false
 +++
 
 ## Try it For Yourself
+[API Playground](https://api.travelgatex.com) is an interactive, fun, and super quick way to get to know our APIs.
 
-[API Playground](https://api.travelgatex.com) is available for free! It **lets you play**, **learn easily** and it’s **simple to set up**. Allows learners of all levels to start exploring and creating quickly. Our Query Builder tool helps users get the most out of the TravelgateX API by creating custom queries and have access TravelgateX API data. You can even customize your responses to better serve your purpose.
+In the API Playground, as you start to type the query, it will autocomplete with the fields available to complete your query parameters. You can also click on the green _Schema_ button on the right of the Playground window to learn more about our data model and to see all of the options available for building your query.
+
+You can set _Query variables_ in the bottom left pane of the Playground. This lets you customize the response you will receive so that only the fields you need are returned in the response.
+
+(insert a GIF like the one in the launchpad blog post)
+
+## Your First Query 
+Try to make a query now for searching for hotels available:
+```bash
+query (hotels in Mallorca)
+```
+Click on the big play button in the middle of the playground to see the response.
+
+You should get the following:
+```bash
+(put in query response)
+```
 
 {{% playground "https://api.travelgatex.com" %}}
+
+## More Queries
+Now try these query examples:
+
+<strong>1. Add query variables to search for a particular date range</strong>
+- explain/show
+
+<strong>2. Search for hotels in Mallorca with a swimming pool</strong>
+- explain/show
+
+Once you are comfortable with making queries in the API Playground, you can use the same query structure in your applications. Check out the pages <a href="https://docs.travelgatex.com/learning-graphql/">Learning GraphQL</a> to learn more about including queries in the code of your client applications.
+
+### Further Reading
+
+- https://dev-blog.apollodata.com/4-simple-ways-to-call-a-graphql-api-a6807bcdb355
+- https://medium.com/graphql-mastery/graphql-quick-tip-how-to-pass-variables-into-a-mutation-in-graphiql-23ecff4add57
