@@ -28,6 +28,9 @@ The main search methods will be:
 ### It is possible to use GIATA codes? 
 Yes, It is possible request availability  using GIATA codes, first of all you need to provide us your GIATA credentials in order to set up your Apikey. After that you will be able to request using GIATA codes, receive the availability response with GIATA codes, etc…
 
+### How can I get the names of the countries?
+The response of the hotelX query contains location.country in ISO standard format.
+
 ### Can I get Daily-prices in Search Response?
 It will depend if the supplier offer the information. In case that the information is returned by the supplier, you will find it through Roomprice string-->PriceBreakdown.
  
