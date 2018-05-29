@@ -30,7 +30,7 @@ Yes, It is possible request availability  using GIATA codes, first of all you ne
 
 ### How can I get the names of the countries?
 The response of the hotelX query contains location.country in ISO standard format.
-
+ 
 ### Can I get Daily-prices in Search Response?
 It will depend if the supplier offer the information. In case that the information is returned by the supplier, you will find it through Roomprice string-->PriceBreakdown.
  
