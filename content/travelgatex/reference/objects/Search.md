@@ -53,10 +53,10 @@
 Available options for a given date and itinerary. It does not filter different classes, times or
 fares. It will always retrieve all results returned by the suppliers. The availability request is very straight
 forward.
-## GraphQL Schema definition
+## GraphQL schema definition
 
 {{% graphql-schema-type %}}
 
-## Require by
+## Required by
 
 {{% graphql-require-by %}}

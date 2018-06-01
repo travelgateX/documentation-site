@@ -31,7 +31,7 @@
   "typename": "ExpireDateInput"
 }
 The card expiration date
-## GraphQL Schema definition
+## GraphQL schema definition
 
 {{% graphql-schema-type %}}
 
@@ -39,6 +39,6 @@ The card expiration date
 
 {{% graphql-field %}}
 
-## Require by
+## Required by
 
 {{% graphql-require-by %}}

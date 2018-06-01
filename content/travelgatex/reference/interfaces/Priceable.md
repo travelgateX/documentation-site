@@ -50,7 +50,7 @@
   "operator": "interface",
   "typename": "Priceable"
 }
-## GraphQL Schema definition
+## GraphQL schema definition
 
 {{% graphql-schema-type %}}
 

@@ -38,7 +38,7 @@
   "typename": "DeltaPriceInput"
 }
 Input delta price, indicates price variation permitted by the client
-## GraphQL Schema definition
+## GraphQL schema definition
 
 {{% graphql-schema-type %}}
 
@@ -46,6 +46,6 @@ Input delta price, indicates price variation permitted by the client
 
 {{% graphql-field %}}
 
-## Require by
+## Required by
 
 {{% graphql-require-by %}}

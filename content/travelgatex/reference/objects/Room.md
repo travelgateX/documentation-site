@@ -7,7 +7,7 @@
       "typeString": "Int!",
       "name": "occupancyRefId",
       "url": "/travelgatex/reference/scalars/int",
-      "description": "ID reference to the occupancy.",
+      "description": "ID reference to the occupancy",
       "isDeprecated": false,
       "args": null
     },
@@ -15,7 +15,7 @@
       "typeString": "String!",
       "name": "code",
       "url": "/travelgatex/reference/scalars/string",
-      "description": "Indicates the room code.",
+      "description": "Indicates the room code",
       "isDeprecated": false,
       "args": null
     },
@@ -23,7 +23,7 @@
       "typeString": "String",
       "name": "description",
       "url": "/travelgatex/reference/scalars/string",
-      "description": "Description about the room.",
+      "description": "Description about the room",
       "isDeprecated": false,
       "args": null
     },
@@ -83,7 +83,7 @@
   "typename": "Room"
 }
 Contains the room information of the option returned.
-## GraphQL Schema definition
+## GraphQL schema definition
 
 {{% graphql-schema-type %}}
 

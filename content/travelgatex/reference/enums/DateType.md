@@ -29,10 +29,10 @@
   "typename": "DateType"
 }
 Indicates the type of dates
-## GraphQL Schema definition
+## GraphQL schema definition
 
 {{% graphql-schema-enum %}}
 
-## Require by
+## Required by
 
 {{% graphql-require-by %}}

@@ -67,7 +67,7 @@
     },
     {
       "name": "Board",
-      "description": "Board Type",
+      "description": "Board type.",
       "url": "/travelgatex/reference/objects/board"
     },
     {
@@ -102,7 +102,7 @@
     },
     {
       "name": "AuditData",
-      "description": "Data sent & received in the supplier’s native format.",
+      "description": "Data sent and received in the supplier’s native format.",
       "url": "/travelgatex/reference/objects/auditdata"
     },
     {
@@ -126,8 +126,13 @@
       "url": "/travelgatex/reference/objects/statsdata"
     },
     {
+      "name": "StatsAssert",
+      "description": "Assert of an specific error",
+      "url": "/travelgatex/reference/objects/statsassert"
+    },
+    {
       "name": "Context",
-      "description": "Context type, for now only Code is necessary",
+      "description": "Context type. Currently, only Code is necessary.",
       "url": "/travelgatex/reference/objects/context"
     }
   ],
@@ -137,10 +142,10 @@
 }
 The DateTime type represents DateTime values. A good example might be a transaction TimeSpan.
 In queries or mutations, DateTime fields have to be specified in ISO 8601 format with enclosing double quotes: "2017-10-22T13:57:31.123Z".
-## GraphQL Schema definition
+## GraphQL schema definition
 
 {{% graphql-schema-scalar %}}
 
-## Require by
+## Required by
 
 {{% graphql-require-by %}}

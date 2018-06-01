@@ -35,8 +35,8 @@
   "operator": "type",
   "typename": "HolderInput"
 }
-Holder object that contains the pax name and surname.
-## GraphQL Schema definition
+Holder object that contains the occupant's (pax's) name and surname.
+## GraphQL schema definition
 
 {{% graphql-schema-type %}}
 
@@ -44,6 +44,6 @@ Holder object that contains the pax name and surname.
 
 {{% graphql-field %}}
 
-## Require by
+## Required by
 
 {{% graphql-require-by %}}

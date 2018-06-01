@@ -27,7 +27,7 @@
   "typename": "Map"
 }
 Map codes.
-## GraphQL Schema definition
+## GraphQL schema definition
 
 {{% graphql-schema-type %}}
 

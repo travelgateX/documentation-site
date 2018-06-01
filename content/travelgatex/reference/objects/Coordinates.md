@@ -24,7 +24,7 @@
   "requireby": [
     {
       "name": "Location",
-      "description": "Indicates the location of the hotel.",
+      "description": "Indicates the location of the hotel",
       "url": "/travelgatex/reference/objects/location"
     }
   ],
@@ -33,7 +33,7 @@
   "typename": "Coordinates"
 }
 Geographical coordinates corresponding to a location.
-## GraphQL Schema definition
+## GraphQL schema definition
 
 {{% graphql-schema-type %}}
 
@@ -41,6 +41,6 @@ Geographical coordinates corresponding to a location.
 
 {{% graphql-field %}}
 
-## Require by
+## Required by
 
 {{% graphql-require-by %}}

@@ -34,7 +34,7 @@
   "operator": "type",
   "typename": "SupplierDetected"
 }
-## GraphQL Schema definition
+## GraphQL schema definition
 
 {{% graphql-schema-type %}}
 

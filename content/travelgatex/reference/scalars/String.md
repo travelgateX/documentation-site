@@ -121,9 +121,19 @@
       "url": "/travelgatex/reference/objects/resourceedge"
     },
     {
+      "name": "ResourceData",
+      "description": "",
+      "url": "/travelgatex/reference/objects/resourcedata"
+    },
+    {
       "name": "APIEdge",
       "description": "",
       "url": "/travelgatex/reference/objects/apiedge"
+    },
+    {
+      "name": "APIData",
+      "description": "",
+      "url": "/travelgatex/reference/objects/apidata"
     },
     {
       "name": "OperationEdge",
@@ -144,6 +154,11 @@
       "name": "ProductEdge",
       "description": "",
       "url": "/travelgatex/reference/objects/productedge"
+    },
+    {
+      "name": "ProductData",
+      "description": "",
+      "url": "/travelgatex/reference/objects/productdata"
     },
     {
       "name": "RelayInput",
@@ -207,7 +222,7 @@
     },
     {
       "name": "Location",
-      "description": "Indicates the location of the hotel.",
+      "description": "Indicates the location of the hotel",
       "url": "/travelgatex/reference/objects/location"
     },
     {
@@ -222,7 +237,7 @@
     },
     {
       "name": "Amenity",
-      "description": "Something, such as a swimming pool or shopping centre, that is intended to make life more pleasant or comfortable for the people.",
+      "description": "An Amenity is defined as something intended to make life more pleasant or comfortable for people. Examples include: swimming pools, shopping centers, etc.",
       "url": "/travelgatex/reference/objects/amenity"
     },
     {
@@ -247,7 +262,7 @@
     },
     {
       "name": "HotelCriteriaSearchInput",
-      "description": "Criteria of search contains destination, travel dates and the number of pax in each room.\nYou must preload the other fields in our system by complete the fields absents.",
+      "description": "Search criteria contains destination, travel dates and the number of pax in each room.\nYou must preload the other fields in our system by complete the fields absents.",
       "url": "/travelgatex/reference/inputobjects/hotelcriteriasearchinput"
     },
     {
@@ -277,7 +292,7 @@
     },
     {
       "name": "HotelSearch",
-      "description": "Results of Avail Hotel. Contains all the available options for a given date and itinerary.",
+      "description": "Results from Avail Hotel; contains all the available options for a given date and itinerary",
       "url": "/travelgatex/reference/objects/hotelsearch"
     },
     {
@@ -312,12 +327,12 @@
     },
     {
       "name": "CriteriaSearch",
-      "description": "Criteria of search contains destination, travel dates and the number of pax in each room.",
+      "description": "Search criteria contains destination, travel dates and the number of pax in each room.",
       "url": "/travelgatex/reference/objects/criteriasearch"
     },
     {
       "name": "HotelOptionSearch",
-      "description": "An option includes hotel information, meal plan, total price, conditions and room description.",
+      "description": "An option includes hotel information, meal plan, total price, conditions and room description",
       "url": "/travelgatex/reference/objects/hoteloptionsearch"
     },
     {
@@ -372,7 +387,7 @@
     },
     {
       "name": "AddOn",
-      "description": "Extra information about the option.",
+      "description": "Additional information about the option",
       "url": "/travelgatex/reference/objects/addon"
     },
     {
@@ -382,7 +397,7 @@
     },
     {
       "name": "HotelOptionQuote",
-      "description": "Contains information about quote.",
+      "description": "Contains information about quote(s)",
       "url": "/travelgatex/reference/objects/hoteloptionquote"
     },
     {
@@ -402,7 +417,7 @@
     },
     {
       "name": "HotelBookingDetail",
-      "description": "Contains information about booking.",
+      "description": "Contains information about booking",
       "url": "/travelgatex/reference/objects/hotelbookingdetail"
     },
     {
@@ -412,7 +427,7 @@
     },
     {
       "name": "Holder",
-      "description": "Holder object that contains the pax name and surname.",
+      "description": "Holder object that contains the occupant's (pax's) name and surname.",
       "url": "/travelgatex/reference/objects/holder"
     },
     {
@@ -456,9 +471,9 @@
       "url": "/travelgatex/reference/objects/file"
     },
     {
-      "name": "MappeaXGetMappeaStatsInput",
+      "name": "MappeaGetMappeaStatsInput",
       "description": "# GetMappeaStats",
-      "url": "/travelgatex/reference/inputobjects/mappeaxgetmappeastatsinput"
+      "url": "/travelgatex/reference/inputobjects/mappeagetmappeastatsinput"
     },
     {
       "name": "GetMappeaStatsData",
@@ -472,7 +487,7 @@
     },
     {
       "name": "Mutation",
-      "description": "Mutations are operations that change or update data in the server.",
+      "description": "Mutations are operations that change or update data on the server",
       "url": "/travelgatex/reference/schema/mutation"
     },
     {
@@ -489,6 +504,11 @@
       "name": "UpdateClientInput",
       "description": "",
       "url": "/travelgatex/reference/inputobjects/updateclientinput"
+    },
+    {
+      "name": "CreateOrganizationInput",
+      "description": "",
+      "url": "/travelgatex/reference/inputobjects/createorganizationinput"
     },
     {
       "name": "CreateMemberInput",
@@ -527,7 +547,7 @@
     },
     {
       "name": "HolderInput",
-      "description": "Holder object that contains the pax name and surname.",
+      "description": "Holder object that contains the occupant's (pax's) name and surname.",
       "url": "/travelgatex/reference/inputobjects/holderinput"
     },
     {
@@ -546,9 +566,9 @@
       "url": "/travelgatex/reference/objects/hotelcanceldetail"
     },
     {
-      "name": "MappeaXUploadFileInput",
+      "name": "MappeaUploadFileInput",
       "description": "## UploadFile",
-      "url": "/travelgatex/reference/inputobjects/mappeaxuploadfileinput"
+      "url": "/travelgatex/reference/inputobjects/mappeauploadfileinput"
     },
     {
       "name": "UploadFileData",
@@ -567,7 +587,7 @@
     },
     {
       "name": "ConnectUser",
-      "description": "data related to a connect user and its groups",
+      "description": "Data related to a connected user and its groups",
       "url": "/travelgatex/reference/objects/connectuser"
     },
     {
@@ -606,14 +626,14 @@
       "url": "/travelgatex/reference/inputobjects/idaccessconfigurationinput"
     },
     {
-      "name": "MappeaXAddOrganizationInput",
+      "name": "MappeaAddOrganizationInput",
       "description": "# AddOrganization",
-      "url": "/travelgatex/reference/inputobjects/mappeaxaddorganizationinput"
+      "url": "/travelgatex/reference/inputobjects/mappeaaddorganizationinput"
     },
     {
-      "name": "MappeaXEditOrganizationInput",
+      "name": "MappeaEditOrganizationInput",
       "description": "# EditOrganization",
-      "url": "/travelgatex/reference/inputobjects/mappeaxeditorganizationinput"
+      "url": "/travelgatex/reference/inputobjects/mappeaeditorganizationinput"
     },
     {
       "name": "LegacyData",
@@ -626,10 +646,10 @@
   "typename": "String"
 }
 The `String` scalar type represents textual data, represented as UTF-8 character sequences. The String type is most often used by GraphQL to represent free-form human-readable text.
-## GraphQL Schema definition
+## GraphQL schema definition
 
 {{% graphql-schema-scalar %}}
 
-## Require by
+## Required by
 
 {{% graphql-require-by %}}

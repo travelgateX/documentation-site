@@ -24,7 +24,7 @@
   "operator": "type",
   "typename": "IdGroupAccessInput"
 }
-## GraphQL Schema definition
+## GraphQL schema definition
 
 {{% graphql-schema-type %}}
 

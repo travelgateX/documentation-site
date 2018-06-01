@@ -64,8 +64,8 @@
   "operator": "type",
   "typename": "Location"
 }
-Indicates the location of the hotel.
-## GraphQL Schema definition
+Indicates the location of the hotel
+## GraphQL schema definition
 
 {{% graphql-schema-type %}}
 
@@ -73,6 +73,6 @@ Indicates the location of the hotel.
 
 {{% graphql-field %}}
 
-## Require by
+## Required by
 
 {{% graphql-require-by %}}

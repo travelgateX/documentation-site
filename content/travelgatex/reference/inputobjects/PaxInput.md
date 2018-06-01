@@ -18,7 +18,7 @@
   "typename": "PaxInput"
 }
 Pax object that contains the pax age.
-## GraphQL Schema definition
+## GraphQL schema definition
 
 {{% graphql-schema-type %}}
 

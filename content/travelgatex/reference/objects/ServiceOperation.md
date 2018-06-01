@@ -49,7 +49,7 @@
   "typename": "ServiceOperation"
 }
 Information related to an API operation
-## GraphQL Schema definition
+## GraphQL schema definition
 
 {{% graphql-schema-type %}}
 
@@ -57,6 +57,6 @@ Information related to an API operation
 
 {{% graphql-field %}}
 
-## Require by
+## Required by
 
 {{% graphql-require-by %}}

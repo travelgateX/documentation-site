@@ -38,7 +38,7 @@
   "typename": "CriteriaBookingReferencesInput"
 }
 Criteria by references
-## GraphQL Schema definition
+## GraphQL schema definition
 
 {{% graphql-schema-type %}}
 
@@ -46,6 +46,6 @@ Criteria by references
 
 {{% graphql-field %}}
 
-## Require by
+## Required by
 
 {{% graphql-require-by %}}

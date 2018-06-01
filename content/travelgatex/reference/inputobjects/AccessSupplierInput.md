@@ -39,7 +39,7 @@
   "typename": "AccessSupplierInput"
 }
 Supplier input for data access management API
-## GraphQL Schema definition
+## GraphQL schema definition
 
 {{% graphql-schema-type %}}
 

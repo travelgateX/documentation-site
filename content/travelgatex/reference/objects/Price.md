@@ -39,7 +39,7 @@
       "typeString": "Exchange!",
       "name": "exchange",
       "url": "/travelgatex/reference/objects/exchange",
-      "description": "Informs about the currency of origin, and the rate applied over result returned by the supplier.\nThis information is mandatory.",
+      "description": "Provides information about the currency of original, and its rate applied over the results returned by the Supplier.\nThis information is mandatory.",
       "isDeprecated": false,
       "args": null
     },
@@ -56,7 +56,7 @@
   "requireby": [
     {
       "name": "HotelOptionSearch",
-      "description": "An option includes hotel information, meal plan, total price, conditions and room description.",
+      "description": "An option includes hotel information, meal plan, total price, conditions and room description",
       "url": "/travelgatex/reference/objects/hoteloptionsearch"
     },
     {
@@ -81,12 +81,12 @@
     },
     {
       "name": "HotelOptionQuote",
-      "description": "Contains information about quote.",
+      "description": "Contains information about quote(s)",
       "url": "/travelgatex/reference/objects/hoteloptionquote"
     },
     {
       "name": "HotelBookingDetail",
-      "description": "Contains information about booking.",
+      "description": "Contains information about booking",
       "url": "/travelgatex/reference/objects/hotelbookingdetail"
     },
     {
@@ -105,8 +105,8 @@
   "typename": "Price"
 }
 Price indicates the value of the room/option.
-Supplements and/or surcharges could be or not included into the price, will be verified with the nodes Supplements/Surcharges.
-## GraphQL Schema definition
+Supplements and/or surcharges can be included into the price, and will be verified with nodes Supplements/Surcharges.
+## GraphQL schema definition
 
 {{% graphql-schema-type %}}
 
@@ -114,6 +114,6 @@ Supplements and/or surcharges could be or not included into the price, will be v
 
 {{% graphql-field %}}
 
-## Require by
+## Required by
 
 {{% graphql-require-by %}}

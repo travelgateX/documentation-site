@@ -32,7 +32,7 @@
   "typename": "HotelXSupplierInput"
 }
 Supplier object. Contains its own settings, code and access.
-## GraphQL Schema definition
+## GraphQL schema definition
 
 {{% graphql-schema-type %}}
 

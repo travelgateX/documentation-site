@@ -64,7 +64,7 @@
   "typename": "MappingContext"
 }
 Returns the differents group contexts
-## GraphQL Schema definition
+## GraphQL schema definition
 
 {{% graphql-schema-type %}}
 

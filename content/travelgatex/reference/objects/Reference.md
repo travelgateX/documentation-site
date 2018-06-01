@@ -24,7 +24,7 @@
   "requireby": [
     {
       "name": "HotelBookingDetail",
-      "description": "Contains information about booking.",
+      "description": "Contains information about booking",
       "url": "/travelgatex/reference/objects/hotelbookingdetail"
     },
     {
@@ -38,7 +38,7 @@
   "typename": "Reference"
 }
 Contains reference codes.
-## GraphQL Schema definition
+## GraphQL schema definition
 
 {{% graphql-schema-type %}}
 
@@ -46,6 +46,6 @@ Contains reference codes.
 
 {{% graphql-field %}}
 
-## Require by
+## Required by
 
 {{% graphql-require-by %}}

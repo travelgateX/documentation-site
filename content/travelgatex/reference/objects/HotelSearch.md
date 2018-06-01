@@ -30,7 +30,7 @@
       "typeString": "AuditData",
       "name": "auditData",
       "url": "/travelgatex/reference/objects/auditdata",
-      "description": "Data sent & received in the supplier's native format.",
+      "description": "Data sent and received in the supplier's native format.",
       "isDeprecated": false,
       "args": null
     },
@@ -54,7 +54,7 @@
       "typeString": "[Error!]",
       "name": "errors",
       "url": "/travelgatex/reference/objects/error",
-      "description": "Errors that will lead the service to abort",
+      "description": "Errors that abort services",
       "isDeprecated": false,
       "args": null
     },
@@ -84,8 +84,8 @@
   "operator": "type",
   "typename": "HotelSearch"
 }
-Results of Avail Hotel. Contains all the available options for a given date and itinerary.
-## GraphQL Schema definition
+Results from Avail Hotel; contains all the available options for a given date and itinerary
+## GraphQL schema definition
 
 {{% graphql-schema-type %}}
 
@@ -93,6 +93,6 @@ Results of Avail Hotel. Contains all the available options for a given date and 
 
 {{% graphql-field %}}
 
-## Require by
+## Required by
 
 {{% graphql-require-by %}}

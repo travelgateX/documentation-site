@@ -14,14 +14,14 @@
       "typeString": "Date!",
       "name": "start",
       "url": "/travelgatex/reference/scalars/date",
-      "description": "Start date.\nFormat: yyyy-MM-dd.",
+      "description": "Start date.\nFormat: YYYY-MM-DD.",
       "args": null
     },
     {
       "typeString": "Date!",
       "name": "end",
       "url": "/travelgatex/reference/scalars/date",
-      "description": "End date.\nFormat: yyyy-MM-dd.",
+      "description": "End date.\nFormat: YYYY-MM-DD.",
       "args": null
     }
   ],
@@ -38,7 +38,7 @@
   "typename": "CriteriaBookingDatesInput"
 }
 Criteria by dates
-## GraphQL Schema definition
+## GraphQL schema definition
 
 {{% graphql-schema-type %}}
 
@@ -46,6 +46,6 @@ Criteria by dates
 
 {{% graphql-field %}}
 
-## Require by
+## Required by
 
 {{% graphql-require-by %}}

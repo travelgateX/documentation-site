@@ -30,13 +30,13 @@
       "typeString": "String",
       "name": "connectUser",
       "url": "/travelgatex/reference/scalars/string",
-      "description": " This field is got only if the authorization header is of the type JWT. It is used to change the user that has been set by default in the preload.\n@deprecated(reason: \"deprecated from 2018-03-19. Redundant.\")",
+      "description": " This field is occurs only if the authorization header is of the type JWT.. It is used to change the user that has been set by default in the preload.\n@deprecated(reason: \"deprecated from 2018-03-19. Redundant.\")",
       "isDeprecated": true,
       "args": null,
       "deprecationReason": "deprecated from 2018-03-19. Redundant.",
       "descriptionSplitted": {
         "date": "2018-03-19",
-        "first": " This field is got only if the authorization header is of the type JWT. It is used to change the user that has been set by default in the preload.\n@deprecated(reason: \"deprecated from",
+        "first": " This field is occurs only if the authorization header is of the type JWT.. It is used to change the user that has been set by default in the preload.\n@deprecated(reason: \"deprecated from",
         "second": "Redundant.\")"
       }
     }
@@ -47,7 +47,7 @@
   "typename": "HotelSettingsInput"
 }
 Settings that you can edit for this avail. Values are loaded by default in our Back Office.
-## GraphQL Schema definition
+## GraphQL schema definition
 
 {{% graphql-schema-type %}}
 

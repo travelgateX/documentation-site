@@ -43,7 +43,7 @@
   "typename": "RatePlan"
 }
 Information about the rate of the option returned.
-## GraphQL Schema definition
+## GraphQL schema definition
 
 {{% graphql-schema-type %}}
 

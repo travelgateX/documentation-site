@@ -28,10 +28,10 @@
   "operator": "enum",
   "typename": "MarkupRuleType"
 }
-## GraphQL Schema definition
+## GraphQL schema definition
 
 {{% graphql-schema-enum %}}
 
-## Require by
+## Required by
 
 {{% graphql-require-by %}}

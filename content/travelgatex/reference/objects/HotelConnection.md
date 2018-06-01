@@ -41,7 +41,7 @@
   "typename": "HotelConnection"
 }
 HotelList definition
-## GraphQL Schema definition
+## GraphQL schema definition
 
 {{% graphql-schema-type %}}
 
@@ -49,6 +49,6 @@ HotelList definition
 
 {{% graphql-field %}}
 
-## Require by
+## Required by
 
 {{% graphql-require-by %}}

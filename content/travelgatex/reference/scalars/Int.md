@@ -11,6 +11,11 @@
       "url": "/travelgatex/reference/objects/supplierdata"
     },
     {
+      "name": "SupplierFilter",
+      "description": "",
+      "url": "/travelgatex/reference/inputobjects/supplierfilter"
+    },
+    {
       "name": "ServiceOperation",
       "description": "Information related to an API operation",
       "url": "/travelgatex/reference/objects/serviceoperation"
@@ -97,7 +102,7 @@
     },
     {
       "name": "CancelPenalty",
-      "description": "Contains information about a cancel penalty.",
+      "description": "Contains information for cancellation penalities..",
       "url": "/travelgatex/reference/objects/cancelpenalty"
     },
     {
@@ -121,6 +126,11 @@
       "url": "/travelgatex/reference/objects/statsinfo"
     },
     {
+      "name": "StatsAssert",
+      "description": "Assert of an specific error",
+      "url": "/travelgatex/reference/objects/statsassert"
+    },
+    {
       "name": "File",
       "description": "",
       "url": "/travelgatex/reference/objects/file"
@@ -137,7 +147,7 @@
     },
     {
       "name": "BusinessRules",
-      "description": "List of business rules to filter the options that you are interested.",
+      "description": "LList of business rules for filtering options based on your interests.",
       "url": "/travelgatex/reference/objects/businessrules"
     },
     {
@@ -156,9 +166,9 @@
       "url": "/travelgatex/reference/inputobjects/bookpaxinput"
     },
     {
-      "name": "MappeaXConfirmUploadInput",
+      "name": "MappeaConfirmUploadInput",
       "description": "## ConfirmUpload",
-      "url": "/travelgatex/reference/inputobjects/mappeaxconfirmuploadinput"
+      "url": "/travelgatex/reference/inputobjects/mappeaconfirmuploadinput"
     },
     {
       "name": "UploadFileData",
@@ -171,9 +181,9 @@
       "url": "/travelgatex/reference/objects/supplierdetected"
     },
     {
-      "name": "MappeaXMapSupplierInput",
+      "name": "MappeaMapSupplierInput",
       "description": "# MapSupplier",
-      "url": "/travelgatex/reference/inputobjects/mappeaxmapsupplierinput"
+      "url": "/travelgatex/reference/inputobjects/mappeamapsupplierinput"
     },
     {
       "name": "TimeoutInput",
@@ -191,10 +201,10 @@
   "typename": "Int"
 }
 The `Int` scalar type represents non-fractional signed whole numeric values. Int can represent values between -(2^31) and 2^31 - 1. 
-## GraphQL Schema definition
+## GraphQL schema definition
 
 {{% graphql-schema-scalar %}}
 
-## Require by
+## Required by
 
 {{% graphql-require-by %}}

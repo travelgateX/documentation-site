@@ -24,7 +24,7 @@
   "operator": "type",
   "typename": "HotelXCategoryQueryInput"
 }
-## GraphQL Schema definition
+## GraphQL schema definition
 
 {{% graphql-schema-type %}}
 

@@ -7,17 +7,17 @@
   "requireby": [
     {
       "name": "Location",
-      "description": "Indicates the location of the hotel.",
+      "description": "Indicates the location of the hotel",
       "url": "/travelgatex/reference/objects/location"
     },
     {
       "name": "HotelCriteriaSearchInput",
-      "description": "Criteria of search contains destination, travel dates and the number of pax in each room.\nYou must preload the other fields in our system by complete the fields absents.",
+      "description": "Search criteria contains destination, travel dates and the number of pax in each room.\nYou must preload the other fields in our system by complete the fields absents.",
       "url": "/travelgatex/reference/inputobjects/hotelcriteriasearchinput"
     },
     {
       "name": "CriteriaSearch",
-      "description": "Criteria of search contains destination, travel dates and the number of pax in each room.",
+      "description": "Search criteria contains destination, travel dates and the number of pax in each room.",
       "url": "/travelgatex/reference/objects/criteriasearch"
     },
     {
@@ -37,10 +37,10 @@
 }
 The Country type represents Country values. A good example might be a Passenger Nationality.
 In queries or mutations, Country fields have to be specified in ISO 3166-1 alpha-2 format with enclosing double quotes "ES".
-## GraphQL Schema definition
+## GraphQL schema definition
 
 {{% graphql-schema-scalar %}}
 
-## Require by
+## Required by
 
 {{% graphql-require-by %}}

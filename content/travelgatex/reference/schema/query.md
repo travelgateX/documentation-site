@@ -102,7 +102,7 @@
   "operator": "type",
   "typename": "Query"
 }
-## GraphQL Schema definition
+## GraphQL schema definition
 
 {{% graphql-schema-type %}}
 

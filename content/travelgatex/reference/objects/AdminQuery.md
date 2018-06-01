@@ -7,7 +7,7 @@
       "typeString": "AccessConnection",
       "name": "accesses",
       "url": "/travelgatex/reference/objects/accessconnection",
-      "description": "Obtain a list of accesses for a filter.",
+      "description": "Obtain a list of accesses for a filter",
       "isDeprecated": false,
       "args": [
         {
@@ -18,7 +18,7 @@
         },
         {
           "typeString": "Int",
-          "name": "Last",
+          "name": "last",
           "url": "/travelgatex/reference/scalars/int",
           "description": ""
         },
@@ -57,7 +57,7 @@
         },
         {
           "typeString": "Int",
-          "name": "Last",
+          "name": "last",
           "url": "/travelgatex/reference/scalars/int",
           "description": ""
         },
@@ -96,7 +96,7 @@
         },
         {
           "typeString": "Int",
-          "name": "Last",
+          "name": "last",
           "url": "/travelgatex/reference/scalars/int",
           "description": ""
         },
@@ -124,7 +124,7 @@
       "typeString": "ServiceApi",
       "name": "serviceApi",
       "url": "/travelgatex/reference/objects/serviceapi",
-      "description": "Obtain a ServiceApi",
+      "description": "Obtain a ServiceAPI",
       "isDeprecated": false,
       "args": [
         {
@@ -139,7 +139,7 @@
       "typeString": "OrganizationConnection!",
       "name": "organizations",
       "url": "/travelgatex/reference/objects/organizationconnection",
-      "description": "Organizations list. Specify organization codes to filter organizations.",
+      "description": "Organizations list; specify organization codes to filter organizations",
       "isDeprecated": false,
       "args": [
         {
@@ -178,7 +178,7 @@
       "typeString": "ProductConnection!",
       "name": "products",
       "url": "/travelgatex/reference/objects/productconnection",
-      "description": "Products list. Specify product codes to filter products.",
+      "description": "Members list; specify member codes to filter members",
       "isDeprecated": false,
       "args": [
         {
@@ -217,7 +217,7 @@
       "typeString": "MemberConnection!",
       "name": "members",
       "url": "/travelgatex/reference/objects/memberconnection",
-      "description": "Members list. Specify member codes to filter members.",
+      "description": "Members list; specify member codes to filter members.",
       "isDeprecated": false,
       "args": [
         {
@@ -262,7 +262,7 @@
       "typeString": "GroupConnection!",
       "name": "groups",
       "url": "/travelgatex/reference/objects/groupconnection",
-      "description": "Groups list. Specify group codes to filter groups.",
+      "description": "Groups list; specify group codes to filter groups.",
       "isDeprecated": false,
       "args": [
         {
@@ -307,7 +307,7 @@
       "typeString": "APIConnection!",
       "name": "apis",
       "url": "/travelgatex/reference/objects/apiconnection",
-      "description": "Apis list. Specify api codes to filter apis.",
+      "description": "Apis list; specify api codes to filter apis.",
       "isDeprecated": false,
       "args": [
         {
@@ -346,7 +346,7 @@
       "typeString": "ResourceConnection!",
       "name": "resources",
       "url": "/travelgatex/reference/objects/resourceconnection",
-      "description": "Resources list. Specify resource codes to filter resources.",
+      "description": "Resources list; specify resource codes to filter resources.",
       "isDeprecated": false,
       "args": [
         {
@@ -385,7 +385,7 @@
       "typeString": "RoleConnection!",
       "name": "roles",
       "url": "/travelgatex/reference/objects/roleconnection",
-      "description": "Roles list. Specify role codes to filter roles.",
+      "description": "Roles list; specify role codes to filter roles.",
       "isDeprecated": false,
       "args": [
         {
@@ -424,13 +424,19 @@
       "typeString": "OperationConnection!",
       "name": "operations",
       "url": "/travelgatex/reference/objects/operationconnection",
-      "description": "Operations list. Specify operations codes to filter operations.",
+      "description": "Operations list; specify operations codes to filter operations.",
       "isDeprecated": false,
       "args": [
         {
           "typeString": "[ID!]",
           "name": "codes",
           "url": "/travelgatex/reference/scalars/id",
+          "description": ""
+        },
+        {
+          "typeString": "OperationType",
+          "name": "type",
+          "url": "/travelgatex/reference/enums/operationtype",
           "description": ""
         },
         {
@@ -472,7 +478,7 @@
   "operator": "type",
   "typename": "AdminQuery"
 }
-## GraphQL Schema definition
+## GraphQL schema definition
 
 {{% graphql-schema-type %}}
 
@@ -480,6 +486,6 @@
 
 {{% graphql-field %}}
 
-## Require by
+## Required by
 
 {{% graphql-require-by %}}

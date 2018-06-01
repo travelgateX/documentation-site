@@ -12,7 +12,7 @@
     },
     {
       "name": "BusinessRules",
-      "description": "List of business rules to filter the options that you are interested.",
+      "description": "LList of business rules for filtering options based on your interests.",
       "url": "/travelgatex/reference/objects/businessrules"
     },
     {
@@ -39,10 +39,10 @@
   "typename": "BusinessRulesType"
 }
 Business rules type
-## GraphQL Schema definition
+## GraphQL schema definition
 
 {{% graphql-schema-enum %}}
 
-## Require by
+## Required by
 
 {{% graphql-require-by %}}

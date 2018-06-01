@@ -18,7 +18,7 @@
   "typename": "RoomInput"
 }
 Occupancy for a room. It contains a list of pax ages.
-## GraphQL Schema definition
+## GraphQL schema definition
 
 {{% graphql-schema-type %}}
 

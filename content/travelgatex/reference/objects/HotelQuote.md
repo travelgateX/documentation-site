@@ -22,7 +22,7 @@
       "typeString": "AuditData",
       "name": "auditData",
       "url": "/travelgatex/reference/objects/auditdata",
-      "description": "Data sent & received in the supplier's native format.",
+      "description": "Data sent and received in the supplier's native format.",
       "isDeprecated": false,
       "args": null
     },
@@ -38,7 +38,7 @@
       "typeString": "[Error!]",
       "name": "errors",
       "url": "/travelgatex/reference/objects/error",
-      "description": "Errors that will lead the service to abort",
+      "description": "Errors that abort services",
       "isDeprecated": false,
       "args": null
     },
@@ -46,7 +46,7 @@
       "typeString": "[Warning!]",
       "name": "warnings",
       "url": "/travelgatex/reference/objects/warning",
-      "description": "Potentially  harmful situations or errors that won't force the service to abort",
+      "description": "Potentially harmful situations or errors, but ones that will not forcibly abort the service",
       "isDeprecated": false,
       "args": null
     }
@@ -68,7 +68,7 @@
   "operator": "type",
   "typename": "HotelQuote"
 }
-## GraphQL Schema definition
+## GraphQL schema definition
 
 {{% graphql-schema-type %}}
 
@@ -76,6 +76,6 @@
 
 {{% graphql-field %}}
 
-## Require by
+## Required by
 
 {{% graphql-require-by %}}

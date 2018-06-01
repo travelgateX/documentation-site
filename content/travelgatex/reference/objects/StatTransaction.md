@@ -50,7 +50,7 @@
   "operator": "type",
   "typename": "StatTransaction"
 }
-## GraphQL Schema definition
+## GraphQL schema definition
 
 {{% graphql-schema-type %}}
 

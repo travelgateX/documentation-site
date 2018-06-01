@@ -14,7 +14,7 @@
       "typeString": "Boolean!",
       "name": "isActive",
       "url": "/travelgatex/reference/scalars/boolean",
-      "description": "Indicates if the access is active.",
+      "description": "Indicates if Access is active",
       "args": null
     },
     {
@@ -45,7 +45,7 @@
   "operator": "type",
   "typename": "IdAccessConfigurationInput"
 }
-## GraphQL Schema definition
+## GraphQL schema definition
 
 {{% graphql-schema-type %}}
 

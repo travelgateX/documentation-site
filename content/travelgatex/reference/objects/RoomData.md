@@ -7,7 +7,7 @@
       "typeString": "ID!",
       "name": "code",
       "url": "/travelgatex/reference/scalars/id",
-      "description": "Internal code to perform availability.",
+      "description": "Internal code for checking availability",
       "isDeprecated": false,
       "args": null
     },
@@ -15,7 +15,7 @@
       "typeString": "String!",
       "name": "roomCode",
       "url": "/travelgatex/reference/scalars/string",
-      "description": "Code of the hotel in the Supplier selected.",
+      "description": "Code of the hotel in the Supplier selected",
       "isDeprecated": false,
       "args": null
     },
@@ -48,7 +48,7 @@
   "typename": "RoomData"
 }
 Room data
-## GraphQL Schema definition
+## GraphQL schema definition
 
 {{% graphql-schema-type %}}
 
@@ -56,6 +56,6 @@ Room data
 
 {{% graphql-field %}}
 
-## Require by
+## Required by
 
 {{% graphql-require-by %}}

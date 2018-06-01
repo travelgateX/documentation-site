@@ -15,7 +15,7 @@
       "typeString": "Boolean!",
       "name": "available",
       "url": "/travelgatex/reference/scalars/boolean",
-      "description": "Indicates if you can search by destination.",
+      "description": "Indicates if you can search by destination",
       "isDeprecated": false,
       "args": null
     },
@@ -46,7 +46,7 @@
       "typeString": "[String!]",
       "name": "closestDestinations",
       "url": "/travelgatex/reference/scalars/string",
-      "description": "Closest destinations, indicates the minimal destinations.",
+      "description": "Closest destinations, indicates destinations in proximity",
       "isDeprecated": false,
       "args": null
     },
@@ -54,15 +54,15 @@
       "typeString": "String",
       "name": "parent",
       "url": "/travelgatex/reference/scalars/string",
-      "description": "Parent destination code.",
+      "description": "Parent destination code",
       "isDeprecated": false,
       "args": null
     },
     {
-      "typeString": "DestinationType!",
+      "typeString": "DestinationType",
       "name": "type",
       "url": "/travelgatex/reference/enums/destinationtype",
-      "description": "Indicates destination type, zone or city.",
+      "description": "Indicates destination type, zone or city",
       "isDeprecated": false,
       "args": null
     }
@@ -71,7 +71,7 @@
   "requireby": [
     {
       "name": "Location",
-      "description": "Indicates the location of the hotel.",
+      "description": "Indicates the location of the hotel",
       "url": "/travelgatex/reference/objects/location"
     },
     {
@@ -85,7 +85,7 @@
   "typename": "DestinationData"
 }
 Information about destinantion
-## GraphQL Schema definition
+## GraphQL schema definition
 
 {{% graphql-schema-type %}}
 
@@ -93,6 +93,6 @@ Information about destinantion
 
 {{% graphql-field %}}
 
-## Require by
+## Required by
 
 {{% graphql-require-by %}}

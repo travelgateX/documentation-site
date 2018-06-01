@@ -29,6 +29,6 @@
   "typename": "PriceType"
 }
 Price Type
-## GraphQL Schema definition
+## GraphQL schema definition
 
 {{% graphql-schema-enum %}}

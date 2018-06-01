@@ -34,7 +34,7 @@
   "typename": "MappingEntity"
 }
 Mapping about client codes with the equivalence per supplier.
-## GraphQL Schema definition
+## GraphQL schema definition
 
 {{% graphql-schema-type %}}
 

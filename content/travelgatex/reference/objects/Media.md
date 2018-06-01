@@ -31,7 +31,7 @@
       "typeString": "DateTime!",
       "name": "updatedAt",
       "url": "/travelgatex/reference/scalars/datetime",
-      "description": "Update date.",
+      "description": "Date updated.",
       "isDeprecated": false,
       "args": null
     },
@@ -66,7 +66,7 @@
   "typename": "Media"
 }
 Contains media information.
-## GraphQL Schema definition
+## GraphQL schema definition
 
 {{% graphql-schema-type %}}
 

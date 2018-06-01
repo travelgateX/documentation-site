@@ -25,7 +25,7 @@
   "typename": "BookRoomInput"
 }
 Input BookRoom contains list of pax and the room's reference.
-## GraphQL Schema definition
+## GraphQL schema definition
 
 {{% graphql-schema-type %}}
 

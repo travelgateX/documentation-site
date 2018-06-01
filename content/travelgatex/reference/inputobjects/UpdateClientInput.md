@@ -21,7 +21,7 @@
       "typeString": "Boolean",
       "name": "isActive",
       "url": "/travelgatex/reference/scalars/boolean",
-      "description": "Indicates whether a Client is active",
+      "description": "Indicates whether a Client is active or inactive",
       "args": null
     }
   ],
@@ -31,7 +31,7 @@
   "operator": "type",
   "typename": "UpdateClientInput"
 }
-## GraphQL Schema definition
+## GraphQL schema definition
 
 {{% graphql-schema-type %}}
 

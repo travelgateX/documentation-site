@@ -31,7 +31,7 @@
   "typename": "BookReferenceInput"
 }
 Reference object that contains the client reference and/or supplier reference.
-## GraphQL Schema definition
+## GraphQL schema definition
 
 {{% graphql-schema-type %}}
 
@@ -39,6 +39,6 @@ Reference object that contains the client reference and/or supplier reference.
 
 {{% graphql-field %}}
 
-## Require by
+## Required by
 
 {{% graphql-require-by %}}

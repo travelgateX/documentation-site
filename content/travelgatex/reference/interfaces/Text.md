@@ -26,7 +26,7 @@
   "operator": "interface",
   "typename": "Text"
 }
-## GraphQL Schema definition
+## GraphQL schema definition
 
 {{% graphql-schema-type %}}
 

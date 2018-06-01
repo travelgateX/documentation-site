@@ -7,7 +7,7 @@
       "typeString": "ID!",
       "name": "code",
       "url": "/travelgatex/reference/scalars/id",
-      "description": "Internal code to perform availability.",
+      "description": "Internal code for checking availability",
       "isDeprecated": false,
       "args": null
     },
@@ -15,7 +15,7 @@
       "typeString": "String!",
       "name": "boardCode",
       "url": "/travelgatex/reference/scalars/string",
-      "description": "Code of the hotel in the Supplier selected.",
+      "description": "Code of the hotel in the Supplier selected",
       "isDeprecated": false,
       "args": null
     },
@@ -39,7 +39,7 @@
   "requireby": [
     {
       "name": "Board",
-      "description": "Board Type",
+      "description": "Board type.",
       "url": "/travelgatex/reference/objects/board"
     }
   ],
@@ -48,7 +48,7 @@
   "typename": "BoardData"
 }
 Board data
-## GraphQL Schema definition
+## GraphQL schema definition
 
 {{% graphql-schema-type %}}
 
@@ -56,6 +56,6 @@ Board data
 
 {{% graphql-field %}}
 
-## Require by
+## Required by
 
 {{% graphql-require-by %}}

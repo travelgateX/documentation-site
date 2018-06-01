@@ -20,9 +20,17 @@
       "args": null
     },
     {
-      "typeString": "String!",
-      "name": "type",
+      "typeString": "String",
+      "name": "label",
       "url": "/travelgatex/reference/scalars/string",
+      "description": "",
+      "isDeprecated": false,
+      "args": null
+    },
+    {
+      "typeString": "[OperationType!]!",
+      "name": "types",
+      "url": "/travelgatex/reference/enums/operationtype",
       "description": "",
       "isDeprecated": false,
       "args": null
@@ -48,7 +56,7 @@
   "operator": "type",
   "typename": "OperationData"
 }
-## GraphQL Schema definition
+## GraphQL schema definition
 
 {{% graphql-schema-type %}}
 
@@ -56,6 +64,6 @@
 
 {{% graphql-field %}}
 
-## Require by
+## Required by
 
 {{% graphql-require-by %}}

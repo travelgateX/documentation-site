@@ -39,10 +39,10 @@
   "typename": "Quote"
 }
 Returns the total price and cancellation policies of the Option selected in the previous step (Search).
-## GraphQL Schema definition
+## GraphQL schema definition
 
 {{% graphql-schema-type %}}
 
-## Require by
+## Required by
 
 {{% graphql-require-by %}}

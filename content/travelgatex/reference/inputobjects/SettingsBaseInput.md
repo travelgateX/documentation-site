@@ -21,7 +21,7 @@
       "typeString": "BusinessRulesInput",
       "name": "businessRules",
       "url": "/travelgatex/reference/inputobjects/businessrulesinput",
-      "description": "Business rules.",
+      "description": "Business rules",
       "args": null
     }
   ],
@@ -43,7 +43,7 @@
   "typename": "SettingsBaseInput"
 }
 Contains the time out and business rules of a supplier or an access.
-## GraphQL Schema definition
+## GraphQL schema definition
 
 {{% graphql-schema-type %}}
 
@@ -51,6 +51,6 @@ Contains the time out and business rules of a supplier or an access.
 
 {{% graphql-field %}}
 
-## Require by
+## Required by
 
 {{% graphql-require-by %}}

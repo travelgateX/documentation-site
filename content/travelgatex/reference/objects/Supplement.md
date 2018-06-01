@@ -115,7 +115,7 @@
   "typename": "Supplement"
 }
 Supplement that it can be or its already added to the option returned. Contains all the information about the supplement.
-## GraphQL Schema definition
+## GraphQL schema definition
 
 {{% graphql-schema-type %}}
 

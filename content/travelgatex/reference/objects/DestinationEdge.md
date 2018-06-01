@@ -33,7 +33,7 @@
   "typename": "DestinationEdge"
 }
 DestinationList Edge definition
-## GraphQL Schema definition
+## GraphQL schema definition
 
 {{% graphql-schema-type %}}
 
@@ -41,6 +41,6 @@ DestinationList Edge definition
 
 {{% graphql-field %}}
 
-## Require by
+## Required by
 
 {{% graphql-require-by %}}

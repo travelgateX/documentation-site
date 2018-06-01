@@ -34,7 +34,7 @@
   "operator": "interface",
   "typename": "AdviseMessage"
 }
-## GraphQL Schema definition
+## GraphQL schema definition
 
 {{% graphql-schema-type %}}
 

@@ -49,7 +49,7 @@
   "typename": "Provider"
 }
 Temporary type to use only during SQL server's lifetime
-## GraphQL Schema definition
+## GraphQL schema definition
 
 {{% graphql-schema-type %}}
 
@@ -57,6 +57,6 @@ Temporary type to use only during SQL server's lifetime
 
 {{% graphql-field %}}
 
-## Require by
+## Required by
 
 {{% graphql-require-by %}}

@@ -22,7 +22,7 @@
       "typeString": "[Error!]",
       "name": "errors",
       "url": "/travelgatex/reference/objects/error",
-      "description": "Errors that will lead the service to abort",
+      "description": "Errors that abort services",
       "isDeprecated": false,
       "args": null
     },
@@ -53,7 +53,7 @@
   "typename": "Mapping"
 }
 Returns the mapping for a group.
-## GraphQL Schema definition
+## GraphQL schema definition
 
 {{% graphql-schema-type %}}
 
@@ -61,6 +61,6 @@ Returns the mapping for a group.
 
 {{% graphql-field %}}
 
-## Require by
+## Required by
 
 {{% graphql-require-by %}}

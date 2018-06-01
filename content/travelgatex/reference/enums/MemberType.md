@@ -6,6 +6,11 @@
   "deprecatedFields": null,
   "requireby": [
     {
+      "name": "MemberData",
+      "description": "",
+      "url": "/travelgatex/reference/objects/memberdata"
+    },
+    {
       "name": "CreateMemberInput",
       "description": "",
       "url": "/travelgatex/reference/inputobjects/creatememberinput"
@@ -28,10 +33,10 @@
   "operator": "enum",
   "typename": "MemberType"
 }
-## GraphQL Schema definition
+## GraphQL schema definition
 
 {{% graphql-schema-enum %}}
 
-## Require by
+## Required by
 
 {{% graphql-require-by %}}

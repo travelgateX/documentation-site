@@ -39,7 +39,7 @@
   "typename": "HotelCancelInput"
 }
 Cancellation Criteria.
-## GraphQL Schema definition
+## GraphQL schema definition
 
 {{% graphql-schema-type %}}
 

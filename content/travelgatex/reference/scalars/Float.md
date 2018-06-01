@@ -17,12 +17,12 @@
     },
     {
       "name": "AuditData",
-      "description": "Data sent & received in the supplier’s native format.",
+      "description": "Data sent and received in the supplier’s native format.",
       "url": "/travelgatex/reference/objects/auditdata"
     },
     {
       "name": "Price",
-      "description": "Price indicates the value of the room/option.\nSupplements and/or surcharges could be or not included into the price, will be verified with the nodes Supplements/Surcharges.",
+      "description": "Price indicates the value of the room/option.\nSupplements and/or surcharges can be included into the price, and will be verified with nodes Supplements/Surcharges.",
       "url": "/travelgatex/reference/objects/price"
     },
     {
@@ -32,7 +32,7 @@
     },
     {
       "name": "Exchange",
-      "description": "Informs about the currency of origin, and the rate applied over result returned by the supplier.",
+      "description": "Provides information about the currency of original, and its rate applied over the results returned by the Supplier.",
       "url": "/travelgatex/reference/objects/exchange"
     },
     {
@@ -47,7 +47,7 @@
     },
     {
       "name": "CancelPenalty",
-      "description": "Contains information about a cancel penalty.",
+      "description": "Contains information for cancellation penalities..",
       "url": "/travelgatex/reference/objects/cancelpenalty"
     },
     {
@@ -61,10 +61,10 @@
   "typename": "Float"
 }
 The `Float` scalar type represents signed double-precision fractional values as specified by [IEEE 754](http://en.wikipedia.org/wiki/IEEE_floating_point). 
-## GraphQL Schema definition
+## GraphQL schema definition
 
 {{% graphql-schema-scalar %}}
 
-## Require by
+## Required by
 
 {{% graphql-require-by %}}

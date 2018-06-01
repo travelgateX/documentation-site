@@ -41,7 +41,7 @@
   "typename": "Resort"
 }
 Contains information about the Resort.
-## GraphQL Schema definition
+## GraphQL schema definition
 
 {{% graphql-schema-type %}}
 
@@ -49,6 +49,6 @@ Contains information about the Resort.
 
 {{% graphql-field %}}
 
-## Require by
+## Required by
 
 {{% graphql-require-by %}}

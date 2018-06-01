@@ -31,7 +31,7 @@
   "typename": "RateRulesFilterInput"
 }
 If requested, only options with the specified rateRules will be returned
-## GraphQL Schema definition
+## GraphQL schema definition
 
 {{% graphql-schema-type %}}
 
@@ -39,6 +39,6 @@ If requested, only options with the specified rateRules will be returned
 
 {{% graphql-field %}}
 
-## Require by
+## Required by
 
 {{% graphql-require-by %}}

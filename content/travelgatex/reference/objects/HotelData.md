@@ -71,7 +71,7 @@
       "typeString": "Location!",
       "name": "location",
       "url": "/travelgatex/reference/objects/location",
-      "description": "Indicates the location of the hotel.",
+      "description": "Indicates the location of the hotel",
       "isDeprecated": false,
       "args": null
     },
@@ -150,7 +150,7 @@
   "typename": "HotelData"
 }
 Hotel data
-## GraphQL Schema definition
+## GraphQL schema definition
 
 {{% graphql-schema-type %}}
 
@@ -158,6 +158,6 @@ Hotel data
 
 {{% graphql-field %}}
 
-## Require by
+## Required by
 
 {{% graphql-require-by %}}

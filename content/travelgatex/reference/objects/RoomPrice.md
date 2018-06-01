@@ -33,7 +33,7 @@
   "typename": "RoomPrice"
 }
 Specifies the room price.
-## GraphQL Schema definition
+## GraphQL schema definition
 
 {{% graphql-schema-type %}}
 
@@ -41,6 +41,6 @@ Specifies the room price.
 
 {{% graphql-field %}}
 
-## Require by
+## Required by
 
 {{% graphql-require-by %}}

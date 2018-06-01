@@ -7,14 +7,14 @@
       "typeString": "Int!",
       "name": "optionsQuota",
       "url": "/travelgatex/reference/scalars/int",
-      "description": "Options quota per avail. Numbers of options wanted by avail.",
+      "description": "Options quota per availability; numbers of options based on availability",
       "args": null
     },
     {
       "typeString": "BusinessRulesType!",
       "name": "businessRulesType",
       "url": "/travelgatex/reference/enums/businessrulestype",
-      "description": "Different business rules to filter the options that you are interested.",
+      "description": "Different business rules for filtering options that you are interested in",
       "args": null
     }
   ],
@@ -31,7 +31,7 @@
   "typename": "DefaultSettingsBusinessRulesInput"
 }
 Input delta price, indicates the price variation permitted by the client before failing the booking.
-## GraphQL Schema definition
+## GraphQL schema definition
 
 {{% graphql-schema-type %}}
 
@@ -39,6 +39,6 @@ Input delta price, indicates the price variation permitted by the client before 
 
 {{% graphql-field %}}
 
-## Require by
+## Required by
 
 {{% graphql-require-by %}}

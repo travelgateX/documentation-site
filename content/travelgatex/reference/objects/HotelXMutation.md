@@ -65,7 +65,7 @@
   "requireby": [
     {
       "name": "Mutation",
-      "description": "Mutations are operations that change or update data in the server.",
+      "description": "Mutations are operations that change or update data on the server",
       "url": "/travelgatex/reference/schema/mutation"
     }
   ],
@@ -73,7 +73,7 @@
   "operator": "type",
   "typename": "HotelXMutation"
 }
-## GraphQL Schema definition
+## GraphQL schema definition
 
 {{% graphql-schema-type %}}
 
@@ -81,6 +81,6 @@
 
 {{% graphql-field %}}
 
-## Require by
+## Required by
 
 {{% graphql-require-by %}}

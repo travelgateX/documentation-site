@@ -50,13 +50,18 @@
       "name": "OrganizationEdge",
       "description": "",
       "url": "/travelgatex/reference/objects/organizationedge"
+    },
+    {
+      "name": "AdminMutation",
+      "description": "",
+      "url": "/travelgatex/reference/objects/adminmutation"
     }
   ],
   "enumValues": null,
   "operator": "type",
   "typename": "Organization"
 }
-## GraphQL Schema definition
+## GraphQL schema definition
 
 {{% graphql-schema-type %}}
 
@@ -64,6 +69,6 @@
 
 {{% graphql-field %}}
 
-## Require by
+## Required by
 
 {{% graphql-require-by %}}

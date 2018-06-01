@@ -7,7 +7,7 @@
   "requireby": [
     {
       "name": "HotelBookingDetail",
-      "description": "Contains information about booking.",
+      "description": "Contains information about booking",
       "url": "/travelgatex/reference/objects/hotelbookingdetail"
     },
     {
@@ -31,7 +31,7 @@
     },
     {
       "name": "ON_REQUEST",
-      "description": "The reservation was completed but the product is still not available, so the reservation goes into a waiting list. \nIt is the client’s responsibility to check if the booking is OK",
+      "description": "The reservation was completed but the product is still not available, so the reservation goes into a waiting list.\nIt is the client’s responsibility to check if the booking is OK",
       "isDeprecated": false,
       "deprecationReason": null
     },
@@ -43,7 +43,7 @@
     },
     {
       "name": "UNKNOWN",
-      "description": "The reservation was completed but due to a supplier error or a timeout, the reservation status is unknown. \nIt is the client’s responsibility to check if the booking is OK",
+      "description": "The reservation was completed but due to a supplier error or a timeout, the reservation status is unknown.\nIt is the client’s responsibility to check if the booking is OK",
       "isDeprecated": false,
       "deprecationReason": null
     }
@@ -52,10 +52,10 @@
   "typename": "BookStatusType"
 }
 Book status
-## GraphQL Schema definition
+## GraphQL schema definition
 
 {{% graphql-schema-enum %}}
 
-## Require by
+## Required by
 
 {{% graphql-require-by %}}

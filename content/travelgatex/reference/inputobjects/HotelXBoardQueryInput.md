@@ -24,7 +24,7 @@
   "operator": "type",
   "typename": "HotelXBoardQueryInput"
 }
-## GraphQL Schema definition
+## GraphQL schema definition
 
 {{% graphql-schema-type %}}
 

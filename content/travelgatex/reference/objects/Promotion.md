@@ -43,7 +43,7 @@
   "typename": "Promotion"
 }
 Information about room promotions(offers).
-## GraphQL Schema definition
+## GraphQL schema definition
 
 {{% graphql-schema-type %}}
 

@@ -21,8 +21,16 @@
     },
     {
       "typeString": "String",
-      "name": "memberType",
+      "name": "label",
       "url": "/travelgatex/reference/scalars/string",
+      "description": "",
+      "isDeprecated": false,
+      "args": null
+    },
+    {
+      "typeString": "MemberType!",
+      "name": "type",
+      "url": "/travelgatex/reference/enums/membertype",
       "description": "",
       "isDeprecated": false,
       "args": null
@@ -35,6 +43,18 @@
       "isDeprecated": false,
       "args": [
         {
+          "typeString": "[ID!]",
+          "name": "codes",
+          "url": "/travelgatex/reference/scalars/id",
+          "description": ""
+        },
+        {
+          "typeString": "GroupType",
+          "name": "type",
+          "url": "/travelgatex/reference/enums/grouptype",
+          "description": ""
+        },
+        {
           "typeString": "Int",
           "name": "first",
           "url": "/travelgatex/reference/scalars/int",
@@ -56,12 +76,6 @@
           "typeString": "String",
           "name": "after",
           "url": "/travelgatex/reference/scalars/string",
-          "description": ""
-        },
-        {
-          "typeString": "[ID!]",
-          "name": "codes",
-          "url": "/travelgatex/reference/scalars/id",
           "description": ""
         }
       ]
@@ -74,6 +88,12 @@
       "isDeprecated": false,
       "args": [
         {
+          "typeString": "[ID!]",
+          "name": "codes",
+          "url": "/travelgatex/reference/scalars/id",
+          "description": ""
+        },
+        {
           "typeString": "Int",
           "name": "first",
           "url": "/travelgatex/reference/scalars/int",
@@ -95,12 +115,6 @@
           "typeString": "String",
           "name": "after",
           "url": "/travelgatex/reference/scalars/string",
-          "description": ""
-        },
-        {
-          "typeString": "[ID!]",
-          "name": "codes",
-          "url": "/travelgatex/reference/scalars/id",
           "description": ""
         }
       ]
@@ -118,7 +132,7 @@
   "operator": "type",
   "typename": "MemberData"
 }
-## GraphQL Schema definition
+## GraphQL schema definition
 
 {{% graphql-schema-type %}}
 
@@ -126,6 +140,6 @@
 
 {{% graphql-field %}}
 
-## Require by
+## Required by
 
 {{% graphql-require-by %}}

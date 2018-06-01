@@ -7,12 +7,12 @@
   "requireby": [
     {
       "name": "HotelCriteriaSearchInput",
-      "description": "Criteria of search contains destination, travel dates and the number of pax in each room.\nYou must preload the other fields in our system by complete the fields absents.",
+      "description": "Search criteria contains destination, travel dates and the number of pax in each room.\nYou must preload the other fields in our system by complete the fields absents.",
       "url": "/travelgatex/reference/inputobjects/hotelcriteriasearchinput"
     },
     {
       "name": "CriteriaSearch",
-      "description": "Criteria of search contains destination, travel dates and the number of pax in each room.",
+      "description": "Search criteria contains destination, travel dates and the number of pax in each room.",
       "url": "/travelgatex/reference/objects/criteriasearch"
     },
     {
@@ -52,10 +52,10 @@
 }
 The Date type represents Date values. A good example might be a Hotel CheckIn Date.
 In queries or mutations, DateTime fields have to be specified in ISO 8601 format with enclosing double quotes: "2017-10-22".
-## GraphQL Schema definition
+## GraphQL schema definition
 
 {{% graphql-schema-scalar %}}
 
-## Require by
+## Required by
 
 {{% graphql-require-by %}}

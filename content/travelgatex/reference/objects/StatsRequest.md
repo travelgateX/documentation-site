@@ -112,7 +112,7 @@
   "requireby": [
     {
       "name": "HotelSearch",
-      "description": "Results of Avail Hotel. Contains all the available options for a given date and itinerary.",
+      "description": "Results from Avail Hotel; contains all the available options for a given date and itinerary",
       "url": "/travelgatex/reference/objects/hotelsearch"
     },
     {
@@ -146,7 +146,7 @@
   "typename": "StatsRequest"
 }
 Contains internal information.
-## GraphQL Schema definition
+## GraphQL schema definition
 
 {{% graphql-schema-type %}}
 
@@ -154,6 +154,6 @@ Contains internal information.
 
 {{% graphql-field %}}
 
-## Require by
+## Required by
 
 {{% graphql-require-by %}}

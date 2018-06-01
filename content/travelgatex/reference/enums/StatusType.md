@@ -7,12 +7,12 @@
   "requireby": [
     {
       "name": "HotelOptionSearch",
-      "description": "An option includes hotel information, meal plan, total price, conditions and room description.",
+      "description": "An option includes hotel information, meal plan, total price, conditions and room description",
       "url": "/travelgatex/reference/objects/hoteloptionsearch"
     },
     {
       "name": "HotelOptionQuote",
-      "description": "Contains information about quote.",
+      "description": "Contains information about quote(s)",
       "url": "/travelgatex/reference/objects/hoteloptionquote"
     }
   ],
@@ -34,10 +34,10 @@
   "typename": "StatusType"
 }
 Options status
-## GraphQL Schema definition
+## GraphQL schema definition
 
 {{% graphql-schema-enum %}}
 
-## Require by
+## Required by
 
 {{% graphql-require-by %}}

@@ -26,6 +26,14 @@
       "description": "Operations that a Service Api has",
       "isDeprecated": false,
       "args": null
+    },
+    {
+      "typeString": "[Error!]",
+      "name": "error",
+      "url": "/travelgatex/reference/objects/error",
+      "description": "Errors",
+      "isDeprecated": false,
+      "args": null
     }
   ],
   "deprecatedFields": null,
@@ -41,7 +49,7 @@
   "typename": "ServiceApi"
 }
 Information related to a Service API
-## GraphQL Schema definition
+## GraphQL schema definition
 
 {{% graphql-schema-type %}}
 
@@ -49,6 +57,6 @@ Information related to a Service API
 
 {{% graphql-field %}}
 
-## Require by
+## Required by
 
 {{% graphql-require-by %}}

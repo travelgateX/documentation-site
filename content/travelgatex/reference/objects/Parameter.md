@@ -33,7 +33,7 @@
   "typename": "Parameter"
 }
 Parameters for additional information for the supplier's configuration.
-## GraphQL Schema definition
+## GraphQL schema definition
 
 {{% graphql-schema-type %}}
 
@@ -41,6 +41,6 @@ Parameters for additional information for the supplier's configuration.
 
 {{% graphql-field %}}
 
-## Require by
+## Required by
 
 {{% graphql-require-by %}}

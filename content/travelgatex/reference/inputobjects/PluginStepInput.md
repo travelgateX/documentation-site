@@ -25,7 +25,7 @@
   "typename": "PluginStepInput"
 }
 Plugin to execute.
-## GraphQL Schema definition
+## GraphQL schema definition
 
 {{% graphql-schema-type %}}
 

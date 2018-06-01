@@ -26,6 +26,11 @@
       "url": "/travelgatex/reference/objects/pageinfo"
     },
     {
+      "name": "SupplierFilter",
+      "description": "",
+      "url": "/travelgatex/reference/inputobjects/supplierfilter"
+    },
+    {
       "name": "ClientFilter",
       "description": "",
       "url": "/travelgatex/reference/inputobjects/clientfilter"
@@ -87,7 +92,7 @@
     },
     {
       "name": "Price",
-      "description": "Price indicates the value of the room/option.\nSupplements and/or surcharges could be or not included into the price, will be verified with the nodes Supplements/Surcharges.",
+      "description": "Price indicates the value of the room/option.\nSupplements and/or surcharges can be included into the price, and will be verified with nodes Supplements/Surcharges.",
       "url": "/travelgatex/reference/objects/price"
     },
     {
@@ -117,13 +122,8 @@
     },
     {
       "name": "CancelPolicy",
-      "description": "Contains information about a cancel policy.",
+      "description": "Information about a policy cancellation.",
       "url": "/travelgatex/reference/objects/cancelpolicy"
-    },
-    {
-      "name": "StatsFilterInput",
-      "description": "Filters needed to do a search.\nUsers (List of users), Suppliers (List of suppliers), ServiceApis (List of service apis), From (Start date of search - YYYY-MM-DD HH:mm:ss), To (End date of search - YYYY-MM-DD HH:mm:ss)",
-      "url": "/travelgatex/reference/inputobjects/statsfilterinput"
     },
     {
       "name": "OperationDetailed",
@@ -132,7 +132,7 @@
     },
     {
       "name": "Mutation",
-      "description": "Mutations are operations that change or update data in the server.",
+      "description": "Mutations are operations that change or update data on the server",
       "url": "/travelgatex/reference/schema/mutation"
     },
     {
@@ -162,7 +162,7 @@
     },
     {
       "name": "ConnectUser",
-      "description": "data related to a connect user and its groups",
+      "description": "Data related to a connected user and its groups",
       "url": "/travelgatex/reference/objects/connectuser"
     },
     {
@@ -201,14 +201,14 @@
       "url": "/travelgatex/reference/inputobjects/idaccessconfigurationinput"
     },
     {
-      "name": "MappeaXAddOrganizationInput",
+      "name": "MappeaAddOrganizationInput",
       "description": "# AddOrganization",
-      "url": "/travelgatex/reference/inputobjects/mappeaxaddorganizationinput"
+      "url": "/travelgatex/reference/inputobjects/mappeaaddorganizationinput"
     },
     {
-      "name": "MappeaXEditOrganizationInput",
+      "name": "MappeaEditOrganizationInput",
       "description": "# EditOrganization",
-      "url": "/travelgatex/reference/inputobjects/mappeaxeditorganizationinput"
+      "url": "/travelgatex/reference/inputobjects/mappeaeditorganizationinput"
     },
     {
       "name": "LegacyData",
@@ -221,10 +221,10 @@
   "typename": "Boolean"
 }
 The `Boolean` scalar type represents `true` or `false`.
-## GraphQL Schema definition
+## GraphQL schema definition
 
 {{% graphql-schema-scalar %}}
 
-## Require by
+## Required by
 
 {{% graphql-require-by %}}

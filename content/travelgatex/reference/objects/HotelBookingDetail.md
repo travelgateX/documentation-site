@@ -71,7 +71,7 @@
       "typeString": "AddOns",
       "name": "addOns",
       "url": "/travelgatex/reference/objects/addons",
-      "description": "Extra information about the option.",
+      "description": "Additional information about the option",
       "isDeprecated": false,
       "args": null
     }
@@ -93,8 +93,8 @@
   "operator": "type",
   "typename": "HotelBookingDetail"
 }
-Contains information about booking.
-## GraphQL Schema definition
+Contains information about booking
+## GraphQL schema definition
 
 {{% graphql-schema-type %}}
 
@@ -102,6 +102,6 @@ Contains information about booking.
 
 {{% graphql-field %}}
 
-## Require by
+## Required by
 
 {{% graphql-require-by %}}

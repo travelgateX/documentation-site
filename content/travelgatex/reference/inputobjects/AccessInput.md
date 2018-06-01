@@ -7,14 +7,14 @@
       "typeString": "String!",
       "name": "name",
       "url": "/travelgatex/reference/scalars/string",
-      "description": "Access descriptive name",
+      "description": "Access descriptive unique name",
       "args": null
     },
     {
       "typeString": "Boolean",
       "name": "isActive",
       "url": "/travelgatex/reference/scalars/boolean",
-      "description": "Indicates if the access is active.",
+      "description": "Indicates if Access is active",
       "args": null
     },
     {
@@ -28,63 +28,63 @@
       "typeString": "String",
       "name": "supplier",
       "url": "/travelgatex/reference/scalars/string",
-      "description": "supplier for this access.",
+      "description": "Supplier for this Access",
       "args": null
     },
     {
       "typeString": "Boolean",
       "name": "isTest",
       "url": "/travelgatex/reference/scalars/boolean",
-      "description": "Indicates if this access can be used for testing or not",
+      "description": "Indicates if Access can be used for testing or not",
       "args": null
     },
     {
       "typeString": "String",
       "name": "user",
       "url": "/travelgatex/reference/scalars/string",
-      "description": "User code to connect to supplier.",
+      "description": "User code to connect to supplier",
       "args": null
     },
     {
       "typeString": "String",
       "name": "password",
       "url": "/travelgatex/reference/scalars/string",
-      "description": "Password for the connection.",
+      "description": "Password for the connection",
       "args": null
     },
     {
       "typeString": "UrlsInput",
       "name": "urls",
       "url": "/travelgatex/reference/inputobjects/urlsinput",
-      "description": "Specific Urls",
+      "description": "Specific URLs",
       "args": null
     },
     {
       "typeString": "[ParameterInput]",
       "name": "parameters",
       "url": "/travelgatex/reference/inputobjects/parameterinput",
-      "description": "List of parameters for additional information.",
+      "description": "List of parameters for additional information",
       "args": null
     },
     {
       "typeString": "[String!]",
       "name": "markets",
       "url": "/travelgatex/reference/scalars/string",
-      "description": "Markets allowed for the access.",
+      "description": "Markets allowed for the Access",
       "args": null
     },
     {
       "typeString": "[RateRulesType!]",
       "name": "rateRules",
       "url": "/travelgatex/reference/enums/raterulestype",
-      "description": "Business rules types for the access.",
+      "description": "Business rule types for the Access",
       "args": null
     },
     {
       "typeString": "String",
       "name": "shared",
       "url": "/travelgatex/reference/scalars/string",
-      "description": "Parent access if Shared access.",
+      "description": "Parent Access if Shared Access.",
       "args": null
     },
     {
@@ -102,7 +102,7 @@
   "typename": "AccessInput"
 }
 Access input
-## GraphQL Schema definition
+## GraphQL schema definition
 
 {{% graphql-schema-type %}}
 

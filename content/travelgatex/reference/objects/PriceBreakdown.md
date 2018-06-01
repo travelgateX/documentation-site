@@ -35,7 +35,7 @@
   "typename": "PriceBreakdown"
 }
 Information about daily price.
-## GraphQL Schema definition
+## GraphQL schema definition
 
 {{% graphql-schema-type %}}
 

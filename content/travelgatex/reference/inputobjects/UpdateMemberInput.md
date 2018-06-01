@@ -52,7 +52,7 @@
   "operator": "type",
   "typename": "UpdateMemberInput"
 }
-## GraphQL Schema definition
+## GraphQL schema definition
 
 {{% graphql-schema-type %}}
 

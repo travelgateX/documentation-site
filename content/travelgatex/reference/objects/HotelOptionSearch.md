@@ -87,7 +87,7 @@
       "typeString": "[Occupancy!]!",
       "name": "occupancies",
       "url": "/travelgatex/reference/objects/occupancy",
-      "description": "List of occupancies of the request.",
+      "description": "List of occupancies for the request",
       "isDeprecated": false,
       "args": null
     },
@@ -151,7 +151,7 @@
       "typeString": "AddOns",
       "name": "addOns",
       "url": "/travelgatex/reference/objects/addons",
-      "description": "Extra information about the option.",
+      "description": "Additional information about the option",
       "isDeprecated": false,
       "args": null
     },
@@ -178,8 +178,8 @@
   "operator": "type",
   "typename": "HotelOptionSearch"
 }
-An option includes hotel information, meal plan, total price, conditions and room description.
-## GraphQL Schema definition
+An option includes hotel information, meal plan, total price, conditions and room description
+## GraphQL schema definition
 
 {{% graphql-schema-type %}}
 

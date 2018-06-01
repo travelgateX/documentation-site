@@ -35,7 +35,7 @@
   "typename": "Transactions"
 }
 Supplier transaction
-## GraphQL Schema definition
+## GraphQL schema definition
 
 {{% graphql-schema-type %}}
 

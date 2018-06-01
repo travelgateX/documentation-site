@@ -34,6 +34,14 @@
       "description": "Total time (ms)",
       "isDeprecated": false,
       "args": null
+    },
+    {
+      "typeString": "[StatsAssert!]",
+      "name": "asserts",
+      "url": "/travelgatex/reference/objects/statsassert",
+      "description": "",
+      "isDeprecated": false,
+      "args": null
     }
   ],
   "deprecatedFields": null,
@@ -43,7 +51,7 @@
   "typename": "StatsInfo"
 }
 Details of an specific error
-## GraphQL Schema definition
+## GraphQL schema definition
 
 {{% graphql-schema-type %}}
 

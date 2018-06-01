@@ -7,7 +7,7 @@
   "requireby": [
     {
       "name": "Amenity",
-      "description": "Something, such as a swimming pool or shopping centre, that is intended to make life more pleasant or comfortable for the people.",
+      "description": "An Amenity is defined as something intended to make life more pleasant or comfortable for people. Examples include: swimming pools, shopping centers, etc.",
       "url": "/travelgatex/reference/objects/amenity"
     },
     {
@@ -46,10 +46,10 @@
   "typename": "ApplicationAreaType"
 }
 Indicates where it applies
-## GraphQL Schema definition
+## GraphQL schema definition
 
 {{% graphql-schema-enum %}}
 
-## Require by
+## Required by
 
 {{% graphql-require-by %}}

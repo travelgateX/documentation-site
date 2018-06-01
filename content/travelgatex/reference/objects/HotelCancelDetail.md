@@ -57,7 +57,7 @@
   "typename": "HotelCancelDetail"
 }
 Contains information about cancel
-## GraphQL Schema definition
+## GraphQL schema definition
 
 {{% graphql-schema-type %}}
 
@@ -65,6 +65,6 @@ Contains information about cancel
 
 {{% graphql-field %}}
 
-## Require by
+## Required by
 
 {{% graphql-require-by %}}

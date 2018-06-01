@@ -59,6 +59,6 @@
   "typename": "ServiceApiType"
 }
 Services Api available.
-## GraphQL Schema definition
+## GraphQL schema definition
 
 {{% graphql-schema-enum %}}

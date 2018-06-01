@@ -33,7 +33,7 @@
 }
 AccessInput overwrites an existent access in our Back Office or creates a new
 one to be used in this search query only. An access object contains its own code, configuration and settings.
-## GraphQL Schema definition
+## GraphQL schema definition
 
 {{% graphql-schema-type %}}
 

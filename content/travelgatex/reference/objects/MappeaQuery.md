@@ -19,9 +19,9 @@
       "isDeprecated": false,
       "args": [
         {
-          "typeString": "MappeaXGetMappeaStatsInput!",
+          "typeString": "MappeaGetMappeaStatsInput!",
           "name": "input",
-          "url": "/travelgatex/reference/inputobjects/mappeaxgetmappeastatsinput",
+          "url": "/travelgatex/reference/inputobjects/mappeagetmappeastatsinput",
           "description": ""
         }
       ]
@@ -39,7 +39,7 @@
   "operator": "type",
   "typename": "MappeaQuery"
 }
-## GraphQL Schema definition
+## GraphQL schema definition
 
 {{% graphql-schema-type %}}
 
@@ -47,6 +47,6 @@
 
 {{% graphql-field %}}
 
-## Require by
+## Required by
 
 {{% graphql-require-by %}}

@@ -17,7 +17,7 @@
   "operator": "type",
   "typename": "DeleteGroupInput"
 }
-## GraphQL Schema definition
+## GraphQL schema definition
 
 {{% graphql-schema-type %}}
 

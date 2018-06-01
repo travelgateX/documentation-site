@@ -41,7 +41,7 @@
   "typename": "Ratios"
 }
 Details of look to quote and look to book.
-## GraphQL Schema definition
+## GraphQL schema definition
 
 {{% graphql-schema-type %}}
 
@@ -49,6 +49,6 @@ Details of look to quote and look to book.
 
 {{% graphql-field %}}
 
-## Require by
+## Required by
 
 {{% graphql-require-by %}}

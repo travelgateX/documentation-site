@@ -27,7 +27,7 @@
 Filter that selects the filter criteria which will be used in this availability. Currently you can only choose the accesses.
 You must choose one of them, include or exclude, or the other alternative isn't specified anything.
 If input both, you will receive a validation error that indicates this error.
-## GraphQL Schema definition
+## GraphQL schema definition
 
 {{% graphql-schema-type %}}
 

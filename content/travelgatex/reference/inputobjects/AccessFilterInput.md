@@ -32,7 +32,7 @@
 }
 Include *OR* exclude accesses in this specific search query. If not specified, default accesses will be used.
 Only one list (includes or excludes) *MUST* be used.
-## GraphQL Schema definition
+## GraphQL schema definition
 
 {{% graphql-schema-type %}}
 
@@ -40,6 +40,6 @@ Only one list (includes or excludes) *MUST* be used.
 
 {{% graphql-field %}}
 
-## Require by
+## Required by
 
 {{% graphql-require-by %}}

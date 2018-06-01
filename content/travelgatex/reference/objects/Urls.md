@@ -7,7 +7,7 @@
       "typeString": "URI",
       "name": "search",
       "url": "/travelgatex/reference/scalars/uri",
-      "description": "Specific Url for Availability method.",
+      "description": "Specific URL for Availability method.",
       "isDeprecated": false,
       "args": null
     },
@@ -15,7 +15,7 @@
       "typeString": "URI",
       "name": "quote",
       "url": "/travelgatex/reference/scalars/uri",
-      "description": "Specific Url for Reservation method.",
+      "description": "Specific URL for Reservation method.",
       "isDeprecated": false,
       "args": null
     },
@@ -23,7 +23,7 @@
       "typeString": "URI",
       "name": "book",
       "url": "/travelgatex/reference/scalars/uri",
-      "description": "Specific Url for Valuation method.",
+      "description": "Specific URL for Valuation method.",
       "isDeprecated": false,
       "args": null
     },
@@ -49,7 +49,7 @@
   "typename": "Urls"
 }
 Url's
-## GraphQL Schema definition
+## GraphQL schema definition
 
 {{% graphql-schema-type %}}
 
@@ -57,6 +57,6 @@ Url's
 
 {{% graphql-field %}}
 
-## Require by
+## Required by
 
 {{% graphql-require-by %}}

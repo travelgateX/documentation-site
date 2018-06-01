@@ -36,7 +36,7 @@
   "typename": "BusinessRulesInput"
 }
 List of business rules to use as filter on the options.
-## GraphQL Schema definition
+## GraphQL schema definition
 
 {{% graphql-schema-type %}}
 
@@ -44,6 +44,6 @@ List of business rules to use as filter on the options.
 
 {{% graphql-field %}}
 
-## Require by
+## Required by
 
 {{% graphql-require-by %}}

@@ -45,7 +45,7 @@
   "operator": "type",
   "typename": "CreateGroupInput"
 }
-## GraphQL Schema definition
+## GraphQL schema definition
 
 {{% graphql-schema-type %}}
 

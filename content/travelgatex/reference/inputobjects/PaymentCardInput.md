@@ -52,7 +52,7 @@
   "typename": "PaymentCardInput"
 }
 Input PaymentCard, if the payment is done by credit card, is it mandatory to specify the payment type and the credit card information
-## GraphQL Schema definition
+## GraphQL schema definition
 
 {{% graphql-schema-type %}}
 
@@ -60,6 +60,6 @@ Input PaymentCard, if the payment is done by credit card, is it mandatory to spe
 
 {{% graphql-field %}}
 
-## Require by
+## Required by
 
 {{% graphql-require-by %}}

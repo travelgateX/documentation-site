@@ -17,6 +17,6 @@
   "typename": "ServiceType"
 }
 Service Type
-## GraphQL Schema definition
+## GraphQL schema definition
 
 {{% graphql-schema-enum %}}

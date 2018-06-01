@@ -31,7 +31,7 @@
   "operator": "type",
   "typename": "HotelXDestinationSearcherInput"
 }
-## GraphQL Schema definition
+## GraphQL schema definition
 
 {{% graphql-schema-type %}}
 

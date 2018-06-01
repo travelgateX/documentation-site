@@ -16,6 +16,27 @@
       "url": "/travelgatex/reference/scalars/id",
       "description": "",
       "args": null
+    },
+    {
+      "typeString": "[ID]",
+      "name": "groupID",
+      "url": "/travelgatex/reference/scalars/id",
+      "description": "",
+      "args": null
+    },
+    {
+      "typeString": "Boolean",
+      "name": "isActive",
+      "url": "/travelgatex/reference/scalars/boolean",
+      "description": "",
+      "args": null
+    },
+    {
+      "typeString": "[Int]",
+      "name": "serviceAPI",
+      "url": "/travelgatex/reference/scalars/int",
+      "description": "",
+      "args": null
     }
   ],
   "deprecatedFields": null,
@@ -24,7 +45,7 @@
   "operator": "type",
   "typename": "SupplierFilter"
 }
-## GraphQL Schema definition
+## GraphQL schema definition
 
 {{% graphql-schema-type %}}
 

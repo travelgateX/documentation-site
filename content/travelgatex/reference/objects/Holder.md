@@ -24,7 +24,7 @@
   "requireby": [
     {
       "name": "HotelBookingDetail",
-      "description": "Contains information about booking.",
+      "description": "Contains information about booking",
       "url": "/travelgatex/reference/objects/hotelbookingdetail"
     }
   ],
@@ -32,8 +32,8 @@
   "operator": "type",
   "typename": "Holder"
 }
-Holder object that contains the pax name and surname.
-## GraphQL Schema definition
+Holder object that contains the occupant's (pax's) name and surname.
+## GraphQL schema definition
 
 {{% graphql-schema-type %}}
 
@@ -41,6 +41,6 @@ Holder object that contains the pax name and surname.
 
 {{% graphql-field %}}
 
-## Require by
+## Required by
 
 {{% graphql-require-by %}}

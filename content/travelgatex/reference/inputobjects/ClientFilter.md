@@ -11,6 +11,13 @@
       "args": null
     },
     {
+      "typeString": "[String!]",
+      "name": "name",
+      "url": "/travelgatex/reference/scalars/string",
+      "description": "",
+      "args": null
+    },
+    {
       "typeString": "[ID]",
       "name": "groupID",
       "url": "/travelgatex/reference/scalars/id",
@@ -31,7 +38,7 @@
   "operator": "type",
   "typename": "ClientFilter"
 }
-## GraphQL Schema definition
+## GraphQL schema definition
 
 {{% graphql-schema-type %}}
 

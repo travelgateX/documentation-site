@@ -20,12 +20,26 @@
       "args": null
     },
     {
+      "typeString": "String",
+      "name": "label",
+      "url": "/travelgatex/reference/scalars/string",
+      "description": "",
+      "isDeprecated": false,
+      "args": null
+    },
+    {
       "typeString": "APIConnection",
       "name": "apis",
       "url": "/travelgatex/reference/objects/apiconnection",
       "description": "",
       "isDeprecated": false,
       "args": [
+        {
+          "typeString": "[ID!]",
+          "name": "codes",
+          "url": "/travelgatex/reference/scalars/id",
+          "description": ""
+        },
         {
           "typeString": "Int",
           "name": "first",
@@ -48,12 +62,6 @@
           "typeString": "String",
           "name": "after",
           "url": "/travelgatex/reference/scalars/string",
-          "description": ""
-        },
-        {
-          "typeString": "[ID!]",
-          "name": "codes",
-          "url": "/travelgatex/reference/scalars/id",
           "description": ""
         }
       ]
@@ -66,6 +74,12 @@
       "isDeprecated": false,
       "args": [
         {
+          "typeString": "[ID!]",
+          "name": "codes",
+          "url": "/travelgatex/reference/scalars/id",
+          "description": ""
+        },
+        {
           "typeString": "Int",
           "name": "first",
           "url": "/travelgatex/reference/scalars/int",
@@ -87,12 +101,6 @@
           "typeString": "String",
           "name": "after",
           "url": "/travelgatex/reference/scalars/string",
-          "description": ""
-        },
-        {
-          "typeString": "[ID!]",
-          "name": "codes",
-          "url": "/travelgatex/reference/scalars/id",
           "description": ""
         }
       ]
@@ -110,7 +118,7 @@
   "operator": "type",
   "typename": "ResourceData"
 }
-## GraphQL Schema definition
+## GraphQL schema definition
 
 {{% graphql-schema-type %}}
 
@@ -118,6 +126,6 @@
 
 {{% graphql-field %}}
 
-## Require by
+## Required by
 
 {{% graphql-require-by %}}

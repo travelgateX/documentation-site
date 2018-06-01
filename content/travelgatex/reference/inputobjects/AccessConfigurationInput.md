@@ -7,7 +7,7 @@
       "typeString": "Boolean!",
       "name": "isActive",
       "url": "/travelgatex/reference/scalars/boolean",
-      "description": "Indicates if the access is active.",
+      "description": "Indicates if Access is active",
       "args": null
     },
     {
@@ -39,7 +39,7 @@
   "typename": "AccessConfigurationInput"
 }
 The information required to access the supplier's system.
-## GraphQL Schema definition
+## GraphQL schema definition
 
 {{% graphql-schema-type %}}
 

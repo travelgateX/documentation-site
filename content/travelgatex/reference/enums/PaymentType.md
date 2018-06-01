@@ -7,7 +7,7 @@
   "requireby": [
     {
       "name": "HotelOptionSearch",
-      "description": "An option includes hotel information, meal plan, total price, conditions and room description.",
+      "description": "An option includes hotel information, meal plan, total price, conditions and room description",
       "url": "/travelgatex/reference/objects/hoteloptionsearch"
     }
   ],
@@ -41,10 +41,10 @@
   "typename": "PaymentType"
 }
 Options payment type
-## GraphQL Schema definition
+## GraphQL schema definition
 
 {{% graphql-schema-enum %}}
 
-## Require by
+## Required by
 
 {{% graphql-require-by %}}

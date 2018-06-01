@@ -63,7 +63,7 @@
       "typeString": "AddOns",
       "name": "addOns",
       "url": "/travelgatex/reference/objects/addons",
-      "description": "Extra information about the option.",
+      "description": "Additional information about the option",
       "isDeprecated": false,
       "args": null
     }
@@ -80,8 +80,8 @@
   "operator": "type",
   "typename": "HotelOptionQuote"
 }
-Contains information about quote.
-## GraphQL Schema definition
+Contains information about quote(s)
+## GraphQL schema definition
 
 {{% graphql-schema-type %}}
 
@@ -89,6 +89,6 @@ Contains information about quote.
 
 {{% graphql-field %}}
 
-## Require by
+## Required by
 
 {{% graphql-require-by %}}

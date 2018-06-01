@@ -167,7 +167,7 @@
     },
     {
       "name": "Board",
-      "description": "Board Type",
+      "description": "Board type.",
       "url": "/travelgatex/reference/objects/board"
     },
     {
@@ -286,9 +286,9 @@
       "url": "/travelgatex/reference/inputobjects/deletegroupinput"
     },
     {
-      "name": "MappeaXSupplierConfirmedInput",
+      "name": "MappeaSupplierConfirmedInput",
       "description": "",
-      "url": "/travelgatex/reference/inputobjects/mappeaxsupplierconfirmedinput"
+      "url": "/travelgatex/reference/inputobjects/mappeasupplierconfirmedinput"
     },
     {
       "name": "SupplierDetected",
@@ -296,13 +296,13 @@
       "url": "/travelgatex/reference/objects/supplierdetected"
     },
     {
-      "name": "MappeaXMapSupplierInput",
+      "name": "MappeaMapSupplierInput",
       "description": "# MapSupplier",
-      "url": "/travelgatex/reference/inputobjects/mappeaxmapsupplierinput"
+      "url": "/travelgatex/reference/inputobjects/mappeamapsupplierinput"
     },
     {
       "name": "Context",
-      "description": "Context type, for now only Code is necessary",
+      "description": "Context type. Currently, only Code is necessary.",
       "url": "/travelgatex/reference/objects/context"
     },
     {
@@ -316,10 +316,10 @@
   "typename": "ID"
 }
 The `ID` scalar type represents a unique identifier, often used to refetch an object or as key for a cache. The ID type appears in a JSON response as a String; however, it is not intended to be human-readable. When expected as an input type, any string (such as `"4"`) or integer (such as `4`) input value will be accepted as an ID.
-## GraphQL Schema definition
+## GraphQL schema definition
 
 {{% graphql-schema-scalar %}}
 
-## Require by
+## Required by
 
 {{% graphql-require-by %}}

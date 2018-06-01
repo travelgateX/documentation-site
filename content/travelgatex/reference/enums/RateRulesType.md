@@ -83,6 +83,6 @@
   "typename": "RateRulesType"
 }
 Rate Rules
-## GraphQL Schema definition
+## GraphQL schema definition
 
 {{% graphql-schema-enum %}}

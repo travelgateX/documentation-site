@@ -40,6 +40,6 @@
   "operator": "enum",
   "typename": "ServiceOperationType"
 }
-## GraphQL Schema definition
+## GraphQL schema definition
 
 {{% graphql-schema-enum %}}

@@ -33,7 +33,7 @@
   "typename": "HotelEdge"
 }
 HotelList Edge definition
-## GraphQL Schema definition
+## GraphQL schema definition
 
 {{% graphql-schema-type %}}
 
@@ -41,6 +41,6 @@ HotelList Edge definition
 
 {{% graphql-field %}}
 
-## Require by
+## Required by
 
 {{% graphql-require-by %}}

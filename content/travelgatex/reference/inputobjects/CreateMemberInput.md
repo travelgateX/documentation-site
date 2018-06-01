@@ -52,7 +52,7 @@
   "operator": "type",
   "typename": "CreateMemberInput"
 }
-## GraphQL Schema definition
+## GraphQL schema definition
 
 {{% graphql-schema-type %}}
 

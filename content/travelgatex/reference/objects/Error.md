@@ -56,7 +56,7 @@
   "typename": "Error"
 }
 Application errors
-## GraphQL Schema definition
+## GraphQL schema definition
 
 {{% graphql-schema-type %}}
 
@@ -64,6 +64,6 @@ Application errors
 
 {{% graphql-field %}}
 
-## Require by
+## Required by
 
 {{% graphql-require-by %}}

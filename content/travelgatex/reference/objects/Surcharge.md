@@ -43,7 +43,7 @@
   "typename": "Surcharge"
 }
 Surcharge that it can be or it is already added to the option returned. Contains all the information about the surcharge.
-## GraphQL Schema definition
+## GraphQL schema definition
 
 {{% graphql-schema-type %}}
 

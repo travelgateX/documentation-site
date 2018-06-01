@@ -67,7 +67,7 @@
   "typename": "Markup"
 }
 Informs markup applied over supplier price.
-## GraphQL Schema definition
+## GraphQL schema definition
 
 {{% graphql-schema-type %}}
 

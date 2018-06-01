@@ -42,7 +42,7 @@
   "operator": "type",
   "typename": "Rule"
 }
-## GraphQL Schema definition
+## GraphQL schema definition
 
 {{% graphql-schema-type %}}
 

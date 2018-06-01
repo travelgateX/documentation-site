@@ -14,14 +14,14 @@
       "typeString": "String",
       "name": "password",
       "url": "/travelgatex/reference/scalars/string",
-      "description": "Password for the connection.",
+      "description": "Password for the connection",
       "args": null
     },
     {
       "typeString": "UrlsInput!",
       "name": "urls",
       "url": "/travelgatex/reference/inputobjects/urlsinput",
-      "description": "Url or endpoint for the connection.",
+      "description": "URL or endpoint for the connection.",
       "args": null
     },
     {
@@ -35,7 +35,7 @@
       "typeString": "[String!]",
       "name": "markets",
       "url": "/travelgatex/reference/scalars/string",
-      "description": "Source markets allowed for the access.",
+      "description": "Source Markets allowed for the Access",
       "args": null
     },
     {
@@ -69,7 +69,7 @@
   "typename": "ConfigurationInput"
 }
 The information and credentials required to access the supplier’s system.
-## GraphQL Schema definition
+## GraphQL schema definition
 
 {{% graphql-schema-type %}}
 
@@ -77,6 +77,6 @@ The information and credentials required to access the supplier’s system.
 
 {{% graphql-field %}}
 
-## Require by
+## Required by
 
 {{% graphql-require-by %}}

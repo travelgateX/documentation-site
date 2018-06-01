@@ -15,7 +15,7 @@
       "typeString": "[Error!]",
       "name": "error",
       "url": "/travelgatex/reference/objects/error",
-      "description": "Errors that will lead the service to abort",
+      "description": "Errors that abort services",
       "isDeprecated": false,
       "args": null
     },
@@ -23,7 +23,7 @@
       "typeString": "DateTime!",
       "name": "createdAt",
       "url": "/travelgatex/reference/scalars/datetime",
-      "description": "Create date",
+      "description": "Date created",
       "isDeprecated": false,
       "args": null
     },
@@ -31,7 +31,7 @@
       "typeString": "DateTime!",
       "name": "updatedAt",
       "url": "/travelgatex/reference/scalars/datetime",
-      "description": "Update date",
+      "description": "Date updated",
       "isDeprecated": false,
       "args": null
     }
@@ -42,7 +42,7 @@
   "operator": "interface",
   "typename": "Node"
 }
-## GraphQL Schema definition
+## GraphQL schema definition
 
 {{% graphql-schema-type %}}
 

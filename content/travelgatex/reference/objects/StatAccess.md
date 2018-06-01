@@ -90,7 +90,7 @@
   "operator": "type",
   "typename": "StatAccess"
 }
-## GraphQL Schema definition
+## GraphQL schema definition
 
 {{% graphql-schema-type %}}
 

@@ -5,6 +5,20 @@
   "fields": [
     {
       "typeString": "[ID!]",
+      "name": "organizations",
+      "url": "/travelgatex/reference/scalars/id",
+      "description": "List of organizations",
+      "args": null
+    },
+    {
+      "typeString": "[ID!]",
+      "name": "accesses",
+      "url": "/travelgatex/reference/scalars/id",
+      "description": "List of accesses",
+      "args": null
+    },
+    {
+      "typeString": "[ID!]",
       "name": "suppliers",
       "url": "/travelgatex/reference/scalars/id",
       "description": "List of suppliers",
@@ -18,7 +32,7 @@
       "args": null
     },
     {
-      "typeString": "[ServiceOperationType!]!",
+      "typeString": "[ServiceOperationType!]",
       "name": "operation",
       "url": "/travelgatex/reference/enums/serviceoperationtype",
       "description": "List of services operations",
@@ -44,13 +58,6 @@
       "url": "/travelgatex/reference/scalars/datetime",
       "description": "To date of search",
       "args": null
-    },
-    {
-      "typeString": "Boolean",
-      "name": "groupUsers",
-      "url": "/travelgatex/reference/scalars/boolean",
-      "description": "Group all users",
-      "args": null
     }
   ],
   "deprecatedFields": null,
@@ -61,7 +68,7 @@
 }
 Filters needed to do a search.
 Users (List of users), Suppliers (List of suppliers), ServiceApis (List of service apis), From (Start date of search - YYYY-MM-DD HH:mm:ss), To (End date of search - YYYY-MM-DD HH:mm:ss)
-## GraphQL Schema definition
+## GraphQL schema definition
 
 {{% graphql-schema-type %}}
 

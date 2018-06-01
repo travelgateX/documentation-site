@@ -55,7 +55,7 @@
   "operator": "type",
   "typename": "OperationDetailed"
 }
-## GraphQL Schema definition
+## GraphQL schema definition
 
 {{% graphql-schema-type %}}
 

@@ -7,7 +7,7 @@
       "typeString": "Currency!",
       "name": "currency",
       "url": "/travelgatex/reference/scalars/currency",
-      "description": "Informs about the currency of origin.",
+      "description": "Provide information about the currency of origin",
       "isDeprecated": false,
       "args": null
     },
@@ -15,7 +15,7 @@
       "typeString": "Float!",
       "name": "rate",
       "url": "/travelgatex/reference/scalars/float",
-      "description": "Informs about the rate applied over result.",
+      "description": "Provides information about the rate applied over results",
       "isDeprecated": false,
       "args": null
     }
@@ -24,7 +24,7 @@
   "requireby": [
     {
       "name": "Price",
-      "description": "Price indicates the value of the room/option.\nSupplements and/or surcharges could be or not included into the price, will be verified with the nodes Supplements/Surcharges.",
+      "description": "Price indicates the value of the room/option.\nSupplements and/or surcharges can be included into the price, and will be verified with nodes Supplements/Surcharges.",
       "url": "/travelgatex/reference/objects/price"
     },
     {
@@ -42,8 +42,8 @@
   "operator": "type",
   "typename": "Exchange"
 }
-Informs about the currency of origin, and the rate applied over result returned by the supplier.
-## GraphQL Schema definition
+Provides information about the currency of original, and its rate applied over the results returned by the Supplier.
+## GraphQL schema definition
 
 {{% graphql-schema-type %}}
 
@@ -51,6 +51,6 @@ Informs about the currency of origin, and the rate applied over result returned 
 
 {{% graphql-field %}}
 
-## Require by
+## Required by
 
 {{% graphql-require-by %}}

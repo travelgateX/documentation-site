@@ -31,13 +31,28 @@
       "name": "SupplierData",
       "description": "",
       "url": "/travelgatex/reference/objects/supplierdata"
+    },
+    {
+      "name": "OrganizationData",
+      "description": "",
+      "url": "/travelgatex/reference/objects/organizationdata"
+    },
+    {
+      "name": "GroupCommonData",
+      "description": "",
+      "url": "/travelgatex/reference/interfaces/groupcommondata"
+    },
+    {
+      "name": "GroupData",
+      "description": "",
+      "url": "/travelgatex/reference/objects/groupdata"
     }
   ],
   "enumValues": null,
   "operator": "type",
   "typename": "AccessConnection"
 }
-## GraphQL Schema definition
+## GraphQL schema definition
 
 {{% graphql-schema-type %}}
 
@@ -45,6 +60,6 @@
 
 {{% graphql-field %}}
 
-## Require by
+## Required by
 
 {{% graphql-require-by %}}

@@ -38,7 +38,7 @@
   "operator": "type",
   "typename": "UpdateGroupInput"
 }
-## GraphQL Schema definition
+## GraphQL schema definition
 
 {{% graphql-schema-type %}}
 

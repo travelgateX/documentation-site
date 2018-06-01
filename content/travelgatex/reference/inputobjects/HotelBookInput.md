@@ -14,7 +14,7 @@
       "typeString": "Language",
       "name": "language",
       "url": "/travelgatex/reference/scalars/language",
-      "description": "Language to be used in request.",
+      "description": "Language to be used in request",
       "args": null
     },
     {
@@ -67,7 +67,7 @@
   "typename": "HotelBookInput"
 }
 Criteria of book.
-## GraphQL Schema definition
+## GraphQL schema definition
 
 {{% graphql-schema-type %}}
 

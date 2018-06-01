@@ -46,7 +46,7 @@
   "typename": "HotelCriteriaBookingInput"
 }
 Criteria of book contains basic information to find a book or books.
-## GraphQL Schema definition
+## GraphQL schema definition
 
 {{% graphql-schema-type %}}
 

@@ -7,7 +7,7 @@
   "requireby": [
     {
       "name": "CancelPenalty",
-      "description": "Contains information about a cancel penalty.",
+      "description": "Contains information for cancellation penalities..",
       "url": "/travelgatex/reference/objects/cancelpenalty"
     }
   ],
@@ -35,10 +35,10 @@
   "typename": "CancelPenaltyType"
 }
 Options type
-## GraphQL Schema definition
+## GraphQL schema definition
 
 {{% graphql-schema-enum %}}
 
-## Require by
+## Required by
 
 {{% graphql-require-by %}}

@@ -28,6 +28,12 @@
   ],
   "enumValues": [
     {
+      "name": "ORG",
+      "description": "",
+      "isDeprecated": false,
+      "deprecationReason": null
+    },
+    {
       "name": "GROUP",
       "description": "",
       "isDeprecated": false,
@@ -73,10 +79,10 @@
   "operator": "enum",
   "typename": "GroupType"
 }
-## GraphQL Schema definition
+## GraphQL schema definition
 
 {{% graphql-schema-enum %}}
 
-## Require by
+## Required by
 
 {{% graphql-require-by %}}

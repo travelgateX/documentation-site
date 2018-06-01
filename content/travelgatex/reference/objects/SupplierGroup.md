@@ -27,7 +27,7 @@
   "typename": "SupplierGroup"
 }
 group related to a supplier
-## GraphQL Schema definition
+## GraphQL schema definition
 
 {{% graphql-schema-type %}}
 

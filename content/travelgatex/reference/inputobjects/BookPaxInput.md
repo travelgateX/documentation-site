@@ -32,7 +32,7 @@
   "typename": "BookPaxInput"
 }
 Input BookPax contains basic information abaout pax suach as name, surname and age.
-## GraphQL Schema definition
+## GraphQL schema definition
 
 {{% graphql-schema-type %}}
 

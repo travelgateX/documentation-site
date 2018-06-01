@@ -11,9 +11,9 @@
       "isDeprecated": false,
       "args": [
         {
-          "typeString": "MappeaXConfirmUploadInput!",
+          "typeString": "MappeaConfirmUploadInput!",
           "name": "input",
-          "url": "/travelgatex/reference/inputobjects/mappeaxconfirmuploadinput",
+          "url": "/travelgatex/reference/inputobjects/mappeaconfirmuploadinput",
           "description": ""
         }
       ]
@@ -26,9 +26,9 @@
       "isDeprecated": false,
       "args": [
         {
-          "typeString": "MappeaXUploadFileInput!",
+          "typeString": "MappeaUploadFileInput!",
           "name": "input",
-          "url": "/travelgatex/reference/inputobjects/mappeaxuploadfileinput",
+          "url": "/travelgatex/reference/inputobjects/mappeauploadfileinput",
           "description": ""
         }
       ]
@@ -41,9 +41,9 @@
       "isDeprecated": false,
       "args": [
         {
-          "typeString": "MappeaXMapSupplierInput!",
+          "typeString": "MappeaMapSupplierInput!",
           "name": "input",
-          "url": "/travelgatex/reference/inputobjects/mappeaxmapsupplierinput",
+          "url": "/travelgatex/reference/inputobjects/mappeamapsupplierinput",
           "description": ""
         }
       ]
@@ -53,7 +53,7 @@
   "requireby": [
     {
       "name": "Mutation",
-      "description": "Mutations are operations that change or update data in the server.",
+      "description": "Mutations are operations that change or update data on the server",
       "url": "/travelgatex/reference/schema/mutation"
     }
   ],
@@ -61,7 +61,7 @@
   "operator": "type",
   "typename": "MappeaMutation"
 }
-## GraphQL Schema definition
+## GraphQL schema definition
 
 {{% graphql-schema-type %}}
 
@@ -69,6 +69,6 @@
 
 {{% graphql-field %}}
 
-## Require by
+## Required by
 
 {{% graphql-require-by %}}
