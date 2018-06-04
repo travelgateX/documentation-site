@@ -16,13 +16,13 @@
 <link href="{{"css/magnific-popup.css" | relURL}}" rel="stylesheet">
 <link href="{{"css/bootstrap.css" | relURL}}" rel="stylesheet">
 <link href="{{"css/elate-style.css" | relURL}}" rel="stylesheet">
-<link href="{{"css/https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" | relURL}}" rel="stylesheet">
+<link href="{{"https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" | relURL}}" rel="stylesheet">
 
 {{with .Site.Params.themeVariant}}
 	<link href="{{(printf "theme-%s/variant-%s.css" $.Site.Params.themeStyle .) | relURL}}" rel="stylesheet">
 {{end}}
 <link rel="stylesheet" href="{{"css/bootstrap.min.css" | relURL}}">
-<script src="{{"js/jquery-2.x.min.js" | relURL}}"></script>
+<script src="{{"/js/jquery-3.2.1.min.js" | relURL}}"></script>
 <script type="text/javascript">
       var baseurl = "{{.Site.BaseURL}}";
 </script>

@@ -324,7 +324,7 @@ discourseUrl = "http://community.travelgatex.com/"
   [params.counters]
     enable = true
     title = "Stats"
-    background = "none"
+    #background = "none"
 
     [[params.counters.item]]
       description = "Live Suppliers"
@@ -370,7 +370,7 @@ discourseUrl = "http://community.travelgatex.com/"
         ["icon-home", "Carrer Galileo Galilei, <br> ParcBit 07121 Palma, Illes Balears, Spain"],
         ["icon-phone", "(+34) 871 968 181"],
         ["icon-envelope", "info@travelgatex.com"],
-        ["icon-globe", '<a href="http://www.travelgatex.com/" target="_blank">travelgatex.com</a>']
+        ["icon-globe", '<a href="https://www.travelgatex.com/" target="_blank">travelgatex.com</a>']
       ]
 
     name = "Full Name"

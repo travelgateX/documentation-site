@@ -143,7 +143,7 @@ alwaysopen = false
 
 ## Search
 
-Performs a hotel availability search over 1 or more [Seller accesses](http://docs.travelgatex.com/admin/resources/common-resources/#accesses). Depending Seller, search operations implicit use supplier’s cache.
+Performs a hotel availability search over 1 or more [Seller accesses](https://docs.travelgatex.com/admin/resources/common-resources/#accesses). Depending Seller, search operations implicit use supplier’s cache.
 
 ### Operation
 
