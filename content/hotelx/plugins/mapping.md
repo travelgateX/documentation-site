@@ -19,38 +19,33 @@ Our map formats share a common structure. In order to load your maps you just ne
 ## Example files
 You can download example for the files structure [here](/content/sample_mapping.zip)
 
-## Ftp Endpoint
- ftp://ftp.xmltravelgate.com
-
-## Directory Format
-### Root path
-The structure of the directory should be in the below format, all files should be inside this directory
-
-/F[Folder code]\_[Unique code]/HotelX\_[Unique code]/
-* F[Folder code]\_[Unique code]
-    * **Folder code**: corresponds to the folder number.
-    * **Unique code**: corresponds to the folder unique code in our system.
-* HotelX\_[Unique code]
-    * **Unique code**: corresponds to the HotelX unique code in our system.
-### Example
-* /F**0**\_**178**/HotelX\_**179**
 
 ## Entity Maps
+
 ### File Format
+
 The file should be in the following format:
 
 * **Encoding**: UTF-8
+
 * **File Name**: [Context Source]\_[Context Destination]\_[entity]\_map.csv
-    * Context Source: correspond to the client code
-    * Context Destination: correspond to the supplier code
-        * 1 file for each supplier
+
+  * Context Source: correspond to the client code
+
+  * Context Destination: correspond to the supplier code
+
+    * 1 file for each supplier
 
 * **Header Row**: Code Source, Code Destination
-    * Context Source: correspond to the client codes
-    * Context Destination: correspond to the supplier codes
+
+  * Context Source: correspond to the client codes
+
+  * Context Destination: correspond to the supplier codes    
 
 * **Delimiter**: Comma (",")
+
 * **Directory**: /F[folder code]\_[unique code]/HotelX\_[unique code]/Maps/[entity]/
+
 ### File Names
 
 All map files must have the same name structure as follow, you need create a file for *Context Destionation*
@@ -61,7 +56,9 @@ All map files must have the same name structure as follow, you need create a fil
 |Board|[Context Source]\_[Context Destination]\_board\_map.csv|
 |Room|[Context Source]\_[Context Destination]\_room\_map.csv|
 |Rate|[Context Source]\_[Context Destination]\_rate\_map.csv|
+
 ### Directories
+
 |Entity|File Name|
 |---|---|
 |Hotel|/F[folder code]\_[unique code]/HotelX\_[unique code]/Maps/Hotel/|
@@ -70,25 +67,31 @@ All map files must have the same name structure as follow, you need create a fil
 |Rate|/F[folder code]\_[unique code]/HotelX\_[unique code]/Maps/Rate/|
 
 ### Samples File
+
 Suppose we have the follow client code and supplier code, you need create one file for each supplier you have
 * Client code: GUE
+
 * Supplier Code: BVJ
 
 **Name**: GUE\_BVJ\_hotel\_map.csv
-**Data**:
+
+
 ```csv
 Code Source, Code Destination
 10,c11\#10
 10000,7604
 10000,1274249
 ```
+
 ## Plugin Name
+
 |Entity Map|Plugin Name|
 |---|---|
 |Hotel|HotelMapX|
 |Board|BoardMapX|
 |Room|RoomMapX|
 |Rate|RateMapX|
+
 ## Other Maps
 
 However, an alternative for room map is also shown below:
@@ -99,6 +102,7 @@ As a room map alternative, you can generate a room code from a room description.
 
 
 ## Files
+
 We have two files for this plugin:
 
 * Alias Table: it is used to replace some words from the description 
@@ -106,6 +110,7 @@ We have two files for this plugin:
 
 
 ### Alias Table
+
 #### Format File
 
 The file must be in the below format:
@@ -115,9 +120,11 @@ The file must be in the below format:
 * Header Row: ToReplace, ReplaceWith, Order 
 * Delimiter:  Comma (“,”) 
 * Directory:  /F[folder code]\_[unique code]/HotelX\_[unique code]/Maps/plugin/
+
 #### Sample File
+
 **Name**: roomDescriptionMapX\_aliasTable.csv
-**Data**:
+
 ```csv
 ToReplace,ReplaceWith,Order
 1 bed,apt,102
@@ -126,7 +133,9 @@ ToReplace,ReplaceWith,Order
 3 bed,3-bedroom,303
 apartment,apt,902
 ```
+
 ### Noise Words
+
 #### Format File
 
 The file must be in the below format:
@@ -135,31 +144,39 @@ The file must be in the below format:
 * **File Name**: roomDescriptionMapX\_noiseWords.csv 
 * **Header Row**: ToRemove 
 * **Directory**: /F[folder code]\_[unique code]/HotelX\_[unique code]/Maps/plugin/
+
 #### Sample File
+
 **Name**: roomDescriptionMapX\_noiseWords.csv
 **Data**:
+
 ``` csv
 ToRemove
 ad
 b&b
 breakf
 ```
+
 ## How applies
+
 When you execute the plugin the steps are:
+
 1. Get room description.
 1. Replace strings with roomDescriptionMapX\_aliasTable.csv, the order to apply this replace depends on the order column.
-1. Sort the description words alphabetically 
+1. Sort the description words alphabetically. 
 1. Remove words with roomDescriptionMapX\_noiseWords.csv file. 
 1. Get your new code. 
+
 ## Execution example
-```
+
+```json
 {
     "plugins": {
-        "step": "RESPONSE\_OPTION",
+        "step": "RESPONSE_OPTION",
         "pluginsType": [
             {
-                "type": "ROOM\_MAP"
-                "name": "mapping\_room\_description"
+                "type": "ROOM_MAP",
+                "name": "mapping_room_description"
             }
         ]
     }
