@@ -8,6 +8,10 @@ alwaysopen = false
 
 ## Search
 
+### Which Apikey do I have to use? 
+1. I already have the TGX Welcome Pack: Then you should use the Api Key facilitated.
+2. I did not receive TGX Welcome Pack: Then you should use our dummy Api Key facilitated on our sample Playground.
+
 ### Do I have access to all the hotels in the test environment?
 No, we use a test supplier, so there is a limited number of hotels in the data base to be used.
 
