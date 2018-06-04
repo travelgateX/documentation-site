@@ -70,3 +70,30 @@ With _context_ information developers can personalize _plugin_ features, more in
 | _Request Access_ | [Pre Step](../processor)<br>[Hotel Map](../mapping)<br>[Post Step](../processor) |[Pre Step](../processor) <br>[Post Step](../processor)|[Pre Step](../processor) <br>[Post Step](../processor)|[Pre Step](../processor) <br>[Post Step](../processor)|
 | _Response Option_ |[Pre Step](../processor)<br>[Hotel Map](../mapping)<br>[Board Map](../mapping)<br>[Room Map](../mapping)<br>[Rate Map](#../rate-map)<br>[Currency Conversion](../currency-conversion)<br>[Net Price](../net-price)<br>[Markup](../markup)<br>[Aggregation](../aggregation)<br>[Post Step](../processor)| [Pre Step](../processor)<br>[Hotel Map](../mapping)<br>[Board Map](../mapping)<br>[Room Map](../mapping)<br>[Currency Conversion](../currency-conversion)<br>[Net Price](../net-price)<br>[Markup](../markup)<br>[Post Step](../processor) |[Pre Step](../processor)<br>[Hotel Map](../mapping)<br>[Board Map](../mapping)<br>[Room Map](../mapping)<br>[Currency Conversion](../currency-conversion)<br>[Net Price](../net-price)<br>[Markup](../markup)<br>[Post Step](../processor) |[Pre Step](../processor)<br>[Hotel Map](../mapping)<br>[Board Map](../mapping)<br>[Room Map](../mapping)<br>[Currency Conversion](../currency-conversion)<br>[Net Price](../net-price)<br>[Post Step](../processor)|
 | _Response_ |[Pre Step](../processor)<br>[Aggregation](../aggregation)<br>[Post Step](../processor)|[Pre Step](../processor) <br>[Post Step](../processor)|[Pre Step](../processor) <br>[Post Step](../processor)|[Pre Step](../processor) <br>[Post Step](../processor)|
+
+
+
+### Ftp Endpoint
+
+ftp://ftp.xmltravelgate.com
+
+### Directory Format
+
+#### Root path
+
+The structure of the directory should be in the below format, all files should be inside this directory
+
+/F[Folder code]\_[Unique code]/HotelX\_[Unique code]/ 
+* F[Folder code]\_[Unique code] 
+
+    * **Folder code**: corresponds to the folder number. 
+    * **Unique code**: corresponds to the folder unique code in our 
+
+    system.
+* HotelX\_[Unique code] 
+
+    * **Unique code**: corresponds to the HotelX unique code in our system.
+
+#### Example
+
+* /F**0**\_**178**/HotelX\_**179**  
