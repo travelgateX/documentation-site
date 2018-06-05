@@ -7,7 +7,7 @@ weight = 1
 alwaysopen = false
 +++
 
-HotelX is the ultimate connectivity solution. Besides **enabling you to connect to multiple ’Suppliers’**, it also adds business logic **solving most of the problems commonly found in the travel business** in an elegant and efficient way.
+testchange HotelX is the ultimate connectivity solution. Besides **enabling you to connect to multiple ’Suppliers’**, it also adds business logic **solving most of the problems commonly found in the travel business** in an elegant and efficient way.
 
 {{< figure src="/images/connectx_diagram.png#center" alt="High Level HotelX Architecture" attr="" >}}
 
