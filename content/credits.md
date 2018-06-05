@@ -18,7 +18,7 @@ description = "contributors and packages used by hugo-theme-docdock"
 </div>
 
 ## Packages and libraries
-* [Bootstrap](http://getbootstrap.com) - front-end framework
+* [Bootstrap](http://getbootstrap.com) - test!! front-end framework
 * [mermaid](https://knsv.github.io/mermaid) - generation of diagram and flowchart from text in a similar manner as markdown
 * [font awesome](http://fontawesome.io/) - the iconic font and CSS framework
 * [jQuery](https://jquery.com) - The Write Less, Do More, JavaScript Library
