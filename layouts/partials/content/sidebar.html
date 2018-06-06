@@ -90,6 +90,10 @@
 
 <script type="text/javascript">
   $(document).ready(()=>{
+    const schemaLIs = $('li[data-nav-id="/travelgatex/reference/schema/"]').find('ul').children();
+    if((schemaLIs || []).length){
+      $(schemaLIs)[0].prepend($(schemaLIs)[1]);
+    }
     $('.directory').click((event)=>{
       if($(event.currentTarget.parentElement).hasClass("parent")){
         $(event.currentTarget.parentElement).removeClass("parent")
