@@ -7,65 +7,58 @@ weight = 2
 alwaysopen = false
 +++
 
-This page shows you how to perform a basic hotel booking using [GraphQL Playground](https://api.travelgatex.com/).
+In this section you will find all the queries necessaries in order to perform a booking flow using [GraphQL Playground](https://api.travelgatex.com/). 
 
-### Before Starting
-
-1. Follow the steps in [Creating an API Key](/travelgatex/security/overview#creating-an-api-key) to get your API Key. 
-
-2. [Check the connectivity](travelgatex/overview/#making-requests) of your API Key. 
-
-3. Open [the sample Playground](https://graphqlbin.com/2k65c8) and modify HTTP HEADERS field Authorization with your API Key and indicated your [client](#_ivb2cezalt05) into request settings. 
-
-```
-{
-
-  "settings": {
-
-    "client": "yourClient"
-
-  }
-
-}
-```
+You will be able to visualize the main necessary queries and responses through our [sample Playground](https://graphqlbin.com/2k65c8). 
 
 ## Step by Step
 
-### Search a Hotel
-1. Open search
+In order to perform a booking flow, please follow the steps below:
+
+### Authorization
+First of all, to be able to run any query you should have an Apikey as an authentication.
+
+In case you have an Apikey you can use it by introducing it in the HTTP Headers. Otherwise, you can use the following Apikey for test purposes: q8ggxpoVDW76Kw918hwnnRvxlZmAP2QZ
+
+### Search 
+By means of the following query, you will be able to perform an availability search for a given specific criteria.
+Modify “criteriaSearch” fields using valid dates and press the button play to send the query. 
+
 <object data="https://graphqlbin.com/2kzRfE" type="text/html" width="100%" height="400px" align="left">
 </object>
-1. Modify Query Variables with valid dates and send the request. Example in the first and third tab. 
-1. You can replay the same search (the same dates, currency, language, market, nationality and occupancies) with the token generated per option, this token return a search only for the option’s hotel. Example in second one tab. 
 
-### Quote a Hotel
+In case you need to replicate the search, there is a possibility to do so by using our token (see second tab). This token is obtained in the response of a search query and you will find it in each of the options returned.
 
-1. Open quote
+### Quote 
+
+This query aims to return the total price and cancellation policies of the option selected in the previous step. In Query Variables modify optionRefId with option id value returned in search response and send the query: 
+
 <object data="https://graphqlbin.com/31B2HR" type="text/html" width="100%" height="400px" align="left">
 </object>
-1. In Query Variables modify optionRefId with option id value returned in search response and send the request. 
-1.  3.In this case you can modify the language, if you don't indicate the language, it uses the same language that in search. 
 
-### Book a Hotel
+In this case you can modify the language, if you don’t indicate the language, it uses the same language that in search. 
 
-1. Open hotelBook
+### Book 
+
+This query allows you to book a previously quoted option. In Query Variables modify optionRefId with optionRefId value returned in quote response and send the query with the other mandatory information:
+
 <object data="https://graphqlbin.com/1wxWIp" type="text/html" width="100%" height="400px" align="left">
 </object>
-1. In Query Variables modify optionRefId with optionRefId value returned in quote response and send the request with the other mandatory information. 
 
-### Cancel Booking
+### Cancel 
 
-1. Open hotelCancel
+This query allows you to perform a book cancellation. In Query Variables you should introduce all the necessary information of the book that you want to cancel:
+
 <object data="https://graphqlbin.com/68LYhr" type="text/html" width="100%" height="400px" align="left">
 </object>
-1. In Query Variables  modify the fields with your data. 
 
 ### Booking List
 
-1. Open booking
+You can retrieve the reservation details and status by performing one of the following three options (see tabs):
+    1. References - Introducing reservation locators 
+    2. Per booking dates
+    3. Per arrival dates
+
  <object data="https://graphqlbin.com/0RvEU2" type="text/html" width="100%" height="400px" align="left">
 </object>
-1. You’re going to found three tabs, modify the fields with your data:  
-    1. One of them search by booking reference. 
-    1. Another tab with search by booking date. 
-    1. And another with search by arrival date.
+
