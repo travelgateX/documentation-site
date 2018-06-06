@@ -1,3 +1,7 @@
 # These owners will be the default owners for everything in the repo.
+
+# Team Doc Reviewers
 content/*.md   @travelgateX/product @travelgatetX/product-global @travelgatetX/customer @travelgatetX/grammar
+
+# Team WebDoc Manager 
 *              @travelgatetX/documentation-owner
