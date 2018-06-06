@@ -22,6 +22,9 @@ A `Product` is a TravelgateX platform API which is available for the consumption
 ### Entities
 `Entities` or core resources define common objects that are consistent across all of our API products.
 
+### HUB
+`HUB` is the command center of the TravelgateX platform. All API product connections pass through the HUB. This includes the GraphQL API endpoint (for all TravelgateX API products), as well as our SOAP XML API.    
+
 ### Partner
 A `Partner` interacts with the TravelgateX API platform. A partners can be a User (that is, a person) or a Service Account (that is, an application). A partner is a member of an Organization, and can be a member of mutiple organizations.
 
