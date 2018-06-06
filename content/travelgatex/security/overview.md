@@ -1,6 +1,6 @@
 +++
 title = "Overview"
-pagetitle = "Security within the platform"
+pagetitle = "Security within the TravelgateX platform"
 description = "Learn Platform Security"
 icon = "fa-shield"
 weight = 4
@@ -9,19 +9,23 @@ alwaysopen = false
 
 ### Introduction
 
-TravelgateX offers a fine-grained access control and visibility for centrally managing _resources_, which are granted to _Partners_ belonging to _Organizations_.
+TravelgateX offers a fine-grained access control and visibility for centrally managing `resources`, which are granted to `Partners` belonging to `Organizations`.
 
 ### Authentication
 
-Authentication is the process of authorizing or making sure that the _Partner_ is the correct one. Every request to TravelgateX GraphQL API must carry an Access Token whether it's an [API Key](#api-key) or a [JSON Web Token](#json-web-token).
+Authentication is the process of authorizing or making sure that the `Partner` is the correct one. Every request to TravelgateX GraphQL API must carry an Access Token whether it's an [API Key](#api-key) or a [JSON Web Token](#json-web-token).
 
 #### API Key
 
-The API key takes cares of the authentication of applications, normally created as `Service Account` with limited scopes. 
+The API key takes cares of the authentication of applications, normally created as a `Service Account` with limited scopes. 
 The correct way to send it to GraphQL server is via HTTP Header:
 
- * API key: `"Authorization: Apikey xxxxxxxxx"`
+{{% alert theme="warning" %}}All queries must include a HTTP Header with the API key inserted in the format: 
+* API key: `"Authorization: Apikey xxxxxxxxx"`
 
+If you wish to use test headers, insert `"Authorization":"Apikey q8ggxpoVDW76Kw918hwnnRvxlZmAP2QZ"`
+{{% /alert %}}
+ 
 ```bash
 curl -X\
    POST\
@@ -32,10 +36,10 @@ curl -X\
    https://api.travelgatex.com
 ```
 
-##### Creating an API Key
+### Creating an API Key
 
-For development purposes please use the following test Api Key `q8ggxpoVDW76Kw918hwnnRvxlZmAP2QZ`
-
+{{% alert theme="info" %}}For development and testing purposes, please use the following Test API Key `q8ggxpoVDW76Kw918hwnnRvxlZmAP2QZ`
+{{% /alert %}}
 
 ### JSON Web Token (JWT)
 
@@ -43,14 +47,15 @@ The JSON Web Token takes cares of the authentication of users, normally created 
 
 Whenever the user wants to access a protected resource, the user agent should send the JWT, in the Authorization header using the Bearer schema. The content of the header should look like the following:
 
- * JWT: `"Authorization: Bearer xxxxxxxxx"`
-
+{{% alert theme="warning" %}}All queries to a protected resources must include an Authorization Header using the Bearer schema. The content of the header should look like the following:
+`"Authorization: Bearer xxxxxxxxx"`
+{{% /alert %}}
 
 ### Authorization
 
-Once the _Member_ is authenticated we must authorize the partner to use the requested _Resource_.
+Once the `Member` is authenticated we must authorize the `Partner` to use the requested `Resource`.
 
-[IAM](/admin/concepts/iam) lets partners administrators authorize who can take action on specific resources, giving you full control and visilibity to manage resources centrally.
+Indentity Access Management ([IAM](/admin/concepts/iam)) policies let Partner administrators authorize who can take action on specific resources. This gives you full control and internal visilibity to manage your resources centrally.
 
 ### Further Reading
 
