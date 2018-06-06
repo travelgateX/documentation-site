@@ -1,8 +1,4 @@
 # These owners will be the default owners for everything in the repo.
 
 # Team Doc Reviewers
-content/*.md  @travelgateX/product 
-content/*.md  @travelgateX/product-global 
-content/*.md  @travelgateX/customer 
-content/*.md  @travelgateX/grammar
-content/*.md  @travelgateX/documentation-owner
+content/*.md  @travelgateX/product @travelgateX/product-global @travelgateX/customer @travelgateX/grammar @travelgateX/documentation-owner
