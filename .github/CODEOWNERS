@@ -5,6 +5,4 @@ content/*.md  @travelgateX/product
 content/*.md  @travelgateX/product-global 
 content/*.md  @travelgateX/customer 
 content/*.md  @travelgateX/grammar
-
-# Team WebDoc Manager 
-* @travelgateX/documentation-owner
+content/*.md  @travelgateX/documentation-owner
