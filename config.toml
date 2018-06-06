@@ -228,7 +228,7 @@ discourseUrl = "http://community.travelgatex.com/"
 
   # Testimonials section
   [params.testimonials]
-    enable = true
+    enable = false
     title = "Testimonials"
     description = "See what our Beta Testers &amp; Early Adopters have to say. Learn. Test. Decide."
 
