@@ -1,32 +1,26 @@
 {
-  "title": "Method",
+  "title": "OrganizationTemplate",
   "description": "",
   "weight": 1,
   "fields": null,
   "deprecatedFields": null,
   "requireby": [
     {
-      "name": "UpdateMemberInput",
+      "name": "CreateOrganizationInput",
       "description": "",
-      "url": "/travelgatex/reference/inputobjects/updatememberinput"
+      "url": "/travelgatex/reference/inputobjects/createorganizationinput"
     }
   ],
   "enumValues": [
     {
-      "name": "ADD",
-      "description": "",
-      "isDeprecated": false,
-      "deprecationReason": null
-    },
-    {
-      "name": "DEL",
+      "name": "ORGANIZATION_DEFAULT",
       "description": "",
       "isDeprecated": false,
       "deprecationReason": null
     }
   ],
   "operator": "enum",
-  "typename": "Method"
+  "typename": "OrganizationTemplate"
 }
 ## GraphQL schema definition
 

@@ -12,14 +12,6 @@
       "args": null
     },
     {
-      "typeString": "[Error!]",
-      "name": "error",
-      "url": "/travelgatex/reference/objects/error",
-      "description": "Errors that abort services",
-      "isDeprecated": false,
-      "args": null
-    },
-    {
       "typeString": "DateTime!",
       "name": "createdAt",
       "url": "/travelgatex/reference/scalars/datetime",

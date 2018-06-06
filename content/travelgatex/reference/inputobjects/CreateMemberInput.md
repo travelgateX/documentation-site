@@ -4,9 +4,9 @@
   "weight": 1,
   "fields": [
     {
-      "typeString": "String",
-      "name": "code",
-      "url": "/travelgatex/reference/scalars/string",
+      "typeString": "ID",
+      "name": "member",
+      "url": "/travelgatex/reference/scalars/id",
       "description": "",
       "args": null
     },
@@ -25,23 +25,23 @@
       "args": null
     },
     {
-      "typeString": "String!",
+      "typeString": "ID!",
       "name": "group",
-      "url": "/travelgatex/reference/scalars/string",
+      "url": "/travelgatex/reference/scalars/id",
       "description": "",
       "args": null
     },
     {
-      "typeString": "[String!]!",
-      "name": "roles",
-      "url": "/travelgatex/reference/scalars/string",
+      "typeString": "ID!",
+      "name": "role",
+      "url": "/travelgatex/reference/scalars/id",
       "description": "",
       "args": null
     },
     {
-      "typeString": "String!",
-      "name": "resource",
-      "url": "/travelgatex/reference/scalars/string",
+      "typeString": "[ID!]!",
+      "name": "resources",
+      "url": "/travelgatex/reference/scalars/id",
       "description": "",
       "args": null
     }

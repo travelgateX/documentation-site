@@ -225,6 +225,12 @@
           "name": "group",
           "url": "/travelgatex/reference/inputobjects/updategroupinput",
           "description": ""
+        },
+        {
+          "typeString": "Method!",
+          "name": "method",
+          "url": "/travelgatex/reference/enums/method",
+          "description": ""
         }
       ]
     },

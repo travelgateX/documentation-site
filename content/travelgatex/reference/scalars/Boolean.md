@@ -66,6 +66,16 @@
       "url": "/travelgatex/reference/objects/roledata"
     },
     {
+      "name": "ResourceData",
+      "description": "",
+      "url": "/travelgatex/reference/objects/resourcedata"
+    },
+    {
+      "name": "APIData",
+      "description": "",
+      "url": "/travelgatex/reference/objects/apidata"
+    },
+    {
       "name": "HotelData",
       "description": "Hotel data",
       "url": "/travelgatex/reference/objects/hoteldata"

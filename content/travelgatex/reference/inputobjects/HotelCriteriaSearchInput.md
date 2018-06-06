@@ -21,7 +21,7 @@
       "typeString": "[String!]!",
       "name": "hotels",
       "url": "/travelgatex/reference/scalars/string",
-      "description": "Contains the list of hotels's ID",
+      "description": "Hotel Codes.",
       "args": null
     },
     {

@@ -1,83 +1,81 @@
 {
-  "title": "GroupType",
+  "title": "OperationType",
   "description": "",
   "weight": 1,
   "fields": null,
   "deprecatedFields": null,
-  "requireby": [
-    {
-      "name": "OrganizationData",
-      "description": "",
-      "url": "/travelgatex/reference/objects/organizationdata"
-    },
-    {
-      "name": "GroupCommonData",
-      "description": "",
-      "url": "/travelgatex/reference/interfaces/groupcommondata"
-    },
-    {
-      "name": "GroupData",
-      "description": "",
-      "url": "/travelgatex/reference/objects/groupdata"
-    }
-  ],
+  "requireby": null,
   "enumValues": [
     {
-      "name": "ORG",
+      "name": "SEARCH",
       "description": "",
       "isDeprecated": false,
       "deprecationReason": null
     },
     {
-      "name": "GROUP",
+      "name": "QUOTE",
       "description": "",
       "isDeprecated": false,
       "deprecationReason": null
     },
     {
-      "name": "PROFILE",
+      "name": "BOOKING",
       "description": "",
       "isDeprecated": false,
       "deprecationReason": null
     },
     {
-      "name": "TEAM",
+      "name": "CANCEL",
       "description": "",
       "isDeprecated": false,
       "deprecationReason": null
     },
     {
-      "name": "FOLDER",
+      "name": "SCHEDULER",
       "description": "",
       "isDeprecated": false,
       "deprecationReason": null
     },
     {
-      "name": "PRODUCT",
+      "name": "CREATE",
       "description": "",
       "isDeprecated": false,
       "deprecationReason": null
     },
     {
-      "name": "RESOURCE",
+      "name": "READ",
       "description": "",
       "isDeprecated": false,
       "deprecationReason": null
     },
     {
-      "name": "SPECIFIC_RESOURCE",
+      "name": "UPDATE",
+      "description": "",
+      "isDeprecated": false,
+      "deprecationReason": null
+    },
+    {
+      "name": "DELETE",
+      "description": "",
+      "isDeprecated": false,
+      "deprecationReason": null
+    },
+    {
+      "name": "EXECUTE",
+      "description": "",
+      "isDeprecated": false,
+      "deprecationReason": null
+    },
+    {
+      "name": "OTHER",
       "description": "",
       "isDeprecated": false,
       "deprecationReason": null
     }
   ],
   "operator": "enum",
-  "typename": "GroupType"
+  "typename": "OperationType"
 }
 ## GraphQL schema definition
 
 {{% graphql-schema-enum %}}
-
-## Required by
-
-{{% graphql-require-by %}}

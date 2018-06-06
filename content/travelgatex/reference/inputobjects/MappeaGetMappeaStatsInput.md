@@ -1,25 +1,18 @@
 {
-  "title": "UpdateGroupInput",
+  "title": "MappeaGetMappeaStatsInput",
   "description": "",
   "weight": 1,
   "fields": [
     {
-      "typeString": "ID!",
-      "name": "api",
-      "url": "/travelgatex/reference/scalars/id",
-      "description": "",
-      "args": null
-    },
-    {
-      "typeString": "ID!",
-      "name": "group",
-      "url": "/travelgatex/reference/scalars/id",
+      "typeString": "String!",
+      "name": "organizationName",
+      "url": "/travelgatex/reference/scalars/string",
       "description": "",
       "args": null
     },
     {
       "typeString": "String",
-      "name": "info",
+      "name": "supplierMapped",
       "url": "/travelgatex/reference/scalars/string",
       "description": "",
       "args": null
@@ -29,8 +22,9 @@
   "requireby": null,
   "enumValues": null,
   "operator": "type",
-  "typename": "UpdateGroupInput"
+  "typename": "MappeaGetMappeaStatsInput"
 }
+# GetMappeaStats
 ## GraphQL schema definition
 
 {{% graphql-schema-type %}}

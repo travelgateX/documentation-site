@@ -4,16 +4,16 @@
   "weight": 1,
   "fields": [
     {
-      "typeString": "String!",
-      "name": "code",
-      "url": "/travelgatex/reference/scalars/string",
+      "typeString": "ID!",
+      "name": "group",
+      "url": "/travelgatex/reference/scalars/id",
       "description": "",
       "args": null
     },
     {
-      "typeString": "GroupType!",
+      "typeString": "GroupTypeInput!",
       "name": "type",
-      "url": "/travelgatex/reference/enums/grouptype",
+      "url": "/travelgatex/reference/enums/grouptypeinput",
       "description": "",
       "args": null
     },

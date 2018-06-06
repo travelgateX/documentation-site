@@ -271,9 +271,29 @@
       "url": "/travelgatex/reference/inputobjects/updateclientinput"
     },
     {
+      "name": "CreateOrganizationInput",
+      "description": "",
+      "url": "/travelgatex/reference/inputobjects/createorganizationinput"
+    },
+    {
+      "name": "CreateMemberInput",
+      "description": "",
+      "url": "/travelgatex/reference/inputobjects/creatememberinput"
+    },
+    {
       "name": "CreateGroupInput",
       "description": "",
       "url": "/travelgatex/reference/inputobjects/creategroupinput"
+    },
+    {
+      "name": "UpdateMemberInput",
+      "description": "",
+      "url": "/travelgatex/reference/inputobjects/updatememberinput"
+    },
+    {
+      "name": "UpdateGroupInput",
+      "description": "",
+      "url": "/travelgatex/reference/inputobjects/updategroupinput"
     },
     {
       "name": "DeleteMemberInput",
@@ -299,6 +319,11 @@
       "name": "MappeaMapSupplierInput",
       "description": "# MapSupplier",
       "url": "/travelgatex/reference/inputobjects/mappeamapsupplierinput"
+    },
+    {
+      "name": "AdviseMessage",
+      "description": "",
+      "url": "/travelgatex/reference/interfaces/advisemessage"
     },
     {
       "name": "Context",
