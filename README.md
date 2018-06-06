@@ -1,10 +1,28 @@
-# travelgateX Documentation Site
+[fork]: https://github.com/travelgateX/documentation-site/fork
+[pr]: https://github.com/travelgateX/documentation-site/compare
+[code-of-conduct]: CODE_OF_CONDUCT.md
 
-travelgateX is a collection of GraphQL APIs for the travel trade.
+# TravelgateX Documentation
 
-Search & Book Hotels, Flights, etc. in more than 600 suppliers seemlessly.
+This repository contains source for TravelgateX documentation.
+TravelgateX is a collection of GraphQL APIs for the travel trade.
 
-## Installation procedures:
+Master branch is published to https://docs.travelgatex.com
+
+## Contributing
+1. [Fork][fork] and clone the repository
+2. Create a new branch: `git checkout -b feature/my-new-feature-name`
+3. Make your change
+4. Push to your fork and [submit a pull request][pr]
+5. Pat your self on the back and wait for your pull request to be reviewed and merged.
+
+Here are a few things you can do that will increase the likelihood of your pull request being accepted:
+
+- Keep your change as focused as possible. If there are multiple changes you would like to make that are not dependent upon each other, consider submitting them as separate pull requests.
+- Write a [good commit message](http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html).
+- In your pull request description, provide as much detail as possible. This context helps the reviewer to understand the motivation for and impact of the change.
+
+## Installing
 
 - Install [Hugo](https://gohugo.io/)
 - Clone the repo:
@@ -62,7 +80,7 @@ cd ..
 ./deploy.sh
 ```
 
-## Graphql documentation generator
+## Build documentation reference
 
 ```bash
 cd script
