@@ -395,6 +395,12 @@
           "description": ""
         },
         {
+          "typeString": "RoleType",
+          "name": "type",
+          "url": "/travelgatex/reference/enums/roletype",
+          "description": ""
+        },
+        {
           "typeString": "Int",
           "name": "first",
           "url": "/travelgatex/reference/scalars/int",

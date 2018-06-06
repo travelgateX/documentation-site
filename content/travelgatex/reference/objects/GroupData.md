@@ -65,6 +65,57 @@
           "description": ""
         },
         {
+          "typeString": "GroupType",
+          "name": "type",
+          "url": "/travelgatex/reference/enums/grouptype",
+          "description": ""
+        },
+        {
+          "typeString": "Int",
+          "name": "first",
+          "url": "/travelgatex/reference/scalars/int",
+          "description": ""
+        },
+        {
+          "typeString": "Int",
+          "name": "last",
+          "url": "/travelgatex/reference/scalars/int",
+          "description": ""
+        },
+        {
+          "typeString": "String",
+          "name": "before",
+          "url": "/travelgatex/reference/scalars/string",
+          "description": ""
+        },
+        {
+          "typeString": "String",
+          "name": "after",
+          "url": "/travelgatex/reference/scalars/string",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "typeString": "GroupConnection",
+      "name": "parents",
+      "url": "/travelgatex/reference/objects/groupconnection",
+      "description": "",
+      "isDeprecated": false,
+      "args": [
+        {
+          "typeString": "[ID!]",
+          "name": "codes",
+          "url": "/travelgatex/reference/scalars/id",
+          "description": ""
+        },
+        {
+          "typeString": "GroupType",
+          "name": "type",
+          "url": "/travelgatex/reference/enums/grouptype",
+          "description": ""
+        },
+        {
           "typeString": "Int",
           "name": "first",
           "url": "/travelgatex/reference/scalars/int",
@@ -178,6 +229,51 @@
           "typeString": "[ID!]",
           "name": "codes",
           "url": "/travelgatex/reference/scalars/id",
+          "description": ""
+        },
+        {
+          "typeString": "Int",
+          "name": "first",
+          "url": "/travelgatex/reference/scalars/int",
+          "description": ""
+        },
+        {
+          "typeString": "Int",
+          "name": "last",
+          "url": "/travelgatex/reference/scalars/int",
+          "description": ""
+        },
+        {
+          "typeString": "String",
+          "name": "before",
+          "url": "/travelgatex/reference/scalars/string",
+          "description": ""
+        },
+        {
+          "typeString": "String",
+          "name": "after",
+          "url": "/travelgatex/reference/scalars/string",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "typeString": "GroupConnection",
+      "name": "managedGroups",
+      "url": "/travelgatex/reference/objects/groupconnection",
+      "description": "",
+      "isDeprecated": false,
+      "args": [
+        {
+          "typeString": "[ID!]",
+          "name": "codes",
+          "url": "/travelgatex/reference/scalars/id",
+          "description": ""
+        },
+        {
+          "typeString": "GroupType",
+          "name": "type",
+          "url": "/travelgatex/reference/enums/grouptype",
           "description": ""
         },
         {
@@ -358,6 +454,51 @@
           "typeString": "Boolean",
           "name": "isActive",
           "url": "/travelgatex/reference/scalars/boolean",
+          "description": ""
+        },
+        {
+          "typeString": "Int",
+          "name": "first",
+          "url": "/travelgatex/reference/scalars/int",
+          "description": ""
+        },
+        {
+          "typeString": "Int",
+          "name": "last",
+          "url": "/travelgatex/reference/scalars/int",
+          "description": ""
+        },
+        {
+          "typeString": "String",
+          "name": "before",
+          "url": "/travelgatex/reference/scalars/string",
+          "description": ""
+        },
+        {
+          "typeString": "String",
+          "name": "after",
+          "url": "/travelgatex/reference/scalars/string",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "typeString": "RoleConnection",
+      "name": "roles",
+      "url": "/travelgatex/reference/objects/roleconnection",
+      "description": "",
+      "isDeprecated": false,
+      "args": [
+        {
+          "typeString": "[ID!]",
+          "name": "codes",
+          "url": "/travelgatex/reference/scalars/id",
+          "description": ""
+        },
+        {
+          "typeString": "RoleType",
+          "name": "type",
+          "url": "/travelgatex/reference/enums/roletype",
           "description": ""
         },
         {

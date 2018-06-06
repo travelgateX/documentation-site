@@ -1,33 +1,17 @@
 {
-  "title": "GroupType",
+  "title": "GroupTypeInput",
   "description": "",
   "weight": 1,
   "fields": null,
   "deprecatedFields": null,
   "requireby": [
     {
-      "name": "OrganizationData",
+      "name": "CreateGroupInput",
       "description": "",
-      "url": "/travelgatex/reference/objects/organizationdata"
-    },
-    {
-      "name": "GroupCommonData",
-      "description": "",
-      "url": "/travelgatex/reference/interfaces/groupcommondata"
-    },
-    {
-      "name": "GroupData",
-      "description": "",
-      "url": "/travelgatex/reference/objects/groupdata"
+      "url": "/travelgatex/reference/inputobjects/creategroupinput"
     }
   ],
   "enumValues": [
-    {
-      "name": "ORG",
-      "description": "",
-      "isDeprecated": false,
-      "deprecationReason": null
-    },
     {
       "name": "GROUP",
       "description": "",
@@ -72,7 +56,7 @@
     }
   ],
   "operator": "enum",
-  "typename": "GroupType"
+  "typename": "GroupTypeInput"
 }
 ## GraphQL schema definition
 

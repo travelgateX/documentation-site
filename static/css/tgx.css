@@ -503,7 +503,8 @@ a.card-lv2:hover {
   position: relative;
   float: left;
   width: 100%;
-  height: calc(100% - 388px);
+  /* height: calc(100% - 388px); */
+  height: 100%; /*temporal*/
   overflow-y: scroll;
 }
 
@@ -1444,6 +1445,16 @@ div.deprecated-entities-container.active {
   z-index: 2;
   padding: 0;/*
   margin-top: 50px;*/
+  width: 72%; /*temporal*/
+  left: 28%;
+}
+
+/*temporal*/
+@media (min-width: 769px) and (max-width: 991px){
+  #footer_docs{
+    width: 60%;
+    left: 40%;
+  }
 }
 
 #footer_docs .gotop {

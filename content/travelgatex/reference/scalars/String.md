@@ -11,16 +11,6 @@
       "url": "/travelgatex/reference/objects/accessedge"
     },
     {
-      "name": "Error",
-      "description": "Application errors",
-      "url": "/travelgatex/reference/objects/error"
-    },
-    {
-      "name": "AdviseMessage",
-      "description": "",
-      "url": "/travelgatex/reference/interfaces/advisemessage"
-    },
-    {
       "name": "AccessData",
       "description": "",
       "url": "/travelgatex/reference/objects/accessdata"
@@ -34,6 +24,11 @@
       "name": "Provider",
       "description": "Temporary type to use only during SQL server's lifetime",
       "url": "/travelgatex/reference/objects/provider"
+    },
+    {
+      "name": "Error",
+      "description": "Application errors",
+      "url": "/travelgatex/reference/objects/error"
     },
     {
       "name": "Parameter",
@@ -579,6 +574,16 @@
       "name": "DefaultSettingsInput",
       "description": "",
       "url": "/travelgatex/reference/inputobjects/defaultsettingsinput"
+    },
+    {
+      "name": "AdviseMessage",
+      "description": "",
+      "url": "/travelgatex/reference/interfaces/advisemessage"
+    },
+    {
+      "name": "ExternalMessage",
+      "description": "",
+      "url": "/travelgatex/reference/objects/externalmessage"
     },
     {
       "name": "SupplierGroup",

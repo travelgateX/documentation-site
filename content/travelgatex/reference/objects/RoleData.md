@@ -20,6 +20,22 @@
       "args": null
     },
     {
+      "typeString": "RoleType!",
+      "name": "type",
+      "url": "/travelgatex/reference/enums/roletype",
+      "description": "",
+      "isDeprecated": false,
+      "args": null
+    },
+    {
+      "typeString": "Boolean!",
+      "name": "isEditable",
+      "url": "/travelgatex/reference/scalars/boolean",
+      "description": "",
+      "isDeprecated": false,
+      "args": null
+    },
+    {
       "typeString": "String",
       "name": "label",
       "url": "/travelgatex/reference/scalars/string",

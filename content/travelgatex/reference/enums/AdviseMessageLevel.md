@@ -1,32 +1,38 @@
 {
-  "title": "Method",
+  "title": "AdviseMessageLevel",
   "description": "",
   "weight": 1,
   "fields": null,
   "deprecatedFields": null,
   "requireby": [
     {
-      "name": "UpdateMemberInput",
+      "name": "AdviseMessage",
       "description": "",
-      "url": "/travelgatex/reference/inputobjects/updatememberinput"
+      "url": "/travelgatex/reference/interfaces/advisemessage"
     }
   ],
   "enumValues": [
     {
-      "name": "ADD",
-      "description": "",
+      "name": "WARN",
+      "description": "Waringn message.",
       "isDeprecated": false,
       "deprecationReason": null
     },
     {
-      "name": "DEL",
-      "description": "",
+      "name": "ERROR",
+      "description": "Error message.",
+      "isDeprecated": false,
+      "deprecationReason": null
+    },
+    {
+      "name": "INFO",
+      "description": "Info message.",
       "isDeprecated": false,
       "deprecationReason": null
     }
   ],
   "operator": "enum",
-  "typename": "Method"
+  "typename": "AdviseMessageLevel"
 }
 ## GraphQL schema definition
 

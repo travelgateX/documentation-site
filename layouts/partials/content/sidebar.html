@@ -26,7 +26,7 @@
             {{- if .Params.alwaysopen}} alwaysopen{{end -}}
             ">
 
-            <a href="{{if ne .Params.isDirectory true}}{{ .RelPermalink}}{{else}}#{{end}}" class="{{if ne .Params.isDirectory false}}directory{{end}}">
+            <a href="{{if ne .Params.isDirectory true}}{{ .RelPermalink}}{{else}}#{{end}}" class="{{if ne .Params.isDirectory false}}wasdirectory{{end}}">
        
             <span>
                 {{- $numberOfPages := (add (len .Pages) (len .Sections)) }}
