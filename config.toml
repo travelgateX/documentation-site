@@ -239,12 +239,6 @@ discourseUrl = "http://community.travelgatex.com/"
       alt = "Dani Martin"
 
     [[params.testimonials.item]]
-      quote = "&ldquo;We have started working with HotelX when it was still under development. Firstly, it was a bit hard since we didn't know GraphQL and the structure kept changing, but in every iteration it got better and more stable. Nowadays, we're happy to have started so early. We're connected to every major Meta Search, respond in less than 1 second and the service is very stable!&rdquo;"
-      person = 'Vishal, Senior Developer <a href="http://www.trulytravel.com//" target="_blank">Truly Travel</a> <span class="subtext">Tech Lead</span>'
-      img = "default-user.png"
-      alt = "Vishal"
-
-    [[params.testimonials.item]]
       quote = "&ldquo;I met these guys last year in Berlin and they've told us about the project, it was still at that stage, project only. But as soon as they've told me about their plans I knew they were on to something and I felt I _couldn't miss out_! It's by far the most advanced API I've seen in travel and in general, I'm impresses by the simplicity and speed of the API. Congrats guys!&rdquo;"
       person = 'Vitali, Senior Developer <a href="http://www.roomertravel.com/" target="_blank">Roomer Travel</a> <span class="subtext">CTO</span>'
       img = "default-user.png"
