@@ -9,7 +9,7 @@ alwaysopen = false
 
 The TravelgateX platform and APIs all use a consistent set of basic concepts so that whatever API you use on our platform, you can be confident that it will work with the same definitions as all of the others you are familiar with. 
 
-Here is an overview of the key concepts of our platform.
+**Here is an overview of the key concepts of our platform.**
 
 ### Access
 An `Access` is a set of credentials and the authentication configuration that enables a `Buyer` to access a `Supplier`. To gain access, a `Buyer` needs to confirm with TravelgateX that they have an agreement in place with each `Supplier` with whom they want to integrate.
@@ -46,4 +46,6 @@ An `Organization` uses profiles to determine what type of interaction is require
 ### Supplier
  A `Supplier` `Profile` uses the TravelgateX platfrom to make travel services available to buyers. Sellers can be suppliers with realtime databases of hotel room vacancies, tours, car rental providers, adventure and activity service suppliers, travel insurance providers or other travel industry service suppliers.
  
- {{% alert theme="info" %}}Join us on [Slack](https://slack.travelgatex.com/) to talk with us about how to use TravelgateX APIs in your websites, apps, and products. You can also send us a [Jira service desk request](https://xmltravelgate.atlassian.net/servicedesk/customer/portal/7). If you would like any new features or more information in our documentation, send us an [issues request](https://github.com/travelgateX/Issue-tracker).{% /alert %}}
+ {{% alert theme="info" %}}Join us on [Slack](https://slack.travelgatex.com/) to talk with us about how to use TravelgateX APIs in your websites, apps, and products. 
+ You can also send us a [Jira service desk request](https://xmltravelgate.atlassian.net/servicedesk/customer/portal/7). 
+ If you would like any new features or more information in our documentation, send us an [issues request](https://github.com/travelgateX/Issue-tracker).{{% /alert %}}
