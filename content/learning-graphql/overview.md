@@ -22,9 +22,12 @@ GraphQL is a perfect fit for all of our application needs:
 
 - **Scalable**: GraphQL is able to handle millions of requests.
 - **Stable**: GraphQL allows us to keep building our API products and introduce new changes to our APIs that do not break existing integrations in client applications.
-- **Fast**: GraphQL not only allows faster response times by *letting you choose exactly what you want*, but also is consumes less bandwidth which makes responses lighter.
+- **Fast**: GraphQL not only allows faster response times by *letting you choose exactly what you want*, but it also consumes less bandwidth which makes responses lighter.
  
 **We are focused on delivering the best APIs to our clients**. SOAP APIs are long gone and modelling REST APIs to fit a vast variety of products is not only hard to understand, it also gets harder to manage as the data model gets bigger. At TravelgateX, we're true believers of the *Kaisen* philosophy. We're constantly researching for new ways to improve.
 
 >"GraphQL allows us to think of our APIs as a whole, giving us a coherence across all of our products and services, which are accessible from one single endpoint. It is the ideal showcase for all of our innovative API products."
 ><cite>Oscar Perez, CTO</cite>
+
+{{% alert theme="info" %}}Join us on [Slack](https://slack.travelgatex.com/) to talk with us about learning to use GraphQL and any questions you might have, or skills you would like to share with our community. You can also send us a [Jira service desk request](https://xmltravelgate.atlassian.net/servicedesk/customer/portal/7). If you would like any new features or more information in our Learning GraphQL documentation, send us an [issues request](https://github.com/travelgateX/Issue-tracker).{% /alert %}}
+
