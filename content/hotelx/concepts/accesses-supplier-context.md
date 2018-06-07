@@ -46,4 +46,4 @@ With our built-in solution, you are able to choose the context that you wish to 
 
 We recommend using the widest `Context` possible or use your own context. That way, all supplier mappings will be resolved.
 
-{{% alert theme="info" %}}For more information on setting contexts, check out our **[Plugin guide on Mapping]**(https://docs.travelgatex.com/hotelx/plugins/mapping/).{% /alert %}}
+{{% alert theme="info" %}}For more information on setting contexts, check out our <a href="https://docs.travelgatex.com/hotelx/plugins/mapping/">**Plugin guide on Mapping**</a>.{{% /alert %}}
