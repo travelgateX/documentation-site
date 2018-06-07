@@ -81,7 +81,7 @@ You can easily **share your Queries with others by generating a link** using the
 TravelgateX follows some conventions about schema definition:
 
 * [Relay schema requirements](#Relay Implementation)
-* [Definition of custom scalar types](#Custom Scalar Types)
+* [Definition of custom scalar types](https://docs.travelgatex.com/travelgatex/reference/scalars/)
 * [Token Based Authentication](https://docs.travelgatex.com/travelgatex/security/overview/)
 
 ### Relay Implementation
