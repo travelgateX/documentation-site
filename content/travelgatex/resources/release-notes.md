@@ -1,6 +1,6 @@
 +++
-title = "Realeases Notes"
-pagetitle = "New Realeases & Updates"
+title = "Release Notes"
+pagetitle = "New Releases & Updates"
 description = "Release Notes and Changelog"
 weight = 2
 alwaysopen = false
