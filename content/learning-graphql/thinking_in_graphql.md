@@ -8,39 +8,47 @@ alwaysopen = false
 
 ## A Paradigm Shift
 
-GraphQL is a query language, and as such it does exactly that: it queries servers in order to get results back and ee get to choose exactly what data we want to retrieve. **As opposed to JSON, each piece of data has its own type, so we know exactly what to expect**, it's a typed language. This gives it a lot of predictability, something we really appreciate, especially when dealing with third party APIs, where we have no control of what's going on on the other side.
+GraphQL is a query language, and as such it does exactly that: it queries servers in order to get results back. With GraphQL, you can choose exactly what data you want to retrieve. GraohQL is a typed query language. That means that it has a lot of predictability, as each piece of data has its own type, so we know what sort of data we will be getting back. This is something we really appreciate, especially since we deal with so many third party APIs, and often we have no control of what's going on on the other side! At TravelgateX we take away all of those headaches, by offering you an integration platform to 600+ suppliers, all accessible via a single GraphQL endpoint.
 
-### Building GraphQL Schemas
+### Understanding GraphQL Schemas
 
-In GraphQL, the API specifications are called _schemas_. **A GraphQL Schema is like a contract between the client and the server**. It's the way how they talk to each other and what they expect from each other. This way, both know exactly what they can and cannot send to each other and what they'll get in response to that. This makes a lot of a difference when creating our schemas, we have to get used to think in a **Schema First** way. 
+In GraphQL, the API specifications are called _schemas_. **A GraphQL `Schema` is a contract between the client and the server**. It defines how clients and servers can talk to each other and sets out what they expect from each other. This way, both know exactly what they can and cannot send to each other and what they'll get in response to that.
 
->A particularly interesting pattern seems to be emerging. Over and over again, I hear developers describing a way of approaching product development we’re calling “GraphQL First.”<cite>https://dev-blog.apollodata.com/graphql-first-a-better-way-to-build-modern-apps-b5a04f7121a0</cite>
-
-First, we model our data, thinking of all the different uses we can give to it. And only then, we'll think of where we are going to get it from. It could even be from different services, like a database or another node from a third party provider.
-
-Another great feature of GraphQL is that the specification ensures that we write documentation while writing the schema. Not only is it cool to see your text in the GraphiQL window, but while you're typing your query, it helps you to think of each and every node and why you're putting it there. Tools such as APIs Guru's [graphql-faker](https://github.com/APIs-guru/graphql-faker) makes it **possible to write the schema in one scree while in the other you see the results**.
-
-**GraphQL schemas also support inheritance by using the same objects for different queries**. For example, in our business domain, just like in most businesses, we have to **return the price of the Hotel or Flight and with GraphQL we are able to use exactly the same element in both**, and just extend it if needed. This makes the job much easier and faster for the developer who are implementing our service.
-
-If you wish to see TravelgateX schema implementation, simply follow the practices explained [here](/graphql-api/)
+There are a number of ways you can understand our `Schema`:
+<ul><li>You can see all elements of our data model by clicking on the green `Schema` button on the right hand side of our <a href="api.travelgatex.com">API playground</a>.</li>
+<li>You can review our Reference Documentation which provides a page by page analysis of all `Objects` and fields used in our `Schema`.</li>
+  <li>You can see how all of the data fields are connected by exploring the <a href="https://api.travelgatex.com/voyager">GraphQL Voyager tool</a>.</li>
+  
+{{% alert theme="info" %}}At TravelgateX we would like to give a hat tip to **API Guru** and their excellent tool [graphql-faker](https://github.com/APIs-guru/graphql-faker). This helped us write the schema in one window while seeing the results in another window. Besides being a super cool feature, this helped us think through each and every node in our data `Schema`.{{% /alert %}}
 
 ### Building Queries
 
-- Componentes de la query
-- Componentes de la respuesta
-- Respuesta
-- Como lo hacemos
-- Paginacion
+You can test a `Query` in the <a href="api.travelgatex.com">API playground</a>.
 
+A query has the following components:
+- **Operation type**: When searching data in GraphQL, we use `Query` to indicate the operation type (see below for `Mutation` operation type
+- **Operation name**: _(optional)_ You can give your `Query` a name so that it is easy to find in later code. This is the similar to creating a function in other programming languages.
+- **Variable definitions**: You can set what variables need to be completed in order to run your query. You declare a name for the variables you will use by using a $. A common variable name we use is $criteriaSearch. After declaring a variable name, use the colon and then describe what inputs are needed. You can choose from some of the input objects we have already created. For example, we often use the `HotelCriteriaSearchInput` input object. This input object requires the following fields as mandatory (indicate by a `!`): Check in date, check out date, number of hotels to be returned in a response, and number of people to occupy the rooms. You can also add language, currency, nationality and market fields as variables to this input object, for more filtered responses. 
+- **Selection set**: After the variables have been defined, you can use the `{` brackets to start listing what objects you want to query to get the data you need. Each selection set starts with a `{` and ends with a `}`. You can nest (indent) these selection sets so it is easier to read a query. 
+- **Response**: Once you have completed defining your query, you will receive a response in JSON format. This will be nested as well, so it is easier to read.
+
+#### Further reading
+<p>We recommend the following resources to learn more about making GraphQL queries:
+<ul><li><a href="https://dev-blog.apollodata.com/the-anatomy-of-a-graphql-query-6dffa9e9e747">The Anatomy of a GraphQL query</a> by <a href="https://github.com/stubailo">Sashko Stubailo</a></li>
+  <li><a href="https://dev-blog.apollodata.com/graphql-explained-5844742f195e">GraphQL explained</a> by <a href="https://twitter.com/databricks">Jonas Helfer</a></li>
+  <li><a href="https://graphql.org/learn/queries/">Queries and Mutations</a> by <a href="https://graphql.org/">GraphQL.org</a></li></p>
+  
 ### Building Mutations
 
-- Componentes de la query
-- Componentes de la respuesta
-- Respuesta
-- Como lo hacemos
-- Paginacion
+You can test a `Mutation` in the <a href="api.travelgatex.com">API playground</a>. We recommend that you work through our <a href="https://docs.travelgatex.com/hotelx/quickstart/">example HotelX mutation to book a hotel</a>.
 
+A query has the following components:
+- **Operation type**: When searching data in GraphQL, we use `Mutation` to indicate the operation type, that is, we are going to change some data on the server
+- **Operation name**: _(optional)_ You can give your `Mutation` a name so that it is easy to find in later code. This is the similar to creating a function in other programming languages.
+- **Variable definitions**: You can set what variables need to be completed in order to run your mutation. You declare a name for the variables you will use by using a $. A common variable name we use is $bookInput. After declaring a variable name, use the colon and then describe what inputs are needed. You can choose from some of the input objects we have already created. For example, we often use the `HotelBookInput` input object. We added an `!` in <a href="https://docs.travelgatex.com/hotelx/quickstart/">our example</a>. The `!` in GraphQL means it is mandatory. So while only three fields of the `HotelBookInput` are usually mandatory, by adding the `!` to our variable definition, we have made all input object fields mandatory.
+- **Selection set**: After the variables have been defined, you can use the `{` brackets to start listing what objects you want to query to get the data you need. Each selection set starts with a `{` and ends with a `}`. You can nest (indent) these selection sets so it is easier to read a query. 
+- **Response**: Once you have completed defining your mutation, you will receive a response in JSON format. This will be nested as well, so it is easier to read. Look for the field `Status` and make sure it has OK to confirm that the data has been added/updated/deleted.
 
-{{% alert theme="danger" %}}**TODO: Falta chicha!!**{{% /alert %}}
+{{% alert theme="danger" %}}We have identified pagination as a topic we need to cover on this page as part of our learning resources. Check our Roadmap for updates on when we will be preparing this content. 
 
-
+If you need any additional information for this page, or suggestions for how we can improve our documentation, send us an issue via our <a href="https://github.com/travelgateX/Issue-tracker"><strong>Issues Tracker</strong></a>.{{% /alert %}}
