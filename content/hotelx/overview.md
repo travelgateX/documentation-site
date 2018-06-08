@@ -38,11 +38,12 @@ Some of the functionalities available in the business logic layer include:
 
 HotelX allows you to add Plugins to our API. 
 
-{{% alert theme="info" %}}A **plugin** is a piece of code that is executed inside our application.{% /alert %}}
+{{% alert theme="info" %}}A **plugin** is a piece of code that is executed inside our application.{{% /alert %}}
 
 There are a few points in the request lifetime where anyone can [develop a plugin](https://docs.travelgatex.com/hotelx/plugins/). A plugin receives the request or response as an input and outputs the changed request or response. 
 
-{{% alert theme="info" %}}Plugins are a core package in the [Go Programming language](https://golang.org/). You can learn more about how to use plugins [here](https://golang.org/pkg/plugin/).{% /alert %}}
+{{% alert theme="info" %}}Plugins are a core package in the [Go Programming language](https://golang.org/). 
+You can learn more about how to use plugins [here](https://golang.org/pkg/plugin/).{% /alert %}}
 
 ### Transformation Layer
 
@@ -60,5 +61,7 @@ We use advanced Machine Learning models to predict how long each cached item wil
 
 Each and every `Supplier` works in a different way. Most use old legacy SOAP APIs and none of them use GraphQL! We have developed integrations for all of them, and we keep them all optimized so that response times are super fast. We are seamlessly connected to more than 600 Suppliers.
 
-{{% alert theme="info" %}}Join us on [Slack](https://slack.travelgatex.com/) to talk with us about how to use HotelX in your websites, apps, and products. You can also send us a [Jira service desk request](https://xmltravelgate.atlassian.net/servicedesk/customer/portal/7). If you would like any new features or more information in our documentation, send us an [issues request](https://github.com/travelgateX/Issue-tracker).{% /alert %}}
+{{% alert theme="info" %}}Join us on [Slack](https://slack.travelgatex.com/) to talk with us about how to use HotelX in your websites, apps, and products. 
+You can also send us a [Jira service desk request](https://xmltravelgate.atlassian.net/servicedesk/customer/portal/7). 
+If you would like any new features or more information in our documentation, send us an [issues request](https://github.com/travelgateX/Issue-tracker).{{% /alert %}}
 
