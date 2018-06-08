@@ -13,13 +13,17 @@ There are two ways of uploading data to the platform:
 * Secure File Transfer Protocol (SFTP)
 * GraphQL `mutation`
 
-{{% alert theme="info" %}}We **recommend** continuing to use SFTP at present while we build out more GraphQL resources. While you can make your updates via a `mutation`, we have not yet written up resources to show you how to do that. If you require these resources immediately, please contact us via <a href="https://slack.travelgatex.com/">Slack</a>, <a href="https://xmltravelgate.atlassian.net/servicedesk/customer/portal/7">Jira</a> or by <a href="https://github.com/travelgateX/Issue-tracker">raising an issue in GitHub</a>.{% /alert %}}
+{{% alert theme="info" %}}We **recommend** continuing to use SFTP at present while we build out more GraphQL resources. 
+
+While you can make your updates via a `mutation`, we have not yet written up resources to show you how to do that. 
+
+If you require these resources immediately, please contact us via <a href="https://slack.travelgatex.com/">Slack</a>, <a href="https://xmltravelgate.atlassian.net/servicedesk/customer/portal/7">Jira</a> or by <a href="https://github.com/travelgateX/Issue-tracker">raising an issue in GitHub</a>.{{% /alert %}}
 
 ### Secure File Transfer Protocol (SFTP)
 
 SFTP, or Secure File Transfer Protocol, is a network protocol that provides secure access, transfer, and management of data files programmatically. This protocol is used by the largest organizations in finance, technology, and consulting to transfer data such as Personally Identifiable Information (PII) to ensure it remains 100% secure.
 
-#### Security
+### Security
 
 To ensure the security of your data, we adhere to the highest standards in data security. Some of the advanced security measures we take include:
 
@@ -43,5 +47,6 @@ If in some case you need to revert to an old version, don't worry because we kee
 
 ## GraphQL Mutation
 
-{{% alert theme="info" %}}Resources to help you upload your data via GraphQL `mutation` are coming soon. Please submit an issue to <a href="https://github.com/travelgateX/Issue-tracker">our issue tracker</a> if you require these resources immediately.{{% /alert %}}
+{{% alert theme="info" %}}Resources to help you upload your data via GraphQL `mutation` are coming soon. 
+Please submit an issue to <a href="https://github.com/travelgateX/Issue-tracker">our issue tracker</a> if you require these resources immediately.{{% /alert %}}
 
