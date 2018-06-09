@@ -29,6 +29,7 @@ Modify “criteriaSearch” fields using valid dates and press the button play t
 {{< graphiql query="query { admin{ products { edges{ node{ code }}}}}" divname="div_search" >}}
 
 
+
 In case you need to replicate the search, there is a possibility to do so by using our token (see second tab). This token is obtained in the response of a search query and you will find it in each of the options returned.
 
 ### Quote 
@@ -36,6 +37,7 @@ In case you need to replicate the search, there is a possibility to do so by usi
 This query aims to return the total price and cancellation policies of the option selected in the previous step. In Query Variables modify optionRefId with option id value returned in search response and send the query: 
 
 {{< graphiql query="query1 { admin{ products { edges{ node{ code }}}}}" variables="Authorization: c195b18f-46d5-42a8-720d-e3ab628f8e64" divname="div_quote" >}}
+
 
 
 In this case you can modify the language, if you don’t indicate the language, it uses the same language that in search. 
@@ -49,6 +51,7 @@ This query allows you to book a previously quoted option. In Query Variables mod
 {{< graphiql query="query2 { admin{ products { edges{ node{ code }}}}}" divname="div_book" >}}
 
 
+
 ### Cancel 
 
 This query allows you to perform a book cancellation. In Query Variables you should introduce all the necessary information of the book that you want to cancel:
@@ -56,6 +59,7 @@ This query allows you to perform a book cancellation. In Query Variables you sho
 <!--<object data="https://graphqlbin.com/68LYhr" type="text/html" width="100%" height="400px" align="left">
 </object>-->
 {{< graphiql query="query3 { admin{ products { edges{ node{ code }}}}}" variables="Authorization: c195b18f-46d5-42a8-720d-e3ab628f8e64" divname="div_cancel" >}}
+
 
 
 ### Booking List
