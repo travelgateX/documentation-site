@@ -7,7 +7,7 @@ weight = 2
 alwaysopen = false
 +++
 
-In this section you will find all the queries necessaries in order to perform a booking flow using [GraphQL Playground](https://api.travelgatex.com/). 
+In this section you will find all the queries necessaries in order to perform a booking flow using GraphQL. 
 
 You will be able to visualize the main necessary queries and responses through our [sample Playground](https://graphqlbin.com/2k65c8). 
 
@@ -16,16 +16,19 @@ You will be able to visualize the main necessary queries and responses through o
 In order to perform a booking flow, please follow the steps below:
 
 ### Authorization
+
 First of all, to be able to run any query you should have an Apikey as an authentication.
 
 In case you have an Apikey you can use it by introducing it in the HTTP Headers. Otherwise, you can use the following Apikey for test purposes: q8ggxpoVDW76Kw918hwnnRvxlZmAP2QZ
 
 ### Search 
+
 By means of the following query, you will be able to perform an availability search for a given specific criteria.
 Modify “criteriaSearch” fields using valid dates and press the button play to send the query. 
 
 <object data="https://graphqlbin.com/2kzRfE" type="text/html" width="100%" height="400px" align="left">
 </object>
+
 
 In case you need to replicate the search, there is a possibility to do so by using our token (see second tab). This token is obtained in the response of a search query and you will find it in each of the options returned.
 
@@ -36,6 +39,7 @@ This query aims to return the total price and cancellation policies of the optio
 <object data="https://graphqlbin.com/31B2HR" type="text/html" width="100%" height="400px" align="left">
 </object>
 
+
 In this case you can modify the language, if you don’t indicate the language, it uses the same language that in search. 
 
 ### Book 
@@ -45,12 +49,14 @@ This query allows you to book a previously quoted option. In Query Variables mod
 <object data="https://graphqlbin.com/1wxWIp" type="text/html" width="100%" height="400px" align="left">
 </object>
 
+
 ### Cancel 
 
 This query allows you to perform a book cancellation. In Query Variables you should introduce all the necessary information of the book that you want to cancel:
 
 <object data="https://graphqlbin.com/68LYhr" type="text/html" width="100%" height="400px" align="left">
 </object>
+
 
 ### Booking List
 
