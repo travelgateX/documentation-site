@@ -24,7 +24,7 @@ In case you have an Apikey you can use it by introducing it in the HTTP Headers.
 By means of the following query, you will be able to perform an availability search for a given specific criteria.
 Modify “criteriaSearch” fields using valid dates and press the button play to send the query.
 
-{{< graphiql query="query {admin{ products { edges{ node{ code }}}}}" variables="Authorization: c195b18f-46d5-42a8-720d-e3ab628f8e64" divname="div_search" >}}
+{{< graphiql query="query { admin{ products { edges{ node{ code }}}}}" divname="div_search" >}}
 
 In case you need to replicate the search, there is a possibility to do so by using our token (see second tab). This token is obtained in the response of a search query and you will find it in each of the options returned.
 
@@ -42,7 +42,7 @@ This query allows you to book a previously quoted option. In Query Variables mod
 
 <!--<object data="https://graphqlbin.com/1wxWIp" type="text/html" width="100%" height="400px" align="left">
 </object>-->
-{{< graphiql query="query2 { admin{ products { edges{ node{ code }}}}}" variables="Authorization: c195b18f-46d5-42a8-720d-e3ab628f8e64" divname="div_book" >}}
+{{< graphiql query="query2 { admin{ products { edges{ node{ code }}}}}" divname="div_book" >}}
 
 ### Cancel 
 
