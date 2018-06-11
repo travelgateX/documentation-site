@@ -88,6 +88,14 @@
       // Defines a GraphQL fetcher using the fetch API. You're not required to
       // use fetch, and could instead implement graphQLFetcher however you like,
       // as long as it returns a Promise or Observable.
+      function graphQLFetcher(graphQLParams) {
+		// Get token from local storage
+      	var token = localStorage.getItem('token');
+      }
+
+      // Defines a GraphQL fetcher using the fetch API. You're not required to
+      // use fetch, and could instead implement graphQLFetcher however you like,
+      // as long as it returns a Promise or Observable.
       function graphQLFetcher(graphQLParams) {          
         //console.log('in graphQLFetcher')
         // This example expects a GraphQL server at the path /graphql.
@@ -97,6 +105,7 @@
           headers: {
             'Accept': 'application/json',
             'Content-Type': 'application/json',
+            'Authorization': token ? 'Bearer '+ token : null
           },
           body: JSON.stringify(graphQLParams),
         //  credentials: 'include',
