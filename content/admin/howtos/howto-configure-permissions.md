@@ -8,22 +8,22 @@ alwaysopen = false
 
 ## Granting Permissions
 
-This topic describes how to configure permissions for a organization using [HotelX](/hotelx) and Stats
+This topic describes how to configure permissions for a organization using [HotelX](/hotelx) and Stats.
 
 ## Before you begin
 
-- Read about [IAM](/admin/concepts/iam/), which contains information about how TravelgateX manages security
-- Read about [HotelX](/hotelx/), which contains information about HotelX product
+- Read [IAM](/admin/concepts/iam/), which contains information about how TravelgateX manages security
+- Read [HotelX](/hotelx/), which contains information about the HotelX API 
 
 ## Scenario: Organization buying suppliers through HotelX
 
-In this scenario, orgnanization _org\_test_ signs on TravelgateX in order to use HotelX to **buy** product from suppliers.
+In this scenario, organanization _org\_test_ logs on to TravelgateX in order to use HotelX to **buy** product from suppliers.
 
-Distribution will be made through 2 different channels, end users will use _org\_test\_B2C\_site_ whereas that _org\_test\_B2B\_site_ will be used for business users. Every channel could be configured separately. 
+Distribution will be made through 2 different channels, end users will use _org\_test\_B2C\_site_ whereas that _org\_test\_B2B\_site_ will be used for business users. Every channel will be configured separately. 
 
-Purchase will be made through accesses _access\_0_ and _access\_1_ which configure credentials for _supplier\_0_ and _supplier\_1_.
+Purchases will be made through accesses _access\_0_ and _access\_1_ which configure credentials for _supplier\_0_ and _supplier\_1_.
 
-Once _org\_test_ completes API development, decides to implement the role permission schema provided by TravelgateX identifying its teams and members:
+Once _org\_test_ integrates the HotelX API into their system and is certified, then they need to implement the role permission schema provided by TravelgateX to identify teams and members:
 
 |Team         |Members                    |Description         |
 | ------------| ------------------------- | ------------------ |
@@ -40,14 +40,14 @@ A security implementation of this scenario will look similar to the following:
 Group hierarchy is organized as:
 
 - 1 organization named _org\_test_
-- 1 folder named _purchase_, wich manages all products hired by _org\_test_:
+- 1 folder named _purchase_, which manages all products purchased by _org\_test_:
     - [HotelX](/hotelx/) to manage clients, suppliers and accesses
     - *Stats* to view statistics
 
-As long as the IAM policy manage these roles:
+The IAM policy manages these roles:
 
 - **_org.owner_**: All permissions over all organization resources
 - **_hotelx.owner_**: All permissions over all HotelX resources
-- **_hotelx.booking_**: Book Permissions (Book, Cancel and Get Bookings) over HotelX operations
-- **_stats.owner_**: All permissions over all Stats resources
+- **_hotelx.booking_**: Booking permissions (Book, Cancel and Get Bookings) for HotelX operations
+- **_stats.owner_**: All permissions for all Stats resources
 - **_stats.viewer_**: View permissions over Stats

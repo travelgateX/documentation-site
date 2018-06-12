@@ -7,8 +7,10 @@ alwaysopen = false
 isDirectory = false
 +++
 
-HotelX **connects you to multiple `sellers`** addding business logic **solving most of the problems commonly found in the travel business** in an elegant and efficient way.
+With HotelX, you can **connect to multiple `Suppliers`** and add business logic to reflect your pricing and unqiue offers.
 
-There are no integration costs and you can operate with hundreds of hotel `sellers`. **HotelX** has been designed from the ground up to be fast, reliable and scales to millions of requests.
+There are no integration costs and you can integrate with hundreds of hotel `Suppliers`. **HotelX** has been designed from the ground up to be fast, reliable and capable of scaling to millions of requests.
+
+{{% alert theme="info" %}}Join us on [Slack](https://slack.travelgatex.com/) to discuss your integrations, or ask us questions via our [Jira Service desk](https://xmltravelgate.atlassian.net/servicedesk/customer/portal/7).{{% /alert %}}
 
 {{%custom-children%}}

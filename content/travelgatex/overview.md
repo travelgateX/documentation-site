@@ -19,18 +19,18 @@ Our Gateway is the only endpoint to **access all of our APIs**. It is written in
 
 There are two types of allowed operations in the TravelgateX GraphQL APIs:
 
-* [Queries](http://graphql.org/learn/queries/)
-* [Mutations](http://graphql.org/learn/queries/)
+* [Queries](https://docs.travelgatex.com/travelgatex/reference/schema/query/): Queries are "read only" and are used to get data from our system. For example, getting a list of available hotel vacancies for a particular date and location is a `Query`
+* [Mutations](https://docs.travelgatex.com/travelgatex/reference/schema/mutation/): Mutations change, add or delete the data in our system. For example, making a booking for a vacant hotel room is a `Mutation`.
 
 ## GraphQL Endpoint
 
-One of the benefits of using GraphQL is that there's only one single endpoint. You can use this endpoint for all operations you want to perform:
+One of the benefits of using GraphQL is that there is only a single endpoint. You can use this endpoint for all the operations you want to perform.
 
-{{% alert theme="warning" %}}https://api.travelgatex.com{{% /alert %}}
+{{% alert theme="info" %}}Our GraphQL API endpoint for all operations is: https://api.travelgatex.com{{% /alert %}}
 
 ## Communicating with the Server
 
-To communicate with our GraphQL server, you'll need an access token with the right scopes. You are able to create a token by following the steps mentioned in [Security Overview](/travelgatex/security/overview).
+To communicate with our GraphQL server, you'll need an access token with the right scopes. You are able to create a token by following the steps mentioned in the [Security Overview](/travelgatex/security/overview).
 
 ## Making Requests
 
@@ -54,12 +54,17 @@ curl -X\
    https://api.travelgatex.com
 ```
 
-## Graph Reference
+## GraphQL Reference
 
 There are several ways you can learn more about the full capabilities of our TravelgateX GraphQL data model
-* [Reference Documentation](/travelgatex/reference/) provides complete reference documentation for all resources, fields and objects in our GraphQL data model.
-* [API Playground](https://api.travelgatex.com) provides an interactive, multi-column schema definition based on the GraphiQL tool, but with many additional features.
-* [GraphQL-voyager](https://api.travelgatex.com/voyager) displays our GraphQL API as an interactive relational database-like graph to help you understand the different parent and child tables within our schema.
+
+- [Reference Documentation](/travelgatex/reference/) provides complete reference documentation for all resources, fields and objects in our GraphQL data model (called a `Schema`).
+
+- [API Playground](https://api.travelgatex.com) provides an interactive, multi-column schema definition based on the GraphiQL tool, but with many additional features.
+
+- [GraphQL-voyager](https://api.travelgatex.com/voyager) displays our GraphQL API as an interactive relational database-like graph to help you understand the different parent and child tables within our schema.
+
+- [Learning GraphQL](https://docs.travelgatex.com/learning-graphql/) is a set of resources to get to know GraphQL and to understand our schema.
 
 ## Examples
 
@@ -76,8 +81,8 @@ You can easily **share your Queries with others by generating a link** using the
 TravelgateX follows some conventions about schema definition:
 
 * [Relay schema requirements](#Relay Implementation)
-* [Definition of custom scalar types](#Custom Scalar Types)
-* [Token Based Authentication](/getting-started/security/#Authentication)
+* [Definition of custom scalar types](https://docs.travelgatex.com/travelgatex/reference/scalars/)
+* [Token Based Authentication](https://docs.travelgatex.com/travelgatex/security/overview/)
 
 ### Relay Implementation
 
