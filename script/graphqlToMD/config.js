@@ -13,6 +13,8 @@ var BODY = {
   variable: null
 };
 
+var mdData = {};
+
 var frontMatter = (title, pagetitle, description, weight, icon) =>
   JSON.stringify(
     {

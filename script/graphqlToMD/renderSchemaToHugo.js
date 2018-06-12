@@ -50,7 +50,7 @@ function parseFields(type, addToDeprecated) {
     var args = null;
     let descriptionSplitted = null;
 
-    // Looks for a date inside the description, which would indicate deprecation. 
+    // Looks for a date inside the description, which would indicate deprecation.
     // Description is splitted so it can be put inside an anchor for reference
     if (/(\d{4})([\/-])(\d{1,2})\2(\d{1,2})/.test(field.description)) {
       const splittedDescription = field.description.split(' ');
@@ -273,7 +273,7 @@ function renderChangelog(lines, frontMatter, template) {
       information: sortedLog.filter(sl => sl.date === date)
     });
   }
-  
+
   frontMatter.log = changelog;
   lines.push(JSON.stringify(frontMatter));
 
@@ -293,7 +293,20 @@ function removeDuplicates(myArr, prop) {
   });
 }
 
-function saveFile(lines, path) {
+function saveFile(l, path) {
+  let lines = l;
+  if (path.includes('_index')) {
+    const pathArray = path.split('/');
+    if (pathArray.length === 1) {
+      lines = lines + config.mdData['default'];
+    } else if(pathArray.length === 2 && config.mdData[pathArray[0]]){
+      lines = config.mdData[pathArray[0]];
+    }else{
+      console.log(1);
+      console.log(path)
+    }
+  }
+
   fs.writeFile(`${config.LOCATION}/${path}.md`, lines, function(err) {
     if (err) {
       return console.log(err);
