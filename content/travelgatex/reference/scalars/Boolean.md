@@ -137,12 +137,12 @@
     },
     {
       "name": "OperationDetailed",
-      "description": "",
+      "description": "Stats information per operation",
       "url": "/travelgatex/reference/objects/operationdetailed"
     },
     {
       "name": "Mutation",
-      "description": "Mutations are operations that change or update data on the server",
+      "description": "The root query for implementing GraphQL mutations. Mutations are operations that change or update data on the server",
       "url": "/travelgatex/reference/schema/mutation"
     },
     {
@@ -162,7 +162,7 @@
     },
     {
       "name": "DeltaPriceInput",
-      "description": "Input delta price, indicates price variation permitted by the client",
+      "description": "Input delta price, indicates price variation permitted by the client\nAn error will be returned if the new price does not abide to DeltaPrice. If DeltaPrice is not sent and the integration implements it, we assume that the price range is 0 and the process will continue \n(price is lower or equal to the price showed in valuation).\nThis field is implemented if it’s native to the supplier or if another availability/valuation request needs to be done in Reservation. In case the supplier blocks the option in valuation, reservation \nwill be done automatically in reservation method.",
       "url": "/travelgatex/reference/inputobjects/deltapriceinput"
     },
     {
@@ -219,11 +219,6 @@
       "name": "MappeaEditOrganizationInput",
       "description": "# EditOrganization",
       "url": "/travelgatex/reference/inputobjects/mappeaeditorganizationinput"
-    },
-    {
-      "name": "LegacyData",
-      "description": "The URI type represents a URI values. A good example mith be an Hotel Image URL.\nIn queries or mutations, URI fields have to be specified in RFC 3986, RFC 3987, and RFC 6570 (level 4) compliant URI string format with enclosing double quotes: \"http:\\www.travelgatex.com\".",
-      "url": "/travelgatex/reference/objects/legacydata"
     }
   ],
   "enumValues": null,

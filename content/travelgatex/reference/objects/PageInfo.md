@@ -119,9 +119,19 @@
       "url": "/travelgatex/reference/objects/destinationconnection"
     },
     {
+      "name": "StoredCardConnection",
+      "description": "",
+      "url": "/travelgatex/reference/objects/storedcardconnection"
+    },
+    {
       "name": "StatsConnection",
       "description": "",
       "url": "/travelgatex/reference/objects/statsconnection"
+    },
+    {
+      "name": "PointOfSaleConnection",
+      "description": "",
+      "url": "/travelgatex/reference/objects/pointofsaleconnection"
     }
   ],
   "enumValues": null,

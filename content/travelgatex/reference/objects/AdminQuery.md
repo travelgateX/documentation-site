@@ -476,7 +476,7 @@
   "requireby": [
     {
       "name": "Query",
-      "description": "",
+      "description": "The query root of TravelgateX's GraphQL interface.",
       "url": "/travelgatex/reference/schema/query"
     }
   ],
@@ -484,6 +484,7 @@
   "operator": "type",
   "typename": "AdminQuery"
 }
+The admin query root of TravelgateX's GraphQL interface.
 ## GraphQL schema definition
 
 {{% graphql-schema-type %}}

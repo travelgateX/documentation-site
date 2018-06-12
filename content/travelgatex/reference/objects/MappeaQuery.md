@@ -31,7 +31,7 @@
   "requireby": [
     {
       "name": "Query",
-      "description": "",
+      "description": "The query root of TravelgateX's GraphQL interface.",
       "url": "/travelgatex/reference/schema/query"
     }
   ],

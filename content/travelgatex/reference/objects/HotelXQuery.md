@@ -246,7 +246,7 @@
       "typeString": "ServiceStatus!",
       "name": "bookingStatusService",
       "url": "/travelgatex/reference/objects/servicestatus",
-      "description": "TODO: me no understand...\nReturns status of the booking service.",
+      "description": "Returns status of the booking service.",
       "isDeprecated": false,
       "args": null
     },
@@ -254,7 +254,7 @@
       "typeString": "Mapping!",
       "name": "mapping",
       "url": "/travelgatex/reference/objects/mapping",
-      "description": "",
+      "description": "Returns map codes of a group. You can get hotel map, room map, and board map.",
       "isDeprecated": false,
       "args": [
         {
@@ -270,7 +270,7 @@
   "requireby": [
     {
       "name": "Query",
-      "description": "",
+      "description": "The query root of TravelgateX's GraphQL interface.",
       "url": "/travelgatex/reference/schema/query"
     }
   ],

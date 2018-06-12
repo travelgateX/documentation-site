@@ -456,11 +456,6 @@
       "url": "/travelgatex/reference/objects/map"
     },
     {
-      "name": "StatsEdge",
-      "description": "",
-      "url": "/travelgatex/reference/objects/statsedge"
-    },
-    {
       "name": "File",
       "description": "",
       "url": "/travelgatex/reference/objects/file"
@@ -476,13 +471,53 @@
       "url": "/travelgatex/reference/objects/getmappeastatsdata"
     },
     {
+      "name": "PaymentXBookingInfoFilterInput",
+      "description": "",
+      "url": "/travelgatex/reference/inputobjects/paymentxbookinginfofilterinput"
+    },
+    {
+      "name": "StoredCardEdge",
+      "description": "",
+      "url": "/travelgatex/reference/objects/storedcardedge"
+    },
+    {
+      "name": "PaymentXBookingInfo",
+      "description": "",
+      "url": "/travelgatex/reference/objects/paymentxbookinginfo"
+    },
+    {
+      "name": "PointOfSaleData",
+      "description": "",
+      "url": "/travelgatex/reference/objects/pointofsaledata"
+    },
+    {
+      "name": "AdviseMessage",
+      "description": "",
+      "url": "/travelgatex/reference/interfaces/advisemessage"
+    },
+    {
+      "name": "ExternalMessage",
+      "description": "",
+      "url": "/travelgatex/reference/objects/externalmessage"
+    },
+    {
+      "name": "PaymentCard",
+      "description": "Input PaymentCard, if the payment is done by credit card, is it mandatory to specify the payment type and the credit card information",
+      "url": "/travelgatex/reference/objects/paymentcard"
+    },
+    {
+      "name": "StatsEdge",
+      "description": "",
+      "url": "/travelgatex/reference/objects/statsedge"
+    },
+    {
       "name": "DefaultSettings",
       "description": "",
       "url": "/travelgatex/reference/objects/defaultsettings"
     },
     {
       "name": "Mutation",
-      "description": "Mutations are operations that change or update data on the server",
+      "description": "The root query for implementing GraphQL mutations. Mutations are operations that change or update data on the server",
       "url": "/travelgatex/reference/schema/mutation"
     },
     {
@@ -571,19 +606,29 @@
       "url": "/travelgatex/reference/objects/uploadfiledata"
     },
     {
+      "name": "PaymentXBookingInfoInput",
+      "description": "",
+      "url": "/travelgatex/reference/inputobjects/paymentxbookinginfoinput"
+    },
+    {
+      "name": "PointOfSaleInput",
+      "description": "",
+      "url": "/travelgatex/reference/inputobjects/pointofsaleinput"
+    },
+    {
+      "name": "PaymentXBookingInfoDeleteInput",
+      "description": "",
+      "url": "/travelgatex/reference/inputobjects/paymentxbookinginfodeleteinput"
+    },
+    {
       "name": "DefaultSettingsInput",
       "description": "",
       "url": "/travelgatex/reference/inputobjects/defaultsettingsinput"
     },
     {
-      "name": "AdviseMessage",
+      "name": "PointOfSaleEdge",
       "description": "",
-      "url": "/travelgatex/reference/interfaces/advisemessage"
-    },
-    {
-      "name": "ExternalMessage",
-      "description": "",
-      "url": "/travelgatex/reference/objects/externalmessage"
+      "url": "/travelgatex/reference/objects/pointofsaleedge"
     },
     {
       "name": "SupplierGroup",
@@ -639,11 +684,6 @@
       "name": "MappeaEditOrganizationInput",
       "description": "# EditOrganization",
       "url": "/travelgatex/reference/inputobjects/mappeaeditorganizationinput"
-    },
-    {
-      "name": "LegacyData",
-      "description": "The URI type represents a URI values. A good example mith be an Hotel Image URL.\nIn queries or mutations, URI fields have to be specified in RFC 3986, RFC 3987, and RFC 6570 (level 4) compliant URI string format with enclosing double quotes: \"http:\\www.travelgatex.com\".",
-      "url": "/travelgatex/reference/objects/legacydata"
     }
   ],
   "enumValues": null,

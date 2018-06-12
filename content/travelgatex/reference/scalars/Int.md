@@ -111,13 +111,28 @@
       "url": "/travelgatex/reference/objects/bookingroom"
     },
     {
+      "name": "File",
+      "description": "",
+      "url": "/travelgatex/reference/objects/file"
+    },
+    {
+      "name": "GetMappeaStatsData",
+      "description": "",
+      "url": "/travelgatex/reference/objects/getmappeastatsdata"
+    },
+    {
+      "name": "ExpireDate",
+      "description": "The card expiration date",
+      "url": "/travelgatex/reference/objects/expiredate"
+    },
+    {
       "name": "Ratios",
-      "description": "Details of look to quote and look to book.",
+      "description": "Ratios details",
       "url": "/travelgatex/reference/objects/ratios"
     },
     {
       "name": "OperationDetailed",
-      "description": "",
+      "description": "Stats information per operation",
       "url": "/travelgatex/reference/objects/operationdetailed"
     },
     {
@@ -131,23 +146,13 @@
       "url": "/travelgatex/reference/objects/statsassert"
     },
     {
-      "name": "File",
-      "description": "",
-      "url": "/travelgatex/reference/objects/file"
-    },
-    {
-      "name": "GetMappeaStatsData",
-      "description": "",
-      "url": "/travelgatex/reference/objects/getmappeastatsdata"
-    },
-    {
       "name": "Timeout",
       "description": "",
       "url": "/travelgatex/reference/objects/timeout"
     },
     {
       "name": "BusinessRules",
-      "description": "LList of business rules for filtering options based on your interests.",
+      "description": "List of business rules for filtering options based on your interests.",
       "url": "/travelgatex/reference/objects/businessrules"
     },
     {

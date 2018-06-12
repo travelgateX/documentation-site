@@ -15,7 +15,7 @@
       "typeString": "StatsInfoTypes!",
       "name": "type",
       "url": "/travelgatex/reference/enums/statsinfotypes",
-      "description": "",
+      "description": "Stats type",
       "isDeprecated": false,
       "args": null
     },
@@ -23,7 +23,7 @@
       "typeString": "Int!",
       "name": "hits",
       "url": "/travelgatex/reference/scalars/int",
-      "description": "Total hits.",
+      "description": "Total hits",
       "isDeprecated": false,
       "args": null
     },
@@ -31,7 +31,7 @@
       "typeString": "Int!",
       "name": "time",
       "url": "/travelgatex/reference/scalars/int",
-      "description": "Total time (ms)",
+      "description": "Average time (ms)",
       "isDeprecated": false,
       "args": null
     },
@@ -39,7 +39,7 @@
       "typeString": "[StatsAssert!]",
       "name": "asserts",
       "url": "/travelgatex/reference/objects/statsassert",
-      "description": "",
+      "description": "Details about errors.",
       "isDeprecated": false,
       "args": null
     }

@@ -53,7 +53,7 @@
   "requireby": [
     {
       "name": "Mutation",
-      "description": "Mutations are operations that change or update data on the server",
+      "description": "The root query for implementing GraphQL mutations. Mutations are operations that change or update data on the server",
       "url": "/travelgatex/reference/schema/mutation"
     }
   ],

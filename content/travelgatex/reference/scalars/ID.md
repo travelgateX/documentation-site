@@ -246,6 +246,31 @@
       "url": "/travelgatex/reference/inputobjects/hotelxaccessinput"
     },
     {
+      "name": "PaymentXBookingInfoFilterInput",
+      "description": "",
+      "url": "/travelgatex/reference/inputobjects/paymentxbookinginfofilterinput"
+    },
+    {
+      "name": "StoredCard",
+      "description": "",
+      "url": "/travelgatex/reference/objects/storedcard"
+    },
+    {
+      "name": "PointOfSale",
+      "description": "",
+      "url": "/travelgatex/reference/objects/pointofsale"
+    },
+    {
+      "name": "PointOfSaleData",
+      "description": "",
+      "url": "/travelgatex/reference/objects/pointofsaledata"
+    },
+    {
+      "name": "AdviseMessage",
+      "description": "",
+      "url": "/travelgatex/reference/interfaces/advisemessage"
+    },
+    {
       "name": "Stats",
       "description": "The service used to access the stats of every connection that uses the HUB",
       "url": "/travelgatex/reference/objects/stats"
@@ -321,9 +346,14 @@
       "url": "/travelgatex/reference/inputobjects/mappeamapsupplierinput"
     },
     {
-      "name": "AdviseMessage",
+      "name": "PointOfSaleInput",
       "description": "",
-      "url": "/travelgatex/reference/interfaces/advisemessage"
+      "url": "/travelgatex/reference/inputobjects/pointofsaleinput"
+    },
+    {
+      "name": "PaymentXBookingInfoDeleteInput",
+      "description": "",
+      "url": "/travelgatex/reference/inputobjects/paymentxbookinginfodeleteinput"
     },
     {
       "name": "Context",

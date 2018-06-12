@@ -44,13 +44,15 @@
           "description": ""
         }
       ]
-    },
+    }
+  ],
+  "deprecatedFields": [
     {
       "typeString": "String!",
       "name": "loadFile",
       "url": "/travelgatex/reference/scalars/string",
       "description": "",
-      "isDeprecated": false,
+      "isDeprecated": true,
       "args": [
         {
           "typeString": "String!",
@@ -58,14 +60,14 @@
           "url": "/travelgatex/reference/scalars/string",
           "description": ""
         }
-      ]
+      ],
+      "deprecationReason": "deprecated from 2018-06-06"
     }
   ],
-  "deprecatedFields": null,
   "requireby": [
     {
       "name": "Mutation",
-      "description": "Mutations are operations that change or update data on the server",
+      "description": "The root query for implementing GraphQL mutations. Mutations are operations that change or update data on the server",
       "url": "/travelgatex/reference/schema/mutation"
     }
   ],

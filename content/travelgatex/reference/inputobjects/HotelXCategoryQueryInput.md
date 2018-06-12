@@ -7,14 +7,14 @@
       "typeString": "[String!]",
       "name": "categoryCodes",
       "url": "/travelgatex/reference/scalars/string",
-      "description": "",
+      "description": "Indicates the category codes that you want filter.",
       "args": null
     },
     {
       "typeString": "ID!",
       "name": "access",
       "url": "/travelgatex/reference/scalars/id",
-      "description": "",
+      "description": "Indicates the access that you want use.",
       "args": null
     }
   ],

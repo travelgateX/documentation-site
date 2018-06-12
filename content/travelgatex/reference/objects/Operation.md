@@ -53,7 +53,7 @@
     },
     {
       "name": "OperationDetailed",
-      "description": "",
+      "description": "Stats information per operation",
       "url": "/travelgatex/reference/objects/operationdetailed"
     }
   ],
