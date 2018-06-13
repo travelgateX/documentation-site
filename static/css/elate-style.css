@@ -241,19 +241,19 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 15px !important;
   font-weight: 300;
 }
-#fh5co-header #navbar li:last-child {
+#fh5co-header #navbar li:nth-last-child(2) {
   background-color: #2fd475;
   border-radius: 4px;
   margin-top: 7px;
 }
 
-#fh5co-header #navbar li:last-child:hover{
+#fh5co-header #navbar li:nth-last-child(2):hover{
   background-color: #22a459;
   top:-1px;
 }
 
 
-#fh5co-header #navbar li:last-child a{
+#fh5co-header #navbar li:nth-last-child(2) a{
   padding-top: 10px;
   padding-bottom: 10px;
   color: #fff;
