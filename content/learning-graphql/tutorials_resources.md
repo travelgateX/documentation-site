@@ -13,14 +13,11 @@ However we want to be part of this community and help you discover this new tech
 Enjoy it!
 
 
-### GraphQL Tutorials
+## GraphQL Tutorials
 
 - https://github.com/blog/2412-learn-graphql-with-github 
 
-{{% alert theme="danger" %}}**TODO: Falta chicha!!**{{% /alert %}}
-
-
-### GraphQL Resources
+## GraphQL Resources
 
 - [GraphQL official documentation](http://graphql.org/learn/)
 - [Apollo](http://dev.apollodata.com/)
