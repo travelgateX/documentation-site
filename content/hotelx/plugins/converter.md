@@ -1,7 +1,7 @@
 +++
 title = "Currency Converter"
 pagetitle = "Currency Converter"
-description = "Converter plugins"
+description = "Convert currency in order to have a unified response."
 icon = "fa-exchange"
 weight = 4
 alwaysopen = false

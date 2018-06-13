@@ -1,7 +1,7 @@
 +++
 title = "Processor"
 pagetitle = ""
-description = "Processor plugins"
+description = "Modify objects on both request and response."
 icon = "fa-cog"
 weight = 4
 alwaysopen = false
