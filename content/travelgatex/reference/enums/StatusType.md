@@ -33,7 +33,7 @@
   "operator": "enum",
   "typename": "StatusType"
 }
-Options status
+Indicartes options status
 ## GraphQL schema definition
 
 {{% graphql-schema-enum %}}

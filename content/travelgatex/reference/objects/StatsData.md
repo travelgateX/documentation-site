@@ -7,7 +7,7 @@
       "typeString": "Access!",
       "name": "access",
       "url": "/travelgatex/reference/objects/access",
-      "description": "",
+      "description": "Owner access",
       "isDeprecated": false,
       "args": null
     },
@@ -15,7 +15,7 @@
       "typeString": "Client!",
       "name": "client",
       "url": "/travelgatex/reference/objects/client",
-      "description": "",
+      "description": "Owner client",
       "isDeprecated": false,
       "args": null
     },
@@ -39,7 +39,7 @@
       "typeString": "Ratios!",
       "name": "ratios",
       "url": "/travelgatex/reference/objects/ratios",
-      "description": "Details of look to quote and look to book.",
+      "description": "Ratios details",
       "isDeprecated": false,
       "args": null
     },
@@ -47,7 +47,7 @@
       "typeString": "[OperationDetailed!]",
       "name": "operations",
       "url": "/travelgatex/reference/objects/operationdetailed",
-      "description": "",
+      "description": "Stats information per operation",
       "isDeprecated": false,
       "args": [
         {

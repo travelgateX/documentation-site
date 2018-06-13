@@ -18,10 +18,17 @@
       "args": null
     },
     {
-      "typeString": "[String!]!",
+      "typeString": "[String!]",
       "name": "hotels",
       "url": "/travelgatex/reference/scalars/string",
       "description": "Hotel Codes.",
+      "args": null
+    },
+    {
+      "typeString": "[String!]",
+      "name": "destinations",
+      "url": "/travelgatex/reference/scalars/string",
+      "description": "Destination codes.",
       "args": null
     },
     {

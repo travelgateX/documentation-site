@@ -1,142 +1,169 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <style>
-      body {
-        height: 400px;
-        margin: 0;
-        width: 100%;
-        overflow: visible;
-      }
-      #graphiql {
-        height: 400px;
-      }
-      div.title, div.toolbar,div.variable-editor , button.docExplorerShow {
-        display: none !important;
-        }
-    </style>
-    
-  </head>
-  <body>
-    <div id='{{ .Get "divname" }}' style="height: 300px;">Loading...</div>
-    <script>
 
-      /**
-       * This GraphiQL example illustrates how to use some of GraphiQL's props
-       * in order to enable reading and updating the URL parameters, making
-       * link sharing of queries a little bit easier.
-       *
-       * This is only one example of this kind of feature, GraphiQL exposes
-       * various React params to enable interesting integrations.
-       */
-       var fetchURL = 'https://api.travelgatex.com';
+<head>
+  <style>
+    body {
+      height: 400px;
+      margin: 0;
+      width: 100%;
+      overflow: visible;
+    }
 
-      // Parse the search string to get url parameters.
-      var search = window.location.search;
-      var parameters = {};
-      search.substr(1).split('&').forEach(function (entry) {
-        var eq = entry.indexOf('=');
-        if (eq >= 0) {
-          parameters[decodeURIComponent(entry.slice(0, eq))] =
-            decodeURIComponent(entry.slice(eq + 1));
+    .graphiql-display {
+      height: 400px;
+      position: relative;
+      z-index: 0;
+    }
+
+    div.graphiql-display>button {
+      background: linear-gradient(#fdfdfd, #d2d3d6);
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, .25);
+    cursor: pointer;
+    fill: #444;
+    height: 55px;
+    margin: 0;
+    padding: 0;
+    width: 55px;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    z-index: 1004;
+    transform: translate(-50%);
+    }
+
+    div.title,
+    div.toolbar,
+    div.variable-editor,
+    button.docExplorerShow {
+      display: none !important;
+    }
+  </style>
+
+</head>
+
+<body>
+  <div id='{{ .Get "divname" }}' class='graphiql-display'>Loading...</div>
+  <script>
+
+    /**
+     * This GraphiQL example illustrates how to use some of GraphiQL's props
+     * in order to enable reading and updating the URL parameters, making
+     * link sharing of queries a little bit easier.
+     *
+     * This is only one example of this kind of feature, GraphiQL exposes
+     * various React params to enable interesting integrations.
+     */
+    var fetchURL = 'https://api.travelgatex.com';
+
+    // Parse the search string to get url parameters.
+    var search = window.location.search;
+    var parameters = {};
+    search.substr(1).split('&').forEach(function (entry) {
+      var eq = entry.indexOf('=');
+      if (eq >= 0) {
+        parameters[decodeURIComponent(entry.slice(0, eq))] =
+          decodeURIComponent(entry.slice(eq + 1));
+      }
+    });
+
+
+
+    // if variables was provided, try to format it. 
+    parameters.variables = '{{ .Get "variables" }}';
+    parameters.query = '{{ .Get "query" }}';
+
+    if (parameters.variables) {
+      try {
+        parameters.variables =
+          JSON.stringify(JSON.parse(parameters.variables), null, 2);
+      } catch (e) {
+        // Do nothing, we want to display the invalid JSON as a string, rather
+        // than present an error.
+      }
+    }
+
+    // When the query and variables string is edited, update the URL bar so
+    // that it can be easily shared
+
+    function onEditQuery(newQuery) {
+      parameters.query = newQuery;
+      console.log(parameters.query);
+      updateURL();
+    }
+
+    function onEditVariables(newVariables) {
+      parameters.variables = newVariables;
+      updateURL();
+    }
+
+    function onEditOperationName(newOperationName) {
+      parameters.operationName = newOperationName;
+      updateURL();
+    }
+
+    function updateURL() {
+      var newSearch = '?' + Object.keys(parameters).filter(function (key) {
+        return Boolean(parameters[key]);
+      }).map(function (key) {
+        return encodeURIComponent(key) + '=' +
+          encodeURIComponent(parameters[key]);
+      }).join('&');
+      history.replaceState(null, null, newSearch);
+    }
+
+    // Defines a GraphQL fetcher using the fetch API. You're not required to
+    // use fetch, and could instead implement graphQLFetcher however you like,
+    // as long as it returns a Promise or Observable.
+    function graphQLFetcher(graphQLParams) {
+      const token = false;
+      //console.log('in graphQLFetcher')
+      // This example expects a GraphQL server at the path /graphql.
+      // Change this to point wherever you host your GraphQL server.
+      return fetch(fetchURL, {
+        method: 'post',
+        headers: {
+          'Accept': 'application/json',
+          'Content-Type': 'application/json',
+          'Authorization': token ? 'Bearer ' + token : null
+        },
+        body: JSON.stringify(graphQLParams),
+        //  credentials: 'include',
+      }).then(function (response) {
+        //console.log(fetchURL,graphQLParams);
+        return response.text();
+      }).then(function (responseBody) {
+        try {
+          return JSON.parse(responseBody);
+        } catch (error) {
+          return responseBody;
         }
       });
+    }
 
-      // if variables was provided, try to format it. 
-      parameters.variables = '{{ .Get "variables" }}';  
-      parameters.query = '{{ .Get "query" }}';
-
-      if (parameters.variables) {
-        try {
-          parameters.variables =
-            JSON.stringify(JSON.parse(parameters.variables), null, 2);
-        } catch (e) {
-          // Do nothing, we want to display the invalid JSON as a string, rather
-          // than present an error.
-        }
+    // Render <GraphiQL /> into the body.
+    // See the README in the top level of this module to learn more about
+    // how you can customize GraphiQL by providing different values or
+    // additional child elements.
+    ReactDOM.render(
+      React.createElement(GraphiQL, {
+        fetcher: graphQLFetcher,
+        query: parameters.query,
+        variables: parameters.variables,
+        operationName: parameters.operationName,
+        onEditQuery: onEditQuery,
+        onEditVariables: onEditVariables,
+        onEditOperationName: onEditOperationName
+      }),
+      document.getElementById('{{ .Get "divname" }}'),
+      _ => {
+        const element = $('#{{ .Get "divname" }}');
+        const button = $(element).find('button.execute-button')[0]
+        $(element).append(button);
       }
+    );
+  </script>
+</body>
 
-      // When the query and variables string is edited, update the URL bar so
-      // that it can be easily shared
-      
-      function onEditQuery(newQuery) {
-        parameters.query = newQuery;
-        console.log(parameters.query);
-        updateURL();
-      }
-
-      function onEditVariables(newVariables) {
-        parameters.variables = newVariables;
-        updateURL();
-      }
-
-      function onEditOperationName(newOperationName) {
-        parameters.operationName = newOperationName;
-        updateURL();
-      }
-
-      function updateURL() {
-        var newSearch = '?' + Object.keys(parameters).filter(function (key) {
-          return Boolean(parameters[key]);
-        }).map(function (key) {
-          return encodeURIComponent(key) + '=' +
-            encodeURIComponent(parameters[key]);
-        }).join('&');
-        history.replaceState(null, null, newSearch);
-      }
-
-      // Defines a GraphQL fetcher using the fetch API. You're not required to
-      // use fetch, and could instead implement graphQLFetcher however you like,
-      // as long as it returns a Promise or Observable.
-      function graphQLFetcher(graphQLParams) {
-		// Get token from local storage
-      	var token = localStorage.getItem('token');
-      }
-
-      // Defines a GraphQL fetcher using the fetch API. You're not required to
-      // use fetch, and could instead implement graphQLFetcher however you like,
-      // as long as it returns a Promise or Observable.
-      function graphQLFetcher(graphQLParams) {          
-        //console.log('in graphQLFetcher')
-        // This example expects a GraphQL server at the path /graphql.
-        // Change this to point wherever you host your GraphQL server.
-        return fetch(fetchURL, {
-          method: 'post',
-          headers: {
-            'Accept': 'application/json',
-            'Content-Type': 'application/json',
-            'Authorization': token ? 'Bearer '+ token : null
-          },
-          body: JSON.stringify(graphQLParams),
-        //  credentials: 'include',
-        }).then(function (response) {
-            //console.log(fetchURL,graphQLParams);
-          return response.text();
-        }).then(function (responseBody) {
-          try {
-            return JSON.parse(responseBody);
-          } catch (error) {
-            return responseBody;
-          }
-        });
-      }
-      
-      // Render <GraphiQL /> into the body.
-      // See the README in the top level of this module to learn more about
-      // how you can customize GraphiQL by providing different values or
-      // additional child elements.
-      ReactDOM.render(
-        React.createElement(GraphiQL, {
-          fetcher: graphQLFetcher,
-          query: parameters.query,
-          variables: parameters.variables,
-          operationName: parameters.operationName,
-          onEditQuery: onEditQuery,
-          onEditVariables: onEditVariables,
-          onEditOperationName: onEditOperationName
-        }),        
-        document.getElementById('{{ .Get "divname" }}')
-      );
-    </script>
-  </body>
 </html>

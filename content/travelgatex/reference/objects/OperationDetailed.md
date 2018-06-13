@@ -4,10 +4,10 @@
   "weight": 1,
   "fields": [
     {
-      "typeString": "Operation",
+      "typeString": "Operation!",
       "name": "operation",
       "url": "/travelgatex/reference/objects/operation",
-      "description": "",
+      "description": "Operation information",
       "isDeprecated": false,
       "args": null
     },
@@ -15,7 +15,7 @@
       "typeString": "Int!",
       "name": "totalHits",
       "url": "/travelgatex/reference/scalars/int",
-      "description": "operation: String!\noperationType: ServiceOperationType!\nList of service apis.\nserviceApis: ServiceApiConnection!\nTotal hits.",
+      "description": "Total hits.",
       "isDeprecated": false,
       "args": null
     },
@@ -23,7 +23,7 @@
       "typeString": "[StatsInfo!]",
       "name": "detailedHits",
       "url": "/travelgatex/reference/objects/statsinfo",
-      "description": "Total time\n time: Time!",
+      "description": "Hits grouped depending on their status",
       "isDeprecated": false,
       "args": [
         {
@@ -44,7 +44,7 @@
       "typeString": "Boolean!",
       "name": "cache",
       "url": "/travelgatex/reference/scalars/boolean",
-      "description": "",
+      "description": "Responsible for the execution of the this stats. If TRUE then cache, else client",
       "isDeprecated": false,
       "args": null
     }
@@ -55,6 +55,7 @@
   "operator": "type",
   "typename": "OperationDetailed"
 }
+Stats information per operation
 ## GraphQL schema definition
 
 {{% graphql-schema-type %}}

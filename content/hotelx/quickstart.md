@@ -44,6 +44,8 @@ This query allows you to book a previously quoted option. In Query Variables mod
 </object>-->
 {{< graphiql query="query2 { admin{ products { edges{ node{ code }}}}}" divname="div_book" >}}
 
+{{< gist tgx-bot 533a8e1259e5245a4c3f590964ec506d >}}
+
 ### Cancel 
 
 This query allows you to perform a book cancellation. In Query Variables you should introduce all the necessary information of the book that you want to cancel:

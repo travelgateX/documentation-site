@@ -111,6 +111,16 @@
       "url": "/travelgatex/reference/objects/transactions"
     },
     {
+      "name": "StoredCard",
+      "description": "",
+      "url": "/travelgatex/reference/objects/storedcard"
+    },
+    {
+      "name": "PointOfSale",
+      "description": "",
+      "url": "/travelgatex/reference/objects/pointofsale"
+    },
+    {
       "name": "StatsFilterInput",
       "description": "Filters needed to do a search.\nUsers (List of users), Suppliers (List of suppliers), ServiceApis (List of service apis), From (Start date of search - YYYY-MM-DD HH:mm:ss), To (End date of search - YYYY-MM-DD HH:mm:ss)",
       "url": "/travelgatex/reference/inputobjects/statsfilterinput"

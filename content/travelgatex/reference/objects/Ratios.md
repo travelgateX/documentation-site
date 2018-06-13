@@ -7,7 +7,7 @@
       "typeString": "Int!",
       "name": "lookToQuote",
       "url": "/travelgatex/reference/scalars/int",
-      "description": "",
+      "description": "Searches needed to do a quote",
       "isDeprecated": false,
       "args": null
     },
@@ -15,7 +15,7 @@
       "typeString": "Int!",
       "name": "lookToBook",
       "url": "/travelgatex/reference/scalars/int",
-      "description": "",
+      "description": "Searches needed to do a booking",
       "isDeprecated": false,
       "args": null
     },
@@ -23,7 +23,7 @@
       "typeString": "Int!",
       "name": "quoteToBook",
       "url": "/travelgatex/reference/scalars/int",
-      "description": "",
+      "description": "Quotes needed to do a booking",
       "isDeprecated": false,
       "args": null
     }
@@ -40,7 +40,7 @@
   "operator": "type",
   "typename": "Ratios"
 }
-Details of look to quote and look to book.
+Ratios details
 ## GraphQL schema definition
 
 {{% graphql-schema-type %}}

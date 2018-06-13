@@ -32,7 +32,7 @@
   "operator": "type",
   "typename": "BusinessRules"
 }
-LList of business rules for filtering options based on your interests.
+List of business rules for filtering options based on your interests.
 ## GraphQL schema definition
 
 {{% graphql-schema-type %}}

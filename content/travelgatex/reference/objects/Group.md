@@ -57,8 +57,13 @@
       "url": "/travelgatex/reference/objects/groupdata"
     },
     {
-      "name": "AdminMutation",
+      "name": "PointOfSaleData",
       "description": "",
+      "url": "/travelgatex/reference/objects/pointofsaledata"
+    },
+    {
+      "name": "AdminMutation",
+      "description": "The admin query root of TravelgateX's for implementing GraphQL mutations.",
       "url": "/travelgatex/reference/objects/adminmutation"
     }
   ],

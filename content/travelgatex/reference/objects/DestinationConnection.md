@@ -23,7 +23,7 @@
       "typeString": "PageInfo!",
       "name": "pageInfo",
       "url": "/travelgatex/reference/objects/pageinfo",
-      "description": "",
+      "description": "Indicates info about page",
       "isDeprecated": false,
       "args": null
     }

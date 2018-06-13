@@ -7,14 +7,14 @@
       "typeString": "[String!]",
       "name": "boardCodes",
       "url": "/travelgatex/reference/scalars/string",
-      "description": "",
+      "description": "Indicates the board codes that you want filter.",
       "args": null
     },
     {
       "typeString": "ID!",
       "name": "access",
       "url": "/travelgatex/reference/scalars/id",
-      "description": "",
+      "description": "Indicates the access that you want use.",
       "args": null
     }
   ],

@@ -24,7 +24,7 @@
   "requireby": [
     {
       "name": "AdminQuery",
-      "description": "",
+      "description": "The admin query root of TravelgateX's GraphQL interface.",
       "url": "/travelgatex/reference/objects/adminquery"
     },
     {
