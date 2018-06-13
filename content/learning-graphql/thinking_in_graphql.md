@@ -49,6 +49,8 @@ A query has the following components:
 <li><strong>Selection set</strong>: After the variables have been defined, you can use the `{` brackets to start listing what objects you want to query to get the data you need. Each selection set starts with a `{` and ends with a `}`. You can nest (indent) these selection sets so it is easier to read a query. </li>
 <li><strong>Response</strong>: Once you have completed defining your mutation, you will receive a response in JSON format. This will be nested as well, so it is easier to read. Look for the field `Status` and make sure it has OK to confirm that the data has been added/updated/deleted.</li></ul>
 
-{{% alert theme="danger" %}}We have identified pagination as a topic we need to cover on this page as part of our learning resources. Check our Roadmap for updates on when we will be preparing this content. 
+{{% alert theme="danger" %}}We have identified pagination as a topic we need to cover on this page as part of our learning resources. Check our  <a href="https://github.com/orgs/travelgateX/projects/4"><strong>Roadmap</strong></a> for updates on when we will be preparing this content. 
 
 If you need any additional information for this page, or suggestions for how we can improve our documentation, send us an issue via our <a href="https://github.com/travelgateX/Issue-tracker"><strong>Issues Tracker</strong></a>.{{% /alert %}}
+
+
