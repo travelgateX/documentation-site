@@ -7,6 +7,9 @@ weight = 1
 alwaysopen = false
 +++
 
+{{< figure src="/images/grafico_quickstart_docs.png#center" alt=" Four steps to using our API" attr="" >}}
+
+
 ## Four steps to using our API
 
 If you're ready to start searching for a hotel, getting a quote and booking it right away, try out the TravelgateX API by following the steps below:
@@ -49,5 +52,3 @@ Although the API has been designed to be very intuitive and easy to read, we are
 ### Can't find your answer?
 
 Got any technical questions or need support from our team? [We’re here to help. Get in touch](https://xmltravelgate.atlassian.net/servicedesk/customer/portal/7) through Jira Service Desk using the username and password that has been sent to you together with the welcome pack. Let us know if you haven't received it, or can't find it, so we can send it to your email address again.
-
-
