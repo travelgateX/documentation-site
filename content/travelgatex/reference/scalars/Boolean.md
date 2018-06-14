@@ -6,39 +6,9 @@
   "deprecatedFields": null,
   "requireby": [
     {
-      "name": "AccessData",
-      "description": "",
-      "url": "/travelgatex/reference/objects/accessdata"
-    },
-    {
-      "name": "SupplierData",
-      "description": "",
-      "url": "/travelgatex/reference/objects/supplierdata"
-    },
-    {
-      "name": "Provider",
-      "description": "Temporary type to use only during SQL server's lifetime",
-      "url": "/travelgatex/reference/objects/provider"
-    },
-    {
-      "name": "PageInfo",
-      "description": "",
-      "url": "/travelgatex/reference/objects/pageinfo"
-    },
-    {
-      "name": "SupplierFilter",
-      "description": "",
-      "url": "/travelgatex/reference/inputobjects/supplierfilter"
-    },
-    {
-      "name": "ClientFilter",
-      "description": "",
-      "url": "/travelgatex/reference/inputobjects/clientfilter"
-    },
-    {
-      "name": "ClientData",
-      "description": "",
-      "url": "/travelgatex/reference/objects/clientdata"
+      "name": "AdminQuery",
+      "description": "The admin query root of TravelgateX's GraphQL interface.",
+      "url": "/travelgatex/reference/objects/adminquery"
     },
     {
       "name": "OrganizationData",
@@ -57,7 +27,7 @@
     },
     {
       "name": "Member",
-      "description": "",
+      "description": "You grant access to members which can be either:\nUsers: A developer, administrator or any other person from your Organization who interacts with the TravelgateX Platform. An email address can be used as the identity of a User.\nService Accounts: An application (Client) instead of an individual User. If you prefer, you can create as many Service Accounts as needed to represent different logical components of your application.",
       "url": "/travelgatex/reference/objects/member"
     },
     {
@@ -76,14 +46,34 @@
       "url": "/travelgatex/reference/objects/apidata"
     },
     {
-      "name": "HotelData",
-      "description": "Hotel data",
-      "url": "/travelgatex/reference/objects/hoteldata"
+      "name": "PageInfo",
+      "description": "",
+      "url": "/travelgatex/reference/objects/pageinfo"
     },
     {
-      "name": "DestinationData",
-      "description": "Information about destinantion",
-      "url": "/travelgatex/reference/objects/destinationdata"
+      "name": "AccessData",
+      "description": "",
+      "url": "/travelgatex/reference/objects/accessdata"
+    },
+    {
+      "name": "SupplierData",
+      "description": "",
+      "url": "/travelgatex/reference/objects/supplierdata"
+    },
+    {
+      "name": "Provider",
+      "description": "Temporary type to use only during SQL server's lifetime",
+      "url": "/travelgatex/reference/objects/provider"
+    },
+    {
+      "name": "ClientData",
+      "description": "",
+      "url": "/travelgatex/reference/objects/clientdata"
+    },
+    {
+      "name": "HotelXQuery",
+      "description": "",
+      "url": "/travelgatex/reference/objects/hotelxquery"
     },
     {
       "name": "HotelSettingsInput",
@@ -136,6 +126,21 @@
       "url": "/travelgatex/reference/objects/cancelpolicy"
     },
     {
+      "name": "MappeaQuery",
+      "description": "",
+      "url": "/travelgatex/reference/objects/mappeaquery"
+    },
+    {
+      "name": "PaymentXQuery",
+      "description": "",
+      "url": "/travelgatex/reference/objects/paymentxquery"
+    },
+    {
+      "name": "StatsQuery",
+      "description": "",
+      "url": "/travelgatex/reference/objects/statsquery"
+    },
+    {
       "name": "OperationDetailed",
       "description": "Stats information per operation",
       "url": "/travelgatex/reference/objects/operationdetailed"
@@ -146,19 +151,14 @@
       "url": "/travelgatex/reference/schema/mutation"
     },
     {
-      "name": "AccessInput",
-      "description": "Access input",
-      "url": "/travelgatex/reference/inputobjects/accessinput"
+      "name": "AdminMutation",
+      "description": "The admin query root of TravelgateX's for implementing GraphQL mutations.",
+      "url": "/travelgatex/reference/objects/adminmutation"
     },
     {
-      "name": "CreateClientInput",
+      "name": "HotelXMutation",
       "description": "",
-      "url": "/travelgatex/reference/inputobjects/createclientinput"
-    },
-    {
-      "name": "UpdateClientInput",
-      "description": "",
-      "url": "/travelgatex/reference/inputobjects/updateclientinput"
+      "url": "/travelgatex/reference/objects/hotelxmutation"
     },
     {
       "name": "DeltaPriceInput",
@@ -166,19 +166,54 @@
       "url": "/travelgatex/reference/inputobjects/deltapriceinput"
     },
     {
+      "name": "MappeaMutation",
+      "description": "",
+      "url": "/travelgatex/reference/objects/mappeamutation"
+    },
+    {
+      "name": "PaymentXMutation",
+      "description": "",
+      "url": "/travelgatex/reference/objects/paymentxmutation"
+    },
+    {
+      "name": "AccessInput",
+      "description": "Access input",
+      "url": "/travelgatex/reference/inputobjects/accessinput"
+    },
+    {
+      "name": "ClientFilter",
+      "description": "",
+      "url": "/travelgatex/reference/inputobjects/clientfilter"
+    },
+    {
+      "name": "CreateClientInput",
+      "description": "",
+      "url": "/travelgatex/reference/inputobjects/createclientinput"
+    },
+    {
+      "name": "SupplierFilter",
+      "description": "",
+      "url": "/travelgatex/reference/inputobjects/supplierfilter"
+    },
+    {
+      "name": "UpdateClientInput",
+      "description": "",
+      "url": "/travelgatex/reference/inputobjects/updateclientinput"
+    },
+    {
       "name": "SupplierGroup",
       "description": "group related to a supplier",
       "url": "/travelgatex/reference/objects/suppliergroup"
     },
     {
-      "name": "ConnectUser",
-      "description": "Data related to a connected user and its groups",
-      "url": "/travelgatex/reference/objects/connectuser"
+      "name": "DestinationData",
+      "description": "Information about destinantion",
+      "url": "/travelgatex/reference/objects/destinationdata"
     },
     {
-      "name": "ConnectUserGroup",
-      "description": "group related to a connect user",
-      "url": "/travelgatex/reference/objects/connectusergroup"
+      "name": "HotelData",
+      "description": "Hotel data",
+      "url": "/travelgatex/reference/objects/hoteldata"
     },
     {
       "name": "AccessConfigurationInput",
@@ -211,6 +246,16 @@
       "url": "/travelgatex/reference/inputobjects/idaccessconfigurationinput"
     },
     {
+      "name": "ConnectUser",
+      "description": "Data related to a connected user and its groups",
+      "url": "/travelgatex/reference/objects/connectuser"
+    },
+    {
+      "name": "ConnectUserGroup",
+      "description": "group related to a connect user",
+      "url": "/travelgatex/reference/objects/connectusergroup"
+    },
+    {
       "name": "MappeaAddOrganizationInput",
       "description": "# AddOrganization",
       "url": "/travelgatex/reference/inputobjects/mappeaaddorganizationinput"
@@ -219,6 +264,11 @@
       "name": "MappeaEditOrganizationInput",
       "description": "# EditOrganization",
       "url": "/travelgatex/reference/inputobjects/mappeaeditorganizationinput"
+    },
+    {
+      "name": "fake__options",
+      "description": "",
+      "url": "/travelgatex/reference/inputobjects/fake__options"
     }
   ],
   "enumValues": null,

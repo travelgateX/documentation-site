@@ -70,14 +70,14 @@
   "deprecatedFields": null,
   "requireby": [
     {
-      "name": "Location",
-      "description": "Indicates the location of the hotel",
-      "url": "/travelgatex/reference/objects/location"
-    },
-    {
       "name": "Destination",
       "description": "Destination Type",
       "url": "/travelgatex/reference/objects/destination"
+    },
+    {
+      "name": "Location",
+      "description": "Indicates the location of the hotel",
+      "url": "/travelgatex/reference/objects/location"
     }
   ],
   "enumValues": null,

@@ -39,7 +39,7 @@
       "typeString": "APIConnection",
       "name": "apis",
       "url": "/travelgatex/reference/objects/apiconnection",
-      "description": "",
+      "description": "which API have asigned this resource?",
       "isDeprecated": false,
       "args": [
         {
@@ -78,7 +78,7 @@
       "typeString": "RoleConnection",
       "name": "roles",
       "url": "/travelgatex/reference/objects/roleconnection",
-      "description": "",
+      "description": "which roles are asigned or are possibles in this resource?",
       "isDeprecated": false,
       "args": [
         {
@@ -124,7 +124,7 @@
   "requireby": [
     {
       "name": "Resource",
-      "description": "",
+      "description": "Resources are those used in APIs and Products.",
       "url": "/travelgatex/reference/objects/resource"
     }
   ],

@@ -23,11 +23,6 @@
   "deprecatedFields": null,
   "requireby": [
     {
-      "name": "AdminQuery",
-      "description": "The admin query root of TravelgateX's GraphQL interface.",
-      "url": "/travelgatex/reference/objects/adminquery"
-    },
-    {
       "name": "OrganizationData",
       "description": "",
       "url": "/travelgatex/reference/objects/organizationdata"

@@ -6,44 +6,14 @@
   "deprecatedFields": null,
   "requireby": [
     {
-      "name": "SupplierData",
-      "description": "",
-      "url": "/travelgatex/reference/objects/supplierdata"
-    },
-    {
-      "name": "SupplierFilter",
-      "description": "",
-      "url": "/travelgatex/reference/inputobjects/supplierfilter"
-    },
-    {
-      "name": "ServiceOperation",
-      "description": "Information related to an API operation",
-      "url": "/travelgatex/reference/objects/serviceoperation"
-    },
-    {
       "name": "GroupData",
       "description": "",
       "url": "/travelgatex/reference/objects/groupdata"
     },
     {
-      "name": "RelayInput",
+      "name": "SupplierData",
       "description": "",
-      "url": "/travelgatex/reference/inputobjects/relayinput"
-    },
-    {
-      "name": "HotelXHotelListInput",
-      "description": "",
-      "url": "/travelgatex/reference/inputobjects/hotelxhotellistinput"
-    },
-    {
-      "name": "HotelXDestinationListInput",
-      "description": "",
-      "url": "/travelgatex/reference/inputobjects/hotelxdestinationlistinput"
-    },
-    {
-      "name": "HotelXDestinationSearcherInput",
-      "description": "",
-      "url": "/travelgatex/reference/inputobjects/hotelxdestinationsearcherinput"
+      "url": "/travelgatex/reference/objects/supplierdata"
     },
     {
       "name": "PaxInput",
@@ -199,6 +169,46 @@
       "name": "DefaultSettingsBusinessRulesInput",
       "description": "Input delta price, indicates the price variation permitted by the client before failing the booking.",
       "url": "/travelgatex/reference/inputobjects/defaultsettingsbusinessrulesinput"
+    },
+    {
+      "name": "RelayInput",
+      "description": "",
+      "url": "/travelgatex/reference/inputobjects/relayinput"
+    },
+    {
+      "name": "SupplierFilter",
+      "description": "",
+      "url": "/travelgatex/reference/inputobjects/supplierfilter"
+    },
+    {
+      "name": "ServiceOperation",
+      "description": "Information related to an API operation",
+      "url": "/travelgatex/reference/objects/serviceoperation"
+    },
+    {
+      "name": "HotelXDestinationListInput",
+      "description": "",
+      "url": "/travelgatex/reference/inputobjects/hotelxdestinationlistinput"
+    },
+    {
+      "name": "HotelXDestinationSearcherInput",
+      "description": "",
+      "url": "/travelgatex/reference/inputobjects/hotelxdestinationsearcherinput"
+    },
+    {
+      "name": "HotelXHotelListInput",
+      "description": "",
+      "url": "/travelgatex/reference/inputobjects/hotelxhotellistinput"
+    },
+    {
+      "name": "fake__color",
+      "description": "",
+      "url": "/travelgatex/reference/inputobjects/fake__color"
+    },
+    {
+      "name": "fake__options",
+      "description": "",
+      "url": "/travelgatex/reference/inputobjects/fake__options"
     }
   ],
   "enumValues": null,

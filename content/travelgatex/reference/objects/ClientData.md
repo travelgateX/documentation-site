@@ -32,7 +32,7 @@
   "requireby": [
     {
       "name": "Client",
-      "description": "",
+      "description": "Client identifies who is making the request and holds the configuration assigned to it.",
       "url": "/travelgatex/reference/objects/client"
     }
   ],

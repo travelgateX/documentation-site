@@ -57,11 +57,6 @@
       "url": "/travelgatex/reference/objects/supplieredge"
     },
     {
-      "name": "AdminMutation",
-      "description": "The admin query root of TravelgateX's for implementing GraphQL mutations.",
-      "url": "/travelgatex/reference/objects/adminmutation"
-    },
-    {
       "name": "SupplierDetected",
       "description": "",
       "url": "/travelgatex/reference/objects/supplierdetected"
@@ -71,6 +66,7 @@
   "operator": "type",
   "typename": "Supplier"
 }
+A Supplier is a Partner who is connected to TravelgateX on the supply side in order to sell their product to connected Buyers
 ## GraphQL schema definition
 
 {{% graphql-schema-type %}}

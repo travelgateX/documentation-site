@@ -60,17 +60,13 @@
       "name": "StatsData",
       "description": "",
       "url": "/travelgatex/reference/objects/statsdata"
-    },
-    {
-      "name": "AdminMutation",
-      "description": "The admin query root of TravelgateX's for implementing GraphQL mutations.",
-      "url": "/travelgatex/reference/objects/adminmutation"
     }
   ],
   "enumValues": null,
   "operator": "type",
   "typename": "Access"
 }
+An Access is a set of credentials and configuration in order to access the system of a Supplier.
 ## GraphQL schema definition
 
 {{% graphql-schema-type %}}

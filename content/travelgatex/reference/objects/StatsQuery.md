@@ -4,6 +4,14 @@
   "weight": 1,
   "fields": [
     {
+      "typeString": "Boolean",
+      "name": "a",
+      "url": "/travelgatex/reference/scalars/boolean",
+      "description": "",
+      "isDeprecated": false,
+      "args": null
+    },
+    {
       "typeString": "StatsConnection!",
       "name": "report",
       "url": "/travelgatex/reference/objects/statsconnection",

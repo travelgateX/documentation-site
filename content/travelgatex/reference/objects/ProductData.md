@@ -31,7 +31,7 @@
       "typeString": "APIConnection",
       "name": "apis",
       "url": "/travelgatex/reference/objects/apiconnection",
-      "description": "",
+      "description": "A Product has many APIs",
       "isDeprecated": false,
       "args": [
         {
@@ -71,7 +71,7 @@
   "requireby": [
     {
       "name": "Product",
-      "description": "",
+      "description": "An APIs collection.",
       "url": "/travelgatex/reference/objects/product"
     }
   ],

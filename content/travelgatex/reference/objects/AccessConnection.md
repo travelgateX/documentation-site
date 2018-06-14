@@ -23,16 +23,6 @@
   "deprecatedFields": null,
   "requireby": [
     {
-      "name": "AdminQuery",
-      "description": "The admin query root of TravelgateX's GraphQL interface.",
-      "url": "/travelgatex/reference/objects/adminquery"
-    },
-    {
-      "name": "SupplierData",
-      "description": "",
-      "url": "/travelgatex/reference/objects/supplierdata"
-    },
-    {
       "name": "OrganizationData",
       "description": "",
       "url": "/travelgatex/reference/objects/organizationdata"
@@ -46,6 +36,11 @@
       "name": "GroupData",
       "description": "",
       "url": "/travelgatex/reference/objects/groupdata"
+    },
+    {
+      "name": "SupplierData",
+      "description": "",
+      "url": "/travelgatex/reference/objects/supplierdata"
     }
   ],
   "enumValues": null,

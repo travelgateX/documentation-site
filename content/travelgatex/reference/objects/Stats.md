@@ -15,7 +15,7 @@
       "typeString": "StatsData",
       "name": "statsData",
       "url": "/travelgatex/reference/objects/statsdata",
-      "description": "",
+      "description": "The data returned by a `Stats` query.",
       "isDeprecated": false,
       "args": null
     },

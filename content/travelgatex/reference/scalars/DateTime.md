@@ -6,9 +6,9 @@
   "deprecatedFields": null,
   "requireby": [
     {
-      "name": "Access",
-      "description": "",
-      "url": "/travelgatex/reference/objects/access"
+      "name": "Organization",
+      "description": "Organization node is the root node in the hierarachy, the folders are the children of the organization and the products are the children of the folders.",
+      "url": "/travelgatex/reference/objects/organization"
     },
     {
       "name": "Node",
@@ -16,38 +16,23 @@
       "url": "/travelgatex/reference/interfaces/node"
     },
     {
-      "name": "Supplier",
-      "description": "",
-      "url": "/travelgatex/reference/objects/supplier"
-    },
-    {
-      "name": "Client",
-      "description": "",
-      "url": "/travelgatex/reference/objects/client"
-    },
-    {
-      "name": "Organization",
-      "description": "",
-      "url": "/travelgatex/reference/objects/organization"
-    },
-    {
       "name": "Group",
-      "description": "",
+      "description": "Groups are organized hierarchically.",
       "url": "/travelgatex/reference/objects/group"
     },
     {
       "name": "Member",
-      "description": "",
+      "description": "You grant access to members which can be either:\nUsers: A developer, administrator or any other person from your Organization who interacts with the TravelgateX Platform. An email address can be used as the identity of a User.\nService Accounts: An application (Client) instead of an individual User. If you prefer, you can create as many Service Accounts as needed to represent different logical components of your application.",
       "url": "/travelgatex/reference/objects/member"
     },
     {
       "name": "Role",
-      "description": "",
+      "description": "Permissions determine what operations are allowed on a resource",
       "url": "/travelgatex/reference/objects/role"
     },
     {
       "name": "Resource",
-      "description": "",
+      "description": "Resources are those used in APIs and Products.",
       "url": "/travelgatex/reference/objects/resource"
     },
     {
@@ -61,39 +46,24 @@
       "url": "/travelgatex/reference/objects/operation"
     },
     {
+      "name": "Access",
+      "description": "An Access is a set of credentials and configuration in order to access the system of a Supplier.",
+      "url": "/travelgatex/reference/objects/access"
+    },
+    {
+      "name": "Supplier",
+      "description": "A Supplier is a Partner who is connected to TravelgateX on the supply side in order to sell their product to connected Buyers",
+      "url": "/travelgatex/reference/objects/supplier"
+    },
+    {
+      "name": "Client",
+      "description": "Client identifies who is making the request and holds the configuration assigned to it.",
+      "url": "/travelgatex/reference/objects/client"
+    },
+    {
       "name": "Product",
-      "description": "",
+      "description": "An APIs collection.",
       "url": "/travelgatex/reference/objects/product"
-    },
-    {
-      "name": "Board",
-      "description": "Board type.",
-      "url": "/travelgatex/reference/objects/board"
-    },
-    {
-      "name": "Category",
-      "description": "Category Type",
-      "url": "/travelgatex/reference/objects/category"
-    },
-    {
-      "name": "RoomStatic",
-      "description": "Room Type",
-      "url": "/travelgatex/reference/objects/roomstatic"
-    },
-    {
-      "name": "Hotel",
-      "description": "Hotel Type",
-      "url": "/travelgatex/reference/objects/hotel"
-    },
-    {
-      "name": "Media",
-      "description": "Contains media information.",
-      "url": "/travelgatex/reference/objects/media"
-    },
-    {
-      "name": "Destination",
-      "description": "Destination Type",
-      "url": "/travelgatex/reference/objects/destination"
     },
     {
       "name": "Stat",
@@ -144,6 +114,36 @@
       "name": "Context",
       "description": "Context type. Currently, only Code is necessary.",
       "url": "/travelgatex/reference/objects/context"
+    },
+    {
+      "name": "Board",
+      "description": "Board type.",
+      "url": "/travelgatex/reference/objects/board"
+    },
+    {
+      "name": "Category",
+      "description": "Category Type",
+      "url": "/travelgatex/reference/objects/category"
+    },
+    {
+      "name": "Destination",
+      "description": "Destination Type",
+      "url": "/travelgatex/reference/objects/destination"
+    },
+    {
+      "name": "Media",
+      "description": "Contains media information.",
+      "url": "/travelgatex/reference/objects/media"
+    },
+    {
+      "name": "Hotel",
+      "description": "Hotel Type",
+      "url": "/travelgatex/reference/objects/hotel"
+    },
+    {
+      "name": "RoomStatic",
+      "description": "Room Type",
+      "url": "/travelgatex/reference/objects/roomstatic"
     }
   ],
   "enumValues": null,
