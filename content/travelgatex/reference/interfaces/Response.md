@@ -7,7 +7,7 @@
       "typeString": "StatsRequest",
       "name": "stats",
       "url": "/travelgatex/reference/objects/statsrequest",
-      "description": "Application stats in string format",
+      "description": "Application stats",
       "isDeprecated": false,
       "args": [
         {

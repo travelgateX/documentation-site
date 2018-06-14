@@ -47,7 +47,7 @@
       "typeString": "GroupConnection",
       "name": "children",
       "url": "/travelgatex/reference/objects/groupconnection",
-      "description": "",
+      "description": "Only responses folders.(non-hierarchically)",
       "isDeprecated": false,
       "args": [
         {
@@ -147,7 +147,7 @@
       "typeString": "APIConnection",
       "name": "apis",
       "url": "/travelgatex/reference/objects/apiconnection",
-      "description": "",
+      "description": "APIs assigned to this group. Products have APIs.",
       "isDeprecated": false,
       "args": [
         {
@@ -186,7 +186,7 @@
       "typeString": "ProductConnection",
       "name": "products",
       "url": "/travelgatex/reference/objects/productconnection",
-      "description": "",
+      "description": "Products asign to a organization",
       "isDeprecated": false,
       "args": [
         {
@@ -225,7 +225,7 @@
       "typeString": "MemberConnection",
       "name": "allMembers",
       "url": "/travelgatex/reference/objects/memberconnection",
-      "description": "",
+      "description": "Response all members in this group's childrens (hierarchically)",
       "isDeprecated": false,
       "args": [
         {
@@ -270,7 +270,7 @@
       "typeString": "AccessConnection",
       "name": "accesses",
       "url": "/travelgatex/reference/objects/accessconnection",
-      "description": "",
+      "description": "Access resources in a organization",
       "isDeprecated": false,
       "args": [
         {
@@ -309,7 +309,7 @@
       "typeString": "SupplierConnection",
       "name": "suppliers",
       "url": "/travelgatex/reference/objects/supplierconnection",
-      "description": "",
+      "description": "Supplier resources in a organization",
       "isDeprecated": false,
       "args": [
         {
@@ -354,7 +354,7 @@
       "typeString": "ClientConnection",
       "name": "clients",
       "url": "/travelgatex/reference/objects/clientconnection",
-      "description": "",
+      "description": "Clients resources in a organization",
       "isDeprecated": false,
       "args": [
         {
@@ -406,7 +406,7 @@
   "requireby": [
     {
       "name": "Organization",
-      "description": "",
+      "description": "Organization node is the root node in the hierarachy, the folders are the children of the organization and the products are the children of the folders.",
       "url": "/travelgatex/reference/objects/organization"
     }
   ],

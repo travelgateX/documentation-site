@@ -5,7 +5,7 @@
   "fields": [
     {
       "typeString": "ID!",
-      "name": "group",
+      "name": "code",
       "url": "/travelgatex/reference/scalars/id",
       "description": "",
       "args": null

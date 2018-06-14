@@ -55,52 +55,7 @@
       "typeString": "GroupConnection",
       "name": "children",
       "url": "/travelgatex/reference/objects/groupconnection",
-      "description": "",
-      "isDeprecated": false,
-      "args": [
-        {
-          "typeString": "[ID!]",
-          "name": "codes",
-          "url": "/travelgatex/reference/scalars/id",
-          "description": ""
-        },
-        {
-          "typeString": "GroupType",
-          "name": "type",
-          "url": "/travelgatex/reference/enums/grouptype",
-          "description": ""
-        },
-        {
-          "typeString": "Int",
-          "name": "first",
-          "url": "/travelgatex/reference/scalars/int",
-          "description": ""
-        },
-        {
-          "typeString": "Int",
-          "name": "last",
-          "url": "/travelgatex/reference/scalars/int",
-          "description": ""
-        },
-        {
-          "typeString": "String",
-          "name": "before",
-          "url": "/travelgatex/reference/scalars/string",
-          "description": ""
-        },
-        {
-          "typeString": "String",
-          "name": "after",
-          "url": "/travelgatex/reference/scalars/string",
-          "description": ""
-        }
-      ]
-    },
-    {
-      "typeString": "GroupConnection",
-      "name": "parents",
-      "url": "/travelgatex/reference/objects/groupconnection",
-      "description": "",
+      "description": "Only responses children.(non-hierarchically)",
       "isDeprecated": false,
       "args": [
         {
@@ -177,7 +132,7 @@
       "typeString": "MemberConnection",
       "name": "members",
       "url": "/travelgatex/reference/objects/memberconnection",
-      "description": "",
+      "description": "Only responses members in this group",
       "isDeprecated": false,
       "args": [
         {
@@ -222,7 +177,7 @@
       "typeString": "APIConnection",
       "name": "apis",
       "url": "/travelgatex/reference/objects/apiconnection",
-      "description": "",
+      "description": "APIs assigned to this group. Products have APIs.",
       "isDeprecated": false,
       "args": [
         {
@@ -261,7 +216,7 @@
       "typeString": "GroupConnection",
       "name": "managedGroups",
       "url": "/travelgatex/reference/objects/groupconnection",
-      "description": "",
+      "description": "Responses all groups in its group's childrens (hierarchically),",
       "isDeprecated": false,
       "args": [
         {
@@ -306,7 +261,7 @@
       "typeString": "MemberConnection",
       "name": "allMembers",
       "url": "/travelgatex/reference/objects/memberconnection",
-      "description": "",
+      "description": "Response all members in this group's childrens (hierarchically),",
       "isDeprecated": false,
       "args": [
         {
@@ -351,7 +306,7 @@
       "typeString": "AccessConnection",
       "name": "accesses",
       "url": "/travelgatex/reference/objects/accessconnection",
-      "description": "",
+      "description": "Access resources in a group",
       "isDeprecated": false,
       "args": [
         {
@@ -390,7 +345,7 @@
       "typeString": "SupplierConnection",
       "name": "suppliers",
       "url": "/travelgatex/reference/objects/supplierconnection",
-      "description": "",
+      "description": "Supplier resources in a group",
       "isDeprecated": false,
       "args": [
         {
@@ -435,7 +390,7 @@
       "typeString": "ClientConnection",
       "name": "clients",
       "url": "/travelgatex/reference/objects/clientconnection",
-      "description": "",
+      "description": "Clients resources in a group",
       "isDeprecated": false,
       "args": [
         {
@@ -486,7 +441,7 @@
       "typeString": "RoleConnection",
       "name": "roles",
       "url": "/travelgatex/reference/objects/roleconnection",
-      "description": "",
+      "description": "You can grant roles to members, which define the roles catalog for a group.",
       "isDeprecated": false,
       "args": [
         {
@@ -532,7 +487,7 @@
   "requireby": [
     {
       "name": "Group",
-      "description": "",
+      "description": "Groups are organized hierarchically.",
       "url": "/travelgatex/reference/objects/group"
     }
   ],

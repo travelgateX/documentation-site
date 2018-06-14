@@ -34,6 +34,11 @@
       "name": "HotelXQuery",
       "description": "",
       "url": "/travelgatex/reference/objects/hotelxquery"
+    },
+    {
+      "name": "PaymentXQuery",
+      "description": "",
+      "url": "/travelgatex/reference/objects/paymentxquery"
     }
   ],
   "enumValues": null,

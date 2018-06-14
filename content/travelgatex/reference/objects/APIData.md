@@ -5,17 +5,17 @@
   "fields": [
     {
       "typeString": "ID!",
-      "name": "id",
+      "name": "code",
       "url": "/travelgatex/reference/scalars/id",
-      "description": "",
+      "description": "API Code",
       "isDeprecated": false,
       "args": null
     },
     {
       "typeString": "ID!",
-      "name": "code",
+      "name": "id",
       "url": "/travelgatex/reference/scalars/id",
-      "description": "",
+      "description": "API ID",
       "isDeprecated": false,
       "args": null
     },
@@ -23,7 +23,7 @@
       "typeString": "Boolean!",
       "name": "isEditable",
       "url": "/travelgatex/reference/scalars/boolean",
-      "description": "",
+      "description": "Is API Editable or not.",
       "isDeprecated": false,
       "args": null
     },
@@ -31,7 +31,7 @@
       "typeString": "String",
       "name": "label",
       "url": "/travelgatex/reference/scalars/string",
-      "description": "",
+      "description": "API label",
       "isDeprecated": false,
       "args": null
     },
@@ -39,7 +39,7 @@
       "typeString": "GroupConnection",
       "name": "groups",
       "url": "/travelgatex/reference/objects/groupconnection",
-      "description": "",
+      "description": "which groups are asigned this API?",
       "isDeprecated": false,
       "args": [
         {
@@ -84,7 +84,7 @@
       "typeString": "ResourceConnection",
       "name": "resources",
       "url": "/travelgatex/reference/objects/resourceconnection",
-      "description": "",
+      "description": "which resources are asigned this API?",
       "isDeprecated": false,
       "args": [
         {
@@ -123,7 +123,7 @@
       "typeString": "OperationConnection",
       "name": "operations",
       "url": "/travelgatex/reference/objects/operationconnection",
-      "description": "",
+      "description": "which operations are asigned this API?",
       "isDeprecated": false,
       "args": [
         {

@@ -23,11 +23,6 @@
   "deprecatedFields": null,
   "requireby": [
     {
-      "name": "AdminQuery",
-      "description": "",
-      "url": "/travelgatex/reference/objects/adminquery"
-    },
-    {
       "name": "OrganizationData",
       "description": "",
       "url": "/travelgatex/reference/objects/organizationdata"

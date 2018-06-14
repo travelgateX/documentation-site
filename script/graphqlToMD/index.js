@@ -5,7 +5,13 @@ const fs = require("fs");
 const fsex = require("fs.extra");
 
 function init() {
-  var promises = [];
+  fs.readFile(
+    __dirname + '/../../../graphql-schema2doc/src/md-data.json',
+    (err, data) => {
+      if (err) throw err;
+      config.mdData = JSON.parse(data);
+    }
+  );
   var removeDir = new Promise((resolve, reject) =>
     fsex.rmrf(config.LOCATION, function(err) {
       if (err) {

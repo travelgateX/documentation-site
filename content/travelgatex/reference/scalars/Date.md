@@ -44,6 +44,16 @@
       "name": "BookingHotel",
       "description": "",
       "url": "/travelgatex/reference/objects/bookinghotel"
+    },
+    {
+      "name": "PaymentXBookingInfo",
+      "description": "",
+      "url": "/travelgatex/reference/objects/paymentxbookinginfo"
+    },
+    {
+      "name": "PaymentXBookingInfoInput",
+      "description": "",
+      "url": "/travelgatex/reference/inputobjects/paymentxbookinginfoinput"
     }
   ],
   "enumValues": null,

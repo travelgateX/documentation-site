@@ -12,14 +12,6 @@
       "args": null
     },
     {
-      "typeString": "[Error!]",
-      "name": "error",
-      "url": "/travelgatex/reference/objects/error",
-      "description": "",
-      "isDeprecated": false,
-      "args": null
-    },
-    {
       "typeString": "ResourceData",
       "name": "resourceData",
       "url": "/travelgatex/reference/objects/resourcedata",
@@ -28,10 +20,18 @@
       "args": null
     },
     {
+      "typeString": "[Error!]",
+      "name": "error",
+      "url": "/travelgatex/reference/objects/error",
+      "description": "Errors that abort services",
+      "isDeprecated": false,
+      "args": null
+    },
+    {
       "typeString": "DateTime!",
       "name": "createdAt",
       "url": "/travelgatex/reference/scalars/datetime",
-      "description": "",
+      "description": "Date created",
       "isDeprecated": false,
       "args": null
     },
@@ -39,7 +39,7 @@
       "typeString": "DateTime!",
       "name": "updatedAt",
       "url": "/travelgatex/reference/scalars/datetime",
-      "description": "",
+      "description": "Date updated",
       "isDeprecated": false,
       "args": null
     }
@@ -56,6 +56,7 @@
   "operator": "type",
   "typename": "Resource"
 }
+Resources are those used in APIs and Products.
 ## GraphQL schema definition
 
 {{% graphql-schema-type %}}

@@ -23,7 +23,7 @@
       "typeString": "[Error!]",
       "name": "error",
       "url": "/travelgatex/reference/objects/error",
-      "description": "",
+      "description": "Errors that abort services",
       "isDeprecated": false,
       "args": null
     },
@@ -31,7 +31,7 @@
       "typeString": "DateTime!",
       "name": "createdAt",
       "url": "/travelgatex/reference/scalars/datetime",
-      "description": "",
+      "description": "Date created",
       "isDeprecated": false,
       "args": null
     },
@@ -39,7 +39,7 @@
       "typeString": "DateTime!",
       "name": "updatedAt",
       "url": "/travelgatex/reference/scalars/datetime",
-      "description": "",
+      "description": "Date updated",
       "isDeprecated": false,
       "args": null
     }
@@ -53,7 +53,7 @@
     },
     {
       "name": "AdminMutation",
-      "description": "",
+      "description": "The admin query root of TravelgateX's for implementing GraphQL mutations.",
       "url": "/travelgatex/reference/objects/adminmutation"
     }
   ],
@@ -61,6 +61,7 @@
   "operator": "type",
   "typename": "Organization"
 }
+Organization node is the root node in the hierarachy, the folders are the children of the organization and the products are the children of the folders.
 ## GraphQL schema definition
 
 {{% graphql-schema-type %}}

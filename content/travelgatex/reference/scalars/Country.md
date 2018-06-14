@@ -6,11 +6,6 @@
   "deprecatedFields": null,
   "requireby": [
     {
-      "name": "Location",
-      "description": "Indicates the location of the hotel",
-      "url": "/travelgatex/reference/objects/location"
-    },
-    {
       "name": "HotelCriteriaSearchInput",
       "description": "Search criteria contains destination, travel dates and the number of pax in each room.\nYou must preload the other fields in our system by complete the fields absents.",
       "url": "/travelgatex/reference/inputobjects/hotelcriteriasearchinput"
@@ -29,6 +24,11 @@
       "name": "DefaultSettingsInput",
       "description": "",
       "url": "/travelgatex/reference/inputobjects/defaultsettingsinput"
+    },
+    {
+      "name": "Location",
+      "description": "Indicates the location of the hotel",
+      "url": "/travelgatex/reference/objects/location"
     }
   ],
   "enumValues": null,
