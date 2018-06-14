@@ -29,5 +29,5 @@ GraphQL is a perfect fit for all of our application needs:
 >"GraphQL allows us to think of our APIs as a whole, giving us a coherence across all of our products and services, which are accessible from one single endpoint. It is the ideal showcase for all of our innovative API products."
 ><cite>Oscar Perez, CTO</cite>
 
-{{% alert theme="info" %}}Join us on [Slack](https://slack.travelgatex.com/) to talk with us about learning to use GraphQL and any questions you might have, or skills you would like to share with our community. You can also send us a [Jira service desk request](https://xmltravelgate.atlassian.net/servicedesk/customer/portal/7). If you would like any new features or more information in our Learning GraphQL documentation, send us an [issues request](https://github.com/travelgateX/Issue-tracker).{% /alert %}}
+{{% alert theme="info" %}}Join us on [Slack](https://slack.travelgatex.com/) to talk with us about learning to use GraphQL and any questions you might have, or skills you would like to share with our community. You can also send us a [Jira service desk request](https://xmltravelgate.atlassian.net/servicedesk/customer/portal/7). If you would like any new features or more information in our Learning GraphQL documentation, send us an [issues request](https://github.com/travelgateX/Issue-tracker).{{% /alert %}}
 

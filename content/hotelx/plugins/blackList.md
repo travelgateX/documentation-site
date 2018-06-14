@@ -1,19 +1,22 @@
 +++
 title = "Blacklist"
 pagetitle = "HotelX Blacklist"
-description = "hotel codes blacklist"
+description = "Hotel codes blacklist: filter out specific hotels from the search query."
 icon = "fa-sitemap"
 weight = 2
 alwaysopen = false
 +++
 
-The blacklist are used to ignorer hotel code when we make a search. the are 2 types of blacklist, you can filter hotel code by specific access or by specific provider.
+The blacklist plugin is used to ignore hotel code(s) when we a search query is executed. There are 2 types of blacklists:
 
-In order to load your blacklist you just need to follow the instructions below:
+- Filter hotel code of a specific `Access`
+- Filter hotel codes of a specific `Supplier`
 
-## Access blacklist
+Loading a blacklist is as easy as following the steps below:
 
-Blacklist is applied for specific access
+## `Access` Blacklist
+
+Blacklist is applied for specific `Access`
 
 ### File Format
 
@@ -21,17 +24,17 @@ The file should be in the below format:
 
 * **Encoding**: UTF-8
 
-* **File Name**: access\_blacklist.csv
+* **File Name**: `access\_blacklist.csv`
 
 * **Header Row**: Client, Code, Context, Values
 
-    * Client: The client that you want to apply the blacklist, if it is empty, it will apply to all clients in the same group.
+    * Client: The `Client` that you want to apply the blacklist to, if it is empty, it will apply to all `Clients` of the same `Group`
 
-    * Code: The access code
+    * Code: The `Access` code
 
-    * Context: The context of hotels codes
+    * Context: The `Context` of the hotels codes
 
-    * Values: Contain the list of hotel codes, separated by ";"
+    * Values: List of hotel codes, separated by ";"
 
 * **Delimiter**:  Comma (“,”)
 
@@ -41,7 +44,7 @@ The file should be in the below format:
 
 **Name**: access\_blacklist.csv
 
-**Data**:
+**Sample Data**:
 
 ```csv
 Client,Code,Context,Values
@@ -50,7 +53,7 @@ client2,access2,context2,a;b;c
 ,access3,context1,a;b;c;d;e
 ```
 
-## Supplier blacklist
+## `Supplier` Blacklist
 
 Blacklist is applied for specific provider
 
@@ -79,7 +82,7 @@ The file should be in the below format:
 
 **Name**: supplier\_blacklist.csv
 
-**Data**:
+**Sample Data**:
 
 ```csv
 Client,Code,Context,Values

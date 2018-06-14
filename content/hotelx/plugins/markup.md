@@ -1,7 +1,7 @@
 +++
 title = "Markup"
 pagetitle = "Markup"
-description = "Markup plugins"
+description = "Mark up or down the price coming from the Supplier based on different criteria."
 icon = "fa-money"
 weight = 3
 alwaysopen = false

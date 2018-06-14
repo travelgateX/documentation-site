@@ -1,10 +1,10 @@
 +++
 title = "Development"
 pagetitle = "Create your own plugin"
-description = "Develop your own plugins"
+description = "Learn how to develop your own plugins and addd your magic to the API."
 icon = "fa-wrench"
 weight = 6
 alwaysopen = false
 +++
 
-On this page you will learn how to develop your own [HotelX](/hotelx/) _plugin_.
+On this page you will learn how to develop your own [HotelX](/hotelx/) _Plugin_.

@@ -1,7 +1,7 @@
 +++
 title = "Net Price"
 pagetitle = "Net Price"
-description = ""
+description = "Convert Gross Pricess into Net Prices."
 icon = "fa-exchange"
 weight = 4
 alwaysopen = false

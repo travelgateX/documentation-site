@@ -1,7 +1,7 @@
 +++
 title = "Aggregation"
 pagetitle = "Aggregation"
-description = "Aggregation plugins"
+description = "Aggregate different Suppliers response based on different criteria."
 icon = "fa-compress"
 weight = 3
 alwaysopen = false

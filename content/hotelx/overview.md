@@ -1,16 +1,15 @@
 +++
 title = "Overview"
-pagetitle = "HotelX Intro"
-description = "HotelX Information"
+pagetitle = "HotelX Overview"
+description = "HotelX Overview"
 icon = "fa-info-circle"
 weight = 1
 alwaysopen = false
 +++
 
-The HotelX API is a powerful travel aggregation solution that will speed up your travel websites and apps and expand your catalogue of hotel booking services.
+The HotelX API is a powerful accomodation aggregation solution that will speed up your travel websites and apps and expand your catalogue of hotel booking services.
 
 Using HotelX, you can improve your hotel search response times and their accuracy by customizing aggregated responses based on your preferred criteria.   
- 
 The below map shows our architecture and the average impact on response rates caused by each layer.
 
 {{< figure src="/images/connectx_diagram.png#center" alt="High Level HotelX Architecture" attr="" >}}
@@ -43,7 +42,7 @@ HotelX allows you to add Plugins to our API.
 There are a few points in the request lifetime where anyone can [develop a plugin](https://docs.travelgatex.com/hotelx/plugins/). A plugin receives the request or response as an input and outputs the changed request or response. 
 
 {{% alert theme="info" %}}Plugins are a core package in the [Go Programming language](https://golang.org/). 
-You can learn more about how to use plugins [here](https://golang.org/pkg/plugin/).{% /alert %}}
+You can learn more about how to use plugins [here](https://golang.org/pkg/plugin/).{{% /alert %}}
 
 ### Transformation Layer
 

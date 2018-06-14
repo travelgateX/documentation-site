@@ -1,6 +1,6 @@
 +++
 title = "Tools"
-pagetitle = ""
+pagetitle = "GraphQL tools"
 description = ""
 weight = 5
 alwaysopen = false
@@ -45,12 +45,12 @@ Generate beaultiful static documentation sites directly from schema or introspec
 
 Build, create and play with queries, it's fun!
 
-* [GraphQL Playground](https://github.com/graphcool/graphql-playground): favorite online client
-* [Insomnia](https://insomnia.rest/)
+* [GraphQL Playground](https://github.com/graphcool/graphql-playground): our favorite online client
+* [Insomnia](https://insomnia.rest/): just like [Postman](https://www.getpostman.com/), but GraphQL ready
 * [GraphiQL](https://github.com/graphql/graphiql): the original
 
 ### Big List
 
-Here's even more tools, resources, etc.
+Here's a list of even more tools, resources, etc.
 
 * [Awesome GraphQL](https://github.com/chentsulin/awesome-graphql)
