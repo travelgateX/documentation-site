@@ -13,11 +13,9 @@ home = [ "HTML", "RSS", "JSON"]
 
 
 [blackfriday]
-  plainIDAnchors = true
-  hrefTargetBlank = true
-  nofollowLinks = true
-  plainIDAnchors = true
-
+plainIDAnchors = true
+hrefTargetBlank = true
+nofollowLinks = true
 
 [[menu.shortcuts]]
 pre = "<h3>More</h3>"
@@ -93,12 +91,12 @@ discourseUrl = "http://community.travelgatex.com/"
       url = "/getting-started/"
       name = "Get Started"
       weight = 10
-    [[menu.prepend]]
-     url = "https://slack.travelgatex.com/"
-     name = '<img alt="slack travelgatex" src="https://slack.travelgatex.com/badge.svg" />'
-     weight = 11
-     hrefTargetBlank = true
-     
+    # [[menu.prepend]]
+    #  url = "https://slack.travelgatex.com/"
+    #  name = '<img alt="slack travelgatex" src="https://slack.travelgatex.com/badge.svg" />'
+    #  weight = 11
+    #  hrefTargetBlank = true
+
 
   # Hero section
   [params.hero]
