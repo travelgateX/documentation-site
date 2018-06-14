@@ -11,7 +11,8 @@
     }
   }
   function iterateQueries(q) {
-    $.get(q.qist, function (data) {
+    console.log(q.gist);
+    $.get(q.gist, function (data) {
       console.log(data);
       // dothing(data);
     });
