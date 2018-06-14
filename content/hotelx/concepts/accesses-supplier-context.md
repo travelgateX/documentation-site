@@ -1,7 +1,7 @@
 +++
 title = "Access, Supplier and Context"
 pagetitle = ""
-description = "Learn about Core Entities used in TravelgateX"
+description = "Learn about entities used in HotelX"
 weight = 1
 alwaysopen = false
 +++

@@ -1,7 +1,7 @@
 +++
 title = "Configure HotelX Security"
 pagetitle = "Configure HotelX Security"
-description = ""
+description = "Configure your own HotelX security model"
 weight = 2
 alwaysopen = false
 +++

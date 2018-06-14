@@ -7,7 +7,5 @@ weight = 2
 alwaysopen = false
 +++
 
-General concpets wich applies to TravelgateX platform.
-
 {{%custom-children-lv2%}}
 
