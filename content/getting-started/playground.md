@@ -28,7 +28,9 @@ You should get the following:
 (put in query response)
 ```
 
-{{% playground "https://api.travelgatex.com" %}}
+{{< graphiql-script queries="[{\"apikey\":\"q8ggxpoVDW76Kw918hwnnRvxlZmAP2QZ\",\"gist\":\"https://gist.githubusercontent.com/tgx-bot/ba0469dda654a1639294edaadfed1a65/raw\",\"divname\":\"div_main_playground\"}]" >}}
+{{< graphiql-styles >}}
+{{< graphiql-tags tag="div_main_playground" >}}
 
 ## More Queries
 Now try these query examples:
