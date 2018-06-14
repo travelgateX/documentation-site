@@ -52,7 +52,7 @@
     },
     {
       "name": "DeltaPriceInput",
-      "description": "Input delta price, indicates price variation permitted by the client",
+      "description": "Input delta price, indicates price variation permitted by the client\nAn error will be returned if the new price does not abide to DeltaPrice. If DeltaPrice is not sent and the integration implements it, we assume that the price range is 0 and the process will continue \n(price is lower or equal to the price showed in valuation).\nThis field is implemented if it’s native to the supplier or if another availability/valuation request needs to be done in Reservation. In case the supplier blocks the option in valuation, reservation \nwill be done automatically in reservation method.",
       "url": "/travelgatex/reference/inputobjects/deltapriceinput"
     }
   ],

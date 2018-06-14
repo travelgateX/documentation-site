@@ -76,7 +76,7 @@
     },
     {
       "name": "AdminMutation",
-      "description": "",
+      "description": "The admin query root of TravelgateX's for implementing GraphQL mutations.",
       "url": "/travelgatex/reference/objects/adminmutation"
     }
   ],

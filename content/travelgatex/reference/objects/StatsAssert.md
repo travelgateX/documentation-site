@@ -7,7 +7,7 @@
       "typeString": "DateTime!",
       "name": "startTime",
       "url": "/travelgatex/reference/scalars/datetime",
-      "description": "",
+      "description": "Start time of the request",
       "isDeprecated": false,
       "args": null
     },
@@ -15,7 +15,7 @@
       "typeString": "Int!",
       "name": "execTime",
       "url": "/travelgatex/reference/scalars/int",
-      "description": "",
+      "description": "Execution time of the request",
       "isDeprecated": false,
       "args": null
     },
@@ -23,7 +23,7 @@
       "typeString": "URI!",
       "name": "url",
       "url": "/travelgatex/reference/scalars/uri",
-      "description": "",
+      "description": "Endpoint to download the full XML of the request with its response",
       "isDeprecated": false,
       "args": null
     }

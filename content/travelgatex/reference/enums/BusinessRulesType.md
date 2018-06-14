@@ -12,7 +12,7 @@
     },
     {
       "name": "BusinessRules",
-      "description": "LList of business rules for filtering options based on your interests.",
+      "description": "List of business rules for filtering options based on your interests.",
       "url": "/travelgatex/reference/objects/businessrules"
     },
     {

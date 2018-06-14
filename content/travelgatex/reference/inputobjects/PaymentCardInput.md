@@ -45,6 +45,11 @@
       "name": "HotelBookInput",
       "description": "Criteria of book.",
       "url": "/travelgatex/reference/inputobjects/hotelbookinput"
+    },
+    {
+      "name": "PaymentXStoreCardInput",
+      "description": "",
+      "url": "/travelgatex/reference/inputobjects/paymentxstorecardinput"
     }
   ],
   "enumValues": null,
