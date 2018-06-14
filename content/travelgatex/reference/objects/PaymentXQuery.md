@@ -4,6 +4,14 @@
   "weight": 1,
   "fields": [
     {
+      "typeString": "Boolean",
+      "name": "a",
+      "url": "/travelgatex/reference/scalars/boolean",
+      "description": "",
+      "isDeprecated": false,
+      "args": null
+    },
+    {
       "typeString": "ServiceStatus!",
       "name": "vaultStatusService",
       "url": "/travelgatex/reference/objects/servicestatus",

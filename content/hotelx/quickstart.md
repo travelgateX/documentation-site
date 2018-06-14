@@ -19,14 +19,14 @@ In order to perform a booking flow, please follow the steps below:
 
 First of all, to be able to run any query you should have an Apikey as an authentication.
 
-In case you have an Apikey you can use it by introducing it in the HTTP Headers. Otherwise, you can use the following Apikey for test purposes: q8ggxpoVDW76Kw918hwnnRvxlZmAP2QZ
+In case you have an Apikey you can use it by introducing it in the HTTP Headers. Otherwise, you can use the following Apikey for test purposes: `q8ggxpoVDW76Kw918hwnnRvxlZmAP2QZ`
 
 ### Search 
 
 By means of the following query, you will be able to perform an availability search for a given specific criteria.
 Modify “criteriaSearch” fields using valid dates and press the button play to send the query.
 
-{{< graphiql query="query { admin{ products { edges{ node{ code }}}}}" divname="div_search" >}}
+{{< graphiql apikey="q8ggxpoVDW76Kw918hwnnRvxlZmAP2QZ" gist="https://gist.githubusercontent.com/tgx-bot/533a8e1259e5245a4c3f590964ec506d/raw" divname="div_search" >}}
 
 
 
@@ -36,7 +36,7 @@ In case you need to replicate the search, there is a possibility to do so by usi
 
 This query aims to return the total price and cancellation policies of the option selected in the previous step. In Query Variables modify optionRefId with option id value returned in search response and send the query: 
 
-{{< graphiql query="query1 { admin{ products { edges{ node{ code }}}}}" variables="Authorization: c195b18f-46d5-42a8-720d-e3ab628f8e64" divname="div_quote" >}}
+{{< graphiql apikey="q8ggxpoVDW76Kw918hwnnRvxlZmAP2QZ" gist="https://gist.githubusercontent.com/tgx-bot/b4e691b2b1567c0a80f5926b833170e1/raw" divname="div_quote" >}}
 
 
 
@@ -48,7 +48,7 @@ This query allows you to book a previously quoted option. In Query Variables mod
 
 <!--<object data="https://graphqlbin.com/1wxWIp" type="text/html" width="100%" height="400px" align="left">
 </object>-->
-{{< graphiql query="query2 { admin{ products { edges{ node{ code }}}}}" divname="div_book" >}}
+{{< graphiql apikey="q8ggxpoVDW76Kw918hwnnRvxlZmAP2QZ" gist="https://gist.githubusercontent.com/tgx-bot/bbbb043c0cdfe1adb33a897f69a04e2f"  divname="div_book" >}}
 
 
 
@@ -58,7 +58,7 @@ This query allows you to perform a book cancellation. In Query Variables you sho
 
 <!--<object data="https://graphqlbin.com/68LYhr" type="text/html" width="100%" height="400px" align="left">
 </object>-->
-{{< graphiql query="query3 { admin{ products { edges{ node{ code }}}}}" variables="Authorization: c195b18f-46d5-42a8-720d-e3ab628f8e64" divname="div_cancel" >}}
+{{< graphiql apikey="q8ggxpoVDW76Kw918hwnnRvxlZmAP2QZ"  divname="div_cancel" >}}
 
 
 
@@ -71,5 +71,5 @@ You can retrieve the reservation details and status by performing one of the fol
 
  <!--<object data="https://graphqlbin.com/0RvEU2" type="text/html" width="100%" height="400px" align="left">
 </object>-->
-{{< graphiql query="query4 { admin{ products { edges{ node{ code }}}}}" variables="Authorization: c195b18f-46d5-42a8-720d-e3ab628f8e64" divname="div_bookinglist" >}}
+{{< graphiql apikey="q8ggxpoVDW76Kw918hwnnRvxlZmAP2QZ"  divname="div_bookinglist" >}}
 

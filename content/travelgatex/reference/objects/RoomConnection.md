@@ -21,13 +21,7 @@
     }
   ],
   "deprecatedFields": null,
-  "requireby": [
-    {
-      "name": "HotelXQuery",
-      "description": "",
-      "url": "/travelgatex/reference/objects/hotelxquery"
-    }
-  ],
+  "requireby": null,
   "enumValues": null,
   "operator": "type",
   "typename": "RoomConnection"
@@ -40,7 +34,3 @@ RoomList definition
 ## Fields
 
 {{% graphql-field %}}
-
-## Required by
-
-{{% graphql-require-by %}}

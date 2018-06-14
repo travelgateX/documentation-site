@@ -1,12 +1,21 @@
 <script>
-  $(document).ready(iterateQueries);
-
-  function iterateQueries() {
-    $.get("https://gist.githubusercontent.com/tgx-bot/533a8e1259e5245a4c3f590964ec506d/raw", function (data) {
-
-      dothing(data);
+  const apiKeyJO = "q8ggxpoVDW76Kw918hwnnRvxlZmAP2QZ";
+  const apiKeyDC = "64780338-49c8-4439-7c7d-d03c2033b145";
+  $(document).ready(main);
+  function main() {
+    const q = '{{ .Get "queries" }}';
+    const queries = JSON.parse(q);
+    // console.log(queries);
+    for (const q of queries) {
+      iterateQueries(q)
+    }
+  }
+  function iterateQueries(q) {
+    $.get(q.qist, function (data) {
+      console.log(data);
+      // dothing(data);
     });
-    // for (const q of queries) {
+  }
 
 
 
@@ -17,7 +26,7 @@
 
 
 
-function dothing(data){
+  function dothing(data) {
     /**
        * This GraphiQL example illustrates how to use some of GraphiQL's props
        * in order to enable reading and updating the URL parameters, making
@@ -92,7 +101,7 @@ function dothing(data){
     // use fetch, and could instead implement graphQLFetcher however you like,
     // as long as it returns a Promise or Observable.
     function graphQLFetcher(graphQLParams) {
-      const token = false;
+      const token = apiKeyJO;
       //console.log('in graphQLFetcher')
       // This example expects a GraphQL server at the path /graphql.
       // Change this to point wherever you host your GraphQL server.
@@ -101,7 +110,7 @@ function dothing(data){
         headers: {
           'Accept': 'application/json',
           'Content-Type': 'application/json',
-          'Authorization': token ? 'Bearer ' + token : null
+          'Authorization': token ? 'Apikey ' + token : null
         },
         body: JSON.stringify(graphQLParams),
         //  credentials: 'include',
@@ -167,7 +176,6 @@ function dothing(data){
     }
   }
 
-}
 
 
 </script>

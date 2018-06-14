@@ -72,7 +72,7 @@
   "requireby": [
     {
       "name": "Supplier",
-      "description": "",
+      "description": "A Supplier is a Partner who is connected to TravelgateX on the supply side in order to sell their product to connected Buyers",
       "url": "/travelgatex/reference/objects/supplier"
     }
   ],

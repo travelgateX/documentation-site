@@ -46,7 +46,10 @@
 <body>
   <div id='{{ .Get "divname" }}' class='graphiql-display'>Loading...</div>
   <script>
-
+    myFunc();
+    function myFunc(){
+      
+    
     /**
      * This GraphiQL example illustrates how to use some of GraphiQL's props
      * in order to enable reading and updating the URL parameters, making
@@ -59,7 +62,7 @@
 
     // Parse the search string to get url parameters.
     var search = window.location.search;
-    var parameters = {};
+    let parameters = {};
     search.substr(1).split('&').forEach(function (entry) {
       var eq = entry.indexOf('=');
       if (eq >= 0) {
@@ -71,8 +74,23 @@
 
 
     // if variables was provided, try to format it. 
-    parameters.variables = '{{ .Get "variables" }}';
-    parameters.query = '{{ .Get "query" }}';
+    // parameters.variables = '{{ .Get "variables" }}';
+
+// setHeader = (xhr)=> {
+// console.log(xhr)
+// xhr.setRequestHeader('Authorization', 'hahahaha');
+// xhr.setRequestHeader('Authorization', 'hahahaha');
+// }
+
+
+// $.getJSON( '{{ .Get "gist" }}', function( data ) {
+//   // console.log(data)
+//   // parameters.query = data;
+// });
+// // parameters.query = "query{ " + Math.random() * 10000000 + " }";
+
+
+    
 
     if (parameters.variables) {
       try {
@@ -163,6 +181,7 @@
         $(element).append(button);
       }
     );
+  };
   </script>
 </body>
 

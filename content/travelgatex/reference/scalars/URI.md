@@ -11,16 +11,6 @@
       "url": "/travelgatex/reference/objects/urls"
     },
     {
-      "name": "Contact",
-      "description": "Contact Data.",
-      "url": "/travelgatex/reference/objects/contact"
-    },
-    {
-      "name": "Media",
-      "description": "Contains media information.",
-      "url": "/travelgatex/reference/objects/media"
-    },
-    {
       "name": "UrlsInput",
       "description": "URLs Input",
       "url": "/travelgatex/reference/inputobjects/urlsinput"
@@ -29,6 +19,16 @@
       "name": "StatsAssert",
       "description": "Assert of an specific error",
       "url": "/travelgatex/reference/objects/statsassert"
+    },
+    {
+      "name": "Contact",
+      "description": "Contact Data.",
+      "url": "/travelgatex/reference/objects/contact"
+    },
+    {
+      "name": "Media",
+      "description": "Contains media information.",
+      "url": "/travelgatex/reference/objects/media"
     }
   ],
   "enumValues": null,
@@ -36,7 +36,7 @@
   "typename": "URI"
 }
 The URI type represents a URI values. A good example mith be an Hotel Image URL.
-In queries or mutations, URI fields have to be specified in RFC 3986, RFC 3987, and RFC 6570 (level 4) compliant URI string format with enclosing double quotes: "http:\www.travelgatex.com".
+In queries or mutations, URI fields have to be specified in RFC 3986, RFC 3987, and RFC 6570 (level 4) compliant URI string format with enclosing double quotes: "http:\\www.travelgatex.com".
 ## GraphQL schema definition
 
 {{% graphql-schema-scalar %}}

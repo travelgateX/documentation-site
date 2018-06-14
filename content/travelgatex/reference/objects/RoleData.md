@@ -47,7 +47,7 @@
       "typeString": "Boolean!",
       "name": "isCreate",
       "url": "/travelgatex/reference/scalars/boolean",
-      "description": "",
+      "description": "Has resource Create permission?",
       "isDeprecated": false,
       "args": null
     },
@@ -55,7 +55,7 @@
       "typeString": "Boolean!",
       "name": "isRead",
       "url": "/travelgatex/reference/scalars/boolean",
-      "description": "",
+      "description": "Has resource Create permission?",
       "isDeprecated": false,
       "args": null
     },
@@ -63,7 +63,7 @@
       "typeString": "Boolean!",
       "name": "isUpdate",
       "url": "/travelgatex/reference/scalars/boolean",
-      "description": "",
+      "description": "Has resource Update permission?",
       "isDeprecated": false,
       "args": null
     },
@@ -71,7 +71,7 @@
       "typeString": "Boolean!",
       "name": "isDelete",
       "url": "/travelgatex/reference/scalars/boolean",
-      "description": "",
+      "description": "Has resource Delete permission?",
       "isDeprecated": false,
       "args": null
     },
@@ -79,7 +79,7 @@
       "typeString": "Boolean!",
       "name": "isEnable",
       "url": "/travelgatex/reference/scalars/boolean",
-      "description": "",
+      "description": "Is role enabled or not?",
       "isDeprecated": false,
       "args": null
     },
@@ -87,7 +87,7 @@
       "typeString": "Boolean!",
       "name": "isExecutable",
       "url": "/travelgatex/reference/scalars/boolean",
-      "description": "",
+      "description": "Has resource Executable permission?",
       "isDeprecated": false,
       "args": null
     },
@@ -95,7 +95,7 @@
       "typeString": "Boolean!",
       "name": "isSpecial",
       "url": "/travelgatex/reference/scalars/boolean",
-      "description": "",
+      "description": "Has any other non-basic permission/s?",
       "isDeprecated": false,
       "args": null
     },
@@ -103,7 +103,7 @@
       "typeString": "String",
       "name": "special",
       "url": "/travelgatex/reference/scalars/string",
-      "description": "",
+      "description": "Special permission",
       "isDeprecated": false,
       "args": null
     },
@@ -111,7 +111,7 @@
       "typeString": "ResourceConnection",
       "name": "resources",
       "url": "/travelgatex/reference/objects/resourceconnection",
-      "description": "",
+      "description": "Resources used",
       "isDeprecated": false,
       "args": [
         {
@@ -151,7 +151,7 @@
   "requireby": [
     {
       "name": "Role",
-      "description": "",
+      "description": "Permissions determine what operations are allowed on a resource",
       "url": "/travelgatex/reference/objects/role"
     }
   ],

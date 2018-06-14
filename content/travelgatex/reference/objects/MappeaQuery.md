@@ -4,6 +4,14 @@
   "weight": 1,
   "fields": [
     {
+      "typeString": "Boolean",
+      "name": "a",
+      "url": "/travelgatex/reference/scalars/boolean",
+      "description": "",
+      "isDeprecated": false,
+      "args": null
+    },
+    {
       "typeString": "GetUploadedFilesResponse!",
       "name": "getUploadedFiles",
       "url": "/travelgatex/reference/objects/getuploadedfilesresponse",

@@ -7,9 +7,8 @@ weight = 2
 alwaysopen = false
 +++
 
-{{< graphiql-queries queries="[{\"query\":\"query { admin{ products { edges{ node{ code }}}}}\",\"divname\":\"div_search\"},{\"query\":\"query1 { admin{ products { edges{ node{ code }}}}}\",\"variables\":{\"Authorization\":\"c195b18f-46d5-42a8-720d-e3ab628f8e64\"},\"divname\":\"div_quote\"},{\"query\":\"query2 { admin{ products { edges{ node{ code }}}}}\",\"divname\":\"div_book\"},{\"query\":\"query3 { admin{ products { edges{ node{ code }}}}}\",\"variables\":{\"Authorization\":\"c195b18f-46d5-42a8-720d-e3ab628f8e64\"},\"divname\":\"div_cancel\"},{\"query\":\"query4 { admin{ products { edges{ node{ code }}}}}\",\"variables\":{\"Authorization\":\"c195b18f-46d5-42a8-720d-e3ab628f8e64\"},\"divname\":\"div_bookinglist\"}]" >}}
+{{< graphiql-script queries="[{\"apikey\":\"q8ggxpoVDW76Kw918hwnnRvxlZmAP2QZ\",\"gist\":\"https://gist.githubusercontent.com/tgx-bot/533a8e1259e5245a4c3f590964ec506d/raw\",\"divname\":\"div_search\"},{\"apikey\":\"q8ggxpoVDW76Kw918hwnnRvxlZmAP2QZ\",\"gist\":\"https://gist.githubusercontent.com/tgx-bot/b4e691b2b1567c0a80f5926b833170e1/raw\",\"divname\":\"div_quote\"}]" >}}
 {{< graphiql-styles >}}
-{{< graphiql-script >}}
 
 In this section you will find all the queries necessaries in order to perform a booking flow using [GraphQL Playground](https://api.travelgatex.com/). 
 
