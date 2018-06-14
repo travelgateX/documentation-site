@@ -1,8 +1,7 @@
 +++
 title = "Common Resources"
 pagetitle = "Common Resources"
-description = ""
-weight = 2
+description = "Common Resources"
 alwaysopen = false
 +++
 
