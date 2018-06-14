@@ -1,12 +1,12 @@
 +++
 title = "Access, Supplier and Context"
 pagetitle = ""
-description = "Learn about Core Entities used in TravelgateX"
+description = "Learn about entities used in HotelX"
 weight = 1
 alwaysopen = false
 +++
 
-On this page you will learn more about Core Entities used in HotelX. You can also refer to the overarching [core concepts that apply to all TravelgateX APIs](https://docs.travelgatex.com/getting-started/concepts/). 
+On this page you will learn more about Core Entities used in HotelX. You can also refer to the overarching [core concepts that apply to all TravelgateX APIs](/getting-started/concepts/). 
 
 ### Supplier
 
@@ -46,4 +46,4 @@ With our built-in solution, you are able to choose the context that you wish to 
 
 We recommend using the widest `Context` possible or use your own context. That way, all supplier mappings will be resolved.
 
-{{% alert theme="info" %}}For more information on setting contexts, check out our <a href="https://docs.travelgatex.com/hotelx/plugins/mapping/">**Plugin guide on Mapping**</a>.{{% /alert %}}
+{{% alert theme="info" %}}For more information on setting contexts, check out our <a href="/hotelx/plugins/mapping/">**Plugin guide on Mapping**</a>.{{% /alert %}}

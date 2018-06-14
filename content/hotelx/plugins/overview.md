@@ -1,7 +1,7 @@
 +++
 title = "Overview"
 pagetitle = "Plugins Workflow"
-description = "Plugins workflow execution"
+description = "Plugins Overview. What they are, when they get executed and how to execute them."
 icon = "fa-info-circle"
 weight = 1
 alwaysopen = false
@@ -9,16 +9,20 @@ alwaysopen = false
 
 ### Introduction
 
-_Plugins_ are custom code, executed in [HotelX](/hotelx/) servers, that add or modify specific features. `Partner` can develop custom _plugins_, but in most cases, [HotelX](/hotelx/) offers enough basic _plugins_ to use.
+_Plugins_ are custom code, executed in [HotelX](/hotelx/) servers, that add or modify specific functionalities. Any `Partner` can develop custom _Plugins_, nevertheless HotelX, [HotelX](/hotelx/) has developed many _Plugins_ available for anyone to use out of the box.
 
 ### Flows
 
-[HotelX](/hotelx/) _query_ or _mutation_ determine what _flow_ is executed. _Plugins_ can be executed in different _flows_:
+[HotelX](/hotelx/) _query_ or _mutation_ determine what _flow_ is executed. _Plugins_ can be executed in different `Queries` or `Mutations`:
 
-* [search](/hotelx/concepts/booking-flow#search)
+<!-- * [search](/hotelx/concepts/booking-flow#search)
 * [quote](/hotelx/concepts/booking-flow#quote)
 * [hotelBook](/hotelx/concepts/booking-flow#book)
-* [hotelCancel](/hotelx/concepts/management-flow#cancel)
+* [hotelCancel](/hotelx/concepts/management-flow#cancel) -->
+* Search
+* Quote
+* Book
+* Cancel
 
 ### Steps
 
@@ -26,11 +30,11 @@ _Step_ is the minium container where _plugins_ are executed **sequentially**.
 
 | Step | When is executed |
 | --- | --- |
-| _Request_ | _After_ `Buyer` requests message to [HotelX](/hotelx/).|  
+| _Request_ | _After_ `Client` requests message to [HotelX](/hotelx/).|  
 | _Request Access_ | _Before_ send request to `Supplier` using `Access` and _after_ `Accesses` has been calculated.|
 | _Response Option_ |_After_ `Supplier` responds  message. For every option returned.|
 | _Response Access_ |_After_ all `Access` options has been responded.|
-| _Response_ | _Before_ [HotelX](/hotelx/) responds message to to `Buyer`.|
+| _Response_ | _Before_ [HotelX](/hotelx/) responds message to to `Client`.|
 
 
 ### Plugin Types
@@ -77,6 +81,10 @@ With _context_ information developers can personalize _plugin_ features, more in
 
 ftp://ftp.xmltravelgate.com
 
+{{% alert theme="info" %}}
+You will receive access credentials to the FTP server with your Welcome Pack
+{{% /alert %}}
+
 ### Directory Format
 
 #### Root path
@@ -84,16 +92,16 @@ ftp://ftp.xmltravelgate.com
 The structure of the directory should be in the below format, all files should be inside this directory
 
 /F[Folder code]\_[Unique code]/HotelX\_[Unique code]/ 
+
 * F[Folder code]\_[Unique code] 
 
     * **Folder code**: corresponds to the folder number. 
-    * **Unique code**: corresponds to the folder unique code in our 
+    * **Unique code**: corresponds to the folder unique code in our system.
 
-    system.
 * HotelX\_[Unique code] 
 
     * **Unique code**: corresponds to the HotelX unique code in our system.
 
 #### Example
 
-* /F**0**\_**178**/HotelX\_**179**  
+* `/F**0**\_**178**/HotelX\_**179**`

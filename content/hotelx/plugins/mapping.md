@@ -1,7 +1,7 @@
 +++
 title = "Mapping"
 pagetitle = "HotelX Mapping"
-description = "Map plugins"
+description = "Map different codes from different suppliers in order to get a de-duped response."
 icon = "fa-sitemap"
 weight = 2
 alwaysopen = false

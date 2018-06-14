@@ -1,9 +1,9 @@
 <ul class="pagination d-flex justify-content-center" id="navigation" style="position: relative; width: 72%; left: 28%;">
     <!-- Next prev page -->
     {{- $currentNode := . -}}
-    
+
     {{- template "menu-nextprev" dict "menu" .Site.Home "currentnode" $currentNode -}}
-    
+
     {{- define "menu-nextprev" -}}
         {{- $currentNode := .currentnode -}}
         {{- if ne .menu.Params.hidden true -}}
@@ -17,7 +17,6 @@
                 {{- end -}}
             {{- end -}}
             {{- $currentNode.Scratch.Set "prevPageTmp" .menu -}}
-    
                 {{- $currentNode.Scratch.Set "pages" .menu.Pages -}}
                 {{- if .menu.IsHome -}}
                     {{- $currentNode.Scratch.Set "pages" .menu.Sections -}}
@@ -25,14 +24,13 @@
                     {{- $currentNode.Scratch.Set "pages" (.menu.Pages | union .menu.Sections) -}}
                 {{- end -}}
                 {{- $pages := ($currentNode.Scratch.Get "pages") -}}
-    
                 {{- range $pages.ByWeight -}}
                     {{- template "menu-nextprev" dict "menu" . "currentnode" $currentNode -}}
                 {{- end -}}
         {{- end -}}
     {{- end -}}
-    
-        
+
+
     {{- if not $.Site.Params.disableNavChevron -}}
         {{- with ($.Scratch.Get "prevPage") -}}
             <li class="page-item">

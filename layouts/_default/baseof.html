@@ -26,12 +26,14 @@
       {{ partial "content/sidebar.html" . }}
     </div>
     <div class="content">
-      <div class="iso-input-search hidden-xs-down">
+      <div class="pull-right iso-input-search" style="left:-9%;">
+
+      <div class="iso-input-search hidden-xs-down" style="width:30%">
         {{- if not .Site.Params.disableSearch}}
         <div class="ico-label">
             <i class="fa fa-search" aria-hidden="true"></i>
         </div>
-        <input data-search-input class="form-control"  id="search-by" type="text" placeholder="Search docs...">
+        <input data-search-input class="form-control"  id="search-by" type="text" placeholder="Search docs..." style="border-bottom: 0px !important;">
         <script type="text/javascript" src="{{"js/lunr.min.js" | relURL}}"></script>
         <script type="text/javascript" src="{{"js/auto-complete.js" | relURL}}"></script>
         <script type="text/javascript" src="{{"js/functions.js" | relURL}}"></script>
@@ -43,6 +45,16 @@
             {{ end }}
         </script>
         <script type="text/javascript" src="{{"js/search.js" | relURL}}"></script> {{- end}}
+      </div>
+      <div style="border-bottom: 1px solid rgba(204, 213, 218, 0.6) !important;">
+          {{/* <a href="https://slack.travelgatex.com" target="_blank" class="pull-right"><img alt="slack travelgatex" src="https://slack.travelgatex.com/badge.svg" /></a> */}}
+            <ul class="nav navbar-nav navbar-right" style="display: inline-block;text-transform:  uppercase;color:  white;border-bottom: 1px solid rgba(204, 213, 218, 0.6) !important;width:  65%;padding-left: 35%;background: white;">
+              <li><a href="https://slack.travelgatex.com/" target="_blank"><span>Chat</span></a></li>
+              <li><a href="https://github.com/travelgateX/Issue-tracker" target="_blank"><span>Issues Tracker</span></a></li>
+                  <li><a href="https://api.travelgatex.com" target="_blank"><span>Playground <i title="Play →" class="icon-control-play"></i></span></a></li>
+
+          </ul>
+        </div>
       </div>
 
       <div class="container">
@@ -65,7 +77,7 @@
               {{- end -}}
 
               {{ block "main" . }}
-              {{ end }}    
+              {{ end }}
             </div>
             <div id="backgroundMenu"></div>
           </div>

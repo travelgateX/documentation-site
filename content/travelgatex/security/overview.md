@@ -3,19 +3,19 @@ title = "Overview"
 pagetitle = "Security within the TravelgateX platform"
 description = "Learn Platform Security"
 icon = "fa-shield"
-weight = 4
+weight = 1
 alwaysopen = false
 +++
 
-### Introduction
+## Introduction
 
 TravelgateX offers a fine-grained access control and visibility for centrally managing `resources`, which are granted to `Partners` belonging to `Organizations`.
 
-### Authentication
+## Authentication
 
 Authentication is the process of authorizing or making sure that the `Partner` is the correct one. Every request to TravelgateX GraphQL API must carry an Access Token whether it's an [API Key](#api-key) or a [JSON Web Token](#json-web-token).
 
-#### API Key
+### API Key
 
 The API key takes cares of the authentication of applications, normally created as a `Service Account` with limited scopes. 
 The correct way to send it to GraphQL server is via HTTP Header:
@@ -55,9 +55,5 @@ Whenever the user wants to access a protected resource, the user agent should se
 
 Once the `Member` is authenticated we must authorize the `Partner` to use the requested `Resource`.
 
-Indentity Access Management ([IAM](/admin/concepts/iam)) policies let Partner administrators authorize who can take action on specific resources. This gives you full control and internal visilibity to manage your resources centrally.
+TravelgateX Indentity Access Management ([IAM](/travelgatex/security/iam))  let Partner administrators authorize who can take action on specific resources. This gives you full control and internal visilibity to manage your resources centrally.
 
-### Further Reading
-
-- [Authentication](https://hackernoon.com/how-do-you-authenticate-mate-f2b70904cc3a)
-- [JWT](https://jwt.io/introduction/) 

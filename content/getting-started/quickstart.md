@@ -7,18 +7,21 @@ weight = 1
 alwaysopen = false
 +++
 
+{{< figure src="/images/grafico_quickstart_docs.png#center" alt=" Four steps to using our API" attr="" >}}
+
+
 ## Four steps to using our API
 
 If you're ready to start searching for a hotel, getting a quote and booking it right away, try out the TravelgateX API by following the steps below:
-<p><strong>STEP 1:</strong> Get to know our APIs. Read through our documentation and test some sample calls in our <a href="https://docs.travelgatex.com/getting-started/playground/">API Playground</a>. You can use <a href="https://docs.travelgatex.com/travelgatex/overview/">a test API key</a> and start experimenting with our APIs straight away.</p>
+<p><strong>STEP 1:</strong> Get to know our APIs. Read through our documentation and test some sample calls in our <a href="/getting-started/playground/">API Playground</a>. You can use <a href="/travelgatex/overview/">a test API key</a> and start experimenting with our APIs straight away.</p>
 
 <p><strong>STEP 2:</strong> Sign an agreement with hotel suppliers to be using their booking databases. You can see a full list of suppliers and contact the ones you want to connect with by visiting our <a href="https://www.travelgatex.com/partners/seller">supplier database.</a></p>
 
 <p><strong>STEP 3:</strong> Sign up for TravelgateX API access. <a href="https://www.travelgatex.com/contact">Send us an email</a> and tell us who you are and which hotel suppliers you are working with. TravelgateX works with over 600 suppliers, and we are the first certified partner to work with Expedia. We will send you a welcome pack with your login details and further guides on how to make your first integration.</p>
 
-<p><strong>STEP 4:</strong> Start generating new business! Read through our integration guides and start integrating our <a href="https://docs.travelgatex.com/hotelx/">HotelX API</a> into your booking applications.</p>
+<p><strong>STEP 4:</strong> Start generating new business! Read through our integration guides and start integrating our <a href="/hotelx/">HotelX API</a> into your booking applications.</p>
 
-<p><strong>BONUS STEP:</strong> Travelgate is using one of the latest and most advanced API technologies, GraphQL. It is quick to learn and immensely powerful. Check out our <a href="https://docs.travelgatex.com/learning-graphql/">free GraphQL guides</a> to learn more about this cutting edge technology.</p>
+<p><strong>BONUS STEP:</strong> Travelgate is using one of the latest and most advanced API technologies, GraphQL. It is quick to learn and immensely powerful. Check out our <a href="/learning-graphql/">free GraphQL guides</a> to learn more about this cutting edge technology.</p>
 
 ### Join the TravelgateX partner program
 
@@ -49,5 +52,3 @@ Although the API has been designed to be very intuitive and easy to read, we are
 ### Can't find your answer?
 
 Got any technical questions or need support from our team? [We’re here to help. Get in touch](https://xmltravelgate.atlassian.net/servicedesk/customer/portal/7) through Jira Service Desk using the username and password that has been sent to you together with the welcome pack. Let us know if you haven't received it, or can't find it, so we can send it to your email address again.
-
-

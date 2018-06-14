@@ -12,6 +12,11 @@ theme = "docdock"
 home = [ "HTML", "RSS", "JSON"]
 
 
+[blackfriday]
+plainIDAnchors = true
+hrefTargetBlank = true
+nofollowLinks = true
+
 [[menu.shortcuts]]
 pre = "<h3>More</h3>"
 name = "<i class='fa fa-github'></i> GraphQL Playground"
@@ -79,20 +84,19 @@ discourseUrl = "http://community.travelgatex.com/"
 
     # postpended links
     [[menu.prepend]]
-     url = "https://slack.travelgatex.com/"
-     name = "Slack #"
-     weight = 9
-     hrefTargetBlank = true
-     # prepended links
-     [[menu.prepend]]
      url = "https://api.travelgatex.com"
      name = "Playground <i title='Play &rarr;' class='icon-control-play'></i>"
-     weight = 10
-     # postpended links
+     weight = 9
     [[menu.prepend]]
       url = "/getting-started/"
       name = "Get Started"
-      weight = 11
+      weight = 10
+    [[menu.prepend]]
+     url = "https://slack.travelgatex.com/"
+     name = '<img alt="slack travelgatex" src="https://slack.travelgatex.com/badge.svg" />'
+     weight = 11
+     hrefTargetBlank = true
+
 
   # Hero section
   [params.hero]
