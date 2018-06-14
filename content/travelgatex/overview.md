@@ -19,8 +19,8 @@ Our Gateway is the only endpoint to **access all of our APIs**. It is written in
 
 There are two types of allowed operations in the TravelgateX GraphQL APIs:
 
-* [Queries](https://docs.travelgatex.com/travelgatex/reference/schema/query/): Queries are "read only" and are used to get data from our system. For example, getting a list of available hotel vacancies for a particular date and location is a `Query`
-* [Mutations](https://docs.travelgatex.com/travelgatex/reference/schema/mutation/): Mutations change, add or delete the data in our system. For example, making a booking for a vacant hotel room is a `Mutation`.
+* [Queries](/travelgatex/reference/schema/query/): Queries are "read only" and are used to get data from our system. For example, getting a list of available hotel vacancies for a particular date and location is a `Query`
+* [Mutations](/travelgatex/reference/schema/mutation/): Mutations change, add or delete the data in our system. For example, making a booking for a vacant hotel room is a `Mutation`.
 
 ## GraphQL Endpoint
 
@@ -64,11 +64,11 @@ There are several ways you can learn more about the full capabilities of our Tra
 
 - [GraphQL-voyager](https://api.travelgatex.com/voyager) displays our GraphQL API as an interactive relational database-like graph to help you understand the different parent and child tables within our schema.
 
-- [Learning GraphQL](https://docs.travelgatex.com/learning-graphql/) is a set of resources to get to know GraphQL and to understand our schema.
+- [Learning GraphQL](/learning-graphql/) is a set of resources to get to know GraphQL and to understand our schema.
 
 ## Examples
 
-Check out our [GraphQL Playground](https://docs.travelgatex.com/getting-started/playground/) to get started with making your first query and to work thropugh other query examples.
+Check out our [GraphQL Playground](/getting-started/playground/) to get started with making your first query and to work thropugh other query examples.
 
 {{% alert theme="warning" %}}Keep in mind that it's important to use the correct Headers. 
 If you wish to use test headers, insert `"Authorization":"Apikey q8ggxpoVDW76Kw918hwnnRvxlZmAP2QZ"`
@@ -81,8 +81,8 @@ You can easily **share your Queries with others by generating a link** using the
 TravelgateX follows some conventions about schema definition:
 
 * [Relay schema requirements](#Relay Implementation)
-* [Definition of custom scalar types](https://docs.travelgatex.com/travelgatex/reference/scalars/)
-* [Token Based Authentication](https://docs.travelgatex.com/travelgatex/security/overview/)
+* [Definition of custom scalar types](/travelgatex/reference/scalars/)
+* [Token Based Authentication](/travelgatex/security/overview/)
 
 ### Relay Implementation
 

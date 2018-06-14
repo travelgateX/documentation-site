@@ -3,7 +3,7 @@ title = "Data Automation"
 pagetitle = ""
 description = "Automate bulk data operations"
 icon = "fa-database" 
-weight = 4
+weight = 5
 alwaysopen = false
 isDirectory = false
 +++

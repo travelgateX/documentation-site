@@ -3,7 +3,7 @@ title = "Security"
 pagetitle = "Authorization & Authentication"
 description = "Authorization & Authentication"
 icon="fa-shield"
-weight = 2
+weight = 4
 alwaysopen = false
 +++
 

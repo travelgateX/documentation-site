@@ -17,7 +17,7 @@ An `Access` is a set of credentials and the authentication configuration that en
 ### API Gateway
 Our API gateway is stable, secure, fault tolerant and load balanced between many datacenters from four different cloud providers: Microsoft Azure, Google Cloud Platform, Hetzner and TotalUptime. We provide realtime details of our uptime and status <a href="http://status.travelgatex.com/">on our Status page</a> and work at maintaining a minimum 99.99% service performance level.
 
-Our API gateway provides a single GraphQL endpoint which can be used to make queries against all of our APIs and travel services. This makes it easier for your clients (websites, applications and any other interface) to only call for the exact data that is needed, without parsing a heap of extra information in each API call. (Check out our <a href="https://docs.travelgatex.com/learning-graphql/">GraphQL resources</a> to learn more!)
+Our API gateway provides a single GraphQL endpoint which can be used to make queries against all of our APIs and travel services. This makes it easier for your clients (websites, applications and any other interface) to only call for the exact data that is needed, without parsing a heap of extra information in each API call. (Check out our <a href="/learning-graphql/">GraphQL resources</a> to learn more!)
 
 ### Buyer
 A `Buyer` `Profile` uses the TravelgateX platform to book travel services such as hotels for their customers. Buyers include online travel agents, tour operators, niche travel service providers, and travel and pricing apps.
