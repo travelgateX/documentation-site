@@ -16,7 +16,6 @@ home = [ "HTML", "RSS", "JSON"]
   plainIDAnchors = true
   hrefTargetBlank = true
   nofollowLinks = true
-  plainIDAnchors = true
 
 
 [[menu.shortcuts]]

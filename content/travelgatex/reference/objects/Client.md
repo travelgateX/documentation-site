@@ -55,17 +55,13 @@
       "name": "StatsData",
       "description": "",
       "url": "/travelgatex/reference/objects/statsdata"
-    },
-    {
-      "name": "AdminMutation",
-      "description": "",
-      "url": "/travelgatex/reference/objects/adminmutation"
     }
   ],
   "enumValues": null,
   "operator": "type",
   "typename": "Client"
 }
+Client identifies who is making the request and holds the configuration assigned to it.
 ## GraphQL schema definition
 
 {{% graphql-schema-type %}}

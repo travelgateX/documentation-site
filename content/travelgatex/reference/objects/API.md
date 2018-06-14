@@ -12,14 +12,6 @@
       "args": null
     },
     {
-      "typeString": "[Error!]",
-      "name": "error",
-      "url": "/travelgatex/reference/objects/error",
-      "description": "",
-      "isDeprecated": false,
-      "args": null
-    },
-    {
       "typeString": "APIData",
       "name": "apiData",
       "url": "/travelgatex/reference/objects/apidata",
@@ -28,10 +20,18 @@
       "args": null
     },
     {
+      "typeString": "[Error!]",
+      "name": "error",
+      "url": "/travelgatex/reference/objects/error",
+      "description": "Errors that abort services",
+      "isDeprecated": false,
+      "args": null
+    },
+    {
       "typeString": "DateTime!",
       "name": "createdAt",
       "url": "/travelgatex/reference/scalars/datetime",
-      "description": "",
+      "description": "Date created",
       "isDeprecated": false,
       "args": null
     },
@@ -39,7 +39,7 @@
       "typeString": "DateTime!",
       "name": "updatedAt",
       "url": "/travelgatex/reference/scalars/datetime",
-      "description": "",
+      "description": "Date updated",
       "isDeprecated": false,
       "args": null
     }
@@ -61,9 +61,6 @@
   "operator": "type",
   "typename": "API"
 }
-
-{{% alert theme="info" %}}In GraphQL, `!` indicates mandatory fields that must be included in your queries. For more information about GraphQL, check out our <a href="https://docs.travelgatex.com/learning-graphql/">Learning GraphQL guides</a>.{{% /alert %}}
-
 ## GraphQL schema definition
 
 {{% graphql-schema-type %}}

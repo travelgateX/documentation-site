@@ -15,7 +15,7 @@
       "typeString": "StatsData",
       "name": "statsData",
       "url": "/travelgatex/reference/objects/statsdata",
-      "description": "",
+      "description": "The data returned by a `Stats` query.",
       "isDeprecated": false,
       "args": null
     },
@@ -23,7 +23,7 @@
       "typeString": "[Error!]",
       "name": "error",
       "url": "/travelgatex/reference/objects/error",
-      "description": "Errors that abort services",
+      "description": "Errors that will lead the service to abort",
       "isDeprecated": false,
       "args": null
     },
@@ -31,7 +31,7 @@
       "typeString": "DateTime!",
       "name": "createdAt",
       "url": "/travelgatex/reference/scalars/datetime",
-      "description": "Date created",
+      "description": "Create date",
       "isDeprecated": false,
       "args": null
     },
@@ -39,7 +39,7 @@
       "typeString": "DateTime!",
       "name": "updatedAt",
       "url": "/travelgatex/reference/scalars/datetime",
-      "description": "Date updated",
+      "description": "Update date",
       "isDeprecated": false,
       "args": null
     }

@@ -14,7 +14,7 @@
       "typeString": "[PluginsInput!]",
       "name": "pluginsType",
       "url": "/travelgatex/reference/inputobjects/pluginsinput",
-      "description": "",
+      "description": "Indicates the plugin that will be executed.",
       "args": null
     }
   ],

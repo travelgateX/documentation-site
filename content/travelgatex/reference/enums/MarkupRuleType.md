@@ -28,6 +28,7 @@
   "operator": "enum",
   "typename": "MarkupRuleType"
 }
+Indicates what type of value is the markup, by percentage or is an import.
 ## GraphQL schema definition
 
 {{% graphql-schema-enum %}}

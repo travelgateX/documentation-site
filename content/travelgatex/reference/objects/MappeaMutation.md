@@ -4,6 +4,14 @@
   "weight": 1,
   "fields": [
     {
+      "typeString": "Boolean",
+      "name": "a",
+      "url": "/travelgatex/reference/scalars/boolean",
+      "description": "",
+      "isDeprecated": false,
+      "args": null
+    },
+    {
       "typeString": "OnlyStatusResponse!",
       "name": "confirmUpload",
       "url": "/travelgatex/reference/objects/onlystatusresponse",
@@ -53,7 +61,7 @@
   "requireby": [
     {
       "name": "Mutation",
-      "description": "Mutations are operations that change or update data on the server",
+      "description": "The root query for implementing GraphQL mutations. Mutations are operations that change or update data on the server",
       "url": "/travelgatex/reference/schema/mutation"
     }
   ],

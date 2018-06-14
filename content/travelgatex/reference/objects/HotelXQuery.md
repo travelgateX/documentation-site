@@ -4,136 +4,12 @@
   "weight": 1,
   "fields": [
     {
-      "typeString": "BoardConnection!",
-      "name": "boards",
-      "url": "/travelgatex/reference/objects/boardconnection",
-      "description": "Query to obtain Boards",
+      "typeString": "Boolean",
+      "name": "a",
+      "url": "/travelgatex/reference/scalars/boolean",
+      "description": "",
       "isDeprecated": false,
-      "args": [
-        {
-          "typeString": "HotelXBoardQueryInput!",
-          "name": "criteria",
-          "url": "/travelgatex/reference/inputobjects/hotelxboardqueryinput",
-          "description": ""
-        },
-        {
-          "typeString": "RelayInput!",
-          "name": "relay",
-          "url": "/travelgatex/reference/inputobjects/relayinput",
-          "description": ""
-        }
-      ]
-    },
-    {
-      "typeString": "CategoryConnection!",
-      "name": "categories",
-      "url": "/travelgatex/reference/objects/categoryconnection",
-      "description": "Query to obtain Categories",
-      "isDeprecated": false,
-      "args": [
-        {
-          "typeString": "HotelXCategoryQueryInput!",
-          "name": "criteria",
-          "url": "/travelgatex/reference/inputobjects/hotelxcategoryqueryinput",
-          "description": ""
-        },
-        {
-          "typeString": "RelayInput!",
-          "name": "relay",
-          "url": "/travelgatex/reference/inputobjects/relayinput",
-          "description": ""
-        }
-      ]
-    },
-    {
-      "typeString": "RoomConnection!",
-      "name": "rooms",
-      "url": "/travelgatex/reference/objects/roomconnection",
-      "description": "Query to obtain rooms",
-      "isDeprecated": false,
-      "args": [
-        {
-          "typeString": "HotelXRoomQueryInput!",
-          "name": "criteria",
-          "url": "/travelgatex/reference/inputobjects/hotelxroomqueryinput",
-          "description": ""
-        },
-        {
-          "typeString": "RelayInput!",
-          "name": "relay",
-          "url": "/travelgatex/reference/inputobjects/relayinput",
-          "description": ""
-        }
-      ]
-    },
-    {
-      "typeString": "HotelConnection!",
-      "name": "hotels",
-      "url": "/travelgatex/reference/objects/hotelconnection",
-      "description": "Query to obtain Hotels",
-      "isDeprecated": false,
-      "args": [
-        {
-          "typeString": "HotelXHotelListInput!",
-          "name": "criteria",
-          "url": "/travelgatex/reference/inputobjects/hotelxhotellistinput",
-          "description": ""
-        },
-        {
-          "typeString": "RelayInput!",
-          "name": "relay",
-          "url": "/travelgatex/reference/inputobjects/relayinput",
-          "description": ""
-        },
-        {
-          "typeString": "String",
-          "name": "token",
-          "url": "/travelgatex/reference/scalars/string",
-          "description": ""
-        }
-      ]
-    },
-    {
-      "typeString": "DestinationConnection!",
-      "name": "destinations",
-      "url": "/travelgatex/reference/objects/destinationconnection",
-      "description": "Query to obtain Destinations",
-      "isDeprecated": false,
-      "args": [
-        {
-          "typeString": "HotelXDestinationListInput!",
-          "name": "criteria",
-          "url": "/travelgatex/reference/inputobjects/hotelxdestinationlistinput",
-          "description": ""
-        },
-        {
-          "typeString": "RelayInput!",
-          "name": "relay",
-          "url": "/travelgatex/reference/inputobjects/relayinput",
-          "description": ""
-        },
-        {
-          "typeString": "String",
-          "name": "token",
-          "url": "/travelgatex/reference/scalars/string",
-          "description": ""
-        }
-      ]
-    },
-    {
-      "typeString": "[DestinationSearchResult]!",
-      "name": "destinationSearcher",
-      "url": "#",
-      "description": "Returns hotels and destinations that contains the indicated text. ",
-      "isDeprecated": false,
-      "args": [
-        {
-          "typeString": "HotelXDestinationSearcherInput!",
-          "name": "criteria",
-          "url": "/travelgatex/reference/inputobjects/hotelxdestinationsearcherinput",
-          "description": ""
-        }
-      ]
+      "args": null
     },
     {
       "typeString": "HotelSearch",
@@ -246,7 +122,7 @@
       "typeString": "ServiceStatus!",
       "name": "bookingStatusService",
       "url": "/travelgatex/reference/objects/servicestatus",
-      "description": "TODO: me no understand...\nReturns status of the booking service.",
+      "description": "Returns status of the booking service.",
       "isDeprecated": false,
       "args": null
     },
@@ -254,7 +130,7 @@
       "typeString": "Mapping!",
       "name": "mapping",
       "url": "/travelgatex/reference/objects/mapping",
-      "description": "",
+      "description": "Returns map codes of a group. You can get hotel map, room map, and board map.",
       "isDeprecated": false,
       "args": [
         {
@@ -270,7 +146,7 @@
   "requireby": [
     {
       "name": "Query",
-      "description": "",
+      "description": "The query root of TravelgateX's GraphQL interface.",
       "url": "/travelgatex/reference/schema/query"
     }
   ],

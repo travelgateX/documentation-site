@@ -20,6 +20,14 @@
       "args": null
     },
     {
+      "typeString": "Boolean!",
+      "name": "isActive",
+      "url": "/travelgatex/reference/scalars/boolean",
+      "description": "Errors that abort services",
+      "isDeprecated": false,
+      "args": null
+    },
+    {
       "typeString": "[Error!]",
       "name": "error",
       "url": "/travelgatex/reference/objects/error",
@@ -28,18 +36,10 @@
       "args": null
     },
     {
-      "typeString": "Boolean!",
-      "name": "isActive",
-      "url": "/travelgatex/reference/scalars/boolean",
-      "description": "",
-      "isDeprecated": false,
-      "args": null
-    },
-    {
       "typeString": "DateTime!",
       "name": "createdAt",
       "url": "/travelgatex/reference/scalars/datetime",
-      "description": "",
+      "description": "Date created",
       "isDeprecated": false,
       "args": null
     },
@@ -47,7 +47,7 @@
       "typeString": "DateTime!",
       "name": "updatedAt",
       "url": "/travelgatex/reference/scalars/datetime",
-      "description": "",
+      "description": "Date updated",
       "isDeprecated": false,
       "args": null
     }
@@ -76,7 +76,7 @@
     },
     {
       "name": "AdminMutation",
-      "description": "",
+      "description": "The admin query root of TravelgateX's for implementing GraphQL mutations.",
       "url": "/travelgatex/reference/objects/adminmutation"
     }
   ],
@@ -84,6 +84,9 @@
   "operator": "type",
   "typename": "Member"
 }
+You grant access to members which can be either:
+Users: A developer, administrator or any other person from your Organization who interacts with the TravelgateX Platform. An email address can be used as the identity of a User.
+Service Accounts: An application (Client) instead of an individual User. If you prefer, you can create as many Service Accounts as needed to represent different logical components of your application.
 ## GraphQL schema definition
 
 {{% graphql-schema-type %}}

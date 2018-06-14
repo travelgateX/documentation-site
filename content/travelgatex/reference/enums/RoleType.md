@@ -14,31 +14,31 @@
   "enumValues": [
     {
       "name": "VIEWER",
-      "description": "",
+      "description": "Allows a User to make Queries of resources, but not change any resource data",
       "isDeprecated": false,
       "deprecationReason": null
     },
     {
       "name": "EDITOR",
-      "description": "",
+      "description": "Allows a User to make Mutations (changes) to the resource data",
       "isDeprecated": false,
       "deprecationReason": null
     },
     {
       "name": "ADMIN",
-      "description": "",
+      "description": "Allows a User to make All (changes) to the resource",
       "isDeprecated": false,
       "deprecationReason": null
     },
     {
       "name": "EXECUTOR",
-      "description": "",
+      "description": "Allows a User to make use of reources only for extecutations queries.",
       "isDeprecated": false,
       "deprecationReason": null
     },
     {
       "name": "SPECIFIC",
-      "description": "",
+      "description": "Allows a User to make othen kind of operation with the resource. Defined by API.",
       "isDeprecated": false,
       "deprecationReason": null
     }

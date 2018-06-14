@@ -46,7 +46,7 @@
   "operator": "enum",
   "typename": "PluginStepType"
 }
-Plugin Step Type
+Plugin Step Type. https://docs.travelgatex.com/hotelx/plugins/overview/
 ## GraphQL schema definition
 
 {{% graphql-schema-enum %}}

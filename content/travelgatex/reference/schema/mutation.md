@@ -26,6 +26,14 @@
       "description": "",
       "isDeprecated": false,
       "args": null
+    },
+    {
+      "typeString": "PaymentXMutation",
+      "name": "paymentX",
+      "url": "/travelgatex/reference/objects/paymentxmutation",
+      "description": "",
+      "isDeprecated": false,
+      "args": null
     }
   ],
   "deprecatedFields": [
@@ -143,7 +151,7 @@
   "operator": "type",
   "typename": "Mutation"
 }
-Mutations are operations that change or update data on the server
+The root query for implementing GraphQL mutations. Mutations are operations that change or update data on the server
 ## GraphQL schema definition
 
 {{% graphql-schema-type %}}

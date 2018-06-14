@@ -39,21 +39,6 @@
   "deprecatedFields": null,
   "requireby": [
     {
-      "name": "AccessConnection",
-      "description": "",
-      "url": "/travelgatex/reference/objects/accessconnection"
-    },
-    {
-      "name": "SupplierConnection",
-      "description": "",
-      "url": "/travelgatex/reference/objects/supplierconnection"
-    },
-    {
-      "name": "ClientConnection",
-      "description": "",
-      "url": "/travelgatex/reference/objects/clientconnection"
-    },
-    {
       "name": "OrganizationConnection",
       "description": "",
       "url": "/travelgatex/reference/objects/organizationconnection"
@@ -89,9 +74,39 @@
       "url": "/travelgatex/reference/objects/memberconnection"
     },
     {
+      "name": "AccessConnection",
+      "description": "",
+      "url": "/travelgatex/reference/objects/accessconnection"
+    },
+    {
+      "name": "SupplierConnection",
+      "description": "",
+      "url": "/travelgatex/reference/objects/supplierconnection"
+    },
+    {
+      "name": "ClientConnection",
+      "description": "",
+      "url": "/travelgatex/reference/objects/clientconnection"
+    },
+    {
       "name": "ProductConnection",
       "description": "",
       "url": "/travelgatex/reference/objects/productconnection"
+    },
+    {
+      "name": "StoredCardConnection",
+      "description": "",
+      "url": "/travelgatex/reference/objects/storedcardconnection"
+    },
+    {
+      "name": "StatsConnection",
+      "description": "",
+      "url": "/travelgatex/reference/objects/statsconnection"
+    },
+    {
+      "name": "PointOfSaleConnection",
+      "description": "",
+      "url": "/travelgatex/reference/objects/pointofsaleconnection"
     },
     {
       "name": "BoardConnection",
@@ -104,9 +119,9 @@
       "url": "/travelgatex/reference/objects/categoryconnection"
     },
     {
-      "name": "RoomConnection",
-      "description": "RoomList definition",
-      "url": "/travelgatex/reference/objects/roomconnection"
+      "name": "DestinationConnection",
+      "description": "DestinationList definition",
+      "url": "/travelgatex/reference/objects/destinationconnection"
     },
     {
       "name": "HotelConnection",
@@ -114,14 +129,9 @@
       "url": "/travelgatex/reference/objects/hotelconnection"
     },
     {
-      "name": "DestinationConnection",
-      "description": "DestinationList definition",
-      "url": "/travelgatex/reference/objects/destinationconnection"
-    },
-    {
-      "name": "StatsConnection",
-      "description": "",
-      "url": "/travelgatex/reference/objects/statsconnection"
+      "name": "RoomConnection",
+      "description": "RoomList definition",
+      "url": "/travelgatex/reference/objects/roomconnection"
     }
   ],
   "enumValues": null,

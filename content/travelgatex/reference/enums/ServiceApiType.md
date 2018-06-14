@@ -8,49 +8,49 @@
   "enumValues": [
     {
       "name": "HOTEL",
-      "description": "",
+      "description": "When the request has been done against the Hotel API",
       "isDeprecated": false,
       "deprecationReason": null
     },
     {
       "name": "TRANSPORTATION",
-      "description": "",
+      "description": "When the request has been done against the Transportation API",
       "isDeprecated": false,
       "deprecationReason": null
     },
     {
       "name": "CAR",
-      "description": "",
+      "description": "When the request has been done against the Car API",
       "isDeprecated": false,
       "deprecationReason": null
     },
     {
       "name": "TRANSFERS",
-      "description": "",
+      "description": "When the request has been done against the Transfers API",
       "isDeprecated": false,
       "deprecationReason": null
     },
     {
       "name": "ACTIVITIES",
-      "description": "",
+      "description": "When the request has been done against the Activities API",
       "isDeprecated": false,
       "deprecationReason": null
     },
     {
       "name": "VIRTUALACCOUNT",
-      "description": "",
+      "description": "When the request has been done against the Virtual Account API",
       "isDeprecated": false,
       "deprecationReason": null
     },
     {
       "name": "PAYMENT",
-      "description": "",
+      "description": "When the request has been done against the Payment API",
       "isDeprecated": false,
       "deprecationReason": null
     },
     {
       "name": "PACKAGE",
-      "description": "",
+      "description": "When the request has been done against the Package API",
       "isDeprecated": false,
       "deprecationReason": null
     }

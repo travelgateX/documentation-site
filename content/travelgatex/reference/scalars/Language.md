@@ -6,11 +6,6 @@
   "deprecatedFields": null,
   "requireby": [
     {
-      "name": "Text",
-      "description": "",
-      "url": "/travelgatex/reference/interfaces/text"
-    },
-    {
       "name": "HotelCriteriaSearchInput",
       "description": "Search criteria contains destination, travel dates and the number of pax in each room.\nYou must preload the other fields in our system by complete the fields absents.",
       "url": "/travelgatex/reference/inputobjects/hotelcriteriasearchinput"
@@ -49,6 +44,11 @@
       "name": "DefaultSettingsInput",
       "description": "",
       "url": "/travelgatex/reference/inputobjects/defaultsettingsinput"
+    },
+    {
+      "name": "Text",
+      "description": "",
+      "url": "/travelgatex/reference/interfaces/text"
     }
   ],
   "enumValues": null,

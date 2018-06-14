@@ -104,7 +104,7 @@
   "requireby": [
     {
       "name": "Access",
-      "description": "",
+      "description": "An Access is a set of credentials and configuration in order to access the system of a Supplier.",
       "url": "/travelgatex/reference/objects/access"
     }
   ],

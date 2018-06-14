@@ -31,7 +31,7 @@
       "typeString": "MemberType!",
       "name": "type",
       "url": "/travelgatex/reference/enums/membertype",
-      "description": "",
+      "description": "Member Type",
       "isDeprecated": false,
       "args": null
     },
@@ -39,7 +39,7 @@
       "typeString": "GroupConnection",
       "name": "groups",
       "url": "/travelgatex/reference/objects/groupconnection",
-      "description": "",
+      "description": "which groups the member is in?",
       "isDeprecated": false,
       "args": [
         {
@@ -84,7 +84,7 @@
       "typeString": "RoleConnection",
       "name": "roles",
       "url": "/travelgatex/reference/objects/roleconnection",
-      "description": "",
+      "description": "which roles the member has in?",
       "isDeprecated": false,
       "args": [
         {
@@ -130,7 +130,7 @@
   "requireby": [
     {
       "name": "Member",
-      "description": "",
+      "description": "You grant access to members which can be either:\nUsers: A developer, administrator or any other person from your Organization who interacts with the TravelgateX Platform. An email address can be used as the identity of a User.\nService Accounts: An application (Client) instead of an individual User. If you prefer, you can create as many Service Accounts as needed to represent different logical components of your application.",
       "url": "/travelgatex/reference/objects/member"
     }
   ],

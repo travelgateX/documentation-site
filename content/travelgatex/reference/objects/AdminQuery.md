@@ -4,136 +4,12 @@
   "weight": 1,
   "fields": [
     {
-      "typeString": "AccessConnection",
-      "name": "accesses",
-      "url": "/travelgatex/reference/objects/accessconnection",
-      "description": "Obtain a list of accesses for a filter",
+      "typeString": "Boolean",
+      "name": "a",
+      "url": "/travelgatex/reference/scalars/boolean",
+      "description": "",
       "isDeprecated": false,
-      "args": [
-        {
-          "typeString": "Int",
-          "name": "first",
-          "url": "/travelgatex/reference/scalars/int",
-          "description": ""
-        },
-        {
-          "typeString": "Int",
-          "name": "last",
-          "url": "/travelgatex/reference/scalars/int",
-          "description": ""
-        },
-        {
-          "typeString": "String",
-          "name": "before",
-          "url": "/travelgatex/reference/scalars/string",
-          "description": ""
-        },
-        {
-          "typeString": "String",
-          "name": "after",
-          "url": "/travelgatex/reference/scalars/string",
-          "description": ""
-        },
-        {
-          "typeString": "AccessFilter",
-          "name": "filter",
-          "url": "/travelgatex/reference/inputobjects/accessfilter",
-          "description": ""
-        }
-      ]
-    },
-    {
-      "typeString": "SupplierConnection",
-      "name": "suppliers",
-      "url": "/travelgatex/reference/objects/supplierconnection",
-      "description": "Obtain all suppliers for a filter.",
-      "isDeprecated": false,
-      "args": [
-        {
-          "typeString": "Int",
-          "name": "first",
-          "url": "/travelgatex/reference/scalars/int",
-          "description": ""
-        },
-        {
-          "typeString": "Int",
-          "name": "last",
-          "url": "/travelgatex/reference/scalars/int",
-          "description": ""
-        },
-        {
-          "typeString": "String",
-          "name": "before",
-          "url": "/travelgatex/reference/scalars/string",
-          "description": ""
-        },
-        {
-          "typeString": "String",
-          "name": "after",
-          "url": "/travelgatex/reference/scalars/string",
-          "description": ""
-        },
-        {
-          "typeString": "SupplierFilter",
-          "name": "filter",
-          "url": "/travelgatex/reference/inputobjects/supplierfilter",
-          "description": ""
-        }
-      ]
-    },
-    {
-      "typeString": "ClientConnection",
-      "name": "clients",
-      "url": "/travelgatex/reference/objects/clientconnection",
-      "description": "Obtain all clients for a filter.",
-      "isDeprecated": false,
-      "args": [
-        {
-          "typeString": "Int",
-          "name": "first",
-          "url": "/travelgatex/reference/scalars/int",
-          "description": ""
-        },
-        {
-          "typeString": "Int",
-          "name": "last",
-          "url": "/travelgatex/reference/scalars/int",
-          "description": ""
-        },
-        {
-          "typeString": "String",
-          "name": "before",
-          "url": "/travelgatex/reference/scalars/string",
-          "description": ""
-        },
-        {
-          "typeString": "String",
-          "name": "after",
-          "url": "/travelgatex/reference/scalars/string",
-          "description": ""
-        },
-        {
-          "typeString": "ClientFilter",
-          "name": "filter",
-          "url": "/travelgatex/reference/inputobjects/clientfilter",
-          "description": ""
-        }
-      ]
-    },
-    {
-      "typeString": "ServiceApi",
-      "name": "serviceApi",
-      "url": "/travelgatex/reference/objects/serviceapi",
-      "description": "Obtain a ServiceAPI",
-      "isDeprecated": false,
-      "args": [
-        {
-          "typeString": "ServiceApiFilter",
-          "name": "filter",
-          "url": "/travelgatex/reference/inputobjects/serviceapifilter",
-          "description": ""
-        }
-      ]
+      "args": null
     },
     {
       "typeString": "OrganizationConnection!",
@@ -476,7 +352,7 @@
   "requireby": [
     {
       "name": "Query",
-      "description": "",
+      "description": "The query root of TravelgateX's GraphQL interface.",
       "url": "/travelgatex/reference/schema/query"
     }
   ],
@@ -484,6 +360,7 @@
   "operator": "type",
   "typename": "AdminQuery"
 }
+The admin query root of TravelgateX's GraphQL interface.
 ## GraphQL schema definition
 
 {{% graphql-schema-type %}}

@@ -15,19 +15,13 @@
       "typeString": "PageInfo!",
       "name": "pageInfo",
       "url": "/travelgatex/reference/objects/pageinfo",
-      "description": "",
+      "description": "Indicates info about page",
       "isDeprecated": false,
       "args": null
     }
   ],
   "deprecatedFields": null,
-  "requireby": [
-    {
-      "name": "HotelXQuery",
-      "description": "",
-      "url": "/travelgatex/reference/objects/hotelxquery"
-    }
-  ],
+  "requireby": null,
   "enumValues": null,
   "operator": "type",
   "typename": "BoardConnection"
@@ -40,7 +34,3 @@ BoardList definition
 ## Fields
 
 {{% graphql-field %}}
-
-## Required by
-
-{{% graphql-require-by %}}

@@ -37,13 +37,7 @@
     }
   ],
   "deprecatedFields": null,
-  "requireby": [
-    {
-      "name": "AdminQuery",
-      "description": "",
-      "url": "/travelgatex/reference/objects/adminquery"
-    }
-  ],
+  "requireby": null,
   "enumValues": null,
   "operator": "type",
   "typename": "ServiceApi"
@@ -56,7 +50,3 @@ Information related to a Service API
 ## Fields
 
 {{% graphql-field %}}
-
-## Required by
-
-{{% graphql-require-by %}}

@@ -20,37 +20,37 @@
     },
     {
       "name": "OK",
-      "description": "",
+      "description": "Stats in OK state",
       "isDeprecated": false,
       "deprecationReason": null
     },
     {
       "name": "INTEGRATION",
-      "description": "",
+      "description": "Stats in NOK state caused by integration issues",
       "isDeprecated": false,
       "deprecationReason": null
     },
     {
       "name": "PROVIDER",
-      "description": "",
+      "description": "Stats in NOK state caused by supplier issues",
       "isDeprecated": false,
       "deprecationReason": null
     },
     {
       "name": "COMMUNICATION",
-      "description": "",
+      "description": "Stats in NOK state caused by Timeout",
       "isDeprecated": false,
       "deprecationReason": null
     },
     {
       "name": "HUB",
-      "description": "",
+      "description": "Stats in NOK state caused by HUB issues",
       "isDeprecated": false,
       "deprecationReason": null
     },
     {
       "name": "OTHER",
-      "description": "",
+      "description": "Stats in NOK state caused by other causes",
       "isDeprecated": false,
       "deprecationReason": null
     }
