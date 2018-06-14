@@ -57,4 +57,4 @@ You can grant roles to members, which define who has what type of access. A poli
 
 
 
-{{% alert theme="info" %}}For more information about IAM configuration, check out our tutorial <a href="https://docs.travelgatex.com/travelgatex/tutorials/howto-configure-permissions/">**How-to configure HotelX permissions**</a>.{{% /alert %}}
+{{% alert theme="info" %}}For more information about IAM configuration, check out our tutorial <a href="/travelgatex/tutorials/howto-configure-permissions/">**How-to configure HotelX permissions**</a>.{{% /alert %}}
