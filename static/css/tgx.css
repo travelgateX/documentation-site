@@ -1733,9 +1733,23 @@ div.deprecated-entities-container.active {
     display: block;
   }
 
+  div.container_row>div.content-center {
+margin-top: 120px;
+  }
+
   #searchbar > div.sb_menu_div > ul {
     margin-top: -25px;
     justify-content: space-between !important;
+  }
+}
+@media (min-width: 769px) and (max-width: 800px) {
+  #searchbar {
+    left: 3%;
+  }
+}
+@media (min-width: 801px) and (max-width: 850px) {
+  #searchbar {
+    left: 1.5%;
   }
 }
 @media (max-width: 769px){
