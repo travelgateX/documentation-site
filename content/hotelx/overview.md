@@ -18,7 +18,7 @@ Each and every layer described in the this figure is explained as follows:
 
 ### GraphQL Gateway
 
-Our gateway is the only endpoint to access all of our products. Teh gateway also manages [authentication and authorization](https://docs.travelgatex.com/travelgatex/security/overview/) of our system. You can read about this, [here](http://docs.travelgatex.com/travelgatex/overview/).
+Our gateway is the only endpoint to access all of our products. Teh gateway also manages [authentication and authorization](/travelgatex/security/overview/) of our system. You can read about this, [here](http://docs.travelgatex.com/travelgatex/overview/).
 
 ### Business Logic
 
@@ -39,7 +39,7 @@ HotelX allows you to add Plugins to our API.
 
 {{% alert theme="info" %}}A **plugin** is a piece of code that is executed inside our application.{{% /alert %}}
 
-There are a few points in the request lifetime where anyone can [develop a plugin](https://docs.travelgatex.com/hotelx/plugins/). A plugin receives the request or response as an input and outputs the changed request or response. 
+There are a few points in the request lifetime where anyone can [develop a plugin](/hotelx/plugins/). A plugin receives the request or response as an input and outputs the changed request or response. 
 
 {{% alert theme="info" %}}Plugins are a core package in the [Go Programming language](https://golang.org/). 
 You can learn more about how to use plugins [here](https://golang.org/pkg/plugin/).{{% /alert %}}

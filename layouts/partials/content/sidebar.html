@@ -89,11 +89,31 @@
 
 
 <script type="text/javascript">
+ // Functions
+  function resizeElements(){
+    const footer = $('#footer_docs');
+    const winWidth = $(window).outerWidth();
+    const navWidth = $('#navbar').outerWidth();
+    const newFooterWidth = winWidth - navWidth;
+    
+    footer.css({"width":`${newFooterWidth}px`,"left":navWidth+"px"});
+    setTimeout(_=>{
+      if(winWidth > 767)
+        footer.show(); 
+      else
+        footer.hide(); 
+      $('#navigation').show()
+      },0);
+  }
   $(document).ready(()=>{
     const schemaLIs = $('li[data-nav-id="/travelgatex/reference/schema/"]').find('ul').children();
     if((schemaLIs || []).length){
       $(schemaLIs)[0].prepend($(schemaLIs)[1]);
     }
+    resizeElements();
+    $(window).resize(resizeElements);
+    $('#navbar').resize(resizeElements);
+
     $('.directory').click((event)=>{
       if($(event.currentTarget.parentElement).hasClass("parent")){
         $(event.currentTarget.parentElement).removeClass("parent")
@@ -128,7 +148,7 @@
       $('html, body').animate({
         scrollTop: $target.offset().top - 60
       }, 500);
-	});
+	  });
   })
 
 </script>

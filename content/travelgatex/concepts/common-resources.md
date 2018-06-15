@@ -5,7 +5,7 @@ description = "Learn about common resources used in TravelgateX"
 alwaysopen = false
 +++
 
-On this page you will learn more about common resources used in TravelgateX. You can also refer to the overarching [core concepts that apply to all TravelgateX APIs](https://docs.travelgatex.com/getting-started/concepts/). 
+On this page you will learn more about common resources used in TravelgateX. You can also refer to the overarching [core concepts that apply to all TravelgateX APIs](/getting-started/concepts/). 
 
 
 ## Supplier

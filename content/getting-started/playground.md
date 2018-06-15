@@ -28,7 +28,9 @@ You should get the following:
 (put in query response)
 ```
 
-{{% playground "https://api.travelgatex.com" %}}
+{{< graphiql-script queries="[{\"apikey\":\"q8ggxpoVDW76Kw918hwnnRvxlZmAP2QZ\",\"gist\":\"https://gist.githubusercontent.com/tgx-bot/ba0469dda654a1639294edaadfed1a65/raw\",\"divname\":\"div_main_playground\"}]" >}}
+{{< graphiql-styles >}}
+{{< graphiql-tags tag="div_main_playground" >}}
 
 ## More Queries
 Now try these query examples:
@@ -39,7 +41,7 @@ Now try these query examples:
 <strong>2. Search for hotels in Mallorca with a swimming pool</strong>
 - explain/show
 
-Once you are comfortable with making queries in the API Playground, you can use the same query structure in your applications. Check out the pages <a href="https://docs.travelgatex.com/learning-graphql/">Learning GraphQL</a> to learn more about including queries in the code of your client applications.
+Once you are comfortable with making queries in the API Playground, you can use the same query structure in your applications. Check out the pages <a href="/learning-graphql/">Learning GraphQL</a> to learn more about including queries in the code of your client applications.
 
 ### Further Reading
 
