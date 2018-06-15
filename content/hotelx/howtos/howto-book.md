@@ -1,12 +1,12 @@
 +++
 title = "Book"
 pagetitle = "Book (How To Perform a Booking)"
-description = ""
-weight = 1
+description = "How to create a new Booking by calling the Book Mutation"
+weight = 2
 alwaysopen = false
 +++
 
-Flow to book
+Flow to book 
 
 ## HotelX Settings
 
