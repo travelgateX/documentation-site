@@ -19,7 +19,39 @@
       {{ partial "content/sidebar.html" . }}
     </div>
     <div class="content">
-      <div class="pull-right iso-input-search" style="left:-9%;">
+
+      
+    <div id="searchbar" class="container iso-input-search">
+        <div class="sb_search_div">
+          <div class="ico-label">
+            <i class="fa fa-search" aria-hidden="true"></i>
+          </div>
+          <input data-search-input class="form-control" id="search-by" type="text" placeholder="Search docs..." style="border-bottom: 0px !important;">
+        </div>
+        <div class="sb_menu_div">
+          <ul class="nav justify-content-end">
+            <li>
+              <a href="https://slack.travelgatex.com/" target="_blank">
+                <span>Chat</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/travelgateX/Issue-tracker" target="_blank">
+                <span>Issues Tracker</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://api.travelgatex.com" target="_blank">
+                <span>Playground
+                  <i title="Play →" class="icon-control-play"></i>
+                </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="pull-right iso-input-search" style="left:-9%; display:none">
 
       <div class="iso-input-search hidden-xs-down" style="width:30%">
         {{- if not .Site.Params.disableSearch}}
@@ -51,7 +83,7 @@
       </div>
 
       <div class="container">
-        <div class="row">
+        <div class="container_row">
           <div class="content-center">
             <div class="p-4">
               <h1 class="pageTitle">{{if .Params.pagetitle }}{{ .Params.pagetitle }}{{else}}{{ .Params.title }}{{end}}</h1>
