@@ -587,38 +587,48 @@ a.card-lv2:hover {
   }
 }
 
+body>div.content>div.container {
+  margin-left: 18%;
+}
+/* 
 .content-center {
   margin-left: 18%;
   padding: 0 25px;
-}
+} */
 
 @media (min-width: 1710px) and (max-width: 1799px) {
-  .content-center {
+  body>div.content>div.container {
     margin-left: 20%;
   }
 }
 
 @media (min-width: 1600px) and (max-width: 1709px) {
-  .content-center {
+  body>div.content>div.container {
     margin-left: 21%;
   }
 }
 @media (min-width: 1450px) and (max-width: 1599px) {
-  .content-center {
+  body>div.content>div.container {
     margin-left: 24%;
   }
 }
 
-@media (min-width: 992px) and (max-width: 1449px) {
-  .content-center {
+@media (min-width: 1250px) and (max-width: 1449px) {
+  body>div.content>div.container {
     margin-left: 27%;
   }
 }
-@media (min-width: 769px) and (max-width: 991px){
-  .content-center {
-    margin-left: 38%;
+
+@media (min-width: 992px) and (max-width: 1249px) {
+  body>div.content>div.container {
+    margin-left: 30%;
   }
 }
+@media (min-width: 769px) and (max-width: 991px){
+  body>div.content>div.container {
+    margin-left: 38%;
+  }
+} 
 
 @media (max-width: 768px) {
   .content-center {
