@@ -25,7 +25,7 @@ This document provides guidance for contributors to the TravelgateX Platform Com
 
 Let's get these things out of the way right up front:
 
-* Don't sell or do marketing.
+* Don't sell or do marketing. -> TBD
 * Don't editorialize. Document.
 * Don't make assumptions about your reader unless you state the assumptions up front.
 * Don't use absolutes, such as "instantaneously," "perfectly," "absolutely," "totally," or "100%," unless you can back up what you're saying with documentation.
@@ -170,9 +170,22 @@ Avoid needless repetition. Telling the reader a fact one time usually suffices.
 
 Here are style guidelines to help you craft a great article.
 
+### Acronyms
+
+Don’t create acronyms from product or feature names.
+Only use acronyms that your audience is familiar with. The A–Z word list has guidelines for many common acronyms, and some acronyms are so widely used that they’re in [The American Heritage Dictionary](https://ahdictionary.com/).
+
+**For example:**
+Conversation as a platform (CaaP) has the potential to make booking a flight as easy as sending a text message.
+Developers are also looking to CaaP to make computing more accessible to users of all abilities.
+Learn how to connect a USB device to your Microsoft Surface.
+
+
 ### Headings
 
 Use headings to organize your page into sections and subsections. Headings make it easier for readers to skim and understand what the article is about. Capitalize only the first word and product names in your headings.
+
+Avoid using an acronym for the first time in a title or heading, unless it’s a keyword that you need to place in the title or heading for SEO. If the first use of the acronym is in a title or heading, introduce the acronym (in parentheses, following the spelled-out term) in the following body text.
 
 **For example:**
 
@@ -271,6 +284,10 @@ Provide inline links to relevant information, where appropriate. For example, li
 * Information that gives more depth than is appropriate for the current context.
 
 Provide direct links to pages in the Google Cloud Console when you give Cloud Console-based instructions. These _deep links_ save the reader time spent looking for the right page and can save you time writing descriptions of how to find the page. Deep links open the page with the project set to the user's last-used project.
+
+* Write short link text (four or fewer words) that's descriptive and includes keywords.
+* If it works, use the title or description of the target page as link text.
+* Link to background and related information rather than summarizing it.
 
 ## Markdown usage
 
