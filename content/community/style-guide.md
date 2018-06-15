@@ -180,7 +180,6 @@ Conversation as a platform (CaaP) has the potential to make booking a flight as 
 Developers are also looking to CaaP to make computing more accessible to users of all abilities.
 Learn how to connect a USB device to your Microsoft Surface.
 
-
 ### Headings
 
 Use headings to organize your page into sections and subsections. Headings make it easier for readers to skim and understand what the article is about. Capitalize only the first word and product names in your headings.
@@ -288,6 +287,16 @@ Provide direct links to pages in the Google Cloud Console when you give Cloud Co
 * Write short link text (four or fewer words) that's descriptive and includes keywords.
 * If it works, use the title or description of the target page as link text.
 * Link to background and related information rather than summarizing it.
+
+### Formatting common text elements
+
+| Element | Convention | Example |
+| ------- | ---------- | ------- |
+| Database names | Bold. The capitalization of database names varies | **Contoso** database |
+| Emphasis       | It’s OK to use italic formatting sparingly for emphasis | Cybercriminals might call you and claim to be from Microsoft. _Be aware that Microsoft will never call you to charge for security or software fixes._ |
+| New terms | Italicize the first mention of a new term if you're going to define it immediately in text | Profile may consist of _buyer_ or _seller_ |
+| Products, services, apps, and trademarks| Usually title-style capitalization | HotelX<br>Stats
+
 
 ## Markdown usage
 
