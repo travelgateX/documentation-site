@@ -135,20 +135,20 @@ TravelgateX offers a set of logos and architectural diagram assets for your use:
 
 Follow these guidelines for how to organize your documents:
 
-* Create a new folder for your document.
+* If necessary, create a new folder for your document.
 * Name the folder by [slugifying](http://slugify.net/) your doc's title. You can omit articles such as "and" and "the."
 * Name your new doc `index.md`.
-* Store images in the same folder.
+* Store media in the same folder. i.e. `/images` as discused [here](https://discourse.gohugo.io/t/best-practices-assets-with-content/9984).
 
-For example, if you submit a tutorial named "Using Cloud SQL to Conquer the World":
+For example, if you submit a tutorial named "Identity and Access Management":
 
-* **Folder name**: `using-cloud-sql-conquer-world`
-* **URL**: `https://cloud.google.com/community/tutorials/using-cloud-sql-conquer-world/`
+* **Folder name**: `security`
+* **URL**: `https://cloud.google.com/travelgatex/security/identity-access-management`
 
 If you don't have any additional files that go along with your tutorial, you can
-simply make a top-level Markdown file within the `tutorials/` folder, e.g.
-`tutorials/using-cloud-sql-conquer-world.md` instead of
-`tutorials/using-cloud-sql-conquer-world/index.md`.
+simply make a top-level Markdown file within the `security/` folder, e.g.
+`security/identity-access-management.md` instead of
+`security/identity-access-manangement/index.md`.
 
 ## General content guidelines
 

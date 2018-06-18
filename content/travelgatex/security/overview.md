@@ -55,5 +55,4 @@ Whenever the user wants to access a protected resource, the user agent should se
 
 Once the `Member` is authenticated we must authorize the `Partner` to use the requested `Resource`.
 
-TravelgateX Indentity Access Management ([IAM](/travelgatex/security/iam))  let Partner administrators authorize who can take action on specific resources. This gives you full control and internal visilibity to manage your resources centrally.
-
+TravelgateX [Indentity and Access Management](/travelgatex/security/identity-access-management) let Partner administrators authorize who can take action on specific resources. This gives you full control and internal visilibity to manage your resources centrally.
