@@ -585,17 +585,12 @@ a.card-lv2:hover {
 }
 
 body > div.content > div.container {
-  margin-left: 18%;
+  margin-left: 16%;
 }
 
 div.container_row {
   width: 100%;
 }
-/* 
-.content-center {
-  margin-left: 18%;
-  padding: 0 25px;
-} */
 
 @media (min-width: 1710px) and (max-width: 1799px) {
   body > div.content > div.container {
