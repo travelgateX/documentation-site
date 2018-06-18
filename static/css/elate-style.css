@@ -517,7 +517,6 @@ h6 {
   margin-top: -60px;
   z-index: 10;
 }
-
 @media screen and (max-width: 768px) {
   #fh5co-intro {
     padding-bottom: 3em;
@@ -907,7 +906,6 @@ h6 {
   margin-left: 20px;
   font-weight: 400;
 }
-
 #fh5co-testimonials .box-testimony .author a {
   color: #2fd475;
 }
@@ -949,6 +947,7 @@ h6 {
 #fh5co-work .section-heading h2:after {
   color: #182945;
 }
+
 #fh5co-work .section-heading h3 {
   color: #182945;
   margin-bottom: 20px;
@@ -1050,8 +1049,7 @@ a:active {
 #fh5co-work .apis {
   font-size: 20px;
   font-weight: 400;
-  margin-top: 20px;
-  /* border-top: 1px solid rgba(204,213,218,.6); */
+  margin-top: 20px; /* border-top: 1px solid rgba(204,213,218,.6); */
 }
 .fh5co-person {
   border: 2px solid #f2f2f2;
@@ -1065,7 +1063,6 @@ a:active {
     margin-bottom: 3.5em;
   }
 }
-
 .fh5co-person figure {
   position: absolute;
   margin-top: -60px;
@@ -1129,7 +1126,6 @@ a:active {
   list-style: none;
   font-size: 15px;
 }
-
 #fh5co-contact .fh5co-contact-info li i {
   position: absolute;
   top: 0.2em;
@@ -1152,8 +1148,7 @@ a:active {
 #fh5co-contact .form-control::placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: rgba(24, 41, 69, 0.6);
-  opacity: 1;
-  /* Firefox */
+  opacity: 1; /* Firefox */
 }
 #fh5co-contact .form-control:-ms-input-placeholder {
   /* Internet Explorer 10-11 */
@@ -1171,6 +1166,7 @@ a:active {
 #fh5co-contact .row-bottom-padded-md {
   padding-bottom: 1.5em;
 }
+
 .section-heading {
   float: left;
   width: 100%;
@@ -1182,8 +1178,7 @@ a:active {
   font-size: 45px;
   color: #182945;
   position: relative;
-  display: block;
-  /* padding-bottom: 20px; */
+  display: block; /* padding-bottom: 20px; */
   line-height: 1.5;
 }
 /* .section-heading h2:after {
@@ -1207,7 +1202,6 @@ a:active {
   line-height: 1.5;
   margin-bottom: 0;
 }
-
 @media screen and (max-width: 768px) {
   .section-heading h3 {
     font-size: 24px !important;
@@ -1248,6 +1242,7 @@ a:active {
   text-transform: uppercase;
   text-indent: -55px;
   background: #52d3aa;
+
   transition: all 0.2s ease-out;
 }
 .fh5co-nav-toggle i::before,
@@ -1311,27 +1306,33 @@ a:active {
     display: block;
     top: -8px;
   }
-  a.active + a.navbar-brand {
-    display: none !important;
-  }
   #navbar > ul.nav.navbar-right {
-    width: 65vw;
-    background-color: teal;
-    padding: 6px;
-    border-radius: 12px;
-    margin: -10px -25px 0 0 !important;
-  }
-  header#fh5co-header.fh5co-animated>div.container
-    > nav
-    > div#navbar
-    > ul.nav.navbar-right {
-    background-color: teal !important;
+    width: 100%;
+    padding: 5px;
+    border-radius: 3px;
+    margin: -10px 0 0 0 !important;
   }
   #navbar {
     border: none;
-    
+  }
+
+  header>div>nav {
+    width: 80vw;
+    position: absolute !important;
+    background-color: #44b8e9 !important;
+    right: 20px;
+  }
+
+  nav>div {
+    width: 100%;
   }
   
+  header.isOpen {
+    height: 65px !important;
+  }
+  a.js-fh5co-nav-toggle {
+    transform: translateX(-15px);
+  }
 }
 #footer {
   position: relative;
@@ -1369,11 +1370,11 @@ a:active {
   color: #fff;
   padding-top: 17px;
 }
+
 #footer .top-footer {
   padding-top: 35px;
   background-color: #082da6;
 }
-
 #footer .top-footer .tit {
   font-size: 17px;
   font-weight: 400;
@@ -1416,7 +1417,6 @@ a:active {
   -o-transition: 0.3s;
   transition: 0.3s;
 }
-
 .btn.btn-primary {
   background: #0562ce;
   color: #fff;
@@ -1468,14 +1468,12 @@ a:active {
 .social li a i:hover {
   color: #0562ce;
 }
-
 .social.social-box a .fa {
   color: #fff;
 }
 .social.social-circle a {
   color: #fff;
 }
-
 #map {
   width: 100%;
   height: 500px;
@@ -1517,6 +1515,7 @@ a:active {
     width: 100%;
   }
 }
+
 .row-bottom-padded-lg {
   padding-bottom: 0;
 }
@@ -1616,7 +1615,6 @@ a:active {
 .fade-in {
   opacity: 0; /* make things invisible upon start */
   -webkit-animation: fadeIn ease-in 1; /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
-
   -moz-animation: fadeIn ease-in 1;
   animation: fadeIn ease-in 1;
   -webkit-animation-fill-mode: forwards; /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1) */
@@ -1626,7 +1624,6 @@ a:active {
   -moz-animation-duration: 1s;
   animation-duration: 1s;
 }
-
 /* Make keyframes that generate the drawing effect */
 @keyframes drawing-graphic-home {
   from {
@@ -1664,10 +1661,10 @@ a:active {
   stroke-dashoffset: -670;
   animation: drawing-graphic-home 4s 0s forwards;
 } */
-
 .travelgatex_platform {
   width: 70%;
 }
+
 .travelgatex_platform #line1 {
   fill-opacity: 0;
   stroke-width: 2;
