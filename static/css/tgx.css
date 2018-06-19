@@ -536,11 +536,13 @@ a.card-lv2:hover {
 
   nav.menu-nav > ul {
     position: absolute;
+    width: 100%;
     right: inherit;
   }
 
   #navbar {
-    width: 50%;
+    width: 50%; 
+    max-width: 50%;
   }
 
   .menu-left {
@@ -581,6 +583,7 @@ a.card-lv2:hover {
 @media (max-width: 575px) {
   #navbar {
     width: 90%;
+    max-width: 90%;
   }
 }
 
