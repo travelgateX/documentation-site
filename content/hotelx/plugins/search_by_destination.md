@@ -1,13 +1,13 @@
 +++
-title = "Net Price"
-pagetitle = "Net Price"
-description = "Convert Gross Pricess into Net Prices."
+title = "Search by destination"
+pagetitle = "Search by destination"
+description = "Enables the search query to request per destinations by converting destination codes to hotel codes"
 icon = "fa-exchange"
 weight = 4
 alwaysopen = false
-+++
++++ 
 
-Search by destinations is a feature to search by destinations codes, these codes will be converted to hotel codes, then merged with the hotel codes sent as criteria if any, and finally requested to suppliers. In order to achieve the destination to hotel conversion, a source must be specified in a plugin.
+Search by destinations is a feature to search by destinations codes in the Search query, to use it, codes must be sent in 'CriteriaSearch'. These codes will be converted to hotel codes, then merged with the hotel codes sent in criteria if any, and finally requested to suppliers. In order to achieve the destination to hotel conversion, a source must be specified in a plugin.
 
 ## Plugin
 
