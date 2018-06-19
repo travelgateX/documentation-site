@@ -34,7 +34,7 @@ To communicate with our GraphQL server, you'll need an access token with the rig
 
 ## Making Requests
 
-The best place to test how to make GraphQL queries in TravelgateX is to start with our interactive <a href="https://api.travelgatex.com/">API Playground</a>. You can also use <a href="https://curl.haxx.se" target="_blank">curl</a> or any other HTTP-speaking library.
+The best place to test how to make GraphQL queries in TravelgateX is to start with our interactive [API Playground](https://api.travelgatex.com/). You can also use [curl](https://curl.haxx.se) or any other HTTP-speaking library.
 
 {{% alert theme="danger" %}}All **LIVE** traffic **MUST** enable GZIP compression in the HTTP header{{% /alert %}}
 
@@ -42,7 +42,7 @@ The best place to test how to make GraphQL queries in TravelgateX is to start wi
 Accept-Encoding: gzip
 ```
 
-To query GraphQL using <a href="https://curl.haxx.se" target="_blank">curl</a> , make a POST request with a JSON payload. The payload must contain a string called query:
+To query GraphQL using [curl](https://curl.haxx.se), make a POST request with a JSON payload. The payload must contain a string called query:
 
 ```bash
 curl -X\
@@ -80,16 +80,6 @@ You can easily **share your Queries with others by generating a link** using the
 
 TravelgateX follows some conventions about schema definition:
 
-* [Relay schema requirements](#Relay Implementation)
+* [Relay schema implementation](https://facebook.github.io/relay/)
 * [Definition of custom scalar types](/travelgatex/reference/scalars/)
 * [Token Based Authentication](/travelgatex/security/overview/)
-
-### Relay Implementation
-
-TravelgateX uses the [Relay](https://facebook.github.io/relay/) schema requirements for our own Resources, but other resources, such as _Seller search response_, are not modeled with Relay practices.
-
-We chose Relay at TravelgateX in order to standarize:
-
-* Querying paginated collections ("Connections" and "Edges")
-* Identifying objects directly from the root of a query (to avoid long nested queries)
-* Providing mutation input data.
