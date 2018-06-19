@@ -18,7 +18,7 @@ Each and every layer described in the this figure is explained as follows:
 
 ### GraphQL Gateway
 
-Our gateway is the only endpoint to access all of our products. Teh gateway also manages [authentication and authorization](/travelgatex/security/overview/) of our system. You can read about this, [here](http://docs.travelgatex.com/travelgatex/overview/).
+Our gateway is the only endpoint to access all of our products. The gateway also manages [authentication and authorization](/travelgatex/security/overview/) of our system. You can read about this, [here](http://docs.travelgatex.com/travelgatex/overview/).
 
 ### Business Logic
 

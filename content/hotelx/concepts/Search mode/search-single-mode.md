@@ -10,7 +10,7 @@ On this page you will learn about **Transactional Booking Flow** to Search, quot
 
 ## Search Single Mode
 
-This mode is used when the client only wants to get options from a single access, for this, the client must indicate in the request the code of the access that them want to use. In the request have to use the access filter, you can find a sample [here](https://graphqlbin.com/n5nXhX):
+This mode is used when the client only wants to get options from a single access, for this, the client must indicate in the request the code of the access that they want to use. In the request have to use the access filter, you can find a sample [here](https://graphqlbin.com/n5nXhX):
 
 ```
 {

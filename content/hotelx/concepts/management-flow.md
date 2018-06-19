@@ -10,7 +10,7 @@ On this page you will learn how to manage and control bookings and management fl
 
 ## Cancellation
 
-Performs a Seller [booking](/product/connectx/hotel/concepts/book-transactions/#book) cancellation.
+Performs a Seller [booking](/hotelx/quickstart/#cancel) cancellation.
 
 ### Operation
 
