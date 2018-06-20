@@ -1,7 +1,7 @@
 +++
 title = "Search by destination"
 pagetitle = "Search by destination"
-description = "Enables the search query to request per destinations by converting destination codes to hotel codes"
+description = "Enables search query to request per destinations by converting destination codes to hotel codes"
 icon = "fa-exchange"
 weight = 4
 alwaysopen = false
