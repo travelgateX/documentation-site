@@ -1,27 +1,27 @@
-#navbar{
+#navbar {
   position: fixed;
-  top:0;
+  top: 0;
   bottom: 0;
   max-width: 28%;
-  padding:0;
+  padding: 0;
   padding-left: 1rem;
   border-right: 1px solid rgba(204, 213, 218, 0.6);
-  z-index: 2;
+  z-index: 200;
   background-color: #f7f8f9;
 }
 
-@media (min-width: 769px) and (max-width: 991px){
-  #navbar{
+@media (min-width: 769px) and (max-width: 991px) {
+  #navbar {
     max-width: 40%;
   }
 }
 
-#navbar .menu-nav{
+#navbar .menu-nav {
   margin-top: 56px;
   position: relative;
   overflow-y: auto;
   background-color: #f7f8f9;
-  padding:0;
+  padding: 0;
 }
 
 nav.menu-nav > ul {
@@ -30,18 +30,18 @@ nav.menu-nav > ul {
   /* right: 6%; */
 }
 
-nav.menu-nav > ul::-webkit-scrollbar{
+nav.menu-nav > ul::-webkit-scrollbar {
   width: 4px;
   background-color: transparent;
   color: #0562ce;
 }
 
-nav.menu-nav > ul::-webkit-scrollbar-thumb{
-  background: rgba(0,0,0,.26);
+nav.menu-nav > ul::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.26);
 }
 
 nav a {
-  color:#182945 !important;
+  color: #182945 !important;
 }
 
 nav a span {
@@ -55,11 +55,11 @@ nav a span {
   padding-left: 0 !important;
 }
 
-nav a span:hover{
+nav a span:hover {
   background-color: transparent;
 }
 
-nav ul.topics{
+nav ul.topics {
   font-size: 1.7rem;
 }
 
@@ -75,24 +75,24 @@ nav ul.topics .category-icon {
   font-size: 2.2rem;
 }
 
-nav ul.topics li ul{
+nav ul.topics li ul {
   font-size: 1.5rem;
 }
 
-img[src$="#center"] {
+img[src$='#center'] {
   width: auto;
   display: block;
   margin: 3rem auto; /* you can replace the vertical '0.7rem' by whatever floats your boat, but keep the horizontal 'auto' for this to work */
   /* whatever else styles you fancy here */
 }
 
-img[src$="#floatleft"] {
+img[src$='#floatleft'] {
   float: left;
   margin: 0.7rem; /* this margin is totally up to you */
   /* whatever else styles you fancy here */
 }
 
-img[src$="#floatright"] {
+img[src$='#floatright'] {
   float: right;
   margin: 0.7rem; /* this margin is totally up to you */
   /* whatever else styles you fancy here */
@@ -109,10 +109,9 @@ img[src$="#floatright"] {
   margin-bottom: 0;
 }
 
-
 body {
   font-size: 14px !important;
-  font-family: "Roboto", sans-serif !important;
+  font-family: 'Roboto', sans-serif !important;
   color: #182945 !important;
 }
 
@@ -130,7 +129,7 @@ body {
 }
 
 .bottom-header.header-module .nav-link {
-  font-family: "Lato", sans-serif;
+  font-family: 'Lato', sans-serif;
   color: #182945;
   border-bottom: 4px solid transparent;
   margin-right: 20px;
@@ -149,7 +148,6 @@ body {
   position: fixed;
   width: 100%;
 }
-
 
 iframe {
   width: 100%;
@@ -177,7 +175,7 @@ iframe {
   border-bottom: 1px solid rgba(204, 213, 218, 0.6);
   color: #292b2c;
 }
-#top-github-link{
+#top-github-link {
   margin-bottom: 20px;
 }
 
@@ -228,11 +226,11 @@ p {
   text-align: justify;
 }
 
-a{
+a {
   color: #0562ce !important;
 }
 
-a:hover{
+a:hover {
   color: #0754ae !important;
 }
 
@@ -251,7 +249,7 @@ a:hover{
   z-index: 1;
 }
 
-@media (min-width: 768px) and (max-width: 991px){
+@media (min-width: 768px) and (max-width: 991px) {
   .iso-input-search {
     left: 40%;
   }
@@ -283,16 +281,16 @@ a:hover{
   font-size: 19px;
 }
 
-.form-control:focus{
+.form-control:focus {
   box-shadow: none !important;
   border-color: rgba(204, 213, 218, 0.6) !important;
 }
 
-.bg-primary{
+.bg-primary {
   background-color: #082da6 !important;
 }
 
-nav{
+nav {
   background-color: #082da6;
 }
 
@@ -383,7 +381,7 @@ pre .copy-to-clipboard:hover {
 }
 
 .flex .card .material-icons {
-  color:#0562CE;
+  color: #0562ce;
   float: left;
   padding-right: 8px;
 }
@@ -510,14 +508,13 @@ a.card-lv2:hover {
   overflow-y: scroll;
 }
 
-
 .card {
   width: 100%;
   margin: 10px 0;
 }
 
-@media (max-width: 767px){
-  .menu-left nav{
+@media (max-width: 767px) {
+  .menu-left nav {
     height: 100%;
   }
 }
@@ -539,11 +536,13 @@ a.card-lv2:hover {
 
   nav.menu-nav > ul {
     position: absolute;
+    width: 100%;
     right: inherit;
   }
 
-  #navbar{
-    width: 50%;
+  #navbar {
+    width: 50%; 
+    max-width: 50%;
   }
 
   .menu-left {
@@ -582,45 +581,77 @@ a.card-lv2:hover {
 }
 
 @media (max-width: 575px) {
-  #navbar{
+  #navbar {
     width: 90%;
+    max-width: 90%;
   }
 }
 
-.content-center {
-  margin-left: 18%;
-  padding: 0 25px;
+body > div.content > div.container {
+  margin-left: 16%;
+}
+
+div.container_row {
+  width: 100%;
 }
 
 @media (min-width: 1710px) and (max-width: 1799px) {
-  .content-center {
+  body > div.content > div.container {
     margin-left: 20%;
+  }
+
+  div.container_row {
+    width: 95%;
   }
 }
 
 @media (min-width: 1600px) and (max-width: 1709px) {
-  .content-center {
+  body > div.content > div.container {
     margin-left: 21%;
+  }
+  div.container_row {
+    width: 92%;
   }
 }
 @media (min-width: 1450px) and (max-width: 1599px) {
-  .content-center {
-    margin-left: 24%;
+  body > div.content > div.container {
+    margin-left: 23%;
+  }
+  div.container_row {
+    width: 85%;
   }
 }
 
-@media (min-width: 992px) and (max-width: 1449px) {
-  .content-center {
-    margin-left: 27%;
+@media (min-width: 1250px) and (max-width: 1449px) {
+  body > div.content > div.container {
+    margin-left: 25%;
+  }
+  div.container_row {
+    width: 75%;
   }
 }
-@media (min-width: 769px) and (max-width: 991px){
-  .content-center {
-    margin-left: 38%;
+
+@media (min-width: 992px) and (max-width: 1249px) {
+  body > div.content > div.container {
+    margin-left: 29%;
+  }
+  div.container_row {
+    width: 70%;
+  }
+}
+@media (min-width: 769px) and (max-width: 991px) {
+  body > div.content > div.container {
+    margin-left: 36%;
+  }
+  div.container_row {
+    width: 65%;
   }
 }
 
 @media (max-width: 768px) {
+  body > div.content > div.container {
+    margin-left: 2%;
+  }
   .content-center {
     margin-left: 0;
     width: 100%;
@@ -672,7 +703,7 @@ a.card-lv2:hover {
   }
 }
 
-code{
+code {
   color: #22a459 !important;
   background-color: #f7f8f9 !important;
 }
@@ -682,7 +713,7 @@ code{
   color: #4d4d4c !important;
   border: 1px solid #4d4d4c;
   font-size: 14px;
-  font-family: "Ubuntu Mono";
+  font-family: 'Ubuntu Mono';
   cursor: text;
   list-style-type: decimal;
   border-radius: 0.25rem;
@@ -711,7 +742,7 @@ code{
 
 .highlight::after,
 .highlight::before {
-  content: "";
+  content: '';
   display: block;
   height: 0.75rem;
   width: 0.75rem;
@@ -873,33 +904,38 @@ td > p {
   text-align: left;
 }
 
-ul.require-by, ul.field {
+ul.require-by,
+ul.field {
   padding: 0px;
   list-style-type: none;
 }
-ul.require-by li,  ul.field li {
+ul.require-by li,
+ul.field li {
   border-bottom: 1px solid transparent;
   width: 100%;
   display: block;
 }
-ul.require-by .lifields,  ul.field .lifields {
+ul.require-by .lifields,
+ul.field .lifields {
   padding: 10px 0px;
 }
-ul.require-by .liargs,  ul.field .liargs {
+ul.require-by .liargs,
+ul.field .liargs {
   padding-left: 50px;
   list-style-type: circle;
 }
-ul.require-by .liargs a,  ul.field .liargs a {
+ul.require-by .liargs a,
+ul.field .liargs a {
   color: inherit;
 }
-ul.ulargs{
+ul.ulargs {
   list-style-type: circle;
 }
 ul.field a:hover {
   text-decoration: none;
-  color: #0754ae
+  color: #0754ae;
 }
-ul.field table a{
+ul.field table a {
   padding: 0px;
 }
 
@@ -909,20 +945,22 @@ ul.field table a{
   margin: auto;
 }
 
-.customTable th, .customTable td{
+.customTable th,
+.customTable td {
   padding: 12px 16px;
 }
 
-.customTable td{
-  border-top: 1px solid rgba(0,0,0,.05);
+.customTable td {
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
 }
 
-.customTable thead{
+.customTable thead {
   background-color: #0754ae;
   color: white;
 }
 
-table thead td, table thead th {
+table thead td,
+table thead th {
   border-bottom-width: 2px;
 }
 
@@ -932,7 +970,8 @@ table thead th {
   background-color: #f6f8f9;
 }
 
-table td, table th {
+table td,
+table th {
   padding: 15px 16px;
   vertical-align: top;
   border-top: 1px solid #e9ecef;
@@ -952,7 +991,7 @@ table {
   border-radius: 2px !important;
 }
 
-.autocomplete-suggestions{
+.autocomplete-suggestions {
   border: 1px solid rgba(204, 213, 218, 0.6) !important;
   position: fixed;
   left: 30% !important;
@@ -971,7 +1010,7 @@ table {
 
 /*   Booking flow svg
 ----------------------------------------------------------------------------------------------------*/
-.booking_flow{
+.booking_flow {
   display: block;
   margin: 35px auto 0 auto;
   max-width: 60%;
@@ -979,29 +1018,50 @@ table {
 
 @media (min-width: 1200px) {
   .booking_flow {
-    width:70%;
+    width: 70%;
   }
 }
 
 /* make keyframes that tell the start state and the end state of our object */
-@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
-@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
-@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-moz-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 
 .fade-in {
-  opacity:0;  /* make things invisible upon start */
-  -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
-  -moz-animation:fadeIn ease-in 1;
-  animation:fadeIn ease-in 1;
+  opacity: 0; /* make things invisible upon start */
+  -webkit-animation: fadeIn ease-in 1; /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+  -moz-animation: fadeIn ease-in 1;
+  animation: fadeIn ease-in 1;
 
-  -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
-  -moz-animation-fill-mode:forwards;
-  animation-fill-mode:forwards;
+  -webkit-animation-fill-mode: forwards; /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+  -moz-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
 
-  -webkit-animation-duration:1s;
-  -moz-animation-duration:1s;
-  animation-duration:1s;
-} 
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  animation-duration: 1s;
+}
 
 /*   Creating draw effect on svg elements 
 ----------------------------------------------------------------------------------------------------*/
@@ -1011,7 +1071,12 @@ table {
   }
 }
 
-#line-1, #line-2, #line-3, #line-4, #line-5, #line-6{
+#line-1,
+#line-2,
+#line-3,
+#line-4,
+#line-5,
+#line-6 {
   stroke-dasharray: 1000;
   stroke-dashoffset: -1000;
   animation-name: draw-lines;
@@ -1019,69 +1084,78 @@ table {
   animation-delay: -1s;
   animation-fill-mode: forwards;
 }
-#line-2{
+#line-2 {
   animation-duration: 2s;
   animation-delay: 1s;
 }
-#line-3{
+#line-3 {
   animation-duration: 2s;
   animation-delay: 2s;
 }
-#line-4{
+#line-4 {
   animation-duration: 2s;
   animation-delay: 3s;
 }
-#line-5{
-  animation-duration:3s;
+#line-5 {
+  animation-duration: 3s;
   animation-delay: 4s;
 }
-#line-6{
+#line-6 {
   animation-duration: 3s;
   animation-delay: 6s;
 }
 
-#line-1-1, #line-2-1, #line-3-1, #line-4-1, #line-5-1, #line-6-1,
-#line-1-2, #line-2-2, #line-3-2, #line-4-2, #line-5-2, #line-6-2 {
+#line-1-1,
+#line-2-1,
+#line-3-1,
+#line-4-1,
+#line-5-1,
+#line-6-1,
+#line-1-2,
+#line-2-2,
+#line-3-2,
+#line-4-2,
+#line-5-2,
+#line-6-2 {
   stroke-dasharray: 1000;
   stroke-dashoffset: -1000;
 }
 #line-1-1 {
   animation: draw-lines 1s linear 8s 2 alternate;
 }
-#line-2-1{
+#line-2-1 {
   animation: draw-lines 1s linear 9s 2 alternate;
 }
-#line-3-1{
+#line-3-1 {
   animation: draw-lines 1s linear 10s 2 alternate;
 }
-#line-4-1{
+#line-4-1 {
   animation: draw-lines 1s linear 11s 2 alternate;
 }
-#line-5-1{
+#line-5-1 {
   animation: draw-lines 1s linear 12s 2 alternate;
 }
-#line-6-1{
+#line-6-1 {
   animation: draw-lines 1s linear 13s 2 alternate;
 }
-#line-1-2{
+#line-1-2 {
   animation: draw-lines 2s linear 15s infinite alternate;
 }
-#line-2-2{
+#line-2-2 {
   animation: draw-lines 2s linear 15s infinite alternate;
 }
-#line-3-2{
+#line-3-2 {
   animation: draw-lines 2s linear 15s infinite alternate;
 }
-#line-4-2{
+#line-4-2 {
   animation: draw-lines 2s linear 15s infinite alternate;
 }
-#line-5-2{
+#line-5-2 {
   animation: draw-lines 2s linear 15s infinite alternate;
 }
-#line-6-2{
+#line-6-2 {
   animation: draw-lines 2s linear 15s infinite alternate;
 }
-
 
 /*   Search modes
 ----------------------------------------------------------------------------------------------------*/
@@ -1097,7 +1171,7 @@ table {
   to {
     stroke-dashoffset: 0;
   }
-} 
+}
 .search_single_mode {
   max-width: 95%;
   max-height: 95%;
@@ -1105,28 +1179,30 @@ table {
   margin: 50px auto;
 }
 
-.search_multi_mode{
+.search_multi_mode {
   max-width: 95%;
   max-height: 95%;
   display: block;
   margin: 10px auto 40px auto;
 }
-.search_single_mode .circle-one, .search_multi_mode .circle-one {
+.search_single_mode .circle-one,
+.search_multi_mode .circle-one {
   fill-opacity: 0;
   stroke-width: 3;
-  stroke-dasharray:670; 
-  stroke-dashoffset:-670;
+  stroke-dasharray: 670;
+  stroke-dashoffset: -670;
   animation: draw-a 5s forwards;
 }
 
-.search_single_mode .circle-two, .search_multi_mode .circle-two {
+.search_single_mode .circle-two,
+.search_multi_mode .circle-two {
   fill-opacity: 0;
   stroke-width: 3;
   stroke-dasharray: 670;
   stroke-dashoffset: -670;
   animation: draw-a 5s 2s forwards;
 }
-.search_single_mode .circle-three{
+.search_single_mode .circle-three {
   fill-opacity: 0;
   stroke-width: 3;
   stroke-dasharray: 670;
@@ -1156,7 +1232,7 @@ table {
   animation: draw-a 4s 7s forwards;
 }
 
-.search_multi_mode #Line{
+.search_multi_mode #Line {
   fill-opacity: 0;
   stroke-width: 3;
   stroke-dasharray: 670;
@@ -1164,7 +1240,8 @@ table {
   animation: draw-a 8s 5s forwards;
 }
 
-.search_single_mode #line-customer, .search_multi_mode #line-customer{
+.search_single_mode #line-customer,
+.search_multi_mode #line-customer {
   fill-opacity: 0;
   stroke-width: 3;
   stroke-dasharray: 670;
@@ -1172,7 +1249,8 @@ table {
   animation: draw-b 2s forwards;
 }
 
-.search_single_mode #line-hotelx, .search_multi_mode #line-hotelx{
+.search_single_mode #line-hotelx,
+.search_multi_mode #line-hotelx {
   fill-opacity: 0;
   stroke-width: 3;
   stroke-dasharray: 670;
@@ -1198,16 +1276,17 @@ table {
   to {
     stroke-dashoffset: 0;
     fill-opacity: 1;
-
   }
 }
-.search_multi_mode #hotelx-icon, #robot-icon{
-  stroke: #B7C7CF;
+.search_multi_mode #hotelx-icon,
+#robot-icon {
+  stroke: #b7c7cf;
   stroke-dasharray: 320;
   stroke-dashoffset: 0;
 }
 
-.search_single_mode #robot-icon, .search_multi_mode #robot-icon{
+.search_single_mode #robot-icon,
+.search_multi_mode #robot-icon {
   fill-opacity: 0;
   stroke-width: 0;
   animation: drawing-icons 5s forwards;
@@ -1215,30 +1294,34 @@ table {
 
 /* Fade-in words of the graphic
 */
-.search_single_mode .customer.fade-in, .search_multi_mode .customer.fade-in{
+.search_single_mode .customer.fade-in,
+.search_multi_mode .customer.fade-in {
   animation-delay: 1.5s;
 }
 
-.search_single_mode .hotelx.fade-in, .search_multi_mode .hotelx.fade-in{
+.search_single_mode .hotelx.fade-in,
+.search_multi_mode .hotelx.fade-in {
   animation-delay: 4s;
 }
 
-.search_single_mode .hotelx-icon.fade-in, .search_multi_mode .hotelx-icon.fade-in{
+.search_single_mode .hotelx-icon.fade-in,
+.search_multi_mode .hotelx-icon.fade-in {
   animation-duration: 3s;
   animation-delay: 1.5s;
 }
-.search_single_mode .supplier.fade-in, .search_multi_mode .supplier-1.fade-in{
+.search_single_mode .supplier.fade-in,
+.search_multi_mode .supplier-1.fade-in {
   animation-delay: 5.5s;
 }
 
-.search_single_mode .supplier-icon.fade-in{
+.search_single_mode .supplier-icon.fade-in {
   animation-delay: 4.5s;
 }
 
-.search_multi_mode .supplier-2.fade-in{
+.search_multi_mode .supplier-2.fade-in {
   animation-delay: 6.5s;
 }
-.search_multi_mode .supplier-n.fade-in{
+.search_multi_mode .supplier-n.fade-in {
   animation-delay: 7.5s;
 }
 
@@ -1251,11 +1334,11 @@ table {
   margin: 50px auto;
 }
 
-.platform_getting_started .clients-icon.fade-in{
+.platform_getting_started .clients-icon.fade-in {
   animation-delay: 0s;
 }
 
-.platform_getting_started #line1{
+.platform_getting_started #line1 {
   fill-opacity: 0;
   stroke-width: 3;
   stroke-dasharray: 670;
@@ -1263,7 +1346,7 @@ table {
   animation: draw-a 4s 0.5s forwards;
 }
 
-.platform_getting_started #api_polygon{
+.platform_getting_started #api_polygon {
   fill-opacity: 0;
   stroke-width: 3;
   stroke-dasharray: 670;
@@ -1271,11 +1354,11 @@ table {
   animation: draw-a 4s 1s forwards;
 }
 
-.platform_getting_started .api_text.fade-in{
+.platform_getting_started .api_text.fade-in {
   animation-delay: 1.5s;
 }
 
-.platform_getting_started #line2{
+.platform_getting_started #line2 {
   fill-opacity: 0;
   stroke-width: 3;
   stroke-dasharray: 670;
@@ -1283,7 +1366,7 @@ table {
   animation: draw-a 4s 2s forwards;
 }
 
-.platform_getting_started #line3{
+.platform_getting_started #line3 {
   fill-opacity: 0;
   stroke-width: 3;
   stroke-dasharray: 670;
@@ -1291,12 +1374,13 @@ table {
   animation: draw-a 4s 3s forwards;
 }
 
-.platform_getting_started .hotelx_icon.fade-in, .hotelx.fade-in{
+.platform_getting_started .hotelx_icon.fade-in,
+.hotelx.fade-in {
   animation-duration: 2s;
   animation-delay: 3s;
 }
 
-.platform_getting_started #line4{
+.platform_getting_started #line4 {
   fill-opacity: 0;
   stroke-width: 3;
   stroke-dasharray: 670;
@@ -1304,12 +1388,13 @@ table {
   animation: draw-a 4s 3.5s forwards;
 }
 
-.platform_getting_started .speed-icon.fade-in, .speed.fade-in{
+.platform_getting_started .speed-icon.fade-in,
+.speed.fade-in {
   animation-duration: 2s;
   animation-delay: 3.5s;
 }
 
-.platform_getting_started #line5{
+.platform_getting_started #line5 {
   fill-opacity: 0;
   stroke-width: 3;
   stroke-dasharray: 670;
@@ -1317,16 +1402,18 @@ table {
   animation: draw-a 4s 4.5s forwards;
 }
 
-.platform_getting_started .hotel_icon.fade-in, .hotel.fade-in{
+.platform_getting_started .hotel_icon.fade-in,
+.hotel.fade-in {
   animation-delay: 4.5s;
 }
 
-.platform_getting_started .hotel_wholesalers.fade-in, .hotel_wholesalers_icon.fade-in{
+.platform_getting_started .hotel_wholesalers.fade-in,
+.hotel_wholesalers_icon.fade-in {
   animation-duration: 2s;
   animation-delay: 5s;
 }
 
-.platform_getting_started #line6{
+.platform_getting_started #line6 {
   fill-opacity: 0;
   stroke-width: 3;
   stroke-dasharray: 670;
@@ -1334,11 +1421,12 @@ table {
   animation: draw-a 4s 6s forwards;
 }
 
-.platform_getting_started .mappeax.fade-in, .mappeax_icon.fade-in{
+.platform_getting_started .mappeax.fade-in,
+.mappeax_icon.fade-in {
   animation-delay: 6s;
 }
 
-.platform_getting_started #line7{
+.platform_getting_started #line7 {
   fill-opacity: 0;
   stroke-width: 3;
   stroke-dasharray: 670;
@@ -1346,7 +1434,7 @@ table {
   animation: draw-a 4s 6.5s forwards;
 }
 
-.platform_getting_started .database_1{
+.platform_getting_started .database_1 {
   fill-opacity: 0;
   stroke-width: 3;
   stroke-dasharray: 670;
@@ -1354,14 +1442,14 @@ table {
   animation: draw-a 4s 7s forwards;
 }
 
-.platform_getting_started #line8{
+.platform_getting_started #line8 {
   fill-opacity: 0;
   stroke-width: 3;
   stroke-dasharray: 670;
   stroke-dashoffset: -670;
   animation: draw-a 4s 7.5s forwards;
 }
-.platform_getting_started #line3-1{
+.platform_getting_started #line3-1 {
   fill-opacity: 0;
   stroke-width: 3;
   stroke-dasharray: 670;
@@ -1369,7 +1457,7 @@ table {
   animation: draw-b 1s 8.5s alternate;
 }
 
-.platform_getting_started #line9{
+.platform_getting_started #line9 {
   fill-opacity: 0;
   stroke-width: 3;
   stroke-dasharray: 670;
@@ -1377,7 +1465,7 @@ table {
   animation: draw-a 4s 8.5s forwards;
 }
 
-.platform_getting_started .database_2{
+.platform_getting_started .database_2 {
   fill-opacity: 0;
   stroke-width: 3;
   stroke-dasharray: 670;
@@ -1385,7 +1473,7 @@ table {
   animation: draw-a 4s 9s forwards;
 }
 
-.platform_getting_started #line10{
+.platform_getting_started #line10 {
   fill-opacity: 0;
   stroke-width: 3;
   stroke-dasharray: 670;
@@ -1393,12 +1481,13 @@ table {
   animation: draw-a 4s 9.5s forwards;
 }
 
-.platform_getting_started .statsx_icon.fade-in, .statsx.fade-in{
+.platform_getting_started .statsx_icon.fade-in,
+.statsx.fade-in {
   animation-duration: 2s;
   animation-delay: 9.5s;
 }
 
-.platform_getting_started #line11{
+.platform_getting_started #line11 {
   fill-opacity: 0;
   stroke-width: 3;
   stroke-dasharray: 670;
@@ -1406,7 +1495,7 @@ table {
   animation: draw-a 4s 10s forwards;
 }
 
-.platform_getting_started #line12{
+.platform_getting_started #line12 {
   fill-opacity: 0;
   stroke-width: 3;
   stroke-dasharray: 670;
@@ -1419,7 +1508,7 @@ table {
   animation-delay: 10.7s;
 }
 
-.platform_getting_started #line13{
+.platform_getting_started #line13 {
   fill-opacity: 0;
   stroke-width: 3;
   stroke-dasharray: 670;
@@ -1428,27 +1517,27 @@ table {
 }
 
 div.deprecated-button-container {
-  background-color:white; 
+  background-color: white;
   padding: 1rem 0 1rem 3rem;
 }
 
 div.deprecated-entities-container {
-  display:none; 
-  background-color: #EEE;
+  display: none;
+  background-color: #eee;
 }
 
 div.deprecated-entities-container.active {
-  display:block; 
+  display: block;
 }
 
-#navigation{
+#navigation {
   display: none;
 }
 
 #footer_docs {
   position: relative;
   z-index: 2;
-  padding: 0;/*
+  padding: 0; /*
   margin-top: 50px;*/
 
   /* max-width: 72%;  */
@@ -1459,8 +1548,8 @@ div.deprecated-entities-container.active {
 }
 
 /*temporal*/
-@media (min-width: 769px) and (max-width: 991px){
-  #footer_docs{
+@media (min-width: 769px) and (max-width: 991px) {
+  #footer_docs {
     /* max-width: 60%; */
     width: 100%;
     /* left: 40%; */
@@ -1488,7 +1577,8 @@ div.deprecated-entities-container.active {
   -o-transition: 0.2s;
   transition: 0.2s;
 }
-#footer_docs .gotop:hover, #footer .gotop:focus {
+#footer_docs .gotop:hover,
+#footer .gotop:focus {
   top: -25px;
   text-decoration: none !important;
 }
@@ -1506,31 +1596,31 @@ div.deprecated-entities-container.active {
   }
 }
 
-#footer_docs .top-footer{
+#footer_docs .top-footer {
   padding-top: 25px;
   background-color: #082da6;
 }
 
-
 @media (max-width: 767px) {
-  .top-footer{
+  .top-footer {
     display: none;
   }
-  #footer_docs .bottom-footer img, #footer_docs .bottom-footer .social{
+  #footer_docs .bottom-footer img,
+  #footer_docs .bottom-footer .social {
     display: none;
   }
 }
 
-#footer_docs .top-footer .tit{
+#footer_docs .top-footer .tit {
   font-size: 17px;
   font-weight: 600 !important;
   color: #ffffff;
   margin-bottom: 5px;
 }
 
-#footer_docs .top-footer .separator{
+#footer_docs .top-footer .separator {
   height: 2px;
-  margin:10px 0 15px;
+  margin: 10px 0 15px;
   background-color: #ffffff;
   width: 60px;
 }
@@ -1541,11 +1631,12 @@ div.deprecated-entities-container.active {
   font-size: 14px;
 }
 #footer_docs .top-footer a.docs,
-#footer_docs .top-footer a.contact
- {
+#footer_docs .top-footer a.contact {
   opacity: 1;
 }
-#footer_docs .top-footer a:hover, #footer .top-footer a:focus, #footer .top-footer a:active {
+#footer_docs .top-footer a:hover,
+#footer .top-footer a:focus,
+#footer .top-footer a:active {
   color: #ffffff;
   opacity: 1;
   text-decoration: underline;
@@ -1555,20 +1646,116 @@ div.deprecated-entities-container.active {
   margin: 0 10px 10px 10px;
 }
 
-#footer_docs .bottom-footer{
+#footer_docs .bottom-footer {
   background-color: #182945;
 }
 
-#footer_docs .bottom-footer img{
+#footer_docs .bottom-footer img {
   width: 142px;
 }
 
-#footer_docs .bottom-footer a{
+#footer_docs .bottom-footer a {
   color: #ffffff !important;
 }
 
-@media (max-width: 767px){
-  #footer_docs{
+@media (max-width: 767px) {
+  #footer_docs {
+    display: none;
+  }
+}
+
+/* SEARCHBAR */
+
+#searchbar {
+  position: fixed;
+  background: white;
+  display: flex;
+  border-bottom: 1px solid rgba(204, 213, 218, 0.6) !important;
+  left: 0;
+  max-height: 55px;
+  z-index: 3000;
+}
+
+#searchbar > div.sb_search_div {
+  flex: 4;
+  position: initial;
+}
+
+#searchbar > div.sb_menu_div {
+  flex: 6;
+}
+
+#searchbar > div.sb_menu_div > ul {
+  text-transform: uppercase;
+  color: white;
+  width: 100%;
+  background: white;
+  font-size: 1.6rem;
+}
+
+#searchbar > div.sb_menu_div > ul > li {
+  height: 54px;
+}
+#searchbar > div.sb_menu_div > ul > li > a{
+  padding: 15px;
+}
+
+@media (min-width: 1710px) and (max-width: 1799px) {
+  #searchbar {
+    width: 95%;
+  }
+}
+
+
+@media (min-width: 1450px) and (max-width:  1709px) {
+  #searchbar {
+    width: 77%;
+  }
+}
+
+@media (min-width: 1250px) and (max-width: 1449px) {
+  #searchbar {
+    width: 75%;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1249px) {
+  #searchbar {
+    width: 70%;
+  }
+}
+@media (min-width: 769px) and (max-width: 991px) {
+  #searchbar {
+    width: 65%;
+    max-height: 120px;
+    display: block;
+  }
+
+  div.container_row>div.content-center {
+margin-top: 120px;
+  }
+
+  #searchbar > div.sb_menu_div > ul {
+    margin-top: -25px;
+    justify-content: space-between !important;
+  }
+}
+@media (min-width: 769px) and (max-width: 800px) {
+  #searchbar {
+    left: 3%;
+  }
+}
+@media (min-width: 801px) and (max-width: 850px) {
+  #searchbar {
+    left: 1.5%;
+  }
+}
+@media (max-width: 769px){
+  #searchbar {
+    width: 100%;
+    display: block;
+  }
+  #searchbar > div.sb_menu_div {
     display: none;
   }
 }
