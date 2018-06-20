@@ -5,8 +5,7 @@ description = "contributors and packages used by hugo-theme-docdock"
 
 
 ## github contributors
-{{%ghcontributors "https://api.github.com/repos/vjeantet/hugo-theme-docdock/contributors?per_page=100" %}}
-
+<!-- %ghcontributors "https://api.github.com/repos/vjeantet/hugo-theme-docdock/contributors?per_page=100" % -->
 ### Other contributors
 <div class="ghContributors">
     <div>
