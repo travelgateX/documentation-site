@@ -7,7 +7,7 @@ weight = 4
 alwaysopen = false
 +++ 
 
-Search by destinations is a feature to search by destinations codes in the Search query, to use it, codes must be sent in 'CriteriaSearch'. These codes will be converted to hotel codes, then merged with the hotel codes sent in criteria if any, and finally requested to suppliers. In order to achieve the destination to hotel conversion, a source must be specified in a plugin.
+Search by destination is a feature to search by destinations codes in the Search query. To use it, codes must be sent in 'CriteriaSearch'. Destination codes will be converted to hotel codes, then merged with the hotel codes sent in criteria if any, and finally the request will be sent to the supplier. In order to achieve the destination to hotel conversion, a source must be specified in a plugin.
 
 ## Plugin
 
