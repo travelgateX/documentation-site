@@ -1,13 +1,16 @@
 <div>
     <table id="table_deprecated" class="table table-condensed table-bordered"></table>
-
-    <table id="table_deprecated2" class="table table-condensed table-bordered"></table>
     <style>
         td,
         th {
             word-wrap: break-word;
         }
-        .info-hidden {
+
+        .inner-table td {
+            border: none !important;
+        }
+
+        .info-hidden, .isRowHidden {
             display: none;
         }
     </style>
@@ -15,61 +18,38 @@
 
         // let otherLog
         $(document).ready(function () {
-            // const keys = ["args", "deprecationReason", "description", "deprecationDate", "name", "url"]
-            // const log = [... {{.Page.Params.log }}];
-        const log3 = {{.Page.Params.log3 }};
-        createTable(log3);
-/*
-        const $table = $('#table_deprecated');
-        $th = $('<tr>');
-        keys.map(k => $th.append($('<th>').text(k)));
-        $table.append($th);
-        // $table.append($('<td>').text());
-        $.each(log, function (i, item) {
-            var $tr = $('<tr>');
-            var $tds = [];
-            // console.log(Object.keys(item));
-            for (const key of keys) {
-                if (key === 'args') {
-                    $tds.push($('<td>').text(JSON.stringify(item[key])));;
-                } else {
-                    $tds.push($('<td>').text(item[key]));
-                }
-
-            }
-
-            $tds.map($td => $tr.append($td));
-            $table.append($tr);
-        }); */
-            });
+            const log = {{.Page.Params.log }}
+            createTable(log);
+        });
 
 
         function createTable(log) {
             const keys = Object.keys(log);
 
-            const $table = $('#table_deprecated2');
+            const $table = $('#table_deprecated');
             const $tbodies = [];
-
-
-
-            $.each(log, function (i, dateRow) {
-                // const $tbody = $(`<tbody date=${k}>`);
-            });
 
             for (const [key, fields] of Object.entries(log)) {
                 const $tbody = $(`<tbody date=${key}>`);
-                console.log(fields);
                 const fieldLength = fields.length;
-                $tbody.append($(`<tr><td rowspan=${fieldLength + 1} colspan="1">${key}</td></tr>`));
+                $tbody.append($("<tr>").append($(`<td rowspan=${fieldLength + 1} colspan="1">${key}</td><td class="isRowHidden" colspan="3">SHOW DEPRECATED FIELDS</td>`).click(function(){
+                    const $elem = $(this);
+                    const $isRowHidden = $elem.parent().children().last();
+
+                    const time = ($isRowHidden.css('display') === 'none') ? 300 : 0;
+                    console.log(time);
+                    setTimeout(_=>$isRowHidden.toggleClass('isRowHidden'), time);   
+
+                    $elem.parent().siblings('tr').fadeToggle();                                    
+                })));
 
                 $trs = [];
                 for (const field of fields) {
                     const $tr = $(`<tr fname=${field.name}>`);
-                    // const $td2 = $tr.append($(`<td colspan="3">`).text(field.name));
                     const $td = $(`<td colspan="3">`);
 
                     const $tdTable = buildInnerTable(field);
-                   
+
                     $td.append($tdTable)
 
                     $tr.append($td);
@@ -80,40 +60,38 @@
 
                 $tbodies.push($tbody);
             }
-
-
             $tbodies.map($tbody => $table.append($tbody))
-
         }
-        
-
-        function buildInnerTable(field){
-            $tdTable = $('<table>');
-                    //Build inner table head body
-                    const $tdTableHB = $('<tbody>');
-                    const $tdTableHBTitles = $('<tr>').append($('<th>').text('Name'));
-                    const $tdTableHBData = $('<tr>').append($('<td>').text(field.name));
-
-                    $tdTableHB.append($tdTableHBTitles);
-                    $tdTableHB.append($tdTableHBData);
-
-                    //Event to show info div 
-                    $tdTableHB.click(function(){
-                        this.next().toggleClass('info-hidden');
-                    });
-
-                    $tdTable.append($tdTableHB);
 
 
-                    //Build inner table information body
-                    const $tdTableInfoBody = $('<tbody>').addClass('info-hidden');
-                    const $tdTableInfoBodyData = $('<tr>').append($('<td>').append($('<div>').text("INFORMATION")));
+        function buildInnerTable(field) {
+            $tdTable = $('<table>').addClass('table table-condensed inner-table');
+            //Build inner table head body
+            const $tdTableHB = $('<tbody>');
+            const $tdTableHBTitles = $('<tr>').append($('<th>').text('Name'));
+            const $tdTableHBData = $('<tr>').append($('<td>').text(field.name));
 
-                    $tdTableInfoBody.append($tdTableInfoBodyData);
+            $tdTableHB.append($tdTableHBTitles);
+            $tdTableHB.append($tdTableHBData);
 
-                    $tdTable.append($tdTableInfoBody);
+            //Event to show info div 
+            $tdTableHB.click(function () {
+                console.log(this);
+                $(this).next().toggleClass('info-hidden');
+            });
 
-                    return $tdTable;
+            $tdTable.append($tdTableHB);
+
+
+            //Build inner table information body
+            const $tdTableInfoBody = $('<tbody>').addClass('info-hidden');
+            const $tdTableInfoBodyData = $('<tr>').append($('<td>').append($('<div>').text("INFORMATION")));
+
+            $tdTableInfoBody.append($tdTableInfoBodyData);
+
+            $tdTable.append($tdTableInfoBody);
+
+            return $tdTable;
         }
     </script>
 </div>
