@@ -327,6 +327,7 @@ nav.menu-nav ul li a > * {
 
 .top-header > .navbar {
   padding: 5px 30px;
+  margin-bottom: 0;
 }
 
 pre {
@@ -1673,7 +1674,7 @@ div.deprecated-entities-container.active {
   border-bottom: 1px solid rgba(204, 213, 218, 0.6) !important;
   left: 0;
   max-height: 55px;
-  z-index: 3000;
+  z-index: 100;
 }
 
 #searchbar > div.sb_search_div {
