@@ -2,41 +2,43 @@
     <ul class="code">
         <li><span class="keyword operator ts">{{$.Page.Params.operator}}</span> <span class="identifier">{{ $.Page.Params.typename }}</span> {</li>
         {{range $.Page.Params.fields}}
-            {{if .args}}
-                {{if gt (len .args) 2}}
-                    <li>
-                        <span class="tab">
-                            <span class="meta">{{.name}}</span>(
-                        </span>
-                    </li>
-                    {{- template "args" .args}}
-                    <li>
-                        <span class="tab">
-                            ): <a class="support type" href="{{.url}}">{{.typeString}}</a> 
-                        </span>
-                    </li>
+            {{if not .isDeprecated}}
+                {{if .args}}
+                    {{if gt (len .args) 2}}
+                        <li>
+                            <span class="tab">
+                                <span class="meta">{{.name}}</span>(
+                            </span>
+                        </li>
+                        {{- template "args" .args}}
+                        <li>
+                            <span class="tab">
+                                ): <a class="support type" href="{{.url}}">{{.typeString}}</a> 
+                            </span>
+                        </li>
+                    {{else}}
+                        <li>
+                            <span class="tab">
+                                <span class="meta">{{.name}}</span>({{- template "argsInLine" .args}}): <a class="support type" href="{{.url}}">{{.typeString}}</a> 
+                            </span>
+                        </li>
+                    {{end}}
                 {{else}}
                     <li>
                         <span class="tab">
-                            <span class="meta">{{.name}}</span>({{- template "argsInLine" .args}}): <a class="support type" href="{{.url}}">{{.typeString}}</a> 
+                            {{template "nameType" .}} 
                         </span>
                     </li>
                 {{end}}
-            {{else}}
-                <li>
-                    <span class="tab">
-                        {{template "nameType" .}} 
-                    </span>
-                </li>
             {{end}}
         {{end}}
-
-        {{if $.Page.Params.deprecatedFields}}
-            <div class="deprecated-button-container" >
-                <button class="btn btn-sm btn-info" onclick="toggleDeprecatedEntitiesContainer(this)">Show deprecated fields</button>
-            </div>
-            <div class="deprecated-entities-container">
-            {{range $.Page.Params.deprecatedFields}}
+            
+        <div class="deprecated-button-container" >
+            <button class="btn btn-sm btn-info" onclick="toggleDeprecatedEntitiesContainer(this)">Show deprecated fields</button>
+        </div>
+        <div class="deprecated-entities-container">
+        {{range $.Page.Params.fields}}
+            {{if .isDeprecated}}
                 {{if .args}}
                     {{if gt (len .args) 2}}
                         <li>
@@ -78,8 +80,8 @@
                     </li>
                 {{end}}
             {{end}}
-            </div>
         {{end}}
+        </div>
         <li>}</li>
     </ul>
 </div>
