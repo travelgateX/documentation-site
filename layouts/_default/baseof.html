@@ -122,6 +122,10 @@
         </div>
       </div>
     </div>
+    <div style="left:20%;top:-100px;position:relative">
+        {{ partial "content/related.html" . }}
+    </div>
+
     {{ partial "next-prev-page.html" . }}
     {{ partial "content/footer.html" . }}
     <script src="{{"js/clipboard.min.js" | relURL}}"></script>

@@ -381,3 +381,19 @@ discourseUrl = "http://community.travelgatex.com/"
   [params.footer]
     enable = true
     copyright = '&copy; <a title="TravelgateX" target="_blank" href="https://www.travelgatex.com/" style="color: white;font-weight: bold;">TravelgateX</a> 2018. All Rights Reserved. TravelgateX is made with &#9829; in the beaultiful  🏝️ of Mallorca.'
+
+# Related Content
+[related]
+
+  # Only include matches with rank >= threshold. This is a normalized rank between 0 and 100.
+  threshold = 80
+
+  # To get stable "See also" sections we, by default, exclude newer related pages.
+  includeNewer = false
+
+  # Will lower case keywords in both queries and in the indexes.
+  toLower = false
+   
+    [[related.indices]]
+      name  = "tags"
+      weight = 100
