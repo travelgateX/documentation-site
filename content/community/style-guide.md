@@ -38,14 +38,13 @@ Let's get these things out of the way right up front:
 
 ## Types of documentation
 
-Documentation submitted by contributors is usually one of two types:
+Documentation submitted by contributors is usually one of this types:
 
 * **Concept**: Helps the user gain deeper understanding of a product or
   architecture. Concept docs answer questions such as "What is X?" and "How
-  does X work?" They don't provide specific walkthroughs. They might contain
-  numbered steps as generic examples, but this is rare.
-
-    **Example**: [Modeling Entity Relationships on Google App Engine Standard Environment](appengine-modeling-entity-relationships)
+  does X work?" They don't provide specific walkthroughs. It's common the use of blockquotes to quote people. They might contain numbered steps as generic examples, but this is rare. 
+  
+  More info at [Writing a Concept doc](#Writing-a-Concept-doc).
 
 * **Tutorial**: Walks a user through a real-world, industry-specific, or
   end-to-end development scenario that uses your product. Tutorials teach "how
@@ -53,9 +52,19 @@ Documentation submitted by contributors is usually one of two types:
   prescribe what to do. They can have enough supporting conceptual information,
   interspersed among the steps, to help the reader understand what they're
   doing, why they're doing it, and how and why it works. The end result is a
-  working example. Usually, code on GitHub supports the document.
+  working example. Usually, code on GitHub supports the document. 
+  
+  More info at [Writing a Tutorial](#Writing-a-Tutorial).
 
-    **Example**: [Setting Up PostgreSQL](setting-up-postgres)
+* **Reference**: Programming concept explanation. Reference relates to an 
+  specific topic. References must have a title, an overview with a general explanation and an generic example on a code block. They must be listed the fields available (if it applies) and will include if the field is required and optional values. Finally it will be related if it's required by any other topic (if it applies).
+  
+  More info at [Writing a Reference doc](#Writing-a-Reference-doc)
+
+* **Plugin**: The plugins must have an explanation that indicates on a clear
+  way the bennefits of using it and the improvements that it applies to the general HotelX behaviour. Plugins must have a title, general explanation and ... (This will be completed).
+  
+  More info at [Writing a Plugin doc](#Writing-a-Plugin-doc)
 
 ## Designing a doc
 
@@ -88,6 +97,8 @@ A Concept doc has these major sections:
 * Body
     * Provides the details.
     * Contains headings and subheadings as needed to make the content easy to skim.
+
+**Example**: [GraphQL Overview](/learning-graphql/overview/)
 
 ### Writing a Tutorial
 
@@ -124,6 +135,35 @@ A Tutorial doc has these major sections. Items in bold below are literal heading
 * **Cleaning up**
     * Omit this section if you stated there are no costs in the Costs section.
     * Tell the user how to shut down what they built to avoid incurring further costs.
+
+**Example**: [Configure HotelX Security Tutorial](/travelgatex/tutorials/howto-configure-permissions/)
+
+### Writing a Reference doc
+
+A Reference doc has these major sections:
+
+* Title
+* Overview
+    * Don't use the heading "Overview" or any other heading. Just start at the first sentence.
+* Code block
+    * You can wrap your code between \''' and \''' 
+* Body
+    * Provides the details.
+    * Contains headings and subheadings as needed to make the content easy to skim.
+
+**Example**: [GraphQL AdminMutation](/travelgatex/reference/objects/adminmutation/)
+
+### Writing a Plugin doc
+
+A Plugin doc has these major sections:
+
+* Title
+* Overview
+    * Don't use the heading "Overview" or any other heading. Just start at the first sentence.
+
+(Provisional documentation not finished)
+
+**Example**: [Aggregation plugin](/hotelx/plugins/aggregation/)
 
 ## Visual assets
 
@@ -449,3 +489,4 @@ Learn more about strong writing.
 * [Grammar Girl](http://www.quickanddirtytips.com/grammar-girl)
 * [The Elements of Style](http://www.amazon.com/Elements-Style-Fourth-William-Strunk/dp/020530902X/ref=sr_1_1?ie=UTF8&qid=1463012361&sr=8-1&keywords=the+elements+of+style+book) (book by Strunk and White)
 * [The Deluxe, Transitive Vampire](http://www.amazon.com/Deluxe-Transitive-Vampire-Ultimate-Handbook/dp/0679418601) (book by Karen Elizabeth Gordon)
+* [Markdown Syntax](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf) (Cheatsheet from GitHub)
