@@ -1,14 +1,14 @@
 +++
-title = "Identity and Access Management"
-pagetitle = "Identity and Security Model"
-description = "Advanced Security Management"
+title = "Identity and access management"
+pagetitle = "Identity and security model"
+description = "Advanced security management"
 weight = 2
 alwaysopen = false
 +++
 
-This section provides an overview of _Identity and access management_
+This section provides an overview of Identity and access management.
 
-TravelgateX Identity and acccess management lets administrators authorize who can take action on specific resources, giving you full control and internal visibility to manage resources centrally.
+TravelgateX identity and acccess management lets administrators authorize who can take action on specific resources, giving you full control and internal visibility to manage resources centrally.
 
 Identity and access management provides an unified view of your security policy across your entire organization, with built-in auditing to ease compliance processes.
 

@@ -22,6 +22,9 @@ Here are a few things you can do that will increase the likelihood of your pull 
 - Write a [good commit message](http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html).
 - In your pull request description, provide as much detail as possible. This context helps the reviewer to understand the motivation for and impact of the change.
 
+## Report an issue
+- Create an issue in our [Issue Tracker](https://github.com/travelgateX/Issue-tracker)
+
 ## Installing
 
 - Install [Hugo](https://gohugo.io/)
