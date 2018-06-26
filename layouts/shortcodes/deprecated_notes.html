@@ -13,6 +13,9 @@
         .info-hidden, .isRowHidden {
             display: none;
         }
+        h3.card-title {
+            margin-top: .5rem !important;
+        }
     </style>
     <script>
 
@@ -68,15 +71,14 @@
             $tdTable = $('<table>').addClass('table table-condensed inner-table');
             //Build inner table head body
             const $tdTableHB = $('<tbody>');
-            const $tdTableHBTitles = $('<tr>').append($('<th>').text('Name'));
-            const $tdTableHBData = $('<tr>').append($('<td>').text(field.name));
+            const $tdTableHBTitles = $('<tr>').append($('<th>').text('Name')).append($('<th>').text('URL'));
+            const $tdTableHBData = $('<tr>').append($('<td>').text(field.name)).append($('<td>').text(field.url));
 
             $tdTableHB.append($tdTableHBTitles);
             $tdTableHB.append($tdTableHBData);
 
             //Event to show info div 
             $tdTableHB.click(function () {
-                console.log(this);
                 $(this).next().toggleClass('info-hidden');
             });
 
@@ -85,9 +87,84 @@
 
             //Build inner table information body
             const $tdTableInfoBody = $('<tbody>').addClass('info-hidden');
-            const $tdTableInfoBodyData = $('<tr>').append($('<td>').append($('<div>').text("INFORMATION")));
+            const $tdTableInfoBodyDataRow = $('<tr>');
+            const $tdTableInfoBodyDataCell = $('<td colspan="2">');
+            const $tdTableInfoBodyDataDiv = $('<div>');
 
-            $tdTableInfoBody.append($tdTableInfoBodyData);
+            datesContent = `<div class="card d-flex flex-row" style="width:100%">
+                                <div class="card-body">
+                                    <h3 class="card-title">Deprecation Date</h3>
+                                    <br>
+                                    <p>No date avilable</p>
+                                </div>
+                            </div>`;
+
+            if(field.deprecationDate){
+
+                const deprecationDateFormatted = new Date(field.deprecationDate).toLocaleString().split(' ')[0];
+
+                const deletionDate = new Date(new Date(field.deprecationDate).getTime() + 7776000000);
+                let deletionDateFormatted = '';
+                if(deletionDate instanceof Date && !isNaN(deletionDate)){
+                    deletionDateFormatted = deletionDate.toLocaleString().split(" ")[0];
+                }
+                
+                let daysRemaining = (new Date(deletionDate.getTime()) - new Date().getTime());
+                if(daysRemaining >=0){
+                    daysRemaining = Math.floor(daysRemaining / 86400000)
+                }else{
+                    daysRemaining = "Already passed";
+                }
+                
+                datesContent = `<div class="card d-flex flex-row" style="width:100%">
+                                            <div class="card-body">
+                                                <h3 class="card-title">Deprecation Date</h3>
+                                                <br>
+                                                <p>${deprecationDateFormatted}</p>
+                                            </div>
+                                            <div class="card-body">
+                                                <h3 class="card-title">Deletion Date</h3>
+                                                <br>
+                                                <p>${deletionDateFormatted}</p>
+                                            </div>
+                                            <div class="card-body">
+                                                <h3 class="card-title">Days remaining</h3>
+                                                <br>
+                                                <p>${daysRemaining}</p>
+                                            </div>
+                                        </div>`;
+            }
+
+            const descriptionContent = `<div class="card" style="width:100%">
+                                    <div class="card-body">
+                                        <h3 class="card-title">Description</h3>
+                                        <br>
+                                        <p>${field.description}</p>
+                                    </div>
+                                  </div>`;
+            const deprecationReasonContent = `<div class="card" style="width:100%">
+            <div class="card-body">
+                <h3 class="card-title">DeprecationReason</h3>
+                <br>
+                <p>${field.deprecationReason}</p>
+            </div>
+            </div>`;
+            const argsContent = `<div class="card" style="width:100%">
+                                    <div class="card-body">
+                                        <h3 class="card-title">Arguments</h3>
+                                        <br>
+                                        <pre>${JSON.stringify(field.args, undefined, 2)}</pre>
+                                    </div>
+                                  </div>`;
+
+            $tdTableInfoBodyDataDiv
+                .append($('<div class="col-md-12">').html(datesContent))
+                .append($('<div class="col-md-6">').html(descriptionContent + deprecationReasonContent))
+                .append($('<div class="col-md-6">').html(argsContent));
+            // .append($('<td>').append($('<div>').text("INFORMATION")));
+            $tdTableInfoBodyDataCell.append($tdTableInfoBodyDataDiv);
+            $tdTableInfoBodyDataRow.append($tdTableInfoBodyDataCell);
+            $tdTableInfoBody.append($tdTableInfoBodyDataRow);
 
             $tdTable.append($tdTableInfoBody);
 
