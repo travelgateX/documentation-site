@@ -1,8 +1,8 @@
 <div>
     <table id="table_deprecated" class="table table-condensed table-bordered"></table>
     <style>
-        td,
-        th {
+        #table td,
+        #table th {
             word-wrap: break-word;
         }
 
@@ -22,7 +22,10 @@
         // let otherLog
         $(document).ready(function () {
             const log = {{.Page.Params.log }}
+            if(false){
+
             createTable(log);
+            }
         });
 
 
@@ -68,7 +71,7 @@
 
 
         function buildInnerTable(field) {
-            $tdTable = $('<table>').addClass('table table-condensed inner-table');
+            $tdTable = $('<table id="table">').addClass('table table-condensed inner-table');
             //Build inner table head body
             const $tdTableHB = $('<tbody>');
             const $tdTableHBTitles = $('<tr>').append($('<th>').text('Name')).append($('<th>').text('URL'));
