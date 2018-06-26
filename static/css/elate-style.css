@@ -1322,7 +1322,7 @@ a:active {
     right: 20px;
   }
 
-  nav {
+  #fh5co-header nav {
     border-radius: 5px !important;
   }
 
@@ -1338,7 +1338,7 @@ a:active {
     height: 65px !important;
   }
   a.js-fh5co-nav-toggle {
-    transform: translateX(-15px);
+    transform: translateX(-10px);
   }
 }
 #footer {
