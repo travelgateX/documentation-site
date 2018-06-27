@@ -18,7 +18,7 @@
     top: 100px;
     left: 50%;
     z-index: 1004;
-    transform: translateX(-50%);
+    transform: translateX(-37%);
   }
 
   div.graphiql-display>button svg {
@@ -35,11 +35,13 @@
     outline: none;
   }
 
-  div.title,
-  div.toolbar,
-  div.variable-editor,
-  button.docExplorerShow {
+  div.topBarWrap,
+  div.variable-editor {
     display: none !important;
+  }
+  div.CodeMirror-gutter.CodeMirror-foldgutter {
+    width:5px;
+    padding: 0 !important;
   }
 
   .pulse-holder {

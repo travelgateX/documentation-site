@@ -1,12 +1,12 @@
 <footer id="footer_docs" role="contentinfo">
-	<!-- <a href="#" class="gotop js-gotop"><i class="icon-arrow-up2"></i></a> -->
+	<a href="#" class="gotop js-gotop"><i class="icon-arrow-up2"></i></a>
   <div class="top-footer hidden-sm-down">
     <div class="container">
       <div class="row">
         <div class="col-sm-12 col-md-2 col-lg-2">
 
         </div>
-        <div class="col-sm-6 col-md-2 col-lg-2">
+        <div class="col-xs-8 col-sm-6 col-md-2 col-lg-2">
           <h5 class="tit">Reference</h5>
           <ul class="list-unstyled">
             <li><a title="Getting Started" target="_blank" href="https://docs.travelgatex.com/getting-started/">Getting Started</a></li>
@@ -77,4 +77,16 @@
     </div>
   </div>
 </footer>
+<script>
+    $('.js-gotop').on('click', function(event){
+        
+        event.preventDefault();
+  
+        $('html, body').animate({
+          scrollTop: $('html').offset().top
+        }, 500);
+        
+        return false;
+      });
+  </script>
 <!-- .mo-footer-->

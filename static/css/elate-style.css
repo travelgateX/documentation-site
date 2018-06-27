@@ -1306,21 +1306,28 @@ a:active {
     display: block;
     top: -8px;
   }
-  #navbar > ul.nav.navbar-right {
-    width: 100%;
-    padding: 5px;
-    border-radius: 3px;
-    margin: -10px 0 0 0 !important;
-  }
   #navbar {
     border: none;
+    box-shadow: none;
+  }
+
+  #navbar>ul {
+    margin: 0 !important;
   }
 
   header>div>nav {
     width: 80vw;
     position: absolute !important;
-    background-color: #44b8e9 !important;
+    background-color: #182945 !important;
     right: 20px;
+  }
+
+  #fh5co-header nav {
+    border-radius: 5px !important;
+  }
+
+  nav a.active + div#navbar {
+    margin: 10px 0 10px 0;
   }
 
   nav>div {
@@ -1331,7 +1338,7 @@ a:active {
     height: 65px !important;
   }
   a.js-fh5co-nav-toggle {
-    transform: translateX(-15px);
+    transform: translateX(-10px);
   }
 }
 #footer {
