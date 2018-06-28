@@ -14,12 +14,15 @@ TravelgateX platform provides a single API endpoint for all of our API products.
 GraphQL is the future of API development, many big companies (like Facebook, Twitter, Yelp, IBM and more) as well as smaller startups and teams are using it in production already today.
 
 ## How can I use TravelgateX?
+
 There are three major ways for using TravelgateX:
+
 - Implement [TravelgateX API](https://api.travelgatex.com/) as a app-to-app communication
 - Access [TravelgateX API](https://api.travelgatex.com/) directly from the frontend
 - Use [TravelgateX Site](https://www.travelgatex.com/)
 
 
-## Which Apikey do I have to use? 
+## Which Apikey do I have to use?
+
 - I already have the TGX Welcome Pack: Then you should use the Api Key facilitated.
 - I did not receive TGX Welcome Pack: Then you should use our dummy Api Key facilitated on our sample Playground.
