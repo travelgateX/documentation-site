@@ -1538,8 +1538,8 @@ div.deprecated-entities-container.active {
 #footer_docs {
   position: relative;
   z-index: 2;
-  padding: 0; /*
-  margin-top: 50px;*/
+  padding: 0; 
+  margin-top: 25px;
 
   /* max-width: 72%;  */
   /*temporal*/
