@@ -6,5 +6,7 @@
 # Layout, css, hugo configuration and other non document content
 *.css   @travelgateX/documentation-owner
 *.html  @travelgateX/documentation-owner
-*.json  @travelgateX/documentation-owner 
+*.json  @travelgateX/documentation-owner
+*.ttf  @travelgateX/documentation-owner
+
 
