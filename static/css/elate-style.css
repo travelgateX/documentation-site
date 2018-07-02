@@ -9,6 +9,12 @@
   font-weight: normal;
   font-style: normal;
 }
+
+@font-face {
+  font-family: Roboto;
+  src: url('../fonts/Roboto/Roboto-Regular.ttf');
+}
+
 /* =======================================================
 *
 * 	Template Style
@@ -17,7 +23,7 @@
 * ======================================================= */
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: Roboto, sans-serif;
   font-weight: 300;
   font-size: 20px;
   line-height: 1.5;
@@ -51,7 +57,7 @@ h4,
 h5,
 h6 {
   color: #182945;
-  font-family: 'Roboto', sans-serif;
+  font-family: Roboto, sans-serif;
   font-weight: 400;
   margin: 0 0 30px 0;
 }
@@ -254,7 +260,7 @@ h6 {
 }
 
 #fh5co-header #navbar li a {
-  font-family: 'Roboto', sans-serif;
+  font-family: Roboto, sans-serif;
   color: rgba(255, 255, 255, 0.5);
   position: relative;
   font-size: 15px !important;

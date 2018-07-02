@@ -1,3 +1,8 @@
+@font-face {
+  font-family: Roboto;
+  src: url('../fonts/Roboto/Roboto-Regular.ttf');
+}
+
 #navbar {
   position: fixed;
   top: 0;
@@ -111,8 +116,10 @@ img[src$='#floatright'] {
 
 body {
   font-size: 14px !important;
-  font-family: 'Roboto', sans-serif !important;
+  font-family: Roboto, sans-serif !important;
   color: #182945 !important;
+  letter-spacing: .06rem;
+  line-height: 2.5rem !important;
 }
 
 .material-box {
