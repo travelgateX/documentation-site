@@ -7,6 +7,8 @@
 *.css   @travelgateX/documentation-owner
 *.html  @travelgateX/documentation-owner
 *.json  @travelgateX/documentation-owner
-*.ttf  @travelgateX/documentation-owner
+*.ttf   @travelgateX/documentation-owner
+*.js    @travelgateX/documentation-owner
+
 
 
