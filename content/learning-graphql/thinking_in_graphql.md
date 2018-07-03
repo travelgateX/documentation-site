@@ -8,7 +8,7 @@ alwaysopen = false
 
 ## A Paradigm Shift
 
-GraphQL is a query language, and as such it does exactly that: it queries servers in order to get results back. With GraphQL, you can choose exactly what data you want to retrieve. GraohQL is a typed query language. That means that it has a lot of predictability, as each piece of data has its own type, so we know what sort of data we will be getting back. This is something we really appreciate, especially since we deal with so many third party APIs, and often we have no control of what's going on on the other side! At TravelgateX we take away all of those headaches, by offering you an integration platform to 600+ suppliers, all accessible via a single GraphQL endpoint.
+GraphQL is a query language, and as such it does exactly that: it queries servers in order to get results back. With GraphQL, you can choose exactly what data you want to retrieve. GraphQL is a typed query language. That means that it has a lot of predictability, as each piece of data has its own type, so we know what sort of data we will be getting back. This is something we really appreciate, especially since we deal with so many third party APIs, and often we have no control of what's going on on the other side! At TravelgateX we take away all of those headaches, by offering you an integration platform to 600+ suppliers, all accessible via a single GraphQL endpoint.
 
 ### Understanding GraphQL Schemas
 
@@ -26,7 +26,7 @@ There are a number of ways you can understand our `Schema`:
 You can test a `Query` in the <a href="api.travelgatex.com">API playground</a>.
 
 A query has the following components:
-<ul><li><strong>Operation type</strong>: When searching data in GraphQL, we use `Query` to indicate the operation type (see below for `Mutation` operation type</li>
+<ul><li><strong>Operation type</strong>: When searching data in GraphQL, we use `Query` to indicate the operation type (see below for `Mutation` operation type)</li>
 <li><strong>Operation name</strong>: _(optional)_ You can give your `Query` a name so that it is easy to find in later code. This is the similar to creating a function in other programming languages.</li>
 <li><strong>Variable definitions</strong>: You can set what variables need to be completed in order to run your query. You declare a name for the variables you will use by using a $. A common variable name we use is $criteriaSearch. After declaring a variable name, use the colon and then describe what inputs are needed. You can choose from some of the input objects we have already created. For example, we often use the `HotelCriteriaSearchInput` input object. This input object requires the following fields as mandatory (indicate by a `!`): Check in date, check out date, number of hotels to be returned in a response, and number of people to occupy the rooms. You can also add language, currency, nationality and market fields as variables to this input object, for more filtered responses.</li> 
 <li><strong>Selection set</strong>: After the variables have been defined, you can use the `{` brackets to start listing what objects you want to query to get the data you need. Each selection set starts with a `{` and ends with a `}`. You can nest (indent) these selection sets so it is easier to read a query.</li>
