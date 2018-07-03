@@ -16,7 +16,7 @@ As an administrator, when you register with us, we provide you with login detail
 
 Identity and access management lets you manage access control by defining who _Member_ has what kind of access _Role_ to each resource:
 
-![Members and Roles](images/members-roles.svg "Members and Roles")
+![Members and Roles](./../images/members-roles.svg "Members and Roles")
 
 ## Concepts related to identity
 You grant access to **members** which can be either:
@@ -37,7 +37,7 @@ Groups are organized hierarchically, where the `Organization` node is the root n
 
 Resources are assigned to groups and propagated by groups hierarchically from bottom to top.
 
-![Group hierarchy](images/groups-hierarchy.svg "Groups hierarchy")
+![Group hierarchy](./../images/groups-hierarchy.svg "Groups hierarchy")
 
 ### Permissions and Roles
 
@@ -52,6 +52,6 @@ Common roles include:
 
 You can grant roles to members, which define who has what type of access. A policy is attached to a resource and identifies which member role is applied to every resource.
 
-![Permissions and roles](images/permissions-roles.svg "Permissions and roles")
+![Permissions and roles](./../images/permissions-roles.svg "Permissions and roles")
 
 {{% alert theme="info" %}}For more information about Identity and access management configuration, check out our tutorial [**How-to configure HotelX permissions**](/travelgatex/tutorials/howto-configure-permissions/)>{{% /alert %}}
