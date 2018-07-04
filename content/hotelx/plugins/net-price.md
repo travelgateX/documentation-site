@@ -1,72 +1,69 @@
 +++
-title = "Net Price"
-pagetitle = "Net Price"
-description = "Convert Gross Pricess into Net Prices."
+title = "Commission"
+pagetitle = "Commission"
+description = "Convert Gross Prices into Net Prices."
 icon = "fa-exchange"
-weight = 4
+weight = 3
 alwaysopen = false
 +++
 
 Net Price is an optional plugin and allows to net all the prices in an option.
 
-## NetPriceX
+* [**NetpriceX**](/hotelx/plugins/net-price#netpricex)
+
+* [**CommissionX**](/hotelx/plugins/net-price#commissionX) (NetpriceX Extended funcionality)
+
+## NetPriceX (future deprecation) {#netpricex}
 
 This plugin receives an Option by parameter and returns an Option with all the prices with net value. This plugin reads information of commissions from ftp. Is mandatory to load at least, suppliers commission file. Depending of the files in ftp, this plugin can apply two different commission values over prices. Suppliers commission file specifies the commission applied to supplier’s prices. Hotel commission file specifies the commission applied to concrete hotel’s price. In one hand, if no hotels commission file is loaded in ftp, is applied net with the commission specified in commissions suppliers file. In other hand, if hotels commission file is loaded, this have preference over suppliers file. These files have to accomplish requirements below. In other cases, an error will be returned.
 
-### File Format
+## Files needed to use this plugin
 
-The file should be in the below format:
+* [**Commission supplier file format**](/hotelx/plugins/format-files/net-price/commission_supplier/) (**Mandatory**)
 
-* **Encoding**: UTF-8 
-* **File Name**: commission\_supplier.csv 
-* **Header Row**: Supplier, Commission
-* **Delimiter**:  Comma (“,”) 
-* **Directory**: /F[folder code]\_[unique code]/HotelX\_[unique code]/
+* [**Commision hotel file format**](/hotelx/plugins/format-files/net-price/commission_old/) (**Optional**)
 
-_Headers_:
+### Execution example
 
-* _Supplier_ → supplier code 
-* _Commission_ → commission value, decimal separator must be point (".")
+```
+{
 
-#### Sample File
+    "plugins": {
 
-**Name**: commission\_supplier.csv
+        "step": "RESPONSE\_OPTION",
 
-**Data**:
+        "pluginsType": [
 
-```csv
-Supplier,Commission
-AXI,0
-AXI2,0
+            {
+
+                "type": "CURRENCY\_CONVERSION"
+
+                "name": "net\_priceX"
+
+            }
+
+        ]
+
+    }
+
+}
 ```
 
-### Hotel Commission File Format
+## CommissionX {#commissionX}
 
-The hotel commission file should be in the below format:
+CommissionX is a plugin with an extended funcionality over **net price plugin** that allows to apply more complex bussines rules.
 
-* **Encoding**: UTF-8 
-* **File Name**: commission\_hotel.csv 
-* **Header Row**: Supplier, Hotel, Commission
-* **Delimiter**:  Comma (“,”) 
-* **Directory**: /F[folder code]\_[unique code]/HotelX\_[unique code]/
+This plugin receives an Option by parameter and returns an Option with all the prices with net value. This plugin reads information of commissions from ftp. Is mandatory to load at least, commission file. Depending of the files in ftp,this plugin can apply two different commission values over prices. ommission file specifies the commission applied to supplier’s prices. Hotel commission file specifies the commission applied to concrete hotel’s price. In one hand, if no hotels commission file is loaded in ftp, is applied net with the commission specified in commissions suppliers file. In other hand, if hotels commission file is loaded, this have preference over suppliers file. These files have to accomplish requirements below. In other cases, an error will be returned.
 
-_Headers_:
+**Observation**
 
-* _Supplier_ → supplier code 
-* _Hotel_ → hotel code 
-* _Commission_ → commission value, decimal separator must be point (".") 
+Although the group file is optional if this file is informed before the commission file the values will be used from the group file.
 
-#### Sample File
+## Files needed to use this plugin
 
-**Name**: commission\_supplier.csv
+* [**Group file format**](/hotelx/plugins/format-files/group/group/) (**Optional**)
 
-**Data**:
-
-```csv
-Supplier,Hotel,Commission
-HOTELTEST,1,19
-TTHOTTEST,1,11
-```
+* [**Commission file format**](/hotelx/plugins/format-files/commission/commission/) (**Mandatory**)
 
 ### Execution example
 
