@@ -9,27 +9,29 @@ alwaysopen = false
 
 The commission file should be in the below format:
 
-* **Encoding**: UTF-8 
-* **File Name**: context\_sequential_commission.csv 
-* **Header Row**: Rule ID,Suppliers,NOT Suppliers,Booking Date From,Booking Date To,Start Date From,Start Date To,Hotels,NOT Hotels,Chains,NOT Chains,Destination,NOT Destination,Commission,Force Commission
+* **Encoding**: UTF-8
+* **File Name**: 
+    * [**Context**](/hotelx/concepts/accesses-supplier-context/#context)
+    * [**Sequential**](/hotelx/plugins/entities/entity_table#sequential)
+    * commission
+* **Extension file**: csv
+* **Headers**:
+    * _ruleId_
+    * _supplierCodes_
+    * _notSupplierCodes_
+    * _creationDateFrom_
+    * _createionDateTo_ 
+    * _checkInFrom_
+    * _hotelCodes_
+    * _nothotelCodes_
+    * _chainsCodes_
+    * _notChainCodes_
+    * _destinationCodes_
+    * _notDestinationCodes_
+    * _percentage_
+    * _force_
 * **Delimiter**:  Comma (“,”) 
 * **Directory**: /F[folder code]\_[unique code]/HotelX\_[unique code]/
-
-_Headers_:
-
-* _Rule ID_ → rule id
-* _Suppliers_ → supplier code
-* _NOT Suppliers_ → supplier code
-* _Booking Date From_ → booking date from
-* _Booking Date To_ → booking date to
-* _Start Date From_ → start date from
-* _Start Date To_ → start date to
-* _Hotels_ → hotel code
-* _Chains_ → chains code
-* _Destination_ → destination code
-* _NOT Destination_ → destination code
-* _Commission_ → commission
-* _Force Commission_ → force commission
 
 #### Sample File
 
@@ -38,8 +40,7 @@ _Headers_:
 **Data**:
 
 ```csv
-Rule ID,Suppliers,NOT Suppliers,Booking Date From,Booking Date To,Start Date From,Start Date To,Hotels,NOT Hotels,Chains,NOT Chains,Destination,NOT Destination,Commision,Force Commision
+ruleId,supplierCodes,notSupplierCodes,creationDateFrom,creationDateTo,checkInFrom,checkInTo,hotelCodes,notHotelCodes,chainCodes,notChainCodes,destinationCodes,notDestinationCodes,percentage,force
 CE1,DIN,,,,2018-04-01,2018-10-31,3846,,,,,,18.50,false
 CE2,DIN,,,,,,3846,,,,,,15.00,false
-```
 ```

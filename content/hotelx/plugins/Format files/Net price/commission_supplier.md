@@ -14,15 +14,15 @@ The commission supplier file should be in the below format:
 The file should be in the below format:
 
 * **Encoding**: UTF-8 
-* **File Name**: commission\_supplier.csv 
-* **Header Row**: [supplier](/travelgatex/concepts/common-resources)
+* **File Name**: commission\_supplier.csv
+    * [supplier](/travelgatex/concepts/common-resources)
+    * commission
+* **Extension file**: csv
+* **Headers**:
+    *  [supplier](/travelgatex/concepts/common-resources)
+    *   _Commission_ → commission value, decimal separator must be point (".")
 * **Delimiter**:  Comma (“,”) 
 * **Directory**: /F[folder code]\_[unique code]/HotelX\_[unique code]/
-
-_Headers_:
-
-* _Supplier_ → supplier code 
-* _Commission_ → commission value, decimal separator must be point (".")
 
 #### Sample File
 
