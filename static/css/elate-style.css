@@ -1487,16 +1487,7 @@ a:active {
 .social.social-circle a {
   color: #fff;
 }
-#map {
-  width: 100%;
-  height: 500px;
-  position: relative;
-}
-@media screen and (max-width: 768px) {
-  #map {
-    height: 200px;
-  }
-}
+
 .mfp-with-zoom .mfp-container,
 .mfp-with-zoom.mfp-bg {
   opacity: 0;
