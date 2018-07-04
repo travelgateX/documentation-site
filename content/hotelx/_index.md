@@ -7,7 +7,7 @@ alwaysopen = false
 isDirectory = false
 +++
 
-With HotelX, you can **connect to multiple `Suppliers`** and add business logic to reflect your pricing and unqiue offers.
+With HotelX, you can **connect to multiple `Suppliers`** and add business logic to reflect your pricing and unique offers.
 
 There are no integration costs and you can integrate with hundreds of hotel `Suppliers`. **HotelX** has been designed from the ground up to be fast, reliable and capable of scaling to millions of requests.
 

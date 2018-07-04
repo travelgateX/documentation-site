@@ -500,7 +500,7 @@
 .graphiql-container .CodeMirror {
   color: #141823;
   font-family:
-    'Consolas',
+    'Roboto', 'Consolas',
     'Inconsolata',
     'Droid Sans Mono',
     'Monaco',
@@ -508,7 +508,7 @@
   font-size: 13px;
   height: 100%;
   left: 0;
-  position: absolute;
+  position: relative !important;
   top: 0;
   width: 100%;
 }
@@ -1403,7 +1403,7 @@ span.CodeMirror-selectedtext { background: none; }
   content: "\25B8";
 }
 .graphiql-container .history-contents {
-  font-family: 'Consolas', 'Inconsolata', 'Droid Sans Mono', 'Monaco', monospace;
+  font-family: 'Roboto', 'Consolas', 'Inconsolata', 'Droid Sans Mono', 'Monaco', monospace;
   padding: 0;
 }
 
@@ -1646,7 +1646,7 @@ span.CodeMirror-selectedtext { background: none; }
   background: white;
   -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.45);
           box-shadow: 0 1px 3px rgba(0, 0, 0, 0.45);
-  font-family: 'Consolas', 'Inconsolata', 'Droid Sans Mono', 'Monaco', monospace;
+  font-family: 'Roboto', 'Consolas', 'Inconsolata', 'Droid Sans Mono', 'Monaco', monospace;
   font-size: 13px;
   list-style: none;
   margin-left: -6px;
@@ -1655,7 +1655,7 @@ span.CodeMirror-selectedtext { background: none; }
   overflow-y: auto;
   overflow: hidden;
   padding: 0;
-  position: absolute;
+  position: relative;
   z-index: 10;
 }
 

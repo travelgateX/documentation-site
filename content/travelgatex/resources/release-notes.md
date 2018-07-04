@@ -10,6 +10,42 @@ hidden = false
 
 Check out this list of new releases and changes applied on the **TravelgateX GraphQL API**.
 
+## 2018-06-21
+
+🛑  Field `group` was removed from object type `PointOfSaleData`
+
+✅  Field `Stats.statsData` description changed from `GUID
+
+The data returned by a \`Stats\` query.` to `GUID
+
+The data returned by a Stats query.`
+
+✅  Argument `codeStartsWith: String` added to field `OrganizationData.children`
+
+✅  Argument `type: GroupType` added to field `OrganizationData.children`
+
+✅  Argument `codeStartsWith: String` added to field `GroupData.children`
+
+✅  Field `profiles` was added to object type `AdminQuery`
+
+✅  Type `ProfileFilter` was added
+
+✅  Type `EntityData` was added
+
+✅  Type `Entity` was added
+
+✅  Type `EntityEdge` was added
+
+✅  Type `EntityConnection` was added
+
+✅  Type `ProfileData` was added
+
+✅  Type `Profile` was added
+
+✅  Type `ProfileEdge` was added
+
+✅  Type `ProfileConnection` was added
+
 ## 2018-06-12
 
 🛑  Input field `group` was added to input object type `DeleteGroupInput`
@@ -384,7 +420,6 @@ Service Accounts: An application (Client) instead of an individual User. If you 
 ✅  Type `PointOfSaleEdge` was added
 
 ✅  Type `PointOfSaleConnection` was added
-
 
 ## 2018-06-01
 

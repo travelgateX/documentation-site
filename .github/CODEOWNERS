@@ -2,3 +2,13 @@
 
 # Team Doc Reviewers
 *   @travelgateX/documentation-owner @travelgateX/grammar @travelgateX/customer @travelgateX/product-global @travelgateX/product
+
+# Layout, css, hugo configuration and other non document content
+*.css   @travelgateX/documentation-owner
+*.html  @travelgateX/documentation-owner
+*.json  @travelgateX/documentation-owner
+*.ttf   @travelgateX/documentation-owner
+*.js    @travelgateX/documentation-owner
+
+
+

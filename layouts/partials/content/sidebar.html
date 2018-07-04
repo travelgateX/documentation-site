@@ -140,13 +140,10 @@
       $('#backgroundMenu').removeClass('toogled');
     });
 
-    $('a[href^="#"]').on('click',function (e) {
+    $('a[href^="#"].gotop').on('click',function (e) {
 	    e.preventDefault();
-
-	    var target = this.hash;
-	    var $target = $(target);
       $('html, body').animate({
-        scrollTop: $target.offset().top - 60
+        scrollTop: 0
       }, 500);
 	  });
   })

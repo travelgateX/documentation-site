@@ -1,23 +1,25 @@
 +++
 title = "Overview"
 pagetitle = "Security within the TravelgateX platform"
-description = "Learn Platform Security"
+description = "Learn platform security"
 icon = "fa-shield"
 weight = 1
 alwaysopen = false
 +++
 
+This page describes the how security is implemented in TravelgateX platform.
+
 ## Introduction
 
-TravelgateX offers a fine-grained access control and visibility for centrally managing `resources`, which are granted to `Partners` belonging to `Organizations`.
+TravelgateX offers a fine-grained access control and visibility for centrally managing `Resources`, which are granted to `Partners` belonging to `Organizations`.
 
 ## Authentication
 
-Authentication is the process of authorizing or making sure that the `Partner` is the correct one. Every request to TravelgateX GraphQL API must carry an Access Token whether it's an [API Key](#api-key) or a [JSON Web Token](#json-web-token).
+Authentication is the process of authorizing or making sure that the `Partner` is the correct one. Every request to TravelgateX GraphQL API must carry an Access Token whether it's an [API Key](#api-key) or a [JSON Web Token (JWT)](#json-web-token-jwt).
 
 ### API Key
 
-The API key takes cares of the authentication of applications, normally created as a `Service Account` with limited scopes. 
+The API key takes cares of the authentication of applications, normally created as a `Service Account` with limited scopes.
 The correct way to send it to GraphQL server is via HTTP Header:
 
 {{% alert theme="warning" %}}All queries must include a HTTP Header with the API key inserted in the format: 
@@ -51,7 +53,7 @@ Whenever the user wants to access a protected resource, the user agent should se
 `"Authorization: Bearer xxxxxxxxx"`
 {{% /alert %}}
 
-### Authorization
+## Authorization
 
 Once the `Member` is authenticated we must authorize the `Partner` to use the requested `Resource`.
 

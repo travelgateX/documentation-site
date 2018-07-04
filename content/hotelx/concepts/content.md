@@ -1,94 +1,69 @@
 +++
-title = "Hotel Content"
-pagetitle = "Hotel Content (Static Content)"
+title = "Content"
+pagetitle = "Content (Static Content)"
 description = "Learn about how manage content data to manage in your site. Hotel, Boards, Categories..."
 weight = 5
 alwaysopen = false
 +++
 
+{{< graphiql-script queries="[{\"apikey\":\"q8ggxpoVDW76Kw918hwnnRvxlZmAP2QZ\",\"gist\":\"https://gist.githubusercontent.com/tgx-bot/aeb082e484710ebf6b7a4ec5173064cc/raw\",\"divname\":\"div_hotels\"},{\"apikey\":\"q8ggxpoVDW76Kw918hwnnRvxlZmAP2QZ\",\"gist\":\"https://gist.githubusercontent.com/tgx-bot/4737228c495b09566474fa2db38fc72d/raw\",\"divname\":\"div_destinations\"},{\"apikey\":\"q8ggxpoVDW76Kw918hwnnRvxlZmAP2QZ\",\"gist\":\"https://gist.githubusercontent.com/tgx-bot/519b4223de8b44cb20c5c33212c62654/raw\",\"divname\":\"div_boards\"},{\"apikey\":\"q8ggxpoVDW76Kw918hwnnRvxlZmAP2QZ\",\"gist\":\"https://gist.githubusercontent.com/tgx-bot/0815561e9c25ce49bc416dbc73f36388/raw\",\"divname\":\"div_rooms\"},{\"apikey\":\"q8ggxpoVDW76Kw918hwnnRvxlZmAP2QZ\",\"gist\":\"https://gist.githubusercontent.com/tgx-bot/aa1be23b8c9229c8363c142036afb1f5/raw\",\"divname\":\"div_categories\"}]" >}}
+{{< graphiql-styles >}}
+
 On this page you will learn how to manage content data in your site such as hotel, boards, categories, etc.
 
 ## Hotels
 
-Hotels query returns a hotel list of the one supplier access. This entity contains static data about the hotel like code, name, location, information about the hotel information, etc... You can find all fields in the [graph](https://api.travelgatex.com/). You can get the hotels with hotel codes or with minimal destination codes. Also you can filter the result with the rank.
+Hotels query returns a hotel list of one supplier's access. This entity contains static data about the hotel like code, name, location, information about the hotel information, etc... You can find all fields in the [graph](https://api.travelgatex.com/). You can get the hotels with hotel codes or with minimal destination codes. Also you can filter the result with the rank. There are mandatory and optional fields that allows filtering the hotels returned in the response. The full response is splitted by pages. By default, the maximum number of hotels returned in each page(response) is 1000, but it is allowed to request between 100 and 10000 hotels filling the field size in the criteria. In order to obtain the next page of hotels, only token field have to be provided. Input parameters are explained above.
 
-### Playground Samples
+### Criteria
+**Mandatory fields**  
+- access-> It represents the access for which you want to get the hotels information.  
 
-* [hotels](https://graphqlbin.com/58y0Sp) 
+**Optional fields**  
+- hotelCodes-> it allows to filter by hotel codes  
+- ranks-> it allows to filter by ranks  
+- maxSize-> it allows to specify the number of elements per page  
 
-## Hotels Ranking
+### Token
+The token allows to request the next page of hotels. The correct way of obtaining a multiple pages of hotels is mantain this field empty for the first execution and request the token field in the response graph. Then send other/s query/ies filling the token field in the input with the value returned in the previous response.
 
-Hotel Content operations allow changes to be made to static methods on HotelX. A system where hotels can be divided into different rankings or priorities in order to facilitate the mapping process.
+#### Playground Samples
 
-The main goal of this process is to create a hotel ranking and divide the whole portfolio so the hotel list is more manageable. Each classification or sub-list responds to specific commercial criteria, such as, the hotels directly contracted, the best offers, the best sales hotels, etc.
+* Hotels
+{{< graphiql-tags tag="div_hotels" >}}
 
-Once the hotel ranking file(s) have been uploaded, the static hotel list method can filter hotels according to this ranking. To set up hotel ranking lists you must upload a file in csv format using a specific name to identify the ranking in your organisation’s FTP.
-
-### File Names (mandatory)
-
-Each file can have different meanings. It’s up to the file creator to give it a meaning according to his/her business needs. In order to process files correctly, they must be named according to the following naming convention:
-
-|File Nane| Description|
-|---------|------------|
-|rank1.csv | Rank 1, for example direct contracts |
-|rank2.csv | Rank 2, for example best deals |
-|rank3.csv | Rank 3, for example top sales |
-|rank4.csv | Rank 4, for example competitive hotels |
-|rankN.csv | Rank N, any type of information.|
-
-### Header fields (mandatory)
-
-In order to be correctly processed, the header fields must have the following format:
-
-| Field Name | Data Type |
-|-------------|----------|
-| provider_id | string |
-| hotel_code | string |
-| rank | boolean [1,0] |
-
-### Example:
-
-| provider_id | hotel_code |rank |
-|-------------|------------|-----|
-| travelgatex | 2018 | 1 |
-| travelgatey | 2017 | 1 |
-
-### Process file
-
-To process the file, it must be uploaded to your organization’s FTP folder in the TravelgateX Platform. More info on how to upload files please refer to the [data automation section](/travelgatex/data-automation/).
-
-### Template File
-
-For your convinience you can [download a template CSV file](/content/rank1.csv).
-
-## Destinations
+### Destinations
 
 Destination query returns a list of static data about destinations for a supplier access. By default if you don’t set the destination codes are all the codes. Like than hotels you can get the other pages with the continuation token.
 
-### Playground Samples
+#### Playground Samples
 
-* [destinations](https://graphqlbin.com/763zsZ) 
+* Destinations
+{{< graphiql-tags tag="div_destinations" >}}
 
-## Boards
+### Boards
 
 Board static data returns a simple map of the boards that can be returned with its translation to other languages.
 
-### Playground Samples
+#### Playground Samples
 
-* [boards](https://graphqlbin.com/6687tV) 
+* Boards
+{{< graphiql-tags tag="div_boards" >}}
 
-## Rooms
+### Rooms
 
 Room static data returns a simple map of the rooms that can be returned with its translation to other languages.
 
-### Playground Samples
+#### Playground Samples
 
-* [rooms](https://graphqlbin.com/98rmiY) 
+* Rooms
+{{< graphiql-tags tag="div_rooms" >}}
 
-## Categories
+### Categories
 
 Category static data returns a simple map of the categories that can be returned with its translation to other languages.
 
-### Playground Samples
+#### Playground Samples
 
-* [categories](https://graphqlbin.com/mwZjT6) 
+* Categories
+{{< graphiql-tags tag="div_categories" >}}

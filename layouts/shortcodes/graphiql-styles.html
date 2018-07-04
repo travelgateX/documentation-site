@@ -1,36 +1,47 @@
 <style>
   .graphiql-display {
-    height: 400px;
     position: relative;
     z-index: 0;
+    margin: 3.3rem 0 3.3rem 0;
   }
 
   div.graphiql-display>button {
-    background: linear-gradient(#fdfdfd, #d2d3d6);
+    width: 47.5px!important;
+    height: 47.5px!important;
+    background-color: #b6bbbf !important;
+    border: none;
     border-radius: 50%;
-    border: 1px solid rgba(0, 0, 0, .25);
     cursor: pointer;
-    fill: #444;
-    height: 55px;
     margin: 0;
     padding: 0;
-    width: 55px;
     position: absolute;
-    top: 25%;
+    top: 100px;
     left: 50%;
     z-index: 1004;
-    transform: translate(-50%);
+    transform: translateX(-37%);
+  }
+
+  div.graphiql-display>button svg {
+    fill: #fff !important;
+    width: 30px;
+    height: 28px;
+}
+
+  div.graphiql-display>button:hover {
+    background-color: #98a0a6 !important;
   }
 
   div.graphiql-display>button:focus {
     outline: none;
   }
 
-  div.title,
-  div.toolbar,
-  div.variable-editor,
-  button.docExplorerShow {
+  div.topBarWrap,
+  div.variable-editor {
     display: none !important;
+  }
+  div.CodeMirror-gutter.CodeMirror-foldgutter {
+    width:5px;
+    padding: 0 !important;
   }
 
   .pulse-holder {
@@ -84,5 +95,19 @@
 		to {
 				transform: rotate3d(0,1,0,359deg);
 		}
+}
+
+
+
+/* GRAPHIQL STYLES */
+.queryWrap {
+  width: 50%;
+}
+.CodeMirror-sizer {
+  max-width: auto !important;
+  min-width: auto !important;
+}
+.graphiql-container .CodeMirror {
+  position: relative !important;
 }
 </style>

@@ -1,14 +1,14 @@
 +++
-title = "Identity and Access Management"
-pagetitle = "Identity and Security Model"
-description = "Advanced Security Management"
+title = "Identity and access management"
+pagetitle = "Identity and security model"
+description = "Advanced security management"
 weight = 2
 alwaysopen = false
 +++
 
-This section provides an overview of _Identity and access management_
+This section provides an overview of Identity and access management.
 
-TravelgateX Identity and acccess management lets administrators authorize who can take action on specific resources, giving you full control and internal visibility to manage resources centrally.
+TravelgateX identity and acccess management lets administrators authorize who can take action on specific resources, giving you full control and internal visibility to manage resources centrally.
 
 Identity and access management provides an unified view of your security policy across your entire organization, with built-in auditing to ease compliance processes.
 
@@ -16,7 +16,7 @@ As an administrator, when you register with us, we provide you with login detail
 
 Identity and access management lets you manage access control by defining who _Member_ has what kind of access _Role_ to each resource:
 
-![Members and Roles](images/members-roles.svg "Members and Roles")
+![Members and Roles](./../images/members-roles.svg "Members and Roles")
 
 ## Concepts related to identity
 You grant access to **members** which can be either:
@@ -37,7 +37,7 @@ Groups are organized hierarchically, where the `Organization` node is the root n
 
 Resources are assigned to groups and propagated by groups hierarchically from bottom to top.
 
-![Group hierarchy](images/groups-hierarchy.svg "Groups hierarchy")
+![Group hierarchy](./../images/groups-hierarchy.svg "Groups hierarchy")
 
 ### Permissions and Roles
 
@@ -52,6 +52,6 @@ Common roles include:
 
 You can grant roles to members, which define who has what type of access. A policy is attached to a resource and identifies which member role is applied to every resource.
 
-![Permissions and roles](images/permissions-roles.svg "Permissions and roles")
+![Permissions and roles](./../images/permissions-roles.svg "Permissions and roles")
 
 {{% alert theme="info" %}}For more information about Identity and access management configuration, check out our tutorial [**How-to configure HotelX permissions**](/travelgatex/tutorials/howto-configure-permissions/)>{{% /alert %}}
