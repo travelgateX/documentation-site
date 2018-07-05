@@ -16,4 +16,4 @@ To make it easier for users and contributors to see precisely what notable chang
 ## 2018-07-04
 
 ### Fixed
-- Wrong behaviour that made options to be discarded when price in supplements was empty in [`Search`](travelgatex//reference/objects/hotelxquery/) query.
+- Wrong behaviour that made options to be discarded when price in supplements was empty in [`Search`](/travelgatex/reference/objects/hotelxquery/) query.
