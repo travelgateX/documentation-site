@@ -4,6 +4,7 @@ pagetitle = "GraphQL HotelX API schema changes"
 description = "It includes backwards-compatible changes, schema previews, and upcoming breaking changes."
 weight = 3
 alwaysopen = false
+svgicon="/images/graphql.svg"
 icon="fa-cogs"
 hidden = false
 tags = ["graphql-changelog"]

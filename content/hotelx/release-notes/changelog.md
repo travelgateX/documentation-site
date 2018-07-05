@@ -4,6 +4,7 @@ pagetitle = "HotelX changelog"
 description = "Contains a curated, chronologically ordered list of notable changes"
 weight = 2
 icon="fa-exchange"
+svgicon="https://media.graphcms.com/7k0GtZyQn6QDcolRhnuQ"
 alwaysopen = false
 hidden = false
 tags = ["products-changelog"]
