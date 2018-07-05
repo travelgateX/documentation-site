@@ -39,6 +39,9 @@ For these cases you will have two options:
 - Apply the exchange rates using a pluggin (this pluggin contains the exchange rates previously loaded by you)
 - Don´t apply any exchange rate and you will receive the supplier´s currency.
 
+## Is it possible to perform a cancellation as a query to just retrieve the cancellation costs, but not to cancel the booked item itself?
+You will be able to check the booking information (cancel policies included) with the [`HotelBooking`](/travelgatex/reference/objects/hotelbooking) query.
+
 ## How is the response time of the different providers managed in the aggregator mode?
 HotelX will return information from all the suppliers at the same time, once all the responses have been obtained by them. The requests that have timed out, will be signaled by a warning in the response.
 
