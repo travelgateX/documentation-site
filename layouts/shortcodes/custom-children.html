@@ -38,9 +38,11 @@
 	{{- range .menu }}
 	<a href="{{.URL}}" class="card">
 		<div class="inner-card">
-			{{- if .Params.icon}}
+			{{- if .Params.svgicon}}
+			<div class="material-icons"><img width="24px" src="{{.Params.svgicon}}"/></div>
+			{{- else if .Params.icon}}
 				<div class="material-icons fa {{.Params.icon}}"></div>
-			{{- end}}		
+			{{- end}}
 			<div>
 				<h3 class="text-headline">{{ .Title }}</h3>
 				{{- if .Description}}
@@ -48,7 +50,6 @@
 				{{- end}}
 			</div>
 		</div>
-	</a>		
+	</a>
 	{{- end }}
 {{- end }}
-
