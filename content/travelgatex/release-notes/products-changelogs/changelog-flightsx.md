@@ -4,6 +4,7 @@ pagetitle = "FlightsX changelog"
 description = "Contains a curated, chronologically ordered list of notable changes"
 weight = 2
 icon="fa-cube"
+svgicon="https://media.graphcms.com/L1972qQ3Tg5pa5RQLcjL"
 alwaysopen = false
 hidden = false
 +++

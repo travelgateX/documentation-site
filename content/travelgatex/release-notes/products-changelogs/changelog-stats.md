@@ -4,6 +4,7 @@ pagetitle = "Stats changelog"
 description = "Contains a curated, chronologically ordered list of notable changes"
 weight = 8
 icon="fa-cube"
+svgicon= "https://media.graphcms.com/N5OexjYTefnBtjdA7J7Q"
 alwaysopen = false
 hidden = false
 +++

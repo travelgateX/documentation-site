@@ -4,6 +4,7 @@ pagetitle = "Speed changelog"
 description = "Contains a curated, chronologically ordered list of notable changes"
 weight = 5
 icon="fa-cube"
+svgicon= "https://media.graphcms.com/dza39mPQLelAlHNzv8ee"
 alwaysopen = false
 hidden = false
 +++

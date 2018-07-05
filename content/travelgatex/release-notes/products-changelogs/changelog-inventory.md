@@ -4,6 +4,7 @@ pagetitle = "Inventory changelog"
 description = "Contains a curated, chronologically ordered list of notable changes"
 weight = 4
 icon="fa-cube"
+svgicon= "https://media.graphcms.com/rHI17B6SXKXuA7WUg0v1"
 alwaysopen = false
 hidden = false
 +++

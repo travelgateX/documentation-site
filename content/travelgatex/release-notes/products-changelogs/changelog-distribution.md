@@ -4,6 +4,7 @@ pagetitle = "Distribution changelog"
 description = "Contains a curated, chronologically ordered list of notable changes"
 weight = 7
 icon="fa-cube"
+svgicon= "https://media.graphcms.com/atJRAgdPSGmmG1Nnhd8F"
 alwaysopen = false
 hidden = false
 +++
