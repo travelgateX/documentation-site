@@ -28,14 +28,15 @@ This document assists on write release notes with the changelog of products.
 
 ## Release Notes Organization
 Release notes includes:
-* `Roadmap`: GIT repository where we publish future functionalities and term planned for being released.
-* `Changelogs`: Documents containing a chronologically ordered list of notable changes. We have:
-    * A general platform changelog with common changes
-    * Product specific changelogs hosted at TravelgateX/Release Notes or directly at the Product Space/Release Notes (if exists) for example: https://docs.travelgatex.com/hotelx/release-notes/changelog/ 
-    * You can find an specific instructions to fill the changelog on this document.
-* `GraphQL Schema Changes`: Is a list of recent and upcoming changes to our GraphQL API schema.
-* `Deprecated Schema Changes`: Specific list of changes that can break existing queries to the GraphQL API.
-* `Deleted Schema Changes`: Contains a changes history of deprecated notes previously announced.
+
+- `Roadmap`: GIT repository where we publish future functionalities and term planned for being released.
+- `Changelogs`: Documents containing a chronologically ordered list of notable changes. We have:
+    - A general platform changelog with common changes
+    - Product specific changelogs hosted at TravelgateX/Release Notes or directly at the Product Space/Release Notes (if exists) for example: https://docs.travelgatex.com/hotelx/release-notes/changelog/ 
+    - You can find an specific instructions to fill the changelog on this document.
+- `GraphQL Schema Changes`: Is a list of recent and upcoming changes to our GraphQL API schema.
+- `Deprecated Schema Changes`: Specific list of changes that can break existing queries to the GraphQL API.
+- `Deleted Schema Changes`: Contains a changes history of deprecated notes previously announced.
 
 ## How to keep a good changelog
 ### General Principles
