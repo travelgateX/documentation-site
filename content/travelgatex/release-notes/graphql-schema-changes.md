@@ -5,6 +5,7 @@ description = "It includes backwards-compatible changes, schema previews, and up
 weight = 3
 alwaysopen = false
 icon="fa-cogs"
+svgicon="/images/graphql.svg"
 hidden = false
 tags = ["graphql-changelog"]
 

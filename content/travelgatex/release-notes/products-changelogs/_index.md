@@ -3,6 +3,7 @@ title = "Products changelogs"
 pagetitle = "Products changelogs"
 description = "Contains a curated, chronologically ordered list of notable changes by product"
 icon="fa-cubes"
+svgicon="/images/isotype_travelgatex.svg"
 weight = 6
 alwaysopen = false
 isDirectory = false
