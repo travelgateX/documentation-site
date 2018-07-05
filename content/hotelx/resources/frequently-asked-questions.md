@@ -43,3 +43,6 @@ HotelX will return information from all the suppliers at the same time, once all
 
 ## In aggregator mode is it possible to set a time out for each provider?
 No, the time out will be applied to all providers, using the parameter setting: timeout
+
+## Is it possible to perform a cancellation as a query to just retrieve the cancellation costs, but not to cancel the booked item itself?
+You will be able to check the booking information (cancel policies included) with the HotelBooking request.
