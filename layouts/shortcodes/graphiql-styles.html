@@ -40,8 +40,12 @@
     display: none !important;
   }
   div.CodeMirror-gutter.CodeMirror-foldgutter {
-    width:5px;
+    width:1px;
     padding: 0 !important;
+  }
+
+  div.CodeMirror-gutter-wrapper {
+    display: none;
   }
 
   .pulse-holder {
@@ -75,6 +79,23 @@
 		animation: rotation 2s infinite linear;
   }
 
+  div.query-editor div.CodeMirror-sizer {
+  margin-left: 0 !important;
+  padding-left: 2rem;
+}
+
+div.query-editor div.CodeMirror-gutters {
+  display: none;
+}
+
+div.query-editor > div.CodeMirror {
+  background-color: #F5F6F6 !important;
+}
+
+div.result-window > div.CodeMirror {
+  background-color: #F0F2F2 !important;
+}
+
   @keyframes pulse {
     0% {
       box-shadow: 0 0 0 0 rgba(84, 145, 242, 0.4);
@@ -103,10 +124,12 @@
 .queryWrap {
   width: 50%;
 }
+
 .CodeMirror-sizer {
   max-width: auto !important;
   min-width: auto !important;
 }
+
 .graphiql-container .CodeMirror {
   position: relative !important;
 }
