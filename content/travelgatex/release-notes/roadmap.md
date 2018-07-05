@@ -1,10 +1,13 @@
 +++
 title = "Roadmap"
 pagetitle = "TravelgateX roadmap"
-description = ""
-weight = 2
+description = "We have put together a GitHub Project where we will keep updating on the things we’ve in our plans."
+weight = 1
 alwaysopen = false
+icon="fa-road"
 hidden = false
+tags = ["roadmap"]
+
 +++
 
 We have put together a GitHub Project where we will keep updating on the things we’ve in our plans.
