@@ -3,6 +3,7 @@ title = "Common resources"
 pagetitle = "Common resources"
 description = "Learn about common resources used in TravelgateX"
 alwaysopen = false
+weight = 1
 +++
 
 On this page you will learn more about common resources used in TravelgateX. You can also refer to the overarching [core concepts that apply to all TravelgateX APIs](/getting-started/concepts/).

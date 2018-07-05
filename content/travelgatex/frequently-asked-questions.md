@@ -1,8 +1,9 @@
 +++
-title = "Frequently Asked Questions"
+title = "FAQs"
 pagetitle = "TravelgateX Frequently Asked Questions"
 description = "Do you have specific questions about TravelgateX? Check out the FAQs"
-weight = 3
+icon = "fa-question-circle"
+weight = 7
 alwaysopen = false
 tags = ["faq"]
 +++
