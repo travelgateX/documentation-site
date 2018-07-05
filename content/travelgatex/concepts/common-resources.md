@@ -2,6 +2,7 @@
 title = "Common resources"
 pagetitle = "Common resources"
 description = "Learn about common resources used in TravelgateX"
+icon = "fa-users"
 alwaysopen = false
 weight = 1
 +++
