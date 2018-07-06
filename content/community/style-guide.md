@@ -308,7 +308,8 @@ Use the parallelism principle previously described for table headings and the fi
 A well-designed diagram or a screen shot can save you a lot of writing and help the reader better understand a complex idea. Make sure any text is legible at the display size in the doc (800 pixels wide or less). If the image itself becomes too complex, consider breaking it up into more than one picture.
 
 * Don't use images you don't have rights to use.
-* Store the images in the same folder where your document's `index.md` file is stored.
+* Don't store the images in the same folder where your document's `index.md` file is stored, images must be saved in current_folder/images. 
+* Don't embed SVG images on the .md files, so the SVG images must be in a separate svg file under /images dir.
 
 ### Code
 
