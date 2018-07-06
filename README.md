@@ -2,7 +2,7 @@
 [pr]: https://github.com/travelgateX/documentation-site/compare
 [code-of-conduct]: CODE_OF_CONDUCT.md
 
-# TravelgateX Documentation
+# TravelgateX DocumentationX
 
 This repository contains source for TravelgateX documentation.
 TravelgateX is a collection of GraphQL APIs for the travel trade.
