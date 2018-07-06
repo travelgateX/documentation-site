@@ -13,15 +13,18 @@ Net Price is an optional plugin and allows to net all the prices in an option.
 
 * [**CommissionX**](/hotelx/plugins/net-price#commissionX) (NetpriceX Extended funcionality)
 
-## NetPriceX (future deprecation) {#netpricex}
+## NetPriceX {#netpricex}
 
-This plugin receives an Option by parameter and returns an Option with all the prices with net value. This plugin reads information of commissions from ftp. Is mandatory to load at least, suppliers commission file. Depending of the files in ftp, this plugin can apply two different commission values over prices. Suppliers commission file specifies the commission applied to supplier’s prices. Hotel commission file specifies the commission applied to concrete hotel’s price. In one hand, if no hotels commission file is loaded in ftp, is applied net with the commission specified in commissions suppliers file. In other hand, if hotels commission file is loaded, this have preference over suppliers file. These files have to accomplish requirements below. In other cases, an error will be returned.
+### Goals
+
+This plugin receives an Option by parameter and returns an Option with all the prices with net value. **This plugin reads information of commissions from ftp**. Is mandatory to load at least, suppliers commission file. Depending of the files in ftp, **this plugin can apply two different commission values over prices**.
+Suppliers commission file specifies the commission applied to supplier’s prices. Hotel commission file specifies the commission applied to concrete hotel’s price. In one hand, if no hotels commission file is loaded in ftp, is applied net with the commission specified in commissions suppliers file. In other hand, if hotels commission file is loaded, this have preference over suppliers file. These files have to accomplish requirements below. In other cases, an error will be returned.
 
 ## Files needed to use this plugin
 
-* [**Commission supplier file format**](/hotelx/plugins/format-files/net-price/commission_supplier/) (**Mandatory**)
+* [**Commission supplier file format**](/hotelx/plugins/format-files/commission_supplier/) (**Mandatory**)
 
-* [**Commision hotel file format**](/hotelx/plugins/format-files/net-price/commission_old/) (**Optional**)
+* [**Commision hotel file format**](/hotelx/plugins/format-files/commission_netprice/) (**Optional**)
 
 ### Execution example
 
@@ -51,19 +54,35 @@ This plugin receives an Option by parameter and returns an Option with all the p
 
 ## CommissionX {#commissionX}
 
-CommissionX is a plugin with an extended funcionality over **net price plugin** that allows to apply more complex bussines rules.
+### Goals
 
-This plugin receives an Option by parameter and returns an Option with all the prices with net value. This plugin reads information of commissions from ftp. Is mandatory to load at least, commission file. Depending of the files in ftp,this plugin can apply two different commission values over prices. ommission file specifies the commission applied to supplier’s prices. Hotel commission file specifies the commission applied to concrete hotel’s price. In one hand, if no hotels commission file is loaded in ftp, is applied net with the commission specified in commissions suppliers file. In other hand, if hotels commission file is loaded, this have preference over suppliers file. These files have to accomplish requirements below. In other cases, an error will be returned.
+CommissionX is a plugin with an extended funcionality over **net price plugin** that allows to apply more complex bussines rules.
+This plugin defines the contracted / expected commission in cases where the provider is not able to send it via connection. These commissions are defined through the plugin so as not to lose the options in which we do not know the type of price sent, since this information goes to the contract level between client-provider. Different commissions can be applied depending on the different rules depending on the format that we will describe next.
 
 **Observation**
 
 Although the group file is optional if this file is informed before the commission file the values will be used from the group file.
 
-## Files needed to use this plugin
+### Files needed to use this plugin
 
-* [**Group file format**](/hotelx/plugins/format-files/group/group/) (**Optional**)
+* [**Sequential Commission file format**](/hotelx/plugins/format-files/commission/) (**Mandatory**). If the columns **chainCodes,destinationCodes** are informed then it is mandatory to upload group file.
 
-* [**Commission file format**](/hotelx/plugins/format-files/commission/commission/) (**Mandatory**)
+* [**Group file format**](/hotelx/plugins/format-files/group/) (**Optional**)
+
+    * This file will be necessary in case you want to apply rules depending on a grouping of codes that depend on a [**context**](/hotelx/concepts/accesses-supplier-context/#context). For this case, it is necessary that you pass with the [**entity**](/hotelx/plugins/entity_table_file/).
+
+
+### How we make it
+
+We read sequentially the commission file if the columns **chainCodes,destinationCodes** are informed then it is mandatory to upload group file to be able to read these values from the group file.
+
+#### **Possible values entity filename** {#entitygroup}
+
+|Entity | chainCodes| destinationCodes| hotelCodes |
+|---------|---|---|---|
+|[hotel](/hotelx/plugins/entity_table_file#hotel)| Yes | Yes | No |
+|[destination](/hotelx/plugins/entity_table_file#destination)| Yes | No | Yes |
+
 
 ### Execution example
 

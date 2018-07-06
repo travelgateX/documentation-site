@@ -1,6 +1,6 @@
 +++
-title = "Commission supplier file"
-pagetitle = "Commission supplier file"
+title = "Commission supplier"
+pagetitle = "Commission supplier"
 description = "Format commission supplier file."
 icon = "fa-exchange"
 weight = 3
@@ -19,8 +19,8 @@ The file should be in the below format:
     * commission
 * **Extension file**: csv
 * **Headers**:
-    *  [supplier](/travelgatex/concepts/common-resources)
-    *   _Commission_ → commission value, decimal separator must be point (".")
+    *  [supplier](/travelgatex/concepts/common-resources)  → supplier code
+    *   _commission_ → commission value, decimal separator must be point (".")
 * **Delimiter**:  Comma (“,”) 
 * **Directory**: /F[folder code]\_[unique code]/HotelX\_[unique code]/
 

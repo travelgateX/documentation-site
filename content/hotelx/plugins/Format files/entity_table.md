@@ -9,7 +9,7 @@ alwaysopen = false
 
 We have different combinations values from entities values this table show this combinations:
 
-|Entity | ChainCodes| DestinationCodes| HotelCodes |
+|[**entity**](/hotelx/plugins/entity_table_file#entityprocessed) | chainCodes| destinationCodes| hotelCodes |
 |---------|---|---|---|
 |chain| Yes | No | No |
 |hotel| No | No | Yes |
