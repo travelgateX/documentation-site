@@ -17,8 +17,8 @@ Net Price is an optional plugin and allows to net all the prices in an option.
 
 ### Goals
 
-This plugin receives an Option by parameter and returns an Option with all the prices with net value. **This plugin reads information of commissions from ftp**. Is mandatory to load at least, suppliers commission file. Depending of the files in ftp, **this plugin can apply two different commission values over prices**.
-Suppliers commission file specifies the commission applied to supplier’s prices. Hotel commission file specifies the commission applied to concrete hotel’s price. In one hand, if no hotels commission file is loaded in ftp, is applied net with the commission specified in commissions suppliers file. In other hand, if hotels commission file is loaded, this have preference over suppliers file. These files have to accomplish requirements below. In other cases, an error will be returned.
+This plugin receives an Option by parameter and returns an Option with all the prices with net value. **This plugin reads information of commissions from ftp**. It is mandatory to load at least supplier's commission file. Depending of the files in ftp, **this plugin can apply two different commission values over prices**.
+Suppliers commission file specifies the commission applied to supplier’s prices. Hotel commission file specifies the commission applied to the specific hotel’s price. In the one hand, if no hotels commission file is loaded in ftp, it's applied the net price with the commission specified in commissions supplier's file. In other hand, if the hotel's commission file is loaded, this has preference over the supplier's file. These files have to meet the requirements listed below. In other cases, an error will be returned.
 
 ## Files needed to use this plugin
 
@@ -57,7 +57,7 @@ Suppliers commission file specifies the commission applied to supplier’s price
 ### Goals
 
 CommissionX is a plugin with an extended funcionality over **net price plugin** that allows to apply more complex bussines rules.
-This plugin defines the contracted / expected commission in cases where the provider is not able to send it via connection. These commissions are defined through the plugin so as not to lose the options in which we do not know the type of price sent, since this information goes to the contract level between client-provider. Different commissions can be applied depending on the different rules depending on the format that we will describe next.
+This plugin defines the contracted / expected commission in cases where the supplier is not able to send it via integration. These commissions are defined through the plugin so as not to lose the options in which we do not know the type of price sent, since this information is established at contract level between client-supplier. Different commissions can be applied according to the different rules depending on the format that we will describe next.
 
 **Observation**
 
