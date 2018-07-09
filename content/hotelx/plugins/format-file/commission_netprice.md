@@ -1,6 +1,6 @@
 +++
-title = "Hotel Commission file"
-pagetitle = "Hotel Commission file"
+title = "Hotel Commission"
+pagetitle = "Hotel Commission"
 description = "Format hotel commission file."
 icon = "fa-exchange"
 weight = 4
@@ -19,9 +19,9 @@ The hotel commission file should be in the below format:
     * hotel
 * **Extension file**: csv
 * **Headers**:
-    * [**Supplier**](/hotelx/concepts/accesses-supplier-context/#supplier)  → supplier code 
-    * _Hotel_ → hotel code 
-    * _Commission_ → commission value, decimal separator must be point (".") 
+    * [supplier](/hotelx/concepts/accesses-supplier-context/#supplier)  → supplier code 
+    * _hotel_ → hotel code 
+    * _commission_ → commission value, decimal separator must be point (".") 
 * **Delimiter**:  Comma (“,”) 
 * **Directory**: /F[folder code]\_[unique code]/HotelX\_[unique code]/
 
