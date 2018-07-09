@@ -55,34 +55,26 @@ In addition, is necessary that option and parameter currencies are in ftp file.
 
 ```
 {
-    "plugins": {
-    
+  "plugins": [
+    {
       "step": "RESPONSE_OPTION",
-      
-      "pluginsType": {
-      
-        "type": "CURRENCY_CONVERSION",
-        
-        "name": "currency_exchange",
-        
-        "parameters": [
-        
-          {
-          
-            "key": "currency",
-            
-            "value": "GBP"
-          
-          },
-          {
-          
-            "key": "exclude",
-            
-            "value": "true"
-          
-          }
-        ]
-      }
+      "pluginsType": [
+        {
+          "type": "CURRENCY_CONVERSION",
+          "name": "currency_exchange",
+          "parameters": [
+            {
+              "key": "currency",
+              "value": "GBP"
+            },
+            {
+              "key": "exclude",
+              "value": "true"
+            }
+          ]
+        }
+      ]
     }
+  ]
 }
 ```
