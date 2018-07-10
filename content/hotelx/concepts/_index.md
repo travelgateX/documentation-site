@@ -7,4 +7,4 @@ weight = 3
 alwaysopen = false
 +++
 
-{{%custom-children-lv2%}}
+{{%custom-children%}}

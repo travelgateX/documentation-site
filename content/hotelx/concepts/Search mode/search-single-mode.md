@@ -2,6 +2,7 @@
 title = "Search Single Mode & Multi Mode"
 pagetitle = "Search, Quote and Book"
 description = "Learn about Transactional Booking flow. Search, Quote and Confirm Reservation"
+icon = "fa-search-plus"
 weight = 3
 alwaysopen = false
 +++

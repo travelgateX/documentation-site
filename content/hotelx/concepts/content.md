@@ -2,6 +2,7 @@
 title = "Content"
 pagetitle = "Content (Static Content)"
 description = "Learn about how manage content data to manage in your site. Hotel, Boards, Categories..."
+icon = "fa-list-alt"
 weight = 5
 alwaysopen = false
 +++
