@@ -2,6 +2,7 @@
 title = "Identity and access management"
 pagetitle = "Identity and security model"
 description = "Advanced security management"
+icon = "fa-address-card-o"
 weight = 2
 alwaysopen = false
 +++

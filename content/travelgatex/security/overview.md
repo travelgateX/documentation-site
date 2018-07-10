@@ -2,7 +2,7 @@
 title = "Overview"
 pagetitle = "Security within the TravelgateX platform"
 description = "Learn platform security"
-icon = "fa-shield"
+icon = "fa-file-text-o"
 weight = 1
 alwaysopen = false
 +++

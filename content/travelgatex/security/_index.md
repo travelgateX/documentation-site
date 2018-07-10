@@ -3,6 +3,7 @@ title = "Security"
 pagetitle = "Authorization & Authentication"
 description = "Authorization & Authentication"
 icon="fa-shield"
+isDirectory = false
 weight = 4
 alwaysopen = false
 +++
@@ -18,4 +19,4 @@ Our security measures include:
 <li>Support for creating and maintaining internal security policies</li>
 <li>Use of rate limiting and error messages where usage is outside our normal business experience.</li>
 
-{{%custom-children-lv2%}}
+{{%custom-children%}}
