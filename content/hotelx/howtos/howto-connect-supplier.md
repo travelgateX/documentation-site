@@ -2,6 +2,7 @@
 title = "Connect a New Supplier"
 pagetitle = "How to connect to a new Supplier"
 description = "How to connect to a new Supplier"
+icon = "fa-exchange"
 weight = 1
 alwaysopen = false
 +++
