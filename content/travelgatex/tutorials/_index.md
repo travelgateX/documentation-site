@@ -8,4 +8,4 @@ alwaysopen = false
 +++
 
 What you can build on TravelgateX's platform
-{{%custom-children-lv2%}}
+{{%custom-children%}}

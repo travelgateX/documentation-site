@@ -2,6 +2,7 @@
 title = "Configure HotelX Security"
 pagetitle = "Configure HotelX Security"
 description = "Configure your own HotelX security model"
+icon = "fa-lock"
 weight = 2
 alwaysopen = false
 +++
