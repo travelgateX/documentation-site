@@ -2,7 +2,7 @@
 title = "Blacklist"
 pagetitle = "HotelX Blacklist"
 description = "Hotel codes blacklist: filter out specific hotels from the search query."
-icon = "fa-sitemap"
+icon = "fa-flag"
 weight = 2
 alwaysopen = false
 +++

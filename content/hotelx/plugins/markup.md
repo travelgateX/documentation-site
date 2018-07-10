@@ -2,7 +2,7 @@
 title = "Markup"
 pagetitle = "Markup"
 description = "Mark up or down the price coming from the Supplier based on different criteria."
-icon = "fa-money"
+icon = "fa-line-chart"
 weight = 3
 alwaysopen = false
 +++

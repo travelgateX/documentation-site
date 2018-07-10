@@ -2,7 +2,7 @@
 title = "Currency Converter"
 pagetitle = "Currency Converter"
 description = "Convert currency in order to have a unified response."
-icon = "fa-exchange"
+icon = "fa-usd"
 weight = 4
 alwaysopen = false
 +++

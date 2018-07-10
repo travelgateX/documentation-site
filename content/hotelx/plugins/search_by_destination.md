@@ -2,7 +2,7 @@
 title = "Search by destination"
 pagetitle = "Search by destination"
 description = "Enables search query to request per destinations by converting destination codes to hotel codes"
-icon = "fa-exchange"
+icon = "fa-globe"
 weight = 4
 alwaysopen = false
 +++ 

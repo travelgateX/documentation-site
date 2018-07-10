@@ -2,7 +2,7 @@
 title = "Commission"
 pagetitle = "Commission"
 description = "Format commission file."
-icon = "fa-exchange"
+icon = "fa-file-text-o"
 weight = 6
 alwaysopen = false
 +++

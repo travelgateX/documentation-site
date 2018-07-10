@@ -2,7 +2,7 @@
 title = "Commission supplier"
 pagetitle = "Commission supplier"
 description = "Format commission supplier file."
-icon = "fa-exchange"
+icon = "fa-file-text-o"
 weight = 3
 alwaysopen = false
 +++
