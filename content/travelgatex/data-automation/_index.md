@@ -27,4 +27,4 @@ The data we must store following specificitations:
 * [Mappings](/hotelx/plugins/mapping/)
 * [Custom hotel lists](/hotelx/concepts/content/)
 
-{{%custom-children-lv2%}}
+{{%custom-children%}}
