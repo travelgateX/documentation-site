@@ -2,6 +2,8 @@
 title = "GraphQL Overview"
 pagetitle = ""
 description = ""
+icon="fa-cogs"
+svgicon="/images/graphql.svg"
 weight = 2
 alwaysopen = false
 +++

@@ -2,6 +2,7 @@
 title = "Tools"
 pagetitle = "GraphQL tools"
 description = ""
+icon="fa-wrench"
 weight = 5
 alwaysopen = false
 +++
