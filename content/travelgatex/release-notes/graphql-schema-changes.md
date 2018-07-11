@@ -14,6 +14,124 @@ The GraphQL schema change log is a list of recent and upcoming changes to our Gr
 
 Check out this list of new releases and changes applied on the **TravelgateX GraphQL API**.
 
+## 2018-07-10 {#20180710}
+
+🛑  Field `deleteDefaultSettings` was removed from object type `Mutation`
+
+🛑  Field `updateDefaultSettings` was removed from object type `Mutation`
+
+🛑  Field `createDefaultSettings` was removed from object type `Mutation`
+
+🛑  Field `loadFile` was removed from object type `Mutation`
+
+🛑  Field `hotelCancel` was removed from object type `Mutation`
+
+🛑  Field `hotelBook` was removed from object type `Mutation`
+
+🛑  Field `Destination.error` changed type from `[Error!]` to `[AdviseMessage!]`
+
+🛑  Field `Hotel.error` changed type from `[Error!]` to `[AdviseMessage!]`
+
+🛑  Field `mapping` was removed from object type `Query`
+
+🛑  Field `defaultSettings` was removed from object type `Query`
+
+🛑  Field `booking` was removed from object type `Query`
+
+🛑  Field `quote` was removed from object type `Query`
+
+🛑  Field `search` was removed from object type `Query`
+
+✅  Input field `AccessInput.name` changed type from `String!` to `String`
+
+✅  Field `removeEntitiesFromProfile` was added to object type `AdminMutation`
+
+✅  Field `addEntitiesToProfile` was added to object type `AdminMutation`
+
+✅  Field `updateProfile` was added to object type `AdminMutation`
+
+✅  Field `createProfile` was added to object type `AdminMutation`
+
+✅  Input field `PaymentXBookingInfoFilterInput.bookingReference` changed type from `String!` to `String`
+
+✅  Input field `PaymentXBookingInfoFilterInput.bookingReference` description changed from `Indicates the referece of the booking` to `Indicates the referece of the booking. @deprecated(reason: "deprecated from 2018-08-03. Please use PaymentXBookingInfoCriteriaInput")`
+
+✅  Input field `PaymentXBookingInfoFilterInput.pointOfSaleCode` changed type from `ID!` to `ID`
+
+✅  Input field `PaymentXBookingInfoFilterInput.pointOfSaleCode` description changed from `Indicates the code of the booked property` to `Indicates the code of the booked property. @deprecated(reason: "deprecated from 2018-08-03. Please use PaymentXBookingInfoCriteriaInput")`
+
+✅  Input field `PaymentXBookingInfoFilterInput.organization` changed type from `String!` to `String`
+
+✅  Input field `PaymentXBookingInfoFilterInput.organization` description changed from `Responsible organization of the booked property.` to `Responsible organization of the booked property. @deprecated(reason: "deprecated from 2018-08-03. Please use PaymentXBookingInfoCriteriaInput")`
+
+✅  Input field `checkOut_gte` was added to input object type `PaymentXBookingInfoFilterInput`
+
+✅  Input field `checkOut_gt` was added to input object type `PaymentXBookingInfoFilterInput`
+
+✅  Input field `checkOut_lte` was added to input object type `PaymentXBookingInfoFilterInput`
+
+✅  Input field `checkOut_lt` was added to input object type `PaymentXBookingInfoFilterInput`
+
+✅  Input field `checkOut_not_in` was added to input object type `PaymentXBookingInfoFilterInput`
+
+✅  Input field `checkOut_in` was added to input object type `PaymentXBookingInfoFilterInput`
+
+✅  Input field `checkIn_gte` was added to input object type `PaymentXBookingInfoFilterInput`
+
+✅  Input field `checkIn_gt` was added to input object type `PaymentXBookingInfoFilterInput`
+
+✅  Input field `checkIn_lte` was added to input object type `PaymentXBookingInfoFilterInput`
+
+✅  Input field `checkIn_lt` was added to input object type `PaymentXBookingInfoFilterInput`
+
+✅  Input field `checkIn_not_in` was added to input object type `PaymentXBookingInfoFilterInput`
+
+✅  Input field `checkIn_in` was added to input object type `PaymentXBookingInfoFilterInput`
+
+✅  Input field `OR` was added to input object type `PaymentXBookingInfoFilterInput`
+
+✅  Input field `AND` was added to input object type `PaymentXBookingInfoFilterInput`
+
+✅  Argument `bookingInfoCriteria: PaymentXBookingInfoCriteriaInput` added to field `PaymentXQuery.cards`
+
+✅  Input field `HotelXHotelListInput.access` changed type from `ID!` to `ID`
+
+✅  Input field `group` was added to input object type `HotelXHotelListInput`
+
+✅  Field `airports` was added to object type `Location`
+
+✅  Input field `maxSize` was added to input object type `HotelXRoomQueryInput`
+
+✅  Field `token` was added to object type `RoomConnection`
+
+✅  Field `HotelXQuery.destinationSearcher` description changed from `Returns hotels and destinations that contains the indicated text. ` to `Returns hotels and destinations that contains the indicated text.`
+
+✅  Argument `filter: HotelXHotelFilterInput` added to field `HotelXQuery.hotels`
+
+✅  Argument `token: String` added to field `HotelXQuery.rooms`
+
+✅  Field `AdminQuery.products` description changed from `Members list; specify member codes to filter members` to `Product catalog; specify products codes to filter `
+
+✅  Field `jwt` was added to object type `AdminQuery`
+
+✅  Type `UpdateEntitiesInput` was added
+
+✅  Type `UpdateProfileInput` was added
+
+✅  Type `EntitiesInput` was added
+
+✅  Type `CreateProfileInput` was added
+
+✅  Type `PaymentXBookingInfoCriteriaInput` was added
+
+✅  Type `HotelXHotelFilterInput` was added
+
+✅  Type `AirportData` was added
+
+✅  Type `Airport` was added
+
+✅  Type `JWT` was added
+
 ## 2018-06-21
 
 🛑  Field `group` was removed from object type `PointOfSaleData`
