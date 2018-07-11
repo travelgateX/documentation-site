@@ -53,7 +53,18 @@ Board static data returns a simple map of the boards that can be returned with i
 
 ### Rooms
 
-Room static data returns a simple map of the rooms that can be returned with its translation to other languages.
+Room static data returns a simple map of the rooms that can be returned with its translation to other languages. You can get the rooms from room codes. The full response, such as hotel query, is splitted by pages. By default, the number of rooms in each page are 1000, however you can choose the size with a value between 100 and 10000.
+
+### Criteria
+**Mandatory fields**  
+- access-> It represents the access for which you want to get the room description.  
+
+**Optional fields**  
+- roomCodes-> it allows to filter by room codes  
+- maxSize-> it allows to specify the number of elements per page  
+
+### Token
+The token allows to request the next page of rooms. The correct way of obtaining a multiple pages of rooms is mantain this field empty for the first execution and request the token field in the response graph. Then send other/s query/ies filling the token field in the input with the value returned in the previous response.
 
 #### Playground Samples
 
