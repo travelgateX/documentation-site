@@ -12,7 +12,12 @@ To make it easier for users and contributors to see precisely what notable chang
 
 {{% alert theme="info" %}}All notable changes on TravelgateX platform will be documented in this page.{{% /alert %}}
 
-## 2018-07-04{#20180704}
+## 2018-07-10{#20180704}
 
-### Fixed{#asd .20180704 .s}
-- Wrong behaviour that made options to be discarded when price in supplements was empty in [`Search`](/travelgatex/reference/objects/hotelxquery/) query.
+## Added
+- [Deleted schema notes](/travelgatex/release-notes/deprecated_notes/)
+
+### Changed
+- [GraphQL Schema updated.](/travelgatex/release-notes/graphql-schema-changes/#20180710)
+- New version of [Deprecated schema notes](/travelgatex/release-notes/deprecated_notes/)
+ 
