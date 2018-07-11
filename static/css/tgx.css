@@ -118,7 +118,7 @@ body {
   font-size: 14px !important;
   font-family: Roboto, sans-serif !important;
   color: #182945 !important;
-  letter-spacing: .06rem;
+  letter-spacing: 0.06rem;
   line-height: 2.5rem !important;
 }
 
@@ -549,7 +549,7 @@ a.card-lv2:hover {
   }
 
   #navbar {
-    width: 50%; 
+    width: 50%;
     max-width: 50%;
   }
 
@@ -1545,7 +1545,7 @@ div.deprecated-entities-container.active {
 #footer_docs {
   position: relative;
   z-index: 2;
-  padding: 0; 
+  padding: 0;
   margin-top: 25px;
 
   /* max-width: 72%;  */
@@ -1704,7 +1704,7 @@ div.deprecated-entities-container.active {
 #searchbar > div.sb_menu_div > ul > li {
   height: 54px;
 }
-#searchbar > div.sb_menu_div > ul > li > a{
+#searchbar > div.sb_menu_div > ul > li > a {
   padding: 15px;
 }
 
@@ -1714,8 +1714,7 @@ div.deprecated-entities-container.active {
   }
 }
 
-
-@media (min-width: 1450px) and (max-width:  1709px) {
+@media (min-width: 1450px) and (max-width: 1709px) {
   #searchbar {
     width: 77%;
   }
@@ -1739,8 +1738,8 @@ div.deprecated-entities-container.active {
     display: block;
   }
 
-  div.container_row>div.content-center {
-margin-top: 120px;
+  div.container_row > div.content-center {
+    margin-top: 120px;
   }
 
   #searchbar > div.sb_menu_div > ul {
@@ -1758,7 +1757,7 @@ margin-top: 120px;
     left: 1.5%;
   }
 }
-@media (max-width: 769px){
+@media (max-width: 769px) {
   #searchbar {
     width: 100%;
     display: block;
@@ -1767,3 +1766,46 @@ margin-top: 120px;
     display: none;
   }
 }
+
+ul.release-types {
+  padding-left: 105px;
+  margin-top: 20px;
+}
+
+ul.release-types.type-d>li{
+  list-style: none;
+  font-size: 1.5rem;
+  padding: .5rem;
+}
+
+ul.release-types>li:nth-of-type(1)::before {
+  display: block;
+  float: left;
+  color: white;
+  left: -10px;
+  top: -5px;
+  position: relative;
+  width: 90px;
+  height: 32px;
+  margin-left: -100px;
+  margin-right: 10px;
+  margin-top: -5px;
+  padding-top: 4px;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 700;
+  text-align: center;
+  border-radius: 16px;
+}
+
+ul.release-types.type-d>li:nth-of-type(1)::before {
+  content: 'removed';
+  background-color: #DB4437;
+}
+
+/*
+COLOURS
+
+deprecated = #E65100 
+issue = #DB4437
+*/

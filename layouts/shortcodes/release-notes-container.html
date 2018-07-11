@@ -1,0 +1,5 @@
+<div>
+        <ul class="release-types {{ if .IsNamedParams }}{{with .Get " type " }}type-{{.}}{{else}}type-d{{end}}{{end}}" role="types">
+                {{.Inner}}
+        </ul>
+</div>
