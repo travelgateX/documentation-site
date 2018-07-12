@@ -1771,18 +1771,18 @@ div.deprecated-entities-container.active {
   }
 }
 
-ul.release-types {
-  padding-left: 105px;
-  margin-top: 20px;
+div.release-types {
+  padding-left: 85px;
+  margin-top: 30px;
 }
 
-ul.release-types.type-d>li{
+div.release-types.type-d>ul>li{
   list-style: none;
   font-size: 1.5rem;
   padding: .5rem;
 }
 
-ul.release-types>li:nth-of-type(1)::before {
+div.release-types>ul>li:nth-of-type(1)::before {
   display: block;
   float: left;
   color: white;
@@ -1802,7 +1802,7 @@ ul.release-types>li:nth-of-type(1)::before {
   border-radius: 16px;
 }
 
-ul.release-types.type-d>li:nth-of-type(1)::before {
+div.release-types.type-d>ul>li:nth-of-type(1)::before {
   content: 'removed';
   background-color: #DB4437;
 }

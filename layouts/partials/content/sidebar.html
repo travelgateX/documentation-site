@@ -141,7 +141,6 @@
     });
 
      $('#TableOfContents a[href^="#"]').click(function() {
-       console.log('table of contents');
       var target = $(this.hash);
       if (target.length == 0) target = $('a[name="' + this.hash.substr(1) + '"]');
       if (target.length == 0) target = $('html');

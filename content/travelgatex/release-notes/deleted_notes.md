@@ -16,15 +16,15 @@
 ## Deletions
 ### 2018-07-09
 {{% release-notes-container type="D"%}}
-<li>Removed <code>quote</code> from <code>Query</code>. Reason: You can find it in query at HotelX. Deprecated on 2017-11-21</li>
-<li>Removed <code>deleteDefaultSettings</code> from <code>Mutation</code>. Reason: You can find it in query at Admin. Deprecated on 2017-11-21</li>
-<li>Removed <code>updateDefaultSettings</code> from <code>Mutation</code>. Reason: You can find it in query at Admin. Deprecated on 2017-11-21</li>
-<li>Removed <code>createDefaultSettings</code> from <code>Mutation</code>. Reason: You can find it in query at Admin. Deprecated on 2017-11-21</li>
-<li>Removed <code>loadFile</code> from <code>Mutation</code>. Reason: You can find it in query at Admin. Deprecated on 2017-11-21</li>
-<li>Removed <code>hotelCancel</code> from <code>Mutation</code>. Reason: You can find it in query at HotelX. Deprecated on 2017-11-21</li>
-<li>Removed <code>hotelBook</code> from <code>Mutation</code>. Reason: You can find it in query at HotelX. Deprecated on 2017-11-21</li>
-<li>Removed <code>search</code> from <code>Query</code>. Reason: You can find it in query at HotelX. Deprecated on 2017-11-21</li>
-<li>Removed <code>booking</code> from <code>Query</code>. Reason: You can find it in query at HotelX. Deprecated on 2017-11-21</li>
-<li>Removed <code>defaultSettings</code> from <code>Query</code>. Reason: You can find it in query at HotelX. Deprecated on 2017-11-21</li>
-<li>Removed <code>mapping</code> from <code>Query</code>. Reason: You can find it in query at HotelX. Deprecated on 2017-11-21</li>
+- Removed <code>quote</code> from <code>Query</code>. Reason: You can find it in query at HotelX. Deprecated on 2017-11-21
+- Removed <code>deleteDefaultSettings</code> from <code>Mutation</code>. Reason: You can find it in query at Admin. Deprecated on 2017-11-21
+- Removed <code>updateDefaultSettings</code> from <code>Mutation</code>. Reason: You can find it in query at Admin. Deprecated on 2017-11-21
+- Removed <code>createDefaultSettings</code> from <code>Mutation</code>. Reason: You can find it in query at Admin. Deprecated on 2017-11-21
+- Removed <code>loadFile</code> from <code>Mutation</code>. Reason: You can find it in query at Admin. Deprecated on 2017-11-21
+- Removed <code>hotelCancel</code> from <code>Mutation</code>. Reason: You can find it in query at HotelX. Deprecated on 2017-11-21
+- Removed <code>hotelBook</code> from <code>Mutation</code>. Reason: You can find it in query at HotelX. Deprecated on 2017-11-21
+- Removed <code>search</code> from <code>Query</code>. Reason: You can find it in query at HotelX. Deprecated on 2017-11-21
+- Removed <code>booking</code> from <code>Query</code>. Reason: You can find it in query at HotelX. Deprecated on 2017-11-21
+- Removed <code>defaultSettings</code> from <code>Query</code>. Reason: You can find it in query at HotelX. Deprecated on 2017-11-21
+- Removed <code>mapping</code> from <code>Query</code>. Reason: You can find it in query at HotelX. Deprecated on 2017-11-21
 {{% / release-notes-container %}}
