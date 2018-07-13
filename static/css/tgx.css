@@ -1848,3 +1848,8 @@ div.release-types.type-u > ul > li:nth-of-type(1)::before {
   content: 'unreleased';
   background-color: rgb(202, 202, 202);
 }
+
+div.alert.alert-info + h3#unreleased {
+  visibility: hidden;
+  height: 0;
+}
