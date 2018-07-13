@@ -1776,7 +1776,7 @@ div.release-types {
   margin-top: 30px;
 }
 
-div.release-types.type-d>ul>li{
+div.release-types>ul>li{
   list-style: none;
   font-size: 1.5rem;
   padding: .5rem;
@@ -1802,14 +1802,37 @@ div.release-types>ul>li:nth-of-type(1)::before {
   border-radius: 16px;
 }
 
+div.release-types.type-a>ul>li:nth-of-type(1)::before {
+  content: "added";
+  background-color: #0F9D58;
+}
+
+div.release-types.type-c>ul>li:nth-of-type(1)::before {
+  content: "changed";
+    background-color: #F4B400;
+}
+
 div.release-types.type-d>ul>li:nth-of-type(1)::before {
+  content: 'deprecated';
+  background-color: #E65100;
+}
+
+div.release-types.type-r>ul>li:nth-of-type(1)::before {
   content: 'removed';
   background-color: #DB4437;
 }
 
-/*
-COLOURS
+div.release-types.type-f>ul>li:nth-of-type(1)::before {  
+  content: "fixed";
+  background-color: #4285F4;
+}
 
-deprecated = #E65100 
-issue = #DB4437
-*/
+div.release-types.type-s>ul>li:nth-of-type(1)::before {
+  content: 'security';
+  background-color: rgb(186, 89, 224);
+}
+
+div.release-types.type-u>ul>li:nth-of-type(1)::before {
+  content: 'unreleased';
+  background-color: rgb(202, 202, 202);
+}
