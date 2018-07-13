@@ -21,9 +21,9 @@
 |2017-11-21|2018-02-19|Already passed|[hotel](/travelgatex/reference/objects/hotelsearch)|Search|You can find it in query at HotelX|
 |2017-12-12|2018-03-12|Already passed|[useContext](/travelgatex/reference/scalars/boolean)|HotelSettingsInput|Redundant.|
 |2018-03-19|2018-06-17|Already passed|[connectUser](/travelgatex/reference/scalars/string)|HotelSettingsInput|Redundant.|
-|2018-08-03|2018-11-01|114|[organization](/travelgatex/reference/scalars/string)|PaymentXBookingInfoFilterInput|Please use PaymentXBookingInfoCriteriaInput|
-|2018-08-03|2018-11-01|114|[pointOfSaleCode](/travelgatex/reference/scalars/id)|PaymentXBookingInfoFilterInput|Please use PaymentXBookingInfoCriteriaInput|
-|2018-08-03|2018-11-01|114|[bookingReference](/travelgatex/reference/scalars/string)|PaymentXBookingInfoFilterInput|Please use PaymentXBookingInfoCriteriaInput|
+|2018-08-03|2018-11-01|112|[organization](/travelgatex/reference/scalars/string)|PaymentXBookingInfoFilterInput|Please use PaymentXBookingInfoCriteriaInput|
+|2018-08-03|2018-11-01|112|[pointOfSaleCode](/travelgatex/reference/scalars/id)|PaymentXBookingInfoFilterInput|Please use PaymentXBookingInfoCriteriaInput|
+|2018-08-03|2018-11-01|112|[bookingReference](/travelgatex/reference/scalars/string)|PaymentXBookingInfoFilterInput|Please use PaymentXBookingInfoCriteriaInput|
 |unknown|unknown|unknown|[distribute](/travelgatex/reference/scalars/json)|AddOns|You can find it in distribution AddOn|
 
 ## Deprecations

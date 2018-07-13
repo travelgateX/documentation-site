@@ -2,6 +2,7 @@
 title = "Uploading Strategies"
 pagetitle = ""
 description = "How to Upload data"
+icon = "fa-upload"
 weight = 1
 alwaysopen = false
 +++

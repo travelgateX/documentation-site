@@ -2,7 +2,7 @@
 title = "Commission"
 pagetitle = "Commission"
 description = "Convert Gross Prices into Net Prices."
-icon = "fa-exchange"
+icon = "fa-money"
 weight = 3
 alwaysopen = false
 +++

@@ -2,6 +2,7 @@
 title = "Build An OTA"
 pagetitle = "Build Your Own Full Fledged OTA"
 description = "Build your own full fledged OTA"
+icon = "fa-plane"
 weight = 1
 alwaysopen = false
 +++

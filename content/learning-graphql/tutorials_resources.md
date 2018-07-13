@@ -2,6 +2,7 @@
 title = "Tutorials & Resources"
 pagetitle = ""
 description = ""
+icon="fa-graduation-cap"
 weight = 6
 alwaysopen = false
 +++

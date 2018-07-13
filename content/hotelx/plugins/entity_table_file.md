@@ -2,7 +2,7 @@
 title = "Entities"
 pagetitle = "Entities"
 description = "Table entities processed values."
-icon = "fa-exchange"
+icon = "fa-cubes"
 weight = 7
 alwaysopen = false
 +++

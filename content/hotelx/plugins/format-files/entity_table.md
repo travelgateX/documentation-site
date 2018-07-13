@@ -2,7 +2,7 @@
 title = "Entity Table values"
 pagetitle = "Entity Table Values"
 description = "Table entity values."
-icon = "fa-exchange"
+icon = "fa-file-o"
 weight = 6
 alwaysopen = false
 +++

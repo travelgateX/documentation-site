@@ -2,7 +2,7 @@
 title = "Hotel Commission"
 pagetitle = "Hotel Commission"
 description = "Format hotel commission file."
-icon = "fa-exchange"
+icon = "fa-file-text-o"
 weight = 4
 alwaysopen = false
 +++

@@ -2,7 +2,7 @@
 title = "Group"
 pagetitle = "Group"
 description = "Format group file."
-icon = "fa-exchange"
+icon = "fa-file-text-o"
 weight = 5
 alwaysopen = false
 +++

@@ -2,6 +2,7 @@
 title = "Thinking in GraphQL"
 pagetitle = ""
 description = ""
+icon="fa-cogs"
 weight = 4
 alwaysopen = false
 +++

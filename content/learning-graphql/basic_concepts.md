@@ -2,6 +2,7 @@
 title = "Basic Concepts"
 pagetitle = ""
 description = ""
+icon="fa-info-circle"
 weight = 3
 alwaysopen = false
 +++

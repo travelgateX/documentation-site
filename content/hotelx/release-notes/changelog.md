@@ -14,6 +14,11 @@ To make it easier for users and contributors to see precisely what notable chang
 
 {{% alert theme="info" %}}All notable changes on our platform will be documented in this page.{{% /alert %}}
 
+## 2018-07-11
+
+### Changed
+- Improvement of the [`Rooms`](/travelgatex/reference/objects/hotelxquery/) schema with paged list and max number of elements per page. By defect are 1000 rooms.
+
 ## 2018-07-04
 
 ### Fixed
