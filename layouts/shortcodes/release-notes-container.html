@@ -1,0 +1,4 @@
+<div class="release-types {{ if .IsNamedParams }}{{with .Get "type" }}type-{{.}}{{else}}type-x{{end}}{{else}}
+{{with .Get 0 }}alert-{{.}}{{else}}alert-info{{end}}{{end}}">
+        {{.Inner}}
+</div>

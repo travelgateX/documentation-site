@@ -118,7 +118,7 @@ body {
   font-size: 14px !important;
   font-family: Roboto, sans-serif !important;
   color: #182945 !important;
-  letter-spacing: .06rem;
+  letter-spacing: 0.06rem;
   line-height: 2.5rem !important;
 }
 
@@ -162,7 +162,7 @@ iframe {
 }
 
 .menu-right nav {
-  display: none;
+  display: block;
   background: transparent;
   border-left: 2px solid #0754ae;
   position: fixed;
@@ -505,6 +505,10 @@ a.card-lv2:hover {
 
 .menu-right {
   font-size: 15px;
+  position: fixed;
+  top: 46px;
+  right: 0;
+  width: 15%;
 }
 
 .menu-left nav {
@@ -549,7 +553,7 @@ a.card-lv2:hover {
   }
 
   #navbar {
-    width: 50%; 
+    width: 50%;
     max-width: 50%;
   }
 
@@ -1545,7 +1549,7 @@ div.deprecated-entities-container.active {
 #footer_docs {
   position: relative;
   z-index: 2;
-  padding: 0; 
+  padding: 0;
   margin-top: 25px;
 
   /* max-width: 72%;  */
@@ -1704,7 +1708,7 @@ div.deprecated-entities-container.active {
 #searchbar > div.sb_menu_div > ul > li {
   height: 54px;
 }
-#searchbar > div.sb_menu_div > ul > li > a{
+#searchbar > div.sb_menu_div > ul > li > a {
   padding: 15px;
 }
 
@@ -1714,8 +1718,7 @@ div.deprecated-entities-container.active {
   }
 }
 
-
-@media (min-width: 1450px) and (max-width:  1709px) {
+@media (min-width: 1450px) and (max-width: 1709px) {
   #searchbar {
     width: 77%;
   }
@@ -1739,8 +1742,8 @@ div.deprecated-entities-container.active {
     display: block;
   }
 
-  div.container_row>div.content-center {
-margin-top: 120px;
+  div.container_row > div.content-center {
+    margin-top: 120px;
   }
 
   #searchbar > div.sb_menu_div > ul {
@@ -1758,7 +1761,7 @@ margin-top: 120px;
     left: 1.5%;
   }
 }
-@media (max-width: 769px){
+@media (max-width: 769px) {
   #searchbar {
     width: 100%;
     display: block;
@@ -1766,4 +1769,70 @@ margin-top: 120px;
   #searchbar > div.sb_menu_div {
     display: none;
   }
+}
+
+div.release-types {
+  padding-left: 85px;
+  margin-top: 30px;
+}
+
+div.release-types>ul>li{
+  list-style: none;
+  font-size: 1.5rem;
+  padding: .5rem;
+}
+
+div.release-types>ul>li:nth-of-type(1)::before {
+  display: block;
+  float: left;
+  color: white;
+  left: -10px;
+  top: -5px;
+  position: relative;
+  width: 90px;
+  height: 32px;
+  margin-left: -100px;
+  margin-right: 10px;
+  margin-top: -5px;
+  padding-top: 4px;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 700;
+  text-align: center;
+  border-radius: 16px;
+}
+
+div.release-types.type-a>ul>li:nth-of-type(1)::before {
+  content: "added";
+  background-color: #0F9D58;
+}
+
+div.release-types.type-c>ul>li:nth-of-type(1)::before {
+  content: "changed";
+    background-color: #F4B400;
+}
+
+div.release-types.type-d>ul>li:nth-of-type(1)::before {
+  content: 'deprecated';
+  background-color: #E65100;
+}
+
+div.release-types.type-r>ul>li:nth-of-type(1)::before {
+  content: 'removed';
+  background-color: #DB4437;
+}
+
+div.release-types.type-f>ul>li:nth-of-type(1)::before {  
+  content: "fixed";
+  background-color: #4285F4;
+}
+
+div.release-types.type-s>ul>li:nth-of-type(1)::before {
+  content: 'security';
+  background-color: rgb(186, 89, 224);
+}
+
+div.release-types.type-u>ul>li:nth-of-type(1)::before {
+  content: 'unreleased';
+  background-color: rgb(202, 202, 202);
 }
