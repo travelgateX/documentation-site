@@ -16,10 +16,12 @@ To make it easier for users and contributors to see precisely what notable chang
 
 ## 2018-07-11
 
-### Changed
+{{% release-notes-container type="c"%}}
 - Improvement of the [`Rooms`](/travelgatex/reference/objects/hotelxquery/) schema with paged list and max number of elements per page. By defect are 1000 rooms.
+{{% /release-notes-container %}}
 
 ## 2018-07-04
 
-### Fixed
+{{% release-notes-container type="f"%}}
 - Wrong behaviour that made options to be discarded when price in supplements was empty in [`Search`](/travelgatex/reference/objects/hotelxquery/) query.
+{{% /release-notes-container %}}
