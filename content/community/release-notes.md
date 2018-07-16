@@ -6,8 +6,7 @@ icon = "fa-info-circle"
 weight = 1
 +++
 
-
-This document assists on write release notes with the changelog of products. 
+This document assists on write release notes with the changelog of products.
 
 - [Release Notes Organization](#release-notes-organization)
 - [How to keep a good changelog](#how-to-keep-a-good-changelog)
@@ -32,7 +31,7 @@ Release notes includes:
 - `Roadmap`: GIT repository where we publish future functionalities and term planned for being released.
 - `Changelogs`: Documents containing a chronologically ordered list of notable changes. We have:
     - A general platform changelog with common changes
-    - Product specific changelogs hosted at TravelgateX/Release Notes or directly at the Product Space/Release Notes (if exists) for example: https://docs.travelgatex.com/hotelx/release-notes/changelog/ 
+    - Product specific changelogs hosted at TravelgateX/Release Notes or directly at the Product Space/Release Notes (if exists) for example: https://docs.travelgatex.com/hotelx/release-notes/changelog/
     - You can find an specific instructions to fill the changelog on this document.
 - `GraphQL Schema Changes`: Is a list of recent and upcoming changes to our GraphQL API schema.
 - `Deprecated Schema Changes`: Specific list of changes that can break existing queries to the GraphQL API.
@@ -95,42 +94,67 @@ Regional date formats vary throughout the world and it's often difficult to find
 
 ## Changelog example
 
-```markdown
+```{{%/* f */%}
+
 # Changelog
 All notable changes to this project will be documented in this file.
 
-## [Unreleased]
+{{% release-notes-container type="u"%}}
+- "How do I make a changelog?" section.
+{{% / release-notes-container %}}
+
 
 ## 2017-06-20
-### Added
+{{% release-notes-container type="a"%}}
 - New visual identity by @tylerfortune8.
 - Version navigation.
 - Links to latest released version in previous versions.
 - "Why keep a changelog?" section.
-- "How do I make a changelog?" section.
+{{% / release-notes-container %}}
 
-### Changed
+{{% release-notes-container type="c"%}}
 - Start versioning based on the current English version at 0.3.0 to help
 translation authors keep things up-to-date.
 - Rewrite "What makes unicorns cry?" section.
+{{% / release-notes-container %}}
 
-### Removed
+
+{{% release-notes-container type="r"%}}
 - Section about "changelog" vs "change log".
+{{% / release-notes-container %}}
 
 ## 2015-12-03
-### Added
+{{% release-notes-container type="a"%}}
 - RU translation.
 - pt-BR translation.
 - es-ES translation.
+{{% / release-notes-container %}}
+
 
 ## 2015-10-06
-### Added
+{{% release-notes-container type="a"%}}
 - Answer "Should you ever rewrite a change log?".
+{{% / release-notes-container %}}
 
-### Changed
+{{% release-notes-container type="c"%}}
 - Improve argument against commit logs.
 - Start following [SemVer](http://semver.org) properly.
+{{% / release-notes-container %}}
+
 ```
+[View an example](https://docs.travelgatex.com/travelgatex/release-notes/breaking-changes/)
+
+
+## Reference table
+| Types of changes | Level | Code |
+|-----------|-----|---------------------------------------|
+| Added | H3 | {{% release-notes-container type="a"%}} |
+| Changed | H3 | {{% release-notes-container type="c"%}} |   
+| Deprecated | H3 | {{% release-notes-container type="D"%}} |
+| Removed | H3 | {{% release-notes-container type="c"%}} |   
+| Fixed | H3 | {{% release-notes-container type="F"%}} |   
+| Security | H3 | {{% release-notes-container type="S"%}} |   
+| Unreleased |  H2 | {{% release-notes-container type="U"%}} |   
 
 ## Writing resources
 
