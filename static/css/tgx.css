@@ -109,11 +109,6 @@ img[src$='#floatright'] {
   box-sizing: inherit;
 }
 
-#TableOfContents ul {
-  padding: 5px 7px;
-  margin-bottom: 0;
-}
-
 body {
   font-size: 14px !important;
   font-family: Roboto, sans-serif !important;
@@ -161,20 +156,44 @@ iframe {
   height: 400px;
 }
 
-.menu-right nav {
-  display: block;
-  background: transparent;
-  border-left: 2px solid #0754ae;
+
+.menu-right {
+  font-size: 15px;
   position: fixed;
-  margin-top: 105px;
+  top: 110px;
+  right: 30px;
+  min-width: 235px;
+  max-width: 10vw;
 }
 
-.menu-right nav ul {
+.menu-right nav {
+  display: block;
+  background-color: rgba(247, 248, 249, 0.8);
+  border-left: 2px solid #0754ae;
+}
+
+.menu-right ul {
   list-style-type: none;
+}
+
+.menu-right ul ul {
+  padding-left: 5px;
+}
+
+.menu-right nav > ul {
+  padding: 5px 7px;
+  margin-bottom: 0;
 }
 
 .menu-right nav ul li a:hover {
   text-decoration: none;
+  font-weight: bold;
+}
+
+@media (max-width: 991px) {
+  .menu-right {
+    display: none;
+  }
 }
 
 .pageTitle {
@@ -503,13 +522,6 @@ a.card-lv2:hover {
   transform: translateX(0%);
 }
 
-.menu-right {
-  font-size: 15px;
-  position: fixed;
-  top: 46px;
-  right: 0;
-  width: 15%;
-}
 
 .menu-left nav {
   position: relative;
@@ -1702,7 +1714,7 @@ div.deprecated-entities-container.active {
   color: white;
   width: 100%;
   background: white;
-  font-size: 1.6rem;
+  font-size: 1.5rem;
 }
 
 #searchbar > div.sb_menu_div > ul > li {
@@ -1776,13 +1788,13 @@ div.release-types {
   margin-top: 30px;
 }
 
-div.release-types>ul>li{
+div.release-types > ul > li {
   list-style: none;
   font-size: 1.5rem;
-  padding: .5rem;
+  padding: 0.5rem;
 }
 
-div.release-types>ul>li:nth-of-type(1)::before {
+div.release-types > ul > li:nth-of-type(1)::before {
   display: block;
   float: left;
   color: white;
@@ -1802,37 +1814,42 @@ div.release-types>ul>li:nth-of-type(1)::before {
   border-radius: 16px;
 }
 
-div.release-types.type-a>ul>li:nth-of-type(1)::before {
-  content: "added";
-  background-color: #0F9D58;
+div.release-types.type-a > ul > li:nth-of-type(1)::before {
+  content: 'added';
+  background-color: #0f9d58;
 }
 
-div.release-types.type-c>ul>li:nth-of-type(1)::before {
-  content: "changed";
-    background-color: #F4B400;
+div.release-types.type-c > ul > li:nth-of-type(1)::before {
+  content: 'changed';
+  background-color: #f4b400;
 }
 
-div.release-types.type-d>ul>li:nth-of-type(1)::before {
+div.release-types.type-d > ul > li:nth-of-type(1)::before {
   content: 'deprecated';
-  background-color: #E65100;
+  background-color: #e65100;
 }
 
-div.release-types.type-r>ul>li:nth-of-type(1)::before {
+div.release-types.type-r > ul > li:nth-of-type(1)::before {
   content: 'removed';
-  background-color: #DB4437;
+  background-color: #db4437;
 }
 
-div.release-types.type-f>ul>li:nth-of-type(1)::before {  
-  content: "fixed";
-  background-color: #4285F4;
+div.release-types.type-f > ul > li:nth-of-type(1)::before {
+  content: 'fixed';
+  background-color: #4285f4;
 }
 
-div.release-types.type-s>ul>li:nth-of-type(1)::before {
+div.release-types.type-s > ul > li:nth-of-type(1)::before {
   content: 'security';
   background-color: rgb(186, 89, 224);
 }
 
-div.release-types.type-u>ul>li:nth-of-type(1)::before {
+div.release-types.type-u > ul > li:nth-of-type(1)::before {
   content: 'unreleased';
   background-color: rgb(202, 202, 202);
+}
+
+div.alert.alert-info + h3#unreleased {
+  visibility: hidden;
+  height: 0;
 }
