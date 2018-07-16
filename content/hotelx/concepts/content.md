@@ -1,7 +1,7 @@
 +++
 title = "Content"
 pagetitle = "Content (Static Content)"
-description = "Learn about how manage content data to manage in your site. Hotel, Boards, Categories..."
+description = "Learn about how to manage content data in your site: Hotels, Boards, Categories..."
 icon = "fa-list-alt"
 weight = 5
 alwaysopen = false
@@ -10,15 +10,16 @@ alwaysopen = false
 {{< graphiql-script queries="[{\"apikey\":\"q8ggxpoVDW76Kw918hwnnRvxlZmAP2QZ\",\"gist\":\"https://gist.githubusercontent.com/tgx-bot/aeb082e484710ebf6b7a4ec5173064cc/raw\",\"divname\":\"div_hotels\"},{\"apikey\":\"q8ggxpoVDW76Kw918hwnnRvxlZmAP2QZ\",\"gist\":\"https://gist.githubusercontent.com/tgx-bot/4737228c495b09566474fa2db38fc72d/raw\",\"divname\":\"div_destinations\"},{\"apikey\":\"q8ggxpoVDW76Kw918hwnnRvxlZmAP2QZ\",\"gist\":\"https://gist.githubusercontent.com/tgx-bot/519b4223de8b44cb20c5c33212c62654/raw\",\"divname\":\"div_boards\"},{\"apikey\":\"q8ggxpoVDW76Kw918hwnnRvxlZmAP2QZ\",\"gist\":\"https://gist.githubusercontent.com/tgx-bot/0815561e9c25ce49bc416dbc73f36388/raw\",\"divname\":\"div_rooms\"},{\"apikey\":\"q8ggxpoVDW76Kw918hwnnRvxlZmAP2QZ\",\"gist\":\"https://gist.githubusercontent.com/tgx-bot/aa1be23b8c9229c8363c142036afb1f5/raw\",\"divname\":\"div_categories\"}]" >}}
 {{< graphiql-styles >}}
 
-On this page you will learn how to manage content data in your site such as hotel, boards, categories, etc.
+On this page you will learn how to manage content data such as hotels, boards, categories, etc. in your site.
 
 ## Hotels
 
-Hotels query returns a hotel list of one supplier's access. This entity contains static data about the hotel like code, name, location, information about the hotel information, etc... You can find all fields in the [graph](https://api.travelgatex.com/). You can get the hotels with hotel codes or with minimal destination codes. Also you can filter the result with the rank. There are mandatory and optional fields that allows filtering the hotels returned in the response. The full response is splitted by pages. By default, the maximum number of hotels returned in each page(response) is 1000, but it is allowed to request between 100 and 10000 hotels filling the field size in the criteria. In order to obtain the next page of hotels, only token field have to be provided. Input parameters are explained above.
+Hotels Query returns a hotel list from one supplier's access. This entity contains static data about the hotel requested, such as code, name, location, and other information - You can find all these fields in the [graph](https://api.travelgatex.com/). You can receive hotels with hotel codes or with minimal destination codes, you can also filter the results based on rank. In this sense, note that there are mandatory and optional fields that allow filtering the hotels returned in the response. 
+As for the response, the full response is splitted into pages: By default, the maximum number of hotels returned in each page (response) is 1000, but it is allowed to request between 100 and 10000 hotels by filling in the field maxSize in the criteria. In order to obtain the next page of hotels, you need to fill in the token field, accordingly. Input parameters are explained above.
 
 ### Criteria
 **Mandatory fields**  
-- access-> It represents the access for which you want to get the hotels information.  
+- access-> It represents the access for which you want to receive the hotels information.  
 
 **Optional fields**  
 - hotelCodes-> it allows to filter by hotel codes  
@@ -26,7 +27,7 @@ Hotels query returns a hotel list of one supplier's access. This entity contains
 - maxSize-> it allows to specify the number of elements per page  
 
 ### Token
-The token allows to request the next page of hotels. The correct way of obtaining a multiple pages of hotels is mantain this field empty for the first execution and request the token field in the response graph. Then send other/s query/ies filling the token field in the input with the value returned in the previous response.
+The token allows to request the next page of hotels. The correct way of obtaining multiple pages of hotels is mantaining this field empty for the first execution, and request the token field in the response graph. Then, send subsequent queries filling in the token field with the value returned in the previous response.
 
 #### Playground Samples
 
@@ -35,7 +36,7 @@ The token allows to request the next page of hotels. The correct way of obtainin
 
 ### Destinations
 
-Destination query returns a list of static data about destinations for a supplier access. By default if you don’t set the destination codes are all the codes. Like than hotels you can get the other pages with the continuation token.
+Destinations Query returns a list of static data about destinations for a supplier access. By default, if you don’t set any destination codes, you will receive all the codes. As it is the case with the Query Hotels, you will be able to receive subsequent pages of destinations by filling in the continuation token field.
 
 #### Playground Samples
 
@@ -44,7 +45,7 @@ Destination query returns a list of static data about destinations for a supplie
 
 ### Boards
 
-Board static data returns a simple map of the boards that can be returned with its translation to other languages.
+Boards Query returns a simple map of the boards that can be returned with its translation to other languages.
 
 #### Playground Samples
 
@@ -53,18 +54,18 @@ Board static data returns a simple map of the boards that can be returned with i
 
 ### Rooms
 
-Room static data returns a simple map of the rooms that can be returned with its translation to other languages. You can get the rooms from room codes. The full response, such as hotel query, is splitted by pages. By default, the number of rooms in each page are 1000, however you can choose the size with a value between 100 and 10000.
+Rooms Query returns a simple map of the rooms that can be returned with its translation to other languages. You can search by room codes, if you don't introduce any room codes, you will receive all of them. The full response is splitted by pages. By default, the number of rooms in each page is 1000, however, you can choose the size with a value between 100 and 10000.
 
 ### Criteria
 **Mandatory fields**  
-- access-> It represents the access for which you want to get the room description.  
+- access-> It represents the access for which you want to receive the room description.  
 
 **Optional fields**  
 - roomCodes-> it allows to filter by room codes  
 - maxSize-> it allows to specify the number of elements per page  
 
 ### Token
-The token allows to request the next page of rooms. The correct way of obtaining a multiple pages of rooms is mantain this field empty for the first execution and request the token field in the response graph. Then send other/s query/ies filling the token field in the input with the value returned in the previous response.
+The token allows to request the next page of rooms. The correct way of obtaining multiple pages of rooms is mantaining this field empty for the first execution and request the token field in the response graph. Then, subsequent queries filling in the token field with the value returned in the previous response.
 
 #### Playground Samples
 
