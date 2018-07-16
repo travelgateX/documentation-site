@@ -14,6 +14,13 @@ To make it easier for users and contributors to see precisely what notable chang
 
 {{% alert theme="info" %}}All notable changes on our platform will be documented in this page.{{% /alert %}}
 
+
+## 2018-07-16{#20180716}
+
+{{% release-notes-container type="f"%}}
+- HotelX concepts content [examples](/hotelx/concepts/content/).
+{{% /release-notes-container %}}
+
 ## 2018-07-11
 
 {{% release-notes-container type="c"%}}
