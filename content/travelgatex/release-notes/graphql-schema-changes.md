@@ -14,6 +14,20 @@ The GraphQL schema change log is a list of recent and upcoming changes to our Gr
 
 Check out this list of new releases and changes applied on the **TravelgateX GraphQL API**.
 
+## 2018-07-16 {#20180716}
+
+🛑  Input field `organizations` was removed from input object type `StatsFilterInput`
+
+🛑  Field `error` was removed from object type `Stats`
+
+✅  Input field `groups` was added to input object type `StatsFilterInput`
+
+✅  Field `adviseMessage` was added to object type `Stats`
+
+✅  Field `StoredCard.adviseMessage` description changed from `List of messages` to `List of advise messages.`
+
+✅  Description `` on type `AdviseMessage` has changed to `List of advise messages.`
+
 ## 2018-07-10 {#20180710}
 
 🛑  Field `deleteDefaultSettings` was removed from object type `Mutation`
