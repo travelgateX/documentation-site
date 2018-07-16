@@ -150,11 +150,11 @@ translation authors keep things up-to-date.
 |-----------|-----|---------------------------------------|
 | Added | H3 | {{% release-notes-container type="a"%}} |
 | Changed | H3 | {{% release-notes-container type="c"%}} |   
-| Deprecated | H3 | {{% release-notes-container type="D"%}} |
+| Deprecated | H3 | {{% release-notes-container type="d"%}} |
 | Removed | H3 | {{% release-notes-container type="c"%}} |   
-| Fixed | H3 | {{% release-notes-container type="F"%}} |   
-| Security | H3 | {{% release-notes-container type="S"%}} |   
-| Unreleased |  H2 | {{% release-notes-container type="U"%}} |   
+| Fixed | H3 | {{% release-notes-container type="f"%}} |   
+| Security | H3 | {{% release-notes-container type="s"%}} |   
+| Unreleased |  H2 | {{% release-notes-container type="u"%}} |   
 
 ## Writing resources
 
