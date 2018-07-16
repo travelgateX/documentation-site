@@ -6,7 +6,7 @@
 	"icon": "fa-eraser",
 	"alwaysopen": false,
 	"tags": [
-		"reaking-changes"
+		"breaking-changes"
 	],
 	"hideGithubLink": true
 }
