@@ -12,12 +12,37 @@ To make it easier for users and contributors to see precisely what notable chang
 
 {{% alert theme="info" %}}All notable changes on TravelgateX platform will be documented in this page.{{% /alert %}}
 
+## 2018-07-16{#20180716}
+
+{{% release-notes-container type="a"%}}
+- [GraphQL Schema breaking changes](/travelgatex/release-notes/breaking-changes/). Sustitutes and fixes to Deprecated and Deleted Notes pages.
+{{% /release-notes-container %}}
+
+{{% release-notes-container type="c"%}}
+- [GraphQL Schema updated.](/travelgatex/release-notes/graphql-schema-changes/#20180716)
+- Changelog based on [keep a changelog](https://keepachangelog.com)
+{{% /release-notes-container %}}
+{{% release-notes-container type="r"%}}
+- Deprecated schema notes pages.
+- Deleted schema notes pages.
+{{% /release-notes-container %}}
+{{% release-notes-container type="f"%}}
+- Documentation pages' styles
+{{% /release-notes-container %}}
+
 ## 2018-07-10{#20180704}
 
-## Added
+{{% release-notes-container type="a"%}}
 - [Deleted schema notes](/travelgatex/release-notes/deprecated_notes/)
+- Documentation pages' index
+{{% /release-notes-container %}}
 
-### Changed
+{{% release-notes-container type="c"%}}
 - [GraphQL Schema updated.](/travelgatex/release-notes/graphql-schema-changes/#20180710)
 - New version of [Deprecated schema notes](/travelgatex/release-notes/deprecated_notes/)
- 
+{{% /release-notes-container %}}
+
+## 2018-07-09{#20180704}
+{{% release-notes-container type="r"%}}
+- Previously deprecated queries. [See more](/travelgatex/release-notes/breaking-changes/#2018-07-09)
+{{% /release-notes-container %}}
