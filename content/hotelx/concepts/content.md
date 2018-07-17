@@ -15,7 +15,7 @@ On this page you will learn how to manage content data such as hotels, boards, c
 ## Hotels
 
 Hotels Query returns a hotel list from one supplier's access. This entity contains static data about the hotel requested, such as code, name, location, and other information - You can find all these fields in the [graph](https://api.travelgatex.com/). You can receive hotels with hotel codes or with minimal destination codes, you can also filter the results based on rank. In this sense, note that there are mandatory and optional fields that allow filtering the hotels returned in the response. 
-As for the response, the full response is splitted into pages: By default, the maximum number of hotels returned in each page (response) is 1000, but it is allowed to request between 100 and 10000 hotels by filling in the field maxSize in the criteria. In order to obtain the next page of hotels, you need to fill in the token field, accordingly. Input parameters are explained above.
+As for the response, the full response is split into pages: By default, the maximum number of hotels returned in each page (response) is 1000, but it is allowed to request between 100 and 10000 hotels by filling in the field maxSize in the criteria. In order to obtain the next page of hotels, you need to fill in the token field, accordingly. Input parameters are explained above.
 
 ### Criteria
 **Mandatory fields**  
