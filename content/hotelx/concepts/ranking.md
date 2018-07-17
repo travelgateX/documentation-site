@@ -44,7 +44,7 @@ In order for them to be correctly processed, the header fields must have the fol
 | provider_id | hotel_code |rank |
 |-------------|------------|-----|
 | travelgatex | 2018 | 1 |
-| travelgatey | 2017 | 1 |
+| travelgatex | 2017 | 1 |
 
 ### Process file
 
