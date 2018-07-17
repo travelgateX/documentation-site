@@ -54,7 +54,7 @@ Boards Query returns a simple map of the boards that can be returned with its tr
 
 ### Rooms
 
-Rooms Query returns a simple map of the rooms that can be returned with its translation to other languages. You can search by room codes, if you don't introduce any room codes, you will receive all of them. The full response is splitted by pages. By default, the number of rooms in each page is 1000, however, you can choose the size with a value between 100 and 10000.
+Rooms Query returns a simple map of the rooms that can be returned with its translation to other languages. You can search by room codes, if you don't introduce any room codes, you will receive all of them. The full response is split into pages. By default, the number of rooms in each page is 1000, however, you can choose the size with a value between 100 and 10000.
 
 ### Criteria
 **Mandatory fields**  
