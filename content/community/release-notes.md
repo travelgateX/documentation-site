@@ -94,52 +94,52 @@ Regional date formats vary throughout the world and it's often difficult to find
 
 ## Changelog example
 
-```{{%/* f */%}
+```Markdown
 
 # Changelog
 All notable changes to this project will be documented in this file.
 
-{{% release-notes-container type="u"%}}
+{{%/* release-notes-container type="u" */%}}
 - "How do I make a changelog?" section.
-{{% / release-notes-container %}}
+{{%/* / release-notes-container */%}}
 
 
 ## 2017-06-20
-{{% release-notes-container type="a"%}}
+{{%/* release-notes-container type="a" */%}}
 - New visual identity by @tylerfortune8.
 - Version navigation.
 - Links to latest released version in previous versions.
 - "Why keep a changelog?" section.
-{{% / release-notes-container %}}
+{{%/* / release-notes-container */%}}
 
-{{% release-notes-container type="c"%}}
+{{%/* release-notes-container type="c" */%}}
 - Start versioning based on the current English version at 0.3.0 to help
 translation authors keep things up-to-date.
 - Rewrite "What makes unicorns cry?" section.
-{{% / release-notes-container %}}
+{{%/* / release-notes-container */%}}
 
 
-{{% release-notes-container type="r"%}}
+{{%/* release-notes-container type="r" */%}}
 - Section about "changelog" vs "change log".
-{{% / release-notes-container %}}
+{{%/* / release-notes-container */%}}
 
 ## 2015-12-03
-{{% release-notes-container type="a"%}}
+{{%/* release-notes-container type="a" */%}}
 - RU translation.
 - pt-BR translation.
 - es-ES translation.
-{{% / release-notes-container %}}
+{{%/* / release-notes-container */%}}
 
 
 ## 2015-10-06
-{{% release-notes-container type="a"%}}
+{{%/* release-notes-container type="a" */%}}
 - Answer "Should you ever rewrite a change log?".
-{{% / release-notes-container %}}
+{{%/* / release-notes-container */%}}
 
-{{% release-notes-container type="c"%}}
+{{%/* release-notes-container type="c" */%}}
 - Improve argument against commit logs.
 - Start following [SemVer](http://semver.org) properly.
-{{% / release-notes-container %}}
+{{%/* / release-notes-container */%}}
 
 ```
 [View an example](https://docs.travelgatex.com/travelgatex/release-notes/breaking-changes/)
@@ -148,13 +148,13 @@ translation authors keep things up-to-date.
 ## Reference table
 | Types of changes | Level | Code |
 |-----------|-----|---------------------------------------|
-| Added | H3 | {{% release-notes-container type="a"%}} |
-| Changed | H3 | {{% release-notes-container type="c"%}} |   
-| Deprecated | H3 | {{% release-notes-container type="d"%}} |
-| Removed | H3 | {{% release-notes-container type="c"%}} |   
-| Fixed | H3 | {{% release-notes-container type="f"%}} |   
-| Security | H3 | {{% release-notes-container type="s"%}} |   
-| Unreleased |  H2 | {{% release-notes-container type="u"%}} |   
+| Added | H3 | {{%/* release-notes-container type="a" */%}} LIST {{%/* / release-notes-container */%}}|
+| Changed | H3 | {{%/* release-notes-container type="c" */%}} LIST {{%/* / release-notes-container */%}} |   
+| Deprecated | H3 | {{%/* release-notes-container type="d" */%}} LIST {{%/* / release-notes-container */%}} |
+| Removed | H3 | {{%/* release-notes-container type="c" */%}} LIST {{%/* / release-notes-container */%}} |   
+| Fixed | H3 | {{%/* release-notes-container type="f" */%}} LIST {{%/* / release-notes-container */%}} |   
+| Security | H3 | {{%/* release-notes-container type="s" */%}} LIST {{%/* / release-notes-container */%}} |   
+| Unreleased |  H2 | {{%/* release-notes-container type="u" */%}} LIST {{%/* / release-notes-container */%}} |   
 
 ## Writing resources
 
