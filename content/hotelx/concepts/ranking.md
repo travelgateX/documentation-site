@@ -11,15 +11,15 @@ On this page you will learn how to rank hotels.
 
 ## Overview
 
-Hotel Content operations allow changes to be made to static methods on HotelX. A system where hotels can be divided into different rankings or priorities in order to facilitate the mapping process.
+On this page, you will learn how to manage content data such as hotels, boards, categories, etc. in your site. Hotel Content operations allow changes to be made into static methods on HotelX, so that hotels can be divided into different rankings or priorities in order to facilitate the mapping process.
 
-The main goal of this process is to create a hotel ranking and divide the whole portfolio so the hotel list is more manageable. Each classification or sub-list responds to specific commercial criteria, such as, the hotels directly contracted, the best offers, the best sales hotels, etc.
+The main goal of this process is to create a hotel ranking and divide the whole portfolio in order to make the hotel list more manageable. Each classification or sub-list responds to specific commercial criteria, such as direct contracting hotels, the best offers, the best sales, etc.
 
-Once the hotel ranking file(s) have been uploaded, the static hotel list method can filter hotels according to this ranking. To set up hotel ranking lists you must upload a file in csv format using a specific name to identify the ranking in your organisation’s FTP.
+Once the hotel ranking file/s have been uploaded, the static hotel list method can filter hotels according to this ranking. In order to set up hotel ranking lists you must upload a file in csv format using a specific name to identify the ranking in your organisation's FTP.
 
 ### File Names (mandatory)
 
-Each file can have different meanings. It’s up to the file creator to give it a meaning according to his/her business needs. In order to process files correctly, they must be named according to the following naming convention:
+Each file can have different meanings. It's up to the file creator to give it a meaning according to their business needs. In order to process files correctly, they must be named according to the following naming convention:
 
 |File Nane| Description|
 |---------|------------|
@@ -31,7 +31,7 @@ Each file can have different meanings. It’s up to the file creator to give it 
 
 ### Header fields (mandatory)
 
-In order to be correctly processed, the header fields must have the following format:
+In order for them to be correctly processed, the header fields must have the following format:
 
 | Field Name | Data Type |
 |-------------|----------|
@@ -44,12 +44,12 @@ In order to be correctly processed, the header fields must have the following fo
 | provider_id | hotel_code |rank |
 |-------------|------------|-----|
 | travelgatex | 2018 | 1 |
-| travelgatey | 2017 | 1 |
+| travelgatex | 2017 | 1 |
 
 ### Process file
 
-To process the file, it must be uploaded to your organization’s FTP folder in the TravelgateX Platform. More info on how to upload files please refer to the [data automation section](/travelgatex/data-automation/).
+To process the file, it must be uploaded to your organization's FTP folder in the TravelgateX Platform. For more info on how to upload files, you can access our [data automation section] (/travelgatex/data-automation/).
 
 ### Template File
 
-For your convinience you can [download a template CSV file](/content/rank1.csv).
+Feel free to [download a template CSV file](/content/rank1.csv).
