@@ -15,22 +15,21 @@
 
 ### Unreleased
 {{% release-notes-container type="u"%}}
-- Unreleased removal of `distribute` from `AddOns`. Reason: You can find it in distribution AddOn.  .
-- Unreleased removal of `hotel` from `Booking`. Reason: You can find it in query at HotelX.  .
-- Unreleased removal of `hotel` from `Quote`. Reason: You can find it in query at HotelX.  .
-- Unreleased removal of `hotel` from `Search`. Reason: You can find it in query at HotelX.  .
-- Unreleased removal of `useContext` from `HotelSettingsInput`. Reason: Redundant..  .
-- Unreleased removal of `connectUser` from `HotelSettingsInput`. Reason: Redundant..  .
-- Unreleased removal of `organization` from `PaymentXBookingInfoFilterInput`. Reason: Please use PaymentXBookingInfoCriteriaInput.  .
-- Unreleased removal of `pointOfSaleCode` from `PaymentXBookingInfoFilterInput`. Reason: Please use PaymentXBookingInfoCriteriaInput.  .
-- Unreleased removal of `bookingReference` from `PaymentXBookingInfoFilterInput`. Reason: Please use PaymentXBookingInfoCriteriaInput.  .
+- Removal of `distribute` from `AddOns`. Reason: You can find it in distribution AddOn.  Expected deprecation on 2018-08-19.
+- Removal of `hotel` from `Booking`. Reason: You can find it in query at HotelX.  Expected deprecation on 2018-02-19.
+- Removal of `hotel` from `Quote`. Reason: You can find it in query at HotelX.  Expected deprecation on 2018-02-19.
+- Removal of `hotel` from `Search`. Reason: You can find it in query at HotelX.  Expected deprecation on 2018-02-19.
+- Removal of `useContext` from `HotelSettingsInput`. Reason: Redundant..  Expected deprecation on 2018-03-12.
+- Removal of `connectUser` from `HotelSettingsInput`. Reason: Redundant..  Expected deprecation on 2018-06-17.
+- Removal of `organization` from `PaymentXBookingInfoFilterInput`. Reason: Please use PaymentXBookingInfoCriteriaInput.  Expected deprecation on 2018-11-01.
+- Removal of `pointOfSaleCode` from `PaymentXBookingInfoFilterInput`. Reason: Please use PaymentXBookingInfoCriteriaInput.  Expected deprecation on 2018-11-01.
+- Removal of `bookingReference` from `PaymentXBookingInfoFilterInput`. Reason: Please use PaymentXBookingInfoCriteriaInput.  Expected deprecation on 2018-11-01.
 {{% / release-notes-container %}}
 ### 2018-08-03
 {{% release-notes-container type="d"%}}
-- Deprecated `organization` from `PaymentXBookingInfoFilterInput`. Reason: Please use PaymentXBookingInfoCriteriaInput. Expected deprecation on 2018-08-03 .
-- Deprecated `pointOfSaleCode` from `PaymentXBookingInfoFilterInput`. Reason: Please use PaymentXBookingInfoCriteriaInput. Expected deprecation on 2018-08-03 .
-- Deprecated `bookingReference` from `PaymentXBookingInfoFilterInput`. Reason: Please use PaymentXBookingInfoCriteriaInput. Expected deprecation on 2018-08-03 .
-- Deprecated `undefined` from `undefined`. Reason: undefined. Expected deprecation on undefined .
+- Deprecated `organization` from `PaymentXBookingInfoFilterInput`. Reason: Please use PaymentXBookingInfoCriteriaInput. Expected deprecation on 2018-11-01 .
+- Deprecated `pointOfSaleCode` from `PaymentXBookingInfoFilterInput`. Reason: Please use PaymentXBookingInfoCriteriaInput. Expected deprecation on 2018-11-01 .
+- Deprecated `bookingReference` from `PaymentXBookingInfoFilterInput`. Reason: Please use PaymentXBookingInfoCriteriaInput. Expected deprecation on 2018-11-01 .
 {{% / release-notes-container %}}
 ### 2018-07-09
 {{% release-notes-container type="r"%}}
@@ -48,18 +47,15 @@
 {{% / release-notes-container %}}
 ### 2018-05-21
 {{% release-notes-container type="d"%}}
-- Deprecated `distribute` from `AddOns`. Reason: You can find it in distribution AddOn. Expected deprecation on 2018-05-21 .
-- Deprecated `undefined` from `undefined`. Reason: undefined. Expected deprecation on undefined .
+- Deprecated `distribute` from `AddOns`. Reason: You can find it in distribution AddOn. Expected deprecation on 2018-08-19 .
 {{% / release-notes-container %}}
 ### 2018-03-19
 {{% release-notes-container type="d"%}}
-- Deprecated `connectUser` from `HotelSettingsInput`. Reason: Redundant.. Expected deprecation on 2018-03-19 .
-- Deprecated `undefined` from `undefined`. Reason: undefined. Expected deprecation on undefined .
+- Deprecated `connectUser` from `HotelSettingsInput`. Reason: Redundant.. Expected deprecation on 2018-06-17 .
 {{% / release-notes-container %}}
 ### 2017-12-12
 {{% release-notes-container type="d"%}}
-- Deprecated `useContext` from `HotelSettingsInput`. Reason: Redundant.. Expected deprecation on 2017-12-12 .
-- Deprecated `undefined` from `undefined`. Reason: undefined. Expected deprecation on undefined .
+- Deprecated `useContext` from `HotelSettingsInput`. Reason: Redundant.. Expected deprecation on 2018-03-12 .
 {{% / release-notes-container %}}
 ### 2017-11-21
 {{% release-notes-container type="d"%}}
@@ -74,8 +70,7 @@
 - Deprecated `booking` from `Query`. Reason: You can find it in query at HotelX. Finally removed on 2018-07-09 .
 - Deprecated `defaultSettings` from `Query`. Reason: You can find it in query at HotelX. Finally removed on 2018-07-09 .
 - Deprecated `mapping` from `Query`. Reason: You can find it in query at HotelX. Finally removed on 2018-07-09 .
-- Deprecated `hotel` from `Booking`. Reason: You can find it in query at HotelX. Expected deprecation on 2017-11-21 .
-- Deprecated `hotel` from `Quote`. Reason: You can find it in query at HotelX. Expected deprecation on 2017-11-21 .
-- Deprecated `hotel` from `Search`. Reason: You can find it in query at HotelX. Expected deprecation on 2017-11-21 .
-- Deprecated `undefined` from `undefined`. Reason: undefined. Expected deprecation on undefined .
+- Deprecated `hotel` from `Booking`. Reason: You can find it in query at HotelX. Expected deprecation on 2018-02-19 .
+- Deprecated `hotel` from `Quote`. Reason: You can find it in query at HotelX. Expected deprecation on 2018-02-19 .
+- Deprecated `hotel` from `Search`. Reason: You can find it in query at HotelX. Expected deprecation on 2018-02-19 .
 {{% / release-notes-container %}}
