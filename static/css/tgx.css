@@ -164,6 +164,9 @@ iframe {
   right: 30px;
   min-width: 235px;
   max-width: 10vw;
+  max-height: 40vh;
+  min-height: 200px;
+  overflow: auto;
 }
 
 .menu-right nav {
