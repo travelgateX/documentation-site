@@ -10,7 +10,7 @@ On this page, you will learn how to manage content data such as hotels, boards, 
 
 ## Hotels Ranking
 
-The main goal of this process is to create a hotel ranking and divide the whole portfolio in order to make the hotel list more manageable. Each classification or sub-list responds to specific commercial criteria, such as direct contracting hotels, best offers, best sales, etc.
+The main goal of this process is to create a hotel ranking and divide the whole portfolio in order to make the hotel list more manageable. Each classification or sub-list responds to specific commercial criteria, such as direct contracting hotels, the best offers, the best sales, etc.
 
 Once the hotel ranking file/s have been uploaded, the static hotel list method can filter hotels according to this ranking. In order to set up hotel ranking lists you must upload a file in csv format using a specific name to identify the ranking in your organisation's FTP.
 
