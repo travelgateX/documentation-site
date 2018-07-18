@@ -14,6 +14,13 @@ To make it easier for users and contributors to see precisely what notable chang
 
 {{% alert theme="info" %}}All notable changes on our platform will be documented in this page.{{% /alert %}}
 
+## 2018-07-18
+
+{{% release-notes-container type="c"%}}
+- Hotel, board, room and rate maps caches are now updated synchronously. This will improve the user experience when 1st time debugging operations.
+- Hotel maps cache refactoring to reduce number of cached items and cache operations.
+- Hotel maps cache requests are now pipelined to reduce Round Trip Time.
+{{% /release-notes-container %}}
 
 ## 2018-07-16{#20180716}
 
