@@ -15,15 +15,15 @@
 
 ### Unreleased
 {{% release-notes-container type="u"%}}
-- Removal of `distribute` from `AddOns`. Reason: You can find it in distribution AddOn.  Deprecated on 2018-05-21.Expected removal on 2018-08-19.
-- Removal of `hotel` from `Booking`. Reason: You can find it in query at HotelX.  Deprecated on 2017-11-21.To be removed soon.
-- Removal of `hotel` from `Quote`. Reason: You can find it in query at HotelX.  Deprecated on 2017-11-21.To be removed soon.
-- Removal of `hotel` from `Search`. Reason: You can find it in query at HotelX.  Deprecated on 2017-11-21.To be removed soon.
-- Removal of `useContext` from `HotelSettingsInput`. Reason: Redundant..  Deprecated on 2017-12-12.To be removed soon.
-- Removal of `connectUser` from `HotelSettingsInput`. Reason: Redundant..  Deprecated on 2018-03-19.To be removed soon.
+- Removal of `hotel` from `Booking`. Reason: You can find it in query at HotelX.  Deprecated on 2017-11-21.**To be removed soon**.
+- Removal of `hotel` from `Quote`. Reason: You can find it in query at HotelX.  Deprecated on 2017-11-21.**To be removed soon**.
+- Removal of `hotel` from `Search`. Reason: You can find it in query at HotelX.  Deprecated on 2017-11-21.**To be removed soon**.
+- Removal of `useContext` from `HotelSettingsInput`. Reason: Redundant..  Deprecated on 2017-12-12.**To be removed soon**.
+- Removal of `connectUser` from `HotelSettingsInput`. Reason: Redundant..  Deprecated on 2018-03-19.**To be removed soon**.
 - Removal of `organization` from `PaymentXBookingInfoFilterInput`. Reason: Please use PaymentXBookingInfoCriteriaInput.  Deprecated on 2018-08-03.Expected removal on 2018-11-01.
 - Removal of `pointOfSaleCode` from `PaymentXBookingInfoFilterInput`. Reason: Please use PaymentXBookingInfoCriteriaInput.  Deprecated on 2018-08-03.Expected removal on 2018-11-01.
 - Removal of `bookingReference` from `PaymentXBookingInfoFilterInput`. Reason: Please use PaymentXBookingInfoCriteriaInput.  Deprecated on 2018-08-03.Expected removal on 2018-11-01.
+- Removal of `distribute` from `AddOns`. Reason: You can find it in distribution AddOn.  Deprecated on 2018-05-21.Expected removal on 2018-08-19.
 {{% / release-notes-container %}}
 ### 2018-08-03
 {{% release-notes-container type="d"%}}
