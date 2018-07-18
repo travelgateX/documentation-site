@@ -106,10 +106,6 @@
       },0);
   }
   $(document).ready(()=>{
-    const schemaLIs = $('li[data-nav-id="/travelgatex/reference/schema/"]').find('ul').children();
-    if((schemaLIs || []).length){
-      $(schemaLIs)[0].prepend($(schemaLIs)[1]);
-    }
     resizeElements();
     $(window).resize(resizeElements);
     $('#navbar').resize(resizeElements);
