@@ -33,9 +33,9 @@
             {{end}}
         {{end}}
             
-        <div class="deprecated-button-container" >
-            <button class="btn btn-sm btn-info" onclick="toggleDeprecatedEntitiesContainer(this)">Show deprecated fields</button>
-        </div>
+        <li class="deprecated-button-container p-2">
+            <button class="btn btn-sm btn-info ml-5" onclick="toggleDeprecatedEntitiesContainer(this)">Show deprecated fields</button>
+        </li>
         <div class="deprecated-entities-container">
         {{range $.Page.Params.fields}}
             {{if .isDeprecated}}
@@ -85,6 +85,18 @@
         <li>}</li>
     </ul>
 </div>
+
+<script>
+    //Patch script that keeps the "Show deprecated fields" button hidden if there are none
+    window.onload = _ => {
+        const deprecatedContainer = document.querySelectorAll('div.deprecated-entities-container')[0];
+        if (deprecatedContainer.children.length) {
+            const list = document.querySelectorAll('li.deprecated-button-container')[0];
+            list.style.display = 'block';
+            console.log(list.style);
+        }
+    }
+</script>
 
 
 {{- define "nameType" }}
