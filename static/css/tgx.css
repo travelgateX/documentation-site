@@ -1543,9 +1543,10 @@ table {
   animation: draw-a 4s 11.5s forwards;
 }
 
-div.deprecated-button-container {
+li.deprecated-button-container {
   background-color: white;
   padding: 1rem 0 1rem 3rem;
+  display: none;
 }
 
 div.deprecated-entities-container {

@@ -1,5 +1,6 @@
 .DS_Store
-content/travelgatex/reference
+content/*/reference/*
+
 */node_modules/*
 
 .vscode/*

@@ -13,4 +13,4 @@
 
 {{% alert theme="info" %}}Changes history of deprecated notes previously announced{{% /alert %}}
 
-{{% wip %}}
+### No deletions to date
