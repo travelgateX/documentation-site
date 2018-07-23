@@ -29,18 +29,38 @@ The commission file should be in the below format:
     * _destinationCodes_  → destination code
     * _notDestinationCodes_  → destination code
     * _percentage_  → commission value, decimal separator must be point (".") 
-    * _force_  → (boolean value **true/false**) 
+    * _force_  → (boolean value **true/false**)
         * **false value** (if value is false the rule will not be applied despite of matching all its conditions criteria if a commission is received from the supplier trough the integration).
         * **true value** if value is true the rule will be applied if matching all its conditions criteria regardless of if a commission is received or not from the supplier trough the integration).
         * **Example**  
+    
+        ```csv
+        commission received,forced,result from supplier
+        no,no,rule applied (if matching all its criteria conditions)
+        no,yes,rule applied (if matching all its criteria conditions)
+        yes,no,rule NOT applied regardless of matching all its criteria conditions
+        yes,yes,rule applied (if matching all its criteria conditions)
+        ```
+       * **List file fields** 
   
-    ```csv
-    commission received,forced,result from supplier
-    no,no,rule applied (if matching all its criteria conditions)
-    no,yes,rule applied (if matching all its criteria conditions)
-    yes,no,rule NOT applied regardless of matching all its criteria conditions
-    yes,yes,rule applied (if matching all its criteria conditions)
-    ```
+        |Field | Mandatory | Excluded fileds | Multi-value |
+        |---|---|---|---|
+        |ruleId| Yes | - | No |
+        |supplierCodes| Yes | notSupplierCodes | Yes |
+        |notSupplierCodes| No | supplierCodes | Yes |
+        |creationDateFrom| No | - | No |
+        |creationDateTo| No | - | No |
+        |checkInFrom| No | - | No |
+        |hotelCodes| No | nothotelCodes | Yes |
+        |nothotelCodes| No | hotelCodes | Yes |
+        |chainsCodes| No | notChainCodes | Yes |
+        |notChainCodes| No | chainsCodes | Yes |
+        |DestinationCodes| No | notDestinationCodes | Yes |
+        |notDestinationCodes| No | DestinationCodes | Yes |
+        |percentage| Yes | - | No |
+        |force| Yes | - | No |
+
+
 * **Delimiter**:  Comma (“,”)
 * **Separator for multiples codes in the same row**: Semicolon (";")
 * **Directory**: /F[folder code]\_[unique code]/HotelX\_[unique code]/
