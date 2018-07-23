@@ -7,7 +7,7 @@ weight = 2
 alwaysopen = false
 +++
 
-{{< graphiql-script queries="[{\"apikey\":\"q8ggxpoVDW76Kw918hwnnRvxlZmAP2QZ\",\"gist\":\"https://gist.githubusercontent.com/tgx-bot/533a8e1259e5245a4c3f590964ec506d/raw\",\"divname\":\"div_search\"},{\"apikey\":\"q8ggxpoVDW76Kw918hwnnRvxlZmAP2QZ\",\"gist\":\"https://gist.githubusercontent.com/tgx-bot/b4e691b2b1567c0a80f5926b833170e1/raw\",\"divname\":\"div_quote\"},{\"apikey\":\"q8ggxpoVDW76Kw918hwnnRvxlZmAP2QZ\",\"gist\":\"https://gist.githubusercontent.com/tgx-bot/bbbb043c0cdfe1adb33a897f69a04e2f/raw\",\"divname\":\"div_book\"},{\"apikey\":\"q8ggxpoVDW76Kw918hwnnRvxlZmAP2QZ\",\"gist\":\"https://gist.githubusercontent.com/tgx-bot/034dcbeb8affb2c4875b2046ea385c0d/raw\",\"divname\":\"div_cancel\"},{\"apikey\":\"q8ggxpoVDW76Kw918hwnnRvxlZmAP2QZ\",\"gist\":\"https://gist.githubusercontent.com/tgx-bot/36e1ade6d5eb2a074dc6cb1141ac2136/raw\",\"divname\":\"div_bookinglist\"}]" >}}
+{{< graphiql-script queries="[{\"apikey\":\"64780338-49c8-4439-7c7d-d03c2033b145\",\"gist\":\"https://gist.githubusercontent.com/tgx-bot/6972ecae51e849fe8c49305bf0032dfe/raw\",\"divname\":\"div_authorization\"},{\"apikey\":\"64780338-49c8-4439-7c7d-d03c2033b145\",\"gist\":\"https://gist.githubusercontent.com/tgx-bot/533a8e1259e5245a4c3f590964ec506d/raw\",\"divname\":\"div_search\"},{\"apikey\":\"64780338-49c8-4439-7c7d-d03c2033b145\",\"gist\":\"https://gist.githubusercontent.com/tgx-bot/b4e691b2b1567c0a80f5926b833170e1/raw\",\"divname\":\"div_quote\"},{\"apikey\":\"64780338-49c8-4439-7c7d-d03c2033b145\",\"gist\":\"https://gist.githubusercontent.com/tgx-bot/bbbb043c0cdfe1adb33a897f69a04e2f/raw\",\"divname\":\"div_book\"},{\"apikey\":\"q8ggxpoVDW76Kw918hwnnRvxlZmAP2QZ\",\"gist\":\"https://gist.githubusercontent.com/tgx-bot/034dcbeb8affb2c4875b2046ea385c0d/raw\",\"divname\":\"div_cancel\"},{\"apikey\":\"q8ggxpoVDW76Kw918hwnnRvxlZmAP2QZ\",\"gist\":\"https://gist.githubusercontent.com/tgx-bot/36e1ade6d5eb2a074dc6cb1141ac2136/raw\",\"divname\":\"div_bookinglist\"}]" >}}
 {{< graphiql-styles >}}
 
 In this section you will find all the queries necessaries in order to perform a booking flow using [GraphQL Playground](https://api.travelgatex.com/).
@@ -22,7 +22,10 @@ In order to perform a booking flow, please follow the steps below:
 
 First of all, to be able to run any query you should have an Apikey as an authentication.
 
-In case you have an Apikey you can use it by introducing it in the HTTP Headers. Otherwise, you can use the following Apikey for test purposes: `q8ggxpoVDW76Kw918hwnnRvxlZmAP2QZ`
+In case you have an Apikey you can use it by introducing it in the HTTP Headers. Otherwise, you can use the following Apikey for test purposes:  
+`64780338-49c8-4439-7c7d-d03c2033b145`
+
+{{< graphiql-tags tag="div_authorization" >}}
 
 ### Search
 
