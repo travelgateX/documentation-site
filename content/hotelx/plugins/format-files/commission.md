@@ -29,8 +29,20 @@ The commission file should be in the below format:
     * _destinationCodes_  → destination code
     * _notDestinationCodes_  → destination code
     * _percentage_  → commission value, decimal separator must be point (".") 
-    * _force_  → (boolean value **true/false**) if value is true the rule try to be applie by plugin.
-* **Delimiter**:  Comma (“,”) 
+    * _force_  → (boolean value **true/false**) 
+        * **false value** (if value is false the rule will not be applied despite of matching all its conditions criteria if a commission is received from the supplier trough the integration).
+        * **true value** if value is true the rule will be applied if matching all its conditions criteria regardless of if a commission is received or not from the supplier trough the integration).
+        * **Example**  
+  
+    ```csv
+    commission received,forced,result from supplier
+    no,no,rule applied (if matching all its criteria conditions)
+    no,yes,rule applied (if matching all its criteria conditions)
+    yes,no,rule NOT applied regardless of matching all its criteria conditions
+    yes,yes,rule applied (if matching all its criteria conditions)
+    ```
+* **Delimiter**:  Comma (“,”)
+* **Separator for multiples codes in the same row**: Semicolon (";")
 * **Directory**: /F[folder code]\_[unique code]/HotelX\_[unique code]/
 
 #### Sample File

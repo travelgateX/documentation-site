@@ -21,7 +21,8 @@ The file should be in the below format:
 * **Headers**:
     *  [supplier](/travelgatex/concepts/common-resources)  → supplier code
     *   _commission_ → commission value, decimal separator must be point (".")
-* **Delimiter**:  Comma (“,”) 
+* **Delimiter**:  Comma (“,”)
+* **Separator for multiples codes in the same row**: Semicolon (";")
 * **Directory**: /F[folder code]\_[unique code]/HotelX\_[unique code]/
 
 #### Sample File

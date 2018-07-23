@@ -22,7 +22,8 @@ The hotel commission file should be in the below format:
     * [supplier](/hotelx/concepts/accesses-supplier-context/#supplier)  → supplier code 
     * _hotel_ → hotel code 
     * _commission_ → commission value, decimal separator must be point (".") 
-* **Delimiter**:  Comma (“,”) 
+* **Delimiter**:  Comma (“,”)
+* **Separator for multiples codes in the same row**: Semicolon (";")
 * **Directory**: /F[folder code]\_[unique code]/HotelX\_[unique code]/
 
 #### Sample File
