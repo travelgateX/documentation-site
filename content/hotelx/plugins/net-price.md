@@ -33,15 +33,15 @@ Suppliers commission file specifies the commission applied to supplier’s price
 
     "plugins": {
 
-        "step": "RESPONSE\_OPTION",
+        "step": "RESPONSE_OPTION",
 
         "pluginsType": [
 
             {
 
-                "type": "CURRENCY\_CONVERSION"
+                "type": "CURRENCY_CONVERSION"
 
-                "name": "net\_priceX"
+                "name": "net_priceX"
 
             }
 
@@ -91,15 +91,15 @@ We read sequentially the commission file if the columns **chainCodes,destination
 
     "plugins": {
 
-        "step": "RESPONSE\_OPTION",
+        "step": "RESPONSE_OPTION",
 
         "pluginsType": [
 
             {
 
-                "type": "CURRENCY\_CONVERSION"
+                "type": "CURRENCY_CONVERSION"
 
-                "name": "net\_priceX"
+                "name": "commission"
 
             }
 
