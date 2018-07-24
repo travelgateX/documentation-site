@@ -59,7 +59,7 @@ The commission file should be in the below format:
         |notDestinationCodes| No | DestinationCodes | Yes |
         |percentage| Yes | - | No |
         |force| Yes | - | No |
-        *Excluded fileds **The informed field will be ignored**
+        *Excluded fileds **Informed field will be ignored**
 
 * **Delimiter**:  Comma (“,”)
 * **Separator for multiples codes in the same row**: Semicolon (";")
