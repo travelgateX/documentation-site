@@ -43,11 +43,11 @@ The commission file should be in the below format:
         ```
        * **List file fields** 
   
-        |Field | Mandatory | Excluded fileds | Multi-value |
+        |Field | Mandatory | Excluded fileds* | Multi-value |
         |---|---|---|---|
         |ruleId| Yes | - | No |
         |supplierCodes| Yes | notSupplierCodes | Yes |
-        |notSupplierCodes| No | supplierCodes | Yes |
+        |notSupplierCodes| Yes | supplierCodes | Yes |
         |creationDateFrom| No | - | No |
         |creationDateTo| No | - | No |
         |checkInFrom| No | - | No |
@@ -59,7 +59,7 @@ The commission file should be in the below format:
         |notDestinationCodes| No | DestinationCodes | Yes |
         |percentage| Yes | - | No |
         |force| Yes | - | No |
-
+        *Excluded fileds **The informed field will be ignored**
 
 * **Delimiter**:  Comma (“,”)
 * **Separator for multiples codes in the same row**: Semicolon (";")
@@ -71,8 +71,16 @@ The commission file should be in the below format:
 
 **Data**:
 
+**Simple value field**
 ```csv
 ruleId,supplierCodes,notSupplierCodes,creationDateFrom,creationDateTo,checkInFrom,checkInTo,hotelCodes,notHotelCodes,chainCodes,notChainCodes,destinationCodes,notDestinationCodes,percentage,force
 CE1,DIN,,,,2018-04-01,2018-10-31,3846,,,,,,18.50,false
+CE2,DIN,,,,,,3846,,,,,,15.00,false
+```
+
+**Multivalue field**
+```csv
+ruleId,supplierCodes,notSupplierCodes,creationDateFrom,creationDateTo,checkInFrom,checkInTo,hotelCodes,notHotelCodes,chainCodes,notChainCodes,destinationCodes,notDestinationCodes,percentage,force
+CE1,DIN;HOB;JMB,,,,2018-04-01,2018-10-31,3846,,,,,,18.50,false
 CE2,DIN,,,,,,3846,,,,,,15.00,false
 ```
