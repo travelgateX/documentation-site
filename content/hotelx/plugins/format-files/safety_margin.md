@@ -13,7 +13,7 @@ The safety margin file should be in the below format:
 * **File Name**: 
     * [context](/hotelx/concepts/accesses-supplier-context/#context)
     * [sequential](/hotelx/plugins/entity_table_file/#sequential)
-    * margin
+    * safetymargin
 * **Extension file**: csv
 * **Headers**:
     * _ruleId_  → rule identifier
@@ -61,7 +61,7 @@ The safety margin file should be in the below format:
 
 #### Sample File
 
-**Name**: context\_sequential_margin.csv
+**Name**: context\_sequential_safetymargin.csv
 
 **Data**:
 

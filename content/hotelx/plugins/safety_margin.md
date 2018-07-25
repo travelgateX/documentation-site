@@ -29,13 +29,13 @@ The matching process uses **client Tokens** filed which identify the provided by
 
     "plugins": {
 
-        "step": "POST_STEP",
+        "step": "RESPONSE_OPTION",
 
         "pluginsType": [
 
             {
 
-                "type": "CURRENCY_CONVERSION"
+                "type": "POST_STEP"
 
                 "name": "safety_margin"
 
