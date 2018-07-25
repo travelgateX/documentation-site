@@ -14,6 +14,12 @@ To make it easier for users and contributors to see precisely what notable chang
 
 {{% alert theme="info" %}}All notable changes on our platform will be documented in this page.{{% /alert %}}
 
+## 2018-07-24
+
+{{% release-notes-container type="a"%}}
+- New plugin, safety margin. You can see the documentation here(/hotelx/plugins/safety-margin/).
+{{% /release-notes-container %}}
+
 ## 2018-07-18
 
 {{% release-notes-container type="c"%}}
