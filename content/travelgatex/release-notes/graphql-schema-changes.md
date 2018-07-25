@@ -14,6 +14,16 @@ The GraphQL schema change log is a list of recent and upcoming changes to our Gr
 
 Check out this list of new releases and changes applied on the **TravelgateX GraphQL API**.
 
+## 2018-07-25 {#20180725}
+
+🛑  Input field `HotelSettingsInput.group` changed type from `String` to `ID`
+
+🛑  Input field `HotelSettingsInput.client` changed type from `String` to `ID`
+
+✅  Input field `HotelSettingsInput.client` description changed from `This field is occurs only if the authorization header is of the type JWT.. It is used to change the user that has been set by default in the preload.` to `Client name, this field is occurs only if the authorization header is of the type JWT.. It is used to change the user that has been set by default in the preload.`
+
+✅  Input field `clientTokens` was added to input object type `HotelSettingsInput`
+
 ## 2018-07-16 {#20180716}
 
 🛑  Input field `organizations` was removed from input object type `StatsFilterInput`
