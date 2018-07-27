@@ -12,6 +12,10 @@ To make it easier for users and contributors to see precisely what notable chang
 
 {{% alert theme="info" %}}All notable changes on TravelgateX platform will be documented in this page.{{% /alert %}}
 
+{{% release-notes-container type="u"%}}
+- Fix IAM mutations
+{{% /release-notes-container %}}
+
 ## 2018-07-27{#20180727}
 
 {{% release-notes-container type="f"%}}
