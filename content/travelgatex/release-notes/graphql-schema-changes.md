@@ -14,6 +14,14 @@ The GraphQL schema change log is a list of recent and upcoming changes to our Gr
 
 Check out this list of new releases and changes applied on the **TravelgateX GraphQL API**.
 
+## 2018-07-26 {#20180726}
+
+⚠️  Enum value `ORG` was added to enum `GroupTypeInput`
+
+⚠️  Enum value `ROOT` was added to enum `GroupTypeInput`
+
+⚠️  Enum value `ROOT` was added to enum `GroupType
+
 ## 2018-07-25 {#20180725}
 
 🛑  Input field `HotelSettingsInput.group` changed type from `String` to `ID`

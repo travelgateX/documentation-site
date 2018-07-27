@@ -12,6 +12,22 @@ To make it easier for users and contributors to see precisely what notable chang
 
 {{% alert theme="info" %}}All notable changes on TravelgateX platform will be documented in this page.{{% /alert %}}
 
+## 2018-07-27{#20180727}
+
+{{% release-notes-container type="f"%}}
+- Organizations queries resolvers
+{{% /release-notes-container %}}
+
+## 2018-07-26{#20180726}
+
+{{% release-notes-container type="c"%}}
+- [GraphQL Schema updated.](/travelgatex/release-notes/graphql-schema-changes/#20180726)
+{{% /release-notes-container %}}
+{{% release-notes-container type="f"%}}
+- Groups resolvers
+{{% /release-notes-container %}}
+
+
 ## 2018-07-25{#20180725}
 
 {{% release-notes-container type="c"%}}
