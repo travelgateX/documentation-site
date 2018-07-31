@@ -13,7 +13,21 @@ To make it easier for users and contributors to see precisely what notable chang
 {{% alert theme="info" %}}All notable changes on TravelgateX platform will be documented in this page.{{% /alert %}}
 
 {{% release-notes-container type="u"%}}
+- Support Tracing by request.
+{{% /release-notes-container %}}
+
+## 2018-07-31
+
+{{% release-notes-container type="c"%}}
+- [GraphQL Schema updated.](/travelgatex/release-notes/graphql-schema-changes/#2018-07-31)
+{{% /release-notes-container %}}
+
+{{% release-notes-container type="f"%}}
 - Fix IAM mutations
+{{% /release-notes-container %}}
+
+{{% release-notes-container type="a"%}}
+- Delete member mutation (Delete Apikeys or uninvite user emails)
 {{% /release-notes-container %}}
 
 ## 2018-07-30
@@ -29,7 +43,7 @@ To make it easier for users and contributors to see precisely what notable chang
 - Iam members
     - Label, created at and updated at columns on members table.
     - Option to assign roles by macro-roles
-- Seller "WHOLESALER" to the partners filter on the directory and partners screen. 
+- Seller "WHOLESALER" to the partners filter on the directory and partners screen.
 {{% /release-notes-container %}}
 
 ## 2018-07-27

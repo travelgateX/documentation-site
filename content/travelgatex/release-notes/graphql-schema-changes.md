@@ -14,6 +14,19 @@ The GraphQL schema change log is a list of recent and upcoming changes to our Gr
 
 Check out this list of new releases and changes applied on the **TravelgateX GraphQL API**.
 
+## 2018-07-31
+
+✅  Field `StoredCard.adviseMessage` description changed from `List of advise messages.` to `List of messages`
+
+✅  Deprecation reason on field `AddOns.distribute` has changed from `You can find it in distribution AddOn` to `deprecated from 2018-05-21. You can find it in distribution AddOn`
+
+✅  Field `PointOfSale.adviseMessage` description changed from `List of messages` to `List of advise messages.`
+
+✅  Field `entities` was added to object type `AdminQuery`
+
+✅  Type `EntityFilter` was added
+
+
 ## 2018-07-26 {#20180726}
 
 ⚠️  Enum value `ORG` was added to enum `GroupTypeInput`
