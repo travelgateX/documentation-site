@@ -1,5 +1,5 @@
 +++
-title = "Book"
+title = "Booking List"
 pagetitle = "Book (How To Perform a Booking)"
 description = "How to create a new Booking by calling the Book Mutation"
 icon = "fa-calendar"
