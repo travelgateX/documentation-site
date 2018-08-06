@@ -68,7 +68,7 @@ Processor plugins extends [HotelX](/hotelx/) allowing multiple operation types. 
                 "name": "aggregation",
                 "parameters": [
                     {
-                        {"key": "primaryKey","value": "hotel,supplier,room"},
+            {"key": "primaryKey","value": "hotel,supplier,room"},
 						{"key": "function","value": "min"},
 						{"key": "priceField","value": "net"},
 						{"key": "currency","value": "EUR"},
