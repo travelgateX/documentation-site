@@ -55,3 +55,28 @@ Processor plugins extends [HotelX](/hotelx/) allowing multiple operation types. 
 * Join arrays 
 * Modify object values 
 * Add or remove object instances 
+
+### Execution example
+
+```
+{
+    "plugins": {
+        "step": "REQUEST_OPTION/RESPONSE",
+        "pluginsType": [
+            {
+                "type": "PRE_STEP",
+                "name": "aggregation",
+                "parameters": [
+                    {
+                        {"key": "primaryKey","value": "hotel,supplier,room"},
+						{"key": "function","value": "min"},
+						{"key": "priceField","value": "net"},
+						{"key": "currency","value": "EUR"},
+						{"key": "size","value": 1}
+                    }
+                ]
+            }
+        ]
+    }
+}
+```
