@@ -14,7 +14,7 @@ The GraphQL schema change log is a list of recent and upcoming changes to our Gr
 
 Check out this list of new releases and changes applied on the **TravelgateX GraphQL API**.
 
-## 2018-08-07
+## 2018-08-08
 
 ✅  Input field `currency` was added to input object type `SettingsBaseInput`
 

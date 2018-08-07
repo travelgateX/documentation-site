@@ -12,8 +12,18 @@ To make it easier for users and contributors to see precisely what notable chang
 
 {{% alert theme="info" %}}All notable changes on TravelgateX platform will be documented in this page.{{% /alert %}}
 
-{{% release-notes-container type="u"%}}
-- Support Tracing by request.
+
+
+## 2018-08-08
+
+{{% release-notes-container type="c"%}}
+- [GraphQL Schema updated.](/travelgatex/release-notes/graphql-schema-changes/#2018-08-07)
+{{% /release-notes-container %}}
+
+{{% release-notes-container type="a"%}}
+- [TGX Headers page](/travelgatex/request-headers)
+- Support basic Tracing by request using header `TGX-Tracing: 1`
+- Return groups codes in entities queries (`accessData`,`suppierData`,`clientData`,`profileData`).
 {{% /release-notes-container %}}
 
 ## 2018-07-31
