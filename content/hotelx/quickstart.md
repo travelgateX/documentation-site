@@ -18,7 +18,7 @@ You will be able to visualize the main necessary queries and responses through o
 
 In order to perform a booking flow, please follow the steps below:
 
-### Authorization
+### Authorization {#authorization}
 
 First of all, to be able to run any query you should have an Apikey as an authentication.
 
@@ -27,7 +27,7 @@ In case you have an Apikey you can use it by introducing it in the HTTP Headers.
 
 {{< graphiql-tags tag="div_authorization" >}}
 
-### Search
+### Search {#search}
 
 By means of the following query, you will be able to perform an availability search for a given specific criteria.
 Modify "criteriaSearch" fields using valid dates and press the button play to send the query.
@@ -37,7 +37,7 @@ Modify "criteriaSearch" fields using valid dates and press the button play to se
 
 In case you need to replicate the search, there is a possibility to do so by using our token (see second tab). This token is obtained in the response of a search query and you will find it in each of the options returned.
 
-### Quote
+### Quote {#quote}
 
 This query aims to return the total price and cancellation policies of the option selected in the previous step. In Query Variables modify optionRefId with option id value returned in search response and send the query:
 
@@ -46,7 +46,7 @@ This query aims to return the total price and cancellation policies of the optio
 
 In this case you can modify the language, if you don’t indicate the language, it uses the same language that in search.
 
-### Book
+### Book {#book}
 
 This query allows you to book a previously quoted option. In Query Variables modify optionRefId with optionRefId value returned in quote response and send the query with the other mandatory information:
 
@@ -55,7 +55,7 @@ This query allows you to book a previously quoted option. In Query Variables mod
 {{< graphiql-tags tag="div_book" >}}
 
 
-### Cancel
+### Cancel {#cancel}
 
 This query allows you to perform a book cancellation. In Query Variables you should introduce all the necessary information of the book that you want to cancel:
 
@@ -64,7 +64,7 @@ This query allows you to perform a book cancellation. In Query Variables you sho
 {{< graphiql-tags tag="div_cancel" >}}
 
 
-### Booking List
+### Booking List {#bookinglist}
 
 You can retrieve the reservation details and status by performing one of the following three options (see tabs):
     1. References - Introducing reservation locators

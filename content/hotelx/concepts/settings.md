@@ -1,0 +1,148 @@
++++
+title = "Settings"
+pagetitle = ""
+description = "Learn about settings in HotelX"
+icon = "fa-exchange"
+weight = 1
+alwaysopen = false
++++
+
+On this page you will learn more about **settings** in HotelX. 
+
+### What are settings?
+
+Settings are loaded by default in our Back Office and determine the behavior of hotelx by default.
+
+This link shows how is setting structure: 
+
+[HotelX Settings](https://docs.travelgatex.com/travelgatex/reference/inputobjects/hotelsettingsinput/)
+
+```
+settings: {
+        suppliers: {code: "HOTELTEST"}, 
+        plugins: 
+                {step: REQUEST, 
+                pluginsType: 
+                [{type: POST_STEP, name: "search_by_destination", 
+                parameters: [{key: "accessID", value: "422"}]}]}, 
+        businessRules: null, timeout: 24700, context: "HOTELTEST", 
+        client: "Demo_Client", 
+        testMode: true
+    }
+```
+
+[Base Settings](https://docs.travelgatex.com/travelgatex/reference/inputobjects/basesettingsinput/)
+
+```
+settings: {
+    timeout: 300, 
+    auditTransactions: true, 
+    businessRules: 
+      {
+        optionsQuota: 500,
+        businessRulesType: CHEAPER_AMOUNT
+      }  
+}
+```
+
+[Default Settings](https://docs.travelgatex.com/travelgatex/reference/inputobjects/defaultsettingsinput/)
+
+```
+settings: {
+    connectUser: "test"
+    context: "test"
+    language: "es"
+    currency: "EUR"
+    nationality: "ES"
+    market: "es"
+    timeouts: 300
+    businessRules: 
+      {
+        optionsQuota: 500,
+        businessRulesType: CHEAPER_AMOUNT
+      }  
+}
+```
+
+[Default Settings Business Rules](https://docs.travelgatex.com/travelgatex/reference/inputobjects/defaultsettingsbusinessrulesinput/)
+
+```
+businessRules{
+    businessRules: 
+        {
+            optionsQuota: 500,
+            businessRulesType: CHEAPER_AMOUNT
+        }  
+}
+``` 
+
+### Where can apply settings?
+
+It is possible to overwrite the behavior of the settings in each request made by the client.
+
+Setting can be applied in the following operations:
+
+## Queries
+
+All this queries have the settings configuration [**Click here**](https://docs.travelgatex.com/travelgatex/reference/inputobjects/hotelsettingsinput/)
+
+* [**Search**]
+
+    * Example : [Search setting example](/hotelx/quickstart#search)
+
+* [**Quote**]
+
+    * Example : [Quote setting example](/hotelx/quickstart#quote)
+
+* [**Booking List**]
+
+    * Example : [Booking Lista setting example](/hotelx/quickstart#bookinglist)
+
+## Mutations
+
+[**All this mutations have the settings configuration**](https://docs.travelgatex.com/travelgatex/reference/inputobjects/hotelsettingsinput/)
+
+* [**Book**]
+
+    * Example : [Search setting example](/hotelx/quickstart#search)
+
+* [**Cancel**]
+
+    * Example : [Quote setting example](/hotelx/quickstart#quote)
+
+### Settings scope
+
+We have 5 different levels of settings:
+
+* `HotelX Settings` affect the behavior of the HotelX and the definition is as follows:  
+  [**Hotelx Settings**](https://docs.travelgatex.com/travelgatex/reference/inputobjects/hotelbaseinput/)  
+
+* `Base Settings` affect the behavior of the HotelX and the definition is as follows:  
+  [**Base Settings**](https://docs.travelgatex.com/travelgatex/reference/inputobjects/settingsbaseinput/) 
+
+* `Supplier Settings` affect the behavior of the suppliers and the definition is as follows:  
+  [**Supplier Settings**](https://docs.travelgatex.com/travelgatex/reference/inputobjects/settingsbaseinput/)  
+
+* `Access Settings` affect the behavior of the access and the definition is as follows:  
+  [**Access Settings**](https://docs.travelgatex.com/travelgatex/reference/inputobjects/settingsbaseinput/)  
+
+* `Plugins Settings` affect the behavior of the plugins and the definition is as follows:  
+  [**Plugins Settings**](https://docs.travelgatex.com/travelgatex/reference/inputobjects/pluginstepinput/)  
+
+**Every level define the plugins scope where are applied**
+
+### Workflow settings execution 
+
+The setting order priority is as follows:
+
+*   **1. Access**
+*   **2. Supplier**
+*   **3. Hotel**
+
+{{<mermaid align="left">}}
+graph LR;
+    A[Client] -->|REQUEST: 1 Access,2 Supplier, 3 Hotel Settings , Plugins Settings| B(HotelX)
+    B[HotelX] -->|Request| C(Provider)
+    C[Provider] -->|RESPONSE: Plugins Settings| B(HotelX)
+    B[HotelX] -->|RESPONSE: Plugins Settings| A(Client)
+{{< /mermaid >}}

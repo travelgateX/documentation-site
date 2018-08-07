@@ -3,7 +3,7 @@ title = "Access, Supplier and Context"
 pagetitle = ""
 description = "Learn about entities used in HotelX"
 icon = "fa-exchange"
-weight = 1
+weight = 2
 alwaysopen = false
 +++
 
