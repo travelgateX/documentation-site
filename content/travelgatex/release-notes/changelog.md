@@ -59,7 +59,7 @@ To make it easier for users and contributors to see precisely what notable chang
 
 {{% release-notes-container type="c"%}}
 - Improvements on the organization selector
-    - Sorted organizations by alphabetical order.
+    - Sorted organizations in alphabetical order.
     - Autoselect when there is just one org. available.
     - Popup when there is no org. selected.
     - Prettier component.
@@ -114,7 +114,7 @@ To make it easier for users and contributors to see precisely what notable chang
 ## 2018-07-16
 
 {{% release-notes-container type="a"%}}
-- [GraphQL Schema breaking changes](/travelgatex/release-notes/breaking-changes/). Sustitutes and fixes to Deprecated and Deleted Notes pages.
+- [GraphQL Schema breaking changes](/travelgatex/release-notes/breaking-changes/). Substitutes and fixes to Deprecated and Deleted Notes pages.
 {{% /release-notes-container %}}
 
 {{% release-notes-container type="c"%}}
