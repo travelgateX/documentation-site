@@ -12,7 +12,7 @@ The following HTTP request headers are relevant to all request methods (GET, PUT
 
 ## Authorization (Required)
 
-The HTTP Authorization request header contains the credentials to authenticate a user agent with a server, usually after the server has responded with a 401 Unauthorized status and the WWW-Authenticate header.	
+The HTTP Authorization request header contains the credentials to authenticate a user agent with a server, usually after the server has responded with a 401 Unauthorized status and the WWW-Authenticate header.
 
 ### Syntax
 
@@ -26,6 +26,7 @@ Authorization: <type> <credentials>
 
 - `ApiKey`
 - `Bearer`
+
 
 `<credential>`: String
 
@@ -49,8 +50,6 @@ TGX-Audit: <number>
 - 0: The requester prefers to allow tracking on the target system.
 - 1: The requester prefers not to be tracked on the target system.
 
-`<credential>`: String
-
 ## TGX-Tracing (Optional)
 
 When activated, it returns performance traces alongside the data requested.
@@ -67,5 +66,3 @@ TGX-Tracing: <number>
 
 - 0: Default value. Tracing not enabled.
 - 1: Tracing enabled.
-
-`<credential>`: String
