@@ -20,7 +20,7 @@ To make it easier for users and contributors to see precisely what notable chang
 {{% /release-notes-container %}}
 
 {{% release-notes-container type="a"%}}
-- [TGX Headers page](/travelgatex/request-headers)
+- [TGX Headers page](/travelgatex/concepts/request-headers)
 - Support basic Tracing by request using header `TGX-Tracing: 1`
 - Return groups codes on entities queries (`accessData`,`suppierData`,`clientData`,`profileData`).
 - Access name filter
