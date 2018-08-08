@@ -15,7 +15,7 @@ Settings are loaded by default in our Back Office and determine the behavior of 
 
 This link shows how is setting structure: 
 
-[HotelX Settings](https://docs.travelgatex.com/travelgatex/reference/inputobjects/hotelsettingsinput/)
+[HotelX Settings](/hotelx/reference/inputobjects/hotelsettingsinput/)
 
 ```
 settings: {
@@ -31,7 +31,7 @@ settings: {
     }
 ```
 
-[Base Settings](https://docs.travelgatex.com/travelgatex/reference/inputobjects/basesettingsinput/)
+[Base Settings](/hotelx/reference/inputobjects/basesettingsinput/)
 
 ```
 settings: {
@@ -45,7 +45,7 @@ settings: {
 }
 ```
 
-[Default Settings](https://docs.travelgatex.com/travelgatex/reference/inputobjects/defaultsettingsinput/)
+[Default Settings](/hotelx/reference/inputobjects/defaultsettingsinput/)
 
 ```
 settings: {
@@ -64,7 +64,7 @@ settings: {
 }
 ```
 
-[Default Settings Business Rules](https://docs.travelgatex.com/travelgatex/reference/inputobjects/defaultsettingsbusinessrulesinput/)
+[Default Settings Business Rules](/hotelx/reference/inputobjects/businessrulesinput/)
 
 ```
 businessRules{
@@ -84,29 +84,29 @@ Setting can be applied in the following operations:
 
 ## Queries
 
-All this queries have the settings configuration [**Click here**](https://docs.travelgatex.com/travelgatex/reference/inputobjects/hotelsettingsinput/)
+All this queries have the settings configuration [**Click here**](/hotelx/reference/inputobjects/hotelsettingsinput/)
 
-* [**Search**]
+* **Search**
 
     * Example : [Search setting example](/hotelx/quickstart#search)
 
-* [**Quote**]
+* **Quote**
 
     * Example : [Quote setting example](/hotelx/quickstart#quote)
 
-* [**Booking List**]
+* **Booking List**
 
     * Example : [Booking Lista setting example](/hotelx/quickstart#bookinglist)
 
 ## Mutations
 
-[**All this mutations have the settings configuration**](https://docs.travelgatex.com/travelgatex/reference/inputobjects/hotelsettingsinput/)
+[**All this mutations have the settings configuration**](/hotelx/reference/inputobjects/hotelsettingsinput/)
 
-* [**Book**]
+* **Book**
 
     * Example : [Search setting example](/hotelx/quickstart#search)
 
-* [**Cancel**]
+* **Cancel**
 
     * Example : [Quote setting example](/hotelx/quickstart#quote)
 
@@ -115,19 +115,19 @@ All this queries have the settings configuration [**Click here**](https://docs.t
 We have 5 different levels of settings:
 
 * `HotelX Settings` affect the behavior of the HotelX and the definition is as follows:  
-  [**Hotelx Settings**](https://docs.travelgatex.com/travelgatex/reference/inputobjects/hotelbaseinput/)  
+  [**Hotelx Settings**](/hotelx/reference/inputobjects/hotelbaseinput/)  
 
 * `Base Settings` affect the behavior of the HotelX and the definition is as follows:  
-  [**Base Settings**](https://docs.travelgatex.com/travelgatex/reference/inputobjects/settingsbaseinput/) 
+  [**Base Settings**](/hotelx/reference/inputobjects/settingsbaseinput/) 
 
 * `Supplier Settings` affect the behavior of the suppliers and the definition is as follows:  
-  [**Supplier Settings**](https://docs.travelgatex.com/travelgatex/reference/inputobjects/settingsbaseinput/)  
+  [**Supplier Settings**](/hotelx/reference/inputobjects/settingsbaseinput/)  
 
 * `Access Settings` affect the behavior of the access and the definition is as follows:  
-  [**Access Settings**](https://docs.travelgatex.com/travelgatex/reference/inputobjects/settingsbaseinput/)  
+  [**Access Settings**](/hotelx/reference/inputobjects/settingsbaseinput/)  
 
 * `Plugins Settings` affect the behavior of the plugins and the definition is as follows:  
-  [**Plugins Settings**](https://docs.travelgatex.com/travelgatex/reference/inputobjects/pluginstepinput/)  
+  [**Plugins Settings**](/hotelx/reference/inputobjects/pluginstepinput/)  
 
 **Every level define the plugins scope where are applied**
 
@@ -141,8 +141,13 @@ The setting order priority is as follows:
 
 {{<mermaid align="left">}}
 graph LR;
-    A[Client] -->|REQUEST: 1 Access,2 Supplier, 3 Hotel Settings , Plugins Settings| B(HotelX)
-    B[HotelX] -->|Request| C(Provider)
-    C[Provider] -->|RESPONSE: Plugins Settings| B(HotelX)
-    B[HotelX] -->|RESPONSE: Plugins Settings| A(Client)
+    A[Clients] -->|REQUEST: 1| B(HotelX)
+    B[HotelX] -->|REQUEST| C(Suppliers)
+    C[Suppliers] -->|RESPONSE: 2| B(HotelX)
+    B[HotelX] -->|RESPONSE: 2| A(Client)
 {{< /mermaid >}}
+
+{{% notice info %}}
+**1 Request order priority 1. Access, 2. Supplier, 3. Hotel (Settings)**  
+**2 Plugins settings**
+{{% /notice %}}
