@@ -7,12 +7,12 @@ weight = 3
 alwaysopen = false
 +++
 
-The following HTTP request headers are relevant to all request methods (GET, PUT, POST and DELETE) and are required on all API requests.
+The following HTTP request headers are relevant to all request methods (GET, PUT, POST and DELETE) and they are required in all API requests.
 
 
-## Authorization
+## Authorization (Required)
 
-The HTTP Authorization request header contains the credentials to authenticate a user agent with a server, usually after the server has responded with a 401 Unauthorized status and the WWW-Authenticate header.	no
+The HTTP Authorization request header contains the credentials to authenticate a user agent with a server, usually after the server has responded with a 401 Unauthorized status and the WWW-Authenticate header.	
 
 ### Syntax
 
@@ -23,15 +23,15 @@ Authorization: <type> <credentials>
 ### Directives
 
 `<type>`:
-* `ApiKey`
-* `Bearer`
+- `ApiKey`
+- `Bearer`
 
 `<credential>`: String
 
 ### Example
 Authorization: Apikey q8ggx-poVDW76Kw9-18hwnnRvxlZm-AP2QZ
 
-## TGX-Audit
+## TGX-Audit (Optional)
 
 Force audit the request in TravelgateX systems.
 
@@ -44,14 +44,14 @@ TGX-Audit: <number>
 ### Directives
 
 `<number>`:
-* 0: The requester prefers to allow tracking on the target system.
-* 1: The requester prefers not to be tracked on the targe system.
+- 0: The requester prefers to allow tracking on the target system.
+- 1: The requester prefers not to be tracked on the target system.
 
 `<credential>`: String
 
-## TGX-Tracing
+## TGX-Tracing (Optional)
 
-Performance traces alongside the data returned.
+When activated, it returns performance traces alongside the data requested.
 
 ### Syntax
 
@@ -62,7 +62,7 @@ TGX-Tracing: <number>
 ### Directives
 
 `<number>`:
-* 0: Default value. Tracing not enabled.
-* 1: Tracing enabled.
+- 0: Default value. Tracing not enabled.
+- 1: Tracing enabled.
 
 `<credential>`: String
