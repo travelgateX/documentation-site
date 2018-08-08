@@ -12,9 +12,32 @@ To make it easier for users and contributors to see precisely what notable chang
 
 {{% alert theme="info" %}}All notable changes on TravelgateX platform will be documented in this page.{{% /alert %}}
 
-{{% release-notes-container type="u"%}}
-- Support Tracing by request.
+
+## 2018-08-08
+
+{{% release-notes-container type="c"%}}
+- [GraphQL Schema updated.](/travelgatex/release-notes/graphql-schema-changes/#2018-08-07)
 {{% /release-notes-container %}}
+
+{{% release-notes-container type="a"%}}
+- [TGX Headers page](/travelgatex/concepts/request-headers)
+- Support basic Tracing by request using header `TGX-Tracing: 1`
+- Return groups codes on entities queries (`accessData`,`suppierData`,`clientData`,`profileData`).
+- Access name filter
+- New default group when user account is deleted.
+- Audit members has been added in createMember and deleteMember
+{{% /release-notes-container %}}
+
+{{% release-notes-container type="f"%}}
+- Response of Access and Supplier query when no accesses on the request
+- Entity propagation
+- Permission check
+- Update member auditions and refactor that funcionality
+- URL resolver
+- API/resource resolvers
+- Roles function with new admin permissions
+{{% /release-notes-container %}}
+
 
 ## 2018-07-31
 
@@ -23,11 +46,13 @@ To make it easier for users and contributors to see precisely what notable chang
 {{% /release-notes-container %}}
 
 {{% release-notes-container type="f"%}}
-- Fix IAM mutations
+- IAM mutations
+- All groups in resources and apis resolvers
 {{% /release-notes-container %}}
 
 {{% release-notes-container type="a"%}}
 - Delete member mutation (Delete Apikeys or uninvite user emails)
+- Public deleteGroup function and made it public
 {{% /release-notes-container %}}
 
 ## 2018-07-30
@@ -44,6 +69,11 @@ To make it easier for users and contributors to see precisely what notable chang
     - Label, created at and updated at columns on members table.
     - Option to assign roles by macro-roles
 - Seller "WHOLESALER" to the partners filter on the directory and partners screen.
+- New admin permissions
+{{% /release-notes-container %}}
+
+{{% release-notes-container type="f"%}}
+- Groups function filters
 {{% /release-notes-container %}}
 
 ## 2018-07-27

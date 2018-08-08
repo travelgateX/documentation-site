@@ -21,7 +21,7 @@ Once the hotel ranking file/s have been uploaded, the static hotel list method c
 
 Each file can have different meanings. It's up to the file creator to give it a meaning according to their business needs. In order to process files correctly, they must be named according to the following naming convention:
 
-|File Nane| Description|
+|File Name| Description|
 |---------|------------|
 |rank1.csv | Rank 1, for example direct contracts |
 |rank2.csv | Rank 2, for example best deals |

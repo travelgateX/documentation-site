@@ -14,6 +14,24 @@ The GraphQL schema change log is a list of recent and upcoming changes to our Gr
 
 Check out this list of new releases and changes applied on the **TravelgateX GraphQL API**.
 
+## 2018-08-08
+
+✅  Input field `currency` was added to input object type `SettingsBaseInput`
+
+✅  Field `parents` was added to object type `GroupData`
+
+✅  Deprecation reason on field `Group.error` has changed from `` to `deprecated from 2018-08-01. Sustituted by adviseMessage`
+
+✅  Field `adviseMessage` was added to object type `Group`
+
+✅  Field `group` was added to object type `ProfileData`
+
+✅  Field `group` was added to object type `ClientData`
+
+✅  Field `groups` was added to object type `SupplierData`
+
+✅  Field `groups` was added to object type `AccessData`
+
 ## 2018-07-31
 
 ✅  Field `StoredCard.adviseMessage` description changed from `List of advise messages.` to `List of messages`
