@@ -11,9 +11,9 @@ On this page you will learn more about **settings** in HotelX.
 
 ### What are settings?
 
-Settings are loaded by default in our Back Office and determine the behavior of hotelx by default.
+Settings are loaded by default in our Back Office and determine the behavior of Hotelx by default.
 
-This link shows how is setting structure: 
+This link shows how are Settings structured: 
 
 [HotelX Settings](/hotelx/reference/inputobjects/hotelsettingsinput/)
 
@@ -76,15 +76,15 @@ businessRules{
 }
 ``` 
 
-### Where can apply settings?
+### Where can Settings be applied?
 
 It is possible to overwrite the behavior of the settings in each request made by the client.
 
-Setting can be applied in the following operations:
+Settings can be applied in the following operations:
 
 ## Queries
 
-All this queries have the settings configuration [**Click here**](/hotelx/reference/inputobjects/hotelsettingsinput/)
+All this queries have the Settings configuration [**Click here**](/hotelx/reference/inputobjects/hotelsettingsinput/)
 
 * **Search**
 
@@ -114,22 +114,22 @@ All this queries have the settings configuration [**Click here**](/hotelx/refere
 
 We have 5 different levels of settings:
 
-* `HotelX Settings` affect the behavior of the HotelX and the definition is as follows:  
+* `HotelX Settings` affect the behavior of HotelX and their definition is as follows:  
   [**Hotelx Settings**](/hotelx/reference/inputobjects/hotelbaseinput/)  
 
-* `Base Settings` affect the behavior of the HotelX and the definition is as follows:  
+* `Base Settings` affect the behavior of HotelX and their definition is as follows:  
   [**Base Settings**](/hotelx/reference/inputobjects/settingsbaseinput/) 
 
-* `Supplier Settings` affect the behavior of the suppliers and the definition is as follows:  
+* `Supplier Settings` affect the behavior of suppliers and their definition is as follows:  
   [**Supplier Settings**](/hotelx/reference/inputobjects/settingsbaseinput/)  
 
-* `Access Settings` affect the behavior of the access and the definition is as follows:  
+* `Access Settings` affect the behavior of the access and their definition is as follows:  
   [**Access Settings**](/hotelx/reference/inputobjects/settingsbaseinput/)  
 
-* `Plugins Settings` affect the behavior of the plugins and the definition is as follows:  
+* `Plugins Settings` affect the behavior of the plugins and their definition is as follows:  
   [**Plugins Settings**](/hotelx/reference/inputobjects/pluginstepinput/)  
 
-**Every level define the plugins scope where are applied**
+**Every level defines the plugins' scope where they are applied**
 
 ### Workflow settings execution 
 
