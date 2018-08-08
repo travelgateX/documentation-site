@@ -7,12 +7,12 @@ weight = 3
 alwaysopen = false
 +++
 
-The following HTTP request headers are relevant to all request methods (GET, PUT, POST and DELETE) and are required on all API requests.
+The following HTTP request headers are relevant to all request methods (GET, PUT, POST and DELETE) and they are required in all API requests.
 
 
 ## Authorization (Required)
 
-The HTTP Authorization request header contains the credentials to authenticate a user agent with a server, usually after the server has responded with a 401 Unauthorized status and the WWW-Authenticate header.	no
+The HTTP Authorization request header contains the credentials to authenticate a user agent with a server, usually after the server has responded with a 401 Unauthorized status and the WWW-Authenticate header.	
 
 ### Syntax
 
@@ -45,13 +45,13 @@ TGX-Audit: <number>
 
 `<number>`:
 - 0: The requester prefers to allow tracking on the target system.
-- 1: The requester prefers not to be tracked on the targe system.
+- 1: The requester prefers not to be tracked on the target system.
 
 `<credential>`: String
 
 ## TGX-Tracing (Optional)
 
-Performance traces alongside the data returned.
+When activated, it returns performance traces alongside the data requested.
 
 ### Syntax
 
