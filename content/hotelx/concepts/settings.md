@@ -13,7 +13,7 @@ On this page you will learn more about **settings** in HotelX.
 
 Settings are loaded by default in our Back Office and determine the behavior of hotelx by default.
 
-This links show how are the different settings structures by level: 
+This link shows how are the different settings structures by level: 
 
 [HotelX Settings](/hotelx/reference/inputobjects/hotelsettingsinput/)
 
