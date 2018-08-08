@@ -84,7 +84,7 @@ Setting can be applied in the following operations:
 
 ## Queries
 
-This queries have the same settings configuration [**Click here to see configuration**](/hotelx/reference/inputobjects/hotelsettingsinput/)
+These queries have the same settings configuration [**Click here to see configuration**](/hotelx/reference/inputobjects/hotelsettingsinput/)
 
 * **Search**
 
@@ -100,7 +100,7 @@ This queries have the same settings configuration [**Click here to see configura
 
 ## Mutations
 
-This mutations have the same settings configuration [**Click here to see configuration**](/hotelx/reference/inputobjects/hotelsettingsinput/)
+These mutations have the same settings configuration [**Click here to see configuration**](/hotelx/reference/inputobjects/hotelsettingsinput/)
 
 * **Book**
 
