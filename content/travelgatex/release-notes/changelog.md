@@ -24,18 +24,18 @@ To make it easier for users and contributors to see precisely what notable chang
 - Support basic Tracing by request using header `TGX-Tracing: 1`
 - Return groups codes on entities queries (`accessData`,`suppierData`,`clientData`,`profileData`).
 - Access name filter
-- New default group when user account is deleted, hard delete when
+- New default group when user account is deleted.
 - Audit members has been added in createMember and deleteMember
 {{% /release-notes-container %}}
 
 {{% release-notes-container type="f"%}}
-- Response of Access and Supplier query when no accesses on requested
+- Response of Access and Supplier query when no accesses on the request
 - Entity propagation
 - Permission check
 - Update member auditions and refactor that funcionality
 - URL resolver
-- api/resource resolvers
-- roles funtion with new admin permissions
+- API/resource resolvers
+- Roles function with new admin permissions
 {{% /release-notes-container %}}
 
 
