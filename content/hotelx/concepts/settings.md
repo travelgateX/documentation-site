@@ -13,7 +13,7 @@ On this page you will learn more about **settings** in HotelX.
 
 Settings are loaded by default in our Back Office and determine the behavior of hotelx by default.
 
-This link shows how is setting structure: 
+This links show how are the different settings structures by level: 
 
 [HotelX Settings](/hotelx/reference/inputobjects/hotelsettingsinput/)
 
@@ -78,13 +78,13 @@ businessRules{
 
 ### Where can apply settings?
 
-It is possible to overwrite the behavior of the settings in each request made by the client.
+It is possible to overwrite settings behavior in each request made by the client.
 
 Setting can be applied in the following operations:
 
 ## Queries
 
-All this queries have the settings configuration [**Click here**](/hotelx/reference/inputobjects/hotelsettingsinput/)
+This queries have the same settings configuration [**Click here to see configuration**](/hotelx/reference/inputobjects/hotelsettingsinput/)
 
 * **Search**
 
@@ -100,7 +100,7 @@ All this queries have the settings configuration [**Click here**](/hotelx/refere
 
 ## Mutations
 
-[**All this mutations have the settings configuration**](/hotelx/reference/inputobjects/hotelsettingsinput/)
+This mutations have the same settings configuration [**Click here to see configuration**](/hotelx/reference/inputobjects/hotelsettingsinput/)
 
 * **Book**
 
@@ -112,7 +112,7 @@ All this queries have the settings configuration [**Click here**](/hotelx/refere
 
 ### Settings scope
 
-We have 5 different levels of settings:
+We have 5 different setting levels application:
 
 * `HotelX Settings` affect the behavior of the HotelX and the definition is as follows:  
   [**Hotelx Settings**](/hotelx/reference/inputobjects/hotelbaseinput/)  
@@ -129,7 +129,7 @@ We have 5 different levels of settings:
 * `Plugins Settings` affect the behavior of the plugins and the definition is as follows:  
   [**Plugins Settings**](/hotelx/reference/inputobjects/pluginstepinput/)  
 
-**Every level define the plugins scope where are applied**
+**Every level define setting scope where are applied**
 
 ### Workflow settings execution 
 
@@ -148,6 +148,6 @@ graph LR;
 {{< /mermaid >}}
 
 {{% notice info %}}
-**1 Request order priority 1. Access, 2. Supplier, 3. Hotel (Settings)**  
+**1 Request order priority (1. Access Settings, 2. Supplier Settings, 3. Hotel Settings)**  
 **2 Plugins settings**
 {{% /notice %}}
