@@ -1,7 +1,7 @@
 +++
 title = "Request Headers"
 pagetitle = "Request Headers"
-description = ""
+description = "HTTP request headers required in all API requests"
 icon = "fa-plus-circle"
 weight = 3
 alwaysopen = false
@@ -23,6 +23,7 @@ Authorization: <type> <credentials>
 ### Directives
 
 `<type>`:
+
 - `ApiKey`
 - `Bearer`
 
@@ -44,6 +45,7 @@ TGX-Audit: <number>
 ### Directives
 
 `<number>`:
+
 - 0: The requester prefers to allow tracking on the target system.
 - 1: The requester prefers not to be tracked on the target system.
 
@@ -62,6 +64,7 @@ TGX-Tracing: <number>
 ### Directives
 
 `<number>`:
+
 - 0: Default value. Tracing not enabled.
 - 1: Tracing enabled.
 
