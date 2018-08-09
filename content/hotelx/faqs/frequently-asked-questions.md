@@ -69,3 +69,31 @@ HotelX will return information from all the suppliers at the same time, once all
 **In aggregator mode is it possible to set a time out for each provider?**
 
 No, the time out will be applied to all providers, using the parameter setting: timeout.
+
+## Content
+**How to Manage HotelX Content?**
+
+HotelX allows you to do two types of Queries:
+
+* **Search to a HotelCode level**: in order to receive the information of a specific HotelCode(s), you should introduce the HotelCode(s) of your query:
+
+```json
+{
+  "criteria": {
+    "access": "yourAccess",
+    "hotelCodes":["A159", "B357", "C568"]
+  }
+}
+```
+
+* **Search the complete HotelList from a supplier’s access**: in order to receive the complete hotel list from a supplier’s access, you should introduce the number of hotels you want to receive in the response of the query. Since the hotel list includes a large amount of hotels, it is divided into several batches, each one of a different number of hotels. In this case, the minimum size you can request is 100, and the max. is 10000.
+
+```json
+{
+  "criteria": {
+    "access": "yourAccess",
+    "maxSize": 500
+  }
+}
+```
+[More info on HotelX content.](/hotelx/concepts/content/)
