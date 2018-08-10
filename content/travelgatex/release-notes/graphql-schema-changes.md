@@ -14,6 +14,38 @@ The GraphQL schema change log is a list of recent and upcoming changes to our Gr
 
 Check out this list of new releases and changes applied on the **TravelgateX GraphQL API**.
 
+## 2018-08-13
+
+🛑  Field `ProfileData.group` changed type from `Group!` to `Group`
+
+🛑  Field `ClientData.group` changed type from `Group!` to `Group`
+
+🛑  Argument `type: GroupType` was removed from field `GroupData.managedGroups`
+
+🛑  Field `GroupData.managedGroups` changed type from `GroupConnection` to `ManagedGroupConnection`
+
+🛑  Field `SupplierData.groups` changed type from `GroupConnection!` to `GroupConnection`
+
+🛑  Field `AccessData.groups` changed type from `GroupConnection!` to `GroupConnection`
+
+✅  Argument `role: [ID!]` added to field `GroupData.managedGroups`
+
+✅  Argument `resource: [ID!]` added to field `GroupData.managedGroups`
+
+✅  Argument `api: [ID!]` added to field `GroupData.managedGroups`
+
+✅  Argument `group: [ID!]` added to field `GroupData.managedGroups`
+
+✅  Field `GroupData.managedGroups` description changed from `Responses all groups in its group's childrens (hierarchically),` to `Responses all managed groups by this group.`
+
+✅  Type `ManagedGroupData` was added
+
+✅  Type `ManagedGroup` was added
+
+✅  Type `ManagedGroupEdge` was added
+
+✅  Type `ManagedGroupConnection` was added
+
 ## 2018-08-08
 
 ✅  Input field `currency` was added to input object type `SettingsBaseInput`
