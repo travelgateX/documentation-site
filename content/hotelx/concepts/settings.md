@@ -13,7 +13,7 @@ On this page you will learn more about **settings** in HotelX.
 
 Settings are loaded by default in our Back Office and determine the behavior of Hotelx by default.
 
-This link shows how are the different settings structures by level: 
+This link shows how are the different setting structures by level: 
 
 [HotelX Settings](/hotelx/reference/inputobjects/hotelsettingsinput/)
 
@@ -96,7 +96,7 @@ These queries have the same settings configuration [**Click here to see configur
 
 * **Booking List**
 
-    * Example : [Booking Lista setting example](/hotelx/quickstart#bookinglist)
+    * Example : [Booking List setting example](/hotelx/quickstart#bookinglist)
 
 ## Mutations
 
@@ -133,7 +133,7 @@ We have 5 different setting levels application:
 
 ### Workflow settings execution 
 
-The setting order priority is as follows:
+The settings' hierarchy is as follows:
 
 *   **1. Access**
 *   **2. Supplier**
