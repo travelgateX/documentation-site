@@ -11,32 +11,15 @@ On this page you will learn more about **settings** in HotelX.
 
 ### What are settings?
 
-Settings are loaded by default in our Back Office and determine the behavior of Hotelx by default.
+Settings are fields needed by HotelX to configure all suppliers requests.  
 
-This link shows how are the different setting structures by level: 
-
-[HotelX Settings](/hotelx/reference/inputobjects/hotelsettingsinput/)
-
-```
-settings: {
-        suppliers: {code: "HOTELTEST"}, 
-        plugins: 
-                {step: REQUEST, 
-                pluginsType: 
-                [{type: POST_STEP, name: "search_by_destination", 
-                parameters: [{key: "accessID", value: "422"}]}]}, 
-        businessRules: null, timeout: 24700, context: "HOTELTEST", 
-        client: "Demo_Client", 
-        testMode: true
-    }
-```
-
-[Base Settings](/hotelx/reference/inputobjects/basesettingsinput/)
+[Base Settings]
 
 ```
 settings: {
     timeout: 300, 
     auditTransactions: true, 
+    currency: "EUR",
     businessRules: 
       {
         optionsQuota: 500,
@@ -45,17 +28,17 @@ settings: {
 }
 ```
 
-[Default Settings](/hotelx/reference/inputobjects/defaultsettingsinput/)
+[Default Settings]
 
 ```
 settings: {
-    connectUser: "test"
-    context: "test"
-    language: "es"
-    currency: "EUR"
-    nationality: "ES"
-    market: "es"
-    timeouts: 300
+    connectUser: "test",
+    context: "test",
+    language: "es",
+    currency: "EUR",
+    nationality: "ES",
+    market: "es",
+    timeouts: 300,
     businessRules: 
       {
         optionsQuota: 500,
@@ -63,18 +46,6 @@ settings: {
       }  
 }
 ```
-
-[Default Settings Business Rules](/hotelx/reference/inputobjects/businessrulesinput/)
-
-```
-businessRules{
-    businessRules: 
-        {
-            optionsQuota: 500,
-            businessRulesType: CHEAPER_AMOUNT
-        }  
-}
-``` 
 
 ### Where can Settings be applied?
 
@@ -82,9 +53,7 @@ It is possible to overwrite settings behavior in each request made by the client
 
 Settings can be applied in the following operations:
 
-## Queries
-
-These queries have the same settings configuration [**Click here to see configuration**](/hotelx/reference/inputobjects/hotelsettingsinput/)
+#### Queries
 
 * **Search**
 
@@ -98,58 +67,70 @@ These queries have the same settings configuration [**Click here to see configur
 
     * Example : [Booking List setting example](/hotelx/quickstart#bookinglist)
 
-## Mutations
-
-These mutations have the same settings configuration [**Click here to see configuration**](/hotelx/reference/inputobjects/hotelsettingsinput/)
+#### Mutations
 
 * **Book**
 
-    * Example : [Search setting example](/hotelx/quickstart#search)
+    * Example : [Book setting example](/hotelx/quickstart#book)
 
 * **Cancel**
 
-    * Example : [Quote setting example](/hotelx/quickstart#quote)
+    * Example : [Cancel setting example](/hotelx/quickstart#cancel)
 
-### Settings scope
 
-We have 5 different setting levels application:
+## Settings scope
 
-* `HotelX Settings` affect the behavior of HotelX and their definition is as follows:  
-  [**Hotelx Settings**](/hotelx/reference/inputobjects/hotelbaseinput/)  
+There are 2 posibles ways to specify the settings
 
-* `Base Settings` affect the behavior of HotelX and their definition is as follows:  
-  [**Base Settings**](/hotelx/reference/inputobjects/settingsbaseinput/) 
+* **Request Settings** settings can be specified in any request using 3 differents inputs: 
+    
+    * `HotelXAccessInput`
+    
+    * `HotelXSupplierInput`
+    
+    * `HotelSettingsInput`
 
-* `Supplier Settings` affect the behavior of suppliers and their definition is as follows:  
-  [**Supplier Settings**](/hotelx/reference/inputobjects/settingsbaseinput/)  
+    (Please check our grpah specification for understand those inputs)
 
-* `Access Settings` affect the behavior of the access and their definition is as follows:  
-  [**Access Settings**](/hotelx/reference/inputobjects/settingsbaseinput/)  
+* **Default Back Office Settings** settings can be specified using our Back Office. This settings will be used as default if settings are not specified at the request.   
 
-* `Plugins Settings` affect the behavior of the plugins and their definition is as follows:  
-  [**Plugins Settings**](/hotelx/reference/inputobjects/pluginstepinput/)  
+### What settings can be specified?
 
-**Every level defines the settings' scope where they are applied**
+We have 3 different setting levels application:
+
+* `Access` If an access has settings specified, we use those settings for any request that uses this access. This settings can be specified at the request using the settings field from `HotelXAccessInput` input. 
+
+* `Supplier` If a supplier has settings specified, we use those settings for any request that uses this supplier. This settings can be specified at the request using the settings field from `HotelXSupplierInput` input. 
+
+* `Request` If a request has settings specified, we use those settings in any derived request. This settings can be specified at the request using the settings field from `HotelSettingsInput` input. 
+
+Additionally, we have 2 more levels to specify defaults settings in our Back Office. 
+
+* `Client` If a client has settings specified, we use those settings in any derived request. 
+
+* `Group` If a Group has settings specified, we use those settings in any derived request.
+
 
 ### Workflow settings execution 
 
-The settings' hierarchy is as follows:
+We have defined a order priority to select what settings use.
 
-*   **1. Access**
-*   **2. Supplier**
-*   **3. Hotel**
+For any needed field we will use the `Access` settings, if any needed field is not specified we will use the `Supplier` settings, if any needed field continues empty we will use the `Request` settings. 
+If a needed field is not specified in any input, we will search in our Back Office a valid value. Will search in `Access`, `Supplier`,`Client` and `Group` settings if is necessary. 
 
-{{<mermaid align="left">}}
+**Request settings flow**
+{{<mermaid align="left">}} 
 graph LR;
-    A[Clients] -->|REQUEST: 1| B(HotelX)
-    B[HotelX] -->|REQUEST| C(Suppliers)
-    C[Suppliers] -->|RESPONSE: 2| B(HotelX)
-    B[HotelX] -->|RESPONSE: 2| A(Client)
+    A[HotelXAccessInput] --> B(HotelSupplierInput)
+    B[HotelSupplierInput] --> C(HotelSettings)
+    C[HotelSettings] --> D(Default Settings)
 {{< /mermaid >}}
 
-{{% notice info %}}
+**Default settings flow**
+{{<mermaid align="left">}} 
+graph LR;
+    D[Default Access Settings] --> E(Default Supplier Settings)
+    E[Default Supplier Settings] --> F(Default Client Settings)
+    F[Default Client Settings] --> G(Default Group Settings)
+{{< /mermaid >}}
 
-**1 Request order priority (1. Access Settings, 2. Supplier Settings, 3. Hotel Settings)**  
-**2 Plugins settings**
-
-{{% /notice %}}
