@@ -104,11 +104,11 @@ These mutations have the same settings configuration [**Click here to see config
 
 * **Book**
 
-    * Example : [Search setting example](/hotelx/quickstart#search)
+    * Example : [Book setting example](/hotelx/quickstart#book)
 
 * **Cancel**
 
-    * Example : [Quote setting example](/hotelx/quickstart#quote)
+    * Example : [Cancel setting example](/hotelx/quickstart#cancel)
 
 ### Settings scope
 
@@ -137,14 +137,16 @@ The settings' hierarchy is as follows:
 
 *   **1. Access**
 *   **2. Supplier**
-*   **3. Hotel**
+*   **3. Request**
+*   **4. Default stored in Back Office**
 
 {{<mermaid align="left">}}
 graph LR;
-    A[Clients] -->|REQUEST: 1| B(HotelX)
-    B[HotelX] -->|REQUEST| C(Suppliers)
-    C[Suppliers] -->|RESPONSE: 2| B(HotelX)
-    B[HotelX] -->|RESPONSE: 2| A(Client)
+    A[Access Base Settings] -->|If empty fields| B(Supplier Base Settings)
+    B[Supplier Base Settings] -->|If empty fields| C(Request Settings Input)
+    C[Request Settings Input] -->|If empty fields| D(Default Access Base Settings)
+    D[Default Access Base Settings] -->|If empty fields| E(Default Supplier Base Settings)
+    E[Default Supplier Base Settings] -->|If empty fields| F(Default Settings)
 {{< /mermaid >}}
 
 {{% notice info %}}
