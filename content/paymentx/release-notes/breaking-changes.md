@@ -15,15 +15,16 @@
 
 ### Unreleased
 {{% release-notes-container type="u"%}}
-- Removal of `organization` from `PaymentXBookingInfoFilterInput`. Reason: Please use PaymentXBookingInfoCriteriaInput.  Deprecated on 2018-08-03.Expected removal on 2018-11-01.
-- Removal of `pointOfSaleCode` from `PaymentXBookingInfoFilterInput`. Reason: Please use PaymentXBookingInfoCriteriaInput.  Deprecated on 2018-08-03.Expected removal on 2018-11-01.
-- Removal of `bookingReference` from `PaymentXBookingInfoFilterInput`. Reason: Please use PaymentXBookingInfoCriteriaInput.  Deprecated on 2018-08-03.Expected removal on 2018-11-01.
+- Removal of `error` from `Group`. Reason: Sustituted by adviseMessage.  Deprecated on 2018-08-01.Expected removal on 2018-10-30.
 {{% / release-notes-container %}}
 ### 2018-08-03
 {{% release-notes-container type="d"%}}
 - Deprecated `pointOfSaleCode` from `PaymentXBookingInfoFilterInput`. Reason: Please use PaymentXBookingInfoCriteriaInput. Finally removed on 2018-07-31 .
 - Deprecated `organization` from `PaymentXBookingInfoFilterInput`. Reason: Please use PaymentXBookingInfoCriteriaInput. Finally removed on 2018-07-31 .
-- Deprecated `bookingReference` from `PaymentXBookingInfoFilterInput`. Reason: Please use PaymentXBookingInfoCriteriaInput. Expected removal on 2018-11-01 .
+{{% / release-notes-container %}}
+### 2018-08-01
+{{% release-notes-container type="d"%}}
+- Deprecated `error` from `Group`. Reason: Sustituted by adviseMessage. Expected removal on 2018-10-30 .
 {{% / release-notes-container %}}
 ### 2018-07-31
 {{% release-notes-container type="r"%}}

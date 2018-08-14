@@ -15,6 +15,8 @@
 
 ### Unreleased
 {{% release-notes-container type="u"%}}
+- Removal of `useContext` from `HotelSettingsInput`. Reason: Redundant..  Deprecated on 2017-12-12.**To be removed soon**.
+- Removal of `connectUser` from `HotelSettingsInput`. Reason: Redundant..  Deprecated on 2018-03-19.**To be removed soon**.
 - Removal of `distribute` from `AddOns`. Reason: You can find it in distribution AddOn.  Deprecated on 2018-05-21.Expected removal on 2018-08-19.
 {{% / release-notes-container %}}
 ### 2018-07-26
