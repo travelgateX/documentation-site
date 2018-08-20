@@ -14,6 +14,134 @@ The GraphQL schema change log is a list of recent and upcoming changes to our Gr
 
 Check out this list of new releases and changes applied on the **TravelgateX GraphQL API**.
 
+## 2018-08-14
+
+🛑  Type for argument `input` on field `PaymentXMutation.storeCard` changed from `PaymentXStoreCardInput!` to `PaymentXStoredCardInput!`
+
+🛑  Field `PaymentXMutation.storeCard` changed type from `StoredCard!` to `PaymentXStoredCard!`
+
+🛑  Field `deleteCard` was removed from object type `PaymentXMutation`
+
+🛑  Field `PaymentXQuery.vaultStatusService` changed type from `ServiceStatus!` to `AdviseMessage!`
+
+🛑  Field `cards` was removed from object type `PaymentXQuery`
+
+🛑  Type `PaymentXBookingInfoDeleteInput` was removed
+
+🛑  Type `PointOfSaleInput` was removed
+
+🛑  Type `PaymentXBookingInfoInput` was removed
+
+🛑  Type `PaymentXStoreCardInput` was removed
+
+🛑  Type `PaymentXBookingInfoCriteriaInput` was removed
+
+🛑  Type `PaymentXBookingInfoFilterInput` was removed
+
+🛑  Type `ExpireDate` was removed
+
+🛑  Type `PaymentCard` was removed
+
+🛑  Type `PaymentXBookingInfo` was removed
+
+🛑  Type `StoredCardData` was removed
+
+🛑  Type `StoredCard` was removed
+
+🛑  Type `StoredCardEdge` was removed
+
+🛑  Type `StoredCardConnection` was removed
+
+✅  Field `deleteStoredCard` was added to object type `PaymentXMutation`
+
+✅  Field `PaymentXQuery.vaultStatusService` description changed from `Returns status of the search service.` to `Returns status of the vault service.`
+
+✅  Field `storedCard` was added to object type `PaymentXQuery`
+
+✅  Field `allStoredCards` was added to object type `PaymentXQuery`
+
+✅  Input field `countries` was added to input object type `HotelXHotelListInput`
+
+✅  Type `PaymentXStoredCardInput` was added
+
+✅  Type `PaymentXStoredCardIDInput` was added
+
+✅  Type `PaymentXStoredCardFilterInput` was added
+
+✅  Type `PaymentXExpireDate` was added
+
+✅  Type `PaymentXStoredCardData` was added
+
+✅  Type `PaymentXStoredCard` was added
+
+✅  Type `PaymentXStoredCardEdge` was added
+
+✅  Type `PaymentXStoredCardConnection` was added
+
+
+## 2018-08-13
+
+🛑  Field `ProfileData.group` changed type from `Group!` to `Group`
+
+🛑  Field `ClientData.group` changed type from `Group!` to `Group`
+
+🛑  Argument `type: GroupType` was removed from field `GroupData.managedGroups`
+
+🛑  Field `GroupData.managedGroups` changed type from `GroupConnection` to `ManagedGroupConnection`
+
+🛑  Field `SupplierData.groups` changed type from `GroupConnection!` to `GroupConnection`
+
+🛑  Field `AccessData.groups` changed type from `GroupConnection!` to `GroupConnection`
+
+✅  Argument `role: [ID!]` added to field `GroupData.managedGroups`
+
+✅  Argument `resource: [ID!]` added to field `GroupData.managedGroups`
+
+✅  Argument `api: [ID!]` added to field `GroupData.managedGroups`
+
+✅  Argument `group: [ID!]` added to field `GroupData.managedGroups`
+
+✅  Field `GroupData.managedGroups` description changed from `Responses all groups in its group's childrens (hierarchically),` to `Responses all managed groups by this group.`
+
+✅  Type `ManagedGroupData` was added
+
+✅  Type `ManagedGroup` was added
+
+✅  Type `ManagedGroupEdge` was added
+
+✅  Type `ManagedGroupConnection` was added
+
+## 2018-08-08
+
+✅  Input field `currency` was added to input object type `SettingsBaseInput`
+
+✅  Field `parents` was added to object type `GroupData`
+
+✅  Deprecation reason on field `Group.error` has changed from `` to `deprecated from 2018-08-01. Sustituted by adviseMessage`
+
+✅  Field `adviseMessage` was added to object type `Group`
+
+✅  Field `group` was added to object type `ProfileData`
+
+✅  Field `group` was added to object type `ClientData`
+
+✅  Field `groups` was added to object type `SupplierData`
+
+✅  Field `groups` was added to object type `AccessData`
+
+## 2018-07-31
+
+✅  Field `StoredCard.adviseMessage` description changed from `List of advise messages.` to `List of messages`
+
+✅  Deprecation reason on field `AddOns.distribute` has changed from `You can find it in distribution AddOn` to `deprecated from 2018-05-21. You can find it in distribution AddOn`
+
+✅  Field `PointOfSale.adviseMessage` description changed from `List of messages` to `List of advise messages.`
+
+✅  Field `entities` was added to object type `AdminQuery`
+
+✅  Type `EntityFilter` was added
+
+
 ## 2018-07-26 {#20180726}
 
 ⚠️  Enum value `ORG` was added to enum `GroupTypeInput`

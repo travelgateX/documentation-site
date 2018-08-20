@@ -1,6 +1,7 @@
 +++
 title = "PaymentX"
-pagetitle = "PaymentX: Under construction"
+
+pagetitle = "PaymentX"
 description = ""
 weight = 5
 alwaysopen = false
