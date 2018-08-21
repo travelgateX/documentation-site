@@ -14,6 +14,62 @@ The GraphQL schema change log is a list of recent and upcoming changes to our Gr
 
 Check out this list of new releases and changes applied on the **TravelgateX GraphQL API**.
 
+## 2018-08-22
+
+🛑  `Text` kind changed from `INTERFACE` to `OBJECT`
+
+🛑  `AdviseMessage` kind changed from `INTERFACE` to `OBJECT`
+
+✅  Input field `owner` was added to input object type `UpdateProfileInput`
+
+✅  Input field `owner` was added to input object type `CreateProfileInput`
+
+✅  Input field `owner` was added to input object type `UpdateClientInput`
+
+✅  Input field `owner` was added to input object type `CreateClientInput`
+
+✅  Input field `owner` was added to input object type `AccessInput`
+
+✅  Field `parents` was added to object type `OrganizationData`
+
+✅  Field `descendents` was added to object type `OrganizationData`
+
+✅  Input field `owner` was added to input object type `EntityFilter`
+
+✅  Input field `owner` was added to input object type `ProfileFilter`
+
+✅  Field `owner` was added to object type `ProfileData`
+
+✅  Input field `owner` was added to input object type `PointOfSaleFilter`
+
+✅  Field `owner` was added to object type `PointOfSaleData`
+
+✅  Input field `owner` was added to input object type `ClientFilter`
+
+✅  Input field `owner` was added to input object type `SupplierFilter`
+
+✅  Input field `owner` was added to input object type `AccessFilter`
+
+✅  Field `owner` was added to object type `ClientData`
+
+✅  Field `GroupData.parents` description changed from `Recursive call with all ascendant parents tree` to `Response all parents groups nodes for this group (nom-hierarchically)`
+
+✅  Field `descendents` was added to object type `GroupData`
+
+✅  Field `owner` was added to object type `SupplierData`
+
+✅  Field `isShedulerActive` was added to object type `AccessData`
+
+✅  Field `owner` was added to object type `AccessData`
+
+✅  Type `HotelXFilterSearchInput` was added
+
+✅  Type `HotelXFilterPluginTypeInput` was added
+
+✅  Type `HotelXPluginFilterInput` was added
+
+✅  Type `HotelXFilterInput` was added
+
 ## 2018-08-14
 
 🛑  Type for argument `input` on field `PaymentXMutation.storeCard` changed from `PaymentXStoreCardInput!` to `PaymentXStoredCardInput!`
