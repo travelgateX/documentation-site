@@ -104,7 +104,7 @@ These mutations have the same settings configuration [**Click here to see config
 
 * **Book**
 
-    * Example : [Search setting example](/hotelx/quickstart#search)
+    * Example : [Book setting example](/hotelx/quickstart#book)
 
 * **Cancel**
 
