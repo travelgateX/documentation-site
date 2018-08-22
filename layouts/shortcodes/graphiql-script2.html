@@ -1,31 +1,69 @@
 <script>
-  const apiKeyJO = "q8ggxpoVDW76Kw918hwnnRvxlZmAP2QZ";
-  const apiKeyDC = "64780338-49c8-4439-7c7d-d03c2033b145";
+  const token = {{ $.Page.Params.ak }};
+  const gists = {{ $.Page.Params.gists }};
 
   $(document).ready(main);
   function main() {
-    const gists = {{$.Page.Params.gists}};
-    console.log(gists);
-    // "https://gist.githubusercontent.com/tgx-bot/6972ecae51e849fe8c49305bf0032dfe/raw\"
-    // const queries = JSON.parse(q);
-    // console.log(queries);
-    for (const q of queries) {
-      // <li class="nav-item">
-      //       <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home"
-      //           aria-selected="true">Home</a>
-      //   </li>
+    // console.log(gists);
+    const tabsText = $('#tabsText').text();
+    // console.log(tabsText);
 
-      // <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">...</div>
-      // iterateQueries(q)
+    const promises = []
+
+    for (const gist of gists) {
+      // console.log(gist);
+      if (gist.g) {
+        //Añadir tab
+        const tabLI = `<li class="nav-item">
+          <a class="nav-link" data-toggle="tab" href="#${gist.g}" role="tab" aria-controls="home" aria-selected="true">TAB</a>
+       </li>`;
+        $('#tabMenu').append(tabLI);
+        // Añadir cuerpo del tab de los gist
+
+        var substring = tabsText.indexOf(gist.g) !== -1 ? tabsText.substring(
+          tabsText.indexOf(gist.g) + 1 + gist.g.length,
+          tabsText.lastIndexOf(gist.g) - 1
+        ) : '';
+
+
+
+          const inner = `<p>${substring.trim() ? substring.split('\n').join('<br>') : 'Cocksucker'}</p>`;
+          const tab = `<div class="tab-pane fade" id="${gist.g}" role="tabpanel">${inner}
+          <div id='{{ .Get "tag" }}' class='graphiql-display'>
+            <div class="pulse-holder">
+                <div class="pulse"></div>
+                <img src="/images/iconX.png">
+            </div>
+          </div>
+        </div>`;
+          $('#tabContent').append(tab);
+      
+
+        console.log('bucle');
+        promises.push(iterateQueries(gist.g));
+      }
+
+
+
     }
+
+    
+  Promise.all(promises).then(_ => {
+    setTimeout(_ => { $('#tabMenu li:first-child > a').tab('show') }, 0)
+    console.log('Hola');
+  });
+
   }
 
-  function iterateQueries(q) {
-    if(!q.gist.includes('http')) return;
-    $.get(q.gist, function (data) {
-      q.data = data;
-      renderGist(q);
-    });
+  function iterateQueries(gist) {
+    return new Promise(resolve => {
+      $.get(`https://gist.githubusercontent.com/tgx-bot/${gist}/raw`, function (data) {
+        // q.data = data;
+        renderGist({ id: gist, data: data });
+        resolve();
+      });
+    })
+
   }
 
   function renderGist(q) {
@@ -100,7 +138,6 @@
     // use fetch, and could instead implement graphQLFetcher however you like,
     // as long as it returns a Promise or Observable.
     function graphQLFetcher(graphQLParams) {
-      const token = q.apikey;
       //console.log('in graphQLFetcher')
       // This example expects a GraphQL server at the path /graphql.
       // Change this to point wherever you host your GraphQL server.
@@ -139,9 +176,9 @@
         onEditVariables: onEditVariables,
         onEditOperationName: onEditOperationName
       }),
-      document.getElementById(q.divname),
+      document.getElementById(q.id),
       _ => {
-        const element = $(`#${q.divname}`);
+        const element = $(`#${q.id}`);
         const button = $(element).find('button.execute-button')[0]
         $(element).append(button);
       }
