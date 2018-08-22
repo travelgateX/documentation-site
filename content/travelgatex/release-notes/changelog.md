@@ -21,13 +21,22 @@ To make it easier for users and contributors to see precisely what notable chang
 {{% release-notes-container type="a"%}}
 - Entity's Owner and its relates Filters, queries and mutations.
 - `parents` and `descendents` queries for `Group` and `Organization`.
+- Old connect form migrated to TravelgateX
+- Clients and suppliers CRUD
 {{% /release-notes-container %}}
 
 {{% release-notes-container type="f"%}}
+- Corrected change of Payment's structure 
 - Basic Audit by request using header `TGX-Audit: 1` See more: [TGX Headers page](/travelgatex/concepts/request-headers)
 {{% /release-notes-container %}}
 
 ## 2018-08-14
+
+
+{{% release-notes-container type="a"%}}
+- New section for entities in IAM
+- Accesses CRUD
+{{% /release-notes-container %}}
 
 {{% release-notes-container type="c"%}}
 - [GraphQL Schema updated.](/travelgatex/release-notes/graphql-schema-changes/#2018-08-14)
@@ -68,6 +77,7 @@ To make it easier for users and contributors to see precisely what notable chang
 ## 2018-07-31
 
 {{% release-notes-container type="c"%}}
+- Improvements in the organization selector and modal.
 - [GraphQL Schema updated.](/travelgatex/release-notes/graphql-schema-changes/#2018-07-31)
 {{% /release-notes-container %}}
 
@@ -77,6 +87,10 @@ To make it easier for users and contributors to see precisely what notable chang
 {{% /release-notes-container %}}
 
 {{% release-notes-container type="a"%}}
+
+- Added columns to IAM members user table
+- Added option to assign roles through templates of macro roles to IAM members
+- "WHOLESALER" seller added to filter list of partners
 - Delete member mutation (Delete Apikeys or uninvite user emails)
 - Public deleteGroup function and made it public
 {{% /release-notes-container %}}
