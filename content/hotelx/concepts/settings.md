@@ -10,25 +10,57 @@ alwaysopen = false
 On this page you will learn more about **settings** in HotelX. 
 
 ### What are settings?
+Settings are the common configuration that will be used in order to build the request to the provider/s.
 
-Settings are loaded by default in our Back Office and determine the behavior of Hotelx by default.
+There are two kind of settings, overridable and partialy overridable. You can find the partialy overridable settings in the first level of settings and are known as HotelX_Settings. These settings are composed by some non overridable settings such as "group" and "testMode", some overridable global settings such as "timeout", "auditTransactions", etc, and some overridable baseSettings such as "businessRules".
+
+We have various levels of settings that can be combined in order to build customized settings.
 
 This link shows how are the different setting structures by level: 
 
 [HotelX Settings](/hotelx/reference/inputobjects/hotelsettingsinput/)
 
 ```
-settings: {
-        suppliers: {code: "HOTELTEST"}, 
-        plugins: 
-                {step: REQUEST, 
-                pluginsType: 
-                [{type: POST_STEP, name: "search_by_destination", 
-                parameters: [{key: "accessID", value: "422"}]}]}, 
-        businessRules: null, timeout: 24700, context: "HOTELTEST", 
-        client: "Demo_Client", 
-        testMode: true
-    }
+"settings": {
+        "group": "HotelX_test",
+        "client": "xtg",
+        "context": "HOTELTEST",
+        "testMode": true,
+        "timeout": 18000,
+        "plugins": [
+                {
+                        "step": "REQUEST",
+                        "pluginsType": [
+                                {
+                                        "type": "CURRENCY_CONVERSION",
+                                        "name": "plugin_name",
+                                        "parameters": [
+                                                {
+                                                        "key": "key",
+                                                        "value": "value"
+                                                }
+                                        ]
+                                }
+                        ]
+                }
+        ],
+        "suppliers": [
+                {
+                        "code": "HOTELTEST",
+                        "settings": {
+                                "auditTransactions": true
+                        },
+                        "accesses": [
+                                {
+                                        "accessId": "1",
+                                        "settings": {
+                                                "currency": "EUR"
+                                        }
+                                }
+                        ]
+                }
+        ]
+}
 ```
 
 [Base Settings](/hotelx/reference/inputobjects/basesettingsinput/)
