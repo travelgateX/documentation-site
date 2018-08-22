@@ -27,6 +27,7 @@ To make it easier for users and contributors to see precisely what notable chang
 {{% release-notes-container type="f"%}}
 - Basic Audit by request using header `TGX-Audit: 1` See more: [TGX Headers page](/travelgatex/concepts/request-headers)
 {{% /release-notes-container %}}
+
 ## 2018-08-14
 
 {{% release-notes-container type="c"%}}
