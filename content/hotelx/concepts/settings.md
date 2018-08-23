@@ -14,103 +14,24 @@ Settings are the common configuration that will be used in order to build the re
 
 There are two kind of settings, overridable and partialy overridable. You can find the partialy overridable settings in the first level of settings and are known as HotelX_Settings. These settings are composed by some non overridable settings such as "group" and "testMode", some overridable global settings such as "timeout", "auditTransactions", etc, and some overridable baseSettings such as "businessRules".
 
-We have various levels of settings that can be combined in order to build customized settings.
+We have various levels of settings that can be combined in order to build customized settings. The order of heritage of settings is:
 
-This link shows how are the different setting structures by level: 
+The type of settings for each level is:
 
-[HotelX Settings](/hotelx/reference/inputobjects/hotelsettingsinput/)
+0 - Criteria common settings fields (currency, auditTransactions, businessRules, etc)
+1 - Access Settings [Base Settings]
+2 - Supplier Settings [Base Settings]
+3 - Query Settings   [HotelX Settings]
+4 - DB Access Settings [Base Settings]
+5 - DB SupplierSettings [Base Settings]
+6 - DB Client Settings [Default Settings]
+7 - DB Group Settings [Default Settings]
 
-```
-"settings": {
-        "group": "HotelX_test",
-        "client": "xtg",
-        "context": "HOTELTEST",
-        "testMode": true,
-        "timeout": 18000,
-        "plugins": [
-                {
-                        "step": "REQUEST",
-                        "pluginsType": [
-                                {
-                                        "type": "CURRENCY_CONVERSION",
-                                        "name": "plugin_name",
-                                        "parameters": [
-                                                {
-                                                        "key": "key",
-                                                        "value": "value"
-                                                }
-                                        ]
-                                }
-                        ]
-                }
-        ],
-        "suppliers": [
-                {
-                        "code": "HOTELTEST",
-                        "settings": {
-                                "auditTransactions": true
-                        },
-                        "accesses": [
-                                {
-                                        "accessId": "1",
-                                        "settings": {
-                                                "currency": "EUR"
-                                        }
-                                }
-                        ]
-                }
-        ]
-}
-```
+Any field that is empty in one level, is filled with the value of the next level.
 
-[Base Settings](/hotelx/reference/inputobjects/basesettingsinput/)
-
-```
-settings: {
-    timeout: 300, 
-    auditTransactions: true, 
-    businessRules: 
-      {
-        optionsQuota: 500,
-        businessRulesType: CHEAPER_AMOUNT
-      }  
-}
-```
-
-[Default Settings](/hotelx/reference/inputobjects/defaultsettingsinput/)
-
-```
-settings: {
-    connectUser: "test"
-    context: "test"
-    language: "es"
-    currency: "EUR"
-    nationality: "ES"
-    market: "es"
-    timeouts: 300
-    businessRules: 
-      {
-        optionsQuota: 500,
-        businessRulesType: CHEAPER_AMOUNT
-      }  
-}
-```
-
-[Default Settings Business Rules](/hotelx/reference/inputobjects/businessrulesinput/)
-
-```
-businessRules{
-    businessRules: 
-        {
-            optionsQuota: 500,
-            businessRulesType: CHEAPER_AMOUNT
-        }  
-}
-``` 
+An special case are input fields specified in Criteria, if one field of criteria are in settings, the value of criteria are the most significant. It is mandatory that after the settings heritage flow, each field of DefaultSettings has to be filled, because this settings will be sent to supplier.
 
 ### Where can Settings be applied?
-
-It is possible to overwrite settings behavior in each request made by the client.
 
 Settings can be applied in the following operations:
 
@@ -141,61 +62,87 @@ These mutations have the same settings configuration [**Click here to see config
 * **Cancel**
 
     * Example : [Quote setting example](/hotelx/quickstart#quote)
+    
+In case that you want to modify any field of DB Setting, please contact with our support team.
+Above you can find an example of each type of settings: 
 
-### Settings scope
+[HotelX Settings](/hotelx/reference/inputobjects/hotelsettingsinput/)
+Query/Mutation settings
+```
+"settings": {
+ "group": "HotelX_test",
+ "client": "xtg",
+ "context": "HOTELTEST",
+ "testMode": true,
+ "timeout": 18000,
+ "language":"es",
+ "suppliers": [
+  {
+   "code": "HOTELTEST",
+   "settings": {
+    "auditTransactions": true
+   },
+   "accesses": [
+    {
+     "accessId": "1",
+     "settings": {
+      "currency": "EUR"
+     }
+    }
+   ]
+  }
+ ]
+}
+```
 
-We have 5 different setting levels application:
+[Base Settings](/hotelx/reference/inputobjects/basesettingsinput/)
+Access or supplier settings, it don't care if is from Query or from database
+```
+"settings": {
+    "timeout": 300, 
+    "auditTransactions": true, 
+    "businessRules": 
+      {
+        "optionsQuota": 500,
+        "businessRulesType": "CHEAPER_AMOUNT"
+      }  
+}
+```
 
-* `HotelX Settings` affect the behavior of HotelX and their definition is as follows:  
-  [**Hotelx Settings**](/hotelx/reference/inputobjects/hotelbaseinput/)  
+[Default Settings](/hotelx/reference/inputobjects/defaultsettingsinput/)
+Group or client database settings
+```
+"settings": {
+  "context": "CONTEXT",
+  "client": "client",
+  "timeout": {
+    "search": 18000, 
+    "quote": 25000, 
+    "book": 180000
+  }, 
+  "language": "en", 
+  "currency": "EUR", 
+  "nationality": "ES", 
+  "market": "ES", 
+  "businessRules": {
+     "optionsQuota": 0, 
+     "businessRulesType": "CHEAPER_AMOUNT"
+  }
+}
+```
 
-* `Base Settings` affect the behavior of HotelX and their definition is as follows:  
-  [**Base Settings**](/hotelx/reference/inputobjects/settingsbaseinput/) 
+If we send a Query with the previous HotelX Settings, the configuration that will be sent to the supplier is:
 
-* `Supplier Settings` affect the behavior of suppliers and their definition is as follows:  
-  [**Supplier Settings**](/hotelx/reference/inputobjects/settingsbaseinput/)  
+Context: "CONTEXT"                                      //From DB Default Settings
+Language: "en"                                          //From HotelX Query/Mutation Settings
+Currency: "EUR"                                         //From Access Settings in Query/Mutation (Base Settings)
+Nationality: "ES"                                       //From DB Default Settings
+Market: "ES"                                            //From DB Default Settings
+Timeout: 18000                                          //From HotelX Query/Mutation Settings 
+AuditTransactions: true                                 //From Supplier Settings in Query/Mutation
+BusinessRules/OptionQuota: 0                            //From Access DB Settings (Base Settings)
+BusinessRules/BusinessRulesType: "CHEAPER_AMOUNT"       //From Access DB Settings (Base Settings)
 
-* `Access Settings` affect the behavior of the access and their definition is as follows:  
-  [**Access Settings**](/hotelx/reference/inputobjects/settingsbaseinput/)  
+### Default Plugins
 
-* `Plugins Settings` affect the behavior of the plugins and their definition is as follows:  
-  [**Plugins Settings**](/hotelx/reference/inputobjects/pluginstepinput/)  
-
-**Every level defines the settings' scope where they are applied**
-
-### Workflow settings execution 
-
-The settings' hierarchy is as follows:
-
-*   **1. Access**
-*   **2. Supplier**
-*   **3. Hotel**
-
-{{<mermaid align="center">}}
-graph LR;
-    A[Query Access Settings] -->B{Has Empty Fields}
-    B --> C[Query Supplier Settings]
-    C --> D{Has Empty Fields}
-    D --> E[Query General Settings]
-    E --> F{Has Empty Fields}
-    F --> G[DB Access Settings]  
-    G -->H{Has Empty Fields}
-    H --> I[DB Access Settings]
-    I --> J[]   
-{{< /mermaid >}}
-
-
-{{<mermaid align="center">}}
-graph LR;
-    A[Clients] -->|REQUEST: 1| B(HotelX)
-    B[HotelX] -->|REQUEST| C(Suppliers)
-    C[Suppliers] -->|RESPONSE: 2| B(HotelX)
-    B[HotelX] -->|RESPONSE: 2| A(Client)
-{{< /mermaid >}}
-
-{{% notice info %}}
-
-**1 Request order priority (1. Access Settings, 2. Supplier Settings, 3. Hotel Settings)**  
-**2 Plugins settings**
-
-{{% /notice %}}
+How can you see
