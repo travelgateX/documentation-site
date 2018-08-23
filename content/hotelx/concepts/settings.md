@@ -171,7 +171,21 @@ The settings' hierarchy is as follows:
 *   **2. Supplier**
 *   **3. Hotel**
 
-{{<mermaid align="left">}}
+{{<mermaid align="center">}}
+graph LR;
+    A[Query Access Settings] -->B{Has Empty Fields}
+    B --> C[Query Supplier Settings]
+    C --> D{Has Empty Fields}
+    D --> E[Query General Settings]
+    E --> F{Has Empty Fields}
+    F --> G[DB Access Settings]  
+    G -->H{Has Empty Fields}
+    H --> I[DB Access Settings]
+    I --> J[]   
+{{< /mermaid >}}
+
+
+{{<mermaid align="center">}}
 graph LR;
     A[Clients] -->|REQUEST: 1| B(HotelX)
     B[HotelX] -->|REQUEST| C(Suppliers)
