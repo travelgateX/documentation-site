@@ -37,13 +37,28 @@ The supplier order file should be in the below format:
 **Simple value field**
 ```csv
 ruleId,supplierCodes
-CE1,DIN
-CE2,DIN
+1,BAR
+2,RIU
+3,SEN
+4,HOBV2
+5,GTA
+6,TOU
+7,NWJ
+8,OLV2
+9,EPL
+
 ```
 
 **Multivalue field**
 ```csv
 ruleId,supplierCodes
-CE1,DIN;HOB;JMB
-CE2,DIN
+1,BAR;DIN;HOB;JMB
+2,RIU
+3,SEN
+4,HOBV2
+5,GTA
+6,TOU
+7,NWJ
+8,OLV2
+9,EPL
 ```

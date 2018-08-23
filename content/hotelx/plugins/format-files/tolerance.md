@@ -70,13 +70,20 @@ The preference file should be in the below format:
 **Simple value field**
 ```csv
 ruleId,clientTokens,supplierCodes,notSupplierCodes,bookingDateFrom,bookingDateTo,startDateFrom,startDateTo,hotelCodes,notHotelCodes,chainCodes,notChainCodes,destinationCodes,notDestinationCodes,percentage,filter_competitors
-CE1,XXX,DIN,,,,2018-04-01,2018-10-31,3846,,,,,,18.50,AA
-CE2,YYY,DIN,,,,,,3846,,,,,,15.00,BB
+T1,,RIU,,,,,,,,,,,,999.00,TRUE
+T3,,BAR,,,,,,,,,,,,999.00,FALSE
+T4,,SEN,,,,,,,,,,,,999.00,FALSE
+T7,,RHO,,,,,,,,,,,,10.0,FALSE
+T9,subcanal-EROSKI_B2B,INT,,,,,,,,,,,BTEMX,5.0,TRUE
 ```
 
 **Multivalue field**
 ```csv
 ruleId,clientTokens,supplierCodes,notSupplierCodes,bookingDateFrom,bookingDateTo,startDateFrom,startDateTo,hotelCodes,notHotelCodes,chainCodes,notChainCodes,destinationCodes,notDestinationCodes,percentage,filter_competitors
-CE1,XXX,DIN;HOB;JMB,,,,2018-04-01,2018-10-31,3846,,,,,,18.50,XX
-CE2,YYY,DIN,,,,,,3846,,,,,,15.00,XX;VV
+T1,,RIU,,,,,,,,,,,,999.00,TRUE
+T3,,BAR,,,,,,,,,,,,999.00,FALSE
+T4,,SEN,,,,,,,,,,,,999.00,FALSE
+T7,,RHO,,,,,,,,,,,,10.0,FALSE
+T9,subcanal-EROSKI_B2B,INT,,,,,,,,,,,BTEMX,5.0,TRUE
+T10,,GTA;HOBV2;TOU,,,,,,,,,,ACDMS,,5.5,FALSE
 ```
