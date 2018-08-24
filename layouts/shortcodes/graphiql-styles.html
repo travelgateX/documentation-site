@@ -9,28 +9,46 @@
     position: initial;
   }
 
-  #tabMenu>li {
-    padding: 3px 10px 3px 10px;
+  ul.tabs {
+    border-bottom: 1px solid #dee2e6;
   }
 
-  .tab-pannel-nav>li {
-    padding: 1px 8px 1px 8px;
+  li.tab {
+    margin-bottom: -6px;
   }
 
-  li.active-tab {
-    background: red;
-  }
-  li.active-inner-tab {
-    background: blue;
+  li.tab,
+  li.tab>label {
+    cursor: pointer;
   }
 
-  .tab-panel, .display {
+  li.tab>label {
+    border: 1px solid transparent;
+    border-top-left-radius: .25rem;
+    border-top-right-radius: .25rem;
+    display: block;
+    padding: .5rem 1rem;
+  }
+
+  li.tab:hover>label {
+    border-color: #e9ecef #e9ecef #dee2e6;
+  }
+
+  li.tab.active>label {
+    color: #495057;
+    background-color: #fff;
+    border-color: #dee2e6 #dee2e6 #fff;
+  }
+
+  .tab-panel,
+  .display {
     transform: scale(0);
     position: absolute;
   }
 
 
-  .active-tab-panel, .display.active {
+  .active-tab-panel,
+  .display.active {
     transform: scale(1) !important;
     position: initial !important;
   }
@@ -39,6 +57,11 @@
     position: relative;
     z-index: 0;
     margin: 3.3rem 0 3.3rem 0;
+  }
+
+  .explanation {
+    margin-left: 2rem;
+    margin-bottom: 1.5rem;
   }
 
   div.graphiql.display>button {

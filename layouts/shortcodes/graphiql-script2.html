@@ -4,17 +4,14 @@
 
   $(document).ready(main);
   function main() {
-    // console.log(gists);
     const tabsText = $('#tabsText').text();
-    // console.log(tabsText);
 
     const promises = []
 
     for (const gist of gists) {
-      // console.log(gist);
       if (gist.g) {
         //Añadir tab
-        const tabLI = `<li>
+        const tabLI = `<li class="tab">
           <label for='${gist.g}'>TAB<\/label>
        <\/li>`;
         $('#tabMenu').append(tabLI);
@@ -29,16 +26,14 @@
 
         const pannelTabs = [];
         for (const option of gist.o) {
-          pannelTabs.push(`<li>
-          <label for='i'>${option}<\/label>
-       <\/li>`)
+          pannelTabs.push(`<li class="tab"><label>${option}<\/label><\/li>`)
         }
 
         const tab = `<div id='${gist.g}' class='tab-panel'>
           <div class='explanation'>${text}<\/div>
-          <ul class='tab-pannel-nav nav'>${pannelTabs.join('')}<\/ul>
+          <ul class='tab-pannel-nav nav tabs'>${pannelTabs.join('')}<\/ul>
           <div class="general-display">
-            ${(gist.o || []).includes('graphql') ? "<div class='graphiql display'><\/div>" : ""}
+            ${(gist.o || []).includes('graphiql') ? "<div class='graphiql display'><\/div>" : ""}
             ${(gist.o || []).includes('curl') ? "<div class='curl display'><\/div>" : ""}
             ${(gist.o || []).includes('other') ? "<div class='other display'><\/div>" : ""}
           <\/div>
@@ -49,52 +44,60 @@
         console.log('Inside loop');
         promises.push(iterateQueries(gist.g));
       }
-
-
-
     }
 
-
     Promise.all(promises).then(_ => {
+      //Activate first tab of outer tabs
       $.each($('#tabContent > div'), (i, elem) => {
         const button = $(elem).find('button.execute-button').first();
         $(elem).find('.graphiql.display').first().append(button);
       })
-      $('#tabMenu > li > label').first().parent().toggleClass('active-tab');
+      $('#tabMenu > li > label').first().parent().toggleClass('active');
       $('#tabContent > div').first().toggleClass('active-tab-panel');
 
-
-      //Activate first tab of inner tabs
+      //Activate first tab of inner tabs and add onclick element to them
       $.each($('.general-display'), (i, elem) => {
-        $(elem).children().first().toggleClass('active-tab-panel');
+        $(elem).children().first().toggleClass('active');
       });
-      $('.tab-pannel-nav li').first().toggleClass('active-inner-tab');
+      $.each($('.tab-pannel-nav'), (i, elem) => {
+        $(elem).children().on('click', function () {
+          $(this).siblings().removeClass('active');
+          $(this).toggleClass('active');
 
+          const tabClass = '.' + $(this).children().first().text();
+          console.log(tabClass);
+          const tab = $(this).parent().next().children(tabClass).first();
+          tab.siblings().removeClass('active');
+          tab.toggleClass('active');
+        });
+        $(elem).children().first().toggleClass('active');
+      });
 
+      // Add onclick event to outer tabs to allow navigation between them
       $('#tabMenu > li > label').on('click', function () {
-        $(this).parent().siblings().removeClass('active-tab');
-        $(this).parent().toggleClass('active-tab');
+        $(this).parent().siblings().removeClass('active');
+        $(this).parent().toggleClass('active');
         const tab = $('#' + $(this).attr('for'));
         tab.siblings().removeClass('active-tab-panel');
         tab.toggleClass('active-tab-panel');
       });
+
+      // Hides loading gif and shows tabs
       $('#tab-holder').addClass('show-tabs');
       $('#pulse-holder').hide();
 
       console.log('Promise fulfilled');
     });
-
   }
 
   function iterateQueries(gist) {
     return new Promise(resolve => {
-      $.get("https://gist.githubusercontent.com/tgx-bot/"+gist+"/raw", function (data) {
+      $.get("https://gist.githubusercontent.com/tgx-bot/" + gist + "/raw", function (data) {
         // q.data = data;
         renderGist({ id: gist, data: data });
         resolve();
       });
     })
-
   }
 
   function renderGist(q) {
@@ -141,7 +144,6 @@
 
     function onEditQuery(newQuery) {
       parameters.query = newQuery;
-      console.log(parameters.query);
       updateURL();
     }
 
