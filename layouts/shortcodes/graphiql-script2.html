@@ -14,9 +14,9 @@
       // console.log(gist);
       if (gist.g) {
         //Añadir tab
-        const tabLI = `<li class="nav-item">
-          <a class="nav-link" data-toggle="tab" href="#${gist.g}" role="tab" aria-controls="home" aria-selected="true">TAB</a>
-       </li>`;
+        const tabLI = `<li>
+          <label for='${gist.g}'>TAB<\/label>
+       <\/li>`;
         $('#tabMenu').append(tabLI);
         // Añadir cuerpo del tab de los gist
 
@@ -25,21 +25,28 @@
           tabsText.lastIndexOf(gist.g) - 1
         ) : '';
 
+        const text = `<p>${substring.trim() ? substring.split('\n').join('<br>') : 'Hola'}<\/p>`;
+
+        const pannelTabs = [];
+        for (const option of gist.o) {
+          pannelTabs.push(`<li>
+          <label for='i'>${option}<\/label>
+       <\/li>`)
+        }
+
+        const tab = `<div id='${gist.g}' class='tab-panel'>
+          <div class='explanation'>${text}<\/div>
+          <ul class='tab-pannel-nav nav'>${pannelTabs.join('')}<\/ul>
+          <div class="general-display">
+            ${(gist.o || []).includes('graphql') ? "<div class='graphiql display'><\/div>" : ""}
+            ${(gist.o || []).includes('curl') ? "<div class='curl display'><\/div>" : ""}
+            ${(gist.o || []).includes('other') ? "<div class='other display'><\/div>" : ""}
+          <\/div>
+        <\/div>`;
+        $('#tabContent').append(tab);
 
 
-          const inner = `<p>${substring.trim() ? substring.split('\n').join('<br>') : 'Cocksucker'}</p>`;
-          const tab = `<div class="tab-pane fade" id="${gist.g}" role="tabpanel">${inner}
-          <div id='{{ .Get "tag" }}' class='graphiql-display'>
-            <div class="pulse-holder">
-                <div class="pulse"></div>
-                <img src="/images/iconX.png">
-            </div>
-          </div>
-        </div>`;
-          $('#tabContent').append(tab);
-      
-
-        console.log('bucle');
+        console.log('Inside loop');
         promises.push(iterateQueries(gist.g));
       }
 
@@ -47,17 +54,41 @@
 
     }
 
-    
-  Promise.all(promises).then(_ => {
-    setTimeout(_ => { $('#tabMenu li:first-child > a').tab('show') }, 0)
-    console.log('Hola');
-  });
+
+    Promise.all(promises).then(_ => {
+      $.each($('#tabContent > div'), (i, elem) => {
+        const button = $(elem).find('button.execute-button').first();
+        $(elem).find('.graphiql.display').first().append(button);
+      })
+      $('#tabMenu > li > label').first().parent().toggleClass('active-tab');
+      $('#tabContent > div').first().toggleClass('active-tab-panel');
+
+
+      //Activate first tab of inner tabs
+      $.each($('.general-display'), (i, elem) => {
+        $(elem).children().first().toggleClass('active-tab-panel');
+      });
+      $('.tab-pannel-nav li').first().toggleClass('active-inner-tab');
+
+
+      $('#tabMenu > li > label').on('click', function () {
+        $(this).parent().siblings().removeClass('active-tab');
+        $(this).parent().toggleClass('active-tab');
+        const tab = $('#' + $(this).attr('for'));
+        tab.siblings().removeClass('active-tab-panel');
+        tab.toggleClass('active-tab-panel');
+      });
+      $('#tab-holder').addClass('show-tabs');
+      $('#pulse-holder').hide();
+
+      console.log('Promise fulfilled');
+    });
 
   }
 
   function iterateQueries(gist) {
     return new Promise(resolve => {
-      $.get(`https://gist.githubusercontent.com/tgx-bot/${gist}/raw`, function (data) {
+      $.get("https://gist.githubusercontent.com/tgx-bot/"+gist+"/raw", function (data) {
         // q.data = data;
         renderGist({ id: gist, data: data });
         resolve();
@@ -176,11 +207,9 @@
         onEditVariables: onEditVariables,
         onEditOperationName: onEditOperationName
       }),
-      document.getElementById(q.id),
-      _ => {
-        const element = $(`#${q.id}`);
-        const button = $(element).find('button.execute-button')[0]
-        $(element).append(button);
+      document.getElementById(q.id).querySelector('div.graphiql.display')
+      , _ => {
+        // Callback. Maybe usable to return promises
       }
     );
   }
