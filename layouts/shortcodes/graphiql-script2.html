@@ -1,5 +1,6 @@
 <script>
   const token = {{ $.Page.Params.ak }};
+  const default_user = {{ $.Page.Params.default_user }};
   const gists = {{ $.Page.Params.gists }};
 
   $(document).ready(main);
@@ -26,38 +27,39 @@
 
         const pannelTabs = [];
         for (const option of gist.o) {
-          pannelTabs.push(`<li class="tab"><label>${option}<\/label><\/li>`)
+          pannelTabs.push(`<li class="tab ${(gist.o[0] === option ? 'default-tab' : '')}"><label>${option}<\/label><\/li>`)
         }
 
         const tab = `<div id='${gist.g}' class='tab-panel'>
           <div class='explanation'>${text}<\/div>
           <ul class='tab-pannel-nav nav tabs'>${pannelTabs.join('')}<\/ul>
-          <div class="general-display">
-            ${(gist.o || []).includes('graphiql') ? "<div class='graphiql display'><\/div>" : ""}
-            ${(gist.o || []).includes('curl') ? "<div class='curl display'><\/div>" : ""}
-            ${(gist.o || []).includes('other') ? "<div class='other display'><\/div>" : ""}
+            <div class="general-display">
+            ${(gist.o || []).includes('graphiql') ? "<div class='graphiql display " + (gist.o[0] === 'graphiql' ? 'default-display' : '') + "'><\/div>" : ""}
+            ${(gist.o || []).includes('curl') ? "<div class='curl display " + (gist.o[0] === 'curl' ? 'default-display' : '') + "'><\/div>" : ""}
+            ${(gist.o || []).includes('other') ? "<div class='other display" + (gist.o[0] === 'other' ? 'default-display' : '') + "'><\/div>" : ""}
           <\/div>
         <\/div>`;
         $('#tabContent').append(tab);
 
-
-        console.log('Inside loop');
-        promises.push(iterateQueries(gist.g));
+        promises.push(iterateQueries(gist));
       }
     }
 
     Promise.all(promises).then(_ => {
-      //Activate first tab of outer tabs
+      // Find execute button on each graphiql display and append it to tab
       $.each($('#tabContent > div'), (i, elem) => {
         const button = $(elem).find('button.execute-button').first();
         $(elem).find('.graphiql.display').first().append(button);
-      })
+      });
+
+      //Activate first tab and pannel of outer tabs
       $('#tabMenu > li > label').first().parent().toggleClass('active');
+
       $('#tabContent > div').first().toggleClass('active-tab-panel');
 
       //Activate first tab of inner tabs and add onclick element to them
       $.each($('.general-display'), (i, elem) => {
-        $(elem).children().first().toggleClass('active');
+        $(elem).children('.default-display').first().removeClass('default-display').toggleClass('active');
       });
       $.each($('.tab-pannel-nav'), (i, elem) => {
         $(elem).children().on('click', function () {
@@ -65,12 +67,14 @@
           $(this).toggleClass('active');
 
           const tabClass = '.' + $(this).children().first().text();
-          console.log(tabClass);
           const tab = $(this).parent().next().children(tabClass).first();
           tab.siblings().removeClass('active');
           tab.toggleClass('active');
         });
-        $(elem).children().first().toggleClass('active');
+        $(elem).children('.default-tab').first().toggleClass('active');
+      //   $.each($('#tabMenu > li.default-tab'), (i, elem) => {
+      //   $(elem).removeClass('default-tab').toggleClass('active');
+      // });seguir aqui
       });
 
       // Add onclick event to outer tabs to allow navigation between them
@@ -85,16 +89,14 @@
       // Hides loading gif and shows tabs
       $('#tab-holder').addClass('show-tabs');
       $('#pulse-holder').hide();
-
-      console.log('Promise fulfilled');
     });
   }
 
   function iterateQueries(gist) {
+    const url = "https://gist.githubusercontent.com/" + (gist.u || default_user) + "/" + gist.g + "/raw";
     return new Promise(resolve => {
-      $.get("https://gist.githubusercontent.com/tgx-bot/" + gist + "/raw", function (data) {
-        // q.data = data;
-        renderGist({ id: gist, data: data });
+      $.get(url, function (data) {
+        renderGist({ gist: gist, data: data });
         resolve();
       });
     })
@@ -122,12 +124,11 @@
       }
     });
 
-    // if variables was provided, try to format it. 
+    // if variables were provided, try to format it. 
     parameters.variables = ''; // TODO
 
     const formattedQuery = q.data;
     parameters.query = formattedQuery;
-
 
     if (parameters.variables) {
       try {
@@ -171,7 +172,6 @@
     // use fetch, and could instead implement graphQLFetcher however you like,
     // as long as it returns a Promise or Observable.
     function graphQLFetcher(graphQLParams) {
-      //console.log('in graphQLFetcher')
       // This example expects a GraphQL server at the path /graphql.
       // Change this to point wherever you host your GraphQL server.
       return fetch(fetchURL, {
@@ -179,7 +179,7 @@
         headers: {
           'Accept': 'application/json',
           'Content-Type': 'application/json',
-          'Authorization': token ? 'Apikey ' + token : null
+          'Authorization': q.gist.ak ? 'Apikey ' + q.gist.ak : token
         },
         body: JSON.stringify(graphQLParams),
         //  credentials: 'include',
@@ -209,7 +209,7 @@
         onEditVariables: onEditVariables,
         onEditOperationName: onEditOperationName
       }),
-      document.getElementById(q.id).querySelector('div.graphiql.display')
+      document.getElementById(q.gist.g).querySelector('div.graphiql.display')
       , _ => {
         // Callback. Maybe usable to return promises
       }
