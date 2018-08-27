@@ -18,6 +18,13 @@
 - Removal of `useContext` from `HotelSettingsInput`. Reason: Redundant..  Deprecated on 2017-12-12.**To be removed soon**.
 - Removal of `connectUser` from `HotelSettingsInput`. Reason: Redundant..  Deprecated on 2018-03-19.**To be removed soon**.
 - Removal of `distribute` from `AddOns`. Reason: You can find it in distribution AddOn.  Deprecated on 2018-05-21.**To be removed soon**.
+- Removal of `error` from `Member`. Reason: Sustituted by adviseMessage.  Deprecated on 2018-08-22.Expected removal on 2018-11-20.
+- Removal of `error` from `Operation`. Reason: Sustituted by adviseMessage.  Deprecated on 2018-08-22.Expected removal on 2018-11-20.
+- Removal of `error` from `Organization`. Reason: Sustituted by adviseMessage.  Deprecated on 2018-08-22.Expected removal on 2018-11-20.
+- Removal of `error` from `Product`. Reason: Sustituted by adviseMessage.  Deprecated on 2018-08-22.Expected removal on 2018-11-20.
+- Removal of `error` from `Resource`. Reason: Sustituted by adviseMessage.  Deprecated on 2018-08-22.Expected removal on 2018-11-20.
+- Removal of `error` from `Role`. Reason: Sustituted by adviseMessage.  Deprecated on 2018-08-22.Expected removal on 2018-11-20.
+- Removal of `error` from `API`. Reason: Sustituted by adviseMessage.  Deprecated on 2018-08-22.Expected removal on 2018-11-20.
 - Removal of `error` from `Group`. Reason: Sustituted by adviseMessage.  Deprecated on 2018-08-01.Expected removal on 2018-10-30.
 {{% / release-notes-container %}}
 ### 2018-08-22
@@ -25,6 +32,15 @@
 - Removed `organization` from `PaymentXBookingInfoFilterInput`. Reason: Please use PaymentXBookingInfoCriteriaInput. Deprecated on 2018-08-03 .
 - Removed `pointOfSaleCode` from `PaymentXBookingInfoFilterInput`. Reason: Please use PaymentXBookingInfoCriteriaInput. Deprecated on 2018-08-03 .
 - Removed `bookingReference` from `PaymentXBookingInfoFilterInput`. Reason: Please use PaymentXBookingInfoCriteriaInput. Deprecated on 2018-08-03 .
+{{% / release-notes-container %}}
+{{% release-notes-container type="d"%}}
+- Deprecated `error` from `API`. Reason: Sustituted by adviseMessage. Expected removal on 2018-11-20 .
+- Deprecated `error` from `Member`. Reason: Sustituted by adviseMessage. Expected removal on 2018-11-20 .
+- Deprecated `error` from `Operation`. Reason: Sustituted by adviseMessage. Expected removal on 2018-11-20 .
+- Deprecated `error` from `Organization`. Reason: Sustituted by adviseMessage. Expected removal on 2018-11-20 .
+- Deprecated `error` from `Product`. Reason: Sustituted by adviseMessage. Expected removal on 2018-11-20 .
+- Deprecated `error` from `Resource`. Reason: Sustituted by adviseMessage. Expected removal on 2018-11-20 .
+- Deprecated `error` from `Role`. Reason: Sustituted by adviseMessage. Expected removal on 2018-11-20 .
 {{% / release-notes-container %}}
 ### 2018-08-03
 {{% release-notes-container type="d"%}}
