@@ -16,7 +16,14 @@ To make it easier for users and contributors to see precisely what notable chang
 
 ## 2018-08-22
 {{% release-notes-container type="a"%}}
-- New input field in hotels query filter. This allows to filter the response by hotel's country. [GraphQL Schema updated.](/travelgatex/release-notes/graphql-schema-changes/#2018-08-22)
+- Settings heritage. [Guide](https://docs.travelgatex.com/hotelx/concepts/settings/)
+- Plugins filter
+- Fix bugs
+{{% /release-notes-container %}}
+
+## 2018-08-21
+{{% release-notes-container type="a"%}}
+- New input field in hotels query filter. This allows to filter the response by hotel's country. [GraphQL Schema updated.](/travelgatex/release-notes/graphql-schema-changes/#2018-08-21)
 
 {{% /release-notes-container %}}
 
