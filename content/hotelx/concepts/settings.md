@@ -133,15 +133,15 @@ Group or client database settings
 
 If we send a Query with the previous HotelX Settings, the configuration that will be sent to the supplier is:
 
-Context: "CONTEXT"                                      //From DB Default Settings
-Language: "en"                                          //From HotelX Query/Mutation Settings
-Currency: "EUR"                                         //From Access Settings in Query/Mutation (Base Settings)
-Nationality: "ES"                                       //From DB Default Settings
-Market: "ES"                                            //From DB Default Settings
-Timeout: 18000                                          //From HotelX Query/Mutation Settings 
-AuditTransactions: true                                 //From Supplier Settings in Query/Mutation (Base Settings)
-BusinessRules/OptionQuota: 0                            //From Access DB Settings (Base Settings)
-BusinessRules/BusinessRulesType: "CHEAPER_AMOUNT"       //From Access DB Settings (Base Settings)
+- Context: "CONTEXT"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//From DB Default Settings<br />
+- Language: "en"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//From HotelX Query/Mutation Settings<br />
+- Currency: "EUR"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//From Access Settings in Query/Mutation (Base Settings)<br />
+- Nationality: "ES"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//From DB Default Settings<br />
+- Market: "ES"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//From DB Default Settings<br />
+- Timeout: 18000&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//From HotelX Query/Mutation Settings <br />
+- AuditTransactions: true&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//From Supplier Settings in Query/Mutation (Base Settings)<br />
+- BusinessRules/OptionQuota: 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//From Access DB Settings (Base Settings)<br />
+- BusinessRules/BusinessRulesType: "CHEAPER_AMOUNT"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//From Access DB Settings (Base Settings)<br />
 
 ### Plugins
 
