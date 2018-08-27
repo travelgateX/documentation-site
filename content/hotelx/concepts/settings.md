@@ -12,9 +12,9 @@ On this page you will learn more about **settings** in HotelX.
 ### What are settings?
 Settings are the common configuration that will be used in order to build the request to the provider/s.
 
-There are two kind of settings, overridable and partialy overridable. You can find the partialy overridable settings in the first level of settings and are known as HotelX_Settings. These settings are composed by some non overridable settings such as "group" and "testMode", some overridable global settings such as "timeout", "auditTransactions", etc, and some overridable baseSettings such as "businessRules".
+There are two kind of settings, overridable and partially overridable. You can find the partially overridable settings in the first level of settings and are known as HotelX_Settings. These settings are composed by some non overridable settings such as "group" and "testMode", some overridable global settings such as "timeout", "auditTransactions", etc, and some overridable baseSettings such as "businessRules".
 
-We have various levels of settings that can be combined in order to build customized settings. The order of heritage of settings is:
+We have various levels of settings that can be combined in order to build customised settings. The order of heritage of settings is:
 
 The type of settings for each level is:
 
@@ -23,13 +23,13 @@ The type of settings for each level is:
 2 - Supplier Settings [Base Settings]
 3 - Query Settings   [HotelX Settings]
 4 - DB Access Settings [Base Settings]
-5 - DB SupplierSettings [Base Settings]
+5 - DB Supplier Settings [Base Settings]
 6 - DB Client Settings [Default Settings]
 7 - DB Group Settings [Default Settings]
 
-Any field that is empty in one level, is filled with the value of the next level.
+Any field that is empty in one level, will be filled with the value of the next level.
 
-An special case are input fields specified in Criteria, if one field of criteria are in settings, the value of criteria are the most significant. It is mandatory that after the settings heritage flow, each field of DefaultSettings has to be filled, because this settings will be sent to supplier.
+An special case are input fields specified in Criteria, if one field of Criteria are in settings, the value of Criteria are the most significant. It is mandatory that after the settings heritage flow, each field of Default Settings has to be filled, because this settings will be sent to supplier.
 
 ### Where can Settings be applied?
 
@@ -139,10 +139,22 @@ Currency: "EUR"                                         //From Access Settings i
 Nationality: "ES"                                       //From DB Default Settings
 Market: "ES"                                            //From DB Default Settings
 Timeout: 18000                                          //From HotelX Query/Mutation Settings 
-AuditTransactions: true                                 //From Supplier Settings in Query/Mutation
+AuditTransactions: true                                 //From Supplier Settings in Query/Mutation (Base Settings)
 BusinessRules/OptionQuota: 0                            //From Access DB Settings (Base Settings)
 BusinessRules/BusinessRulesType: "CHEAPER_AMOUNT"       //From Access DB Settings (Base Settings)
 
-### Default Plugins
+### Plugins
 
-How can you see
+How can you see in GraphQL API Specification, there is an input field "plugins", this allows to insert plugins that will be executed during execution process. 
+
+## Default Plugins
+Additionally, it is possible to load default plugins in our database. Actually, the unique way to load these plugins in our database is contacting with our Customer Care team. This default plugins will be executed in all the Queries and Mutations specified above if no filters are specified. 
+
+## Filter Plugins
+Besides, in Query/Mutation Settings, there is a filter that allows to include or exclude the execution of any plugin. The operate way is similar to Access Filter in Hotel-Search and only is allowed specifying includes or excludes, not both. HotelX always read Query/Mutation input plugins and then joins it to the loaded default plugins of our database, then apply the plugin filters.
+
+- In one hand, if you specify plugins to include, only this plugins will be executed if they are found in all the joined plugins (Query/Mutation input plugins in settings and Default plugins from database). 
+
+- In the other hand, if you specify plugins to exclude, these will be deleted from joined plugins and consequently not executed.
+
+The way of indicate which plugins we want to include/exclude is introducing Step, Type and Name of the plugin in the Query/Mutation.
