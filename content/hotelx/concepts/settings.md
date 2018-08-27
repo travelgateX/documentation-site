@@ -18,14 +18,14 @@ We have various levels of settings that can be combined in order to build custom
 
 The type of settings for each level is:
 
-0 - Criteria common settings fields (currency, auditTransactions, businessRules, etc)
-1 - Access Settings [Base Settings]
-2 - Supplier Settings [Base Settings]
-3 - Query Settings   [HotelX Settings]
-4 - DB Access Settings [Base Settings]
-5 - DB Supplier Settings [Base Settings]
-6 - DB Client Settings [Default Settings]
-7 - DB Group Settings [Default Settings]
+0 - Criteria common settings fields (currency, auditTransactions, businessRules, etc)<br />
+1 - Access Settings [Base Settings]<br />
+2 - Supplier Settings [Base Settings]<br />
+3 - Query Settings   [HotelX Settings]<br />
+4 - DB Access Settings [Base Settings]<br />
+5 - DB Supplier Settings [Base Settings]<br />
+6 - DB Client Settings [Default Settings]<br />
+7 - DB Group Settings [Default Settings]<br />
 
 Any field that is empty in one level, will be filled with the value of the next level.
 
