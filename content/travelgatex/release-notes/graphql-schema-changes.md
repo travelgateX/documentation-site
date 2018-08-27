@@ -14,6 +14,60 @@ The GraphQL schema change log is a list of recent and upcoming changes to our Gr
 
 Check out this list of new releases and changes applied on the **TravelgateX GraphQL API**.
 
+## 2018-08-27
+
+✅  Description `Input delta price, indicates price variation permitted by the client. An error will be returned if the new price does not abide to DeltaPrice. If DeltaPrice is not sent and the integration implements it, we assume that the price range is 0 and the process will continue (price is lower or equal to the price showed in valuation).This field is implemented if it’s native to the supplier or if another availability/valuation request needs to be done in Reservation. In case the supplier blocks the option in valuation, reservation will be done automatically in reservation method.`
+on type `DeltaPriceInput` has changed to
+`Input delta price, indicates price variation permitted by the client An error will be returned if the new price does not abide to DeltaPrice. If DeltaPrice is not sent and the integration implements it, we assume that the price range is 0 and the process will continue (price is lower or equal to the price showed in valuation). This field is implemented if it’s native to the supplier or if another availability/valuation request needs to be done in Reservation. In case the supplier blocks the option in valuation, reservation  will be done automatically in reservation method.`
+
+✅  Argument `filter: HotelXFilterInput` added to field `HotelXMutation.cancel`
+
+✅  Argument `filter: HotelXFilterInput` added to field `HotelXMutation.book`
+
+✅  Field `PaymentXQuery.storedCard` description changed from `Returns a stored card information.` to `Returns a stored card information. `
+
+✅  Field `PaymentXQuery.allStoredCards` description changed from `Returns the stored card list. For security, this query never will return clear card information.` to `Returns the stored card list. For security, this query never will return clear card information. `
+
+✅  Input field `HotelSettingsInput.clientTokens` description changed from `Used to identify the origin of the request, this is only used in plugins.` to `Used to identify the origin of the request, this is only used in plugins. `
+
+✅  Argument `filter: HotelXFilterInput` added to field `HotelXQuery.booking`
+
+✅  Argument `filter: HotelXFilterInput` added to field `HotelXQuery.quote`
+
+✅  Argument `filterSearch: HotelXFilterSearchInput` added to field `HotelXQuery.search`
+
+✅  Deprecation reason on field `Product.error` has changed from `` to `deprecated from 2018-08-22. Sustituted by adviseMessage`
+
+✅  Field `adviseMessage` was added to object type `Product`
+
+✅  Deprecation reason on field `Operation.error` has changed from `` to `deprecated from 2018-08-22. Sustituted by adviseMessage`
+
+✅  Field `adviseMessage` was added to object type `Operation`
+
+✅  Deprecation reason on field `API.error` has changed from `` to `deprecated from 2018-08-22. Sustituted by adviseMessage`
+
+✅  Field `adviseMessage` was added to object type `API`
+
+✅  Deprecation reason on field `Resource.error` has changed from `` to `deprecated from 2018-08-22. Sustituted by adviseMessage`
+
+✅  Field `adviseMessage` was added to object type `Resource`
+
+✅  Deprecation reason on field `Role.error` has changed from `` to `deprecated from 2018-08-22. Sustituted by adviseMessage`
+
+✅  Field `adviseMessage` was added to object type `Role`
+
+✅  Deprecation reason on field `Member.error` has changed from `` to `deprecated from 2018-08-22. Sustituted by adviseMessage`
+
+✅  Field `Member.error` description changed from `` to `Errors that abort services`
+
+✅  Field `adviseMessage` was added to object type `Member`
+
+✅  Deprecation reason on field `Organization.error` has changed from `` to `deprecated from 2018-08-22. Sustituted by adviseMessage`
+
+✅  Field `adviseMessage` was added to object type `Organization`
+
+✅  Field `AdminQuery.products` description changed from `Product catalog; specify products codes to filter` to `Product catalog; specify products codes to filter `
+
 ## 2018-08-22
 
 🛑  `Text` kind changed from `INTERFACE` to `OBJECT`

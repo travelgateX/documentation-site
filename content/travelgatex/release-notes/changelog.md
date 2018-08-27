@@ -12,6 +12,12 @@ To make it easier for users and contributors to see precisely what notable chang
 
 {{% alert theme="info" %}}All notable changes on TravelgateX platform will be documented in this page.{{% /alert %}}
 
+## 2018-08-27
+
+{{% release-notes-container type="c"%}}
+- [GraphQL Schema updated.](/travelgatex/release-notes/graphql-schema-changes/#2018-08-27)
+{{% /release-notes-container %}}
+
 ## 2018-08-22
 
 {{% release-notes-container type="c"%}}
@@ -26,7 +32,7 @@ To make it easier for users and contributors to see precisely what notable chang
 {{% /release-notes-container %}}
 
 {{% release-notes-container type="f"%}}
-- Corrected change of Payment's structure 
+- Corrected change of Payment's structure
 - Basic Audit by request using header `TGX-Audit: 1` See more: [TGX Headers page](/travelgatex/concepts/request-headers)
 {{% /release-notes-container %}}
 
