@@ -10,22 +10,20 @@ alwaysopen = false
 On this page you will learn more about **settings** in HotelX. 
 
 ### What are settings?
-Settings are the common configuration that will be used in order to build the request to the provider/s.
+Settings are the common configuration that will be used in order to build the request to the supplier/s.
 
 There are two kind of settings, overridable and partially overridable. You can find the partially overridable settings in the first level of settings and are known as HotelX_Settings. These settings are composed by some non overridable settings such as "group" and "testMode", some overridable global settings such as "timeout", "auditTransactions", etc, and some overridable baseSettings such as "businessRules".
 
-We have various levels of settings that can be combined in order to build customised settings. The order of heritage of settings is:
-
-The type of settings for each level is:
+We have various levels of settings that can be combined in order to build customised settings. The order of heritage and type of settings for each level is:
 
 0 - Criteria common settings fields (currency, auditTransactions, businessRules, etc)<br />
 1 - Access Settings [Base Settings]<br />
 2 - Supplier Settings [Base Settings]<br />
 3 - Query Settings   [HotelX Settings]<br />
-4 - DB Access Settings [Base Settings]<br />
-5 - DB Supplier Settings [Base Settings]<br />
-6 - DB Client Settings [Default Settings]<br />
-7 - DB Group Settings [Default Settings]<br />
+4 - Database Access Settings [Base Settings]<br />
+5 - Database Supplier Settings [Base Settings]<br />
+6 - Database Client Settings [Default Settings]<br />
+7 - Database Group Settings [Default Settings]<br />
 
 Any field that is empty in one level, will be filled with the value of the next level.
 
@@ -41,15 +39,15 @@ These queries have the same settings configuration [**Click here to see configur
 
 * **Search**
 
-    * Example : [Search setting example](/hotelx/quickstart#search)
+    * [Search setting example](/hotelx/quickstart#search)
 
 * **Quote**
 
-    * Example : [Quote setting example](/hotelx/quickstart#quote)
+    * [Quote setting example](/hotelx/quickstart#quote)
 
 * **Booking List**
 
-    * Example : [Booking List setting example](/hotelx/quickstart#bookinglist)
+    * [Booking List setting example](/hotelx/quickstart#bookinglist)
 
 ## Mutations
 
@@ -63,7 +61,7 @@ These mutations have the same settings configuration [**Click here to see config
 
     * Example : [Quote setting example](/hotelx/quickstart#quote)
     
-In case that you want to modify any field of DB Setting, please contact with our support team.
+In case that you want to modify any field of database Setting, please contact with our support team.
 Above you can find an example of each type of settings: 
 
 [HotelX Settings](/hotelx/reference/inputobjects/hotelsettingsinput/)
@@ -147,10 +145,10 @@ If we send a Query with the previous HotelX Settings, the configuration that wil
 
 How can you see in GraphQL API Specification, there is an input field "plugins", this allows to insert plugins that will be executed during execution process. 
 
-## Default Plugins
+### Default Plugins
 Additionally, it is possible to load default plugins in our database. Actually, the unique way to load these plugins in our database is contacting with our Customer Care team. This default plugins will be executed in all the Queries and Mutations specified above if no filters are specified. 
 
-## Filter Plugins
+### Filter Plugins
 Besides, in Query/Mutation Settings, there is a filter that allows to include or exclude the execution of any plugin. The operate way is similar to Access Filter in Hotel-Search and only is allowed specifying includes or excludes, not both. HotelX always read Query/Mutation input plugins and then joins it to the loaded default plugins of our database, then apply the plugin filters.
 
 - In one hand, if you specify plugins to include, only this plugins will be executed if they are found in all the joined plugins (Query/Mutation input plugins in settings and Default plugins from database). 
