@@ -7,7 +7,7 @@ weight = 8
 alwaysopen = false
 +++
 
-The net compare file should be in the below format:
+The net compare file should be in the format below:
 
 * **Encoding**: UTF-8
 * **File Name**: 
@@ -33,11 +33,11 @@ The net compare file should be in the below format:
     * _percentage_  → commission value, decimal separator must be point (".") 
     * _amount_  → amount  
 
-    **client tokens** Identifier provided by the client that serves to filter which business rules can be applied for the sent request.
+    **client tokens** Identifier provided by the client that is used to filter which business rules can be applied for the sent request.
     
        * **List file fields** 
   
-        |Field | Mandatory | Excluded fileds* | Multi-value |
+        |Field | Mandatory | Excluded fields* | Multi-value |
         |---|---|---|---|
         |ruleId| Yes | - | No |
         |clientTokens| Yes | - | Yes |
@@ -55,7 +55,7 @@ The net compare file should be in the below format:
         |notDestinationCodes| No | DestinationCodes | Yes |
         |percentage| Yes | - | No |
         |amount| Yes | - | No |
-        *Excluded fileds **Informed field will be ignored**
+        *Excluded fields **Informed field will be ignored**
 
 * **Delimiter**:  Comma (“,”)
 * **Separator for multiples codes in the same row**: Semicolon (";")
