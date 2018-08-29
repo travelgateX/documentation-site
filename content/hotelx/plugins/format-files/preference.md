@@ -1,7 +1,7 @@
 +++
-title = "Tolerance"
-pagetitle = "Tolerance"
-description = "Format tolerance file."
+title = "Preference"
+pagetitle = "Preference"
+description = "Format preference file."
 icon = "fa-file-text-o"
 weight = 9
 alwaysopen = false
@@ -13,7 +13,7 @@ The preference file should be in the below format:
 * **File Name**: 
     * [context](/hotelx/concepts/accesses-supplier-context/#context)
     * [sequential](/hotelx/plugins/entity_table_file/#sequential)
-    * tolerance
+    * preference
 * **Extension file**: csv
 * **Headers**:
     * _ruleId_  → rule identifier
@@ -63,7 +63,7 @@ The preference file should be in the below format:
 
 #### Sample File
 
-**Name**: context\_sequential_tolerance.csv
+**Name**: context\_sequential_preference.csv
 
 **Data**:
 
