@@ -182,3 +182,14 @@ When you execute the plugin the steps are:
     }
 }
 ```
+
+## Modifying data
+
+**Once mappings files are loaded we can perform the following operations on them**
+
+### Update data 
+  1. Rename file removing "_processed". **Example example_processed.csv --> example.csv**
+  2. Delete processed file and upload a new file.
+   
+### Delete data
+  1. Upload a new file only with headers.
