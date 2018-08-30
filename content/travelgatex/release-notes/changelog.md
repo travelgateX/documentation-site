@@ -12,6 +12,13 @@ To make it easier for users and contributors to see precisely what notable chang
 
 {{% alert theme="info" %}}All notable changes on TravelgateX platform will be documented in this page.{{% /alert %}}
 
+## 2018-08-29
+
+{{% release-notes-container type="a"%}}
+- Added pagination to partners list
+{{% /release-notes-container %}}
+
+
 ## 2018-08-27
 
 {{% release-notes-container type="c"%}}
@@ -25,7 +32,7 @@ To make it easier for users and contributors to see precisely what notable chang
 {{% /release-notes-container %}}
 
 {{% release-notes-container type="a"%}}
-- Entity's Owner and its relates Filters, queries and mutations.
+- Entity's Owner and its related Filters, queries and mutations.
 - `parents` and `descendents` queries for `Group` and `Organization`.
 - Old connect form migrated to TravelgateX
 - Clients and suppliers CRUD
