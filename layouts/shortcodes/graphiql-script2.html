@@ -13,7 +13,7 @@
       if (gist.g) {
         //Añadir tab
         const tabLI = `<li class="tab">
-          <label for='${gist.g}'>TAB<\/label>
+          <label for='${gist.g}'>${gist.n}<\/label>
        <\/li>`;
         $('#tabMenu').append(tabLI);
         // Añadir cuerpo del tab de los gist
@@ -23,7 +23,7 @@
           tabsText.lastIndexOf(gist.g) - 1
         ) : '';
 
-        const text = `<p>${substring.trim() ? substring.split('\n').join('<br>') : 'Hola'}<\/p>`;
+        const text = `<p>${substring.trim() ? substring.split('\n').join('<br>') : ''}<\/p>`;
 
         const pannelTabs = [];
         for (const option of gist.o) {
