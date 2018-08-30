@@ -189,8 +189,9 @@ When you execute the plugin the steps are:
 
 ### Update data 
 You have two options:
- 1. Reprocess same data by renaming the file just removing "_processed". **Example example_processed.csv --> example.csv**
- 2. Change the data by deleting the processed file and uploading a new one.
+
+1. Reprocess same data by renaming the file just removing "_processed". **Example example_processed.csv --> example.csv**
+2. Change the data by deleting the processed file and uploading a new one.
    
 ### Delete data
 Upload a new file only with headers.
