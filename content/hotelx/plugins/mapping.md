@@ -185,7 +185,7 @@ When you execute the plugin the steps are:
 
 ## Modifying data
 
-**Once mappings files are loaded we can perform the following operations on them**
+**Once mappings files are loaded we can perform the following operations on them.**
 
 ### Update data 
 You have two options:
