@@ -22,6 +22,7 @@ The commission file should be in the below format:
     * _creationDateFrom_  → start creation date
     * _creationDateTo_   → end creation date
     * _checkInFrom_  → checkin date
+    * _checkInTo_  → checkout date
     * _hotelCodes_  → hotel code
     * _nothotelCodes_  → hotel code
     * _chainsCodes_  → chain code
@@ -51,6 +52,7 @@ The commission file should be in the below format:
         |creationDateFrom| No | - | No |
         |creationDateTo| No | - | No |
         |checkInFrom| No | - | No |
+        |checkInTo| No | - | No |
         |hotelCodes| No | nothotelCodes | Yes |
         |nothotelCodes| No | hotelCodes | Yes |
         |chainsCodes| No | notChainCodes | Yes |
