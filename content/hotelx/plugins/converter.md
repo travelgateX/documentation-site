@@ -11,7 +11,26 @@ Currency converter is an optional plugin and permits to apply currency conversio
 
 ## CurrencyX
 
-This plugin receives an Option and a currency and returns the same option with currency conversion applied over all the prices. It reads the information about rates from a file allocated in our ftp. Is mandatory that this file exists in the ftp and satisfy all the requirements below. In other cases, an error will be returned.
+This plugin receives an Option and a currency and returns the same option with currency conversion applied over all the prices. It reads the information about rates from a file allocated in our ftp. Is mandatory that this file exists in the ftp and satisfy all the requirements below. In other cases, an error will be returned. The node in graphQL that indicates the currency exchange rate is:
+
+"exchange": {
+	"currency": "currency",
+	"rate": 1
+},
+
+If the plugin is not executed, you will receive:
+
+"exchange": {
+	"currency": "EUR",   //Same currency of option with no currency exchange applied
+	"rate": 1            //No currency exchange applied
+},
+
+else, you will receive:
+
+"exchange": {
+	"currency": "EUR",   //New currency
+	"rate": 0.86         //Rate exchange applied
+},
 
 ### File Format
 
