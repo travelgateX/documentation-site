@@ -14,6 +14,11 @@ It makes it easier for users and contributors to see the most notable changes th
 
 {{% alert theme="info" %}}All notable changes on our platform will be documented on this page.{{% /alert %}}
 
+## 2018-09-03
+{{% release-notes-container type="f"%}}
+- Fix Exchange node empty if not CurrencyX (see doc in https://docs.travelgatex.com/hotelx/plugins/converter/)
+{{% /release-notes-container %}}
+
 ## 2018-08-22
 {{% release-notes-container type="a"%}}
 - Settings heritage. [Guide](https://docs.travelgatex.com/hotelx/concepts/settings/)
