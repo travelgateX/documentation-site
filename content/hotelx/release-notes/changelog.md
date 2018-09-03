@@ -24,6 +24,8 @@ It makes it easier for users and contributors to see the most notable changes th
 {{% release-notes-container type="a"%}}
 - Settings heritage. [Guide](https://docs.travelgatex.com/hotelx/concepts/settings/)
 - Plugins filter
+{{% /release-notes-container %}}
+{{% release-notes-container type="f"%}}
 - Fix bugs
 {{% /release-notes-container %}}
 
