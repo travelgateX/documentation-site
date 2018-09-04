@@ -19,6 +19,9 @@ It makes it easier for users and contributors to see the most notable changes th
 - Fix Exchange node empty if not CurrencyX (see doc in https://docs.travelgatex.com/hotelx/plugins/converter/)
 - Fix bugs in Quote
 {{% /release-notes-container %}}
+{{% release-notes-container type="c"%}}
+- Internal improvement Search service
+{{% /release-notes-container%}}
 
 ## 2018-08-22
 {{% release-notes-container type="a"%}}
