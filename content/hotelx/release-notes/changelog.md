@@ -14,6 +14,11 @@ It makes it easier for users and contributors to see the most notable changes th
 
 {{% alert theme="info" %}}All notable changes on our platform will be documented on this page.{{% /alert %}}
 
+## 2018-09-06
+{{% release-notes-container type="f"%}}
+- Fix apply Markups to net price
+{{% /release-notes-container %}}
+
 ## 2018-09-04
 {{% release-notes-container type="f"%}}
 - Fix bugs in Quote and Book
