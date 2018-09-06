@@ -25,7 +25,7 @@ It makes it easier for users and contributors to see the most notable changes th
 - Fix bugs in Quote
 {{% /release-notes-container %}}
 {{% release-notes-container type="c"%}}
-- Internal improvement Search service
+- Improve reponse time and service
 {{% /release-notes-container%}}
 
 ## 2018-08-22
