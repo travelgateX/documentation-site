@@ -36,7 +36,7 @@ The token allows to request the next page of hotels. The correct way of obtainin
 
 ### Destinations
 
-Destinations Query returns a list of static data about destinations for a supplier access. By default, if you don’t set any destination codes, you will receive all the codes. As it is the case with the Query Hotels, you will be able to receive subsequent pages of destinations by filling in the continuation token field.
+Destinations Query returns a list of static data about destinations for a supplier access. By default, if you don’t set any destination codes, you will receive all the codes. As it is the case with the Query Hotels, you will be able to receive subsequent pages of destinations by filling in the continuation token field. It is possible that you filter by language and you receive the texts only in the language specified by parameter in [DestinationData](/hotelx/reference/objects/destinationdata/) /texts/languages.
 
 #### Playground Samples
 

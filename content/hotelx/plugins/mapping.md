@@ -30,17 +30,17 @@ The file should be in the following format:
 
 * **File Name**: [Context Source]\_[Context Destination]\_[entity]\_map.csv
 
-  * Context Source: correspond to the client code
+  * Context Source: it corresponds to the client code
 
-  * Context Destination: correspond to the supplier code
+  * Context Destination: it corresponds to the supplier code
 
     * 1 file for each supplier
 
 * **Header Row**: Code Source, Code Destination
 
-  * Context Source: correspond to the client codes
+  * Context Source: it corresponds to the client codes
 
-  * Context Destination: correspond to the supplier codes    
+  * Context Destination: it corresponds to the supplier codes    
 
 * **Delimiter**: Comma (",")
 
@@ -48,7 +48,7 @@ The file should be in the following format:
 
 ### File Names
 
-All map files must have the same name structure as follow, you need create a file for *Context Destionation*
+All map files must have the same name structure as follows - you need create a file for *Context Destionation*
 
 |Entity|File Name|
 |---|----|
@@ -66,9 +66,9 @@ All map files must have the same name structure as follow, you need create a fil
 |Room|/F[folder code]\_[unique code]/HotelX\_[unique code]/Maps/Room/|
 |Rate|/F[folder code]\_[unique code]/HotelX\_[unique code]/Maps/Rate/|
 
-### Samples File
+### Sample Files
 
-Suppose we have the follow client code and supplier code, you need create one file for each supplier you have
+Let's suppose we have the following client code and supplier code, then we need to create one file for each supplier we have
 * Client code: GUE
 
 * Supplier Code: BVJ
@@ -94,7 +94,7 @@ Code Source, Code Destination
 
 ## Other Maps
 
-However, an alternative for room map is also shown below:
+Besides, an alternative for room map is also shown below:
 
 ### Description Room Map
 
@@ -159,7 +159,7 @@ breakf
 
 ## How applies
 
-When you execute the plugin the steps are:
+When you execute the plugin the steps to be followed are:
 
 1. Get room description.
 1. Replace strings with roomDescriptionMapX\_aliasTable.csv, the order to apply this replace depends on the order column.
@@ -182,3 +182,16 @@ When you execute the plugin the steps are:
     }
 }
 ```
+
+## Modifying data
+
+**Once mapping files are loaded, we can perform the following operations on them:**
+
+### Updating data 
+We have two options:
+
+1. Reprocessing the same data by renaming the file and just removing "_processed": **Example example_processed.csv --> example.csv**
+2. Changing the data by deleting the processed file and uploading a new one with new information.
+   
+### Deleting data
+Uploading a new file only with headers (no information).

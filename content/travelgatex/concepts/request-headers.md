@@ -47,8 +47,8 @@ TGX-Audit: <number>
 
 `<number>`:
 
-- 0: The requester prefers to allow tracking on the target system.
-- 1: The requester prefers not to be tracked on the target system.
+- 0: The requester prefers not to be tracked on the target system.
+- 1: The requester prefers to allow tracking on the target system.
 
 ## TGX-Tracing (Optional)
 

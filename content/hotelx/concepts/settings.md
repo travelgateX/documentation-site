@@ -10,77 +10,28 @@ alwaysopen = false
 On this page you will learn more about **settings** in HotelX. 
 
 ### What are settings?
+Settings are the common configuration that will be used in order to build the request to the supplier/s.
 
-Settings are loaded by default in our Back Office and determine the behavior of Hotelx by default.
+There are two kind of settings, overridable and partially overridable. You can find the partially overridable settings in the first level of settings and are known as HotelX_Settings. These settings are formed by some non-overridable settings such as "group" and "testMode", some overridable global settings such as "timeout", "auditTransactions", etc., and some overridable baseSettings such as "businessRules".
 
-This link shows how are the different setting structures by level: 
+We have several levels of settings that can be combined in order to build customised settings. The hierarchy of heritage and type of settings for each level is:
 
-[HotelX Settings](/hotelx/reference/inputobjects/hotelsettingsinput/)
+0 - Criteria common settings fields (currency, auditTransactions, businessRules, etc.)<br />
+1 - Access Settings [Base Settings]<br />
+2 - Supplier Settings [Base Settings]<br />
+3 - Query Settings   [HotelX Settings]<br />
+4 - Database Access Settings [Base Settings]<br />
+5 - Database Supplier Settings [Base Settings]<br />
+6 - Database Client Settings [Default Settings]<br />
+7 - Database Group Settings [Default Settings]<br />
 
-```
-settings: {
-        suppliers: {code: "HOTELTEST"}, 
-        plugins: 
-                {step: REQUEST, 
-                pluginsType: 
-                [{type: POST_STEP, name: "search_by_destination", 
-                parameters: [{key: "accessID", value: "422"}]}]}, 
-        businessRules: null, timeout: 24700, context: "HOTELTEST", 
-        client: "Demo_Client", 
-        testMode: true
-    }
-```
+Any field that is empty in one level, will be filled in with the value of the following level.
 
-[Base Settings](/hotelx/reference/inputobjects/basesettingsinput/)
-
-```
-settings: {
-    timeout: 300, 
-    auditTransactions: true, 
-    businessRules: 
-      {
-        optionsQuota: 500,
-        businessRulesType: CHEAPER_AMOUNT
-      }  
-}
-```
-
-[Default Settings](/hotelx/reference/inputobjects/defaultsettingsinput/)
-
-```
-settings: {
-    connectUser: "test"
-    context: "test"
-    language: "es"
-    currency: "EUR"
-    nationality: "ES"
-    market: "es"
-    timeouts: 300
-    businessRules: 
-      {
-        optionsQuota: 500,
-        businessRulesType: CHEAPER_AMOUNT
-      }  
-}
-```
-
-[Default Settings Business Rules](/hotelx/reference/inputobjects/businessrulesinput/)
-
-```
-businessRules{
-    businessRules: 
-        {
-            optionsQuota: 500,
-            businessRulesType: CHEAPER_AMOUNT
-        }  
-}
-``` 
+A special case is input fields specified in Criteria: if one field of Criteria is specified in settings, the value of Criteria is the most significant. It is mandatory that after the settings heritage flow, each field of Default Settings will be filled, because these settings will be sent to supplier.
 
 ### Where can Settings be applied?
 
-It is possible to overwrite settings behavior in each request made by the client.
-
-Settings can be applied in the following operations:
+Settings can be applied to the following operations:
 
 ## Queries
 
@@ -88,15 +39,15 @@ These queries have the same settings configuration [**Click here to see configur
 
 * **Search**
 
-    * Example : [Search setting example](/hotelx/quickstart#search)
+    * [Search setting example](/hotelx/quickstart#search)
 
 * **Quote**
 
-    * Example : [Quote setting example](/hotelx/quickstart#quote)
+    * [Quote setting example](/hotelx/quickstart#quote)
 
 * **Booking List**
 
-    * Example : [Booking List setting example](/hotelx/quickstart#bookinglist)
+    * [Booking List setting example](/hotelx/quickstart#bookinglist)
 
 ## Mutations
 
@@ -109,47 +60,99 @@ These mutations have the same settings configuration [**Click here to see config
 * **Cancel**
 
     * Example : [Quote setting example](/hotelx/quickstart#quote)
+    
+Should you need to modify any fields of the database Settings, please contact with our support team.
+Please find an example of each type of the settings above: 
 
-### Settings scope
+[HotelX Settings](/hotelx/reference/inputobjects/hotelsettingsinput/)
+Query/Mutation settings
+```
+"settings": {
+ "group": "HotelX_test",
+ "client": "xtg",
+ "context": "HOTELTEST",
+ "testMode": true,
+ "timeout": 18000,
+ "language":"es",
+ "suppliers": [
+  {
+   "code": "HOTELTEST",
+   "settings": {
+    "auditTransactions": true
+   },
+   "accesses": [
+    {
+     "accessId": "1",
+     "settings": {
+      "currency": "EUR"
+     }
+    }
+   ]
+  }
+ ]
+}
+```
 
-We have 5 different setting levels application:
+[Base Settings](/hotelx/reference/inputobjects/basesettingsinput/)
+Access or supplier settings (from Query or database)
+```
+"settings": {
+    "timeout": 300, 
+    "auditTransactions": true, 
+    "businessRules": 
+      {
+        "optionsQuota": 500,
+        "businessRulesType": "CHEAPER_AMOUNT"
+      }  
+}
+```
 
-* `HotelX Settings` affect the behavior of HotelX and their definition is as follows:  
-  [**Hotelx Settings**](/hotelx/reference/inputobjects/hotelbaseinput/)  
+[Default Settings](/hotelx/reference/inputobjects/defaultsettingsinput/)
+Group or client database settings
+```
+"settings": {
+  "context": "CONTEXT",
+  "client": "client",
+  "timeout": {
+    "search": 18000, 
+    "quote": 25000, 
+    "book": 180000
+  }, 
+  "language": "en", 
+  "currency": "EUR", 
+  "nationality": "ES", 
+  "market": "ES", 
+  "businessRules": {
+     "optionsQuota": 0, 
+     "businessRulesType": "CHEAPER_AMOUNT"
+  }
+}
+```
 
-* `Base Settings` affect the behavior of HotelX and their definition is as follows:  
-  [**Base Settings**](/hotelx/reference/inputobjects/settingsbaseinput/) 
+If we send a Query with the previous HotelX Settings, the configuration that will be sent to the supplier is:
 
-* `Supplier Settings` affect the behavior of suppliers and their definition is as follows:  
-  [**Supplier Settings**](/hotelx/reference/inputobjects/settingsbaseinput/)  
+- Context: "CONTEXT"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//From DB Default Settings<br />
+- Language: "en"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//From HotelX Query/Mutation Settings<br />
+- Currency: "EUR"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//From Access Settings in Query/Mutation (Base Settings)<br />
+- Nationality: "ES"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//From DB Default Settings<br />
+- Market: "ES"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//From DB Default Settings<br />
+- Timeout: 18000&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//From HotelX Query/Mutation Settings <br />
+- AuditTransactions: true&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//From Supplier Settings in Query/Mutation (Base Settings)<br />
+- BusinessRules/OptionQuota: 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//From Access DB Settings (Base Settings)<br />
+- BusinessRules/BusinessRulesType: "CHEAPER_AMOUNT"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//From Access DB Settings (Base Settings)<br />
 
-* `Access Settings` affect the behavior of the access and their definition is as follows:  
-  [**Access Settings**](/hotelx/reference/inputobjects/settingsbaseinput/)  
+### Plugins
 
-* `Plugins Settings` affect the behavior of the plugins and their definition is as follows:  
-  [**Plugins Settings**](/hotelx/reference/inputobjects/pluginstepinput/)  
+As you can observe in GraphQL API Specifications, the input field "plugins" allows to insert plugins that will be executed during execution process. 
 
-**Every level defines the settings' scope where they are applied**
+### Default Plugins
+Additionally, it is possible to load default plugins in our database. Currently, the only way to load these plugins in our database is contacting with our Customer Care team. These default plugins will be executed in all the Queries and Mutations specified above if no filters are specified. 
 
-### Workflow settings execution 
+### Filter Plugins
+Besides, in the Query/Mutation Settings, there is a filter that allows to include or exclude the execution of any plugin. The way it works is similar to the Access Filter in Hotel-Search and it is only allowed specifying includes or excludes, not both. HotelX always reads Query/Mutation input plugins and then joins them to the loaded default plugins of our database, then applies the plugin filters.
 
-The settings' hierarchy is as follows:
+- On the one hand, if you specify plugins to be included, these plugins will be executed only if they are found in all the joined plugins (Query/Mutation input plugins in settings and Default plugins from database). 
 
-*   **1. Access**
-*   **2. Supplier**
-*   **3. Hotel**
+- On the other hand, if you specify plugins be to excluded, these will be deleted from joined plugins and consequently not executed.
 
-{{<mermaid align="left">}}
-graph LR;
-    A[Clients] -->|REQUEST: 1| B(HotelX)
-    B[HotelX] -->|REQUEST| C(Suppliers)
-    C[Suppliers] -->|RESPONSE: 2| B(HotelX)
-    B[HotelX] -->|RESPONSE: 2| A(Client)
-{{< /mermaid >}}
-
-{{% notice info %}}
-
-**1 Request order priority (1. Access Settings, 2. Supplier Settings, 3. Hotel Settings)**  
-**2 Plugins settings**
-
-{{% /notice %}}
+The way of indicating which plugins we want to include/exclude is introducing Step, Type and Name of the plugin in the Query/Mutation.

@@ -47,14 +47,9 @@ It's based on [SQL Aggregate Functions](https://www.postgresql.org/docs/current/
 |size|int|optional|number of options in each aggregation group, the default value is 1|
 
 
-### Processor (Pre Step and Post Step)
+### Processor
 
-Processor plugins extends [HotelX](/hotelx/) allowing multiple operation types. It can modify request and response messages, allowing a full range of operations:
-
-* Split arrays
-* Join arrays 
-* Modify object values 
-* Add or remove object instances 
+It's implemented as a [Processor plugin](/hotelx/plugins/processor)
 
 ### Execution example
 
