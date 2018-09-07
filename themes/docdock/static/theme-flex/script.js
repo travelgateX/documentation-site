@@ -166,11 +166,6 @@ jQuery(document).ready(function() {
     $('article a:not(:has(img)):not(.btn)').addClass('highlight');
 });
 
-$(function() {
-    $('a[rel="lightbox"]').featherlight({
-        root: 'article'
-    });
-});
 jQuery.extend({
     highlight: function(node, re, nodeName, className) {
         if (node.nodeType === 3) {

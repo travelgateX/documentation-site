@@ -1,5 +1,5 @@
 {
-	"title": "GraphQL Schema breaking changes",
+	"title": "GraphQL Schema breaking changes: mappea",
 	"pagetitle": "GraphQL Schema breaking changes",
 	"description": "Changes history of deprecated notes previously announced",
 	"weight": 5,
@@ -10,9 +10,7 @@
 	],
 	"hideGithubLink": true
 }
-
 {{% alert theme="info" %}}Changes history of deprecated notes previously announced{{% /alert %}}
-
 ### Unreleased
 {{% release-notes-container type="u"%}}
 - Removal of `error` from `API`. Reason: Substituted by adviseMessage.  Deprecated on 2018-08-22.Expected removal on 2018-11-20.

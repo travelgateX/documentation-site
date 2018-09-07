@@ -1,5 +1,5 @@
 {
-	"title": "GraphQL Schema breaking changes",
+	"title": "GraphQL Schema breaking changes: travelgatex",
 	"pagetitle": "GraphQL Schema breaking changes",
 	"description": "Changes history of deprecated notes previously announced",
 	"weight": 5,
@@ -27,12 +27,13 @@
 - Removal of `error` from `API`. Reason: Sustituted by adviseMessage.  Deprecated on 2018-08-22.Expected removal on 2018-11-20.
 - Removal of `error` from `Group`. Reason: Sustituted by adviseMessage.  Deprecated on 2018-08-01.Expected removal on 2018-10-30.
 {{% / release-notes-container %}}
-### 2018-08-22
+### 2018-08-28
 {{% release-notes-container type="r"%}}
 - Removed `organization` from `PaymentXBookingInfoFilterInput`. Reason: Please use PaymentXBookingInfoCriteriaInput. Deprecated on 2018-08-03 .
 - Removed `pointOfSaleCode` from `PaymentXBookingInfoFilterInput`. Reason: Please use PaymentXBookingInfoCriteriaInput. Deprecated on 2018-08-03 .
 - Removed `bookingReference` from `PaymentXBookingInfoFilterInput`. Reason: Please use PaymentXBookingInfoCriteriaInput. Deprecated on 2018-08-03 .
 {{% / release-notes-container %}}
+### 2018-08-22
 {{% release-notes-container type="d"%}}
 - Deprecated `error` from `API`. Reason: Sustituted by adviseMessage. Expected removal on 2018-11-20 .
 - Deprecated `error` from `Member`. Reason: Sustituted by adviseMessage. Expected removal on 2018-11-20 .
@@ -44,9 +45,9 @@
 {{% / release-notes-container %}}
 ### 2018-08-03
 {{% release-notes-container type="d"%}}
-- Deprecated `organization` from `PaymentXBookingInfoFilterInput`. Reason: Please use PaymentXBookingInfoCriteriaInput. Finally removed on 2018-08-22 .
-- Deprecated `pointOfSaleCode` from `PaymentXBookingInfoFilterInput`. Reason: Please use PaymentXBookingInfoCriteriaInput. Finally removed on 2018-08-22 .
-- Deprecated `bookingReference` from `PaymentXBookingInfoFilterInput`. Reason: Please use PaymentXBookingInfoCriteriaInput. Finally removed on 2018-08-22 .
+- Deprecated `organization` from `PaymentXBookingInfoFilterInput`. Reason: Please use PaymentXBookingInfoCriteriaInput. Finally removed on 2018-08-28 .
+- Deprecated `pointOfSaleCode` from `PaymentXBookingInfoFilterInput`. Reason: Please use PaymentXBookingInfoCriteriaInput. Finally removed on 2018-08-28 .
+- Deprecated `bookingReference` from `PaymentXBookingInfoFilterInput`. Reason: Please use PaymentXBookingInfoCriteriaInput. Finally removed on 2018-08-28 .
 {{% / release-notes-container %}}
 ### 2018-08-01
 {{% release-notes-container type="d"%}}

@@ -1,5 +1,5 @@
 {
-	"title": "GraphQL Schema breaking changes",
+	"title": "GraphQL Schema breaking changes: paymentx",
 	"pagetitle": "GraphQL Schema breaking changes",
 	"description": "Changes history of deprecated notes previously announced",
 	"weight": 5,
