@@ -1,5 +1,5 @@
 {
-"title": "Quickstart 2: Vengeance",
+"title": "Quickstart 2",
 "pagetitle": "",
 "description": "HotelX Quickstart",
 "icon": "fa-clock-o",
@@ -56,12 +56,14 @@
 {{% graphiql-tabs %}}
 
 6972ecae51e849fe8c49305bf0032dfe
-Buenas tardes
-
-Me llamo Alex
+First tab
 /6972ecae51e849fe8c49305bf0032dfe
+
+034dcbeb8affb2c4875b2046ea385c0d
+Fifth tab
+/034dcbeb8affb2c4875b2046ea385c0d
 
 {{% /graphiql-tabs %}}
 
 {{< graphiql-styles >}}
-{{% graphiql-script2 %}}
+{{% graphiql-script-tabs %}}
