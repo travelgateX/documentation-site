@@ -1,5 +1,5 @@
 {
-	"title": "GraphQL Schema breaking changes: mappea",
+	"title": "GraphQL Schema breaking changes",
 	"pagetitle": "GraphQL Schema breaking changes",
 	"description": "Changes history of deprecated notes previously announced",
 	"weight": 5,
@@ -10,27 +10,29 @@
 	],
 	"hideGithubLink": true
 }
+
 {{% alert theme="info" %}}Changes history of deprecated notes previously announced{{% /alert %}}
+
 ### Unreleased
 {{% release-notes-container type="u"%}}
-- Removal of `error` from `API`. Reason: Substituted by adviseMessage.  Deprecated on 2018-08-22.Expected removal on 2018-11-20.
-- Removal of `error` from `Member`. Reason: Substituted by adviseMessage.  Deprecated on 2018-08-22.Expected removal on 2018-11-20.
-- Removal of `error` from `Operation`. Reason: Substituted by adviseMessage.  Deprecated on 2018-08-22.Expected removal on 2018-11-20.
-- Removal of `error` from `Organization`. Reason: Substituted by adviseMessage.  Deprecated on 2018-08-22.Expected removal on 2018-11-20.
-- Removal of `error` from `Product`. Reason: Substituted by adviseMessage.  Deprecated on 2018-08-22.Expected removal on 2018-11-20.
-- Removal of `error` from `Resource`. Reason: Substituted by adviseMessage.  Deprecated on 2018-08-22.Expected removal on 2018-11-20.
-- Removal of `error` from `Role`. Reason: Substituted by adviseMessage.  Deprecated on 2018-08-22.Expected removal on 2018-11-20.
-- Removal of `error` from `Group`. Reason: Substituted by adviseMessage.  Deprecated on 2018-08-01.Expected removal on 2018-10-30.
+- Removal of `error` from `API`. Reason: Sustituted by adviseMessage.  Deprecated on 2018-08-22.Expected removal on 2018-11-20.
+- Removal of `error` from `Member`. Reason: Sustituted by adviseMessage.  Deprecated on 2018-08-22.Expected removal on 2018-11-20.
+- Removal of `error` from `Operation`. Reason: Sustituted by adviseMessage.  Deprecated on 2018-08-22.Expected removal on 2018-11-20.
+- Removal of `error` from `Organization`. Reason: Sustituted by adviseMessage.  Deprecated on 2018-08-22.Expected removal on 2018-11-20.
+- Removal of `error` from `Product`. Reason: Sustituted by adviseMessage.  Deprecated on 2018-08-22.Expected removal on 2018-11-20.
+- Removal of `error` from `Resource`. Reason: Sustituted by adviseMessage.  Deprecated on 2018-08-22.Expected removal on 2018-11-20.
+- Removal of `error` from `Role`. Reason: Sustituted by adviseMessage.  Deprecated on 2018-08-22.Expected removal on 2018-11-20.
+- Removal of `error` from `Group`. Reason: Sustituted by adviseMessage.  Deprecated on 2018-08-01.Expected removal on 2018-10-30.
 {{% / release-notes-container %}}
 ### 2018-08-22
 {{% release-notes-container type="d"%}}
-- Deprecated `error` from `API`. Reason: Substituted by adviseMessage. Expected removal on 2018-11-20 .
-- Deprecated `error` from `Member`. Reason: Substituted by adviseMessage. Expected removal on 2018-11-20 .
-- Deprecated `error` from `Operation`. Reason: Substituted by adviseMessage. Expected removal on 2018-11-20 .
-- Deprecated `error` from `Organization`. Reason: Substituted by adviseMessage. Expected removal on 2018-11-20 .
-- Deprecated `error` from `Product`. Reason: Substituted by adviseMessage. Expected removal on 2018-11-20 .
-- Deprecated `error` from `Resource`. Reason: Substituted by adviseMessage. Expected removal on 2018-11-20 .
-- Deprecated `error` from `Role`. Reason: Substituted by adviseMessage. Expected removal on 2018-11-20 .
+- Deprecated `error` from `API`. Reason: Sustituted by adviseMessage. Expected removal on 2018-11-20 .
+- Deprecated `error` from `Member`. Reason: Sustituted by adviseMessage. Expected removal on 2018-11-20 .
+- Deprecated `error` from `Operation`. Reason: Sustituted by adviseMessage. Expected removal on 2018-11-20 .
+- Deprecated `error` from `Organization`. Reason: Sustituted by adviseMessage. Expected removal on 2018-11-20 .
+- Deprecated `error` from `Product`. Reason: Sustituted by adviseMessage. Expected removal on 2018-11-20 .
+- Deprecated `error` from `Resource`. Reason: Sustituted by adviseMessage. Expected removal on 2018-11-20 .
+- Deprecated `error` from `Role`. Reason: Sustituted by adviseMessage. Expected removal on 2018-11-20 .
 {{% / release-notes-container %}}
 ### 2018-08-08
 {{% release-notes-container type="r"%}}
@@ -71,7 +73,7 @@
 {{% / release-notes-container %}}
 ### 2018-08-01
 {{% release-notes-container type="d"%}}
-- Deprecated `error` from `Group`. Reason: Substituted by adviseMessage. Expected removal on 2018-10-30 .
+- Deprecated `error` from `Group`. Reason: Sustituted by adviseMessage. Expected removal on 2018-10-30 .
 {{% / release-notes-container %}}
 ### 2018-05-21
 {{% release-notes-container type="d"%}}
