@@ -1,23 +1,22 @@
-+++
-title = "Search"
-pagetitle = "Search"
-description = "Search step"
-icon = "fa-search-plus"
-weight = 3
-alwaysopen = false
-+++
-
-[comment]: <> (Cargamos la librería de GraphiQL para mostrar los ejemplos)
-{"gists": [
+{
+"title": "Search",
+"pagetitle": "Search",
+"description": "Search step",
+"icon": "fa-search-plus",
+"weight": 3,
+"alwaysopen": false,
+"default_ak": "64780338-49c8-4439-7c7d-d03c2033b145",
+"default_user": "",
+"gists": [
     {
-        "n":"1 Room - 2 Adults",
+        "n":"Zero",
         "g":"6972ecae51e849fe8c49305bf0032dfe",
         "o":["graphiql", "curl"],
         "u":"tgx-bot",
         "ak":"64780338-49c8-4439-7c7d-d03c2033b145"
     }, 
     {
-        "n":"1 Room - 2 Adults + 1 child",
+        "n":"One",
         "g":"533a8e1259e5245a4c3f590964ec506d",
         "o":["curl","graphiql"],
         "u":"tgx-bot",
@@ -51,8 +50,27 @@ alwaysopen = false
         "u":"tgx-bot",
         "ak":"64780338-49c8-4439-7c7d-d03c2033b145"
     }
-        ]}
+        ]
+}
+
+[comment]: <> (Cargamos la librería de GraphiQL para mostrar los ejemplos)
+
+*******************************************************************************
+
+{{% graphiql-tabs %}}
+
+6972ecae51e849fe8c49305bf0032dfe
+Buenas tardes
+
+Me llamo Alex
+/6972ecae51e849fe8c49305bf0032dfe
+
+{{% /graphiql-tabs %}}
+
 {{< graphiql-styles >}}
+{{% graphiql-script-tabs %}}
+
+*******************************************************************************
 
 Search is the first operation in the booking flow. It allows to check which available rooms there are for the requested hotels or for the hotels in the requested destination for a given range of dates and for a given pax distribution.
 
