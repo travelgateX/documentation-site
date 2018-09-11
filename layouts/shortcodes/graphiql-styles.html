@@ -1,4 +1,5 @@
 <style>
+  /* "graphiql display" and "graphiql-display" target two different components*/
   #tab-holder {
     transform: scale(0);
     position: absolute;
@@ -32,16 +33,16 @@
     border-top-right-radius: .25rem;
     display: block;
     padding: .5rem 1rem;
-  }
-
-  li.tab:hover>label {
     border-color: #e9ecef #e9ecef #dee2e6;
   }
 
-  li.tab.active>label {
-    color: #495057;
-    background-color: #fff;
-    border-color: #dee2e6 #dee2e6 #fff;
+  li.tab:hover>label, li.tab.active>label {
+    background-color: #ceddec;
+  }
+
+  .display {
+    max-height: 70vh;
+    overflow: auto;
   }
 
   .tab-panel,
@@ -68,7 +69,12 @@
     margin-bottom: 1.5rem;
   }
 
-  div.graphiql.display>button {
+  div.graphiql-display {
+    position: relative;
+  }
+
+  div.graphiql.display>button,
+  div.graphiql-display>button {
     width: 47.5px !important;
     height: 47.5px !important;
     background-color: #b6bbbf !important;
@@ -84,7 +90,8 @@
     transform: translateX(-37%);
   }
 
-  div.graphiql.display>button svg {
+  div.graphiql.display>button svg,
+  div.graphiql-display>button svg {
     fill: #fff !important;
     width: 30px;
     height: 28px;
@@ -164,9 +171,11 @@
     0% {
       box-shadow: 0 0 0 0 rgba(84, 145, 242, 0.4);
     }
+
     85% {
       box-shadow: 0 0 0 60px rgba(84, 145, 242, 0.1);
     }
+
     100% {
       box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.1);
     }
@@ -177,6 +186,7 @@
     from {
       transform: rotate3d(0, 0, 0, 0deg);
     }
+
     to {
       transform: rotate3d(0, 1, 0, 359deg);
     }
