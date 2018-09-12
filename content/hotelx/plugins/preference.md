@@ -40,6 +40,11 @@ The matching process uses **client Tokens** filed, which identify the provided b
     }]
 }
 ```
+
+{{% notice tip %}}
+Possibles values in **"key":"primaryKey"** are **supplier, hotel, market, board, payment, room, promotion, supplement, surcharges, rateRules or/and cancelPolicy**
+{{% /notice %}}
+
 ### Example of use
 
 **Percentage = 1, Supplier A: 126 €, Supplier B: 125 €**
