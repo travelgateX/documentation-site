@@ -49,7 +49,7 @@ Possibles values in **"key":"primaryKey"** are **supplier, hotel, market, board,
 
 **Percentage = 1, Supplier A: 126 €, Supplier B: 125 €**
 
-126 - 126 * 0.01 = 124,74 <= 125 eur, then the selected one is **supplier A**
+126 - 126 * 0.01 = 124,74 <= 125 €, then the selected one is **supplier A**
 
 **Percentage = 1, Supplier A: 128 €, Supplier B: 125 €**
 
