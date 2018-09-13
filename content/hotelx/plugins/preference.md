@@ -2,7 +2,7 @@
 title = "Preference"
 pagetitle = "Preference"
 description = "Discards those options that have a commission higher than expected."
-icon = "fa-money"
+icon = "fa-level-up"
 weight = 3
 alwaysopen = false
 +++
