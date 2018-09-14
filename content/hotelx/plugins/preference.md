@@ -13,7 +13,7 @@ Preference is an optional plugin and allows to offer options **preferentially** 
 
 ### Goals
 
-The preference plugin **offers those options that matches with rule preference reported.** By doing this, the options will be returned in a preferential way.
+The preference plugin **offers those options that match with rule preferences reported.** By doing this, the options will be returned in a preferential way.
 
 Sequentially, the rules will be evaluated until a match is found, upon finding it, the process will be stopped and the preference will be evaluated. In the same way, if the rule is not found, the option will be validated.  
 
@@ -42,7 +42,7 @@ The matching process uses **client Tokens** filed, which identify the provided b
 ```
 
 {{% notice tip %}}
-Possibles values in **"key":"primaryKey"** are **supplier, hotel, market, board, payment, room, promotion, supplement, surcharges, rateRules or/and cancelPolicy**
+Possible values in **"key":"primaryKey"** are **supplier, hotel, market, board, payment, room, promotion, supplement, surcharges, rateRules or/and cancelPolicy**
 {{% /notice %}}
 
 ### Example of use
