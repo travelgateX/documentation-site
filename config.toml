@@ -178,7 +178,7 @@ discourseUrl = "http://community.travelgatex.com/"
       url = "https://www.travelgatex.com/products/flightsx"
       img = "flightx.svg"
       alt = "flightx"
-      title = "FlightsxX"
+      title = "FlightsX"
       subtitle = "A single XML Integration to connect with more than 30 flight providers."
 
     [[params.work.row]]
@@ -393,7 +393,7 @@ discourseUrl = "http://community.travelgatex.com/"
 
   # Will lower case keywords in both queries and in the indexes.
   toLower = false
-   
+
     [[related.indices]]
       name  = "tags"
       weight = 100

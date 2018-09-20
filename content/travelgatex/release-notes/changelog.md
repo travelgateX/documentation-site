@@ -18,6 +18,10 @@ To make it easier for users and contributors to see precisely what notable chang
 - [GraphQL Schema updated.](/travelgatex/release-notes/graphql-schema-changes/#2018-09-20)
 {{% /release-notes-container %}}
 
+{{% release-notes-container type="f"%}}
+- Product name `FlightsX`.
+{{% /release-notes-container %}}
+
 ## 2018-09-10
 
 {{% release-notes-container type="c"%}}
