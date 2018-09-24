@@ -48,11 +48,6 @@
 		el: '#products-container',
 		data: {
 			products: []
-		},
-		methods: {
-			aaa(i){
-				console.log(i);
-			}
 		}
 	})
 
@@ -62,8 +57,6 @@
 				return response.json();
 			})
 			.then(function (json) {
-				console.log(json);
-				// console.log(JSON.stringify(json));
 				const products = json.data.allContents;
 				app.products = products;
 			});
