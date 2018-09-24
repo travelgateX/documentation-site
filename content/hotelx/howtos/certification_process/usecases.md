@@ -13,9 +13,3 @@ the following test scenario. You can choose the hotel and dates you prefer:
 - **Case 1:** 1 room with 2 Adults for a Package rate rule.
 - **Case 2:** 1 room with 2 Adults and 1 room with 2 adults + 1 Child 5 years old for a non-refundable rate.
 - **Case 3:** 1 room with 2 Adults and 1 room with 2 adults + 1 Child 5 years old and 1 room for 3 adults for a refundable rate.
-
-<span style="color:red">Add more use cases (we have to review HOTELTEST provider to configure more hotels with more detail)</span>
-
-- Release case
-- More pax distribution cases (with +1 room)
-- Minimmum stay
