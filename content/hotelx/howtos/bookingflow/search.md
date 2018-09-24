@@ -1,14 +1,11 @@
-+++
+{
 title = "Search"
 pagetitle = "Search"
 description = "Search step"
 icon = "fa-search-plus"
 weight = 3
 alwaysopen = false
-+++
-
-[comment]: <> (Cargamos la librería de GraphiQL para mostrar los ejemplos)
-{"gists": [
+"gists": [
     {
         "n":"1 Room - 2 Adults",
         "g":"6972ecae51e849fe8c49305bf0032dfe",
@@ -51,7 +48,11 @@ alwaysopen = false
         "u":"tgx-bot",
         "ak":"64780338-49c8-4439-7c7d-d03c2033b145"
     }
-        ]}
+        ]
+}
+
+[comment]: <> (Cargamos la librería de GraphiQL para mostrar los ejemplos)
+
 {{< graphiql-styles >}}
 
 Search is the first operation in the booking flow. It allows to check which available rooms there are for the requested hotels or for the hotels in the requested destination for a given range of dates and for a given pax distribution.
