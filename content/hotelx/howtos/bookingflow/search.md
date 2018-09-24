@@ -19,34 +19,6 @@
         "o":["graphiql"],
         "u":"tgx-bot",
         "ak":"64780338-49c8-4439-7c7d-d03c2033b145"
-    }, 
-    {
-        "n":"Two",
-        "g":"b4e691b2b1567c0a80f5926b833170e1",
-        "o":["graphiql"],
-        "u":"tgx-bot",
-        "ak":"64780338-49c8-4439-7c7d-d03c2033b145"
-    }, 
-    {
-        "n":"Three",
-        "g":"bbbb043c0cdfe1adb33a897f69a04e2f",
-        "o":["graphiql"],
-        "u":"tgx-bot",
-        "ak":"64780338-49c8-4439-7c7d-d03c2033b145"
-    }, 
-    {
-        "n":"Four",
-        "g":"034dcbeb8affb2c4875b2046ea385c0d",
-        "o":["graphiql"],
-        "u":"tgx-bot",
-        "ak":"64780338-49c8-4439-7c7d-d03c2033b145"
-    }, 
-    {
-        "n":"Five",
-        "g":"36e1ade6d5eb2a074dc6cb1141ac2136",
-        "o":["graphiql"],
-        "u":"tgx-bot",
-        "ak":"64780338-49c8-4439-7c7d-d03c2033b145"
     }
         ]
 }
