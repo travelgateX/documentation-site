@@ -20,10 +20,10 @@ The preference file should be in the below format:
     * _clientTokens_  → client Tokens*
     * _supplierCodes_  → supplier code
     * _notSupplierCodes_  → supplier code
-    * _bookingDateFrom_  → booking date from
-    * _bookingDateTo_   → booking date to
-    * _startDateFrom_  → start date from
-    * _startDateTo_  → start date to
+    * _bookingDateFrom_  → booking date from [**Date format**](/hotelx/plugins/format-files/commission#dateformat)
+    * _bookingDateTo_   → booking date to [**Date format**](/hotelx/plugins/format-files/commission#dateformat)
+    * _startDateFrom_  → start date from [**Date format**](/hotelx/plugins/format-files/commission#dateformat)
+    * _startDateTo_  → start date to [**Date format**](/hotelx/plugins/format-files/commission#dateformat)
     * _hotelCodes_  → hotel code
     * _nothotelCodes_  → hotel code
     * _chainsCodes_  → chain code
@@ -87,3 +87,8 @@ T7,,RHO,,,,,,,,,,,,10.0,FALSE
 T9,subcanal-EROSKI_B2B,INT,,,,,,,,,,,BTEMX,5.0,TRUE
 T10,,GTA;HOBV2;TOU,,,,,,,,,,ACDMS,,5.5,FALSE
 ```
+
+### **Date format** {#dateformat}
+{{% notice warning %}}
+Date format **yyyy-mm-dd** is mandatory
+{{% /notice %}}
