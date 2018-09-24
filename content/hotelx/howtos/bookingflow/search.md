@@ -51,13 +51,13 @@
         ]
 }
 
+Search is the first operation in the booking flow. It allows to check which available rooms there are for the requested hotels or for the hotels in the requested destination for a given range of dates and for a given pax distribution.
+
 [comment]: <> (Cargamos la librería de GraphiQL para mostrar los ejemplos)
 {{% graphiql-tabs %}}
 {{% /graphiql-tabs %}}
 
 {{< graphiql-styles >}}
-
-Search is the first operation in the booking flow. It allows to check which available rooms there are for the requested hotels or for the hotels in the requested destination for a given range of dates and for a given pax distribution.
 
 ## Advanced criteria
 Explain different parameters can be set up on the request 
