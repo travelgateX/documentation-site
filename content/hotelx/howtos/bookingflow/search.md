@@ -99,3 +99,5 @@ There are different ways to request a Search. Below is shown different examples 
 Please, bear in mind that within the room structure response there is a **refundable** field. If that field is filled with _false_ it means that the room have 100% cancellation cost, so the room is not refundable.
 If the field returns a _null value_ it means that the provider is not able to return this info at this step.
 {{% /alert %}}
+
+{{% graphiql-script-tabs %}}
