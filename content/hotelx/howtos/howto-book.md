@@ -1,13 +1,11 @@
 +++
-title = "Book"
-pagetitle = "Book (How To Perform a Booking)"
-description = "How to create a new Booking by calling the Book Mutation"
+title = "Good to know"
+pagetitle = "Good to know"
+description = "Some concepts and particularities"
 icon = "fa-calendar"
 weight = 7
 alwaysopen = false
 +++
-
-Flow to book 
 
 ## HotelX Settings
 
