@@ -2,7 +2,7 @@
 title = "Good to know"
 pagetitle = "Good to know"
 description = "Some concepts and particularities"
-icon = "fa-calendar"
+icon = "fa-check-square-o"
 weight = 7
 alwaysopen = false
 +++
