@@ -9,70 +9,52 @@
 "default_user": "",
 "gists": [
     {
-        "n":"Zero",
-        "g":"6972ecae51e849fe8c49305bf0032dfe",
-        "o":["graphiql", "curl"],
+        "n":"1 Room - 2 Adults",
+        "g":"77c80792a415b1be6c92b474f2949d84",
+        "o":["graphiql"],
         "u":"tgx-bot",
         "ak":"64780338-49c8-4439-7c7d-d03c2033b145"
     }, 
     {
-        "n":"One",
-        "g":"533a8e1259e5245a4c3f590964ec506d",
-        "o":["curl","graphiql"],
+        "n":"1 Room - 2 Adults 1 Child",
+        "g":"5ac8995ed02d876cb3cf87fcc47efd3a",
+        "o":["graphiql"],
         "u":"tgx-bot",
         "ak":"64780338-49c8-4439-7c7d-d03c2033b145"
-    }, 
+    },
     {
-        "n":"Two",
-        "g":"b4e691b2b1567c0a80f5926b833170e1",
-        "o":["graphiql", "curl"],
+        "n":"2 Rooms - 2 Adults + 2 Adults",
+        "g":"72e51e75ecf971c4e92b4227e88420df",
+        "o":["graphiql"],
         "u":"tgx-bot",
         "ak":"64780338-49c8-4439-7c7d-d03c2033b145"
-    }, 
+    },
     {
-        "n":"Three",
-        "g":"bbbb043c0cdfe1adb33a897f69a04e2f",
-        "o":["graphiql", "curl"],
+        "n":"2 Rooms - 2 Adults 1 Child + 2 Adults",
+        "g":"12799fd0a67acb73f030b1f9eae10a4e",
+        "o":["graphiql"],
         "u":"tgx-bot",
         "ak":"64780338-49c8-4439-7c7d-d03c2033b145"
-    }, 
+    },
     {
-        "n":"Four",
-        "g":"034dcbeb8affb2c4875b2046ea385c0d",
-        "o":["graphiql", "curl"],
+        "n":"3 days minimmum stay",
+        "g":"002160e4c2822635ef3b1a3c81b1d44d",
+        "o":["graphiql"],
         "u":"tgx-bot",
         "ak":"64780338-49c8-4439-7c7d-d03c2033b145"
-    }, 
+    },
     {
-        "n":"Five",
-        "g":"36e1ade6d5eb2a074dc6cb1141ac2136",
-        "o":["graphiql", "curl"],
+        "n":"Destination",
+        "g":"a0370f6041d58b67bf1e32363a968abf",
+        "o":["graphiql"],
         "u":"tgx-bot",
         "ak":"64780338-49c8-4439-7c7d-d03c2033b145"
     }
+    
         ]
 }
 
-[comment]: <> (Cargamos la librería de GraphiQL para mostrar los ejemplos)
-
-*******************************************************************************
-
-{{% graphiql-tabs %}}
-
-6972ecae51e849fe8c49305bf0032dfe
-Buenas tardes
-
-Me llamo Alex
-/6972ecae51e849fe8c49305bf0032dfe
-
-{{% /graphiql-tabs %}}
-
-{{< graphiql-styles >}}
-{{% graphiql-script-tabs %}}
-
-*******************************************************************************
-
-Search is the first operation in the booking flow. It allows to check which available rooms there are for the requested hotels or for the hotels in the requested destination for a given range of dates and for a given pax distribution.
+Search is the first operation in the booking flow. It jallows to check which available rooms there are for the requested hotels or for the hotels in the requested destination for a given range of dates and for a given pax distribution.
 
 ## Advanced criteria
 Explain different parameters can be set up on the request 
@@ -90,25 +72,18 @@ _* Hotels and Destinations parametres are excludent between them_
 ## How to request
 There are different ways to request a Search. Below is shown different examples for different casuistry.
 
-- Hotel avail
-- Destination avail
+{{% graphiql-tabs %}}
 
-- Pax distribution
-  - 1 room
-      - 2 adults
-      - 2 adults + 1 child
-  - 2 rooms
-      - 4 adults (2 adults per room)
-      - 4 adults + 1 child (room 1: 2 ad + 1ch, room 2: 2 adults)
-- With cancellation policies
+002160e4c2822635ef3b1a3c81b1d44d
+In this availability case, you won't get results due to the hotel you're asking for has a minimmum stay restriction. So, if you change the date range to 3 days or more, you will get availability
+/002160e4c2822635ef3b1a3c81b1d44d
 
-- **Non availability searches**
-  - Release
-  - Minimum stay
-  - Stop sales
+{{% /graphiql-tabs %}}
 
+{{< graphiql-styles >}}
+{{% graphiql-script-tabs %}}
 
-## Beard in mind
+## Bear in mind
 
 {{% alert theme="warning" %}}
 Please, bear in mind that within the room structure response there is a **refundable** field. If that field is filled with _false_ it means that the room have 100% cancellation cost, so the room is not refundable.

@@ -7,6 +7,9 @@ weight = 7
 alwaysopen = false
 +++
 
+{{< graphiql-script queries="[{\"apikey\":\"64780338-49c8-4439-7c7d-d03c2033b145\",\"gist\":\"https://gist.githubusercontent.com/tgx-bot/1b160cfcf47b1c4d1deada1a18ae98b6/raw\",\"divname\":\"div_cancellation\"}]" >}}
+{{< graphiql-styles >}}
+
 Cancellation operation that cancel the booking.
 Which time zone applies for the cancellation policies?
 NOTE: Cancellation always take into account day and time of the destination in order to calculate what cancellation policy should be applied.
@@ -21,6 +24,6 @@ UTC time
 ## Advanced criteria
 Explain different parameters can be set up on the request (indicate which ones are mandatory)
 
-## Different ways to request
-Attach different use cases
+## How to cancel 
+{{< graphiql-tags tag="div_cancellation" >}}
 

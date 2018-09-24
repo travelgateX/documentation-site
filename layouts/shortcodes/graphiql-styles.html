@@ -1,136 +1,170 @@
 <style>
-  .graphiql-display {
-    position: relative;
-    z-index: 0;
-    margin: 3.3rem 0 3.3rem 0;
-  }
-
-  div.graphiql-display>button {
-    width: 47.5px!important;
-    height: 47.5px!important;
-    background-color: #b6bbbf !important;
-    border: none;
-    border-radius: 50%;
-    cursor: pointer;
-    margin: 0;
-    padding: 0;
-    position: absolute;
-    top: 100px;
-    left: 50%;
-    z-index: 1004;
-    transform: translateX(-37%);
-  }
-
-  div.graphiql-display>button svg {
-    fill: #fff !important;
-    width: 30px;
-    height: 28px;
-}
-
-  div.graphiql-display>button:hover {
-    background-color: #98a0a6 !important;
-  }
-
-  div.graphiql-display>button:focus {
-    outline: none;
-  }
-
-  div.topBarWrap,
-  div.variable-editor {
-    display: none !important;
-  }
-  div.CodeMirror-gutter.CodeMirror-foldgutter {
-    width:1px;
-    padding: 0 !important;
-  }
-
-  div.CodeMirror-gutter-wrapper {
-    display: none;
-  }
-
-  .pulse-holder {
-    width: 100px;
-    height: 100px;
-    display: inline-block;
-    cursor: pointer;
-    left: 50%;
-    top: 50%;
-    position: relative;
-    transform: translate(-50%);
-
-  }
-
-  .pulse {
-    width: 1px;
-    height: 1px;
-    top: 50%;
-    left: 50%;
-    position: absolute;
-    border-radius: 50%;
-    animation: pulse 3s infinite;
-  }
-
-  .pulse:hover {
-    animation: none;
-  }
-
-  div.pulse-holder>img {
-    width: 100%;
-		animation: rotation 2s infinite linear;
-  }
-
-  div.query-editor div.CodeMirror-sizer {
-  margin-left: 0 !important;
-  padding-left: 2rem;
-}
-
-div.query-editor div.CodeMirror-gutters {
-  display: none;
-}
-
-div.query-editor > div.CodeMirror {
-  background-color: #F5F6F6 !important;
-}
-
-div.result-window > div.CodeMirror {
-  background-color: #F0F2F2 !important;
-}
-
-  @keyframes pulse {
-    0% {
-      box-shadow: 0 0 0 0 rgba(84, 145, 242, 0.4);
+    /* "graphiql display" and "graphiql-display" target two different components*/
+    #tab-holder {
+      transform: scale(0);
+      position: absolute;
     }
-    85% {
-      box-shadow:0 0 0 60px rgba(84, 145, 242, 0.1);
+    #tab-holder.show-tabs {
+      transform: scale(1);
+      position: initial;
     }
-    100% {
-      box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.1);
+    ul.tab-pannel-nav {
+      margin-bottom: -33px;
     }
-  }
-
-
-@keyframes rotation {
-		from {
-				transform: rotate3d(0,0,0,0deg);
-		}
-		to {
-				transform: rotate3d(0,1,0,359deg);
-		}
-}
-
-
-
-/* GRAPHIQL STYLES */
-.queryWrap {
-  width: 50%;
-}
-
-.CodeMirror-sizer {
-  max-width: auto !important;
-  min-width: auto !important;
-}
-
-.graphiql-container .CodeMirror {
-  position: relative !important;
-}
-</style>
+    ul.tabs {
+      border-bottom: 1px solid #dee2e6;
+    }
+    li.tab {
+      margin-bottom: -7px;
+    }
+    li.tab,
+    li.tab>label {
+      cursor: pointer;
+    }
+    li.tab>label {
+      border: 1px solid transparent;
+      border-top-left-radius: .25rem;
+      border-top-right-radius: .25rem;
+      display: block;
+      padding: .5rem 1rem;
+      border-color: #e9ecef #e9ecef #dee2e6;
+    }
+    li.tab:hover>label, li.tab.active>label {
+      background-color: #ceddec;
+    }
+    .graphiql-display,
+    .display {
+      max-height: 60vh;
+      overflow: auto;
+    }
+    .tab-panel,
+    .display {
+      transform: scale(0);
+      position: absolute;
+    }
+    .active-tab-panel,
+    .display.active {
+      transform: scale(1) !important;
+      position: initial !important;
+    }
+    .graphiql.display {
+      position: relative;
+      z-index: 0;
+      margin: 3.3rem 0 3.3rem 0;
+    }
+    .explanation {
+      margin-left: 2rem;
+      margin-bottom: 1.5rem;
+    }
+    div.graphiql-display {
+      position: relative;
+    }
+    div.graphiql.display>button,
+    div.graphiql-display>button {
+      width: 47.5px !important;
+      height: 47.5px !important;
+      background-color: #b6bbbf !important;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      margin: 0;
+      padding: 0;
+      position: absolute;
+      top: 100px;
+      left: 50%;
+      z-index: 1004;
+      transform: translateX(-37%);
+    }
+    div.graphiql.display>button svg,
+    div.graphiql-display>button svg {
+      fill: #fff !important;
+      width: 30px;
+      height: 28px;
+    }
+    div.graphiql.display>button:hover {
+      background-color: #98a0a6 !important;
+    }
+    div.graphiql.display>button:focus {
+      outline: none;
+    }
+    div.topBarWrap,
+    div.variable-editor {
+      display: none !important;
+    }
+    div.CodeMirror-gutter.CodeMirror-foldgutter {
+      width: 1px;
+      padding: 0 !important;
+    }
+    div.CodeMirror-gutter-wrapper {
+      display: none;
+    }
+    #pulse-holder {
+      width: 100px;
+      height: 100px;
+      display: inline-block;
+      cursor: pointer;
+      left: 50%;
+      top: 50%;
+      position: relative;
+      transform: translate(-50%);
+    }
+    .pulse {
+      width: 1px;
+      height: 1px;
+      top: 50%;
+      left: 50%;
+      position: absolute;
+      border-radius: 50%;
+      animation: pulse 3s infinite;
+    }
+    .pulse:hover {
+      animation: none;
+    }
+    div#pulse-holder>img {
+      width: 100%;
+      animation: rotation 2s infinite linear;
+    }
+    div.query-editor div.CodeMirror-sizer {
+      margin-left: 0 !important;
+      padding-left: 2rem;
+    }
+    div.query-editor div.CodeMirror-gutters {
+      display: none;
+    }
+    div.query-editor>div.CodeMirror {
+      background-color: #F5F6F6 !important;
+    }
+    div.result-window>div.CodeMirror {
+      background-color: #F0F2F2 !important;
+    }
+    @keyframes pulse {
+      0% {
+        box-shadow: 0 0 0 0 rgba(84, 145, 242, 0.4);
+      }
+      85% {
+        box-shadow: 0 0 0 60px rgba(84, 145, 242, 0.1);
+      }
+      100% {
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.1);
+      }
+    }
+    @keyframes rotation {
+      from {
+        transform: rotate3d(0, 0, 0, 0deg);
+      }
+      to {
+        transform: rotate3d(0, 1, 0, 359deg);
+      }
+    }
+    /* GRAPHIQL STYLES */
+    .queryWrap {
+      width: 50%;
+    }
+    .CodeMirror-sizer {
+      max-width: auto !important;
+      min-width: auto !important;
+    }
+    .graphiql-container .CodeMirror {
+      position: relative !important;
+    }
+  </style>
