@@ -1,10 +1,10 @@
 {
-"title" = "Search",
-"pagetitle" = "Search",
-"description" = "Search step",
-"icon = "fa-search-plus",
-"weight" = 3,
-"alwaysopen" = false,
+"title":"Search",
+"pagetitle":"Search",
+"description":"Search step",
+"icon":"fa-search-plus",
+"weight":3,
+"alwaysopen":false,
 "gists": [
     {
         "n":"1 Room - 2 Adults",
