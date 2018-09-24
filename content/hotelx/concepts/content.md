@@ -36,7 +36,7 @@ The token allows to request the next page of hotels. The correct way of obtainin
 
 ### Destinations
 
-Destinations Query returns a list of static data about destinations for a supplier access. By default, if you don’t set any destination codes, you will receive all the codes. As it is the case with the Query Hotels, you will be able to receive subsequent pages of destinations by filling in the continuation token field.
+Destinations Query returns a list of static data about destinations for a supplier access. By default, if you don’t set any destination codes, you will receive all the codes. As it is the case with the Query Hotels, you will be able to receive subsequent pages of destinations by filling in the continuation token field. It is possible that you filter by language and you receive the texts only in the language specified by parameter in [DestinationData](/hotelx/reference/objects/destinationdata/) /texts/languages.
 
 #### Playground Samples
 
@@ -45,7 +45,7 @@ Destinations Query returns a list of static data about destinations for a suppli
 
 ### Boards
 
-Boards Query returns a simple map of the boards that can be returned with its translation to other languages.
+Boards Query returns a simple boards map that can include translations to other languages.
 
 #### Playground Samples
 
@@ -54,7 +54,7 @@ Boards Query returns a simple map of the boards that can be returned with its tr
 
 ### Rooms
 
-Rooms Query returns a simple map of the rooms that can be returned with its translation to other languages. You can search by room codes, if you don't introduce any room codes, you will receive all of them. The full response is split into pages. By default, the number of rooms in each page is 1000, however, you can choose the size with a value between 100 and 10000.
+Rooms Query returns a simple rooms map that can include translations to other languages. You can search by room codes, if you don't introduce any room codes, you will receive all of them. The full response is split into pages. By default, the number of rooms in each page is 1000, however, you can choose the size with a value between 100 and 10000.
 
 ### Criteria
 **Mandatory fields**  
@@ -74,7 +74,7 @@ The token allows to request the next page of rooms. The correct way of obtaining
 
 ### Categories
 
-Category static data returns a simple map of the categories that can be returned with its translation to other languages.
+Category static data returns a simple categories map that can include translations to other languages.
 
 #### Playground Samples
 

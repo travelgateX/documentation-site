@@ -2,10 +2,13 @@
   const token = {{ $.Page.Params.ak }};
   const default_user = {{ $.Page.Params.default_user }};
   const gists = {{ $.Page.Params.gists }};
+
   $(document).ready(main);
   function main() {
     const tabsText = $('#tabsText').text();
+
     const promises = []
+
     for (const gist of gists) {
       if (gist.g) {
         //Añadir tab
@@ -14,15 +17,19 @@
        <\/li>`;
         $('#tabMenu').append(tabLI);
         // Añadir cuerpo del tab de los gist
+
         var substring = tabsText.indexOf(gist.g) !== -1 ? tabsText.substring(
           tabsText.indexOf(gist.g) + 1 + gist.g.length,
           tabsText.lastIndexOf(gist.g) - 1
         ) : '';
+
         const text = `<p>${substring.trim() ? substring.split('\n').join('<br>') : ''}<\/p>`;
+
         const pannelTabs = [];
         for (const option of gist.o) {
           pannelTabs.push(`<li class="tab ${(gist.o[0] === option ? 'default-tab' : '')}"><label>${option}<\/label><\/li>`)
         }
+
         const tab = `<div id='${gist.g}' class='tab-panel'>
           <div class='explanation'>${text}<\/div>
           <ul class='tab-pannel-nav nav tabs'>${pannelTabs.join('')}<\/ul>
@@ -33,18 +40,23 @@
           <\/div>
         <\/div>`;
         $('#tabContent').append(tab);
+
         promises.push(iterateQueries(gist));
       }
     }
+
     Promise.all(promises).then(_ => {
       // Find execute button on each graphiql display and append it to tab
       $.each($('#tabContent > div'), (i, elem) => {
         const button = $(elem).find('button.execute-button').first();
         $(elem).find('.graphiql.display').first().append(button);
       });
+
       //Activate first tab and pannel of outer tabs
       $('#tabMenu > li > label').first().parent().toggleClass('active');
+
       $('#tabContent > div').first().toggleClass('active-tab-panel');
+
       //Activate first tab of inner tabs and add onclick element to them
       $.each($('.general-display'), (i, elem) => {
         $(elem).children('.default-display').first().removeClass('default-display').toggleClass('active');
@@ -53,6 +65,7 @@
         $(elem).children().on('click', function () {
           $(this).siblings().removeClass('active');
           $(this).toggleClass('active');
+
           const tabClass = '.' + $(this).children().first().text();
           const tab = $(this).parent().next().children(tabClass).first();
           tab.siblings().removeClass('active');
@@ -63,6 +76,7 @@
       //   $(elem).removeClass('default-tab').toggleClass('active');
       // });seguir aqui
       });
+
       // Add onclick event to outer tabs to allow navigation between them
       $('#tabMenu > li > label').on('click', function () {
         $(this).parent().siblings().removeClass('active');
@@ -71,11 +85,13 @@
         tab.siblings().removeClass('active-tab-panel');
         tab.toggleClass('active-tab-panel');
       });
+
       // Hides loading gif and shows tabs
       $('#tab-holder').addClass('show-tabs');
       $('#pulse-holder').hide();
     });
   }
+
   function iterateQueries(gist) {
     const url = "https://gist.githubusercontent.com/" + (gist.u || default_user) + "/" + gist.g + "/raw";
     return new Promise(resolve => {
@@ -85,6 +101,7 @@
       });
     })
   }
+
   function renderGist(q) {
     /**
        * This GraphiQL example illustrates how to use some of GraphiQL's props
@@ -95,6 +112,7 @@
        * various React params to enable interesting integrations.
        */
     var fetchURL = 'https://api.travelgatex.com';
+
     // Parse the search string to get url parameters.
     var search = window.location.search;
     var parameters = {};
@@ -105,10 +123,13 @@
           decodeURIComponent(entry.slice(eq + 1));
       }
     });
+
     // if variables were provided, try to format it. 
     parameters.variables = ''; // TODO
+
     const formattedQuery = q.data;
     parameters.query = formattedQuery;
+
     if (parameters.variables) {
       try {
         parameters.variables =
@@ -118,20 +139,25 @@
         // than present an error.
       }
     }
+
     // When the query and variables string is edited, update the URL bar so
     // that it can be easily shared
+
     function onEditQuery(newQuery) {
       parameters.query = newQuery;
-      //updateURL();
+      // updateURL();
     }
+
     function onEditVariables(newVariables) {
       parameters.variables = newVariables;
-      //updateURL();
+      // updateURL();
     }
+
     function onEditOperationName(newOperationName) {
       parameters.operationName = newOperationName;
-      //updateURL();
+      // updateURL();
     }
+
     function updateURL() {
       var newSearch = '?' + Object.keys(parameters).filter(function (key) {
         return Boolean(parameters[key]);
@@ -141,6 +167,7 @@
       }).join('&');
       history.replaceState(null, null, newSearch);
     }
+
     // Defines a GraphQL fetcher using the fetch API. You're not required to
     // use fetch, and could instead implement graphQLFetcher however you like,
     // as long as it returns a Promise or Observable.
@@ -167,6 +194,7 @@
         }
       });
     }
+
     // Render <GraphiQL /> into the body.
     // See the README in the top level of this module to learn more about
     // how you can customize GraphiQL by providing different values or

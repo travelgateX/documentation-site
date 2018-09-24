@@ -22,6 +22,7 @@ The commission file should be in the below format:
     * _creationDateFrom_  → start creation date
     * _creationDateTo_   → end creation date
     * _checkInFrom_  → checkin date
+    * _checkInTo_  → checkout date
     * _hotelCodes_  → hotel code
     * _nothotelCodes_  → hotel code
     * _chainsCodes_  → chain code
@@ -30,8 +31,8 @@ The commission file should be in the below format:
     * _notDestinationCodes_  → destination code
     * _percentage_  → commission value, decimal separator must be point (".") 
     * _force_  → (boolean value **true/false**)
-        * **false value** (if value is false the rule will not be applied despite of matching all its conditions criteria if a commission is received from the supplier trough the integration).
-        * **true value** if value is true the rule will be applied if matching all its conditions criteria regardless of if a commission is received or not from the supplier trough the integration).
+        * **false value** (if the value is false, the rule will not be applied despite of matching all its conditions criteria if a commission is received from the supplier through the integration).
+        * **true value** if the value is true, the rule will be applied if matching all its conditions criteria, regardless of a commission being received or not from the supplier through the integration).
         * **Example**  
     
         ```csv
@@ -41,9 +42,9 @@ The commission file should be in the below format:
         yes,no,rule NOT applied regardless of matching all its criteria conditions
         yes,yes,rule applied (if matching all its criteria conditions)
         ```
-       * **List file fields** 
+       * **List of file fields** 
   
-        |Field | Mandatory | Excluded fileds* | Multi-value |
+        |Field | Mandatory | Excluded fields* | Multi-value |
         |---|---|---|---|
         |ruleId| Yes | - | No |
         |supplierCodes| Yes | notSupplierCodes | Yes |
@@ -51,6 +52,7 @@ The commission file should be in the below format:
         |creationDateFrom| No | - | No |
         |creationDateTo| No | - | No |
         |checkInFrom| No | - | No |
+        |checkInTo| No | - | No |
         |hotelCodes| No | nothotelCodes | Yes |
         |nothotelCodes| No | hotelCodes | Yes |
         |chainsCodes| No | notChainCodes | Yes |
@@ -59,7 +61,7 @@ The commission file should be in the below format:
         |notDestinationCodes| No | DestinationCodes | Yes |
         |percentage| Yes | - | No |
         |force| Yes | - | No |
-        *Excluded fileds **Informed field will be ignored**
+        *Excluded fields **Informed fields will be ignored**
 
 * **Delimiter**:  Comma (“,”)
 * **Separator for multiples codes in the same row**: Semicolon (";")

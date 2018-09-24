@@ -12,7 +12,155 @@ To make it easier for users and contributors to see precisely what notable chang
 
 {{% alert theme="info" %}}All notable changes on TravelgateX platform will be documented in this page.{{% /alert %}}
 
-## 2018-07-25{#20180725}
+## 2018-09-20
+
+{{% release-notes-container type="c"%}}
+- [GraphQL Schema updated.](/travelgatex/release-notes/graphql-schema-changes/#2018-09-20)
+{{% /release-notes-container %}}
+
+{{% release-notes-container type="f"%}}
+- Product name `FlightsX`.
+{{% /release-notes-container %}}
+
+## 2018-09-10
+
+{{% release-notes-container type="c"%}}
+- [GraphQL Schema updated.](/travelgatex/release-notes/graphql-schema-changes/#2018-09-10)
+{{% /release-notes-container %}}
+
+## 2018-08-29
+
+{{% release-notes-container type="a"%}}
+- Added pagination to partners list
+{{% /release-notes-container %}}
+
+## 2018-08-27
+
+{{% release-notes-container type="c"%}}
+- [GraphQL Schema updated.](/travelgatex/release-notes/graphql-schema-changes/#2018-08-27)
+{{% /release-notes-container %}}
+
+## 2018-08-22
+
+{{% release-notes-container type="c"%}}
+- [GraphQL Schema updated.](/travelgatex/release-notes/graphql-schema-changes/#2018-08-22)
+{{% /release-notes-container %}}
+
+{{% release-notes-container type="a"%}}
+- Entity's Owner and its related Filters, queries and mutations.
+- `parents` and `descendents` queries for `Group` and `Organization`.
+- Old connect form migrated to TravelgateX
+- Clients and suppliers CRUD
+{{% /release-notes-container %}}
+
+{{% release-notes-container type="f"%}}
+- Corrected change of Payment's structure
+- Basic Audit by request using header `TGX-Audit: 1` See more: [TGX Headers page](/travelgatex/concepts/request-headers)
+{{% /release-notes-container %}}
+
+## 2018-08-14
+
+
+{{% release-notes-container type="a"%}}
+- New section for entities in IAM
+- Accesses CRUD
+{{% /release-notes-container %}}
+
+{{% release-notes-container type="c"%}}
+- [GraphQL Schema updated.](/travelgatex/release-notes/graphql-schema-changes/#2018-08-14)
+{{% /release-notes-container %}}
+
+## 2018-08-13
+
+{{% release-notes-container type="c"%}}
+- [GraphQL Schema updated.](/travelgatex/release-notes/graphql-schema-changes/#2018-08-13)
+{{% /release-notes-container %}}
+
+## 2018-08-08
+
+{{% release-notes-container type="c"%}}
+- [GraphQL Schema updated.](/travelgatex/release-notes/graphql-schema-changes/#2018-08-08)
+{{% /release-notes-container %}}
+
+{{% release-notes-container type="a"%}}
+- [TGX Headers page](/travelgatex/concepts/request-headers)
+- Support basic Tracing by request using header `TGX-Tracing: 1`
+- Return groups codes on entities queries (`accessData`,`suppierData`,`clientData`,`profileData`).
+- Access name filter
+- New default group when user account is deleted.
+- Audit members has been added in createMember and deleteMember
+{{% /release-notes-container %}}
+
+{{% release-notes-container type="f"%}}
+- Response of Access and Supplier query when no accesses on the request
+- Entity propagation
+- Permission check
+- Update member auditions and refactor that funcionality
+- URL resolver
+- API/resource resolvers
+- Roles function with new admin permissions
+{{% /release-notes-container %}}
+
+
+## 2018-07-31
+
+{{% release-notes-container type="c"%}}
+- Improvements in the organization selector and modal.
+- [GraphQL Schema updated.](/travelgatex/release-notes/graphql-schema-changes/#2018-07-31)
+{{% /release-notes-container %}}
+
+{{% release-notes-container type="f"%}}
+- IAM mutations
+- All groups in resources and apis resolvers
+{{% /release-notes-container %}}
+
+{{% release-notes-container type="a"%}}
+
+- Added columns to IAM members user table
+- Added option to assign roles through templates of macro roles to IAM members
+- "WHOLESALER" seller added to filter list of partners
+- Delete member mutation (Delete Apikeys or uninvite user emails)
+- Public deleteGroup function and made it public
+{{% /release-notes-container %}}
+
+## 2018-07-30
+
+{{% release-notes-container type="c"%}}
+- Improvements on the organization selector
+    - Sorted organizations in alphabetical order.
+    - Autoselect when there is just one org. available.
+    - Popup when there is no org. selected.
+    - Prettier component.
+{{% /release-notes-container %}}
+{{% release-notes-container type="a"%}}
+- Iam members
+    - Label, created at and updated at columns on members table.
+    - Option to assign roles by macro-roles
+- Seller "WHOLESALER" to the partners filter on the directory and partners screen.
+- New admin permissions
+{{% /release-notes-container %}}
+
+{{% release-notes-container type="f"%}}
+- Groups function filters
+{{% /release-notes-container %}}
+
+## 2018-07-27
+
+{{% release-notes-container type="f"%}}
+- Organizations queries resolvers
+{{% /release-notes-container %}}
+
+## 2018-07-26
+
+{{% release-notes-container type="c"%}}
+- [GraphQL Schema updated.](/travelgatex/release-notes/graphql-schema-changes/#20180726)
+{{% /release-notes-container %}}
+{{% release-notes-container type="f"%}}
+- Groups resolvers
+{{% /release-notes-container %}}
+
+
+## 2018-07-25
 
 {{% release-notes-container type="c"%}}
 - [GraphQL Schema updated.](/travelgatex/release-notes/graphql-schema-changes/#20180725)
@@ -31,10 +179,10 @@ To make it easier for users and contributors to see precisely what notable chang
 
 
 
-## 2018-07-16{#20180716}
+## 2018-07-16
 
 {{% release-notes-container type="a"%}}
-- [GraphQL Schema breaking changes](/travelgatex/release-notes/breaking-changes/). Sustitutes and fixes to Deprecated and Deleted Notes pages.
+- [GraphQL Schema breaking changes](/travelgatex/release-notes/breaking-changes/). Substitutes and fixes to Deprecated and Deleted Notes pages.
 {{% /release-notes-container %}}
 
 {{% release-notes-container type="c"%}}
@@ -49,7 +197,7 @@ To make it easier for users and contributors to see precisely what notable chang
 - Documentation pages' styles
 {{% /release-notes-container %}}
 
-## 2018-07-10{#20180704}
+## 2018-07-10
 
 {{% release-notes-container type="a"%}}
 - [Deleted schema notes](/travelgatex/release-notes/deprecated_notes/)
@@ -61,7 +209,7 @@ To make it easier for users and contributors to see precisely what notable chang
 - New version of [Deprecated schema notes](/travelgatex/release-notes/deprecated_notes/)
 {{% /release-notes-container %}}
 
-## 2018-07-09{#20180704}
+## 2018-07-09
 {{% release-notes-container type="r"%}}
 - Previously deprecated queries. [See more](/travelgatex/release-notes/breaking-changes/#2018-07-09)
 {{% /release-notes-container %}}

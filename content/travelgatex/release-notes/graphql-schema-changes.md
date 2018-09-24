@@ -14,6 +14,297 @@ The GraphQL schema change log is a list of recent and upcoming changes to our Gr
 
 Check out this list of new releases and changes applied on the **TravelgateX GraphQL API**.
 
+## 2018-09-20
+
+✅  Input field `UpdateProfileInput.label` changed type from `String!` to `String`
+
+✅  Input field `isPublished` was added to input object type `UpdateProfileInput`
+
+✅  Input field `isActive` was added to input object type `UpdateProfileInput`
+
+✅  Input field `isPublished` was added to input object type `CreateProfileInput`
+
+✅  Input field `isActive` was added to input object type `CreateProfileInput`
+
+✅  Field `isPublished` was added to object type `ProfileData`
+
+✅  Field `isActive` was added to object type `ProfileData`
+
+## 2018-09-10
+
+✅  Description `Input delta price, indicates price variation permitted by the client An error will be returned if the new price does not abide to DeltaPrice. If DeltaPrice is not sent and the integration implements it, we assume that the price range is 0 and the process will continue (price is lower or equal to the price showed in valuation). This field is implemented if it’s native to the supplier or if another availability/valuation request needs to be done in Reservation. In case the supplier blocks the option in valuation, reservation will be done automatically in reservation method.`
+
+on type `DeltaPriceInput` has changed to `Input delta price, indicates price variation permitted by the client
+An error will be returned if the new price does not abide to DeltaPrice. If DeltaPrice is not sent and the integration implements it, we assume that the price range is 0 and the process will continue (price is lower or equal to the price showed in valuation). This field is implemented if it’s native to the supplier or if another availability/valuation request needs to be done in Reservation. In case the supplier blocks the option in valuation, reservation will be done automatically in reservation method.`
+
+✅  Field `PaymentXQuery.storedCard` description changed from `Returns a stored card information. ` to `Returns a stored card information.`
+
+✅  Field `PaymentXQuery.allStoredCards` description changed from `Returns the stored card list. For security, this query never will return clear card information. ` to `Returns the stored card list. For security, this query never will return clear card information.`
+
+✅  Input field `HotelSettingsInput.clientTokens` description changed from `Used to identify the origin of the request, this is only used in plugins. ` to `Used to identify the origin of the request, this is only used in plugins.`
+
+✅  Field `runtimeConfiguration` was added to object type `HotelXQuery`
+
+✅  Input field `isActive` was added to input object type `EntityFilter`
+
+✅  Field `AdminQuery.products` description changed from `Product catalog; specify products codes to filter ` to `Product catalog; specify products codes to filter`
+
+✅  Type `MetadataType` was added
+
+✅  Type `TagRuntimeType` was added
+
+✅  Type `HotelRuntimeParameter` was added
+
+✅  Type `HotelRuntimeConfigurationData` was added
+
+✅  Type `HotelRuntimeConfiguration` was added
+
+## 2018-08-27
+
+✅  Description `Input delta price, indicates price variation permitted by the client. An error will be returned if the new price does not abide to DeltaPrice. If DeltaPrice is not sent and the integration implements it, we assume that the price range is 0 and the process will continue (price is lower or equal to the price showed in valuation).This field is implemented if it’s native to the supplier or if another availability/valuation request needs to be done in Reservation. In case the supplier blocks the option in valuation, reservation will be done automatically in reservation method.`
+on type `DeltaPriceInput` has changed to
+`Input delta price, indicates price variation permitted by the client An error will be returned if the new price does not abide to DeltaPrice. If DeltaPrice is not sent and the integration implements it, we assume that the price range is 0 and the process will continue (price is lower or equal to the price showed in valuation). This field is implemented if it’s native to the supplier or if another availability/valuation request needs to be done in Reservation. In case the supplier blocks the option in valuation, reservation  will be done automatically in reservation method.`
+
+✅  Argument `filter: HotelXFilterInput` added to field `HotelXMutation.cancel`
+
+✅  Argument `filter: HotelXFilterInput` added to field `HotelXMutation.book`
+
+✅  Field `PaymentXQuery.storedCard` description changed from `Returns a stored card information.` to `Returns a stored card information. `
+
+✅  Field `PaymentXQuery.allStoredCards` description changed from `Returns the stored card list. For security, this query never will return clear card information.` to `Returns the stored card list. For security, this query never will return clear card information. `
+
+✅  Input field `HotelSettingsInput.clientTokens` description changed from `Used to identify the origin of the request, this is only used in plugins.` to `Used to identify the origin of the request, this is only used in plugins. `
+
+✅  Argument `filter: HotelXFilterInput` added to field `HotelXQuery.booking`
+
+✅  Argument `filter: HotelXFilterInput` added to field `HotelXQuery.quote`
+
+✅  Argument `filterSearch: HotelXFilterSearchInput` added to field `HotelXQuery.search`
+
+✅  Deprecation reason on field `Product.error` has changed from `` to `deprecated from 2018-08-22. Sustituted by adviseMessage`
+
+✅  Field `adviseMessage` was added to object type `Product`
+
+✅  Deprecation reason on field `Operation.error` has changed from `` to `deprecated from 2018-08-22. Sustituted by adviseMessage`
+
+✅  Field `adviseMessage` was added to object type `Operation`
+
+✅  Deprecation reason on field `API.error` has changed from `` to `deprecated from 2018-08-22. Sustituted by adviseMessage`
+
+✅  Field `adviseMessage` was added to object type `API`
+
+✅  Deprecation reason on field `Resource.error` has changed from `` to `deprecated from 2018-08-22. Sustituted by adviseMessage`
+
+✅  Field `adviseMessage` was added to object type `Resource`
+
+✅  Deprecation reason on field `Role.error` has changed from `` to `deprecated from 2018-08-22. Sustituted by adviseMessage`
+
+✅  Field `adviseMessage` was added to object type `Role`
+
+✅  Deprecation reason on field `Member.error` has changed from `` to `deprecated from 2018-08-22. Sustituted by adviseMessage`
+
+✅  Field `Member.error` description changed from `` to `Errors that abort services`
+
+✅  Field `adviseMessage` was added to object type `Member`
+
+✅  Deprecation reason on field `Organization.error` has changed from `` to `deprecated from 2018-08-22. Sustituted by adviseMessage`
+
+✅  Field `adviseMessage` was added to object type `Organization`
+
+✅  Field `AdminQuery.products` description changed from `Product catalog; specify products codes to filter` to `Product catalog; specify products codes to filter `
+
+## 2018-08-22
+
+🛑  `Text` kind changed from `INTERFACE` to `OBJECT`
+
+🛑  `AdviseMessage` kind changed from `INTERFACE` to `OBJECT`
+
+✅  Input field `owner` was added to input object type `UpdateProfileInput`
+
+✅  Input field `owner` was added to input object type `CreateProfileInput`
+
+✅  Input field `owner` was added to input object type `UpdateClientInput`
+
+✅  Input field `owner` was added to input object type `CreateClientInput`
+
+✅  Input field `owner` was added to input object type `AccessInput`
+
+✅  Field `parents` was added to object type `OrganizationData`
+
+✅  Field `descendents` was added to object type `OrganizationData`
+
+✅  Input field `owner` was added to input object type `EntityFilter`
+
+✅  Input field `owner` was added to input object type `ProfileFilter`
+
+✅  Field `owner` was added to object type `ProfileData`
+
+✅  Input field `owner` was added to input object type `PointOfSaleFilter`
+
+✅  Field `owner` was added to object type `PointOfSaleData`
+
+✅  Input field `owner` was added to input object type `ClientFilter`
+
+✅  Input field `owner` was added to input object type `SupplierFilter`
+
+✅  Input field `owner` was added to input object type `AccessFilter`
+
+✅  Field `owner` was added to object type `ClientData`
+
+✅  Field `GroupData.parents` description changed from `Recursive call with all ascendant parents tree` to `Response all parents groups nodes for this group (nom-hierarchically)`
+
+✅  Field `descendents` was added to object type `GroupData`
+
+✅  Field `owner` was added to object type `SupplierData`
+
+✅  Field `isShedulerActive` was added to object type `AccessData`
+
+✅  Field `owner` was added to object type `AccessData`
+
+✅  Type `HotelXFilterSearchInput` was added
+
+✅  Type `HotelXFilterPluginTypeInput` was added
+
+✅  Type `HotelXPluginFilterInput` was added
+
+✅  Type `HotelXFilterInput` was added
+
+## 2018-08-14
+
+🛑  Type for argument `input` on field `PaymentXMutation.storeCard` changed from `PaymentXStoreCardInput!` to `PaymentXStoredCardInput!`
+
+🛑  Field `PaymentXMutation.storeCard` changed type from `StoredCard!` to `PaymentXStoredCard!`
+
+🛑  Field `deleteCard` was removed from object type `PaymentXMutation`
+
+🛑  Field `PaymentXQuery.vaultStatusService` changed type from `ServiceStatus!` to `AdviseMessage!`
+
+🛑  Field `cards` was removed from object type `PaymentXQuery`
+
+🛑  Type `PaymentXBookingInfoDeleteInput` was removed
+
+🛑  Type `PointOfSaleInput` was removed
+
+🛑  Type `PaymentXBookingInfoInput` was removed
+
+🛑  Type `PaymentXStoreCardInput` was removed
+
+🛑  Type `PaymentXBookingInfoCriteriaInput` was removed
+
+🛑  Type `PaymentXBookingInfoFilterInput` was removed
+
+🛑  Type `ExpireDate` was removed
+
+🛑  Type `PaymentCard` was removed
+
+🛑  Type `PaymentXBookingInfo` was removed
+
+🛑  Type `StoredCardData` was removed
+
+🛑  Type `StoredCard` was removed
+
+🛑  Type `StoredCardEdge` was removed
+
+🛑  Type `StoredCardConnection` was removed
+
+✅  Field `deleteStoredCard` was added to object type `PaymentXMutation`
+
+✅  Field `PaymentXQuery.vaultStatusService` description changed from `Returns status of the search service.` to `Returns status of the vault service.`
+
+✅  Field `storedCard` was added to object type `PaymentXQuery`
+
+✅  Field `allStoredCards` was added to object type `PaymentXQuery`
+
+✅  Input field `countries` was added to input object type `HotelXHotelListInput`
+
+✅  Type `PaymentXStoredCardInput` was added
+
+✅  Type `PaymentXStoredCardIDInput` was added
+
+✅  Type `PaymentXStoredCardFilterInput` was added
+
+✅  Type `PaymentXExpireDate` was added
+
+✅  Type `PaymentXStoredCardData` was added
+
+✅  Type `PaymentXStoredCard` was added
+
+✅  Type `PaymentXStoredCardEdge` was added
+
+✅  Type `PaymentXStoredCardConnection` was added
+
+
+## 2018-08-13
+
+🛑  Field `ProfileData.group` changed type from `Group!` to `Group`
+
+🛑  Field `ClientData.group` changed type from `Group!` to `Group`
+
+🛑  Argument `type: GroupType` was removed from field `GroupData.managedGroups`
+
+🛑  Field `GroupData.managedGroups` changed type from `GroupConnection` to `ManagedGroupConnection`
+
+🛑  Field `SupplierData.groups` changed type from `GroupConnection!` to `GroupConnection`
+
+🛑  Field `AccessData.groups` changed type from `GroupConnection!` to `GroupConnection`
+
+✅  Argument `role: [ID!]` added to field `GroupData.managedGroups`
+
+✅  Argument `resource: [ID!]` added to field `GroupData.managedGroups`
+
+✅  Argument `api: [ID!]` added to field `GroupData.managedGroups`
+
+✅  Argument `group: [ID!]` added to field `GroupData.managedGroups`
+
+✅  Field `GroupData.managedGroups` description changed from `Responses all groups in its group's childrens (hierarchically),` to `Responses all managed groups by this group.`
+
+✅  Type `ManagedGroupData` was added
+
+✅  Type `ManagedGroup` was added
+
+✅  Type `ManagedGroupEdge` was added
+
+✅  Type `ManagedGroupConnection` was added
+
+## 2018-08-08
+
+✅  Input field `currency` was added to input object type `SettingsBaseInput`
+
+✅  Field `parents` was added to object type `GroupData`
+
+✅  Deprecation reason on field `Group.error` has changed from `` to `deprecated from 2018-08-01. Sustituted by adviseMessage`
+
+✅  Field `adviseMessage` was added to object type `Group`
+
+✅  Field `group` was added to object type `ProfileData`
+
+✅  Field `group` was added to object type `ClientData`
+
+✅  Field `groups` was added to object type `SupplierData`
+
+✅  Field `groups` was added to object type `AccessData`
+
+## 2018-07-31
+
+✅  Field `StoredCard.adviseMessage` description changed from `List of advise messages.` to `List of messages`
+
+✅  Deprecation reason on field `AddOns.distribute` has changed from `You can find it in distribution AddOn` to `deprecated from 2018-05-21. You can find it in distribution AddOn`
+
+✅  Field `PointOfSale.adviseMessage` description changed from `List of messages` to `List of advise messages.`
+
+✅  Field `entities` was added to object type `AdminQuery`
+
+✅  Type `EntityFilter` was added
+
+
+## 2018-07-26 {#20180726}
+
+⚠️  Enum value `ORG` was added to enum `GroupTypeInput`
+
+⚠️  Enum value `ROOT` was added to enum `GroupTypeInput`
+
+⚠️  Enum value `ROOT` was added to enum `GroupType
+
 ## 2018-07-25 {#20180725}
 
 🛑  Input field `HotelSettingsInput.group` changed type from `String` to `ID`
