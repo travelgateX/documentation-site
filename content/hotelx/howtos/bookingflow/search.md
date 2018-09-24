@@ -52,6 +52,8 @@
 }
 
 [comment]: <> (Cargamos la librería de GraphiQL para mostrar los ejemplos)
+{{% graphiql-tabs %}}
+{{% /graphiql-tabs %}}
 
 {{< graphiql-styles >}}
 
