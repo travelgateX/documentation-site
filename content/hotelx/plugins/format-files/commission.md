@@ -19,10 +19,10 @@ The commission file should be in the below format:
     * _ruleId_  → rule identifier
     * _supplierCodes_  → supplier code
     * _notSupplierCodes_  → supplier code
-    * _creationDateFrom_  → start creation date
-    * _creationDateTo_   → end creation date
-    * _checkInFrom_  → checkin date
-    * _checkInTo_  → checkout date
+    * _creationDateFrom_  → start creation date [**Date format**](/hotelx/plugins/format-files/commission#dateformat)
+    * _creationDateTo_   → end creation date [**Date format**](/hotelx/plugins/format-files/commission#dateformat)
+    * _checkInFrom_  → checkin date [**Date format**](/hotelx/plugins/format-files/commission#dateformat)
+    * _checkInTo_  → checkout date [**Date format**](/hotelx/plugins/format-files/commission#dateformat)
     * _hotelCodes_  → hotel code
     * _nothotelCodes_  → hotel code
     * _chainsCodes_  → chain code
@@ -86,3 +86,8 @@ ruleId,supplierCodes,notSupplierCodes,creationDateFrom,creationDateTo,checkInFro
 CE1,DIN;HOB;JMB,,,,2018-04-01,2018-10-31,3846,,,,,,18.50,false
 CE2,DIN,,,,,,3846,,,,,,15.00,false
 ```
+
+#### **Date format** {#dateformat}
+{{% notice warning %}}
+Date format **yyyy-mm-dd** is mandatory
+{{% /notice %}}

@@ -20,10 +20,10 @@ The safety margin file should be in the below format:
     * _clientTokens_  → client Tokens*
     * _supplierCodes_  → supplier code
     * _notSupplierCodes_  → supplier code
-    * _creationDateFrom_  → start creation date
-    * _creationDateTo_   → end creation date
-    * _checkInFrom_  → checkinfrom date
-    * _checkInTo_  → checkinto date
+    * _creationDateFrom_  → start creation date [**Date format**](/hotelx/plugins/format-files/commission#dateformat)
+    * _creationDateTo_   → end creation date [**Date format**](/hotelx/plugins/format-files/commission#dateformat)
+    * _checkInFrom_  → checkinfrom date [**Date format**](/hotelx/plugins/format-files/commission#dateformat)
+    * _checkInTo_  → checkinto date [**Date format**](/hotelx/plugins/format-files/commission#dateformat)
     * _hotelCodes_  → hotel code
     * _nothotelCodes_  → hotel code
     * _chainsCodes_  → chain code
@@ -78,3 +78,8 @@ ruleId,clientTokens,supplierCodes,notSupplierCodes,creationDateFrom,creationDate
 CE1,XXX,DIN;HOB;JMB,,,,2018-04-01,2018-10-31,3846,,,,,,18.50
 CE2,YYY,DIN,,,,,,3846,,,,,,15.00
 ```
+
+### **Date format** {#dateformat}
+{{% notice warning %}}
+Date format **yyyy-mm-dd** is mandatory
+{{% /notice %}}

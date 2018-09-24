@@ -20,10 +20,10 @@ The net compare file should be in the format below:
     * _clientTokens_  → client Tokens*
     * _supplierCodes_  → supplier code
     * _notSupplierCodes_  → supplier code
-    * _bookingDateFrom_  → booking date from
-    * _bookingDateTo_   → booking date to
-    * _startDateFrom_  → start date from
-    * _startDateTo_  → start date to
+    * _bookingDateFrom_  → booking date from [**Date format**](/hotelx/plugins/format-files/commission#dateformat)
+    * _bookingDateTo_   → booking date to [**Date format**](/hotelx/plugins/format-files/commission#dateformat)
+    * _startDateFrom_  → start date from [**Date format**](/hotelx/plugins/format-files/commission#dateformat)
+    * _startDateTo_  → start date to [**Date format**](/hotelx/plugins/format-files/commission#dateformat)
     * _hotelCodes_  → hotel code
     * _nothotelCodes_  → hotel code
     * _chainsCodes_  → chain code
@@ -102,3 +102,8 @@ ruleId,clientTokens,supplierCodes,notSupplierCodes,bookingDateFrom,bookingDateTo
 1019,,MED,,,,,2019-04-30,,,MEDP,,,,-3,
 1020,,SEN,,,,,2019-04-30,,,PLYHT,,,,-4.25,
 ```
+
+### **Date format** {#dateformat}
+{{% notice warning %}}
+Date format **yyyy-mm-dd** is mandatory
+{{% /notice %}}
