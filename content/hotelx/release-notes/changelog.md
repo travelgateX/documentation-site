@@ -14,6 +14,20 @@ It makes it easier for users and contributors to see the most notable changes th
 
 {{% alert theme="info" %}}All notable changes on our platform will be documented on this page.{{% /alert %}}
 
+## 2018-09-25
+{{% release-notes-container type="a"%}}
+- Status tipification to be able to differentiate from critical to non-critical external services
+{{% /release-notes-container %}}
+
+{{% release-notes-container type="f"%}}
+- Commission and currency rates are now keep unchanged between Quote and Book
+{{% /release-notes-container %}}
+
+{{% release-notes-container type="c"%}}
+- Operation and Access processes have been updated to register times of their different execution steps and their processed options.
+- Transactions to worker are now monitorized in their own span with supplier's communication times, parsing times and processed options.
+{{% /release-notes-container %}}
+
 ## 2018-09-06
 {{% release-notes-container type="f"%}}
 - Fix apply Markups to net price

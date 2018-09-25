@@ -1,47 +1,65 @@
-	<section id="fh5co-work" data-section="work">
-		<div class="container">
-			<div class="row">
-				<div class="col-xs-12 section-heading text-center">
-					<h2 class="to-animate">{{ with .Site.Params.work.title }}{{ . }}{{ end }}</h2>
-					<div class="row">
-						<div class="col-xs-12 subtext to-animate">
-							<h3>{{ with .Site.Params.work.description }}{{ . | markdownify }}{{ end }}</h3>
-						</div>
+<section id="fh5co-work" data-section="work">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 section-heading text-center">
+				<h2 class="to-animate">{{ with .Site.Params.work.title }}{{ . }}{{ end }}</h2>
+				<div class="row">
+					<div class="col-xs-12 subtext to-animate">
+						<h3>{{ with .Site.Params.work.description }}{{ . | markdownify }}{{ end }}</h3>
 					</div>
 				</div>
 			</div>
-			<div class="row row-bottom-padded-sm">
-			{{ range .Site.Params.work.row }}
+		</div>
+		<div class="row row-bottom-padded-sm" id="products-container" v-if="products.length">
+			<template v-for="(product, index) in products">
 				<div class="col-md-4 col-sm-6 col-xs-12">
-					<a href="{{ .url }}" class="fh5co-work-item">
-						<div class="media to-animate">
-						  <div class="media-left">
-						    <a href="#">
-						      <img src="images/{{ .img }}" alt="{{ .alt }}">
-						    </a>
-						  </div>
-						  <div class="media-body">
-						    <h2 class="tit">{{ .title }}</h2>
-						  </div>
-						  <p class="subtit">{{ .subtitle }}</p>
-						  <a href="{{ .url }}">More information</a>
+					<a :href="'https://www.travelgatex.com/products/' + product.contentTitle.toLowerCase()" class="fh5co-work-item">
+						<div class="media">
+							<div class="media-left">
+								<a href="#">
+									<img :src="product.contentImage.url" :alt="product.contentTitle">
+								</a>
+							</div>
+							<div class="media-body">
+								<h2 class="tit" v-text="product.title"></h2>
+							</div>
+							<p class="subtit" v-text="product.contentSubTitle"></p>
+							<a :href="'https://www.travelgatex.com/products/' + product.contentTitle.toLowerCase()">More information</a>
 						</div>
 					</a>
-					<!-- <a href="{{ .url }}" class="fh5co-project-item to-animate">
-						<img src="images/{{ .img }}" alt="{{ .alt }}" class="img-responsive">
-						<div class="fh5co-text">
-						<h2>{{ .title }}</h2>
-						<span>{{ .subtitle }}</span>
-						</div>
-					</a> -->
-				</div>				
-				<div class="clearfix visible-sm-block"></div>
-			{{ end }}
-			</div>
-			<div class="row">
-				<div class="col-md-12 text-center to-animate">
-					<p class="apis">{{ .Site.Params.work.footertext | markdownify }}</p>
 				</div>
+				<div class="clearfix visible-sm-block"></div>
+				<div v-if="(index + 1)%2 === 0 && index > 0" class="clearfix visible-md-block"></div>
+				<div v-if="(index + 1)%3 === 0 && index > 1" class="clearfix visible-lg-block"></div>
+			</template>
+		</div>
+		<div class="row">
+			<div class="col-md-12 text-center to-animate">
+				<p class="apis">{{ .Site.Params.work.footertext | markdownify }}</p>
 			</div>
 		</div>
-	</section>
+	</div>
+</section>
+<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+<script>
+
+
+	const app = new Vue({
+		el: '#products-container',
+		data: {
+			products: []
+		}
+	})
+
+	window.onload = function () {
+		fetch('https://www.travelgatex.com/cms/getAllProductContent')
+			.then(function (response) {
+				return response.json();
+			})
+			.then(function (json) {
+				const products = json.data.allContents;
+				app.products = products;
+			});
+
+	}
+</script>
