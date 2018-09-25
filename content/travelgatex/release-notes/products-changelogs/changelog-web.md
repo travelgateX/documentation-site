@@ -18,7 +18,7 @@ To make it easier for users and contributors to see precisely what notable chang
 ## 2018-09-20
 
 {{% release-notes-container type="a"%}}
-- [New public press section.](https://www.travelgatex.com/press)
+- New web site release notes section. We start publishing release notes of the web site.
 {{% /release-notes-container %}}
 
 {{% wip %}}
