@@ -21,5 +21,3 @@ To make it easier for users and contributors to see precisely what notable chang
 - Added admin toggle to entities to allow the creation of accesses, clients and suppliers.
 - Added link button on accesses, clients and suppliers toggles, to link the resource at the current group level.
 {{% /release-notes-container %}}
-
-{{% wip %}}
