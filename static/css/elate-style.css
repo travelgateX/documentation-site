@@ -1722,3 +1722,217 @@ a:active {
   margin: 20px 0 50px 0;
 }
 /* # sourceMappingURL=style.css.map */
+
+
+/*   Platform (Getting started view)
+----------------------------------------------------------------------------------------------------*/
+.platform_getting_started {
+  max-width: 90%;
+  max-height: 90%;
+  display: block;
+  margin: 50px auto;
+}
+
+.platform_getting_started .clients-icon.fade-in {
+  animation-delay: 0s;
+}
+
+.platform_getting_started #line1 {
+  fill-opacity: 0;
+  stroke-width: 3;
+  stroke-dasharray: 670;
+  stroke-dashoffset: -670;
+  animation: draw-a 4s 0.5s forwards;
+}
+
+.platform_getting_started #api_polygon {
+  fill-opacity: 0;
+  stroke-width: 3;
+  stroke-dasharray: 670;
+  stroke-dashoffset: -670;
+  animation: draw-a 4s 1s forwards;
+}
+
+.platform_getting_started .api_text.fade-in {
+  animation-delay: 1.5s;
+}
+
+.platform_getting_started #line2 {
+  fill-opacity: 0;
+  stroke-width: 3;
+  stroke-dasharray: 670;
+  stroke-dashoffset: -670;
+  animation: draw-a 4s 2s forwards;
+}
+
+.platform_getting_started #line3 {
+  fill-opacity: 0;
+  stroke-width: 3;
+  stroke-dasharray: 670;
+  stroke-dashoffset: -670;
+  animation: draw-a 4s 3s forwards;
+}
+
+.platform_getting_started .hotelx_icon.fade-in,
+.hotelx.fade-in {
+  animation-duration: 2s;
+  animation-delay: 3s;
+}
+
+.platform_getting_started #line4 {
+  fill-opacity: 0;
+  stroke-width: 3;
+  stroke-dasharray: 670;
+  stroke-dashoffset: -670;
+  animation: draw-a 4s 3.5s forwards;
+}
+
+.platform_getting_started .speed-icon.fade-in,
+.speed.fade-in {
+  animation-duration: 2s;
+  animation-delay: 3.5s;
+}
+
+.platform_getting_started #line5 {
+  fill-opacity: 0;
+  stroke-width: 3;
+  stroke-dasharray: 670;
+  stroke-dashoffset: -670;
+  animation: draw-a 4s 4.5s forwards;
+}
+
+.platform_getting_started .hotel_icon.fade-in,
+.hotel.fade-in {
+  animation-delay: 4.5s;
+}
+
+.platform_getting_started .hotel_wholesalers.fade-in,
+.hotel_wholesalers_icon.fade-in {
+  animation-duration: 2s;
+  animation-delay: 5s;
+}
+
+.platform_getting_started #line6 {
+  fill-opacity: 0;
+  stroke-width: 3;
+  stroke-dasharray: 670;
+  stroke-dashoffset: -670;
+  animation: draw-a 4s 6s forwards;
+}
+
+.platform_getting_started .mappeax.fade-in,
+.mappeax_icon.fade-in {
+  animation-delay: 6s;
+}
+
+.platform_getting_started #line7 {
+  fill-opacity: 0;
+  stroke-width: 3;
+  stroke-dasharray: 670;
+  stroke-dashoffset: -670;
+  animation: draw-a 4s 6.5s forwards;
+}
+
+.platform_getting_started .database_1 {
+  fill-opacity: 0;
+  stroke-width: 3;
+  stroke-dasharray: 670;
+  stroke-dashoffset: -670;
+  animation: draw-a 4s 7s forwards;
+}
+
+.platform_getting_started #line8 {
+  fill-opacity: 0;
+  stroke-width: 3;
+  stroke-dasharray: 670;
+  stroke-dashoffset: -670;
+  animation: draw-a 4s 7.5s forwards;
+}
+.platform_getting_started #line3-1 {
+  fill-opacity: 0;
+  stroke-width: 3;
+  stroke-dasharray: 670;
+  stroke-dashoffset: -670;
+  animation: draw-b 1s 8.5s alternate;
+}
+
+.platform_getting_started #line9 {
+  fill-opacity: 0;
+  stroke-width: 3;
+  stroke-dasharray: 670;
+  stroke-dashoffset: -670;
+  animation: draw-a 4s 8.5s forwards;
+}
+
+.platform_getting_started .database_2 {
+  fill-opacity: 0;
+  stroke-width: 3;
+  stroke-dasharray: 670;
+  stroke-dashoffset: -670;
+  animation: draw-a 4s 9s forwards;
+}
+
+.platform_getting_started #line10 {
+  fill-opacity: 0;
+  stroke-width: 3;
+  stroke-dasharray: 670;
+  stroke-dashoffset: -670;
+  animation: draw-a 4s 9.5s forwards;
+}
+
+.platform_getting_started .statsx_icon.fade-in,
+.statsx.fade-in {
+  animation-duration: 2s;
+  animation-delay: 9.5s;
+}
+
+.platform_getting_started #line11 {
+  fill-opacity: 0;
+  stroke-width: 3;
+  stroke-dasharray: 670;
+  stroke-dashoffset: -670;
+  animation: draw-a 4s 10s forwards;
+}
+
+.platform_getting_started #line12 {
+  fill-opacity: 0;
+  stroke-width: 3;
+  stroke-dasharray: 670;
+  stroke-dashoffset: -670;
+  animation: draw-a 4s 10.5s forwards;
+}
+
+.platform_getting_started .insightsx.fade-in {
+  animation-duration: 2s;
+  animation-delay: 10.7s;
+}
+
+.platform_getting_started #line13 {
+  fill-opacity: 0;
+  stroke-width: 3;
+  stroke-dasharray: 670;
+  stroke-dashoffset: -670;
+  animation: draw-a 4s 11.5s forwards;
+}
+
+/*   Creating draw effect on svg elements 
+----------------------------------------------------------------------------------------------------*/
+@keyframes draw-lines {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes draw-a {
+  from {
+    stroke-dashoffset: 670;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes draw-b {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
