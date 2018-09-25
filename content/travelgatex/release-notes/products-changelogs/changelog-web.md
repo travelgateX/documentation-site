@@ -15,10 +15,11 @@ To make it easier for users and contributors to see precisely what notable chang
 
 {{% alert theme="info" %}}All notable changes to this product will be documented in this page.{{% /alert %}}
 
-## 2018-09-20
+## 2018-09-25
 
 {{% release-notes-container type="a"%}}
-- New web site release notes section. We start publishing release notes of the web site.
+- Added admin toggle to entities to allow the creation of accesses, clients and suppliers.
+- Added link button on accesses, clients and suppliers toggles, to link the resource at the current group level.
 {{% /release-notes-container %}}
 
 {{% wip %}}
