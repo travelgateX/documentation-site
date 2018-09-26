@@ -28,7 +28,7 @@
 Quote is an operation used to assess and valuate the rate before the actual booking. It returns the same information as the Search response for a hotel rate with up-to-date price, along with additional information regarding the rate: rate breakdown and cancellation policies.
 
 ## Advanced criteria
-It explains different parameters that can be set up on the request (it indicate which ones are mandatory)
+It explains different parameters that can be set up in the request (it indicates which ones are mandatory)
 
 - **optionRefId**: Identifier of the option chosen in Search. Mandatory
 - **language**: Language to be used in the request
