@@ -1,6 +1,6 @@
 +++
-title = "Good to know"
-pagetitle = "Good to know"
+title = "Useful information"
+pagetitle = "Useful information"
 description = "Some concepts and particularities"
 icon = "fa-check-square-o"
 weight = 7
@@ -9,46 +9,46 @@ alwaysopen = false
 
 ## HotelX Settings
 
-In HotelX we have differents configuration level settings for a request. With settings, you can configure some aspect of the request:
+In HotelX we have different configuration level settings for a request. With settings, you can configure some aspect of the request:
 
 
 | Field  | Description |
 |----|-----|
-| Context | Indicates the context codes that you want to send and to receive.|
-| Timeout | Set request timeout in the differents call types:* search * quote * book (includes book, cancel and booking) |
-|Language|What language you want to do the request.|
-|Currency|Indicates the currency to send to the suppliers.|
-|Nationality|Indicates the nationality to send to the suppliers.|
-|Market|Indicates the market to send to the suppliers.|
-|Business Rules|This rules are used to send directly to the integration, and affected to the supplier response.<br>* Options Quota: number of options returned via integration.<br>* Type: Choose priority of product |
+| Context | It indicates the context codes that you want to send and to receive.|
+| Timeout | It sets request timeout in the differents query and mutation types:* search * quote * book (includes book, cancel and booking) |
+|Language|The language you want to use in the request.|
+|Currency|It indicates the currency you are going to send to the suppliers.|
+|Nationality|It indicates the nationality to send to the suppliers.|
+|Market|It indicates the market to send to the suppliers.|
+|Business Rules|These rules are sent directly via the integration, and affect the supplier's response.<br>* Options Quota: number of options returned via the integration.<br>* Type: Choose priority of product |
 
 
 
-How we have said some lines before, we have three ways to indicated this settings.
+As we have previously stated, we have three ways to indicate these settings.
 
-We are going to begin with the most specific until the most general.
+We are going to start with the most specific until the most general.
 
 ### Settings per request
 
-This setting overwrites all others.
+These settings overwrite all others.
 
 You must have permission to overwrite settings, if you don't have this permission you won't be able to change the configuration on runtime, that is, to each request.
 
-The fields are the same in the three levels, only that the information is overwritten in lower levels. So, request settings overwrite all others settings.
+These fields are the same in the three levels, only that the information is overwritten in lower levels. So, request settings overwrite all other settings.
 
 ### Settings per client
 
 The settings in this level are used when you don’t overwrite settings to request level.
 
-However, if you have the same client in different groups, you can set different settings to each one. In this case, you must specify which group you want to use in the request, to choose which configuration to use.
+However, if you have the same client in different groups, you can set different settings to each one. In this case, you should specify which group you want to use in the request, in order to choose which configuration to use.
 
 ### Settings per HotelX
 
-And the last one, settings per hotelX instance. These settings are in the higher level, in the case that you haven't got client settings and you don't specify it in the request, the settings are got from hotelX instance, this setting is mandatory.
+And the last one, settings per HotelX instance. These settings are in the higher level, in the case that you don't have client's settings and you don't specify them in the request, settings are got from HotelX instance, this setting is mandatory.
 
-## Execute a plugin
+## How to execute a plugin
 
-A plugin execution can be specified in any request’s HotelSettingsInput and must specify in which step has to be executed. The plugin type and name are mandatory in order to identify a plugin instance.
+A plugin execution can be specified in any request’s HotelSettingsInput and it must specify in which step it has to be executed. The plugin type and name are mandatory in order to identify a plugin instance.
 
 ```
 "plugins": {
