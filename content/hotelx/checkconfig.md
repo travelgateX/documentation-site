@@ -7,9 +7,9 @@ weight = 3
 alwaysopen = false
 +++
 
-This call allows you to retrieve relevant information like supplier access code (link a lo que es el access), supplier name, supplier configuration, supplier context, know whether the connection is test or not, know if the connection is active or not. So you can use it to perform other calls.
+This query allows you to retrieve relevant information like supplier access code (link a lo que es el access), supplier name, supplier configuration, supplier context, type of connection: test or live; active or not. You can then use this information to perform other queries/mutations.
 
-_To run this query you have to send within the headers your Apikey_
+_To run this query, you should send within the headers your Apikey_
 
 ```json
 {
