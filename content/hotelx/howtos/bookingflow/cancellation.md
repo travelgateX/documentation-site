@@ -10,12 +10,12 @@ alwaysopen = false
 {{< graphiql-script queries="[{\"apikey\":\"64780338-49c8-4439-7c7d-d03c2033b145\",\"gist\":\"https://gist.githubusercontent.com/tgx-bot/1b160cfcf47b1c4d1deada1a18ae98b6/raw\",\"divname\":\"div_cancellation\"}]" >}}
 {{< graphiql-styles >}}
 
-Cancellation operation that cancel the booking.
+Cancellation operation that cancels the booking.
 Which time zone applies for the cancellation policies?
-NOTE: Cancellation always take into account day and time of the destination in order to calculate what cancellation policy should be applied.
+NOTE: Cancellation always takes into account the day and time of the destination in order to calculate what cancellation policy should be applied.
 UTC time
 
-- When the booking is cancelled, details of the cancelled booking are returned with the following information:
+- When the booking is cancelled, the details of the cancelled booking are returned with the following information:
 - The booking status: CANCELLED
 - Cancellation fees if applicable
 - Hotel, rooms and rates of the cancelled booking
