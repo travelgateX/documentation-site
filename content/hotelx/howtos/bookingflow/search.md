@@ -54,28 +54,28 @@
         ]
 }
 
-Search is the first operation in the booking flow. It jallows to check which available rooms there are for the requested hotels or for the hotels in the requested destination for a given range of dates and for a given pax distribution.
+Search is the first operation in the booking flow. It allows to check which available rooms there are for the requested hotels or for the hotels in the requested destination for a given range of dates and for a given pax distribution.
 
 ## Advanced criteria
-Explain different parameters can be set up on the request 
+It explains different parameters that can be set up in the request 
 Mandatory
 
-- CheckIn: check-in date for booking. _Format: YYYY-MM-DD_
-- CheckOut: check-out date for booking. _Format YYYY-MM-DD_
+- CheckIn: check-in date for the booking. _Format: YYYY-MM-DD_
+- CheckOut: check-out date for the booking. _Format YYYY-MM-DD_
 - Hotels*: List of hotel codes 
 - Destinations*: List of destination codes
-- Occupancies: The occupancy you want to ask for each room.
-  - For multi-room bookings, this array will contain multiple elements (rooms). For each room you have to specify its own occupancy.
+- Occupancies: The occupancy you are requesting for each room.
+  - For multi-room bookings, this array will contain multiple elements (rooms). For each room you should specify its own occupancy.
 
-_* Hotels and Destinations parametres are excludent between them_
+_* Hotels and Destinations parameters are exclusive between them_
 
 ## How to request
-There are different ways to request a Search. Below is shown different examples for different casuistry.
+There are different ways to request a Search. Below are shown different examples for different casuistry:
 
 {{% graphiql-tabs %}}
 
 002160e4c2822635ef3b1a3c81b1d44d
-In this availability case, you won't get results due to the hotel you're asking for has a minimmum stay restriction. So, if you change the date range to 3 days or more, you will get availability
+In this availability case, you will not receive results due to the hotel's restriction of minimum stay. In this case, if you change the date range to 3 days or more, you will receive availability
 /002160e4c2822635ef3b1a3c81b1d44d
 
 {{% /graphiql-tabs %}}
@@ -86,6 +86,6 @@ In this availability case, you won't get results due to the hotel you're asking 
 ## Bear in mind
 
 {{% alert theme="warning" %}}
-Please, bear in mind that within the room structure response there is a **refundable** field. If that field is filled with _false_ it means that the room have 100% cancellation cost, so the room is not refundable.
+Please, bear in mind that within the room structure response there is a **refundable** field. If that field is filled with _false_ it means that the room has 100% cancellation cost, so the room is not refundable.
 If the field returns a _null value_ it means that the provider is not able to return this info at this step.
 {{% /alert %}}
