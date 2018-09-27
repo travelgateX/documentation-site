@@ -14,8 +14,8 @@ alwaysopen = false
 If you're ready to start searching for a hotel, getting a quote and booking it right away, try out the TravelgateX API by following the steps below:
 
 * **STEP 1:** Get to know our APIs. Read through our documentation and test some sample calls in our [API Playground](/getting-started/playground). You can use [a test API key](/travelgatex/overview) and start experimenting with our APIs straight away.
-* **STEP 2:** Sign an agreement with hotel suppliers to be using their booking databases. You can see a full list of suppliers and contact the ones you want to connect with by visiting our [supplier database](https://www.travelgatex.com/partners/seller) supplier database.
-* **STEP 3:** Sign up for TravelgateX API access. [Send us an email](https://www.travelgatex.com/contact) and tell us who you are and which hotel suppliers you are working with. TravelgateX works with over 600 suppliers, and we are the first certified partner to work with Expedia. We will send you a welcome pack with your login details and further guides on how to make your first integration.
+* **STEP 2:** Sign an agreement with hotel suppliers to be using their booking databases. You can see a full list of suppliers and contact the ones you want to connect with by visiting our [supplier database](https://www.travelgatex.com/partners/seller).
+* **STEP 3:** Sign up for TravelgateX API access. [Send us an email](https://www.travelgatex.com/contact) and tell us who you are and which hotel suppliers you are working with. TravelgateX works with over 600 suppliers, and we are the first certified partner to work with EAN Rapid. We will send you a welcome pack with your login details and further guides on how to make your first integration.
 * **STEP 4:** Start generating new business! Read through our integration guides and start integrating our [HotelX API](/hotelx) into your booking applications.
 * **BONUS STEP:** TravelgateX is using one of the latest and most advanced API technologies, GraphQL. It is quick to learn and immensely powerful. Check out our [free GraphQL guides](/learning-graphql/) to learn more about this cutting edge technology.
 
@@ -34,7 +34,7 @@ Choose which APIs you would like to use from our constantly growing catalog of t
 
 ## Interactive, user-friendly documentation
 
-All of our endpoint reference documentation is generated from our GraphQL schema. Use the schema column in the navigation of the [API Playground](https://api.travelgatex.com) to see and understand what information will be returned by each query.
+All of our endpoint reference documentation are generated from our GraphQL schema. Use the schema column in the navigation of the [API Playground](https://api.travelgatex.com) to see and understand what information will be returned by each query.
 
 ## Be part of the community
 
