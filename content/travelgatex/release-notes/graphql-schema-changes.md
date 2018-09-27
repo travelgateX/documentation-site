@@ -14,6 +14,17 @@ The GraphQL schema change log is a list of recent and upcoming changes to our Gr
 
 Check out this list of new releases and changes applied on the **TravelgateX GraphQL API**.
 
+
+## 2018-09-26
+
+🛑  Input field `mode` was added to input object type `StatsFilterInput`
+
+✅  Input field `clients` was added to input object type `StatsFilterInput`
+
+✅  Field `count` was added to object type `HotelConnection`
+
+✅  Type `ModeType` was added
+
 ## 2018-09-20
 
 ✅  Input field `UpdateProfileInput.label` changed type from `String!` to `String`
