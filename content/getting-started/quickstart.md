@@ -34,7 +34,7 @@ Choose which APIs you would like to use from our constantly growing catalog of t
 
 ## Interactive, user-friendly documentation
 
-All of our endpoint reference documentation are generated from our GraphQL schema. Use the schema column in the navigation of the [API Playground](https://api.travelgatex.com) to see and understand what information will be returned by each query.
+All of our endpoint reference documentation is generated from our GraphQL schema. Use the schema column in the navigation of the [API Playground](https://api.travelgatex.com) to see and understand what information will be returned by each query.
 
 ## Be part of the community
 
