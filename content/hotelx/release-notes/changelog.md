@@ -14,6 +14,12 @@ It makes it easier for users and contributors to see the most notable changes th
 
 {{% alert theme="info" %}}All notable changes on our platform will be documented on this page.{{% /alert %}}
 
+## 2018-10-02
+{{% release-notes-container type="a"%}}
+- Allow relay at the query hotel
+- Count field in HotelConnection to retrieve the number of HotelEdges that match the filter, pagination doesn't affect Count.
+{{% /release-notes-container %}}
+
 ## 2018-09-25
 {{% release-notes-container type="a"%}}
 - Status tipification to be able to differentiate from critical to non-critical external services
