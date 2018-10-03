@@ -93,7 +93,7 @@ Query/Mutation settings
 }
 ```
 
-[Base Settings](/hotelx/reference/inputobjects/basesettingsinput/)
+[Base Settings](/hotelx/reference/inputobjects/settingsbaseinput/)
 Access or supplier settings (from Query or database)
 ```
 "settings": {
@@ -107,7 +107,7 @@ Access or supplier settings (from Query or database)
 }
 ```
 
-[Default Settings](/hotelx/reference/inputobjects/defaultsettingsinput/)
+[Default Settings]
 Group or client database settings
 ```
 "settings": {
