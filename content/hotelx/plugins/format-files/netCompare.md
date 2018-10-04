@@ -53,8 +53,8 @@ The net compare file should be in the format below:
         |notChainCodes| No | chainsCodes | Yes |
         |DestinationCodes| No | notDestinationCodes | Yes |
         |notDestinationCodes| No | DestinationCodes | Yes |
-        |percentage| Yes | - | No |
-        |amount| Yes | - | No |
+        |percentage| Yes | amount | No |
+        |amount| Yes | percentage | No |
         *Excluded fields **Informed field will be ignored**
 
 * **Delimiter**:  Comma (“,”)
