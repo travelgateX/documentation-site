@@ -48,11 +48,18 @@ The response of the HotelX Query contains location.country in ISO standard forma
 
 It will depend if the supplier offers the information. In case that the information is returned by the supplier, you will find it through the Roomprice string-->PriceBreakdown.
 
-## Currency not supported 
-**What happen if I request availability with a currency that the supplier doesn´t have it?**
+## Currency in Search Requests
+**Is it necessary to include the currency attribute in your Search Request?**
 
-For these cases, you will have two options:
-- Applying the exchange rates using a pluggin (this pluggin contains the exchange rates previously loaded by you)
+In these cases, you will have two options:
+- If you don't include any currency, then the settings' default currency configuration will be used
+- If you don't configure a currency conversion plugin, then default supplier currency is returned. Some suppliers accept currency parameter and others will return their currency depending on your account as client with them.
+
+## Currency not supported 
+**What happen if I request availability with a currency that the supplier doesn´t accept?**
+
+In these cases, you will have two options:
+- Applying the exchange rates using a plugin (this pluggin contains the exchange rates previously loaded by you)
 - Not applying any exchange rate and you will receive the supplier´s currency.
 
 ## Cancellation costs
