@@ -29,9 +29,10 @@ We recommend a maximum of 200 hotels, the new aggregator will split them for eac
 Right now, you can search by hotel code and by destination. In the future, it will be possible to request by Geocode.
 
 The main search methods will be:
-- Hotel code
-- Destination
-- Geocode (Coming soon)
+
+* Hotel code
+* Destination
+* Geocode (Coming soon)
 
 ## GIATA codes
 **It is possible to use GIATA codes?**
@@ -52,15 +53,17 @@ It will depend if the supplier offers the information. In case that the informat
 **Is it necessary to include the currency attribute in your Search Request?**
 
 In these cases, you will have two options:
-- If you don't include any currency, then the settings' default currency configuration will be used
-- If you don't configure a currency conversion plugin, then default supplier currency is returned. Some suppliers accept currency parameter and others will return their currency depending on your account as client with them.
+
+* If you don't include any currency, then the settings' default currency configuration will be used
+* If you don't configure a currency conversion plugin, then default supplier currency is returned. Some suppliers accept currency parameter and others will return their currency depending on your account as client with them.
 
 ## Currency not supported 
 **What happen if I request availability with a currency that the supplier doesn´t accept?**
 
 In these cases, you will have two options:
-- Applying the exchange rates using a plugin (this pluggin contains the exchange rates previously loaded by you)
-- Not applying any exchange rate and you will receive the supplier´s currency.
+
+* Applying the exchange rates using a plugin (this pluggin contains the exchange rates previously loaded by you)
+* Not applying any exchange rate and you will receive the supplier´s currency.
 
 ## Cancellation costs
 **Is it possible to perform a cancellation as a query to just retrieve the cancellation costs, but not to cancel the booked item itself?**
