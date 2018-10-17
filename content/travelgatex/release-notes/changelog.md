@@ -12,6 +12,12 @@ To make it easier for users and contributors to see precisely what notable chang
 
 {{% alert theme="info" %}}All notable changes on TravelgateX platform will be documented in this page.{{% /alert %}}
 
+## 2018-10-17
+
+{{% release-notes-container type="f"%}}
+- Search by destination no return options
+{{% /release-notes-container %}}
+
 ## 2018-09-26
 
 {{% release-notes-container type="c"%}}
