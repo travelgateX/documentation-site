@@ -39,7 +39,7 @@ Suppliers commission file specifies the commission applied to supplier’s price
 
             {
 
-                "type": "CURRENCY_CONVERSION"
+                "type": "NET_PRICE",
 
                 "name": "net_priceX"
 
@@ -97,7 +97,7 @@ We read sequentially the commission file if the columns **chainCodes,destination
 
             {
 
-                "type": "CURRENCY_CONVERSION"
+                "type": ""NET_PRICE",
 
                 "name": "commission"
 
