@@ -14,6 +14,53 @@ The GraphQL schema change log is a list of recent and upcoming changes to our Gr
 
 Check out this list of new releases and changes applied on the **TravelgateX GraphQL API**.
 
+## 2018-10-18
+
+🛑  Input field `type` was added to input object type `CreateProfileInput`
+
+🛑  Field `errors` was removed from object type `HotelXCommonSettings`
+
+🛑  Field `warnings` was removed from object type `HotelXCommonSettings`
+
+🛑  Field `warnings` was removed from object type `HotelXDefaultSettings`
+
+🛑  Field `errors` was removed from object type `HotelXDefaultSettings`
+
+🛑  Field `downloadHotels` was removed from object type `HotelXQuery`
+
+🛑  Field `downloadRooms` was removed from object type `HotelXQuery`
+
+🛑  Field `isActive` was removed from object type `Member`
+
+✅  Description `Input delta price, indicates price variation permitted by the client
+An error will be returned if the new price does not abide to DeltaPrice. If DeltaPrice is not sent and the integration implements it, we assume that the price range is 0 and the process will continue
+(price is lower or equal to the price showed in valuation).
+This field is implemented if it’s native to the supplier or if another availability/valuation request needs to be done in Reservation. In case the supplier blocks the option in valuation, reservation
+will be done automatically in reservation method.` on type `DeltaPriceInput` has changed to `Input delta price, indicates price variation permitted by the client
+An error will be returned if the new price does not abide to DeltaPrice. If DeltaPrice is not sent and the integration implements it, we assume that the price range is 0 and the process will continue
+(price is lower or equal to the price showed in valuation).
+This field is implemented if it’s native to the supplier or if another availability/valuation request needs to be done in Reservation. In case the supplier blocks the option in valuation, reservation
+will be done automatically in reservation method.`
+
+✅  Input field `type` was added to input object type `UpdateProfileInput`
+
+✅  Field `PaymentXQuery.storedCard` description changed from `Returns a stored card information.` to `Returns a stored card information. `
+
+✅  Field `PaymentXQuery.allStoredCards` description changed from `Returns the stored card list. For security, this query never will return clear card information.` to `Returns the stored card list. For security, this query never will return clear card information. `
+
+✅  Input field `HotelSettingsInput.clientTokens` description changed from `Used to identify the origin of the request, this is only used in plugins.` to `Used to identify the origin of the request, this is only used in plugins. `
+
+✅  Field `adviseMessage` was added to object type `HotelXCommonSettings`
+
+✅  Field `adviseMessage` was added to object type `HotelXDefaultSettings`
+
+✅  Field `type` was added to object type `ProfileData`
+
+✅  Field `isActive` was added to object type `MemberData`
+
+✅  Field `AdminQuery.products` description changed from `Product catalog; specify products codes to filter` to `Product catalog; specify products codes to filter `
+
+✅  Type `ProfileType` was added
 
 ## 2018-09-26
 

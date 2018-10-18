@@ -12,6 +12,21 @@ To make it easier for users and contributors to see precisely what notable chang
 
 {{% alert theme="info" %}}All notable changes on TravelgateX platform will be documented in this page.{{% /alert %}}
 
+## 2018-10-18
+
+{{% release-notes-container type="c"%}}
+- [GraphQL Schema updated.](/travelgatex/release-notes/graphql-schema-changes/#2018-10-18)
+{{% /release-notes-container %}}
+
+{{% release-notes-container type="a"%}}
+- Profile type
+{{% /release-notes-container %}}
+
+{{% release-notes-container type="f"%}}
+- `Supplier`, `Client` and `Access` entities resources content.
+{{% /release-notes-container %}}
+
+
 ## 2018-10-17
 
 {{% release-notes-container type="f"%}}
