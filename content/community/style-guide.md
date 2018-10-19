@@ -27,6 +27,7 @@ Let's get these things out of the way right up front:
 
 * Don't sell or do marketing. -> TBD
 * Don't editorialize. Document.
+* Assure that the content you're writting is not duplicated on another page, avoid incosistences. Unify.
 * Don't make assumptions about your reader unless you state the assumptions up front.
 * Don't use absolutes, such as "instantaneously," "perfectly," "absolutely," "totally," or "100%," unless you can back up what you're saying with documentation.
 * Don't use superlatives, such as "the best solution," "the perfect answer," and so on.
