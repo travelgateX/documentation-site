@@ -142,33 +142,8 @@ To make it easier for users and contributors to see precisely what notable chang
 {{% /release-notes-container %}}
 
 {{% release-notes-container type="a"%}}
-
-- Added columns to IAM members user table
-- Added option to assign roles through templates of macro roles to IAM members
-- "WHOLESALER" seller added to filter list of partners
 - Delete member mutation (Delete Apikeys or uninvite user emails)
 - Public deleteGroup function and made it public
-{{% /release-notes-container %}}
-
-## 2018-07-30
-
-{{% release-notes-container type="c"%}}
-- Improvements on the organization selector
-    - Sorted organizations in alphabetical order.
-    - Autoselect when there is just one org. available.
-    - Popup when there is no org. selected.
-    - Prettier component.
-{{% /release-notes-container %}}
-{{% release-notes-container type="a"%}}
-- Iam members
-    - Label, created at and updated at columns on members table.
-    - Option to assign roles by macro-roles
-- Seller "WHOLESALER" to the partners filter on the directory and partners screen.
-- New admin permissions
-{{% /release-notes-container %}}
-
-{{% release-notes-container type="f"%}}
-- Groups function filters
 {{% /release-notes-container %}}
 
 ## 2018-07-27
