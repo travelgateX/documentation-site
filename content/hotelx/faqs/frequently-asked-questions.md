@@ -23,7 +23,26 @@ The new aggregator allows every language, it will depend from each supplier.
 
 We recommend a maximum of 200 hotels, the new aggregator will split them for each supplier into different batches in order to request all the hotels. Please take note: The current formula and rate limit are subject to change.
 
+## Client Nationality
+**Are there any restrictions to the client's nationality?**
+
+It depends on the supplier
+
+**Does the client's nationality affect the price? - For instance, same Search criteria with different client nationality**
+
+Yes, nationality and market might affect the price of the option, depending on the supplier.
+
+## Age Range of Children - Infants
+**How can we differentiate a child from an infant? What is the age range of each of them?**
+
+Each supplier has their own restrictions, so it will depend on each supplier.
+
+
 ## Search request filters
+**What is the function of an accessCode?**
+
+Every time you activate a supplier, you receive an access code. This access code is used to differentiate between suppliers and also to filter between the same supplier's different credentials and configurations.
+
 **Which are the possible filters in the Search Request?**
 
 Right now, you can search by hotel code and by destination. In the future, it will be possible to request by Geocode.
