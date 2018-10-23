@@ -97,7 +97,7 @@ We read sequentially the commission file if the columns **chainCodes,destination
 
             {
 
-                "type": ""NET_PRICE",
+                "type": "NET_PRICE",
 
                 "name": "commission"
 
