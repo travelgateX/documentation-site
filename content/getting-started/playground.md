@@ -28,7 +28,7 @@ You should get the following:
 (put in query response)
 ```
 
-{{< graphiql-script queries="[{\"apikey\":\"q8ggxpoVDW76Kw918hwnnRvxlZmAP2QZ\",\"gist\":\"https://gist.githubusercontent.com/tgx-bot/ba0469dda654a1639294edaadfed1a65/raw\",\"divname\":\"div_main_playground\"}]" >}}
+{{< graphiql-script queries="[{\"apikey\":\"64780338-49c8-4439-7c7d-d03c2033b145\",\"gist\":\"https://gist.githubusercontent.com/tgx-bot/ba0469dda654a1639294edaadfed1a65/raw\",\"divname\":\"div_main_playground\"}]" >}}
 {{< graphiql-styles >}}
 {{< graphiql-tags tag="div_main_playground" >}}
 
