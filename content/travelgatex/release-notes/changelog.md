@@ -12,6 +12,15 @@ To make it easier for users and contributors to see precisely what notable chang
 
 {{% alert theme="info" %}}All notable changes on TravelgateX platform will be documented in this page.{{% /alert %}}
 
+## 2018-10-25
+{{% release-notes-container type="c"%}}
+- [GraphQL Schema updated.](/travelgatex/release-notes/graphql-schema-changes/#2018-10-25)
+{{% /release-notes-container %}}
+
+{{% release-notes-container type="a"%}}
+- New field **Geoname** in Hotels query, which provides hotel's geographical information 
+{{% /release-notes-container %}}
+
 ## 2018-10-18
 
 {{% release-notes-container type="c"%}}
