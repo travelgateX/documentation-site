@@ -14,6 +14,11 @@ It makes it easier for users and contributors to see the most notable changes th
 
 {{% alert theme="info" %}}All notable changes on our platform will be documented on this page.{{% /alert %}}
 
+## 2018-11-02
+{{% release-notes-container type="f"%}}
+- Fix price discrepancy between Quote and Book
+{{% /release-notes-container %}}
+
 ## 2018-10-02
 {{% release-notes-container type="a"%}}
 - Allow relay at the query hotel
