@@ -15,6 +15,7 @@
 
 ### Unreleased
 {{% release-notes-container type="u"%}}
+- Removal of `error` from `Group`. Reason: Sustituted by adviseMessage.  Deprecated on 2018-08-01.**To be removed soon**.
 - Removal of `error` from `API`. Reason: Sustituted by adviseMessage.  Deprecated on 2018-08-22.Expected removal on 2018-11-20.
 - Removal of `error` from `Member`. Reason: Sustituted by adviseMessage.  Deprecated on 2018-08-22.Expected removal on 2018-11-20.
 - Removal of `error` from `Operation`. Reason: Sustituted by adviseMessage.  Deprecated on 2018-08-22.Expected removal on 2018-11-20.
@@ -22,7 +23,6 @@
 - Removal of `error` from `Product`. Reason: Sustituted by adviseMessage.  Deprecated on 2018-08-22.Expected removal on 2018-11-20.
 - Removal of `error` from `Resource`. Reason: Sustituted by adviseMessage.  Deprecated on 2018-08-22.Expected removal on 2018-11-20.
 - Removal of `error` from `Role`. Reason: Sustituted by adviseMessage.  Deprecated on 2018-08-22.Expected removal on 2018-11-20.
-- Removal of `error` from `Group`. Reason: Sustituted by adviseMessage.  Deprecated on 2018-08-01.Expected removal on 2018-10-30.
 {{% / release-notes-container %}}
 ### 2018-08-22
 {{% release-notes-container type="d"%}}
