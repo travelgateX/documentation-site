@@ -14,6 +14,27 @@ The GraphQL schema change log is a list of recent and upcoming changes to our Gr
 
 Check out this list of new releases and changes applied on the **TravelgateX GraphQL API**.
 
+## 2018-11-07
+
+🛑  Field `asserts` was removed from object type `StatsInfo`
+
+🛑  Type `StatsAssert` was removed
+
+✅  Field `assets` was added to object type `StatsInfo`
+
+✅  Type `StatsAsset` was added
+
+
+## 2018-10-28
+
+⚠️  Enum value `COUNTRY` was added to enum `DestinationType`
+
+✅  Field `geoNames` was added to object type `Location`
+
+✅  Type `GeonameData` was added
+
+✅  Type `Geoname` was added
+
 ## 2018-10-18
 
 🛑  Input field `type` was added to input object type `CreateProfileInput`
