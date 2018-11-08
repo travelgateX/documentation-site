@@ -16,10 +16,7 @@ It makes it easier for users and contributors to see the most notable changes th
 
 ## 2018-11-08
 {{% release-notes-container type="f"%}}
-- Fix blacklist plugin
-{{% /release-notes-container %}}
-{{% release-notes-container type="a"%}}
-- New plugin, offer. You can see the documentation [here](/hotelx/plugins/offer/).
+- Fix blacklist (by supplier) plugin
 {{% /release-notes-container %}}
 
 ## 2018-11-02
