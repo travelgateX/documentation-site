@@ -14,6 +14,14 @@ It makes it easier for users and contributors to see the most notable changes th
 
 {{% alert theme="info" %}}All notable changes on our platform will be documented on this page.{{% /alert %}}
 
+## 2018-11-08
+{{% release-notes-container type="f"%}}
+- Fix blacklist plugin
+{{% /release-notes-container %}}
+{{% release-notes-container type="a"%}}
+- New plugin, offer. You can see the documentation [here](/hotelx/plugins/offer/).
+{{% /release-notes-container %}}
+
 ## 2018-11-02
 {{% release-notes-container type="f"%}}
 - Fix price discrepancy between Quote and Book
