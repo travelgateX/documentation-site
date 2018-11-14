@@ -9,7 +9,7 @@ alwaysopen = false
 
 Safety Margin is an optional plugin that allows discarding options that have a commission **lower** than expected. The expected commission has to be loaded in safety-margin file, and is the commission over net, in other words, ganancy percentage over option's cost.
 
-## Margin safe {#safetymargin}
+## Safety Margin {#safetymargin}
 
 ### Goals
 
