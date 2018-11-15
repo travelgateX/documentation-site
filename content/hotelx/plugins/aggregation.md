@@ -32,7 +32,7 @@ It's based on [SQL Aggregate Functions](https://www.postgresql.org/docs/current/
 
 |key|value type|condition|description|
 |---|----|----|---|
-|primaryKey|string|mandatory|is the criteria used to aggregate, the value is a set of criteria separated by commas, the possible values are:<br>example: “hotel,supplier,room”|
+|primaryKey|string|mandatory|It is the criteria used to aggregate, the value is a set of criteria separated by commas, the possible values are:<br>example: “hotel,supplier,room”|
 
 
 ### Processor
