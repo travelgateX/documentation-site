@@ -14,6 +14,12 @@ It makes it easier for users and contributors to see the most notable changes th
 
 {{% alert theme="info" %}}All notable changes on our platform will be documented on this page.{{% /alert %}}
 
+## 2018-11-19
+{{% release-notes-container type="f"%}}
+- Fix Stats
+- Fix Hotels requested stats in Access and Transaction spans where the count wasn't correct in some cases
+{{% /release-notes-container %}}
+
 ## 2018-11-08
 {{% release-notes-container type="f"%}}
 - Fix blacklist (by supplier) plugin
