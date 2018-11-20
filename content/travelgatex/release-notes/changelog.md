@@ -22,12 +22,14 @@ To make it easier for users and contributors to see precisely what notable chang
 - Create Organization.
 - Errors description.
 - Update group
+{{% /release-notes-container %}}
+
+{{% release-notes-container type="a"%}}
 - Entities call when move folder and change members refresh token position.
 {{% /release-notes-container %}}
 
 {{% release-notes-container type="r"%}}
-- Remove useless folders from create folder template
-- Force group names to lowcase only in TEAM/ORG cases
+- Useless folders from create folder template
 {{% /release-notes-container %}}
 
 ## 2018-11-07
