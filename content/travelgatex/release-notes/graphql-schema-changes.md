@@ -14,6 +14,12 @@ The GraphQL schema change log is a list of recent and upcoming changes to our Gr
 
 Check out this list of new releases and changes applied on the **TravelgateX GraphQL API**.
 
+## 2018-11-20
+
+✅  Input field `CreateOrganizationInput.organization` changed type from `ID!` to `ID`
+
+✅  Field `country` was added to object type `GeonameData`
+
 ## 2018-11-07
 
 🛑  Field `asserts` was removed from object type `StatsInfo`

@@ -12,9 +12,40 @@ To make it easier for users and contributors to see precisely what notable chang
 
 {{% alert theme="info" %}}All notable changes on TravelgateX platform will be documented in this page.{{% /alert %}}
 
+## 2018-11-20
+{{% release-notes-container type="c"%}}
+- [GraphQL Schema updated.](/travelgatex/release-notes/graphql-schema-changes/#2018-11-20)
+{{% /release-notes-container %}}
+
+{{% release-notes-container type="f"%}}
+- Refresh token funcition.
+- Create Organization.
+- Errors description.
+- Update group
+- Entities call when move folder and change members refresh token position.
+{{% /release-notes-container %}}
+
+{{% release-notes-container type="r"%}}
+- Remove useless folders from create folder template
+- Force group names to lowcase only in TEAM/ORG cases
+{{% /release-notes-container %}}
+
 ## 2018-11-07
+
 {{% release-notes-container type="c"%}}
 - [GraphQL Schema updated.](/travelgatex/release-notes/graphql-schema-changes/#2018-11-07)
+{{% /release-notes-container %}}
+
+{{% release-notes-container type="a"%}}
+- Force group names to lowcase only in TEAM/ORG cases
+{{% /release-notes-container %}}
+
+{{% release-notes-container type="r"%}}
+- Useless folders
+{{% /release-notes-container %}}
+
+{{% release-notes-container type="f"%}}
+- Update organizations.
 {{% /release-notes-container %}}
 
 ## 2018-10-28

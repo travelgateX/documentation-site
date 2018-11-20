@@ -15,17 +15,17 @@
 
 ### Unreleased
 {{% release-notes-container type="u"%}}
+- Removal of `error` from `Organization`. Reason: Sustituted by adviseMessage.  Deprecated on 2018-08-22.**To be removed soon**.
 - Removal of `useContext` from `HotelSettingsInput`. Reason: Redundant..  Deprecated on 2017-12-12.**To be removed soon**.
-- Removal of `error` from `Group`. Reason: Sustituted by adviseMessage.  Deprecated on 2018-08-01.**To be removed soon**.
-- Removal of `distribute` from `AddOns`. Reason: You can find it in distribution AddOn.  Deprecated on 2018-05-21.**To be removed soon**.
+- Removal of `error` from `API`. Reason: Sustituted by adviseMessage.  Deprecated on 2018-08-22.**To be removed soon**.
+- Removal of `error` from `Member`. Reason: Sustituted by adviseMessage.  Deprecated on 2018-08-22.**To be removed soon**.
+- Removal of `error` from `Operation`. Reason: Sustituted by adviseMessage.  Deprecated on 2018-08-22.**To be removed soon**.
 - Removal of `connectUser` from `HotelSettingsInput`. Reason: Redundant..  Deprecated on 2018-03-19.**To be removed soon**.
-- Removal of `error` from `Operation`. Reason: Sustituted by adviseMessage.  Deprecated on 2018-08-22.Expected removal on 2018-11-20.
-- Removal of `error` from `Member`. Reason: Sustituted by adviseMessage.  Deprecated on 2018-08-22.Expected removal on 2018-11-20.
-- Removal of `error` from `Product`. Reason: Sustituted by adviseMessage.  Deprecated on 2018-08-22.Expected removal on 2018-11-20.
-- Removal of `error` from `Resource`. Reason: Sustituted by adviseMessage.  Deprecated on 2018-08-22.Expected removal on 2018-11-20.
-- Removal of `error` from `Role`. Reason: Sustituted by adviseMessage.  Deprecated on 2018-08-22.Expected removal on 2018-11-20.
-- Removal of `error` from `API`. Reason: Sustituted by adviseMessage.  Deprecated on 2018-08-22.Expected removal on 2018-11-20.
-- Removal of `error` from `Organization`. Reason: Sustituted by adviseMessage.  Deprecated on 2018-08-22.Expected removal on 2018-11-20.
+- Removal of `error` from `Product`. Reason: Sustituted by adviseMessage.  Deprecated on 2018-08-22.**To be removed soon**.
+- Removal of `error` from `Resource`. Reason: Sustituted by adviseMessage.  Deprecated on 2018-08-22.**To be removed soon**.
+- Removal of `error` from `Role`. Reason: Sustituted by adviseMessage.  Deprecated on 2018-08-22.**To be removed soon**.
+- Removal of `distribute` from `AddOns`. Reason: You can find it in distribution AddOn.  Deprecated on 2018-05-21.**To be removed soon**.
+- Removal of `error` from `Group`. Reason: Sustituted by adviseMessage.  Deprecated on 2018-08-01.**To be removed soon**.
 {{% / release-notes-container %}}
 ### 2018-08-22
 {{% release-notes-container type="r"%}}
