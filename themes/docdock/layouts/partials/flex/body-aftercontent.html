@@ -1,7 +1,7 @@
   </article>
   <aside class="footline">
   	{{if .Params.tags }}
-	  <div class="tags"> 
+	  <div class="tags">
 	    {{ range $index, $tag := .Params.tags }}
 	      <a class="label label-default" href="{{$.Site.BaseURL}}tags/{{ $tag | urlize }}">{{ $tag }}</a>
 	    {{ end }}
@@ -33,8 +33,8 @@
 <footer>
 	<div>
 {{ $footer := print "_footer." .Lang }}
-{{ range where .Site.Pages "Source.BaseFileName" $footer }}
-  {{ .Content }} 
+{{ range where .Site.Pages "File.BaseFileName" $footer }}
+  {{ .Content }}
 {{else}}
   {{ if .Site.GetPage "page" "_footer.md" }}
     {{(.Site.GetPage "page" "_footer.md").Content}}
