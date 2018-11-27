@@ -14,6 +14,14 @@ It makes it easier for users and contributors to see the most notable changes th
 
 {{% alert theme="info" %}}All notable changes on our platform will be documented on this page.{{% /alert %}}
 
+## 2018-11-27
+
+{{% release-notes-container type="c"%}}
+- Ambiguous warning message in Book when supplier has not returned price
+- Removed error nodes from Groups and Organization nodes
+- Removed log if amount is 0 in Fees node
+{{% /release-notes-container %}}
+
 ## 2018-11-20
 {{% release-notes-container type="a"%}}
 - Added geonames in Hotel-List
