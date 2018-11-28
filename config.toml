@@ -101,7 +101,7 @@ discourseUrl = "http://community.travelgatex.com/"
   # Hero section
   [params.hero]
     title = "A travel API you’ll &nbsp;&nbsp;<i title='love &#9825;' class='icon-heart'></i>"
-    subtitle = "APIs that connect buyers and suppliers across the Travel Industry.<p>Welcome to TravelgateX, the world’s most advanced and disruptive GraphQL based Travel API.</p>"
+    subtitle = "APIs that connect buyers and suppliers across the Travel Industry.<p>Welcome to TravelgateX, the world’s most advanced and flexible GraphQL based Travel API.</p>"
 
   # Intro section
   # Available icons: http://simplelineicons.com/
