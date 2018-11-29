@@ -14,6 +14,19 @@ It makes it easier for users and contributors to see the most notable changes th
 
 {{% alert theme="info" %}}All notable changes on our platform will be documented on this page.{{% /alert %}}
 
+## 2018-11-29
+{{% release-notes-container type="f"%}}
+- Fix filter maxSize Destination
+{{% /release-notes-container %}}
+
+{{% release-notes-container type="c"%}}
+- Adapt Hotel-Room, Hotel-Board, Hotel-Category to new organization.
+{{% /release-notes-container %}}
+
+{{% release-notes-container type="a"%}}
+- Added log if commission Fees is -1
+{{% /release-notes-container %}}
+
 ## 2018-11-27
 
 {{% release-notes-container type="c"%}}
