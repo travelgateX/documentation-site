@@ -14,6 +14,15 @@ It makes it easier for users and contributors to see the most notable changes th
 
 {{% alert theme="info" %}}All notable changes on our platform will be documented on this page.{{% /alert %}}
 
+## 2018-12-04
+{{% release-notes-container type="f"%}}
+- Fix booking timeout issue
+{{% /release-notes-container %}}
+
+{{% release-notes-container type="a"%}}
+- Added warning if any option has been discarded by CommissionX and CurrencyX plugins
+{{% /release-notes-container %}}
+
 ## 2018-11-29
 {{% release-notes-container type="f"%}}
 - Fix filter maxSize Destination
