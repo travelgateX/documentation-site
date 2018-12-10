@@ -28,29 +28,7 @@ Suppliers commission file specifies the commission applied to supplier’s price
 
 ### Execution example
 
-```
-{
-
-    "plugins": {
-
-        "step": "RESPONSE_OPTION",
-
-        "pluginsType": [
-
-            {
-
-                "type": "NET_PRICE",
-
-                "name": "net_priceX"
-
-            }
-
-        ]
-
-    }
-
-}
-```
+It is not necessaty to specify it in Query (Settings->Plugins)
 
 ## CommissionX {#commissionX}
 
