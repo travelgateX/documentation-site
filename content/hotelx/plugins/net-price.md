@@ -18,9 +18,9 @@ Net Price is an optional plugin and allows to net all the prices in an option.
 ### Goals
 
 This plugin receives an Option by parameter and returns an Option with all the prices with net value. **This plugin reads information of commissions from ftp**. It is mandatory to load at least supplier's commission file. Depending of the files in ftp, **this plugin can apply two different commission values over prices**.
-Suppliers commission file specifies the commission applied to supplier’s prices. Hotel commission file specifies the commission applied to the specific hotel’s price. In the one hand, if no hotels commission file is loaded in ftp, it's applied the net price with the commission specified in commissions supplier's file. In other hand, if the hotel's commission file is loaded, this has preference over the supplier's file. These files have to meet the requirements listed below. In other cases, an error will be returned.
+Suppliers commission file specifies the commission applied to supplier’s prices. Hotel commission file specifies the commission applied to the specific hotel’s price. On the one hand, if no hotels commission file is loaded in the ftp, the net price with the commission specified in commissions supplier's file will be applied. On other hand, if the hotel's commission file is loaded, this has preference over the supplier's file. These files have to meet the requirements listed below. In other cases, an error will be returned.
 
-## Files needed to use this plugin
+## Required files to use this plugin
 
 * [**Commission supplier file format**](/hotelx/plugins/format-files/commission_supplier/) (**Mandatory**)
 
@@ -28,7 +28,7 @@ Suppliers commission file specifies the commission applied to supplier’s price
 
 ### Execution example
 
-It is not necessaty to specify it in Query (Settings->Plugins)
+It is not necessary to specify it in Query (Settings->Plugins)
 
 ## CommissionX {#commissionX}
 
