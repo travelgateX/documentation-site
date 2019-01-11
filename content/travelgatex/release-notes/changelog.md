@@ -12,6 +12,98 @@ To make it easier for users and contributors to see precisely what notable chang
 
 {{% alert theme="info" %}}All notable changes on TravelgateX platform will be documented in this page.{{% /alert %}}
 
+## 2019-01-11
+{{% release-notes-container type="c"%}}
+- The DEFAULT_TEMPLATE option has been modified.The permissions given to the owner were : 
+**iam:all:viewer**
+Now:
+**all:all:1a** `This is for future updates. Ignore it for the time being.`
+The owner of the organization now has an admin permission all across the
+apis: 
+**org:api:rsc:crud1xaf.**
+- Intern members (@xmltravelgate.com, @travelgatex.com) only can be added to TEAM type groups.
+- Operations now does not check permissions. All operations listed.
+{{% /release-notes-container %}}
+
+{{% release-notes-container type="a"%}}
+- deleteApi function implemented.
+- Api-key can be added to more than one product on the same folder.
+- Group query can now be filtered by parent.
+{{% /release-notes-container %}}
+
+{{% release-notes-container type="f"%}}
+- Fixed error when adding apis to TEAM type groups.
+- Fixed. When creating new member used to always return "Auth0 connection error"
+- Some errors description have been improved.
+{{% /release-notes-container %}}
+
+## 2019-01-09
+{{% release-notes-container type="f"%}}
+- Endpoint error messages 
+{{% /release-notes-container %}}
+
+{{% release-notes-container type="a"%}}
+- Launch patch with new patch file 
+- New patch fixing write headers
+{{% /release-notes-container %}}
+
+{{% release-notes-container type="r"%}}
+- Headers patch
+{{% /release-notes-container %}}
+
+## 2018-12-19
+{{% release-notes-container type="c"%}}
+- New implement of cache 
+- Use gzip to unzip respone instead of delegate to request module 
+{{% /release-notes-container %}}
+
+{{% release-notes-container type="a"%}}
+- Two cache, one for apikeys and other for redirect endpoint
+- Implement case not zipped
+- Implement cache for rewrite endpoint
+{{% /release-notes-container %}}
+
+{{% release-notes-container type="f"%}}
+- Timming
+{{% /release-notes-container %}}
+
+## 2018-12-17
+{{% release-notes-container type="r"%}}
+- Worker
+{{% /release-notes-container %}}
+
+## 2018-12-14
+{{% release-notes-container type="c"%}}
+- [GraphQL Schema updated.](/travelgatex/release-notes/graphql-schema-changes/#2018-12-13)
+{{% /release-notes-container %}}
+
+{{% release-notes-container type="a"%}}
+- Use worker and main thread to stats depends search, and calculate
+- Send stringify of body_worker
+- Protect Buffer
+{{% /release-notes-container %}}
+
+{{% release-notes-container type="f"%}}
+- ElapsedTime when error, and fix jsonstringify
+- Timming 
+{{% /release-notes-container %}}
+
+{{% release-notes-container type="r"%}}
+- Tracing from worker (detail)
+- Tracing from utils2 (detail)
+{{% /release-notes-container %}}
+
+## 2018-12-13
+{{% release-notes-container type="c"%}}
+- [GraphQL Schema updated.](/travelgatex/release-notes/graphql-schema-changes/#2018-12-13)
+{{% /release-notes-container %}}
+
+{{% release-notes-container type="f"%}}
+- Timming and use workers for stats.
+- Status code when endpoint fails
+- Worker
+{{% /release-notes-container %}}
+
 ## 2018-11-20
 {{% release-notes-container type="c"%}}
 - [GraphQL Schema updated.](/travelgatex/release-notes/graphql-schema-changes/#2018-11-20)
