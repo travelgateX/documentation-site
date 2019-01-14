@@ -18,6 +18,8 @@ It makes it easier for users and contributors to see the most notable changes th
 
 {{% release-notes-container type="a"%}}
 - Upgrade permission check in all microservices
+- Environment variable health check
+- Add parameter in Hotel-Quote and Hotel-Book
 {{% /release-notes-container %}}
 
 ## 2018-12-04
