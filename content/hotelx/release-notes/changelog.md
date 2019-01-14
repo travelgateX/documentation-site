@@ -14,6 +14,12 @@ It makes it easier for users and contributors to see the most notable changes th
 
 {{% alert theme="info" %}}All notable changes on our platform will be documented on this page.{{% /alert %}}
 
+## 2019-01-14
+
+{{% release-notes-container type="a"%}}
+- Upgrade permission check in all microservices
+{{% /release-notes-container %}}
+
 ## 2018-12-04
 {{% release-notes-container type="f"%}}
 - Fix booking timeout issue
