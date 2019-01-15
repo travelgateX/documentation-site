@@ -54,13 +54,13 @@ apis:
 ## 2018-12-19
 {{% release-notes-container type="c"%}}
 - New implement of cache 
-- Use gzip to unzip respone instead of delegate to request module 
+- Use gzip to unzip response instead of delegate to request module 
 {{% /release-notes-container %}}
 
 {{% release-notes-container type="a"%}}
-- Two cache, one for apikeys and other for redirect endpoint
+- Two caches, one for apikeys and another one to redirect endpoint
 - Implement case not zipped
-- Implement cache for rewrite endpoint
+- Implement cache to rewrite endpoint
 {{% /release-notes-container %}}
 
 {{% release-notes-container type="f"%}}
