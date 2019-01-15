@@ -7,13 +7,13 @@ weight = 3
 alwaysopen = false
 +++
 
-Safety Margin is an optional plugin that allows discarding options that have a commission **lower** than expected. The expected commission has to be loaded in safety-margin file, and is the commission over net, in other words, ganancy percentage over option's cost.
+Safety Margin is an optional plugin that allows discarding options that have a commission **lower** than expected. The expected commission has to be loaded in safety-margin file, and is the commission over gross, in other words, the commission/ganancy is already included in the price.
 
 ## Safety Margin {#safetymargin}
 
 ### Goals
 
-The safety margin plugin **discards those options that have a commission lower than expected.** By doing this, only options that have a commission over net, equal or lower than those reported in the file will be returned. Remember that, the commission is the ganancy percentage over option cost.
+The safety margin plugin **discards those options that have a commission lower than expected.** By doing this, only options that have a commission over gross, equal or lower than those reported in the file will be returned.
 
 Sequentially, the rules will be evaluated until a match is found, upon finding it, the process will be stopped and the commission will be evaluated. In the same way, if the rule is not found, the option will be validated.  
 
