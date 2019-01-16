@@ -35,7 +35,7 @@ It is not necessary to specify it in Query (Settings->Plugins)
 ### Goals
 
 CommissionX is a plugin with an extended funcionality over **net price plugin** that allows to apply more complex bussines rules.
-This plugin defines the contracted / expected commission in cases where the supplier is not able to send it via integration. These commissions are defined through the plugin so as not to lose the options in which we do not know the type of price sent, since this information is established at contract level between client-supplier. Different commissions can be applied according to the different rules depending on the format that we will describe next. The commission that is loaded in FTP is interpreted like a **Gross** commission, that is, the commission or profit is included in the price.
+This plugin defines the contracted / expected commission in cases where the supplier is not able to send it via integration. These commissions are defined through the plugin so as not to lose the options in which we do not know the type of price sent, since this information is established at contract level between client-supplier. Different commissions can be applied according to the different rules depending on the format that we will described next. The commission that is loaded in the FTP is interpreted like a **Gross** commission, that is, the commission or profit is included in the price.
 
 **Observation**
 
