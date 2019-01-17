@@ -99,6 +99,46 @@ HotelX will return the information from all the suppliers at the same time, once
 
 No, the time out will be applied to all providers, using the parameter setting: timeout.
 
+## Multi-room in Search Requests
+**How to structure a multi-room in HotelX**
+
+In order to avoid errors in your Query Search of more than 1 room, please, find below a sample structure of a multi-room:
+
+```json
+"occupancies":[  
+   {  
+      "paxes":[  
+         {  
+            "age":30
+         },
+         {  
+            "age":30
+         }
+      ]
+   },
+   {  
+      "paxes":[  
+         {  
+            "age":30
+         },
+         {  
+            "age":30
+         }
+      ]
+   },
+   {  
+      "paxes":[  
+         {  
+            "age":30
+         },
+         {  
+            "age":30
+         }
+      ]
+   }
+],
+```
+
 ## Content
 **How to Manage HotelX Content**
 
