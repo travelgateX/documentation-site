@@ -14,6 +14,12 @@ It makes it easier for users and contributors to see the most notable changes th
 
 {{% alert theme="info" %}}All notable changes on our platform will be documented on this page.{{% /alert %}}
 
+## 2019-01-23
+{{% release-notes-container type="f"%}}
+- Fix the error of hotel-list and hotel-room when request more than one code.
+{{% /release-notes-container %}}
+
+
 ## 2019-01-14
 
 {{% release-notes-container type="a"%}}
