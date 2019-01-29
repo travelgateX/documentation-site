@@ -17,11 +17,6 @@ CommissionX is a plugin that defines the contracted / expected commission in cas
 
 CommissionX is a plugin that defines the contracted / expected commission in cases where the supplier is not able to send it via integration. These commissions are defined through the plugin so as not to lose the options in which we do not know the type of price sent, since this information is established at contract level between client-supplier. Different commissions can be applied according to the different rules depending on the format that we will described next. The commission that is loaded in the FTP is interpreted like a **Gross** commission, that is, the commission or profit is included in the price. 
 
-The're two type of CommissionX, via FTP which allow you add more complicate rules, or specify it in Query which only allow you apply the same percentage of commission for all options
-
-## CommissionX via FTP 
-This is recommended, because it allow you to applly more complex rules. 
-
 ### Files needed to use this plugin
 
 * [**Sequential Commission file format**](/hotelx/plugins/format-files/commission/) (**Mandatory**). If the columns **chainCodes,destinationCodes** are informed then it is mandatory to upload group file.
@@ -49,24 +44,5 @@ We read sequentially the commission file if the columns **chainCodes,destination
 It is not necessary to specify it in Query (Settings->Plugins) 
 
 
-## CommissionX via Query
-If you do not want upload file on FTP, you can specify default percentage of commission in Query (Settings->Plugins). This is not recommended, we suggest you always use the FTP method. 
-
-### Execution example
-``` json
-{
-    "plugins": {
-        "step": "RESPONSE_OPTION",
-        "pluginsType": [{
-            "type": "COMMISSION",
-            "name": "commissionX",
-            "parameters": [{
-                "key": "default",
-                "value": "0"
-            }]
-        }]
-    }
-}
-```
 
 
