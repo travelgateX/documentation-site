@@ -7,39 +7,20 @@ weight = 3
 alwaysopen = false
 +++
 
-Net Price is an optional plugin and allows to net all the prices in an option.
+CommissionX is a plugin that defines the contracted / expected commission in cases where the supplier is not able to send it via integration.
 
-* [**NetpriceX**](/hotelx/plugins/net-price#netpricex)
+* [**CommissionX**](/hotelx/plugins/net-price#commissionX) (NetpriceX Extended funcionality) 
 
-* [**CommissionX**](/hotelx/plugins/net-price#commissionX) (NetpriceX Extended funcionality)
+## CommissionX {#commissionX} 
 
-## NetPriceX {#netpricex}
+### Goals 
 
-### Goals
+CommissionX is a plugin that defines the contracted / expected commission in cases where the supplier is not able to send it via integration. These commissions are defined through the plugin so as not to lose the options in which we do not know the type of price sent, since this information is established at contract level between client-supplier. Different commissions can be applied according to the different rules depending on the format that we will described next. The commission that is loaded in the FTP is interpreted like a **Gross** commission, that is, the commission or profit is included in the price. 
 
-This plugin receives an Option by parameter and returns an Option with all the prices with net value. **This plugin reads information of commissions from ftp**. It is mandatory to load at least supplier's commission file. Depending of the files in ftp, **this plugin can apply two different commission values over prices**.
-Suppliers commission file specifies the commission applied to supplier’s prices. Hotel commission file specifies the commission applied to the specific hotel’s price. On the one hand, if no hotels commission file is loaded in the ftp, the net price with the commission specified in commissions supplier's file will be applied. On other hand, if the hotel's commission file is loaded, this has preference over the supplier's file. These files have to meet the requirements listed below. In other cases, an error will be returned.
+The're two type of CommissionX, via FTP which allow you add more complicate rules, or specify it in Query which only allow you apply the same percentage of commission for all options
 
-## Required files to use this plugin
-
-* [**Commission supplier file format**](/hotelx/plugins/format-files/commission_supplier/) (**Mandatory**)
-
-* [**Commision hotel file format**](/hotelx/plugins/format-files/commission_netprice/) (**Optional**)
-
-### Execution example
-
-It is not necessary to specify it in Query (Settings->Plugins)
-
-## CommissionX {#commissionX}
-
-### Goals
-
-CommissionX is a plugin with an extended funcionality over **net price plugin** that allows to apply more complex bussines rules.
-This plugin defines the contracted / expected commission in cases where the supplier is not able to send it via integration. These commissions are defined through the plugin so as not to lose the options in which we do not know the type of price sent, since this information is established at contract level between client-supplier. Different commissions can be applied according to the different rules depending on the format that we will described next. The commission that is loaded in the FTP is interpreted like a **Gross** commission, that is, the commission or profit is included in the price.
-
-**Observation**
-
-Although the group file is optional if this file is informed before the commission file the values will be used from the group file.
+## CommissionX via FTP 
+This is recommended, because it allow you to applly more complex rules. 
 
 ### Files needed to use this plugin
 
@@ -49,6 +30,9 @@ Although the group file is optional if this file is informed before the commissi
 
     * This file will be necessary in case you want to apply rules depending on a grouping of codes that depend on a [**context**](/hotelx/concepts/accesses-supplier-context/#context). For this case, it is necessary that you pass with the [**entity**](/hotelx/plugins/entity_table_file/).
 
+**Observation**
+
+Although the group file is optional if this file is informed before the commission file the values will be used from the group file.
 
 ### How we make it
 
@@ -61,29 +45,28 @@ We read sequentially the commission file if the columns **chainCodes,destination
 |[hotel](/hotelx/plugins/entity_table_file#hotel)| Yes | Yes | No |
 |[destination](/hotelx/plugins/entity_table_file#destination)| Yes | No | Yes |
 
+### Execution example
+It is not necessary to specify it in Query (Settings->Plugins) 
+
+
+## CommissionX via Query
+If you do not want upload file on FTP, you can specify default percentage of commission in Query (Settings->Plugins). This is not recommended, we suggest you always use the FTP method. 
 
 ### Execution example
-
-```
+``` json
 {
-
-    "plugins": {
-
-        "step": "RESPONSE_OPTION",
-
-        "pluginsType": [
-
-            {
-
-                "type": "NET_PRICE",
-
-                "name": "commission"
-
-            }
-
-        ]
-
-    }
-
+    "plugins": {
+        "step": "RESPONSE_OPTION",
+        "pluginsType": [{
+            "type": "COMMISSION",
+            "name": "commissionX",
+            "parameters": [{
+                "key": "default",
+                "value": "0"
+            }]
+        }]
+    }
 }
 ```
+
+
