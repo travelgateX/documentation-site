@@ -21,7 +21,7 @@ It makes it easier for users and contributors to see the most notable changes th
 
 ## 2019-01-23
 {{% release-notes-container type="f"%}}
-- Fix the error of hotel-list and hotel-room when request more than one code.
+- Fix the error of hotel-list and hotel-room when requesting more than one code.
 {{% /release-notes-container %}}
 
 
