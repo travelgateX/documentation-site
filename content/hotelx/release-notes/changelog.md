@@ -16,7 +16,7 @@ It makes it easier for users and contributors to see the most notable changes th
 
 ## 2019-01-28
 {{% release-notes-container type="f"%}}
-- Fix the error of destinationSearcher when elastic return empty value.
+- Fix the error of destinationSearcher when elastic returns empty value.
 {{% /release-notes-container %}}
 
 ## 2019-01-23
