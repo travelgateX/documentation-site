@@ -14,7 +14,7 @@ The GraphQL schema change log is a list of recent and upcoming changes to our Gr
 
 Check out this list of new releases and changes applied on the **TravelgateX GraphQL API**.
 
-## 2018-11-30
+## 2019-01-30
 
 🛑  Input field `audit` was removed from input object type `HotelXCommonSettingsDataInput`
 
