@@ -14,6 +14,76 @@ The GraphQL schema change log is a list of recent and upcoming changes to our Gr
 
 Check out this list of new releases and changes applied on the **TravelgateX GraphQL API**.
 
+## 2018-11-30
+
+🛑  Input field `audit` was removed from input object type `HotelXCommonSettingsDataInput`
+
+🛑  Input field `clientName` was removed from input object type `HotelXDefaultSettingsDataInput`
+
+🛑  Field `audit` was removed from object type `HotelXCommonSettingsData`
+
+🛑  Field `clientName` was removed from object type `HotelXDefaultSettingsData`
+
+🛑  Field `error` was removed from object type `Product`
+
+🛑  Field `error` was removed from object type `Operation`
+
+🛑  Field `error` was removed from object type `API`
+
+🛑  Field `error` was removed from object type `Resource`
+
+🛑  Field `error` was removed from object type `Role`
+
+🛑  Field `error` was removed from object type `Member`
+
+🛑  Field `error` was removed from object type `Group`
+
+🛑  Field `error` was removed from object type `Organization`
+
+🛑  Type `HotelXAuditInput` was removed
+
+🛑  Type `HotelXAudit` was removed
+
+⚠️  Enum value `COMMISSION` was added to enum `PluginType`
+
+✅  Description `Input delta price, indicates price variation permitted by the client
+An error will be returned if the new price does not abide to DeltaPrice. If DeltaPrice is not sent and the integration implements it,
+we assume that the price range is 0 and the process will continue
+(price is lower or equal to the price showed in valuation).
+This field is implemented if it’s native to the supplier or if another availability/valuation request needs to be done in Reservation.
+In case the supplier blocks the option in valuation, reservation
+will be done automatically in reservation method.` on type `DeltaPriceInput` has changed to `Input delta price, indicates price variation permitted by the client
+An error will be returned if the new price does not abide to DeltaPrice. If DeltaPrice is not sent and the integration implements it, we assume that the price range is 0 and the process will continue
+(price is lower or equal to the price showed in valuation).
+This field is implemented if it’s native to the supplier or if another availability/valuation request needs to be done in Reservation. In case the supplier blocks the option in valuation, reservation
+will be done automatically in reservation method.`
+
+✅  Field `PaymentXQuery.storedCard` description changed from `Returns a stored card information.` to `Returns a stored card information. `
+
+✅  Field `PaymentXQuery.allStoredCards` description changed from `Returns the stored card list. For security, this query never will return clear card information.` to `Returns the stored card list. For security, this query never will return clear card information. `
+
+✅  Input field `HotelSettingsInput.clientTokens` description changed from `Used to identify the origin of the request, this is only used in plugins.` to `Used to identify the origin of the request, this is only used in plugins. `
+
+✅  Description `The Language type represents Language values. A good example might be a Hotel Description Language.
+In queries or mutations, Language fields have to be specified in ISO 3166-1 alpha-2 format with enclosing double quotes "es".` on type `Language` has changed to `The Language type represents Language values. A good example might be a Hotel Description Language.
+In queries or mutations, Language fields have to be specified in ISO 639-1 format with enclosing double quotes "en".`
+
+✅  Field `impersonationJWT` was added to object type `MemberData`
+
+✅  Field `domains` was added to object type `OrganizationData`
+
+✅  Field `AdminQuery.products` description changed from `Product catalog; specify products codes to filter` to `Product catalog; specify products codes to filter `
+
+✅  Argument `domains: [DomainName!]` added to field `AdminQuery.organizations`
+
+✅  Type `JWTImpersonation` was added
+
+✅  Type `DomainName` was added
+
+✅  Type `DomainData` was added
+
+✅  Type `Domain` was added
+
 ## 2018-11-20
 
 ✅  Input field `CreateOrganizationInput.organization` changed type from `ID!` to `ID`
