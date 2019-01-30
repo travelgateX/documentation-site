@@ -26,14 +26,6 @@
       "description": "",
       "isDeprecated": false,
       "args": null
-    },
-    {
-      "typeString": "HotelXAudit",
-      "name": "audit",
-      "url": "/hotelx/reference/objects/hotelxaudit",
-      "description": "",
-      "isDeprecated": false,
-      "args": null
     }
   ],
   "requireby": [

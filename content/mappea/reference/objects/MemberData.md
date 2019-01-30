@@ -132,6 +132,14 @@
           "description": ""
         }
       ]
+    },
+    {
+      "typeString": "JWT!",
+      "name": "impersonationJWT",
+      "url": "/mappea/reference/scalars/jwt",
+      "description": "get a bearer with the same persmissions as the member",
+      "isDeprecated": false,
+      "args": null
     }
   ],
   "requireby": [

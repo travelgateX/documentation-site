@@ -5,14 +5,9 @@
   "fields": null,
   "requireby": [
     {
-      "name": "AdminQuery",
-      "description": "The admin query root of TravelgateX's GraphQL interface.",
-      "url": "/travelgatex/reference/objects/adminquery"
-    },
-    {
       "name": "MemberData",
       "description": "",
-      "url": "/travelgatex/reference/objects/memberdata"
+      "url": "/mappea/reference/objects/memberdata"
     }
   ],
   "enumValues": null,

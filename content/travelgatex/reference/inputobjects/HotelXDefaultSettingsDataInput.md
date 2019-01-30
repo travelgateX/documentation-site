@@ -4,13 +4,6 @@
   "weight": 1,
   "fields": [
     {
-      "typeString": "ID!",
-      "name": "clientName",
-      "url": "/travelgatex/reference/scalars/id",
-      "description": "Indicates the client's name that do the transaction.",
-      "args": null
-    },
-    {
       "typeString": "String!",
       "name": "context",
       "url": "/travelgatex/reference/scalars/string",

@@ -23,13 +23,6 @@
       "url": "/hotelx/reference/inputobjects/timeoutinput",
       "description": "",
       "args": null
-    },
-    {
-      "typeString": "HotelXAuditInput!",
-      "name": "audit",
-      "url": "/hotelx/reference/inputobjects/hotelxauditinput",
-      "description": "",
-      "args": null
     }
   ],
   "requireby": null,

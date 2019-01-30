@@ -70,11 +70,6 @@
       "url": "/travelgatex/reference/objects/businessrules"
     },
     {
-      "name": "HotelXAudit",
-      "description": "",
-      "url": "/travelgatex/reference/objects/hotelxaudit"
-    },
-    {
       "name": "PaxInput",
       "description": "Pax object that contains the pax age.",
       "url": "/travelgatex/reference/inputobjects/paxinput"
@@ -178,11 +173,6 @@
       "name": "HotelXBusinessRulesInput",
       "description": "List of business rules to use as filter on the options.",
       "url": "/travelgatex/reference/inputobjects/hotelxbusinessrulesinput"
-    },
-    {
-      "name": "HotelXAuditInput",
-      "description": "",
-      "url": "/travelgatex/reference/inputobjects/hotelxauditinput"
     },
     {
       "name": "BookRoomInput",

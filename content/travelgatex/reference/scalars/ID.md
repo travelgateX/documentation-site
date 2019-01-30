@@ -260,11 +260,6 @@
       "url": "/travelgatex/reference/objects/hotelruntimeconfiguration"
     },
     {
-      "name": "HotelXDefaultSettingsData",
-      "description": "",
-      "url": "/travelgatex/reference/objects/hotelxdefaultsettingsdata"
-    },
-    {
       "name": "Board",
       "description": "Board type.",
       "url": "/travelgatex/reference/objects/board"
@@ -428,11 +423,6 @@
       "name": "DeleteGroupInput",
       "description": "",
       "url": "/travelgatex/reference/inputobjects/deletegroupinput"
-    },
-    {
-      "name": "HotelXDefaultSettingsDataInput",
-      "description": "",
-      "url": "/travelgatex/reference/inputobjects/hotelxdefaultsettingsdatainput"
     },
     {
       "name": "HotelXUpdateStatus",

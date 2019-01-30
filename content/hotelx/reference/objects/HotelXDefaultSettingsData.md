@@ -4,14 +4,6 @@
   "weight": 1,
   "fields": [
     {
-      "typeString": "ID!",
-      "name": "clientName",
-      "url": "/hotelx/reference/scalars/id",
-      "description": "Indicates the client that do the transaction.",
-      "isDeprecated": false,
-      "args": null
-    },
-    {
       "typeString": "String!",
       "name": "context",
       "url": "/hotelx/reference/scalars/string",

@@ -45,11 +45,6 @@
       "url": "/hotelx/reference/objects/hotelruntimeconfiguration"
     },
     {
-      "name": "HotelXDefaultSettingsData",
-      "description": "",
-      "url": "/hotelx/reference/objects/hotelxdefaultsettingsdata"
-    },
-    {
       "name": "AdviseMessage",
       "description": "List of advise messages.",
       "url": "/hotelx/reference/objects/advisemessage"
@@ -133,11 +128,6 @@
       "name": "HotelXAccessInput",
       "description": "AccessInput overwrites an existent access in our Back Office or creates a new\none to be used in this search query only. An access object contains its own code, configuration and settings.",
       "url": "/hotelx/reference/inputobjects/hotelxaccessinput"
-    },
-    {
-      "name": "HotelXDefaultSettingsDataInput",
-      "description": "",
-      "url": "/hotelx/reference/inputobjects/hotelxdefaultsettingsdatainput"
     },
     {
       "name": "HotelXUpdateStatus",

@@ -68,6 +68,12 @@
       "description": "POST_STEP is the last plugin that a step will execute, allows a full range of operations:\nsplit arrays, join arrays, modify object values, add or remove object instances",
       "isDeprecated": false,
       "deprecationReason": null
+    },
+    {
+      "name": "COMMISSION",
+      "description": "COMMISSION plugin allows the user to apply the rule to calculate the commission",
+      "isDeprecated": false,
+      "deprecationReason": null
     }
   ],
   "operator": "enum",

@@ -23,13 +23,6 @@
       "url": "/travelgatex/reference/inputobjects/timeoutinput",
       "description": "",
       "args": null
-    },
-    {
-      "typeString": "HotelXAuditInput!",
-      "name": "audit",
-      "url": "/travelgatex/reference/inputobjects/hotelxauditinput",
-      "description": "",
-      "args": null
     }
   ],
   "requireby": null,
