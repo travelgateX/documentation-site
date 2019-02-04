@@ -10,9 +10,14 @@ hidden = false
 tags = ["products-changelog"]
 +++
 
-It makes it easier for users and contributors to see the most notable changes that have been made on HotelX product.
+Easily accessible log of notable changes to HotelX API
 
-{{% alert theme="info" %}}All notable changes on our platform will be documented on this page.{{% /alert %}}
+{{% alert theme="info" %}}All notable changes to our platform will be documented on this page.{{% /alert %}}
+
+## 2019-02-04
+{{% release-notes-container type="f"%}}
+- Fix hotel-list and hotel-room EOF error, when elastic return empty result.
+{{% /release-notes-container %}}
 
 ## 2019-01-28
 {{% release-notes-container type="f"%}}
