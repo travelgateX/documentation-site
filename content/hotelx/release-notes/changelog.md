@@ -14,6 +14,11 @@ It makes it easier for users and contributors to see the most notable changes th
 
 {{% alert theme="info" %}}All notable changes on our platform will be documented on this page.{{% /alert %}}
 
+## 2019-02-04
+{{% release-notes-container type="f"%}}
+- Fix hotel-list and hotel-room EOF error, when elastic return empty result.
+{{% /release-notes-container %}}
+
 ## 2019-01-28
 {{% release-notes-container type="f"%}}
 - Fix the error of destinationSearcher when elastic returns empty value.
