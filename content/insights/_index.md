@@ -1,11 +1,10 @@
 +++
-title = "InsightsX"
+title = "Insights-X"
 pagetitle = ""
 description = ""
-weight = 7
+weight = 4
 alwaysopen = false
 isDirectory = false
-hidden = true
 +++
 
 {{%custom-children%}}
