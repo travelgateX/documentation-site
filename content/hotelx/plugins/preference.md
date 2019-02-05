@@ -1,7 +1,7 @@
 +++
 title = "Preference"
 pagetitle = "Preference"
-description = "Discards those options that have a commission higher than expected."
+description = "Give preference to the options that match the preference rules."
 icon = "fa-level-up"
 weight = 3
 alwaysopen = false
@@ -13,7 +13,7 @@ Preference is an optional plugin and allows to offer options **preferentially** 
 
 ### Goals
 
-The preference plugin **offers those options that match with rule preferences reported.** By doing this, the options will be returned in a preferential way.
+The preference plugin **Give preference to the options that match the preference rules** By doing this, the options will be returned in a preferential way.
 
 Sequentially, the rules will be evaluated until a match is found, upon finding it, the process will be stopped and the preference will be evaluated. In the same way, if the rule is not found, the option will be validated.  
 
