@@ -18,6 +18,7 @@ Below are described each table and their fields.
 This table contains info of searches, quotes and bookings aggregated by day.
 
 __fields__
+
 * client\_id (STRING). Client unique ID.
 * provider\_id (STRING). Provider unique ID.
 * cache (BOOLEAN). It indicates if the source of request was the a client or Speed-X to load info in cache (0=Client, 1=Speed-X).
@@ -46,9 +47,11 @@ __fields__
     * booking\_nok (NUMBER). Quantity of failed bookings for above key and hotel.
     * amount (NUMBER). Total amount of confirmed bookings for above key and hotel.
 
+	
 __Preview__
- | client\_id | provider\_id | cache | search\_date&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | check\_in&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | nights | nationality | num\_rooms | adults | children | infants | search\_ok | search\_nok | quote\_ok | quote\_nok | booking\_ok | booking\_nok | amount | hotels.code | hotels.search_ok | hotels.search_nok | hotels.quote_ok | hotels.quote_nok | hotels.booking_ok | hotels.booking_nok | hotels.amount |
-| :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- |
+
+| client\_id | provider\_id | cache | search\_date | check\_in | nights | nationality | num\_rooms | adults | children | infants | search\_ok | search\_nok | quote\_ok | quote\_nok | booking\_ok | booking\_nok | amount | hotels.code | hotels.search_ok | hotels.search_nok | hotels.quote_ok | hotels.quote_nok | hotels.booking_ok | hotels.booking_nok | hotels.amount |
+| :---- | :---- | :---- | :----------------------------------------------- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- |
 | client A | provider X | false | 2019-01-13 00:00:00 UTC | 2019-01-19 00:00:00 UTC | 4 | SE | 1 | 1 | 0 | 0 | 13 | 11 | _null_ | _null_ | _null_ | _null_ | _null_ | 641443 | 13 | 0 | _null_ | _null_ | _null_ | _null_ | _null_ 
 | | | | | | | | | | | | | | | | | | | 551568 | 0 | 11 | _null_ | _null_ | _null_ | _null_ | _null_  |
 | client B | provider Y | false | 2019-01-13 00:00:00 UTC | 2019-01-19 00:00:00 UTC | 2 | CN | 1 | 2 | 0 | 0 | 6 | 1 | 3 | 0 | 1 | 0 | 398.84 | 299 | 0 | 1 | _null_ | _null_ | _null_ | _null_ | _null_ |
@@ -59,6 +62,7 @@ __Preview__
 This table contains info similar to _daily_insights_ but with a bigger aggregation. The fields _check\_in_, _adults_, _children_ and _infants_ have dissapeared.
 
 __fields__
+
 * client\_id	(STRING). Client unique ID.
 * provider\_id (STRING). Provider unique ID.
 * cache	(BOOLEAN). It indicates if the source of request was the a client or Speed-X to load info in cache (0=Client, 1=Speed-X).
@@ -99,7 +103,8 @@ __fields__
     * amount (NUMBER). Total amount of confirmed bookings for above key and hotel.
 
 __Preview__ 
-| client\_id | provider\_id | cache | search\_date&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | booking\_window | nights | nationality | num\_rooms | pax\_type | search\_ok | search\_nok | quote\_ok | quote\_nok | booking\_ok | booking\_nok | amount | hotels.code | hotels.search_ok | hotels.search_nok | hotels.quote_ok | hotels.quote_nok | hotels.booking_ok | hotels.booking_nok | hotels.amount |
+
+| client\_id | provider\_id | cache | search\_date | booking\_window | nights | nationality | num\_rooms | pax\_type | search\_ok | search\_nok | quote\_ok | quote\_nok | booking\_ok | booking\_nok | amount | hotels.code | hotels.search_ok | hotels.search_nok | hotels.quote_ok | hotels.quote_nok | hotels.booking_ok | hotels.booking_nok | hotels.amount |
 | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- |
 | client A | provider X | false | 2019-01-13 00:00:00 UTC | 3 | 4 | SE | 1 | 1 | 13 | 11 | _null_ | _null_ | _null_ | _null_ | _null_ | 641443 | 13 | 0 | _null_ | _null_ | _null_ | _null_ | _null_ 
 | | | | | | | | | | | | | | | | | | | 551568 | 0 | 11 | _null_ | _null_ | _null_ | _null_ | _null_  |
@@ -111,6 +116,7 @@ __Preview__
 This table is used to know which hotels over supplier's portfolio are being queried by the clients. This can be helpful to know which percentage over portfolio is mapped by the client.
 
 __fields__
+
 * client\_id	(STRING). Client unique ID.
 * provider\_id (STRING). Provider unique ID.
 * hotel (STRING). Hotel unique ID.
@@ -122,6 +128,7 @@ __fields__
     * 2 = Hotel code queried and it appears in provider's portfolio.
 
 **Preview**
+
 | client\_id | provider\_id | hotel | hotel\_name\_portfolio | hotel\_country\_portfolio | status |
 | :---- | :---- | :---- | :---- | :---- | :---- |
 | client A | provider X | 1 | hotel\_1 | ES | 1 | 
@@ -133,6 +140,7 @@ __fields__
 This table contains transactional info (response status, response time...) of requests between clients and providers.
 
 __fields__
+
 * st\_date (TIMESTAMP) Search date in UTC (format: YYYY-MM-DD hh:mm:ss)
 * client\_id (STRING) Client unique ID
 * provider\_id (STRING) Provider unique ID
@@ -164,8 +172,9 @@ __fields__
 * other\_time (NUMBER). Total response time (in milliseconds) for other transactions.
 
 **Preview**
-| st\_date&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | client\_id | provider\_id | speed | avail\_ok | avail\_nok_results | avail\_nok_provider | avail\_nok_bad_request | avail\_nok_integration | avail\_nok_communication | avail\_nok_others | avail\_time | quote\_ok | quote\_nok_results | quote\_nok_provider | quote\_nok_bad_request | quote\_nok_integration | quote\_nok_communication | quote\_nok_others | quote\_time | book\_ok | book\_nok | book\_time | cancel\_ok | cancel\_nok | cancel\_time | other\_ok | other\_nok | other\_time  |
-| :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- |
+
+| st\_date | client\_id | provider\_id | speed | avail\_ok | avail\_nok_results | avail\_nok_provider | avail\_nok_bad_request | avail\_nok_integration | avail\_nok_communication | avail\_nok_others | avail\_time | quote\_ok | quote\_nok_results | quote\_nok_provider | quote\_nok_bad_request | quote\_nok_integration | quote\_nok_communication | quote\_nok_others | quote\_time | book\_ok | book\_nok | book\_time | cancel\_ok | cancel\_nok | cancel\_time | other\_ok | other\_nok | other\_time  |
+| :-------------------------------------- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- |
 | 2018-03-28 12:00:00 UTC | client 1 | provider 1 | false | 372408 | 159272 | 571 | 30093 | 0 | 40 | 0 | 206883360 | 182 | 0 | 0 | 0 | 0 | 0 | 0 | 38166 | 3 | 0 | 31848 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 2018-03-28 12:00:00 UTC | client 1 | provider 2 | false | 50 | 10 | 0 | 0 | 0 | 0 | 0 | 48754 | 419 | 6 | 0 | 0 | 0 | 4 | 0 | 374301 | 5 | 0 | 41257 | 1 | 0 | 6080 | 172 | 0 | 5116 |
 | 2018-03-28 12:00:00 UTC | client 2 | provider 1 | false | 548214 | 0 | 577 | 0 | 714 | 0 | 0 | 47457579 | 3719 | 32 | 0 | 0 | 0 | 0 | 0 | 327425 | 18 | 0 | 81757 | 6 | 4 | 31803 | 230 | 0 | 42614 |
