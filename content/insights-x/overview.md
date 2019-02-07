@@ -32,7 +32,7 @@ Refer to [types of datasets](/insights-x/datasets/types-of-datasets/) to get inf
 
 ## Tooling
 If you don't have an own reporting tool, the easiest way to interact with Insights-X datasets is via our free [Google Data Studio Templates](https://datastudio.google.com/u/0/navigation/reporting). 
-You'll have access to our reporting templates and  you will can explore your data through different predefined reports.
+You'll have access to our reporting templates and you will can explore your data through different predefined reports.
 
 ## API
 {{% alert theme="info" %}}Insights-X API to help you query your insights data via GraphqQL 'query' is coming soon. 
@@ -40,6 +40,6 @@ Please submit an issue to <a href="https://github.com/travelgateX/Issue-tracker"
 
 
 
-{{% alert theme="info" %}}Join us on [Slack](https://slack.travelgatex.com/) to talk with us about how to use Insihgts-X in your apps and products. 
+{{% alert theme="info" %}}Join us on [Slack](https://slack.travelgatex.com/) to talk with us about how to use Insights-X in your apps and products. 
 You can also send us a [Jira service desk request](https://xmltravelgate.atlassian.net/servicedesk/customer/portal/7). 
 If you would like any new features or more information in our documentation, send us an [issues request](https://github.com/travelgateX/Issue-tracker).{{% /alert %}}
