@@ -16,7 +16,7 @@ Easily accessible log of notable changes to HotelX API
 
 ## 2019-02-04
 {{% release-notes-container type="f"%}}
-- Fix hotel-list and hotel-room EOF error, when elastic return empty result.
+- Fix hotel-list and hotel-room EOF error, when elastic returns empty result.
 {{% /release-notes-container %}}
 
 ## 2019-01-28
