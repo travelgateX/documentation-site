@@ -1,7 +1,7 @@
 +++
 title = "Dataset"
 pagetitle = "Dataset"
-description = "Learn about how is stored the info in our datasets."
+description = "Learn about how the information is stored in our datasets."
 icon = "fa-list-alt"
 weight = 5
 alwaysopen = false
@@ -11,11 +11,11 @@ On this page you will learn how the data is stored in datasets.
 
 # Tables
 
-Data is stored in multiple tables depending the kind of info that want to be queried.
+Data is stored in multiple tables depending on the kind of info that wants to be queried.
 Below are described each table and their fields.
 
 ## daily_insights
-This table contains info of searches, quotes and bookings aggregated by day.
+This table contains info from searches, quotes and bookings aggregated by day.
 
 __fields__
 
@@ -25,7 +25,7 @@ __fields__
 * search\_date (TIMESTAMP). Search date in UTC (format: YYYY-MM-DD hh:mm:ss).
 * check\_in (TIMESTAMP). Check in date in UTC (format: YYYY-MM-DD hh:mm:ss).
 * nights (NUMBER). Length of stay.
-* nationality (STRING). Pax nationality (ISO Alpha-2 code). It can be null when client don't send this field.
+* nationality (STRING). Pax nationality (ISO Alpha-2 code). It can be null when clients don't send this field.
 * num\_rooms (NUMBER). Quantity of rooms.
 * adults (NUMBER). Quantity pax older than 12 years (12 is not included).
 * children (NUMBER). Quantity pax between 2 and 12 (both included).
@@ -67,7 +67,7 @@ __fields__
 * provider\_id (STRING). Provider unique ID.
 * cache	(BOOLEAN). It indicates if the source of request was the a client or Speed-X to load info in cache (0=Client, 1=Speed-X).
 * search\_date (TIMESTAMP). Search date in UTC (format: YYYY-MM-DD hh:mm:ss).
-* __booking_window__ (NUMBER). It is an enumeration to describe how far away is check in date.
+* __booking_window__ (NUMBER). It is an enumeration to describe how far away is the check-in date.
     * __1__ = Last second (0-1 day).
     * __2__ = Last minute (2-3 days).
     * __3__ = About 1 week (4-7 days).
@@ -75,18 +75,18 @@ __fields__
     * __5__ = About 1 month (15-30 days)
     * __6__ = About 2 months (31-60 days).
     * __7__ = About 3 months (61-90 days).
-    * __8__ = More than 3 month (90+ days ).
+    * __8__ = More than 3 months (90+ days).
 * nights (NUMBER). Length of stay.
-* nationality (STRING). Pax nationality (ISO Alpha-2 code). It can be null when client don't send this field.
+* nationality (STRING). Pax nationality (ISO Alpha-2 code). It can be null when clients don't send this field.
 * num\_rooms (NUMBER). Quantity of rooms.
-* __pax_type__ (NUMBER). It is an enumeration to describe a combination of paxs (adults + children + infants).
+* __pax_type__ (NUMBER). It is an enumeration to describe a combination of paxes (adults + children + infants).
     * __1__ = Solo (Adults = 1, children = 0 and infants = 0).
     * __2__ = Couple (Adults = 2, children = 0 and infants = 0).
     * __3__ = Family (Adults = 2, children + infants > 0).
     * __4__ = Group (Adults > 2).
     * __5__ = Other.
 * search\_ok (NUMBER). Quantity of searches that returned any available hotel for above key (search_date, check_in...).
-* search\_nok (NUMBER). Quantity of searches that didn't return any available hotel for above key.
+* search\_nok (NUMBER). Quantity of searches that didn't return any available hotels for above key.
 * quote\_ok (NUMBER). Quantity of quotes that returned a correct result for above key.
 * quote\_nok (NUMBER). Quantity of quotes that returned a wrong result for above key.
 * booking\_ok (NUMBER). Quantity of confirmed bookings for above key.
@@ -123,8 +123,8 @@ __fields__
 * hotel\_name\_portfolio (STRING). Hotel name.
 * hotel\_country\_portfolio (STRING). Hotel Country Code (ISO Alpha-2 code)
 * status. It is an enumeration to describe the status of the hotel.
-    * 0 = Hotel code queried but it doesn't appear in provider's portfolio. Can be due to a wrong mapping in client's system.
-    * 1 = Hotel code not queried but it appears in provider's portfolio. Can be due to a miss mapping in client's system.
+    * 0 = Hotel code queried but it doesn't appear in provider's portfolio. It can be due to a wrong mapping in client's system.
+    * 1 = Hotel code not queried but it appears in provider's portfolio. It can be due to a mismapping in client's system.
     * 2 = Hotel code queried and it appears in provider's portfolio.
 
 **Preview**
@@ -151,15 +151,15 @@ __fields__
 * avail\_nok_bad_request (NUMBER). Quantity of searches with error due a wrong request.
 * avail\_nok_integration (NUMBER). Quantity of searches with error due a failure in the connector.
 * avail\_nok_communication (NUMBER). Quantity of searches with error due a timeout.
-* avail\_nok_others (NUMBER). Quantity of searches with errors different to aboves.
+* avail\_nok_others (NUMBER). Quantity of searches with errors different to those above.
 * avail\_time (NUMBER). Total response time (in milliseconds) for all searches.
-* quote\_ok (NUMBER). Quantity of quotes with available result.
+* quote\_ok (NUMBER). Quantity of quotes with available results.
 * quote\_nok_results (NUMBER). Quantity of quotes without available results.
 * quote\_nok_provider (NUMBER). Quantity of quotes with generic error from provider.
-* quote\_nok_bad_request. Quantity of quotes with error due a wrong request.
+* quote\_nok_bad_request. Quantity of quotes with error due to a wrong request.
 * quote\_nok_integration. Quantity of quotes with error due a failure in the connector.
-* quote\_nok_communication (NUMBER). Quantity of quotes with error due a timeout.
-* quote\_nok_others (NUMBER). Quantity of quotes with errors different to aboves.
+* quote\_nok_communication (NUMBER). Quantity of quotes with error due to a timeout.
+* quote\_nok_others (NUMBER). Quantity of quotes with errors different to those above.
 * quote\_time (NUMBER). Total response time (in milliseconds) for all quotes.
 * book\_ok (NUMBER). Quantity of correct bookings.
 * book\_nok (NUMBER). Quantity of bookings with an error.
