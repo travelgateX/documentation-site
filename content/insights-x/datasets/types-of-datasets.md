@@ -1,7 +1,7 @@
 +++
 title = "Types of Datasets"
 pagetitle = "Types of Datasets"
-description = "Insights-X Publication formats"
+description = "Insights-X Types of Datasets"
 icon = "fa-list-alt"
 weight = 1
 alwaysopen = false
@@ -25,7 +25,7 @@ Some resources for understanding how to use BigQuery:
 
 To get started using a BigQuery dataset, Insights-X will allow permission to your own project so you can start querying datasets. If you intend to go beyond the included quotas you must also enable billing.
 
-# Exported Data to Cloud Storage
+# Exported Data
 
 Up to 1 GB of table data can be exported into a single file.
 
@@ -35,6 +35,7 @@ When exported data is in JSON format, INT64 (integer) data types are encoded as 
 ## CSVs
 
 The simplest file type available on Insights-X is the “Comma-Separated List”, or CSV, for tabular data. A CSV representation of a booking list with a header row, for example, looks like this:
+
 
 | client\_id | provider\_id | check\_in | 
 | :--------- | :----------- | :-------- | 
