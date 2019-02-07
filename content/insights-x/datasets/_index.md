@@ -1,5 +1,5 @@
 +++
-title = "Dtasets"
+title = "Datasets"
 pagetitle = "Insights-X Datasets"
 description = "Understand Insights-X Datasets concepts"
 icon = "fa-question-circle" 
