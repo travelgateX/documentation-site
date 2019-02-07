@@ -7,8 +7,6 @@ weight = 1
 alwaysopen = false
 +++
 
-# Types of Datasets
-
 This page describes the way Insights-X share data with customers.
 
 As a customer you can access Insights-X data via [BigQuery Dataset](https://cloud.google.com/bigquery/docs/dataset-metadata) or as [Exported Table Data to Cloud Storage](https://cloud.google.com/storage/docs/)
