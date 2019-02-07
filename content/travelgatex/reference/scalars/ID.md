@@ -290,6 +290,11 @@
       "url": "/travelgatex/reference/objects/hoteldata"
     },
     {
+      "name": "GiataData",
+      "description": "Hotel data obtained from Giata System.",
+      "url": "/travelgatex/reference/objects/giatadata"
+    },
+    {
       "name": "DestinationData",
       "description": "Information about destinantion",
       "url": "/travelgatex/reference/objects/destinationdata"

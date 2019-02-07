@@ -28,6 +28,14 @@
       "args": null
     },
     {
+      "typeString": "GiataData",
+      "name": "giataData",
+      "url": "/travelgatex/reference/objects/giatadata",
+      "description": "Giata data stored in giata.",
+      "isDeprecated": false,
+      "args": null
+    },
+    {
       "typeString": "String!",
       "name": "hotelName",
       "url": "/travelgatex/reference/scalars/string",

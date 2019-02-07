@@ -5,6 +5,11 @@
   "fields": null,
   "requireby": [
     {
+      "name": "GiataData",
+      "description": "Hotel data obtained from Giata System.",
+      "url": "/hotelx/reference/objects/giatadata"
+    },
+    {
       "name": "Contact",
       "description": "Contact Data.",
       "url": "/hotelx/reference/objects/contact"

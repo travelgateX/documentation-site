@@ -35,6 +35,11 @@
       "url": "/hotelx/reference/objects/hotel"
     },
     {
+      "name": "GiataData",
+      "description": "Hotel data obtained from Giata System.",
+      "url": "/hotelx/reference/objects/giatadata"
+    },
+    {
       "name": "Media",
       "description": "Contains media information.",
       "url": "/hotelx/reference/objects/media"

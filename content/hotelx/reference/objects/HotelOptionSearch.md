@@ -160,8 +160,15 @@
       "name": "token",
       "url": "/hotelx/reference/scalars/string",
       "description": "Token for Deep Link",
-      "isDeprecated": false,
-      "args": null
+      "isDeprecated": true,
+      "args": null,
+      "deprecationReason": "",
+      "descriptionSplitted": {
+        "date": "2019-02-05",
+        "first": "deprecated from",
+        "second": ""
+      },
+      "deprecationDate": "2019-02-05"
     },
     {
       "typeString": "String!",

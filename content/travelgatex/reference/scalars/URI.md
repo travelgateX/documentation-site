@@ -10,6 +10,11 @@
       "url": "/travelgatex/reference/objects/urls"
     },
     {
+      "name": "GiataData",
+      "description": "Hotel data obtained from Giata System.",
+      "url": "/travelgatex/reference/objects/giatadata"
+    },
+    {
       "name": "Contact",
       "description": "Contact Data.",
       "url": "/travelgatex/reference/objects/contact"
