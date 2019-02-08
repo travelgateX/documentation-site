@@ -1,7 +1,7 @@
 +++
 title = "Types of Datasets"
 pagetitle = "Types of Datasets"
-description = "Insights-X Types of Datasets"
+description = "Learn about what Dataset types can you use"
 icon = "fa-list-alt"
 weight = 1
 alwaysopen = false
@@ -27,17 +27,15 @@ To get started using a BigQuery dataset, Insights-X will allow permission to you
 
 Up to 1 GB of table data can be exported into a single file.
 
-When exported data is in JSON format, INT64 (integer) data types are encoded as JSON strings to preserve 64-bit precision when the data is read by other systems.
-
 
 ## CSVs
 
 The simplest file type available on Insights-X is the “Comma-Separated List”, or CSV, for tabular data. A CSV representation of a booking list with a header row, for example, looks like this:
 
-| client\_id  | provider\_id  | check\_in                 | 
-| :---------  | :-----------  | :--------                 | 
-| clientA     | providerX     | 2019-01-13 00:00:00 UTC   |
-| clientB     | providerX     | 2019-01-15 00:00:00 UTC   |
+| client\_id          | provider\_id          | check\_in  |
+| -------------    |:----------------:| -----------:  |
+| clientA    | providerX               |  2019-01-13 00:00:00 UTC             |
+| clientB   | providerX              | providerX              |
 
 CSV format does not support nested and repeated data.
 
@@ -63,6 +61,8 @@ While CSV is the most common file format for “flat” data, JSON is the most c
 }
 ```
   
+When exported data is in JSON format, INT64 (integer) data types are encoded as JSON strings to preserve 64-bit precision when the data is read by other systems.
+
 JSON format supports nested and repeated data.
 
 ## AVRO

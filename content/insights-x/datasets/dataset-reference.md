@@ -1,7 +1,7 @@
 +++
-title = "Dataset Reference"
+title = "Reference"
 pagetitle = "Dataset Reference"
-description = "Learn about how the information is stored in our datasets."
+description = "Learn about how the information is stored in our datasets"
 icon = "fa-book"
 weight = 2
 alwaysopen = false

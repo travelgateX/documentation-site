@@ -15,19 +15,20 @@ Once the data is stored in our Datawarehouse we can share to your company depend
 
 * **Other Industry partners:** not connected to our platform, can have access to insights about segmentation, profitability and demand across global markets. This data will help you to forecast to your own needs
 
-The below map shows how you can access Insights-X Datasets:.
+
+The below map shows Insights-X architecture diagram:
 
 {{< figure src="/images/insightsx_diagram.png#center" attr="" >}}
 
 ## Types of Datasets
-TravelgateX supports a variety of dataset publication formats. A Dataset is the way Insights-X shares the data with Partners, Hoteliers or other Industry Partners.
+TravelgateX supports a variety of Dataset publication formats. A Dataset is the way Insights-X shares the data with Partners, Hoteliers or other Partners.
 
 Refer to [types of datasets](/insights-x/datasets/types-of-datasets/) to get information about supported Dataset types and reference documentation.
 
 ## Tooling
 If you don't have your own reporting tool, the easiest way to interact with Insights-X datasets is via our free [Google Data Studio Templates](https://datastudio.google.com/u/0/navigation/reporting). 
 
-In [Dataset tooling](/insights-x/datasets/dataset-tooling/)] you'll have access to our reporting templates and other tools we TravelgateX offers for free.
+In [Dataset tooling](/insights-x/datasets/dataset-tooling/) you'll know what tools TravelgateX offers for free.
 
 ## API
 {{% alert theme="info" %}}Insights-X API to help you query your insights data via GraphqQL 'query' is coming soon. 

@@ -1,8 +1,8 @@
 +++
-title = "Datasets tooling"
+title = "Tooling"
 pagetitle = "Tools for Dataset exploration"
 description = "Tools for Dataset exploration"
-icon = "fa-tools"
+icon = "fa-medkit"
 weight = 3
 alwaysopen = false
 +++
