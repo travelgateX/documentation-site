@@ -7,7 +7,9 @@ weight = 1
 alwaysopen = false
 +++
 
-Once the data is stored in our Datawarehouse we can share to your company depending on your TravelgateX relationship:
+Insights-X extracts, loads and consolidates data from Products like Hotel-X. In order to analyze and **produce useful insights**.
+
+Once the data is consolidated in our Datawarehouse, we can share different data depending on your TravelgateX relationship:
 
 * **Partners:** already connected to our platform, such as OTAs and Wholesalers, will have access to accurate date regarding their performance, ratios, prices, product usage... With these data, an accurate benchmarking against competitors is made clear so that our partners can to gain a competitive advantage. _We do this without ever exposing our partners’ data , we create anonymous dynamic competitive sets_. 
  
