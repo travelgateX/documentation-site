@@ -15,9 +15,16 @@
 
 ### Unreleased
 {{% release-notes-container type="u"%}}
+- Removal of `loadFile` from `HotelXMutation`. Reason: .  Deprecated on 2018-06-06.**To be removed soon**.
 - Removal of `useContext` from `HotelSettingsInput`. Reason: Redundant..  Deprecated on 2017-12-12.**To be removed soon**.
 - Removal of `connectUser` from `HotelSettingsInput`. Reason: Redundant..  Deprecated on 2018-03-19.**To be removed soon**.
 - Removal of `distribute` from `AddOns`. Reason: You can find it in distribution AddOn.  Deprecated on 2018-05-21.**To be removed soon**.
+- Removal of `type` from `AdviseMessage`. Reason: .  Deprecated on 2018-06-01.**To be removed soon**.
+- Removal of `token` from `HotelOptionSearch`. Reason: .  Deprecated on 2019-02-05.Expected removal on 2019-05-06.
+{{% / release-notes-container %}}
+### 2019-02-05
+{{% release-notes-container type="d"%}}
+- Deprecated `token` from `HotelOptionSearch`. Reason: . Expected removal on 2019-05-06 .
 {{% / release-notes-container %}}
 ### 2018-07-26
 {{% release-notes-container type="r"%}}
@@ -41,6 +48,14 @@
 - Removed `booking` from `Query`. Reason: You can find it in query at HotelX. Deprecated on 2017-11-21 .
 - Removed `defaultSettings` from `Query`. Reason: You can find it in query at HotelX. Deprecated on 2017-11-21 .
 - Removed `mapping` from `Query`. Reason: You can find it in query at HotelX. Deprecated on 2017-11-21 .
+{{% / release-notes-container %}}
+### 2018-06-06
+{{% release-notes-container type="d"%}}
+- Deprecated `loadFile` from `HotelXMutation`. Reason: . Expected removal on 2018-09-04 .
+{{% / release-notes-container %}}
+### 2018-06-01
+{{% release-notes-container type="d"%}}
+- Deprecated `type` from `AdviseMessage`. Reason: . Expected removal on 2018-08-30 .
 {{% / release-notes-container %}}
 ### 2018-05-21
 {{% release-notes-container type="d"%}}

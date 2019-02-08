@@ -24,7 +24,8 @@
         "first": "deprecated from",
         "second": ""
       },
-      "deprecationDate": "2018-06-01"
+      "deprecationDate": "2018-06-01",
+      "typeName": "AdviseMessage"
     },
     {
       "typeString": "String!",

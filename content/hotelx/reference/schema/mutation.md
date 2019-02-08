@@ -236,7 +236,8 @@
         "first": "deprecated from",
         "second": ""
       },
-      "deprecationDate": "2018-06-06"
+      "deprecationDate": "2018-06-06",
+      "typeName": "HotelXMutation"
     }
   ],
   "requireby": null,
