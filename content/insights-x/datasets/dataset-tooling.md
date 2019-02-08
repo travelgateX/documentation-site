@@ -9,11 +9,12 @@ alwaysopen = false
 
 On this page you'll find  what free tools can you use to analyze our datasets.
 
+
 # Template reportings
 
-If you don't use an own reporting tool as Tableau or PowerBI, the easiest way to interact with Insights-X datasets is via our free [Google Data Studio Templates](https://datastudio.google.com/u/0/navigation/reporting). 
+If you don't have your own reporting tool as Tableau or PowerBI, the easiest way to interact with Insights-X datasets is via our free [Google Data Studio Templates](https://datastudio.google.com/u/0/navigation/reporting). 
 
-Every Insights-X Dataset has a free template to explore it:
+We offer free GDS templates to explore our Datasets.
 
 | Dataset          | Version          | GDS Template  |
 | -------------    |:----------------:| -----------:  |

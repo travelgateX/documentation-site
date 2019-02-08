@@ -1,6 +1,6 @@
 +++
 title = "Dataset Reference"
-pagetitle = "Datase Referencet"
+pagetitle = "Dataset Reference"
 description = "Learn about how the information is stored in our datasets."
 icon = "fa-book"
 weight = 2
@@ -12,7 +12,7 @@ On this page you will learn how the data is stored in datasets.
 # Tables
 
 Data is stored in multiple tables depending on the kind of info that wants to be queried.
-Below are described each table and their fields.
+Descriptions of each table and their correspondent fields are found below:
 
 ## daily_insights
 This table contains info from searches, quotes and bookings aggregated by day.
@@ -21,7 +21,7 @@ __fields__
 
 * client\_id (STRING). Client unique ID.
 * provider\_id (STRING). Provider unique ID.
-* cache (BOOLEAN). It indicates if the source of request was the a client or Speed-X to load info in cache (0=Client, 1=Speed-X).
+* cache (BOOLEAN). It indicates if the source of request was the client or Speed-X on behalf of the client (0=Client, 1=Speed-X).
 * search\_date (TIMESTAMP). Search date in UTC (format: YYYY-MM-DD hh:mm:ss).
 * check\_in (TIMESTAMP). Check in date in UTC (format: YYYY-MM-DD hh:mm:ss).
 * nights (NUMBER). Length of stay.
@@ -59,7 +59,7 @@ __Preview__
 | | | | | | | | | | | | | | | | | | | 203 | 1 | 0 | _null_ | _null_ | _null_ | _null_ | _null_ |
 
 ## daily\_insights\_client / daily\_insights\_provider
-This table contains info similar to _daily_insights_ but with a bigger aggregation. The fields _check\_in_, _adults_, _children_ and _infants_ have dissapeared.
+This table contains info similar to _daily_insights_ but with a bigger aggregation. The fields _check\_in_, _adults_, _children_ and _infants_ have disapeared.
 
 __fields__
 
