@@ -34,8 +34,8 @@ The simplest file type available on Insights-X is the “Comma-Separated List”
 
 | client\_id          | provider\_id          | check\_in  |
 | -------------    |:----------------:| -----------:  |
-| clientA    | providerX               |  2019-01-13 00:00:00 UTC             |
-| clientB   | providerX              | providerX              |
+| clientA   | providerX               |  2019-01-13 00:00:00 UTC |
+| clientB   | providerX                |  2019-01-15 00:00:00 UTC |
 
 CSV format does not support nested and repeated data.
 
