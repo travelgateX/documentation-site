@@ -15,5 +15,5 @@ Easily accessible log of notable changes to Insights-X
 ## 2019-02-07
 
 {{% release-notes-container type="a"%}}
-- Insights-X and Datasets documentation
+- Insights-X [product documentation](https://docs.travelgatex.com/insights-x/)
 {{% /release-notes-container %}}

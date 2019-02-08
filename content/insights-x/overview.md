@@ -7,11 +7,7 @@ weight = 1
 alwaysopen = false
 +++
 
-The Insights-X is a powerful data product that will let you to get back in control of your businnes.
-
-The innovative way we store, manage and process data allow us to produce rea-time data, historical trends and forecast the travel industry's to your own needs.
-
-Our Datasets are adpated to our consumers:
+Once the data is stored in our Datawarehouse we can share to your company depending on your TravelgateX relationship:
 
 * **Partners:** already connected to our platform, such as OTAs and Wholesalers, will have access to accurate date regarding their performance, ratios, prices, product usage... With this data, accurate benchmarking against competitors is made clear so that our partners can to gain a competitive advantage. _We do this without ever exposing our partners’ data , we create anonymous dynamic competitive sets_. 
  
@@ -23,8 +19,6 @@ The below map shows how you can access to Insights-X Datasets:.
 
 {{< figure src="/images/insightsx_diagram.png#center" attr="" >}}
 
-Each connection described in the this figure is explained as follows:
-
 ## Types of Datasets
 TravelgateX supports a variety of dataset publication formats. A Dataset is the way Insights-X shares the data with Partners, Hoteliers or other Industry Partners.
 
@@ -32,7 +26,8 @@ Refer to [types of datasets](/insights-x/datasets/types-of-datasets/) to get inf
 
 ## Tooling
 If you don't have an own reporting tool, the easiest way to interact with Insights-X datasets is via our free [Google Data Studio Templates](https://datastudio.google.com/u/0/navigation/reporting). 
-You'll have access to our reporting templates and you will can explore your data through different predefined reports.
+
+In [Dataset tooling](/insights-x/datasets/dataset-tooling/)] you'll have access to our reporting templates and other tools we TravelgateX offers for free.
 
 ## API
 {{% alert theme="info" %}}Insights-X API to help you query your insights data via GraphqQL 'query' is coming soon. 

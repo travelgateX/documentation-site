@@ -2,7 +2,7 @@
 title = "Datasets"
 pagetitle = "Insights-X Datasets"
 description = "Understand Insights-X Datasets concepts"
-icon = "fa-question-circle" 
+icon = "fa-database" 
 weight = 2
 alwaysopen = false
 +++

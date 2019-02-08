@@ -34,11 +34,10 @@ When exported data is in JSON format, INT64 (integer) data types are encoded as 
 
 The simplest file type available on Insights-X is the “Comma-Separated List”, or CSV, for tabular data. A CSV representation of a booking list with a header row, for example, looks like this:
 
-
-| client\_id | provider\_id | check\_in | 
-| :--------- | :----------- | :-------- | 
-| clientA | providerX |  2019-01-13 00:00:00 UTC |
-| clientB | providerX |  2019-01-15 00:00:00 UTC |
+| client\_id  | provider\_id  | check\_in                 | 
+| :---------  | :-----------  | :--------                 | 
+| clientA     | providerX     | 2019-01-13 00:00:00 UTC   |
+| clientB     | providerX     | 2019-01-15 00:00:00 UTC   |
 
 CSV format does not support nested and repeated data.
 

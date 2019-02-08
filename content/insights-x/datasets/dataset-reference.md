@@ -2,7 +2,7 @@
 title = "Dataset Reference"
 pagetitle = "Datase Referencet"
 description = "Learn about how the information is stored in our datasets."
-icon = "fa-list-alt"
+icon = "fa-book"
 weight = 2
 alwaysopen = false
 +++
