@@ -1,6 +1,6 @@
 +++
 title = "Dataset Reference"
-pagetitle = "Datase Referencet"
+pagetitle = "Dataset Reference"
 description = "Learn about how the information is stored in our datasets."
 icon = "fa-list-alt"
 weight = 2
@@ -12,7 +12,7 @@ On this page you will learn how the data is stored in datasets.
 # Tables
 
 Data is stored in multiple tables depending on the kind of info that wants to be queried.
-Below are described each table and their fields.
+Descriptions of each table and their correspondent fields are found below:
 
 ## daily_insights
 This table contains info from searches, quotes and bookings aggregated by day.
@@ -59,7 +59,7 @@ __Preview__
 | | | | | | | | | | | | | | | | | | | 203 | 1 | 0 | _null_ | _null_ | _null_ | _null_ | _null_ |
 
 ## daily\_insights\_client / daily\_insights\_provider
-This table contains info similar to _daily_insights_ but with a bigger aggregation. The fields _check\_in_, _adults_, _children_ and _infants_ have dissapeared.
+This table contains info similar to _daily_insights_ but with a bigger aggregation. The fields _check\_in_, _adults_, _children_ and _infants_ have disapeared.
 
 __fields__
 
