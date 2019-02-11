@@ -14,6 +14,14 @@ The GraphQL schema change log is a list of recent and upcoming changes to our Gr
 
 Check out this list of new releases and changes applied on the **TravelgateX GraphQL API**.
 
+## 2019-02-11
+
+🛑  Type `Search` was removed
+
+🛑  Type `Quote` was removed
+
+🛑  Type `Booking` was removed
+
 ## 2019-02-07
 
 ✅  Deprecation reason on field `HotelOptionSearch.token` has changed from `` to `deprecated from 2019-02-05.`
