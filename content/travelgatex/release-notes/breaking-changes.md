@@ -21,11 +21,13 @@
 - Removal of `type` from `AdviseMessage`. Reason: .  Deprecated on 2018-06-01.**To be removed soon**.
 - Removal of `loadFile` from `HotelXMutation`. Reason: .  Deprecated on 2018-06-06.**To be removed soon**.
 - Removal of `token` from `HotelOptionSearch`. Reason: .  Deprecated on 2019-02-05.Expected removal on 2019-05-06.
-- Removal of `hotel` from `Booking`. Reason: You can find it in query at HotelX. Deprecated on 2017-11-21.**To be removed soon**.
-- Removal of `hotel` from `Quote`. Reason: You can find it in query at HotelX. Deprecated on 2017-11-21.**To be removed soon**.
-- Removal of `hotel` from `Search`. Reason: You can find it in query at HotelX. Deprecated on 2017-11-21.**To be removed soon**.
 - Removal of `FilterInput` used on `HotelXQuery.search` and `Search.hotel`. Reason: Please, use filterSearch. Deprecated on 2018-08-20.**To be removed soon**.
-
+{{% / release-notes-container %}}
+### 2019-02-11
+{{% release-notes-container type="r"%}}
+- Removed `hotel` from `Booking`. Reason: You can find it in query at HotelX. Deprecated on 2017-11-21 .
+- Removed `hotel` from `Quote`. Reason: You can find it in query at HotelX. Deprecated on 2017-11-21 .
+- Removed `hotel` from `Search`. Reason: You can find it in query at HotelX. Deprecated on 2017-11-21 .
 {{% / release-notes-container %}}
 ### 2019-02-05
 {{% release-notes-container type="d"%}}
