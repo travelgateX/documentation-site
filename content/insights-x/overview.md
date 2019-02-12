@@ -15,7 +15,7 @@ Once the data is consolidated in our Datawarehouse, we can share data depending 
  
 * **Hoteliers:** which can be connected or not to our platform, will also have access to benchmarking information, discover KPIs such ADR and supplier-client demand, which will help to maximize room revenue.
 
-* **Other Industry partners:** not connected to our platform, can have access to insights about segmentation, profitability and demand across global markets. This data will help you to forecast to your own needs
+* **Other Industry partners:** not connected to our platform, can have access to insights about segmentation, profitability and demand across global markets. This data will help you forecast your own needs
 
 {{< figure src="/images/insightsx_diagram.png#center" attr="" >}}
 
