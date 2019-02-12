@@ -16,12 +16,12 @@ Easily accessible log of notable changes to HotelX API
 
 ## 2019-02-12
 {{% release-notes-container type="a"%}}
-- Type HotelData has new field "GiataData". 
-- Internal, better performant, REST endpoint in Search operation. Field filters have been added to minimize the throughput, this wasn't necessary with graphql, filtered fields that have a relation with legacy api are also sent as filter.
+- Type HotelData introduces new field "GiataData". 
+- Internal, better performant, REST endpoint in Search operation. Field filters have been added to minimize the throughput, this wasn't necessary with graphql, filtered fields that have a relation with Legacy api are now also sent as filter.
 {{% /release-notes-container %}}
 
 {{% release-notes-container type="c"%}}
-Expire date of payment card in Book now accept  the follow format, month: 1 digit or 2 digit, year: 4 digit or 2 digit
+Expire date of payment card in Book now accept the follow format, month: 1 digit or 2 digits, year: 4 digits or 2 digits
 {{% /release-notes-container %}}
 
 ## 2019-02-04
