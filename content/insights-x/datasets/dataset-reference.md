@@ -27,9 +27,9 @@ __fields__
 * nights (NUMBER). Length of stay.
 * nationality (STRING). Pax nationality (ISO Alpha-2 code). It can be null when clients don't send this field.
 * num\_rooms (NUMBER). Quantity of rooms.
-* adults (NUMBER). Quantity pax older than 12 years (12 is not included).
-* children (NUMBER). Quantity pax between 2 and 12 (both included).
-* infants (NUMBER). Quantity pax younger than 2 years (2 is not included).
+* adults (NUMBER). Quantity of paxes older than 12 years (12 is not included).
+* children (NUMBER). Quantity of paxes between 2 and 12 (both included).
+* infants (NUMBER). Quantity of paxes younger than 2 years (2 is not included).
 * search\_ok (NUMBER). Quantity of searches that returned any available hotel for above key (search_date, check_in...).
 * search\_nok (NUMBER). Quantity of searches that didn't return any available hotel for above key.
 * quote\_ok (NUMBER). Quantity of quotes that returned a correct result for above key.
@@ -65,7 +65,7 @@ __fields__
 
 * client\_id	(STRING). Client unique ID.
 * provider\_id (STRING). Provider unique ID.
-* cache	(BOOLEAN). It indicates if the source of request was the a client or Speed-X to load info in cache (0=Client, 1=Speed-X).
+* cache	(BOOLEAN). It indicates if the source of request was the client or Speed-X to load info in cache (0=Client, 1=Speed-X).
 * search\_date (TIMESTAMP). Search date in UTC (format: YYYY-MM-DD hh:mm:ss).
 * __booking_window__ (NUMBER). It is an enumeration to describe how far away is the check-in date.
     * __1__ = Last second (0-1 day).
@@ -124,7 +124,7 @@ __fields__
 * hotel\_country\_portfolio (STRING). Hotel Country Code (ISO Alpha-2 code)
 * status. It is an enumeration to describe the status of the hotel.
     * 0 = Hotel code queried but it doesn't appear in provider's portfolio. It can be due to a wrong mapping in client's system.
-    * 1 = Hotel code not queried but it appears in provider's portfolio. It can be due to a mismapping in client's system.
+    * 1 = Hotel code not queried but it appears in provider's portfolio. It can be due to a mismapping in the client's system.
     * 2 = Hotel code queried and it appears in provider's portfolio.
 
 **Preview**
@@ -144,7 +144,7 @@ __fields__
 * st\_date (TIMESTAMP) Search date in UTC (format: YYYY-MM-DD hh:mm:ss)
 * client\_id (STRING) Client unique ID
 * provider\_id (STRING) Provider unique ID
-* speed (BOOLEAN). It indicates if the source of request was the a client or Speed-X to load info in cache (0=Client, 1=Speed-X).
+* speed (BOOLEAN). It indicates if the source of request was the client or Speed-X to load info in cache (0=Client, 1=Speed-X).
 * avail\_ok (NUMBER). Quantity of searches with available results.
 * avail\_nok_results (NUMBER). Quantity of searches without available results.
 * avail\_nok_provider (NUMBER). Quantity of searches with generic error from provider.
@@ -167,7 +167,7 @@ __fields__
 * cancel\_ok (NUMBER). Quantity of correct cancellations.
 * cancel\_nok (NUMBER). Quantity of cancellations with an error.
 * cancel\_time (NUMBER). Total response time (in milliseconds) for cancellations.
-* other\_ok (NUMBER). Quantity of transactions that cannot be included in one of above groups and didn't get an error.
+* other\_ok (NUMBER). Quantity of transactions that cannot be included in one of above groups and that didn't get an error.
 * other\_nok (NUMBER). Quantity of other transactions with an error.
 * other\_time (NUMBER). Total response time (in milliseconds) for other transactions.
 
