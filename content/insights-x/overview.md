@@ -9,13 +9,13 @@ alwaysopen = false
 
 In order to analyze and **produce useful insights**, Insights-X extracts, loads and consolidates data from products like Hotel-X.  
 
-Once the data is consolidated in our Datawarehouse, we can share data depending on partner's TravelgateX relationship:
+Once the data is consolidated in our Data warehouse, we can share data depending on each partner's relationship with TravelgateX:
 
-* **Partners:** already connected to our platform, such as OTAs and Wholesalers, will have access to accurate data regarding their performance, ratios, prices, product usage... With these insights an accurate benchmarking against competitors is made clear so that our partners can gain a competitive advantage. _We do this without ever exposing our partners’ data because we use anonymous competitive sets_. 
+* **Partners:** e.g. OTAs and Wholesalers already connected to our platform, they will have access to accurate data regarding their performance, ratios, prices, product usage... With these insights an accurate benchmarking against competitors is provided so that our partners can gain a competitive advantage. _We do this without ever exposing our partners’ data because we use anonymous competitive sets_. 
  
-* **Hoteliers:** which can be connected or not to our platform, will also have access to benchmarking information, discover KPIs such ADR and supplier-client demand, which will help to maximize room revenue.
+* **Hoteliers:** connected or not to our platform, will also have access to benchmarking information, discover KPIs such ADR and supplier-client demand, which will help maximize room revenue.
 
-* **Other Industry partners:** not connected to our platform, can have access to insights about segmentation, profitability and demand across global markets. This data will help you forecast your own needs
+* **Other Industry partners:** not connected to our platform, can have access to insights about segmentation, profitability and demand across global markets. This data will help you forecast your own needs.
 
 {{< figure src="/images/insightsx_diagram.png#center" attr="" >}}
 
@@ -28,7 +28,7 @@ We support different [Dataset publication formats](/insights-x/datasets/types-of
 ## Tooling
 If you don't have your own reporting tool, the easiest way to interact with Insights-X datasets is via our free [Google Data Studio Templates](https://datastudio.google.com/u/0/navigation/reporting). 
 
-In [Dataset tooling](/insights-x/datasets/dataset-tooling/) you'll know what tools TravelgateX offers for free.
+Find out more about TravelgateX free tools in [Dataset tooling](/insights-x/datasets/dataset-tooling/) 
 
 ## API
 {{% alert theme="info" %}}Insights-X API, which allows to query insights using GraphqQL 'queries', is coming soon. 
