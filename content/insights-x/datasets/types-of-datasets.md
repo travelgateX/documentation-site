@@ -7,9 +7,10 @@ weight = 1
 alwaysopen = false
 +++
 
-This page describes the way Insights-X share data with customers.
+This page describes how Insights-X shares different Datasets with customers.
 
-As a customer you can access Insights-X data via [BigQuery Dataset](https://cloud.google.com/bigquery/docs/dataset-metadata) or as [Exported Table Data to Cloud Storage](https://cloud.google.com/storage/docs/)
+As a customer, you can access Insights-X data via [BigQuery Dataset](https://cloud.google.com/bigquery/docs/dataset-metadata) or as [Exported Table Data to Cloud Storage](https://cloud.google.com/storage/docs/)
+
 
 # BigQuery
 
@@ -23,10 +24,10 @@ Some resources for understanding how to use BigQuery:
 
 To get started using a BigQuery dataset, Insights-X will allow permission to your own project so you can start querying datasets. If you intend to go beyond the included quotas you must also enable billing.
 
+
 # Exported Data
 
 Up to 1 GB of table data can be exported into a single file.
-
 
 ## CSVs
 
@@ -38,7 +39,6 @@ The simplest file type available on Insights-X is the “Comma-Separated List”
 | clientB   | providerX                |  2019-01-15 00:00:00 UTC |
 
 CSV format does not support nested and repeated data.
-
 
 ## JSON
 

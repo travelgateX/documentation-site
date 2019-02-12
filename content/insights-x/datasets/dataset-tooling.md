@@ -7,7 +7,7 @@ weight = 3
 alwaysopen = false
 +++
 
-On this page you'll find  what free tools can you use to analyze our datasets.
+On this page you'll find what free tools you can use to analyze Insights-X Datasets.
 
 
 # Template reportings
