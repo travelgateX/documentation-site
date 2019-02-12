@@ -7,7 +7,7 @@ alwaysopen = false
 isDirectory = false
 +++
 
-Insights-X is a powerful data product that will let you to get back in control of your business.
+Insights-X is a powerful data product that will let you get back in control of your business.
 
 The innovative way we store, manage and process data allows us to produce real-time data, historical trends and forecast the travel industry to match your own needs.
 
