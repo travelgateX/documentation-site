@@ -7,7 +7,7 @@ weight = 2
 alwaysopen = false
 +++
 
-On this page you will learn how the data is stored in datasets.
+On this page you will learn how the data is stored in Datasets.
 
 # Tables
 
