@@ -14,15 +14,15 @@ As a customer, you can access Insights-X data via [BigQuery Dataset](https://clo
 
 # BigQuery
 
-BigQuery is a “big data” SQL store invented by Google. Many massive datasets, like all the code in GitHub and the complete history of the Bitcoin blockchain, are available publically through the Google BigQuery Datasets initiative.
+BigQuery is a “big data” SQL store invented by Google. Many massive Datasets, like all the code in GitHub and the complete history of the Bitcoin blockchain, are made available to the public through the Google BigQuery Datasets initiative.
 
 BigQuery Datasets are multi-terabyte datasets hosted on Google’s servers. You interact with the dataset by writing SQL fetch queries within either the [web UI](https://cloud.google.com/bigquery/docs/quickstarts/quickstart-web-ui),  [Command-line tool](https://cloud.google.com/bigquery/docs/bq-command-line-tool) or any [client library](https://cloud.google.com/bigquery/docs/quickstarts/quickstart-client-libraries). 
 
-Some resources for understanding how to use BigQuery:
+Some resources on BigQuery:
 
 - [BigQuery overview](https://cloud.google.com/bigquery/) 
 
-To get started using a BigQuery dataset, Insights-X will allow permission to your own project so you can start querying datasets. If you intend to go beyond the included quotas you must also enable billing.
+To get started using a BigQuery Dataset, Insights-X will allow permission to your own project so you can start querying datasets. If you intend to go beyond the included quotas, you must also enable billing.
 
 
 # Exported Data
