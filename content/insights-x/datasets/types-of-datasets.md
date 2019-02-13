@@ -29,7 +29,7 @@ To get started using a BigQuery Dataset, Insights-X will allow permission to you
 
 Up to 1 GB of table data can be exported into a single file.
 
-## CSVs
+## CSV
 
 The simplest file type available on Insights-X is the “Comma-Separated List”, or CSV, for tabular data. A CSV representation of a booking list with a header row, for example, looks like this:
 
@@ -63,10 +63,6 @@ While CSV is the most common file format for “flat” data, JSON is the most c
   
 When exported data is in JSON format, INT64 (integer) data types are encoded as JSON strings to preserve 64-bit precision when the data is read by other systems.
 
-JSON format supports nested and repeated data.
-
 ## AVRO
 
 Avro™ is an open source project that provides data serialization and data exchange services for Apache™ Hadoop®. ... Avro stores the data definition in JSON format making it easy to read and interpret, the data itself is stored in binary format making it compact and efficient.
-
-AVRO format supports nested and repeated data.
