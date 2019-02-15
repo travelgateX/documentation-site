@@ -13,6 +13,10 @@ On this page you will learn more about Core Entities used in HotelX. You can als
 
 Product segmentation over a `Supplier` API implementation. Each `Supplier` has a `Supplier` code. These are unique values and they are used consistently throughout all TravelgateX implementations. See our [Supplier database](https://www.travelgatex.com/partners/seller), or ask us via our [Jira Service desk](https://xmltravelgate.atlassian.net/servicedesk/customer/portal/7) for a list of `Supplier` codes.
 
+### Platform (Provider)
+
+Since not all suppliers have their own API, in some cases they will use a third party platform to return availability and allow you to make reservations. This is generally transparent to you as a customer.
+
 ### Access
 
 Configuration used when interacting with a `Supplier`, which includes:
