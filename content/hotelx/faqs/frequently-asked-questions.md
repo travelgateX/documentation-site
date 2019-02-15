@@ -11,14 +11,14 @@ tags = ["faq"]
 ## Hotels in test
 **Do I have access to all the hotels in the test environment?**
 
-No, we use a test supplier, so there is a limited number of hotels in the database to be used.
+No, since we use a test supplier, there is a limited number of hotels in the database to be used.
 
 ## Languages allowed
 **Which are the languages allowed in HotelX?**
 
-The new aggregator allows every language, it will depend from each supplier.
+The new aggregator allows every language, but the languages for the results to be returned will depend on the information returned from each supplier.
 
-## Maximum hotels code
+## Maximum hotel codes
 **How many hotels code are allowed to be requested at the same time?**
 
 We recommend a maximum of 200 hotels, the new aggregator will split them for each supplier into different batches in order to request all the hotels. Please take note: The current formula and rate limit are subject to change.
@@ -26,7 +26,7 @@ We recommend a maximum of 200 hotels, the new aggregator will split them for eac
 ## Client Nationality
 **Are there any restrictions to the client's nationality?**
 
-It depends on the supplier
+This depends on the restrictions defined by each supplier.
 
 **Does the client's nationality affect the price? - For instance, same Search criteria with different client nationality**
 
@@ -35,13 +35,13 @@ Yes, nationality and market might affect the price of the option, depending on t
 ## Age Range of Children - Infants
 **How can we differentiate a child from an infant? What is the age range of each of them?**
 
-Each supplier has their own restrictions, so it will depend on each supplier.
+Each supplier has their own restrictions, so the age range for children or infants will depend on the definition of each supplier.
 
 
 ## Search request filters
 **What is the function of an accessCode?**
 
-Every time you activate a supplier, you receive an access code. This access code is used to differentiate between suppliers and also to filter between the same supplier's different credentials and configurations.
+Every time you activate a supplier, you receive an access code. This access code is used to differentiate between suppliers and also to filter between the same supplier's different credentials and configurations. This allows you for instance to diffentiate between B2B or B2C requests, or search availability only for certain suppliers.
 
 **Which are the possible filters in the Search Request?**
 
@@ -66,7 +66,7 @@ The response of the HotelX Query contains location.country in ISO standard forma
 ## Daily-prices
 **Can I get Daily-prices in Search Response?**
 
-It will depend if the supplier offers the information. In case that the information is returned by the supplier, you will find it through the Roomprice string-->PriceBreakdown.
+We will return this information if the supplier can provide this. In case that the information is returned by the supplier, you will find it in the Roomprice string-->PriceBreakdown.
 
 ## Currency in Search Requests
 **Is it necessary to include the currency attribute in your Search Request?**
@@ -74,7 +74,7 @@ It will depend if the supplier offers the information. In case that the informat
 In these cases, you will have two options:
 
 * If you don't include any currency, then the settings' default currency configuration will be used
-* If you don't configure a currency conversion plugin, then default supplier currency is returned. Some suppliers accept currency parameter and others will return their currency depending on your account as client with them.
+* If you don't configure a currency conversion plugin, then default supplier currency is returned. Some suppliers accept the currency parameter and others will return their currency depending on your account as client with them.
 
 ## Currency not supported 
 **What happen if I request availability with a currency that the supplier doesn´t accept?**
@@ -87,7 +87,7 @@ In these cases, you will have two options:
 ## Cancellation costs
 **Is it possible to perform a cancellation as a query to just retrieve the cancellation costs, but not to cancel the booked item itself?**
 
-You will be able to check the booking information (cancel policies included) with the [`HotelBooking`](/travelgatex/reference/objects/hotelbooking) query.
+No, but you can retrieve the cancellation policies where this information is included. You can check the booking information (cancel policies included) with the [`HotelBooking`](/travelgatex/reference/objects/hotelbooking) query.
 
 ## Response time
 **How is the response time of the different providers managed in the aggregator mode?**
