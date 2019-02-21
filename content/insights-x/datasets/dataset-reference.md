@@ -155,7 +155,7 @@ __fields__
 
 __Preview__ 
 
-| client\_id | provider\_id | cache | search\_date | booking\_window | nights | nationality | num\_rooms | pax\_type | search\_ok | search\_nok | quote\_ok | quote\_nok | booking\_ok\_net | booking\_ok\_unknow | booking\_nok | min\_amount\_booking\_net | max\_amount\_booking\_net | tot\_amount\_booking\_net | min\_amount\_booking\_unknown | max\_amount\_booking\_unknown | tot\_amount\_booking\_unknown | hotels.code | hotels.search\_ok\_net | hotels.search\_ok\_unknown | hotels.search\_nok | hotels.quote\_ok\_net | hotels.quote\_ok\_unknown | hotels.quote\_nok | hotels.booking\_ok\_net | hotels.booking\_ok\_unknown | hotels.booking\_nok | hotels.min\_amount\_search\_net | hotels.max\_amount\_search\_net | hotels.tot\_amount\_search\_net | hotels.min\_amount\_search\_unknown | hotels.max\_amount\_search\_unknown | hotels.tot\_amount\_search\_unknown | hotels.min\_amount\_quote\_net | hotels.max\_amount\_quote\_net | hotels.tot\_amount\_quote\_net | hotels.min\_amount\_quote\_unknown | hotels.max\_amount\_quote\_unknown | hotels.tot\_amount\_quote\_unknown | hotels.min\_amount\_booking\_net | hotels.max\_amount\_booking\_net | hotels.tot\_amount\_booking\_net | hotels.min\_amount\_booking\_unknown | hotels.max\_amount\_booking\_unknown | hotels.tot\_amount\_booking\_unknown
+| client\_id | provider\_id | cache | search\_date | booking\_window | nights | nationality | num\_rooms | pax\_type | search\_ok | search\_nok | quote\_ok | quote\_nok | booking\_ok\_net | booking\_ok\_unknow | booking\_nok | min\_amount\_booking\_net | max\_amount\_booking\_net | tot\_amount\_booking\_net | min\_amount\_booking\_unknown | max\_amount\_booking\_unknown | tot\_amount\_booking\_unknown | hotels.code | hotels.search\_ok\_net | hotels.search\_ok\_unknown | hotels.search\_nok | hotels.quote\_ok\_net | hotels.quote\_ok\_unknown | hotels.quote\_nok | hotels.booking\_ok\_net | hotels.booking\_ok\_unknown | hotels.booking\_nok | hotels.min\_amount\_search\_net | hotels.max\_amount\_search\_net | hotels.tot\_amount\_search\_net | hotels.min\_amount\_search\_unknown | hotels.max\_amount\_search\_unknown | hotels.tot\_amount\_search\_unknown | hotels.min\_amount\_quote\_net | hotels.max\_amount\_quote\_net | hotels.tot\_amount\_quote\_net | hotels.min\_amount\_quote\_unknown | hotels.max\_amount\_quote\_unknown | hotels.tot\_amount\_quote\_unknown | hotels.min\_amount\_booking\_net | hotels.max\_amount\_booking\_net | hotels.tot\_amount\_booking\_net | hotels.min\_amount\_booking\_unknown | hotels.max\_amount\_booking\_unknown | hotels.tot\_amount\_booking\_unknown |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | client A | provider X | false | 2019-01-13 00:00:00 UTC | 3 | 4 | SE | 1 | 1 | 13 | 11 | _null_ | _null_ | _null_ | _null_ | _null_ | _null_ | _null_ | _null_ | _null_ | _null_ | _null_ | 641443 | 13 | _null_ | _null_ | _null_ | _null_ | _null_ | _null_ | _null_ | _null_ | _null_ | _null_ | _null_ | _null_ | _null_ | _null_ | _null_ | _null_ | _null_ | _null_ | _null_ | _null_ | _null_ | _null_ | _null_ | _null_ | _null_ | _null_ |
 | | | | | | | | | | | | | | | | | | | | | | | 551568 | _null_ | 11 | _null_ | _null_ | _null_ | _null_ | _null_ | _null_ | _null_ | _null_ | _null_ | _null_ | _null_ | _null_ | _null_ | _null_ | _null_ | _null_ | _null_ | _null_ | _null_ | _null_ | _null_ | _null_ | _null_ | _null_ | _null_ |
@@ -167,6 +167,7 @@ __Preview__
 This table contains specific information about bookings done and their current status (Ok or cancelled).
 
 __fields__
+
 * session\_id (STRING). Search date in UTC (format: YYYY-MM-DD hh:mm:ss).
 * client\_id (STRING). Client unique ID.
 * provider\_id (STRING). Provider unique ID.
@@ -185,10 +186,11 @@ __fields__
 * hotel\_code (STRING). Hotel's code in provider's portfolio.
 * hotel\_name (STRING). Hotel's name in provider's portfolio.
 
-**Preview**
+__Preview__
+
 | session\_id | client\_id | provider\_id | booking\_date | checkin\_date | amount | cancel\_date | market | market\_name | num\_room | nights | country | zone\_1 | zone\_2 | city | hotel\_code | hotel\_name |
-| :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- |
-| 12345678-1234-1234-1234-123456789012 | client 1 | provider 1 | 2018-03-28 12:21:18 UTC | 2018-05-28 12:00:00 UTC | 244.72 | _null_ | IT | Italy | 1 | 3 | US | Utah | Garfield County | Panguitch | 123 | Hotel Test |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 123456789012 | client 1 | provider 1 | 2018-03-28 12:21:18 UTC | 2018-05-28 12:00:00 UTC | 244.72 | _null_ | IT | Italy | 1 | 3 | US | Utah | Garfield County | Panguitch | 123 | Hotel Test |
 
 ## daily\_portfolio\_seller
 This table is used to know which hotels over supplier's portfolio are being queried by the clients. This can be helpful to know which percentage over portfolio is mapped by the client.
@@ -205,7 +207,7 @@ __fields__
     * 1 = Hotel code not queried but it appears in provider's portfolio. It can be due to a mismapping in the client's system.
     * 2 = Hotel code queried and it appears in provider's portfolio.
 
-**Preview**
+__Preview__
 
 | client\_id | provider\_id | hotel | hotel\_name\_portfolio | hotel\_country\_portfolio | status |
 | :---- | :---- | :---- | :---- | :---- | :---- |
@@ -249,7 +251,7 @@ __fields__
 * other\_nok (NUMBER). Quantity of other transactions with an error.
 * other\_time (NUMBER). Total response time (in milliseconds) for other transactions.
 
-**Preview**
+__Preview__
 
 | st\_date | client\_id | provider\_id | speed | avail\_ok | avail\_nok_results | avail\_nok_provider | avail\_nok_bad_request | avail\_nok_integration | avail\_nok_communication | avail\_nok_others | avail\_time | quote\_ok | quote\_nok_results | quote\_nok_provider | quote\_nok_bad_request | quote\_nok_integration | quote\_nok_communication | quote\_nok_others | quote\_time | book\_ok | book\_nok | book\_time | cancel\_ok | cancel\_nok | cancel\_time | other\_ok | other\_nok | other\_time  |
 | :-------------------------------------- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- |
