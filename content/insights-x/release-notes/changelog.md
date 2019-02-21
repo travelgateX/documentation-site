@@ -12,8 +12,19 @@ tags = ["products-changelog"]
 
 Easily accessible log of notable changes to Insights-X
 
+## 2019-02-21
+
+{{% release-notes-container type="a"%}}
+* New table effective\_bookings\_(buyer|seller)
+{{% /release-notes-container %}}
+
+{{% release-notes-container type="c"%}}
+* daily\_insights table renamed as insights\_daily\_(buyer|seller)
+* daily\_insights\_(client|provider) table renamed as insights\_daily\_(buyer|seller)
+{{% /release-notes-container %}}
+
 ## 2019-02-07
 
 {{% release-notes-container type="a"%}}
-- Insights-X [product documentation](https://docs.travelgatex.com/insights-x/)
+* Insights-X [product documentation](https://docs.travelgatex.com/insights-x/)
 {{% /release-notes-container %}}
