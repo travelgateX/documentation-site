@@ -16,7 +16,7 @@ Add ParameterX is an optional plugin and allows for paramenters to be added to a
 The add parameterX plugin **adds parameters in the configuration of the existing accesses**. By doing this, communication with suppliers will be improved. The plugin only allows one parameter with the following key/value:
 
 	Key: JSONConfiguration
-	Value: JSON structure, this structure allows to add parameters by access, by supplier or for all of them
+	Value: JSON structure, this structure allows adding parameters by access or by provider, or even for all accesses.
 
 ### Execution example
 
