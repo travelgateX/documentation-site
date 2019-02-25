@@ -15,25 +15,27 @@ Add ParameterX is an optional plugin and allows for paramenters to be added to a
 
 The add parameterX plugin **adds parameters in the configuration of the existing accesses**. By doing this, communication with suppliers will be improved. The plugin only allows one parameter with the following key/value:
 
-	**Key**: JSONConfiguration
-	**Value**: JSON structure, this structure allows to add parameters by access, by supplier or for all of them
+	Key: JSONConfiguration
+	Value: JSON structure, this structure allows to add parameters by access, by supplier or for all of them
 
 ### Execution example
 
 
-{
-  "step": "REQUEST_ACCESS",
-  "pluginsType": [
-    {
-      "name": "add_parameterX",
-      "type": "POST_STEP",
-      "parameters": [
-        {
-          "key": "JSONConfiguration",
-          "value": "{\"accesses\": [ {\"codes\": [\"1094\",\"185\"],\"parameters\": [ {\"key\": \"A\", \"value\": \"hotel,room,board\"},{\"key\": \"B\", \"value\": \"100\"} ] } ], \"suppliers\": [ {\"codes\": [\"TTHOT\"], \"parameters\": [ {\"key\": \"D\",\"value\": \"155555555555\"}] } ], \"parameters\": [ {\"key\": \"C\", \"value\": \"valor\" } ] }"
-        }
-      ]
-    }
-  ]
-}
+	{
+	  "step": "REQUEST_ACCESS",
+	  "pluginsType": [
+	     {
+	       "name": "add_parameterX",
+	       "type": "POST_STEP",
+	       "parameters": [
+	          {
+		     "key": "JSONConfiguration",
+		     "value": "{\"accesses\": [ {\"codes\": [\"1\",\"2\"],\"parameters\": [ {\"key\": \"A\", \"value\": \"1\"} ] } ],
+		                \"suppliers\": [ {\"codes\": [\"XXX\"], \"parameters\": [ {\"key\": \"D\",\"value\": \"4\"}] } ],
+				\"parameters\": [ {\"key\": \"C\", \"value\": \"valor\" } ] }"
+		  }
+		]
+	     }
+	   ]
+	}
 ```
