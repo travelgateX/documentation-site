@@ -20,7 +20,7 @@ The add parameterX plugin **adds parameters in the configuration of the existing
 
 ### Execution example
 
-
+```json
 	{
 	  "step": "REQUEST_ACCESS",
 	  "pluginsType": [
