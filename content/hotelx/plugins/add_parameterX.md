@@ -1,13 +1,13 @@
 +++
 title = "Add Parameter"
 pagetitle = "Add Parameter"
-description = "Allows add parameter to the access created for a supplier"
+description = "Allows Add Parameter to the access created for a supplier"
 icon = "fa-cog"
 weight = 3
 alwaysopen = false
 +++
 
-Add Parameter is an optional plugin and allows for paramenters to be added to accesses used by different suppliers at a request level.
+Add Parameter is an optional plugin that allows parameters to be added to accesses used by different suppliers at a request level.
 
 ## Add Parameter {#addparameter}
 
