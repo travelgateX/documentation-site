@@ -55,10 +55,10 @@ isDirectory = false
 ### Payment Type Codes
 | **Payment Type Code** | **Description**										|
 | --------------------- | --------------------------------------------------------------------------------------------- |
-| MerchantPayment	| The customer pays the client and the client will pay de provider.				|
-| DirectPayment		| The customer will have to use a credit-card as a guaranty for the hotel and the payment will be done by the costumer at checking. |
-| BookingDatePayment	| The client will use a credit-card with the exact amount of the option so he can pay the provider/hotel. The provider will charge the payment on the reservation day. |
-| ArrivalDatePayment	| The client will use a credit-card with the exact amount of the option so he can pay the provider/hotel. The provider will charge the payment on the checking day. |
+| MerchantPayment	| The customer pays the client and the client will pay the provider.				|
+| DirectPayment		| The customer will have to use a credit card as guarantee for the hotel and the payment will be done by the customer at check-in. |
+| BookingDatePayment	| The client will use a credit card with the exact amount of the option so he can pay the provider/hotel. The provider will charge the payment on the reservation day. |
+| ArrivalDatePayment	| The client will use a credit card with the exact amount of the option so he can pay the provider/hotel. The provider will charge the payment on the checking day. |
 
 ### Credit Cards
 | **Codes** | **Names**			|
