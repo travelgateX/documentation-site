@@ -15,7 +15,7 @@ This tool extracts the product loaded at *InventoryX* and sends it to a third pa
 
 **FullCopy:** sends a complete copy of the product of a hotel or a bunch of them. Its main use is to get a full refresh of the product in case something happens (data base dropped, server down for a period of time...) or simply as a precaution measure.
 
-Once Have you receive the first element of the Full Copy, please bear in mind that you will have to drop the loaded information, overwrite with all the incoming information for that hotel or do a proper merge with the changing information.
+Once you have received the first element of the Full Copy, please bear in mind that you will have to drop the loaded information, overwrite it with all the incoming information for that hotel or do a proper merge with the changing information.
 ### How it works
 ChannelX is defined by 3 main parts. Each part has its own functionality and helps to define the global flow of the service.
 
