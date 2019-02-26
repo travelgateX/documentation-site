@@ -2,7 +2,7 @@
 title = "Settings"
 pagetitle = ""
 description = "Learn about settings in HotelX"
-icon = "fa-exchange"
+icon = "fa-cog"
 weight = 1
 alwaysopen = false
 +++
