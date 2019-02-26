@@ -20,6 +20,10 @@ The add parameter plugin **adds parameters in the configuration of the existing 
 |key|value type|condition|description|
 |---|----|----|---|
 |JSONConfiguration|JSON|mandatory|JSON structure with parameters that you add by access or by supplier, or even for all accesses|
+|function|string|optional|possible values: “min” and “max”, min is the default value.<br>The chosen option will be the cheapest when min function, and the expensivest when max function|
+|priceField|string|optional|possible values: “net” or “gross”, net is the default value.<br>The function will operate over the field determined by this parameter|
+|currency|string|optional|exchanges a price’s currency before applicating the filter. In order to make use of this functionality, the same setup in the CurrencyX plugin is needed.|
+|size|int|optional|number of options in each aggregation group, the default value is 1|
 
 ### Execution example
 
