@@ -14,8 +14,8 @@ isDirectory = false
     babies are always defined in AdditionalGuestAmounts.
 -   The possible Type values in the AdditionalGuestAmount tag are
     Exclusive and not specified.
-   > - If there's no value specified then the price is a relative and it's added to the price of the current pax.
-   > - If the value is "Exclusive" then the price is absolute and will represent the total price of the current pax.
+   > - If there is no value specified then the price is a relative and it is added to the price of the current pax.
+   > - If the value is "Exclusive" then the price is absolute and it will represent the total price of the current pax.
 
 -   If the price is per room then all AdditionalGuestAmount must be
     relative.
