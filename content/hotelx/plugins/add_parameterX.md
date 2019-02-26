@@ -1,22 +1,25 @@
 +++
-title = "Add ParameterX"
-pagetitle = "Add ParameterX"
+title = "Add Parameter"
+pagetitle = "Add Parameter"
 description = "Allows add parameter to the access created for a supplier"
 icon = "fa-cog"
 weight = 3
 alwaysopen = false
 +++
 
-Add ParameterX is an optional plugin and allows for paramenters to be added to accesses used by different suppliers at a request level.
+Add Parameter is an optional plugin and allows for paramenters to be added to accesses used by different suppliers at a request level.
 
-## Add ParameterX {#addparameter}
+## Add Parameter {#addparameter}
 
 ### Goals
 
-The add parameterX plugin **adds parameters in the configuration of the existing accesses**. By doing this, communication with suppliers will be improved. The plugin only allows one parameter with the following key/value:
+The add parameter plugin **adds parameters in the configuration of the existing accesses**. By doing this, you can add parameters dynamically in request time to the existing accesses (see [Access configuration](https://docs.travelgatex.com/hotelx/concepts/accesses-supplier-context/)).
 
-	Key: JSONConfiguration
-	Value: JSON structure, this structure allows adding parameters by access or by provider, or even for all accesses.
+### Parameters
+
+|key|value type|condition|description|
+|---|----|----|---|
+|JSONConfiguration|JSON|mandatory|JSON structure with parameters that you add by access or by supplier, or even for all accesses|
 
 ### Execution example
 
