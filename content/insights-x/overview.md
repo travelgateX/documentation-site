@@ -17,7 +17,7 @@ Once the data is consolidated in our Data warehouse, we can share data depending
 
 * **Other Industry partners:** not connected to our platform, can have access to insights about segmentation, profitability and demand across global markets. This data will help you forecast your own needs.
 
-{{< figure src="/images/insightsx_diagram.png#center" attr="" >}}
+{{< figure src="/images/mapas_insightsX.svg#center" attr="" >}}
 
 
 ## Datasets
