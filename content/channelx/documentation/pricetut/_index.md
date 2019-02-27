@@ -7,6 +7,18 @@ icon="fa-money"
 alwaysopen = false
 isDirectory = false
 +++
+Three price charging types are allowed: *price per Room*, *price per Pax* and *price per Occupancy*. When more than one price is charged for the same day, the lowest price will be returned as available price.
+
+**Price per Room**\
+All occupancies allowed in the room will have the same price. If an `AdditionalGuestAmount` is charged for occupancies over the standard occupancy, they will have to be applied.
+
+**Price per Pax**\
+The price is for the number of guests specified.
+
+If `NumberOfGuests` is equal or under the standard occupancy, the price returned will have to be the same as the price charged. If `NumberOfGuests` is over the Standard Occupancy the price is calculated from the Standard Occupancy price and the `AdditionalGuestAmount` charged.
+
+**Price per Occupancy**\
+The price will only be available for the specified occupancy. **No** `AdditionalGuestAmount` can be applied.
 
 **Notes**
 
@@ -14,8 +26,8 @@ isDirectory = false
     babies are always defined in AdditionalGuestAmounts.
 -   The possible Type values in the AdditionalGuestAmount tag are
     Exclusive and not specified.
-   > - If there is no value specified then the price is a relative and it is added to the price of the current pax.
-   > - If the value is "Exclusive" then the price is absolute and it will represent the total price of the current pax.
+   > If there's no value specified then the price is a relative and it's added to   the price of the current pax.\
+    If the value is "Exclusive" then the price is absolute and will represent the total price of the current pax.
 
 -   If the price is per room then all AdditionalGuestAmount must be
     relative.
@@ -251,7 +263,7 @@ Message:
 | 5-0-0         | (150/3) + (150/3) + (150/3) + ((150/3) - 10) + ((150/3) + 15) = 255|
 
 
-### Price per Room and Additional Guests
+### Price per Room
 **Case 1:**\
 *Standard occupancy* = 2\
 *Room uses*\
@@ -324,7 +336,7 @@ Message:
 | 4-0-0         | 120 + (120/3 + 20) = 180  |
 
 
-### Price per Occupancy:
+### Price per Occupancy
 **Case 1:**\
 *Room uses*\
 `1-0-0`\

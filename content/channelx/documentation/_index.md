@@ -11,6 +11,18 @@ The API described in this document is used to transmit rate, availability and in
 
 {{%custom-children%}}
 
+## Global Details
+### Protocol and Headers
+All requests are expected to be standard HTTP POST requests in which the POST body is the request XML and the Content-Type header is set to "application/xml".
+
+**Authentication**
+Requests will be sent with a authentication encoded in *Base-64*. Credentials may be found in **Authorization** header tag, with value **Basic (encoded credentials)** as follows:\
+`Authorization: Basic aHR0cHM6Ly93d3cueW91dHViZS5jb20vd2F0Y2g/dj1RWWg2bVlJSkcyWQ==`
+### Summary 
+BR = Only used for: 'Basic Rates'\
+DV = Only used for: 'Derived Rates'\
+N = Names allowed for a specific element
+
 ## HotelRatePlanInventoryNotif
 Sets up inventory information that should be followed with the structure Hotel > Rate > Room.
 
@@ -113,52 +125,52 @@ Sets up inventory information that should be followed with the structure Hotel >
 **Example for Derived RatePlan**
 ```xml
 <HotelRatePlanInventoryNotif xmlns = "http://schemas.xmltravelgate.com/hubpush/provider/2012/10">
-    <request PrimaryLangID = "ES" Version = "0">
-        <RatePlans HotelCode = "1" HotelStatusType = "Active" xmlns = "http://www.opentravel.org/OTA/2003/05">
-            <RatePlan BaseRatePlanCode = "BAR" RatePlanStatusType = "Active" RatePlanCode = "DERIVED" RateReturn = "false">
-		<RatePlanInclusionsType>
-                    <RatePlanInclusionDescription>
-                        <Name>BaseMealPlanSupplement</Name>
-                    </RatePlanInclusionDescription>
-                </RatePlanInclusionsType>
-                <Description>
-                    <Text>Derived Rate</Text>
-                </Description>
-            </RatePlan>
-        </RatePlans>
+    <request PrimaryLangID = "ES" Version = "0"/>
+    <RatePlans HotelCode = "1" HotelStatusType = "Active" xmlns = "http://www.opentravel.org/OTA/2003/05">
+        <RatePlan BaseRatePlanCode = "BAR" RatePlanStatusType = "Active" RatePlanCode = "DERIVED" RateReturn = "false">
+            <RatePlanInclusionsType>
+                <RatePlanInclusionDescription>
+                    <Name>BaseMealPlanSupplement</Name>
+                </RatePlanInclusionDescription>
+            </RatePlanInclusionsType>
+            <Description>
+                <Text>Derived Rate</Text>
+            </Description>
+        </RatePlan>
+    </RatePlans>
 </HotelRatePlanInventoryNotif>
 ```
 
 **Example for Offers**
 ```xml
 <HotelRatePlanInventoryNotif xmlns = "http://schemas.xmltravelgate.com/hubpush/provider/2012/10">
-    <request PrimaryLangID = "ES" Version = "0">
-        <RatePlans HotelCode = "1"  HotelStatusType = "Active" xmlns = "http://www.opentravel.org/OTA/2003/05">
-            <RatePlan BaseRatePlanCode = "BAR" RatePlanStatusType = "Active" RatePlanCode = "DERIVED" RateReturn = "false">
-	        <Offers>
-		    <Offer OfferCode="offer" OfferStatusType="Active" OfferNotifType = "New">
-			<OfferRules>
-			    <OfferRule>
-				<LengthsOfStay ArrivalDateBased="false">
-				    <LengthOfStay Time="2" MinMaxMessageType="MinLOS" />
-				    <LengthOfStay Time="6" MinMaxMessageType="MaxLOS" />
-				</LengthsOfStay>
-				<DOW_Restrictions>
-				    <AvailableDaysOfWeek Mon="true" Tue="true" Weds="true" Thur="true" Fri="true" Sat="true" Sun="true" />
-				</DOW_Restrictions>
-				<Inventories>
-                    <Inventory InvCode="1BDAPT" />
-                </Inventories>
-			    </OfferRule>
-			</OfferRules>
-			<Discount NightsDiscounted="1" DiscountPattern="Last" />
-			<OfferDescription>
-			    <Text>Offer Test</Text>
-			</OfferDescription>
-		    </Offer>
-		</Offers>
-            </RatePlan>
-        </RatePlans>
+    <request PrimaryLangID = "ES" Version = "0"/>
+    <RatePlans HotelCode = "1" HotelStatusType = "Active" xmlns = "http://www.opentravel.org/OTA/2003/05">
+        <RatePlan BaseRatePlanCode = "BAR" RatePlanStatusType = "Active" RatePlanCode = "DERIVED" RateReturn = "false">
+            <Offers>
+                <Offer OfferCode = "offer" OfferStatusType = "Active" OfferNotifType = "New">
+                    <OfferRules>
+                        <OfferRule>
+                            <LengthsOfStay ArrivalDateBased = "false">
+                                <LengthOfStay Time = "2" MinMaxMessageType = "MinLOS"/>
+                                <LengthOfStay Time = "6" MinMaxMessageType = "MaxLOS"/>
+                            </LengthsOfStay>
+                            <DOW_Restrictions>
+                                <AvailableDaysOfWeek Mon = "true" Tue = "true" Weds = "true" Thur = "true" Fri = "true" Sat = "true" Sun = "true"/>
+                            </DOW_Restrictions>
+                            <Inventories>
+                                <Inventory InvCode = "1BDAPT"/>
+                            </Inventories>
+                        </OfferRule>
+                    </OfferRules>
+                    <Discount NightsDiscounted = "1" DiscountPattern = "Last"/>
+                    <OfferDescription>
+                        <Text>Offer Test</Text>
+                    </OfferDescription>
+                </Offer>
+            </Offers>
+        </RatePlan>
+    </RatePlans>
 </HotelRatePlanInventoryNotif>
 ```
 
@@ -280,7 +292,6 @@ Sets up inventory information that should be followed with the structure Hotel >
 
 ## HotelRatePlanNotif 
 ```xml
-
 <HotelRatePlanNotif>
     <request>
         <POS>
@@ -332,28 +343,28 @@ Sets up inventory information that should be followed with the structure Hotel >
 
 **Example for Derived RatePlan**
 ```xml
-    <HotelRatePlanNotif>
-      <request Version = "0">
+<HotelRatePlanNotif>
+    <request Version = "0">
         <POS>
-          <Source>
-            <RequestorID ID = "Provider1"></RequestorID>
-            <BookingChannel>
-              <CompanyName Code = "ClientTravelAgency1"></CompanyName>
-            </BookingChannel>
-          </Source>
+            <Source>
+                <RequestorID ID = "Provider1"></RequestorID>
+                <BookingChannel>
+                    <CompanyName Code = "ClientTravelAgency1"></CompanyName>
+                </BookingChannel>
+            </Source>
         </POS>
         <RatePlan RatePlanCode = "DRV" BaseRatePlanCode = "SRATE" RatePlanStatusType = "Active">
-          <Rates>
-            <Rate Start = "2014-07-01" End = "2014-07-31" AdjustedPercentage = "10" AdjustUpIndicator = "0"></Rate>
-          </Rates>
+            <Rates>
+                <Rate Start = "2014-07-01" End = "2014-07-31" AdjustedPercentage = "10" AdjustUpIndicator = "0"></Rate>
+            </Rates>
         </RatePlan>
         <RatePlan RatePlanCode = "DRV" BaseRatePlanCode = "SRATE" RatePlanStatusType = "Deactivated">
-          <Rates>
-            <Rate Start = "2014-08-01" End = "2014-08-31" AdjustedPercentage = "10" AdjustUpIndicator = "0"></Rate>
-          </Rates>
+            <Rates>
+                <Rate Start = "2014-08-01" End = "2014-08-31" AdjustedPercentage = "10" AdjustUpIndicator = "0"></Rate>
+            </Rates>
         </RatePlan>
-      </request>
-    </HotelRatePlanNotif>
+    </request>
+</HotelRatePlanNotif>
 ```
 
 | **Element**	                  | **Rel** | **Type** | **Description**					                                             |
@@ -470,23 +481,23 @@ Each request should provide a response for the same type of element that has bee
 #### Success
 For all successful requests is expected to be returned a *Success* element in the response. On a *HotelAvailNotif* request it should be looking like the following:
 ```xml
-<HotelAvailNotifResponse xmlns="http://schemas.xmltravelgate.com/hubpush/provider/2012/10">
-      <HotelAvailNotifResult>
-        <Success xmlns="http://www.opentravel.org/OTA/2003/05"/>
-      </HotelAvailNotifResult>
-    </HotelAvailNotifResponse>
+<HotelAvailNotifResponse xmlns = "http://schemas.xmltravelgate.com/hubpush/provider/2012/10">
+    <HotelAvailNotifResult>
+        <Success xmlns = "http://www.opentravel.org/OTA/2003/05"/>
+    </HotelAvailNotifResult>
+</HotelAvailNotifResponse>
 ```
 
 #### Error
 On the other hand, when request provides any error, the response should look like:
 ```xml
-<HotelAvailNotifResponse xmlns="http://schemas.xmltravelgate.com/hubpush/provider/2012/10">
-      <HotelAvailNotifResult>
-        <Errors xmlns="http://www.opentravel.org/OTA/2003/05">
-          <Error ShortText="AvailStatusMessages not found" Code="2"/>
+<HotelAvailNotifResponse xmlns = "http://schemas.xmltravelgate.com/hubpush/provider/2012/10">
+    <HotelAvailNotifResult>
+        <Errors xmlns = "http://www.opentravel.org/OTA/2003/05">
+            <Error ShortText = "AvailStatusMessages not found" Code = "2"/>
         </Errors>
-      </HotelAvailNotifResult>
-    </HotelAvailNotifResponse>
+    </HotelAvailNotifResult>
+</HotelAvailNotifResponse>
 ```
 | **Element**	                  | **Rel** | **Type** | **Description**					                                             |
 | :---------------------------- | :-----: | :------: | --------------------------------------------------------------------- |
@@ -494,18 +505,6 @@ On the other hand, when request provides any error, the response should look lik
 | Error | 1..n | | Displays error information that has occurred in the system |
 | @ShortText | 1 | String | Brief description of the error |
 | @Code | 1 | Integer | Check *General Details > Error Table* |
-
-## Global Details
-### Protocol and Headers
-All requests are expected to be standard HTTP POST requests in which the POST body is the request XML and the Content-Type header is set to "application/xml".
-
-**Authentication**
-Requests will be sent with a authentication encoded in *Base-64*. Credentials may be found in **Authorization** header tag, with value **Basic (encoded credentials)** as follows:\
-`Authorization: Basic aHR0cHM6Ly93d3cueW91dHViZS5jb20vd2F0Y2g/dj1RWWg2bVlJSkcyWQ==`
-### Summary 
-BR = Only used for: 'Basic Rates'\
-DV = Only used for: 'Derived Rates'\
-N = Names allowed for a specific element
 
 
 
