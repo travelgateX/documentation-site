@@ -157,6 +157,7 @@ HotelX allows two types of Queries:
 
 * **Search the complete HotelList from a supplier’s access**: in order to receive the complete hotel list from a supplier’s access, you should introduce the number of hotels you want to receive in the response of the query. Since the hotel list includes a large amount of hotels, it is divided into several batches, each one of a different number of hotels. In this case, the minimum size you can request is 100, and the max. is 10000.
 
+
 ```json
 {
   "criteria": {
