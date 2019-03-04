@@ -7,7 +7,7 @@ weight = 3
 alwaysopen = false
 +++
 
-On this page you will learn about **Transactional Booking Flow** to Search, quote and confirm a reservation. You will also see the difference between the **Search Single Mode** VS **Search Multi Mode**.
+On this page you will learn about **Transactional Booking Flow** to Search, quote and confirm a reservation. You will also see the difference between the **Search Single Mode** VS **Search Multi Mode**. You can find the necessary **access codes** used by using the [admin-query] (https://docs.travelgatex.com/hotelx/checkconfig/)
 
 ## Search Single Mode
 
