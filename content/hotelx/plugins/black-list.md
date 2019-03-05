@@ -7,6 +7,117 @@ weight = 2
 alwaysopen = false
 +++
 
+The blacklist plugin is used to ignore hotel code(s) when we a search query is executed. 
+
+Loading a blacklist is as easy as following the steps below:
+
+## File Format
+
+The file should be in the below format:
+
+* **Encoding**: UTF-8
+
+* **File Name**: `blacklist\_access\_hotels.csv`
+
+* **Header Row**: IdRule,ClientToken,NoClientToken,Client,NoClient,Supplier,NoSupplier,Access,NoAccess,Context,NoContext,ContextSup,NoContextSup,Values
+
+    * IdRule: Unique identifier of the rule. 
+
+    Criteria rows: 
+    * ClientToken, NoClientToken: List of `clienttoken` separated by ';'
+    * Client, NoClient: List of `client` codes separated by ';'
+    * Supplier, NoSupplier: List of `supplier` codes separated by ';'
+    * Access, NoAccess: List of `access` codes separated by ';'
+    * Context, NoContext: List of `operation context` codes separated by ';'. This contexts are contexts of the client.  
+    * ContextSup, NoContextSup:	List of suppluer `context` codes separated by ';' 
+
+    * Values: `Hotel codes blacklisted grouped by context`. This values are separated by the characters  '|@|' . All value should have two blocks separated by the characters '||'. The first block identifies the context and the second blcok identifies the list of hotel codes separated by ';'.This cell must be specified between two characters ' " '. 
+
+    
+    You should take in mind this file is a collection of rules that in every search we chose the rule that better matches with the criteria sended in the query. Moreover only one of the rules specifieds will match with the criteria therefore you should think specify the more restrictive rules in top of the file. 
+    If no value for any rule criteria row it means that any value in the request matches with this row. 
+    It is important to indicate the contexts used in values on the rule criteria to improve rule matching.
+
+
+* **Delimiter**:  Comma (“,”)
+
+* **Directory**:  /F[folder code]\_[unique code]/HotelX\_[unique code]/
+
+### Sample File
+
+**Name**: blacklist\_access\_hotels.csv
+
+**Sample Data**:
+
+```csv
+    IdRule,Client,NoClient,ClientToken,NoClientToken,Supplier,NoSupplier,Access,NoAccess,Context,NoContext,ContextSup,NoContextSup,Values
+    r1,,,cli1;cli2,,,HOTELTEST;TESTPRV,,,,,,,all||all
+    r1,,,test_client,,,supplier_test,,,,,,,supplier_test_context,,"supplier_context||AB;CD;123"
+    r2,,,,,,,,123;456,,,,,"all||all"
+    r3,,,,,,,HOTELTEST;TESTPRV,,,,,,,    
+```
+
+
+**Use case**: 
+
+If we want block all hotels of two access in the blacklist, we should configure the file as following: 
+
+    IdRule,Client,NoClient,ClientToken,NoClientToken,Supplier,NoSupplier,Access,NoAccess,Context,NoContext,ContextSup,NoContextSup,Values
+    r2,,,,,,,123;456,,,,,,"all||all"
+
+    With this input hotel: ["A","B","C"] we obtain after execute the plugin we obtain hotels: [] 
+
+If we want block all hotels of two suppliers in the blacklist, we should configure the file as following: 
+
+    IdRule,Client,NoClient,ClientToken,NoClientToken,Supplier,NoSupplier,Access,NoAccess,Context,NoContext,ContextSup,NoContextSup,Values
+    r3,,,,,,,HOTELTEST;TESTPRV,,,,,,,"all||all"
+
+    With this input hotel: ["A","B","C"] we obtain after execute the plugin we obtain hotels: [] 
+
+If we no specify any value in one rule, we are indicating no hotel code should be blacklisted: 
+
+    IdRule,Client,NoClient,ClientToken,NoClientToken,Supplier,NoSupplier,Access,NoAccess,Context,NoContext,ContextSup,NoContextSup,Values
+    r3,,,,,,,HOTELTEST;TESTPRV,,,,,,,
+
+    With this input hotel: ["A","B","C"] we obtain after execute the plugin we obtain hotels: ["A","B","C"]
+
+If we want block a hotel code using the supplier codes, we should configures the file as following: 
+
+    IdRule,Client,NoClient,ClientToken,NoClientToken,Supplier,NoSupplier,Access,NoAccess,Context,NoContext,ContextSup,NoContextSup,Values
+    r1,test_client,,supplier_test,,,supplier_test_context,"supplier_context||AB;CD;123"
+
+    With this input hotel: ["AB","CD"] we obtain after execute the plugin we obtain hotels: ["123"] 
+
+If we want block all hotel codes of any supplier except some specified, we should configures the file as following: 
+
+    IdRule,Client,NoClient,ClientToken,NoClientToken,Supplier,NoSupplier,Access,NoAccess,Context,NoContext,ContextSup,NoContextSup,Values
+    r3,,,,,,HOTELTEST;TESTPRV,,,,,,,"all||all"
+
+    With this input hotel: ["AB","CD"] we obtain after execute the plugin we obtain hotels: ["123"] 
+
+       
+
+### Request example
+
+
+To use the plugin shoud send the following json in the query variables 
+
+```json
+		"plugins": [
+			{
+				"step": "REQUEST_ACCESS",
+				"pluginsType": {
+					"name": "blacklist",
+					"type": "PRE_STEP"
+				}
+			}
+		]
+```
+
+
+
+## The following plugin is deprecated. Please use the previous plugin to blacklist
+
 The blacklist plugin is used to ignore hotel code(s) when we a search query is executed. There are 2 types of blacklists:
 
 - Filter hotel code of a specific `Access`
