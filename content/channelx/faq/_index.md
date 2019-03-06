@@ -22,7 +22,7 @@ If set as true, this means that you are able to sell the hotel only for specific
 The channel will receive an error if they try to introduce different currencies in these fields. It is not allowed to have different values for the currency in these fields.
 
 **Could the system send overlapped dates between "End" in one load and "Start" in a new? (Ex. 1st load is for Start = 1 Aug | End = 31 Aug and 2nd load is for Start 31 Aug | End 30 Sept).**\
-Yes, it is possible, but it is not common. When this happens, the latest product loaded will be the one to be applied. In case they were loaded in the same request, the order goes from top to bottom, and the lowest line containing the overlapping date will be the one that is applied.
+Yes, it is possible, but it is not common. When this happens, the last product loaded will be the one to be applied. In case they were loaded in the same request, the order goes from top to bottom, and the lowest line containing the overlapping date will be the one that is applied.
 
 **Suppose one ARI sent by Travelgate contained multiple rate plans and then a few of them may not be in the right format (i.e. rate plan name missing, etc.). What happens in this case?**\
 If there is an error at the time the product is pushed into your system, you need to return an error. You have to process the whole request correctly. As for the error description, it is up to you.
@@ -42,7 +42,7 @@ It is a tool that allows to make a *Full Product* copy of the selected hotels in
 - Full Copy will send a lot more information than a simple Delta
 
 **What happens if a rate is deleted, does Travelgate inform us of this in the Full Copy?**\
-Not in Full Copy. When a Full Copy is run after a rate has been deleted, you will only receive whatever is currently loaded in the system. You will be notified of a rate being removed by a Delta instead of a Full Copy after its removal.
+Not in Full Copy. When a Full Copy is run after a rate has been deleted, you will only receive the information that is currently loaded in the system. You will be notified of a rate being removed by a Delta instead of a Full Copy after its removal.
 
 ## Inventory
 **For HotelRatePlanInventoryNotif, what does the 'RatePlanNotifType' (New, Delta and Remove) stand for?**\
