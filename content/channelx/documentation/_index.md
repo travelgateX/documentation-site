@@ -188,8 +188,8 @@ Sets up inventory information that should be followed with the structure Hotel >
 | @RatePlanNotifType			      | 0..1	  | String	 | *N*: New, Delta, Remove                                                  |
 | @RatePlanStatusType			      | 1		    | String   | *N*: Active, Deactivated				                                         |
 | @CurrencyCode				          | 0..1	  | String	 | *BR*. ISO Currency (EUR)	                                             |
-| @Start      				          | 0..1 	  | Date	   | Booking Start Date for wich the rate will be available.               |
-| @End        				          | 0..1	  | Date     | Booking Start Date for wich the rate will be available.               |
+| @Start      				          | 0..1 	  | Date	   | Booking Start Date for which the rate will be available.               |
+| @End        				          | 0..1	  | Date     | Booking Start Date for which the rate will be available.               |
 | RatePlan/BookingRules            	    | 0..1    |	         |                                                                       |
 | ../BookingRule		                | 1..n    |	         | 					                                                             |
 | @Code       				          | 0..1	  | String   | Empty if there are viewships conditions                               |
@@ -210,7 +210,7 @@ Sets up inventory information that should be followed with the structure Hotel >
 | ../LocationCodes                 | 1       |	          |                                       		                           |
 | @LocationCodesInclusive		    | 1 	    | Boolean   | Can or cannot be requested from this countryCode                     |
 | /LocationCode                  | 0..1    |           | If it is missing, applies to all countryCodes |
-| @CountryCode				          | 1 		  | String    | Country ISO2 code from can or can not be requested this rate.        |
+| @CountryCode				          | 1 		  | String    | Country ISO2 code can or cannot be requested from this rate.        |
 | RatePlan/Rates		                      | 1	      |		        | 							                                                       |
 | ../Rate                          | 1..n	  |		        |							                                                         |
 | Rate/AdditionalGuestAmounts		    | 1	      |		        |							                                                         |
@@ -225,9 +225,9 @@ Sets up inventory information that should be followed with the structure Hotel >
 | ../PaymentCard		                | 1..n    |	          |                                             	                       |
 | @CardCode        			        | 1     	| String    | Check *Documentation > Code Lists > Credit Cards*                         |
 | Rate/MealsIncluded                 | 0..1	  |	          | Present if board is included within the rate	                       |
-| @MealPlanCodes			          | 1 		  | Integer   | Check *Documentaion > Code Lists > Meal Plan Codes (OTA MPT)* |
-| RatePlan/SellableProducts	            | 0..1    |	          | List of sellable products. When derived rate and not present it applies to all rooms. In other cases, informs about the rooms which applies |
-| ../SellableProduct               | 0..n    |	          | Present if rooms associated with this rate		                         |
+| @MealPlanCodes			          | 1 		  | Integer   | Check *Documentation > Code Lists > Meal Plan Codes (OTA MPT)* |
+| RatePlan/SellableProducts	            | 0..1    |	          | List of sellable products. When derived rate and not present, it applies to all rooms. In other cases, it informs about the rooms to which it applies |
+| ../SellableProduct               | 0..n    |	          | Present if rooms are associated with this rate		                         |
 | @InvCode    				          | 1 		  | String    | Sellable Product Code				                                       |
 | @InvTypeCode    			        | 0..1 	  | String    | External information about the room (own code, own description, etc.) |
 | @InvType    				          | 1 		  | String    | *N*: ROOM		                                   |
@@ -246,7 +246,7 @@ Sets up inventory information that should be followed with the structure Hotel >
 | GuestRoom/Description                          | 0..1       |     | Room description			                                               |
 | Text                          | 1       | String    | 			                                               |
 | RatePlan/Taxes                         | 0..1    |	          |	 	                                                                   |
-| ../Tax                           | 1..n    |	          | Tax to apply to the room prices of the rate 			                   |
+| ../Tax                           | 1..n    |	          | Tax that applies to the room prices of the rate 			                   |
 | @Amount/Percent               | 1       | Decimal   | Tax will be applied relative to an amount or a percentage            |
 | @ChargeFrequency              | 0..1    | Boolean   | Tax is/isn't applied relative to the Amount of Nights booked         |
 | @ChargeUnit                   | 0..1    | Boolean   | Tax is/isn't applied relative to the Amount of Paxes booked          |
@@ -266,10 +266,10 @@ Sets up inventory information that should be followed with the structure Hotel >
 | ../OfferRule                     | 1       |           |		                                                                   |
 | ../LengthsOfStay                 | 1       |           | 			                                                               |
 | ../LengthOfStay                  | 1..2    |           |						                                                           |
-| @Time 				                | 1	      | Integer	  | Indicates the number of nights for this stay	                       |
+| @Time 				                | 1	      | Integer	  | It indicates the number of nights for this stay	                       |
 | @MinMaxMessageType			      | 1	      | String	  | *N*: MinLOS, MaxLOS. Minimum or Maximum stay for the Offer           |
 | ../DOW_Restrictions              | 1       |           | 			                                                               |
-| ../AvailableDaysOfWeek           | 1       |           |Indicates whether the Offer data applies to a certain day of the week |
+| ../AvailableDaysOfWeek           | 1       |           |It indicates whether the Offer data applies to a certain day of the week |
 | @Mon  				| 1	     | Boolean	|  |
 | @Tue  				| 1	     | Boolean	|  |
 | @Weds 				| 1	     | Boolean	|  |
@@ -277,7 +277,7 @@ Sets up inventory information that should be followed with the structure Hotel >
 | @Fri  				| 1	     | Boolean	|  |
 | @Sat  				| 1	     | Boolean	|  |
 | @Sun  				| 1      | Boolean	|  |
-| ../Inventories                   | 0..1    |           | Rooms wich the offer will apply to. If no Inventories are sent, the offer will apply for all the rooms in the Rate |
+| ../Inventories                   | 0..1    |           | Rooms to which the offer will apply. If no Inventories are sent, the offer will apply to all the rooms in the Rate |
 | ../Inventory                     | 1..n    |           | 		                                                                 |
 | @InvCode                      | 1       | String    | Room code                                                            |
 | ../Discount                       | 1       |           | 			                                                               |
