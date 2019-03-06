@@ -10,15 +10,15 @@ isDirectory = false
 Three price charging types are allowed: *price per Room*, *price per Pax* and *price per Occupancy*. When more than one price is charged for the same day, the lowest price will be returned as available price.
 
 **Price per Room**\
-All occupancies allowed in the room will have the same price. If an `AdditionalGuestAmount` is charged for occupancies over the standard occupancy, they will have to be applied.
+When a price is charged per Room means that all occupancies allowed in the room will have the same price. If an `AdditionalGuestAmount` are charged for occupancies over the standard occupancy, they will be applied.
 
 **Price per Pax**\
-The price is for the number of guests specified.
+When a price is charged per Pax means that the price is for the number of guests specified.
 
-If `NumberOfGuests` is equal or under the standard occupancy, the price returned will have to be the same as the price charged. If `NumberOfGuests` is over the Standard Occupancy the price is calculated from the Standard Occupancy price and the `AdditionalGuestAmount` charged.
+If `NumberOfGuests` is equal or under the standard occupancy, the price returned will have to be the same as the price charged. If `NumberOfGuests` is over the Standard Occupancy, the price is calculated from the Standard Occupancy price and the `AdditionalGuestAmount` charged.
 
 **Price per Occupancy**\
-The price will only be available for the specified occupancy. **No** `AdditionalGuestAmount` can be applied.
+When a price is charged per Occupancy means that this price will only be available for the specified occupancy. **No** `AdditionalGuestAmount` are applied.
 
 **Notes**
 
@@ -26,13 +26,13 @@ The price will only be available for the specified occupancy. **No** `Additional
     babies are always defined in AdditionalGuestAmounts.
 -   The possible Type values in the AdditionalGuestAmount tag are
     Exclusive and not specified.
-   > If there's no value specified then the price is a relative and it's added to   the price of the current pax.\
-    If the value is "Exclusive" then the price is absolute and will represent the total price of the current pax.
+   > If there is no value specified, then the price is a relative and it is added to the price of the current pax.\
+    If the value is "Exclusive", then the price is absolute and will represent the total price of the current pax.
 
--   If the price is per room then all AdditionalGuestAmount must be
+-   If the price is per Room, then all AdditionalGuestAmount must be
     relative.
 
-- If the price is per occupancy then *@Type* should be **14** and *@Code* should
+- If the price is per Occupancy then *@Type* should be **14** and *@Code* should
 be specified. 
 
 - An Occupancy is defined by *AdultNumber-ChildNumber-InfantNumber*. E.g.: *@Code* for an occupancy of 2 adults, 1 child and 0 babies would be "2-1-0"
