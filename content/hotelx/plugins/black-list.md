@@ -7,7 +7,7 @@ weight = 2
 alwaysopen = false
 +++
 
-The Blacklist plugin is used to ignore hotel code(s) when we a Search query is executed. 
+The Blacklist plugin is used to ignore hotel code(s) when a Search query is executed. 
 
 Loading a Blacklist is as easy as following the steps below:
 
