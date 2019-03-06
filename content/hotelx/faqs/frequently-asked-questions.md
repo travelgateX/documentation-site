@@ -1,7 +1,7 @@
 +++
 title = "FAQs"
 pagetitle = "HotelX Frequendly Asked Questions"
-description = "Do you have specific questions about HotelX? Check out the FAQs"
+description = "Do you have any specific questions about HotelX? Check out the FAQs"
 icon = "fa-question-circle"
 weight = 1
 alwaysopen = false
@@ -14,24 +14,24 @@ You can find it on our [`Schema`](https://api.travelgatex.com/)
 
 ## Languages allowed
 **Which are the languages allowed in HotelX?**
-The new aggregator allows every language, it will depend from each supplier.
+The new aggregator allows every language, it will depend on each supplier.
 
 
-## Suppliers list available 
+## List of suppliers available 
 **Is it possible to see the whole list of suppliers and to look at their hotel databases and prices somewhere?**
-[`Here`](https://docsend.com/view/zms247w) you will find the list of the sellers already connected to our platform. In case you want to look to their databases and prices, you should contact directly with the supplier.
+[`Here`](https://docsend.com/view/zms247w) you will find the list of the sellers already connected to our platform. In case you want to look at their databases and prices, you should contact them directly.
 
 ## Naming
 **Can I request to HotelX a specific response structure?**
-Yes, you can personalize the response structure by changing the query or mutation schema. But, our recommendation is to keep the native schema, at least in search step, so the performance is not affected.
+Yes, you can personalize the response structure by changing the query or mutation schema. But, our recommendation is to keep the native schema, at least in Search step, so that performance is not affected.
 
 ## Response time
 **Which timeout should I send in each step?**
-Our system allows for:
+Our system allows:
 * A maximum of 25000ms in Search
 * A maximum of 180000ms in Quote
 * A maximum of 180000ms in Book
-Our recommendation is to test which timeout better fit your needs, taking in count the number of hotels requested and the supplier.
+Our recommendation is to test which timeout fits your needs better, taking into account the number of hotels requested and the supplier.
 
 
 **How is the response time of the different providers managed in the aggregator mode?**
@@ -59,14 +59,14 @@ Our platform allows to return GIATA codes in our Hotels Query response. First of
 
 
 ## Certification process
-**Please advise us the procedure for Certification**
-All the details regarding the certification process are explained in the Welcome Pack we sent you.
+**Please advise us on the procedure for Certification**
+All the details regarding the Certification Process are explained in the Welcome Pack we sent you.
 Basically, you have to perform the three cases asked in the Welcome Pack and raise a certification ticket on our Customer Care Service Desk (attaching the files).
-You can also consult about the certification process within our [`documentation site`](/hotelx/howtos/certification_process/) 
+You can also find more information on the certification process within our [`documentation site`](/hotelx/howtos/certification_process/) 
 
 ## Supplier HOTELTEST
 **Now I only have access to HOTELTEST, can I activate a new supplier?**
-While in the development process and until our certification process is passed, you will only have access to HOTELTEST supplier.
+While in the development process and until our Certification Process is passed, you will only have access to HOTELTEST supplier.
 
 **Do I have access to all the hotels in the test environment?**
 No, we use a test supplier, so there is a limited number of hotels in the database to be used.
@@ -112,17 +112,17 @@ In order to avoid errors in your Query Search of more than 1 room, please, find 
 ```
 
 
-**Does the option id changes every time I run the same query (with the same supplier)?**
+**Does the optionId change every time I run the same query (with the same supplier)?**
 
-Yes, every time that you perform a query the option id will change.
+Yes, every time that you perform a query the optionId will change.
 
 ## Search request filters
 **What is the function of an accessCode?**
 
-Every time you activate a supplier, you receive an access code. This access code is used to differentiate between suppliers and also to filter between the same supplier's different credentials and configurations. This allows you for instance to diffentiate between B2B or B2C requests, or search availability only for certain suppliers.
+Every time you activate a supplier, you receive an access code. This access code is used to differentiate between suppliers and also to filter between the same supplier's different credentials and configurations. This allows you, for instance, to diffentiate between B2B or B2C requests, or search availability only for certain suppliers.
 
-**In case I would like to receive a specific rate, it would be possible?**
-Yes,  you could filter the response by introducing the tag [`rateRules`](/hotelx/reference/inputobjects/raterulesfilterinput/) in filter.
+**In case I would like to receive a specific rate, would it be possible?**
+Yes, you could filter the response by introducing the tag [`rateRules`](/hotelx/reference/inputobjects/raterulesfilterinput/) in your filter.
 
 **Which are the possible filters in the Search Request?**
 
@@ -131,45 +131,45 @@ Right now, you can search by hotel code and by destination:
 * Hotel code
 * Destination 
 
-**Does Hotel any restrictions on number of hotel codes in the hotel search criteria?**
+**Does HotelX have any restrictions on the number of hotel codes to be introduced in the hotel search criteria?**
 
-We do not have a limit number of hotels per query. Our API split the number of hotels requested to each supplier, according to the supplier’s characteristics.
+We do not have a limit in the number of hotels per query. Our API splits the number of hotels requested to each supplier, according to the supplier’s specific characteristics.
 
-**What happens if the supplier doesn't support the currency requested? It's not returned?**
+**What happens if the supplier doesn't support the currency requested? Is it not returned?**
 
-This case, can happen 2 scenarios: the supplier return an error cause the currency is not supported by them or the supplier return the currency they have set up on their side for your credentials
+In this case, two scenarios are possible: the first one, the supplier returns an error caused by the currency not being supported by them, or the second one, the supplier returns the currency they have set up on their end for your credentials.
 
-**How can I request for particular destination?**
+**How can I request a specific destination?**
 
-In order to be able to request by destination you will have to introduce our [`Search by destination`](/hotelx/plugins/mapping/) process plugin. 
+In order to perform a request by destination you should introduce our [`Search by destination`](/hotelx/plugins/mapping/) process plugin. 
 
 
 ## Surchages
 **On a per-supplier basis, can we can tell if a Surcharge is a tax or not?**
 
-HotelX Api can't indicate if a surcharge is a tax or not
+HotelX Api cannot indicate if a surcharge is a tax or not
 
 
 ## Daily-prices
-**Can I get Daily-prices in Search Response?**
+**Can I receive Daily-prices in Search Response?**
 
-It will depend if the supplier offers the information. In case that the information is returned by the supplier, you will find it through the Roomprice string–>PriceBreakdown.
+It will depend if the supplier offers the information. In case the information is returned by the supplier, you will find it through the Roomprice string–>PriceBreakdown.
 
 
 ## Currency in Search Requests
 **Is it necessary to include the currency tag in your Search Request?**
 
-The currency tag always is mandatory. You will have two options:
-* Send it in the request in time of search 
-* If you don't include any currency, then the settings' default currency configuration will be used
+The currency tag is always mandatory. You have two options:
+* To send it in the request whenever you run a Search
+* If you do not include any currency, then the settings by default currency configuration will be used
 
 
-**What happen if I request availability with a currency that the supplier doesn´t accept?**
+**What does it happen if I request availability with a currency that the supplier doesn´t accept?**
 
-In these cases, you will have two options:
+In these cases, there are two possible scennarios:
 
-* Applying the exchange rates using a [`currency conversion plugin`](/hotelx/plugins/converter/) (this pluggin contains the exchange rates previously loaded by client rules)
-* Not applying any exchange rate and you will receive the supplier´s currency. Some suppliers accept the currency in the request and others will return their currency depending on your account as client with them.
+* Exchange rates can be applied using a [`currency conversion plugin`](/hotelx/plugins/converter/) (this plugin contains the exchange rates previously loaded by client rules)
+* Not applying any exchange rate. In this case, you will receive the supplier´s currency - some suppliers accept the currency in the request and others will return their currency, depending on your account as client with them.
 
 ## Cancellation costs
 **Is it possible to perform a cancellation as a query to just retrieve the cancellation costs, but not to cancel the booked item itself?**
@@ -177,42 +177,42 @@ In these cases, you will have two options:
 No, but you can retrieve the cancellation policies where this information is included. You can check the booking information (cancel policies included) with the [`HotelBooking`](/travelgatex/reference/objects/hotelbooking) query.
 
 **Cancel Policy hoursBefore checkin date - What timezone is the checkIn date?**
-Normally UTC time is used but if the provider responds with hotel timezone we add 24 hours.
+Normally UTC time is used, but if the provider responds with hotel timezone we add 24 hours.
 You will find further information [`here`](/hotelx/reference/objects/cancelpenalty/)
 
 
 ## Book
-**Im getting `The number of rooms doesn't match with option's number of rooms` error on the book step, how do i define the number of rooms?**
+**I'm receiving `The number of rooms doesn't match with option's number of rooms` error on the book step, how do I define the number of rooms?**
 
 You will have to use the `occupancyRefId` returned at Search step
 
-**When booking, can the optionRefId be a hotelOptionSearch Id? or does this have to always be quoteId?**
+**When booking, can the optionRefId be a hotelOptionSearch Id? Or does it always have to be the quoteId?**
 
-No, you should always use the optionRefId from the Quote process.
+No, you should always use the optionRefId from the Quote query.
 
-**I am trying to perform a book,everything seems correct, but I am receiving a confirmation error. What it could be?**
+**I am trying to perform a Book,everything seems correct, but I am receiving a confirmation error. What it could be?**
 
 You can try to change the client reference for a new one.
-There are some suppliers that do not allow to perform a book with a client reference that has been used before.
+There are some suppliers that do not allow to perform a Book with a client reference that has been used before.
 
 
 ## DeltaPrice
-**Can you please let us know why using deltaprice?**
+**Can you please let us know why should we use Deltaprice?**
 
-Input delta price, indicates price variation permitted by the client. An error will be returned if the new price does not abide to DeltaPrice. If DeltaPrice is not sent and the integration implements it, we assume that the price range is 0 and the process will continue (price is lower or equal to the price showed in valuation). This field is implemented if it’s native to the supplier or if another availability/valuation request needs to be done in Reservation. In case the supplier blocks the option in valuation, reservation will be done automatically in reservation method.
+Input delta price, indicates the price variation permitted by the client. An error will be returned if the new price does not abide to DeltaPrice. If DeltaPrice is not sent and the integration implements it, we assume that the price range is 0 and the process will continue (price is lower or equal to the price showed in valuation). This field is implemented if it’s native to the supplier or if another Search/Quote request needs to be done in Book. In case the supplier blocks the option in Quote, reservation will be done automatically in Book mutation.
 You can set delta price by:
 * Amount
 * Percentage
 * Apply both (amount and percentage)
-You can find this information our [`Schema`](https://api.travelgatex.com/)
+You can find this information in our [`Schema`](https://api.travelgatex.com/)
 
 ## Card Details
 **Which payment type options are available for each supplier?**
 
-Each supplier supports/works with different payment types (remember that TravelgateX supports `Merchant`, `Card Booking`, `Card Checkin` and `Direct`), so the ones you receive will be the ones you have contracted /accorded with the supplier.
+Each supplier supports/works with different payment types (remember that TravelgateX supports `Merchant`, `Card Booking`, `Card Checkin` and `Direct`), so the ones you receive will be the ones you have contracted /agreed with the supplier.
 
-**Do I have to introduce card details when performing the book?**
-It will depend on the type of payment associated with the option you selected, and therefore on the requirements of the provider.
+**Do I have to introduce card details when performing Book?**
+It will depend on the type of payment associated with the option you have selected, and therefore on the requirements of the provider.
 Please note that the payment is not managed by TravelgateX, so that you will have to implement a payment gateway on your side. The card details are needed in all options except `Merchant`.
 The Payment type tag is returned in the Search response, so do not forget to introduce it in the query body.
 More information in our [`Schema`](https://api.travelgatex.com/)
@@ -250,27 +250,27 @@ HotelX allows two types of Queries:
 [More info on HotelX content.](/hotelx/concepts/content/)
 
 ## Country names
-**How can I get the names of the countries?**
+**How can I receive the names of the countries?**
 
 The response of the HotelX Query contains `location.country` in ISO standard format.
 
 ## Amenities and images
-**I am not getting hotel images so please suggest how can I get them.**
+**I am not receiving hotel images so please suggest how can I get them.**
 
-Hotel images are returned in the HotelList call.
+Hotel images are returned in the Hotels Query.
 Please check our content section for further information: `link`
 
 **I would like to perform the HotelList and DestinationList, but I am not finding GraphQL examples.**
 
 In the Welcome Pack mail you will find attached our `Usecases` and Insomnia environment packs with some query and mutation examples.
-For further information visit our [`content section`](/hotelx/concepts/content/)
+For further information, feel free to access our [`content section`](/hotelx/concepts/content/)
 
 **Could I know all amenities information in your system? I mean all code and text.**
 
-Amenities information can change depending on the supplier and the hotel. HotelX doens´t keep any data as we return the info directly from each supplier.
+Amenities information might change depending on the supplier and the hotel. HotelX does not keep any data as we return the information directly from each supplier.
  
 ## Mapping process 
-**To be able to upload the mapping, should we be using the HotelMapX plugin and is there a document that we can refer to on the plugin and how the request should be sent?**
+**To be able to upload the mapping, should we be using the HotelMapX plugin, and is there a document that we can refer to on the plugin and how the request should be sent?**
 
 Not via API. Uploading to FTP as described [`here`](/hotelx/plugins/mapping/) 
 
