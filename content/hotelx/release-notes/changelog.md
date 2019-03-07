@@ -14,6 +14,17 @@ Easily accessible log of notable changes to HotelX API
 
 {{% alert theme="info" %}}All notable changes to our platform will be documented on this page.{{% /alert %}}
 
+
+## 2019-03-07
+{{% release-notes-container type="a"%}}
+- Added CurrencyX management for the cancel penalties.
+{{% /release-notes-container %}}
+
+{{% release-notes-container type="f"%}}
+- Bug when the cancel penalty type is empty or invalid format.
+- Mandatory field always return FALSE when fee is EXCLUSIVE type in Surcharge node.
+{{% /release-notes-container %}}
+
 ## 2019-02-26
 {{% release-notes-container type="a"%}}
 - New plugin, add parameter. You can see the documentation [here](https://docs.travelgatex.com/hotelx/plugins/add_parameterx/).
