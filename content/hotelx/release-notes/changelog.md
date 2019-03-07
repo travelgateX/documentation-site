@@ -12,7 +12,7 @@ tags = ["products-changelog"]
 
 Easily accessible log of notable changes to HotelX API
 
-{{% alert theme="info" %}}All notable changes to our platform will be documented on this page.{{% /alert %}}
+{{% alert theme="info" %}}All notable changes in our platform will be documented on this page.{{% /alert %}}
 
 
 ## 2019-03-07
@@ -22,7 +22,7 @@ Easily accessible log of notable changes to HotelX API
 
 {{% release-notes-container type="f"%}}
 - Bug when the cancel penalty type is empty or invalid format.
-- Mandatory field always return FALSE when fee is EXCLUSIVE type in Surcharge node.
+- Mandatory field always returns FALSE when fee is EXCLUSIVE type in Surcharge node.
 {{% /release-notes-container %}}
 
 ## 2019-02-26
