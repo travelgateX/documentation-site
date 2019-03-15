@@ -2,7 +2,7 @@
 "title": "Query Stats",
 "pagetitle": "Stats - Query",
 "description": "How to query about your performance",
-"icon": "fa-exchange",
+"icon": "fa-search-plus",
 "weight": 4,
 "alwaysopen": false,
 "default_ak": "64780338-49c8-4439-7c7d-d03c2033b145",
@@ -28,9 +28,7 @@ This page shows you how to query Stats using API or TravelgateX Web.
 
 ## How to request
 
-There are 2 ways to query about your performance:
-- As a Buyer
-- As a Seller
+You can query about your performance as a buyer or as a seller.
 
 Below are shown different examples for different casuistry:
 

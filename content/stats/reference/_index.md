@@ -3,7 +3,7 @@
   "hideGithubLink": true,
 	"pagetitle": "Reference Documentation",
   "description": "Reference Documentation",
-  "weight": 2,
+  "weight": 3,
   "icon": "fa-book",
   "alwaysopen": false
 }
