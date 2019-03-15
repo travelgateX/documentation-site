@@ -2,7 +2,7 @@
 	"title": "GraphQL Schema breaking changes",
 	"pagetitle": "GraphQL Schema breaking changes",
 	"description": "Changes history of deprecated notes previously announced",
-	"weight": 5,
+	"weight": 1,
 	"icon": "fa-eraser",
 	"alwaysopen": false,
 	"tags": [
