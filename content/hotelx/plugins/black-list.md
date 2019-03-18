@@ -50,11 +50,11 @@ The file should be in the below format:
 **Sample Data**:
 
 ```csv
-    IdRule,Client,NoClient,ClientToken,NoClientToken,Supplier,NoSupplier,Access,NoAccess,Context,NoContext,ContextSup,NoContextSup,Values
+    IdRule,ClientToken,NoClientToken,Client,NoClient,Supplier,NoSupplier,Access,NoAccess,Context,NoContext,ContextSup,NoContextSup,Values
     r1,,,cli1;cli2,,,HOTELTEST;TESTPRV,,,,,,,all||all
-    r1,,,test_client,,,supplier_test,,,,,,,supplier_test_context,,"supplier_context||AB;CD;123"
+    r1,,,test_client,,,supplier_test,,,,,supplier_test_context,,"supplier_context||AB;CD;123"
     r2,,,,,,,,123;456,,,,,"all||all"
-    r3,,,,,,,HOTELTEST;TESTPRV,,,,,,,    
+    r3,,,,,,HOTELTEST;TESTPRV,,,,,,,,    
 ```
 
 
@@ -62,35 +62,35 @@ The file should be in the below format:
 
 If we want to block all hotels of two accesses in the Blacklist, we should configure the file as specified below: 
 
-    IdRule,Client,NoClient,ClientToken,NoClientToken,Supplier,NoSupplier,Access,NoAccess,Context,NoContext,ContextSup,NoContextSup,Values
+    IdRule,ClientToken,NoClientToken,Client,NoClient,Supplier,NoSupplier,Access,NoAccess,Context,NoContext,ContextSup,NoContextSup,Values
     r2,,,,,,,123;456,,,,,,"all||all"
 
     With this input hotel: ["A","B","C"] after executing the plugin, we obtain hotels: [] 
 
 If we want to block all hotels of two suppliers in the blacklist, we should configure the file as specified below: 
 
-    IdRule,Client,NoClient,ClientToken,NoClientToken,Supplier,NoSupplier,Access,NoAccess,Context,NoContext,ContextSup,NoContextSup,Values
-    r3,,,,,,,HOTELTEST;TESTPRV,,,,,,,"all||all"
+    IdRule,ClientToken,NoClientToken,Client,NoClient,Supplier,NoSupplier,Access,NoAccess,Context,NoContext,ContextSup,NoContextSup,Values
+    r3,,,,,,HOTELTEST;TESTPRV,,,,,,,"all||all"
 
     With this input hotel: ["A","B","C"] after executing the plugin, we obtain hotels: [] 
 
-If we don't specify any values in one rule, we are indicating that no hotel code should be blacklisted: 
+If we don't specify any values in one rule, we are indicating that no hotel code should be blacklisted for any supplier different of HOTELTEST or TESTPRV: 
 
-    IdRule,Client,NoClient,ClientToken,NoClientToken,Supplier,NoSupplier,Access,NoAccess,Context,NoContext,ContextSup,NoContextSup,Values
-    r3,,,,,,,HOTELTEST;TESTPRV,,,,,,,
+    IdRule,ClientToken,NoClientToken,Client,NoClient,Supplier,NoSupplier,Access,NoAccess,Context,NoContext,ContextSup,NoContextSup,Values
+    r3,,,,,,HOTELTEST;TESTPRV,,,,,,,,
 
     With this input hotel: ["A","B","C"] after executing the plugin, we obtain hotels: ["A","B","C"]
 
 If we want block a hotel code using the supplier codes, we should configure the file as specified below: 
 
-    IdRule,Client,NoClient,ClientToken,NoClientToken,Supplier,NoSupplier,Access,NoAccess,Context,NoContext,ContextSup,NoContextSup,Values
-    r1,test_client,,supplier_test,,,supplier_test_context,"supplier_context||AB;CD;123"
+    IdRule,ClientToken,NoClientToken,Client,NoClient,Supplier,NoSupplier,Access,NoAccess,Context,NoContext,ContextSup,NoContextSup,Values
+    r1,,,test_client,,supplier_test,,,,,,supplier_test_context,,"supplier_context||AB;CD;123"
 
     With this input hotel: ["AB","CD"] after executing the plugin, we obtain hotels: ["123"] 
 
 If we want block all hotel codes from any supplier except some specified, we should configure the file as stated below: 
 
-    IdRule,Client,NoClient,ClientToken,NoClientToken,Supplier,NoSupplier,Access,NoAccess,Context,NoContext,ContextSup,NoContextSup,Values
+    IdRule,ClientToken,NoClientToken,Client,NoClient,Supplier,NoSupplier,Access,NoAccess,Context,NoContext,ContextSup,NoContextSup,Values
     r3,,,,,,HOTELTEST;TESTPRV,,,,,,,"all||all"
 
     With this input hotel: ["AB","CD"] after executing the plugin, we obtain hotels: ["123"] 
