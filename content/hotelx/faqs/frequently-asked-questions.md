@@ -176,6 +176,13 @@ In these cases, there are two possible scennarios:
 
 No, but you can retrieve the cancellation policies where this information is included. You can check the booking information (cancel policies included) with the [`HotelBooking`](/travelgatex/reference/objects/hotelbooking) query.
 
+**How are cancellation costs calculated and displayed?**
+There are three ways to calculate cancellation costs, depending on the provider. The field value will have the amount associated to each cancellation type:
+- Per nights: indicates the amount of nights to be penalized.
+- Percentage: indicates the percentage of the total booking. The field value will have possible values between 0 and 100.
+- Import: indicates the amount to be paid.
+Bear in mind, that a booking may have more than one penalty type associated, depending on the amount of hours before entrance date that you perform the cancellation.
+
 **Cancel Policy hoursBefore checkin date - What timezone is the checkIn date?**
 Normally UTC time is used, but if the provider responds with hotel timezone we add 24 hours.
 You will find further information [`here`](/hotelx/reference/objects/cancelpenalty/)
