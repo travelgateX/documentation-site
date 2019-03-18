@@ -9,7 +9,7 @@ alwaysopen = false
 
 In order to **analyze useful metrics** about performance, Stats-X extracts, loads and stores data from all TravelgateX products.
 
-Once the metrics are stored in our infraestructure, you can query and nalyze your performance using [API stats query](https://api.travelgatex.com/) or [TravelgateX Stats Web](https://www.travelgatex.com/stats/)
+Once the metrics are stored in our infrastructure, you can query and analyze your performance using [API stats query](https://api.travelgatex.com/) or [TravelgateX Stats Web](https://www.travelgatex.com/stats/)
 
 {{< figure src="/images/maps_statsx.svg#center" attr="" >}}
 
