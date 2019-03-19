@@ -8,4 +8,4 @@ isDirectory = false
 alwaysopen = false
 +++
 
-{{%custom-children% showhidden="true"}}
+{{%custom-children% showhidden="false"}}
