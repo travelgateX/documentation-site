@@ -5,6 +5,7 @@ description = "HTTP request headers required in all API requests"
 icon = "fa-plus-circle"
 weight = 3
 alwaysopen = false
+hidden = true
 +++
 
 The following HTTP request headers are relevant to all request methods (GET, PUT, POST and DELETE) and they are required in all API requests.
