@@ -74,7 +74,7 @@ If we want to block all hotels of two suppliers in the blacklist, we should conf
 
     With this input hotel: ["A","B","C"] after executing the plugin, we obtain hotels: [] 
 
-If we don't specify any values in one rule, we are indicating that no hotel code should be blacklisted for any supplier different of HOTELTEST or TESTPRV: 
+If we don't specify any values in one rule, we are indicating that no hotel code should be blacklisted for any supplier different from HOTELTEST or TESTPRV: 
 
     IdRule,ClientToken,NoClientToken,Client,NoClient,Supplier,NoSupplier,Access,NoAccess,Context,NoContext,ContextSup,NoContextSup,Values
     r3,,,,,,HOTELTEST;TESTPRV,,,,,,,,
