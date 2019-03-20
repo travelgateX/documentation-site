@@ -16,5 +16,5 @@ Easily accessible log of notable changes to Stats-X
 ## 2019-03-14
 
 {{% release-notes-container type="a"%}}
-* Insights-X [product documentation](https://docs.travelgatex.com/stats-x/)
+* Stats-X [product documentation](https://docs.travelgatex.com/stats-x/)
 {{% /release-notes-container %}}
