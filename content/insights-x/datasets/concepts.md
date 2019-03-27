@@ -34,8 +34,8 @@ Let's see a subset of an example table:
 | provider_id | country | city              | city_country          | search_date             | search_ok_net | search_ok_net_country | search_ok_net_provider | 
 |-------------|---------|-------------------|-----------------------|-------------------------|---------------|-----------------------|------------------------|
 | provider 1         | ES      | Palma | Palma,ES | 2019-03-19 00:00:00 UTC | 5 | 20 | 30 |
-| provider 1         | ES      | Madrid     | Madrid,ES     | 2019-03-19 00:00:00 UTC | 15 | 20 |30
-| provider 1         | PT    | Sintra    | Sintra,PT    | 2019-03-19 00:00:00:00 UTC |  10 | 10 |30
+| provider 1         | ES      | Madrid     | Madrid,ES     | 2019-03-19 00:00:00 UTC | 15 | 20 |30 |
+| provider 1         | PT    | Sintra    | Sintra,PT    | 2019-03-19 00:00:00:00 UTC |  10 | 10 |30 |
 
 It means that 'provider_1' has returned 5 differents hotels with availabilty in Palma, and 15 differents hotels in Madrid. Accordingly, 'provider_1' has returned 20 differents hotels with availability in country ES  and 10 differents hotels with availability in country PT. In consequence this provider has returned 30 differents hotels with availability, for the date 2019-03-19 00:00:00 UTC.
 
@@ -50,7 +50,7 @@ The bechmark table analyses the total of uniques searches per hotel returning av
     + Total of bookings: **booking_ok_net**
     + Total of revenue: **tot_amount_booking_net**
  * The percentage over total of providers:
-     + Percentatge over total of differents hotels returning availabitity: **perc_search_ok_net**
+    + Percentatge over total of differents hotels returning availabitity: **perc_search_ok_net**
     + Percentatge over total of bookings: **perc_booking_ok_net**
     + Percentatge over total of revenue: **perc_tot_amount_booking_net**
  * What percentage of suppliers are above than me:
@@ -77,6 +77,7 @@ Let's consider the following row:
 | provider 1         | ES   | Palma | Palma, ES | 2019-03-19 00:00:00 UTC | 1000            | 0.01  | 96.3                     | 3.0                | 27.58   | 0.9        | 10              | 0.1                 | 100                       | 1                 | 2  | 100                       | 2000                      | 0.3                         | 98.3                               | 2.0                        | 150           | 0.98                            |
 
 Let's see what we can say for the 'provider_1' at 2019-03-19 00:00:00 UTC in **availability**:
+
 * Has returned 1000 diferents hotels availables in Palma.
 * This 1000 diferents hotels are the 1% of the total the differents hotels availables in Palma [^note1]. 
 * The provider is above de 96.3% providers operating in Palma.
@@ -87,6 +88,7 @@ Let's see what we can say for the 'provider_1' at 2019-03-19 00:00:00 UTC in **a
 [^note1]: Taking into account that the hotels between providers do not have to be different.
 
 Let's see what we can say for the 'provider_1' at 2019-03-19 00:00:00 UTC in **bookings**:
+
 * Has had 10 bookings Palma.
 * This 10 bookings are the 10% of the total of bookings in Palma.
 * The seller is above de 100% providers operating in Palma (so it's the best).
@@ -95,6 +97,7 @@ Let's see what we can say for the 'provider_1' at 2019-03-19 00:00:00 UTC in **b
 * The value of my index is 100, so I'm the best seller in bookability in Palma.
 
 Let's see what we can say for the 'provider_1' at 2019-03-19 00:00:00 UTC in **revenue**:
+
 * The bookings with net price in Palma have been sold for 2000€.
 * This revenue is the 30% of the total of revenue in Palma for all the bookings with net price.
 * The seller is above de 98.3% providers operating in Palma.
