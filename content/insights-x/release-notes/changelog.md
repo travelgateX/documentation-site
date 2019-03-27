@@ -19,7 +19,7 @@ Easily accessible log of notable changes to Insights-X
 {{% /release-notes-container %}}
 
 {{% release-notes-container type="a"%}}
-* Insights-X Concepts
+* Insights-X [Concepts](/insights-x/datasets/concepts/)
 {{% /release-notes-container %}}
 
 ## 2019-02-21
