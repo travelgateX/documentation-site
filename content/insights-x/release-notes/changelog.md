@@ -12,6 +12,16 @@ tags = ["products-changelog"]
 
 Easily accessible log of notable changes to Insights-X
 
+## 2019-03-27
+
+{{% release-notes-container type="a"%}}
+* New table daily\_benchmarking\_seller
+{{% /release-notes-container %}}
+
+{{% release-notes-container type="a"%}}
+* Insights-X Concepts
+{{% /release-notes-container %}}
+
 ## 2019-02-21
 
 {{% release-notes-container type="a"%}}
