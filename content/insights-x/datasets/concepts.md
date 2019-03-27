@@ -31,11 +31,12 @@ Finally, the most general level of detail is given per provider. In there, the b
 
 Let's see a subset of an example table:
 
-| provider_id | country | city              | city_country          | search_date             | search_ok_net | search_ok_net_country | search_ok_net_provider | 
-|-------------|---------|-------------------|-----------------------|-------------------------|---------------|-----------------------|------------------------|
-| provider 1         | ES      | Palma | Palma,ES | 2019-03-19 00:00:00 UTC | 5 | 20 | 30 |
-| provider 1         | ES      | Madrid     | Madrid,ES     | 2019-03-19 00:00:00 UTC | 15 | 20 |30 |
-| provider 1         | PT    | Sintra    | Sintra,PT    | 2019-03-19 00:00:00:00 UTC |  10 | 10 |30 |
+| provider_id | country | city              | city_country          | search_date                | search_ok_net | search_ok_net_country | search_ok_net_provider|
+|-------------|---------|-------------------|-----------------------|----------------------------|---------------|-----------------------|-----------------------|
+| provider 1  | ES      | Palma             | Palma,ES              | 2019-03-19 00:00:00 UTC    | 5             | 20                    | 30                    |
+| provider 1  | ES      | Madrid            | Madrid,ES             | 2019-03-19 00:00:00 UTC    | 15            | 20                    | 30                    |
+| provider 1  | PT      | Sintra            | Sintra,PT             | 2019-03-19 00:00:00:00 UTC | 10            | 10                    | 30                    |
+
 
 It means that 'provider_1' has returned 5 differents hotels with availabilty in Palma, and 15 differents hotels in Madrid. Accordingly, 'provider_1' has returned 20 differents hotels with availability in country ES  and 10 differents hotels with availability in country PT. In consequence this provider has returned 30 differents hotels with availability, for the date 2019-03-19 00:00:00 UTC.
 
