@@ -7,11 +7,11 @@ weight = 3
 alwaysopen = false
 +++
 
-On this page you will learn about **Transactional Booking Flow** to Search, quote and confirm a reservation. You will also see the difference between the **Search Single Mode** VS **Search Multi Mode**.
+On this page you will learn about the **Transactional Booking Flow** to Search, Quote and Confirm a reservation. You will also be able to see the difference between the **Search Single Mode** VS **Search Multi Mode**. In this sense, you can find the necessary **access codes** used by using the [admin-query] (https://docs.travelgatex.com/hotelx/checkconfig/)
 
 ## Search Single Mode
 
-This mode is used when the client only wants to get options from a single access, for this, the client must indicate in the request the code of the access that they want to use. In the request have to use the access filter, you can find a sample [here](https://graphqlbin.com/n5nXhX):
+This mode is used when the client only wants to receive options from a single access. In this case, the client should indicate in the request the access code they want to use within the filter access - You can find a sample [here](https://graphqlbin.com/n5nXhX):
 
 ```
 {
@@ -115,9 +115,9 @@ This mode is used when the client only wants to get options from a single access
     </g>
 </svg>
 
-## Search Multi Mode
+## Search Multi-Mode
 
-If you don’t have any filter in the request and you have permissions for multimode, the search is multimode. By default, the request is for all the accesses that you have configured in the product, if you want to apply some filter, you have to use the filter and to indicate the rules that you want. Is important to know that you only can use includes or excludes in the same request, but never both in the same request.
+If you don’t apply any filters in the request and you have permissions for multi-mode, the Search is multi-ode. By default, the request is run for all the accesses that you have configured in the product, if you want to apply some filters, you should use the filter and indicate the rules that you want to apply. Is important to know that you can only use "includes" or "excludes" in the same request, but never both in the same request.
 
 
 <svg class="search_multi_mode" width="617px" height="486px" viewBox="75 50 617 486" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">

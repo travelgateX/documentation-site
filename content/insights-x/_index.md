@@ -1,7 +1,7 @@
 +++
 title = "Insights-X"
-pagetitle = ""
-description = ""
+pagetitle = "Insights-X"
+description = "Grow your business with data"
 weight = 4
 alwaysopen = false
 isDirectory = false

@@ -5,6 +5,7 @@ description = "HTTP request headers required in all API requests"
 icon = "fa-plus-circle"
 weight = 3
 alwaysopen = false
+hidden = false
 +++
 
 The following HTTP request headers are relevant to all request methods (GET, PUT, POST and DELETE) and they are required in all API requests.
@@ -31,38 +32,4 @@ Authorization: <type> <credentials>
 `<credential>`: String
 
 ### Example
-Authorization: Apikey q8ggx-poVDW76Kw9-18hwnnRvxlZm-AP2QZ
-
-## TGX-Audit (Optional)
-
-Force audit the request in TravelgateX systems.
-
-### Syntax
-
-```
-TGX-Audit: <number>
-```
-
-### Directives
-
-`<number>`:
-
-- 0: The requester prefers not to be tracked on the target system.
-- 1: The requester prefers to allow tracking on the target system.
-
-## TGX-Tracing (Optional)
-
-When activated, it returns performance traces alongside the data requested.
-
-### Syntax
-
-```
-TGX-Tracing: <number>
-```
-
-### Directives
-
-`<number>`:
-
-- 0: Default value. Tracing not enabled.
-- 1: Tracing enabled.
+Authorization: Apikey dumq8ggx-poVDW76Kw9-18hwnnRvxlZm-AP2QZ

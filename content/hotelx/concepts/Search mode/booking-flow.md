@@ -168,7 +168,7 @@ Performs a hotel availability search over 1 or more [Seller accesses](http://doc
 
 ### PlayGround Samples
 
-* [search](https://www.graphqlbin.com/2kzRfE) 
+* [search](https://docs.travelgatex.com/hotelx/howtos/bookingflow/search/) 
 
 ## Quote
 
@@ -196,7 +196,7 @@ Performs an hotel quote over an option returned in Search Response.
 
 ### PlayGround Samples
 
-* [quote](https://graphqlbin.com/31B2HR) 
+* [quote](https://docs.travelgatex.com/hotelx/howtos/bookingflow/quote/) 
 
 ## Book
 
@@ -224,4 +224,4 @@ Performs a book or reservation over an option returned in Quote Response.
 
 ### PlayGround Samples
 
-* [book](https://graphqlbin.com/1wxWIp) 
+* [book](https://docs.travelgatex.com/hotelx/howtos/bookingflow/book/) 
