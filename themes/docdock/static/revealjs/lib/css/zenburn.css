@@ -29,8 +29,8 @@ based on dark.css by Ivan Sagalaev
 
 .hljs-variable,
 .hljs-template-variable,
-.hljs-attribute {
-  color: #efdcbc;
+.hljs-attr {
+  color: #4988ff;
 }
 
 .hljs-literal {
