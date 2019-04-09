@@ -11,7 +11,7 @@
       "isDeprecated": true,
       "args": null,
       "deprecationReason": "Please use PaymentXBookingInfoCriteriaInput",
-      "descriptionSplitted": {
+      "descriptionSplit": {
         "date": "2018-08-03",
         "first": "Responsible organization of the booked property. @deprecated(reason: \"deprecated from",
         "second": "Please use PaymentXBookingInfoCriteriaInput\")"
