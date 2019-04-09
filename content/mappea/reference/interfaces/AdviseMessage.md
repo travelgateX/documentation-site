@@ -15,7 +15,7 @@
       "typeString": "String!",
       "name": "type",
       "url": "/mappea/reference/scalars/string",
-      "description": "Error type: The following types are valid:",
+      "description": "Error type: The following types are valid: [type]",
       "isDeprecated": true,
       "args": null,
       "deprecationReason": "",
