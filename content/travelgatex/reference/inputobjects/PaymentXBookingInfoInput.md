@@ -21,7 +21,7 @@
       "typeString": "String!",
       "name": "bookingReference",
       "url": "/travelgatex/reference/scalars/string",
-      "description": "Indicates the referece of the booking",
+      "description": "Indicates the reference of the booking",
       "args": null
     },
     {
