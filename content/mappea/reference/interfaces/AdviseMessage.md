@@ -19,7 +19,7 @@
       "isDeprecated": true,
       "args": null,
       "deprecationReason": "",
-      "descriptionSplitted": {
+      "descriptionSplit": {
         "date": "2018-06-01",
         "first": "deprecated from",
         "second": ""
@@ -39,7 +39,7 @@
       "typeString": "AdviseMessageLevel!",
       "name": "level",
       "url": "/mappea/reference/enums/advisemessagelevel",
-      "description": "Indicates the level of importance of the message: Posible values ERROR WARN INFO",
+      "description": "Indicates the level of importance of the message: Possible values ERROR WARN INFO",
       "isDeprecated": false,
       "args": null
     },
