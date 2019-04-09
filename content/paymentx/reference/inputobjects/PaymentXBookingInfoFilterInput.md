@@ -7,7 +7,7 @@
       "typeString": "String",
       "name": "organization",
       "url": "/paymentx/reference/scalars/string",
-      "description": "Responsible organization of the booked property. @deprecated(reason: \"deprecated from 2018-08-03. Please use PaymentXBookingInfoCriteriaInput\")",
+      "description": "Responsible organization for the booked property. @deprecated(reason: \"deprecated from 2018-08-03. Please use PaymentXBookingInfoCriteriaInput\")",
       "isDeprecated": true,
       "args": null,
       "deprecationReason": "Please use PaymentXBookingInfoCriteriaInput",
@@ -23,11 +23,11 @@
       "typeString": "ID",
       "name": "pointOfSaleCode",
       "url": "/paymentx/reference/scalars/id",
-      "description": "Indicates the code of the booked property. @deprecated(reason: \"deprecated from 2018-08-03. Please use PaymentXBookingInfoCriteriaInput\")",
+      "description": "Indicates the code for the booked property. @deprecated(reason: \"deprecated from 2018-08-03. Please use PaymentXBookingInfoCriteriaInput\")",
       "isDeprecated": true,
       "args": null,
       "deprecationReason": "Please use PaymentXBookingInfoCriteriaInput",
-      "descriptionSplitted": {
+      "descriptionSplit": {
         "date": "2018-08-03",
         "first": "Indicates the code of the booked property. @deprecated(reason: \"deprecated from",
         "second": "Please use PaymentXBookingInfoCriteriaInput\")"
@@ -43,7 +43,7 @@
       "isDeprecated": true,
       "args": null,
       "deprecationReason": "Please use PaymentXBookingInfoCriteriaInput",
-      "descriptionSplitted": {
+      "descriptionSplit": {
         "date": "2018-08-03",
         "first": "Indicates the referece of the booking. @deprecated(reason: \"deprecated from",
         "second": "Please use PaymentXBookingInfoCriteriaInput\")"
@@ -132,7 +132,7 @@
       "typeString": "DateTime",
       "name": "checkOut_lte",
       "url": "/paymentx/reference/scalars/datetime",
-      "description": "All values less than or equal the given value.",
+      "description": "All values less than or equal than the given value.",
       "args": null
     },
     {
@@ -146,7 +146,7 @@
       "typeString": "DateTime",
       "name": "checkOut_gte",
       "url": "/paymentx/reference/scalars/datetime",
-      "description": "All values greater than or equal the given value.",
+      "description": "All values greater than or equal than the given value.",
       "args": null
     }
   ],
