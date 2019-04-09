@@ -15,11 +15,11 @@
       "typeString": "String!",
       "name": "type",
       "url": "/stats/reference/scalars/string",
-      "description": "Error type: The following types are valid:",
+      "description": "Error type: The following types are valid:[type]",
       "isDeprecated": true,
       "args": null,
       "deprecationReason": "",
-      "descriptionSplitted": {
+      "descriptionSplit": {
         "date": "2018-06-01",
         "first": "deprecated from",
         "second": ""
