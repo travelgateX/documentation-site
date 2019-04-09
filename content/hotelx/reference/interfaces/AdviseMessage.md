@@ -39,7 +39,7 @@
       "typeString": "AdviseMessageLevel!",
       "name": "level",
       "url": "/hotelx/reference/enums/advisemessagelevel",
-      "description": "Indicates the level of importance of the message: Posible values ERROR WARN INFO",
+      "description": "Indicates the level of importance of the message: Possible values ERROR WARN INFO",
       "isDeprecated": false,
       "args": null
     },
