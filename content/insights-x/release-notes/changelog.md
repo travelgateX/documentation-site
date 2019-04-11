@@ -12,6 +12,20 @@ tags = ["products-changelog"]
 
 Easily accessible log of notable changes to Insights-X
 
+## 2019-04-11
+
+{{% release-notes-container type="a"%}}
+* Insights-X [Content](/insights-x/content/)
+{{% /release-notes-container %}}
+
+{{% release-notes-container type="c"%}}
+* Benchmarck table daily\_benchmarking\_seller replaced by new ones benchmark [tables](/insights-x/datasets/concepts/dataset-content/benchmark/dataset-reference-benchmark/)
+{{% /release-notes-container %}}
+
+{{% release-notes-container type="a"%}}
+* Added buyer field in benchmark seller tables. Added seller field in benchmark buyer tables.
+{{% /release-notes-container %}}
+
 ## 2019-03-27
 
 {{% release-notes-container type="a"%}}
