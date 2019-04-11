@@ -1,9 +1,9 @@
 +++
 title = "Performance Dataset"
-pagetitle = "Insights-X Performance Dataset"
+pagetitle = "Performance Dataset"
 description = "Understand Performance-X Insight Dataset"
-icon = "fa-check-square-o" 
-weight = 2
+icon = "fa-line-chart" 
+weight = 1
 alwaysopen = false
 +++
 
