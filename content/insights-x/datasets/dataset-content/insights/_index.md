@@ -1,8 +1,8 @@
 +++
-title = "Insight Dataset"
-pagetitle = "Insights-X Insight Dataset"
-description = "Understand Insights-X Insight Dataset"
-icon = "fa-line-chart" 
+title = "Insights Dataset"
+pagetitle = "Insights Dataset"
+description = "Understand Insights-X Insights Dataset"
+icon = "fa-usd"
 weight = 2
 alwaysopen = false
 +++
