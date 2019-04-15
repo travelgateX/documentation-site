@@ -1849,6 +1849,11 @@ div.release-types.type-u > ul > li:nth-of-type(1)::before {
   background-color: rgb(202, 202, 202);
 }
 
+div.release-types.type-o > ul > li:nth-of-type(1)::before {
+  content: 'Orphan nodes';
+  background-color: rgb(0, 0, 0);
+}
+
 div.alert.alert-info + h3#unreleased {
   visibility: hidden;
   height: 0;

@@ -24,6 +24,7 @@ First of all, it's important to know that the benchmark is given by 3 period of 
 
 * Daily
 * Weekly (starts on monday)
+
 * Monthly
 
 and 3 levels of detail: 

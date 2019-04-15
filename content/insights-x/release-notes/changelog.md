@@ -20,6 +20,7 @@ Easily accessible log of notable changes to Insights-X
 
 {{% release-notes-container type="c"%}}
 * Benchmarck table daily\_benchmarking\_seller replaced by new ones benchmark [tables](/insights-x/datasets/concepts/dataset-content/benchmark/dataset-reference-benchmark/)
+
 {{% /release-notes-container %}}
 
 {{% release-notes-container type="a"%}}

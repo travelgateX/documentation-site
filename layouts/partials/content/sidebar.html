@@ -121,6 +121,13 @@
      return false;
     })
 
+    const hiddenPlaygroundUrls = ['/channelx/'];
+    const playground = $('#searchbar').find('div.sb_menu_div > ul').find('li').last();
+   
+    if(hiddenPlaygroundUrls.some(dir=>window.location.href.includes(dir))){
+      playground.hide();
+    }
+
     $('#menu').click((event)=>{
       if($('#navbar').hasClass('toogled')){
         $('#navbar').removeClass('toogled');
