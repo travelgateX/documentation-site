@@ -11,17 +11,17 @@ On this page you will learn how the data is stored in Performance Dataset.
 
 # Tables
 
-Data is stored in multiple tables depending on the kind of info that wants to be queried and depending on the level of aggregation:
+Data is stored in multiple tables depending on the kind of information that wants to be queried and depending on the level of aggregation:
 
 * Daily   (agregation stored every day)
-* Weekly  (aggregation stored in the first monday of every week)
-* Monthly (aggregation stored in the first day of the month)
+* Weekly  (aggregation stored the first monday of every week)
+* Monthly (aggregation stored the first day of the month)
 
 Descriptions of each table and their correspondent fields are found below:
 
 
 ## stats\_(daily|weekly|monthly)\_(buyer|seller)
-This table contains transactional info (response status, response time...) of requests between clients and providers.
+This table contains transactional information (e.g. response status, response time) of requests between clients and providers.
 
 __fields__
 
@@ -51,7 +51,7 @@ __fields__
 * **cancel\_ok (NUMBER).** Quantity of correct cancellations.
 * **cancel\_nok (NUMBER).** Quantity of cancellations with an error.
 * **cancel\_time (NUMBER).** Total response time (in milliseconds) for cancellations.
-* **other\_ok (NUMBER).** Quantity of transactions that cannot be included in one of above groups and that didn't get an error.
+* **other\_ok (NUMBER).** Quantity of transactions that cannot be included in one of the groups above and that didn't receive an error.
 * **other\_nok (NUMBER).** Quantity of other transactions with an error.
 * **other\_time (NUMBER).** Total response time (in milliseconds) for other transactions.
 
