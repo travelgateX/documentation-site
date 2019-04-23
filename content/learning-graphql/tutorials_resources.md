@@ -29,7 +29,7 @@ Enjoy it!
 
 - [GraphQL official documentation](http://graphql.org/learn/)
 - [Apollo](http://dev.apollodata.com/)
-- [Relay official documentation](http://facebook.github.io/relay/docs/getting-started.html) 
+- [Relay official documentation](https://facebook.github.io/relay/docs/en/introduction-to-relay.html) 
 - [Schema first development - Johannes Schickling](https://www.youtube.com/watch?v=SdWI7XaAeeY)
 - [Schema-first development with GraphQL](https://conferences.oreilly.com/fluent/fl-ca-2017/public/schedule/detail/58715)
 - [GraphQL First in practice at Quri](https://dev-blog.apollodata.com/graphql-first-in-practice-at-quri-7bf84b260135)
