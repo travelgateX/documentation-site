@@ -15,6 +15,126 @@ To make it easier for users and contributors to see precisely what notable chang
 
 {{% alert theme="info" %}}All notable changes to this product will be documented in this page.{{% /alert %}}
 
+## 2018-12-27
+
+{{% release-notes-container type="a"%}}
+- New static page on public web: Testimonials.
+- Backend: Added impersonation functionality
+- IAM: Added impersonation functionality to users list
+- Added recaptcha validation on contact and register page
+{{% /release-notes-container %}}
+
+{{% release-notes-container type="f"%}}
+- Solved a bug where the org-selector was not appearing in some situations
+{{% /release-notes-container %}}
+
+## 2018-12-13
+
+{{% release-notes-container type="a"%}}
+- New static pages on public web (People and Company)
+{{% /release-notes-container %}}
+
+{{% release-notes-container type="c"%}}
+- Backend Menú: icons revised
+{{% /release-notes-container %}}
+
+## 2018-11-29
+
+{{% release-notes-container type="a"%}}
+- User registration functionality 
+- Connect: Added suppliers to connect form legacy
+- Payment: Added an alert to see the code of the saved card after saving it
+- Payment: Search by name and surname
+- Profiles directory: Tags clickable and able to update filters
+{{% /release-notes-container %}}
+
+{{% release-notes-container type="c"%}}
+- Entites: Changed link client to add client
+{{% /release-notes-container %}}
+
+{{% release-notes-container type="f"%}}
+- Entities: Bug inducing duplicity on accesses fixed.
+- Applied Apollo GraphQL bugfix to [Official Apollo repository bug reported](https://github.com/apollographql/apollo-client/issues/4125)
+- Admin-Entities: Bug fix on supplier creation
+{{% /release-notes-container %}}
+
+## 2018-11-15
+
+{{% release-notes-container type="a"%}}
+- Admin-Entities: added unlink group from access
+- Admin-Entities: added edit suppliers
+- List with selected orgnization added to stats on header
+{{% /release-notes-container %}}
+
+{{% release-notes-container type="f"%}}
+- Partners directory: fixed filtering
+- Stats filtering reviewed
+{{% /release-notes-container %}}
+
+
+## 2018-11-07
+
+{{% release-notes-container type="c"%}}
+- General backend: Left accordion menu applied.
+- Stats results style changed.
+- Stats sellers tab style changed.
+{{% /release-notes-container %}}
+
+{{% release-notes-container type="f"%}}
+- Stats calculations reviewed and fixed.
+- Seller tab reviewed and fixed.
+{{% /release-notes-container %}}
+
+## 2018-10-31
+
+{{% release-notes-container type="f"%}}
+- Load stats problem solved.
+{{% /release-notes-container %}}
+
+## 2018-10-31
+
+{{% release-notes-container type="c"%}}
+- Changed Stats filters.
+{{% /release-notes-container %}}
+
+## 2018-10-26
+
+{{% release-notes-container type="c"%}}
+- Back end menu: Added connect.
+- Back end menu: Added admin-entities.
+- General Back end: Pagination improved.
+{{% /release-notes-container %}}
+
+## 2018-10-25
+
+{{% release-notes-container type="c"%}}
+- Search profile: Added search inputs.
+{{% /release-notes-container %}}
+
+## 2018-10-19
+
+{{% release-notes-container type="f"%}}
+- IAM: fixed a bug with the update of the permissions on a member.
+{{% /release-notes-container %}}
+
+## 2018-10-23
+
+{{% release-notes-container type="a"%}}
+- Added Hotel-X configuration page to the web.
+{{% /release-notes-container %}}
+
+## 2018-10-11
+
+{{% release-notes-container type="f"%}}
+- Members: fixed a bug with the update of the permissions on a member.
+{{% /release-notes-container %}}
+
+## 2018-10-10
+
+{{% release-notes-container type="a"%}}
+- Added Mastercard to Payment-X 
+{{% /release-notes-container %}}
+
 ## 2018-10-09
 
 {{% release-notes-container type="a"%}}
