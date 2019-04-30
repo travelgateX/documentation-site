@@ -15,6 +15,46 @@ To make it easier for users and contributors to see precisely what notable chang
 
 {{% alert theme="info" %}}All notable changes to this product will be documented in this page.{{% /alert %}}
 
+## 2019-02-12
+
+{{% release-notes-container type="a"%}}
+- Added pagination on IAM
+- Added first login wizard
+{{% /release-notes-container %}}
+
+{{% release-notes-container type="r"%}}
+- Button remove organization
+{{% /release-notes-container %}}
+
+## 2019-01-29
+
+{{% release-notes-container type="a"%}}
+- Connect: added selector to specify client
+{{% /release-notes-container %}}
+
+{{% release-notes-container type="f"%}}
+- HotelX: fixed issue with empty fields
+{{% /release-notes-container %}}
+
+{{% release-notes-container type="r"%}}
+- Removed old create access function
+{{% /release-notes-container %}}
+
+## 2019-01-10
+
+{{% release-notes-container type="a"%}}
+- HotelX configuration: Added access code to configuration form
+{{% /release-notes-container %}}
+
+{{% release-notes-container type="c"%}}
+- Backend: Vertical menú updated and reordered
+- New register page and welcome page
+{{% /release-notes-container %}}
+
+{{% release-notes-container type="f"%}}
+- Error handling moddified (changed error for adviseMessage in GraphQL Schema)
+{{% /release-notes-container %}}
+
 ## 2018-12-27
 
 {{% release-notes-container type="a"%}}
@@ -87,33 +127,16 @@ To make it easier for users and contributors to see precisely what notable chang
 
 ## 2018-10-31
 
-{{% release-notes-container type="f"%}}
-- Load stats problem solved.
-{{% /release-notes-container %}}
-
-## 2018-10-31
-
-{{% release-notes-container type="c"%}}
-- Changed Stats filters.
-{{% /release-notes-container %}}
-
-## 2018-10-26
-
 {{% release-notes-container type="c"%}}
 - Back end menu: Added connect.
 - Back end menu: Added admin-entities.
 - General Back end: Pagination improved.
-{{% /release-notes-container %}}
-
-## 2018-10-25
-
-{{% release-notes-container type="c"%}}
+- Changed Stats filters.
 - Search profile: Added search inputs.
 {{% /release-notes-container %}}
 
-## 2018-10-19
-
 {{% release-notes-container type="f"%}}
+- Load stats problem solved.
 - IAM: fixed a bug with the update of the permissions on a member.
 {{% /release-notes-container %}}
 
@@ -121,18 +144,11 @@ To make it easier for users and contributors to see precisely what notable chang
 
 {{% release-notes-container type="a"%}}
 - Added Hotel-X configuration page to the web.
+- Added Mastercard to Payment-X 
 {{% /release-notes-container %}}
-
-## 2018-10-11
 
 {{% release-notes-container type="f"%}}
 - Members: fixed a bug with the update of the permissions on a member.
-{{% /release-notes-container %}}
-
-## 2018-10-10
-
-{{% release-notes-container type="a"%}}
-- Added Mastercard to Payment-X 
 {{% /release-notes-container %}}
 
 ## 2018-10-09
