@@ -15,6 +15,87 @@ To make it easier for users and contributors to see precisely what notable chang
 
 {{% alert theme="info" %}}All notable changes to this product will be documented in this page.{{% /alert %}}
 
+## 2019-04-15
+
+{{% release-notes-container type="a"%}}
+- Stats: Column sorting
+- Stats: filter suppliers by clients on filter Buyer
+- HotelX: Added hotelx default settings screen
+- Backend: Added settings submenu
+- Backend: Profile list by organization
+- Organizations: Added edit organization page
+- IAM: Added option to clone members
+- Entities: Added owner to form in entities/suppliers
+- Public web: Added "Why partner with us" page
+- Connect: added drag and drop XML functionality
+{{% /release-notes-container %}}
+
+{{% release-notes-container type="c"%}}
+- Stats: Changed Filters
+- Stats: Circular mock-up of global stats
+- Stats: Ratios calculations revised
+- Stats: Change calendar component to allow manual settings
+- Backend nav-bar: Updated menú items reordered on all pages
+{{% /release-notes-container %}}
+
+{{% release-notes-container type="f"%}}
+- IAM-organizations: Solved a bug produced when trying to add/removes apis to/from a group
+- IAM-members: Solved bug with member deletion
+{{% /release-notes-container %}}
+
+## 2019-03-31
+
+{{% release-notes-container type="a"%}}
+- Hotel-b2b: Added close-booking and my-bookings logic
+- Hotel-b2b: Added items to menu
+- Hotel-b2b: Price comparator
+- Added provisional "test" button to new connect functionality
+- Activations: added supplier column
+- Connect: Added channelx option to forms
+- Old connect: Added fields to legacy form
+- Stats: Other requests added
+- Stats: Separate filter Buyer
+- Stats: add organizacitons and owners on filter by seller
+{{% /release-notes-container %}}
+
+{{% release-notes-container type="f"%}}
+- IAM-organizations: Solved a bug produced when trying to add/removes apis to/from a group
+{{% /release-notes-container %}}
+
+
+## 2019-03-14
+
+{{% release-notes-container type="a"%}}
+- added status cards to stats
+- Profiles edition
+- IAM: revoque/grant apis to a group
+{{% /release-notes-container %}}
+
+{{% release-notes-container type="c"%}}
+- B2B result page changes
+- Home footer: changed blog URL
+- Activations page modified style
+{{% /release-notes-container %}}
+
+{{% release-notes-container type="f"%}}
+- Solved an error not showing an error on create a duplicate member
+{{% /release-notes-container %}}
+
+## 2019-02-28
+
+{{% release-notes-container type="a"%}}
+- New application HotelX: B2B
+- Improved first login email validation
+{{% /release-notes-container %}}
+
+{{% release-notes-container type="c"%}}
+- Renamed product payment as HotelPay-X
+- Stats: revised date filter dropdown
+- Changed token treatment (accept very long tokens)
+- Profile section fetches groups to assign roles
+- Improved first login wizard UX
+{{% /release-notes-container %}}
+
 ## 2019-02-12
 
 {{% release-notes-container type="a"%}}

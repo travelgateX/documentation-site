@@ -151,7 +151,7 @@ translation authors keep things up-to-date.
 | Added | H3 | {{%/* release-notes-container type="a" */%}} LIST {{%/* / release-notes-container */%}}|
 | Changed | H3 | {{%/* release-notes-container type="c" */%}} LIST {{%/* / release-notes-container */%}} |   
 | Deprecated | H3 | {{%/* release-notes-container type="d" */%}} LIST {{%/* / release-notes-container */%}} |
-| Removed | H3 | {{%/* release-notes-container type="c" */%}} LIST {{%/* / release-notes-container */%}} |   
+| Removed | H3 | {{%/* release-notes-container type="r" */%}} LIST {{%/* / release-notes-container */%}} |   
 | Fixed | H3 | {{%/* release-notes-container type="f" */%}} LIST {{%/* / release-notes-container */%}} |   
 | Security | H3 | {{%/* release-notes-container type="s" */%}} LIST {{%/* / release-notes-container */%}} |   
 | Unreleased |  H2 | {{%/* release-notes-container type="u" */%}} LIST {{%/* / release-notes-container */%}} |   
