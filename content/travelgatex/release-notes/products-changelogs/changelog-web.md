@@ -15,6 +15,24 @@ To make it easier for users and contributors to see precisely what notable chang
 
 {{% alert theme="info" %}}All notable changes to this product will be documented in this page.{{% /alert %}}
 
+## 2019-04-30
+
+{{% release-notes-container type="a"%}}
+- IAM: Added option to clone members permissions to other users
+- Public page: Shuffle profiles on home
+- Stats: responsive media-querys applied
+- Connect: Added access code and client name to activations
+{{% /release-notes-container %}}
+
+{{% release-notes-container type="c"%}}
+- Connect: updated activations list and added istest to accesses
+{{% /release-notes-container %}}
+
+{{% release-notes-container type="f"%}}
+- Hotelx: Allowed empty fields in hotelx
+- IAM-teams: Fixed a bug that didn't allow to create teams
+{{% /release-notes-container %}}
+
 ## 2019-04-15
 
 {{% release-notes-container type="a"%}}
