@@ -13,6 +13,12 @@ tags = ["products-changelog"]
 Easily accessible log of notable changes to Stats-X
 
 
+## 2019-05-02
+
+{{% release-notes-container type="f"%}}
+- Input field `retrieveAssets` made optional. `false` by default.
+{{% /release-notes-container %}}
+
 ## 2019-04-30
 
 {{% release-notes-container type="a"%}}
