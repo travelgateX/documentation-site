@@ -15,6 +15,16 @@ Easily accessible log of notable changes to HotelX API
 {{% alert theme="info" %}}All notable changes in our platform will be documented on this page.{{% /alert %}}
 
 
+## 2019-05-02
+{{% release-notes-container type="a"%}}
+- Added search by legacy access codes in Hotel-List.
+- Added field filters in Hotel-List
+{{% /release-notes-container %}}
+
+{{% release-notes-container type="f"%}}
+- Deprecate type in GeonameData
+{{% /release-notes-container %}}
+
 ## 2019-03-07
 {{% release-notes-container type="a"%}}
 - Added CurrencyX management for the cancel penalties.
