@@ -13,6 +13,11 @@ tags = ["products-changelog"]
 Easily accessible log of notable changes to Stats-X
 
 
+## 2019-05-03
+{{% release-notes-container type="f"%}}
+- Fix an error that was causing that assets of HUB error types were NULL.
+{{% /release-notes-container %}}
+
 ## 2019-05-02
 
 {{% release-notes-container type="f"%}}
