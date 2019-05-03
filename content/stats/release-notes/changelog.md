@@ -51,7 +51,7 @@ Easily accessible log of notable changes to Stats-X
 
 ## 2019-04-03
 {{% release-notes-container type="a"%}}
-- `trafficType` in `OperationDetailed` added. Reason: To differentiate existents traffic types: BASIC, SPEED, OPTIMIZED.
+- `trafficType` in `OperationDetailed` added. Reason: To differentiate existent traffic types: BASIC, SPEED, OPTIMIZED.
 {{% /release-notes-container %}}
 
 ## 2019-03-14
