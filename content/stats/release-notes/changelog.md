@@ -1,7 +1,7 @@
 +++
 title = "Changelog"
 pagetitle = "Stats-X changelog"
-description = "Contains an accurated, chronologically-ordered list of notable changes"
+description = "Accurated, chronologically-ordered list of notable changes"
 weight = 2
 icon="fa-exchange"
 svgicon="https://media.graphcms.com/kDcxZmKCQx2oLNNfGvSz"
@@ -22,11 +22,11 @@ Easily accessible log of notable changes to Stats-X
 ## 2019-04-30
 
 {{% release-notes-container type="a"%}}
-- Added new required input field `retrieveAssets` to indicate if assets are needed.
+- New required input field `retrieveAssets` added to indicate if assets are needed.
 {{% /release-notes-container %}}
 
 {{% release-notes-container type="f"%}}
-- Assets returned limited to 100 to avoid too big responses. This limitation makes sense since the main objective is not to access to all the asset nodes.
+- Assets returned limited to 100 to avoid too big responses. This limitation makes sense since the main objective is not to access all the asset nodes.
 {{% /release-notes-container %}}
 
 ## 2019-04-23
@@ -36,13 +36,13 @@ Easily accessible log of notable changes to Stats-X
 
 ## 2019-04-11
 {{% release-notes-container type="f"%}}
-- Added new input field `owner` to allow filter by organization.
+- New input field `owner` added to allow filter by organization.
 {{% /release-notes-container %}}
 
 ## 2019-04-08
 {{% release-notes-container type="a"%}}
-- Added `label` in `OperationData`. Reason: Share the operation code in English.
-- Added `hits` in `StatsData`. Reason: Share a summary of hits at `StatsData` level.
+- `label` in `OperationData` added. Reason: Share the operation code in English.
+- `hits` in `StatsData` added. Reason: Share a summary of hits at `StatsData` level.
 {{% /release-notes-container %}}
 
 {{% release-notes-container type="c"%}}
@@ -51,7 +51,7 @@ Easily accessible log of notable changes to Stats-X
 
 ## 2019-04-03
 {{% release-notes-container type="a"%}}
-- Added `trafficType` in `OperationDetailed`. Reason: Differentiate existents traffic types: BASIC, SPEED, OPTIMIZED.
+- `trafficType` in `OperationDetailed` added. Reason: To differentiate existents traffic types: BASIC, SPEED, OPTIMIZED.
 {{% /release-notes-container %}}
 
 ## 2019-03-14
