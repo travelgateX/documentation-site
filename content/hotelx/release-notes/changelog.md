@@ -17,8 +17,8 @@ Easily accessible log of notable changes to HotelX API
 
 ## 2019-05-02
 {{% release-notes-container type="a"%}}
-- Added search by legacy access codes in Hotel-List.
-- Added field filters in Hotel-List
+- Added search by legacy access codes in Hotel List.
+- Added field filters in Hotel List
 {{% /release-notes-container %}}
 
 {{% release-notes-container type="f"%}}
@@ -47,16 +47,16 @@ Easily accessible log of notable changes to HotelX API
 ## 2019-02-12
 {{% release-notes-container type="a"%}}
 - Type HotelData introduces new field "GiataData". 
-- Internal, better performant, REST endpoint in Search operation. Field filters have been added to minimize the throughput, this wasn't necessary with graphql, filtered fields that have a relation with Legacy api are now also sent as filter.
+- Internal, better performant, REST endpoint in Search operation. Field filters have been added to minimize the throughput, this wasn't necessary with Graphql, filtered fields that have a relation with Legacy API are now also sent as filter.
 {{% /release-notes-container %}}
 
 {{% release-notes-container type="c"%}}
-Expire date of payment card in Book now accept the follow format, month: 1 digit or 2 digits, year: 4 digits or 2 digits
+Expire date of payment card in Book now accept the following format: month: 1 digit or 2 digits, year: 4 digits or 2 digits
 {{% /release-notes-container %}}
 
 ## 2019-02-04
 {{% release-notes-container type="f"%}}
-- Fix hotel-list and hotel-room EOF error, when elastic returns empty result.
+- Fix Hotel List and Hotel Room EOF error, when elastic returns empty result.
 {{% /release-notes-container %}}
 
 ## 2019-01-28
@@ -66,7 +66,7 @@ Expire date of payment card in Book now accept the follow format, month: 1 digit
 
 ## 2019-01-23
 {{% release-notes-container type="f"%}}
-- Fix the error of hotel-list and hotel-room when requesting more than one code.
+- Fix the error of Hotel List and Hotel Room when requesting more than one code.
 {{% /release-notes-container %}}
 
 
@@ -97,21 +97,21 @@ Expire date of payment card in Book now accept the follow format, month: 1 digit
 {{% /release-notes-container %}}
 
 {{% release-notes-container type="a"%}}
-- Added log if commission Fees is -1
+- Added log if commission Fee is -1
 {{% /release-notes-container %}}
 
 ## 2018-11-27
 
 {{% release-notes-container type="c"%}}
-- Ambiguous warning message in Book when supplier has not returned price
+- Ambiguous warning message in Book when supplier has not returned a price
 - Removed error nodes from Groups and Organization nodes
 - Removed log if amount is 0 in Fees node
 {{% /release-notes-container %}}
 
 ## 2018-11-20
 {{% release-notes-container type="a"%}}
-- Added geonames in Hotel-List
-- Added access code in book log in some special cases of commission
+- Added geonames in Hotel List
+- Added access code in Book log in some special cases of commission
 {{% /release-notes-container %}}
 
 {{% release-notes-container type="c"%}}
@@ -121,7 +121,7 @@ Expire date of payment card in Book now accept the follow format, month: 1 digit
 ## 2018-11-19
 {{% release-notes-container type="f"%}}
 - Fix Stats
-- Fix Hotels requested stats in Access and Transaction spans where the count wasn't correct in some cases
+- Fix Hotels requested stats in Access and Transaction spans in some cases where the count wasn't correct
 {{% /release-notes-container %}}
 
 {{% release-notes-container type="c"%}}
@@ -140,8 +140,8 @@ Expire date of payment card in Book now accept the follow format, month: 1 digit
 
 ## 2018-10-02
 {{% release-notes-container type="a"%}}
-- Allow relay at the query hotel
-- Count field in HotelConnection to retrieve the number of HotelEdges that match the filter, pagination doesn't affect Count.
+- Allow relay at the Query Hotels
+- Count field in HotelConnection to retrieve the number of HotelEdges that match the filter. Pagination does not affect Count.
 {{% /release-notes-container %}}
 
 ## 2018-09-25
@@ -150,7 +150,7 @@ Expire date of payment card in Book now accept the follow format, month: 1 digit
 {{% /release-notes-container %}}
 
 {{% release-notes-container type="f"%}}
-- Commission and currency rates are now keep unchanged between Quote and Book
+- Commission and currency rates are now kept unchanged between Quote and Book
 {{% /release-notes-container %}}
 
 {{% release-notes-container type="c"%}}
@@ -215,7 +215,7 @@ Expire date of payment card in Book now accept the follow format, month: 1 digit
 ## 2018-07-11
 
 {{% release-notes-container type="c"%}}
-- Improvement of the [`Rooms`](/travelgatex/reference/objects/hotelxquery/) Schema with paginated list and max number of elements per page. By defect are 1000 rooms.
+- Improvement of the [`Rooms`](/travelgatex/reference/objects/hotelxquery/) Schema with paginated list and max number of elements per page. By default: 1000 rooms.
 {{% /release-notes-container %}}
 
 ## 2018-07-04
