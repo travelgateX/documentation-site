@@ -10,9 +10,9 @@
 "gists": [
     {
         "n":"Buyer",
-        "g":"666b32bc15f794d941a0549f56576994",
+        "g":"122d8186fb0ed7d5d886b00b3081cecb",
         "o":["graphiql"],
-        "u":"tgx-bot",
+        "u":"bsmarcosj",
         "ak":"64780338-49c8-4439-7c7d-d03c2033b145"
     }, 
     {
@@ -34,9 +34,9 @@ Below are shown different examples for different casuistry:
 
 {{% graphiql-tabs %}}
 
-002160e4c2822635ef3b1a3c81b1d44d
-In this availability case, you will not receive results due to the hotel's restriction of minimum stay. In this case, if you change the date range to 3 days or more, you will receive availability
-/002160e4c2822635ef3b1a3c81b1d44d
+122d8186fb0ed7d5d886b00b3081cecb
+Testing
+/122d8186fb0ed7d5d886b00b3081cecb
 
 {{% /graphiql-tabs %}}
 
