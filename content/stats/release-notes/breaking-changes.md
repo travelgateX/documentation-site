@@ -15,10 +15,10 @@
 
 ## 2019-04-08
 {{% release-notes-container type="d"%}}
-- Deprecated `ratios` from `StatsData`. Reason: Sustituted by `hits`. Finally removed on 2019-07-08 .
+- Deprecated `ratios` from `StatsData`. Reason: Substituted by `hits`. Finally removed on 2019-07-08 .
 {{% /release-notes-container %}}
 
 ## 2019-04-03
 {{% release-notes-container type="d"%}}
-- Deprecated `cache` from `OperationDetailed`. Reason: Sustituted by `trafficType`. Finally removed on 2019-07-03 .
+- Deprecated `cache` from `OperationDetailed`. Reason: Substituted by `trafficType`. Finally removed on 2019-07-03 .
 {{% /release-notes-container %}}
