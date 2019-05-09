@@ -19,6 +19,10 @@ Easily accessible log of notable changes to HotelX API
 - fix error when default settings is not available
 {{% /release-notes-container %}}
 
+{{% release-notes-container type="f"%}}
+- improve stats
+{{% /release-notes-container %}}
+
 ## 2019-05-02
 {{% release-notes-container type="a"%}}
 - Added field filters in Hotel List
