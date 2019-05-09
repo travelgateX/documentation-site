@@ -18,7 +18,7 @@ If you don't have your own reporting tools as Tableau or PowerBI, the easiest wa
 | Dataset          | Version          | GDS Template  |
 | -------------    |:----------------:| -----------:  |
 | Partner buyer    | 1.0              |               |
-| Partner seller   | 1.0              |               |
+| Partner seller   | 1.1              |https://datastudio.google.com/s/nAuiuI9_l1M               |
 | Hotelier         | 1.0              |               |
 | Industry partner public | 1.0       |               |
 | Industry partner private | 1.0      |               |
