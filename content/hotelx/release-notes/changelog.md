@@ -14,6 +14,11 @@ Easily accessible log of notable changes to HotelX API
 
 {{% alert theme="info" %}}All notable changes in our platform will be documented on this page.{{% /alert %}}
 
+## 2019-05-13
+{{% release-notes-container type="f"%}}
+- Internal monitorization
+{{% /release-notes-container %}}
+
 ## 2019-05-09
 {{% release-notes-container type="f"%}}
 - Fix error when default settings is not available
