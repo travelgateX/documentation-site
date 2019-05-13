@@ -1,0 +1,2123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import namespace="Domain.Messages.Comun" />
+  <xs:element name="Attribute" nillable="true" type="Attribute" />
+  <xs:complexType name="Attribute">
+    <xs:attribute name="key" type="xs:string" />
+    <xs:attribute name="value" type="xs:string" />
+  </xs:complexType>
+  <xs:element name="Attributes" nillable="true" type="Attributes" />
+  <xs:complexType name="Attributes">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Attribute" type="Attribute" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ClientConfiguration" nillable="true" type="ClientConfiguration" />
+  <xs:complexType name="ClientConfiguration">
+    <xs:attribute name="agency" type="xs:string" />
+    <xs:attribute name="SellCurrency" type="xs:string" />
+  </xs:complexType>
+  <xs:element name="Credentials" nillable="true" type="Credentials" />
+  <xs:complexType name="Credentials">
+    <xs:sequence>
+      <xs:element minOccurs="1" maxOccurs="1" name="genericURL" nillable="true" type="xs:string" />
+      <xs:element minOccurs="1" maxOccurs="1" name="identificationURL" nillable="true" type="xs:string" />
+      <xs:element minOccurs="1" maxOccurs="1" name="availRateURL" nillable="true" type="xs:string" />
+      <xs:element minOccurs="1" maxOccurs="1" name="rateRuleURL" nillable="true" type="xs:string" />
+      <xs:element minOccurs="1" maxOccurs="1" name="vehResURL" nillable="true" type="xs:string" />
+      <xs:element minOccurs="1" maxOccurs="1" name="specificURLs" nillable="true" type="Attributes" />
+    </xs:sequence>
+    <xs:attribute name="officeId" type="xs:string" />
+    <xs:attribute name="IATACode" type="xs:string" />
+    <xs:attribute name="user" type="xs:string" />
+    <xs:attribute name="password" type="xs:string" />
+  </xs:complexType>
+  <xs:element name="Configuration" nillable="true" type="Configuration" />
+  <xs:complexType name="Configuration">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="Credentials" type="Credentials" />
+      <xs:element minOccurs="0" maxOccurs="1" name="Attributes" type="Attributes" />
+    </xs:sequence>
+    <xs:attribute name="ProviderCode" type="xs:string" />
+  </xs:complexType>
+  <xs:element name="CarBaseRQ" nillable="true" type="CarBaseRQ" />
+  <xs:complexType name="CarBaseRQ" abstract="true">
+    <xs:complexContent mixed="false">
+      <xs:extension base="BaseRQ">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="1" name="Configuration" type="Configuration" />
+          <xs:element minOccurs="0" maxOccurs="1" name="ClientConfiguration" type="ClientConfiguration" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="BaseRQ">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="echoToken" type="xs:string" />
+      <xs:element minOccurs="1" maxOccurs="1" name="timeoutMilliseconds" type="xs:int" />
+      <xs:element minOccurs="0" maxOccurs="1" name="source" type="Source" />
+      <xs:element minOccurs="0" maxOccurs="1" name="filterAuditData" type="FilterAuditData" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="Source">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="agencyCode" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="languageCode" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="FilterAuditData">
+    <xs:sequence>
+      <xs:element minOccurs="1" maxOccurs="1" name="registerTransactions" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CarBaseRS" nillable="true" type="CarBaseRS" />
+  <xs:complexType name="CarBaseRS" abstract="true">
+    <xs:complexContent mixed="false">
+      <xs:extension base="BaseRS">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="1" name="Success" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="Warnings" type="Warnings" />
+          <xs:element minOccurs="0" maxOccurs="1" name="Errors" type="Errors" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="BaseRS">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="echoToken" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="auditData" type="AuditData" />
+      <xs:element minOccurs="1" maxOccurs="1" name="operationImplemented" type="xs:boolean" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="applicationErrors" type="ApplicationError" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="AuditData">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="transactions" type="Transaction" />
+      <xs:element minOccurs="1" maxOccurs="1" name="timeStamp" type="xs:dateTime" />
+      <xs:element minOccurs="1" maxOccurs="1" name="processTimeMilliseconds" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="Transaction">
+    <xs:sequence>
+      <xs:element minOccurs="1" maxOccurs="1" name="timeStamp" type="xs:dateTime" />
+      <xs:element minOccurs="0" maxOccurs="1" name="RQ" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="RS" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ApplicationError">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="code" type="xs:string" />
+      <xs:element minOccurs="1" maxOccurs="1" name="type" type="xs:int" />
+      <xs:element minOccurs="0" maxOccurs="1" name="description" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="Warnings">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Warning" type="Warning" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="Warning">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute name="Code" type="xs:string" />
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="Errors">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Error" type="MyError" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="MyError">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute name="Code" type="errorCodesType" use="required" />
+        <xs:attribute name="ShortText" type="xs:string" />
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:simpleType name="errorCodesType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="101" />
+      <xs:enumeration value="102" />
+      <xs:enumeration value="207" />
+      <xs:enumeration value="208" />
+      <xs:enumeration value="104" />
+      <xs:enumeration value="204" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="OTA_VehCancelRQ" nillable="true" type="OTA_VehCancelRQ" />
+  <xs:complexType name="OTA_VehCancelRQ">
+    <xs:complexContent mixed="false">
+      <xs:extension base="CarBaseRQ">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="1" name="POS" type="Pos" />
+          <xs:element minOccurs="0" maxOccurs="1" name="VehCancelRQCore" type="CancelInfoRQ" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="Pos">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Source" type="SourceOTA" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="SourceOTA">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="RequestorID" type="RequestorID" />
+    </xs:sequence>
+    <xs:attribute name="ISOCountry" type="xs:string" />
+  </xs:complexType>
+  <xs:complexType name="RequestorID">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="CompanyName" type="CompanyName" />
+    </xs:sequence>
+    <xs:attribute name="Type" type="xs:string" />
+    <xs:attribute name="ID" type="xs:string" />
+  </xs:complexType>
+  <xs:complexType name="CompanyName">
+    <xs:attribute name="Code" type="xs:string" />
+    <xs:attribute name="ExternalCode" type="xs:string" />
+    <xs:attribute name="CompanyShortName" type="xs:string" />
+  </xs:complexType>
+  <xs:complexType name="CancelInfoRQ">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="UniqueID" type="UniqueID" />
+      <xs:element minOccurs="0" maxOccurs="1" name="PersonName" type="PersonName" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="UniqueID">
+    <xs:attribute name="ID" type="xs:string" />
+    <xs:attribute name="Type" type="eUniqueIdType" use="required" />
+  </xs:complexType>
+  <xs:simpleType name="eUniqueIdType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="1" />
+      <xs:enumeration value="3" />
+      <xs:enumeration value="4" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:complexType name="PersonName">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="GivenName" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="Surname" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="OTA_VehCancelRS" nillable="true" type="OTA_VehCancelRS" />
+  <xs:complexType name="OTA_VehCancelRS">
+    <xs:complexContent mixed="false">
+      <xs:extension base="CarBaseRS">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="1" name="VehCancelRSCore" type="VehCancelRSCore" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="VehCancelRSCore">
+    <xs:complexContent mixed="false">
+      <xs:extension base="CancelInfoRS">
+        <xs:attribute name="CancelStatus" type="eTransactionStatusType" use="required" />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="CancelInfoRS">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="CancelRules" type="ArrayOfCancelRule" />
+      <xs:element minOccurs="0" maxOccurs="1" name="UniqueID" type="UniqueID" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ArrayOfCancelRule">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="CancelRule" nillable="true" type="CancelRule" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="CancelRule">
+    <xs:attribute name="Amount" type="xs:decimal" use="required" />
+    <xs:attribute name="CurrencyCode" type="xs:string" />
+  </xs:complexType>
+  <xs:simpleType name="eTransactionStatusType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="UNSUCCESSFUL" />
+      <xs:enumeration value="REQUESTED" />
+      <xs:enumeration value="RESERVED" />
+      <xs:enumeration value="CANCELLED" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="VehCancelRSCore" nillable="true" type="VehCancelRSCore" />
+  <xs:element name="Address" nillable="true" type="Address" />
+  <xs:complexType name="Address">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="AddressLine" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="CityName" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="PostalCode" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="CountryName" type="CountryName" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="CountryName">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute name="Code" type="xs:string" />
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:element name="AddressInfo" nillable="true" type="AddressInfo" />
+  <xs:complexType name="AddressInfo">
+    <xs:complexContent mixed="false">
+      <xs:extension base="Address" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ArrivalDetails" nillable="true" type="ArrivalDetails" />
+  <xs:complexType name="ArrivalDetails">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="OperatingCompany" type="OperatingCompany" />
+      <xs:element minOccurs="0" maxOccurs="1" name="ArrivalLocation" type="ArrivalLocation" />
+    </xs:sequence>
+    <xs:attribute name="TransportationCode" type="eTransportationType" use="required" />
+    <xs:attribute name="Number" type="xs:string" />
+    <xs:attribute name="ArrivalDateTime" type="xs:string" />
+  </xs:complexType>
+  <xs:complexType name="OperatingCompany">
+    <xs:attribute name="Code" type="xs:string" />
+  </xs:complexType>
+  <xs:complexType name="ArrivalLocation">
+    <xs:attribute name="CodeContext" type="xs:string" />
+    <xs:attribute name="LocationCode" type="xs:string" />
+  </xs:complexType>
+  <xs:simpleType name="eTransportationType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="BICYCLE" />
+      <xs:enumeration value="BOAT" />
+      <xs:enumeration value="BUS" />
+      <xs:enumeration value="CABLE_CAR" />
+      <xs:enumeration value="CAR" />
+      <xs:enumeration value="CARRIAGE" />
+      <xs:enumeration value="COURTESY_CAR" />
+      <xs:enumeration value="HELICOPTER" />
+      <xs:enumeration value="LIMOUSINE" />
+      <xs:enumeration value="METRO" />
+      <xs:enumeration value="MONORAIL" />
+      <xs:enumeration value="MOTORBYKE" />
+      <xs:enumeration value="PACK_ANIMAL" />
+      <xs:enumeration value="PLANE" />
+      <xs:enumeration value="RENTAL_CAR" />
+      <xs:enumeration value="RICKSHAW" />
+      <xs:enumeration value="SHUTTLE" />
+      <xs:enumeration value="SUBWAY" />
+      <xs:enumeration value="SEDAN_CHAIR" />
+      <xs:enumeration value="TAXI" />
+      <xs:enumeration value="TRAIN" />
+      <xs:enumeration value="TROLLEY" />
+      <xs:enumeration value="TUBE" />
+      <xs:enumeration value="WALK" />
+      <xs:enumeration value="WATER_TAXI" />
+      <xs:enumeration value="OTHER_ALTERNATIVE" />
+      <xs:enumeration value="CAR_RUSH_HOUR" />
+      <xs:enumeration value="TAX_RUSH_HOUR" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="OperatingCompany" nillable="true" type="OperatingCompany" />
+  <xs:element name="ArrivalLocation" nillable="true" type="ArrivalLocation" />
+  <xs:element name="Calculation" nillable="true" type="Calculation" />
+  <xs:complexType name="Calculation">
+    <xs:attribute name="applicability" type="eCalculationApplicabilityType" />
+    <xs:attribute name="maxQuantity" type="xs:int" />
+    <xs:attribute name="percentage" type="xs:decimal" />
+    <xs:attribute name="quantity" type="xs:int" />
+    <xs:attribute name="total" type="xs:decimal" />
+    <xs:attribute name="unitCharge" type="xs:decimal" />
+    <xs:attribute name="unitName" type="eVehicleUnitNameType" />
+  </xs:complexType>
+  <xs:simpleType name="eCalculationApplicabilityType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="AfterDropoff" />
+      <xs:enumeration value="BeforePickup" />
+      <xs:enumeration value="FromDropoffLocation" />
+      <xs:enumeration value="FromPickupLocation" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="eVehicleUnitNameType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Bundle" />
+      <xs:enumeration value="Day" />
+      <xs:enumeration value="ExtraDay" />
+      <xs:enumeration value="ExtraHour" />
+      <xs:enumeration value="ExtraMonth" />
+      <xs:enumeration value="ExtraWeek" />
+      <xs:enumeration value="Hour" />
+      <xs:enumeration value="Month" />
+      <xs:enumeration value="Package" />
+      <xs:enumeration value="RentalPeriod" />
+      <xs:enumeration value="Week" />
+      <xs:enumeration value="Weekend" />
+      <xs:enumeration value="Year" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="CancelInfoRQ" nillable="true" type="CancelInfoRQ" />
+  <xs:element name="CancelInfoRS" nillable="true" type="CancelInfoRS" />
+  <xs:element name="CancelPenalties" nillable="true" type="CancelPenalties" />
+  <xs:complexType name="CancelPenalties">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="CancelPenalty" type="CancelPenalty" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="CancelPenalty">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Description" type="xs:string" />
+    </xs:sequence>
+    <xs:attribute name="Amount" type="xs:decimal" use="required" />
+    <xs:attribute name="DateFrom" type="xs:dateTime" use="required" />
+    <xs:attribute name="PenaltyType" type="ePenaltyType" use="required" />
+    <xs:attribute name="NoRefundable" type="xs:boolean" use="required" />
+  </xs:complexType>
+  <xs:simpleType name="ePenaltyType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="PERCENTUAL" />
+      <xs:enumeration value="PER_DAY" />
+      <xs:enumeration value="TOTAL_AMOUNT" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="CancelPenalty" nillable="true" type="CancelPenalty" />
+  <xs:element name="CancelRule" nillable="true" type="CancelRule" />
+  <xs:element name="ChargeList" nillable="true" type="ChargeList" />
+  <xs:complexType name="ChargeList">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Charge" type="VehicleChargePurpose" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="VehicleChargePurpose">
+    <xs:complexContent mixed="false">
+      <xs:extension base="VehicleChargeType">
+        <xs:attribute name="Purpose" type="eVehicleChargePurposeType" use="required" />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="VehicleChargeType">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="Calculation" type="Calculation" />
+      <xs:element minOccurs="0" maxOccurs="1" name="Description" type="Description" />
+    </xs:sequence>
+    <xs:attribute name="Amount" type="xs:decimal" use="required" />
+    <xs:attribute name="CurrencyCode" type="xs:string" />
+    <xs:attribute name="TaxInclusive" type="xs:boolean" use="required" />
+    <xs:attribute name="IncludedInRate" type="xs:boolean" use="required" />
+  </xs:complexType>
+  <xs:complexType name="Description">
+    <xs:simpleContent>
+      <xs:extension base="xs:string" />
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:simpleType name="eVehicleChargePurposeType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="VEHICLE_RENTAL" />
+      <xs:enumeration value="DROP" />
+      <xs:enumeration value="DISCOUNT" />
+      <xs:enumeration value="COVERAGE" />
+      <xs:enumeration value="SURCHARGE" />
+      <xs:enumeration value="FEE" />
+      <xs:enumeration value="TAX" />
+      <xs:enumeration value="ADDITIONAL_DISTANCE" />
+      <xs:enumeration value="ADDITIONAL_WEEK" />
+      <xs:enumeration value="ADDITIONAL_DAY" />
+      <xs:enumeration value="ADDITIONAL_HOUR" />
+      <xs:enumeration value="ADDITIONAL_DRIVE" />
+      <xs:enumeration value="YOUNG_DRIVER" />
+      <xs:enumeration value="YOUNGER_DRIVER" />
+      <xs:enumeration value="SENIOR" />
+      <xs:enumeration value="CUSTOMER_PICKUP" />
+      <xs:enumeration value="CUSTOMER_DROP_OFF" />
+      <xs:enumeration value="VEHICLE_DELIVERY" />
+      <xs:enumeration value="VEHICLE_COLLECTION" />
+      <xs:enumeration value="FUEL" />
+      <xs:enumeration value="EQUIPMENT" />
+      <xs:enumeration value="PREPAY_AMOUNT" />
+      <xs:enumeration value="PAY_ON_ARRIVAL_AMOUNT" />
+      <xs:enumeration value="PREPAID_FUEL" />
+      <xs:enumeration value="ADJUSTMENT" />
+      <xs:enumeration value="MANDATORY_CHARGES_TOTAL" />
+      <xs:enumeration value="SUBTOTAL" />
+      <xs:enumeration value="OPTIONAL_T" />
+      <xs:enumeration value="CONTRACT_FEE" />
+      <xs:enumeration value="AIRPORT_SUBCHARGE" />
+      <xs:enumeration value="AIR_CONDITIONING_SURCHARGE" />
+      <xs:enumeration value="REGISTRATION_FEE" />
+      <xs:enumeration value="VEHICLE_LICENCE_FEE" />
+      <xs:enumeration value="WINTER_SERVICE_CHARGE" />
+      <xs:enumeration value="BASE_RATE" />
+      <xs:enumeration value="MANDATORY" />
+      <xs:enumeration value="RATE_OVERRIDE" />
+      <xs:enumeration value="TOLLS" />
+      <xs:enumeration value="EXTRA_PASSENGERS" />
+      <xs:enumeration value="STOP_T" />
+      <xs:enumeration value="EXTRA_STOP" />
+      <xs:enumeration value="WAIT_TIME" />
+      <xs:enumeration value="SURFACE_TRANSPORTATION_CHARGE" />
+      <xs:enumeration value="TIP" />
+      <xs:enumeration value="GRATUITY" />
+      <xs:enumeration value="STANDARD_GRATUITY" />
+      <xs:enumeration value="EXTRA_GRATUITY" />
+      <xs:enumeration value="PARKING" />
+      <xs:enumeration value="AIRPORT_FEE" />
+      <xs:enumeration value="FUEL_SURCHARGE" />
+      <xs:enumeration value="MEET_GREET" />
+      <xs:enumeration value="GREETER" />
+      <xs:enumeration value="REPRESENTATIVE" />
+      <xs:enumeration value="PHONE" />
+      <xs:enumeration value="CLEANING_FEE" />
+      <xs:enumeration value="TRAVEL_TIME_FEE" />
+      <xs:enumeration value="EARLY_AM_FEE" />
+      <xs:enumeration value="CAR_SEAT_FEE" />
+      <xs:enumeration value="PUSH_CART" />
+      <xs:enumeration value="LATE_PM_FEE" />
+      <xs:enumeration value="HOLIDAY_SURCHARGE" />
+      <xs:enumeration value="PET_SURCHARGE" />
+      <xs:enumeration value="STATE_SURCHARGE" />
+      <xs:enumeration value="AIRPORT_ACCESS_FEE" />
+      <xs:enumeration value="CITY_TAX" />
+      <xs:enumeration value="SERVICE_CHARGE" />
+      <xs:enumeration value="PREMIUM_LOCATION_SURCHARGE" />
+      <xs:enumeration value="LICENSE_RECOUPMENT_FEE" />
+      <xs:enumeration value="TOURISM_CHARGE" />
+      <xs:enumeration value="CONCESSION_FEE" />
+      <xs:enumeration value="CUSTOMER_FACILITY_CHARGE" />
+      <xs:enumeration value="MOTOR_VEHICLE_CHARGE" />
+      <xs:enumeration value="AIRPORT_CONCESSION_FEE_RECOVERY" />
+      <xs:enumeration value="FACILITY_FEE" />
+      <xs:enumeration value="GOODS_AND_SERVICE_FEE" />
+      <xs:enumeration value="CONCESSION_RECOVERY_FEE" />
+      <xs:enumeration value="BORDER_CROSSING_FEE" />
+      <xs:enumeration value="COUNTY_TAX" />
+      <xs:enumeration value="LOCATION_CUSTOMER_FEE" />
+      <xs:enumeration value="INFANT_CHILD_RESTRAINT_DEVICE_SURCHARGE" />
+      <xs:enumeration value="REFUELING_SURCHARGE" />
+      <xs:enumeration value="OUT_OF_HOURS_FEE" />
+      <xs:enumeration value="ADMINISTRATION_FEE" />
+      <xs:enumeration value="MAINTENANCE_FACILITY_FEE" />
+      <xs:enumeration value="ENERGY_SURCHARGE" />
+      <xs:enumeration value="VEHICLE_MAINTENANCE_FEE" />
+      <xs:enumeration value="TIRE_MANAGEMENT_FEE" />
+      <xs:enumeration value="TIRE_AND_BATTERY_FEE" />
+      <xs:enumeration value="LESSOR_TAX" />
+      <xs:enumeration value="AGE_DIFFERENTIAL" />
+      <xs:enumeration value="GOVERNMENT_RENTAL_SURCHARGE" />
+      <xs:enumeration value="GROSS_RECEIPTS_FEE" />
+      <xs:enumeration value="REIMBURSEMENT_FEE" />
+      <xs:enumeration value="U_DIRVE_IT_FEE" />
+      <xs:enumeration value="SECURITY_FEE" />
+      <xs:enumeration value="GOVERNMENT_RATE_SUPPLEMENT" />
+      <xs:enumeration value="ROAD_SAFETY_PROGRAM_FEE" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="CitizenCountryNameGroup" nillable="true" type="CitizenCountryNameGroup" />
+  <xs:complexType name="CitizenCountryNameGroup">
+    <xs:attribute name="Code" type="xs:string" />
+  </xs:complexType>
+  <xs:element name="CompanyName" nillable="true" type="CompanyName" />
+  <xs:element name="CompanyNamePref" nillable="true" type="CompanyNamePref" />
+  <xs:complexType name="CompanyNamePref">
+    <xs:complexContent mixed="false">
+      <xs:extension base="CompanyName" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ConfID" nillable="true" type="ConfID" />
+  <xs:complexType name="ConfID">
+    <xs:complexContent mixed="false">
+      <xs:extension base="UniqueID" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CountryName" nillable="true" type="CountryName" />
+  <xs:element name="Coverage" nillable="true" type="Coverage" />
+  <xs:complexType name="Coverage">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="Details" type="Details" />
+    </xs:sequence>
+    <xs:attribute name="CoverageType" type="xs:string" />
+    <xs:attribute name="Code" type="xs:string" />
+  </xs:complexType>
+  <xs:complexType name="Details">
+    <xs:simpleContent>
+      <xs:extension base="xs:string" />
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:element name="Customer" nillable="true" type="Customer" />
+  <xs:complexType name="Customer">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="PersonName" type="PersonName" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Telephone" type="Telephone" />
+      <xs:element minOccurs="0" maxOccurs="1" name="Email" type="Email" />
+      <xs:element minOccurs="0" maxOccurs="1" name="Document" type="Document" />
+      <xs:element minOccurs="0" maxOccurs="1" name="Address" type="Address" />
+      <xs:element minOccurs="0" maxOccurs="1" name="CitizenCountryName" type="CitizenCountryNameGroup" />
+    </xs:sequence>
+    <xs:attribute name="BirthDate" type="xs:string" />
+  </xs:complexType>
+  <xs:complexType name="Telephone">
+    <xs:complexContent mixed="false">
+      <xs:extension base="TelephoneAttributesGroup" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="TelephoneAttributesGroup">
+    <xs:attribute name="PhoneTechType" type="ePhoneTechnologyType" use="required" />
+    <xs:attribute name="PhoneNumber" type="xs:string" />
+  </xs:complexType>
+  <xs:simpleType name="ePhoneTechnologyType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="VOICE" />
+      <xs:enumeration value="DATA" />
+      <xs:enumeration value="FAX" />
+      <xs:enumeration value="PAGER" />
+      <xs:enumeration value="MOBILE" />
+      <xs:enumeration value="TTY" />
+      <xs:enumeration value="TELEX" />
+      <xs:enumeration value="VOICE_OVER_IP" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:complexType name="Email">
+    <xs:simpleContent>
+      <xs:extension base="xs:string" />
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="Document">
+    <xs:attribute name="DocID" type="xs:string" />
+    <xs:attribute name="DocType" type="eDocumentType" use="required" />
+  </xs:complexType>
+  <xs:simpleType name="eDocumentType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="PASSPORT" />
+      <xs:enumeration value="NATIONAL_IDENTITY_DOCUMENT" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="CustomerPrimaryAdditional" nillable="true" type="CustomerPrimaryAdditional" />
+  <xs:complexType name="CustomerPrimaryAdditional">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="Primary" type="Primary" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="Primary">
+    <xs:complexContent mixed="false">
+      <xs:extension base="Customer" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Deductible" nillable="true" type="Deductible" />
+  <xs:complexType name="Deductible">
+    <xs:attribute name="excessAmount" type="xs:decimal" />
+    <xs:attribute name="liabilityAmount" type="xs:decimal" />
+  </xs:complexType>
+  <xs:element name="Description" nillable="true" type="Description" />
+  <xs:element name="Details" nillable="true" type="Details" />
+  <xs:element name="Document" nillable="true" type="Document" />
+  <xs:element name="DriverType" nillable="true" type="DriverType" />
+  <xs:complexType name="DriverType">
+    <xs:attribute name="Age" type="xs:int" use="required" />
+  </xs:complexType>
+  <xs:element name="Email" nillable="true" type="Email" />
+  <xs:element name="Errors" nillable="true" type="Errors" />
+  <xs:element name="MyError" nillable="true" type="MyError" />
+  <xs:element name="Fees" nillable="true" type="Fees" />
+  <xs:complexType name="Fees">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Fee" type="Fee" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="Fee">
+    <xs:attribute name="Amount" type="xs:string" />
+    <xs:attribute name="CurrencyCode" type="xs:string" />
+    <xs:attribute name="IncludedInRate" type="xs:boolean" use="required" />
+    <xs:attribute name="IncludedInEstTotalInd" type="xs:boolean" use="required" />
+    <xs:attribute name="TaxInclusive" type="xs:boolean" use="required" />
+    <xs:attribute name="Description" type="xs:string" />
+  </xs:complexType>
+  <xs:element name="Fee" nillable="true" type="Fee" />
+  <xs:element name="FormattedText" nillable="true" type="FormattedText" />
+  <xs:complexType name="FormattedText">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="Tittle" type="xs:string" />
+      <xs:element minOccurs="1" maxOccurs="1" name="Language" type="eLanguageType" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="SubSection" type="FormattedTextSubSection" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:simpleType name="eLanguageType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="es" />
+      <xs:enumeration value="pt" />
+      <xs:enumeration value="it" />
+      <xs:enumeration value="fr" />
+      <xs:enumeration value="de" />
+      <xs:enumeration value="en" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:complexType name="FormattedTextSubSection">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Paragraph" type="Paragraph" />
+    </xs:sequence>
+    <xs:attribute name="SubTitle" type="xs:string" />
+  </xs:complexType>
+  <xs:complexType name="Paragraph">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ListItem" type="FormattedTextText" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="FormattedTextText">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute name="TextFormat" type="eTextFormatType" use="required" />
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:simpleType name="eTextFormatType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="PLAIN_TEXT" />
+      <xs:enumeration value="HTML" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="FormattedTextSubSection" nillable="true" type="FormattedTextSubSection" />
+  <xs:element name="FormattedTextText" nillable="true" type="FormattedTextText" />
+  <xs:element name="FuelPolicies" nillable="true" type="FuelPolicies" />
+  <xs:complexType name="FuelPolicies">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="FuelPolicy" type="FuelPolicy" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="FuelPolicy">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="ChargeList" type="ChargeList" />
+    </xs:sequence>
+    <xs:attribute name="Type" type="eFuelPolicyType" use="required" />
+  </xs:complexType>
+  <xs:simpleType name="eFuelPolicyType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="UNKNOWN" />
+      <xs:enumeration value="FF" />
+      <xs:enumeration value="FE" />
+      <xs:enumeration value="EE" />
+      <xs:enumeration value="HE" />
+      <xs:enumeration value="QE" />
+      <xs:enumeration value="HH" />
+      <xs:enumeration value="QQ" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="FuelPolicy" nillable="true" type="FuelPolicy" />
+  <xs:element name="IncludedTax" nillable="true" type="IncludedTax" />
+  <xs:complexType name="IncludedTax">
+    <xs:attribute name="id" type="eTaxId" use="required" />
+  </xs:complexType>
+  <xs:simpleType name="eTaxId">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="V" />
+      <xs:enumeration value="G" />
+      <xs:enumeration value="O" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="IncludedTaxes" nillable="true" type="IncludedTaxes" />
+  <xs:complexType name="IncludedTaxes">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="IncludedTax" type="IncludedTax" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ItemSearchCriterionType" nillable="true" type="ItemSearchCriterionType" />
+  <xs:complexType name="ItemSearchCriterionType">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="Position" type="Position" />
+      <xs:element minOccurs="0" maxOccurs="1" name="RefPoint" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="Position">
+    <xs:complexContent mixed="false">
+      <xs:extension base="PositionGroup" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="PositionGroup">
+    <xs:attribute name="Latitude" type="xs:string" />
+    <xs:attribute name="Longitude" type="xs:string" />
+  </xs:complexType>
+  <xs:element name="Position" nillable="true" type="Position" />
+  <xs:element name="Location" nillable="true" type="Location" />
+  <xs:complexType name="Location">
+    <xs:attribute name="LocationCode" type="xs:string" />
+    <xs:attribute name="CodeContext" type="eLocationCodeContextType" use="required" />
+  </xs:complexType>
+  <xs:simpleType name="eLocationCodeContextType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="IATA" />
+      <xs:enumeration value="CITY" />
+      <xs:enumeration value="OFFICE" />
+      <xs:enumeration value="GEOCODE" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="NameOptionalCodeGroup" nillable="true" type="NameOptionalCodeGroup" />
+  <xs:complexType name="NameOptionalCodeGroup">
+    <xs:attribute name="Name" type="xs:string" />
+    <xs:attribute name="Code" type="xs:string" />
+  </xs:complexType>
+  <xs:element name="OperationSchedule" nillable="true" type="OperationSchedule" />
+  <xs:complexType name="OperationSchedule">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="OperationTimes" type="OperationTimes" />
+    </xs:sequence>
+    <xs:attribute name="Start" type="xs:dateTime" use="required" />
+    <xs:attribute name="End" type="xs:dateTime" use="required" />
+  </xs:complexType>
+  <xs:complexType name="OperationTimes">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="OperationTime" type="OperationTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="OperationTime">
+    <xs:attribute name="Type" type="eOperationTimeType" use="required" />
+    <xs:attribute name="Start" type="xs:string" />
+    <xs:attribute name="End" type="xs:string" />
+    <xs:attribute name="Mon" type="xs:boolean" use="required" />
+    <xs:attribute name="Tue" type="xs:boolean" use="required" />
+    <xs:attribute name="Weds" type="xs:boolean" use="required" />
+    <xs:attribute name="Thur" type="xs:boolean" use="required" />
+    <xs:attribute name="Fri" type="xs:boolean" use="required" />
+    <xs:attribute name="Sat" type="xs:boolean" use="required" />
+    <xs:attribute name="Sun" type="xs:boolean" use="required" />
+  </xs:complexType>
+  <xs:simpleType name="eOperationTimeType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Normal" />
+      <xs:enumeration value="After_Hours" />
+      <xs:enumeration value="Unspecified" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="OperationSchedules" nillable="true" type="OperationSchedules" />
+  <xs:complexType name="OperationSchedules">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="OperationSchedule" type="OperationSchedule" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="OperationTime" nillable="true" type="OperationTime" />
+  <xs:element name="OperationTimes" nillable="true" type="OperationTimes" />
+  <xs:element name="Paragraph" nillable="true" type="Paragraph" />
+  <xs:element name="PaymentRules" nillable="true" type="PaymentRules" />
+  <xs:complexType name="PaymentRules">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="PaymentRule" type="PaymentRule" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="PaymentRule">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute name="RuleType" type="xs:string" />
+        <xs:attribute name="CurrencyCode" type="xs:string" />
+        <xs:attribute name="Amount" type="xs:string" />
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:element name="PaymentRule" nillable="true" type="PaymentRule" />
+  <xs:element name="PersonName" nillable="true" type="PersonName" />
+  <xs:element name="Pos" nillable="true" type="Pos" />
+  <xs:element name="PositionGroup" nillable="true" type="PositionGroup" />
+  <xs:element name="PricedCoverage" nillable="true" type="PricedCoverage" />
+  <xs:complexType name="PricedCoverage">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="Coverage" type="Coverage" />
+      <xs:element minOccurs="0" maxOccurs="1" name="Charge" type="VehicleChargeType" />
+      <xs:element minOccurs="0" maxOccurs="1" name="Deductible" type="Deductible" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PricedCoverages" nillable="true" type="PricedCoverages" />
+  <xs:complexType name="PricedCoverages">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="PricedCoverage" type="PricedCoverage" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Primary" nillable="true" type="Primary" />
+  <xs:element name="RateQualifier" nillable="true" type="RateQualifier" />
+  <xs:complexType name="RateQualifier">
+    <xs:complexContent mixed="false">
+      <xs:extension base="RateQualifierCoreGroup" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="RateQualifierCoreGroup">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="IncludedTaxes" type="IncludedTaxes" />
+    </xs:sequence>
+    <xs:attribute name="RateCategory" type="xs:string" />
+    <xs:attribute name="CorpDiscountNmbr" type="xs:string" />
+    <xs:attribute name="RateQualifier" type="xs:string" />
+  </xs:complexType>
+  <xs:element name="RateQualifierCoreGroup" nillable="true" type="RateQualifierCoreGroup" />
+  <xs:element name="RateRestrictions" nillable="true" type="RateRestrictions" />
+  <xs:complexType name="RateRestrictions">
+    <xs:attribute name="AdvancedBookingInd" type="xs:boolean" use="required" />
+    <xs:attribute name="ArriveByFlight" type="xs:boolean" use="required" />
+    <xs:attribute name="CancellationPenaltyInd" type="xs:boolean" use="required" />
+    <xs:attribute name="CorporateRateInd" type="xs:boolean" use="required" />
+    <xs:attribute name="GuaranteeReqInd" type="xs:boolean" use="required" />
+    <xs:attribute name="MaximumAge" type="xs:int" use="required" />
+    <xs:attribute name="MinimumAge" type="xs:int" use="required" />
+    <xs:attribute name="OneWayPolicy" type="eOneWayPolicy" use="required" />
+  </xs:complexType>
+  <xs:simpleType name="eOneWayPolicy">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="OneWayAllowed" />
+      <xs:enumeration value="OneWayNotAllowed" />
+      <xs:enumeration value="RestrictedOneWay" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="RequestorID" nillable="true" type="RequestorID" />
+  <xs:element name="SourceOTA" nillable="true" type="SourceOTA" />
+  <xs:element name="SpecialEquipPrefs" nillable="true" type="SpecialEquipPrefs" />
+  <xs:complexType name="SpecialEquipPrefs">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="SpecialEquipPref" type="SpecialEquipPref" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="SpecialEquipPref">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="Quantity" type="xs:string" />
+    </xs:sequence>
+    <xs:attribute name="EquipType" type="xs:string" />
+  </xs:complexType>
+  <xs:element name="SpecialEquipPref" nillable="true" type="SpecialEquipPref" />
+  <xs:element name="Success" nillable="true" type="Success" />
+  <xs:complexType name="Success" />
+  <xs:element name="Telephone" nillable="true" type="Telephone" />
+  <xs:element name="TelephoneAttributesGroup" nillable="true" type="TelephoneAttributesGroup" />
+  <xs:element name="TelephoneGroup" nillable="true" type="TelephoneGroup" />
+  <xs:complexType name="TelephoneGroup">
+    <xs:complexContent mixed="false">
+      <xs:extension base="TelephoneAttributesGroup" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="TelephoneInfoGroup" nillable="true" type="TelephoneInfoGroup" />
+  <xs:complexType name="TelephoneInfoGroup">
+    <xs:complexContent mixed="false">
+      <xs:extension base="TelephoneGroup" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="TPA_Extensions" nillable="true" type="TPA_Extensions" />
+  <xs:complexType name="TPA_Extensions">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="Attributes" type="Attributes" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="UniqueID" nillable="true" type="UniqueID" />
+  <xs:element name="VehAvail" nillable="true" type="VehAvail" />
+  <xs:complexType name="VehAvail">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="VehAvailCore" type="VehAvailCore" />
+      <xs:element minOccurs="0" maxOccurs="1" name="VehAvailInfo" type="VehAvailInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="VehAvailCore">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="Vehicle" type="Vehicle" />
+      <xs:element minOccurs="0" maxOccurs="1" name="RentalRate" type="VehicleRentalRate" />
+      <xs:element minOccurs="0" maxOccurs="1" name="PricedEquips" type="ArrayOfVehicleEquipmentPriced" />
+      <xs:element minOccurs="0" maxOccurs="1" name="TotalCharge" type="VehicleTotalChargeGroup" />
+      <xs:element minOccurs="0" maxOccurs="1" name="Fees" type="ArrayOfVehicleChargePurpose1" />
+      <xs:element minOccurs="0" maxOccurs="1" name="Vendor" type="CompanyName" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="VendorLocation" type="VendorLocation" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DropOffLocation" type="VendorLocation" />
+      <xs:element minOccurs="0" maxOccurs="1" name="TPA_Extensions" type="TPA_Extensions" />
+    </xs:sequence>
+    <xs:attribute name="Status" type="eInventoryStatus" use="required" />
+  </xs:complexType>
+  <xs:complexType name="Vehicle">
+    <xs:complexContent mixed="false">
+      <xs:extension base="VehicleCore">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="1" name="VehMakeModel" type="VehicleMakeModelGroup" />
+          <xs:element minOccurs="0" maxOccurs="1" name="PictureURL" type="xs:string" />
+        </xs:sequence>
+        <xs:attribute name="PassengerQuantity" type="xs:string" />
+        <xs:attribute name="BaggageQuantity" type="xs:string" />
+        <xs:attribute name="VendorCarType" type="xs:string" />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="VehicleCore">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="VehType" type="VehicleTypeGroup" />
+      <xs:element minOccurs="0" maxOccurs="1" name="VehClass" type="VehicleClassGroup" />
+    </xs:sequence>
+    <xs:attribute name="AirConditionInd" type="xs:string" />
+    <xs:attribute name="TransmissionType" type="eVehicleTransmissionType" use="required" />
+    <xs:attribute name="FuelType" type="eFuelType" use="required" />
+    <xs:attribute name="CO2Emission" type="xs:decimal" />
+  </xs:complexType>
+  <xs:complexType name="VehicleTypeGroup">
+    <xs:attribute name="VehicleCategory" type="xs:string" />
+    <xs:attribute name="doorCount" type="xs:string" />
+  </xs:complexType>
+  <xs:complexType name="VehicleClassGroup">
+    <xs:attribute name="Size" type="xs:string" />
+  </xs:complexType>
+  <xs:simpleType name="eVehicleTransmissionType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="NOTSPECIFIED" />
+      <xs:enumeration value="AUTOMATIC" />
+      <xs:enumeration value="MANUAL" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="eFuelType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="UNSPECIFIED" />
+      <xs:enumeration value="DIESEL" />
+      <xs:enumeration value="ELECTRIC" />
+      <xs:enumeration value="ETHANOL" />
+      <xs:enumeration value="HYBRID" />
+      <xs:enumeration value="HYDROGEN" />
+      <xs:enumeration value="LPG_COMPRESSEDGAS" />
+      <xs:enumeration value="MULTIFUEL" />
+      <xs:enumeration value="PETROL" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:complexType name="VehicleMakeModelGroup">
+    <xs:complexContent mixed="false">
+      <xs:extension base="NameOptionalCodeGroup" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="VehicleRentalRate">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="RateDistance" type="VehicleRateDistanceGroup" />
+      <xs:element minOccurs="0" maxOccurs="1" name="RateQualifier" type="RateQualifier" />
+      <xs:element minOccurs="0" maxOccurs="1" name="RateRestrictions" type="RateRestrictions" />
+      <xs:element minOccurs="0" maxOccurs="1" name="CancelPenalties" type="CancelPenalties" />
+      <xs:element minOccurs="0" maxOccurs="1" name="VehicleCharges" type="ArrayOfVehicleChargePurpose" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="VehicleRateDistanceGroup">
+    <xs:attribute name="Unlimited" type="xs:boolean" use="required" />
+    <xs:attribute name="Quantity" type="xs:string" />
+    <xs:attribute name="DistUnitName" type="eDistanceUnitType" use="required" />
+  </xs:complexType>
+  <xs:simpleType name="eDistanceUnitType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="mile" />
+      <xs:enumeration value="kilometer" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:complexType name="ArrayOfVehicleChargePurpose">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="VehicleCharge" nillable="true" type="VehicleChargePurpose" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ArrayOfVehicleEquipmentPriced">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="PricedEquip" nillable="true" type="VehicleEquipmentPriced" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="VehicleEquipmentPriced">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="Equipment" type="VehicleEquipment" />
+      <xs:element minOccurs="0" maxOccurs="1" name="Charge" type="VehicleChargeType" />
+    </xs:sequence>
+    <xs:attribute name="Required" type="xs:boolean" use="required" />
+  </xs:complexType>
+  <xs:complexType name="VehicleEquipment">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="Description" type="Description" />
+    </xs:sequence>
+    <xs:attribute name="EquipType" type="eEquipmentType" use="required" />
+    <xs:attribute name="EquipCode" type="xs:string" />
+    <xs:attribute name="Quantity" type="xs:string" />
+  </xs:complexType>
+  <xs:simpleType name="eEquipmentType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="MOBILE_PHONE" />
+      <xs:enumeration value="SNOW_CHAINS" />
+      <xs:enumeration value="HAND_CONTROL_RIGHT" />
+      <xs:enumeration value="HAND_CONTROL_LEFT" />
+      <xs:enumeration value="NAVIGATIONAL_SYSTEM" />
+      <xs:enumeration value="SNOW_TIRES" />
+      <xs:enumeration value="BABY_STROLLER" />
+      <xs:enumeration value="DVD_PLAYER_MONITOR" />
+      <xs:enumeration value="VCR_PLAYER_MONITOR" />
+      <xs:enumeration value="SPINNER_KNOB" />
+      <xs:enumeration value="FURNITURE_PADS" />
+      <xs:enumeration value="BIKE_RACK" />
+      <xs:enumeration value="CAR_DOLLY" />
+      <xs:enumeration value="AUTO_TRANSPORT" />
+      <xs:enumeration value="HAND_TRUCK" />
+      <xs:enumeration value="CARGO_BARRIER_FRONT" />
+      <xs:enumeration value="CARGO_BARRIER_REAR" />
+      <xs:enumeration value="LUGGAGE_TRAILER" />
+      <xs:enumeration value="CAMPING_EQUIPMENT" />
+      <xs:enumeration value="SATELLITE_RADIO" />
+      <xs:enumeration value="WHEELCHAIR_ACCESSIBLE_VAN" />
+      <xs:enumeration value="SEAT_BELT_EXTENSIONS" />
+      <xs:enumeration value="LUGGAGE_RACK" />
+      <xs:enumeration value="WINTER_PACKAGE" />
+      <xs:enumeration value="CITIZEN_BAND_RADIO" />
+      <xs:enumeration value="COMPUTERIZED_DIRECTIONS" />
+      <xs:enumeration value="FM_RADIO" />
+      <xs:enumeration value="NAVIGATIONAL_PHONE" />
+      <xs:enumeration value="SKI_RENTAL" />
+      <xs:enumeration value="SKI_EQUIPPED" />
+      <xs:enumeration value="CASSETTE_PLAYER" />
+      <xs:enumeration value="TELEVISION" />
+      <xs:enumeration value="OTHER" />
+      <xs:enumeration value="SKI_RACK" />
+      <xs:enumeration value="PORTABLE_DVD_CD_PLAYER" />
+      <xs:enumeration value="MULTIMEDIA_CENTRE" />
+      <xs:enumeration value="FLAG_HOLDER" />
+      <xs:enumeration value="MOTORCYCLE_HELMET" />
+      <xs:enumeration value="JERRYCAN" />
+      <xs:enumeration value="LUGGAGE_ROOF_CASE" />
+      <xs:enumeration value="HAND_HELD_NAVIGATION_SYSTEM" />
+      <xs:enumeration value="SNOW_BOARD_RACK" />
+      <xs:enumeration value="SKI_BOX" />
+      <xs:enumeration value="SURF_RACK" />
+      <xs:enumeration value="TRAILER_HITCH" />
+      <xs:enumeration value="SCOOTER_CASE" />
+      <xs:enumeration value="CAR_TELEPHONE" />
+      <xs:enumeration value="TOLL_PAYMENT_TAG_PASS" />
+      <xs:enumeration value="ADDITIONAL_SPARE_TIRE" />
+      <xs:enumeration value="WHEELCHAIR" />
+      <xs:enumeration value="WIFI_ACCESS" />
+      <xs:enumeration value="ROAD_CONGESTION_PAYMENT_SCHEME" />
+      <xs:enumeration value="BOOSTER_CUSHION" />
+      <xs:enumeration value="TROLLEY" />
+      <xs:enumeration value="CARBON_OFFSET" />
+      <xs:enumeration value="AUTOMATIC_LOCKS" />
+      <xs:enumeration value="SECURITY_DEVICES" />
+      <xs:enumeration value="INFANT_CHILD_SEAT" />
+      <xs:enumeration value="CHILD_TODDLER_SEAT" />
+      <xs:enumeration value="BOOSTER_SEAT" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:complexType name="VehicleTotalChargeGroup">
+    <xs:attribute name="RateTotalAmount" type="xs:decimal" use="required" />
+    <xs:attribute name="CurrencyCode" type="xs:string" />
+  </xs:complexType>
+  <xs:complexType name="ArrayOfVehicleChargePurpose1">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Fee" nillable="true" type="VehicleChargePurpose" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="VendorLocation">
+    <xs:complexContent mixed="false">
+      <xs:extension base="Location">
+        <xs:attribute name="ExtendedLocationCode" type="xs:string" />
+        <xs:attribute name="Name" type="xs:string" />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:simpleType name="eInventoryStatus">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Available" />
+      <xs:enumeration value="OnRequest" />
+      <xs:enumeration value="All" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:complexType name="VehAvailInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="PricedCoverages" type="PricedCoverages" />
+      <xs:element minOccurs="0" maxOccurs="1" name="VendorMessages" type="VendorMessages" />
+      <xs:element minOccurs="0" maxOccurs="1" name="FuelPolicies" type="FuelPolicies" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="VendorMessages">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="VendorMessage" type="VendorMessage" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="VendorMessage">
+    <xs:complexContent mixed="false">
+      <xs:extension base="FormattedText">
+        <xs:attribute name="InfoType" type="eInformationType" use="required" />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:simpleType name="eInformationType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="DESCRIPTION" />
+      <xs:enumeration value="DINING" />
+      <xs:enumeration value="DRIVING_DIRECTIONS" />
+      <xs:enumeration value="FACILITIES" />
+      <xs:enumeration value="RECREATION" />
+      <xs:enumeration value="SAFETY" />
+      <xs:enumeration value="SERVICES" />
+      <xs:enumeration value="TRASNPORTATION" />
+      <xs:enumeration value="SHORT_DESCRIPTION" />
+      <xs:enumeration value="ADVISORY" />
+      <xs:enumeration value="GEOCODES" />
+      <xs:enumeration value="POLICY" />
+      <xs:enumeration value="LOCATION" />
+      <xs:enumeration value="ADDRESS" />
+      <xs:enumeration value="CONTACT" />
+      <xs:enumeration value="PICTURES" />
+      <xs:enumeration value="DESCRIPTIVE_CONTENT" />
+      <xs:enumeration value="LONG_NAME" />
+      <xs:enumeration value="ALIAS_NAME" />
+      <xs:enumeration value="MARKETING" />
+      <xs:enumeration value="SPECIAL_INSTRUCTIONS" />
+      <xs:enumeration value="OTHER" />
+      <xs:enumeration value="AMENITIES" />
+      <xs:enumeration value="ATTRACTIONS" />
+      <xs:enumeration value="AWARDS" />
+      <xs:enumeration value="CORPORATE_LOCATION" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="VehAvailCore" nillable="true" type="VehAvailCore" />
+  <xs:element name="VehAvailInfo" nillable="true" type="VehAvailInfo" />
+  <xs:element name="VehAvailRQCore" nillable="true" type="VehAvailRQCore" />
+  <xs:complexType name="VehAvailRQCore">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="VehRentalCore" type="VehRentalCore" />
+      <xs:element minOccurs="0" maxOccurs="1" name="VendorPrefs" type="VendorPrefs" />
+      <xs:element minOccurs="0" maxOccurs="1" name="VehPrefs" type="VehPrefs" />
+      <xs:element minOccurs="0" maxOccurs="1" name="DriverType" type="DriverType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="VehRentalCore">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="PickUpLocation" type="Location" />
+      <xs:element minOccurs="0" maxOccurs="1" name="ReturnLocation" type="Location" />
+    </xs:sequence>
+    <xs:attribute name="PickUpDateTime" type="xs:dateTime" use="required" />
+    <xs:attribute name="ReturnDateTime" type="xs:dateTime" use="required" />
+  </xs:complexType>
+  <xs:complexType name="VendorPrefs">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="VendorPref" type="VendorPref" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="VendorPref">
+    <xs:complexContent mixed="false">
+      <xs:extension base="CompanyNamePref">
+        <xs:attribute name="CorpDiscountNmbr" type="xs:string" />
+        <xs:attribute name="RateQualifier" type="xs:string" />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="VehPrefs">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="VehPref" type="VehiclePref" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="VehiclePref">
+    <xs:complexContent mixed="false">
+      <xs:extension base="VehicleCore">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="1" name="VehMakeModel" type="VehicleMakeModelGroup" />
+        </xs:sequence>
+        <xs:attribute name="VendorCarType" type="xs:string" />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="vehCancelRQInfo" nillable="true" type="vehCancelRQInfo" />
+  <xs:complexType name="vehCancelRQInfo">
+    <xs:sequence>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Vehicle" nillable="true" type="Vehicle" />
+  <xs:element name="VehicleAvailRQAdditionalInfoType" nillable="true" type="VehicleAvailRQAdditionalInfoType" />
+  <xs:complexType name="VehicleAvailRQAdditionalInfoType">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="Customer" type="CustomerPrimaryAdditional" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="VehicleAvailVendorInfoType" nillable="true" type="VehicleAvailVendorInfoType" />
+  <xs:complexType name="VehicleAvailVendorInfoType">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="LocationDetails" type="VehicleLocationDetails" />
+      <xs:element minOccurs="0" maxOccurs="1" name="VendorMessages" type="VendorMessages" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="VehicleLocationDetails">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="Vendor" type="CompanyName" />
+      <xs:element minOccurs="0" maxOccurs="1" name="Address" type="AddressInfo" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Telephone" type="TelephoneInfoGroup" />
+      <xs:element minOccurs="0" maxOccurs="1" name="Email" type="Email" />
+      <xs:element minOccurs="0" maxOccurs="1" name="AdditionalInfo" type="VehicleLocationAdditionalDetails" />
+    </xs:sequence>
+    <xs:attribute name="Code" type="xs:string" />
+    <xs:attribute name="Name" type="xs:string" />
+    <xs:attribute name="ExtendedLocationCode" type="xs:string" />
+    <xs:attribute name="AssocAirportLocList" type="xs:string" />
+  </xs:complexType>
+  <xs:complexType name="VehicleLocationAdditionalDetails">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="ParkLocation" type="VehicleWhereAtFacilityType" />
+      <xs:element minOccurs="0" maxOccurs="1" name="OperationSchedules" type="OperationSchedules" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="VehicleWhereAtFacilityType">
+    <xs:attribute name="Location" type="eVecinityCode" use="required" />
+  </xs:complexType>
+  <xs:simpleType name="eVecinityCode">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="TERMINAL" />
+      <xs:enumeration value="SHUTTLE_ON_AIRPORT" />
+      <xs:enumeration value="SHUTTLE_OFF_AIRPORT" />
+      <xs:enumeration value="RAILWAY_STATION" />
+      <xs:enumeration value="HOTEL" />
+      <xs:enumeration value="CAR_DEALER" />
+      <xs:enumeration value="CITY_CENTERDOWNTOWN" />
+      <xs:enumeration value="EAST_OF_CITY_CENTER" />
+      <xs:enumeration value="SOUTH_OF_CITY_CENTER" />
+      <xs:enumeration value="WEST_OF_CITY_CENTER" />
+      <xs:enumeration value="NORTH_OF_CITY_CENTER" />
+      <xs:enumeration value="PORT_FERRY" />
+      <xs:enumeration value="NEAR_RESORT" />
+      <xs:enumeration value="AIRPORT" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="VehicleChargePurpose" nillable="true" type="VehicleChargePurpose" />
+  <xs:element name="VehicleChargeType" nillable="true" type="VehicleChargeType" />
+  <xs:element name="VehicleClassGroup" nillable="true" type="VehicleClassGroup" />
+  <xs:element name="VehicleCore" nillable="true" type="VehicleCore" />
+  <xs:element name="VehicleEquipment" nillable="true" type="VehicleEquipment" />
+  <xs:element name="VehicleEquipmentPriced" nillable="true" type="VehicleEquipmentPriced" />
+  <xs:element name="VehicleLocationAdditionalDetails" nillable="true" type="VehicleLocationAdditionalDetails" />
+  <xs:element name="VehicleLocationDetails" nillable="true" type="VehicleLocationDetails" />
+  <xs:element name="VehicleMakeModelGroup" nillable="true" type="VehicleMakeModelGroup" />
+  <xs:element name="VehiclePref" nillable="true" type="VehiclePref" />
+  <xs:element name="VehicleRateDistanceGroup" nillable="true" type="VehicleRateDistanceGroup" />
+  <xs:element name="VehicleRentalRate" nillable="true" type="VehicleRentalRate" />
+  <xs:element name="VehicleReservation" nillable="true" type="VehicleReservation" />
+  <xs:complexType name="VehicleReservation">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="Customer" type="Customer" />
+      <xs:element minOccurs="0" maxOccurs="1" name="VehSegmentCore" type="VehicleSegmentCore" />
+      <xs:element minOccurs="0" maxOccurs="1" name="VehSegmentInfo" type="VehicleSegmentAdditionalInfo" />
+    </xs:sequence>
+    <xs:attribute name="ReservationStatus" type="eTransactionStatusType" use="required" />
+  </xs:complexType>
+  <xs:complexType name="VehicleSegmentCore">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ConfID" type="ConfID" />
+      <xs:element minOccurs="0" maxOccurs="1" name="Vendor" type="CompanyName" />
+      <xs:element minOccurs="0" maxOccurs="1" name="Vehicle" type="Vehicle" />
+      <xs:element minOccurs="0" maxOccurs="1" name="PricedEquips" type="ArrayOfVehicleEquipmentPriced" />
+      <xs:element minOccurs="0" maxOccurs="1" name="FuelPolicies" type="FuelPolicies" />
+      <xs:element minOccurs="0" maxOccurs="1" name="RateQualifier" type="RateQualifier" />
+      <xs:element minOccurs="0" maxOccurs="1" name="TotalCharge" type="VehicleTotalChargeGroup" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="VehicleSegmentAdditionalInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="LocationDetails" type="VehicleLocationDetails" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="VehicleReservationRQCore" nillable="true" type="VehicleReservationRQCore" />
+  <xs:complexType name="VehicleReservationRQCore">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="VehRentalCore" type="VehRentalCore" />
+      <xs:element minOccurs="0" maxOccurs="1" name="Customer" type="CustomerPrimaryAdditional" />
+      <xs:element minOccurs="0" maxOccurs="1" name="VendorPref" type="CompanyNamePref" />
+      <xs:element minOccurs="0" maxOccurs="1" name="VehPref" type="VehiclePref" />
+      <xs:element minOccurs="0" maxOccurs="1" name="DriverType" type="DriverType" />
+      <xs:element minOccurs="0" maxOccurs="1" name="RateQualifier" type="RateQualifier" />
+      <xs:element minOccurs="0" maxOccurs="1" name="TotalCharge" type="VehicleTotalChargeGroup" />
+      <xs:element minOccurs="0" maxOccurs="1" name="PricedEquips" type="ArrayOfVehicleEquipmentPriced" />
+      <xs:element minOccurs="0" maxOccurs="1" name="FuelPolicies" type="FuelPolicies" />
+      <xs:element minOccurs="0" maxOccurs="1" name="UniqueID" type="UniqueID" />
+      <xs:element minOccurs="0" maxOccurs="1" name="TPA_Extensions" type="TPA_Extensions" />
+    </xs:sequence>
+    <xs:attribute name="Status" type="eInventoryStatus" use="required" />
+  </xs:complexType>
+  <xs:element name="VehicleResRSCore" nillable="true" type="VehicleResRSCore" />
+  <xs:complexType name="VehicleResRSCore">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="VehReservation" type="VehicleReservation" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="VehicleSegmentAdditionalInfo" nillable="true" type="VehicleSegmentAdditionalInfo" />
+  <xs:element name="VehicleSegmentCore" nillable="true" type="VehicleSegmentCore" />
+  <xs:element name="VehicleTotalChargeGroup" nillable="true" type="VehicleTotalChargeGroup" />
+  <xs:element name="VehicleTypeGroup" nillable="true" type="VehicleTypeGroup" />
+  <xs:element name="VehicleWhereAtFacilityType" nillable="true" type="VehicleWhereAtFacilityType" />
+  <xs:element name="VehMakeModel" nillable="true" type="VehMakeModel" />
+  <xs:complexType name="VehMakeModel" />
+  <xs:element name="VehPrefs" nillable="true" type="VehPrefs" />
+  <xs:element name="VehRentalCore" nillable="true" type="VehRentalCore" />
+  <xs:element name="VehVendorAvail" nillable="true" type="VehVendorAvail" />
+  <xs:complexType name="VehVendorAvail">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="VehAvails" type="ArrayOfVehAvail" />
+      <xs:element minOccurs="0" maxOccurs="1" name="Info" type="VehicleAvailVendorInfoType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ArrayOfVehAvail">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="VehAvail" nillable="true" type="VehAvail" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="VehVendorAvails" nillable="true" type="VehVendorAvails" />
+  <xs:complexType name="VehVendorAvails">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="VehVendorAvail" type="VehVendorAvail" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="VendorLocation" nillable="true" type="VendorLocation" />
+  <xs:element name="VendorMessage" nillable="true" type="VendorMessage" />
+  <xs:element name="VendorMessages" nillable="true" type="VendorMessages" />
+  <xs:element name="VendorPref" nillable="true" type="VendorPref" />
+  <xs:element name="VendorPrefs" nillable="true" type="VendorPrefs" />
+  <xs:element name="Warnings" nillable="true" type="Warnings" />
+  <xs:element name="Warning" nillable="true" type="Warning" />
+  <xs:element name="OTA_VehResRQ" nillable="true" type="OTA_VehResRQ" />
+  <xs:complexType name="OTA_VehResRQ">
+    <xs:complexContent mixed="false">
+      <xs:extension base="CarBaseRQ">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="1" name="POS" type="Pos" />
+          <xs:element minOccurs="0" maxOccurs="1" name="VehResRQCore" type="VehResRQCore" />
+          <xs:element minOccurs="0" maxOccurs="1" name="VehResRQInfo" type="VehResRQInfo" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="VehResRQCore">
+    <xs:complexContent mixed="false">
+      <xs:extension base="VehicleReservationRQCore" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="VehResRQInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="ArrivalDetails" type="ArrivalDetails" />
+      <xs:element minOccurs="0" maxOccurs="1" name="RentalPaymentPref" type="RentalPaymentPref" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="RentalPaymentPref">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="PaymentCard" type="PaymentCard" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="PaymentCard">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="CardHolderName" type="xs:string" />
+    </xs:sequence>
+    <xs:attribute name="CardType" type="tipoCreditCardType" use="required" />
+    <xs:attribute name="CardCode" type="xs:string" />
+    <xs:attribute name="CardNumber" type="xs:string" />
+    <xs:attribute name="ExpireDate" type="xs:string" />
+    <xs:attribute name="SeriesCode" type="xs:string" />
+  </xs:complexType>
+  <xs:simpleType name="tipoCreditCardType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="1" />
+      <xs:enumeration value="2" />
+      <xs:enumeration value="3" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="OTA_VehResRS" nillable="true" type="OTA_VehResRS" />
+  <xs:complexType name="OTA_VehResRS">
+    <xs:complexContent mixed="false">
+      <xs:extension base="CarBaseRS">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="1" name="VehResRSCore" type="VehResRSCore" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="VehResRSCore">
+    <xs:complexContent mixed="false">
+      <xs:extension base="VehicleResRSCore" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="PaymentCard" nillable="true" type="PaymentCard" />
+  <xs:element name="RentalPaymentPref" nillable="true" type="RentalPaymentPref" />
+  <xs:element name="VehResRQCore" nillable="true" type="VehResRQCore" />
+  <xs:element name="VehResRQInfo" nillable="true" type="VehResRQInfo" />
+  <xs:element name="VehResRSCore" nillable="true" type="VehResRSCore" />
+  <xs:element name="OTA_VehRetResRQ" nillable="true" type="OTA_VehRetResRQ" />
+  <xs:complexType name="OTA_VehRetResRQ">
+    <xs:complexContent mixed="false">
+      <xs:extension base="CarBaseRQ">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="1" name="POS" type="Pos" />
+          <xs:element minOccurs="0" maxOccurs="1" name="VehRetResRQCore" type="VehRetResRQCore" />
+          <xs:element minOccurs="0" maxOccurs="1" name="VehRetResRQInfo" type="vehRetResRQInfo" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="VehRetResRQCore">
+    <xs:complexContent mixed="false">
+      <xs:extension base="VehicleRetrieveResRQCore" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="VehicleRetrieveResRQCore">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="UniqueID" type="UniqueID" />
+      <xs:element minOccurs="0" maxOccurs="1" name="PersonName" type="PersonName" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="vehRetResRQInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="SearchDataRange" type="SearchDataRange" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="SearchDataRange">
+    <xs:attribute name="Start" type="xs:dateTime" use="required" />
+    <xs:attribute name="End" type="xs:dateTime" use="required" />
+    <xs:attribute name="SearchQualifier" type="eSearchQualifier" use="required" />
+  </xs:complexType>
+  <xs:simpleType name="eSearchQualifier">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="action" />
+      <xs:enumeration value="pickupRange" />
+      <xs:enumeration value="returnRange" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="OTA_VehRetResRS" type="OTA_VehRetResRS" />
+  <xs:complexType name="OTA_VehRetResRS">
+    <xs:complexContent mixed="false">
+      <xs:extension base="CarBaseRS">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="VehRetResRSCore" type="VehicleRetrieveResRSCore" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="VehicleRetrieveResRSCore">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="VehRentalCore" type="VehRentalCore" />
+      <xs:element minOccurs="0" maxOccurs="1" name="VehReservation" type="VehicleReservation" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SearchDataRange" nillable="true" type="SearchDataRange" />
+  <xs:element name="eSearchQualifier" type="eSearchQualifier" />
+  <xs:element name="VehicleRetrieveResRQCore" nillable="true" type="VehicleRetrieveResRQCore" />
+  <xs:element name="VehicleRetrieveResRSCore" nillable="true" type="VehicleRetrieveResRSCore" />
+  <xs:element name="VehRetResRQCore" nillable="true" type="VehRetResRQCore" />
+  <xs:element name="vehRetResRQInfo" nillable="true" type="vehRetResRQInfo" />
+  <xs:element name="OTA_VehAvailRateRQ" type="OTA_VehAvailRateRQ" />
+  <xs:complexType name="OTA_VehAvailRateRQ">
+    <xs:complexContent mixed="false">
+      <xs:extension base="CarBaseRQ">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="1" name="POS" type="Pos" />
+          <xs:element minOccurs="0" maxOccurs="1" name="VehAvailRQCore" type="VehAvailRQCore" />
+          <xs:element minOccurs="0" maxOccurs="1" name="VehAvailRQInfo" type="VehicleAvailRQAdditionalInfoType" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="OTA_VehAvailRateRS" type="OTA_VehAvailRateRS" />
+  <xs:complexType name="OTA_VehAvailRateRS">
+    <xs:complexContent mixed="false">
+      <xs:extension base="CarBaseRS">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="1" name="VehAvailRSCore" type="VehAvailRSCore" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="VehAvailRSCore">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="VehRentalCore" type="VehRentalCore" />
+      <xs:element minOccurs="0" maxOccurs="1" name="VehVendorAvails" type="VehVendorAvails" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="VehAvailRSCore" nillable="true" type="VehAvailRSCore" />
+  <xs:element name="OTA_VehLocSearchRQ" type="OTA_VehLocSearchRQ" />
+  <xs:complexType name="OTA_VehLocSearchRQ">
+    <xs:complexContent mixed="false">
+      <xs:extension base="CarBaseRQ">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="1" name="POS" type="Pos" />
+          <xs:element minOccurs="0" maxOccurs="1" name="VehLocSearchCriterion" type="ItemSearchCriterionType" />
+          <xs:element minOccurs="0" maxOccurs="1" name="Vendor" type="CompanyName" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="OTA_VehLocSearchRS" type="OTA_VehLocSearchRS" />
+  <xs:complexType name="OTA_VehLocSearchRS">
+    <xs:complexContent mixed="false">
+      <xs:extension base="CarBaseRS">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="1" name="VehMatchedLocs" type="ArrayOfVehicleMatchedLocation" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="ArrayOfVehicleMatchedLocation">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="VehMatchedLoc" nillable="true" type="VehicleMatchedLocation" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="VehicleMatchedLocation">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="LocationDetail" type="VehicleLocationDetails" />
+      <xs:element minOccurs="0" maxOccurs="1" name="VehLocSearchCriterion" type="ItemSearchCriterionType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="VehicleMatchedLocation" nillable="true" type="VehicleMatchedLocation" />
+  <xs:element name="RunTimeConfigurationRQ" type="RunTimeConfigurationRQ" />
+  <xs:complexType name="RunTimeConfigurationRQ">
+    <xs:complexContent mixed="false">
+      <xs:extension base="CarBaseRQ" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="RunTimeConfigurationRS" type="RunTimeConfigurationRS" />
+  <xs:complexType name="RunTimeConfigurationRS">
+    <xs:complexContent mixed="false">
+      <xs:extension base="CarBaseRS">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="1" name="Configuration" type="Configuration" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="StaticConfigurationRQ" type="StaticConfigurationRQ" />
+  <xs:complexType name="StaticConfigurationRQ">
+    <xs:complexContent mixed="false">
+      <xs:extension base="CarBaseRQ" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="StaticConfigurationRS" type="StaticConfigurationRS" />
+  <xs:complexType name="StaticConfigurationRS">
+    <xs:complexContent mixed="false">
+      <xs:extension base="CarBaseRS">
+        <xs:sequence>
+          <xs:element minOccurs="1" maxOccurs="1" name="ImplementsOTA_VehRetRes" type="xs:boolean" />
+          <xs:element minOccurs="1" maxOccurs="1" name="ImplementsOTA_VehCancel" type="xs:boolean" />
+          <xs:element minOccurs="1" maxOccurs="1" name="ImmediateOTA_VehCancel" type="xs:boolean" />
+          <xs:element minOccurs="1" maxOccurs="1" name="WaitingOTA_VehCancel" type="xs:int" />
+          <xs:element minOccurs="1" maxOccurs="1" name="MaxPickUpOfficeLocationsPerOTA_VehAvail" type="xs:int" />
+          <xs:element minOccurs="1" maxOccurs="1" name="MaxReturnOfficeLocationsPerOTA_VehAvail" type="xs:int" />
+          <xs:element minOccurs="1" maxOccurs="1" name="MaxPickUpIATALocationsPerOTA_VehAvail" type="xs:int" />
+          <xs:element minOccurs="1" maxOccurs="1" name="MaxReturnIATALocationsPerOTA_VehAvail" type="xs:int" />
+          <xs:element minOccurs="1" maxOccurs="1" name="RateQualifierInformedOTA_VehAvail" type="xs:boolean" />
+          <xs:element minOccurs="1" maxOccurs="1" name="RateQualifierInformedOTA_VehRateRule" type="xs:boolean" />
+          <xs:element minOccurs="1" maxOccurs="1" name="VehDetailsInformedOTA_VehRetRes" type="xs:boolean" />
+          <xs:element minOccurs="1" maxOccurs="1" name="OnlyLocatorOTA_VehRes" type="xs:boolean" />
+          <xs:element minOccurs="1" maxOccurs="1" name="OnlyStatusOTA_VehRetRes" type="xs:boolean" />
+          <xs:element minOccurs="1" maxOccurs="1" name="VehDetailsInformedOTA_VehRes" type="xs:boolean" />
+          <xs:element minOccurs="1" maxOccurs="1" name="PictureURLInformedOTA_VehAvail" type="xs:boolean" />
+          <xs:element minOccurs="1" maxOccurs="1" name="PictureURLInformedOTA_VehRateRule" type="xs:boolean" />
+          <xs:element minOccurs="1" maxOccurs="1" name="VendorCarTypeInformed" type="xs:boolean" />
+          <xs:element minOccurs="1" maxOccurs="1" name="VehMakeModelInformedOTA_VehAvail" type="xs:boolean" />
+          <xs:element minOccurs="1" maxOccurs="1" name="VehMakeModelInformedOTA_VehRateRule" type="xs:boolean" />
+          <xs:element minOccurs="1" maxOccurs="1" name="VehMakeModelInformedOTA_VehRes" type="xs:boolean" />
+          <xs:element minOccurs="1" maxOccurs="1" name="VehClassInformedOTA_VehAvail" type="xs:boolean" />
+          <xs:element minOccurs="1" maxOccurs="1" name="VehClassInformedOTA_VehRateRule" type="xs:boolean" />
+          <xs:element minOccurs="1" maxOccurs="1" name="VehClassInformedOTA_VehRes" type="xs:boolean" />
+          <xs:element minOccurs="1" maxOccurs="1" name="ChargesAmountZero" type="xs:boolean" />
+          <xs:element minOccurs="1" maxOccurs="1" name="TestEnviromentImplementsOTA_VehRes" type="xs:boolean" />
+          <xs:element minOccurs="1" maxOccurs="1" name="TestDriverAge" type="xs:int" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="SupportedTypesOfPayment" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="SupportedLanguages" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="OTA_VehRateRuleRQ" nillable="true" type="OTA_VehRateRuleRQ" />
+  <xs:complexType name="OTA_VehRateRuleRQ">
+    <xs:complexContent mixed="false">
+      <xs:extension base="CarBaseRQ">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="1" name="POS" type="Pos" />
+          <xs:element minOccurs="0" maxOccurs="1" name="RentalInfo" type="RentalInfo" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="RentalInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="VehRentalCore" type="VehRentalCore" />
+      <xs:element minOccurs="0" maxOccurs="1" name="VehicleInfo" type="VehiclePref" />
+      <xs:element minOccurs="0" maxOccurs="1" name="RateQualifier" type="RateQualifier" />
+      <xs:element minOccurs="0" maxOccurs="1" name="PricedEquips" type="ArrayOfVehicleEquipmentPriced" />
+      <xs:element minOccurs="0" maxOccurs="1" name="FuelPolicies" type="FuelPolicies" />
+      <xs:element minOccurs="0" maxOccurs="1" name="TPA_Extensions" type="TPA_Extensions" />
+      <xs:element minOccurs="0" maxOccurs="1" name="DriverType" type="DriverType" />
+    </xs:sequence>
+    <xs:attribute name="Status" type="eInventoryStatus" use="required" />
+  </xs:complexType>
+  <xs:element name="OTA_VehRateRuleRS" nillable="true" type="OTA_VehRateRuleRS" />
+  <xs:complexType name="OTA_VehRateRuleRS">
+    <xs:complexContent mixed="false">
+      <xs:extension base="CarBaseRS">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="1" name="VehRentalCore" type="VehRentalCore" />
+          <xs:element minOccurs="0" maxOccurs="1" name="Vehicle" type="Vehicle" />
+          <xs:element minOccurs="0" maxOccurs="1" name="RentalRate" type="OTA_VehRateRuleRS_VehicleRentalRate" />
+          <xs:element minOccurs="0" maxOccurs="1" name="TotalCharge" type="VehicleTotalChargeGroup" />
+          <xs:element minOccurs="0" maxOccurs="1" name="PricedEquips" type="ArrayOfVehicleEquipmentPriced" />
+          <xs:element minOccurs="0" maxOccurs="1" name="FuelPolicies" type="FuelPolicies" />
+          <xs:element minOccurs="0" maxOccurs="1" name="Fees" type="ArrayOfVehicleChargePurpose1" />
+          <xs:element minOccurs="0" maxOccurs="1" name="Vendor" type="CompanyName" />
+          <xs:element minOccurs="0" maxOccurs="1" name="PricedCoverages" type="PricedCoverages" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="LocationDetails" type="VehicleLocationDetails" />
+          <xs:element minOccurs="0" maxOccurs="1" name="VendorMessages" type="VendorMessages" />
+          <xs:element minOccurs="0" maxOccurs="1" name="TPA_Extensions" type="TPA_Extensions" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="OTA_VehRateRuleRS_VehicleRentalRate">
+    <xs:complexContent mixed="false">
+      <xs:extension base="VehicleRentalRate">
+        <xs:attribute name="Status" type="eInventoryStatus" use="required" />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="OTA_VehRateRuleRS_VehicleRentalRate" nillable="true" type="OTA_VehRateRuleRS_VehicleRentalRate" />
+  <xs:element name="RentalInfo" nillable="true" type="RentalInfo" />
+  <xs:element name="eDistanceUnitType" type="eDistanceUnitType" />
+  <xs:element name="eLanguageType" type="eLanguageType" />
+  <xs:element name="eOperationTimeType" type="eOperationTimeType" />
+  <xs:element name="errorCodesType" type="errorCodesType" />
+  <xs:element name="tipoCreditCardType" type="tipoCreditCardType" />
+  <xs:element name="eTaxId" type="eTaxId" />
+  <xs:element name="eCoverageCodes" type="eCoverageCodes" />
+  <xs:simpleType name="eCoverageCodes">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="ALI" />
+      <xs:enumeration value="ASC" />
+      <xs:enumeration value="CDW" />
+      <xs:enumeration value="VLF" />
+      <xs:enumeration value="RFL" />
+      <xs:enumeration value="LDW" />
+      <xs:enumeration value="LSC" />
+      <xs:enumeration value="PAE" />
+      <xs:enumeration value="PAI" />
+      <xs:enumeration value="PEP" />
+      <xs:enumeration value="PEC" />
+      <xs:enumeration value="SLI" />
+      <xs:enumeration value="EP" />
+      <xs:enumeration value="TP" />
+      <xs:enumeration value="YDS" />
+      <xs:enumeration value="ID" />
+      <xs:enumeration value="UNL" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="eCategoryCodes" type="eCategoryCodes" />
+  <xs:simpleType name="eCategoryCodes">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="M" />
+      <xs:enumeration value="N" />
+      <xs:enumeration value="E" />
+      <xs:enumeration value="H" />
+      <xs:enumeration value="C" />
+      <xs:enumeration value="D" />
+      <xs:enumeration value="I" />
+      <xs:enumeration value="J" />
+      <xs:enumeration value="S" />
+      <xs:enumeration value="R" />
+      <xs:enumeration value="F" />
+      <xs:enumeration value="G" />
+      <xs:enumeration value="P" />
+      <xs:enumeration value="U" />
+      <xs:enumeration value="L" />
+      <xs:enumeration value="W" />
+      <xs:enumeration value="O" />
+      <xs:enumeration value="X" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="eCarTypeCodes" type="eCarTypeCodes" />
+  <xs:simpleType name="eCarTypeCodes">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="B" />
+      <xs:enumeration value="C" />
+      <xs:enumeration value="D" />
+      <xs:enumeration value="W" />
+      <xs:enumeration value="V" />
+      <xs:enumeration value="L" />
+      <xs:enumeration value="S" />
+      <xs:enumeration value="T" />
+      <xs:enumeration value="F" />
+      <xs:enumeration value="J" />
+      <xs:enumeration value="X" />
+      <xs:enumeration value="P" />
+      <xs:enumeration value="Q" />
+      <xs:enumeration value="Z" />
+      <xs:enumeration value="E" />
+      <xs:enumeration value="M" />
+      <xs:enumeration value="R" />
+      <xs:enumeration value="H" />
+      <xs:enumeration value="Y" />
+      <xs:enumeration value="N" />
+      <xs:enumeration value="G" />
+      <xs:enumeration value="K" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="eTransmissionDriveCodes" type="eTransmissionDriveCodes" />
+  <xs:simpleType name="eTransmissionDriveCodes">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="M" />
+      <xs:enumeration value="N" />
+      <xs:enumeration value="C" />
+      <xs:enumeration value="A" />
+      <xs:enumeration value="B" />
+      <xs:enumeration value="D" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="eFuellAcc" type="eFuellAcc" />
+  <xs:simpleType name="eFuellAcc">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="R" />
+      <xs:enumeration value="N" />
+      <xs:enumeration value="D" />
+      <xs:enumeration value="Q" />
+      <xs:enumeration value="H" />
+      <xs:enumeration value="I" />
+      <xs:enumeration value="E" />
+      <xs:enumeration value="C" />
+      <xs:enumeration value="L" />
+      <xs:enumeration value="S" />
+      <xs:enumeration value="A" />
+      <xs:enumeration value="B" />
+      <xs:enumeration value="M" />
+      <xs:enumeration value="F" />
+      <xs:enumeration value="V" />
+      <xs:enumeration value="Z" />
+      <xs:enumeration value="U" />
+      <xs:enumeration value="X" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="eSpecialEquipmentCodes" type="eSpecialEquipmentCodes" />
+  <xs:simpleType name="eSpecialEquipmentCodes">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="BBS" />
+      <xs:enumeration value="BYC" />
+      <xs:enumeration value="CBB" />
+      <xs:enumeration value="CBF" />
+      <xs:enumeration value="CBS" />
+      <xs:enumeration value="CSB" />
+      <xs:enumeration value="CSI" />
+      <xs:enumeration value="CST" />
+      <xs:enumeration value="DVD" />
+      <xs:enumeration value="FLH" />
+      <xs:enumeration value="HCL" />
+      <xs:enumeration value="HCR" />
+      <xs:enumeration value="HEL" />
+      <xs:enumeration value="JAC" />
+      <xs:enumeration value="JRC" />
+      <xs:enumeration value="LRC" />
+      <xs:enumeration value="LTR" />
+      <xs:enumeration value="LUG" />
+      <xs:enumeration value="MMS" />
+      <xs:enumeration value="NAV" />
+      <xs:enumeration value="NVS" />
+      <xs:enumeration value="PHN" />
+      <xs:enumeration value="RPS" />
+      <xs:enumeration value="SBE" />
+      <xs:enumeration value="SBR" />
+      <xs:enumeration value="SKB" />
+      <xs:enumeration value="SKR" />
+      <xs:enumeration value="SKV" />
+      <xs:enumeration value="SNO" />
+      <xs:enumeration value="SNP" />
+      <xs:enumeration value="SNT" />
+      <xs:enumeration value="SPN" />
+      <xs:enumeration value="CSR" />
+      <xs:enumeration value="SRK" />
+      <xs:enumeration value="STC" />
+      <xs:enumeration value="STR" />
+      <xs:enumeration value="TEL" />
+      <xs:enumeration value="TRH" />
+      <xs:enumeration value="TOL" />
+      <xs:enumeration value="TYR" />
+      <xs:enumeration value="WAR" />
+      <xs:enumeration value="WHC" />
+      <xs:enumeration value="WIF" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="eFeeCodes" type="eFeeCodes" />
+  <xs:simpleType name="eFeeCodes">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="CFC" />
+      <xs:enumeration value="CIS" />
+      <xs:enumeration value="COS" />
+      <xs:enumeration value="ENV" />
+      <xs:enumeration value="EXT" />
+      <xs:enumeration value="GAR" />
+      <xs:enumeration value="LAT" />
+      <xs:enumeration value="MAF" />
+      <xs:enumeration value="NSC" />
+      <xs:enumeration value="SEC" />
+      <xs:enumeration value="SSU" />
+      <xs:enumeration value="TBS" />
+      <xs:enumeration value="TOF" />
+      <xs:enumeration value="TRF" />
+      <xs:enumeration value="VLF" />
+      <xs:enumeration value="VRF" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="eInventoryStatus" type="eInventoryStatus" />
+  <xs:element name="eTransactionActionType" type="eTransactionActionType" />
+  <xs:simpleType name="eTransactionActionType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="BOOK" />
+      <xs:enumeration value="QUOTE" />
+      <xs:enumeration value="HOLD" />
+      <xs:enumeration value="INITIATE" />
+      <xs:enumeration value="IGNORE" />
+      <xs:enumeration value="MODIFY" />
+      <xs:enumeration value="COMMIT" />
+      <xs:enumeration value="CANCEL" />
+      <xs:enumeration value="TICKET" />
+      <xs:enumeration value="COMMIT_OVERRIDE_EDITS" />
+      <xs:enumeration value="VERIFY_PRICE" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="eTransactionStatusType" type="eTransactionStatusType" />
+  <xs:element name="eCodeContext" type="eCodeContext" />
+  <xs:simpleType name="eCodeContext">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="LOCATION" />
+      <xs:enumeration value="TRAIN_STATION" />
+      <xs:enumeration value="AIRPORT" />
+      <xs:enumeration value="AIRPORT_TRAIN_STATION" />
+      <xs:enumeration value="FERRY_PORT" />
+      <xs:enumeration value="DELIVERY_ONLY" />
+      <xs:enumeration value="CITY_DOWNTOWN" />
+      <xs:enumeration value="RAILWAY_BUS_STATION" />
+      <xs:enumeration value="HOTEL" />
+      <xs:enumeration value="ALL" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="eVehicleCategoryType" type="eVehicleCategoryType" />
+  <xs:simpleType name="eVehicleCategoryType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="0" />
+      <xs:enumeration value="1" />
+      <xs:enumeration value="2" />
+      <xs:enumeration value="3" />
+      <xs:enumeration value="4" />
+      <xs:enumeration value="8" />
+      <xs:enumeration value="9" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="eVehicleLocationInformationType" type="eVehicleLocationInformationType" />
+  <xs:simpleType name="eVehicleLocationInformationType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="GENERAL_INFORMATION" />
+      <xs:enumeration value="COLLECTION" />
+      <xs:enumeration value="HOURS_OF_OPERATION" />
+      <xs:enumeration value="AFTER_HOURS_RETURN" />
+      <xs:enumeration value="DRIVING_DIRECTIONS" />
+      <xs:enumeration value="EXPRESS" />
+      <xs:enumeration value="OTHER" />
+      <xs:enumeration value="GAS" />
+      <xs:enumeration value="DELIVERY" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="eDocumentType" type="eDocumentType" />
+  <xs:element name="eVehicleCoverageType" type="eVehicleCoverageType" />
+  <xs:simpleType name="eVehicleCoverageType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="ADDITIONAL_LIABILITY_INSURANCE" />
+      <xs:enumeration value="COMPULSORY_INSURANCE" />
+      <xs:enumeration value="COLLISION_DAMAGE_WAIVER_LDW_COMBO" />
+      <xs:enumeration value="COLLISION_DAMAGE_WAIVER_LDW_COMBO_PLUS" />
+      <xs:enumeration value="DAMAGE_EXCESS_REDUCTION" />
+      <xs:enumeration value="DAMAGE_WAIVER" />
+      <xs:enumeration value="DAMAGE_WAIVER_PLUS" />
+      <xs:enumeration value="FULL_COVERAGE" />
+      <xs:enumeration value="GLASS_TIRE_WAIVER" />
+      <xs:enumeration value="INSURANCE_DEDUCTIBLE_WAIVER" />
+      <xs:enumeration value="INSURANCE_DEDUCTIBLE_WAIVER_PLUS" />
+      <xs:enumeration value="ACCIDENT_LIABILITY_WAIVER" />
+      <xs:enumeration value="INSURANCE_DEDUCTIBLE_WAIVER_REDUCED_LIABILITY" />
+      <xs:enumeration value="INSURANCE" />
+      <xs:enumeration value="LIABILITY_DEDUCTIBLE_COVERAGE" />
+      <xs:enumeration value="LOSS_DAMAGE_INSURANCE" />
+      <xs:enumeration value="LOSS_DAMAGE_WAIVER" />
+      <xs:enumeration value="LDW_DEDUCTIBLE_WAIVER" />
+      <xs:enumeration value="LOSS_DAMAGE_WAIVER_REDUCED_LIABILITY" />
+      <xs:enumeration value="LIABILITY_INSURANCE_SUPPLEMENT" />
+      <xs:enumeration value="MEXICAN_INSURANCE" />
+      <xs:enumeration value="NON_WAIVERABLE_RESPONSIBILITY" />
+      <xs:enumeration value="ACCIDENT_PROTECTION_INSURANCE" />
+      <xs:enumeration value="Partial_COVERAGE" />
+      <xs:enumeration value="PARTIAL_DAMAGE_WAIVER" />
+      <xs:enumeration value="PERSONAL_ACCIDENT_INSURANCE" />
+      <xs:enumeration value="PERSONAL_ACCIDENT_COVERAGE" />
+      <xs:enumeration value="PERSONAL_ACCIDENT_AND_EFFECTS_COVERAGE" />
+      <xs:enumeration value="PERSONAL_EFFECTS_PROTECTION" />
+      <xs:enumeration value="PERSONAL_EFFECTS_COVERAGE" />
+      <xs:enumeration value="PERSONAL_PASSENGER_PROTECTION" />
+      <xs:enumeration value="PERSONAL_PROPERTY_INSURANCE" />
+      <xs:enumeration value="RENTAL_LIABILITY_PROTECTION" />
+      <xs:enumeration value="BAGGAGE_COVERAGE" />
+      <xs:enumeration value="SUPER_COLLISION_DAMAGE_WAIVER" />
+      <xs:enumeration value="SPECIAL_COVERAGE" />
+      <xs:enumeration value="SUPPLEMENTAL_LIABILITY_INSURANCE" />
+      <xs:enumeration value="SUPER_PERSONAL_ACCIDENTAL_AND_EFFECTS_COVERAGE" />
+      <xs:enumeration value="SUPER_PERSONAL_ACCIDENT_INSURANCE" />
+      <xs:enumeration value="SUPER_THEFT_PROTECTION" />
+      <xs:enumeration value="THEFT_PROTECTION_WAIVER" />
+      <xs:enumeration value="THEFT_INSURANCE" />
+      <xs:enumeration value="THEFT_PROTECTION" />
+      <xs:enumeration value="THIRD_PARTY_COVERAGE" />
+      <xs:enumeration value="COMPLETE_COVER_PACKAGE" />
+      <xs:enumeration value="THIRD_PARTY_INSURANCE" />
+      <xs:enumeration value="THIRD_PARTY_PLUS" />
+      <xs:enumeration value="UNINSURED_MOTORIST_COVERAGE" />
+      <xs:enumeration value="UNLIMITED_MILEAGE_WAIVER" />
+      <xs:enumeration value="WAIVER" />
+      <xs:enumeration value="YOUNG_DRIVERS_INSURANCE" />
+      <xs:enumeration value="MAX_COVER" />
+      <xs:enumeration value="AER_ACCIDENT_EXCESS_REDUCTION_PLUS" />
+      <xs:enumeration value="AERvACCIDENT_EXCESS_REDUCTION" />
+      <xs:enumeration value="SUPER_COVER" />
+      <xs:enumeration value="COLLISION_DAMAGE_INSURANCE" />
+      <xs:enumeration value="COLLISION_DAMAGE_WAIVER" />
+      <xs:enumeration value="COLLISION_DAMAGE_WAIVER_PLUS" />
+      <xs:enumeration value="COLLISION_DAMAGE_WAIVER_REDUCED_LIABILITY" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="eVehicleChargePurposeType" type="eVehicleChargePurposeType" />
+  <xs:element name="eChargeType" type="eChargeType" />
+  <xs:simpleType name="eChargeType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="DAILY" />
+      <xs:enumeration value="PER_MINUTE" />
+      <xs:enumeration value="PER_FUNCTION" />
+      <xs:enumeration value="PERvSTAY" />
+      <xs:enumeration value="COMPLIMENTARY" />
+      <xs:enumeration value="OTHER" />
+      <xs:enumeration value="MAXIMUM_CHARGE" />
+      <xs:enumeration value="OVER_MINUTE_CHARGE" />
+      <xs:enumeration value="WEEKLY" />
+      <xs:enumeration value="PER_ROOM_PER_STAY" />
+      <xs:enumeration value="PER_ROOM_PER_NIGHT" />
+      <xs:enumeration value="HOURLY" />
+      <xs:enumeration value="PER_PERSON_PER_STAY" />
+      <xs:enumeration value="PER_PERSON_PER_NIGHT" />
+      <xs:enumeration value="MINIMUM_CHARGE" />
+      <xs:enumeration value="PER_RENTAL" />
+      <xs:enumeration value="PER_ITEM" />
+      <xs:enumeration value="PER_ROOM" />
+      <xs:enumeration value="PER_RESERVATION_BOOKING" />
+      <xs:enumeration value="PER_GALLON" />
+      <xs:enumeration value="PER_DOZEN" />
+      <xs:enumeration value="PER_TRAY" />
+      <xs:enumeration value="HALF_DAY" />
+      <xs:enumeration value="PER_ORDER" />
+      <xs:enumeration value="PER_UNIT" />
+      <xs:enumeration value="ONE_WAY" />
+      <xs:enumeration value="ROUND_TRIP" />
+      <xs:enumeration value="ADDITIONS_PER_STAY" />
+      <xs:enumeration value="PER_OCCURRENCE" />
+      <xs:enumeration value="PER_EVENT" />
+      <xs:enumeration value="PER_PERSON" />
+      <xs:enumeration value="FIRST_USE" />
+      <xs:enumeration value="ONE_TIME_USE" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="eEquipmentType" type="eEquipmentType" />
+  <xs:element name="eTransportationType" type="eTransportationType" />
+  <xs:element name="eLocationType" type="eLocationType" />
+  <xs:simpleType name="eLocationType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="LOCATION" />
+      <xs:enumeration value="TRAIN_STATION" />
+      <xs:enumeration value="AIRPORT" />
+      <xs:enumeration value="AIRPORT_TRAIN_STATION" />
+      <xs:enumeration value="FERRY_PORT" />
+      <xs:enumeration value="DELIVERY_ONLY" />
+      <xs:enumeration value="CITY_DOWNTOWN" />
+      <xs:enumeration value="RAILWAY_BUS_STATION" />
+      <xs:enumeration value="HOTEL" />
+      <xs:enumeration value="ALL" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="eVehicleCarSizeType" type="eVehicleCarSizeType" />
+  <xs:simpleType name="eVehicleCarSizeType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="MINI" />
+      <xs:enumeration value="SUBCOMPACT" />
+      <xs:enumeration value="ECONOMY" />
+      <xs:enumeration value="COMPACT" />
+      <xs:enumeration value="MID_SIZE" />
+      <xs:enumeration value="INTERMEDIATE" />
+      <xs:enumeration value="STANDARD" />
+      <xs:enumeration value="FULLSIZE" />
+      <xs:enumeration value="LUXURY" />
+      <xs:enumeration value="PREMIUM" />
+      <xs:enumeration value="MINI_VAN" />
+      <xs:enumeration value="TWELVE_PASSANGER_VAN" />
+      <xs:enumeration value="MOVING_VAN" />
+      <xs:enumeration value="FIVETEEN_PASSANGER_VAN" />
+      <xs:enumeration value="CARGO_VAN" />
+      <xs:enumeration value="MOPED" />
+      <xs:enumeration value="STRETCH" />
+      <xs:enumeration value="REGULAR" />
+      <xs:enumeration value="UNIQUE" />
+      <xs:enumeration value="EXOTIC" />
+      <xs:enumeration value="SMALL_MEDIUM_TRUCK" />
+      <xs:enumeration value="LARGE_TRUCK" />
+      <xs:enumeration value="SMALL_SUV" />
+      <xs:enumeration value="MEDIUM_SUV" />
+      <xs:enumeration value="LARGE_SUV" />
+      <xs:enumeration value="EXOTIC_SUV" />
+      <xs:enumeration value="FOUR_WHEEL_DRIVE" />
+      <xs:enumeration value="SPECIAL" />
+      <xs:enumeration value="MINI_ELITE" />
+      <xs:enumeration value="ECONOMY_ELITE" />
+      <xs:enumeration value="COMPACT_ELITE" />
+      <xs:enumeration value="INTERMEDIATE_ELITE" />
+      <xs:enumeration value="STANDARD_ELITE" />
+      <xs:enumeration value="FULLSIZE_ELITE" />
+      <xs:enumeration value="PREMIUM_ELITE" />
+      <xs:enumeration value="LUXURY_ELITE" />
+      <xs:enumeration value="OVERSIZE" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="ePhoneTechnologyType" type="ePhoneTechnologyType" />
+  <xs:element name="eEmailType" type="eEmailType" />
+  <xs:simpleType name="eEmailType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="PERSONAL" />
+      <xs:enumeration value="BUSINESS" />
+      <xs:enumeration value="LISTSERVE" />
+      <xs:enumeration value="INTERNET" />
+      <xs:enumeration value="PROPERTY_" />
+      <xs:enumeration value="SALES_OFFICE" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="eVecinityCode" type="eVecinityCode" />
+  <xs:element name="eRateCategoryCode" type="eRateCategoryCode" />
+  <xs:simpleType name="eRateCategoryCode">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="GOVERNMENT" />
+      <xs:enumeration value="INDUSTRY" />
+      <xs:enumeration value="FULLY_INCLUSIVE" />
+      <xs:enumeration value="INCLUSIVE" />
+      <xs:enumeration value="NEGOTIATE" />
+      <xs:enumeration value="PROMOTIONAL" />
+      <xs:enumeration value="CREDENTIAL" />
+      <xs:enumeration value="STANDARD" />
+      <xs:enumeration value="CONSORTIUMS" />
+      <xs:enumeration value="CONVENTIONS" />
+      <xs:enumeration value="BUSINESS" />
+      <xs:enumeration value="LEISURE" />
+      <xs:enumeration value="EMPLOYEE" />
+      <xs:enumeration value="VIP" />
+      <xs:enumeration value="ALL" />
+      <xs:enumeration value="ASSOCIATION" />
+      <xs:enumeration value="BUSINESS_STANDARD" />
+      <xs:enumeration value="CORPORATE" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="eUniqueIdType" type="eUniqueIdType" />
+  <xs:element name="eInformationType" type="eInformationType" />
+  <xs:element name="eRuleTypes" type="eRuleTypes" />
+  <xs:simpleType name="eRuleTypes">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="CANCEL" />
+      <xs:enumeration value="PREPAY" />
+      <xs:enumeration value="DEPOSIT" />
+      <xs:enumeration value="GUARANTEE" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="eVehicleTransmissionType" type="eVehicleTransmissionType" />
+  <xs:element name="eLocationCodeContextType" type="eLocationCodeContextType" />
+  <xs:element name="eTextFormatType" type="eTextFormatType" />
+  <xs:element name="ePenaltyType" type="ePenaltyType" />
+  <xs:element name="eOneWayPolicy" type="eOneWayPolicy" />
+  <xs:element name="eFuelPolicyType" type="eFuelPolicyType" />
+  <xs:element name="eFuelType" type="eFuelType" />
+  <xs:element name="eCalculationApplicabilityType" type="eCalculationApplicabilityType" />
+  <xs:element name="eVehicleUnitNameType" type="eVehicleUnitNameType" />
+  <xs:element name="CarProvider" nillable="true" type="CarProvider" />
+  <xs:complexType name="CarProvider" abstract="true">
+    <xs:complexContent mixed="false">
+      <xs:extension base="ProviderBase" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="ProviderBase" abstract="true" />
+</xs:schema>
