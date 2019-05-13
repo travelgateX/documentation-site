@@ -9,10 +9,10 @@ permalink: /docs/car/DSF/common-elements
 
 This node will be in every request and response objects.
 
-The request objects contains the supplier's configuration, urls and
+The request objects contain the supplier's configuration, urls and
 credentials.
 
-The response object contains the operation status and errors if any.
+The response object contains the operation status and errors, if any.
 
 
 
@@ -53,10 +53,10 @@ The response object contains the operation status and errors if any.
 | timeoutMillisencods			| 1    		| Integer      	| Timeout in milliseconds that the client will be waiting for a response.	|
 | source            			| 1    		| source       	| Information about source requesting the operation.		|
 | source/agencyCode 			| 0..1 		| String       	| Agency code that requests the operation.			|
-| source/languageCode			| 1    		| String       	| Language code (ISO 3166-1 alpha-2) format.			|
+| source/languageCode			| 1    		| String       	| Language code (ISO 3166-1 alpha-2 format).			|
 | filterAuditData   			| 1    		| FilterAuditData | Information about enable or enable information returned in audit data.	|
 | filterAuditData/registerTransactions	| 1    		| Boolean      	| Active register of transactions with provider.		|
-| CarBaseRQ/Configuration		| 1    		| Configuracion Proveedor | Configuration needed to send the transaction to the provider.	|
+| CarBaseRQ/Configuration		| 1    		| Configuracion Proveedor | Configuration that needs to be sent in the transaction to the provider.	|
 | @Configuration/ProviderCode		| 1    		| String       	| Provider's code.						|
 | Configuration/Credentials		| 1    		| Configuracion Credenciales | Connection credentials.				|
 | @Credentials/user 			| 1    		| String       	| User of the session for the connection.			|
@@ -115,7 +115,7 @@ The response object contains the operation status and errors if any.
 | --------------------------------------------- | ------------- | ------------- | ----------------------------------------------------- |
 | CarBaseRS 					| 1         	|		| Root node.						|
 | CarBaseRS/Success				| 0..1		| String	| This object doesn't contain any information. A response with a "Success" object indicates that everything went ok.	|
-| CarBaseRS/Warnings 				| 0..1		| Warnings	| Contains a list of warning elements. Important but non critical information returned in the provider's response is shown in this object.	|
+| CarBaseRS/Warnings 				| 0..1		| Warnings	| Contains a list of warning elements. Important but non-critical information returned in the provider's response is shown in this object.	|
 | Warning/code					| 1  		| String	| A code that identifies the warning.			|
 | Warning/text					| 1  		| String	| Message of the warning.				|
 | CarBaseRS/Errors				| 0..1		| Errors	| Contains a list of error elements. Important and critical information returned in the provider's response is shown in this object.  |
@@ -123,8 +123,8 @@ The response object contains the operation status and errors if any.
 | @Error/Code					| 1  		| errorCodes Type | Code that indicates the error type. 		|
 | @Error/ShortText				| 1  		| String	| Brief description of the returned error.		|
 | Error/text					| 1  		| String	| Complete error message.				|
-| CarBaseRS/auditData				| 1  		| AuditData	| In case registerTransactions has been set to true on the request this object will provide information about the communication with the provider. Otherwise it will be null.	|
-| auditData/Transactions			| 1  		| List of Transaction | Object that contains information of a transaction sent to the provider's system.	|
+| CarBaseRS/auditData				| 1  		| AuditData	| In case registerTransactions has been set to true on the request this object will provide information about the communication with the provider. Otherwise, it will be null.	|
+| auditData/Transactions			| 1  		| List of Transactions | Object that contains information of a transaction sent to the provider's system.	|
 | transaction/timeStamp 			| 1  		| timeStamp	| Indicates the time in which the message has been sent.  |
 | transaction/RQ				| 1  		| String	| Serialized request object sent to the provider.     	|
 | transaction/RS				| 1  		| String	| Serialized response object sent to the provider.     	|
