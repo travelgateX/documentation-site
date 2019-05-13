@@ -8,10 +8,10 @@ permalink: /docs/activities/DSF/common-elements
 
 This node will be in every request and response objects.
 
-The request objects contains the supplier's configuration, urls and
+The request object contains the supplier's configuration, urls and
 credentials.
 
-The response object contains the operation status and errors if any.
+The response object contains the operation status and errors, if any.
 
 
 
@@ -60,8 +60,8 @@ The response object contains the operation status and errors if any.
 | source               			| 1           	|		| Information about source requesting the operation. |
 | source/languageCode  			| 1    		| String	| Language code (ISO 3166-1 alpha-2) format.	|
 | filterAuditData      			| 1           	|		| Information about enable or disable information returned in audit data. |
-| filterAuditData/registerTransactions	| 1    		| Boolean	| If true, registers the transactions  with provider.|
-| Configuration        			| 1           	|		| Information about source requesting the  operation.|
+| filterAuditData/registerTransactions	| 1    		| Boolean	| If true, it registers the transactions with provider.|
+| Configuration        			| 1           	|		| Information about source requesting the operation.|
 | @codeProvider        			| 1    		| String	| Agency code of the provider.			|
 | Configuration/Credentials		| 1           	|		| Provider credentials.				|
 | Configuration/Credentials/User	| 0..1		| String	| User code for connection.			|
