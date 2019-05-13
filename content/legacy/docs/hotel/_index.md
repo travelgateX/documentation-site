@@ -1,9 +1,9 @@
 +++
-title = "Activities API documentation"
-pagetitle = "Activities API documentation"
+title = "Hotel API documentation"
+pagetitle = "Hotel API documentation"
 description = "Read documentation on diferent Legacy APIs"
 icon = "fa-list" 
-weight = 6
+weight = 7
 alwaysopen = false
 +++
 

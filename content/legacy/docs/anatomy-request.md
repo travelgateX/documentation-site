@@ -3,7 +3,7 @@ title = "Anatomy of Request"
 pagetitle = "Anatomy of Request"
 description = "Introduction to Service Endpoints"
 icon = "fa-map"
-weight = 3
+weight = 5
 +++
 
 

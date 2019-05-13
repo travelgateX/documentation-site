@@ -1,7 +1,7 @@
 +++
-title = "Legacy documentation"
-pagetitle = ""
-description = ""
+title = "Legacy"
+pagetitle = "Legacy"
+description = "Legacy system documentation"
 weight = 8
 alwaysopen = false
 isDirectory = false
