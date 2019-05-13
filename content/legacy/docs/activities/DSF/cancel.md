@@ -101,7 +101,7 @@ Not implemented by all suppliers
 | @type             			| 1    		| String	| Activity booked type See table of eLocatorType.|
 | Reservation/ReservationInfo   			| 1           	|		| Information about price after cancellation call. |
 | Reservation/ReservationInfo/Pricing/Summary	| 0..1        	|		| Summary of cancellation price. (if supplier informed us.) |
-| @Amount           			| 1 		| Decimal	| price amount. 				|
+| @Amount           			| 1 		| Decimal	| Price amount. 				|
 | @CurrencyCode     			| 1 		| String 	|Currency code (ISO 4217).			|
 | @Commission     			| 0..1 		| String 	|Percentage commission.			|
 
@@ -124,6 +124,6 @@ Indicates which type of locator is sent.
 | **Type** | **Description** |
 | ---------| --------------- | 
 | Client | Locator get in our request.|
-| Provider | Locator send by the supplier |
+| Provider | Locator sent by the supplier |
 | Ticket | Locator for specific ticket |
 | Other | Other type of locator.|
