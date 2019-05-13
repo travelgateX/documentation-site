@@ -7,7 +7,7 @@ permalink: /docs/hotel/data-structure
 ---
 
 The structure of the API specification follows a standard. This document intends to explain every aspect of this structure and their fields. 
-You can also download the XSD file containing each and every data structures of the API from [here](/articles-pub/docs/hotel/storage/hotel.xsd)
+You can also download the XSD file containing each and every data structures of the API from [here](/legacy/docs/hotel/storage/hotel.xsd)
 
 You can read about what changes might and what changes might not cause an error, below:
 
@@ -54,29 +54,29 @@ specific objects related to the operation
 
 **Data structure content:**
 
-1. [Common-Elements](/docs/hotel/DSF/Common-Elements)
-2. [Avail](/docs/hotel/DSF/Avail)
-3. [Valuation](/docs/hotel/DSF/Valuation)
-4. [Reservation](/docs/hotel/DSF/Reservation)
-5. [ReservationRead](/docs/hotel/DSF/ReservationRead)
-6. [ReservationList](/docs/hotel/DSF/ReservationList)
-7. [Cancel](/docs/hotel/DSF/Cancel)
-8. [HotelList](/docs/hotel/DSF/HotelList)
-9. [DescriptiveInfo](/docs/hotel/DSF/DescriptiveInfo)
-10. [DescriptiveInfoExtended](/docs/hotel/DSF/DescriptiveInfoExtended)
-11. [AvailDestinationTree](/docs/hotel/DSF/AvailDestinationTree)
-12. [GeographicDestinationTree](/docs/hotel/DSF/GeographicDestinationTree)
-13. [MealPlanList](/docs/hotel/DSF/MealPlanList)
-14. [RoomList](/docs/hotel/DSF/RoomList)
-15. [CategoryList](/docs/hotel/DSF/CategoryList)
-16. [StaticConfiguration](/docs/hotel/DSF/StaticConfiguration)
-17. [RuntimeConfiguration](/docs/hotel/DSF/RuntimeConfiguration)
-18. [ModifyValuation](/docs/hotel/DSF/ModifyValuation)
-19. [ModifyReservation](/docs/hotel/DSF/ModifyReservation)
-20. [CurrencyList](/docs/hotel/DSF/CurrencyList)
-21. [Lists of Data](/docs/hotel/DSF/ListData)
-22. [MarketList](/docs/hotel/DSF/MarketList)
-23. [MetaData](/docs/hotel/DSF/MetaData)
+1. [Common-Elements](/legacy/docs/hotel/DSF/Common-Elements)
+2. [Avail](/legacy/docs/hotel/DSF/Avail)
+3. [Valuation](/legacy/docs/hotel/DSF/Valuation)
+4. [Reservation](/legacy/docs/hotel/DSF/Reservation)
+5. [ReservationRead](/legacy/docs/hotel/DSF/ReservationRead)
+6. [ReservationList](/legacy/docs/hotel/DSF/ReservationList)
+7. [Cancel](/legacy/docs/hotel/DSF/Cancel)
+8. [HotelList](/legacy/docs/hotel/DSF/HotelList)
+9. [DescriptiveInfo](/legacy/docs/hotel/DSF/DescriptiveInfo)
+10. [DescriptiveInfoExtended](/legacy/docs/hotel/DSF/DescriptiveInfoExtended)
+11. [AvailDestinationTree](/legacy/docs/hotel/DSF/AvailDestinationTree)
+12. [GeographicDestinationTree](/legacy/docs/hotel/DSF/GeographicDestinationTree)
+13. [MealPlanList](/legacy/docs/hotel/DSF/MealPlanList)
+14. [RoomList](/legacy/docs/hotel/DSF/RoomList)
+15. [CategoryList](/legacy/docs/hotel/DSF/CategoryList)
+16. [StaticConfiguration](/legacy/docs/hotel/DSF/StaticConfiguration)
+17. [RuntimeConfiguration](/legacy/docs/hotel/DSF/RuntimeConfiguration)
+18. [ModifyValuation](/legacy/docs/hotel/DSF/ModifyValuation)
+19. [ModifyReservation](/legacy/docs/hotel/DSF/ModifyReservation)
+20. [CurrencyList](/legacy/docs/hotel/DSF/CurrencyList)
+21. [Lists of Data](/legacy/docs/hotel/DSF/ListData)
+22. [MarketList](/legacy/docs/hotel/DSF/MarketList)
+23. [MetaData](/legacy/docs/hotel/DSF/MetaData)
 
 
 
