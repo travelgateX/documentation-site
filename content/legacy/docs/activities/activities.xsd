@@ -1,0 +1,1340 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Attribute" nillable="true" type="Attribute" />
+  <xs:complexType name="Attribute">
+    <xs:attribute name="key" type="xs:string" />
+    <xs:attribute name="value" type="xs:string" />
+  </xs:complexType>
+  <xs:element name="Attributes" nillable="true" type="Attributes" />
+  <xs:complexType name="Attributes">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Attribute" type="Attribute" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ConfigurationCredentials" nillable="true" type="ConfigurationCredentials" />
+  <xs:complexType name="ConfigurationCredentials">
+    <xs:sequence>
+      <xs:element minOccurs="1" maxOccurs="1" name="UrlGeneric" nillable="true" type="xs:string" />
+      <xs:element minOccurs="1" maxOccurs="1" name="UrlIdentification" nillable="true" type="xs:string" />
+      <xs:element minOccurs="1" maxOccurs="1" name="UrlAvailability" nillable="true" type="xs:string" />
+      <xs:element minOccurs="1" maxOccurs="1" name="UrlBook" nillable="true" type="xs:string" />
+      <xs:element minOccurs="1" maxOccurs="1" name="UrlsSpecific" nillable="true" type="Attributes" />
+    </xs:sequence>
+    <xs:attribute name="user" type="xs:string" />
+    <xs:attribute name="password" type="xs:string" />
+  </xs:complexType>
+  <xs:element name="ConfigurationProvider" nillable="true" type="ConfigurationProvider" />
+  <xs:complexType name="ConfigurationProvider">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="Credentials" type="ConfigurationCredentials" />
+      <xs:element minOccurs="0" maxOccurs="1" name="Attributes" type="Attributes" />
+    </xs:sequence>
+    <xs:attribute name="codeProvider" type="xs:string" />
+  </xs:complexType>
+  <xs:element name="ErrorsTypes" nillable="true" type="ErrorsTypes" />
+  <xs:complexType name="ErrorsTypes" />
+  <xs:element name="OTA_TourActivityAvailRQ" type="OTA_TourActivityAvailRQ" />
+  <xs:complexType name="OTA_TourActivityAvailRQ">
+    <xs:complexContent mixed="false">
+      <xs:extension base="ActivitiesBaseRQ">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="1" name="TourActivity" type="TourActivity" />
+        </xs:sequence>
+        <xs:attribute name="PrimaryLangID" type="xs:string" />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="ActivitiesBaseRQ" abstract="true">
+    <xs:complexContent mixed="false">
+      <xs:extension base="BaseRQ">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="1" name="Configuration" type="ConfigurationProvider" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="BaseRQ">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="echoToken" type="xs:string" />
+      <xs:element minOccurs="1" maxOccurs="1" name="timeoutMilliseconds" type="xs:int" />
+      <xs:element minOccurs="0" maxOccurs="1" name="source" type="Source" />
+      <xs:element minOccurs="0" maxOccurs="1" name="filterAuditData" type="FilterAuditData" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="Source">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="agencyCode" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="languageCode" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="FilterAuditData">
+    <xs:sequence>
+      <xs:element minOccurs="1" maxOccurs="1" name="registerTransactions" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="TourActivity">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="BasicInfo" type="BasicInfo" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="CategoryAndTypes" type="CategoryAndType" />
+      <xs:element minOccurs="0" maxOccurs="1" name="Schedule" type="Schedule" />
+      <xs:element minOccurs="0" maxOccurs="1" name="Location" type="Location" />
+      <xs:element minOccurs="0" maxOccurs="1" name="PickupDropoffList" type="PickupDropoffList" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ParticipantCount" type="ParticipantCount" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="BasicInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="MultipleTourActivitySearch" type="TourActivityIDList" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="IncludedServices" type="IncludedService" />
+    </xs:sequence>
+    <xs:attribute name="Name" type="xs:string" />
+    <xs:attribute name="TourActivityID" type="xs:string" />
+  </xs:complexType>
+  <xs:complexType name="TourActivityIDList">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="TourActivityID" type="TourActivityID" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="TourActivityID">
+    <xs:simpleContent>
+      <xs:extension base="xs:string" />
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="IncludedService">
+    <xs:simpleContent>
+      <xs:extension base="xs:string" />
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="CategoryAndType">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="Category" type="Category" />
+      <xs:element minOccurs="0" maxOccurs="1" name="TypeTags" type="TypeTags" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="Category">
+    <xs:attribute name="Code" type="xs:string" />
+    <xs:attribute name="Extension" type="eExtensionClassType" use="required" />
+  </xs:complexType>
+  <xs:simpleType name="eExtensionClassType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Cultural" />
+      <xs:enumeration value="EcoAdventure" />
+      <xs:enumeration value="Educational" />
+      <xs:enumeration value="FamilyFun" />
+      <xs:enumeration value="FoodBeverage" />
+      <xs:enumeration value="Free" />
+      <xs:enumeration value="Other_" />
+      <xs:enumeration value="Romantic" />
+      <xs:enumeration value="SportsRecreation" />
+      <xs:enumeration value="WheelchairAccess" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:complexType name="TypeTags">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="TypeTag" type="TypeTag" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="TypeTag">
+    <xs:attribute name="id" type="xs:string" />
+    <xs:attribute name="Name" type="xs:string" />
+  </xs:complexType>
+  <xs:complexType name="Schedule">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="Summary" type="Summary" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Detail" type="Detail" />
+    </xs:sequence>
+    <xs:attribute name="StartPeriod" type="xs:dateTime" />
+    <xs:attribute name="EndPeriod" type="xs:dateTime" />
+  </xs:complexType>
+  <xs:complexType name="Summary">
+    <xs:attribute name="Start" type="xs:dateTime" use="required" />
+    <xs:attribute name="End" type="xs:dateTime" use="required" />
+  </xs:complexType>
+  <xs:complexType name="Detail">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="OperationTimes" type="OperationTimes" />
+      <xs:element minOccurs="0" maxOccurs="1" name="TPA_Extensions" type="TPA_Extensions" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="OperationTimes">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="OperationTime" type="OperationTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="OperationTime">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="Duration" type="Duration" />
+    </xs:sequence>
+    <xs:attribute name="Start" type="xs:dateTime" />
+    <xs:attribute name="End" type="xs:dateTime" />
+    <xs:attribute name="totalSeats" type="xs:int" />
+    <xs:attribute name="totalSeatsForSale" type="xs:int" />
+    <xs:attribute name="occupiedSeats" type="xs:int" />
+  </xs:complexType>
+  <xs:complexType name="Duration">
+    <xs:attribute name="value" type="xs:int" use="required" />
+    <xs:attribute name="unity" type="eDurationUnityType" use="required" />
+  </xs:complexType>
+  <xs:simpleType name="eDurationUnityType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="UNDEFINED" />
+      <xs:enumeration value="Hours" />
+      <xs:enumeration value="Days" />
+      <xs:enumeration value="Weeks" />
+      <xs:enumeration value="Months" />
+      <xs:enumeration value="Minutes" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:complexType name="TPA_Extensions">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="Seat" type="Seat" />
+      <xs:element minOccurs="0" maxOccurs="1" name="Confirmation" type="Confirmation" />
+      <xs:element minOccurs="0" maxOccurs="1" name="DynamicToken" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="Issue" type="Issue" />
+      <xs:element minOccurs="0" maxOccurs="1" name="Attributes" type="Attributes" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="Seat">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="Level" type="Level" />
+      <xs:element minOccurs="0" maxOccurs="1" name="Area" type="Area" />
+      <xs:element minOccurs="0" maxOccurs="1" name="Zone" type="Zone" />
+      <xs:element minOccurs="0" maxOccurs="1" name="Sector" type="Sector" />
+      <xs:element minOccurs="0" maxOccurs="1" name="UrlSitting" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="Level">
+    <xs:attribute name="id" type="xs:string" />
+    <xs:attribute name="description" type="xs:string" />
+    <xs:attribute name="totalSeats" type="xs:int" />
+    <xs:attribute name="totalSeatsForSale" type="xs:int" />
+    <xs:attribute name="occupiedSeats" type="xs:int" />
+  </xs:complexType>
+  <xs:complexType name="Area">
+    <xs:attribute name="id" type="xs:string" />
+    <xs:attribute name="description" type="xs:string" />
+    <xs:attribute name="totalSeats" type="xs:int" />
+    <xs:attribute name="totalSeatsForSale" type="xs:int" />
+    <xs:attribute name="occupiedSeats" type="xs:int" />
+  </xs:complexType>
+  <xs:complexType name="Zone">
+    <xs:attribute name="id" type="xs:string" />
+    <xs:attribute name="description" type="xs:string" />
+    <xs:attribute name="totalSeats" type="xs:int" />
+    <xs:attribute name="totalSeatsForSale" type="xs:int" />
+    <xs:attribute name="occupiedSeats" type="xs:int" />
+  </xs:complexType>
+  <xs:complexType name="Sector">
+    <xs:attribute name="id" type="xs:string" />
+    <xs:attribute name="description" type="xs:string" />
+    <xs:attribute name="totalSeats" type="xs:int" />
+    <xs:attribute name="totalSeatsForSale" type="xs:int" />
+    <xs:attribute name="occupiedSeats" type="xs:int" />
+  </xs:complexType>
+  <xs:complexType name="Confirmation">
+    <xs:attribute name="ID" type="xs:string" />
+    <xs:attribute name="type" type="eLocatorType" use="required" />
+  </xs:complexType>
+  <xs:simpleType name="eLocatorType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="CLIENT" />
+      <xs:enumeration value="PROVIDER" />
+      <xs:enumeration value="TICKET" />
+      <xs:enumeration value="OTHER" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:complexType name="Issue">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="Tickets" type="Tickets" />
+    </xs:sequence>
+    <xs:attribute name="Mandatory" type="xs:boolean" use="required" />
+  </xs:complexType>
+  <xs:complexType name="Tickets">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Ticket" type="Ticket" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="Ticket">
+    <xs:attribute name="idTicket" type="xs:string" />
+    <xs:attribute name="url" type="xs:string" />
+  </xs:complexType>
+  <xs:complexType name="Location">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="Region" type="Region" />
+      <xs:element minOccurs="0" maxOccurs="1" name="Position" type="Position" />
+      <xs:element minOccurs="0" maxOccurs="1" name="PositionArea" type="PositionArea" />
+      <xs:element minOccurs="0" maxOccurs="1" name="Address" type="Address" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="Region">
+    <xs:attribute name="RegionCode" type="xs:string" />
+    <xs:attribute name="RegionName" type="xs:string" />
+  </xs:complexType>
+  <xs:complexType name="Position">
+    <xs:attribute name="Latitude" type="xs:string" />
+    <xs:attribute name="Longitude" type="xs:string" />
+  </xs:complexType>
+  <xs:complexType name="PositionArea">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="PositionArea" type="Position" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="Address">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="AddressLine" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="CityName" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="PostalCode" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="County" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="StateProv" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="PickupDropoffList">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="PickupDropoff" type="PickupDropoff" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="PickupDropoff">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="PickupValidity" type="PickupValidity" />
+      <xs:element minOccurs="0" maxOccurs="1" name="PickupPosition" type="Position" />
+      <xs:element minOccurs="0" maxOccurs="1" name="PickupArea" type="PickupArea" />
+    </xs:sequence>
+    <xs:attribute name="PickupInd" type="xs:boolean" use="required" />
+    <xs:attribute name="DropoffInd" type="xs:boolean" use="required" />
+    <xs:attribute name="OtherInfo" type="xs:string" />
+    <xs:attribute name="DateTimePickup" type="xs:dateTime" />
+    <xs:attribute name="DateTimeDropOff" type="xs:dateTime" />
+    <xs:attribute name="LocationName" type="xs:string" />
+    <xs:attribute name="AddressLine" type="xs:string" />
+  </xs:complexType>
+  <xs:complexType name="PickupValidity">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="DaysOfWeek" type="DaysOfWeek" />
+    </xs:sequence>
+    <xs:attribute name="FromDate" type="xs:dateTime" use="required" />
+    <xs:attribute name="ToDate" type="xs:dateTime" use="required" />
+  </xs:complexType>
+  <xs:complexType name="DaysOfWeek">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DayOfWeek" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="PickupArea">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Position" type="Position" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ParticipantCount">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="Price" type="Price" />
+    </xs:sequence>
+    <xs:attribute name="Age" type="xs:int" use="required" />
+    <xs:attribute name="Quantity" type="xs:int" use="required" />
+  </xs:complexType>
+  <xs:complexType name="Price">
+    <xs:attribute name="Amount" type="xs:decimal" use="required" />
+    <xs:attribute name="CurrencyCode" type="xs:string" />
+    <xs:attribute name="IsBinding" type="xs:boolean" />
+    <xs:attribute name="Commission" type="xs:decimal" />
+    <xs:attribute name="ReferencePriceAmount" type="xs:decimal" />
+  </xs:complexType>
+  <xs:element name="OTA_TourActivityAvailRS" type="OTA_TourActivityAvailRS" />
+  <xs:complexType name="OTA_TourActivityAvailRS">
+    <xs:complexContent mixed="false">
+      <xs:extension base="ActivitiesBaseRS">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="TourActivityInfo" type="TourActivityInfo" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="ActivitiesBaseRS" abstract="true">
+    <xs:complexContent mixed="false">
+      <xs:extension base="BaseRS">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="1" name="Success" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="Warnings" type="Warnings" />
+          <xs:element minOccurs="0" maxOccurs="1" name="Errors" type="Errors" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="BaseRS">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="echoToken" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="auditData" type="AuditData" />
+      <xs:element minOccurs="1" maxOccurs="1" name="operationImplemented" type="xs:boolean" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="applicationErrors" type="ApplicationError" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="AuditData">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="transactions" type="Transaction" />
+      <xs:element minOccurs="1" maxOccurs="1" name="timeStamp" type="xs:dateTime" />
+      <xs:element minOccurs="1" maxOccurs="1" name="processTimeMilliseconds" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="Transaction">
+    <xs:sequence>
+      <xs:element minOccurs="1" maxOccurs="1" name="timeStamp" type="xs:dateTime" />
+      <xs:element minOccurs="0" maxOccurs="1" name="RQ" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="RS" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ApplicationError">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="code" type="xs:string" />
+      <xs:element minOccurs="1" maxOccurs="1" name="type" type="xs:int" />
+      <xs:element minOccurs="0" maxOccurs="1" name="description" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="Warnings">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Warning" type="Warning" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="Warning">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute name="Code" type="xs:string" />
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="Errors">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Error" type="MyError" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="MyError">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute name="Code" type="xs:string" />
+        <xs:attribute name="ShortText" type="xs:string" />
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="TourActivityInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="BasicInfo" type="BasicInfo" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Extra" type="Extra" />
+      <xs:element minOccurs="0" maxOccurs="1" name="Schedule" type="Schedule" />
+      <xs:element minOccurs="0" maxOccurs="1" name="CategoryAndType" type="CategoryAndType" />
+      <xs:element minOccurs="0" maxOccurs="1" name="Location" type="Location" />
+      <xs:element minOccurs="0" maxOccurs="1" name="PickupDropoffList" type="PickupDropoffList" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ParticipantCount" type="ParticipantCount" />
+      <xs:element minOccurs="0" maxOccurs="1" name="Description" type="Description" />
+      <xs:element minOccurs="0" maxOccurs="1" name="Pricing" type="Pricing" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="SupplierOperator" type="SupplierOperator" />
+      <xs:element minOccurs="0" maxOccurs="1" name="Communication" type="Communication" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="Extra">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="Pricing" type="Pricing" />
+    </xs:sequence>
+    <xs:attribute name="SupplierCode" type="xs:string" />
+    <xs:attribute name="Name" type="xs:string" />
+    <xs:attribute name="Quantity" type="xs:int" />
+    <xs:attribute name="Description" type="xs:string" />
+  </xs:complexType>
+  <xs:complexType name="Pricing">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="Rate" type="Rate" />
+      <xs:element minOccurs="0" maxOccurs="1" name="Summary" type="SummaryPrice" />
+      <xs:element minOccurs="0" maxOccurs="1" name="IncludedTaxes" type="IncludedTaxes" />
+      <xs:element minOccurs="0" maxOccurs="1" name="IncludedCharges" type="IncludedCharges" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ParticipantCategory" type="ParticipantCategory" />
+      <xs:element minOccurs="0" maxOccurs="1" name="Promotions" type="Promotions" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="Rate">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="CancellationPolicies" type="CancellationPolicies" />
+    </xs:sequence>
+    <xs:attribute name="RateID" type="xs:string" />
+  </xs:complexType>
+  <xs:complexType name="CancellationPolicies">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="CancellationPolicies" type="CancellationPolicy" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="CancellationPolicy">
+    <xs:attribute name="Amount" type="xs:decimal" use="required" />
+    <xs:attribute name="DateFrom" type="xs:dateTime" use="required" />
+    <xs:attribute name="PenaltyType" type="ePenaltyType" use="required" />
+    <xs:attribute name="NoRefundable" type="xs:boolean" use="required" />
+  </xs:complexType>
+  <xs:simpleType name="ePenaltyType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="PERCENTUAL" />
+      <xs:enumeration value="PER_DAY" />
+      <xs:enumeration value="TOTAL_AMOUNT" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:complexType name="SummaryPrice">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="TaxAmounts" type="TaxAmounts" />
+      <xs:element minOccurs="0" maxOccurs="1" name="PricingType" type="PricingType" />
+    </xs:sequence>
+    <xs:attribute name="Amount" type="xs:decimal" use="required" />
+    <xs:attribute name="ReferencePriceAmount" type="xs:decimal" />
+    <xs:attribute name="isTTOO" type="xs:boolean" />
+    <xs:attribute name="CurrencyCode" type="xs:string" />
+    <xs:attribute name="IsBinding" type="xs:boolean" />
+    <xs:attribute name="Commission" type="xs:decimal" />
+  </xs:complexType>
+  <xs:complexType name="TaxAmounts">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="TaxAmount" type="TaxAmount" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="TaxAmount">
+    <xs:attribute name="Description" type="xs:string" />
+    <xs:attribute name="Percentage" type="xs:string" />
+    <xs:attribute name="Total" type="xs:string" />
+  </xs:complexType>
+  <xs:complexType name="PricingType">
+    <xs:simpleContent>
+      <xs:extension base="ePricingType">
+        <xs:attribute name="Extension" type="eExtensionPricingType" use="required" />
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:simpleType name="ePricingType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Other_" />
+      <xs:enumeration value="PerGroup" />
+      <xs:enumeration value="PerPerson" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="eExtensionPricingType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Other_" />
+      <xs:enumeration value="PerGroupPerDay" />
+      <xs:enumeration value="PerPersonPerDay" />
+      <xs:enumeration value="PerTotal" />
+      <xs:enumeration value="PerPerson" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:complexType name="IncludedTaxes">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="IncludedTax" type="IncludedTax" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="IncludedTax">
+    <xs:attribute name="id" type="eTaxId" use="required" />
+  </xs:complexType>
+  <xs:simpleType name="eTaxId">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="V" />
+      <xs:enumeration value="G" />
+      <xs:enumeration value="O" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:complexType name="IncludedCharges">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="includedCharge" type="ArrayOfIncludedCharge" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ArrayOfIncludedCharge">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="IncludedCharge" nillable="true" type="IncludedCharge" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="IncludedCharge">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="Summary" type="SummaryPrice" />
+    </xs:sequence>
+    <xs:attribute name="code" type="xs:string" />
+    <xs:attribute name="type" type="xs:string" />
+    <xs:attribute name="name" type="xs:string" />
+    <xs:attribute name="description" type="xs:string" />
+  </xs:complexType>
+  <xs:complexType name="ParticipantCategory">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="QualifierInfo" type="QualifierInfo" />
+      <xs:element minOccurs="0" maxOccurs="1" name="Price" type="Price" />
+      <xs:element minOccurs="0" maxOccurs="1" name="TPA_Extensions" type="TPA_Extensions" />
+    </xs:sequence>
+    <xs:attribute name="Age" type="xs:int" />
+    <xs:attribute name="isTTOO" type="xs:boolean" />
+    <xs:attribute name="refId" type="xs:int" use="required" />
+    <xs:attribute name="minPax" type="xs:int" />
+    <xs:attribute name="maxPax" type="xs:int" />
+  </xs:complexType>
+  <xs:complexType name="QualifierInfo">
+    <xs:simpleContent>
+      <xs:extension base="eQualifierType">
+        <xs:attribute name="Extension" type="xs:string" />
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:simpleType name="eQualifierType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Adult" />
+      <xs:enumeration value="Children" />
+      <xs:enumeration value="Infant" />
+      <xs:enumeration value="Other" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:complexType name="Promotions">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Promotion" type="Promotion" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="Promotion">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="Description" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="Summary" type="SummaryPrice" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ParticipantCategory" type="ParticipantCategory" />
+    </xs:sequence>
+    <xs:attribute name="code" type="xs:string" />
+    <xs:attribute name="pricePerPax" type="xs:boolean" use="required" />
+    <xs:attribute name="minPax" type="xs:int" />
+    <xs:attribute name="maxPax" type="xs:int" />
+  </xs:complexType>
+  <xs:complexType name="Description">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="ShortDescription" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="LongDescription" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="Multimedia" type="Multimedia" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="Multimedia">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="MultimediaDescription" type="MultimediaDescription" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="MultimediaDescription">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="ImageItems" type="ImageItems" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ImageItems">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ImageItem" type="ImageItem" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ImageItem">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ImageFormat" type="ImageFormat" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ImageFormat">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="URL" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="SupplierOperator">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="Name" type="Name" />
+      <xs:element minOccurs="0" maxOccurs="1" name="ContactPhoneList" type="ContactPhoneList" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="Name">
+    <xs:attribute name="Code" type="xs:string" />
+    <xs:attribute name="CompanyShortName" type="xs:string" />
+    <xs:attribute name="CodeContext" type="eSupplierOperatorCodeContext" use="required" />
+  </xs:complexType>
+  <xs:simpleType name="eSupplierOperatorCodeContext">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Internal" />
+      <xs:enumeration value="External" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:complexType name="ContactPhoneList">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ContactPhone" type="ContactPhone" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ContactPhone">
+    <xs:attribute name="phoneNumber" type="xs:string" />
+    <xs:attribute name="phoneTechType" type="ePhoneTechnologyType" />
+    <xs:attribute name="phoneUseType" type="ePhoneUseType" />
+  </xs:complexType>
+  <xs:simpleType name="ePhoneTechnologyType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="VOICE" />
+      <xs:enumeration value="DATA" />
+      <xs:enumeration value="FAX" />
+      <xs:enumeration value="PAGER" />
+      <xs:enumeration value="MOBILE" />
+      <xs:enumeration value="TTY" />
+      <xs:enumeration value="TELEX" />
+      <xs:enumeration value="VOICE_OVER_IP" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="ePhoneUseType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="EMERGENCY_CONTACT" />
+      <xs:enumeration value="TRAVEL_ARRANGER" />
+      <xs:enumeration value="DAYTIME_CONTACT" />
+      <xs:enumeration value="EVENING_CONTACT" />
+      <xs:enumeration value="CONTACT" />
+      <xs:enumeration value="TOLL_FREE_NUMBER" />
+      <xs:enumeration value="GUEST_USE" />
+      <xs:enumeration value="PICKUP_CONTACT" />
+      <xs:enumeration value="ELECTRONIC_DOCUMENT_REFERENCE" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:complexType name="Communication">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="Conversations" type="Conversations" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="Conversations">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Conversation" type="Conversation" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="Conversation">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="Attributes" type="Attributes" />
+    </xs:sequence>
+    <xs:attribute name="id" type="xs:string" />
+  </xs:complexType>
+  <xs:element name="TourActivity" nillable="true" type="TourActivity" />
+  <xs:element name="ActivitiesBaseRQ" nillable="true" type="ActivitiesBaseRQ" />
+  <xs:element name="ActivitiesBaseRS" nillable="true" type="ActivitiesBaseRS" />
+  <xs:element name="RunTimeConfigurationRQ" type="RunTimeConfigurationRQ" />
+  <xs:complexType name="RunTimeConfigurationRQ">
+    <xs:complexContent mixed="false">
+      <xs:extension base="ActivitiesBaseRQ" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="RunTimeConfigurationRS" type="RunTimeConfigurationRS" />
+  <xs:complexType name="RunTimeConfigurationRS">
+    <xs:complexContent mixed="false">
+      <xs:extension base="ActivitiesBaseRS">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="1" name="ConfigurationProvider" type="ConfigurationProvider" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="StaticConfigurationRQ" type="StaticConfigurationRQ" />
+  <xs:complexType name="StaticConfigurationRQ">
+    <xs:complexContent mixed="false">
+      <xs:extension base="ActivitiesBaseRQ" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="StaticConfigurationRS" type="StaticConfigurationRS" />
+  <xs:complexType name="StaticConfigurationRS">
+    <xs:complexContent mixed="false">
+      <xs:extension base="ActivitiesBaseRS">
+        <xs:sequence>
+          <xs:element minOccurs="1" maxOccurs="1" name="NumOfDestinations" type="xs:int" />
+          <xs:element minOccurs="1" maxOccurs="1" name="NumOfEvents" type="xs:int" />
+          <xs:element minOccurs="1" maxOccurs="1" name="NumOfEventTypes" type="xs:int" />
+          <xs:element minOccurs="0" maxOccurs="1" name="DateRange" type="DateRange" />
+          <xs:element minOccurs="0" maxOccurs="1" name="Languages" type="Languages" />
+          <xs:element minOccurs="1" maxOccurs="1" name="OpenAvailability" type="xs:boolean" />
+          <xs:element minOccurs="1" maxOccurs="1" name="NumMaxParticipants" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="DateRange">
+    <xs:sequence>
+      <xs:element minOccurs="1" maxOccurs="1" name="Range" type="eRangeType" />
+      <xs:element minOccurs="1" maxOccurs="1" name="MaxDays" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:simpleType name="eRangeType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="R" />
+      <xs:enumeration value="S" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:complexType name="Languages">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Language" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DateRange" nillable="true" type="DateRange" />
+  <xs:element name="Languages" nillable="true" type="Languages" />
+  <xs:element name="OTA_TourActivityCancelRQ" type="OTA_TourActivityCancelRQ" />
+  <xs:complexType name="OTA_TourActivityCancelRQ">
+    <xs:complexContent mixed="false">
+      <xs:extension base="ActivitiesBaseRQ">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="1" name="Confirmation" type="Confirmation" />
+        </xs:sequence>
+        <xs:attribute name="PrimaryLangID" type="xs:string" />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="OTA_TourActivityCancelRS" type="OTA_TourActivityCancelRS" />
+  <xs:complexType name="OTA_TourActivityCancelRS">
+    <xs:complexContent mixed="false">
+      <xs:extension base="ActivitiesBaseRS">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="1" name="Reservation" type="Reservation" />
+        </xs:sequence>
+        <xs:attribute name="TransactionStatusCode" type="eTransactionStatusCode" />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="Reservation">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="CancelConfirmation" type="CancelConfirmation" />
+      <xs:element minOccurs="0" maxOccurs="1" name="ReservationInfo" type="ReservationInfo" />
+    </xs:sequence>
+    <xs:attribute name="ResStatus" type="eStatusType" use="required" />
+  </xs:complexType>
+  <xs:complexType name="CancelConfirmation">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="UniqueID" type="UniqueID" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="UniqueID">
+    <xs:attribute name="ID" type="xs:string" />
+    <xs:attribute name="Type" type="eLocatorType" use="required" />
+  </xs:complexType>
+  <xs:complexType name="ReservationInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="BasicInfo" type="BasicInfo" />
+      <xs:element minOccurs="0" maxOccurs="1" name="ParticipantInfo" type="ParticipantInfo" />
+      <xs:element minOccurs="0" maxOccurs="1" name="Pricing" type="Pricing" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ParticipantInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="Individual" type="Individual" />
+      <xs:element minOccurs="0" maxOccurs="1" name="LodgingInfo" type="LodgingInfo" />
+    </xs:sequence>
+    <xs:attribute name="refId" type="xs:int" use="required" />
+  </xs:complexType>
+  <xs:complexType name="Individual">
+    <xs:sequence>
+      <xs:element minOccurs="1" maxOccurs="1" name="NamePrefix" type="eNamePrefix" />
+      <xs:element minOccurs="0" maxOccurs="1" name="GivenName" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="Surname" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="Contact" type="Contact" />
+    </xs:sequence>
+    <xs:attribute name="LeadCustomerInd" type="xs:string" />
+    <xs:attribute name="Age" type="xs:int" use="required" />
+  </xs:complexType>
+  <xs:simpleType name="eNamePrefix">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="MR" />
+      <xs:enumeration value="MRS" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:complexType name="Contact">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="PersonName" type="PersonName" />
+      <xs:element minOccurs="0" maxOccurs="1" name="Telephone" type="Telephone" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="PersonName">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="GivenName" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="Surname" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="Telephone">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="PhoneNumber" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="LodgingInfo">
+    <xs:attribute name="HotelLocation" type="xs:string" />
+    <xs:attribute name="HotelName" type="xs:string" />
+  </xs:complexType>
+  <xs:simpleType name="eStatusType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Confirmed" />
+      <xs:enumeration value="Cancel" />
+      <xs:enumeration value="OnRequest" />
+      <xs:enumeration value="Unknow" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="eTransactionStatusCode">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Transaction_Start" />
+      <xs:enumeration value="Transaction_End" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="Reservation" nillable="true" type="Reservation" />
+  <xs:element name="Address" nillable="true" type="Address" />
+  <xs:element name="Area" nillable="true" type="Area" />
+  <xs:element name="BasicInfo" nillable="true" type="BasicInfo" />
+  <xs:element name="TourActivityID" nillable="true" type="TourActivityID" />
+  <xs:element name="IncludedService" nillable="true" type="IncludedService" />
+  <xs:element name="TourActivityIDList" nillable="true" type="TourActivityIDList" />
+  <xs:element name="CancelConfirmation" nillable="true" type="CancelConfirmation" />
+  <xs:element name="CancellationPolicies" nillable="true" type="CancellationPolicies" />
+  <xs:element name="CancellationPolicy" nillable="true" type="CancellationPolicy" />
+  <xs:element name="Category" nillable="true" type="Category" />
+  <xs:element name="CategoryAndType" nillable="true" type="CategoryAndType" />
+  <xs:element name="Communication" nillable="true" type="Communication" />
+  <xs:element name="Confirmation" nillable="true" type="Confirmation" />
+  <xs:element name="Contact" nillable="true" type="Contact" />
+  <xs:element name="ContactDetail" nillable="true" type="ContactDetail" />
+  <xs:complexType name="ContactDetail">
+    <xs:sequence>
+      <xs:element minOccurs="1" maxOccurs="1" name="BirthDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" maxOccurs="1" name="Email" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="Telephone" type="Telephone" />
+      <xs:element minOccurs="0" maxOccurs="1" name="Address" type="Address" />
+      <xs:element minOccurs="0" maxOccurs="1" name="DocumentID" type="DocumentID" />
+      <xs:element minOccurs="0" maxOccurs="1" name="PersonName" type="PersonName" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="DocumentID">
+    <xs:attribute name="tipoDocumento" type="eDocumentType" use="required" />
+    <xs:attribute name="idDocumento" type="xs:string" />
+  </xs:complexType>
+  <xs:simpleType name="eDocumentType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="NATIONAL_ID" />
+      <xs:enumeration value="PASSPORT" />
+      <xs:enumeration value="RESIDENT_ID" />
+      <xs:enumeration value="FOREIGN_PASSPORT" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="ContactPhone" nillable="true" type="ContactPhone" />
+  <xs:element name="ContactPhoneList" nillable="true" type="ContactPhoneList" />
+  <xs:element name="Conversation" nillable="true" type="Conversation" />
+  <xs:element name="Conversations" nillable="true" type="Conversations" />
+  <xs:element name="DaysOfWeek" nillable="true" type="DaysOfWeek" />
+  <xs:element name="Description" nillable="true" type="Description" />
+  <xs:element name="Detail" nillable="true" type="Detail" />
+  <xs:element name="DocumentID" nillable="true" type="DocumentID" />
+  <xs:element name="Duration" nillable="true" type="Duration" />
+  <xs:element name="Errors" nillable="true" type="Errors" />
+  <xs:element name="MyError" nillable="true" type="MyError" />
+  <xs:element name="Extra" nillable="true" type="Extra" />
+  <xs:element name="Group" nillable="true" type="Group" />
+  <xs:complexType name="Group">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="Contact" type="Contact" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ImageFormat" nillable="true" type="ImageFormat" />
+  <xs:element name="ImageItem" nillable="true" type="ImageItem" />
+  <xs:element name="ImageItems" nillable="true" type="ImageItems" />
+  <xs:element name="IncludedCharge" nillable="true" type="IncludedCharge" />
+  <xs:element name="IncludedCharges" nillable="true" type="IncludedCharges" />
+  <xs:element name="IncludedTax" nillable="true" type="IncludedTax" />
+  <xs:element name="IncludedTaxes" nillable="true" type="IncludedTaxes" />
+  <xs:element name="Individual" nillable="true" type="Individual" />
+  <xs:element name="Issue" nillable="true" type="Issue" />
+  <xs:element name="Level" nillable="true" type="Level" />
+  <xs:element name="Location" nillable="true" type="Location" />
+  <xs:element name="LodgingInfo" nillable="true" type="LodgingInfo" />
+  <xs:element name="Multimedia" nillable="true" type="Multimedia" />
+  <xs:element name="MultimediaDescription" nillable="true" type="MultimediaDescription" />
+  <xs:element name="OperationTime" nillable="true" type="OperationTime" />
+  <xs:element name="OperationTimes" nillable="true" type="OperationTimes" />
+  <xs:element name="ParticipantCategory" nillable="true" type="ParticipantCategory" />
+  <xs:element name="ParticipantCount" nillable="true" type="ParticipantCount" />
+  <xs:element name="ParticipantInfo" nillable="true" type="ParticipantInfo" />
+  <xs:element name="PaymentInfo" nillable="true" type="PaymentInfo" />
+  <xs:complexType name="PaymentInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="TaxAmounts" type="TaxAmounts" />
+    </xs:sequence>
+    <xs:attribute name="Description" type="xs:string" />
+  </xs:complexType>
+  <xs:element name="PersonName" nillable="true" type="PersonName" />
+  <xs:element name="PickupArea" nillable="true" type="PickupArea" />
+  <xs:element name="PickupDropoff" nillable="true" type="PickupDropoff" />
+  <xs:element name="PickupDropoffList" nillable="true" type="PickupDropoffList" />
+  <xs:element name="PickupValidity" nillable="true" type="PickupValidity" />
+  <xs:element name="Pos" nillable="true" type="Pos" />
+  <xs:complexType name="Pos">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Source" type="SourceOTA" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="SourceOTA">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="RequestorID" type="RequestorID" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="RequestorID">
+    <xs:attribute name="Type" type="xs:string" />
+    <xs:attribute name="ID" type="xs:string" />
+  </xs:complexType>
+  <xs:element name="Position" nillable="true" type="Position" />
+  <xs:element name="PositionArea" nillable="true" type="PositionArea" />
+  <xs:element name="Price" nillable="true" type="Price" />
+  <xs:element name="Pricing" nillable="true" type="Pricing" />
+  <xs:element name="PricingType" nillable="true" type="PricingType" />
+  <xs:element name="Promotion" nillable="true" type="Promotion" />
+  <xs:element name="Promotions" nillable="true" type="Promotions" />
+  <xs:element name="QualifierInfo" nillable="true" type="QualifierInfo" />
+  <xs:element name="Rate" nillable="true" type="Rate" />
+  <xs:element name="Region" nillable="true" type="Region" />
+  <xs:element name="RequestorID" nillable="true" type="RequestorID" />
+  <xs:element name="ReservationInfo" nillable="true" type="ReservationInfo" />
+  <xs:element name="Schedule" nillable="true" type="Schedule" />
+  <xs:element name="SearchCriteria" nillable="true" type="SearchCriteria" />
+  <xs:complexType name="SearchCriteria" />
+  <xs:element name="Seat" nillable="true" type="Seat" />
+  <xs:element name="Sector" nillable="true" type="Sector" />
+  <xs:element name="SourceOTA" nillable="true" type="SourceOTA" />
+  <xs:element name="Summary" nillable="true" type="Summary" />
+  <xs:element name="SummaryPrice" nillable="true" type="SummaryPrice" />
+  <xs:element name="SupplierOperator" nillable="true" type="SupplierOperator" />
+  <xs:element name="Name" nillable="true" type="Name" />
+  <xs:element name="TaxAmount" nillable="true" type="TaxAmount" />
+  <xs:element name="TaxAmounts" nillable="true" type="TaxAmounts" />
+  <xs:element name="Telephone" nillable="true" type="Telephone" />
+  <xs:element name="Tickets" nillable="true" type="Tickets" />
+  <xs:element name="Ticket" nillable="true" type="Ticket" />
+  <xs:element name="TourActivityInfo" nillable="true" type="TourActivityInfo" />
+  <xs:element name="TPA_Extensions" nillable="true" type="TPA_Extensions" />
+  <xs:element name="TypeTag" nillable="true" type="TypeTag" />
+  <xs:element name="TypeTags" nillable="true" type="TypeTags" />
+  <xs:element name="UniqueID" nillable="true" type="UniqueID" />
+  <xs:element name="Warnings" nillable="true" type="Warnings" />
+  <xs:element name="Warning" nillable="true" type="Warning" />
+  <xs:element name="Zone" nillable="true" type="Zone" />
+  <xs:element name="BookingInfo" nillable="true" type="BookingInfo" />
+  <xs:complexType name="BookingInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="BasicInfo" type="BasicInfo" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Extra" type="Extra" />
+      <xs:element minOccurs="0" maxOccurs="1" name="Location" type="Location" />
+      <xs:element minOccurs="0" maxOccurs="1" name="Schedule" type="Schedule" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ParticipantInfo" type="ParticipantInfo" />
+      <xs:element minOccurs="0" maxOccurs="1" name="Pricing" type="Pricing" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="SupplierOperator" type="SupplierOperator" />
+      <xs:element minOccurs="0" maxOccurs="1" name="Communication" type="Communication" />
+      <xs:element minOccurs="0" maxOccurs="1" name="TPA_Extensions" type="TPA_Extensions" />
+      <xs:element minOccurs="0" maxOccurs="1" name="PickupDropoff" type="PickupDropoff" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="OTA_TourActivityBookRQ" type="OTA_TourActivityBookRQ" />
+  <xs:complexType name="OTA_TourActivityBookRQ">
+    <xs:complexContent mixed="false">
+      <xs:extension base="ActivitiesBaseRQ">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="1" name="ContactDetail" type="ContactDetail" />
+          <xs:element minOccurs="0" maxOccurs="1" name="BookingInfo" type="BookingInfo" />
+        </xs:sequence>
+        <xs:attribute name="PrimaryLangID" type="xs:string" />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="OTA_TourActivityBookRS" type="OTA_TourActivityBookRS" />
+  <xs:complexType name="OTA_TourActivityBookRS">
+    <xs:complexContent mixed="false">
+      <xs:extension base="ActivitiesBaseRS">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="1" name="ReservationDetails" type="ReservationDetails" />
+        </xs:sequence>
+        <xs:attribute name="TransactionStatusCode" type="eTransactionStatusCode" />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="ReservationDetails">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="BasicInfo" type="BasicInfo" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Extra" type="Extra" />
+      <xs:element minOccurs="0" maxOccurs="1" name="Confirmation" type="Confirmation" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ExtraConfirmation" type="Confirmation" />
+      <xs:element minOccurs="0" maxOccurs="1" name="Description" type="Description" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ParticipantInfo" type="ParticipantInfo" />
+      <xs:element minOccurs="0" maxOccurs="1" name="PaymentInfo" type="PaymentInfo" />
+      <xs:element minOccurs="0" maxOccurs="1" name="Schedule" type="Schedule" />
+      <xs:element minOccurs="0" maxOccurs="1" name="Location" type="Location" />
+      <xs:element minOccurs="0" maxOccurs="1" name="PickupDropoff" type="PickupDropoff" />
+      <xs:element minOccurs="0" maxOccurs="1" name="PickupDropoffList" type="PickupDropoffList" />
+      <xs:element minOccurs="0" maxOccurs="1" name="Pricing" type="Pricing" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="SupplierOperator" type="SupplierOperator" />
+      <xs:element minOccurs="0" maxOccurs="1" name="TPA_Extensions" type="TPA_Extensions" />
+    </xs:sequence>
+    <xs:attribute name="ResStatus" type="eStatusType" />
+  </xs:complexType>
+  <xs:element name="ReservationDetails" nillable="true" type="ReservationDetails" />
+  <xs:element name="OTA_ReadRQ" type="OTA_ReadRQ" />
+  <xs:complexType name="OTA_ReadRQ">
+    <xs:complexContent mixed="false">
+      <xs:extension base="ActivitiesBaseRQ">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="1" name="ProviderCode" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="1" name="UniqueID" type="UniqueID" />
+          <xs:element minOccurs="0" maxOccurs="1" name="ReadRequests" type="ReadRequests" />
+        </xs:sequence>
+        <xs:attribute name="PrimaryLangID" type="xs:string" />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="ReadRequests">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="TourActivityReadRequest" type="TourActivityReadRequest" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="TourActivityReadRequest">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="SelectionCriteria" type="SelectionCriteria" />
+      <xs:element minOccurs="0" maxOccurs="1" name="TPA_Extensions" type="TPA_Extensions" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="SelectionCriteria">
+    <xs:attribute name="DateType" type="eDateReservationType" use="required" />
+    <xs:attribute name="End" type="xs:dateTime" use="required" />
+    <xs:attribute name="Start" type="xs:dateTime" use="required" />
+  </xs:complexType>
+  <xs:simpleType name="eDateReservationType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="ArrivalDate" />
+      <xs:enumeration value="CreateDate" />
+      <xs:enumeration value="DepartureDate" />
+      <xs:enumeration value="LastUpdateDate" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="OTA_TourActivityResRetrieveRS" type="OTA_TourActivityResRetrieveRS" />
+  <xs:complexType name="OTA_TourActivityResRetrieveRS">
+    <xs:complexContent mixed="false">
+      <xs:extension base="ActivitiesBaseRS">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="Detail" type="ResDetail" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="ResDetail">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="BasicInfo" type="BasicInfo" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Extra" type="Extra" />
+      <xs:element minOccurs="0" maxOccurs="1" name="Confirmation" type="Confirmation" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ExtraConfirmation" type="Confirmation" />
+      <xs:element minOccurs="0" maxOccurs="1" name="Description" type="Description" />
+      <xs:element minOccurs="0" maxOccurs="1" name="Location" type="Location" />
+      <xs:element minOccurs="0" maxOccurs="1" name="PaymentInfo" type="PaymentInfo" />
+      <xs:element minOccurs="0" maxOccurs="1" name="PickupDropoff" type="PickupDropoff" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ParticipantInfo" type="ParticipantInfo" />
+      <xs:element minOccurs="0" maxOccurs="1" name="Pricing" type="Pricing" />
+      <xs:element minOccurs="0" maxOccurs="1" name="Schedule" type="Schedule" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="SupplierOperator" type="SupplierOperator" />
+      <xs:element minOccurs="0" maxOccurs="1" name="TPA_Extensions" type="TPA_Extensions" />
+    </xs:sequence>
+    <xs:attribute name="ResStatus" type="eStatusType" use="required" />
+    <xs:attribute name="CreateDateTime" type="xs:dateTime" use="required" />
+    <xs:attribute name="LastModifyDateTime" type="xs:dateTime" use="required" />
+  </xs:complexType>
+  <xs:element name="ReadRequests" nillable="true" type="ReadRequests" />
+  <xs:element name="ResDetail" nillable="true" type="ResDetail" />
+  <xs:element name="SelectionCriteria" nillable="true" type="SelectionCriteria" />
+  <xs:element name="TourActivityReadRequest" nillable="true" type="TourActivityReadRequest" />
+  <xs:element name="GetRatesRQ" nillable="true" type="GetRatesRQ" />
+  <xs:complexType name="GetRatesRQ">
+    <xs:complexContent mixed="false">
+      <xs:extension base="ActivitiesBaseRQ" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetRatesRS" nillable="true" type="GetRatesRS" />
+  <xs:complexType name="GetRatesRS">
+    <xs:complexContent mixed="false">
+      <xs:extension base="ActivitiesBaseRS">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="1" name="Rates" type="RatesBatch" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="RatesBatch">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Rate" type="RateBatch" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="RateBatch">
+    <xs:attribute name="id" type="xs:string" />
+    <xs:attribute name="name" type="xs:string" />
+  </xs:complexType>
+  <xs:element name="RatesBatch" nillable="true" type="RatesBatch" />
+  <xs:element name="RateBatch" nillable="true" type="RateBatch" />
+  <xs:element name="GetSupplementsRQ" nillable="true" type="GetSupplementsRQ" />
+  <xs:complexType name="GetSupplementsRQ">
+    <xs:complexContent mixed="false">
+      <xs:extension base="ActivitiesBaseRQ" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetSupplementsRS" nillable="true" type="GetSupplementsRS" />
+  <xs:complexType name="GetSupplementsRS">
+    <xs:complexContent mixed="false">
+      <xs:extension base="ActivitiesBaseRS">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="1" name="Supplements" type="Supplements" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="Supplements">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Supplement" type="Supplement" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="Supplement">
+    <xs:attribute name="id" type="xs:string" />
+    <xs:attribute name="name" type="xs:string" />
+  </xs:complexType>
+  <xs:element name="Supplements" nillable="true" type="Supplements" />
+  <xs:element name="Supplement" nillable="true" type="Supplement" />
+  <xs:element name="GetSupplierActivitiesRatesRQ" nillable="true" type="GetSupplierActivitiesRatesRQ" />
+  <xs:complexType name="GetSupplierActivitiesRatesRQ">
+    <xs:complexContent mixed="false">
+      <xs:extension base="ActivitiesBaseRQ" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetSupplierActivitiesRatesRS" nillable="true" type="GetSupplierActivitiesRatesRS" />
+  <xs:complexType name="GetSupplierActivitiesRatesRS">
+    <xs:complexContent mixed="false">
+      <xs:extension base="ActivitiesBaseRS">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="1" name="Suppliers" type="Suppliers" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="Suppliers">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Supplier" type="Supplier" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="Supplier">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="Activities" type="Activities" />
+    </xs:sequence>
+    <xs:attribute name="id" type="xs:string" />
+    <xs:attribute name="idInternal" type="xs:string" />
+    <xs:attribute name="name" type="xs:string" />
+  </xs:complexType>
+  <xs:complexType name="Activities">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Activities" type="Activity" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="Activity">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="Rates" type="RatesBatch" />
+      <xs:element minOccurs="0" maxOccurs="1" name="Supplements" type="Supplements" />
+    </xs:sequence>
+    <xs:attribute name="id" type="xs:string" />
+    <xs:attribute name="name" type="xs:string" />
+  </xs:complexType>
+  <xs:element name="Suppliers" nillable="true" type="Suppliers" />
+  <xs:element name="Supplier" nillable="true" type="Supplier" />
+  <xs:element name="Activities" nillable="true" type="Activities" />
+  <xs:element name="Activity" nillable="true" type="Activity" />
+  <xs:element name="GetTerritoriesRQ" nillable="true" type="GetTerritoriesRQ" />
+  <xs:complexType name="GetTerritoriesRQ">
+    <xs:complexContent mixed="false">
+      <xs:extension base="ActivitiesBaseRQ" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GetTerritoriesRS" nillable="true" type="GetTerritoriesRS" />
+  <xs:complexType name="GetTerritoriesRS">
+    <xs:complexContent mixed="false">
+      <xs:extension base="ActivitiesBaseRS">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="1" name="Territories" type="Territories" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="Territories">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Territory" type="Territory" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="Territory">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Geometry" type="Geometry" />
+    </xs:sequence>
+    <xs:attribute name="id" type="xs:string" />
+    <xs:attribute name="name" type="xs:string" />
+  </xs:complexType>
+  <xs:complexType name="Geometry">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Coordinate" type="Coordinate" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="Coordinate">
+    <xs:attribute name="latitude" type="xs:string" />
+    <xs:attribute name="longitude" type="xs:string" />
+  </xs:complexType>
+  <xs:element name="Territories" nillable="true" type="Territories" />
+  <xs:element name="Territory" nillable="true" type="Territory" />
+  <xs:element name="Geometry" nillable="true" type="Geometry" />
+  <xs:element name="Coordinate" nillable="true" type="Coordinate" />
+  <xs:element name="OTA_TourActivitySearchRQ" type="OTA_TourActivitySearchRQ" />
+  <xs:complexType name="OTA_TourActivitySearchRQ">
+    <xs:complexContent mixed="false">
+      <xs:extension base="ActivitiesBaseRQ">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="1" name="SearchCriteria" type="SearchCriteria" />
+        </xs:sequence>
+        <xs:attribute name="PrimaryLangID" type="xs:string" />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="OTA_TourActivitySearchRS" type="OTA_TourActivitySearchRS" />
+  <xs:complexType name="OTA_TourActivitySearchRS">
+    <xs:complexContent mixed="false">
+      <xs:extension base="ActivitiesBaseRS">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="TourActivityInfo" type="TourActivityInfo" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="eLocationType" type="eLocationType" />
+  <xs:simpleType name="eLocationType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="DES" />
+      <xs:enumeration value="EVE" />
+      <xs:enumeration value="TEVE" />
+      <xs:enumeration value="OFF" />
+      <xs:enumeration value="OTH" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="eQualifierType" type="eQualifierType" />
+  <xs:element name="eLocatorType" type="eLocatorType" />
+  <xs:element name="eCodeClassType" type="eCodeClassType" />
+  <xs:simpleType name="eCodeClassType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Accessible" />
+      <xs:enumeration value="Adventure" />
+      <xs:enumeration value="Cultural" />
+      <xs:enumeration value="EcoAdventure" />
+      <xs:enumeration value="Educational" />
+      <xs:enumeration value="EscortedTour" />
+      <xs:enumeration value="Family" />
+      <xs:enumeration value="FoodAndBeverage" />
+      <xs:enumeration value="Group" />
+      <xs:enumeration value="GuidedTour" />
+      <xs:enumeration value="Independent" />
+      <xs:enumeration value="Other_" />
+      <xs:enumeration value="Romantic" />
+      <xs:enumeration value="SportsAndRecreation" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="eExtensionClassType" type="eExtensionClassType" />
+  <xs:element name="ePricingType" type="ePricingType" />
+  <xs:element name="eExtensionPricingType" type="eExtensionPricingType" />
+  <xs:element name="eRangeType" type="eRangeType" />
+  <xs:element name="eStatusType" type="eStatusType" />
+  <xs:element name="eDateReservationType" type="eDateReservationType" />
+  <xs:element name="eDocumentType" type="eDocumentType" />
+  <xs:element name="eNamePrefix" type="eNamePrefix" />
+  <xs:element name="eSupplierOperatorCodeContext" type="eSupplierOperatorCodeContext" />
+  <xs:element name="ePenaltyType" type="ePenaltyType" />
+  <xs:element name="eTransactionStatusCode" type="eTransactionStatusCode" />
+  <xs:element name="eTaxId" type="eTaxId" />
+  <xs:element name="ePhoneUseType" type="ePhoneUseType" />
+  <xs:element name="ePhoneTechnologyType" type="ePhoneTechnologyType" />
+  <xs:element name="eDurationUnityType" type="eDurationUnityType" />
+  <xs:element name="ActivitiesProvider" nillable="true" type="ActivitiesProvider" />
+  <xs:complexType name="ActivitiesProvider" abstract="true">
+    <xs:complexContent mixed="false">
+      <xs:extension base="ProviderBase" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="ProviderBase" abstract="true" />
+</xs:schema>
