@@ -11,7 +11,7 @@ permalink: /docs/activities/DSF/static-configuration
 ### Method Goals
 
 
-This method returns important information about the behavior of the
+This method returns important information about the behaviour of the
 integration (specific provider).
 
 
@@ -32,14 +32,14 @@ of the integration / provider.
 #### OpenAvailability
 | **Type** | **Description** |
 | --------- | --------------- | 
-| false | Need specify passengers in avail request. In response, provider return price of option that you specify. |
-| true | Not necessary specify passengers in avail request. In this case provider return all possible participant types that can provide, and you can choose the participants types that you are interested. |
+| false | Need to specify passengers in avail request. In response, provider returns price of option that you specify. |
+| true | Not necessary to specify passengers in avail request. In this case provider returns all possible participant types that can provide, and you can choose the participant types you are interested in. |
 
 #### Range
 | **Type** | **Description** |
 | --------- | --------------- | 
-| R | Range date, means that provider return options between range of dates send in Avail request, anyone who is between these dates. |
-| S | Specific date, means that provider return options for specific range of dates send in Avail request. |
+| R | Range date, it means that provider returns options between the range of dates sent in Avail request, anyone who is between these dates. |
+| S | Specific date, it means that provider returns options for specific range of dates sent in Avail request. |
 
 ### StaticConfigurationRQ Example
 
@@ -81,7 +81,7 @@ of the integration / provider.
 | source               			| 1           	|		| Information about source requesting the operation. |
 | source/languageCode  			| 1    		| String	| Language code (ISO 3166-1 alpha-2) format.	|
 | filterAuditData      			| 1           	|		| Information about enable or disable information returned in audit data. |
-| filterAuditData/registerTransactions	| 1    		| Boolean	| If true, registers the transactions with provider. |
+| filterAuditData/registerTransactions	| 1    		| Boolean	| If true, it registers the transactions with provider. |
 | Configuration        			| 1           	|		| Information about source requesting the operation. |
 | @codeProvider        			| 1    		| String	| Agency code of the provider.			|
 | Configuration/Credentials		| 1           	|		| Provider credentials.				|
@@ -133,14 +133,14 @@ of the integration / provider.
 | AvailabilityByPosition | 1  		| Boolean | Indicates if it is possible to get availability by Position |
 | AvailabilityByTourActivityID | 1  		| Boolean | Indicates if it is possible to get availability by TourActivityID|
 | AvailabilityByMultipleTourActivitySearch| 1  		| Boolean | Indicates if it is possible to get availability by MultipleTourActivitySearch|
-| NumOfDestinations			| 1  		| Integer	| Number of destination that specific integration can provider/returned in one same Avail. |
-| NumOfEvents				| 1  		| Integer	| Number of TourActivityID that specific integration can provider/returned in one same Avail. |
-| NumOfEventTypes			| 1  		| Integer	| Number of Category Code that specific integration can provider/returned in one same Avail. |
-| DateRange				| 1       	|		| Number of destination that specific integration can provider in one same Avail. |
-| Range   				| 1  		| Enum		| Type of range that identifying how we can get the different options for each activity depending on the date range sent on Avail request. |
-| MaxDays 				| 1  		| Integer	| Maximum of days that you can send in Avail request. In case that we return 999, means that the provider doesn't specify a maximum. (Possibles case: "R" or "S"). |
-| Languages				| 1       	|		| List of languages that provider can return different response. |
-| Languages/Language			| 1..n		| String	| Language code (ISO 3166-1 alpha-2) format.	|
+| NumOfDestinations			| 1  		| Integer	| Number of destination that a specific integration / provider can return in one Avail. |
+| NumOfEvents				| 1  		| Integer	| Number of TourActivityID that a specific integration / provider can return in one Avail. |
+| NumOfEventTypes			| 1  		| Integer	| Number of Category Code that a specific integration / provider can return in one Avail. |
+| DateRange				| 1       	|		| Number of destination that a specific integration / provider can return in one Avail. |
+| Range   				| 1  		| Enum		| Type of range that identifies how we can get the different options for each activity depending on the date range sent on Avail request. |
+| MaxDays 				| 1  		| Integer	| Maximum of days that you can send in Avail request. In case that we return 999, it means that the provider doesn't specify a maximum. (Possibles case: "R" or "S"). |
+| Languages				| 1       	|		| List of languages in which a provider can return the response. |
+| Languages/Language			| 1..n		| String	| Language code (ISO 3166-1 alpha-2 format).	|
 | OpenAvailability			| 1  		| Boolean	| Type of provider, the difference is in avail response. |
 | NumMaxParticipants			| 1  		| Integer	| Maximum number of participants/Tickets you can request in availability. |
 
