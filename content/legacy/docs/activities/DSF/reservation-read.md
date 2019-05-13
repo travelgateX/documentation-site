@@ -158,7 +158,7 @@ Not implemented by all suppliers
 | Detail/Pricing/ParticipantCategory/Price	| 1     	|		| Specific price for each participantCategory.	|
 | @Amount             			| 1 		| String	| ParticipantCategory price.			|
 | @CurrencyCode       			| 0..1		| String	| Currency code (ISO 4217).			|
-| Detail/Pricing/ParticipantCategory/TPA_Extensions | 0..1     |		| Necessary information that we need send between calls. |
+| Detail/Pricing/ParticipantCategory/TPA_Extensions | 0..1     |		| Necessary information that we need to send between calls. |
 | Detail/Pricing/ParticipantCategory/TPA_Extensions/DynamicToken | 0..1 | String | Inform about the participant types to valuate (if more than one type, the participant Types must be separated by ";"). |
 | Detail/Pricing/ParticipantCategory/TPA_Extensions/Issue | 0..1 |   		| Contains information about ticket printing. 	|
 | @Mandatory          			| 0..1		| Boolean	| Specifies if the ticket should be printed by the client. |
@@ -287,7 +287,7 @@ Indicates which type of locator is sent.
 | **Type** | **Description** |
 | ---------| --------------- | 
 | Client | Locator get in our request. |
-| Provider | Locator send by the supplier |
+| Provider | Locator sent by the supplier |
 | Ticket |Locator for specific ticket |
 | Other | Other type of locator. |
 
