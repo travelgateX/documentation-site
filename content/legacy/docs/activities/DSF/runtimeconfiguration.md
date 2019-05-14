@@ -26,7 +26,7 @@ The request only requires the provider code.
 ### Response Format
 
 
-The response contains a list of Attribute.
+The response contains a list of Attributes.
 
 
 
