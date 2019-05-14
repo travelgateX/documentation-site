@@ -170,14 +170,13 @@ This method **must** be called **before** the Valuation method.
 
 ### AvailabilityRS Description
 
-
-| **Element**					| **Number**| **Type**	| **Description** |																			   
-| ----------------------------- | --------- | --------- | ----------------|
-| AvailabilityRS              	| 1     	|			| Root node.|
-| Transportation              	| 1     	|			| Contains all of the Segments and Fares.|
+| **Element**					| **Number**| **Type**	| **Description** |  
+| ----------------------------- | --------- | --------- | ----------------|  
+| AvailabilityRS              	| 1     	|			| Root node.|  
+| Transportation              	| 1     	|			| Contains all of the Segments and Fares.|  
 | @totalFares            		| 1 		| Integer	| Total number of Fares.|
 | Transportation/Segments     	| 1     	|			| Contains a list of the Segments.|
-| Transportation/Segments/Segment| 1..n    	| Contains the information of the segment.|
+| Transportation/Segments/Segment| 1..n    	|  |  Contains the information of the segment.|
 | @id                    		| 1 		| Integer	| Unique identifier of the segment.|
 | @transportationId      		| 1 		| String	| Unique Id of the transportation.|
 | @operatingCarrier      		| 1 		| String	| Company which operates the transportation.|
@@ -384,7 +383,8 @@ This method **must** be called **before** the Valuation method.
 | @id							| 0..1		| String	| Unique identifier of discound card.|
 | Fares/Fare/PaxConfigurations<br>/PaxConfiguration/PaxConfiguration/<br>AppliedBonuses/PaxTypeCodes		| 0..1	|| Contains a list of PaxTypeCodes.|
 | Transportation/Fares/Fare/<br>PaxConfigurations/PaxConfiguration/<br>AppliedBonuses/PaxTypeCodes/<br>PaxTypeCode	| 1..n	|| Contains the discount code of the passenger.|
-| @code							| 1			| String	| Discounts by passenger type|
+| @code							| 1			| String	| Discounts by passenger type|  
+
 
 ### Detailed description
 
