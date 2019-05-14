@@ -61,7 +61,7 @@ In our system we've three booleans to control restrictions:
 
 
 
-When all booleans are true a booking it's allowed in the specified day.
+When all booleans are true a booking is allowed in the specified day.
 
 When MasterOpen is false bookings are not allowed in the specified day.
 
@@ -74,10 +74,10 @@ date from the hotel is the specified day.
 To control these three values when you are notifying availability you
 have RestrictionStatus/Status and RestrictionStatus/Restriction. Status
 indicates the action to do Open or Close. Then the restriction indicates
-which of the internal booleans are set. If restriction is not present
+which of the internal booleans are set. If restriction is not present,
 all booleans are set. For example:
 
-If you want to sell a product. The first needed thing to do is Open all
+If you want to sell a product, the first needed thing to do is Open all
 bits. This is possible doing:
 
 Send Status=Open, without Restriction.
@@ -103,7 +103,7 @@ ArrivalOpen = false
 
 DepartureOpen = true
 
-Then, if you don't want any booking with departure at the specified day,
+Then, if you don't want any bookings with departure at the specified day,
 you must Close Departure. This is possible doing:
 
 Send Status=Close, Restriction=Departure.
@@ -116,7 +116,7 @@ ArrivalOpen = false
 
 DepartureOpen = false
 
-Finally, if you want to allow allow any kinds of bookings again, you
+Finally, if you want to allow allow all kinds of bookings again, you
 must Open all bits again. This is possible doing:
 
 Send Status=Open, without Restriction.
