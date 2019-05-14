@@ -13,7 +13,7 @@ can be resumed as:
 
     > 1.  Providers retrieve static inventory (Hotel/Rates/Rooms) from
     >     Seller using HotelRatePlanInventoryRetrieve in order to map
-    >     Hotelier inventory into its system.
+    >     Hotelier inventory into their system.
     > 2.  Providers Push/Notif Rate information to Seller using
     >     HotelRatePlanNotif in order to synchronize Hotelier rates.
     > 3.  Providers Push/Notif Availability information to Seller using
@@ -23,7 +23,7 @@ can be resumed as:
 
     > 1.  Sellers can Push/Notify reservations to Providers using
     >     Provider native specification (Specification should be
-    >     provided to XMLTravelGate).
+    >     provided to TravelgateX).
     > 2.  Providers can retrieve reservations using HotelRatePlanNotif.
     > 3.  Use both systems described above.
 
@@ -32,7 +32,7 @@ can be resumed as:
     > 1.  Providers retrieve dynamic rates and availability using
     >     HotelRatePlanRetrieve and HotelAvailRetrieve.
     > 2.  Providers retrieve valuated availability using HotelAvail
-    >     (Currently this functionality is available only in Seller's
+    >     (Currently, this functionality is available only in Seller's
     >     extranet)
 
 
