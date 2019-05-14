@@ -143,14 +143,14 @@ The maximum time permitted in our system before the connection is closed is **24
 ~~~
 
 
-There are two essential definitions which needs to be clear in order to understand the difference between city and zone:
+There are two essential definitions which need to be clear in order to understand the difference between city and zone:
 
 1. types of nodes
 2. if these nodes are accessible or not.
 
 Let's start with the two types of nodes. There are two types of nodes: the parent node, also called DestinationTree node, and the child node, also named Destination leaf node. A parent can have zero to n children ( 0..n ) and a child can only one parent ( 1..1 ). For example, the DestinationTree code = "ES" is the parent of the DestinationLeaf code = "BAL", "AST" and "AND" and at the same time DestinationTree code = "BAL" is also a the parent of the DestinationLeaf code = "PAL0" and "ALC0", and so on.
 
-Accessible on an **availability** level means that it is possible doing an avail for that zone. A node is accessible when the tag avail is set to true. If it is set as false the node is not accessible and consequently, not available.
+Accessible on an **availability** level means that it is possible to perform an availability for that zone. A node is accessible when the tag avail is set to true. If it is set to false the node is not accessible and consequently, not available.
 
 Therefore:
 
@@ -159,5 +159,5 @@ Therefore:
 
 ![Diagrama1](/articles-pub/docs/hotel/images/diagrama1.png)
 
- **Note:** *In rare occasions it is possible finding nodes lower than cities, which won't be accessible, but the standard scenario is not to find lower nodes than cities.*
+ **Note:** *In rare occasions, it is possible to find nodes lower than cities, which won't be accessible, but the standard scenario is not to find lower nodes than cities.*
 
