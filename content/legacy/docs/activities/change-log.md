@@ -1,10 +1,10 @@
----
-title: Change Log
-keywords: activities, change log
-search: Activities - Change Log
-sidebar: mydoc_sidebar
-permalink: /docs/activities/change-log
----
++++
+title = "Change Log"
+pagetitle = "Change Log"
+description = "Accurated, chronologically-ordered list of notable changes"
+icon = "fa-file-text-o"
+weight = 3
++++
 
 **Version 2.0.0:** Date 27/07/2018
 

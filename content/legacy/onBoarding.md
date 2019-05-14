@@ -14,7 +14,7 @@ Thank you for your interest in joining our fast growing network of partners. Thi
 Our Flow
 ------------  
 
-![Steps](/legacy/images-onBoarding/steps.png)
+![Steps](/legacy/steps.png)
 
 Welcome Pack
 ------------  

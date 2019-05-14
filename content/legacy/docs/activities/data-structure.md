@@ -1,17 +1,14 @@
----
-title: Data Structure
-keywords: activities, data structure
-search: Activities - Data Structure
-sidebar: mydoc_sidebar
-permalink: /docs/activities/data-structure
----
++++
+title = "Activities Data Structure"
+pagetitle = "Activities Data Structure"
+description = "Structure of the API specification"
+icon = "fa-list-alt"
+weight = 2
++++
 
-The structure of the API specification follows a standard. This document
-intends to explain every aspect of this structure and their fields.
+The structure of the API specification follows a standard. This document intends to explain every aspect of this structure and their fields.
 
 The integration will have the following methods:
-
-
 
 | **Method**		| **Input**		| **Output**		| **Required**	| **Description**		|
 | --------------------- | --------------------- | --------------------- | ------------- | ----------------------------- |
@@ -24,16 +21,9 @@ The integration will have the following methods:
 | Cancel    		| CancelRQ   		| CancelRS   		| No   		| Cancel a reservation		|
 | ReservationsList	| ReservationsListRQ	| ReservationsListRS	| No   		| List of Reservations		|
 
-                       
+Each request sent to the **service url** requires a node called rqXML. Inside this node travels the current method's Input object.
 
-
-Each request sent to the **service url** requires a node called rqXML .
-Inside this node travels the current method's Input object.
-
-The data structure will always have common elements in all objects and
-the specific objects related to the operation
-
-
+The data structure will always have common elements in all objects and the specific objects related to the operation.
 
 **Data structure content:**
 
@@ -48,6 +38,3 @@ the specific objects related to the operation
 9. [Cancel](/docs/activities/DSF/cancel)
 10. [StaticConfiguration](/docs/activities/DSF/static-configuration)
 11. [RunTimeConfiguration](/docs/activities/DSF/runtimeconfiguration)
-
-
-
