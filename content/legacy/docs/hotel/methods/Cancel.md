@@ -18,11 +18,11 @@ This method aims to cancel a booking
 ### Request Format
 
 
-The request requires one or more of the following data depending on the supplier:
+The request requires one or more of the following data, depending on the supplier:
 
--   *Locators*: booking codes (this element contains two elements
+-   *Locators*: booking codes - this element contains two elements,
     *Client* (client's booking code) and *Provider* (supplier's booking
-    code), one or both will be required depending on the supplier)
+    code). One or both will be required depending on the supplier
 -   *hotelCode*: the hotel code
 -   *StartDate*: the check-in date
 -   *EndDate*: the check-out date
@@ -40,7 +40,7 @@ cancellation's ID and the fee for that cancellation.
 ### Remarks
 
 
-The maximum times permitted in our system before the connection
+The maximum time permitted in our system before the connection
 is closed is **180000** milliseconds.
 
 
@@ -106,8 +106,8 @@ is closed is **180000** milliseconds.
 | Price      				| 0..1       	|		| Fee for the cancellation. (see StaticConfiguration in order to verify if supplier informs of it).						|
 | @currency  				| 1    		| String	| Currency code. 						|
 | @amount    				| 1    		| Decimal	| Amount.  						|
-| @binding   				| 1    		| Boolean	| Identifies if is the price is binding (When true the sale price returned **must** not be less than the price informed. |
-| @commission				| 1    		| Decimal	| Commission ( -1 = not specified - indicated with the supplier contract, 0 = net price, X = % of the commission that applies to the amount).		|
+| @binding   				| 1    		| Boolean	| Identifies if the price is binding (When it true the sale price returned **must** not be less than the price informed. |
+| @commission				| 1    		| Decimal	| Commission (-1 = not specified - specified in the supplier contract, 0 = net price, X = % of the commission that applies to the amount).		|
 | TransactionStatus			| 1          	|		| Transaction Status.						|
 | TransactionStatus/ComunicationStatus	| 1    		| String	| Status communication (OFFLINE, OK and KO).			|
 | TransactionStatus/RSStatus		| 1    		| String	| Status response: DESCONOCIDO - Unknown; EXISTE - Exists; EXISTECANCELADA - Cancelled; NO_EXISTE - Does not exist	|
