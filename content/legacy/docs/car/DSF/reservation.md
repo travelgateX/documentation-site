@@ -95,7 +95,7 @@ also necessary the customer information.
 | OTA_VehResRQ					| 1             |		| Root Node.				|
 | OTA_VehResRQ/POS				| 1 		| Pos         	| Contains information of the Point Of Sale.		|
 | OTA_VehResRQ/VehResRQCore			| 1 		| VehResRQCore	| Includes information about the customer and the rental, such as dates, model, locations.	|
-| VehResRQCore/Status				| 1 		| eInventoryStatus | Status of the option. It's possible values are Available, OnRequest and All.  	|
+| VehResRQCore/Status				| 1 		| eInventoryStatus | Status of the option. Its possible values are Available, OnRequest and All.  	|
 | VehResRQCore/VehRentalCore			| 1 		| VehRentalCore	| Contains the dates and locations of the rental. 	|
 | VehResRQCore/Customer				| 1 		| CustomerPrimary Additional | Information of the customer.		|
 | VehResRQCore/VendorPref			| 1 		| CompanyNamePref | Name of the rental company. 			|
@@ -107,7 +107,7 @@ also necessary the customer information.
 | VehResRQCore/TotalCharge			| 1 		| VehicleTotal ChargeGroup | Indicates the total cost of the rental.  	|
 | VehResRQCore/UniqueID				| 1 		| UniqueID    	| It has the UniqueID that identifies the reservation for the provider to cancel it.	|
 | @UniqueID/ID					| 1 		| String      	| ID of the locator that identifies the booking. 	|
-| @UniqueID/Type				| 1 		| eUniqueIdType	| Type of locator. It's possible values are CUSTOMER (if sent from a customer agency), CORPORATIONREPRESENTATIVE (if sent by a third party company), COMPANY (if sent by the provider company). 	|
+| @UniqueID/Type				| 1 		| eUniqueIdType	| Type of locator. Its possible values are CUSTOMER (if sent from a customer agency), CORPORATIONREPRESENTATIVE (if sent by a third party company), COMPANY (if sent by the provider company). 	|
 | VehResRQCore/TPAExtensions			| 1 		| TPAExtensions	| Contains an Atributos object.          	|
 | OTA_VehResRQ/VehResRQInfo			| 1 		| VehResRQInfo	| Contains information about the credit card. It's only mandatory when a credit card payment is needed.  	|
 | VehResRQInfo/ArrivalDetails			| 1 		| ArrivalDetails | Currently unused.			|
