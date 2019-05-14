@@ -13,7 +13,7 @@ permalink: /docs/car/DSF/rate-rule
 
 This method aims to return the total price of the selected VehAvail
 (option). This VehAvail option **must** be selected in the previous step
-( OTA VehAvailRate).
+(OTA VehAvailRate).
 
 This message allows the partners to know the applied conditions on the
 chosen car and also shows the breakdown of the applied charges and fees
@@ -21,7 +21,7 @@ including the final price.
 
 
 
-Remarks Some suppliers do not provide this method. If this is the case
+Remarks: Some suppliers do not provide this method. If this is the case,
 all the info **must** be returned in OTA VehAvailRate and this method
 will do a OTA VehAvailRate again filtered by the selected option.
 
@@ -84,7 +84,7 @@ The VehRateRule request requires the following information:
 
 -   Pick up location and return location with its corresponding dates.
 -   The selected vehicle information. This refers to the make model, the
-    vehicle type, transmission type and also if it has air condition or
+    vehicle type, transmission type and also if it has air conditioning or
     not.
 -   The selected rate for the chosen option.
 
@@ -99,7 +99,7 @@ The VehRateRule request requires the following information:
 | RentalInfo/VehicleInfo			| 1   		| VehiclePref	| Contains a list of VehiclePref. A vehiclePref has information related to the vehicle model.	|
 | RentalInfo/RateQualifier			| 1   		| RateQualifier	| This is the vendor specific code for rate codes (e.g. WES, 2A, DLY00).	|
 | RentalInfo/TPAExtensions			| 1   		| TPAExtensions	| Contains an Atributos object.					|
-| RentalInfo/Status				| 1   		| eInventoryStatus | Status of the option. It's possible values are Available, OnRequest and All.	|
+| RentalInfo/Status				| 1   		| eInventoryStatus | Status of the option. Its possible values are Available, OnRequest and All.	|
 
 
 
@@ -255,8 +255,8 @@ The returned XML is similar to the result of the OTA VehAvailRate call.
 The main difference is that only one option is returned (the selected
 one). The total price is definitive. Sometimes this method will fail
 since the selected option at OTA VehAvailRate time will not be available
-in this stage. In this case the integration returns an error code 204
-(ERROR NO RESULTS)( link missing ).
+at this stage. In this case the integration returns an error code 204
+(ERROR NO RESULTS)(link missing ).
 
 
  
@@ -266,7 +266,7 @@ in this stage. In this case the integration returns an error code 204
 | OTA_VehRateRuleRS /VehRentalCore		| 1  		| VehRentalCore	| Contains the dates and locations of the rental.			|
 | OTA_VehRateRuleRS /Vehicle			| 1  		| Vehicle      	| Includes information about the vehicle model.				|
 | OTAVeh*RateRuleRS* /RentalRate			| 1  	| OTAVehRate RuleRS_ VehicleRental Rate | Contains information of the allowed distance, the selected rate, and the associated charges. 	|
-| @OTAVeh*RateRuleRS* VehicleRentalRate/Status	| 1  		| eInventoryStatus | Status of the option. It's possible values are Available, OnRequest and All.	|
+| @OTAVeh*RateRuleRS* VehicleRentalRate/Status	| 1  		| eInventoryStatus | Status of the option. Its possible values are Available, OnRequest and All.	|
 | OTAVeh*RateRuleRS* VehicleRentalRate /RateDistance | 1  	| VehicleRate DistanceGroup | Information about the permitted distance for this rate.	|
 | OTAVeh*RateRuleRS* VehicleRentalRate /RateQualifier | 1  	| RateQualifier	| Information about the rate.		|
 | OTAVeh*RateRuleRS* VehicleRentalRate /VehicleCharges | 1  	| List of VehicleCharge Purpose | Charges associated to this rate.	|
