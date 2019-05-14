@@ -7,7 +7,7 @@ weight = 4
 +++
 
 
-This document aims to explain all aspects of **XML Travelgate**'s Hotel API specification. In the following pages you will find detailed explanation of all Nodes, Elements and Attributes in every aspect of the API specification. It uses a very straight forward nomenclature that tries to define every aspect of the specification by the name.
+This document aims to explain all aspects of **XML Travelgate**'s Hotel API specification. In the following pages you will find detailed explanation of all Nodes, Elements and Attributes in every aspect of the API specification. It uses a very straightforward nomenclature that tries to define every aspect of the specification by the name.
 
 This documentation follows a standard. For every method there is:
 
@@ -23,7 +23,7 @@ This documentation follows a standard. For every method there is:
 3.  Example Response
     1.  Full explanation of all nodes, elements and attributes
 
-Every method, element, attribute or node name is in *italic*.
+Every method, element, attribute or node name is in *italics*.
 
 
 
