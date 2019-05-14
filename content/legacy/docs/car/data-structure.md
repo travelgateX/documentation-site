@@ -6,8 +6,8 @@ sidebar: mydoc_sidebar
 permalink: /docs/car/data-structure
 ---
 
-This document intends to explain every aspect of this structure and
-their fields.
+This document intends to explain every aspect of its structure and
+fields.
 
 The integration will have the following methods:
 
@@ -15,7 +15,7 @@ The integration will have the following methods:
 
 | **Method**		| **Input**		| **Output**		| **Required**	| **Description Endpoint**	|
 | --------------------- | --------------------- | --------------------- | ------------- | ----------------------------- |
-| OTA_VehAvailRate	| OTA_VehAvailRateRQ	| OTA_VehAvailRateRS	| Yes 		| Makes a availability call Car Booking Endpoint. |
+| OTA_VehAvailRate	| OTA_VehAvailRateRQ	| OTA_VehAvailRateRS	| Yes 		| Makes an availability call Car Booking Endpoint. |
 | OTA_VehRateRule	| OTA_VehRateRuleRQ	| OTA_VehRateRuleRS 	| Yes		| Makes a pre-booking Car Booking Endpoint |
 | OTA_VehRes		| OTA_VehResRQ		| OTA_VehResRS		| Yes		| Makes a booking Car Booking Endpoint |
 | OTA_VehLocSearch	| OTA_VehLocSearchRQ	| OTA_VehLocSearchRS 	| Yes		| Gets a static offices list Car Batch Endpoint |
@@ -44,7 +44,7 @@ can be resumed as:
     >     using OTA_VehAvailRate.
     > 2.  Once the final customer selects an option, a pre-booking must
     >     be done using OTA_VehRateRule.
-    > 3.  Finally when the customer agrees purchasing the option, the
+    > 3.  Finally, when the customer agrees purchasing the option, the
     >     booking is created using OTA_VehRes.
 
 2.  **Manage Bookings:**
