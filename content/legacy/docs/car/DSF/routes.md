@@ -202,12 +202,12 @@ information.
 | OperationTimes/OperationTime			| 1..n		| OperationTime | Each OperationTime indicate the office hours and the days of the week subject to these hours.	|
 | @OperationTime/Start				| 1  		| String        | Opening time of the office in hh:mm format.		|
 | @OperationTime/End				| 1  		| String        | Closing time of the office in hh:mm format.		|
-| @OperationTime/Mon				| 1  		| Boolean       | Boolean that indicates if this hours correspond to Mondays.		|
-| @OperationTime/Tue				| 1  		| Boolean       | Boolean that indicates if this hours correspond to Tuesdays.		|
-| @OperationTime/Weds				| 1  		| Boolean       | Boolean that indicates if this hours correspond to Wednesday.		|
-| @OperationTime/Thur				| 1  		| Boolean       | Boolean that indicates if this hours correspond to Thursdays.		|	
-| @OperationTime/Fri				| 1  		| Boolean       | Boolean that indicates if this hours correspond to Fridays.		|
-| @OperationTime/Sat				| 1  		| Boolean       | Boolean that indicates if this hours correspond to Saturdays.		|
-| @OperationTime/Sun				| 1  		| Boolean       | Boolean that indicates if this hours correspond to Sundays.		|
+| @OperationTime/Mon				| 1  		| Boolean       | Boolean that indicates if these hours correspond to Mondays.		|
+| @OperationTime/Tue				| 1  		| Boolean       | Boolean that indicates if these hours correspond to Tuesdays.		|
+| @OperationTime/Weds				| 1  		| Boolean       | Boolean that indicates if these hours correspond to Wednesday.		|
+| @OperationTime/Thur				| 1  		| Boolean       | Boolean that indicates if these hours correspond to Thursdays.		|	
+| @OperationTime/Fri				| 1  		| Boolean       | Boolean that indicates if these hours correspond to Fridays.		|
+| @OperationTime/Sat				| 1  		| Boolean       | Boolean that indicates if these hours correspond to Saturdays.		|
+| @OperationTime/Sun				| 1  		| Boolean       | Boolean that indicates if these hours correspond to Sundays.		|
 | VehicleMatchedLocation /VehLocSearchCriterion	| 1  		| Vehicle LocationDetails | Containts details of the location of the office.		| 
 
