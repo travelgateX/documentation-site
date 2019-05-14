@@ -20,7 +20,7 @@ type.
 ### Request Format
 
 
-It is mandatory to pass a date range and a Date type. Depends the Date
+It is mandatory to pass a date range and a date type. Depends the date
 type, you obtain different reservation list.
 
 **Date types**
@@ -139,10 +139,10 @@ type, you obtain different reservation list.
 | ------------------------------------- | ------------- | ------------- | --------------------------------------------- |
 | OTA_TourActivityResRetrieveRS		| 1       	|		| Root node.					|
 | Detail            			| 1..n    	|		| Information about reservation status and date time for each reservation activity. |
-| @ResStatus        			| 1   		| Enum		| Information about reservation status (Possibles types: "Confirmed", "Cancel" or "Unknow"). |
+| @ResStatus        			| 1   		| Enum		| Information about reservation status (Possible types: "Confirmed", "Cancelled" or "Unknown"). |
 | @CreateDateTime   			| 1   		| Date		| Information about create reservation date time. |
-| @LastModifyDateTime			| 0..1		| Date		| Information about last modify reservation date time. For example, if cancel we return date time when client cancel this reservation. |
-| Detail/BasicInfo  			| 0..1    	|		| If need search by activity provider code.	|
+| @LastModifyDateTime			| 0..1		| Date		| Information about last modify reservation date time. For example, if cancel we return date time when client cancelled this reservation. |
+| Detail/BasicInfo  			| 0..1    	|		| If needed, search by activity provider code.	|
 | @Name             			| 0..1		| String	| Name of ticket.				|
 | @TourActivityID   			| 0..1		| String	| Code of ticket.				|
 | Detail/Confirmation			| 1       	|		| Contains information of the activity booked.	|
@@ -150,12 +150,12 @@ type, you obtain different reservation list.
 | @type             			| 1   		| String	| Activity booked type (Possible values: "PROVIDER").|
 | Detail/PaymentInfo			| 0..1    	|		| Payment details that may be associated with an individual participant, a participant category and/or a group. |
 | @Description      			| 0..1		| String	| A description of the charge.			|
-| Detail/PickupDropoff			| 0..1		| String	| The pickup and/or dropoff information if transportation is provided to/ from the tour/activity location. |
+| Detail/PickupDropoff			| 0..1		| String	| The pickup and/or dropoff information if transportation is provided to/from the tour/activity location. |
 | @OtherInfo        			| 0..1		| String	| Other instructions pertaining to the pickup/dropoff. |
 | Pricing/Summary   			| 0..1    	|		| Summary price for option, this element we return if OpenAvailability = false. |
 | @Amount           			| 0..1		| Decimal	| Option price.					|
 | @CurrencyCode     			| 0..1		| String	| Currency code (ISO 4217).			|
-| Detail/Pricing/Summary/PricingType	| 0..1		| String	| Specifies type of the option price, if value = Other then is mandatory specify Extension type. |
+| Detail/Pricing/Summary/PricingType	| 0..1		| String	| Specifies type of the option price, if value = Other then it is mandatory to specify Extension type. |
 | @Extension        			| 0..1		| String	| Specifies type of the option price.		|
 | Detail/Pricing/ParticipantCategory	| 0..n		| String	| Specifies price and participant category.	|
 | @age              			| 0..1		| Integer	| Age of participant category.			|
@@ -165,7 +165,7 @@ type, you obtain different reservation list.
 | @Amount           			| 1   		| String	| ParticipantCategory price.			|
 | @CurrencyCode     			| 0..1		| String	| Currency code (ISO 4217).			|
 | Detail/Schedule   			| 0..1    	|		| Information about dates range on which you can enjoy the activity. The same information that send in request. |
-| Detail/Schedule/Detail		| 0..1    	|		| Information about specify dates on which you can enjoy the activity. |
+| Detail/Schedule/Detail		| 0..1    	|		| Information about specific dates on which you can enjoy the activity. |
 | Detail/Schedule/Detail/OperationTimes	| 0..1    	|		| Information about specify dates on which you can enjoy the activity. |
 | Detail/Schedule/Detail/OperationTimes/OperationTime | 0..1 | 		| Information when activity starts.		|
 | @Start            			| 0..1		| Date		| Start date activity.				|
