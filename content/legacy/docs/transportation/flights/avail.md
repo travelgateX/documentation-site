@@ -11,53 +11,33 @@ permalink: /docs/transportation/DSF/flights/avail
 ### Method Goals
 
 
-This method aims to return all the available options for a given date
-and itinerary. It does not filter different classes, times or fares. It
-will always return all of the results returned by the provider.
-
+This method aims to return all the available options for a given date and itinerary. It does not filter different classes, times or fares. It will always return all of the results returned by the provider.
 
 
 ### Request Format
 
-
-The common part of an availability request is very straight forward. It
-only requires the destination/s, the travelling dates, the paxes and the
-indication of the trip type.
-
+The common part of an availability request is very straight forward. It only requires the destination/s, the travelling dates, the paxes and the indication of the trip type.
 
 
 ### Response Format
 
-
-The response format will always be delivered in the node Transportation,
-which will be organized by two main nodes: 
+The response format will always be delivered in the node Transportation, which will be organized by two main nodes: 
 
 -   Segments:
 
-A list with all of the Segments including details, returned by the
-supplier, such as dates, number, etc.
-
-
+A list with all of the Segments including details, returned by the supplier, such as dates, number, etc.
 
 -   Fares:
 
-A list with all of the prices returned for each Segment in the above
-list. Each Fare has a referenced SegmentReference inside the node
-Option, to identify the Segment. A Fare will have one or more Segments
-associated and every Segment will refer to at least one Option.
+A list with all of the prices returned for each Segment in the above list. Each Fare has a referenced SegmentReference inside the node Option, to identify the Segment. A Fare will have one or more Segments associated and every Segment will refer to at least one Option.
 
 There will always be one PaxBreakdown per passenger type.
 
-The price returned is "all inclusive". All fares, taxes and discounts
-are already included in the total price.
-
-
+The price returned is "all inclusive". All fares, taxes and discounts are already included in the total price.
 
 ### Remarks
 
-
 This method **must** be called **before** the Valuation method.
-
 
 ### AvailabilityRQ Description
 
@@ -170,12 +150,13 @@ This method **must** be called **before** the Valuation method.
 
 ### AvailabilityRS Description
 
-| **Element**					| **Number**| **Type**	| **Description** |  
-| ----------------------------- | --------- | --------- | ----------------|  
-| AvailabilityRS              	| 1     	|			| Root node.|  
-| Transportation              	| 1     	|			| Contains all of the Segments and Fares.|  
-| @totalFares            		| 1 		| Integer	| Total number of Fares.|
-| Transportation/Segments     	| 1     	|			| Contains a list of the Segments.|
+
+| **Element**					| **Number** | **Type**	| **Description** |
+| ----------------------------- | ---------- | -------- | ----------------|
+| AvailabilityRS                | 1     	 |          | Root node |
+| Transportation              	| 1       	 |			| Contains all of the Segments and Fares |
+| @totalFares            		| 1 		 | Integer	| Total number of Fares |
+| Transportation/Segments     	| 1     	 |			| Contains a list of the Segments |
 | Transportation/Segments/Segment| 1..n    	|  |  Contains the information of the segment.|
 | @id                    		| 1 		| Integer	| Unique identifier of the segment.|
 | @transportationId      		| 1 		| String	| Unique Id of the transportation.|
