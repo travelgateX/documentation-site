@@ -1,18 +1,16 @@
----
-title: Common Elements
-keywords: transportation, data structure, ferries, common elements
-search: Transportation - Ferries - Data Structure - Common Elements
-sidebar: mydoc_sidebar
-permalink: /docs/transportation/DSF/ferries/common-elements
----
-
++++
+title = "Common Elements"
+pagetitle = "Common Elements"
+description = "In every petition there some nodes which will always appear"
+icon = "fa-chain"
+weight = 4
++++
 
 
 ### Introduction
 
 
-In every petition there some nodes which will always appear, there for
-this chapter is dedicated for said nodes.
+In every petition there some nodes which will always appear, there for this chapter is dedicated for said nodes.
 
 
 
@@ -37,7 +35,7 @@ and the response status.
 ### Common Elements RQ Example
 
 
-~~~xml
+``` xml
     <TransportationBaseRQ>
        <source>
           <agencyCode>XXXXX</agencyCode>
@@ -58,7 +56,7 @@ and the response status.
        </Configuration>
        …
     </TransportationBaseRQ>
-~~~
+```
 
 
 ### Common Elements RQ Description

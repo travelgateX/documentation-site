@@ -1,12 +1,10 @@
----
-title: Change Log
-keywords: transportation, change log
-search: Transportation - Change Log
-sidebar: mydoc_sidebar
-permalink: /docs/transportation/change-log
----
-
-
++++
+title = "Change Log"
+pagetitle = "Change Log"
+description = "Accurated, chronologically-ordered list of notable changes"
+icon = "fa-file-text-o"
+weight = 3
++++
 
 **Version 1.0.8:** Date 24/07/2012
 

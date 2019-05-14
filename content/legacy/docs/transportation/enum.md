@@ -1,10 +1,11 @@
----
-title: Enum
-keywords: transportation, data structure, flights, enum
-search: Transportation - Flights - Data Structure - Enum
-sidebar: mydoc_sidebar
-permalink: /docs/transportation/enum
----
++++
+title = "Enumerates"
+pagetitle = "Enumerates"
+description = "Enumerates in use at our API"
+icon = "fa-tags"
+weight = 5
++++
+
 
 # Enumerate description
 
