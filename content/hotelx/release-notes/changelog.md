@@ -21,7 +21,7 @@ Easily accessible log of notable changes to HotelX API
 
 ## 2019-05-09
 {{% release-notes-container type="f"%}}
-- Fix error when default settings is not available
+- Fix error when default settings are not available
 {{% /release-notes-container %}}
 
 {{% release-notes-container type="f"%}}
