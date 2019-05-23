@@ -12,6 +12,6 @@ tags = ["products-changelog"]
 
 Easily accessible log of notable changes to Alerts-X API
 
-## 2019-05-09
+## 2019-05-23
 
 - Alerts-X [product documentation](https://docs.travelgatex.com/alerts/)
