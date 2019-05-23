@@ -13,6 +13,11 @@ tags = ["products-changelog"]
 Easily accessible log of notable changes to Stats-X
 
 
+## 2019-05-22
+{{% release-notes-container type="a"%}}
+- Now stats are available from 01/01/2018. Requests by `accessCode` are available only from 15/05/2019.
+{{% /release-notes-container %}}
+
 ## 2019-05-14
 {{% release-notes-container type="f"%}}
 - Fix an error that was causing that `accessCode` not being stored successfully.
