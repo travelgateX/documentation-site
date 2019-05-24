@@ -28,7 +28,11 @@ This page shows you how to query Alerts using API or TravelgateX Web.
 
 ## How to request
 
+<<<<<<< HEAD
 You must query about your alerts by their location group or their code. Also can be filtered by active alerts or not.
+=======
+You should query about your alerts by their ubication group or their code. They also can be filtered by active alerts or not active alerts.
+>>>>>>> 19fd7afc932b16704f2b83f0c92c4386b900d00f
 
 Below are shown examples for different casuistry:
 

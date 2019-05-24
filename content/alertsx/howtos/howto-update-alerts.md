@@ -22,7 +22,7 @@ This page shows you how to update an alert using API or TravelgateX.
 
 ## How to request
 
-To update an alert you must input the alert code. Only data which needs to be update needs to be input. 
+To update an alert you should input the alert code. Only data which needs to be updated needs to be input. 
 
 Below are shown examples for different casuistry:
 
