@@ -20,7 +20,7 @@ Easily accessible log of notable changes to Stats-X
 
 ## 2019-05-14
 {{% release-notes-container type="f"%}}
-- Fix an error that was causing that `accessCode` not being stored successfully.
+- Fix an error that was causing `accessCode` not being stored successfully.
 - Fix an error to show 100 assets per `errorCode` and per `operation`.
 {{% /release-notes-container %}}
 
