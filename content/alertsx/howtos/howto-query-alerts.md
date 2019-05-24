@@ -9,7 +9,7 @@
 "default_user": "",
 "gists": [
     {
-        "n":"Ubication group",
+        "n":"location group",
         "g":"d68e218b7d2039d35b6b7d8ef58131d1",
         "o":["graphiql"],
         "u":"tgx-bot",
@@ -28,9 +28,9 @@ This page shows you how to query Alerts using API or TravelgateX Web.
 
 ## How to request
 
-You must query about your alerts by their ubication group or their code. Also can be filtered by active alerts or not.
+You must query about your alerts by their location group or their code. Also can be filtered by active alerts or not.
 
-Below are shown different examples for different casuistry:
+Below are shown examples for different casuistry:
 
 {{% graphiql-tabs %}}
 
