@@ -14,6 +14,544 @@ The GraphQL schema change log is a list of recent and upcoming changes to our Gr
 
 Check out this list of new releases and changes applied on the **TravelgateX GraphQL API**.
 
+## 2019-05-23
+
+🛑  Input field `AlertUpdateConfigurationInputPeakTraffic.group` changed type from `AlertGroupInput` to `[AlertGroupInput!]`
+
+🛑  Input field `AlertUpdateConfigurationInputAverageTime.group` changed type from `AlertGroupInput` to `[AlertGroupInput!]`
+
+🛑  Input field `AlertUpdateConfigurationInputErrorRate.group` changed type from `AlertGroupInput` to `[AlertGroupInput!]`
+
+🛑  Input field `AlertUpdateConfigurationInputNoTraffic.group` changed type from `AlertGroupInput` to `[AlertGroupInput!]`
+
+🛑  Input field `AlertConfigurationInputPeakTraffic.group` changed type from `AlertGroupInput!` to `[AlertGroupInput!]`
+
+🛑  Input field `AlertConfigurationInputAverageTime.group` changed type from `AlertGroupInput!` to `[AlertGroupInput!]`
+
+🛑  Input field `AlertConfigurationInputErrorRate.group` changed type from `AlertGroupInput!` to `[AlertGroupInput!]`
+
+🛑  Input field `AlertConfigurationInputNoTraffic.group` changed type from `AlertGroupInput!` to `[AlertGroupInput!]`
+
+🛑  Field `GeonameData.type` changed type from `DestinationType!` to `String!`
+
+✅  Input field `AlertUpdateConfigurationInputPeakTraffic.group` description changed from `Possibility to filter traffic by groups. It is mandatory to set an ORG group type. Only ORG, FOLDER and PRODUCT group types are allowed` to `Must filter traffic by group. Only PRODUCT group type is allowed`
+
+✅  Description `Configuration for AVERAGE_TIME.
+Average time is used to verify requests times.
+There are 3 options:
+- OPTION 1: Can verify average time traffic of a time frame and compare it with an other time frame. (window and historical window) Must set field window and historical windows higher than 0.
+- OPTION 2: Can verify average time traffic of a time frame and compare it with the value max_average. Must set window higher than 0.
+- OPTION 3: Can verify average time traffic of a specific number of requests and compare it with the value max_average. Must set window as 0 and minNumRequests higher than 0.` on type `AlertUpdateConfigurationInputAverageTime` has changed to `Configuration for AVERAGE_TIME.
+Average time is used to verify requests times.
+There are 3 options:
+- OPTION 1: Can verify average time traffic of a time frame and compare it with an other time frame. (window and historical window) Must set field window and historical windows higher than 0.
+- OPTION 2: Can verify average time traffic of a time frame and compare it with the value max_average. Must set window higher than 0.
+- OPTION 3: Can verify average time traffic of a specific number of requests and compare it with the value max_average. Must set window as 0 and minNumRequests higher than 0.`
+
+✅  Input field `AlertUpdateConfigurationInputAverageTime.minNumberRequests` description changed from `OPTION 1: defines the minimum number of requests must be in our historical Data before cheking the alert.
+OPTION 2: defines the minimum number of requests must be in the window time frame to check the alert.` to `OPTION 1: defines the minimum number of requests must be in our historical Data before cheking the alert.
+OPTION 2: defines the minimum number of requests must be in the window time frame to check the alert.`
+
+✅  Description `Configuration update for error rate alert type.
+Error rate alert is used to verify traffic comparing its error codes.
+Ther are to options.
+- OPTION 1: Can verify traffic of a time frame. Set window field higher than 0.
+- OPTION 2: Can verify traffic of a specific number of requests. Set window fild as 0 and minNumRequest higher than 0.` on type `AlertUpdateConfigurationInputErrorRate` has changed to `Configuration update for error rate alert type.
+Error rate alert is used to verify traffic comparing its error codes.
+Ther are to options.
+- OPTION 1: Can verify traffic of a time frame. Set window field higher than 0.
+- OPTION 2: Can verify traffic of a specific number of requests. Set window fild as 0 and minNumRequest higher than 0.`
+
+✅  Input field `AlertUpdateConfigurationInputErrorRate.minNumberRequests` description changed from `OPTION 1: defines the minimum number of requests must be in our historical Data before cheking the alert.
+OPTION 2: defines the minimum number of requests must be in the window time frame to check the alert.` to `OPTION 1: defines the minimum number of requests must be in our historical Data before cheking the alert.
+OPTION 2: defines the minimum number of requests must be in the window time frame to check the alert.`
+
+✅  Description `Confiuration update for NO_TRAFFIC alert type.
+No traffic alert is used to verify if there is traffic according to the parameters of the alert.` on type `AlertUpdateConfigurationInputNoTraffic` has changed to `Confiuration update for NO_TRAFFIC alert type.
+No traffic alert is used to verify if there is traffic according to the parameters of the alert.`
+
+✅  Description `Configuration for PEAK_TRAFFIC alert type.
+Peak traffic is used to verify traffic comparing volum of requests between to time frame (window and historical window) . ` on type `AlertConfigurationInputPeakTraffic` has changed to `Configuration for PEAK_TRAFFIC alert type.
+Peak traffic is used to verify traffic comparing volum of requests between to time frame (window and historical window) .`
+
+✅  Description `Configuration for AVERAGE_TIME.
+Average time is used to verify requests times.
+There are 3 options:
+- OPTION 1: Can verify average time traffic of a time frame and compare it with an other time frame. (window and historical window) Must set field window and historical windows higher than 0.
+- OPTION 2: Can verify average time traffic of a time frame and compare it with the value max_average. Must set window higher than 0.
+- OPTION 3: Can verify average time traffic of a specific number of requests and compare it with the value max_average. Must set window as 0 and minNumRequests higher than 0.` on type `AlertConfigurationInputAverageTime` has changed to `Configuration for AVERAGE_TIME.
+Average time is used to verify requests times.
+There are 3 options:
+- OPTION 1: Can verify average time traffic of a time frame and compare it with an other time frame. (window and historical window) Must set field window and historical windows higher than 0.
+- OPTION 2: Can verify average time traffic of a time frame and compare it with the value max_average. Must set window higher than 0.
+- OPTION 3: Can verify average time traffic of a specific number of requests and compare it with the value max_average. Must set window as 0 and minNumRequests higher than 0.`
+
+✅  Input field `AlertConfigurationInputAverageTime.minNumberRequests` description changed from `OPTION 1: defines the minimum number of requests must be in our historical Data before cheking the alert.
+OPTION 2: defines the minimum number of requests must be in the window time frame to check the alert.` to `OPTION 1: defines the minimum number of requests must be in our historical Data before cheking the alert.
+OPTION 2: defines the minimum number of requests must be in the window time frame to check the alert.`
+
+✅  Description `Configuration for ERROR_RATE alert type.
+Error rate alert is used to verify traffic comparing its error codes.
+Ther are two options.
+- OPTION 1: Can verify traffic of a time frame. Must set window field higher than 0.
+- OPTION 2: Can verify traffic of a specific number of requests. Must set window field as 0 and minNumRequest higher than 0.` on type `AlertConfigurationInputErrorRate` has changed to `Configuration for ERROR_RATE alert type.
+Error rate alert is used to verify traffic comparing its error codes.
+Ther are two options.
+- OPTION 1: Can verify traffic of a time frame. Must set window field higher than 0.
+- OPTION 2: Can verify traffic of a specific number of requests. Must set window field as 0 and minNumRequest higher than 0.`
+
+✅  Input field `AlertConfigurationInputErrorRate.minNumberRequests` description changed from `OPTION 1: defines the minimum number of requests must be in our historical Data before cheking the alert.
+OPTION 2: defines the minimum number of requests must be in the window time frame to check the alert.` to `OPTION 1: defines the minimum number of requests must be in our historical Data before cheking the alert.
+OPTION 2: defines the minimum number of requests must be in the window time frame to check the alert.`
+
+✅  Description `Configuration for NO_TRAFFIC alert type.
+No traffic alert is used to verify if there is traffic according to the parameters of the alert.` on type `AlertConfigurationInputNoTraffic` has changed to `Configuration for NO_TRAFFIC alert type.
+No traffic alert is used to verify if there is traffic according to the parameters of the alert.`
+
+✅  Description `Input delta price, indicates price variation permitted by the client
+An error will be returned if the new price does not abide to DeltaPrice. If DeltaPrice is not sent and the integration implements it, we assume that the price range is 0 and the process will continue
+(price is lower or equal to the price showed in valuation).
+This field is implemented if it’s native to the supplier or if another availability/valuation request needs to be done in Reservation. In case the supplier blocks the option in valuation, reservation
+will be done automatically in reservation method.` on type `DeltaPriceInput` has changed to `Input delta price, indicates price variation permitted by the client
+An error will be returned if the new price does not abide to DeltaPrice. If DeltaPrice is not sent and the integration implements it, we assume that the price range is 0 and the process will continue
+(price is lower or equal to the price showed in valuation).
+This field is implemented if it’s native to the supplier or if another availability/valuation request needs to be done in Reservation. In case the supplier blocks the option in valuation, reservation
+will be done automatically in reservation method.`
+
+✅  Field `quotePrice` was added to object type `HotelBookingDetail`
+
+✅  Field `searchPrice` was added to object type `HotelOptionQuote`
+
+✅  Deprecation reason on field `GeonameData.type` has changed from `Field is deprecated from 2019-04-30` to ``
+
+✅  Field `adviseMessageCatalog` was added to object type `APIData`
+
+✅  Type `PriceChange` was added
+
+## 2019-05-16
+
+🛑  Input field `basicInfoMandatory_in` was removed from input object type `HotelXHotelFilterInput`
+
+🛑  Input field `basicInfo_in` was removed from input object type `HotelXHotelFilterInput`
+
+🛑  Input field `isoCode_in` was removed from input object type `HotelXHotelFilterInput`
+
+🛑  Field `Location.closestDestination` changed type from `DestinationData!` to `DestinationData`
+
+🛑  Field `Location.country` changed type from `Country!` to `Country`
+
+🛑  Field `HotelData.categoryCode` changed type from `String!` to `String`
+
+🛑  Field `HotelData.hotelName` changed type from `String!` to `String`
+
+✅  Input field `isSchedulerActive` was added to input object type `AccessInput`
+
+✅  Description `By default: Logical AND on all given filters.` on type `HotelXHotelFilterInput` has changed to `By default: Logical AND on all given filters. only hotels that match condition are returned`
+
+✅  Input field `HotelXHotelFilterInput.coordinates_in` description changed from `Coordinates returned in Hotel` to `Hotel Coordinates required for all Hotels`
+
+✅  Input field `HotelXHotelFilterInput.name_in` description changed from `Name returned in Hotel` to `Hotel Name required for all Hotels`
+
+✅  Input field `HotelXHotelFilterInput.destination_in` description changed from `Destination returnd in Hotel` to `Hotel destination required for all Hotels`
+
+✅  Input field `HotelXHotelFilterInput.category_in` description changed from `Category returned in Hotel` to `Hotel Category code required for all Hotels`
+
+✅  Input field `HotelXHotelFilterInput.country_in` description changed from `Country returned in Hotel` to `Hotel Country required for all Hotels`
+
+✅  Input field `HotelXHotelFilterInput.updatedAt_gte` description changed from `All values greater than or equal the given value.` to `Return hotels with update time greater than or equal the given value.`
+
+✅  Input field `HotelXHotelFilterInput.updatedAt_gt` description changed from `All values greater than the given value.` to `Return hotels with update time greater than the given value.`
+
+✅  Input field `HotelXHotelFilterInput.updatedAt_lte` description changed from `All values less than or equal the given value.` to `Return hotels with update time less than or equal the given value.`
+
+✅  Input field `HotelXHotelFilterInput.updatedAt_lt` description changed from `All values less than the given value.` to `Return hotels with update time less than the given value.`
+
+✅  Input field `HotelXHotelFilterInput.updatedAt_not_in` description changed from `All values that are not contained in given list.` to `Return hotels with update time that are not contained in given list.`
+
+✅  Input field `HotelXHotelFilterInput.updatedAt_in` description changed from `All values that are contained in given list.` to `Return hotels with update time that are contained in given list.`
+
+✅  Input field `HotelXHotelFilterInput.createdAt_gte` description changed from `All values greater than or equal the given value.` to `Return hotels with creation time greater than or equal the given value.`
+
+✅  Input field `HotelXHotelFilterInput.createdAt_gt` description changed from `All values greater than the given value.` to `Return hotels with creation time greater than the given value.`
+
+✅  Input field `HotelXHotelFilterInput.createdAt_lte` description changed from `All values less than or equal the given value.` to `Return hotels with creation time less than or equal the given value.`
+
+✅  Input field `HotelXHotelFilterInput.createdAt_lt` description changed from `All values less than the given value.` to `Return hotels with creation time less than the given value.`
+
+✅  Input field `HotelXHotelFilterInput.createdAt_not_in` description changed from `All values that are not contained in given list.` to `Return hotels with creation time that are not contained in given list.`
+
+✅  Input field `HotelXHotelFilterInput.createdAt_in` description changed from `All values that are contained in given list.` to `Return hotels with creation time in given list.`
+
+## 2019-05-06
+
+🛑  Input field `AlertUpdateConfigurationInputPeakTraffic.group` changed type from `[AlertGroupInput!]` to `AlertGroupInput`
+
+🛑  Input field `AlertUpdateConfigurationInputAverageTime.group` changed type from `[AlertGroupInput!]` to `AlertGroupInput`
+
+🛑  Input field `AlertUpdateConfigurationInputErrorRate.group` changed type from `[AlertGroupInput!]` to `AlertGroupInput`
+
+🛑  Input field `AlertUpdateConfigurationInputNoTraffic.group` changed type from `[AlertGroupInput!]` to `AlertGroupInput`
+
+🛑  Input field `editor` was removed from input object type `AlertUpdateInput`
+
+🛑  Input field `AlertConfigurationInputPeakTraffic.group` changed type from `[AlertGroupInput!]!` to `AlertGroupInput!`
+
+🛑  Input field `AlertConfigurationInputAverageTime.group` changed type from `[AlertGroupInput!]!` to `AlertGroupInput!`
+
+🛑  Input field `AlertConfigurationInputErrorRate.group` changed type from `[AlertGroupInput!]!` to `AlertGroupInput!`
+
+🛑  Input field `type` was removed from input object type `AlertGroupInput`
+
+🛑  Input field `AlertConfigurationInputNoTraffic.group` changed type from `[AlertGroupInput!]!` to `AlertGroupInput!`
+
+🛑  Input field `group` was added to input object type `AlertInput`
+
+🛑  Input field `editor` was removed from input object type `AlertInput`
+
+🛑  Type for argument `criteria` on field `AlertsXQuery.alerts` changed from `AlertCriteriaInput` to `AlertCriteriaInput!`
+
+✅  Input field `AlertUpdateConfigurationInputAverageTime.group` description changed from `Possibility to filter traffic by groups. It is mandatory to set an ORG group type. Only ORG, FOLDER and PRODUCT group types are allowed` to `Must filter traffic by group. Only PRODUCT group type is allowed`
+
+✅  Input field `AlertUpdateConfigurationInputErrorRate.group` description changed from `Possibility to filter traffic by groups. It is mandatory to set an ORG group type. Only ORG, FOLDER and PRODUCT group types are allowed` to `Must filter traffic by group. Only PRODUCT group type is allowed`
+
+✅  Input field `AlertUpdateConfigurationInputNoTraffic.group` description changed from `Possibility to filter traffic by groups. It is mandatory to set an ORG group type. Only ORG, FOLDER and PRODUCT group types are allowed` to `Must filter traffic by group. Only PRODUCT group type is allowed`
+
+✅  Input field `AlertConfigurationInputPeakTraffic.group` description changed from `Possibility to filter traffic by groups. It is mandatory to set an ORG group type. Only ORG, FOLDER and PRODUCT group types are allowed` to `Must filter traffic by group. Only PRODUCT group type is allowed`
+
+✅  Input field `AlertConfigurationInputAverageTime.group` description changed from `Possibility to filter traffic by groups. It is mandatory to set an ORG group type. Only ORG, FOLDER and PRODUCT group types are allowed` to `Must filter traffic by group. Only PRODUCT group type is allowed`
+
+✅  Input field `AlertConfigurationInputErrorRate.group` description changed from `Possibility to filter traffic by groups. It is mandatory to set an ORG group type. Only ORG, FOLDER and PRODUCT group types are allowed` to `Must filter traffic by group. Only PRODUCT group type is allowed`
+
+✅  Input field `AlertConfigurationInputNoTraffic.group` description changed from `Possibility to filter traffic by groups. It is mandatory to set an ORG group type. Only ORG, FOLDER and PRODUCT group types are allowed` to `Must filter traffic by group. Only PRODUCT group type is allowed`
+
+✅  Input field `groups` was added to input object type `AlertCriteriaInput`
+
+## 2019-05-02
+
+✅  Input field `retrieveAssets` was added to input object type `StatsFilterInput`
+
+## 2019-04-30
+
+✅  Input field `basicInfoMandatory_in` was added to input object type `HotelXHotelFilterInput`
+
+✅  Input field `basicInfo_in` was added to input object type `HotelXHotelFilterInput`
+
+✅  Input field `isoCode_in` was added to input object type `HotelXHotelFilterInput`
+
+✅  Input field `coordinates_in` was added to input object type `HotelXHotelFilterInput`
+
+✅  Input field `name_in` was added to input object type `HotelXHotelFilterInput`
+
+✅  Input field `destination_in` was added to input object type `HotelXHotelFilterInput`
+
+✅  Input field `category_in` was added to input object type `HotelXHotelFilterInput`
+
+✅  Input field `country_in` was added to input object type `HotelXHotelFilterInput`
+
+✅  Deprecation reason on field `GeonameData.type` has changed from `` to `Field is deprecated from 2019-04-30`
+
+
+✅  Input field `entityIDs` was added to input object type `ProfileFilter`
+
+✅  Field `siblings` was added to object type `GroupData`
+
+✅  Field `OrganizationData.allMembers` description changed from `Response all members in this group's childrens (hierarchically)` to `Response all members in this group's childrens (hierarchically) `
+
+## 2019-04-24
+
+🛑  Input field `isActive` was added to input object type `UpdateMemberInput`
+
+🛑  Input field `label` was added to input object type `UpdateMemberInput`
+
+🛑  Input field `method` was removed from input object type `UpdateMemberInput`
+
+🛑  Input field `resources` was removed from input object type `UpdateMemberInput`
+
+🛑  Input field `role` was removed from input object type `UpdateMemberInput`
+
+🛑  Input field `group` was removed from input object type `UpdateMemberInput`
+
+🛑  Input field `info` was removed from input object type `UpdateMemberInput`
+
+✅  Field `clonePermissions` was added to object type `AdminMutation`
+
+✅  Field `revokePermissions` was added to object type `AdminMutation`
+
+✅  Field `grantPermissions` was added to object type `AdminMutation`
+
+✅  Input field `StatsFilterInput.mode` description changed from `Buyer or Seller` to `Buyer or Seller
+@deprecated(reason: "deprecated from 2019-04-11. Superfluous field.")`
+
+✅  Input field `owners` was added to input object type `StatsFilterInput`
+
+✅  Field `AdviseMessage.type` description changed from `Error type: The following types are valid:` to `Error type: The following types are valid:[type]`
+
+✅  Type `ClonePermissionsInput` was added
+
+
+✅  Type `GrantPermissionsInput` was added
+
+## 2019-04-08
+
+🛑  Field `Event.adviseMessage` changed type from `AdviseMessage` to `[AdviseMessage!]`
+
+🛑  Field `Alert.adviseMessage` changed type from `AdviseMessage` to `[AdviseMessage!]`
+
+🛑  Argument `trafficType: TrafficType!` added to field `StatsData.ratios`
+
+🛑  Argument `ratioSource: RatiosSource!` was removed from field `StatsData.ratios`
+
+🛑  Type `RatiosSource` was removed
+
+✅  Field `Alert.adviseMessage` description changed from `Advise Message` to `List of advise messages.`
+
+✅  Deprecation reason on field `OperationDetailed.cache` has changed from `` to `deprecated from 2019-04-03. Added new field trafficType.`
+
+✅  Field `trafficType` was added to object type `OperationDetailed`
+
+✅  Deprecation reason on field `StatsData.ratios` has changed from `` to `deprecated from 2019-04-08. Added hits fields to be able to
+calculate ratios at client side.`
+
+✅  Field `hits` was added to object type `StatsData`
+
+✅  Description for enum value `BookStatusType.KO` changed from `The status of the booking is KO` to `The status of the booking is NOT OK`
+
+✅  Field `surcharges` was added to object type `Room`
+
+✅  Argument `filter: AccessFilter` added to field `SupplierData.accesses`
+
+✅  Argument `after: String` added to field `SupplierData.accesses`
+
+✅  Argument `before: String` added to field `SupplierData.accesses`
+
+✅  Argument `last: Int` added to field `SupplierData.accesses`
+
+✅  Argument `first: Int` added to field `SupplierData.accesses`
+
+✅  Type `TrafficType` was added
+
+
+## 2019-03-28
+
+🛑  Argument `ratioSource: RatiosSource!` added to field `StatsData.ratios`
+
+✅  Field `suppliers` was added to object type `ClientData`
+
+✅  Field `clients` was added to object type `SupplierData`
+
+✅  Argument `parentCode: ID` added to field `AdminQuery.groups`
+
+✅  Type `RatiosSource` was added
+
+## 2019-03-14
+
+🛑  Input field `api` was removed from input object type `UpdateGroupInput`
+
+🛑  Argument `method: Method!` was removed from field `AdminMutation.updateGroup`
+
+✅  Input field `label` was added to input object type `UpdateGroupInput`
+
+✅  Input field `type` was added to input object type `UpdateGroupInput`
+
+✅  Input field `owner` was added to input object type `UpdateGroupInput`
+
+## 2019-03-07
+
+🛑  Input field `UpdateGroupInput.api` changed type from `ID!` to `[ID!]!`
+
+🛑  Field `impersonationJWT` was removed from object type `MemberData`
+
+🛑  Type `JWTImpersonation` was removed
+
+✅  Input field `UpdateGroupInput.api` description changed from `` to `@deprecated(reason: "deprecated from 2019-03-06. Use GrantAPIToGroup / RevokeAPIFromGroup to add or delete apis from groups")`
+
+✅  Input field `updateDateRange` was added to input object type `AccessInput`
+
+✅  Input field `updateList` was added to input object type `AccessInput`
+
+✅  Input field `updateDescriptiveInfo` was added to input object type `AccessInput`
+
+✅  Input field `descriptiveInfoLimit` was added to input object type `AccessInput`
+
+✅  Field `revokeApiFromGroup` was added to object type `AdminMutation`
+
+✅  Field `grantApiToGroup` was added to object type `AdminMutation`
+
+✅  Field `suitOrganization` was added to object type `AdminMutation`
+
+✅  Deprecation reason on field `BookingHotel.checkOut` has changed from `` to `deprecated from 2018-02-28. Incorrect date format.`
+
+✅  Deprecation reason on field `BookingHotel.checkIn` has changed from `` to `deprecated from 2018-02-28. Incorrect date format.`
+
+✅  Deprecation reason on field `BookingHotel.creationDate` has changed from `` to `deprecated from 2018-02-28. Incorrect date format.`
+
+✅  Field `end` was added to object type `BookingHotel`
+
+✅  Field `start` was added to object type `BookingHotel`
+
+✅  Field `bookingDate` was added to object type `BookingHotel`
+
+✅  Deprecation reason on field `Supplement.expireDate` has changed from `` to `deprecated from 2018-02-28. Incorrect date format.`
+
+✅  Deprecation reason on field `Supplement.effectiveDate` has changed from `` to `deprecated from 2018-02-28. Incorrect date format.`
+
+✅  Field `end` was added to object type `Supplement`
+
+✅  Field `start` was added to object type `Supplement`
+
+✅  Deprecation reason on field `Promotion.expireDate` has changed from `` to `deprecated from 2018-02-28. Incorrect date format.`
+
+✅  Deprecation reason on field `Promotion.effectiveDate` has changed from `` to `deprecated from 2018-02-28. Incorrect date format.`
+
+✅  Field `end` was added to object type `Promotion`
+
+✅  Field `start` was added to object type `Promotion`
+
+✅  Deprecation reason on field `RatePlan.expireDate` has changed from `` to `deprecated from 2018-02-28. Incorrect date format.`
+
+✅  Deprecation reason on field `RatePlan.effectiveDate` has changed from `` to `deprecated from 2018-02-28. Incorrect date format.`
+
+✅  Field `end` was added to object type `RatePlan`
+
+✅  Field `start` was added to object type `RatePlan`
+
+✅  Deprecation reason on field `PriceBreakdown.expireDate` has changed from `` to `deprecated from 2018-02-28. Incorrect date format.`
+
+✅  Deprecation reason on field `PriceBreakdown.effectiveDate` has changed from `` to `deprecated from 2018-02-28. Incorrect date format.`
+
+✅  Field `end` was added to object type `PriceBreakdown`
+
+✅  Field `start` was added to object type `PriceBreakdown`
+
+✅  Argument `codeStartsWith: String` added to field `GroupData.parents`
+
+✅  Field `template` was added to object type `OrganizationData`
+
+✅  Field `updateDateRange` was added to object type `AccessData`
+
+✅  Field `updateList` was added to object type `AccessData`
+
+✅  Field `descriptiveInfoLimit` was added to object type `AccessData`
+
+✅  Field `updateDescriptiveInfo` was added to object type `AccessData`
+
+✅  Argument `codeStartsWith: String` added to field `AdminQuery.groups`
+
+✅  Type `UpdateGroupAPISInput` was added
+
+✅  Type `SuitOrganizationInput` was added
+
+## 2019-02-20
+
+✅  Field `alertsX` was added to object type `Mutation`
+
+✅  Field `Stats.statsData` description changed from `GUID
+The data returned by a Stats query.` to `The data returned by a Stats query.`
+
+✅  Description `Filter that selects the filter criteria which will be used in this availability. Currently you can only choose the accesses.
+You must choose one of them, include or exclude, or the other alternative isn't specified anything.
+If input both, you will receive a validation error that indicates this error.
+@deprecated(reason: "deprecated from 2018-08-20. Please, use filterSearch")` on type `FilterInput` has changed to ` Filter that selects the filter criteria which will be used in this availability. Currently you can only choose the accesses.
+ You must choose one of them, include or exclude, or the other alternative isn't specified anything.
+ If input both, you will receive a validation error that indicates this error.
+@deprecated(reason: "deprecated from 2018-08-20. Please, use filterSearch")`
+
+✅  Input field `HotelSettingsInput.connectUser` description changed from `This field is occurs only if the authorization header is of the type JWT.. It is used to change the user that has been set by default in the preload.
+@deprecated(reason: "deprecated from 2018-03-19. Redundant.")` to ` This field is occurs only if the authorization header is of the type JWT.. It is used to change the user that has been set by default in the preload.
+@deprecated(reason: "deprecated from 2018-03-19. Redundant.")`
+
+✅  Description `The JSON type makes sure that it is actually valid JSON and returns the value as a parsed JSON object/array instead of a string.
+In queries or mutations, JSON fields have to be specified with enclosing double quotes. Special characters have to be escaped: "{\"int\": 1, \"string\": \"value\"}".` on type `JSON` has changed to `The JSON type makes sure that it is actually valid JSON and returns the value as a parsed JSON object/array instead of a string.
+In queries or mutations, JSON fields have to be specified with enclosing double quotes. Special characters have to be escaped: "{"int": 1, "string": "value"}".`
+
+✅  Description `The URI type represents a URI values. A good example mith be an Hotel Image URL.
+In queries or mutations, URI fields have to be specified in RFC 3986, RFC 3987, and RFC 6570 (level 4) compliant URI string format with enclosing double quotes: "http:\\www.travelgatex.com".` on type `URI` has changed to `The URI type represents a URI values. A good example mith be an Hotel Image URL.
+In queries or mutations, URI fields have to be specified in RFC 3986, RFC 3987, and RFC 6570 (level 4) compliant URI string format with enclosing double quotes: "http:\www.travelgatex.com".`
+
+✅  Description `` on type `APIData` has changed to ``
+
+✅  Field `alertsX` was added to object type `Query`
+
+✅  Type `unitTime` was added
+
+✅  Type `AlertUpdateConfigurationInputPeakTraffic` was added
+
+✅  Type `AlertUpdateConfigurationInputAverageTime` was added
+
+✅  Type `AlertUpdateConfigurationInputErrorRate` was added
+
+✅  Type `AlertUpdateConfigurationInputNoTraffic` was added
+
+✅  Type `AlertUpdateInput` was added
+
+✅  Type `AlertConfigurationInputPeakTraffic` was added
+
+✅  Type `AlertConfigurationInputAverageTime` was added
+
+✅  Type `AlertConfigurationInputErrorRate` was added
+
+✅  Type `ComercialType` was added
+
+✅  Type `AlertGroupInput` was added
+
+✅  Type `AlertObjectInput` was added
+
+✅  Type `ErrorTypeInput` was added
+
+✅  Type `ErrorCodeInput` was added
+
+✅  Type `HubStatusInput` was added
+
+✅  Type `EmailInput` was added
+
+✅  Type `AlertConfigurationInputNoTraffic` was added
+
+✅  Type `AlertInput` was added
+
+✅  Type `AlertsXMutation` was added
+
+✅  Type `AlertCriteriaInput` was added
+
+✅  Type `EventType` was added
+
+✅  Type `EventData` was added
+
+✅  Type `Event` was added
+
+✅  Type `EventEdge` was added
+
+✅  Type `EventConnection` was added
+
+✅  Type `AlertFilterInput` was added
+
+✅  Type `AlertGroups` was added
+
+✅  Type `AlertObjectsUnion` was added
+
+✅  Type `ErrorType` was added
+
+✅  Type `HubStatus` was added
+
+✅  Type `EmailType` was added
+
+✅  Type `Email` was added
+
+✅  Type `AlertTypeConfiguration` was added
+
+✅  Type `AlertType` was added
+
+✅  Type `AlertConfiguration` was added
+
+✅  Type `AlertData` was added
+
+✅  Type `Alert` was added
+
+✅  Type `AlertEdge` was added
+
+✅  Type `AlertConnection` was added
+
+✅  Type `AlertsXQuery` was added
+
 ## 2019-02-11
 
 🛑  Type `Search` was removed
