@@ -1,6 +1,6 @@
 +++
 title = "Alerts-X"
-pagetitle = "Be advise of any unusual performance"
+pagetitle = "Be advised of any unusual performance"
 description = ""
 weight = 4
 alwaysopen = false
