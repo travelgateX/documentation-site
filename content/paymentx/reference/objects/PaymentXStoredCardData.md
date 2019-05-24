@@ -7,7 +7,7 @@
       "typeString": "Group!",
       "name": "instance",
       "url": "/paymentx/reference/objects/group",
-      "description": "Asigned instance of PaymentX of the booked property.",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -15,7 +15,7 @@
       "typeString": "PointOfSale!",
       "name": "pointOfSale",
       "url": "/paymentx/reference/objects/pointofsale",
-      "description": "Physical point of sale where the card was registered.",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -23,7 +23,7 @@
       "typeString": "String!",
       "name": "bookingReference",
       "url": "/paymentx/reference/scalars/string",
-      "description": "Indicates the referece of the booking",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -31,7 +31,7 @@
       "typeString": "Date",
       "name": "checkOut",
       "url": "/paymentx/reference/scalars/date",
-      "description": "Check-out, booking date Format: YYYY-MM-DD",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -39,7 +39,7 @@
       "typeString": "Date",
       "name": "checkIn",
       "url": "/paymentx/reference/scalars/date",
-      "description": "Check-in, booking date Format: YYYY-MM-DD",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -47,7 +47,7 @@
       "typeString": "String",
       "name": "cardType",
       "url": "/paymentx/reference/scalars/string",
-      "description": "Indicates the card type.",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -55,7 +55,7 @@
       "typeString": "Holder",
       "name": "holder",
       "url": "/paymentx/reference/objects/holder",
-      "description": "Contains owner's name",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -63,7 +63,7 @@
       "typeString": "CardNumber",
       "name": "number",
       "url": "/paymentx/reference/scalars/cardnumber",
-      "description": "Card Number (16 digits typically)",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -71,7 +71,7 @@
       "typeString": "CVC",
       "name": "CVC",
       "url": "/paymentx/reference/scalars/cvc",
-      "description": "Contains credit card CVC",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -79,7 +79,7 @@
       "typeString": "PaymentXExpireDate",
       "name": "expire",
       "url": "/paymentx/reference/objects/paymentxexpiredate",
-      "description": "Contains credit card expiration date",
+      "description": null,
       "isDeprecated": false,
       "args": null
     }
@@ -87,7 +87,7 @@
   "requireby": [
     {
       "name": "PaymentXStoredCard",
-      "description": "",
+      "description": null,
       "url": "/paymentx/reference/objects/paymentxstoredcard"
     }
   ],

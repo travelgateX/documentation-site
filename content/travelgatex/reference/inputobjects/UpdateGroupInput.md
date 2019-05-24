@@ -4,24 +4,24 @@
   "weight": 1,
   "fields": [
     {
-      "typeString": "ID!",
+      "typeString": "[ID!]!",
       "name": "api",
       "url": "/travelgatex/reference/scalars/id",
-      "description": "",
+      "description": null,
       "args": null
     },
     {
       "typeString": "ID!",
       "name": "group",
       "url": "/travelgatex/reference/scalars/id",
-      "description": "",
+      "description": null,
       "args": null
     },
     {
       "typeString": "String",
       "name": "info",
       "url": "/travelgatex/reference/scalars/string",
-      "description": "",
+      "description": null,
       "args": null
     }
   ],

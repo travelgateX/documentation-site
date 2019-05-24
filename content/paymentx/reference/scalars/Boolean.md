@@ -6,62 +6,62 @@
   "requireby": [
     {
       "name": "PageInfo",
-      "description": "",
+      "description": null,
       "url": "/paymentx/reference/objects/pageinfo"
     },
     {
       "name": "GroupData",
-      "description": "",
+      "description": null,
       "url": "/paymentx/reference/objects/groupdata"
     },
     {
       "name": "GroupCommonData",
-      "description": "",
+      "description": null,
       "url": "/paymentx/reference/interfaces/groupcommondata"
     },
     {
       "name": "MemberData",
-      "description": "",
+      "description": null,
       "url": "/paymentx/reference/objects/memberdata"
     },
     {
       "name": "APIData",
-      "description": "",
+      "description": null,
       "url": "/paymentx/reference/objects/apidata"
     },
     {
       "name": "ResourceData",
-      "description": "",
+      "description": null,
       "url": "/paymentx/reference/objects/resourcedata"
     },
     {
       "name": "RoleData",
-      "description": "",
+      "description": null,
       "url": "/paymentx/reference/objects/roledata"
     },
     {
       "name": "AccessData",
-      "description": "",
+      "description": null,
       "url": "/paymentx/reference/objects/accessdata"
     },
     {
       "name": "SupplierData",
-      "description": "",
+      "description": null,
       "url": "/paymentx/reference/objects/supplierdata"
     },
     {
       "name": "Provider",
-      "description": "Temporary type to use only during SQL server's lifetime",
+      "description": null,
       "url": "/paymentx/reference/objects/provider"
     },
     {
       "name": "OrganizationData",
-      "description": "",
+      "description": null,
       "url": "/paymentx/reference/objects/organizationdata"
     },
     {
       "name": "ClientData",
-      "description": "",
+      "description": null,
       "url": "/paymentx/reference/objects/clientdata"
     }
   ],

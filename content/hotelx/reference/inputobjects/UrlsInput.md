@@ -7,35 +7,35 @@
       "typeString": "URI",
       "name": "search",
       "url": "/hotelx/reference/scalars/uri",
-      "description": "Specific URL for Availability method.",
+      "description": null,
       "args": null
     },
     {
       "typeString": "URI",
       "name": "quote",
       "url": "/hotelx/reference/scalars/uri",
-      "description": "Specific URL for Reservation method.",
+      "description": null,
       "args": null
     },
     {
       "typeString": "URI",
       "name": "book",
       "url": "/hotelx/reference/scalars/uri",
-      "description": "Specific URL for Valuation method.",
+      "description": null,
       "args": null
     },
     {
       "typeString": "URI",
       "name": "generic",
       "url": "/hotelx/reference/scalars/uri",
-      "description": "Supplier URL used for multiple methods.",
+      "description": null,
       "args": null
     }
   ],
   "requireby": [
     {
       "name": "ConfigurationInput",
-      "description": "The information and credentials required to access the supplier’s system.",
+      "description": null,
       "url": "/hotelx/reference/inputobjects/configurationinput"
     }
   ],
@@ -44,7 +44,6 @@
   "typename": "UrlsInput",
   "hideGithubLink": true
 }
-URLs Input
 ## GraphQL schema definition
 
 {{% graphql-schema-type %}}

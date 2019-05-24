@@ -7,21 +7,21 @@
       "typeString": "String!",
       "name": "name",
       "url": "/hotelx/reference/scalars/string",
-      "description": "The guest's first  name",
+      "description": null,
       "args": null
     },
     {
       "typeString": "String!",
       "name": "surname",
       "url": "/hotelx/reference/scalars/string",
-      "description": "The guest's last name",
+      "description": null,
       "args": null
     },
     {
       "typeString": "Int!",
       "name": "age",
       "url": "/hotelx/reference/scalars/int",
-      "description": "The guest's age",
+      "description": null,
       "args": null
     }
   ],
@@ -31,7 +31,6 @@
   "typename": "BookPaxInput",
   "hideGithubLink": true
 }
-Input BookPax contains basic information abaout pax suach as name, surname and age.
 ## GraphQL schema definition
 
 {{% graphql-schema-type %}}

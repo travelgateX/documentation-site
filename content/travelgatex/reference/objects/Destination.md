@@ -7,7 +7,7 @@
       "typeString": "ID!",
       "name": "code",
       "url": "/travelgatex/reference/scalars/id",
-      "description": "Destination ID",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -15,7 +15,7 @@
       "typeString": "DestinationData",
       "name": "destinationData",
       "url": "/travelgatex/reference/objects/destinationdata",
-      "description": "Destination data",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -23,7 +23,7 @@
       "typeString": "[AdviseMessage!]",
       "name": "error",
       "url": "/travelgatex/reference/objects/advisemessage",
-      "description": "Errors that abort services",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -31,7 +31,7 @@
       "typeString": "DateTime!",
       "name": "createdAt",
       "url": "/travelgatex/reference/scalars/datetime",
-      "description": "Date created",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -39,7 +39,7 @@
       "typeString": "DateTime!",
       "name": "updatedAt",
       "url": "/travelgatex/reference/scalars/datetime",
-      "description": "Date updated",
+      "description": null,
       "isDeprecated": false,
       "args": null
     }
@@ -47,7 +47,7 @@
   "requireby": [
     {
       "name": "DestinationEdge",
-      "description": "DestinationList Edge definition",
+      "description": null,
       "url": "/travelgatex/reference/objects/destinationedge"
     }
   ],
@@ -56,7 +56,6 @@
   "typename": "Destination",
   "hideGithubLink": true
 }
-Destination Type
 ## GraphQL schema definition
 
 {{% graphql-schema-type %}}

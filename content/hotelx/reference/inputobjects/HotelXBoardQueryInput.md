@@ -7,14 +7,14 @@
       "typeString": "[String!]",
       "name": "boardCodes",
       "url": "/hotelx/reference/scalars/string",
-      "description": "Indicates the board codes that you want filter.",
+      "description": null,
       "args": null
     },
     {
       "typeString": "ID!",
       "name": "access",
       "url": "/hotelx/reference/scalars/id",
-      "description": "Indicates the access that you want use.",
+      "description": null,
       "args": null
     }
   ],

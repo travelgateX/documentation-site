@@ -7,7 +7,7 @@
       "typeString": "String",
       "name": "supplierMapped",
       "url": "/mappea/reference/scalars/string",
-      "description": "",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -15,7 +15,7 @@
       "typeString": "String",
       "name": "startTime",
       "url": "/mappea/reference/scalars/string",
-      "description": "",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -23,7 +23,7 @@
       "typeString": "String",
       "name": "endTime",
       "url": "/mappea/reference/scalars/string",
-      "description": "",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -31,7 +31,7 @@
       "typeString": "Int",
       "name": "organizationHotels",
       "url": "/mappea/reference/scalars/int",
-      "description": "",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -39,7 +39,7 @@
       "typeString": "Int",
       "name": "contextHotels",
       "url": "/mappea/reference/scalars/int",
-      "description": "",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -47,7 +47,7 @@
       "typeString": "Int",
       "name": "suggestedHotels",
       "url": "/mappea/reference/scalars/int",
-      "description": "",
+      "description": null,
       "isDeprecated": false,
       "args": null
     }
@@ -55,7 +55,7 @@
   "requireby": [
     {
       "name": "GetMappeaStatsResponse",
-      "description": "",
+      "description": null,
       "url": "/mappea/reference/objects/getmappeastatsresponse"
     }
   ],

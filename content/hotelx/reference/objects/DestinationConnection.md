@@ -7,7 +7,7 @@
       "typeString": "[DestinationEdge]",
       "name": "edges",
       "url": "/hotelx/reference/objects/destinationedge",
-      "description": "",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -15,7 +15,7 @@
       "typeString": "String!",
       "name": "token",
       "url": "/hotelx/reference/scalars/string",
-      "description": "",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -23,7 +23,7 @@
       "typeString": "PageInfo!",
       "name": "pageInfo",
       "url": "/hotelx/reference/objects/pageinfo",
-      "description": "Indicates info about page",
+      "description": null,
       "isDeprecated": false,
       "args": null
     }
@@ -31,7 +31,7 @@
   "requireby": [
     {
       "name": "HotelXQuery",
-      "description": "",
+      "description": null,
       "url": "/hotelx/reference/objects/hotelxquery"
     }
   ],
@@ -40,7 +40,6 @@
   "typename": "DestinationConnection",
   "hideGithubLink": true
 }
-DestinationList definition
 ## GraphQL schema definition
 
 {{% graphql-schema-type %}}

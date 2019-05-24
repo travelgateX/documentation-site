@@ -7,14 +7,14 @@
       "typeString": "ID!",
       "name": "member",
       "url": "/travelgatex/reference/scalars/id",
-      "description": "",
+      "description": null,
       "args": null
     },
     {
       "typeString": "ID!",
       "name": "group",
       "url": "/travelgatex/reference/scalars/id",
-      "description": "",
+      "description": null,
       "args": null
     }
   ],

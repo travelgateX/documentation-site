@@ -7,7 +7,7 @@
       "typeString": "API",
       "name": "node",
       "url": "/travelgatex/reference/objects/api",
-      "description": "",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -15,7 +15,7 @@
       "typeString": "String!",
       "name": "cursor",
       "url": "/travelgatex/reference/scalars/string",
-      "description": "",
+      "description": null,
       "isDeprecated": false,
       "args": null
     }
@@ -23,7 +23,7 @@
   "requireby": [
     {
       "name": "APIConnection",
-      "description": "",
+      "description": null,
       "url": "/travelgatex/reference/objects/apiconnection"
     }
   ],

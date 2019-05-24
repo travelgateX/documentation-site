@@ -7,7 +7,7 @@
       "typeString": "URI",
       "name": "search",
       "url": "/travelgatex/reference/scalars/uri",
-      "description": "Specific URL for Availability method.",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -15,7 +15,7 @@
       "typeString": "URI",
       "name": "quote",
       "url": "/travelgatex/reference/scalars/uri",
-      "description": "Specific URL for Reservation method.",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -23,7 +23,7 @@
       "typeString": "URI",
       "name": "book",
       "url": "/travelgatex/reference/scalars/uri",
-      "description": "Specific URL for Valuation method.",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -31,7 +31,7 @@
       "typeString": "URI",
       "name": "generic",
       "url": "/travelgatex/reference/scalars/uri",
-      "description": "Supplier URL used for multiple methods.",
+      "description": null,
       "isDeprecated": false,
       "args": null
     }
@@ -39,7 +39,7 @@
   "requireby": [
     {
       "name": "AccessData",
-      "description": "",
+      "description": null,
       "url": "/travelgatex/reference/objects/accessdata"
     }
   ],
@@ -48,7 +48,6 @@
   "typename": "Urls",
   "hideGithubLink": true
 }
-Url's
 ## GraphQL schema definition
 
 {{% graphql-schema-type %}}

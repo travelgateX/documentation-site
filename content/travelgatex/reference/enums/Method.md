@@ -6,20 +6,20 @@
   "requireby": [
     {
       "name": "UpdateMemberInput",
-      "description": "",
+      "description": null,
       "url": "/travelgatex/reference/inputobjects/updatememberinput"
     }
   ],
   "enumValues": [
     {
       "name": "ADD",
-      "description": "",
+      "description": null,
       "isDeprecated": false,
       "deprecationReason": null
     },
     {
       "name": "DEL",
-      "description": "",
+      "description": null,
       "isDeprecated": false,
       "deprecationReason": null
     }

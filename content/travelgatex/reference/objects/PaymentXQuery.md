@@ -7,7 +7,7 @@
       "typeString": "AdviseMessage!",
       "name": "vaultStatusService",
       "url": "/travelgatex/reference/objects/advisemessage",
-      "description": "Returns status of the vault service.",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -15,20 +15,20 @@
       "typeString": "PaymentXStoredCardConnection!",
       "name": "allStoredCards",
       "url": "/travelgatex/reference/objects/paymentxstoredcardconnection",
-      "description": "Returns the stored card list. For security, this query never will return clear card information. ",
+      "description": null,
       "isDeprecated": false,
       "args": [
         {
           "typeString": "PaymentXStoredCardFilterInput!",
           "name": "filter",
           "url": "/travelgatex/reference/inputobjects/paymentxstoredcardfilterinput",
-          "description": ""
+          "description": null
         },
         {
           "typeString": "String!",
           "name": "instanceCode",
           "url": "/travelgatex/reference/scalars/string",
-          "description": ""
+          "description": null
         }
       ]
     },
@@ -36,14 +36,14 @@
       "typeString": "PaymentXStoredCard!",
       "name": "storedCard",
       "url": "/travelgatex/reference/objects/paymentxstoredcard",
-      "description": "Returns a stored card information. ",
+      "description": null,
       "isDeprecated": false,
       "args": [
         {
           "typeString": "PaymentXStoredCardIDInput!",
           "name": "criteria",
           "url": "/travelgatex/reference/inputobjects/paymentxstoredcardidinput",
-          "description": ""
+          "description": null
         }
       ]
     }
@@ -51,7 +51,7 @@
   "requireby": [
     {
       "name": "Query",
-      "description": "The query root of TravelgateX's GraphQL interface.",
+      "description": null,
       "url": "/travelgatex/reference/schema/query"
     }
   ],

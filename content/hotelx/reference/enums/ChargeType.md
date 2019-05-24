@@ -6,25 +6,25 @@
   "requireby": [
     {
       "name": "Supplement",
-      "description": "Supplement that it can be or its already added to the option returned. Contains all the information about the supplement.",
+      "description": null,
       "url": "/hotelx/reference/objects/supplement"
     },
     {
       "name": "Surcharge",
-      "description": "Surcharge that it can be or it is already added to the option returned. Contains all the information about the surcharge.",
+      "description": null,
       "url": "/hotelx/reference/objects/surcharge"
     }
   ],
   "enumValues": [
     {
       "name": "INCLUDE",
-      "description": "The charge is included.",
+      "description": null,
       "isDeprecated": false,
       "deprecationReason": null
     },
     {
       "name": "EXCLUDE",
-      "description": "The charge is excluded.",
+      "description": null,
       "isDeprecated": false,
       "deprecationReason": null
     }
@@ -33,7 +33,6 @@
   "typename": "ChargeType",
   "hideGithubLink": true
 }
-Charge Type
 ## GraphQL schema definition
 
 {{% graphql-schema-enum %}}

@@ -6,67 +6,67 @@
   "requireby": [
     {
       "name": "PageInfo",
-      "description": "",
+      "description": null,
       "url": "/stats/reference/objects/pageinfo"
     },
     {
       "name": "OperationDetailed",
-      "description": "Stats information per operation",
+      "description": null,
       "url": "/stats/reference/objects/operationdetailed"
     },
     {
       "name": "AccessData",
-      "description": "",
+      "description": null,
       "url": "/stats/reference/objects/accessdata"
     },
     {
       "name": "SupplierData",
-      "description": "",
+      "description": null,
       "url": "/stats/reference/objects/supplierdata"
     },
     {
       "name": "Provider",
-      "description": "Temporary type to use only during SQL server's lifetime",
+      "description": null,
       "url": "/stats/reference/objects/provider"
     },
     {
       "name": "OrganizationData",
-      "description": "",
+      "description": null,
       "url": "/stats/reference/objects/organizationdata"
     },
     {
       "name": "GroupCommonData",
-      "description": "",
+      "description": null,
       "url": "/stats/reference/interfaces/groupcommondata"
     },
     {
       "name": "MemberData",
-      "description": "",
+      "description": null,
       "url": "/stats/reference/objects/memberdata"
     },
     {
       "name": "RoleData",
-      "description": "",
+      "description": null,
       "url": "/stats/reference/objects/roledata"
     },
     {
       "name": "ResourceData",
-      "description": "",
+      "description": null,
       "url": "/stats/reference/objects/resourcedata"
     },
     {
       "name": "APIData",
-      "description": "",
+      "description": null,
       "url": "/stats/reference/objects/apidata"
     },
     {
       "name": "GroupData",
-      "description": "",
+      "description": null,
       "url": "/stats/reference/objects/groupdata"
     },
     {
       "name": "ClientData",
-      "description": "",
+      "description": null,
       "url": "/stats/reference/objects/clientdata"
     }
   ],

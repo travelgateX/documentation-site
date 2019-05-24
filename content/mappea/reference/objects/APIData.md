@@ -7,7 +7,7 @@
       "typeString": "ID!",
       "name": "code",
       "url": "/mappea/reference/scalars/id",
-      "description": "API Code",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -15,7 +15,7 @@
       "typeString": "ID!",
       "name": "id",
       "url": "/mappea/reference/scalars/id",
-      "description": "API ID",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -23,7 +23,7 @@
       "typeString": "Boolean!",
       "name": "isEditable",
       "url": "/mappea/reference/scalars/boolean",
-      "description": "Is API Editable or not.",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -31,7 +31,7 @@
       "typeString": "String",
       "name": "label",
       "url": "/mappea/reference/scalars/string",
-      "description": "API label",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -39,44 +39,44 @@
       "typeString": "GroupConnection",
       "name": "groups",
       "url": "/mappea/reference/objects/groupconnection",
-      "description": "which groups are asigned this API?",
+      "description": null,
       "isDeprecated": false,
       "args": [
         {
           "typeString": "[ID!]",
           "name": "codes",
           "url": "/mappea/reference/scalars/id",
-          "description": ""
+          "description": null
         },
         {
           "typeString": "GroupType",
           "name": "type",
           "url": "/mappea/reference/enums/grouptype",
-          "description": ""
+          "description": null
         },
         {
           "typeString": "Int",
           "name": "first",
           "url": "/mappea/reference/scalars/int",
-          "description": ""
+          "description": null
         },
         {
           "typeString": "Int",
           "name": "last",
           "url": "/mappea/reference/scalars/int",
-          "description": ""
+          "description": null
         },
         {
           "typeString": "String",
           "name": "before",
           "url": "/mappea/reference/scalars/string",
-          "description": ""
+          "description": null
         },
         {
           "typeString": "String",
           "name": "after",
           "url": "/mappea/reference/scalars/string",
-          "description": ""
+          "description": null
         }
       ]
     },
@@ -84,38 +84,38 @@
       "typeString": "ResourceConnection",
       "name": "resources",
       "url": "/mappea/reference/objects/resourceconnection",
-      "description": "which resources are asigned this API?",
+      "description": null,
       "isDeprecated": false,
       "args": [
         {
           "typeString": "[ID!]",
           "name": "codes",
           "url": "/mappea/reference/scalars/id",
-          "description": ""
+          "description": null
         },
         {
           "typeString": "Int",
           "name": "first",
           "url": "/mappea/reference/scalars/int",
-          "description": ""
+          "description": null
         },
         {
           "typeString": "Int",
           "name": "last",
           "url": "/mappea/reference/scalars/int",
-          "description": ""
+          "description": null
         },
         {
           "typeString": "String",
           "name": "before",
           "url": "/mappea/reference/scalars/string",
-          "description": ""
+          "description": null
         },
         {
           "typeString": "String",
           "name": "after",
           "url": "/mappea/reference/scalars/string",
-          "description": ""
+          "description": null
         }
       ]
     },
@@ -123,44 +123,44 @@
       "typeString": "OperationConnection",
       "name": "operations",
       "url": "/mappea/reference/objects/operationconnection",
-      "description": "which operations are asigned this API?",
+      "description": null,
       "isDeprecated": false,
       "args": [
         {
           "typeString": "[ID!]",
           "name": "codes",
           "url": "/mappea/reference/scalars/id",
-          "description": ""
+          "description": null
         },
         {
           "typeString": "OperationType",
           "name": "type",
           "url": "/mappea/reference/enums/operationtype",
-          "description": ""
+          "description": null
         },
         {
           "typeString": "Int",
           "name": "first",
           "url": "/mappea/reference/scalars/int",
-          "description": ""
+          "description": null
         },
         {
           "typeString": "Int",
           "name": "last",
           "url": "/mappea/reference/scalars/int",
-          "description": ""
+          "description": null
         },
         {
           "typeString": "String",
           "name": "before",
           "url": "/mappea/reference/scalars/string",
-          "description": ""
+          "description": null
         },
         {
           "typeString": "String",
           "name": "after",
           "url": "/mappea/reference/scalars/string",
-          "description": ""
+          "description": null
         }
       ]
     }
@@ -168,7 +168,7 @@
   "requireby": [
     {
       "name": "API",
-      "description": "",
+      "description": null,
       "url": "/mappea/reference/objects/api"
     }
   ],

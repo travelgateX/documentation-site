@@ -6,32 +6,32 @@
   "requireby": [
     {
       "name": "HotelOptionSearch",
-      "description": "An option includes hotel information, meal plan, total price, conditions and room description",
+      "description": null,
       "url": "/hotelx/reference/objects/hoteloptionsearch"
     }
   ],
   "enumValues": [
     {
       "name": "MERCHANT",
-      "description": "The payment is managed by the supplier.",
+      "description": null,
       "isDeprecated": false,
       "deprecationReason": null
     },
     {
       "name": "DIRECT",
-      "description": "The payment is made straight to the actual payee, without sending it through an intermediary or a third party.",
+      "description": null,
       "isDeprecated": false,
       "deprecationReason": null
     },
     {
       "name": "CARD_BOOKING",
-      "description": "The payment is managed by the supplier. The payment is effectuated at the time of booking.",
+      "description": null,
       "isDeprecated": false,
       "deprecationReason": null
     },
     {
       "name": "CARD_CHECK_IN",
-      "description": "The payment is managed by the supplier. The payment is effectuated at check in in the hotel.",
+      "description": null,
       "isDeprecated": false,
       "deprecationReason": null
     }
@@ -40,7 +40,6 @@
   "typename": "PaymentType",
   "hideGithubLink": true
 }
-Options payment type
 ## GraphQL schema definition
 
 {{% graphql-schema-enum %}}

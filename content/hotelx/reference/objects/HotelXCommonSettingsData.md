@@ -7,7 +7,7 @@
       "typeString": "Currency",
       "name": "currency",
       "url": "/hotelx/reference/scalars/currency",
-      "description": "",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -15,7 +15,7 @@
       "typeString": "BusinessRules",
       "name": "businessRules",
       "url": "/hotelx/reference/objects/businessrules",
-      "description": "",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -23,7 +23,7 @@
       "typeString": "Timeout",
       "name": "timeout",
       "url": "/hotelx/reference/objects/timeout",
-      "description": "",
+      "description": null,
       "isDeprecated": false,
       "args": null
     }
@@ -31,7 +31,7 @@
   "requireby": [
     {
       "name": "HotelXCommonSettings",
-      "description": "",
+      "description": null,
       "url": "/hotelx/reference/objects/hotelxcommonsettings"
     }
   ],

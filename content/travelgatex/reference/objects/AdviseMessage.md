@@ -7,7 +7,7 @@
       "typeString": "ID!",
       "name": "code",
       "url": "/travelgatex/reference/scalars/id",
-      "description": "AM code: The following codes can be returned:",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -15,7 +15,7 @@
       "typeString": "String!",
       "name": "type",
       "url": "/travelgatex/reference/scalars/string",
-      "description": "Error type: The following types are valid:",
+      "description": null,
       "isDeprecated": true,
       "args": null,
       "deprecationReason": "",
@@ -31,7 +31,7 @@
       "typeString": "String!",
       "name": "description",
       "url": "/travelgatex/reference/scalars/string",
-      "description": "Error description",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -39,7 +39,7 @@
       "typeString": "AdviseMessageLevel!",
       "name": "level",
       "url": "/travelgatex/reference/enums/advisemessagelevel",
-      "description": "Indicates the level of importance of the message: Posible values ERROR WARN INFO",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -47,7 +47,7 @@
       "typeString": "ExternalMessage",
       "name": "external",
       "url": "/travelgatex/reference/objects/externalmessage",
-      "description": "Specify the external message.",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -55,7 +55,7 @@
       "typeString": "ID!",
       "name": "correlationID",
       "url": "/travelgatex/reference/scalars/id",
-      "description": "Identifier to be able to investigate the cause of the error",
+      "description": null,
       "isDeprecated": false,
       "args": null
     }
@@ -63,8 +63,18 @@
   "requireby": [
     {
       "name": "PaymentXQuery",
-      "description": "",
+      "description": null,
       "url": "/travelgatex/reference/objects/paymentxquery"
+    },
+    {
+      "name": "Alert",
+      "description": " Alert node",
+      "url": "/travelgatex/reference/objects/alert"
+    },
+    {
+      "name": "Event",
+      "description": "Event triggered",
+      "url": "/travelgatex/reference/objects/event"
     }
   ],
   "enumValues": null,
@@ -72,7 +82,6 @@
   "typename": "AdviseMessage",
   "hideGithubLink": true
 }
-List of advise messages.
 ## GraphQL schema definition
 
 {{% graphql-schema-type %}}

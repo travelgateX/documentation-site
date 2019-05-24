@@ -7,28 +7,28 @@
       "typeString": "DateType!",
       "name": "dateType",
       "url": "/hotelx/reference/enums/datetype",
-      "description": "Type of date. Can be Arrival or Booking date.",
+      "description": null,
       "args": null
     },
     {
       "typeString": "Date!",
       "name": "start",
       "url": "/hotelx/reference/scalars/date",
-      "description": "Start date.\nFormat: YYYY-MM-DD.",
+      "description": null,
       "args": null
     },
     {
       "typeString": "Date!",
       "name": "end",
       "url": "/hotelx/reference/scalars/date",
-      "description": "End date.\nFormat: YYYY-MM-DD.",
+      "description": null,
       "args": null
     }
   ],
   "requireby": [
     {
       "name": "HotelCriteriaBookingInput",
-      "description": "Criteria of book contains basic information to find a book or books.",
+      "description": null,
       "url": "/hotelx/reference/inputobjects/hotelcriteriabookinginput"
     }
   ],
@@ -37,7 +37,6 @@
   "typename": "CriteriaBookingDatesInput",
   "hideGithubLink": true
 }
-Criteria by dates
 ## GraphQL schema definition
 
 {{% graphql-schema-type %}}

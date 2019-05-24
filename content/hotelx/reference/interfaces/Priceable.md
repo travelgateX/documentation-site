@@ -7,7 +7,7 @@
       "typeString": "Currency!",
       "name": "currency",
       "url": "/hotelx/reference/scalars/currency",
-      "description": "Specifies the currency.",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -15,7 +15,7 @@
       "typeString": "Boolean!",
       "name": "binding",
       "url": "/hotelx/reference/scalars/boolean",
-      "description": "Is binding.",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -23,7 +23,7 @@
       "typeString": "Float!",
       "name": "net",
       "url": "/hotelx/reference/scalars/float",
-      "description": "Specifies the import net.",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -31,7 +31,7 @@
       "typeString": "Float",
       "name": "gross",
       "url": "/hotelx/reference/scalars/float",
-      "description": "Specifies the import gross.",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -39,7 +39,7 @@
       "typeString": "Exchange!",
       "name": "exchange",
       "url": "/hotelx/reference/objects/exchange",
-      "description": "Specifies the exchange.",
+      "description": null,
       "isDeprecated": false,
       "args": null
     }

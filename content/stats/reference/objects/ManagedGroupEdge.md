@@ -7,7 +7,7 @@
       "typeString": "ManagedGroup",
       "name": "node",
       "url": "/stats/reference/objects/managedgroup",
-      "description": "",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -15,7 +15,7 @@
       "typeString": "String!",
       "name": "cursor",
       "url": "/stats/reference/scalars/string",
-      "description": "",
+      "description": null,
       "isDeprecated": false,
       "args": null
     }
@@ -23,7 +23,7 @@
   "requireby": [
     {
       "name": "ManagedGroupConnection",
-      "description": "",
+      "description": null,
       "url": "/stats/reference/objects/managedgroupconnection"
     }
   ],

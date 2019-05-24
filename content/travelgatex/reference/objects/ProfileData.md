@@ -7,7 +7,7 @@
       "typeString": "ID!",
       "name": "code",
       "url": "/travelgatex/reference/scalars/id",
-      "description": "Profile Identifier",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -15,7 +15,7 @@
       "typeString": "String",
       "name": "label",
       "url": "/travelgatex/reference/scalars/string",
-      "description": "Profile label",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -23,7 +23,7 @@
       "typeString": "ProfileType",
       "name": "type",
       "url": "/travelgatex/reference/enums/profiletype",
-      "description": "Profile type",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -31,7 +31,7 @@
       "typeString": "EntityConnection",
       "name": "entities",
       "url": "/travelgatex/reference/objects/entityconnection",
-      "description": "Profile Entities (suppliers/clients)",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -39,7 +39,7 @@
       "typeString": "Group",
       "name": "group",
       "url": "/travelgatex/reference/objects/group",
-      "description": "Indicates the group where the Client belongs",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -47,7 +47,7 @@
       "typeString": "Organization",
       "name": "owner",
       "url": "/travelgatex/reference/objects/organization",
-      "description": "Profile owner",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -55,7 +55,7 @@
       "typeString": "Boolean",
       "name": "isActive",
       "url": "/travelgatex/reference/scalars/boolean",
-      "description": "Active profile",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -63,7 +63,7 @@
       "typeString": "Boolean",
       "name": "isPublished",
       "url": "/travelgatex/reference/scalars/boolean",
-      "description": "Profile is published",
+      "description": null,
       "isDeprecated": false,
       "args": null
     }
@@ -71,7 +71,7 @@
   "requireby": [
     {
       "name": "Profile",
-      "description": "",
+      "description": null,
       "url": "/travelgatex/reference/objects/profile"
     }
   ],
@@ -80,7 +80,6 @@
   "typename": "ProfileData",
   "hideGithubLink": true
 }
-Profile data
 ## GraphQL schema definition
 
 {{% graphql-schema-type %}}

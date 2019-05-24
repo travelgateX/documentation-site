@@ -6,62 +6,62 @@
   "requireby": [
     {
       "name": "SupplierData",
-      "description": "",
+      "description": null,
       "url": "/mappea/reference/objects/supplierdata"
     },
     {
       "name": "Provider",
-      "description": "Temporary type to use only during SQL server's lifetime",
+      "description": null,
       "url": "/mappea/reference/objects/provider"
     },
     {
       "name": "PageInfo",
-      "description": "",
+      "description": null,
       "url": "/mappea/reference/objects/pageinfo"
     },
     {
       "name": "AccessData",
-      "description": "",
+      "description": null,
       "url": "/mappea/reference/objects/accessdata"
     },
     {
       "name": "OrganizationData",
-      "description": "",
+      "description": null,
       "url": "/mappea/reference/objects/organizationdata"
     },
     {
       "name": "GroupCommonData",
-      "description": "",
+      "description": null,
       "url": "/mappea/reference/interfaces/groupcommondata"
     },
     {
       "name": "MemberData",
-      "description": "",
+      "description": null,
       "url": "/mappea/reference/objects/memberdata"
     },
     {
       "name": "RoleData",
-      "description": "",
+      "description": null,
       "url": "/mappea/reference/objects/roledata"
     },
     {
       "name": "ResourceData",
-      "description": "",
+      "description": null,
       "url": "/mappea/reference/objects/resourcedata"
     },
     {
       "name": "APIData",
-      "description": "",
+      "description": null,
       "url": "/mappea/reference/objects/apidata"
     },
     {
       "name": "ClientData",
-      "description": "",
+      "description": null,
       "url": "/mappea/reference/objects/clientdata"
     },
     {
       "name": "GroupData",
-      "description": "",
+      "description": null,
       "url": "/mappea/reference/objects/groupdata"
     }
   ],

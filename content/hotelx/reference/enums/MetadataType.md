@@ -6,38 +6,38 @@
   "requireby": [
     {
       "name": "HotelRuntimeParameter",
-      "description": "template of all fields used by the supplier",
+      "description": null,
       "url": "/hotelx/reference/objects/hotelruntimeparameter"
     }
   ],
   "enumValues": [
     {
       "name": "STRING",
-      "description": "",
+      "description": null,
       "isDeprecated": false,
       "deprecationReason": null
     },
     {
       "name": "NUMERIC",
-      "description": "",
+      "description": null,
       "isDeprecated": false,
       "deprecationReason": null
     },
     {
       "name": "BOOLEAN",
-      "description": "",
+      "description": null,
       "isDeprecated": false,
       "deprecationReason": null
     },
     {
       "name": "XML",
-      "description": "",
+      "description": null,
       "isDeprecated": false,
       "deprecationReason": null
     },
     {
       "name": "URI",
-      "description": "",
+      "description": null,
       "isDeprecated": false,
       "deprecationReason": null
     }
@@ -46,7 +46,6 @@
   "typename": "MetadataType",
   "hideGithubLink": true
 }
-Indicates value type of current paramter
 ## GraphQL schema definition
 
 {{% graphql-schema-enum %}}

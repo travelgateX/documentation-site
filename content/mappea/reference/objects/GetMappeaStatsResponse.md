@@ -7,7 +7,7 @@
       "typeString": "[GetMappeaStatsData]",
       "name": "data",
       "url": "/mappea/reference/objects/getmappeastatsdata",
-      "description": "",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -15,7 +15,7 @@
       "typeString": "Error",
       "name": "error",
       "url": "/mappea/reference/objects/error",
-      "description": "",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -23,7 +23,7 @@
       "typeString": "[Warning]",
       "name": "warnings",
       "url": "/mappea/reference/objects/warning",
-      "description": "",
+      "description": null,
       "isDeprecated": false,
       "args": null
     }
@@ -31,7 +31,7 @@
   "requireby": [
     {
       "name": "MappeaQuery",
-      "description": "",
+      "description": null,
       "url": "/mappea/reference/objects/mappeaquery"
     }
   ],

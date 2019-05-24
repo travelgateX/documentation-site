@@ -7,7 +7,7 @@
       "typeString": "ID!",
       "name": "code",
       "url": "/hotelx/reference/scalars/id",
-      "description": "Category ID",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -15,7 +15,7 @@
       "typeString": "CategoryData",
       "name": "categoryData",
       "url": "/hotelx/reference/objects/categorydata",
-      "description": "Category data",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -23,7 +23,7 @@
       "typeString": "[Error!]",
       "name": "error",
       "url": "/hotelx/reference/objects/error",
-      "description": "Errors that abort services",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -31,7 +31,7 @@
       "typeString": "DateTime!",
       "name": "createdAt",
       "url": "/hotelx/reference/scalars/datetime",
-      "description": "Date created",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -39,7 +39,7 @@
       "typeString": "DateTime!",
       "name": "updatedAt",
       "url": "/hotelx/reference/scalars/datetime",
-      "description": "Date updated",
+      "description": null,
       "isDeprecated": false,
       "args": null
     }
@@ -47,7 +47,7 @@
   "requireby": [
     {
       "name": "CategoryEdge",
-      "description": "CategoryList Edge definition",
+      "description": null,
       "url": "/hotelx/reference/objects/categoryedge"
     }
   ],
@@ -56,7 +56,6 @@
   "typename": "Category",
   "hideGithubLink": true
 }
-Category Type
 ## GraphQL schema definition
 
 {{% graphql-schema-type %}}

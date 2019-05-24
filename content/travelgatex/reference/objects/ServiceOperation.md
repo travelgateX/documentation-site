@@ -7,7 +7,7 @@
       "typeString": "ID!",
       "name": "code",
       "url": "/travelgatex/reference/scalars/id",
-      "description": "Service Operation ID",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -15,7 +15,7 @@
       "typeString": "String!",
       "name": "name",
       "url": "/travelgatex/reference/scalars/string",
-      "description": "Service Operation name",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -23,7 +23,7 @@
       "typeString": "String!",
       "name": "type",
       "url": "/travelgatex/reference/scalars/string",
-      "description": "Service Operation type",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -31,7 +31,7 @@
       "typeString": "Int!",
       "name": "travelOperation",
       "url": "/travelgatex/reference/scalars/int",
-      "description": "Service Operation Travel Operation ID (1: avail) (2: reservation) (3: batch) (4: batchLongRun)",
+      "description": null,
       "isDeprecated": false,
       "args": null
     }
@@ -39,7 +39,7 @@
   "requireby": [
     {
       "name": "ServiceApi",
-      "description": "Information related to a Service API",
+      "description": null,
       "url": "/travelgatex/reference/objects/serviceapi"
     }
   ],
@@ -48,7 +48,6 @@
   "typename": "ServiceOperation",
   "hideGithubLink": true
 }
-Information related to an API operation
 ## GraphQL schema definition
 
 {{% graphql-schema-type %}}

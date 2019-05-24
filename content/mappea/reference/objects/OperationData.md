@@ -7,7 +7,7 @@
       "typeString": "ID!",
       "name": "id",
       "url": "/mappea/reference/scalars/id",
-      "description": "",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -15,7 +15,7 @@
       "typeString": "ID!",
       "name": "code",
       "url": "/mappea/reference/scalars/id",
-      "description": "",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -23,7 +23,7 @@
       "typeString": "String",
       "name": "label",
       "url": "/mappea/reference/scalars/string",
-      "description": "",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -31,7 +31,7 @@
       "typeString": "[OperationType!]!",
       "name": "types",
       "url": "/mappea/reference/enums/operationtype",
-      "description": "",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -39,7 +39,7 @@
       "typeString": "API",
       "name": "api",
       "url": "/mappea/reference/objects/api",
-      "description": "",
+      "description": null,
       "isDeprecated": false,
       "args": null
     }
@@ -47,7 +47,7 @@
   "requireby": [
     {
       "name": "Operation",
-      "description": "",
+      "description": null,
       "url": "/mappea/reference/objects/operation"
     }
   ],

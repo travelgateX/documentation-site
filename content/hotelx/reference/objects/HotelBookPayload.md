@@ -7,14 +7,14 @@
       "typeString": "StatsRequest",
       "name": "stats",
       "url": "/hotelx/reference/objects/statsrequest",
-      "description": "Application stats in string format",
+      "description": null,
       "isDeprecated": false,
       "args": [
         {
           "typeString": "String!",
           "name": "token",
           "url": "/hotelx/reference/scalars/string",
-          "description": ""
+          "description": null
         }
       ]
     },
@@ -22,7 +22,7 @@
       "typeString": "AuditData",
       "name": "auditData",
       "url": "/hotelx/reference/objects/auditdata",
-      "description": "Data sent and received in the supplier's native format.",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -30,7 +30,7 @@
       "typeString": "HotelBookingDetail",
       "name": "booking",
       "url": "/hotelx/reference/objects/hotelbookingdetail",
-      "description": "Information about booking",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -38,7 +38,7 @@
       "typeString": "[Error!]",
       "name": "errors",
       "url": "/hotelx/reference/objects/error",
-      "description": "Errors that abort services",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -46,7 +46,7 @@
       "typeString": "[Warning!]",
       "name": "warnings",
       "url": "/hotelx/reference/objects/warning",
-      "description": "Potentially harmful situations or errors, but ones that will not forcibly abort the service",
+      "description": null,
       "isDeprecated": false,
       "args": null
     }
@@ -54,7 +54,7 @@
   "requireby": [
     {
       "name": "HotelXMutation",
-      "description": "",
+      "description": null,
       "url": "/hotelx/reference/objects/hotelxmutation"
     }
   ],

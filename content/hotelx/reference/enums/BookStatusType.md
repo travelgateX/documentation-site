@@ -6,43 +6,43 @@
   "requireby": [
     {
       "name": "HotelBookingDetail",
-      "description": "Contains information about booking",
+      "description": null,
       "url": "/hotelx/reference/objects/hotelbookingdetail"
     },
     {
       "name": "HotelCancelDetail",
-      "description": "Contains information about cancel",
+      "description": null,
       "url": "/hotelx/reference/objects/hotelcanceldetail"
     }
   ],
   "enumValues": [
     {
       "name": "OK",
-      "description": "The reservation was completed with no problems",
+      "description": null,
       "isDeprecated": false,
       "deprecationReason": null
     },
     {
       "name": "KO",
-      "description": "The status of the booking is KO",
+      "description": null,
       "isDeprecated": false,
       "deprecationReason": null
     },
     {
       "name": "ON_REQUEST",
-      "description": "The reservation was completed but the product is still not available, so the reservation goes into a waiting list.\nIt is the client’s responsibility to check if the booking is OK",
+      "description": null,
       "isDeprecated": false,
       "deprecationReason": null
     },
     {
       "name": "CANCELLED",
-      "description": "The status of the booking is cancelled",
+      "description": null,
       "isDeprecated": false,
       "deprecationReason": null
     },
     {
       "name": "UNKNOWN",
-      "description": "The reservation was completed but due to a supplier error or a timeout, the reservation status is unknown.\nIt is the client’s responsibility to check if the booking is OK",
+      "description": null,
       "isDeprecated": false,
       "deprecationReason": null
     }
@@ -51,7 +51,6 @@
   "typename": "BookStatusType",
   "hideGithubLink": true
 }
-Book status
 ## GraphQL schema definition
 
 {{% graphql-schema-enum %}}

@@ -7,56 +7,56 @@
       "typeString": "String!",
       "name": "optionRefId",
       "url": "/travelgatex/reference/scalars/string",
-      "description": "Option ID",
+      "description": null,
       "args": null
     },
     {
       "typeString": "Language",
       "name": "language",
       "url": "/travelgatex/reference/scalars/language",
-      "description": "Language to be used in request",
+      "description": null,
       "args": null
     },
     {
       "typeString": "String!",
       "name": "clientReference",
       "url": "/travelgatex/reference/scalars/string",
-      "description": "Booking ID in client's system.",
+      "description": null,
       "args": null
     },
     {
       "typeString": "DeltaPriceInput",
       "name": "deltaPrice",
       "url": "/travelgatex/reference/inputobjects/deltapriceinput",
-      "description": "Indicates price variation permitted by the client.",
+      "description": null,
       "args": null
     },
     {
       "typeString": "PaymentCardInput",
       "name": "paymentCard",
       "url": "/travelgatex/reference/inputobjects/paymentcardinput",
-      "description": "If the payment is done by credit card, it's mandatory to specify the payment type and the credit card information.",
+      "description": null,
       "args": null
     },
     {
       "typeString": "String",
       "name": "remarks",
       "url": "/travelgatex/reference/scalars/string",
-      "description": "Any customer comments for the supplier to consider.",
+      "description": null,
       "args": null
     },
     {
       "typeString": "HolderInput!",
       "name": "holder",
       "url": "/travelgatex/reference/inputobjects/holderinput",
-      "description": "Holder's basic information.",
+      "description": null,
       "args": null
     },
     {
       "typeString": "[BookRoomInput!]!",
       "name": "rooms",
       "url": "/travelgatex/reference/inputobjects/bookroominput",
-      "description": "Rooms within this option.",
+      "description": null,
       "args": null
     }
   ],
@@ -66,7 +66,6 @@
   "typename": "HotelBookInput",
   "hideGithubLink": true
 }
-Criteria of book.
 ## GraphQL schema definition
 
 {{% graphql-schema-type %}}

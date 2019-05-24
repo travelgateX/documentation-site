@@ -7,21 +7,21 @@
       "typeString": "Currency!",
       "name": "currency",
       "url": "/travelgatex/reference/scalars/currency",
-      "description": "",
+      "description": null,
       "args": null
     },
     {
       "typeString": "HotelXBusinessRulesInput!",
       "name": "businessRules",
       "url": "/travelgatex/reference/inputobjects/hotelxbusinessrulesinput",
-      "description": "",
+      "description": null,
       "args": null
     },
     {
       "typeString": "TimeoutInput!",
       "name": "timeout",
       "url": "/travelgatex/reference/inputobjects/timeoutinput",
-      "description": "",
+      "description": null,
       "args": null
     }
   ],

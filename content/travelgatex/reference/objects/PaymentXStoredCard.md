@@ -7,7 +7,7 @@
       "typeString": "ID!",
       "name": "code",
       "url": "/travelgatex/reference/scalars/id",
-      "description": "Stored card ID",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -15,7 +15,7 @@
       "typeString": "PaymentXStoredCardData",
       "name": "storedCardData",
       "url": "/travelgatex/reference/objects/paymentxstoredcarddata",
-      "description": "Stored card information",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -23,7 +23,7 @@
       "typeString": "DateTime!",
       "name": "createdAt",
       "url": "/travelgatex/reference/scalars/datetime",
-      "description": "Create date",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -31,7 +31,7 @@
       "typeString": "DateTime!",
       "name": "updatedAt",
       "url": "/travelgatex/reference/scalars/datetime",
-      "description": "Update date",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -39,14 +39,14 @@
       "typeString": "[AdviseMessage!]",
       "name": "adviseMessage",
       "url": "/travelgatex/reference/objects/advisemessage",
-      "description": "List of messages",
+      "description": null,
       "isDeprecated": false,
       "args": [
         {
           "typeString": "[AdviseMessageLevel]",
           "name": "level",
           "url": "/travelgatex/reference/enums/advisemessagelevel",
-          "description": ""
+          "description": null
         }
       ]
     }
@@ -54,17 +54,17 @@
   "requireby": [
     {
       "name": "PaymentXQuery",
-      "description": "",
+      "description": null,
       "url": "/travelgatex/reference/objects/paymentxquery"
     },
     {
       "name": "PaymentXStoredCardEdge",
-      "description": "",
+      "description": null,
       "url": "/travelgatex/reference/objects/paymentxstoredcardedge"
     },
     {
       "name": "PaymentXMutation",
-      "description": "",
+      "description": null,
       "url": "/travelgatex/reference/objects/paymentxmutation"
     }
   ],

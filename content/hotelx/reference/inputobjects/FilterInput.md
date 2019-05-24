@@ -7,14 +7,14 @@
       "typeString": "AccessFilterInput",
       "name": "access",
       "url": "/hotelx/reference/inputobjects/accessfilterinput",
-      "description": "You can specify one of the filters or any of them. In this latter case, all the configurated accesses will be executed.",
+      "description": null,
       "args": null
     },
     {
       "typeString": "RateRulesFilterInput",
       "name": "rateRules",
       "url": "/hotelx/reference/inputobjects/raterulesfilterinput",
-      "description": "If requested, only options with the specified rateRules will be returned",
+      "description": null,
       "args": null
     }
   ],
@@ -24,10 +24,6 @@
   "typename": "FilterInput",
   "hideGithubLink": true
 }
- Filter that selects the filter criteria which will be used in this availability. Currently you can only choose the accesses.
- You must choose one of them, include or exclude, or the other alternative isn't specified anything.
- If input both, you will receive a validation error that indicates this error.
-@deprecated(reason: "deprecated from 2018-08-20. Please, use filterSearch")
 ## GraphQL schema definition
 
 {{% graphql-schema-type %}}

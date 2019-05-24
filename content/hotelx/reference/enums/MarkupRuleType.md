@@ -6,20 +6,20 @@
   "requireby": [
     {
       "name": "Rule",
-      "description": "",
+      "description": null,
       "url": "/hotelx/reference/objects/rule"
     }
   ],
   "enumValues": [
     {
       "name": "PERCENT",
-      "description": "Indicates the percentage applied by a rule.",
+      "description": null,
       "isDeprecated": false,
       "deprecationReason": null
     },
     {
       "name": "IMPORT",
-      "description": "Indicates the exact amount applied by a rule.",
+      "description": null,
       "isDeprecated": false,
       "deprecationReason": null
     }
@@ -28,7 +28,6 @@
   "typename": "MarkupRuleType",
   "hideGithubLink": true
 }
-Indicates what type of value is the markup, by percentage or is an import.
 ## GraphQL schema definition
 
 {{% graphql-schema-enum %}}

@@ -7,7 +7,7 @@
       "typeString": "ID!",
       "name": "code",
       "url": "/mappea/reference/scalars/id",
-      "description": "",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -15,7 +15,7 @@
       "typeString": "APIData",
       "name": "apiData",
       "url": "/mappea/reference/objects/apidata",
-      "description": "",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -23,14 +23,14 @@
       "typeString": "[AdviseMessage!]",
       "name": "adviseMessage",
       "url": "/mappea/reference/objects/advisemessage",
-      "description": "List of advise messages.",
+      "description": null,
       "isDeprecated": false,
       "args": [
         {
           "typeString": "[AdviseMessageLevel]",
           "name": "level",
           "url": "/mappea/reference/enums/advisemessagelevel",
-          "description": ""
+          "description": null
         }
       ]
     },
@@ -38,7 +38,7 @@
       "typeString": "DateTime!",
       "name": "createdAt",
       "url": "/mappea/reference/scalars/datetime",
-      "description": "Date created",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -46,7 +46,7 @@
       "typeString": "DateTime!",
       "name": "updatedAt",
       "url": "/mappea/reference/scalars/datetime",
-      "description": "Date updated",
+      "description": null,
       "isDeprecated": false,
       "args": null
     }
@@ -54,17 +54,17 @@
   "requireby": [
     {
       "name": "APIEdge",
-      "description": "",
+      "description": null,
       "url": "/mappea/reference/objects/apiedge"
     },
     {
       "name": "OperationData",
-      "description": "",
+      "description": null,
       "url": "/mappea/reference/objects/operationdata"
     },
     {
       "name": "ManagedGroupData",
-      "description": "",
+      "description": null,
       "url": "/mappea/reference/objects/managedgroupdata"
     }
   ],

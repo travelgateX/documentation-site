@@ -6,167 +6,167 @@
   "requireby": [
     {
       "name": "Stats",
-      "description": "The service used to access the stats of every connection that uses the HUB",
+      "description": null,
       "url": "/stats/reference/objects/stats"
     },
     {
       "name": "AdviseMessage",
-      "description": "List of advise messages.",
+      "description": null,
       "url": "/stats/reference/objects/advisemessage"
     },
     {
       "name": "Node",
-      "description": "",
+      "description": null,
       "url": "/stats/reference/interfaces/node"
     },
     {
       "name": "Access",
-      "description": "An Access is a set of credentials and configuration in order to access the system of a Supplier.",
+      "description": null,
       "url": "/stats/reference/objects/access"
     },
     {
       "name": "Client",
-      "description": "Client identifies who is making the request and holds the configuration assigned to it.",
+      "description": null,
       "url": "/stats/reference/objects/client"
     },
     {
       "name": "AccessData",
-      "description": "",
+      "description": null,
       "url": "/stats/reference/objects/accessdata"
     },
     {
       "name": "Supplier",
-      "description": "A Supplier is a Partner who is connected to TravelgateX on the supply side in order to sell their product to connected Buyers",
+      "description": null,
       "url": "/stats/reference/objects/supplier"
     },
     {
       "name": "Parameter",
-      "description": "Parameters for additional information for the supplier's configuration.",
+      "description": null,
       "url": "/stats/reference/objects/parameter"
     },
     {
       "name": "Organization",
-      "description": "Organization node is the root node in the hierarachy, the folders are the children of the organization and the products are the children of the folders.",
+      "description": null,
       "url": "/stats/reference/objects/organization"
     },
     {
       "name": "SupplierData",
-      "description": "",
+      "description": null,
       "url": "/stats/reference/objects/supplierdata"
     },
     {
       "name": "Provider",
-      "description": "Temporary type to use only during SQL server's lifetime",
+      "description": null,
       "url": "/stats/reference/objects/provider"
     },
     {
       "name": "OrganizationData",
-      "description": "",
+      "description": null,
       "url": "/stats/reference/objects/organizationdata"
     },
     {
       "name": "Member",
-      "description": "You grant access to members which can be either:\nUsers: A developer, administrator or any other person from your Organization who interacts with the TravelgateX Platform. An email address can be used as the identity of a User.\nService Accounts: An application (Client) instead of an individual User. If you prefer, you can create as many Service Accounts as needed to represent different logical components of your application.",
+      "description": null,
       "url": "/stats/reference/objects/member"
     },
     {
       "name": "Domain",
-      "description": "",
+      "description": null,
       "url": "/stats/reference/objects/domain"
     },
     {
       "name": "GroupCommonData",
-      "description": "",
+      "description": null,
       "url": "/stats/reference/interfaces/groupcommondata"
     },
     {
       "name": "MemberData",
-      "description": "",
+      "description": null,
       "url": "/stats/reference/objects/memberdata"
     },
     {
       "name": "Role",
-      "description": "Permissions determine what operations are allowed on a resource",
+      "description": null,
       "url": "/stats/reference/objects/role"
     },
     {
       "name": "RoleData",
-      "description": "",
+      "description": null,
       "url": "/stats/reference/objects/roledata"
     },
     {
       "name": "Resource",
-      "description": "Resources are those used in APIs and Products.",
+      "description": null,
       "url": "/stats/reference/objects/resource"
     },
     {
       "name": "ResourceData",
-      "description": "",
+      "description": null,
       "url": "/stats/reference/objects/resourcedata"
     },
     {
       "name": "API",
-      "description": "",
+      "description": null,
       "url": "/stats/reference/objects/api"
     },
     {
       "name": "APIData",
-      "description": "",
+      "description": null,
       "url": "/stats/reference/objects/apidata"
     },
     {
       "name": "Operation",
-      "description": "",
+      "description": null,
       "url": "/stats/reference/objects/operation"
     },
     {
       "name": "OperationData",
-      "description": "",
+      "description": null,
       "url": "/stats/reference/objects/operationdata"
     },
     {
       "name": "Product",
-      "description": "An APIs collection.",
+      "description": null,
       "url": "/stats/reference/objects/product"
     },
     {
       "name": "ProductData",
-      "description": "",
+      "description": null,
       "url": "/stats/reference/objects/productdata"
     },
     {
       "name": "DomainData",
-      "description": "",
+      "description": null,
       "url": "/stats/reference/objects/domaindata"
     },
     {
       "name": "Group",
-      "description": "Groups are organized hierarchically.",
+      "description": null,
       "url": "/stats/reference/objects/group"
     },
     {
       "name": "GroupData",
-      "description": "",
+      "description": null,
       "url": "/stats/reference/objects/groupdata"
     },
     {
       "name": "ManagedGroup",
-      "description": "",
+      "description": null,
       "url": "/stats/reference/objects/managedgroup"
     },
     {
       "name": "ManagedGroupData",
-      "description": "",
+      "description": null,
       "url": "/stats/reference/objects/managedgroupdata"
     },
     {
       "name": "ClientData",
-      "description": "",
+      "description": null,
       "url": "/stats/reference/objects/clientdata"
     },
     {
       "name": "StatsInfo",
-      "description": "Details of an specific error",
+      "description": null,
       "url": "/stats/reference/objects/statsinfo"
     }
   ],

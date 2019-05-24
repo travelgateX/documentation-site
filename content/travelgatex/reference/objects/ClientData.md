@@ -7,7 +7,7 @@
       "typeString": "ID!",
       "name": "code",
       "url": "/travelgatex/reference/scalars/id",
-      "description": "ID identifier of a Client",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -15,7 +15,7 @@
       "typeString": "ID!",
       "name": "name",
       "url": "/travelgatex/reference/scalars/id",
-      "description": "Client complete name",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -23,7 +23,7 @@
       "typeString": "Boolean!",
       "name": "isActive",
       "url": "/travelgatex/reference/scalars/boolean",
-      "description": "Indicates whether a Client is active or inactive",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -31,7 +31,7 @@
       "typeString": "Group",
       "name": "group",
       "url": "/travelgatex/reference/objects/group",
-      "description": "Indicates the group where the Client belongs",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -39,7 +39,7 @@
       "typeString": "Organization",
       "name": "owner",
       "url": "/travelgatex/reference/objects/organization",
-      "description": "Client owner",
+      "description": null,
       "isDeprecated": false,
       "args": null
     }
@@ -47,7 +47,7 @@
   "requireby": [
     {
       "name": "Client",
-      "description": "Client identifies who is making the request and holds the configuration assigned to it.",
+      "description": null,
       "url": "/travelgatex/reference/objects/client"
     }
   ],

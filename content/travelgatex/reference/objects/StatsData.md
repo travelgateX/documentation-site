@@ -7,7 +7,7 @@
       "typeString": "Access!",
       "name": "access",
       "url": "/travelgatex/reference/objects/access",
-      "description": "Owner access",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -15,7 +15,7 @@
       "typeString": "Client!",
       "name": "client",
       "url": "/travelgatex/reference/objects/client",
-      "description": "Owner client",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -23,7 +23,7 @@
       "typeString": "DateTime!",
       "name": "from",
       "url": "/travelgatex/reference/scalars/datetime",
-      "description": "From date of search",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -31,7 +31,7 @@
       "typeString": "DateTime!",
       "name": "to",
       "url": "/travelgatex/reference/scalars/datetime",
-      "description": "To date of search",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -39,7 +39,7 @@
       "typeString": "Ratios!",
       "name": "ratios",
       "url": "/travelgatex/reference/objects/ratios",
-      "description": "Ratios details",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -47,14 +47,14 @@
       "typeString": "[OperationDetailed!]",
       "name": "operations",
       "url": "/travelgatex/reference/objects/operationdetailed",
-      "description": "Stats information per operation",
+      "description": null,
       "isDeprecated": false,
       "args": [
         {
           "typeString": "[ServiceOperationType!]",
           "name": "type",
           "url": "/travelgatex/reference/enums/serviceoperationtype",
-          "description": ""
+          "description": null
         }
       ]
     }
@@ -62,7 +62,7 @@
   "requireby": [
     {
       "name": "Stats",
-      "description": "The service used to access the stats of every connection that uses the HUB",
+      "description": null,
       "url": "/travelgatex/reference/objects/stats"
     }
   ],

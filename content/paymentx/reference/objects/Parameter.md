@@ -7,7 +7,7 @@
       "typeString": "ID!",
       "name": "key",
       "url": "/paymentx/reference/scalars/id",
-      "description": "Contains the keyword/Id to identify a parameter.\nThis information is mandatory.",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -15,7 +15,7 @@
       "typeString": "String!",
       "name": "value",
       "url": "/paymentx/reference/scalars/string",
-      "description": "Contains the parameter values.\nThis information is mandatory.",
+      "description": null,
       "isDeprecated": false,
       "args": null
     }
@@ -23,7 +23,7 @@
   "requireby": [
     {
       "name": "AccessData",
-      "description": "",
+      "description": null,
       "url": "/paymentx/reference/objects/accessdata"
     }
   ],
@@ -32,7 +32,6 @@
   "typename": "Parameter",
   "hideGithubLink": true
 }
-Parameters for additional information for the supplier's configuration.
 ## GraphQL schema definition
 
 {{% graphql-schema-type %}}

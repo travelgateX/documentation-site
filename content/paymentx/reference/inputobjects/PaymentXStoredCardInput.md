@@ -7,70 +7,70 @@
       "typeString": "ID!",
       "name": "instanceCode",
       "url": "/paymentx/reference/scalars/id",
-      "description": "Asigned instance of PaymentX of the booked property.",
+      "description": null,
       "args": null
     },
     {
       "typeString": "ID!",
       "name": "pointOfSaleCode",
       "url": "/paymentx/reference/scalars/id",
-      "description": "Indicates the code of the booked property",
+      "description": null,
       "args": null
     },
     {
       "typeString": "String!",
       "name": "bookingReference",
       "url": "/paymentx/reference/scalars/string",
-      "description": "Indicates the referece of the booking",
+      "description": null,
       "args": null
     },
     {
       "typeString": "Date",
       "name": "checkOut",
       "url": "/paymentx/reference/scalars/date",
-      "description": "Check-out, booking date Format: YYYY-MM-DD",
+      "description": null,
       "args": null
     },
     {
       "typeString": "Date",
       "name": "checkIn",
       "url": "/paymentx/reference/scalars/date",
-      "description": "Check-in, booking date Format: YYYY-MM-DD",
+      "description": null,
       "args": null
     },
     {
       "typeString": "String",
       "name": "cardType",
       "url": "/paymentx/reference/scalars/string",
-      "description": "Indicates the card type.",
+      "description": null,
       "args": null
     },
     {
       "typeString": "HolderInput",
       "name": "holder",
       "url": "/paymentx/reference/inputobjects/holderinput",
-      "description": "Contains owner's name",
+      "description": null,
       "args": null
     },
     {
       "typeString": "CardNumber!",
       "name": "number",
       "url": "/paymentx/reference/scalars/cardnumber",
-      "description": "Contains credit card number",
+      "description": null,
       "args": null
     },
     {
       "typeString": "CVC!",
       "name": "CVC",
       "url": "/paymentx/reference/scalars/cvc",
-      "description": "Contains credit card CVC",
+      "description": null,
       "args": null
     },
     {
       "typeString": "ExpireDateInput!",
       "name": "expire",
       "url": "/paymentx/reference/inputobjects/expiredateinput",
-      "description": "Contains credit card expiration date",
+      "description": null,
       "args": null
     }
   ],

@@ -7,7 +7,7 @@
       "typeString": "[ResourceEdge]",
       "name": "edges",
       "url": "/stats/reference/objects/resourceedge",
-      "description": "",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -15,7 +15,7 @@
       "typeString": "PageInfo!",
       "name": "pageInfo",
       "url": "/stats/reference/objects/pageinfo",
-      "description": "",
+      "description": null,
       "isDeprecated": false,
       "args": null
     }
@@ -23,12 +23,12 @@
   "requireby": [
     {
       "name": "RoleData",
-      "description": "",
+      "description": null,
       "url": "/stats/reference/objects/roledata"
     },
     {
       "name": "APIData",
-      "description": "",
+      "description": null,
       "url": "/stats/reference/objects/apidata"
     }
   ],

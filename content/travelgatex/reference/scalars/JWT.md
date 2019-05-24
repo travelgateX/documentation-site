@@ -6,13 +6,8 @@
   "requireby": [
     {
       "name": "AdminQuery",
-      "description": "The admin query root of TravelgateX's GraphQL interface.",
+      "description": null,
       "url": "/travelgatex/reference/objects/adminquery"
-    },
-    {
-      "name": "MemberData",
-      "description": "",
-      "url": "/travelgatex/reference/objects/memberdata"
     }
   ],
   "enumValues": null,
@@ -20,7 +15,6 @@
   "typename": "JWT",
   "hideGithubLink": true
 }
-JSON Web Tokens are an open, industry standard RFC 7519 method for representing claims securely between two parties.
 ## GraphQL schema definition
 
 {{% graphql-schema-scalar %}}

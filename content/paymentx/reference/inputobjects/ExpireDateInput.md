@@ -7,21 +7,21 @@
       "typeString": "Int!",
       "name": "month",
       "url": "/paymentx/reference/scalars/int",
-      "description": "Month MM",
+      "description": null,
       "args": null
     },
     {
       "typeString": "Int!",
       "name": "year",
       "url": "/paymentx/reference/scalars/int",
-      "description": "Year yy",
+      "description": null,
       "args": null
     }
   ],
   "requireby": [
     {
       "name": "PaymentXStoredCardInput",
-      "description": "",
+      "description": null,
       "url": "/paymentx/reference/inputobjects/paymentxstoredcardinput"
     }
   ],
@@ -30,7 +30,6 @@
   "typename": "ExpireDateInput",
   "hideGithubLink": true
 }
-The card expiration date
 ## GraphQL schema definition
 
 {{% graphql-schema-type %}}

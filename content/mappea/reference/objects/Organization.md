@@ -7,7 +7,7 @@
       "typeString": "ID!",
       "name": "code",
       "url": "/mappea/reference/scalars/id",
-      "description": "",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -15,7 +15,7 @@
       "typeString": "OrganizationData",
       "name": "organizationData",
       "url": "/mappea/reference/objects/organizationdata",
-      "description": "",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -23,14 +23,14 @@
       "typeString": "[AdviseMessage!]",
       "name": "adviseMessage",
       "url": "/mappea/reference/objects/advisemessage",
-      "description": "List of advise messages.",
+      "description": null,
       "isDeprecated": false,
       "args": [
         {
           "typeString": "[AdviseMessageLevel]",
           "name": "level",
           "url": "/mappea/reference/enums/advisemessagelevel",
-          "description": ""
+          "description": null
         }
       ]
     },
@@ -38,7 +38,7 @@
       "typeString": "DateTime!",
       "name": "createdAt",
       "url": "/mappea/reference/scalars/datetime",
-      "description": "Date created",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -46,7 +46,7 @@
       "typeString": "DateTime!",
       "name": "updatedAt",
       "url": "/mappea/reference/scalars/datetime",
-      "description": "Date updated",
+      "description": null,
       "isDeprecated": false,
       "args": null
     }
@@ -54,22 +54,22 @@
   "requireby": [
     {
       "name": "SupplierData",
-      "description": "",
+      "description": null,
       "url": "/mappea/reference/objects/supplierdata"
     },
     {
       "name": "AccessData",
-      "description": "",
+      "description": null,
       "url": "/mappea/reference/objects/accessdata"
     },
     {
       "name": "ClientData",
-      "description": "",
+      "description": null,
       "url": "/mappea/reference/objects/clientdata"
     },
     {
       "name": "DomainData",
-      "description": "",
+      "description": null,
       "url": "/mappea/reference/objects/domaindata"
     }
   ],
@@ -78,7 +78,6 @@
   "typename": "Organization",
   "hideGithubLink": true
 }
-Organization node is the root node in the hierarachy, the folders are the children of the organization and the products are the children of the folders.
 ## GraphQL schema definition
 
 {{% graphql-schema-type %}}

@@ -7,7 +7,7 @@
       "typeString": "JWT",
       "name": "jwt",
       "url": "/travelgatex/reference/scalars/jwt",
-      "description": "Get JSON Web Token (JWT) linked to Member",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -15,38 +15,38 @@
       "typeString": "AccessConnection",
       "name": "accesses",
       "url": "/travelgatex/reference/objects/accessconnection",
-      "description": "Obtain a list of accesses for a filter",
+      "description": null,
       "isDeprecated": false,
       "args": [
         {
           "typeString": "Int",
           "name": "first",
           "url": "/travelgatex/reference/scalars/int",
-          "description": ""
+          "description": null
         },
         {
           "typeString": "Int",
           "name": "last",
           "url": "/travelgatex/reference/scalars/int",
-          "description": ""
+          "description": null
         },
         {
           "typeString": "String",
           "name": "before",
           "url": "/travelgatex/reference/scalars/string",
-          "description": ""
+          "description": null
         },
         {
           "typeString": "String",
           "name": "after",
           "url": "/travelgatex/reference/scalars/string",
-          "description": ""
+          "description": null
         },
         {
           "typeString": "AccessFilter",
           "name": "filter",
           "url": "/travelgatex/reference/inputobjects/accessfilter",
-          "description": ""
+          "description": null
         }
       ]
     },
@@ -54,38 +54,38 @@
       "typeString": "SupplierConnection",
       "name": "suppliers",
       "url": "/travelgatex/reference/objects/supplierconnection",
-      "description": "Obtain all suppliers for a filter.",
+      "description": null,
       "isDeprecated": false,
       "args": [
         {
           "typeString": "Int",
           "name": "first",
           "url": "/travelgatex/reference/scalars/int",
-          "description": ""
+          "description": null
         },
         {
           "typeString": "Int",
           "name": "last",
           "url": "/travelgatex/reference/scalars/int",
-          "description": ""
+          "description": null
         },
         {
           "typeString": "String",
           "name": "before",
           "url": "/travelgatex/reference/scalars/string",
-          "description": ""
+          "description": null
         },
         {
           "typeString": "String",
           "name": "after",
           "url": "/travelgatex/reference/scalars/string",
-          "description": ""
+          "description": null
         },
         {
           "typeString": "SupplierFilter",
           "name": "filter",
           "url": "/travelgatex/reference/inputobjects/supplierfilter",
-          "description": ""
+          "description": null
         }
       ]
     },
@@ -93,38 +93,38 @@
       "typeString": "ClientConnection",
       "name": "clients",
       "url": "/travelgatex/reference/objects/clientconnection",
-      "description": "Obtain all clients for a filter.",
+      "description": null,
       "isDeprecated": false,
       "args": [
         {
           "typeString": "Int",
           "name": "first",
           "url": "/travelgatex/reference/scalars/int",
-          "description": ""
+          "description": null
         },
         {
           "typeString": "Int",
           "name": "last",
           "url": "/travelgatex/reference/scalars/int",
-          "description": ""
+          "description": null
         },
         {
           "typeString": "String",
           "name": "before",
           "url": "/travelgatex/reference/scalars/string",
-          "description": ""
+          "description": null
         },
         {
           "typeString": "String",
           "name": "after",
           "url": "/travelgatex/reference/scalars/string",
-          "description": ""
+          "description": null
         },
         {
           "typeString": "ClientFilter",
           "name": "filter",
           "url": "/travelgatex/reference/inputobjects/clientfilter",
-          "description": ""
+          "description": null
         }
       ]
     },
@@ -132,14 +132,14 @@
       "typeString": "ServiceApi",
       "name": "serviceApi",
       "url": "/travelgatex/reference/objects/serviceapi",
-      "description": "Obtain a ServiceAPI",
+      "description": null,
       "isDeprecated": false,
       "args": [
         {
           "typeString": "ServiceApiFilter",
           "name": "filter",
           "url": "/travelgatex/reference/inputobjects/serviceapifilter",
-          "description": ""
+          "description": null
         }
       ]
     },
@@ -147,14 +147,14 @@
       "typeString": "PointOfSaleConnection",
       "name": "pointsOfSale",
       "url": "/travelgatex/reference/objects/pointofsaleconnection",
-      "description": "Obtain all Points of Sale for the filters",
+      "description": null,
       "isDeprecated": false,
       "args": [
         {
           "typeString": "PointOfSaleFilter",
           "name": "filter",
           "url": "/travelgatex/reference/inputobjects/pointofsalefilter",
-          "description": ""
+          "description": null
         }
       ]
     },
@@ -162,14 +162,14 @@
       "typeString": "ProfileConnection",
       "name": "profiles",
       "url": "/travelgatex/reference/objects/profileconnection",
-      "description": "Obtain all Profiles for the filters",
+      "description": null,
       "isDeprecated": false,
       "args": [
         {
           "typeString": "ProfileFilter",
           "name": "filter",
           "url": "/travelgatex/reference/inputobjects/profilefilter",
-          "description": ""
+          "description": null
         }
       ]
     },
@@ -177,14 +177,14 @@
       "typeString": "EntityConnection",
       "name": "entities",
       "url": "/travelgatex/reference/objects/entityconnection",
-      "description": "Obtain a set of entities",
+      "description": null,
       "isDeprecated": false,
       "args": [
         {
           "typeString": "EntityFilter",
           "name": "filter",
           "url": "/travelgatex/reference/inputobjects/entityfilter",
-          "description": ""
+          "description": null
         }
       ]
     },
@@ -192,44 +192,44 @@
       "typeString": "OrganizationConnection!",
       "name": "organizations",
       "url": "/travelgatex/reference/objects/organizationconnection",
-      "description": "Organizations list; specify organization codes to filter organizations",
+      "description": null,
       "isDeprecated": false,
       "args": [
         {
           "typeString": "[ID!]",
           "name": "codes",
           "url": "/travelgatex/reference/scalars/id",
-          "description": ""
+          "description": null
         },
         {
           "typeString": "[DomainName!]",
           "name": "domains",
           "url": "/travelgatex/reference/scalars/domainname",
-          "description": ""
+          "description": null
         },
         {
           "typeString": "Int",
           "name": "first",
           "url": "/travelgatex/reference/scalars/int",
-          "description": ""
+          "description": null
         },
         {
           "typeString": "Int",
           "name": "last",
           "url": "/travelgatex/reference/scalars/int",
-          "description": ""
+          "description": null
         },
         {
           "typeString": "String",
           "name": "before",
           "url": "/travelgatex/reference/scalars/string",
-          "description": ""
+          "description": null
         },
         {
           "typeString": "String",
           "name": "after",
           "url": "/travelgatex/reference/scalars/string",
-          "description": ""
+          "description": null
         }
       ]
     },
@@ -237,38 +237,38 @@
       "typeString": "ProductConnection!",
       "name": "products",
       "url": "/travelgatex/reference/objects/productconnection",
-      "description": "Product catalog; specify products codes to filter ",
+      "description": null,
       "isDeprecated": false,
       "args": [
         {
           "typeString": "[ID!]",
           "name": "codes",
           "url": "/travelgatex/reference/scalars/id",
-          "description": ""
+          "description": null
         },
         {
           "typeString": "Int",
           "name": "first",
           "url": "/travelgatex/reference/scalars/int",
-          "description": ""
+          "description": null
         },
         {
           "typeString": "Int",
           "name": "last",
           "url": "/travelgatex/reference/scalars/int",
-          "description": ""
+          "description": null
         },
         {
           "typeString": "String",
           "name": "before",
           "url": "/travelgatex/reference/scalars/string",
-          "description": ""
+          "description": null
         },
         {
           "typeString": "String",
           "name": "after",
           "url": "/travelgatex/reference/scalars/string",
-          "description": ""
+          "description": null
         }
       ]
     },
@@ -276,44 +276,44 @@
       "typeString": "MemberConnection!",
       "name": "members",
       "url": "/travelgatex/reference/objects/memberconnection",
-      "description": "Members list; specify member codes to filter members.",
+      "description": null,
       "isDeprecated": false,
       "args": [
         {
           "typeString": "[ID!]",
           "name": "codes",
           "url": "/travelgatex/reference/scalars/id",
-          "description": ""
+          "description": null
         },
         {
           "typeString": "MemberType",
           "name": "type",
           "url": "/travelgatex/reference/enums/membertype",
-          "description": ""
+          "description": null
         },
         {
           "typeString": "Int",
           "name": "first",
           "url": "/travelgatex/reference/scalars/int",
-          "description": ""
+          "description": null
         },
         {
           "typeString": "Int",
           "name": "last",
           "url": "/travelgatex/reference/scalars/int",
-          "description": ""
+          "description": null
         },
         {
           "typeString": "String",
           "name": "before",
           "url": "/travelgatex/reference/scalars/string",
-          "description": ""
+          "description": null
         },
         {
           "typeString": "String",
           "name": "after",
           "url": "/travelgatex/reference/scalars/string",
-          "description": ""
+          "description": null
         }
       ]
     },
@@ -321,44 +321,44 @@
       "typeString": "GroupConnection!",
       "name": "groups",
       "url": "/travelgatex/reference/objects/groupconnection",
-      "description": "Groups list; specify group codes to filter groups.",
+      "description": null,
       "isDeprecated": false,
       "args": [
         {
           "typeString": "[ID!]",
           "name": "codes",
           "url": "/travelgatex/reference/scalars/id",
-          "description": ""
+          "description": null
         },
         {
           "typeString": "GroupType",
           "name": "type",
           "url": "/travelgatex/reference/enums/grouptype",
-          "description": ""
+          "description": null
         },
         {
           "typeString": "Int",
           "name": "first",
           "url": "/travelgatex/reference/scalars/int",
-          "description": ""
+          "description": null
         },
         {
           "typeString": "Int",
           "name": "last",
           "url": "/travelgatex/reference/scalars/int",
-          "description": ""
+          "description": null
         },
         {
           "typeString": "String",
           "name": "before",
           "url": "/travelgatex/reference/scalars/string",
-          "description": ""
+          "description": null
         },
         {
           "typeString": "String",
           "name": "after",
           "url": "/travelgatex/reference/scalars/string",
-          "description": ""
+          "description": null
         }
       ]
     },
@@ -366,38 +366,38 @@
       "typeString": "APIConnection!",
       "name": "apis",
       "url": "/travelgatex/reference/objects/apiconnection",
-      "description": "Apis list; specify api codes to filter apis.",
+      "description": null,
       "isDeprecated": false,
       "args": [
         {
           "typeString": "[ID!]",
           "name": "codes",
           "url": "/travelgatex/reference/scalars/id",
-          "description": ""
+          "description": null
         },
         {
           "typeString": "Int",
           "name": "first",
           "url": "/travelgatex/reference/scalars/int",
-          "description": ""
+          "description": null
         },
         {
           "typeString": "Int",
           "name": "last",
           "url": "/travelgatex/reference/scalars/int",
-          "description": ""
+          "description": null
         },
         {
           "typeString": "String",
           "name": "before",
           "url": "/travelgatex/reference/scalars/string",
-          "description": ""
+          "description": null
         },
         {
           "typeString": "String",
           "name": "after",
           "url": "/travelgatex/reference/scalars/string",
-          "description": ""
+          "description": null
         }
       ]
     },
@@ -405,38 +405,38 @@
       "typeString": "ResourceConnection!",
       "name": "resources",
       "url": "/travelgatex/reference/objects/resourceconnection",
-      "description": "Resources list; specify resource codes to filter resources.",
+      "description": null,
       "isDeprecated": false,
       "args": [
         {
           "typeString": "[ID!]",
           "name": "codes",
           "url": "/travelgatex/reference/scalars/id",
-          "description": ""
+          "description": null
         },
         {
           "typeString": "Int",
           "name": "first",
           "url": "/travelgatex/reference/scalars/int",
-          "description": ""
+          "description": null
         },
         {
           "typeString": "Int",
           "name": "last",
           "url": "/travelgatex/reference/scalars/int",
-          "description": ""
+          "description": null
         },
         {
           "typeString": "String",
           "name": "before",
           "url": "/travelgatex/reference/scalars/string",
-          "description": ""
+          "description": null
         },
         {
           "typeString": "String",
           "name": "after",
           "url": "/travelgatex/reference/scalars/string",
-          "description": ""
+          "description": null
         }
       ]
     },
@@ -444,44 +444,44 @@
       "typeString": "RoleConnection!",
       "name": "roles",
       "url": "/travelgatex/reference/objects/roleconnection",
-      "description": "Roles list; specify role codes to filter roles.",
+      "description": null,
       "isDeprecated": false,
       "args": [
         {
           "typeString": "[ID!]",
           "name": "codes",
           "url": "/travelgatex/reference/scalars/id",
-          "description": ""
+          "description": null
         },
         {
           "typeString": "RoleType",
           "name": "type",
           "url": "/travelgatex/reference/enums/roletype",
-          "description": ""
+          "description": null
         },
         {
           "typeString": "Int",
           "name": "first",
           "url": "/travelgatex/reference/scalars/int",
-          "description": ""
+          "description": null
         },
         {
           "typeString": "Int",
           "name": "last",
           "url": "/travelgatex/reference/scalars/int",
-          "description": ""
+          "description": null
         },
         {
           "typeString": "String",
           "name": "before",
           "url": "/travelgatex/reference/scalars/string",
-          "description": ""
+          "description": null
         },
         {
           "typeString": "String",
           "name": "after",
           "url": "/travelgatex/reference/scalars/string",
-          "description": ""
+          "description": null
         }
       ]
     },
@@ -489,44 +489,44 @@
       "typeString": "OperationConnection!",
       "name": "operations",
       "url": "/travelgatex/reference/objects/operationconnection",
-      "description": "Operations list; specify operations codes to filter operations.",
+      "description": null,
       "isDeprecated": false,
       "args": [
         {
           "typeString": "[ID!]",
           "name": "codes",
           "url": "/travelgatex/reference/scalars/id",
-          "description": ""
+          "description": null
         },
         {
           "typeString": "OperationType",
           "name": "type",
           "url": "/travelgatex/reference/enums/operationtype",
-          "description": ""
+          "description": null
         },
         {
           "typeString": "Int",
           "name": "first",
           "url": "/travelgatex/reference/scalars/int",
-          "description": ""
+          "description": null
         },
         {
           "typeString": "Int",
           "name": "last",
           "url": "/travelgatex/reference/scalars/int",
-          "description": ""
+          "description": null
         },
         {
           "typeString": "String",
           "name": "before",
           "url": "/travelgatex/reference/scalars/string",
-          "description": ""
+          "description": null
         },
         {
           "typeString": "String",
           "name": "after",
           "url": "/travelgatex/reference/scalars/string",
-          "description": ""
+          "description": null
         }
       ]
     }
@@ -534,7 +534,7 @@
   "requireby": [
     {
       "name": "Query",
-      "description": "The query root of TravelgateX's GraphQL interface.",
+      "description": null,
       "url": "/travelgatex/reference/schema/query"
     }
   ],
@@ -543,7 +543,6 @@
   "typename": "AdminQuery",
   "hideGithubLink": true
 }
-The admin query root of TravelgateX's GraphQL interface.
 ## GraphQL schema definition
 
 {{% graphql-schema-type %}}

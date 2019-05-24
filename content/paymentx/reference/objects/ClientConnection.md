@@ -7,7 +7,7 @@
       "typeString": "[ClientEdge]",
       "name": "edges",
       "url": "/paymentx/reference/objects/clientedge",
-      "description": "",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -15,7 +15,7 @@
       "typeString": "PageInfo!",
       "name": "pageInfo",
       "url": "/paymentx/reference/objects/pageinfo",
-      "description": "",
+      "description": null,
       "isDeprecated": false,
       "args": null
     }
@@ -23,17 +23,17 @@
   "requireby": [
     {
       "name": "GroupData",
-      "description": "",
+      "description": null,
       "url": "/paymentx/reference/objects/groupdata"
     },
     {
       "name": "GroupCommonData",
-      "description": "",
+      "description": null,
       "url": "/paymentx/reference/interfaces/groupcommondata"
     },
     {
       "name": "OrganizationData",
-      "description": "",
+      "description": null,
       "url": "/paymentx/reference/objects/organizationdata"
     }
   ],

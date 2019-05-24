@@ -7,7 +7,7 @@
       "typeString": "Operation!",
       "name": "operation",
       "url": "/travelgatex/reference/objects/operation",
-      "description": "Operation information",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -15,7 +15,7 @@
       "typeString": "Int!",
       "name": "totalHits",
       "url": "/travelgatex/reference/scalars/int",
-      "description": "Total hits.",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -23,20 +23,20 @@
       "typeString": "[StatsInfo!]",
       "name": "detailedHits",
       "url": "/travelgatex/reference/objects/statsinfo",
-      "description": "Hits grouped depending on their status",
+      "description": null,
       "isDeprecated": false,
       "args": [
         {
           "typeString": "[StatsInfoTypes!]",
           "name": "type",
           "url": "/travelgatex/reference/enums/statsinfotypes",
-          "description": ""
+          "description": null
         },
         {
           "typeString": "[Int!]",
           "name": "code",
           "url": "/travelgatex/reference/scalars/int",
-          "description": ""
+          "description": null
         }
       ]
     },
@@ -44,7 +44,7 @@
       "typeString": "Boolean!",
       "name": "cache",
       "url": "/travelgatex/reference/scalars/boolean",
-      "description": "Responsible for the execution of the this stats. If TRUE then cache, else client",
+      "description": null,
       "isDeprecated": false,
       "args": null
     }
@@ -55,7 +55,6 @@
   "typename": "OperationDetailed",
   "hideGithubLink": true
 }
-Stats information per operation
 ## GraphQL schema definition
 
 {{% graphql-schema-type %}}

@@ -6,172 +6,172 @@
   "requireby": [
     {
       "name": "MappeaGetMappeaStatsInput",
-      "description": "# GetMappeaStats",
+      "description": null,
       "url": "/mappea/reference/inputobjects/mappeagetmappeastatsinput"
     },
     {
       "name": "Error",
-      "description": "Application errors",
+      "description": null,
       "url": "/mappea/reference/objects/error"
     },
     {
       "name": "Warning",
-      "description": "Application warnings",
+      "description": null,
       "url": "/mappea/reference/objects/warning"
     },
     {
       "name": "File",
-      "description": "",
+      "description": null,
       "url": "/mappea/reference/objects/file"
     },
     {
       "name": "GetMappeaStatsData",
-      "description": "",
+      "description": null,
       "url": "/mappea/reference/objects/getmappeastatsdata"
     },
     {
       "name": "MappeaUploadFileInput",
-      "description": "## UploadFile",
+      "description": null,
       "url": "/mappea/reference/inputobjects/mappeauploadfileinput"
     },
     {
       "name": "UploadFileData",
-      "description": "",
+      "description": null,
       "url": "/mappea/reference/objects/uploadfiledata"
     },
     {
       "name": "SupplierData",
-      "description": "",
+      "description": null,
       "url": "/mappea/reference/objects/supplierdata"
     },
     {
       "name": "Provider",
-      "description": "Temporary type to use only during SQL server's lifetime",
+      "description": null,
       "url": "/mappea/reference/objects/provider"
     },
     {
       "name": "AccessEdge",
-      "description": "",
+      "description": null,
       "url": "/mappea/reference/objects/accessedge"
     },
     {
       "name": "PageInfo",
-      "description": "",
+      "description": null,
       "url": "/mappea/reference/objects/pageinfo"
     },
     {
       "name": "AccessData",
-      "description": "",
+      "description": null,
       "url": "/mappea/reference/objects/accessdata"
     },
     {
       "name": "Parameter",
-      "description": "Parameters for additional information for the supplier's configuration.",
+      "description": null,
       "url": "/mappea/reference/objects/parameter"
     },
     {
       "name": "OrganizationData",
-      "description": "",
+      "description": null,
       "url": "/mappea/reference/objects/organizationdata"
     },
     {
       "name": "AdviseMessage",
-      "description": "List of advise messages.",
+      "description": null,
       "url": "/mappea/reference/objects/advisemessage"
     },
     {
       "name": "GroupCommonData",
-      "description": "",
+      "description": null,
       "url": "/mappea/reference/interfaces/groupcommondata"
     },
     {
       "name": "MemberData",
-      "description": "",
+      "description": null,
       "url": "/mappea/reference/objects/memberdata"
     },
     {
       "name": "RoleEdge",
-      "description": "",
+      "description": null,
       "url": "/mappea/reference/objects/roleedge"
     },
     {
       "name": "RoleData",
-      "description": "",
+      "description": null,
       "url": "/mappea/reference/objects/roledata"
     },
     {
       "name": "ResourceEdge",
-      "description": "",
+      "description": null,
       "url": "/mappea/reference/objects/resourceedge"
     },
     {
       "name": "ResourceData",
-      "description": "",
+      "description": null,
       "url": "/mappea/reference/objects/resourcedata"
     },
     {
       "name": "MemberEdge",
-      "description": "",
+      "description": null,
       "url": "/mappea/reference/objects/memberedge"
     },
     {
       "name": "APIEdge",
-      "description": "",
+      "description": null,
       "url": "/mappea/reference/objects/apiedge"
     },
     {
       "name": "APIData",
-      "description": "",
+      "description": null,
       "url": "/mappea/reference/objects/apidata"
     },
     {
       "name": "OperationEdge",
-      "description": "",
+      "description": null,
       "url": "/mappea/reference/objects/operationedge"
     },
     {
       "name": "OperationData",
-      "description": "",
+      "description": null,
       "url": "/mappea/reference/objects/operationdata"
     },
     {
       "name": "ProductEdge",
-      "description": "",
+      "description": null,
       "url": "/mappea/reference/objects/productedge"
     },
     {
       "name": "ProductData",
-      "description": "",
+      "description": null,
       "url": "/mappea/reference/objects/productdata"
     },
     {
       "name": "SupplierEdge",
-      "description": "",
+      "description": null,
       "url": "/mappea/reference/objects/supplieredge"
     },
     {
       "name": "ClientEdge",
-      "description": "",
+      "description": null,
       "url": "/mappea/reference/objects/clientedge"
     },
     {
       "name": "GroupData",
-      "description": "",
+      "description": null,
       "url": "/mappea/reference/objects/groupdata"
     },
     {
       "name": "ManagedGroupEdge",
-      "description": "",
+      "description": null,
       "url": "/mappea/reference/objects/managedgroupedge"
     },
     {
       "name": "ExternalMessage",
-      "description": "",
+      "description": null,
       "url": "/mappea/reference/objects/externalmessage"
     },
     {
       "name": "GroupEdge",
-      "description": "",
+      "description": null,
       "url": "/mappea/reference/objects/groupedge"
     }
   ],

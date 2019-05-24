@@ -7,7 +7,7 @@
       "typeString": "String!",
       "name": "code",
       "url": "/hotelx/reference/scalars/string",
-      "description": "Warning code",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -15,7 +15,7 @@
       "typeString": "String!",
       "name": "type",
       "url": "/hotelx/reference/scalars/string",
-      "description": "Warning type",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -23,7 +23,7 @@
       "typeString": "String!",
       "name": "description",
       "url": "/hotelx/reference/scalars/string",
-      "description": "Warning description",
+      "description": null,
       "isDeprecated": false,
       "args": null
     }
@@ -34,7 +34,6 @@
   "typename": "Warning",
   "hideGithubLink": true
 }
-Application warnings
 ## GraphQL schema definition
 
 {{% graphql-schema-type %}}

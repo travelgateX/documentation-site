@@ -7,36 +7,36 @@
       "typeString": "String!",
       "name": "name",
       "url": "/travelgatex/reference/scalars/string",
-      "description": "The card holder's name",
+      "description": null,
       "args": null
     },
     {
       "typeString": "String!",
       "name": "surname",
       "url": "/travelgatex/reference/scalars/string",
-      "description": "The card holder's surname",
+      "description": null,
       "args": null
     }
   ],
   "requireby": [
     {
       "name": "PaymentXStoredCardFilterInput",
-      "description": "",
+      "description": null,
       "url": "/travelgatex/reference/inputobjects/paymentxstoredcardfilterinput"
     },
     {
       "name": "HotelBookInput",
-      "description": "Criteria of book.",
+      "description": null,
       "url": "/travelgatex/reference/inputobjects/hotelbookinput"
     },
     {
       "name": "PaymentCardInput",
-      "description": "Input PaymentCard, if the payment is done by credit card, is it mandatory to specify the payment type and the credit card information",
+      "description": null,
       "url": "/travelgatex/reference/inputobjects/paymentcardinput"
     },
     {
       "name": "PaymentXStoredCardInput",
-      "description": "",
+      "description": null,
       "url": "/travelgatex/reference/inputobjects/paymentxstoredcardinput"
     }
   ],
@@ -45,7 +45,6 @@
   "typename": "HolderInput",
   "hideGithubLink": true
 }
-Holder object that contains the occupant's (pax's) name and surname.
 ## GraphQL schema definition
 
 {{% graphql-schema-type %}}

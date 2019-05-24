@@ -6,182 +6,182 @@
   "requireby": [
     {
       "name": "AdviseMessage",
-      "description": "List of advise messages.",
+      "description": null,
       "url": "/paymentx/reference/objects/advisemessage"
     },
     {
       "name": "PaymentXStoredCardIDInput",
-      "description": "",
+      "description": null,
       "url": "/paymentx/reference/inputobjects/paymentxstoredcardidinput"
     },
     {
       "name": "PaymentXStoredCard",
-      "description": "",
+      "description": null,
       "url": "/paymentx/reference/objects/paymentxstoredcard"
     },
     {
       "name": "Node",
-      "description": "",
+      "description": null,
       "url": "/paymentx/reference/interfaces/node"
     },
     {
       "name": "Group",
-      "description": "Groups are organized hierarchically.",
+      "description": null,
       "url": "/paymentx/reference/objects/group"
     },
     {
       "name": "PointOfSale",
-      "description": "",
+      "description": null,
       "url": "/paymentx/reference/objects/pointofsale"
     },
     {
       "name": "GroupData",
-      "description": "",
+      "description": null,
       "url": "/paymentx/reference/objects/groupdata"
     },
     {
       "name": "Member",
-      "description": "You grant access to members which can be either:\nUsers: A developer, administrator or any other person from your Organization who interacts with the TravelgateX Platform. An email address can be used as the identity of a User.\nService Accounts: An application (Client) instead of an individual User. If you prefer, you can create as many Service Accounts as needed to represent different logical components of your application.",
+      "description": null,
       "url": "/paymentx/reference/objects/member"
     },
     {
       "name": "GroupCommonData",
-      "description": "",
+      "description": null,
       "url": "/paymentx/reference/interfaces/groupcommondata"
     },
     {
       "name": "MemberData",
-      "description": "",
+      "description": null,
       "url": "/paymentx/reference/objects/memberdata"
     },
     {
       "name": "API",
-      "description": "",
+      "description": null,
       "url": "/paymentx/reference/objects/api"
     },
     {
       "name": "APIData",
-      "description": "",
+      "description": null,
       "url": "/paymentx/reference/objects/apidata"
     },
     {
       "name": "Resource",
-      "description": "Resources are those used in APIs and Products.",
+      "description": null,
       "url": "/paymentx/reference/objects/resource"
     },
     {
       "name": "ResourceData",
-      "description": "",
+      "description": null,
       "url": "/paymentx/reference/objects/resourcedata"
     },
     {
       "name": "Operation",
-      "description": "",
+      "description": null,
       "url": "/paymentx/reference/objects/operation"
     },
     {
       "name": "OperationData",
-      "description": "",
+      "description": null,
       "url": "/paymentx/reference/objects/operationdata"
     },
     {
       "name": "ManagedGroup",
-      "description": "",
+      "description": null,
       "url": "/paymentx/reference/objects/managedgroup"
     },
     {
       "name": "ManagedGroupData",
-      "description": "",
+      "description": null,
       "url": "/paymentx/reference/objects/managedgroupdata"
     },
     {
       "name": "Role",
-      "description": "Permissions determine what operations are allowed on a resource",
+      "description": null,
       "url": "/paymentx/reference/objects/role"
     },
     {
       "name": "RoleData",
-      "description": "",
+      "description": null,
       "url": "/paymentx/reference/objects/roledata"
     },
     {
       "name": "Access",
-      "description": "An Access is a set of credentials and configuration in order to access the system of a Supplier.",
+      "description": null,
       "url": "/paymentx/reference/objects/access"
     },
     {
       "name": "AccessData",
-      "description": "",
+      "description": null,
       "url": "/paymentx/reference/objects/accessdata"
     },
     {
       "name": "Supplier",
-      "description": "A Supplier is a Partner who is connected to TravelgateX on the supply side in order to sell their product to connected Buyers",
+      "description": null,
       "url": "/paymentx/reference/objects/supplier"
     },
     {
       "name": "Parameter",
-      "description": "Parameters for additional information for the supplier's configuration.",
+      "description": null,
       "url": "/paymentx/reference/objects/parameter"
     },
     {
       "name": "Organization",
-      "description": "Organization node is the root node in the hierarachy, the folders are the children of the organization and the products are the children of the folders.",
+      "description": null,
       "url": "/paymentx/reference/objects/organization"
     },
     {
       "name": "SupplierData",
-      "description": "",
+      "description": null,
       "url": "/paymentx/reference/objects/supplierdata"
     },
     {
       "name": "Provider",
-      "description": "Temporary type to use only during SQL server's lifetime",
+      "description": null,
       "url": "/paymentx/reference/objects/provider"
     },
     {
       "name": "OrganizationData",
-      "description": "",
+      "description": null,
       "url": "/paymentx/reference/objects/organizationdata"
     },
     {
       "name": "Domain",
-      "description": "",
+      "description": null,
       "url": "/paymentx/reference/objects/domain"
     },
     {
       "name": "Product",
-      "description": "An APIs collection.",
+      "description": null,
       "url": "/paymentx/reference/objects/product"
     },
     {
       "name": "ProductData",
-      "description": "",
+      "description": null,
       "url": "/paymentx/reference/objects/productdata"
     },
     {
       "name": "DomainData",
-      "description": "",
+      "description": null,
       "url": "/paymentx/reference/objects/domaindata"
     },
     {
       "name": "Client",
-      "description": "Client identifies who is making the request and holds the configuration assigned to it.",
+      "description": null,
       "url": "/paymentx/reference/objects/client"
     },
     {
       "name": "ClientData",
-      "description": "",
+      "description": null,
       "url": "/paymentx/reference/objects/clientdata"
     },
     {
       "name": "PointOfSaleData",
-      "description": "",
+      "description": null,
       "url": "/paymentx/reference/objects/pointofsaledata"
     },
     {
       "name": "PaymentXStoredCardInput",
-      "description": "",
+      "description": null,
       "url": "/paymentx/reference/inputobjects/paymentxstoredcardinput"
     }
   ],

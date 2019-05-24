@@ -7,7 +7,7 @@
       "typeString": "String!",
       "name": "code",
       "url": "/hotelx/reference/scalars/string",
-      "description": "Specifies the rate code.",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -15,7 +15,7 @@
       "typeString": "String",
       "name": "name",
       "url": "/hotelx/reference/scalars/string",
-      "description": "Specifies the rate name.",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -23,15 +23,47 @@
       "typeString": "Date",
       "name": "effectiveDate",
       "url": "/hotelx/reference/scalars/date",
-      "description": "Start date in which the rate becomes effective.",
-      "isDeprecated": false,
-      "args": null
+      "description": null,
+      "isDeprecated": true,
+      "args": null,
+      "deprecationReason": "Incorrect date format.",
+      "descriptionSplitted": {
+        "date": "2018-02-28",
+        "first": "deprecated from",
+        "second": "Incorrect date format."
+      },
+      "deprecationDate": "2018-02-28",
+      "typeName": "RatePlan"
     },
     {
       "typeString": "Date",
       "name": "expireDate",
       "url": "/hotelx/reference/scalars/date",
-      "description": "Expire date of the rate.",
+      "description": null,
+      "isDeprecated": true,
+      "args": null,
+      "deprecationReason": "Incorrect date format.",
+      "descriptionSplitted": {
+        "date": "2018-02-28",
+        "first": "deprecated from",
+        "second": "Incorrect date format."
+      },
+      "deprecationDate": "2018-02-28",
+      "typeName": "RatePlan"
+    },
+    {
+      "typeString": "Date",
+      "name": "start",
+      "url": "/hotelx/reference/scalars/date",
+      "description": null,
+      "isDeprecated": false,
+      "args": null
+    },
+    {
+      "typeString": "Date",
+      "name": "end",
+      "url": "/hotelx/reference/scalars/date",
+      "description": null,
       "isDeprecated": false,
       "args": null
     }
@@ -42,7 +74,6 @@
   "typename": "RatePlan",
   "hideGithubLink": true
 }
-Information about the rate of the option returned.
 ## GraphQL schema definition
 
 {{% graphql-schema-type %}}

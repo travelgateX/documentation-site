@@ -7,7 +7,7 @@
       "typeString": "String",
       "name": "type",
       "url": "/travelgatex/reference/scalars/string",
-      "description": "Specifies the bed type",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -15,7 +15,7 @@
       "typeString": "String",
       "name": "description",
       "url": "/travelgatex/reference/scalars/string",
-      "description": "Description about the bed",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -23,7 +23,7 @@
       "typeString": "Int",
       "name": "count",
       "url": "/travelgatex/reference/scalars/int",
-      "description": "Indicates number of beds in a room",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -31,7 +31,7 @@
       "typeString": "Boolean",
       "name": "shared",
       "url": "/travelgatex/reference/scalars/boolean",
-      "description": "Specifies if the bed is shared or not",
+      "description": null,
       "isDeprecated": false,
       "args": null
     }
@@ -42,7 +42,6 @@
   "typename": "Bed",
   "hideGithubLink": true
 }
-Contains information about a bed.
 ## GraphQL schema definition
 
 {{% graphql-schema-type %}}

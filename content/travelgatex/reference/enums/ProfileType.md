@@ -6,30 +6,30 @@
   "requireby": [
     {
       "name": "ProfileData",
-      "description": "Profile data",
+      "description": null,
       "url": "/travelgatex/reference/objects/profiledata"
     },
     {
       "name": "CreateProfileInput",
-      "description": "",
+      "description": null,
       "url": "/travelgatex/reference/inputobjects/createprofileinput"
     },
     {
       "name": "UpdateProfileInput",
-      "description": "",
+      "description": null,
       "url": "/travelgatex/reference/inputobjects/updateprofileinput"
     }
   ],
   "enumValues": [
     {
       "name": "BUYER",
-      "description": "Buyer profile",
+      "description": null,
       "isDeprecated": false,
       "deprecationReason": null
     },
     {
       "name": "SELLER",
-      "description": "Seller profile",
+      "description": null,
       "isDeprecated": false,
       "deprecationReason": null
     }

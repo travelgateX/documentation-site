@@ -7,7 +7,7 @@
       "typeString": "Boolean!",
       "name": "hasNextPage",
       "url": "/mappea/reference/scalars/boolean",
-      "description": "",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -15,7 +15,7 @@
       "typeString": "Boolean!",
       "name": "hasPreviousPage",
       "url": "/mappea/reference/scalars/boolean",
-      "description": "",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -23,7 +23,7 @@
       "typeString": "String!",
       "name": "startCursor",
       "url": "/mappea/reference/scalars/string",
-      "description": "",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -31,7 +31,7 @@
       "typeString": "String!",
       "name": "endCursor",
       "url": "/mappea/reference/scalars/string",
-      "description": "",
+      "description": null,
       "isDeprecated": false,
       "args": null
     }
@@ -39,57 +39,57 @@
   "requireby": [
     {
       "name": "AccessConnection",
-      "description": "",
+      "description": null,
       "url": "/mappea/reference/objects/accessconnection"
     },
     {
       "name": "GroupConnection",
-      "description": "",
+      "description": null,
       "url": "/mappea/reference/objects/groupconnection"
     },
     {
       "name": "MemberConnection",
-      "description": "",
+      "description": null,
       "url": "/mappea/reference/objects/memberconnection"
     },
     {
       "name": "APIConnection",
-      "description": "",
+      "description": null,
       "url": "/mappea/reference/objects/apiconnection"
     },
     {
       "name": "ProductConnection",
-      "description": "",
+      "description": null,
       "url": "/mappea/reference/objects/productconnection"
     },
     {
       "name": "SupplierConnection",
-      "description": "",
+      "description": null,
       "url": "/mappea/reference/objects/supplierconnection"
     },
     {
       "name": "ClientConnection",
-      "description": "",
+      "description": null,
       "url": "/mappea/reference/objects/clientconnection"
     },
     {
       "name": "RoleConnection",
-      "description": "",
+      "description": null,
       "url": "/mappea/reference/objects/roleconnection"
     },
     {
       "name": "ResourceConnection",
-      "description": "",
+      "description": null,
       "url": "/mappea/reference/objects/resourceconnection"
     },
     {
       "name": "OperationConnection",
-      "description": "",
+      "description": null,
       "url": "/mappea/reference/objects/operationconnection"
     },
     {
       "name": "ManagedGroupConnection",
-      "description": "",
+      "description": null,
       "url": "/mappea/reference/objects/managedgroupconnection"
     }
   ],

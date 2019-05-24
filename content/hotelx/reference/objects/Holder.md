@@ -7,7 +7,7 @@
       "typeString": "String!",
       "name": "name",
       "url": "/hotelx/reference/scalars/string",
-      "description": "Holder's name",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -15,7 +15,7 @@
       "typeString": "String!",
       "name": "surname",
       "url": "/hotelx/reference/scalars/string",
-      "description": "Holder's surname",
+      "description": null,
       "isDeprecated": false,
       "args": null
     }
@@ -23,7 +23,7 @@
   "requireby": [
     {
       "name": "HotelBookingDetail",
-      "description": "Contains information about booking",
+      "description": null,
       "url": "/hotelx/reference/objects/hotelbookingdetail"
     }
   ],
@@ -32,7 +32,6 @@
   "typename": "Holder",
   "hideGithubLink": true
 }
-Holder object that contains the occupant's (pax's) name and surname.
 ## GraphQL schema definition
 
 {{% graphql-schema-type %}}

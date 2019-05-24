@@ -7,7 +7,7 @@
       "typeString": "Hotel",
       "name": "node",
       "url": "/hotelx/reference/objects/hotel",
-      "description": "",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -15,7 +15,7 @@
       "typeString": "String!",
       "name": "cursor",
       "url": "/hotelx/reference/scalars/string",
-      "description": "",
+      "description": null,
       "isDeprecated": false,
       "args": null
     }
@@ -23,7 +23,7 @@
   "requireby": [
     {
       "name": "HotelConnection",
-      "description": "HotelList definition",
+      "description": null,
       "url": "/hotelx/reference/objects/hotelconnection"
     }
   ],
@@ -32,7 +32,6 @@
   "typename": "HotelEdge",
   "hideGithubLink": true
 }
-HotelList Edge definition
 ## GraphQL schema definition
 
 {{% graphql-schema-type %}}

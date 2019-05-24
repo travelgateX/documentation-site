@@ -6,50 +6,50 @@
   "requireby": [
     {
       "name": "HotelRuntimeParameter",
-      "description": "template of all fields used by the supplier",
+      "description": null,
       "url": "/hotelx/reference/objects/hotelruntimeparameter"
     }
   ],
   "enumValues": [
     {
       "name": "USER",
-      "description": "",
+      "description": null,
       "isDeprecated": false,
       "deprecationReason": null
     },
     {
       "name": "PASSWORD",
-      "description": "",
+      "description": null,
       "isDeprecated": false,
       "deprecationReason": null
     },
     {
       "name": "URLAVAIL",
-      "description": "",
+      "description": null,
       "isDeprecated": false,
       "deprecationReason": null
     },
     {
       "name": "URLVALUATION",
-      "description": "",
+      "description": null,
       "isDeprecated": false,
       "deprecationReason": null
     },
     {
       "name": "URLRESERVATION",
-      "description": "",
+      "description": null,
       "isDeprecated": false,
       "deprecationReason": null
     },
     {
       "name": "URLGENERIC",
-      "description": "",
+      "description": null,
       "isDeprecated": false,
       "deprecationReason": null
     },
     {
       "name": "PARAMETER",
-      "description": "",
+      "description": null,
       "isDeprecated": false,
       "deprecationReason": null
     }
@@ -58,7 +58,6 @@
   "typename": "TagRuntimeType",
   "hideGithubLink": true
 }
-Indicates xml tag used by the current parameter
 ## GraphQL schema definition
 
 {{% graphql-schema-enum %}}

@@ -7,7 +7,7 @@
       "typeString": "[CategoryEdge]",
       "name": "edges",
       "url": "/hotelx/reference/objects/categoryedge",
-      "description": "",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -15,7 +15,7 @@
       "typeString": "PageInfo!",
       "name": "pageInfo",
       "url": "/hotelx/reference/objects/pageinfo",
-      "description": "Indicates info about page",
+      "description": null,
       "isDeprecated": false,
       "args": null
     }
@@ -23,7 +23,7 @@
   "requireby": [
     {
       "name": "HotelXQuery",
-      "description": "",
+      "description": null,
       "url": "/hotelx/reference/objects/hotelxquery"
     }
   ],
@@ -32,7 +32,6 @@
   "typename": "CategoryConnection",
   "hideGithubLink": true
 }
-CategoryList definition
 ## GraphQL schema definition
 
 {{% graphql-schema-type %}}

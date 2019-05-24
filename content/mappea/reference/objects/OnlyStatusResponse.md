@@ -7,7 +7,7 @@
       "typeString": "Error",
       "name": "error",
       "url": "/mappea/reference/objects/error",
-      "description": "",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -15,7 +15,7 @@
       "typeString": "[Warning]",
       "name": "warnings",
       "url": "/mappea/reference/objects/warning",
-      "description": "",
+      "description": null,
       "isDeprecated": false,
       "args": null
     }
@@ -23,7 +23,7 @@
   "requireby": [
     {
       "name": "MappeaMutation",
-      "description": "",
+      "description": null,
       "url": "/mappea/reference/objects/mappeamutation"
     }
   ],
@@ -32,7 +32,6 @@
   "typename": "OnlyStatusResponse",
   "hideGithubLink": true
 }
-## Common Items
 ## GraphQL schema definition
 
 {{% graphql-schema-type %}}

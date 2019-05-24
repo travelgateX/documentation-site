@@ -6,20 +6,20 @@
   "requireby": [
     {
       "name": "MemberData",
-      "description": "",
+      "description": null,
       "url": "/stats/reference/objects/memberdata"
     }
   ],
   "enumValues": [
     {
       "name": "USER",
-      "description": "",
+      "description": null,
       "isDeprecated": false,
       "deprecationReason": null
     },
     {
       "name": "SERVICE_ACCOUNT",
-      "description": "",
+      "description": null,
       "isDeprecated": false,
       "deprecationReason": null
     }

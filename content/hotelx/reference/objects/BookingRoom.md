@@ -7,7 +7,7 @@
       "typeString": "Int",
       "name": "occupancyRefId",
       "url": "/hotelx/reference/scalars/int",
-      "description": "ID reference to the occupancy",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -15,7 +15,7 @@
       "typeString": "String",
       "name": "code",
       "url": "/hotelx/reference/scalars/string",
-      "description": "Indicates the room code",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -23,7 +23,7 @@
       "typeString": "String",
       "name": "description",
       "url": "/hotelx/reference/scalars/string",
-      "description": "Description about the room",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -31,7 +31,7 @@
       "typeString": "Price",
       "name": "price",
       "url": "/hotelx/reference/objects/price",
-      "description": "Total price for all days.",
+      "description": null,
       "isDeprecated": false,
       "args": null
     }

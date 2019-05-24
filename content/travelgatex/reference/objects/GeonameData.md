@@ -7,7 +7,7 @@
       "typeString": "ID!",
       "name": "code",
       "url": "/travelgatex/reference/scalars/id",
-      "description": "location code",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -15,7 +15,7 @@
       "typeString": "String!",
       "name": "name",
       "url": "/travelgatex/reference/scalars/string",
-      "description": "name of location",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -23,7 +23,7 @@
       "typeString": "Geoname!",
       "name": "parent",
       "url": "/travelgatex/reference/objects/geoname",
-      "description": "Parent location, the top location is itself",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -31,7 +31,7 @@
       "typeString": "Country",
       "name": "country",
       "url": "/travelgatex/reference/scalars/country",
-      "description": "ISO 3166-1 alpha-2 format country code with enclosing double quotes \"ES\"",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -39,7 +39,7 @@
       "typeString": "DestinationType!",
       "name": "type",
       "url": "/travelgatex/reference/enums/destinationtype",
-      "description": "Indicates destination type, zone, city or country",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -47,7 +47,7 @@
       "typeString": "Coordinates!",
       "name": "coordinates",
       "url": "/travelgatex/reference/objects/coordinates",
-      "description": "Geographical coordinates corresponding to a location.",
+      "description": null,
       "isDeprecated": false,
       "args": null
     }
@@ -55,7 +55,7 @@
   "requireby": [
     {
       "name": "Geoname",
-      "description": "Geoname type",
+      "description": null,
       "url": "/travelgatex/reference/objects/geoname"
     }
   ],
@@ -64,7 +64,6 @@
   "typename": "GeonameData",
   "hideGithubLink": true
 }
-Geoname data, which contain a reference to his parent location
 ## GraphQL schema definition
 
 {{% graphql-schema-type %}}

@@ -7,7 +7,7 @@
       "typeString": "String",
       "name": "code",
       "url": "/hotelx/reference/scalars/string",
-      "description": "Status code",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -15,7 +15,7 @@
       "typeString": "String",
       "name": "type",
       "url": "/hotelx/reference/scalars/string",
-      "description": "Status type",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -23,7 +23,7 @@
       "typeString": "String",
       "name": "description",
       "url": "/hotelx/reference/scalars/string",
-      "description": "Status description",
+      "description": null,
       "isDeprecated": false,
       "args": null
     }
@@ -31,7 +31,7 @@
   "requireby": [
     {
       "name": "HotelXQuery",
-      "description": "",
+      "description": null,
       "url": "/hotelx/reference/objects/hotelxquery"
     }
   ],
@@ -40,7 +40,6 @@
   "typename": "ServiceStatus",
   "hideGithubLink": true
 }
-Indicates the status of the service
 ## GraphQL schema definition
 
 {{% graphql-schema-type %}}

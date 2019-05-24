@@ -7,21 +7,21 @@
       "typeString": "PluginStepType!",
       "name": "step",
       "url": "/hotelx/reference/enums/pluginsteptype",
-      "description": "The Step of the plugin to filter",
+      "description": null,
       "args": null
     },
     {
       "typeString": "String!",
       "name": "type",
       "url": "/hotelx/reference/scalars/string",
-      "description": "The Type of the plugin to filter",
+      "description": null,
       "args": null
     },
     {
       "typeString": "String!",
       "name": "name",
       "url": "/hotelx/reference/scalars/string",
-      "description": "The Name of the plugin to filter",
+      "description": null,
       "args": null
     }
   ],

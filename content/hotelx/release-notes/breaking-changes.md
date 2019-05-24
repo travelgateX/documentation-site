@@ -16,15 +16,28 @@
 ### Unreleased
 {{% release-notes-container type="u"%}}
 - Removal of `loadFile` from `HotelXMutation`. Reason: .  Deprecated on 2018-06-06.**To be removed soon**.
-- Removal of `useContext` from `HotelSettingsInput`. Reason: Redundant..  Deprecated on 2017-12-12.**To be removed soon**.
-- Removal of `connectUser` from `HotelSettingsInput`. Reason: Redundant..  Deprecated on 2018-03-19.**To be removed soon**.
 - Removal of `distribute` from `AddOns`. Reason: You can find it in distribution AddOn.  Deprecated on 2018-05-21.**To be removed soon**.
 - Removal of `type` from `AdviseMessage`. Reason: .  Deprecated on 2018-06-01.**To be removed soon**.
-- Removal of `token` from `HotelOptionSearch`. Reason: .  Deprecated on 2019-02-05.Expected removal on 2019-05-06.
+- Removal of `creationDate` from `BookingHotel`. Reason: Incorrect date format..  Deprecated on 2018-02-28.**To be removed soon**.
+- Removal of `checkIn` from `BookingHotel`. Reason: Incorrect date format..  Deprecated on 2018-02-28.**To be removed soon**.
+- Removal of `checkOut` from `BookingHotel`. Reason: Incorrect date format..  Deprecated on 2018-02-28.**To be removed soon**.
+- Removal of `effectiveDate` from `PriceBreakdown`. Reason: Incorrect date format..  Deprecated on 2018-02-28.**To be removed soon**.
+- Removal of `expireDate` from `PriceBreakdown`. Reason: Incorrect date format..  Deprecated on 2018-02-28.**To be removed soon**.
+- Removal of `effectiveDate` from `Promotion`. Reason: Incorrect date format..  Deprecated on 2018-02-28.**To be removed soon**.
+- Removal of `expireDate` from `Promotion`. Reason: Incorrect date format..  Deprecated on 2018-02-28.**To be removed soon**.
+- Removal of `effectiveDate` from `RatePlan`. Reason: Incorrect date format..  Deprecated on 2018-02-28.**To be removed soon**.
+- Removal of `expireDate` from `RatePlan`. Reason: Incorrect date format..  Deprecated on 2018-02-28.**To be removed soon**.
+- Removal of `effectiveDate` from `Supplement`. Reason: Incorrect date format..  Deprecated on 2018-02-28.**To be removed soon**.
+- Removal of `expireDate` from `Supplement`. Reason: Incorrect date format..  Deprecated on 2018-02-28.**To be removed soon**.
+- Removal of `token` from `HotelOptionSearch`. Reason: .  Deprecated on 2019-02-05.**To be removed soon**.
+{{% / release-notes-container %}}
+### 2019-02-19
+{{% release-notes-container type="r"%}}
+- Removed `token` from `HotelOptionSearch`. Reason: . Deprecated on 2019-02-05 .
 {{% / release-notes-container %}}
 ### 2019-02-05
 {{% release-notes-container type="d"%}}
-- Deprecated `token` from `HotelOptionSearch`. Reason: . Expected removal on 2019-05-06 .
+- Deprecated `token` from `HotelOptionSearch`. Reason: . Finally removed on 2019-02-19 .
 {{% / release-notes-container %}}
 ### 2018-07-26
 {{% release-notes-container type="r"%}}
@@ -64,6 +77,20 @@
 ### 2018-03-19
 {{% release-notes-container type="d"%}}
 - Deprecated `connectUser` from `HotelSettingsInput`. Reason: Redundant.. Finally removed on 2018-07-26 .
+{{% / release-notes-container %}}
+### 2018-02-28
+{{% release-notes-container type="d"%}}
+- Deprecated `creationDate` from `BookingHotel`. Reason: Incorrect date format.. Expected removal on 2018-05-29 .
+- Deprecated `checkIn` from `BookingHotel`. Reason: Incorrect date format.. Expected removal on 2018-05-29 .
+- Deprecated `checkOut` from `BookingHotel`. Reason: Incorrect date format.. Expected removal on 2018-05-29 .
+- Deprecated `effectiveDate` from `PriceBreakdown`. Reason: Incorrect date format.. Expected removal on 2018-05-29 .
+- Deprecated `expireDate` from `PriceBreakdown`. Reason: Incorrect date format.. Expected removal on 2018-05-29 .
+- Deprecated `effectiveDate` from `Promotion`. Reason: Incorrect date format.. Expected removal on 2018-05-29 .
+- Deprecated `expireDate` from `Promotion`. Reason: Incorrect date format.. Expected removal on 2018-05-29 .
+- Deprecated `effectiveDate` from `RatePlan`. Reason: Incorrect date format.. Expected removal on 2018-05-29 .
+- Deprecated `expireDate` from `RatePlan`. Reason: Incorrect date format.. Expected removal on 2018-05-29 .
+- Deprecated `effectiveDate` from `Supplement`. Reason: Incorrect date format.. Expected removal on 2018-05-29 .
+- Deprecated `expireDate` from `Supplement`. Reason: Incorrect date format.. Expected removal on 2018-05-29 .
 {{% / release-notes-container %}}
 ### 2017-12-12
 {{% release-notes-container type="d"%}}

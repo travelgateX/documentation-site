@@ -7,7 +7,7 @@
       "typeString": "ID!",
       "name": "id",
       "url": "/travelgatex/reference/scalars/id",
-      "description": "",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -15,7 +15,7 @@
       "typeString": "DomainName!",
       "name": "name",
       "url": "/travelgatex/reference/scalars/domainname",
-      "description": "",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -23,7 +23,7 @@
       "typeString": "Organization!",
       "name": "organization",
       "url": "/travelgatex/reference/objects/organization",
-      "description": "",
+      "description": null,
       "isDeprecated": false,
       "args": null
     }
@@ -31,7 +31,7 @@
   "requireby": [
     {
       "name": "Domain",
-      "description": "",
+      "description": null,
       "url": "/travelgatex/reference/objects/domain"
     }
   ],

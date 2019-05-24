@@ -7,7 +7,7 @@
       "typeString": "ID!",
       "name": "code",
       "url": "/mappea/reference/scalars/id",
-      "description": "unique identifier of a supplier",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -15,7 +15,7 @@
       "typeString": "String!",
       "name": "name",
       "url": "/mappea/reference/scalars/string",
-      "description": "Supplier complete name",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -23,7 +23,7 @@
       "typeString": "Boolean!",
       "name": "isActive",
       "url": "/mappea/reference/scalars/boolean",
-      "description": "indicates whether a supplier is active",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -31,7 +31,7 @@
       "typeString": "Provider!",
       "name": "provider",
       "url": "/mappea/reference/objects/provider",
-      "description": "instance to which this supllier is connected",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -39,7 +39,7 @@
       "typeString": "String!",
       "name": "context",
       "url": "/mappea/reference/scalars/string",
-      "description": "Context where the Supplier belongs to",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -47,7 +47,7 @@
       "typeString": "Int!",
       "name": "serviceApi",
       "url": "/mappea/reference/scalars/int",
-      "description": "Service API",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -55,7 +55,7 @@
       "typeString": "ID",
       "name": "supplierGroup",
       "url": "/mappea/reference/scalars/id",
-      "description": "SupplierGroup Internal Supplier grouping",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -63,7 +63,7 @@
       "typeString": "AccessConnection",
       "name": "accesses",
       "url": "/mappea/reference/objects/accessconnection",
-      "description": "Accesses where the supplier is referenced",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -71,7 +71,7 @@
       "typeString": "Organization",
       "name": "owner",
       "url": "/mappea/reference/objects/organization",
-      "description": "Supplier owner",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -79,32 +79,32 @@
       "typeString": "GroupConnection",
       "name": "groups",
       "url": "/mappea/reference/objects/groupconnection",
-      "description": "Groups where access belongs",
+      "description": null,
       "isDeprecated": false,
       "args": [
         {
           "typeString": "Int",
           "name": "first",
           "url": "/mappea/reference/scalars/int",
-          "description": ""
+          "description": null
         },
         {
           "typeString": "Int",
           "name": "last",
           "url": "/mappea/reference/scalars/int",
-          "description": ""
+          "description": null
         },
         {
           "typeString": "String",
           "name": "before",
           "url": "/mappea/reference/scalars/string",
-          "description": ""
+          "description": null
         },
         {
           "typeString": "String",
           "name": "after",
           "url": "/mappea/reference/scalars/string",
-          "description": ""
+          "description": null
         }
       ]
     }
@@ -112,7 +112,7 @@
   "requireby": [
     {
       "name": "Supplier",
-      "description": "A Supplier is a Partner who is connected to TravelgateX on the supply side in order to sell their product to connected Buyers",
+      "description": null,
       "url": "/mappea/reference/objects/supplier"
     }
   ],

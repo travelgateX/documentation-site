@@ -7,7 +7,7 @@
       "typeString": "Reference",
       "name": "reference",
       "url": "/travelgatex/reference/objects/reference",
-      "description": "Booking ID in the Supplier's system",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -15,7 +15,7 @@
       "typeString": "String",
       "name": "cancelReference",
       "url": "/travelgatex/reference/scalars/string",
-      "description": "Cancellation ID in the Supplier's system",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -23,7 +23,7 @@
       "typeString": "BookStatusType",
       "name": "status",
       "url": "/travelgatex/reference/enums/bookstatustype",
-      "description": "Booking Status.",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -31,7 +31,7 @@
       "typeString": "Price",
       "name": "price",
       "url": "/travelgatex/reference/objects/price",
-      "description": "Specifies the prices (Gross, Net and Amount) of the cancellation.",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -39,7 +39,7 @@
       "typeString": "HotelBookingDetail",
       "name": "booking",
       "url": "/travelgatex/reference/objects/hotelbookingdetail",
-      "description": "Information about the booking.",
+      "description": null,
       "isDeprecated": false,
       "args": null
     }
@@ -47,7 +47,7 @@
   "requireby": [
     {
       "name": "HotelCancelPayload",
-      "description": "",
+      "description": null,
       "url": "/travelgatex/reference/objects/hotelcancelpayload"
     }
   ],
@@ -56,7 +56,6 @@
   "typename": "HotelCancelDetail",
   "hideGithubLink": true
 }
-Contains information about cancel
 ## GraphQL schema definition
 
 {{% graphql-schema-type %}}

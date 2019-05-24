@@ -6,208 +6,283 @@
   "requireby": [
     {
       "name": "SupplierFilter",
-      "description": "",
+      "description": null,
       "url": "/travelgatex/reference/inputobjects/supplierfilter"
     },
     {
+      "name": "AccessData",
+      "description": null,
+      "url": "/travelgatex/reference/objects/accessdata"
+    },
+    {
       "name": "SupplierData",
-      "description": "",
+      "description": null,
       "url": "/travelgatex/reference/objects/supplierdata"
     },
     {
       "name": "GroupData",
-      "description": "",
+      "description": null,
       "url": "/travelgatex/reference/objects/groupdata"
     },
     {
       "name": "ServiceOperation",
-      "description": "Information related to an API operation",
+      "description": null,
       "url": "/travelgatex/reference/objects/serviceoperation"
     },
     {
       "name": "RelayInput",
-      "description": "",
+      "description": null,
       "url": "/travelgatex/reference/inputobjects/relayinput"
     },
     {
       "name": "HotelXHotelListInput",
-      "description": "",
+      "description": null,
       "url": "/travelgatex/reference/inputobjects/hotelxhotellistinput"
     },
     {
       "name": "HotelConnection",
-      "description": "HotelList definition",
+      "description": null,
       "url": "/travelgatex/reference/objects/hotelconnection"
     },
     {
       "name": "HotelXRoomQueryInput",
-      "description": "",
+      "description": null,
       "url": "/travelgatex/reference/inputobjects/hotelxroomqueryinput"
     },
     {
       "name": "HotelXDestinationListInput",
-      "description": "",
+      "description": null,
       "url": "/travelgatex/reference/inputobjects/hotelxdestinationlistinput"
     },
     {
       "name": "HotelXDestinationSearcherInput",
-      "description": "",
+      "description": null,
       "url": "/travelgatex/reference/inputobjects/hotelxdestinationsearcherinput"
     },
     {
       "name": "HotelSettingsInput",
-      "description": "Settings that you can edit for this avail. Values are loaded by default in our Back Office.",
+      "description": null,
       "url": "/travelgatex/reference/inputobjects/hotelsettingsinput"
     },
     {
       "name": "Timeout",
-      "description": "",
+      "description": null,
       "url": "/travelgatex/reference/objects/timeout"
     },
     {
       "name": "BusinessRules",
-      "description": "List of business rules for filtering options based on your interests.",
+      "description": null,
       "url": "/travelgatex/reference/objects/businessrules"
     },
     {
       "name": "PaxInput",
-      "description": "Pax object that contains the pax age.",
+      "description": null,
       "url": "/travelgatex/reference/inputobjects/paxinput"
     },
     {
       "name": "BusinessRulesInput",
-      "description": "List of business rules to use as filter on the options.",
+      "description": null,
       "url": "/travelgatex/reference/inputobjects/businessrulesinput"
     },
     {
       "name": "SettingsBaseInput",
-      "description": "Contains the time out and business rules of a supplier or an access.",
+      "description": null,
       "url": "/travelgatex/reference/inputobjects/settingsbaseinput"
     },
     {
       "name": "StatsRequest",
-      "description": "Contains internal information.",
+      "description": null,
       "url": "/travelgatex/reference/objects/statsrequest"
     },
     {
       "name": "StatAccess",
-      "description": "",
+      "description": null,
       "url": "/travelgatex/reference/objects/stataccess"
     },
     {
       "name": "Pax",
-      "description": "Specifies the age pax. The range of what is considered an adult, infant or baby is particular to each supplier.",
+      "description": null,
       "url": "/travelgatex/reference/objects/pax"
     },
     {
       "name": "Occupancy",
-      "description": "Information about occupancy.",
+      "description": null,
       "url": "/travelgatex/reference/objects/occupancy"
     },
     {
       "name": "Room",
-      "description": "Contains the room information of the option returned.",
+      "description": null,
       "url": "/travelgatex/reference/objects/room"
     },
     {
       "name": "Supplement",
-      "description": "Supplement that it can be or its already added to the option returned. Contains all the information about the supplement.",
+      "description": null,
       "url": "/travelgatex/reference/objects/supplement"
     },
     {
       "name": "Bed",
-      "description": "Contains information about a bed.",
+      "description": null,
       "url": "/travelgatex/reference/objects/bed"
     },
     {
       "name": "CancelPenalty",
-      "description": "Contains information for cancellation penalities..",
+      "description": null,
       "url": "/travelgatex/reference/objects/cancelpenalty"
     },
     {
       "name": "BookingRoom",
-      "description": "",
+      "description": null,
       "url": "/travelgatex/reference/objects/bookingroom"
     },
     {
       "name": "File",
-      "description": "",
+      "description": null,
       "url": "/travelgatex/reference/objects/file"
     },
     {
       "name": "GetMappeaStatsData",
-      "description": "",
+      "description": null,
       "url": "/travelgatex/reference/objects/getmappeastatsdata"
     },
     {
       "name": "PaymentXExpireDate",
-      "description": "The card expiration date",
+      "description": null,
       "url": "/travelgatex/reference/objects/paymentxexpiredate"
     },
     {
       "name": "Ratios",
-      "description": "Ratios details",
+      "description": null,
       "url": "/travelgatex/reference/objects/ratios"
     },
     {
       "name": "OperationDetailed",
-      "description": "Stats information per operation",
+      "description": null,
       "url": "/travelgatex/reference/objects/operationdetailed"
     },
     {
       "name": "StatsInfo",
-      "description": "Details of an specific error",
+      "description": null,
       "url": "/travelgatex/reference/objects/statsinfo"
     },
     {
       "name": "StatsAsset",
-      "description": "Asset of an specific error",
+      "description": null,
       "url": "/travelgatex/reference/objects/statsasset"
     },
     {
+      "name": "AlertConnection",
+      "description": "Alert list",
+      "url": "/travelgatex/reference/objects/alertconnection"
+    },
+    {
+      "name": "AlertConfiguration",
+      "description": null,
+      "url": "/travelgatex/reference/objects/alertconfiguration"
+    },
+    {
+      "name": "EventConnection",
+      "description": "Events list",
+      "url": "/travelgatex/reference/objects/eventconnection"
+    },
+    {
+      "name": "AlertTypeConfiguration",
+      "description": "Depending on the talert type, typeConfiguration will use some fields ",
+      "url": "/travelgatex/reference/objects/alerttypeconfiguration"
+    },
+    {
+      "name": "AccessInput",
+      "description": null,
+      "url": "/travelgatex/reference/inputobjects/accessinput"
+    },
+    {
       "name": "TimeoutInput",
-      "description": "",
+      "description": null,
       "url": "/travelgatex/reference/inputobjects/timeoutinput"
     },
     {
       "name": "HotelXBusinessRulesInput",
-      "description": "List of business rules to use as filter on the options.",
+      "description": null,
       "url": "/travelgatex/reference/inputobjects/hotelxbusinessrulesinput"
     },
     {
       "name": "BookRoomInput",
-      "description": "Input BookRoom contains list of pax and the room's reference.",
+      "description": null,
       "url": "/travelgatex/reference/inputobjects/bookroominput"
     },
     {
       "name": "ExpireDateInput",
-      "description": "The card expiration date",
+      "description": null,
       "url": "/travelgatex/reference/inputobjects/expiredateinput"
     },
     {
       "name": "BookPaxInput",
-      "description": "Input BookPax contains basic information abaout pax suach as name, surname and age.",
+      "description": null,
       "url": "/travelgatex/reference/inputobjects/bookpaxinput"
     },
     {
       "name": "MappeaConfirmUploadInput",
-      "description": "## ConfirmUpload",
+      "description": null,
       "url": "/travelgatex/reference/inputobjects/mappeaconfirmuploadinput"
     },
     {
       "name": "MappeaMapSupplierInput",
-      "description": "# MapSupplier",
+      "description": null,
       "url": "/travelgatex/reference/inputobjects/mappeamapsupplierinput"
     },
     {
       "name": "UploadFileData",
-      "description": "",
+      "description": null,
       "url": "/travelgatex/reference/objects/uploadfiledata"
     },
     {
       "name": "SupplierDetected",
-      "description": "",
+      "description": null,
       "url": "/travelgatex/reference/objects/supplierdetected"
+    },
+    {
+      "name": "AlertConfigurationInputNoTraffic",
+      "description": "Configuration for NO_TRAFFIC alert type. \nNo traffic alert is used to verify if there is traffic according to the parameters of the alert.",
+      "url": "/travelgatex/reference/inputobjects/alertconfigurationinputnotraffic"
+    },
+    {
+      "name": "AlertConfigurationInputErrorRate",
+      "description": "Configuration for ERROR_RATE alert type. \nError rate alert is used to verify traffic comparing its error codes. \nTher are two options. \n- OPTION 1: Can verify traffic of a time frame. Must set window field higher than 0.\n- OPTION 2: Can verify traffic of a specific number of requests. Must set window field as 0 and minNumRequest higher than 0.",
+      "url": "/travelgatex/reference/inputobjects/alertconfigurationinputerrorrate"
+    },
+    {
+      "name": "AlertConfigurationInputAverageTime",
+      "description": "Configuration for AVERAGE_TIME. \nAverage time is used to verify requests times.\nThere are 3 options:\n- OPTION 1: Can verify average time traffic of a time frame and compare it with an other time frame. (window and historical window) Must set field window and historical windows higher than 0.\n- OPTION 2: Can verify average time traffic of a time frame and compare it with the value max_average. Must set window higher than 0.\n- OPTION 3: Can verify average time traffic of a specific number of requests and compare it with the value max_average. Must set window as 0 and minNumRequests higher than 0.",
+      "url": "/travelgatex/reference/inputobjects/alertconfigurationinputaveragetime"
+    },
+    {
+      "name": "AlertConfigurationInputPeakTraffic",
+      "description": "Configuration for PEAK_TRAFFIC alert type. \nPeak traffic is used to verify traffic comparing volum of requests between to time frame (window and historical window) . ",
+      "url": "/travelgatex/reference/inputobjects/alertconfigurationinputpeaktraffic"
+    },
+    {
+      "name": "ErrorCodeInput",
+      "description": null,
+      "url": "/travelgatex/reference/inputobjects/errorcodeinput"
+    },
+    {
+      "name": "AlertUpdateConfigurationInputNoTraffic",
+      "description": "Confiuration update for NO_TRAFFIC alert type. \nNo traffic alert is used to verify if there is traffic according to the parameters of the alert.",
+      "url": "/travelgatex/reference/inputobjects/alertupdateconfigurationinputnotraffic"
+    },
+    {
+      "name": "AlertUpdateConfigurationInputErrorRate",
+      "description": "Configuration update for error rate alert type. \nError rate alert is used to verify traffic comparing its error codes. \nTher are to options. \n- OPTION 1: Can verify traffic of a time frame. Set window field higher than 0.\n- OPTION 2: Can verify traffic of a specific number of requests. Set window fild as 0 and minNumRequest higher than 0.",
+      "url": "/travelgatex/reference/inputobjects/alertupdateconfigurationinputerrorrate"
+    },
+    {
+      "name": "AlertUpdateConfigurationInputAverageTime",
+      "description": "Configuration for AVERAGE_TIME. \nAverage time is used to verify requests times.\nThere are 3 options:\n- OPTION 1: Can verify average time traffic of a time frame and compare it with an other time frame. (window and historical window) Must set field window and historical windows higher than 0.\n- OPTION 2: Can verify average time traffic of a time frame and compare it with the value max_average. Must set window higher than 0.\n- OPTION 3: Can verify average time traffic of a specific number of requests and compare it with the value max_average. Must set window as 0 and minNumRequests higher than 0.",
+      "url": "/travelgatex/reference/inputobjects/alertupdateconfigurationinputaveragetime"
+    },
+    {
+      "name": "AlertUpdateConfigurationInputPeakTraffic",
+      "description": "Configuration update for PEAK_TRAFFIC alert type. Peak traffic is used to verify traffic comparing volum of requests between to time frame (window and historical window) . ",
+      "url": "/travelgatex/reference/inputobjects/alertupdateconfigurationinputpeaktraffic"
     }
   ],
   "enumValues": null,

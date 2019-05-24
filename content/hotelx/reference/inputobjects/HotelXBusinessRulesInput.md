@@ -7,26 +7,26 @@
       "typeString": "Int!",
       "name": "optionsQuota",
       "url": "/hotelx/reference/scalars/int",
-      "description": "Options quota per search. Maximum numbers of options to be returned by the search query.",
+      "description": null,
       "args": null
     },
     {
       "typeString": "BusinessRulesType!",
       "name": "businessRulesType",
       "url": "/hotelx/reference/enums/businessrulestype",
-      "description": "Different business rules to filter the returned options.",
+      "description": null,
       "args": null
     }
   ],
   "requireby": [
     {
       "name": "HotelXDefaultSettingsDataInput",
-      "description": "",
+      "description": null,
       "url": "/hotelx/reference/inputobjects/hotelxdefaultsettingsdatainput"
     },
     {
       "name": "HotelXCommonSettingsDataInput",
-      "description": "",
+      "description": null,
       "url": "/hotelx/reference/inputobjects/hotelxcommonsettingsdatainput"
     }
   ],
@@ -35,7 +35,6 @@
   "typename": "HotelXBusinessRulesInput",
   "hideGithubLink": true
 }
-List of business rules to use as filter on the options.
 ## GraphQL schema definition
 
 {{% graphql-schema-type %}}

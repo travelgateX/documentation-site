@@ -6,132 +6,132 @@
   "requireby": [
     {
       "name": "RelayInput",
-      "description": "",
+      "description": null,
       "url": "/hotelx/reference/inputobjects/relayinput"
     },
     {
       "name": "HotelXHotelListInput",
-      "description": "",
+      "description": null,
       "url": "/hotelx/reference/inputobjects/hotelxhotellistinput"
     },
     {
       "name": "HotelConnection",
-      "description": "HotelList definition",
+      "description": null,
       "url": "/hotelx/reference/objects/hotelconnection"
     },
     {
       "name": "HotelXRoomQueryInput",
-      "description": "",
+      "description": null,
       "url": "/hotelx/reference/inputobjects/hotelxroomqueryinput"
     },
     {
       "name": "HotelXDestinationListInput",
-      "description": "",
+      "description": null,
       "url": "/hotelx/reference/inputobjects/hotelxdestinationlistinput"
     },
     {
       "name": "HotelXDestinationSearcherInput",
-      "description": "",
+      "description": null,
       "url": "/hotelx/reference/inputobjects/hotelxdestinationsearcherinput"
     },
     {
       "name": "HotelSettingsInput",
-      "description": "Settings that you can edit for this avail. Values are loaded by default in our Back Office.",
+      "description": null,
       "url": "/hotelx/reference/inputobjects/hotelsettingsinput"
     },
     {
       "name": "Timeout",
-      "description": "",
+      "description": null,
       "url": "/hotelx/reference/objects/timeout"
     },
     {
       "name": "BusinessRules",
-      "description": "List of business rules for filtering options based on your interests.",
+      "description": null,
       "url": "/hotelx/reference/objects/businessrules"
     },
     {
       "name": "PaxInput",
-      "description": "Pax object that contains the pax age.",
+      "description": null,
       "url": "/hotelx/reference/inputobjects/paxinput"
     },
     {
       "name": "BusinessRulesInput",
-      "description": "List of business rules to use as filter on the options.",
+      "description": null,
       "url": "/hotelx/reference/inputobjects/businessrulesinput"
     },
     {
       "name": "SettingsBaseInput",
-      "description": "Contains the time out and business rules of a supplier or an access.",
+      "description": null,
       "url": "/hotelx/reference/inputobjects/settingsbaseinput"
     },
     {
       "name": "StatsRequest",
-      "description": "Contains internal information.",
+      "description": null,
       "url": "/hotelx/reference/objects/statsrequest"
     },
     {
       "name": "StatAccess",
-      "description": "",
+      "description": null,
       "url": "/hotelx/reference/objects/stataccess"
     },
     {
       "name": "Pax",
-      "description": "Specifies the age pax. The range of what is considered an adult, infant or baby is particular to each supplier.",
+      "description": null,
       "url": "/hotelx/reference/objects/pax"
     },
     {
       "name": "Occupancy",
-      "description": "Information about occupancy.",
+      "description": null,
       "url": "/hotelx/reference/objects/occupancy"
     },
     {
       "name": "Room",
-      "description": "Contains the room information of the option returned.",
+      "description": null,
       "url": "/hotelx/reference/objects/room"
     },
     {
       "name": "Supplement",
-      "description": "Supplement that it can be or its already added to the option returned. Contains all the information about the supplement.",
+      "description": null,
       "url": "/hotelx/reference/objects/supplement"
     },
     {
       "name": "Bed",
-      "description": "Contains information about a bed.",
+      "description": null,
       "url": "/hotelx/reference/objects/bed"
     },
     {
       "name": "CancelPenalty",
-      "description": "Contains information for cancellation penalities..",
+      "description": null,
       "url": "/hotelx/reference/objects/cancelpenalty"
     },
     {
       "name": "BookingRoom",
-      "description": "",
+      "description": null,
       "url": "/hotelx/reference/objects/bookingroom"
     },
     {
       "name": "TimeoutInput",
-      "description": "",
+      "description": null,
       "url": "/hotelx/reference/inputobjects/timeoutinput"
     },
     {
       "name": "HotelXBusinessRulesInput",
-      "description": "List of business rules to use as filter on the options.",
+      "description": null,
       "url": "/hotelx/reference/inputobjects/hotelxbusinessrulesinput"
     },
     {
       "name": "BookRoomInput",
-      "description": "Input BookRoom contains list of pax and the room's reference.",
+      "description": null,
       "url": "/hotelx/reference/inputobjects/bookroominput"
     },
     {
       "name": "ExpireDateInput",
-      "description": "The card expiration date",
+      "description": null,
       "url": "/hotelx/reference/inputobjects/expiredateinput"
     },
     {
       "name": "BookPaxInput",
-      "description": "Input BookPax contains basic information abaout pax suach as name, surname and age.",
+      "description": null,
       "url": "/hotelx/reference/inputobjects/bookpaxinput"
     }
   ],
