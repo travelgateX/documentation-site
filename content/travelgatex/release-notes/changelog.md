@@ -12,6 +12,86 @@ To make it easier for users and contributors to see precisely what notable chang
 
 {{% alert theme="info" %}}All notable changes on TravelgateX platform will be documented in this page.{{% /alert %}}
 
+## 2019-05-23
+{{% release-notes-container type="c"%}}
+- [GraphQL Schema updated.](/travelgatex/release-notes/graphql-schema-changes/#2019-05-23)
+- Accesses, Clients and Suppliers querys chagend to the new entitiesx client
+{{% /release-notes-container %}}
+
+{{% release-notes-container type="f"%}}
+- flow cascade permissions
+- code field from accessData to match with query response
+{{% /release-notes-container %}}
+
+{{% release-notes-container type="a"%}}
+- CatalogAdviseMessage to extern schema
+{{% /release-notes-container %}}
+
+## 2019-05-16
+{{% release-notes-container type="c"%}}
+- [GraphQL Schema updated.](/travelgatex/release-notes/graphql-schema-changes/#2019-05-16)
+{{% /release-notes-container %}}
+
+## 2019-05-06
+{{% release-notes-container type="c"%}}
+- [GraphQL Schema updated.](/travelgatex/release-notes/graphql-schema-changes/#2019-05-06)
+{{% /release-notes-container %}}
+
+## 2019-05-02
+{{% release-notes-container type="c"%}}
+- [GraphQL Schema updated.](/travelgatex/release-notes/graphql-schema-changes/#2019-05-02)
+{{% /release-notes-container %}}
+
+## 2019-04-30
+{{% release-notes-container type="c"%}}
+- [GraphQL Schema updated.](/travelgatex/release-notes/graphql-schema-changes/#2019-04-30)
+{{% /release-notes-container %}}
+
+## 2019-04-24
+{{% release-notes-container type="c"%}}
+- [GraphQL Schema updated.](/travelgatex/release-notes/graphql-schema-changes/#2019-04-24)
+{{% /release-notes-container %}}
+
+## 2019-04-08
+{{% release-notes-container type="c"%}}
+- [GraphQL Schema updated.](/travelgatex/release-notes/graphql-schema-changes/#2019-04-08)
+{{% /release-notes-container %}}
+
+## 2019-02-28
+{{% release-notes-container type="c"%}}
+- [GraphQL Schema updated.](/travelgatex/release-notes/graphql-schema-changes/#2019-02-28)
+{{% /release-notes-container %}}
+
+## 2019-02-14
+{{% release-notes-container type="c"%}}
+- [GraphQL Schema updated.](/travelgatex/release-notes/graphql-schema-changes/#2019-02-14)
+{{% /release-notes-container %}}
+
+## 2019-03-07
+{{% release-notes-container type="c"%}}
+- [GraphQL Schema updated.](/travelgatex/release-notes/graphql-schema-changes/#2019-03-07)
+{{% /release-notes-container %}}
+
+## 2019-02-20
+{{% release-notes-container type="c"%}}
+- [GraphQL Schema updated.](/travelgatex/release-notes/graphql-schema-changes/#2019-02-20)
+{{% /release-notes-container %}}
+
+{{% release-notes-container type="f"%}}
+- owner of default client
+- api-key permissions on hotlst
+{{% /release-notes-container %}}
+
+{{% release-notes-container type="a"%}}
+- image GCR
+- CreateOrgTemplate
+- Default client on addClient function
+{{% /release-notes-container %}}
+
+{{% release-notes-container type="r"%}}
+- Old org code format
+{{% /release-notes-container %}}
+
 ## 2019-02-11
 {{% release-notes-container type="c"%}}
 - [GraphQL Schema updated.](/travelgatex/release-notes/graphql-schema-changes/#2019-02-11)
@@ -19,6 +99,11 @@ To make it easier for users and contributors to see precisely what notable chang
 
 {{% release-notes-container type="c"%}}
 - Audit deprecated `loadFile` query
+{{% /release-notes-container %}}
+
+{{% release-notes-container type="a"%}}
+- SelectChildren function changed
+- Added org code
 {{% /release-notes-container %}}
 
 ## 2019-02-07
