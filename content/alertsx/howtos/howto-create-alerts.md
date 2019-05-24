@@ -1,7 +1,7 @@
 {
 "title": "Create Alert",
 "pagetitle": "Create alert",
-"description": "How to mutation about your alerts",
+"description": "How to perform mutations on your alerts",
 "icon": "fa-search-plus",
 "weight": 4,
 "alwaysopen": false,
@@ -66,7 +66,7 @@ This page shows you how to create Alerts using API or TravelgateX Web.
 
 You must choose a type alert to create it. The alert types are: Error rate, No traffic, Average time and Peak traffic.
 
-There are different ways to configure the alert types. Bellow are a references of some values of configuration to create alert needed.
+There are different ways to configure the alert types. Below there are references of some values of configuration to create the alert needed.
 
 ### Error rate alert
 WHAT IS NEEDED? | window | periodicity | percentage | minNumberRequests | to check | to compare
@@ -75,7 +75,7 @@ check by time frame     | w > 0 | p > 0 | pg >= 0 | mnr >= 0 | error codes | err
 check by requests number| w = 0 | p = 0 | pg >= 0 | mnr > 0 | error codes | error codes
 
 {{% alert theme="warning" %}}
-By default to check is all error codes excepts 0 and to compare is all error codes.
+By default, you may check and compare all error codes except for 0.
 {{% /alert %}}
 
 ### Average time alert
@@ -99,7 +99,7 @@ WHAT IS NEEDED? | window | periodicity | percentage | minNumberRequests | offset
 check by time frame  | w > 0 | p > 0 | pg = 0 | mnr >= 0 | o >= 0 | hw > 0
 
 
-Below are shown examples for different casuistry:
+Below you will find some examples for different casuistry:
 
 {{% graphiql-tabs %}}
 
