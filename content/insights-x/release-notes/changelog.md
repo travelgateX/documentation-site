@@ -12,6 +12,12 @@ tags = ["products-changelog"]
 
 Easily accessible log of notable changes to Insights-X
 
+## 2019-05-27
+
+{{% release-notes-container type="a"%}}
+* Added new fields in benchmark datasets: TravelgateX total availability, total bookings and total revenue.
+{{% /release-notes-container %}}
+
 ## 2019-04-11
 
 {{% release-notes-container type="a"%}}
