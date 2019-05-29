@@ -46,9 +46,9 @@ __fields__
 * **min_amount_booking_net (NUMBER).** Net amount of cheapest booking for above key.
 * **max_amount_booking_net (NUMBER).** Net amount of most expensive booking for above key.
 * **tot_amount_booking_net (NUMBER).** Total net amount of confirmed bookings for above key.
-* **min_amount_booking_net (NUMBER).** Amount of cheapest booking for above key when we don't know if any commission is applied.
-* **max_amount_booking_net (NUMBER).** Amount of most expensive booking for above key when we don't know if any commission is applied.
-* **tot_amount_booking_net (NUMBER).** Total amount of confirmed bookings for above key when we don't know if any commission is applied.
+* **min_amount_booking_unknown (NUMBER).** Amount of cheapest booking for above key when we don't know if any commission is applied.
+* **max_amount_booking_unknown (NUMBER).** Amount of most expensive booking for above key when we don't know if any commission is applied.
+* **tot_amount_booking_unknown (NUMBER).** Total amount of confirmed bookings for above key when we don't know if any commission is applied.
 * **hotels (STRUCT).** Repeated field that contains info about hotels for above key.
     * **code (STRING).** Hotel unique ID.
     * **search\_ok\_net (NUMBER).** Quantity of searches with available options for above key and hotel with net price available.
