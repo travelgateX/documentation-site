@@ -75,7 +75,7 @@ check by time frame     | w > 0 | p > 0 | pg >= 0 | mnr >= 0 | error codes | err
 check by requests number| w = 0 | p = 0 | pg >= 0 | mnr > 0 | error codes | error codes
 
 {{% alert theme="warning" %}}
-By default, you may check and compare all error codes except for 0.
+By default, you may check all error codes except for 0, and compare all error codes.
 {{% /alert %}}
 
 ### Average time alert
