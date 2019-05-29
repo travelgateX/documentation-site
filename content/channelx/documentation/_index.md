@@ -307,7 +307,7 @@ Sets up inventory information that should be followed with the structure Hotel >
                 <Rates>
                     <Rate Start = "2013-04-01" End = "2013-12-31">
                         <BaseByGuestAmts>
-                            <BaseByGuestAmt Type = "25" AmountAfterTax = "150.00"/>
+                            <BaseByGuestAmt Type = "25" AmountAfterTax = "80.00"/>
                         </BaseByGuestAmts>
                     </Rate>
                 </Rates>
@@ -324,7 +324,7 @@ Sets up inventory information that should be followed with the structure Hotel >
                     <Rate Start = "2013-04-01" End = "2013-12-31">
                         <BaseByGuestAmts>
                             <BaseByGuestAmt Type = "14" Code = "2-0-0" AmountAfterTax = "150.00"/>
-                            <BaseByGuestAmt Type = "14" Code = "3-0-0" AmountAfterTax = "180.00"/>
+                            <BaseByGuestAmt Type = "14" Code = "3-0-0" AmountAfterTax = "-1"/>
                         </BaseByGuestAmts>
                     </Rate>
                 </Rates>
@@ -387,7 +387,7 @@ Sets up inventory information that should be followed with the structure Hotel >
 | @AdjustUpIndicator			      | 0..1	  | Boolean	 | *DV*: **true**: the adjusted amount/percentage is added to the amount specified for the Base RatePlan to determine the Derived RateAmount. **false**: the adjusted amount or adjusted percentage is subtracted from the amount specified for the Base RatePlan to determine the Derived RatePlan amount |
 | Rate/BaseByGuestAmts               | 0..1 | | Different types of price can come in the same BaseByGuestAmts element.	             |
 | ../BaseByGuestAmt                | 1..n |	|					 |                                                                       | 
-| @AmountAfterTax			          | 1	      | Decimal	 | Total amount for the @NumberOfGuests indicated per day. This amount doesn't include tax	|
+| @AmountAfterTax			          | 1	      | Decimal	 | Total amount for the @NumberOfGuests indicated per day. This amount doesn't include tax. When value is *-1*, price should be deleted from the system.	|
 | @NumberOfGuests			          | 0..1	  | Integer	 | How many adults are indicated per day. If @NumberOfGuests is not informed then @Type must be informed. The maximum @NumberOfGuests is the standard occupancy of the room       |
 | @Type  				                | 0..1	  | Integer	 | If amounts are per Room or per Occupancy instead of per Pax. **@Type=25**: price is per Room. **@Type=14**: price is per occupancy, @Code is mandatory, AdditionalGuestAmounts are not allowed |
 | @Code  				                | 0..1	  | String   | Mandatory if **@Type=14**.                                  |
@@ -430,7 +430,7 @@ Sets up inventory information that should be followed with the structure Hotel >
                 <StatusApplicationControl Start = "2013-12-20" End = "2013-12-25" RatePlanCode = "BAR" InvCode = "APT" InvType = "ROOM"/>
                 <LengthsOfStay ArrivalDateBased = "true">
                     <LengthOfStay Time = "2" TimeUnit = "Day" MinMaxMessageType = "MinLOS"/>
-                    <LengthOfStay Time = "8" TimeUnit = "Day" MinMaxMessageType = "MaxLOS"/>
+                    <LengthOfStay Time = "-1" TimeUnit = "Day" MinMaxMessageType = "MaxLOS"/>
                 </LengthsOfStay>
                 <RestrictionStatus SellThroughOpenIndicator = "false" MinAdvancedBookingOffset = "5"/>
             </AvailStatusMessage>
@@ -460,14 +460,14 @@ Sets up inventory information that should be followed with the structure Hotel >
 | AvailStatusMessage/LengthsOfStay                 | 0..1    |	         |							                                                         |
 | @ArrivalDateBased			        | 0..1	  | Boolean	 | **true**: the Minimum and Maximum Stay is checked ONLY the first day of the availability. **false or null**: the Minimum and Maximum Stay is checked all the availability days. If both values are needed, two AvailStatusMessage will be sent. |
 | ../LengthOfStay                  | 1..2    |         |						                                                             |
-| @Time 				                | 1	      | Integer	| Indicates the number of @TimeUnit for this stay	                     |
+| @Time 				                | 1	      | Integer	| Indicates the number of @TimeUnit for this stay. When value is *-1*, condition should be deleted from the system.	                     |
 | @TimeUnit				              | 1	      | String	| *N*: Day 						                                                   |
 | @MinMaxMessageType			      | 1	      | String	| *N*: MinLOS, MaxLOS. Minimum or maximum stay                           |
 | AvailStatusMessage/RestrictionStatus             | 0..1    |         |							                                                           |
 | @Status				                | 0..1	  | String	| *N*: Open Close	                                                       |
 | @Restriction				          | 0..1	  | String	| *N*: Master, Arrival, Departure.                                       |  
-| @MinAdvancedBookingOffset		  | 0..1	  | Integer	| Minimum number of days before the check-in date to be available to be booked. This restriction is usually used to offer discounts on early bookings.                               |
-| @MaxAdvancedBookingOffset		  | 0..1	  | Integer	| Maximum number of days before the check-in date to be available to be booked. This restriction is usually used to offer last minute discounts on unsold inventory.                 |
+| @MinAdvancedBookingOffset		  | 0..1	  | Integer	| Minimum number of days before the check-in date to be available to be booked. This restriction is usually used to offer discounts on early bookings. When value is *-1*, condition should be deleted from the system.                             |
+| @MaxAdvancedBookingOffset		  | 0..1	  | Integer	| Maximum number of days before the check-in date to be available to be booked. This restriction is usually used to offer last minute discounts on unsold inventory. When value is *-1*, condition should be deleted from the system.               |
 | @SellThroughOpenIndicator		  | 0..1	  | Boolean	| *BR*. Room-RatePlan can be sold with no limit if @Status is Open  |
 ## Responses
 Each request should provide a response for the same type of element that has been sent. For example, if a *HotelRatePlanNotif* request is received, a *HotelRatePlanNotif* response should be sent and so on.
