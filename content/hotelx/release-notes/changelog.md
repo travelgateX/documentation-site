@@ -13,6 +13,10 @@ tags = ["products-changelog"]
 Easily accessible log of notable changes to HotelX API
 
 {{% alert theme="info" %}}All notable changes in our platform will be documented on this page.{{% /alert %}}
+## 2019-05-27
+{{% release-notes-container type="a"%}}
+- Added searchPrice in Quote and quotePrice in Book
+{{% /release-notes-container %}}
 
 ## 2019-05-13
 {{% release-notes-container type="f"%}}
