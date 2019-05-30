@@ -24,7 +24,7 @@ DV = Only used for: 'Derived Rates'\
 N = Names allowed for a specific element
 
 ## HotelRatePlanInventoryNotif
-Sets up inventory information that should be followed with the structure Hotel > Rate > Room.
+Sets up inventory information that should be followed by the structure Hotel > Rate > Room.
 
 ```xml
 <HotelRatePlanInventoryNotif xmlns = "http://schemas.xmltravelgate.com/hubpush/provider/2012/10">
