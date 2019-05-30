@@ -14,6 +14,173 @@ The GraphQL schema change log is a list of recent and upcoming changes to our Gr
 
 Check out this list of new releases and changes applied on the **TravelgateX GraphQL API**.
 
+## 2019-05-30
+
+✅  Description
+
+`Configuration for AVERAGE_TIME.
+Average time is used to verify requests times.
+There are 3 options:
+- OPTION 1: Can verify average time traffic of a time frame and compare it with an other time frame. (window and historical window) Must set field window and historical windows higher than 0.
+- OPTION 2: Can verify average time traffic of a time frame and compare it with the value max_average. Must set window higher than 0.
+- OPTION 3: Can verify average time traffic of a specific number of requests and compare it with the value max_average. Must set window as 0 and minNumRequests higher than 0.`
+
+on type `AlertUpdateConfigurationInputAverageTime` has changed to
+
+`Configuration for AVERAGE_TIME.
+Average time is used to verify requests times.
+There are 3 options:
+- OPTION 1: Can verify average time traffic of a time frame and compare it with an other time frame. (window and historical window) Must set field window and historical windows higher than 0.
+- OPTION 2: Can verify average time traffic of a time frame and compare it with the value max_average. Must set window higher than 0.
+- OPTION 3: Can verify average time traffic of a specific number of requests and compare it with the value max_average. Must set window as 0 and minNumRequests higher than 0.`
+
+✅  Input field `AlertUpdateConfigurationInputAverageTime.minNumberRequests` description changed from
+
+`OPTION 1: defines the minimum number of requests must be in our historical Data before cheking the alert.
+OPTION 2: defines the minimum number of requests must be in the window time frame to check the alert.`
+
+to
+
+`OPTION 1: defines the minimum number of requests must be in our historical Data before cheking the alert.
+OPTION 2: defines the minimum number of requests must be in the window time frame to check the alert.`
+
+✅  Description
+
+`Configuration update for error rate alert type.
+Error rate alert is used to verify traffic comparing its error codes.
+Ther are to options.
+- OPTION 1: Can verify traffic of a time frame. Set window field higher than 0.
+- OPTION 2: Can verify traffic of a specific number of requests. Set window fild as 0 and minNumRequest higher than 0.`
+
+on type `AlertUpdateConfigurationInputErrorRate` has changed to
+
+`Configuration update for error rate alert type.
+Error rate alert is used to verify traffic comparing its error codes.
+Ther are to options.
+- OPTION 1: Can verify traffic of a time frame. Set window field higher than 0.
+- OPTION 2: Can verify traffic of a specific number of requests. Set window fild as 0 and minNumRequest higher than 0.`
+
+✅  Input field `AlertUpdateConfigurationInputErrorRate.minNumberRequests`
+description changed from
+
+`OPTION 1: defines the minimum number of requests must be in our historical Data before cheking the alert.
+OPTION 2: defines the minimum number of requests must be in the window time frame to check the alert.`
+
+to
+
+`OPTION 1: defines the minimum number of requests must be in our historical Data before cheking the alert.
+OPTION 2: defines the minimum number of requests must be in the window time frame to check the alert.`
+
+✅  Description
+
+`Confiuration update for NO_TRAFFIC alert type.
+No traffic alert is used to verify if there is traffic according to the parameters of the alert.`
+
+on type `AlertUpdateConfigurationInputNoTraffic` has changed to
+
+`Confiuration update for NO_TRAFFIC alert type.
+No traffic alert is used to verify if there is traffic according to the parameters of the alert.`
+
+✅  Description
+
+`Configuration for PEAK_TRAFFIC alert type.
+Peak traffic is used to verify traffic comparing volum of requests between to time frame (window and historical window) .`
+
+on type `AlertConfigurationInputPeakTraffic` has changed to
+
+`Configuration for PEAK_TRAFFIC alert type.
+Peak traffic is used to verify traffic comparing volum of requests between to time frame (window and historical window) . `
+✅  Description
+
+`Configuration for AVERAGE_TIME.
+Average time is used to verify requests times.
+There are 3 options:
+- OPTION 1: Can verify average time traffic of a time frame and compare it with an other time frame. (window and historical window) Must set field window and historical windows higher than 0.
+- OPTION 2: Can verify average time traffic of a time frame and compare it with the value max_average. Must set window higher than 0.
+- OPTION 3: Can verify average time traffic of a specific number of requests and compare it with the value max_average. Must set window as 0 and minNumRequests higher than 0.`
+
+on type `AlertConfigurationInputAverageTime` has changed to
+
+`Configuration for AVERAGE_TIME.
+Average time is used to verify requests times.
+There are 3 options:
+- OPTION 1: Can verify average time traffic of a time frame and compare it with an other time frame. (window and historical window) Must set field window and historical windows higher than 0.
+- OPTION 2: Can verify average time traffic of a time frame and compare it with the value max_average. Must set window higher than 0.
+- OPTION 3: Can verify average time traffic of a specific number of requests and compare it with the value max_average. Must set window as 0 and minNumRequests higher than 0.`
+
+✅  Input field `AlertConfigurationInputAverageTime.minNumberRequests` description changed from
+
+`OPTION 1: defines the minimum number of requests must be in our historical Data before cheking the alert.
+OPTION 2: defines the minimum number of requests must be in the window time frame to check the alert.`
+
+to
+
+`OPTION 1: defines the minimum number of requests must be in our historical Data before cheking the alert.
+OPTION 2: defines the minimum number of requests must be in the window time frame to check the alert.`
+
+✅  Description
+
+`Configuration for ERROR_RATE alert type.
+Error rate alert is used to verify traffic comparing its error codes.
+Ther are two options.
+- OPTION 1: Can verify traffic of a time frame. Must set window field higher than 0.
+- OPTION 2: Can verify traffic of a specific number of requests. Must set window field as 0 and minNumRequest higher than 0.`
+
+on type `AlertConfigurationInputErrorRate` has changed to
+
+`Configuration for ERROR_RATE alert type.
+Error rate alert is used to verify traffic comparing its error codes.
+Ther are two options.
+- OPTION 1: Can verify traffic of a time frame. Must set window field higher than 0.
+- OPTION 2: Can verify traffic of a specific number of requests. Must set window field as 0 and minNumRequest higher than 0.`
+
+✅  Input field `AlertConfigurationInputErrorRate.minNumberRequests` description changed from
+
+`OPTION 1: defines the minimum number of requests must be in our historical Data before cheking the alert.
+OPTION 2: defines the minimum number of requests must be in the window time frame to check the alert.`
+
+to
+
+`OPTION 1: defines the minimum number of requests must be in our historical Data before cheking the alert.
+OPTION 2: defines the minimum number of requests must be in the window time frame to check the alert.`
+
+✅  Description
+
+`Configuration for NO_TRAFFIC alert type.
+No traffic alert is used to verify if there is traffic according to the parameters of the alert.`
+
+on type `AlertConfigurationInputNoTraffic` has changed to
+
+`Configuration for NO_TRAFFIC alert type.
+No traffic alert is used to verify if there is traffic according to the parameters of the alert.`
+
+✅  Description
+
+`Input delta price, indicates price variation permitted by the client
+An error will be returned if the new price does not abide to DeltaPrice. If DeltaPrice is not sent and the integration implements it, we assume that the price range is 0 and the process will continue
+(price is lower or equal to the price showed in valuation).
+This field is implemented if it’s native to the supplier or if another availability/valuation request needs to be done in Reservation. In case the supplier blocks the option in valuation, reservation
+will be done automatically in reservation method.`
+
+on type `DeltaPriceInput` has changed to
+
+`Input delta price, indicates price variation permitted by the client
+An error will be returned if the new price does not abide to DeltaPrice. If DeltaPrice is not sent and the integration implements it, we assume that the price range is 0 and the process will continue
+(price is lower or equal to the price showed in valuation).
+This field is implemented if it’s native to the supplier or if another availability/valuation request needs to be done in Reservation. In case the supplier blocks the option in valuation, reservation
+will be done automatically in reservation method.`
+
+✅  Field `GeonameData.type` description changed from
+`Indicates destination type, zone, city or country`
+
+ to
+
+ `Hierarchy returned by geonames' service. It might change depending on the hotel and its location.`
+
+✅  Argument `types: [OperationType!]` added to field `APIData.operations`
+
+✅  Argument `types: [OperationType!]` added to field `AdminQuery.operations`
+
 ## 2019-05-23
 
 🛑  Input field `AlertUpdateConfigurationInputPeakTraffic.group` changed type from `AlertGroupInput` to `[AlertGroupInput!]`
