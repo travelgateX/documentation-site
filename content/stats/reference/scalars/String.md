@@ -50,6 +50,11 @@
       "url": "/stats/reference/objects/accessedge"
     },
     {
+      "name": "ClientEdge",
+      "description": null,
+      "url": "/stats/reference/objects/clientedge"
+    },
+    {
       "name": "OrganizationData",
       "description": null,
       "url": "/stats/reference/objects/organizationdata"
@@ -123,11 +128,6 @@
       "name": "SupplierEdge",
       "description": null,
       "url": "/stats/reference/objects/supplieredge"
-    },
-    {
-      "name": "ClientEdge",
-      "description": null,
-      "url": "/stats/reference/objects/clientedge"
     },
     {
       "name": "GroupEdge",

@@ -5,6 +5,11 @@
   "fields": null,
   "requireby": [
     {
+      "name": "StatsFilterInput",
+      "description": null,
+      "url": "/stats/reference/inputobjects/statsfilterinput"
+    },
+    {
       "name": "PageInfo",
       "description": null,
       "url": "/stats/reference/objects/pageinfo"
@@ -28,6 +33,11 @@
       "name": "Provider",
       "description": null,
       "url": "/stats/reference/objects/provider"
+    },
+    {
+      "name": "ClientFilter",
+      "description": null,
+      "url": "/stats/reference/inputobjects/clientfilter"
     },
     {
       "name": "OrganizationData",
@@ -68,6 +78,11 @@
       "name": "ClientData",
       "description": null,
       "url": "/stats/reference/objects/clientdata"
+    },
+    {
+      "name": "SupplierFilter",
+      "description": null,
+      "url": "/stats/reference/inputobjects/supplierfilter"
     }
   ],
   "enumValues": null,

@@ -5,6 +5,13 @@
   "fields": [
     {
       "typeString": "[ID!]",
+      "name": "owners",
+      "url": "/travelgatex/reference/scalars/id",
+      "description": null,
+      "args": null
+    },
+    {
+      "typeString": "[ID!]",
       "name": "groups",
       "url": "/travelgatex/reference/scalars/id",
       "description": null,
@@ -70,6 +77,13 @@
       "typeString": "DateTime!",
       "name": "to",
       "url": "/travelgatex/reference/scalars/datetime",
+      "description": null,
+      "args": null
+    },
+    {
+      "typeString": "Boolean",
+      "name": "retrieveAssets",
+      "url": "/travelgatex/reference/scalars/boolean",
       "description": null,
       "args": null
     }

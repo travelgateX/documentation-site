@@ -45,6 +45,22 @@
       "name": "cache",
       "url": "/travelgatex/reference/scalars/boolean",
       "description": null,
+      "isDeprecated": true,
+      "args": null,
+      "deprecationReason": "Added new field trafficType.",
+      "descriptionSplitted": {
+        "date": "2019-04-03",
+        "first": "deprecated from",
+        "second": "Added new field trafficType."
+      },
+      "deprecationDate": "2019-04-03",
+      "typeName": "OperationDetailed"
+    },
+    {
+      "typeString": "TrafficType!",
+      "name": "trafficType",
+      "url": "/travelgatex/reference/enums/traffictype",
+      "description": null,
       "isDeprecated": false,
       "args": null
     }

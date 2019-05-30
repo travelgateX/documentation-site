@@ -55,6 +55,11 @@
       "url": "/paymentx/reference/objects/provider"
     },
     {
+      "name": "ClientFilter",
+      "description": null,
+      "url": "/paymentx/reference/inputobjects/clientfilter"
+    },
+    {
       "name": "OrganizationData",
       "description": null,
       "url": "/paymentx/reference/objects/organizationdata"
@@ -63,6 +68,11 @@
       "name": "ClientData",
       "description": null,
       "url": "/paymentx/reference/objects/clientdata"
+    },
+    {
+      "name": "SupplierFilter",
+      "description": null,
+      "url": "/paymentx/reference/inputobjects/supplierfilter"
     }
   ],
   "enumValues": null,

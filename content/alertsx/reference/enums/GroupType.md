@@ -18,11 +18,6 @@
       "name": "OrganizationData",
       "description": null,
       "url": "/alertsx/reference/objects/organizationdata"
-    },
-    {
-      "name": "AlertGroupInput",
-      "description": null,
-      "url": "/alertsx/reference/inputobjects/alertgroupinput"
     }
   ],
   "enumValues": [

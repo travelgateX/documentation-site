@@ -65,7 +65,38 @@
       "url": "/mappea/reference/objects/accessconnection",
       "description": null,
       "isDeprecated": false,
-      "args": null
+      "args": [
+        {
+          "typeString": "Int",
+          "name": "first",
+          "url": "/mappea/reference/scalars/int",
+          "description": null
+        },
+        {
+          "typeString": "Int",
+          "name": "last",
+          "url": "/mappea/reference/scalars/int",
+          "description": null
+        },
+        {
+          "typeString": "String",
+          "name": "before",
+          "url": "/mappea/reference/scalars/string",
+          "description": null
+        },
+        {
+          "typeString": "String",
+          "name": "after",
+          "url": "/mappea/reference/scalars/string",
+          "description": null
+        },
+        {
+          "typeString": "AccessFilter",
+          "name": "filter",
+          "url": "/mappea/reference/inputobjects/accessfilter",
+          "description": null
+        }
+      ]
     },
     {
       "typeString": "Organization",
@@ -104,6 +135,45 @@
           "typeString": "String",
           "name": "after",
           "url": "/mappea/reference/scalars/string",
+          "description": null
+        }
+      ]
+    },
+    {
+      "typeString": "ClientConnection",
+      "name": "clients",
+      "url": "/mappea/reference/objects/clientconnection",
+      "description": null,
+      "isDeprecated": false,
+      "args": [
+        {
+          "typeString": "Int",
+          "name": "first",
+          "url": "/mappea/reference/scalars/int",
+          "description": null
+        },
+        {
+          "typeString": "Int",
+          "name": "last",
+          "url": "/mappea/reference/scalars/int",
+          "description": null
+        },
+        {
+          "typeString": "String",
+          "name": "before",
+          "url": "/mappea/reference/scalars/string",
+          "description": null
+        },
+        {
+          "typeString": "String",
+          "name": "after",
+          "url": "/mappea/reference/scalars/string",
+          "description": null
+        },
+        {
+          "typeString": "ClientFilter",
+          "name": "filter",
+          "url": "/mappea/reference/inputobjects/clientfilter",
           "description": null
         }
       ]

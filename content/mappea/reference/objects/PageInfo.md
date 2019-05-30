@@ -48,6 +48,11 @@
       "url": "/mappea/reference/objects/groupconnection"
     },
     {
+      "name": "ClientConnection",
+      "description": null,
+      "url": "/mappea/reference/objects/clientconnection"
+    },
+    {
       "name": "MemberConnection",
       "description": null,
       "url": "/mappea/reference/objects/memberconnection"
@@ -66,11 +71,6 @@
       "name": "SupplierConnection",
       "description": null,
       "url": "/mappea/reference/objects/supplierconnection"
-    },
-    {
-      "name": "ClientConnection",
-      "description": null,
-      "url": "/mappea/reference/objects/clientconnection"
     },
     {
       "name": "RoleConnection",

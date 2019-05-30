@@ -65,7 +65,38 @@
       "url": "/alertsx/reference/objects/accessconnection",
       "description": null,
       "isDeprecated": false,
-      "args": null
+      "args": [
+        {
+          "typeString": "Int",
+          "name": "first",
+          "url": "/alertsx/reference/scalars/int",
+          "description": null
+        },
+        {
+          "typeString": "Int",
+          "name": "last",
+          "url": "/alertsx/reference/scalars/int",
+          "description": null
+        },
+        {
+          "typeString": "String",
+          "name": "before",
+          "url": "/alertsx/reference/scalars/string",
+          "description": null
+        },
+        {
+          "typeString": "String",
+          "name": "after",
+          "url": "/alertsx/reference/scalars/string",
+          "description": null
+        },
+        {
+          "typeString": "AccessFilter",
+          "name": "filter",
+          "url": "/alertsx/reference/inputobjects/accessfilter",
+          "description": null
+        }
+      ]
     },
     {
       "typeString": "Organization",
@@ -104,6 +135,45 @@
           "typeString": "String",
           "name": "after",
           "url": "/alertsx/reference/scalars/string",
+          "description": null
+        }
+      ]
+    },
+    {
+      "typeString": "ClientConnection",
+      "name": "clients",
+      "url": "/alertsx/reference/objects/clientconnection",
+      "description": null,
+      "isDeprecated": false,
+      "args": [
+        {
+          "typeString": "Int",
+          "name": "first",
+          "url": "/alertsx/reference/scalars/int",
+          "description": null
+        },
+        {
+          "typeString": "Int",
+          "name": "last",
+          "url": "/alertsx/reference/scalars/int",
+          "description": null
+        },
+        {
+          "typeString": "String",
+          "name": "before",
+          "url": "/alertsx/reference/scalars/string",
+          "description": null
+        },
+        {
+          "typeString": "String",
+          "name": "after",
+          "url": "/alertsx/reference/scalars/string",
+          "description": null
+        },
+        {
+          "typeString": "ClientFilter",
+          "name": "filter",
+          "url": "/alertsx/reference/inputobjects/clientfilter",
           "description": null
         }
       ]

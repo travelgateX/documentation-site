@@ -65,7 +65,38 @@
       "url": "/travelgatex/reference/objects/accessconnection",
       "description": null,
       "isDeprecated": false,
-      "args": null
+      "args": [
+        {
+          "typeString": "Int",
+          "name": "first",
+          "url": "/travelgatex/reference/scalars/int",
+          "description": null
+        },
+        {
+          "typeString": "Int",
+          "name": "last",
+          "url": "/travelgatex/reference/scalars/int",
+          "description": null
+        },
+        {
+          "typeString": "String",
+          "name": "before",
+          "url": "/travelgatex/reference/scalars/string",
+          "description": null
+        },
+        {
+          "typeString": "String",
+          "name": "after",
+          "url": "/travelgatex/reference/scalars/string",
+          "description": null
+        },
+        {
+          "typeString": "AccessFilter",
+          "name": "filter",
+          "url": "/travelgatex/reference/inputobjects/accessfilter",
+          "description": null
+        }
+      ]
     },
     {
       "typeString": "Organization",
@@ -104,6 +135,45 @@
           "typeString": "String",
           "name": "after",
           "url": "/travelgatex/reference/scalars/string",
+          "description": null
+        }
+      ]
+    },
+    {
+      "typeString": "ClientConnection",
+      "name": "clients",
+      "url": "/travelgatex/reference/objects/clientconnection",
+      "description": null,
+      "isDeprecated": false,
+      "args": [
+        {
+          "typeString": "Int",
+          "name": "first",
+          "url": "/travelgatex/reference/scalars/int",
+          "description": null
+        },
+        {
+          "typeString": "Int",
+          "name": "last",
+          "url": "/travelgatex/reference/scalars/int",
+          "description": null
+        },
+        {
+          "typeString": "String",
+          "name": "before",
+          "url": "/travelgatex/reference/scalars/string",
+          "description": null
+        },
+        {
+          "typeString": "String",
+          "name": "after",
+          "url": "/travelgatex/reference/scalars/string",
+          "description": null
+        },
+        {
+          "typeString": "ClientFilter",
+          "name": "filter",
+          "url": "/travelgatex/reference/inputobjects/clientfilter",
           "description": null
         }
       ]

@@ -440,6 +440,16 @@
       "url": "/travelgatex/reference/inputobjects/updatememberinput"
     },
     {
+      "name": "GrantPermissionsInput",
+      "description": null,
+      "url": "/travelgatex/reference/inputobjects/grantpermissionsinput"
+    },
+    {
+      "name": "ClonePermissionsInput",
+      "description": null,
+      "url": "/travelgatex/reference/inputobjects/clonepermissionsinput"
+    },
+    {
       "name": "UpdateGroupInput",
       "description": null,
       "url": "/travelgatex/reference/inputobjects/updategroupinput"
@@ -490,9 +500,9 @@
       "url": "/travelgatex/reference/inputobjects/paymentxstoredcardinput"
     },
     {
-      "name": "AlertUpdateInput",
-      "description": null,
-      "url": "/travelgatex/reference/inputobjects/alertupdateinput"
+      "name": "AlertInput",
+      "description": "Alert information. Only one configuration has to be set at once.",
+      "url": "/travelgatex/reference/inputobjects/alertinput"
     },
     {
       "name": "EmailInput",

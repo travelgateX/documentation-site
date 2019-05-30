@@ -70,6 +70,11 @@
       "url": "/alertsx/reference/objects/provider"
     },
     {
+      "name": "ClientFilter",
+      "description": null,
+      "url": "/alertsx/reference/inputobjects/clientfilter"
+    },
+    {
       "name": "OrganizationData",
       "description": null,
       "url": "/alertsx/reference/objects/organizationdata"
@@ -78,6 +83,11 @@
       "name": "ClientData",
       "description": null,
       "url": "/alertsx/reference/objects/clientdata"
+    },
+    {
+      "name": "SupplierFilter",
+      "description": null,
+      "url": "/alertsx/reference/inputobjects/supplierfilter"
     },
     {
       "name": "AlertInput",

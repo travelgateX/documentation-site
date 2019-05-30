@@ -18,6 +18,13 @@
       "args": null
     },
     {
+      "typeString": "[ID]",
+      "name": "entityIDs",
+      "url": "/travelgatex/reference/scalars/id",
+      "description": null,
+      "args": null
+    },
+    {
       "typeString": "[ID!]",
       "name": "owner",
       "url": "/travelgatex/reference/scalars/id",

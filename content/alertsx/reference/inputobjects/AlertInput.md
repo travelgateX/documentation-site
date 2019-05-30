@@ -53,10 +53,10 @@
       "args": null
     },
     {
-      "typeString": "Email!",
-      "name": "editor",
-      "url": "/alertsx/reference/scalars/email",
-      "description": "Member editor",
+      "typeString": "ID!",
+      "name": "group",
+      "url": "/alertsx/reference/scalars/id",
+      "description": "Alert location group",
       "args": null
     }
   ],

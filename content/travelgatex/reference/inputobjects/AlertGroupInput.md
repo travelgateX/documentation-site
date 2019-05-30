@@ -11,13 +11,6 @@
       "args": null
     },
     {
-      "typeString": "GroupType!",
-      "name": "type",
-      "url": "/travelgatex/reference/enums/grouptype",
-      "description": null,
-      "args": null
-    },
-    {
       "typeString": "ComercialType!",
       "name": "comercialType",
       "url": "/travelgatex/reference/enums/comercialtype",

@@ -480,6 +480,11 @@
       "url": "/travelgatex/reference/objects/hoteloptionquote"
     },
     {
+      "name": "PriceChange",
+      "description": null,
+      "url": "/travelgatex/reference/objects/pricechange"
+    },
+    {
       "name": "CriteriaBookingReferencesInput",
       "description": null,
       "url": "/travelgatex/reference/inputobjects/criteriabookingreferencesinput"

@@ -88,10 +88,10 @@
       "args": null
     },
     {
-      "typeString": "[AlertGroupInput!]!",
+      "typeString": "[AlertGroupInput!]",
       "name": "group",
       "url": "/alertsx/reference/inputobjects/alertgroupinput",
-      "description": "Possibility to filter traffic by groups. It is mandatory to set an ORG group type. Only ORG, FOLDER and PRODUCT group types are allowed",
+      "description": "Must filter traffic by group. Only PRODUCT group type is allowed",
       "args": null
     },
     {

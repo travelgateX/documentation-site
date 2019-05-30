@@ -22,6 +22,11 @@
   ],
   "requireby": [
     {
+      "name": "SupplierData",
+      "description": null,
+      "url": "/mappea/reference/objects/supplierdata"
+    },
+    {
       "name": "OrganizationData",
       "description": null,
       "url": "/mappea/reference/objects/organizationdata"

@@ -48,6 +48,11 @@
       "name": "GroupData",
       "description": null,
       "url": "/mappea/reference/objects/groupdata"
+    },
+    {
+      "name": "SupplierFilter",
+      "description": null,
+      "url": "/mappea/reference/inputobjects/supplierfilter"
     }
   ],
   "enumValues": null,

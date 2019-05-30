@@ -85,6 +85,11 @@
       "url": "/travelgatex/reference/objects/profiledata"
     },
     {
+      "name": "HotelXHotelFilterInput",
+      "description": null,
+      "url": "/travelgatex/reference/inputobjects/hotelxhotelfilterinput"
+    },
+    {
       "name": "HotelSettingsInput",
       "description": null,
       "url": "/travelgatex/reference/inputobjects/hotelsettingsinput"
@@ -145,9 +150,19 @@
       "url": "/travelgatex/reference/interfaces/priceable"
     },
     {
+      "name": "PriceChange",
+      "description": null,
+      "url": "/travelgatex/reference/objects/pricechange"
+    },
+    {
       "name": "HotelRuntimeParameter",
       "description": null,
       "url": "/travelgatex/reference/objects/hotelruntimeparameter"
+    },
+    {
+      "name": "StatsFilterInput",
+      "description": null,
+      "url": "/travelgatex/reference/inputobjects/statsfilterinput"
     },
     {
       "name": "OperationDetailed",
@@ -193,6 +208,11 @@
       "name": "UpdateProfileInput",
       "description": null,
       "url": "/travelgatex/reference/inputobjects/updateprofileinput"
+    },
+    {
+      "name": "UpdateMemberInput",
+      "description": null,
+      "url": "/travelgatex/reference/inputobjects/updatememberinput"
     },
     {
       "name": "HotelXUpdateStatusData",

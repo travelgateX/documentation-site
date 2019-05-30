@@ -135,6 +135,16 @@
       "url": "/alertsx/reference/objects/provider"
     },
     {
+      "name": "AccessFilter",
+      "description": null,
+      "url": "/alertsx/reference/inputobjects/accessfilter"
+    },
+    {
+      "name": "ClientFilter",
+      "description": null,
+      "url": "/alertsx/reference/inputobjects/clientfilter"
+    },
+    {
       "name": "OrganizationData",
       "description": null,
       "url": "/alertsx/reference/objects/organizationdata"
@@ -170,6 +180,11 @@
       "url": "/alertsx/reference/objects/clientdata"
     },
     {
+      "name": "SupplierFilter",
+      "description": null,
+      "url": "/alertsx/reference/inputobjects/supplierfilter"
+    },
+    {
       "name": "Event",
       "description": "Event triggered",
       "url": "/alertsx/reference/objects/event"
@@ -180,9 +195,9 @@
       "url": "/alertsx/reference/objects/eventdata"
     },
     {
-      "name": "AlertUpdateInput",
-      "description": null,
-      "url": "/alertsx/reference/inputobjects/alertupdateinput"
+      "name": "AlertInput",
+      "description": "Alert information. Only one configuration has to be set at once.",
+      "url": "/alertsx/reference/inputobjects/alertinput"
     },
     {
       "name": "EmailInput",

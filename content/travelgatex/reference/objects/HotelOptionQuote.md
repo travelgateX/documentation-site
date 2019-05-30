@@ -28,6 +28,14 @@
       "args": null
     },
     {
+      "typeString": "PriceChange",
+      "name": "searchPrice",
+      "url": "/travelgatex/reference/objects/pricechange",
+      "description": null,
+      "isDeprecated": false,
+      "args": null
+    },
+    {
       "typeString": "CancelPolicy!",
       "name": "cancelPolicy",
       "url": "/travelgatex/reference/objects/cancelpolicy",

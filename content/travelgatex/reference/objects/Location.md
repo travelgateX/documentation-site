@@ -28,7 +28,7 @@
       "args": null
     },
     {
-      "typeString": "Country!",
+      "typeString": "Country",
       "name": "country",
       "url": "/travelgatex/reference/scalars/country",
       "description": null,
@@ -44,7 +44,7 @@
       "args": null
     },
     {
-      "typeString": "DestinationData!",
+      "typeString": "DestinationData",
       "name": "closestDestination",
       "url": "/travelgatex/reference/objects/destinationdata",
       "description": null,

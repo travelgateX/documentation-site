@@ -8,6 +8,11 @@
       "name": "CreateGroupInput",
       "description": null,
       "url": "/travelgatex/reference/inputobjects/creategroupinput"
+    },
+    {
+      "name": "UpdateGroupInput",
+      "description": null,
+      "url": "/travelgatex/reference/inputobjects/updategroupinput"
     }
   ],
   "enumValues": [

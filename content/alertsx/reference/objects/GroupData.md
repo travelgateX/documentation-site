@@ -167,6 +167,12 @@
           "description": null
         },
         {
+          "typeString": "String",
+          "name": "codeStartsWith",
+          "url": "/alertsx/reference/scalars/string",
+          "description": null
+        },
+        {
           "typeString": "GroupType",
           "name": "type",
           "url": "/alertsx/reference/enums/grouptype",
@@ -229,6 +235,57 @@
       "description": null,
       "isDeprecated": false,
       "args": null
+    },
+    {
+      "typeString": "GroupConnection",
+      "name": "siblings",
+      "url": "/alertsx/reference/objects/groupconnection",
+      "description": null,
+      "isDeprecated": false,
+      "args": [
+        {
+          "typeString": "[ID!]",
+          "name": "codes",
+          "url": "/alertsx/reference/scalars/id",
+          "description": null
+        },
+        {
+          "typeString": "GroupType",
+          "name": "type",
+          "url": "/alertsx/reference/enums/grouptype",
+          "description": null
+        },
+        {
+          "typeString": "Int",
+          "name": "first",
+          "url": "/alertsx/reference/scalars/int",
+          "description": null
+        },
+        {
+          "typeString": "Int",
+          "name": "last",
+          "url": "/alertsx/reference/scalars/int",
+          "description": null
+        },
+        {
+          "typeString": "String",
+          "name": "before",
+          "url": "/alertsx/reference/scalars/string",
+          "description": null
+        },
+        {
+          "typeString": "String",
+          "name": "after",
+          "url": "/alertsx/reference/scalars/string",
+          "description": null
+        },
+        {
+          "typeString": "String",
+          "name": "codeStartsWith",
+          "url": "/alertsx/reference/scalars/string",
+          "description": null
+        }
+      ]
     },
     {
       "typeString": "MemberConnection",

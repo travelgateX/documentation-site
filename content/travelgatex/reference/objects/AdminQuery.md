@@ -331,9 +331,21 @@
           "description": null
         },
         {
+          "typeString": "String",
+          "name": "codeStartsWith",
+          "url": "/travelgatex/reference/scalars/string",
+          "description": null
+        },
+        {
           "typeString": "GroupType",
           "name": "type",
           "url": "/travelgatex/reference/enums/grouptype",
+          "description": null
+        },
+        {
+          "typeString": "ID",
+          "name": "parentCode",
+          "url": "/travelgatex/reference/scalars/id",
           "description": null
         },
         {
@@ -501,6 +513,12 @@
         {
           "typeString": "OperationType",
           "name": "type",
+          "url": "/travelgatex/reference/enums/operationtype",
+          "description": null
+        },
+        {
+          "typeString": "[OperationType!]",
+          "name": "types",
           "url": "/travelgatex/reference/enums/operationtype",
           "description": null
         },

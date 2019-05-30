@@ -289,6 +289,51 @@
       ]
     },
     {
+      "typeString": "Member!",
+      "name": "grantPermissions",
+      "url": "/travelgatex/reference/objects/member",
+      "description": null,
+      "isDeprecated": false,
+      "args": [
+        {
+          "typeString": "GrantPermissionsInput!",
+          "name": "member",
+          "url": "/travelgatex/reference/inputobjects/grantpermissionsinput",
+          "description": null
+        }
+      ]
+    },
+    {
+      "typeString": "Member!",
+      "name": "revokePermissions",
+      "url": "/travelgatex/reference/objects/member",
+      "description": null,
+      "isDeprecated": false,
+      "args": [
+        {
+          "typeString": "GrantPermissionsInput!",
+          "name": "member",
+          "url": "/travelgatex/reference/inputobjects/grantpermissionsinput",
+          "description": null
+        }
+      ]
+    },
+    {
+      "typeString": "Member!",
+      "name": "clonePermissions",
+      "url": "/travelgatex/reference/objects/member",
+      "description": null,
+      "isDeprecated": false,
+      "args": [
+        {
+          "typeString": "ClonePermissionsInput!",
+          "name": "member",
+          "url": "/travelgatex/reference/inputobjects/clonepermissionsinput",
+          "description": null
+        }
+      ]
+    },
+    {
       "typeString": "Group!",
       "name": "updateGroup",
       "url": "/travelgatex/reference/objects/group",
@@ -299,12 +344,6 @@
           "typeString": "UpdateGroupInput!",
           "name": "group",
           "url": "/travelgatex/reference/inputobjects/updategroupinput",
-          "description": null
-        },
-        {
-          "typeString": "Method!",
-          "name": "method",
-          "url": "/travelgatex/reference/enums/method",
           "description": null
         }
       ]

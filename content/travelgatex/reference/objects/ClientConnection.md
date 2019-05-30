@@ -27,6 +27,11 @@
       "url": "/travelgatex/reference/objects/adminquery"
     },
     {
+      "name": "SupplierData",
+      "description": null,
+      "url": "/travelgatex/reference/objects/supplierdata"
+    },
+    {
       "name": "OrganizationData",
       "description": null,
       "url": "/travelgatex/reference/objects/organizationdata"

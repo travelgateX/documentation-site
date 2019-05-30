@@ -140,6 +140,16 @@
       "url": "/paymentx/reference/objects/provider"
     },
     {
+      "name": "AccessFilter",
+      "description": null,
+      "url": "/paymentx/reference/inputobjects/accessfilter"
+    },
+    {
+      "name": "ClientFilter",
+      "description": null,
+      "url": "/paymentx/reference/inputobjects/clientfilter"
+    },
+    {
       "name": "OrganizationData",
       "description": null,
       "url": "/paymentx/reference/objects/organizationdata"
@@ -173,6 +183,11 @@
       "name": "ClientData",
       "description": null,
       "url": "/paymentx/reference/objects/clientdata"
+    },
+    {
+      "name": "SupplierFilter",
+      "description": null,
+      "url": "/paymentx/reference/inputobjects/supplierfilter"
     },
     {
       "name": "PointOfSaleData",

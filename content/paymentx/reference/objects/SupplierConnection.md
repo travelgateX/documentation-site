@@ -35,6 +35,11 @@
       "name": "OrganizationData",
       "description": null,
       "url": "/paymentx/reference/objects/organizationdata"
+    },
+    {
+      "name": "ClientData",
+      "description": null,
+      "url": "/paymentx/reference/objects/clientdata"
     }
   ],
   "enumValues": null,

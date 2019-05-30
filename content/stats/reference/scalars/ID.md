@@ -60,6 +60,16 @@
       "url": "/stats/reference/objects/provider"
     },
     {
+      "name": "AccessFilter",
+      "description": null,
+      "url": "/stats/reference/inputobjects/accessfilter"
+    },
+    {
+      "name": "ClientFilter",
+      "description": null,
+      "url": "/stats/reference/inputobjects/clientfilter"
+    },
+    {
       "name": "OrganizationData",
       "description": null,
       "url": "/stats/reference/objects/organizationdata"
@@ -163,6 +173,11 @@
       "name": "ClientData",
       "description": null,
       "url": "/stats/reference/objects/clientdata"
+    },
+    {
+      "name": "SupplierFilter",
+      "description": null,
+      "url": "/stats/reference/inputobjects/supplierfilter"
     },
     {
       "name": "StatsInfo",

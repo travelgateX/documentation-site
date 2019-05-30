@@ -5,6 +5,13 @@
   "fields": [
     {
       "typeString": "[ID!]",
+      "name": "owners",
+      "url": "/stats/reference/scalars/id",
+      "description": null,
+      "args": null
+    },
+    {
+      "typeString": "[ID!]",
       "name": "groups",
       "url": "/stats/reference/scalars/id",
       "description": null,
@@ -70,6 +77,13 @@
       "typeString": "DateTime!",
       "name": "to",
       "url": "/stats/reference/scalars/datetime",
+      "description": null,
+      "args": null
+    },
+    {
+      "typeString": "Boolean",
+      "name": "retrieveAssets",
+      "url": "/stats/reference/scalars/boolean",
       "description": null,
       "args": null
     }

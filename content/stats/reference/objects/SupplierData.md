@@ -65,7 +65,38 @@
       "url": "/stats/reference/objects/accessconnection",
       "description": null,
       "isDeprecated": false,
-      "args": null
+      "args": [
+        {
+          "typeString": "Int",
+          "name": "first",
+          "url": "/stats/reference/scalars/int",
+          "description": null
+        },
+        {
+          "typeString": "Int",
+          "name": "last",
+          "url": "/stats/reference/scalars/int",
+          "description": null
+        },
+        {
+          "typeString": "String",
+          "name": "before",
+          "url": "/stats/reference/scalars/string",
+          "description": null
+        },
+        {
+          "typeString": "String",
+          "name": "after",
+          "url": "/stats/reference/scalars/string",
+          "description": null
+        },
+        {
+          "typeString": "AccessFilter",
+          "name": "filter",
+          "url": "/stats/reference/inputobjects/accessfilter",
+          "description": null
+        }
+      ]
     },
     {
       "typeString": "Organization",
@@ -104,6 +135,45 @@
           "typeString": "String",
           "name": "after",
           "url": "/stats/reference/scalars/string",
+          "description": null
+        }
+      ]
+    },
+    {
+      "typeString": "ClientConnection",
+      "name": "clients",
+      "url": "/stats/reference/objects/clientconnection",
+      "description": null,
+      "isDeprecated": false,
+      "args": [
+        {
+          "typeString": "Int",
+          "name": "first",
+          "url": "/stats/reference/scalars/int",
+          "description": null
+        },
+        {
+          "typeString": "Int",
+          "name": "last",
+          "url": "/stats/reference/scalars/int",
+          "description": null
+        },
+        {
+          "typeString": "String",
+          "name": "before",
+          "url": "/stats/reference/scalars/string",
+          "description": null
+        },
+        {
+          "typeString": "String",
+          "name": "after",
+          "url": "/stats/reference/scalars/string",
+          "description": null
+        },
+        {
+          "typeString": "ClientFilter",
+          "name": "filter",
+          "url": "/stats/reference/inputobjects/clientfilter",
           "description": null
         }
       ]

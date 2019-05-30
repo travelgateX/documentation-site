@@ -23,7 +23,7 @@
           "description": null
         },
         {
-          "typeString": "AlertCriteriaInput",
+          "typeString": "AlertCriteriaInput!",
           "name": "criteria",
           "url": "/alertsx/reference/inputobjects/alertcriteriainput",
           "description": null

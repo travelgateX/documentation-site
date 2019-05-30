@@ -60,18 +60,7 @@
       "args": null
     }
   ],
-  "requireby": [
-    {
-      "name": "Alert",
-      "description": " Alert node",
-      "url": "/alertsx/reference/objects/alert"
-    },
-    {
-      "name": "Event",
-      "description": "Event triggered",
-      "url": "/alertsx/reference/objects/event"
-    }
-  ],
+  "requireby": null,
   "enumValues": null,
   "operator": "type",
   "typename": "AdviseMessage",
@@ -84,7 +73,3 @@
 ## Fields
 
 {{% graphql-field %}}
-
-## Required by
-
-{{% graphql-require-by %}}

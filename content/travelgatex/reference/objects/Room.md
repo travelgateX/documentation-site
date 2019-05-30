@@ -74,6 +74,14 @@
       "description": null,
       "isDeprecated": false,
       "args": null
+    },
+    {
+      "typeString": "[Surcharge!]",
+      "name": "surcharges",
+      "url": "/travelgatex/reference/objects/surcharge",
+      "description": null,
+      "isDeprecated": false,
+      "args": null
     }
   ],
   "requireby": null,

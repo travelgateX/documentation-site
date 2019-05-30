@@ -11,37 +11,16 @@
       "args": null
     },
     {
-      "typeString": "String",
-      "name": "info",
+      "typeString": "String!",
+      "name": "label",
       "url": "/travelgatex/reference/scalars/string",
       "description": null,
       "args": null
     },
     {
-      "typeString": "ID!",
-      "name": "group",
-      "url": "/travelgatex/reference/scalars/id",
-      "description": null,
-      "args": null
-    },
-    {
-      "typeString": "ID!",
-      "name": "role",
-      "url": "/travelgatex/reference/scalars/id",
-      "description": null,
-      "args": null
-    },
-    {
-      "typeString": "[ID!]!",
-      "name": "resources",
-      "url": "/travelgatex/reference/scalars/id",
-      "description": null,
-      "args": null
-    },
-    {
-      "typeString": "Method!",
-      "name": "method",
-      "url": "/travelgatex/reference/enums/method",
+      "typeString": "Boolean!",
+      "name": "isActive",
+      "url": "/travelgatex/reference/scalars/boolean",
       "description": null,
       "args": null
     }

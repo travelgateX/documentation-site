@@ -20,7 +20,7 @@
       "args": null
     },
     {
-      "typeString": "AdviseMessage",
+      "typeString": "[AdviseMessage!]",
       "name": "adviseMessage",
       "url": "/alertsx/reference/objects/advisemessage",
       "description": null,

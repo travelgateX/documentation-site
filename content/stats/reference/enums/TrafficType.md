@@ -1,31 +1,37 @@
 {
-  "title": "Method",
+  "title": "TrafficType",
   "description": "",
   "weight": 1,
   "fields": null,
   "requireby": [
     {
-      "name": "UpdateMemberInput",
+      "name": "OperationDetailed",
       "description": null,
-      "url": "/travelgatex/reference/inputobjects/updatememberinput"
+      "url": "/stats/reference/objects/operationdetailed"
     }
   ],
   "enumValues": [
     {
-      "name": "ADD",
+      "name": "BASIC",
       "description": null,
       "isDeprecated": false,
       "deprecationReason": null
     },
     {
-      "name": "DEL",
+      "name": "SPEED",
+      "description": null,
+      "isDeprecated": false,
+      "deprecationReason": null
+    },
+    {
+      "name": "OPTIMIZED",
       "description": null,
       "isDeprecated": false,
       "deprecationReason": null
     }
   ],
   "operator": "enum",
-  "typename": "Method",
+  "typename": "TrafficType",
   "hideGithubLink": true
 }
 ## GraphQL schema definition

@@ -36,9 +36,9 @@
       "args": null
     },
     {
-      "typeString": "DestinationType!",
+      "typeString": "String!",
       "name": "type",
-      "url": "/travelgatex/reference/enums/destinationtype",
+      "url": "/travelgatex/reference/scalars/string",
       "description": null,
       "isDeprecated": false,
       "args": null

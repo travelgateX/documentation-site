@@ -167,6 +167,12 @@
           "description": null
         },
         {
+          "typeString": "String",
+          "name": "codeStartsWith",
+          "url": "/stats/reference/scalars/string",
+          "description": null
+        },
+        {
           "typeString": "GroupType",
           "name": "type",
           "url": "/stats/reference/enums/grouptype",
@@ -229,6 +235,57 @@
       "description": null,
       "isDeprecated": false,
       "args": null
+    },
+    {
+      "typeString": "GroupConnection",
+      "name": "siblings",
+      "url": "/stats/reference/objects/groupconnection",
+      "description": null,
+      "isDeprecated": false,
+      "args": [
+        {
+          "typeString": "[ID!]",
+          "name": "codes",
+          "url": "/stats/reference/scalars/id",
+          "description": null
+        },
+        {
+          "typeString": "GroupType",
+          "name": "type",
+          "url": "/stats/reference/enums/grouptype",
+          "description": null
+        },
+        {
+          "typeString": "Int",
+          "name": "first",
+          "url": "/stats/reference/scalars/int",
+          "description": null
+        },
+        {
+          "typeString": "Int",
+          "name": "last",
+          "url": "/stats/reference/scalars/int",
+          "description": null
+        },
+        {
+          "typeString": "String",
+          "name": "before",
+          "url": "/stats/reference/scalars/string",
+          "description": null
+        },
+        {
+          "typeString": "String",
+          "name": "after",
+          "url": "/stats/reference/scalars/string",
+          "description": null
+        },
+        {
+          "typeString": "String",
+          "name": "codeStartsWith",
+          "url": "/stats/reference/scalars/string",
+          "description": null
+        }
+      ]
     },
     {
       "typeString": "MemberConnection",

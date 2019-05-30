@@ -11,13 +11,6 @@
       "args": null
     },
     {
-      "typeString": "GroupType!",
-      "name": "type",
-      "url": "/alertsx/reference/enums/grouptype",
-      "description": null,
-      "args": null
-    },
-    {
       "typeString": "ComercialType!",
       "name": "comercialType",
       "url": "/alertsx/reference/enums/comercialtype",

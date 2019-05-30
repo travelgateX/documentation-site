@@ -53,6 +53,11 @@
       "url": "/stats/reference/objects/accessconnection"
     },
     {
+      "name": "ClientConnection",
+      "description": null,
+      "url": "/stats/reference/objects/clientconnection"
+    },
+    {
       "name": "MemberConnection",
       "description": null,
       "url": "/stats/reference/objects/memberconnection"
@@ -71,11 +76,6 @@
       "name": "SupplierConnection",
       "description": null,
       "url": "/stats/reference/objects/supplierconnection"
-    },
-    {
-      "name": "ClientConnection",
-      "description": null,
-      "url": "/stats/reference/objects/clientconnection"
     },
     {
       "name": "RoleConnection",

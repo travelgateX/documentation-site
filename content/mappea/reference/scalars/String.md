@@ -150,9 +150,14 @@
       "url": "/mappea/reference/objects/supplieredge"
     },
     {
-      "name": "ClientEdge",
+      "name": "ExternalMessage",
       "description": null,
-      "url": "/mappea/reference/objects/clientedge"
+      "url": "/mappea/reference/objects/externalmessage"
+    },
+    {
+      "name": "GroupEdge",
+      "description": null,
+      "url": "/mappea/reference/objects/groupedge"
     },
     {
       "name": "GroupData",
@@ -165,14 +170,9 @@
       "url": "/mappea/reference/objects/managedgroupedge"
     },
     {
-      "name": "ExternalMessage",
+      "name": "ClientEdge",
       "description": null,
-      "url": "/mappea/reference/objects/externalmessage"
-    },
-    {
-      "name": "GroupEdge",
-      "description": null,
-      "url": "/mappea/reference/objects/groupedge"
+      "url": "/mappea/reference/objects/clientedge"
     }
   ],
   "enumValues": null,

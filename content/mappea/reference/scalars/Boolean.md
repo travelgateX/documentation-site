@@ -15,6 +15,11 @@
       "url": "/mappea/reference/objects/provider"
     },
     {
+      "name": "ClientFilter",
+      "description": null,
+      "url": "/mappea/reference/inputobjects/clientfilter"
+    },
+    {
       "name": "PageInfo",
       "description": null,
       "url": "/mappea/reference/objects/pageinfo"
@@ -55,14 +60,19 @@
       "url": "/mappea/reference/objects/apidata"
     },
     {
+      "name": "GroupData",
+      "description": null,
+      "url": "/mappea/reference/objects/groupdata"
+    },
+    {
       "name": "ClientData",
       "description": null,
       "url": "/mappea/reference/objects/clientdata"
     },
     {
-      "name": "GroupData",
+      "name": "SupplierFilter",
       "description": null,
-      "url": "/mappea/reference/objects/groupdata"
+      "url": "/mappea/reference/inputobjects/supplierfilter"
     }
   ],
   "enumValues": null,

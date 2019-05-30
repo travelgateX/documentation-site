@@ -5,6 +5,11 @@
   "fields": null,
   "requireby": [
     {
+      "name": "HotelXHotelFilterInput",
+      "description": null,
+      "url": "/hotelx/reference/inputobjects/hotelxhotelfilterinput"
+    },
+    {
       "name": "HotelSettingsInput",
       "description": null,
       "url": "/hotelx/reference/inputobjects/hotelsettingsinput"
@@ -68,6 +73,11 @@
       "name": "Priceable",
       "description": null,
       "url": "/hotelx/reference/interfaces/priceable"
+    },
+    {
+      "name": "PriceChange",
+      "description": null,
+      "url": "/hotelx/reference/objects/pricechange"
     },
     {
       "name": "HotelRuntimeParameter",

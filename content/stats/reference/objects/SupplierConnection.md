@@ -35,6 +35,11 @@
       "name": "GroupData",
       "description": null,
       "url": "/stats/reference/objects/groupdata"
+    },
+    {
+      "name": "ClientData",
+      "description": null,
+      "url": "/stats/reference/objects/clientdata"
     }
   ],
   "enumValues": null,

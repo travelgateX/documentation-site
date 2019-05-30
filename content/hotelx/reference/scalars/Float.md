@@ -50,6 +50,11 @@
       "url": "/hotelx/reference/objects/cancelpenalty"
     },
     {
+      "name": "PriceChange",
+      "description": null,
+      "url": "/hotelx/reference/objects/pricechange"
+    },
+    {
       "name": "DeltaPriceInput",
       "description": null,
       "url": "/hotelx/reference/inputobjects/deltapriceinput"

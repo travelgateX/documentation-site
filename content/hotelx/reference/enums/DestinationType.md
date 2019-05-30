@@ -8,11 +8,6 @@
       "name": "DestinationData",
       "description": null,
       "url": "/hotelx/reference/objects/destinationdata"
-    },
-    {
-      "name": "GeonameData",
-      "description": null,
-      "url": "/hotelx/reference/objects/geonamedata"
     }
   ],
   "enumValues": [

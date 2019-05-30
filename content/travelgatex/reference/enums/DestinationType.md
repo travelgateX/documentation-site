@@ -8,11 +8,6 @@
       "name": "DestinationData",
       "description": null,
       "url": "/travelgatex/reference/objects/destinationdata"
-    },
-    {
-      "name": "GeonameData",
-      "description": null,
-      "url": "/travelgatex/reference/objects/geonamedata"
     }
   ],
   "enumValues": [

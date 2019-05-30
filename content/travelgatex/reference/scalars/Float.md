@@ -50,6 +50,11 @@
       "url": "/travelgatex/reference/objects/cancelpenalty"
     },
     {
+      "name": "PriceChange",
+      "description": null,
+      "url": "/travelgatex/reference/objects/pricechange"
+    },
+    {
       "name": "DeltaPriceInput",
       "description": null,
       "url": "/travelgatex/reference/inputobjects/deltapriceinput"

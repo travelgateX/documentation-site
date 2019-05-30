@@ -42,6 +42,45 @@
       "description": null,
       "isDeprecated": false,
       "args": null
+    },
+    {
+      "typeString": "SupplierConnection",
+      "name": "suppliers",
+      "url": "/mappea/reference/objects/supplierconnection",
+      "description": null,
+      "isDeprecated": false,
+      "args": [
+        {
+          "typeString": "Int",
+          "name": "first",
+          "url": "/mappea/reference/scalars/int",
+          "description": null
+        },
+        {
+          "typeString": "Int",
+          "name": "last",
+          "url": "/mappea/reference/scalars/int",
+          "description": null
+        },
+        {
+          "typeString": "String",
+          "name": "before",
+          "url": "/mappea/reference/scalars/string",
+          "description": null
+        },
+        {
+          "typeString": "String",
+          "name": "after",
+          "url": "/mappea/reference/scalars/string",
+          "description": null
+        },
+        {
+          "typeString": "SupplierFilter",
+          "name": "filter",
+          "url": "/mappea/reference/inputobjects/supplierfilter",
+          "description": null
+        }
+      ]
     }
   ],
   "requireby": [

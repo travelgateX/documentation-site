@@ -139,6 +139,12 @@
           "description": null
         },
         {
+          "typeString": "[OperationType!]",
+          "name": "types",
+          "url": "/paymentx/reference/enums/operationtype",
+          "description": null
+        },
+        {
           "typeString": "Int",
           "name": "first",
           "url": "/paymentx/reference/scalars/int",
@@ -160,6 +166,21 @@
           "typeString": "String",
           "name": "after",
           "url": "/paymentx/reference/scalars/string",
+          "description": null
+        }
+      ]
+    },
+    {
+      "typeString": "[AdviseMessage!]",
+      "name": "adviseMessageCatalog",
+      "url": "/paymentx/reference/objects/advisemessage",
+      "description": null,
+      "isDeprecated": false,
+      "args": [
+        {
+          "typeString": "[AdviseMessageLevel]",
+          "name": "level",
+          "url": "/paymentx/reference/enums/advisemessagelevel",
           "description": null
         }
       ]

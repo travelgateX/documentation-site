@@ -100,6 +100,41 @@
       "url": "/travelgatex/reference/scalars/datetime",
       "description": null,
       "args": null
+    },
+    {
+      "typeString": "Boolean",
+      "name": "country_in",
+      "url": "/travelgatex/reference/scalars/boolean",
+      "description": null,
+      "args": null
+    },
+    {
+      "typeString": "Boolean",
+      "name": "category_in",
+      "url": "/travelgatex/reference/scalars/boolean",
+      "description": null,
+      "args": null
+    },
+    {
+      "typeString": "Boolean",
+      "name": "destination_in",
+      "url": "/travelgatex/reference/scalars/boolean",
+      "description": null,
+      "args": null
+    },
+    {
+      "typeString": "Boolean",
+      "name": "name_in",
+      "url": "/travelgatex/reference/scalars/boolean",
+      "description": null,
+      "args": null
+    },
+    {
+      "typeString": "Boolean",
+      "name": "coordinates_in",
+      "url": "/travelgatex/reference/scalars/boolean",
+      "description": null,
+      "args": null
     }
   ],
   "requireby": null,

@@ -167,6 +167,12 @@
           "description": null
         },
         {
+          "typeString": "String",
+          "name": "codeStartsWith",
+          "url": "/paymentx/reference/scalars/string",
+          "description": null
+        },
+        {
           "typeString": "GroupType",
           "name": "type",
           "url": "/paymentx/reference/enums/grouptype",
@@ -229,6 +235,57 @@
       "description": null,
       "isDeprecated": false,
       "args": null
+    },
+    {
+      "typeString": "GroupConnection",
+      "name": "siblings",
+      "url": "/paymentx/reference/objects/groupconnection",
+      "description": null,
+      "isDeprecated": false,
+      "args": [
+        {
+          "typeString": "[ID!]",
+          "name": "codes",
+          "url": "/paymentx/reference/scalars/id",
+          "description": null
+        },
+        {
+          "typeString": "GroupType",
+          "name": "type",
+          "url": "/paymentx/reference/enums/grouptype",
+          "description": null
+        },
+        {
+          "typeString": "Int",
+          "name": "first",
+          "url": "/paymentx/reference/scalars/int",
+          "description": null
+        },
+        {
+          "typeString": "Int",
+          "name": "last",
+          "url": "/paymentx/reference/scalars/int",
+          "description": null
+        },
+        {
+          "typeString": "String",
+          "name": "before",
+          "url": "/paymentx/reference/scalars/string",
+          "description": null
+        },
+        {
+          "typeString": "String",
+          "name": "after",
+          "url": "/paymentx/reference/scalars/string",
+          "description": null
+        },
+        {
+          "typeString": "String",
+          "name": "codeStartsWith",
+          "url": "/paymentx/reference/scalars/string",
+          "description": null
+        }
+      ]
     },
     {
       "typeString": "MemberConnection",

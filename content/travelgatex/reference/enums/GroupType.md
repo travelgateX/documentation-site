@@ -18,11 +18,6 @@
       "name": "GroupData",
       "description": null,
       "url": "/travelgatex/reference/objects/groupdata"
-    },
-    {
-      "name": "AlertGroupInput",
-      "description": null,
-      "url": "/travelgatex/reference/inputobjects/alertgroupinput"
     }
   ],
   "enumValues": [

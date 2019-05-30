@@ -16,6 +16,13 @@
       "url": "/alertsx/reference/scalars/boolean",
       "description": null,
       "args": null
+    },
+    {
+      "typeString": "[ID!]",
+      "name": "groups",
+      "url": "/alertsx/reference/scalars/id",
+      "description": null,
+      "args": null
     }
   ],
   "requireby": null,

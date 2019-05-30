@@ -139,6 +139,12 @@
           "description": null
         },
         {
+          "typeString": "[OperationType!]",
+          "name": "types",
+          "url": "/travelgatex/reference/enums/operationtype",
+          "description": null
+        },
+        {
           "typeString": "Int",
           "name": "first",
           "url": "/travelgatex/reference/scalars/int",
@@ -160,6 +166,21 @@
           "typeString": "String",
           "name": "after",
           "url": "/travelgatex/reference/scalars/string",
+          "description": null
+        }
+      ]
+    },
+    {
+      "typeString": "[AdviseMessage!]",
+      "name": "adviseMessageCatalog",
+      "url": "/travelgatex/reference/objects/advisemessage",
+      "description": null,
+      "isDeprecated": false,
+      "args": [
+        {
+          "typeString": "[AdviseMessageLevel]",
+          "name": "level",
+          "url": "/travelgatex/reference/enums/advisemessagelevel",
           "description": null
         }
       ]

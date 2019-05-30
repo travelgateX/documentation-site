@@ -53,9 +53,9 @@
   ],
   "requireby": [
     {
-      "name": "ClientData",
+      "name": "GroupEdge",
       "description": null,
-      "url": "/mappea/reference/objects/clientdata"
+      "url": "/mappea/reference/objects/groupedge"
     },
     {
       "name": "GroupData",
@@ -68,9 +68,9 @@
       "url": "/mappea/reference/objects/managedgroupdata"
     },
     {
-      "name": "GroupEdge",
+      "name": "ClientData",
       "description": null,
-      "url": "/mappea/reference/objects/groupedge"
+      "url": "/mappea/reference/objects/clientdata"
     }
   ],
   "enumValues": null,

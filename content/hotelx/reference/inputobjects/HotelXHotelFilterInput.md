@@ -100,6 +100,41 @@
       "url": "/hotelx/reference/scalars/datetime",
       "description": null,
       "args": null
+    },
+    {
+      "typeString": "Boolean",
+      "name": "country_in",
+      "url": "/hotelx/reference/scalars/boolean",
+      "description": null,
+      "args": null
+    },
+    {
+      "typeString": "Boolean",
+      "name": "category_in",
+      "url": "/hotelx/reference/scalars/boolean",
+      "description": null,
+      "args": null
+    },
+    {
+      "typeString": "Boolean",
+      "name": "destination_in",
+      "url": "/hotelx/reference/scalars/boolean",
+      "description": null,
+      "args": null
+    },
+    {
+      "typeString": "Boolean",
+      "name": "name_in",
+      "url": "/hotelx/reference/scalars/boolean",
+      "description": null,
+      "args": null
+    },
+    {
+      "typeString": "Boolean",
+      "name": "coordinates_in",
+      "url": "/hotelx/reference/scalars/boolean",
+      "description": null,
+      "args": null
     }
   ],
   "requireby": null,

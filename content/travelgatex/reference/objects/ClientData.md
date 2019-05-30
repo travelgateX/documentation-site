@@ -42,6 +42,45 @@
       "description": null,
       "isDeprecated": false,
       "args": null
+    },
+    {
+      "typeString": "SupplierConnection",
+      "name": "suppliers",
+      "url": "/travelgatex/reference/objects/supplierconnection",
+      "description": null,
+      "isDeprecated": false,
+      "args": [
+        {
+          "typeString": "Int",
+          "name": "first",
+          "url": "/travelgatex/reference/scalars/int",
+          "description": null
+        },
+        {
+          "typeString": "Int",
+          "name": "last",
+          "url": "/travelgatex/reference/scalars/int",
+          "description": null
+        },
+        {
+          "typeString": "String",
+          "name": "before",
+          "url": "/travelgatex/reference/scalars/string",
+          "description": null
+        },
+        {
+          "typeString": "String",
+          "name": "after",
+          "url": "/travelgatex/reference/scalars/string",
+          "description": null
+        },
+        {
+          "typeString": "SupplierFilter",
+          "name": "filter",
+          "url": "/travelgatex/reference/inputobjects/supplierfilter",
+          "description": null
+        }
+      ]
     }
   ],
   "requireby": [

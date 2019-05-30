@@ -30,6 +30,16 @@
 - Removal of `expireDate` from `Supplement`. Reason: Incorrect date format..  Deprecated on 2018-02-28.**To be removed soon**.
 - Removal of `token` from `HotelOptionSearch`. Reason: .  Deprecated on 2019-02-05.**To be removed soon**.
 - Removal of `loadFile` from `HotelXMutation`. Reason: .  Deprecated on 2018-06-06.**To be removed soon**.
+- Removal of `ratios` from `StatsData`. Reason: Added hits fields to be able to calculate ratios at client side..  Deprecated on 2019-04-08.Expected removal on 2019-07-07.
+- Removal of `cache` from `OperationDetailed`. Reason: Added new field trafficType..  Deprecated on 2019-04-03.Expected removal on 2019-07-02.
+{{% / release-notes-container %}}
+### 2019-04-08
+{{% release-notes-container type="d"%}}
+- Deprecated `ratios` from `StatsData`. Reason: Added hits fields to be able to calculate ratios at client side.. Expected removal on 2019-07-07 .
+{{% / release-notes-container %}}
+### 2019-04-03
+{{% release-notes-container type="d"%}}
+- Deprecated `cache` from `OperationDetailed`. Reason: Added new field trafficType.. Expected removal on 2019-07-02 .
 {{% / release-notes-container %}}
 ### 2019-02-12
 {{% release-notes-container type="r"%}}

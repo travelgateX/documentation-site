@@ -315,6 +315,11 @@
       "url": "/hotelx/reference/objects/hoteloptionquote"
     },
     {
+      "name": "PriceChange",
+      "description": null,
+      "url": "/hotelx/reference/objects/pricechange"
+    },
+    {
       "name": "CriteriaBookingReferencesInput",
       "description": null,
       "url": "/hotelx/reference/inputobjects/criteriabookingreferencesinput"

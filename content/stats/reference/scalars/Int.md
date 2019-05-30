@@ -5,6 +5,11 @@
   "fields": null,
   "requireby": [
     {
+      "name": "StatsData",
+      "description": null,
+      "url": "/stats/reference/objects/statsdata"
+    },
+    {
       "name": "Ratios",
       "description": null,
       "url": "/stats/reference/objects/ratios"
@@ -28,6 +33,11 @@
       "name": "GroupData",
       "description": null,
       "url": "/stats/reference/objects/groupdata"
+    },
+    {
+      "name": "SupplierFilter",
+      "description": null,
+      "url": "/stats/reference/inputobjects/supplierfilter"
     },
     {
       "name": "StatsInfo",

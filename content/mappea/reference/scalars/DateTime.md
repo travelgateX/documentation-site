@@ -60,11 +60,6 @@
       "url": "/mappea/reference/objects/product"
     },
     {
-      "name": "Client",
-      "description": null,
-      "url": "/mappea/reference/objects/client"
-    },
-    {
       "name": "Group",
       "description": null,
       "url": "/mappea/reference/objects/group"
@@ -73,6 +68,11 @@
       "name": "ManagedGroup",
       "description": null,
       "url": "/mappea/reference/objects/managedgroup"
+    },
+    {
+      "name": "Client",
+      "description": null,
+      "url": "/mappea/reference/objects/client"
     }
   ],
   "enumValues": null,

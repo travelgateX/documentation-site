@@ -36,7 +36,7 @@
       "args": null
     },
     {
-      "typeString": "String!",
+      "typeString": "String",
       "name": "hotelName",
       "url": "/hotelx/reference/scalars/string",
       "description": null,
@@ -44,7 +44,7 @@
       "args": null
     },
     {
-      "typeString": "String!",
+      "typeString": "String",
       "name": "categoryCode",
       "url": "/hotelx/reference/scalars/string",
       "description": null,

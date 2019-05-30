@@ -45,6 +45,11 @@
       "url": "/alertsx/reference/objects/supplierdata"
     },
     {
+      "name": "SupplierFilter",
+      "description": null,
+      "url": "/alertsx/reference/inputobjects/supplierfilter"
+    },
+    {
       "name": "AlertConfigurationInputNoTraffic",
       "description": "Configuration for NO_TRAFFIC alert type. \nNo traffic alert is used to verify if there is traffic according to the parameters of the alert.",
       "url": "/alertsx/reference/inputobjects/alertconfigurationinputnotraffic"

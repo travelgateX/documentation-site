@@ -53,10 +53,10 @@
       "args": null
     },
     {
-      "typeString": "Email!",
-      "name": "editor",
-      "url": "/travelgatex/reference/scalars/email",
-      "description": "Member editor",
+      "typeString": "ID!",
+      "name": "group",
+      "url": "/travelgatex/reference/scalars/id",
+      "description": "Alert location group",
       "args": null
     }
   ],

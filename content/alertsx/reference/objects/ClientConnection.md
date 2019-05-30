@@ -32,6 +32,11 @@
       "url": "/alertsx/reference/interfaces/groupcommondata"
     },
     {
+      "name": "SupplierData",
+      "description": null,
+      "url": "/alertsx/reference/objects/supplierdata"
+    },
+    {
       "name": "OrganizationData",
       "description": null,
       "url": "/alertsx/reference/objects/organizationdata"

@@ -32,6 +32,11 @@
       "url": "/paymentx/reference/interfaces/groupcommondata"
     },
     {
+      "name": "SupplierData",
+      "description": null,
+      "url": "/paymentx/reference/objects/supplierdata"
+    },
+    {
       "name": "OrganizationData",
       "description": null,
       "url": "/paymentx/reference/objects/organizationdata"

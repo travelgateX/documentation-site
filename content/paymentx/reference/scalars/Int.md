@@ -25,6 +25,11 @@
       "url": "/paymentx/reference/objects/supplierdata"
     },
     {
+      "name": "SupplierFilter",
+      "description": null,
+      "url": "/paymentx/reference/inputobjects/supplierfilter"
+    },
+    {
       "name": "ExpireDateInput",
       "description": null,
       "url": "/paymentx/reference/inputobjects/expiredateinput"

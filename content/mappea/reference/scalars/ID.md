@@ -40,9 +40,19 @@
       "url": "/mappea/reference/objects/provider"
     },
     {
+      "name": "AccessFilter",
+      "description": null,
+      "url": "/mappea/reference/inputobjects/accessfilter"
+    },
+    {
       "name": "Organization",
       "description": null,
       "url": "/mappea/reference/objects/organization"
+    },
+    {
+      "name": "ClientFilter",
+      "description": null,
+      "url": "/mappea/reference/inputobjects/clientfilter"
     },
     {
       "name": "Access",
@@ -140,14 +150,9 @@
       "url": "/mappea/reference/objects/productdata"
     },
     {
-      "name": "Client",
+      "name": "DomainData",
       "description": null,
-      "url": "/mappea/reference/objects/client"
-    },
-    {
-      "name": "ClientData",
-      "description": null,
-      "url": "/mappea/reference/objects/clientdata"
+      "url": "/mappea/reference/objects/domaindata"
     },
     {
       "name": "Group",
@@ -170,9 +175,19 @@
       "url": "/mappea/reference/objects/managedgroupdata"
     },
     {
-      "name": "DomainData",
+      "name": "Client",
       "description": null,
-      "url": "/mappea/reference/objects/domaindata"
+      "url": "/mappea/reference/objects/client"
+    },
+    {
+      "name": "ClientData",
+      "description": null,
+      "url": "/mappea/reference/objects/clientdata"
+    },
+    {
+      "name": "SupplierFilter",
+      "description": null,
+      "url": "/mappea/reference/inputobjects/supplierfilter"
     }
   ],
   "enumValues": null,

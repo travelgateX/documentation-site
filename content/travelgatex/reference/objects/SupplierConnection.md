@@ -37,6 +37,11 @@
       "url": "/travelgatex/reference/interfaces/groupcommondata"
     },
     {
+      "name": "ClientData",
+      "description": null,
+      "url": "/travelgatex/reference/objects/clientdata"
+    },
+    {
       "name": "GroupData",
       "description": null,
       "url": "/travelgatex/reference/objects/groupdata"

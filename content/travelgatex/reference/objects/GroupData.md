@@ -167,6 +167,12 @@
           "description": null
         },
         {
+          "typeString": "String",
+          "name": "codeStartsWith",
+          "url": "/travelgatex/reference/scalars/string",
+          "description": null
+        },
+        {
           "typeString": "GroupType",
           "name": "type",
           "url": "/travelgatex/reference/enums/grouptype",
@@ -229,6 +235,57 @@
       "description": null,
       "isDeprecated": false,
       "args": null
+    },
+    {
+      "typeString": "GroupConnection",
+      "name": "siblings",
+      "url": "/travelgatex/reference/objects/groupconnection",
+      "description": null,
+      "isDeprecated": false,
+      "args": [
+        {
+          "typeString": "[ID!]",
+          "name": "codes",
+          "url": "/travelgatex/reference/scalars/id",
+          "description": null
+        },
+        {
+          "typeString": "GroupType",
+          "name": "type",
+          "url": "/travelgatex/reference/enums/grouptype",
+          "description": null
+        },
+        {
+          "typeString": "Int",
+          "name": "first",
+          "url": "/travelgatex/reference/scalars/int",
+          "description": null
+        },
+        {
+          "typeString": "Int",
+          "name": "last",
+          "url": "/travelgatex/reference/scalars/int",
+          "description": null
+        },
+        {
+          "typeString": "String",
+          "name": "before",
+          "url": "/travelgatex/reference/scalars/string",
+          "description": null
+        },
+        {
+          "typeString": "String",
+          "name": "after",
+          "url": "/travelgatex/reference/scalars/string",
+          "description": null
+        },
+        {
+          "typeString": "String",
+          "name": "codeStartsWith",
+          "url": "/travelgatex/reference/scalars/string",
+          "description": null
+        }
+      ]
     },
     {
       "typeString": "MemberConnection",

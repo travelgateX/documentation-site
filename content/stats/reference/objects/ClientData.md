@@ -42,6 +42,45 @@
       "description": null,
       "isDeprecated": false,
       "args": null
+    },
+    {
+      "typeString": "SupplierConnection",
+      "name": "suppliers",
+      "url": "/stats/reference/objects/supplierconnection",
+      "description": null,
+      "isDeprecated": false,
+      "args": [
+        {
+          "typeString": "Int",
+          "name": "first",
+          "url": "/stats/reference/scalars/int",
+          "description": null
+        },
+        {
+          "typeString": "Int",
+          "name": "last",
+          "url": "/stats/reference/scalars/int",
+          "description": null
+        },
+        {
+          "typeString": "String",
+          "name": "before",
+          "url": "/stats/reference/scalars/string",
+          "description": null
+        },
+        {
+          "typeString": "String",
+          "name": "after",
+          "url": "/stats/reference/scalars/string",
+          "description": null
+        },
+        {
+          "typeString": "SupplierFilter",
+          "name": "filter",
+          "url": "/stats/reference/inputobjects/supplierfilter",
+          "description": null
+        }
+      ]
     }
   ],
   "requireby": [

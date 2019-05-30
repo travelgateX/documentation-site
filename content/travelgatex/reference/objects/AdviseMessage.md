@@ -65,16 +65,6 @@
       "name": "PaymentXQuery",
       "description": null,
       "url": "/travelgatex/reference/objects/paymentxquery"
-    },
-    {
-      "name": "Alert",
-      "description": " Alert node",
-      "url": "/travelgatex/reference/objects/alert"
-    },
-    {
-      "name": "Event",
-      "description": "Event triggered",
-      "url": "/travelgatex/reference/objects/event"
     }
   ],
   "enumValues": null,

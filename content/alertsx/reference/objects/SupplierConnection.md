@@ -35,6 +35,11 @@
       "name": "OrganizationData",
       "description": null,
       "url": "/alertsx/reference/objects/organizationdata"
+    },
+    {
+      "name": "ClientData",
+      "description": null,
+      "url": "/alertsx/reference/objects/clientdata"
     }
   ],
   "enumValues": null,

@@ -22,6 +22,11 @@
   ],
   "requireby": [
     {
+      "name": "SupplierData",
+      "description": null,
+      "url": "/stats/reference/objects/supplierdata"
+    },
+    {
       "name": "OrganizationData",
       "description": null,
       "url": "/stats/reference/objects/organizationdata"

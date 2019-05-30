@@ -36,7 +36,7 @@
       "args": null
     },
     {
-      "typeString": "String!",
+      "typeString": "String",
       "name": "hotelName",
       "url": "/travelgatex/reference/scalars/string",
       "description": null,
@@ -44,7 +44,7 @@
       "args": null
     },
     {
-      "typeString": "String!",
+      "typeString": "String",
       "name": "categoryCode",
       "url": "/travelgatex/reference/scalars/string",
       "description": null,

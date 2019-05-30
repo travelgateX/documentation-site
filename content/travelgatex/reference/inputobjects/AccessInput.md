@@ -128,6 +128,13 @@
       "url": "/travelgatex/reference/scalars/id",
       "description": null,
       "args": null
+    },
+    {
+      "typeString": "Boolean",
+      "name": "isSchedulerActive",
+      "url": "/travelgatex/reference/scalars/boolean",
+      "description": null,
+      "args": null
     }
   ],
   "requireby": null,

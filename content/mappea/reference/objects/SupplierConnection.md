@@ -35,6 +35,11 @@
       "name": "GroupData",
       "description": null,
       "url": "/mappea/reference/objects/groupdata"
+    },
+    {
+      "name": "ClientData",
+      "description": null,
+      "url": "/mappea/reference/objects/clientdata"
     }
   ],
   "enumValues": null,

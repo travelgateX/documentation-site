@@ -36,6 +36,14 @@
       "args": null
     },
     {
+      "typeString": "PriceChange",
+      "name": "quotePrice",
+      "url": "/hotelx/reference/objects/pricechange",
+      "description": null,
+      "isDeprecated": false,
+      "args": null
+    },
+    {
       "typeString": "CancelPolicy",
       "name": "cancelPolicy",
       "url": "/hotelx/reference/objects/cancelpolicy",

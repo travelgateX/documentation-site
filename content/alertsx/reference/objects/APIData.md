@@ -139,6 +139,12 @@
           "description": null
         },
         {
+          "typeString": "[OperationType!]",
+          "name": "types",
+          "url": "/alertsx/reference/enums/operationtype",
+          "description": null
+        },
+        {
           "typeString": "Int",
           "name": "first",
           "url": "/alertsx/reference/scalars/int",
@@ -160,6 +166,21 @@
           "typeString": "String",
           "name": "after",
           "url": "/alertsx/reference/scalars/string",
+          "description": null
+        }
+      ]
+    },
+    {
+      "typeString": "[AdviseMessage!]",
+      "name": "adviseMessageCatalog",
+      "url": "/alertsx/reference/objects/advisemessage",
+      "description": null,
+      "isDeprecated": false,
+      "args": [
+        {
+          "typeString": "[AdviseMessageLevel]",
+          "name": "level",
+          "url": "/alertsx/reference/enums/advisemessagelevel",
           "description": null
         }
       ]

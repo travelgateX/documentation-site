@@ -28,6 +28,14 @@
       "args": null
     },
     {
+      "typeString": "PriceChange",
+      "name": "searchPrice",
+      "url": "/hotelx/reference/objects/pricechange",
+      "description": null,
+      "isDeprecated": false,
+      "args": null
+    },
+    {
       "typeString": "CancelPolicy!",
       "name": "cancelPolicy",
       "url": "/hotelx/reference/objects/cancelpolicy",

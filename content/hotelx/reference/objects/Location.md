@@ -28,7 +28,7 @@
       "args": null
     },
     {
-      "typeString": "Country!",
+      "typeString": "Country",
       "name": "country",
       "url": "/hotelx/reference/scalars/country",
       "description": null,
@@ -44,7 +44,7 @@
       "args": null
     },
     {
-      "typeString": "DestinationData!",
+      "typeString": "DestinationData",
       "name": "closestDestination",
       "url": "/hotelx/reference/objects/destinationdata",
       "description": null,

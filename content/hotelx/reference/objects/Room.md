@@ -74,6 +74,14 @@
       "description": null,
       "isDeprecated": false,
       "args": null
+    },
+    {
+      "typeString": "[Surcharge!]",
+      "name": "surcharges",
+      "url": "/hotelx/reference/objects/surcharge",
+      "description": null,
+      "isDeprecated": false,
+      "args": null
     }
   ],
   "requireby": null,

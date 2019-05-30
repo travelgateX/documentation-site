@@ -36,9 +36,9 @@
       "args": null
     },
     {
-      "typeString": "DestinationType!",
+      "typeString": "String!",
       "name": "type",
-      "url": "/hotelx/reference/enums/destinationtype",
+      "url": "/hotelx/reference/scalars/string",
       "description": null,
       "isDeprecated": false,
       "args": null
