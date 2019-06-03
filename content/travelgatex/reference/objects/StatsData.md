@@ -74,9 +74,9 @@
       ]
     },
     {
-      "typeString": "Int!",
+      "typeString": "Int64!",
       "name": "hits",
-      "url": "/travelgatex/reference/scalars/int",
+      "url": "/travelgatex/reference/scalars/int64",
       "description": null,
       "isDeprecated": false,
       "args": [

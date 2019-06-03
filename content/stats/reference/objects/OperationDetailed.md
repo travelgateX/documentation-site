@@ -12,9 +12,9 @@
       "args": null
     },
     {
-      "typeString": "Int!",
+      "typeString": "Int64!",
       "name": "totalHits",
-      "url": "/stats/reference/scalars/int",
+      "url": "/stats/reference/scalars/int64",
       "description": null,
       "isDeprecated": false,
       "args": null

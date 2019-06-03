@@ -74,9 +74,9 @@
       ]
     },
     {
-      "typeString": "Int!",
+      "typeString": "Int64!",
       "name": "hits",
-      "url": "/stats/reference/scalars/int",
+      "url": "/stats/reference/scalars/int64",
       "description": null,
       "isDeprecated": false,
       "args": [

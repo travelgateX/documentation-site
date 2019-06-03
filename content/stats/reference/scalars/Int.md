@@ -5,19 +5,9 @@
   "fields": null,
   "requireby": [
     {
-      "name": "StatsData",
-      "description": null,
-      "url": "/stats/reference/objects/statsdata"
-    },
-    {
       "name": "Ratios",
       "description": null,
       "url": "/stats/reference/objects/ratios"
-    },
-    {
-      "name": "OperationDetailed",
-      "description": null,
-      "url": "/stats/reference/objects/operationdetailed"
     },
     {
       "name": "AccessData",

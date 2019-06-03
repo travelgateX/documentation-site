@@ -150,19 +150,9 @@
       "url": "/travelgatex/reference/objects/paymentxexpiredate"
     },
     {
-      "name": "StatsData",
-      "description": null,
-      "url": "/travelgatex/reference/objects/statsdata"
-    },
-    {
       "name": "Ratios",
       "description": null,
       "url": "/travelgatex/reference/objects/ratios"
-    },
-    {
-      "name": "OperationDetailed",
-      "description": null,
-      "url": "/travelgatex/reference/objects/operationdetailed"
     },
     {
       "name": "StatsInfo",
