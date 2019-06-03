@@ -16,6 +16,13 @@ Check out this list of new releases and changes applied on the **TravelgateX Gra
 
 ## 2019-05-30
 
+🛑  Field `StatsInfo.hits` changed type from `Int!` to `Int64!`
+🛑  Field `OperationDetailed.totalHits` changed type from `Int!` to `Int64!`
+🛑  Field `StatsData.hits` changed type from `Int!` to `Int64!`
+✅  Type `Int64` was added
+
+## 2019-05-30
+
 ✅  Description
 
 `Configuration for AVERAGE_TIME.
