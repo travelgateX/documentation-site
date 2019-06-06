@@ -180,6 +180,10 @@ __fields__
 * **booking\_date (TIMESTAMP).** Booking date in UTC (format: YYYY-MM-DD hh:mm:ss).
 * **checkin\_date (TIMESTAMP).** Checkin date in UTC (format: YYYY-MM-DD hh:mm:ss).
 * **amount (NUMBER).** Amount of booking in EUR.
+* **commission (NUMBER).**  Possible values for the commission:
+	* -1 = not specified
+	* 0 = net price
+	* X = Percentatge of the commission applied to the amount.
 * **cancel\_date (TIMESTAMP).** Cancel date in UTC (format: YYYY-MM-DD hh:mm:ss) if the booking was cancelled else will be empty.
 * **market (STRING).** Source market of paxes (ISO 3166-1 alpha-2).
 * **market\_name (STRING).** Source market's name.
@@ -191,6 +195,10 @@ __fields__
 * **city (STRING).** Last level of destination.
 * **hotel\_code (STRING).** Hotel's code in provider's portfolio.
 * **hotel\_name (STRING).** Hotel's name in provider's portfolio.
+* **adults (NUMBER).** Quantity of paxes older than 12 years (12 is not included).
+* **children (NUMBER).** Quantity of paxes between 2 and 12 (both included).
+* **infants (NUMBER).** Quantity of paxes younger than 2 years (2 is not included).
+
 
 __Preview__
 
@@ -205,20 +213,34 @@ __fields__
 
 * **client\_id	(STRING).** Client unique ID.
 * **provider\_id (STRING).** Provider unique ID.
+* **username (STRING).* User ID in provider's system.
 * **hotel (STRING).** Hotel unique ID.
 * **hotel\_name\_portfolio (STRING).** Hotel name.
-* **hotel\_country\_portfolio (STRING).** Hotel Country Code (ISO Alpha-2 code).
+* **country (STRING).** Hotel Country Code (ISO Alpha-2 code).
+* **zone\_1 (STRING).** Main zone of destination.
+* **zone\_2 (STRING).** Secondary zone of destination.
+* **city (STRING).** Last level of destination.
 * **status**. It is an enumeration to describe the status of the hotel.
     * 0 = Hotel code queried but it doesn't appear in provider's portfolio. It can be due to a wrong mapping in client's system.
     * 1 = Hotel code not queried but it appears in provider's portfolio. It can be due to a mismapping in the client's system.
     * 2 = Hotel code queried and it appears in provider's portfolio.
-
+	* 3 = Hotel code queried but don't appears in TravelgateX system. It can be due to a out-of-date provider hotels information.
+* **search\_ok (NUMBER).** Quantity of searches that returned any available hotel for above key (search_date, check_in, client\_id, provider\_id, username, hotel, country, zone\_1,zone\_2, city and status).
+* **search\_nok (NUMBER).** Quantity of searches that didn't return any available hotels for above key.
+* **quote\_ok (NUMBER).** Quantity of quotes that returned a correct result for above key.
+* **quote\_nok (NUMBER).** Quantity of quotes that returned a wrong result for above key.
+* **booking\_ok (NUMBER).** Quantity of confirmed bookings.
+* **booking\_nok (NUMBER).** Quantity of failed bookings for above key.	
+* **cancel\_ok (NUMBER).** Quantity of confirmed cancellations.
+* **cancel\_nok (NUMBER).** Quantity of failed cancellations for above key.	
+* **revenue_net (NUMBER).** Total net amount of confirmed bookings for above key.
+* **revenue_unknown (NUMBER).** Total amount of confirmed bookings for above key when we don't know if any commission is applied.
+	
+	
 __Preview__
 
-| client\_id | provider\_id | hotel | hotel\_name\_portfolio | hotel\_country\_portfolio | status |
-| :---- | :---- | :---- | :---- | :---- | :---- |
-| client A | provider X | 1 | hotel\_1 | ES | 1 | 
-| client A | provider X | 2 | hotel\_2 | IT | 2 | 
-| client A | provider X | V | _null_ | _null_ | 0 | 
-| client B | provider Y | 1 | hotel\_1 | FR | 1 | 
-
+| client_id | provider_id | username   | hotel_name           | country | zone_1             | zone_2  | city                 | hotel_code | status | search_ok | search_nok | quote_ok | quote_nok | booking_ok | booking_nok | cancel_ok | cancel_nok | revenue_net | revenue_unknown |
+|-----------|-------------|------------|----------------------|---------|--------------------|---------|----------------------|------------|--------|-----------|------------|----------|-----------|------------|-------------|-----------|------------|-------------|-----------------|
+| Client 1  | Provider 1  | 1464534881 | Residence Bologna    | CZ      | Hlavni mesto Praha | Praha 1 | Stare Mesto          | 336629     | 2      | 9805      | 3896       | 10       |           | 1          |             | 1         |            | 354.1       |                 |
+| Client 2  | Provider 2  | 132965     | Hotel Guaparo Suites | VE      | Estado Carabobo    |         | Urbanizacion Guaparo | 814595     | 1      |           |            |          |           |            |             |           |            |             |                 |
+| Client 3  | Provider 3  | 14644046   |                      |         |                    |         |                      | 2363330    | 0      |           | 4          |          |           |            |             |           |            |             |                 |
