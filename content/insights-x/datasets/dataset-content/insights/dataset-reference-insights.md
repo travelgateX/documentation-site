@@ -177,6 +177,7 @@ __fields__
 * **session\_id (STRING).** Search date in UTC (format: YYYY-MM-DD hh:mm:ss).
 * **client\_id (STRING).** Client unique ID.
 * **provider\_id (STRING).** Provider unique ID.
+* **username (STRING).* User ID in provider's system.
 * **booking\_date (TIMESTAMP).** Booking date in UTC (format: YYYY-MM-DD hh:mm:ss).
 * **checkin\_date (TIMESTAMP).** Checkin date in UTC (format: YYYY-MM-DD hh:mm:ss).
 * **amount (NUMBER).** Amount of booking in EUR.
