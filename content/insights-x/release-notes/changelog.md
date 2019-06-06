@@ -12,6 +12,20 @@ tags = ["products-changelog"]
 
 Easily accessible log of notable changes to Insights-X
 
+## 2019-06-05
+
+{{% release-notes-container type="a"%}}
+* Added new fields in portfolio: zone_1, zone_2, city, username. Added new metrics in portfolio: search_ok,search_nok, quote_ok, quote_nok, booking_ok, booking_nok, cancel_ok, cancel_nok, revenue_net and revenue_unknown.
+{{% /release-notes-container %}}
+
+{{% release-notes-container type="a"%}}
+* Added new fields in effective bookings: username, commision, adults, childen, infants.
+{{% /release-notes-container %}}
+
+{{% release-notes-container type="a"%}}
+* Benchmark is available now for Performance. Added [new table](/insights-x/datasets/concepts/dataset-content/benchmark/performance/dataset-reference-benchmark/) in benchmark: performance\_daily\_(buyer|seller).
+{{% /release-notes-container %}}
+
 ## 2019-05-27
 
 {{% release-notes-container type="a"%}}
@@ -25,7 +39,7 @@ Easily accessible log of notable changes to Insights-X
 {{% /release-notes-container %}}
 
 {{% release-notes-container type="c"%}}
-* Benchmarck table daily\_benchmarking\_seller replaced by new ones benchmark [tables](/insights-x/datasets/concepts/dataset-content/benchmark/dataset-reference-benchmark/)
+* Benchmark table daily\_benchmarking\_seller replaced by new ones benchmark [tables](/insights-x/datasets/concepts/dataset-content/benchmark/insights/dataset-reference-benchmark/)
 
 {{% /release-notes-container %}}
 
