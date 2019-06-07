@@ -91,9 +91,11 @@ The bechmark table analyses the total of uniques searches per hotel returning av
 ### Examples 
 Let's consider the following row from the table `benchmarking\_country\_city\_client\_(daily\|weekly\|monthly)\_seller`:
 
+
 | client\_id | provider\_id | country | city  | country\_city\_client | search\_date            | availability\_value | availability\_percentile | availability\_rank | availability\_compset | availability\_index | booking\_value | booking\_percentile | booking\_rank | booking\_compset | booking\_index | revenue\_value | revenue\_percentile | revenue\_rank | revenue\_compset | revenue\_index | total\_provider | country\_name | availability\_tgx | booking\_tgx | revenue\_tgx |
 |------------|--------------|---------|-------|-----------------------|-------------------------|---------------------|--------------------------|--------------------|-----------------------|---------------------|----------------|---------------------|---------------|------------------|----------------|----------------|---------------------|---------------|------------------|----------------|-----------------|---------------|-------------------|--------------|--------------|
 | client 1   | provider 1   | ES      | Palma | ES,Palma,client 1     | 2019-04-03 00:00:00 UTC | 130                 | 0.8889                   | 1                  | 12.625                | 1.0                 | 3              | 0.7674              | 3             | 1.426            | 0.8571         | 2104.72        | 0.8163              | 2             | 620.36           | 0.9126         | 8               | Spain         | 60000             | 20           | 3600         |
+
 
 Let's see what we can say about the provider 1 at 2019-04-03 00:00:00 UTC in **availability** for the client 1:
 
@@ -129,9 +131,10 @@ The benchmarks have been calculated comparing provider 1 with other 8 providers.
 Let's consider the following row from the table  `benchmarking\_country\_city\_(daily\|weekly\|monthly)\_seller`:
 
 
-| provider_id | country | city            | country_city       | search_date             | availability_value | availability_percentile | availability_rank | availability_compset | availability_index | booking_value | booking_percentile | booking_rank | booking_compset | booking_index | revenue_value | revenue_percentile | revenue_rank | revenue_compset | revenue_index | total_provider | country_name | availability\_tgx | booking\_tgx | revenue\_tgx |
-|-------------|---------|-----------------|--------------------|-------------------------|--------------------|-------------------------|-------------------|----------------------|--------------------|---------------|--------------------|--------------|-----------------|---------------|---------------|--------------------|--------------|-----------------|---------------|----------------|--------------|-------------------|--------------|--------------|
-| provider 1  | CU      | La Habana Vieja | La Habana Vieja,CU | 2019-04-03 00:00:00 UTC | 20                 | 1.0                     | 1                 | 9.3953               | 1.0                | 2             | 0.902              | 2            | 1.8889          | 0.5           | 676.95        | 0.9412             | 4            | 701.0125        | 0.4076        | 52             | Cuba         | 60000             | 20           | 3600         |
+| provider\_id | country | city            | country\_city   | search\_date            | availability\_value | availability\_percentile | availability\_rank | availability\_compset | availability\_index | booking\_value | booking\_percentile | booking\_rank | booking\_compset | booking\_index | revenue\_value | revenue\_percentile | revenue\_rank | revenue\_compset | revenue\_index | total\_provider | country\_name | availability\_tgx | booking\_tgx | revenue\_tgx |
+|--------------|---------|-----------------|-----------------|-------------------------|---------------------|--------------------------|--------------------|-----------------------|---------------------|----------------|---------------------|---------------|------------------|----------------|----------------|---------------------|---------------|------------------|----------------|-----------------|---------------|-------------------|--------------|--------------|
+| provider 1   | CU      | La Habana Vieja | La Habana Vieja | 2019-04-03 00:00:00 UTC | 20                  | 1.0                      | 1                  | 9.3953                | 1.0                 | 2              | 0.902               | 2             | 1.8889           | 0.5            | 676.95         | 0.9412              | 4             | 701.0125         | 0.4076         | 52              | Cuba          | 60000             | 20           | 3600         |
+
 
 Let's see what we can say about the provider 1 at 2019-04-03 00:00:00 UTC in **availability**:
 

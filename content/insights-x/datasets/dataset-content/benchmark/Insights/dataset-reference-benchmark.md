@@ -147,6 +147,7 @@ __Preview__
 | client 2     | provider 2  | 2019-04-03 00:00:00 UTC | 3373               | 0.381                   | 14                | 20290.8571           | 0.0299             | 23            | 0.619              | 8            | 28.5263         | 0.1597        | 11466.54830430146  | 0.7619             | 6            | 14475.2945      | 0.1503        | 22             | 426108           | 542         | 217129      |
 | client 3     | provider 3  | 2019-04-03 00:00:00 UTC | 1729               | 0.4375                  | 10                | 8388.8125            | 0.0199             | 14            | 0.5625             | 8            | 17.9375         | 0.2642        | 8989.779999999999  | 0.6875             | 6            | 11616.4348      | 0.2632        | 17             | 134221           | 287         | 151014      |
 
+
 ## benchmark\_country\_city\_(daily|weekly|monthly)\_seller
 This table contains different benchmarks of your organization for the TravelgateX marketplace at specific level of country and city.
 The benchmarks are based on the total of differents and availables hotels that have been requested, the total of bookings and the total amount of net revenue of the bookings.
@@ -227,6 +228,7 @@ __Preview__
 |  provider 1 | CU      | 2019-04-03 00:00:00 UTC | 111                | 0.629                   | 23                | 98.1731              | 0.3502             | 11            | 0.9839             | 2            | 6.0476          | 0.1774        | 15634.101013693758 | 0.9839             | 2            | 4431.1882       | 0.3929        | 63             | Cuba         | 5105             | 127         | 84193       |
 |  provider 2 | CN      | 2019-04-03 00:00:00 UTC | 3302               | 0.9688                  | 3                 | 744.4259             | 0.9618             | 12            | 0.9844             | 2            | 4.8             | 0.5           | 5080.809816230813  | 0.9688             | 3            | 2572.4229       | 0.4133        | 65             | China        | 40199            | 72          | 28297       |
 |  provider 3 | CN      | 2019-04-03 00:00:00 UTC | 1639               | 0.8594                  | 10                | 744.4259             | 0.4774             | 11            | 0.9688             | 3            | 4.8             | 0.4583        | 5247.645802952161  | 0.9844             | 2            | 2572.4229       | 0.4269        | 65             | China        | 40199            | 72          | 28297       |
+
 
 ## benchmark\_(daily|weekly|monthly)\_seller
 This table contains different benchmarks of your organization for the TravelgateX marketplace.
