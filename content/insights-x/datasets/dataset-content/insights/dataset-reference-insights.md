@@ -177,7 +177,7 @@ __fields__
 * **session\_id (STRING).** Search date in UTC (format: YYYY-MM-DD hh:mm:ss).
 * **client\_id (STRING).** Client unique ID.
 * **provider\_id (STRING).** Provider unique ID.
-* **username (STRING).* User ID in provider's system.
+* **username (STRING).** User ID in provider's system.
 * **booking\_date (TIMESTAMP).** Booking date in UTC (format: YYYY-MM-DD hh:mm:ss).
 * **checkin\_date (TIMESTAMP).** Checkin date in UTC (format: YYYY-MM-DD hh:mm:ss).
 * **amount (NUMBER).** Amount of booking in EUR.
@@ -203,9 +203,9 @@ __fields__
 
 __Preview__
 
-| session\_id | client\_id | provider\_id | booking\_date | checkin\_date | amount | cancel\_date | market | market\_name | num\_room | nights | country | zone\_1 | zone\_2 | city | hotel\_code | hotel\_name |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 123456789012 | client 1 | provider 1 | 2018-03-28 12:21:18 UTC | 2018-05-28 12:00:00 UTC | 244.72 | _null_ | IT | Italy | 1 | 3 | US | Utah | Garfield County | Panguitch | 123 | Hotel Test |
+| session\_id                           | client\_id   | provider\_id | booking\_date            | checkin\_date            | hotel\_code | client\_locator | provider\_locator                     | res\_status | amount | currency | amount\_eur | cancel\_date | nationality | num\_room | nights | username                        | adults | children | infants | commission |
+|--------------------------------------|-------------|-------------|-------------------------|-------------------------|------------|----------------|--------------------------------------|------------|--------|----------|------------|-------------|-------------|----------|--------|---------------------------------|--------|----------|---------|------------|
+| 123456789012 | client 1 | provider 1         | 2019-06-05 20:32:20 UTC | 2019-06-26 12:00:00 UTC | 123345   | 677890     | 987654321 | OK         | 262.54 | USD      | 233.33     |     null        | MX          | 1        | 1      | 234321| 3      | 0        | 0       | 0.0        |
 
 ## daily\_portfolio\_seller
 This table is used to know which hotels over supplier's portfolio are being queried by the clients. This can be helpful to know which percentage over portfolio is mapped by the client.
@@ -214,7 +214,7 @@ __fields__
 
 * **client\_id	(STRING).** Client unique ID.
 * **provider\_id (STRING).** Provider unique ID.
-* **username (STRING).* User ID in provider's system.
+* **username (STRING).** User ID in provider's system.
 * **hotel (STRING).** Hotel unique ID.
 * **hotel\_name\_portfolio (STRING).** Hotel name.
 * **country (STRING).** Hotel Country Code (ISO Alpha-2 code).
