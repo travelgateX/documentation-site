@@ -7,7 +7,15 @@ weight = 2
 alwaysopen = false
 +++
 
-The Blacklist plugin is used to ignore hotel code(s) when a Search query is executed. 
+The Blacklist plugin is used to ignore hotel code(s) when a Search query is executed. This means that all the hotels on the blacklist won't be requested to the supplier. You can apply also rules in order to block an entire supplier. _More details regarding configuration below_.
+
+## Definitions
+* **Client Token**: Dynamic parameter you can send on the RQ in case you want to differentiate the traffic. _For B2B clients could help to differentiate agency groups_
+* **Client**: The client you use on HotelX to make requests. 
+* **Supplier**: The supplier you want to apply the rule/s. _You have tu use the supplier code_
+* **Access**: The access code you want to apply the rule/s. _Maybe you want to block hotels for an specific access_
+* **Context**: The context you send on the RQ.
+* **ContextSup**: Every supplier has a context, it's used to build mapping files or to specify it on the RQ. _The one you receive with every activation delivery. You can also retrieve them by using our Admin query_ 
 
 Loading a Blacklist is as easy as following the steps below:
 
@@ -16,9 +24,7 @@ Loading a Blacklist is as easy as following the steps below:
 The file should be in the below format:
 
 * **Encoding**: UTF-8
-
 * **File Name**: `blacklist\_access\_hotels.csv`
-
 * **Header Row**: IdRule,ClientToken,NoClientToken,Client,NoClient,Supplier,NoSupplier,Access,NoAccess,Context,NoContext,ContextSup,NoContextSup,Values
 
     * IdRule: Unique identifier of the rule. 
@@ -34,7 +40,7 @@ The file should be in the below format:
     * Values: `Hotel codes blacklisted grouped by context`. These values are separated by the characters  '|@|' . All values should have two blocks separated by the characters '||'. The first block identifies the context and the second block identifies the list of hotel codes separated by ';'.This cell must be specified between two characters ' " '. 
 
     
-    You should bear in mind this file is a collection of rules, and we chose in every Search the rule that better matches the criteria sent in the Query. Moreover, only one of the rules specified will match the criteria, therefore you should specify the more restrictive rules on the top of the file. 
+    You should bear in mind that this file is a collection of rules and we chose in every Search the first rule that matches the criteria sent in the Query. You should specify the more restrictive rules on the top of the file. 
     If there is no value for any rule criteria row, it means that any value in the request matches this row. 
     It is important to indicate the contexts used in values on the rule criteria to improve rule matching.
 
