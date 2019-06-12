@@ -169,6 +169,19 @@ iframe {
   overflow: auto;
 }
 
+.menu-right > p.menu-head {
+  background: #082da6;
+  color: white;
+  padding: 5px;
+  margin: 0px;
+}
+
+p.menu-head > span {
+  float: right;
+  font-size: 2.3rem;
+  cursor: pointer;
+}
+
 .menu-right nav {
   display: block;
   background-color: rgba(247, 248, 249, 0.8);
