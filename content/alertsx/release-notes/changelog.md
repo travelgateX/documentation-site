@@ -10,8 +10,28 @@ hidden = false
 tags = ["products-changelog"]
 +++
 
-Easily accessible log of notable changes to Alerts-X API
+Easily accessible log of notable changes to Alerts-X
+
+
+## 2019-06-12
+{{% release-notes-container type="f"%}}
+- Fixed an error that was causing an unsuccessful alert create or update to set `clients`, `suppliers` and `accesses` to the alert for Travelgate Teams users.
+{{% /release-notes-container %}}
+
+## 2019-06-11
+{{% release-notes-container type="f"%}}
+- Fixed an error to return all the `events` of the alerts.
+{{% /release-notes-container %}}
+
+## 2019-06-06
+{{% release-notes-container type="a"%}}
+- Added `/Health` to check service status.
+{{% /release-notes-container %}}
 
 ## 2019-05-23
+{{% release-notes-container type="a"%}}
+- Alerts-X [product documentation](https://docs.travelgatex.com/alertsx/) is available
+{{% /release-notes-container %}}
 
-- Alerts-X [product documentation](https://docs.travelgatex.com/alerts/)
+
+
