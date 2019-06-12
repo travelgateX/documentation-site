@@ -13,6 +13,26 @@ tags = ["products-changelog"]
 Easily accessible log of notable changes to Stats-X
 
 
+## 2019-06-12
+{{% release-notes-container type="f"%}}
+- Fix an error that was causing to have empty `operations` in the response.
+{{% /release-notes-container %}}
+
+## 2019-06-03
+{{% release-notes-container type="a"%}}
+- New scalar type Int64 has been created. `hits` in `StatsData`, `totalHits` in `OperationDetailed` and `hits` in `StatsInfo` have changed its type to this new scalar.
+{{% /release-notes-container %}}
+
+## 2019-05-30
+{{% release-notes-container type="f"%}}
+- Now `adviceMessage`'s from others TravelgateX products are returned as `external` in owns `adviceMessage`'s.
+{{% /release-notes-container %}}
+
+## 2019-05-23
+{{% release-notes-container type="f"%}}
+- Now `type` of `StatsInfo`returns the correct value.
+{{% /release-notes-container %}}
+
 ## 2019-05-22
 {{% release-notes-container type="a"%}}
 - Now stats are available from 01/01/2018. Requests by `accessCode` are available only from 15/05/2019.
