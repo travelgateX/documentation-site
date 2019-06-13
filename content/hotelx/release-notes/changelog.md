@@ -14,9 +14,8 @@ Easily accessible log of notable changes to HotelX API
 {{% alert theme="info" %}}All notable changes in our platform will be documented on this page.{{% /alert %}}
 
 ## 2019-06-13
-{{% release-notes-container type="s"%}}
+{{% release-notes-container type="a"%}}
 - New fields in search respone. room/features, room/supplierCode and ratPlan/supplierCode.
-- New field in book response. book/booking/billingSupplierCode.
 {{% /release-notes-container %}}
 
 {{% release-notes-container type="s"%}}
