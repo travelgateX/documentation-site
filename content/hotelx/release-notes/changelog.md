@@ -11,8 +11,18 @@ tags = ["products-changelog"]
 +++
 
 Easily accessible log of notable changes to HotelX API
-
 {{% alert theme="info" %}}All notable changes in our platform will be documented on this page.{{% /alert %}}
+
+## 2019-06-13
+{{% release-notes-container type="s"%}}
+- New fields in search respone. room/features, room/supplierCode and ratPlan/supplierCode.
+- New field in book response. book/booking/billingSupplierCode.
+{{% /release-notes-container %}}
+
+{{% release-notes-container type="s"%}}
+- Security improvements.
+{{% /release-notes-container %}}
+
 ## 2019-05-27
 {{% release-notes-container type="a"%}}
 - Added searchPrice in Quote and quotePrice in Book
