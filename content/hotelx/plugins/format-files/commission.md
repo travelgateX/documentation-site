@@ -17,6 +17,7 @@ The commission file should be in the below format:
 * **Extension file**: csv
 * **Headers**:
     * _ruleId_  → rule identifier
+    * _clientTokens_  → client token used for index the rule
     * _supplierCodes_  → supplier code
     * _notSupplierCodes_  → supplier code
     * _creationDateFrom_  → start creation date [**Date format**](/hotelx/plugins/format-files/commission#dateformat)
@@ -47,6 +48,7 @@ The commission file should be in the below format:
         |Field | Mandatory | Excluded fields* | Multi-value |
         |---|---|---|---|
         |ruleId| Yes | - | No |
+        |clientTokens| No | - | No |
         |supplierCodes| Yes | notSupplierCodes | Yes |
         |notSupplierCodes| Yes | supplierCodes | Yes |
         |creationDateFrom| No | - | No |
@@ -71,20 +73,20 @@ The commission file should be in the below format:
 
 **Name**: context\_sequential_commission.csv
 
-**Data**:
+**Data** without client tokens:
 
 **Simple value field**
 ```csv
-ruleId,supplierCodes,notSupplierCodes,creationDateFrom,creationDateTo,checkInFrom,checkInTo,hotelCodes,notHotelCodes,chainCodes,notChainCodes,destinationCodes,notDestinationCodes,percentage,force
-CE1,DIN,,,,2018-04-01,2018-10-31,3846,,,,,,18.50,false
-CE2,DIN,,,,,,3846,,,,,,15.00,false
+ruleId,clientTokens,supplierCodes,notSupplierCodes,creationDateFrom,creationDateTo,checkInFrom,checkInTo,hotelCodes,notHotelCodes,chainCodes,notChainCodes,destinationCodes,notDestinationCodes,percentage,force
+CE1,testClientTokens,DIN,,,,2018-04-01,2018-10-31,3846,,,,,,18.50,false
+CE2,,DIN,,,,,,3846,,,,,,15.00,false
 ```
 
 **Multivalue field**
 ```csv
-ruleId,supplierCodes,notSupplierCodes,creationDateFrom,creationDateTo,checkInFrom,checkInTo,hotelCodes,notHotelCodes,chainCodes,notChainCodes,destinationCodes,notDestinationCodes,percentage,force
-CE1,DIN;HOB;JMB,,,,2018-04-01,2018-10-31,3846,,,,,,18.50,false
-CE2,DIN,,,,,,3846,,,,,,15.00,false
+ruleId,clientTokens,supplierCodes,notSupplierCodes,creationDateFrom,creationDateTo,checkInFrom,checkInTo,hotelCodes,notHotelCodes,chainCodes,notChainCodes,destinationCodes,notDestinationCodes,percentage,force
+CE1,testClientTokens,DIN;HOB;JMB,,,,2018-04-01,2018-10-31,3846,,,,,,18.50,false
+CE2,,DIN,,,,,,3846,,,,,,15.00,false
 ```
 
 #### **Date format** {#dateformat}

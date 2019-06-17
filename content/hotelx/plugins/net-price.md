@@ -41,8 +41,49 @@ We read sequentially the commission file if the columns **chainCodes,destination
 |[destination](/hotelx/plugins/entity_table_file#destination)| Yes | No | Yes |
 
 ### Execution example
-It is not necessary to specify it in Query (Settings->Plugins) 
-
-
-
-
+if you want index by client tokens it is necessary to specify the client token as shown below, if the token is not specified, by default, the system will apply those rules that do not have client tokens.
+```json
+{
+	"criteriaSearch": {
+		"checkIn": "2019-10-23",
+		"checkOut": "2019-10-24",
+		"hotels": [
+			"1"
+		],
+		"occupancies": [
+			{
+				"paxes": [
+					{
+						"age": 1
+					},
+					{
+						"age": 30
+					}
+				]
+			}
+		],
+		"language": "en",
+		"nationality": "GB",
+		"currency": "EUR",
+		"market": "ES"
+	},
+	"settings": {
+		"context": null,
+		"client": "xtg",
+		"auditTransactions": true,
+		"testMode": true,
+		"clientTokens": [
+			"testClientTokens"
+		],
+		"plugins": []
+	},
+	"filter": {
+		"access": {
+			"includes": [
+				"297"
+			],
+			"excludes": null
+		}
+	}
+}
+```
