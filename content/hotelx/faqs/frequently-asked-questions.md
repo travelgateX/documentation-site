@@ -37,6 +37,26 @@ Our recommendation is to test which timeout fits your needs better, taking into 
 **How is the response time of the different providers managed in the aggregator mode?**
 HotelX will return the information from all the suppliers at the same time, once all the responses have been obtained by them. As for the requests that have timed out, they will be signaled by a warning in the response.
 
+## HotelXRoomQueryInput
+**I've run a request to obtain the information on the Room list and I receive a list of nodes that include code and text but I cannot see the relation between the rooms and the hotels. Is it possible that the roomdata is being received directly from the supplier and that is independent from the hotel?**
+
+Yes, the RoomList contains all the rooms that can be returned, regardless of the hotel. You can map the supplier roomcodes with yours, if that is the case, but not by hotelcode.
+
+## HotelXBoardQueryInput - MealplanList
+**How can I obtain the supplier’s mealplans?**
+
+You can download the full list of mealplans from the provider by using the board query:
+https://docs.travelgatex.com/hotelx/concepts/content/#boards
+
+**I've run a request to obtain the information on the Board list and I receive a list of nodes that include code and text but I cannot see the relation between the boards and the hotels. Is it possible that the boarddata is being received directly from the supplier and that is independent from the hotel?**
+
+Yes, the BoardList contains all the boards that can be returned, regardless of the hotel. You can map the supplier boardcodes with yours, if that is the case, but not by hotelcode.
+
+
+## HotelXCategoryQueryInput
+
+As in the previous cases with the HotelXRoomQueryInput and HotelXBoardQueryInput, the categories returned are the ones from the supplier.
+
 ## Client Nationality
 **Are there any restrictions to the client’s nationality?**
 
@@ -70,6 +90,12 @@ While in the development process and until our Certification Process is passed, 
 
 **Do I have access to all the hotels in the test environment?**
 No, we use a test supplier, so there is a limited number of hotels in the database to be used.
+
+## Context
+**Can we define our own context for 2 or more test suppliers? This will help us to test how the requests will work with our own context.**
+
+Yes, you can create your own context for HOTELTEST and TTHOTTEST. You will need to upload the mapping files according to our documentation and use your own context when making the requests: 
+https://docs.travelgatex.com/hotelx/plugins/mapping/
 
 ## Search
 **How to structure a multi-room in HotelX**
@@ -187,6 +213,10 @@ Bear in mind, that a booking may have more than one penalty type associated, dep
 Normally UTC time is used, but if the provider responds with hotel timezone we add 24 hours.
 You will find further information [`here`](/hotelx/reference/objects/cancelpenalty/)
 
+**Is there any possibility to obtain the RoomCodes in the Quote step?**
+
+As you can only request quotation for one option of the search step, there is no need for passing the RoomCodes in Quote. You can retrieve this information in Search step in the Rooms node.
+
 
 ## Book
 **I'm receiving `The number of rooms doesn't match with option's number of rooms` error on the book step, how do I define the number of rooms?**
@@ -271,6 +301,10 @@ Please check our content section for further information: `link`
 
 In the Welcome Pack mail you will find attached our `Usecases` and Insomnia environment packs with some query and mutation examples.
 For further information, feel free to access our [`content section`](/hotelx/concepts/content/)
+
+**Where do I find the available services at the hotel?**
+
+You can find this information in the hotel list query under Amenities.
 
 **Could I know all amenities information in your system? I mean all code and text.**
 
