@@ -191,7 +191,7 @@
     {
       "typeString": "[DestinationSearchResult]!",
       "name": "destinationSearcher",
-      "url": "#",
+      "url": "/hotelx/reference/Union/DestinationSearchResult",
       "description": null,
       "isDeprecated": false,
       "args": [
