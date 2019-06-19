@@ -13,6 +13,15 @@ tags = ["products-changelog"]
 Easily accessible log of notable changes to HotelX API
 {{% alert theme="info" %}}All notable changes in our platform will be documented on this page.{{% /alert %}}
 
+## 2019-06-19
+{{% release-notes-container type="a"%}}
+- New field in book, cancel and booking respone. booking/billingSupplierCode.
+- New blacklist file format. The values has changed to allow new features. You can see the documentation [here](https://docs.travelgatex.com/hotelx/plugins/black-list/). 
+- New field for the commision file. Now you can put clienToken for each rule. You can see the documentation [here](https://docs.travelgatex.com/hotelx/plugins/net-price/). 
+- Internal system improvements. 
+{{% /release-notes-container %}}
+
+
 ## 2019-06-13
 {{% release-notes-container type="a"%}}
 - New fields in search respone. room/features, room/supplierCode and ratPlan/supplierCode.
