@@ -29,7 +29,7 @@ Easily accessible log of notable changes to Insights-X
 {{% /release-notes-container %}}
 
 {{% release-notes-container type="a"%}}
-* Benchmark is available now for Performance. Added [new table](/insights-x/datasets/dataset-content/benchmark/Insights/dataset-reference-benchmark/) in benchmark: performance\_daily\_(buyer|seller).
+* Benchmark is available now for Performance. Added [new table](/insights-x/datasets/dataset-content/benchmark/insights/dataset-reference-benchmark/) in benchmark: performance\_daily\_(buyer|seller).
 {{% /release-notes-container %}}
 
 ## 2019-05-27
@@ -45,7 +45,7 @@ Easily accessible log of notable changes to Insights-X
 {{% /release-notes-container %}}
 
 {{% release-notes-container type="c"%}}
-* Benchmark table daily\_benchmarking\_seller replaced by new ones benchmark [tables](/insights-x/datasets/dataset-content/benchmark/Insights/dataset-reference-benchmark/)
+* Benchmark table daily\_benchmarking\_seller replaced by new ones benchmark [tables](/insights-x/datasets/dataset-content/benchmark/insights/dataset-reference-benchmark/)
 
 {{% /release-notes-container %}}
 
@@ -60,7 +60,7 @@ Easily accessible log of notable changes to Insights-X
 {{% /release-notes-container %}}
 
 {{% release-notes-container type="a"%}}
-* Benchmark [Concepts](/insights-x/datasets/dataset-content/benchmark/Insights/dataset-concepts-benchmark/)
+* Benchmark [Concepts](/insights-x/datasets/dataset-content/benchmark/insights/dataset-concepts-benchmark/)
 {{% /release-notes-container %}}
 
 ## 2019-02-21
