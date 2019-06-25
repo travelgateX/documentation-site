@@ -31,7 +31,6 @@ To make it easier for users and contributors to see precisely what notable chang
 - Stats: stats view all adviseMessages and only reject if error
 {{% /release-notes-container %}}
 
-
 ## 2019-06-06
 
 {{% release-notes-container type="a"%}}
