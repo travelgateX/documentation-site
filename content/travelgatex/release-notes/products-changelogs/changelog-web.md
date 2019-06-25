@@ -11,7 +11,7 @@ hidden = false
 
 To make it easier for users and contributors to see precisely what notable changes have been made on the web.
 
-[Web site Link](https://www.travelgatex.com/)
+[Web site Link](https://www.travelgatex.com/)]
 
 {{% alert theme="info" %}}All notable changes to this product will be documented in this page.{{% /alert %}
 
