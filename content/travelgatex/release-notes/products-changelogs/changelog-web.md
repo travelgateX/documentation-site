@@ -13,7 +13,7 @@ To make it easier for users and contributors to see precisely what notable chang
 
 [Web site Link](https://www.travelgatex.com/)
 
-{{% alert theme="info" %}}All notable changes to this product will be documented in this page.{{% /alert %}
+{{% alert theme="info" %}}All notable changes to this product will be documented in this page.{{% /alert %}}
 
 ## 2019-06-20
 
