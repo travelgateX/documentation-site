@@ -140,7 +140,7 @@ To make it easier for users and contributors to see precisely what notable chang
 
 {{% release-notes-container type="f"%}}
 - IAM-organizations: Solved a bug produced when trying to add/removes apis to/from a group
-- IAM-members: Solved bug with member deletion
+- IAM-members: Solved bug with member deletion 
 {{% /release-notes-container %}}
 
 ## 2019-03-31
