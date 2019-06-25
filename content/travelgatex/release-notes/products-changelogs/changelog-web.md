@@ -13,7 +13,89 @@ To make it easier for users and contributors to see precisely what notable chang
 
 [Web site Link](https://www.travelgatex.com/)
 
-{{% alert theme="info" %}}All notable changes to this product will be documented in this page.{{% /alert %}}
+{{% alert theme="info" %}}All notable changes to this product will be documented in this page.{{% /alert %}
+
+## 2019-06-20
+
+{{% release-notes-container type="a"%}}
+- TEAMs: Improved TEAMs page to allow see teams to all TGX operators
+- Stats: Now shows totals and percentatge on all headers
+- IAM Members: Added icon type members to be more clean
+- IAM Members: Improvement to keep groups open at IAM page
+{{% /release-notes-container %}}
+
+{{% release-notes-container type="f"%}}
+- Profiles: Revised redirections to all profile pages
+- IAM Members: fixed creation of new members solving issue on granting permissions
+- IAM create organization: New organizations, pattern code has been changed to allow numbers on organization code
+- Stats: stats view all adviseMessages and only reject if error
+{{% /release-notes-container %}}
+
+
+## 2019-06-06
+
+{{% release-notes-container type="a"%}}
+- IAM admin entities: UX improve, now expanded by default
+{{% /release-notes-container %}}
+
+{{% release-notes-container type="f"%}}
+- IAM admin entities: The accesses list weren't showing the supplier data asociated
+- Stats: stats view all adviseMessages and only reject if error
+{{% /release-notes-container %}}
+
+## 2019-05-29
+
+{{% release-notes-container type="a"%}}
+- IAM members: added macro-roles for distribution
+- IAM members: added macro-roles for alerts and agrupations
+- IAM: added "suit organization" option to adapt organizations to IAM tree structure.
+{{% /release-notes-container %}}
+
+{{% release-notes-container type="f"%}}
+- IAM: removed mandatory condition to label
+- Stats: moved assets to other
+{{% /release-notes-container %}}
+
+## 2019-05-24
+
+{{% release-notes-container type="a"%}}
+- Insights: New public page published
+- Organizations: organizations' summary page 
+- Stats: view error others
+- Stats: UX improvement on cursor to download
+{{% /release-notes-container %}}
+
+{{% release-notes-container type="f"%}}
+- HotelX: Fixed issue that prevented configs from refreshing when changing hotelX instances
+- Stats: Issue on filter stats when impersonating
+{{% /release-notes-container %}}
+
+## 2019-05-16
+
+{{% release-notes-container type="a"%}}
+- IAM: Revised edit labels.
+- IAM: Edit functionality for group labels.
+- Vertical Menu: Improved style.
+{{% /release-notes-container %}}
+
+{{% release-notes-container type="f"%}}
+- Members: Solved issue on getting members.
+{{% /release-notes-container %}}
+
+## 2019-05-10
+
+{{% release-notes-container type="f"%}}
+- Members: Some members were not showing the tick on isActive when they were active.
+- Events: Invert past events to be first the most recent
+- Connect: Fixed bug on clicking reload on firefox
+{{% /release-notes-container %}}
+
+## 2019-05-03
+
+{{% release-notes-container type="a"%}}
+- Email: Implemented new mailing system to send emails from the web.
+- Connect: Improved control over disabled controls and added flexibility to dates.
+{{% /release-notes-container %}}
 
 ## 2019-04-30
 
