@@ -1,14 +1,4 @@
-+++
-title = "ChannelX"
-pagetitle = ""
-description = ""
-weight = 7
-icon="fa-cube"
-svgicon= "https://media.graphcms.com/1HVLatj5SF2WZpID4S6X"
-alwaysopen = false
-isDirectory = false
-+++
-It is a tool that allows a third partner to receive the product of the different channel managers in an unique standardized API. The objective of this platform is to **speed up** the extraction and the combination of the product for the Client. In order for this to work, Clients should build up an internal service to be able to receive the messages sent from *ChannelX*.
-
-{{%custom-children%}}
-
+<\!DOCTYPE html><meta charset="utf-8">
+<title>Redirecting to https://docs.travelgatex.com/channel-x/</title>
+<meta http-equiv="refresh" content="0; URL=https://docs.travelgatex.com/channel-x/">
+<link rel="canonical" href="https://docs.travelgatex.com/channel-x/">

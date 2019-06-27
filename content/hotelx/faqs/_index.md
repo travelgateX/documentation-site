@@ -1,15 +1,4 @@
-+++
-title = "FAQs"
-pagetitle = "HotelX Frequendly Asked Questions"
-description = "Do you have specific questions about HotelX? Check out the FAQs"
-icon = "fa-question-circle"
-weight = 7
-alwaysopen = false
-isDirectory = false
-+++ 
-
-## Faqs pages
-
-FAQs and common errors pages:
-
-{{%custom-children%}}
+<!DOCTYPE html><meta charset="utf-8">
+<title>Redirecting to https://docs.travelgatex.com/hotel-x/faqs/</title>
+<meta http-equiv="refresh" content="0; URL=https://docs.travelgatex.com/hotel-x/faqs/">
+<link rel="canonical" href="https://docs.travelgatex.com/hotel-x/faqs/">

@@ -1,28 +1,4 @@
-{
-  "title": "Pax",
-  "description": "",
-  "weight": 1,
-  "fields": [
-    {
-      "typeString": "Int!",
-      "name": "age",
-      "url": "/hotelx/reference/scalars/int",
-      "description": "Specifies the age pax.",
-      "isDeprecated": false,
-      "args": null
-    }
-  ],
-  "requireby": null,
-  "enumValues": null,
-  "operator": "type",
-  "typename": "Pax",
-  "hideGithubLink": true
-}
-Specifies the age pax. The range of what is considered an adult, infant or baby is particular to each supplier.
-## GraphQL schema definition
-
-{{% graphql-schema-type %}}
-
-## Fields
-
-{{% graphql-field %}}
+<!DOCTYPE html><meta charset="utf-8">
+<title>Redirecting to https://docs.travelgatex.com/hotel-x/reference/objects/pax/</title>
+<meta http-equiv="refresh" content="0; URL=https://docs.travelgatex.com/hotel-x/reference/objects/pax/">
+<link rel="canonical" href="https://docs.travelgatex.com/hotel-x/reference/objects/pax/">

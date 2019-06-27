@@ -1,19 +1,4 @@
-+++
-title = "Processor"
-pagetitle = ""
-description = "Modify objects on both request and response."
-icon = "fa-cog"
-weight = 4
-alwaysopen = false
-+++
-
-Processor plugins extends [HotelX](/hotelx/) allowing multiple operation types. It can modify _request_ and _response_ messages, allowing a full range of operations:
-
-* Split arrays
-* Join arrays
-* Modify object values
-* Add or remove object instances
-
-
-
-
+<!DOCTYPE html><meta charset="utf-8">
+<title>Redirecting to https://docs.travelgatex.com/hotel-x/plugins/processor/</title>
+<meta http-equiv="refresh" content="0; URL=https://docs.travelgatex.com/hotel-x/plugins/processor/">
+<link rel="canonical" href="https://docs.travelgatex.com/hotel-x/plugins/processor/">

@@ -1,43 +1,4 @@
-{
-  "title": "AdviseMessageLevel",
-  "description": "",
-  "weight": 1,
-  "fields": null,
-  "requireby": [
-    {
-      "name": "AdviseMessage",
-      "description": "List of advise messages.",
-      "url": "/hotelx/reference/objects/advisemessage"
-    }
-  ],
-  "enumValues": [
-    {
-      "name": "WARN",
-      "description": "Waringn message.",
-      "isDeprecated": false,
-      "deprecationReason": null
-    },
-    {
-      "name": "ERROR",
-      "description": "Error message.",
-      "isDeprecated": false,
-      "deprecationReason": null
-    },
-    {
-      "name": "INFO",
-      "description": "Info message.",
-      "isDeprecated": false,
-      "deprecationReason": null
-    }
-  ],
-  "operator": "enum",
-  "typename": "AdviseMessageLevel",
-  "hideGithubLink": true
-}
-## GraphQL schema definition
-
-{{% graphql-schema-enum %}}
-
-## Required by
-
-{{% graphql-require-by %}}
+<!DOCTYPE html><meta charset="utf-8">
+<title>Redirecting to https://docs.travelgatex.com/hotel-x/reference/enums/advisemessagelevel/</title>
+<meta http-equiv="refresh" content="0; URL=https://docs.travelgatex.com/hotel-x/reference/enums/advisemessagelevel/">
+<link rel="canonical" href="https://docs.travelgatex.com/hotel-x/reference/enums/advisemessagelevel/">

@@ -1,13 +1,4 @@
-+++
-title = "How-to guides"
-pagetitle = "HotelX how-to guides"
-description = "Perform specific tasks"
-icon = "fa-list"
-weight = 4
-alwaysopen = false
-isDirectory=false
-+++
-
-## The guides
-
-{{%custom-children%}}
+<!DOCTYPE html><meta charset="utf-8">
+<title>Redirecting to https://docs.travelgatex.com/hotel-x/howtos/</title>
+<meta http-equiv="refresh" content="0; URL=https://docs.travelgatex.com/hotel-x/howtos/">
+<link rel="canonical" href="https://docs.travelgatex.com/hotel-x/howtos/">

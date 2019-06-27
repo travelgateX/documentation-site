@@ -1,44 +1,4 @@
-{
-  "title": "CancelPenaltyType",
-  "description": "",
-  "weight": 1,
-  "fields": null,
-  "requireby": [
-    {
-      "name": "CancelPenalty",
-      "description": "Contains information for cancellation penalities..",
-      "url": "/hotelx/reference/objects/cancelpenalty"
-    }
-  ],
-  "enumValues": [
-    {
-      "name": "NIGHTS",
-      "description": "Indicates the number of nights to be penalized.",
-      "isDeprecated": false,
-      "deprecationReason": null
-    },
-    {
-      "name": "PERCENT",
-      "description": "Indicates the percentage to pay based on the option price.",
-      "isDeprecated": false,
-      "deprecationReason": null
-    },
-    {
-      "name": "IMPORT",
-      "description": "Indicates the exact amount payable.",
-      "isDeprecated": false,
-      "deprecationReason": null
-    }
-  ],
-  "operator": "enum",
-  "typename": "CancelPenaltyType",
-  "hideGithubLink": true
-}
-Options type
-## GraphQL schema definition
-
-{{% graphql-schema-enum %}}
-
-## Required by
-
-{{% graphql-require-by %}}
+<!DOCTYPE html><meta charset="utf-8">
+<title>Redirecting to https://docs.travelgatex.com/hotel-x/reference/enums/cancelpenaltytype/</title>
+<meta http-equiv="refresh" content="0; URL=https://docs.travelgatex.com/hotel-x/reference/enums/cancelpenaltytype/">
+<link rel="canonical" href="https://docs.travelgatex.com/hotel-x/reference/enums/cancelpenaltytype/">

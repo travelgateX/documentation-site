@@ -1,38 +1,4 @@
-{
-  "title": "MarkupRuleType",
-  "description": "",
-  "weight": 1,
-  "fields": null,
-  "requireby": [
-    {
-      "name": "Rule",
-      "description": "",
-      "url": "/hotelx/reference/objects/rule"
-    }
-  ],
-  "enumValues": [
-    {
-      "name": "PERCENT",
-      "description": "Indicates the percentage applied by a rule.",
-      "isDeprecated": false,
-      "deprecationReason": null
-    },
-    {
-      "name": "IMPORT",
-      "description": "Indicates the exact amount applied by a rule.",
-      "isDeprecated": false,
-      "deprecationReason": null
-    }
-  ],
-  "operator": "enum",
-  "typename": "MarkupRuleType",
-  "hideGithubLink": true
-}
-Indicates what type of value is the markup, by percentage or is an import.
-## GraphQL schema definition
-
-{{% graphql-schema-enum %}}
-
-## Required by
-
-{{% graphql-require-by %}}
+<!DOCTYPE html><meta charset="utf-8">
+<title>Redirecting to https://docs.travelgatex.com/hotel-x/reference/enums/markupruletype/</title>
+<meta http-equiv="refresh" content="0; URL=https://docs.travelgatex.com/hotel-x/reference/enums/markupruletype/">
+<link rel="canonical" href="https://docs.travelgatex.com/hotel-x/reference/enums/markupruletype/">

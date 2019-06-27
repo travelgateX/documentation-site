@@ -1,11 +1,4 @@
-+++
-title = "Booking Flow"
-pagetitle = "Search, Quote and Book"
-description = "Learn about Transactional Booking flow. Search, Quote and Confirm Reservation"
-icon = "fa-book"
-weight = 3
-alwaysopen = false
-+++
-
-{{%custom-children%}}
-
+<!DOCTYPE html><meta charset="utf-8">
+<title>Redirecting to https://docs.travelgatex.com/hotel-x/search-mode/</title>
+<meta http-equiv="refresh" content="0; URL=https://docs.travelgatex.com/hotel-x/search-mode/">
+<link rel="canonical" href="https://docs.travelgatex.com/hotel-x/search-mode/">

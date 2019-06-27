@@ -1,28 +1,4 @@
-{
-  "title": "RoomCriteria",
-  "description": "",
-  "weight": 1,
-  "fields": [
-    {
-      "typeString": "[Pax!]!",
-      "name": "paxes",
-      "url": "/hotelx/reference/objects/pax",
-      "description": "Array of pax ages. The number of items in the array will indicate the pax occupancy.",
-      "isDeprecated": false,
-      "args": null
-    }
-  ],
-  "requireby": null,
-  "enumValues": null,
-  "operator": "type",
-  "typename": "RoomCriteria",
-  "hideGithubLink": true
-}
-Occupancy for a room. It contains a list of pax ages.
-## GraphQL schema definition
-
-{{% graphql-schema-type %}}
-
-## Fields
-
-{{% graphql-field %}}
+<!DOCTYPE html><meta charset="utf-8">
+<title>Redirecting to https://docs.travelgatex.com/hotel-x/reference/objects/roomcriteria/</title>
+<meta http-equiv="refresh" content="0; URL=https://docs.travelgatex.com/hotel-x/reference/objects/roomcriteria/">
+<link rel="canonical" href="https://docs.travelgatex.com/hotel-x/reference/objects/roomcriteria/">

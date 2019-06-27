@@ -1,34 +1,4 @@
-{
-  "title": "PluginStepInput",
-  "description": "",
-  "weight": 1,
-  "fields": [
-    {
-      "typeString": "PluginStepType!",
-      "name": "step",
-      "url": "/hotelx/reference/enums/pluginsteptype",
-      "description": "Indicates where the plugin will be executed.",
-      "args": null
-    },
-    {
-      "typeString": "[PluginsInput!]",
-      "name": "pluginsType",
-      "url": "/hotelx/reference/inputobjects/pluginsinput",
-      "description": "Indicates the plugin that will be executed.",
-      "args": null
-    }
-  ],
-  "requireby": null,
-  "enumValues": null,
-  "operator": "type",
-  "typename": "PluginStepInput",
-  "hideGithubLink": true
-}
-Plugin to execute.
-## GraphQL schema definition
-
-{{% graphql-schema-type %}}
-
-## Fields
-
-{{% graphql-field %}}
+<!DOCTYPE html><meta charset="utf-8">
+<title>Redirecting to https://docs.travelgatex.com/hotel-x/reference/inputobjects/pluginstepinput/</title>
+<meta http-equiv="refresh" content="0; URL=https://docs.travelgatex.com/hotel-x/reference/inputobjects/pluginstepinput/">
+<link rel="canonical" href="https://docs.travelgatex.com/hotel-x/reference/inputobjects/pluginstepinput/">

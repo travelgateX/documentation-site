@@ -1,33 +1,4 @@
-{
-  "title": "HotelXBoardQueryInput",
-  "description": "",
-  "weight": 1,
-  "fields": [
-    {
-      "typeString": "[String!]",
-      "name": "boardCodes",
-      "url": "/hotelx/reference/scalars/string",
-      "description": "Indicates the board codes that you want filter.",
-      "args": null
-    },
-    {
-      "typeString": "ID!",
-      "name": "access",
-      "url": "/hotelx/reference/scalars/id",
-      "description": "Indicates the access that you want use.",
-      "args": null
-    }
-  ],
-  "requireby": null,
-  "enumValues": null,
-  "operator": "type",
-  "typename": "HotelXBoardQueryInput",
-  "hideGithubLink": true
-}
-## GraphQL schema definition
-
-{{% graphql-schema-type %}}
-
-## Fields
-
-{{% graphql-field %}}
+<!DOCTYPE html><meta charset="utf-8">
+<title>Redirecting to https://docs.travelgatex.com/hotel-x/reference/inputobjects/hotelxboardqueryinput/</title>
+<meta http-equiv="refresh" content="0; URL=https://docs.travelgatex.com/hotel-x/reference/inputobjects/hotelxboardqueryinput/">
+<link rel="canonical" href="https://docs.travelgatex.com/hotel-x/reference/inputobjects/hotelxboardqueryinput/">

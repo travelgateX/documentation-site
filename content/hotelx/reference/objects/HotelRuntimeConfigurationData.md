@@ -1,37 +1,4 @@
-{
-  "title": "HotelRuntimeConfigurationData",
-  "description": "",
-  "weight": 1,
-  "fields": [
-    {
-      "typeString": "[HotelRuntimeParameter!]!",
-      "name": "hotelRuntimeParameters",
-      "url": "/hotelx/reference/objects/hotelruntimeparameter",
-      "description": "List of parameters object",
-      "isDeprecated": false,
-      "args": null
-    }
-  ],
-  "requireby": [
-    {
-      "name": "HotelRuntimeConfiguration",
-      "description": "",
-      "url": "/hotelx/reference/objects/hotelruntimeconfiguration"
-    }
-  ],
-  "enumValues": null,
-  "operator": "type",
-  "typename": "HotelRuntimeConfigurationData",
-  "hideGithubLink": true
-}
-## GraphQL schema definition
-
-{{% graphql-schema-type %}}
-
-## Fields
-
-{{% graphql-field %}}
-
-## Required by
-
-{{% graphql-require-by %}}
+<!DOCTYPE html><meta charset="utf-8">
+<title>Redirecting to https://docs.travelgatex.com/hotel-x/reference/objects/hotelruntimeconfigurationdata/</title>
+<meta http-equiv="refresh" content="0; URL=https://docs.travelgatex.com/hotel-x/reference/objects/hotelruntimeconfigurationdata/">
+<link rel="canonical" href="https://docs.travelgatex.com/hotel-x/reference/objects/hotelruntimeconfigurationdata/">

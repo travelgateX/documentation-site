@@ -1,26 +1,4 @@
-{
-  "title": "HotelXFilterInput",
-  "description": "",
-  "weight": 1,
-  "fields": [
-    {
-      "typeString": "HotelXPluginFilterInput",
-      "name": "plugin",
-      "url": "/hotelx/reference/inputobjects/hotelxpluginfilterinput",
-      "description": "Only is possible to specify one of this filters, it allows to filter which plugins have to be executed or excluded",
-      "args": null
-    }
-  ],
-  "requireby": null,
-  "enumValues": null,
-  "operator": "type",
-  "typename": "HotelXFilterInput",
-  "hideGithubLink": true
-}
-## GraphQL schema definition
-
-{{% graphql-schema-type %}}
-
-## Fields
-
-{{% graphql-field %}}
+<!DOCTYPE html><meta charset="utf-8">
+<title>Redirecting to https://docs.travelgatex.com/hotel-x/reference/inputobjects/hotelxfilterinput/</title>
+<meta http-equiv="refresh" content="0; URL=https://docs.travelgatex.com/hotel-x/reference/inputobjects/hotelxfilterinput/">
+<link rel="canonical" href="https://docs.travelgatex.com/hotel-x/reference/inputobjects/hotelxfilterinput/">

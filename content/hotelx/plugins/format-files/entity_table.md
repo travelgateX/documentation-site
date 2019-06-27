@@ -1,16 +1,4 @@
-+++
-title = "Entity Table values"
-pagetitle = "Entity Table Values"
-description = "Table entity values."
-icon = "fa-file-o"
-weight = 6
-alwaysopen = false
-+++
-
-We have different combinations values from entities values this table show this combinations:
-
-|[**entity**](/hotelx/plugins/entity_table_file#entityprocessed) | chainCodes| destinationCodes| hotelCodes |
-|---------|---|---|---|
-|chain| Yes | No | No |
-|hotel| No | No | Yes |
-|destination| No | Yes | No |
+<!DOCTYPE html><meta charset="utf-8">
+<title>Redirecting to https://docs.travelgatex.com/hotel-x/plugins/format-files/entity_table/</title>
+<meta http-equiv="refresh" content="0; URL=https://docs.travelgatex.com/hotel-x/plugins/format-files/entity_table/">
+<link rel="canonical" href="https://docs.travelgatex.com/hotel-x/plugins/format-files/entity_table/">

@@ -1,10 +1,4 @@
-{
-  "title": "Input objects",
-  "hideGithubLink": true,
-	"pagetitle": null,
-  "description": "",
-  "weight": 5,
-  "icon": "fa-keyboard-o",
-  "alwaysopen": false
-}
-{{% wip %}}
+<!DOCTYPE html><meta charset="utf-8">
+<title>Redirecting to https://docs.travelgatex.com/hotel-x/reference/inputobjects/</title>
+<meta http-equiv="refresh" content="0; URL=https://docs.travelgatex.com/hotel-x/reference/inputobjects/">
+<link rel="canonical" href="https://docs.travelgatex.com/hotel-x/reference/inputobjects/">

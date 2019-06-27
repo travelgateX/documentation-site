@@ -1,34 +1,4 @@
-{
-  "title": "ParameterInput",
-  "description": "",
-  "weight": 1,
-  "fields": [
-    {
-      "typeString": "String!",
-      "name": "key",
-      "url": "/hotelx/reference/scalars/string",
-      "description": "Contains the keyword/Id to identify a parameter.\nThis information is mandatory.",
-      "args": null
-    },
-    {
-      "typeString": "String!",
-      "name": "value",
-      "url": "/hotelx/reference/scalars/string",
-      "description": "Contains the parameter values.\nThis information is mandatory.",
-      "args": null
-    }
-  ],
-  "requireby": null,
-  "enumValues": null,
-  "operator": "type",
-  "typename": "ParameterInput",
-  "hideGithubLink": true
-}
-Parameters Input.
-## GraphQL schema definition
-
-{{% graphql-schema-type %}}
-
-## Fields
-
-{{% graphql-field %}}
+<!DOCTYPE html><meta charset="utf-8">
+<title>Redirecting to https://docs.travelgatex.com/hotel-x/reference/inputobjects/parameterinput/</title>
+<meta http-equiv="refresh" content="0; URL=https://docs.travelgatex.com/hotel-x/reference/inputobjects/parameterinput/">
+<link rel="canonical" href="https://docs.travelgatex.com/hotel-x/reference/inputobjects/parameterinput/">

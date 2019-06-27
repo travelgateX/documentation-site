@@ -1,10 +1,4 @@
-+++
-title = "Development"
-pagetitle = "Create your own plugin"
-description = "Learn how to develop your own plugins and addd your magic to the API."
-icon = "fa-wrench"
-weight = 6
-alwaysopen = false
-+++
-
-On this page you will learn how to develop your own [HotelX](/hotelx/) _Plugin_.
+<!DOCTYPE html><meta charset="utf-8">
+<title>Redirecting to https://docs.travelgatex.com/hotel-x/plugins/development/</title>
+<meta http-equiv="refresh" content="0; URL=https://docs.travelgatex.com/hotel-x/plugins/development/">
+<link rel="canonical" href="https://docs.travelgatex.com/hotel-x/plugins/development/">

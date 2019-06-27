@@ -1,45 +1,4 @@
-{
-  "title": "HotelXUpdateStatusData",
-  "description": "",
-  "weight": 1,
-  "fields": [
-    {
-      "typeString": "ID!",
-      "name": "code",
-      "url": "/hotelx/reference/scalars/id",
-      "description": "",
-      "isDeprecated": false,
-      "args": null
-    },
-    {
-      "typeString": "Boolean!",
-      "name": "isActive",
-      "url": "/hotelx/reference/scalars/boolean",
-      "description": "",
-      "isDeprecated": false,
-      "args": null
-    }
-  ],
-  "requireby": [
-    {
-      "name": "HotelXUpdateStatus",
-      "description": "",
-      "url": "/hotelx/reference/objects/hotelxupdatestatus"
-    }
-  ],
-  "enumValues": null,
-  "operator": "type",
-  "typename": "HotelXUpdateStatusData",
-  "hideGithubLink": true
-}
-## GraphQL schema definition
-
-{{% graphql-schema-type %}}
-
-## Fields
-
-{{% graphql-field %}}
-
-## Required by
-
-{{% graphql-require-by %}}
+<!DOCTYPE html><meta charset="utf-8">
+<title>Redirecting to https://docs.travelgatex.com/hotel-x/reference/objects/hotelxupdatestatusdata/</title>
+<meta http-equiv="refresh" content="0; URL=https://docs.travelgatex.com/hotel-x/reference/objects/hotelxupdatestatusdata/">
+<link rel="canonical" href="https://docs.travelgatex.com/hotel-x/reference/objects/hotelxupdatestatusdata/">

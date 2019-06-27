@@ -1,43 +1,4 @@
-{
-  "title": "ChargeType",
-  "description": "",
-  "weight": 1,
-  "fields": null,
-  "requireby": [
-    {
-      "name": "Supplement",
-      "description": "Supplement that it can be or its already added to the option returned. Contains all the information about the supplement.",
-      "url": "/hotelx/reference/objects/supplement"
-    },
-    {
-      "name": "Surcharge",
-      "description": "Surcharge that it can be or it is already added to the option returned. Contains all the information about the surcharge.",
-      "url": "/hotelx/reference/objects/surcharge"
-    }
-  ],
-  "enumValues": [
-    {
-      "name": "INCLUDE",
-      "description": "The charge is included.",
-      "isDeprecated": false,
-      "deprecationReason": null
-    },
-    {
-      "name": "EXCLUDE",
-      "description": "The charge is excluded.",
-      "isDeprecated": false,
-      "deprecationReason": null
-    }
-  ],
-  "operator": "enum",
-  "typename": "ChargeType",
-  "hideGithubLink": true
-}
-Charge Type
-## GraphQL schema definition
-
-{{% graphql-schema-enum %}}
-
-## Required by
-
-{{% graphql-require-by %}}
+<!DOCTYPE html><meta charset="utf-8">
+<title>Redirecting to https://docs.travelgatex.com/hotel-x/reference/enums/chargetype/</title>
+<meta http-equiv="refresh" content="0; URL=https://docs.travelgatex.com/hotel-x/reference/enums/chargetype/">
+<link rel="canonical" href="https://docs.travelgatex.com/hotel-x/reference/enums/chargetype/">

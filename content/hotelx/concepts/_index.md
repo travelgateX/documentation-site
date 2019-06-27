@@ -1,10 +1,4 @@
-+++
-title = "Concepts"
-pagetitle = "HotelX Basics"
-description = "Understand TravelgateX basic concepts"
-icon = "fa-question-circle" 
-weight = 3
-alwaysopen = false
-+++
-
-{{%custom-children%}}
+<!DOCTYPE html><meta charset="utf-8">
+<title>Redirecting to https://docs.travelgatex.com/hotel-x/concepts/</title>
+<meta http-equiv="refresh" content="0; URL=https://docs.travelgatex.com/hotel-x/concepts/">
+<link rel="canonical" href="https://docs.travelgatex.com/hotel-x/concepts/">

@@ -1,12 +1,4 @@
-+++
-title = "Release Notes"
-pagetitle = "New Updates & Releases"
-description = "New Updates & Releases"
-icon="fa-map"
-weight = 6
-alwaysopen = false
-isDirectory = false
-tags = ["release-notes"]
-+++
-
-{{%custom-children%}}
+<\!DOCTYPE html><meta charset="utf-8">
+<title>Redirecting to https://docs.travelgatex.com/channel-x/release-notes/</title>
+<meta http-equiv="refresh" content="0; URL=https://docs.travelgatex.com/channel-x/release-notes/">
+<link rel="canonical" href="https://docs.travelgatex.com/channel-x/release-notes/">

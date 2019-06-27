@@ -1,38 +1,4 @@
-+++
-title = "Commission supplier"
-pagetitle = "Commission supplier"
-description = "Format commission supplier file."
-icon = "fa-file-text-o"
-weight = 3
-alwaysopen = false
-+++
-
-The commission supplier file should be in the below format:
-
-### Commission supplier File Format
-
-The file should be in the below format:
-
-* **Encoding**: UTF-8 
-* **File Name**: commission\_supplier.csv
-    * [supplier](/travelgatex/concepts/common-resources)
-    * commission
-* **Extension file**: csv
-* **Headers**:
-    *  [supplier](/travelgatex/concepts/common-resources)  → supplier code
-    *   _commission_ → commission value, decimal separator must be point (".")
-* **Delimiter**:  Comma (“,”)
-* **Separator for multiples codes in the same row**: Semicolon (";")
-* **Directory**: /F[folder code]\_[unique code]/HotelX\_[unique code]/
-
-#### Sample File
-
-**Name**: commission\_supplier.csv
-
-**Data**:
-
-```csv
-Supplier,Commission
-AXI,0
-AXI2,0
-```
+<!DOCTYPE html><meta charset="utf-8">
+<title>Redirecting to https://docs.travelgatex.com/hotel-x/plugins/format-files/commission_supplier/</title>
+<meta http-equiv="refresh" content="0; URL=https://docs.travelgatex.com/hotel-x/plugins/format-files/commission_supplier/">
+<link rel="canonical" href="https://docs.travelgatex.com/hotel-x/plugins/format-files/commission_supplier/">

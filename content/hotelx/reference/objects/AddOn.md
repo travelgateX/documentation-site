@@ -1,36 +1,4 @@
-{
-  "title": "AddOn",
-  "description": "",
-  "weight": 1,
-  "fields": [
-    {
-      "typeString": "String!",
-      "name": "key",
-      "url": "/hotelx/reference/scalars/string",
-      "description": "Contains keyword/ID to identify the AddOn.",
-      "isDeprecated": false,
-      "args": null
-    },
-    {
-      "typeString": "JSON!",
-      "name": "value",
-      "url": "/hotelx/reference/scalars/json",
-      "description": "Contains AddOn values.",
-      "isDeprecated": false,
-      "args": null
-    }
-  ],
-  "requireby": null,
-  "enumValues": null,
-  "operator": "type",
-  "typename": "AddOn",
-  "hideGithubLink": true
-}
-Additional information about the option
-## GraphQL schema definition
-
-{{% graphql-schema-type %}}
-
-## Fields
-
-{{% graphql-field %}}
+<!DOCTYPE html><meta charset="utf-8">
+<title>Redirecting to https://docs.travelgatex.com/hotel-x/reference/objects/addon/</title>
+<meta http-equiv="refresh" content="0; URL=https://docs.travelgatex.com/hotel-x/reference/objects/addon/">
+<link rel="canonical" href="https://docs.travelgatex.com/hotel-x/reference/objects/addon/">
