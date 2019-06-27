@@ -7,7 +7,7 @@
       "typeString": "Int!",
       "name": "age",
       "url": "/hotelx/reference/scalars/int",
-      "description": null,
+      "description": "Specifies the age pax.",
       "isDeprecated": false,
       "args": null
     }
@@ -18,6 +18,7 @@
   "typename": "Pax",
   "hideGithubLink": true
 }
+Specifies the age pax. The range of what is considered an adult, infant or baby is particular to each supplier.
 ## GraphQL schema definition
 
 {{% graphql-schema-type %}}

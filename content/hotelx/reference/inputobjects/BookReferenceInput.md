@@ -7,21 +7,21 @@
       "typeString": "String",
       "name": "client",
       "url": "/hotelx/reference/scalars/string",
-      "description": null,
+      "description": "The client's reference",
       "args": null
     },
     {
       "typeString": "String",
       "name": "supplier",
       "url": "/hotelx/reference/scalars/string",
-      "description": null,
+      "description": "The Supplier's reference",
       "args": null
     }
   ],
   "requireby": [
     {
       "name": "HotelCancelInput",
-      "description": null,
+      "description": "Cancellation Criteria.",
       "url": "/hotelx/reference/inputobjects/hotelcancelinput"
     }
   ],
@@ -30,6 +30,7 @@
   "typename": "BookReferenceInput",
   "hideGithubLink": true
 }
+Reference object that contains the client reference and/or supplier reference.
 ## GraphQL schema definition
 
 {{% graphql-schema-type %}}

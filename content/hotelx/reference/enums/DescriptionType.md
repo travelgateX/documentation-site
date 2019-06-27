@@ -6,62 +6,62 @@
   "requireby": [
     {
       "name": "Description",
-      "description": null,
+      "description": "Object description indicates the type and the description about something.",
       "url": "/hotelx/reference/objects/description"
     }
   ],
   "enumValues": [
     {
       "name": "ADDITIONAL",
-      "description": null,
+      "description": "Additional Information",
       "isDeprecated": false,
       "deprecationReason": null
     },
     {
       "name": "AMENITY",
-      "description": null,
+      "description": "Amenities",
       "isDeprecated": false,
       "deprecationReason": null
     },
     {
       "name": "ACTIVITY",
-      "description": null,
+      "description": "Activities",
       "isDeprecated": false,
       "deprecationReason": null
     },
     {
       "name": "RESTAURANT",
-      "description": null,
+      "description": "Restaurants",
       "isDeprecated": false,
       "deprecationReason": null
     },
     {
       "name": "ROOM",
-      "description": null,
+      "description": "Rooms",
       "isDeprecated": false,
       "deprecationReason": null
     },
     {
       "name": "GENERAL",
-      "description": null,
+      "description": "General",
       "isDeprecated": false,
       "deprecationReason": null
     },
     {
       "name": "POOL",
-      "description": null,
+      "description": "Pools",
       "isDeprecated": false,
       "deprecationReason": null
     },
     {
       "name": "LOCATION",
-      "description": null,
+      "description": "Locations",
       "isDeprecated": false,
       "deprecationReason": null
     },
     {
       "name": "HOW_TO_GET",
-      "description": null,
+      "description": "How to get",
       "isDeprecated": false,
       "deprecationReason": null
     }
@@ -70,6 +70,7 @@
   "typename": "DescriptionType",
   "hideGithubLink": true
 }
+Indicates the type of description
 ## GraphQL schema definition
 
 {{% graphql-schema-enum %}}

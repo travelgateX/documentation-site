@@ -7,7 +7,7 @@
       "typeString": "String",
       "name": "code",
       "url": "/hotelx/reference/scalars/string",
-      "description": null,
+      "description": "External Code",
       "isDeprecated": false,
       "args": null
     },
@@ -15,7 +15,7 @@
       "typeString": "String!",
       "name": "message",
       "url": "/hotelx/reference/scalars/string",
-      "description": null,
+      "description": "External Message",
       "isDeprecated": false,
       "args": null
     }
@@ -23,7 +23,7 @@
   "requireby": [
     {
       "name": "AdviseMessage",
-      "description": null,
+      "description": "List of advise messages.",
       "url": "/hotelx/reference/objects/advisemessage"
     }
   ],

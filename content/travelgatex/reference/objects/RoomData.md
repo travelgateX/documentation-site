@@ -7,7 +7,7 @@
       "typeString": "ID!",
       "name": "code",
       "url": "/travelgatex/reference/scalars/id",
-      "description": null,
+      "description": "Internal code for checking availability",
       "isDeprecated": false,
       "args": null
     },
@@ -15,7 +15,7 @@
       "typeString": "String!",
       "name": "roomCode",
       "url": "/travelgatex/reference/scalars/string",
-      "description": null,
+      "description": "Code of the hotel in the Supplier selected",
       "isDeprecated": false,
       "args": null
     },
@@ -23,14 +23,14 @@
       "typeString": "[Text!]",
       "name": "texts",
       "url": "/travelgatex/reference/objects/text",
-      "description": null,
+      "description": "Label",
       "isDeprecated": false,
       "args": [
         {
           "typeString": "[Language!]",
           "name": "languages",
           "url": "/travelgatex/reference/scalars/language",
-          "description": null
+          "description": ""
         }
       ]
     }
@@ -38,7 +38,7 @@
   "requireby": [
     {
       "name": "RoomStatic",
-      "description": null,
+      "description": "Room Type",
       "url": "/travelgatex/reference/objects/roomstatic"
     }
   ],
@@ -47,6 +47,7 @@
   "typename": "RoomData",
   "hideGithubLink": true
 }
+Room data
 ## GraphQL schema definition
 
 {{% graphql-schema-type %}}

@@ -7,14 +7,14 @@
       "typeString": "String!",
       "name": "optionRefId",
       "url": "/travelgatex/reference/scalars/string",
-      "description": null,
+      "description": "Identifier of the option chosen in the search.",
       "args": null
     },
     {
       "typeString": "Language",
       "name": "language",
       "url": "/travelgatex/reference/scalars/language",
-      "description": null,
+      "description": "Language to be used in request",
       "args": null
     }
   ],
@@ -24,6 +24,7 @@
   "typename": "HotelCriteriaQuoteInput",
   "hideGithubLink": true
 }
+The quote criteria contains the option reference id, block and language.
 ## GraphQL schema definition
 
 {{% graphql-schema-type %}}

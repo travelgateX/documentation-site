@@ -7,7 +7,7 @@
       "typeString": "Boolean!",
       "name": "hasNextPage",
       "url": "/hotelx/reference/scalars/boolean",
-      "description": null,
+      "description": "",
       "isDeprecated": false,
       "args": null
     },
@@ -15,7 +15,7 @@
       "typeString": "Boolean!",
       "name": "hasPreviousPage",
       "url": "/hotelx/reference/scalars/boolean",
-      "description": null,
+      "description": "",
       "isDeprecated": false,
       "args": null
     },
@@ -23,7 +23,7 @@
       "typeString": "String!",
       "name": "startCursor",
       "url": "/hotelx/reference/scalars/string",
-      "description": null,
+      "description": "",
       "isDeprecated": false,
       "args": null
     },
@@ -31,7 +31,7 @@
       "typeString": "String!",
       "name": "endCursor",
       "url": "/hotelx/reference/scalars/string",
-      "description": null,
+      "description": "",
       "isDeprecated": false,
       "args": null
     }
@@ -39,27 +39,27 @@
   "requireby": [
     {
       "name": "BoardConnection",
-      "description": null,
+      "description": "BoardList definition",
       "url": "/hotelx/reference/objects/boardconnection"
     },
     {
       "name": "CategoryConnection",
-      "description": null,
+      "description": "CategoryList definition",
       "url": "/hotelx/reference/objects/categoryconnection"
     },
     {
       "name": "HotelConnection",
-      "description": null,
+      "description": "HotelList definition",
       "url": "/hotelx/reference/objects/hotelconnection"
     },
     {
       "name": "RoomConnection",
-      "description": null,
+      "description": "RoomList definition",
       "url": "/hotelx/reference/objects/roomconnection"
     },
     {
       "name": "DestinationConnection",
-      "description": null,
+      "description": "DestinationList definition",
       "url": "/hotelx/reference/objects/destinationconnection"
     }
   ],

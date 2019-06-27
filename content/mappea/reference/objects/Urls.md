@@ -7,7 +7,7 @@
       "typeString": "URI",
       "name": "search",
       "url": "/mappea/reference/scalars/uri",
-      "description": null,
+      "description": "Specific URL for Availability method.",
       "isDeprecated": false,
       "args": null
     },
@@ -15,7 +15,7 @@
       "typeString": "URI",
       "name": "quote",
       "url": "/mappea/reference/scalars/uri",
-      "description": null,
+      "description": "Specific URL for Reservation method.",
       "isDeprecated": false,
       "args": null
     },
@@ -23,7 +23,7 @@
       "typeString": "URI",
       "name": "book",
       "url": "/mappea/reference/scalars/uri",
-      "description": null,
+      "description": "Specific URL for Valuation method.",
       "isDeprecated": false,
       "args": null
     },
@@ -31,7 +31,7 @@
       "typeString": "URI",
       "name": "generic",
       "url": "/mappea/reference/scalars/uri",
-      "description": null,
+      "description": "Supplier URL used for multiple methods.",
       "isDeprecated": false,
       "args": null
     }
@@ -39,7 +39,7 @@
   "requireby": [
     {
       "name": "AccessData",
-      "description": null,
+      "description": "",
       "url": "/mappea/reference/objects/accessdata"
     }
   ],
@@ -48,6 +48,7 @@
   "typename": "Urls",
   "hideGithubLink": true
 }
+Url's
 ## GraphQL schema definition
 
 {{% graphql-schema-type %}}

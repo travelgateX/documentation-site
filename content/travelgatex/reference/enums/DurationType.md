@@ -6,20 +6,20 @@
   "requireby": [
     {
       "name": "Supplement",
-      "description": null,
+      "description": "Supplement that it can be or its already added to the option returned. Contains all the information about the supplement.",
       "url": "/travelgatex/reference/objects/supplement"
     }
   ],
   "enumValues": [
     {
       "name": "RANGE",
-      "description": null,
+      "description": "Date range is set.",
       "isDeprecated": false,
       "deprecationReason": null
     },
     {
       "name": "OPEN",
-      "description": null,
+      "description": "Not restricted by date.",
       "isDeprecated": false,
       "deprecationReason": null
     }
@@ -28,6 +28,7 @@
   "typename": "DurationType",
   "hideGithubLink": true
 }
+Duration Type
 ## GraphQL schema definition
 
 {{% graphql-schema-enum %}}

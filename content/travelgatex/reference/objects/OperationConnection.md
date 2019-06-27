@@ -7,7 +7,7 @@
       "typeString": "[OperationEdge]",
       "name": "edges",
       "url": "/travelgatex/reference/objects/operationedge",
-      "description": null,
+      "description": "",
       "isDeprecated": false,
       "args": null
     },
@@ -15,7 +15,7 @@
       "typeString": "PageInfo!",
       "name": "pageInfo",
       "url": "/travelgatex/reference/objects/pageinfo",
-      "description": null,
+      "description": "",
       "isDeprecated": false,
       "args": null
     }
@@ -23,12 +23,12 @@
   "requireby": [
     {
       "name": "AdminQuery",
-      "description": null,
+      "description": "The admin query root of TravelgateX's GraphQL interface.",
       "url": "/travelgatex/reference/objects/adminquery"
     },
     {
       "name": "APIData",
-      "description": null,
+      "description": "",
       "url": "/travelgatex/reference/objects/apidata"
     }
   ],

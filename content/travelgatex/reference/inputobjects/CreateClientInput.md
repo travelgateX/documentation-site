@@ -7,28 +7,28 @@
       "typeString": "String!",
       "name": "name",
       "url": "/travelgatex/reference/scalars/string",
-      "description": null,
+      "description": "Client complete name",
       "args": null
     },
     {
       "typeString": "Boolean!",
       "name": "isActive",
       "url": "/travelgatex/reference/scalars/boolean",
-      "description": null,
+      "description": "Indicates whether a Client is active or inactive",
       "args": null
     },
     {
       "typeString": "String!",
       "name": "group",
       "url": "/travelgatex/reference/scalars/string",
-      "description": null,
+      "description": "Group where the client will be assigned at first",
       "args": null
     },
     {
       "typeString": "ID",
       "name": "owner",
       "url": "/travelgatex/reference/scalars/id",
-      "description": null,
+      "description": "Client owner",
       "args": null
     }
   ],

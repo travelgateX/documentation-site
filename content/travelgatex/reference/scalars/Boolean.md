@@ -6,298 +6,193 @@
   "requireby": [
     {
       "name": "SupplierFilter",
-      "description": null,
+      "description": "",
       "url": "/travelgatex/reference/inputobjects/supplierfilter"
     },
     {
       "name": "ClientFilter",
-      "description": null,
+      "description": "",
       "url": "/travelgatex/reference/inputobjects/clientfilter"
     },
     {
       "name": "EntityFilter",
-      "description": null,
+      "description": "",
       "url": "/travelgatex/reference/inputobjects/entityfilter"
     },
     {
       "name": "PageInfo",
-      "description": null,
+      "description": "",
       "url": "/travelgatex/reference/objects/pageinfo"
     },
     {
       "name": "AccessData",
-      "description": null,
+      "description": "",
       "url": "/travelgatex/reference/objects/accessdata"
     },
     {
       "name": "SupplierData",
-      "description": null,
+      "description": "",
       "url": "/travelgatex/reference/objects/supplierdata"
     },
     {
       "name": "Provider",
-      "description": null,
+      "description": "Temporary type to use only during SQL server's lifetime",
       "url": "/travelgatex/reference/objects/provider"
     },
     {
       "name": "OrganizationData",
-      "description": null,
+      "description": "",
       "url": "/travelgatex/reference/objects/organizationdata"
     },
     {
       "name": "GroupCommonData",
-      "description": null,
+      "description": "",
       "url": "/travelgatex/reference/interfaces/groupcommondata"
     },
     {
       "name": "MemberData",
-      "description": null,
+      "description": "",
       "url": "/travelgatex/reference/objects/memberdata"
     },
     {
       "name": "ClientData",
-      "description": null,
+      "description": "",
       "url": "/travelgatex/reference/objects/clientdata"
     },
     {
       "name": "GroupData",
-      "description": null,
+      "description": "",
       "url": "/travelgatex/reference/objects/groupdata"
     },
     {
       "name": "APIData",
-      "description": null,
+      "description": "",
       "url": "/travelgatex/reference/objects/apidata"
     },
     {
       "name": "ResourceData",
-      "description": null,
+      "description": "",
       "url": "/travelgatex/reference/objects/resourcedata"
     },
     {
       "name": "RoleData",
-      "description": null,
+      "description": "",
       "url": "/travelgatex/reference/objects/roledata"
     },
     {
       "name": "ProfileData",
-      "description": null,
+      "description": "Profile data",
       "url": "/travelgatex/reference/objects/profiledata"
     },
     {
-      "name": "HotelXHotelFilterInput",
-      "description": null,
-      "url": "/travelgatex/reference/inputobjects/hotelxhotelfilterinput"
-    },
-    {
       "name": "HotelSettingsInput",
-      "description": null,
+      "description": "Settings that you can edit for this avail. Values are loaded by default in our Back Office.",
       "url": "/travelgatex/reference/inputobjects/hotelsettingsinput"
     },
     {
       "name": "HotelData",
-      "description": null,
+      "description": "Hotel data",
       "url": "/travelgatex/reference/objects/hoteldata"
     },
     {
       "name": "DestinationData",
-      "description": null,
+      "description": "Information about destinantion",
       "url": "/travelgatex/reference/objects/destinationdata"
     },
     {
       "name": "SettingsBaseInput",
-      "description": null,
+      "description": "Contains the time out and business rules of a supplier or an access.",
       "url": "/travelgatex/reference/inputobjects/settingsbaseinput"
     },
     {
       "name": "Room",
-      "description": null,
+      "description": "Contains the room information of the option returned.",
       "url": "/travelgatex/reference/objects/room"
     },
     {
       "name": "Price",
-      "description": null,
+      "description": "Price indicates the value of the room/option.\nSupplements and/or surcharges can be included into the price, and will be verified with nodes Supplements/Surcharges.",
       "url": "/travelgatex/reference/objects/price"
     },
     {
       "name": "Supplement",
-      "description": null,
+      "description": "Supplement that it can be or its already added to the option returned. Contains all the information about the supplement.",
       "url": "/travelgatex/reference/objects/supplement"
     },
     {
       "name": "Surcharge",
-      "description": null,
+      "description": "Surcharge that it can be or it is already added to the option returned. Contains all the information about the surcharge.",
       "url": "/travelgatex/reference/objects/surcharge"
     },
     {
       "name": "CancelPolicy",
-      "description": null,
+      "description": "Information about a policy cancellation.",
       "url": "/travelgatex/reference/objects/cancelpolicy"
     },
     {
       "name": "Bed",
-      "description": null,
+      "description": "Contains information about a bed.",
       "url": "/travelgatex/reference/objects/bed"
     },
     {
       "name": "Markup",
-      "description": null,
+      "description": "Informs markup applied over supplier price.",
       "url": "/travelgatex/reference/objects/markup"
     },
     {
       "name": "Priceable",
-      "description": null,
+      "description": "",
       "url": "/travelgatex/reference/interfaces/priceable"
     },
     {
-      "name": "PriceChange",
-      "description": null,
-      "url": "/travelgatex/reference/objects/pricechange"
-    },
-    {
       "name": "HotelRuntimeParameter",
-      "description": null,
+      "description": "template of all fields used by the supplier",
       "url": "/travelgatex/reference/objects/hotelruntimeparameter"
     },
     {
-      "name": "StatsFilterInput",
-      "description": null,
-      "url": "/travelgatex/reference/inputobjects/statsfilterinput"
-    },
-    {
       "name": "OperationDetailed",
-      "description": null,
+      "description": "Stats information per operation",
       "url": "/travelgatex/reference/objects/operationdetailed"
     },
     {
-      "name": "AlertCriteriaInput",
-      "description": null,
-      "url": "/travelgatex/reference/inputobjects/alertcriteriainput"
-    },
-    {
-      "name": "AlertData",
-      "description": null,
-      "url": "/travelgatex/reference/objects/alertdata"
-    },
-    {
-      "name": "AlertConfiguration",
-      "description": null,
-      "url": "/travelgatex/reference/objects/alertconfiguration"
-    },
-    {
       "name": "AccessInput",
-      "description": null,
+      "description": "Access input",
       "url": "/travelgatex/reference/inputobjects/accessinput"
     },
     {
       "name": "CreateClientInput",
-      "description": null,
+      "description": "",
       "url": "/travelgatex/reference/inputobjects/createclientinput"
     },
     {
       "name": "UpdateClientInput",
-      "description": null,
+      "description": "",
       "url": "/travelgatex/reference/inputobjects/updateclientinput"
     },
     {
       "name": "CreateProfileInput",
-      "description": null,
+      "description": "",
       "url": "/travelgatex/reference/inputobjects/createprofileinput"
     },
     {
       "name": "UpdateProfileInput",
-      "description": null,
+      "description": "",
       "url": "/travelgatex/reference/inputobjects/updateprofileinput"
     },
     {
-      "name": "UpdateMemberInput",
-      "description": null,
-      "url": "/travelgatex/reference/inputobjects/updatememberinput"
-    },
-    {
       "name": "HotelXUpdateStatusData",
-      "description": null,
+      "description": "",
       "url": "/travelgatex/reference/objects/hotelxupdatestatusdata"
     },
     {
+      "name": "HotelXAuditInput",
+      "description": "",
+      "url": "/travelgatex/reference/inputobjects/hotelxauditinput"
+    },
+    {
       "name": "DeltaPriceInput",
-      "description": null,
+      "description": "Input delta price, indicates price variation permitted by the client\nAn error will be returned if the new price does not abide to DeltaPrice. If DeltaPrice is not sent and the integration implements it, we assume that the price range is 0 and the process will continue \n(price is lower or equal to the price showed in valuation).\nThis field is implemented if it’s native to the supplier or if another availability/valuation request needs to be done in Reservation. In case the supplier blocks the option in valuation, reservation \nwill be done automatically in reservation method.",
       "url": "/travelgatex/reference/inputobjects/deltapriceinput"
-    },
-    {
-      "name": "AlertInput",
-      "description": "Alert information. Only one configuration has to be set at once.",
-      "url": "/travelgatex/reference/inputobjects/alertinput"
-    },
-    {
-      "name": "AlertUpdateInput",
-      "description": null,
-      "url": "/travelgatex/reference/inputobjects/alertupdateinput"
-    },
-    {
-      "name": "AlertConfigurationInputNoTraffic",
-      "description": "Configuration for NO_TRAFFIC alert type. \nNo traffic alert is used to verify if there is traffic according to the parameters of the alert.",
-      "url": "/travelgatex/reference/inputobjects/alertconfigurationinputnotraffic"
-    },
-    {
-      "name": "AlertConfigurationInputErrorRate",
-      "description": "Configuration for ERROR_RATE alert type. \nError rate alert is used to verify traffic comparing its error codes. \nTher are two options. \n- OPTION 1: Can verify traffic of a time frame. Must set window field higher than 0.\n- OPTION 2: Can verify traffic of a specific number of requests. Must set window field as 0 and minNumRequest higher than 0.",
-      "url": "/travelgatex/reference/inputobjects/alertconfigurationinputerrorrate"
-    },
-    {
-      "name": "AlertConfigurationInputAverageTime",
-      "description": "Configuration for AVERAGE_TIME. \nAverage time is used to verify requests times.\nThere are 3 options:\n- OPTION 1: Can verify average time traffic of a time frame and compare it with an other time frame. (window and historical window) Must set field window and historical windows higher than 0.\n- OPTION 2: Can verify average time traffic of a time frame and compare it with the value max_average. Must set window higher than 0.\n- OPTION 3: Can verify average time traffic of a specific number of requests and compare it with the value max_average. Must set window as 0 and minNumRequests higher than 0.",
-      "url": "/travelgatex/reference/inputobjects/alertconfigurationinputaveragetime"
-    },
-    {
-      "name": "AlertConfigurationInputPeakTraffic",
-      "description": "Configuration for PEAK_TRAFFIC alert type. \nPeak traffic is used to verify traffic comparing volum of requests between to time frame (window and historical window) . ",
-      "url": "/travelgatex/reference/inputobjects/alertconfigurationinputpeaktraffic"
-    },
-    {
-      "name": "HubStatusInput",
-      "description": null,
-      "url": "/travelgatex/reference/inputobjects/hubstatusinput"
-    },
-    {
-      "name": "ErrorCodeInput",
-      "description": null,
-      "url": "/travelgatex/reference/inputobjects/errorcodeinput"
-    },
-    {
-      "name": "ErrorTypeInput",
-      "description": null,
-      "url": "/travelgatex/reference/inputobjects/errortypeinput"
-    },
-    {
-      "name": "AlertObjectInput",
-      "description": null,
-      "url": "/travelgatex/reference/inputobjects/alertobjectinput"
-    },
-    {
-      "name": "AlertGroupInput",
-      "description": null,
-      "url": "/travelgatex/reference/inputobjects/alertgroupinput"
-    },
-    {
-      "name": "AlertUpdateConfigurationInputNoTraffic",
-      "description": "Confiuration update for NO_TRAFFIC alert type. \nNo traffic alert is used to verify if there is traffic according to the parameters of the alert.",
-      "url": "/travelgatex/reference/inputobjects/alertupdateconfigurationinputnotraffic"
-    },
-    {
-      "name": "AlertUpdateConfigurationInputErrorRate",
-      "description": "Configuration update for error rate alert type. \nError rate alert is used to verify traffic comparing its error codes. \nTher are to options. \n- OPTION 1: Can verify traffic of a time frame. Set window field higher than 0.\n- OPTION 2: Can verify traffic of a specific number of requests. Set window fild as 0 and minNumRequest higher than 0.",
-      "url": "/travelgatex/reference/inputobjects/alertupdateconfigurationinputerrorrate"
-    },
-    {
-      "name": "AlertUpdateConfigurationInputAverageTime",
-      "description": "Configuration for AVERAGE_TIME. \nAverage time is used to verify requests times.\nThere are 3 options:\n- OPTION 1: Can verify average time traffic of a time frame and compare it with an other time frame. (window and historical window) Must set field window and historical windows higher than 0.\n- OPTION 2: Can verify average time traffic of a time frame and compare it with the value max_average. Must set window higher than 0.\n- OPTION 3: Can verify average time traffic of a specific number of requests and compare it with the value max_average. Must set window as 0 and minNumRequests higher than 0.",
-      "url": "/travelgatex/reference/inputobjects/alertupdateconfigurationinputaveragetime"
-    },
-    {
-      "name": "AlertUpdateConfigurationInputPeakTraffic",
-      "description": "Configuration update for PEAK_TRAFFIC alert type. Peak traffic is used to verify traffic comparing volum of requests between to time frame (window and historical window) . ",
-      "url": "/travelgatex/reference/inputobjects/alertupdateconfigurationinputpeaktraffic"
     }
   ],
   "enumValues": null,

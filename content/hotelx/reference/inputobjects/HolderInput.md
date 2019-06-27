@@ -7,26 +7,26 @@
       "typeString": "String!",
       "name": "name",
       "url": "/hotelx/reference/scalars/string",
-      "description": null,
+      "description": "The card holder's name",
       "args": null
     },
     {
       "typeString": "String!",
       "name": "surname",
       "url": "/hotelx/reference/scalars/string",
-      "description": null,
+      "description": "The card holder's surname",
       "args": null
     }
   ],
   "requireby": [
     {
       "name": "HotelBookInput",
-      "description": null,
+      "description": "Criteria of book.",
       "url": "/hotelx/reference/inputobjects/hotelbookinput"
     },
     {
       "name": "PaymentCardInput",
-      "description": null,
+      "description": "Input PaymentCard, if the payment is done by credit card, is it mandatory to specify the payment type and the credit card information",
       "url": "/hotelx/reference/inputobjects/paymentcardinput"
     }
   ],
@@ -35,6 +35,7 @@
   "typename": "HolderInput",
   "hideGithubLink": true
 }
+Holder object that contains the occupant's (pax's) name and surname.
 ## GraphQL schema definition
 
 {{% graphql-schema-type %}}

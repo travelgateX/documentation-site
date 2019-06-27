@@ -7,7 +7,7 @@
       "typeString": "[MemberEdge]",
       "name": "edges",
       "url": "/stats/reference/objects/memberedge",
-      "description": null,
+      "description": "",
       "isDeprecated": false,
       "args": null
     },
@@ -15,7 +15,7 @@
       "typeString": "PageInfo!",
       "name": "pageInfo",
       "url": "/stats/reference/objects/pageinfo",
-      "description": null,
+      "description": "",
       "isDeprecated": false,
       "args": null
     }
@@ -23,17 +23,17 @@
   "requireby": [
     {
       "name": "OrganizationData",
-      "description": null,
+      "description": "",
       "url": "/stats/reference/objects/organizationdata"
     },
     {
       "name": "GroupCommonData",
-      "description": null,
+      "description": "",
       "url": "/stats/reference/interfaces/groupcommondata"
     },
     {
       "name": "GroupData",
-      "description": null,
+      "description": "",
       "url": "/stats/reference/objects/groupdata"
     }
   ],

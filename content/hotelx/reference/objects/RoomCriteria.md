@@ -7,7 +7,7 @@
       "typeString": "[Pax!]!",
       "name": "paxes",
       "url": "/hotelx/reference/objects/pax",
-      "description": null,
+      "description": "Array of pax ages. The number of items in the array will indicate the pax occupancy.",
       "isDeprecated": false,
       "args": null
     }
@@ -18,6 +18,7 @@
   "typename": "RoomCriteria",
   "hideGithubLink": true
 }
+Occupancy for a room. It contains a list of pax ages.
 ## GraphQL schema definition
 
 {{% graphql-schema-type %}}

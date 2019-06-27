@@ -6,26 +6,26 @@
   "requireby": [
     {
       "name": "AdviseMessage",
-      "description": null,
+      "description": "List of advise messages.",
       "url": "/travelgatex/reference/objects/advisemessage"
     }
   ],
   "enumValues": [
     {
       "name": "WARN",
-      "description": null,
+      "description": "Waringn message.",
       "isDeprecated": false,
       "deprecationReason": null
     },
     {
       "name": "ERROR",
-      "description": null,
+      "description": "Error message.",
       "isDeprecated": false,
       "deprecationReason": null
     },
     {
       "name": "INFO",
-      "description": null,
+      "description": "Info message.",
       "isDeprecated": false,
       "deprecationReason": null
     }

@@ -7,7 +7,7 @@
       "typeString": "Currency",
       "name": "currency",
       "url": "/travelgatex/reference/scalars/currency",
-      "description": null,
+      "description": "",
       "isDeprecated": false,
       "args": null
     },
@@ -15,7 +15,7 @@
       "typeString": "BusinessRules",
       "name": "businessRules",
       "url": "/travelgatex/reference/objects/businessrules",
-      "description": null,
+      "description": "",
       "isDeprecated": false,
       "args": null
     },
@@ -23,7 +23,15 @@
       "typeString": "Timeout",
       "name": "timeout",
       "url": "/travelgatex/reference/objects/timeout",
-      "description": null,
+      "description": "",
+      "isDeprecated": false,
+      "args": null
+    },
+    {
+      "typeString": "HotelXAudit",
+      "name": "audit",
+      "url": "/travelgatex/reference/objects/hotelxaudit",
+      "description": "",
       "isDeprecated": false,
       "args": null
     }
@@ -31,7 +39,7 @@
   "requireby": [
     {
       "name": "HotelXCommonSettings",
-      "description": null,
+      "description": "",
       "url": "/travelgatex/reference/objects/hotelxcommonsettings"
     }
   ],

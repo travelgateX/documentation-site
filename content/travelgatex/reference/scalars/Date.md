@@ -6,52 +6,52 @@
   "requireby": [
     {
       "name": "HotelCriteriaSearchInput",
-      "description": null,
+      "description": "Search criteria contains destination, travel dates and the number of pax in each room.\nYou must preload the other fields in our system by complete the fields absents.",
       "url": "/travelgatex/reference/inputobjects/hotelcriteriasearchinput"
     },
     {
       "name": "CriteriaSearch",
-      "description": null,
+      "description": "Search criteria contains destination, travel dates and the number of pax in each room.",
       "url": "/travelgatex/reference/objects/criteriasearch"
     },
     {
       "name": "Supplement",
-      "description": null,
+      "description": "Supplement that it can be or its already added to the option returned. Contains all the information about the supplement.",
       "url": "/travelgatex/reference/objects/supplement"
     },
     {
       "name": "RatePlan",
-      "description": null,
+      "description": "Information about the rate of the option returned.",
       "url": "/travelgatex/reference/objects/rateplan"
     },
     {
       "name": "Promotion",
-      "description": null,
+      "description": "Information about room promotions(offers).",
       "url": "/travelgatex/reference/objects/promotion"
     },
     {
       "name": "PriceBreakdown",
-      "description": null,
+      "description": "Information about daily price.",
       "url": "/travelgatex/reference/objects/pricebreakdown"
     },
     {
       "name": "CriteriaBookingDatesInput",
-      "description": null,
+      "description": "Criteria by dates",
       "url": "/travelgatex/reference/inputobjects/criteriabookingdatesinput"
     },
     {
       "name": "BookingHotel",
-      "description": null,
+      "description": "",
       "url": "/travelgatex/reference/objects/bookinghotel"
     },
     {
       "name": "PaymentXStoredCardData",
-      "description": null,
+      "description": "",
       "url": "/travelgatex/reference/objects/paymentxstoredcarddata"
     },
     {
       "name": "PaymentXStoredCardInput",
-      "description": null,
+      "description": "",
       "url": "/travelgatex/reference/inputobjects/paymentxstoredcardinput"
     }
   ],
@@ -60,6 +60,8 @@
   "typename": "Date",
   "hideGithubLink": true
 }
+The Date type represents Date values. A good example might be a Hotel CheckIn Date.
+In queries or mutations, DateTime fields have to be specified in ISO 8601 format with enclosing double quotes: "2017-10-22".
 ## GraphQL schema definition
 
 {{% graphql-schema-scalar %}}

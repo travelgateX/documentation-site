@@ -7,7 +7,7 @@
       "typeString": "Product",
       "name": "node",
       "url": "/stats/reference/objects/product",
-      "description": null,
+      "description": "",
       "isDeprecated": false,
       "args": null
     },
@@ -15,7 +15,7 @@
       "typeString": "String!",
       "name": "cursor",
       "url": "/stats/reference/scalars/string",
-      "description": null,
+      "description": "",
       "isDeprecated": false,
       "args": null
     }
@@ -23,7 +23,7 @@
   "requireby": [
     {
       "name": "ProductConnection",
-      "description": null,
+      "description": "",
       "url": "/stats/reference/objects/productconnection"
     }
   ],

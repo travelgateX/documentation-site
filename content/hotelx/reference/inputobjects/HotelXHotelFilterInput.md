@@ -7,133 +7,98 @@
       "typeString": "[HotelXHotelFilterInput!]",
       "name": "AND",
       "url": "/hotelx/reference/inputobjects/hotelxhotelfilterinput",
-      "description": null,
+      "description": "Logical AND on all given filters.",
       "args": null
     },
     {
       "typeString": "[HotelXHotelFilterInput!]",
       "name": "OR",
       "url": "/hotelx/reference/inputobjects/hotelxhotelfilterinput",
-      "description": null,
+      "description": "Logical OR on all given filters.",
       "args": null
     },
     {
       "typeString": "[DateTime!]",
       "name": "createdAt_in",
       "url": "/hotelx/reference/scalars/datetime",
-      "description": null,
+      "description": "All values that are contained in given list.",
       "args": null
     },
     {
       "typeString": "[DateTime!]",
       "name": "createdAt_not_in",
       "url": "/hotelx/reference/scalars/datetime",
-      "description": null,
+      "description": "All values that are not contained in given list.",
       "args": null
     },
     {
       "typeString": "DateTime",
       "name": "createdAt_lt",
       "url": "/hotelx/reference/scalars/datetime",
-      "description": null,
+      "description": "All values less than the given value.",
       "args": null
     },
     {
       "typeString": "DateTime",
       "name": "createdAt_lte",
       "url": "/hotelx/reference/scalars/datetime",
-      "description": null,
+      "description": "All values less than or equal the given value.",
       "args": null
     },
     {
       "typeString": "DateTime",
       "name": "createdAt_gt",
       "url": "/hotelx/reference/scalars/datetime",
-      "description": null,
+      "description": "All values greater than the given value.",
       "args": null
     },
     {
       "typeString": "DateTime",
       "name": "createdAt_gte",
       "url": "/hotelx/reference/scalars/datetime",
-      "description": null,
+      "description": "All values greater than or equal the given value.",
       "args": null
     },
     {
       "typeString": "[DateTime!]",
       "name": "updatedAt_in",
       "url": "/hotelx/reference/scalars/datetime",
-      "description": null,
+      "description": "All values that are contained in given list.",
       "args": null
     },
     {
       "typeString": "[DateTime!]",
       "name": "updatedAt_not_in",
       "url": "/hotelx/reference/scalars/datetime",
-      "description": null,
+      "description": "All values that are not contained in given list.",
       "args": null
     },
     {
       "typeString": "DateTime",
       "name": "updatedAt_lt",
       "url": "/hotelx/reference/scalars/datetime",
-      "description": null,
+      "description": "All values less than the given value.",
       "args": null
     },
     {
       "typeString": "DateTime",
       "name": "updatedAt_lte",
       "url": "/hotelx/reference/scalars/datetime",
-      "description": null,
+      "description": "All values less than or equal the given value.",
       "args": null
     },
     {
       "typeString": "DateTime",
       "name": "updatedAt_gt",
       "url": "/hotelx/reference/scalars/datetime",
-      "description": null,
+      "description": "All values greater than the given value.",
       "args": null
     },
     {
       "typeString": "DateTime",
       "name": "updatedAt_gte",
       "url": "/hotelx/reference/scalars/datetime",
-      "description": null,
-      "args": null
-    },
-    {
-      "typeString": "Boolean",
-      "name": "country_in",
-      "url": "/hotelx/reference/scalars/boolean",
-      "description": null,
-      "args": null
-    },
-    {
-      "typeString": "Boolean",
-      "name": "category_in",
-      "url": "/hotelx/reference/scalars/boolean",
-      "description": null,
-      "args": null
-    },
-    {
-      "typeString": "Boolean",
-      "name": "destination_in",
-      "url": "/hotelx/reference/scalars/boolean",
-      "description": null,
-      "args": null
-    },
-    {
-      "typeString": "Boolean",
-      "name": "name_in",
-      "url": "/hotelx/reference/scalars/boolean",
-      "description": null,
-      "args": null
-    },
-    {
-      "typeString": "Boolean",
-      "name": "coordinates_in",
-      "url": "/hotelx/reference/scalars/boolean",
-      "description": null,
+      "description": "All values greater than or equal the given value.",
       "args": null
     }
   ],
@@ -143,6 +108,7 @@
   "typename": "HotelXHotelFilterInput",
   "hideGithubLink": true
 }
+By default: Logical AND on all given filters.
 ## GraphQL schema definition
 
 {{% graphql-schema-type %}}

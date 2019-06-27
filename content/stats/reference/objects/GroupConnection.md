@@ -7,7 +7,7 @@
       "typeString": "[GroupEdge]",
       "name": "edges",
       "url": "/stats/reference/objects/groupedge",
-      "description": null,
+      "description": "",
       "isDeprecated": false,
       "args": null
     },
@@ -15,7 +15,7 @@
       "typeString": "PageInfo!",
       "name": "pageInfo",
       "url": "/stats/reference/objects/pageinfo",
-      "description": null,
+      "description": "",
       "isDeprecated": false,
       "args": null
     }
@@ -23,37 +23,37 @@
   "requireby": [
     {
       "name": "AccessData",
-      "description": null,
+      "description": "",
       "url": "/stats/reference/objects/accessdata"
     },
     {
       "name": "SupplierData",
-      "description": null,
+      "description": "",
       "url": "/stats/reference/objects/supplierdata"
     },
     {
       "name": "OrganizationData",
-      "description": null,
+      "description": "",
       "url": "/stats/reference/objects/organizationdata"
     },
     {
       "name": "GroupCommonData",
-      "description": null,
+      "description": "",
       "url": "/stats/reference/interfaces/groupcommondata"
     },
     {
       "name": "MemberData",
-      "description": null,
+      "description": "",
       "url": "/stats/reference/objects/memberdata"
     },
     {
       "name": "APIData",
-      "description": null,
+      "description": "",
       "url": "/stats/reference/objects/apidata"
     },
     {
       "name": "GroupData",
-      "description": null,
+      "description": "",
       "url": "/stats/reference/objects/groupdata"
     }
   ],

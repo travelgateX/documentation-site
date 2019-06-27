@@ -7,7 +7,7 @@
       "typeString": "ID!",
       "name": "code",
       "url": "/stats/reference/scalars/id",
-      "description": null,
+      "description": "AM code: The following codes can be returned:",
       "isDeprecated": false,
       "args": null
     },
@@ -15,7 +15,7 @@
       "typeString": "String!",
       "name": "type",
       "url": "/stats/reference/scalars/string",
-      "description": null,
+      "description": "Error type: The following types are valid:",
       "isDeprecated": true,
       "args": null,
       "deprecationReason": "",
@@ -31,7 +31,7 @@
       "typeString": "String!",
       "name": "description",
       "url": "/stats/reference/scalars/string",
-      "description": null,
+      "description": "Error description",
       "isDeprecated": false,
       "args": null
     },
@@ -39,7 +39,7 @@
       "typeString": "AdviseMessageLevel!",
       "name": "level",
       "url": "/stats/reference/enums/advisemessagelevel",
-      "description": null,
+      "description": "Indicates the level of importance of the message: Posible values ERROR WARN INFO",
       "isDeprecated": false,
       "args": null
     },
@@ -47,7 +47,7 @@
       "typeString": "ExternalMessage",
       "name": "external",
       "url": "/stats/reference/objects/externalmessage",
-      "description": null,
+      "description": "Specify the external message.",
       "isDeprecated": false,
       "args": null
     },
@@ -55,7 +55,7 @@
       "typeString": "ID!",
       "name": "correlationID",
       "url": "/stats/reference/scalars/id",
-      "description": null,
+      "description": "Identifier to be able to investigate the cause of the error",
       "isDeprecated": false,
       "args": null
     }
@@ -66,6 +66,7 @@
   "typename": "AdviseMessage",
   "hideGithubLink": true
 }
+List of advise messages.
 ## GraphQL schema definition
 
 {{% graphql-schema-type %}}

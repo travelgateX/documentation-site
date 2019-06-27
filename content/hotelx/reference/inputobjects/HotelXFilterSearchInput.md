@@ -7,21 +7,21 @@
       "typeString": "AccessFilterInput",
       "name": "access",
       "url": "/hotelx/reference/inputobjects/accessfilterinput",
-      "description": null,
+      "description": "You can specify one of the filters or any of them. In this latter case, all the configurated accesses will be executed.",
       "args": null
     },
     {
       "typeString": "RateRulesFilterInput",
       "name": "rateRules",
       "url": "/hotelx/reference/inputobjects/raterulesfilterinput",
-      "description": null,
+      "description": "If requested, only options with the specified rateRules will be returned",
       "args": null
     },
     {
       "typeString": "HotelXPluginFilterInput",
       "name": "plugin",
       "url": "/hotelx/reference/inputobjects/hotelxpluginfilterinput",
-      "description": null,
+      "description": "Only is possible to specify one of this filters, it allows to filter which plugins have to be executed or excluded",
       "args": null
     }
   ],

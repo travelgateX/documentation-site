@@ -7,14 +7,14 @@
       "typeString": "ID!",
       "name": "code",
       "url": "/travelgatex/reference/scalars/id",
-      "description": null,
+      "description": "Profile Code",
       "args": null
     },
     {
       "typeString": "EntitiesInput",
       "name": "entities",
       "url": "/travelgatex/reference/inputobjects/entitiesinput",
-      "description": null,
+      "description": "Entities to add/remove",
       "args": null
     }
   ],

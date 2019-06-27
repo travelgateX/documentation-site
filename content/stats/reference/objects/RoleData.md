@@ -7,7 +7,7 @@
       "typeString": "ID!",
       "name": "id",
       "url": "/stats/reference/scalars/id",
-      "description": null,
+      "description": "",
       "isDeprecated": false,
       "args": null
     },
@@ -15,7 +15,7 @@
       "typeString": "ID!",
       "name": "code",
       "url": "/stats/reference/scalars/id",
-      "description": null,
+      "description": "",
       "isDeprecated": false,
       "args": null
     },
@@ -23,7 +23,7 @@
       "typeString": "RoleType!",
       "name": "type",
       "url": "/stats/reference/enums/roletype",
-      "description": null,
+      "description": "",
       "isDeprecated": false,
       "args": null
     },
@@ -31,7 +31,7 @@
       "typeString": "Boolean!",
       "name": "isEditable",
       "url": "/stats/reference/scalars/boolean",
-      "description": null,
+      "description": "",
       "isDeprecated": false,
       "args": null
     },
@@ -39,7 +39,7 @@
       "typeString": "String",
       "name": "label",
       "url": "/stats/reference/scalars/string",
-      "description": null,
+      "description": "",
       "isDeprecated": false,
       "args": null
     },
@@ -47,7 +47,7 @@
       "typeString": "Boolean!",
       "name": "isCreate",
       "url": "/stats/reference/scalars/boolean",
-      "description": null,
+      "description": "Has resource Create permission?",
       "isDeprecated": false,
       "args": null
     },
@@ -55,7 +55,7 @@
       "typeString": "Boolean!",
       "name": "isRead",
       "url": "/stats/reference/scalars/boolean",
-      "description": null,
+      "description": "Has resource Create permission?",
       "isDeprecated": false,
       "args": null
     },
@@ -63,7 +63,7 @@
       "typeString": "Boolean!",
       "name": "isUpdate",
       "url": "/stats/reference/scalars/boolean",
-      "description": null,
+      "description": "Has resource Update permission?",
       "isDeprecated": false,
       "args": null
     },
@@ -71,7 +71,7 @@
       "typeString": "Boolean!",
       "name": "isDelete",
       "url": "/stats/reference/scalars/boolean",
-      "description": null,
+      "description": "Has resource Delete permission?",
       "isDeprecated": false,
       "args": null
     },
@@ -79,7 +79,7 @@
       "typeString": "Boolean!",
       "name": "isEnable",
       "url": "/stats/reference/scalars/boolean",
-      "description": null,
+      "description": "Is role enabled or not?",
       "isDeprecated": false,
       "args": null
     },
@@ -87,7 +87,7 @@
       "typeString": "Boolean!",
       "name": "isExecutable",
       "url": "/stats/reference/scalars/boolean",
-      "description": null,
+      "description": "Has resource Executable permission?",
       "isDeprecated": false,
       "args": null
     },
@@ -95,7 +95,7 @@
       "typeString": "Boolean!",
       "name": "isSpecial",
       "url": "/stats/reference/scalars/boolean",
-      "description": null,
+      "description": "Has any other non-basic permission/s?",
       "isDeprecated": false,
       "args": null
     },
@@ -103,7 +103,7 @@
       "typeString": "String",
       "name": "special",
       "url": "/stats/reference/scalars/string",
-      "description": null,
+      "description": "Special permission",
       "isDeprecated": false,
       "args": null
     },
@@ -111,38 +111,38 @@
       "typeString": "ResourceConnection",
       "name": "resources",
       "url": "/stats/reference/objects/resourceconnection",
-      "description": null,
+      "description": "Resources used",
       "isDeprecated": false,
       "args": [
         {
           "typeString": "[ID!]",
           "name": "codes",
           "url": "/stats/reference/scalars/id",
-          "description": null
+          "description": ""
         },
         {
           "typeString": "Int",
           "name": "first",
           "url": "/stats/reference/scalars/int",
-          "description": null
+          "description": ""
         },
         {
           "typeString": "Int",
           "name": "last",
           "url": "/stats/reference/scalars/int",
-          "description": null
+          "description": ""
         },
         {
           "typeString": "String",
           "name": "before",
           "url": "/stats/reference/scalars/string",
-          "description": null
+          "description": ""
         },
         {
           "typeString": "String",
           "name": "after",
           "url": "/stats/reference/scalars/string",
-          "description": null
+          "description": ""
         }
       ]
     }
@@ -150,7 +150,7 @@
   "requireby": [
     {
       "name": "Role",
-      "description": null,
+      "description": "Permissions determine what operations are allowed on a resource",
       "url": "/stats/reference/objects/role"
     }
   ],

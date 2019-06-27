@@ -7,42 +7,42 @@
       "typeString": "String!",
       "name": "cardType",
       "url": "/hotelx/reference/scalars/string",
-      "description": null,
+      "description": "Indicates the card type.",
       "args": null
     },
     {
       "typeString": "HolderInput!",
       "name": "holder",
       "url": "/hotelx/reference/inputobjects/holderinput",
-      "description": null,
+      "description": "Contains owner's name",
       "args": null
     },
     {
       "typeString": "String!",
       "name": "number",
       "url": "/hotelx/reference/scalars/string",
-      "description": null,
+      "description": "Contains credit card number",
       "args": null
     },
     {
       "typeString": "String!",
       "name": "CVC",
       "url": "/hotelx/reference/scalars/string",
-      "description": null,
+      "description": "Contains credit card CVC",
       "args": null
     },
     {
       "typeString": "ExpireDateInput!",
       "name": "expire",
       "url": "/hotelx/reference/inputobjects/expiredateinput",
-      "description": null,
+      "description": "Contains credit card expiration date",
       "args": null
     }
   ],
   "requireby": [
     {
       "name": "HotelBookInput",
-      "description": null,
+      "description": "Criteria of book.",
       "url": "/hotelx/reference/inputobjects/hotelbookinput"
     }
   ],
@@ -51,6 +51,7 @@
   "typename": "PaymentCardInput",
   "hideGithubLink": true
 }
+Input PaymentCard, if the payment is done by credit card, is it mandatory to specify the payment type and the credit card information
 ## GraphQL schema definition
 
 {{% graphql-schema-type %}}

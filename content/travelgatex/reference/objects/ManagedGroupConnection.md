@@ -7,7 +7,7 @@
       "typeString": "[ManagedGroupEdge]",
       "name": "edges",
       "url": "/travelgatex/reference/objects/managedgroupedge",
-      "description": null,
+      "description": "",
       "isDeprecated": false,
       "args": null
     },
@@ -15,7 +15,7 @@
       "typeString": "PageInfo!",
       "name": "pageInfo",
       "url": "/travelgatex/reference/objects/pageinfo",
-      "description": null,
+      "description": "",
       "isDeprecated": false,
       "args": null
     }
@@ -23,7 +23,7 @@
   "requireby": [
     {
       "name": "GroupData",
-      "description": null,
+      "description": "",
       "url": "/travelgatex/reference/objects/groupdata"
     }
   ],

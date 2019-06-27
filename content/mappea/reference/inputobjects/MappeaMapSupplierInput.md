@@ -7,21 +7,21 @@
       "typeString": "ID!",
       "name": "requestId",
       "url": "/mappea/reference/scalars/id",
-      "description": null,
+      "description": "",
       "args": null
     },
     {
       "typeString": "ID!",
       "name": "access",
       "url": "/mappea/reference/scalars/id",
-      "description": null,
+      "description": "",
       "args": null
     },
     {
       "typeString": "Int!",
       "name": "fileId",
       "url": "/mappea/reference/scalars/int",
-      "description": null,
+      "description": "",
       "args": null
     }
   ],
@@ -31,6 +31,7 @@
   "typename": "MappeaMapSupplierInput",
   "hideGithubLink": true
 }
+# MapSupplier
 ## GraphQL schema definition
 
 {{% graphql-schema-type %}}

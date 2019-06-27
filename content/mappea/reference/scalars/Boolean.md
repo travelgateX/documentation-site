@@ -6,73 +6,63 @@
   "requireby": [
     {
       "name": "SupplierData",
-      "description": null,
+      "description": "",
       "url": "/mappea/reference/objects/supplierdata"
     },
     {
       "name": "Provider",
-      "description": null,
+      "description": "Temporary type to use only during SQL server's lifetime",
       "url": "/mappea/reference/objects/provider"
     },
     {
-      "name": "ClientFilter",
-      "description": null,
-      "url": "/mappea/reference/inputobjects/clientfilter"
-    },
-    {
       "name": "PageInfo",
-      "description": null,
+      "description": "",
       "url": "/mappea/reference/objects/pageinfo"
     },
     {
       "name": "AccessData",
-      "description": null,
+      "description": "",
       "url": "/mappea/reference/objects/accessdata"
     },
     {
       "name": "OrganizationData",
-      "description": null,
+      "description": "",
       "url": "/mappea/reference/objects/organizationdata"
     },
     {
       "name": "GroupCommonData",
-      "description": null,
+      "description": "",
       "url": "/mappea/reference/interfaces/groupcommondata"
     },
     {
       "name": "MemberData",
-      "description": null,
+      "description": "",
       "url": "/mappea/reference/objects/memberdata"
     },
     {
       "name": "RoleData",
-      "description": null,
+      "description": "",
       "url": "/mappea/reference/objects/roledata"
     },
     {
       "name": "ResourceData",
-      "description": null,
+      "description": "",
       "url": "/mappea/reference/objects/resourcedata"
     },
     {
       "name": "APIData",
-      "description": null,
+      "description": "",
       "url": "/mappea/reference/objects/apidata"
     },
     {
-      "name": "GroupData",
-      "description": null,
-      "url": "/mappea/reference/objects/groupdata"
-    },
-    {
       "name": "ClientData",
-      "description": null,
+      "description": "",
       "url": "/mappea/reference/objects/clientdata"
     },
     {
-      "name": "SupplierFilter",
-      "description": null,
-      "url": "/mappea/reference/inputobjects/supplierfilter"
+      "name": "GroupData",
+      "description": "",
+      "url": "/mappea/reference/objects/groupdata"
     }
   ],
   "enumValues": null,

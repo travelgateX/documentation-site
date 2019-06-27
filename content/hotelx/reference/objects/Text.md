@@ -7,7 +7,7 @@
       "typeString": "String!",
       "name": "text",
       "url": "/hotelx/reference/scalars/string",
-      "description": null,
+      "description": "",
       "isDeprecated": false,
       "args": null
     },
@@ -15,7 +15,7 @@
       "typeString": "Language!",
       "name": "language",
       "url": "/hotelx/reference/scalars/language",
-      "description": null,
+      "description": "",
       "isDeprecated": false,
       "args": null
     }

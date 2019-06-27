@@ -7,7 +7,7 @@
       "typeString": "ID!",
       "name": "code",
       "url": "/travelgatex/reference/scalars/id",
-      "description": null,
+      "description": "",
       "isDeprecated": false,
       "args": null
     },
@@ -15,7 +15,7 @@
       "typeString": "String!",
       "name": "name",
       "url": "/travelgatex/reference/scalars/string",
-      "description": null,
+      "description": "",
       "isDeprecated": false,
       "args": null
     },
@@ -23,7 +23,7 @@
       "typeString": "Boolean",
       "name": "isActive",
       "url": "/travelgatex/reference/scalars/boolean",
-      "description": null,
+      "description": "",
       "isDeprecated": false,
       "args": null
     },
@@ -31,7 +31,7 @@
       "typeString": "Boolean",
       "name": "isPublic",
       "url": "/travelgatex/reference/scalars/boolean",
-      "description": null,
+      "description": "",
       "isDeprecated": false,
       "args": null
     }
@@ -39,7 +39,7 @@
   "requireby": [
     {
       "name": "SupplierData",
-      "description": null,
+      "description": "",
       "url": "/travelgatex/reference/objects/supplierdata"
     }
   ],
@@ -48,6 +48,7 @@
   "typename": "Provider",
   "hideGithubLink": true
 }
+Temporary type to use only during SQL server's lifetime
 ## GraphQL schema definition
 
 {{% graphql-schema-type %}}

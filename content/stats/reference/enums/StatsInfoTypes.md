@@ -6,50 +6,50 @@
   "requireby": [
     {
       "name": "StatsInfo",
-      "description": null,
+      "description": "Details of an specific error",
       "url": "/stats/reference/objects/statsinfo"
     }
   ],
   "enumValues": [
     {
       "name": "ALL",
-      "description": null,
+      "description": "",
       "isDeprecated": false,
       "deprecationReason": null
     },
     {
       "name": "OK",
-      "description": null,
+      "description": "Stats in OK state",
       "isDeprecated": false,
       "deprecationReason": null
     },
     {
       "name": "INTEGRATION",
-      "description": null,
+      "description": "Stats in NOK state caused by integration issues",
       "isDeprecated": false,
       "deprecationReason": null
     },
     {
       "name": "PROVIDER",
-      "description": null,
+      "description": "Stats in NOK state caused by supplier issues",
       "isDeprecated": false,
       "deprecationReason": null
     },
     {
       "name": "COMMUNICATION",
-      "description": null,
+      "description": "Stats in NOK state caused by Timeout",
       "isDeprecated": false,
       "deprecationReason": null
     },
     {
       "name": "HUB",
-      "description": null,
+      "description": "Stats in NOK state caused by HUB issues",
       "isDeprecated": false,
       "deprecationReason": null
     },
     {
       "name": "OTHER",
-      "description": null,
+      "description": "Stats in NOK state caused by other causes",
       "isDeprecated": false,
       "deprecationReason": null
     }

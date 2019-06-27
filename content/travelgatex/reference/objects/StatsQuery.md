@@ -7,38 +7,38 @@
       "typeString": "StatsConnection!",
       "name": "report",
       "url": "/travelgatex/reference/objects/statsconnection",
-      "description": null,
+      "description": "The report query, represents all of the entry points into our object graph",
       "isDeprecated": false,
       "args": [
         {
           "typeString": "StatsFilterInput!",
           "name": "filter",
           "url": "/travelgatex/reference/inputobjects/statsfilterinput",
-          "description": null
+          "description": ""
         },
         {
           "typeString": "Int",
           "name": "first",
           "url": "/travelgatex/reference/scalars/int",
-          "description": null
+          "description": ""
         },
         {
           "typeString": "Int",
           "name": "last",
           "url": "/travelgatex/reference/scalars/int",
-          "description": null
+          "description": ""
         },
         {
           "typeString": "String",
           "name": "before",
           "url": "/travelgatex/reference/scalars/string",
-          "description": null
+          "description": ""
         },
         {
           "typeString": "String",
           "name": "after",
           "url": "/travelgatex/reference/scalars/string",
-          "description": null
+          "description": ""
         }
       ]
     }
@@ -46,7 +46,7 @@
   "requireby": [
     {
       "name": "Query",
-      "description": null,
+      "description": "The query root of TravelgateX's GraphQL interface.",
       "url": "/travelgatex/reference/schema/query"
     }
   ],

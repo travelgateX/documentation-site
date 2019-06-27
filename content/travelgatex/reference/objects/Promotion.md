@@ -7,7 +7,7 @@
       "typeString": "String!",
       "name": "code",
       "url": "/travelgatex/reference/scalars/string",
-      "description": null,
+      "description": "Specifies the promotion code.",
       "isDeprecated": false,
       "args": null
     },
@@ -15,7 +15,7 @@
       "typeString": "String",
       "name": "name",
       "url": "/travelgatex/reference/scalars/string",
-      "description": null,
+      "description": "Specifies the promotion name.",
       "isDeprecated": false,
       "args": null
     },
@@ -23,47 +23,15 @@
       "typeString": "Date",
       "name": "effectiveDate",
       "url": "/travelgatex/reference/scalars/date",
-      "description": null,
-      "isDeprecated": true,
-      "args": null,
-      "deprecationReason": "Incorrect date format.",
-      "descriptionSplitted": {
-        "date": "2018-02-28",
-        "first": "deprecated from",
-        "second": "Incorrect date format."
-      },
-      "deprecationDate": "2018-02-28",
-      "typeName": "Promotion"
-    },
-    {
-      "typeString": "Date",
-      "name": "expireDate",
-      "url": "/travelgatex/reference/scalars/date",
-      "description": null,
-      "isDeprecated": true,
-      "args": null,
-      "deprecationReason": "Incorrect date format.",
-      "descriptionSplitted": {
-        "date": "2018-02-28",
-        "first": "deprecated from",
-        "second": "Incorrect date format."
-      },
-      "deprecationDate": "2018-02-28",
-      "typeName": "Promotion"
-    },
-    {
-      "typeString": "Date",
-      "name": "start",
-      "url": "/travelgatex/reference/scalars/date",
-      "description": null,
+      "description": "Promotion effective date.",
       "isDeprecated": false,
       "args": null
     },
     {
       "typeString": "Date",
-      "name": "end",
+      "name": "expireDate",
       "url": "/travelgatex/reference/scalars/date",
-      "description": null,
+      "description": "Promotion expire date.",
       "isDeprecated": false,
       "args": null
     }
@@ -74,6 +42,7 @@
   "typename": "Promotion",
   "hideGithubLink": true
 }
+Information about room promotions(offers).
 ## GraphQL schema definition
 
 {{% graphql-schema-type %}}

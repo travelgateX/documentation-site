@@ -7,21 +7,28 @@
       "typeString": "Currency!",
       "name": "currency",
       "url": "/hotelx/reference/scalars/currency",
-      "description": null,
+      "description": "",
       "args": null
     },
     {
       "typeString": "HotelXBusinessRulesInput!",
       "name": "businessRules",
       "url": "/hotelx/reference/inputobjects/hotelxbusinessrulesinput",
-      "description": null,
+      "description": "",
       "args": null
     },
     {
       "typeString": "TimeoutInput!",
       "name": "timeout",
       "url": "/hotelx/reference/inputobjects/timeoutinput",
-      "description": null,
+      "description": "",
+      "args": null
+    },
+    {
+      "typeString": "HotelXAuditInput!",
+      "name": "audit",
+      "url": "/hotelx/reference/inputobjects/hotelxauditinput",
+      "description": "",
       "args": null
     }
   ],

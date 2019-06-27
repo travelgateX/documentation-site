@@ -7,47 +7,15 @@
       "typeString": "Date!",
       "name": "effectiveDate",
       "url": "/hotelx/reference/scalars/date",
-      "description": null,
-      "isDeprecated": true,
-      "args": null,
-      "deprecationReason": "Incorrect date format.",
-      "descriptionSplitted": {
-        "date": "2018-02-28",
-        "first": "deprecated from",
-        "second": "Incorrect date format."
-      },
-      "deprecationDate": "2018-02-28",
-      "typeName": "PriceBreakdown"
-    },
-    {
-      "typeString": "Date!",
-      "name": "expireDate",
-      "url": "/hotelx/reference/scalars/date",
-      "description": null,
-      "isDeprecated": true,
-      "args": null,
-      "deprecationReason": "Incorrect date format.",
-      "descriptionSplitted": {
-        "date": "2018-02-28",
-        "first": "deprecated from",
-        "second": "Incorrect date format."
-      },
-      "deprecationDate": "2018-02-28",
-      "typeName": "PriceBreakdown"
-    },
-    {
-      "typeString": "Date!",
-      "name": "start",
-      "url": "/hotelx/reference/scalars/date",
-      "description": null,
+      "description": "Start date in which the price becomes effective.",
       "isDeprecated": false,
       "args": null
     },
     {
       "typeString": "Date!",
-      "name": "end",
+      "name": "expireDate",
       "url": "/hotelx/reference/scalars/date",
-      "description": null,
+      "description": "Expire date of price.",
       "isDeprecated": false,
       "args": null
     },
@@ -55,7 +23,7 @@
       "typeString": "Price!",
       "name": "price",
       "url": "/hotelx/reference/objects/price",
-      "description": null,
+      "description": "Specifies the daily price.",
       "isDeprecated": false,
       "args": null
     }
@@ -66,6 +34,7 @@
   "typename": "PriceBreakdown",
   "hideGithubLink": true
 }
+Information about daily price.
 ## GraphQL schema definition
 
 {{% graphql-schema-type %}}

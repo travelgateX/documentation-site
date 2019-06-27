@@ -7,7 +7,7 @@
       "typeString": "ID!",
       "name": "code",
       "url": "/hotelx/reference/scalars/id",
-      "description": null,
+      "description": "location code",
       "isDeprecated": false,
       "args": null
     },
@@ -15,7 +15,7 @@
       "typeString": "String!",
       "name": "name",
       "url": "/hotelx/reference/scalars/string",
-      "description": null,
+      "description": "name of location",
       "isDeprecated": false,
       "args": null
     },
@@ -23,7 +23,7 @@
       "typeString": "Geoname!",
       "name": "parent",
       "url": "/hotelx/reference/objects/geoname",
-      "description": null,
+      "description": "Parent location, the top location is itself",
       "isDeprecated": false,
       "args": null
     },
@@ -31,15 +31,15 @@
       "typeString": "Country",
       "name": "country",
       "url": "/hotelx/reference/scalars/country",
-      "description": null,
+      "description": "ISO 3166-1 alpha-2 format country code with enclosing double quotes \"ES\"",
       "isDeprecated": false,
       "args": null
     },
     {
-      "typeString": "String!",
+      "typeString": "DestinationType!",
       "name": "type",
-      "url": "/hotelx/reference/scalars/string",
-      "description": null,
+      "url": "/hotelx/reference/enums/destinationtype",
+      "description": "Indicates destination type, zone, city or country",
       "isDeprecated": false,
       "args": null
     },
@@ -47,7 +47,7 @@
       "typeString": "Coordinates!",
       "name": "coordinates",
       "url": "/hotelx/reference/objects/coordinates",
-      "description": null,
+      "description": "Geographical coordinates corresponding to a location.",
       "isDeprecated": false,
       "args": null
     }
@@ -55,7 +55,7 @@
   "requireby": [
     {
       "name": "Geoname",
-      "description": null,
+      "description": "Geoname type",
       "url": "/hotelx/reference/objects/geoname"
     }
   ],
@@ -64,6 +64,7 @@
   "typename": "GeonameData",
   "hideGithubLink": true
 }
+Geoname data, which contain a reference to his parent location
 ## GraphQL schema definition
 
 {{% graphql-schema-type %}}

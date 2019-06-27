@@ -7,7 +7,7 @@
       "typeString": "[GroupEdge]",
       "name": "edges",
       "url": "/paymentx/reference/objects/groupedge",
-      "description": null,
+      "description": "",
       "isDeprecated": false,
       "args": null
     },
@@ -15,7 +15,7 @@
       "typeString": "PageInfo!",
       "name": "pageInfo",
       "url": "/paymentx/reference/objects/pageinfo",
-      "description": null,
+      "description": "",
       "isDeprecated": false,
       "args": null
     }
@@ -23,37 +23,37 @@
   "requireby": [
     {
       "name": "GroupData",
-      "description": null,
+      "description": "",
       "url": "/paymentx/reference/objects/groupdata"
     },
     {
       "name": "GroupCommonData",
-      "description": null,
+      "description": "",
       "url": "/paymentx/reference/interfaces/groupcommondata"
     },
     {
       "name": "MemberData",
-      "description": null,
+      "description": "",
       "url": "/paymentx/reference/objects/memberdata"
     },
     {
       "name": "APIData",
-      "description": null,
+      "description": "",
       "url": "/paymentx/reference/objects/apidata"
     },
     {
       "name": "AccessData",
-      "description": null,
+      "description": "",
       "url": "/paymentx/reference/objects/accessdata"
     },
     {
       "name": "SupplierData",
-      "description": null,
+      "description": "",
       "url": "/paymentx/reference/objects/supplierdata"
     },
     {
       "name": "OrganizationData",
-      "description": null,
+      "description": "",
       "url": "/paymentx/reference/objects/organizationdata"
     }
   ],

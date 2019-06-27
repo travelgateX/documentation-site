@@ -7,14 +7,14 @@
       "typeString": "[String!]",
       "name": "categoryCodes",
       "url": "/hotelx/reference/scalars/string",
-      "description": null,
+      "description": "Indicates the category codes that you want filter.",
       "args": null
     },
     {
       "typeString": "ID!",
       "name": "access",
       "url": "/hotelx/reference/scalars/id",
-      "description": null,
+      "description": "Indicates the access that you want use.",
       "args": null
     }
   ],

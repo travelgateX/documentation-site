@@ -5,84 +5,69 @@
   "fields": null,
   "requireby": [
     {
-      "name": "StatsFilterInput",
-      "description": null,
-      "url": "/stats/reference/inputobjects/statsfilterinput"
-    },
-    {
       "name": "PageInfo",
-      "description": null,
+      "description": "",
       "url": "/stats/reference/objects/pageinfo"
     },
     {
       "name": "OperationDetailed",
-      "description": null,
+      "description": "Stats information per operation",
       "url": "/stats/reference/objects/operationdetailed"
     },
     {
       "name": "AccessData",
-      "description": null,
+      "description": "",
       "url": "/stats/reference/objects/accessdata"
     },
     {
       "name": "SupplierData",
-      "description": null,
+      "description": "",
       "url": "/stats/reference/objects/supplierdata"
     },
     {
       "name": "Provider",
-      "description": null,
+      "description": "Temporary type to use only during SQL server's lifetime",
       "url": "/stats/reference/objects/provider"
     },
     {
-      "name": "ClientFilter",
-      "description": null,
-      "url": "/stats/reference/inputobjects/clientfilter"
-    },
-    {
       "name": "OrganizationData",
-      "description": null,
+      "description": "",
       "url": "/stats/reference/objects/organizationdata"
     },
     {
       "name": "GroupCommonData",
-      "description": null,
+      "description": "",
       "url": "/stats/reference/interfaces/groupcommondata"
     },
     {
       "name": "MemberData",
-      "description": null,
+      "description": "",
       "url": "/stats/reference/objects/memberdata"
     },
     {
       "name": "RoleData",
-      "description": null,
+      "description": "",
       "url": "/stats/reference/objects/roledata"
     },
     {
       "name": "ResourceData",
-      "description": null,
+      "description": "",
       "url": "/stats/reference/objects/resourcedata"
     },
     {
       "name": "APIData",
-      "description": null,
+      "description": "",
       "url": "/stats/reference/objects/apidata"
     },
     {
       "name": "GroupData",
-      "description": null,
+      "description": "",
       "url": "/stats/reference/objects/groupdata"
     },
     {
       "name": "ClientData",
-      "description": null,
+      "description": "",
       "url": "/stats/reference/objects/clientdata"
-    },
-    {
-      "name": "SupplierFilter",
-      "description": null,
-      "url": "/stats/reference/inputobjects/supplierfilter"
     }
   ],
   "enumValues": null,

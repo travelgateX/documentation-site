@@ -7,31 +7,31 @@
   "enumValues": [
     {
       "name": "ALL",
-      "description": null,
+      "description": "",
       "isDeprecated": false,
       "deprecationReason": null
     },
     {
       "name": "SEARCH",
-      "description": null,
+      "description": "When the type of the request is Search",
       "isDeprecated": false,
       "deprecationReason": null
     },
     {
       "name": "QUOTE",
-      "description": null,
+      "description": "When the type of the request is Quote",
       "isDeprecated": false,
       "deprecationReason": null
     },
     {
       "name": "BOOKING",
-      "description": null,
+      "description": "When the type of the request is Booking",
       "isDeprecated": false,
       "deprecationReason": null
     },
     {
       "name": "OTHER",
-      "description": null,
+      "description": "When the type of the request is Other",
       "isDeprecated": false,
       "deprecationReason": null
     }

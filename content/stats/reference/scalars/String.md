@@ -6,147 +6,147 @@
   "requireby": [
     {
       "name": "StatsEdge",
-      "description": null,
+      "description": "",
       "url": "/stats/reference/objects/statsedge"
     },
     {
       "name": "PageInfo",
-      "description": null,
+      "description": "",
       "url": "/stats/reference/objects/pageinfo"
     },
     {
       "name": "AdviseMessage",
-      "description": null,
+      "description": "List of advise messages.",
       "url": "/stats/reference/objects/advisemessage"
     },
     {
       "name": "AccessData",
-      "description": null,
+      "description": "",
       "url": "/stats/reference/objects/accessdata"
     },
     {
       "name": "Error",
-      "description": null,
+      "description": "Application errors",
       "url": "/stats/reference/objects/error"
     },
     {
       "name": "Parameter",
-      "description": null,
+      "description": "Parameters for additional information for the supplier's configuration.",
       "url": "/stats/reference/objects/parameter"
     },
     {
       "name": "SupplierData",
-      "description": null,
+      "description": "",
       "url": "/stats/reference/objects/supplierdata"
     },
     {
       "name": "Provider",
-      "description": null,
+      "description": "Temporary type to use only during SQL server's lifetime",
       "url": "/stats/reference/objects/provider"
     },
     {
       "name": "AccessEdge",
-      "description": null,
+      "description": "",
       "url": "/stats/reference/objects/accessedge"
     },
     {
-      "name": "ClientEdge",
-      "description": null,
-      "url": "/stats/reference/objects/clientedge"
-    },
-    {
       "name": "OrganizationData",
-      "description": null,
+      "description": "",
       "url": "/stats/reference/objects/organizationdata"
     },
     {
       "name": "GroupCommonData",
-      "description": null,
+      "description": "",
       "url": "/stats/reference/interfaces/groupcommondata"
     },
     {
       "name": "MemberData",
-      "description": null,
+      "description": "",
       "url": "/stats/reference/objects/memberdata"
     },
     {
       "name": "RoleEdge",
-      "description": null,
+      "description": "",
       "url": "/stats/reference/objects/roleedge"
     },
     {
       "name": "RoleData",
-      "description": null,
+      "description": "",
       "url": "/stats/reference/objects/roledata"
     },
     {
       "name": "ResourceEdge",
-      "description": null,
+      "description": "",
       "url": "/stats/reference/objects/resourceedge"
     },
     {
       "name": "ResourceData",
-      "description": null,
+      "description": "",
       "url": "/stats/reference/objects/resourcedata"
     },
     {
       "name": "MemberEdge",
-      "description": null,
+      "description": "",
       "url": "/stats/reference/objects/memberedge"
     },
     {
       "name": "APIEdge",
-      "description": null,
+      "description": "",
       "url": "/stats/reference/objects/apiedge"
     },
     {
       "name": "APIData",
-      "description": null,
+      "description": "",
       "url": "/stats/reference/objects/apidata"
     },
     {
       "name": "OperationEdge",
-      "description": null,
+      "description": "",
       "url": "/stats/reference/objects/operationedge"
     },
     {
       "name": "OperationData",
-      "description": null,
+      "description": "",
       "url": "/stats/reference/objects/operationdata"
     },
     {
       "name": "ProductEdge",
-      "description": null,
+      "description": "",
       "url": "/stats/reference/objects/productedge"
     },
     {
       "name": "ProductData",
-      "description": null,
+      "description": "",
       "url": "/stats/reference/objects/productdata"
     },
     {
       "name": "SupplierEdge",
-      "description": null,
+      "description": "",
       "url": "/stats/reference/objects/supplieredge"
     },
     {
+      "name": "ClientEdge",
+      "description": "",
+      "url": "/stats/reference/objects/clientedge"
+    },
+    {
       "name": "GroupEdge",
-      "description": null,
+      "description": "",
       "url": "/stats/reference/objects/groupedge"
     },
     {
       "name": "GroupData",
-      "description": null,
+      "description": "",
       "url": "/stats/reference/objects/groupdata"
     },
     {
       "name": "ManagedGroupEdge",
-      "description": null,
+      "description": "",
       "url": "/stats/reference/objects/managedgroupedge"
     },
     {
       "name": "ExternalMessage",
-      "description": null,
+      "description": "",
       "url": "/stats/reference/objects/externalmessage"
     }
   ],

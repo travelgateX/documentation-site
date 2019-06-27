@@ -7,7 +7,7 @@
       "typeString": "Group",
       "name": "node",
       "url": "/travelgatex/reference/objects/group",
-      "description": null,
+      "description": "",
       "isDeprecated": false,
       "args": null
     },
@@ -15,7 +15,7 @@
       "typeString": "String!",
       "name": "cursor",
       "url": "/travelgatex/reference/scalars/string",
-      "description": null,
+      "description": "",
       "isDeprecated": false,
       "args": null
     }
@@ -23,7 +23,7 @@
   "requireby": [
     {
       "name": "GroupConnection",
-      "description": null,
+      "description": "",
       "url": "/travelgatex/reference/objects/groupconnection"
     }
   ],

@@ -7,7 +7,7 @@
       "typeString": "ID!",
       "name": "code",
       "url": "/paymentx/reference/scalars/id",
-      "description": null,
+      "description": "API Code",
       "isDeprecated": false,
       "args": null
     },
@@ -15,7 +15,7 @@
       "typeString": "ID!",
       "name": "id",
       "url": "/paymentx/reference/scalars/id",
-      "description": null,
+      "description": "API ID",
       "isDeprecated": false,
       "args": null
     },
@@ -23,7 +23,7 @@
       "typeString": "Boolean!",
       "name": "isEditable",
       "url": "/paymentx/reference/scalars/boolean",
-      "description": null,
+      "description": "Is API Editable or not.",
       "isDeprecated": false,
       "args": null
     },
@@ -31,7 +31,7 @@
       "typeString": "String",
       "name": "label",
       "url": "/paymentx/reference/scalars/string",
-      "description": null,
+      "description": "API label",
       "isDeprecated": false,
       "args": null
     },
@@ -39,44 +39,44 @@
       "typeString": "GroupConnection",
       "name": "groups",
       "url": "/paymentx/reference/objects/groupconnection",
-      "description": null,
+      "description": "which groups are asigned this API?",
       "isDeprecated": false,
       "args": [
         {
           "typeString": "[ID!]",
           "name": "codes",
           "url": "/paymentx/reference/scalars/id",
-          "description": null
+          "description": ""
         },
         {
           "typeString": "GroupType",
           "name": "type",
           "url": "/paymentx/reference/enums/grouptype",
-          "description": null
+          "description": ""
         },
         {
           "typeString": "Int",
           "name": "first",
           "url": "/paymentx/reference/scalars/int",
-          "description": null
+          "description": ""
         },
         {
           "typeString": "Int",
           "name": "last",
           "url": "/paymentx/reference/scalars/int",
-          "description": null
+          "description": ""
         },
         {
           "typeString": "String",
           "name": "before",
           "url": "/paymentx/reference/scalars/string",
-          "description": null
+          "description": ""
         },
         {
           "typeString": "String",
           "name": "after",
           "url": "/paymentx/reference/scalars/string",
-          "description": null
+          "description": ""
         }
       ]
     },
@@ -84,38 +84,38 @@
       "typeString": "ResourceConnection",
       "name": "resources",
       "url": "/paymentx/reference/objects/resourceconnection",
-      "description": null,
+      "description": "which resources are asigned this API?",
       "isDeprecated": false,
       "args": [
         {
           "typeString": "[ID!]",
           "name": "codes",
           "url": "/paymentx/reference/scalars/id",
-          "description": null
+          "description": ""
         },
         {
           "typeString": "Int",
           "name": "first",
           "url": "/paymentx/reference/scalars/int",
-          "description": null
+          "description": ""
         },
         {
           "typeString": "Int",
           "name": "last",
           "url": "/paymentx/reference/scalars/int",
-          "description": null
+          "description": ""
         },
         {
           "typeString": "String",
           "name": "before",
           "url": "/paymentx/reference/scalars/string",
-          "description": null
+          "description": ""
         },
         {
           "typeString": "String",
           "name": "after",
           "url": "/paymentx/reference/scalars/string",
-          "description": null
+          "description": ""
         }
       ]
     },
@@ -123,65 +123,44 @@
       "typeString": "OperationConnection",
       "name": "operations",
       "url": "/paymentx/reference/objects/operationconnection",
-      "description": null,
+      "description": "which operations are asigned this API?",
       "isDeprecated": false,
       "args": [
         {
           "typeString": "[ID!]",
           "name": "codes",
           "url": "/paymentx/reference/scalars/id",
-          "description": null
+          "description": ""
         },
         {
           "typeString": "OperationType",
           "name": "type",
           "url": "/paymentx/reference/enums/operationtype",
-          "description": null
-        },
-        {
-          "typeString": "[OperationType!]",
-          "name": "types",
-          "url": "/paymentx/reference/enums/operationtype",
-          "description": null
+          "description": ""
         },
         {
           "typeString": "Int",
           "name": "first",
           "url": "/paymentx/reference/scalars/int",
-          "description": null
+          "description": ""
         },
         {
           "typeString": "Int",
           "name": "last",
           "url": "/paymentx/reference/scalars/int",
-          "description": null
+          "description": ""
         },
         {
           "typeString": "String",
           "name": "before",
           "url": "/paymentx/reference/scalars/string",
-          "description": null
+          "description": ""
         },
         {
           "typeString": "String",
           "name": "after",
           "url": "/paymentx/reference/scalars/string",
-          "description": null
-        }
-      ]
-    },
-    {
-      "typeString": "[AdviseMessage!]",
-      "name": "adviseMessageCatalog",
-      "url": "/paymentx/reference/objects/advisemessage",
-      "description": null,
-      "isDeprecated": false,
-      "args": [
-        {
-          "typeString": "[AdviseMessageLevel]",
-          "name": "level",
-          "url": "/paymentx/reference/enums/advisemessagelevel",
-          "description": null
+          "description": ""
         }
       ]
     }
@@ -189,7 +168,7 @@
   "requireby": [
     {
       "name": "API",
-      "description": null,
+      "description": "",
       "url": "/paymentx/reference/objects/api"
     }
   ],

@@ -7,7 +7,7 @@
       "typeString": "ID!",
       "name": "code",
       "url": "/travelgatex/reference/scalars/id",
-      "description": null,
+      "description": "Internal code.",
       "isDeprecated": false,
       "args": null
     },
@@ -15,7 +15,7 @@
       "typeString": "String!",
       "name": "hotelCode",
       "url": "/travelgatex/reference/scalars/string",
-      "description": null,
+      "description": "Code to perform availability.",
       "isDeprecated": false,
       "args": null
     },
@@ -23,31 +23,23 @@
       "typeString": "String",
       "name": "hotelCodeSupplier",
       "url": "/travelgatex/reference/scalars/string",
-      "description": null,
+      "description": "Native supplier hotel code.",
       "isDeprecated": false,
       "args": null
     },
     {
-      "typeString": "GiataData",
-      "name": "giataData",
-      "url": "/travelgatex/reference/objects/giatadata",
-      "description": null,
-      "isDeprecated": false,
-      "args": null
-    },
-    {
-      "typeString": "String",
+      "typeString": "String!",
       "name": "hotelName",
       "url": "/travelgatex/reference/scalars/string",
-      "description": null,
+      "description": "Name of the hotel in the Supplier selected.",
       "isDeprecated": false,
       "args": null
     },
     {
-      "typeString": "String",
+      "typeString": "String!",
       "name": "categoryCode",
       "url": "/travelgatex/reference/scalars/string",
-      "description": null,
+      "description": "Hotel category (for example number of stars).",
       "isDeprecated": false,
       "args": null
     },
@@ -55,7 +47,7 @@
       "typeString": "Property",
       "name": "property",
       "url": "/travelgatex/reference/objects/property",
-      "description": null,
+      "description": "Indicates property type",
       "isDeprecated": false,
       "args": null
     },
@@ -63,7 +55,7 @@
       "typeString": "String",
       "name": "chainCode",
       "url": "/travelgatex/reference/scalars/string",
-      "description": null,
+      "description": "Hotel chain code",
       "isDeprecated": false,
       "args": null
     },
@@ -71,7 +63,7 @@
       "typeString": "Boolean!",
       "name": "exclusiveDeal",
       "url": "/travelgatex/reference/scalars/boolean",
-      "description": null,
+      "description": "Indicates that the Hotel has an Exclusive Deal.",
       "isDeprecated": false,
       "args": null
     },
@@ -79,7 +71,7 @@
       "typeString": "Location!",
       "name": "location",
       "url": "/travelgatex/reference/objects/location",
-      "description": null,
+      "description": "Indicates the location of the hotel",
       "isDeprecated": false,
       "args": null
     },
@@ -87,7 +79,7 @@
       "typeString": "Contact",
       "name": "contact",
       "url": "/travelgatex/reference/objects/contact",
-      "description": null,
+      "description": "Contact cotains information about hotel contact.",
       "isDeprecated": false,
       "args": null
     },
@@ -95,7 +87,7 @@
       "typeString": "[Int!]!",
       "name": "rank",
       "url": "/travelgatex/reference/scalars/int",
-      "description": null,
+      "description": "Rank indicates the supplier categorization.",
       "isDeprecated": false,
       "args": null
     },
@@ -103,7 +95,7 @@
       "typeString": "[String!]",
       "name": "cardTypes",
       "url": "/travelgatex/reference/scalars/string",
-      "description": null,
+      "description": "List of credit cards",
       "isDeprecated": false,
       "args": null
     },
@@ -111,7 +103,7 @@
       "typeString": "[Amenity!]",
       "name": "amenities",
       "url": "/travelgatex/reference/objects/amenity",
-      "description": null,
+      "description": "Amenities",
       "isDeprecated": false,
       "args": null
     },
@@ -119,7 +111,7 @@
       "typeString": "[Media!]",
       "name": "medias",
       "url": "/travelgatex/reference/objects/media",
-      "description": null,
+      "description": "Medias",
       "isDeprecated": false,
       "args": null
     },
@@ -127,20 +119,20 @@
       "typeString": "[Description!]",
       "name": "descriptions",
       "url": "/travelgatex/reference/objects/description",
-      "description": null,
+      "description": "Descriptions",
       "isDeprecated": false,
       "args": [
         {
           "typeString": "[DescriptionType!]",
           "name": "types",
           "url": "/travelgatex/reference/enums/descriptiontype",
-          "description": null
+          "description": ""
         },
         {
           "typeString": "[Language!]",
           "name": "languages",
           "url": "/travelgatex/reference/scalars/language",
-          "description": null
+          "description": ""
         }
       ]
     }
@@ -148,7 +140,7 @@
   "requireby": [
     {
       "name": "Hotel",
-      "description": null,
+      "description": "Hotel Type",
       "url": "/travelgatex/reference/objects/hotel"
     }
   ],
@@ -157,6 +149,7 @@
   "typename": "HotelData",
   "hideGithubLink": true
 }
+Hotel data
 ## GraphQL schema definition
 
 {{% graphql-schema-type %}}

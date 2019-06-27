@@ -7,7 +7,7 @@
       "typeString": "Resource",
       "name": "node",
       "url": "/stats/reference/objects/resource",
-      "description": null,
+      "description": "",
       "isDeprecated": false,
       "args": null
     },
@@ -15,7 +15,7 @@
       "typeString": "String!",
       "name": "cursor",
       "url": "/stats/reference/scalars/string",
-      "description": null,
+      "description": "",
       "isDeprecated": false,
       "args": null
     }
@@ -23,7 +23,7 @@
   "requireby": [
     {
       "name": "ResourceConnection",
-      "description": null,
+      "description": "",
       "url": "/stats/reference/objects/resourceconnection"
     }
   ],

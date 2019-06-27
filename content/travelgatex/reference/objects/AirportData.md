@@ -7,7 +7,7 @@
       "typeString": "ID!",
       "name": "code",
       "url": "/travelgatex/reference/scalars/id",
-      "description": null,
+      "description": "Airport Code (IATA)",
       "isDeprecated": false,
       "args": null
     },
@@ -15,7 +15,7 @@
       "typeString": "String",
       "name": "name",
       "url": "/travelgatex/reference/scalars/string",
-      "description": null,
+      "description": "The airport's name",
       "isDeprecated": false,
       "args": null
     },
@@ -23,7 +23,7 @@
       "typeString": "Location",
       "name": "location",
       "url": "/travelgatex/reference/objects/location",
-      "description": null,
+      "description": "The airport's location",
       "isDeprecated": false,
       "args": null
     }
@@ -31,7 +31,7 @@
   "requireby": [
     {
       "name": "Airport",
-      "description": null,
+      "description": "Airport Type",
       "url": "/travelgatex/reference/objects/airport"
     }
   ],
@@ -40,6 +40,7 @@
   "typename": "AirportData",
   "hideGithubLink": true
 }
+Information about the airport
 ## GraphQL schema definition
 
 {{% graphql-schema-type %}}

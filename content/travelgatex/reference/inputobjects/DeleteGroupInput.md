@@ -7,7 +7,7 @@
       "typeString": "ID!",
       "name": "group",
       "url": "/travelgatex/reference/scalars/id",
-      "description": null,
+      "description": "",
       "args": null
     }
   ],

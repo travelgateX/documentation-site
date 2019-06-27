@@ -6,12 +6,12 @@
   "requireby": [
     {
       "name": "PaymentXStoredCardData",
-      "description": null,
+      "description": "",
       "url": "/paymentx/reference/objects/paymentxstoredcarddata"
     },
     {
       "name": "PaymentXStoredCardInput",
-      "description": null,
+      "description": "",
       "url": "/paymentx/reference/inputobjects/paymentxstoredcardinput"
     }
   ],

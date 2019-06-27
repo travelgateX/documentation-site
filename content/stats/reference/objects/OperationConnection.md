@@ -7,7 +7,7 @@
       "typeString": "[OperationEdge]",
       "name": "edges",
       "url": "/stats/reference/objects/operationedge",
-      "description": null,
+      "description": "",
       "isDeprecated": false,
       "args": null
     },
@@ -15,7 +15,7 @@
       "typeString": "PageInfo!",
       "name": "pageInfo",
       "url": "/stats/reference/objects/pageinfo",
-      "description": null,
+      "description": "",
       "isDeprecated": false,
       "args": null
     }
@@ -23,7 +23,7 @@
   "requireby": [
     {
       "name": "APIData",
-      "description": null,
+      "description": "",
       "url": "/stats/reference/objects/apidata"
     }
   ],

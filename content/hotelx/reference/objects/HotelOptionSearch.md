@@ -7,7 +7,7 @@
       "typeString": "String!",
       "name": "supplierCode",
       "url": "/hotelx/reference/scalars/string",
-      "description": null,
+      "description": "Supplier that offers this option.",
       "isDeprecated": false,
       "args": null
     },
@@ -15,7 +15,7 @@
       "typeString": "String!",
       "name": "accessCode",
       "url": "/hotelx/reference/scalars/string",
-      "description": null,
+      "description": "Access code of this option.",
       "isDeprecated": false,
       "args": null
     },
@@ -23,7 +23,7 @@
       "typeString": "String!",
       "name": "market",
       "url": "/hotelx/reference/scalars/string",
-      "description": null,
+      "description": "Market of this option.",
       "isDeprecated": false,
       "args": null
     },
@@ -31,7 +31,7 @@
       "typeString": "String!",
       "name": "hotelCode",
       "url": "/hotelx/reference/scalars/string",
-      "description": null,
+      "description": "Code of the hotel in the context selected.",
       "isDeprecated": false,
       "args": null
     },
@@ -39,7 +39,7 @@
       "typeString": "String!",
       "name": "hotelCodeSupplier",
       "url": "/hotelx/reference/scalars/string",
-      "description": null,
+      "description": "Supplier's hotel code.",
       "isDeprecated": false,
       "args": null
     },
@@ -47,7 +47,7 @@
       "typeString": "String",
       "name": "hotelName",
       "url": "/hotelx/reference/scalars/string",
-      "description": null,
+      "description": "Name of the hotel.",
       "isDeprecated": false,
       "args": null
     },
@@ -55,7 +55,7 @@
       "typeString": "String!",
       "name": "boardCode",
       "url": "/hotelx/reference/scalars/string",
-      "description": null,
+      "description": "Code of the board in the context selected.",
       "isDeprecated": false,
       "args": null
     },
@@ -63,7 +63,7 @@
       "typeString": "String!",
       "name": "boardCodeSupplier",
       "url": "/hotelx/reference/scalars/string",
-      "description": null,
+      "description": "Supplier's board code.",
       "isDeprecated": false,
       "args": null
     },
@@ -71,7 +71,7 @@
       "typeString": "PaymentType!",
       "name": "paymentType",
       "url": "/hotelx/reference/enums/paymenttype",
-      "description": null,
+      "description": "Indicates the payment type of the option returned. Possible options: Merchant, Direct, Card Booking, Card check in and Mixed.",
       "isDeprecated": false,
       "args": null
     },
@@ -79,7 +79,7 @@
       "typeString": "StatusType!",
       "name": "status",
       "url": "/hotelx/reference/enums/statustype",
-      "description": null,
+      "description": "The possible values in status in response are Available (OK) or On Request (RQ).",
       "isDeprecated": false,
       "args": null
     },
@@ -87,7 +87,7 @@
       "typeString": "[Occupancy!]!",
       "name": "occupancies",
       "url": "/hotelx/reference/objects/occupancy",
-      "description": null,
+      "description": "List of occupancies for the request",
       "isDeprecated": false,
       "args": null
     },
@@ -95,7 +95,7 @@
       "typeString": "[Room!]!",
       "name": "rooms",
       "url": "/hotelx/reference/objects/room",
-      "description": null,
+      "description": "List of rooms of the option returned.",
       "isDeprecated": false,
       "args": null
     },
@@ -103,7 +103,7 @@
       "typeString": "Price!",
       "name": "price",
       "url": "/hotelx/reference/objects/price",
-      "description": null,
+      "description": "Specifies the prices (Gross, Net and Amount) of the option returned.",
       "isDeprecated": false,
       "args": null
     },
@@ -111,7 +111,7 @@
       "typeString": "[Supplement!]",
       "name": "supplements",
       "url": "/hotelx/reference/objects/supplement",
-      "description": null,
+      "description": "List of supplements of the option returned.",
       "isDeprecated": false,
       "args": null
     },
@@ -119,7 +119,7 @@
       "typeString": "[Surcharge!]",
       "name": "surcharges",
       "url": "/hotelx/reference/objects/surcharge",
-      "description": null,
+      "description": "List of surcharges of the option returned.",
       "isDeprecated": false,
       "args": null
     },
@@ -127,7 +127,7 @@
       "typeString": "[RateRulesType!]",
       "name": "rateRules",
       "url": "/hotelx/reference/enums/raterulestype",
-      "description": null,
+      "description": "Specifies rate rules of the option returned.",
       "isDeprecated": false,
       "args": null
     },
@@ -135,7 +135,7 @@
       "typeString": "CancelPolicy",
       "name": "cancelPolicy",
       "url": "/hotelx/reference/objects/cancelpolicy",
-      "description": null,
+      "description": "Specifies cancel policies of the option returned.",
       "isDeprecated": false,
       "args": null
     },
@@ -143,7 +143,7 @@
       "typeString": "String",
       "name": "remarks",
       "url": "/hotelx/reference/scalars/string",
-      "description": null,
+      "description": "Additional information about the option.",
       "isDeprecated": false,
       "args": null
     },
@@ -151,7 +151,7 @@
       "typeString": "AddOns",
       "name": "addOns",
       "url": "/hotelx/reference/objects/addons",
-      "description": null,
+      "description": "Additional information about the option",
       "isDeprecated": false,
       "args": null
     },
@@ -159,23 +159,15 @@
       "typeString": "String!",
       "name": "token",
       "url": "/hotelx/reference/scalars/string",
-      "description": null,
-      "isDeprecated": true,
-      "args": null,
-      "deprecationReason": "",
-      "descriptionSplitted": {
-        "date": "2019-02-05",
-        "first": "deprecated from",
-        "second": ""
-      },
-      "deprecationDate": "2019-02-05",
-      "typeName": "HotelOptionSearch"
+      "description": "Token for Deep Link",
+      "isDeprecated": false,
+      "args": null
     },
     {
       "typeString": "String!",
       "name": "id",
       "url": "/hotelx/reference/scalars/string",
-      "description": null,
+      "description": "Indicates the quote key",
       "isDeprecated": false,
       "args": null
     }
@@ -186,6 +178,7 @@
   "typename": "HotelOptionSearch",
   "hideGithubLink": true
 }
+An option includes hotel information, meal plan, total price, conditions and room description
 ## GraphQL schema definition
 
 {{% graphql-schema-type %}}

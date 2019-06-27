@@ -7,7 +7,7 @@
       "typeString": "ID!",
       "name": "code",
       "url": "/hotelx/reference/scalars/id",
-      "description": null,
+      "description": "Stored card ID",
       "isDeprecated": false,
       "args": null
     },
@@ -15,7 +15,7 @@
       "typeString": "HotelRuntimeConfigurationData",
       "name": "hotelRuntimeConfigurationData",
       "url": "/hotelx/reference/objects/hotelruntimeconfigurationdata",
-      "description": null,
+      "description": "HotelRuntimeConfigurationData information",
       "isDeprecated": false,
       "args": null
     },
@@ -23,7 +23,7 @@
       "typeString": "DateTime!",
       "name": "createdAt",
       "url": "/hotelx/reference/scalars/datetime",
-      "description": null,
+      "description": "Create date",
       "isDeprecated": false,
       "args": null
     },
@@ -31,7 +31,7 @@
       "typeString": "DateTime!",
       "name": "updatedAt",
       "url": "/hotelx/reference/scalars/datetime",
-      "description": null,
+      "description": "Update date",
       "isDeprecated": false,
       "args": null
     },
@@ -39,14 +39,14 @@
       "typeString": "[AdviseMessage!]",
       "name": "adviseMessage",
       "url": "/hotelx/reference/objects/advisemessage",
-      "description": null,
+      "description": "List of messages",
       "isDeprecated": false,
       "args": [
         {
           "typeString": "[AdviseMessageLevel]",
           "name": "level",
           "url": "/hotelx/reference/enums/advisemessagelevel",
-          "description": null
+          "description": ""
         }
       ]
     }
@@ -54,7 +54,7 @@
   "requireby": [
     {
       "name": "HotelXQuery",
-      "description": null,
+      "description": "",
       "url": "/hotelx/reference/objects/hotelxquery"
     }
   ],

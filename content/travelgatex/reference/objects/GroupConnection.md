@@ -7,7 +7,7 @@
       "typeString": "[GroupEdge]",
       "name": "edges",
       "url": "/travelgatex/reference/objects/groupedge",
-      "description": null,
+      "description": "",
       "isDeprecated": false,
       "args": null
     },
@@ -15,7 +15,7 @@
       "typeString": "PageInfo!",
       "name": "pageInfo",
       "url": "/travelgatex/reference/objects/pageinfo",
-      "description": null,
+      "description": "",
       "isDeprecated": false,
       "args": null
     }
@@ -23,42 +23,42 @@
   "requireby": [
     {
       "name": "AdminQuery",
-      "description": null,
+      "description": "The admin query root of TravelgateX's GraphQL interface.",
       "url": "/travelgatex/reference/objects/adminquery"
     },
     {
       "name": "AccessData",
-      "description": null,
+      "description": "",
       "url": "/travelgatex/reference/objects/accessdata"
     },
     {
       "name": "SupplierData",
-      "description": null,
+      "description": "",
       "url": "/travelgatex/reference/objects/supplierdata"
     },
     {
       "name": "OrganizationData",
-      "description": null,
+      "description": "",
       "url": "/travelgatex/reference/objects/organizationdata"
     },
     {
       "name": "GroupCommonData",
-      "description": null,
+      "description": "",
       "url": "/travelgatex/reference/interfaces/groupcommondata"
     },
     {
       "name": "MemberData",
-      "description": null,
+      "description": "",
       "url": "/travelgatex/reference/objects/memberdata"
     },
     {
       "name": "GroupData",
-      "description": null,
+      "description": "",
       "url": "/travelgatex/reference/objects/groupdata"
     },
     {
       "name": "APIData",
-      "description": null,
+      "description": "",
       "url": "/travelgatex/reference/objects/apidata"
     }
   ],

@@ -7,7 +7,7 @@
       "typeString": "String!",
       "name": "code",
       "url": "/stats/reference/scalars/string",
-      "description": null,
+      "description": "Error code",
       "isDeprecated": false,
       "args": null
     },
@@ -15,7 +15,7 @@
       "typeString": "String!",
       "name": "type",
       "url": "/stats/reference/scalars/string",
-      "description": null,
+      "description": "Error type",
       "isDeprecated": false,
       "args": null
     },
@@ -23,7 +23,7 @@
       "typeString": "String!",
       "name": "description",
       "url": "/stats/reference/scalars/string",
-      "description": null,
+      "description": "Error description",
       "isDeprecated": false,
       "args": null
     }
@@ -34,6 +34,7 @@
   "typename": "Error",
   "hideGithubLink": true
 }
+Application errors
 ## GraphQL schema definition
 
 {{% graphql-schema-type %}}

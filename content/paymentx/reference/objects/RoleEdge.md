@@ -7,7 +7,7 @@
       "typeString": "Role",
       "name": "node",
       "url": "/paymentx/reference/objects/role",
-      "description": null,
+      "description": "",
       "isDeprecated": false,
       "args": null
     },
@@ -15,7 +15,7 @@
       "typeString": "String!",
       "name": "cursor",
       "url": "/paymentx/reference/scalars/string",
-      "description": null,
+      "description": "",
       "isDeprecated": false,
       "args": null
     }
@@ -23,7 +23,7 @@
   "requireby": [
     {
       "name": "RoleConnection",
-      "description": null,
+      "description": "",
       "url": "/paymentx/reference/objects/roleconnection"
     }
   ],

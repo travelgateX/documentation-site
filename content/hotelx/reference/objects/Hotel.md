@@ -7,7 +7,7 @@
       "typeString": "ID!",
       "name": "code",
       "url": "/hotelx/reference/scalars/id",
-      "description": null,
+      "description": "Hotel ID",
       "isDeprecated": false,
       "args": null
     },
@@ -15,7 +15,7 @@
       "typeString": "HotelData",
       "name": "hotelData",
       "url": "/hotelx/reference/objects/hoteldata",
-      "description": null,
+      "description": "Hotel data",
       "isDeprecated": false,
       "args": null
     },
@@ -23,7 +23,7 @@
       "typeString": "[AdviseMessage!]",
       "name": "error",
       "url": "/hotelx/reference/objects/advisemessage",
-      "description": null,
+      "description": "Errors that abort services",
       "isDeprecated": false,
       "args": null
     },
@@ -31,7 +31,7 @@
       "typeString": "DateTime!",
       "name": "createdAt",
       "url": "/hotelx/reference/scalars/datetime",
-      "description": null,
+      "description": "Date created",
       "isDeprecated": false,
       "args": null
     },
@@ -39,7 +39,7 @@
       "typeString": "DateTime!",
       "name": "updatedAt",
       "url": "/hotelx/reference/scalars/datetime",
-      "description": null,
+      "description": "Date updated",
       "isDeprecated": false,
       "args": null
     }
@@ -47,7 +47,7 @@
   "requireby": [
     {
       "name": "HotelEdge",
-      "description": null,
+      "description": "HotelList Edge definition",
       "url": "/hotelx/reference/objects/hoteledge"
     }
   ],
@@ -56,6 +56,7 @@
   "typename": "Hotel",
   "hideGithubLink": true
 }
+Hotel Type
 ## GraphQL schema definition
 
 {{% graphql-schema-type %}}

@@ -7,28 +7,28 @@
       "typeString": "ID",
       "name": "instanceCode",
       "url": "/paymentx/reference/scalars/id",
-      "description": null,
+      "description": "Asigned instance of PaymentX of the booked property.",
       "args": null
     },
     {
       "typeString": "ID",
       "name": "pointOfSaleCode",
       "url": "/paymentx/reference/scalars/id",
-      "description": null,
+      "description": "Indicates the code of the booked property",
       "args": null
     },
     {
       "typeString": "String",
       "name": "bookingReference",
       "url": "/paymentx/reference/scalars/string",
-      "description": null,
+      "description": "Indicates the referece of the booking",
       "args": null
     },
     {
       "typeString": "ID",
       "name": "code",
       "url": "/paymentx/reference/scalars/id",
-      "description": null,
+      "description": "Stored card ID returned in allStoredCards query",
       "args": null
     }
   ],

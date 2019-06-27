@@ -7,49 +7,49 @@
       "typeString": "ID",
       "name": "access",
       "url": "/hotelx/reference/scalars/id",
-      "description": null,
+      "description": "Indicates the access",
       "args": null
     },
     {
       "typeString": "[String!]",
       "name": "hotelCodes",
       "url": "/hotelx/reference/scalars/string",
-      "description": null,
+      "description": "Search by hotel codes",
       "args": null
     },
     {
       "typeString": "[String!]",
       "name": "destinationCodes",
       "url": "/hotelx/reference/scalars/string",
-      "description": null,
+      "description": "Search by destination codes, only search by minimal destinations",
       "args": null
     },
     {
       "typeString": "[Country!]",
       "name": "countries",
       "url": "/hotelx/reference/scalars/country",
-      "description": null,
+      "description": "Filter by country",
       "args": null
     },
     {
       "typeString": "[Int!]",
       "name": "ranks",
       "url": "/hotelx/reference/scalars/int",
-      "description": null,
+      "description": "Filter by supplier rank",
       "args": null
     },
     {
       "typeString": "Int",
       "name": "maxSize",
       "url": "/hotelx/reference/scalars/int",
-      "description": null,
+      "description": "Maxium number of items per page",
       "args": null
     },
     {
       "typeString": "ID",
       "name": "group",
       "url": "/hotelx/reference/scalars/id",
-      "description": null,
+      "description": "The supplier's group. Only available if all permissions allowed",
       "args": null
     }
   ],

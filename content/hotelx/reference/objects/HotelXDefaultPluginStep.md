@@ -7,7 +7,7 @@
       "typeString": "String!",
       "name": "step",
       "url": "/hotelx/reference/scalars/string",
-      "description": null,
+      "description": "",
       "isDeprecated": false,
       "args": null
     },
@@ -15,7 +15,7 @@
       "typeString": "[HotelXDefaultPlugin!]!",
       "name": "plugins",
       "url": "/hotelx/reference/objects/hotelxdefaultplugin",
-      "description": null,
+      "description": "",
       "isDeprecated": false,
       "args": null
     }

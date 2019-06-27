@@ -7,7 +7,7 @@
       "typeString": "API",
       "name": "node",
       "url": "/paymentx/reference/objects/api",
-      "description": null,
+      "description": "",
       "isDeprecated": false,
       "args": null
     },
@@ -15,7 +15,7 @@
       "typeString": "String!",
       "name": "cursor",
       "url": "/paymentx/reference/scalars/string",
-      "description": null,
+      "description": "",
       "isDeprecated": false,
       "args": null
     }
@@ -23,7 +23,7 @@
   "requireby": [
     {
       "name": "APIConnection",
-      "description": null,
+      "description": "",
       "url": "/paymentx/reference/objects/apiconnection"
     }
   ],

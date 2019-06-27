@@ -7,7 +7,7 @@
       "typeString": "DateTime!",
       "name": "start",
       "url": "/hotelx/reference/scalars/datetime",
-      "description": null,
+      "description": "Start UTC",
       "isDeprecated": false,
       "args": null
     },
@@ -15,7 +15,7 @@
       "typeString": "DateTime!",
       "name": "end",
       "url": "/hotelx/reference/scalars/datetime",
-      "description": null,
+      "description": "End UTC",
       "isDeprecated": false,
       "args": null
     },
@@ -23,7 +23,7 @@
       "typeString": "Float",
       "name": "duration",
       "url": "/hotelx/reference/scalars/float",
-      "description": null,
+      "description": "Difference between start and end in miliseconds",
       "isDeprecated": false,
       "args": null
     }
@@ -31,22 +31,22 @@
   "requireby": [
     {
       "name": "StatsRequest",
-      "description": null,
+      "description": "Contains internal information.",
       "url": "/hotelx/reference/objects/statsrequest"
     },
     {
       "name": "StatPlugin",
-      "description": null,
+      "description": "",
       "url": "/hotelx/reference/objects/statplugin"
     },
     {
       "name": "StatAccess",
-      "description": null,
+      "description": "",
       "url": "/hotelx/reference/objects/stataccess"
     },
     {
       "name": "StatTransaction",
-      "description": null,
+      "description": "",
       "url": "/hotelx/reference/objects/stattransaction"
     }
   ],

@@ -7,7 +7,7 @@
       "typeString": "Price!",
       "name": "price",
       "url": "/hotelx/reference/objects/price",
-      "description": null,
+      "description": "Total price for all days.",
       "isDeprecated": false,
       "args": null
     },
@@ -15,7 +15,7 @@
       "typeString": "[PriceBreakdown!]",
       "name": "breakdown",
       "url": "/hotelx/reference/objects/pricebreakdown",
-      "description": null,
+      "description": "Daily break downs price.",
       "isDeprecated": false,
       "args": null
     }
@@ -23,7 +23,7 @@
   "requireby": [
     {
       "name": "Room",
-      "description": null,
+      "description": "Contains the room information of the option returned.",
       "url": "/hotelx/reference/objects/room"
     }
   ],
@@ -32,6 +32,7 @@
   "typename": "RoomPrice",
   "hideGithubLink": true
 }
+Specifies the room price.
 ## GraphQL schema definition
 
 {{% graphql-schema-type %}}

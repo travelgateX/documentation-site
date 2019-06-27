@@ -6,26 +6,26 @@
   "requireby": [
     {
       "name": "CancelPenalty",
-      "description": null,
+      "description": "Contains information for cancellation penalities..",
       "url": "/hotelx/reference/objects/cancelpenalty"
     }
   ],
   "enumValues": [
     {
       "name": "NIGHTS",
-      "description": null,
+      "description": "Indicates the number of nights to be penalized.",
       "isDeprecated": false,
       "deprecationReason": null
     },
     {
       "name": "PERCENT",
-      "description": null,
+      "description": "Indicates the percentage to pay based on the option price.",
       "isDeprecated": false,
       "deprecationReason": null
     },
     {
       "name": "IMPORT",
-      "description": null,
+      "description": "Indicates the exact amount payable.",
       "isDeprecated": false,
       "deprecationReason": null
     }
@@ -34,6 +34,7 @@
   "typename": "CancelPenaltyType",
   "hideGithubLink": true
 }
+Options type
 ## GraphQL schema definition
 
 {{% graphql-schema-enum %}}

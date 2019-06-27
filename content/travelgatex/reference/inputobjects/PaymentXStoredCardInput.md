@@ -7,70 +7,70 @@
       "typeString": "ID!",
       "name": "instanceCode",
       "url": "/travelgatex/reference/scalars/id",
-      "description": null,
+      "description": "Asigned instance of PaymentX of the booked property.",
       "args": null
     },
     {
       "typeString": "ID!",
       "name": "pointOfSaleCode",
       "url": "/travelgatex/reference/scalars/id",
-      "description": null,
+      "description": "Indicates the code of the booked property",
       "args": null
     },
     {
       "typeString": "String!",
       "name": "bookingReference",
       "url": "/travelgatex/reference/scalars/string",
-      "description": null,
+      "description": "Indicates the referece of the booking",
       "args": null
     },
     {
       "typeString": "Date",
       "name": "checkOut",
       "url": "/travelgatex/reference/scalars/date",
-      "description": null,
+      "description": "Check-out, booking date Format: YYYY-MM-DD",
       "args": null
     },
     {
       "typeString": "Date",
       "name": "checkIn",
       "url": "/travelgatex/reference/scalars/date",
-      "description": null,
+      "description": "Check-in, booking date Format: YYYY-MM-DD",
       "args": null
     },
     {
       "typeString": "String",
       "name": "cardType",
       "url": "/travelgatex/reference/scalars/string",
-      "description": null,
+      "description": "Indicates the card type.",
       "args": null
     },
     {
       "typeString": "HolderInput",
       "name": "holder",
       "url": "/travelgatex/reference/inputobjects/holderinput",
-      "description": null,
+      "description": "Contains owner's name",
       "args": null
     },
     {
       "typeString": "CardNumber!",
       "name": "number",
       "url": "/travelgatex/reference/scalars/cardnumber",
-      "description": null,
+      "description": "Contains credit card number",
       "args": null
     },
     {
       "typeString": "CVC!",
       "name": "CVC",
       "url": "/travelgatex/reference/scalars/cvc",
-      "description": null,
+      "description": "Contains credit card CVC",
       "args": null
     },
     {
       "typeString": "ExpireDateInput!",
       "name": "expire",
       "url": "/travelgatex/reference/inputobjects/expiredateinput",
-      "description": null,
+      "description": "Contains credit card expiration date",
       "args": null
     }
   ],

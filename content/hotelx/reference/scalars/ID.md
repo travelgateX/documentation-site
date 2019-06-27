@@ -6,142 +6,147 @@
   "requireby": [
     {
       "name": "HotelXBoardQueryInput",
-      "description": null,
+      "description": "",
       "url": "/hotelx/reference/inputobjects/hotelxboardqueryinput"
     },
     {
       "name": "HotelXCategoryQueryInput",
-      "description": null,
+      "description": "",
       "url": "/hotelx/reference/inputobjects/hotelxcategoryqueryinput"
     },
     {
       "name": "HotelXHotelListInput",
-      "description": null,
+      "description": "",
       "url": "/hotelx/reference/inputobjects/hotelxhotellistinput"
     },
     {
       "name": "HotelXRoomQueryInput",
-      "description": null,
+      "description": "",
       "url": "/hotelx/reference/inputobjects/hotelxroomqueryinput"
     },
     {
       "name": "HotelXDestinationListInput",
-      "description": null,
+      "description": "",
       "url": "/hotelx/reference/inputobjects/hotelxdestinationlistinput"
     },
     {
       "name": "HotelXDestinationSearcherInput",
-      "description": null,
+      "description": "",
       "url": "/hotelx/reference/inputobjects/hotelxdestinationsearcherinput"
     },
     {
       "name": "HotelSettingsInput",
-      "description": null,
+      "description": "Settings that you can edit for this avail. Values are loaded by default in our Back Office.",
       "url": "/hotelx/reference/inputobjects/hotelsettingsinput"
     },
     {
       "name": "HotelRuntimeConfiguration",
-      "description": null,
+      "description": "",
       "url": "/hotelx/reference/objects/hotelruntimeconfiguration"
     },
     {
+      "name": "HotelXDefaultSettingsData",
+      "description": "",
+      "url": "/hotelx/reference/objects/hotelxdefaultsettingsdata"
+    },
+    {
       "name": "AdviseMessage",
-      "description": null,
+      "description": "List of advise messages.",
       "url": "/hotelx/reference/objects/advisemessage"
     },
     {
       "name": "Board",
-      "description": null,
+      "description": "Board type.",
       "url": "/hotelx/reference/objects/board"
     },
     {
       "name": "BoardData",
-      "description": null,
+      "description": "Board data",
       "url": "/hotelx/reference/objects/boarddata"
     },
     {
       "name": "Node",
-      "description": null,
+      "description": "",
       "url": "/hotelx/reference/interfaces/node"
     },
     {
       "name": "Category",
-      "description": null,
+      "description": "Category Type",
       "url": "/hotelx/reference/objects/category"
     },
     {
       "name": "CategoryData",
-      "description": null,
+      "description": "Category data",
       "url": "/hotelx/reference/objects/categorydata"
     },
     {
       "name": "Hotel",
-      "description": null,
+      "description": "Hotel Type",
       "url": "/hotelx/reference/objects/hotel"
     },
     {
       "name": "HotelData",
-      "description": null,
+      "description": "Hotel data",
       "url": "/hotelx/reference/objects/hoteldata"
     },
     {
-      "name": "GiataData",
-      "description": null,
-      "url": "/hotelx/reference/objects/giatadata"
-    },
-    {
       "name": "DestinationData",
-      "description": null,
+      "description": "Information about destinantion",
       "url": "/hotelx/reference/objects/destinationdata"
     },
     {
       "name": "Airport",
-      "description": null,
+      "description": "Airport Type",
       "url": "/hotelx/reference/objects/airport"
     },
     {
       "name": "Geoname",
-      "description": null,
+      "description": "Geoname type",
       "url": "/hotelx/reference/objects/geoname"
     },
     {
       "name": "AirportData",
-      "description": null,
+      "description": "Information about the airport",
       "url": "/hotelx/reference/objects/airportdata"
     },
     {
       "name": "GeonameData",
-      "description": null,
+      "description": "Geoname data, which contain a reference to his parent location",
       "url": "/hotelx/reference/objects/geonamedata"
     },
     {
       "name": "RoomStatic",
-      "description": null,
+      "description": "Room Type",
       "url": "/hotelx/reference/objects/roomstatic"
     },
     {
       "name": "RoomData",
-      "description": null,
+      "description": "Room data",
       "url": "/hotelx/reference/objects/roomdata"
     },
     {
       "name": "Destination",
-      "description": null,
+      "description": "Destination Type",
       "url": "/hotelx/reference/objects/destination"
     },
     {
       "name": "HotelXAccessInput",
-      "description": null,
+      "description": "AccessInput overwrites an existent access in our Back Office or creates a new\none to be used in this search query only. An access object contains its own code, configuration and settings.",
       "url": "/hotelx/reference/inputobjects/hotelxaccessinput"
     },
     {
+      "name": "HotelXDefaultSettingsDataInput",
+      "description": "",
+      "url": "/hotelx/reference/inputobjects/hotelxdefaultsettingsdatainput"
+    },
+    {
       "name": "HotelXUpdateStatus",
-      "description": null,
+      "description": "",
       "url": "/hotelx/reference/objects/hotelxupdatestatus"
     },
     {
       "name": "HotelXUpdateStatusData",
-      "description": null,
+      "description": "",
       "url": "/hotelx/reference/objects/hotelxupdatestatusdata"
     }
   ],

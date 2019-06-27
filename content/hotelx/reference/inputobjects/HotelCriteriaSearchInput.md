@@ -7,63 +7,63 @@
       "typeString": "Date!",
       "name": "checkIn",
       "url": "/hotelx/reference/scalars/date",
-      "description": null,
+      "description": "Check-in date for booking\nFormat: YYYY-MM-DD",
       "args": null
     },
     {
       "typeString": "Date!",
       "name": "checkOut",
       "url": "/hotelx/reference/scalars/date",
-      "description": null,
+      "description": "Check-out, booking date\nFormat: YYYY-MM-DD",
       "args": null
     },
     {
       "typeString": "[String!]",
       "name": "hotels",
       "url": "/hotelx/reference/scalars/string",
-      "description": null,
+      "description": "Hotel Codes.",
       "args": null
     },
     {
       "typeString": "[String!]",
       "name": "destinations",
       "url": "/hotelx/reference/scalars/string",
-      "description": null,
+      "description": "Destination codes.",
       "args": null
     },
     {
       "typeString": "[RoomInput!]!",
       "name": "occupancies",
       "url": "/hotelx/reference/inputobjects/roominput",
-      "description": null,
+      "description": "For multi-room bookings, this array will contain multiple elements (rooms).\nFor each room you have to specify its own occupancy.",
       "args": null
     },
     {
       "typeString": "Language",
       "name": "language",
       "url": "/hotelx/reference/scalars/language",
-      "description": null,
+      "description": "Language to be used in request",
       "args": null
     },
     {
       "typeString": "Currency",
       "name": "currency",
       "url": "/hotelx/reference/scalars/currency",
-      "description": null,
+      "description": "Currency requested if supported by supplier",
       "args": null
     },
     {
       "typeString": "Country",
       "name": "nationality",
       "url": "/hotelx/reference/scalars/country",
-      "description": null,
+      "description": "Nationality of the guest (use ISO3166_1_alfa_2)",
       "args": null
     },
     {
       "typeString": "String",
       "name": "market",
       "url": "/hotelx/reference/scalars/string",
-      "description": null,
+      "description": "Targeted zone, country or point-ofsale-to be used in request.",
       "args": null
     }
   ],
@@ -73,6 +73,8 @@
   "typename": "HotelCriteriaSearchInput",
   "hideGithubLink": true
 }
+Search criteria contains destination, travel dates and the number of pax in each room.
+You must preload the other fields in our system by complete the fields absents.
 ## GraphQL schema definition
 
 {{% graphql-schema-type %}}

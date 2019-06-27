@@ -7,7 +7,7 @@
       "typeString": "[Transactions!]!",
       "name": "transactions",
       "url": "/hotelx/reference/objects/transactions",
-      "description": null,
+      "description": "List of transactions data",
       "isDeprecated": false,
       "args": null
     },
@@ -15,7 +15,7 @@
       "typeString": "DateTime!",
       "name": "timeStamp",
       "url": "/hotelx/reference/scalars/datetime",
-      "description": null,
+      "description": "TimeStamp",
       "isDeprecated": false,
       "args": null
     },
@@ -23,7 +23,7 @@
       "typeString": "Float!",
       "name": "processTime",
       "url": "/hotelx/reference/scalars/float",
-      "description": null,
+      "description": "Process time in milliseconds (ms)",
       "isDeprecated": false,
       "args": null
     }
@@ -31,32 +31,32 @@
   "requireby": [
     {
       "name": "HotelSearch",
-      "description": null,
+      "description": "Results from Avail Hotel; contains all the available options for a given date and itinerary",
       "url": "/hotelx/reference/objects/hotelsearch"
     },
     {
       "name": "HotelQuote",
-      "description": null,
+      "description": "",
       "url": "/hotelx/reference/objects/hotelquote"
     },
     {
       "name": "HotelBooking",
-      "description": null,
+      "description": "",
       "url": "/hotelx/reference/objects/hotelbooking"
     },
     {
       "name": "Response",
-      "description": null,
+      "description": "",
       "url": "/hotelx/reference/interfaces/response"
     },
     {
       "name": "HotelBookPayload",
-      "description": null,
+      "description": "",
       "url": "/hotelx/reference/objects/hotelbookpayload"
     },
     {
       "name": "HotelCancelPayload",
-      "description": null,
+      "description": "",
       "url": "/hotelx/reference/objects/hotelcancelpayload"
     }
   ],
@@ -65,6 +65,7 @@
   "typename": "AuditData",
   "hideGithubLink": true
 }
+Data sent and received in the supplier’s native format.
 ## GraphQL schema definition
 
 {{% graphql-schema-type %}}

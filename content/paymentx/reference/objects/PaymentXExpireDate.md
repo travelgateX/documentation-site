@@ -7,7 +7,7 @@
       "typeString": "Int!",
       "name": "month",
       "url": "/paymentx/reference/scalars/int",
-      "description": null,
+      "description": "Month MM",
       "isDeprecated": false,
       "args": null
     },
@@ -15,7 +15,7 @@
       "typeString": "Int!",
       "name": "year",
       "url": "/paymentx/reference/scalars/int",
-      "description": null,
+      "description": "Year yy",
       "isDeprecated": false,
       "args": null
     }
@@ -23,7 +23,7 @@
   "requireby": [
     {
       "name": "PaymentXStoredCardData",
-      "description": null,
+      "description": "",
       "url": "/paymentx/reference/objects/paymentxstoredcarddata"
     }
   ],
@@ -32,6 +32,7 @@
   "typename": "PaymentXExpireDate",
   "hideGithubLink": true
 }
+The card expiration date
 ## GraphQL schema definition
 
 {{% graphql-schema-type %}}

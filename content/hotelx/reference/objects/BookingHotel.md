@@ -7,71 +7,23 @@
       "typeString": "Date",
       "name": "creationDate",
       "url": "/hotelx/reference/scalars/date",
-      "description": null,
-      "isDeprecated": true,
-      "args": null,
-      "deprecationReason": "Incorrect date format.",
-      "descriptionSplitted": {
-        "date": "2018-02-28",
-        "first": "deprecated from",
-        "second": "Incorrect date format."
-      },
-      "deprecationDate": "2018-02-28",
-      "typeName": "BookingHotel"
+      "description": "Creation date of the booking.\nFormat: YYYY-MM-DD",
+      "isDeprecated": false,
+      "args": null
     },
     {
       "typeString": "Date",
       "name": "checkIn",
       "url": "/hotelx/reference/scalars/date",
-      "description": null,
-      "isDeprecated": true,
-      "args": null,
-      "deprecationReason": "Incorrect date format.",
-      "descriptionSplitted": {
-        "date": "2018-02-28",
-        "first": "deprecated from",
-        "second": "Incorrect date format."
-      },
-      "deprecationDate": "2018-02-28",
-      "typeName": "BookingHotel"
+      "description": "Check-in date for booking\nFormat: YYYY-MM-DD",
+      "isDeprecated": false,
+      "args": null
     },
     {
       "typeString": "Date",
       "name": "checkOut",
       "url": "/hotelx/reference/scalars/date",
-      "description": null,
-      "isDeprecated": true,
-      "args": null,
-      "deprecationReason": "Incorrect date format.",
-      "descriptionSplitted": {
-        "date": "2018-02-28",
-        "first": "deprecated from",
-        "second": "Incorrect date format."
-      },
-      "deprecationDate": "2018-02-28",
-      "typeName": "BookingHotel"
-    },
-    {
-      "typeString": "Date",
-      "name": "bookingDate",
-      "url": "/hotelx/reference/scalars/date",
-      "description": null,
-      "isDeprecated": false,
-      "args": null
-    },
-    {
-      "typeString": "Date",
-      "name": "start",
-      "url": "/hotelx/reference/scalars/date",
-      "description": null,
-      "isDeprecated": false,
-      "args": null
-    },
-    {
-      "typeString": "Date",
-      "name": "end",
-      "url": "/hotelx/reference/scalars/date",
-      "description": null,
+      "description": "Check-out date for the booking.\nFormat: YYYY-MM-DD",
       "isDeprecated": false,
       "args": null
     },
@@ -79,7 +31,7 @@
       "typeString": "String",
       "name": "hotelCode",
       "url": "/hotelx/reference/scalars/string",
-      "description": null,
+      "description": "Code of the hotel in the context selected.",
       "isDeprecated": false,
       "args": null
     },
@@ -87,7 +39,7 @@
       "typeString": "String",
       "name": "hotelName",
       "url": "/hotelx/reference/scalars/string",
-      "description": null,
+      "description": "Name of the hotel.",
       "isDeprecated": false,
       "args": null
     },
@@ -95,7 +47,7 @@
       "typeString": "String",
       "name": "boardCode",
       "url": "/hotelx/reference/scalars/string",
-      "description": null,
+      "description": "Code of the board in the context selected.",
       "isDeprecated": false,
       "args": null
     },
@@ -103,7 +55,7 @@
       "typeString": "[Occupancy!]",
       "name": "occupancies",
       "url": "/hotelx/reference/objects/occupancy",
-      "description": null,
+      "description": "List of occupancies for the request",
       "isDeprecated": false,
       "args": null
     },
@@ -111,7 +63,7 @@
       "typeString": "[BookingRoom!]",
       "name": "rooms",
       "url": "/hotelx/reference/objects/bookingroom",
-      "description": null,
+      "description": "List of rooms.",
       "isDeprecated": false,
       "args": null
     }
@@ -119,7 +71,7 @@
   "requireby": [
     {
       "name": "HotelBookingDetail",
-      "description": null,
+      "description": "Contains information about booking",
       "url": "/hotelx/reference/objects/hotelbookingdetail"
     }
   ],

@@ -7,7 +7,7 @@
       "typeString": "ID!",
       "name": "id",
       "url": "/stats/reference/scalars/id",
-      "description": null,
+      "description": "",
       "isDeprecated": false,
       "args": null
     },
@@ -15,7 +15,7 @@
       "typeString": "ID!",
       "name": "code",
       "url": "/stats/reference/scalars/id",
-      "description": null,
+      "description": "",
       "isDeprecated": false,
       "args": null
     },
@@ -23,7 +23,7 @@
       "typeString": "String",
       "name": "label",
       "url": "/stats/reference/scalars/string",
-      "description": null,
+      "description": "",
       "isDeprecated": false,
       "args": null
     },
@@ -31,7 +31,7 @@
       "typeString": "GroupType!",
       "name": "type",
       "url": "/stats/reference/enums/grouptype",
-      "description": null,
+      "description": "",
       "isDeprecated": false,
       "args": null
     },
@@ -39,7 +39,7 @@
       "typeString": "String",
       "name": "info",
       "url": "/stats/reference/scalars/string",
-      "description": null,
+      "description": "",
       "isDeprecated": false,
       "args": null
     },
@@ -47,50 +47,50 @@
       "typeString": "GroupConnection",
       "name": "children",
       "url": "/stats/reference/objects/groupconnection",
-      "description": null,
+      "description": "Only responses folders.(non-hierarchically)",
       "isDeprecated": false,
       "args": [
         {
           "typeString": "[ID!]",
           "name": "codes",
           "url": "/stats/reference/scalars/id",
-          "description": null
+          "description": ""
         },
         {
           "typeString": "Int",
           "name": "first",
           "url": "/stats/reference/scalars/int",
-          "description": null
+          "description": ""
         },
         {
           "typeString": "Int",
           "name": "last",
           "url": "/stats/reference/scalars/int",
-          "description": null
+          "description": ""
         },
         {
           "typeString": "String",
           "name": "before",
           "url": "/stats/reference/scalars/string",
-          "description": null
+          "description": ""
         },
         {
           "typeString": "String",
           "name": "after",
           "url": "/stats/reference/scalars/string",
-          "description": null
+          "description": ""
         },
         {
           "typeString": "GroupType",
           "name": "type",
           "url": "/stats/reference/enums/grouptype",
-          "description": null
+          "description": ""
         },
         {
           "typeString": "String",
           "name": "codeStartsWith",
           "url": "/stats/reference/scalars/string",
-          "description": null
+          "description": ""
         }
       ]
     },
@@ -98,50 +98,50 @@
       "typeString": "GroupConnection",
       "name": "descendents",
       "url": "/stats/reference/objects/groupconnection",
-      "description": null,
+      "description": "Response all descendents groups nodes in this group (nom-hierarchically)",
       "isDeprecated": false,
       "args": [
         {
           "typeString": "[ID!]",
           "name": "codes",
           "url": "/stats/reference/scalars/id",
-          "description": null
+          "description": ""
         },
         {
           "typeString": "GroupType",
           "name": "type",
           "url": "/stats/reference/enums/grouptype",
-          "description": null
+          "description": ""
         },
         {
           "typeString": "Int",
           "name": "first",
           "url": "/stats/reference/scalars/int",
-          "description": null
+          "description": ""
         },
         {
           "typeString": "Int",
           "name": "last",
           "url": "/stats/reference/scalars/int",
-          "description": null
+          "description": ""
         },
         {
           "typeString": "String",
           "name": "before",
           "url": "/stats/reference/scalars/string",
-          "description": null
+          "description": ""
         },
         {
           "typeString": "String",
           "name": "after",
           "url": "/stats/reference/scalars/string",
-          "description": null
+          "description": ""
         },
         {
           "typeString": "String",
           "name": "codeStartsWith",
           "url": "/stats/reference/scalars/string",
-          "description": null
+          "description": ""
         }
       ]
     },
@@ -149,44 +149,44 @@
       "typeString": "GroupConnection",
       "name": "parents",
       "url": "/stats/reference/objects/groupconnection",
-      "description": null,
+      "description": "Response all parents groups nodes for this group (nom-hierarchically)",
       "isDeprecated": false,
       "args": [
         {
           "typeString": "[ID!]",
           "name": "codes",
           "url": "/stats/reference/scalars/id",
-          "description": null
+          "description": ""
         },
         {
           "typeString": "GroupType",
           "name": "type",
           "url": "/stats/reference/enums/grouptype",
-          "description": null
+          "description": ""
         },
         {
           "typeString": "Int",
           "name": "first",
           "url": "/stats/reference/scalars/int",
-          "description": null
+          "description": ""
         },
         {
           "typeString": "Int",
           "name": "last",
           "url": "/stats/reference/scalars/int",
-          "description": null
+          "description": ""
         },
         {
           "typeString": "String",
           "name": "before",
           "url": "/stats/reference/scalars/string",
-          "description": null
+          "description": ""
         },
         {
           "typeString": "String",
           "name": "after",
           "url": "/stats/reference/scalars/string",
-          "description": null
+          "description": ""
         }
       ]
     },
@@ -194,7 +194,7 @@
       "typeString": "Member",
       "name": "owner",
       "url": "/stats/reference/objects/member",
-      "description": null,
+      "description": "",
       "isDeprecated": false,
       "args": null
     },
@@ -202,7 +202,7 @@
       "typeString": "Boolean!",
       "name": "isEditable",
       "url": "/stats/reference/scalars/boolean",
-      "description": null,
+      "description": "",
       "isDeprecated": false,
       "args": null
     },
@@ -210,44 +210,44 @@
       "typeString": "MemberConnection",
       "name": "members",
       "url": "/stats/reference/objects/memberconnection",
-      "description": null,
+      "description": "",
       "isDeprecated": false,
       "args": [
         {
           "typeString": "[ID!]",
           "name": "codes",
           "url": "/stats/reference/scalars/id",
-          "description": null
+          "description": ""
         },
         {
           "typeString": "MemberType",
           "name": "type",
           "url": "/stats/reference/enums/membertype",
-          "description": null
+          "description": ""
         },
         {
           "typeString": "Int",
           "name": "first",
           "url": "/stats/reference/scalars/int",
-          "description": null
+          "description": ""
         },
         {
           "typeString": "Int",
           "name": "last",
           "url": "/stats/reference/scalars/int",
-          "description": null
+          "description": ""
         },
         {
           "typeString": "String",
           "name": "before",
           "url": "/stats/reference/scalars/string",
-          "description": null
+          "description": ""
         },
         {
           "typeString": "String",
           "name": "after",
           "url": "/stats/reference/scalars/string",
-          "description": null
+          "description": ""
         }
       ]
     },
@@ -255,38 +255,38 @@
       "typeString": "APIConnection",
       "name": "apis",
       "url": "/stats/reference/objects/apiconnection",
-      "description": null,
+      "description": "APIs assigned to this group. Products have APIs.",
       "isDeprecated": false,
       "args": [
         {
           "typeString": "[ID!]",
           "name": "codes",
           "url": "/stats/reference/scalars/id",
-          "description": null
+          "description": ""
         },
         {
           "typeString": "Int",
           "name": "first",
           "url": "/stats/reference/scalars/int",
-          "description": null
+          "description": ""
         },
         {
           "typeString": "Int",
           "name": "last",
           "url": "/stats/reference/scalars/int",
-          "description": null
+          "description": ""
         },
         {
           "typeString": "String",
           "name": "before",
           "url": "/stats/reference/scalars/string",
-          "description": null
+          "description": ""
         },
         {
           "typeString": "String",
           "name": "after",
           "url": "/stats/reference/scalars/string",
-          "description": null
+          "description": ""
         }
       ]
     },
@@ -294,38 +294,38 @@
       "typeString": "ProductConnection",
       "name": "products",
       "url": "/stats/reference/objects/productconnection",
-      "description": null,
+      "description": "Products asign to a organization",
       "isDeprecated": false,
       "args": [
         {
           "typeString": "[ID!]",
           "name": "codes",
           "url": "/stats/reference/scalars/id",
-          "description": null
+          "description": ""
         },
         {
           "typeString": "Int",
           "name": "first",
           "url": "/stats/reference/scalars/int",
-          "description": null
+          "description": ""
         },
         {
           "typeString": "Int",
           "name": "last",
           "url": "/stats/reference/scalars/int",
-          "description": null
+          "description": ""
         },
         {
           "typeString": "String",
           "name": "before",
           "url": "/stats/reference/scalars/string",
-          "description": null
+          "description": ""
         },
         {
           "typeString": "String",
           "name": "after",
           "url": "/stats/reference/scalars/string",
-          "description": null
+          "description": ""
         }
       ]
     },
@@ -333,44 +333,44 @@
       "typeString": "MemberConnection",
       "name": "allMembers",
       "url": "/stats/reference/objects/memberconnection",
-      "description": null,
+      "description": "Response all members in this group's childrens (hierarchically)",
       "isDeprecated": false,
       "args": [
         {
           "typeString": "[ID!]",
           "name": "codes",
           "url": "/stats/reference/scalars/id",
-          "description": null
+          "description": ""
         },
         {
           "typeString": "MemberType",
           "name": "type",
           "url": "/stats/reference/enums/membertype",
-          "description": null
+          "description": ""
         },
         {
           "typeString": "Int",
           "name": "first",
           "url": "/stats/reference/scalars/int",
-          "description": null
+          "description": ""
         },
         {
           "typeString": "Int",
           "name": "last",
           "url": "/stats/reference/scalars/int",
-          "description": null
+          "description": ""
         },
         {
           "typeString": "String",
           "name": "before",
           "url": "/stats/reference/scalars/string",
-          "description": null
+          "description": ""
         },
         {
           "typeString": "String",
           "name": "after",
           "url": "/stats/reference/scalars/string",
-          "description": null
+          "description": ""
         }
       ]
     },
@@ -378,38 +378,38 @@
       "typeString": "AccessConnection",
       "name": "accesses",
       "url": "/stats/reference/objects/accessconnection",
-      "description": null,
+      "description": "Access resources in a organization",
       "isDeprecated": false,
       "args": [
         {
           "typeString": "[ID!]",
           "name": "codes",
           "url": "/stats/reference/scalars/id",
-          "description": null
+          "description": ""
         },
         {
           "typeString": "Int",
           "name": "first",
           "url": "/stats/reference/scalars/int",
-          "description": null
+          "description": ""
         },
         {
           "typeString": "Int",
           "name": "last",
           "url": "/stats/reference/scalars/int",
-          "description": null
+          "description": ""
         },
         {
           "typeString": "String",
           "name": "before",
           "url": "/stats/reference/scalars/string",
-          "description": null
+          "description": ""
         },
         {
           "typeString": "String",
           "name": "after",
           "url": "/stats/reference/scalars/string",
-          "description": null
+          "description": ""
         }
       ]
     },
@@ -417,44 +417,44 @@
       "typeString": "SupplierConnection",
       "name": "suppliers",
       "url": "/stats/reference/objects/supplierconnection",
-      "description": null,
+      "description": "Supplier resources in a organization",
       "isDeprecated": false,
       "args": [
         {
           "typeString": "[ID!]",
           "name": "codes",
           "url": "/stats/reference/scalars/id",
-          "description": null
+          "description": ""
         },
         {
           "typeString": "[ID!]",
           "name": "accessID",
           "url": "/stats/reference/scalars/id",
-          "description": null
+          "description": ""
         },
         {
           "typeString": "Int",
           "name": "first",
           "url": "/stats/reference/scalars/int",
-          "description": null
+          "description": ""
         },
         {
           "typeString": "Int",
           "name": "last",
           "url": "/stats/reference/scalars/int",
-          "description": null
+          "description": ""
         },
         {
           "typeString": "String",
           "name": "before",
           "url": "/stats/reference/scalars/string",
-          "description": null
+          "description": ""
         },
         {
           "typeString": "String",
           "name": "after",
           "url": "/stats/reference/scalars/string",
-          "description": null
+          "description": ""
         }
       ]
     },
@@ -462,50 +462,50 @@
       "typeString": "ClientConnection",
       "name": "clients",
       "url": "/stats/reference/objects/clientconnection",
-      "description": null,
+      "description": "Clients resources in a organization",
       "isDeprecated": false,
       "args": [
         {
           "typeString": "[ID!]",
           "name": "codes",
           "url": "/stats/reference/scalars/id",
-          "description": null
+          "description": ""
         },
         {
           "typeString": "[ID!]",
           "name": "name",
           "url": "/stats/reference/scalars/id",
-          "description": null
+          "description": ""
         },
         {
           "typeString": "Boolean",
           "name": "isActive",
           "url": "/stats/reference/scalars/boolean",
-          "description": null
+          "description": ""
         },
         {
           "typeString": "Int",
           "name": "first",
           "url": "/stats/reference/scalars/int",
-          "description": null
+          "description": ""
         },
         {
           "typeString": "Int",
           "name": "last",
           "url": "/stats/reference/scalars/int",
-          "description": null
+          "description": ""
         },
         {
           "typeString": "String",
           "name": "before",
           "url": "/stats/reference/scalars/string",
-          "description": null
+          "description": ""
         },
         {
           "typeString": "String",
           "name": "after",
           "url": "/stats/reference/scalars/string",
-          "description": null
+          "description": ""
         }
       ]
     },
@@ -513,15 +513,7 @@
       "typeString": "[Domain]!",
       "name": "domains",
       "url": "/stats/reference/objects/domain",
-      "description": null,
-      "isDeprecated": false,
-      "args": null
-    },
-    {
-      "typeString": "String",
-      "name": "template",
-      "url": "/stats/reference/scalars/string",
-      "description": null,
+      "description": "",
       "isDeprecated": false,
       "args": null
     }
@@ -529,7 +521,7 @@
   "requireby": [
     {
       "name": "Organization",
-      "description": null,
+      "description": "Organization node is the root node in the hierarachy, the folders are the children of the organization and the products are the children of the folders.",
       "url": "/stats/reference/objects/organization"
     }
   ],

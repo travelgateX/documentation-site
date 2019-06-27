@@ -7,14 +7,14 @@
       "typeString": "PluginStepType!",
       "name": "step",
       "url": "/hotelx/reference/enums/pluginsteptype",
-      "description": null,
+      "description": "Indicates where the plugin will be executed.",
       "args": null
     },
     {
       "typeString": "[PluginsInput!]",
       "name": "pluginsType",
       "url": "/hotelx/reference/inputobjects/pluginsinput",
-      "description": null,
+      "description": "Indicates the plugin that will be executed.",
       "args": null
     }
   ],
@@ -24,6 +24,7 @@
   "typename": "PluginStepInput",
   "hideGithubLink": true
 }
+Plugin to execute.
 ## GraphQL schema definition
 
 {{% graphql-schema-type %}}

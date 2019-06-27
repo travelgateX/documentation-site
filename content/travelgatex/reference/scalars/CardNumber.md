@@ -6,12 +6,12 @@
   "requireby": [
     {
       "name": "PaymentXStoredCardData",
-      "description": null,
+      "description": "",
       "url": "/travelgatex/reference/objects/paymentxstoredcarddata"
     },
     {
       "name": "PaymentXStoredCardInput",
-      "description": null,
+      "description": "",
       "url": "/travelgatex/reference/inputobjects/paymentxstoredcardinput"
     }
   ],

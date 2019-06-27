@@ -7,14 +7,14 @@
       "typeString": "StatsRequest",
       "name": "stats",
       "url": "/hotelx/reference/objects/statsrequest",
-      "description": null,
+      "description": "Application stats",
       "isDeprecated": false,
       "args": [
         {
           "typeString": "String!",
           "name": "token",
           "url": "/hotelx/reference/scalars/string",
-          "description": null
+          "description": ""
         }
       ]
     },
@@ -22,7 +22,7 @@
       "typeString": "AuditData",
       "name": "auditData",
       "url": "/hotelx/reference/objects/auditdata",
-      "description": null,
+      "description": "Data sent and received in the supplier’s original format.",
       "isDeprecated": false,
       "args": null
     },
@@ -30,7 +30,7 @@
       "typeString": "[Error!]",
       "name": "errors",
       "url": "/hotelx/reference/objects/error",
-      "description": null,
+      "description": "Errors that lead the service to stop",
       "isDeprecated": false,
       "args": null
     },
@@ -38,7 +38,7 @@
       "typeString": "[Warning!]",
       "name": "warnings",
       "url": "/hotelx/reference/objects/warning",
-      "description": null,
+      "description": "Potentially harmful situations or errors that do not stop the service",
       "isDeprecated": false,
       "args": null
     }

@@ -7,7 +7,7 @@
       "typeString": "Int!",
       "name": "age",
       "url": "/hotelx/reference/scalars/int",
-      "description": null,
+      "description": "Pax age.",
       "args": null
     }
   ],
@@ -17,6 +17,7 @@
   "typename": "PaxInput",
   "hideGithubLink": true
 }
+Pax object that contains the pax age.
 ## GraphQL schema definition
 
 {{% graphql-schema-type %}}

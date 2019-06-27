@@ -7,40 +7,40 @@
       "typeString": "Int",
       "name": "timeout",
       "url": "/travelgatex/reference/scalars/int",
-      "description": null,
+      "description": "Milliseconds before the connection is closed.",
       "args": null
     },
     {
       "typeString": "Boolean",
       "name": "auditTransactions",
       "url": "/travelgatex/reference/scalars/boolean",
-      "description": null,
+      "description": "Specifies if transactions exchanged with the supplier have to be logged or not.",
       "args": null
     },
     {
       "typeString": "BusinessRulesInput",
       "name": "businessRules",
       "url": "/travelgatex/reference/inputobjects/businessrulesinput",
-      "description": null,
+      "description": "Business rules",
       "args": null
     },
     {
       "typeString": "Currency",
       "name": "currency",
       "url": "/travelgatex/reference/scalars/currency",
-      "description": null,
+      "description": "The currency",
       "args": null
     }
   ],
   "requireby": [
     {
       "name": "HotelXSupplierInput",
-      "description": null,
+      "description": "Supplier object. Contains its own settings, code and access.",
       "url": "/travelgatex/reference/inputobjects/hotelxsupplierinput"
     },
     {
       "name": "HotelXAccessInput",
-      "description": null,
+      "description": "AccessInput overwrites an existent access in our Back Office or creates a new\none to be used in this search query only. An access object contains its own code, configuration and settings.",
       "url": "/travelgatex/reference/inputobjects/hotelxaccessinput"
     }
   ],
@@ -49,6 +49,7 @@
   "typename": "SettingsBaseInput",
   "hideGithubLink": true
 }
+Contains the time out and business rules of a supplier or an access.
 ## GraphQL schema definition
 
 {{% graphql-schema-type %}}

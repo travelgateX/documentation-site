@@ -7,7 +7,7 @@
       "typeString": "[APIEdge]",
       "name": "edges",
       "url": "/mappea/reference/objects/apiedge",
-      "description": null,
+      "description": "",
       "isDeprecated": false,
       "args": null
     },
@@ -15,7 +15,7 @@
       "typeString": "PageInfo!",
       "name": "pageInfo",
       "url": "/mappea/reference/objects/pageinfo",
-      "description": null,
+      "description": "",
       "isDeprecated": false,
       "args": null
     }
@@ -23,27 +23,27 @@
   "requireby": [
     {
       "name": "OrganizationData",
-      "description": null,
+      "description": "",
       "url": "/mappea/reference/objects/organizationdata"
     },
     {
       "name": "GroupCommonData",
-      "description": null,
+      "description": "",
       "url": "/mappea/reference/interfaces/groupcommondata"
     },
     {
       "name": "ResourceData",
-      "description": null,
+      "description": "",
       "url": "/mappea/reference/objects/resourcedata"
     },
     {
       "name": "ProductData",
-      "description": null,
+      "description": "",
       "url": "/mappea/reference/objects/productdata"
     },
     {
       "name": "GroupData",
-      "description": null,
+      "description": "",
       "url": "/mappea/reference/objects/groupdata"
     }
   ],

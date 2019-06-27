@@ -7,7 +7,7 @@
       "typeString": "String!",
       "name": "code",
       "url": "/hotelx/reference/scalars/string",
-      "description": null,
+      "description": "Context code.",
       "isDeprecated": false,
       "args": null
     },
@@ -15,7 +15,7 @@
       "typeString": "[String!]",
       "name": "maps",
       "url": "/hotelx/reference/scalars/string",
-      "description": null,
+      "description": "Equivalences of the supplier for the client code.",
       "isDeprecated": false,
       "args": null
     }
@@ -26,6 +26,7 @@
   "typename": "Map",
   "hideGithubLink": true
 }
+Map codes.
 ## GraphQL schema definition
 
 {{% graphql-schema-type %}}

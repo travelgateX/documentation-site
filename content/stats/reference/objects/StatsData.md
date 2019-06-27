@@ -7,7 +7,7 @@
       "typeString": "Access!",
       "name": "access",
       "url": "/stats/reference/objects/access",
-      "description": null,
+      "description": "Owner access",
       "isDeprecated": false,
       "args": null
     },
@@ -15,7 +15,7 @@
       "typeString": "Client!",
       "name": "client",
       "url": "/stats/reference/objects/client",
-      "description": null,
+      "description": "Owner client",
       "isDeprecated": false,
       "args": null
     },
@@ -23,7 +23,7 @@
       "typeString": "DateTime!",
       "name": "from",
       "url": "/stats/reference/scalars/datetime",
-      "description": null,
+      "description": "From date of search",
       "isDeprecated": false,
       "args": null
     },
@@ -31,7 +31,7 @@
       "typeString": "DateTime!",
       "name": "to",
       "url": "/stats/reference/scalars/datetime",
-      "description": null,
+      "description": "To date of search",
       "isDeprecated": false,
       "args": null
     },
@@ -39,64 +39,22 @@
       "typeString": "Ratios!",
       "name": "ratios",
       "url": "/stats/reference/objects/ratios",
-      "description": null,
-      "isDeprecated": true,
-      "args": [
-        {
-          "typeString": "TrafficType!",
-          "name": "trafficType",
-          "url": "/stats/reference/enums/traffictype",
-          "description": null
-        }
-      ],
-      "deprecationReason": "Added hits fields to be able to calculate ratios at client side.",
-      "descriptionSplitted": {
-        "date": "2019-04-08",
-        "first": "deprecated from",
-        "second": "Added hits fields to be able to calculate ratios at client side."
-      },
-      "deprecationDate": "2019-04-08",
-      "typeName": "StatsData"
+      "description": "Ratios details",
+      "isDeprecated": false,
+      "args": null
     },
     {
       "typeString": "[OperationDetailed!]",
       "name": "operations",
       "url": "/stats/reference/objects/operationdetailed",
-      "description": null,
+      "description": "Stats information per operation",
       "isDeprecated": false,
       "args": [
         {
           "typeString": "[ServiceOperationType!]",
           "name": "type",
           "url": "/stats/reference/enums/serviceoperationtype",
-          "description": null
-        }
-      ]
-    },
-    {
-      "typeString": "Int64!",
-      "name": "hits",
-      "url": "/stats/reference/scalars/int64",
-      "description": null,
-      "isDeprecated": false,
-      "args": [
-        {
-          "typeString": "TrafficType!",
-          "name": "trafficType",
-          "url": "/stats/reference/enums/traffictype",
-          "description": null
-        },
-        {
-          "typeString": "StatsInfoTypes!",
-          "name": "statusType",
-          "url": "/stats/reference/enums/statsinfotypes",
-          "description": null
-        },
-        {
-          "typeString": "OperationType!",
-          "name": "operationType",
-          "url": "/stats/reference/enums/operationtype",
-          "description": null
+          "description": ""
         }
       ]
     }
@@ -104,7 +62,7 @@
   "requireby": [
     {
       "name": "Stats",
-      "description": null,
+      "description": "The service used to access the stats of every connection that uses the HUB",
       "url": "/stats/reference/objects/stats"
     }
   ],

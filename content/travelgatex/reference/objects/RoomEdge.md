@@ -7,7 +7,7 @@
       "typeString": "RoomStatic",
       "name": "node",
       "url": "/travelgatex/reference/objects/roomstatic",
-      "description": null,
+      "description": "",
       "isDeprecated": false,
       "args": null
     },
@@ -15,7 +15,7 @@
       "typeString": "String!",
       "name": "cursor",
       "url": "/travelgatex/reference/scalars/string",
-      "description": null,
+      "description": "",
       "isDeprecated": false,
       "args": null
     }
@@ -23,7 +23,7 @@
   "requireby": [
     {
       "name": "RoomConnection",
-      "description": null,
+      "description": "RoomList definition",
       "url": "/travelgatex/reference/objects/roomconnection"
     }
   ],
@@ -32,6 +32,7 @@
   "typename": "RoomEdge",
   "hideGithubLink": true
 }
+RoomList Edge definition
 ## GraphQL schema definition
 
 {{% graphql-schema-type %}}

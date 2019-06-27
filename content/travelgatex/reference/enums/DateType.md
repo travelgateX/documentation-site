@@ -6,20 +6,20 @@
   "requireby": [
     {
       "name": "CriteriaBookingDatesInput",
-      "description": null,
+      "description": "Criteria by dates",
       "url": "/travelgatex/reference/inputobjects/criteriabookingdatesinput"
     }
   ],
   "enumValues": [
     {
       "name": "ARRIVAL",
-      "description": null,
+      "description": "Arrival Date",
       "isDeprecated": false,
       "deprecationReason": null
     },
     {
       "name": "BOOKING",
-      "description": null,
+      "description": "Booking Creation",
       "isDeprecated": false,
       "deprecationReason": null
     }
@@ -28,6 +28,7 @@
   "typename": "DateType",
   "hideGithubLink": true
 }
+Indicates the type of dates
 ## GraphQL schema definition
 
 {{% graphql-schema-enum %}}

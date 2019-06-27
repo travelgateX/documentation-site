@@ -6,20 +6,20 @@
   "requireby": [
     {
       "name": "HotelCriteriaBookingInput",
-      "description": null,
+      "description": "Criteria of book contains basic information to find a book or books.",
       "url": "/hotelx/reference/inputobjects/hotelcriteriabookinginput"
     }
   ],
   "enumValues": [
     {
       "name": "DATES",
-      "description": null,
+      "description": "Search by date range",
       "isDeprecated": false,
       "deprecationReason": null
     },
     {
       "name": "REFERENCES",
-      "description": null,
+      "description": "Search by reference codes",
       "isDeprecated": false,
       "deprecationReason": null
     }
@@ -28,6 +28,7 @@
   "typename": "BookingCriteriaType",
   "hideGithubLink": true
 }
+Indicates the type of criteria in the request of the booking list
 ## GraphQL schema definition
 
 {{% graphql-schema-enum %}}

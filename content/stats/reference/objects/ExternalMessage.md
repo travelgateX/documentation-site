@@ -7,7 +7,7 @@
       "typeString": "String",
       "name": "code",
       "url": "/stats/reference/scalars/string",
-      "description": null,
+      "description": "External Code",
       "isDeprecated": false,
       "args": null
     },
@@ -15,7 +15,7 @@
       "typeString": "String!",
       "name": "message",
       "url": "/stats/reference/scalars/string",
-      "description": null,
+      "description": "External Message",
       "isDeprecated": false,
       "args": null
     }
@@ -23,7 +23,7 @@
   "requireby": [
     {
       "name": "AdviseMessage",
-      "description": null,
+      "description": "List of advise messages.",
       "url": "/stats/reference/objects/advisemessage"
     }
   ],

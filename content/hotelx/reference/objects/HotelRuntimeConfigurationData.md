@@ -7,7 +7,7 @@
       "typeString": "[HotelRuntimeParameter!]!",
       "name": "hotelRuntimeParameters",
       "url": "/hotelx/reference/objects/hotelruntimeparameter",
-      "description": null,
+      "description": "List of parameters object",
       "isDeprecated": false,
       "args": null
     }
@@ -15,7 +15,7 @@
   "requireby": [
     {
       "name": "HotelRuntimeConfiguration",
-      "description": null,
+      "description": "",
       "url": "/hotelx/reference/objects/hotelruntimeconfiguration"
     }
   ],
