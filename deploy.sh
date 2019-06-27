@@ -6,9 +6,9 @@ cd public
 
 git status
 #checkout master and revert changes
-git reset --hard origin/master
-git checkout master
-git pull origin master
+#git reset --hard origin/master
+#git checkout master
+#git pull origin master
 
 cd ..
 # Build the project.
