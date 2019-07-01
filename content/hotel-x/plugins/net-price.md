@@ -9,7 +9,6 @@ alwaysopen = false
 
 CommissionX is a plugin that defines the contracted / expected commission in cases where the supplier is not able to send it via integration.
 
-* [**CommissionX**](/hotelx/plugins/net-price#commissionX) (NetpriceX Extended funcionality) 
 
 ## CommissionX {#commissionX} 
 
