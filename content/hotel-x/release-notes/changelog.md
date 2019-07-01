@@ -13,6 +13,17 @@ tags = ["products-changelog"]
 Easily accessible log of notable changes to HotelX API
 {{% alert theme="info" %}}All notable changes in our platform will be documented on this page.{{% /alert %}}
 
+## 2019-06-27
+{{% release-notes-container type="a"%}}
+- Categories in Hotel-Category are grouped by group.
+- Internal system improvements. 
+{{% /release-notes-container %}}
+
+## 2019-06-26
+{{% release-notes-container type="a"%}}
+- New warning type in book. EMPTY_PRICE is returned when the supplier doesn't return the price and we use the price obtained in quote. 
+{{% /release-notes-container %}}
+
 ## 2019-06-19
 {{% release-notes-container type="a"%}}
 - New field in book, cancel and booking respone. booking/billingSupplierCode.
