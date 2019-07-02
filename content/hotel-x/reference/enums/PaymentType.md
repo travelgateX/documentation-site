@@ -7,7 +7,7 @@
     {
       "name": "HotelOptionSearch",
       "description": "An option includes hotel information, meal plan, total price, conditions and room description",
-      "url": "/hotelx/reference/objects/hoteloptionsearch"
+      "url": "/hotel-x/reference/objects/hoteloptionsearch"
     }
   ],
   "enumValues": [

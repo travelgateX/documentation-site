@@ -7,42 +7,42 @@
     {
       "name": "HotelCriteriaSearchInput",
       "description": "Search criteria contains destination, travel dates and the number of pax in each room.\nYou must preload the other fields in our system by complete the fields absents.",
-      "url": "/hotelx/reference/inputobjects/hotelcriteriasearchinput"
+      "url": "/hotel-x/reference/inputobjects/hotelcriteriasearchinput"
     },
     {
       "name": "CriteriaSearch",
       "description": "Search criteria contains destination, travel dates and the number of pax in each room.",
-      "url": "/hotelx/reference/objects/criteriasearch"
+      "url": "/hotel-x/reference/objects/criteriasearch"
     },
     {
       "name": "Supplement",
       "description": "Supplement that it can be or its already added to the option returned. Contains all the information about the supplement.",
-      "url": "/hotelx/reference/objects/supplement"
+      "url": "/hotel-x/reference/objects/supplement"
     },
     {
       "name": "RatePlan",
       "description": "Information about the rate of the option returned.",
-      "url": "/hotelx/reference/objects/rateplan"
+      "url": "/hotel-x/reference/objects/rateplan"
     },
     {
       "name": "Promotion",
       "description": "Information about room promotions(offers).",
-      "url": "/hotelx/reference/objects/promotion"
+      "url": "/hotel-x/reference/objects/promotion"
     },
     {
       "name": "PriceBreakdown",
       "description": "Information about daily price.",
-      "url": "/hotelx/reference/objects/pricebreakdown"
+      "url": "/hotel-x/reference/objects/pricebreakdown"
     },
     {
       "name": "CriteriaBookingDatesInput",
       "description": "Criteria by dates",
-      "url": "/hotelx/reference/inputobjects/criteriabookingdatesinput"
+      "url": "/hotel-x/reference/inputobjects/criteriabookingdatesinput"
     },
     {
       "name": "BookingHotel",
       "description": "",
-      "url": "/hotelx/reference/objects/bookinghotel"
+      "url": "/hotel-x/reference/objects/bookinghotel"
     }
   ],
   "enumValues": null,

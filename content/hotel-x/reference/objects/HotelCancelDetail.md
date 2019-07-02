@@ -6,7 +6,7 @@
     {
       "typeString": "Reference",
       "name": "reference",
-      "url": "/hotelx/reference/objects/reference",
+      "url": "/hotel-x/reference/objects/reference",
       "description": "Booking ID in the Supplier's system",
       "isDeprecated": false,
       "args": null
@@ -14,7 +14,7 @@
     {
       "typeString": "String",
       "name": "cancelReference",
-      "url": "/hotelx/reference/scalars/string",
+      "url": "/hotel-x/reference/scalars/string",
       "description": "Cancellation ID in the Supplier's system",
       "isDeprecated": false,
       "args": null
@@ -22,7 +22,7 @@
     {
       "typeString": "BookStatusType",
       "name": "status",
-      "url": "/hotelx/reference/enums/bookstatustype",
+      "url": "/hotel-x/reference/enums/bookstatustype",
       "description": "Booking Status.",
       "isDeprecated": false,
       "args": null
@@ -30,7 +30,7 @@
     {
       "typeString": "Price",
       "name": "price",
-      "url": "/hotelx/reference/objects/price",
+      "url": "/hotel-x/reference/objects/price",
       "description": "Specifies the prices (Gross, Net and Amount) of the cancellation.",
       "isDeprecated": false,
       "args": null
@@ -38,7 +38,7 @@
     {
       "typeString": "HotelBookingDetail",
       "name": "booking",
-      "url": "/hotelx/reference/objects/hotelbookingdetail",
+      "url": "/hotel-x/reference/objects/hotelbookingdetail",
       "description": "Information about the booking.",
       "isDeprecated": false,
       "args": null
@@ -48,7 +48,7 @@
     {
       "name": "HotelCancelPayload",
       "description": "",
-      "url": "/hotelx/reference/objects/hotelcancelpayload"
+      "url": "/hotel-x/reference/objects/hotelcancelpayload"
     }
   ],
   "enumValues": null,

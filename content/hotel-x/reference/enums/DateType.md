@@ -7,7 +7,7 @@
     {
       "name": "CriteriaBookingDatesInput",
       "description": "Criteria by dates",
-      "url": "/hotelx/reference/inputobjects/criteriabookingdatesinput"
+      "url": "/hotel-x/reference/inputobjects/criteriabookingdatesinput"
     }
   ],
   "enumValues": [

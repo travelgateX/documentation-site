@@ -6,7 +6,7 @@
     {
       "typeString": "String!",
       "name": "code",
-      "url": "/hotelx/reference/scalars/string",
+      "url": "/hotel-x/reference/scalars/string",
       "description": "Specifies the resort code.",
       "isDeprecated": false,
       "args": null
@@ -14,7 +14,7 @@
     {
       "typeString": "String",
       "name": "name",
-      "url": "/hotelx/reference/scalars/string",
+      "url": "/hotel-x/reference/scalars/string",
       "description": "Specifies the resort name.",
       "isDeprecated": false,
       "args": null
@@ -22,7 +22,7 @@
     {
       "typeString": "String",
       "name": "description",
-      "url": "/hotelx/reference/scalars/string",
+      "url": "/hotel-x/reference/scalars/string",
       "description": "Specifies the resort description.",
       "isDeprecated": false,
       "args": null
@@ -32,7 +32,7 @@
     {
       "name": "Supplement",
       "description": "Supplement that it can be or its already added to the option returned. Contains all the information about the supplement.",
-      "url": "/hotelx/reference/objects/supplement"
+      "url": "/hotel-x/reference/objects/supplement"
     }
   ],
   "enumValues": null,

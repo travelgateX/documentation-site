@@ -6,7 +6,7 @@
     {
       "typeString": "ID!",
       "name": "code",
-      "url": "/hotelx/reference/scalars/id",
+      "url": "/hotel-x/reference/scalars/id",
       "description": "ID code",
       "isDeprecated": false,
       "args": null
@@ -14,7 +14,7 @@
     {
       "typeString": "DateTime!",
       "name": "createdAt",
-      "url": "/hotelx/reference/scalars/datetime",
+      "url": "/hotel-x/reference/scalars/datetime",
       "description": "Date created",
       "isDeprecated": false,
       "args": null
@@ -22,7 +22,7 @@
     {
       "typeString": "DateTime!",
       "name": "updatedAt",
-      "url": "/hotelx/reference/scalars/datetime",
+      "url": "/hotel-x/reference/scalars/datetime",
       "description": "Date updated",
       "isDeprecated": false,
       "args": null

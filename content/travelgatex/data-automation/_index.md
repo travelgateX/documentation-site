@@ -24,7 +24,7 @@ Our APIs have been built from the ground up with performance in mind. That means
 
 The data we must store following specificitations:
 ### HotelX
-* [Mappings](/hotelx/plugins/mapping/)
-* [Custom hotel lists](/hotelx/concepts/content/)
+* [Mappings](/hotel-x/plugins/mapping/)
+* [Custom hotel lists](/hotel-x/concepts/content/)
 
 {{%custom-children%}}

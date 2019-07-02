@@ -6,14 +6,14 @@
     {
       "typeString": "Int!",
       "name": "month",
-      "url": "/hotelx/reference/scalars/int",
+      "url": "/hotel-x/reference/scalars/int",
       "description": "Month MM",
       "args": null
     },
     {
       "typeString": "Int!",
       "name": "year",
-      "url": "/hotelx/reference/scalars/int",
+      "url": "/hotel-x/reference/scalars/int",
       "description": "Year yy",
       "args": null
     }
@@ -22,7 +22,7 @@
     {
       "name": "PaymentCardInput",
       "description": "Input PaymentCard, if the payment is done by credit card, is it mandatory to specify the payment type and the credit card information",
-      "url": "/hotelx/reference/inputobjects/paymentcardinput"
+      "url": "/hotel-x/reference/inputobjects/paymentcardinput"
     }
   ],
   "enumValues": null,

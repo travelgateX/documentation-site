@@ -6,7 +6,7 @@
     {
       "typeString": "Float!",
       "name": "latitude",
-      "url": "/hotelx/reference/scalars/float",
+      "url": "/hotel-x/reference/scalars/float",
       "description": "Latitude",
       "isDeprecated": false,
       "args": null
@@ -14,7 +14,7 @@
     {
       "typeString": "Float!",
       "name": "longitude",
-      "url": "/hotelx/reference/scalars/float",
+      "url": "/hotel-x/reference/scalars/float",
       "description": "Longitude",
       "isDeprecated": false,
       "args": null
@@ -24,12 +24,12 @@
     {
       "name": "Location",
       "description": "Indicates the location of the hotel",
-      "url": "/hotelx/reference/objects/location"
+      "url": "/hotel-x/reference/objects/location"
     },
     {
       "name": "GeonameData",
       "description": "Geoname data, which contain a reference to his parent location",
-      "url": "/hotelx/reference/objects/geonamedata"
+      "url": "/hotel-x/reference/objects/geonamedata"
     }
   ],
   "enumValues": null,

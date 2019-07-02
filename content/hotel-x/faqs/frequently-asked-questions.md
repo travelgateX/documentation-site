@@ -46,7 +46,7 @@ Yes, the RoomList contains all the rooms that can be returned, regardless of the
 **How can I obtain the supplier’s mealplans?**
 
 You can download the full list of mealplans from the provider by using the board query:
-https://docs.travelgatex.com/hotelx/concepts/content/#boards
+https://docs.travelgatex.com/hotel-x/concepts/content/#boards
 
 **I've run a request to obtain the information on the Board list and I receive a list of nodes that include code and text but I cannot see the relation between the boards and the hotels. Is it possible that the boarddata is being received directly from the supplier and that is independent from the hotel?**
 
@@ -75,14 +75,14 @@ Each supplier has their own restrictions, so the age range for children or infan
 ## GIATA codes
 **It is possible to use GIATA codes?**
 
-Our platform allows to return GIATA codes in our Hotels Query response. First of all, you wil need to provide us your GIATA credentials in order to set up your Apikey. After that, you will be able to obtain these codes through our system and use them through our [`hotel map`](/hotelx/plugins/mapping/) process. 
+Our platform allows to return GIATA codes in our Hotels Query response. First of all, you wil need to provide us your GIATA credentials in order to set up your Apikey. After that, you will be able to obtain these codes through our system and use them through our [`hotel map`](/hotel-x/plugins/mapping/) process. 
 
 
 ## Certification process
 **Please advise us on the procedure for Certification**
 All the details regarding the Certification Process are explained in the Welcome Pack we sent you.
 Basically, you have to perform the three cases asked in the Welcome Pack and raise a certification ticket on our Customer Care Service Desk (attaching the files).
-You can also find more information on the certification process within our [`documentation site`](/hotelx/howtos/certification_process/) 
+You can also find more information on the certification process within our [`documentation site`](/hotel-x/howtos/certification_process/) 
 
 ## Supplier HOTELTEST
 **Now I only have access to HOTELTEST, can I activate a new supplier?**
@@ -95,7 +95,7 @@ No, we use a test supplier, so there is a limited number of hotels in the databa
 **Can we define our own context for 2 or more test suppliers? This will help us to test how the requests will work with our own context.**
 
 Yes, you can create your own context for HOTELTEST and TTHOTTEST. You will need to upload the mapping files according to our documentation and use your own context when making the requests: 
-https://docs.travelgatex.com/hotelx/plugins/mapping/
+https://docs.travelgatex.com/hotel-x/plugins/mapping/
 
 ## Search
 **How to structure a multi-room in HotelX**
@@ -148,7 +148,7 @@ Yes, every time that you perform a query the optionId will change.
 Every time you activate a supplier, you receive an access code. This access code is used to differentiate between suppliers and also to filter between the same supplier's different credentials and configurations. This allows you, for instance, to diffentiate between B2B or B2C requests, or search availability only for certain suppliers.
 
 **In case I would like to receive a specific rate, would it be possible?**
-Yes, you could filter the response by introducing the tag [`rateRules`](/hotelx/reference/inputobjects/raterulesfilterinput/) in your filter.
+Yes, you could filter the response by introducing the tag [`rateRules`](/hotel-x/reference/inputobjects/raterulesfilterinput/) in your filter.
 
 **Which are the possible filters in the Search Request?**
 
@@ -167,7 +167,7 @@ In this case, two scenarios are possible: the first one, the supplier returns an
 
 **How can I request a specific destination?**
 
-In order to perform a request by destination you should introduce our [`Search by destination`](/hotelx/plugins/mapping/) process plugin. 
+In order to perform a request by destination you should introduce our [`Search by destination`](/hotel-x/plugins/mapping/) process plugin. 
 
 
 ## Surchages
@@ -194,7 +194,7 @@ The currency tag is always mandatory. You have two options:
 
 In these cases, there are two possible scennarios:
 
-* Exchange rates can be applied using a [`currency conversion plugin`](/hotelx/plugins/converter/) (this plugin contains the exchange rates previously loaded by client rules)
+* Exchange rates can be applied using a [`currency conversion plugin`](/hotel-x/plugins/converter/) (this plugin contains the exchange rates previously loaded by client rules)
 * Not applying any exchange rate. In this case, you will receive the supplier´s currency - some suppliers accept the currency in the request and others will return their currency, depending on your account as client with them.
 
 ## Cancellation costs
@@ -211,7 +211,7 @@ Bear in mind, that a booking may have more than one penalty type associated, dep
 
 **Cancel Policy hoursBefore checkin date - What timezone is the checkIn date?**
 Normally UTC time is used, but if the provider responds with hotel timezone we add 24 hours.
-You will find further information [`here`](/hotelx/reference/objects/cancelpenalty/)
+You will find further information [`here`](/hotel-x/reference/objects/cancelpenalty/)
 
 **Is there any possibility to obtain the RoomCodes in the Quote step?**
 
@@ -284,7 +284,7 @@ HotelX allows two types of Queries:
   }
 }
 ```
-[More info on HotelX content.](/hotelx/concepts/content/)
+[More info on HotelX content.](/hotel-x/concepts/content/)
 
 ## Country names
 **How can I receive the names of the countries?**
@@ -300,7 +300,7 @@ Please check our content section for further information: `link`
 **I would like to perform the HotelList and DestinationList, but I am not finding GraphQL examples.**
 
 In the Welcome Pack mail you will find attached our `Usecases` and Insomnia environment packs with some query and mutation examples.
-For further information, feel free to access our [`content section`](/hotelx/concepts/content/)
+For further information, feel free to access our [`content section`](/hotel-x/concepts/content/)
 
 **Where do I find the available services at the hotel?**
 
@@ -313,7 +313,7 @@ Amenities information might change depending on the supplier and the hotel. Hote
 ## Mapping process 
 **To be able to upload the mapping, should we be using the HotelMapX plugin, and is there a document that we can refer to on the plugin and how the request should be sent?**
 
-Not via API. Uploading to FTP as described [`here`](/hotelx/plugins/mapping/) 
+Not via API. Uploading to FTP as described [`here`](/hotel-x/plugins/mapping/) 
 
 
 

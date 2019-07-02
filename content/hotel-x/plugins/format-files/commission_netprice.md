@@ -19,7 +19,7 @@ The hotel commission file should be in the below format:
     * hotel
 * **Extension file**: csv
 * **Headers**:
-    * [supplier](/hotelx/concepts/accesses-supplier-context/#supplier)  → supplier code 
+    * [supplier](/hotel-x/concepts/accesses-supplier-context/#supplier)  → supplier code 
     * _hotel_ → hotel code 
     * _commission_ → commission value, decimal separator must be point (".") 
 * **Delimiter**:  Comma (“,”)

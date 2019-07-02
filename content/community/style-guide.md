@@ -164,7 +164,7 @@ A Plugin doc has these major sections:
 
 (Provisional documentation not finished)
 
-**Example**: [Aggregation plugin](/hotelx/plugins/aggregation/)
+**Example**: [Aggregation plugin](/hotel-x/plugins/aggregation/)
 
 ## Visual assets
 

@@ -6,14 +6,14 @@
     {
       "typeString": "AccessFilterInput",
       "name": "access",
-      "url": "/hotelx/reference/inputobjects/accessfilterinput",
+      "url": "/hotel-x/reference/inputobjects/accessfilterinput",
       "description": "You can specify one of the filters or any of them. In this latter case, all the configurated accesses will be executed.",
       "args": null
     },
     {
       "typeString": "RateRulesFilterInput",
       "name": "rateRules",
-      "url": "/hotelx/reference/inputobjects/raterulesfilterinput",
+      "url": "/hotel-x/reference/inputobjects/raterulesfilterinput",
       "description": "If requested, only options with the specified rateRules will be returned",
       "args": null
     }

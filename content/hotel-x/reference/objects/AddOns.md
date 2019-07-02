@@ -6,7 +6,7 @@
     {
       "typeString": "JSON",
       "name": "distribute",
-      "url": "/hotelx/reference/scalars/json",
+      "url": "/hotel-x/reference/scalars/json",
       "description": "Extra information from the distribution layer",
       "isDeprecated": true,
       "args": null,
@@ -22,7 +22,7 @@
     {
       "typeString": "[AddOn!]",
       "name": "distribution",
-      "url": "/hotelx/reference/objects/addon",
+      "url": "/hotel-x/reference/objects/addon",
       "description": "Extra information from the distribution layer",
       "isDeprecated": false,
       "args": null
@@ -32,17 +32,17 @@
     {
       "name": "HotelOptionSearch",
       "description": "An option includes hotel information, meal plan, total price, conditions and room description",
-      "url": "/hotelx/reference/objects/hoteloptionsearch"
+      "url": "/hotel-x/reference/objects/hoteloptionsearch"
     },
     {
       "name": "HotelOptionQuote",
       "description": "Contains information about quote(s)",
-      "url": "/hotelx/reference/objects/hoteloptionquote"
+      "url": "/hotel-x/reference/objects/hoteloptionquote"
     },
     {
       "name": "HotelBookingDetail",
       "description": "Contains information about booking",
-      "url": "/hotelx/reference/objects/hotelbookingdetail"
+      "url": "/hotel-x/reference/objects/hotelbookingdetail"
     }
   ],
   "enumValues": null,

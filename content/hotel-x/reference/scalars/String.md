@@ -7,412 +7,412 @@
     {
       "name": "ServiceStatus",
       "description": "Indicates the status of the service",
-      "url": "/hotelx/reference/objects/servicestatus"
+      "url": "/hotel-x/reference/objects/servicestatus"
     },
     {
       "name": "RelayInput",
       "description": "",
-      "url": "/hotelx/reference/inputobjects/relayinput"
+      "url": "/hotel-x/reference/inputobjects/relayinput"
     },
     {
       "name": "HotelConnection",
       "description": "HotelList definition",
-      "url": "/hotelx/reference/objects/hotelconnection"
+      "url": "/hotel-x/reference/objects/hotelconnection"
     },
     {
       "name": "RoomConnection",
       "description": "RoomList definition",
-      "url": "/hotelx/reference/objects/roomconnection"
+      "url": "/hotel-x/reference/objects/roomconnection"
     },
     {
       "name": "DestinationConnection",
       "description": "DestinationList definition",
-      "url": "/hotelx/reference/objects/destinationconnection"
+      "url": "/hotel-x/reference/objects/destinationconnection"
     },
     {
       "name": "HotelXDestinationSearcherInput",
       "description": "",
-      "url": "/hotelx/reference/inputobjects/hotelxdestinationsearcherinput"
+      "url": "/hotel-x/reference/inputobjects/hotelxdestinationsearcherinput"
     },
     {
       "name": "HotelCriteriaSearchInput",
       "description": "Search criteria contains destination, travel dates and the number of pax in each room.\nYou must preload the other fields in our system by complete the fields absents.",
-      "url": "/hotelx/reference/inputobjects/hotelcriteriasearchinput"
+      "url": "/hotel-x/reference/inputobjects/hotelcriteriasearchinput"
     },
     {
       "name": "HotelSettingsInput",
       "description": "Settings that you can edit for this avail. Values are loaded by default in our Back Office.",
-      "url": "/hotelx/reference/inputobjects/hotelsettingsinput"
+      "url": "/hotel-x/reference/inputobjects/hotelsettingsinput"
     },
     {
       "name": "HotelSearch",
       "description": "Results from Avail Hotel; contains all the available options for a given date and itinerary",
-      "url": "/hotelx/reference/objects/hotelsearch"
+      "url": "/hotel-x/reference/objects/hotelsearch"
     },
     {
       "name": "HotelCriteriaQuoteInput",
       "description": "The quote criteria contains the option reference id, block and language.",
-      "url": "/hotelx/reference/inputobjects/hotelcriteriaquoteinput"
+      "url": "/hotel-x/reference/inputobjects/hotelcriteriaquoteinput"
     },
     {
       "name": "HotelCriteriaBookingInput",
       "description": "Criteria of book contains basic information to find a book or books.",
-      "url": "/hotelx/reference/inputobjects/hotelcriteriabookinginput"
+      "url": "/hotel-x/reference/inputobjects/hotelcriteriabookinginput"
     },
     {
       "name": "HotelXDefaultSettingsData",
       "description": "",
-      "url": "/hotelx/reference/objects/hotelxdefaultsettingsdata"
+      "url": "/hotel-x/reference/objects/hotelxdefaultsettingsdata"
     },
     {
       "name": "AdviseMessage",
       "description": "List of advise messages.",
-      "url": "/hotelx/reference/objects/advisemessage"
+      "url": "/hotel-x/reference/objects/advisemessage"
     },
     {
       "name": "HotelXDefaultPluginStep",
       "description": "",
-      "url": "/hotelx/reference/objects/hotelxdefaultpluginstep"
+      "url": "/hotel-x/reference/objects/hotelxdefaultpluginstep"
     },
     {
       "name": "HotelXDefaultPlugin",
       "description": "",
-      "url": "/hotelx/reference/objects/hotelxdefaultplugin"
+      "url": "/hotel-x/reference/objects/hotelxdefaultplugin"
     },
     {
       "name": "HotelXParameter",
       "description": "",
-      "url": "/hotelx/reference/objects/hotelxparameter"
+      "url": "/hotel-x/reference/objects/hotelxparameter"
     },
     {
       "name": "ExternalMessage",
       "description": "",
-      "url": "/hotelx/reference/objects/externalmessage"
+      "url": "/hotel-x/reference/objects/externalmessage"
     },
     {
       "name": "BoardEdge",
       "description": "BoardList Edge definition",
-      "url": "/hotelx/reference/objects/boardedge"
+      "url": "/hotel-x/reference/objects/boardedge"
     },
     {
       "name": "PageInfo",
       "description": "",
-      "url": "/hotelx/reference/objects/pageinfo"
+      "url": "/hotel-x/reference/objects/pageinfo"
     },
     {
       "name": "BoardData",
       "description": "Board data",
-      "url": "/hotelx/reference/objects/boarddata"
+      "url": "/hotel-x/reference/objects/boarddata"
     },
     {
       "name": "Error",
       "description": "Application errors",
-      "url": "/hotelx/reference/objects/error"
+      "url": "/hotel-x/reference/objects/error"
     },
     {
       "name": "Text",
       "description": "",
-      "url": "/hotelx/reference/objects/text"
+      "url": "/hotel-x/reference/objects/text"
     },
     {
       "name": "CategoryEdge",
       "description": "CategoryList Edge definition",
-      "url": "/hotelx/reference/objects/categoryedge"
+      "url": "/hotel-x/reference/objects/categoryedge"
     },
     {
       "name": "CategoryData",
       "description": "Category data",
-      "url": "/hotelx/reference/objects/categorydata"
+      "url": "/hotel-x/reference/objects/categorydata"
     },
     {
       "name": "HotelEdge",
       "description": "HotelList Edge definition",
-      "url": "/hotelx/reference/objects/hoteledge"
+      "url": "/hotel-x/reference/objects/hoteledge"
     },
     {
       "name": "HotelData",
       "description": "Hotel data",
-      "url": "/hotelx/reference/objects/hoteldata"
+      "url": "/hotel-x/reference/objects/hoteldata"
     },
     {
       "name": "Property",
       "description": "Indicates Property type",
-      "url": "/hotelx/reference/objects/property"
+      "url": "/hotel-x/reference/objects/property"
     },
     {
       "name": "Location",
       "description": "Indicates the location of the hotel",
-      "url": "/hotelx/reference/objects/location"
+      "url": "/hotel-x/reference/objects/location"
     },
     {
       "name": "Contact",
       "description": "Contact Data.",
-      "url": "/hotelx/reference/objects/contact"
+      "url": "/hotel-x/reference/objects/contact"
     },
     {
       "name": "Amenity",
       "description": "An Amenity is defined as something intended to make life more pleasant or comfortable for people. Examples include: swimming pools, shopping centers, etc.",
-      "url": "/hotelx/reference/objects/amenity"
+      "url": "/hotel-x/reference/objects/amenity"
     },
     {
       "name": "Media",
       "description": "Contains media information.",
-      "url": "/hotelx/reference/objects/media"
+      "url": "/hotel-x/reference/objects/media"
     },
     {
       "name": "DestinationData",
       "description": "Information about destinantion",
-      "url": "/hotelx/reference/objects/destinationdata"
+      "url": "/hotel-x/reference/objects/destinationdata"
     },
     {
       "name": "AirportData",
       "description": "Information about the airport",
-      "url": "/hotelx/reference/objects/airportdata"
+      "url": "/hotel-x/reference/objects/airportdata"
     },
     {
       "name": "GeonameData",
       "description": "Geoname data, which contain a reference to his parent location",
-      "url": "/hotelx/reference/objects/geonamedata"
+      "url": "/hotel-x/reference/objects/geonamedata"
     },
     {
       "name": "RoomEdge",
       "description": "RoomList Edge definition",
-      "url": "/hotelx/reference/objects/roomedge"
+      "url": "/hotel-x/reference/objects/roomedge"
     },
     {
       "name": "RoomData",
       "description": "Room data",
-      "url": "/hotelx/reference/objects/roomdata"
+      "url": "/hotel-x/reference/objects/roomdata"
     },
     {
       "name": "DestinationEdge",
       "description": "DestinationList Edge definition",
-      "url": "/hotelx/reference/objects/destinationedge"
+      "url": "/hotel-x/reference/objects/destinationedge"
     },
     {
       "name": "HotelXSupplierInput",
       "description": "Supplier object. Contains its own settings, code and access.",
-      "url": "/hotelx/reference/inputobjects/hotelxsupplierinput"
+      "url": "/hotel-x/reference/inputobjects/hotelxsupplierinput"
     },
     {
       "name": "ConfigurationInput",
       "description": "The information and credentials required to access the supplier’s system.",
-      "url": "/hotelx/reference/inputobjects/configurationinput"
+      "url": "/hotel-x/reference/inputobjects/configurationinput"
     },
     {
       "name": "ParameterInput",
       "description": "Parameters Input.",
-      "url": "/hotelx/reference/inputobjects/parameterinput"
+      "url": "/hotel-x/reference/inputobjects/parameterinput"
     },
     {
       "name": "PluginsInput",
       "description": "Plugin to execute.",
-      "url": "/hotelx/reference/inputobjects/pluginsinput"
+      "url": "/hotel-x/reference/inputobjects/pluginsinput"
     },
     {
       "name": "HotelXFilterPluginTypeInput",
       "description": "",
-      "url": "/hotelx/reference/inputobjects/hotelxfilterplugintypeinput"
+      "url": "/hotel-x/reference/inputobjects/hotelxfilterplugintypeinput"
     },
     {
       "name": "StatsRequest",
       "description": "Contains internal information.",
-      "url": "/hotelx/reference/objects/statsrequest"
+      "url": "/hotel-x/reference/objects/statsrequest"
     },
     {
       "name": "CriteriaSearch",
       "description": "Search criteria contains destination, travel dates and the number of pax in each room.",
-      "url": "/hotelx/reference/objects/criteriasearch"
+      "url": "/hotel-x/reference/objects/criteriasearch"
     },
     {
       "name": "HotelOptionSearch",
       "description": "An option includes hotel information, meal plan, total price, conditions and room description",
-      "url": "/hotelx/reference/objects/hoteloptionsearch"
+      "url": "/hotel-x/reference/objects/hoteloptionsearch"
     },
     {
       "name": "Warning",
       "description": "Application warnings",
-      "url": "/hotelx/reference/objects/warning"
+      "url": "/hotel-x/reference/objects/warning"
     },
     {
       "name": "StatPlugin",
       "description": "",
-      "url": "/hotelx/reference/objects/statplugin"
+      "url": "/hotel-x/reference/objects/statplugin"
     },
     {
       "name": "StatAccess",
       "description": "",
-      "url": "/hotelx/reference/objects/stataccess"
+      "url": "/hotel-x/reference/objects/stataccess"
     },
     {
       "name": "StatTransaction",
       "description": "",
-      "url": "/hotelx/reference/objects/stattransaction"
+      "url": "/hotel-x/reference/objects/stattransaction"
     },
     {
       "name": "Transactions",
       "description": "Supplier transaction",
-      "url": "/hotelx/reference/objects/transactions"
+      "url": "/hotel-x/reference/objects/transactions"
     },
     {
       "name": "Room",
       "description": "Contains the room information of the option returned.",
-      "url": "/hotelx/reference/objects/room"
+      "url": "/hotel-x/reference/objects/room"
     },
     {
       "name": "Supplement",
       "description": "Supplement that it can be or its already added to the option returned. Contains all the information about the supplement.",
-      "url": "/hotelx/reference/objects/supplement"
+      "url": "/hotel-x/reference/objects/supplement"
     },
     {
       "name": "Surcharge",
       "description": "Surcharge that it can be or it is already added to the option returned. Contains all the information about the surcharge.",
-      "url": "/hotelx/reference/objects/surcharge"
+      "url": "/hotel-x/reference/objects/surcharge"
     },
     {
       "name": "BookableOptionSearch",
       "description": "",
-      "url": "/hotelx/reference/interfaces/bookableoptionsearch"
+      "url": "/hotel-x/reference/interfaces/bookableoptionsearch"
     },
     {
       "name": "Bed",
       "description": "Contains information about a bed.",
-      "url": "/hotelx/reference/objects/bed"
+      "url": "/hotel-x/reference/objects/bed"
     },
     {
       "name": "RatePlan",
       "description": "Information about the rate of the option returned.",
-      "url": "/hotelx/reference/objects/rateplan"
+      "url": "/hotel-x/reference/objects/rateplan"
     },
     {
       "name": "Promotion",
       "description": "Information about room promotions(offers).",
-      "url": "/hotelx/reference/objects/promotion"
+      "url": "/hotel-x/reference/objects/promotion"
     },
     {
       "name": "Markup",
       "description": "Informs markup applied over supplier price.",
-      "url": "/hotelx/reference/objects/markup"
+      "url": "/hotel-x/reference/objects/markup"
     },
     {
       "name": "Rule",
       "description": "",
-      "url": "/hotelx/reference/objects/rule"
+      "url": "/hotel-x/reference/objects/rule"
     },
     {
       "name": "Resort",
       "description": "Contains information about the Resort.",
-      "url": "/hotelx/reference/objects/resort"
+      "url": "/hotel-x/reference/objects/resort"
     },
     {
       "name": "AddOn",
       "description": "Additional information about the option",
-      "url": "/hotelx/reference/objects/addon"
+      "url": "/hotel-x/reference/objects/addon"
     },
     {
       "name": "HotelOptionQuote",
       "description": "Contains information about quote(s)",
-      "url": "/hotelx/reference/objects/hoteloptionquote"
+      "url": "/hotel-x/reference/objects/hoteloptionquote"
     },
     {
       "name": "CriteriaBookingReferencesInput",
       "description": "Criteria by references",
-      "url": "/hotelx/reference/inputobjects/criteriabookingreferencesinput"
+      "url": "/hotel-x/reference/inputobjects/criteriabookingreferencesinput"
     },
     {
       "name": "BookReferenceInput",
       "description": "Reference object that contains the client reference and/or supplier reference.",
-      "url": "/hotelx/reference/inputobjects/bookreferenceinput"
+      "url": "/hotel-x/reference/inputobjects/bookreferenceinput"
     },
     {
       "name": "HotelBookingDetail",
       "description": "Contains information about booking",
-      "url": "/hotelx/reference/objects/hotelbookingdetail"
+      "url": "/hotel-x/reference/objects/hotelbookingdetail"
     },
     {
       "name": "Reference",
       "description": "Contains reference codes.",
-      "url": "/hotelx/reference/objects/reference"
+      "url": "/hotel-x/reference/objects/reference"
     },
     {
       "name": "Holder",
       "description": "Holder object that contains the occupant's (pax's) name and surname.",
-      "url": "/hotelx/reference/objects/holder"
+      "url": "/hotel-x/reference/objects/holder"
     },
     {
       "name": "BookingHotel",
       "description": "",
-      "url": "/hotelx/reference/objects/bookinghotel"
+      "url": "/hotel-x/reference/objects/bookinghotel"
     },
     {
       "name": "BookingRoom",
       "description": "",
-      "url": "/hotelx/reference/objects/bookingroom"
+      "url": "/hotel-x/reference/objects/bookingroom"
     },
     {
       "name": "MappingContext",
       "description": "Returns the differents group contexts",
-      "url": "/hotelx/reference/objects/mappingcontext"
+      "url": "/hotel-x/reference/objects/mappingcontext"
     },
     {
       "name": "MappingEntity",
       "description": "Mapping about client codes with the equivalence per supplier.",
-      "url": "/hotelx/reference/objects/mappingentity"
+      "url": "/hotel-x/reference/objects/mappingentity"
     },
     {
       "name": "Map",
       "description": "Map codes.",
-      "url": "/hotelx/reference/objects/map"
+      "url": "/hotel-x/reference/objects/map"
     },
     {
       "name": "HotelRuntimeParameter",
       "description": "template of all fields used by the supplier",
-      "url": "/hotelx/reference/objects/hotelruntimeparameter"
+      "url": "/hotel-x/reference/objects/hotelruntimeparameter"
     },
     {
       "name": "HotelXDefaultSettingsDataInput",
       "description": "",
-      "url": "/hotelx/reference/inputobjects/hotelxdefaultsettingsdatainput"
+      "url": "/hotel-x/reference/inputobjects/hotelxdefaultsettingsdatainput"
     },
     {
       "name": "HotelBookInput",
       "description": "Criteria of book.",
-      "url": "/hotelx/reference/inputobjects/hotelbookinput"
+      "url": "/hotel-x/reference/inputobjects/hotelbookinput"
     },
     {
       "name": "HotelCancelInput",
       "description": "Cancellation Criteria.",
-      "url": "/hotelx/reference/inputobjects/hotelcancelinput"
+      "url": "/hotel-x/reference/inputobjects/hotelcancelinput"
     },
     {
       "name": "HotelXDefaultPluginInput",
       "description": "",
-      "url": "/hotelx/reference/inputobjects/hotelxdefaultplugininput"
+      "url": "/hotel-x/reference/inputobjects/hotelxdefaultplugininput"
     },
     {
       "name": "PaymentCardInput",
       "description": "Input PaymentCard, if the payment is done by credit card, is it mandatory to specify the payment type and the credit card information",
-      "url": "/hotelx/reference/inputobjects/paymentcardinput"
+      "url": "/hotel-x/reference/inputobjects/paymentcardinput"
     },
     {
       "name": "HolderInput",
       "description": "Holder object that contains the occupant's (pax's) name and surname.",
-      "url": "/hotelx/reference/inputobjects/holderinput"
+      "url": "/hotel-x/reference/inputobjects/holderinput"
     },
     {
       "name": "BookPaxInput",
       "description": "Input BookPax contains basic information abaout pax suach as name, surname and age.",
-      "url": "/hotelx/reference/inputobjects/bookpaxinput"
+      "url": "/hotel-x/reference/inputobjects/bookpaxinput"
     },
     {
       "name": "HotelCancelDetail",
       "description": "Contains information about cancel",
-      "url": "/hotelx/reference/objects/hotelcanceldetail"
+      "url": "/hotel-x/reference/objects/hotelcanceldetail"
     },
     {
       "name": "HotelXMutation",
       "description": "",
-      "url": "/hotelx/reference/objects/hotelxmutation"
+      "url": "/hotel-x/reference/objects/hotelxmutation"
     }
   ],
   "enumValues": null,

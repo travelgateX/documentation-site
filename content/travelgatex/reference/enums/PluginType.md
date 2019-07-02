@@ -74,7 +74,7 @@
   "typename": "PluginType",
   "hideGithubLink": true
 }
-Plugin Type. https://docs.travelgatex.com/hotelx/plugins/overview/
+Plugin Type. https://docs.travelgatex.com/hotel-x/plugins/overview/
 ## GraphQL schema definition
 
 {{% graphql-schema-enum %}}

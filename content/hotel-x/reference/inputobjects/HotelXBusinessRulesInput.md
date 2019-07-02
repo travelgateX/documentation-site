@@ -6,14 +6,14 @@
     {
       "typeString": "Int!",
       "name": "optionsQuota",
-      "url": "/hotelx/reference/scalars/int",
+      "url": "/hotel-x/reference/scalars/int",
       "description": "Options quota per search. Maximum numbers of options to be returned by the search query.",
       "args": null
     },
     {
       "typeString": "BusinessRulesType!",
       "name": "businessRulesType",
-      "url": "/hotelx/reference/enums/businessrulestype",
+      "url": "/hotel-x/reference/enums/businessrulestype",
       "description": "Different business rules to filter the returned options.",
       "args": null
     }
@@ -22,12 +22,12 @@
     {
       "name": "HotelXDefaultSettingsDataInput",
       "description": "",
-      "url": "/hotelx/reference/inputobjects/hotelxdefaultsettingsdatainput"
+      "url": "/hotel-x/reference/inputobjects/hotelxdefaultsettingsdatainput"
     },
     {
       "name": "HotelXCommonSettingsDataInput",
       "description": "",
-      "url": "/hotelx/reference/inputobjects/hotelxcommonsettingsdatainput"
+      "url": "/hotel-x/reference/inputobjects/hotelxcommonsettingsdatainput"
     }
   ],
   "enumValues": null,

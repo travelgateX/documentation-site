@@ -16,9 +16,9 @@ Search by destination is a feature to search by destinations codes in the Search
 
 The conversion must be done at the 'REQUEST' step, either in type 'PRE_STEP' or 'POST_STEP'. The parameter with key "accessID" is mandatory and is the access used to convert destinations to hotel from its hotel list, which means that the hotel codes obtained are in the same context as the access.
 
-**Query get hotels & destination** [Get hotels & destinations](/hotelx/plugins/search_by_destination#destinations)
+**Query get hotels & destination** [Get hotels & destinations](/hotel-x/plugins/search_by_destination#destinations)
 
- **Query execute plugin search by destination** [Plugin search by destination](/hotelx/plugins/search_by_destination#pluginsearchbydestinations)
+ **Query execute plugin search by destination** [Plugin search by destination](/hotel-x/plugins/search_by_destination#pluginsearchbydestinations)
 
 ```
 {

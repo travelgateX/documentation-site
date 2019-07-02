@@ -6,7 +6,7 @@
     {
       "typeString": "ID!",
       "name": "code",
-      "url": "/hotelx/reference/scalars/id",
+      "url": "/hotel-x/reference/scalars/id",
       "description": "Internal code for checking availability",
       "isDeprecated": false,
       "args": null
@@ -14,7 +14,7 @@
     {
       "typeString": "String!",
       "name": "roomCode",
-      "url": "/hotelx/reference/scalars/string",
+      "url": "/hotel-x/reference/scalars/string",
       "description": "Code of the hotel in the Supplier selected",
       "isDeprecated": false,
       "args": null
@@ -22,14 +22,14 @@
     {
       "typeString": "[Text!]",
       "name": "texts",
-      "url": "/hotelx/reference/objects/text",
+      "url": "/hotel-x/reference/objects/text",
       "description": "Label",
       "isDeprecated": false,
       "args": [
         {
           "typeString": "[Language!]",
           "name": "languages",
-          "url": "/hotelx/reference/scalars/language",
+          "url": "/hotel-x/reference/scalars/language",
           "description": ""
         }
       ]
@@ -39,7 +39,7 @@
     {
       "name": "RoomStatic",
       "description": "Room Type",
-      "url": "/hotelx/reference/objects/roomstatic"
+      "url": "/hotel-x/reference/objects/roomstatic"
     }
   ],
   "enumValues": null,

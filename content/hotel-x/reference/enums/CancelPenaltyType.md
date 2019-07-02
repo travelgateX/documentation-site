@@ -7,7 +7,7 @@
     {
       "name": "CancelPenalty",
       "description": "Contains information for cancellation penalities..",
-      "url": "/hotelx/reference/objects/cancelpenalty"
+      "url": "/hotel-x/reference/objects/cancelpenalty"
     }
   ],
   "enumValues": [

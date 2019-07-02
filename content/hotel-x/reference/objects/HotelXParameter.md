@@ -6,7 +6,7 @@
     {
       "typeString": "String!",
       "name": "key",
-      "url": "/hotelx/reference/scalars/string",
+      "url": "/hotel-x/reference/scalars/string",
       "description": "",
       "isDeprecated": false,
       "args": null
@@ -14,7 +14,7 @@
     {
       "typeString": "String!",
       "name": "value",
-      "url": "/hotelx/reference/scalars/string",
+      "url": "/hotel-x/reference/scalars/string",
       "description": "",
       "isDeprecated": false,
       "args": null

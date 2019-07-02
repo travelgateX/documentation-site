@@ -6,21 +6,21 @@
     {
       "typeString": "String!",
       "name": "name",
-      "url": "/hotelx/reference/scalars/string",
+      "url": "/hotel-x/reference/scalars/string",
       "description": "The guest's first  name",
       "args": null
     },
     {
       "typeString": "String!",
       "name": "surname",
-      "url": "/hotelx/reference/scalars/string",
+      "url": "/hotel-x/reference/scalars/string",
       "description": "The guest's last name",
       "args": null
     },
     {
       "typeString": "Int!",
       "name": "age",
-      "url": "/hotelx/reference/scalars/int",
+      "url": "/hotel-x/reference/scalars/int",
       "description": "The guest's age",
       "args": null
     }

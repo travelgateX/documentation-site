@@ -6,21 +6,21 @@
     {
       "typeString": "Int!",
       "name": "search",
-      "url": "/hotelx/reference/scalars/int",
+      "url": "/hotel-x/reference/scalars/int",
       "description": "Milliseconds before the search connection is closed.",
       "args": null
     },
     {
       "typeString": "Int!",
       "name": "quote",
-      "url": "/hotelx/reference/scalars/int",
+      "url": "/hotel-x/reference/scalars/int",
       "description": "Milliseconds before the quote connection is closed.",
       "args": null
     },
     {
       "typeString": "Int!",
       "name": "book",
-      "url": "/hotelx/reference/scalars/int",
+      "url": "/hotel-x/reference/scalars/int",
       "description": "Milliseconds before the book connection is closed.",
       "args": null
     }
@@ -29,12 +29,12 @@
     {
       "name": "HotelXDefaultSettingsDataInput",
       "description": "",
-      "url": "/hotelx/reference/inputobjects/hotelxdefaultsettingsdatainput"
+      "url": "/hotel-x/reference/inputobjects/hotelxdefaultsettingsdatainput"
     },
     {
       "name": "HotelXCommonSettingsDataInput",
       "description": "",
-      "url": "/hotelx/reference/inputobjects/hotelxcommonsettingsdatainput"
+      "url": "/hotel-x/reference/inputobjects/hotelxcommonsettingsdatainput"
     }
   ],
   "enumValues": null,

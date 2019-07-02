@@ -6,35 +6,35 @@
     {
       "typeString": "String!",
       "name": "cardType",
-      "url": "/hotelx/reference/scalars/string",
+      "url": "/hotel-x/reference/scalars/string",
       "description": "Indicates the card type.",
       "args": null
     },
     {
       "typeString": "HolderInput!",
       "name": "holder",
-      "url": "/hotelx/reference/inputobjects/holderinput",
+      "url": "/hotel-x/reference/inputobjects/holderinput",
       "description": "Contains owner's name",
       "args": null
     },
     {
       "typeString": "String!",
       "name": "number",
-      "url": "/hotelx/reference/scalars/string",
+      "url": "/hotel-x/reference/scalars/string",
       "description": "Contains credit card number",
       "args": null
     },
     {
       "typeString": "String!",
       "name": "CVC",
-      "url": "/hotelx/reference/scalars/string",
+      "url": "/hotel-x/reference/scalars/string",
       "description": "Contains credit card CVC",
       "args": null
     },
     {
       "typeString": "ExpireDateInput!",
       "name": "expire",
-      "url": "/hotelx/reference/inputobjects/expiredateinput",
+      "url": "/hotel-x/reference/inputobjects/expiredateinput",
       "description": "Contains credit card expiration date",
       "args": null
     }
@@ -43,7 +43,7 @@
     {
       "name": "HotelBookInput",
       "description": "Criteria of book.",
-      "url": "/hotelx/reference/inputobjects/hotelbookinput"
+      "url": "/hotel-x/reference/inputobjects/hotelbookinput"
     }
   ],
   "enumValues": null,

@@ -13,7 +13,7 @@ Add Parameter is an optional plugin that allows parameters to be added to access
 
 ### Goals
 
-The add parameter plugin **adds parameters in the configuration of the existing accesses**. By doing this, you can add parameters dynamically in request time to the existing accesses (see [Access configuration](https://docs.travelgatex.com/hotelx/concepts/accesses-supplier-context/)).
+The add parameter plugin **adds parameters in the configuration of the existing accesses**. By doing this, you can add parameters dynamically in request time to the existing accesses (see [Access configuration](https://docs.travelgatex.com/hotel-x/concepts/accesses-supplier-context/)).
 
 ### Parameters
 

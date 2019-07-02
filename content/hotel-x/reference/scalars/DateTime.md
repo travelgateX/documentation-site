@@ -7,77 +7,77 @@
     {
       "name": "HotelXHotelFilterInput",
       "description": "By default: Logical AND on all given filters.",
-      "url": "/hotelx/reference/inputobjects/hotelxhotelfilterinput"
+      "url": "/hotel-x/reference/inputobjects/hotelxhotelfilterinput"
     },
     {
       "name": "HotelRuntimeConfiguration",
       "description": "",
-      "url": "/hotelx/reference/objects/hotelruntimeconfiguration"
+      "url": "/hotel-x/reference/objects/hotelruntimeconfiguration"
     },
     {
       "name": "Board",
       "description": "Board type.",
-      "url": "/hotelx/reference/objects/board"
+      "url": "/hotel-x/reference/objects/board"
     },
     {
       "name": "Node",
       "description": "",
-      "url": "/hotelx/reference/interfaces/node"
+      "url": "/hotel-x/reference/interfaces/node"
     },
     {
       "name": "Category",
       "description": "Category Type",
-      "url": "/hotelx/reference/objects/category"
+      "url": "/hotel-x/reference/objects/category"
     },
     {
       "name": "Hotel",
       "description": "Hotel Type",
-      "url": "/hotelx/reference/objects/hotel"
+      "url": "/hotel-x/reference/objects/hotel"
     },
     {
       "name": "Media",
       "description": "Contains media information.",
-      "url": "/hotelx/reference/objects/media"
+      "url": "/hotel-x/reference/objects/media"
     },
     {
       "name": "Airport",
       "description": "Airport Type",
-      "url": "/hotelx/reference/objects/airport"
+      "url": "/hotel-x/reference/objects/airport"
     },
     {
       "name": "Geoname",
       "description": "Geoname type",
-      "url": "/hotelx/reference/objects/geoname"
+      "url": "/hotel-x/reference/objects/geoname"
     },
     {
       "name": "RoomStatic",
       "description": "Room Type",
-      "url": "/hotelx/reference/objects/roomstatic"
+      "url": "/hotel-x/reference/objects/roomstatic"
     },
     {
       "name": "Destination",
       "description": "Destination Type",
-      "url": "/hotelx/reference/objects/destination"
+      "url": "/hotel-x/reference/objects/destination"
     },
     {
       "name": "AuditData",
       "description": "Data sent and received in the supplier’s native format.",
-      "url": "/hotelx/reference/objects/auditdata"
+      "url": "/hotel-x/reference/objects/auditdata"
     },
     {
       "name": "Stat",
       "description": "",
-      "url": "/hotelx/reference/objects/stat"
+      "url": "/hotel-x/reference/objects/stat"
     },
     {
       "name": "Transactions",
       "description": "Supplier transaction",
-      "url": "/hotelx/reference/objects/transactions"
+      "url": "/hotel-x/reference/objects/transactions"
     },
     {
       "name": "HotelXUpdateStatus",
       "description": "",
-      "url": "/hotelx/reference/objects/hotelxupdatestatus"
+      "url": "/hotel-x/reference/objects/hotelxupdatestatus"
     }
   ],
   "enumValues": null,

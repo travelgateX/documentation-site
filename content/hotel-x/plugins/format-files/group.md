@@ -11,12 +11,12 @@ The hotel group file should be in the below format:
 
 * **Encoding**: UTF-8 
 * **File Name**: context\_entity\_group.csv
-    * [Context](/hotelx/concepts/accesses-supplier-context/#context)
-    * [Entity](/hotelx/plugins/entity_table_file/) (file will be indexed by this field).
-    * [Format](/hotelx/plugins/format-files/) (indicates format file)
+    * [Context](/hotel-x/concepts/accesses-supplier-context/#context)
+    * [Entity](/hotel-x/plugins/entity_table_file/) (file will be indexed by this field).
+    * [Format](/hotel-x/plugins/format-files/) (indicates format file)
 * **Extension file**: csv
 * **Headers**:
-    * _key_ → [Entity](/hotelx/plugins/entity_table_file/).
+    * _key_ → [Entity](/hotel-x/plugins/entity_table_file/).
     * _hotelCodes_ → hotel code
     * _chainCodes_ → chain code
     * _destinationCodes_ → destination code

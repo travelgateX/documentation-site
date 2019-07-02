@@ -11,8 +11,8 @@ The net compare file should be in the format below:
 
 * **Encoding**: UTF-8
 * **File Name**: 
-    * [context](/hotelx/concepts/accesses-supplier-context/#context)
-    * [sequential](/hotelx/plugins/entity_table_file/#sequential)
+    * [context](/hotel-x/concepts/accesses-supplier-context/#context)
+    * [sequential](/hotel-x/plugins/entity_table_file/#sequential)
     * netCompare
 * **Extension file**: csv
 * **Headers**:
@@ -20,10 +20,10 @@ The net compare file should be in the format below:
     * _clientTokens_  → client Tokens*
     * _supplierCodes_  → supplier code
     * _notSupplierCodes_  → supplier code
-    * _bookingDateFrom_  → booking date from [**Date format**](/hotelx/plugins/format-files/commission#dateformat)
-    * _bookingDateTo_   → booking date to [**Date format**](/hotelx/plugins/format-files/commission#dateformat)
-    * _startDateFrom_  → start date from [**Date format**](/hotelx/plugins/format-files/commission#dateformat)
-    * _startDateTo_  → start date to [**Date format**](/hotelx/plugins/format-files/commission#dateformat)
+    * _bookingDateFrom_  → booking date from [**Date format**](/hotel-x/plugins/format-files/commission#dateformat)
+    * _bookingDateTo_   → booking date to [**Date format**](/hotel-x/plugins/format-files/commission#dateformat)
+    * _startDateFrom_  → start date from [**Date format**](/hotel-x/plugins/format-files/commission#dateformat)
+    * _startDateTo_  → start date to [**Date format**](/hotel-x/plugins/format-files/commission#dateformat)
     * _hotelCodes_  → hotel code
     * _nothotelCodes_  → hotel code
     * _chainsCodes_  → chain code

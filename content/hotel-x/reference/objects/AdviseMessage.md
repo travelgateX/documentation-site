@@ -6,7 +6,7 @@
     {
       "typeString": "ID!",
       "name": "code",
-      "url": "/hotelx/reference/scalars/id",
+      "url": "/hotel-x/reference/scalars/id",
       "description": "AM code: The following codes can be returned:",
       "isDeprecated": false,
       "args": null
@@ -14,7 +14,7 @@
     {
       "typeString": "String!",
       "name": "type",
-      "url": "/hotelx/reference/scalars/string",
+      "url": "/hotel-x/reference/scalars/string",
       "description": "Error type: The following types are valid:",
       "isDeprecated": true,
       "args": null,
@@ -30,7 +30,7 @@
     {
       "typeString": "String!",
       "name": "description",
-      "url": "/hotelx/reference/scalars/string",
+      "url": "/hotel-x/reference/scalars/string",
       "description": "Error description",
       "isDeprecated": false,
       "args": null
@@ -38,7 +38,7 @@
     {
       "typeString": "AdviseMessageLevel!",
       "name": "level",
-      "url": "/hotelx/reference/enums/advisemessagelevel",
+      "url": "/hotel-x/reference/enums/advisemessagelevel",
       "description": "Indicates the level of importance of the message: Posible values ERROR WARN INFO",
       "isDeprecated": false,
       "args": null
@@ -46,7 +46,7 @@
     {
       "typeString": "ExternalMessage",
       "name": "external",
-      "url": "/hotelx/reference/objects/externalmessage",
+      "url": "/hotel-x/reference/objects/externalmessage",
       "description": "Specify the external message.",
       "isDeprecated": false,
       "args": null
@@ -54,7 +54,7 @@
     {
       "typeString": "ID!",
       "name": "correlationID",
-      "url": "/hotelx/reference/scalars/id",
+      "url": "/hotel-x/reference/scalars/id",
       "description": "Identifier to be able to investigate the cause of the error",
       "isDeprecated": false,
       "args": null

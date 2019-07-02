@@ -6,7 +6,7 @@
     {
       "typeString": "String!",
       "name": "code",
-      "url": "/hotelx/reference/scalars/string",
+      "url": "/hotel-x/reference/scalars/string",
       "description": "Code",
       "isDeprecated": false,
       "args": null
@@ -14,7 +14,7 @@
     {
       "typeString": "ApplicationAreaType!",
       "name": "type",
-      "url": "/hotelx/reference/enums/applicationareatype",
+      "url": "/hotel-x/reference/enums/applicationareatype",
       "description": "Indicates the type of Amenity.",
       "isDeprecated": false,
       "args": null
@@ -22,14 +22,14 @@
     {
       "typeString": "[Text!]!",
       "name": "texts",
-      "url": "/hotelx/reference/objects/text",
+      "url": "/hotel-x/reference/objects/text",
       "description": "Contains the descriptive",
       "isDeprecated": false,
       "args": [
         {
           "typeString": "[Language!]",
           "name": "languages",
-          "url": "/hotelx/reference/scalars/language",
+          "url": "/hotel-x/reference/scalars/language",
           "description": ""
         }
       ]

@@ -6,7 +6,7 @@
     {
       "typeString": "String!",
       "name": "reference",
-      "url": "/hotelx/reference/scalars/string",
+      "url": "/hotel-x/reference/scalars/string",
       "description": "Extra information about transaction.",
       "isDeprecated": false,
       "args": null
@@ -14,7 +14,7 @@
     {
       "typeString": "Stat!",
       "name": "total",
-      "url": "/hotelx/reference/objects/stat",
+      "url": "/hotel-x/reference/objects/stat",
       "description": "Total transaction time",
       "isDeprecated": false,
       "args": null
@@ -22,7 +22,7 @@
     {
       "typeString": "Stat!",
       "name": "buildRequest",
-      "url": "/hotelx/reference/objects/stat",
+      "url": "/hotel-x/reference/objects/stat",
       "description": "Build request time",
       "isDeprecated": false,
       "args": null
@@ -30,7 +30,7 @@
     {
       "typeString": "Stat!",
       "name": "workerCommunication",
-      "url": "/hotelx/reference/objects/stat",
+      "url": "/hotel-x/reference/objects/stat",
       "description": "Worker connection time",
       "isDeprecated": false,
       "args": null
@@ -38,7 +38,7 @@
     {
       "typeString": "Stat!",
       "name": "parseResponse",
-      "url": "/hotelx/reference/objects/stat",
+      "url": "/hotel-x/reference/objects/stat",
       "description": "Parse response time",
       "isDeprecated": false,
       "args": null

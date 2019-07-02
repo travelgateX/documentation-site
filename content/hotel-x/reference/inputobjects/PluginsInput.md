@@ -6,21 +6,21 @@
     {
       "typeString": "PluginType!",
       "name": "type",
-      "url": "/hotelx/reference/enums/plugintype",
+      "url": "/hotel-x/reference/enums/plugintype",
       "description": "type of the plugins to execute",
       "args": null
     },
     {
       "typeString": "String!",
       "name": "name",
-      "url": "/hotelx/reference/scalars/string",
+      "url": "/hotel-x/reference/scalars/string",
       "description": "name of plugin to execute",
       "args": null
     },
     {
       "typeString": "[ParameterInput!]",
       "name": "parameters",
-      "url": "/hotelx/reference/inputobjects/parameterinput",
+      "url": "/hotel-x/reference/inputobjects/parameterinput",
       "description": "Plugin's parameters",
       "args": null
     }

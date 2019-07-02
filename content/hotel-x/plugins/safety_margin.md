@@ -21,7 +21,7 @@ The matching process uses **client Tokens** filed, which identify the provided b
 
 ## Files needed in order to use this plugin
 
-* [**Margin safe file format**](/hotelx/plugins/format-files/safety_margin/) (**Mandatory**)
+* [**Margin safe file format**](/hotel-x/plugins/format-files/safety_margin/) (**Mandatory**)
 
 ### Execution example
 

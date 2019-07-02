@@ -16,7 +16,7 @@ If you're ready to start searching for a hotel, getting a quote and booking it r
 * **STEP 1:** Get to know our APIs. Read through our documentation and test some sample calls in our [API Playground](/getting-started/playground). You can use [a test API key](/travelgatex/overview) and start experimenting with our APIs straight away.
 * **STEP 2:** Sign an agreement with hotel suppliers to be using their booking databases. You can see a full list of suppliers and contact the ones you want to connect with by visiting our [supplier database](https://www.travelgatex.com/partners/seller).
 * **STEP 3:** Sign up for TravelgateX API access. [Send us an email](https://www.travelgatex.com/contact) and tell us who you are and which hotel suppliers you are working with. TravelgateX works with over 600 suppliers, and we are the first certified partner to work with EAN Rapid. We will send you a welcome pack with your login details and further guides on how to make your first integration.
-* **STEP 4:** Start generating new business! Read through our integration guides and start integrating our [HotelX API](/hotelx) into your booking applications.
+* **STEP 4:** Start generating new business! Read through our integration guides and start integrating our [HotelX API](/hotel-x) into your booking applications.
 * **BONUS STEP:** TravelgateX is using one of the latest and most advanced API technologies, GraphQL. It is quick to learn and immensely powerful. Check out our [free GraphQL guides](/learning-graphql/) to learn more about this cutting edge technology.
 
 ## Join the TravelgateX partner program
@@ -27,7 +27,7 @@ In order to start building your own API, you'll need to join the TravelgateX par
 
 Choose which APIs you would like to use from our constantly growing catalog of travel services.
 
-- **[HotelX](/hotelx/)**: Search, check availability, compare prices, and book hotels in realtime with our API
+- **[HotelX](/hotel-x/)**: Search, check availability, compare prices, and book hotels in realtime with our API
 - **Stats**: **_(Coming soon!)_** Track all of your API calls to our travel services, the calls being made, the response times and the status codes. Ideal for managing DevOps for large travel websites.
 - **Insights**: **_(Coming soon!)_** Stand back and get a wider perspective on your travel customers with a forthcoming data API that will reveal the trends and travel patterns of your customer base. All the messages, all the searches, everything you’ve done on TravelgateX will be available in Insight.
 - **Mappea**: **_(Coming soon!)_** The fastest way to display maps of your hotels, travel services and HotelX bookings on your website, in customer communication, and in your client apps.

@@ -6,14 +6,14 @@
     {
       "typeString": "PluginStepType!",
       "name": "step",
-      "url": "/hotelx/reference/enums/pluginsteptype",
+      "url": "/hotel-x/reference/enums/pluginsteptype",
       "description": "",
       "args": null
     },
     {
       "typeString": "[HotelXDefaultPluginInput!]!",
       "name": "plugins",
-      "url": "/hotelx/reference/inputobjects/hotelxdefaultplugininput",
+      "url": "/hotel-x/reference/inputobjects/hotelxdefaultplugininput",
       "description": "",
       "args": null
     }

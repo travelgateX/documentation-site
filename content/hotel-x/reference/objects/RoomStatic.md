@@ -6,7 +6,7 @@
     {
       "typeString": "ID!",
       "name": "code",
-      "url": "/hotelx/reference/scalars/id",
+      "url": "/hotel-x/reference/scalars/id",
       "description": "Room ID",
       "isDeprecated": false,
       "args": null
@@ -14,7 +14,7 @@
     {
       "typeString": "RoomData",
       "name": "roomData",
-      "url": "/hotelx/reference/objects/roomdata",
+      "url": "/hotel-x/reference/objects/roomdata",
       "description": "Room data",
       "isDeprecated": false,
       "args": null
@@ -22,7 +22,7 @@
     {
       "typeString": "[Error!]",
       "name": "error",
-      "url": "/hotelx/reference/objects/error",
+      "url": "/hotel-x/reference/objects/error",
       "description": "Errors that abort services",
       "isDeprecated": false,
       "args": null
@@ -30,7 +30,7 @@
     {
       "typeString": "DateTime!",
       "name": "createdAt",
-      "url": "/hotelx/reference/scalars/datetime",
+      "url": "/hotel-x/reference/scalars/datetime",
       "description": "Date created",
       "isDeprecated": false,
       "args": null
@@ -38,7 +38,7 @@
     {
       "typeString": "DateTime!",
       "name": "updatedAt",
-      "url": "/hotelx/reference/scalars/datetime",
+      "url": "/hotel-x/reference/scalars/datetime",
       "description": "Date updated",
       "isDeprecated": false,
       "args": null
@@ -48,7 +48,7 @@
     {
       "name": "RoomEdge",
       "description": "RoomList Edge definition",
-      "url": "/hotelx/reference/objects/roomedge"
+      "url": "/hotel-x/reference/objects/roomedge"
     }
   ],
   "enumValues": null,

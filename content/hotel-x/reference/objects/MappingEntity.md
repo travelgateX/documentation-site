@@ -6,7 +6,7 @@
     {
       "typeString": "String!",
       "name": "code",
-      "url": "/hotelx/reference/scalars/string",
+      "url": "/hotel-x/reference/scalars/string",
       "description": "Client code",
       "isDeprecated": false,
       "args": null
@@ -14,14 +14,14 @@
     {
       "typeString": "[Map!]",
       "name": "contexts",
-      "url": "/hotelx/reference/objects/map",
+      "url": "/hotel-x/reference/objects/map",
       "description": "You can filter by output context.",
       "isDeprecated": false,
       "args": [
         {
           "typeString": "[String!]",
           "name": "codes",
-          "url": "/hotelx/reference/scalars/string",
+          "url": "/hotel-x/reference/scalars/string",
           "description": ""
         }
       ]

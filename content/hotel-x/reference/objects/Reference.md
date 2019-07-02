@@ -6,7 +6,7 @@
     {
       "typeString": "String",
       "name": "client",
-      "url": "/hotelx/reference/scalars/string",
+      "url": "/hotel-x/reference/scalars/string",
       "description": "Client reference booking",
       "isDeprecated": false,
       "args": null
@@ -14,7 +14,7 @@
     {
       "typeString": "String",
       "name": "supplier",
-      "url": "/hotelx/reference/scalars/string",
+      "url": "/hotel-x/reference/scalars/string",
       "description": "Supplier reference booking",
       "isDeprecated": false,
       "args": null
@@ -24,12 +24,12 @@
     {
       "name": "HotelBookingDetail",
       "description": "Contains information about booking",
-      "url": "/hotelx/reference/objects/hotelbookingdetail"
+      "url": "/hotel-x/reference/objects/hotelbookingdetail"
     },
     {
       "name": "HotelCancelDetail",
       "description": "Contains information about cancel",
-      "url": "/hotelx/reference/objects/hotelcanceldetail"
+      "url": "/hotel-x/reference/objects/hotelcanceldetail"
     }
   ],
   "enumValues": null,

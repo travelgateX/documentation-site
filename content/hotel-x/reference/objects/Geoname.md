@@ -6,7 +6,7 @@
     {
       "typeString": "ID!",
       "name": "code",
-      "url": "/hotelx/reference/scalars/id",
+      "url": "/hotel-x/reference/scalars/id",
       "description": "Hotel Destination ID",
       "isDeprecated": false,
       "args": null
@@ -14,7 +14,7 @@
     {
       "typeString": "GeonameData",
       "name": "geonameData",
-      "url": "/hotelx/reference/objects/geonamedata",
+      "url": "/hotel-x/reference/objects/geonamedata",
       "description": "geoname data",
       "isDeprecated": false,
       "args": null
@@ -22,14 +22,14 @@
     {
       "typeString": "[AdviseMessage!]",
       "name": "adviseMessage",
-      "url": "/hotelx/reference/objects/advisemessage",
+      "url": "/hotel-x/reference/objects/advisemessage",
       "description": "List of messages",
       "isDeprecated": false,
       "args": [
         {
           "typeString": "[AdviseMessageLevel]",
           "name": "level",
-          "url": "/hotelx/reference/enums/advisemessagelevel",
+          "url": "/hotel-x/reference/enums/advisemessagelevel",
           "description": ""
         }
       ]
@@ -37,7 +37,7 @@
     {
       "typeString": "DateTime!",
       "name": "createdAt",
-      "url": "/hotelx/reference/scalars/datetime",
+      "url": "/hotel-x/reference/scalars/datetime",
       "description": "Date created",
       "isDeprecated": false,
       "args": null
@@ -45,7 +45,7 @@
     {
       "typeString": "DateTime!",
       "name": "updatedAt",
-      "url": "/hotelx/reference/scalars/datetime",
+      "url": "/hotel-x/reference/scalars/datetime",
       "description": "Date updated",
       "isDeprecated": false,
       "args": null
@@ -55,7 +55,7 @@
     {
       "name": "GeonameData",
       "description": "Geoname data, which contain a reference to his parent location",
-      "url": "/hotelx/reference/objects/geonamedata"
+      "url": "/hotel-x/reference/objects/geonamedata"
     }
   ],
   "enumValues": null,

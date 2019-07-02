@@ -66,7 +66,7 @@
   "typename": "PluginStepType",
   "hideGithubLink": true
 }
-Plugin Step Type. https://docs.travelgatex.com/hotelx/plugins/overview/
+Plugin Step Type. https://docs.travelgatex.com/hotel-x/plugins/overview/
 ## GraphQL schema definition
 
 {{% graphql-schema-enum %}}

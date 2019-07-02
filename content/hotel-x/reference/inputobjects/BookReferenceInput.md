@@ -6,14 +6,14 @@
     {
       "typeString": "String",
       "name": "client",
-      "url": "/hotelx/reference/scalars/string",
+      "url": "/hotel-x/reference/scalars/string",
       "description": "The client's reference",
       "args": null
     },
     {
       "typeString": "String",
       "name": "supplier",
-      "url": "/hotelx/reference/scalars/string",
+      "url": "/hotel-x/reference/scalars/string",
       "description": "The Supplier's reference",
       "args": null
     }
@@ -22,7 +22,7 @@
     {
       "name": "HotelCancelInput",
       "description": "Cancellation Criteria.",
-      "url": "/hotelx/reference/inputobjects/hotelcancelinput"
+      "url": "/hotel-x/reference/inputobjects/hotelcancelinput"
     }
   ],
   "enumValues": null,

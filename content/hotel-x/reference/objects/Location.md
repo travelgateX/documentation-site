@@ -6,7 +6,7 @@
     {
       "typeString": "String",
       "name": "address",
-      "url": "/hotelx/reference/scalars/string",
+      "url": "/hotel-x/reference/scalars/string",
       "description": "Contains Hotel Address",
       "isDeprecated": false,
       "args": null
@@ -14,7 +14,7 @@
     {
       "typeString": "String",
       "name": "city",
-      "url": "/hotelx/reference/scalars/string",
+      "url": "/hotel-x/reference/scalars/string",
       "description": "Contains the city",
       "isDeprecated": false,
       "args": null
@@ -22,7 +22,7 @@
     {
       "typeString": "String",
       "name": "zipCode",
-      "url": "/hotelx/reference/scalars/string",
+      "url": "/hotel-x/reference/scalars/string",
       "description": "Contains the zipCode.",
       "isDeprecated": false,
       "args": null
@@ -30,7 +30,7 @@
     {
       "typeString": "Country!",
       "name": "country",
-      "url": "/hotelx/reference/scalars/country",
+      "url": "/hotel-x/reference/scalars/country",
       "description": "Country where is the Hotel.",
       "isDeprecated": false,
       "args": null
@@ -38,7 +38,7 @@
     {
       "typeString": "Coordinates",
       "name": "coordinates",
-      "url": "/hotelx/reference/objects/coordinates",
+      "url": "/hotel-x/reference/objects/coordinates",
       "description": "Geographical coordinates corresponding to a location.",
       "isDeprecated": false,
       "args": null
@@ -46,7 +46,7 @@
     {
       "typeString": "DestinationData!",
       "name": "closestDestination",
-      "url": "/hotelx/reference/objects/destinationdata",
+      "url": "/hotel-x/reference/objects/destinationdata",
       "description": "Closest destination",
       "isDeprecated": false,
       "args": null
@@ -54,7 +54,7 @@
     {
       "typeString": "[Airport!]",
       "name": "airports",
-      "url": "/hotelx/reference/objects/airport",
+      "url": "/hotel-x/reference/objects/airport",
       "description": "Airports",
       "isDeprecated": false,
       "args": null
@@ -62,7 +62,7 @@
     {
       "typeString": "[Geoname!]!",
       "name": "geoNames",
-      "url": "/hotelx/reference/objects/geoname",
+      "url": "/hotel-x/reference/objects/geoname",
       "description": "Detailed information about the destinations geonames",
       "isDeprecated": false,
       "args": null
@@ -72,12 +72,12 @@
     {
       "name": "HotelData",
       "description": "Hotel data",
-      "url": "/hotelx/reference/objects/hoteldata"
+      "url": "/hotel-x/reference/objects/hoteldata"
     },
     {
       "name": "AirportData",
       "description": "Information about the airport",
-      "url": "/hotelx/reference/objects/airportdata"
+      "url": "/hotel-x/reference/objects/airportdata"
     }
   ],
   "enumValues": null,

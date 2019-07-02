@@ -6,7 +6,7 @@
     {
       "typeString": "String!",
       "name": "code",
-      "url": "/hotelx/reference/scalars/string",
+      "url": "/hotel-x/reference/scalars/string",
       "description": "Context code.",
       "isDeprecated": false,
       "args": null
@@ -14,7 +14,7 @@
     {
       "typeString": "[String!]",
       "name": "maps",
-      "url": "/hotelx/reference/scalars/string",
+      "url": "/hotel-x/reference/scalars/string",
       "description": "Equivalences of the supplier for the client code.",
       "isDeprecated": false,
       "args": null

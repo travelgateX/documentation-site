@@ -11,7 +11,7 @@ On this page you will learn how to manage and control bookings and management fl
 
 ## Cancellation
 
-Performs a Seller [booking](/hotelx/quickstart/#cancel) cancellation.
+Performs a Seller [booking](/hotel-x/quickstart/#cancel) cancellation.
 
 ### Operation
 

@@ -6,7 +6,7 @@
     {
       "typeString": "Boolean!",
       "name": "hasNextPage",
-      "url": "/hotelx/reference/scalars/boolean",
+      "url": "/hotel-x/reference/scalars/boolean",
       "description": "",
       "isDeprecated": false,
       "args": null
@@ -14,7 +14,7 @@
     {
       "typeString": "Boolean!",
       "name": "hasPreviousPage",
-      "url": "/hotelx/reference/scalars/boolean",
+      "url": "/hotel-x/reference/scalars/boolean",
       "description": "",
       "isDeprecated": false,
       "args": null
@@ -22,7 +22,7 @@
     {
       "typeString": "String!",
       "name": "startCursor",
-      "url": "/hotelx/reference/scalars/string",
+      "url": "/hotel-x/reference/scalars/string",
       "description": "",
       "isDeprecated": false,
       "args": null
@@ -30,7 +30,7 @@
     {
       "typeString": "String!",
       "name": "endCursor",
-      "url": "/hotelx/reference/scalars/string",
+      "url": "/hotel-x/reference/scalars/string",
       "description": "",
       "isDeprecated": false,
       "args": null
@@ -40,27 +40,27 @@
     {
       "name": "BoardConnection",
       "description": "BoardList definition",
-      "url": "/hotelx/reference/objects/boardconnection"
+      "url": "/hotel-x/reference/objects/boardconnection"
     },
     {
       "name": "CategoryConnection",
       "description": "CategoryList definition",
-      "url": "/hotelx/reference/objects/categoryconnection"
+      "url": "/hotel-x/reference/objects/categoryconnection"
     },
     {
       "name": "HotelConnection",
       "description": "HotelList definition",
-      "url": "/hotelx/reference/objects/hotelconnection"
+      "url": "/hotel-x/reference/objects/hotelconnection"
     },
     {
       "name": "RoomConnection",
       "description": "RoomList definition",
-      "url": "/hotelx/reference/objects/roomconnection"
+      "url": "/hotel-x/reference/objects/roomconnection"
     },
     {
       "name": "DestinationConnection",
       "description": "DestinationList definition",
-      "url": "/hotelx/reference/objects/destinationconnection"
+      "url": "/hotel-x/reference/objects/destinationconnection"
     }
   ],
   "enumValues": null,

@@ -6,7 +6,7 @@
     {
       "typeString": "[BoardEdge]",
       "name": "edges",
-      "url": "/hotelx/reference/objects/boardedge",
+      "url": "/hotel-x/reference/objects/boardedge",
       "description": "",
       "isDeprecated": false,
       "args": null
@@ -14,7 +14,7 @@
     {
       "typeString": "PageInfo!",
       "name": "pageInfo",
-      "url": "/hotelx/reference/objects/pageinfo",
+      "url": "/hotel-x/reference/objects/pageinfo",
       "description": "Indicates info about page",
       "isDeprecated": false,
       "args": null
@@ -24,7 +24,7 @@
     {
       "name": "HotelXQuery",
       "description": "",
-      "url": "/hotelx/reference/objects/hotelxquery"
+      "url": "/hotel-x/reference/objects/hotelxquery"
     }
   ],
   "enumValues": null,

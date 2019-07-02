@@ -6,14 +6,14 @@
     {
       "typeString": "String!",
       "name": "name",
-      "url": "/hotelx/reference/scalars/string",
+      "url": "/hotel-x/reference/scalars/string",
       "description": "The card holder's name",
       "args": null
     },
     {
       "typeString": "String!",
       "name": "surname",
-      "url": "/hotelx/reference/scalars/string",
+      "url": "/hotel-x/reference/scalars/string",
       "description": "The card holder's surname",
       "args": null
     }
@@ -22,12 +22,12 @@
     {
       "name": "HotelBookInput",
       "description": "Criteria of book.",
-      "url": "/hotelx/reference/inputobjects/hotelbookinput"
+      "url": "/hotel-x/reference/inputobjects/hotelbookinput"
     },
     {
       "name": "PaymentCardInput",
       "description": "Input PaymentCard, if the payment is done by credit card, is it mandatory to specify the payment type and the credit card information",
-      "url": "/hotelx/reference/inputobjects/paymentcardinput"
+      "url": "/hotel-x/reference/inputobjects/paymentcardinput"
     }
   ],
   "enumValues": null,

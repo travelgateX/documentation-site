@@ -9,16 +9,16 @@ alwaysopen = false
 
 ### Introduction
 
-_Plugins_ are custom code, executed in [HotelX](/hotelx/) servers, that add or modify specific functionalities. Any `Partner` can develop custom _Plugins_, nevertheless HotelX, [HotelX](/hotelx/) has developed many _Plugins_ available for anyone to use out of the box.
+_Plugins_ are custom code, executed in [HotelX](/hotel-x/) servers, that add or modify specific functionalities. Any `Partner` can develop custom _Plugins_, nevertheless HotelX, [HotelX](/hotel-x/) has developed many _Plugins_ available for anyone to use out of the box.
 
 ### Flows
 
-[HotelX](/hotelx/) _query_ or _mutation_ determine what _flow_ is executed. _Plugins_ can be executed in different `Queries` or `Mutations`:
+[HotelX](/hotel-x/) _query_ or _mutation_ determine what _flow_ is executed. _Plugins_ can be executed in different `Queries` or `Mutations`:
 
-<!-- * [search](/hotelx/concepts/booking-flow#search)
-* [quote](/hotelx/concepts/booking-flow#quote)
-* [hotelBook](/hotelx/concepts/booking-flow#book)
-* [hotelCancel](/hotelx/concepts/management-flow#cancel) -->
+<!-- * [search](/hotel-x/concepts/booking-flow#search)
+* [quote](/hotel-x/concepts/booking-flow#quote)
+* [hotelBook](/hotel-x/concepts/booking-flow#book)
+* [hotelCancel](/hotel-x/concepts/management-flow#cancel) -->
 * Search
 * Quote
 * Book
@@ -30,16 +30,16 @@ _Step_ is the minium container where _plugins_ are executed **sequentially**.
 
 | Step | When is executed |
 | --- | --- |
-| _Request_ | _After_ `Client` requests message to [HotelX](/hotelx/).|  
+| _Request_ | _After_ `Client` requests message to [HotelX](/hotel-x/).|  
 | _Request Access_ | _Before_ send request to `Supplier` using `Access` and _after_ `Accesses` has been calculated.|
 | _Response Option_ |_After_ `Supplier` responds  message. For every option returned.|
 | _Response Access_ |_After_ all `Access` options has been responded.|
-| _Response_ | _Before_ [HotelX](/hotelx/) responds message to to `Client`.|
+| _Response_ | _Before_ [HotelX](/hotel-x/) responds message to to `Client`.|
 
 
 ### Plugin Types
 
-Plugin types supported by [HotelX](/hotelx/):
+Plugin types supported by [HotelX](/hotel-x/):
 
 * [Pre Step](../processor): First execution on every _step_.
 * [Hotel Map](../mapping): Hotel mapping codes.
@@ -54,18 +54,18 @@ Plugin types supported by [HotelX](/hotelx/):
 
 ### Plugin Context Execution
 
-Once _message_ enters on [HotelX](/hotelx/) it flows over different _flows_ and _steps_. That's why  _plugins_ are executed in different _contexts_.
+Once _message_ enters on [HotelX](/hotel-x/) it flows over different _flows_ and _steps_. That's why  _plugins_ are executed in different _contexts_.
 
 _Context_ allows:
 
 * Read objects involved in current _query_ and/or _mutations_.
-* Read objects available in all [HotelX](/hotelx/) operations.
+* Read objects available in all [HotelX](/hotel-x/) operations.
 
 With _context_ information developers can personalize _plugin_ features, more information about plugin development can be found [here](../development).
 
 ### Plugin Step Execution
 
-[HotelX](/hotelx/) determine the order and [plugin types](#plugintypes) executed for each _step_.
+[HotelX](/hotel-x/) determine the order and [plugin types](#plugintypes) executed for each _step_.
 
 
 | | **search** | **quote** | **hotelBook** | **hotelCancel** |

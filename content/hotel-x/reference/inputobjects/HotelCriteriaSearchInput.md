@@ -6,63 +6,63 @@
     {
       "typeString": "Date!",
       "name": "checkIn",
-      "url": "/hotelx/reference/scalars/date",
+      "url": "/hotel-x/reference/scalars/date",
       "description": "Check-in date for booking\nFormat: YYYY-MM-DD",
       "args": null
     },
     {
       "typeString": "Date!",
       "name": "checkOut",
-      "url": "/hotelx/reference/scalars/date",
+      "url": "/hotel-x/reference/scalars/date",
       "description": "Check-out, booking date\nFormat: YYYY-MM-DD",
       "args": null
     },
     {
       "typeString": "[String!]",
       "name": "hotels",
-      "url": "/hotelx/reference/scalars/string",
+      "url": "/hotel-x/reference/scalars/string",
       "description": "Hotel Codes.",
       "args": null
     },
     {
       "typeString": "[String!]",
       "name": "destinations",
-      "url": "/hotelx/reference/scalars/string",
+      "url": "/hotel-x/reference/scalars/string",
       "description": "Destination codes.",
       "args": null
     },
     {
       "typeString": "[RoomInput!]!",
       "name": "occupancies",
-      "url": "/hotelx/reference/inputobjects/roominput",
+      "url": "/hotel-x/reference/inputobjects/roominput",
       "description": "For multi-room bookings, this array will contain multiple elements (rooms).\nFor each room you have to specify its own occupancy.",
       "args": null
     },
     {
       "typeString": "Language",
       "name": "language",
-      "url": "/hotelx/reference/scalars/language",
+      "url": "/hotel-x/reference/scalars/language",
       "description": "Language to be used in request",
       "args": null
     },
     {
       "typeString": "Currency",
       "name": "currency",
-      "url": "/hotelx/reference/scalars/currency",
+      "url": "/hotel-x/reference/scalars/currency",
       "description": "Currency requested if supported by supplier",
       "args": null
     },
     {
       "typeString": "Country",
       "name": "nationality",
-      "url": "/hotelx/reference/scalars/country",
+      "url": "/hotel-x/reference/scalars/country",
       "description": "Nationality of the guest (use ISO3166_1_alfa_2)",
       "args": null
     },
     {
       "typeString": "String",
       "name": "market",
-      "url": "/hotelx/reference/scalars/string",
+      "url": "/hotel-x/reference/scalars/string",
       "description": "Targeted zone, country or point-ofsale-to be used in request.",
       "args": null
     }

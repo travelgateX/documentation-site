@@ -7,7 +7,7 @@
     {
       "name": "HotelRuntimeParameter",
       "description": "template of all fields used by the supplier",
-      "url": "/hotelx/reference/objects/hotelruntimeparameter"
+      "url": "/hotel-x/reference/objects/hotelruntimeparameter"
     }
   ],
   "enumValues": [

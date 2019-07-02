@@ -6,7 +6,7 @@
     {
       "typeString": "String!",
       "name": "name",
-      "url": "/hotelx/reference/scalars/string",
+      "url": "/hotel-x/reference/scalars/string",
       "description": "Plugin name",
       "isDeprecated": false,
       "args": null
@@ -14,7 +14,7 @@
     {
       "typeString": "Stat!",
       "name": "total",
-      "url": "/hotelx/reference/objects/stat",
+      "url": "/hotel-x/reference/objects/stat",
       "description": "total plugin time",
       "isDeprecated": false,
       "args": null
@@ -24,12 +24,12 @@
     {
       "name": "StatsRequest",
       "description": "Contains internal information.",
-      "url": "/hotelx/reference/objects/statsrequest"
+      "url": "/hotel-x/reference/objects/statsrequest"
     },
     {
       "name": "StatAccess",
       "description": "",
-      "url": "/hotelx/reference/objects/stataccess"
+      "url": "/hotel-x/reference/objects/stataccess"
     }
   ],
   "enumValues": null,

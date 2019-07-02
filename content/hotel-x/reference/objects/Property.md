@@ -6,7 +6,7 @@
     {
       "typeString": "String",
       "name": "name",
-      "url": "/hotelx/reference/scalars/string",
+      "url": "/hotel-x/reference/scalars/string",
       "description": "Indicates property type",
       "isDeprecated": false,
       "args": null
@@ -14,7 +14,7 @@
     {
       "typeString": "String",
       "name": "code",
-      "url": "/hotelx/reference/scalars/string",
+      "url": "/hotel-x/reference/scalars/string",
       "description": "Indicates property type code",
       "isDeprecated": false,
       "args": null
@@ -24,7 +24,7 @@
     {
       "name": "HotelData",
       "description": "Hotel data",
-      "url": "/hotelx/reference/objects/hoteldata"
+      "url": "/hotel-x/reference/objects/hoteldata"
     }
   ],
   "enumValues": null,

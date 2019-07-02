@@ -11,8 +11,8 @@ The commission file should be in the below format:
 
 * **Encoding**: UTF-8
 * **File Name**: 
-    * [context](/hotelx/concepts/accesses-supplier-context/#context)
-    * [sequential](/hotelx/plugins/entity_table_file/#sequential)
+    * [context](/hotel-x/concepts/accesses-supplier-context/#context)
+    * [sequential](/hotel-x/plugins/entity_table_file/#sequential)
     * commission
 * **Extension file**: csv
 * **Headers**:
@@ -20,10 +20,10 @@ The commission file should be in the below format:
     * _clientTokens_  → client token used for index the rule
     * _supplierCodes_  → supplier code
     * _notSupplierCodes_  → supplier code
-    * _creationDateFrom_  → start creation date [**Date format**](/hotelx/plugins/format-files/commission#dateformat)
-    * _creationDateTo_   → end creation date [**Date format**](/hotelx/plugins/format-files/commission#dateformat)
-    * _checkInFrom_  → checkin date [**Date format**](/hotelx/plugins/format-files/commission#dateformat)
-    * _checkInTo_  → checkout date [**Date format**](/hotelx/plugins/format-files/commission#dateformat)
+    * _creationDateFrom_  → start creation date [**Date format**](/hotel-x/plugins/format-files/commission#dateformat)
+    * _creationDateTo_   → end creation date [**Date format**](/hotel-x/plugins/format-files/commission#dateformat)
+    * _checkInFrom_  → checkin date [**Date format**](/hotel-x/plugins/format-files/commission#dateformat)
+    * _checkInTo_  → checkout date [**Date format**](/hotel-x/plugins/format-files/commission#dateformat)
     * _hotelCodes_  → hotel code
     * _nothotelCodes_  → hotel code
     * _chainsCodes_  → chain code

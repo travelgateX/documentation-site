@@ -6,14 +6,14 @@
     {
       "typeString": "Int!",
       "name": "occupancyRefId",
-      "url": "/hotelx/reference/scalars/int",
+      "url": "/hotel-x/reference/scalars/int",
       "description": "The room's reference in the booking",
       "args": null
     },
     {
       "typeString": "[BookPaxInput!]!",
       "name": "paxes",
-      "url": "/hotelx/reference/inputobjects/bookpaxinput",
+      "url": "/hotel-x/reference/inputobjects/bookpaxinput",
       "description": "The list or lists of paxes of the room",
       "args": null
     }

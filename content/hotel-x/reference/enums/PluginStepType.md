@@ -7,27 +7,27 @@
     {
       "name": "HotelXDefaultPlugin",
       "description": "",
-      "url": "/hotelx/reference/objects/hotelxdefaultplugin"
+      "url": "/hotel-x/reference/objects/hotelxdefaultplugin"
     },
     {
       "name": "PluginStepInput",
       "description": "Plugin to execute.",
-      "url": "/hotelx/reference/inputobjects/pluginstepinput"
+      "url": "/hotel-x/reference/inputobjects/pluginstepinput"
     },
     {
       "name": "HotelXFilterPluginTypeInput",
       "description": "",
-      "url": "/hotelx/reference/inputobjects/hotelxfilterplugintypeinput"
+      "url": "/hotel-x/reference/inputobjects/hotelxfilterplugintypeinput"
     },
     {
       "name": "HotelXDefaultPluginStepInput",
       "description": "",
-      "url": "/hotelx/reference/inputobjects/hotelxdefaultpluginstepinput"
+      "url": "/hotel-x/reference/inputobjects/hotelxdefaultpluginstepinput"
     },
     {
       "name": "HotelXDefaultPluginInput",
       "description": "",
-      "url": "/hotelx/reference/inputobjects/hotelxdefaultplugininput"
+      "url": "/hotel-x/reference/inputobjects/hotelxdefaultplugininput"
     }
   ],
   "enumValues": [
@@ -66,7 +66,7 @@
   "typename": "PluginStepType",
   "hideGithubLink": true
 }
-Plugin Step Type. https://docs.travelgatex.com/hotelx/plugins/overview/
+Plugin Step Type. https://docs.travelgatex.com/hotel-x/plugins/overview/
 ## GraphQL schema definition
 
 {{% graphql-schema-enum %}}

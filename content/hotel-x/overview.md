@@ -39,7 +39,7 @@ HotelX allows you to add Plugins to our API.
 
 {{% alert theme="info" %}}A **plugin** is a piece of code that is executed inside our application.{{% /alert %}}
 
-There are a few points in the request lifetime where anyone can [develop a plugin](/hotelx/plugins/). A plugin receives the request or response as an input and outputs the changed request or response. 
+There are a few points in the request lifetime where anyone can [develop a plugin](/hotel-x/plugins/). A plugin receives the request or response as an input and outputs the changed request or response. 
 
 {{% alert theme="info" %}}Plugins are a core package in the [Go Programming language](https://golang.org/). 
 You can learn more about how to use plugins [here](https://golang.org/pkg/plugin/).{{% /alert %}}

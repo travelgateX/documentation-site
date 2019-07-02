@@ -230,7 +230,7 @@ Performs a book or reservation over an option returned in Quote Response.
 
 ## Cancellation
 
-Performs a Seller [booking](/hotelx/quickstart/#cancel) cancellation.
+Performs a Seller [booking](/hotel-x/quickstart/#cancel) cancellation.
 
 ### Operation
 

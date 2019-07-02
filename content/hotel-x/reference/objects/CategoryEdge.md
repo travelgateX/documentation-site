@@ -6,7 +6,7 @@
     {
       "typeString": "Category",
       "name": "node",
-      "url": "/hotelx/reference/objects/category",
+      "url": "/hotel-x/reference/objects/category",
       "description": "",
       "isDeprecated": false,
       "args": null
@@ -14,7 +14,7 @@
     {
       "typeString": "String!",
       "name": "cursor",
-      "url": "/hotelx/reference/scalars/string",
+      "url": "/hotel-x/reference/scalars/string",
       "description": "",
       "isDeprecated": false,
       "args": null
@@ -24,7 +24,7 @@
     {
       "name": "CategoryConnection",
       "description": "CategoryList definition",
-      "url": "/hotelx/reference/objects/categoryconnection"
+      "url": "/hotel-x/reference/objects/categoryconnection"
     }
   ],
   "enumValues": null,

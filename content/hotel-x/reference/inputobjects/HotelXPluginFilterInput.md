@@ -6,14 +6,14 @@
     {
       "typeString": "[HotelXFilterPluginTypeInput!]",
       "name": "includes",
-      "url": "/hotelx/reference/inputobjects/hotelxfilterplugintypeinput",
+      "url": "/hotel-x/reference/inputobjects/hotelxfilterplugintypeinput",
       "description": "Plugins to include (only these plugins will be executed)",
       "args": null
     },
     {
       "typeString": "[HotelXFilterPluginTypeInput!]",
       "name": "excludes",
-      "url": "/hotelx/reference/inputobjects/hotelxfilterplugintypeinput",
+      "url": "/hotel-x/reference/inputobjects/hotelxfilterplugintypeinput",
       "description": "Plugins to exclude",
       "args": null
     }
@@ -22,12 +22,12 @@
     {
       "name": "HotelXFilterSearchInput",
       "description": "",
-      "url": "/hotelx/reference/inputobjects/hotelxfiltersearchinput"
+      "url": "/hotel-x/reference/inputobjects/hotelxfiltersearchinput"
     },
     {
       "name": "HotelXFilterInput",
       "description": "",
-      "url": "/hotelx/reference/inputobjects/hotelxfilterinput"
+      "url": "/hotel-x/reference/inputobjects/hotelxfilterinput"
     }
   ],
   "enumValues": null,

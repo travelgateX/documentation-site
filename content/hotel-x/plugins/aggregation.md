@@ -7,7 +7,7 @@ weight = 3
 alwaysopen = false
 +++
 
-**Aggregation plugins** extends [HotelX](/hotelx/) allowing filtering `Supplier` options and responses using different business rules.
+**Aggregation plugins** extends [HotelX](/hotel-x/) allowing filtering `Supplier` options and responses using different business rules.
 
 ### KeyFilter
 
@@ -37,7 +37,7 @@ It's based on [SQL Aggregate Functions](https://www.postgresql.org/docs/current/
 
 ### Processor
 
-It's implemented as a [Processor plugin](/hotelx/plugins/processor)
+It's implemented as a [Processor plugin](/hotel-x/plugins/processor)
 
 ### Execution example
 

@@ -7,12 +7,12 @@
     {
       "name": "AddOns",
       "description": "Additional information about the option",
-      "url": "/hotelx/reference/objects/addons"
+      "url": "/hotel-x/reference/objects/addons"
     },
     {
       "name": "AddOn",
       "description": "Additional information about the option",
-      "url": "/hotelx/reference/objects/addon"
+      "url": "/hotel-x/reference/objects/addon"
     }
   ],
   "enumValues": null,

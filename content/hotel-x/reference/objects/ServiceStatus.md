@@ -6,7 +6,7 @@
     {
       "typeString": "String",
       "name": "code",
-      "url": "/hotelx/reference/scalars/string",
+      "url": "/hotel-x/reference/scalars/string",
       "description": "Status code",
       "isDeprecated": false,
       "args": null
@@ -14,7 +14,7 @@
     {
       "typeString": "String",
       "name": "type",
-      "url": "/hotelx/reference/scalars/string",
+      "url": "/hotel-x/reference/scalars/string",
       "description": "Status type",
       "isDeprecated": false,
       "args": null
@@ -22,7 +22,7 @@
     {
       "typeString": "String",
       "name": "description",
-      "url": "/hotelx/reference/scalars/string",
+      "url": "/hotel-x/reference/scalars/string",
       "description": "Status description",
       "isDeprecated": false,
       "args": null
@@ -32,7 +32,7 @@
     {
       "name": "HotelXQuery",
       "description": "",
-      "url": "/hotelx/reference/objects/hotelxquery"
+      "url": "/hotel-x/reference/objects/hotelxquery"
     }
   ],
   "enumValues": null,

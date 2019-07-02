@@ -6,70 +6,70 @@
     {
       "typeString": "ID!",
       "name": "clientName",
-      "url": "/hotelx/reference/scalars/id",
+      "url": "/hotel-x/reference/scalars/id",
       "description": "Indicates the client's name that do the transaction.",
       "args": null
     },
     {
       "typeString": "String!",
       "name": "context",
-      "url": "/hotelx/reference/scalars/string",
+      "url": "/hotel-x/reference/scalars/string",
       "description": "Indicates the context of the I/O codes (hotel, board, room and rates)",
       "args": null
     },
     {
       "typeString": "Language!",
       "name": "language",
-      "url": "/hotelx/reference/scalars/language",
+      "url": "/hotel-x/reference/scalars/language",
       "description": "Language to be used in request.",
       "args": null
     },
     {
       "typeString": "Currency!",
       "name": "currency",
-      "url": "/hotelx/reference/scalars/currency",
+      "url": "/hotel-x/reference/scalars/currency",
       "description": "Currency requested if supported by supplier.",
       "args": null
     },
     {
       "typeString": "Country!",
       "name": "nationality",
-      "url": "/hotelx/reference/scalars/country",
+      "url": "/hotel-x/reference/scalars/country",
       "description": "Nationality of the guest (use ISO3166_1_alfa_2).",
       "args": null
     },
     {
       "typeString": "String!",
       "name": "market",
-      "url": "/hotelx/reference/scalars/string",
+      "url": "/hotel-x/reference/scalars/string",
       "description": "Targeted zone, country or point of sale to be used in request.",
       "args": null
     },
     {
       "typeString": "TimeoutInput!",
       "name": "timeout",
-      "url": "/hotelx/reference/inputobjects/timeoutinput",
+      "url": "/hotel-x/reference/inputobjects/timeoutinput",
       "description": "Group of timeouts to be used in the differents services",
       "args": null
     },
     {
       "typeString": "HotelXBusinessRulesInput!",
       "name": "businessRules",
-      "url": "/hotelx/reference/inputobjects/hotelxbusinessrulesinput",
+      "url": "/hotel-x/reference/inputobjects/hotelxbusinessrulesinput",
       "description": "Business rules.",
       "args": null
     },
     {
       "typeString": "[ID!]",
       "name": "defaultAccesses",
-      "url": "/hotelx/reference/scalars/id",
+      "url": "/hotel-x/reference/scalars/id",
       "description": "Indicates the default accesses that will added to access list in the Query",
       "args": null
     },
     {
       "typeString": "[HotelXDefaultPluginStepInput!]",
       "name": "defaultPlugins",
-      "url": "/hotelx/reference/inputobjects/hotelxdefaultpluginstepinput",
+      "url": "/hotel-x/reference/inputobjects/hotelxdefaultpluginstepinput",
       "description": "Indica",
       "args": null
     }

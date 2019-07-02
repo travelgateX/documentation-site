@@ -18,11 +18,11 @@ CommissionX is a plugin that defines the contracted / expected commission in cas
 
 ### Files needed to use this plugin
 
-* [**Sequential Commission file format**](/hotelx/plugins/format-files/commission/) (**Mandatory**). If the columns **chainCodes,destinationCodes** are informed then it is mandatory to upload group file.
+* [**Sequential Commission file format**](/hotel-x/plugins/format-files/commission/) (**Mandatory**). If the columns **chainCodes,destinationCodes** are informed then it is mandatory to upload group file.
 
-* [**Group file format**](/hotelx/plugins/format-files/group/) (**Optional**)
+* [**Group file format**](/hotel-x/plugins/format-files/group/) (**Optional**)
 
-    * This file will be necessary in case you want to apply rules depending on a grouping of codes that depend on a [**context**](/hotelx/concepts/accesses-supplier-context/#context). For this case, it is necessary that you pass with the [**entity**](/hotelx/plugins/entity_table_file/).
+    * This file will be necessary in case you want to apply rules depending on a grouping of codes that depend on a [**context**](/hotel-x/concepts/accesses-supplier-context/#context). For this case, it is necessary that you pass with the [**entity**](/hotel-x/plugins/entity_table_file/).
 
 **Observation**
 
@@ -36,8 +36,8 @@ We read sequentially the commission file if the columns **chainCodes,destination
 
 |Entity | chainCodes| destinationCodes| hotelCodes |
 |---------|---|---|---|
-|[hotel](/hotelx/plugins/entity_table_file#hotel)| Yes | Yes | No |
-|[destination](/hotelx/plugins/entity_table_file#destination)| Yes | No | Yes |
+|[hotel](/hotel-x/plugins/entity_table_file#hotel)| Yes | Yes | No |
+|[destination](/hotel-x/plugins/entity_table_file#destination)| Yes | No | Yes |
 
 ### Execution example
 if you want index by client tokens it is necessary to specify the client token as shown below, if the token is not specified, by default, the system will apply those rules that do not have client tokens.

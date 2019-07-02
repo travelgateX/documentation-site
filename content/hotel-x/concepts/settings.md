@@ -35,36 +35,36 @@ Settings can be applied to the following operations:
 
 ## Queries
 
-These queries have the same settings configuration [**Click here to see configuration**](/hotelx/reference/inputobjects/hotelsettingsinput/)
+These queries have the same settings configuration [**Click here to see configuration**](/hotel-x/reference/inputobjects/hotelsettingsinput/)
 
 * **Search**
 
-    * [Search setting example](/hotelx/quickstart#search)
+    * [Search setting example](/hotel-x/quickstart#search)
 
 * **Quote**
 
-    * [Quote setting example](/hotelx/quickstart#quote)
+    * [Quote setting example](/hotel-x/quickstart#quote)
 
 * **Booking List**
 
-    * [Booking List setting example](/hotelx/quickstart#bookinglist)
+    * [Booking List setting example](/hotel-x/quickstart#bookinglist)
 
 ## Mutations
 
-These mutations have the same settings configuration [**Click here to see configuration**](/hotelx/reference/inputobjects/hotelsettingsinput/)
+These mutations have the same settings configuration [**Click here to see configuration**](/hotel-x/reference/inputobjects/hotelsettingsinput/)
 
 * **Book**
 
-    * Example : [Book setting example](/hotelx/quickstart#book)
+    * Example : [Book setting example](/hotel-x/quickstart#book)
 
 * **Cancel**
 
-    * Example : [Quote setting example](/hotelx/quickstart#quote)
+    * Example : [Quote setting example](/hotel-x/quickstart#quote)
     
 Should you need to modify any fields of the database Settings, please contact with our support team.
 Please find an example of each type of the settings above: 
 
-[HotelX Settings](/hotelx/reference/inputobjects/hotelsettingsinput/)
+[HotelX Settings](/hotel-x/reference/inputobjects/hotelsettingsinput/)
 Query/Mutation settings
 ```
 "settings": {
@@ -93,7 +93,7 @@ Query/Mutation settings
 }
 ```
 
-[Base Settings](/hotelx/reference/inputobjects/settingsbaseinput/)
+[Base Settings](/hotel-x/reference/inputobjects/settingsbaseinput/)
 Access or supplier settings (from Query or database)
 ```
 "settings": {

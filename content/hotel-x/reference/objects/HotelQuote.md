@@ -6,14 +6,14 @@
     {
       "typeString": "StatsRequest",
       "name": "stats",
-      "url": "/hotelx/reference/objects/statsrequest",
+      "url": "/hotel-x/reference/objects/statsrequest",
       "description": "Application stats in string format",
       "isDeprecated": false,
       "args": [
         {
           "typeString": "String!",
           "name": "token",
-          "url": "/hotelx/reference/scalars/string",
+          "url": "/hotel-x/reference/scalars/string",
           "description": ""
         }
       ]
@@ -21,7 +21,7 @@
     {
       "typeString": "AuditData",
       "name": "auditData",
-      "url": "/hotelx/reference/objects/auditdata",
+      "url": "/hotel-x/reference/objects/auditdata",
       "description": "Data sent and received in the supplier's native format.",
       "isDeprecated": false,
       "args": null
@@ -29,7 +29,7 @@
     {
       "typeString": "HotelOptionQuote",
       "name": "optionQuote",
-      "url": "/hotelx/reference/objects/hoteloptionquote",
+      "url": "/hotel-x/reference/objects/hoteloptionquote",
       "description": "Information about quote.",
       "isDeprecated": false,
       "args": null
@@ -37,7 +37,7 @@
     {
       "typeString": "[Error!]",
       "name": "errors",
-      "url": "/hotelx/reference/objects/error",
+      "url": "/hotel-x/reference/objects/error",
       "description": "Errors that abort services",
       "isDeprecated": false,
       "args": null
@@ -45,7 +45,7 @@
     {
       "typeString": "[Warning!]",
       "name": "warnings",
-      "url": "/hotelx/reference/objects/warning",
+      "url": "/hotel-x/reference/objects/warning",
       "description": "Potentially harmful situations or errors, but ones that will not forcibly abort the service",
       "isDeprecated": false,
       "args": null
@@ -55,7 +55,7 @@
     {
       "name": "HotelXQuery",
       "description": "",
-      "url": "/hotelx/reference/objects/hotelxquery"
+      "url": "/hotel-x/reference/objects/hotelxquery"
     }
   ],
   "enumValues": null,

@@ -7,7 +7,7 @@
     {
       "name": "HotelCriteriaBookingInput",
       "description": "Criteria of book contains basic information to find a book or books.",
-      "url": "/hotelx/reference/inputobjects/hotelcriteriabookinginput"
+      "url": "/hotel-x/reference/inputobjects/hotelcriteriabookinginput"
     }
   ],
   "enumValues": [

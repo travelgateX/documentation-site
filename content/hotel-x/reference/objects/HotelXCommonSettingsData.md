@@ -6,7 +6,7 @@
     {
       "typeString": "Currency",
       "name": "currency",
-      "url": "/hotelx/reference/scalars/currency",
+      "url": "/hotel-x/reference/scalars/currency",
       "description": "",
       "isDeprecated": false,
       "args": null
@@ -14,7 +14,7 @@
     {
       "typeString": "BusinessRules",
       "name": "businessRules",
-      "url": "/hotelx/reference/objects/businessrules",
+      "url": "/hotel-x/reference/objects/businessrules",
       "description": "",
       "isDeprecated": false,
       "args": null
@@ -22,7 +22,7 @@
     {
       "typeString": "Timeout",
       "name": "timeout",
-      "url": "/hotelx/reference/objects/timeout",
+      "url": "/hotel-x/reference/objects/timeout",
       "description": "",
       "isDeprecated": false,
       "args": null
@@ -30,7 +30,7 @@
     {
       "typeString": "HotelXAudit",
       "name": "audit",
-      "url": "/hotelx/reference/objects/hotelxaudit",
+      "url": "/hotel-x/reference/objects/hotelxaudit",
       "description": "",
       "isDeprecated": false,
       "args": null
@@ -40,7 +40,7 @@
     {
       "name": "HotelXCommonSettings",
       "description": "",
-      "url": "/hotelx/reference/objects/hotelxcommonsettings"
+      "url": "/hotel-x/reference/objects/hotelxcommonsettings"
     }
   ],
   "enumValues": null,

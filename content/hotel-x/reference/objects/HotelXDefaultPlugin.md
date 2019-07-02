@@ -6,7 +6,7 @@
     {
       "typeString": "PluginStepType!",
       "name": "step",
-      "url": "/hotelx/reference/enums/pluginsteptype",
+      "url": "/hotel-x/reference/enums/pluginsteptype",
       "description": "",
       "isDeprecated": false,
       "args": null
@@ -14,7 +14,7 @@
     {
       "typeString": "PluginType!",
       "name": "type",
-      "url": "/hotelx/reference/enums/plugintype",
+      "url": "/hotel-x/reference/enums/plugintype",
       "description": "",
       "isDeprecated": false,
       "args": null
@@ -22,7 +22,7 @@
     {
       "typeString": "String!",
       "name": "name",
-      "url": "/hotelx/reference/scalars/string",
+      "url": "/hotel-x/reference/scalars/string",
       "description": "",
       "isDeprecated": false,
       "args": null
@@ -30,7 +30,7 @@
     {
       "typeString": "[HotelXParameter!]",
       "name": "run",
-      "url": "/hotelx/reference/objects/hotelxparameter",
+      "url": "/hotel-x/reference/objects/hotelxparameter",
       "description": "",
       "isDeprecated": false,
       "args": null
@@ -38,7 +38,7 @@
     {
       "typeString": "[HotelXParameter!]",
       "name": "init",
-      "url": "/hotelx/reference/objects/hotelxparameter",
+      "url": "/hotel-x/reference/objects/hotelxparameter",
       "description": "",
       "isDeprecated": false,
       "args": null

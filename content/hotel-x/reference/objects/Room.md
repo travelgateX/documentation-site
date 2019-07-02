@@ -6,7 +6,7 @@
     {
       "typeString": "Int!",
       "name": "occupancyRefId",
-      "url": "/hotelx/reference/scalars/int",
+      "url": "/hotel-x/reference/scalars/int",
       "description": "ID reference to the occupancy",
       "isDeprecated": false,
       "args": null
@@ -14,7 +14,7 @@
     {
       "typeString": "String!",
       "name": "code",
-      "url": "/hotelx/reference/scalars/string",
+      "url": "/hotel-x/reference/scalars/string",
       "description": "Indicates the room code",
       "isDeprecated": false,
       "args": null
@@ -22,7 +22,7 @@
     {
       "typeString": "String",
       "name": "description",
-      "url": "/hotelx/reference/scalars/string",
+      "url": "/hotel-x/reference/scalars/string",
       "description": "Description about the room",
       "isDeprecated": false,
       "args": null
@@ -30,7 +30,7 @@
     {
       "typeString": "Boolean",
       "name": "refundable",
-      "url": "/hotelx/reference/scalars/boolean",
+      "url": "/hotel-x/reference/scalars/boolean",
       "description": "Identifies if the room is refundable or not.",
       "isDeprecated": false,
       "args": null
@@ -38,7 +38,7 @@
     {
       "typeString": "Int",
       "name": "units",
-      "url": "/hotelx/reference/scalars/int",
+      "url": "/hotel-x/reference/scalars/int",
       "description": "Number of rooms available with the same type.",
       "isDeprecated": false,
       "args": null
@@ -46,7 +46,7 @@
     {
       "typeString": "RoomPrice!",
       "name": "roomPrice",
-      "url": "/hotelx/reference/objects/roomprice",
+      "url": "/hotel-x/reference/objects/roomprice",
       "description": "Specifies the room price.",
       "isDeprecated": false,
       "args": null
@@ -54,7 +54,7 @@
     {
       "typeString": "[Bed!]",
       "name": "beds",
-      "url": "/hotelx/reference/objects/bed",
+      "url": "/hotel-x/reference/objects/bed",
       "description": "List of beds.",
       "isDeprecated": false,
       "args": null
@@ -62,7 +62,7 @@
     {
       "typeString": "[RatePlan!]",
       "name": "ratePlans",
-      "url": "/hotelx/reference/objects/rateplan",
+      "url": "/hotel-x/reference/objects/rateplan",
       "description": "Daily break downs rate plan.",
       "isDeprecated": false,
       "args": null
@@ -70,7 +70,7 @@
     {
       "typeString": "[Promotion!]",
       "name": "promotions",
-      "url": "/hotelx/reference/objects/promotion",
+      "url": "/hotel-x/reference/objects/promotion",
       "description": "Daily break downs promotions.",
       "isDeprecated": false,
       "args": null

@@ -7,32 +7,32 @@
     {
       "name": "HotelCriteriaSearchInput",
       "description": "Search criteria contains destination, travel dates and the number of pax in each room.\nYou must preload the other fields in our system by complete the fields absents.",
-      "url": "/hotelx/reference/inputobjects/hotelcriteriasearchinput"
+      "url": "/hotel-x/reference/inputobjects/hotelcriteriasearchinput"
     },
     {
       "name": "HotelXDefaultSettingsData",
       "description": "",
-      "url": "/hotelx/reference/objects/hotelxdefaultsettingsdata"
+      "url": "/hotel-x/reference/objects/hotelxdefaultsettingsdata"
     },
     {
       "name": "Location",
       "description": "Indicates the location of the hotel",
-      "url": "/hotelx/reference/objects/location"
+      "url": "/hotel-x/reference/objects/location"
     },
     {
       "name": "GeonameData",
       "description": "Geoname data, which contain a reference to his parent location",
-      "url": "/hotelx/reference/objects/geonamedata"
+      "url": "/hotel-x/reference/objects/geonamedata"
     },
     {
       "name": "CriteriaSearch",
       "description": "Search criteria contains destination, travel dates and the number of pax in each room.",
-      "url": "/hotelx/reference/objects/criteriasearch"
+      "url": "/hotel-x/reference/objects/criteriasearch"
     },
     {
       "name": "HotelXDefaultSettingsDataInput",
       "description": "",
-      "url": "/hotelx/reference/inputobjects/hotelxdefaultsettingsdatainput"
+      "url": "/hotel-x/reference/inputobjects/hotelxdefaultsettingsdatainput"
     }
   ],
   "enumValues": null,

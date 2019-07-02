@@ -6,14 +6,14 @@
     {
       "typeString": "String!",
       "name": "key",
-      "url": "/hotelx/reference/scalars/string",
+      "url": "/hotel-x/reference/scalars/string",
       "description": "Contains the keyword/Id to identify a parameter.\nThis information is mandatory.",
       "args": null
     },
     {
       "typeString": "String!",
       "name": "value",
-      "url": "/hotelx/reference/scalars/string",
+      "url": "/hotel-x/reference/scalars/string",
       "description": "Contains the parameter values.\nThis information is mandatory.",
       "args": null
     }

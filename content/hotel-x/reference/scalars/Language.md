@@ -7,47 +7,47 @@
     {
       "name": "HotelCriteriaSearchInput",
       "description": "Search criteria contains destination, travel dates and the number of pax in each room.\nYou must preload the other fields in our system by complete the fields absents.",
-      "url": "/hotelx/reference/inputobjects/hotelcriteriasearchinput"
+      "url": "/hotel-x/reference/inputobjects/hotelcriteriasearchinput"
     },
     {
       "name": "HotelCriteriaQuoteInput",
       "description": "The quote criteria contains the option reference id, block and language.",
-      "url": "/hotelx/reference/inputobjects/hotelcriteriaquoteinput"
+      "url": "/hotel-x/reference/inputobjects/hotelcriteriaquoteinput"
     },
     {
       "name": "HotelCriteriaBookingInput",
       "description": "Criteria of book contains basic information to find a book or books.",
-      "url": "/hotelx/reference/inputobjects/hotelcriteriabookinginput"
+      "url": "/hotel-x/reference/inputobjects/hotelcriteriabookinginput"
     },
     {
       "name": "HotelXDefaultSettingsData",
       "description": "",
-      "url": "/hotelx/reference/objects/hotelxdefaultsettingsdata"
+      "url": "/hotel-x/reference/objects/hotelxdefaultsettingsdata"
     },
     {
       "name": "Text",
       "description": "",
-      "url": "/hotelx/reference/objects/text"
+      "url": "/hotel-x/reference/objects/text"
     },
     {
       "name": "CriteriaSearch",
       "description": "Search criteria contains destination, travel dates and the number of pax in each room.",
-      "url": "/hotelx/reference/objects/criteriasearch"
+      "url": "/hotel-x/reference/objects/criteriasearch"
     },
     {
       "name": "HotelXDefaultSettingsDataInput",
       "description": "",
-      "url": "/hotelx/reference/inputobjects/hotelxdefaultsettingsdatainput"
+      "url": "/hotel-x/reference/inputobjects/hotelxdefaultsettingsdatainput"
     },
     {
       "name": "HotelBookInput",
       "description": "Criteria of book.",
-      "url": "/hotelx/reference/inputobjects/hotelbookinput"
+      "url": "/hotel-x/reference/inputobjects/hotelbookinput"
     },
     {
       "name": "HotelCancelInput",
       "description": "Cancellation Criteria.",
-      "url": "/hotelx/reference/inputobjects/hotelcancelinput"
+      "url": "/hotel-x/reference/inputobjects/hotelcancelinput"
     }
   ],
   "enumValues": null,

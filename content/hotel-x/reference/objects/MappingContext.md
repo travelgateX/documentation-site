@@ -6,7 +6,7 @@
     {
       "typeString": "String!",
       "name": "code",
-      "url": "/hotelx/reference/scalars/string",
+      "url": "/hotel-x/reference/scalars/string",
       "description": "Code of the context",
       "isDeprecated": false,
       "args": null
@@ -14,14 +14,14 @@
     {
       "typeString": "[MappingEntity!]",
       "name": "hotels",
-      "url": "/hotelx/reference/objects/mappingentity",
+      "url": "/hotel-x/reference/objects/mappingentity",
       "description": "Mapping of hotels, you can filter by hotel code.",
       "isDeprecated": false,
       "args": [
         {
           "typeString": "[String!]",
           "name": "codes",
-          "url": "/hotelx/reference/scalars/string",
+          "url": "/hotel-x/reference/scalars/string",
           "description": ""
         }
       ]
@@ -29,14 +29,14 @@
     {
       "typeString": "[MappingEntity!]",
       "name": "rooms",
-      "url": "/hotelx/reference/objects/mappingentity",
+      "url": "/hotel-x/reference/objects/mappingentity",
       "description": "Mapping of rooms, you can filter by room code.",
       "isDeprecated": false,
       "args": [
         {
           "typeString": "[String!]",
           "name": "codes",
-          "url": "/hotelx/reference/scalars/string",
+          "url": "/hotel-x/reference/scalars/string",
           "description": ""
         }
       ]
@@ -44,14 +44,14 @@
     {
       "typeString": "[MappingEntity!]",
       "name": "boards",
-      "url": "/hotelx/reference/objects/mappingentity",
+      "url": "/hotel-x/reference/objects/mappingentity",
       "description": "Mapping of boards, you can filter by board code.",
       "isDeprecated": false,
       "args": [
         {
           "typeString": "[String!]",
           "name": "codes",
-          "url": "/hotelx/reference/scalars/string",
+          "url": "/hotel-x/reference/scalars/string",
           "description": ""
         }
       ]

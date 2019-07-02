@@ -47,8 +47,8 @@ Configuration used when interacting with a `Supplier`, which includes:
 
 * Room Codes 
 
-With our built-in solution, you are able to choose the context that you wish to use when requesting a HotelX operation. For example, if you are a `Buyer`, you can [map](/hotelx/plugins/mappings) your context to your Suppliers' contexts.
+With our built-in solution, you are able to choose the context that you wish to use when requesting a HotelX operation. For example, if you are a `Buyer`, you can [map](/hotel-x/plugins/mappings) your context to your Suppliers' contexts.
 
 Should you be using the aggregator mode, we recommend that you use the widest `Context` possible (the one that includes more portfolio) or that you use your own context - in doing so, all supplier mappings will be solved/unified.
 
-{{% alert theme="info" %}}For more information on setting contexts, check out our <a href="/hotelx/plugins/mapping/">**Plugin guide on Mapping**</a>.{{% /alert %}}
+{{% alert theme="info" %}}For more information on setting contexts, check out our <a href="/hotel-x/plugins/mapping/">**Plugin guide on Mapping**</a>.{{% /alert %}}

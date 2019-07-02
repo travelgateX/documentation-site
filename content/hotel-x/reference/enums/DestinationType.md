@@ -7,12 +7,12 @@
     {
       "name": "DestinationData",
       "description": "Information about destinantion",
-      "url": "/hotelx/reference/objects/destinationdata"
+      "url": "/hotel-x/reference/objects/destinationdata"
     },
     {
       "name": "GeonameData",
       "description": "Geoname data, which contain a reference to his parent location",
-      "url": "/hotelx/reference/objects/geonamedata"
+      "url": "/hotel-x/reference/objects/geonamedata"
     }
   ],
   "enumValues": [

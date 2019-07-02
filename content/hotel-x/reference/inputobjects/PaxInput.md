@@ -6,7 +6,7 @@
     {
       "typeString": "Int!",
       "name": "age",
-      "url": "/hotelx/reference/scalars/int",
+      "url": "/hotel-x/reference/scalars/int",
       "description": "Pax age.",
       "args": null
     }

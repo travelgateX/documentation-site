@@ -6,7 +6,7 @@
     {
       "typeString": "[HotelRuntimeParameter!]!",
       "name": "hotelRuntimeParameters",
-      "url": "/hotelx/reference/objects/hotelruntimeparameter",
+      "url": "/hotel-x/reference/objects/hotelruntimeparameter",
       "description": "List of parameters object",
       "isDeprecated": false,
       "args": null
@@ -16,7 +16,7 @@
     {
       "name": "HotelRuntimeConfiguration",
       "description": "",
-      "url": "/hotelx/reference/objects/hotelruntimeconfiguration"
+      "url": "/hotel-x/reference/objects/hotelruntimeconfiguration"
     }
   ],
   "enumValues": null,

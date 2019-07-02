@@ -6,7 +6,7 @@
     {
       "typeString": "ID!",
       "name": "code",
-      "url": "/hotelx/reference/scalars/id",
+      "url": "/hotel-x/reference/scalars/id",
       "description": "",
       "isDeprecated": false,
       "args": null
@@ -14,7 +14,7 @@
     {
       "typeString": "Boolean!",
       "name": "isActive",
-      "url": "/hotelx/reference/scalars/boolean",
+      "url": "/hotel-x/reference/scalars/boolean",
       "description": "",
       "isDeprecated": false,
       "args": null
@@ -24,7 +24,7 @@
     {
       "name": "HotelXUpdateStatus",
       "description": "",
-      "url": "/hotelx/reference/objects/hotelxupdatestatus"
+      "url": "/hotel-x/reference/objects/hotelxupdatestatus"
     }
   ],
   "enumValues": null,

@@ -6,7 +6,7 @@
     {
       "typeString": "ID!",
       "name": "code",
-      "url": "/hotelx/reference/scalars/id",
+      "url": "/hotel-x/reference/scalars/id",
       "description": "Airport ID",
       "isDeprecated": false,
       "args": null
@@ -14,7 +14,7 @@
     {
       "typeString": "AirportData",
       "name": "airportData",
-      "url": "/hotelx/reference/objects/airportdata",
+      "url": "/hotel-x/reference/objects/airportdata",
       "description": "Airport data",
       "isDeprecated": false,
       "args": null
@@ -22,14 +22,14 @@
     {
       "typeString": "[AdviseMessage!]",
       "name": "adviseMessage",
-      "url": "/hotelx/reference/objects/advisemessage",
+      "url": "/hotel-x/reference/objects/advisemessage",
       "description": "List of messages",
       "isDeprecated": false,
       "args": [
         {
           "typeString": "[AdviseMessageLevel]",
           "name": "level",
-          "url": "/hotelx/reference/enums/advisemessagelevel",
+          "url": "/hotel-x/reference/enums/advisemessagelevel",
           "description": ""
         }
       ]
@@ -37,7 +37,7 @@
     {
       "typeString": "DateTime!",
       "name": "createdAt",
-      "url": "/hotelx/reference/scalars/datetime",
+      "url": "/hotel-x/reference/scalars/datetime",
       "description": "Date created",
       "isDeprecated": false,
       "args": null
@@ -45,7 +45,7 @@
     {
       "typeString": "DateTime!",
       "name": "updatedAt",
-      "url": "/hotelx/reference/scalars/datetime",
+      "url": "/hotel-x/reference/scalars/datetime",
       "description": "Date updated",
       "isDeprecated": false,
       "args": null

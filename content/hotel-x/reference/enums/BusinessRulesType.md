@@ -7,17 +7,17 @@
     {
       "name": "BusinessRules",
       "description": "List of business rules for filtering options based on your interests.",
-      "url": "/hotelx/reference/objects/businessrules"
+      "url": "/hotel-x/reference/objects/businessrules"
     },
     {
       "name": "BusinessRulesInput",
       "description": "List of business rules to use as filter on the options.",
-      "url": "/hotelx/reference/inputobjects/businessrulesinput"
+      "url": "/hotel-x/reference/inputobjects/businessrulesinput"
     },
     {
       "name": "HotelXBusinessRulesInput",
       "description": "List of business rules to use as filter on the options.",
-      "url": "/hotelx/reference/inputobjects/hotelxbusinessrulesinput"
+      "url": "/hotel-x/reference/inputobjects/hotelxbusinessrulesinput"
     }
   ],
   "enumValues": [

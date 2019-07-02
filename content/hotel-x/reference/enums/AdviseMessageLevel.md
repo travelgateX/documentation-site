@@ -7,7 +7,7 @@
     {
       "name": "AdviseMessage",
       "description": "List of advise messages.",
-      "url": "/hotelx/reference/objects/advisemessage"
+      "url": "/hotel-x/reference/objects/advisemessage"
     }
   ],
   "enumValues": [

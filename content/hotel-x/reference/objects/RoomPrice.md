@@ -6,7 +6,7 @@
     {
       "typeString": "Price!",
       "name": "price",
-      "url": "/hotelx/reference/objects/price",
+      "url": "/hotel-x/reference/objects/price",
       "description": "Total price for all days.",
       "isDeprecated": false,
       "args": null
@@ -14,7 +14,7 @@
     {
       "typeString": "[PriceBreakdown!]",
       "name": "breakdown",
-      "url": "/hotelx/reference/objects/pricebreakdown",
+      "url": "/hotel-x/reference/objects/pricebreakdown",
       "description": "Daily break downs price.",
       "isDeprecated": false,
       "args": null
@@ -24,7 +24,7 @@
     {
       "name": "Room",
       "description": "Contains the room information of the option returned.",
-      "url": "/hotelx/reference/objects/room"
+      "url": "/hotel-x/reference/objects/room"
     }
   ],
   "enumValues": null,

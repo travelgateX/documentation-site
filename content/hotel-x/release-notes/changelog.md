@@ -27,8 +27,8 @@ Easily accessible log of notable changes to HotelX API
 ## 2019-06-19
 {{% release-notes-container type="a"%}}
 - New field in book, cancel and booking respone. booking/billingSupplierCode.
-- New blacklist file format. The values has changed to allow new features. You can see the documentation [here](https://docs.travelgatex.com/hotelx/plugins/black-list/). 
-- New field for the commision file. Now you can put clienToken for each rule. You can see the documentation [here](https://docs.travelgatex.com/hotelx/plugins/net-price/). 
+- New blacklist file format. The values has changed to allow new features. You can see the documentation [here](https://docs.travelgatex.com/hotel-x/plugins/black-list/). 
+- New field for the commision file. Now you can put clienToken for each rule. You can see the documentation [here](https://docs.travelgatex.com/hotel-x/plugins/net-price/). 
 - Internal system improvements. 
 {{% /release-notes-container %}}
 
@@ -82,7 +82,7 @@ Easily accessible log of notable changes to HotelX API
 
 ## 2019-02-26
 {{% release-notes-container type="a"%}}
-- New plugin, add parameter. You can see the documentation [here](https://docs.travelgatex.com/hotelx/plugins/add_parameterx/).
+- New plugin, add parameter. You can see the documentation [here](https://docs.travelgatex.com/hotel-x/plugins/add_parameterx/).
 {{% /release-notes-container %}}
 
 {{% release-notes-container type="f"%}}
@@ -215,7 +215,7 @@ Expire date of payment card in Book now accept the following format: month: 1 di
 
 ## 2018-09-03
 {{% release-notes-container type="f"%}}
-- Fix Exchange node empty if not CurrencyX (see doc in https://docs.travelgatex.com/hotelx/plugins/converter/)
+- Fix Exchange node empty if not CurrencyX (see doc in https://docs.travelgatex.com/hotel-x/plugins/converter/)
 - Fix bugs in Quote
 {{% /release-notes-container %}}
 {{% release-notes-container type="c"%}}
@@ -224,7 +224,7 @@ Expire date of payment card in Book now accept the following format: month: 1 di
 
 ## 2018-08-22
 {{% release-notes-container type="a"%}}
-- Settings heritage. [Guide](https://docs.travelgatex.com/hotelx/concepts/settings/)
+- Settings heritage. [Guide](https://docs.travelgatex.com/hotel-x/concepts/settings/)
 - Plugins filter
 {{% /release-notes-container %}}
 {{% release-notes-container type="f"%}}
@@ -240,7 +240,7 @@ Expire date of payment card in Book now accept the following format: month: 1 di
 ## 2018-07-24
 
 {{% release-notes-container type="a"%}}
-- New plugin, safety margin. You can see the documentation [here](/hotelx/plugins/safety_margin/).
+- New plugin, safety margin. You can see the documentation [here](/hotel-x/plugins/safety_margin/).
 {{% /release-notes-container %}}
 
 ## 2018-07-18
@@ -254,7 +254,7 @@ Expire date of payment card in Book now accept the following format: month: 1 di
 ## 2018-07-16{#20180716}
 
 {{% release-notes-container type="f"%}}
-- HotelX concepts content [examples](/hotelx/concepts/content/).
+- HotelX concepts content [examples](/hotel-x/concepts/content/).
 {{% /release-notes-container %}}
 
 ## 2018-07-11

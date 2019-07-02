@@ -6,7 +6,7 @@
     {
       "typeString": "TagRuntimeType!",
       "name": "tagRuntime",
-      "url": "/hotelx/reference/enums/tagruntimetype",
+      "url": "/hotel-x/reference/enums/tagruntimetype",
       "description": "",
       "isDeprecated": false,
       "args": null
@@ -14,7 +14,7 @@
     {
       "typeString": "String!",
       "name": "providerTagName",
-      "url": "/hotelx/reference/scalars/string",
+      "url": "/hotel-x/reference/scalars/string",
       "description": "",
       "isDeprecated": false,
       "args": null
@@ -22,7 +22,7 @@
     {
       "typeString": "Boolean!",
       "name": "show",
-      "url": "/hotelx/reference/scalars/boolean",
+      "url": "/hotel-x/reference/scalars/boolean",
       "description": "",
       "isDeprecated": false,
       "args": null
@@ -30,7 +30,7 @@
     {
       "typeString": "String",
       "name": "pattern",
-      "url": "/hotelx/reference/scalars/string",
+      "url": "/hotel-x/reference/scalars/string",
       "description": "",
       "isDeprecated": false,
       "args": null
@@ -38,7 +38,7 @@
     {
       "typeString": "String!",
       "name": "description",
-      "url": "/hotelx/reference/scalars/string",
+      "url": "/hotel-x/reference/scalars/string",
       "description": "",
       "isDeprecated": false,
       "args": null
@@ -46,7 +46,7 @@
     {
       "typeString": "MetadataType!",
       "name": "type",
-      "url": "/hotelx/reference/enums/metadatatype",
+      "url": "/hotel-x/reference/enums/metadatatype",
       "description": "",
       "isDeprecated": false,
       "args": null
@@ -54,7 +54,7 @@
     {
       "typeString": "String",
       "name": "key",
-      "url": "/hotelx/reference/scalars/string",
+      "url": "/hotel-x/reference/scalars/string",
       "description": "",
       "isDeprecated": false,
       "args": null
@@ -62,7 +62,7 @@
     {
       "typeString": "String",
       "name": "defaultValue",
-      "url": "/hotelx/reference/scalars/string",
+      "url": "/hotel-x/reference/scalars/string",
       "description": "",
       "isDeprecated": false,
       "args": null
@@ -70,7 +70,7 @@
     {
       "typeString": "String",
       "name": "exampleValue",
-      "url": "/hotelx/reference/scalars/string",
+      "url": "/hotel-x/reference/scalars/string",
       "description": "",
       "isDeprecated": false,
       "args": null
@@ -78,7 +78,7 @@
     {
       "typeString": "[String]!",
       "name": "possibleValues",
-      "url": "/hotelx/reference/scalars/string",
+      "url": "/hotel-x/reference/scalars/string",
       "description": "",
       "isDeprecated": false,
       "args": null

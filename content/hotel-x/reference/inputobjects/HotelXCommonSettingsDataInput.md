@@ -6,28 +6,28 @@
     {
       "typeString": "Currency!",
       "name": "currency",
-      "url": "/hotelx/reference/scalars/currency",
+      "url": "/hotel-x/reference/scalars/currency",
       "description": "",
       "args": null
     },
     {
       "typeString": "HotelXBusinessRulesInput!",
       "name": "businessRules",
-      "url": "/hotelx/reference/inputobjects/hotelxbusinessrulesinput",
+      "url": "/hotel-x/reference/inputobjects/hotelxbusinessrulesinput",
       "description": "",
       "args": null
     },
     {
       "typeString": "TimeoutInput!",
       "name": "timeout",
-      "url": "/hotelx/reference/inputobjects/timeoutinput",
+      "url": "/hotel-x/reference/inputobjects/timeoutinput",
       "description": "",
       "args": null
     },
     {
       "typeString": "HotelXAuditInput!",
       "name": "audit",
-      "url": "/hotelx/reference/inputobjects/hotelxauditinput",
+      "url": "/hotel-x/reference/inputobjects/hotelxauditinput",
       "description": "",
       "args": null
     }

@@ -11,8 +11,8 @@ The safety margin file should be in the below format:
 
 * **Encoding**: UTF-8
 * **File Name**: 
-    * [context](/hotelx/concepts/accesses-supplier-context/#context)
-    * [sequential](/hotelx/plugins/entity_table_file/#sequential)
+    * [context](/hotel-x/concepts/accesses-supplier-context/#context)
+    * [sequential](/hotel-x/plugins/entity_table_file/#sequential)
     * safetymargin
 * **Extension file**: csv
 * **Headers**:
@@ -20,10 +20,10 @@ The safety margin file should be in the below format:
     * _clientTokens_  → client Tokens*
     * _supplierCodes_  → supplier code
     * _notSupplierCodes_  → supplier code
-    * _creationDateFrom_  → start creation date [**Date format**](/hotelx/plugins/format-files/commission#dateformat)
-    * _creationDateTo_   → end creation date [**Date format**](/hotelx/plugins/format-files/commission#dateformat)
-    * _checkInFrom_  → checkinfrom date [**Date format**](/hotelx/plugins/format-files/commission#dateformat)
-    * _checkInTo_  → checkinto date [**Date format**](/hotelx/plugins/format-files/commission#dateformat)
+    * _creationDateFrom_  → start creation date [**Date format**](/hotel-x/plugins/format-files/commission#dateformat)
+    * _creationDateTo_   → end creation date [**Date format**](/hotel-x/plugins/format-files/commission#dateformat)
+    * _checkInFrom_  → checkinfrom date [**Date format**](/hotel-x/plugins/format-files/commission#dateformat)
+    * _checkInTo_  → checkinto date [**Date format**](/hotel-x/plugins/format-files/commission#dateformat)
     * _hotelCodes_  → hotel code
     * _nothotelCodes_  → hotel code
     * _chainsCodes_  → chain code

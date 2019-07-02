@@ -1487,9 +1487,9 @@ Total hits.` to `Total hits.`
 ✅  Field `Stats.statsData` description changed from `` to `GUID
 The data returned by a \`Stats\` query.`
 
-✅  Description `Plugin Type` on type `PluginType` has changed to `Plugin Type. /hotelx/plugins/overview/`
+✅  Description `Plugin Type` on type `PluginType` has changed to `Plugin Type. /hotel-x/plugins/overview/`
 
-✅  Description `Plugin Step Type` on type `PluginStepType` has changed to `Plugin Step Type. /hotelx/plugins/overview/`
+✅  Description `Plugin Step Type` on type `PluginStepType` has changed to `Plugin Step Type. /hotel-x/plugins/overview/`
 
 ✅  Input field `PluginStepInput.pluginsType` description changed from `` to `Indicates the plugin that will be executed.`
 

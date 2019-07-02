@@ -7,4 +7,4 @@ weight = 6
 alwaysopen = false
 +++
 
-On this page you will learn how to develop your own [HotelX](/hotelx/) _Plugin_.
+On this page you will learn how to develop your own [HotelX](/hotel-x/) _Plugin_.

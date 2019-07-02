@@ -6,7 +6,7 @@
     {
       "typeString": "[Transactions!]!",
       "name": "transactions",
-      "url": "/hotelx/reference/objects/transactions",
+      "url": "/hotel-x/reference/objects/transactions",
       "description": "List of transactions data",
       "isDeprecated": false,
       "args": null
@@ -14,7 +14,7 @@
     {
       "typeString": "DateTime!",
       "name": "timeStamp",
-      "url": "/hotelx/reference/scalars/datetime",
+      "url": "/hotel-x/reference/scalars/datetime",
       "description": "TimeStamp",
       "isDeprecated": false,
       "args": null
@@ -22,7 +22,7 @@
     {
       "typeString": "Float!",
       "name": "processTime",
-      "url": "/hotelx/reference/scalars/float",
+      "url": "/hotel-x/reference/scalars/float",
       "description": "Process time in milliseconds (ms)",
       "isDeprecated": false,
       "args": null
@@ -32,32 +32,32 @@
     {
       "name": "HotelSearch",
       "description": "Results from Avail Hotel; contains all the available options for a given date and itinerary",
-      "url": "/hotelx/reference/objects/hotelsearch"
+      "url": "/hotel-x/reference/objects/hotelsearch"
     },
     {
       "name": "HotelQuote",
       "description": "",
-      "url": "/hotelx/reference/objects/hotelquote"
+      "url": "/hotel-x/reference/objects/hotelquote"
     },
     {
       "name": "HotelBooking",
       "description": "",
-      "url": "/hotelx/reference/objects/hotelbooking"
+      "url": "/hotel-x/reference/objects/hotelbooking"
     },
     {
       "name": "Response",
       "description": "",
-      "url": "/hotelx/reference/interfaces/response"
+      "url": "/hotel-x/reference/interfaces/response"
     },
     {
       "name": "HotelBookPayload",
       "description": "",
-      "url": "/hotelx/reference/objects/hotelbookpayload"
+      "url": "/hotel-x/reference/objects/hotelbookpayload"
     },
     {
       "name": "HotelCancelPayload",
       "description": "",
-      "url": "/hotelx/reference/objects/hotelcancelpayload"
+      "url": "/hotel-x/reference/objects/hotelcancelpayload"
     }
   ],
   "enumValues": null,

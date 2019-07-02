@@ -6,7 +6,7 @@
     {
       "typeString": "String",
       "name": "code",
-      "url": "/hotelx/reference/scalars/string",
+      "url": "/hotel-x/reference/scalars/string",
       "description": "Code.",
       "isDeprecated": false,
       "args": null
@@ -14,7 +14,7 @@
     {
       "typeString": "String",
       "name": "order",
-      "url": "/hotelx/reference/scalars/string",
+      "url": "/hotel-x/reference/scalars/string",
       "description": "Indicates the order priority.",
       "isDeprecated": false,
       "args": null
@@ -22,7 +22,7 @@
     {
       "typeString": "ApplicationAreaType!",
       "name": "type",
-      "url": "/hotelx/reference/enums/applicationareatype",
+      "url": "/hotel-x/reference/enums/applicationareatype",
       "description": "Indicates the type of the media.",
       "isDeprecated": false,
       "args": null
@@ -30,7 +30,7 @@
     {
       "typeString": "DateTime!",
       "name": "updatedAt",
-      "url": "/hotelx/reference/scalars/datetime",
+      "url": "/hotel-x/reference/scalars/datetime",
       "description": "Date updated.",
       "isDeprecated": false,
       "args": null
@@ -38,7 +38,7 @@
     {
       "typeString": "URI!",
       "name": "url",
-      "url": "/hotelx/reference/scalars/uri",
+      "url": "/hotel-x/reference/scalars/uri",
       "description": "Url.",
       "isDeprecated": false,
       "args": null
@@ -46,14 +46,14 @@
     {
       "typeString": "[Text!]",
       "name": "texts",
-      "url": "/hotelx/reference/objects/text",
+      "url": "/hotel-x/reference/objects/text",
       "description": "Contains the descriptive.",
       "isDeprecated": false,
       "args": [
         {
           "typeString": "[Language!]",
           "name": "languages",
-          "url": "/hotelx/reference/scalars/language",
+          "url": "/hotel-x/reference/scalars/language",
           "description": ""
         }
       ]

@@ -7,17 +7,17 @@
     {
       "name": "HotelXDefaultPlugin",
       "description": "",
-      "url": "/hotelx/reference/objects/hotelxdefaultplugin"
+      "url": "/hotel-x/reference/objects/hotelxdefaultplugin"
     },
     {
       "name": "PluginsInput",
       "description": "Plugin to execute.",
-      "url": "/hotelx/reference/inputobjects/pluginsinput"
+      "url": "/hotel-x/reference/inputobjects/pluginsinput"
     },
     {
       "name": "HotelXDefaultPluginInput",
       "description": "",
-      "url": "/hotelx/reference/inputobjects/hotelxdefaultplugininput"
+      "url": "/hotel-x/reference/inputobjects/hotelxdefaultplugininput"
     }
   ],
   "enumValues": [
@@ -74,7 +74,7 @@
   "typename": "PluginType",
   "hideGithubLink": true
 }
-Plugin Type. https://docs.travelgatex.com/hotelx/plugins/overview/
+Plugin Type. https://docs.travelgatex.com/hotel-x/plugins/overview/
 ## GraphQL schema definition
 
 {{% graphql-schema-enum %}}

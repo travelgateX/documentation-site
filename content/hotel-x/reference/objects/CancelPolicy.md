@@ -6,7 +6,7 @@
     {
       "typeString": "Boolean!",
       "name": "refundable",
-      "url": "/hotelx/reference/scalars/boolean",
+      "url": "/hotel-x/reference/scalars/boolean",
       "description": "Indicates if the option is refundable or non-refundable",
       "isDeprecated": false,
       "args": null
@@ -14,7 +14,7 @@
     {
       "typeString": "[CancelPenalty!]",
       "name": "cancelPenalties",
-      "url": "/hotelx/reference/objects/cancelpenalty",
+      "url": "/hotel-x/reference/objects/cancelpenalty",
       "description": "List of cancellation penalties",
       "isDeprecated": false,
       "args": null
@@ -24,17 +24,17 @@
     {
       "name": "HotelOptionSearch",
       "description": "An option includes hotel information, meal plan, total price, conditions and room description",
-      "url": "/hotelx/reference/objects/hoteloptionsearch"
+      "url": "/hotel-x/reference/objects/hoteloptionsearch"
     },
     {
       "name": "HotelOptionQuote",
       "description": "Contains information about quote(s)",
-      "url": "/hotelx/reference/objects/hoteloptionquote"
+      "url": "/hotel-x/reference/objects/hoteloptionquote"
     },
     {
       "name": "HotelBookingDetail",
       "description": "Contains information about booking",
-      "url": "/hotelx/reference/objects/hotelbookingdetail"
+      "url": "/hotel-x/reference/objects/hotelbookingdetail"
     }
   ],
   "enumValues": null,

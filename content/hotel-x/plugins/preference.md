@@ -21,7 +21,7 @@ The matching process uses **client Tokens** filed, which identify the provided b
 
 ## Files needed in order to use this plugin
 
-* [**Preference file format**](/hotelx/plugins/format-files/preference/) (**Mandatory**)
+* [**Preference file format**](/hotel-x/plugins/format-files/preference/) (**Mandatory**)
 
 ### Execution example
 ```

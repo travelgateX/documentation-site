@@ -6,21 +6,21 @@
     {
       "typeString": "DateType!",
       "name": "dateType",
-      "url": "/hotelx/reference/enums/datetype",
+      "url": "/hotel-x/reference/enums/datetype",
       "description": "Type of date. Can be Arrival or Booking date.",
       "args": null
     },
     {
       "typeString": "Date!",
       "name": "start",
-      "url": "/hotelx/reference/scalars/date",
+      "url": "/hotel-x/reference/scalars/date",
       "description": "Start date.\nFormat: YYYY-MM-DD.",
       "args": null
     },
     {
       "typeString": "Date!",
       "name": "end",
-      "url": "/hotelx/reference/scalars/date",
+      "url": "/hotel-x/reference/scalars/date",
       "description": "End date.\nFormat: YYYY-MM-DD.",
       "args": null
     }
@@ -29,7 +29,7 @@
     {
       "name": "HotelCriteriaBookingInput",
       "description": "Criteria of book contains basic information to find a book or books.",
-      "url": "/hotelx/reference/inputobjects/hotelcriteriabookinginput"
+      "url": "/hotel-x/reference/inputobjects/hotelcriteriabookinginput"
     }
   ],
   "enumValues": null,

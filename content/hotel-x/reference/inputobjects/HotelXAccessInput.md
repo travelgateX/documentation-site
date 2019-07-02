@@ -6,21 +6,21 @@
     {
       "typeString": "ID!",
       "name": "accessId",
-      "url": "/hotelx/reference/scalars/id",
+      "url": "/hotel-x/reference/scalars/id",
       "description": "The accessID used to identify the existing access in our Back Office in order to\noverwrite it. Acts as an identifier in this search. It can either exist or not.",
       "args": null
     },
     {
       "typeString": "ConfigurationInput",
       "name": "configuration",
-      "url": "/hotelx/reference/inputobjects/configurationinput",
+      "url": "/hotel-x/reference/inputobjects/configurationinput",
       "description": "Information required to access the supplier's system.",
       "args": null
     },
     {
       "typeString": "SettingsBaseInput",
       "name": "settings",
-      "url": "/hotelx/reference/inputobjects/settingsbaseinput",
+      "url": "/hotel-x/reference/inputobjects/settingsbaseinput",
       "description": "You can configure an special settings for any access. This level overwrites the search and supplier settings levels.",
       "args": null
     }

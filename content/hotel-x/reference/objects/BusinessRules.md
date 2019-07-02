@@ -6,7 +6,7 @@
     {
       "typeString": "Int!",
       "name": "optionsQuota",
-      "url": "/hotelx/reference/scalars/int",
+      "url": "/hotel-x/reference/scalars/int",
       "description": "Options quota per availability; numbers of options based on availability",
       "isDeprecated": false,
       "args": null
@@ -14,7 +14,7 @@
     {
       "typeString": "BusinessRulesType!",
       "name": "businessRulesType",
-      "url": "/hotelx/reference/enums/businessrulestype",
+      "url": "/hotel-x/reference/enums/businessrulestype",
       "description": "Different business rules for filtering options that you are interested in",
       "isDeprecated": false,
       "args": null
@@ -24,12 +24,12 @@
     {
       "name": "HotelXDefaultSettingsData",
       "description": "",
-      "url": "/hotelx/reference/objects/hotelxdefaultsettingsdata"
+      "url": "/hotel-x/reference/objects/hotelxdefaultsettingsdata"
     },
     {
       "name": "HotelXCommonSettingsData",
       "description": "",
-      "url": "/hotelx/reference/objects/hotelxcommonsettingsdata"
+      "url": "/hotel-x/reference/objects/hotelxcommonsettingsdata"
     }
   ],
   "enumValues": null,

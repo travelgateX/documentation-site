@@ -7,12 +7,12 @@
     {
       "name": "Supplement",
       "description": "Supplement that it can be or its already added to the option returned. Contains all the information about the supplement.",
-      "url": "/hotelx/reference/objects/supplement"
+      "url": "/hotel-x/reference/objects/supplement"
     },
     {
       "name": "Surcharge",
       "description": "Surcharge that it can be or it is already added to the option returned. Contains all the information about the surcharge.",
-      "url": "/hotelx/reference/objects/surcharge"
+      "url": "/hotel-x/reference/objects/surcharge"
     }
   ],
   "enumValues": [
