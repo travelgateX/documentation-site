@@ -20,6 +20,7 @@ Easily accessible log of notable changes to HotelX API
 {{% release-notes-container type="f"%}}
 - Client token in batch and booking flow.
 {{% /release-notes-container %}}
+
 ## 2019-06-27
 {{% release-notes-container type="a"%}}
 - Categories in Hotel-Category are grouped by group.
