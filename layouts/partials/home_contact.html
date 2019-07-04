@@ -1,58 +1,147 @@
-	<section id="fh5co-contact" data-section="contact">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12 section-heading text-center">
-					<h2 class="to-animate">{{ with .Site.Params.contact.title }}{{ . | markdownify }}{{ end }}</h2>
-					<div class="row">
-						<div class="col-md-8 col-md-offset-2 subtext to-animate">
-							<h3>{{ with .Site.Params.contact.description }}{{ . | markdownify }}{{ end }}</h3>
-						</div>
+<section id="fh5co-contact" data-section="contact">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 section-heading text-center">
+				<h2 class="to-animate">{{ with .Site.Params.contact.title }}{{ . | markdownify }}{{ end }}</h2>
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2 subtext to-animate">
+						<h3>{{ with .Site.Params.contact.description }}{{ . | markdownify }}{{ end }}</h3>
 					</div>
 				</div>
-			</div>
-			<div class="row row-bottom-padded-md">
-				<div class="col-md-6 to-animate">
-					<h3>{{ with .Site.Params.contact.info }}{{ . | markdownify }}{{ end }}</h3>
-					<ul class="fh5co-contact-info">
-					{{ range .Site.Params.contact.details }}
-						<li class="fh5co-contact-address "><i class="{{ with index . 0}}{{ . }}{{ end }}"></i>{{ with index . 1}}{{ . | markdownify }}{{ end }}</li>
-					{{ end }}
-					</ul>
-				</div>
-
-				<div class="col-md-6 to-animate">
-					<h3>{{ with .Site.Params.contact.form }}{{ . | markdownify }}{{ end }}</h3>
-					<form method="post" action="//formspree.io/{{ with .Site.Params.email }}{{.}}{{ end }}">
-					<div class="form-group ">
-						{{ with .Site.Params.contact.name }}
-						<label for="name" class="sr-only">{{ . | markdownify }}</label>
-						<input id="name" class="form-control" name="name" placeholder="{{ . }}" type="text">
-						{{ end }}
-					</div>
-					<div class="form-group ">
-						{{ with .Site.Params.contact.email }}
-						<label for="email" class="sr-only">{{ . | markdownify }}</label>
-						<input id="email" class="form-control" name="_replyto" placeholder="{{ . }}" type="email">
-						{{ end }}
-					</div>
-					<div class="form-group ">
-						{{ with .Site.Params.contact.phone }}
-						<label for="phone" class="sr-only">{{ . | markdownify }}</label>
-						<input id="phone" class="form-control" name="phone" placeholder="{{ . }}" type="text">
-						{{ end }}
-					</div>
-					<div class="form-group ">
-						{{ with .Site.Params.contact.message }}
-						<label for="message" class="sr-only">{{ . | markdownify }}</label>
-						<textarea id="message" cols="30" rows="5" class="form-control" name="message" placeholder="{{ . }}"></textarea>
-						{{ end }}
-					</div>
-					<div class="form-group ">
-						<input class="btn btn-primary btn-lg" value="{{ .Site.Params.contact.button | markdownify }}" type="submit">
-					</div>
-					</form>
-				</div>
-
 			</div>
 		</div>
+		<div class="row row-bottom-padded-md">
+			<div class="col-md-6 to-animate">
+				<h3>{{ with .Site.Params.contact.info }}{{ . | markdownify }}{{ end }}</h3>
+				<ul class="fh5co-contact-info">
+				{{ range .Site.Params.contact.details }}
+					<li class="fh5co-contact-address "><i class="{{ with index . 0}}{{ . }}{{ end }}"></i>{{ with index . 1}}{{ . | markdownify }}{{ end }}</li>
+				{{ end }}
+				</ul>
+			</div>
+
+			<div class="col-md-6 to-animate">
+				<h3>{{ with .Site.Params.contact.form }}{{ . | markdownify }}{{ end }}</h3>
+				<form>
+				<div class="form-group ">
+					{{ with .Site.Params.contact.name }}
+					<label for="name" class="sr-only">{{ . | markdownify }}</label>
+					<input id="name" class="form-control" name="fullname" placeholder="{{ . }}" type="text">
+					{{ end }}
+				</div>
+				<div class="form-group ">
+					{{ with .Site.Params.contact.email }}
+					<label for="email" class="sr-only">{{ . | markdownify }}</label>
+					<input id="email" class="form-control" name="email" placeholder="{{ . }}" type="email">
+					{{ end }}
+				</div>
+				<div class="form-group ">
+					{{ with .Site.Params.contact.phone }}
+					<label for="phone" class="sr-only">{{ . | markdownify }}</label>
+					<input id="phone" class="form-control" name="phone" placeholder="{{ . }}" type="text">
+					{{ end }}
+				</div>
+				<div class="form-group ">
+					{{ with .Site.Params.contact.message }}
+					<label for="message" class="sr-only">{{ . | markdownify }}</label>
+					<textarea id="message" cols="30" rows="5" class="form-control" name="message" placeholder="{{ . }}"></textarea>
+					{{ end }}
+				</div>
+				<div class="form-group ">
+					<input class="btn btn-primary btn-lg" value="{{ .Site.Params.contact.button | markdownify }}" type="submit">
+				</div>
+				</form>
+			</div>
+
+		</div>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script>
+		$(document).ready(function() {
+		  const form = $('#fh5co-contact').find('form')[0];
+	
+		  $(form).submit(function(e) {
+			e.preventDefault();
+			const mail = {
+			  subject: 'contact',
+			  companyName: ''
+			};
+			const values = $(form).serializeArray();
+	
+			values.forEach(v => {
+			  mail[v.name] = v.value;
+			});			
+	
+			$.ajax({
+			  type: 'POST',
+			  url: 'https://www.travelgatex.com/api/sendContactMail',
+			  data: JSON.stringify(mail),
+			  contentType: 'application/json; charset=utf-8',
+			  dataType: 'json',
+			  success: function(data) {
+				$(form).trigger('reset');
+				$('#contact-toast').addClass('show');
+				setTimeout(function() {
+				  $('#contact-toast').removeClass('show');
+				}, 3000);
+			  },
+			  failure: function(errMsg) {
+				alert(errMsg);
+			  }
+			});
+	
+			return false;
+		  });
+		});
+	  </script>
 	</section>
+	<style>
+		/* The snackbar - position it at the bottom and in the right of the screen */
+		#contact-toast {
+		visibility: hidden; /* Hidden by default. Visible on click */
+		min-width: 250px; /* Set a default minimum width */
+		margin-left: -125px; /* Divide value of min-width by 2 */
+		background-color: #28a745 !important; /* Black background color */
+		color: #fff; /* White text color */
+		text-align: center; /* Centered text */
+		border-radius: 2px; /* Rounded borders */
+		padding: 16px; /* Padding */
+		position: fixed; /* Sit on top of the screen */
+		z-index: 10000; /* Add a z-index if needed */
+		right: 20px; /* Right the snackbar */
+		bottom: 30px; /* 30px from the bottom */
+		}
+
+		/* Show the snackbar when clicking on a button (class added with JavaScript) */
+		#contact-toast.show {
+		visibility: visible; /* Show the snackbar */
+		/* Add animation: Take 0.5 seconds to fade in and out the snackbar. 
+		However, delay the fade out process for 2.5 seconds */
+		-webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+		animation: fadein 0.5s, fadeout 0.5s 2.5s;
+		}
+
+		/* Animations to fade the snackbar in and out */
+		@-webkit-keyframes fadein {
+		from {bottom: 0; opacity: 0;} 
+		to {bottom: 30px; opacity: 1;}
+		}
+
+		@keyframes fadein {
+		from {bottom: 0; opacity: 0;}
+		to {bottom: 30px; opacity: 1;}
+		}
+
+		@-webkit-keyframes fadeout {
+		from {bottom: 30px; opacity: 1;} 
+		to {bottom: 0; opacity: 0;}
+		}
+
+		@keyframes fadeout {
+		from {bottom: 30px; opacity: 1;}
+		to {bottom: 0; opacity: 0;}
+		}
+	</style>
+	<div id="contact-toast">
+		<span>Message sent!</span>
+	</div>
