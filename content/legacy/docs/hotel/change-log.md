@@ -5,7 +5,25 @@ search: Hotel - Change Log
 sidebar: mydoc_sidebar
 permalink: /docs/hotel/change-log
 ---
-**Version 1.0.21:** Date 25/04/2018
+
+**Version 1.0.22:** Date 09/07/2019
+
+ * **Addition of the boolean DailyPrices to AvailRS.** By default DailyPrices is set to true and given the supplier implements daily prices, you will receive a list of daily prices for each room in the Avail response for the given stay range. If set to false this information will not be included in the response.
+ * **Addition of the boolean DailyRatePlans to AvailRS.** By default DailyRatePlans is set to true and given the supplier implements daily rate plans, you will receive a list of the available rate plans for each room in the Avail response for the given stay range. If set to false this information will not be included in the response.
+ *  **Added Mobile as a Rate Condition** In the avail response at Option level there is now an option to add "mobile" to the list of rate conditions.
+ *  **Http Status Code 504 type as 105 Error.** If the supplier returns a httpStatusCode 504 this will register as error code 105.
+ *  **New Metadata tags.**
+    * **InformRoomDescription** indicates whether or not the supplier returns a room description in their availability call. Found in MetaDataAvail.
+    * **InformHotelName** indicates whether or not the supplier returns a the hotel name in their availability call. Found in MetaDataAvail.
+    * **InformNRFRate** indicates whether or not the supplier returns an indication of whether or not the rate is non refundable in their availability call. Found in MetaDataAvail.
+    * **InformDailyPrice** indicates whether or not the supplier returns daily prices in their availability call. Found in MetaDataAvail.
+    * **InformDailyRatePlan** indicates whether or not the supplier returns daily rate plans in their availability call. Found in MetaDataAvail.
+    * **RequiredNationality** indicates whether or not the nationality field in the AvailRQ is required. Found in MetaDataGeneric.
+ * **Error Message Language Change.** Errors caught by the Avail Validator now return error messages in English instead of Spanish as they previously did.
+
+|
+
+ **Version 1.0.21:** Date 25/04/2018
 
  *  **CancelPolicies and fees returned at stage room in AvailRS.** Depending on the supplier, the information concerning CancelPolicies and fees can be displayed at room level. To receive the CancelPolicies at room level, it is necessary to send the tag RoomCancellationPolicies in the AvailRQ.
  *  **Property reservation number in ReservationRS, ReservationReadRS and ReservationListRS.** Depending on the supplier, you will receive the property reservation number in addition to the supplier locator.
