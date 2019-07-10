@@ -12,6 +12,11 @@ tags = ["products-changelog"]
 
 Easily accessible log of notable changes to Alerts-X
 
+## 2019-07-10
+{{% release-notes-container type="a"%}}
+- After an alert configuration update their past `events` will be deleted.
+{{% /release-notes-container %}} 
+
 
 ## 2019-06-12
 {{% release-notes-container type="f"%}}
