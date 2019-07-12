@@ -13,7 +13,7 @@
         "g":"2bee5af21dd6f2cc61eec736bb95aead",
         "o":["graphiql"],
         "u":"tgx-bot",
-        "ak":"64780338-49c8-4439-7c7d-d03c2033b145"
+        "ak":"64780338-49c8-4439-7c7d-d03c2033b145" 
     }, 
     {
         "n":"By Reference",
