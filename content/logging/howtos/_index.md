@@ -1,6 +1,6 @@
 +++
 title = "How-to guides"
-pagetitle = "Stats how-to guides"
+pagetitle = "Logging how-to guides"
 description = "Perform specific tasks"
 icon = "fa-list"
 weight = 2
