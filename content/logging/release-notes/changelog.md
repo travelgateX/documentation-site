@@ -12,6 +12,12 @@ tags = ["products-changelog"]
 
 Easily accessible log of notable changes to Logging
 
+
+## 2019-07-17
+{{% release-notes-container type="a"%}}
+- Added a new input object `reference` with two fields `client` and `supplier` from which bookings can be searched.
+{{% /release-notes-container %}}
+
 ## 2019-07-11
 {{% release-notes-container type="a"%}}
 - Added a new field `statusType` in `LoggingLegacyData` to retrieve the final status of the transacction.
