@@ -13,6 +13,16 @@ tags = ["products-changelog"]
 Easily accessible log of notable changes to HotelX API
 {{% alert theme="info" %}}All notable changes in our platform will be documented on this page.{{% /alert %}}
 
+## 2019-07-11
+{{% release-notes-container type="a"%}}
+- Deprecate type error in Hotel-list, Hotel-Room, Hotel-Board, Hotel-Category
+- Add error filter in Hotel-list, Hotel-Room, Hotel-Board, Hotel-Category
+- Add adviseMessage as new error type
+{{% /release-notes-container %}}
+{{% release-notes-container type="f"%}}
+- Fix Level value in Hotel-list, Hotel-Room, Hotel-Board, Hotel-Category
+{{% /release-notes-container %}}
+
 ## 2019-07-02
 {{% release-notes-container type="a"%}}
 - New field in book, cancel and booking respone. booking/reference/hotel.
