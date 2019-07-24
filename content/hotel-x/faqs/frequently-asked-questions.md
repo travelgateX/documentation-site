@@ -189,6 +189,10 @@ The currency tag is always mandatory. You have two options:
 * To send it in the request whenever you run a Search
 * If you do not include any currency, then the settings by default currency configuration will be used
 
+**The currency should be always the same as room price currency, is it?**
+
+Yes, currency will remain consistent throughout the entire Booking flow, including cancellation policies.
+
 
 **What does it happen if I request availability with a currency that the supplier doesn´t accept?**
 
