@@ -12,6 +12,15 @@ tags = ["products-changelog"]
 
 Easily accessible log of notable changes to Alerts-X
 
+## 2019-07-25
+{{% release-notes-container type="a"%}}
+- Allow to get alerts without `groups` criteria input.
+{{% /release-notes-container %}} 
+
+{{% release-notes-container type="f"%}}
+- Fixed an error to allow an alert create in an AlertsX group with no alert.
+{{% /release-notes-container %}} 
+
 ## 2019-07-10
 {{% release-notes-container type="a"%}}
 - After an alert configuration update their past `events` will be deleted.
