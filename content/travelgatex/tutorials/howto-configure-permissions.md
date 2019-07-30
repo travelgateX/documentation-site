@@ -9,12 +9,12 @@ alwaysopen = false
 
 ## Granting Permissions
 
-This topic describes how to configure permissions for a organization using [HotelX](/hotelx) and Stats.
+This topic describes how to configure permissions for a organization using [HotelX](/hotel-x) and Stats.
 
 ## Before you begin
 
 - Read [IAM](/travelgatex/concepts/iam/), which contains information about how TravelgateX manages security
-- Read [HotelX](/hotelx/), which contains information about the HotelX API 
+- Read [HotelX](/hotel-x/), which contains information about the HotelX API 
 
 ## Scenario: Organization buying suppliers through HotelX
 
@@ -42,7 +42,7 @@ Group hierarchy is organized as:
 
 - 1 organization named _org\_test_
 - 1 folder named _purchase_, which manages all products purchased by _org\_test_:
-    - [HotelX](/hotelx/) to manage clients, suppliers and accesses
+    - [HotelX](/hotel-x/) to manage clients, suppliers and accesses
     - *Stats* to view statistics
 
 The IAM policy manages these roles:

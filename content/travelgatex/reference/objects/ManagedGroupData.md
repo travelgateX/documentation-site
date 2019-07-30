@@ -7,7 +7,7 @@
       "typeString": "ID!",
       "name": "code",
       "url": "/travelgatex/reference/scalars/id",
-      "description": null,
+      "description": "",
       "isDeprecated": false,
       "args": null
     },
@@ -15,7 +15,7 @@
       "typeString": "Group!",
       "name": "group",
       "url": "/travelgatex/reference/objects/group",
-      "description": null,
+      "description": "",
       "isDeprecated": false,
       "args": null
     },
@@ -23,7 +23,7 @@
       "typeString": "API!",
       "name": "api",
       "url": "/travelgatex/reference/objects/api",
-      "description": null,
+      "description": "",
       "isDeprecated": false,
       "args": null
     },
@@ -31,7 +31,7 @@
       "typeString": "Resource!",
       "name": "resource",
       "url": "/travelgatex/reference/objects/resource",
-      "description": null,
+      "description": "",
       "isDeprecated": false,
       "args": null
     },
@@ -39,7 +39,7 @@
       "typeString": "Role!",
       "name": "role",
       "url": "/travelgatex/reference/objects/role",
-      "description": null,
+      "description": "",
       "isDeprecated": false,
       "args": null
     }
@@ -47,7 +47,7 @@
   "requireby": [
     {
       "name": "ManagedGroup",
-      "description": null,
+      "description": "",
       "url": "/travelgatex/reference/objects/managedgroup"
     }
   ],

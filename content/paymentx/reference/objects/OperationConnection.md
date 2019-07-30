@@ -7,7 +7,7 @@
       "typeString": "[OperationEdge]",
       "name": "edges",
       "url": "/paymentx/reference/objects/operationedge",
-      "description": null,
+      "description": "",
       "isDeprecated": false,
       "args": null
     },
@@ -15,7 +15,7 @@
       "typeString": "PageInfo!",
       "name": "pageInfo",
       "url": "/paymentx/reference/objects/pageinfo",
-      "description": null,
+      "description": "",
       "isDeprecated": false,
       "args": null
     }
@@ -23,7 +23,7 @@
   "requireby": [
     {
       "name": "APIData",
-      "description": null,
+      "description": "",
       "url": "/paymentx/reference/objects/apidata"
     }
   ],

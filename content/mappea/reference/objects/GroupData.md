@@ -7,7 +7,7 @@
       "typeString": "ID!",
       "name": "id",
       "url": "/mappea/reference/scalars/id",
-      "description": null,
+      "description": "",
       "isDeprecated": false,
       "args": null
     },
@@ -15,7 +15,7 @@
       "typeString": "ID!",
       "name": "code",
       "url": "/mappea/reference/scalars/id",
-      "description": null,
+      "description": "",
       "isDeprecated": false,
       "args": null
     },
@@ -23,7 +23,7 @@
       "typeString": "String",
       "name": "label",
       "url": "/mappea/reference/scalars/string",
-      "description": null,
+      "description": "",
       "isDeprecated": false,
       "args": null
     },
@@ -31,7 +31,7 @@
       "typeString": "GroupType!",
       "name": "type",
       "url": "/mappea/reference/enums/grouptype",
-      "description": null,
+      "description": "",
       "isDeprecated": false,
       "args": null
     },
@@ -39,7 +39,7 @@
       "typeString": "String",
       "name": "info",
       "url": "/mappea/reference/scalars/string",
-      "description": null,
+      "description": "",
       "isDeprecated": false,
       "args": null
     },
@@ -47,7 +47,7 @@
       "typeString": "Group",
       "name": "parent",
       "url": "/mappea/reference/objects/group",
-      "description": null,
+      "description": "",
       "isDeprecated": false,
       "args": null
     },
@@ -55,50 +55,50 @@
       "typeString": "GroupConnection",
       "name": "children",
       "url": "/mappea/reference/objects/groupconnection",
-      "description": null,
+      "description": "Only responses children.(non-hierarchically)",
       "isDeprecated": false,
       "args": [
         {
           "typeString": "[ID!]",
           "name": "codes",
           "url": "/mappea/reference/scalars/id",
-          "description": null
+          "description": ""
         },
         {
           "typeString": "Int",
           "name": "first",
           "url": "/mappea/reference/scalars/int",
-          "description": null
+          "description": ""
         },
         {
           "typeString": "Int",
           "name": "last",
           "url": "/mappea/reference/scalars/int",
-          "description": null
+          "description": ""
         },
         {
           "typeString": "String",
           "name": "before",
           "url": "/mappea/reference/scalars/string",
-          "description": null
+          "description": ""
         },
         {
           "typeString": "String",
           "name": "after",
           "url": "/mappea/reference/scalars/string",
-          "description": null
+          "description": ""
         },
         {
           "typeString": "GroupType",
           "name": "type",
           "url": "/mappea/reference/enums/grouptype",
-          "description": null
+          "description": ""
         },
         {
           "typeString": "String",
           "name": "codeStartsWith",
           "url": "/mappea/reference/scalars/string",
-          "description": null
+          "description": ""
         }
       ]
     },
@@ -106,50 +106,50 @@
       "typeString": "GroupConnection",
       "name": "descendents",
       "url": "/mappea/reference/objects/groupconnection",
-      "description": null,
+      "description": "Response all descendents groups nodes in this group (nom-hierarchically)",
       "isDeprecated": false,
       "args": [
         {
           "typeString": "[ID!]",
           "name": "codes",
           "url": "/mappea/reference/scalars/id",
-          "description": null
+          "description": ""
         },
         {
           "typeString": "GroupType",
           "name": "type",
           "url": "/mappea/reference/enums/grouptype",
-          "description": null
+          "description": ""
         },
         {
           "typeString": "Int",
           "name": "first",
           "url": "/mappea/reference/scalars/int",
-          "description": null
+          "description": ""
         },
         {
           "typeString": "Int",
           "name": "last",
           "url": "/mappea/reference/scalars/int",
-          "description": null
+          "description": ""
         },
         {
           "typeString": "String",
           "name": "before",
           "url": "/mappea/reference/scalars/string",
-          "description": null
+          "description": ""
         },
         {
           "typeString": "String",
           "name": "after",
           "url": "/mappea/reference/scalars/string",
-          "description": null
+          "description": ""
         },
         {
           "typeString": "String",
           "name": "codeStartsWith",
           "url": "/mappea/reference/scalars/string",
-          "description": null
+          "description": ""
         }
       ]
     },
@@ -157,50 +157,44 @@
       "typeString": "GroupConnection",
       "name": "parents",
       "url": "/mappea/reference/objects/groupconnection",
-      "description": null,
+      "description": "Response all parents groups nodes for this group (nom-hierarchically)",
       "isDeprecated": false,
       "args": [
         {
           "typeString": "[ID!]",
           "name": "codes",
           "url": "/mappea/reference/scalars/id",
-          "description": null
-        },
-        {
-          "typeString": "String",
-          "name": "codeStartsWith",
-          "url": "/mappea/reference/scalars/string",
-          "description": null
+          "description": ""
         },
         {
           "typeString": "GroupType",
           "name": "type",
           "url": "/mappea/reference/enums/grouptype",
-          "description": null
+          "description": ""
         },
         {
           "typeString": "Int",
           "name": "first",
           "url": "/mappea/reference/scalars/int",
-          "description": null
+          "description": ""
         },
         {
           "typeString": "Int",
           "name": "last",
           "url": "/mappea/reference/scalars/int",
-          "description": null
+          "description": ""
         },
         {
           "typeString": "String",
           "name": "before",
           "url": "/mappea/reference/scalars/string",
-          "description": null
+          "description": ""
         },
         {
           "typeString": "String",
           "name": "after",
           "url": "/mappea/reference/scalars/string",
-          "description": null
+          "description": ""
         }
       ]
     },
@@ -208,7 +202,7 @@
       "typeString": "Member",
       "name": "owner",
       "url": "/mappea/reference/objects/member",
-      "description": null,
+      "description": "",
       "isDeprecated": false,
       "args": null
     },
@@ -216,7 +210,7 @@
       "typeString": "Boolean!",
       "name": "isEditable",
       "url": "/mappea/reference/scalars/boolean",
-      "description": null,
+      "description": "",
       "isDeprecated": false,
       "args": null
     },
@@ -224,7 +218,7 @@
       "typeString": "Int",
       "name": "productId",
       "url": "/mappea/reference/scalars/int",
-      "description": null,
+      "description": "",
       "isDeprecated": false,
       "args": null
     },
@@ -232,103 +226,52 @@
       "typeString": "Int",
       "name": "resourceId",
       "url": "/mappea/reference/scalars/int",
-      "description": null,
+      "description": "",
       "isDeprecated": false,
       "args": null
-    },
-    {
-      "typeString": "GroupConnection",
-      "name": "siblings",
-      "url": "/mappea/reference/objects/groupconnection",
-      "description": null,
-      "isDeprecated": false,
-      "args": [
-        {
-          "typeString": "[ID!]",
-          "name": "codes",
-          "url": "/mappea/reference/scalars/id",
-          "description": null
-        },
-        {
-          "typeString": "GroupType",
-          "name": "type",
-          "url": "/mappea/reference/enums/grouptype",
-          "description": null
-        },
-        {
-          "typeString": "Int",
-          "name": "first",
-          "url": "/mappea/reference/scalars/int",
-          "description": null
-        },
-        {
-          "typeString": "Int",
-          "name": "last",
-          "url": "/mappea/reference/scalars/int",
-          "description": null
-        },
-        {
-          "typeString": "String",
-          "name": "before",
-          "url": "/mappea/reference/scalars/string",
-          "description": null
-        },
-        {
-          "typeString": "String",
-          "name": "after",
-          "url": "/mappea/reference/scalars/string",
-          "description": null
-        },
-        {
-          "typeString": "String",
-          "name": "codeStartsWith",
-          "url": "/mappea/reference/scalars/string",
-          "description": null
-        }
-      ]
     },
     {
       "typeString": "MemberConnection",
       "name": "members",
       "url": "/mappea/reference/objects/memberconnection",
-      "description": null,
+      "description": "Only responses members in this group",
       "isDeprecated": false,
       "args": [
         {
           "typeString": "[ID!]",
           "name": "codes",
           "url": "/mappea/reference/scalars/id",
-          "description": null
+          "description": ""
         },
         {
           "typeString": "MemberType",
           "name": "type",
           "url": "/mappea/reference/enums/membertype",
-          "description": null
+          "description": ""
         },
         {
           "typeString": "Int",
           "name": "first",
           "url": "/mappea/reference/scalars/int",
-          "description": null
+          "description": ""
         },
         {
           "typeString": "Int",
           "name": "last",
           "url": "/mappea/reference/scalars/int",
-          "description": null
+          "description": ""
         },
         {
           "typeString": "String",
           "name": "before",
           "url": "/mappea/reference/scalars/string",
-          "description": null
+          "description": ""
         },
         {
           "typeString": "String",
           "name": "after",
           "url": "/mappea/reference/scalars/string",
-          "description": null
+          "description": ""
         }
       ]
     },
@@ -336,38 +279,38 @@
       "typeString": "APIConnection",
       "name": "apis",
       "url": "/mappea/reference/objects/apiconnection",
-      "description": null,
+      "description": "APIs assigned to this group. Products have APIs.",
       "isDeprecated": false,
       "args": [
         {
           "typeString": "[ID!]",
           "name": "codes",
           "url": "/mappea/reference/scalars/id",
-          "description": null
+          "description": ""
         },
         {
           "typeString": "Int",
           "name": "first",
           "url": "/mappea/reference/scalars/int",
-          "description": null
+          "description": ""
         },
         {
           "typeString": "Int",
           "name": "last",
           "url": "/mappea/reference/scalars/int",
-          "description": null
+          "description": ""
         },
         {
           "typeString": "String",
           "name": "before",
           "url": "/mappea/reference/scalars/string",
-          "description": null
+          "description": ""
         },
         {
           "typeString": "String",
           "name": "after",
           "url": "/mappea/reference/scalars/string",
-          "description": null
+          "description": ""
         }
       ]
     },
@@ -375,62 +318,62 @@
       "typeString": "ManagedGroupConnection",
       "name": "managedGroups",
       "url": "/mappea/reference/objects/managedgroupconnection",
-      "description": null,
+      "description": "Responses all managed groups by this group.",
       "isDeprecated": false,
       "args": [
         {
           "typeString": "[ID!]",
           "name": "group",
           "url": "/mappea/reference/scalars/id",
-          "description": null
+          "description": ""
         },
         {
           "typeString": "[ID!]",
           "name": "api",
           "url": "/mappea/reference/scalars/id",
-          "description": null
+          "description": ""
         },
         {
           "typeString": "[ID!]",
           "name": "resource",
           "url": "/mappea/reference/scalars/id",
-          "description": null
+          "description": ""
         },
         {
           "typeString": "[ID!]",
           "name": "role",
           "url": "/mappea/reference/scalars/id",
-          "description": null
+          "description": ""
         },
         {
           "typeString": "[ID!]",
           "name": "codes",
           "url": "/mappea/reference/scalars/id",
-          "description": null
+          "description": ""
         },
         {
           "typeString": "Int",
           "name": "first",
           "url": "/mappea/reference/scalars/int",
-          "description": null
+          "description": ""
         },
         {
           "typeString": "Int",
           "name": "last",
           "url": "/mappea/reference/scalars/int",
-          "description": null
+          "description": ""
         },
         {
           "typeString": "String",
           "name": "before",
           "url": "/mappea/reference/scalars/string",
-          "description": null
+          "description": ""
         },
         {
           "typeString": "String",
           "name": "after",
           "url": "/mappea/reference/scalars/string",
-          "description": null
+          "description": ""
         }
       ]
     },
@@ -438,44 +381,44 @@
       "typeString": "MemberConnection",
       "name": "allMembers",
       "url": "/mappea/reference/objects/memberconnection",
-      "description": null,
+      "description": "Response all members in this group's childrens (hierarchically),",
       "isDeprecated": false,
       "args": [
         {
           "typeString": "[ID!]",
           "name": "codes",
           "url": "/mappea/reference/scalars/id",
-          "description": null
+          "description": ""
         },
         {
           "typeString": "MemberType",
           "name": "type",
           "url": "/mappea/reference/enums/membertype",
-          "description": null
+          "description": ""
         },
         {
           "typeString": "Int",
           "name": "first",
           "url": "/mappea/reference/scalars/int",
-          "description": null
+          "description": ""
         },
         {
           "typeString": "Int",
           "name": "last",
           "url": "/mappea/reference/scalars/int",
-          "description": null
+          "description": ""
         },
         {
           "typeString": "String",
           "name": "before",
           "url": "/mappea/reference/scalars/string",
-          "description": null
+          "description": ""
         },
         {
           "typeString": "String",
           "name": "after",
           "url": "/mappea/reference/scalars/string",
-          "description": null
+          "description": ""
         }
       ]
     },
@@ -483,38 +426,38 @@
       "typeString": "AccessConnection",
       "name": "accesses",
       "url": "/mappea/reference/objects/accessconnection",
-      "description": null,
+      "description": "Access resources in a group",
       "isDeprecated": false,
       "args": [
         {
           "typeString": "[ID!]",
           "name": "codes",
           "url": "/mappea/reference/scalars/id",
-          "description": null
+          "description": ""
         },
         {
           "typeString": "Int",
           "name": "first",
           "url": "/mappea/reference/scalars/int",
-          "description": null
+          "description": ""
         },
         {
           "typeString": "Int",
           "name": "last",
           "url": "/mappea/reference/scalars/int",
-          "description": null
+          "description": ""
         },
         {
           "typeString": "String",
           "name": "before",
           "url": "/mappea/reference/scalars/string",
-          "description": null
+          "description": ""
         },
         {
           "typeString": "String",
           "name": "after",
           "url": "/mappea/reference/scalars/string",
-          "description": null
+          "description": ""
         }
       ]
     },
@@ -522,44 +465,44 @@
       "typeString": "SupplierConnection",
       "name": "suppliers",
       "url": "/mappea/reference/objects/supplierconnection",
-      "description": null,
+      "description": "Supplier resources in a group",
       "isDeprecated": false,
       "args": [
         {
           "typeString": "[ID!]",
           "name": "codes",
           "url": "/mappea/reference/scalars/id",
-          "description": null
+          "description": ""
         },
         {
           "typeString": "[ID!]",
           "name": "accessID",
           "url": "/mappea/reference/scalars/id",
-          "description": null
+          "description": ""
         },
         {
           "typeString": "Int",
           "name": "first",
           "url": "/mappea/reference/scalars/int",
-          "description": null
+          "description": ""
         },
         {
           "typeString": "Int",
           "name": "last",
           "url": "/mappea/reference/scalars/int",
-          "description": null
+          "description": ""
         },
         {
           "typeString": "String",
           "name": "before",
           "url": "/mappea/reference/scalars/string",
-          "description": null
+          "description": ""
         },
         {
           "typeString": "String",
           "name": "after",
           "url": "/mappea/reference/scalars/string",
-          "description": null
+          "description": ""
         }
       ]
     },
@@ -567,50 +510,50 @@
       "typeString": "ClientConnection",
       "name": "clients",
       "url": "/mappea/reference/objects/clientconnection",
-      "description": null,
+      "description": "Clients resources in a group",
       "isDeprecated": false,
       "args": [
         {
           "typeString": "[ID!]",
           "name": "codes",
           "url": "/mappea/reference/scalars/id",
-          "description": null
+          "description": ""
         },
         {
           "typeString": "[ID!]",
           "name": "name",
           "url": "/mappea/reference/scalars/id",
-          "description": null
+          "description": ""
         },
         {
           "typeString": "Boolean",
           "name": "isActive",
           "url": "/mappea/reference/scalars/boolean",
-          "description": null
+          "description": ""
         },
         {
           "typeString": "Int",
           "name": "first",
           "url": "/mappea/reference/scalars/int",
-          "description": null
+          "description": ""
         },
         {
           "typeString": "Int",
           "name": "last",
           "url": "/mappea/reference/scalars/int",
-          "description": null
+          "description": ""
         },
         {
           "typeString": "String",
           "name": "before",
           "url": "/mappea/reference/scalars/string",
-          "description": null
+          "description": ""
         },
         {
           "typeString": "String",
           "name": "after",
           "url": "/mappea/reference/scalars/string",
-          "description": null
+          "description": ""
         }
       ]
     },
@@ -618,44 +561,44 @@
       "typeString": "RoleConnection",
       "name": "roles",
       "url": "/mappea/reference/objects/roleconnection",
-      "description": null,
+      "description": "You can grant roles to members, which define the roles catalog for a group.",
       "isDeprecated": false,
       "args": [
         {
           "typeString": "[ID!]",
           "name": "codes",
           "url": "/mappea/reference/scalars/id",
-          "description": null
+          "description": ""
         },
         {
           "typeString": "RoleType",
           "name": "type",
           "url": "/mappea/reference/enums/roletype",
-          "description": null
+          "description": ""
         },
         {
           "typeString": "Int",
           "name": "first",
           "url": "/mappea/reference/scalars/int",
-          "description": null
+          "description": ""
         },
         {
           "typeString": "Int",
           "name": "last",
           "url": "/mappea/reference/scalars/int",
-          "description": null
+          "description": ""
         },
         {
           "typeString": "String",
           "name": "before",
           "url": "/mappea/reference/scalars/string",
-          "description": null
+          "description": ""
         },
         {
           "typeString": "String",
           "name": "after",
           "url": "/mappea/reference/scalars/string",
-          "description": null
+          "description": ""
         }
       ]
     }
@@ -663,7 +606,7 @@
   "requireby": [
     {
       "name": "Group",
-      "description": null,
+      "description": "Groups are organized hierarchically.",
       "url": "/mappea/reference/objects/group"
     }
   ],

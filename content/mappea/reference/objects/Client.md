@@ -7,7 +7,7 @@
       "typeString": "ID!",
       "name": "code",
       "url": "/mappea/reference/scalars/id",
-      "description": null,
+      "description": "",
       "isDeprecated": false,
       "args": null
     },
@@ -15,7 +15,7 @@
       "typeString": "ClientData",
       "name": "clientData",
       "url": "/mappea/reference/objects/clientdata",
-      "description": null,
+      "description": "",
       "isDeprecated": false,
       "args": null
     },
@@ -23,7 +23,7 @@
       "typeString": "[Error!]",
       "name": "error",
       "url": "/mappea/reference/objects/error",
-      "description": null,
+      "description": "Errors that abort services",
       "isDeprecated": false,
       "args": null
     },
@@ -31,7 +31,7 @@
       "typeString": "DateTime!",
       "name": "createdAt",
       "url": "/mappea/reference/scalars/datetime",
-      "description": null,
+      "description": "Date created",
       "isDeprecated": false,
       "args": null
     },
@@ -39,7 +39,7 @@
       "typeString": "DateTime!",
       "name": "updatedAt",
       "url": "/mappea/reference/scalars/datetime",
-      "description": null,
+      "description": "Date updated",
       "isDeprecated": false,
       "args": null
     }
@@ -47,7 +47,7 @@
   "requireby": [
     {
       "name": "ClientEdge",
-      "description": null,
+      "description": "",
       "url": "/mappea/reference/objects/clientedge"
     }
   ],
@@ -56,6 +56,7 @@
   "typename": "Client",
   "hideGithubLink": true
 }
+Client identifies who is making the request and holds the configuration assigned to it.
 ## GraphQL schema definition
 
 {{% graphql-schema-type %}}

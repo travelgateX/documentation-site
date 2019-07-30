@@ -7,7 +7,7 @@
       "typeString": "[PaymentXStoredCardEdge]",
       "name": "edges",
       "url": "/paymentx/reference/objects/paymentxstoredcardedge",
-      "description": null,
+      "description": "",
       "isDeprecated": false,
       "args": null
     },
@@ -15,7 +15,7 @@
       "typeString": "PageInfo!",
       "name": "pageInfo",
       "url": "/paymentx/reference/objects/pageinfo",
-      "description": null,
+      "description": "",
       "isDeprecated": false,
       "args": null
     }
@@ -23,7 +23,7 @@
   "requireby": [
     {
       "name": "PaymentXQuery",
-      "description": null,
+      "description": "",
       "url": "/paymentx/reference/objects/paymentxquery"
     }
   ],

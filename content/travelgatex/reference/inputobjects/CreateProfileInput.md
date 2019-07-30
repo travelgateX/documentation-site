@@ -7,49 +7,49 @@
       "typeString": "String!",
       "name": "label",
       "url": "/travelgatex/reference/scalars/string",
-      "description": null,
+      "description": "Label of the Profile",
       "args": null
     },
     {
       "typeString": "String!",
       "name": "group",
       "url": "/travelgatex/reference/scalars/string",
-      "description": null,
+      "description": "Group where Profile has to be placed",
       "args": null
     },
     {
       "typeString": "ProfileType!",
       "name": "type",
       "url": "/travelgatex/reference/enums/profiletype",
-      "description": null,
+      "description": "Profile type",
       "args": null
     },
     {
       "typeString": "EntitiesInput",
       "name": "entities",
       "url": "/travelgatex/reference/inputobjects/entitiesinput",
-      "description": null,
+      "description": "Entities of the Profile",
       "args": null
     },
     {
       "typeString": "ID",
       "name": "owner",
       "url": "/travelgatex/reference/scalars/id",
-      "description": null,
+      "description": "Profile owner",
       "args": null
     },
     {
       "typeString": "Boolean",
       "name": "isActive",
       "url": "/travelgatex/reference/scalars/boolean",
-      "description": null,
+      "description": "Active profile",
       "args": null
     },
     {
       "typeString": "Boolean",
       "name": "isPublished",
       "url": "/travelgatex/reference/scalars/boolean",
-      "description": null,
+      "description": "Profile is published",
       "args": null
     }
   ],

@@ -7,7 +7,7 @@
       "typeString": "ID!",
       "name": "id",
       "url": "/mappea/reference/scalars/id",
-      "description": null,
+      "description": "",
       "isDeprecated": false,
       "args": null
     },
@@ -15,7 +15,7 @@
       "typeString": "DomainName!",
       "name": "name",
       "url": "/mappea/reference/scalars/domainname",
-      "description": null,
+      "description": "",
       "isDeprecated": false,
       "args": null
     },
@@ -23,7 +23,7 @@
       "typeString": "Organization!",
       "name": "organization",
       "url": "/mappea/reference/objects/organization",
-      "description": null,
+      "description": "",
       "isDeprecated": false,
       "args": null
     }
@@ -31,7 +31,7 @@
   "requireby": [
     {
       "name": "Domain",
-      "description": null,
+      "description": "",
       "url": "/mappea/reference/objects/domain"
     }
   ],

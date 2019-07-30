@@ -9,12 +9,12 @@ alwaysopen = false
 
 ## Creating your full OTA
 
-This topic describes how to build your own OTA using [HotelX](/hotelx).
+This topic describes how to build your own OTA using [HotelX](/hotel-x).
 
 ## Before you begin
 
 - Basic knowledge of [Angular](https://angular.io/)
-- Read [HotelX](/hotelx/), which contains information about the HotelX API 
+- Read [HotelX](/hotel-x/), which contains information about the HotelX API 
 
 
 ## Scenario: Create an Online Travel Agency written in Angular

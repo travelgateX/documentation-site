@@ -7,7 +7,7 @@
       "typeString": "Category",
       "name": "node",
       "url": "/travelgatex/reference/objects/category",
-      "description": null,
+      "description": "",
       "isDeprecated": false,
       "args": null
     },
@@ -15,7 +15,7 @@
       "typeString": "String!",
       "name": "cursor",
       "url": "/travelgatex/reference/scalars/string",
-      "description": null,
+      "description": "",
       "isDeprecated": false,
       "args": null
     }
@@ -23,7 +23,7 @@
   "requireby": [
     {
       "name": "CategoryConnection",
-      "description": null,
+      "description": "CategoryList definition",
       "url": "/travelgatex/reference/objects/categoryconnection"
     }
   ],
@@ -32,6 +32,7 @@
   "typename": "CategoryEdge",
   "hideGithubLink": true
 }
+CategoryList Edge definition
 ## GraphQL schema definition
 
 {{% graphql-schema-type %}}

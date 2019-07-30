@@ -65,6 +65,8 @@ is closed.
     <AvailRQ>
         <CancellationPolicies>false</CancellationPolicies>
         <RoomCancellationPolicies>false</RoomCancellationPolicies>
+        <DailyPrices>false</DailyPrices>
+        <DailyRatePlans>false</DailyRatePlans>
         <OnRequest>false</OnRequest>
         <BusinessRules>CheaperAmount</BusinessRules>
         <AvailDestinations> list of destinations
@@ -110,6 +112,8 @@ is closed.
 | AvailRQ               		| 1            	|		| Root node.							|
 | CancellationPolicies 			| 1     	| Boolean	| Indicates if you want to receive the cancellation policies in AvailRS, as long as the supplier returns it in this method (see StaticConfiguration in order to verify if a supplier implements it).	|
 | RoomCancellationPolicies 			| 1     	| Boolean	| Indicates if you want to receive the cancellation policies at room level in AvailRS, as long as the supplier returns it in this method (see Metadata method in order to verify if a supplier implements it).	|
+| DailyPrices					| 0			| Boolean	|  Indicates if you want to receive the daily prices at room level in AvailRS, as long as the supplier returns it in this method (see StaticConfiguration in order to verify if a supplier implements it).		|
+| DailyRatePlans				| 0			| Boolean	|  Indicates if you want to receive the daily rate plans at room level in AvailRS, as long as the supplier returns it in this method (see StaticConfiguration in order to verify if a supplier implements it).		|
 | OnRequest            			| 1     	| Boolean	| Indicates if you want to receive the onrequest options in AvailRS, as long as the supplier returns it in this method (see StaticConfiguration in order to verify if a supplier implements it).		|
 | BusinessRules        			| 1            	|		| Indicates the business rules the client wants to apply in availability, as long as the supplier returns it in this method (see StaticConfiguration in order to verify if a supplier implements it).	|
 | AvailDestinations/Destination		| 1..n         	|		| Contains the list of destinations filters (hotels or cities or zones or geocodes). The number of Destinations is defined in StaticConfiguration.	|

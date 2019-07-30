@@ -1,6 +1,6 @@
 +++
 title = "Changelog"
-pagetitle = "Stats-X changelog"
+pagetitle = "Stats changelog"
 description = "Accurated, chronologically-ordered list of notable changes"
 weight = 2
 icon="fa-exchange"
@@ -10,7 +10,7 @@ hidden = false
 tags = ["products-changelog"]
 +++
 
-Easily accessible log of notable changes to Stats-X
+Easily accessible log of notable changes to Stats
 
 
 ## 2019-06-12
@@ -93,5 +93,5 @@ Easily accessible log of notable changes to Stats-X
 ## 2019-03-14
 
 {{% release-notes-container type="a"%}}
-* Stats-X [product documentation](https://docs.travelgatex.com/stats-x/)
+* Stats [product documentation](https://docs.travelgatex.com/stats/)
 {{% /release-notes-container %}}

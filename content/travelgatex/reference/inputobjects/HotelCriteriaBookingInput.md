@@ -7,35 +7,35 @@
       "typeString": "String!",
       "name": "accessCode",
       "url": "/travelgatex/reference/scalars/string",
-      "description": null,
+      "description": "Name of the access that have to use in the request.",
       "args": null
     },
     {
       "typeString": "Language",
       "name": "language",
       "url": "/travelgatex/reference/scalars/language",
-      "description": null,
+      "description": "The language code.",
       "args": null
     },
     {
       "typeString": "BookingCriteriaType!",
       "name": "typeSearch",
       "url": "/travelgatex/reference/enums/bookingcriteriatype",
-      "description": null,
+      "description": "The search type criteria.",
       "args": null
     },
     {
       "typeString": "CriteriaBookingReferencesInput",
       "name": "references",
       "url": "/travelgatex/reference/inputobjects/criteriabookingreferencesinput",
-      "description": null,
+      "description": "The references criteria.",
       "args": null
     },
     {
       "typeString": "CriteriaBookingDatesInput",
       "name": "dates",
       "url": "/travelgatex/reference/inputobjects/criteriabookingdatesinput",
-      "description": null,
+      "description": "The dates criteria.",
       "args": null
     }
   ],
@@ -45,6 +45,7 @@
   "typename": "HotelCriteriaBookingInput",
   "hideGithubLink": true
 }
+Criteria of book contains basic information to find a book or books.
 ## GraphQL schema definition
 
 {{% graphql-schema-type %}}

@@ -7,26 +7,26 @@
       "typeString": "[HotelXFilterPluginTypeInput!]",
       "name": "includes",
       "url": "/travelgatex/reference/inputobjects/hotelxfilterplugintypeinput",
-      "description": null,
+      "description": "Plugins to include (only these plugins will be executed)",
       "args": null
     },
     {
       "typeString": "[HotelXFilterPluginTypeInput!]",
       "name": "excludes",
       "url": "/travelgatex/reference/inputobjects/hotelxfilterplugintypeinput",
-      "description": null,
+      "description": "Plugins to exclude",
       "args": null
     }
   ],
   "requireby": [
     {
       "name": "HotelXFilterSearchInput",
-      "description": null,
+      "description": "",
       "url": "/travelgatex/reference/inputobjects/hotelxfiltersearchinput"
     },
     {
       "name": "HotelXFilterInput",
-      "description": null,
+      "description": "",
       "url": "/travelgatex/reference/inputobjects/hotelxfilterinput"
     }
   ],

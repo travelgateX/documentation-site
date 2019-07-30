@@ -7,14 +7,14 @@
       "typeString": "[MappingContext!]",
       "name": "contexts",
       "url": "/travelgatex/reference/objects/mappingcontext",
-      "description": null,
+      "description": "Returns the differents group contexts, you can filter by some contexts.",
       "isDeprecated": false,
       "args": [
         {
           "typeString": "[String!]",
           "name": "codes",
           "url": "/travelgatex/reference/scalars/string",
-          "description": null
+          "description": ""
         }
       ]
     },
@@ -22,7 +22,7 @@
       "typeString": "[Error!]",
       "name": "errors",
       "url": "/travelgatex/reference/objects/error",
-      "description": null,
+      "description": "Errors that abort services",
       "isDeprecated": false,
       "args": null
     },
@@ -30,7 +30,7 @@
       "typeString": "[Warning!]",
       "name": "warnings",
       "url": "/travelgatex/reference/objects/warning",
-      "description": null,
+      "description": "Potentially harmful situations or errors that won't force the service to abort",
       "isDeprecated": false,
       "args": null
     }
@@ -38,7 +38,7 @@
   "requireby": [
     {
       "name": "HotelXQuery",
-      "description": null,
+      "description": "",
       "url": "/travelgatex/reference/objects/hotelxquery"
     }
   ],
@@ -47,6 +47,7 @@
   "typename": "Mapping",
   "hideGithubLink": true
 }
+Returns the mapping for a group.
 ## GraphQL schema definition
 
 {{% graphql-schema-type %}}

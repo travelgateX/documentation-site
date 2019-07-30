@@ -7,7 +7,7 @@
       "typeString": "HotelXCommonSettingsData",
       "name": "settings",
       "url": "/travelgatex/reference/objects/hotelxcommonsettingsdata",
-      "description": null,
+      "description": "",
       "isDeprecated": false,
       "args": null
     },
@@ -15,14 +15,14 @@
       "typeString": "[AdviseMessage!]",
       "name": "adviseMessage",
       "url": "/travelgatex/reference/objects/advisemessage",
-      "description": null,
+      "description": "List of messages",
       "isDeprecated": false,
       "args": [
         {
           "typeString": "[AdviseMessageLevel]",
           "name": "level",
           "url": "/travelgatex/reference/enums/advisemessagelevel",
-          "description": null
+          "description": ""
         }
       ]
     }
@@ -30,12 +30,12 @@
   "requireby": [
     {
       "name": "HotelXQuery",
-      "description": null,
+      "description": "",
       "url": "/travelgatex/reference/objects/hotelxquery"
     },
     {
       "name": "HotelXMutation",
-      "description": null,
+      "description": "",
       "url": "/travelgatex/reference/objects/hotelxmutation"
     }
   ],

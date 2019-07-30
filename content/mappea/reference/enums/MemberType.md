@@ -6,20 +6,20 @@
   "requireby": [
     {
       "name": "MemberData",
-      "description": null,
+      "description": "",
       "url": "/mappea/reference/objects/memberdata"
     }
   ],
   "enumValues": [
     {
       "name": "USER",
-      "description": null,
+      "description": "",
       "isDeprecated": false,
       "deprecationReason": null
     },
     {
       "name": "SERVICE_ACCOUNT",
-      "description": null,
+      "description": "",
       "isDeprecated": false,
       "deprecationReason": null
     }

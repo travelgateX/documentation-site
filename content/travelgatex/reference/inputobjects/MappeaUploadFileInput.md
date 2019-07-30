@@ -7,28 +7,28 @@
       "typeString": "String!",
       "name": "requestId",
       "url": "/travelgatex/reference/scalars/string",
-      "description": null,
+      "description": "",
       "args": null
     },
     {
       "typeString": "String",
       "name": "fileName",
       "url": "/travelgatex/reference/scalars/string",
-      "description": null,
+      "description": "",
       "args": null
     },
     {
       "typeString": "String!",
       "name": "delimiter",
       "url": "/travelgatex/reference/scalars/string",
-      "description": null,
+      "description": "",
       "args": null
     },
     {
       "typeString": "String!",
       "name": "fileContent",
       "url": "/travelgatex/reference/scalars/string",
-      "description": null,
+      "description": "",
       "args": null
     }
   ],
@@ -38,6 +38,7 @@
   "typename": "MappeaUploadFileInput",
   "hideGithubLink": true
 }
+## UploadFile
 ## GraphQL schema definition
 
 {{% graphql-schema-type %}}

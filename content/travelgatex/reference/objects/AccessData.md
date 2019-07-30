@@ -7,7 +7,7 @@
       "typeString": "String!",
       "name": "name",
       "url": "/travelgatex/reference/scalars/string",
-      "description": null,
+      "description": "Access descriptive name",
       "isDeprecated": false,
       "args": null
     },
@@ -15,7 +15,7 @@
       "typeString": "Boolean!",
       "name": "isActive",
       "url": "/travelgatex/reference/scalars/boolean",
-      "description": null,
+      "description": "Indicates if Access is active",
       "isDeprecated": false,
       "args": null
     },
@@ -23,7 +23,7 @@
       "typeString": "ID!",
       "name": "code",
       "url": "/travelgatex/reference/scalars/id",
-      "description": null,
+      "description": "Unique AccessConfiguration identifier",
       "isDeprecated": false,
       "args": null
     },
@@ -31,7 +31,7 @@
       "typeString": "Supplier!",
       "name": "supplier",
       "url": "/travelgatex/reference/objects/supplier",
-      "description": null,
+      "description": "Supplier for this Access",
       "isDeprecated": false,
       "args": null
     },
@@ -39,7 +39,7 @@
       "typeString": "Boolean!",
       "name": "isTest",
       "url": "/travelgatex/reference/scalars/boolean",
-      "description": null,
+      "description": "Indicates if Access can be used for testing or not",
       "isDeprecated": false,
       "args": null
     },
@@ -47,7 +47,7 @@
       "typeString": "String",
       "name": "user",
       "url": "/travelgatex/reference/scalars/string",
-      "description": null,
+      "description": "User code to connect to supplier",
       "isDeprecated": false,
       "args": null
     },
@@ -55,7 +55,7 @@
       "typeString": "String",
       "name": "password",
       "url": "/travelgatex/reference/scalars/string",
-      "description": null,
+      "description": "Password for the connection",
       "isDeprecated": false,
       "args": null
     },
@@ -63,7 +63,7 @@
       "typeString": "Urls",
       "name": "urls",
       "url": "/travelgatex/reference/objects/urls",
-      "description": null,
+      "description": "Specific URLs",
       "isDeprecated": false,
       "args": null
     },
@@ -71,7 +71,7 @@
       "typeString": "[Parameter]",
       "name": "parameters",
       "url": "/travelgatex/reference/objects/parameter",
-      "description": null,
+      "description": "List of parameters for additional information",
       "isDeprecated": false,
       "args": null
     },
@@ -79,7 +79,7 @@
       "typeString": "[String!]",
       "name": "markets",
       "url": "/travelgatex/reference/scalars/string",
-      "description": null,
+      "description": "Markets allowed for the Access",
       "isDeprecated": false,
       "args": null
     },
@@ -87,7 +87,7 @@
       "typeString": "[RateRulesType!]",
       "name": "rateRules",
       "url": "/travelgatex/reference/enums/raterulestype",
-      "description": null,
+      "description": "Business rule types for the Access",
       "isDeprecated": false,
       "args": null
     },
@@ -95,7 +95,7 @@
       "typeString": "Access",
       "name": "shared",
       "url": "/travelgatex/reference/objects/access",
-      "description": null,
+      "description": "Parent Access if Shared Access",
       "isDeprecated": false,
       "args": null
     },
@@ -103,23 +103,7 @@
       "typeString": "Organization",
       "name": "owner",
       "url": "/travelgatex/reference/objects/organization",
-      "description": null,
-      "isDeprecated": false,
-      "args": null
-    },
-    {
-      "typeString": "Int!",
-      "name": "updateDescriptiveInfo",
-      "url": "/travelgatex/reference/scalars/int",
-      "description": null,
-      "isDeprecated": false,
-      "args": null
-    },
-    {
-      "typeString": "Int!",
-      "name": "descriptiveInfoLimit",
-      "url": "/travelgatex/reference/scalars/int",
-      "description": null,
+      "description": "Access owner",
       "isDeprecated": false,
       "args": null
     },
@@ -127,23 +111,7 @@
       "typeString": "Boolean",
       "name": "isSchedulerActive",
       "url": "/travelgatex/reference/scalars/boolean",
-      "description": null,
-      "isDeprecated": false,
-      "args": null
-    },
-    {
-      "typeString": "Int!",
-      "name": "updateList",
-      "url": "/travelgatex/reference/scalars/int",
-      "description": null,
-      "isDeprecated": false,
-      "args": null
-    },
-    {
-      "typeString": "String!",
-      "name": "updateDateRange",
-      "url": "/travelgatex/reference/scalars/string",
-      "description": null,
+      "description": "True if scheduler is active",
       "isDeprecated": false,
       "args": null
     },
@@ -151,32 +119,32 @@
       "typeString": "GroupConnection",
       "name": "groups",
       "url": "/travelgatex/reference/objects/groupconnection",
-      "description": null,
+      "description": "Groups where access belongs",
       "isDeprecated": false,
       "args": [
         {
           "typeString": "Int",
           "name": "first",
           "url": "/travelgatex/reference/scalars/int",
-          "description": null
+          "description": ""
         },
         {
           "typeString": "Int",
           "name": "last",
           "url": "/travelgatex/reference/scalars/int",
-          "description": null
+          "description": ""
         },
         {
           "typeString": "String",
           "name": "before",
           "url": "/travelgatex/reference/scalars/string",
-          "description": null
+          "description": ""
         },
         {
           "typeString": "String",
           "name": "after",
           "url": "/travelgatex/reference/scalars/string",
-          "description": null
+          "description": ""
         }
       ]
     }
@@ -184,7 +152,7 @@
   "requireby": [
     {
       "name": "Access",
-      "description": null,
+      "description": "An Access is a set of credentials and configuration in order to access the system of a Supplier.",
       "url": "/travelgatex/reference/objects/access"
     }
   ],

@@ -105,8 +105,10 @@ minimum stay, list of languages supported ...
         <InformChangesPolicies>false</InformChangesPolicies>
         <ImplementsDeltaPrice>false</ImplementsDeltaPrice>
         <RequiredAllPassengers>true</RequiredAllPassengers>
+        <ImplementsDailyPrice>false</ImplementsDailyPrice>
         <InformBedsAvail>false</InformBedsAvail>
         <InformModificationPolicies>false</InformModificationPolicies>
+        <InformNRFRateByRoom>false</InformNRFRateByRoom>
         <ModifyTransactions>
             <ModifyTransaction>
                 <Modify>ModifyStartDateAddDays</Modify>
@@ -269,6 +271,7 @@ These parameters are XMLTravelgate's internal parameters. They define the type o
 (This is either because the supplier doesn't support it or because is has not been updated yet)
 
 -   **ImplementsDailyRatePlan**
+-   **ImplementsDailyPrice**
 -   **InformSharedBed**
 -   **InformBedType**
 -   **InformNumberOfBeds**

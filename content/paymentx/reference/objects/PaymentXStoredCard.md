@@ -7,7 +7,7 @@
       "typeString": "ID!",
       "name": "code",
       "url": "/paymentx/reference/scalars/id",
-      "description": null,
+      "description": "Stored card ID",
       "isDeprecated": false,
       "args": null
     },
@@ -15,7 +15,7 @@
       "typeString": "PaymentXStoredCardData",
       "name": "storedCardData",
       "url": "/paymentx/reference/objects/paymentxstoredcarddata",
-      "description": null,
+      "description": "Stored card information",
       "isDeprecated": false,
       "args": null
     },
@@ -23,7 +23,7 @@
       "typeString": "DateTime!",
       "name": "createdAt",
       "url": "/paymentx/reference/scalars/datetime",
-      "description": null,
+      "description": "Create date",
       "isDeprecated": false,
       "args": null
     },
@@ -31,7 +31,7 @@
       "typeString": "DateTime!",
       "name": "updatedAt",
       "url": "/paymentx/reference/scalars/datetime",
-      "description": null,
+      "description": "Update date",
       "isDeprecated": false,
       "args": null
     },
@@ -39,14 +39,14 @@
       "typeString": "[AdviseMessage!]",
       "name": "adviseMessage",
       "url": "/paymentx/reference/objects/advisemessage",
-      "description": null,
+      "description": "List of messages",
       "isDeprecated": false,
       "args": [
         {
           "typeString": "[AdviseMessageLevel]",
           "name": "level",
           "url": "/paymentx/reference/enums/advisemessagelevel",
-          "description": null
+          "description": ""
         }
       ]
     }
@@ -54,17 +54,17 @@
   "requireby": [
     {
       "name": "PaymentXStoredCardEdge",
-      "description": null,
+      "description": "",
       "url": "/paymentx/reference/objects/paymentxstoredcardedge"
     },
     {
       "name": "PaymentXQuery",
-      "description": null,
+      "description": "",
       "url": "/paymentx/reference/objects/paymentxquery"
     },
     {
       "name": "PaymentXMutation",
-      "description": null,
+      "description": "",
       "url": "/paymentx/reference/objects/paymentxmutation"
     }
   ],

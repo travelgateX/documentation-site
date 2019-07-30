@@ -7,21 +7,21 @@
       "typeString": "String!",
       "name": "key",
       "url": "/travelgatex/reference/scalars/string",
-      "description": null,
+      "description": "Contains the keyword/Id to identify a parameter.\nThis information is mandatory.",
       "args": null
     },
     {
       "typeString": "String!",
       "name": "value",
       "url": "/travelgatex/reference/scalars/string",
-      "description": null,
+      "description": "Contains the parameter values.\nThis information is mandatory.",
       "args": null
     }
   ],
   "requireby": [
     {
       "name": "AccessInput",
-      "description": null,
+      "description": "Access input",
       "url": "/travelgatex/reference/inputobjects/accessinput"
     }
   ],
@@ -30,6 +30,7 @@
   "typename": "ParameterInput",
   "hideGithubLink": true
 }
+Parameters Input.
 ## GraphQL schema definition
 
 {{% graphql-schema-type %}}

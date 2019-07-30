@@ -7,7 +7,7 @@
       "typeString": "[File]",
       "name": "files",
       "url": "/mappea/reference/objects/file",
-      "description": null,
+      "description": "",
       "isDeprecated": false,
       "args": null
     }
@@ -15,7 +15,7 @@
   "requireby": [
     {
       "name": "GetUploadedFilesResponse",
-      "description": null,
+      "description": "## GetUploadedFiles",
       "url": "/mappea/reference/objects/getuploadedfilesresponse"
     }
   ],

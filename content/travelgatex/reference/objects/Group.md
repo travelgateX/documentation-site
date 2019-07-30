@@ -7,7 +7,7 @@
       "typeString": "ID!",
       "name": "code",
       "url": "/travelgatex/reference/scalars/id",
-      "description": null,
+      "description": "",
       "isDeprecated": false,
       "args": null
     },
@@ -15,7 +15,7 @@
       "typeString": "GroupData",
       "name": "groupData",
       "url": "/travelgatex/reference/objects/groupdata",
-      "description": null,
+      "description": "",
       "isDeprecated": false,
       "args": null
     },
@@ -23,14 +23,14 @@
       "typeString": "[AdviseMessage!]",
       "name": "adviseMessage",
       "url": "/travelgatex/reference/objects/advisemessage",
-      "description": null,
+      "description": "List of advise messages.",
       "isDeprecated": false,
       "args": [
         {
           "typeString": "[AdviseMessageLevel]",
           "name": "level",
           "url": "/travelgatex/reference/enums/advisemessagelevel",
-          "description": null
+          "description": ""
         }
       ]
     },
@@ -38,7 +38,7 @@
       "typeString": "DateTime!",
       "name": "createdAt",
       "url": "/travelgatex/reference/scalars/datetime",
-      "description": null,
+      "description": "Date created",
       "isDeprecated": false,
       "args": null
     },
@@ -46,7 +46,7 @@
       "typeString": "DateTime!",
       "name": "updatedAt",
       "url": "/travelgatex/reference/scalars/datetime",
-      "description": null,
+      "description": "Date updated",
       "isDeprecated": false,
       "args": null
     }
@@ -54,37 +54,37 @@
   "requireby": [
     {
       "name": "ClientData",
-      "description": null,
+      "description": "",
       "url": "/travelgatex/reference/objects/clientdata"
     },
     {
       "name": "GroupData",
-      "description": null,
+      "description": "",
       "url": "/travelgatex/reference/objects/groupdata"
     },
     {
       "name": "ManagedGroupData",
-      "description": null,
+      "description": "",
       "url": "/travelgatex/reference/objects/managedgroupdata"
     },
     {
       "name": "ProfileData",
-      "description": null,
+      "description": "Profile data",
       "url": "/travelgatex/reference/objects/profiledata"
     },
     {
       "name": "GroupEdge",
-      "description": null,
+      "description": "",
       "url": "/travelgatex/reference/objects/groupedge"
     },
     {
       "name": "PaymentXStoredCardData",
-      "description": null,
+      "description": "",
       "url": "/travelgatex/reference/objects/paymentxstoredcarddata"
     },
     {
       "name": "AdminMutation",
-      "description": null,
+      "description": "The admin query root of TravelgateX's for implementing GraphQL mutations.",
       "url": "/travelgatex/reference/objects/adminmutation"
     }
   ],
@@ -93,6 +93,7 @@
   "typename": "Group",
   "hideGithubLink": true
 }
+Groups are organized hierarchically.
 ## GraphQL schema definition
 
 {{% graphql-schema-type %}}

@@ -7,7 +7,7 @@
       "typeString": "ManagedGroup",
       "name": "node",
       "url": "/paymentx/reference/objects/managedgroup",
-      "description": null,
+      "description": "",
       "isDeprecated": false,
       "args": null
     },
@@ -15,7 +15,7 @@
       "typeString": "String!",
       "name": "cursor",
       "url": "/paymentx/reference/scalars/string",
-      "description": null,
+      "description": "",
       "isDeprecated": false,
       "args": null
     }
@@ -23,7 +23,7 @@
   "requireby": [
     {
       "name": "ManagedGroupConnection",
-      "description": null,
+      "description": "",
       "url": "/paymentx/reference/objects/managedgroupconnection"
     }
   ],

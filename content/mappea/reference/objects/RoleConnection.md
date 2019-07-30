@@ -7,7 +7,7 @@
       "typeString": "[RoleEdge]",
       "name": "edges",
       "url": "/mappea/reference/objects/roleedge",
-      "description": null,
+      "description": "",
       "isDeprecated": false,
       "args": null
     },
@@ -15,7 +15,7 @@
       "typeString": "PageInfo!",
       "name": "pageInfo",
       "url": "/mappea/reference/objects/pageinfo",
-      "description": null,
+      "description": "",
       "isDeprecated": false,
       "args": null
     }
@@ -23,17 +23,17 @@
   "requireby": [
     {
       "name": "MemberData",
-      "description": null,
+      "description": "",
       "url": "/mappea/reference/objects/memberdata"
     },
     {
       "name": "ResourceData",
-      "description": null,
+      "description": "",
       "url": "/mappea/reference/objects/resourcedata"
     },
     {
       "name": "GroupData",
-      "description": null,
+      "description": "",
       "url": "/mappea/reference/objects/groupdata"
     }
   ],

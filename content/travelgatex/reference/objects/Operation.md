@@ -7,7 +7,7 @@
       "typeString": "ID!",
       "name": "code",
       "url": "/travelgatex/reference/scalars/id",
-      "description": null,
+      "description": "",
       "isDeprecated": false,
       "args": null
     },
@@ -15,7 +15,7 @@
       "typeString": "OperationData",
       "name": "operationData",
       "url": "/travelgatex/reference/objects/operationdata",
-      "description": null,
+      "description": "",
       "isDeprecated": false,
       "args": null
     },
@@ -23,14 +23,14 @@
       "typeString": "[AdviseMessage!]",
       "name": "adviseMessage",
       "url": "/travelgatex/reference/objects/advisemessage",
-      "description": null,
+      "description": "List of advise messages.",
       "isDeprecated": false,
       "args": [
         {
           "typeString": "[AdviseMessageLevel]",
           "name": "level",
           "url": "/travelgatex/reference/enums/advisemessagelevel",
-          "description": null
+          "description": ""
         }
       ]
     },
@@ -38,7 +38,7 @@
       "typeString": "DateTime!",
       "name": "createdAt",
       "url": "/travelgatex/reference/scalars/datetime",
-      "description": null,
+      "description": "Date created",
       "isDeprecated": false,
       "args": null
     },
@@ -46,7 +46,7 @@
       "typeString": "DateTime!",
       "name": "updatedAt",
       "url": "/travelgatex/reference/scalars/datetime",
-      "description": null,
+      "description": "Date updated",
       "isDeprecated": false,
       "args": null
     }
@@ -54,12 +54,12 @@
   "requireby": [
     {
       "name": "OperationEdge",
-      "description": null,
+      "description": "",
       "url": "/travelgatex/reference/objects/operationedge"
     },
     {
       "name": "OperationDetailed",
-      "description": null,
+      "description": "Stats information per operation",
       "url": "/travelgatex/reference/objects/operationdetailed"
     }
   ],

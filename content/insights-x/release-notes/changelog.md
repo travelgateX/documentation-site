@@ -12,6 +12,12 @@ tags = ["products-changelog"]
 
 Easily accessible log of notable changes to Insights-X
 
+## 2019-06-19
+
+{{% release-notes-container type="a"%}}
+* Added [new tables](/insights-x/datasets/dataset-content/insights/dataset-reference-insights/): insights\_(daily|weekly|monthly)\_destination\_(buyer|seller), insights\_agg\_(daily|weekly|monthly)\_destination\_(buyer|seller) and insights\_agg\_(daily|weekly|monthly)\_destination\_tgx
+{{% /release-notes-container %}}
+
 ## 2019-06-05
 
 {{% release-notes-container type="a"%}}
@@ -23,7 +29,7 @@ Easily accessible log of notable changes to Insights-X
 {{% /release-notes-container %}}
 
 {{% release-notes-container type="a"%}}
-* Benchmark is available now for Performance. Added [new table](/insights-x/datasets/concepts/dataset-content/benchmark/performance/dataset-reference-benchmark/) in benchmark: performance\_daily\_(buyer|seller).
+* Benchmark is available now for Performance. Added [new table](/insights-x/datasets/dataset-content/benchmark/insights/dataset-reference-benchmark/) in benchmark: performance\_daily\_(buyer|seller).
 {{% /release-notes-container %}}
 
 ## 2019-05-27
@@ -39,7 +45,7 @@ Easily accessible log of notable changes to Insights-X
 {{% /release-notes-container %}}
 
 {{% release-notes-container type="c"%}}
-* Benchmark table daily\_benchmarking\_seller replaced by new ones benchmark [tables](/insights-x/datasets/concepts/dataset-content/benchmark/insights/dataset-reference-benchmark/)
+* Benchmark table daily\_benchmarking\_seller replaced by new ones benchmark [tables](/insights-x/datasets/dataset-content/benchmark/insights/dataset-reference-benchmark/)
 
 {{% /release-notes-container %}}
 
@@ -54,7 +60,7 @@ Easily accessible log of notable changes to Insights-X
 {{% /release-notes-container %}}
 
 {{% release-notes-container type="a"%}}
-* Insights-X [Concepts](/insights-x/datasets/concepts/)
+* Benchmark [Concepts](/insights-x/datasets/dataset-content/benchmark/insights/dataset-concepts-benchmark/)
 {{% /release-notes-container %}}
 
 ## 2019-02-21

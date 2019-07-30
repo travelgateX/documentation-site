@@ -7,7 +7,7 @@
       "typeString": "[CategoryEdge]",
       "name": "edges",
       "url": "/travelgatex/reference/objects/categoryedge",
-      "description": null,
+      "description": "",
       "isDeprecated": false,
       "args": null
     },
@@ -15,7 +15,7 @@
       "typeString": "PageInfo!",
       "name": "pageInfo",
       "url": "/travelgatex/reference/objects/pageinfo",
-      "description": null,
+      "description": "Indicates info about page",
       "isDeprecated": false,
       "args": null
     }
@@ -23,7 +23,7 @@
   "requireby": [
     {
       "name": "HotelXQuery",
-      "description": null,
+      "description": "",
       "url": "/travelgatex/reference/objects/hotelxquery"
     }
   ],
@@ -32,6 +32,7 @@
   "typename": "CategoryConnection",
   "hideGithubLink": true
 }
+CategoryList definition
 ## GraphQL schema definition
 
 {{% graphql-schema-type %}}

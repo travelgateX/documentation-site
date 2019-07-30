@@ -7,21 +7,21 @@
       "typeString": "[ID]",
       "name": "accessID",
       "url": "/travelgatex/reference/scalars/id",
-      "description": null,
+      "description": "",
       "args": null
     },
     {
       "typeString": "[ID]",
       "name": "group",
       "url": "/travelgatex/reference/scalars/id",
-      "description": null,
+      "description": "",
       "args": null
     },
     {
       "typeString": "[ID!]",
       "name": "owner",
       "url": "/travelgatex/reference/scalars/id",
-      "description": null,
+      "description": "",
       "args": null
     }
   ],

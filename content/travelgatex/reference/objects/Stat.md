@@ -7,7 +7,7 @@
       "typeString": "DateTime!",
       "name": "start",
       "url": "/travelgatex/reference/scalars/datetime",
-      "description": null,
+      "description": "Start UTC",
       "isDeprecated": false,
       "args": null
     },
@@ -15,7 +15,7 @@
       "typeString": "DateTime!",
       "name": "end",
       "url": "/travelgatex/reference/scalars/datetime",
-      "description": null,
+      "description": "End UTC",
       "isDeprecated": false,
       "args": null
     },
@@ -23,7 +23,7 @@
       "typeString": "Float",
       "name": "duration",
       "url": "/travelgatex/reference/scalars/float",
-      "description": null,
+      "description": "Difference between start and end in miliseconds",
       "isDeprecated": false,
       "args": null
     }
@@ -31,22 +31,22 @@
   "requireby": [
     {
       "name": "StatsRequest",
-      "description": null,
+      "description": "Contains internal information.",
       "url": "/travelgatex/reference/objects/statsrequest"
     },
     {
       "name": "StatPlugin",
-      "description": null,
+      "description": "",
       "url": "/travelgatex/reference/objects/statplugin"
     },
     {
       "name": "StatAccess",
-      "description": null,
+      "description": "",
       "url": "/travelgatex/reference/objects/stataccess"
     },
     {
       "name": "StatTransaction",
-      "description": null,
+      "description": "",
       "url": "/travelgatex/reference/objects/stattransaction"
     }
   ],

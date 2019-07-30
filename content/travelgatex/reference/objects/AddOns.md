@@ -7,7 +7,7 @@
       "typeString": "JSON",
       "name": "distribute",
       "url": "/travelgatex/reference/scalars/json",
-      "description": null,
+      "description": "Extra information from the distribution layer",
       "isDeprecated": true,
       "args": null,
       "deprecationReason": "You can find it in distribution AddOn",
@@ -23,7 +23,7 @@
       "typeString": "[AddOn!]",
       "name": "distribution",
       "url": "/travelgatex/reference/objects/addon",
-      "description": null,
+      "description": "Extra information from the distribution layer",
       "isDeprecated": false,
       "args": null
     }
@@ -31,17 +31,17 @@
   "requireby": [
     {
       "name": "HotelOptionSearch",
-      "description": null,
+      "description": "An option includes hotel information, meal plan, total price, conditions and room description",
       "url": "/travelgatex/reference/objects/hoteloptionsearch"
     },
     {
       "name": "HotelOptionQuote",
-      "description": null,
+      "description": "Contains information about quote(s)",
       "url": "/travelgatex/reference/objects/hoteloptionquote"
     },
     {
       "name": "HotelBookingDetail",
-      "description": null,
+      "description": "Contains information about booking",
       "url": "/travelgatex/reference/objects/hotelbookingdetail"
     }
   ],
@@ -50,6 +50,7 @@
   "typename": "AddOns",
   "hideGithubLink": true
 }
+Additional information about the option
 ## GraphQL schema definition
 
 {{% graphql-schema-type %}}

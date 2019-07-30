@@ -7,14 +7,14 @@
       "typeString": "ID!",
       "name": "id",
       "url": "/travelgatex/reference/scalars/id",
-      "description": null,
+      "description": "Id of the resource permissions to be granted.",
       "args": null
     },
     {
       "typeString": "[ID]",
       "name": "groups",
       "url": "/travelgatex/reference/scalars/id",
-      "description": null,
+      "description": "Groups that will see this resoruce.",
       "args": null
     }
   ],

@@ -7,7 +7,7 @@
       "typeString": "ID!",
       "name": "code",
       "url": "/travelgatex/reference/scalars/id",
-      "description": null,
+      "description": "",
       "isDeprecated": false,
       "args": null
     },
@@ -15,7 +15,7 @@
       "typeString": "StatsData",
       "name": "statsData",
       "url": "/travelgatex/reference/objects/statsdata",
-      "description": null,
+      "description": "The data returned by a Stats query.",
       "isDeprecated": false,
       "args": null
     },
@@ -23,14 +23,14 @@
       "typeString": "[AdviseMessage!]",
       "name": "adviseMessage",
       "url": "/travelgatex/reference/objects/advisemessage",
-      "description": null,
+      "description": "List of advise messages.",
       "isDeprecated": false,
       "args": [
         {
           "typeString": "[AdviseMessageLevel]",
           "name": "level",
           "url": "/travelgatex/reference/enums/advisemessagelevel",
-          "description": null
+          "description": ""
         }
       ]
     },
@@ -38,7 +38,7 @@
       "typeString": "DateTime!",
       "name": "createdAt",
       "url": "/travelgatex/reference/scalars/datetime",
-      "description": null,
+      "description": "Create date",
       "isDeprecated": false,
       "args": null
     },
@@ -46,7 +46,7 @@
       "typeString": "DateTime!",
       "name": "updatedAt",
       "url": "/travelgatex/reference/scalars/datetime",
-      "description": null,
+      "description": "Update date",
       "isDeprecated": false,
       "args": null
     }
@@ -54,7 +54,7 @@
   "requireby": [
     {
       "name": "StatsEdge",
-      "description": null,
+      "description": "",
       "url": "/travelgatex/reference/objects/statsedge"
     }
   ],
@@ -63,6 +63,7 @@
   "typename": "Stats",
   "hideGithubLink": true
 }
+The service used to access the stats of every connection that uses the HUB
 ## GraphQL schema definition
 
 {{% graphql-schema-type %}}

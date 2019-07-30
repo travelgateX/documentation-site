@@ -7,7 +7,7 @@
       "typeString": "UploadFileData",
       "name": "data",
       "url": "/travelgatex/reference/objects/uploadfiledata",
-      "description": null,
+      "description": "",
       "isDeprecated": false,
       "args": null
     },
@@ -15,7 +15,7 @@
       "typeString": "Error",
       "name": "error",
       "url": "/travelgatex/reference/objects/error",
-      "description": null,
+      "description": "",
       "isDeprecated": false,
       "args": null
     },
@@ -23,7 +23,7 @@
       "typeString": "[Warning]",
       "name": "warnings",
       "url": "/travelgatex/reference/objects/warning",
-      "description": null,
+      "description": "",
       "isDeprecated": false,
       "args": null
     }
@@ -31,7 +31,7 @@
   "requireby": [
     {
       "name": "MappeaMutation",
-      "description": null,
+      "description": "",
       "url": "/travelgatex/reference/objects/mappeamutation"
     }
   ],

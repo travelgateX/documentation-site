@@ -7,7 +7,7 @@
       "typeString": "String!",
       "name": "name",
       "url": "/travelgatex/reference/scalars/string",
-      "description": null,
+      "description": "Access name",
       "isDeprecated": false,
       "args": null
     },
@@ -15,7 +15,7 @@
       "typeString": "Stat!",
       "name": "total",
       "url": "/travelgatex/reference/objects/stat",
-      "description": null,
+      "description": "Total access time",
       "isDeprecated": false,
       "args": null
     },
@@ -23,7 +23,7 @@
       "typeString": "Stat",
       "name": "staticConfiguration",
       "url": "/travelgatex/reference/objects/stat",
-      "description": null,
+      "description": "Static configuration time",
       "isDeprecated": false,
       "args": null
     },
@@ -31,7 +31,7 @@
       "typeString": "Int!",
       "name": "hotels",
       "url": "/travelgatex/reference/scalars/int",
-      "description": null,
+      "description": "Number of hotels",
       "isDeprecated": false,
       "args": null
     },
@@ -39,7 +39,7 @@
       "typeString": "Int!",
       "name": "zones",
       "url": "/travelgatex/reference/scalars/int",
-      "description": null,
+      "description": "Number of zones",
       "isDeprecated": false,
       "args": null
     },
@@ -47,7 +47,7 @@
       "typeString": "Int!",
       "name": "cities",
       "url": "/travelgatex/reference/scalars/int",
-      "description": null,
+      "description": "Number of cities",
       "isDeprecated": false,
       "args": null
     },
@@ -55,7 +55,7 @@
       "typeString": "StatPlugin",
       "name": "requestAccess",
       "url": "/travelgatex/reference/objects/statplugin",
-      "description": null,
+      "description": "Access request time",
       "isDeprecated": false,
       "args": null
     },
@@ -63,7 +63,7 @@
       "typeString": "StatPlugin",
       "name": "responseAccess",
       "url": "/travelgatex/reference/objects/statplugin",
-      "description": null,
+      "description": "Access response time",
       "isDeprecated": false,
       "args": null
     },
@@ -71,7 +71,7 @@
       "typeString": "[StatTransaction!]!",
       "name": "transactions",
       "url": "/travelgatex/reference/objects/stattransaction",
-      "description": null,
+      "description": "Detail transaction time",
       "isDeprecated": false,
       "args": null
     },
@@ -79,7 +79,7 @@
       "typeString": "[StatPlugin!]",
       "name": "plugins",
       "url": "/travelgatex/reference/objects/statplugin",
-      "description": null,
+      "description": "Plugin execution time",
       "isDeprecated": false,
       "args": null
     }

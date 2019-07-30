@@ -7,7 +7,7 @@
       "typeString": "String!",
       "name": "name",
       "url": "/paymentx/reference/scalars/string",
-      "description": null,
+      "description": "Holder's name",
       "isDeprecated": false,
       "args": null
     },
@@ -15,7 +15,7 @@
       "typeString": "String!",
       "name": "surname",
       "url": "/paymentx/reference/scalars/string",
-      "description": null,
+      "description": "Holder's surname",
       "isDeprecated": false,
       "args": null
     }
@@ -23,7 +23,7 @@
   "requireby": [
     {
       "name": "PaymentXStoredCardData",
-      "description": null,
+      "description": "",
       "url": "/paymentx/reference/objects/paymentxstoredcarddata"
     }
   ],
@@ -32,6 +32,7 @@
   "typename": "Holder",
   "hideGithubLink": true
 }
+Holder object that contains the occupant's (pax's) name and surname.
 ## GraphQL schema definition
 
 {{% graphql-schema-type %}}

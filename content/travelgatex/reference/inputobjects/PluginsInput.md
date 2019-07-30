@@ -7,21 +7,21 @@
       "typeString": "PluginType!",
       "name": "type",
       "url": "/travelgatex/reference/enums/plugintype",
-      "description": null,
+      "description": "type of the plugins to execute",
       "args": null
     },
     {
       "typeString": "String!",
       "name": "name",
       "url": "/travelgatex/reference/scalars/string",
-      "description": null,
+      "description": "name of plugin to execute",
       "args": null
     },
     {
       "typeString": "[ParameterInput!]",
       "name": "parameters",
       "url": "/travelgatex/reference/inputobjects/parameterinput",
-      "description": null,
+      "description": "Plugin's parameters",
       "args": null
     }
   ],
@@ -31,6 +31,7 @@
   "typename": "PluginsInput",
   "hideGithubLink": true
 }
+Plugin to execute.
 ## GraphQL schema definition
 
 {{% graphql-schema-type %}}

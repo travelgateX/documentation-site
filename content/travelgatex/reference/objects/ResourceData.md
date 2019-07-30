@@ -7,7 +7,7 @@
       "typeString": "ID!",
       "name": "id",
       "url": "/travelgatex/reference/scalars/id",
-      "description": null,
+      "description": "",
       "isDeprecated": false,
       "args": null
     },
@@ -15,7 +15,7 @@
       "typeString": "ID!",
       "name": "code",
       "url": "/travelgatex/reference/scalars/id",
-      "description": null,
+      "description": "",
       "isDeprecated": false,
       "args": null
     },
@@ -23,7 +23,7 @@
       "typeString": "Boolean!",
       "name": "isEditable",
       "url": "/travelgatex/reference/scalars/boolean",
-      "description": null,
+      "description": "",
       "isDeprecated": false,
       "args": null
     },
@@ -31,7 +31,7 @@
       "typeString": "String",
       "name": "label",
       "url": "/travelgatex/reference/scalars/string",
-      "description": null,
+      "description": "",
       "isDeprecated": false,
       "args": null
     },
@@ -39,38 +39,38 @@
       "typeString": "APIConnection",
       "name": "apis",
       "url": "/travelgatex/reference/objects/apiconnection",
-      "description": null,
+      "description": "which API have asigned this resource?",
       "isDeprecated": false,
       "args": [
         {
           "typeString": "[ID!]",
           "name": "codes",
           "url": "/travelgatex/reference/scalars/id",
-          "description": null
+          "description": ""
         },
         {
           "typeString": "Int",
           "name": "first",
           "url": "/travelgatex/reference/scalars/int",
-          "description": null
+          "description": ""
         },
         {
           "typeString": "Int",
           "name": "last",
           "url": "/travelgatex/reference/scalars/int",
-          "description": null
+          "description": ""
         },
         {
           "typeString": "String",
           "name": "before",
           "url": "/travelgatex/reference/scalars/string",
-          "description": null
+          "description": ""
         },
         {
           "typeString": "String",
           "name": "after",
           "url": "/travelgatex/reference/scalars/string",
-          "description": null
+          "description": ""
         }
       ]
     },
@@ -78,44 +78,44 @@
       "typeString": "RoleConnection",
       "name": "roles",
       "url": "/travelgatex/reference/objects/roleconnection",
-      "description": null,
+      "description": "which roles are asigned or are possibles in this resource?",
       "isDeprecated": false,
       "args": [
         {
           "typeString": "[ID!]",
           "name": "codes",
           "url": "/travelgatex/reference/scalars/id",
-          "description": null
+          "description": ""
         },
         {
           "typeString": "RoleType",
           "name": "type",
           "url": "/travelgatex/reference/enums/roletype",
-          "description": null
+          "description": ""
         },
         {
           "typeString": "Int",
           "name": "first",
           "url": "/travelgatex/reference/scalars/int",
-          "description": null
+          "description": ""
         },
         {
           "typeString": "Int",
           "name": "last",
           "url": "/travelgatex/reference/scalars/int",
-          "description": null
+          "description": ""
         },
         {
           "typeString": "String",
           "name": "before",
           "url": "/travelgatex/reference/scalars/string",
-          "description": null
+          "description": ""
         },
         {
           "typeString": "String",
           "name": "after",
           "url": "/travelgatex/reference/scalars/string",
-          "description": null
+          "description": ""
         }
       ]
     }
@@ -123,7 +123,7 @@
   "requireby": [
     {
       "name": "Resource",
-      "description": null,
+      "description": "Resources are those used in APIs and Products.",
       "url": "/travelgatex/reference/objects/resource"
     }
   ],

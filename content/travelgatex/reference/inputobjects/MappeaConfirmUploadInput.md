@@ -7,14 +7,14 @@
       "typeString": "Int!",
       "name": "fileId",
       "url": "/travelgatex/reference/scalars/int",
-      "description": null,
+      "description": "",
       "args": null
     },
     {
       "typeString": "[MappeaSupplierConfirmedInput!]!",
       "name": "suppliers",
       "url": "/travelgatex/reference/inputobjects/mappeasupplierconfirmedinput",
-      "description": null,
+      "description": "",
       "args": null
     }
   ],
@@ -24,6 +24,7 @@
   "typename": "MappeaConfirmUploadInput",
   "hideGithubLink": true
 }
+## ConfirmUpload
 ## GraphQL schema definition
 
 {{% graphql-schema-type %}}

@@ -7,14 +7,14 @@
       "typeString": "Access",
       "name": "createAccess",
       "url": "/travelgatex/reference/objects/access",
-      "description": null,
+      "description": "Creates an Access",
       "isDeprecated": false,
       "args": [
         {
           "typeString": "AccessInput!",
           "name": "input",
           "url": "/travelgatex/reference/inputobjects/accessinput",
-          "description": null
+          "description": ""
         }
       ]
     },
@@ -22,14 +22,14 @@
       "typeString": "Access",
       "name": "updateAccess",
       "url": "/travelgatex/reference/objects/access",
-      "description": null,
+      "description": "Updates an Access",
       "isDeprecated": false,
       "args": [
         {
           "typeString": "AccessInput!",
           "name": "input",
           "url": "/travelgatex/reference/inputobjects/accessinput",
-          "description": null
+          "description": ""
         }
       ]
     },
@@ -37,14 +37,14 @@
       "typeString": "Access",
       "name": "grantAccessToGroup",
       "url": "/travelgatex/reference/objects/access",
-      "description": null,
+      "description": "Grants Access visibility to a group",
       "isDeprecated": false,
       "args": [
         {
           "typeString": "GroupInput!",
           "name": "input",
           "url": "/travelgatex/reference/inputobjects/groupinput",
-          "description": null
+          "description": ""
         }
       ]
     },
@@ -52,14 +52,14 @@
       "typeString": "Access",
       "name": "deleteAccessFromGroup",
       "url": "/travelgatex/reference/objects/access",
-      "description": null,
+      "description": "Removes Access visibility to groups",
       "isDeprecated": false,
       "args": [
         {
           "typeString": "GroupInput!",
           "name": "input",
           "url": "/travelgatex/reference/inputobjects/groupinput",
-          "description": null
+          "description": ""
         }
       ]
     },
@@ -67,14 +67,14 @@
       "typeString": "Supplier",
       "name": "grantSupplierToGroup",
       "url": "/travelgatex/reference/objects/supplier",
-      "description": null,
+      "description": "Grants Supplier visibility to a group",
       "isDeprecated": false,
       "args": [
         {
           "typeString": "GroupInput!",
           "name": "input",
           "url": "/travelgatex/reference/inputobjects/groupinput",
-          "description": null
+          "description": ""
         }
       ]
     },
@@ -82,14 +82,14 @@
       "typeString": "Supplier",
       "name": "deleteSupplierFromGroup",
       "url": "/travelgatex/reference/objects/supplier",
-      "description": null,
+      "description": "Removes Supplier visibility to groups",
       "isDeprecated": false,
       "args": [
         {
           "typeString": "GroupInput!",
           "name": "input",
           "url": "/travelgatex/reference/inputobjects/groupinput",
-          "description": null
+          "description": ""
         }
       ]
     },
@@ -97,14 +97,14 @@
       "typeString": "Client",
       "name": "grantClientToGroup",
       "url": "/travelgatex/reference/objects/client",
-      "description": null,
+      "description": "Grants Client visibility to a group.",
       "isDeprecated": false,
       "args": [
         {
           "typeString": "GroupInput!",
           "name": "input",
           "url": "/travelgatex/reference/inputobjects/groupinput",
-          "description": null
+          "description": ""
         }
       ]
     },
@@ -112,14 +112,14 @@
       "typeString": "Client",
       "name": "deleteClientFromGroup",
       "url": "/travelgatex/reference/objects/client",
-      "description": null,
+      "description": "Removes Client visibility to groups.",
       "isDeprecated": false,
       "args": [
         {
           "typeString": "GroupInput!",
           "name": "input",
           "url": "/travelgatex/reference/inputobjects/groupinput",
-          "description": null
+          "description": ""
         }
       ]
     },
@@ -127,14 +127,14 @@
       "typeString": "Client",
       "name": "createClient",
       "url": "/travelgatex/reference/objects/client",
-      "description": null,
+      "description": "Creates a Client.",
       "isDeprecated": false,
       "args": [
         {
           "typeString": "CreateClientInput!",
           "name": "input",
           "url": "/travelgatex/reference/inputobjects/createclientinput",
-          "description": null
+          "description": ""
         }
       ]
     },
@@ -142,14 +142,14 @@
       "typeString": "Client",
       "name": "updateClient",
       "url": "/travelgatex/reference/objects/client",
-      "description": null,
+      "description": "Updates a Client.",
       "isDeprecated": false,
       "args": [
         {
           "typeString": "UpdateClientInput!",
           "name": "input",
           "url": "/travelgatex/reference/inputobjects/updateclientinput",
-          "description": null
+          "description": ""
         }
       ]
     },
@@ -157,14 +157,14 @@
       "typeString": "Profile",
       "name": "createProfile",
       "url": "/travelgatex/reference/objects/profile",
-      "description": null,
+      "description": "Creates a Profile.",
       "isDeprecated": false,
       "args": [
         {
           "typeString": "CreateProfileInput!",
           "name": "input",
           "url": "/travelgatex/reference/inputobjects/createprofileinput",
-          "description": null
+          "description": ""
         }
       ]
     },
@@ -172,14 +172,14 @@
       "typeString": "Profile",
       "name": "updateProfile",
       "url": "/travelgatex/reference/objects/profile",
-      "description": null,
+      "description": "Updates a Profile.",
       "isDeprecated": false,
       "args": [
         {
           "typeString": "UpdateProfileInput!",
           "name": "input",
           "url": "/travelgatex/reference/inputobjects/updateprofileinput",
-          "description": null
+          "description": ""
         }
       ]
     },
@@ -187,14 +187,14 @@
       "typeString": "Profile",
       "name": "addEntitiesToProfile",
       "url": "/travelgatex/reference/objects/profile",
-      "description": null,
+      "description": "Adds entities to a Profile.",
       "isDeprecated": false,
       "args": [
         {
           "typeString": "UpdateEntitiesInput!",
           "name": "input",
           "url": "/travelgatex/reference/inputobjects/updateentitiesinput",
-          "description": null
+          "description": ""
         }
       ]
     },
@@ -202,14 +202,14 @@
       "typeString": "Profile",
       "name": "removeEntitiesFromProfile",
       "url": "/travelgatex/reference/objects/profile",
-      "description": null,
+      "description": "Removes entities from a Profile.",
       "isDeprecated": false,
       "args": [
         {
           "typeString": "UpdateEntitiesInput!",
           "name": "input",
           "url": "/travelgatex/reference/inputobjects/updateentitiesinput",
-          "description": null
+          "description": ""
         }
       ]
     },
@@ -217,29 +217,14 @@
       "typeString": "Organization!",
       "name": "createOrganization",
       "url": "/travelgatex/reference/objects/organization",
-      "description": null,
+      "description": "Create organization. Require an user to be specified as the owner of the group.",
       "isDeprecated": false,
       "args": [
         {
           "typeString": "CreateOrganizationInput!",
           "name": "organization",
           "url": "/travelgatex/reference/inputobjects/createorganizationinput",
-          "description": null
-        }
-      ]
-    },
-    {
-      "typeString": "Organization!",
-      "name": "suitOrganization",
-      "url": "/travelgatex/reference/objects/organization",
-      "description": null,
-      "isDeprecated": false,
-      "args": [
-        {
-          "typeString": "SuitOrganizationInput!",
-          "name": "organization",
-          "url": "/travelgatex/reference/inputobjects/suitorganizationinput",
-          "description": null
+          "description": ""
         }
       ]
     },
@@ -247,14 +232,14 @@
       "typeString": "Member!",
       "name": "createMember",
       "url": "/travelgatex/reference/objects/member",
-      "description": null,
+      "description": "Create member; requires specific group and role",
       "isDeprecated": false,
       "args": [
         {
           "typeString": "CreateMemberInput!",
           "name": "member",
           "url": "/travelgatex/reference/inputobjects/creatememberinput",
-          "description": null
+          "description": ""
         }
       ]
     },
@@ -262,14 +247,14 @@
       "typeString": "Group!",
       "name": "createGroup",
       "url": "/travelgatex/reference/objects/group",
-      "description": null,
+      "description": "Create group; group \"owner\" is optional",
       "isDeprecated": false,
       "args": [
         {
           "typeString": "CreateGroupInput!",
           "name": "group",
           "url": "/travelgatex/reference/inputobjects/creategroupinput",
-          "description": null
+          "description": ""
         }
       ]
     },
@@ -277,59 +262,14 @@
       "typeString": "Member!",
       "name": "updateMember",
       "url": "/travelgatex/reference/objects/member",
-      "description": null,
+      "description": "Update member additions or remove roles",
       "isDeprecated": false,
       "args": [
         {
           "typeString": "UpdateMemberInput!",
           "name": "member",
           "url": "/travelgatex/reference/inputobjects/updatememberinput",
-          "description": null
-        }
-      ]
-    },
-    {
-      "typeString": "Member!",
-      "name": "grantPermissions",
-      "url": "/travelgatex/reference/objects/member",
-      "description": null,
-      "isDeprecated": false,
-      "args": [
-        {
-          "typeString": "GrantPermissionsInput!",
-          "name": "member",
-          "url": "/travelgatex/reference/inputobjects/grantpermissionsinput",
-          "description": null
-        }
-      ]
-    },
-    {
-      "typeString": "Member!",
-      "name": "revokePermissions",
-      "url": "/travelgatex/reference/objects/member",
-      "description": null,
-      "isDeprecated": false,
-      "args": [
-        {
-          "typeString": "GrantPermissionsInput!",
-          "name": "member",
-          "url": "/travelgatex/reference/inputobjects/grantpermissionsinput",
-          "description": null
-        }
-      ]
-    },
-    {
-      "typeString": "Member!",
-      "name": "clonePermissions",
-      "url": "/travelgatex/reference/objects/member",
-      "description": null,
-      "isDeprecated": false,
-      "args": [
-        {
-          "typeString": "ClonePermissionsInput!",
-          "name": "member",
-          "url": "/travelgatex/reference/inputobjects/clonepermissionsinput",
-          "description": null
+          "description": ""
         }
       ]
     },
@@ -337,14 +277,20 @@
       "typeString": "Group!",
       "name": "updateGroup",
       "url": "/travelgatex/reference/objects/group",
-      "description": null,
+      "description": "Update group additions or remove APIs",
       "isDeprecated": false,
       "args": [
         {
           "typeString": "UpdateGroupInput!",
           "name": "group",
           "url": "/travelgatex/reference/inputobjects/updategroupinput",
-          "description": null
+          "description": ""
+        },
+        {
+          "typeString": "Method!",
+          "name": "method",
+          "url": "/travelgatex/reference/enums/method",
+          "description": ""
         }
       ]
     },
@@ -352,14 +298,14 @@
       "typeString": "Member!",
       "name": "deleteMember",
       "url": "/travelgatex/reference/objects/member",
-      "description": null,
+      "description": "Delete a member from specific group",
       "isDeprecated": false,
       "args": [
         {
           "typeString": "[DeleteMemberInput!]!",
           "name": "member",
           "url": "/travelgatex/reference/inputobjects/deletememberinput",
-          "description": null
+          "description": ""
         }
       ]
     },
@@ -367,44 +313,14 @@
       "typeString": "Group!",
       "name": "deleteGroup",
       "url": "/travelgatex/reference/objects/group",
-      "description": null,
+      "description": "Delete group and members from this group",
       "isDeprecated": false,
       "args": [
         {
           "typeString": "DeleteGroupInput!",
           "name": "group",
           "url": "/travelgatex/reference/inputobjects/deletegroupinput",
-          "description": null
-        }
-      ]
-    },
-    {
-      "typeString": "Group!",
-      "name": "grantApiToGroup",
-      "url": "/travelgatex/reference/objects/group",
-      "description": null,
-      "isDeprecated": false,
-      "args": [
-        {
-          "typeString": "UpdateGroupAPISInput",
-          "name": "group",
-          "url": "/travelgatex/reference/inputobjects/updategroupapisinput",
-          "description": null
-        }
-      ]
-    },
-    {
-      "typeString": "Group!",
-      "name": "revokeApiFromGroup",
-      "url": "/travelgatex/reference/objects/group",
-      "description": null,
-      "isDeprecated": false,
-      "args": [
-        {
-          "typeString": "UpdateGroupAPISInput",
-          "name": "group",
-          "url": "/travelgatex/reference/inputobjects/updategroupapisinput",
-          "description": null
+          "description": ""
         }
       ]
     }
@@ -412,7 +328,7 @@
   "requireby": [
     {
       "name": "Mutation",
-      "description": null,
+      "description": "The root query for implementing GraphQL mutations. Mutations are operations that change or update data on the server",
       "url": "/travelgatex/reference/schema/mutation"
     }
   ],
@@ -421,6 +337,7 @@
   "typename": "AdminMutation",
   "hideGithubLink": true
 }
+The admin query root of TravelgateX's for implementing GraphQL mutations.
 ## GraphQL schema definition
 
 {{% graphql-schema-type %}}

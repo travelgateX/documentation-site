@@ -7,35 +7,35 @@
       "typeString": "ID!",
       "name": "group",
       "url": "/travelgatex/reference/scalars/id",
-      "description": null,
+      "description": "",
       "args": null
     },
     {
       "typeString": "GroupTypeInput!",
       "name": "type",
       "url": "/travelgatex/reference/enums/grouptypeinput",
-      "description": null,
+      "description": "",
       "args": null
     },
     {
       "typeString": "String",
       "name": "info",
       "url": "/travelgatex/reference/scalars/string",
-      "description": null,
+      "description": "",
       "args": null
     },
     {
       "typeString": "ID!",
       "name": "parent",
       "url": "/travelgatex/reference/scalars/id",
-      "description": null,
+      "description": "",
       "args": null
     },
     {
       "typeString": "Template",
       "name": "template",
       "url": "/travelgatex/reference/enums/template",
-      "description": null,
+      "description": "",
       "args": null
     }
   ],

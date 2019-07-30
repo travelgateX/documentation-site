@@ -7,7 +7,7 @@
       "typeString": "GetUploadedFilesResponse!",
       "name": "getUploadedFiles",
       "url": "/mappea/reference/objects/getuploadedfilesresponse",
-      "description": null,
+      "description": "",
       "isDeprecated": false,
       "args": null
     },
@@ -15,14 +15,14 @@
       "typeString": "GetMappeaStatsResponse!",
       "name": "getMappeaStats",
       "url": "/mappea/reference/objects/getmappeastatsresponse",
-      "description": null,
+      "description": "",
       "isDeprecated": false,
       "args": [
         {
           "typeString": "MappeaGetMappeaStatsInput!",
           "name": "input",
           "url": "/mappea/reference/inputobjects/mappeagetmappeastatsinput",
-          "description": null
+          "description": ""
         }
       ]
     }

@@ -6,32 +6,22 @@
   "requireby": [
     {
       "name": "PaymentXExpireDate",
-      "description": null,
+      "description": "The card expiration date",
       "url": "/paymentx/reference/objects/paymentxexpiredate"
     },
     {
       "name": "GroupData",
-      "description": null,
+      "description": "",
       "url": "/paymentx/reference/objects/groupdata"
     },
     {
-      "name": "AccessData",
-      "description": null,
-      "url": "/paymentx/reference/objects/accessdata"
-    },
-    {
       "name": "SupplierData",
-      "description": null,
+      "description": "",
       "url": "/paymentx/reference/objects/supplierdata"
     },
     {
-      "name": "SupplierFilter",
-      "description": null,
-      "url": "/paymentx/reference/inputobjects/supplierfilter"
-    },
-    {
       "name": "ExpireDateInput",
-      "description": null,
+      "description": "The card expiration date",
       "url": "/paymentx/reference/inputobjects/expiredateinput"
     }
   ],

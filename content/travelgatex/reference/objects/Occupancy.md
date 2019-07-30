@@ -7,7 +7,7 @@
       "typeString": "Int!",
       "name": "id",
       "url": "/travelgatex/reference/scalars/int",
-      "description": null,
+      "description": "Unique ID room in this option.",
       "isDeprecated": false,
       "args": null
     },
@@ -15,7 +15,7 @@
       "typeString": "[Pax!]!",
       "name": "paxes",
       "url": "/travelgatex/reference/objects/pax",
-      "description": null,
+      "description": "List of pax of this occupancy.",
       "isDeprecated": false,
       "args": null
     }
@@ -26,6 +26,7 @@
   "typename": "Occupancy",
   "hideGithubLink": true
 }
+Information about occupancy.
 ## GraphQL schema definition
 
 {{% graphql-schema-type %}}

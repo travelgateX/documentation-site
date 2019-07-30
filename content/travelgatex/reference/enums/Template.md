@@ -6,14 +6,14 @@
   "requireby": [
     {
       "name": "CreateGroupInput",
-      "description": null,
+      "description": "",
       "url": "/travelgatex/reference/inputobjects/creategroupinput"
     }
   ],
   "enumValues": [
     {
       "name": "FOLDER_DEFAULT",
-      "description": null,
+      "description": "",
       "isDeprecated": false,
       "deprecationReason": null
     }

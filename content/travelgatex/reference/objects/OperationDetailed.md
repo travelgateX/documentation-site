@@ -7,15 +7,15 @@
       "typeString": "Operation!",
       "name": "operation",
       "url": "/travelgatex/reference/objects/operation",
-      "description": null,
+      "description": "Operation information",
       "isDeprecated": false,
       "args": null
     },
     {
-      "typeString": "Int64!",
+      "typeString": "Int!",
       "name": "totalHits",
-      "url": "/travelgatex/reference/scalars/int64",
-      "description": null,
+      "url": "/travelgatex/reference/scalars/int",
+      "description": "Total hits.",
       "isDeprecated": false,
       "args": null
     },
@@ -23,20 +23,20 @@
       "typeString": "[StatsInfo!]",
       "name": "detailedHits",
       "url": "/travelgatex/reference/objects/statsinfo",
-      "description": null,
+      "description": "Hits grouped depending on their status",
       "isDeprecated": false,
       "args": [
         {
           "typeString": "[StatsInfoTypes!]",
           "name": "type",
           "url": "/travelgatex/reference/enums/statsinfotypes",
-          "description": null
+          "description": ""
         },
         {
           "typeString": "[Int!]",
           "name": "code",
           "url": "/travelgatex/reference/scalars/int",
-          "description": null
+          "description": ""
         }
       ]
     },
@@ -44,23 +44,7 @@
       "typeString": "Boolean!",
       "name": "cache",
       "url": "/travelgatex/reference/scalars/boolean",
-      "description": null,
-      "isDeprecated": true,
-      "args": null,
-      "deprecationReason": "Added new field trafficType.",
-      "descriptionSplitted": {
-        "date": "2019-04-03",
-        "first": "deprecated from",
-        "second": "Added new field trafficType."
-      },
-      "deprecationDate": "2019-04-03",
-      "typeName": "OperationDetailed"
-    },
-    {
-      "typeString": "TrafficType!",
-      "name": "trafficType",
-      "url": "/travelgatex/reference/enums/traffictype",
-      "description": null,
+      "description": "Responsible for the execution of the this stats. If TRUE then cache, else client",
       "isDeprecated": false,
       "args": null
     }
@@ -71,6 +55,7 @@
   "typename": "OperationDetailed",
   "hideGithubLink": true
 }
+Stats information per operation
 ## GraphQL schema definition
 
 {{% graphql-schema-type %}}

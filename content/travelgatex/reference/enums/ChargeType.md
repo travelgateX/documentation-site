@@ -6,25 +6,25 @@
   "requireby": [
     {
       "name": "Supplement",
-      "description": null,
+      "description": "Supplement that it can be or its already added to the option returned. Contains all the information about the supplement.",
       "url": "/travelgatex/reference/objects/supplement"
     },
     {
       "name": "Surcharge",
-      "description": null,
+      "description": "Surcharge that it can be or it is already added to the option returned. Contains all the information about the surcharge.",
       "url": "/travelgatex/reference/objects/surcharge"
     }
   ],
   "enumValues": [
     {
       "name": "INCLUDE",
-      "description": null,
+      "description": "The charge is included.",
       "isDeprecated": false,
       "deprecationReason": null
     },
     {
       "name": "EXCLUDE",
-      "description": null,
+      "description": "The charge is excluded.",
       "isDeprecated": false,
       "deprecationReason": null
     }
@@ -33,6 +33,7 @@
   "typename": "ChargeType",
   "hideGithubLink": true
 }
+Charge Type
 ## GraphQL schema definition
 
 {{% graphql-schema-enum %}}

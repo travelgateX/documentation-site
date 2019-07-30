@@ -7,7 +7,7 @@
       "typeString": "Member",
       "name": "node",
       "url": "/mappea/reference/objects/member",
-      "description": null,
+      "description": "",
       "isDeprecated": false,
       "args": null
     },
@@ -15,7 +15,7 @@
       "typeString": "String!",
       "name": "cursor",
       "url": "/mappea/reference/scalars/string",
-      "description": null,
+      "description": "",
       "isDeprecated": false,
       "args": null
     }
@@ -23,7 +23,7 @@
   "requireby": [
     {
       "name": "MemberConnection",
-      "description": null,
+      "description": "",
       "url": "/mappea/reference/objects/memberconnection"
     }
   ],

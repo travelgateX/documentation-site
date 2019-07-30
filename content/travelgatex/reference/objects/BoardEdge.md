@@ -7,7 +7,7 @@
       "typeString": "Board",
       "name": "node",
       "url": "/travelgatex/reference/objects/board",
-      "description": null,
+      "description": "",
       "isDeprecated": false,
       "args": null
     },
@@ -15,7 +15,7 @@
       "typeString": "String!",
       "name": "cursor",
       "url": "/travelgatex/reference/scalars/string",
-      "description": null,
+      "description": "",
       "isDeprecated": false,
       "args": null
     }
@@ -23,7 +23,7 @@
   "requireby": [
     {
       "name": "BoardConnection",
-      "description": null,
+      "description": "BoardList definition",
       "url": "/travelgatex/reference/objects/boardconnection"
     }
   ],
@@ -32,6 +32,7 @@
   "typename": "BoardEdge",
   "hideGithubLink": true
 }
+BoardList Edge definition
 ## GraphQL schema definition
 
 {{% graphql-schema-type %}}

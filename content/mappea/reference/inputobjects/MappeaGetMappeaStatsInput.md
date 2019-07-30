@@ -7,14 +7,14 @@
       "typeString": "String!",
       "name": "organizationName",
       "url": "/mappea/reference/scalars/string",
-      "description": null,
+      "description": "",
       "args": null
     },
     {
       "typeString": "String",
       "name": "supplierMapped",
       "url": "/mappea/reference/scalars/string",
-      "description": null,
+      "description": "",
       "args": null
     }
   ],
@@ -24,6 +24,7 @@
   "typename": "MappeaGetMappeaStatsInput",
   "hideGithubLink": true
 }
+# GetMappeaStats
 ## GraphQL schema definition
 
 {{% graphql-schema-type %}}

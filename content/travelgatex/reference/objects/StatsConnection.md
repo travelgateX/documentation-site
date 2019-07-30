@@ -7,7 +7,7 @@
       "typeString": "[StatsEdge]",
       "name": "edges",
       "url": "/travelgatex/reference/objects/statsedge",
-      "description": null,
+      "description": "",
       "isDeprecated": false,
       "args": null
     },
@@ -15,7 +15,7 @@
       "typeString": "PageInfo!",
       "name": "pageInfo",
       "url": "/travelgatex/reference/objects/pageinfo",
-      "description": null,
+      "description": "",
       "isDeprecated": false,
       "args": null
     }
@@ -23,7 +23,7 @@
   "requireby": [
     {
       "name": "StatsQuery",
-      "description": null,
+      "description": "",
       "url": "/travelgatex/reference/objects/statsquery"
     }
   ],

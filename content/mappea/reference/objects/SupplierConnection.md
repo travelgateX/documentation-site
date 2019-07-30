@@ -7,7 +7,7 @@
       "typeString": "[SupplierEdge]",
       "name": "edges",
       "url": "/mappea/reference/objects/supplieredge",
-      "description": null,
+      "description": "",
       "isDeprecated": false,
       "args": null
     },
@@ -15,7 +15,7 @@
       "typeString": "PageInfo!",
       "name": "pageInfo",
       "url": "/mappea/reference/objects/pageinfo",
-      "description": null,
+      "description": "",
       "isDeprecated": false,
       "args": null
     }
@@ -23,23 +23,18 @@
   "requireby": [
     {
       "name": "OrganizationData",
-      "description": null,
+      "description": "",
       "url": "/mappea/reference/objects/organizationdata"
     },
     {
       "name": "GroupCommonData",
-      "description": null,
+      "description": "",
       "url": "/mappea/reference/interfaces/groupcommondata"
     },
     {
       "name": "GroupData",
-      "description": null,
+      "description": "",
       "url": "/mappea/reference/objects/groupdata"
-    },
-    {
-      "name": "ClientData",
-      "description": null,
-      "url": "/mappea/reference/objects/clientdata"
     }
   ],
   "enumValues": null,

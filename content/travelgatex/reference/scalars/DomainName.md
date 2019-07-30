@@ -6,7 +6,7 @@
   "requireby": [
     {
       "name": "DomainData",
-      "description": null,
+      "description": "",
       "url": "/travelgatex/reference/objects/domaindata"
     }
   ],
@@ -15,6 +15,7 @@
   "typename": "DomainName",
   "hideGithubLink": true
 }
+Scalar for type Domain
 ## GraphQL schema definition
 
 {{% graphql-schema-scalar %}}

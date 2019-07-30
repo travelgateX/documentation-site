@@ -7,7 +7,7 @@
       "typeString": "Int!",
       "name": "lookToQuote",
       "url": "/travelgatex/reference/scalars/int",
-      "description": null,
+      "description": "Searches needed to do a quote",
       "isDeprecated": false,
       "args": null
     },
@@ -15,7 +15,7 @@
       "typeString": "Int!",
       "name": "lookToBook",
       "url": "/travelgatex/reference/scalars/int",
-      "description": null,
+      "description": "Searches needed to do a booking",
       "isDeprecated": false,
       "args": null
     },
@@ -23,7 +23,7 @@
       "typeString": "Int!",
       "name": "quoteToBook",
       "url": "/travelgatex/reference/scalars/int",
-      "description": null,
+      "description": "Quotes needed to do a booking",
       "isDeprecated": false,
       "args": null
     }
@@ -31,7 +31,7 @@
   "requireby": [
     {
       "name": "StatsData",
-      "description": null,
+      "description": "",
       "url": "/travelgatex/reference/objects/statsdata"
     }
   ],
@@ -40,6 +40,7 @@
   "typename": "Ratios",
   "hideGithubLink": true
 }
+Ratios details
 ## GraphQL schema definition
 
 {{% graphql-schema-type %}}

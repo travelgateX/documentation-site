@@ -7,7 +7,7 @@
       "typeString": "String!",
       "name": "fileId",
       "url": "/travelgatex/reference/scalars/string",
-      "description": null,
+      "description": "",
       "isDeprecated": false,
       "args": null
     },
@@ -15,7 +15,7 @@
       "typeString": "[SupplierDetected!]",
       "name": "suppliers",
       "url": "/travelgatex/reference/objects/supplierdetected",
-      "description": null,
+      "description": "",
       "isDeprecated": false,
       "args": null
     },
@@ -23,7 +23,7 @@
       "typeString": "Int",
       "name": "numberOfLines",
       "url": "/travelgatex/reference/scalars/int",
-      "description": null,
+      "description": "",
       "isDeprecated": false,
       "args": null
     },
@@ -31,7 +31,7 @@
       "typeString": "Int",
       "name": "numberOfHotels",
       "url": "/travelgatex/reference/scalars/int",
-      "description": null,
+      "description": "",
       "isDeprecated": false,
       "args": null
     }
@@ -39,7 +39,7 @@
   "requireby": [
     {
       "name": "UploadFileResponse",
-      "description": null,
+      "description": "",
       "url": "/travelgatex/reference/objects/uploadfileresponse"
     }
   ],
