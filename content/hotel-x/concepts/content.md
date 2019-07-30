@@ -1,7 +1,7 @@
 +++
-title = "Content"
-pagetitle = "Content (Static Content)"
-description = "Learn about how to manage content data in your site: Hotels, Boards, Categories..."
+title = "Static Content"
+pagetitle = "Static Content"
+description = "Learn about how to manage static content data in your site: Hotels, Boards, Categories..."
 icon = "fa-list-alt"
 weight = 5
 alwaysopen = false
