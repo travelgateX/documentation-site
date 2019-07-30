@@ -12,6 +12,16 @@ tags = ["products-changelog"]
 
 Easily accessible log of notable changes to Alerts-X
 
+## 2019-07-30
+{{% release-notes-container type="f"%}}
+- Save historicalWindow correctly.
+{{% /release-notes-container %}} 
+
+## 2019-07-29
+{{% release-notes-container type="f"%}}
+- Check permissions of team groups.
+{{% /release-notes-container %}} 
+
 ## 2019-07-25
 {{% release-notes-container type="a"%}}
 - Allow to get alerts without `groups` criteria input.
