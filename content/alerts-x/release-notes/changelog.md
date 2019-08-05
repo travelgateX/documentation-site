@@ -12,6 +12,15 @@ tags = ["products-changelog"]
 
 Easily accessible log of notable changes to Alerts-X
 
+## 2019-08-05
+{{% release-notes-container type="a"%}}
+- Returns warning to advise of deleted events if configuration of the alert is updated.
+{{% /release-notes-container %}} 
+
+{{% release-notes-container type="a"%}}
+- New field `ComercialType` in `AlertConfiguration`.
+{{% /release-notes-container %}} 
+
 ## 2019-07-30
 {{% release-notes-container type="f"%}}
 - Save historicalWindow correctly.
