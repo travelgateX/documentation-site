@@ -12,6 +12,30 @@ tags = ["products-changelog"]
 
 Easily accessible log of notable changes to Alerts-X
 
+## 2019-08-07
+{{% release-notes-container type="a"%}}
+- Now is Checked `api`, `operation` & `errorCode` inputs to be sure that exists or its combinations are posible.
+{{% /release-notes-container %}} 
+
+{{% release-notes-container type="a"%}}
+- Now is checked if update values are different. If not, update is rejected.
+{{% /release-notes-container %}} 
+
+## 2019-08-06
+{{% release-notes-container type="a"%}}
+- New field `api` in configuration inputs to be able to filter by serviceApi (hotel, transportation...).
+- New field `API` in `AlertConfiguration`.
+{{% /release-notes-container %}} 
+
+## 2019-08-05
+{{% release-notes-container type="a"%}}
+- Returns warning to advise of deleted events if configuration of the alert is updated.
+{{% /release-notes-container %}} 
+
+{{% release-notes-container type="a"%}}
+- New field `ComercialType` in `AlertConfiguration`.
+{{% /release-notes-container %}} 
+
 ## 2019-07-30
 {{% release-notes-container type="f"%}}
 - Save historicalWindow correctly.
