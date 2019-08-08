@@ -12,20 +12,19 @@ permalink: /docs/hotel-push/FAQ
 
 Standard occupancy is the standard number of adults paxes of the room.
 
-Standard occupancy is used to calculate prices under it:
-
 For example, if the standard occupancy is 2. And it’s loaded...
 
 ~~~xml
 <BaseByGuestAmts>
+   <BaseByGuestAmt NumberOfGuests = "1" AmountAfterTax="50.00"/>
    <BaseByGuestAmt NumberOfGuests = "2" AmountAfterTax="100.00"/>
 </BaseByGuestAmts>
 ~~~
 
 ... The price of two paxes will be 100, and the price for one pax will
-be 50.
+be 50. Note that prices for pax under the standard occupancy must be specified and prices for babies under the standard occupancy will be 0. 
 
-Standard occupancy is used to calculate prices above it:
+Standard occupancy is used for calculating prices above it:
 
 For example, if the standard occupancy is 2. And it’s loaded...
 
@@ -39,15 +38,15 @@ For example, if the standard occupancy is 2. And it’s loaded...
 </AdditionalGuestAmounts>
 ~~~ 
 
-... The price of two paxes will be 100, but the price of three paxes
-will be 250
+... The price for one pax will be 50, this is 100/2.  The price of two paxes will be 100 but the price of three paxes
+will be 200 (100 + (50 + 50)). There are more details in the section Notify Messages.
 
 
 
 **What is MaxAdditionalGuests in AdditionalGuestAmount?**
 
-MaxAdditionalGuests is not the maximum number of additional guests. It’s
-just the number of additional guests for which the price is loaded.
+MaxAdditionalGuests is not the maximum number of additional guests but
+the number of additional guest for which the price is loaded.
 
 
 
