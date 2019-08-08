@@ -11,7 +11,7 @@ Our reference pages explain all aspects of our GraphQL schema.
 
 These pages are divided into the following sections:
 
-**Schema**: Explains how our Schema works and the two key operations: Queries and Mutations
+**Schema**: Explains how our Schema works and the two key operations: Queries and Mutations. You can navigate through the Schema in our <a href="https://api.travelgatex.com/">API Playground</a> at the _Docs_ tab.
 
 **Objects**: A complete list of all objects in our schema, their definitions, what fields they use and when they are mandatory.
 
