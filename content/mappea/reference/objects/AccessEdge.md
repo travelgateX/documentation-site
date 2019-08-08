@@ -7,7 +7,7 @@
       "typeString": "Access",
       "name": "node",
       "url": "/mappea/reference/objects/access",
-      "description": "",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -15,7 +15,7 @@
       "typeString": "String!",
       "name": "cursor",
       "url": "/mappea/reference/scalars/string",
-      "description": "",
+      "description": null,
       "isDeprecated": false,
       "args": null
     }
@@ -23,7 +23,7 @@
   "requireby": [
     {
       "name": "AccessConnection",
-      "description": "",
+      "description": null,
       "url": "/mappea/reference/objects/accessconnection"
     }
   ],

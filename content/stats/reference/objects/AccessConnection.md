@@ -7,7 +7,7 @@
       "typeString": "[AccessEdge]",
       "name": "edges",
       "url": "/stats/reference/objects/accessedge",
-      "description": "",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -15,7 +15,7 @@
       "typeString": "PageInfo!",
       "name": "pageInfo",
       "url": "/stats/reference/objects/pageinfo",
-      "description": "",
+      "description": null,
       "isDeprecated": false,
       "args": null
     }
@@ -23,23 +23,23 @@
   "requireby": [
     {
       "name": "SupplierData",
-      "description": "",
+      "description": null,
       "url": "/stats/reference/objects/supplierdata"
     },
     {
-      "name": "OrganizationData",
-      "description": "",
-      "url": "/stats/reference/objects/organizationdata"
+      "name": "GroupData",
+      "description": null,
+      "url": "/stats/reference/objects/groupdata"
     },
     {
       "name": "GroupCommonData",
-      "description": "",
+      "description": null,
       "url": "/stats/reference/interfaces/groupcommondata"
     },
     {
-      "name": "GroupData",
-      "description": "",
-      "url": "/stats/reference/objects/groupdata"
+      "name": "OrganizationData",
+      "description": null,
+      "url": "/stats/reference/objects/organizationdata"
     }
   ],
   "enumValues": null,

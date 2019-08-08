@@ -7,7 +7,7 @@
       "typeString": "String",
       "name": "client",
       "url": "/travelgatex/reference/scalars/string",
-      "description": "Client reference booking",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -15,7 +15,15 @@
       "typeString": "String",
       "name": "supplier",
       "url": "/travelgatex/reference/scalars/string",
-      "description": "Supplier reference booking",
+      "description": null,
+      "isDeprecated": false,
+      "args": null
+    },
+    {
+      "typeString": "String",
+      "name": "hotel",
+      "url": "/travelgatex/reference/scalars/string",
+      "description": null,
       "isDeprecated": false,
       "args": null
     }
@@ -23,12 +31,12 @@
   "requireby": [
     {
       "name": "HotelBookingDetail",
-      "description": "Contains information about booking",
+      "description": null,
       "url": "/travelgatex/reference/objects/hotelbookingdetail"
     },
     {
       "name": "HotelCancelDetail",
-      "description": "Contains information about cancel",
+      "description": null,
       "url": "/travelgatex/reference/objects/hotelcanceldetail"
     }
   ],
@@ -37,7 +45,6 @@
   "typename": "Reference",
   "hideGithubLink": true
 }
-Contains reference codes.
 ## GraphQL schema definition
 
 {{% graphql-schema-type %}}

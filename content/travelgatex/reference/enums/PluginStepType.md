@@ -6,58 +6,58 @@
   "requireby": [
     {
       "name": "HotelXDefaultPlugin",
-      "description": "",
+      "description": null,
       "url": "/travelgatex/reference/objects/hotelxdefaultplugin"
     },
     {
       "name": "PluginStepInput",
-      "description": "Plugin to execute.",
+      "description": null,
       "url": "/travelgatex/reference/inputobjects/pluginstepinput"
     },
     {
       "name": "HotelXFilterPluginTypeInput",
-      "description": "",
+      "description": null,
       "url": "/travelgatex/reference/inputobjects/hotelxfilterplugintypeinput"
     },
     {
       "name": "HotelXDefaultPluginStepInput",
-      "description": "",
+      "description": null,
       "url": "/travelgatex/reference/inputobjects/hotelxdefaultpluginstepinput"
     },
     {
       "name": "HotelXDefaultPluginInput",
-      "description": "",
+      "description": null,
       "url": "/travelgatex/reference/inputobjects/hotelxdefaultplugininput"
     }
   ],
   "enumValues": [
     {
       "name": "REQUEST",
-      "description": "Plugins executed after Buyer requests message to HotelX",
+      "description": null,
       "isDeprecated": false,
       "deprecationReason": null
     },
     {
       "name": "REQUEST_ACCESS",
-      "description": "Plugins executed before sending request to Supplier using Access and after Accesses have been calculated",
+      "description": null,
       "isDeprecated": false,
       "deprecationReason": null
     },
     {
       "name": "RESPONSE_OPTION",
-      "description": "Plugins executed after Supplier responds message. For every option returned",
+      "description": null,
       "isDeprecated": false,
       "deprecationReason": null
     },
     {
       "name": "RESPONSE_ACCESS",
-      "description": "Plugins executed after all Access options has been responded",
+      "description": null,
       "isDeprecated": false,
       "deprecationReason": null
     },
     {
       "name": "RESPONSE",
-      "description": "Plugins executed before HotelX responds message to to Buyer",
+      "description": null,
       "isDeprecated": false,
       "deprecationReason": null
     }
@@ -66,7 +66,6 @@
   "typename": "PluginStepType",
   "hideGithubLink": true
 }
-Plugin Step Type. https://docs.travelgatex.com/hotel-x/plugins/overview/
 ## GraphQL schema definition
 
 {{% graphql-schema-enum %}}

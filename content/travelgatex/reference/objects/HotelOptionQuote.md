@@ -7,7 +7,7 @@
       "typeString": "String!",
       "name": "optionRefId",
       "url": "/travelgatex/reference/scalars/string",
-      "description": "Indicates the valuation key",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -15,7 +15,7 @@
       "typeString": "StatusType!",
       "name": "status",
       "url": "/travelgatex/reference/enums/statustype",
-      "description": "The possible values in status in response are Available (OK) or On Request (RQ).",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -23,7 +23,15 @@
       "typeString": "Price!",
       "name": "price",
       "url": "/travelgatex/reference/objects/price",
-      "description": "Specifies the prices (Gross, Net and Amount) of the option returned.",
+      "description": null,
+      "isDeprecated": false,
+      "args": null
+    },
+    {
+      "typeString": "PriceChange",
+      "name": "searchPrice",
+      "url": "/travelgatex/reference/objects/pricechange",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -31,7 +39,7 @@
       "typeString": "CancelPolicy!",
       "name": "cancelPolicy",
       "url": "/travelgatex/reference/objects/cancelpolicy",
-      "description": "Specifies cancel policies of the option returned.",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -39,7 +47,7 @@
       "typeString": "String",
       "name": "remarks",
       "url": "/travelgatex/reference/scalars/string",
-      "description": "Additional information about the option.",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -47,15 +55,15 @@
       "typeString": "[Surcharge!]",
       "name": "surcharges",
       "url": "/travelgatex/reference/objects/surcharge",
-      "description": "List of surcharges of the option returned.",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
     {
-      "typeString": "[String!]",
+      "typeString": "[PaymentCardType!]",
       "name": "cardTypes",
-      "url": "/travelgatex/reference/scalars/string",
-      "description": "List of credit cards",
+      "url": "/travelgatex/reference/enums/paymentcardtype",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -63,7 +71,7 @@
       "typeString": "AddOns",
       "name": "addOns",
       "url": "/travelgatex/reference/objects/addons",
-      "description": "Additional information about the option",
+      "description": null,
       "isDeprecated": false,
       "args": null
     }
@@ -71,7 +79,7 @@
   "requireby": [
     {
       "name": "HotelQuote",
-      "description": "",
+      "description": null,
       "url": "/travelgatex/reference/objects/hotelquote"
     }
   ],
@@ -80,7 +88,6 @@
   "typename": "HotelOptionQuote",
   "hideGithubLink": true
 }
-Contains information about quote(s)
 ## GraphQL schema definition
 
 {{% graphql-schema-type %}}

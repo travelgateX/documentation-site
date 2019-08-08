@@ -7,7 +7,7 @@
       "typeString": "Int!",
       "name": "search",
       "url": "/travelgatex/reference/scalars/int",
-      "description": "Milliseconds before the search connection is closed.",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -15,7 +15,7 @@
       "typeString": "Int!",
       "name": "quote",
       "url": "/travelgatex/reference/scalars/int",
-      "description": "Milliseconds before the quote connection is closed.",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -23,7 +23,7 @@
       "typeString": "Int!",
       "name": "book",
       "url": "/travelgatex/reference/scalars/int",
-      "description": "Milliseconds before the book connection is closed.",
+      "description": null,
       "isDeprecated": false,
       "args": null
     }
@@ -31,12 +31,12 @@
   "requireby": [
     {
       "name": "HotelXDefaultSettingsData",
-      "description": "",
+      "description": null,
       "url": "/travelgatex/reference/objects/hotelxdefaultsettingsdata"
     },
     {
       "name": "HotelXCommonSettingsData",
-      "description": "",
+      "description": null,
       "url": "/travelgatex/reference/objects/hotelxcommonsettingsdata"
     }
   ],

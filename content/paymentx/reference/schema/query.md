@@ -7,7 +7,7 @@
       "typeString": "AdviseMessage!",
       "name": "vaultStatusService",
       "url": "/paymentx/reference/objects/advisemessage",
-      "description": "Returns status of the vault service.",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -15,20 +15,20 @@
       "typeString": "PaymentXStoredCardConnection!",
       "name": "allStoredCards",
       "url": "/paymentx/reference/objects/paymentxstoredcardconnection",
-      "description": "Returns the stored card list. For security, this query never will return clear card information. ",
+      "description": null,
       "isDeprecated": false,
       "args": [
         {
           "typeString": "PaymentXStoredCardFilterInput!",
           "name": "filter",
           "url": "/paymentx/reference/inputobjects/paymentxstoredcardfilterinput",
-          "description": ""
+          "description": null
         },
         {
           "typeString": "String!",
           "name": "instanceCode",
           "url": "/paymentx/reference/scalars/string",
-          "description": ""
+          "description": null
         }
       ]
     },
@@ -36,14 +36,14 @@
       "typeString": "PaymentXStoredCard!",
       "name": "storedCard",
       "url": "/paymentx/reference/objects/paymentxstoredcard",
-      "description": "Returns a stored card information. ",
+      "description": null,
       "isDeprecated": false,
       "args": [
         {
           "typeString": "PaymentXStoredCardIDInput!",
           "name": "criteria",
           "url": "/paymentx/reference/inputobjects/paymentxstoredcardidinput",
-          "description": ""
+          "description": null
         }
       ]
     }

@@ -7,7 +7,7 @@
       "typeString": "ID!",
       "name": "code",
       "url": "/paymentx/reference/scalars/id",
-      "description": "",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -15,7 +15,7 @@
       "typeString": "ClientData",
       "name": "clientData",
       "url": "/paymentx/reference/objects/clientdata",
-      "description": "",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -23,7 +23,7 @@
       "typeString": "[Error!]",
       "name": "error",
       "url": "/paymentx/reference/objects/error",
-      "description": "Errors that abort services",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -31,7 +31,7 @@
       "typeString": "DateTime!",
       "name": "createdAt",
       "url": "/paymentx/reference/scalars/datetime",
-      "description": "Date created",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -39,7 +39,7 @@
       "typeString": "DateTime!",
       "name": "updatedAt",
       "url": "/paymentx/reference/scalars/datetime",
-      "description": "Date updated",
+      "description": null,
       "isDeprecated": false,
       "args": null
     }
@@ -47,7 +47,7 @@
   "requireby": [
     {
       "name": "ClientEdge",
-      "description": "",
+      "description": null,
       "url": "/paymentx/reference/objects/clientedge"
     }
   ],
@@ -56,7 +56,6 @@
   "typename": "Client",
   "hideGithubLink": true
 }
-Client identifies who is making the request and holds the configuration assigned to it.
 ## GraphQL schema definition
 
 {{% graphql-schema-type %}}

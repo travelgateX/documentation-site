@@ -7,67 +7,67 @@
   "enumValues": [
     {
       "name": "SEARCH",
-      "description": "",
+      "description": null,
       "isDeprecated": false,
       "deprecationReason": null
     },
     {
       "name": "QUOTE",
-      "description": "",
+      "description": null,
       "isDeprecated": false,
       "deprecationReason": null
     },
     {
       "name": "BOOKING",
-      "description": "",
+      "description": null,
       "isDeprecated": false,
       "deprecationReason": null
     },
     {
       "name": "CANCEL",
-      "description": "",
+      "description": null,
       "isDeprecated": false,
       "deprecationReason": null
     },
     {
       "name": "SCHEDULER",
-      "description": "",
+      "description": null,
       "isDeprecated": false,
       "deprecationReason": null
     },
     {
       "name": "CREATE",
-      "description": "",
+      "description": null,
       "isDeprecated": false,
       "deprecationReason": null
     },
     {
       "name": "READ",
-      "description": "",
+      "description": null,
       "isDeprecated": false,
       "deprecationReason": null
     },
     {
       "name": "UPDATE",
-      "description": "",
+      "description": null,
       "isDeprecated": false,
       "deprecationReason": null
     },
     {
       "name": "DELETE",
-      "description": "",
+      "description": null,
       "isDeprecated": false,
       "deprecationReason": null
     },
     {
       "name": "EXECUTE",
-      "description": "",
+      "description": null,
       "isDeprecated": false,
       "deprecationReason": null
     },
     {
       "name": "OTHER",
-      "description": "",
+      "description": null,
       "isDeprecated": false,
       "deprecationReason": null
     }

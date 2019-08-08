@@ -7,14 +7,14 @@
       "typeString": "ID!",
       "name": "code",
       "url": "/mappea/reference/scalars/id",
-      "description": "",
+      "description": null,
       "args": null
     },
     {
       "typeString": "ID!",
       "name": "supplier",
       "url": "/mappea/reference/scalars/id",
-      "description": "",
+      "description": null,
       "args": null
     }
   ],

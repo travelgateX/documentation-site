@@ -7,7 +7,7 @@
       "typeString": "String!",
       "name": "cursor",
       "url": "/travelgatex/reference/scalars/string",
-      "description": "",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -15,7 +15,7 @@
       "typeString": "PaymentXStoredCard",
       "name": "node",
       "url": "/travelgatex/reference/objects/paymentxstoredcard",
-      "description": "",
+      "description": null,
       "isDeprecated": false,
       "args": null
     }
@@ -23,7 +23,7 @@
   "requireby": [
     {
       "name": "PaymentXStoredCardConnection",
-      "description": "",
+      "description": null,
       "url": "/travelgatex/reference/objects/paymentxstoredcardconnection"
     }
   ],

@@ -7,7 +7,7 @@
       "typeString": "Access",
       "name": "node",
       "url": "/stats/reference/objects/access",
-      "description": "",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -15,7 +15,7 @@
       "typeString": "String!",
       "name": "cursor",
       "url": "/stats/reference/scalars/string",
-      "description": "",
+      "description": null,
       "isDeprecated": false,
       "args": null
     }
@@ -23,7 +23,7 @@
   "requireby": [
     {
       "name": "AccessConnection",
-      "description": "",
+      "description": null,
       "url": "/stats/reference/objects/accessconnection"
     }
   ],

@@ -7,7 +7,7 @@
       "typeString": "ID!",
       "name": "code",
       "url": "/stats/reference/scalars/id",
-      "description": "",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -15,7 +15,7 @@
       "typeString": "AccessData",
       "name": "accessData",
       "url": "/stats/reference/objects/accessdata",
-      "description": "",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -23,7 +23,7 @@
       "typeString": "[Error!]",
       "name": "error",
       "url": "/stats/reference/objects/error",
-      "description": "Errors that abort services",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -31,7 +31,7 @@
       "typeString": "DateTime!",
       "name": "createdAt",
       "url": "/stats/reference/scalars/datetime",
-      "description": "Date created",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -39,7 +39,7 @@
       "typeString": "DateTime!",
       "name": "updatedAt",
       "url": "/stats/reference/scalars/datetime",
-      "description": "Date updated",
+      "description": null,
       "isDeprecated": false,
       "args": null
     }
@@ -47,17 +47,17 @@
   "requireby": [
     {
       "name": "StatsData",
-      "description": "",
+      "description": null,
       "url": "/stats/reference/objects/statsdata"
     },
     {
       "name": "AccessData",
-      "description": "",
+      "description": null,
       "url": "/stats/reference/objects/accessdata"
     },
     {
       "name": "AccessEdge",
-      "description": "",
+      "description": null,
       "url": "/stats/reference/objects/accessedge"
     }
   ],
@@ -66,7 +66,6 @@
   "typename": "Access",
   "hideGithubLink": true
 }
-An Access is a set of credentials and configuration in order to access the system of a Supplier.
 ## GraphQL schema definition
 
 {{% graphql-schema-type %}}

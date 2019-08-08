@@ -7,7 +7,7 @@
       "typeString": "ID!",
       "name": "id",
       "url": "/stats/reference/scalars/id",
-      "description": "",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -15,7 +15,7 @@
       "typeString": "ID!",
       "name": "code",
       "url": "/stats/reference/scalars/id",
-      "description": "",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -23,7 +23,7 @@
       "typeString": "String",
       "name": "label",
       "url": "/stats/reference/scalars/string",
-      "description": "",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -31,7 +31,7 @@
       "typeString": "Boolean!",
       "name": "isActive",
       "url": "/stats/reference/scalars/boolean",
-      "description": "Can members does queries in the platform?",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -39,7 +39,7 @@
       "typeString": "MemberType!",
       "name": "type",
       "url": "/stats/reference/enums/membertype",
-      "description": "Member Type",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -47,44 +47,44 @@
       "typeString": "GroupConnection",
       "name": "groups",
       "url": "/stats/reference/objects/groupconnection",
-      "description": "which groups the member is in?",
+      "description": null,
       "isDeprecated": false,
       "args": [
         {
           "typeString": "[ID!]",
           "name": "codes",
           "url": "/stats/reference/scalars/id",
-          "description": ""
+          "description": null
         },
         {
           "typeString": "GroupType",
           "name": "type",
           "url": "/stats/reference/enums/grouptype",
-          "description": ""
+          "description": null
         },
         {
           "typeString": "Int",
           "name": "first",
           "url": "/stats/reference/scalars/int",
-          "description": ""
+          "description": null
         },
         {
           "typeString": "Int",
           "name": "last",
           "url": "/stats/reference/scalars/int",
-          "description": ""
+          "description": null
         },
         {
           "typeString": "String",
           "name": "before",
           "url": "/stats/reference/scalars/string",
-          "description": ""
+          "description": null
         },
         {
           "typeString": "String",
           "name": "after",
           "url": "/stats/reference/scalars/string",
-          "description": ""
+          "description": null
         }
       ]
     },
@@ -92,44 +92,44 @@
       "typeString": "RoleConnection",
       "name": "roles",
       "url": "/stats/reference/objects/roleconnection",
-      "description": "which roles the member has in?",
+      "description": null,
       "isDeprecated": false,
       "args": [
         {
           "typeString": "[ID!]",
           "name": "codes",
           "url": "/stats/reference/scalars/id",
-          "description": ""
+          "description": null
         },
         {
           "typeString": "RoleType",
           "name": "type",
           "url": "/stats/reference/enums/roletype",
-          "description": ""
+          "description": null
         },
         {
           "typeString": "Int",
           "name": "first",
           "url": "/stats/reference/scalars/int",
-          "description": ""
+          "description": null
         },
         {
           "typeString": "Int",
           "name": "last",
           "url": "/stats/reference/scalars/int",
-          "description": ""
+          "description": null
         },
         {
           "typeString": "String",
           "name": "before",
           "url": "/stats/reference/scalars/string",
-          "description": ""
+          "description": null
         },
         {
           "typeString": "String",
           "name": "after",
           "url": "/stats/reference/scalars/string",
-          "description": ""
+          "description": null
         }
       ]
     }
@@ -137,7 +137,7 @@
   "requireby": [
     {
       "name": "Member",
-      "description": "You grant access to members which can be either:\nUsers: A developer, administrator or any other person from your Organization who interacts with the TravelgateX Platform. An email address can be used as the identity of a User.\nService Accounts: An application (Client) instead of an individual User. If you prefer, you can create as many Service Accounts as needed to represent different logical components of your application.",
+      "description": null,
       "url": "/stats/reference/objects/member"
     }
   ],

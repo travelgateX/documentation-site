@@ -6,47 +6,47 @@
   "requireby": [
     {
       "name": "HotelCriteriaSearchInput",
-      "description": "Search criteria contains destination, travel dates and the number of pax in each room.\nYou must preload the other fields in our system by complete the fields absents.",
+      "description": null,
       "url": "/travelgatex/reference/inputobjects/hotelcriteriasearchinput"
     },
     {
       "name": "HotelCriteriaQuoteInput",
-      "description": "The quote criteria contains the option reference id, block and language.",
+      "description": null,
       "url": "/travelgatex/reference/inputobjects/hotelcriteriaquoteinput"
     },
     {
       "name": "HotelCriteriaBookingInput",
-      "description": "Criteria of book contains basic information to find a book or books.",
+      "description": null,
       "url": "/travelgatex/reference/inputobjects/hotelcriteriabookinginput"
     },
     {
       "name": "HotelXDefaultSettingsData",
-      "description": "",
+      "description": null,
       "url": "/travelgatex/reference/objects/hotelxdefaultsettingsdata"
     },
     {
       "name": "Text",
-      "description": "",
+      "description": null,
       "url": "/travelgatex/reference/objects/text"
     },
     {
       "name": "CriteriaSearch",
-      "description": "Search criteria contains destination, travel dates and the number of pax in each room.",
+      "description": null,
       "url": "/travelgatex/reference/objects/criteriasearch"
     },
     {
       "name": "HotelXDefaultSettingsDataInput",
-      "description": "",
+      "description": null,
       "url": "/travelgatex/reference/inputobjects/hotelxdefaultsettingsdatainput"
     },
     {
       "name": "HotelBookInput",
-      "description": "Criteria of book.",
+      "description": null,
       "url": "/travelgatex/reference/inputobjects/hotelbookinput"
     },
     {
       "name": "HotelCancelInput",
-      "description": "Cancellation Criteria.",
+      "description": null,
       "url": "/travelgatex/reference/inputobjects/hotelcancelinput"
     }
   ],
@@ -55,8 +55,6 @@
   "typename": "Language",
   "hideGithubLink": true
 }
-The Language type represents Language values. A good example might be a Hotel Description Language.
-In queries or mutations, Language fields have to be specified in ISO 639-1 format with enclosing double quotes "en".
 ## GraphQL schema definition
 
 {{% graphql-schema-scalar %}}

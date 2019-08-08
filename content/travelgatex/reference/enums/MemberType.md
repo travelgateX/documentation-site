@@ -6,25 +6,25 @@
   "requireby": [
     {
       "name": "MemberData",
-      "description": "",
+      "description": null,
       "url": "/travelgatex/reference/objects/memberdata"
     },
     {
       "name": "CreateMemberInput",
-      "description": "",
+      "description": null,
       "url": "/travelgatex/reference/inputobjects/creatememberinput"
     }
   ],
   "enumValues": [
     {
       "name": "USER",
-      "description": "",
+      "description": null,
       "isDeprecated": false,
       "deprecationReason": null
     },
     {
       "name": "SERVICE_ACCOUNT",
-      "description": "",
+      "description": null,
       "isDeprecated": false,
       "deprecationReason": null
     }

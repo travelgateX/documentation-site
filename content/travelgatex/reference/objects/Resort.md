@@ -7,7 +7,7 @@
       "typeString": "String!",
       "name": "code",
       "url": "/travelgatex/reference/scalars/string",
-      "description": "Specifies the resort code.",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -15,7 +15,7 @@
       "typeString": "String",
       "name": "name",
       "url": "/travelgatex/reference/scalars/string",
-      "description": "Specifies the resort name.",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -23,7 +23,7 @@
       "typeString": "String",
       "name": "description",
       "url": "/travelgatex/reference/scalars/string",
-      "description": "Specifies the resort description.",
+      "description": null,
       "isDeprecated": false,
       "args": null
     }
@@ -31,7 +31,7 @@
   "requireby": [
     {
       "name": "Supplement",
-      "description": "Supplement that it can be or its already added to the option returned. Contains all the information about the supplement.",
+      "description": null,
       "url": "/travelgatex/reference/objects/supplement"
     }
   ],
@@ -40,7 +40,6 @@
   "typename": "Resort",
   "hideGithubLink": true
 }
-Contains information about the Resort.
 ## GraphQL schema definition
 
 {{% graphql-schema-type %}}

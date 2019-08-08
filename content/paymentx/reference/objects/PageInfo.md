@@ -7,7 +7,7 @@
       "typeString": "Boolean!",
       "name": "hasNextPage",
       "url": "/paymentx/reference/scalars/boolean",
-      "description": "",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -15,7 +15,7 @@
       "typeString": "Boolean!",
       "name": "hasPreviousPage",
       "url": "/paymentx/reference/scalars/boolean",
-      "description": "",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -23,7 +23,7 @@
       "typeString": "String!",
       "name": "startCursor",
       "url": "/paymentx/reference/scalars/string",
-      "description": "",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -31,7 +31,7 @@
       "typeString": "String!",
       "name": "endCursor",
       "url": "/paymentx/reference/scalars/string",
-      "description": "",
+      "description": null,
       "isDeprecated": false,
       "args": null
     }
@@ -39,63 +39,78 @@
   "requireby": [
     {
       "name": "PaymentXStoredCardConnection",
-      "description": "",
+      "description": null,
       "url": "/paymentx/reference/objects/paymentxstoredcardconnection"
     },
     {
       "name": "GroupConnection",
-      "description": "",
+      "description": null,
       "url": "/paymentx/reference/objects/groupconnection"
     },
     {
       "name": "MemberConnection",
-      "description": "",
+      "description": null,
       "url": "/paymentx/reference/objects/memberconnection"
     },
     {
       "name": "APIConnection",
-      "description": "",
+      "description": null,
       "url": "/paymentx/reference/objects/apiconnection"
     },
     {
       "name": "ManagedGroupConnection",
-      "description": "",
+      "description": null,
       "url": "/paymentx/reference/objects/managedgroupconnection"
     },
     {
       "name": "AccessConnection",
-      "description": "",
+      "description": null,
       "url": "/paymentx/reference/objects/accessconnection"
     },
     {
       "name": "SupplierConnection",
-      "description": "",
+      "description": null,
       "url": "/paymentx/reference/objects/supplierconnection"
     },
     {
       "name": "ClientConnection",
-      "description": "",
+      "description": null,
       "url": "/paymentx/reference/objects/clientconnection"
     },
     {
       "name": "RoleConnection",
-      "description": "",
+      "description": null,
       "url": "/paymentx/reference/objects/roleconnection"
     },
     {
+      "name": "ProfileConnection",
+      "description": null,
+      "url": "/paymentx/reference/objects/profileconnection"
+    },
+    {
       "name": "ResourceConnection",
-      "description": "",
+      "description": null,
       "url": "/paymentx/reference/objects/resourceconnection"
     },
     {
       "name": "OperationConnection",
-      "description": "",
+      "description": null,
       "url": "/paymentx/reference/objects/operationconnection"
     },
     {
       "name": "ProductConnection",
-      "description": "",
+      "description": null,
       "url": "/paymentx/reference/objects/productconnection"
+    },
+    {
+      "name": "MacroPermissionsConnection",
+      "description": null,
+      "url": "/paymentx/reference/objects/macropermissionsconnection"
+    },
+    {
+      "name": "EntityConnection",
+      "description": null,
+      "url": "/paymentx/reference/objects/entityconnection"
     }
   ],
   "enumValues": null,

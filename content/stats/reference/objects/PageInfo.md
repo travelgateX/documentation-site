@@ -7,7 +7,7 @@
       "typeString": "Boolean!",
       "name": "hasNextPage",
       "url": "/stats/reference/scalars/boolean",
-      "description": "",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -15,7 +15,7 @@
       "typeString": "Boolean!",
       "name": "hasPreviousPage",
       "url": "/stats/reference/scalars/boolean",
-      "description": "",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -23,7 +23,7 @@
       "typeString": "String!",
       "name": "startCursor",
       "url": "/stats/reference/scalars/string",
-      "description": "",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -31,7 +31,7 @@
       "typeString": "String!",
       "name": "endCursor",
       "url": "/stats/reference/scalars/string",
-      "description": "",
+      "description": null,
       "isDeprecated": false,
       "args": null
     }
@@ -39,63 +39,83 @@
   "requireby": [
     {
       "name": "StatsConnection",
-      "description": "",
+      "description": null,
       "url": "/stats/reference/objects/statsconnection"
     },
     {
+      "name": "ConnectionConnection",
+      "description": null,
+      "url": "/stats/reference/objects/connectionconnection"
+    },
+    {
       "name": "GroupConnection",
-      "description": "",
+      "description": null,
       "url": "/stats/reference/objects/groupconnection"
     },
     {
       "name": "AccessConnection",
-      "description": "",
+      "description": null,
       "url": "/stats/reference/objects/accessconnection"
     },
     {
+      "name": "ClientConnection",
+      "description": null,
+      "url": "/stats/reference/objects/clientconnection"
+    },
+    {
       "name": "MemberConnection",
-      "description": "",
+      "description": null,
       "url": "/stats/reference/objects/memberconnection"
     },
     {
       "name": "APIConnection",
-      "description": "",
+      "description": null,
       "url": "/stats/reference/objects/apiconnection"
     },
     {
-      "name": "ProductConnection",
-      "description": "",
-      "url": "/stats/reference/objects/productconnection"
+      "name": "ManagedGroupConnection",
+      "description": null,
+      "url": "/stats/reference/objects/managedgroupconnection"
     },
     {
       "name": "SupplierConnection",
-      "description": "",
+      "description": null,
       "url": "/stats/reference/objects/supplierconnection"
     },
     {
-      "name": "ClientConnection",
-      "description": "",
-      "url": "/stats/reference/objects/clientconnection"
-    },
-    {
       "name": "RoleConnection",
-      "description": "",
+      "description": null,
       "url": "/stats/reference/objects/roleconnection"
     },
     {
+      "name": "ProfileConnection",
+      "description": null,
+      "url": "/stats/reference/objects/profileconnection"
+    },
+    {
       "name": "ResourceConnection",
-      "description": "",
+      "description": null,
       "url": "/stats/reference/objects/resourceconnection"
     },
     {
       "name": "OperationConnection",
-      "description": "",
+      "description": null,
       "url": "/stats/reference/objects/operationconnection"
     },
     {
-      "name": "ManagedGroupConnection",
-      "description": "",
-      "url": "/stats/reference/objects/managedgroupconnection"
+      "name": "EntityConnection",
+      "description": null,
+      "url": "/stats/reference/objects/entityconnection"
+    },
+    {
+      "name": "ProductConnection",
+      "description": null,
+      "url": "/stats/reference/objects/productconnection"
+    },
+    {
+      "name": "MacroPermissionsConnection",
+      "description": null,
+      "url": "/stats/reference/objects/macropermissionsconnection"
     }
   ],
   "enumValues": null,

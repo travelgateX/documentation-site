@@ -6,20 +6,30 @@
   "requireby": [
     {
       "name": "StatsFilterInput",
-      "description": "Filters needed to do a search.\nUsers (List of users), Suppliers (List of suppliers), ServiceApis (List of service apis), From (Start date of search - YYYY-MM-DD HH:mm:ss), To (End date of search - YYYY-MM-DD HH:mm:ss)",
+      "description": null,
       "url": "/travelgatex/reference/inputobjects/statsfilterinput"
+    },
+    {
+      "name": "ActiveFilterInput",
+      "description": null,
+      "url": "/travelgatex/reference/inputobjects/activefilterinput"
+    },
+    {
+      "name": "LoggingLegacyFilterInput",
+      "description": "Filters needed to do a search.\nFrom (Start date of search - YYYY-MM-DD HH:mm:ss), To (End date of search - YYYY-MM-DD HH:mm:ss), ",
+      "url": "/travelgatex/reference/inputobjects/logginglegacyfilterinput"
     }
   ],
   "enumValues": [
     {
       "name": "BUYER",
-      "description": "When the request has been send as a buyer",
+      "description": null,
       "isDeprecated": false,
       "deprecationReason": null
     },
     {
       "name": "SELLER",
-      "description": "When the request has been send as a seller",
+      "description": null,
       "isDeprecated": false,
       "deprecationReason": null
     }
@@ -28,7 +38,6 @@
   "typename": "ModeType",
   "hideGithubLink": true
 }
-Mode to select which kind of stats do you want query
 ## GraphQL schema definition
 
 {{% graphql-schema-enum %}}

@@ -7,7 +7,7 @@
       "typeString": "ID!",
       "name": "code",
       "url": "/stats/reference/scalars/id",
-      "description": "",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -15,7 +15,7 @@
       "typeString": "OrganizationData",
       "name": "organizationData",
       "url": "/stats/reference/objects/organizationdata",
-      "description": "",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -23,14 +23,14 @@
       "typeString": "[AdviseMessage!]",
       "name": "adviseMessage",
       "url": "/stats/reference/objects/advisemessage",
-      "description": "List of advise messages.",
+      "description": null,
       "isDeprecated": false,
       "args": [
         {
           "typeString": "[AdviseMessageLevel]",
           "name": "level",
           "url": "/stats/reference/enums/advisemessagelevel",
-          "description": ""
+          "description": null
         }
       ]
     },
@@ -38,7 +38,7 @@
       "typeString": "DateTime!",
       "name": "createdAt",
       "url": "/stats/reference/scalars/datetime",
-      "description": "Date created",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -46,7 +46,7 @@
       "typeString": "DateTime!",
       "name": "updatedAt",
       "url": "/stats/reference/scalars/datetime",
-      "description": "Date updated",
+      "description": null,
       "isDeprecated": false,
       "args": null
     }
@@ -54,22 +54,32 @@
   "requireby": [
     {
       "name": "AccessData",
-      "description": "",
+      "description": null,
       "url": "/stats/reference/objects/accessdata"
     },
     {
       "name": "SupplierData",
-      "description": "",
+      "description": null,
       "url": "/stats/reference/objects/supplierdata"
     },
     {
+      "name": "SystemData",
+      "description": null,
+      "url": "/stats/reference/objects/systemdata"
+    },
+    {
+      "name": "ProfileData",
+      "description": null,
+      "url": "/stats/reference/objects/profiledata"
+    },
+    {
       "name": "DomainData",
-      "description": "",
+      "description": null,
       "url": "/stats/reference/objects/domaindata"
     },
     {
       "name": "ClientData",
-      "description": "",
+      "description": null,
       "url": "/stats/reference/objects/clientdata"
     }
   ],
@@ -78,7 +88,6 @@
   "typename": "Organization",
   "hideGithubLink": true
 }
-Organization node is the root node in the hierarachy, the folders are the children of the organization and the products are the children of the folders.
 ## GraphQL schema definition
 
 {{% graphql-schema-type %}}

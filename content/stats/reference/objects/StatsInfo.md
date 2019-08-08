@@ -7,7 +7,7 @@
       "typeString": "ID!",
       "name": "code",
       "url": "/stats/reference/scalars/id",
-      "description": "",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -15,15 +15,15 @@
       "typeString": "StatsInfoTypes!",
       "name": "type",
       "url": "/stats/reference/enums/statsinfotypes",
-      "description": "Stats type",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
     {
-      "typeString": "Int!",
+      "typeString": "Int64!",
       "name": "hits",
-      "url": "/stats/reference/scalars/int",
-      "description": "Total hits",
+      "url": "/stats/reference/scalars/int64",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -31,7 +31,7 @@
       "typeString": "Int!",
       "name": "time",
       "url": "/stats/reference/scalars/int",
-      "description": "Average time (ms)",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -39,7 +39,7 @@
       "typeString": "[StatsAsset!]",
       "name": "assets",
       "url": "/stats/reference/objects/statsasset",
-      "description": "Details about errors.",
+      "description": null,
       "isDeprecated": false,
       "args": null
     }
@@ -50,7 +50,6 @@
   "typename": "StatsInfo",
   "hideGithubLink": true
 }
-Details of an specific error
 ## GraphQL schema definition
 
 {{% graphql-schema-type %}}

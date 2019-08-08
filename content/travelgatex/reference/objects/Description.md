@@ -7,7 +7,7 @@
       "typeString": "DescriptionType!",
       "name": "type",
       "url": "/travelgatex/reference/enums/descriptiontype",
-      "description": "Indicates type of description",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -15,7 +15,7 @@
       "typeString": "[Text!]",
       "name": "texts",
       "url": "/travelgatex/reference/objects/text",
-      "description": "Label",
+      "description": null,
       "isDeprecated": false,
       "args": null
     }
@@ -26,7 +26,6 @@
   "typename": "Description",
   "hideGithubLink": true
 }
-Object description indicates the type and the description about something.
 ## GraphQL schema definition
 
 {{% graphql-schema-type %}}

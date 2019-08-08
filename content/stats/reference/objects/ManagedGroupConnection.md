@@ -7,7 +7,7 @@
       "typeString": "[ManagedGroupEdge]",
       "name": "edges",
       "url": "/stats/reference/objects/managedgroupedge",
-      "description": "",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -15,7 +15,7 @@
       "typeString": "PageInfo!",
       "name": "pageInfo",
       "url": "/stats/reference/objects/pageinfo",
-      "description": "",
+      "description": null,
       "isDeprecated": false,
       "args": null
     }
@@ -23,7 +23,7 @@
   "requireby": [
     {
       "name": "GroupData",
-      "description": "",
+      "description": null,
       "url": "/stats/reference/objects/groupdata"
     }
   ],

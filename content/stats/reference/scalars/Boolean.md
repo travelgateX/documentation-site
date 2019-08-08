@@ -5,68 +5,93 @@
   "fields": null,
   "requireby": [
     {
+      "name": "StatsFilterInput",
+      "description": null,
+      "url": "/stats/reference/inputobjects/statsfilterinput"
+    },
+    {
       "name": "PageInfo",
-      "description": "",
+      "description": null,
       "url": "/stats/reference/objects/pageinfo"
     },
     {
       "name": "OperationDetailed",
-      "description": "Stats information per operation",
+      "description": null,
       "url": "/stats/reference/objects/operationdetailed"
     },
     {
       "name": "AccessData",
-      "description": "",
+      "description": null,
       "url": "/stats/reference/objects/accessdata"
     },
     {
       "name": "SupplierData",
-      "description": "",
+      "description": null,
       "url": "/stats/reference/objects/supplierdata"
     },
     {
       "name": "Provider",
-      "description": "Temporary type to use only during SQL server's lifetime",
+      "description": null,
       "url": "/stats/reference/objects/provider"
     },
     {
-      "name": "OrganizationData",
-      "description": "",
-      "url": "/stats/reference/objects/organizationdata"
+      "name": "ClientFilter",
+      "description": null,
+      "url": "/stats/reference/inputobjects/clientfilter"
+    },
+    {
+      "name": "SystemData",
+      "description": null,
+      "url": "/stats/reference/objects/systemdata"
+    },
+    {
+      "name": "SupplierFilter",
+      "description": null,
+      "url": "/stats/reference/inputobjects/supplierfilter"
+    },
+    {
+      "name": "GroupData",
+      "description": null,
+      "url": "/stats/reference/objects/groupdata"
     },
     {
       "name": "GroupCommonData",
-      "description": "",
+      "description": null,
       "url": "/stats/reference/interfaces/groupcommondata"
     },
     {
       "name": "MemberData",
-      "description": "",
+      "description": null,
       "url": "/stats/reference/objects/memberdata"
     },
     {
-      "name": "RoleData",
-      "description": "",
-      "url": "/stats/reference/objects/roledata"
-    },
-    {
-      "name": "ResourceData",
-      "description": "",
-      "url": "/stats/reference/objects/resourcedata"
-    },
-    {
       "name": "APIData",
-      "description": "",
+      "description": null,
       "url": "/stats/reference/objects/apidata"
     },
     {
-      "name": "GroupData",
-      "description": "",
-      "url": "/stats/reference/objects/groupdata"
+      "name": "ResourceData",
+      "description": null,
+      "url": "/stats/reference/objects/resourcedata"
+    },
+    {
+      "name": "RoleData",
+      "description": null,
+      "url": "/stats/reference/objects/roledata"
+    },
+    {
+      "name": "ProfileData",
+      "description": null,
+      "url": "/stats/reference/objects/profiledata"
+    },
+    {
+      "name": "OrganizationData",
+      "description": null,
+      "url": "/stats/reference/objects/organizationdata"
     },
     {
       "name": "ClientData",
-      "description": "",
+      "description": null,
       "url": "/stats/reference/objects/clientdata"
     }
   ],

@@ -7,26 +7,26 @@
       "typeString": "Int!",
       "name": "month",
       "url": "/travelgatex/reference/scalars/int",
-      "description": "Month MM",
+      "description": null,
       "args": null
     },
     {
       "typeString": "Int!",
       "name": "year",
       "url": "/travelgatex/reference/scalars/int",
-      "description": "Year yy",
+      "description": null,
       "args": null
     }
   ],
   "requireby": [
     {
       "name": "PaymentCardInput",
-      "description": "Input PaymentCard, if the payment is done by credit card, is it mandatory to specify the payment type and the credit card information",
+      "description": null,
       "url": "/travelgatex/reference/inputobjects/paymentcardinput"
     },
     {
       "name": "PaymentXStoredCardInput",
-      "description": "",
+      "description": null,
       "url": "/travelgatex/reference/inputobjects/paymentxstoredcardinput"
     }
   ],
@@ -35,7 +35,6 @@
   "typename": "ExpireDateInput",
   "hideGithubLink": true
 }
-The card expiration date
 ## GraphQL schema definition
 
 {{% graphql-schema-type %}}

@@ -5,72 +5,93 @@
   "fields": [
     {
       "typeString": "[ID!]",
+      "name": "owners",
+      "url": "/travelgatex/reference/scalars/id",
+      "description": null,
+      "args": null
+    },
+    {
+      "typeString": "[ID!]",
       "name": "groups",
       "url": "/travelgatex/reference/scalars/id",
-      "description": "Groups codes list",
+      "description": null,
       "args": null
     },
     {
       "typeString": "[ID!]",
       "name": "accesses",
       "url": "/travelgatex/reference/scalars/id",
-      "description": "List of accesses",
+      "description": null,
       "args": null
     },
     {
       "typeString": "[ID!]",
       "name": "suppliers",
       "url": "/travelgatex/reference/scalars/id",
-      "description": "List of suppliers",
+      "description": null,
       "args": null
     },
     {
       "typeString": "[ID!]",
       "name": "clients",
       "url": "/travelgatex/reference/scalars/id",
-      "description": "List of clients",
+      "description": null,
       "args": null
     },
     {
       "typeString": "ModeType!",
       "name": "mode",
       "url": "/travelgatex/reference/enums/modetype",
-      "description": "Buyer or Seller",
+      "description": null,
       "args": null
     },
     {
       "typeString": "[ServiceApiType!]",
       "name": "serviceApis",
       "url": "/travelgatex/reference/enums/serviceapitype",
-      "description": "List of services apis",
+      "description": null,
       "args": null
     },
     {
       "typeString": "[ServiceOperationType!]",
       "name": "operation",
       "url": "/travelgatex/reference/enums/serviceoperationtype",
-      "description": "List of services operations",
+      "description": null,
       "args": null
     },
     {
       "typeString": "[ID!]",
       "name": "serviceOperations",
       "url": "/travelgatex/reference/scalars/id",
-      "description": "",
+      "description": null,
       "args": null
     },
     {
-      "typeString": "DateTime!",
+      "typeString": "DateTime",
       "name": "from",
       "url": "/travelgatex/reference/scalars/datetime",
-      "description": "From date of search",
+      "description": null,
       "args": null
     },
     {
-      "typeString": "DateTime!",
+      "typeString": "DateTime",
       "name": "to",
       "url": "/travelgatex/reference/scalars/datetime",
-      "description": "To date of search",
+      "description": null,
+      "args": null
+    },
+    {
+      "typeString": "TimeRangeInput",
+      "name": "timeRange",
+      "url": "/travelgatex/reference/inputobjects/timerangeinput",
+      "description": null,
+      "args": null
+    },
+    {
+      "typeString": "Boolean",
+      "name": "retrieveAssets",
+      "url": "/travelgatex/reference/scalars/boolean",
+      "description": null,
       "args": null
     }
   ],
@@ -80,8 +101,6 @@
   "typename": "StatsFilterInput",
   "hideGithubLink": true
 }
-Filters needed to do a search.
-Users (List of users), Suppliers (List of suppliers), ServiceApis (List of service apis), From (Start date of search - YYYY-MM-DD HH:mm:ss), To (End date of search - YYYY-MM-DD HH:mm:ss)
 ## GraphQL schema definition
 
 {{% graphql-schema-type %}}

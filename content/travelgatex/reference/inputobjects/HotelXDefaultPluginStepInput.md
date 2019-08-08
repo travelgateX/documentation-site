@@ -7,14 +7,14 @@
       "typeString": "PluginStepType!",
       "name": "step",
       "url": "/travelgatex/reference/enums/pluginsteptype",
-      "description": "",
+      "description": null,
       "args": null
     },
     {
       "typeString": "[HotelXDefaultPluginInput!]!",
       "name": "plugins",
       "url": "/travelgatex/reference/inputobjects/hotelxdefaultplugininput",
-      "description": "",
+      "description": null,
       "args": null
     }
   ],

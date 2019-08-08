@@ -7,7 +7,7 @@
       "typeString": "[PaxInput!]!",
       "name": "paxes",
       "url": "/travelgatex/reference/inputobjects/paxinput",
-      "description": "Array of pax ages. The number of items in the array will indicate the pax occupancy.",
+      "description": null,
       "args": null
     }
   ],
@@ -17,7 +17,6 @@
   "typename": "RoomInput",
   "hideGithubLink": true
 }
-Occupancy for a room. It contains a list of pax ages.
 ## GraphQL schema definition
 
 {{% graphql-schema-type %}}

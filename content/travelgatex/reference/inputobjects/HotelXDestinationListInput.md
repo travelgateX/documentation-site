@@ -4,24 +4,31 @@
   "weight": 1,
   "fields": [
     {
-      "typeString": "ID!",
+      "typeString": "ID",
       "name": "access",
       "url": "/travelgatex/reference/scalars/id",
-      "description": "Indicates the access",
+      "description": null,
+      "args": null
+    },
+    {
+      "typeString": "ID",
+      "name": "group",
+      "url": "/travelgatex/reference/scalars/id",
+      "description": null,
       "args": null
     },
     {
       "typeString": "[String!]",
       "name": "destinationCodes",
       "url": "/travelgatex/reference/scalars/string",
-      "description": "Search by hotel codes",
+      "description": null,
       "args": null
     },
     {
       "typeString": "Int",
       "name": "maxSize",
       "url": "/travelgatex/reference/scalars/int",
-      "description": "Maxium number of items per page",
+      "description": null,
       "args": null
     }
   ],

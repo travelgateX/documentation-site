@@ -7,7 +7,7 @@
       "typeString": "String!",
       "name": "name",
       "url": "/travelgatex/reference/scalars/string",
-      "description": "Plugin name",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -15,7 +15,7 @@
       "typeString": "Stat!",
       "name": "total",
       "url": "/travelgatex/reference/objects/stat",
-      "description": "total plugin time",
+      "description": null,
       "isDeprecated": false,
       "args": null
     }
@@ -23,12 +23,12 @@
   "requireby": [
     {
       "name": "StatsRequest",
-      "description": "Contains internal information.",
+      "description": null,
       "url": "/travelgatex/reference/objects/statsrequest"
     },
     {
       "name": "StatAccess",
-      "description": "",
+      "description": null,
       "url": "/travelgatex/reference/objects/stataccess"
     }
   ],

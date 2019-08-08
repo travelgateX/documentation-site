@@ -7,7 +7,7 @@
       "typeString": "ID!",
       "name": "code",
       "url": "/travelgatex/reference/scalars/id",
-      "description": "unique identifier of a supplier",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -15,7 +15,7 @@
       "typeString": "String!",
       "name": "name",
       "url": "/travelgatex/reference/scalars/string",
-      "description": "Supplier complete name",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -23,7 +23,7 @@
       "typeString": "Boolean!",
       "name": "isActive",
       "url": "/travelgatex/reference/scalars/boolean",
-      "description": "indicates whether a supplier is active",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -31,7 +31,7 @@
       "typeString": "Provider!",
       "name": "provider",
       "url": "/travelgatex/reference/objects/provider",
-      "description": "instance to which this supllier is connected",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -39,7 +39,7 @@
       "typeString": "String!",
       "name": "context",
       "url": "/travelgatex/reference/scalars/string",
-      "description": "Context where the Supplier belongs to",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -47,7 +47,7 @@
       "typeString": "Int!",
       "name": "serviceApi",
       "url": "/travelgatex/reference/scalars/int",
-      "description": "Service API",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -55,7 +55,7 @@
       "typeString": "ID",
       "name": "supplierGroup",
       "url": "/travelgatex/reference/scalars/id",
-      "description": "SupplierGroup Internal Supplier grouping",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -63,15 +63,46 @@
       "typeString": "AccessConnection",
       "name": "accesses",
       "url": "/travelgatex/reference/objects/accessconnection",
-      "description": "Accesses where the supplier is referenced",
+      "description": null,
       "isDeprecated": false,
-      "args": null
+      "args": [
+        {
+          "typeString": "Int",
+          "name": "first",
+          "url": "/travelgatex/reference/scalars/int",
+          "description": null
+        },
+        {
+          "typeString": "Int",
+          "name": "last",
+          "url": "/travelgatex/reference/scalars/int",
+          "description": null
+        },
+        {
+          "typeString": "String",
+          "name": "before",
+          "url": "/travelgatex/reference/scalars/string",
+          "description": null
+        },
+        {
+          "typeString": "String",
+          "name": "after",
+          "url": "/travelgatex/reference/scalars/string",
+          "description": null
+        },
+        {
+          "typeString": "AccessFilter",
+          "name": "filter",
+          "url": "/travelgatex/reference/inputobjects/accessfilter",
+          "description": null
+        }
+      ]
     },
     {
-      "typeString": "Organization",
+      "typeString": "Organization!",
       "name": "owner",
       "url": "/travelgatex/reference/objects/organization",
-      "description": "Supplier owner",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -79,40 +110,87 @@
       "typeString": "GroupConnection",
       "name": "groups",
       "url": "/travelgatex/reference/objects/groupconnection",
-      "description": "Groups where access belongs",
+      "description": null,
       "isDeprecated": false,
       "args": [
         {
           "typeString": "Int",
           "name": "first",
           "url": "/travelgatex/reference/scalars/int",
-          "description": ""
+          "description": null
         },
         {
           "typeString": "Int",
           "name": "last",
           "url": "/travelgatex/reference/scalars/int",
-          "description": ""
+          "description": null
         },
         {
           "typeString": "String",
           "name": "before",
           "url": "/travelgatex/reference/scalars/string",
-          "description": ""
+          "description": null
         },
         {
           "typeString": "String",
           "name": "after",
           "url": "/travelgatex/reference/scalars/string",
-          "description": ""
+          "description": null
         }
       ]
+    },
+    {
+      "typeString": "ClientConnection",
+      "name": "clients",
+      "url": "/travelgatex/reference/objects/clientconnection",
+      "description": null,
+      "isDeprecated": false,
+      "args": [
+        {
+          "typeString": "Int",
+          "name": "first",
+          "url": "/travelgatex/reference/scalars/int",
+          "description": null
+        },
+        {
+          "typeString": "Int",
+          "name": "last",
+          "url": "/travelgatex/reference/scalars/int",
+          "description": null
+        },
+        {
+          "typeString": "String",
+          "name": "before",
+          "url": "/travelgatex/reference/scalars/string",
+          "description": null
+        },
+        {
+          "typeString": "String",
+          "name": "after",
+          "url": "/travelgatex/reference/scalars/string",
+          "description": null
+        },
+        {
+          "typeString": "ClientFilter",
+          "name": "filter",
+          "url": "/travelgatex/reference/inputobjects/clientfilter",
+          "description": null
+        }
+      ]
+    },
+    {
+      "typeString": "System!",
+      "name": "system",
+      "url": "/travelgatex/reference/objects/system",
+      "description": null,
+      "isDeprecated": false,
+      "args": null
     }
   ],
   "requireby": [
     {
       "name": "Supplier",
-      "description": "A Supplier is a Partner who is connected to TravelgateX on the supply side in order to sell their product to connected Buyers",
+      "description": null,
       "url": "/travelgatex/reference/objects/supplier"
     }
   ],

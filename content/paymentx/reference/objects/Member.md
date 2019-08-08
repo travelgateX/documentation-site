@@ -7,7 +7,7 @@
       "typeString": "ID!",
       "name": "code",
       "url": "/paymentx/reference/scalars/id",
-      "description": "",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -15,7 +15,7 @@
       "typeString": "MemberData",
       "name": "memberData",
       "url": "/paymentx/reference/objects/memberdata",
-      "description": "",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -23,14 +23,14 @@
       "typeString": "[AdviseMessage!]",
       "name": "adviseMessage",
       "url": "/paymentx/reference/objects/advisemessage",
-      "description": "List of advise messages.",
+      "description": null,
       "isDeprecated": false,
       "args": [
         {
           "typeString": "[AdviseMessageLevel]",
           "name": "level",
           "url": "/paymentx/reference/enums/advisemessagelevel",
-          "description": ""
+          "description": null
         }
       ]
     },
@@ -38,7 +38,7 @@
       "typeString": "DateTime!",
       "name": "createdAt",
       "url": "/paymentx/reference/scalars/datetime",
-      "description": "Date created",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -46,7 +46,7 @@
       "typeString": "DateTime!",
       "name": "updatedAt",
       "url": "/paymentx/reference/scalars/datetime",
-      "description": "Date updated",
+      "description": null,
       "isDeprecated": false,
       "args": null
     }
@@ -54,22 +54,22 @@
   "requireby": [
     {
       "name": "GroupData",
-      "description": "",
+      "description": null,
       "url": "/paymentx/reference/objects/groupdata"
     },
     {
       "name": "GroupCommonData",
-      "description": "",
+      "description": null,
       "url": "/paymentx/reference/interfaces/groupcommondata"
     },
     {
       "name": "MemberEdge",
-      "description": "",
+      "description": null,
       "url": "/paymentx/reference/objects/memberedge"
     },
     {
       "name": "OrganizationData",
-      "description": "",
+      "description": null,
       "url": "/paymentx/reference/objects/organizationdata"
     }
   ],
@@ -78,9 +78,6 @@
   "typename": "Member",
   "hideGithubLink": true
 }
-You grant access to members which can be either:
-Users: A developer, administrator or any other person from your Organization who interacts with the TravelgateX Platform. An email address can be used as the identity of a User.
-Service Accounts: An application (Client) instead of an individual User. If you prefer, you can create as many Service Accounts as needed to represent different logical components of your application.
 ## GraphQL schema definition
 
 {{% graphql-schema-type %}}

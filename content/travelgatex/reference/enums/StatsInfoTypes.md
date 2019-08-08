@@ -6,50 +6,60 @@
   "requireby": [
     {
       "name": "StatsInfo",
-      "description": "Details of an specific error",
+      "description": null,
       "url": "/travelgatex/reference/objects/statsinfo"
+    },
+    {
+      "name": "ErrorFilter",
+      "description": null,
+      "url": "/travelgatex/reference/inputobjects/errorfilter"
+    },
+    {
+      "name": "LoggingLegacyData",
+      "description": null,
+      "url": "/travelgatex/reference/objects/logginglegacydata"
     }
   ],
   "enumValues": [
     {
       "name": "ALL",
-      "description": "",
+      "description": null,
       "isDeprecated": false,
       "deprecationReason": null
     },
     {
       "name": "OK",
-      "description": "Stats in OK state",
+      "description": null,
       "isDeprecated": false,
       "deprecationReason": null
     },
     {
       "name": "INTEGRATION",
-      "description": "Stats in NOK state caused by integration issues",
+      "description": null,
       "isDeprecated": false,
       "deprecationReason": null
     },
     {
       "name": "PROVIDER",
-      "description": "Stats in NOK state caused by supplier issues",
+      "description": null,
       "isDeprecated": false,
       "deprecationReason": null
     },
     {
       "name": "COMMUNICATION",
-      "description": "Stats in NOK state caused by Timeout",
+      "description": null,
       "isDeprecated": false,
       "deprecationReason": null
     },
     {
       "name": "HUB",
-      "description": "Stats in NOK state caused by HUB issues",
+      "description": null,
       "isDeprecated": false,
       "deprecationReason": null
     },
     {
       "name": "OTHER",
-      "description": "Stats in NOK state caused by other causes",
+      "description": null,
       "isDeprecated": false,
       "deprecationReason": null
     }

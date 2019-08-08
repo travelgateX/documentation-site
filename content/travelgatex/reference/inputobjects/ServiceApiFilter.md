@@ -7,21 +7,21 @@
       "typeString": "String",
       "name": "ApiName",
       "url": "/travelgatex/reference/scalars/string",
-      "description": "",
+      "description": null,
       "args": null
     },
     {
       "typeString": "String",
       "name": "OperationName",
       "url": "/travelgatex/reference/scalars/string",
-      "description": "",
+      "description": null,
       "args": null
     },
     {
       "typeString": "String",
       "name": "OperationType",
       "url": "/travelgatex/reference/scalars/string",
-      "description": "",
+      "description": null,
       "args": null
     }
   ],

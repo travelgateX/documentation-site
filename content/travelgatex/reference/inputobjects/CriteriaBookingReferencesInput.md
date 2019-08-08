@@ -7,28 +7,28 @@
       "typeString": "String!",
       "name": "hotelCode",
       "url": "/travelgatex/reference/scalars/string",
-      "description": "The hotel code.",
+      "description": null,
       "args": null
     },
     {
       "typeString": "Currency!",
       "name": "currency",
       "url": "/travelgatex/reference/scalars/currency",
-      "description": "The requested currency. The API will convert to this currency if supplier returns a different one.",
+      "description": null,
       "args": null
     },
     {
       "typeString": "[BookReferenceInput!]!",
       "name": "references",
       "url": "/travelgatex/reference/inputobjects/bookreferenceinput",
-      "description": "Contains the client reference and/or supplier reference.",
+      "description": null,
       "args": null
     }
   ],
   "requireby": [
     {
       "name": "HotelCriteriaBookingInput",
-      "description": "Criteria of book contains basic information to find a book or books.",
+      "description": null,
       "url": "/travelgatex/reference/inputobjects/hotelcriteriabookinginput"
     }
   ],
@@ -37,7 +37,6 @@
   "typename": "CriteriaBookingReferencesInput",
   "hideGithubLink": true
 }
-Criteria by references
 ## GraphQL schema definition
 
 {{% graphql-schema-type %}}

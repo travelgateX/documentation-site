@@ -7,35 +7,35 @@
       "typeString": "[ID]",
       "name": "clientID",
       "url": "/travelgatex/reference/scalars/id",
-      "description": "",
+      "description": null,
       "args": null
     },
     {
       "typeString": "[String!]",
       "name": "name",
       "url": "/travelgatex/reference/scalars/string",
-      "description": "",
+      "description": null,
       "args": null
     },
     {
       "typeString": "[ID]",
       "name": "groupID",
       "url": "/travelgatex/reference/scalars/id",
-      "description": "",
+      "description": null,
       "args": null
     },
     {
       "typeString": "Boolean",
       "name": "isActive",
       "url": "/travelgatex/reference/scalars/boolean",
-      "description": "",
+      "description": null,
       "args": null
     },
     {
       "typeString": "[ID!]",
       "name": "owner",
       "url": "/travelgatex/reference/scalars/id",
-      "description": "",
+      "description": null,
       "args": null
     }
   ],

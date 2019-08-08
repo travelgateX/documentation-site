@@ -7,7 +7,7 @@
       "typeString": "String!",
       "name": "code",
       "url": "/mappea/reference/scalars/string",
-      "description": "Error code",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -15,7 +15,7 @@
       "typeString": "String!",
       "name": "type",
       "url": "/mappea/reference/scalars/string",
-      "description": "Error type",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -23,7 +23,7 @@
       "typeString": "String!",
       "name": "description",
       "url": "/mappea/reference/scalars/string",
-      "description": "Error description",
+      "description": null,
       "isDeprecated": false,
       "args": null
     }
@@ -31,22 +31,22 @@
   "requireby": [
     {
       "name": "GetUploadedFilesResponse",
-      "description": "## GetUploadedFiles",
+      "description": null,
       "url": "/mappea/reference/objects/getuploadedfilesresponse"
     },
     {
       "name": "GetMappeaStatsResponse",
-      "description": "",
+      "description": null,
       "url": "/mappea/reference/objects/getmappeastatsresponse"
     },
     {
       "name": "OnlyStatusResponse",
-      "description": "## Common Items",
+      "description": null,
       "url": "/mappea/reference/objects/onlystatusresponse"
     },
     {
       "name": "UploadFileResponse",
-      "description": "",
+      "description": null,
       "url": "/mappea/reference/objects/uploadfileresponse"
     }
   ],
@@ -55,7 +55,6 @@
   "typename": "Error",
   "hideGithubLink": true
 }
-Application errors
 ## GraphQL schema definition
 
 {{% graphql-schema-type %}}

@@ -7,7 +7,7 @@
       "typeString": "Int!",
       "name": "hoursBefore",
       "url": "/travelgatex/reference/scalars/int",
-      "description": "Cancellation fees applicable X number of hours before the check-in date",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -15,7 +15,7 @@
       "typeString": "CancelPenaltyType!",
       "name": "penaltyType",
       "url": "/travelgatex/reference/enums/cancelpenaltytype",
-      "description": "Type of penalty; this can be Nights, Percent or Import",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -23,7 +23,7 @@
       "typeString": "Currency!",
       "name": "currency",
       "url": "/travelgatex/reference/scalars/currency",
-      "description": "Currency used in the cancellation policy",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -31,7 +31,7 @@
       "typeString": "Float!",
       "name": "value",
       "url": "/travelgatex/reference/scalars/float",
-      "description": "Value of the cancellation policy",
+      "description": null,
       "isDeprecated": false,
       "args": null
     }
@@ -42,7 +42,6 @@
   "typename": "CancelPenalty",
   "hideGithubLink": true
 }
-Contains information for cancellation penalities..
 ## GraphQL schema definition
 
 {{% graphql-schema-type %}}

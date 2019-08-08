@@ -7,14 +7,14 @@
       "typeString": "Int!",
       "name": "fileId",
       "url": "/mappea/reference/scalars/int",
-      "description": "",
+      "description": null,
       "args": null
     },
     {
       "typeString": "[MappeaSupplierConfirmedInput!]!",
       "name": "suppliers",
       "url": "/mappea/reference/inputobjects/mappeasupplierconfirmedinput",
-      "description": "",
+      "description": null,
       "args": null
     }
   ],
@@ -24,7 +24,6 @@
   "typename": "MappeaConfirmUploadInput",
   "hideGithubLink": true
 }
-## ConfirmUpload
 ## GraphQL schema definition
 
 {{% graphql-schema-type %}}

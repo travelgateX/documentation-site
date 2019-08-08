@@ -7,7 +7,7 @@
       "typeString": "ID!",
       "name": "code",
       "url": "/mappea/reference/scalars/id",
-      "description": "AM code: The following codes can be returned:",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -15,7 +15,7 @@
       "typeString": "String!",
       "name": "type",
       "url": "/mappea/reference/scalars/string",
-      "description": "Error type: The following types are valid:",
+      "description": null,
       "isDeprecated": true,
       "args": null,
       "deprecationReason": "",
@@ -31,7 +31,7 @@
       "typeString": "String!",
       "name": "description",
       "url": "/mappea/reference/scalars/string",
-      "description": "Error description",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -39,7 +39,7 @@
       "typeString": "AdviseMessageLevel!",
       "name": "level",
       "url": "/mappea/reference/enums/advisemessagelevel",
-      "description": "Indicates the level of importance of the message: Posible values ERROR WARN INFO",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -47,7 +47,7 @@
       "typeString": "ExternalMessage",
       "name": "external",
       "url": "/mappea/reference/objects/externalmessage",
-      "description": "Specify the external message.",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -55,7 +55,7 @@
       "typeString": "ID!",
       "name": "correlationID",
       "url": "/mappea/reference/scalars/id",
-      "description": "Identifier to be able to investigate the cause of the error",
+      "description": null,
       "isDeprecated": false,
       "args": null
     }
@@ -66,7 +66,6 @@
   "typename": "AdviseMessage",
   "hideGithubLink": true
 }
-List of advise messages.
 ## GraphQL schema definition
 
 {{% graphql-schema-type %}}
