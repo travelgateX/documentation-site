@@ -570,11 +570,11 @@ seller. XTG will process data and response with error code if needed.
 | @AdjustedPercentage			| 0..1	     | Decimal	| The percentage off the base rate plan amount used to determine the price of this derived rate plan. Only used for derived rates. |
 | @AdjustedAmount			| 0..1	     | Decimal	| The amount which should be added to the base rate plan to determine the price of this derived rate plan. Only used for derived rates. |
 | @AdjustUpIndicator			| 0..1	     | Boolean	| When true, the adjusted amount or adjusted percentage is added to the amount specified for the base rate plan to determine the derived rate amount. When false, the adjusted amount or adjusted percentage is subtracted from the amount specified for the base rate plan to determine the derived rate amount. Only used for derived rates. |
-| RatePlans/RatePlan/Rates/Rate/BaseByGuestAmts | 0..1 | Different types of price can come in the same BaseByGuestAmts element.	|							|
+| RatePlans/RatePlan/Rates/Rate/BaseByGuestAmts | 0..1 | | Different types of price can come in the same BaseByGuestAmts element.	|							
 | RatePlans/RatePlan/Rates/Rate/BaseByGuestAmts/BaseByGuestAmt | 1..n |	|						|
-| @AmountAfterTax			| 1	     | Decimal	| Total amount for @NumberOfGuests by day indicated. This amount doesn't include tax.	|
-| @NumberOfGuests			| 0..1	     | Integer	| How many adults are the @AmountAfterTax for day indicated. If @NumberOfGuests is not informed then @Type must be informed. The maximum @NumberOfGuests is the standard occupancy of the room. |
-| @Type  				| 0..1	     | Integer	| Amounts are per Room or per Occupancy instead of per Pax. If @Type=25. If @Type=14, price is per occupancy, @Code is mandatory and @NumberOfGuests and AdditionalGuestAmounts are not allowed. |
+| @AmountAfterTax			| 1	     | Decimal	| Total amount for @NumberOfGuests indicated by day. This amount doesn't include tax.	|
+| @NumberOfGuests			| 0..1	     | Integer	| Number of passengers. If @NumberOfGuests is not informed then @Type must be specified. The maximum @NumberOfGuests is the standard occupancy of the room. |
+| @Type  				| 0..1	     | Integer	| Amounts per Room or per Occupancy. If @Type=25 the price is per room. If @Type=14 price is per occupancy, @Code is mandatory and @NumberOfGuests and AdditionalGuestAmounts are not allowed. |
 | @Code  				| 0..1	     | String	| Mandatory if @Type=14. The occupancy code is defined by AdultNumber-ChildNumber-InfantNumber. @Code for an occupancy of 2 adults, 1 child and 0 babies would be "2-1-0". |
 | .../Rate/AdditionalGuestAmounts	| 0..1 | | Not used for derived rates.				|
 | .../AdditionalGuestAmounts/AdditionalGuestAmount | 1..n | | Price and information about the additional pax (children, infants or extra adults). |
@@ -1396,7 +1396,7 @@ Note that if the reservation into the Channel system fails, it will be considere
       </HotelReservations>
       <Success/>
     </OTA_HotelResRS>
-~~~~
+~~~
 
 
 **Example for VCC Payment**
@@ -1427,7 +1427,7 @@ Note that if the reservation into the Channel system fails, it will be considere
         </HotelReservation>
       </HotelReservations>
     </OTA_HotelResRS>
-~~~~
+~~~
 
 **Example for VCC Payment with URL**
 
@@ -1453,7 +1453,7 @@ Note that if the reservation into the Channel system fails, it will be considere
         </HotelReservation>
       </HotelReservations>
     </OTA_HotelResRS>
-~~~~
+~~~
 
 
 | **Element**				| **Number**	| **Type**	| **Description**				|
@@ -1786,7 +1786,7 @@ Note that if the cancellation into the Channel system fails, it will be consider
       </HotelReservations>
       <Success/>
     </OTA_HotelResRS>
-~~~~
+~~~
 
 | **Element**				| **Number**	| **Type**	| **Description**				|
 | ------------------------------------- | ------------- | ------------- | --------------------------------------------- |
