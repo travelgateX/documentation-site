@@ -13,6 +13,11 @@ tags = ["products-changelog"]
 Easily accessible log of notable changes to HotelX API
 {{% alert theme="info" %}}All notable changes in our platform will be documented on this page.{{% /alert %}}
 
+## 2019-08-07
+{{% release-notes-container type="f"%}}
+- Fix Hotel-List repeated Hotels
+{{% /release-notes-container %}}
+
 ## 2019-07-11
 {{% release-notes-container type="a"%}}
 - Deprecate type error in Hotel-list, Hotel-Room, Hotel-Board, Hotel-Category
