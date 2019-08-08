@@ -18,6 +18,18 @@ Easily accessible log of notable changes to HotelX API
 - Fix Hotel-List repeated Hotels
 {{% /release-notes-container %}}
 
+## 2019-08-06
+{{% release-notes-container type="a"%}}
+- Add new enum type PaymentCardType which contain list of supported payment card.
+- Add new field *type* of type PaymentCardType into PaymentCardInput and deprecate old field *cardType* 
+- Type HotelData introduces field RoomConnection (same type as Rooms service operation)
+- Modified RoomData type by adding the new types RoomSource (string) and OccupancyStatic
+{{% /release-notes-container %}}
+{{% release-notes-container type="c"%}}
+- Deprecated description from Bed (search)
+- Deprecated KO in BookStatusType
+{{% /release-notes-container %}}
+
 ## 2019-07-11
 {{% release-notes-container type="a"%}}
 - Deprecate type error in Hotel-list, Hotel-Room, Hotel-Board, Hotel-Category
