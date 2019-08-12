@@ -1,0 +1,33 @@
+{<?xml version="2.0" encoding="utf-8" standalone="yes" ?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+	{{ with  .OutputFormats.Get "ATOM" -}}
+	<link rel="self"  type="application/atom+xml" href="{{.Permalink}}" />
+	{{- end }}
+	<link rel="alternate" type="type/html" href="{{.Permalink}}" />
+	{{ with .Site.Author.name }}<author>
+		<name>{{.}}</name>
+		{{ with $.Site.Author.email }}<email>{{.}}</email>{{end}}
+	</author>{{end}}
+	{{ with .Site.Copyright }}<rights type="text">{{.}}</rights>{{end}}
+	<generator url="https://gohugo.io" version="{{.Hugo.Version}}">Hugo</generator>
+	<updated>
+		{{if isset .GitInfo "authordate" }}
+			{{.GitInfo.AuthorDate }}
+		{{else if isset .Params "Lastmod" }}
+			{{ .Page.Lastmod.Format "02/01/2006" }} {{.Page.Lastmod.Day}}
+		{{else}}
+			{{ now.Format "2006-01-02 15:04:00 MST" }}
+		{{end}}
+	</updated>
+	{{ $uuid := sha1 $.Site.BaseURL }}<id>urn:uuid:{{substr $uuid 0 8}}-{{substr $uuid 8 4}}-5{{substr $uuid 13 3}}-{{substr $uuid 16 1}}9{{substr $uuid 17 2}}-{{substr $uuid 21 12}}</id>
+	{{ $start := now.AddDate -1 0 0}}
+
+	<entry> 
+		<title type="text">{{ .Title | plainify }}</title> 
+		<category term="{{.Section}}" />
+		<link rel='alternate' type='type/html' href='{{ .Permalink }}' />
+		<content type="html">
+			<description>{{`<![CDATA[` | safeHTML}}{{ .Content | safeHTML }}{{`]]>`|safeHTML}}</description>
+		</content>
+	</entry> 
+</feed>
