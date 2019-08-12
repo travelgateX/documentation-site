@@ -6,32 +6,37 @@
   "requireby": [
     {
       "name": "Ratios",
-      "description": "Ratios details",
+      "description": null,
       "url": "/stats/reference/objects/ratios"
     },
     {
-      "name": "OperationDetailed",
-      "description": "Stats information per operation",
-      "url": "/stats/reference/objects/operationdetailed"
+      "name": "AccessData",
+      "description": null,
+      "url": "/stats/reference/objects/accessdata"
     },
     {
       "name": "SupplierData",
-      "description": "",
+      "description": null,
       "url": "/stats/reference/objects/supplierdata"
     },
     {
+      "name": "SupplierFilter",
+      "description": null,
+      "url": "/stats/reference/inputobjects/supplierfilter"
+    },
+    {
       "name": "GroupData",
-      "description": "",
+      "description": null,
       "url": "/stats/reference/objects/groupdata"
     },
     {
       "name": "StatsInfo",
-      "description": "Details of an specific error",
+      "description": null,
       "url": "/stats/reference/objects/statsinfo"
     },
     {
       "name": "StatsAsset",
-      "description": "Asset of an specific error",
+      "description": null,
       "url": "/stats/reference/objects/statsasset"
     }
   ],

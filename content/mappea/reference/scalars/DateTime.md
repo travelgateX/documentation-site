@@ -6,73 +6,93 @@
   "requireby": [
     {
       "name": "Supplier",
-      "description": "A Supplier is a Partner who is connected to TravelgateX on the supply side in order to sell their product to connected Buyers",
+      "description": null,
       "url": "/mappea/reference/objects/supplier"
     },
     {
       "name": "Node",
-      "description": "",
+      "description": null,
       "url": "/mappea/reference/interfaces/node"
     },
     {
       "name": "Organization",
-      "description": "Organization node is the root node in the hierarachy, the folders are the children of the organization and the products are the children of the folders.",
+      "description": null,
       "url": "/mappea/reference/objects/organization"
     },
     {
+      "name": "System",
+      "description": null,
+      "url": "/mappea/reference/objects/system"
+    },
+    {
       "name": "Access",
-      "description": "An Access is a set of credentials and configuration in order to access the system of a Supplier.",
+      "description": null,
       "url": "/mappea/reference/objects/access"
     },
     {
       "name": "Member",
-      "description": "You grant access to members which can be either:\nUsers: A developer, administrator or any other person from your Organization who interacts with the TravelgateX Platform. An email address can be used as the identity of a User.\nService Accounts: An application (Client) instead of an individual User. If you prefer, you can create as many Service Accounts as needed to represent different logical components of your application.",
+      "description": null,
       "url": "/mappea/reference/objects/member"
     },
     {
       "name": "Domain",
-      "description": "",
+      "description": null,
       "url": "/mappea/reference/objects/domain"
     },
     {
       "name": "Role",
-      "description": "Permissions determine what operations are allowed on a resource",
+      "description": null,
       "url": "/mappea/reference/objects/role"
     },
     {
       "name": "Resource",
-      "description": "Resources are those used in APIs and Products.",
+      "description": null,
       "url": "/mappea/reference/objects/resource"
     },
     {
       "name": "API",
-      "description": "",
+      "description": null,
       "url": "/mappea/reference/objects/api"
     },
     {
       "name": "Operation",
-      "description": "",
+      "description": null,
       "url": "/mappea/reference/objects/operation"
     },
     {
       "name": "Product",
-      "description": "An APIs collection.",
+      "description": null,
       "url": "/mappea/reference/objects/product"
     },
     {
-      "name": "Client",
-      "description": "Client identifies who is making the request and holds the configuration assigned to it.",
-      "url": "/mappea/reference/objects/client"
+      "name": "MacroPermission",
+      "description": null,
+      "url": "/mappea/reference/objects/macropermission"
+    },
+    {
+      "name": "Profile",
+      "description": null,
+      "url": "/mappea/reference/objects/profile"
     },
     {
       "name": "Group",
-      "description": "Groups are organized hierarchically.",
+      "description": null,
       "url": "/mappea/reference/objects/group"
     },
     {
+      "name": "Entity",
+      "description": null,
+      "url": "/mappea/reference/objects/entity"
+    },
+    {
       "name": "ManagedGroup",
-      "description": "",
+      "description": null,
       "url": "/mappea/reference/objects/managedgroup"
+    },
+    {
+      "name": "Client",
+      "description": null,
+      "url": "/mappea/reference/objects/client"
     }
   ],
   "enumValues": null,
@@ -80,8 +100,6 @@
   "typename": "DateTime",
   "hideGithubLink": true
 }
-The DateTime type represents DateTime values. A good example might be a transaction TimeSpan.
-In queries or mutations, DateTime fields have to be specified in ISO 8601 format with enclosing double quotes: "2017-10-22T13:57:31.123Z".
 ## GraphQL schema definition
 
 {{% graphql-schema-scalar %}}

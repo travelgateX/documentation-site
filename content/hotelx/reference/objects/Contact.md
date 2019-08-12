@@ -1,0 +1,61 @@
+{
+  "title": "Contact",
+  "description": "",
+  "weight": 1,
+  "fields": [
+    {
+      "typeString": "String",
+      "name": "email",
+      "url": "/hotelx/reference/scalars/string",
+      "description": null,
+      "isDeprecated": false,
+      "args": null
+    },
+    {
+      "typeString": "String",
+      "name": "telephone",
+      "url": "/hotelx/reference/scalars/string",
+      "description": null,
+      "isDeprecated": false,
+      "args": null
+    },
+    {
+      "typeString": "String",
+      "name": "fax",
+      "url": "/hotelx/reference/scalars/string",
+      "description": null,
+      "isDeprecated": false,
+      "args": null
+    },
+    {
+      "typeString": "URI",
+      "name": "web",
+      "url": "/hotelx/reference/scalars/uri",
+      "description": null,
+      "isDeprecated": false,
+      "args": null
+    }
+  ],
+  "requireby": [
+    {
+      "name": "HotelData",
+      "description": null,
+      "url": "/hotelx/reference/objects/hoteldata"
+    }
+  ],
+  "enumValues": null,
+  "operator": "type",
+  "typename": "Contact",
+  "hideGithubLink": true
+}
+## GraphQL schema definition
+
+{{% graphql-schema-type %}}
+
+## Fields
+
+{{% graphql-field %}}
+
+## Required by
+
+{{% graphql-require-by %}}

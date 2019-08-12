@@ -7,7 +7,7 @@
       "typeString": "[OperationEdge]",
       "name": "edges",
       "url": "/mappea/reference/objects/operationedge",
-      "description": "",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -15,7 +15,7 @@
       "typeString": "PageInfo!",
       "name": "pageInfo",
       "url": "/mappea/reference/objects/pageinfo",
-      "description": "",
+      "description": null,
       "isDeprecated": false,
       "args": null
     }
@@ -23,7 +23,7 @@
   "requireby": [
     {
       "name": "APIData",
-      "description": "",
+      "description": null,
       "url": "/mappea/reference/objects/apidata"
     }
   ],

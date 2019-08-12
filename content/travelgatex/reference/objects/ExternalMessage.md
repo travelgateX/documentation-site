@@ -7,7 +7,7 @@
       "typeString": "String",
       "name": "code",
       "url": "/travelgatex/reference/scalars/string",
-      "description": "External Code",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -15,7 +15,7 @@
       "typeString": "String!",
       "name": "message",
       "url": "/travelgatex/reference/scalars/string",
-      "description": "External Message",
+      "description": null,
       "isDeprecated": false,
       "args": null
     }
@@ -23,7 +23,7 @@
   "requireby": [
     {
       "name": "AdviseMessage",
-      "description": "List of advise messages.",
+      "description": null,
       "url": "/travelgatex/reference/objects/advisemessage"
     }
   ],

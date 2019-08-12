@@ -7,7 +7,7 @@
       "typeString": "[SupplierEdge]",
       "name": "edges",
       "url": "/travelgatex/reference/objects/supplieredge",
-      "description": "",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -15,7 +15,7 @@
       "typeString": "PageInfo!",
       "name": "pageInfo",
       "url": "/travelgatex/reference/objects/pageinfo",
-      "description": "",
+      "description": null,
       "isDeprecated": false,
       "args": null
     }
@@ -23,23 +23,28 @@
   "requireby": [
     {
       "name": "AdminQuery",
-      "description": "The admin query root of TravelgateX's GraphQL interface.",
+      "description": null,
       "url": "/travelgatex/reference/objects/adminquery"
     },
     {
-      "name": "OrganizationData",
-      "description": "",
-      "url": "/travelgatex/reference/objects/organizationdata"
+      "name": "GroupData",
+      "description": null,
+      "url": "/travelgatex/reference/objects/groupdata"
     },
     {
       "name": "GroupCommonData",
-      "description": "",
+      "description": null,
       "url": "/travelgatex/reference/interfaces/groupcommondata"
     },
     {
-      "name": "GroupData",
-      "description": "",
-      "url": "/travelgatex/reference/objects/groupdata"
+      "name": "OrganizationData",
+      "description": null,
+      "url": "/travelgatex/reference/objects/organizationdata"
+    },
+    {
+      "name": "ClientData",
+      "description": null,
+      "url": "/travelgatex/reference/objects/clientdata"
     }
   ],
   "enumValues": null,

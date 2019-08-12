@@ -7,7 +7,7 @@
       "typeString": "Role",
       "name": "node",
       "url": "/mappea/reference/objects/role",
-      "description": "",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -15,7 +15,7 @@
       "typeString": "String!",
       "name": "cursor",
       "url": "/mappea/reference/scalars/string",
-      "description": "",
+      "description": null,
       "isDeprecated": false,
       "args": null
     }
@@ -23,7 +23,7 @@
   "requireby": [
     {
       "name": "RoleConnection",
-      "description": "",
+      "description": null,
       "url": "/mappea/reference/objects/roleconnection"
     }
   ],

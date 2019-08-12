@@ -7,7 +7,7 @@
       "typeString": "ID!",
       "name": "code",
       "url": "/paymentx/reference/scalars/id",
-      "description": "",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -15,7 +15,7 @@
       "typeString": "Group!",
       "name": "group",
       "url": "/paymentx/reference/objects/group",
-      "description": "",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -23,7 +23,7 @@
       "typeString": "API!",
       "name": "api",
       "url": "/paymentx/reference/objects/api",
-      "description": "",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -31,7 +31,7 @@
       "typeString": "Resource!",
       "name": "resource",
       "url": "/paymentx/reference/objects/resource",
-      "description": "",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -39,7 +39,7 @@
       "typeString": "Role!",
       "name": "role",
       "url": "/paymentx/reference/objects/role",
-      "description": "",
+      "description": null,
       "isDeprecated": false,
       "args": null
     }
@@ -47,7 +47,7 @@
   "requireby": [
     {
       "name": "ManagedGroup",
-      "description": "",
+      "description": null,
       "url": "/paymentx/reference/objects/managedgroup"
     }
   ],

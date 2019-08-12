@@ -7,7 +7,7 @@
       "typeString": "Supplier",
       "name": "node",
       "url": "/paymentx/reference/objects/supplier",
-      "description": "",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -15,7 +15,7 @@
       "typeString": "String!",
       "name": "cursor",
       "url": "/paymentx/reference/scalars/string",
-      "description": "",
+      "description": null,
       "isDeprecated": false,
       "args": null
     }
@@ -23,7 +23,7 @@
   "requireby": [
     {
       "name": "SupplierConnection",
-      "description": "",
+      "description": null,
       "url": "/paymentx/reference/objects/supplierconnection"
     }
   ],

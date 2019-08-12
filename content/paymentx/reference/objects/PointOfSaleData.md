@@ -7,7 +7,7 @@
       "typeString": "ID!",
       "name": "code",
       "url": "/paymentx/reference/scalars/id",
-      "description": "POS Identifier",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -15,7 +15,7 @@
       "typeString": "String",
       "name": "name",
       "url": "/paymentx/reference/scalars/string",
-      "description": "POS Name",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -23,7 +23,7 @@
       "typeString": "Organization",
       "name": "owner",
       "url": "/paymentx/reference/objects/organization",
-      "description": "POS owner",
+      "description": null,
       "isDeprecated": false,
       "args": null
     }
@@ -31,7 +31,7 @@
   "requireby": [
     {
       "name": "PointOfSale",
-      "description": "",
+      "description": null,
       "url": "/paymentx/reference/objects/pointofsale"
     }
   ],

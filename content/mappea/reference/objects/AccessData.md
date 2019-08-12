@@ -7,7 +7,7 @@
       "typeString": "String!",
       "name": "name",
       "url": "/mappea/reference/scalars/string",
-      "description": "Access descriptive name",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -15,7 +15,7 @@
       "typeString": "Boolean!",
       "name": "isActive",
       "url": "/mappea/reference/scalars/boolean",
-      "description": "Indicates if Access is active",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -23,7 +23,7 @@
       "typeString": "ID!",
       "name": "code",
       "url": "/mappea/reference/scalars/id",
-      "description": "Unique AccessConfiguration identifier",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -31,7 +31,7 @@
       "typeString": "Supplier!",
       "name": "supplier",
       "url": "/mappea/reference/objects/supplier",
-      "description": "Supplier for this Access",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -39,7 +39,7 @@
       "typeString": "Boolean!",
       "name": "isTest",
       "url": "/mappea/reference/scalars/boolean",
-      "description": "Indicates if Access can be used for testing or not",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -47,7 +47,7 @@
       "typeString": "String",
       "name": "user",
       "url": "/mappea/reference/scalars/string",
-      "description": "User code to connect to supplier",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -55,7 +55,7 @@
       "typeString": "String",
       "name": "password",
       "url": "/mappea/reference/scalars/string",
-      "description": "Password for the connection",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -63,7 +63,7 @@
       "typeString": "Urls",
       "name": "urls",
       "url": "/mappea/reference/objects/urls",
-      "description": "Specific URLs",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -71,7 +71,7 @@
       "typeString": "[Parameter]",
       "name": "parameters",
       "url": "/mappea/reference/objects/parameter",
-      "description": "List of parameters for additional information",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -79,7 +79,7 @@
       "typeString": "[String!]",
       "name": "markets",
       "url": "/mappea/reference/scalars/string",
-      "description": "Markets allowed for the Access",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -87,7 +87,7 @@
       "typeString": "[RateRulesType!]",
       "name": "rateRules",
       "url": "/mappea/reference/enums/raterulestype",
-      "description": "Business rule types for the Access",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -95,7 +95,7 @@
       "typeString": "Access",
       "name": "shared",
       "url": "/mappea/reference/objects/access",
-      "description": "Parent Access if Shared Access",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -103,7 +103,23 @@
       "typeString": "Organization",
       "name": "owner",
       "url": "/mappea/reference/objects/organization",
-      "description": "Access owner",
+      "description": null,
+      "isDeprecated": false,
+      "args": null
+    },
+    {
+      "typeString": "Int!",
+      "name": "updateDescriptiveInfo",
+      "url": "/mappea/reference/scalars/int",
+      "description": null,
+      "isDeprecated": false,
+      "args": null
+    },
+    {
+      "typeString": "Int!",
+      "name": "descriptiveInfoLimit",
+      "url": "/mappea/reference/scalars/int",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -111,7 +127,23 @@
       "typeString": "Boolean",
       "name": "isSchedulerActive",
       "url": "/mappea/reference/scalars/boolean",
-      "description": "True if scheduler is active",
+      "description": null,
+      "isDeprecated": false,
+      "args": null
+    },
+    {
+      "typeString": "Int!",
+      "name": "updateList",
+      "url": "/mappea/reference/scalars/int",
+      "description": null,
+      "isDeprecated": false,
+      "args": null
+    },
+    {
+      "typeString": "String!",
+      "name": "updateDateRange",
+      "url": "/mappea/reference/scalars/string",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -119,32 +151,32 @@
       "typeString": "GroupConnection",
       "name": "groups",
       "url": "/mappea/reference/objects/groupconnection",
-      "description": "Groups where access belongs",
+      "description": null,
       "isDeprecated": false,
       "args": [
         {
           "typeString": "Int",
           "name": "first",
           "url": "/mappea/reference/scalars/int",
-          "description": ""
+          "description": null
         },
         {
           "typeString": "Int",
           "name": "last",
           "url": "/mappea/reference/scalars/int",
-          "description": ""
+          "description": null
         },
         {
           "typeString": "String",
           "name": "before",
           "url": "/mappea/reference/scalars/string",
-          "description": ""
+          "description": null
         },
         {
           "typeString": "String",
           "name": "after",
           "url": "/mappea/reference/scalars/string",
-          "description": ""
+          "description": null
         }
       ]
     }
@@ -152,7 +184,7 @@
   "requireby": [
     {
       "name": "Access",
-      "description": "An Access is a set of credentials and configuration in order to access the system of a Supplier.",
+      "description": null,
       "url": "/mappea/reference/objects/access"
     }
   ],

@@ -7,7 +7,7 @@
       "typeString": "ID!",
       "name": "code",
       "url": "/mappea/reference/scalars/id",
-      "description": "",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -15,7 +15,7 @@
       "typeString": "AccessData",
       "name": "accessData",
       "url": "/mappea/reference/objects/accessdata",
-      "description": "",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -23,7 +23,7 @@
       "typeString": "[Error!]",
       "name": "error",
       "url": "/mappea/reference/objects/error",
-      "description": "Errors that abort services",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -31,7 +31,7 @@
       "typeString": "DateTime!",
       "name": "createdAt",
       "url": "/mappea/reference/scalars/datetime",
-      "description": "Date created",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -39,7 +39,7 @@
       "typeString": "DateTime!",
       "name": "updatedAt",
       "url": "/mappea/reference/scalars/datetime",
-      "description": "Date updated",
+      "description": null,
       "isDeprecated": false,
       "args": null
     }
@@ -47,12 +47,12 @@
   "requireby": [
     {
       "name": "AccessEdge",
-      "description": "",
+      "description": null,
       "url": "/mappea/reference/objects/accessedge"
     },
     {
       "name": "AccessData",
-      "description": "",
+      "description": null,
       "url": "/mappea/reference/objects/accessdata"
     }
   ],
@@ -61,7 +61,6 @@
   "typename": "Access",
   "hideGithubLink": true
 }
-An Access is a set of credentials and configuration in order to access the system of a Supplier.
 ## GraphQL schema definition
 
 {{% graphql-schema-type %}}

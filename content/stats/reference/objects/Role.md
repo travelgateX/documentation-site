@@ -7,7 +7,7 @@
       "typeString": "ID!",
       "name": "code",
       "url": "/stats/reference/scalars/id",
-      "description": "",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -15,7 +15,7 @@
       "typeString": "RoleData",
       "name": "roleData",
       "url": "/stats/reference/objects/roledata",
-      "description": "",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -23,14 +23,14 @@
       "typeString": "[AdviseMessage!]",
       "name": "adviseMessage",
       "url": "/stats/reference/objects/advisemessage",
-      "description": "List of advise messages.",
+      "description": null,
       "isDeprecated": false,
       "args": [
         {
           "typeString": "[AdviseMessageLevel]",
           "name": "level",
           "url": "/stats/reference/enums/advisemessagelevel",
-          "description": ""
+          "description": null
         }
       ]
     },
@@ -38,7 +38,7 @@
       "typeString": "DateTime!",
       "name": "createdAt",
       "url": "/stats/reference/scalars/datetime",
-      "description": "Date created",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -46,21 +46,26 @@
       "typeString": "DateTime!",
       "name": "updatedAt",
       "url": "/stats/reference/scalars/datetime",
-      "description": "Date updated",
+      "description": null,
       "isDeprecated": false,
       "args": null
     }
   ],
   "requireby": [
     {
+      "name": "ManagedGroupData",
+      "description": null,
+      "url": "/stats/reference/objects/managedgroupdata"
+    },
+    {
       "name": "RoleEdge",
-      "description": "",
+      "description": null,
       "url": "/stats/reference/objects/roleedge"
     },
     {
-      "name": "ManagedGroupData",
-      "description": "",
-      "url": "/stats/reference/objects/managedgroupdata"
+      "name": "Permission",
+      "description": null,
+      "url": "/stats/reference/objects/permission"
     }
   ],
   "enumValues": null,
@@ -68,7 +73,6 @@
   "typename": "Role",
   "hideGithubLink": true
 }
-Permissions determine what operations are allowed on a resource
 ## GraphQL schema definition
 
 {{% graphql-schema-type %}}

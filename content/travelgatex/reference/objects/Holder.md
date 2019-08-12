@@ -7,7 +7,7 @@
       "typeString": "String!",
       "name": "name",
       "url": "/travelgatex/reference/scalars/string",
-      "description": "Holder's name",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -15,7 +15,7 @@
       "typeString": "String!",
       "name": "surname",
       "url": "/travelgatex/reference/scalars/string",
-      "description": "Holder's surname",
+      "description": null,
       "isDeprecated": false,
       "args": null
     }
@@ -23,12 +23,12 @@
   "requireby": [
     {
       "name": "HotelBookingDetail",
-      "description": "Contains information about booking",
+      "description": null,
       "url": "/travelgatex/reference/objects/hotelbookingdetail"
     },
     {
       "name": "PaymentXStoredCardData",
-      "description": "",
+      "description": null,
       "url": "/travelgatex/reference/objects/paymentxstoredcarddata"
     }
   ],
@@ -37,7 +37,6 @@
   "typename": "Holder",
   "hideGithubLink": true
 }
-Holder object that contains the occupant's (pax's) name and surname.
 ## GraphQL schema definition
 
 {{% graphql-schema-type %}}

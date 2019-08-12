@@ -7,7 +7,7 @@
       "typeString": "ID!",
       "name": "code",
       "url": "/mappea/reference/scalars/id",
-      "description": "ID identifier of a Client",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -15,7 +15,7 @@
       "typeString": "ID!",
       "name": "name",
       "url": "/mappea/reference/scalars/id",
-      "description": "Client complete name",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -23,7 +23,7 @@
       "typeString": "Boolean!",
       "name": "isActive",
       "url": "/mappea/reference/scalars/boolean",
-      "description": "Indicates whether a Client is active or inactive",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -31,7 +31,7 @@
       "typeString": "Group",
       "name": "group",
       "url": "/mappea/reference/objects/group",
-      "description": "Indicates the group where the Client belongs",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -39,15 +39,54 @@
       "typeString": "Organization",
       "name": "owner",
       "url": "/mappea/reference/objects/organization",
-      "description": "Client owner",
+      "description": null,
       "isDeprecated": false,
       "args": null
+    },
+    {
+      "typeString": "SupplierConnection",
+      "name": "suppliers",
+      "url": "/mappea/reference/objects/supplierconnection",
+      "description": null,
+      "isDeprecated": false,
+      "args": [
+        {
+          "typeString": "Int",
+          "name": "first",
+          "url": "/mappea/reference/scalars/int",
+          "description": null
+        },
+        {
+          "typeString": "Int",
+          "name": "last",
+          "url": "/mappea/reference/scalars/int",
+          "description": null
+        },
+        {
+          "typeString": "String",
+          "name": "before",
+          "url": "/mappea/reference/scalars/string",
+          "description": null
+        },
+        {
+          "typeString": "String",
+          "name": "after",
+          "url": "/mappea/reference/scalars/string",
+          "description": null
+        },
+        {
+          "typeString": "SupplierFilter",
+          "name": "filter",
+          "url": "/mappea/reference/inputobjects/supplierfilter",
+          "description": null
+        }
+      ]
     }
   ],
   "requireby": [
     {
       "name": "Client",
-      "description": "Client identifies who is making the request and holds the configuration assigned to it.",
+      "description": null,
       "url": "/mappea/reference/objects/client"
     }
   ],

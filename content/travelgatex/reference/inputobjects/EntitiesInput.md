@@ -7,33 +7,33 @@
       "typeString": "[ID!]",
       "name": "suppliers",
       "url": "/travelgatex/reference/scalars/id",
-      "description": "",
+      "description": null,
       "args": null
     },
     {
       "typeString": "[ID!]",
       "name": "clients",
       "url": "/travelgatex/reference/scalars/id",
-      "description": "",
+      "description": null,
       "args": null
     },
     {
       "typeString": "[ID!]",
       "name": "access",
       "url": "/travelgatex/reference/scalars/id",
-      "description": "",
+      "description": null,
       "args": null
     }
   ],
   "requireby": [
     {
       "name": "CreateProfileInput",
-      "description": "",
+      "description": null,
       "url": "/travelgatex/reference/inputobjects/createprofileinput"
     },
     {
       "name": "UpdateEntitiesInput",
-      "description": "",
+      "description": null,
       "url": "/travelgatex/reference/inputobjects/updateentitiesinput"
     }
   ],

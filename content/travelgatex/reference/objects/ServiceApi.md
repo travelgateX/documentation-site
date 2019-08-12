@@ -7,7 +7,7 @@
       "typeString": "ID!",
       "name": "code",
       "url": "/travelgatex/reference/scalars/id",
-      "description": "Service API ID",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -15,7 +15,7 @@
       "typeString": "String!",
       "name": "name",
       "url": "/travelgatex/reference/scalars/string",
-      "description": "Service API Name",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -23,7 +23,7 @@
       "typeString": "[ServiceOperation]",
       "name": "operations",
       "url": "/travelgatex/reference/objects/serviceoperation",
-      "description": "Operations that a Service Api has",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -31,7 +31,7 @@
       "typeString": "[Error!]",
       "name": "error",
       "url": "/travelgatex/reference/objects/error",
-      "description": "Errors",
+      "description": null,
       "isDeprecated": false,
       "args": null
     }
@@ -39,7 +39,7 @@
   "requireby": [
     {
       "name": "AdminQuery",
-      "description": "The admin query root of TravelgateX's GraphQL interface.",
+      "description": null,
       "url": "/travelgatex/reference/objects/adminquery"
     }
   ],
@@ -48,7 +48,6 @@
   "typename": "ServiceApi",
   "hideGithubLink": true
 }
-Information related to a Service API
 ## GraphQL schema definition
 
 {{% graphql-schema-type %}}

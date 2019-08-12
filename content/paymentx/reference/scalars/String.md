@@ -6,177 +6,202 @@
   "requireby": [
     {
       "name": "AdviseMessage",
-      "description": "List of advise messages.",
+      "description": null,
       "url": "/paymentx/reference/objects/advisemessage"
     },
     {
       "name": "PaymentXStoredCardIDInput",
-      "description": "",
+      "description": null,
       "url": "/paymentx/reference/inputobjects/paymentxstoredcardidinput"
     },
     {
       "name": "ExternalMessage",
-      "description": "",
+      "description": null,
       "url": "/paymentx/reference/objects/externalmessage"
     },
     {
       "name": "HolderInput",
-      "description": "Holder object that contains the occupant's (pax's) name and surname.",
+      "description": null,
       "url": "/paymentx/reference/inputobjects/holderinput"
     },
     {
       "name": "PaymentXStoredCardEdge",
-      "description": "",
+      "description": null,
       "url": "/paymentx/reference/objects/paymentxstoredcardedge"
     },
     {
       "name": "PageInfo",
-      "description": "",
+      "description": null,
       "url": "/paymentx/reference/objects/pageinfo"
     },
     {
       "name": "PaymentXStoredCardData",
-      "description": "",
+      "description": null,
       "url": "/paymentx/reference/objects/paymentxstoredcarddata"
     },
     {
       "name": "Holder",
-      "description": "Holder object that contains the occupant's (pax's) name and surname.",
+      "description": null,
       "url": "/paymentx/reference/objects/holder"
     },
     {
       "name": "GroupData",
-      "description": "",
+      "description": null,
       "url": "/paymentx/reference/objects/groupdata"
     },
     {
       "name": "GroupCommonData",
-      "description": "",
+      "description": null,
       "url": "/paymentx/reference/interfaces/groupcommondata"
     },
     {
       "name": "GroupEdge",
-      "description": "",
+      "description": null,
       "url": "/paymentx/reference/objects/groupedge"
     },
     {
       "name": "MemberData",
-      "description": "",
+      "description": null,
       "url": "/paymentx/reference/objects/memberdata"
     },
     {
       "name": "MemberEdge",
-      "description": "",
+      "description": null,
       "url": "/paymentx/reference/objects/memberedge"
     },
     {
       "name": "APIEdge",
-      "description": "",
+      "description": null,
       "url": "/paymentx/reference/objects/apiedge"
     },
     {
       "name": "APIData",
-      "description": "",
+      "description": null,
       "url": "/paymentx/reference/objects/apidata"
     },
     {
       "name": "ResourceEdge",
-      "description": "",
+      "description": null,
       "url": "/paymentx/reference/objects/resourceedge"
     },
     {
       "name": "ResourceData",
-      "description": "",
+      "description": null,
       "url": "/paymentx/reference/objects/resourcedata"
     },
     {
       "name": "OperationEdge",
-      "description": "",
+      "description": null,
       "url": "/paymentx/reference/objects/operationedge"
     },
     {
       "name": "OperationData",
-      "description": "",
+      "description": null,
       "url": "/paymentx/reference/objects/operationdata"
     },
     {
       "name": "ManagedGroupEdge",
-      "description": "",
+      "description": null,
       "url": "/paymentx/reference/objects/managedgroupedge"
     },
     {
       "name": "RoleData",
-      "description": "",
+      "description": null,
       "url": "/paymentx/reference/objects/roledata"
     },
     {
       "name": "AccessEdge",
-      "description": "",
+      "description": null,
       "url": "/paymentx/reference/objects/accessedge"
     },
     {
       "name": "AccessData",
-      "description": "",
+      "description": null,
       "url": "/paymentx/reference/objects/accessdata"
     },
     {
       "name": "Error",
-      "description": "Application errors",
+      "description": null,
       "url": "/paymentx/reference/objects/error"
     },
     {
       "name": "Parameter",
-      "description": "Parameters for additional information for the supplier's configuration.",
+      "description": null,
       "url": "/paymentx/reference/objects/parameter"
     },
     {
       "name": "SupplierData",
-      "description": "",
+      "description": null,
       "url": "/paymentx/reference/objects/supplierdata"
     },
     {
       "name": "Provider",
-      "description": "Temporary type to use only during SQL server's lifetime",
+      "description": null,
       "url": "/paymentx/reference/objects/provider"
     },
     {
       "name": "OrganizationData",
-      "description": "",
+      "description": null,
       "url": "/paymentx/reference/objects/organizationdata"
     },
     {
       "name": "ProductEdge",
-      "description": "",
+      "description": null,
       "url": "/paymentx/reference/objects/productedge"
     },
     {
       "name": "ProductData",
-      "description": "",
+      "description": null,
       "url": "/paymentx/reference/objects/productdata"
     },
     {
+      "name": "MacroPermissionEdge",
+      "description": null,
+      "url": "/paymentx/reference/objects/macropermissionedge"
+    },
+    {
+      "name": "MacroPermissionData",
+      "description": null,
+      "url": "/paymentx/reference/objects/macropermissiondata"
+    },
+    {
       "name": "SupplierEdge",
-      "description": "",
+      "description": null,
       "url": "/paymentx/reference/objects/supplieredge"
     },
     {
       "name": "ClientEdge",
-      "description": "",
+      "description": null,
       "url": "/paymentx/reference/objects/clientedge"
     },
     {
       "name": "RoleEdge",
-      "description": "",
+      "description": null,
       "url": "/paymentx/reference/objects/roleedge"
     },
     {
+      "name": "ProfileEdge",
+      "description": null,
+      "url": "/paymentx/reference/objects/profileedge"
+    },
+    {
+      "name": "ProfileData",
+      "description": null,
+      "url": "/paymentx/reference/objects/profiledata"
+    },
+    {
+      "name": "EntityEdge",
+      "description": null,
+      "url": "/paymentx/reference/objects/entityedge"
+    },
+    {
       "name": "PointOfSaleData",
-      "description": "",
+      "description": null,
       "url": "/paymentx/reference/objects/pointofsaledata"
     },
     {
       "name": "PaymentXStoredCardInput",
-      "description": "",
+      "description": null,
       "url": "/paymentx/reference/inputobjects/paymentxstoredcardinput"
     }
   ],

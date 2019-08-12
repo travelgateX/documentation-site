@@ -1,5 +1,5 @@
 ---
-title: messages with OTA xsd structure
+title: Messages with OTA xsd structure
 keywords: hotel-push, messages
 search: Hotel-Push - Messages
 ---
@@ -17,10 +17,3 @@ List of messages with OTA xsd structure used:
 | HotelAvail Notify | OTA_Hotel AvailNotifRQ | OTA_Hotel AvailNotifRS | Notify | Notify availability to hotel seller|
 | HotelRes Retrieve | OTA_Hotel ResRetrieveRQ | OTA_Hotel ResRetrieveRS | Retrieve | Retrieve reservations from user seller |
 
-
-**Contents:**
-
-
-1. [Typical Exchange Message Scenario](/docs/hotel-push/messages-files/typical-scenario)
-2. [Retrieve Messages](/docs/hotel-push/messages-files/retrieve-messages)
-3. [Notify Messages](/docs/hotel-push/messages-files/notify-messages)

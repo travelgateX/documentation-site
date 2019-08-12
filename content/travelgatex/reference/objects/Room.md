@@ -7,7 +7,7 @@
       "typeString": "Int!",
       "name": "occupancyRefId",
       "url": "/travelgatex/reference/scalars/int",
-      "description": "ID reference to the occupancy",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -15,7 +15,15 @@
       "typeString": "String!",
       "name": "code",
       "url": "/travelgatex/reference/scalars/string",
-      "description": "Indicates the room code",
+      "description": null,
+      "isDeprecated": false,
+      "args": null
+    },
+    {
+      "typeString": "String!",
+      "name": "supplierCode",
+      "url": "/travelgatex/reference/scalars/string",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -23,7 +31,7 @@
       "typeString": "String",
       "name": "description",
       "url": "/travelgatex/reference/scalars/string",
-      "description": "Description about the room",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -31,7 +39,7 @@
       "typeString": "Boolean",
       "name": "refundable",
       "url": "/travelgatex/reference/scalars/boolean",
-      "description": "Identifies if the room is refundable or not.",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -39,7 +47,7 @@
       "typeString": "Int",
       "name": "units",
       "url": "/travelgatex/reference/scalars/int",
-      "description": "Number of rooms available with the same type.",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -47,7 +55,7 @@
       "typeString": "RoomPrice!",
       "name": "roomPrice",
       "url": "/travelgatex/reference/objects/roomprice",
-      "description": "Specifies the room price.",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -55,7 +63,7 @@
       "typeString": "[Bed!]",
       "name": "beds",
       "url": "/travelgatex/reference/objects/bed",
-      "description": "List of beds.",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -63,7 +71,7 @@
       "typeString": "[RatePlan!]",
       "name": "ratePlans",
       "url": "/travelgatex/reference/objects/rateplan",
-      "description": "Daily break downs rate plan.",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -71,7 +79,23 @@
       "typeString": "[Promotion!]",
       "name": "promotions",
       "url": "/travelgatex/reference/objects/promotion",
-      "description": "Daily break downs promotions.",
+      "description": null,
+      "isDeprecated": false,
+      "args": null
+    },
+    {
+      "typeString": "[Surcharge!]",
+      "name": "surcharges",
+      "url": "/travelgatex/reference/objects/surcharge",
+      "description": null,
+      "isDeprecated": false,
+      "args": null
+    },
+    {
+      "typeString": "[Feature!]",
+      "name": "features",
+      "url": "/travelgatex/reference/objects/feature",
+      "description": null,
       "isDeprecated": false,
       "args": null
     }
@@ -82,7 +106,6 @@
   "typename": "Room",
   "hideGithubLink": true
 }
-Contains the room information of the option returned.
 ## GraphQL schema definition
 
 {{% graphql-schema-type %}}

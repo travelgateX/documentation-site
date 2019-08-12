@@ -7,7 +7,7 @@
       "typeString": "ID!",
       "name": "code",
       "url": "/travelgatex/reference/scalars/id",
-      "description": "",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -15,7 +15,7 @@
       "typeString": "SupplierData",
       "name": "supplierData",
       "url": "/travelgatex/reference/objects/supplierdata",
-      "description": "",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -23,7 +23,7 @@
       "typeString": "[Error!]",
       "name": "error",
       "url": "/travelgatex/reference/objects/error",
-      "description": "Errors that abort services",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -31,7 +31,7 @@
       "typeString": "DateTime!",
       "name": "createdAt",
       "url": "/travelgatex/reference/scalars/datetime",
-      "description": "Date created",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -39,7 +39,7 @@
       "typeString": "DateTime!",
       "name": "updatedAt",
       "url": "/travelgatex/reference/scalars/datetime",
-      "description": "Date updated",
+      "description": null,
       "isDeprecated": false,
       "args": null
     }
@@ -47,22 +47,22 @@
   "requireby": [
     {
       "name": "AccessData",
-      "description": "",
+      "description": null,
       "url": "/travelgatex/reference/objects/accessdata"
     },
     {
       "name": "SupplierEdge",
-      "description": "",
+      "description": null,
       "url": "/travelgatex/reference/objects/supplieredge"
     },
     {
       "name": "AdminMutation",
-      "description": "The admin query root of TravelgateX's for implementing GraphQL mutations.",
+      "description": null,
       "url": "/travelgatex/reference/objects/adminmutation"
     },
     {
       "name": "SupplierDetected",
-      "description": "",
+      "description": null,
       "url": "/travelgatex/reference/objects/supplierdetected"
     }
   ],
@@ -71,7 +71,6 @@
   "typename": "Supplier",
   "hideGithubLink": true
 }
-A Supplier is a Partner who is connected to TravelgateX on the supply side in order to sell their product to connected Buyers
 ## GraphQL schema definition
 
 {{% graphql-schema-type %}}

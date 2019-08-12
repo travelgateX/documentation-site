@@ -7,14 +7,14 @@
       "typeString": "PluginStepType!",
       "name": "step",
       "url": "/travelgatex/reference/enums/pluginsteptype",
-      "description": "Indicates where the plugin will be executed.",
+      "description": null,
       "args": null
     },
     {
       "typeString": "[PluginsInput!]",
       "name": "pluginsType",
       "url": "/travelgatex/reference/inputobjects/pluginsinput",
-      "description": "Indicates the plugin that will be executed.",
+      "description": null,
       "args": null
     }
   ],
@@ -24,7 +24,6 @@
   "typename": "PluginStepInput",
   "hideGithubLink": true
 }
-Plugin to execute.
 ## GraphQL schema definition
 
 {{% graphql-schema-type %}}

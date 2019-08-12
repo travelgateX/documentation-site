@@ -7,7 +7,7 @@
       "typeString": "Boolean!",
       "name": "hasNextPage",
       "url": "/travelgatex/reference/scalars/boolean",
-      "description": "",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -15,7 +15,7 @@
       "typeString": "Boolean!",
       "name": "hasPreviousPage",
       "url": "/travelgatex/reference/scalars/boolean",
-      "description": "",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -23,7 +23,7 @@
       "typeString": "String!",
       "name": "startCursor",
       "url": "/travelgatex/reference/scalars/string",
-      "description": "",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -31,7 +31,7 @@
       "typeString": "String!",
       "name": "endCursor",
       "url": "/travelgatex/reference/scalars/string",
-      "description": "",
+      "description": null,
       "isDeprecated": false,
       "args": null
     }
@@ -39,113 +39,143 @@
   "requireby": [
     {
       "name": "AccessConnection",
-      "description": "",
+      "description": null,
       "url": "/travelgatex/reference/objects/accessconnection"
     },
     {
       "name": "SupplierConnection",
-      "description": "",
+      "description": null,
       "url": "/travelgatex/reference/objects/supplierconnection"
     },
     {
       "name": "ClientConnection",
-      "description": "",
+      "description": null,
       "url": "/travelgatex/reference/objects/clientconnection"
     },
     {
       "name": "PointOfSaleConnection",
-      "description": "",
+      "description": null,
       "url": "/travelgatex/reference/objects/pointofsaleconnection"
     },
     {
       "name": "ProfileConnection",
-      "description": "",
+      "description": null,
       "url": "/travelgatex/reference/objects/profileconnection"
     },
     {
       "name": "EntityConnection",
-      "description": "",
+      "description": null,
       "url": "/travelgatex/reference/objects/entityconnection"
     },
     {
+      "name": "SystemConnection",
+      "description": null,
+      "url": "/travelgatex/reference/objects/systemconnection"
+    },
+    {
       "name": "OrganizationConnection",
-      "description": "",
+      "description": null,
       "url": "/travelgatex/reference/objects/organizationconnection"
     },
     {
       "name": "ProductConnection",
-      "description": "",
+      "description": null,
       "url": "/travelgatex/reference/objects/productconnection"
     },
     {
       "name": "MemberConnection",
-      "description": "",
+      "description": null,
       "url": "/travelgatex/reference/objects/memberconnection"
     },
     {
       "name": "GroupConnection",
-      "description": "",
+      "description": null,
       "url": "/travelgatex/reference/objects/groupconnection"
     },
     {
       "name": "APIConnection",
-      "description": "",
+      "description": null,
       "url": "/travelgatex/reference/objects/apiconnection"
     },
     {
       "name": "ResourceConnection",
-      "description": "",
+      "description": null,
       "url": "/travelgatex/reference/objects/resourceconnection"
     },
     {
       "name": "RoleConnection",
-      "description": "",
+      "description": null,
       "url": "/travelgatex/reference/objects/roleconnection"
     },
     {
       "name": "OperationConnection",
-      "description": "",
+      "description": null,
       "url": "/travelgatex/reference/objects/operationconnection"
     },
     {
       "name": "ManagedGroupConnection",
-      "description": "",
+      "description": null,
       "url": "/travelgatex/reference/objects/managedgroupconnection"
     },
     {
+      "name": "MacroPermissionsConnection",
+      "description": null,
+      "url": "/travelgatex/reference/objects/macropermissionsconnection"
+    },
+    {
       "name": "BoardConnection",
-      "description": "BoardList definition",
+      "description": null,
       "url": "/travelgatex/reference/objects/boardconnection"
     },
     {
       "name": "CategoryConnection",
-      "description": "CategoryList definition",
+      "description": null,
       "url": "/travelgatex/reference/objects/categoryconnection"
     },
     {
       "name": "HotelConnection",
-      "description": "HotelList definition",
+      "description": null,
       "url": "/travelgatex/reference/objects/hotelconnection"
     },
     {
       "name": "RoomConnection",
-      "description": "RoomList definition",
+      "description": null,
       "url": "/travelgatex/reference/objects/roomconnection"
     },
     {
       "name": "DestinationConnection",
-      "description": "DestinationList definition",
+      "description": null,
       "url": "/travelgatex/reference/objects/destinationconnection"
     },
     {
       "name": "PaymentXStoredCardConnection",
-      "description": "",
+      "description": null,
       "url": "/travelgatex/reference/objects/paymentxstoredcardconnection"
     },
     {
       "name": "StatsConnection",
-      "description": "",
+      "description": null,
       "url": "/travelgatex/reference/objects/statsconnection"
+    },
+    {
+      "name": "ConnectionConnection",
+      "description": null,
+      "url": "/travelgatex/reference/objects/connectionconnection"
+    },
+    {
+      "name": "AlertConnection",
+      "description": "Alert list",
+      "url": "/travelgatex/reference/objects/alertconnection"
+    },
+    {
+      "name": "EventConnection",
+      "description": "Events list",
+      "url": "/travelgatex/reference/objects/eventconnection"
+    },
+    {
+      "name": "LoggingLegacyConnection",
+      "description": null,
+      "url": "/travelgatex/reference/objects/logginglegacyconnection"
     }
   ],
   "enumValues": null,

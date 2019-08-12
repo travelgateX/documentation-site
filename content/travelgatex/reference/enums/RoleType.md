@@ -6,38 +6,38 @@
   "requireby": [
     {
       "name": "RoleData",
-      "description": "",
+      "description": null,
       "url": "/travelgatex/reference/objects/roledata"
     }
   ],
   "enumValues": [
     {
       "name": "VIEWER",
-      "description": "Allows a User to make Queries of resources, but not change any resource data",
+      "description": null,
       "isDeprecated": false,
       "deprecationReason": null
     },
     {
       "name": "EDITOR",
-      "description": "Allows a User to make Mutations (changes) to the resource data",
+      "description": null,
       "isDeprecated": false,
       "deprecationReason": null
     },
     {
       "name": "ADMIN",
-      "description": "Allows a User to make All (changes) to the resource",
+      "description": null,
       "isDeprecated": false,
       "deprecationReason": null
     },
     {
       "name": "EXECUTOR",
-      "description": "Allows a User to make use of reources only for extecutations queries.",
+      "description": null,
       "isDeprecated": false,
       "deprecationReason": null
     },
     {
       "name": "SPECIFIC",
-      "description": "Allows a User to make othen kind of operation with the resource. Defined by API.",
+      "description": null,
       "isDeprecated": false,
       "deprecationReason": null
     }

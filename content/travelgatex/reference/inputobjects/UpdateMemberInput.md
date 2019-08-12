@@ -7,42 +7,21 @@
       "typeString": "ID!",
       "name": "member",
       "url": "/travelgatex/reference/scalars/id",
-      "description": "",
+      "description": null,
       "args": null
     },
     {
-      "typeString": "String",
-      "name": "info",
+      "typeString": "String!",
+      "name": "label",
       "url": "/travelgatex/reference/scalars/string",
-      "description": "",
+      "description": null,
       "args": null
     },
     {
-      "typeString": "ID!",
-      "name": "group",
-      "url": "/travelgatex/reference/scalars/id",
-      "description": "",
-      "args": null
-    },
-    {
-      "typeString": "ID!",
-      "name": "role",
-      "url": "/travelgatex/reference/scalars/id",
-      "description": "",
-      "args": null
-    },
-    {
-      "typeString": "[ID!]!",
-      "name": "resources",
-      "url": "/travelgatex/reference/scalars/id",
-      "description": "",
-      "args": null
-    },
-    {
-      "typeString": "Method!",
-      "name": "method",
-      "url": "/travelgatex/reference/enums/method",
-      "description": "",
+      "typeString": "Boolean!",
+      "name": "isActive",
+      "url": "/travelgatex/reference/scalars/boolean",
+      "description": null,
       "args": null
     }
   ],

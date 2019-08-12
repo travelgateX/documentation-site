@@ -7,7 +7,7 @@
       "typeString": "String!",
       "name": "key",
       "url": "/travelgatex/reference/scalars/string",
-      "description": "Contains keyword/ID to identify the AddOn.",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -15,7 +15,7 @@
       "typeString": "JSON!",
       "name": "value",
       "url": "/travelgatex/reference/scalars/json",
-      "description": "Contains AddOn values.",
+      "description": null,
       "isDeprecated": false,
       "args": null
     }
@@ -26,7 +26,6 @@
   "typename": "AddOn",
   "hideGithubLink": true
 }
-Additional information about the option
 ## GraphQL schema definition
 
 {{% graphql-schema-type %}}

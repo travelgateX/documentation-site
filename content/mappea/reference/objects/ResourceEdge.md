@@ -7,7 +7,7 @@
       "typeString": "Resource",
       "name": "node",
       "url": "/mappea/reference/objects/resource",
-      "description": "",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -15,7 +15,7 @@
       "typeString": "String!",
       "name": "cursor",
       "url": "/mappea/reference/scalars/string",
-      "description": "",
+      "description": null,
       "isDeprecated": false,
       "args": null
     }
@@ -23,7 +23,7 @@
   "requireby": [
     {
       "name": "ResourceConnection",
-      "description": "",
+      "description": null,
       "url": "/mappea/reference/objects/resourceconnection"
     }
   ],

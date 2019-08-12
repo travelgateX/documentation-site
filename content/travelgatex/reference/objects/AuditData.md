@@ -7,7 +7,7 @@
       "typeString": "[Transactions!]!",
       "name": "transactions",
       "url": "/travelgatex/reference/objects/transactions",
-      "description": "List of transactions data",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -15,7 +15,7 @@
       "typeString": "DateTime!",
       "name": "timeStamp",
       "url": "/travelgatex/reference/scalars/datetime",
-      "description": "TimeStamp",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -23,7 +23,7 @@
       "typeString": "Float!",
       "name": "processTime",
       "url": "/travelgatex/reference/scalars/float",
-      "description": "Process time in milliseconds (ms)",
+      "description": null,
       "isDeprecated": false,
       "args": null
     }
@@ -31,32 +31,32 @@
   "requireby": [
     {
       "name": "HotelSearch",
-      "description": "Results from Avail Hotel; contains all the available options for a given date and itinerary",
+      "description": null,
       "url": "/travelgatex/reference/objects/hotelsearch"
     },
     {
       "name": "HotelQuote",
-      "description": "",
+      "description": null,
       "url": "/travelgatex/reference/objects/hotelquote"
     },
     {
       "name": "HotelBooking",
-      "description": "",
+      "description": null,
       "url": "/travelgatex/reference/objects/hotelbooking"
     },
     {
       "name": "Response",
-      "description": "",
+      "description": null,
       "url": "/travelgatex/reference/interfaces/response"
     },
     {
       "name": "HotelBookPayload",
-      "description": "",
+      "description": null,
       "url": "/travelgatex/reference/objects/hotelbookpayload"
     },
     {
       "name": "HotelCancelPayload",
-      "description": "",
+      "description": null,
       "url": "/travelgatex/reference/objects/hotelcancelpayload"
     }
   ],
@@ -65,7 +65,6 @@
   "typename": "AuditData",
   "hideGithubLink": true
 }
-Data sent and received in the supplier’s native format.
 ## GraphQL schema definition
 
 {{% graphql-schema-type %}}

@@ -7,49 +7,49 @@
   "enumValues": [
     {
       "name": "HOTEL",
-      "description": "When the request has been done against the Hotel API",
+      "description": null,
       "isDeprecated": false,
       "deprecationReason": null
     },
     {
       "name": "TRANSPORTATION",
-      "description": "When the request has been done against the Transportation API",
+      "description": null,
       "isDeprecated": false,
       "deprecationReason": null
     },
     {
       "name": "CAR",
-      "description": "When the request has been done against the Car API",
+      "description": null,
       "isDeprecated": false,
       "deprecationReason": null
     },
     {
       "name": "TRANSFERS",
-      "description": "When the request has been done against the Transfers API",
+      "description": null,
       "isDeprecated": false,
       "deprecationReason": null
     },
     {
       "name": "ACTIVITIES",
-      "description": "When the request has been done against the Activities API",
+      "description": null,
       "isDeprecated": false,
       "deprecationReason": null
     },
     {
       "name": "VIRTUALACCOUNT",
-      "description": "When the request has been done against the Virtual Account API",
+      "description": null,
       "isDeprecated": false,
       "deprecationReason": null
     },
     {
       "name": "PAYMENT",
-      "description": "When the request has been done against the Payment API",
+      "description": null,
       "isDeprecated": false,
       "deprecationReason": null
     },
     {
       "name": "PACKAGE",
-      "description": "When the request has been done against the Package API",
+      "description": null,
       "isDeprecated": false,
       "deprecationReason": null
     }
@@ -58,7 +58,6 @@
   "typename": "ServiceApiType",
   "hideGithubLink": true
 }
-Services Api available.
 ## GraphQL schema definition
 
 {{% graphql-schema-enum %}}

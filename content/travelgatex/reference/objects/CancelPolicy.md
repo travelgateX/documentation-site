@@ -7,7 +7,7 @@
       "typeString": "Boolean!",
       "name": "refundable",
       "url": "/travelgatex/reference/scalars/boolean",
-      "description": "Indicates if the option is refundable or non-refundable",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -15,7 +15,7 @@
       "typeString": "[CancelPenalty!]",
       "name": "cancelPenalties",
       "url": "/travelgatex/reference/objects/cancelpenalty",
-      "description": "List of cancellation penalties",
+      "description": null,
       "isDeprecated": false,
       "args": null
     }
@@ -23,17 +23,17 @@
   "requireby": [
     {
       "name": "HotelOptionSearch",
-      "description": "An option includes hotel information, meal plan, total price, conditions and room description",
+      "description": null,
       "url": "/travelgatex/reference/objects/hoteloptionsearch"
     },
     {
       "name": "HotelOptionQuote",
-      "description": "Contains information about quote(s)",
+      "description": null,
       "url": "/travelgatex/reference/objects/hoteloptionquote"
     },
     {
       "name": "HotelBookingDetail",
-      "description": "Contains information about booking",
+      "description": null,
       "url": "/travelgatex/reference/objects/hotelbookingdetail"
     }
   ],
@@ -42,7 +42,6 @@
   "typename": "CancelPolicy",
   "hideGithubLink": true
 }
-Information about a policy cancellation.
 ## GraphQL schema definition
 
 {{% graphql-schema-type %}}

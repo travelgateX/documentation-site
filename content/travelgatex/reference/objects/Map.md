@@ -7,7 +7,7 @@
       "typeString": "String!",
       "name": "code",
       "url": "/travelgatex/reference/scalars/string",
-      "description": "Context code.",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -15,7 +15,7 @@
       "typeString": "[String!]",
       "name": "maps",
       "url": "/travelgatex/reference/scalars/string",
-      "description": "Equivalences of the supplier for the client code.",
+      "description": null,
       "isDeprecated": false,
       "args": null
     }
@@ -26,7 +26,6 @@
   "typename": "Map",
   "hideGithubLink": true
 }
-Map codes.
 ## GraphQL schema definition
 
 {{% graphql-schema-type %}}

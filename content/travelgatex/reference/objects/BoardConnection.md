@@ -7,7 +7,7 @@
       "typeString": "[BoardEdge]",
       "name": "edges",
       "url": "/travelgatex/reference/objects/boardedge",
-      "description": "",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -15,7 +15,7 @@
       "typeString": "PageInfo!",
       "name": "pageInfo",
       "url": "/travelgatex/reference/objects/pageinfo",
-      "description": "Indicates info about page",
+      "description": null,
       "isDeprecated": false,
       "args": null
     }
@@ -23,7 +23,7 @@
   "requireby": [
     {
       "name": "HotelXQuery",
-      "description": "",
+      "description": null,
       "url": "/travelgatex/reference/objects/hotelxquery"
     }
   ],
@@ -32,7 +32,6 @@
   "typename": "BoardConnection",
   "hideGithubLink": true
 }
-BoardList definition
 ## GraphQL schema definition
 
 {{% graphql-schema-type %}}

@@ -7,28 +7,28 @@
       "typeString": "ID!",
       "name": "code",
       "url": "/travelgatex/reference/scalars/id",
-      "description": "ID identifier of a Client",
+      "description": null,
       "args": null
     },
     {
       "typeString": "String",
       "name": "name",
       "url": "/travelgatex/reference/scalars/string",
-      "description": "Client complete name",
+      "description": null,
       "args": null
     },
     {
       "typeString": "Boolean",
       "name": "isActive",
       "url": "/travelgatex/reference/scalars/boolean",
-      "description": "Indicates whether a Client is active or inactive",
+      "description": null,
       "args": null
     },
     {
       "typeString": "ID",
       "name": "owner",
       "url": "/travelgatex/reference/scalars/id",
-      "description": "Client owner",
+      "description": null,
       "args": null
     }
   ],

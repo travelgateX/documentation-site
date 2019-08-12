@@ -6,14 +6,19 @@
   "requireby": [
     {
       "name": "CreateOrganizationInput",
-      "description": "",
+      "description": null,
       "url": "/travelgatex/reference/inputobjects/createorganizationinput"
+    },
+    {
+      "name": "SuitOrganizationInput",
+      "description": null,
+      "url": "/travelgatex/reference/inputobjects/suitorganizationinput"
     }
   ],
   "enumValues": [
     {
       "name": "ORGANIZATION_DEFAULT",
-      "description": "",
+      "description": null,
       "isDeprecated": false,
       "deprecationReason": null
     }

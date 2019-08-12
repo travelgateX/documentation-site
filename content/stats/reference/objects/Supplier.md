@@ -7,7 +7,7 @@
       "typeString": "ID!",
       "name": "code",
       "url": "/stats/reference/scalars/id",
-      "description": "",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -15,7 +15,7 @@
       "typeString": "SupplierData",
       "name": "supplierData",
       "url": "/stats/reference/objects/supplierdata",
-      "description": "",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -23,7 +23,7 @@
       "typeString": "[Error!]",
       "name": "error",
       "url": "/stats/reference/objects/error",
-      "description": "Errors that abort services",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -31,7 +31,7 @@
       "typeString": "DateTime!",
       "name": "createdAt",
       "url": "/stats/reference/scalars/datetime",
-      "description": "Date created",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -39,7 +39,7 @@
       "typeString": "DateTime!",
       "name": "updatedAt",
       "url": "/stats/reference/scalars/datetime",
-      "description": "Date updated",
+      "description": null,
       "isDeprecated": false,
       "args": null
     }
@@ -47,12 +47,12 @@
   "requireby": [
     {
       "name": "AccessData",
-      "description": "",
+      "description": null,
       "url": "/stats/reference/objects/accessdata"
     },
     {
       "name": "SupplierEdge",
-      "description": "",
+      "description": null,
       "url": "/stats/reference/objects/supplieredge"
     }
   ],
@@ -61,7 +61,6 @@
   "typename": "Supplier",
   "hideGithubLink": true
 }
-A Supplier is a Partner who is connected to TravelgateX on the supply side in order to sell their product to connected Buyers
 ## GraphQL schema definition
 
 {{% graphql-schema-type %}}

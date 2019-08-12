@@ -7,7 +7,7 @@
       "typeString": "[PaymentXStoredCardEdge]",
       "name": "edges",
       "url": "/travelgatex/reference/objects/paymentxstoredcardedge",
-      "description": "",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -15,7 +15,7 @@
       "typeString": "PageInfo!",
       "name": "pageInfo",
       "url": "/travelgatex/reference/objects/pageinfo",
-      "description": "",
+      "description": null,
       "isDeprecated": false,
       "args": null
     }
@@ -23,7 +23,7 @@
   "requireby": [
     {
       "name": "PaymentXQuery",
-      "description": "",
+      "description": null,
       "url": "/travelgatex/reference/objects/paymentxquery"
     }
   ],

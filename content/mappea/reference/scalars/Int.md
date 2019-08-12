@@ -6,43 +6,53 @@
   "requireby": [
     {
       "name": "File",
-      "description": "",
+      "description": null,
       "url": "/mappea/reference/objects/file"
     },
     {
       "name": "GetMappeaStatsData",
-      "description": "",
+      "description": null,
       "url": "/mappea/reference/objects/getmappeastatsdata"
     },
     {
       "name": "MappeaConfirmUploadInput",
-      "description": "## ConfirmUpload",
+      "description": null,
       "url": "/mappea/reference/inputobjects/mappeaconfirmuploadinput"
     },
     {
       "name": "MappeaMapSupplierInput",
-      "description": "# MapSupplier",
+      "description": null,
       "url": "/mappea/reference/inputobjects/mappeamapsupplierinput"
     },
     {
       "name": "UploadFileData",
-      "description": "",
+      "description": null,
       "url": "/mappea/reference/objects/uploadfiledata"
     },
     {
       "name": "SupplierDetected",
-      "description": "",
+      "description": null,
       "url": "/mappea/reference/objects/supplierdetected"
     },
     {
       "name": "SupplierData",
-      "description": "",
+      "description": null,
       "url": "/mappea/reference/objects/supplierdata"
     },
     {
+      "name": "AccessData",
+      "description": null,
+      "url": "/mappea/reference/objects/accessdata"
+    },
+    {
       "name": "GroupData",
-      "description": "",
+      "description": null,
       "url": "/mappea/reference/objects/groupdata"
+    },
+    {
+      "name": "SupplierFilter",
+      "description": null,
+      "url": "/mappea/reference/inputobjects/supplierfilter"
     }
   ],
   "enumValues": null,

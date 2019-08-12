@@ -5,73 +5,73 @@
   "fields": null,
   "requireby": [
     {
-      "name": "OrganizationData",
-      "description": "",
-      "url": "/stats/reference/objects/organizationdata"
+      "name": "GroupData",
+      "description": null,
+      "url": "/stats/reference/objects/groupdata"
     },
     {
       "name": "GroupCommonData",
-      "description": "",
+      "description": null,
       "url": "/stats/reference/interfaces/groupcommondata"
     },
     {
-      "name": "GroupData",
-      "description": "",
-      "url": "/stats/reference/objects/groupdata"
+      "name": "OrganizationData",
+      "description": null,
+      "url": "/stats/reference/objects/organizationdata"
     }
   ],
   "enumValues": [
     {
       "name": "ROOT",
-      "description": "",
+      "description": null,
       "isDeprecated": false,
       "deprecationReason": null
     },
     {
       "name": "ORG",
-      "description": "",
+      "description": null,
       "isDeprecated": false,
       "deprecationReason": null
     },
     {
       "name": "GROUP",
-      "description": "",
+      "description": null,
       "isDeprecated": false,
       "deprecationReason": null
     },
     {
       "name": "PROFILE",
-      "description": "",
+      "description": null,
       "isDeprecated": false,
       "deprecationReason": null
     },
     {
       "name": "TEAM",
-      "description": "",
+      "description": null,
       "isDeprecated": false,
       "deprecationReason": null
     },
     {
       "name": "FOLDER",
-      "description": "",
+      "description": null,
       "isDeprecated": false,
       "deprecationReason": null
     },
     {
       "name": "PRODUCT",
-      "description": "",
+      "description": null,
       "isDeprecated": false,
       "deprecationReason": null
     },
     {
       "name": "RESOURCE",
-      "description": "",
+      "description": null,
       "isDeprecated": false,
       "deprecationReason": null
     },
     {
       "name": "SPECIFIC_RESOURCE",
-      "description": "",
+      "description": null,
       "isDeprecated": false,
       "deprecationReason": null
     }

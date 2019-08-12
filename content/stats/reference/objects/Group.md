@@ -7,7 +7,7 @@
       "typeString": "ID!",
       "name": "code",
       "url": "/stats/reference/scalars/id",
-      "description": "",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -15,7 +15,7 @@
       "typeString": "GroupData",
       "name": "groupData",
       "url": "/stats/reference/objects/groupdata",
-      "description": "",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -23,14 +23,14 @@
       "typeString": "[AdviseMessage!]",
       "name": "adviseMessage",
       "url": "/stats/reference/objects/advisemessage",
-      "description": "List of advise messages.",
+      "description": null,
       "isDeprecated": false,
       "args": [
         {
           "typeString": "[AdviseMessageLevel]",
           "name": "level",
           "url": "/stats/reference/enums/advisemessagelevel",
-          "description": ""
+          "description": null
         }
       ]
     },
@@ -38,7 +38,7 @@
       "typeString": "DateTime!",
       "name": "createdAt",
       "url": "/stats/reference/scalars/datetime",
-      "description": "Date created",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -46,30 +46,40 @@
       "typeString": "DateTime!",
       "name": "updatedAt",
       "url": "/stats/reference/scalars/datetime",
-      "description": "Date updated",
+      "description": null,
       "isDeprecated": false,
       "args": null
     }
   ],
   "requireby": [
     {
-      "name": "GroupEdge",
-      "description": "",
-      "url": "/stats/reference/objects/groupedge"
+      "name": "SystemData",
+      "description": null,
+      "url": "/stats/reference/objects/systemdata"
     },
     {
       "name": "GroupData",
-      "description": "",
+      "description": null,
       "url": "/stats/reference/objects/groupdata"
     },
     {
       "name": "ManagedGroupData",
-      "description": "",
+      "description": null,
       "url": "/stats/reference/objects/managedgroupdata"
     },
     {
+      "name": "ProfileData",
+      "description": null,
+      "url": "/stats/reference/objects/profiledata"
+    },
+    {
+      "name": "GroupEdge",
+      "description": null,
+      "url": "/stats/reference/objects/groupedge"
+    },
+    {
       "name": "ClientData",
-      "description": "",
+      "description": null,
       "url": "/stats/reference/objects/clientdata"
     }
   ],
@@ -78,7 +88,6 @@
   "typename": "Group",
   "hideGithubLink": true
 }
-Groups are organized hierarchically.
 ## GraphQL schema definition
 
 {{% graphql-schema-type %}}

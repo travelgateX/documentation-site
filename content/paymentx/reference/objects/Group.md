@@ -7,7 +7,7 @@
       "typeString": "ID!",
       "name": "code",
       "url": "/paymentx/reference/scalars/id",
-      "description": "",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -15,7 +15,7 @@
       "typeString": "GroupData",
       "name": "groupData",
       "url": "/paymentx/reference/objects/groupdata",
-      "description": "",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -23,14 +23,14 @@
       "typeString": "[AdviseMessage!]",
       "name": "adviseMessage",
       "url": "/paymentx/reference/objects/advisemessage",
-      "description": "List of advise messages.",
+      "description": null,
       "isDeprecated": false,
       "args": [
         {
           "typeString": "[AdviseMessageLevel]",
           "name": "level",
           "url": "/paymentx/reference/enums/advisemessagelevel",
-          "description": ""
+          "description": null
         }
       ]
     },
@@ -38,7 +38,7 @@
       "typeString": "DateTime!",
       "name": "createdAt",
       "url": "/paymentx/reference/scalars/datetime",
-      "description": "Date created",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -46,7 +46,7 @@
       "typeString": "DateTime!",
       "name": "updatedAt",
       "url": "/paymentx/reference/scalars/datetime",
-      "description": "Date updated",
+      "description": null,
       "isDeprecated": false,
       "args": null
     }
@@ -54,28 +54,38 @@
   "requireby": [
     {
       "name": "PaymentXStoredCardData",
-      "description": "",
+      "description": null,
       "url": "/paymentx/reference/objects/paymentxstoredcarddata"
     },
     {
       "name": "GroupData",
-      "description": "",
+      "description": null,
       "url": "/paymentx/reference/objects/groupdata"
     },
     {
       "name": "GroupEdge",
-      "description": "",
+      "description": null,
       "url": "/paymentx/reference/objects/groupedge"
     },
     {
       "name": "ManagedGroupData",
-      "description": "",
+      "description": null,
       "url": "/paymentx/reference/objects/managedgroupdata"
     },
     {
+      "name": "SystemData",
+      "description": null,
+      "url": "/paymentx/reference/objects/systemdata"
+    },
+    {
       "name": "ClientData",
-      "description": "",
+      "description": null,
       "url": "/paymentx/reference/objects/clientdata"
+    },
+    {
+      "name": "ProfileData",
+      "description": null,
+      "url": "/paymentx/reference/objects/profiledata"
     }
   ],
   "enumValues": null,
@@ -83,7 +93,6 @@
   "typename": "Group",
   "hideGithubLink": true
 }
-Groups are organized hierarchically.
 ## GraphQL schema definition
 
 {{% graphql-schema-type %}}

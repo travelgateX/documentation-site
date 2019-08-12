@@ -5,23 +5,37 @@
   "fields": [
     {
       "typeString": "ID!",
-      "name": "api",
+      "name": "group",
       "url": "/travelgatex/reference/scalars/id",
-      "description": "",
+      "description": null,
       "args": null
     },
     {
-      "typeString": "ID!",
-      "name": "group",
+      "typeString": "ID",
+      "name": "owner",
       "url": "/travelgatex/reference/scalars/id",
-      "description": "",
+      "description": null,
+      "args": null
+    },
+    {
+      "typeString": "GroupTypeInput",
+      "name": "type",
+      "url": "/travelgatex/reference/enums/grouptypeinput",
+      "description": null,
       "args": null
     },
     {
       "typeString": "String",
       "name": "info",
       "url": "/travelgatex/reference/scalars/string",
-      "description": "",
+      "description": null,
+      "args": null
+    },
+    {
+      "typeString": "String",
+      "name": "label",
+      "url": "/travelgatex/reference/scalars/string",
+      "description": null,
       "args": null
     }
   ],

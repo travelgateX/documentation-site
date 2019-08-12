@@ -7,7 +7,7 @@
       "typeString": "ID!",
       "name": "code",
       "url": "/travelgatex/reference/scalars/id",
-      "description": "",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -15,7 +15,7 @@
       "typeString": "AccessData",
       "name": "accessData",
       "url": "/travelgatex/reference/objects/accessdata",
-      "description": "",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -23,7 +23,7 @@
       "typeString": "[Error!]",
       "name": "error",
       "url": "/travelgatex/reference/objects/error",
-      "description": "Errors that abort services",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -31,7 +31,7 @@
       "typeString": "DateTime!",
       "name": "createdAt",
       "url": "/travelgatex/reference/scalars/datetime",
-      "description": "Date created",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -39,7 +39,7 @@
       "typeString": "DateTime!",
       "name": "updatedAt",
       "url": "/travelgatex/reference/scalars/datetime",
-      "description": "Date updated",
+      "description": null,
       "isDeprecated": false,
       "args": null
     }
@@ -47,22 +47,27 @@
   "requireby": [
     {
       "name": "AccessEdge",
-      "description": "",
+      "description": null,
       "url": "/travelgatex/reference/objects/accessedge"
     },
     {
       "name": "AccessData",
-      "description": "",
+      "description": null,
       "url": "/travelgatex/reference/objects/accessdata"
     },
     {
       "name": "StatsData",
-      "description": "",
+      "description": null,
       "url": "/travelgatex/reference/objects/statsdata"
     },
     {
+      "name": "LoggingLegacyData",
+      "description": null,
+      "url": "/travelgatex/reference/objects/logginglegacydata"
+    },
+    {
       "name": "AdminMutation",
-      "description": "The admin query root of TravelgateX's for implementing GraphQL mutations.",
+      "description": null,
       "url": "/travelgatex/reference/objects/adminmutation"
     }
   ],
@@ -71,7 +76,6 @@
   "typename": "Access",
   "hideGithubLink": true
 }
-An Access is a set of credentials and configuration in order to access the system of a Supplier.
 ## GraphQL schema definition
 
 {{% graphql-schema-type %}}

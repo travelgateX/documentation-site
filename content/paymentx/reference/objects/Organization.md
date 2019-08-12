@@ -7,7 +7,7 @@
       "typeString": "ID!",
       "name": "code",
       "url": "/paymentx/reference/scalars/id",
-      "description": "",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -15,7 +15,7 @@
       "typeString": "OrganizationData",
       "name": "organizationData",
       "url": "/paymentx/reference/objects/organizationdata",
-      "description": "",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -23,14 +23,14 @@
       "typeString": "[AdviseMessage!]",
       "name": "adviseMessage",
       "url": "/paymentx/reference/objects/advisemessage",
-      "description": "List of advise messages.",
+      "description": null,
       "isDeprecated": false,
       "args": [
         {
           "typeString": "[AdviseMessageLevel]",
           "name": "level",
           "url": "/paymentx/reference/enums/advisemessagelevel",
-          "description": ""
+          "description": null
         }
       ]
     },
@@ -38,7 +38,7 @@
       "typeString": "DateTime!",
       "name": "createdAt",
       "url": "/paymentx/reference/scalars/datetime",
-      "description": "Date created",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -46,7 +46,7 @@
       "typeString": "DateTime!",
       "name": "updatedAt",
       "url": "/paymentx/reference/scalars/datetime",
-      "description": "Date updated",
+      "description": null,
       "isDeprecated": false,
       "args": null
     }
@@ -54,27 +54,37 @@
   "requireby": [
     {
       "name": "AccessData",
-      "description": "",
+      "description": null,
       "url": "/paymentx/reference/objects/accessdata"
     },
     {
       "name": "SupplierData",
-      "description": "",
+      "description": null,
       "url": "/paymentx/reference/objects/supplierdata"
     },
     {
+      "name": "SystemData",
+      "description": null,
+      "url": "/paymentx/reference/objects/systemdata"
+    },
+    {
       "name": "DomainData",
-      "description": "",
+      "description": null,
       "url": "/paymentx/reference/objects/domaindata"
     },
     {
       "name": "ClientData",
-      "description": "",
+      "description": null,
       "url": "/paymentx/reference/objects/clientdata"
     },
     {
+      "name": "ProfileData",
+      "description": null,
+      "url": "/paymentx/reference/objects/profiledata"
+    },
+    {
       "name": "PointOfSaleData",
-      "description": "",
+      "description": null,
       "url": "/paymentx/reference/objects/pointofsaledata"
     }
   ],
@@ -83,7 +93,6 @@
   "typename": "Organization",
   "hideGithubLink": true
 }
-Organization node is the root node in the hierarachy, the folders are the children of the organization and the products are the children of the folders.
 ## GraphQL schema definition
 
 {{% graphql-schema-type %}}
