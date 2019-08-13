@@ -6,7 +6,7 @@
     {
       "typeString": "[EventEdge]",
       "name": "edges",
-      "url": "/alertsx/reference/objects/eventedge",
+      "url": "/alerts-x/reference/objects/eventedge",
       "description": null,
       "isDeprecated": false,
       "args": null
@@ -14,7 +14,7 @@
     {
       "typeString": "PageInfo!",
       "name": "pageInfo",
-      "url": "/alertsx/reference/objects/pageinfo",
+      "url": "/alerts-x/reference/objects/pageinfo",
       "description": null,
       "isDeprecated": false,
       "args": null
@@ -22,7 +22,7 @@
     {
       "typeString": "Int!",
       "name": "count",
-      "url": "/alertsx/reference/scalars/int",
+      "url": "/alerts-x/reference/scalars/int",
       "description": null,
       "isDeprecated": false,
       "args": null
@@ -32,12 +32,12 @@
     {
       "name": "AlertData",
       "description": null,
-      "url": "/alertsx/reference/objects/alertdata"
+      "url": "/alerts-x/reference/objects/alertdata"
     },
     {
       "name": "EventData",
       "description": "Event data",
-      "url": "/alertsx/reference/objects/eventdata"
+      "url": "/alerts-x/reference/objects/eventdata"
     }
   ],
   "enumValues": null,

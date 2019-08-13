@@ -6,7 +6,7 @@
     {
       "typeString": "ID!",
       "name": "code",
-      "url": "/alertsx/reference/scalars/id",
+      "url": "/alerts-x/reference/scalars/id",
       "description": null,
       "isDeprecated": false,
       "args": null
@@ -14,7 +14,7 @@
     {
       "typeString": "DateTime!",
       "name": "createdAt",
-      "url": "/alertsx/reference/scalars/datetime",
+      "url": "/alerts-x/reference/scalars/datetime",
       "description": null,
       "isDeprecated": false,
       "args": null
@@ -22,7 +22,7 @@
     {
       "typeString": "DateTime!",
       "name": "updatedAt",
-      "url": "/alertsx/reference/scalars/datetime",
+      "url": "/alerts-x/reference/scalars/datetime",
       "description": null,
       "isDeprecated": false,
       "args": null

@@ -6,26 +6,26 @@
   "requireby": [
     {
       "name": "AdviseMessage",
-      "description": "List of advise messages.",
+      "description": null,
       "url": "/hotel-x/reference/objects/advisemessage"
     }
   ],
   "enumValues": [
     {
       "name": "WARN",
-      "description": "Waringn message.",
+      "description": null,
       "isDeprecated": false,
       "deprecationReason": null
     },
     {
       "name": "ERROR",
-      "description": "Error message.",
+      "description": null,
       "isDeprecated": false,
       "deprecationReason": null
     },
     {
       "name": "INFO",
-      "description": "Info message.",
+      "description": null,
       "isDeprecated": false,
       "deprecationReason": null
     }

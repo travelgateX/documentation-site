@@ -6,37 +6,37 @@
   "requireby": [
     {
       "name": "Amenity",
-      "description": "An Amenity is defined as something intended to make life more pleasant or comfortable for people. Examples include: swimming pools, shopping centers, etc.",
+      "description": null,
       "url": "/hotel-x/reference/objects/amenity"
     },
     {
       "name": "Media",
-      "description": "Contains media information.",
+      "description": null,
       "url": "/hotel-x/reference/objects/media"
     }
   ],
   "enumValues": [
     {
       "name": "HOTEL",
-      "description": "Apply at the hotel.",
+      "description": null,
       "isDeprecated": false,
       "deprecationReason": null
     },
     {
       "name": "ROOM",
-      "description": "Apply in the hotel.",
+      "description": null,
       "isDeprecated": false,
       "deprecationReason": null
     },
     {
       "name": "SERVICE",
-      "description": "Applies to a service.",
+      "description": null,
       "isDeprecated": false,
       "deprecationReason": null
     },
     {
       "name": "GENERAL",
-      "description": "Applies in general.",
+      "description": null,
       "isDeprecated": false,
       "deprecationReason": null
     }
@@ -45,7 +45,6 @@
   "typename": "ApplicationAreaType",
   "hideGithubLink": true
 }
-Indicates where it applies
 ## GraphQL schema definition
 
 {{% graphql-schema-enum %}}

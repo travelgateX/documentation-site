@@ -6,7 +6,7 @@
     {
       "typeString": "ID!",
       "name": "code",
-      "url": "/alertsx/reference/scalars/id",
+      "url": "/alerts-x/reference/scalars/id",
       "description": null,
       "isDeprecated": false,
       "args": null
@@ -14,7 +14,7 @@
     {
       "typeString": "ClientData",
       "name": "clientData",
-      "url": "/alertsx/reference/objects/clientdata",
+      "url": "/alerts-x/reference/objects/clientdata",
       "description": null,
       "isDeprecated": false,
       "args": null
@@ -22,7 +22,7 @@
     {
       "typeString": "[Error!]",
       "name": "error",
-      "url": "/alertsx/reference/objects/error",
+      "url": "/alerts-x/reference/objects/error",
       "description": null,
       "isDeprecated": false,
       "args": null
@@ -30,7 +30,7 @@
     {
       "typeString": "DateTime!",
       "name": "createdAt",
-      "url": "/alertsx/reference/scalars/datetime",
+      "url": "/alerts-x/reference/scalars/datetime",
       "description": null,
       "isDeprecated": false,
       "args": null
@@ -38,7 +38,7 @@
     {
       "typeString": "DateTime!",
       "name": "updatedAt",
-      "url": "/alertsx/reference/scalars/datetime",
+      "url": "/alerts-x/reference/scalars/datetime",
       "description": null,
       "isDeprecated": false,
       "args": null
@@ -48,7 +48,7 @@
     {
       "name": "ClientEdge",
       "description": null,
-      "url": "/alertsx/reference/objects/clientedge"
+      "url": "/alerts-x/reference/objects/clientedge"
     }
   ],
   "enumValues": null,

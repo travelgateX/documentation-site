@@ -7,7 +7,7 @@
     {
       "name": "ErrorTypeInput",
       "description": null,
-      "url": "/alertsx/reference/inputobjects/errortypeinput"
+      "url": "/alerts-x/reference/inputobjects/errortypeinput"
     }
   ],
   "enumValues": [

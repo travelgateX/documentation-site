@@ -6,7 +6,7 @@
     {
       "typeString": "ID!",
       "name": "code",
-      "url": "/alertsx/reference/scalars/id",
+      "url": "/alerts-x/reference/scalars/id",
       "description": null,
       "isDeprecated": false,
       "args": null
@@ -14,7 +14,7 @@
     {
       "typeString": "ID!",
       "name": "id",
-      "url": "/alertsx/reference/scalars/id",
+      "url": "/alerts-x/reference/scalars/id",
       "description": null,
       "isDeprecated": false,
       "args": null
@@ -22,7 +22,7 @@
     {
       "typeString": "Boolean!",
       "name": "isEditable",
-      "url": "/alertsx/reference/scalars/boolean",
+      "url": "/alerts-x/reference/scalars/boolean",
       "description": null,
       "isDeprecated": false,
       "args": null
@@ -30,7 +30,7 @@
     {
       "typeString": "String",
       "name": "label",
-      "url": "/alertsx/reference/scalars/string",
+      "url": "/alerts-x/reference/scalars/string",
       "description": null,
       "isDeprecated": false,
       "args": null
@@ -38,44 +38,44 @@
     {
       "typeString": "GroupConnection",
       "name": "groups",
-      "url": "/alertsx/reference/objects/groupconnection",
+      "url": "/alerts-x/reference/objects/groupconnection",
       "description": null,
       "isDeprecated": false,
       "args": [
         {
           "typeString": "[ID!]",
           "name": "codes",
-          "url": "/alertsx/reference/scalars/id",
+          "url": "/alerts-x/reference/scalars/id",
           "description": null
         },
         {
           "typeString": "GroupType",
           "name": "type",
-          "url": "/alertsx/reference/enums/grouptype",
+          "url": "/alerts-x/reference/enums/grouptype",
           "description": null
         },
         {
           "typeString": "Int",
           "name": "first",
-          "url": "/alertsx/reference/scalars/int",
+          "url": "/alerts-x/reference/scalars/int",
           "description": null
         },
         {
           "typeString": "Int",
           "name": "last",
-          "url": "/alertsx/reference/scalars/int",
+          "url": "/alerts-x/reference/scalars/int",
           "description": null
         },
         {
           "typeString": "String",
           "name": "before",
-          "url": "/alertsx/reference/scalars/string",
+          "url": "/alerts-x/reference/scalars/string",
           "description": null
         },
         {
           "typeString": "String",
           "name": "after",
-          "url": "/alertsx/reference/scalars/string",
+          "url": "/alerts-x/reference/scalars/string",
           "description": null
         }
       ]
@@ -83,38 +83,38 @@
     {
       "typeString": "ResourceConnection",
       "name": "resources",
-      "url": "/alertsx/reference/objects/resourceconnection",
+      "url": "/alerts-x/reference/objects/resourceconnection",
       "description": null,
       "isDeprecated": false,
       "args": [
         {
           "typeString": "[ID!]",
           "name": "codes",
-          "url": "/alertsx/reference/scalars/id",
+          "url": "/alerts-x/reference/scalars/id",
           "description": null
         },
         {
           "typeString": "Int",
           "name": "first",
-          "url": "/alertsx/reference/scalars/int",
+          "url": "/alerts-x/reference/scalars/int",
           "description": null
         },
         {
           "typeString": "Int",
           "name": "last",
-          "url": "/alertsx/reference/scalars/int",
+          "url": "/alerts-x/reference/scalars/int",
           "description": null
         },
         {
           "typeString": "String",
           "name": "before",
-          "url": "/alertsx/reference/scalars/string",
+          "url": "/alerts-x/reference/scalars/string",
           "description": null
         },
         {
           "typeString": "String",
           "name": "after",
-          "url": "/alertsx/reference/scalars/string",
+          "url": "/alerts-x/reference/scalars/string",
           "description": null
         }
       ]
@@ -122,50 +122,50 @@
     {
       "typeString": "OperationConnection",
       "name": "operations",
-      "url": "/alertsx/reference/objects/operationconnection",
+      "url": "/alerts-x/reference/objects/operationconnection",
       "description": null,
       "isDeprecated": false,
       "args": [
         {
           "typeString": "[ID!]",
           "name": "codes",
-          "url": "/alertsx/reference/scalars/id",
+          "url": "/alerts-x/reference/scalars/id",
           "description": null
         },
         {
           "typeString": "OperationType",
           "name": "type",
-          "url": "/alertsx/reference/enums/operationtype",
+          "url": "/alerts-x/reference/enums/operationtype",
           "description": null
         },
         {
           "typeString": "[OperationType!]",
           "name": "types",
-          "url": "/alertsx/reference/enums/operationtype",
+          "url": "/alerts-x/reference/enums/operationtype",
           "description": null
         },
         {
           "typeString": "Int",
           "name": "first",
-          "url": "/alertsx/reference/scalars/int",
+          "url": "/alerts-x/reference/scalars/int",
           "description": null
         },
         {
           "typeString": "Int",
           "name": "last",
-          "url": "/alertsx/reference/scalars/int",
+          "url": "/alerts-x/reference/scalars/int",
           "description": null
         },
         {
           "typeString": "String",
           "name": "before",
-          "url": "/alertsx/reference/scalars/string",
+          "url": "/alerts-x/reference/scalars/string",
           "description": null
         },
         {
           "typeString": "String",
           "name": "after",
-          "url": "/alertsx/reference/scalars/string",
+          "url": "/alerts-x/reference/scalars/string",
           "description": null
         }
       ]
@@ -173,14 +173,14 @@
     {
       "typeString": "[AdviseMessage!]",
       "name": "adviseMessageCatalog",
-      "url": "/alertsx/reference/objects/advisemessage",
+      "url": "/alerts-x/reference/objects/advisemessage",
       "description": null,
       "isDeprecated": false,
       "args": [
         {
           "typeString": "[AdviseMessageLevel]",
           "name": "level",
-          "url": "/alertsx/reference/enums/advisemessagelevel",
+          "url": "/alerts-x/reference/enums/advisemessagelevel",
           "description": null
         }
       ]
@@ -190,7 +190,7 @@
     {
       "name": "API",
       "description": null,
-      "url": "/alertsx/reference/objects/api"
+      "url": "/alerts-x/reference/objects/api"
     }
   ],
   "enumValues": null,

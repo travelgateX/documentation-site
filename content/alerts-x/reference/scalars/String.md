@@ -7,177 +7,202 @@
     {
       "name": "RelayInput",
       "description": null,
-      "url": "/alertsx/reference/inputobjects/relayinput"
+      "url": "/alerts-x/reference/inputobjects/relayinput"
     },
     {
       "name": "AlertEdge",
       "description": null,
-      "url": "/alertsx/reference/objects/alertedge"
+      "url": "/alerts-x/reference/objects/alertedge"
     },
     {
       "name": "PageInfo",
       "description": null,
-      "url": "/alertsx/reference/objects/pageinfo"
+      "url": "/alerts-x/reference/objects/pageinfo"
     },
     {
       "name": "AlertData",
       "description": null,
-      "url": "/alertsx/reference/objects/alertdata"
+      "url": "/alerts-x/reference/objects/alertdata"
     },
     {
       "name": "AdviseMessage",
       "description": null,
-      "url": "/alertsx/reference/objects/advisemessage"
+      "url": "/alerts-x/reference/objects/advisemessage"
     },
     {
       "name": "MemberData",
       "description": null,
-      "url": "/alertsx/reference/objects/memberdata"
+      "url": "/alerts-x/reference/objects/memberdata"
     },
     {
       "name": "GroupEdge",
       "description": null,
-      "url": "/alertsx/reference/objects/groupedge"
+      "url": "/alerts-x/reference/objects/groupedge"
     },
     {
       "name": "GroupData",
       "description": null,
-      "url": "/alertsx/reference/objects/groupdata"
+      "url": "/alerts-x/reference/objects/groupdata"
     },
     {
       "name": "GroupCommonData",
       "description": null,
-      "url": "/alertsx/reference/interfaces/groupcommondata"
+      "url": "/alerts-x/reference/interfaces/groupcommondata"
     },
     {
       "name": "MemberEdge",
       "description": null,
-      "url": "/alertsx/reference/objects/memberedge"
+      "url": "/alerts-x/reference/objects/memberedge"
     },
     {
       "name": "APIEdge",
       "description": null,
-      "url": "/alertsx/reference/objects/apiedge"
+      "url": "/alerts-x/reference/objects/apiedge"
     },
     {
       "name": "APIData",
       "description": null,
-      "url": "/alertsx/reference/objects/apidata"
+      "url": "/alerts-x/reference/objects/apidata"
     },
     {
       "name": "ResourceEdge",
       "description": null,
-      "url": "/alertsx/reference/objects/resourceedge"
+      "url": "/alerts-x/reference/objects/resourceedge"
     },
     {
       "name": "ResourceData",
       "description": null,
-      "url": "/alertsx/reference/objects/resourcedata"
+      "url": "/alerts-x/reference/objects/resourcedata"
     },
     {
       "name": "OperationEdge",
       "description": null,
-      "url": "/alertsx/reference/objects/operationedge"
+      "url": "/alerts-x/reference/objects/operationedge"
     },
     {
       "name": "OperationData",
       "description": null,
-      "url": "/alertsx/reference/objects/operationdata"
+      "url": "/alerts-x/reference/objects/operationdata"
     },
     {
       "name": "ManagedGroupEdge",
       "description": null,
-      "url": "/alertsx/reference/objects/managedgroupedge"
+      "url": "/alerts-x/reference/objects/managedgroupedge"
     },
     {
       "name": "RoleData",
       "description": null,
-      "url": "/alertsx/reference/objects/roledata"
+      "url": "/alerts-x/reference/objects/roledata"
     },
     {
       "name": "AccessEdge",
       "description": null,
-      "url": "/alertsx/reference/objects/accessedge"
+      "url": "/alerts-x/reference/objects/accessedge"
     },
     {
       "name": "AccessData",
       "description": null,
-      "url": "/alertsx/reference/objects/accessdata"
+      "url": "/alerts-x/reference/objects/accessdata"
     },
     {
       "name": "Error",
       "description": null,
-      "url": "/alertsx/reference/objects/error"
+      "url": "/alerts-x/reference/objects/error"
     },
     {
       "name": "Parameter",
       "description": null,
-      "url": "/alertsx/reference/objects/parameter"
+      "url": "/alerts-x/reference/objects/parameter"
     },
     {
       "name": "SupplierData",
       "description": null,
-      "url": "/alertsx/reference/objects/supplierdata"
+      "url": "/alerts-x/reference/objects/supplierdata"
     },
     {
       "name": "Provider",
       "description": null,
-      "url": "/alertsx/reference/objects/provider"
+      "url": "/alerts-x/reference/objects/provider"
     },
     {
       "name": "OrganizationData",
       "description": null,
-      "url": "/alertsx/reference/objects/organizationdata"
+      "url": "/alerts-x/reference/objects/organizationdata"
     },
     {
       "name": "ProductEdge",
       "description": null,
-      "url": "/alertsx/reference/objects/productedge"
+      "url": "/alerts-x/reference/objects/productedge"
     },
     {
       "name": "ProductData",
       "description": null,
-      "url": "/alertsx/reference/objects/productdata"
+      "url": "/alerts-x/reference/objects/productdata"
+    },
+    {
+      "name": "MacroPermissionEdge",
+      "description": null,
+      "url": "/alerts-x/reference/objects/macropermissionedge"
+    },
+    {
+      "name": "MacroPermissionData",
+      "description": null,
+      "url": "/alerts-x/reference/objects/macropermissiondata"
     },
     {
       "name": "SupplierEdge",
       "description": null,
-      "url": "/alertsx/reference/objects/supplieredge"
+      "url": "/alerts-x/reference/objects/supplieredge"
     },
     {
       "name": "ClientEdge",
       "description": null,
-      "url": "/alertsx/reference/objects/clientedge"
+      "url": "/alerts-x/reference/objects/clientedge"
+    },
+    {
+      "name": "ProfileEdge",
+      "description": null,
+      "url": "/alerts-x/reference/objects/profileedge"
+    },
+    {
+      "name": "ProfileData",
+      "description": null,
+      "url": "/alerts-x/reference/objects/profiledata"
+    },
+    {
+      "name": "EntityEdge",
+      "description": null,
+      "url": "/alerts-x/reference/objects/entityedge"
     },
     {
       "name": "RoleEdge",
       "description": null,
-      "url": "/alertsx/reference/objects/roleedge"
+      "url": "/alerts-x/reference/objects/roleedge"
     },
     {
       "name": "EventEdge",
       "description": null,
-      "url": "/alertsx/reference/objects/eventedge"
+      "url": "/alerts-x/reference/objects/eventedge"
     },
     {
       "name": "EventData",
       "description": "Event data",
-      "url": "/alertsx/reference/objects/eventdata"
+      "url": "/alerts-x/reference/objects/eventdata"
     },
     {
       "name": "ExternalMessage",
       "description": null,
-      "url": "/alertsx/reference/objects/externalmessage"
+      "url": "/alerts-x/reference/objects/externalmessage"
     },
     {
       "name": "AlertInput",
       "description": "Alert information. Only one configuration has to be set at once.",
-      "url": "/alertsx/reference/inputobjects/alertinput"
+      "url": "/alerts-x/reference/inputobjects/alertinput"
     },
     {
       "name": "AlertUpdateInput",
       "description": null,
-      "url": "/alertsx/reference/inputobjects/alertupdateinput"
+      "url": "/alerts-x/reference/inputobjects/alertupdateinput"
     }
   ],
   "enumValues": null,

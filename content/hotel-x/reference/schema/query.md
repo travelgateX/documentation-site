@@ -7,7 +7,7 @@
       "typeString": "ServiceStatus!",
       "name": "hotelConfigurationStatusService",
       "url": "/hotel-x/reference/objects/servicestatus",
-      "description": "Returns status of the hotelX configuration service.",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -15,20 +15,20 @@
       "typeString": "HotelXDefaultSettings",
       "name": "defaultSettings",
       "url": "/hotel-x/reference/objects/hotelxdefaultsettings",
-      "description": "Obtains the default settings of a group or of the client in the group.",
+      "description": null,
       "isDeprecated": false,
       "args": [
         {
           "typeString": "ID!",
           "name": "group",
           "url": "/hotel-x/reference/scalars/id",
-          "description": ""
+          "description": null
         },
         {
           "typeString": "ID",
           "name": "clientName",
           "url": "/hotel-x/reference/scalars/id",
-          "description": ""
+          "description": null
         }
       ]
     },
@@ -36,26 +36,26 @@
       "typeString": "HotelXCommonSettings",
       "name": "commonSettings",
       "url": "/hotel-x/reference/objects/hotelxcommonsettings",
-      "description": "",
+      "description": null,
       "isDeprecated": false,
       "args": [
         {
           "typeString": "ID!",
           "name": "group",
           "url": "/hotel-x/reference/scalars/id",
-          "description": ""
+          "description": null
         },
         {
           "typeString": "ID",
           "name": "access",
           "url": "/hotel-x/reference/scalars/id",
-          "description": ""
+          "description": null
         },
         {
           "typeString": "ID",
           "name": "supplier",
           "url": "/hotel-x/reference/scalars/id",
-          "description": ""
+          "description": null
         }
       ]
     },
@@ -63,20 +63,20 @@
       "typeString": "BoardConnection!",
       "name": "boards",
       "url": "/hotel-x/reference/objects/boardconnection",
-      "description": "Query to obtain Boards",
+      "description": null,
       "isDeprecated": false,
       "args": [
         {
           "typeString": "HotelXBoardQueryInput!",
           "name": "criteria",
           "url": "/hotel-x/reference/inputobjects/hotelxboardqueryinput",
-          "description": ""
+          "description": null
         },
         {
           "typeString": "RelayInput!",
           "name": "relay",
           "url": "/hotel-x/reference/inputobjects/relayinput",
-          "description": ""
+          "description": null
         }
       ]
     },
@@ -84,20 +84,20 @@
       "typeString": "CategoryConnection!",
       "name": "categories",
       "url": "/hotel-x/reference/objects/categoryconnection",
-      "description": "Query to obtain Categories",
+      "description": null,
       "isDeprecated": false,
       "args": [
         {
           "typeString": "HotelXCategoryQueryInput!",
           "name": "criteria",
           "url": "/hotel-x/reference/inputobjects/hotelxcategoryqueryinput",
-          "description": ""
+          "description": null
         },
         {
           "typeString": "RelayInput!",
           "name": "relay",
           "url": "/hotel-x/reference/inputobjects/relayinput",
-          "description": ""
+          "description": null
         }
       ]
     },
@@ -105,32 +105,32 @@
       "typeString": "HotelConnection!",
       "name": "hotels",
       "url": "/hotel-x/reference/objects/hotelconnection",
-      "description": "Query to obtain Hotels",
+      "description": null,
       "isDeprecated": false,
       "args": [
         {
           "typeString": "HotelXHotelListInput!",
           "name": "criteria",
           "url": "/hotel-x/reference/inputobjects/hotelxhotellistinput",
-          "description": ""
+          "description": null
         },
         {
           "typeString": "RelayInput!",
           "name": "relay",
           "url": "/hotel-x/reference/inputobjects/relayinput",
-          "description": ""
+          "description": null
         },
         {
           "typeString": "String",
           "name": "token",
           "url": "/hotel-x/reference/scalars/string",
-          "description": ""
+          "description": null
         },
         {
           "typeString": "HotelXHotelFilterInput",
           "name": "filter",
           "url": "/hotel-x/reference/inputobjects/hotelxhotelfilterinput",
-          "description": ""
+          "description": null
         }
       ]
     },
@@ -138,26 +138,26 @@
       "typeString": "RoomConnection!",
       "name": "rooms",
       "url": "/hotel-x/reference/objects/roomconnection",
-      "description": "Query to obtain rooms",
+      "description": null,
       "isDeprecated": false,
       "args": [
         {
           "typeString": "HotelXRoomQueryInput!",
           "name": "criteria",
           "url": "/hotel-x/reference/inputobjects/hotelxroomqueryinput",
-          "description": ""
+          "description": null
         },
         {
           "typeString": "RelayInput!",
           "name": "relay",
           "url": "/hotel-x/reference/inputobjects/relayinput",
-          "description": ""
+          "description": null
         },
         {
           "typeString": "String",
           "name": "token",
           "url": "/hotel-x/reference/scalars/string",
-          "description": ""
+          "description": null
         }
       ]
     },
@@ -165,26 +165,26 @@
       "typeString": "DestinationConnection!",
       "name": "destinations",
       "url": "/hotel-x/reference/objects/destinationconnection",
-      "description": "Query to obtain Destinations",
+      "description": null,
       "isDeprecated": false,
       "args": [
         {
           "typeString": "HotelXDestinationListInput!",
           "name": "criteria",
           "url": "/hotel-x/reference/inputobjects/hotelxdestinationlistinput",
-          "description": ""
+          "description": null
         },
         {
           "typeString": "RelayInput!",
           "name": "relay",
           "url": "/hotel-x/reference/inputobjects/relayinput",
-          "description": ""
+          "description": null
         },
         {
           "typeString": "String",
           "name": "token",
           "url": "/hotel-x/reference/scalars/string",
-          "description": ""
+          "description": null
         }
       ]
     },
@@ -192,14 +192,14 @@
       "typeString": "[DestinationSearchResult]!",
       "name": "destinationSearcher",
       "url": "#",
-      "description": "Returns hotels and destinations that contains the indicated text.",
+      "description": null,
       "isDeprecated": false,
       "args": [
         {
           "typeString": "HotelXDestinationSearcherInput!",
           "name": "criteria",
           "url": "/hotel-x/reference/inputobjects/hotelxdestinationsearcherinput",
-          "description": ""
+          "description": null
         }
       ]
     },
@@ -207,38 +207,38 @@
       "typeString": "HotelSearch",
       "name": "search",
       "url": "/hotel-x/reference/objects/hotelsearch",
-      "description": "Available options of an hotel for a given date and itinerary. It does not filter different classes, times or\nfares. It will always retrieve all results returned by the suppliers. The availability request is very straight\nforward. It only requires the criteria of search (destination, travel dates and the number of pax in each room).\nBut you must preload the other fields in our system by complete the fields absents.",
+      "description": null,
       "isDeprecated": false,
       "args": [
         {
           "typeString": "String",
           "name": "token",
           "url": "/hotel-x/reference/scalars/string",
-          "description": ""
+          "description": null
         },
         {
           "typeString": "HotelCriteriaSearchInput",
           "name": "criteria",
           "url": "/hotel-x/reference/inputobjects/hotelcriteriasearchinput",
-          "description": ""
+          "description": null
         },
         {
           "typeString": "HotelSettingsInput",
           "name": "settings",
           "url": "/hotel-x/reference/inputobjects/hotelsettingsinput",
-          "description": ""
+          "description": null
         },
         {
           "typeString": "FilterInput",
           "name": "filter",
           "url": "/hotel-x/reference/inputobjects/filterinput",
-          "description": ""
+          "description": null
         },
         {
           "typeString": "HotelXFilterSearchInput",
           "name": "filterSearch",
           "url": "/hotel-x/reference/inputobjects/hotelxfiltersearchinput",
-          "description": ""
+          "description": null
         }
       ]
     },
@@ -246,26 +246,26 @@
       "typeString": "HotelQuote",
       "name": "quote",
       "url": "/hotel-x/reference/objects/hotelquote",
-      "description": "Returns the total price and cancellation policies of the Option selected in the previous step (Search).",
+      "description": null,
       "isDeprecated": false,
       "args": [
         {
           "typeString": "HotelCriteriaQuoteInput!",
           "name": "criteria",
           "url": "/hotel-x/reference/inputobjects/hotelcriteriaquoteinput",
-          "description": ""
+          "description": null
         },
         {
           "typeString": "HotelSettingsInput",
           "name": "settings",
           "url": "/hotel-x/reference/inputobjects/hotelsettingsinput",
-          "description": ""
+          "description": null
         },
         {
           "typeString": "HotelXFilterInput",
           "name": "filter",
           "url": "/hotel-x/reference/inputobjects/hotelxfilterinput",
-          "description": ""
+          "description": null
         }
       ]
     },
@@ -273,26 +273,26 @@
       "typeString": "HotelBooking",
       "name": "booking",
       "url": "/hotel-x/reference/objects/hotelbooking",
-      "description": "Returns detailed information about books, you can indicated a list of locators or a range date.",
+      "description": null,
       "isDeprecated": false,
       "args": [
         {
           "typeString": "HotelCriteriaBookingInput!",
           "name": "criteria",
           "url": "/hotel-x/reference/inputobjects/hotelcriteriabookinginput",
-          "description": ""
+          "description": null
         },
         {
           "typeString": "HotelSettingsInput",
           "name": "settings",
           "url": "/hotel-x/reference/inputobjects/hotelsettingsinput",
-          "description": ""
+          "description": null
         },
         {
           "typeString": "HotelXFilterInput",
           "name": "filter",
           "url": "/hotel-x/reference/inputobjects/hotelxfilterinput",
-          "description": ""
+          "description": null
         }
       ]
     },
@@ -300,7 +300,7 @@
       "typeString": "ServiceStatus!",
       "name": "searchStatusService",
       "url": "/hotel-x/reference/objects/servicestatus",
-      "description": "Returns status of the search service.",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -308,7 +308,7 @@
       "typeString": "ServiceStatus!",
       "name": "quoteStatusService",
       "url": "/hotel-x/reference/objects/servicestatus",
-      "description": "Returns status of the quote service.",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -316,7 +316,7 @@
       "typeString": "ServiceStatus!",
       "name": "bookStatusService",
       "url": "/hotel-x/reference/objects/servicestatus",
-      "description": "Returns status of the new booking service.",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -324,7 +324,7 @@
       "typeString": "ServiceStatus!",
       "name": "cancelStatusService",
       "url": "/hotel-x/reference/objects/servicestatus",
-      "description": "Returns status of the cancellation service.",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -332,7 +332,7 @@
       "typeString": "ServiceStatus!",
       "name": "bookingStatusService",
       "url": "/hotel-x/reference/objects/servicestatus",
-      "description": "Returns status of the booking service.",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -340,14 +340,14 @@
       "typeString": "Mapping!",
       "name": "mapping",
       "url": "/hotel-x/reference/objects/mapping",
-      "description": "Returns map codes of a group. You can get hotel map, room map, and board map.",
+      "description": null,
       "isDeprecated": false,
       "args": [
         {
           "typeString": "String!",
           "name": "groupCode",
           "url": "/hotel-x/reference/scalars/string",
-          "description": ""
+          "description": null
         }
       ]
     },
@@ -355,14 +355,14 @@
       "typeString": "HotelRuntimeConfiguration",
       "name": "runtimeConfiguration",
       "url": "/hotel-x/reference/objects/hotelruntimeconfiguration",
-      "description": "Returns a configuration teamplate of the supplier",
+      "description": null,
       "isDeprecated": false,
       "args": [
         {
           "typeString": "ID!",
           "name": "supplierCode",
           "url": "/hotel-x/reference/scalars/id",
-          "description": ""
+          "description": null
         }
       ]
     }

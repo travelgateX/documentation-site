@@ -6,7 +6,7 @@
     {
       "typeString": "[ManagedGroupEdge]",
       "name": "edges",
-      "url": "/alertsx/reference/objects/managedgroupedge",
+      "url": "/alerts-x/reference/objects/managedgroupedge",
       "description": null,
       "isDeprecated": false,
       "args": null
@@ -14,7 +14,7 @@
     {
       "typeString": "PageInfo!",
       "name": "pageInfo",
-      "url": "/alertsx/reference/objects/pageinfo",
+      "url": "/alerts-x/reference/objects/pageinfo",
       "description": null,
       "isDeprecated": false,
       "args": null
@@ -24,7 +24,7 @@
     {
       "name": "GroupData",
       "description": null,
-      "url": "/alertsx/reference/objects/groupdata"
+      "url": "/alerts-x/reference/objects/groupdata"
     }
   ],
   "enumValues": null,

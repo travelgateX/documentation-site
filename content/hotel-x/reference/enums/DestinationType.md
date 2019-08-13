@@ -6,31 +6,26 @@
   "requireby": [
     {
       "name": "DestinationData",
-      "description": "Information about destinantion",
+      "description": null,
       "url": "/hotel-x/reference/objects/destinationdata"
-    },
-    {
-      "name": "GeonameData",
-      "description": "Geoname data, which contain a reference to his parent location",
-      "url": "/hotel-x/reference/objects/geonamedata"
     }
   ],
   "enumValues": [
     {
       "name": "ZONE",
-      "description": "Zone",
+      "description": null,
       "isDeprecated": false,
       "deprecationReason": null
     },
     {
       "name": "CITY",
-      "description": "City",
+      "description": null,
       "isDeprecated": false,
       "deprecationReason": null
     },
     {
       "name": "COUNTRY",
-      "description": "Country",
+      "description": null,
       "isDeprecated": false,
       "deprecationReason": null
     }
@@ -39,7 +34,6 @@
   "typename": "DestinationType",
   "hideGithubLink": true
 }
-Indicates the type of destination
 ## GraphQL schema definition
 
 {{% graphql-schema-enum %}}

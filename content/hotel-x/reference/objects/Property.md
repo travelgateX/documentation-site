@@ -7,7 +7,7 @@
       "typeString": "String",
       "name": "name",
       "url": "/hotel-x/reference/scalars/string",
-      "description": "Indicates property type",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -15,7 +15,7 @@
       "typeString": "String",
       "name": "code",
       "url": "/hotel-x/reference/scalars/string",
-      "description": "Indicates property type code",
+      "description": null,
       "isDeprecated": false,
       "args": null
     }
@@ -23,7 +23,7 @@
   "requireby": [
     {
       "name": "HotelData",
-      "description": "Hotel data",
+      "description": null,
       "url": "/hotel-x/reference/objects/hoteldata"
     }
   ],
@@ -32,7 +32,6 @@
   "typename": "Property",
   "hideGithubLink": true
 }
-Indicates Property type
 ## GraphQL schema definition
 
 {{% graphql-schema-type %}}

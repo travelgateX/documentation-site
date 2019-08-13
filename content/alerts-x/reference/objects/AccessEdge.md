@@ -6,7 +6,7 @@
     {
       "typeString": "Access",
       "name": "node",
-      "url": "/alertsx/reference/objects/access",
+      "url": "/alerts-x/reference/objects/access",
       "description": null,
       "isDeprecated": false,
       "args": null
@@ -14,7 +14,7 @@
     {
       "typeString": "String!",
       "name": "cursor",
-      "url": "/alertsx/reference/scalars/string",
+      "url": "/alerts-x/reference/scalars/string",
       "description": null,
       "isDeprecated": false,
       "args": null
@@ -24,7 +24,7 @@
     {
       "name": "AccessConnection",
       "description": null,
-      "url": "/alertsx/reference/objects/accessconnection"
+      "url": "/alerts-x/reference/objects/accessconnection"
     }
   ],
   "enumValues": null,

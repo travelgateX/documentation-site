@@ -7,7 +7,7 @@
     {
       "name": "AdviseMessage",
       "description": null,
-      "url": "/alertsx/reference/objects/advisemessage"
+      "url": "/alerts-x/reference/objects/advisemessage"
     }
   ],
   "enumValues": [

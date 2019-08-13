@@ -7,73 +7,73 @@
   "enumValues": [
     {
       "name": "PACKAGE",
-      "description": "The product can't be sold separately from another product attached to it, such as a flight.",
+      "description": null,
       "isDeprecated": false,
       "deprecationReason": null
     },
     {
       "name": "OLDER55",
-      "description": "Options that can only be sold to people who are 55 and older.",
+      "description": null,
       "isDeprecated": false,
       "deprecationReason": null
     },
     {
       "name": "OLDER60",
-      "description": "Options that can only be sold to people who are 60 and older.",
+      "description": null,
       "isDeprecated": false,
       "deprecationReason": null
     },
     {
       "name": "OLDER65",
-      "description": "Options that can only be sold to people who are 65 and older.",
+      "description": null,
       "isDeprecated": false,
       "deprecationReason": null
     },
     {
       "name": "CANARY_RESIDENT",
-      "description": "The rate CanaryResident is applicable to Canary Islands residents only.",
+      "description": null,
       "isDeprecated": false,
       "deprecationReason": null
     },
     {
       "name": "BALEARIC_RESIDENT",
-      "description": "The rate BalearicResident is applicable to Balearic Islands residents only.",
+      "description": null,
       "isDeprecated": false,
       "deprecationReason": null
     },
     {
       "name": "LARGE_FAMILY",
-      "description": "The rate largeFamily is applied to large families and is determined by each supplier",
+      "description": null,
       "isDeprecated": false,
       "deprecationReason": null
     },
     {
       "name": "HONEYMOON",
-      "description": "The rate honeymoon is applied to those who just got married and is determined by each supplier.",
+      "description": null,
       "isDeprecated": false,
       "deprecationReason": null
     },
     {
       "name": "PUBLIC_SERVANT",
-      "description": "The rate publicServant is applicable to public servants only.",
+      "description": null,
       "isDeprecated": false,
       "deprecationReason": null
     },
     {
       "name": "UNEMPLOYED",
-      "description": "The rate unemployed is applied to those without work.",
+      "description": null,
       "isDeprecated": false,
       "deprecationReason": null
     },
     {
       "name": "NORMAL",
-      "description": "The rate normal refers to options without RateRule",
+      "description": null,
       "isDeprecated": false,
       "deprecationReason": null
     },
     {
       "name": "NON_REFUNDABLE",
-      "description": "The rate non refundable is applied to non refundable options",
+      "description": null,
       "isDeprecated": false,
       "deprecationReason": null
     }
@@ -82,7 +82,6 @@
   "typename": "RateRulesType",
   "hideGithubLink": true
 }
-Rate Rules
 ## GraphQL schema definition
 
 {{% graphql-schema-enum %}}

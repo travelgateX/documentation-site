@@ -6,21 +6,21 @@
     {
       "typeString": "[ID!]",
       "name": "alertCodes",
-      "url": "/alertsx/reference/scalars/id",
+      "url": "/alerts-x/reference/scalars/id",
       "description": null,
       "args": null
     },
     {
       "typeString": "Boolean",
       "name": "isActive",
-      "url": "/alertsx/reference/scalars/boolean",
+      "url": "/alerts-x/reference/scalars/boolean",
       "description": null,
       "args": null
     },
     {
       "typeString": "[ID!]",
       "name": "groups",
-      "url": "/alertsx/reference/scalars/id",
+      "url": "/alerts-x/reference/scalars/id",
       "description": null,
       "args": null
     }

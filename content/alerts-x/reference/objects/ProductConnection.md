@@ -6,7 +6,7 @@
     {
       "typeString": "[ProductEdge]",
       "name": "edges",
-      "url": "/alertsx/reference/objects/productedge",
+      "url": "/alerts-x/reference/objects/productedge",
       "description": null,
       "isDeprecated": false,
       "args": null
@@ -14,7 +14,7 @@
     {
       "typeString": "PageInfo!",
       "name": "pageInfo",
-      "url": "/alertsx/reference/objects/pageinfo",
+      "url": "/alerts-x/reference/objects/pageinfo",
       "description": null,
       "isDeprecated": false,
       "args": null
@@ -24,7 +24,7 @@
     {
       "name": "OrganizationData",
       "description": null,
-      "url": "/alertsx/reference/objects/organizationdata"
+      "url": "/alerts-x/reference/objects/organizationdata"
     }
   ],
   "enumValues": null,

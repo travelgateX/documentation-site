@@ -6,7 +6,7 @@
     {
       "typeString": "Role",
       "name": "node",
-      "url": "/alertsx/reference/objects/role",
+      "url": "/alerts-x/reference/objects/role",
       "description": null,
       "isDeprecated": false,
       "args": null
@@ -14,7 +14,7 @@
     {
       "typeString": "String!",
       "name": "cursor",
-      "url": "/alertsx/reference/scalars/string",
+      "url": "/alerts-x/reference/scalars/string",
       "description": null,
       "isDeprecated": false,
       "args": null
@@ -24,7 +24,7 @@
     {
       "name": "RoleConnection",
       "description": null,
-      "url": "/alertsx/reference/objects/roleconnection"
+      "url": "/alerts-x/reference/objects/roleconnection"
     }
   ],
   "enumValues": null,

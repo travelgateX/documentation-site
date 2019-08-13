@@ -7,7 +7,7 @@
       "typeString": "ID!",
       "name": "code",
       "url": "/hotel-x/reference/scalars/id",
-      "description": "Internal code.",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -15,7 +15,7 @@
       "typeString": "String!",
       "name": "hotelCode",
       "url": "/hotel-x/reference/scalars/string",
-      "description": "Code to perform availability.",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -23,23 +23,31 @@
       "typeString": "String",
       "name": "hotelCodeSupplier",
       "url": "/hotel-x/reference/scalars/string",
-      "description": "Native supplier hotel code.",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
     {
-      "typeString": "String!",
+      "typeString": "GiataData",
+      "name": "giataData",
+      "url": "/hotel-x/reference/objects/giatadata",
+      "description": null,
+      "isDeprecated": false,
+      "args": null
+    },
+    {
+      "typeString": "String",
       "name": "hotelName",
       "url": "/hotel-x/reference/scalars/string",
-      "description": "Name of the hotel in the Supplier selected.",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
     {
-      "typeString": "String!",
+      "typeString": "String",
       "name": "categoryCode",
       "url": "/hotel-x/reference/scalars/string",
-      "description": "Hotel category (for example number of stars).",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -47,7 +55,7 @@
       "typeString": "Property",
       "name": "property",
       "url": "/hotel-x/reference/objects/property",
-      "description": "Indicates property type",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -55,7 +63,7 @@
       "typeString": "String",
       "name": "chainCode",
       "url": "/hotel-x/reference/scalars/string",
-      "description": "Hotel chain code",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -63,7 +71,7 @@
       "typeString": "Boolean!",
       "name": "exclusiveDeal",
       "url": "/hotel-x/reference/scalars/boolean",
-      "description": "Indicates that the Hotel has an Exclusive Deal.",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -71,7 +79,7 @@
       "typeString": "Location!",
       "name": "location",
       "url": "/hotel-x/reference/objects/location",
-      "description": "Indicates the location of the hotel",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -79,7 +87,7 @@
       "typeString": "Contact",
       "name": "contact",
       "url": "/hotel-x/reference/objects/contact",
-      "description": "Contact cotains information about hotel contact.",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -87,15 +95,15 @@
       "typeString": "[Int!]!",
       "name": "rank",
       "url": "/hotel-x/reference/scalars/int",
-      "description": "Rank indicates the supplier categorization.",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
     {
-      "typeString": "[String!]",
+      "typeString": "[PaymentCardType!]",
       "name": "cardTypes",
-      "url": "/hotel-x/reference/scalars/string",
-      "description": "List of credit cards",
+      "url": "/hotel-x/reference/enums/paymentcardtype",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -103,7 +111,7 @@
       "typeString": "[Amenity!]",
       "name": "amenities",
       "url": "/hotel-x/reference/objects/amenity",
-      "description": "Amenities",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -111,7 +119,7 @@
       "typeString": "[Media!]",
       "name": "medias",
       "url": "/hotel-x/reference/objects/media",
-      "description": "Medias",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -119,28 +127,36 @@
       "typeString": "[Description!]",
       "name": "descriptions",
       "url": "/hotel-x/reference/objects/description",
-      "description": "Descriptions",
+      "description": null,
       "isDeprecated": false,
       "args": [
         {
           "typeString": "[DescriptionType!]",
           "name": "types",
           "url": "/hotel-x/reference/enums/descriptiontype",
-          "description": ""
+          "description": null
         },
         {
           "typeString": "[Language!]",
           "name": "languages",
           "url": "/hotel-x/reference/scalars/language",
-          "description": ""
+          "description": null
         }
       ]
+    },
+    {
+      "typeString": "RoomConnection",
+      "name": "rooms",
+      "url": "/hotel-x/reference/objects/roomconnection",
+      "description": null,
+      "isDeprecated": false,
+      "args": null
     }
   ],
   "requireby": [
     {
       "name": "Hotel",
-      "description": "Hotel Type",
+      "description": null,
       "url": "/hotel-x/reference/objects/hotel"
     }
   ],
@@ -149,7 +165,6 @@
   "typename": "HotelData",
   "hideGithubLink": true
 }
-Hotel data
 ## GraphQL schema definition
 
 {{% graphql-schema-type %}}

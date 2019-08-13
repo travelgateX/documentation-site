@@ -6,7 +6,7 @@
     {
       "typeString": "URI",
       "name": "search",
-      "url": "/alertsx/reference/scalars/uri",
+      "url": "/alerts-x/reference/scalars/uri",
       "description": null,
       "isDeprecated": false,
       "args": null
@@ -14,7 +14,7 @@
     {
       "typeString": "URI",
       "name": "quote",
-      "url": "/alertsx/reference/scalars/uri",
+      "url": "/alerts-x/reference/scalars/uri",
       "description": null,
       "isDeprecated": false,
       "args": null
@@ -22,7 +22,7 @@
     {
       "typeString": "URI",
       "name": "book",
-      "url": "/alertsx/reference/scalars/uri",
+      "url": "/alerts-x/reference/scalars/uri",
       "description": null,
       "isDeprecated": false,
       "args": null
@@ -30,7 +30,7 @@
     {
       "typeString": "URI",
       "name": "generic",
-      "url": "/alertsx/reference/scalars/uri",
+      "url": "/alerts-x/reference/scalars/uri",
       "description": null,
       "isDeprecated": false,
       "args": null
@@ -40,7 +40,7 @@
     {
       "name": "AccessData",
       "description": null,
-      "url": "/alertsx/reference/objects/accessdata"
+      "url": "/alerts-x/reference/objects/accessdata"
     }
   ],
   "enumValues": null,

@@ -6,7 +6,7 @@
     {
       "typeString": "Resource",
       "name": "node",
-      "url": "/alertsx/reference/objects/resource",
+      "url": "/alerts-x/reference/objects/resource",
       "description": null,
       "isDeprecated": false,
       "args": null
@@ -14,7 +14,7 @@
     {
       "typeString": "String!",
       "name": "cursor",
-      "url": "/alertsx/reference/scalars/string",
+      "url": "/alerts-x/reference/scalars/string",
       "description": null,
       "isDeprecated": false,
       "args": null
@@ -24,7 +24,7 @@
     {
       "name": "ResourceConnection",
       "description": null,
-      "url": "/alertsx/reference/objects/resourceconnection"
+      "url": "/alerts-x/reference/objects/resourceconnection"
     }
   ],
   "enumValues": null,

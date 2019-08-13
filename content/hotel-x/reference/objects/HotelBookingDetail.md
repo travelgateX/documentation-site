@@ -7,7 +7,7 @@
       "typeString": "Reference!",
       "name": "reference",
       "url": "/hotel-x/reference/objects/reference",
-      "description": "Booking ID in the Supplier's system",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -15,7 +15,7 @@
       "typeString": "Holder",
       "name": "holder",
       "url": "/hotel-x/reference/objects/holder",
-      "description": "Holder's name and surname",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -23,7 +23,7 @@
       "typeString": "BookingHotel",
       "name": "hotel",
       "url": "/hotel-x/reference/objects/bookinghotel",
-      "description": "Information about the hotel.",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -31,7 +31,15 @@
       "typeString": "Price",
       "name": "price",
       "url": "/hotel-x/reference/objects/price",
-      "description": "Specifies the prices (Gross, Net and Amount) of the option returned.",
+      "description": null,
+      "isDeprecated": false,
+      "args": null
+    },
+    {
+      "typeString": "PriceChange",
+      "name": "quotePrice",
+      "url": "/hotel-x/reference/objects/pricechange",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -39,7 +47,7 @@
       "typeString": "CancelPolicy",
       "name": "cancelPolicy",
       "url": "/hotel-x/reference/objects/cancelpolicy",
-      "description": "Specifies cancel policies of the book returned.",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -47,7 +55,7 @@
       "typeString": "String",
       "name": "remarks",
       "url": "/hotel-x/reference/scalars/string",
-      "description": "Additional information about the book.",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -55,7 +63,15 @@
       "typeString": "BookStatusType!",
       "name": "status",
       "url": "/hotel-x/reference/enums/bookstatustype",
-      "description": "Booking Status.",
+      "description": null,
+      "isDeprecated": false,
+      "args": null
+    },
+    {
+      "typeString": "String",
+      "name": "billingSupplierCode",
+      "url": "/hotel-x/reference/scalars/string",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -63,7 +79,7 @@
       "typeString": "String",
       "name": "payable",
       "url": "/hotel-x/reference/scalars/string",
-      "description": "Payable.",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -71,7 +87,7 @@
       "typeString": "AddOns",
       "name": "addOns",
       "url": "/hotel-x/reference/objects/addons",
-      "description": "Additional information about the option",
+      "description": null,
       "isDeprecated": false,
       "args": null
     }
@@ -79,12 +95,12 @@
   "requireby": [
     {
       "name": "HotelBookPayload",
-      "description": "",
+      "description": null,
       "url": "/hotel-x/reference/objects/hotelbookpayload"
     },
     {
       "name": "HotelCancelDetail",
-      "description": "Contains information about cancel",
+      "description": null,
       "url": "/hotel-x/reference/objects/hotelcanceldetail"
     }
   ],
@@ -93,7 +109,6 @@
   "typename": "HotelBookingDetail",
   "hideGithubLink": true
 }
-Contains information about booking
 ## GraphQL schema definition
 
 {{% graphql-schema-type %}}

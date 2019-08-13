@@ -6,14 +6,14 @@
     {
       "typeString": "Int!",
       "name": "code",
-      "url": "/alertsx/reference/scalars/int",
+      "url": "/alerts-x/reference/scalars/int",
       "description": null,
       "args": null
     },
     {
       "typeString": "Boolean!",
       "name": "isInclusive",
-      "url": "/alertsx/reference/scalars/boolean",
+      "url": "/alerts-x/reference/scalars/boolean",
       "description": null,
       "args": null
     }

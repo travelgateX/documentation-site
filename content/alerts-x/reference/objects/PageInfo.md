@@ -6,7 +6,7 @@
     {
       "typeString": "Boolean!",
       "name": "hasNextPage",
-      "url": "/alertsx/reference/scalars/boolean",
+      "url": "/alerts-x/reference/scalars/boolean",
       "description": null,
       "isDeprecated": false,
       "args": null
@@ -14,7 +14,7 @@
     {
       "typeString": "Boolean!",
       "name": "hasPreviousPage",
-      "url": "/alertsx/reference/scalars/boolean",
+      "url": "/alerts-x/reference/scalars/boolean",
       "description": null,
       "isDeprecated": false,
       "args": null
@@ -22,7 +22,7 @@
     {
       "typeString": "String!",
       "name": "startCursor",
-      "url": "/alertsx/reference/scalars/string",
+      "url": "/alerts-x/reference/scalars/string",
       "description": null,
       "isDeprecated": false,
       "args": null
@@ -30,7 +30,7 @@
     {
       "typeString": "String!",
       "name": "endCursor",
-      "url": "/alertsx/reference/scalars/string",
+      "url": "/alerts-x/reference/scalars/string",
       "description": null,
       "isDeprecated": false,
       "args": null
@@ -40,67 +40,82 @@
     {
       "name": "AlertConnection",
       "description": "Alert list",
-      "url": "/alertsx/reference/objects/alertconnection"
+      "url": "/alerts-x/reference/objects/alertconnection"
     },
     {
       "name": "EventConnection",
       "description": "Events list",
-      "url": "/alertsx/reference/objects/eventconnection"
+      "url": "/alerts-x/reference/objects/eventconnection"
     },
     {
       "name": "GroupConnection",
       "description": null,
-      "url": "/alertsx/reference/objects/groupconnection"
+      "url": "/alerts-x/reference/objects/groupconnection"
     },
     {
       "name": "RoleConnection",
       "description": null,
-      "url": "/alertsx/reference/objects/roleconnection"
+      "url": "/alerts-x/reference/objects/roleconnection"
     },
     {
       "name": "MemberConnection",
       "description": null,
-      "url": "/alertsx/reference/objects/memberconnection"
+      "url": "/alerts-x/reference/objects/memberconnection"
     },
     {
       "name": "APIConnection",
       "description": null,
-      "url": "/alertsx/reference/objects/apiconnection"
+      "url": "/alerts-x/reference/objects/apiconnection"
     },
     {
       "name": "ManagedGroupConnection",
       "description": null,
-      "url": "/alertsx/reference/objects/managedgroupconnection"
+      "url": "/alerts-x/reference/objects/managedgroupconnection"
     },
     {
       "name": "AccessConnection",
       "description": null,
-      "url": "/alertsx/reference/objects/accessconnection"
+      "url": "/alerts-x/reference/objects/accessconnection"
     },
     {
       "name": "SupplierConnection",
       "description": null,
-      "url": "/alertsx/reference/objects/supplierconnection"
+      "url": "/alerts-x/reference/objects/supplierconnection"
     },
     {
       "name": "ClientConnection",
       "description": null,
-      "url": "/alertsx/reference/objects/clientconnection"
+      "url": "/alerts-x/reference/objects/clientconnection"
+    },
+    {
+      "name": "ProfileConnection",
+      "description": null,
+      "url": "/alerts-x/reference/objects/profileconnection"
     },
     {
       "name": "ResourceConnection",
       "description": null,
-      "url": "/alertsx/reference/objects/resourceconnection"
+      "url": "/alerts-x/reference/objects/resourceconnection"
     },
     {
       "name": "OperationConnection",
       "description": null,
-      "url": "/alertsx/reference/objects/operationconnection"
+      "url": "/alerts-x/reference/objects/operationconnection"
     },
     {
       "name": "ProductConnection",
       "description": null,
-      "url": "/alertsx/reference/objects/productconnection"
+      "url": "/alerts-x/reference/objects/productconnection"
+    },
+    {
+      "name": "MacroPermissionsConnection",
+      "description": null,
+      "url": "/alerts-x/reference/objects/macropermissionsconnection"
+    },
+    {
+      "name": "EntityConnection",
+      "description": null,
+      "url": "/alerts-x/reference/objects/entityconnection"
     }
   ],
   "enumValues": null,

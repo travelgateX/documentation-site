@@ -6,20 +6,20 @@
   "requireby": [
     {
       "name": "Supplement",
-      "description": "Supplement that it can be or its already added to the option returned. Contains all the information about the supplement.",
+      "description": null,
       "url": "/hotel-x/reference/objects/supplement"
     }
   ],
   "enumValues": [
     {
       "name": "DAY",
-      "description": "Day",
+      "description": null,
       "isDeprecated": false,
       "deprecationReason": null
     },
     {
       "name": "HOUR",
-      "description": "Hour",
+      "description": null,
       "isDeprecated": false,
       "deprecationReason": null
     }
@@ -28,7 +28,6 @@
   "typename": "UnitTimeType",
   "hideGithubLink": true
 }
-Unit Time Type
 ## GraphQL schema definition
 
 {{% graphql-schema-enum %}}

@@ -6,7 +6,7 @@
     {
       "typeString": "Group",
       "name": "node",
-      "url": "/alertsx/reference/objects/group",
+      "url": "/alerts-x/reference/objects/group",
       "description": null,
       "isDeprecated": false,
       "args": null
@@ -14,7 +14,7 @@
     {
       "typeString": "String!",
       "name": "cursor",
-      "url": "/alertsx/reference/scalars/string",
+      "url": "/alerts-x/reference/scalars/string",
       "description": null,
       "isDeprecated": false,
       "args": null
@@ -24,7 +24,7 @@
     {
       "name": "GroupConnection",
       "description": null,
-      "url": "/alertsx/reference/objects/groupconnection"
+      "url": "/alerts-x/reference/objects/groupconnection"
     }
   ],
   "enumValues": null,

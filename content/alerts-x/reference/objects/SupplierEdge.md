@@ -6,7 +6,7 @@
     {
       "typeString": "Supplier",
       "name": "node",
-      "url": "/alertsx/reference/objects/supplier",
+      "url": "/alerts-x/reference/objects/supplier",
       "description": null,
       "isDeprecated": false,
       "args": null
@@ -14,7 +14,7 @@
     {
       "typeString": "String!",
       "name": "cursor",
-      "url": "/alertsx/reference/scalars/string",
+      "url": "/alerts-x/reference/scalars/string",
       "description": null,
       "isDeprecated": false,
       "args": null
@@ -24,7 +24,7 @@
     {
       "name": "SupplierConnection",
       "description": null,
-      "url": "/alertsx/reference/objects/supplierconnection"
+      "url": "/alerts-x/reference/objects/supplierconnection"
     }
   ],
   "enumValues": null,

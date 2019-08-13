@@ -7,33 +7,33 @@
       "typeString": "Int!",
       "name": "search",
       "url": "/hotel-x/reference/scalars/int",
-      "description": "Milliseconds before the search connection is closed.",
+      "description": null,
       "args": null
     },
     {
       "typeString": "Int!",
       "name": "quote",
       "url": "/hotel-x/reference/scalars/int",
-      "description": "Milliseconds before the quote connection is closed.",
+      "description": null,
       "args": null
     },
     {
       "typeString": "Int!",
       "name": "book",
       "url": "/hotel-x/reference/scalars/int",
-      "description": "Milliseconds before the book connection is closed.",
+      "description": null,
       "args": null
     }
   ],
   "requireby": [
     {
       "name": "HotelXDefaultSettingsDataInput",
-      "description": "",
+      "description": null,
       "url": "/hotel-x/reference/inputobjects/hotelxdefaultsettingsdatainput"
     },
     {
       "name": "HotelXCommonSettingsDataInput",
-      "description": "",
+      "description": null,
       "url": "/hotel-x/reference/inputobjects/hotelxcommonsettingsdatainput"
     }
   ],

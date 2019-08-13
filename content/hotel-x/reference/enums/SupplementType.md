@@ -6,56 +6,56 @@
   "requireby": [
     {
       "name": "Supplement",
-      "description": "Supplement that it can be or its already added to the option returned. Contains all the information about the supplement.",
+      "description": null,
       "url": "/hotel-x/reference/objects/supplement"
     }
   ],
   "enumValues": [
     {
       "name": "SKI_PASS",
-      "description": "A ticket or pass authorizing the holder to ski in a certain place or resort.",
+      "description": null,
       "isDeprecated": false,
       "deprecationReason": null
     },
     {
       "name": "LESSONS",
-      "description": "Lessons of any type that the costumer can take.",
+      "description": null,
       "isDeprecated": false,
       "deprecationReason": null
     },
     {
       "name": "MEALS",
-      "description": "Supplement of a determined meal plan.",
+      "description": null,
       "isDeprecated": false,
       "deprecationReason": null
     },
     {
       "name": "EQUIPMENT",
-      "description": "Extra equipment for a specific purpose.",
+      "description": null,
       "isDeprecated": false,
       "deprecationReason": null
     },
     {
       "name": "TICKET",
-      "description": "Admission to some service.",
+      "description": null,
       "isDeprecated": false,
       "deprecationReason": null
     },
     {
       "name": "TRANSFERS",
-      "description": "Transfers used by the costumer.",
+      "description": null,
       "isDeprecated": false,
       "deprecationReason": null
     },
     {
       "name": "GALA",
-      "description": "Gala: A festive occasion, celebration or special entertainment.",
+      "description": null,
       "isDeprecated": false,
       "deprecationReason": null
     },
     {
       "name": "ACTIVITY",
-      "description": "Activities that the costumer can do.",
+      "description": null,
       "isDeprecated": false,
       "deprecationReason": null
     }
@@ -64,7 +64,6 @@
   "typename": "SupplementType",
   "hideGithubLink": true
 }
-Supplement Type
 ## GraphQL schema definition
 
 {{% graphql-schema-enum %}}

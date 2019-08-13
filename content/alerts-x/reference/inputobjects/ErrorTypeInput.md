@@ -6,14 +6,14 @@
     {
       "typeString": "ErrorType!",
       "name": "code",
-      "url": "/alertsx/reference/enums/errortype",
+      "url": "/alerts-x/reference/enums/errortype",
       "description": null,
       "args": null
     },
     {
       "typeString": "Boolean!",
       "name": "isInclusive",
-      "url": "/alertsx/reference/scalars/boolean",
+      "url": "/alerts-x/reference/scalars/boolean",
       "description": null,
       "args": null
     }

@@ -7,26 +7,26 @@
       "typeString": "HotelXDefaultSettings",
       "name": "createDefaultSettings",
       "url": "/hotel-x/reference/objects/hotelxdefaultsettings",
-      "description": "Saves defaults settings to HotelX",
+      "description": null,
       "isDeprecated": false,
       "args": [
         {
           "typeString": "ID!",
           "name": "group",
           "url": "/hotel-x/reference/scalars/id",
-          "description": ""
+          "description": null
         },
         {
           "typeString": "ID",
           "name": "clientName",
           "url": "/hotel-x/reference/scalars/id",
-          "description": ""
+          "description": null
         },
         {
           "typeString": "HotelXDefaultSettingsDataInput!",
           "name": "settings",
           "url": "/hotel-x/reference/inputobjects/hotelxdefaultsettingsdatainput",
-          "description": ""
+          "description": null
         }
       ]
     },
@@ -34,26 +34,26 @@
       "typeString": "HotelXDefaultSettings",
       "name": "updateDefaultSettings",
       "url": "/hotel-x/reference/objects/hotelxdefaultsettings",
-      "description": "Updates defaults settings to HotelX",
+      "description": null,
       "isDeprecated": false,
       "args": [
         {
           "typeString": "ID!",
           "name": "group",
           "url": "/hotel-x/reference/scalars/id",
-          "description": ""
+          "description": null
         },
         {
           "typeString": "ID",
           "name": "clientName",
           "url": "/hotel-x/reference/scalars/id",
-          "description": ""
+          "description": null
         },
         {
           "typeString": "HotelXDefaultSettingsDataInput!",
           "name": "settings",
           "url": "/hotel-x/reference/inputobjects/hotelxdefaultsettingsdatainput",
-          "description": ""
+          "description": null
         }
       ]
     },
@@ -61,38 +61,38 @@
       "typeString": "HotelXUpdateStatus",
       "name": "updateStatus",
       "url": "/hotel-x/reference/objects/hotelxupdatestatus",
-      "description": "Updates status of an entity of HotelX",
+      "description": null,
       "isDeprecated": false,
       "args": [
         {
           "typeString": "ID!",
           "name": "group",
           "url": "/hotel-x/reference/scalars/id",
-          "description": ""
+          "description": null
         },
         {
           "typeString": "ID",
           "name": "access",
           "url": "/hotel-x/reference/scalars/id",
-          "description": ""
+          "description": null
         },
         {
           "typeString": "ID",
           "name": "supplier",
           "url": "/hotel-x/reference/scalars/id",
-          "description": ""
+          "description": null
         },
         {
           "typeString": "ID",
           "name": "clientName",
           "url": "/hotel-x/reference/scalars/id",
-          "description": ""
+          "description": null
         },
         {
           "typeString": "Boolean!",
           "name": "isActive",
           "url": "/hotel-x/reference/scalars/boolean",
-          "description": ""
+          "description": null
         }
       ]
     },
@@ -100,32 +100,32 @@
       "typeString": "HotelXCommonSettings",
       "name": "createCommonSettings",
       "url": "/hotel-x/reference/objects/hotelxcommonsettings",
-      "description": "",
+      "description": null,
       "isDeprecated": false,
       "args": [
         {
           "typeString": "ID!",
           "name": "group",
           "url": "/hotel-x/reference/scalars/id",
-          "description": ""
+          "description": null
         },
         {
           "typeString": "ID",
           "name": "access",
           "url": "/hotel-x/reference/scalars/id",
-          "description": ""
+          "description": null
         },
         {
           "typeString": "ID",
           "name": "supplier",
           "url": "/hotel-x/reference/scalars/id",
-          "description": ""
+          "description": null
         },
         {
           "typeString": "HotelXCommonSettingsDataInput!",
           "name": "settings",
           "url": "/hotel-x/reference/inputobjects/hotelxcommonsettingsdatainput",
-          "description": ""
+          "description": null
         }
       ]
     },
@@ -133,32 +133,32 @@
       "typeString": "HotelXCommonSettings",
       "name": "updateCommonSettings",
       "url": "/hotel-x/reference/objects/hotelxcommonsettings",
-      "description": "",
+      "description": null,
       "isDeprecated": false,
       "args": [
         {
           "typeString": "ID!",
           "name": "group",
           "url": "/hotel-x/reference/scalars/id",
-          "description": ""
+          "description": null
         },
         {
           "typeString": "ID",
           "name": "access",
           "url": "/hotel-x/reference/scalars/id",
-          "description": ""
+          "description": null
         },
         {
           "typeString": "ID",
           "name": "supplier",
           "url": "/hotel-x/reference/scalars/id",
-          "description": ""
+          "description": null
         },
         {
           "typeString": "HotelXCommonSettingsDataInput!",
           "name": "settings",
           "url": "/hotel-x/reference/inputobjects/hotelxcommonsettingsdatainput",
-          "description": ""
+          "description": null
         }
       ]
     },
@@ -166,26 +166,26 @@
       "typeString": "HotelBookPayload",
       "name": "book",
       "url": "/hotel-x/reference/objects/hotelbookpayload",
-      "description": "Creates a new hotel booking consisting of an option of 1 or more rooms.",
+      "description": null,
       "isDeprecated": false,
       "args": [
         {
           "typeString": "HotelBookInput!",
           "name": "input",
           "url": "/hotel-x/reference/inputobjects/hotelbookinput",
-          "description": ""
+          "description": null
         },
         {
           "typeString": "HotelSettingsInput",
           "name": "settings",
           "url": "/hotel-x/reference/inputobjects/hotelsettingsinput",
-          "description": ""
+          "description": null
         },
         {
           "typeString": "HotelXFilterInput",
           "name": "filter",
           "url": "/hotel-x/reference/inputobjects/hotelxfilterinput",
-          "description": ""
+          "description": null
         }
       ]
     },
@@ -193,26 +193,26 @@
       "typeString": "HotelCancelPayload",
       "name": "cancel",
       "url": "/hotel-x/reference/objects/hotelcancelpayload",
-      "description": "Cancels an existing hotel booking consisting of an option of 1 or more rooms.",
+      "description": null,
       "isDeprecated": false,
       "args": [
         {
           "typeString": "HotelCancelInput!",
           "name": "input",
           "url": "/hotel-x/reference/inputobjects/hotelcancelinput",
-          "description": ""
+          "description": null
         },
         {
           "typeString": "HotelSettingsInput",
           "name": "settings",
           "url": "/hotel-x/reference/inputobjects/hotelsettingsinput",
-          "description": ""
+          "description": null
         },
         {
           "typeString": "HotelXFilterInput",
           "name": "filter",
           "url": "/hotel-x/reference/inputobjects/hotelxfilterinput",
-          "description": ""
+          "description": null
         }
       ]
     },
@@ -220,14 +220,14 @@
       "typeString": "String!",
       "name": "loadFile",
       "url": "/hotel-x/reference/scalars/string",
-      "description": "",
+      "description": null,
       "isDeprecated": true,
       "args": [
         {
           "typeString": "String!",
           "name": "input",
           "url": "/hotel-x/reference/scalars/string",
-          "description": ""
+          "description": null
         }
       ],
       "deprecationReason": "",

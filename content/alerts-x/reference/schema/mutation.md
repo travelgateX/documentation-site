@@ -6,14 +6,14 @@
     {
       "typeString": "Alert",
       "name": "createAlert",
-      "url": "/alertsx/reference/objects/alert",
+      "url": "/alerts-x/reference/objects/alert",
       "description": "Mutation to create a new alert",
       "isDeprecated": false,
       "args": [
         {
           "typeString": "AlertInput!",
           "name": "input",
-          "url": "/alertsx/reference/inputobjects/alertinput",
+          "url": "/alerts-x/reference/inputobjects/alertinput",
           "description": null
         }
       ]
@@ -21,20 +21,20 @@
     {
       "typeString": "Alert",
       "name": "updateAlert",
-      "url": "/alertsx/reference/objects/alert",
+      "url": "/alerts-x/reference/objects/alert",
       "description": "Mutation to update an existing alert",
       "isDeprecated": false,
       "args": [
         {
           "typeString": "ID!",
           "name": "code",
-          "url": "/alertsx/reference/scalars/id",
+          "url": "/alerts-x/reference/scalars/id",
           "description": null
         },
         {
           "typeString": "AlertUpdateInput!",
           "name": "input",
-          "url": "/alertsx/reference/inputobjects/alertupdateinput",
+          "url": "/alerts-x/reference/inputobjects/alertupdateinput",
           "description": null
         }
       ]

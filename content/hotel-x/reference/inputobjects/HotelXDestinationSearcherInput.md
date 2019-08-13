@@ -7,21 +7,21 @@
       "typeString": "ID!",
       "name": "access",
       "url": "/hotel-x/reference/scalars/id",
-      "description": "Indicates the access",
+      "description": null,
       "args": null
     },
     {
       "typeString": "String!",
       "name": "text",
       "url": "/hotel-x/reference/scalars/string",
-      "description": "Search by hotel name or destination name",
+      "description": null,
       "args": null
     },
     {
       "typeString": "Int",
       "name": "maxSize",
       "url": "/hotel-x/reference/scalars/int",
-      "description": "Maxium number of items per type",
+      "description": null,
       "args": null
     }
   ],

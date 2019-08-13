@@ -7,7 +7,7 @@
       "typeString": "String!",
       "name": "supplierCode",
       "url": "/hotel-x/reference/scalars/string",
-      "description": "Supplier that offers this option.",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -15,7 +15,7 @@
       "typeString": "String!",
       "name": "accessCode",
       "url": "/hotel-x/reference/scalars/string",
-      "description": "Access code of this option.",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -23,7 +23,7 @@
       "typeString": "String!",
       "name": "id",
       "url": "/hotel-x/reference/scalars/string",
-      "description": "Indicates the id to be used on Quote as key",
+      "description": null,
       "isDeprecated": false,
       "args": null
     }

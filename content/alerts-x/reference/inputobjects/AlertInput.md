@@ -6,56 +6,56 @@
     {
       "typeString": "String",
       "name": "name",
-      "url": "/alertsx/reference/scalars/string",
+      "url": "/alerts-x/reference/scalars/string",
       "description": "Alert name",
       "args": null
     },
     {
       "typeString": "String",
       "name": "description",
-      "url": "/alertsx/reference/scalars/string",
+      "url": "/alerts-x/reference/scalars/string",
       "description": "Alert description",
       "args": null
     },
     {
       "typeString": "AlertConfigurationInputNoTraffic",
       "name": "configurationNoTraffic",
-      "url": "/alertsx/reference/inputobjects/alertconfigurationinputnotraffic",
+      "url": "/alerts-x/reference/inputobjects/alertconfigurationinputnotraffic",
       "description": "No traffic configuration ",
       "args": null
     },
     {
       "typeString": "AlertConfigurationInputErrorRate",
       "name": "configurationErrorRate",
-      "url": "/alertsx/reference/inputobjects/alertconfigurationinputerrorrate",
+      "url": "/alerts-x/reference/inputobjects/alertconfigurationinputerrorrate",
       "description": "Error rate configuration ",
       "args": null
     },
     {
       "typeString": "AlertConfigurationInputAverageTime",
       "name": "configurationAverageTime",
-      "url": "/alertsx/reference/inputobjects/alertconfigurationinputaveragetime",
+      "url": "/alerts-x/reference/inputobjects/alertconfigurationinputaveragetime",
       "description": "Average time configuration ",
       "args": null
     },
     {
       "typeString": "AlertConfigurationInputPeakTraffic",
       "name": "configurationPeakTraffic",
-      "url": "/alertsx/reference/inputobjects/alertconfigurationinputpeaktraffic",
+      "url": "/alerts-x/reference/inputobjects/alertconfigurationinputpeaktraffic",
       "description": "Peak traffic configuration ",
       "args": null
     },
     {
       "typeString": "Boolean!",
       "name": "isActive",
-      "url": "/alertsx/reference/scalars/boolean",
+      "url": "/alerts-x/reference/scalars/boolean",
       "description": "To set alert active or not",
       "args": null
     },
     {
       "typeString": "ID!",
       "name": "group",
-      "url": "/alertsx/reference/scalars/id",
+      "url": "/alerts-x/reference/scalars/id",
       "description": "Alert location group",
       "args": null
     }

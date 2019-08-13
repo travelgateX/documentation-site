@@ -7,7 +7,7 @@
     {
       "name": "DomainData",
       "description": null,
-      "url": "/alertsx/reference/objects/domaindata"
+      "url": "/alerts-x/reference/objects/domaindata"
     }
   ],
   "enumValues": null,

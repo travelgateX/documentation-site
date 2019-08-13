@@ -6,21 +6,21 @@
     {
       "typeString": "[ID]",
       "name": "accessID",
-      "url": "/alertsx/reference/scalars/id",
+      "url": "/alerts-x/reference/scalars/id",
       "description": null,
       "args": null
     },
     {
       "typeString": "[ID]",
       "name": "group",
-      "url": "/alertsx/reference/scalars/id",
+      "url": "/alerts-x/reference/scalars/id",
       "description": null,
       "args": null
     },
     {
       "typeString": "[ID!]",
       "name": "owner",
-      "url": "/alertsx/reference/scalars/id",
+      "url": "/alerts-x/reference/scalars/id",
       "description": null,
       "args": null
     }

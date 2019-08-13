@@ -7,7 +7,7 @@
       "typeString": "String!",
       "name": "code",
       "url": "/hotel-x/reference/scalars/string",
-      "description": "Specifies the promotion code.",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -15,7 +15,7 @@
       "typeString": "String",
       "name": "name",
       "url": "/hotel-x/reference/scalars/string",
-      "description": "Specifies the promotion name.",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -23,15 +23,47 @@
       "typeString": "Date",
       "name": "effectiveDate",
       "url": "/hotel-x/reference/scalars/date",
-      "description": "Promotion effective date.",
-      "isDeprecated": false,
-      "args": null
+      "description": null,
+      "isDeprecated": true,
+      "args": null,
+      "deprecationReason": "Incorrect date format.",
+      "descriptionSplitted": {
+        "date": "2018-02-28",
+        "first": "deprecated from",
+        "second": "Incorrect date format."
+      },
+      "deprecationDate": "2018-02-28",
+      "typeName": "Promotion"
     },
     {
       "typeString": "Date",
       "name": "expireDate",
       "url": "/hotel-x/reference/scalars/date",
-      "description": "Promotion expire date.",
+      "description": null,
+      "isDeprecated": true,
+      "args": null,
+      "deprecationReason": "Incorrect date format.",
+      "descriptionSplitted": {
+        "date": "2018-02-28",
+        "first": "deprecated from",
+        "second": "Incorrect date format."
+      },
+      "deprecationDate": "2018-02-28",
+      "typeName": "Promotion"
+    },
+    {
+      "typeString": "Date",
+      "name": "start",
+      "url": "/hotel-x/reference/scalars/date",
+      "description": null,
+      "isDeprecated": false,
+      "args": null
+    },
+    {
+      "typeString": "Date",
+      "name": "end",
+      "url": "/hotel-x/reference/scalars/date",
+      "description": null,
       "isDeprecated": false,
       "args": null
     }
@@ -42,7 +74,6 @@
   "typename": "Promotion",
   "hideGithubLink": true
 }
-Information about room promotions(offers).
 ## GraphQL schema definition
 
 {{% graphql-schema-type %}}

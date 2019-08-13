@@ -6,7 +6,7 @@
     {
       "typeString": "Member",
       "name": "node",
-      "url": "/alertsx/reference/objects/member",
+      "url": "/alerts-x/reference/objects/member",
       "description": null,
       "isDeprecated": false,
       "args": null
@@ -14,7 +14,7 @@
     {
       "typeString": "String!",
       "name": "cursor",
-      "url": "/alertsx/reference/scalars/string",
+      "url": "/alerts-x/reference/scalars/string",
       "description": null,
       "isDeprecated": false,
       "args": null
@@ -24,7 +24,7 @@
     {
       "name": "MemberConnection",
       "description": null,
-      "url": "/alertsx/reference/objects/memberconnection"
+      "url": "/alerts-x/reference/objects/memberconnection"
     }
   ],
   "enumValues": null,

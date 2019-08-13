@@ -7,28 +7,28 @@
       "typeString": "Int",
       "name": "first",
       "url": "/hotel-x/reference/scalars/int",
-      "description": "",
+      "description": null,
       "args": null
     },
     {
       "typeString": "Int",
       "name": "last",
       "url": "/hotel-x/reference/scalars/int",
-      "description": "",
+      "description": null,
       "args": null
     },
     {
       "typeString": "String",
       "name": "before",
       "url": "/hotel-x/reference/scalars/string",
-      "description": "",
+      "description": null,
       "args": null
     },
     {
       "typeString": "String",
       "name": "after",
       "url": "/hotel-x/reference/scalars/string",
-      "description": "",
+      "description": null,
       "args": null
     }
   ],

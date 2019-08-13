@@ -6,7 +6,7 @@
     {
       "typeString": "[ResourceEdge]",
       "name": "edges",
-      "url": "/alertsx/reference/objects/resourceedge",
+      "url": "/alerts-x/reference/objects/resourceedge",
       "description": null,
       "isDeprecated": false,
       "args": null
@@ -14,7 +14,7 @@
     {
       "typeString": "PageInfo!",
       "name": "pageInfo",
-      "url": "/alertsx/reference/objects/pageinfo",
+      "url": "/alerts-x/reference/objects/pageinfo",
       "description": null,
       "isDeprecated": false,
       "args": null
@@ -24,12 +24,12 @@
     {
       "name": "APIData",
       "description": null,
-      "url": "/alertsx/reference/objects/apidata"
+      "url": "/alerts-x/reference/objects/apidata"
     },
     {
       "name": "RoleData",
       "description": null,
-      "url": "/alertsx/reference/objects/roledata"
+      "url": "/alerts-x/reference/objects/roledata"
     }
   ],
   "enumValues": null,

@@ -6,77 +6,82 @@
   "requireby": [
     {
       "name": "HotelXHotelFilterInput",
-      "description": "By default: Logical AND on all given filters.",
+      "description": null,
       "url": "/hotel-x/reference/inputobjects/hotelxhotelfilterinput"
     },
     {
       "name": "HotelRuntimeConfiguration",
-      "description": "",
+      "description": null,
       "url": "/hotel-x/reference/objects/hotelruntimeconfiguration"
     },
     {
       "name": "Board",
-      "description": "Board type.",
+      "description": null,
       "url": "/hotel-x/reference/objects/board"
     },
     {
       "name": "Node",
-      "description": "",
+      "description": null,
       "url": "/hotel-x/reference/interfaces/node"
     },
     {
       "name": "Category",
-      "description": "Category Type",
+      "description": null,
       "url": "/hotel-x/reference/objects/category"
     },
     {
       "name": "Hotel",
-      "description": "Hotel Type",
+      "description": null,
       "url": "/hotel-x/reference/objects/hotel"
     },
     {
+      "name": "GiataData",
+      "description": null,
+      "url": "/hotel-x/reference/objects/giatadata"
+    },
+    {
       "name": "Media",
-      "description": "Contains media information.",
+      "description": null,
       "url": "/hotel-x/reference/objects/media"
     },
     {
       "name": "Airport",
-      "description": "Airport Type",
+      "description": null,
       "url": "/hotel-x/reference/objects/airport"
     },
     {
       "name": "Geoname",
-      "description": "Geoname type",
+      "description": null,
       "url": "/hotel-x/reference/objects/geoname"
     },
     {
       "name": "RoomStatic",
-      "description": "Room Type",
+      "description": null,
       "url": "/hotel-x/reference/objects/roomstatic"
     },
     {
       "name": "Destination",
-      "description": "Destination Type",
+      "description": null,
       "url": "/hotel-x/reference/objects/destination"
     },
     {
       "name": "AuditData",
-      "description": "Data sent and received in the supplier’s native format.",
+      "description": null,
       "url": "/hotel-x/reference/objects/auditdata"
     },
     {
       "name": "Stat",
-      "description": "",
+      "description": null,
       "url": "/hotel-x/reference/objects/stat"
     },
     {
       "name": "Transactions",
-      "description": "Supplier transaction",
+      "description": null,
       "url": "/hotel-x/reference/objects/transactions"
     },
     {
       "name": "HotelXUpdateStatus",
-      "description": "",
+      "description": null,
       "url": "/hotel-x/reference/objects/hotelxupdatestatus"
     }
   ],
@@ -85,8 +90,6 @@
   "typename": "DateTime",
   "hideGithubLink": true
 }
-The DateTime type represents DateTime values. A good example might be a transaction TimeSpan.
-In queries or mutations, DateTime fields have to be specified in ISO 8601 format with enclosing double quotes: "2017-10-22T13:57:31.123Z".
 ## GraphQL schema definition
 
 {{% graphql-schema-scalar %}}

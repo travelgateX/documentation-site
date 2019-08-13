@@ -6,7 +6,7 @@
     {
       "typeString": "ID!",
       "name": "id",
-      "url": "/alertsx/reference/scalars/id",
+      "url": "/alerts-x/reference/scalars/id",
       "description": null,
       "isDeprecated": false,
       "args": null
@@ -14,7 +14,7 @@
     {
       "typeString": "DomainName!",
       "name": "name",
-      "url": "/alertsx/reference/scalars/domainname",
+      "url": "/alerts-x/reference/scalars/domainname",
       "description": null,
       "isDeprecated": false,
       "args": null
@@ -22,7 +22,7 @@
     {
       "typeString": "Organization!",
       "name": "organization",
-      "url": "/alertsx/reference/objects/organization",
+      "url": "/alerts-x/reference/objects/organization",
       "description": null,
       "isDeprecated": false,
       "args": null
@@ -32,7 +32,7 @@
     {
       "name": "Domain",
       "description": null,
-      "url": "/alertsx/reference/objects/domain"
+      "url": "/alerts-x/reference/objects/domain"
     }
   ],
   "enumValues": null,

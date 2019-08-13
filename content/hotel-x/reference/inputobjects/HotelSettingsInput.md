@@ -7,102 +7,84 @@
       "typeString": "String",
       "name": "context",
       "url": "/hotel-x/reference/scalars/string",
-      "description": "Indicates the context of the I/O codes (hotel, board, room and rates)",
+      "description": null,
       "args": null
     },
     {
       "typeString": "Boolean",
       "name": "useContext",
       "url": "/hotel-x/reference/scalars/boolean",
-      "description": "Indicates if you want use context, or not, by default is true.\n@deprecated(reason: \"deprecated from 2017-12-12. Redundant.\")",
-      "isDeprecated": true,
-      "args": null,
-      "deprecationReason": "Redundant.",
-      "descriptionSplitted": {
-        "date": "2017-12-12",
-        "first": "Indicates if you want use context, or not, by default is true.\n@deprecated(reason: \"deprecated from",
-        "second": "Redundant.\")"
-      },
-      "deprecationDate": "2017-12-12",
-      "typeName": "HotelSettingsInput"
+      "description": null,
+      "args": null
     },
     {
       "typeString": "String",
       "name": "connectUser",
       "url": "/hotel-x/reference/scalars/string",
-      "description": " This field is occurs only if the authorization header is of the type JWT.. It is used to change the user that has been set by default in the preload.\n@deprecated(reason: \"deprecated from 2018-03-19. Redundant.\")",
-      "isDeprecated": true,
-      "args": null,
-      "deprecationReason": "Redundant.",
-      "descriptionSplitted": {
-        "date": "2018-03-19",
-        "first": " This field is occurs only if the authorization header is of the type JWT.. It is used to change the user that has been set by default in the preload.\n@deprecated(reason: \"deprecated from",
-        "second": "Redundant.\")"
-      },
-      "deprecationDate": "2018-03-19",
-      "typeName": "HotelSettingsInput"
+      "description": null,
+      "args": null
     },
     {
       "typeString": "ID",
       "name": "client",
       "url": "/hotel-x/reference/scalars/id",
-      "description": "Client name, this field is occurs only if the authorization header is of the type JWT.. It is used to change the user that has been set by default in the preload.",
+      "description": null,
       "args": null
     },
     {
       "typeString": "ID",
       "name": "group",
       "url": "/hotel-x/reference/scalars/id",
-      "description": "Group whose resources want to be used",
+      "description": null,
       "args": null
     },
     {
       "typeString": "Int",
       "name": "timeout",
       "url": "/hotel-x/reference/scalars/int",
-      "description": "Milliseconds before the connection is closed.",
+      "description": null,
       "args": null
     },
     {
       "typeString": "Boolean",
       "name": "auditTransactions",
       "url": "/hotel-x/reference/scalars/boolean",
-      "description": "Returns all the transactions exchanged with the supplier.",
+      "description": null,
       "args": null
     },
     {
       "typeString": "BusinessRulesInput",
       "name": "businessRules",
       "url": "/hotel-x/reference/inputobjects/businessrulesinput",
-      "description": "Business rules",
+      "description": null,
       "args": null
     },
     {
       "typeString": "[HotelXSupplierInput!]",
       "name": "suppliers",
       "url": "/hotel-x/reference/inputobjects/hotelxsupplierinput",
-      "description": "Array of suppliers. Each one contains its own code, settings and accesses.",
+      "description": null,
       "args": null
     },
     {
       "typeString": "[PluginStepInput!]",
       "name": "plugins",
       "url": "/hotel-x/reference/inputobjects/pluginstepinput",
-      "description": "Array of plugins to execute.",
+      "description": null,
       "args": null
     },
     {
       "typeString": "Boolean",
       "name": "testMode",
       "url": "/hotel-x/reference/scalars/boolean",
-      "description": "This flag allows only the accesses checked as test. By default is production.",
+      "description": null,
       "args": null
     },
     {
       "typeString": "[String!]",
       "name": "clientTokens",
       "url": "/hotel-x/reference/scalars/string",
-      "description": "Used to identify the origin of the request, this is only used in plugins. ",
+      "description": null,
       "args": null
     }
   ],
@@ -112,7 +94,6 @@
   "typename": "HotelSettingsInput",
   "hideGithubLink": true
 }
-Settings that you can edit for this avail. Values are loaded by default in our Back Office.
 ## GraphQL schema definition
 
 {{% graphql-schema-type %}}

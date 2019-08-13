@@ -7,7 +7,7 @@
     {
       "name": "EventData",
       "description": "Event data",
-      "url": "/alertsx/reference/objects/eventdata"
+      "url": "/alerts-x/reference/objects/eventdata"
     }
   ],
   "enumValues": [

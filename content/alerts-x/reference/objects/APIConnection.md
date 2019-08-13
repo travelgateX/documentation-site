@@ -6,7 +6,7 @@
     {
       "typeString": "[APIEdge]",
       "name": "edges",
-      "url": "/alertsx/reference/objects/apiedge",
+      "url": "/alerts-x/reference/objects/apiedge",
       "description": null,
       "isDeprecated": false,
       "args": null
@@ -14,7 +14,7 @@
     {
       "typeString": "PageInfo!",
       "name": "pageInfo",
-      "url": "/alertsx/reference/objects/pageinfo",
+      "url": "/alerts-x/reference/objects/pageinfo",
       "description": null,
       "isDeprecated": false,
       "args": null
@@ -24,27 +24,27 @@
     {
       "name": "GroupData",
       "description": null,
-      "url": "/alertsx/reference/objects/groupdata"
+      "url": "/alerts-x/reference/objects/groupdata"
     },
     {
       "name": "GroupCommonData",
       "description": null,
-      "url": "/alertsx/reference/interfaces/groupcommondata"
+      "url": "/alerts-x/reference/interfaces/groupcommondata"
     },
     {
       "name": "ResourceData",
       "description": null,
-      "url": "/alertsx/reference/objects/resourcedata"
+      "url": "/alerts-x/reference/objects/resourcedata"
     },
     {
       "name": "OrganizationData",
       "description": null,
-      "url": "/alertsx/reference/objects/organizationdata"
+      "url": "/alerts-x/reference/objects/organizationdata"
     },
     {
       "name": "ProductData",
       "description": null,
-      "url": "/alertsx/reference/objects/productdata"
+      "url": "/alerts-x/reference/objects/productdata"
     }
   ],
   "enumValues": null,

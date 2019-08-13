@@ -6,7 +6,7 @@
     {
       "typeString": "ID!",
       "name": "id",
-      "url": "/alertsx/reference/scalars/id",
+      "url": "/alerts-x/reference/scalars/id",
       "description": null,
       "isDeprecated": false,
       "args": null
@@ -14,7 +14,7 @@
     {
       "typeString": "ID!",
       "name": "code",
-      "url": "/alertsx/reference/scalars/id",
+      "url": "/alerts-x/reference/scalars/id",
       "description": null,
       "isDeprecated": false,
       "args": null
@@ -22,7 +22,7 @@
     {
       "typeString": "String",
       "name": "label",
-      "url": "/alertsx/reference/scalars/string",
+      "url": "/alerts-x/reference/scalars/string",
       "description": null,
       "isDeprecated": false,
       "args": null
@@ -30,38 +30,92 @@
     {
       "typeString": "APIConnection",
       "name": "apis",
-      "url": "/alertsx/reference/objects/apiconnection",
+      "url": "/alerts-x/reference/objects/apiconnection",
       "description": null,
       "isDeprecated": false,
       "args": [
         {
           "typeString": "[ID!]",
           "name": "codes",
-          "url": "/alertsx/reference/scalars/id",
+          "url": "/alerts-x/reference/scalars/id",
           "description": null
         },
         {
           "typeString": "Int",
           "name": "first",
-          "url": "/alertsx/reference/scalars/int",
+          "url": "/alerts-x/reference/scalars/int",
           "description": null
         },
         {
           "typeString": "Int",
           "name": "last",
-          "url": "/alertsx/reference/scalars/int",
+          "url": "/alerts-x/reference/scalars/int",
           "description": null
         },
         {
           "typeString": "String",
           "name": "before",
-          "url": "/alertsx/reference/scalars/string",
+          "url": "/alerts-x/reference/scalars/string",
           "description": null
         },
         {
           "typeString": "String",
           "name": "after",
-          "url": "/alertsx/reference/scalars/string",
+          "url": "/alerts-x/reference/scalars/string",
+          "description": null
+        }
+      ]
+    },
+    {
+      "typeString": "MacroPermissionsConnection",
+      "name": "macroPermissions",
+      "url": "/alerts-x/reference/objects/macropermissionsconnection",
+      "description": null,
+      "isDeprecated": false,
+      "args": [
+        {
+          "typeString": "[ID!]",
+          "name": "codes",
+          "url": "/alerts-x/reference/scalars/id",
+          "description": null
+        },
+        {
+          "typeString": "Int",
+          "name": "first",
+          "url": "/alerts-x/reference/scalars/int",
+          "description": null
+        },
+        {
+          "typeString": "Int",
+          "name": "last",
+          "url": "/alerts-x/reference/scalars/int",
+          "description": null
+        },
+        {
+          "typeString": "String",
+          "name": "before",
+          "url": "/alerts-x/reference/scalars/string",
+          "description": null
+        },
+        {
+          "typeString": "String",
+          "name": "after",
+          "url": "/alerts-x/reference/scalars/string",
+          "description": null
+        }
+      ]
+    },
+    {
+      "typeString": "[AdviseMessage!]",
+      "name": "adviseMessageCatalog",
+      "url": "/alerts-x/reference/objects/advisemessage",
+      "description": null,
+      "isDeprecated": false,
+      "args": [
+        {
+          "typeString": "[AdviseMessageLevel]",
+          "name": "level",
+          "url": "/alerts-x/reference/enums/advisemessagelevel",
           "description": null
         }
       ]
@@ -71,7 +125,7 @@
     {
       "name": "Product",
       "description": null,
-      "url": "/alertsx/reference/objects/product"
+      "url": "/alerts-x/reference/objects/product"
     }
   ],
   "enumValues": null,

@@ -6,7 +6,7 @@
     {
       "typeString": "Operation",
       "name": "node",
-      "url": "/alertsx/reference/objects/operation",
+      "url": "/alerts-x/reference/objects/operation",
       "description": null,
       "isDeprecated": false,
       "args": null
@@ -14,7 +14,7 @@
     {
       "typeString": "String!",
       "name": "cursor",
-      "url": "/alertsx/reference/scalars/string",
+      "url": "/alerts-x/reference/scalars/string",
       "description": null,
       "isDeprecated": false,
       "args": null
@@ -24,7 +24,7 @@
     {
       "name": "OperationConnection",
       "description": null,
-      "url": "/alertsx/reference/objects/operationconnection"
+      "url": "/alerts-x/reference/objects/operationconnection"
     }
   ],
   "enumValues": null,

@@ -6,7 +6,7 @@
     {
       "typeString": "ManagedGroup",
       "name": "node",
-      "url": "/alertsx/reference/objects/managedgroup",
+      "url": "/alerts-x/reference/objects/managedgroup",
       "description": null,
       "isDeprecated": false,
       "args": null
@@ -14,7 +14,7 @@
     {
       "typeString": "String!",
       "name": "cursor",
-      "url": "/alertsx/reference/scalars/string",
+      "url": "/alerts-x/reference/scalars/string",
       "description": null,
       "isDeprecated": false,
       "args": null
@@ -24,7 +24,7 @@
     {
       "name": "ManagedGroupConnection",
       "description": null,
-      "url": "/alertsx/reference/objects/managedgroupconnection"
+      "url": "/alerts-x/reference/objects/managedgroupconnection"
     }
   ],
   "enumValues": null,

@@ -6,7 +6,7 @@
     {
       "typeString": "API",
       "name": "node",
-      "url": "/alertsx/reference/objects/api",
+      "url": "/alerts-x/reference/objects/api",
       "description": null,
       "isDeprecated": false,
       "args": null
@@ -14,7 +14,7 @@
     {
       "typeString": "String!",
       "name": "cursor",
-      "url": "/alertsx/reference/scalars/string",
+      "url": "/alerts-x/reference/scalars/string",
       "description": null,
       "isDeprecated": false,
       "args": null
@@ -24,7 +24,7 @@
     {
       "name": "APIConnection",
       "description": null,
-      "url": "/alertsx/reference/objects/apiconnection"
+      "url": "/alerts-x/reference/objects/apiconnection"
     }
   ],
   "enumValues": null,

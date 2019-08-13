@@ -7,7 +7,7 @@
       "typeString": "Category",
       "name": "node",
       "url": "/hotel-x/reference/objects/category",
-      "description": "",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -15,7 +15,7 @@
       "typeString": "String!",
       "name": "cursor",
       "url": "/hotel-x/reference/scalars/string",
-      "description": "",
+      "description": null,
       "isDeprecated": false,
       "args": null
     }
@@ -23,7 +23,7 @@
   "requireby": [
     {
       "name": "CategoryConnection",
-      "description": "CategoryList definition",
+      "description": null,
       "url": "/hotel-x/reference/objects/categoryconnection"
     }
   ],
@@ -32,7 +32,6 @@
   "typename": "CategoryEdge",
   "hideGithubLink": true
 }
-CategoryList Edge definition
 ## GraphQL schema definition
 
 {{% graphql-schema-type %}}
