@@ -12,6 +12,11 @@ tags = ["products-changelog"]
 
 Easily accessible log of notable changes to Alerts-X
 
+## 2019-08-12
+{{% release-notes-container type="f"%}}
+- Error to update alerts in some cases.
+{{% /release-notes-container %}} 
+
 ## 2019-08-07
 {{% release-notes-container type="a"%}}
 - Now is Checked `api`, `operation` & `errorCode` inputs to be sure that exists or its combinations are posible.
