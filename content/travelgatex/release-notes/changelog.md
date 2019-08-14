@@ -6,6 +6,7 @@ weight = 2
 icon="fa-exchange"
 alwaysopen = false
 hidden = false
+outputs = [ "HTML", "ATOM"]
 +++
 
 To make it easier for users and contributors to see precisely what notable changes have been made on TravelgateX.

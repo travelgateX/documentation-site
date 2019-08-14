@@ -8,6 +8,7 @@ svgicon="https://media.graphcms.com/kDcxZmKCQx2oLNNfGvSz"
 alwaysopen = false
 hidden = false
 tags = ["products-changelog"]
+outputs = [ "HTML", "ATOM"]
 +++
 
 Easily accessible log of notable changes to Logging
