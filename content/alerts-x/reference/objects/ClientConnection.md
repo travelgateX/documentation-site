@@ -6,7 +6,7 @@
     {
       "typeString": "[ClientEdge]",
       "name": "edges",
-      "url": "/alertsx/reference/objects/clientedge",
+      "url": "/alerts-x/reference/objects/clientedge",
       "description": null,
       "isDeprecated": false,
       "args": null
@@ -14,7 +14,7 @@
     {
       "typeString": "PageInfo!",
       "name": "pageInfo",
-      "url": "/alertsx/reference/objects/pageinfo",
+      "url": "/alerts-x/reference/objects/pageinfo",
       "description": null,
       "isDeprecated": false,
       "args": null
@@ -24,22 +24,22 @@
     {
       "name": "GroupData",
       "description": null,
-      "url": "/alertsx/reference/objects/groupdata"
+      "url": "/alerts-x/reference/objects/groupdata"
     },
     {
       "name": "GroupCommonData",
       "description": null,
-      "url": "/alertsx/reference/interfaces/groupcommondata"
+      "url": "/alerts-x/reference/interfaces/groupcommondata"
     },
     {
       "name": "SupplierData",
       "description": null,
-      "url": "/alertsx/reference/objects/supplierdata"
+      "url": "/alerts-x/reference/objects/supplierdata"
     },
     {
       "name": "OrganizationData",
       "description": null,
-      "url": "/alertsx/reference/objects/organizationdata"
+      "url": "/alerts-x/reference/objects/organizationdata"
     }
   ],
   "enumValues": null,

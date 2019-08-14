@@ -6,7 +6,7 @@
     {
       "typeString": "String!",
       "name": "code",
-      "url": "/alertsx/reference/scalars/string",
+      "url": "/alerts-x/reference/scalars/string",
       "description": null,
       "isDeprecated": false,
       "args": null
@@ -14,7 +14,7 @@
     {
       "typeString": "String!",
       "name": "type",
-      "url": "/alertsx/reference/scalars/string",
+      "url": "/alerts-x/reference/scalars/string",
       "description": null,
       "isDeprecated": false,
       "args": null
@@ -22,7 +22,7 @@
     {
       "typeString": "String!",
       "name": "description",
-      "url": "/alertsx/reference/scalars/string",
+      "url": "/alerts-x/reference/scalars/string",
       "description": null,
       "isDeprecated": false,
       "args": null

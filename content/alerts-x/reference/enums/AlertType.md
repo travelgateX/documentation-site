@@ -7,7 +7,7 @@
     {
       "name": "AlertConfiguration",
       "description": null,
-      "url": "/alertsx/reference/objects/alertconfiguration"
+      "url": "/alerts-x/reference/objects/alertconfiguration"
     }
   ],
   "enumValues": [

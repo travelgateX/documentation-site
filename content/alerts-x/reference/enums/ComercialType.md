@@ -5,9 +5,14 @@
   "fields": null,
   "requireby": [
     {
+      "name": "AlertConfiguration",
+      "description": null,
+      "url": "/alerts-x/reference/objects/alertconfiguration"
+    },
+    {
       "name": "AlertGroupInput",
       "description": null,
-      "url": "/alertsx/reference/inputobjects/alertgroupinput"
+      "url": "/alerts-x/reference/inputobjects/alertgroupinput"
     }
   ],
   "enumValues": [

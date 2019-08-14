@@ -7,17 +7,17 @@
     {
       "name": "GroupData",
       "description": null,
-      "url": "/alertsx/reference/objects/groupdata"
+      "url": "/alerts-x/reference/objects/groupdata"
     },
     {
       "name": "GroupCommonData",
       "description": null,
-      "url": "/alertsx/reference/interfaces/groupcommondata"
+      "url": "/alerts-x/reference/interfaces/groupcommondata"
     },
     {
       "name": "OrganizationData",
       "description": null,
-      "url": "/alertsx/reference/objects/organizationdata"
+      "url": "/alerts-x/reference/objects/organizationdata"
     }
   ],
   "enumValues": [

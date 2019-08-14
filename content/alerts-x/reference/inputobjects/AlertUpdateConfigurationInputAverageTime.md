@@ -6,140 +6,147 @@
     {
       "typeString": "Int",
       "name": "historicalWindow",
-      "url": "/alertsx/reference/scalars/int",
+      "url": "/alerts-x/reference/scalars/int",
       "description": "The timeframe in minutes",
       "args": null
     },
     {
       "typeString": "Int",
       "name": "offset",
-      "url": "/alertsx/reference/scalars/int",
+      "url": "/alerts-x/reference/scalars/int",
       "description": "Time frame in minutes to set the beginning of historicalWindow",
       "args": null
     },
     {
       "typeString": "Int",
       "name": "max_average",
-      "url": "/alertsx/reference/scalars/int",
+      "url": "/alerts-x/reference/scalars/int",
       "description": "maximum average time allowed in miliseconds",
       "args": null
     },
     {
       "typeString": "Int",
       "name": "periodicity",
-      "url": "/alertsx/reference/scalars/int",
+      "url": "/alerts-x/reference/scalars/int",
       "description": "Frequency of time in minutes in which the alert will be reviewed",
       "args": null
     },
     {
       "typeString": "Int",
       "name": "window",
-      "url": "/alertsx/reference/scalars/int",
+      "url": "/alerts-x/reference/scalars/int",
       "description": "The time frame in minutes",
       "args": null
     },
     {
       "typeString": "Int",
       "name": "timesToAlert",
-      "url": "/alertsx/reference/scalars/int",
+      "url": "/alerts-x/reference/scalars/int",
       "description": "The number of times the alert must be triggered in order to notify",
       "args": null
     },
     {
       "typeString": "Boolean",
       "name": "noRecoveries",
-      "url": "/alertsx/reference/scalars/boolean",
+      "url": "/alerts-x/reference/scalars/boolean",
       "description": "To allow recoveries notifications",
       "args": null
     },
     {
       "typeString": "Boolean",
       "name": "stateChangesOnly",
-      "url": "/alertsx/reference/scalars/boolean",
+      "url": "/alerts-x/reference/scalars/boolean",
       "description": "To allow notifications only if the status change",
       "args": null
     },
     {
       "typeString": "Int",
       "name": "minNumberRequests",
-      "url": "/alertsx/reference/scalars/int",
+      "url": "/alerts-x/reference/scalars/int",
       "description": "OPTION 1: defines the minimum number of requests must be in our historical Data before cheking the alert. \nOPTION 2: defines the minimum number of requests must be in the window time frame to check the alert.",
       "args": null
     },
     {
       "typeString": "Int",
       "name": "percentageToAlert",
-      "url": "/alertsx/reference/scalars/int",
+      "url": "/alerts-x/reference/scalars/int",
       "description": "Defines the minimum percentage to consider alert in status ALERTING.\nOPTION 1: Average time difference between window and historical window will be used to calculate the percentage and compared with the minimum percentage set.\nOPTION 2: Average time difference between window and max_average value field will be used to calculate the percetage and compared with the minimum percentage set.\nOPTION 3: Average time difference between Requests and max_average value field will be used to calculate the percetage and compared with the minimum percentage set.",
       "args": null
     },
     {
       "typeString": "[EmailInput]",
       "name": "email",
-      "url": "/alertsx/reference/inputobjects/emailinput",
+      "url": "/alerts-x/reference/inputobjects/emailinput",
       "description": "Email addresses to send notifications",
       "args": null
     },
     {
       "typeString": "[HubStatusInput!]",
       "name": "hubStatus",
-      "url": "/alertsx/reference/inputobjects/hubstatusinput",
+      "url": "/alerts-x/reference/inputobjects/hubstatusinput",
       "description": "Possibility to filter traffic by hubStatus",
       "args": null
     },
     {
       "typeString": "[ErrorCodeInput!]",
       "name": "errorCode",
-      "url": "/alertsx/reference/inputobjects/errorcodeinput",
+      "url": "/alerts-x/reference/inputobjects/errorcodeinput",
       "description": "Possibility to filter traffic by errorCodes",
       "args": null
     },
     {
       "typeString": "[ErrorTypeInput!]",
       "name": "errorType",
-      "url": "/alertsx/reference/inputobjects/errortypeinput",
+      "url": "/alerts-x/reference/inputobjects/errortypeinput",
       "description": "Possibility to filter traffic by errorTypes",
       "args": null
     },
     {
       "typeString": "[AlertObjectInput!]",
       "name": "supplier",
-      "url": "/alertsx/reference/inputobjects/alertobjectinput",
-      "description": "Possibility to filter traffic by suppliers (hub provider)",
+      "url": "/alerts-x/reference/inputobjects/alertobjectinput",
+      "description": "Possibility to filter traffic by suppliers",
       "args": null
     },
     {
       "typeString": "[AlertObjectInput!]",
       "name": "client",
-      "url": "/alertsx/reference/inputobjects/alertobjectinput",
-      "description": "Possibility to filter traffic by clients (hub user)",
+      "url": "/alerts-x/reference/inputobjects/alertobjectinput",
+      "description": "Possibility to filter traffic by clients",
       "args": null
     },
     {
       "typeString": "[AlertGroupInput!]",
       "name": "group",
-      "url": "/alertsx/reference/inputobjects/alertgroupinput",
+      "url": "/alerts-x/reference/inputobjects/alertgroupinput",
       "description": "Must filter traffic by group. Only PRODUCT group type is allowed",
       "args": null
     },
     {
       "typeString": "[AlertObjectInput!]",
       "name": "access",
-      "url": "/alertsx/reference/inputobjects/alertobjectinput",
+      "url": "/alerts-x/reference/inputobjects/alertobjectinput",
       "description": "Possibility to filter traffic by accesses",
       "args": null
     },
     {
       "typeString": "[AlertObjectInput!]",
       "name": "operation",
-      "url": "/alertsx/reference/inputobjects/alertobjectinput",
+      "url": "/alerts-x/reference/inputobjects/alertobjectinput",
       "description": "Possibility to filter traffic by operations",
+      "args": null
+    },
+    {
+      "typeString": "[AlertObjectInput!]",
+      "name": "api",
+      "url": "/alerts-x/reference/inputobjects/alertobjectinput",
+      "description": "Possibility to filter traffic by apis",
       "args": null
     },
     {
       "typeString": "[AlertGroups!]",
       "name": "groupBy",
-      "url": "/alertsx/reference/enums/alertgroups",
+      "url": "/alerts-x/reference/enums/alertgroups",
       "description": "Possibility to group by traffic and calculate its parameters separately ",
       "args": null
     }
@@ -148,7 +155,7 @@
     {
       "name": "AlertUpdateInput",
       "description": null,
-      "url": "/alertsx/reference/inputobjects/alertupdateinput"
+      "url": "/alerts-x/reference/inputobjects/alertupdateinput"
     }
   ],
   "enumValues": null,

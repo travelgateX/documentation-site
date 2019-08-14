@@ -7,28 +7,28 @@
       "typeString": "String!",
       "name": "accessCode",
       "url": "/hotel-x/reference/scalars/string",
-      "description": "The name of the access to use in the request.",
+      "description": null,
       "args": null
     },
     {
       "typeString": "Language",
       "name": "language",
       "url": "/hotel-x/reference/scalars/language",
-      "description": "The language code.",
+      "description": null,
       "args": null
     },
     {
       "typeString": "String!",
       "name": "hotelCode",
       "url": "/hotel-x/reference/scalars/string",
-      "description": "The hotel code.",
+      "description": null,
       "args": null
     },
     {
       "typeString": "BookReferenceInput!",
       "name": "reference",
       "url": "/hotel-x/reference/inputobjects/bookreferenceinput",
-      "description": "Contains the client reference and/or supplier reference.\nOne of them is mandatory.",
+      "description": null,
       "args": null
     }
   ],
@@ -38,7 +38,6 @@
   "typename": "HotelCancelInput",
   "hideGithubLink": true
 }
-Cancellation Criteria.
 ## GraphQL schema definition
 
 {{% graphql-schema-type %}}

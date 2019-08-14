@@ -7,7 +7,7 @@
       "typeString": "ID!",
       "name": "code",
       "url": "/hotel-x/reference/scalars/id",
-      "description": "Internal code for checking availability",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -15,7 +15,7 @@
       "typeString": "String!",
       "name": "roomCode",
       "url": "/hotel-x/reference/scalars/string",
-      "description": "Code of the hotel in the Supplier selected",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -23,22 +23,38 @@
       "typeString": "[Text!]",
       "name": "texts",
       "url": "/hotel-x/reference/objects/text",
-      "description": "Label",
+      "description": null,
       "isDeprecated": false,
       "args": [
         {
           "typeString": "[Language!]",
           "name": "languages",
           "url": "/hotel-x/reference/scalars/language",
-          "description": ""
+          "description": null
         }
       ]
+    },
+    {
+      "typeString": "String",
+      "name": "source",
+      "url": "/hotel-x/reference/scalars/string",
+      "description": null,
+      "isDeprecated": false,
+      "args": null
+    },
+    {
+      "typeString": "OccupancyStatic",
+      "name": "occupancies",
+      "url": "/hotel-x/reference/objects/occupancystatic",
+      "description": null,
+      "isDeprecated": false,
+      "args": null
     }
   ],
   "requireby": [
     {
       "name": "RoomStatic",
-      "description": "Room Type",
+      "description": null,
       "url": "/hotel-x/reference/objects/roomstatic"
     }
   ],
@@ -47,7 +63,6 @@
   "typename": "RoomData",
   "hideGithubLink": true
 }
-Room data
 ## GraphQL schema definition
 
 {{% graphql-schema-type %}}

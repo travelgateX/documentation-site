@@ -7,7 +7,7 @@
       "typeString": "ID!",
       "name": "code",
       "url": "/hotel-x/reference/scalars/id",
-      "description": "",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -15,7 +15,7 @@
       "typeString": "Boolean!",
       "name": "isActive",
       "url": "/hotel-x/reference/scalars/boolean",
-      "description": "",
+      "description": null,
       "isDeprecated": false,
       "args": null
     }
@@ -23,7 +23,7 @@
   "requireby": [
     {
       "name": "HotelXUpdateStatus",
-      "description": "",
+      "description": null,
       "url": "/hotel-x/reference/objects/hotelxupdatestatus"
     }
   ],

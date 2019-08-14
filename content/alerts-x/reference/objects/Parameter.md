@@ -6,7 +6,7 @@
     {
       "typeString": "ID!",
       "name": "key",
-      "url": "/alertsx/reference/scalars/id",
+      "url": "/alerts-x/reference/scalars/id",
       "description": null,
       "isDeprecated": false,
       "args": null
@@ -14,7 +14,7 @@
     {
       "typeString": "String!",
       "name": "value",
-      "url": "/alertsx/reference/scalars/string",
+      "url": "/alerts-x/reference/scalars/string",
       "description": null,
       "isDeprecated": false,
       "args": null
@@ -24,7 +24,7 @@
     {
       "name": "AccessData",
       "description": null,
-      "url": "/alertsx/reference/objects/accessdata"
+      "url": "/alerts-x/reference/objects/accessdata"
     }
   ],
   "enumValues": null,

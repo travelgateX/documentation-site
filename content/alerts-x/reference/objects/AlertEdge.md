@@ -6,7 +6,7 @@
     {
       "typeString": "Alert",
       "name": "node",
-      "url": "/alertsx/reference/objects/alert",
+      "url": "/alerts-x/reference/objects/alert",
       "description": null,
       "isDeprecated": false,
       "args": null
@@ -14,7 +14,7 @@
     {
       "typeString": "String!",
       "name": "cursor",
-      "url": "/alertsx/reference/scalars/string",
+      "url": "/alerts-x/reference/scalars/string",
       "description": null,
       "isDeprecated": false,
       "args": null
@@ -24,7 +24,7 @@
     {
       "name": "AlertConnection",
       "description": "Alert list",
-      "url": "/alertsx/reference/objects/alertconnection"
+      "url": "/alerts-x/reference/objects/alertconnection"
     }
   ],
   "enumValues": null,

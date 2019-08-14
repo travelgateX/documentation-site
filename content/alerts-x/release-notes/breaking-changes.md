@@ -13,4 +13,16 @@
 
 {{% alert theme="info" %}}Changes history of deprecated notes previously announced{{% /alert %}}
 
-### No deletions to date
+### Unreleased
+{{% release-notes-container type="u"%}}
+- Removal of `type` from `AdviseMessage`. Reason: .  Deprecated on 2018-06-01.**To be removed soon**.
+{{% / release-notes-container %}}
+### 2019-08-13
+{{% release-notes-container type="r"%}}
+- Removed `type` from `AdviseMessage`. Reason: . Deprecated on 2018-06-01 .
+{{% / release-notes-container %}}
+### 2018-06-01
+{{% release-notes-container type="d"%}}
+- Deprecated `type` from `AdviseMessage`. Reason: . Finally removed on 2019-08-13 .
+- Deprecated `type` from `AdviseMessage`. Reason: . Expected removal on 2018-08-30 .
+{{% / release-notes-container %}}

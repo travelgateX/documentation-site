@@ -7,35 +7,35 @@
       "typeString": "PluginStepType!",
       "name": "step",
       "url": "/hotel-x/reference/enums/pluginsteptype",
-      "description": "",
+      "description": null,
       "args": null
     },
     {
       "typeString": "PluginType!",
       "name": "type",
       "url": "/hotel-x/reference/enums/plugintype",
-      "description": "",
+      "description": null,
       "args": null
     },
     {
       "typeString": "String!",
       "name": "name",
       "url": "/hotel-x/reference/scalars/string",
-      "description": "",
+      "description": null,
       "args": null
     },
     {
       "typeString": "[ParameterInput!]",
       "name": "run",
       "url": "/hotel-x/reference/inputobjects/parameterinput",
-      "description": "",
+      "description": null,
       "args": null
     },
     {
       "typeString": "[ParameterInput!]",
       "name": "init",
       "url": "/hotel-x/reference/inputobjects/parameterinput",
-      "description": "",
+      "description": null,
       "args": null
     }
   ],

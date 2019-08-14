@@ -24,18 +24,6 @@
       "deprecationReason": null
     },
     {
-      "name": "SUPPLIER_EXTERNAL",
-      "description": null,
-      "isDeprecated": false,
-      "deprecationReason": null
-    },
-    {
-      "name": "XTG",
-      "description": null,
-      "isDeprecated": false,
-      "deprecationReason": null
-    },
-    {
       "name": "OPERATION",
       "description": null,
       "isDeprecated": false,

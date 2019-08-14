@@ -6,7 +6,7 @@
     {
       "typeString": "ID!",
       "name": "code",
-      "url": "/alertsx/reference/scalars/id",
+      "url": "/alerts-x/reference/scalars/id",
       "description": null,
       "isDeprecated": false,
       "args": null
@@ -14,7 +14,7 @@
     {
       "typeString": "String!",
       "name": "type",
-      "url": "/alertsx/reference/scalars/string",
+      "url": "/alerts-x/reference/scalars/string",
       "description": null,
       "isDeprecated": true,
       "args": null,
@@ -30,7 +30,7 @@
     {
       "typeString": "String!",
       "name": "description",
-      "url": "/alertsx/reference/scalars/string",
+      "url": "/alerts-x/reference/scalars/string",
       "description": null,
       "isDeprecated": false,
       "args": null
@@ -38,7 +38,7 @@
     {
       "typeString": "AdviseMessageLevel!",
       "name": "level",
-      "url": "/alertsx/reference/enums/advisemessagelevel",
+      "url": "/alerts-x/reference/enums/advisemessagelevel",
       "description": null,
       "isDeprecated": false,
       "args": null
@@ -46,7 +46,7 @@
     {
       "typeString": "ExternalMessage",
       "name": "external",
-      "url": "/alertsx/reference/objects/externalmessage",
+      "url": "/alerts-x/reference/objects/externalmessage",
       "description": null,
       "isDeprecated": false,
       "args": null
@@ -54,7 +54,7 @@
     {
       "typeString": "ID!",
       "name": "correlationID",
-      "url": "/alertsx/reference/scalars/id",
+      "url": "/alerts-x/reference/scalars/id",
       "description": null,
       "isDeprecated": false,
       "args": null

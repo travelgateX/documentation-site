@@ -16,18 +16,75 @@
 ### Unreleased
 {{% release-notes-container type="u"%}}
 - Removal of `loadFile` from `HotelXMutation`. Reason: .  Deprecated on 2018-06-06.**To be removed soon**.
-- Removal of `useContext` from `HotelSettingsInput`. Reason: Redundant..  Deprecated on 2017-12-12.**To be removed soon**.
-- Removal of `connectUser` from `HotelSettingsInput`. Reason: Redundant..  Deprecated on 2018-03-19.**To be removed soon**.
 - Removal of `distribute` from `AddOns`. Reason: You can find it in distribution AddOn.  Deprecated on 2018-05-21.**To be removed soon**.
 - Removal of `type` from `AdviseMessage`. Reason: .  Deprecated on 2018-06-01.**To be removed soon**.
+- Removal of `creationDate` from `BookingHotel`. Reason: Incorrect date format..  Deprecated on 2018-02-28.**To be removed soon**.
+- Removal of `checkIn` from `BookingHotel`. Reason: Incorrect date format..  Deprecated on 2018-02-28.**To be removed soon**.
+- Removal of `checkOut` from `BookingHotel`. Reason: Incorrect date format..  Deprecated on 2018-02-28.**To be removed soon**.
+- Removal of `effectiveDate` from `PriceBreakdown`. Reason: Incorrect date format..  Deprecated on 2018-02-28.**To be removed soon**.
+- Removal of `expireDate` from `PriceBreakdown`. Reason: Incorrect date format..  Deprecated on 2018-02-28.**To be removed soon**.
+- Removal of `effectiveDate` from `Promotion`. Reason: Incorrect date format..  Deprecated on 2018-02-28.**To be removed soon**.
+- Removal of `expireDate` from `Promotion`. Reason: Incorrect date format..  Deprecated on 2018-02-28.**To be removed soon**.
+- Removal of `effectiveDate` from `RatePlan`. Reason: Incorrect date format..  Deprecated on 2018-02-28.**To be removed soon**.
+- Removal of `expireDate` from `RatePlan`. Reason: Incorrect date format..  Deprecated on 2018-02-28.**To be removed soon**.
+- Removal of `effectiveDate` from `Supplement`. Reason: Incorrect date format..  Deprecated on 2018-02-28.**To be removed soon**.
+- Removal of `expireDate` from `Supplement`. Reason: Incorrect date format..  Deprecated on 2018-02-28.**To be removed soon**.
+- Removal of `token` from `HotelOptionSearch`. Reason: .  Deprecated on 2019-02-05.**To be removed soon**.
+- Removal of `description` from `Bed`. Reason: Deprecated from 2019-07-29.  Deprecated on 2019-07-29.Expected removal on 2019-10-27.
+- Removal of `error` from `Board`. Reason: Deprecated from 2019-07-03.  Deprecated on 2019-07-03.Expected removal on 2019-10-01.
+- Removal of `error` from `Category`. Reason: Deprecated from 2019-07-03.  Deprecated on 2019-07-03.Expected removal on 2019-10-01.
+- Removal of `error` from `Destination`. Reason: Deprecated from 2019-07-03.  Deprecated on 2019-07-03.Expected removal on 2019-10-01.
+- Removal of `error` from `Hotel`. Reason: Deprecated from 2019-07-03.  Deprecated on 2019-07-03.Expected removal on 2019-10-01.
+- Removal of `error` from `RoomStatic`. Reason: Deprecated from 2019-07-03.  Deprecated on 2019-07-03.Expected removal on 2019-10-01.
 {{% / release-notes-container %}}
-### 2019-06-27
+### 2019-08-13
+{{% release-notes-container type="r"%}}
+- Removed `loadFile` from `HotelXMutation`. Reason: . Deprecated on 2018-06-06 .
+- Removed `type` from `AdviseMessage`. Reason: . Deprecated on 2018-06-01 .
+- Removed `description` from `Bed`. Reason: Deprecated from 2019-07-29. Deprecated on 2019-07-29 .
+- Removed `error` from `Board`. Reason: Deprecated from 2019-07-03. Deprecated on 2019-07-03 .
+- Removed `error` from `Category`. Reason: Deprecated from 2019-07-03. Deprecated on 2019-07-03 .
+- Removed `error` from `Destination`. Reason: Deprecated from 2019-07-03. Deprecated on 2019-07-03 .
+- Removed `error` from `Hotel`. Reason: Deprecated from 2019-07-03. Deprecated on 2019-07-03 .
+- Removed `error` from `RoomStatic`. Reason: Deprecated from 2019-07-03. Deprecated on 2019-07-03 .
+- Removed `creationDate` from `BookingHotel`. Reason: Incorrect date format.. Deprecated on 2018-02-28 .
+- Removed `checkIn` from `BookingHotel`. Reason: Incorrect date format.. Deprecated on 2018-02-28 .
+- Removed `checkOut` from `BookingHotel`. Reason: Incorrect date format.. Deprecated on 2018-02-28 .
+- Removed `effectiveDate` from `PriceBreakdown`. Reason: Incorrect date format.. Deprecated on 2018-02-28 .
+- Removed `expireDate` from `PriceBreakdown`. Reason: Incorrect date format.. Deprecated on 2018-02-28 .
+- Removed `effectiveDate` from `Promotion`. Reason: Incorrect date format.. Deprecated on 2018-02-28 .
+- Removed `expireDate` from `Promotion`. Reason: Incorrect date format.. Deprecated on 2018-02-28 .
+- Removed `effectiveDate` from `RatePlan`. Reason: Incorrect date format.. Deprecated on 2018-02-28 .
+- Removed `expireDate` from `RatePlan`. Reason: Incorrect date format.. Deprecated on 2018-02-28 .
+- Removed `effectiveDate` from `Supplement`. Reason: Incorrect date format.. Deprecated on 2018-02-28 .
+- Removed `expireDate` from `Supplement`. Reason: Incorrect date format.. Deprecated on 2018-02-28 .
+{{% / release-notes-container %}}
+### 2019-07-29
+{{% release-notes-container type="d"%}}
+- Deprecated `description` from `Bed`. Reason: Deprecated from 2019-07-29. Finally removed on 2019-08-13 .
+- Deprecated `description` from `Bed`. Reason: Deprecated from 2019-07-29. Expected removal on 2019-10-27 .
+{{% / release-notes-container %}}
+### 2019-07-03
+{{% release-notes-container type="d"%}}
+- Deprecated `error` from `Board`. Reason: Deprecated from 2019-07-03. Finally removed on 2019-08-13 .
+- Deprecated `error` from `Category`. Reason: Deprecated from 2019-07-03. Finally removed on 2019-08-13 .
+- Deprecated `error` from `Destination`. Reason: Deprecated from 2019-07-03. Finally removed on 2019-08-13 .
+- Deprecated `error` from `Hotel`. Reason: Deprecated from 2019-07-03. Finally removed on 2019-08-13 .
+- Deprecated `error` from `RoomStatic`. Reason: Deprecated from 2019-07-03. Finally removed on 2019-08-13 .
+- Deprecated `error` from `Board`. Reason: Deprecated from 2019-07-03. Expected removal on 2019-10-01 .
+- Deprecated `error` from `Category`. Reason: Deprecated from 2019-07-03. Expected removal on 2019-10-01 .
+- Deprecated `error` from `Destination`. Reason: Deprecated from 2019-07-03. Expected removal on 2019-10-01 .
+- Deprecated `error` from `Hotel`. Reason: Deprecated from 2019-07-03. Expected removal on 2019-10-01 .
+- Deprecated `error` from `RoomStatic`. Reason: Deprecated from 2019-07-03. Expected removal on 2019-10-01 .
+{{% / release-notes-container %}}
+### 2019-02-19
 {{% release-notes-container type="r"%}}
 - Removed `token` from `HotelOptionSearch`. Reason: . Deprecated on 2019-02-05 .
 {{% / release-notes-container %}}
 ### 2019-02-05
 {{% release-notes-container type="d"%}}
-- Deprecated `token` from `HotelOptionSearch`. Reason: . Finally removed on 2019-06-27 .
+- Deprecated `token` from `HotelOptionSearch`. Reason: . Finally removed on 2019-02-19 .
+- Deprecated `token` from `HotelOptionSearch`. Reason: . Expected removal on 2019-05-06 .
 {{% / release-notes-container %}}
 ### 2018-07-26
 {{% release-notes-container type="r"%}}
@@ -54,19 +111,47 @@
 {{% / release-notes-container %}}
 ### 2018-06-06
 {{% release-notes-container type="d"%}}
+- Deprecated `loadFile` from `HotelXMutation`. Reason: . Finally removed on 2019-08-13 .
 - Deprecated `loadFile` from `HotelXMutation`. Reason: . Expected removal on 2018-09-04 .
 {{% / release-notes-container %}}
 ### 2018-06-01
 {{% release-notes-container type="d"%}}
+- Deprecated `type` from `AdviseMessage`. Reason: . Finally removed on 2019-08-13 .
 - Deprecated `type` from `AdviseMessage`. Reason: . Expected removal on 2018-08-30 .
 {{% / release-notes-container %}}
 ### 2018-05-21
 {{% release-notes-container type="d"%}}
 - Deprecated `distribute` from `AddOns`. Reason: You can find it in distribution AddOn. Finally removed on 2018-07-24 .
+- Deprecated `distribute` from `AddOns`. Reason: You can find it in distribution AddOn. Expected removal on 2018-08-19 .
 {{% / release-notes-container %}}
 ### 2018-03-19
 {{% release-notes-container type="d"%}}
 - Deprecated `connectUser` from `HotelSettingsInput`. Reason: Redundant.. Finally removed on 2018-07-26 .
+{{% / release-notes-container %}}
+### 2018-02-28
+{{% release-notes-container type="d"%}}
+- Deprecated `creationDate` from `BookingHotel`. Reason: Incorrect date format.. Finally removed on 2019-08-13 .
+- Deprecated `checkIn` from `BookingHotel`. Reason: Incorrect date format.. Finally removed on 2019-08-13 .
+- Deprecated `checkOut` from `BookingHotel`. Reason: Incorrect date format.. Finally removed on 2019-08-13 .
+- Deprecated `effectiveDate` from `PriceBreakdown`. Reason: Incorrect date format.. Finally removed on 2019-08-13 .
+- Deprecated `expireDate` from `PriceBreakdown`. Reason: Incorrect date format.. Finally removed on 2019-08-13 .
+- Deprecated `effectiveDate` from `Promotion`. Reason: Incorrect date format.. Finally removed on 2019-08-13 .
+- Deprecated `expireDate` from `Promotion`. Reason: Incorrect date format.. Finally removed on 2019-08-13 .
+- Deprecated `effectiveDate` from `RatePlan`. Reason: Incorrect date format.. Finally removed on 2019-08-13 .
+- Deprecated `expireDate` from `RatePlan`. Reason: Incorrect date format.. Finally removed on 2019-08-13 .
+- Deprecated `effectiveDate` from `Supplement`. Reason: Incorrect date format.. Finally removed on 2019-08-13 .
+- Deprecated `expireDate` from `Supplement`. Reason: Incorrect date format.. Finally removed on 2019-08-13 .
+- Deprecated `creationDate` from `BookingHotel`. Reason: Incorrect date format.. Expected removal on 2018-05-29 .
+- Deprecated `checkIn` from `BookingHotel`. Reason: Incorrect date format.. Expected removal on 2018-05-29 .
+- Deprecated `checkOut` from `BookingHotel`. Reason: Incorrect date format.. Expected removal on 2018-05-29 .
+- Deprecated `effectiveDate` from `PriceBreakdown`. Reason: Incorrect date format.. Expected removal on 2018-05-29 .
+- Deprecated `expireDate` from `PriceBreakdown`. Reason: Incorrect date format.. Expected removal on 2018-05-29 .
+- Deprecated `effectiveDate` from `Promotion`. Reason: Incorrect date format.. Expected removal on 2018-05-29 .
+- Deprecated `expireDate` from `Promotion`. Reason: Incorrect date format.. Expected removal on 2018-05-29 .
+- Deprecated `effectiveDate` from `RatePlan`. Reason: Incorrect date format.. Expected removal on 2018-05-29 .
+- Deprecated `expireDate` from `RatePlan`. Reason: Incorrect date format.. Expected removal on 2018-05-29 .
+- Deprecated `effectiveDate` from `Supplement`. Reason: Incorrect date format.. Expected removal on 2018-05-29 .
+- Deprecated `expireDate` from `Supplement`. Reason: Incorrect date format.. Expected removal on 2018-05-29 .
 {{% / release-notes-container %}}
 ### 2017-12-12
 {{% release-notes-container type="d"%}}

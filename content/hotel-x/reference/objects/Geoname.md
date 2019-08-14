@@ -7,7 +7,7 @@
       "typeString": "ID!",
       "name": "code",
       "url": "/hotel-x/reference/scalars/id",
-      "description": "Hotel Destination ID",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -15,7 +15,7 @@
       "typeString": "GeonameData",
       "name": "geonameData",
       "url": "/hotel-x/reference/objects/geonamedata",
-      "description": "geoname data",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -23,14 +23,14 @@
       "typeString": "[AdviseMessage!]",
       "name": "adviseMessage",
       "url": "/hotel-x/reference/objects/advisemessage",
-      "description": "List of messages",
+      "description": null,
       "isDeprecated": false,
       "args": [
         {
           "typeString": "[AdviseMessageLevel]",
           "name": "level",
           "url": "/hotel-x/reference/enums/advisemessagelevel",
-          "description": ""
+          "description": null
         }
       ]
     },
@@ -38,7 +38,7 @@
       "typeString": "DateTime!",
       "name": "createdAt",
       "url": "/hotel-x/reference/scalars/datetime",
-      "description": "Date created",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -46,7 +46,7 @@
       "typeString": "DateTime!",
       "name": "updatedAt",
       "url": "/hotel-x/reference/scalars/datetime",
-      "description": "Date updated",
+      "description": null,
       "isDeprecated": false,
       "args": null
     }
@@ -54,7 +54,7 @@
   "requireby": [
     {
       "name": "GeonameData",
-      "description": "Geoname data, which contain a reference to his parent location",
+      "description": null,
       "url": "/hotel-x/reference/objects/geonamedata"
     }
   ],
@@ -63,7 +63,6 @@
   "typename": "Geoname",
   "hideGithubLink": true
 }
-Geoname type
 ## GraphQL schema definition
 
 {{% graphql-schema-type %}}

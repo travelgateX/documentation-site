@@ -6,7 +6,7 @@
     {
       "typeString": "Product",
       "name": "node",
-      "url": "/alertsx/reference/objects/product",
+      "url": "/alerts-x/reference/objects/product",
       "description": null,
       "isDeprecated": false,
       "args": null
@@ -14,7 +14,7 @@
     {
       "typeString": "String!",
       "name": "cursor",
-      "url": "/alertsx/reference/scalars/string",
+      "url": "/alerts-x/reference/scalars/string",
       "description": null,
       "isDeprecated": false,
       "args": null
@@ -24,7 +24,7 @@
     {
       "name": "ProductConnection",
       "description": null,
-      "url": "/alertsx/reference/objects/productconnection"
+      "url": "/alerts-x/reference/objects/productconnection"
     }
   ],
   "enumValues": null,

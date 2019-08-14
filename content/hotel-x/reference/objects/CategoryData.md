@@ -7,7 +7,7 @@
       "typeString": "ID!",
       "name": "code",
       "url": "/hotel-x/reference/scalars/id",
-      "description": "Internal code for checking availability",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -15,7 +15,7 @@
       "typeString": "String!",
       "name": "categoryCode",
       "url": "/hotel-x/reference/scalars/string",
-      "description": "Code of the hotel based on the Supplier selected",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -23,14 +23,14 @@
       "typeString": "[Text!]",
       "name": "texts",
       "url": "/hotel-x/reference/objects/text",
-      "description": "Label",
+      "description": null,
       "isDeprecated": false,
       "args": [
         {
           "typeString": "[Language!]",
           "name": "languages",
           "url": "/hotel-x/reference/scalars/language",
-          "description": ""
+          "description": null
         }
       ]
     }
@@ -38,7 +38,7 @@
   "requireby": [
     {
       "name": "Category",
-      "description": "Category Type",
+      "description": null,
       "url": "/hotel-x/reference/objects/category"
     }
   ],
@@ -47,7 +47,6 @@
   "typename": "CategoryData",
   "hideGithubLink": true
 }
-Category data
 ## GraphQL schema definition
 
 {{% graphql-schema-type %}}

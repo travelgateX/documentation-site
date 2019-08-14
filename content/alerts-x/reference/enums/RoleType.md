@@ -7,7 +7,7 @@
     {
       "name": "RoleData",
       "description": null,
-      "url": "/alertsx/reference/objects/roledata"
+      "url": "/alerts-x/reference/objects/roledata"
     }
   ],
   "enumValues": [

@@ -6,14 +6,14 @@
     {
       "typeString": "HubStatus!",
       "name": "code",
-      "url": "/alertsx/reference/enums/hubstatus",
+      "url": "/alerts-x/reference/enums/hubstatus",
       "description": null,
       "args": null
     },
     {
       "typeString": "Boolean!",
       "name": "isInclusive",
-      "url": "/alertsx/reference/scalars/boolean",
+      "url": "/alerts-x/reference/scalars/boolean",
       "description": null,
       "args": null
     }

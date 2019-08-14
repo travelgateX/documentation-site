@@ -7,7 +7,7 @@
     {
       "name": "EmailInput",
       "description": null,
-      "url": "/alertsx/reference/inputobjects/emailinput"
+      "url": "/alerts-x/reference/inputobjects/emailinput"
     }
   ],
   "enumValues": [

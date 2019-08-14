@@ -7,7 +7,7 @@
     {
       "name": "HubStatusInput",
       "description": null,
-      "url": "/alertsx/reference/inputobjects/hubstatusinput"
+      "url": "/alerts-x/reference/inputobjects/hubstatusinput"
     }
   ],
   "enumValues": [

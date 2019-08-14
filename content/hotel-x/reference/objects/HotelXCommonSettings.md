@@ -7,7 +7,7 @@
       "typeString": "HotelXCommonSettingsData",
       "name": "settings",
       "url": "/hotel-x/reference/objects/hotelxcommonsettingsdata",
-      "description": "",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -15,14 +15,14 @@
       "typeString": "[AdviseMessage!]",
       "name": "adviseMessage",
       "url": "/hotel-x/reference/objects/advisemessage",
-      "description": "List of messages",
+      "description": null,
       "isDeprecated": false,
       "args": [
         {
           "typeString": "[AdviseMessageLevel]",
           "name": "level",
           "url": "/hotel-x/reference/enums/advisemessagelevel",
-          "description": ""
+          "description": null
         }
       ]
     }
@@ -30,12 +30,12 @@
   "requireby": [
     {
       "name": "HotelXQuery",
-      "description": "",
+      "description": null,
       "url": "/hotel-x/reference/objects/hotelxquery"
     },
     {
       "name": "HotelXMutation",
-      "description": "",
+      "description": null,
       "url": "/hotel-x/reference/objects/hotelxmutation"
     }
   ],

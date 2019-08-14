@@ -7,7 +7,7 @@
       "typeString": "Float!",
       "name": "latitude",
       "url": "/hotel-x/reference/scalars/float",
-      "description": "Latitude",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -15,7 +15,7 @@
       "typeString": "Float!",
       "name": "longitude",
       "url": "/hotel-x/reference/scalars/float",
-      "description": "Longitude",
+      "description": null,
       "isDeprecated": false,
       "args": null
     }
@@ -23,12 +23,12 @@
   "requireby": [
     {
       "name": "Location",
-      "description": "Indicates the location of the hotel",
+      "description": null,
       "url": "/hotel-x/reference/objects/location"
     },
     {
       "name": "GeonameData",
-      "description": "Geoname data, which contain a reference to his parent location",
+      "description": null,
       "url": "/hotel-x/reference/objects/geonamedata"
     }
   ],
@@ -37,7 +37,6 @@
   "typename": "Coordinates",
   "hideGithubLink": true
 }
-Geographical coordinates corresponding to a location.
 ## GraphQL schema definition
 
 {{% graphql-schema-type %}}

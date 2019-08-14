@@ -6,7 +6,7 @@
     {
       "typeString": "Int",
       "name": "historicalWindow",
-      "url": "/alertsx/reference/scalars/int",
+      "url": "/alerts-x/reference/scalars/int",
       "description": "The time frame in minutes to be used to compare with the window time frame",
       "isDeprecated": false,
       "args": null
@@ -14,7 +14,7 @@
     {
       "typeString": "Int",
       "name": "offset",
-      "url": "/alertsx/reference/scalars/int",
+      "url": "/alerts-x/reference/scalars/int",
       "description": "Time frame in minutes to set the beginning of historicalWindow",
       "isDeprecated": false,
       "args": null
@@ -22,7 +22,7 @@
     {
       "typeString": "Int",
       "name": "max_average",
-      "url": "/alertsx/reference/scalars/int",
+      "url": "/alerts-x/reference/scalars/int",
       "description": "maximum average time allowed in miliseconds",
       "isDeprecated": false,
       "args": null
@@ -30,7 +30,7 @@
     {
       "typeString": "[Int!]",
       "name": "toCheck",
-      "url": "/alertsx/reference/scalars/int",
+      "url": "/alerts-x/reference/scalars/int",
       "description": "Error codes to be Checked. By default  all error codes excepts 0",
       "isDeprecated": false,
       "args": null
@@ -38,7 +38,7 @@
     {
       "typeString": "[Int!]",
       "name": "toCompare",
-      "url": "/alertsx/reference/scalars/int",
+      "url": "/alerts-x/reference/scalars/int",
       "description": "Error codes to be Compared with Checked codes. By default all error codes",
       "isDeprecated": false,
       "args": null
@@ -48,7 +48,7 @@
     {
       "name": "AlertConfiguration",
       "description": null,
-      "url": "/alertsx/reference/objects/alertconfiguration"
+      "url": "/alerts-x/reference/objects/alertconfiguration"
     }
   ],
   "enumValues": null,

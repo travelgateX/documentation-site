@@ -6,7 +6,7 @@
     {
       "typeString": "ID!",
       "name": "code",
-      "url": "/alertsx/reference/scalars/id",
+      "url": "/alerts-x/reference/scalars/id",
       "description": null,
       "isDeprecated": false,
       "args": null
@@ -14,7 +14,7 @@
     {
       "typeString": "APIData",
       "name": "apiData",
-      "url": "/alertsx/reference/objects/apidata",
+      "url": "/alerts-x/reference/objects/apidata",
       "description": null,
       "isDeprecated": false,
       "args": null
@@ -22,14 +22,14 @@
     {
       "typeString": "[AdviseMessage!]",
       "name": "adviseMessage",
-      "url": "/alertsx/reference/objects/advisemessage",
+      "url": "/alerts-x/reference/objects/advisemessage",
       "description": null,
       "isDeprecated": false,
       "args": [
         {
           "typeString": "[AdviseMessageLevel]",
           "name": "level",
-          "url": "/alertsx/reference/enums/advisemessagelevel",
+          "url": "/alerts-x/reference/enums/advisemessagelevel",
           "description": null
         }
       ]
@@ -37,7 +37,7 @@
     {
       "typeString": "DateTime!",
       "name": "createdAt",
-      "url": "/alertsx/reference/scalars/datetime",
+      "url": "/alerts-x/reference/scalars/datetime",
       "description": null,
       "isDeprecated": false,
       "args": null
@@ -45,7 +45,7 @@
     {
       "typeString": "DateTime!",
       "name": "updatedAt",
-      "url": "/alertsx/reference/scalars/datetime",
+      "url": "/alerts-x/reference/scalars/datetime",
       "description": null,
       "isDeprecated": false,
       "args": null
@@ -55,17 +55,22 @@
     {
       "name": "APIEdge",
       "description": null,
-      "url": "/alertsx/reference/objects/apiedge"
+      "url": "/alerts-x/reference/objects/apiedge"
     },
     {
       "name": "OperationData",
       "description": null,
-      "url": "/alertsx/reference/objects/operationdata"
+      "url": "/alerts-x/reference/objects/operationdata"
     },
     {
       "name": "ManagedGroupData",
       "description": null,
-      "url": "/alertsx/reference/objects/managedgroupdata"
+      "url": "/alerts-x/reference/objects/managedgroupdata"
+    },
+    {
+      "name": "Permission",
+      "description": null,
+      "url": "/alerts-x/reference/objects/permission"
     }
   ],
   "enumValues": null,

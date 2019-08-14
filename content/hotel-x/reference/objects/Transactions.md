@@ -7,7 +7,7 @@
       "typeString": "String!",
       "name": "request",
       "url": "/hotel-x/reference/scalars/string",
-      "description": "Transaction Request.",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -15,7 +15,7 @@
       "typeString": "String!",
       "name": "response",
       "url": "/hotel-x/reference/scalars/string",
-      "description": "Transaction Response.",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -23,7 +23,7 @@
       "typeString": "DateTime!",
       "name": "timeStamp",
       "url": "/hotel-x/reference/scalars/datetime",
-      "description": "Time when the request has been processed.",
+      "description": null,
       "isDeprecated": false,
       "args": null
     }
@@ -34,7 +34,6 @@
   "typename": "Transactions",
   "hideGithubLink": true
 }
-Supplier transaction
 ## GraphQL schema definition
 
 {{% graphql-schema-type %}}

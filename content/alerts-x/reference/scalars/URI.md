@@ -7,7 +7,7 @@
     {
       "name": "Urls",
       "description": null,
-      "url": "/alertsx/reference/objects/urls"
+      "url": "/alerts-x/reference/objects/urls"
     }
   ],
   "enumValues": null,

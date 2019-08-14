@@ -6,7 +6,7 @@
     {
       "typeString": "Client",
       "name": "node",
-      "url": "/alertsx/reference/objects/client",
+      "url": "/alerts-x/reference/objects/client",
       "description": null,
       "isDeprecated": false,
       "args": null
@@ -14,7 +14,7 @@
     {
       "typeString": "String!",
       "name": "cursor",
-      "url": "/alertsx/reference/scalars/string",
+      "url": "/alerts-x/reference/scalars/string",
       "description": null,
       "isDeprecated": false,
       "args": null
@@ -24,7 +24,7 @@
     {
       "name": "ClientConnection",
       "description": null,
-      "url": "/alertsx/reference/objects/clientconnection"
+      "url": "/alerts-x/reference/objects/clientconnection"
     }
   ],
   "enumValues": null,

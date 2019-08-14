@@ -6,7 +6,7 @@
     {
       "typeString": "ID!",
       "name": "code",
-      "url": "/alertsx/reference/scalars/id",
+      "url": "/alerts-x/reference/scalars/id",
       "description": null,
       "isDeprecated": false,
       "args": null
@@ -14,7 +14,7 @@
     {
       "typeString": "Group!",
       "name": "group",
-      "url": "/alertsx/reference/objects/group",
+      "url": "/alerts-x/reference/objects/group",
       "description": null,
       "isDeprecated": false,
       "args": null
@@ -22,7 +22,7 @@
     {
       "typeString": "API!",
       "name": "api",
-      "url": "/alertsx/reference/objects/api",
+      "url": "/alerts-x/reference/objects/api",
       "description": null,
       "isDeprecated": false,
       "args": null
@@ -30,7 +30,7 @@
     {
       "typeString": "Resource!",
       "name": "resource",
-      "url": "/alertsx/reference/objects/resource",
+      "url": "/alerts-x/reference/objects/resource",
       "description": null,
       "isDeprecated": false,
       "args": null
@@ -38,7 +38,7 @@
     {
       "typeString": "Role!",
       "name": "role",
-      "url": "/alertsx/reference/objects/role",
+      "url": "/alerts-x/reference/objects/role",
       "description": null,
       "isDeprecated": false,
       "args": null
@@ -48,7 +48,7 @@
     {
       "name": "ManagedGroup",
       "description": null,
-      "url": "/alertsx/reference/objects/managedgroup"
+      "url": "/alerts-x/reference/objects/managedgroup"
     }
   ],
   "enumValues": null,

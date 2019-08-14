@@ -7,212 +7,247 @@
     {
       "name": "Alert",
       "description": " Alert node",
-      "url": "/alertsx/reference/objects/alert"
+      "url": "/alerts-x/reference/objects/alert"
     },
     {
       "name": "AlertData",
       "description": null,
-      "url": "/alertsx/reference/objects/alertdata"
+      "url": "/alerts-x/reference/objects/alertdata"
     },
     {
       "name": "AdviseMessage",
       "description": null,
-      "url": "/alertsx/reference/objects/advisemessage"
+      "url": "/alerts-x/reference/objects/advisemessage"
     },
     {
       "name": "Node",
       "description": null,
-      "url": "/alertsx/reference/interfaces/node"
+      "url": "/alerts-x/reference/interfaces/node"
     },
     {
       "name": "Member",
       "description": null,
-      "url": "/alertsx/reference/objects/member"
+      "url": "/alerts-x/reference/objects/member"
     },
     {
       "name": "MemberData",
       "description": null,
-      "url": "/alertsx/reference/objects/memberdata"
+      "url": "/alerts-x/reference/objects/memberdata"
     },
     {
       "name": "Group",
       "description": null,
-      "url": "/alertsx/reference/objects/group"
+      "url": "/alerts-x/reference/objects/group"
     },
     {
       "name": "GroupData",
       "description": null,
-      "url": "/alertsx/reference/objects/groupdata"
+      "url": "/alerts-x/reference/objects/groupdata"
     },
     {
       "name": "GroupCommonData",
       "description": null,
-      "url": "/alertsx/reference/interfaces/groupcommondata"
+      "url": "/alerts-x/reference/interfaces/groupcommondata"
     },
     {
       "name": "API",
       "description": null,
-      "url": "/alertsx/reference/objects/api"
+      "url": "/alerts-x/reference/objects/api"
     },
     {
       "name": "APIData",
       "description": null,
-      "url": "/alertsx/reference/objects/apidata"
+      "url": "/alerts-x/reference/objects/apidata"
     },
     {
       "name": "Resource",
       "description": null,
-      "url": "/alertsx/reference/objects/resource"
+      "url": "/alerts-x/reference/objects/resource"
     },
     {
       "name": "ResourceData",
       "description": null,
-      "url": "/alertsx/reference/objects/resourcedata"
+      "url": "/alerts-x/reference/objects/resourcedata"
     },
     {
       "name": "Operation",
       "description": null,
-      "url": "/alertsx/reference/objects/operation"
+      "url": "/alerts-x/reference/objects/operation"
     },
     {
       "name": "OperationData",
       "description": null,
-      "url": "/alertsx/reference/objects/operationdata"
+      "url": "/alerts-x/reference/objects/operationdata"
     },
     {
       "name": "ManagedGroup",
       "description": null,
-      "url": "/alertsx/reference/objects/managedgroup"
+      "url": "/alerts-x/reference/objects/managedgroup"
     },
     {
       "name": "ManagedGroupData",
       "description": null,
-      "url": "/alertsx/reference/objects/managedgroupdata"
+      "url": "/alerts-x/reference/objects/managedgroupdata"
     },
     {
       "name": "Role",
       "description": null,
-      "url": "/alertsx/reference/objects/role"
+      "url": "/alerts-x/reference/objects/role"
     },
     {
       "name": "RoleData",
       "description": null,
-      "url": "/alertsx/reference/objects/roledata"
+      "url": "/alerts-x/reference/objects/roledata"
     },
     {
       "name": "Access",
       "description": null,
-      "url": "/alertsx/reference/objects/access"
+      "url": "/alerts-x/reference/objects/access"
     },
     {
       "name": "AccessData",
       "description": null,
-      "url": "/alertsx/reference/objects/accessdata"
+      "url": "/alerts-x/reference/objects/accessdata"
     },
     {
       "name": "Supplier",
       "description": null,
-      "url": "/alertsx/reference/objects/supplier"
+      "url": "/alerts-x/reference/objects/supplier"
     },
     {
       "name": "Parameter",
       "description": null,
-      "url": "/alertsx/reference/objects/parameter"
+      "url": "/alerts-x/reference/objects/parameter"
     },
     {
       "name": "Organization",
       "description": null,
-      "url": "/alertsx/reference/objects/organization"
+      "url": "/alerts-x/reference/objects/organization"
     },
     {
       "name": "SupplierData",
       "description": null,
-      "url": "/alertsx/reference/objects/supplierdata"
+      "url": "/alerts-x/reference/objects/supplierdata"
     },
     {
       "name": "Provider",
       "description": null,
-      "url": "/alertsx/reference/objects/provider"
+      "url": "/alerts-x/reference/objects/provider"
     },
     {
       "name": "AccessFilter",
       "description": null,
-      "url": "/alertsx/reference/inputobjects/accessfilter"
+      "url": "/alerts-x/reference/inputobjects/accessfilter"
     },
     {
       "name": "ClientFilter",
       "description": null,
-      "url": "/alertsx/reference/inputobjects/clientfilter"
+      "url": "/alerts-x/reference/inputobjects/clientfilter"
     },
     {
-      "name": "OrganizationData",
+      "name": "System",
       "description": null,
-      "url": "/alertsx/reference/objects/organizationdata"
+      "url": "/alerts-x/reference/objects/system"
     },
     {
-      "name": "Domain",
+      "name": "SystemData",
       "description": null,
-      "url": "/alertsx/reference/objects/domain"
-    },
-    {
-      "name": "Product",
-      "description": null,
-      "url": "/alertsx/reference/objects/product"
-    },
-    {
-      "name": "ProductData",
-      "description": null,
-      "url": "/alertsx/reference/objects/productdata"
-    },
-    {
-      "name": "DomainData",
-      "description": null,
-      "url": "/alertsx/reference/objects/domaindata"
-    },
-    {
-      "name": "Client",
-      "description": null,
-      "url": "/alertsx/reference/objects/client"
-    },
-    {
-      "name": "ClientData",
-      "description": null,
-      "url": "/alertsx/reference/objects/clientdata"
+      "url": "/alerts-x/reference/objects/systemdata"
     },
     {
       "name": "SupplierFilter",
       "description": null,
-      "url": "/alertsx/reference/inputobjects/supplierfilter"
+      "url": "/alerts-x/reference/inputobjects/supplierfilter"
+    },
+    {
+      "name": "OrganizationData",
+      "description": null,
+      "url": "/alerts-x/reference/objects/organizationdata"
+    },
+    {
+      "name": "Domain",
+      "description": null,
+      "url": "/alerts-x/reference/objects/domain"
+    },
+    {
+      "name": "Product",
+      "description": null,
+      "url": "/alerts-x/reference/objects/product"
+    },
+    {
+      "name": "ProductData",
+      "description": null,
+      "url": "/alerts-x/reference/objects/productdata"
+    },
+    {
+      "name": "MacroPermission",
+      "description": null,
+      "url": "/alerts-x/reference/objects/macropermission"
+    },
+    {
+      "name": "MacroPermissionData",
+      "description": null,
+      "url": "/alerts-x/reference/objects/macropermissiondata"
+    },
+    {
+      "name": "DomainData",
+      "description": null,
+      "url": "/alerts-x/reference/objects/domaindata"
+    },
+    {
+      "name": "Client",
+      "description": null,
+      "url": "/alerts-x/reference/objects/client"
+    },
+    {
+      "name": "ClientData",
+      "description": null,
+      "url": "/alerts-x/reference/objects/clientdata"
+    },
+    {
+      "name": "Profile",
+      "description": null,
+      "url": "/alerts-x/reference/objects/profile"
+    },
+    {
+      "name": "ProfileData",
+      "description": null,
+      "url": "/alerts-x/reference/objects/profiledata"
+    },
+    {
+      "name": "Entity",
+      "description": null,
+      "url": "/alerts-x/reference/objects/entity"
     },
     {
       "name": "Event",
       "description": "Event triggered",
-      "url": "/alertsx/reference/objects/event"
+      "url": "/alerts-x/reference/objects/event"
     },
     {
       "name": "EventData",
       "description": "Event data",
-      "url": "/alertsx/reference/objects/eventdata"
+      "url": "/alerts-x/reference/objects/eventdata"
     },
     {
       "name": "AlertInput",
       "description": "Alert information. Only one configuration has to be set at once.",
-      "url": "/alertsx/reference/inputobjects/alertinput"
+      "url": "/alerts-x/reference/inputobjects/alertinput"
     },
     {
       "name": "EmailInput",
       "description": null,
-      "url": "/alertsx/reference/inputobjects/emailinput"
+      "url": "/alerts-x/reference/inputobjects/emailinput"
     },
     {
       "name": "AlertObjectInput",
       "description": null,
-      "url": "/alertsx/reference/inputobjects/alertobjectinput"
+      "url": "/alerts-x/reference/inputobjects/alertobjectinput"
     },
     {
       "name": "AlertGroupInput",
       "description": null,
-      "url": "/alertsx/reference/inputobjects/alertgroupinput"
+      "url": "/alerts-x/reference/inputobjects/alertgroupinput"
     }
   ],
   "enumValues": null,

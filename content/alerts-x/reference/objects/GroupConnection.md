@@ -6,7 +6,7 @@
     {
       "typeString": "[GroupEdge]",
       "name": "edges",
-      "url": "/alertsx/reference/objects/groupedge",
+      "url": "/alerts-x/reference/objects/groupedge",
       "description": null,
       "isDeprecated": false,
       "args": null
@@ -14,7 +14,7 @@
     {
       "typeString": "PageInfo!",
       "name": "pageInfo",
-      "url": "/alertsx/reference/objects/pageinfo",
+      "url": "/alerts-x/reference/objects/pageinfo",
       "description": null,
       "isDeprecated": false,
       "args": null
@@ -24,37 +24,37 @@
     {
       "name": "MemberData",
       "description": null,
-      "url": "/alertsx/reference/objects/memberdata"
+      "url": "/alerts-x/reference/objects/memberdata"
     },
     {
       "name": "GroupData",
       "description": null,
-      "url": "/alertsx/reference/objects/groupdata"
+      "url": "/alerts-x/reference/objects/groupdata"
     },
     {
       "name": "GroupCommonData",
       "description": null,
-      "url": "/alertsx/reference/interfaces/groupcommondata"
+      "url": "/alerts-x/reference/interfaces/groupcommondata"
     },
     {
       "name": "APIData",
       "description": null,
-      "url": "/alertsx/reference/objects/apidata"
+      "url": "/alerts-x/reference/objects/apidata"
     },
     {
       "name": "AccessData",
       "description": null,
-      "url": "/alertsx/reference/objects/accessdata"
+      "url": "/alerts-x/reference/objects/accessdata"
     },
     {
       "name": "SupplierData",
       "description": null,
-      "url": "/alertsx/reference/objects/supplierdata"
+      "url": "/alerts-x/reference/objects/supplierdata"
     },
     {
       "name": "OrganizationData",
       "description": null,
-      "url": "/alertsx/reference/objects/organizationdata"
+      "url": "/alerts-x/reference/objects/organizationdata"
     }
   ],
   "enumValues": null,

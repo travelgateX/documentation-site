@@ -6,21 +6,21 @@
     {
       "typeString": "ID!",
       "name": "code",
-      "url": "/alertsx/reference/scalars/id",
+      "url": "/alerts-x/reference/scalars/id",
       "description": null,
       "args": null
     },
     {
       "typeString": "ComercialType!",
       "name": "comercialType",
-      "url": "/alertsx/reference/enums/comercialtype",
+      "url": "/alerts-x/reference/enums/comercialtype",
       "description": null,
       "args": null
     },
     {
       "typeString": "Boolean!",
       "name": "isInclusive",
-      "url": "/alertsx/reference/scalars/boolean",
+      "url": "/alerts-x/reference/scalars/boolean",
       "description": null,
       "args": null
     }

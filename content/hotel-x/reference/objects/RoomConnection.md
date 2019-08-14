@@ -7,7 +7,7 @@
       "typeString": "[RoomEdge]",
       "name": "edges",
       "url": "/hotel-x/reference/objects/roomedge",
-      "description": "",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -15,7 +15,7 @@
       "typeString": "String",
       "name": "token",
       "url": "/hotel-x/reference/scalars/string",
-      "description": "",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },
@@ -23,15 +23,20 @@
       "typeString": "PageInfo!",
       "name": "pageInfo",
       "url": "/hotel-x/reference/objects/pageinfo",
-      "description": "Indicates info about page",
+      "description": null,
       "isDeprecated": false,
       "args": null
     }
   ],
   "requireby": [
     {
+      "name": "HotelData",
+      "description": null,
+      "url": "/hotel-x/reference/objects/hoteldata"
+    },
+    {
       "name": "HotelXQuery",
-      "description": "",
+      "description": null,
       "url": "/hotel-x/reference/objects/hotelxquery"
     }
   ],
@@ -40,7 +45,6 @@
   "typename": "RoomConnection",
   "hideGithubLink": true
 }
-RoomList definition
 ## GraphQL schema definition
 
 {{% graphql-schema-type %}}

@@ -6,28 +6,28 @@
     {
       "typeString": "Int",
       "name": "first",
-      "url": "/alertsx/reference/scalars/int",
+      "url": "/alerts-x/reference/scalars/int",
       "description": null,
       "args": null
     },
     {
       "typeString": "Int",
       "name": "last",
-      "url": "/alertsx/reference/scalars/int",
+      "url": "/alerts-x/reference/scalars/int",
       "description": null,
       "args": null
     },
     {
       "typeString": "String",
       "name": "before",
-      "url": "/alertsx/reference/scalars/string",
+      "url": "/alerts-x/reference/scalars/string",
       "description": null,
       "args": null
     },
     {
       "typeString": "String",
       "name": "after",
-      "url": "/alertsx/reference/scalars/string",
+      "url": "/alerts-x/reference/scalars/string",
       "description": null,
       "args": null
     }

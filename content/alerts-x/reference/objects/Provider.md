@@ -6,7 +6,7 @@
     {
       "typeString": "ID!",
       "name": "code",
-      "url": "/alertsx/reference/scalars/id",
+      "url": "/alerts-x/reference/scalars/id",
       "description": null,
       "isDeprecated": false,
       "args": null
@@ -14,7 +14,7 @@
     {
       "typeString": "String!",
       "name": "name",
-      "url": "/alertsx/reference/scalars/string",
+      "url": "/alerts-x/reference/scalars/string",
       "description": null,
       "isDeprecated": false,
       "args": null
@@ -22,7 +22,7 @@
     {
       "typeString": "Boolean",
       "name": "isActive",
-      "url": "/alertsx/reference/scalars/boolean",
+      "url": "/alerts-x/reference/scalars/boolean",
       "description": null,
       "isDeprecated": false,
       "args": null
@@ -30,7 +30,7 @@
     {
       "typeString": "Boolean",
       "name": "isPublic",
-      "url": "/alertsx/reference/scalars/boolean",
+      "url": "/alerts-x/reference/scalars/boolean",
       "description": null,
       "isDeprecated": false,
       "args": null
@@ -40,7 +40,7 @@
     {
       "name": "SupplierData",
       "description": null,
-      "url": "/alertsx/reference/objects/supplierdata"
+      "url": "/alerts-x/reference/objects/supplierdata"
     }
   ],
   "enumValues": null,

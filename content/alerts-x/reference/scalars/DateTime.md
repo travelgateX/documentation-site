@@ -7,87 +7,107 @@
     {
       "name": "AlertFilterInput",
       "description": null,
-      "url": "/alertsx/reference/inputobjects/alertfilterinput"
+      "url": "/alerts-x/reference/inputobjects/alertfilterinput"
     },
     {
       "name": "Alert",
       "description": " Alert node",
-      "url": "/alertsx/reference/objects/alert"
+      "url": "/alerts-x/reference/objects/alert"
     },
     {
       "name": "Node",
       "description": null,
-      "url": "/alertsx/reference/interfaces/node"
+      "url": "/alerts-x/reference/interfaces/node"
     },
     {
       "name": "Member",
       "description": null,
-      "url": "/alertsx/reference/objects/member"
+      "url": "/alerts-x/reference/objects/member"
     },
     {
       "name": "Group",
       "description": null,
-      "url": "/alertsx/reference/objects/group"
+      "url": "/alerts-x/reference/objects/group"
     },
     {
       "name": "API",
       "description": null,
-      "url": "/alertsx/reference/objects/api"
+      "url": "/alerts-x/reference/objects/api"
     },
     {
       "name": "Resource",
       "description": null,
-      "url": "/alertsx/reference/objects/resource"
+      "url": "/alerts-x/reference/objects/resource"
     },
     {
       "name": "Operation",
       "description": null,
-      "url": "/alertsx/reference/objects/operation"
+      "url": "/alerts-x/reference/objects/operation"
     },
     {
       "name": "ManagedGroup",
       "description": null,
-      "url": "/alertsx/reference/objects/managedgroup"
+      "url": "/alerts-x/reference/objects/managedgroup"
     },
     {
       "name": "Role",
       "description": null,
-      "url": "/alertsx/reference/objects/role"
+      "url": "/alerts-x/reference/objects/role"
     },
     {
       "name": "Access",
       "description": null,
-      "url": "/alertsx/reference/objects/access"
+      "url": "/alerts-x/reference/objects/access"
     },
     {
       "name": "Supplier",
       "description": null,
-      "url": "/alertsx/reference/objects/supplier"
+      "url": "/alerts-x/reference/objects/supplier"
     },
     {
       "name": "Organization",
       "description": null,
-      "url": "/alertsx/reference/objects/organization"
+      "url": "/alerts-x/reference/objects/organization"
+    },
+    {
+      "name": "System",
+      "description": null,
+      "url": "/alerts-x/reference/objects/system"
     },
     {
       "name": "Domain",
       "description": null,
-      "url": "/alertsx/reference/objects/domain"
+      "url": "/alerts-x/reference/objects/domain"
     },
     {
       "name": "Product",
       "description": null,
-      "url": "/alertsx/reference/objects/product"
+      "url": "/alerts-x/reference/objects/product"
+    },
+    {
+      "name": "MacroPermission",
+      "description": null,
+      "url": "/alerts-x/reference/objects/macropermission"
     },
     {
       "name": "Client",
       "description": null,
-      "url": "/alertsx/reference/objects/client"
+      "url": "/alerts-x/reference/objects/client"
+    },
+    {
+      "name": "Profile",
+      "description": null,
+      "url": "/alerts-x/reference/objects/profile"
+    },
+    {
+      "name": "Entity",
+      "description": null,
+      "url": "/alerts-x/reference/objects/entity"
     },
     {
       "name": "Event",
       "description": "Event triggered",
-      "url": "/alertsx/reference/objects/event"
+      "url": "/alerts-x/reference/objects/event"
     }
   ],
   "enumValues": null,

@@ -7,7 +7,7 @@
     {
       "name": "MemberData",
       "description": null,
-      "url": "/alertsx/reference/objects/memberdata"
+      "url": "/alerts-x/reference/objects/memberdata"
     }
   ],
   "enumValues": [

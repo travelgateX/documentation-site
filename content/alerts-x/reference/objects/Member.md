@@ -6,7 +6,7 @@
     {
       "typeString": "ID!",
       "name": "code",
-      "url": "/alertsx/reference/scalars/id",
+      "url": "/alerts-x/reference/scalars/id",
       "description": null,
       "isDeprecated": false,
       "args": null
@@ -14,7 +14,7 @@
     {
       "typeString": "MemberData",
       "name": "memberData",
-      "url": "/alertsx/reference/objects/memberdata",
+      "url": "/alerts-x/reference/objects/memberdata",
       "description": null,
       "isDeprecated": false,
       "args": null
@@ -22,14 +22,14 @@
     {
       "typeString": "[AdviseMessage!]",
       "name": "adviseMessage",
-      "url": "/alertsx/reference/objects/advisemessage",
+      "url": "/alerts-x/reference/objects/advisemessage",
       "description": null,
       "isDeprecated": false,
       "args": [
         {
           "typeString": "[AdviseMessageLevel]",
           "name": "level",
-          "url": "/alertsx/reference/enums/advisemessagelevel",
+          "url": "/alerts-x/reference/enums/advisemessagelevel",
           "description": null
         }
       ]
@@ -37,7 +37,7 @@
     {
       "typeString": "DateTime!",
       "name": "createdAt",
-      "url": "/alertsx/reference/scalars/datetime",
+      "url": "/alerts-x/reference/scalars/datetime",
       "description": null,
       "isDeprecated": false,
       "args": null
@@ -45,7 +45,7 @@
     {
       "typeString": "DateTime!",
       "name": "updatedAt",
-      "url": "/alertsx/reference/scalars/datetime",
+      "url": "/alerts-x/reference/scalars/datetime",
       "description": null,
       "isDeprecated": false,
       "args": null
@@ -55,27 +55,27 @@
     {
       "name": "AlertData",
       "description": null,
-      "url": "/alertsx/reference/objects/alertdata"
+      "url": "/alerts-x/reference/objects/alertdata"
     },
     {
       "name": "GroupData",
       "description": null,
-      "url": "/alertsx/reference/objects/groupdata"
+      "url": "/alerts-x/reference/objects/groupdata"
     },
     {
       "name": "GroupCommonData",
       "description": null,
-      "url": "/alertsx/reference/interfaces/groupcommondata"
+      "url": "/alerts-x/reference/interfaces/groupcommondata"
     },
     {
       "name": "MemberEdge",
       "description": null,
-      "url": "/alertsx/reference/objects/memberedge"
+      "url": "/alerts-x/reference/objects/memberedge"
     },
     {
       "name": "OrganizationData",
       "description": null,
-      "url": "/alertsx/reference/objects/organizationdata"
+      "url": "/alerts-x/reference/objects/organizationdata"
     }
   ],
   "enumValues": null,

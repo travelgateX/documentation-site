@@ -6,26 +6,26 @@
     {
       "typeString": "AlertConnection!",
       "name": "alerts",
-      "url": "/alertsx/reference/objects/alertconnection",
+      "url": "/alerts-x/reference/objects/alertconnection",
       "description": "Query to obtain Alerts",
       "isDeprecated": false,
       "args": [
         {
           "typeString": "RelayInput",
           "name": "relay",
-          "url": "/alertsx/reference/inputobjects/relayinput",
+          "url": "/alerts-x/reference/inputobjects/relayinput",
           "description": null
         },
         {
           "typeString": "AlertFilterInput",
           "name": "filter",
-          "url": "/alertsx/reference/inputobjects/alertfilterinput",
+          "url": "/alerts-x/reference/inputobjects/alertfilterinput",
           "description": null
         },
         {
           "typeString": "AlertCriteriaInput!",
           "name": "criteria",
-          "url": "/alertsx/reference/inputobjects/alertcriteriainput",
+          "url": "/alerts-x/reference/inputobjects/alertcriteriainput",
           "description": null
         }
       ]

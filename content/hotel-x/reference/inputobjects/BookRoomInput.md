@@ -7,14 +7,14 @@
       "typeString": "Int!",
       "name": "occupancyRefId",
       "url": "/hotel-x/reference/scalars/int",
-      "description": "The room's reference in the booking",
+      "description": null,
       "args": null
     },
     {
       "typeString": "[BookPaxInput!]!",
       "name": "paxes",
       "url": "/hotel-x/reference/inputobjects/bookpaxinput",
-      "description": "The list or lists of paxes of the room",
+      "description": null,
       "args": null
     }
   ],
@@ -24,7 +24,6 @@
   "typename": "BookRoomInput",
   "hideGithubLink": true
 }
-Input BookRoom contains list of pax and the room's reference.
 ## GraphQL schema definition
 
 {{% graphql-schema-type %}}

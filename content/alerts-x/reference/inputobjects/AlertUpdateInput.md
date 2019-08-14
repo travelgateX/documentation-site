@@ -6,49 +6,49 @@
     {
       "typeString": "String",
       "name": "name",
-      "url": "/alertsx/reference/scalars/string",
+      "url": "/alerts-x/reference/scalars/string",
       "description": null,
       "args": null
     },
     {
       "typeString": "String",
       "name": "description",
-      "url": "/alertsx/reference/scalars/string",
+      "url": "/alerts-x/reference/scalars/string",
       "description": null,
       "args": null
     },
     {
       "typeString": "AlertUpdateConfigurationInputNoTraffic",
       "name": "configurationNoTraffic",
-      "url": "/alertsx/reference/inputobjects/alertupdateconfigurationinputnotraffic",
+      "url": "/alerts-x/reference/inputobjects/alertupdateconfigurationinputnotraffic",
       "description": null,
       "args": null
     },
     {
       "typeString": "AlertUpdateConfigurationInputErrorRate",
       "name": "configurationErrorRate",
-      "url": "/alertsx/reference/inputobjects/alertupdateconfigurationinputerrorrate",
+      "url": "/alerts-x/reference/inputobjects/alertupdateconfigurationinputerrorrate",
       "description": null,
       "args": null
     },
     {
       "typeString": "AlertUpdateConfigurationInputAverageTime",
       "name": "configurationAverageTime",
-      "url": "/alertsx/reference/inputobjects/alertupdateconfigurationinputaveragetime",
+      "url": "/alerts-x/reference/inputobjects/alertupdateconfigurationinputaveragetime",
       "description": null,
       "args": null
     },
     {
       "typeString": "AlertUpdateConfigurationInputPeakTraffic",
       "name": "configurationPeakTraffic",
-      "url": "/alertsx/reference/inputobjects/alertupdateconfigurationinputpeaktraffic",
+      "url": "/alerts-x/reference/inputobjects/alertupdateconfigurationinputpeaktraffic",
       "description": null,
       "args": null
     },
     {
       "typeString": "Boolean",
       "name": "isActive",
-      "url": "/alertsx/reference/scalars/boolean",
+      "url": "/alerts-x/reference/scalars/boolean",
       "description": null,
       "args": null
     }

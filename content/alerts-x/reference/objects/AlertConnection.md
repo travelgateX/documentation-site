@@ -6,7 +6,7 @@
     {
       "typeString": "[AlertEdge]",
       "name": "edges",
-      "url": "/alertsx/reference/objects/alertedge",
+      "url": "/alerts-x/reference/objects/alertedge",
       "description": null,
       "isDeprecated": false,
       "args": null
@@ -14,7 +14,7 @@
     {
       "typeString": "PageInfo!",
       "name": "pageInfo",
-      "url": "/alertsx/reference/objects/pageinfo",
+      "url": "/alerts-x/reference/objects/pageinfo",
       "description": null,
       "isDeprecated": false,
       "args": null
@@ -22,7 +22,7 @@
     {
       "typeString": "Int!",
       "name": "count",
-      "url": "/alertsx/reference/scalars/int",
+      "url": "/alerts-x/reference/scalars/int",
       "description": null,
       "isDeprecated": false,
       "args": null
@@ -32,12 +32,12 @@
     {
       "name": "AlertData",
       "description": null,
-      "url": "/alertsx/reference/objects/alertdata"
+      "url": "/alerts-x/reference/objects/alertdata"
     },
     {
       "name": "AlertsXQuery",
       "description": null,
-      "url": "/alertsx/reference/objects/alertsxquery"
+      "url": "/alerts-x/reference/objects/alertsxquery"
     }
   ],
   "enumValues": null,
