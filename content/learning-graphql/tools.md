@@ -35,7 +35,7 @@ It's nice to be able to _see_ your schema and be able to navigate through it.
 
 ### Documentation Generators
 
-Generate beaultiful static documentation sites directly from schema or introspection query
+Generate beautiful static documentation sites directly from schema or introspection query
 
 * [GraphQL Playground](https://github.com/prismagraphql/graphql-playground) - GraphQL IDE for docs & coollaboration
 * [Graph Docs](https://graphql-docs.com/docs/?graphqlUrl=http://api-dev.travelgatex.com)

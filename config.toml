@@ -407,7 +407,7 @@ discourseUrl = "http://community.travelgatex.com/"
   # Footer section
   [params.footer]
     enable = true
-    copyright = '&copy; <a title="TravelgateX" target="_blank" href="https://www.travelgatex.com/" style="color: white;font-weight: bold;">TravelgateX</a> 2018. All Rights Reserved. TravelgateX is made with &#9829; in the beaultiful  🏝️ of Mallorca.'
+    copyright = '&copy; <a title="TravelgateX" target="_blank" href="https://www.travelgatex.com/" style="color: white;font-weight: bold;">TravelgateX</a> 2018. All Rights Reserved. TravelgateX is made with &#9829; in the beautiful  🏝️ of Mallorca.'
 
 # Related Content
 [related]
