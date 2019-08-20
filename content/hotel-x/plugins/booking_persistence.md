@@ -56,7 +56,7 @@ If the booking returned is a retrieved booking, the application will show a warn
 
 
 ### Flow
-![alt text](https://github.com/travelgateX/documentation-site/new/master/content/hotel-x/plugins/images/BookingPersistence.png)
+![Booking Persistence Squema](https://docs.travelgatex.com/hotel-x/plugins/images/BookingPersistence.png)
 
 ### Files needed to use this plugin
 
