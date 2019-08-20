@@ -11,9 +11,7 @@
 	{{ with .Site.Copyright }}<rights type="text">{{.}}</rights>{{end}}
 	<generator url="https://gohugo.io" version="{{.Hugo.Version}}">Hugo</generator>
 	<updated>
-		{{if isset .GitInfo "authordate" }}
-			{{.GitInfo.AuthorDate }}
-		{{else if isset .Params "Lastmod" }}
+		{{if isset .Params "Lastmod" }}
 			{{ .Page.Lastmod.Format "02/01/2006" }} {{.Page.Lastmod.Day}}
 		{{else}}
 			{{ now.Format "2006-01-02 15:04:00 MST" }}
