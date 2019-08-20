@@ -34,7 +34,7 @@ It's nice to be able to _see_ your schema and be able to navigate through it.
 * [GraphQL Voyager](https://apis.guru/graphql-voyager/) - Represent any GraphQL API as an interactive graph
 
 ### Documentation Generators
-
+git co bea  
 Generate beautiful static documentation sites directly from schema or introspection query
 
 * [GraphQL Playground](https://github.com/prismagraphql/graphql-playground) - GraphQL IDE for docs & coollaboration
