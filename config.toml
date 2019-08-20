@@ -12,7 +12,7 @@ theme = "docdock"
 home = [ "HTML", "Atom", "JSON"]
 
 [mediaTypes]
-[mediaTypes."application/atom+xml"]
+[mediaTypes."application/atom"]
 suffixes = ["xml"]
 
 # Custom config front
@@ -20,7 +20,7 @@ suffixes = ["xml"]
 disableKinds = ["RSS"]  # kick out RSS
 
 [outputFormats.ATOM]
-mediaType             = "application/atom+xml"
+mediaType             = "application/atom"
 baseName              = "feed"
 isPlainText           = false
 isHTML                = false
