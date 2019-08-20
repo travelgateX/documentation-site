@@ -7,19 +7,20 @@ weight = 3
 alwaysopen = false
 +++
 
-Booking Persistence is a plugin that allows store bookings.
+Booking Persistence is a plugin that allows clients to store bookings.
 
 
 ## Booking Persistence {#Booking Persistence} 
 
 ### Goals 
 
-Booking Persistence is a plugin that allows clients to store bookings and avoid duplicated bookings. 
-This plugin only can be executed in booking service. 
-With this plugin, each booking(by clientReference) of an organization is unique. 
-Each booking done with this plugin will be stored since one day after booking checkout day. 
-An application/communication error will store a booking with UNKNOWN status. 
-This plugin has to be used for store and retrieve booking. 
+Booking Persistence is a plugin that allows clients to store bookings and avoid duplicated bookings. A **duplicated booking** is a booking that has the same cliente reference that other previous booking.  
+This plugin only can be executed in **book** service. 
+With this plugin, each booking (by clientReference) of an organization is unique. 
+Each booking done with this plugin will be stored until one day after booking checkout day. 
+An application/communication error during booking process will store a persistent booking with **UNKNOWN** status.
+In the following bookings with same client reference, the same response will be returned. In these cases, we don't send a request to the provider and the booking is read from database.
+This plugin is used for storing and retrieving the bookings. This two processes are executed transparently for the client in the booking process. 
 If the booking returned is a retrieved booking, the application will show a warning like this:
 
 ```json
