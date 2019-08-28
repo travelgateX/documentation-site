@@ -14,6 +14,14 @@ The GraphQL schema change log is a list of recent and upcoming changes to our Gr
 
 Check out this list of new releases and changes applied on the **TravelgateX GraphQL API**.
 
+## 2019-08-19
+
+🛑  Input field `ReferenceFilter.supplier` changed type from `String` to `[String]`
+
+🛑  Input field `ReferenceFilter.client` changed type from `String` to `[String]`
+
+✅  Description `Input PaymentCard, if the payment is done by credit card, is it mandatory to specify the payment type and the credit card information` on type `PaymentCardInput` has changed to `Input PaymentCard, if the payment type is DIRECT, CARD_BOOKING or CARD_CHECK_IN, then is mandatory to specify the payment card information`
+
 ## 2019-08-08
 
 ⚠️  Union member `API` was added to Union type `AlertObjectsUnion`
