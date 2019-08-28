@@ -14,6 +14,54 @@ The GraphQL schema change log is a list of recent and upcoming changes to our Gr
 
 Check out this list of new releases and changes applied on the **TravelgateX GraphQL API**.
 
+## 2019-08-29
+
+🛑  Input field `ReferenceFilter.supplier` changed type from `[String]` to `[String!]`
+
+🛑  Input field `ReferenceFilter.client` changed type from `[String]` to `[String!]`
+
+⚠️  Enum value `PRICE` was added to enum `AlertType`
+
+✅  Input field `configurationPrice` was added to input object type `AlertUpdateInput`
+
+✅  Input field `AlertConfigurationInputAverageTime.groupBy` description changed from `Possibility to group by traffic and calculate its parameters separately ` to `Possibility to group by traffic and calculate its parameters separately`
+
+✅  Input field `configurationPrice` was added to input object type `AlertInput`
+
+✅  Input field `hotel` was added to input object type `ReferenceFilter`
+
+✅  Input field `LoggingLegacyFilterInput.to` changed type from `DateTime!` to `DateTime`
+
+✅  Input field `LoggingLegacyFilterInput.from` changed type from `DateTime!` to `DateTime`
+
+✅  Input field `groups` was added to input object type `LoggingLegacyFilterInput`
+
+✅  Input field `timeRange` was added to input object type `LoggingLegacyFilterInput`
+
+✅  Field `price` was added to object type `AlertTypeConfiguration`
+
+✅  Field `legacyRoomId` was added to object type `Room`
+
+✅  Deprecation reason on field `AdminQuery.entities` has changed from `` to `deprecated from 2019-08-21. Only for statsX product. Use client, supplier, accesess queries`
+
+✅  Type `AlertPriceUpdateInput` was added
+
+✅  Type `AlertUpdateConfigurationInputPrice` was added
+
+✅  Type `AlertPriceInput` was added
+
+✅  Type `AlertGroupsInsights` was added
+
+✅  Type `AlertConfigurationInputPrice` was added
+
+✅  Type `RangePrice` was added
+
+✅  Type `CheckPrice` was added
+
+✅  Type `ModePrice` was added
+
+✅  Type `AlertPrice` was added
+
 ## 2019-08-19
 
 🛑  Input field `ReferenceFilter.supplier` changed type from `String` to `[String]`
