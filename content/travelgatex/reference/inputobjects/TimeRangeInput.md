@@ -23,6 +23,11 @@
       "name": "StatsFilterInput",
       "description": null,
       "url": "/travelgatex/reference/inputobjects/statsfilterinput"
+    },
+    {
+      "name": "LoggingLegacyFilterInput",
+      "description": "Filters needed to do a search.\nFrom (Start date of search - YYYY-MM-DD HH:mm:ss), To (End date of search - YYYY-MM-DD HH:mm:ss), ",
+      "url": "/travelgatex/reference/inputobjects/logginglegacyfilterinput"
     }
   ],
   "enumValues": null,

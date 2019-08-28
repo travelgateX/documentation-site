@@ -13,6 +13,14 @@
     },
     {
       "typeString": "String!",
+      "name": "legacyRoomId",
+      "url": "/travelgatex/reference/scalars/string",
+      "description": null,
+      "isDeprecated": false,
+      "args": null
+    },
+    {
+      "typeString": "String!",
       "name": "code",
       "url": "/travelgatex/reference/scalars/string",
       "description": null,

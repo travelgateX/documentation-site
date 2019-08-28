@@ -30,6 +30,11 @@
       "url": "/alerts-x/reference/objects/alerttypeconfiguration"
     },
     {
+      "name": "AlertPrice",
+      "description": "Price contains the specific configuration for Price alert Type",
+      "url": "/alerts-x/reference/objects/alertprice"
+    },
+    {
       "name": "GroupData",
       "description": null,
       "url": "/alerts-x/reference/objects/groupdata"
@@ -70,9 +75,19 @@
       "url": "/alerts-x/reference/inputobjects/alertconfigurationinputpeaktraffic"
     },
     {
+      "name": "AlertConfigurationInputPrice",
+      "description": null,
+      "url": "/alerts-x/reference/inputobjects/alertconfigurationinputprice"
+    },
+    {
       "name": "ErrorCodeInput",
       "description": null,
       "url": "/alerts-x/reference/inputobjects/errorcodeinput"
+    },
+    {
+      "name": "AlertPriceInput",
+      "description": "Price input",
+      "url": "/alerts-x/reference/inputobjects/alertpriceinput"
     },
     {
       "name": "AlertUpdateConfigurationInputNoTraffic",
@@ -93,6 +108,16 @@
       "name": "AlertUpdateConfigurationInputPeakTraffic",
       "description": "Configuration update for PEAK_TRAFFIC alert type. Peak traffic is used to verify traffic comparing volum of requests between to time frame (window and historical window) . ",
       "url": "/alerts-x/reference/inputobjects/alertupdateconfigurationinputpeaktraffic"
+    },
+    {
+      "name": "AlertUpdateConfigurationInputPrice",
+      "description": null,
+      "url": "/alerts-x/reference/inputobjects/alertupdateconfigurationinputprice"
+    },
+    {
+      "name": "AlertPriceUpdateInput",
+      "description": "Price update",
+      "url": "/alerts-x/reference/inputobjects/alertpriceupdateinput"
     }
   ],
   "enumValues": null,

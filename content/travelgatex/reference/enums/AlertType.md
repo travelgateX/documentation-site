@@ -34,6 +34,12 @@
       "description": null,
       "isDeprecated": false,
       "deprecationReason": null
+    },
+    {
+      "name": "PRICE",
+      "description": null,
+      "isDeprecated": false,
+      "deprecationReason": null
     }
   ],
   "operator": "enum",

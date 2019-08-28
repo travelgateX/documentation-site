@@ -13,6 +13,14 @@
     },
     {
       "typeString": "String!",
+      "name": "legacyRoomId",
+      "url": "/hotel-x/reference/scalars/string",
+      "description": null,
+      "isDeprecated": false,
+      "args": null
+    },
+    {
+      "typeString": "String!",
       "name": "code",
       "url": "/hotel-x/reference/scalars/string",
       "description": null,

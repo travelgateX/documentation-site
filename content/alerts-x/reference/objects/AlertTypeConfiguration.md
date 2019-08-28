@@ -42,6 +42,14 @@
       "description": "Error codes to be Compared with Checked codes. By default all error codes",
       "isDeprecated": false,
       "args": null
+    },
+    {
+      "typeString": "AlertPrice",
+      "name": "price",
+      "url": "/alerts-x/reference/objects/alertprice",
+      "description": "Price contains the specific configuration for Price alert Type",
+      "isDeprecated": false,
+      "args": null
     }
   ],
   "requireby": [

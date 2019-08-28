@@ -46,6 +46,13 @@
       "args": null
     },
     {
+      "typeString": "AlertConfigurationInputPrice",
+      "name": "configurationPrice",
+      "url": "/travelgatex/reference/inputobjects/alertconfigurationinputprice",
+      "description": "Price Configuration",
+      "args": null
+    },
+    {
       "typeString": "Boolean!",
       "name": "isActive",
       "url": "/travelgatex/reference/scalars/boolean",

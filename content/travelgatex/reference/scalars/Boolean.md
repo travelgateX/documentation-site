@@ -275,6 +275,11 @@
       "url": "/travelgatex/reference/inputobjects/alertconfigurationinputpeaktraffic"
     },
     {
+      "name": "AlertConfigurationInputPrice",
+      "description": null,
+      "url": "/travelgatex/reference/inputobjects/alertconfigurationinputprice"
+    },
+    {
       "name": "HubStatusInput",
       "description": null,
       "url": "/travelgatex/reference/inputobjects/hubstatusinput"
@@ -318,6 +323,11 @@
       "name": "AlertUpdateConfigurationInputPeakTraffic",
       "description": "Configuration update for PEAK_TRAFFIC alert type. Peak traffic is used to verify traffic comparing volum of requests between to time frame (window and historical window) . ",
       "url": "/travelgatex/reference/inputobjects/alertupdateconfigurationinputpeaktraffic"
+    },
+    {
+      "name": "AlertUpdateConfigurationInputPrice",
+      "description": null,
+      "url": "/travelgatex/reference/inputobjects/alertupdateconfigurationinputprice"
     }
   ],
   "enumValues": null,

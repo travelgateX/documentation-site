@@ -32,12 +32,17 @@
 - Removal of `loadFile` from `HotelXMutation`. Reason: .  Deprecated on 2018-06-06.**To be removed soon**.
 - Removal of `cache` from `OperationDetailed`. Reason: Added new field trafficType..  Deprecated on 2019-04-03.**To be removed soon**.
 - Removal of `ratios` from `StatsData`. Reason: Added hits fields to be able to calculate ratios at client side..  Deprecated on 2019-04-08.**To be removed soon**.
+- Removal of `entities` from `AdminQuery`. Reason: Only for statsX product. Use client, supplier, accesess queries.  Deprecated on 2019-08-21.Expected removal on 2019-11-19.
 - Removal of `description` from `Bed`. Reason: Deprecated from 2019-07-29.  Deprecated on 2019-07-29.Expected removal on 2019-10-27.
 - Removal of `error` from `Board`. Reason: Deprecated from 2019-07-03.  Deprecated on 2019-07-03.Expected removal on 2019-10-01.
 - Removal of `error` from `Category`. Reason: Deprecated from 2019-07-03.  Deprecated on 2019-07-03.Expected removal on 2019-10-01.
 - Removal of `error` from `Destination`. Reason: Deprecated from 2019-07-03.  Deprecated on 2019-07-03.Expected removal on 2019-10-01.
 - Removal of `error` from `Hotel`. Reason: Deprecated from 2019-07-03.  Deprecated on 2019-07-03.Expected removal on 2019-10-01.
 - Removal of `error` from `RoomStatic`. Reason: Deprecated from 2019-07-03.  Deprecated on 2019-07-03.Expected removal on 2019-10-01.
+{{% / release-notes-container %}}
+### 2019-08-21
+{{% release-notes-container type="d"%}}
+- Deprecated `entities` from `AdminQuery`. Reason: Only for statsX product. Use client, supplier, accesess queries. Expected removal on 2019-11-19 .
 {{% / release-notes-container %}}
 ### 2019-07-29
 {{% release-notes-container type="d"%}}
