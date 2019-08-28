@@ -14,11 +14,66 @@ The GraphQL schema change log is a list of recent and upcoming changes to our Gr
 
 Check out this list of new releases and changes applied on the **TravelgateX GraphQL API**.
 
+## 2019-06-13
+
+⚠️  Enum value `SCHEDULER` was added to enum `TrafficType`
+
+⚠️  Enum value `PAYX` was added to enum `PaymentType`
+
+✅  Input field `AlertUpdateConfigurationInputPeakTraffic.client` description changed from `Possibility to filter traffic by clients (hub user)` to `Possibility to filter traffic by clients`
+
+✅  Input field `AlertUpdateConfigurationInputPeakTraffic.supplier` description changed from `Possibility to filter traffic by suppliers (hub provider)` to `Possibility to filter traffic by suppliers`
+
+✅  Input field `AlertUpdateConfigurationInputAverageTime.client` description changed from `Possibility to filter traffic by clients (hub user)` to `Possibility to filter traffic by clients`
+
+✅  Input field `AlertUpdateConfigurationInputAverageTime.supplier` description changed from `Possibility to filter traffic by suppliers (hub provider)` to `Possibility to filter traffic by suppliers`
+
+✅  Input field `AlertUpdateConfigurationInputErrorRate.client` description changed from `Possibility to filter traffic by clients (hub user)` to `Possibility to filter traffic by clients`
+
+✅  Input field `AlertUpdateConfigurationInputErrorRate.supplier` description changed from `Possibility to filter traffic by suppliers (hub provider)` to `Possibility to filter traffic by suppliers`
+
+✅  Input field `AlertUpdateConfigurationInputNoTraffic.client` description changed from `Possibility to filter traffic by clients (hub user)` to `Possibility to filter traffic by clients`
+
+✅  Input field `AlertUpdateConfigurationInputNoTraffic.supplier` description changed from `Possibility to filter traffic by suppliers (hub provider)` to `Possibility to filter traffic by suppliers`
+
+✅  Input field `AlertConfigurationInputPeakTraffic.client` description changed from `Possibility to filter traffic by clients (hub user)` to `Possibility to filter traffic by clients`
+
+✅  Input field `AlertConfigurationInputPeakTraffic.supplier` description changed from `Possibility to filter traffic by suppliers (hub provider)` to `Possibility to filter traffic by suppliers`
+
+✅  Input field `AlertConfigurationInputAverageTime.client` description changed from `Possibility to filter traffic by clients (hub user)` to `Possibility to filter traffic by clients`
+
+✅  Input field `AlertConfigurationInputAverageTime.supplier` description changed from `Possibility to filter traffic by suppliers (hub provider` to `Possibility to filter traffic by suppliers`
+
+✅  Input field `AlertConfigurationInputErrorRate.client` description changed from `Possibility to filter traffic by clients (hub user)` to `Possibility to filter traffic by clients`
+
+✅  Input field `AlertConfigurationInputErrorRate.supplier` description changed from `Possibility to filter traffic by suppliers (hub provider)` to `Possibility to filter traffic by suppliers`
+
+✅  Input field `AlertConfigurationInputNoTraffic.client` description changed from `Possibility to filter traffic by clients (hub user)` to `Possibility to filter traffic by clients`
+
+✅  Input field `AlertConfigurationInputNoTraffic.supplier` description changed from `Possibility to filter traffic by suppliers (hub provider)` to `Possibility to filter traffic by suppliers`
+
+✅  Description for enum value `TrafficType.OPTIMIZED` changed from `Ratios calculated from traffic between Speed and seller` to `Ratios calculated from traffic between TGX's caches and seller`
+
+✅  Field `billingSupplierCode` was added to object type `HotelBookingDetail`
+
+✅  Field `supplierCode` was added to object type `RatePlan`
+
+✅  Field `features` was added to object type `Room`
+
+✅  Field `supplierCode` was added to object type `Room`
+
+✅  Argument `label: String` added to field `AdminQuery.organizations`
+
+✅  Type `Feature` was added
+
 ## 2019-05-30
 
 🛑  Field `StatsInfo.hits` changed type from `Int!` to `Int64!`
+
 🛑  Field `OperationDetailed.totalHits` changed type from `Int!` to `Int64!`
+
 🛑  Field `StatsData.hits` changed type from `Int!` to `Int64!`
+
 ✅  Type `Int64` was added
 
 ## 2019-05-30
