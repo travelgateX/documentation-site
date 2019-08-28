@@ -19,6 +19,11 @@ To make it easier for users and contributors to see precisely what notable chang
 - [New TravelgateX Slack Bot](https://github.com/travelgateX/slack-botx)
 {{% /release-notes-container %}}
 
+## 2019-06-25
+{{% release-notes-container type="c"%}}
+- [GraphQL Schema updated.](/travelgatex/release-notes/graphql-schema-changes/#2019-06-25)
+{{% /release-notes-container %}}
+
 ## 2019-06-13
 {{% release-notes-container type="c"%}}
 - [GraphQL Schema updated.](/travelgatex/release-notes/graphql-schema-changes/#2019-06-13)

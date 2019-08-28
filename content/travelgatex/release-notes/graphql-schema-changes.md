@@ -14,6 +14,20 @@ The GraphQL schema change log is a list of recent and upcoming changes to our Gr
 
 Check out this list of new releases and changes applied on the **TravelgateX GraphQL API**.
 
+## 2019-06-25
+
+🛑  Enum value `XTG` was removed from enum `AlertGroups`
+
+🛑  Enum value `SUPPLIER_EXTERNAL` was removed from enum `AlertGroups`
+
+✅  Input field `label` was added to input object type `CreateOrganizationInput`
+
+✅  Input field `HotelXCategoryQueryInput.access` changed type from `ID!` to `ID`
+
+✅  Input field `group` was added to input object type `HotelXCategoryQueryInput`
+
+✅  Argument `api: [ID!]` added to field `AdminQuery.groups`
+
 ## 2019-06-13
 
 ⚠️  Enum value `SCHEDULER` was added to enum `TrafficType`
