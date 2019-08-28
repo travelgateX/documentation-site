@@ -14,6 +14,34 @@ The GraphQL schema change log is a list of recent and upcoming changes to our Gr
 
 Check out this list of new releases and changes applied on the **TravelgateX GraphQL API**.
 
+
+## 2019-08-05
+
+🛑  Input field `PaymentCardInput.cardType` changed type from `PaymentCardType!` to `String`
+
+🛑  Input field `ActiveFilterInput.codes` changed type from `[ID!]` to `[ID!]!`
+
+✅  Input field `PaymentCardInput.cardType` description changed from `Indicates the supported card type, the supported card for this option is shown in Quote step.` to `Indicates the supported card type, the supported card for this option is shown in Quote step.
+@deprecated(reason: "deprecated from 2019-07-31. Please, use type")`
+
+✅  Input field `type` was added to input object type `PaymentCardInput`
+
+✅  Field `AlertConfiguration.groupBy` description changed from `Group by traffic and calculate its parameters separately ` to `Group by traffic and calculate its parameters separately`
+
+✅  Field `comercialType` was added to object type `AlertConfiguration`
+
+✅  Field `macroPermissions` was added to object type `ProductData`
+
+✅  Type `Permission` was added
+
+✅  Type `MacroPermissionData` was added
+
+✅  Type `MacroPermission` was added
+
+✅  Type `MacroPermissionEdge` was added
+
+✅  Type `MacroPermissionsConnection` was added
+
 ## 2019-07-31
 🛑  Input field `PaymentCardInput.cardType` changed type from `String!` to `PaymentCardType!`
 
