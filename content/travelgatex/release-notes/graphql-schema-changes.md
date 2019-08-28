@@ -14,6 +14,74 @@ The GraphQL schema change log is a list of recent and upcoming changes to our Gr
 
 Check out this list of new releases and changes applied on the **TravelgateX GraphQL API**.
 
+## 2019-07-04
+
+✅  Field `updateSystem` was added to object type `AdminMutation`
+
+✅  Field `createSystem` was added to object type `AdminMutation`
+
+✅  Field `hotel` was added to object type `Reference`
+
+✅  Field `SupplierData.owner` changed type from `Organization` to `Organization!`
+
+✅  Field `system` was added to object type `SupplierData`
+
+✅  Field `systems` was added to object type `AdminQuery`
+
+✅  Field `logging` was added to object type `Query`
+
+✅  Type `EnvironmentType` was added
+
+✅  Type `LoggingFilterInput` was added
+
+✅  Type `TGXFilter` was added
+
+✅  Type `LoggingEdge` was added
+
+✅  Type `LoggingConnection` was added
+
+✅  Type `TGX` was added
+
+✅  Type `LoggingData` was added
+
+✅  Type `Logging` was added
+
+✅  Type `UpdateSystemInput` was added
+
+✅  Type `CreateSystemInput` was added
+
+✅  Type `ErrorFilter` was added
+
+✅  Type `LoggingLegacyFilterInput` was added
+
+✅  Type `Worker` was added
+
+✅  Type `CloudEnvironment` was added
+
+✅  Type `EnvironmentName` was added
+
+✅  Type `Environment` was added
+
+✅  Type `LoggingLegacyData` was added
+
+✅  Type `LoggingLegacy` was added
+
+✅  Type `LoggingLegacyEdge` was added
+
+✅  Type `LoggingLegacyConnection` was added
+
+✅  Type `LoggingQuery` was added
+
+✅  Type `SystemFilter` was added
+
+✅  Type `SystemEdge` was added
+
+✅  Type `SystemConnection` was added
+
+✅  Type `SystemData` was added
+
+✅  Type `System` was added
+
 ## 2019-06-25
 
 🛑  Enum value `XTG` was removed from enum `AlertGroups`
