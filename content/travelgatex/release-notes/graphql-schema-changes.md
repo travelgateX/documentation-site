@@ -14,6 +14,41 @@ The GraphQL schema change log is a list of recent and upcoming changes to our Gr
 
 Check out this list of new releases and changes applied on the **TravelgateX GraphQL API**.
 
+## 2019-08-08
+
+⚠️  Union member `API` was added to Union type `AlertObjectsUnion`
+
+✅  Input field `api` was added to input object type `AlertUpdateConfigurationInputPeakTraffic`
+
+✅  Input field `api` was added to input object type `AlertUpdateConfigurationInputAverageTime`
+
+✅  Input field `api` was added to input object type `AlertUpdateConfigurationInputErrorRate`
+
+✅  Input field `api` was added to input object type `AlertUpdateConfigurationInputNoTraffic`
+
+✅  Input field `api` was added to input object type `AlertConfigurationInputPeakTraffic`
+
+✅  Input field `api` was added to input object type `AlertConfigurationInputAverageTime`
+
+✅  Input field `api` was added to input object type `AlertConfigurationInputErrorRate`
+
+✅  Input field `api` was added to input object type `AlertConfigurationInputNoTraffic`
+
+✅  Field `revokeMacroPermissionsFromMember` was added to object type `AdminMutation`
+
+✅  Field `grantMacroPermissionsToMember` was added to object type `AdminMutation`
+
+✅  Field `suitFolder` was added to object type `AdminMutation`
+
+✅  Input field `HotelXDestinationListInput.access` changed type from `ID!` to `ID`
+
+✅  Input field `group` was added to input object type `HotelXDestinationListInput`
+
+✅  Type `GrantMacroPermissionInput` was added
+
+✅  Type `FolderTemplate` was added
+
+✅  Type `SuitFolderInput` was added
 
 ## 2019-08-05
 
