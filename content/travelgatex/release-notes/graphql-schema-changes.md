@@ -14,6 +14,55 @@ The GraphQL schema change log is a list of recent and upcoming changes to our Gr
 
 Check out this list of new releases and changes applied on the **TravelgateX GraphQL API**.
 
+## 2019-07-15
+
+🛑  Field `ProfileData.type` changed type from `ProfileType` to `[ProfileType!]!`
+
+✅  Input field `reference` was added to input object type `LoggingLegacyFilterInput`
+
+✅  Field `getActiveConnection` was added to object type `StatsQuery`
+
+✅  Deprecation reason on field `Destination.error` has changed from `` to `Deprecated from 2019-07-03`
+
+✅  Field `adviseMessage` was added to object type `Destination`
+
+✅  Deprecation reason on field `RoomStatic.error` has changed from `` to `Deprecated from 2019-07-03`
+
+✅  Field `RoomStatic.error` description changed from `Errors that abort services` to `Errors that abort services.`
+
+✅  Field `adviseMessage` was added to object type `RoomStatic`
+
+✅  Description `By default: Logical AND on all given filters. only hotels that match condition are returned` on type `HotelXHotelFilterInput` has changed to `By default: Logical AND on all given filters. Hotels data are returned
+only if match condition`
+
+✅  Deprecation reason on field `Hotel.error` has changed from `` to `Deprecated from 2019-07-03`
+
+✅  Field `adviseMessage` was added to object type `Hotel`
+
+✅  Deprecation reason on field `Category.error` has changed from `` to `Deprecated from 2019-07-03`
+
+✅  Field `adviseMessage` was added to object type `Category`
+
+✅  Deprecation reason on field `Board.error` has changed from `` to `Deprecated from 2019-07-03`
+
+✅  Field `Board.error` description changed from `Errors that abort services` to `Errors that abort services.`
+
+✅  Field `adviseMessage` was added to object type `Board`
+
+✅  Field `profiles` was added to object type `GroupData`
+
+✅  Field `profiles` was added to object type `OrganizationData`
+
+✅  Type `ReferenceFilter` was added
+
+✅  Type `ActiveFilterInput` was added
+
+✅  Type `Connection` was added
+
+✅  Type `ConnectionEdge` was added
+
+✅  Type `ConnectionConnection` was added
+
 ## 2019-07-04
 
 ✅  Field `updateSystem` was added to object type `AdminMutation`
