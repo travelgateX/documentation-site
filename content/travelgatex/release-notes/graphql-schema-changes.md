@@ -14,6 +14,75 @@ The GraphQL schema change log is a list of recent and upcoming changes to our Gr
 
 Check out this list of new releases and changes applied on the **TravelgateX GraphQL API**.
 
+## 2019-07-31
+🛑  Input field `PaymentCardInput.cardType` changed type from `String!` to `PaymentCardType!`
+
+🛑  Input field `owner` was removed from input object type `UpdateProfileInput`
+
+🛑  Input field `owner` was removed from input object type `CreateProfileInput`
+
+🛑  Field `HotelOptionQuote.cardTypes` changed type from `[String!]` to `[PaymentCardType!]`
+
+🛑  Field `HotelData.cardTypes` changed type from `[String!]` to `[PaymentCardType!]`
+
+✅  Input field `PaymentCardInput.cardType` description changed from `Indicates the card type.` to `Indicates the supported card type, the supported card for this option is shown in Quote step.`
+
+✅  Input field `api` was added to input object type `GrantPermissionsInput`
+
+✅  Field `grantProfileToGroup` was added to object type `AdminMutation`
+
+✅  Field `deleteProfile` was added to object type `AdminMutation`
+
+✅  Input field `StatsFilterInput.to` changed type from `DateTime!` to `DateTime`
+
+✅  Input field `StatsFilterInput.to` description changed from `To date of search` to ` To date of search
+@deprecated(reason: "deprecated from 2019-07-19. Added new field timeRange.")`
+
+✅  Input field `StatsFilterInput.from` changed type from `DateTime!` to `DateTime`
+
+✅  Input field `StatsFilterInput.from` description changed from `From date of search` to `From date of search
+@deprecated(reason: "deprecated from 2019-07-19. Added new field timeRange.")`
+
+✅  Input field `StatsFilterInput.mode` description changed from `Buyer or Seller
+@deprecated(reason: "deprecated from 2019-04-11. Superfluous field.")` to ` Buyer or Seller
+@deprecated(reason: "deprecated from 2019-04-11. Superfluous field.")`
+
+✅  Input field `timeRange` was added to input object type `StatsFilterInput`
+
+✅  Field `adviseMessage` was added to object type `StatsConnection`
+
+✅  Enum value `BookStatusType.KO` was deprecated with reason `Deprecated from 2019-07-29`
+
+✅  Field `HotelOptionQuote.cardTypes` description changed from `List of credit cards` to `List of credit cards allowed for this option`
+
+✅  Deprecation reason on field `Bed.description` has changed from `` to `Deprecated from 2019-07-29`
+
+✅  Field `occupancies` was added to object type `RoomData`
+
+✅  Field `source` was added to object type `RoomData`
+
+✅  Field `rooms` was added to object type `HotelData`
+
+✅  Field `adviseMessageCatalog` was added to object type `ProductData`
+
+✅  Argument `contains: String` added to field `AdminQuery.groups`
+
+✅  Type `DeleteProfileInput` was added
+
+✅  Type `AbsoluteInput` was added
+
+✅  Type `Duration` was added
+
+✅  Type `RelativeInput` was added
+
+✅  Type `TimeRangeInput` was added
+
+✅  Type `OccupancyRange` was added
+
+✅  Type `OccupancyStatic` was added
+
+✅  Type `PaymentCardType` was added
+
 ## 2019-07-15
 
 🛑  Field `ProfileData.type` changed type from `ProfileType` to `[ProfileType!]!`
