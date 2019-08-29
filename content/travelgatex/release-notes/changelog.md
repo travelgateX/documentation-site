@@ -13,15 +13,9 @@ To make it easier for users and contributors to see precisely what notable chang
 
 {{% alert theme="info" %}}All notable changes on TravelgateX platform will be documented in this page.{{% /alert %}}
 
-<<<<<<< HEAD
 ## 2019-08-29
 {{% release-notes-container type="c"%}}
 - [GraphQL Schema updated.](/travelgatex/release-notes/graphql-schema-changes/#2019-08-29)
-=======
-## 2019-08-28
-{{% release-notes-container type="c"%}}
-- [GraphQL Schema updated.](/travelgatex/release-notes/graphql-schema-changes/#2019-08-28)
->>>>>>> cb39564ecfa58ff32e43941770791ce3060d18a5
 {{% /release-notes-container %}}
 
 ## 2019-08-19

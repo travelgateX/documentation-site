@@ -14,11 +14,7 @@ The GraphQL schema change log is a list of recent and upcoming changes to our Gr
 
 Check out this list of new releases and changes applied on the **TravelgateX GraphQL API**.
 
-<<<<<<< HEAD
 ## 2019-08-29
-=======
-## 2019-08-28
->>>>>>> cb39564ecfa58ff32e43941770791ce3060d18a5
 
 🛑  Input field `ReferenceFilter.supplier` changed type from `[String]` to `[String!]`
 
