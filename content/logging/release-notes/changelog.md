@@ -20,7 +20,7 @@ Easily accessible log of notable changes to Logging
 {{% /release-notes-container %}}
 
 {{% release-notes-container type="c"%}}
-- Now `reference` filters are arrays in order to be able to request multiple reerences at once.
+- Now `reference` filters are arrays in order to be able to request multiple references at once.
 {{% /release-notes-container %}}
 
 ## 2019-08-22
