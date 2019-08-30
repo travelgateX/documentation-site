@@ -14,6 +14,15 @@ outputs = [ "HTML", "ATOM"]
 Easily accessible log of notable changes to Logging
 
 
+## 2019-08-30
+{{% release-notes-container type="c"%}}
+- Now quotes requested by Speed have the same sessionID that quotes requested by the client in order to identify them.
+{{% /release-notes-container %}}
+
+{{% release-notes-container type="c"%}}
+- Now `reference` filters are arrays in order to be able to request multiple reerences at once.
+{{% /release-notes-container %}}
+
 ## 2019-08-22
 {{% release-notes-container type="a"%}}
 - Added the field `hotel` in the input object `reference` from which bookings can be searched by the hotel's reference.
