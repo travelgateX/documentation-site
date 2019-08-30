@@ -3,6 +3,8 @@ title: Connectivity
 keywords: hotel-push, connectivity
 search: Hotel-Push - Connectivity
 sidebar: mydoc_sidebar
+icon : fa-plug
+aliases: [/legacy/docs/hotel-push/connectivity]
 permalink: /docs/hotel-push/connectivity
 ---
 

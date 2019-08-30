@@ -3,6 +3,8 @@ title: Change Log
 keywords: hotel-push, change log
 search: Hotel-Push - Change Log
 sidebar: mydoc_sidebar
+icon : fa-exchange
+aliases: [/legacy/docs/hotel-push/change-log]
 permalink: /docs/hotel-push/change-log
 ---
 

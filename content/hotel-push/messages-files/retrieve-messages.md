@@ -3,6 +3,8 @@ title: Retrieve Messages
 keywords: hotel-push, messages, messages files, retrieve messages
 search: Hotel-Push - MessagesFiles - Retrieve Messages
 sidebar: mydoc_sidebar
+icon : fa-cloud-download
+aliases: [/legacy/docs/hotel-push/messages-files/retrieve-messages]
 permalink: /docs/hotel-push/messages-files/retrieve-messages
 ---
 

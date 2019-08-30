@@ -2,6 +2,9 @@
 title: Messages with OTA xsd structure
 keywords: hotel-push, messages
 search: Hotel-Push - Messages
+icon : fa-commenting
+aliases: [/legacy/docs/hotel-push/messages]
+permalink: /docs/hotel-push/messages
 ---
 
 List of messages with OTA xsd structure used:

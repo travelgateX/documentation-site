@@ -3,6 +3,8 @@ title: Notify Messages
 keywords: hotel-push, messages, messages files, notify messages
 search: Hotel-Push - MessagesFiles - Notify Messages
 sidebar: mydoc_sidebar
+icon : fa-bell
+aliases: [/legacy/docs/hotel-push/messages-files/notify-messages]
 permalink: /docs/hotel-push/messages-files/notify-messages
 ---
 
