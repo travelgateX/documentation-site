@@ -73,6 +73,16 @@ is closed.
             </Guests>
         </ResGuests>
         <PaymentType>MerchantPay</PaymentType>
+        <CardInfo>
+            <CardCode>VI</CardCode>
+            <Number>4321432143214327</Number>
+            <Holder>Test11 TestAp11</Holder>
+            <ValidityDate>   
+                <Month>06</Month>
+                <Year>14</Year>
+            </ValidityDate>
+            <CVC>123</CVC>
+        </CardInfo>
         <Rooms>
             <Room id = "4582" roomCandidateRefId = "1" code = "506" description = "Double Standard.."/>
             <Preferences>
@@ -140,8 +150,15 @@ is closed.
 | @paxId   					| 1  		| Integer	| Passenger id (starting at 1).				|
 | ResGuests/Guests/Guest/GivenName		| 1 	 	| String	| Guest's given name.						|
 | ResGuests/Guests/Guest/SurName		| 1   		| String	| Guest's last name.						|
-| PaymentType   				| 1  		| String	| Indicates the type of payment.			|
-| Rooms          				| 1      	|		| Rooms within this option (room list).			|
+| PaymentType   				| 1  		| String	| Indicates the type of payment. It can be MerchantPay, LaterPay, CardBookingPay or CardCheckInPay. Payment types are explained in "Detailed description" section, in this same page.			|
+| CardInfo   				| 0..1  		|		| Credit card details.			|
+| CardInfo/CardCode   				| 1  		| String	| Indicates the type of credit card. See types allowed at [Credit Card Types](https://docs.travelgatex.com/legacy/docs/hotel/methods/listsdata/)			|
+| CardInfo/Number   				| 1  		| String	| Credit card number.			|
+| CardInfo/Holder   				| 1  		| String	| Credit card holder.			|
+| CardInfo/ValidityDate   				| 1  		|		| 			|
+| CardInfo/ValidityDate/Month   				| 1  		| String	| Expiration month (2 characters).			|
+| CardInfo/ValidityDate/Year   				| 1  		| String	| Expiration year (2 characters).			|
+| CardInfo/CVC   				| 1  		| String	| Credit card security code.			|
 | Rooms/Room    				| 1..n    	|		| Detail of room. 					|
 | @id      					| 1  		| String	| Room identifier.				|
 | @roomCandidateRefId				| 1  		| Integer	| Room candidate identifier.				|
