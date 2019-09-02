@@ -159,6 +159,7 @@ is closed.
 | CardInfo/ValidityDate/Month   				| 1  		| String	| Expiration month (2 characters).			|
 | CardInfo/ValidityDate/Year   				| 1  		| String	| Expiration year (2 characters).			|
 | CardInfo/CVC   				| 1  		| String	| Credit card security code.			|
+| Rooms          				| 1      	|		| Rooms within this option (room list).			|
 | Rooms/Room    				| 1..n    	|		| Detail of room. 					|
 | @id      					| 1  		| String	| Room identifier.				|
 | @roomCandidateRefId				| 1  		| Integer	| Room candidate identifier.				|
