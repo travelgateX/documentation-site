@@ -347,7 +347,7 @@ is closed.
 | @id 					| 1 		| String 	| Room ID.					|
 | @roomCandidateRefId 			| 1 		| Integer 	| Room candidate ID.					|
 | @code 				| 1 		| String 	| Room code.							|
-| @description 				| 1 		| String 	| Room description.						|
+| @description 				| 0..1 		| String 	| Room description. Mandatory if the supplier doesn't allow RoomList Method. If the supplier implements RoomList Method this field could be empty.						|
 | @nonRefundable 			| 0..1 		| String 	| Identifies if the room is refundable or not.			|
 | @numberOfUnits 			| 0..1 		| Integer 	| Number of rooms available with the same type (see StaticConfiguration).	|
 | MealPlans/MealPlan/Options /Option/Rooms/Room/Offers | 0..1 	| 		| The supplier returns in response which offer is applicable for each room (see StaticConfiguration in order to verify if a supplier implements it).	|
