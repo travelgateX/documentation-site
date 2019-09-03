@@ -21,6 +21,7 @@ Easily accessible log of notable changes to Insights-X
 
 {{% release-notes-container type="c"%}}
 * Schema modified for tables: insights\_(daily|weekly|monthly)\_destination\_(buyer|seller), insights\_agg\_(daily|weekly|monthly)\_destination\_(buyer|seller). Now, country field is outside the record.
+{{% /release-notes-container %}}
 
 ## 2019-08-27
 
