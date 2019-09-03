@@ -267,3 +267,55 @@ __Preview__
 |provider 1   | 2019-04-03 00:00:00 UTC | 2944               | 0.7314                  | 77                | 11463.625            | 0.0119             | 29            | 0.7385             | 65           | 103.508         | 0.0065        | 29590.885648230473 | 0.8551             | 42           | 58299.9138      | 0.0131        | 284            | 2934688          | 19356       | 8336888     |
 |provider 2   | 2019-04-03 00:00:00 UTC | 6680               | 0.7915                  | 60                | 11463.625            | 0.0271             | 19            | 0.689              | 73           | 103.508         | 0.0043        | 8789.47669647448   | 0.742              | 74           | 58299.9138      | 0.0039        | 284            | 2934688          | 19356       | 8336888     |
 |provider 3   | 2019-04-03 00:00:00 UTC | 3130               | 0.735                   | 76                | 11463.625            | 0.0127             | 12            | 0.6113             | 80           | 103.508         | 0.0027        | 8151.5             | 0.735              | 76           | 58299.9138      | 0.0036        | 284            | 2934688          | 19356       | 8336888     |
+
+
+
+## benchmark\_market\_city\_bw\_(daily|weekly|monthly)\_(buyer|seller)
+This table contains info from searches, quotes, bookings and revenue aggregated per search date, booking window, market, and location (country + Administrative Zone 1 + Administrative Zone 2 + City) by day|week|month of your organization and all buyers|sellers of TravelgateX. 
+
+
+__fields__
+
+* **search\_date (TIMESTAMP).** Search date in UTC (format: YYYY-MM-DD hh:mm:ss).
+* **__booking_window__ (NUMBER).** It is a division to describe how far away is the check-in date.
+    * Last second (0-1 day).
+    * Last minute (2-3 days).
+    * About 1 week (4-7 days).
+    * About 2 weeks (8-14 days).
+    * About 1 month (15-30 days)
+    * About 2 months (31-60 days).
+    * About 3 months (61-90 days).
+    * More than 3 months (90+ days).
+* **market (STRING).** Source market name. E.g. Spain
+* **country (STRING).** Country destination name. E.g. Spain
+* **zone_1 (STRING).** Administrative first level zone. E.g. Comunidad de Madrid
+* **zone_2 (STRING).** Administrative second level zone E.g. Madrid city
+* **city (STRING).** City name. If the city is big enough this level shows the neighbourghood. E.G. Chamberí
+* **search\_ok\_net (NUMBER).** Quantity of searches with available options for above key (search\_date, booking\_window, market, country, zone\_1, zone\_2, city) with net price available for your organization.
+* **search\_ok\_unknown (NUMBER).** Quantity of searches with available options for above key with a price where we don't know if any commission is applied for your organization.
+* **search\_nok (NUMBER).** Quantity of searches without available options for above for your organization.
+* **tot\_amount\_search\_net (NUMBER).** Total net amount of searches for above key for your organization.
+* **booking\_ok\_net (NUMBER).** Quantity of bookings for above key with net price available for your organization.
+* **booking\_ok\_unknown (NUMBER).** Quantity of bookings for above key with a price where we don't know if any commission is applied for your organization.
+* **tot\_amount\_booking\_net (NUMBER).** Total net amount of booking for above key for your organization.
+* **nights\_rooms\_search\_ok\_net (NUMBER).** It is the product of the length of stay, the number of rooms requested and the field search\_ok\_net.
+* **nights\_rooms\_booking\_ok\_net (NUMBER).** It is the product of the length of stay, the number of rooms requested and the field booking\_ok\_net.
+* **search\_ok\_net\_tgx (NUMBER).** Quantity of searches with available options for above key (search\_date, booking\_window, market, country, zone\_1, zone\_2, city) with net price available for all buyers|suppliers of TravelgateX.
+* **search\_ok\_unknown\_tgx (NUMBER).** Quantity of searches with available options for above key with a price where we don't know if any commission is applied for all buyers|suppliers of TravelgateX.
+* **search\_nok\_tgx (NUMBER).** Quantity of searches without available options for above for all buyers|suppliers of TravelgateX.
+* **tot\_amount\_search\_net\_tgx (NUMBER).** Total net amount of searches for above key for all buyers|suppliers of TravelgateX.
+* **booking\_ok\_net\_tgx (NUMBER).** Quantity of bookings for above key with net price available for all buyers|suppliers of TravelgateX.
+* **booking\_ok\_unknown\_tgx (NUMBER).** Quantity of bookings for above key with a price where we don't know if any commission is applied for all buyers|suppliers of TravelgateX.
+* **tot\_amount\_booking\_net\_tgx (NUMBER).** Total net amount of booking for above key for all buyers|suppliers of TravelgateX.
+* **nights\_rooms\_search\_ok\_net\_tgx (NUMBER).** It is the product of the length of stay, the number of rooms requested and the field search\_ok\_net.
+* **nights\_rooms\_booking\_ok\_net\_tgx (NUMBER).** It is the product of the length of stay, the number of rooms requested and the field booking\_ok\_net.
+
+
+__Preview__ 
+
+
+| booking\_window              | search\_date             | market  | country | zone\_1           | zone\_2  | city        | search\_ok\_net | search\_ok\_unknown | search\_nok | booking\_ok\_net | booking\_ok\_unknown | tot\_amount\_booking\_net | tot\_amount\_search\_net | nights\_rooms\_search\_ok\_net | nights\_rooms\_booking\_ok\_net | search\_ok\_net\_tgx | search\_ok\_unknown\_tgx | search\_nok\_tgx | booking\_ok\_net\_tgx | booking\_ok\_unknown\_tgx | tot\_amount\_booking\_net\_tgx | tot\_amount\_search\_net\_tgx | nights\_rooms\_search\_ok\_net\_tgx | nights\_rooms\_booking\_ok\_net\_tgx |
+|-----------------------------|-------------------------|---------|---------|------------------|---------|-------------|---------------|-------------------|------------|----------------|--------------------|------------------------|-----------------------|----------------------------|-----------------------------|-------------------|-----------------------|----------------|--------------------|------------------------|----------------------------|---------------------------|--------------------------------|---------------------------------|
+| 15-30 days (about 1 month)  | 2019-09-02 00:00:00 UTC | Spain   | Spain   | Andalucia        | Almeria | Las Marinas | 0             | 0                 | 0          | 0              | 0                  | 0.0                    | 0.0                   | 0                          | 0                           | 423137            | 11442                 | 1000767        | 24                 |                        | 8408.09                    | 2.4921782818564382E8      | 1842919                        | 109                             |
+| 2-3 days (last minute)      | 2019-09-02 00:00:00 UTC | Bahrain | Turkey  | Mugla            | Bodrum  | Guembet     | 14            | 0                 | 54         | 1              | 0                  | 1359.27                | 19616.02432           | 196                        | 14                          | 99                |                       | 1148           | 1                  |                        | 1359.27                    | 129696.2713370888         | 1386                           | 14                              |
+| 31-60 days (about 2 months) | 2019-09-02 00:00:00 UTC | Romania | Malta   | Saint Paul's Bay |         | Qawra       | 13            | 0                 | 56         | 1              | 0                  | 523.0786               | 10688.083528          | 91                         | 8                           | 2548              | 30                    | 2818           | 1                  |                        | 523.0786                   | 1786575.898334005         | 11019                          | 8                               |
