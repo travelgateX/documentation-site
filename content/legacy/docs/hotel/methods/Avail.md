@@ -116,7 +116,7 @@ is closed.
 | DailyRatePlans				| 0			| Boolean	|  Indicates if you want to receive the daily rate plans at room level in AvailRS, as long as the supplier returns it in this method (see [MetaData](https://docs.travelgatex.com/legacy/docs/hotel/methods/metadata/) in order to verify if a supplier implements it).		|
 | OnRequest            			| 1     	| Boolean	| Indicates if you want to receive the onrequest options in AvailRS, as long as the supplier returns it in this method (see [MetaData](https://docs.travelgatex.com/legacy/docs/hotel/methods/metadata/) in order to verify if a supplier implements it).		|
 | BusinessRules        			| 1            	|		| Indicates the business rules the client wants to apply in availability, as long as the supplier returns it in this method (see [MetaData](https://docs.travelgatex.com/legacy/docs/hotel/methods/metadata/) in order to verify if a supplier implements it).	|
-| AvailDestinations/Destination		| 1..n         	|		| Contains the list of destinations filters (hotels or cities or zones or geocodes). The number of Destinations is defined in StaticConfiguration.	|
+| AvailDestinations/Destination		| 1..n         	|		| Contains the list of destinations filters (hotels or cities or zones or geocodes). The number of Destinations is defined in [MetaData](https://docs.travelgatex.com/legacy/docs/hotel/methods/metadata/).	|
 | @type           			| 1     	| String	| Destination type (HOT, CTY, ZON, GEO). Clarification: ZONs contains CTYs. ZONs are higher nodes and CTY are lower nodes. It is not possible to mix types of destinations in the same request.  |
 | @code           			| 1     	| String	| Native destination code as returned by supplier in *HotelList* or *AvailDestinationTree*.	|
 | StartDate            			| 1     	| String	| 'Search from' date.						|
@@ -444,7 +444,7 @@ is closed.
 
 AvailDestinations indicates what destinations will be requested to the supplier. 
 
-Hotel codes or other destination codes must be defined using information specified in  [StaticConfigurationRS Description](/docs/hotel/DSF/StaticConfiguration).
+Hotel codes or other destination codes must be defined using information specified in  [MetaData](https://docs.travelgatex.com/legacy/docs/hotel/methods/metadata/).
 
 *MaxNumberHotels*, *MaxNumberCities*, *MaxNumberZones* and *MaxNumberGeoCodes* indicates how client should group avail requests to supplier.
 
@@ -643,7 +643,7 @@ The possible values in status in response are OK or RQ:
 In the case  the client doesn't want to display the options in a
 status RQ, we can filter the options as long as the supplier specifies
 the status and the <OnRequest> tag is set in AvailRQ. In
-case the supplier doesn't specify the status, the element AllowOnRequest in [StaticConfigurationRS Description](/docs/hotel/DSF/StaticConfiguration) needs to be set as FALSE.
+case the supplier doesn't specify the status, the element AllowOnRequest in [MetaData](https://docs.travelgatex.com/legacy/docs/hotel/methods/metadata/) needs to be set as FALSE.
 
 
 
