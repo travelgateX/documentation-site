@@ -13,6 +13,21 @@ outputs = [ "HTML", "ATOM"]
 
 Easily accessible log of notable changes to Insights-X
 
+## 2019-09-03
+
+{{% release-notes-container type="a"%}}
+* Added [new table](/insights-x/datasets/dataset-content/benchmark/insights/dataset-reference-benchmark/): benchmark\_market\_city\_bw\_(daily|weekly|monthly)\_(buyer|seller). This one replaces insights\_agg\_(daily|weekly|monthly)\_destination\_tgx
+{{% /release-notes-container %}}
+
+{{% release-notes-container type="c"%}}
+* Schema modified for tables: insights\_(daily|weekly|monthly)\_destination\_(buyer|seller), insights\_agg\_(daily|weekly|monthly)\_destination\_(buyer|seller). Now, country field is outside the record.
+
+## 2019-08-27
+
+{{% release-notes-container type="a"%}}
+* Added [FAQs](/insights-x/faqs/)
+{{% /release-notes-container %}}
+
 ## 2019-06-19
 
 {{% release-notes-container type="a"%}}
