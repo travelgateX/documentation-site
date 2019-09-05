@@ -117,7 +117,7 @@ is closed.
 | OnRequest            			| 1     	| Boolean	| Indicates if you want to receive the onrequest options in AvailRS, as long as the supplier returns it in this method (see [MetaData](https://docs.travelgatex.com/legacy/docs/hotel/methods/metadata/) in order to verify if a supplier implements it).		|
 | BusinessRules        			| 1            	|		| Indicates the business rules the client wants to apply in availability, as long as the supplier returns it in this method (see [MetaData](https://docs.travelgatex.com/legacy/docs/hotel/methods/metadata/) in order to verify if a supplier implements it).	|
 | AvailDestinations/Destination		| 1..n         	|		| Contains the list of destinations filters (hotels or cities or zones or geocodes). The number of Destinations is defined in [MetaData](https://docs.travelgatex.com/legacy/docs/hotel/methods/metadata/).	|
-| @type           			| 1     	| String	| Destination type (HOT, CTY, ZON, GEO). Clarification: ZONs contains CTYs. ZONs are higher nodes and CTY are lower nodes. It is not possible to mix types of destinations in the same request.  |
+| @type           			| 1     	| String	| Destination type (HOT, CTY, ZON, GEO). Clarification: ZONs contains CTYs. ZONs are higher nodes and CTY are lower nodes. It is not possible to mix types of destinations in the same request.  | 
 | @code           			| 1     	| String	| Native destination code as returned by supplier in *HotelList* or *AvailDestinationTree*.	|
 | StartDate            			| 1     	| String	| 'Search from' date.						|
 | EndDate              			| 1     	| String	| 'Search til' date.						|
