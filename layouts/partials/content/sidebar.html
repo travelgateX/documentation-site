@@ -17,7 +17,7 @@
     {{- define "section-tree-nav" }}
     {{- $showvisitedlinks := .showvisitedlinks }}
     {{- $currentNode := .currentnode }}
-     {{- with .sect}}
+    {{- with .sect}}
       {{- if and .IsSection (or (not .Params.hidden) $.showhidden)}}
         {{- safeHTML .Params.head}}
         <li data-nav-id="{{.URL}}" class="dd-item
@@ -25,22 +25,18 @@
             {{- if eq .URL $currentNode.URL}} active{{end}}
             {{- if .Params.alwaysopen}} alwaysopen{{end -}}
             ">
+          <a href="{{ .RelPermalink}}">
+            <span>{{safeHTML .Params.Pre}}{{.Title}}{{safeHTML .Params.Post}}</span>
 
-            <a href="{{if ne .Params.isDirectory true}}{{ .RelPermalink}}{{else}}#{{end}}" class="{{if ne .Params.isDirectory false}}wasdirectory{{end}}">
-       
-            <span>
-                {{- $numberOfPages := (add (len .Pages) (len .Sections)) }}
-                {{- if ne $numberOfPages 0 }}
-                {{- if or (.IsAncestor $currentNode) (.Params.alwaysopen) }}
-                    <i class="fa fa-angle-down fa-lg category-icon"></i>
-                {{- else -}}
-                    <i class="fa fa-angle-right fa-lg category-icon"></i>
-                {{- end}}
-                {{- end}}
-                {{safeHTML .Params.Pre}}{{.Title}}{{safeHTML .Params.Post}}
-            </span>
-    
-    
+            {{- $numberOfPages := (add (len .Pages) (len .Sections)) }}
+            {{- if ne $numberOfPages 0 }}
+              {{- if or (.IsAncestor $currentNode) (.Params.alwaysopen) }}
+                <i class="fa fa-angle-down fa-lg category-icon"></i>
+              {{- else -}}
+                <i class="fa fa-angle-right fa-lg category-icon"></i>
+              {{- end}}
+            {{- end}}
+
             {{- if $showvisitedlinks}}<i class="fa fa-circle-thin read-icon"></i>{{end}}
           </a>
           {{- if ne $numberOfPages 0 }}
@@ -50,7 +46,7 @@
               {{- .Scratch.Set "pages" (.Pages | union .Sections) }}
               {{- end}}
               {{- $pages := (.Scratch.Get "pages") }}
-    
+
             {{- if eq .Site.Params.ordersectionsby "title"}}
               {{- range $pages.ByTitle }}
                 {{- if and .Params.hidden (not $.showhidden) }}
@@ -72,17 +68,18 @@
       {{- else}}
         {{- if not .Params.Hidden }}
           <li data-nav-id="{{.URL}}" class="dd-item
-         {{- if eq .URL $currentNode.URL}} active{{end -}}
+        {{- if eq .URL $currentNode.URL}} active{{end -}}
           ">
             <a href="{{ .RelPermalink}}">
-              <span style="padding-left: 8px;">{{safeHTML .Params.Pre}}{{.Title}}{{safeHTML .Params.Post}}</span>
+              <span>{{safeHTML .Params.Pre}}{{.Title}}{{safeHTML .Params.Post}}</span>
               {{- if $showvisitedlinks}}<i class="fa fa-circle-thin read-icon"></i>{{end}}
             </a>
         </li>
-         {{- end}}
+        {{- end}}
       {{- end}}
-     {{- end}}
-    {{- end}}    
+    {{- end}}
+    {{- end}}
+   
       
   </ul>
 </nav>
