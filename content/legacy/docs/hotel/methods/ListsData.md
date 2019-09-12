@@ -28,6 +28,7 @@ This paragraph aims to return all of the data lists used in our system: language
 |  Brazilian    | br		|
 
 
+<div class="anchor-offset" id="error-codes"></div>
 
 ### Error codes
 

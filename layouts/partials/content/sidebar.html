@@ -149,7 +149,13 @@
 
      $('#TableOfContents a[href^="#"]').click(function() {
       var target = $(this.hash);
-      $('html, body').animate({ scrollTop: target.offset().top-150 }, 500);
+      let offset = 150;
+      if(target.prop('tagName') === 'div'){
+        offset = 0;
+      }
+      
+      $('html, body').animate({ scrollTop: target.offset().top-offset }, 500);
+      window.location.hash = target.attr('id');
       return false;
     });
   })
