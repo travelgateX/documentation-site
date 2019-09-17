@@ -4,15 +4,22 @@
   "weight": 1,
   "fields": [
     {
-      "typeString": "[String]",
+      "typeString": "[String!]",
       "name": "client",
       "url": "/travelgatex/reference/scalars/string",
       "description": null,
       "args": null
     },
     {
-      "typeString": "[String]",
+      "typeString": "[String!]",
       "name": "supplier",
+      "url": "/travelgatex/reference/scalars/string",
+      "description": null,
+      "args": null
+    },
+    {
+      "typeString": "[String!]",
+      "name": "hotel",
       "url": "/travelgatex/reference/scalars/string",
       "description": null,
       "args": null

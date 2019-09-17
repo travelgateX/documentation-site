@@ -625,11 +625,6 @@
       "url": "/travelgatex/reference/objects/eventdata"
     },
     {
-      "name": "ReferenceFilter",
-      "description": null,
-      "url": "/travelgatex/reference/inputobjects/referencefilter"
-    },
-    {
       "name": "LoggingLegacyEdge",
       "description": null,
       "url": "/travelgatex/reference/objects/logginglegacyedge"

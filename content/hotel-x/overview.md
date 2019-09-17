@@ -10,9 +10,6 @@ alwaysopen = false
 The HotelX API is a powerful accomodation aggregation solution that will speed up your travel websites and apps and expand your catalogue of hotel booking services.
 
 Using HotelX, you can improve your hotel search response times and their accuracy by customizing aggregated responses based on your preferred criteria.   
-The below map shows our architecture and the average impact on response rates caused by each layer.
-
-{{< figure src="/images/connectx_diagram.png#center" alt="High Level HotelX Architecture" attr="" >}}
 
 Each and every layer described in the this figure is explained as follows:
 

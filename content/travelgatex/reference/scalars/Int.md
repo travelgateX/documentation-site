@@ -190,6 +190,11 @@
       "url": "/travelgatex/reference/objects/alerttypeconfiguration"
     },
     {
+      "name": "AlertPrice",
+      "description": "Price contains the specific configuration for Price alert Type",
+      "url": "/travelgatex/reference/objects/alertprice"
+    },
+    {
       "name": "LoggingLegacyFilterInput",
       "description": "Filters needed to do a search.\nFrom (Start date of search - YYYY-MM-DD HH:mm:ss), To (End date of search - YYYY-MM-DD HH:mm:ss), ",
       "url": "/travelgatex/reference/inputobjects/logginglegacyfilterinput"
@@ -270,9 +275,19 @@
       "url": "/travelgatex/reference/inputobjects/alertconfigurationinputpeaktraffic"
     },
     {
+      "name": "AlertConfigurationInputPrice",
+      "description": null,
+      "url": "/travelgatex/reference/inputobjects/alertconfigurationinputprice"
+    },
+    {
       "name": "ErrorCodeInput",
       "description": null,
       "url": "/travelgatex/reference/inputobjects/errorcodeinput"
+    },
+    {
+      "name": "AlertPriceInput",
+      "description": "Price input",
+      "url": "/travelgatex/reference/inputobjects/alertpriceinput"
     },
     {
       "name": "AlertUpdateConfigurationInputNoTraffic",
@@ -293,6 +308,16 @@
       "name": "AlertUpdateConfigurationInputPeakTraffic",
       "description": "Configuration update for PEAK_TRAFFIC alert type. Peak traffic is used to verify traffic comparing volum of requests between to time frame (window and historical window) . ",
       "url": "/travelgatex/reference/inputobjects/alertupdateconfigurationinputpeaktraffic"
+    },
+    {
+      "name": "AlertUpdateConfigurationInputPrice",
+      "description": null,
+      "url": "/travelgatex/reference/inputobjects/alertupdateconfigurationinputprice"
+    },
+    {
+      "name": "AlertPriceUpdateInput",
+      "description": "Price update",
+      "url": "/travelgatex/reference/inputobjects/alertpriceupdateinput"
     }
   ],
   "enumValues": null,

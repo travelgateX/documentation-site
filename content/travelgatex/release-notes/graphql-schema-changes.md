@@ -14,11 +14,385 @@ The GraphQL schema change log is a list of recent and upcoming changes to our Gr
 
 Check out this list of new releases and changes applied on the **TravelgateX GraphQL API**.
 
+## 2019-08-29
+
+🛑  Input field `ReferenceFilter.supplier` changed type from `[String]` to `[String!]`
+
+🛑  Input field `ReferenceFilter.client` changed type from `[String]` to `[String!]`
+
+⚠️  Enum value `PRICE` was added to enum `AlertType`
+
+✅  Input field `configurationPrice` was added to input object type `AlertUpdateInput`
+
+✅  Input field `AlertConfigurationInputAverageTime.groupBy` description changed from `Possibility to group by traffic and calculate its parameters separately ` to `Possibility to group by traffic and calculate its parameters separately`
+
+✅  Input field `configurationPrice` was added to input object type `AlertInput`
+
+✅  Input field `hotel` was added to input object type `ReferenceFilter`
+
+✅  Input field `LoggingLegacyFilterInput.to` changed type from `DateTime!` to `DateTime`
+
+✅  Input field `LoggingLegacyFilterInput.from` changed type from `DateTime!` to `DateTime`
+
+✅  Input field `groups` was added to input object type `LoggingLegacyFilterInput`
+
+✅  Input field `timeRange` was added to input object type `LoggingLegacyFilterInput`
+
+✅  Field `price` was added to object type `AlertTypeConfiguration`
+
+✅  Field `legacyRoomId` was added to object type `Room`
+
+✅  Deprecation reason on field `AdminQuery.entities` has changed from `` to `deprecated from 2019-08-21. Only for statsX product. Use client, supplier, accesess queries`
+
+✅  Type `AlertPriceUpdateInput` was added
+
+✅  Type `AlertUpdateConfigurationInputPrice` was added
+
+✅  Type `AlertPriceInput` was added
+
+✅  Type `AlertGroupsInsights` was added
+
+✅  Type `AlertConfigurationInputPrice` was added
+
+✅  Type `RangePrice` was added
+
+✅  Type `CheckPrice` was added
+
+✅  Type `ModePrice` was added
+
+✅  Type `AlertPrice` was added
+
+## 2019-08-19
+
+🛑  Input field `ReferenceFilter.supplier` changed type from `String` to `[String]`
+
+🛑  Input field `ReferenceFilter.client` changed type from `String` to `[String]`
+
+✅  Description `Input PaymentCard, if the payment is done by credit card, is it mandatory to specify the payment type and the credit card information` on type `PaymentCardInput` has changed to `Input PaymentCard, if the payment type is DIRECT, CARD_BOOKING or CARD_CHECK_IN, then is mandatory to specify the payment card information`
+
+## 2019-08-08
+
+⚠️  Union member `API` was added to Union type `AlertObjectsUnion`
+
+✅  Input field `api` was added to input object type `AlertUpdateConfigurationInputPeakTraffic`
+
+✅  Input field `api` was added to input object type `AlertUpdateConfigurationInputAverageTime`
+
+✅  Input field `api` was added to input object type `AlertUpdateConfigurationInputErrorRate`
+
+✅  Input field `api` was added to input object type `AlertUpdateConfigurationInputNoTraffic`
+
+✅  Input field `api` was added to input object type `AlertConfigurationInputPeakTraffic`
+
+✅  Input field `api` was added to input object type `AlertConfigurationInputAverageTime`
+
+✅  Input field `api` was added to input object type `AlertConfigurationInputErrorRate`
+
+✅  Input field `api` was added to input object type `AlertConfigurationInputNoTraffic`
+
+✅  Field `revokeMacroPermissionsFromMember` was added to object type `AdminMutation`
+
+✅  Field `grantMacroPermissionsToMember` was added to object type `AdminMutation`
+
+✅  Field `suitFolder` was added to object type `AdminMutation`
+
+✅  Input field `HotelXDestinationListInput.access` changed type from `ID!` to `ID`
+
+✅  Input field `group` was added to input object type `HotelXDestinationListInput`
+
+✅  Type `GrantMacroPermissionInput` was added
+
+✅  Type `FolderTemplate` was added
+
+✅  Type `SuitFolderInput` was added
+
+## 2019-08-05
+
+🛑  Input field `PaymentCardInput.cardType` changed type from `PaymentCardType!` to `String`
+
+🛑  Input field `ActiveFilterInput.codes` changed type from `[ID!]` to `[ID!]!`
+
+✅  Input field `PaymentCardInput.cardType` description changed from `Indicates the supported card type, the supported card for this option is shown in Quote step.` to `Indicates the supported card type, the supported card for this option is shown in Quote step.
+@deprecated(reason: "deprecated from 2019-07-31. Please, use type")`
+
+✅  Input field `type` was added to input object type `PaymentCardInput`
+
+✅  Field `AlertConfiguration.groupBy` description changed from `Group by traffic and calculate its parameters separately ` to `Group by traffic and calculate its parameters separately`
+
+✅  Field `comercialType` was added to object type `AlertConfiguration`
+
+✅  Field `macroPermissions` was added to object type `ProductData`
+
+✅  Type `Permission` was added
+
+✅  Type `MacroPermissionData` was added
+
+✅  Type `MacroPermission` was added
+
+✅  Type `MacroPermissionEdge` was added
+
+✅  Type `MacroPermissionsConnection` was added
+
+## 2019-07-31
+🛑  Input field `PaymentCardInput.cardType` changed type from `String!` to `PaymentCardType!`
+
+🛑  Input field `owner` was removed from input object type `UpdateProfileInput`
+
+🛑  Input field `owner` was removed from input object type `CreateProfileInput`
+
+🛑  Field `HotelOptionQuote.cardTypes` changed type from `[String!]` to `[PaymentCardType!]`
+
+🛑  Field `HotelData.cardTypes` changed type from `[String!]` to `[PaymentCardType!]`
+
+✅  Input field `PaymentCardInput.cardType` description changed from `Indicates the card type.` to `Indicates the supported card type, the supported card for this option is shown in Quote step.`
+
+✅  Input field `api` was added to input object type `GrantPermissionsInput`
+
+✅  Field `grantProfileToGroup` was added to object type `AdminMutation`
+
+✅  Field `deleteProfile` was added to object type `AdminMutation`
+
+✅  Input field `StatsFilterInput.to` changed type from `DateTime!` to `DateTime`
+
+✅  Input field `StatsFilterInput.to` description changed from `To date of search` to ` To date of search
+@deprecated(reason: "deprecated from 2019-07-19. Added new field timeRange.")`
+
+✅  Input field `StatsFilterInput.from` changed type from `DateTime!` to `DateTime`
+
+✅  Input field `StatsFilterInput.from` description changed from `From date of search` to `From date of search
+@deprecated(reason: "deprecated from 2019-07-19. Added new field timeRange.")`
+
+✅  Input field `StatsFilterInput.mode` description changed from `Buyer or Seller
+@deprecated(reason: "deprecated from 2019-04-11. Superfluous field.")` to ` Buyer or Seller
+@deprecated(reason: "deprecated from 2019-04-11. Superfluous field.")`
+
+✅  Input field `timeRange` was added to input object type `StatsFilterInput`
+
+✅  Field `adviseMessage` was added to object type `StatsConnection`
+
+✅  Enum value `BookStatusType.KO` was deprecated with reason `Deprecated from 2019-07-29`
+
+✅  Field `HotelOptionQuote.cardTypes` description changed from `List of credit cards` to `List of credit cards allowed for this option`
+
+✅  Deprecation reason on field `Bed.description` has changed from `` to `Deprecated from 2019-07-29`
+
+✅  Field `occupancies` was added to object type `RoomData`
+
+✅  Field `source` was added to object type `RoomData`
+
+✅  Field `rooms` was added to object type `HotelData`
+
+✅  Field `adviseMessageCatalog` was added to object type `ProductData`
+
+✅  Argument `contains: String` added to field `AdminQuery.groups`
+
+✅  Type `DeleteProfileInput` was added
+
+✅  Type `AbsoluteInput` was added
+
+✅  Type `Duration` was added
+
+✅  Type `RelativeInput` was added
+
+✅  Type `TimeRangeInput` was added
+
+✅  Type `OccupancyRange` was added
+
+✅  Type `OccupancyStatic` was added
+
+✅  Type `PaymentCardType` was added
+
+## 2019-07-15
+
+🛑  Field `ProfileData.type` changed type from `ProfileType` to `[ProfileType!]!`
+
+✅  Input field `reference` was added to input object type `LoggingLegacyFilterInput`
+
+✅  Field `getActiveConnection` was added to object type `StatsQuery`
+
+✅  Deprecation reason on field `Destination.error` has changed from `` to `Deprecated from 2019-07-03`
+
+✅  Field `adviseMessage` was added to object type `Destination`
+
+✅  Deprecation reason on field `RoomStatic.error` has changed from `` to `Deprecated from 2019-07-03`
+
+✅  Field `RoomStatic.error` description changed from `Errors that abort services` to `Errors that abort services.`
+
+✅  Field `adviseMessage` was added to object type `RoomStatic`
+
+✅  Description `By default: Logical AND on all given filters. only hotels that match condition are returned` on type `HotelXHotelFilterInput` has changed to `By default: Logical AND on all given filters. Hotels data are returned
+only if match condition`
+
+✅  Deprecation reason on field `Hotel.error` has changed from `` to `Deprecated from 2019-07-03`
+
+✅  Field `adviseMessage` was added to object type `Hotel`
+
+✅  Deprecation reason on field `Category.error` has changed from `` to `Deprecated from 2019-07-03`
+
+✅  Field `adviseMessage` was added to object type `Category`
+
+✅  Deprecation reason on field `Board.error` has changed from `` to `Deprecated from 2019-07-03`
+
+✅  Field `Board.error` description changed from `Errors that abort services` to `Errors that abort services.`
+
+✅  Field `adviseMessage` was added to object type `Board`
+
+✅  Field `profiles` was added to object type `GroupData`
+
+✅  Field `profiles` was added to object type `OrganizationData`
+
+✅  Type `ReferenceFilter` was added
+
+✅  Type `ActiveFilterInput` was added
+
+✅  Type `Connection` was added
+
+✅  Type `ConnectionEdge` was added
+
+✅  Type `ConnectionConnection` was added
+
+## 2019-07-04
+
+✅  Field `updateSystem` was added to object type `AdminMutation`
+
+✅  Field `createSystem` was added to object type `AdminMutation`
+
+✅  Field `hotel` was added to object type `Reference`
+
+✅  Field `SupplierData.owner` changed type from `Organization` to `Organization!`
+
+✅  Field `system` was added to object type `SupplierData`
+
+✅  Field `systems` was added to object type `AdminQuery`
+
+✅  Field `logging` was added to object type `Query`
+
+✅  Type `EnvironmentType` was added
+
+✅  Type `LoggingFilterInput` was added
+
+✅  Type `TGXFilter` was added
+
+✅  Type `LoggingEdge` was added
+
+✅  Type `LoggingConnection` was added
+
+✅  Type `TGX` was added
+
+✅  Type `LoggingData` was added
+
+✅  Type `Logging` was added
+
+✅  Type `UpdateSystemInput` was added
+
+✅  Type `CreateSystemInput` was added
+
+✅  Type `ErrorFilter` was added
+
+✅  Type `LoggingLegacyFilterInput` was added
+
+✅  Type `Worker` was added
+
+✅  Type `CloudEnvironment` was added
+
+✅  Type `EnvironmentName` was added
+
+✅  Type `Environment` was added
+
+✅  Type `LoggingLegacyData` was added
+
+✅  Type `LoggingLegacy` was added
+
+✅  Type `LoggingLegacyEdge` was added
+
+✅  Type `LoggingLegacyConnection` was added
+
+✅  Type `LoggingQuery` was added
+
+✅  Type `SystemFilter` was added
+
+✅  Type `SystemEdge` was added
+
+✅  Type `SystemConnection` was added
+
+✅  Type `SystemData` was added
+
+✅  Type `System` was added
+
+## 2019-06-25
+
+🛑  Enum value `XTG` was removed from enum `AlertGroups`
+
+🛑  Enum value `SUPPLIER_EXTERNAL` was removed from enum `AlertGroups`
+
+✅  Input field `label` was added to input object type `CreateOrganizationInput`
+
+✅  Input field `HotelXCategoryQueryInput.access` changed type from `ID!` to `ID`
+
+✅  Input field `group` was added to input object type `HotelXCategoryQueryInput`
+
+✅  Argument `api: [ID!]` added to field `AdminQuery.groups`
+
+## 2019-06-13
+
+⚠️  Enum value `SCHEDULER` was added to enum `TrafficType`
+
+⚠️  Enum value `PAYX` was added to enum `PaymentType`
+
+✅  Input field `AlertUpdateConfigurationInputPeakTraffic.client` description changed from `Possibility to filter traffic by clients (hub user)` to `Possibility to filter traffic by clients`
+
+✅  Input field `AlertUpdateConfigurationInputPeakTraffic.supplier` description changed from `Possibility to filter traffic by suppliers (hub provider)` to `Possibility to filter traffic by suppliers`
+
+✅  Input field `AlertUpdateConfigurationInputAverageTime.client` description changed from `Possibility to filter traffic by clients (hub user)` to `Possibility to filter traffic by clients`
+
+✅  Input field `AlertUpdateConfigurationInputAverageTime.supplier` description changed from `Possibility to filter traffic by suppliers (hub provider)` to `Possibility to filter traffic by suppliers`
+
+✅  Input field `AlertUpdateConfigurationInputErrorRate.client` description changed from `Possibility to filter traffic by clients (hub user)` to `Possibility to filter traffic by clients`
+
+✅  Input field `AlertUpdateConfigurationInputErrorRate.supplier` description changed from `Possibility to filter traffic by suppliers (hub provider)` to `Possibility to filter traffic by suppliers`
+
+✅  Input field `AlertUpdateConfigurationInputNoTraffic.client` description changed from `Possibility to filter traffic by clients (hub user)` to `Possibility to filter traffic by clients`
+
+✅  Input field `AlertUpdateConfigurationInputNoTraffic.supplier` description changed from `Possibility to filter traffic by suppliers (hub provider)` to `Possibility to filter traffic by suppliers`
+
+✅  Input field `AlertConfigurationInputPeakTraffic.client` description changed from `Possibility to filter traffic by clients (hub user)` to `Possibility to filter traffic by clients`
+
+✅  Input field `AlertConfigurationInputPeakTraffic.supplier` description changed from `Possibility to filter traffic by suppliers (hub provider)` to `Possibility to filter traffic by suppliers`
+
+✅  Input field `AlertConfigurationInputAverageTime.client` description changed from `Possibility to filter traffic by clients (hub user)` to `Possibility to filter traffic by clients`
+
+✅  Input field `AlertConfigurationInputAverageTime.supplier` description changed from `Possibility to filter traffic by suppliers (hub provider` to `Possibility to filter traffic by suppliers`
+
+✅  Input field `AlertConfigurationInputErrorRate.client` description changed from `Possibility to filter traffic by clients (hub user)` to `Possibility to filter traffic by clients`
+
+✅  Input field `AlertConfigurationInputErrorRate.supplier` description changed from `Possibility to filter traffic by suppliers (hub provider)` to `Possibility to filter traffic by suppliers`
+
+✅  Input field `AlertConfigurationInputNoTraffic.client` description changed from `Possibility to filter traffic by clients (hub user)` to `Possibility to filter traffic by clients`
+
+✅  Input field `AlertConfigurationInputNoTraffic.supplier` description changed from `Possibility to filter traffic by suppliers (hub provider)` to `Possibility to filter traffic by suppliers`
+
+✅  Description for enum value `TrafficType.OPTIMIZED` changed from `Ratios calculated from traffic between Speed and seller` to `Ratios calculated from traffic between TGX's caches and seller`
+
+✅  Field `billingSupplierCode` was added to object type `HotelBookingDetail`
+
+✅  Field `supplierCode` was added to object type `RatePlan`
+
+✅  Field `features` was added to object type `Room`
+
+✅  Field `supplierCode` was added to object type `Room`
+
+✅  Argument `label: String` added to field `AdminQuery.organizations`
+
+✅  Type `Feature` was added
+
 ## 2019-05-30
 
 🛑  Field `StatsInfo.hits` changed type from `Int!` to `Int64!`
+
 🛑  Field `OperationDetailed.totalHits` changed type from `Int!` to `Int64!`
+
 🛑  Field `StatsData.hits` changed type from `Int!` to `Int64!`
+
 ✅  Type `Int64` was added
 
 ## 2019-05-30

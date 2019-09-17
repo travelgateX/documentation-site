@@ -46,6 +46,13 @@
       "args": null
     },
     {
+      "typeString": "AlertConfigurationInputPrice",
+      "name": "configurationPrice",
+      "url": "/alerts-x/reference/inputobjects/alertconfigurationinputprice",
+      "description": "Price Configuration",
+      "args": null
+    },
+    {
       "typeString": "Boolean!",
       "name": "isActive",
       "url": "/alerts-x/reference/scalars/boolean",

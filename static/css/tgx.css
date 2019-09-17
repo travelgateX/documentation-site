@@ -1873,3 +1873,8 @@ div.alert.alert-info + h3#unreleased {
   visibility: hidden;
   height: 0;
 }
+
+div.anchor-offset {
+  position: relative;
+  top: -150px;
+}

@@ -94,6 +94,61 @@ Code Source, Code Destination
 
 ## Other Maps
 
+### Map by provider hotel
+
+This plugin allows to convert the room codes in supplier context but by hotel. Is the same plugin (room map) explained before but it offers the possibility to map by supplier and hotel. 
+
+#### Format File
+
+The file must be in the below format:
+
+* **Encoding**: UTF-8 
+* **File Name**: [Context Source]\_[Context Destination]\_room\_map.csv
+* **Header Row**: ToRemove 
+* **Directory**: /F[folder code]\_[unique code]/HotelX\_[unique code]/Maps/
+
+If you are using a file of room map, is necessary that you modify this file adding a new column. Please, see the next example down:
+
+#### Sample File
+
+**Name**: xtg_provider_room_map.csv
+**Data**:
+
+``` csv
+Code Source,Code Destination,Code Hotel
+1,X,A
+1,Y,A
+1,Z,A
+2,X1,B
+2,X2,C
+3,X3,D
+4,X4,
+5,X5,
+```
+
+How you can see, in the same file are combined maps with 3 values and maps with 2 values. The rows with two values are mapped by provider. The files with three values are mapped by provider and hotel. Is possible to use only the mapping by provider hotel, in this case, your file only has rows with three values.
+
+## How applies
+
+What happens if you use the combined plugin(room map and room map by provider hotel)? In this case, all the rooms with provider hotel map will be mapped to your context (the context put in the first value of file's name (client context)) and the room codes that don't have provider hotel map, will be mapped with provider map code (in case that exist). If no map codes are found, the option can be discarded (this rule is configurable). 
+
+## Execution example
+
+```json
+{
+    "plugins": {
+        "step": "RESPONSE_OPTION",
+        "pluginsType": [
+            {
+                "type": "ROOM_MAP",
+                "name": "room_map",
+                "parameters":[{"key":"hotel", "value":"true"}]
+            }
+        ]
+    }
+}
+```
+
 Besides, an alternative for room map is also shown below:
 
 ### Description Room Map

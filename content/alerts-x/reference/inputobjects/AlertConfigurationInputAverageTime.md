@@ -147,7 +147,7 @@
       "typeString": "[AlertGroups!]",
       "name": "groupBy",
       "url": "/alerts-x/reference/enums/alertgroups",
-      "description": "Possibility to group by traffic and calculate its parameters separately ",
+      "description": "Possibility to group by traffic and calculate its parameters separately",
       "args": null
     }
   ],

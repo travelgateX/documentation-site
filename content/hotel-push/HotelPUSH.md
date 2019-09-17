@@ -1,6 +1,9 @@
 ---
 title: Messages
 keywords: hotel-push, messages
+icon : fa-comment
+aliases: [/legacy/docs/hotel-push/hotelpush]
+permalink: /docs/hotel-push/hotelpush
 ---
 
 [api

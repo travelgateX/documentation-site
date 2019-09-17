@@ -3,6 +3,8 @@ title: FAQ
 keywords: hotel-push, faq
 search: Hotel-Push - FAQ
 sidebar: mydoc_sidebar
+icon : fa-question-circle
+aliases: [/legacy/docs/hotel-push/FAQ]
 permalink: /docs/hotel-push/FAQ
 ---
 

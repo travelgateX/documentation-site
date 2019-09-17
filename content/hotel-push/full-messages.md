@@ -3,7 +3,10 @@ title: Full Body Messages
 keywords: hotel-push, full body messages
 search: Hotel-Push - Full Body Messages
 sidebar: mydoc_sidebar
+icon : fa-comments
+aliases: [/legacy/docs/hotel-push/full-messages]
 permalink: /docs/hotel-push/full-messages
+
 ---
 
 

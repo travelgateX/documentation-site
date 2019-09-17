@@ -3,6 +3,8 @@ title: Full Notify Messages
 keywords: hotel-push, full messages, full notify messages
 search: Hotel-Push - FullFiles - Full Notify Messages
 sidebar: mydoc_sidebar
+icon : fa-bell
+aliases: [/legacy/docs/hotel-push/full-files/full-notify-messages]
 permalink: /docs/hotel-push/full-files/full-notif-messages
 ---
 

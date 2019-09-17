@@ -178,7 +178,7 @@
       "name": "entities",
       "url": "/travelgatex/reference/objects/entityconnection",
       "description": null,
-      "isDeprecated": false,
+      "isDeprecated": true,
       "args": [
         {
           "typeString": "EntityFilter",
@@ -186,7 +186,15 @@
           "url": "/travelgatex/reference/inputobjects/entityfilter",
           "description": null
         }
-      ]
+      ],
+      "deprecationReason": "Only for statsX product. Use client, supplier, accesess queries",
+      "descriptionSplitted": {
+        "date": "2019-08-21",
+        "first": "deprecated from",
+        "second": "Only for statsX product. Use client, supplier, accesess queries"
+      },
+      "deprecationDate": "2019-08-21",
+      "typeName": "AdminQuery"
     },
     {
       "typeString": "SystemConnection",

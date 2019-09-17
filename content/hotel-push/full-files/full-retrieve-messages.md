@@ -3,6 +3,8 @@ title: Full Retrieve Messages
 keywords: hotel-push, full messages, full retrieve messages
 search: Hotel-Push - FullFiles - Full Retrieve Messages
 sidebar: mydoc_sidebar
+icon : fa-cloud-download
+aliases: [/legacy/docs/hotel-push/full-files/full-retrieve-messages]
 permalink: /docs/hotel-push/full-files/full-retrieve-messages
 ---
 

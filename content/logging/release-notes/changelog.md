@@ -14,6 +14,30 @@ tags = ["products-changelog"]
 Easily accessible log of notable changes to Logging
 
 
+## 2019-08-30
+{{% release-notes-container type="c"%}}
+- Now quotes requested by Speed have the same sessionID that quotes requested by the client in order to identify them.
+{{% /release-notes-container %}}
+
+{{% release-notes-container type="c"%}}
+- Now `reference` filters are arrays in order to be able to request multiple references at once.
+{{% /release-notes-container %}}
+
+## 2019-08-22
+{{% release-notes-container type="a"%}}
+- Added the field `hotel` in the input object `reference` from which bookings can be searched by the hotel's reference.
+{{% /release-notes-container %}}
+
+## 2019-08-21
+{{% release-notes-container type="a"%}}
+- Added new input object `timeRange` that improves the time filters providing both a relative time filter and an absolute time filter.
+{{% /release-notes-container %}}
+
+## 2019-08-02
+{{% release-notes-container type="a"%}}
+- Added a hard limit when an API's response lasts more than 60 seconds. When application hard limit is surpassed, microservice will response with a graceful response (http_status code = 403).
+{{% /release-notes-container %}}
+
 ## 2019-07-17
 {{% release-notes-container type="a"%}}
 - Added a new input object `reference` with two fields `client` and `supplier` from which bookings can be searched.

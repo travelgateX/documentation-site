@@ -4,17 +4,24 @@
   "weight": 1,
   "fields": [
     {
-      "typeString": "DateTime!",
+      "typeString": "DateTime",
       "name": "from",
       "url": "/travelgatex/reference/scalars/datetime",
       "description": "From date of search",
       "args": null
     },
     {
-      "typeString": "DateTime!",
+      "typeString": "DateTime",
       "name": "to",
       "url": "/travelgatex/reference/scalars/datetime",
       "description": "To date of search",
+      "args": null
+    },
+    {
+      "typeString": "TimeRangeInput",
+      "name": "timeRange",
+      "url": "/travelgatex/reference/inputobjects/timerangeinput",
+      "description": "Range of the time",
       "args": null
     },
     {
@@ -92,6 +99,13 @@
       "name": "supplierCodes",
       "url": "/travelgatex/reference/scalars/id",
       "description": "List of supplier codes",
+      "args": null
+    },
+    {
+      "typeString": "[ID!]",
+      "name": "groups",
+      "url": "/travelgatex/reference/scalars/id",
+      "description": "List of groups",
       "args": null
     },
     {

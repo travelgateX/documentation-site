@@ -38,6 +38,11 @@
       "name": "AlertUpdateConfigurationInputPeakTraffic",
       "description": "Configuration update for PEAK_TRAFFIC alert type. Peak traffic is used to verify traffic comparing volum of requests between to time frame (window and historical window) . ",
       "url": "/alerts-x/reference/inputobjects/alertupdateconfigurationinputpeaktraffic"
+    },
+    {
+      "name": "AlertUpdateConfigurationInputPrice",
+      "description": null,
+      "url": "/alerts-x/reference/inputobjects/alertupdateconfigurationinputprice"
     }
   ],
   "enumValues": null,

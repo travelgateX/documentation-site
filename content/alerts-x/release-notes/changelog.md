@@ -13,6 +13,16 @@ tags = ["products-changelog"]
 
 Easily accessible log of notable changes to Alerts-X
 
+## 2019-08-21
+{{% release-notes-container type="f"%}}
+- Error to update alerts from price to an other alertType or vice versa.
+{{% /release-notes-container %}} 
+
+## 2019-08-20
+{{% release-notes-container type="a"%}}
+- New `Alert type` available `PRICE`. With this alert type will be posible to set alerts which will advise of `amount` or `commission` anomalies for `price`.
+{{% /release-notes-container %}}
+
 ## 2019-08-12
 {{% release-notes-container type="f"%}}
 - Error to update alerts in some cases.
