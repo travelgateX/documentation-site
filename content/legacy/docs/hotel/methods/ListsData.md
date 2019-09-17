@@ -55,7 +55,7 @@ This paragraph aims to return all of the data lists used in our system: language
 
 Our system uses a standard ISO - 3 for all suppliers.
 
-<div class="anchor-offset" id="creditcard-codes"></div>
+<div class="anchor-offset" id="credit-cards"></div>
 
 ### Credit Cards
 
@@ -95,7 +95,7 @@ Our system uses a standard ISO - 3 for all suppliers.
 
 Our system uses a standard ISO - 3 for all suppliers.
 
-<div class="anchor-offset" id="markets-codes"></div>
+<div class="anchor-offset" id="markets"></div>
 
 
 ### Markets
