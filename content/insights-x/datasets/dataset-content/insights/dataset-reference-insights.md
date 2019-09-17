@@ -107,8 +107,8 @@ __fields__
 * **adults (NUMBER).** Quantity of paxes older than 12 years (12 is not included).
 * **children (NUMBER).** Quantity of paxes between 2 and 12 (both included).
 * **infants (NUMBER).** Quantity of paxes younger than 2 years (2 is not included).
+* **country (STRING).** Country ISO2 code. E.g. ES (Spain)
 * **destinations (STRUCT).** Repeated field that contains info about destinations for above key.
-    * **country (STRING).** Country ISO2 code. E.g. ES (Spain)
     * **zone_1 (STRING).** Administrative first level zone. E.g. Comunidad de Madrid
     * **zone_2 (STRING).** Administrative second level zone E.g. Madrid city
     * **city (STRING).** City name. If the city is big enough this level shows the neighbourghood. E.G. Chamberí
@@ -257,8 +257,8 @@ __fields__
     * __3__ = Family (Adults = 2, children + infants > 0).
     * __4__ = Group (Adults > 2).
     * __5__ = Other.
+* **country (STRING).** Country ISO2 code. E.g. ES (Spain)
 * **destinations (STRUCT).** Repeated field that contains info about destinations for above key.
-    * **country (STRING).** Country ISO2 code. E.g. ES (Spain)
     * **zone_1 (STRING).** Administrative first level zone. E.g. Comunidad de Madrid
     * **zone_2 (STRING).** Administrative second level zone E.g. Madrid city
     * **city (STRING).** City name. If the city is big enough this level shows the neighbourghood. E.G. Chamberí
@@ -297,56 +297,6 @@ __Preview__
 | client A  | provider X  | false | 2019-06-17 00:00:00 UTC | 5              | 2      | ES     | 1         | 2        | ES                   | Comunidad de Madrid | Provincia de Madrid | Opera             | 188                        | 3                              | 127                     | 3                         |                               |                        | 1                           |                                 |                          | 83.340515                          | 1372.92                            | 79190.58911099887                  | 163.2                                  | 413.07836319871626                     | 800.2783631987163                      | 275.23                            | 275.23                            | 825.69                            |                                       |                                       |                                       | 275.23                              | 275.23                              | 275.23                              |                                         |                                         |                                         |
 | client A  | provider Y  | false | 2019-06-17 00:00:00 UTC | 4              | 8      | CO     | 1         | 1        | ES                   | Comunidad de Madrid | Provincia de Madrid | Chueca            | 81                         |                                | 92                      | 1                         |                               |                        | 1                           |                                 |                          | 148.14701791922977                 | 1712.7577783721138                 | 61912.03550860302                  |                                        |                                        |                                        | 165.32049567620578                | 165.32049567620578                | 165.32049567620578                |                                       |                                       |                                       | 148.14700919818134                  | 148.14700919818134                  | 148.14700919818134                  |                                         |                                         |                                         |
 | client B  | provider X  | false | 2019-06-17 00:00:00 UTC | 8              | 7      | CO     | 1         | 1        | ES                   | Comunidad de Madrid | Provincia de Madrid | Bilbao            | 30                         | 10                             | 27                      | 1                         |                               |                        | 1                           |                                 |                          | 89.69198537933495                  | 2519.0036551662656                 | 26465.12476598021                  | 1000.0445751983597                     | 1176.4999554248018                     | 11059.106713024874                     | 111.74110724792726                | 111.74110724792726                | 111.74110724792726                |                                       |                                       |                                       | 100.13417054461978                  | 100.13417054461978                  | 100.13417054461978                  |                                         |                                         |                                         |
-
-
-## insights\_agg\_(daily|weekly|monthly)\_destination\_tgx
-This table contains a summary about the demand that TravelgateX platform is receiving. Using this info properly our partners can detect trends in the market and take business decisions in advance.
-
-__fields__
-
-* **search\_date (TIMESTAMP).** Search date in UTC (format: YYYY-MM-DD hh:mm:ss).
-* **check\_in (TIMESTAMP).** Check in date in UTC (format: YYYY-MM-DD hh:mm:ss).
-* **market (STRING).** Source market of paxes (ISO 3166-1 alpha-2).
-* **destinations (STRUCT).** Repeated field that contains info about destinations for above key.
-    * **country (STRING).** Country ISO2 code. E.g. ES (Spain)
-    * **zone_1 (STRING).** Administrative first level zone. E.g. Comunidad de Madrid
-    * **zone_2 (STRING).** Administrative second level zone E.g. Madrid city
-    * **city (STRING).** City name. If the city is big enough this level shows the neighbourghood. E.G. Chamberí
-    * **search\_ok\_net (NUMBER).** Quantity of searches with available options for above key and hotel with net price available.
-    * **search\_ok\_unknown (NUMBER).** Quantity of searches with available options for above key and hotel with a price where we don't know if any commission is applied.
-    * **search\_nok (NUMBER).** Quantity of searches without available options for above key and hotel.
-    * **min\_amount\_search\_net (NUMBER).** Net amount of cheapest option for that hotel.
-    * **max\_amount\_search\_net (NUMBER).** Net amount of most expensive option for that hotel.
-    * **tot\_amount\_search\_net (NUMBER).** Total net amount of searches for that hotel.
-    * **min\_amount\_search\_unknown (NUMBER).** Amount of cheapest option for that hotel (Commission not available).
-    * **max\_amount\_search\_unknown (NUMBER).** Amount of most expensive option for that hotel (Commission not available).
-    * **tot\_amount\_search\_unknown (NUMBER).** Total amount of searches for that hotel (Commission not available).
-    * **quote\_ok\_net (NUMBER).** Quantity of quotes for above key and hotel with net price available.
-    * **quote\_ok\_unknown (NUMBER).** Quantity of quotes for above key and hotel with a price where we don't know if any commission is applied.
-    * **quote\_nok (NUMBER).** Quantity of failed quotes for above key and hotel.
-    * **min\_amount\_quote\_net (NUMBER).** Net amount of cheapest quote for that hotel.
-    * **max\_amount\_quote\_net (NUMBER).** Net amount of most expensive quote for that hotel.
-    * **tot\_amount\_quote\_net (NUMBER).** Total net amount of quotes for that hotel.
-    * **min\_amount\_quote\_unknown (NUMBER).** Amount of cheapest quote for that hotel (Commission not available).
-    * **max\_amount\_quote\_unknown (NUMBER).** Amount of most expensive quote for that hotel (Commission not available).
-    * **tot\_amount\_quote\_unknown (NUMBER).** Total amount of quotes for that hotel (Commission not available).
-    * **booking\_ok\_net (NUMBER).** Quantity of bookings for above key and hotel with net price available.
-    * **booking\_ok\_unknown (NUMBER).** Quantity of bookings for above key and hotel with a price where we don't know if any commission is applied.
-    * **booking\_nok (NUMBER).** Quantity of failed bookings for above key and hotel.
-    * **min\_amount\_booking\_net (NUMBER).** Net amount of cheapest booking for that hotel.
-    * **max\_amount\_booking\_net (NUMBER).** Net amount of most expensive booking for that hotel.
-    * **tot\_amount\_booking\_net (NUMBER).** Total net amount of booking for that hotel.
-    * **min\_amount\_booking\_unknown (NUMBER).** Amount of cheapest booking for that hotel (Commission not available).
-    * **max\_amount\_booking\_unknown (NUMBER).** Amount of most expensive booking for that hotel (Commission not available).
-    * **tot\_amount\_booking\_unknown (NUMBER).** Total amount of booking for that hotel (Commission not available).
-
-__Preview__ 
-
-| search_date             | check_in                | market | destinations.country | destinations.zone_1 | destinations.zone_2 | destinations.city | destinations.search_ok_net | destinations.search_ok_unknown | destinations.search_nok | destinations.quote_ok_net | destinations.quote_ok_unknown | destinations.quote_nok | destinations.booking_ok_net | destinations.booking_ok_unknown | destinations.booking_nok | destinations.min_amount_search_net | destinations.max_amount_search_net | destinations.tot_amount_search_net | destinations.min_amount_search_unknown | destinations.max_amount_search_unknown | destinations.tot_amount_search_unknown | destinations.min_amount_quote_net | destinations.max_amount_quote_net | destinations.tot_amount_quote_net | destinations.min_amount_quote_unknown | destinations.max_amount_quote_unknown | destinations.tot_amount_quote_unknown | destinations.min_amount_booking_net | destinations.max_amount_booking_net | destinations.tot_amount_booking_net | destinations.min_amount_booking_unknown | destinations.max_amount_booking_unknown | destinations.tot_amount_booking_unknown |
-| ----------------------- | ----------------------- | ------ | -------------------- | ------------------- | ------------------- | ----------------- | -------------------------- | ------------------------------ | ----------------------- | ------------------------- | ----------------------------- | ---------------------- | --------------------------- | ------------------------------- | ------------------------ | ---------------------------------- | ---------------------------------- | ---------------------------------- | -------------------------------------- | -------------------------------------- | -------------------------------------- | --------------------------------- | --------------------------------- | --------------------------------- | ------------------------------------- | ------------------------------------- | ------------------------------------- | ----------------------------------- | ----------------------------------- | ----------------------------------- | --------------------------------------- | --------------------------------------- | --------------------------------------- |
-| 2019-06-17 00:00:00 UTC | 2019-06-18 00:00:00 UTC | ES     | ES                   | Comunidad de Madrid | Provincia de Madrid | Opera             | 92917                      | 12445                          | 343652                  | 29                        | 5                             | 86                     | 2                           |                                 |                          | 28.323080146206653                 | 1245085.2277792639                 | 5.287200889379405E7                | 35.5                                   | 19998.0                                | 5295426.659987811                      | 49.39                             | 275.0                             | 4493.944383435857                 |                                       | 176.0                                 | 714.0                                 | 49.39                               | 58.69                               | 108.08                              |                                         |                                         |                                         |
-| 2019-06-17 00:00:00 UTC | 2019-06-27 00:00:00 UTC | ES     | ES                   | Comunidad de Madrid | Provincia de Madrid | Chueca            | 10670                      | 1194                           | 52145                   | 2                         |                               |                        | 1                           |                                 |                          | 12.240349469555142                 | 5456.194                           | 3699011.558274537                  | 17.94                                  | 3056.49                                | 293527.4320347421                      | 408.28                            | 408.28                            | 816.56                            |                                       |                                       |                                       | 369.9005000708                      | 369.9005000708                      | 369.9005000708                      |                                         |                                         |                                         |
-| 2019-06-17 00:00:00 UTC | 2019-06-22 00:00:00 UTC | ES     | ES                   | Comunidad de Madrid | Provincia de Madrid | Bilbao            | 7678                       | 654                            | 62376                   | 9                         |                               | 6                      | 1                           |                                 |                          | 23.5706                            | 1699.28                            | 2120420.477015076                  | 49.576535615583495                     | 1738.6                                 | 216082.4267244658                      | 47.68654720513507                 | 274.0                             | 1529.0430944102702                |                                       |                                       |                                       | 218.44                              | 218.44                              | 218.44                              |                                         |                                         |                                         |
 
 ## effective\_bookings\_(buyer|seller)
 This table contains specific information about bookings done and their current status (Ok or cancelled).
