@@ -56,6 +56,7 @@ is closed is **180000** milliseconds.
         </Locators>
         <StartDate>15/10/2012</StartDate>
         <EndDate>20/10/2015</EndDate>
+        <Holder title = "Miss" name = "Test11" surname = "TestAp11"/>
     </CancelRQ>
 ~~~
 
@@ -73,6 +74,10 @@ is closed is **180000** milliseconds.
 | Locators/Provider		| 0..1 		| String	| Supplier locator.					|
 | StartDate  			| 1    		| String	| Start date of booking.				|
 | EndDate    			| 1    		| String	| End date of booking.					|
+| Holder   				| 0..1		|		| Holder of the booking.  |
+| @title   				| 1		|		| Holder's title.  |
+| @name   				| 1		|		| Holder's name.  |
+| @surname   				| 1		|		| Holder's surname.  |
 
 
 

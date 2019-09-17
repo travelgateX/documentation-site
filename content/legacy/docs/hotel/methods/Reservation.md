@@ -59,14 +59,17 @@ is closed.
         <MealPlanCode>D</MealPlanCode>
         <HotelCode>10</HotelCode>
         <Nationality>ES</Nationality>
+        <Holder title = "Miss" name = "Test11" surname = "TestAp11"/>
         <Price currency = "EUR" amount = "36.20" binding = "false" commission = "-1"/>
         <ResGuests> 
             <Guests>
                 <Guest roomCandidateId = "1" paxId = "1">
+                    <Title>Miss</Ttile>  
                     <GivenName>Test11</GivenName>
                     <SurName>TestAp11</SurName>
                 </Guest>
                 <Guest roomCandidateId = "1" paxId = "2">
+                    <Title>Mr</Ttile>  
                     <GivenName>Test12</GivenName>
                     <SurName>TestAp12</SurName>
                 </Guest>
@@ -138,6 +141,10 @@ is closed.
 | MealPlanCode  				| 1  		| String	| MealPlan code.					|
 | HotelCode     				| 1  		| String	| Hotel code.						|
 | Nationality   				| 1		| String	| Nationality of the Holder (use ISO3166_1_alfa_2 , see [MetaData](https://docs.travelgatex.com/legacy/docs/hotel/methods/metadata/) in order to verify if a supplier implements it).  |
+| Holder   				| 1		|		| Holder of the booking.  |
+| @title   				| 1		|		| Holder's title.  |
+| @name   				| 1		|		| Holder's name.  |
+| @surname   				| 1		|		| Holder's surname.  |
 | Price         				| 1      	|		| Total price of this valuation.			|
 | @currency					| 1  		| String	| Currency code.					|
 | @amount  					| 1  		| Decimal	| Option Amount.					|
@@ -148,6 +155,7 @@ is closed.
 | ResGuests/Guests/Guest			| 1..n    	|		| Detail of each passenger.				|
 | @roomCandidateId				| 1  		| Integer	| Room candidate Identifier				|
 | @paxId   					| 1  		| Integer	| Passenger id (starting at 1).				|
+| ResGuests/Guests/Guest/Title		| 1 	 	| String	| Guest's title.						|
 | ResGuests/Guests/Guest/GivenName		| 1 	 	| String	| Guest's given name.						|
 | ResGuests/Guests/Guest/SurName		| 1   		| String	| Guest's last name.						|
 | PaymentType   				| 1  		| String	| Indicates the type of payment. It can be MerchantPay, LaterPay, CardBookingPay or CardCheckInPay. Payment types are explained in "Detailed description" section, in this same page.			|
