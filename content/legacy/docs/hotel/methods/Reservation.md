@@ -160,7 +160,7 @@ is closed.
 | ResGuests/Guests/Guest/SurName		| 1   		| String	| Guest's last name.						|
 | PaymentType   				| 1  		| String	| Indicates the type of payment. It can be MerchantPay, LaterPay, CardBookingPay or CardCheckInPay. Payment types are explained in "Detailed description" section, in this same page.			|
 | CardInfo   				| 0..1  		|		| Credit card details.			|
-| CardInfo/CardCode   				| 1  		| String	| Indicates the type of credit card. See types allowed at [Credit Card Types](https://docs.travelgatex.com/legacy/docs/hotel/methods/listsdata/)			|
+| CardInfo/CardCode   				| 1  		| String	| Indicates the type of credit card. See types allowed at [Credit Card Types](https://docs.travelgatex.com/legacy/docs/hotel/methods/listsdata/#creditcard-codes)			|
 | CardInfo/Number   				| 1  		| String	| Credit card number.			| 
 | CardInfo/Holder   				| 1  		| String	| Credit card holder.			|
 | CardInfo/ValidityDate   				| 1  		|		| 			|

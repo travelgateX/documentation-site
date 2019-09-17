@@ -327,7 +327,7 @@ is closed.
 | MealPlans/MealPlan/Options 		| 1 		| 		| List of options					|
 | MealPlans/MealPlan /Options/Option 	| 1..n 		| 		| Detail of option.						|
 | @type 				| 1 		| String 	| Indicates option type (only hotel, hotel with ski pass, hotel with entrance...).	|
-| @paymentType 				| 1 		| String 	| Indicates payment type (See full type list at [Lists of Data](https://docs.travelgatex.com/legacy/docs/hotel/methods/listsdata/)) .	|
+| @paymentType 				| 1 		| String 	| Indicates payment type (See full type list at [Lists of Data](https://docs.travelgatex.com/legacy/docs/hotel/methods/listsdata/#payment-types)) .	|
 | @status 				| 1 		| String 	| Status option (OK = available, RQ = on request).		|
 | MealPlans/MealPlan/Options /Option/Parameters | 0..1 	| 		| Additional parameters that must be reported on the ValuationRQ. Parameters, if this option is required.	  |
 | MealPlans/MealPlan/Options /Option/Parameters/Parameter | 0..n | 	| Additional parameter requiring integration.		|
