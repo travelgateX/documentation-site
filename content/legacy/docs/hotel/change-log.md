@@ -48,13 +48,13 @@ permalink: /docs/hotel/change-log
 | ------------- | ----------------------------- |
 |  PayX      	| The payment is managed by TravelgateX's payment system.			|
 
-(You can find full payment types list at [Lists of Data](https://docs.travelgatex.com/legacy/docs/hotel/methods/listsdata/)).
+(You can find full payment types list at [Lists of Data](https://docs.travelgatex.com/legacy/docs/hotel/methods/listsdata/#payment-types)).
 
 {{% release-notes-container type="a"%}}
 * **Addition new error code type 302.** Adding code 302 for error Hotel Not Found in DescriptiveInfo.
 {{% /release-notes-container %}}
 
-(You can find full error codes list at [Lists of Data](https://docs.travelgatex.com/legacy/docs/hotel/methods/listsdata/)).
+(You can find full error codes list at [Lists of Data](https://docs.travelgatex.com/legacy/docs/hotel/methods/listsdata/#error-codes)).
 
 **Version 1.0.22:** Date 09/07/2019
 
