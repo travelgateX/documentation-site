@@ -261,6 +261,7 @@ Clarification - All information contained within the Avail section relates to th
     </Batch>
     <Generic>
         <RequiredNationality reviewDate = "20/06/2015">false</RequiredNationality>
+        <AllowsNationality reviewDate = "20/06/2015">true</AllowsNationality>
         <AllowsOnRequest reviewDate = "20/06/2015">false</AllowsOnRequest>
     </Generic>
 </MetaDataRS>
@@ -510,6 +511,8 @@ Clarification - All information contained within the Avail section relates to th
 | @reviewDate 			| 1   		| String	| Informs of the date when the field was last reviewed. |
 | Generic			| 1        	| 	| Generic node.		|
 | Generic/RequiredNationality			| 1        	| Boolean	| Informs if the supplier requires nationality in Avail, Valuation and Reservation.		|
+| @reviewDate 			| 1   		| String	| Informs of the date when the field was last reviewed. |
+| Generic/AllowsNationality			| 1        	| Boolean	| Informs if the supplier allows nationality in Avail, Valuation and Reservation.		|
 | @reviewDate 			| 1   		| String	| Informs of the date when the field was last reviewed. |
 | Generic/AllowsOnRequest			| 1        	| Boolean	| If true, the supplier informs the onrequest status option in Avail, Valuation, and Reservation.	|
 | @reviewDate 			| 1   		| String	| Informs of the date when the field was last reviewed. |

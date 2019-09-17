@@ -6,6 +6,56 @@ sidebar: mydoc_sidebar
 permalink: /docs/hotel/change-log
 ---
 
+**Version 1.0.22:** Date 30/09/2019
+
+{{% release-notes-container type="a"%}}
+* **Addition of tag AllowsNationality  in MetaData.** Adding AllowsNationality tag to MetaData response to inform if the supplier allows to receive the Nationality of the Holder of the booking.
+{{% /release-notes-container %}}
+
+~~~xml
+<Generic>
+    <AllowsNationality reviewDate = "06/09/2019">true</AllowsNationality>
+    <RequiredNationality reviewDate = "06/09/2019">true</RequiredNationality>
+    <AllowsOnRequest reviewDate = "06/09/2019">false</AllowsOnRequest>
+</Generic>
+~~~
+
+{{% release-notes-container type="a"%}}
+* **Addition of Holder element in Reservation, ReservationRead and Cancellation requests.** Adding Holder element tag to Reservation, ReservationRead and Cancellation requests. If the supplier allows, we would send this passenger as the Holder of the booking instead of picking the first guest.
+{{% /release-notes-container %}}
+
+~~~xml
+<Holder title = "Miss" name = "test"  surname = "test"/>
+~~~
+
+{{% release-notes-container type="a"%}}
+* **Addition of Title element for guests in Reservation request and ReservationRead response.** Adding Title element of guests to Reservation request and ReservationRead response.
+{{% /release-notes-container %}}
+
+~~~xml
+<Guest roomCandidateId = "1" paxId = "1">
+    <Title>Miss</Title>
+    <GivenName>Test11</GivenName>
+    <SurName>TestAp11</SurName>
+</Guest>
+~~~
+
+{{% release-notes-container type="a"%}}
+* **Addition of new payment type PayX.** Adding PayX as a payment type.
+{{% /release-notes-container %}}
+
+| **Code**	| **Description**			|
+| ------------- | ----------------------------- |
+|  PayX      	| The payment is managed by TravelgateX's payment system.			|
+
+(You can find full payment types list at [Lists of Data](https://docs.travelgatex.com/legacy/docs/hotel/methods/listsdata/)).
+
+{{% release-notes-container type="a"%}}
+* **Addition new error code type 302.** Adding code 302 for error Hotel Not Found in DescriptiveInfo.
+{{% /release-notes-container %}}
+
+(You can find full error codes list at [Lists of Data](https://docs.travelgatex.com/legacy/docs/hotel/methods/listsdata/)).
+
 **Version 1.0.22:** Date 09/07/2019
 
  * **Addition of the boolean DailyPrices to AvailRS.** By default DailyPrices is set to true. When set to true, if the supplier implements daily prices you will receive a list of daily prices for each room in the Avail response for the given date range. If set to false this information will not be included in the response.

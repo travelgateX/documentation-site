@@ -14,47 +14,6 @@ permalink: /docs/hotel/DSF/ListData
 This paragraph aims to return all of the data lists used in our system: language codes, error codes,currency list, credit cards, nationality and market.
 
 
-### Language Codes
-
-
-| **Language**	| **Code**	|
-| ------------- | ------------- |
-|  English      | en		|
-|  Spanish      | es		|
-|  Portuguese   | pt		|
-|  Italian      | it		|
-|  French       | fr		|
-|  German       | de		|
-|  Brazilian    | br		|
-
-
-
-### Error codes
-
-
-
-| **Code**	| **Description**												|
-| ------------- | ------------------------------------------------------------------------------------------------------------- |
-|  101         	| System Exception (Exception not controlled or not classified as general exception).			|
-|  102         	| Supplier Error.					|
-|  104         	| Timeout (Timeout during the execution of an operation (look in the common attribute timeout )).		|
-|  105         	| Communication Error. 		|
-|  204         	| Supplier returns 0 results in availability.									|
-|  205         	| The Supplier doesn't accept the distribution RQ.								|
-|  206         	| The Supplier doesn't accept the dates RQ.									|
-|  207         	| The Supplier doesn't accept the request RQ.									|
-|  301         	| Option not found in policies.											|
-  
-
-
-
-### Currency list
-
-
-Our system uses a standard ISO - 3 for all suppliers.
-
-
-
 ### Credit Cards
 
 
@@ -87,10 +46,44 @@ Our system uses a standard ISO - 3 for all suppliers.
 
 
 
-### Nationality
+### Currency list
 
 
-We use a standard ISO - 3166_1_alfa_2.
+Our system uses a standard ISO - 3 for all suppliers.
+
+
+
+### Error codes
+
+
+| **Code**	| **Description**												|
+| ------------- | ------------------------------------------------------------------------------------------------------------- |
+|  101         	| System Exception (Exception not controlled or not classified as general exception).			|
+|  102         	| Supplier Error.					|
+|  104         	| Timeout (Timeout during the execution of an operation (look in the common attribute timeout )).		|
+|  105         	| Communication Error. 		|
+|  204         	| Supplier returns 0 results in availability.									|
+|  205         	| The Supplier doesn't accept the distribution RQ.								|
+|  206         	| The Supplier doesn't accept the dates RQ.									|
+|  207         	| The Supplier doesn't accept the request RQ.									|
+|  301         	| Option not found in policies.											|
+|  302         	| Hotel Not Found in DescriptiveInfo.											|
+  
+
+
+
+### Language Codes
+
+
+| **Language**	| **Code**	|
+| ------------- | ------------- |
+|  English      | en		|
+|  Spanish      | es		|
+|  Portuguese   | pt		|
+|  Italian      | it		|
+|  French       | fr		|
+|  German       | de		|
+|  Brazilian    | br		|
 
 
 
@@ -101,3 +94,20 @@ Most suppliers use a standard ISO - 3166_1_alfa_2, but it depends on each indivi
 
 
 
+### Nationality
+
+
+We use a standard ISO - 3166_1_alfa_2.
+
+
+
+### Payment Types
+
+
+| **Codes**	| **Description**			|
+| ------------- | ----------------------------- |
+|  MerchantPay      	| The payment is managed by the supplier.				|
+|  LaterPay      	| The payment is managed by the hotel. The customer will use a credit-card as a guarantee for the hotel and the payment will be completed at check in.		|
+|  CardBookingPay      	| The payment is managed by the supplier. The payment is effectuated at the time of booking.			|
+|  CardChekInPay      	| The payment is managed by the supplier. The payment is effectuated at check in in the hotel.			|
+|  PayX      	| The payment is managed by TravelgateX's payment system.			|
