@@ -254,7 +254,7 @@ can have four values: OK, RQ, CN and UN.
     available, so the reservation goes into a waiting list (Request).
 -   *CN:* The reservation was completed but due to a supplier error or a timeout
     the system will immediately cancel the reservation to prevent further possible errors.
--   *UN:* The reservation was completed but due to a supplier error or a timeout, the reservation status is unknown.
+-   *UN:* The reservation process through TGX was completed but due to a supplier error or a timeout, the reservation status is unknown.
    It is the client's responsibility to check if the booking is OK.
 
 
