@@ -46,6 +46,7 @@ This paragraph aims to return all of the data lists used in our system: language
 |  206         	| The Supplier doesn't accept the dates RQ.									|
 |  207         	| The Supplier doesn't accept the request RQ.									|
 |  301         	| Option not found in policies.											|
+|  302         	| Hotel Not Found in DescriptiveInfo.											|
   
 
 <div class="anchor-offset" id="currency-codes"></div>
