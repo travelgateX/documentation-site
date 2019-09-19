@@ -13,6 +13,7 @@ permalink: /docs/hotel/DSF/ListData
 
 This paragraph aims to return all of the data lists used in our system: language codes, error codes,currency list, credit cards, nationality and market.
 
+<div class="anchor-offset" id="languages-codes"></div>
 
 ### Language Codes
 
@@ -45,16 +46,17 @@ This paragraph aims to return all of the data lists used in our system: language
 |  206         	| The Supplier doesn't accept the dates RQ.									|
 |  207         	| The Supplier doesn't accept the request RQ.									|
 |  301         	| Option not found in policies.											|
+|  302         	| Hotel Not Found in DescriptiveInfo.											|
   
 
+<div class="anchor-offset" id="currency-codes"></div>
 
-
-### Currency list
+### Currency codes
 
 
 Our system uses a standard ISO - 3 for all suppliers.
 
-
+<div class="anchor-offset" id="credit-cards"></div>
 
 ### Credit Cards
 
@@ -87,12 +89,14 @@ Our system uses a standard ISO - 3 for all suppliers.
 |  O       	| others			|
 
 
+<div class="anchor-offset" id="currency-codes"></div>
 
-### Nationality
+### Currency codes
 
 
-We use a standard ISO - 3166_1_alfa_2.
+Our system uses a standard ISO - 3 for all suppliers.
 
+<div class="anchor-offset" id="markets"></div>
 
 
 ### Markets
@@ -101,4 +105,23 @@ We use a standard ISO - 3166_1_alfa_2.
 Most suppliers use a standard ISO - 3166_1_alfa_2, but it depends on each individual supplier.
 
 
+<div class="anchor-offset" id="nationality"></div>
 
+### Nationality
+
+
+We use a standard ISO - 3166_1_alfa_2.
+
+
+<div class="anchor-offset" id="payment-types"></div>
+
+### Payment Types
+
+
+| **Codes**	| **Description**			|
+| ------------- | ----------------------------- |
+|  MerchantPay      	| The payment is managed by the supplier.				|
+|  LaterPay      	| The payment is managed by the hotel. The customer will use a credit-card as a guarantee for the hotel and the payment will be completed at check in.		|
+|  CardBookingPay      	| The payment is managed by the supplier. The payment is effectuated at the time of booking.			|
+|  CardChekInPay      	| The payment is managed by the supplier. The payment is effectuated at check in in the hotel.			|
+|  PayX      	| The payment is managed by TravelgateX's payment system.			|

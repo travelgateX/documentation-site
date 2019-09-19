@@ -60,6 +60,7 @@ is closed.
         <EndDate>29/01/2014</EndDate>
         <CreationDate>17/01/2014</CreationDate>
         <HotelCode>AAA</HotelCode>
+        <Holder title = "Miss" name = "Test11" surname = "TestAp11"/>
     </ReservationReadRQ>
 ~~~
 
@@ -79,6 +80,10 @@ is closed.
 | EndDate    		| 1    		| String	| End date of booking.					|
 | CreationDate		| 1    		| String	| Creation date of booking.				|
 | HotelCode		| 1    		| String	| Hotel code.				|
+| Holder   				| 0..1		|		| Holder of the booking.  |
+| @title   				| 1		|		| Holder's title.  |
+| @name   				| 1		|		| Holder's name.  |
+| @surname   				| 1		|		| Holder's surname.  |
 
 
 

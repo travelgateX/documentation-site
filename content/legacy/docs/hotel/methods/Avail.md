@@ -327,7 +327,7 @@ is closed.
 | MealPlans/MealPlan/Options 		| 1 		| 		| List of options					|
 | MealPlans/MealPlan /Options/Option 	| 1..n 		| 		| Detail of option.						|
 | @type 				| 1 		| String 	| Indicates option type (only hotel, hotel with ski pass, hotel with entrance...).	|
-| @paymentType 				| 1 		| String 	| Indicates payment type (Merchant, Direct ...) .	|
+| @paymentType 				| 1 		| String 	| Indicates payment type (See full type list at [Lists of Data](https://docs.travelgatex.com/legacy/docs/hotel/methods/listsdata/#payment-types)) .	|
 | @status 				| 1 		| String 	| Status option (OK = available, RQ = on request).		|
 | MealPlans/MealPlan/Options /Option/Parameters | 0..1 	| 		| Additional parameters that must be reported on the ValuationRQ. Parameters, if this option is required.	  |
 | MealPlans/MealPlan/Options /Option/Parameters/Parameter | 0..n | 	| Additional parameter requiring integration.		|
@@ -590,19 +590,6 @@ parameter <OnRequest> is set as true in the request. In case that the
 parameter <OnRequest> is set as false, the integration will filter
 this option in AvailRS only if the supplier provides us this information
 in the availability method.
-
-
-
-**PaymentOptions:**
-
--   **MerchantPay:** The payment is managed by the supplier.
--   **LaterPay:** The payment is managed by the hotel. The customer will
-    use a credit-card as a guarantee for the hotel and the payment will
-    be completed at check in.
--   **CardBookingPay:** The payment is managed by the supplier. The
-    payment is effectuated at the time of booking.
--   **CardChekInPay:** The payment is managed by the supplier. The
-    payment is effectuated at check in in the hotel.
 
 
 

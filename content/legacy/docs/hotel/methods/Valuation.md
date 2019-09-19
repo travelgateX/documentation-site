@@ -89,7 +89,7 @@ Our system allows for a maximum of **180000** milliseconds before the connection
 | BlockOption                            | 1          | Boolean  | Indicates if you want to block the option selected in AvailRS, as long as the supplier allows it in this method (see [MetaData](https://docs.travelgatex.com/legacy/docs/hotel/methods/metadata/)). |
 | MealPlanCode                           | 1          | String   | MealPlan code.  |
 | HotelCode                              | 1          | String   | Hotel code.     |
-| PaymentType                            | 1          | String   | Indicates payment type. |
+| PaymentType                            | 1          | String   | Indicates payment type (See full type list at [Lists of Data](https://docs.travelgatex.com/legacy/docs/hotel/methods/listsdata/#payment-types)). |
 | OptionType                             | 1          | String   | Indicates option types. |
 | Nationality                            | 1       | String   | Guest nationality (use ISO3166_1_alfa_2). |
 | Rooms                                  | 1          |          | Rooms in this option (room list). |
