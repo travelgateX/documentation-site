@@ -1,18 +1,15 @@
 +++
-title = "Changelog"
-pagetitle = "HotelX changelog"
-description = "Contains an accurated, chronologically-ordered list of notable changes"
+title = "Legacy changelog"
+pagetitle = "Legacy changelog"
+description = "Contains an accurated, chronologically-ordered list of notable changes before 19/09/2019"
 weight = 2
 icon="fa-exchange"
 svgicon="https://media.graphcms.com/7k0GtZyQn6QDcolRhnuQ"
 alwaysopen = false
-hidden = false
+hidden = true
+date = 2019-09-19
 tags = ["products-changelog"]
-
 +++
-
-Easily accessible log of notable changes to HotelX API
-{{% alert theme="info" %}}All notable changes in our platform will be documented on this page.{{% /alert %}}
 
 ## 2019-08-07
 {{% release-notes-container type="f"%}}

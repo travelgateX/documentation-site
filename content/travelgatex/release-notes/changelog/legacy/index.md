@@ -1,17 +1,15 @@
 +++
-title = "Changelog"
-pagetitle = "TravelgateX changelog"
-description = "Contains a curated, chronologically ordered list of notable changes"
+title = "Legacy changelog"
+pagetitle = "Legacy changelog"
+description = "Contains an accurated, chronologically-ordered list of notable changes before 19/09/2019"
 weight = 2
 icon="fa-exchange"
+svgicon="https://media.graphcms.com/kDcxZmKCQx2oLNNfGvSz"
 alwaysopen = false
-hidden = false
-
+hidden = true
+date = 2019-09-19
+tags = ["products-changelog"]
 +++
-
-To make it easier for users and contributors to see precisely what notable changes have been made on TravelgateX.
-
-{{% alert theme="info" %}}All notable changes on TravelgateX platform will be documented in this page.{{% /alert %}}
 
 ## 2019-08-29
 {{% release-notes-container type="c"%}}

@@ -8,7 +8,7 @@ icon="fa-exchange"
 alwaysopen = false
 hidden = false
 tags = ["hub-changelog"]
-outputs = [ "HTML", "ATOM"]
+outputs = [ "HTML", "RSS"]
 +++
 ​
 ## 2019-09-12
