@@ -1878,3 +1878,45 @@ div.anchor-offset {
   position: relative;
   top: -150px;
 }
+
+.page-sections-menu{
+  display: none;
+  position: absolute;
+  z-index: 10000;
+  color: black;
+  background: white;
+  overflow-y: auto;
+  max-height: 23vh;
+}   
+
+.page-sections-menu > #TableOfContents {
+  min-width: 200px;
+}
+
+.page-sections-menu.active {
+  background-color: rgba(247, 248, 249, 0.8);
+}
+
+.page-sections-menu nav {
+  display: block;
+  background-color: rgba(247, 248, 249, 0.8);
+  border-left: 2px solid #0754ae;
+}
+
+.page-sections-menu ul {
+  list-style-type: none;
+}
+
+.page-sections-menu ul ul {
+  padding-left: 5px;
+}
+
+.page-sections-menu nav > ul {
+  padding: 5px 7px;
+  margin-bottom: 0;
+}
+
+.page-sections-menu nav ul li a:hover {
+  text-decoration: none;
+  font-weight: bold;
+}
