@@ -1874,9 +1874,8 @@ div.alert.alert-info + h3#unreleased {
   height: 0;
 }
 
-div.anchor-offset {
-  position: relative;
-  top: -150px;
+.page-sections-item, .feed-menu-item {
+  visibility: hidden;
 }
 
 .page-sections-menu{
