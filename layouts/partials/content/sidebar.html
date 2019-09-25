@@ -139,22 +139,6 @@
       $('#navbar').removeClass('toogled');
       $('#backgroundMenu').removeClass('toogled');
     });
-
-    $('.menu-right').prepend('<p class="menu-head">Sections <span class="toggle-menu"><i class="fa fa-bars" aria-hidden="true"></i></span></p>').on('click', 'span.toggle-menu', function(){ 
-      $('#TableOfContents').toggle()
-    }); 
-
-     $('#TableOfContents a[href^="#"]').click(function() {
-      var target = $(this.hash);
-      let offset = 150;
-      if(target.prop('tagName') === 'DIV'){
-        offset = 0;
-      }
-      
-      $('html, body').animate({ scrollTop: target.offset().top-offset }, 500);
-      window.location.hash = target.attr('id');
-      return false;
-    });
   })
 
 </script>

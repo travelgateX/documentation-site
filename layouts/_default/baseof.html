@@ -41,6 +41,68 @@
         </div>
         <div class="sb_menu_div">
           <ul class="nav justify-content-end">
+              <li>
+                  <a class="page-sections-menu-head" href="javascript:void(0)" target="_blank">
+                    <span>Page sections</span>
+                  </a>
+                  <div class="page-sections-menu">
+                      {{ .TableOfContents }}
+                  </div>
+                </li>
+                <script>
+                  $(document).ready(function() {
+                    if (window.location.href.includes('/release-notes/changelog/')) {
+                      const ids = [];
+                      $('.content-center')
+                        .find('h2')
+                        .each(function() {
+                          ids.push(this.id);
+                        });
+
+                      if (ids.length) {
+                        $('.page-sections-menu').html(`
+                              <nav id="TableOfContents">
+                                <ul>
+                                    <li>
+                                        <ul class="changelog-menu">
+                                            ${ids.map(
+                                              id => `<li><a href="#${id}">${id}</a></li>`
+                                            ).join('')}
+                                        </ul>
+                                    </li>
+                                </ul>
+                              </nav>
+                              `);
+                      }else{
+                        $('.page-sections-menu')
+                          .parent()
+                          .hide();
+                      }
+                    } else if ($('.page-sections-menu').children().length === 0) {
+                      $('.page-sections-menu')
+                        .parent()
+                        .hide();
+                    }
+
+                    $('.page-sections-menu-head').click(function() {
+                      $(this).toggleClass('active');
+                      $('.page-sections-menu').slideToggle('fast');
+                      return false;
+                    });
+
+                    $('#TableOfContents').on('click', 'a[href^="#"]', function() {
+                      var target = $(this.hash);
+                      let offset = 150;
+                      if (target.prop('tagName') === 'DIV') {
+                        offset = 0;
+                      }
+
+                      $('html, body').animate({ scrollTop: target.offset().top - offset }, 500);
+                      window.location.hash = target.attr('id');
+                      return false;
+                    });
+                  });
+                </script>
             <li>
               <a href="https://slack.travelgatex.com/" target="_blank">
                 <span>Chat</span>
@@ -120,11 +182,11 @@
             </div>
             <div id="backgroundMenu"></div>
           </div>
-          <div class="menu-right">
+          <!-- <div class="menu-right">
             <div>
               {{ .TableOfContents }}
             </div>
-          </div>
+          </div> -->
           <div class="clear"></div>
         </div>
       </div>
