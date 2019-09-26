@@ -119,7 +119,7 @@
             <li class="feed-menu-item"></li>
               <script>
                 $(document).ready(function(){
-                  if(window.location.href.endsWith('/changelog/')){
+                  if(window.location.href.includes('/release-notes/changelog/')){
                     $('.feed-menu-item').html(`
                       <a href="${window.location.href}index.xml" target="_blank">
                         <span>RSS
