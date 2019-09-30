@@ -28,9 +28,11 @@ Yes, you can personalize the response structure by changing the query or mutatio
 ## Response time
 **Which timeout should I send in each step?**
 Our system allows:
-* A maximum of 25000ms in Search.
-* A maximum of 180000ms in Quote.
-* A maximum of 180000ms in Book.
+
+* A maximum of 25000ms in Search. 
+* A maximum of 180000ms in Quote. 
+* A maximum of 180000ms in Book. 
+
 Our recommendation is to test which timeout fits your needs better, taking into account the number of hotels requested and the supplier.
 
 
