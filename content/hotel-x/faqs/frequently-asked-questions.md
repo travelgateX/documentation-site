@@ -12,7 +12,7 @@ tags = ["faq"]
 ### Where can I find object explanations/definitions?
 You can find it on our [`Schema`](https://api.travelgatex.com/) 
 
-**Which are the languages allowed in HotelX?**
+### Which are the languages allowed in HotelX?
 The new aggregator allows every language, it will depend on each supplier.
 
 **In aggregator mode, is it possible to set a time out for each provider?**
