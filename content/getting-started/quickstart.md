@@ -28,7 +28,7 @@ In order to start building your own API, you'll need to join the TravelgateX par
 Choose which APIs you would like to use from our constantly growing catalog of travel services.
 
 - **[HotelX](/hotel-x/)**: Search, check availability, compare prices, and book hotels in realtime with our API
-- **Stats**: **_(Coming soon!)_** Track all of your API calls to our travel services, the calls being made, the response times and the status codes. Ideal for managing DevOps for large travel websites.
+- **[Stats](/stats/)**: Track all of your API calls to our travel services, the calls being made, the response times and the status codes. Ideal for managing DevOps for large travel websites.
 - **Insights**: **_(Coming soon!)_** Stand back and get a wider perspective on your travel customers with a forthcoming data API that will reveal the trends and travel patterns of your customer base. All the messages, all the searches, everything you’ve done on TravelgateX will be available in Insight.
 - **Mappea**: **_(Coming soon!)_** The fastest way to display maps of your hotels, travel services and HotelX bookings on your website, in customer communication, and in your client apps.
 
