@@ -8,7 +8,7 @@ alwaysopen = false
 tags = ["faq"]
 +++
 
-## General
+# General
 **Where can I find object explanations/definitions?**
 You can find it on our [`Schema`](https://api.travelgatex.com/) 
 
