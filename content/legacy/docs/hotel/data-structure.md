@@ -39,9 +39,7 @@ The integration will have the following methods:
 | ReservationRead           | ReservationReadRQ           | ReservationReadRS           | No           | Retrieves booking details. |
 | ReservationList           | ReservationListRQ           | ReservationListRS           | No           | Retrieves a list of bookings. |
 | Runtime Configuration      | Runtime ConfigurationRQ      | Runtime ConfigurationRS      | Yes          |Retrieves the supplier’s run-time configuration. |
-| Static Configuration       | Static ConfigurationRQ       | StaticC onfigurationRS       | Yes          | Retrieves the supplier’s static configuration. |
-| ModifyValuation           | ModifyValuationRQ           | ModifyValuationRS           | No           | Requests a possible booking change. |
-| ModifyReservation         | Modify ReservationRQ         |  Modify ReservationRS        | No           | Confirms booking change. |
+| MetaData       | MetaDataRQ       | MetaDataRS       | Yes          | Retrieves the supplier’s static configuration. |
 | MetaData         | MetaDataRQ         |  MetaDataRS        | No           | Meta data information. |
 
 Each request sent to  **service url** requires a node called *rqXML*. The current method's input object travels inside this node.
@@ -50,33 +48,4 @@ Each request sent to  **service url** requires a node called *rqXML*. The curren
 The data structure will always have common elements in all objects as well as
 specific objects related to the operation
 
-
-
-**Data structure content:**
-
-1. [Common-Elements](/legacy/docs/hotel/DSF/Common-Elements)
-2. [Avail](/legacy/docs/hotel/DSF/Avail)
-3. [Valuation](/legacy/docs/hotel/DSF/Valuation)
-4. [Reservation](/legacy/docs/hotel/DSF/Reservation)
-5. [ReservationRead](/legacy/docs/hotel/DSF/ReservationRead)
-6. [ReservationList](/legacy/docs/hotel/DSF/ReservationList)
-7. [Cancel](/legacy/docs/hotel/DSF/Cancel)
-8. [HotelList](/legacy/docs/hotel/DSF/HotelList)
-9. [DescriptiveInfo](/legacy/docs/hotel/DSF/DescriptiveInfo)
-10. [DescriptiveInfoExtended](/legacy/docs/hotel/DSF/DescriptiveInfoExtended)
-11. [AvailDestinationTree](/legacy/docs/hotel/DSF/AvailDestinationTree)
-12. [GeographicDestinationTree](/legacy/docs/hotel/DSF/GeographicDestinationTree)
-13. [MealPlanList](/legacy/docs/hotel/DSF/MealPlanList)
-14. [RoomList](/legacy/docs/hotel/DSF/RoomList)
-15. [CategoryList](/legacy/docs/hotel/DSF/CategoryList)
-16. [StaticConfiguration](/legacy/docs/hotel/DSF/StaticConfiguration)
-17. [RuntimeConfiguration](/legacy/docs/hotel/DSF/RuntimeConfiguration)
-18. [ModifyValuation](/legacy/docs/hotel/DSF/ModifyValuation)
-19. [ModifyReservation](/legacy/docs/hotel/DSF/ModifyReservation)
-20. [CurrencyList](/legacy/docs/hotel/DSF/CurrencyList)
-21. [Lists of Data](/legacy/docs/hotel/DSF/ListData)
-22. [MarketList](/legacy/docs/hotel/DSF/MarketList)
-23. [MetaData](/legacy/docs/hotel/DSF/MetaData)
-
-
-
+You can find full specification of each method at the [Hotel API Methods](https://docs.travelgatex.com/legacy/docs/hotel/methods/) page.
