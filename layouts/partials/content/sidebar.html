@@ -26,19 +26,16 @@
             {{- if .Params.alwaysopen}} alwaysopen{{end -}}
             ">
           <a href="{{ .RelPermalink}}">
-            <span>{{safeHTML .Params.Pre}}{{.Title}}{{safeHTML .Params.Post}}</span>
-
-            {{- $numberOfPages := (add (len .Pages) (len .Sections)) }}
-            {{- if ne $numberOfPages 0 }}
-              {{- if or (.IsAncestor $currentNode) (.Params.alwaysopen) }}
-                <i class="fa fa-angle-down fa-lg category-icon"></i>
-              {{- else -}}
-                <i class="fa fa-angle-right fa-lg category-icon"></i>
-              {{- end}}
-            {{- end}}
-
-            {{- if $showvisitedlinks}}<i class="fa fa-circle-thin read-icon"></i>{{end}}
+            <span>{{safeHTML .Params.Pre}}{{.Title}}{{safeHTML .Params.Post}}</span>            
           </a>
+          {{- $numberOfPages := (add (len .Pages) (len .Sections)) }}
+          {{- if ne $numberOfPages 0 }}
+            {{- if or (.IsAncestor $currentNode) (.Params.alwaysopen) }}
+              <i class="fa fa-angle-down fa-lg category-icon"></i>
+            {{- else -}}
+              <i class="fa fa-angle-right fa-lg category-icon"></i>
+            {{- end}}
+          {{- end}}
           {{- if ne $numberOfPages 0 }}
             <ul>
               {{- .Scratch.Set "pages" .Pages }}
@@ -124,6 +121,22 @@
     if(hiddenPlaygroundUrls.some(dir=>window.location.href.includes(dir))){
       playground.hide();
     }
+
+    $('#navbar li.dd-item.parent.active > i.fa.fa-angle-down.fa-lg.category-icon').next('ul').slideToggle()
+
+    $('#navbar li.dd-item > i.fa').click(function(e){
+      const self = $(this);
+      const cls = self.attr('class');
+
+      self.toggleClass('fa-angle-right')
+      self.toggleClass('fa-angle-down')
+      // if(self.hasClass('fa-angle-down')){
+
+      // }else{
+
+      // }
+      self.next('ul').slideToggle();
+    })
 
     $('#menu').click((event)=>{
       if($('#navbar').hasClass('toogled')){
