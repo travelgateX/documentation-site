@@ -9,7 +9,7 @@ tags = ["faq"]
 +++
 
 # General
-**Where can I find object explanations/definitions?**
+## Where can I find object explanations/definitions?
 You can find it on our [`Schema`](https://api.travelgatex.com/) 
 
 **Which are the languages allowed in HotelX?**
@@ -85,13 +85,13 @@ Being that said, hotelCode will be the one returned through our API (concatenate
 
 *You should always map the hotelCode code*
 
-## Authorization
+# Authorization
 
 **After connecting one supplier, I would like to integrate more suppliers 
 Those new suppliers would have the same api-key? And the client?**
 Yes, apikey and client will always be the same as those are your "TGX credential". 
 
-## Search
+# Search
 
 **How to structure a multi-room in HotelX**
 In order to avoid errors in your Query Search of more than 1 room, please, find below a sample structure of a multi-room:
