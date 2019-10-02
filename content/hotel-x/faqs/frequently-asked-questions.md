@@ -9,7 +9,7 @@ tags = ["faq"]
 +++
 
 # General
-## Where can I find object explanations/definitions?
+### Where can I find object explanations/definitions?
 You can find it on our [`Schema`](https://api.travelgatex.com/) 
 
 **Which are the languages allowed in HotelX?**
