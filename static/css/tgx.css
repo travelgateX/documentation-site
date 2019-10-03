@@ -29,10 +29,10 @@
   padding: 0;
 }
 
-nav.menu-nav > ul {
-  /* position: absolute; */
-  /* temporal */
-  /* right: 6%; */
+#navbar .dd-item > div {
+  position: relative;
+  display: inline-flex;
+  width: 100%;
 }
 
 nav.menu-nav > ul::-webkit-scrollbar {
@@ -339,15 +339,8 @@ nav {
 }
 
 nav.menu-nav ul li a {
-  display: inline-flex;
-  width: 100%;
   padding: 4px 5px;
 }
-
-nav.menu-nav ul li a > * {
-  vertical-align: middle;
-}
-
 .navbar-brand {
   display: inline-block;
   padding-top: 0.25rem;
