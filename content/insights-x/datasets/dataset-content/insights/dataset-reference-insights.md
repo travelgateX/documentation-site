@@ -336,14 +336,13 @@ __Preview__
 |--------------------------------------|-----------|-------------|-------------------------|-------------------------|--------|-------------|--------|-------------|----------|--------|---------|--------------|--------|---------------------------------------|------|------------|------------|----------|------------|--------|----------|---------|
 | 123456789012                         | client 1  | provider 1  | 2019-06-18 16:32:37 UTC | 2019-06-20 12:00:00 UTC | 71.54  |    null     | CN     | China       | 1        | 1      | IT      | Italy        | Lazio  | Citta  metropolitana di Roma Capitale | Rome | 18943      | hotel 1    | user 1   | 0.0        | 1      | 0        | 0       |
 
-## daily\_portfolio\_seller
+## daily\_portfolio\_(buyer|seller)
 This table is used to know which hotels over supplier's portfolio are being queried by the clients. This can be helpful to know which percentage over portfolio is mapped by the client.
 
 __fields__
 
-* **client\_id	(STRING).** Client unique ID.
+* **client\_owner (STRING).** Organization's name of the client.
 * **provider\_id (STRING).** Provider unique ID.
-* **username (STRING).** User ID in provider's system.
 * **hotel (STRING).** Hotel unique ID.
 * **hotel\_name\_portfolio (STRING).** Hotel name.
 * **country (STRING).** Hotel Country Code (ISO Alpha-2 code).
@@ -369,8 +368,31 @@ __fields__
 	
 __Preview__
 
-| client_id | provider_id | username   | hotel_name           | country | zone_1             | zone_2  | city                 | hotel_code | status | search_ok | search_nok | quote_ok | quote_nok | booking_ok | booking_nok | cancel_ok | cancel_nok | revenue_net | revenue_unknown |
-|-----------|-------------|------------|----------------------|---------|--------------------|---------|----------------------|------------|--------|-----------|------------|----------|-----------|------------|-------------|-----------|------------|-------------|-----------------|
-| Client 1  | Provider 1  | 1464534881 | Residence Bologna    | CZ      | Hlavni mesto Praha | Praha 1 | Stare Mesto          | 336629     | 2      | 9805      | 3896       | 10       |           | 1          |             | 1         |            | 354.1       |                 |
-| Client 2  | Provider 2  | 132965     | Hotel Guaparo Suites | VE      | Estado Carabobo    |         | Urbanizacion Guaparo | 814595     | 1      |           |            |          |           |            |             |           |            |             |                 |
-| Client 3  | Provider 3  | 14644046   |                      |         |                    |         |                      | 2363330    | 0      |           | 4          |          |           |            |             |           |            |             |                 |
+| client_owner | provider_id | hotel_name           | country | zone_1             | zone_2  | city                 | hotel_code | status | search_ok | search_nok | quote_ok | quote_nok | booking_ok | booking_nok | cancel_ok | cancel_nok | revenue_net | revenue_unknown |
+|--------------|-------------|----------------------|---------|--------------------|---------|----------------------|------------|--------|-----------|------------|----------|-----------|------------|-------------|-----------|------------|-------------|-----------------|
+| Org Client 1 | Provider 1  | Residence Bologna    | CZ      | Hlavni mesto Praha | Praha 1 | Stare Mesto          | 336629     | 2      | 9805      | 3896       | 10       |           | 1          |             | 1         |            | 354.1       |                 |
+| Org Client 2 | Provider 2  | Hotel Guaparo Suites | VE      | Estado Carabobo    |         | Urbanizacion Guaparo | 814595     | 1      |           |            |          |           |            |             |           |            |             |                 |
+| Org Client 3 | Provider 3  |                      |         |                    |         |                      | 2363330    | 0      |           | 4          |          |           |            |             |           |            |             |                 |
+
+## daily\_portfolio\_stats\_(buyer|seller)
+This table is used to measure the evolution of the daily\_portfolio\_(buyer|seller) table. This can be helpful to know if you are getting better results in your portfolio optimization.
+
+__fields__
+
+* **client\_owner (STRING).** Organization's name of the client.
+* **provider\_id (STRING).** Provider unique ID.
+* **status**. It is an enumeration to describe the status of the hotel.
+    * 0 = Hotel code queried but it doesn't appear in provider's portfolio. It can be due to a wrong mapping in client's system.
+    * 1 = Hotel code not queried but it appears in provider's portfolio. It can be due to a mismapping in the client's system.
+    * 2 = Hotel code queried and it appears in provider's portfolio.
+	* 3 = Hotel code queried but don't appears in TravelgateX system. It can be due to a out-of-date provider hotels information.
+* **hits (NUMBER).** Quantity of hotels for above key (client\_id, provider\_id and status).
+	
+	
+__Preview__
+
+| client_id | provider_id | status     | hits                 |
+|-----------|-------------|------------|----------------------|
+| Client 1  | Provider 1  | 1          | 146453               |
+| Client 2  | Provider 2  | 0          | 150200               |
+| Client 3  | Provider 3  | 2          | 14644046             |
