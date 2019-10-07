@@ -3,10 +3,11 @@ title = "Insights"
 pagetitle = "Insights changelog"
 description = "Contains a curated, chronologically ordered list of notable changes"
 weight = 6
-icon="fa-cube"
-svgicon= "https://media.graphcms.com/ylS9o5MfRAeqPEOo8WNi"
+icon = "fa-cube"
+svgicon = "https://media.graphcms.com/ylS9o5MfRAeqPEOo8WNi"
 alwaysopen = false
-hidden = false
+hidden = true
+tags = ["products-changelog"]
 +++
 
 To make it easier for users and contributors to see precisely what notable changes have been made on the product.
