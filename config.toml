@@ -1,4 +1,4 @@
-baseURL = "/"
+baseURL = "https://docs.travelgatex.com/"
 languageCode = "en-us"
 DefaultContentLanguage = "en"
 
