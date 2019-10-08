@@ -7,6 +7,7 @@ icon="fa-cube"
 svgicon= "https://media.graphcms.com/rHI17B6SXKXuA7WUg0v1"
 alwaysopen = false
 hidden = true
+date = 2019-10-08
 tags = ["products-changelog"]
 +++
 
