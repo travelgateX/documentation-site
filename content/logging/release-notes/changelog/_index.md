@@ -1,5 +1,5 @@
 ---
-title: "Changelog"
+title: "Logging changelog"
 icon: "fa-exchange"
 aliases: 
     - "/travelgatex/release-notes/products-changelogs/changelog-logging/"

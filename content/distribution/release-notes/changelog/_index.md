@@ -1,5 +1,5 @@
 ---
-title: "Changelog"
+title: "Distribution changelog"
 icon: "fa-exchange"
 ---
 

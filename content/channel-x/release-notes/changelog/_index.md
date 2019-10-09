@@ -1,5 +1,5 @@
 ---
-title: "Changelog"
+title: "Channel-X changelog"
 icon: "fa-exchange"
 ---
 

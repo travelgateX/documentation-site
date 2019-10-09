@@ -1,5 +1,5 @@
 ---
-title: "Changelog"
+title: "Alerts-X Changelog"
 icon: "fa-exchange"
 ---
 

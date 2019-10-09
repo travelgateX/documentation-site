@@ -1,5 +1,5 @@
 ---
-title: "travelgatex.com"
+title: "Web travelgatex.com changelog"
 pagetitle: "Web site travelgatex.com"
 weight:  9
 icon:  "fa-cube"
