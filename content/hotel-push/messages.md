@@ -1,6 +1,6 @@
 ---
 title: Messages with OTA xsd structure
-keywords: hotel-push, messages
+keywords: hotel-push messages
 search: Hotel-Push - Messages
 icon : fa-commenting
 aliases: [/legacy/docs/hotel-push/messages]
