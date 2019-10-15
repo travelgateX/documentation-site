@@ -19,6 +19,7 @@ This document provides guidance for contributors to the TravelgateX Platform Com
 * [Markdown usage](#markdown-usage)
 * [Voice and tone](#voice-and-tone)
 * [Including source code](#including-source-code)
+* [API documentation](#api-documentation)
 * [Writing resources](#writing-resources)
 
 ## Caveats
@@ -584,6 +585,32 @@ This option is more complicated, but allows us to test the code, and allows the
 user to view real source code files.
 
 For an example, see [Using Node.js to Calculate the Size of a BigQuery Dataset](https://github.com/GoogleCloudPlatform/community/blob/master/tutorials/using-nodejs-to-calculate-the-size-of-a-bigquery-dataset).
+
+## API Documentation
+
+Here we'll fix some standarts on docummenting API's:
+
+### Nested Nodes
+
+```xml
+<a>
+  <b>
+    <c>
+      <d>content</d>
+    </c>
+  </b>
+</a>
+```
+
+For documenting this we'll use a table with rows indicating the name of the node, all the path, the intermediate nodes will left the type empty:
+
+| Element | number | type   | description |
+| :------ | -----: | -----: | ----------- |
+| a       | 1      |        | [...] |
+| a/b     | 1      |        | [...] |
+| a/b/c   | 1      |        | [...] |
+| a/b/c/d | 1      | string | [...] |
+
 
 ## Writing resources
 
