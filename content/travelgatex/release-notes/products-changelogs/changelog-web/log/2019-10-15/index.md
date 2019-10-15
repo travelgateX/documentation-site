@@ -1,27 +1,29 @@
 +++
-title = "2019-09-30"
-pagetitle = "2019-09-30"
+title = "2019-10-15"
+pagetitle = "2019-10-15"
 description = "Contains a chronologically ordered list of notable changes at our website"
 weight = 1
 icon = "fa-cube"
 svgicon = "https://media.graphcms.com/TZIRsCAGSD6uCfBeDhc9"
 alwaysopen = false
-date = 2019-09-30
+date = 2019-10-15
 hidden = true
 tags = ["products-changelog"]
 +++
 
-## 2019-09-30
+## 2019-10-15
 
 {{% release-notes-container type="a"%}}
-- ENTITIES: Modified access form to custom require runtime configuration
+- ACCESES: Added shared field and allowed url edition in acceses.
+- MENU: new horizontal menu.
 {{% /release-notes-container %}}
 
 {{% release-notes-container type="c"%}}
-- IAM: Changes on new macro roles
-- ORGANIZATIONS: Changed filters to not appear on the request on missing
+- CONNECT: Modified to choose client before hotelx.
+- PUBLIC WEB: changed info searches/day in home.
 {{% /release-notes-container %}}
 
 {{% release-notes-container type="f"%}}
-- MEMBERS: Solved an error realated on updating api-keys after a new creation
+- PROFILES: tag error on removing category fixed.
+- PRESS: Fixed media processing.
 {{% /release-notes-container %}}
