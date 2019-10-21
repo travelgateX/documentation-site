@@ -18,12 +18,12 @@ Data is stored in multiple tables depending on the kind of info that wants to be
 * Monthly (aggregation stored in the first day of the month)
 
 The fields and explanation of tables are based on seller organization. The case of buyer organization is analogous.
-Descriptions of each table and their correspondent fields are found below:
+Descriptions of each table and their correspondent fields can be found below:
 
 
 ## benchmarking\_country\_city\_client\_(daily|weekly|monthly)\_seller
-This table contains different benchmarks of your organization for the TravelgateX marketplace at specific level of buyer, country and city.
-The benchmarks are based on the total of differents and availables hotels that have been requested, the total of bookings and the total amount of net revenue of the bookings.
+This table contains different bechmarkings for your organization in TravelgateX marketplace at specific level of buyer, country and city.
+Benchmarks are based on the total of differents and availables hotels that have been requested, the total of bookings and the total amount of net revenue of the bookings.
 
 __fields__
 
@@ -69,8 +69,8 @@ __Preview__
 
 
 ## benchmarking\_country\_client\_(daily|weekly|monthly)\_seller
-This table contains different benchmarks of your organization for the TravelgateX marketplace at specific level of buyer and country.
-The benchmarks are based on the total of differents and availables hotels that have been requested, the total of bookings and the total amount of net revenue of the bookings.
+This table contains different benchmarkings foryour organization in TravelgateX marketplace at specific level of buyer and country.
+Benchmarks are based on the total of differents and availables hotels that have been requested, the total of bookings and the total amount of net revenue of the bookings.
 
 __fields__
 
@@ -116,8 +116,8 @@ __Preview__
 
 
 ## benchmarking\_client\_(daily|weekly|monthly)\_seller
-This table contains different benchmarks of your organization for the TravelgateX marketplace at specific level of buyer.
-The benchmarks are based on the total of differents and availables hotels that have been requested, the total of bookings and the total amount of net revenue of the bookings.
+This table contains different benchmarkings for your organization in  TravelgateX marketplace at specific level of buyer.
+Benchmarks are based on the total of differents and availables hotels that have been requested, the total of bookings and the total amount of net revenue of the bookings.
 
 __fields__
 
@@ -159,8 +159,8 @@ __Preview__
 
 
 ## benchmarking\_country\_city\_(daily|weekly|monthly)\_seller
-This table contains different benchmarks of your organization for the TravelgateX marketplace at specific level of country and city.
-The benchmarks are based on the total of differents and availables hotels that have been requested, the total of bookings and the total amount of net revenue of the bookings.
+This table contains different benchmarkings for your organization in TravelgateX marketplace at specific level of country and city.
+Benchmarks are based on the total of differents and availables hotels that have been requested, the total of bookings and the total amount of net revenue of the bookings.
 
 __fields__
 
@@ -205,8 +205,8 @@ __Preview__
 
 
 ## benchmarking\_country\_(daily|weekly|monthly)\_seller
-This table contains different benchmarks of your organization for the TravelgateX marketplace at specific level of country.
-The benchmarks are based on the total of differents and availables hotels that have been requested, the total of bookings and the total amount of net revenue of the bookings.
+This table contains different bechmarkings for your organization in  TravelgateX marketplace at specific level of country.
+Benchmarks are based on the total of differents and availables hotels that have been requested, the total of bookings and the total amount of net revenue of the bookings.
 
 __fields__
 
@@ -248,8 +248,8 @@ __Preview__
 
 
 ## benchmarking\_(daily|weekly|monthly)\_seller
-This table contains different benchmarks of your organization for the TravelgateX marketplace.
-The benchmarks are based on the total of differents and availables hotels that have been requested, the total of bookings and the total amount of net revenue of the bookings.
+This table contains different benchmarkings for your organization in TravelgateX marketplace.
+Benchmarks are based on the total of differents and availables hotels that have been requested, the total of bookings and the total amount of net revenue of the bookings.
 
 __fields__
 

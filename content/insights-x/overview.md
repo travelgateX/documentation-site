@@ -26,9 +26,7 @@ Insights-X will allow access to [Datasets](/insights-x/datasets/) with structure
 We support different [Dataset publication formats](/insights-x/datasets/types-of-datasets/) which are documented [here](/insights-x/datasets/dataset-reference/)
 
 ## Tooling
-If you don't have your own reporting tool, the easiest way to interact with Insights-X datasets is via our free [Google Data Studio Templates](https://datastudio.google.com/u/0/navigation/reporting). 
-
-Find out more about TravelgateX free tools in [Dataset tooling](/insights-x/datasets/dataset-tooling/) 
+If you don't have your own reporting tool, the easiest way to interact with Insights-X datasets is via our free Google Data Studio Templates. Find out more about TravelgateX free tools in [Dataset tooling](/insights-x/datasets/dataset-tooling/) 
 
 ## API
 {{% alert theme="info" %}}Insights-X API, which allows to query insights using GraphqQL 'queries', is coming soon. 

@@ -194,4 +194,4 @@ Benchmark datasets allows L2B comparison for the search key “source market | d
 
 * **How to increase bookings and revenue with new connections?**
 
-Table “Opportunities” shows the number of potential clients / providers not connected with you but selling or buying in your markets or destinations. This will allow you to identify potential partnerships to boost your business by selling your product into new markets or new destinations.
+Page report “Opportunities” shows the number of potential clients / providers not connected with you but selling or buying in your markets or destinations. This will allow you to identify potential partnerships to boost your business by selling your product into new markets or new destinations.

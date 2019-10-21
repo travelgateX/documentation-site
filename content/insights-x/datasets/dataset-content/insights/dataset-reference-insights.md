@@ -18,10 +18,10 @@ Data is stored in multiple tables depending on the kind of info that wants to be
 * Monthly (aggregation stored in the first day of the month)
 
 
-Descriptions of each table and their correspondent fields are found below:
+Descriptions of each table and their correspondent fields can be found below:
 
 ## insights\_(daily|weekly|monthly)\_(buyer|seller)
-This table contains info from searches, quotes, bookings and revenue aggregated per buyer, seller, search date, check in date, nights, market, number of rooms, quantity of paxes and hotel by day|week|month. 
+This table contains data from searches, quotes, bookings and revenue aggregated per buyer, seller, search date, check in date, nights, market, number of rooms, quantity of paxes and hotel by day|week|month. 
 
 __fields__
 
@@ -90,7 +90,7 @@ __Preview__
 | | | | | | | | | | | | | | | | | | | | | | | | | 203 | _null_ | 1 | _null_ | _null_ | _null_ | _null_ | _null_ |_null_ | _null_ | _null_ | _null_ | _null_ | 2548.26 | 2548.26 | 2548.26 | _null_ | _null_ | _null_ | _null_ | _null_ | _null_ | _null_ | _null_ | _null_ | _null_ | _null_ | _null_ |
 
 ## insights\_agg\_(daily|weekly|monthly)\_(buyer|seller)
-This table contains info similar to _insights\_daily\_(buyer|seller)_ but with a bigger aggregation. The fields _check\_in_, _adults_, _children_ and _infants_ have disapeared.
+This table contains indata fo similar to _insights\_daily\_(buyer|seller)_ but with a bigger aggregation. The fields _check\_in_, _adults_, _children_ and _infants_ have disapeared.
 
 __fields__
 
@@ -170,7 +170,7 @@ __Preview__
 | | | | | | | | | | | | | | | | | | | | | | | 203 | _null_ | 1 | _null_ | _null_ | _null_ | _null_ | _null_ |_null_ | _null_ | _null_ | _null_ | _null_ | 2548.26 | 2548.26 | 2548.26 | _null_ | _null_ | _null_ | _null_ | _null_ | _null_ | _null_ | _null_ | _null_ | _null_ | _null_ | _null_ |
 
 ## effective\_bookings\_(buyer|seller)
-This table contains specific information about bookings done and their current status (Ok or cancelled).
+This table contains specific data about bookings and their current status (Ok or cancelled).
 
 __fields__
 
