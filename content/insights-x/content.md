@@ -31,5 +31,5 @@ Finally, with benchmarking reports, Insights-X provides detailed informaton abou
 
 * **Insights**. The comparisons are based on the number of available hotels, total bookings and net revenue. Additionally, you will be able to compare your position against other competitors filtering by country, city and clients/suppliers, adding the possibility of fixing your comptetitive set. Find out more about benchmark [here](/insights-x/datasets/dataset-content/benchmark/insights).
 
-* **Opportunities**. Learn how to grow your business through TravelgateX. Based on your performance, Insights-X suggests new source markets and/ or new destinations to increase your sales by connecting new clients/suppliers. Additionally, we bring your opportunities to know which destinations are being sold more through the B2B platform.
+* **Opportunities**. Learn how to grow your business through TravelgateX. Based on your performance, Insights-X will recommend you new source markets and/ or new destinations to increase your sales by connecting new clients/suppliers. Additionally, we bring your opportunities to know which destinations are being sold more through the B2B platform.
 

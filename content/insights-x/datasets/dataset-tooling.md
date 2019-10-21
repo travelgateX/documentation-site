@@ -20,6 +20,6 @@ If you don't have your own reporting tools as Tableau or PowerBI, the easiest wa
 | Partner seller    | 1.1             |    [Template] (https://datastudio.google.com/s/nAuiuI9_l1M)  |
 | Partner buyer   | 1.1              |   [Template] (https://datastudio.google.com/open/1Yxjf0b5Krk47hA_O3IF8Kgd9lshe6lQY)           |
 | Hotelier         | 1.0              |               |
-| Industry partner public | 1.0       |               |
+| Industry partner public | 1.0       |      [Example of premium reports](https://blog.travelgatex.com/wp-content/uploads/2019/10/SEA_Travel_Insights_TGX-1.pdf)         |
 | Industry partner private | 1.0      |               |
 
