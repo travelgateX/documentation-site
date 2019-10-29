@@ -157,6 +157,6 @@ is closed, is of **240000** milliseconds.
 | --------------------------------------------- | ------------- | -------- | ------------------------------------------ |
 | ReservationListRS              		| 1             |	   | Root node.					|
 | ReservationListRS/Reservations 		| 0..1          |	   | Reservations.				|
-| ReservationListRS/Reservations/Reservation	| 1             |	   | Same structure as ReservationReadRS.	|
+| ReservationListRS/Reservations/Reservation	| 1..n             |	   | Same structure as [ReservationReadRS](/docs/hotel/methods/reservationread/).	|
 
 
