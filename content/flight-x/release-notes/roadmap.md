@@ -1,7 +1,7 @@
 +++
 title = "Roadmap"
-pagetitle = "Insights-X roadmap"
-description = "We have created a GitHub Project where we will keep you updated with all the future modifications regarding this Project"
+pagetitle = "Flight-X roadmap"
+description = "Flight-X roadmap summarized"
 weight = 1
 alwaysopen = false
 icon="fa-road"
@@ -9,8 +9,33 @@ hidden = false
 tags = ["roadmap"]
 +++
 
-We have created a GitHub Project where we will keep you updated with all the future modifications regarding this Project.
 
-[Here](https://github.com/orgs/travelgateX/projects/4) you will find the GitHub project with the Public Roadmap of TravelgateX.
+### 2019 Q4
 
-The Project has a few columns that act as the status, whereas cards are the items that we have in our plans. We have also labelled each issue so it would clarify if the item would be added in the Insights-X, Documentation, etc...
+* **NDC API**
+    * Availability/Shopping (AirShopping)
+    * Pricing/Quote (OfferPrice)
+    * Booking/Reservation (OrderCreate)
+    * Retrieve (OrderView)
+    * Ticketing/Issuance (AirDocIssue)
+    * Cancel (OrderCancel)
+
+* **Backoffice + Web GUI**
+    * Customer Setup
+    * Access configuration
+    * Monitoring & Statistics Dashboard
+
+* **CLI**
+
+### 2020 Q1
+
+* **NDC API**
+    * Airline Profile (AirlineProfile)
+    * Preorder Ancillaries (AirShopping)
+    * Postorder Ancillaries (ServiceList, SeatAvailability, OrderRetrieve, OrderReshop, OrderChange)
+
+* **Local Cache**
+
+
+
+
