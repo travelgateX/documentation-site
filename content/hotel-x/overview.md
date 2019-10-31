@@ -11,7 +11,7 @@ The HotelX API is a powerful accomodation aggregation solution that will speed u
 
 Using HotelX, you can improve your hotel search response times and their accuracy by customizing aggregated responses based on your preferred criteria.   
 
-Each and every layer described in the this figure is explained as follows:
+Each and every layer described in this figure is explained as follows:
 
 ### GraphQL Gateway
 
