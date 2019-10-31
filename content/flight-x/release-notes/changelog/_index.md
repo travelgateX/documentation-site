@@ -1,10 +1,10 @@
 ---
-title: "Insights-X changelog"
+title: "Flight-X changelog"
 icon: "fa-exchange"
 aliases: 
-    - "/travelgatex/release-notes/products-changelogs/changelog-insights/"
+    - "/travelgatex/release-notes/products-changelogs/changelog-flight-x/"
 ---
 
-Easily accessible log of notable changes to Insights-X
+Easily accessible log of notable changes to Flight-X
 
 {{%changelog-entry%}}
