@@ -116,6 +116,11 @@ You have to sent the same number of passengers and PTC of passenger than the req
 }
 ```
 
+
+### IATA_OrderCreateRQ skeleton
+
+
+
 | **Element**	| **Number**	| **Type**	| **Description**		|
 | ------------- |---------------|-----------|---------------------- |
 | IATA_OrderCreateRQ | 1	    | 	        | Root element		    |
@@ -159,6 +164,9 @@ You have to sent the same number of passengers and PTC of passenger than the req
 
 
 ### IATA_OrderViewRS example
+
+
+
 ```json
 {
     "IATA_OrderViewRS": {
@@ -254,6 +262,8 @@ You have to sent the same number of passengers and PTC of passenger than the req
 
 
 ### IATA_OrderViewRS skeleton
+
+
 
 | **Element**	| **Number**	| **Type**	| **Description**		|
 | ------------- |---------------|-----------|---------------------- |
