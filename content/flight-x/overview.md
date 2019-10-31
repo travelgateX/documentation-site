@@ -14,7 +14,7 @@ By using Flight-X you can direct access differentiated and personalized Airlines
 ### Flight-X High Level Architecture
 
 
-![Flight-X Architecture](https://docs.travelgatex.com/flight-x/images/fc_arch.png)
+![Flight-X Architecture](https://docs.travelgatex.com/flight-x/images/fx_arch.png)
 
 ### Suppliers
 
