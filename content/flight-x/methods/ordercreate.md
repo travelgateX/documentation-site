@@ -163,7 +163,7 @@ You have to sent the same number of passengers and PTC of passenger than the req
 
 
 
-### IATA_OrderViewRS skeleton
+### IATA_OrderViewRS example
 
 
 
