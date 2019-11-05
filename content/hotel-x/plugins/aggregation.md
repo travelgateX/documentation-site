@@ -7,26 +7,29 @@ weight = 3
 alwaysopen = false
 +++
 
-**Aggregation plugins** extends [HotelX](/hotel-x/) allowing filtering `Supplier` options and responses using different business rules.
+**Aggregation plugins** extends [HotelX](/hotel-x/) allowing aggregation `Supplier` options and responses using different business rules.
 
-### KeyFilter
+### Aggregation Key
 
-Filters `Supplier` options based on _field keys_ applying a selector _function_ over _field values_.
+Aggregate `Supplier` options based on _field keys_ applying a selector _function_ over _field values_.
 
-It's based on [SQL Aggregate Functions](https://www.postgresql.org/docs/current/static/functions-aggregate.html) but filtering, not aggregating.
+It's based on [SQL Aggregate Functions](https://www.postgresql.org/docs/current/static/functions-aggregate.html).
 
 * **_Field Keys_** as a combination of:
-  * SupplierCode 
-  * HotelCode
-  * BoardCode
-  * RoomCode
-  * Refundable
-  * Market
-  * PaymentType
-  * Promotion
-  * Supplement
-  * Surcharges
-  * Rate rules 
+  * binding
+  * board
+  * cancelPolicy
+  * currency
+  * hotel
+  * market
+  * payment
+  * promotion
+  * rateRules 
+  * refundable
+  * room
+  * supplement
+  * supplier
+  * surcharges
 
 ### Parameters
 
