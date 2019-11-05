@@ -1,12 +1,12 @@
 +++
-title = "2019-11-05"
-pagetitle = "2019-11-05"
+title = "Changelog 2019-11-05"
+pagetitle = "Changelog 2019-11-05"
 description = "Contains an accurated, chronologically-ordered list of notable changes"
 weight = 2
 icon="fa-exchange"
 svgicon="https://media.graphcms.com/7k0GtZyQn6QDcolRhnuQ"
 alwaysopen = false
-hidden = true
+hidden = false
 date = 2019-11-05
 tags = ["products-changelog"]
 +++
@@ -74,4 +74,5 @@ query {
 
 {{% release-notes-container type="f"%}}
 - Internal improvements.
+
 {{% /release-notes-container %}}
