@@ -6,7 +6,7 @@ weight = 2
 icon="fa-exchange"
 svgicon="https://media.graphcms.com/7k0GtZyQn6QDcolRhnuQ"
 alwaysopen = false
-hidden = false
+hidden = true
 date = 2019-11-05
 tags = ["products-changelog"]
 +++
