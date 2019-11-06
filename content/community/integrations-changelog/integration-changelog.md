@@ -37,6 +37,7 @@ the file will have the following structure:
   - `Security` in case of vulnerabilities.
   - Consult more info on release-notes [here](/community/release-notes/)
 
+
 ## Example of Changelog.md file
 
 ```md
