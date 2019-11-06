@@ -10,7 +10,7 @@ weight = 4
 
 Each integration needs a changelog to inform about releases, roll backs and so.
 
-This changelog won't be at the documentation page, and will be keep with the source codce repository on a **single file** called **_"Changelog.md"_**.
+This changelog won't be at the documentation page, and will be kept with the source code repository on a **single file** called **_"Changelog.md"_**.
 
 This file will be copied on the documentation changelog by generating **a folder per day** with a single file called **_"index.md"_**.
 
