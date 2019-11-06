@@ -18,7 +18,7 @@ Thus on the public documentation site we'll have (example for guestincomming at 
 * \integrations\hotel\gue\changelog\2000-02-01\index.md
 * \integrations\hotel\gue\changelog\... as folders as needed
 
-This files will be the copies of the content at the Changelog.md that is hosted on the code repository. There will be a single file with the content grouped by date of release as explained [here](/community/integration-changelog/).
+This files will be the copies of the content at the Changelog.md that is hosted on the code repository. There will be a single file with the content grouped by date of release as explained [here](/community/integrations-changelog/integration-changelog/).
 
 
 ## index.md structure for a release
