@@ -3,7 +3,7 @@ title = "Integrations Changelog"
 pagetitle = "Integrations Changelog"
 description = "Integrations changelog process"
 weight = 6
-icon: "fa-exchange"
+icon = "fa-exchange"
 alwaysopen = false
 isDirectory = false
 +++
