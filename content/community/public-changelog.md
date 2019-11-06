@@ -46,27 +46,28 @@ tags = ["integration-changelog"]
 +++
 
 
+<!-- Note: Remove /* and */ on tags-->
 ## 2000-01-31
-{{% release-notes-container type="a" %}}
+{{%/* release-notes-container type="a" */%}}
 - Addition explanation #3
 - Addition explanation #2
 - Addition explanation #1
 - ...
-{{% /release-notes-container %}}
+{{%/* /release-notes-container */%}}
 
-{{% release-notes-container type="d" %}}
+{{%/* release-notes-container type="d" */%}}
 - Deprecation explanation #3
 - Deprecation explanation #2
 - Deprecation explanation #1
 - ...
-{{% /release-notes-container %}}
+{{%/* /release-notes-container */%}}
 
-{{% release-notes-container type="f" %}}
+{{%/* release-notes-container type="f" */%}}
 - Fix explanation #3
 - Fix explanation #2
 - Fix explanation #1
 - ...
-{{% /release-notes-container %}}
+{{%/* /release-notes-container */%}}
 
 ```
 
@@ -93,21 +94,23 @@ icon = "fa-info"
 svgicon="/images/custom.svg"
 +++
 
-{{%custom-children%}}
+<!-- Note: Remove /* and */ on tags-->
+{{%/* custom-children */%}}
 
 ```
 
 ## _index.md at \integrations\line\dll\changelog\
 
 ```md
----
++++
 title: "dll_name changelog"
 icon: "fa-exchange"
----
++++
 
 # DLL Name Changelog
 Easily accessible log of notable changes to DLL integration
 
-{{%changelog-entry%}}
+<!-- Note: Remove /* and */ on tags-->
+{{%/* changelog-entry /*%}}
 
 ```

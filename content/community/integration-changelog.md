@@ -42,43 +42,44 @@ the file will have the following structure:
 ```md
 <!-- NO HEADER NEEDED -->
 
+<!-- Note: Remove /* and */ on tags-->
 <!-- UNRELEASED STUFF -->
-{{% release-notes-container type="a" %}}
+{{%/* release-notes-container type="a" */%}}
 - Addition #3 not applied yet... 
 - Addition #2 not applied yet...
 - Addition #1 not applied yet...
 - ...
-{{% /release-notes-container %}}
+{{%/* /release-notes-container */%}}
 
 ## 2000-02-01
-{{% release-notes-container type="a" %}}
+{{%/* release-notes-container type="a" */%}}
 - Addition explanation #3
 - Addition explanation #2
 - Addition explanation #1
 - ...
-{{% /release-notes-container %}}
+{{%/* /release-notes-container */%}}
 
-{{% release-notes-container type="d" %}}
+{{%/* release-notes-container type="d" */%}}
 - Deprecation explanation #3
 - Deprecation explanation #2
 - Deprecation explanation #1
 - ...
-{{% /release-notes-container %}}
+{{%/* /release-notes-container */%}}
 
 ## 2000-01-31
-{{% release-notes-container type="a" %}}
+{{%/* release-notes-container type="a" */%}}
 - Addition explanation #3
 - Addition explanation #2
 - Addition explanation #1
 - ...
-{{% /release-notes-container %}}
+{{%/* /release-notes-container */%}}
 
-{{% release-notes-container type="f" %}}
+{{%/* release-notes-container type="f" */%}}
 - Fix explanation #3
 - Fix explanation #2
 - Fix explanation #1
 - ...
-{{% /release-notes-container %}}
+{{%/* /release-notes-container */%}}
 
 ...
 
