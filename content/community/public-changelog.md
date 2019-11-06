@@ -46,7 +46,6 @@ tags = ["integration-changelog"]
 +++
 
 
-<!-- Note: Remove /* and */ on tags -->
 ## 2000-01-31
 {{%/* release-notes-container type="a" */%}}
 - Addition explanation #3
@@ -94,7 +93,6 @@ icon = "fa-info"
 svgicon="/images/custom.svg"
 +++
 
-<!-- Note: Remove /* and */ on tags -->
 {{%/* custom-children */%}}
 
 ```
@@ -110,7 +108,6 @@ icon: "fa-exchange"
 # DLL Name Changelog
 Easily accessible log of notable changes to DLL integration
 
-<!-- Note: Remove /* and */ on tags -->
 {{%/* changelog-entry */%}}
 
 ```
