@@ -42,7 +42,7 @@ the file will have the following structure:
 ```md
 <!-- NO HEADER NEEDED -->
 
-<!-- Note: Remove /* and */ on tags-->
+<!-- Note: Remove /* and */ on tags -->
 <!-- UNRELEASED STUFF -->
 {{%/* release-notes-container type="a" */%}}
 - Addition #3 not applied yet... 
