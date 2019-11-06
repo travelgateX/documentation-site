@@ -67,7 +67,6 @@ the file will have the following structure:
 
 ## 2000-01-31
 {{%/* release-notes-container type="a" */%}}
-- Addition explanation #3
 - Addition explanation #2
 - Addition explanation #1
 - ...
