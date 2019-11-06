@@ -111,6 +111,6 @@ icon: "fa-exchange"
 Easily accessible log of notable changes to DLL integration
 
 <!-- Note: Remove /* and */ on tags -->
-{{%/* changelog-entry /*%}}
+{{%/* changelog-entry */%}}
 
 ```
