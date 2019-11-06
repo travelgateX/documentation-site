@@ -74,5 +74,4 @@ query {
 
 {{% release-notes-container type="f"%}}
 - Internal improvements.
-
 {{% /release-notes-container %}}
