@@ -10,19 +10,20 @@ This document assists on write release notes with the changelog of products.
 
 - [Release Notes Organization](#release-notes-organization)
 - [How to keep a good changelog](#how-to-keep-a-good-changelog)
-    - [General Principles](#general-principles)
-        - [What is a changelog?](#what-is-a-changelog)
-        - [Why keep a changelog?](#why-keep-a-changelog)
-        - [Who needs a changelog?](#who-needs-a-changelog)
+  - [General Principles](#general-principles)
+    - [What is a changelog?](#what-is-a-changelog)
+    - [Why keep a changelog?](#why-keep-a-changelog)
+    - [Who needs a changelog?](#who-needs-a-changelog)
 - [How do I make a good changelog?](#how-do-i-make-a-good-changelog)
-    - [Guiding Principles](#guiding-principles)
-    - [Types of changes](#types-of-changes)
+  - [Guiding Principles](#guiding-principles)
+  - [Types of changes](#types-of-changes)
 - [How can I reduce the effort required to maintain a changelogs document?](#how-can-i-reduce-the-effort-required-to-maintain-a-changelogs-document)
 - [Can changelogs be bad?](#can-changelogs-be-bad)
-    - [Do not document commit log diffs](#do-not-document-commit-log-diffs)
-    - [Do not ignore deprecations](#do-not-ignore-deprecations)
-    - [Avoid confusing dates](#avoid-confusing-dates)
+  - [Do not document commit log diffs](#do-not-document-commit-log-diffs)
+  - [Do not ignore deprecations](#do-not-ignore-deprecations)
+  - [Avoid confusing dates](#avoid-confusing-dates)
 - [Changelog example](#changelog-example)
+- [Reference table](#reference-table)
 - [Writing resources](#writing-resources)
 
 ## Release Notes Organization
@@ -99,47 +100,47 @@ Regional date formats vary throughout the world and it's often difficult to find
 # Changelog
 All notable changes to this project will be documented in this file.
 
-{{%/* release-notes-container type="u" */%}}
+{{% release-notes-container type="u" %}}
 - "How do I make a changelog?" section.
-{{%/* / release-notes-container */%}}
+{{% /release-notes-container %}}
 
 
 ## 2017-06-20
-{{%/* release-notes-container type="a" */%}}
+{{% release-notes-container type="a" %}}
 - New visual identity by @tylerfortune8.
 - Version navigation.
 - Links to latest released version in previous versions.
 - "Why keep a changelog?" section.
-{{%/* / release-notes-container */%}}
+{{% / release-notes-container %}}
 
-{{%/* release-notes-container type="c" */%}}
+{{% release-notes-container type="c" %}}
 - Start versioning based on the current English version at 0.3.0 to help
 translation authors keep things up-to-date.
 - Rewrite "What makes unicorns cry?" section.
-{{%/* / release-notes-container */%}}
+{{% /release-notes-container %}}
 
 
-{{%/* release-notes-container type="r" */%}}
+{{% release-notes-container type="r" %}}
 - Section about "changelog" vs "change log".
-{{%/* / release-notes-container */%}}
+{{% /release-notes-container %}}
 
 ## 2015-12-03
-{{%/* release-notes-container type="a" */%}}
+{{% release-notes-container type="a" %}}
 - RU translation.
 - pt-BR translation.
 - es-ES translation.
-{{%/* / release-notes-container */%}}
+{{% /release-notes-container %}}
 
 
 ## 2015-10-06
-{{%/* release-notes-container type="a" */%}}
+{{% release-notes-container type="a" %}}
 - Answer "Should you ever rewrite a change log?".
-{{%/* / release-notes-container */%}}
+{{% /release-notes-container %}}
 
-{{%/* release-notes-container type="c" */%}}
+{{% release-notes-container type="c" %}}
 - Improve argument against commit logs.
 - Start following [SemVer](http://semver.org) properly.
-{{%/* / release-notes-container */%}}
+{{% /release-notes-container %}}
 
 ```
 [View an example](https://docs.travelgatex.com/travelgatex/release-notes/breaking-changes/)
