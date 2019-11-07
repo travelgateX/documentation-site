@@ -8,7 +8,7 @@ alwaysopen = false
 isDirectory = false
 +++
 
-Integrations changelog is conducted at Changelog.md kept with the source code, that is copied on docs at integrations changelog section:
+Integrations changelog is conducted at CHANGELOG.md kept with the source code, that is copied on docs at integrations changelog section:
 
 {{%custom-children%}}
 
