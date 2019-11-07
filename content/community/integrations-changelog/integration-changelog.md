@@ -10,7 +10,7 @@ weight = 4
 
 Each integration needs a changelog to inform about releases, roll backs and so.
 
-This changelog won't be at the documentation page, and will be kept with the source code repository on a **single file** called **_"Changelog.md"_**.
+This changelog won't be at the documentation page, and will be kept with the source code repository on a **single file** called **_"CHANGELOG.md"_**.
 
 This file will be copied on the documentation changelog by generating **a folder per day** with a single file called **_"index.md"_**.
 
@@ -20,7 +20,7 @@ Thus on the public documentation site we'll have:
 * ...\changelog\2000-02-01\index.md
 * ...\changelog\... as folders as needed
 
-## Changelog.md structure
+## CHANGELOG.md structure
 
 the file will have the following structure:
 
@@ -38,7 +38,7 @@ the file will have the following structure:
   - Consult more info on release-notes [here](/community/release-notes/)
 
 
-## Example of Changelog.md file
+## Example of CHANGELOG.md file
 
 ```md
 <!-- NO HEADER NEEDED -->
