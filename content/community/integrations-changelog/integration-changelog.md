@@ -12,7 +12,7 @@ Each integration needs a changelog to inform about releases, roll backs and so.
 
 This changelog won't be at the documentation page, and will be kept with the source code repository on a **single file** called **_"CHANGELOG.md"_**.
 
-This file will be copied on the documentation changelog by generating **a folder per day** with a single file called **_"index.md"_**.
+This file will be copied on the documentation changelog by generating **a folder per date** with a single file called **_"index.md"_**.
 
 Thus on the public documentation site we'll have:
 
@@ -25,10 +25,10 @@ Thus on the public documentation site we'll have:
 the file will have the following structure:
 
 - **No header**
-- **Grouped by release**: On each release the changelog is grouped under a title 2 with the date in format iso
+- **Grouped by release**: On each release the changelog is grouped under a title 2 with the date in format iso (AAAA-MM-DD)
 - **Incremental notation**: Changes not applied yet on a release will be at the top of the file with no title, once published a date title will be written on the top.
-- **Use containers with lists**: All the entrances are tretated as a list in a release note container 
-- Remmeber that containers can be of type: 
+- **Use containers with lists**: All the entrances are treated as a list in a release note container 
+- Remember that containers can be of type: 
   - `Added` for new features.
   - `Changed` for changes in existing functionality.
   - `Deprecated` for soon-to-be removed features.
