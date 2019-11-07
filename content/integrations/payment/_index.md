@@ -1,7 +1,7 @@
 +++
-title = "Payment integrations"
-pagetitle = "Payment integrations"
-description = "Changelog of our payment integrations"
+title = "Payment"
+pagetitle = "Payment"
+description = "Payment integrations"
 icon = "fa-credit-card"
 weight = 1
 alwaysopen = false

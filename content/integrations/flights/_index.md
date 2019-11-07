@@ -1,7 +1,7 @@
 +++
-title = "Flights integrations"
-pagetitle = "Flights integrations"
-description = "Changelog of our flight integrations"
+title = "Flights"
+pagetitle = "Flights"
+description = "Flight integrations"
 icon = "fa-plane"
 weight = 1
 alwaysopen = false

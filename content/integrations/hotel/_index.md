@@ -1,7 +1,7 @@
 +++
-title = "Hotel integrations"
-pagetitle = "Hotel integrations"
-description = "Changelog of our hotel integrations"
+title = "Hotel"
+pagetitle = "Hotel"
+description = "Hotel integrations"
 icon = "fa-hotel"
 weight = 1
 alwaysopen = false
