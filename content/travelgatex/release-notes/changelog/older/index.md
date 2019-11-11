@@ -1,6 +1,6 @@
 +++
-title = "Legacy changelog"
-pagetitle = "Legacy changelog"
+title = "Older"
+pagetitle = "Older"
 description = "Contains an accurated, chronologically-ordered list of notable changes before 19/09/2019"
 weight = 2
 icon = "fa-exchange"

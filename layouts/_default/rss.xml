@@ -31,6 +31,9 @@
         {{ printf "<![CDATA[<img src=\"%s\" width=\"%d\" height=\"%d\"/>]]>" $img.Permalink $img.Width $img.Height | safeHTML }}
         {{ end }}
         {{ .Summary | html }}
+        {{ if .Truncated }}
+          [...]
+        {{ end }}
       </description>
     </item>
     {{ end }}
