@@ -98,6 +98,26 @@ Our system allows for a maximum of **180000** milliseconds before the connection
 | @roomCandidateRefId                    | 1          | Integer  | Room candidate Identifier. |
 | @code                                  | 1          | String   | Room code.      |
 | @description                           | 1          | String   | Room description. |
+| Rooms/Room /DailyPrices | 0..1 | 	| Specifies daily price, as long as the supplier returns it in this method (see [MetaData](https://docs.travelgatex.com/legacy/docs/hotel/methods/metadata/) in order to verify if a supplier implements it).	| 
+| Rooms/Room /DailyPrices/DailyPrice | 1..n | | Specifies the price for each day.			|
+| @effectiveDate 			| 1 		| String 	| Start date in which the price becomes effective.		|
+| @expireDate 				| 1 		| String 	| Expiry date of price.						|
+| MealPlans/MealPlan/Options /Option/Rooms/Room /DailyPrices/DailyPrice /Price| 1 | | Day price.					|
+| @currency 				| 1 		| String 	| Currency code.						|
+| @amount 				| 1 		| Decimal 	| Day Amount.							|
+| @binding 				| 1 		| Boolean 	| Identifies if the price is binding (When true, the sale price returned **must** not be less than the price informed. |
+| @commission 				| 1 		| Decimal 	| Commission: -1 = not specified (information available in  contract with the supplier ), 0 = net price, X = % of the commission applied to the amount. |
+| Rooms/Room /DailyRatePlans | 0..1 | | Specifies the daily rate, as long as the supplier returns it in this method (see [MetaData](https://docs.travelgatex.com/legacy/docs/hotel/methods/metadata/) in order to verify if a supplier implements it).  |
+| Rooms/Room /DailyRatePlans/DailyRatePlan | 1..n | | Specifies the rates for each day.		|
+| @effectiveDate 			| 1 		| String 	| Start date in which the rate becomes effective.		|
+| @expireDate 				| 1 		| String 	| Expirty date of rate.			|
+| @code 				| 1 		| String 	| Indicates the supplier's rate code. This code specifies the rate applied to those days.	|
+| @name 				| 0		| String 	| Indicates the supplier's rate name.	|
+| Rooms/Room /Price | 1 | 		| Room price.							|
+| @currency 				| 1 		| String 	| Currency code.						|
+| @amount 				| 1 		| Decimal 	| Room Amount.							|
+| @binding 				| 1 		| Boolean 	| Identifies if is the price is binding (When true the sale price returned **must** not be less than the price informed).|
+| @commission 				| 1 		| Decimal 	| Commission: -1 = not specified (information available in  contract with the supplier ), 0 = net price, X = % of the commission applied to the amount.  |
 | RoomCandidates/RoomCandidate           | 1..n       |          | Room required.  |
 | @id                                    | 1          | Integer  | Id of requested room (starting at 1). |
 | RoomCandidates/RoomCandidate/Paxes/Pax | 1..n       |          | Pax required.   |
