@@ -14,6 +14,7 @@ tags = ["integration-changelog"]
 
 ## 2019-11-13
 {{% release-notes-container type="f" %}}
+- Timeout error typified
 - Error in FareAvailability when asking for Optima Fares for return trips.
 
 {{% /release-notes-container %}}
