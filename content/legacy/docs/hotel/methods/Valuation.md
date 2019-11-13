@@ -102,7 +102,7 @@ Our system allows for a maximum of **180000** milliseconds before the connection
 | Rooms/Room /DailyPrices/DailyPrice | 1..n | | Specifies the price for each day.			|
 | @effectiveDate 			| 1 		| String 	| Start date in which the price becomes effective.		|
 | @expireDate 				| 1 		| String 	| Expiry date of price.						|
-| MealPlans/MealPlan/Options /Option/Rooms/Room /DailyPrices/DailyPrice /Price| 1 | | Day price.					|
+| Rooms/Room /DailyPrices/DailyPrice /Price| 1 | | Day price.					|
 | @currency 				| 1 		| String 	| Currency code.						|
 | @amount 				| 1 		| Decimal 	| Day Amount.							|
 | @binding 				| 1 		| Boolean 	| Identifies if the price is binding (When true, the sale price returned **must** not be less than the price informed. |
