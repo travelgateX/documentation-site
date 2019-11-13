@@ -15,5 +15,4 @@ tags = ["integration-changelog"]
 ## 2019-11-13
 {{% release-notes-container type="a" %}}
 - Now last ticketing date is returned in the response of RetrieveReservation.
-
 {{% /release-notes-container %}}
