@@ -341,7 +341,7 @@ is closed.
 | MealPlans/MealPlan/Options /Option/RateRules | 0..1 	| 		| Option restrictions.					|
 | MealPlans/MealPlan/Options /Option/RateRules/Rules | 0..n | 		| Rules.							|
 | MealPlans/MealPlan/Options /Option/RateRules/Rules /Rule | 1 | 	| Rule.								|
-| @type 				| 1 		| String 	| Possible values (NonRefundable, Older55, Package,...) (see [RateRules](#RateRules))	|
+| @type 				| 1 		| String 	| Possible values (NonRefundable, Older55, Package,...) (see [RateRules](#rate-rules))	|
 | MealPlans/MealPlan/Options /Option/Rooms | 1 		| 		| Rooms in this option (room list).				|
 | MealPlans/MealPlan/Options /Option/Rooms/Room | 1..n 	| 		| Room details.						|
 | @id 					| 1 		| String 	| Room ID.					|
@@ -593,7 +593,7 @@ in the availability method.
 
 
 
-[#RateRules] **Rate conditions (RateRules):**
+## Rate Rules:
 
 -   **NonRefundable**: The extra fee for a **nonRefundable** cancellation is a 100% from
     the moment the reservation is created.
