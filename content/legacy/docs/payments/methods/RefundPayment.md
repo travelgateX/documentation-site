@@ -1,3 +1,12 @@
++++
+title = "Refund Payment"
+pagetitle = "Refund Payment Call"
+description = "Information about the Refund Payment call"
+icon = "fa-ellipsis-h"
+weight = 6
+alwaysopen = false
++++
+
 # RefundPayment
 
 **Method Goals**
@@ -27,7 +36,7 @@ The response contains information about the refund transaction.
         <Reason>
             <Reason Id = " ">Refund OrderID 123456</Reason>
             ...
-        </Reason>  
+        </Reason>
     </Transaction>
 </RefundPaymentRQ>
 ~~~
@@ -51,7 +60,7 @@ The response contains information about the refund transaction.
         <PaymentTransaction Id = "99999-53245-5483-4891" />
         <CurrencyAmount CurrencyCode = "EUR" Amount = "2.20" />
         <RefundedCurrencyAmount CurrencyCode = "EUR" Amount = "1.00" />
-        <TransactionDate>2013-12-05T16:31:59.00000Z</TransactionDate>  
+        <TransactionDate>2013-12-05T16:31:59.00000Z</TransactionDate>
         <SenderDetails>
             <SenderBankDetails Id = " ">
                 <Holder>Max Samplemerchant</Holder>
@@ -60,7 +69,7 @@ The response contains information about the refund transaction.
                 <CountryCode></CountryCode>
                 <IBAN>DE11888888889999999999</IBAN>
                 <BIC>PNAGDE00000</BIC>
-            </SenderBankDetails>    
+            </SenderBankDetails>
         </SenderDetails>
         <RecipientDetails>
             <RecipientBankDetails>

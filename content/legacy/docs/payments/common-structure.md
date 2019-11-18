@@ -1,10 +1,18 @@
++++
+title = "Common Structure"
+pagetitle = "Common structure on all calls"
+description = "List of the most repeated elements across diferent calls"
+icon = "fa-list"
+weight = 3
+alwaysopen = false
++++
 
 # Common Structure
 
-The following structure will be common through all transactions.  
+The following structure will be common through all transactions.
 Additionally every operation will have it's specific elements.
 
-The request objects contains the supplier's configuration, urls and credentials.  
+The request objects contains the supplier's configuration, urls and credentials.
 The response object contains the operation details and errors if any.
 
 ## Common Structure RQ Example

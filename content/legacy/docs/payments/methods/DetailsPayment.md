@@ -1,3 +1,12 @@
++++
+title = "Details Payment"
+pagetitle = "Details Payment Call"
+description = "Information about the DetailsPayment call"
+icon = "fa-ellipsis-h"
+weight = 3
+alwaysopen = false
++++
+
 # DetailsPayment
 
 **Method Goals**

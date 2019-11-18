@@ -1,3 +1,12 @@
++++
+title = "Process Notification"
+pagetitle = "Process Notification Call"
+description = "Information about the ProcessNotification call"
+icon = "fa-ellipsis-h"
+weight = 5
+alwaysopen = false
++++
+
 # ProcessNotification
 
 **Method Goals**
@@ -71,7 +80,7 @@ The response contains information about the notification that has been confirmed
                 <Reason Id = " "></Reason>
                 <Reason Id = " "></Reason>
                 ...
-            </Reasons>  
+            </Reasons>
         </Transaction>
         <HTTPACK Mandatory = "true">
             <HTTPRequests>

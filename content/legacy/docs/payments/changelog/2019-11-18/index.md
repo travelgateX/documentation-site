@@ -11,8 +11,7 @@ hidden = true
 tags = ["api-changelog"]
 +++
 
-
-## 2019-11-18 
+## 2019-11-18
 
 ### v1.0.18
 

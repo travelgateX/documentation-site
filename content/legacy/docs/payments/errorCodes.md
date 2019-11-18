@@ -1,3 +1,12 @@
++++
+title = "Error Codes"
+pagetitle = "Error Codes"
+description = "List of code errors of the API"
+icon = "fa-list"
+weight = 2
+alwaysopen = false
++++
+
 # Error Codes
 
 |Error Code|Error Description|

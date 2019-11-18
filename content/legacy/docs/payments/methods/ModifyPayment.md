@@ -1,3 +1,12 @@
++++
+title = "Modify Payment"
+pagetitle = "Modify Payment Call"
+description = "Information about the ModifyPayment call"
+icon = "fa-ellipsis-h"
+weight = 4
+alwaysopen = false
++++
+
 # ModifyPayment
 
 **Method Goals**

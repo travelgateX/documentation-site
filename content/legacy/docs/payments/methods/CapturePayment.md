@@ -1,3 +1,12 @@
++++
+title = "Capture Payment"
+pagetitle = "Capture Payment Call"
+description = "Information about the CapturePayment call"
+icon = "fa-ellipsis-h"
+weight = 2
+alwaysopen = false
++++
+
 # CapturePayment
 
 **Method Goals**

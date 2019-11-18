@@ -1,4 +1,13 @@
-# CreatePayment 
++++
+title = "Create Payment"
+pagetitle = "Create Payment Call"
+description = "Information about the CreatePayment call"
+icon = "fa-ellipsis-h"
+weight = 1
+alwaysopen = false
++++
+
+# CreatePayment
 
 **Method Goals**
 This method aims to create a payment request of the indicated amount.
@@ -31,7 +40,7 @@ The response contains a payment Id and a url to redirect the customer. If the pa
     <Reasons>
         <Reason Id = "Reference">123456798</Reason>
         <Reason Id = " "></Reason>
-        ... 
+        ...
     </Reasons>
     <PaymentItemsDetails>
         <Item Id = "123456789">
@@ -145,7 +154,7 @@ The response contains a payment Id and a url to redirect the customer. If the pa
         <Reasons>
             <Reason Id = "Reference">123456798</Reason>
             <Reason Id = " "></Reason>
-            ... 
+            ...
         </Reasons>
     <Transaction>
     <Redirects>
@@ -173,7 +182,7 @@ The response contains a payment Id and a url to redirect the customer. If the pa
 
 
 |Element|Number|Type|Description|
-| ----- | ----- | ----- | ----- | 
+| ----- | ----- | ----- | ----- |
 |CreatePaymentRS|1| | Root node.|
 |Transaction|1| Transaction | Contains information about the payment transaction. |
 |@Transaction/Id|1| Transaction | Transaction identifier. |
