@@ -1,6 +1,6 @@
 +++
-title: "payments changelog"
-icon: "fa-exchange"
+title = "payments changelog"
+icon = "fa-exchange"
 +++
 
 {{% changelog-entry %}}
