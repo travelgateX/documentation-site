@@ -30,7 +30,7 @@ the file will have the following structure (this process is planned to be done a
 - **Use containers with lists**: Copy all the content related to the release from the Changelog.md keeping the container structure.
 
 ## Example of index.md file
- 
+
 ```md
 +++
 title = "2000-01-31"
@@ -101,8 +101,8 @@ svgicon="/images/custom.svg"
 
 ```md
 +++
-title: "dll_name changelog"
-icon: "fa-exchange"
+title = "dll_name changelog"
+icon = "fa-exchange"
 +++
 
 # DLL Name Changelog

@@ -1,10 +1,19 @@
++++
+title = "Static Configuration"
+pagetitle = "Static Configuration Call"
+description = "Information about the Static Configuration call"
+icon = "fa-ellipsis-h"
+weight = 8
+alwaysopen = false
++++
+
 # StaticConfiguration
 
 **Method Goals**
 This method returns important information about the behavior of the integration.
 
 **Request Format**
-The request only requires the provider code. 
+The request only requires the provider code.
 
 **Response Format**
 The response contains a list of parameters that will inform how to configure the integration.

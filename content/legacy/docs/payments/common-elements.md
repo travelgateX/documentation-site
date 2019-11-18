@@ -1,3 +1,12 @@
++++
+title = "Common Elements"
+pagetitle = "Common Elements Across Calls"
+description = "List of the most repeated elements across diferent calls"
+icon = "fa-list"
+weight = 4
+alwaysopen = false
++++
+
 # Common Elements
 
 In this section most common elements, which are used in various calls, will be explained.

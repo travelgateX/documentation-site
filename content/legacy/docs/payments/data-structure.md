@@ -1,10 +1,11 @@
----
-title: Data Structure
-keywords: common elements, elements, payments
-search: Payments - Data Structure
-sidebar: mydoc_sidebar
-permalink: /docs/payments/data-structure
----
++++
+title = "Data Structure"
+pagetitle = "Data structure of the API"
+description = "Summary of all the calls of the API"
+icon = "fa-list"
+weight = 1
+alwaysopen = false
++++
 
 The object of this document is to give an overview of the Payments API. A more detailed explanation of the methods can be found [here](/methods).
 
@@ -13,7 +14,7 @@ You can read below about what changes might and what changes might not cause an 
 * Changes that can cause an error:
   * Removing a field.
   * Modifying the type of field or attribute. For example, passing a string type to numeric.
-  
+
 * Changes that cannot cause an error:
   * Adding a new element or attribute.
   * Modifying the order of elements or attributes.
