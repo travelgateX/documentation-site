@@ -3,11 +3,9 @@ title = "Process Notification"
 pagetitle = "Process Notification Call"
 description = "Information about the ProcessNotification call"
 icon = "fa-ellipsis-h"
-weight = 5
+weight = 10
 alwaysopen = false
 +++
-
-# ProcessNotification
 
 **Method Goals**
 This method aims to process the notification from a payment that has been created.
@@ -24,8 +22,8 @@ The response contains information about the notification that has been confirmed
 <ProcessNotificationRQ>
     <HTTPResponse>
         <Status>HTTP/1.1 200 OK</Status>
-        <Url>https://api.sofort.com/api/xml?seed=a35gv5yj0173ljni565aertcs</Url>
-        <Seed>a35gv5yj0173ljni565aertcs</Seed>
+        <Url>https://api.test.com/api/xml?seed=aaaaabbbbb1111122222</Url>
+        <Seed>aaaaabbbbb1111122222</Seed>
         <Headers></Headers>
         <Body>&lt;status_notification&gt;&lt;transaction&gt;99999-53245-5483-4891&lt;/transaction&gt;&lt;time&gt;2010-04-14T19:01:08+02:00&lt;/time&gt;&lt;/status_notification&gt;</Body>
     </HTTPResponse>
@@ -118,10 +116,10 @@ The response contains information about the notification that has been confirmed
 |Transaction|0..1|  | Information about the payment transaction. |
 |Transaction/MerchantReference|1| String | Payment reference in the merchants system. |
 |Transaction/TransactionDate|0..1| DateTime | Transaction date. |
-|Transaction/CurrencyAmount|0..1| CurrencyAmount | Contains the currency and the amount of the transaction. See [common elements](../common-elements/#CurrencyAmount)|
+|Transaction/CurrencyAmount|0..1| CurrencyAmount | Contains the currency and the amount of the transaction. See [common elements](../../common-elements/#currencyamount)|
 |Transaction/AuthorizationCode|0..1| String | Contains the Authorization Code of the transaction. |
-|Transaction/SenderDetails|0..1| SenderDetails | Contains information about the payment sender. See [common elements](../common-elements/#SenderDetails). |
-|Transaction/Fees|0..1| Fees | Contains information about the transaction fees. See [common elements](../common-elements/#Fees)|
-|Transaction/Reasons|0..1| Reasons | Reasons of the payment. This reasons are add to the transaction information if the provider admits it. See [common elements](../common-elements/#Reasons)|
-|Notification/HTTPACK|1| Redirects | Contains information about the notification ACK. See [common elements](../common-elements/#Redirects)|
+|Transaction/SenderDetails|0..1| SenderDetails | Contains information about the payment sender. See [common elements](../../common-elements/#senderdetails). |
+|Transaction/Fees|0..1| Fees | Contains information about the transaction fees. See [common elements](../../common-elements/#fees)|
+|Transaction/Reasons|0..1| Reasons | Reasons of the payment. This reasons are add to the transaction information if the provider admits it. See [common elements](../../common-elements/#reasons)|
+|Notification/HTTPACK|1| Redirects | Contains information about the notification ACK. See [common elements](../../common-elements/#redirects)|
 |@Mandatory|1| Boolean | Informs if the notification sent by the provider requires an ACK response. If true, respond to the providers notification with information in the HTTPRequest object. |

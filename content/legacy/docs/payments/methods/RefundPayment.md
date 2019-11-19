@@ -3,11 +3,9 @@ title = "Refund Payment"
 pagetitle = "Refund Payment Call"
 description = "Information about the Refund Payment call"
 icon = "fa-ellipsis-h"
-weight = 6
+weight = 11
 alwaysopen = false
 +++
-
-# RefundPayment
 
 **Method Goals**
 This method aims to refund a payment that has been confirmed.
@@ -48,9 +46,9 @@ The response contains information about the refund transaction.
 |RefundPaymentRQ|1| | Root node.|
 |Transaction|1|  | Contains information about the refund transaction. |
 |@Id|1| String | Transaction identifier of the payment to do a refund. |
-|Transaction/CurrencyAmount|1| CurrencyAmount | Contains the currency and the amount to refund. See [common elements](../common-elements/#CurrencyAmount)|
-|Transaction/SenderDetails|1| SenderDetails | Contains information about the sender of the refund. See [common elements](../common-elements/#SenderDetails). |
-|Transaction/Reasons|0..1| Reasons | Reasons of the refund. This reasons are add to the refund transaction information if the provider admits it. See [common elements](../common-elements/#Reasons)|
+|Transaction/CurrencyAmount|1| CurrencyAmount | Contains the currency and the amount to refund. See [common elements](../../common-elements/#currencyamount)|
+|Transaction/SenderDetails|1| SenderDetails | Contains information about the sender of the refund. See [common elements](../../common-elements/#senderdetails). |
+|Transaction/Reasons|0..1| Reasons | Reasons of the refund. This reasons are add to the refund transaction information if the provider admits it. See [common elements](../../common-elements/#reasons)|
 
 ## RefundPaymentRS Example
 
@@ -123,11 +121,11 @@ The response contains information about the refund transaction.
 |@StatusDescription|0..1| String | Additional information about the transaction status. |
 |Transaction/PaymentTransaction|1| | Contains information about the payment refund. |
 |@Id|1| String | Payment transaction identifier. |
-|Transaction/CurrencyAmount|0..1| CurrencyAmount | Contains the currency and the amount of the payment transaction. See [common elements](../common-elements/#CurrencyAmount)|
-|Transaction/RefundedCurrencyAmount|0..1| CurrencyAmount | Contains the currency and the amount of the refund transaction. See [common elements](../common-elements/#CurrencyAmount)|
+|Transaction/CurrencyAmount|0..1| CurrencyAmount | Contains the currency and the amount of the payment transaction. See [common elements](../../common-elements/#currencyamount)|
+|Transaction/RefundedCurrencyAmount|0..1| CurrencyAmount | Contains the currency and the amount of the refund transaction. See [common elements](../../common-elements/#currencyamount)|
 |Transaction/TransactionDate|1| DateTime | Refund transaction date. |
-|Transaction/SenderDetails|0..1| SenderDetails | Contains information about the refund sender. See [common elements](../common-elements/#SenderDetails). |
-|Transaction/RecipientDetails|0..1| SenderDetails | Contains information about the refund recipient. Uses the same schema as the Sender Details. See [common elements](../common-elements/#SenderDetails). |
-|Transaction/Fees|0..1| Fees | Contains information about the refund fees. See [common elements](../common-elements/#Fees)|
-|Transaction/Reasons|0..1| Reasons | Reasons of the refund. See [common elements](../common-elements/#Reasons)|
-|Redirects |0..1| Redirects | Information about how to redirect the user if needed. See [common elements](../common-elements/#Redirects)|
+|Transaction/SenderDetails|0..1| SenderDetails | Contains information about the refund sender. See [common elements](../../common-elements/#senderdetails). |
+|Transaction/RecipientDetails|0..1| SenderDetails | Contains information about the refund recipient. Uses the same schema as the Sender Details. See [common elements](../../common-elements/#senderdetails). |
+|Transaction/Fees|0..1| Fees | Contains information about the refund fees. See [common elements](../../common-elements/#fees)|
+|Transaction/Reasons|0..1| Reasons | Reasons of the refund. See [common elements](../../common-elements/#reasons)|
+|Redirects |0..1| Redirects | Information about how to redirect the user if needed. See [common elements](../../common-elements/#redirects)|

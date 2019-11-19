@@ -3,11 +3,9 @@ title = "Capture Payment"
 pagetitle = "Capture Payment Call"
 description = "Information about the CapturePayment call"
 icon = "fa-ellipsis-h"
-weight = 2
+weight = 7
 alwaysopen = false
 +++
-
-# CapturePayment
 
 **Method Goals**
 This method aims to capture a payment. Some providers require to capture the payment to transfer the funds to the merchant, in this case you will need to do a CapturePayment call. If this call is needed you will receive a pending reason as "PendingCapture" in the ProcessNotification o the DetailsPayment response.
@@ -54,12 +52,12 @@ The response contains information about the payment that has been captured.
 |Transaction|1| | Contains information about the payment transaction to capture. |
 |@Id|1| String | Transaction identifier. |
 |Transaction/MerchantReference|1| String | Payment reference in the merchants system. |
-|Transaction/CurrencyAmount|1| CurrencyAmount | Contains the currency and the amount to capture. See [common elements](../common-elements/#CurrencyAmount) |
+|Transaction/CurrencyAmount|1| CurrencyAmount | Contains the currency and the amount to capture. See [common elements](../../common-elements/#currencyamount) |
 |Transaction/AuthorizationCode|1| String | Contains the Authorization Code of the transaction. Necesary if returned in the ProcessNotificationRS. |
-|Transaction/SenderDetails|0..1|SenderDetails| Contains information about the payment sender. Necesary if returned in the ProcessNotificationRS. See [common elements](../common-elements/#SenderDetails).|
-|Transaction/PaymentItemsDetails|0..1|PaymentItemsDetails| Contains a list of items that are related to this payment. This items are add to the transaction information if the provider admits it, check StaticConfiguration. See [common elements](../common-elements/#PaymentItemsDetails). |
-|Transaction/NetworkDetails|0..1| NetworkDetails | Information about the payer configuration. Needed for PSD2 payments. See [common elements](../common-elements/#NetworkDetails). |
-|Transaction/TransactionTokens|0..1|TransactionTokens|List of elements with additional data without specific place on the RQ. See [common elements](../common-elements/#TransactionTokens).|
+|Transaction/SenderDetails|0..1|SenderDetails| Contains information about the payment sender. Necesary if returned in the ProcessNotificationRS. See [common elements](../../common-elements/#senderdetails).|
+|Transaction/PaymentItemsDetails|0..1|PaymentItemsDetails| Contains a list of items that are related to this payment. This items are add to the transaction information if the provider admits it, check StaticConfiguration. See [common elements](../../common-elements/#paymentitemsdetails). |
+|Transaction/NetworkDetails|0..1| NetworkDetails | Information about the payer configuration. Needed for PSD2 payments. See [common elements](../../common-elements/#networkdetails). |
+|Transaction/TransactionTokens|0..1|TransactionTokens|List of elements with additional data without specific place on the RQ. See [common elements](../../common-elements/#transactiontokens).|
 
 ## CapturePaymentRS Example
 
@@ -107,8 +105,8 @@ The response contains information about the payment that has been captured.
 |@Status|1| String | Transaction status (possible value: "Success" or "Unknown"). |
 |@StatusDescription|0..1| String | Additional information about the transaction status. |
 |Transaction/TransactionDate|0..1| DateTime | Transaction date. |
-|Transaction/CurrencyAmount|0..1|CurrencyAmount| Contains the currency and the amount of the transaction. See [common elements](../common-elements/#CurrencyAmount)|
+|Transaction/CurrencyAmount|0..1|CurrencyAmount| Contains the currency and the amount of the transaction. See [common elements](../../common-elements/#currencyamount)|
 |Transaction/AuthorizationCode|0..1| String | Contains the Authorization Code of the transaction. |
-|Transaction/SenderDetails|0..1| SenderDetails | Contains information about the payment sender. See [common elements](../common-elements/#SenderDetails). |
-|Transaction/Fees|0..1| Fees | Contains information about the transaction fees. See [common elements](../common-elements/#Fees) |
-|Transaction/Reasons|0..1| Reasons | Reasons of the payment. This reasons are add to the transaction information if the provider admits it. See [common elements](../common-elements/#Reasons)|
+|Transaction/SenderDetails|0..1| SenderDetails | Contains information about the payment sender. See [common elements](../../common-elements/#senderdetails). |
+|Transaction/Fees|0..1| Fees | Contains information about the transaction fees. See [common elements](../../common-elements/#fees) |
+|Transaction/Reasons|0..1| Reasons | Reasons of the payment. This reasons are add to the transaction information if the provider admits it. See [common elements](../../common-elements/#reasons)|

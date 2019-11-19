@@ -7,8 +7,6 @@ weight = 4
 alwaysopen = false
 +++
 
-# Common Elements
-
 In this section most common elements, which are used in various calls, will be explained.
 
 In some cases the root node name changes, in those cases the name provided by the specific call documentation prevails over the name stated here.
@@ -54,7 +52,7 @@ In some cases the root node name changes, in those cases the name provided by th
 |Fees| | | List of Fees included in a transaction. |
 | Fees/Fee | 1..n | | Information about a fee included in a transaction. |
 | @Id | 1 | String | Id of the fee. |
-| Fees/Fee/CurrencyAmount | 1 | CurrencyAmount | Cost of the fee. See [common elements](../common-elements/#CurrencyAmount)|
+| Fees/Fee/CurrencyAmount | 1 | CurrencyAmount | Cost of the fee. See [common elements](#currencyamount)|
 | Fees/Fee/ExchangeRate | 1 | String | Rate of the currency echange |
 | Fees/Fee/Description | 1 | String | Description of the fee content |
 
@@ -220,7 +218,7 @@ In some cases the root node name changes, in those cases the name provided by th
 | @Start | 1 | Date | Start date for the Item. |
 | @End | 1 | Date | End date for the Item. |
 | PaymentItemDetails/Item/Quantity | 1 | String | Number of units of the given Item included. |
-| PaymentItemDetails/Item/CurrencyAmount | 1 | CurrencyAmount | Price of the Item. See [common elements](../common-elements/#CurrencyAmount)|
+| PaymentItemDetails/Item/CurrencyAmount | 1 | CurrencyAmount | Price of the Item. See [common elements](#currencyamount)|
 | PaymentItemDetails/Item/ImageUrl | 0..1 | fooType | Url of the image of the Item. |
 
 ## SenderDetails

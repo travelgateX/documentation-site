@@ -3,11 +3,9 @@ title = "Static Configuration"
 pagetitle = "Static Configuration Call"
 description = "Information about the Static Configuration call"
 icon = "fa-ellipsis-h"
-weight = 8
+weight = 13
 alwaysopen = false
 +++
-
-# StaticConfiguration
 
 **Method Goals**
 This method returns important information about the behavior of the integration.
@@ -27,7 +25,7 @@ The response contains a list of parameters that will inform how to configure the
 
 ### StaticConfigurationRQ
 
-Only the structure defined on [common-structure](../common-structure) is needed
+Only the structure defined on [common-structure](../../common-structure) is needed
 
 ## StaticConfigurationRS Example
 

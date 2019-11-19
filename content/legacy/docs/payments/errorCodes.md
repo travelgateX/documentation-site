@@ -7,8 +7,6 @@ weight = 2
 alwaysopen = false
 +++
 
-# Error Codes
-
 |Error Code|Error Description|
 | ----- | ----- |
 |101|System exceptions. Exceptions not controlled or classified as generic exceptions.|

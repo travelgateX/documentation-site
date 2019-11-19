@@ -17,7 +17,7 @@ tags = ["api-changelog"]
 
 {{% release-notes-container type="a" %}}
 
-- Implemented changelog with current API status
+- Included docs and changelog with current API status
 
 {{% /release-notes-container %}}
 

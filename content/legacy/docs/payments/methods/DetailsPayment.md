@@ -3,11 +3,9 @@ title = "Details Payment"
 pagetitle = "Details Payment Call"
 description = "Information about the DetailsPayment call"
 icon = "fa-ellipsis-h"
-weight = 3
+weight = 8
 alwaysopen = false
 +++
-
-# DetailsPayment
 
 **Method Goals**
 This method aims to return information about a payment that has been confirmed. Payment details can be search by transaction id or by date (only if provider allows it, check StaticConfiguration).
@@ -112,11 +110,11 @@ The response contains information about the payment transaction which refers to 
 |@StatusDescription|0..1| String | Additional information about the transaction status. |
 |Transaction/MerchantReference|1| String | Payment reference in the merchants system. |
 |Transaction/TransactionDate|1| DateTime | Transaction date. |
-|Transaction/CurrencyAmount|1| CurrencyAmount | Contains the currency and the amount of the transaction. See [common elements](../common-elements/#CurrencyAmount)|
-|Transaction/RefundedCurrencyAmount|0..1| CurrencyAmount | Contains the currency and the amount refunded in a transaction. See [common elements](../common-elements/#CurrencyAmount)|
-|Transaction/SenderDetails|0..1| SenderDetails | Contains information about the payment sender. See [common elements](../common-elements/#SenderDetails). |
-|Transaction/RecipientDetails|0..1| SenderDetails | Contains information about the payment recipient. See [common elements](../common-elements/#SenderDetails). |
-|Transaction/Fees|0..1| Fees | Contains information about the transaction fees. See [common elements](../common-elements/#Fees)|
-|Transaction/Reasons|0..1| Reasons | Reasons of the payment. This reasons are add to the transaction information if the provider admits it. See [common elements](../common-elements/#Reasons) |
-|Transaction/PaymentItemsDetails|0..1| PaymentItemsDetails| Contains a list of items that are related to this payment. See [common elements](../common-elements/#PaymentItemsDetails). |
-|Redirects|0..1| Redirects| Contains information about where to redirect the user if needed. See [common elements](../common-elements/#Redirects)|
+|Transaction/CurrencyAmount|1| CurrencyAmount | Contains the currency and the amount of the transaction. See [common elements](../../common-elements/#currencyamount)|
+|Transaction/RefundedCurrencyAmount|0..1| CurrencyAmount | Contains the currency and the amount refunded in a transaction. See [common elements](../../common-elements/#currencyamount)|
+|Transaction/SenderDetails|0..1| SenderDetails | Contains information about the payment sender. See [common elements](../../common-elements/#senderdetails). |
+|Transaction/RecipientDetails|0..1| SenderDetails | Contains information about the payment recipient. See [common elements](../../common-elements/#senderdetails). |
+|Transaction/Fees|0..1| Fees | Contains information about the transaction fees. See [common elements](../../common-elements/#fees)|
+|Transaction/Reasons|0..1| Reasons | Reasons of the payment. This reasons are add to the transaction information if the provider admits it. See [common elements](../../common-elements/#reasons) |
+|Transaction/PaymentItemsDetails|0..1| PaymentItemsDetails| Contains a list of items that are related to this payment. See [common elements](../../common-elements/#paymentitemsdetails). |
+|Redirects|0..1| Redirects| Contains information about where to redirect the user if needed. See [common elements](../../common-elements/#redirects)|
