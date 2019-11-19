@@ -7,8 +7,6 @@ weight = 3
 alwaysopen = false
 +++
 
-# Common Structure
-
 The following structure will be common through all transactions.
 Additionally every operation will have it's specific elements.
 

@@ -3,11 +3,9 @@ title = "Runtime Configuration"
 pagetitle = "Runtime Configuration Call"
 description = "Information about the Runtime Configuration call"
 icon = "fa-ellipsis-h"
-weight = 7
+weight = 12
 alwaysopen = false
 +++
-
-# RunTimeConfiguration
 
 **Method Goals**
 This method returns a list of Attributes that should be included in each request for the selected provider.

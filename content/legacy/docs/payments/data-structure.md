@@ -7,7 +7,7 @@ weight = 1
 alwaysopen = false
 +++
 
-The object of this document is to give an overview of the Payments API. A more detailed explanation of the methods can be found [here](/methods).
+The object of this document is to give an overview of the Payments API.
 
 You can read below about what changes might and what changes might not cause an error:
 

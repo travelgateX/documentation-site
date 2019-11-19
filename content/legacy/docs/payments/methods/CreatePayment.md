@@ -3,11 +3,9 @@ title = "Create Payment"
 pagetitle = "Create Payment Call"
 description = "Information about the CreatePayment call"
 icon = "fa-ellipsis-h"
-weight = 1
+weight = 6
 alwaysopen = false
 +++
-
-# CreatePayment
 
 **Method Goals**
 This method aims to create a payment request of the indicated amount.
@@ -72,10 +70,10 @@ The response contains a payment Id and a url to redirect the customer. If the pa
 |AgencyCode| 0..1| String | If necessary, code of the agency related to the payment.|
 |TransactionDetails| 0..1| | Information related to the payment|
 |@Id| 0..1 | String | Id of the transaction. |
-|TransactionDetails/SenderDetails|1| SenderDetails | Contains information about the payment sender. See [common elements](../common-elements/#SenderDetails). |
-|TransactionDetails/RecipientDetalis|1| SenderDetails | Contains information about the payment receiver. See [common elements](../common-elements/#SenderDetails). |
+|TransactionDetails/SenderDetails|1| SenderDetails | Contains information about the payment sender. See [common elements](../../common-elements/#senderdetails). |
+|TransactionDetails/RecipientDetalis|1| SenderDetails | Contains information about the payment receiver. See [common elements](../../common-elements/#senderdetails). |
 |TransactionDetails/Participants|0..1| | All parties involved in the payment |
-|TransactionDetails/Participants/Participant|1..n| SenderDetails | List of details of all parties involved in the transaction.  See [common elements](../common-elements/#SenderDetails). |
+|TransactionDetails/Participants/Participant|1..n| SenderDetails | List of details of all parties involved in the transaction.  See [common elements](../../common-elements/#senderdetails). |
 |TransactionDetails/ProductDetails|0..1| | Information about the product purchased |
 |TransactionDetails/ProductDetails/TravelDetails|1| | Information about the flights |
 |TransactionDetails/ProductDetails/TravelDetails/FlightsList/|1| | List of all flights |
@@ -94,8 +92,8 @@ The response contains a payment Id and a url to redirect the customer. If the pa
 |TransactionDetails/numInstallments|0..1| Integer |  |
 |TransactionDetails/LoginToken|0..1| String | Value needed if login requires token. |
 |TransactionDetails/deliveryDate|0..1| DateTime | Date in which the payment will take effect. |
-|TransactionDetails/NetworkDetails|0..1| NetworkDetails | Information about the payer configuration. Needed for PSD2 payments. See [common elements](../common-elements/#NetworkDetails) |
-|TransactionDetails/TransactionTokens|0..1| Attributes | List of attributes with extra data needed for the payment. See [common elements](../common-elements/#TransactionTokens). |
+|TransactionDetails/NetworkDetails|0..1| NetworkDetails | Information about the payer configuration. Needed for PSD2 payments. See [common elements](../../common-elements/#networkdetails) |
+|TransactionDetails/TransactionTokens|0..1| Attributes | List of attributes with extra data needed for the payment. See [common elements](../../common-elements/#transactiontokens). |
 |CreditCardDetails|0..1| | Information about the credit card used for the payment. |
 |CreditCardDetails/Number|0..1| String | Number of the CC. Either Number and Security Code must be provided. |
 |CreditCardDetails/SecurityCode|0..1| String | Security code of the CC. Either Number and Security code or Token must be provided. |
@@ -103,11 +101,11 @@ The response contains a payment Id and a url to redirect the customer. If the pa
 |CreditCardDetails/Register|0..1| boolean | |
 |CreditCardDetails/ExpiryMonth|0..1| String | Month of expiration of the CC. |
 |CreditCardDetails/ExpiryYear|0..1| String | Year of expiration of the CC. |
-|CreditCardDetails/CardHolderDetails|0..1| SenderDetails | Information about the card holder. See [common elements](../common-elements/#SenderDetails).|
-|CurrencyAmount|1| CurrencyAmount | Contains the currency and the amount of the transaction. See [common elements](../common-elements/#CurrencyAmount)|
+|CreditCardDetails/CardHolderDetails|0..1| SenderDetails | Information about the card holder. See [common elements](../../common-elements/#senderdetails).|
+|CurrencyAmount|1| CurrencyAmount | Contains the currency and the amount of the transaction. See [common elements](../../common-elements/#currencyamount)|
 |Reasons|0..1| Reasons | Reasons of the payment. This reasons are add to the transaction information if the provider admits it. |
-|PaymentItemsDetails|0..1| PaymentItemsDetails| Contains a list of items that are related to this payment. This items are add to the transaction information if the provider admits it, check StaticConfiguration. See [common elements](../common-elements/#PaymentItemsDetails). |
-|CallBacks| 1 |  | Contains information about the payment redirection of the client from the providers web page. (Obsolete: Use BaseCallBacks from common-elements instead) See [common elements](../common-elements/#BaseCallBacks)|
+|PaymentItemsDetails|0..1| PaymentItemsDetails| Contains a list of items that are related to this payment. This items are add to the transaction information if the provider admits it, check StaticConfiguration. See [common elements](../../common-elements/#paymentitemsdetails). |
+|CallBacks| 1 |  | Contains information about the payment redirection of the client from the providers web page. (Obsolete: Use BaseCallBacks from ../common-elements instead) See [common elements](../common-elements/#basecallbacks)|
 |CallBacks/Urls| 1 |  | List of Url. A Url contains information of where the provider will redirect the client of the payment goes good or wrong. |
 |CallBakcs/Urls/Url| 1..n | String | Url value to redirect. |
 |@Type| 1 | String | Type of the Url (possible values: "Success", "Fail" or "Notification"). |
@@ -191,9 +189,9 @@ The response contains a payment Id and a url to redirect the customer. If the pa
 |@Transaction/Status|0..1| String | Transaction status (possible values: "Success" or "Unknown"). |
 |@Transaction/StatusDescription|0..1| String | Additional information about the transaction status. |
 |Transaction/TransactionDate|0..1| DateTime | Transaction date. |
-|Transaction/CurrencyAmount|0..1| CurrencyAmount | Contains the currency and the amount of the transaction. See [common elements](../common-elements/#CurrencyAmount)|
-|Transaction/SenderDetails|0..1| SenderDetails | Contains information about the payment sender. See [common elements](../common-elements/#SenderDetails). |
-|Transaction/RecipientDetails|0..1| SenderDetails | Contains information about the payment recipient. See [common elements](../common-elements/#SenderDetails). |
-|Transaction/Fees|0..1| Fees | Contains information about the transaction fees. See [common elements](../common-elements/#Fees)|
+|Transaction/CurrencyAmount|0..1| CurrencyAmount | Contains the currency and the amount of the transaction. See [common elements](../../common-elements/#currencyamount)|
+|Transaction/SenderDetails|0..1| SenderDetails | Contains information about the payment sender. See [common elements](../../common-elements/#senderdetails). |
+|Transaction/RecipientDetails|0..1| SenderDetails | Contains information about the payment recipient. See [common elements](../../common-elements/#senderdetails). |
+|Transaction/Fees|0..1| Fees | Contains information about the transaction fees. See [common elements](../../common-elements/#fees)|
 |Transaction/Reasons|0..1| Reasons | Reasons of the payment. This reasons are add to the transaction information if the provider admits it. |
-|Redirects|0..1| Redirects | Contains information about the payment redirection of the client to the providers web page. See [common elements](../common-elements/#Redirects)|
+|Redirects|0..1| Redirects | Contains information about the payment redirection of the client to the providers web page. See [common elements](../../common-elements/#redirects)|

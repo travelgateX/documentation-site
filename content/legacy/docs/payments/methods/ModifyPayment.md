@@ -3,11 +3,9 @@ title = "Modify Payment"
 pagetitle = "Modify Payment Call"
 description = "Information about the ModifyPayment call"
 icon = "fa-ellipsis-h"
-weight = 4
+weight = 9
 alwaysopen = false
 +++
-
-# ModifyPayment
 
 **Method Goals**
 This method aims to change the specification of an already created payment. Providers could allow complete modification, no modification at all or even just the modification of some parameters of the payment.
@@ -56,17 +54,17 @@ The response contains information about the payment that has been modified.
 |BillingAgreementDetails |0..1|  |  |
 |BillingAgreementDetails/ReferenceID |1|  | Id of the billing agreement|
 |BillingAgreementDetails/BillingAgreementDescription |1| | Description of the billing agreement |
-|BillingAgreementDetails/BillingAgreementMax |1| CurrencyAmount | Maximum value allowed by the agreement. See [common elements](../common-elements/#CurrencyAmount)|
+|BillingAgreementDetails/BillingAgreementMax |1| CurrencyAmount | Maximum value allowed by the agreement. See [common elements](../../common-elements/#currencyamount)|
 |BillingAgreementDetails/BillingAgreementStatus |1| string | Action to be applied to the billig agreement, valid values are "Modify", "Cancel", "Update", Reactivate" |
-|BillingAgreementDetails/PayerInfo |1| SenderDetails | Information about the payer. See [common elements](../common-elements/#SenderDetails). |
+|BillingAgreementDetails/PayerInfo |1| SenderDetails | Information about the payer. See [common elements](../../common-elements/#senderdetails). |
 |Transaction|1| | Contains information about the payment transaction to modify. |
 |@Id|1| String | Transaction identifier. |
 |Transaction/MerchantReference|1| String | Payment reference in the merchants system. |
-|Transaction/CurrencyAmount|1| CurrencyAmount | Contains the new amount for the payment. See [common elements](../common-elements/#CurrencyAmount)|
+|Transaction/CurrencyAmount|1| CurrencyAmount | Contains the new amount for the payment. See [common elements](../../common-elements/#currencyamount)|
 |Transaction/AuthorizationCode|1| String | Contains the Authorization Code of the transaction. Necesary if returned in the ProcessNotificationRS. |
-|Transaction/SenderDetails|0..1|SenderDetails| Contains information about the payment sender. Necesary if returned in the ProcessNotificationRS. See [common elements](../common-elements/#SenderDetails). |
-|Transaction/PaymentItemsDetails|0..1|PaymentItemsDetails| Contains a list of items that are related to this payment. This items are add to the transaction information if the provider admits it, check StaticConfiguration. See [common elements](../common-elements/#PaymentItemsDetails). |
-|Transaction/TransactionTokens|0..1|TransactionTokens|List of elements with additional data without specific place on the RQ. See [common elements](../common-elements/#TransactionTokens).|
+|Transaction/SenderDetails|0..1|SenderDetails| Contains information about the payment sender. Necesary if returned in the ProcessNotificationRS. See [common elements](../../common-elements/#senderdetails). |
+|Transaction/PaymentItemsDetails|0..1|PaymentItemsDetails| Contains a list of items that are related to this payment. This items are add to the transaction information if the provider admits it, check StaticConfiguration. See [common elements](../../common-elements/#paymentitemsdetails). |
+|Transaction/TransactionTokens|0..1|TransactionTokens|List of elements with additional data without specific place on the RQ. See [common elements](../../common-elements/#transactiontokens).|
 
 ## ModifyPaymentRS Example
 
@@ -132,9 +130,9 @@ The response contains information about the payment that has been modified.
 |BillingAgreementDetails |0..1|  |  |
 |BillingAgreementDetails/ReferenceID |1| String | Id of the billing agreement|
 |BillingAgreementDetails/BillingAgreementDescription |1| String | Description of the billing agreement |
-|BillingAgreementDetails/BillingAgreementMax |1| CurrencyAmount | Maximum value it will be paid. See [common elements](../common-elements/#CurrencyAmount)|
+|BillingAgreementDetails/BillingAgreementMax |1| CurrencyAmount | Maximum value it will be paid. See [common elements](../../common-elements/#currencyamount)|
 |BillingAgreementDetails/BillingAgreementStatus |1| string | Action to be applied to the billig agreement, valid values are "Modify", "Cancel", "Update", Reactivate" |
-|BillingAgreementDetails/PayerInfo |1| SenderDetails | Information about the payer. See [common elements](../common-elements/#SenderDetails). |
+|BillingAgreementDetails/PayerInfo |1| SenderDetails | Information about the payer. See [common elements](../../common-elements/#senderdetails). |
 |Transaction|0..1|  | Contains information about the payment transaction. |
 |@Id|1| String | Transaction identifier. |
 |@IdType|1| String | Transaction Id type (possible values: "Expirable" or "Final"). If "Final", the transaction id will not change. If "Expirable", the transaction id returned is only valid until the ExpiryDate. |
@@ -142,9 +140,9 @@ The response contains information about the payment that has been modified.
 |@Status|1| String | Transaction status (possible value: "Success" or "Unknown"). |
 |@StatusDescription|0..1| String | Additional information about the transaction status. |
 |Transaction/TransactionDate|0..1| DateTime | Transaction date. |
-|Transaction/CurrencyAmount|0..1|CurrencyAmount| Contains the currency and the amount of the transaction. See [common elements](../common-elements/#CurrencyAmount)|
+|Transaction/CurrencyAmount|0..1|CurrencyAmount| Contains the currency and the amount of the transaction. See [common elements](../../common-elements/#currencyamount)|
 |Transaction/AuthorizationCode|0..1| String | Contains the Authorization Code of the transaction. |
-|Transaction/SenderDetails|0..1| SenderDetails | Contains information about the payment sender. See [common elements](../common-elements/#SenderDetails). |
-|Transaction/Fees|0..1| Fees | Contains information about the transaction fees. See [common elements](../common-elements/#Fees)|
-|Transaction/Reasons|0..1| Reasons | Reasons of the payment. This reasons are add to the transaction information if the provider admits it. See [common elements](../common-elements/#Reasons)|
-|Redirects |0..1| Redirects | Information about where to redirect the user if needed. See [common elements](../common-elements/#Redirects)|
+|Transaction/SenderDetails|0..1| SenderDetails | Contains information about the payment sender. See [common elements](../../common-elements/#senderdetails). |
+|Transaction/Fees|0..1| Fees | Contains information about the transaction fees. See [common elements](../../common-elements/#fees)|
+|Transaction/Reasons|0..1| Reasons | Reasons of the payment. This reasons are add to the transaction information if the provider admits it. See [common elements](../../common-elements/#reasons)|
+|Redirects |0..1| Redirects | Information about where to redirect the user if needed. See [common elements](../../common-elements/#redirects)|
