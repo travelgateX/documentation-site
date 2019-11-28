@@ -2,7 +2,7 @@
 title = "Channel-X"
 pagetitle = ""
 description = ""
-weight = 7
+weight = 5
 icon="fa-cube"
 svgicon= "https://media.graphcms.com/1HVLatj5SF2WZpID4S6X"
 alwaysopen = false
