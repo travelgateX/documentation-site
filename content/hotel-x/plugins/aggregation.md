@@ -57,14 +57,15 @@ Use this plugin by adding it to the [settings](https://docs.travelgatex.com/hote
 ```
 {
     "plugins": {
-        "step": "RESPONSE_OPTION/RESPONSE",
+        "step": "RESPONSE",
         "pluginsType": [
             {
                 "type": "AGGREGATION",
                 "name": "cheapest_price",
                 "parameters": [
                     {
-                        {"key": "primaryKey","value": "hotel,supplier,room"}
+                        "key": "primaryKey",
+                        "value": "hotel,supplier,room"
                     }
                 ]
             }
