@@ -32,6 +32,8 @@ The available criteria of a rule are:
 
 Additionally, a rule has an ‘override’ flag that permits it to be the only rule applied (ignoring the rest)  when set to true. We only let a rule to be overriding when it contains at least the criterion: hotel, city or zone. If multiple override rules are valid for an option, the rule with the heavier weight is applied. The hotel criterion is heavier than city, and city is heavier than zone.
 
+Bear in mind that the plugin [**Market GroupX**](/hotel-x/plugins/markets_groups/) could affect the result of this plugin if you're using both of them at the same time. So, if you're also using this plugin in the same query, the market groups stored through ftp for **Market GroupX** have to be in accordance with the market from **Markup** rules you've also upload with this plugin. For instance, if the market recieved in the Search Option does not appear in the markup rule you're whiling to apply, the markup will not be set.
+
 ### Parameters
 
 |key|value type|condition|description|
