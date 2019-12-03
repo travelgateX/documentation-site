@@ -1,9 +1,9 @@
 +++
-title = "Hotel API methods"
-pagetitle = "Hotel API methods"
-description = "Read documentation on diferent Legacy APIs"
+title = "API Reference"
+pagetitle = "API Reference"
+description = "API Reference"
 icon = "fa-list" 
-weight = 1
+weight = 3
 alwaysopen = false
 +++
 

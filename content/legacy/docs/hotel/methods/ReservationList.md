@@ -1,10 +1,11 @@
----
-title: ReservationList
-keywords: hotel, data structure, reservation
-search: Hotel - Data Structure - ReservationList
-sidebar: mydoc_sidebar
-permalink: /docs/hotel/DSF/ReservationList
----
++++
+title= "ReservationList"
+keywords= "hotel, data structure, reservation"
+search= "Hotel - Data Structure - ReservationList"
+sidebar= "mydoc_sidebar"
+permalink= "/docs/hotel/DSF/ReservationList"
+weight = 17
++++
 
 
 
@@ -49,7 +50,7 @@ is closed, is of **240000** milliseconds.
 
 ~~~xml
     <ReservationListRQ>
-        <DateType>E</DateType>
+        <DateType>A</DateType>
         <Start>01/01/2014</Start>
         <End>22/02/2014</End>
     </ReservationListRQ>
@@ -157,6 +158,6 @@ is closed, is of **240000** milliseconds.
 | --------------------------------------------- | ------------- | -------- | ------------------------------------------ |
 | ReservationListRS              		| 1             |	   | Root node.					|
 | ReservationListRS/Reservations 		| 0..1          |	   | Reservations.				|
-| ReservationListRS/Reservations/Reservation	| 1..n             |	   | Same structure as [ReservationReadRS](/legacy/docs/hotel/methods/reservationread/).	|
+| ReservationListRS/Reservations/Reservation	| 1             |	   | Same structure as [ReservationReadRS](https://docs.travelgatex.com/legacy/docs/hotel/methods/reservationread/#reservationreadrs-description).	|
 
 

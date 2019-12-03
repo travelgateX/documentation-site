@@ -1,10 +1,11 @@
----
-title: HotelList
-keywords: hotel, data structure, hotel list, list
-search: Hotel - Data Structure - HotelList
-sidebar: mydoc_sidebar
-permalink: /docs/hotel/DSF/HotelList
----
++++
+title= "HotelList"
+keywords= "hotel, data structure, hotel list, list"
+search= "Hotel - Data Structure - HotelList"
+sidebar= "mydoc_sidebar"
+permalink= "/docs/hotel/DSF/HotelList"
+weight = 11
++++
 
 
 
@@ -163,9 +164,9 @@ The **ContinuationToken** can be used in this request - the specification can be
 | Latitude   				| 0..1    		| String	| Latitude.							|
 | Longitude  				| 0..1    		| String	| Longitude.							|
 | Contact    				| 0..1          	|		| Contact.							|
-| Contact/Email				| 1    		| String	| Email.							|
-| Contact/Telephone			| 1    		| String	| Telephone.							|
-| Contact/Fax				| 1    		| String	| Fax. 								|
+| Contact/Email				| 0..1    		| String	| Email.							|
+| Contact/Telephone			| 0..1    		| String	| Telephone.							|
+| Contact/Fax				| 0..1    		| String	| Fax. 								|
 | CategoryCode				| 1    		| String	| CategoryCode.							|
 | Type       				| 0..1 		| String	| Hotel type: please see detailed description	|
 | PaymentOptions			| 0..1 		| String	| Type of cards allowed by the supplier. This tag is only mandatory if payment type is different than *MerchantPay*.	|				|

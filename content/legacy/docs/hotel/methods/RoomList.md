@@ -1,10 +1,11 @@
----
-title: RoomList
-keywords: hotel, data structure, room list, list
-search: Hotel - Data Structure - RoomList
-sidebar: mydoc_sidebar
-permalink: /docs/hotel/DSF/RoomList
----
++++
+title= "RoomList"
+keywords= "hotel, data structure, room list, list"
+search= "Hotel - Data Structure - RoomList"
+sidebar= "mydoc_sidebar"
+permalink= "/docs/hotel/DSF/RoomList"
+weight = 19
++++
 
 
 

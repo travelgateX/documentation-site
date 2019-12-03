@@ -1,10 +1,11 @@
----
-title: Avail
-keywords: hotel, data structure, avail
-search: Hotel - Data Structure - Avail
-sidebar: mydoc_sidebar
-permalink: /docs/hotel/DSF/Avail
----
++++
+title= "Avail"
+keywords= "hotel, data structure, avail"
+search= "Hotel - Data Structure - Avail"
+sidebar= "mydoc_sidebar"
+permalink= "/docs/hotel/DSF/Avail"
+weight = 2
++++
 
 
 ### Method Goals
@@ -25,7 +26,7 @@ destination, travel dates and the number of pax in each room.
 ### Response Format
 
 
-Results are organized in this hierarchy:
+Results are organized in this hierarchy=
 
 -   *Hotel* :
 
@@ -263,7 +264,7 @@ is closed.
                     <POIs>
                       <POI code = "8A" Description = "Andorra">
                         <Services>
-                          <Service type = "SkiPass" code = "F1" description = "Forfait" durationType = "open" quantity = "5" unit = "Hour"></Service>
+                          <Service type = "SkiPass" code = "F1" description = "Forfait" durationType = "Open" quantity = "5" unit = "Hour"></Service>
                         </Services>
                       </POI>
                     </POIs>
@@ -288,7 +289,7 @@ is closed.
                     <POIs>
                       <POI code = "8A" Description = "Andorra">
                         <Services>
-                          <Service type = "SkiPass" code = "F1" description = "Forfait" durationType = "open" quantity = "2" unit = "Day"></Service>
+                          <Service type = "SkiPass" code = "F1" description = "Forfait" durationType = "Open" quantity = "2" unit = "Day"></Service>
                         </Services>
                       </POI>
                     </POIs>
@@ -341,13 +342,13 @@ is closed.
 | MealPlans/MealPlan/Options /Option/RateRules | 0..1 	| 		| Option restrictions.					|
 | MealPlans/MealPlan/Options /Option/RateRules/Rules | 0..n | 		| Rules.							|
 | MealPlans/MealPlan/Options /Option/RateRules/Rules /Rule | 1 | 	| Rule.								|
-| @type 				| 1 		| String 	| Possible values (NonRefundable, Older55, Package,...) (see [RateRules](#rate-rules))	|
+| @type 				| 1 		| String 	| Possible values (NonRefundable, Older55, Package,...).	|
 | MealPlans/MealPlan/Options /Option/Rooms | 1 		| 		| Rooms in this option (room list).				|
 | MealPlans/MealPlan/Options /Option/Rooms/Room | 1..n 	| 		| Room details.						|
 | @id 					| 1 		| String 	| Room ID.					|
 | @roomCandidateRefId 			| 1 		| Integer 	| Room candidate ID.					|
-| @code 				| 1 		| String 	| Room code.							|
-| @description 				| 0..1 		| String 	| Room description. Mandatory if the supplier doesn't allow RoomList Method. If the supplier implements RoomList Method this field could be empty.						|
+| @code 				| 1 		| String 	| Room code has to be unique to identify a specific room type. If the RoomList Method is implemented, you can find the description of the room type in the RoomList. 							|
+| @description 				| 0..1 		| String 	| Room description. Mandatory if the supplier doesn't allow RoomList Method. If the supplier implements RoomList Method, this field could be empty.						|
 | @nonRefundable 			| 0..1 		| String 	| Identifies if the room is refundable or not.			|
 | @numberOfUnits 			| 0..1 		| Integer 	| Number of rooms available with the same type (see [MetaData](https://docs.travelgatex.com/legacy/docs/hotel/methods/metadata/)).	|
 | MealPlans/MealPlan/Options /Option/Rooms/Room/Offers | 0..1 	| 		| The supplier returns in response which offer is applicable for each room (see [MetaData](https://docs.travelgatex.com/legacy/docs/hotel/methods/metadata/) in order to verify if a supplier implements it).	|
@@ -413,7 +414,7 @@ is closed.
 | @type 				| 1 		| String 	| Service type (SkiPass, Lessons, Meals, Equipment, Ticket, Transfers or Gala).	|
 | @code 				| 1 		| String 	| Service code.							|
 | @description 				| 1 		| String 	| Service description.						|
-| @durationType 			| 1 		| String 	|  Date of service. If range= date range is set, then the element "RangeDates" is returned - Open= not restricted by date. Elements "quantity" and "unit" are returned to specify type and quantity.|
+| @durationType 			| 1 		| String 	|  Date of service. If durationType = Range, then date range is set and the element "RangeDates" is returned. If durationType = Open, not restricted by date. Elements "quantity" and "unit" are returned to specify type and quantity.|
 | @quantity 				| 1 		| Integer 	| Indicates the quantity of field in the element "unit".		|
 | @unit 				| 0..1 		| String 	| Day or Hour.							|
 | MealPlans/MealPlan/Options /Option/Detail/POIs/POI /Services/Service/RangeDates| 0..1 | | Service date range (Only specified if durationType=Range).	|
@@ -453,7 +454,7 @@ It's the client's resposability to do performance tests in order to determine wh
 
 **BusinessRules:**
 
-BusinessRules uses *optionsQuota*, go to [Common-Elements](/hotel/DSF/Common-Elements) for more
+BusinessRules uses *optionsQuota*, go to [Common-Elements](https://docs.travelgatex.com/legacy/docs/hotel/methods/common-elements/) for more
 information.
 
 This tag will only be used for suppliers availability responses
@@ -593,27 +594,27 @@ in the availability method.
 
 
 
-## Rate Rules:
+**Rate conditions:**
 
--   **NonRefundable**: The extra fee for a **nonRefundable** cancellation is a 100% from
+-   The extra fee for a **nonRefundable** cancellation is a 100% from
     the moment the reservation is created.
--   **Older55**: The supplier can return options for pax: **older than 55 years old**,
+-   The supplier can return options for pax: older than 55 years old,
     i.e. options that can only be sold to people who are 55 and older.
     In this case we will return the condition: rate 55 years old.
--   **Older60** and **Older65**: In the case of pax older than **60 years** and **65 years** the same
+-   In the case of pax older than **60 years** and **65 years** the same
     process applies.
--   **Package**: The rate **package** means that the product can't be sold separately
+-   The rate **package** means that the product can't be sold separately
     from another product attached to it, such as a flight.
--   **CanaryResident**: The rate **CanaryResident** is applicable to Canary Islands
+-   The rate **CanaryResident** is applicable to Canary Islands
     residents only.
--   **BalearicResident**: The rate **BalearicResident** is applicable to Balearic Islands
+-   The rate **BalearicResident** is applicable to Balearic Islands
     residents only.
--   **LargeFamily**. The rate **largeFamily** is applied to large families and is
+-   The rate **largeFamily** is applied to large families and is
     determined by each supplier.Check *remarks* for more details.
--   **HoneyMoon**: The rate **honeymoon** is applied to those who just got married and
+-   The rate **honeymoon** is applied to those who just got married and
     is determined by each supplier. Check *remarks* for more details.
--   **PublicServant**: The rate **publicServant** is applicable to public servants only.
--   **Unemployed**: The rate **unemployed** is applied to those without work.
+-   The rate **publicServant** is applicable to public servants only.
+-   The rate **unemployed** is applied to those without work.
 
 **Offers:**
 
