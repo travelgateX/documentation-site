@@ -28,6 +28,8 @@ __fields__
 * **search\_date (TIMESTAMP).** Search date in UTC (format: YYYY-MM-DD hh:mm:ss)
 * **client\_id (STRING).** Client unique ID
 * **provider\_id (STRING).** Provider unique ID
+* **client\_owner    (STRING).** Organization's name of the client.
+* **provider\_owner (STRING).** Organization's name of the provider.
 * **speed (BOOLEAN).** It indicates if the source of request was the client or Speed-X to load info in cache (0=Client, 1=Speed-X).
 * **search\_ok (NUMBER).** Quantity of searches with searchable results.
 * **search\_nok_no_results (NUMBER).** Quantity of searches without searchable results.
@@ -57,10 +59,10 @@ __fields__
 
 __Preview__
 
-| search\_date | client\_id | provider\_id | speed | search\_ok | search\_nok_no_results | search\_nok_provider_error | search\_nok_bad_request | search\_nok_integration_error | search\_nok_communication_error | search\_nok_others | search\_time | quote\_ok | quote\_nok_no_results | quote\_nok_provider_error | quote\_nok_bad_request | quote\_nok_integration_error | quote\_nok_communication_error | quote\_nok_others | quote\_time | bookinging\_ok | bookinging\_nok | bookinging\_time | cancel\_ok | cancel\_nok | cancel\_time | other\_ok | other\_nok | other\_time  |
-| :-------------------------------------- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- |
-| 2018-03-28 12:00:00 UTC | client 1 | provider 1 | false | 372408 | 159272 | 571 | 30093 | 0 | 40 | 0 | 206883360 | 182 | 0 | 0 | 0 | 0 | 0 | 0 | 38166 | 3 | 0 | 31848 | 0 | 0 | 0 | 0 | 0 | 0 |
-| 2018-03-28 12:00:00 UTC | client 1 | provider 2 | false | 50 | 10 | 0 | 0 | 0 | 0 | 0 | 48754 | 419 | 6 | 0 | 0 | 0 | 4 | 0 | 374301 | 5 | 0 | 41257 | 1 | 0 | 6080 | 172 | 0 | 5116 |
-| 2018-03-28 12:00:00 UTC | client 2 | provider 1 | false | 548214 | 0 | 577 | 0 | 714 | 0 | 0 | 47457579 | 3719 | 32 | 0 | 0 | 0 | 0 | 0 | 327425 | 18 | 0 | 81757 | 6 | 4 | 31803 | 230 | 0 | 42614 |
+| search\_date            | client\_id | provider\_id | provider\_owner  | client\_owner   | speed | search\_ok | search\_nok_no_results | search\_nok_provider_error | search\_nok_bad_request | search\_nok_integration_error | search\_nok_communication_error | search\_nok_others | search\_time | quote\_ok | quote\_nok_no_results | quote\_nok_provider_error | quote\_nok_bad_request | quote\_nok_integration_error | quote\_nok_communication_error | quote\_nok_others | quote\_time | bookinging\_ok | bookinging\_nok | bookinging\_time | cancel\_ok | cancel\_nok | cancel\_time | other\_ok | other\_nok | other\_time  |
+| :---------------------- | :--------- | :----------- | :-------------- | :------------- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- |
+| 2018-03-28 12:00:00 UTC | client 1   | provider 1   | Org Name 1      | Org Name 1     | false | 372408 | 159272 | 571 | 30093 | 0 | 40 | 0 | 206883360 | 182 | 0 | 0 | 0 | 0 | 0 | 0 | 38166 | 3 | 0 | 31848 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2018-03-28 12:00:00 UTC | client 1   | provider 2   | Org Name 2      | Org Name 2     | false | 50 | 10 | 0 | 0 | 0 | 0 | 0 | 48754 | 419 | 6 | 0 | 0 | 0 | 4 | 0 | 374301 | 5 | 0 | 41257 | 1 | 0 | 6080 | 172 | 0 | 5116 |
+| 2018-03-28 12:00:00 UTC | client 2   | provider 1   | Org Name 3      | Org Name 3     | false | 548214 | 0 | 577 | 0 | 714 | 0 | 0 | 47457579 | 3719 | 32 | 0 | 0 | 0 | 0 | 0 | 327425 | 18 | 0 | 81757 | 6 | 4 | 31803 | 230 | 0 | 42614 |
 
 

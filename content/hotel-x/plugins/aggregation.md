@@ -31,6 +31,10 @@ It's based on [SQL Aggregate Functions](https://www.postgresql.org/docs/current/
   * supplier
   * surcharges
 
+### Name
+The aggregation mode currently only supports one mode "cheapest_price". You will need to set this in the "name" field when using the plugin as shown in the example below.
+
+
 ### Parameters
 
 |key|value type|condition|description|
@@ -42,19 +46,26 @@ It's based on [SQL Aggregate Functions](https://www.postgresql.org/docs/current/
 
 It's implemented as a [Processor plugin](/hotel-x/plugins/processor)
 
+
+### Where to place
+
+Use this plugin by adding it to the [settings](https://docs.travelgatex.com/hotel-x/concepts/settings/) in your HotelX Search Query.
+
+
 ### Execution example
 
 ```
 {
     "plugins": {
-        "step": "RESPONSE_OPTION/RESPONSE",
+        "step": "RESPONSE",
         "pluginsType": [
             {
                 "type": "AGGREGATION",
                 "name": "cheapest_price",
                 "parameters": [
                     {
-                        {"key": "primaryKey","value": "hotel,supplier,room"}
+                        "key": "primaryKey",
+                        "value": "hotel,supplier,room"
                     }
                 ]
             }

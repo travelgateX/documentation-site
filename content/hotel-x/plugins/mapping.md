@@ -94,22 +94,24 @@ Code Source, Code Destination
 
 ## Other Maps
 
-### Map by provider hotel
+### Other Maps in Booking API
+
+#### Map by provider hotel
 
 This plugin allows to convert the room codes in supplier context but by hotel. Is the same plugin (room map) explained before but it offers the possibility to map by supplier and hotel. 
 
-#### Format File
+##### Format File
 
 The file must be in the below format:
 
 * **Encoding**: UTF-8 
 * **File Name**: [Context Source]\_[Context Destination]\_room\_map.csv
-* **Header Row**: ToRemove 
+* **Header Row**: Code Source,Code Destination
 * **Directory**: /F[folder code]\_[unique code]/HotelX\_[unique code]/Maps/
 
 If you are using a file of room map, is necessary that you modify this file adding a new column. Please, see the next example down:
 
-#### Sample File
+##### Sample File
 
 **Name**: xtg_provider_room_map.csv
 **Data**:
@@ -128,11 +130,11 @@ Code Source,Code Destination,Code Hotel
 
 How you can see, in the same file are combined maps with 3 values and maps with 2 values. The rows with two values are mapped by provider. The files with three values are mapped by provider and hotel. Is possible to use only the mapping by provider hotel, in this case, your file only has rows with three values.
 
-## How applies
+### How applies
 
 What happens if you use the combined plugin(room map and room map by provider hotel)? In this case, all the rooms with provider hotel map will be mapped to your context (the context put in the first value of file's name (client context)) and the room codes that don't have provider hotel map, will be mapped with provider map code (in case that exist). If no map codes are found, the option can be discarded (this rule is configurable). 
 
-## Execution example
+### Execution example
 
 ```json
 {
@@ -151,12 +153,12 @@ What happens if you use the combined plugin(room map and room map by provider ho
 
 Besides, an alternative for room map is also shown below:
 
-### Description Room Map
+#### Description Room Map
 
 As a room map alternative, you can generate a room code from a room description. This plugin applies some rules over the description and generates a code. You need to load other files for this plugin.
 
 
-## Files
+### Files
 
 We have two files for this plugin:
 
@@ -237,6 +239,172 @@ When you execute the plugin the steps to be followed are:
     }
 }
 ```
+### Other Maps in Content API
+
+#### Amenity Map 
+
+This funcionality allows retrieving hotels in hotels service in another context different that supplier context. This funcionality differs with other mappings because mapping has to be requested in query fields, not in plugin section.
+
+##### Format File
+
+The file must be in the below format:
+
+* **Encoding**: UTF-8 
+* **File Name**: [Context Source]\_[Context Destination]\_amenity\_map.csv
+* **Header Row**: Code Source,Code Destination 
+* **Directory**: /F[folder code]\_[unique code]/HotelX\_[unique code]/Maps/
+
+If you are using a file of room map, is necessary that you modify this file adding a new column. Please, see the next example down:
+
+##### Sample File
+
+**Name**: contextSource_contextDestination_amenity_map.csv
+**Data**:
+
+``` csv
+Code Source,Code Destination
+1,X
+1,Y
+1,Z
+2,X1
+2,X2
+3,X3
+4,X4
+5,X5
+```
+
+### Input Example
+
+For using amenity mapping in Content API is necessary to include a parameter called "mapOptions" as array in allAmenities node. This array indicates all the pairs group-context that will be used to map amenity code. If amenity map is found for some group-context pair of mapOptions input, the code mapped will appear inside mappings field as code.
+
+#### Query mapping node example
+```json
+mappings {
+  context
+  code
+}
+````
+#### Query parameter example 
+```json
+allAmenities(mapOptions: [{groupCode: "HotelX_XXX", context: "CTX"}, {groupCode: "HotelX_YYY", context: "CTX2"}]) {
+  edges {
+    cursor
+    node {
+      code
+      amenityData {
+        code
+        amenityCode
+        type
+        texts {
+          text
+          language
+        }
+        value {
+          text
+          language
+        }
+        mappings {
+          context
+          code
+        }
+      }
+      adviseMessage {
+        code
+        level
+        description
+      }
+    }
+  }
+}
+```
+
+### Output Examples
+
+```json
+{
+    "edges" : [
+        {
+            "cursor" : "",
+            "node" : {
+                "code" : "",
+                "amenityData" : {
+                    "code" : "",
+                    "amenityCode" : "amenityCode1",
+                    "type" : "GENERAL",
+                    "texts" : [
+                        {
+                            "text" : "24 hour front desk",
+                            "language" : "en"
+                        }
+                    ],
+                    "value" : [
+                        {
+                            "text" : "Amenity value example",
+                            "language" : "en"
+                        }
+                    ],
+                    "mappings" : null
+                },
+                "adviseMessage" : [
+                    {
+                        "code" : "22600",
+                        "level" : "WARN",
+                        "description" : "Amenity map code not found for group HotelX_XXX and context CTX1"
+                    },
+                    {
+                        "code" : "22401",
+                        "level" : "WARN",
+                        "description" : "No permissions found over group HotelX_YYYY."
+                    }
+                ]
+            }
+        },
+        {
+            "cursor" : "",
+            "node" : {
+                "code" : "",
+                "amenityData" : {
+                    "code" : "",
+                    "amenityCode" : "amenityCode2",
+                    "type" : "GENERAL",
+                    "texts" : [
+                        {
+                            "text" : "Restaurant",
+                            "language" : "en"
+                        }
+                    ],
+                    "value" : [
+                        {
+                            "text" : "Amenity value example",
+                            "language" : "en"
+                        }
+                    ],
+                    "mappings" : [
+                        {
+                            "context" : "CTX",
+                            "code" : "codeInCTXContext"
+                        }
+                    ],
+                    "adviseMessage" : [
+                        {
+                            "code" : "22401",
+                            "level" : "WARN",
+                            "description" : "No permissions found over group HotelX_YYYY."
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}
+```
+
+The query of the response above is the response of the previous example identified as: "Query parameter example". There we can see that we send two mapping options, one requesting group HotelX_XXX with context CTX and the other with group HotelX_YYY and context CTX2. 
+
+For this example, we supose that:
+
+- the Apikey has no permission over group HotelX_YYY. For this reason, we find one adviseMessage with the description: "No permissions found over group HotelX_YYY" in each amenity nodes.
+- the amenity with code amenityCode1 has not been found in amenity mapping file. For this reason we find one adviseMessage in first amenity node indicating that no mapping has been found for this amenityCode.
 
 ## Modifying data
 

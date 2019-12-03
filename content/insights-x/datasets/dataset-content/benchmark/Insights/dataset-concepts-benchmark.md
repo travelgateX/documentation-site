@@ -52,8 +52,8 @@ Finally, the most general level of detail is given per *provider*. In there, the
 
 As a summary of above, the next table sum up the level of details for the 6 benchmark tables:
 
-|                     |                                                         Buyer Information                                                         |                                                Not Buyer Information                                               |
-|:-------------------:|:---------------------------------------------------------------------------------------------------------------------------------:|:------------------------------------------------------------------------------------------------------------------:|
+|                     |                                                         Buyer Information                                                           |                                                Not Buyer Information                                               |
+|:-------------------:|:-----------------------------------------------------------------------------------------------------------------------------------:|:------------------------------------------------------------------------------------------------------------------:|
 | **Destination**     |                          benchmarking\_country\_city\_client\_(daily\|weekly\|monthly)\_seller                                      |  benchmarking\_country\_city\_(daily\|weekly\|monthly)\_seller                                                       |
 |                     |                                   benchmarking\_country\_client\_(daily\|weekly\|monthly)\_seller                                   | benchmarking\_country\_(daily\|weekly\|monthly)\_seller                                                              |
 | **Not Destination** |                                        benchmarking\_client\_(daily\|weekly\|monthly)\_seller                                       |                                benchmarking\_(daily\|weekly\|monthly)\_seller                               |
@@ -83,18 +83,18 @@ The bechmark table analyses the total of uniques searches per hotel returning av
     + Average of all the availables hotels per seller: **availability\_compset**
     + Average of all the bookings per seller: **booking\_compset**
     + Average of all the revenue net per seller: **revenue\_compset**
- * How far or how close I'm from the best/worst seller. For values near zero, you're close to the worst seller. For values near one, you're close to the best seller:
-    + Returning availables hotels: **availability\_index**
-    + In bookings: **booking\_index**
-    + In revenue net: **revenue\_index**
+ * The value of the best seller:
+    + Returning availables hotels: **availability\_best\_compset**
+    + In bookings: **booking\_best\_compset**
+    + In revenue net: **revenue\_best\_compset**
 
 ### Examples 
 Let's consider the following row from the table `benchmarking\_country\_city\_client\_(daily\|weekly\|monthly)\_seller`:
 
 
-| client\_id | provider\_id | country | city  | country\_city\_client | search\_date            | availability\_value | availability\_percentile | availability\_rank | availability\_compset | availability\_index | booking\_value | booking\_percentile | booking\_rank | booking\_compset | booking\_index | revenue\_value | revenue\_percentile | revenue\_rank | revenue\_compset | revenue\_index | total\_provider | country\_name | availability\_tgx | booking\_tgx | revenue\_tgx |
-|------------|--------------|---------|-------|-----------------------|-------------------------|---------------------|--------------------------|--------------------|-----------------------|---------------------|----------------|---------------------|---------------|------------------|----------------|----------------|---------------------|---------------|------------------|----------------|-----------------|---------------|-------------------|--------------|--------------|
-| client 1   | provider 1   | ES      | Palma | ES,Palma,client 1     | 2019-04-03 00:00:00 UTC | 130                 | 0.8889                   | 1                  | 12.625                | 1.0                 | 3              | 0.7674              | 3             | 1.426            | 0.8571         | 2104.72        | 0.8163              | 2             | 620.36           | 0.9126         | 8               | Spain         | 60000             | 20           | 3600         |
+| client\_id | provider\_id | country | zone\_2       | city  | country\_city\_client | search\_date            | availability\_value | availability\_percentile | availability\_rank | availability\_compset | availability\_best\_compset | booking\_value | booking\_percentile | booking\_rank | booking\_compset | booking\_best\_compset | revenue\_value | revenue\_percentile | revenue\_rank | revenue\_compset | revenue\_best\_compset | total\_provider | country\_name | availability\_tgx | booking\_tgx | revenue\_tgx |
+|------------|--------------|---------|---------------|-------|-----------------------|-------------------------|---------------------|--------------------------|--------------------|-----------------------|-----------------------------|----------------|---------------------|---------------|------------------|------------------------|----------------|---------------------|---------------|------------------|------------------------|-----------------|---------------|-------------------|--------------|--------------|
+| client 1   | provider 1   | ES      | Illes Balears | Palma | ES,Palma,client 1     | 2019-04-03 00:00:00 UTC | 130                 | 0.8889                   | 1                  | 12.625                | 130                         | 3              | 0.7674              | 3             | 1.426            | 15                     | 2104.72        | 0.8163              | 2             | 620.36           | 2513.5                 | 8               | Spain         | 60000             | 20           | 3600         |
 
 
 Let's see what we can say about the provider 1 at 2019-04-03 00:00:00 UTC in **availability** for the client 1:
@@ -104,7 +104,7 @@ Let's see what we can say about the provider 1 at 2019-04-03 00:00:00 UTC in **a
 * The provider is above de 89.89% of providers in Palma of client 1.
 * This provider is the first returning availability in Palma for client 1. Here, that's a point, because the provider is first in the ranking but the percentile is not 100%. That's why there is another provider retuning the same numbers of hotels availables.
 * The average of hotels availables per provider in Palma for client 1 is 12.25.
-* The value of the index is 1, so privider 1 is the best seller for the client 1 or there is not another seller returning more availables hotels.
+* The provider in TGX that has obtained the most available hotels has obtained a total of 130 availables hotels, so provider 1 is the best seller for the client 1 or there is not another seller returning more availables hotels.
 
 [^note1]: Taking into account that the hotels between providers do not have to be different.
 
@@ -115,7 +115,7 @@ Let's see what we can say about the provider 1 at 2019-04-03 00:00:00 UTC in **b
 * The seller is above the 76.74% providers operating in Palma for the client 1.
 * This seller is the third in bookability in Palma for the client 1.
 * The average of bookings in Palma per seller for the client 1 is 1.426.
-* The value of the index is 0.8571, so provider 1 is not so far of the first seller in bookability in Palma for the client 1.
+* The provider in TGX that has obtained the most bookings has obtained a total of 15 bookings, so provider 1 is not so far of the first seller in bookability in Palma for the client 1.
 
 Let's see what we can say for the provider 1 at 2019-04-03 00:00:00 UTC in **revenue** for the client 1:
 
@@ -124,16 +124,16 @@ Let's see what we can say for the provider 1 at 2019-04-03 00:00:00 UTC in **rev
 * The seller is above de 81.63% providers operating in Palma for the client 1.
 * This seller is the second in revenue in Palma for the client 1.
 * The average of revenue in Palma per seller is 620.36€  for the client 1.
-* The value of the index is 0.9126, so provider 1 is close to the seller with largest revenue in Palma for the client 1.
+* The provider in TGX that has obtained the most revenue has obtained 2513.5€, so provider 1 is close to the seller with largest revenue in Palma for the client 1.
 
 The benchmarks have been calculated comparing provider 1 with other 8 providers.
 
 Let's consider the following row from the table  `benchmarking\_country\_city\_(daily\|weekly\|monthly)\_seller`:
 
 
-| provider\_id | country | city            | country\_city   | search\_date            | availability\_value | availability\_percentile | availability\_rank | availability\_compset | availability\_index | booking\_value | booking\_percentile | booking\_rank | booking\_compset | booking\_index | revenue\_value | revenue\_percentile | revenue\_rank | revenue\_compset | revenue\_index | total\_provider | country\_name | availability\_tgx | booking\_tgx | revenue\_tgx |
-|--------------|---------|-----------------|-----------------|-------------------------|---------------------|--------------------------|--------------------|-----------------------|---------------------|----------------|---------------------|---------------|------------------|----------------|----------------|---------------------|---------------|------------------|----------------|-----------------|---------------|-------------------|--------------|--------------|
-| provider 1   | CU      | La Habana Vieja | La Habana Vieja | 2019-04-03 00:00:00 UTC | 20                  | 1.0                      | 1                  | 9.3953                | 1.0                 | 2              | 0.902               | 2             | 1.8889           | 0.5            | 676.95         | 0.9412              | 4             | 701.0125         | 0.4076         | 52              | Cuba          | 60000             | 20           | 3600         |
+| provider\_id | country | city            | country\_city   | search\_date            | availability\_value | availability\_percentile | availability\_rank | availability\_compset | availability\_best\_compset | booking\_value | booking\_percentile | booking\_rank | booking\_compset | booking\_best\_compset | revenue\_value | revenue\_percentile | revenue\_rank | revenue\_compset | revenue\_best\_compset | total\_provider | country\_name | availability\_tgx | booking\_tgx | revenue\_tgx |
+|--------------|---------|-----------------|-----------------|-------------------------|---------------------|--------------------------|--------------------|-----------------------|-----------------------------|----------------|---------------------|---------------|------------------|------------------------|----------------|---------------------|---------------|------------------|------------------------|-----------------|---------------|-------------------|--------------|--------------|
+| provider 1   | CU      | La Habana Vieja | La Habana Vieja | 2019-04-03 00:00:00 UTC | 20                  | 1.0                      | 1                  | 9.3953                | 20                          | 2              | 0.902               | 2             | 1.8889           | 4                      | 676.95         | 0.9412              | 4             | 701.0125         | 1612.7                 | 52              | Cuba          | 60000             | 20           | 3600         |
 
 
 Let's see what we can say about the provider 1 at 2019-04-03 00:00:00 UTC in **availability**:
@@ -143,7 +143,7 @@ Let's see what we can say about the provider 1 at 2019-04-03 00:00:00 UTC in **a
 * The provider is above de 100% of providers in La Habana Vieja (so it's the best).
 * This provider is the first returning availability in La Habana Vieja.
 * The average of hotels availables per provider in La Habana Vieja is 9.3953.
-* The value of the index is 1, so  is the best seller.
+* The provider in TGX that has obtained the most available hotels has obtained a total of 20 availables hotels, so  is the best seller.
 
 
 Let's see what we can say about the provider 1 at 2019-04-03 00:00:00 UTC in **bookings**:
@@ -153,7 +153,7 @@ Let's see what we can say about the provider 1 at 2019-04-03 00:00:00 UTC in **b
 * The seller is above the 90.72% providers operating in La Habana Vieja.
 * This seller is the second in bookability in La Habana Vieja.
 * The average of bookings in La Habana Vieja per seller is 1.8889.
-* The value of the index is 0.5, so provider 1 has sold the half of bookings than the best seller in bookability in La Habana Vieja.
+* The provider in TGX that has obtained the most bookings has obtained a total of 4 bookings, so provider 1 has sold the half of bookings than the best seller in bookability in La Habana Vieja.
 
 Let's see what we can say for the provider 1 at 2019-04-03 00:00:00 UTC in **revenue**:
 
@@ -162,6 +162,6 @@ Let's see what we can say for the provider 1 at 2019-04-03 00:00:00 UTC in **rev
 * The seller is above de 94.12% providers operating in La Habana Vieja.
 * This seller is the fourth in revenue in La Habana Vieja.
 * The average of revenue in La Habana Vieja per seller is 701.0125€.
-* The value of the index is 0.4076 so I'm far to the seller with largest revenue in La Habana Vieja.
+* The provider in TGX that has obtained the most revenue has obtained 1612.7€, so provider1 is far to the seller with largest revenue in La Habana Vieja.
 
 The benchmarks have been calculated comparing provider 1 with other 52 providers.
