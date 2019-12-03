@@ -1,10 +1,11 @@
----
-title: Common Elements
-keywords: common elements, elements, hotel
-search: Hotel - Data Structure - Common Elements
-sidebar: mydoc_sidebar
-permalink: /docs/hotel/DSF/Common-Elements
----
++++
+title= "Common Elements"
+keywords= "common elements, elements, hotel"
+search= "Hotel - Data Structure - Common Elements"
+sidebar= "mydoc_sidebar"
+permalink= "/docs/hotel/DSF/Common-Elements"
+weight = 6
++++
 
 
 

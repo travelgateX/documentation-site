@@ -1,10 +1,11 @@
----
-title: Lists of Data
-keywords: hotel, data structure, list data
-search: Hotel - Data Structure - Lists of Data
-sidebar: mydoc_sidebar
-permalink: /docs/hotel/DSF/ListData
----
++++
+title= "Lists of Data"
+keywords= "hotel, data structure, list data"
+search= "Hotel - Data Structure - Lists of Data"
+sidebar= "mydoc_sidebar"
+permalink= "/docs/hotel/DSF/ListData"
+weight = 12
++++
 
 
 

@@ -1,10 +1,11 @@
----
-title: Avail
-keywords: hotel, data structure, avail
-search: Hotel - Data Structure - Avail
-sidebar: mydoc_sidebar
-permalink: /docs/hotel/DSF/Avail
----
++++
+title= "Avail"
+keywords= "hotel, data structure, avail"
+search= "Hotel - Data Structure - Avail"
+sidebar= "mydoc_sidebar"
+permalink= "/docs/hotel/DSF/Avail"
+weight = 2
++++
 
 
 ### Method Goals
@@ -25,7 +26,7 @@ destination, travel dates and the number of pax in each room.
 ### Response Format
 
 
-Results are organized in this hierarchy:
+Results are organized in this hierarchy=
 
 -   *Hotel* :
 
@@ -263,7 +264,7 @@ is closed.
                     <POIs>
                       <POI code = "8A" Description = "Andorra">
                         <Services>
-                          <Service type = "SkiPass" code = "F1" description = "Forfait" durationType = "open" quantity = "5" unit = "Hour"></Service>
+                          <Service type = "SkiPass" code = "F1" description = "Forfait" durationType = "Open" quantity = "5" unit = "Hour"></Service>
                         </Services>
                       </POI>
                     </POIs>
@@ -288,7 +289,7 @@ is closed.
                     <POIs>
                       <POI code = "8A" Description = "Andorra">
                         <Services>
-                          <Service type = "SkiPass" code = "F1" description = "Forfait" durationType = "open" quantity = "2" unit = "Day"></Service>
+                          <Service type = "SkiPass" code = "F1" description = "Forfait" durationType = "Open" quantity = "2" unit = "Day"></Service>
                         </Services>
                       </POI>
                     </POIs>
@@ -346,8 +347,8 @@ is closed.
 | MealPlans/MealPlan/Options /Option/Rooms/Room | 1..n 	| 		| Room details.						|
 | @id 					| 1 		| String 	| Room ID.					|
 | @roomCandidateRefId 			| 1 		| Integer 	| Room candidate ID.					|
-| @code 				| 1 		| String 	| Room code.							|
-| @description 				| 0..1 		| String 	| Room description. Mandatory if the supplier doesn't allow RoomList Method. If the supplier implements RoomList Method this field could be empty.						|
+| @code 				| 1 		| String 	| Room code has to be unique to identify a specific room type. If the RoomList Method is implemented, you can find the description of the room type in the RoomList. 							|
+| @description 				| 0..1 		| String 	| Room description. Mandatory if the supplier doesn't allow RoomList Method. If the supplier implements RoomList Method, this field could be empty.						|
 | @nonRefundable 			| 0..1 		| String 	| Identifies if the room is refundable or not.			|
 | @numberOfUnits 			| 0..1 		| Integer 	| Number of rooms available with the same type (see [MetaData](https://docs.travelgatex.com/legacy/docs/hotel/methods/metadata/)).	|
 | MealPlans/MealPlan/Options /Option/Rooms/Room/Offers | 0..1 	| 		| The supplier returns in response which offer is applicable for each room (see [MetaData](https://docs.travelgatex.com/legacy/docs/hotel/methods/metadata/) in order to verify if a supplier implements it).	|
@@ -413,7 +414,7 @@ is closed.
 | @type 				| 1 		| String 	| Service type (SkiPass, Lessons, Meals, Equipment, Ticket, Transfers or Gala).	|
 | @code 				| 1 		| String 	| Service code.							|
 | @description 				| 1 		| String 	| Service description.						|
-| @durationType 			| 1 		| String 	|  Date of service. If range= date range is set, then the element "RangeDates" is returned - Open= not restricted by date. Elements "quantity" and "unit" are returned to specify type and quantity.|
+| @durationType 			| 1 		| String 	|  Date of service. If durationType = Range, then date range is set and the element "RangeDates" is returned. If durationType = Open, not restricted by date. Elements "quantity" and "unit" are returned to specify type and quantity.|
 | @quantity 				| 1 		| Integer 	| Indicates the quantity of field in the element "unit".		|
 | @unit 				| 0..1 		| String 	| Day or Hour.							|
 | MealPlans/MealPlan/Options /Option/Detail/POIs/POI /Services/Service/RangeDates| 0..1 | | Service date range (Only specified if durationType=Range).	|
@@ -453,7 +454,7 @@ It's the client's resposability to do performance tests in order to determine wh
 
 **BusinessRules:**
 
-BusinessRules uses *optionsQuota*, go to [Common-Elements](/hotel/DSF/Common-Elements) for more
+BusinessRules uses *optionsQuota*, go to [Common-Elements](https://docs.travelgatex.com/legacy/docs/hotel/methods/common-elements/) for more
 information.
 
 This tag will only be used for suppliers availability responses

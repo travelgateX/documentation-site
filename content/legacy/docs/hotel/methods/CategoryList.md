@@ -1,10 +1,11 @@
----
-title: CategoryList
-keywords: hotel, data structure, category list, list
-search: Hotel - Data Structure - CategoryList
-sidebar: mydoc_sidebar
-permalink: /docs/hotel/DSF/CategoryList
----
++++
+title= "CategoryList"
+keywords= "hotel, data structure, category list, list"
+search= "Hotel - Data Structure - CategoryList"
+sidebar= "mydoc_sidebar"
+permalink= "/docs/hotel/DSF/CategoryList"
+weight = 5
++++
 
 
 

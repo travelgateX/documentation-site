@@ -1,10 +1,11 @@
----
-title: RuntimeConfiguration
-keywords: hotel, data structure, run time configuration, time
-search: Hotel - Data Structure - RunTimeConfiguration
-sidebar: mydoc_sidebar
-permalink: /docs/hotel/DSF/RuntimeConfiguration
----
++++
+title= "RuntimeConfiguration"
+keywords= "hotel, data structure, run time configuration, time"
+search= "Hotel - Data Structure - RunTimeConfiguration"
+sidebar= "mydoc_sidebar"
+permalink= "/docs/hotel/DSF/RuntimeConfiguration"
+weight = 20
++++
 
 
 

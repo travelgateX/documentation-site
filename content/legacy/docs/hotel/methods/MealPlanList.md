@@ -1,10 +1,11 @@
----
-title: MealPlanList
-keywords: hotel, data structure, meal plan list , meal, list
-search: Hotel - Data Structure - MealPlanList
-sidebar: mydoc_sidebar
-permalink: /docs/hotel/DSF/MealPlanList
----
++++
+title= "MealPlanList"
+keywords= "hotel, data structure, meal plan list , meal, list"
+search= "Hotel - Data Structure - MealPlanList"
+sidebar= "mydoc_sidebar"
+permalink= "/docs/hotel/DSF/MealPlanList"
+weight = 14
++++
 
 
 
