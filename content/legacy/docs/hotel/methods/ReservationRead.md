@@ -1,10 +1,11 @@
----
-title: ReservationRead
-keywords: hotel, data structure, reservation
-search: Hotel - Data Structure - ReservationRead
-sidebar: mydoc_sidebar
-permalink: /docs/hotel/DSF/ReservationRead
----
++++
+title= "ReservationRead"
+keywords= "hotel, data structure, reservation"
+search= "Hotel - Data Structure - ReservationRead"
+sidebar= "mydoc_sidebar"
+permalink= "/docs/hotel/DSF/ReservationRead"
+weight = 18
++++
 
 
 

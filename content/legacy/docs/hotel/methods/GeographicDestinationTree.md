@@ -1,10 +1,11 @@
----
-title: GeographicDestinationTree
-keywords: hotel, data structure, destination tree, geographic destination tree
-search: Hotel - Data Structure - GeographicDestinationTree
-sidebar: mydoc_sidebar
-permalink: /docs/hotel/DSF/GeographicDestinationTree
----
++++
+title= "GeographicDestinationTree"
+keywords= "hotel, data structure, destination tree, geographic destination tree"
+search= "Hotel - Data Structure - GeographicDestinationTree"
+sidebar= "mydoc_sidebar"
+permalink= "/docs/hotel/DSF/GeographicDestinationTree"
+weight = 10
++++
 
 
 

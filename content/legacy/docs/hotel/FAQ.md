@@ -1,10 +1,11 @@
----
-title: Frequently Asked Questions
-keywords: intro
-search: Hotel - FAQ
-sidebar: mydoc_sidebar
-permalink: /docs/hotel/FAQ
----
++++
+title = "FAQ"
+keywords = "intro"
+search = "Hotel - FAQ"
+sidebar = "mydoc_sidebar"
+permalink = "/docs/hotel/FAQ"
+weight = 4
++++
 
 **How many suppliers can I request in one method?**
 

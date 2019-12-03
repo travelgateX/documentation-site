@@ -1,10 +1,11 @@
----
-title: Valuation
-keywords: hotel, data structure, valuation
-search: Hotel - Data Structure - Valuation
-sidebar: mydoc_sidebar
-permalink: /docs/hotel/DSF/Valuation
----
++++
+title= "Valuation"
+keywords= "hotel, data structure, valuation"
+search= "Hotel - Data Structure - Valuation"
+sidebar= "mydoc_sidebar"
+permalink= "/docs/hotel/DSF/Valuation"
+weight = 22
++++
 
 
 
@@ -98,32 +99,12 @@ Our system allows for a maximum of **180000** milliseconds before the connection
 | @roomCandidateRefId                    | 1          | Integer  | Room candidate Identifier. |
 | @code                                  | 1          | String   | Room code.      |
 | @description                           | 1          | String   | Room description. |
-| Rooms/Room /DailyPrices | 0..1 | 	| Specifies daily price, as long as the supplier returns it in this method (see [MetaData](https://docs.travelgatex.com/legacy/docs/hotel/methods/metadata/) in order to verify if a supplier implements it).	| 
-| Rooms/Room /DailyPrices/DailyPrice | 1..n | | Specifies the price for each day.			|
-| @effectiveDate 			| 1 		| String 	| Start date in which the price becomes effective.		|
-| @expireDate 				| 1 		| String 	| Expiry date of price.						|
-| Rooms/Room /DailyPrices/DailyPrice /Price| 1 | | Day price.					|
-| @currency 				| 1 		| String 	| Currency code.						|
-| @amount 				| 1 		| Decimal 	| Day Amount.							|
-| @binding 				| 1 		| Boolean 	| Identifies if the price is binding (When true, the sale price returned **must** not be less than the price informed. |
-| @commission 				| 1 		| Decimal 	| Commission: -1 = not specified (information available in  contract with the supplier ), 0 = net price, X = % of the commission applied to the amount. |
-| Rooms/Room /DailyRatePlans | 0..1 | | Specifies the daily rate, as long as the supplier returns it in this method (see [MetaData](https://docs.travelgatex.com/legacy/docs/hotel/methods/metadata/) in order to verify if a supplier implements it).  |
-| Rooms/Room /DailyRatePlans/DailyRatePlan | 1..n | | Specifies the rates for each day.		|
-| @effectiveDate 			| 1 		| String 	| Start date in which the rate becomes effective.		|
-| @expireDate 				| 1 		| String 	| Expirty date of rate.			|
-| @code 				| 1 		| String 	| Indicates the supplier's rate code. This code specifies the rate applied to those days.	|
-| @name 				| 0		| String 	| Indicates the supplier's rate name.	|
-| Rooms/Room /Price | 1 | 		| Room price.							|
-| @currency 				| 1 		| String 	| Currency code.						|
-| @amount 				| 1 		| Decimal 	| Room Amount.							|
-| @binding 				| 1 		| Boolean 	| Identifies if is the price is binding (When true the sale price returned **must** not be less than the price informed).|
-| @commission 				| 1 		| Decimal 	| Commission: -1 = not specified (information available in  contract with the supplier ), 0 = net price, X = % of the commission applied to the amount.  |
 | RoomCandidates/RoomCandidate           | 1..n       |          | Room required.  |
 | @id                                    | 1          | Integer  | Id of requested room (starting at 1). |
 | RoomCandidates/RoomCandidate/Paxes/Pax | 1..n       |          | Pax required.   |
 | @age                                   | 1          | Integer  | Passenger age. |
 | @id                                    | 1          | Integer  | Passenger id (starting at 1). |
-| Parameters                             | 0..1       |          | Additional parameters reported in AvailRS. |
+| Parameters                             | 0..1       |          | Additional parameters reported in AvailRS. **If you receive parameters in AvailRS it is mandatory to send them exactly the same as received.** If you don't send exactly the same parameters as received the Valuation could fail. |
 | Parameters/Parameter                   | 0..n       |          | Additional parameter requiring integration. |
 | @key                                   | 1          | String   | Contains keyword/Id to identify a parameter. |
 | @value                                 | 1          | String   | Contains parameter value. |
@@ -187,12 +168,12 @@ Our system allows for a maximum of **180000** milliseconds before the connection
 | CancelPenalties/CancelPenalty/Penalty     | 1          |          | Contains the value to apply. |
 | @type					    | 1          | String   | Type of possible penalty values: “Noches” (nights) , “Porcentaje” (percentage) ,”Importe” (price value). |
 | @currency				    | 1          | String   | Currency code. |
-| @paymentType                            | 1          | String   | Indicates payment type of penalty. |
+| @paymentType                            | 1          | String   | Indicates payment type of penalty (See full type list at [Lists of Data](https://docs.travelgatex.com/legacy/docs/hotel/methods/listsdata/#payment-types)) . |
 | Remarks 				    | 0..1       | String   | Remarks (see [MetaData](https://docs.travelgatex.com/legacy/docs/hotel/methods/metadata/) in order to verify if a supplier implements it).       |
 | PaymentOptions			    | 0..1       | String   | Payment Types allowed by the supplier. This tag  is mandatory only if payment type is different than MerchantPay. |
-| PaymentOptions/Cards			    | 1		 | 	    | List of cards allowed. |
+| PaymentOptions/Cards			    | 0..1		 | 	    | List of cards allowed. |
 | PaymentOptions/Cards/Card		    | 1..n       |          | Details of card. |
-| @code   				    | 1          | String   | Code card. See in CardInfo the possible values, provided in Detailed Description (VI,AX,BV,CA...) |
+| @code   				    | 1          | String   | Code card. Se the full list of card codes at [Lists of Data](https://docs.travelgatex.com/legacy/docs/hotel/methods/listsdata/#credit-cards) |
 | Fees					    | 0..1       | 	    | Contains a list of fees. |
 | Fees/Fee				    | 1..n       |          | Contains details of the fee. |
 | @includedPriceOption			    | 1		 | Boolean  | Indicates if the fee is included or not in the final price (value indicated in the node Price in ValuationRS). |
@@ -219,38 +200,6 @@ In that case, you will have 30 minutes to complete the booking, if  not, you wil
 **Status:**
 
 The valuation response depends if the parameter <OnRequest> is set: if it is set as false, the integration will filter this option.  If the supplier provides us a new status in ValuationRS, then we return an error because the supplier changed the status option.
-
-
-
-**CardInfo:**
-
-| **Codes** | **Names**
-| --------- | ------------------------- |
-| VI        | Visa			|
-| AX        | American Express		|
-| BC        | BC Card			|
-| CA        | MasterCard		|
-| CB        | Carte Blanche		|
-| CU        | China Union Pay		|
-| DS        | Discover			|
-| DC        | Diners Club		|
-| T         | Carta Si			|
-| R         | Carte Bleue		|
-| N         | Dankort			|
-| L         | Delta			|
-| E         | Electron			|
-| JC        | Japan Credit Bureau	|
-| TO        | Maestro			|
-| S         | Switch			|
-| EC        | Electronic Cash		|
-| EU        | EuroCard			|
-| TP        | Universal air travel card |
-| OP        | Optima			|
-| ER        | Air Canada/RnRoute	|
-| XS        | Access			|
-| O         | Others			|
-
-
 
 **CancelPenalty:**
 

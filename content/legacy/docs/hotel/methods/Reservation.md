@@ -1,10 +1,11 @@
----
-title: Reservation
-keywords: hotel, data structure, reservation
-search: Hotel - Data Structure - Reservation
-sidebar: mydoc_sidebar
-permalink: /docs/hotel/DSF/Reservation
----
++++
+title= "Reservation"
+keywords= "hotel, data structure, reservation"
+search= "Hotel - Data Structure - Reservation"
+sidebar= "mydoc_sidebar"
+permalink= "/docs/hotel/DSF/Reservation"
+weight = 16
++++
 
 
 
@@ -132,7 +133,7 @@ is closed.
 | Parameters/Parameter				| 1..n    	|		| List of parameters.					|
 | @key     					| 1  		| String	| Contains the keyword/Id to identify a parameter.	|
 | @value   					| 1  		| String	| Contains the value of the parameter.			|
-| DeltaPrice    				| 0..1    	|		| Indicates price variation permitted by the client (see [MetaData](https://docs.travelgatex.com/legacy/docs/hotel/methods/metadata/) in order to verify if a supplier implements it).	|
+| DeltaPrice    				| 0..1    	|		| Indicates price variation permitted by the client (see [MetaData](https://docs.travelgatex.com/legacy/docs/hotel/methods/metadata/) in order to verify if a supplier implements it). You can find more information with examples at [the bottom of this page](https://docs.travelgatex.com/legacy/docs/hotel/methods/reservation/#deltaprice-description).	|
 | @amount  					| 0..1		| String	| Amount (in the currency returned into the option) that is accepted by the client to be higher than the valuation price. |
 | @percent 					| 0..1		| String	| Percentage accepted by the client to be higher than the valuation price.	|
 | @applyBoth					| 1  		| Boolean	| Indicates that the range between valuation price and the new price does not exceed the amount and/or porcentage indicated by the client.  |
@@ -152,7 +153,7 @@ is closed.
 | @commission					| 1  		| Decimal	| Commission (-1 = not specified, 0 = net price, X = % of the commission applied to the amount.	|
 | ResGuests     				| 1      	|		| 				|
 | ResGuests/Guests				| 1      	|		| List of passengers.					|
-| ResGuests/Guests/Guest			| 1..n    	|		| Detail of each passenger.				|
+| ResGuests/Guests/Guest			| 1..n    	|		| Detail of each passenger.	If the holder is also a passenger you need to add his/hers information in the gest list.			|
 | @roomCandidateId				| 1  		| Integer	| Room candidate Identifier				|
 | @paxId   					| 1  		| Integer	| Passenger id (starting at 1).				|
 | ResGuests/Guests/Guest/Title		| 1 	 	| String	| Guest's title.						|
@@ -254,7 +255,7 @@ can have four values: OK, RQ, CN and UN.
     available, so the reservation goes into a waiting list (Request).
 -   *CN:* The reservation was completed but due to a supplier error or a timeout
     the system will immediately cancel the reservation to prevent further possible errors.
--   *UN:* The reservation process through TGX was completed but due to a supplier error or a timeout, the reservation status is unknown.
+-   *UN:* The reservation was completed but due to a supplier error or a timeout, the reservation status is unknown.
    It is the client's responsibility to check if the booking is OK.
 
 
