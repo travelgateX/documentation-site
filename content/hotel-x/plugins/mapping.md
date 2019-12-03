@@ -111,10 +111,10 @@ The file should be in the following format:
 * **File Name**: [Context Source]\_[Context Destination]\_amenity\_map.csv
 
   * Context Source: it corresponds to the code in desired context
+  
+  * Context Destination: it corresponds to the supplier context 
 
-  * Context Destination: it corresponds to the supplier code
-
-    * 1 file for each supplier
+    * Only one file for each supplier should be uploaded
 
 * **Header Row**:  Code Destination, Code Source
 
