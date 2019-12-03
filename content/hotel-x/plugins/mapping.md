@@ -96,6 +96,59 @@ Code Source, Code Destination
 
 ### Other Maps in Booking API
 
+#### Amenity mapping
+
+This plugin allows to convert the amenity codes from supplier context to a desired context. 
+
+Our map formats share a common structure. In order to load your maps you just need to follow the instructions below:
+
+##### File Format
+
+The file should be in the following format:
+
+* **Encoding**: UTF-8
+
+* **File Name**: [Context Source]\_[Context Destination]\_amenity\_map.csv
+
+  * Context Source: it corresponds to the code in desired context
+
+  * Context Destination: it corresponds to the supplier code
+
+    * 1 file for each supplier
+
+* **Header Row**:  Code Destination, Code Source
+
+  * Context Destination: it corresponds to the codes in desired context
+
+  * Context Source: it corresponds to the supplier codes    
+
+* **Delimiter**: Comma (",")
+
+* **Directory**: /F[folder code]\_[unique code]/HotelX\_[unique code]/Maps/Amenity/
+
+##### File Names
+
+The map files must have the same name structure as follows - you need create one file for any supplier context.
+
+[Context Source]\_[Context Destination]\_amenity\_map.csv|
+
+
+##### Sample Files
+
+Let's suppose we have the following client code and supplier code, then we need to create one file for each supplier we have
+* Client code: EXG
+
+* Supplier Code: GTRM2
+
+**Name**: EXG\_GTRM2\_amenity\_map.csv
+
+
+```csv
+Code Destination,Code Source
+FreeParking,free_parking
+FreeInternet,free_internet
+```
+
 #### Map by provider hotel
 
 This plugin allows to convert the room codes in supplier context but by hotel. Is the same plugin (room map) explained before but it offers the possibility to map by supplier and hotel. 
@@ -132,7 +185,7 @@ How you can see, in the same file are combined maps with 3 values and maps with 
 
 ### How applies
 
-What happens if you use the combined plugin(room map and room map by provider hotel)? In this case, all the rooms with provider hotel map will be mapped to your context (the context put in the first value of file's name (client context)) and the room codes that don't have provider hotel map, will be mapped with provider map code (in case that exist). If no map codes are found, the option can be discarded (this rule is configurable). 
+What happens if you use the combined plugin (room map and room map by provider hotel)? In this case, all the rooms with provider hotel map will be mapped to your context (the context put in the first value of file's name (client context)) and the room codes that don't have provider hotel map, will be mapped with provider map code (in case that exist). If no map codes are found, the option can be discarded (this rule is configurable). 
 
 ### Execution example
 
