@@ -1,5 +1,5 @@
 {
-    "scripts": {
-      "up": "hugo -D server --disableFastRender"
-    }
+  "scripts": {
+    "up": "hugo -D server --disableFastRender"
   }
+}
