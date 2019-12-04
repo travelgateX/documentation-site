@@ -1,8 +1,8 @@
 +++
-title = "Integrate"
-pagetitle = "How to integrate with HotelX booking process"
-description = "How to integrate with HotelX booking process"
-icon = "fa-database"
+title = "Bookingflow"
+pagetitle = "HotelX Bookingflow"
+description = ""
+icon = "bf-list"
 weight = 2
 alwaysopen = false
 isDirectory=false

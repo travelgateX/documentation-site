@@ -1,13 +1,13 @@
 +++
-title = "How-to guides"
-pagetitle = "HotelX how-to guides"
+title = "Authorization"
+pagetitle = "HotelX Authorization"
 description = ""
-icon = "fa-list"
+icon = "auth-list"
 weight = 4
 alwaysopen = false
 isDirectory=false
 +++
 
-## The guides
+## Authorization
 
 {{%custom-children%}}
