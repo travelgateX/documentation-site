@@ -2,7 +2,7 @@
 title = "Stats"
 pagetitle = "Gain control over your performance"
 description = ""
-weight = 4
+weight = 13
 alwaysopen = false
 isDirectory = false
 +++

@@ -2,7 +2,7 @@
 title = "MappeaX"
 pagetitle = ""
 description = ""
-weight = 6
+weight = 15
 alwaysopen = false
 isDirectory = false
 hidden = true
