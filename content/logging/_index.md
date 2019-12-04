@@ -2,7 +2,7 @@
 title = "Logging"
 pagetitle = "Gain control over your performance"
 description = ""
-weight = 4
+weight = 12
 alwaysopen = false
 isDirectory = false
 +++

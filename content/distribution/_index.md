@@ -2,7 +2,7 @@
 title = "Distribution-X"
 pagetitle = "Distribution-X API"
 description = "A comprehensive Business Rules Engine, right where you need it. When you need it!."
-weight = 9
+weight = 7
 alwaysopen = false
 isDirectory = false
 hidden = true

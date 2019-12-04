@@ -1,8 +1,8 @@
 +++
-title = "Legacy"
-pagetitle = "Legacy"
+title = "Legacy API"
+pagetitle = "Legacy API"
 description = "Legacy system documentation"
-weight = 9
+weight = 4
 alwaysopen = false
 isDirectory = false
 +++

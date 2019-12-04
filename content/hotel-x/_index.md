@@ -2,7 +2,7 @@
 title = "Hotel-X"
 pagetitle = "Hotel-X API"
 description = "Hotel-X: NextGen Hotel Search API"
-weight = 4
+weight = 3
 alwaysopen = false
 aliases = ["/hotelx"]
 isDirectory = false
