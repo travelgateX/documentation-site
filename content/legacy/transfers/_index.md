@@ -1,10 +1,15 @@
 +++
-title = "XML Travelgate Legacy API documentation"
-pagetitle = "XML Travelgate Legacy API documentation"
+title = "Transfers API"
+pagetitle = "Transfers API"
 description = "Read documentation on diferent Legacy APIs"
 icon = "fa-list" 
-weight = 1
+weight = 9
 alwaysopen = false
+hidden = true
 +++
 
 {{%custom-children%}}
+
+
+
+

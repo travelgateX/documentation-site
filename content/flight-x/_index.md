@@ -2,7 +2,7 @@
 title = "Flight-X"
 pagetitle = "Flight-X"
 description = "NDC API for flight shopping and booking"
-weight = 11
+weight = 10
 alwaysopen = false
 isDirectory = false
 +++
