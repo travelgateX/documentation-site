@@ -9,11 +9,11 @@ alwaysopen = false
 
 Vcc Gen is an optional plugin that adds the possibility to create a virtual credit card at Book step, in order to pay the reservation's import with it.
 
-## Vcc Gen {#vccgen}
+## Virtual Credit Card Generator (Vcc Gen) {#vccgen}
 
 ### Goals
 
-The Vcc Gen plugin **creates a virtual credit card** with an activation and expiration date choosed by the client, so he will be using this VCC instead of a regular credit card. The client must also indicate the token of the virtual credit card. It returns in the response, the information of the payment card just created, even if the Book step has gone wrong. This information includes the holder, credit card number, CVC, expire date and the payment card type (for instance `VI`). It also returns the source or the supplier that has created this virtual credit card.
+The Vcc Gen plugin **creates a virtual credit card** with an activation and expiration date chosen by the client. The client must also send the token for the virtual credit card. The service will return the information of the newly created payment card  in the response, even if the Book step has failed. This information includes the holder name, credit card number, CVC, expiration date and the card type (for instance `VI`) **(TODO: list of available card types)**. It also returns the source or the supplier that has created this virtual credit card.
 
 You can apply rules through the genvcc.csv configuration file, in order to use or not the a certain vcc, depending on the file configuration and the request parameters. _More details regarding configuration below_.
 
