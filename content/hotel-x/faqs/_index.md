@@ -3,7 +3,7 @@ title = "FAQs"
 pagetitle = "HotelX Frequendly Asked Questions"
 description = "Do you have specific questions about HotelX? Check out the FAQs"
 icon = "fa-question-circle"
-weight = 7
+weight = 3
 alwaysopen = false
 isDirectory = false
 +++ 
