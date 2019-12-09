@@ -3,7 +3,7 @@ title = "Quotas & Limits"
 pagetitle = "Quotas & Limits"
 description = ""
 icon = "fa-balance-scale"
-weight = 3
+weight = 6
 alwaysopen = false
 +++
 

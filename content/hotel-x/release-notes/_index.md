@@ -1,9 +1,9 @@
 +++
 title = "Release Notes"
-pagetitle = "New Updates & Releases"
-description = "New Updates & Releases"
+pagetitle = "Release Notes"
+description = "Release Notes"
 icon="fa-map"
-weight = 6
+weight = 4
 alwaysopen = false
 isDirectory = false
 tags = ["release-notes"]

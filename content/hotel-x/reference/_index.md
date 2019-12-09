@@ -1,8 +1,8 @@
 {
-  "title": "Reference",
+  "title": "API Reference",
   "hideGithubLink": true,
-	"pagetitle": "Reference Documentation",
-  "description": "Reference Documentation",
+	"pagetitle": "API Reference",
+  "description": "API Reference",
   "weight": 2,
   "icon": "fa-book",
   "alwaysopen": false
