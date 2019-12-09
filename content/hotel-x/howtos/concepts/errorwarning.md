@@ -3,7 +3,7 @@ title = "Error and Warning"
 pagetitle = ""
 description = "List of errors and warnings in HotelX"
 icon = "fa-exclamation-triangle"
-weight = 1
+weight = 4
 alwaysopen = false
 +++
 

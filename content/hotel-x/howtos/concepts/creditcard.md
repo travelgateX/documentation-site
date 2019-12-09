@@ -3,7 +3,7 @@ title = "List of credit cards"
 pagetitle = ""
 description = "List of supported credit cards in HotelX"
 icon = "fa-credit-card"
-weight = 1
+weight = 3
 alwaysopen = false
 +++
 

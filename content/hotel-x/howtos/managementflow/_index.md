@@ -3,7 +3,7 @@ title = "Managementflow"
 pagetitle = "HotelX Managemengflow"
 description = ""
 icon = "manage-list"
-weight = 4
+weight = 6
 alwaysopen = false
 isDirectory=false
 +++

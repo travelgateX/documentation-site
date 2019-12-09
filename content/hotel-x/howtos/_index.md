@@ -1,11 +1,11 @@
 +++
 title = "How-to guides"
-pagetitle = "HotelX how-to guides"
-description = ""
+pagetitle = "How-to guides"
+description = "How-to guides"
 icon = "fa-list"
-weight = 4
+weight = 2
 alwaysopen = false
-isDirectory=false
+isDirectory=true
 +++
 
 ## The guides

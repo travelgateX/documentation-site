@@ -3,7 +3,7 @@ title = "Bookingflow"
 pagetitle = "HotelX Bookingflow"
 description = ""
 icon = "bf-list"
-weight = 2
+weight = 5
 alwaysopen = false
 isDirectory=false
 +++

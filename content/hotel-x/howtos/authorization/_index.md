@@ -3,7 +3,7 @@ title = "Authorization"
 pagetitle = "HotelX Authorization"
 description = ""
 icon = "auth-list"
-weight = 4
+weight = 3
 alwaysopen = false
 isDirectory=false
 +++

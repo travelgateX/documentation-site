@@ -3,7 +3,7 @@ title = "Ranking"
 pagetitle = "Rank hotels"
 description = "Learn about how to rank hotels"
 icon = "fa-sort-amount-asc"
-weight = 6
+weight = 7
 alwaysopen = false
 +++
 

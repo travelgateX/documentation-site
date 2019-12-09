@@ -3,7 +3,7 @@ title = "Management Flow"
 pagetitle = ""
 description = "Learn about Management Flow. Cancellations and Booking List"
 icon = "fa-calendar-times-o"
-weight = 4
+weight = 5
 alwaysopen = false
 +++
 
