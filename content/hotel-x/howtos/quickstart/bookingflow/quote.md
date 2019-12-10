@@ -3,7 +3,7 @@
 "pagetitle": "Booking process - Quote",
 "description": "How to valuate an availability option",
 "icon": "fa-exchange",
-"weight": 4,
+"weight": 2,
 "alwaysopen": false,
 "default_ak": "64780338-49c8-4439-7c7d-d03c2033b145",
 "default_user": "",
@@ -28,10 +28,12 @@
 Quote is an operation used to assess and valuate the rate before the actual booking. It returns the same information as the Search response for a hotel rate with up-to-date price, along with additional information regarding the rate: rate breakdown and cancellation policies.
 
 ## Advanced criteria
-It explains different parameters that can be set up in the request (it indicates which ones are mandatory)
+There are different parameters that can be set up in the request (The below ones are mandatory)
 
 - **optionRefId**: Identifier of the option chosen in Search. Mandatory
 - **language**: Language to be used in the request
+
+In the Query Variables, you must modify the optionRefId with the option id value returned in the search response and send the query.
 
 ## How to request 
 Here you can find 2 examples of how to valuate an availability option, one for 1 room and the other one for multi-room. </br>

@@ -1,9 +1,9 @@
 +++
 title = "Plugins"
-pagetitle = "HotelX Plugins"
+pagetitle = "Hotel-X Plugins"
 description = "Additional logic to your App"
-icon = "fa-plug"
-weight = 7
+icon = "fa-puzzle-piece"
+weight = 5
 alwaysopen = false
 isDirectory = false
 +++

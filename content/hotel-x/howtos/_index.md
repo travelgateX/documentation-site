@@ -1,13 +1,13 @@
 +++
-title = "How-to guides"
-pagetitle = "How-to guides"
+title = "How-to Guides"
+pagetitle = " Hotel-X How-to Guides"
 description = "How-to guides"
-icon = "fa-list"
-weight = 1
+icon = "fa-laptop"
+weight = 2
 alwaysopen = false
 isDirectory=true
 +++
 
-## The guides
+## How-to Guides
 
 {{%custom-children%}}

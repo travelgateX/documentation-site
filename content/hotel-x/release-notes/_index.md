@@ -2,7 +2,7 @@
 title = "Release Notes"
 pagetitle = "Release Notes"
 description = "Release Notes"
-icon="fa-map"
+icon="fa-newspaper-o"
 weight = 4
 alwaysopen = false
 isDirectory = false
