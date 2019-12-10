@@ -122,6 +122,10 @@ Our system allows for a maximum of **180000** milliseconds before the connection
         <Status>OK</Status>
         <Price currency = "EUR" amount = "36.20" binding = "false" commission = "-1"/>
         <CancelPenalties nonRefundable = "false">
+		    <CancelPenalty>
+                <HoursBefore>72</HoursBefore>
+                <Penalty type = "Importe"  paymentType = "MerchantPay" currency = "EUR">25.00</Penalty>
+            </CancelPenalty>
             <CancelPenalty>
                 <HoursBefore>48</HoursBefore>
                 <Penalty type = "Importe"  paymentType = "MerchantPay" currency = "EUR">72.40</Penalty>
@@ -216,6 +220,23 @@ Booking cancellation penalties are affected by the following elements:
 > -   *Importe:* indicates the exact amount payable
 
 -   **Currency:** currency of the penalty fee.
+
+In this example you can see 2 *CancelPenalty* with different *HoursBefore*:
+
+~~~xml
+<CancelPenalties nonRefundable = "false">
+    <CancelPenalty>
+        <HoursBefore>72</HoursBefore>
+        <Penalty type = "Importe" paymentType = "MerchantPay" currency = "EUR">25.00</Penalty>
+    </CancelPenalty>
+    <CancelPenalty>
+        <HoursBefore>48</HoursBefore>
+        <Penalty type = "Importe" paymentType = "MerchantPay" currency = "EUR">72.40</Penalty>
+    </CancelPenalty>
+</CancelPenalties>
+~~~
+
+This means that depending on when you cancel the booking you should pay one penalty or the other, but not both. If you cancel 24 hours before the check-in you should pay 72.40€
 
 **Final buying price:** 
 
