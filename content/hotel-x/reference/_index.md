@@ -3,7 +3,7 @@
   "hideGithubLink": true,
 	"pagetitle": "API Reference",
   "description": "API Reference",
-  "weight": 2,
+  "weight": 3,
   "icon": "fa-book",
   "alwaysopen": false
 }
