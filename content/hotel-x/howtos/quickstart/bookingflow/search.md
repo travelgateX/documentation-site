@@ -1,9 +1,9 @@
 {
 "title": "Search",
 "pagetitle": "Search",
-"description": "Search step",
+"description": "How to check availability",
 "icon": "fa-search-plus",
-"weight": 3,
+"weight": 1,
 "alwaysopen": false,
 "default_ak": "64780338-49c8-4439-7c7d-d03c2033b145",
 "default_user": "",
@@ -54,10 +54,14 @@
         ]
 }
 
-Search is the first operation in the booking flow. It allows to check which available rooms there are for the requested hotels or for the hotels in the requested destination for a given range of dates and for a given pax distribution.
+Search is the first operation in the booking flow. It allows to check which available rooms there are for the requested hotels or for the hotels in the requested destination for a given range of dates and for a given pax distribution. The operation could search over one or more sellers accesses.
+
+Depending seller, search operations involves use supplier's cache.
+
+It returns a list of available options according to your search criteria.
 
 ## Advanced criteria
-It explains different parameters that can be set up in the request 
+There are  different parameters that can be set up in the request 
 Mandatory
 
 - CheckIn: check-in date for the booking. _Format: YYYY-MM-DD_
@@ -70,7 +74,7 @@ Mandatory
 _* Hotels and Destinations parameters are exclusive between them_
 
 ## How to request
-There are different ways to request a Search. Below are shown different examples for different casuistry:
+There are different ways to request a Search. Below are shown different examples for different scenarios:
 
 {{% graphiql-tabs %}}
 

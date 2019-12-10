@@ -1,10 +1,10 @@
 {
   "title": "API Reference",
   "hideGithubLink": true,
-	"pagetitle": "API Reference",
+	"pagetitle": " Hotel-X API Reference",
   "description": "API Reference",
   "weight": 3,
-  "icon": "fa-book",
+  "icon": "fa-file-code-o",
   "alwaysopen": false
 }
 Our reference pages explain all aspects of our GraphQL schema.

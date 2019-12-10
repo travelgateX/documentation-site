@@ -1,9 +1,9 @@
 +++
-title = "Booking flow"
-pagetitle = "Booking flow"
+title = "Booking Flow"
+pagetitle = "Hotel-X Booking Flow"
 description = ""
-icon = "bf-list"
-weight = 5
+icon = "bf-exchange"
+weight = 2
 alwaysopen = false
 isDirectory=false
 +++
