@@ -1,6 +1,6 @@
 +++
 title = "Release Notes"
-pagetitle = "Release Notes"
+pagetitle = "Hoetl-X Release Notes"
 description = "Release Notes"
 icon="fa-newspaper-o"
 weight = 4
