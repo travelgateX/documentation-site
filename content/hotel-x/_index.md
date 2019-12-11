@@ -1,6 +1,6 @@
 +++
-title = "Hotel-X: Release Notes"
-pagetitle = "Hotel-X Release Notes"
+title = "Hotel-X"
+pagetitle = "Hotel-X"
 description = "Hotel-X: NextGen Hotel Search API"
 weight = 3
 alwaysopen = false
