@@ -1,5 +1,5 @@
 +++
-title = "Release Notes"
+title = "Hotel-X: Release Notes"
 pagetitle = "Hotel-X Release Notes"
 description = "Hotel-X: NextGen Hotel Search API"
 weight = 3
