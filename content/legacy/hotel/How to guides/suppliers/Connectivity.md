@@ -4,7 +4,7 @@ keywords= "connectivity, supplier, hotel"
 search= "Hotel - supplier"
 sidebar= "mydoc_sidebar"
 permalink = "/docs/hotel/supplier/connectivity"
-weight = 2
+weight = 3
 +++
 
 For connectivities we will use a POST request to the suppliers system. 
@@ -18,7 +18,7 @@ The headers we will use to send the POST request are:
 | Accept-Encoding | gzip      |
 | Connection | Keep-Alive      |
 
-The different methods from our API can be sent to 1 unique endpoint or to different enpoints. These endpoints will be set in the [configuration](/legacy/docs/hotel/methods/suppliers/configuration/) TravelgateX receives from the buyer in each request. Endpoints have to be **https** for **Reservation**, **Cancel**, **ReservationRead** and **ReservationList**, for **other request** they can be **http or https**.
+The different methods from our API can be sent to 1 unique endpoint or to different enpoints. These endpoints will be set in the [configuration](/legacy/hotel/how-to-guides/suppliers/configuration/) TravelgateX receives from the buyer in each request. Endpoints have to be **https** for **Reservation**, **Cancel**, **ReservationRead** and **ReservationList**, for **other request** they can be **http or https**.
 
 ### Correlation endpoints
 
