@@ -4,7 +4,7 @@ keywords= "errors, supplier, hotel"
 search= "Hotel - supplier"
 sidebar= "mydoc_sidebar"
 permalink = "/docs/hotel/supplier/configuration"
-weight = 3
+weight = 4
 +++
 
 TravelgateX's API implements an element to display errors in every method response.

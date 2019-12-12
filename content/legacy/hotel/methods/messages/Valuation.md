@@ -122,7 +122,7 @@ Our system allows for a maximum of **180000** milliseconds before the connection
         <Status>OK</Status>
         <Price currency = "EUR" amount = "36.20" binding = "false" commission = "-1"/>
         <CancelPenalties nonRefundable = "false">
-		    <CancelPenalty>
+            <CancelPenalty>
                 <HoursBefore>72</HoursBefore>
                 <Penalty type = "Importe"  paymentType = "MerchantPay" currency = "EUR">25.00</Penalty>
             </CancelPenalty>

@@ -4,7 +4,7 @@ keywords= "configuration, supplier, hotel"
 search= "Hotel - supplier"
 sidebar= "mydoc_sidebar"
 permalink = "/docs/hotel/supplier/configuration"
-weight = 1
+weight = 2
 +++
 
 A Configuration element with the credentials, endpoints and extra needed parameters by the supplier will be received in the request from the buyer and will be sent to the supplier. In this configuration TravelgateX will receive the endpoints needed to send the request to the supplier (you can see the correlation between methods and enpoints used in the [connectivity](/legacy/docs/hotel/methods/suppliers/connectivity/) page).

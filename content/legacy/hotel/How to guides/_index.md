@@ -5,10 +5,8 @@ description = "How to guides"
 icon = "fa-list" 
 weight = 2
 alwaysopen = false
-hidden = true
+hidden = false
 +++
-
-{{%wip%}}
 
 {{%custom-children%}}
  
