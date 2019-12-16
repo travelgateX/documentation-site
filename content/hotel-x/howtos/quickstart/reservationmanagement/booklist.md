@@ -3,7 +3,7 @@
 "pagetitle": "Booking process - Booking List",
 "description": "How to request for booking detail",
 "icon": "fa-list",
-"weight": 6,
+"weight": 1,
 "alwaysopen": false,
 "default_ak": "64780338-49c8-4439-7c7d-d03c2033b145",
 "default_user": "",

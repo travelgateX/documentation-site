@@ -7,7 +7,9 @@ weight = 1
 alwaysopen = false
 +++
 
-On this page you will learn more about Core Entities used in HotelX. You can also refer to the overarching [core concepts that apply to all TravelgateX APIs](/getting-started/concepts/). 
+Previously, we introduced an overarching definition of the main Core Entities applying to all Travelgate-X APIs. [core concepts that apply to all TravelgateX APIs](/getting-started/concepts/). 
+
+Here, we want to dig in further on how those concepts are applied to Hotel-X API.
 
 ### Supplier
 
@@ -46,7 +48,7 @@ A party that buys accommodation services through Hotel-X API implementation.`Cli
 
 * Room Codes 
 
-With our built-in solution, you are able to choose the context that you wish to use when requesting a HotelX operation. For example, if you are a `Buyer`, you can [map](/hotel-x/plugins/mappings) your context against your Supplier contexts.
+With our built-in solution, you are able to use your own context when requesting a Hotel-X operation. If you are a `Buyer`, you can map your context against your Supplier contexts.
 
 Should you be using the aggregator mode, we recommend that you use you own `Context`- in doing so, all supplier mappings will be solved/unified.
 
