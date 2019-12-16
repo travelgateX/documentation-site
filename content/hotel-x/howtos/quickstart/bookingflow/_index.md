@@ -2,7 +2,7 @@
 title = "Booking Flow"
 pagetitle = "Hotel-X Booking Flow"
 description = ""
-icon = "bf-exchange"
+icon = "fa-exchange"
 weight = 2
 alwaysopen = false
 isDirectory=false

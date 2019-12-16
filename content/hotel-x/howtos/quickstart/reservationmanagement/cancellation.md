@@ -3,7 +3,7 @@ title = "Cancellation"
 pagetitle = "Booking process - Cancellation"
 description = "How to cancel a booking"
 icon = "fa-calendar-times-o"
-weight = 7
+weight = 2
 alwaysopen = false
 +++
 

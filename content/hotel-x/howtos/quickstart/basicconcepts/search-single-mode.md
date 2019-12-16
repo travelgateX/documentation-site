@@ -1,13 +1,14 @@
 +++
-title = "Search Single Mode & Multi Mode"
-pagetitle = "Search, Quote and Book"
-description = "Learn about Transactional Booking flow. Search, Quote and Confirm Reservation"
+title = "Single Mode & Multi Mode"
+pagetitle = "Single Mode & Multi Mode"
+description = "Learn about search Multi Mode"
 icon = "fa-search-plus"
 weight = 3
 alwaysopen = false
 +++
 
-On this page you will learn about **Transactional Booking Flow** to Search, quote and confirm a reservation. You will also see the difference between the **Search Single Mode** VS **Search Multi Mode**.
+**Search Multi Mode** is one of the main features of Hotel-X, even if you can use **Search Multi Mode** in Hotel-X
+
 
 ## Search Single Mode
 

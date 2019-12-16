@@ -8,6 +8,9 @@ alwaysopen = false
 isDirectory=false
 +++
 
-## Managementflow
+Management operations allows you to operate over the bookings performed with a specific supplier.
 
+There are two main operations to manage and control bookings:
+
+## Reservation Management
 {{%custom-children%}}
