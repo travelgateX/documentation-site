@@ -5,15 +5,14 @@
 "icon": "fa-search-plus",
 "weight": 1,
 "alwaysopen": false,
-"default_ak": "64780338-49c8-4439-7c7d-d03c2033b145",
 "default_user": "",
 "gists": [
     {
         "n":"1 Room - 2 Adults",
-        "g":"77c80792a415b1be6c92b474f2949d84",
+        "g":"765fa8dbddd6a17571feb012f9c876bc",
         "o":["graphiql"],
-        "u":"tgx-bot",
-        "ak":"64780338-49c8-4439-7c7d-d03c2033b145"
+        "u":"rubencaballero",
+        "ak":"8626cf56-e364-4fd1-4fe0-311e23ac6355"
     }, 
     {
         "n":"1 Room - 2 Adults 1 Child",
