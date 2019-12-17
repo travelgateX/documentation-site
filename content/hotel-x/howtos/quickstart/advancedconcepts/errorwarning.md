@@ -55,3 +55,15 @@ This type of warnings contains the supplier original error codes. This type of e
 | *According to supplier error code* |  206  | *According to the case* | The Supplier doesn’t accept the dates RQ.|
 | *According to supplier error code* |  207  | *According to the case* | The Supplier doesn’t accept the request RQ.|
 | *According to supplier error code* |  301  | *According to the case* | Option not found in Quote.|
+
+
+### Error 204 - No Results Found
+Error “204 No results found” is a common error that you can receive in the Search Query response. This error means that the product you are trying to obtain is not available.
+
+There are several potential reasons as to why this error occurs:
+
+* The product is not available for the dates in the request.
+* The product is not available for the number of passengers selected in the request.
+* The product is not available for the destination selected in the request.
+
+In case an error of this type is received, you should first contact the supplier directly on a commercial level and check with them whether there should be availability for the product you are trying to obtain with the specific search criteria (dates, passenger quantity, passenger age, destination you have chosen, etc.). In case the supplier confirms that there should be availability but you are still not obtaining it, you should contact our Customer Care department.
