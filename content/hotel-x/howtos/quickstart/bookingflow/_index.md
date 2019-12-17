@@ -145,7 +145,7 @@ isDirectory=false
 
 
 
-In the following steps you will find some query examples in order to perform the booking flow.
+In the following steps you will find the three steps in order to perform the booking flow.
 You can also consult the Schema through our [API playground](https://api.travelgatex.com) besides to launch requests. 
 
 {{% alert theme="warning" %}}
@@ -158,6 +158,8 @@ You can also consult the Schema through our [API playground](https://api.travelg
 In order to help you during the booking process you can find several operations to get static data from the providers. You can find the info on our [Static content page](../../concepts/content/).
 {{% /alert %}}
 
-## The guides
+
+
+## The operations
 
 {{%custom-children%}}

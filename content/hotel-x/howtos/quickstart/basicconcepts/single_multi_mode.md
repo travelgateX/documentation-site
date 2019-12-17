@@ -3,7 +3,7 @@ title = "Single Mode & Multi Mode"
 pagetitle = "Single Mode & Multi Mode"
 description = "Learn about search Multi Mode"
 icon = "fa-search-plus"
-weight = 3
+weight = 2
 alwaysopen = false
 +++
 
