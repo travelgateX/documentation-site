@@ -105,3 +105,31 @@ The structure of the directory should be in the below format, all files should b
 #### Example
 
 * `/F**0**\_**178**/HotelX\_**179**`
+
+
+
+## How to execute a plugin
+
+A [plugin](/hotel-x/plugins/) execution can be specified in any request’s HotelSettingsInput and it must specify in which step it should be executed. The plugin type and name are mandatory in order to identify a plugin instance.
+
+```
+"plugins": {
+
+   "step": PluginStepType,
+
+   "pluginsType": [
+
+    {
+
+     "type": PluginType,
+
+     "name": plugin name (its unique),
+
+     "parameters": []
+
+    }
+
+   ]
+
+  }
+```

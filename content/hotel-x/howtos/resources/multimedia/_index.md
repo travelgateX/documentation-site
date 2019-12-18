@@ -1,5 +1,5 @@
 +++
-title = "MUltimedia"
+title = "Multimedia"
 pagetitle = "Hotel-X Multimedia"
 description = "How-to guides"
 icon = "fa-file-video-o"

@@ -16,42 +16,27 @@
     }, 
     {
         "n":"1 Room - 2 Adults 1 Child",
-        "g":"5ac8995ed02d876cb3cf87fcc47efd3a",
+        "g":"16c1401dff3146bd4685c1a018dce96a",
         "o":["graphiql"],
-        "u":"tgx-bot",
-        "ak":"64780338-49c8-4439-7c7d-d03c2033b145"
+        "u":"rubencaballero",
+        "ak":"8626cf56-e364-4fd1-4fe0-311e23ac6355"
     },
     {
         "n":"2 Rooms - 2 Adults + 2 Adults",
-        "g":"72e51e75ecf971c4e92b4227e88420df",
+        "g":"b5db36ad7084adbdf100c9b4491d7d43",
         "o":["graphiql"],
-        "u":"tgx-bot",
-        "ak":"64780338-49c8-4439-7c7d-d03c2033b145"
+        "u":"rubencaballero",
+        "ak":"8626cf56-e364-4fd1-4fe0-311e23ac6355"
     },
     {
         "n":"2 Rooms - 2 Adults 1 Child + 2 Adults",
-        "g":"12799fd0a67acb73f030b1f9eae10a4e",
+        "g":"f8a762bb1efc34f2ff61dd7929d7aa10",
         "o":["graphiql"],
-        "u":"tgx-bot",
-        "ak":"64780338-49c8-4439-7c7d-d03c2033b145"
-    },
-    {
-        "n":"3 days minimmum stay",
-        "g":"002160e4c2822635ef3b1a3c81b1d44d",
-        "o":["graphiql"],
-        "u":"tgx-bot",
-        "ak":"64780338-49c8-4439-7c7d-d03c2033b145"
-    },
-    {
-        "n":"Destination",
-        "g":"a0370f6041d58b67bf1e32363a968abf",
-        "o":["graphiql"],
-        "u":"tgx-bot",
-        "ak":"64780338-49c8-4439-7c7d-d03c2033b145"
+        "u":"rubencaballero",
+        "ak":"8626cf56-e364-4fd1-4fe0-311e23ac6355"
     }
     
-        ]
-}
+
 
 Search is the first operation in the booking flow. It allows to check which available rooms there are for the requested hotels or for the hotels in the requested destination for a given range of dates and for a given pax distribution. The operation could search over one or more sellers accesses.
 

@@ -44,32 +44,5 @@ However, if you have the same client in different groups, you can set different 
 
 And the last one, settings per [HotelX](/hotel-x/) instance. These settings are in the highest level, in the case that you don't have the client's [settings](/hotel-x/concepts/settings/) and you don't specify them in the request, settings are obtained from HotelX instance, this setting is mandatory.
 
-## How to execute a plugin
 
-A [plugin](/hotel-x/plugins/) execution can be specified in any request’s HotelSettingsInput and it must specify in which step it should be executed. The plugin type and name are mandatory in order to identify a plugin instance.
 
-```
-"plugins": {
-
-   "step": PluginStepType,
-
-   "pluginsType": [
-
-    {
-
-     "type": PluginType,
-
-     "name": plugin name (its unique),
-
-     "parameters": []
-
-    }
-
-   ]
-
-  }
-```
-
-## Develop your own plugin
-
-Plugins are a Go language feature and we are using the [native package](https://golang.org/pkg/plugin/) in order to implement them. Therefore, a plugin is simply a go file that contains a set of functions that we will specify, the interface is yet to be defined.
