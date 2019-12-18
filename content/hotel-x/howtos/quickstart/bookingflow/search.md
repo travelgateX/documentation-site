@@ -35,7 +35,8 @@
         "u":"rubencaballero",
         "ak":"8626cf56-e364-4fd1-4fe0-311e23ac6355"
     }
-    
+ ]
+}
 
 
 Search is the first operation in the booking flow. It allows to check which available rooms there are for the requested hotels or for the hotels in the requested destination for a given range of dates and for a given pax distribution. The operation could search over one or more sellers accesses.
@@ -50,21 +51,14 @@ Mandatory
 
 - CheckIn: check-in date for the booking. _Format: YYYY-MM-DD_
 - CheckOut: check-out date for the booking. _Format YYYY-MM-DD_
-- Hotels*: List of hotel codes 
-- Destinations*: List of destination codes
+- Hotels: List of hotel codes 
 - Occupancies: The occupancy you are requesting for each room.
   - For multi-room bookings, this array will contain multiple elements (rooms). For each room you should specify its own occupancy.
-
-_* Hotels and Destinations parameters are exclusive between them_
 
 ## How to request
 There are different ways to request a Search. Below are shown different examples for different scenarios:
 
 {{% graphiql-tabs %}}
-
-002160e4c2822635ef3b1a3c81b1d44d
-In this availability case, you will not receive results due to the hotel's restriction of minimum stay. In this case, if you change the date range to 3 days or more, you will receive availability
-/002160e4c2822635ef3b1a3c81b1d44d
 
 {{% /graphiql-tabs %}}
 
