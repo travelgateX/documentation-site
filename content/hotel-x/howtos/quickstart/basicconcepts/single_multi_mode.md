@@ -12,7 +12,7 @@ alwaysopen = false
 
 ## Search Single Mode
 
-This mode is used when the client only wants to get options from a single access, for this, the client must indicate in the request the code of the access that they want to use. In the request have to use the access filter, you can find a sample [here](https://graphqlbin.com/n5nXhX):
+This mode is used when the client only wants to get options from a single access, for this, the client must indicate in the request the code of the access that they want to use. In the request have to use the access filter.
 
 ```
 {
@@ -118,7 +118,7 @@ This mode is used when the client only wants to get options from a single access
 
 ## Search Multi Mode
 
-If you don’t have any filter in the request and you have permissions for multimode, the search is multimode. By default, the request is for all the accesses that you have configured in the product, if you want to apply some filter, you have to use the filter and to indicate the rules that you want. Is important to know that you only can use includes or excludes in the same request, but never both in the same request.
+If you don’t have any filter in the request and you have permissions for multimode, the request run for all accesses that you have configured in the product. If you want to apply some filter, you have to use the filter and to indicate the rules that you want. Is important to know that you only can use includes or excludes in the same request, but never both in the same request.
 
 
 <svg class="search_multi_mode" width="617px" height="486px" viewBox="75 50 617 486" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
