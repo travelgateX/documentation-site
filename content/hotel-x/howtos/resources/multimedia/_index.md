@@ -1,7 +1,7 @@
 +++
 title = "Multimedia"
 pagetitle = "Hotel-X Multimedia"
-description = "How-to guides"
+description = ""
 icon = "fa-file-video-o"
 weight = 3
 alwaysopen = false

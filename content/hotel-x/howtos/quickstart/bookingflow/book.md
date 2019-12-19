@@ -1,6 +1,6 @@
 +++
-title = "Book"
-pagetitle = "Booking process - Book"
+title = "Hotel-X Book"
+pagetitle = "Book"
 description = "How to perform a booking"
 icon = "fa-money"
 weight = 3
