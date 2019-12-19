@@ -13,5 +13,5 @@ tags = ["integration-changelog"]
 
 ## 2019-12-18
 {{% release-notes-container type="f" %}}
-- If phone numbers contain the "+" character, it will be deleted
+- Fixed problem with phone numbers starting with '+'
 {{% /release-notes-container %}}
