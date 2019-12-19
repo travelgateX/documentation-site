@@ -1,6 +1,6 @@
 +++
-title = "Settings"
-pagetitle = ""
+title = "Hotel-X Settings"
+pagetitle = "Settings"
 description = "Learn about settings in HotelX"
 icon = "fa-cog"
 weight = 8

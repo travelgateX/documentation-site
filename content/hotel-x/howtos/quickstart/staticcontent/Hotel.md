@@ -1,9 +1,9 @@
 +++
-title = "Static Content"
-pagetitle = "Static Content"
-description = "Learn about how to manage static content data in your site: Hotels, Boards, Categories..."
-icon = "fa-list-alt"
-weight = 2
+title = "Hotel"
+pagetitle = "Hotel-X Hotel"
+description = ""
+icon = "fa-h-square"
+weight = 1
 alwaysopen = false
 +++
 
@@ -11,9 +11,7 @@ alwaysopen = false
 {{< graphiql-styles >}}
 
 
-Supplier static information as Hotel List, Room List, Board List... are returned through our content calls.
 
-We strongly recommend to implement them as sometimes, supplier codes might be different from the ones returned through our API.
 
 ## Hotels
 
@@ -36,50 +34,3 @@ The token allows to request the next page of hotels. The correct way of obtainin
 
 * Hotels
 {{< graphiql-tags tag="div_hotels" >}}
-
-## Destinations
-
-Destinations Query returns a list of static data about destinations for a supplier access. By default, if you don’t set any destination codes, you will receive all the codes. As it is the case with the Query Hotels, you will be able to receive subsequent pages of destinations by filling in the continuation token field. It is possible that you filter by language and you receive the texts only in the language specified by parameter in [DestinationData](/hotel-x/reference/objects/destinationdata/) /texts/languages.
-
-#### Playground Samples
-
-* Destinations
-{{< graphiql-tags tag="div_destinations" >}}
-
-## Boards
-
-Boards Query returns a simple boards map that can include translations to other languages.
-
-#### Playground Samples
-
-* Boards
-{{< graphiql-tags tag="div_boards" >}}
-
-## Rooms
-
-Rooms Query returns a simple rooms map that can include translations to other languages. You can search by room codes, if you don't introduce any room codes, you will receive all of them. The full response is split into pages. By default, the number of rooms in each page is 1000, however, you can choose the size with a value between 100 and 10000.
-
-#### Criteria
-**Mandatory fields**  
-- access-> It represents the access for which you want to receive the room description.  
-
-**Optional fields**  
-- roomCodes-> it allows to filter by room codes  
-- maxSize-> it allows to specify the number of elements per page  
-
-#### Token
-The token allows to request the next page of rooms. The correct way of obtaining multiple pages of rooms is mantaining this field empty for the first execution and request the token field in the response graph. Then, subsequent queries filling in the token field with the value returned in the previous response.
-
-#### Playground Samples
-
-* Rooms
-{{< graphiql-tags tag="div_rooms" >}}
-
-## Categories
-
-Category static data returns a simple categories map that can include translations to other languages.
-
-#### Playground Samples
-
-* Categories
-{{< graphiql-tags tag="div_categories" >}}

@@ -1,5 +1,5 @@
 +++
-title = "GraphQL Schema Changes"
+title = "HotelX GraphQL Schema Changes"
 pagetitle = "GraphQL HotelX API schema changes"
 description = "It includes backwards-compatible changes, schema previews, and upcoming breaking changes."
 weight = 3

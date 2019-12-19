@@ -1,6 +1,6 @@
 +++
-title = "FAQs"
-pagetitle = "Hotel-X Frequendly Asked Questions"
+title = "Hotel-X Frequendly Asked Questions"
+pagetitle = "Frequendly Asked Questions"
 description = "Do you have specific questions about HotelX? Check out the FAQs"
 icon = "fa-question"
 weight = 3
