@@ -1,6 +1,6 @@
 +++
-title = "GraphQL to Rest"
-pagetitle = "Hotel-X GraphQL to Rest"
+title = "Hotel-X GraphQL to Rest"
+pagetitle = "GraphQL to Rest"
 description = ""
 icon = "fa-tachometer"
 weight = 1

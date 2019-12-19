@@ -1,6 +1,6 @@
 +++
-title = "Advanced Concepts"
-pagetitle = "Hotel-X Avanced Concepts"
+title = "Hotel-X Advanced Concepts"
+pagetitle = "Avanced Concepts"
 description = "Understand Hotel-X advanced concepts"
 icon = "fa-list" 
 weight = 6

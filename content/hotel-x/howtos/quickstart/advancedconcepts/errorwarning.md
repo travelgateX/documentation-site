@@ -1,6 +1,6 @@
 +++
-title = "Error and Warning"
-pagetitle = ""
+title = "Hotel-X Errors and Warnings"
+pagetitle = "Errors and Warnings"
 description = "List of errors and warnings in HotelX"
 icon = "fa-exclamation-triangle"
 weight = 4

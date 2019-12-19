@@ -1,7 +1,7 @@
 {
-  "title": "API Reference",
+  "title": "Hotel-X API Reference",
   "hideGithubLink": true,
-	"pagetitle": " Hotel-X API Reference",
+	"pagetitle": "API Reference",
   "description": "API Reference",
   "weight": 2,
   "icon": "fa-file-code-o",

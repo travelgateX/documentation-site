@@ -1,6 +1,6 @@
 +++
-title = "How-to Guides"
-pagetitle = " Hotel-X How-to Guides"
+title = " Hotel-X How-to Guides"
+pagetitle = "How-to Guides"
 description = "To learn the skills you need about Hotel-X"
 icon = "fa-laptop"
 weight = 1
