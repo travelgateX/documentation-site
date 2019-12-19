@@ -1,5 +1,5 @@
 +++
-title = "Hotel-X Plugins"
+title = "Plugins"
 pagetitle = "Plugins"
 description = "Additional logic to your App"
 icon = "fa-puzzle-piece"

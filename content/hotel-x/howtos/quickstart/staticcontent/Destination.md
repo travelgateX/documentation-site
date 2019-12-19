@@ -1,5 +1,5 @@
 +++
-title = "Hotel-X Destination"
+title = "Destination"
 pagetitle = "Destination"
 description = "Learn about how to manage static content data in your site: Hotels, Boards, Categories..."
 icon = "fa-street-view"

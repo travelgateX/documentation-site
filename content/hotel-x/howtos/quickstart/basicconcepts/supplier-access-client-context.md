@@ -1,5 +1,5 @@
 +++
-title = "Hotel-X Supplier, Access, Client and Context"
+title = "Supplier, Access, Client and Context"
 pagetitle = "Supplier, Access, Client and Context"
 description = "Learn about entities used in HotelX"
 icon = "fa-exchange"
