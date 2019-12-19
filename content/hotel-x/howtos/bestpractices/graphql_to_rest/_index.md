@@ -18,4 +18,4 @@ To implement this feature, please follow below steps:
 3. Test a sample call for every request using the header
 4. Enjoy the performance{{% alert theme="warning" %}}
 
-{{% alert theme="info" %}} Please take a look at our blog [blog](https://blog.travelgatex.com/blog/how-to-improve-graphql-performance/){{% /alert %}}
+{{% alert theme="info" %}} Please take a look at our [blog](https://blog.travelgatex.com/blog/how-to-improve-graphql-performance/){{% /alert %}}

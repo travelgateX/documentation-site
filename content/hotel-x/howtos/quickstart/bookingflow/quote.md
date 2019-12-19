@@ -1,6 +1,6 @@
 {
-"title": "Quote",
-"pagetitle": "Booking process - Quote",
+"title": "Hotel-X Quote",
+"pagetitle": "Quote",
 "description": "How to valuate an availability option",
 "icon": "fa-exchange",
 "weight": 2,

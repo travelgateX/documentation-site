@@ -1,7 +1,7 @@
 +++
 title = "Resources"
 pagetitle = "Hotel-X Resources"
-description = ""
+description = "To complete your training"
 icon = "fa-cubes"
 weight = 2
 alwaysopen = false
