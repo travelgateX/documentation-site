@@ -1,5 +1,5 @@
 +++
-title = "Hoetl-X Release Notes"
+title = "Release Notes"
 pagetitle = "Release Notes"
 description = "Check the update released of Hotel-X"
 icon="fa-newspaper-o"

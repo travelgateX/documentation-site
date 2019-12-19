@@ -1,5 +1,5 @@
 +++
-title = "Hotel-X Settings"
+title = "Settings"
 pagetitle = "Settings"
 description = "Learn about settings in HotelX"
 icon = "fa-cog"

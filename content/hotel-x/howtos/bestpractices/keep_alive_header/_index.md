@@ -1,5 +1,5 @@
 +++
-title = "Hotel-X Keep Alive Header"
+title = "Keep Alive Header"
 pagetitle = "Keep Alive Header"
 description = ""
 icon = "fa-exchange"

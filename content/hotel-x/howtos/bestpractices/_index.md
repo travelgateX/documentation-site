@@ -1,5 +1,5 @@
 +++
-title = "Hotel-X Best Practices"
+title = "Best Practices"
 pagetitle = "Best Practices"
 description = "To be most effective"
 icon = "fa-thumbs-up"

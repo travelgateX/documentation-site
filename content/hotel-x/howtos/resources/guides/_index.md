@@ -1,6 +1,6 @@
 +++
 title = "Guides"
-pagetitle = "Hotel-X Guides"
+pagetitle = "Guides"
 description = ""
 icon = "fa-guide"
 weight = 1

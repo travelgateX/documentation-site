@@ -1,5 +1,5 @@
 +++
-title = "Hotel-X Errors and Warnings"
+title = "Errors and Warnings"
 pagetitle = "Errors and Warnings"
 description = "List of errors and warnings in HotelX"
 icon = "fa-exclamation-triangle"
