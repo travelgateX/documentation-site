@@ -1,5 +1,5 @@
 ---
-title: "Hotel-X changelog"
+title: "Hotel-X Changelog"
 icon: "fa-commenting-o "
 aliases: 
     - "/travelgatex/release-notes/products-changelogs/changelog-stats/"

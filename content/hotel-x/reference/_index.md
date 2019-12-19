@@ -1,5 +1,5 @@
 {
-  "title": "Hotel-X API Reference",
+  "title": "API Reference",
   "hideGithubLink": true,
 	"pagetitle": "API Reference",
   "description": "API Reference",

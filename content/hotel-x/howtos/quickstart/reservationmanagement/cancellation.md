@@ -1,6 +1,6 @@
 +++
-title = "Cancellation"
-pagetitle = "Booking process - Cancellation"
+title = "Hotel-X Cancellation"
+pagetitle = "Cancellation"
 description = "How to cancel a booking"
 icon = "fa-calendar-times-o"
 weight = 2

@@ -1,5 +1,5 @@
 +++
-title = "Hotel-X Quickstart"
+title = "Quickstart"
 pagetitle = "Quickstart"
 description = "To get started with Hotel-X"
 icon = "fa-play"
