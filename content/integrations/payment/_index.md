@@ -7,6 +7,4 @@ weight = 1
 alwaysopen = false
 +++
 
-{{%wip%}}
-
 {{%custom-children%}}

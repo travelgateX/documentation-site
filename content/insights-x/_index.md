@@ -2,7 +2,7 @@
 title = "Insights-X"
 pagetitle = "Insights-X"
 description = "Grow your business with data"
-weight = 4
+weight = 9
 alwaysopen = false
 isDirectory = false
 +++

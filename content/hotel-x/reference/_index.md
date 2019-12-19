@@ -1,10 +1,10 @@
 {
-  "title": "Reference",
+  "title": "API Reference",
   "hideGithubLink": true,
-	"pagetitle": "Reference Documentation",
-  "description": "Reference Documentation",
+	"pagetitle": " Hotel-X API Reference",
+  "description": "API Reference",
   "weight": 2,
-  "icon": "fa-book",
+  "icon": "fa-file-code-o",
   "alwaysopen": false
 }
 Our reference pages explain all aspects of our GraphQL schema.
@@ -29,8 +29,6 @@ These pages are divided into the following sections:
 
 {{% alert theme="info" %}}In GraphQL, `!` indicates mandatory fields that must be included in your queries. For more information about GraphQL, check out our <a href="https://docs.travelgatex.com/learning-graphql/">Learning GraphQL guides</a>.{{% /alert %}}
 
-{{% alert theme="warning" %}}Keep in mind that it's important to use the correct Headers.
-If you wish to use test headers, insert `"Authorization":"Apikey q8ggxpoVDW76Kw918hwnnRvxlZmAP2QZ"`
-{{% /alert %}}
+
 
 {{%custom-children%}}

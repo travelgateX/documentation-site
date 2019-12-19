@@ -1,9 +1,9 @@
 +++
 title = "Release Notes"
-pagetitle = "New Updates & Releases"
-description = "New Updates & Releases"
-icon="fa-map"
-weight = 6
+pagetitle = "Hoetl-X Release Notes"
+description = "Release Notes"
+icon="fa-newspaper-o"
+weight = 4
 alwaysopen = false
 isDirectory = false
 tags = ["release-notes"]

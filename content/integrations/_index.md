@@ -2,7 +2,7 @@
 title = "Integrations"
 pagetitle = "Integrations"
 description = "Integrations"
-weight = 6
+weight = 15
 alwaysopen = false
 isDirectory = false
 +++
