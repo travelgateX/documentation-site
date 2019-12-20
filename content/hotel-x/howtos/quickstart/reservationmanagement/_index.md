@@ -1,5 +1,5 @@
 +++
-title = "Hotel-X Reservation Management"
+title = "Reservation Management"
 pagetitle = "Reservation Management"
 description = "How to operate over the performed bookings"
 icon = "fa-suitcase"

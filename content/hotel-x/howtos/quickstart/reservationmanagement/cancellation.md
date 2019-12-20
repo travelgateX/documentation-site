@@ -1,5 +1,5 @@
 +++
-title = "Hotel-X Cancellation"
+title = "Cancellation"
 pagetitle = "Cancellation"
 description = "How to cancel a booking"
 icon = "fa-calendar-times-o"

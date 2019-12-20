@@ -1,5 +1,5 @@
 {
-"title": "Hotel-X Search",
+"title": "Search",
 "pagetitle": "Search",
 "description": "How to check availability",
 "icon": "fa-search-plus",

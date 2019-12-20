@@ -1,5 +1,5 @@
 {
-"title": "Hotel-X Quote",
+"title": "Quote",
 "pagetitle": "Quote",
 "description": "How to valuate an availability option",
 "icon": "fa-exchange",
