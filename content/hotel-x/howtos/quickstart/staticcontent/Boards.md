@@ -1,5 +1,5 @@
 +++
-title = "Hotel-X Boards"
+title = "Boards"
 pagetitle = "Boards"
 description = "Learn about how to manage static content data in your site: Hotels, Boards, Categories..."
 icon = "fa-list-alt"

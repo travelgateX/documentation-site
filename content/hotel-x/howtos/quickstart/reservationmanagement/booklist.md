@@ -1,5 +1,5 @@
 {
-"title": "Hotel-X Booking List",
+"title": "Booking List",
 "pagetitle": "Booking List",
 "description": "How to request for booking detail",
 "icon": "fa-list",

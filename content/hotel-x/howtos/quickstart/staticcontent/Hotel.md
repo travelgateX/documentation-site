@@ -1,6 +1,6 @@
 +++
 title = "Hotel"
-pagetitle = "Hotel-X Hotel"
+pagetitle = "Hotel"
 description = ""
 icon = "fa-h-square"
 weight = 1

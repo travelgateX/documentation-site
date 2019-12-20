@@ -1,5 +1,5 @@
 +++
-title = "Hotel-X Book"
+title = "Book"
 pagetitle = "Book"
 description = "How to perform a booking"
 icon = "fa-money"

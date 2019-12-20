@@ -1,5 +1,5 @@
 +++
-title = "Hotel-X Room"
+title = "Room"
 pagetitle = "Room"
 description = "Learn about how to manage static content data in your site: Hotels, Boards, Categories..."
 icon = "fa-bed"

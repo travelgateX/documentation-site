@@ -1,6 +1,6 @@
 +++
 title = "Static Content"
-pagetitle = "Hotel-X Static Content"
+pagetitle = "Static Content"
 description = "How to manage static content: Hotels, Boards, Categories..."
 icon = "fa-archive"
 weight = 4

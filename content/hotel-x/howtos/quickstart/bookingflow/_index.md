@@ -1,5 +1,5 @@
 +++
-title = "Hotel-X Booking Flow"
+title = "Booking Flow"
 pagetitle = "Booking Flow"
 description = "How to book"
 icon = "fa-exchange"

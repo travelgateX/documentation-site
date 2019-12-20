@@ -1,5 +1,5 @@
 +++
-title = "Hotel-X Basic Concepts"
+title = "Basic Concepts"
 pagetitle = "Basics Concepts"
 description = "Understand Hotel-X basic concepts"
 icon = "fa-th-list" 
