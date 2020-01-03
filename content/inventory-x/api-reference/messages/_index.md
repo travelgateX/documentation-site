@@ -8,6 +8,6 @@ alwaysopen = false
 isDirectory = false
 +++
 
-# Messages used in the Inventory X API
+# Messages used in the Inventory-X API
 
 {{%custom-children%}}
