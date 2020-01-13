@@ -179,6 +179,22 @@
           "description": null
         }
       ]
+    },
+    {
+      "typeString": "LegacyLink",
+      "name": "legacyLink",
+      "url": "/paymentx/reference/objects/legacylink",
+      "description": null,
+      "isDeprecated": false,
+      "args": null
+    },
+    {
+      "typeString": "Access",
+      "name": "master",
+      "url": "/paymentx/reference/objects/access",
+      "description": null,
+      "isDeprecated": false,
+      "args": null
     }
   ],
   "requireby": [

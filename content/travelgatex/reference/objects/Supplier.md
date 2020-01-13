@@ -51,9 +51,19 @@
       "url": "/travelgatex/reference/objects/accessdata"
     },
     {
+      "name": "LegacyLink",
+      "description": null,
+      "url": "/travelgatex/reference/objects/legacylink"
+    },
+    {
       "name": "SupplierEdge",
       "description": null,
       "url": "/travelgatex/reference/objects/supplieredge"
+    },
+    {
+      "name": "PaymentCardData",
+      "description": null,
+      "url": "/travelgatex/reference/objects/paymentcarddata"
     },
     {
       "name": "AdminMutation",

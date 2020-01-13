@@ -58,6 +58,13 @@
       "url": "/alerts-x/reference/scalars/boolean",
       "description": null,
       "args": null
+    },
+    {
+      "typeString": "Boolean",
+      "name": "delete",
+      "url": "/alerts-x/reference/scalars/boolean",
+      "description": null,
+      "args": null
     }
   ],
   "requireby": null,

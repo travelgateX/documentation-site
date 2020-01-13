@@ -110,14 +110,19 @@
       "url": "/stats/reference/objects/memberdata"
     },
     {
-      "name": "API",
+      "name": "MacroPermission",
       "description": null,
-      "url": "/stats/reference/objects/api"
+      "url": "/stats/reference/objects/macropermission"
     },
     {
-      "name": "APIData",
+      "name": "MacroPermissionData",
       "description": null,
-      "url": "/stats/reference/objects/apidata"
+      "url": "/stats/reference/objects/macropermissiondata"
+    },
+    {
+      "name": "Role",
+      "description": null,
+      "url": "/stats/reference/objects/role"
     },
     {
       "name": "Resource",
@@ -125,9 +130,24 @@
       "url": "/stats/reference/objects/resource"
     },
     {
+      "name": "API",
+      "description": null,
+      "url": "/stats/reference/objects/api"
+    },
+    {
+      "name": "RoleData",
+      "description": null,
+      "url": "/stats/reference/objects/roledata"
+    },
+    {
       "name": "ResourceData",
       "description": null,
       "url": "/stats/reference/objects/resourcedata"
+    },
+    {
+      "name": "APIData",
+      "description": null,
+      "url": "/stats/reference/objects/apidata"
     },
     {
       "name": "Operation",
@@ -148,16 +168,6 @@
       "name": "ManagedGroupData",
       "description": null,
       "url": "/stats/reference/objects/managedgroupdata"
-    },
-    {
-      "name": "Role",
-      "description": null,
-      "url": "/stats/reference/objects/role"
-    },
-    {
-      "name": "RoleData",
-      "description": null,
-      "url": "/stats/reference/objects/roledata"
     },
     {
       "name": "Profile",
@@ -193,16 +203,6 @@
       "name": "ProductData",
       "description": null,
       "url": "/stats/reference/objects/productdata"
-    },
-    {
-      "name": "MacroPermission",
-      "description": null,
-      "url": "/stats/reference/objects/macropermission"
-    },
-    {
-      "name": "MacroPermissionData",
-      "description": null,
-      "url": "/stats/reference/objects/macropermissiondata"
     },
     {
       "name": "DomainData",

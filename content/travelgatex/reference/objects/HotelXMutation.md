@@ -217,6 +217,27 @@
       ]
     },
     {
+      "typeString": "HotelCommitPayload",
+      "name": "commit",
+      "url": "/travelgatex/reference/objects/hotelcommitpayload",
+      "description": null,
+      "isDeprecated": false,
+      "args": [
+        {
+          "typeString": "HotelCommitInput!",
+          "name": "input",
+          "url": "/travelgatex/reference/inputobjects/hotelcommitinput",
+          "description": null
+        },
+        {
+          "typeString": "HotelSettingsInput",
+          "name": "settings",
+          "url": "/travelgatex/reference/inputobjects/hotelsettingsinput",
+          "description": null
+        }
+      ]
+    },
+    {
       "typeString": "String!",
       "name": "loadFile",
       "url": "/travelgatex/reference/scalars/string",

@@ -53,14 +53,14 @@
   ],
   "requireby": [
     {
-      "name": "ResourceEdge",
-      "description": null,
-      "url": "/mappea/reference/objects/resourceedge"
-    },
-    {
       "name": "Permission",
       "description": null,
       "url": "/mappea/reference/objects/permission"
+    },
+    {
+      "name": "ResourceEdge",
+      "description": null,
+      "url": "/mappea/reference/objects/resourceedge"
     },
     {
       "name": "ManagedGroupData",

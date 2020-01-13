@@ -563,6 +563,46 @@
       "description": null,
       "isDeprecated": false,
       "args": null
+    },
+    {
+      "typeString": "Country!",
+      "name": "country",
+      "url": "/paymentx/reference/scalars/country",
+      "description": null,
+      "isDeprecated": false,
+      "args": null
+    },
+    {
+      "typeString": "AccessConnection",
+      "name": "allAccesses",
+      "url": "/paymentx/reference/objects/accessconnection",
+      "description": null,
+      "isDeprecated": false,
+      "args": null
+    },
+    {
+      "typeString": "SupplierConnection",
+      "name": "allSuppliers",
+      "url": "/paymentx/reference/objects/supplierconnection",
+      "description": null,
+      "isDeprecated": false,
+      "args": null
+    },
+    {
+      "typeString": "ClientConnection",
+      "name": "allClients",
+      "url": "/paymentx/reference/objects/clientconnection",
+      "description": null,
+      "isDeprecated": false,
+      "args": null
+    },
+    {
+      "typeString": "ProfileConnection",
+      "name": "allProfiles",
+      "url": "/paymentx/reference/objects/profileconnection",
+      "description": null,
+      "isDeprecated": false,
+      "args": null
     }
   ],
   "requireby": [

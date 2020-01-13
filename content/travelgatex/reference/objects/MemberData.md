@@ -132,6 +132,45 @@
           "description": null
         }
       ]
+    },
+    {
+      "typeString": "MacroPermissionsConnection",
+      "name": "macroPermissions",
+      "url": "/travelgatex/reference/objects/macropermissionsconnection",
+      "description": null,
+      "isDeprecated": false,
+      "args": [
+        {
+          "typeString": "[ID!]",
+          "name": "codes",
+          "url": "/travelgatex/reference/scalars/id",
+          "description": null
+        },
+        {
+          "typeString": "Int",
+          "name": "first",
+          "url": "/travelgatex/reference/scalars/int",
+          "description": null
+        },
+        {
+          "typeString": "Int",
+          "name": "last",
+          "url": "/travelgatex/reference/scalars/int",
+          "description": null
+        },
+        {
+          "typeString": "String",
+          "name": "before",
+          "url": "/travelgatex/reference/scalars/string",
+          "description": null
+        },
+        {
+          "typeString": "String",
+          "name": "after",
+          "url": "/travelgatex/reference/scalars/string",
+          "description": null
+        }
+      ]
     }
   ],
   "requireby": [

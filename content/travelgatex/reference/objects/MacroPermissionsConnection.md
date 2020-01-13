@@ -22,6 +22,11 @@
   ],
   "requireby": [
     {
+      "name": "MemberData",
+      "description": null,
+      "url": "/travelgatex/reference/objects/memberdata"
+    },
+    {
       "name": "ProductData",
       "description": null,
       "url": "/travelgatex/reference/objects/productdata"

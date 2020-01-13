@@ -20,7 +20,7 @@
       "args": null
     },
     {
-      "typeString": "String!",
+      "typeString": "String",
       "name": "startCursor",
       "url": "/mappea/reference/scalars/string",
       "description": null,
@@ -28,7 +28,7 @@
       "args": null
     },
     {
-      "typeString": "String!",
+      "typeString": "String",
       "name": "endCursor",
       "url": "/mappea/reference/scalars/string",
       "description": null,
@@ -53,6 +53,11 @@
       "url": "/mappea/reference/objects/clientconnection"
     },
     {
+      "name": "SupplierConnection",
+      "description": null,
+      "url": "/mappea/reference/objects/supplierconnection"
+    },
+    {
       "name": "MemberConnection",
       "description": null,
       "url": "/mappea/reference/objects/memberconnection"
@@ -63,14 +68,14 @@
       "url": "/mappea/reference/objects/apiconnection"
     },
     {
-      "name": "ProductConnection",
+      "name": "ManagedGroupConnection",
       "description": null,
-      "url": "/mappea/reference/objects/productconnection"
+      "url": "/mappea/reference/objects/managedgroupconnection"
     },
     {
-      "name": "SupplierConnection",
+      "name": "RoleConnection",
       "description": null,
-      "url": "/mappea/reference/objects/supplierconnection"
+      "url": "/mappea/reference/objects/roleconnection"
     },
     {
       "name": "ProfileConnection",
@@ -78,9 +83,9 @@
       "url": "/mappea/reference/objects/profileconnection"
     },
     {
-      "name": "RoleConnection",
+      "name": "MacroPermissionsConnection",
       "description": null,
-      "url": "/mappea/reference/objects/roleconnection"
+      "url": "/mappea/reference/objects/macropermissionsconnection"
     },
     {
       "name": "ResourceConnection",
@@ -93,19 +98,14 @@
       "url": "/mappea/reference/objects/operationconnection"
     },
     {
-      "name": "MacroPermissionsConnection",
-      "description": null,
-      "url": "/mappea/reference/objects/macropermissionsconnection"
-    },
-    {
       "name": "EntityConnection",
       "description": null,
       "url": "/mappea/reference/objects/entityconnection"
     },
     {
-      "name": "ManagedGroupConnection",
+      "name": "ProductConnection",
       "description": null,
-      "url": "/mappea/reference/objects/managedgroupconnection"
+      "url": "/mappea/reference/objects/productconnection"
     }
   ],
   "enumValues": null,

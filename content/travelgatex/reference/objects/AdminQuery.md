@@ -261,6 +261,12 @@
           "description": null
         },
         {
+          "typeString": "String",
+          "name": "contains",
+          "url": "/travelgatex/reference/scalars/string",
+          "description": null
+        },
+        {
           "typeString": "Int",
           "name": "first",
           "url": "/travelgatex/reference/scalars/int",
@@ -282,6 +288,12 @@
           "typeString": "String",
           "name": "after",
           "url": "/travelgatex/reference/scalars/string",
+          "description": null
+        },
+        {
+          "typeString": "OrganizationOrderByInput",
+          "name": "orderBy",
+          "url": "/travelgatex/reference/enums/organizationorderbyinput",
           "description": null
         }
       ]

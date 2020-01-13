@@ -46,6 +46,11 @@
   ],
   "requireby": [
     {
+      "name": "LegacyLink",
+      "description": null,
+      "url": "/alerts-x/reference/objects/legacylink"
+    },
+    {
       "name": "ClientEdge",
       "description": null,
       "url": "/alerts-x/reference/objects/clientedge"

@@ -56,8 +56,16 @@
       "name": "property",
       "url": "/travelgatex/reference/objects/property",
       "description": null,
-      "isDeprecated": false,
-      "args": null
+      "isDeprecated": true,
+      "args": null,
+      "deprecationReason": "Deprecated from 2019-10-16. Redundant information",
+      "descriptionSplitted": {
+        "date": "2019-10-16",
+        "first": "Deprecated from",
+        "second": "Redundant information"
+      },
+      "deprecationDate": "2019-10-16",
+      "typeName": "HotelData"
     },
     {
       "typeString": "String",
@@ -108,9 +116,9 @@
       "args": null
     },
     {
-      "typeString": "[Amenity!]",
+      "typeString": "[AmenityStatic!]",
       "name": "amenities",
-      "url": "/travelgatex/reference/objects/amenity",
+      "url": "/travelgatex/reference/objects/amenitystatic",
       "description": null,
       "isDeprecated": false,
       "args": null
@@ -151,6 +159,53 @@
       "description": null,
       "isDeprecated": false,
       "args": null
+    },
+    {
+      "typeString": "PropertyType",
+      "name": "propertyType",
+      "url": "/travelgatex/reference/objects/propertytype",
+      "description": null,
+      "isDeprecated": false,
+      "args": null
+    },
+    {
+      "typeString": "[MandatoryFee!]",
+      "name": "mandatoryFees",
+      "url": "/travelgatex/reference/objects/mandatoryfee",
+      "description": null,
+      "isDeprecated": false,
+      "args": null
+    },
+    {
+      "typeString": "CheckInformation",
+      "name": "checkIn",
+      "url": "/travelgatex/reference/objects/checkinformation",
+      "description": null,
+      "isDeprecated": false,
+      "args": null
+    },
+    {
+      "typeString": "CheckInformation",
+      "name": "checkOut",
+      "url": "/travelgatex/reference/objects/checkinformation",
+      "description": null,
+      "isDeprecated": false,
+      "args": null
+    },
+    {
+      "typeString": "HotelXAmenityConnection",
+      "name": "allAmenities",
+      "url": "/travelgatex/reference/objects/hotelxamenityconnection",
+      "description": null,
+      "isDeprecated": false,
+      "args": [
+        {
+          "typeString": "[HotelXMapOptionInput!]",
+          "name": "mapOptions",
+          "url": "/travelgatex/reference/inputobjects/hotelxmapoptioninput",
+          "description": null
+        }
+      ]
     }
   ],
   "requireby": [

@@ -28,6 +28,14 @@
       "args": null
     },
     {
+      "typeString": "ID!",
+      "name": "group",
+      "url": "/stats/reference/scalars/id",
+      "description": null,
+      "isDeprecated": false,
+      "args": null
+    },
+    {
       "typeString": "String",
       "name": "label",
       "url": "/stats/reference/scalars/string",

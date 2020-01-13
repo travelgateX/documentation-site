@@ -5,6 +5,11 @@
   "fields": null,
   "requireby": [
     {
+      "name": "PaymentCardData",
+      "description": null,
+      "url": "/travelgatex/reference/objects/paymentcarddata"
+    },
+    {
       "name": "PaymentCardInput",
       "description": null,
       "url": "/travelgatex/reference/inputobjects/paymentcardinput"

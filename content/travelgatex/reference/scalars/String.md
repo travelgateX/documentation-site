@@ -25,6 +25,11 @@
       "url": "/travelgatex/reference/objects/pageinfo"
     },
     {
+      "name": "AdviseMessage",
+      "description": null,
+      "url": "/travelgatex/reference/objects/advisemessage"
+    },
+    {
       "name": "AccessData",
       "description": null,
       "url": "/travelgatex/reference/objects/accessdata"
@@ -55,11 +60,6 @@
       "url": "/travelgatex/reference/objects/groupdata"
     },
     {
-      "name": "AdviseMessage",
-      "description": null,
-      "url": "/travelgatex/reference/objects/advisemessage"
-    },
-    {
       "name": "GroupCommonData",
       "description": null,
       "url": "/travelgatex/reference/interfaces/groupcommondata"
@@ -70,19 +70,14 @@
       "url": "/travelgatex/reference/objects/memberdata"
     },
     {
-      "name": "ManagedGroupEdge",
+      "name": "MacroPermissionEdge",
       "description": null,
-      "url": "/travelgatex/reference/objects/managedgroupedge"
+      "url": "/travelgatex/reference/objects/macropermissionedge"
     },
     {
-      "name": "APIData",
+      "name": "MacroPermissionData",
       "description": null,
-      "url": "/travelgatex/reference/objects/apidata"
-    },
-    {
-      "name": "ResourceData",
-      "description": null,
-      "url": "/travelgatex/reference/objects/resourcedata"
+      "url": "/travelgatex/reference/objects/macropermissiondata"
     },
     {
       "name": "RoleData",
@@ -90,14 +85,29 @@
       "url": "/travelgatex/reference/objects/roledata"
     },
     {
-      "name": "ExternalMessage",
+      "name": "ResourceData",
       "description": null,
-      "url": "/travelgatex/reference/objects/externalmessage"
+      "url": "/travelgatex/reference/objects/resourcedata"
+    },
+    {
+      "name": "APIData",
+      "description": null,
+      "url": "/travelgatex/reference/objects/apidata"
+    },
+    {
+      "name": "ManagedGroupEdge",
+      "description": null,
+      "url": "/travelgatex/reference/objects/managedgroupedge"
     },
     {
       "name": "OrganizationData",
       "description": null,
       "url": "/travelgatex/reference/objects/organizationdata"
+    },
+    {
+      "name": "ExternalMessage",
+      "description": null,
+      "url": "/travelgatex/reference/objects/externalmessage"
     },
     {
       "name": "SupplierEdge",
@@ -158,16 +168,6 @@
       "name": "ProductData",
       "description": null,
       "url": "/travelgatex/reference/objects/productdata"
-    },
-    {
-      "name": "MacroPermissionEdge",
-      "description": null,
-      "url": "/travelgatex/reference/objects/macropermissionedge"
-    },
-    {
-      "name": "MacroPermissionData",
-      "description": null,
-      "url": "/travelgatex/reference/objects/macropermissiondata"
     },
     {
       "name": "MemberEdge",
@@ -330,14 +330,29 @@
       "url": "/travelgatex/reference/objects/contact"
     },
     {
-      "name": "Amenity",
+      "name": "AmenityStatic",
       "description": null,
-      "url": "/travelgatex/reference/objects/amenity"
+      "url": "/travelgatex/reference/objects/amenitystatic"
     },
     {
       "name": "Media",
       "description": null,
       "url": "/travelgatex/reference/objects/media"
+    },
+    {
+      "name": "PropertyType",
+      "description": null,
+      "url": "/travelgatex/reference/objects/propertytype"
+    },
+    {
+      "name": "MandatoryFee",
+      "description": null,
+      "url": "/travelgatex/reference/objects/mandatoryfee"
+    },
+    {
+      "name": "HotelXMapOptionInput",
+      "description": null,
+      "url": "/travelgatex/reference/inputobjects/hotelxmapoptioninput"
     },
     {
       "name": "DestinationData",
@@ -355,6 +370,21 @@
       "url": "/travelgatex/reference/objects/geonamedata"
     },
     {
+      "name": "HotelXAmenityEdge",
+      "description": null,
+      "url": "/travelgatex/reference/objects/hotelxamenityedge"
+    },
+    {
+      "name": "HotelXAmenityData",
+      "description": null,
+      "url": "/travelgatex/reference/objects/hotelxamenitydata"
+    },
+    {
+      "name": "HotelXMappedCode",
+      "description": null,
+      "url": "/travelgatex/reference/objects/hotelxmappedcode"
+    },
+    {
       "name": "RoomEdge",
       "description": null,
       "url": "/travelgatex/reference/objects/roomedge"
@@ -365,9 +395,34 @@
       "url": "/travelgatex/reference/objects/roomdata"
     },
     {
+      "name": "View",
+      "description": null,
+      "url": "/travelgatex/reference/objects/view"
+    },
+    {
+      "name": "BedStatic",
+      "description": null,
+      "url": "/travelgatex/reference/objects/bedstatic"
+    },
+    {
       "name": "DestinationEdge",
       "description": null,
       "url": "/travelgatex/reference/objects/destinationedge"
+    },
+    {
+      "name": "MetadataEdge",
+      "description": null,
+      "url": "/travelgatex/reference/objects/metadataedge"
+    },
+    {
+      "name": "ReviewedText",
+      "description": null,
+      "url": "/travelgatex/reference/objects/reviewedtext"
+    },
+    {
+      "name": "BookPreferenceValue",
+      "description": null,
+      "url": "/travelgatex/reference/objects/bookpreferencevalue"
     },
     {
       "name": "HotelXSupplierInput",
@@ -448,6 +503,11 @@
       "name": "Surcharge",
       "description": null,
       "url": "/travelgatex/reference/objects/surcharge"
+    },
+    {
+      "name": "Amenity",
+      "description": null,
+      "url": "/travelgatex/reference/objects/amenity"
     },
     {
       "name": "BookableOptionSearch",
@@ -700,6 +760,11 @@
       "url": "/travelgatex/reference/inputobjects/hotelcancelinput"
     },
     {
+      "name": "HotelCommitInput",
+      "description": null,
+      "url": "/travelgatex/reference/inputobjects/hotelcommitinput"
+    },
+    {
       "name": "HotelXDefaultPluginInput",
       "description": null,
       "url": "/travelgatex/reference/inputobjects/hotelxdefaultplugininput"
@@ -718,6 +783,11 @@
       "name": "HotelCancelDetail",
       "description": null,
       "url": "/travelgatex/reference/objects/hotelcanceldetail"
+    },
+    {
+      "name": "HotelXCommitReferenceInput",
+      "description": null,
+      "url": "/travelgatex/reference/inputobjects/hotelxcommitreferenceinput"
     },
     {
       "name": "MappeaUploadFileInput",

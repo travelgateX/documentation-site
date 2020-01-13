@@ -20,7 +20,7 @@
       "args": null
     },
     {
-      "typeString": "String!",
+      "typeString": "String",
       "name": "startCursor",
       "url": "/paymentx/reference/scalars/string",
       "description": null,
@@ -28,7 +28,7 @@
       "args": null
     },
     {
-      "typeString": "String!",
+      "typeString": "String",
       "name": "endCursor",
       "url": "/paymentx/reference/scalars/string",
       "description": null,
@@ -88,6 +88,11 @@
       "url": "/paymentx/reference/objects/profileconnection"
     },
     {
+      "name": "MacroPermissionsConnection",
+      "description": null,
+      "url": "/paymentx/reference/objects/macropermissionsconnection"
+    },
+    {
       "name": "ResourceConnection",
       "description": null,
       "url": "/paymentx/reference/objects/resourceconnection"
@@ -101,11 +106,6 @@
       "name": "ProductConnection",
       "description": null,
       "url": "/paymentx/reference/objects/productconnection"
-    },
-    {
-      "name": "MacroPermissionsConnection",
-      "description": null,
-      "url": "/paymentx/reference/objects/macropermissionsconnection"
     },
     {
       "name": "EntityConnection",

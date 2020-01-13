@@ -22,6 +22,11 @@
   ],
   "requireby": [
     {
+      "name": "MemberData",
+      "description": null,
+      "url": "/mappea/reference/objects/memberdata"
+    },
+    {
       "name": "ProductData",
       "description": null,
       "url": "/mappea/reference/objects/productdata"

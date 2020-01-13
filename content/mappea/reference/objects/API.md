@@ -53,9 +53,9 @@
   ],
   "requireby": [
     {
-      "name": "APIEdge",
+      "name": "Permission",
       "description": null,
-      "url": "/mappea/reference/objects/apiedge"
+      "url": "/mappea/reference/objects/permission"
     },
     {
       "name": "OperationData",
@@ -63,9 +63,9 @@
       "url": "/mappea/reference/objects/operationdata"
     },
     {
-      "name": "Permission",
+      "name": "APIEdge",
       "description": null,
-      "url": "/mappea/reference/objects/permission"
+      "url": "/mappea/reference/objects/apiedge"
     },
     {
       "name": "ManagedGroupData",

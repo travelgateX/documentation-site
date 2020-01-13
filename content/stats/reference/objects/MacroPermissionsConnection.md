@@ -22,6 +22,11 @@
   ],
   "requireby": [
     {
+      "name": "MemberData",
+      "description": null,
+      "url": "/stats/reference/objects/memberdata"
+    },
+    {
       "name": "ProductData",
       "description": null,
       "url": "/stats/reference/objects/productdata"

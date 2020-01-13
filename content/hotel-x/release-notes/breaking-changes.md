@@ -18,6 +18,12 @@
 - Removal of `loadFile` from `HotelXMutation`. Reason: .  Deprecated on 2018-06-06.**To be removed soon**.
 - Removal of `distribute` from `AddOns`. Reason: You can find it in distribution AddOn.  Deprecated on 2018-05-21.**To be removed soon**.
 - Removal of `type` from `AdviseMessage`. Reason: .  Deprecated on 2018-06-01.**To be removed soon**.
+- Removal of `description` from `Bed`. Reason: Deprecated from 2019-07-29.  Deprecated on 2019-07-29.**To be removed soon**.
+- Removal of `error` from `Board`. Reason: Deprecated from 2019-07-03.  Deprecated on 2019-07-03.**To be removed soon**.
+- Removal of `error` from `Category`. Reason: Deprecated from 2019-07-03.  Deprecated on 2019-07-03.**To be removed soon**.
+- Removal of `error` from `Destination`. Reason: Deprecated from 2019-07-03.  Deprecated on 2019-07-03.**To be removed soon**.
+- Removal of `error` from `Hotel`. Reason: Deprecated from 2019-07-03.  Deprecated on 2019-07-03.**To be removed soon**.
+- Removal of `error` from `RoomStatic`. Reason: Deprecated from 2019-07-03.  Deprecated on 2019-07-03.**To be removed soon**.
 - Removal of `creationDate` from `BookingHotel`. Reason: Incorrect date format..  Deprecated on 2018-02-28.**To be removed soon**.
 - Removal of `checkIn` from `BookingHotel`. Reason: Incorrect date format..  Deprecated on 2018-02-28.**To be removed soon**.
 - Removal of `checkOut` from `BookingHotel`. Reason: Incorrect date format..  Deprecated on 2018-02-28.**To be removed soon**.
@@ -30,12 +36,19 @@
 - Removal of `effectiveDate` from `Supplement`. Reason: Incorrect date format..  Deprecated on 2018-02-28.**To be removed soon**.
 - Removal of `expireDate` from `Supplement`. Reason: Incorrect date format..  Deprecated on 2018-02-28.**To be removed soon**.
 - Removal of `token` from `HotelOptionSearch`. Reason: .  Deprecated on 2019-02-05.**To be removed soon**.
-- Removal of `description` from `Bed`. Reason: Deprecated from 2019-07-29.  Deprecated on 2019-07-29.Expected removal on 2019-10-27.
-- Removal of `error` from `Board`. Reason: Deprecated from 2019-07-03.  Deprecated on 2019-07-03.Expected removal on 2019-10-01.
-- Removal of `error` from `Category`. Reason: Deprecated from 2019-07-03.  Deprecated on 2019-07-03.Expected removal on 2019-10-01.
-- Removal of `error` from `Destination`. Reason: Deprecated from 2019-07-03.  Deprecated on 2019-07-03.Expected removal on 2019-10-01.
-- Removal of `error` from `Hotel`. Reason: Deprecated from 2019-07-03.  Deprecated on 2019-07-03.Expected removal on 2019-10-01.
-- Removal of `error` from `RoomStatic`. Reason: Deprecated from 2019-07-03.  Deprecated on 2019-07-03.Expected removal on 2019-10-01.
+- Removal of `commit` from `Reference`. Reason: Please, use SupplierReference.  Deprecated on 2018-10-21.**To be removed soon**.
+- Removal of `market` from `HotelOptionSearch`. Reason: .  Deprecated on 2019-12-11.Expected removal on 2020-03-10.
+- Removal of `market` from `HotelXDefaultSettingsData`. Reason: .  Deprecated on 2019-12-11.Expected removal on 2020-03-10.
+- Removal of `property` from `HotelData`. Reason: Deprecated from 2019-10-16. Redundant information.  Deprecated on 2019-10-16.Expected removal on 2020-01-14.
+{{% / release-notes-container %}}
+### 2019-12-11
+{{% release-notes-container type="d"%}}
+- Deprecated `market` from `HotelOptionSearch`. Reason: . Expected removal on 2020-03-10 .
+- Deprecated `market` from `HotelXDefaultSettingsData`. Reason: . Expected removal on 2020-03-10 .
+{{% / release-notes-container %}}
+### 2019-10-16
+{{% release-notes-container type="d"%}}
+- Deprecated `property` from `HotelData`. Reason: Deprecated from 2019-10-16. Redundant information. Expected removal on 2020-01-14 .
 {{% / release-notes-container %}}
 ### 2019-08-13
 {{% release-notes-container type="r"%}}
@@ -85,6 +98,10 @@
 {{% release-notes-container type="d"%}}
 - Deprecated `token` from `HotelOptionSearch`. Reason: . Finally removed on 2019-02-19 .
 - Deprecated `token` from `HotelOptionSearch`. Reason: . Expected removal on 2019-05-06 .
+{{% / release-notes-container %}}
+### 2018-10-21
+{{% release-notes-container type="d"%}}
+- Deprecated `commit` from `Reference`. Reason: Please, use SupplierReference. Expected removal on 2019-01-19 .
 {{% / release-notes-container %}}
 ### 2018-07-26
 {{% release-notes-container type="r"%}}

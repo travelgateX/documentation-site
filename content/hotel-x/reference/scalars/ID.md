@@ -90,6 +90,11 @@
       "url": "/hotel-x/reference/objects/giatadata"
     },
     {
+      "name": "HotelXMapOptionInput",
+      "description": null,
+      "url": "/hotel-x/reference/inputobjects/hotelxmapoptioninput"
+    },
+    {
       "name": "DestinationData",
       "description": null,
       "url": "/hotel-x/reference/objects/destinationdata"
@@ -115,6 +120,16 @@
       "url": "/hotel-x/reference/objects/geonamedata"
     },
     {
+      "name": "HotelXAmenity",
+      "description": null,
+      "url": "/hotel-x/reference/objects/hotelxamenity"
+    },
+    {
+      "name": "HotelXAmenityData",
+      "description": null,
+      "url": "/hotel-x/reference/objects/hotelxamenitydata"
+    },
+    {
       "name": "RoomStatic",
       "description": null,
       "url": "/hotel-x/reference/objects/roomstatic"
@@ -130,9 +145,219 @@
       "url": "/hotel-x/reference/objects/destination"
     },
     {
+      "name": "Metadata",
+      "description": null,
+      "url": "/hotel-x/reference/objects/metadata"
+    },
+    {
+      "name": "MetadataData",
+      "description": null,
+      "url": "/hotel-x/reference/objects/metadatadata"
+    },
+    {
       "name": "HotelXAccessInput",
       "description": null,
       "url": "/hotel-x/reference/inputobjects/hotelxaccessinput"
+    },
+    {
+      "name": "PaymentCard",
+      "description": null,
+      "url": "/hotel-x/reference/objects/paymentcard"
+    },
+    {
+      "name": "Supplier",
+      "description": null,
+      "url": "/hotel-x/reference/objects/supplier"
+    },
+    {
+      "name": "SupplierData",
+      "description": null,
+      "url": "/hotel-x/reference/objects/supplierdata"
+    },
+    {
+      "name": "Provider",
+      "description": null,
+      "url": "/hotel-x/reference/objects/provider"
+    },
+    {
+      "name": "AccessFilter",
+      "description": null,
+      "url": "/hotel-x/reference/inputobjects/accessfilter"
+    },
+    {
+      "name": "Organization",
+      "description": null,
+      "url": "/hotel-x/reference/objects/organization"
+    },
+    {
+      "name": "ClientFilter",
+      "description": null,
+      "url": "/hotel-x/reference/inputobjects/clientfilter"
+    },
+    {
+      "name": "System",
+      "description": null,
+      "url": "/hotel-x/reference/objects/system"
+    },
+    {
+      "name": "Access",
+      "description": null,
+      "url": "/hotel-x/reference/objects/access"
+    },
+    {
+      "name": "AccessData",
+      "description": null,
+      "url": "/hotel-x/reference/objects/accessdata"
+    },
+    {
+      "name": "Parameter",
+      "description": null,
+      "url": "/hotel-x/reference/objects/parameter"
+    },
+    {
+      "name": "Client",
+      "description": null,
+      "url": "/hotel-x/reference/objects/client"
+    },
+    {
+      "name": "ClientData",
+      "description": null,
+      "url": "/hotel-x/reference/objects/clientdata"
+    },
+    {
+      "name": "Group",
+      "description": null,
+      "url": "/hotel-x/reference/objects/group"
+    },
+    {
+      "name": "SupplierFilter",
+      "description": null,
+      "url": "/hotel-x/reference/inputobjects/supplierfilter"
+    },
+    {
+      "name": "GroupData",
+      "description": null,
+      "url": "/hotel-x/reference/objects/groupdata"
+    },
+    {
+      "name": "Member",
+      "description": null,
+      "url": "/hotel-x/reference/objects/member"
+    },
+    {
+      "name": "GroupCommonData",
+      "description": null,
+      "url": "/hotel-x/reference/interfaces/groupcommondata"
+    },
+    {
+      "name": "MemberData",
+      "description": null,
+      "url": "/hotel-x/reference/objects/memberdata"
+    },
+    {
+      "name": "MacroPermission",
+      "description": null,
+      "url": "/hotel-x/reference/objects/macropermission"
+    },
+    {
+      "name": "MacroPermissionData",
+      "description": null,
+      "url": "/hotel-x/reference/objects/macropermissiondata"
+    },
+    {
+      "name": "Role",
+      "description": null,
+      "url": "/hotel-x/reference/objects/role"
+    },
+    {
+      "name": "Resource",
+      "description": null,
+      "url": "/hotel-x/reference/objects/resource"
+    },
+    {
+      "name": "API",
+      "description": null,
+      "url": "/hotel-x/reference/objects/api"
+    },
+    {
+      "name": "RoleData",
+      "description": null,
+      "url": "/hotel-x/reference/objects/roledata"
+    },
+    {
+      "name": "ResourceData",
+      "description": null,
+      "url": "/hotel-x/reference/objects/resourcedata"
+    },
+    {
+      "name": "APIData",
+      "description": null,
+      "url": "/hotel-x/reference/objects/apidata"
+    },
+    {
+      "name": "Operation",
+      "description": null,
+      "url": "/hotel-x/reference/objects/operation"
+    },
+    {
+      "name": "OperationData",
+      "description": null,
+      "url": "/hotel-x/reference/objects/operationdata"
+    },
+    {
+      "name": "ManagedGroup",
+      "description": null,
+      "url": "/hotel-x/reference/objects/managedgroup"
+    },
+    {
+      "name": "ManagedGroupData",
+      "description": null,
+      "url": "/hotel-x/reference/objects/managedgroupdata"
+    },
+    {
+      "name": "Profile",
+      "description": null,
+      "url": "/hotel-x/reference/objects/profile"
+    },
+    {
+      "name": "ProfileData",
+      "description": null,
+      "url": "/hotel-x/reference/objects/profiledata"
+    },
+    {
+      "name": "Entity",
+      "description": null,
+      "url": "/hotel-x/reference/objects/entity"
+    },
+    {
+      "name": "OrganizationData",
+      "description": null,
+      "url": "/hotel-x/reference/objects/organizationdata"
+    },
+    {
+      "name": "Domain",
+      "description": null,
+      "url": "/hotel-x/reference/objects/domain"
+    },
+    {
+      "name": "Product",
+      "description": null,
+      "url": "/hotel-x/reference/objects/product"
+    },
+    {
+      "name": "ProductData",
+      "description": null,
+      "url": "/hotel-x/reference/objects/productdata"
+    },
+    {
+      "name": "DomainData",
+      "description": null,
+      "url": "/hotel-x/reference/objects/domaindata"
+    },
+    {
+      "name": "SystemData",
+      "description": null,
+      "url": "/hotel-x/reference/objects/systemdata"
     },
     {
       "name": "HotelXUpdateStatus",

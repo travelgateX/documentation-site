@@ -204,18 +204,33 @@
       ]
     },
     {
+      "typeString": "MetadataConnection!",
+      "name": "metadata",
+      "url": "/travelgatex/reference/objects/metadataconnection",
+      "description": null,
+      "isDeprecated": false,
+      "args": [
+        {
+          "typeString": "HotelXMetadataQueryInput!",
+          "name": "criteria",
+          "url": "/travelgatex/reference/inputobjects/hotelxmetadataqueryinput",
+          "description": null
+        },
+        {
+          "typeString": "RelayInput!",
+          "name": "relay",
+          "url": "/travelgatex/reference/inputobjects/relayinput",
+          "description": null
+        }
+      ]
+    },
+    {
       "typeString": "HotelSearch",
       "name": "search",
       "url": "/travelgatex/reference/objects/hotelsearch",
       "description": null,
       "isDeprecated": false,
       "args": [
-        {
-          "typeString": "String",
-          "name": "token",
-          "url": "/travelgatex/reference/scalars/string",
-          "description": null
-        },
         {
           "typeString": "HotelCriteriaSearchInput",
           "name": "criteria",
@@ -331,6 +346,14 @@
     {
       "typeString": "ServiceStatus!",
       "name": "bookingStatusService",
+      "url": "/travelgatex/reference/objects/servicestatus",
+      "description": null,
+      "isDeprecated": false,
+      "args": null
+    },
+    {
+      "typeString": "ServiceStatus!",
+      "name": "commitStatusService",
       "url": "/travelgatex/reference/objects/servicestatus",
       "description": null,
       "isDeprecated": false,

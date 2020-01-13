@@ -63,6 +63,11 @@
       "url": "/mappea/reference/objects/accessdata"
     },
     {
+      "name": "ClientData",
+      "description": null,
+      "url": "/mappea/reference/objects/clientdata"
+    },
+    {
       "name": "ProfileData",
       "description": null,
       "url": "/mappea/reference/objects/profiledata"
@@ -71,11 +76,6 @@
       "name": "DomainData",
       "description": null,
       "url": "/mappea/reference/objects/domaindata"
-    },
-    {
-      "name": "ClientData",
-      "description": null,
-      "url": "/mappea/reference/objects/clientdata"
     },
     {
       "name": "SystemData",

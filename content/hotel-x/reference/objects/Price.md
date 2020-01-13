@@ -28,7 +28,7 @@
       "args": null
     },
     {
-      "typeString": "Float",
+      "typeString": "Float!",
       "name": "gross",
       "url": "/hotel-x/reference/scalars/float",
       "description": null,

@@ -102,6 +102,48 @@
       "args": null
     },
     {
+      "typeString": "[DateTime!]",
+      "name": "deletedAt_in",
+      "url": "/travelgatex/reference/scalars/datetime",
+      "description": null,
+      "args": null
+    },
+    {
+      "typeString": "[DateTime!]",
+      "name": "deletedAt_not_in",
+      "url": "/travelgatex/reference/scalars/datetime",
+      "description": null,
+      "args": null
+    },
+    {
+      "typeString": "DateTime",
+      "name": "deletedAt_lt",
+      "url": "/travelgatex/reference/scalars/datetime",
+      "description": null,
+      "args": null
+    },
+    {
+      "typeString": "DateTime",
+      "name": "deletedAt_lte",
+      "url": "/travelgatex/reference/scalars/datetime",
+      "description": null,
+      "args": null
+    },
+    {
+      "typeString": "DateTime",
+      "name": "deletedAt_gt",
+      "url": "/travelgatex/reference/scalars/datetime",
+      "description": null,
+      "args": null
+    },
+    {
+      "typeString": "DateTime",
+      "name": "deletedAt_gte",
+      "url": "/travelgatex/reference/scalars/datetime",
+      "description": null,
+      "args": null
+    },
+    {
       "typeString": "Boolean",
       "name": "country_in",
       "url": "/travelgatex/reference/scalars/boolean",

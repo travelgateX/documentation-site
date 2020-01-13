@@ -58,14 +58,14 @@
       "url": "/alerts-x/reference/objects/managedgroupdata"
     },
     {
-      "name": "Permission",
-      "description": null,
-      "url": "/alerts-x/reference/objects/permission"
-    },
-    {
       "name": "RoleEdge",
       "description": null,
       "url": "/alerts-x/reference/objects/roleedge"
+    },
+    {
+      "name": "Permission",
+      "description": null,
+      "url": "/alerts-x/reference/objects/permission"
     }
   ],
   "enumValues": null,

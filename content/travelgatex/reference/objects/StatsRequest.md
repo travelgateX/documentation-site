@@ -138,6 +138,11 @@
       "name": "HotelCancelPayload",
       "description": null,
       "url": "/travelgatex/reference/objects/hotelcancelpayload"
+    },
+    {
+      "name": "HotelCommitPayload",
+      "description": null,
+      "url": "/travelgatex/reference/objects/hotelcommitpayload"
     }
   ],
   "enumValues": null,

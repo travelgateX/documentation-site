@@ -179,6 +179,22 @@
           "description": null
         }
       ]
+    },
+    {
+      "typeString": "LegacyLink",
+      "name": "legacyLink",
+      "url": "/stats/reference/objects/legacylink",
+      "description": null,
+      "isDeprecated": false,
+      "args": null
+    },
+    {
+      "typeString": "Access",
+      "name": "master",
+      "url": "/stats/reference/objects/access",
+      "description": null,
+      "isDeprecated": false,
+      "args": null
     }
   ],
   "requireby": [

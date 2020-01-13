@@ -25,9 +25,9 @@
       "url": "/paymentx/reference/objects/memberdata"
     },
     {
-      "name": "APIData",
+      "name": "RoleData",
       "description": null,
-      "url": "/paymentx/reference/objects/apidata"
+      "url": "/paymentx/reference/objects/roledata"
     },
     {
       "name": "ResourceData",
@@ -35,9 +35,9 @@
       "url": "/paymentx/reference/objects/resourcedata"
     },
     {
-      "name": "RoleData",
+      "name": "APIData",
       "description": null,
-      "url": "/paymentx/reference/objects/roledata"
+      "url": "/paymentx/reference/objects/apidata"
     },
     {
       "name": "AccessData",

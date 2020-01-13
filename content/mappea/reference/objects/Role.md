@@ -53,11 +53,6 @@
   ],
   "requireby": [
     {
-      "name": "RoleEdge",
-      "description": null,
-      "url": "/mappea/reference/objects/roleedge"
-    },
-    {
       "name": "Permission",
       "description": null,
       "url": "/mappea/reference/objects/permission"
@@ -66,6 +61,11 @@
       "name": "ManagedGroupData",
       "description": null,
       "url": "/mappea/reference/objects/managedgroupdata"
+    },
+    {
+      "name": "RoleEdge",
+      "description": null,
+      "url": "/mappea/reference/objects/roleedge"
     }
   ],
   "enumValues": null,

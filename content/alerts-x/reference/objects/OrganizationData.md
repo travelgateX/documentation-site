@@ -563,6 +563,46 @@
       "description": null,
       "isDeprecated": false,
       "args": null
+    },
+    {
+      "typeString": "Country!",
+      "name": "country",
+      "url": "/alerts-x/reference/scalars/country",
+      "description": null,
+      "isDeprecated": false,
+      "args": null
+    },
+    {
+      "typeString": "AccessConnection",
+      "name": "allAccesses",
+      "url": "/alerts-x/reference/objects/accessconnection",
+      "description": null,
+      "isDeprecated": false,
+      "args": null
+    },
+    {
+      "typeString": "SupplierConnection",
+      "name": "allSuppliers",
+      "url": "/alerts-x/reference/objects/supplierconnection",
+      "description": null,
+      "isDeprecated": false,
+      "args": null
+    },
+    {
+      "typeString": "ClientConnection",
+      "name": "allClients",
+      "url": "/alerts-x/reference/objects/clientconnection",
+      "description": null,
+      "isDeprecated": false,
+      "args": null
+    },
+    {
+      "typeString": "ProfileConnection",
+      "name": "allProfiles",
+      "url": "/alerts-x/reference/objects/profileconnection",
+      "description": null,
+      "isDeprecated": false,
+      "args": null
     }
   ],
   "requireby": [

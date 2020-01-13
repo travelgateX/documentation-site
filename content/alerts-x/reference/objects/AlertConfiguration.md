@@ -36,6 +36,14 @@
       "args": null
     },
     {
+      "typeString": "Int!",
+      "name": "timesToRecovery",
+      "url": "/alerts-x/reference/scalars/int",
+      "description": "The number of times the alert must be recovered in order to notify",
+      "isDeprecated": false,
+      "args": null
+    },
+    {
       "typeString": "AlertTypeConfiguration",
       "name": "typeConfiguration",
       "url": "/alerts-x/reference/objects/alerttypeconfiguration",

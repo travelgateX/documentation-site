@@ -179,6 +179,22 @@
           "description": null
         }
       ]
+    },
+    {
+      "typeString": "LegacyLink",
+      "name": "legacyLink",
+      "url": "/mappea/reference/objects/legacylink",
+      "description": null,
+      "isDeprecated": false,
+      "args": null
+    },
+    {
+      "typeString": "Access",
+      "name": "master",
+      "url": "/mappea/reference/objects/access",
+      "description": null,
+      "isDeprecated": false,
+      "args": null
     }
   ],
   "requireby": [

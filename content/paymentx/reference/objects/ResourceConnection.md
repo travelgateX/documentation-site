@@ -22,14 +22,14 @@
   ],
   "requireby": [
     {
-      "name": "APIData",
-      "description": null,
-      "url": "/paymentx/reference/objects/apidata"
-    },
-    {
       "name": "RoleData",
       "description": null,
       "url": "/paymentx/reference/objects/roledata"
+    },
+    {
+      "name": "APIData",
+      "description": null,
+      "url": "/paymentx/reference/objects/apidata"
     }
   ],
   "enumValues": null,

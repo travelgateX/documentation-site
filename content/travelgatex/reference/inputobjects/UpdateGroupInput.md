@@ -37,6 +37,13 @@
       "url": "/travelgatex/reference/scalars/string",
       "description": null,
       "args": null
+    },
+    {
+      "typeString": "Country",
+      "name": "country",
+      "url": "/travelgatex/reference/scalars/country",
+      "description": null,
+      "args": null
     }
   ],
   "requireby": null,

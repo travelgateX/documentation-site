@@ -3,7 +3,13 @@
   "description": "",
   "weight": 1,
   "fields": null,
-  "requireby": null,
+  "requireby": [
+    {
+      "name": "ReviewedRateRule",
+      "description": null,
+      "url": "/travelgatex/reference/objects/reviewedraterule"
+    }
+  ],
   "enumValues": [
     {
       "name": "PACKAGE",
@@ -85,3 +91,7 @@
 ## GraphQL schema definition
 
 {{% graphql-schema-enum %}}
+
+## Required by
+
+{{% graphql-require-by %}}

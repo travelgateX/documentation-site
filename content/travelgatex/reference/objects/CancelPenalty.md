@@ -4,6 +4,14 @@
   "weight": 1,
   "fields": [
     {
+      "typeString": "DateTime",
+      "name": "deadline",
+      "url": "/travelgatex/reference/scalars/datetime",
+      "description": null,
+      "isDeprecated": false,
+      "args": null
+    },
+    {
       "typeString": "Int!",
       "name": "hoursBefore",
       "url": "/travelgatex/reference/scalars/int",

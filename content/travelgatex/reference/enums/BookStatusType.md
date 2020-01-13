@@ -13,6 +13,11 @@
       "name": "HotelCancelDetail",
       "description": null,
       "url": "/travelgatex/reference/objects/hotelcanceldetail"
+    },
+    {
+      "name": "HotelCommitDetails",
+      "description": null,
+      "url": "/travelgatex/reference/objects/hotelcommitdetails"
     }
   ],
   "enumValues": [
@@ -42,6 +47,12 @@
     },
     {
       "name": "UNKNOWN",
+      "description": null,
+      "isDeprecated": false,
+      "deprecationReason": null
+    },
+    {
+      "name": "PENDING_COMMIT",
       "description": null,
       "isDeprecated": false,
       "deprecationReason": null
