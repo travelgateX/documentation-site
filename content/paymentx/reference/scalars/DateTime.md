@@ -35,14 +35,24 @@
       "url": "/paymentx/reference/objects/member"
     },
     {
-      "name": "API",
+      "name": "MacroPermission",
       "description": null,
-      "url": "/paymentx/reference/objects/api"
+      "url": "/paymentx/reference/objects/macropermission"
+    },
+    {
+      "name": "Role",
+      "description": null,
+      "url": "/paymentx/reference/objects/role"
     },
     {
       "name": "Resource",
       "description": null,
       "url": "/paymentx/reference/objects/resource"
+    },
+    {
+      "name": "API",
+      "description": null,
+      "url": "/paymentx/reference/objects/api"
     },
     {
       "name": "Operation",
@@ -53,11 +63,6 @@
       "name": "ManagedGroup",
       "description": null,
       "url": "/paymentx/reference/objects/managedgroup"
-    },
-    {
-      "name": "Role",
-      "description": null,
-      "url": "/paymentx/reference/objects/role"
     },
     {
       "name": "Access",
@@ -88,11 +93,6 @@
       "name": "Product",
       "description": null,
       "url": "/paymentx/reference/objects/product"
-    },
-    {
-      "name": "MacroPermission",
-      "description": null,
-      "url": "/paymentx/reference/objects/macropermission"
     },
     {
       "name": "Client",

@@ -23,6 +23,13 @@
       "url": "/travelgatex/reference/scalars/id",
       "description": null,
       "args": null
+    },
+    {
+      "typeString": "[SharedType!]",
+      "name": "shared",
+      "url": "/travelgatex/reference/enums/sharedtype",
+      "description": null,
+      "args": null
     }
   ],
   "requireby": null,

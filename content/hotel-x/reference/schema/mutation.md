@@ -217,6 +217,27 @@
       ]
     },
     {
+      "typeString": "HotelCommitPayload",
+      "name": "commit",
+      "url": "/hotel-x/reference/objects/hotelcommitpayload",
+      "description": null,
+      "isDeprecated": false,
+      "args": [
+        {
+          "typeString": "HotelCommitInput!",
+          "name": "input",
+          "url": "/hotel-x/reference/inputobjects/hotelcommitinput",
+          "description": null
+        },
+        {
+          "typeString": "HotelSettingsInput",
+          "name": "settings",
+          "url": "/hotel-x/reference/inputobjects/hotelsettingsinput",
+          "description": null
+        }
+      ]
+    },
+    {
       "typeString": "String!",
       "name": "loadFile",
       "url": "/hotel-x/reference/scalars/string",

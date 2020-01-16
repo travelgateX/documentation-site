@@ -23,6 +23,11 @@
       "name": "UrlsInput",
       "description": null,
       "url": "/hotel-x/reference/inputobjects/urlsinput"
+    },
+    {
+      "name": "Urls",
+      "description": null,
+      "url": "/hotel-x/reference/objects/urls"
     }
   ],
   "enumValues": null,

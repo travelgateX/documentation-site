@@ -65,14 +65,24 @@
       "url": "/stats/reference/objects/member"
     },
     {
-      "name": "API",
+      "name": "MacroPermission",
       "description": null,
-      "url": "/stats/reference/objects/api"
+      "url": "/stats/reference/objects/macropermission"
+    },
+    {
+      "name": "Role",
+      "description": null,
+      "url": "/stats/reference/objects/role"
     },
     {
       "name": "Resource",
       "description": null,
       "url": "/stats/reference/objects/resource"
+    },
+    {
+      "name": "API",
+      "description": null,
+      "url": "/stats/reference/objects/api"
     },
     {
       "name": "Operation",
@@ -83,11 +93,6 @@
       "name": "ManagedGroup",
       "description": null,
       "url": "/stats/reference/objects/managedgroup"
-    },
-    {
-      "name": "Role",
-      "description": null,
-      "url": "/stats/reference/objects/role"
     },
     {
       "name": "Profile",
@@ -108,11 +113,6 @@
       "name": "Product",
       "description": null,
       "url": "/stats/reference/objects/product"
-    },
-    {
-      "name": "MacroPermission",
-      "description": null,
-      "url": "/stats/reference/objects/macropermission"
     },
     {
       "name": "StatsAsset",

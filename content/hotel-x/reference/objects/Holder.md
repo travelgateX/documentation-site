@@ -25,6 +25,11 @@
       "name": "HotelBookingDetail",
       "description": null,
       "url": "/hotel-x/reference/objects/hotelbookingdetail"
+    },
+    {
+      "name": "PaymentCardData",
+      "description": null,
+      "url": "/hotel-x/reference/objects/paymentcarddata"
     }
   ],
   "enumValues": null,

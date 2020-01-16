@@ -49,6 +49,61 @@
       "description": null,
       "isDeprecated": false,
       "args": null
+    },
+    {
+      "typeString": "[AmenityStatic!]",
+      "name": "amenities",
+      "url": "/hotel-x/reference/objects/amenitystatic",
+      "description": null,
+      "isDeprecated": false,
+      "args": null
+    },
+    {
+      "typeString": "[View!]",
+      "name": "views",
+      "url": "/hotel-x/reference/objects/view",
+      "description": null,
+      "isDeprecated": false,
+      "args": null
+    },
+    {
+      "typeString": "[Media!]",
+      "name": "medias",
+      "url": "/hotel-x/reference/objects/media",
+      "description": null,
+      "isDeprecated": false,
+      "args": null
+    },
+    {
+      "typeString": "[BedStatic!]",
+      "name": "beds",
+      "url": "/hotel-x/reference/objects/bedstatic",
+      "description": null,
+      "isDeprecated": false,
+      "args": null
+    },
+    {
+      "typeString": "Area",
+      "name": "area",
+      "url": "/hotel-x/reference/scalars/area",
+      "description": null,
+      "isDeprecated": false,
+      "args": null
+    },
+    {
+      "typeString": "HotelXAmenityConnection",
+      "name": "allAmenities",
+      "url": "/hotel-x/reference/objects/hotelxamenityconnection",
+      "description": null,
+      "isDeprecated": false,
+      "args": [
+        {
+          "typeString": "[HotelXMapOptionInput!]",
+          "name": "mapOptions",
+          "url": "/hotel-x/reference/inputobjects/hotelxmapoptioninput",
+          "description": null
+        }
+      ]
     }
   ],
   "requireby": [

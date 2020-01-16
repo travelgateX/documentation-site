@@ -40,6 +40,11 @@
       "url": "/travelgatex/reference/inputobjects/systemfilter"
     },
     {
+      "name": "AdviseMessage",
+      "description": null,
+      "url": "/travelgatex/reference/objects/advisemessage"
+    },
+    {
       "name": "Access",
       "description": null,
       "url": "/travelgatex/reference/objects/access"
@@ -100,11 +105,6 @@
       "url": "/travelgatex/reference/objects/groupdata"
     },
     {
-      "name": "AdviseMessage",
-      "description": null,
-      "url": "/travelgatex/reference/objects/advisemessage"
-    },
-    {
       "name": "Member",
       "description": null,
       "url": "/travelgatex/reference/objects/member"
@@ -120,6 +120,46 @@
       "url": "/travelgatex/reference/objects/memberdata"
     },
     {
+      "name": "MacroPermission",
+      "description": null,
+      "url": "/travelgatex/reference/objects/macropermission"
+    },
+    {
+      "name": "MacroPermissionData",
+      "description": null,
+      "url": "/travelgatex/reference/objects/macropermissiondata"
+    },
+    {
+      "name": "Role",
+      "description": null,
+      "url": "/travelgatex/reference/objects/role"
+    },
+    {
+      "name": "Resource",
+      "description": null,
+      "url": "/travelgatex/reference/objects/resource"
+    },
+    {
+      "name": "API",
+      "description": null,
+      "url": "/travelgatex/reference/objects/api"
+    },
+    {
+      "name": "RoleData",
+      "description": null,
+      "url": "/travelgatex/reference/objects/roledata"
+    },
+    {
+      "name": "ResourceData",
+      "description": null,
+      "url": "/travelgatex/reference/objects/resourcedata"
+    },
+    {
+      "name": "APIData",
+      "description": null,
+      "url": "/travelgatex/reference/objects/apidata"
+    },
+    {
       "name": "ManagedGroup",
       "description": null,
       "url": "/travelgatex/reference/objects/managedgroup"
@@ -128,36 +168,6 @@
       "name": "ManagedGroupData",
       "description": null,
       "url": "/travelgatex/reference/objects/managedgroupdata"
-    },
-    {
-      "name": "API",
-      "description": null,
-      "url": "/travelgatex/reference/objects/api"
-    },
-    {
-      "name": "Resource",
-      "description": null,
-      "url": "/travelgatex/reference/objects/resource"
-    },
-    {
-      "name": "Role",
-      "description": null,
-      "url": "/travelgatex/reference/objects/role"
-    },
-    {
-      "name": "APIData",
-      "description": null,
-      "url": "/travelgatex/reference/objects/apidata"
-    },
-    {
-      "name": "ResourceData",
-      "description": null,
-      "url": "/travelgatex/reference/objects/resourcedata"
-    },
-    {
-      "name": "RoleData",
-      "description": null,
-      "url": "/travelgatex/reference/objects/roledata"
     },
     {
       "name": "OrganizationData",
@@ -223,16 +233,6 @@
       "name": "ProductData",
       "description": null,
       "url": "/travelgatex/reference/objects/productdata"
-    },
-    {
-      "name": "MacroPermission",
-      "description": null,
-      "url": "/travelgatex/reference/objects/macropermission"
-    },
-    {
-      "name": "MacroPermissionData",
-      "description": null,
-      "url": "/travelgatex/reference/objects/macropermissiondata"
     },
     {
       "name": "Operation",
@@ -320,6 +320,11 @@
       "url": "/travelgatex/reference/objects/giatadata"
     },
     {
+      "name": "HotelXMapOptionInput",
+      "description": null,
+      "url": "/travelgatex/reference/inputobjects/hotelxmapoptioninput"
+    },
+    {
       "name": "DestinationData",
       "description": null,
       "url": "/travelgatex/reference/objects/destinationdata"
@@ -345,6 +350,16 @@
       "url": "/travelgatex/reference/objects/geonamedata"
     },
     {
+      "name": "HotelXAmenity",
+      "description": null,
+      "url": "/travelgatex/reference/objects/hotelxamenity"
+    },
+    {
+      "name": "HotelXAmenityData",
+      "description": null,
+      "url": "/travelgatex/reference/objects/hotelxamenitydata"
+    },
+    {
       "name": "RoomStatic",
       "description": null,
       "url": "/travelgatex/reference/objects/roomstatic"
@@ -360,9 +375,24 @@
       "url": "/travelgatex/reference/objects/destination"
     },
     {
+      "name": "Metadata",
+      "description": null,
+      "url": "/travelgatex/reference/objects/metadata"
+    },
+    {
+      "name": "MetadataData",
+      "description": null,
+      "url": "/travelgatex/reference/objects/metadatadata"
+    },
+    {
       "name": "HotelXAccessInput",
       "description": null,
       "url": "/travelgatex/reference/inputobjects/hotelxaccessinput"
+    },
+    {
+      "name": "PaymentCard",
+      "description": null,
+      "url": "/travelgatex/reference/objects/paymentcard"
     },
     {
       "name": "PaymentXStoredCardIDInput",
@@ -528,6 +558,11 @@
       "name": "GrantMacroPermissionInput",
       "description": null,
       "url": "/travelgatex/reference/inputobjects/grantmacropermissioninput"
+    },
+    {
+      "name": "LegacyLinkInput",
+      "description": null,
+      "url": "/travelgatex/reference/inputobjects/legacylinkinput"
     },
     {
       "name": "HotelXUpdateStatus",

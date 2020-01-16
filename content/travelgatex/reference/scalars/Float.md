@@ -10,6 +10,11 @@
       "url": "/travelgatex/reference/objects/coordinates"
     },
     {
+      "name": "PriceStatic",
+      "description": null,
+      "url": "/travelgatex/reference/objects/pricestatic"
+    },
+    {
       "name": "AuditData",
       "description": null,
       "url": "/travelgatex/reference/objects/auditdata"

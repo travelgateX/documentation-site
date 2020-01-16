@@ -1,6 +1,6 @@
 {
 "title": "Booking List",
-"pagetitle": "Booking process - Booking List",
+"pagetitle": "Booking List",
 "description": "How to request for booking detail",
 "icon": "fa-list",
 "weight": 1,

@@ -5,9 +5,44 @@
   "fields": null,
   "requireby": [
     {
+      "name": "AccessConnection",
+      "description": null,
+      "url": "/travelgatex/reference/objects/accessconnection"
+    },
+    {
       "name": "SupplierFilter",
       "description": null,
       "url": "/travelgatex/reference/inputobjects/supplierfilter"
+    },
+    {
+      "name": "SupplierConnection",
+      "description": null,
+      "url": "/travelgatex/reference/objects/supplierconnection"
+    },
+    {
+      "name": "ClientConnection",
+      "description": null,
+      "url": "/travelgatex/reference/objects/clientconnection"
+    },
+    {
+      "name": "ProfileConnection",
+      "description": null,
+      "url": "/travelgatex/reference/objects/profileconnection"
+    },
+    {
+      "name": "OrganizationConnection",
+      "description": null,
+      "url": "/travelgatex/reference/objects/organizationconnection"
+    },
+    {
+      "name": "MemberConnection",
+      "description": null,
+      "url": "/travelgatex/reference/objects/memberconnection"
+    },
+    {
+      "name": "GroupConnection",
+      "description": null,
+      "url": "/travelgatex/reference/objects/groupconnection"
     },
     {
       "name": "AccessData",
@@ -75,9 +110,34 @@
       "url": "/travelgatex/reference/objects/businessrules"
     },
     {
+      "name": "CheckInformation",
+      "description": null,
+      "url": "/travelgatex/reference/objects/checkinformation"
+    },
+    {
+      "name": "BedStatic",
+      "description": null,
+      "url": "/travelgatex/reference/objects/bedstatic"
+    },
+    {
       "name": "OccupancyRange",
       "description": null,
       "url": "/travelgatex/reference/objects/occupancyrange"
+    },
+    {
+      "name": "ReviewedInt",
+      "description": null,
+      "url": "/travelgatex/reference/objects/reviewedint"
+    },
+    {
+      "name": "MetadataCandidate",
+      "description": null,
+      "url": "/travelgatex/reference/objects/metadatacandidate"
+    },
+    {
+      "name": "AgeRange",
+      "description": null,
+      "url": "/travelgatex/reference/objects/agerange"
     },
     {
       "name": "PaxInput",
@@ -198,6 +258,11 @@
       "name": "LoggingLegacyFilterInput",
       "description": "Filters needed to do a search.\nFrom (Start date of search - YYYY-MM-DD HH:mm:ss), To (End date of search - YYYY-MM-DD HH:mm:ss), ",
       "url": "/travelgatex/reference/inputobjects/logginglegacyfilterinput"
+    },
+    {
+      "name": "RangeFilter",
+      "description": null,
+      "url": "/travelgatex/reference/inputobjects/rangefilter"
     },
     {
       "name": "LoggingLegacyData",

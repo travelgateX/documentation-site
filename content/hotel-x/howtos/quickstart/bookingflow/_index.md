@@ -1,7 +1,7 @@
 +++
 title = "Booking Flow"
-pagetitle = "Hotel-X Booking Flow"
-description = ""
+pagetitle = "Booking Flow"
+description = "How to book"
 icon = "fa-exchange"
 weight = 2
 alwaysopen = false

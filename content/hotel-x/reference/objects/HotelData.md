@@ -56,8 +56,16 @@
       "name": "property",
       "url": "/hotel-x/reference/objects/property",
       "description": null,
-      "isDeprecated": false,
-      "args": null
+      "isDeprecated": true,
+      "args": null,
+      "deprecationReason": "Deprecated from 2019-10-16. Redundant information",
+      "descriptionSplitted": {
+        "date": "2019-10-16",
+        "first": "Deprecated from",
+        "second": "Redundant information"
+      },
+      "deprecationDate": "2019-10-16",
+      "typeName": "HotelData"
     },
     {
       "typeString": "String",
@@ -108,9 +116,9 @@
       "args": null
     },
     {
-      "typeString": "[Amenity!]",
+      "typeString": "[AmenityStatic!]",
       "name": "amenities",
-      "url": "/hotel-x/reference/objects/amenity",
+      "url": "/hotel-x/reference/objects/amenitystatic",
       "description": null,
       "isDeprecated": false,
       "args": null
@@ -151,6 +159,53 @@
       "description": null,
       "isDeprecated": false,
       "args": null
+    },
+    {
+      "typeString": "PropertyType",
+      "name": "propertyType",
+      "url": "/hotel-x/reference/objects/propertytype",
+      "description": null,
+      "isDeprecated": false,
+      "args": null
+    },
+    {
+      "typeString": "[MandatoryFee!]",
+      "name": "mandatoryFees",
+      "url": "/hotel-x/reference/objects/mandatoryfee",
+      "description": null,
+      "isDeprecated": false,
+      "args": null
+    },
+    {
+      "typeString": "CheckInformation",
+      "name": "checkIn",
+      "url": "/hotel-x/reference/objects/checkinformation",
+      "description": null,
+      "isDeprecated": false,
+      "args": null
+    },
+    {
+      "typeString": "CheckInformation",
+      "name": "checkOut",
+      "url": "/hotel-x/reference/objects/checkinformation",
+      "description": null,
+      "isDeprecated": false,
+      "args": null
+    },
+    {
+      "typeString": "HotelXAmenityConnection",
+      "name": "allAmenities",
+      "url": "/hotel-x/reference/objects/hotelxamenityconnection",
+      "description": null,
+      "isDeprecated": false,
+      "args": [
+        {
+          "typeString": "[HotelXMapOptionInput!]",
+          "name": "mapOptions",
+          "url": "/hotel-x/reference/inputobjects/hotelxmapoptioninput",
+          "description": null
+        }
+      ]
     }
   ],
   "requireby": [

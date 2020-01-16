@@ -27,6 +27,11 @@
       "url": "/travelgatex/reference/objects/hotelbookingdetail"
     },
     {
+      "name": "PaymentCardData",
+      "description": null,
+      "url": "/travelgatex/reference/objects/paymentcarddata"
+    },
+    {
       "name": "PaymentXStoredCardData",
       "description": null,
       "url": "/travelgatex/reference/objects/paymentxstoredcarddata"

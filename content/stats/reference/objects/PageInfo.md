@@ -20,7 +20,7 @@
       "args": null
     },
     {
-      "typeString": "String!",
+      "typeString": "String",
       "name": "startCursor",
       "url": "/stats/reference/scalars/string",
       "description": null,
@@ -28,7 +28,7 @@
       "args": null
     },
     {
-      "typeString": "String!",
+      "typeString": "String",
       "name": "endCursor",
       "url": "/stats/reference/scalars/string",
       "description": null,
@@ -93,6 +93,11 @@
       "url": "/stats/reference/objects/profileconnection"
     },
     {
+      "name": "MacroPermissionsConnection",
+      "description": null,
+      "url": "/stats/reference/objects/macropermissionsconnection"
+    },
+    {
       "name": "ResourceConnection",
       "description": null,
       "url": "/stats/reference/objects/resourceconnection"
@@ -111,11 +116,6 @@
       "name": "ProductConnection",
       "description": null,
       "url": "/stats/reference/objects/productconnection"
-    },
-    {
-      "name": "MacroPermissionsConnection",
-      "description": null,
-      "url": "/stats/reference/objects/macropermissionsconnection"
     }
   ],
   "enumValues": null,

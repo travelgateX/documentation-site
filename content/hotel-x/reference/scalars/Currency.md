@@ -20,6 +20,11 @@
       "url": "/hotel-x/reference/objects/hotelxcommonsettingsdata"
     },
     {
+      "name": "PriceStatic",
+      "description": null,
+      "url": "/hotel-x/reference/objects/pricestatic"
+    },
+    {
       "name": "SettingsBaseInput",
       "description": null,
       "url": "/hotel-x/reference/inputobjects/settingsbaseinput"

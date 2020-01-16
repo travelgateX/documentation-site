@@ -85,11 +85,6 @@
       "url": "/alerts-x/reference/objects/product"
     },
     {
-      "name": "MacroPermission",
-      "description": null,
-      "url": "/alerts-x/reference/objects/macropermission"
-    },
-    {
       "name": "Client",
       "description": null,
       "url": "/alerts-x/reference/objects/client"
@@ -103,6 +98,11 @@
       "name": "Entity",
       "description": null,
       "url": "/alerts-x/reference/objects/entity"
+    },
+    {
+      "name": "MacroPermission",
+      "description": null,
+      "url": "/alerts-x/reference/objects/macropermission"
     },
     {
       "name": "Event",

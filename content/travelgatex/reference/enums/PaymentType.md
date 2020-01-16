@@ -5,6 +5,11 @@
   "fields": null,
   "requireby": [
     {
+      "name": "ReviewedPaymentType",
+      "description": null,
+      "url": "/travelgatex/reference/objects/reviewedpaymenttype"
+    },
+    {
       "name": "HotelOptionSearch",
       "description": null,
       "url": "/travelgatex/reference/objects/hoteloptionsearch"

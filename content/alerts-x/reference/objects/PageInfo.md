@@ -20,7 +20,7 @@
       "args": null
     },
     {
-      "typeString": "String!",
+      "typeString": "String",
       "name": "startCursor",
       "url": "/alerts-x/reference/scalars/string",
       "description": null,
@@ -28,7 +28,7 @@
       "args": null
     },
     {
-      "typeString": "String!",
+      "typeString": "String",
       "name": "endCursor",
       "url": "/alerts-x/reference/scalars/string",
       "description": null,
@@ -56,6 +56,11 @@
       "name": "RoleConnection",
       "description": null,
       "url": "/alerts-x/reference/objects/roleconnection"
+    },
+    {
+      "name": "MacroPermissionsConnection",
+      "description": null,
+      "url": "/alerts-x/reference/objects/macropermissionsconnection"
     },
     {
       "name": "MemberConnection",
@@ -106,11 +111,6 @@
       "name": "ProductConnection",
       "description": null,
       "url": "/alerts-x/reference/objects/productconnection"
-    },
-    {
-      "name": "MacroPermissionsConnection",
-      "description": null,
-      "url": "/alerts-x/reference/objects/macropermissionsconnection"
     },
     {
       "name": "EntityConnection",

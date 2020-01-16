@@ -28,7 +28,7 @@
       "args": null
     },
     {
-      "typeString": "Float",
+      "typeString": "Float!",
       "name": "gross",
       "url": "/travelgatex/reference/scalars/float",
       "description": null,

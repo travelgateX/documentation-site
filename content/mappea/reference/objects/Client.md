@@ -46,6 +46,11 @@
   ],
   "requireby": [
     {
+      "name": "LegacyLink",
+      "description": null,
+      "url": "/mappea/reference/objects/legacylink"
+    },
+    {
       "name": "ClientEdge",
       "description": null,
       "url": "/mappea/reference/objects/clientedge"

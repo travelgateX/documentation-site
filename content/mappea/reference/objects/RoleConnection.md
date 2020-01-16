@@ -22,6 +22,11 @@
   ],
   "requireby": [
     {
+      "name": "GroupData",
+      "description": null,
+      "url": "/mappea/reference/objects/groupdata"
+    },
+    {
       "name": "MemberData",
       "description": null,
       "url": "/mappea/reference/objects/memberdata"
@@ -30,11 +35,6 @@
       "name": "ResourceData",
       "description": null,
       "url": "/mappea/reference/objects/resourcedata"
-    },
-    {
-      "name": "GroupData",
-      "description": null,
-      "url": "/mappea/reference/objects/groupdata"
     }
   ],
   "enumValues": null,

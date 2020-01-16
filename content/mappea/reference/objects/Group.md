@@ -53,9 +53,9 @@
   ],
   "requireby": [
     {
-      "name": "ProfileData",
+      "name": "ClientData",
       "description": null,
-      "url": "/mappea/reference/objects/profiledata"
+      "url": "/mappea/reference/objects/clientdata"
     },
     {
       "name": "GroupData",
@@ -68,14 +68,14 @@
       "url": "/mappea/reference/objects/managedgroupdata"
     },
     {
+      "name": "ProfileData",
+      "description": null,
+      "url": "/mappea/reference/objects/profiledata"
+    },
+    {
       "name": "GroupEdge",
       "description": null,
       "url": "/mappea/reference/objects/groupedge"
-    },
-    {
-      "name": "ClientData",
-      "description": null,
-      "url": "/mappea/reference/objects/clientdata"
     },
     {
       "name": "SystemData",

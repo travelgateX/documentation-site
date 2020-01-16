@@ -65,19 +65,19 @@
       "url": "/paymentx/reference/objects/memberdata"
     },
     {
-      "name": "MemberEdge",
+      "name": "MacroPermissionEdge",
       "description": null,
-      "url": "/paymentx/reference/objects/memberedge"
+      "url": "/paymentx/reference/objects/macropermissionedge"
     },
     {
-      "name": "APIEdge",
+      "name": "MacroPermissionData",
       "description": null,
-      "url": "/paymentx/reference/objects/apiedge"
+      "url": "/paymentx/reference/objects/macropermissiondata"
     },
     {
-      "name": "APIData",
+      "name": "RoleData",
       "description": null,
-      "url": "/paymentx/reference/objects/apidata"
+      "url": "/paymentx/reference/objects/roledata"
     },
     {
       "name": "ResourceEdge",
@@ -90,6 +90,11 @@
       "url": "/paymentx/reference/objects/resourcedata"
     },
     {
+      "name": "APIData",
+      "description": null,
+      "url": "/paymentx/reference/objects/apidata"
+    },
+    {
       "name": "OperationEdge",
       "description": null,
       "url": "/paymentx/reference/objects/operationedge"
@@ -100,14 +105,19 @@
       "url": "/paymentx/reference/objects/operationdata"
     },
     {
+      "name": "MemberEdge",
+      "description": null,
+      "url": "/paymentx/reference/objects/memberedge"
+    },
+    {
+      "name": "APIEdge",
+      "description": null,
+      "url": "/paymentx/reference/objects/apiedge"
+    },
+    {
       "name": "ManagedGroupEdge",
       "description": null,
       "url": "/paymentx/reference/objects/managedgroupedge"
-    },
-    {
-      "name": "RoleData",
-      "description": null,
-      "url": "/paymentx/reference/objects/roledata"
     },
     {
       "name": "AccessEdge",
@@ -153,16 +163,6 @@
       "name": "ProductData",
       "description": null,
       "url": "/paymentx/reference/objects/productdata"
-    },
-    {
-      "name": "MacroPermissionEdge",
-      "description": null,
-      "url": "/paymentx/reference/objects/macropermissionedge"
-    },
-    {
-      "name": "MacroPermissionData",
-      "description": null,
-      "url": "/paymentx/reference/objects/macropermissiondata"
     },
     {
       "name": "SupplierEdge",

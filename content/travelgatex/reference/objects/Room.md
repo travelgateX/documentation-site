@@ -106,6 +106,14 @@
       "description": null,
       "isDeprecated": false,
       "args": null
+    },
+    {
+      "typeString": "[Amenity!]",
+      "name": "amenities",
+      "url": "/travelgatex/reference/objects/amenity",
+      "description": null,
+      "isDeprecated": false,
+      "args": null
     }
   ],
   "requireby": null,

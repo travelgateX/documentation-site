@@ -1,7 +1,7 @@
 +++
 title = "Quickstart"
-pagetitle = "Hotel-X Quickstart"
-description = ""
+pagetitle = "Quickstart"
+description = "To get started with Hotel-X"
 icon = "fa-play"
 weight = 1
 alwaysopen = false

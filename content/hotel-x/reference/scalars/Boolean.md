@@ -25,9 +25,34 @@
       "url": "/hotel-x/reference/objects/hoteldata"
     },
     {
+      "name": "MandatoryFee",
+      "description": null,
+      "url": "/hotel-x/reference/objects/mandatoryfee"
+    },
+    {
       "name": "DestinationData",
       "description": null,
       "url": "/hotel-x/reference/objects/destinationdata"
+    },
+    {
+      "name": "BedStatic",
+      "description": null,
+      "url": "/hotel-x/reference/objects/bedstatic"
+    },
+    {
+      "name": "ReviewedBool",
+      "description": null,
+      "url": "/hotel-x/reference/objects/reviewedbool"
+    },
+    {
+      "name": "BookPreferenceInfo",
+      "description": null,
+      "url": "/hotel-x/reference/objects/bookpreferenceinfo"
+    },
+    {
+      "name": "BookPreferenceValue",
+      "description": null,
+      "url": "/hotel-x/reference/objects/bookpreferencevalue"
     },
     {
       "name": "SettingsBaseInput",
@@ -78,6 +103,81 @@
       "name": "PriceChange",
       "description": null,
       "url": "/hotel-x/reference/objects/pricechange"
+    },
+    {
+      "name": "SupplierData",
+      "description": null,
+      "url": "/hotel-x/reference/objects/supplierdata"
+    },
+    {
+      "name": "Provider",
+      "description": null,
+      "url": "/hotel-x/reference/objects/provider"
+    },
+    {
+      "name": "ClientFilter",
+      "description": null,
+      "url": "/hotel-x/reference/inputobjects/clientfilter"
+    },
+    {
+      "name": "AccessData",
+      "description": null,
+      "url": "/hotel-x/reference/objects/accessdata"
+    },
+    {
+      "name": "ClientData",
+      "description": null,
+      "url": "/hotel-x/reference/objects/clientdata"
+    },
+    {
+      "name": "SupplierFilter",
+      "description": null,
+      "url": "/hotel-x/reference/inputobjects/supplierfilter"
+    },
+    {
+      "name": "GroupData",
+      "description": null,
+      "url": "/hotel-x/reference/objects/groupdata"
+    },
+    {
+      "name": "GroupCommonData",
+      "description": null,
+      "url": "/hotel-x/reference/interfaces/groupcommondata"
+    },
+    {
+      "name": "MemberData",
+      "description": null,
+      "url": "/hotel-x/reference/objects/memberdata"
+    },
+    {
+      "name": "RoleData",
+      "description": null,
+      "url": "/hotel-x/reference/objects/roledata"
+    },
+    {
+      "name": "ResourceData",
+      "description": null,
+      "url": "/hotel-x/reference/objects/resourcedata"
+    },
+    {
+      "name": "APIData",
+      "description": null,
+      "url": "/hotel-x/reference/objects/apidata"
+    },
+    {
+      "name": "ProfileData",
+      "description": null,
+      "url": "/hotel-x/reference/objects/profiledata"
+    },
+    {
+      "name": "OrganizationData",
+      "description": null,
+      "url": "/hotel-x/reference/objects/organizationdata"
+    },
+    {
+      "name": "SystemData",
+      "description": null,
+      "url": "/hotel-x/reference/objects/systemdata"
     },
     {
       "name": "HotelRuntimeParameter",

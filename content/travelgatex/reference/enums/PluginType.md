@@ -74,6 +74,18 @@
       "description": null,
       "isDeprecated": false,
       "deprecationReason": null
+    },
+    {
+      "name": "MARKETS_GROUP",
+      "description": null,
+      "isDeprecated": false,
+      "deprecationReason": null
+    },
+    {
+      "name": "AMENITY_MAP",
+      "description": null,
+      "isDeprecated": false,
+      "deprecationReason": null
     }
   ],
   "operator": "enum",

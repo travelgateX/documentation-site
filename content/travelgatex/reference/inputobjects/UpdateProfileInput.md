@@ -18,7 +18,7 @@
       "args": null
     },
     {
-      "typeString": "ProfileType",
+      "typeString": "[ProfileType]",
       "name": "type",
       "url": "/travelgatex/reference/enums/profiletype",
       "description": null,

@@ -20,7 +20,7 @@
       "args": null
     },
     {
-      "typeString": "String!",
+      "typeString": "String",
       "name": "startCursor",
       "url": "/travelgatex/reference/scalars/string",
       "description": null,
@@ -28,7 +28,7 @@
       "args": null
     },
     {
-      "typeString": "String!",
+      "typeString": "String",
       "name": "endCursor",
       "url": "/travelgatex/reference/scalars/string",
       "description": null,
@@ -146,6 +146,16 @@
       "name": "DestinationConnection",
       "description": null,
       "url": "/travelgatex/reference/objects/destinationconnection"
+    },
+    {
+      "name": "MetadataConnection",
+      "description": null,
+      "url": "/travelgatex/reference/objects/metadataconnection"
+    },
+    {
+      "name": "HotelXAmenityConnection",
+      "description": null,
+      "url": "/travelgatex/reference/objects/hotelxamenityconnection"
     },
     {
       "name": "PaymentXStoredCardConnection",

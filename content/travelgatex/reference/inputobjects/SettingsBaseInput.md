@@ -30,6 +30,13 @@
       "url": "/travelgatex/reference/scalars/currency",
       "description": null,
       "args": null
+    },
+    {
+      "typeString": "Boolean",
+      "name": "commitRequired",
+      "url": "/travelgatex/reference/scalars/boolean",
+      "description": null,
+      "args": null
     }
   ],
   "requireby": [

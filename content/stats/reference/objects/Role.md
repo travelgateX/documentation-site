@@ -53,6 +53,11 @@
   ],
   "requireby": [
     {
+      "name": "Permission",
+      "description": null,
+      "url": "/stats/reference/objects/permission"
+    },
+    {
       "name": "ManagedGroupData",
       "description": null,
       "url": "/stats/reference/objects/managedgroupdata"
@@ -61,11 +66,6 @@
       "name": "RoleEdge",
       "description": null,
       "url": "/stats/reference/objects/roleedge"
-    },
-    {
-      "name": "Permission",
-      "description": null,
-      "url": "/stats/reference/objects/permission"
     }
   ],
   "enumValues": null,

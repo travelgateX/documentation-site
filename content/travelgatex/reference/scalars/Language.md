@@ -48,6 +48,11 @@
       "name": "HotelCancelInput",
       "description": null,
       "url": "/travelgatex/reference/inputobjects/hotelcancelinput"
+    },
+    {
+      "name": "HotelCommitInput",
+      "description": null,
+      "url": "/travelgatex/reference/inputobjects/hotelcommitinput"
     }
   ],
   "enumValues": null,

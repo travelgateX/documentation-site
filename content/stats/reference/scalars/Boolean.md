@@ -65,9 +65,9 @@
       "url": "/stats/reference/objects/memberdata"
     },
     {
-      "name": "APIData",
+      "name": "RoleData",
       "description": null,
-      "url": "/stats/reference/objects/apidata"
+      "url": "/stats/reference/objects/roledata"
     },
     {
       "name": "ResourceData",
@@ -75,9 +75,9 @@
       "url": "/stats/reference/objects/resourcedata"
     },
     {
-      "name": "RoleData",
+      "name": "APIData",
       "description": null,
-      "url": "/stats/reference/objects/roledata"
+      "url": "/stats/reference/objects/apidata"
     },
     {
       "name": "ProfileData",

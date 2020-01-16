@@ -1,6 +1,6 @@
 +++
 title = "Supplier, Access, Client and Context"
-pagetitle = "Hotel-X Supplier, Access, Client and Context"
+pagetitle = "Supplier, Access, Client and Context"
 description = "Learn about entities used in HotelX"
 icon = "fa-exchange"
 weight = 1

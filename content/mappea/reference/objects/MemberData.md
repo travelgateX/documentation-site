@@ -132,6 +132,45 @@
           "description": null
         }
       ]
+    },
+    {
+      "typeString": "MacroPermissionsConnection",
+      "name": "macroPermissions",
+      "url": "/mappea/reference/objects/macropermissionsconnection",
+      "description": null,
+      "isDeprecated": false,
+      "args": [
+        {
+          "typeString": "[ID!]",
+          "name": "codes",
+          "url": "/mappea/reference/scalars/id",
+          "description": null
+        },
+        {
+          "typeString": "Int",
+          "name": "first",
+          "url": "/mappea/reference/scalars/int",
+          "description": null
+        },
+        {
+          "typeString": "Int",
+          "name": "last",
+          "url": "/mappea/reference/scalars/int",
+          "description": null
+        },
+        {
+          "typeString": "String",
+          "name": "before",
+          "url": "/mappea/reference/scalars/string",
+          "description": null
+        },
+        {
+          "typeString": "String",
+          "name": "after",
+          "url": "/mappea/reference/scalars/string",
+          "description": null
+        }
+      ]
     }
   ],
   "requireby": [

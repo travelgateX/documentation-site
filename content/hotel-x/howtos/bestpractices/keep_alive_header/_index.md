@@ -1,6 +1,6 @@
 +++
 title = "Keep Alive Header"
-pagetitle = "Hotel-X Keep Alive Header"
+pagetitle = "Keep Alive Header"
 description = ""
 icon = "fa-exchange"
 weight = 2

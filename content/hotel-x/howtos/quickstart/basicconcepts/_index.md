@@ -1,7 +1,7 @@
 +++
 title = "Basic Concepts"
-pagetitle = "Hotel-X Basics Concepts"
-description = "Understand TravelgateX basic concepts"
+pagetitle = "Basics Concepts"
+description = "Understand Hotel-X basic concepts"
 icon = "fa-th-list" 
 weight = 1
 alwaysopen = false

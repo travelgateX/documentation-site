@@ -15,9 +15,24 @@
       "url": "/stats/reference/objects/accessdata"
     },
     {
+      "name": "GroupConnection",
+      "description": null,
+      "url": "/stats/reference/objects/groupconnection"
+    },
+    {
       "name": "SupplierData",
       "description": null,
       "url": "/stats/reference/objects/supplierdata"
+    },
+    {
+      "name": "AccessConnection",
+      "description": null,
+      "url": "/stats/reference/objects/accessconnection"
+    },
+    {
+      "name": "ClientConnection",
+      "description": null,
+      "url": "/stats/reference/objects/clientconnection"
     },
     {
       "name": "SupplierFilter",
@@ -28,6 +43,21 @@
       "name": "GroupData",
       "description": null,
       "url": "/stats/reference/objects/groupdata"
+    },
+    {
+      "name": "MemberConnection",
+      "description": null,
+      "url": "/stats/reference/objects/memberconnection"
+    },
+    {
+      "name": "SupplierConnection",
+      "description": null,
+      "url": "/stats/reference/objects/supplierconnection"
+    },
+    {
+      "name": "ProfileConnection",
+      "description": null,
+      "url": "/stats/reference/objects/profileconnection"
     },
     {
       "name": "StatsInfo",

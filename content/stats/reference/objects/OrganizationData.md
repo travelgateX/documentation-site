@@ -563,6 +563,46 @@
       "description": null,
       "isDeprecated": false,
       "args": null
+    },
+    {
+      "typeString": "Country!",
+      "name": "country",
+      "url": "/stats/reference/scalars/country",
+      "description": null,
+      "isDeprecated": false,
+      "args": null
+    },
+    {
+      "typeString": "AccessConnection",
+      "name": "allAccesses",
+      "url": "/stats/reference/objects/accessconnection",
+      "description": null,
+      "isDeprecated": false,
+      "args": null
+    },
+    {
+      "typeString": "SupplierConnection",
+      "name": "allSuppliers",
+      "url": "/stats/reference/objects/supplierconnection",
+      "description": null,
+      "isDeprecated": false,
+      "args": null
+    },
+    {
+      "typeString": "ClientConnection",
+      "name": "allClients",
+      "url": "/stats/reference/objects/clientconnection",
+      "description": null,
+      "isDeprecated": false,
+      "args": null
+    },
+    {
+      "typeString": "ProfileConnection",
+      "name": "allProfiles",
+      "url": "/stats/reference/objects/profileconnection",
+      "description": null,
+      "isDeprecated": false,
+      "args": null
     }
   ],
   "requireby": [

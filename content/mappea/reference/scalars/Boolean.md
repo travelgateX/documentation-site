@@ -30,9 +30,19 @@
       "url": "/mappea/reference/objects/accessdata"
     },
     {
-      "name": "OrganizationData",
+      "name": "ClientData",
       "description": null,
-      "url": "/mappea/reference/objects/organizationdata"
+      "url": "/mappea/reference/objects/clientdata"
+    },
+    {
+      "name": "SupplierFilter",
+      "description": null,
+      "url": "/mappea/reference/inputobjects/supplierfilter"
+    },
+    {
+      "name": "GroupData",
+      "description": null,
+      "url": "/mappea/reference/objects/groupdata"
     },
     {
       "name": "GroupCommonData",
@@ -65,19 +75,9 @@
       "url": "/mappea/reference/objects/profiledata"
     },
     {
-      "name": "GroupData",
+      "name": "OrganizationData",
       "description": null,
-      "url": "/mappea/reference/objects/groupdata"
-    },
-    {
-      "name": "ClientData",
-      "description": null,
-      "url": "/mappea/reference/objects/clientdata"
-    },
-    {
-      "name": "SupplierFilter",
-      "description": null,
-      "url": "/mappea/reference/inputobjects/supplierfilter"
+      "url": "/mappea/reference/objects/organizationdata"
     },
     {
       "name": "SystemData",

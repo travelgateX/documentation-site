@@ -32,6 +32,30 @@
       "name": "time",
       "url": "/travelgatex/reference/scalars/int",
       "description": null,
+      "isDeprecated": true,
+      "args": null,
+      "deprecationReason": "Added new fields averageTime and totalTime.",
+      "descriptionSplitted": {
+        "date": "2019-04-03",
+        "first": "deprecated from",
+        "second": "Added new fields averageTime and totalTime."
+      },
+      "deprecationDate": "2019-04-03",
+      "typeName": "StatsInfo"
+    },
+    {
+      "typeString": "Int64!",
+      "name": "averageTime",
+      "url": "/travelgatex/reference/scalars/int64",
+      "description": null,
+      "isDeprecated": false,
+      "args": null
+    },
+    {
+      "typeString": "Int64!",
+      "name": "totalTime",
+      "url": "/travelgatex/reference/scalars/int64",
+      "description": null,
       "isDeprecated": false,
       "args": null
     },

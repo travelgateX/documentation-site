@@ -46,6 +46,13 @@
       "args": null
     },
     {
+      "typeString": "Int",
+      "name": "timesToRecovery",
+      "url": "/travelgatex/reference/scalars/int",
+      "description": "The number of times the alert must be recovered in order to notify",
+      "args": null
+    },
+    {
       "typeString": "Boolean",
       "name": "noRecoveries",
       "url": "/travelgatex/reference/scalars/boolean",

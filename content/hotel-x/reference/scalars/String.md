@@ -150,14 +150,29 @@
       "url": "/hotel-x/reference/objects/contact"
     },
     {
-      "name": "Amenity",
+      "name": "AmenityStatic",
       "description": null,
-      "url": "/hotel-x/reference/objects/amenity"
+      "url": "/hotel-x/reference/objects/amenitystatic"
     },
     {
       "name": "Media",
       "description": null,
       "url": "/hotel-x/reference/objects/media"
+    },
+    {
+      "name": "PropertyType",
+      "description": null,
+      "url": "/hotel-x/reference/objects/propertytype"
+    },
+    {
+      "name": "MandatoryFee",
+      "description": null,
+      "url": "/hotel-x/reference/objects/mandatoryfee"
+    },
+    {
+      "name": "HotelXMapOptionInput",
+      "description": null,
+      "url": "/hotel-x/reference/inputobjects/hotelxmapoptioninput"
     },
     {
       "name": "DestinationData",
@@ -175,6 +190,21 @@
       "url": "/hotel-x/reference/objects/geonamedata"
     },
     {
+      "name": "HotelXAmenityEdge",
+      "description": null,
+      "url": "/hotel-x/reference/objects/hotelxamenityedge"
+    },
+    {
+      "name": "HotelXAmenityData",
+      "description": null,
+      "url": "/hotel-x/reference/objects/hotelxamenitydata"
+    },
+    {
+      "name": "HotelXMappedCode",
+      "description": null,
+      "url": "/hotel-x/reference/objects/hotelxmappedcode"
+    },
+    {
       "name": "RoomEdge",
       "description": null,
       "url": "/hotel-x/reference/objects/roomedge"
@@ -185,9 +215,34 @@
       "url": "/hotel-x/reference/objects/roomdata"
     },
     {
+      "name": "View",
+      "description": null,
+      "url": "/hotel-x/reference/objects/view"
+    },
+    {
+      "name": "BedStatic",
+      "description": null,
+      "url": "/hotel-x/reference/objects/bedstatic"
+    },
+    {
       "name": "DestinationEdge",
       "description": null,
       "url": "/hotel-x/reference/objects/destinationedge"
+    },
+    {
+      "name": "MetadataEdge",
+      "description": null,
+      "url": "/hotel-x/reference/objects/metadataedge"
+    },
+    {
+      "name": "ReviewedText",
+      "description": null,
+      "url": "/hotel-x/reference/objects/reviewedtext"
+    },
+    {
+      "name": "BookPreferenceValue",
+      "description": null,
+      "url": "/hotel-x/reference/objects/bookpreferencevalue"
     },
     {
       "name": "HotelXSupplierInput",
@@ -268,6 +323,11 @@
       "name": "Surcharge",
       "description": null,
       "url": "/hotel-x/reference/objects/surcharge"
+    },
+    {
+      "name": "Amenity",
+      "description": null,
+      "url": "/hotel-x/reference/objects/amenity"
     },
     {
       "name": "BookableOptionSearch",
@@ -360,6 +420,151 @@
       "url": "/hotel-x/reference/objects/bookingroom"
     },
     {
+      "name": "SupplierData",
+      "description": null,
+      "url": "/hotel-x/reference/objects/supplierdata"
+    },
+    {
+      "name": "Provider",
+      "description": null,
+      "url": "/hotel-x/reference/objects/provider"
+    },
+    {
+      "name": "AccessEdge",
+      "description": null,
+      "url": "/hotel-x/reference/objects/accessedge"
+    },
+    {
+      "name": "AccessData",
+      "description": null,
+      "url": "/hotel-x/reference/objects/accessdata"
+    },
+    {
+      "name": "Parameter",
+      "description": null,
+      "url": "/hotel-x/reference/objects/parameter"
+    },
+    {
+      "name": "GroupData",
+      "description": null,
+      "url": "/hotel-x/reference/objects/groupdata"
+    },
+    {
+      "name": "GroupCommonData",
+      "description": null,
+      "url": "/hotel-x/reference/interfaces/groupcommondata"
+    },
+    {
+      "name": "MemberData",
+      "description": null,
+      "url": "/hotel-x/reference/objects/memberdata"
+    },
+    {
+      "name": "MacroPermissionEdge",
+      "description": null,
+      "url": "/hotel-x/reference/objects/macropermissionedge"
+    },
+    {
+      "name": "MacroPermissionData",
+      "description": null,
+      "url": "/hotel-x/reference/objects/macropermissiondata"
+    },
+    {
+      "name": "RoleData",
+      "description": null,
+      "url": "/hotel-x/reference/objects/roledata"
+    },
+    {
+      "name": "ResourceEdge",
+      "description": null,
+      "url": "/hotel-x/reference/objects/resourceedge"
+    },
+    {
+      "name": "ResourceData",
+      "description": null,
+      "url": "/hotel-x/reference/objects/resourcedata"
+    },
+    {
+      "name": "APIData",
+      "description": null,
+      "url": "/hotel-x/reference/objects/apidata"
+    },
+    {
+      "name": "OperationEdge",
+      "description": null,
+      "url": "/hotel-x/reference/objects/operationedge"
+    },
+    {
+      "name": "OperationData",
+      "description": null,
+      "url": "/hotel-x/reference/objects/operationdata"
+    },
+    {
+      "name": "MemberEdge",
+      "description": null,
+      "url": "/hotel-x/reference/objects/memberedge"
+    },
+    {
+      "name": "APIEdge",
+      "description": null,
+      "url": "/hotel-x/reference/objects/apiedge"
+    },
+    {
+      "name": "ManagedGroupEdge",
+      "description": null,
+      "url": "/hotel-x/reference/objects/managedgroupedge"
+    },
+    {
+      "name": "RoleEdge",
+      "description": null,
+      "url": "/hotel-x/reference/objects/roleedge"
+    },
+    {
+      "name": "ProfileEdge",
+      "description": null,
+      "url": "/hotel-x/reference/objects/profileedge"
+    },
+    {
+      "name": "ProfileData",
+      "description": null,
+      "url": "/hotel-x/reference/objects/profiledata"
+    },
+    {
+      "name": "EntityEdge",
+      "description": null,
+      "url": "/hotel-x/reference/objects/entityedge"
+    },
+    {
+      "name": "SupplierEdge",
+      "description": null,
+      "url": "/hotel-x/reference/objects/supplieredge"
+    },
+    {
+      "name": "OrganizationData",
+      "description": null,
+      "url": "/hotel-x/reference/objects/organizationdata"
+    },
+    {
+      "name": "ProductEdge",
+      "description": null,
+      "url": "/hotel-x/reference/objects/productedge"
+    },
+    {
+      "name": "ProductData",
+      "description": null,
+      "url": "/hotel-x/reference/objects/productdata"
+    },
+    {
+      "name": "GroupEdge",
+      "description": null,
+      "url": "/hotel-x/reference/objects/groupedge"
+    },
+    {
+      "name": "ClientEdge",
+      "description": null,
+      "url": "/hotel-x/reference/objects/clientedge"
+    },
+    {
       "name": "MappingContext",
       "description": null,
       "url": "/hotel-x/reference/objects/mappingcontext"
@@ -395,6 +600,11 @@
       "url": "/hotel-x/reference/inputobjects/hotelcancelinput"
     },
     {
+      "name": "HotelCommitInput",
+      "description": null,
+      "url": "/hotel-x/reference/inputobjects/hotelcommitinput"
+    },
+    {
       "name": "HotelXDefaultPluginInput",
       "description": null,
       "url": "/hotel-x/reference/inputobjects/hotelxdefaultplugininput"
@@ -418,6 +628,11 @@
       "name": "HotelCancelDetail",
       "description": null,
       "url": "/hotel-x/reference/objects/hotelcanceldetail"
+    },
+    {
+      "name": "HotelXCommitReferenceInput",
+      "description": null,
+      "url": "/hotel-x/reference/inputobjects/hotelxcommitreferenceinput"
     },
     {
       "name": "HotelXMutation",

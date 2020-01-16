@@ -36,8 +36,24 @@
       "args": null
     },
     {
-      "typeString": "String!",
+      "typeString": "String",
       "name": "market",
+      "url": "/travelgatex/reference/scalars/string",
+      "description": null,
+      "isDeprecated": true,
+      "args": null,
+      "deprecationReason": "",
+      "descriptionSplitted": {
+        "date": "2019-12-11",
+        "first": "deprecated from",
+        "second": ""
+      },
+      "deprecationDate": "2019-12-11",
+      "typeName": "HotelXDefaultSettingsData"
+    },
+    {
+      "typeString": "[String!]!",
+      "name": "markets",
       "url": "/travelgatex/reference/scalars/string",
       "description": null,
       "isDeprecated": false,

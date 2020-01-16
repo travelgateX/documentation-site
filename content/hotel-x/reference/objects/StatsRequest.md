@@ -138,6 +138,11 @@
       "name": "HotelCancelPayload",
       "description": null,
       "url": "/hotel-x/reference/objects/hotelcancelpayload"
+    },
+    {
+      "name": "HotelCommitPayload",
+      "description": null,
+      "url": "/hotel-x/reference/objects/hotelcommitpayload"
     }
   ],
   "enumValues": null,

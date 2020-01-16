@@ -15,6 +15,36 @@
       "url": "/paymentx/reference/objects/groupdata"
     },
     {
+      "name": "GroupConnection",
+      "description": null,
+      "url": "/paymentx/reference/objects/groupconnection"
+    },
+    {
+      "name": "MemberConnection",
+      "description": null,
+      "url": "/paymentx/reference/objects/memberconnection"
+    },
+    {
+      "name": "AccessConnection",
+      "description": null,
+      "url": "/paymentx/reference/objects/accessconnection"
+    },
+    {
+      "name": "SupplierConnection",
+      "description": null,
+      "url": "/paymentx/reference/objects/supplierconnection"
+    },
+    {
+      "name": "ClientConnection",
+      "description": null,
+      "url": "/paymentx/reference/objects/clientconnection"
+    },
+    {
+      "name": "ProfileConnection",
+      "description": null,
+      "url": "/paymentx/reference/objects/profileconnection"
+    },
+    {
       "name": "AccessData",
       "description": null,
       "url": "/paymentx/reference/objects/accessdata"

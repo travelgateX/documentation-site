@@ -30,6 +30,11 @@
       "url": "/hotel-x/reference/objects/criteriasearch"
     },
     {
+      "name": "OrganizationData",
+      "description": null,
+      "url": "/hotel-x/reference/objects/organizationdata"
+    },
+    {
       "name": "HotelXDefaultSettingsDataInput",
       "description": null,
       "url": "/hotel-x/reference/inputobjects/hotelxdefaultsettingsdatainput"

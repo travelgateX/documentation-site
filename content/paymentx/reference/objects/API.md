@@ -53,9 +53,9 @@
   ],
   "requireby": [
     {
-      "name": "APIEdge",
+      "name": "Permission",
       "description": null,
-      "url": "/paymentx/reference/objects/apiedge"
+      "url": "/paymentx/reference/objects/permission"
     },
     {
       "name": "OperationData",
@@ -63,14 +63,14 @@
       "url": "/paymentx/reference/objects/operationdata"
     },
     {
+      "name": "APIEdge",
+      "description": null,
+      "url": "/paymentx/reference/objects/apiedge"
+    },
+    {
       "name": "ManagedGroupData",
       "description": null,
       "url": "/paymentx/reference/objects/managedgroupdata"
-    },
-    {
-      "name": "Permission",
-      "description": null,
-      "url": "/paymentx/reference/objects/permission"
     }
   ],
   "enumValues": null,

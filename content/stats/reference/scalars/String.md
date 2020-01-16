@@ -70,19 +70,19 @@
       "url": "/stats/reference/objects/memberdata"
     },
     {
-      "name": "MemberEdge",
+      "name": "MacroPermissionEdge",
       "description": null,
-      "url": "/stats/reference/objects/memberedge"
+      "url": "/stats/reference/objects/macropermissionedge"
     },
     {
-      "name": "APIEdge",
+      "name": "MacroPermissionData",
       "description": null,
-      "url": "/stats/reference/objects/apiedge"
+      "url": "/stats/reference/objects/macropermissiondata"
     },
     {
-      "name": "APIData",
+      "name": "RoleData",
       "description": null,
-      "url": "/stats/reference/objects/apidata"
+      "url": "/stats/reference/objects/roledata"
     },
     {
       "name": "ResourceEdge",
@@ -95,6 +95,11 @@
       "url": "/stats/reference/objects/resourcedata"
     },
     {
+      "name": "APIData",
+      "description": null,
+      "url": "/stats/reference/objects/apidata"
+    },
+    {
       "name": "OperationEdge",
       "description": null,
       "url": "/stats/reference/objects/operationedge"
@@ -105,14 +110,19 @@
       "url": "/stats/reference/objects/operationdata"
     },
     {
+      "name": "MemberEdge",
+      "description": null,
+      "url": "/stats/reference/objects/memberedge"
+    },
+    {
+      "name": "APIEdge",
+      "description": null,
+      "url": "/stats/reference/objects/apiedge"
+    },
+    {
       "name": "ManagedGroupEdge",
       "description": null,
       "url": "/stats/reference/objects/managedgroupedge"
-    },
-    {
-      "name": "RoleData",
-      "description": null,
-      "url": "/stats/reference/objects/roledata"
     },
     {
       "name": "SupplierEdge",
@@ -153,16 +163,6 @@
       "name": "ProductData",
       "description": null,
       "url": "/stats/reference/objects/productdata"
-    },
-    {
-      "name": "MacroPermissionEdge",
-      "description": null,
-      "url": "/stats/reference/objects/macropermissionedge"
-    },
-    {
-      "name": "MacroPermissionData",
-      "description": null,
-      "url": "/stats/reference/objects/macropermissiondata"
     },
     {
       "name": "GroupEdge",

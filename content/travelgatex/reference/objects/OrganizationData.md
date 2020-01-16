@@ -563,6 +563,46 @@
       "description": null,
       "isDeprecated": false,
       "args": null
+    },
+    {
+      "typeString": "Country!",
+      "name": "country",
+      "url": "/travelgatex/reference/scalars/country",
+      "description": null,
+      "isDeprecated": false,
+      "args": null
+    },
+    {
+      "typeString": "AccessConnection",
+      "name": "allAccesses",
+      "url": "/travelgatex/reference/objects/accessconnection",
+      "description": null,
+      "isDeprecated": false,
+      "args": null
+    },
+    {
+      "typeString": "SupplierConnection",
+      "name": "allSuppliers",
+      "url": "/travelgatex/reference/objects/supplierconnection",
+      "description": null,
+      "isDeprecated": false,
+      "args": null
+    },
+    {
+      "typeString": "ClientConnection",
+      "name": "allClients",
+      "url": "/travelgatex/reference/objects/clientconnection",
+      "description": null,
+      "isDeprecated": false,
+      "args": null
+    },
+    {
+      "typeString": "ProfileConnection",
+      "name": "allProfiles",
+      "url": "/travelgatex/reference/objects/profileconnection",
+      "description": null,
+      "isDeprecated": false,
+      "args": null
     }
   ],
   "requireby": [
