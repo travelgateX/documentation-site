@@ -90,6 +90,14 @@
       "description": null,
       "isDeprecated": false,
       "args": null
+    },
+    {
+      "typeString": "PaymentCard",
+      "name": "paymentCard",
+      "url": "/hotel-x/reference/objects/paymentcard",
+      "description": null,
+      "isDeprecated": false,
+      "args": null
     }
   ],
   "requireby": [

@@ -51,6 +51,11 @@
       "url": "/paymentx/reference/objects/accessdata"
     },
     {
+      "name": "LegacyLink",
+      "description": null,
+      "url": "/paymentx/reference/objects/legacylink"
+    },
+    {
       "name": "SupplierEdge",
       "description": null,
       "url": "/paymentx/reference/objects/supplieredge"

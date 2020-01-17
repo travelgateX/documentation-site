@@ -39,6 +39,13 @@
       "args": null
     },
     {
+      "typeString": "Int",
+      "name": "timesToRecovery",
+      "url": "/alerts-x/reference/scalars/int",
+      "description": "The number of times the alert must be recovered in order to notify",
+      "args": null
+    },
+    {
       "typeString": "Boolean",
       "name": "noRecoveries",
       "url": "/alerts-x/reference/scalars/boolean",

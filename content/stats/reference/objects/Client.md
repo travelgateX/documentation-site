@@ -51,6 +51,11 @@
       "url": "/stats/reference/objects/statsdata"
     },
     {
+      "name": "LegacyLink",
+      "description": null,
+      "url": "/stats/reference/objects/legacylink"
+    },
+    {
       "name": "ClientEdge",
       "description": null,
       "url": "/stats/reference/objects/clientedge"

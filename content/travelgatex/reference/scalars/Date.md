@@ -10,6 +10,51 @@
       "url": "/travelgatex/reference/inputobjects/hotelcriteriasearchinput"
     },
     {
+      "name": "ReviewedBool",
+      "description": null,
+      "url": "/travelgatex/reference/objects/reviewedbool"
+    },
+    {
+      "name": "ReviewedInt",
+      "description": null,
+      "url": "/travelgatex/reference/objects/reviewedint"
+    },
+    {
+      "name": "ReviewedPaymentType",
+      "description": null,
+      "url": "/travelgatex/reference/objects/reviewedpaymenttype"
+    },
+    {
+      "name": "ReviewedHotelOptionType",
+      "description": null,
+      "url": "/travelgatex/reference/objects/reviewedhoteloptiontype"
+    },
+    {
+      "name": "ReviewedText",
+      "description": null,
+      "url": "/travelgatex/reference/objects/reviewedtext"
+    },
+    {
+      "name": "ReviwedPaxTypeRangeInRoomCandidates",
+      "description": null,
+      "url": "/travelgatex/reference/objects/reviwedpaxtyperangeinroomcandidates"
+    },
+    {
+      "name": "ReviewedRateRule",
+      "description": null,
+      "url": "/travelgatex/reference/objects/reviewedraterule"
+    },
+    {
+      "name": "ReviewedAgeRanges",
+      "description": null,
+      "url": "/travelgatex/reference/objects/reviewedageranges"
+    },
+    {
+      "name": "ReviewedAllowsBookPreferences",
+      "description": null,
+      "url": "/travelgatex/reference/objects/reviewedallowsbookpreferences"
+    },
+    {
       "name": "CriteriaSearch",
       "description": null,
       "url": "/travelgatex/reference/objects/criteriasearch"
@@ -43,6 +88,11 @@
       "name": "BookingHotel",
       "description": null,
       "url": "/travelgatex/reference/objects/bookinghotel"
+    },
+    {
+      "name": "PaymentCardData",
+      "description": null,
+      "url": "/travelgatex/reference/objects/paymentcarddata"
     },
     {
       "name": "PaymentXStoredCardData",

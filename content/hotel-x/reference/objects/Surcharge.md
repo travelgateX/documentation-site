@@ -4,6 +4,14 @@
   "weight": 1,
   "fields": [
     {
+      "typeString": "String",
+      "name": "code",
+      "url": "/hotel-x/reference/scalars/string",
+      "description": null,
+      "isDeprecated": false,
+      "args": null
+    },
+    {
       "typeString": "ChargeType!",
       "name": "chargeType",
       "url": "/hotel-x/reference/enums/chargetype",

@@ -35,9 +35,39 @@
       "url": "/alerts-x/reference/objects/alertprice"
     },
     {
+      "name": "GroupConnection",
+      "description": null,
+      "url": "/alerts-x/reference/objects/groupconnection"
+    },
+    {
       "name": "GroupData",
       "description": null,
       "url": "/alerts-x/reference/objects/groupdata"
+    },
+    {
+      "name": "MemberConnection",
+      "description": null,
+      "url": "/alerts-x/reference/objects/memberconnection"
+    },
+    {
+      "name": "AccessConnection",
+      "description": null,
+      "url": "/alerts-x/reference/objects/accessconnection"
+    },
+    {
+      "name": "SupplierConnection",
+      "description": null,
+      "url": "/alerts-x/reference/objects/supplierconnection"
+    },
+    {
+      "name": "ClientConnection",
+      "description": null,
+      "url": "/alerts-x/reference/objects/clientconnection"
+    },
+    {
+      "name": "ProfileConnection",
+      "description": null,
+      "url": "/alerts-x/reference/objects/profileconnection"
     },
     {
       "name": "AccessData",

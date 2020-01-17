@@ -66,6 +66,14 @@
       "description": null,
       "isDeprecated": false,
       "args": null
+    },
+    {
+      "typeString": "State",
+      "name": "state",
+      "url": "/hotel-x/reference/scalars/state",
+      "description": null,
+      "isDeprecated": false,
+      "args": null
     }
   ],
   "requireby": [

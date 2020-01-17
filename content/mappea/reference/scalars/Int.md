@@ -40,9 +40,34 @@
       "url": "/mappea/reference/objects/supplierdata"
     },
     {
+      "name": "AccessConnection",
+      "description": null,
+      "url": "/mappea/reference/objects/accessconnection"
+    },
+    {
+      "name": "GroupConnection",
+      "description": null,
+      "url": "/mappea/reference/objects/groupconnection"
+    },
+    {
+      "name": "ClientConnection",
+      "description": null,
+      "url": "/mappea/reference/objects/clientconnection"
+    },
+    {
       "name": "AccessData",
       "description": null,
       "url": "/mappea/reference/objects/accessdata"
+    },
+    {
+      "name": "SupplierFilter",
+      "description": null,
+      "url": "/mappea/reference/inputobjects/supplierfilter"
+    },
+    {
+      "name": "SupplierConnection",
+      "description": null,
+      "url": "/mappea/reference/objects/supplierconnection"
     },
     {
       "name": "GroupData",
@@ -50,9 +75,14 @@
       "url": "/mappea/reference/objects/groupdata"
     },
     {
-      "name": "SupplierFilter",
+      "name": "MemberConnection",
       "description": null,
-      "url": "/mappea/reference/inputobjects/supplierfilter"
+      "url": "/mappea/reference/objects/memberconnection"
+    },
+    {
+      "name": "ProfileConnection",
+      "description": null,
+      "url": "/mappea/reference/objects/profileconnection"
     }
   ],
   "enumValues": null,

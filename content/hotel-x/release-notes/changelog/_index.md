@@ -1,6 +1,6 @@
 ---
-title: "Hotel-X changelog"
-icon: "fa-exchange"
+title: "Hotel-X Changelog"
+icon: "fa-commenting-o "
 aliases: 
     - "/travelgatex/release-notes/products-changelogs/changelog-stats/"
 ---

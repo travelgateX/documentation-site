@@ -27,14 +27,14 @@
       "url": "/travelgatex/reference/objects/adminquery"
     },
     {
-      "name": "APIData",
-      "description": null,
-      "url": "/travelgatex/reference/objects/apidata"
-    },
-    {
       "name": "RoleData",
       "description": null,
       "url": "/travelgatex/reference/objects/roledata"
+    },
+    {
+      "name": "APIData",
+      "description": null,
+      "url": "/travelgatex/reference/objects/apidata"
     }
   ],
   "enumValues": null,

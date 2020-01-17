@@ -12,6 +12,14 @@
       "args": null
     },
     {
+      "typeString": "String!",
+      "name": "amenityCodeSupplier",
+      "url": "/travelgatex/reference/scalars/string",
+      "description": null,
+      "isDeprecated": false,
+      "args": null
+    },
+    {
       "typeString": "ApplicationAreaType!",
       "name": "type",
       "url": "/travelgatex/reference/enums/applicationareatype",
@@ -20,19 +28,20 @@
       "args": null
     },
     {
-      "typeString": "[Text!]!",
-      "name": "texts",
-      "url": "/travelgatex/reference/objects/text",
+      "typeString": "String!",
+      "name": "value",
+      "url": "/travelgatex/reference/scalars/string",
       "description": null,
       "isDeprecated": false,
-      "args": [
-        {
-          "typeString": "[Language!]",
-          "name": "languages",
-          "url": "/travelgatex/reference/scalars/language",
-          "description": null
-        }
-      ]
+      "args": null
+    },
+    {
+      "typeString": "String!",
+      "name": "texts",
+      "url": "/travelgatex/reference/scalars/string",
+      "description": null,
+      "isDeprecated": false,
+      "args": null
     }
   ],
   "requireby": null,

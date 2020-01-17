@@ -30,14 +30,24 @@
       "url": "/mappea/reference/objects/access"
     },
     {
+      "name": "Client",
+      "description": null,
+      "url": "/mappea/reference/objects/client"
+    },
+    {
+      "name": "Group",
+      "description": null,
+      "url": "/mappea/reference/objects/group"
+    },
+    {
       "name": "Member",
       "description": null,
       "url": "/mappea/reference/objects/member"
     },
     {
-      "name": "Domain",
+      "name": "MacroPermission",
       "description": null,
-      "url": "/mappea/reference/objects/domain"
+      "url": "/mappea/reference/objects/macropermission"
     },
     {
       "name": "Role",
@@ -60,14 +70,9 @@
       "url": "/mappea/reference/objects/operation"
     },
     {
-      "name": "Product",
+      "name": "ManagedGroup",
       "description": null,
-      "url": "/mappea/reference/objects/product"
-    },
-    {
-      "name": "MacroPermission",
-      "description": null,
-      "url": "/mappea/reference/objects/macropermission"
+      "url": "/mappea/reference/objects/managedgroup"
     },
     {
       "name": "Profile",
@@ -75,24 +80,19 @@
       "url": "/mappea/reference/objects/profile"
     },
     {
-      "name": "Group",
-      "description": null,
-      "url": "/mappea/reference/objects/group"
-    },
-    {
       "name": "Entity",
       "description": null,
       "url": "/mappea/reference/objects/entity"
     },
     {
-      "name": "ManagedGroup",
+      "name": "Domain",
       "description": null,
-      "url": "/mappea/reference/objects/managedgroup"
+      "url": "/mappea/reference/objects/domain"
     },
     {
-      "name": "Client",
+      "name": "Product",
       "description": null,
-      "url": "/mappea/reference/objects/client"
+      "url": "/mappea/reference/objects/product"
     }
   ],
   "enumValues": null,

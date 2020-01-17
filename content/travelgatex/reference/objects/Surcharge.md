@@ -4,6 +4,14 @@
   "weight": 1,
   "fields": [
     {
+      "typeString": "String",
+      "name": "code",
+      "url": "/travelgatex/reference/scalars/string",
+      "description": null,
+      "isDeprecated": false,
+      "args": null
+    },
+    {
       "typeString": "ChargeType!",
       "name": "chargeType",
       "url": "/travelgatex/reference/enums/chargetype",

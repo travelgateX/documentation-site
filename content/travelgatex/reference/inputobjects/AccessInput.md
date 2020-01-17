@@ -135,6 +135,20 @@
       "url": "/travelgatex/reference/scalars/boolean",
       "description": null,
       "args": null
+    },
+    {
+      "typeString": "LegacyLinkInput",
+      "name": "legacyLink",
+      "url": "/travelgatex/reference/inputobjects/legacylinkinput",
+      "description": null,
+      "args": null
+    },
+    {
+      "typeString": "ID",
+      "name": "master",
+      "url": "/travelgatex/reference/scalars/id",
+      "description": null,
+      "args": null
     }
   ],
   "requireby": null,

@@ -48,6 +48,11 @@
       "name": "HotelCancelInput",
       "description": null,
       "url": "/hotel-x/reference/inputobjects/hotelcancelinput"
+    },
+    {
+      "name": "HotelCommitInput",
+      "description": null,
+      "url": "/hotel-x/reference/inputobjects/hotelcommitinput"
     }
   ],
   "enumValues": null,

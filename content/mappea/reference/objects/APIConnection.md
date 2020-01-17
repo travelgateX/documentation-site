@@ -22,9 +22,9 @@
   ],
   "requireby": [
     {
-      "name": "OrganizationData",
+      "name": "GroupData",
       "description": null,
-      "url": "/mappea/reference/objects/organizationdata"
+      "url": "/mappea/reference/objects/groupdata"
     },
     {
       "name": "GroupCommonData",
@@ -37,14 +37,14 @@
       "url": "/mappea/reference/objects/resourcedata"
     },
     {
+      "name": "OrganizationData",
+      "description": null,
+      "url": "/mappea/reference/objects/organizationdata"
+    },
+    {
       "name": "ProductData",
       "description": null,
       "url": "/mappea/reference/objects/productdata"
-    },
-    {
-      "name": "GroupData",
-      "description": null,
-      "url": "/mappea/reference/objects/groupdata"
     }
   ],
   "enumValues": null,

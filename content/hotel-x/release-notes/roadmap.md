@@ -1,6 +1,6 @@
 +++
 title = "Roadmap"
-pagetitle = "HotelX roadmap"
+pagetitle = "Roadmap"
 description = "We have put together a GitHub Project where we will keep updating on the things we’ve in our plans."
 weight = 1
 alwaysopen = false

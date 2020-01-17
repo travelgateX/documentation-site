@@ -179,6 +179,22 @@
           "description": null
         }
       ]
+    },
+    {
+      "typeString": "LegacyLink",
+      "name": "legacyLink",
+      "url": "/travelgatex/reference/objects/legacylink",
+      "description": null,
+      "isDeprecated": false,
+      "args": null
+    },
+    {
+      "typeString": "Access",
+      "name": "master",
+      "url": "/travelgatex/reference/objects/access",
+      "description": null,
+      "isDeprecated": false,
+      "args": null
     }
   ],
   "requireby": [

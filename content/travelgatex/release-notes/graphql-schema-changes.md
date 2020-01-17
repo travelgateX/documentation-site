@@ -14,6 +14,420 @@ The GraphQL schema change log is a list of recent and upcoming changes to our Gr
 
 Check out this list of new releases and changes applied on the **TravelgateX GraphQL API**.
 
+## 2020-01-07
+
+✅  Input field `country` was added to input object type `UpdateGroupInput`
+
+✅  Input field `country` was added to input object type `CreateOrganizationInput`
+
+✅  Input field `deletedAt_gte` was added to input object type `HotelXHotelFilterInput`
+
+✅  Input field `deletedAt_gt` was added to input object type `HotelXHotelFilterInput`
+
+✅  Input field `deletedAt_lte` was added to input object type `HotelXHotelFilterInput`
+
+✅  Input field `deletedAt_lt` was added to input object type `HotelXHotelFilterInput`
+
+✅  Input field `deletedAt_not_in` was added to input object type `HotelXHotelFilterInput`
+
+✅  Input field `deletedAt_in` was added to input object type `HotelXHotelFilterInput`
+
+✅  Field `totalCount` was added to object type `OrganizationConnection`
+
+✅  Field `adviseMessage` was added to object type `OrganizationConnection`
+
+✅  Field `totalCount` was added to object type `ProfileConnection`
+
+✅  Field `adviseMessage` was added to object type `ProfileConnection`
+
+✅  Field `totalCount` was added to object type `ClientConnection`
+
+✅  Field `adviseMessage` was added to object type `ClientConnection`
+
+✅  Field `totalCount` was added to object type `SupplierConnection`
+
+✅  Field `adviseMessage` was added to object type `SupplierConnection`
+
+✅  Field `totalCount` was added to object type `MemberConnection`
+
+✅  Field `adviseMessage` was added to object type `MemberConnection`
+
+✅  Field `totalCount` was added to object type `GroupConnection`
+
+✅  Field `adviseMessage` was added to object type `GroupConnection`
+
+✅  Field `OrganizationData.allMembers` description changed from `Response all members in this group's childrens (hierarchically) ` to `Response all members in this group's childrens (hierarchically)`
+
+✅  Field `allProfiles` was added to object type `OrganizationData`
+
+✅  Field `allClients` was added to object type `OrganizationData`
+
+✅  Field `allSuppliers` was added to object type `OrganizationData`
+
+✅  Field `allAccesses` was added to object type `OrganizationData`
+
+✅  Field `country` was added to object type `OrganizationData`
+
+✅  Field `totalCount` was added to object type `AccessConnection`
+
+✅  Field `adviseMessage` was added to object type `AccessConnection`
+
+✅  Field `AdminQuery.products` description changed from `Product catalog; specify products codes to filter ` to `Product catalog; specify products codes to filter`
+
+✅  Argument `orderBy: OrganizationOrderByInput` added to field `AdminQuery.organizations`
+
+✅  Type `OrganizationOrderByInput` was added
+
+## 2019-12-17
+
+🛑  Argument `token: String` was removed from field `HotelXQuery.search`
+
+🛑  Field `PageInfo.endCursor` changed type from `String!` to `String`
+
+🛑  Field `PageInfo.startCursor` changed type from `String!` to `String`
+
+✅  Description `Configuration update for PEAK_TRAFFIC alert type. Peak traffic is used to verify traffic comparing volum of requests between to time frame (window and historical window) .` on type `AlertUpdateConfigurationInputPeakTraffic` has changed to `Configuration update for PEAK_TRAFFIC alert type. Peak traffic is used to verify traffic comparing volum of requests between to time frame (window and historical window) . `
+
+✅  Input field `AlertUpdateInput.configurationAverageTime` description changed from `average time configuration` to `average time configuration  `
+
+✅  Input field `legacyLink` was added to input object type `AccessInput`
+
+✅  Description for enum value `ConditionType.LT` changed from `Less-than` to `<`
+
+✅  Description for enum value `ConditionType.LTE` changed from `Less-than or equal to` to `<=`
+
+✅  Description for enum value `ConditionType.GT` changed from `Greater-than` to `>`
+
+✅  Description for enum value `ConditionType.GTE` changed from `Greater-than or equal to` to `>=`
+
+✅  Input field `AlertCriteriaInput.shared` description changed from `List of shared type` to `List of shared type  `
+
+✅  Field `PaymentXQuery.storedCard` description changed from `Returns a stored card information.` to `Returns a stored card information. `
+
+✅  Field `PaymentXQuery.allStoredCards` description changed from `Returns the stored card list. For security, this query never will return clear card information.` to `Returns the stored card list. For security, this query never will return clear card information. `
+
+✅  Input field `BusinessRulesInput.optionsQuota` description changed from `Options quota per search. Maximum numbers of options to be returned by the search query.` to `Options quota per search. Maximum numbers of options to be returned by the search query.
+@deprecated(reason: "deprecated from 2019-12-04. This option will be only configurable by settings.")`
+
+✅  Input field `HotelSettingsInput.clientTokens` description changed from `Used to identify the origin of the request, this is only used in plugins.` to `Used to identify the origin of the request, this is only used in plugins. `
+
+✅  Field `Room.features` description changed from `List of features of this room` to `List of features of this room `
+
+✅  Field `MandatoryFee.mandatoryFeeCode` description changed from `Native supplier Mandatry Fee` to `Native supplier Mandatry Fee  `
+
+✅  Field `GiataData.updatedAt` description changed from `Date of last Giata update for this code.` to `Date of last Giata update for this code. `
+
+✅  Field `GiataData.href` description changed from `Giata url for the hotel info.` to `Giata url for the hotel info. `
+
+✅  Field `metadata` was added to object type `HotelXQuery`
+
+✅  Field `OrganizationData.allMembers` description changed from `Response all members in this group's childrens (hierarchically)` to `Response all members in this group's childrens (hierarchically) `
+
+✅  Field `legacyLink` was added to object type `AccessData`
+
+✅  Field `AdminQuery.products` description changed from `Product catalog; specify products codes to filter` to `Product catalog; specify products codes to filter `
+
+✅  Type `LegacyLinkInput` was added
+
+✅  Type `HotelXMetadataQueryInput` was added
+
+✅  Type `MetadataGeneric` was added
+
+✅  Type `MetadataStatic` was added
+
+✅  Type `MetadataContent` was added
+
+✅  Type `MetadataCancel` was added
+
+✅  Type `MetadataBookingList` was added
+
+✅  Type `MetadataBooking` was added
+
+✅  Type `BookPreferenceValue` was added
+
+✅  Type `BookPreferenceType` was added
+
+✅  Type `BookPreferenceInfo` was added
+
+✅  Type `ReviewedAllowsBookPreferences` was added
+
+✅  Type `MetadataBook` was added
+
+✅  Type `MetadataQuote` was added
+
+✅  Type `ReviewedText` was added
+
+✅  Type `HotelOptionType` was added
+
+✅  Type `ReviewedHotelOptionType` was added
+
+✅  Type `ReviewedPaymentType` was added
+
+✅  Type `AgeRange` was added
+
+✅  Type `ReviewedAgeRanges` was added
+
+✅  Type `MetadataBeds` was added
+
+✅  Type `ReviewedRateRule` was added
+
+✅  Type `RequiredRoomWithSamePaxConfiguration` was added
+
+✅  Type `HotelPaxType` was added
+
+✅  Type `MetadataCandidate` was added
+
+✅  Type `ReviwedPaxTypeRangeInRoomCandidates` was added
+
+✅  Type `MetadataRoomCandidates` was added
+
+✅  Type `ReviewedBool` was added
+
+✅  Type `ReviewedInt` was added
+
+✅  Type `MetadataSearchDestinations` was added
+
+✅  Type `MetadataSearch` was added
+
+✅  Type `MetadataData` was added
+
+✅  Type `Metadata` was added
+
+✅  Type `MetadataEdge` was added
+
+✅  Type `MetadataConnection` was added
+
+✅  Type `LegacyLink` was added
+
+## 2019-12-03
+
+✅  Input field `HotelXDefaultSettingsDataInput.markets` changed type from `[String!]!` to `[String!]`
+
+## 2019-11-28
+
+🛑  Input field `markets` was added to input object type `HotelXDefaultSettingsDataInput`
+
+🛑  Field `HotelOptionSearch.market` changed type from `String!` to `String`
+
+🛑  Field `HotelXDefaultSettingsData.market` changed type from `String!` to `String`
+
+⚠️  Enum value `AMENITY_MAP` was added to enum `PluginType`
+
+⚠️  Enum value `MARKETS_GROUP` was added to enum `PluginType`
+
+✅  Input field `HotelXDefaultSettingsDataInput.market` changed type from `String!` to `String`
+
+✅  Input field `HotelXDefaultSettingsDataInput.market` description changed from `Targeted zone, country or point of sale to be used in request.` to `Targeted zone, country or point of sale to be used in request.
+@deprecated(reason: "deprecated from 2019-12-11.")`
+
+✅  Field `paymentCard` was added to object type `HotelBookingDetail`
+
+✅  Input field `HotelCriteriaSearchInput.market` description changed from `Targeted zone, country or point-ofsale-to be used in request.` to `Targeted zone, country or point-ofsale-to be used in request.
+@deprecated(reason: "deprecated from 2019-12-11.")`
+
+✅  Input field `markets` was added to input object type `HotelCriteriaSearchInput`
+
+✅  Field `code` was added to object type `Surcharge`
+
+✅  Deprecation reason on field `HotelOptionSearch.market` has changed from ` ` to `deprecated from 2019-12-11.`
+
+✅  Field `markets` was added to object type `HotelOptionSearch`
+
+✅  Deprecation reason on field `HotelXDefaultSettingsData.market` has changed from ` ` to `deprecated from 2019-12-11.`
+
+✅  Field `markets` was added to object type `HotelXDefaultSettingsData`
+
+✅  Type `PaymentCardData` was added
+
+✅  Type `PaymentCard` was added
+
+## 2019-11-20
+
+✅  Description `The result could be one of these types` on type `Connection` has changed to ``
+
+✅  Field `HotelBookingDetail.quotePrice` description changed from `Specifies the price of the previous OptionQuote in Book service.` to `Specifies the price of the previous OptionQuote. Returned only if the shown Book price differs from the price shown at the Quote Option. If the price does not change, this field will be returned Null.`
+
+✅  Field `HotelOptionQuote.searchPrice` description changed from `Specifies the price of the previous search option` to `Specifies the price of the previous Search Option. Returned only if the shown Quote price differs from the price shown at the Search Option. If the price does not change, this field will be returned Null.`
+
+✅  Field `allAmenities` was added to object type `RoomData`
+
+✅  Field `allAmenities` was added to object type `HotelData`
+
+✅  Type `HotelXMapSettingsInput` was added
+
+✅  Type `HotelXMapOptionInput` was added
+
+✅  Type `HotelXMappedCode` was added
+
+✅  Type `HotelXAmenityData` was added
+
+✅  Type `HotelXAmenity` was added
+
+✅  Type `HotelXAmenityEdge` was added
+
+✅  Type `HotelXAmenityConnection` was added
+
+## 2019-10-24
+
+✅  Input field `HotelCommitInput.commitReference` changed type from `String!` to `String`
+
+✅  Input field `HotelCommitInput.commitReference` description changed from `Contains the commit reference that has been returned in Book response.` to `Contains the commit reference that has been returned in Book response.
+@deprecated(reason: "deprecated from 2018-10-21. Please, use reference")`
+
+✅  Input field `reference` was added to input object type `HotelCommitInput`
+
+✅  Field `HotelXMutation.commit` description changed from `` to `Commits an existing booking`
+
+✅  Deprecation reason on field `Reference.commit` has changed from ` ` to `deprecated from 2018-10-21. Please, use SupplierReference`
+
+✅  Field `Price.gross` changed type from `Float` to `Float!`
+
+✅  Field `commitStatusService` was added to object type `HotelXQuery`
+
+✅  Type `HotelXCommitReferenceInput` was added
+
+## 2019-10-21
+
+🛑  Field `RoomData.amenities` changed type from `[Amenity!]` to `[AmenityStatic!]`
+
+🛑  Argument `languages: [Language!]` was removed from field `Amenity.texts`
+
+🛑  Field `Amenity.texts` changed type from `[Text!]!` to `String!`
+
+🛑  Field `HotelData.amenities` changed type from `[Amenity!]` to `[AmenityStatic!]`
+
+✅  Input field `delete` was added to input object type `AlertUpdateInput`
+
+✅  Field `amenities` was added to object type `Room`
+
+✅  Field `amenities` was added to object type `HotelOptionSearch`
+
+✅  Description `Indicates where it applies` on type `ApplicationAreaType` has changed to ``
+
+✅  Field `Amenity.texts` description changed from `Contains the descriptive` to `Contains the descriptive of amenity.`
+
+✅  Field `value` was added to object type `Amenity`
+
+✅  Field `amenityCodeSupplier` was added to object type `Amenity`
+
+✅  Field `HotelData.propertyType` description changed from `Property information` to `Indicates property type.`
+
+✅  Deprecation reason on field `HotelData.property` has changed from ` ` to `Deprecated from 2019-10-16. Redundant information`
+
+✅  Type `AmenityStatic` was added
+
+## 2019-10-15
+
+⚠️  Enum value `PENDING_COMMIT` was added to enum `BookStatusType`
+
+✅  Input field `commitRequired` was added to input object type `DefaultSettingsInput`
+
+✅  Field `commit` was added to object type `HotelXMutation`
+
+✅  Input field `rangeFilters` was added to input object type `LoggingLegacyFilterInput`
+
+✅  Input field `shared` was added to input object type `AlertCriteriaInput`
+
+✅  Type for argument `criteria` on field `AlertsXQuery.alerts` changed from `AlertCriteriaInput!` to `AlertCriteriaInput`
+
+✅  Description for enum value `BookStatusType.UNKNOWN` changed from `The reservation was completed but due to a supplier error or a timeout, the reservation status is unknown.
+It is the client’s responsibility to check if the booking is OK` to `The reservation process through TGX was completed but due to a supplier error or a timeout, the reservation status is unknown.
+It is the client’s responsibility to check if the booking is OK.`
+
+✅  Description for enum value `BookStatusType.CANCELLED` changed from `The status of the booking is cancelled` to `The status of the booking is cancelled.`
+
+✅  Description for enum value `BookStatusType.ON_REQUEST` changed from `The reservation was completed but the product is still not available, so the reservation goes into a waiting list.
+It is the client’s responsibility to check if the booking is OK` to `The reservation was completed but the product is still not available, so the reservation goes into a waiting list.
+It is the client’s responsibility to check if the booking is OK.`
+
+✅  Description for enum value `BookStatusType.KO` changed from `The status of the booking is NOT OK` to `The status of the booking is KO`
+
+✅  Description for enum value `BookStatusType.OK` changed from `The reservation was completed with no problems` to `The reservation was completed with no problems.`
+
+✅  Field `commit` was added to object type `Reference`
+
+✅  Input field `commitRequired` was added to input object type `SettingsBaseInput`
+
+✅  Input field `commitRequired` was added to input object type `HotelSettingsInput`
+
+✅  Field `deadline` was added to object type `CancelPenalty`
+
+✅  Field `area` was added to object type `RoomData`
+
+✅  Field `beds` was added to object type `RoomData`
+
+✅  Field `medias` was added to object type `RoomData`
+
+✅  Field `views` was added to object type `RoomData`
+
+✅  Field `amenities` was added to object type `RoomData`
+
+✅  Field `state` was added to object type `Location`
+
+✅  Field `checkOut` was added to object type `HotelData`
+
+✅  Field `checkIn` was added to object type `HotelData`
+
+✅  Field `mandatoryFees` was added to object type `HotelData`
+
+✅  Field `propertyType` was added to object type `HotelData`
+
+✅  Type `HotelCommitInput` was added
+
+✅  Type `HotelCommitDetails` was added
+
+✅  Type `HotelCommitPayload` was added
+
+✅  Type `ConditionType` was added
+
+✅  Type `TermType` was added
+
+✅  Type `RangeFilter` was added
+
+✅  Type `SharedType` was added
+
+✅  Type `Time` was added
+
+✅  Type `TimeRange` was added
+
+✅  Type `CheckInformation` was added
+
+✅  Type `PriceStatic` was added
+
+✅  Type `MandatoryFee` was added
+
+✅  Type `PropertyType` was added
+
+✅  Type `Area` was added
+
+✅  Type `BedStatic` was added
+
+✅  Type `View` was added
+
+✅  Type `State` was added
+
+## 2019-09-19
+
+🛑  Input field `UpdateProfileInput.type` changed type from `ProfileType` to `[ProfileType]`
+
+🛑  Input field `CreateProfileInput.type` changed type from `ProfileType!` to `[ProfileType!]!`
+
+✅  Description `Map codes.` on type `Map` has changed to `Map codes. @deprecated(reason: "deprecated from 2019-09-10. not operating or being used")`
+
+✅  Description `Mapping about client codes with the equivalence per supplier.` on type `MappingEntity` has changed to `Mapping about client codes with the equivalence per supplier. @deprecated(reason: "deprecated from 2019-09-10. not operating or being used")`
+
+✅  Description `Returns the differents group contexts` on type `MappingContext` has changed to `Returns the differents group contexts @deprecated(reason: "deprecated from 2019-09-10. not operating or being used")`
+
+✅  Description `Returns the mapping for a group.` on type `Mapping` has changed to `Returns the mapping for a group. @deprecated(reason: "deprecated from 2019-09-10. not operating or being used")`
+
+✅  Field `HotelXQuery.mapping` description changed from `Returns map codes of a group. You can get hotel map, room map, and board map.` to `Returns map codes of a group. You can get hotel map, room map, and board map. @deprecated(reason: "deprecated from 2019-09-10. not operating or being used")`
+
+✅  Field `group` was added to object type `MacroPermissionData`
+
+✅  Field `macroPermissions` was added to object type `MemberData`
+
+✅  Argument `contains: String` added to field `AdminQuery.organizations`
+
 ## 2019-08-29
 
 🛑  Input field `ReferenceFilter.supplier` changed type from `[String]` to `[String!]`

@@ -56,6 +56,11 @@
       "url": "/mappea/reference/objects/accessdata"
     },
     {
+      "name": "LegacyLink",
+      "description": null,
+      "url": "/mappea/reference/objects/legacylink"
+    },
+    {
       "name": "SupplierEdge",
       "description": null,
       "url": "/mappea/reference/objects/supplieredge"

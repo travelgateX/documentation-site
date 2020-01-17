@@ -5,14 +5,24 @@
   "fields": null,
   "requireby": [
     {
-      "name": "Amenity",
+      "name": "AmenityStatic",
       "description": null,
-      "url": "/hotel-x/reference/objects/amenity"
+      "url": "/hotel-x/reference/objects/amenitystatic"
     },
     {
       "name": "Media",
       "description": null,
       "url": "/hotel-x/reference/objects/media"
+    },
+    {
+      "name": "HotelXAmenityData",
+      "description": null,
+      "url": "/hotel-x/reference/objects/hotelxamenitydata"
+    },
+    {
+      "name": "Amenity",
+      "description": null,
+      "url": "/hotel-x/reference/objects/amenity"
     }
   ],
   "enumValues": [

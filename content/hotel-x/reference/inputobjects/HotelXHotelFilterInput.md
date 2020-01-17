@@ -102,6 +102,48 @@
       "args": null
     },
     {
+      "typeString": "[DateTime!]",
+      "name": "deletedAt_in",
+      "url": "/hotel-x/reference/scalars/datetime",
+      "description": null,
+      "args": null
+    },
+    {
+      "typeString": "[DateTime!]",
+      "name": "deletedAt_not_in",
+      "url": "/hotel-x/reference/scalars/datetime",
+      "description": null,
+      "args": null
+    },
+    {
+      "typeString": "DateTime",
+      "name": "deletedAt_lt",
+      "url": "/hotel-x/reference/scalars/datetime",
+      "description": null,
+      "args": null
+    },
+    {
+      "typeString": "DateTime",
+      "name": "deletedAt_lte",
+      "url": "/hotel-x/reference/scalars/datetime",
+      "description": null,
+      "args": null
+    },
+    {
+      "typeString": "DateTime",
+      "name": "deletedAt_gt",
+      "url": "/hotel-x/reference/scalars/datetime",
+      "description": null,
+      "args": null
+    },
+    {
+      "typeString": "DateTime",
+      "name": "deletedAt_gte",
+      "url": "/hotel-x/reference/scalars/datetime",
+      "description": null,
+      "args": null
+    },
+    {
       "typeString": "Boolean",
       "name": "country_in",
       "url": "/hotel-x/reference/scalars/boolean",

@@ -3,7 +3,7 @@ title = "Writting release notes"
 pagetitle = "Writting release notes"
 description = "Release notes, document with the changelog"
 icon = "fa-info-circle"
-weight = 1
+weight = 2
 +++
 
 This document assists on write release notes with the changelog of products.

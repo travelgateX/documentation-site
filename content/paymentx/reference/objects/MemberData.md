@@ -132,6 +132,45 @@
           "description": null
         }
       ]
+    },
+    {
+      "typeString": "MacroPermissionsConnection",
+      "name": "macroPermissions",
+      "url": "/paymentx/reference/objects/macropermissionsconnection",
+      "description": null,
+      "isDeprecated": false,
+      "args": [
+        {
+          "typeString": "[ID!]",
+          "name": "codes",
+          "url": "/paymentx/reference/scalars/id",
+          "description": null
+        },
+        {
+          "typeString": "Int",
+          "name": "first",
+          "url": "/paymentx/reference/scalars/int",
+          "description": null
+        },
+        {
+          "typeString": "Int",
+          "name": "last",
+          "url": "/paymentx/reference/scalars/int",
+          "description": null
+        },
+        {
+          "typeString": "String",
+          "name": "before",
+          "url": "/paymentx/reference/scalars/string",
+          "description": null
+        },
+        {
+          "typeString": "String",
+          "name": "after",
+          "url": "/paymentx/reference/scalars/string",
+          "description": null
+        }
+      ]
     }
   ],
   "requireby": [

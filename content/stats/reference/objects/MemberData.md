@@ -132,6 +132,45 @@
           "description": null
         }
       ]
+    },
+    {
+      "typeString": "MacroPermissionsConnection",
+      "name": "macroPermissions",
+      "url": "/stats/reference/objects/macropermissionsconnection",
+      "description": null,
+      "isDeprecated": false,
+      "args": [
+        {
+          "typeString": "[ID!]",
+          "name": "codes",
+          "url": "/stats/reference/scalars/id",
+          "description": null
+        },
+        {
+          "typeString": "Int",
+          "name": "first",
+          "url": "/stats/reference/scalars/int",
+          "description": null
+        },
+        {
+          "typeString": "Int",
+          "name": "last",
+          "url": "/stats/reference/scalars/int",
+          "description": null
+        },
+        {
+          "typeString": "String",
+          "name": "before",
+          "url": "/stats/reference/scalars/string",
+          "description": null
+        },
+        {
+          "typeString": "String",
+          "name": "after",
+          "url": "/stats/reference/scalars/string",
+          "description": null
+        }
+      ]
     }
   ],
   "requireby": [

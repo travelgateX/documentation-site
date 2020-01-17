@@ -49,6 +49,61 @@
       "description": null,
       "isDeprecated": false,
       "args": null
+    },
+    {
+      "typeString": "[AmenityStatic!]",
+      "name": "amenities",
+      "url": "/travelgatex/reference/objects/amenitystatic",
+      "description": null,
+      "isDeprecated": false,
+      "args": null
+    },
+    {
+      "typeString": "[View!]",
+      "name": "views",
+      "url": "/travelgatex/reference/objects/view",
+      "description": null,
+      "isDeprecated": false,
+      "args": null
+    },
+    {
+      "typeString": "[Media!]",
+      "name": "medias",
+      "url": "/travelgatex/reference/objects/media",
+      "description": null,
+      "isDeprecated": false,
+      "args": null
+    },
+    {
+      "typeString": "[BedStatic!]",
+      "name": "beds",
+      "url": "/travelgatex/reference/objects/bedstatic",
+      "description": null,
+      "isDeprecated": false,
+      "args": null
+    },
+    {
+      "typeString": "Area",
+      "name": "area",
+      "url": "/travelgatex/reference/scalars/area",
+      "description": null,
+      "isDeprecated": false,
+      "args": null
+    },
+    {
+      "typeString": "HotelXAmenityConnection",
+      "name": "allAmenities",
+      "url": "/travelgatex/reference/objects/hotelxamenityconnection",
+      "description": null,
+      "isDeprecated": false,
+      "args": [
+        {
+          "typeString": "[HotelXMapOptionInput!]",
+          "name": "mapOptions",
+          "url": "/travelgatex/reference/inputobjects/hotelxmapoptioninput",
+          "description": null
+        }
+      ]
     }
   ],
   "requireby": [

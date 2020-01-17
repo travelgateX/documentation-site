@@ -55,14 +55,19 @@
       "url": "/paymentx/reference/objects/memberdata"
     },
     {
-      "name": "API",
+      "name": "MacroPermission",
       "description": null,
-      "url": "/paymentx/reference/objects/api"
+      "url": "/paymentx/reference/objects/macropermission"
     },
     {
-      "name": "APIData",
+      "name": "MacroPermissionData",
       "description": null,
-      "url": "/paymentx/reference/objects/apidata"
+      "url": "/paymentx/reference/objects/macropermissiondata"
+    },
+    {
+      "name": "Role",
+      "description": null,
+      "url": "/paymentx/reference/objects/role"
     },
     {
       "name": "Resource",
@@ -70,9 +75,24 @@
       "url": "/paymentx/reference/objects/resource"
     },
     {
+      "name": "API",
+      "description": null,
+      "url": "/paymentx/reference/objects/api"
+    },
+    {
+      "name": "RoleData",
+      "description": null,
+      "url": "/paymentx/reference/objects/roledata"
+    },
+    {
       "name": "ResourceData",
       "description": null,
       "url": "/paymentx/reference/objects/resourcedata"
+    },
+    {
+      "name": "APIData",
+      "description": null,
+      "url": "/paymentx/reference/objects/apidata"
     },
     {
       "name": "Operation",
@@ -93,16 +113,6 @@
       "name": "ManagedGroupData",
       "description": null,
       "url": "/paymentx/reference/objects/managedgroupdata"
-    },
-    {
-      "name": "Role",
-      "description": null,
-      "url": "/paymentx/reference/objects/role"
-    },
-    {
-      "name": "RoleData",
-      "description": null,
-      "url": "/paymentx/reference/objects/roledata"
     },
     {
       "name": "Access",
@@ -183,16 +193,6 @@
       "name": "ProductData",
       "description": null,
       "url": "/paymentx/reference/objects/productdata"
-    },
-    {
-      "name": "MacroPermission",
-      "description": null,
-      "url": "/paymentx/reference/objects/macropermission"
-    },
-    {
-      "name": "MacroPermissionData",
-      "description": null,
-      "url": "/paymentx/reference/objects/macropermissiondata"
     },
     {
       "name": "DomainData",

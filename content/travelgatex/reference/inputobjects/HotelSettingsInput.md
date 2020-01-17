@@ -86,6 +86,13 @@
       "url": "/travelgatex/reference/scalars/string",
       "description": null,
       "args": null
+    },
+    {
+      "typeString": "Boolean",
+      "name": "commitRequired",
+      "url": "/travelgatex/reference/scalars/boolean",
+      "description": null,
+      "args": null
     }
   ],
   "requireby": null,

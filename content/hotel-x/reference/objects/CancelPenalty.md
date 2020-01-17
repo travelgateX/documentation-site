@@ -4,6 +4,14 @@
   "weight": 1,
   "fields": [
     {
+      "typeString": "DateTime",
+      "name": "deadline",
+      "url": "/hotel-x/reference/scalars/datetime",
+      "description": null,
+      "isDeprecated": false,
+      "args": null
+    },
+    {
       "typeString": "Int!",
       "name": "hoursBefore",
       "url": "/hotel-x/reference/scalars/int",

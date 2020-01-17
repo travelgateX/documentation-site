@@ -5,11 +5,6 @@
   "fields": null,
   "requireby": [
     {
-      "name": "CreateProfileInput",
-      "description": null,
-      "url": "/travelgatex/reference/inputobjects/createprofileinput"
-    },
-    {
       "name": "UpdateProfileInput",
       "description": null,
       "url": "/travelgatex/reference/inputobjects/updateprofileinput"

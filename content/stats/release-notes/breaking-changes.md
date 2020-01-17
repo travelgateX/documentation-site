@@ -17,6 +17,7 @@
 {{% release-notes-container type="u"%}}
 - Removal of `type` from `AdviseMessage`. Reason: .  Deprecated on 2018-06-01.**To be removed soon**.
 - Removal of `cache` from `OperationDetailed`. Reason: Added new field trafficType..  Deprecated on 2019-04-03.**To be removed soon**.
+- Removal of `time` from `StatsInfo`. Reason: Added new fields averageTime and totalTime..  Deprecated on 2019-04-03.**To be removed soon**.
 - Removal of `ratios` from `StatsData`. Reason: Added hits fields to be able to calculate ratios at client side..  Deprecated on 2019-04-08.**To be removed soon**.
 {{% / release-notes-container %}}
 ### 2019-04-08
@@ -26,6 +27,7 @@
 ### 2019-04-03
 {{% release-notes-container type="d"%}}
 - Deprecated `cache` from `OperationDetailed`. Reason: Added new field trafficType.. Expected removal on 2019-07-02 .
+- Deprecated `time` from `StatsInfo`. Reason: Added new fields averageTime and totalTime.. Expected removal on 2019-07-02 .
 {{% / release-notes-container %}}
 ### 2019-02-08
 {{% release-notes-container type="r"%}}

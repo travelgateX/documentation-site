@@ -128,6 +128,13 @@
       "url": "/travelgatex/reference/inputobjects/referencefilter",
       "description": "Locator to search in Insights",
       "args": null
+    },
+    {
+      "typeString": "[RangeFilter!]",
+      "name": "rangeFilters",
+      "url": "/travelgatex/reference/inputobjects/rangefilter",
+      "description": "Filter of the execution time",
+      "args": null
     }
   ],
   "requireby": null,

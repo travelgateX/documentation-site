@@ -65,9 +65,9 @@
       "url": "/travelgatex/reference/objects/memberdata"
     },
     {
-      "name": "APIData",
+      "name": "RoleData",
       "description": null,
-      "url": "/travelgatex/reference/objects/apidata"
+      "url": "/travelgatex/reference/objects/roledata"
     },
     {
       "name": "ResourceData",
@@ -75,9 +75,9 @@
       "url": "/travelgatex/reference/objects/resourcedata"
     },
     {
-      "name": "RoleData",
+      "name": "APIData",
       "description": null,
-      "url": "/travelgatex/reference/objects/roledata"
+      "url": "/travelgatex/reference/objects/apidata"
     },
     {
       "name": "OrganizationData",
@@ -110,9 +110,34 @@
       "url": "/travelgatex/reference/objects/hoteldata"
     },
     {
+      "name": "MandatoryFee",
+      "description": null,
+      "url": "/travelgatex/reference/objects/mandatoryfee"
+    },
+    {
       "name": "DestinationData",
       "description": null,
       "url": "/travelgatex/reference/objects/destinationdata"
+    },
+    {
+      "name": "BedStatic",
+      "description": null,
+      "url": "/travelgatex/reference/objects/bedstatic"
+    },
+    {
+      "name": "ReviewedBool",
+      "description": null,
+      "url": "/travelgatex/reference/objects/reviewedbool"
+    },
+    {
+      "name": "BookPreferenceInfo",
+      "description": null,
+      "url": "/travelgatex/reference/objects/bookpreferenceinfo"
+    },
+    {
+      "name": "BookPreferenceValue",
+      "description": null,
+      "url": "/travelgatex/reference/objects/bookpreferencevalue"
     },
     {
       "name": "SettingsBaseInput",

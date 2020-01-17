@@ -65,6 +65,13 @@
       "url": "/hotel-x/reference/scalars/string",
       "description": null,
       "args": null
+    },
+    {
+      "typeString": "[String!]",
+      "name": "markets",
+      "url": "/hotel-x/reference/scalars/string",
+      "description": null,
+      "args": null
     }
   ],
   "requireby": null,

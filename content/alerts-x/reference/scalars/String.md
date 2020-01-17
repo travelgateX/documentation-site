@@ -140,16 +140,6 @@
       "url": "/alerts-x/reference/objects/productdata"
     },
     {
-      "name": "MacroPermissionEdge",
-      "description": null,
-      "url": "/alerts-x/reference/objects/macropermissionedge"
-    },
-    {
-      "name": "MacroPermissionData",
-      "description": null,
-      "url": "/alerts-x/reference/objects/macropermissiondata"
-    },
-    {
       "name": "SupplierEdge",
       "description": null,
       "url": "/alerts-x/reference/objects/supplieredge"
@@ -178,6 +168,16 @@
       "name": "RoleEdge",
       "description": null,
       "url": "/alerts-x/reference/objects/roleedge"
+    },
+    {
+      "name": "MacroPermissionEdge",
+      "description": null,
+      "url": "/alerts-x/reference/objects/macropermissionedge"
+    },
+    {
+      "name": "MacroPermissionData",
+      "description": null,
+      "url": "/alerts-x/reference/objects/macropermissiondata"
     },
     {
       "name": "EventEdge",

@@ -2,7 +2,7 @@
 title = "Community"
 pagetitle = ""
 description = ""
-weight = 6
+weight = 17
 alwaysopen = false
 isDirectory = false
 hidden = true

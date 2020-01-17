@@ -28,6 +28,14 @@
       "args": null
     },
     {
+      "typeString": "ID!",
+      "name": "group",
+      "url": "/travelgatex/reference/scalars/id",
+      "description": null,
+      "isDeprecated": false,
+      "args": null
+    },
+    {
       "typeString": "String",
       "name": "label",
       "url": "/travelgatex/reference/scalars/string",

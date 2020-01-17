@@ -180,16 +180,6 @@
       "url": "/alerts-x/reference/objects/productdata"
     },
     {
-      "name": "MacroPermission",
-      "description": null,
-      "url": "/alerts-x/reference/objects/macropermission"
-    },
-    {
-      "name": "MacroPermissionData",
-      "description": null,
-      "url": "/alerts-x/reference/objects/macropermissiondata"
-    },
-    {
       "name": "DomainData",
       "description": null,
       "url": "/alerts-x/reference/objects/domaindata"
@@ -218,6 +208,16 @@
       "name": "Entity",
       "description": null,
       "url": "/alerts-x/reference/objects/entity"
+    },
+    {
+      "name": "MacroPermission",
+      "description": null,
+      "url": "/alerts-x/reference/objects/macropermission"
+    },
+    {
+      "name": "MacroPermissionData",
+      "description": null,
+      "url": "/alerts-x/reference/objects/macropermissiondata"
     },
     {
       "name": "Event",

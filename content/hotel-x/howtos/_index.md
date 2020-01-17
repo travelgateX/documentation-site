@@ -1,13 +1,13 @@
 +++
-title = "How-to guides"
-pagetitle = "HotelX how-to guides"
-description = "Perform specific tasks"
-icon = "fa-list"
-weight = 4
+title = "How-to Guides"
+pagetitle = "How-to Guides"
+description = "To learn the skills you need about Hotel-X"
+icon = "fa-laptop"
+weight = 1
 alwaysopen = false
-isDirectory=false
+isDirectory=true
 +++
 
-## The guides
+## How-to Guides
 
 {{%custom-children%}}

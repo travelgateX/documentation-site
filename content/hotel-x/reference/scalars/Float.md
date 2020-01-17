@@ -10,6 +10,11 @@
       "url": "/hotel-x/reference/objects/coordinates"
     },
     {
+      "name": "PriceStatic",
+      "description": null,
+      "url": "/hotel-x/reference/objects/pricestatic"
+    },
+    {
       "name": "AuditData",
       "description": null,
       "url": "/hotel-x/reference/objects/auditdata"

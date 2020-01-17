@@ -51,6 +51,11 @@
       "url": "/alerts-x/reference/objects/accessdata"
     },
     {
+      "name": "LegacyLink",
+      "description": null,
+      "url": "/alerts-x/reference/objects/legacylink"
+    },
+    {
       "name": "SupplierEdge",
       "description": null,
       "url": "/alerts-x/reference/objects/supplieredge"

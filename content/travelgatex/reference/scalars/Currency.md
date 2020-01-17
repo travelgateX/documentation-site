@@ -20,6 +20,11 @@
       "url": "/travelgatex/reference/objects/hotelxcommonsettingsdata"
     },
     {
+      "name": "PriceStatic",
+      "description": null,
+      "url": "/travelgatex/reference/objects/pricestatic"
+    },
+    {
       "name": "SettingsBaseInput",
       "description": null,
       "url": "/travelgatex/reference/inputobjects/settingsbaseinput"

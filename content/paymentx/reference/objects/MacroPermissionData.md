@@ -28,6 +28,14 @@
       "args": null
     },
     {
+      "typeString": "ID!",
+      "name": "group",
+      "url": "/paymentx/reference/scalars/id",
+      "description": null,
+      "isDeprecated": false,
+      "args": null
+    },
+    {
       "typeString": "String",
       "name": "label",
       "url": "/paymentx/reference/scalars/string",

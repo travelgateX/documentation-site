@@ -5,6 +5,11 @@
   "fields": null,
   "requireby": [
     {
+      "name": "OrganizationData",
+      "description": null,
+      "url": "/travelgatex/reference/objects/organizationdata"
+    },
+    {
       "name": "HotelCriteriaSearchInput",
       "description": null,
       "url": "/travelgatex/reference/inputobjects/hotelcriteriasearchinput"
@@ -28,6 +33,16 @@
       "name": "CriteriaSearch",
       "description": null,
       "url": "/travelgatex/reference/objects/criteriasearch"
+    },
+    {
+      "name": "CreateOrganizationInput",
+      "description": null,
+      "url": "/travelgatex/reference/inputobjects/createorganizationinput"
+    },
+    {
+      "name": "UpdateGroupInput",
+      "description": null,
+      "url": "/travelgatex/reference/inputobjects/updategroupinput"
     },
     {
       "name": "HotelXDefaultSettingsDataInput",

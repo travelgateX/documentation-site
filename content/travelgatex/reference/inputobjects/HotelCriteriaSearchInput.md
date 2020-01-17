@@ -65,6 +65,13 @@
       "url": "/travelgatex/reference/scalars/string",
       "description": null,
       "args": null
+    },
+    {
+      "typeString": "[String!]",
+      "name": "markets",
+      "url": "/travelgatex/reference/scalars/string",
+      "description": null,
+      "args": null
     }
   ],
   "requireby": null,

@@ -5,6 +5,11 @@
   "fields": null,
   "requireby": [
     {
+      "name": "PaymentCardData",
+      "description": null,
+      "url": "/hotel-x/reference/objects/paymentcarddata"
+    },
+    {
       "name": "PaymentCardInput",
       "description": null,
       "url": "/hotel-x/reference/inputobjects/paymentcardinput"

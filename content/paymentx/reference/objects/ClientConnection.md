@@ -18,6 +18,29 @@
       "description": null,
       "isDeprecated": false,
       "args": null
+    },
+    {
+      "typeString": "[AdviseMessage!]",
+      "name": "adviseMessage",
+      "url": "/paymentx/reference/objects/advisemessage",
+      "description": null,
+      "isDeprecated": false,
+      "args": [
+        {
+          "typeString": "[AdviseMessageLevel]",
+          "name": "level",
+          "url": "/paymentx/reference/enums/advisemessagelevel",
+          "description": null
+        }
+      ]
+    },
+    {
+      "typeString": "Int!",
+      "name": "totalCount",
+      "url": "/paymentx/reference/scalars/int",
+      "description": null,
+      "isDeprecated": false,
+      "args": null
     }
   ],
   "requireby": [

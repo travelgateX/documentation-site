@@ -1,9 +1,9 @@
 +++
 title = "Release Notes"
-pagetitle = "New Updates & Releases"
-description = "New Updates & Releases"
-icon="fa-map"
-weight = 6
+pagetitle = "Release Notes"
+description = "Check the update released of Hotel-X"
+icon="fa-newspaper-o"
+weight = 4
 alwaysopen = false
 isDirectory = false
 tags = ["release-notes"]

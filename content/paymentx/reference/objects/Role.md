@@ -53,14 +53,14 @@
   ],
   "requireby": [
     {
-      "name": "ManagedGroupData",
-      "description": null,
-      "url": "/paymentx/reference/objects/managedgroupdata"
-    },
-    {
       "name": "Permission",
       "description": null,
       "url": "/paymentx/reference/objects/permission"
+    },
+    {
+      "name": "ManagedGroupData",
+      "description": null,
+      "url": "/paymentx/reference/objects/managedgroupdata"
     },
     {
       "name": "RoleEdge",

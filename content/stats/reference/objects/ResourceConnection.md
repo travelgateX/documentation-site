@@ -22,14 +22,14 @@
   ],
   "requireby": [
     {
-      "name": "APIData",
-      "description": null,
-      "url": "/stats/reference/objects/apidata"
-    },
-    {
       "name": "RoleData",
       "description": null,
       "url": "/stats/reference/objects/roledata"
+    },
+    {
+      "name": "APIData",
+      "description": null,
+      "url": "/stats/reference/objects/apidata"
     }
   ],
   "enumValues": null,

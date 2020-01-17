@@ -53,9 +53,9 @@
   ],
   "requireby": [
     {
-      "name": "OrganizationData",
+      "name": "GroupData",
       "description": null,
-      "url": "/mappea/reference/objects/organizationdata"
+      "url": "/mappea/reference/objects/groupdata"
     },
     {
       "name": "GroupCommonData",
@@ -68,9 +68,9 @@
       "url": "/mappea/reference/objects/memberedge"
     },
     {
-      "name": "GroupData",
+      "name": "OrganizationData",
       "description": null,
-      "url": "/mappea/reference/objects/groupdata"
+      "url": "/mappea/reference/objects/organizationdata"
     }
   ],
   "enumValues": null,

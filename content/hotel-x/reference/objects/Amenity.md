@@ -12,6 +12,14 @@
       "args": null
     },
     {
+      "typeString": "String!",
+      "name": "amenityCodeSupplier",
+      "url": "/hotel-x/reference/scalars/string",
+      "description": null,
+      "isDeprecated": false,
+      "args": null
+    },
+    {
       "typeString": "ApplicationAreaType!",
       "name": "type",
       "url": "/hotel-x/reference/enums/applicationareatype",
@@ -20,19 +28,20 @@
       "args": null
     },
     {
-      "typeString": "[Text!]!",
-      "name": "texts",
-      "url": "/hotel-x/reference/objects/text",
+      "typeString": "String!",
+      "name": "value",
+      "url": "/hotel-x/reference/scalars/string",
       "description": null,
       "isDeprecated": false,
-      "args": [
-        {
-          "typeString": "[Language!]",
-          "name": "languages",
-          "url": "/hotel-x/reference/scalars/language",
-          "description": null
-        }
-      ]
+      "args": null
+    },
+    {
+      "typeString": "String!",
+      "name": "texts",
+      "url": "/hotel-x/reference/scalars/string",
+      "description": null,
+      "isDeprecated": false,
+      "args": null
     }
   ],
   "requireby": null,

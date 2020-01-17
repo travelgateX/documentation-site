@@ -40,14 +40,14 @@
       "url": "/travelgatex/reference/objects/member"
     },
     {
-      "name": "ManagedGroup",
+      "name": "MacroPermission",
       "description": null,
-      "url": "/travelgatex/reference/objects/managedgroup"
+      "url": "/travelgatex/reference/objects/macropermission"
     },
     {
-      "name": "API",
+      "name": "Role",
       "description": null,
-      "url": "/travelgatex/reference/objects/api"
+      "url": "/travelgatex/reference/objects/role"
     },
     {
       "name": "Resource",
@@ -55,9 +55,14 @@
       "url": "/travelgatex/reference/objects/resource"
     },
     {
-      "name": "Role",
+      "name": "API",
       "description": null,
-      "url": "/travelgatex/reference/objects/role"
+      "url": "/travelgatex/reference/objects/api"
+    },
+    {
+      "name": "ManagedGroup",
+      "description": null,
+      "url": "/travelgatex/reference/objects/managedgroup"
     },
     {
       "name": "Domain",
@@ -88,11 +93,6 @@
       "name": "Product",
       "description": null,
       "url": "/travelgatex/reference/objects/product"
-    },
-    {
-      "name": "MacroPermission",
-      "description": null,
-      "url": "/travelgatex/reference/objects/macropermission"
     },
     {
       "name": "Operation",
@@ -145,6 +145,11 @@
       "url": "/travelgatex/reference/objects/geoname"
     },
     {
+      "name": "HotelXAmenity",
+      "description": null,
+      "url": "/travelgatex/reference/objects/hotelxamenity"
+    },
+    {
       "name": "RoomStatic",
       "description": null,
       "url": "/travelgatex/reference/objects/roomstatic"
@@ -153,6 +158,11 @@
       "name": "Destination",
       "description": null,
       "url": "/travelgatex/reference/objects/destination"
+    },
+    {
+      "name": "Metadata",
+      "description": null,
+      "url": "/travelgatex/reference/objects/metadata"
     },
     {
       "name": "AuditData",
@@ -168,6 +178,16 @@
       "name": "Transactions",
       "description": null,
       "url": "/travelgatex/reference/objects/transactions"
+    },
+    {
+      "name": "CancelPenalty",
+      "description": null,
+      "url": "/travelgatex/reference/objects/cancelpenalty"
+    },
+    {
+      "name": "PaymentCard",
+      "description": null,
+      "url": "/travelgatex/reference/objects/paymentcard"
     },
     {
       "name": "PaymentXStoredCardFilterInput",

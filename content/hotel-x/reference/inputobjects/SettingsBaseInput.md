@@ -30,6 +30,13 @@
       "url": "/hotel-x/reference/scalars/currency",
       "description": null,
       "args": null
+    },
+    {
+      "typeString": "Boolean",
+      "name": "commitRequired",
+      "url": "/hotel-x/reference/scalars/boolean",
+      "description": null,
+      "args": null
     }
   ],
   "requireby": [

@@ -50,9 +50,34 @@
       "url": "/hotel-x/reference/objects/businessrules"
     },
     {
+      "name": "CheckInformation",
+      "description": null,
+      "url": "/hotel-x/reference/objects/checkinformation"
+    },
+    {
+      "name": "BedStatic",
+      "description": null,
+      "url": "/hotel-x/reference/objects/bedstatic"
+    },
+    {
       "name": "OccupancyRange",
       "description": null,
       "url": "/hotel-x/reference/objects/occupancyrange"
+    },
+    {
+      "name": "ReviewedInt",
+      "description": null,
+      "url": "/hotel-x/reference/objects/reviewedint"
+    },
+    {
+      "name": "MetadataCandidate",
+      "description": null,
+      "url": "/hotel-x/reference/objects/metadatacandidate"
+    },
+    {
+      "name": "AgeRange",
+      "description": null,
+      "url": "/hotel-x/reference/objects/agerange"
     },
     {
       "name": "PaxInput",
@@ -113,6 +138,56 @@
       "name": "BookingRoom",
       "description": null,
       "url": "/hotel-x/reference/objects/bookingroom"
+    },
+    {
+      "name": "SupplierData",
+      "description": null,
+      "url": "/hotel-x/reference/objects/supplierdata"
+    },
+    {
+      "name": "AccessConnection",
+      "description": null,
+      "url": "/hotel-x/reference/objects/accessconnection"
+    },
+    {
+      "name": "GroupConnection",
+      "description": null,
+      "url": "/hotel-x/reference/objects/groupconnection"
+    },
+    {
+      "name": "ClientConnection",
+      "description": null,
+      "url": "/hotel-x/reference/objects/clientconnection"
+    },
+    {
+      "name": "AccessData",
+      "description": null,
+      "url": "/hotel-x/reference/objects/accessdata"
+    },
+    {
+      "name": "SupplierFilter",
+      "description": null,
+      "url": "/hotel-x/reference/inputobjects/supplierfilter"
+    },
+    {
+      "name": "SupplierConnection",
+      "description": null,
+      "url": "/hotel-x/reference/objects/supplierconnection"
+    },
+    {
+      "name": "GroupData",
+      "description": null,
+      "url": "/hotel-x/reference/objects/groupdata"
+    },
+    {
+      "name": "MemberConnection",
+      "description": null,
+      "url": "/hotel-x/reference/objects/memberconnection"
+    },
+    {
+      "name": "ProfileConnection",
+      "description": null,
+      "url": "/hotel-x/reference/objects/profileconnection"
     },
     {
       "name": "TimeoutInput",

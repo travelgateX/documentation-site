@@ -60,6 +60,11 @@
       "url": "/mappea/reference/objects/pageinfo"
     },
     {
+      "name": "AdviseMessage",
+      "description": null,
+      "url": "/mappea/reference/objects/advisemessage"
+    },
+    {
       "name": "AccessData",
       "description": null,
       "url": "/mappea/reference/objects/accessdata"
@@ -70,14 +75,9 @@
       "url": "/mappea/reference/objects/parameter"
     },
     {
-      "name": "OrganizationData",
+      "name": "GroupData",
       "description": null,
-      "url": "/mappea/reference/objects/organizationdata"
-    },
-    {
-      "name": "AdviseMessage",
-      "description": null,
-      "url": "/mappea/reference/objects/advisemessage"
+      "url": "/mappea/reference/objects/groupdata"
     },
     {
       "name": "GroupCommonData",
@@ -90,9 +90,14 @@
       "url": "/mappea/reference/objects/memberdata"
     },
     {
-      "name": "RoleEdge",
+      "name": "MacroPermissionEdge",
       "description": null,
-      "url": "/mappea/reference/objects/roleedge"
+      "url": "/mappea/reference/objects/macropermissionedge"
+    },
+    {
+      "name": "MacroPermissionData",
+      "description": null,
+      "url": "/mappea/reference/objects/macropermissiondata"
     },
     {
       "name": "RoleData",
@@ -110,16 +115,6 @@
       "url": "/mappea/reference/objects/resourcedata"
     },
     {
-      "name": "MemberEdge",
-      "description": null,
-      "url": "/mappea/reference/objects/memberedge"
-    },
-    {
-      "name": "APIEdge",
-      "description": null,
-      "url": "/mappea/reference/objects/apiedge"
-    },
-    {
       "name": "APIData",
       "description": null,
       "url": "/mappea/reference/objects/apidata"
@@ -135,29 +130,24 @@
       "url": "/mappea/reference/objects/operationdata"
     },
     {
-      "name": "ProductEdge",
+      "name": "MemberEdge",
       "description": null,
-      "url": "/mappea/reference/objects/productedge"
+      "url": "/mappea/reference/objects/memberedge"
     },
     {
-      "name": "ProductData",
+      "name": "APIEdge",
       "description": null,
-      "url": "/mappea/reference/objects/productdata"
+      "url": "/mappea/reference/objects/apiedge"
     },
     {
-      "name": "MacroPermissionEdge",
+      "name": "ManagedGroupEdge",
       "description": null,
-      "url": "/mappea/reference/objects/macropermissionedge"
+      "url": "/mappea/reference/objects/managedgroupedge"
     },
     {
-      "name": "MacroPermissionData",
+      "name": "RoleEdge",
       "description": null,
-      "url": "/mappea/reference/objects/macropermissiondata"
-    },
-    {
-      "name": "SupplierEdge",
-      "description": null,
-      "url": "/mappea/reference/objects/supplieredge"
+      "url": "/mappea/reference/objects/roleedge"
     },
     {
       "name": "ProfileEdge",
@@ -175,19 +165,29 @@
       "url": "/mappea/reference/objects/entityedge"
     },
     {
-      "name": "GroupData",
+      "name": "SupplierEdge",
       "description": null,
-      "url": "/mappea/reference/objects/groupdata"
-    },
-    {
-      "name": "ManagedGroupEdge",
-      "description": null,
-      "url": "/mappea/reference/objects/managedgroupedge"
+      "url": "/mappea/reference/objects/supplieredge"
     },
     {
       "name": "ExternalMessage",
       "description": null,
       "url": "/mappea/reference/objects/externalmessage"
+    },
+    {
+      "name": "OrganizationData",
+      "description": null,
+      "url": "/mappea/reference/objects/organizationdata"
+    },
+    {
+      "name": "ProductEdge",
+      "description": null,
+      "url": "/mappea/reference/objects/productedge"
+    },
+    {
+      "name": "ProductData",
+      "description": null,
+      "url": "/mappea/reference/objects/productdata"
     },
     {
       "name": "GroupEdge",

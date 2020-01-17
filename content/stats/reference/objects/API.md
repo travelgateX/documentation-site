@@ -53,9 +53,9 @@
   ],
   "requireby": [
     {
-      "name": "APIEdge",
+      "name": "Permission",
       "description": null,
-      "url": "/stats/reference/objects/apiedge"
+      "url": "/stats/reference/objects/permission"
     },
     {
       "name": "OperationData",
@@ -63,14 +63,14 @@
       "url": "/stats/reference/objects/operationdata"
     },
     {
+      "name": "APIEdge",
+      "description": null,
+      "url": "/stats/reference/objects/apiedge"
+    },
+    {
       "name": "ManagedGroupData",
       "description": null,
       "url": "/stats/reference/objects/managedgroupdata"
-    },
-    {
-      "name": "Permission",
-      "description": null,
-      "url": "/stats/reference/objects/permission"
     }
   ],
   "enumValues": null,
