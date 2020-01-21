@@ -74,7 +74,7 @@ In some cases the root node name changes, in those cases the name provided by th
 
 |Element|Number|Type|Description|
 | ---- | ---- | ---- | ---- |
-|BaseCallBacks| 1 |  | Contains information about the payment redirection of the client from the providers web page. (Obsolete: Use BaseCallBacks from common-elements instead) |
+|BaseCallBacks| 1 |  | Contains information about the payment redirection of the client from the providers web page. |
 |BaseCallBacks/Urls| 1 |  | List of Url. A Url contains information of where the provider will redirect the client of the payment goes good or wrong. |
 |BaseCallBacis/Urls/Url| 1..n | String | Redirect url value |
 |@Type| 1 | String | Type of the Url (possible values: "Success", "Fail" or "Notification"). |

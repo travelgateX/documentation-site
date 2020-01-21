@@ -101,6 +101,7 @@ The response contains a payment Id and a url to redirect the customer. If the pa
 |CreditCardDetails/Register|0..1| boolean | |
 |CreditCardDetails/ExpiryMonth|0..1| String | Month of expiration of the CC. |
 |CreditCardDetails/ExpiryYear|0..1| String | Year of expiration of the CC. |
+|CreditCardDetails/CardTypeName|0..1| String | Type of card, be it VISA, MASTERCARD, ... |
 |CreditCardDetails/CardHolderDetails|0..1| SenderDetails | Information about the card holder. See [common elements](../../common-elements/#senderdetails).|
 |CurrencyAmount|1| CurrencyAmount | Contains the currency and the amount of the transaction. See [common elements](../../common-elements/#currencyamount)|
 |Reasons|0..1| Reasons | Reasons of the payment. This reasons are add to the transaction information if the provider admits it. |
