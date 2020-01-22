@@ -1,6 +1,6 @@
 +++
-title = "Market Group X"
-pagetitle = "Market Group X"
+title = "Market Group"
+pagetitle = "Market Group"
 description = "Groups the Search result by markets that share the same product"
 icon = "fa-cog"
 weight = 3

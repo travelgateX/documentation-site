@@ -12,7 +12,7 @@ It is the client´s responsability to check the status of the booking. If you ge
 
 There are 4 different status for the response of Book query:
 
-**OK**:The reservation was completed with no problems.
-**ON_REQUEST**: The reservation was completed but the product is still not available, so the reservation goes into a waiting list. It is the client’s responsibility to check if the booking is OK.
-**UNKNOWN**: The reservation process through TGX was completed but due to a supplier error or a timeout, the reservation status is unknown. It is the client’s responsibility to check if the booking is OK. 
-**PENDING_COMMIT**: The payment has been confirmed in provider's side, but is necessary make a commit in order to confirm the reservation. 
+1. **OK**:The reservation was completed with no problems.
+2. **ON_REQUEST**: The reservation was completed but the product is still not available, so the reservation goes into a waiting list. It is the client’s responsibility to check if the booking is OK.
+3. **UNKNOWN**: The reservation process through TGX was completed but due to a supplier error or a timeout, the reservation status is unknown. It is the client’s responsibility to check if the booking is OK. 
+4. **PENDING_COMMIT**: The payment has been confirmed in provider's side, but is necessary make a commit in order to confirm the reservation. 
