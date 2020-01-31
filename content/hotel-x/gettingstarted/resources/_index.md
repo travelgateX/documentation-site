@@ -1,7 +1,7 @@
 +++
 title = "Resources"
 pagetitle = "Resources"
-description = "To complete your training"
+description = ""
 icon = "fa-cubes"
 weight = 2
 alwaysopen = false
