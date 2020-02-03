@@ -20,6 +20,20 @@
         "o":["graphiql"],
         "u":"zechao",
         "ak":"8626cf56-e364-4fd1-4fe0-311e23ac6355"
+    },
+    {
+        "n":"Supplier without metadata",
+        "g":"280ca1ea08377335838553518022d510",
+        "o":["graphiql"],
+        "u":"zechao",
+        "ak":"8626cf56-e364-4fd1-4fe0-311e23ac6355"
+    },
+    {
+        "n":"Supplier not accessible for current user",
+        "g":"8364c418de06a89f4021bb1f5cc8d53c",
+        "o":["graphiql"],
+        "u":"zechao",
+        "ak":"8626cf56-e364-4fd1-4fe0-311e23ac6355"
     }
  ]
 }
