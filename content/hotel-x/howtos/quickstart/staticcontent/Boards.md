@@ -15,7 +15,7 @@ alwaysopen = false
 
 Boards Query returns a simple boards map that can include translations to other languages.
 
-#### Playground Samples
+### Playground Samples
 
 * Boards
 {{< graphiql-tags tag="div_boards" >}}
