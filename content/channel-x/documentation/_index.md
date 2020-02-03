@@ -257,7 +257,7 @@ Sets up inventory information that should be followed by the structure Hotel > R
 | ../Name                          |	1       |	          |	*DV*.	                                                                                                  |         
 | RatePlan/Description             |	0..1       |    |	Rate description 			                                             |
 | ../Text                          |	1       |	String    |				                                             |
-| ../Offers                        | 0..1    |           |                                                                      |
+| RatePlan/Offers                  | 0..1    |           |                                                                      |
 | ../Offer                         | 1..n    |           | 			                                                               |
 | @OfferCode                    | 1       | String    |                                                                      |
 | @OfferStatusType              | 1       | String    | *N*: Active, Deactivated                                             |
