@@ -18,19 +18,20 @@ alwaysopen = false
 Hotels Query returns a hotel list from one supplier's access. This entity contains static data about the hotel requested, such as code, name, location, and other information - You can find all these fields in the [graph](https://api.travelgatex.com/). You can receive hotels with hotel codes or with minimal destination codes, you can also filter the results based on rank. In this sense, note that there are mandatory and optional fields that allow filtering the hotels returned in the response. 
 As for the response, the full response is split into pages: By default, the maximum number of hotels returned in each page (response) is 1000, but it allowes to request between 1 and 1000 hotels by filling in the field maxSize in the criteria. In order to obtain the next page of hotels, you need to fill in the token field, accordingly. Input parameters are explained above.
 
-#### Criteria
+### Criteria
 **Mandatory fields**  
-- access-> It represents the access for which you want to receive the hotels information.  
+- access-> It represents the access for which you want to receive the hotels information.
+
 
 **Optional fields**  
-- hotelCodes-> it allows to filter by hotel codes  
+- hotelCodes-> it allows to filter by hotel codes
 - ranks-> it allows to filter by ranks  
 - maxSize-> it allows to specify the number of elements per page  
 
-#### Token
+### Token
 The token allows to request the next page of hotels. The correct way of obtaining multiple pages of hotels is mantaining this field empty for the first execution, and request the token field in the response graph. Then, send subsequent queries filling in the token field with the value returned in the previous response.
 
-#### Playground Samples
+### Playground Samples
 
 * Hotels
 {{< graphiql-tags tag="div_hotels" >}}
