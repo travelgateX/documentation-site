@@ -3,7 +3,7 @@ title = "Plugins"
 pagetitle = "Plugins"
 description = "Additional logic to your App"
 icon = "fa-puzzle-piece"
-weight = 5
+weight = 6
 alwaysopen = false
 isDirectory = false
 +++

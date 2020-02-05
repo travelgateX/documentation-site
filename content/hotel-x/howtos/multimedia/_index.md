@@ -1,13 +1,13 @@
 +++
-title = "Guides"
-pagetitle = "Guides"
+title = "Multimedia"
+pagetitle = "Hotel-X Multimedia"
 description = ""
-icon = "fa-guide"
+icon = "fa-file-video-o"
 weight = 1
 alwaysopen = false
 isDirectory=true
 +++
 
-## The guides
+## Multimedia
 
 {{%custom-children%}}

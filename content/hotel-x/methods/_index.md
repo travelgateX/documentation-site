@@ -1,9 +1,9 @@
 +++
-title = "Quickstart"
-pagetitle = "Quickstart"
+title = "Methods"
+pagetitle = "Methods"
 description = "To get started with Hotel-X"
 icon = "fa-play"
-weight = 1
+weight = 5
 alwaysopen = false
 isDirectory=true
 +++
