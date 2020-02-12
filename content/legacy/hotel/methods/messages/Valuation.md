@@ -240,12 +240,10 @@ This means that depending on when you cancel the booking you should pay one pena
 
 **Final buying price:** 
 
-If the price in the reservation is lower, we recommend taking into account the price in valuation, given that it is the price which the end customer will see. The price in reservation should always be kept in mind, especially in case it is higher than the one in valuation.
+If the price in Reservation is lower than the price in Valuation. The selling price for the final customer will be the one in valuation, as this is the one that will be accepted by them at the time of booking.
 
 **Note:** 
 
 *Keep the parameters in the avail response to include them in the valuation request.*
 
 *Keep the parameters in the valuation response to include them in the reservation request.*
-
-
