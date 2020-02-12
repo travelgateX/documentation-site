@@ -258,7 +258,7 @@ can have four values: OK, RQ, CN and UN.
 -   *UN:* The reservation was completed but due to a supplier error or a timeout, the reservation status is unknown.
    It is the client's responsibility to check if the booking is OK.
 
-
+{{% alert theme="warning" %}}**Important:** be aware that you can receive an error and a reservation status OK in the same response, in this case the booking is confirmed. You should always consider the reservation status returned.{{% /alert %}}
 
 **Note:** *Keep the parameters in the valuation response to include them in the reservation request.*
 
@@ -325,7 +325,7 @@ If the price returned in Reservation method is different than the one returned i
 
 **Case 1:**
 
-The price in Reservation is lower than the price in Valuation. The selling price for the final customer will be the one in valuation, as this is the one that will be accepted by them at the time of booking. The final price that you should pay the supplier will be the price in Reservation.
+The price in Reservation is lower than the price in Valuation. The selling price for the final customer will be the one in valuation, as this is the one that will be accepted by them at the time of booking.
 
 **Case 2:**
 
