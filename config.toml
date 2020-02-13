@@ -12,7 +12,7 @@ theme = "docdock"
 home = [ "HTML", "RSS", "JSON"]
 section = [ "HTML", "RSS"]
 
-[blackfriday] 
+[blackfriday]
 plainIDAnchors = true
 hrefTargetBlank = true
 nofollowLinks = true
