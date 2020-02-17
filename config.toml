@@ -336,7 +336,7 @@ discourseUrl = "http://community.travelgatex.com/"
       description = "Searches per Minute"
       icon = "icon-speedometer"
       from = 0
-      to = 623456
+      to = 623456 
       interval = 50
       speed = 2200
 
