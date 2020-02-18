@@ -22,7 +22,7 @@ jobs:
           #extended: true
 
       - name: Build
-        run: ./deploy.sh
+        run: ls
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
