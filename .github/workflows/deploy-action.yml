@@ -27,8 +27,11 @@ jobs:
           ls -la
           echo "works"
           cd ..
-          ls -la
           echo "gone up"
+          ls -la
+          cd documentation-site
+          echo "gone down"
+          ls -la
           bash deploy.sh -xe 
 
       - name: Deploy
