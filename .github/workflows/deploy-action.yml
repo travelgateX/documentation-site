@@ -22,10 +22,10 @@ jobs:
           #extended: true
 
       - name: Build
-        run: ls -l
-             cd ..
-             ls -l
-             cd ..
+        run: ls -l;
+             cd ..;
+             ls -l;
+             cd ..;
              ls -l
 
       - name: Deploy
