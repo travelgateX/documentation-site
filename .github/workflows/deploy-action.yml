@@ -22,17 +22,7 @@ jobs:
           #extended: true
 
       - name: Build
-        run: | 
-          ls
-          ls -la
-          echo "works"
-          cd ..
-          echo "gone up"
-          ls -la
-          cd documentation-site
-          echo "gone down"
-          ls -la
-          bash deploy.sh -xe 
+        run: bash ./documentation-site/deploy.sh -xe 
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
