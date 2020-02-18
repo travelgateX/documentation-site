@@ -23,10 +23,11 @@ jobs:
 
       - name: Build
         run: ls -l;
-             cd ..;
+             echo "listed files"; 
+             cd documentation-site;
+             echo "hopefully changed directory to project root"; 
              ls -l;
-             cd ..;
-             ls -l
+             echo "listed root files"; 
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
