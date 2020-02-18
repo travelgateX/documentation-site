@@ -19,13 +19,13 @@ jobs:
         uses: peaceiris/actions-hugo@v2
         with:
           hugo-version: '0.54.0'
-          extended: true
-
-      - name: Build
-        run: ./deploy.sh
-
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
-          publish_dir: ./public
+#          extended: true
+#
+#      - name: Build
+#        run: ./deploy.sh
+#
+#      - name: Deploy
+#        uses: peaceiris/actions-gh-pages@v3
+#        with:
+#          deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+#          publish_dir: ./public
