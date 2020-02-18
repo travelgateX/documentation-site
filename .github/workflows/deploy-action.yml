@@ -24,8 +24,11 @@ jobs:
       - name: Build
         run: | 
           ls
-          ls -l
+          ls -la
           echo "works"
+          cd ..
+          ls -la
+          echo "gone up"
           bash deploy.sh -xe 
 
       - name: Deploy
