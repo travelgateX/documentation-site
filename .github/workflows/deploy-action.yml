@@ -22,12 +22,7 @@ jobs:
           #extended: true
 
       - name: Build
-        run: ls -l;
-             echo "listed files"; 
-             cd documentation-site;
-             echo "hopefully changed directory to project root"; 
-             ls -l;
-             echo "listed root files"; 
+        run: bash deploy.sh -xe 
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
