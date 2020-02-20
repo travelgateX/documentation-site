@@ -1,6 +1,6 @@
 @font-face {
   font-family: Roboto;
-  src: url('../fonts/Roboto/Roboto-Regular.ttf');
+  src: url("../fonts/Roboto/Roboto-Regular.ttf");
 }
 
 #navbar {
@@ -86,20 +86,20 @@ nav ul.topics li ul {
   font-size: 1.5rem;
 }
 
-img[src$='#center'] {
+img[src$="#center"] {
   width: auto;
   display: block;
   margin: 3rem auto; /* you can replace the vertical '0.7rem' by whatever floats your boat, but keep the horizontal 'auto' for this to work */
   /* whatever else styles you fancy here */
 }
 
-img[src$='#floatleft'] {
+img[src$="#floatleft"] {
   float: left;
   margin: 0.7rem; /* this margin is totally up to you */
   /* whatever else styles you fancy here */
 }
 
-img[src$='#floatright'] {
+img[src$="#floatright"] {
   float: right;
   margin: 0.7rem; /* this margin is totally up to you */
   /* whatever else styles you fancy here */
@@ -133,7 +133,7 @@ body {
 }
 
 .bottom-header.header-module .nav-link {
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   color: #182945;
   border-bottom: 4px solid transparent;
   margin-right: 20px;
@@ -157,7 +157,6 @@ iframe {
   width: 100%;
   height: 400px;
 }
-
 
 .menu-right {
   font-size: 15px;
@@ -533,7 +532,6 @@ a.card-lv2:hover {
   transform: translateX(0%);
 }
 
-
 .menu-left nav {
   position: relative;
   float: left;
@@ -748,7 +746,7 @@ code {
   color: #4d4d4c !important;
   border: 1px solid #4d4d4c;
   font-size: 14px;
-  font-family: 'Ubuntu Mono';
+  font-family: "Ubuntu Mono";
   cursor: text;
   list-style-type: decimal;
   border-radius: 0.25rem;
@@ -777,7 +775,7 @@ code {
 
 .highlight::after,
 .highlight::before {
-  content: '';
+  content: "";
   display: block;
   height: 0.75rem;
   width: 0.75rem;
@@ -1823,42 +1821,42 @@ div.release-types > ul > li:nth-of-type(1)::before {
 }
 
 div.release-types.type-a > ul > li:nth-of-type(1)::before {
-  content: 'added';
+  content: "added";
   background-color: #0f9d58;
 }
 
 div.release-types.type-c > ul > li:nth-of-type(1)::before {
-  content: 'changed';
+  content: "changed";
   background-color: #f4b400;
 }
 
 div.release-types.type-d > ul > li:nth-of-type(1)::before {
-  content: 'deprecated';
+  content: "deprecated";
   background-color: #e65100;
 }
 
 div.release-types.type-r > ul > li:nth-of-type(1)::before {
-  content: 'removed';
+  content: "removed";
   background-color: #db4437;
 }
 
 div.release-types.type-f > ul > li:nth-of-type(1)::before {
-  content: 'fixed';
+  content: "fixed";
   background-color: #4285f4;
 }
 
 div.release-types.type-s > ul > li:nth-of-type(1)::before {
-  content: 'security';
+  content: "security";
   background-color: rgb(186, 89, 224);
 }
 
 div.release-types.type-u > ul > li:nth-of-type(1)::before {
-  content: 'unreleased';
+  content: "unreleased";
   background-color: rgb(202, 202, 202);
 }
 
 div.release-types.type-o > ul > li:nth-of-type(1)::before {
-  content: 'Orphan nodes';
+  content: "Orphan nodes";
   background-color: rgb(0, 0, 0);
 }
 
@@ -1867,11 +1865,12 @@ div.alert.alert-info + h3#unreleased {
   height: 0;
 }
 
-.page-sections-item, .feed-menu-item {
+.page-sections-item,
+.feed-menu-item {
   visibility: hidden;
 }
 
-.page-sections-menu{
+.page-sections-menu {
   display: none;
   position: absolute;
   z-index: 10000;
@@ -1879,7 +1878,7 @@ div.alert.alert-info + h3#unreleased {
   background: white;
   overflow-y: auto;
   max-height: 23vh;
-}   
+}
 
 .page-sections-menu > #TableOfContents {
   min-width: 200px;
@@ -1911,4 +1910,20 @@ div.alert.alert-info + h3#unreleased {
 .page-sections-menu nav ul li a:hover {
   text-decoration: none;
   font-weight: bold;
+}
+
+.custom-highlight .highlight {
+  margin: 3px;
+  background-color: transparent !important;
+  box-shadow: none !important;
+  flex: 1;
+}
+
+.custom-highlight .highlight::before,
+.custom-highlight .highlight::after {
+  display: none;
+}
+
+.custom-highlight .highlight pre {
+  background-color: transparent !important;
 }
