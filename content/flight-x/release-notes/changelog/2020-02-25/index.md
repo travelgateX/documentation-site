@@ -1,19 +1,19 @@
 +++
-title = "2019-10-31"
-pagetitle = "2019-10-31"
+title = "2020-02-25"
+pagetitle = "2020-02-25"
 description = "Contains a chronologically ordered list of notable changes at our website"
 weight = 2
 icon="fa-exchange"
 svgicon="https://media.graphcms.com/kDcxZmKCQx2oLNNfGvSz"
 alwaysopen = false
-date = 2019-10-31
+date = 2020-02-20
 hidden = true
 tags = ["products-changelog"]
 +++
 
 
-## 2019-10-31
+## 2020-02-20
 
 {{% release-notes-container type="a"%}}
-- Released first pilot API version and web page for testing.
+- Released first pilot API version in Ggraphql (Only searh method)
 {{% /release-notes-container %}}
