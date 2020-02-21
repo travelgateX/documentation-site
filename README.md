@@ -91,3 +91,7 @@ npm install
 npm start
 cd ..
 ```
+
+### Creating GitHub gists
+
+Various examples of GraphQL calls, XML configurations and other code snippets can be found throughout our documentation, to help TravelgateX users better understand how our services work. If you think you can provide some useful code example, feel free to create a public gist on GitHub and contact us. You can learn to make your own gists [here](https://help.github.com/en/github/writing-on-github/creating-gists). 
