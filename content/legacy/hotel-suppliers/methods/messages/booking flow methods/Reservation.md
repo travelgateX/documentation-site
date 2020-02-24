@@ -4,7 +4,7 @@ keywords= "hotel, data structure, reservation"
 search= "Hotel - Data Structure - Reservation"
 sidebar= "mydoc_sidebar"
 permalink= "/docs/hotel/DSF/Reservation"
-weight = 16
+weight = 3
 +++
 
 
@@ -128,12 +128,12 @@ is closed.
 | --------------------------------------------- | ------------- | ------------- | ----------------------------------------------------- |
 | ReservationRQ 				| 1      	|		| Root node.						|
 | ClientLocator 				| 1  		| String	| Booking ID in client's system.					|
-| OnRequest     				| 1  		| Boolean	| Indicates if you want to receive the onrequest options in AvailRS, as long as the supplier returns it in this method (see [MetaData](https://docs.travelgatex.com/legacy/docs/hotel/methods/metadata/) in order to verify if a supplier implements it).	|
+| OnRequest     				| 1  		| Boolean	| Indicates if you want to receive the onrequest options in AvailRS, as long as the supplier returns it in this method (see [MetaData](/legacy/hotel-suppliers/methods/messages/static-methods/metadata/) in order to verify if a supplier implements it).	|
 | Parameters    				| 0..1    	|		| Parameters for additional information that have been reported in ValuationRS.	|
 | Parameters/Parameter				| 1..n    	|		| List of parameters.					|
 | @key     					| 1  		| String	| Contains the keyword/Id to identify a parameter.	|
 | @value   					| 1  		| String	| Contains the value of the parameter.			|
-| DeltaPrice    				| 0..1    	|		| Indicates price variation permitted by the client (see [MetaData](https://docs.travelgatex.com/legacy/docs/hotel/methods/metadata/) in order to verify if a supplier implements it). You can find more information with examples at [the bottom of this page](https://docs.travelgatex.com/legacy/docs/hotel/methods/reservation/#deltaprice-description).	|
+| DeltaPrice    				| 0..1    	|		| Indicates price variation permitted by the client (see [MetaData](/legacy/hotel-suppliers/methods/messages/static-methods/metadata/) in order to verify if a supplier implements it). You can find more information with examples at [the bottom of this page](/legacy/hotel-suppliers/methods/messages/booking-flow-methods//reservation/#deltaprice-description).	|
 | @amount  					| 0..1		| String	| Amount (in the currency returned into the option) that is accepted by the client to be higher than the valuation price. |
 | @percent 					| 0..1		| String	| Percentage accepted by the client to be higher than the valuation price.	|
 | @applyBoth					| 1  		| Boolean	| Indicates that the range between valuation price and the new price does not exceed the amount and/or porcentage indicated by the client.  |
@@ -141,7 +141,7 @@ is closed.
 | EndDate       				| 1  		| String	| End date to search rates.				|
 | MealPlanCode  				| 1  		| String	| MealPlan code.					|
 | HotelCode     				| 1  		| String	| Hotel code.						|
-| Nationality   				| 1		| String	| Nationality of the Holder (use ISO3166_1_alfa_2 , see [MetaData](https://docs.travelgatex.com/legacy/docs/hotel/methods/metadata/) in order to verify if a supplier implements it).  |
+| Nationality   				| 1		| String	| Nationality of the Holder (use ISO3166_1_alfa_2 , see [MetaData](/legacy/hotel-suppliers/methods/messages/static-methods/metadata/) in order to verify if a supplier implements it).  |
 | Holder   				| 1		|		| Holder of the booking.  |
 | @title   				| 1		|		| Holder's title.  |
 | @name   				| 1		|		| Holder's name.  |
@@ -161,7 +161,7 @@ is closed.
 | ResGuests/Guests/Guest/SurName		| 1   		| String	| Guest's last name.						|
 | PaymentType   				| 1  		| String	| Indicates the type of payment. It can be MerchantPay, LaterPay, CardBookingPay or CardCheckInPay. Payment types are explained in "Detailed description" section, in this same page.			|
 | CardInfo   				| 0..1  		|		| Credit card details.			|
-| CardInfo/CardCode   				| 1  		| String	| Indicates the type of credit card. See types allowed at [Credit Card Types](https://docs.travelgatex.com/legacy/docs/hotel/methods/listsdata/#credit-cards)			|
+| CardInfo/CardCode   				| 1  		| String	| Indicates the type of credit card. See types allowed at [Credit Card Types](/legacy/hotel-suppliers/methods/messages/listsdata/#credit-cards)			|
 | CardInfo/Number   				| 1  		| String	| Credit card number.			| 
 | CardInfo/Holder   				| 1  		| String	| Credit card holder.			|
 | CardInfo/ValidityDate   				| 1  		|		| 			|
@@ -182,7 +182,7 @@ is closed.
 | RoomCandidates/RoomCandidate/Paxes/Pax	| 1..n    	|		| Pax required.						|
 | @age     					| 1  		| Integer	| Passenger age. 					|
 | @id      					| 1  		| Integer	| Passenger id (starting at 1). 			|
-| Remarks       				| 0..1    	| 		| Any customer comments for the supplier to consider (see [MetaData](https://docs.travelgatex.com/legacy/docs/hotel/methods/metadata/) in order to verify if a supplier implements it).	|
+| Remarks       				| 0..1    	| 		| Any customer comments for the supplier to consider (see [MetaData](/legacy/hotel-suppliers/methods/messages/static-methods/metadata/) in order to verify if a supplier implements it).	|
 | Preferences    				| 0..1    	|		| Preference filters at the option / general level. 					|
 | Preferences/Preference   				| 1..n    	|		| Each filter of preference and its values. 		|
 | @type   				| 1    	|		| Type of preference allowed. See types allowed in ** PreferenceType:**  					|
@@ -210,16 +210,16 @@ is closed.
 | **Element**					| **Number**	| **Type**	| **Description**					|
 | --------------------------------------------- | ------------- | ------------- | ----------------------------------------------------- |
 | ReservationRS					| 1       	|		| Root node.						|
-| ProviderLocator 				| 0..1  		| String	| Booking ID in the Supplier´s system. It will always be returned if the ResStatus is OK or RQ. It could not be returned when the ResStatus is CN or UN, depending if the supplier returns it. 					|
+| ProviderLocator 				| 1  		| String	| Booking ID in the Supplier´s system					|
 | PropertyReservationNumber 				| 0..1  		| String	| Booking Number in the property´s system (see Metadata method in order to verify if a supplier implements it).	|
 | ResStatus					| 1  		| String	| reservation status  (OK = confirmed, RQ = on request, CN = cancelled, UN = unknown.	|
-| Price  					| 0..1     	|		| Total price of this reservation (see [MetaData](https://docs.travelgatex.com/legacy/docs/hotel/methods/metadata/) in order to verify if a supplier implements it).				|
+| Price  					| 0..1     	|		| Total price of this reservation (see [MetaData](/legacy/hotel-suppliers/methods/messages/static-methods/metadata/) in order to verify if a supplier implements it).				|
 | @currency					| 1  		| String	| Currency code.					|
 | @amount					| 1  		| Decimal	| Book Amount.						|
 | @binding					| 1  		| Boolean	| Identifies if is the price is binding (when true the sale price returned **must** not be less than the price informed. |
 | @commission					| 1  		| Decimal	| Commission (-1 = not specified, 0 = net price, X = % of the commission that applies to the amount.	|
 | Remarks					| 0..1		| String	| Any remarks about this reservation			|
-| BillingSupplierCode				| 0..1		| String	| Supplier's billing code. Will be returned if the supplier has different billing accounts and this is informed in the reservation (see [MetaData](https://docs.travelgatex.com/legacy/docs/hotel/methods/metadata/) in order to verify if a supplier implements it).	|
+| BillingSupplierCode				| 0..1		| String	| Supplier's billing code. Will be returned if the supplier has different billing accounts and this is informed in the reservation (see [MetaData](/legacy/hotel-suppliers/methods/messages/static-methods/metadata/) in order to verify if a supplier implements it).	|
 | Payable					| 0..1     	|		| Payable.						|
 | @value					| 1       	|		| Informs Payable.					|
   
@@ -258,7 +258,7 @@ can have four values: OK, RQ, CN and UN.
 -   *UN:* The reservation was completed but due to a supplier error or a timeout, the reservation status is unknown.
    It is the client's responsibility to check if the booking is OK.
 
-{{% alert theme="warning" %}}**Important:** be aware that you can receive an error and a reservation status OK in the same response, in this case the booking is confirmed. You should always consider the reservation status returned.{{% /alert %}}
+
 
 **Note:** *Keep the parameters in the valuation response to include them in the reservation request.*
 
@@ -325,7 +325,7 @@ If the price returned in Reservation method is different than the one returned i
 
 **Case 1:**
 
-The price in Reservation is lower than the price in Valuation. The selling price for the final customer will be the one in valuation, as this is the one that will be accepted by them at the time of booking.
+The price in Reservation is lower than the price in Valuation. The selling price for the final customer will be the one in valuation, as this is the one that will be accepted by them at the time of booking. The final price that you should pay the supplier will be the price in Reservation.
 
 **Case 2:**
 
