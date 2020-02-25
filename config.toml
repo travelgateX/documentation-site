@@ -12,7 +12,7 @@ theme = "docdock"
 home = [ "HTML", "RSS", "JSON"]
 section = [ "HTML", "RSS"]
 
-[blackfriday]
+[blackfriday] 
 plainIDAnchors = true
 hrefTargetBlank = true
 nofollowLinks = true
@@ -336,7 +336,7 @@ discourseUrl = "http://community.travelgatex.com/"
       description = "Searches per Minute"
       icon = "icon-speedometer"
       from = 0
-      to = 623456
+      to = 623456 
       interval = 50
       speed = 2200
 
@@ -397,3 +397,15 @@ discourseUrl = "http://community.travelgatex.com/"
     [[related.indices]]
       name  = "tags"
       weight = 100
+
+[markup]
+  [markup.highlight]
+    codeFences = true
+    guessSyntax = false
+    hl_Lines = ""
+    lineNoStart = 1
+    lineNos = false
+    lineNumbersInTable = true
+    noClasses = true
+    style = "monokailight"
+    tabWidth = 4
