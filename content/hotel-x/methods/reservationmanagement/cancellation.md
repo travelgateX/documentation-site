@@ -5,30 +5,28 @@
 "icon": "fa-calendar-times-o",
 "weight": 2,
 "alwaysopen": false,
-"default_ak": "64780338-49c8-4439-7c7d-d03c2033b145",
+"default_ak": "8626cf56-e364-4fd1-4fe0-311e23ac6355",
 "default_user": "",
 "gists": [
     {
         "n":"By Reference",
-        "g":"54474f0b475a0cb064de7cfea1124870",
+        "g":"8f7d0537b788553113ecfe0fd91308ce",
         "o":["graphiql"],
         "u":"tgx-bot",
-        "ak":"64780338-49c8-4439-7c7d-d03c2033b145"
+        "ak":"8626cf56-e364-4fd1-4fe0-311e23ac6355"
     },
     {
         "n":"By BookingID",
-        "g":"4c76ce49bd49bbac4fb95373139d4a15",
+        "g":"928a838ee2775104f8211a1283bfa646",
         "o":["graphiql"],
         "u":"tgx-bot",
-        "ak":"64780338-49c8-4439-7c7d-d03c2033b145"
+        "ak":"8626cf56-e364-4fd1-4fe0-311e23ac6355"
     }
         ]
 }
 
-Cancellation operation that cancels the booking.
-Which time zone applies for the cancellation policies?
-NOTE: Cancellation always takes into account the day and time of the destination in order to calculate what cancellation policy should be applied.
-UTC time
+Cancellation operation allows you to cancel a booking.
+NOTE: Cancellation always takes into account the day and time of the destination in order to calculate what cancellation policy should be applied. UTC time.
 
 - When the booking is cancelled, the details of the cancelled booking are returned with the following information:
 - The booking status: CANCELLED
@@ -43,6 +41,14 @@ There are two different types of cancellation:
 
 ## How to cancel 
 {{% graphiql-tabs %}}
+
+8f7d0537b788553113ecfe0fd91308ce
+You can cancel bookings with the client reference or with the supplier reference.
+/8f7d0537b788553113ecfe0fd91308ce
+
+928a838ee2775104f8211a1283bfa646
+Bear in mind that you will have to carry the bookingID recieved in the **book** response if you want to cancel with this query.
+/928a838ee2775104f8211a1283bfa646
 
 {{% /graphiql-tabs %}}
 

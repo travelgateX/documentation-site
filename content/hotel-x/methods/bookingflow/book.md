@@ -1,14 +1,22 @@
-+++
-title = "Book"
-pagetitle = "Book"
-description = "How to perform a booking"
-icon = "fa-money"
-weight = 3
-alwaysopen = false
-+++
-
-{{< graphiql-script queries="[{\"apikey\":\"64780338-49c8-4439-7c7d-d03c2033b145\",\"gist\":\"https://gist.githubusercontent.com/tgx-bot/31d4d32ea8e8bc8ab5d7bc3910df72c0/raw\",\"divname\":\"div_booking\"}]" >}}
-{{< graphiql-styles >}}
+{
+"title": "Book",
+"pagetitle": "Book",
+"description": "How to perform a booking",
+"icon": "fa-money",
+"weight": 3,
+"alwaysopen": false,
+"default_ak": "8626cf56-e364-4fd1-4fe0-311e23ac6355",
+"default_user": "",
+"gists": [
+    {
+        "n":"1 Room",
+        "g":"fb4cf9773a63b7bf222011c211de6b4a",
+        "o":["graphiql"],
+        "u":"tgx-bot",
+        "ak":"8626cf56-e364-4fd1-4fe0-311e23ac6355"
+    }
+        ]
+}
 
 The Book operation requests a reservation confirmation for the specified optionId retunred in Quote.
 
@@ -29,4 +37,13 @@ It would be good to "true" it in order to make these claims to supplier
 
 ## How to confirm a reservation
 
-{{< graphiql-tags tag="div_booking" >}}
+{{% graphiql-tabs %}}
+
+fb4cf9773a63b7bf222011c211de6b4a
+Please, bear in mind that the clientReference has to be different for every test that you're performing.
+/fb4cf9773a63b7bf222011c211de6b4a
+
+{{% /graphiql-tabs %}}
+
+{{< graphiql-styles >}}
+{{% graphiql-script-tabs %}}

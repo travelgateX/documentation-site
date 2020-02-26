@@ -5,29 +5,29 @@
 "icon": "fa-list",
 "weight": 1,
 "alwaysopen": false,
-"default_ak": "64780338-49c8-4439-7c7d-d03c2033b145",
+"default_ak": "8626cf56-e364-4fd1-4fe0-311e23ac6355",
 "default_user": "",
 "gists": [
     {
         "n":"By Dates",
-        "g":"2bee5af21dd6f2cc61eec736bb95aead",
+        "g":"310e5aab39ae09ddb5ba06cbaae8bcb6",
         "o":["graphiql"],
         "u":"tgx-bot",
-        "ak":"64780338-49c8-4439-7c7d-d03c2033b145"
+        "ak":"8626cf56-e364-4fd1-4fe0-311e23ac6355"
     }, 
     {
         "n":"By Reference",
-        "g":"a5b25332a7a5683d602efeb87233a9c7",
+        "g":"cca5c85b0cd1be29f86a67ecf38bb75a",
         "o":["graphiql"],
         "u":"tgx-bot",
-        "ak":"64780338-49c8-4439-7c7d-d03c2033b145"
+        "ak":"8626cf56-e364-4fd1-4fe0-311e23ac6355"
     },
     {
         "n":"By BookingID",
-        "g":"133143d655be0783914dff46b66c96f4",
+        "g":"af8923db89312e8f2cd85ed063b2fc15",
         "o":["graphiql"],
         "u":"tgx-bot",
-        "ak":"64780338-49c8-4439-7c7d-d03c2033b145"
+        "ak":"8626cf56-e364-4fd1-4fe0-311e23ac6355"
     }
         ]
 }
@@ -49,9 +49,13 @@ There are three different types of booking search:
 ## How to request
 {{% graphiql-tabs %}}
 
-a5b25332a7a5683d602efeb87233a9c7
-You can ask for bookings by client reference (XTG-XXXXXX) or by supplier reference.
-/a5b25332a7a5683d602efeb87233a9c7
+cca5c85b0cd1be29f86a67ecf38bb75a
+You can ask for bookings by client reference or by supplier reference.
+/cca5c85b0cd1be29f86a67ecf38bb75a
+
+af8923db89312e8f2cd85ed063b2fc15
+Bear in mind that you will have to carry the bookingID recieved in the **book** response if you want to retrieve with this query.
+/af8923db89312e8f2cd85ed063b2fc15
 
 {{% /graphiql-tabs %}}
 
