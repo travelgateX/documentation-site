@@ -1,14 +1,29 @@
-+++
-title = "Cancellation"
-pagetitle = "Cancellation"
-description = "How to cancel a booking"
-icon = "fa-calendar-times-o"
-weight = 2
-alwaysopen = false
-+++
-
-{{< graphiql-script queries="[{\"apikey\":\"64780338-49c8-4439-7c7d-d03c2033b145\",\"gist\":\"https://gist.githubusercontent.com/tgx-bot/1b160cfcf47b1c4d1deada1a18ae98b6/raw\",\"divname\":\"div_cancellation\"}]" >}}
-{{< graphiql-styles >}}
+{
+"title": "Cancellation",
+"pagetitle": "Cancellation",
+"description": "How to cancel a booking",
+"icon": "fa-calendar-times-o",
+"weight": 2,
+"alwaysopen": false,
+"default_ak": "64780338-49c8-4439-7c7d-d03c2033b145",
+"default_user": "",
+"gists": [
+    {
+        "n":"By Reference",
+        "g":"54474f0b475a0cb064de7cfea1124870",
+        "o":["graphiql"],
+        "u":"tgx-bot",
+        "ak":"64780338-49c8-4439-7c7d-d03c2033b145"
+    },
+    {
+        "n":"By BookingID",
+        "g":"4c76ce49bd49bbac4fb95373139d4a15",
+        "o":["graphiql"],
+        "u":"tgx-bot",
+        "ak":"64780338-49c8-4439-7c7d-d03c2033b145"
+    }
+        ]
+}
 
 Cancellation operation that cancels the booking.
 Which time zone applies for the cancellation policies?
@@ -22,8 +37,14 @@ UTC time
 - Holder name
 
 ## Advanced criteria
-Explain different parameters can be set up on the request (indicate which ones are mandatory)
+There are two different types of cancellation:
+* By reference
+* By bookingID
 
 ## How to cancel 
-{{< graphiql-tags tag="div_cancellation" >}}
+{{% graphiql-tabs %}}
 
+{{% /graphiql-tabs %}}
+
+{{< graphiql-styles >}}
+{{% graphiql-script-tabs %}}

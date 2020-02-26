@@ -13,6 +13,18 @@
 
 {{% alert theme="info" %}}Changes history of deprecated notes previously announced{{% /alert %}}
 
+### 2020-02-25
+{{% release-notes-container type="d"%}}
+- Deprecated `accessCode` from `HotelCancelInput`. Reason: Use new bookingID instead.
+- Deprecated `language` from `HotelCancelInput`. Reason: Use new bookingID instead.
+- Deprecated `hotelCode` from `HotelCancelInput`. Reason: Use new bookingID instead.
+- Deprecated `reference` from `HotelCancelInput`. Reason: Use new bookingID instead.
+- Deprecated `accessCode` from `HotelCriteriaBookingInput`. Reason: Use new bookingID instead.
+- Deprecated `language` from `HotelCriteriaBookingInput`. Reason: Use new bookingID instead.
+- Deprecated `typeSearch` from `HotelCriteriaBookingInput`. Reason: Use new bookingID instead.
+- Deprecated `references` from `HotelCriteriaBookingInput`. Reason: Use new bookingID instead.
+- Deprecated `dates` from `HotelCriteriaBookingInput`. Reason: Use new bookingID instead.
+{{% / release-notes-container %}}
 ### Unreleased
 {{% release-notes-container type="u"%}}
 - Removal of `loadFile` from `HotelXMutation`. Reason: .  Deprecated on 2018-06-06.**To be removed soon**.

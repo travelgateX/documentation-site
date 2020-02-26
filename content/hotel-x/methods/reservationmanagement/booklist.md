@@ -21,20 +21,30 @@
         "o":["graphiql"],
         "u":"tgx-bot",
         "ak":"64780338-49c8-4439-7c7d-d03c2033b145"
+    },
+    {
+        "n":"By BookingID",
+        "g":"133143d655be0783914dff46b66c96f4",
+        "o":["graphiql"],
+        "u":"tgx-bot",
+        "ak":"64780338-49c8-4439-7c7d-d03c2033b145"
     }
         ]
 }
 
 The Booking operation allows to retrieve a booking (or bookings) with all its details from the booking reference locator.
 The most important information returned for each booking in the list is:
-- Booking reference
-- Booking holder
-- Booking pax
-- Hotel, rooms and boards confirmed
-- Booking rates
+* Booking reference
+* Booking holder
+* Booking pax
+* Hotel, rooms and boards confirmed
+* Booking rates
 
 ## Advanced criteria
-Explain different parameters can be set up on the request (indicate which ones are mandatory)
+There are three different types of booking search:
+* By reference
+* By dates
+* By bookingID
 
 ## How to request
 {{% graphiql-tabs %}}
