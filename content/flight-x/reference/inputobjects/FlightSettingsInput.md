@@ -34,7 +34,7 @@
     {
       "typeString": "Boolean",
       "name": "auditTransactions",
-      "url": "/flight-x/reference/scalar/boolean",
+      "url": "/flight-x/reference/scalars/boolean",
       "description": "It has not been developed yet.",
       "args": null
     }

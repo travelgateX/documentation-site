@@ -22,7 +22,7 @@
     {
       "typeString": "AirlineCode",
       "name": "carrier",
-      "url": "/flight-x/reference/scalar/airlinecode",
+      "url": "/flight-x/reference/scalars/airlinecode",
       "description": null,
       "isDeprecated": false,
       "args": null
@@ -30,7 +30,7 @@
     {
       "typeString": "FlightNumber",
       "name": "flightNumber",
-      "url": "/flight-x/reference/scalar/flightnumber",
+      "url": "/flight-x/reference/scalars/flightnumber",
       "description": null,
       "isDeprecated": false,
       "args": null

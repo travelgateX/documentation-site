@@ -34,7 +34,7 @@
     {
       "typeString": "[int!]",
       "name": "age_in",
-      "url": "/flight-x/reference/scalar/int",
+      "url": "/flight-x/reference/scalars/int",
       "description": "Passengers ages",
       "args": null
     },

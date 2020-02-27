@@ -6,7 +6,7 @@
     {
       "typeString": "ID!",
       "name": "code",
-      "url": "/flight-x/reference/scalar/id",
+      "url": "/flight-x/reference/scalars/id",
       "description": null,
       "isDeprecated": false,
       "args": null
@@ -22,7 +22,7 @@
     {
       "typeString": "DateTime!",
       "name": "createdAt",
-      "url": "/flight-x/reference/scalar/datetime",
+      "url": "/flight-x/reference/scalars/datetime",
       "description": null,
       "isDeprecated": false,
       "args": null
@@ -30,7 +30,7 @@
     {
       "typeString": "DateTime!",
       "name": "updatedAt",
-      "url": "/flight-x/reference/scalar/datetime",
+      "url": "/flight-x/reference/scalars/datetime",
       "description": null,
       "isDeprecated": false,
       "args": null

@@ -6,7 +6,7 @@
     {
       "typeString": "int!",
       "name": "age",
-      "url": "/flight-x/reference/scalar/int",
+      "url": "/flight-x/reference/scalars/int",
       "description": null,
       "isDeprecated": false,
       "args": null
@@ -14,7 +14,7 @@
     {
       "typeString": "IATA_PTC_CodeType",
       "name": "type",
-      "url": "/flight-x/reference/scalar/iata_ptc_codetype",
+      "url": "/flight-x/reference/enums/iata_ptc_codetype",
       "description": null,
       "isDeprecated": false,
       "args": null
@@ -22,7 +22,7 @@
     {
       "typeString": "ID!",
       "name": "paxID",
-      "url": "/flight-x/reference/scalar/id",
+      "url": "/flight-x/reference/scalars/id",
       "description": null,
       "isDeprecated": false,
       "args": null
