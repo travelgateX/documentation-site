@@ -18,29 +18,29 @@
         ]
 }
 
-The Book operation requests a reservation confirmation for the specified optionId retunred in Quote.
+This Book operation requests a reservation confirmation for the specified optionId returned in Quote.
 
 ## Advanced criteria
 
-In Query Variables, you must modify the optionRefId with the optionRefId value returned in the quote response and send the query with the other mandatory information.
+Within the Query Variables, you should modify the optionRefId with the optionRefId value returned in the Quote response and send the Query with the other mandatory information.
 
-Detail advanced criteria if it’s necessary
-**auditTransactions:** Returns all the transactions exchanged with the supplier.
-to send register to "true" and return provider traces to claim them
-It would be good to "true" it in order to make these claims to supplier
+Also, please specify advanced criteria if it’s necessary:
 
-{{% alert theme="info" %}} When making a booking, you get  the **Book status** in the response of our API. There are 4 different status: 
+**auditTransactions:** It returns all the transactions exchanged with the supplier.
+We recommend to set it to "true" for possible claiming purposes with the supplier - if set to "true", the system will return the logs from the supplier in the response.
+
+{{% alert theme="info" %}} When making a booking, you get the **Book status** in the response of our API. There are 4 different status: 
 1. ***OK***:The reservation was completed with no problems.
 2. ***ON_REQUEST***: The reservation was completed but the product is still not available, so the reservation goes into a waiting list. It is the client’s responsibility to check if the booking is OK.
 3. ***UNKNOWN***: The reservation process through TGX was completed but due to a supplier error or a timeout, the reservation status is unknown. It is the client’s responsibility to check if the booking is OK. 
-4. ***PENDING_COMMIT***: The payment has been confirmed in provider's side, but is necessary make a commit in order to confirm the reservation.  .{{% /alert %}}
+4. ***PENDING_COMMIT***: The payment has been confirmed in provider's side, but is necessary to make a commit in order to confirm the reservation.  .{{% /alert %}}
 
 ## How to confirm a reservation
 
 {{% graphiql-tabs %}}
 
 fb4cf9773a63b7bf222011c211de6b4a
-Please, bear in mind that the clientReference has to be different for every test that you're performing.
+Please, bear in mind that the clientReference should be different for every test that you are performing.
 /fb4cf9773a63b7bf222011c211de6b4a
 
 {{% /graphiql-tabs %}}
