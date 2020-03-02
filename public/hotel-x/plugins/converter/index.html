@@ -8556,24 +8556,24 @@
 <p>This plugin receives an Option and a currency and returns the same option with currency conversion applied over all the prices. It reads the information about rates from a file located in our ftp. Is mandatory that this file exists in the ftp and satisfies all the requirements below. Otherwise, an error will be returned. The node in graphQL that indicates the currency exchange rate is:</p>
 
 <pre><code>&quot;exchange&quot;: {
-    &quot;currency&quot;: &quot;currency&quot;,
-    &quot;rate&quot;: 1
+	&quot;currency&quot;: &quot;currency&quot;,
+	&quot;rate&quot;: 1
 },
 </code></pre>
 
 <p>If the plugin is not executed, you will receive:</p>
 
 <pre><code>&quot;exchange&quot;: {
-    &quot;currency&quot;: &quot;EUR&quot;,   //Same currency of option with no currency exchange applied
-    &quot;rate&quot;: 1            //No currency exchange applied
+	&quot;currency&quot;: &quot;EUR&quot;,   //Same currency of option with no currency exchange applied
+	&quot;rate&quot;: 1            //No currency exchange applied
 },
 </code></pre>
 
 <p>otherwise, you will receive:</p>
 
 <pre><code>&quot;exchange&quot;: {
-    &quot;currency&quot;: &quot;EUR&quot;,   //New currency
-    &quot;rate&quot;: 0.86         //Rate exchange applied
+	&quot;currency&quot;: &quot;EUR&quot;,   //New currency
+	&quot;rate&quot;: 0.86         //Rate exchange applied
 },
 </code></pre>
 

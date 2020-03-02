@@ -24,7 +24,7 @@
       <description>
         
         
-         GraphQL schema definition type AlertsXQuery {alerts(relay: RelayInput,filter: AlertFilterInput,criteria: AlertCriteriaInput,): AlertConnection! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields alerts(AlertConnection!):Query to obtain Alerts 
+         GraphQL schema definition type AlertsXQuery {  alerts(    relay: RelayInput,     filter: AlertFilterInput,     criteria: AlertCriteriaInput,     ): AlertConnection!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields alerts(AlertConnection!): Query to obtain Alerts   
         
       </description>
     </item>
@@ -38,7 +38,7 @@
       <description>
         
         
-         GraphQL schema definition type AlertsXMutation {createAlert(input: AlertInput!,): Alert updateAlert(code: ID!,input: AlertUpdateInput!,): Alert Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields createAlert(Alert):Mutation to create a new alertupdateAlert(Alert):Mutation to update an existing alert 
+         GraphQL schema definition type AlertsXMutation {  createAlert( input: AlertInput!, ): Alert    updateAlert( code: ID!, input: AlertUpdateInput!, ): Alert   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields createAlert(Alert): Mutation to create a new alert  updateAlert(Alert): Mutation to update an existing alert   
         
       </description>
     </item>

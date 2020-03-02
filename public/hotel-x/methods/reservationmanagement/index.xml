@@ -24,9 +24,9 @@
       <description>
         
         
-        The Booking operation allows to retrieve a booking (or bookings) with all its details from the booking reference locator. The most important information returned for each booking in the list is: * Booking reference * Booking holder * Booking pax * Hotel, rooms and boards confirmed * Booking rates
-Advanced criteria There are three different types of booking search: * By reference * By dates * By bookingID
-How to request cca5c85b0cd1be29f86a67ecf38bb75a You can ask for bookings by client reference or by supplier reference.
+        The Booking operation allows to retrieve a booking (or bookings) with all its details from the booking reference locator. The most important information returned for each booking in the list is: - Booking reference - Booking holder - Booking pax - Hotel, rooms and boards confirmed - Booking rates
+Advanced criteria Explain different parameters can be set up on the request (indicate which ones are mandatory)
+How to request     a5b25332a7a5683d602efeb87233a9c7 You can ask for bookings by client reference (XTG-XXXXXX) or by supplier reference.
         
           [...]
         
@@ -42,8 +42,7 @@ How to request cca5c85b0cd1be29f86a67ecf38bb75a You can ask for bookings by 
       <description>
         
         
-        Cancellation operation allows you to cancel a booking. NOTE: Cancellation always takes into account the day and time of the destination in order to calculate what cancellation policy should be applied. UTC time.
- When the booking is cancelled, the details of the cancelled booking are returned with the following information: The booking status: CANCELLED Cancellation fees if applicable Hotel, rooms and rates of the cancelled booking Holder name  Advanced criteria There are two different types of cancellation: * By reference * By bookingID
+        const apiKeyJO = &#34;q8ggxpoVDW76Kw918hwnnRvxlZmAP2QZ&#34;; const apiKeyDC = &#34;64780338-49c8-4439-7c7d-d03c2033b145&#34;; $(document).ready(main); function main() { const q = &#39;[{\x22apikey\x22:\x2264780338-49c8-4439-7c7d-d03c2033b145\x22,\x22gist\x22:\x22https:\/\/gist.githubusercontent.com\/tgx-bot\/1b160cfcf47b1c4d1deada1a18ae98b6\/raw\x22,\x22divname\x22:\x22div_cancellation\x22}]&#39;; const queries = JSON.parse(q); for (const q of queries) { iterateQueries(q) } } function iterateQueries(q) { if(!q.gist.includes(&#39;http&#39;)) return; $.get(q.gist, function (data) { q.data = data; renderGist(q); }); } function renderGist(q) { var fetchURL = &#39;https://api.travelgatex.com&#39;; var search = window.location.search; var parameters = {}; search.substr(1).split(&#39;&amp;&#39;).forEach(function (entry) { var eq = entry.indexOf(&#39;=&#39;); if (eq = 0) { parameters[decodeURIComponent(entry.
         
           [...]
         

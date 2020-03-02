@@ -65,7 +65,7 @@ Below are shown examples for different casuistry:
         This page shows you how to update an alert using API or TravelgateX.
 How to request To update an alert you should input the alert code. Only data which needs to be updated needs to be input.
 Below are shown examples for different casuistry:
- #tab-holder {transform: scale(0);position: absolute;}#tab-holder.show-tabs {transform: scale(1);position: initial;}ul.tab-pannel-nav {margin-bottom: -32px;}ul.
+       #tab-holder { transform: scale(0); position: absolute; } #tab-holder.show-tabs { transform: scale(1); position: initial; } ul.tab-pannel-nav { margin-bottom: -32px; } ul.
         
           [...]
         

@@ -2635,16 +2635,6 @@
             </a><i class="fa fa-angle-right fa-lg category-icon"></i>
           </div>
             <ul>
-          <li data-nav-id="/travelgatex/security/overview/" class="dd-item">
-            <a href="/travelgatex/security/overview/">
-              <span>Overview</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
-          <li data-nav-id="/travelgatex/security/identity-access-management/" class="dd-item">
-            <a href="/travelgatex/security/identity-access-management/">
-              <span>Identity and access management</span><i class="fa fa-circle-thin read-icon"></i>
-            </a>
-        </li>
             </ul>
         </li>
         <li data-nav-id="/travelgatex/data-automation/" class="dd-item">
@@ -8873,17 +8863,11 @@
     const url = "https://gist.githubusercontent.com/" + (gist.u || default_user) + "/" + gist.g + "/raw";
     return new Promise(resolve => {
       $.get(url, function (data) {
-        const replaceValue = '¿$?TEST_LOCATOR¿$?'; 
-        let refinedData = data.replace(new RegExp(escapeRegExpString(replaceValue), 'g'), (+new Date()).toString());
-        renderGist({ gist: gist, data: refinedData });
+        renderGist({ gist: gist, data: data });
         resolve();
       });
     })
   }
-
-  function escapeRegExpString(string) {
-    return string.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&')
-  };
 
   function renderGist(q) {
     

@@ -42,7 +42,7 @@ The Project has a few columns that act as the status whereas cards are the items
         
         The GraphQL HotelX schema change log is a list of recent and upcoming changes to our GraphQL API schema. It includes backwards-compatible changes, schema previews, and upcoming breaking changes.
 Check out this list of new releases and changes applied on the HotelX GraphQL API.
-Under construction!We have logged this resource on our roadmap and we are currently working through extending all of the resources in our documentation. If you need specific resources (such as this page), please let us know by using one of the following channels:
+Under construction! We have logged this resource on our roadmap and we are currently working through extending all of the resources in our documentation. If you need specific resources (such as this page), please let us know by using one of the following channels:
         
           [...]
         
@@ -58,7 +58,7 @@ Under construction!We have logged this resource on our roadmap and we are curre
       <description>
         
         
-        Changes history of deprecated notes previously announced2020-02-25  Deprecated accessCode from HotelCancelInput. Reason: Use new bookingID instead. Deprecated language from HotelCancelInput. Reason: Use new bookingID instead. Deprecated hotelCode from HotelCancelInput. Reason: Use new bookingID instead. Deprecated reference from HotelCancelInput. Reason: Use new bookingID instead. Deprecated accessCode from HotelCriteriaBookingInput. Reason: Use new bookingID instead. Deprecated language from HotelCriteriaBookingInput. Reason: Use new bookingID instead. Deprecated typeSearch from HotelCriteriaBookingInput. Reason: Use new bookingID instead.
+        Changes history of deprecated notes previously announced Unreleased  Removal of loadFile from HotelXMutation. Reason: . Deprecated on 2018-06-06.To be removed soon. Removal of distribute from AddOns. Reason: You can find it in distribution AddOn. Deprecated on 2018-05-21.To be removed soon. Removal of type from AdviseMessage. Reason: . Deprecated on 2018-06-01.To be removed soon. Removal of description from Bed. Reason: Deprecated from 2019-07-29. Deprecated on 2019-07-29.To be removed soon. Removal of error from Board.
         
           [...]
         

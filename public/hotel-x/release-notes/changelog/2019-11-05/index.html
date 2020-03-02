@@ -8402,17 +8402,6 @@
 <ul>
 <li>
 <ul>
-<li><a href="#2020-02-26">2020-02-26</a></li>
-<li><a href="#2020-02-25">2020-02-25</a></li>
-<li><a href="#2020-02-24">2020-02-24</a></li>
-<li><a href="#2020-02-24-1">2020-02-24</a></li>
-<li><a href="#2020-02-05">2020-02-05</a></li>
-<li><a href="#2020-02-05-1">2020-02-05</a></li>
-<li><a href="#2020-12-02">2020-12-02</a></li>
-<li><a href="#2020-12-02-1">2020-12-02</a></li>
-<li><a href="#2019-11-28">2019-11-28</a></li>
-<li><a href="#2019-11-27">2019-11-27</a></li>
-<li><a href="#2019-11-20">2019-11-20</a></li>
 <li><a href="#2019-11-05">2019-11-05</a></li>
 </ul></li>
 </ul>
@@ -8554,154 +8543,11 @@
               
 
 
-<h2 id="2020-02-26">2020-02-26</h2>
-
-<div class="release-types type-a">
-        <ul>
-<li>Now the booking and cancel services allow the user to retrieve and cancel a book with the new field returned in book response <code>bookingID</code>. You can see more details of <code>bookingID</code> in the documentation <a href="https://docs.travelgatex.com/hotel-x/methods/reservationmanagement/booklist/" rel="nofollow" target="_blank">here</a>.</li>
-</ul>
-
-</div>
-
-<h2 id="2020-02-25">2020-02-25</h2>
-
-<div class="release-types type-a">
-        <ul>
-<li>Added new field <code>bookingID</code> into <code>Reference</code> (book, booking and cancel). This bookingID will be useful for booking retrieving and cancelling.</li>
-<li>Added new field <code>bookingID</code> into <code>HotelCancelInput</code> (cancel).</li>
-<li>Added new field <code>bookingID</code> into <code>HotelCriteriaBookingInput</code> (booking).</li>
-</ul>
-
-</div>
-
-<h2 id="2020-02-24">2020-02-24</h2>
-
-<div class="release-types type-a">
-        <ul>
-<li>Added <code>deletedAt_in</code>, <code>deletedAt_not_in</code>, <code>deletedAt_lt</code>, <code>deletedAt_lte</code>, <code>deletedAt_lte</code>, <code>deletedAt_gt</code> and <code>deletedAt_gte</code> fields into <code>HotelXHotelFilterInput</code>.</li>
-</ul>
-
-</div>
-
-<h2 id="2020-02-24-1">2020-02-24</h2>
-
-<div class="release-types type-f">
-        <ul>
-<li>Internal changes. Added field features into optionid. Some options returned in Search were not able to be priced in Quote step since for HotelX these options were exactly the same. Now these options are treated as different thanks to the field features inside the optionid.</li>
-<li>The search options with <code>RateRulesType</code> <code>PUBLIC_SERVANT</code> and <code>UNEMPLOYED</code> will no longer be discarted.</li>
-</ul>
-
-</div>
-
-<h2 id="2020-02-05">2020-02-05</h2>
-
-<div class="release-types type-a">
-        <ul>
-<li>We&rsquo;ve launched a new API called <code>Metadata</code>, which allow you to retrieve the supplier information and configuration. You can see the documentation <a href="https://docs.travelgatex.com/hotel-x/methods/staticcontent/metadata/" rel="nofollow" target="_blank">here</a>. We have also introduced this API to our bookingflow, which allows us to block the invalid querys (those querys that does not match with the supplier configuration in the metadata) in order to optimize the traffic.</li>
-</ul>
-
-</div>
-
-<h2 id="2020-02-05-1">2020-02-05</h2>
-
-<div class="release-types type-c">
-        <ul>
-<li>Internal changes. Removed field optionsQuota from optionid.</li>
-<li>Now the plugin <code>Add Parameter</code> will also be able to replace the parameters that share the same key inside an specific configuration. You can see the documentation <a href="https://docs.travelgatex.com/hotel-x/plugins/add_parameterx/" rel="nofollow" target="_blank">here</a>.</li>
-<li>Internal changes. Now the field market from optionid will contain all the markets related to the option, until now it was only prepared to return a single market.</li>
-</ul>
-
-</div>
-
-<h2 id="2020-12-02">2020-12-02</h2>
-
-<div class="release-types type-c">
-        <ul>
-<li>The <code>Board Mapping</code> has been changed into a separated functionality: it has to be explicitly requested in order to indicate HotelX to map the board codes. This also allow you to chose the context in which you want to map the codes.</li>
-</ul>
-
-</div>
-
-<h2 id="2020-12-02-1">2020-12-02</h2>
-
-<div class="release-types type-a">
-        <ul>
-<li>We&rsquo;ve launched a new plugin called <code>Amenity Map</code> which allows the user to retrive amenities in the hotels service using another context different that supplier context. This functionality differs with other mappings because <code>mapping</code> has to be requested in query fields, not in plugin section. You can see the documentation <a href="https://docs.travelgatex.com/hotel-x/plugins/mapping/" rel="nofollow" target="_blank">here</a>.</li>
-</ul>
-
-</div>
-
-<h2 id="2019-11-28">2019-11-28</h2>
-
-<div class="release-types type-a">
-        <ul>
-<li>Added new value <code>PAYX</code> to <code>PaymentType</code> enum (search).</li>
-<li>We&rsquo;ve launched a new plugin called <code>Virtual Credit Card Generator</code> which adds the possibility to create a virtual credit card at Book step, in order to pay the reservation’s import with it. You can see the documentation <a href="https://docs.travelgatex.com/hotel-x/plugins/vcc_gen/" rel="nofollow" target="_blank">here</a>.</li>
-</ul>
-
-<pre><code class="language-json">{
-    &quot;plugins&quot;: {
-            &quot;step&quot;: &quot;REQUEST&quot;,
-            &quot;pluginsType&quot;: [
-                {
-                    &quot;type&quot;: &quot;PRE_STEP&quot;,
-                    &quot;name&quot;: &quot;genvcc&quot;,
-                    &quot;parameters&quot;: [
-                        {
-                            &quot;key&quot;: &quot;activationDate&quot;,
-                            &quot;value&quot;: &quot;2020-05-22&quot;
-                        },
-                        {
-                            &quot;key&quot;: &quot;expirationDate&quot;,
-                            &quot;value&quot;: &quot;2020-05-24&quot;
-                        }
-                    ]
-                }
-            ]
-        }
-}
-</code></pre>
-
-</div>
-
-<h2 id="2019-11-27">2019-11-27</h2>
-
-<div class="release-types type-a">
-        <ul>
-<li>We&rsquo;ve launched a new plugin called <code>Market Group X</code> that allows the user to group the Search result by markets that share the same Options. You can see the documentation <a href="https://docs.travelgatex.com/hotel-x/plugins/markets_groups/" rel="nofollow" target="_blank">here</a>.</li>
-</ul>
-
-<pre><code class="language-json">{
-    &quot;plugins&quot;: [
-            {
-                &quot;step&quot;: &quot;REQUEST_ACCESS&quot;,
-                &quot;pluginsType&quot;: [
-                    {
-                        &quot;name&quot;: &quot;market_groupX&quot;,
-                        &quot;type&quot;: &quot;MARKETS_GROUP&quot;
-                    }
-                ]
-            }
-        ]
-}
-</code></pre>
-
-</div>
-
-<h2 id="2019-11-20">2019-11-20</h2>
-
-<div class="release-types type-a">
-        <ul>
-<li>Added new field <code>code</code> into <code>Surcharge</code>.</li>
-</ul>
-
-</div>
-
 <h2 id="2019-11-05">2019-11-05</h2>
 
 <div class="release-types type-a">
         <ul>
-<li>New fields keys in <code>Aggregation Plugin</code> (&ldquo;binding&rdquo; and &ldquo;refundable&rdquo;). More information about Aggregation Plugin <a href="https://docs.travelgatex.com/hotel-x/plugins/aggregation/" rel="nofollow" target="_blank">here</a>.</li>
+<li>New fields keys in Aggregation Plugin (&ldquo;binding&rdquo; and &ldquo;refundable&rdquo;). More information about Aggregation Plugin <a href="https://docs.travelgatex.com/hotel-x/plugins/aggregation/" rel="nofollow" target="_blank">here</a>.</li>
 </ul>
 
 <pre><code class="language-json">{
@@ -8726,7 +8572,7 @@
 
 <div class="release-types type-f">
         <ul>
-<li>Field <code>hotel</code> in Booking query. Now, this field indicates the locator provided by the hotel (just in case the supplier returns it).</li>
+<li>Field &ldquo;hotel&rdquo; in Booking query. Now, this field indicates the locator provided by the hotel (just in case the supplier returns it).</li>
 </ul>
 
 <pre><code class="language-json">query {
@@ -8745,7 +8591,7 @@
       ]
     },
      typeSearch: REFERENCES},
-            settings: {client:&quot;Demo_Client&quot;, testMode: true}) 
+			settings: {client:&quot;Demo_Client&quot;, testMode: true}) 
     {
       bookings {
         reference {
@@ -8806,9 +8652,9 @@
 		
 		<li><a href="/travelgatex/release-notes/products-changelogs/changelog-web/log/2019-10-09/">2019-10-09</a></li>
 		
-		<li><a href="/travelgatex/release-notes/products-changelogs/changelog-flightsx/log/legacy/">FlightsX changelog</a></li>
+		<li><a href="/travelgatex/release-notes/products-changelogs/changelog-inventory/log/legacy/">Inventory changelog</a></li>
 		
-		<li><a href="/travelgatex/release-notes/products-changelogs/changelog-insights/log/legacy/">Insights changelog</a></li>
+		<li><a href="/travelgatex/release-notes/products-changelogs/changelog-mappea/log/legacy/">Mappea changelog</a></li>
 		
 	</ul>
 </div>

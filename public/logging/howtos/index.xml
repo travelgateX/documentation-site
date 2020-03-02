@@ -27,8 +27,8 @@
         This page shows you how to query Logging using API or TravelgateX Web.
 How to request You can query about your performance as a buyer or as a seller.
 Below are shown different examples for different casuistry:
-122d8186fb0ed7d5d886b00b3081cecb Testing /122d8186fb0ed7d5d886b00b3081cecb
- #tab-holder {transform: scale(0);position: absolute;}#tab-holder.show-tabs {transform: scale(1);position: initial;}ul.tab-pannel-nav {margin-bottom: -32px;}ul.tabs {border-bottom: 1px solid #dee2e6;}li.
+    122d8186fb0ed7d5d886b00b3081cecb Testing /122d8186fb0ed7d5d886b00b3081cecb
+   #tab-holder { transform: scale(0); position: absolute; } #tab-holder.show-tabs { transform: scale(1); position: initial; } ul.tab-pannel-nav { margin-bottom: -32px; } ul.tabs { border-bottom: 1px solid #dee2e6; } li.
         
           [...]
         

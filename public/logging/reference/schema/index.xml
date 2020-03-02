@@ -24,7 +24,7 @@
       <description>
         
         
-        GraphQL schema definition type StatsQuery {report(filter: StatsFilterInput!,first: Int,last: Int,before: String,after: String,): StatsConnection! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.
+        GraphQL schema definition type StatsQuery {  report(    filter: StatsFilterInput!,     first: Int,     last: Int,     before: String,     after: String,     ): StatsConnection!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.
         
           [...]
         

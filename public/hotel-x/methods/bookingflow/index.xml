@@ -60,10 +60,7 @@ Advanced criteria There are different parameters that can be set up in the reque
       <description>
         
         
-        This Book operation requests a reservation confirmation for the specified optionId returned in Quote.
-Advanced criteria Within the Query Variables, you should modify the optionRefId with the optionRefId value returned in the Quote response and send the Query with the other mandatory information.
-Also, please specify advanced criteria if it’s necessary:
-auditTransactions: It returns all the transactions exchanged with the supplier. We recommend to set it to &amp;ldquo;true&amp;rdquo; for possible claiming purposes with the supplier - if set to &amp;ldquo;true&amp;rdquo;, the system will return the logs from the supplier in the response.
+        const apiKeyJO = &#34;q8ggxpoVDW76Kw918hwnnRvxlZmAP2QZ&#34;; const apiKeyDC = &#34;64780338-49c8-4439-7c7d-d03c2033b145&#34;; $(document).ready(main); function main() { const q = &#39;[{\x22apikey\x22:\x2264780338-49c8-4439-7c7d-d03c2033b145\x22,\x22gist\x22:\x22https:\/\/gist.githubusercontent.com\/tgx-bot\/31d4d32ea8e8bc8ab5d7bc3910df72c0\/raw\x22,\x22divname\x22:\x22div_booking\x22}]&#39;; const queries = JSON.parse(q); for (const q of queries) { iterateQueries(q) } } function iterateQueries(q) { if(!q.gist.includes(&#39;http&#39;)) return; $.get(q.gist, function (data) { q.data = data; renderGist(q); }); } function renderGist(q) { var fetchURL = &#39;https://api.travelgatex.com&#39;; var search = window.location.search; var parameters = {}; search.substr(1).split(&#39;&amp;&#39;).forEach(function (entry) { var eq = entry.indexOf(&#39;=&#39;); if (eq = 0) { parameters[decodeURIComponent(entry.
         
           [...]
         

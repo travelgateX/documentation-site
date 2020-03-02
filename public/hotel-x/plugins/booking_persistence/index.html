@@ -8699,58 +8699,58 @@ If the booking returned is a retrieved booking, the application will show a warn
 </code></pre>
 
 <pre><code class="language-json">{
-    &quot;input&quot;: {
-        &quot;optionRefId&quot;: &quot;optionID&quot;,
-        &quot;clientReference&quot;: &quot;clientReference&quot;,
-        &quot;holder&quot;: {
-            &quot;name&quot;: &quot;Name1&quot;,
-            &quot;surname&quot;: &quot;Surname1&quot;
-        },
-        &quot;paymentCard&quot;: {
-            &quot;cardType&quot;: &quot;VI&quot;,
-            &quot;holder&quot;: {
-                &quot;name&quot;: &quot;Name1&quot;,
-                &quot;surname&quot;: &quot;Surname1&quot;
-            },
-            &quot;number&quot;: &quot;41111111111111111&quot;,
-            &quot;CVC&quot;: &quot;778&quot;,
-            &quot;expire&quot;: {
-                &quot;month&quot;: 10,
-                &quot;year&quot;: 22
-            }
-        },
-        &quot;rooms&quot;: [
-            {
-                &quot;occupancyRefId&quot;: 1,
-                &quot;paxes&quot;: [
-                    {
-                        &quot;name&quot;: &quot;Name1&quot;,
-                        &quot;surname&quot;: &quot;Surname1&quot;,
-                        &quot;age&quot;: 1
-                    },
-                    {
-                        &quot;name&quot;: &quot;Name2&quot;,
-                        &quot;surname&quot;: &quot;Surname2&quot;,
-                        &quot;age&quot;: 30
-                    }
-                ]
-            }
-        ]
-    },
-    &quot;settings&quot;: {
-        &quot;plugins&quot;: {
-            &quot;step&quot;: &quot;REQUEST&quot;,
-            &quot;pluginsType&quot;: [
-                {
-                    &quot;name&quot;: &quot;booking_detail_persistence&quot;,
-                    &quot;type&quot;: &quot;POST_STEP&quot;
-                }
-            ]
-        },
-        &quot;client&quot;: &quot;client&quot;,
-        &quot;auditTransactions&quot;: true,
-        &quot;timeout&quot;: 100000
-    }
+	&quot;input&quot;: {
+		&quot;optionRefId&quot;: &quot;optionID&quot;,
+		&quot;clientReference&quot;: &quot;clientReference&quot;,
+		&quot;holder&quot;: {
+			&quot;name&quot;: &quot;Name1&quot;,
+			&quot;surname&quot;: &quot;Surname1&quot;
+		},
+		&quot;paymentCard&quot;: {
+			&quot;cardType&quot;: &quot;VI&quot;,
+			&quot;holder&quot;: {
+				&quot;name&quot;: &quot;Name1&quot;,
+				&quot;surname&quot;: &quot;Surname1&quot;
+			},
+			&quot;number&quot;: &quot;41111111111111111&quot;,
+			&quot;CVC&quot;: &quot;778&quot;,
+			&quot;expire&quot;: {
+				&quot;month&quot;: 10,
+				&quot;year&quot;: 22
+			}
+		},
+		&quot;rooms&quot;: [
+			{
+				&quot;occupancyRefId&quot;: 1,
+				&quot;paxes&quot;: [
+					{
+						&quot;name&quot;: &quot;Name1&quot;,
+						&quot;surname&quot;: &quot;Surname1&quot;,
+						&quot;age&quot;: 1
+					},
+					{
+						&quot;name&quot;: &quot;Name2&quot;,
+						&quot;surname&quot;: &quot;Surname2&quot;,
+						&quot;age&quot;: 30
+					}
+				]
+			}
+		]
+	},
+	&quot;settings&quot;: {
+		&quot;plugins&quot;: {
+			&quot;step&quot;: &quot;REQUEST&quot;,
+			&quot;pluginsType&quot;: [
+				{
+					&quot;name&quot;: &quot;booking_detail_persistence&quot;,
+					&quot;type&quot;: &quot;POST_STEP&quot;
+				}
+			]
+		},
+		&quot;client&quot;: &quot;client&quot;,
+		&quot;auditTransactions&quot;: true,
+		&quot;timeout&quot;: 100000
+	}
 }
 </code></pre>
 

@@ -8879,17 +8879,11 @@
     const url = "https://gist.githubusercontent.com/" + (gist.u || default_user) + "/" + gist.g + "/raw";
     return new Promise(resolve => {
       $.get(url, function (data) {
-        const replaceValue = '¿$?TEST_LOCATOR¿$?'; 
-        let refinedData = data.replace(new RegExp(escapeRegExpString(replaceValue), 'g'), (+new Date()).toString());
-        renderGist({ gist: gist, data: refinedData });
+        renderGist({ gist: gist, data: data });
         resolve();
       });
     })
   }
-
-  function escapeRegExpString(string) {
-    return string.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&')
-  };
 
   function renderGist(q) {
     

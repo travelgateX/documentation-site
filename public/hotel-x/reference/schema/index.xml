@@ -24,7 +24,7 @@
       <description>
         
         
-        GraphQL schema definition type HotelXQuery {hotelConfigurationStatusService: ServiceStatus! defaultSettings(group: ID!,clientName: ID,): HotelXDefaultSettings commonSettings(group: ID!,access: ID,supplier: ID,): HotelXCommonSettings boards(criteria: HotelXBoardQueryInput!,relay: RelayInput!,): BoardConnection! categories(criteria: HotelXCategoryQueryInput!,relay: RelayInput!,): CategoryConnection! hotels(criteria: HotelXHotelListInput!
+        GraphQL schema definition type HotelXQuery {  hotelConfigurationStatusService: ServiceStatus!    defaultSettings( group: ID!, clientName: ID, ): HotelXDefaultSettings    commonSettings(    group: ID!,     access: ID,     supplier: ID,     ): HotelXCommonSettings    boards( criteria: HotelXBoardQueryInput!, relay: RelayInput!, ): BoardConnection!    categories( criteria: HotelXCategoryQueryInput!, relay: RelayInput!, ): CategoryConnection!    hotels(    criteria: HotelXHotelListInput!
         
           [...]
         
@@ -40,7 +40,7 @@
       <description>
         
         
-        GraphQL schema definition type HotelXMutation {createDefaultSettings(group: ID!,clientName: ID,settings: HotelXDefaultSettingsDataInput!,): HotelXDefaultSettings updateDefaultSettings(group: ID!,clientName: ID,settings: HotelXDefaultSettingsDataInput!,): HotelXDefaultSettings updateStatus(group: ID!,access: ID,supplier: ID,clientName: ID,isActive: Boolean!
+        GraphQL schema definition type HotelXMutation {  createDefaultSettings(    group: ID!,     clientName: ID,     settings: HotelXDefaultSettingsDataInput!,     ): HotelXDefaultSettings    updateDefaultSettings(    group: ID!,     clientName: ID,     settings: HotelXDefaultSettingsDataInput!,     ): HotelXDefaultSettings    updateStatus(    group: ID!,     access: ID,     supplier: ID,     clientName: ID,     isActive: Boolean!
         
           [...]
         
