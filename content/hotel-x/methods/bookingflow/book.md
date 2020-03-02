@@ -12,7 +12,7 @@
         "n":"1 Room",
         "g":"fb4cf9773a63b7bf222011c211de6b4a",
         "o":["graphiql"],
-        "u":"xsolano",
+        "u":"tgx-bot",
         "ak":"8626cf56-e364-4fd1-4fe0-311e23ac6355"
     }
         ]
