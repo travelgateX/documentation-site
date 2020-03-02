@@ -10622,39 +10622,33 @@ list of languages supported &hellip;</p>
 <li><p><strong>Example 1</strong>:</p>
 
 <ul>
-<li><p>MetaData:</p>
-
-<pre><code class="language-xml"> &lt;Preference hotel = &quot;false&quot; room = &quot;true&quot;&gt;
-    &lt;PreferenceType&gt;Smoker&lt;/PreferenceType&gt;
-    &lt;Value mandatory = &quot;false&quot;/&gt;
- &lt;/Preference&gt;
-</code></pre>
-
-<ul>
+<li>MetaData:
+~~~xml
+ <Preference hotel = "false" room = "true">
+    <PreferenceType>Smoker</PreferenceType>
+    <Value mandatory = "false"/>
+ </Preference>
+~~~</li>
 <li>Reservation:
 ~~~xml
-<Preference type = "Smoker"></Preference>
+  <Preference type = "Smoker"></Preference>
 ~~~</li>
-</ul></li>
 </ul></li>
 
 <li><p><strong>Example 2</strong>:</p>
 
 <ul>
-<li><p>MetaData:</p>
-
-<pre><code class="language-xml"> &lt;Preference hotel = &quot;false&quot; room = &quot;true&quot;&gt;
-    &lt;PreferenceType&gt;LateArrival&lt;/PreferenceType&gt;
-    &lt;Value mandatory = &quot;true&quot; type = &quot;string&quot;/&gt;
- &lt;/Preference&gt;
-</code></pre>
-
-<ul>
+<li>MetaData:
+~~~xml
+ <Preference hotel = "false" room = "true">
+    <PreferenceType>LateArrival</PreferenceType>
+    <Value mandatory = "true" type = "string"/>
+ </Preference>
+~~~</li>
 <li>Reservation:
 ~~~xml
-<Preference type = "LateArrival">14:00</Preference>
+  <Preference type = "LateArrival">14:00</Preference>
 ~~~</li>
-</ul></li>
 </ul></li>
 </ul>
 

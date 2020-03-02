@@ -2825,20 +2825,6 @@
             </a><i class="fa fa-angle-right fa-lg category-icon"></i>
           </div>
             <ul>
-        <li data-nav-id="/hotel-x/gettingstarted/credentials/" class="dd-item">
-          <div>
-            <a href="/hotel-x/gettingstarted/credentials/">
-              <span>Credentials</span>            
-            </a>
-          </div>
-        </li>
-        <li data-nav-id="/hotel-x/gettingstarted/resources/" class="dd-item">
-          <div>
-            <a href="/hotel-x/gettingstarted/resources/">
-              <span>Resources</span>            
-            </a>
-          </div>
-        </li>
             </ul>
         </li>
         <li data-nav-id="/hotel-x/reference/" class="dd-item">
@@ -8573,13 +8559,9 @@
 
     <div id="tabContent"></div>
 
-    <div id="tabsText" style="display:none"><p>666b32bc15f794d941a0549f56576994
+    <div id="tabsText" style="display:none"><p>54d5fa6313c9eb80f916b8b1c63298c7
 Please, bear in mind that you should place on <em>optionRefId</em> field the value from the <strong><em>id</em></strong> field of the option you want to valuate from availability.
-/666b32bc15f794d941a0549f56576994</p>
-
-<p>22146f0cf8f73939e0a55c0274def86c
-Please, bear in mind that you should place on <em>optionRefId</em> field the value from the <strong><em>id</em></strong> field of the option you want to valuate from availability.
-/22146f0cf8f73939e0a55c0274def86c</p>
+/54d5fa6313c9eb80f916b8b1c63298c7</p>
 </div>
 </div>
 
@@ -8797,7 +8779,7 @@ Please, bear in mind that you should place on <em>optionRefId</em> field the val
 <script>
   const token =  null ;
   const default_user = "";
-  const gists = [{"ak":"64780338-49c8-4439-7c7d-d03c2033b145","g":"666b32bc15f794d941a0549f56576994","n":"1 Room","o":["graphiql"],"u":"tgx-bot"},{"ak":"64780338-49c8-4439-7c7d-d03c2033b145","g":"22146f0cf8f73939e0a55c0274def86c","n":"2 Rooms","o":["graphiql"],"u":"tgx-bot"}];
+  const gists = [{"ak":"8626cf56-e364-4fd1-4fe0-311e23ac6355","g":"54d5fa6313c9eb80f916b8b1c63298c7","n":"1 Room","o":["graphiql"],"u":"tgx-bot"}];
 
   $(document).ready(main);
   function main() {
@@ -8892,11 +8874,17 @@ Please, bear in mind that you should place on <em>optionRefId</em> field the val
     const url = "https://gist.githubusercontent.com/" + (gist.u || default_user) + "/" + gist.g + "/raw";
     return new Promise(resolve => {
       $.get(url, function (data) {
-        renderGist({ gist: gist, data: data });
+        const replaceValue = '¿$?TEST_LOCATOR¿$?'; 
+        let refinedData = data.replace(new RegExp(escapeRegExpString(replaceValue), 'g'), (+new Date()).toString());
+        renderGist({ gist: gist, data: refinedData });
         resolve();
       });
     })
   }
+
+  function escapeRegExpString(string) {
+    return string.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&')
+  };
 
   function renderGist(q) {
     

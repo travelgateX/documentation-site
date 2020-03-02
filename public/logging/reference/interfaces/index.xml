@@ -24,7 +24,7 @@
       <description>
         
         
-        GraphQL schema definition interface GroupCommonData {  id: ID!    code: ID!    label: String    type: GroupType!    info: String    children(    codes: [ID!],     first: Int,     last: Int,     before: String,     after: String,     ): GroupConnection    owner: Member    isEditable: Boolean!
+        GraphQL schema definition interface GroupCommonData {id: ID! code: ID! label: String type: GroupType! info: String children(codes: [ID!],first: Int,last: Int,before: String,after: String,): GroupConnection owner: Member isEditable: Boolean!
         
           [...]
         
@@ -40,7 +40,7 @@
       <description>
         
         
-         GraphQL schema definition interface Node {  code: ID!    createdAt: DateTime!    updatedAt: DateTime!   Show deprecated fields   }    window.onload = _ = { const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0]; if (deprecatedContainer.children.length) { const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0]; list.style.display = &#39;block&#39;; console.log(list.style); } }  Fields code(ID!): ID code  createdAt(DateTime!): Date created  updatedAt(DateTime!): Date updated   
+         GraphQL schema definition interface Node {code: ID! createdAt: DateTime! updatedAt: DateTime! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields code(ID!):ID codecreatedAt(DateTime!):Date createdupdatedAt(DateTime!):Date updated 
         
       </description>
     </item>

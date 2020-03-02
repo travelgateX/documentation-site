@@ -24,7 +24,7 @@
       <description>
         
         
-         GraphQL schema definition  enum AdviseMessageLevel{   WARN,    ERROR,    INFO,   }   Required by AdviseMessage:  List of advise messages.   
+         GraphQL schema definition enumAdviseMessageLevel{WARN,ERROR,INFO,}  Required by AdviseMessage: List of advise messages. 
         
       </description>
     </item>
@@ -38,7 +38,7 @@
       <description>
         
         
-         GraphQL schema definition  enum GroupType{   ROOT,    ORG,    GROUP,    PROFILE,    TEAM,    FOLDER,    PRODUCT,    RESOURCE,    SPECIFIC_RESOURCE,   }   Required by OrganizationData:    GroupCommonData:    GroupData:     
+         GraphQL schema definition enumGroupType{ROOT,ORG,GROUP,PROFILE,TEAM,FOLDER,PRODUCT,RESOURCE,SPECIFIC_RESOURCE,}  Required by OrganizationData: GroupCommonData: GroupData:  
         
       </description>
     </item>
@@ -52,7 +52,7 @@
       <description>
         
         
-         GraphQL schema definition  enum MemberType{   USER,    SERVICE_ACCOUNT,   }   Required by MemberData:     
+         GraphQL schema definition enumMemberType{USER,SERVICE_ACCOUNT,}  Required by MemberData:  
         
       </description>
     </item>
@@ -67,7 +67,7 @@
         
         
          Mode to select which kind of stats do you want query
-GraphQL schema definition  enum ModeType{   BUYER,    SELLER,   }   Required by StatsFilterInput:  Filters needed to do a search. Users (List of users), Suppliers (List of suppliers), ServiceApis (List of service apis), From (Start date of search - YYYY-MM-DD HH:mm:ss), To (End date of search - YYYY-MM-DD HH:mm:ss)   
+GraphQL schema definition enumModeType{BUYER,SELLER,}  Required by StatsFilterInput: Filters needed to do a search. Users (List of users), Suppliers (List of suppliers), ServiceApis (List of service apis), From (Start date of search - YYYY-MM-DD HH:mm:ss), To (End date of search - YYYY-MM-DD HH:mm:ss) 
         
       </description>
     </item>
@@ -81,7 +81,7 @@ GraphQL schema definition  enum ModeType{   BUYER,    SELLER,   }   Required by 
       <description>
         
         
-         GraphQL schema definition  enum OperationType{   SEARCH,    QUOTE,    BOOKING,    CANCEL,    SCHEDULER,    CREATE,    READ,    UPDATE,    DELETE,    EXECUTE,    OTHER,   }   
+         GraphQL schema definition enumOperationType{SEARCH,QUOTE,BOOKING,CANCEL,SCHEDULER,CREATE,READ,UPDATE,DELETE,EXECUTE,OTHER,}  
         
       </description>
     </item>
@@ -96,7 +96,7 @@ GraphQL schema definition  enum ModeType{   BUYER,    SELLER,   }   Required by 
         
         
          Rate Rules
-GraphQL schema definition  enum RateRulesType{   PACKAGE,    OLDER55,    OLDER60,    OLDER65,    CANARY_RESIDENT,    BALEARIC_RESIDENT,    LARGE_FAMILY,    HONEYMOON,    PUBLIC_SERVANT,    UNEMPLOYED,    NORMAL,    NON_REFUNDABLE,   }   
+GraphQL schema definition enumRateRulesType{PACKAGE,OLDER55,OLDER60,OLDER65,CANARY_RESIDENT,BALEARIC_RESIDENT,LARGE_FAMILY,HONEYMOON,PUBLIC_SERVANT,UNEMPLOYED,NORMAL,NON_REFUNDABLE,}  
         
       </description>
     </item>
@@ -110,7 +110,7 @@ GraphQL schema definition  enum RateRulesType{   PACKAGE,    OLDER55,    OLDER60
       <description>
         
         
-         GraphQL schema definition  enum RoleType{   VIEWER,    EDITOR,    ADMIN,    EXECUTOR,    SPECIFIC,   }   Required by RoleData:     
+         GraphQL schema definition enumRoleType{VIEWER,EDITOR,ADMIN,EXECUTOR,SPECIFIC,}  Required by RoleData:  
         
       </description>
     </item>
@@ -125,7 +125,7 @@ GraphQL schema definition  enum RateRulesType{   PACKAGE,    OLDER55,    OLDER60
         
         
          Services Api available.
-GraphQL schema definition  enum ServiceApiType{   HOTEL,    TRANSPORTATION,    CAR,    TRANSFERS,    ACTIVITIES,    VIRTUALACCOUNT,    PAYMENT,    PACKAGE,   }   
+GraphQL schema definition enumServiceApiType{HOTEL,TRANSPORTATION,CAR,TRANSFERS,ACTIVITIES,VIRTUALACCOUNT,PAYMENT,PACKAGE,}  
         
       </description>
     </item>
@@ -139,7 +139,7 @@ GraphQL schema definition  enum ServiceApiType{   HOTEL,    TRANSPORTATION,    C
       <description>
         
         
-         GraphQL schema definition  enum ServiceOperationType{   ALL,    SEARCH,    QUOTE,    BOOKING,    OTHER,   }   
+         GraphQL schema definition enumServiceOperationType{ALL,SEARCH,QUOTE,BOOKING,OTHER,}  
         
       </description>
     </item>
@@ -153,7 +153,7 @@ GraphQL schema definition  enum ServiceApiType{   HOTEL,    TRANSPORTATION,    C
       <description>
         
         
-         GraphQL schema definition  enum StatsInfoTypes{   ALL,    OK,    INTEGRATION,    PROVIDER,    COMMUNICATION,    HUB,    OTHER,   }   Required by StatsInfo:  Details of an specific error   
+         GraphQL schema definition enumStatsInfoTypes{ALL,OK,INTEGRATION,PROVIDER,COMMUNICATION,HUB,OTHER,}  Required by StatsInfo: Details of an specific error 
         
       </description>
     </item>

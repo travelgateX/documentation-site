@@ -25,7 +25,7 @@
         
         
         The Boolean scalar type represents true or false.
-GraphQL schema definition scalar Boolean   Required by AlertCriteriaInput:    PageInfo:    AlertData:    AlertConfiguration:    MemberData:    GroupData:    GroupCommonData:    APIData:    ResourceData:    RoleData:    AccessData:    SupplierData:    Provider:    ClientFilter:    SystemData:    SupplierFilter:    OrganizationData:    ClientData:    ProfileData:    AlertInput:  Alert information.
+GraphQL schema definition scalar BooleanRequired by AlertCriteriaInput: PageInfo: AlertData: AlertConfiguration: MemberData: GroupData: GroupCommonData: APIData: ResourceData: RoleData: AccessData: SupplierData: Provider: ClientFilter: SystemData: SupplierFilter: OrganizationData: ClientData: ProfileData: AlertInput: Alert information.
         
           [...]
         
@@ -41,7 +41,7 @@ GraphQL schema definition scalar Boolean   Required by AlertCriteriaInput:    Pa
       <description>
         
         
-         GraphQL schema definition scalar Country   Required by OrganizationData:     
+         GraphQL schema definition scalar CountryRequired by OrganizationData:  
         
       </description>
     </item>
@@ -55,7 +55,7 @@ GraphQL schema definition scalar Boolean   Required by AlertCriteriaInput:    Pa
       <description>
         
         
-         GraphQL schema definition scalar DateTime   Required by AlertFilterInput:    Alert:   Alert node  Node:    Member:    Group:    API:    Resource:    Operation:    ManagedGroup:    Role:    Access:    Supplier:    Organization:    System:    Domain:    Product:    Client:    Profile:    Entity:    MacroPermission:    Event:  Event triggered   
+         GraphQL schema definition scalar DateTimeRequired by AlertFilterInput: Alert:  Alert nodeNode: Member: Group: API: Resource: Operation: ManagedGroup: Role: Access: Supplier: Organization: System: Domain: Product: Client: Profile: Entity: MacroPermission: Event: Event triggered 
         
       </description>
     </item>
@@ -69,7 +69,7 @@ GraphQL schema definition scalar Boolean   Required by AlertCriteriaInput:    Pa
       <description>
         
         
-         GraphQL schema definition scalar DomainName   Required by DomainData:     
+         GraphQL schema definition scalar DomainNameRequired by DomainData:  
         
       </description>
     </item>
@@ -83,7 +83,7 @@ GraphQL schema definition scalar Boolean   Required by AlertCriteriaInput:    Pa
       <description>
         
         
-         GraphQL schema definition scalar Email   
+         GraphQL schema definition scalar Email
         
       </description>
     </item>
@@ -98,7 +98,7 @@ GraphQL schema definition scalar Boolean   Required by AlertCriteriaInput:    Pa
         
         
         The ID scalar type represents a unique identifier, often used to refetch an object or as key for a cache. The ID type appears in a JSON response as a String; however, it is not intended to be human-readable. When expected as an input type, any string (such as &amp;quot;4&amp;quot;) or integer (such as 4) input value will be accepted as an ID.
-GraphQL schema definition scalar ID   Required by Alert:   Alert node  AlertData:    AdviseMessage:    Node:    Member:    MemberData:    Group:    GroupData:    GroupCommonData:    API:    APIData:    Resource:    ResourceData:    Operation:    OperationData:    ManagedGroup:    ManagedGroupData:    Role:    RoleData:    Access:    AccessData:    Supplier:    Parameter:    Organization:    SupplierData:    Provider:    AccessFilter:    ClientFilter:    System:    SystemData:    SupplierFilter:    OrganizationData:    Domain:    Product:    ProductData:    DomainData:    Client:    ClientData:    Profile:    ProfileData:    Entity:    MacroPermission:    MacroPermissionData:    Event:  Event triggered  EventData:  Event data  AlertInput:  Alert information.
+GraphQL schema definition scalar IDRequired by Alert:  Alert nodeAlertData: AdviseMessage: Node: Member: MemberData: Group: GroupData: GroupCommonData: API: APIData: Resource: ResourceData: Operation: OperationData: ManagedGroup: ManagedGroupData: Role: RoleData: Access: AccessData: Supplier: Parameter: Organization: SupplierData: Provider: AccessFilter: ClientFilter: System: SystemData: SupplierFilter: OrganizationData: Domain: Product: ProductData: DomainData: Client: ClientData: Profile: ProfileData: Entity: MacroPermission: MacroPermissionData: Event: Event triggeredEventData: Event dataAlertInput: Alert information.
         
           [...]
         
@@ -115,7 +115,7 @@ GraphQL schema definition scalar ID   Required by Alert:   Alert node  AlertData
         
         
         The Int scalar type represents non-fractional signed whole numeric values. Int can represent values between -(2^31) and 2^31 - 1.
-GraphQL schema definition scalar Int   Required by RelayInput:    AlertConnection:  Alert list  AlertConfiguration:    EventConnection:  Events list  AlertTypeConfiguration:  Depending on the talert type, typeConfiguration will use some fields   AlertPrice:  Price contains the specific configuration for Price alert Type  GroupConnection:    GroupData:    MemberConnection:    AccessConnection:    SupplierConnection:    ClientConnection:    ProfileConnection:    AccessData:    SupplierData:    SupplierFilter:    AlertConfigurationInputNoTraffic:  Configuration for NO_TRAFFIC alert type.
+GraphQL schema definition scalar IntRequired by RelayInput: AlertConnection: Alert listAlertConfiguration: EventConnection: Events listAlertTypeConfiguration: Depending on the talert type, typeConfiguration will use some fields AlertPrice: Price contains the specific configuration for Price alert TypeGroupConnection: GroupData: MemberConnection: AccessConnection: SupplierConnection: ClientConnection: ProfileConnection: AccessData: SupplierData: SupplierFilter: AlertConfigurationInputNoTraffic: Configuration for NO_TRAFFIC alert type.
         
           [...]
         
@@ -132,7 +132,7 @@ GraphQL schema definition scalar Int   Required by RelayInput:    AlertConnectio
         
         
         The String scalar type represents textual data, represented as UTF-8 character sequences. The String type is most often used by GraphQL to represent free-form human-readable text.
-GraphQL schema definition scalar String   Required by RelayInput:    AlertEdge:    PageInfo:    AlertData:    AdviseMessage:    MemberData:    GroupEdge:    GroupData:    GroupCommonData:    MemberEdge:    APIEdge:    APIData:    ResourceEdge:    ResourceData:    OperationEdge:    OperationData:    ManagedGroupEdge:    RoleData:    AccessEdge:    AccessData:    Error:    Parameter:    SupplierData:    Provider:    OrganizationData:    ProductEdge:    ProductData:    SupplierEdge:    ClientEdge:    ProfileEdge:    ProfileData:    EntityEdge:    RoleEdge:    MacroPermissionEdge:    MacroPermissionData:    EventEdge:    EventData:  Event data  ExternalMessage:    AlertInput:  Alert information.
+GraphQL schema definition scalar StringRequired by RelayInput: AlertEdge: PageInfo: AlertData: AdviseMessage: MemberData: GroupEdge: GroupData: GroupCommonData: MemberEdge: APIEdge: APIData: ResourceEdge: ResourceData: OperationEdge: OperationData: ManagedGroupEdge: RoleData: AccessEdge: AccessData: Error: Parameter: SupplierData: Provider: OrganizationData: ProductEdge: ProductData: SupplierEdge: ClientEdge: ProfileEdge: ProfileData: EntityEdge: RoleEdge: MacroPermissionEdge: MacroPermissionData: EventEdge: EventData: Event dataExternalMessage: AlertInput: Alert information.
         
           [...]
         
@@ -148,7 +148,7 @@ GraphQL schema definition scalar String   Required by RelayInput:    AlertEdge: 
       <description>
         
         
-         GraphQL schema definition scalar URI   Required by Urls:     
+         GraphQL schema definition scalar URIRequired by Urls:  
         
       </description>
     </item>

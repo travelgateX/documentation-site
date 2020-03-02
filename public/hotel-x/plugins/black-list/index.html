@@ -8664,37 +8664,37 @@ With this input hotel: [&quot;AB&quot;,&quot;CD&quot;] after executing the plugi
 
 <p>In order to use the plugin, we shoud send the following json in the query variables</p>
 
-<pre><code class="language-json">		&quot;plugins&quot;: [
-			{
-				&quot;step&quot;: &quot;REQUEST_ACCESS&quot;,
-				&quot;pluginsType&quot;: {
-					&quot;name&quot;: &quot;blacklist&quot;,
-					&quot;type&quot;: &quot;PRE_STEP&quot;
-				}
-			}
-		]
+<pre><code class="language-json">        &quot;plugins&quot;: [
+            {
+                &quot;step&quot;: &quot;REQUEST_ACCESS&quot;,
+                &quot;pluginsType&quot;: {
+                    &quot;name&quot;: &quot;blacklist&quot;,
+                    &quot;type&quot;: &quot;PRE_STEP&quot;
+                }
+            }
+        ]
 </code></pre>
 
 <p>To apply specific rule, we should add client token in our request</p>
 
 <pre><code class="language-json">&quot;settings&quot;: {
-		&quot;context&quot;: null,
-		&quot;client&quot;: &quot;xtg&quot;,
-		&quot;auditTransactions&quot;: true,
-		&quot;testMode&quot;: true,
-		&quot;clientTokens&quot;: [
-			&quot;testToken&quot;
-		],
-		&quot;plugins&quot;: [
+        &quot;context&quot;: null,
+        &quot;client&quot;: &quot;xtg&quot;,
+        &quot;auditTransactions&quot;: true,
+        &quot;testMode&quot;: true,
+        &quot;clientTokens&quot;: [
+            &quot;testToken&quot;
+        ],
+        &quot;plugins&quot;: [
             {
-				&quot;step&quot;: &quot;REQUEST_ACCESS&quot;,
-				&quot;pluginsType&quot;: {
-					&quot;name&quot;: &quot;blacklist&quot;,
-					&quot;type&quot;: &quot;PRE_STEP&quot;
-				}
-			}
+                &quot;step&quot;: &quot;REQUEST_ACCESS&quot;,
+                &quot;pluginsType&quot;: {
+                    &quot;name&quot;: &quot;blacklist&quot;,
+                    &quot;type&quot;: &quot;PRE_STEP&quot;
+                }
+            }
         ]
-	},
+    },
 </code></pre>
 
 <hr/>

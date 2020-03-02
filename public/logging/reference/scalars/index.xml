@@ -25,7 +25,7 @@
         
         
          The Boolean scalar type represents true or false.
-GraphQL schema definition scalar Boolean   Required by PageInfo:    OperationDetailed:  Stats information per operation  AccessData:    SupplierData:    Provider:  Temporary type to use only during SQL server&amp;#39;s lifetime  OrganizationData:    GroupCommonData:    MemberData:    RoleData:    ResourceData:    APIData:    GroupData:    ClientData:     
+GraphQL schema definition scalar BooleanRequired by PageInfo: OperationDetailed: Stats information per operationAccessData: SupplierData: Provider: Temporary type to use only during SQL server&amp;#39;s lifetimeOrganizationData: GroupCommonData: MemberData: RoleData: ResourceData: APIData: GroupData: ClientData:  
         
       </description>
     </item>
@@ -40,7 +40,7 @@ GraphQL schema definition scalar Boolean   Required by PageInfo:    OperationDet
         
         
         The DateTime type represents DateTime values. A good example might be a transaction TimeSpan. In queries or mutations, DateTime fields have to be specified in ISO 8601 format with enclosing double quotes: &amp;ldquo;2017-10-22T13:57:31.123Z&amp;rdquo;.
-GraphQL schema definition scalar DateTime   Required by StatsFilterInput:  Filters needed to do a search. Users (List of users), Suppliers (List of suppliers), ServiceApis (List of service apis), From (Start date of search - YYYY-MM-DD HH:mm:ss), To (End date of search - YYYY-MM-DD HH:mm:ss)  Stats:  The service used to access the stats of every connection that uses the HUB  StatsData:    Node:    Access:  An Access is a set of credentials and configuration in order to access the system of a Supplier.
+GraphQL schema definition scalar DateTimeRequired by StatsFilterInput: Filters needed to do a search. Users (List of users), Suppliers (List of suppliers), ServiceApis (List of service apis), From (Start date of search - YYYY-MM-DD HH:mm:ss), To (End date of search - YYYY-MM-DD HH:mm:ss)Stats: The service used to access the stats of every connection that uses the HUBStatsData: Node: Access: An Access is a set of credentials and configuration in order to access the system of a Supplier.
         
           [...]
         
@@ -57,7 +57,7 @@ GraphQL schema definition scalar DateTime   Required by StatsFilterInput:  Filte
         
         
          Scalar for type Domain
-GraphQL schema definition scalar DomainName   Required by DomainData:     
+GraphQL schema definition scalar DomainNameRequired by DomainData:  
         
       </description>
     </item>
@@ -72,7 +72,7 @@ GraphQL schema definition scalar DomainName   Required by DomainData:
         
         
         The ID scalar type represents a unique identifier, often used to refetch an object or as key for a cache. The ID type appears in a JSON response as a String; however, it is not intended to be human-readable. When expected as an input type, any string (such as &amp;quot;4&amp;quot;) or integer (such as 4) input value will be accepted as an ID.
-GraphQL schema definition scalar ID   Required by Stats:  The service used to access the stats of every connection that uses the HUB  AdviseMessage:  List of advise messages.
+GraphQL schema definition scalar IDRequired by Stats: The service used to access the stats of every connection that uses the HUBAdviseMessage: List of advise messages.
         
           [...]
         
@@ -89,7 +89,7 @@ GraphQL schema definition scalar ID   Required by Stats:  The service used to ac
         
         
          The Int scalar type represents non-fractional signed whole numeric values. Int can represent values between -(2^31) and 2^31 - 1.
-GraphQL schema definition scalar Int   Required by Ratios:  Ratios details  OperationDetailed:  Stats information per operation  SupplierData:    GroupData:    StatsInfo:  Details of an specific error  StatsAsset:  Asset of an specific error   
+GraphQL schema definition scalar IntRequired by Ratios: Ratios detailsOperationDetailed: Stats information per operationSupplierData: GroupData: StatsInfo: Details of an specific errorStatsAsset: Asset of an specific error 
         
       </description>
     </item>
@@ -104,7 +104,7 @@ GraphQL schema definition scalar Int   Required by Ratios:  Ratios details  Oper
         
         
          The String scalar type represents textual data, represented as UTF-8 character sequences. The String type is most often used by GraphQL to represent free-form human-readable text.
-GraphQL schema definition scalar String   Required by StatsEdge:    PageInfo:    AdviseMessage:  List of advise messages.  AccessData:    Error:  Application errors  Parameter:  Parameters for additional information for the supplier&amp;#39;s configuration.  SupplierData:    Provider:  Temporary type to use only during SQL server&amp;#39;s lifetime  AccessEdge:    OrganizationData:    GroupCommonData:    MemberData:    RoleEdge:    RoleData:    ResourceEdge:    ResourceData:    MemberEdge:    APIEdge:    APIData:    OperationEdge:    OperationData:    ProductEdge:    ProductData:    SupplierEdge:    ClientEdge:    GroupEdge:    GroupData:    ManagedGroupEdge:    ExternalMessage:     
+GraphQL schema definition scalar StringRequired by StatsEdge: PageInfo: AdviseMessage: List of advise messages.AccessData: Error: Application errorsParameter: Parameters for additional information for the supplier&amp;#39;s configuration.SupplierData: Provider: Temporary type to use only during SQL server&amp;#39;s lifetimeAccessEdge: OrganizationData: GroupCommonData: MemberData: RoleEdge: RoleData: ResourceEdge: ResourceData: MemberEdge: APIEdge: APIData: OperationEdge: OperationData: ProductEdge: ProductData: SupplierEdge: ClientEdge: GroupEdge: GroupData: ManagedGroupEdge: ExternalMessage:  
         
       </description>
     </item>
@@ -119,7 +119,7 @@ GraphQL schema definition scalar String   Required by StatsEdge:    PageInfo:   
         
         
          The URI type represents a URI values. A good example mith be an Hotel Image URL. In queries or mutations, URI fields have to be specified in RFC 3986, RFC 3987, and RFC 6570 (level 4) compliant URI string format with enclosing double quotes: &amp;ldquo;http:\www.travelgatex.com&amp;rdquo;.
-GraphQL schema definition scalar URI   Required by Urls:  Url&amp;#39;s  StatsAsset:  Asset of an specific error   
+GraphQL schema definition scalar URIRequired by Urls: Url&amp;#39;sStatsAsset: Asset of an specific error 
         
       </description>
     </item>

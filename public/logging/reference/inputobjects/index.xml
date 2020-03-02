@@ -25,7 +25,7 @@
         
         
         Filters needed to do a search. Users (List of users), Suppliers (List of suppliers), ServiceApis (List of service apis), From (Start date of search - YYYY-MM-DD HH:mm:ss), To (End date of search - YYYY-MM-DD HH:mm:ss)
-GraphQL schema definition type StatsFilterInput {  groups: [ID!]    accesses: [ID!]    suppliers: [ID!]    clients: [ID!]    mode: ModeType!    serviceApis: [ServiceApiType!]    operation: [ServiceOperationType!
+GraphQL schema definition type StatsFilterInput {groups: [ID!] accesses: [ID!] suppliers: [ID!] clients: [ID!] mode: ModeType! serviceApis: [ServiceApiType!] operation: [ServiceOperationType!
         
           [...]
         

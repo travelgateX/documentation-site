@@ -8555,6 +8555,8 @@
 
 <p>The add parameter plugin <strong>adds parameters in the configuration of the existing accesses</strong>. By doing this, you can add parameters dynamically in request time to the existing accesses (see <a href="https://docs.travelgatex.com/hotel-x/concepts/accesses-supplier-context/" rel="nofollow" target="_blank">Access configuration</a>). This plugin can be used in all the booking services.</p>
 
+<p>You can also <strong>replace</strong> the value of an existing parameter by adding into the query a parameter with the same key of another an existing parameter.</p>
+
 <h3 id="parameters">Parameters</h3>
 
 <table>
@@ -8579,23 +8581,23 @@
 
 <h3 id="execution-example">Execution example</h3>
 
-<pre><code class="language-json">	{
-	  &quot;step&quot;: &quot;REQUEST_ACCESS&quot;,
-	  &quot;pluginsType&quot;: [
-	     {
-	       &quot;name&quot;: &quot;add_parameterX&quot;,
-	       &quot;type&quot;: &quot;POST_STEP&quot;,
-	       &quot;parameters&quot;: [
-	          {
-		     &quot;key&quot;: &quot;JSONConfiguration&quot;,
-		     &quot;value&quot;: &quot;{\&quot;accesses\&quot;: [ {\&quot;codes\&quot;: [\&quot;1\&quot;,\&quot;2\&quot;],\&quot;parameters\&quot;: [ {\&quot;key\&quot;: \&quot;A\&quot;, \&quot;value\&quot;: \&quot;1\&quot;} ] } ],
-		                \&quot;suppliers\&quot;: [ {\&quot;codes\&quot;: [\&quot;XXX\&quot;], \&quot;parameters\&quot;: [ {\&quot;key\&quot;: \&quot;D\&quot;,\&quot;value\&quot;: \&quot;4\&quot;}] } ],
-				\&quot;parameters\&quot;: [ {\&quot;key\&quot;: \&quot;C\&quot;, \&quot;value\&quot;: \&quot;valor\&quot; } ] }&quot;
-		  }
-		]
-	     }
-	   ]
-	}
+<pre><code class="language-json">    {
+      &quot;step&quot;: &quot;REQUEST_ACCESS&quot;,
+      &quot;pluginsType&quot;: [
+         {
+           &quot;name&quot;: &quot;add_parameterX&quot;,
+           &quot;type&quot;: &quot;POST_STEP&quot;,
+           &quot;parameters&quot;: [
+              {
+             &quot;key&quot;: &quot;JSONConfiguration&quot;,
+             &quot;value&quot;: &quot;{\&quot;accesses\&quot;: [ {\&quot;codes\&quot;: [\&quot;1\&quot;,\&quot;2\&quot;],\&quot;parameters\&quot;: [ {\&quot;key\&quot;: \&quot;A\&quot;, \&quot;value\&quot;: \&quot;1\&quot;} ] } ],
+                        \&quot;suppliers\&quot;: [ {\&quot;codes\&quot;: [\&quot;XXX\&quot;], \&quot;parameters\&quot;: [ {\&quot;key\&quot;: \&quot;D\&quot;,\&quot;value\&quot;: \&quot;4\&quot;}] } ],
+                \&quot;parameters\&quot;: [ {\&quot;key\&quot;: \&quot;C\&quot;, \&quot;value\&quot;: \&quot;valor\&quot; } ] }&quot;
+          }
+        ]
+         }
+       ]
+    }
 </code></pre>
 
 <hr/>

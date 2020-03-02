@@ -24,7 +24,7 @@
       <description>
         
         
-         Changes history of deprecated notes previously announced Unreleased  Removal of type from AdviseMessage. Reason: . Deprecated on 2018-06-01.To be removed soon.   2019-08-13  Removed type from AdviseMessage. Reason: . Deprecated on 2018-06-01 .   2018-06-01  Deprecated type from AdviseMessage. Reason: . Finally removed on 2019-08-13 . Deprecated type from AdviseMessage. Reason: . Expected removal on 2018-08-30 .   
+         Changes history of deprecated notes previously announcedUnreleased  Removal of type from AdviseMessage. Reason: . Deprecated on 2018-06-01.To be removed soon.   2019-08-13  Removed type from AdviseMessage. Reason: . Deprecated on 2018-06-01 .   2018-06-01  Deprecated type from AdviseMessage. Reason: . Finally removed on 2019-08-13 . Deprecated type from AdviseMessage. Reason: . Expected removal on 2018-08-30 .   
         
       </description>
     </item>

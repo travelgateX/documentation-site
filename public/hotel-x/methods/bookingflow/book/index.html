@@ -8544,143 +8544,48 @@
               
 
 
-<p><script>
-  const apiKeyJO = "q8ggxpoVDW76Kw918hwnnRvxlZmAP2QZ";
-  const apiKeyDC = "64780338-49c8-4439-7c7d-d03c2033b145";
+<p>This Book operation requests a reservation confirmation for the specified optionId returned in Quote.</p>
 
-  $(document).ready(main);
-  function main() {
-    const q = '[{\x22apikey\x22:\x2264780338-49c8-4439-7c7d-d03c2033b145\x22,\x22gist\x22:\x22https:\/\/gist.githubusercontent.com\/tgx-bot\/31d4d32ea8e8bc8ab5d7bc3910df72c0\/raw\x22,\x22divname\x22:\x22div_booking\x22}]';
-    const queries = JSON.parse(q);
-    
-    for (const q of queries) {
-      iterateQueries(q)
-    }
-  }
+<h2 id="advanced-criteria">Advanced criteria</h2>
 
-  function iterateQueries(q) {
-    if(!q.gist.includes('http')) return;
-    $.get(q.gist, function (data) {
-      q.data = data;
-      renderGist(q);
-    });
-  }
+<p>Within the Query Variables, you should modify the optionRefId with the optionRefId value returned in the Quote response and send the Query with the other mandatory information.</p>
 
-  function renderGist(q) {
-    
+<p>Also, please specify advanced criteria if it’s necessary:</p>
 
-    var fetchURL = 'https://api.travelgatex.com';
+<p><strong>auditTransactions:</strong> It returns all the transactions exchanged with the supplier.
+We recommend to set it to &ldquo;true&rdquo; for possible claiming purposes with the supplier - if set to &ldquo;true&rdquo;, the system will return the logs from the supplier in the response.</p>
 
-    
-    var search = window.location.search;
-    var parameters = {};
-    search.substr(1).split('&').forEach(function (entry) {
-      var eq = entry.indexOf('=');
-      if (eq >= 0) {
-        parameters[decodeURIComponent(entry.slice(0, eq))] =
-          decodeURIComponent(entry.slice(eq + 1));
-      }
-    });
-
-    
-    parameters.variables = ''; 
-
-    const formattedQuery = q.data;
-    parameters.query = formattedQuery;
+<div class="alert 
+alert-info"
+ 
+role="alert"><p>When making a booking, you get the <strong>Book status</strong> in the response of our API. There are 4 different status:
+1. <strong><em>OK</em></strong>:The reservation was completed with no problems.
+2. <strong><em>ON_REQUEST</em></strong>: The reservation was completed but the product is still not available, so the reservation goes into a waiting list. It is the client’s responsibility to check if the booking is OK.
+3. <strong><em>UNKNOWN</em></strong>: The reservation process through TGX was completed but due to a supplier error or a timeout, the reservation status is unknown. It is the client’s responsibility to check if the booking is OK.
+4. <strong><em>PENDING_COMMIT</em></strong>: The payment has been confirmed in provider&rsquo;s side, but is necessary to make a commit in order to confirm the reservation.  .</p>
+</div>
 
 
-    if (parameters.variables) {
-      try {
-        parameters.variables =
-          JSON.stringify(JSON.parse(parameters.variables), null, 2);
-      } catch (e) {
-        
-        
-      }
-    }
+<h2 id="how-to-confirm-a-reservation">How to confirm a reservation</h2>
 
-    
-    
 
-    function onEditQuery(newQuery) {
-      parameters.query = newQuery;
-      console.log(parameters.query);
-      updateURL();
-    }
+<div id="pulse-holder">
+    <div class="pulse"></div>
+    <img src="/images/iconX.png">
+</div>
+<div id='tab-holder'>
+    <ul class="nav tabs" id="tabMenu"></ul>
+    <br>
 
-    function onEditVariables(newVariables) {
-      parameters.variables = newVariables;
-      updateURL();
-    }
+    <div id="tabContent"></div>
 
-    function onEditOperationName(newOperationName) {
-      parameters.operationName = newOperationName;
-      updateURL();
-    }
+    <div id="tabsText" style="display:none"><p>fb4cf9773a63b7bf222011c211de6b4a
+Please, bear in mind that the clientReference should be different for every test that you are performing.
+/fb4cf9773a63b7bf222011c211de6b4a</p>
+</div>
+</div>
 
-    function updateURL() {
-      var newSearch = '?' + Object.keys(parameters).filter(function (key) {
-        return Boolean(parameters[key]);
-      }).map(function (key) {
-        return encodeURIComponent(key) + '=' +
-          encodeURIComponent(parameters[key]);
-      }).join('&');
-      history.replaceState(null, null, newSearch);
-    }
-
-    
-    
-    
-    function graphQLFetcher(graphQLParams) {
-      const token = q.apikey;
-      
-      
-      
-      return fetch(fetchURL, {
-        method: 'post',
-        headers: {
-          'Accept': 'application/json',
-          'Content-Type': 'application/json',
-          'Authorization': token ? 'Apikey ' + token : null
-        },
-        body: JSON.stringify(graphQLParams),
-        
-      }).then(function (response) {
-        
-        return response.text();
-      }).then(function (responseBody) {
-        try {
-          return JSON.parse(responseBody);
-        } catch (error) {
-          return responseBody;
-        }
-      });
-    }
-
-    
-    
-    
-    
-    ReactDOM.render(
-      React.createElement(GraphiQL, {
-        fetcher: graphQLFetcher,
-        query: parameters.query,
-        variables: parameters.variables,
-        operationName: parameters.operationName,
-        onEditQuery: onEditQuery,
-        onEditVariables: onEditVariables,
-        onEditOperationName: onEditOperationName
-      }),
-      document.getElementById(q.divname),
-      _ => {
-        const element = $(`#${q.divname}`);
-        const button = $(element).find('button.execute-button')[0]
-        $(element).append(button);
-      }
-    );
-  }
-</script>
-<style>
+<p><style>
    
   #tab-holder {
     transform: scale(0);
@@ -8890,38 +8795,225 @@
     position: relative !important;
   }
 </style>
-</p>
 
-<p>The Book operation requests a reservation confirmation for the specified optionId retunred in Quote.</p>
+<script>
+  const token =  null ;
+  const default_user = "";
+  const gists = [{"ak":"8626cf56-e364-4fd1-4fe0-311e23ac6355","g":"fb4cf9773a63b7bf222011c211de6b4a","n":"1 Room","o":["graphiql"],"u":"xsolano"}];
 
-<h2 id="advanced-criteria">Advanced criteria</h2>
+  $(document).ready(main);
+  function main() {
+    const tabsText = $('#tabsText').text();
 
-<p>In Query Variables, you must modify the optionRefId with the optionRefId value returned in the quote response and send the query with the other mandatory information.</p>
+    const promises = []
 
-<p>Detail advanced criteria if it’s necessary
-<strong>auditTransactions:</strong> Returns all the transactions exchanged with the supplier.
-to send register to &ldquo;true&rdquo; and return provider traces to claim them
-It would be good to &ldquo;true&rdquo; it in order to make these claims to supplier</p>
+    for (const gist of gists) {
+      if (gist.g) {
+        
+        const tabLI = `<li class="tab">
+          <label for='${gist.g}'>${gist.n}<\/label>
+       <\/li>`;
+        $('#tabMenu').append(tabLI);
+        
 
-<div class="alert 
-alert-info"
- 
-role="alert"><p>When making a booking, you get  the <strong>Book status</strong> in the response of our API. There are 4 different status:
-1. <strong><em>OK</em></strong>:The reservation was completed with no problems.
-2. <strong><em>ON_REQUEST</em></strong>: The reservation was completed but the product is still not available, so the reservation goes into a waiting list. It is the client’s responsibility to check if the booking is OK.
-3. <strong><em>UNKNOWN</em></strong>: The reservation process through TGX was completed but due to a supplier error or a timeout, the reservation status is unknown. It is the client’s responsibility to check if the booking is OK.
-4. <strong><em>PENDING_COMMIT</em></strong>: The payment has been confirmed in provider&rsquo;s side, but is necessary make a commit in order to confirm the reservation.  .</p>
-</div>
+        var substring = tabsText.indexOf(gist.g) !== -1 ? tabsText.substring(
+          tabsText.indexOf(gist.g) + 1 + gist.g.length,
+          tabsText.lastIndexOf(gist.g) - 1
+        ) : '';
 
+        const text = `<p>${substring.trim() ? substring.split('\n').join('<br>') : ''}<\/p>`;
 
-<h2 id="how-to-confirm-a-reservation">How to confirm a reservation</h2>
+        const pannelTabs = [];
+        for (const option of gist.o) {
+          pannelTabs.push(`<li class="tab ${(gist.o[0] === option ? 'default-tab' : '')}"><label>${option}<\/label><\/li>`)
+        }
 
-<div id='div_booking' class='graphiql-display'>
-    <div class="pulse-holder">
-        <div class="pulse"></div>
-        <img src="/images/iconX.png">
-    </div>
-</div>
+        const tab = `<div id='${gist.g}' class='tab-panel'>
+          <div class='explanation'>${text}<\/div>
+          <ul class='tab-pannel-nav nav tabs'>${pannelTabs.join('')}<\/ul>
+            <div class="general-display">
+            ${(gist.o || []).includes('graphiql') ? "<div class='graphiql display " + (gist.o[0] === 'graphiql' ? 'default-display' : '') + "'><\/div>" : ""}
+            ${(gist.o || []).includes('curl') ? "<div class='curl display " + (gist.o[0] === 'curl' ? 'default-display' : '') + "'><\/div>" : ""}
+            ${(gist.o || []).includes('other') ? "<div class='other display" + (gist.o[0] === 'other' ? 'default-display' : '') + "'><\/div>" : ""}
+          <\/div>
+        <\/div>`;
+        $('#tabContent').append(tab);
+
+        promises.push(iterateQueries(gist));
+      }
+    }
+
+    Promise.all(promises).then(_ => {
+      
+      $.each($('#tabContent > div'), (i, elem) => {
+        const button = $(elem).find('button.execute-button').first();
+        $(elem).find('.graphiql.display').first().append(button);
+      });
+
+      
+      $('#tabMenu > li > label').first().parent().toggleClass('active');
+
+      $('#tabContent > div').first().toggleClass('active-tab-panel');
+
+      
+      $.each($('.general-display'), (i, elem) => {
+        $(elem).children('.default-display').first().removeClass('default-display').toggleClass('active');
+      });
+      $.each($('.tab-pannel-nav'), (i, elem) => {
+        $(elem).children().on('click', function () {
+          $(this).siblings().removeClass('active');
+          $(this).toggleClass('active');
+
+          const tabClass = '.' + $(this).children().first().text();
+          const tab = $(this).parent().next().children(tabClass).first();
+          tab.siblings().removeClass('active');
+          tab.toggleClass('active');
+        });
+        $(elem).children('.default-tab').first().toggleClass('active');
+      
+      
+      
+      });
+
+      
+      $('#tabMenu > li > label').on('click', function () {
+        $(this).parent().siblings().removeClass('active');
+        $(this).parent().toggleClass('active');
+        const tab = $('#' + $(this).attr('for'));
+        tab.siblings().removeClass('active-tab-panel');
+        tab.toggleClass('active-tab-panel');
+      });
+
+      
+      $('#tab-holder').addClass('show-tabs');
+      $('#pulse-holder').hide();
+    });
+  }
+
+  function iterateQueries(gist) {
+    const url = "https://gist.githubusercontent.com/" + (gist.u || default_user) + "/" + gist.g + "/raw";
+    return new Promise(resolve => {
+      $.get(url, function (data) {
+        const replaceValue = '¿$?TEST_LOCATOR¿$?'; 
+        let refinedData = data.replace(new RegExp(escapeRegExpString(replaceValue), 'g'), (+new Date()).toString());
+        renderGist({ gist: gist, data: refinedData });
+        resolve();
+      });
+    })
+  }
+
+  function escapeRegExpString(string) {
+    return string.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&')
+  };
+
+  function renderGist(q) {
+    
+
+    var fetchURL = 'https://api.travelgatex.com';
+
+    
+    var search = window.location.search;
+    var parameters = {};
+    search.substr(1).split('&').forEach(function (entry) {
+      var eq = entry.indexOf('=');
+      if (eq >= 0) {
+        parameters[decodeURIComponent(entry.slice(0, eq))] =
+          decodeURIComponent(entry.slice(eq + 1));
+      }
+    });
+
+    
+    parameters.variables = ''; 
+
+    const formattedQuery = q.data;
+    parameters.query = formattedQuery;
+
+    if (parameters.variables) {
+      try {
+        parameters.variables =
+          JSON.stringify(JSON.parse(parameters.variables), null, 2);
+      } catch (e) {
+        
+        
+      }
+    }
+
+    
+    
+
+    function onEditQuery(newQuery) {
+      parameters.query = newQuery;
+      
+    }
+
+    function onEditVariables(newVariables) {
+      parameters.variables = newVariables;
+      
+    }
+
+    function onEditOperationName(newOperationName) {
+      parameters.operationName = newOperationName;
+      
+    }
+
+    function updateURL() {
+      var newSearch = '?' + Object.keys(parameters).filter(function (key) {
+        return Boolean(parameters[key]);
+      }).map(function (key) {
+        return encodeURIComponent(key) + '=' +
+          encodeURIComponent(parameters[key]);
+      }).join('&');
+      history.replaceState(null, null, newSearch);
+    }
+
+    
+    
+    
+    function graphQLFetcher(graphQLParams) {
+      
+      
+      return fetch(fetchURL, {
+        method: 'post',
+        headers: {
+          'Accept': 'application/json',
+          'Content-Type': 'application/json',
+          'Authorization': q.gist.ak ? 'Apikey ' + q.gist.ak : token
+        },
+        body: JSON.stringify(graphQLParams),
+        
+      }).then(function (response) {
+        
+        return response.text();
+      }).then(function (responseBody) {
+        try {
+          return JSON.parse(responseBody);
+        } catch (error) {
+          return responseBody;
+        }
+      });
+    }
+
+    
+    
+    
+    
+    ReactDOM.render(
+      React.createElement(GraphiQL, {
+        fetcher: graphQLFetcher,
+        query: parameters.query,
+        variables: parameters.variables,
+        operationName: parameters.operationName,
+        onEditQuery: onEditQuery,
+        onEditVariables: onEditVariables,
+        onEditOperationName: onEditOperationName
+      }),
+      document.getElementById(q.gist.g).querySelector('div.graphiql.display')
+      , _ => {
+        
+      }
+    );
+  }
+</script></p>
 
 <hr/>
 <h2>Comments</h2>

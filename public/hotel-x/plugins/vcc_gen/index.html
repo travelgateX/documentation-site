@@ -8608,25 +8608,25 @@ It is important to indicate the contexts used in values on the rule criteria to 
 
 <p>In order to use the plugin, we shoud send the following json in the query variables</p>
 
-<pre><code class="language-json">		&quot;plugins&quot;: [
-			{
-				&quot;step&quot;: &quot;REQUEST&quot;,
-				&quot;pluginsType&quot;: {
-					&quot;name&quot;: &quot;genvcc&quot;,
-					&quot;type&quot;: &quot;PRE_STEP&quot;,
-					&quot;parameters&quot;: [
-						{
-							&quot;key&quot;: &quot;activationDate&quot;,
-							&quot;value&quot;: &quot;2020/05/22&quot;
-						},
-						{
-							&quot;key&quot;: &quot;expirationDate&quot;,
-							&quot;value&quot;: &quot;2020/05/25&quot;
-						}
-					]
-				}
-			}
-		]
+<pre><code class="language-json">        &quot;plugins&quot;: [
+            {
+                &quot;step&quot;: &quot;REQUEST&quot;,
+                &quot;pluginsType&quot;: {
+                    &quot;name&quot;: &quot;genvcc&quot;,
+                    &quot;type&quot;: &quot;PRE_STEP&quot;,
+                    &quot;parameters&quot;: [
+                        {
+                            &quot;key&quot;: &quot;activationDate&quot;,
+                            &quot;value&quot;: &quot;2020/05/22&quot;
+                        },
+                        {
+                            &quot;key&quot;: &quot;expirationDate&quot;,
+                            &quot;value&quot;: &quot;2020/05/25&quot;
+                        }
+                    ]
+                }
+            }
+        ]
 </code></pre>
 
 <p>You should bear in mind that the parameters are <strong>not mandatory</strong>. In case those parameters were not specified, the <strong>default values</strong> would be:</p>
@@ -8639,29 +8639,29 @@ It is important to indicate the contexts used in values on the rule criteria to 
 <p>To apply specific rule, we should add client token in our request</p>
 
 <pre><code class="language-json">&quot;settings&quot;: {
-		&quot;context&quot;: null,
-		&quot;client&quot;: &quot;xtg&quot;,
-		&quot;auditTransactions&quot;: true,
-		&quot;testMode&quot;: true,
-		&quot;clientTokens&quot;: [
-			&quot;testToken&quot;
-		],
-		&quot;plugins&quot;: [
+        &quot;context&quot;: null,
+        &quot;client&quot;: &quot;xtg&quot;,
+        &quot;auditTransactions&quot;: true,
+        &quot;testMode&quot;: true,
+        &quot;clientTokens&quot;: [
+            &quot;testToken&quot;
+        ],
+        &quot;plugins&quot;: [
             {
-				&quot;step&quot;: &quot;REQUEST&quot;,
-				&quot;pluginsType&quot;: {
-					&quot;name&quot;: &quot;genvcc&quot;,
-					&quot;type&quot;: &quot;PRE_STEP&quot;,
-					&quot;parameters&quot;: [
-						{
-							&quot;key&quot;: &quot;activationDate&quot;,
-							&quot;value&quot;: &quot;2020/05/22&quot;
-						}
-					]
-				}
-			}
+                &quot;step&quot;: &quot;REQUEST&quot;,
+                &quot;pluginsType&quot;: {
+                    &quot;name&quot;: &quot;genvcc&quot;,
+                    &quot;type&quot;: &quot;PRE_STEP&quot;,
+                    &quot;parameters&quot;: [
+                        {
+                            &quot;key&quot;: &quot;activationDate&quot;,
+                            &quot;value&quot;: &quot;2020/05/22&quot;
+                        }
+                    ]
+                }
+            }
         ]
-	},
+    },
 </code></pre>
 
 <hr/>
