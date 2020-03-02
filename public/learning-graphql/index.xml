@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>TravelgateX Documentation – Learning GraphQL</title>
+    <link>https://docs.travelgatex.com/learning-graphql/</link>
+    <description>Recent changes in Learning GraphQL on TravelgateX Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <image>
+      <url>https://docs.travelgatex.com/img/hugo.png</url>
+      <title>GoHugo.io</title>
+      <link>https://docs.travelgatex.com/learning-graphql/</link>
+    </image>
+    
+	    <atom:link href="https://docs.travelgatex.com/learning-graphql/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Learning-Graphql: GraphQL Overview</title>
+      <link>https://docs.travelgatex.com/learning-graphql/overview/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/learning-graphql/overview/</guid>
+      <description>
+        
+        
+        What is GraphQL? GraphQL is a query language for your API. It was first designed by Facebook. It&amp;rsquo;s a new way of dealing with and managing data models via API, and is especially useful for decoupling client from server logic.
+ GraphQL is a query language for APIs and a runtime for fulfilling those queries with your existing data. GraphQL provides a complete and understandable description of the data in your API, gives clients the power to ask for exactly what they need and nothing more, makes it easier to evolve APIs over time, and enables powerful developer tools.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Learning-Graphql: Basic Concepts</title>
+      <link>https://docs.travelgatex.com/learning-graphql/basic_concepts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/learning-graphql/basic_concepts/</guid>
+      <description>
+        
+        
+        What are Queries &amp;amp; Mutations There are two basic operations in GraphQL schemas:  Queries: Requesting data from a data model. An example Query would be: checking availability of hotels for a particular date and location  Mutations: Making changes and carrying out transactions on data in the data model. An example Mutation would be: making a booking to reserve a hotel room on a particular date.
+Queries Queries ask the system to provide some data, based on specfic parameters.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Learning-Graphql: Thinking in GraphQL</title>
+      <link>https://docs.travelgatex.com/learning-graphql/thinking_in_graphql/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/learning-graphql/thinking_in_graphql/</guid>
+      <description>
+        
+        
+        A Paradigm Shift GraphQL is a query language, and as such it does exactly that: it queries servers in order to get results back. With GraphQL, you can choose exactly what data you want to retrieve. GraphQL is a typed query language. That means that it has a lot of predictability, as each piece of data has its own type, so we know what sort of data we will be getting back.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Learning-Graphql: Tools</title>
+      <link>https://docs.travelgatex.com/learning-graphql/tools/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/learning-graphql/tools/</guid>
+      <description>
+        
+        
+        Top tools to develop in GraphQL Here is a collection of tools we&amp;rsquo;ve been using that have help us develop in GraphQL:
+Schemas Design  APIs Guru&amp;rsquo;s graphql-faker  Go Packages Nowadays most our APIS are written in Go, mainly because of speed, ability to handle very high load while using low resources. Also because of the ability to develop plugins. We&amp;rsquo;ve used many libraries and packages to help us, hereby our list:
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Learning-Graphql: Tutorials &amp; Resources</title>
+      <link>https://docs.travelgatex.com/learning-graphql/tutorials_resources/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/learning-graphql/tutorials_resources/</guid>
+      <description>
+        
+        
+        Although GraphQL is a very young technology, it&amp;rsquo;s quickly gaining momentum and already has a fast growing yet vast ecosystem. Apart from Facebook&amp;rsquo;s and Graphql.org&amp;rsquo;s official documentation, there are more and more development teams embracing this technology and you can now find a lot of articles, tutorial and videos talking about it.
+We want to be part of this community and hopefully help you discover this new technology and its features.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

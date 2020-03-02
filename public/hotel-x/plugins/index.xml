@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>TravelgateX Documentation – Plugins</title>
+    <link>https://docs.travelgatex.com/hotel-x/plugins/</link>
+    <description>Recent changes in Plugins on TravelgateX Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <image>
+      <url>https://docs.travelgatex.com/img/hugo.png</url>
+      <title>GoHugo.io</title>
+      <link>https://docs.travelgatex.com/hotel-x/plugins/</link>
+    </image>
+    
+	    <atom:link href="https://docs.travelgatex.com/hotel-x/plugins/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Hotel-X: Overview</title>
+      <link>https://docs.travelgatex.com/hotel-x/plugins/overview/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/hotel-x/plugins/overview/</guid>
+      <description>
+        
+        
+        Introduction Plugins are custom code, executed in HotelX servers, that add or modify specific functionalities. Any Partner can develop custom Plugins, nevertheless HotelX, HotelX has developed many Plugins available for anyone to use out of the box.
+Flows HotelX query or mutation determine what flow is executed. Plugins can be executed in different Queries or Mutations:
+ Search Quote Book Cancel  Steps Step is the minium container where plugins are executed sequentially.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Hotel-X: Blacklist</title>
+      <link>https://docs.travelgatex.com/hotel-x/plugins/black-list/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/hotel-x/plugins/black-list/</guid>
+      <description>
+        
+        
+        The Blacklist plugin is used to ignore hotel code(s) when a Search query is executed. This means that all the hotels on the blacklist won&amp;rsquo;t be requested to the supplier. You can apply also rules in order to block an entire supplier. More details regarding configuration below.
+Definitions  Client Token: Dynamic parameter you can send on the RQ in case you want to apply specific rules of the blacklist Client: The client of HotelX to make requests.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Hotel-X: Mapping</title>
+      <link>https://docs.travelgatex.com/hotel-x/plugins/mapping/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/hotel-x/plugins/mapping/</guid>
+      <description>
+        
+        
+        The map plugins are used to change the supplier codes to client codes or vice versa. There are four types:
+ Hotel map  Board Map  Room Map  Rate Map   Our map formats share a common structure. In order to load your maps you just need to follow the instructions below:
+Example files You can download example for the files structure here
+Entity Maps File Format The file should be in the following format:
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Hotel-X: Add Parameter</title>
+      <link>https://docs.travelgatex.com/hotel-x/plugins/add_parameterx/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/hotel-x/plugins/add_parameterx/</guid>
+      <description>
+        
+        
+        Add Parameter is an optional plugin that allows parameters to be added to accesses used by different suppliers at a request level.
+Add Parameter Goals The add parameter plugin adds parameters in the configuration of the existing accesses. By doing this, you can add parameters dynamically in request time to the existing accesses (see Access configuration). This plugin can be used in all the booking services.
+You can also replace the value of an existing parameter by adding into the query a parameter with the same key of another an existing parameter.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Hotel-X: Aggregation</title>
+      <link>https://docs.travelgatex.com/hotel-x/plugins/aggregation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/hotel-x/plugins/aggregation/</guid>
+      <description>
+        
+        
+        Aggregation plugins extends HotelX allowing aggregation Supplier options and responses using different business rules.
+Aggregation Key Aggregate Supplier options based on field keys applying a selector function over field values.
+It&amp;rsquo;s based on SQL Aggregate Functions.
+ Field Keys as a combination of:  binding board cancelPolicy currency hotel market payment promotion rateRules  refundable room supplement supplier surcharges   Name The aggregation mode currently only supports one mode &amp;ldquo;cheapest_price&amp;rdquo;.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Hotel-X: Booking Persistence</title>
+      <link>https://docs.travelgatex.com/hotel-x/plugins/booking_persistence/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/hotel-x/plugins/booking_persistence/</guid>
+      <description>
+        
+        
+        Booking Persistence is a plugin that allows clients to store bookings.
+Booking Persistence Goals Booking Persistence is a plugin that allows clients to store bookings and avoid duplicated bookings. A duplicated booking is a booking that has the same cliente reference that other previous booking.
+This plugin only can be executed in book service. With this plugin, each booking (by clientReference) of an organization is unique. Each booking done with this plugin will be stored until one day after booking checkout day.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Hotel-X: Commission</title>
+      <link>https://docs.travelgatex.com/hotel-x/plugins/net-price/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/hotel-x/plugins/net-price/</guid>
+      <description>
+        
+        
+        CommissionX is a plugin that defines the contracted / expected commission in cases where the supplier is not able to send it via integration.
+CommissionX Goals CommissionX is a plugin that defines the contracted / expected commission in cases where the supplier is not able to send it via integration. These commissions are defined through the plugin so as not to lose the options in which we do not know the type of price sent, since this information is established at contract level between client-supplier.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Hotel-X: Market Group</title>
+      <link>https://docs.travelgatex.com/hotel-x/plugins/markets_groups/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/hotel-x/plugins/markets_groups/</guid>
+      <description>
+        
+        
+        Market Group X is an optional plugin that allows the user to group the Search result by markets that share the same Options.
+Market Group X Goals The Market Group X plugin groups the input markets from Search depending on the agrupations you&amp;rsquo;ve decided before hand (with a configuration file. More details regarding configuration below.). In order to be able to use the plugin, you&amp;rsquo;ll have to decide which markets to join for which supplier.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Hotel-X: Markup</title>
+      <link>https://docs.travelgatex.com/hotel-x/plugins/markup/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/hotel-x/plugins/markup/</guid>
+      <description>
+        
+        
+        Markups type plugins permits to apply markup percentages over a price, markup is a field in price composed of a set of rules and a new price with an added percentage, the percentage is the sum of every rule applied.
+Although this plugin can be customized, we already offer an implementation.
+MarkupX This markup implementation is supported by our web application which permits the management of an organization&amp;rsquo;s rules, the modification of these rules are applied in your product at real time.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Hotel-X: Preference</title>
+      <link>https://docs.travelgatex.com/hotel-x/plugins/preference/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/hotel-x/plugins/preference/</guid>
+      <description>
+        
+        
+        Preference is an optional plugin and allows to offer options preferentially in relation to the rules informed by the client.
+Preference Goals The preference plugin Gives preference to the options that match the preference rules By doing this, the options will be returned in a preferential way.
+Sequentially, the rules will be evaluated until a match is found, upon finding it, the process will be stopped and the preference will be evaluated.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Hotel-X: Safety Margin</title>
+      <link>https://docs.travelgatex.com/hotel-x/plugins/safety_margin/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/hotel-x/plugins/safety_margin/</guid>
+      <description>
+        
+        
+        Safety Margin is an optional plugin that allows discarding options that have a commission lower than expected. The expected commission has to be loaded in safety-margin file, and is the commission over gross, in other words, the commission/profit is already included in the price.
+Safety Margin Goals The safety margin plugin discards those options that have a commission lower than expected. By doing this, only options that have a commission over gross, equal or lower than those reported in the file will be returned.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Hotel-X: Vcc Gen</title>
+      <link>https://docs.travelgatex.com/hotel-x/plugins/vcc_gen/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/hotel-x/plugins/vcc_gen/</guid>
+      <description>
+        
+        
+        Vcc Gen is an optional plugin that adds the possibility to create a virtual credit card at Book step, in order to pay the reservation&amp;rsquo;s import with it.
+Virtual Credit Card Generator (Vcc Gen) Goals The Vcc Gen plugin creates a virtual credit card with an activation and expiration date chosen by the client. The client must also send the token for the virtual credit card. The service will return the information of the newly created payment card in the response, even if the Book step has failed.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Hotel-X: Currency Converter</title>
+      <link>https://docs.travelgatex.com/hotel-x/plugins/converter/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/hotel-x/plugins/converter/</guid>
+      <description>
+        
+        
+        Currency converter is an optional plugin and allows to apply currency conversion over all the prices in one Option.
+CurrencyX This plugin receives an Option and a currency and returns the same option with currency conversion applied over all the prices. It reads the information about rates from a file located in our ftp. Is mandatory that this file exists in the ftp and satisfies all the requirements below. Otherwise, an error will be returned.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Hotel-X: Processor</title>
+      <link>https://docs.travelgatex.com/hotel-x/plugins/processor/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/hotel-x/plugins/processor/</guid>
+      <description>
+        
+        
+        Processor plugins extends HotelX allowing multiple operation types. It can modify request and response messages, allowing a full range of operations:
+ Split arrays Join arrays Modify object values Add or remove object instances  
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Hotel-X: Search by destination</title>
+      <link>https://docs.travelgatex.com/hotel-x/plugins/search_by_destination/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/hotel-x/plugins/search_by_destination/</guid>
+      <description>
+        
+        
+        const apiKeyJO = &#34;q8ggxpoVDW76Kw918hwnnRvxlZmAP2QZ&#34;;const apiKeyDC = &#34;64780338-49c8-4439-7c7d-d03c2033b145&#34;;$(document).ready(main);function main() {const q = &#39;[{\x22apikey\x22:\x2264780338-49c8-4439-7c7d-d03c2033b145\x22,\x22gist\x22:\x22https:\/\/gist.githubusercontent.com\/tgx-bot\/74a01699ccc7f7a8f043f6583e64fcde\/raw\x22,\x22divname\x22:\x22div_admin_destinations\x22},{\x22apikey\x22:\x2264780338-49c8-4439-7c7d-d03c2033b145\x22,\x22gist\x22:\x22https:\/\/gist.githubusercontent.com\/tgx-bot\/f820c0508f7d47432eaad34823d426e0\/raw\x22,\x22divname\x22:\x22div_searchbydestinations\x22}]&#39;;const queries = JSON.parse(q);for (const q of queries) {iterateQueries(q)}}function iterateQueries(q) {if(!q.gist.includes(&#39;http&#39;)) return;$.get(q.gist, function (data) {q.data = data;renderGist(q);});}function renderGist(q) {var fetchURL = &#39;https://api.travelgatex.com&#39;;var search = window.location.search;var parameters = {};search.substr(1).split(&#39;&amp;&#39;).forEach(function (entry) {var eq = entry.indexOf(&#39;=&#39;);if (eq = 0) {parameters[decodeURIComponent(entry.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Hotel-X: Development</title>
+      <link>https://docs.travelgatex.com/hotel-x/plugins/development/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/hotel-x/plugins/development/</guid>
+      <description>
+        
+        
+        On this page you will learn how to develop your own HotelX Plugin.
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Hotel-X: Entities</title>
+      <link>https://docs.travelgatex.com/hotel-x/plugins/entity_table_file/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/hotel-x/plugins/entity_table_file/</guid>
+      <description>
+        
+        
+        Entities processed types: Sequential Type of processing sequentially, the first rule that coincides will be the one applied.
+Supplier Rules applied or indexed at the supplier level.
+Access Rules applied or indexed at the access level.
+Hotel The key to indexing is of the hotel type, we hope that the reference is by a hotel code where the type will be given by the context.
+Destination Idem hotel.
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

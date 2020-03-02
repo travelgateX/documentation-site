@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>TravelgateX Documentation – Data Automation</title>
+    <link>https://docs.travelgatex.com/travelgatex/data-automation/</link>
+    <description>Recent changes in Data Automation on TravelgateX Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <image>
+      <url>https://docs.travelgatex.com/img/hugo.png</url>
+      <title>GoHugo.io</title>
+      <link>https://docs.travelgatex.com/travelgatex/data-automation/</link>
+    </image>
+    
+	    <atom:link href="https://docs.travelgatex.com/travelgatex/data-automation/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Travelgatex: Uploading Strategies</title>
+      <link>https://docs.travelgatex.com/travelgatex/data-automation/uploading-strategies/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/travelgatex/data-automation/uploading-strategies/</guid>
+      <description>
+        
+        
+        How to upload data to the platform There are two ways of uploading data to the platform:
+ Secure File Transfer Protocol (SFTP) GraphQL mutation  We recommend continuing to use SFTP at present while we build out more GraphQL resources.
+While you can make your updates via a mutation, we have not yet written up resources to show you how to do that.
+If you require these resources immediately, please contact us via Slack, Jira or by raising an issue in GitHub.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>TravelgateX Documentation – Performance Benchmark Dataset</title>
+    <link>https://docs.travelgatex.com/insights-x/datasets/dataset-content/benchmark/performance/</link>
+    <description>Recent changes in Performance Benchmark Dataset on TravelgateX Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <image>
+      <url>https://docs.travelgatex.com/img/hugo.png</url>
+      <title>GoHugo.io</title>
+      <link>https://docs.travelgatex.com/insights-x/datasets/dataset-content/benchmark/performance/</link>
+    </image>
+    
+	    <atom:link href="https://docs.travelgatex.com/insights-x/datasets/dataset-content/benchmark/performance/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Insights-X: Reference</title>
+      <link>https://docs.travelgatex.com/insights-x/datasets/dataset-content/benchmark/performance/dataset-reference-benchmark/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/insights-x/datasets/dataset-content/benchmark/performance/dataset-reference-benchmark/</guid>
+      <description>
+        
+        
+        On this page you will learn how the data is stored in Benchmark Dataset.
+Tables Descriptions of each table and their correspondent fields are found below:
+performance_(daily|weekly|monthly)_(seller|buyer) This table contains the total of ok and nok searches, quotes, bookings and cancellation requests and responses times for the buyer|seller and for TravelgateX. The buyers|sellers that aren&amp;rsquo;t connected are aggregated in &amp;ldquo;others&amp;rdquo; for the seller case and &amp;ldquo;OTHERS&amp;rdquo; for the buyers case.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>TravelgateX Documentation – MappeaX</title>
+    <link>https://docs.travelgatex.com/mappea/</link>
+    <description>Recent changes in MappeaX on TravelgateX Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <image>
+      <url>https://docs.travelgatex.com/img/hugo.png</url>
+      <title>GoHugo.io</title>
+      <link>https://docs.travelgatex.com/mappea/</link>
+    </image>
+    
+	    <atom:link href="https://docs.travelgatex.com/mappea/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Mappea: Overview</title>
+      <link>https://docs.travelgatex.com/mappea/overview/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/mappea/overview/</guid>
+      <description>
+        
+        
+        {{ % wip % }}
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Mappea: GraphQL Schema breaking changes</title>
+      <link>https://docs.travelgatex.com/mappea/release-notes/breaking-changes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/mappea/release-notes/breaking-changes/</guid>
+      <description>
+        
+        
+        Changes history of deprecated notes previously announcedUnreleased  Removal of type from AdviseMessage. Reason: . Deprecated on 2018-06-01.To be removed soon.   2019-02-08  Removed error from API. Reason: Sustituted by adviseMessage. Deprecated on 2018-08-22 . Removed error from Member. Reason: Sustituted by adviseMessage. Deprecated on 2018-08-22 . Removed error from Operation. Reason: Sustituted by adviseMessage. Deprecated on 2018-08-22 . Removed error from Organization. Reason: Sustituted by adviseMessage.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

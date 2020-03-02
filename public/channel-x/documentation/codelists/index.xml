@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>TravelgateX Documentation – Code Lists</title>
+    <link>https://docs.travelgatex.com/channel-x/documentation/codelists/</link>
+    <description>Recent changes in Code Lists on TravelgateX Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <image>
+      <url>https://docs.travelgatex.com/img/hugo.png</url>
+      <title>GoHugo.io</title>
+      <link>https://docs.travelgatex.com/channel-x/documentation/codelists/</link>
+    </image>
+    
+	    <atom:link href="https://docs.travelgatex.com/channel-x/documentation/codelists/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+  </channel>
+</rss>

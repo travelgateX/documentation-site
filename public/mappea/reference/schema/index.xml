@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>TravelgateX Documentation – Schema</title>
+    <link>https://docs.travelgatex.com/mappea/reference/schema/</link>
+    <description>Recent changes in Schema on TravelgateX Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <image>
+      <url>https://docs.travelgatex.com/img/hugo.png</url>
+      <title>GoHugo.io</title>
+      <link>https://docs.travelgatex.com/mappea/reference/schema/</link>
+    </image>
+    
+	    <atom:link href="https://docs.travelgatex.com/mappea/reference/schema/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Mappea: MappeaQuery</title>
+      <link>https://docs.travelgatex.com/mappea/reference/schema/query/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/mappea/reference/schema/query/</guid>
+      <description>
+        
+        
+         GraphQL schema definition type MappeaQuery {getUploadedFiles: GetUploadedFilesResponse! getMappeaStats(input: MappeaGetMappeaStatsInput!,): GetMappeaStatsResponse! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields getUploadedFiles(GetUploadedFilesResponse!):getMappeaStats(GetMappeaStatsResponse!): 
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Mappea: MappeaMutation</title>
+      <link>https://docs.travelgatex.com/mappea/reference/schema/mutation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/mappea/reference/schema/mutation/</guid>
+      <description>
+        
+        
+        GraphQL schema definition type MappeaMutation {confirmUpload(input: MappeaConfirmUploadInput!,): OnlyStatusResponse! uploadFile(input: MappeaUploadFileInput!,): UploadFileResponse! mapSupplier(input: MappeaMapSupplierInput!,): OnlyStatusResponse! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields confirmUpload(OnlyStatusResponse!):uploadFile(UploadFileResponse!):mapSupplier(OnlyStatusResponse!
+        
+          [...]
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

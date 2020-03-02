@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>TravelgateX Documentation – Logging changelog</title>
+    <link>https://docs.travelgatex.com/logging/release-notes/changelog/</link>
+    <description>Recent changes in Logging changelog on TravelgateX Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 19 Sep 2019 00:00:00 +0200</lastBuildDate>
+    <image>
+      <url>https://docs.travelgatex.com/img/hugo.png</url>
+      <title>GoHugo.io</title>
+      <link>https://docs.travelgatex.com/logging/release-notes/changelog/</link>
+    </image>
+    
+	    <atom:link href="https://docs.travelgatex.com/logging/release-notes/changelog/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Logging: Older</title>
+      <link>https://docs.travelgatex.com/logging/release-notes/changelog/older/</link>
+      <pubDate>Thu, 19 Sep 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://docs.travelgatex.com/logging/release-notes/changelog/older/</guid>
+      <description>
+        
+        
+        2019-08-30  Now quotes requested by Speed have the same sessionID that quotes requested by the client in order to identify them.    Now reference filters are arrays in order to be able to request multiple references at once.   2019-08-22  Added the field hotel in the input object reference from which bookings can be searched by the hotel&amp;rsquo;s reference.   2019-08-21  Added new input object timeRange that improves the time filters providing both a relative time filter and an absolute time filter.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

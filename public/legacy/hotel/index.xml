@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>TravelgateX Documentation – Hotel API</title>
+    <link>https://docs.travelgatex.com/legacy/hotel/</link>
+    <description>Recent changes in Hotel API on TravelgateX Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <image>
+      <url>https://docs.travelgatex.com/img/hugo.png</url>
+      <title>GoHugo.io</title>
+      <link>https://docs.travelgatex.com/legacy/hotel/</link>
+    </image>
+    
+	    <atom:link href="https://docs.travelgatex.com/legacy/hotel/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Legacy: Overview</title>
+      <link>https://docs.travelgatex.com/legacy/hotel/overview/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/legacy/hotel/overview/</guid>
+      <description>
+        
+        
+        Overview of product
+TravelgateX&amp;rsquo;s API is a fast and transparent connectivity that allows clients to access content from TravelgateX&amp;rsquo;s suppliers list. Currently there are more than 600 connectivities including tech partners, bedbanks and direct hotel chains connected to our system. Use this API to query, check for availability and book fares. It can be accessed by any third-party system such as tour-operator systems, B2C and B2B web applications or third-party applications.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Legacy: FAQ</title>
+      <link>https://docs.travelgatex.com/legacy/hotel/faq/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/legacy/hotel/faq/</guid>
+      <description>
+        
+        
+        How many suppliers can I request in one method?
+One supplier per request. The only exception is in Availability, where you can request one or more suppliers.
+What is the workflow for hotel reservation?
+Our workflow has three mandatory steps: Availability (avail), Valuation and Reservation, always in this order.
+How can I identify which supplier is which in Availability method?
+By using the field ID in the request. For example:
+        
+          [...]
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>TravelgateX Documentation – API Methods</title>
+    <link>https://docs.travelgatex.com/legacy/hotel/methods/messages/</link>
+    <description>Recent changes in API Methods on TravelgateX Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <image>
+      <url>https://docs.travelgatex.com/img/hugo.png</url>
+      <title>GoHugo.io</title>
+      <link>https://docs.travelgatex.com/legacy/hotel/methods/messages/</link>
+    </image>
+    
+	    <atom:link href="https://docs.travelgatex.com/legacy/hotel/methods/messages/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Legacy: Avail</title>
+      <link>https://docs.travelgatex.com/legacy/hotel/methods/messages/avail/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/legacy/hotel/methods/messages/avail/</guid>
+      <description>
+        
+        
+        Method Goals This method aims to return all the available options for a given date and itinerary. It does not filter different classes, times or fares. It will always retrieve all results returned by the supplier.
+Request Format The availability request is very straight forward. It only requires destination, travel dates and the number of pax in each room.
+Response Format Results are organized in this hierarchy=
+ Hotel :  A list with all the hotels, including hotel name and code, mealplans list, etc.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Legacy: AvailDestinationTree</title>
+      <link>https://docs.travelgatex.com/legacy/hotel/methods/messages/availdestinationtree/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/legacy/hotel/methods/messages/availdestinationtree/</guid>
+      <description>
+        
+        
+        Method Goals This method returns the tree of destinations accessible from the call Avail .
+Request Format The request does not require any elements - it&amp;rsquo;s an empty request.
+Response Format The result returns a list of DestinationTree with their corresponding sub-destinations.
+Remarks The maximum time permitted in our system before the connection is closed is 240000 milliseconds.
+AvailDestinationTreeRQ Example &amp;lt;AvailDestinationTreeRQ&amp;gt; &amp;lt;/AvailDestinationTreeRQ&amp;gt;  AvailDestinationTreeRQ Description    Element Number Type Description     AvailDestinationTreeRQ 1  Root node.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Legacy: Cancel</title>
+      <link>https://docs.travelgatex.com/legacy/hotel/methods/messages/cancel/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/legacy/hotel/methods/messages/cancel/</guid>
+      <description>
+        
+        
+        Method Goals This method aims to cancel a booking
+Request Format The request requires one or more of the following data, depending on the supplier:
+ Locators: booking codes - this element contains two elements, Client (client&amp;rsquo;s booking code) and Provider (supplier&amp;rsquo;s booking code). One or both will be required depending on the supplier hotelCode: the hotel code StartDate: the check-in date EndDate: the check-out date  Response Format The result returns a response with the booking status, the cancellation&amp;rsquo;s ID and the fee for that cancellation.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Legacy: CategoryList</title>
+      <link>https://docs.travelgatex.com/legacy/hotel/methods/messages/categorylist/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/legacy/hotel/methods/messages/categorylist/</guid>
+      <description>
+        
+        
+        Method Goals This method returns a list of categories (codes and descriptions) used in HotelList and DescriptiveInfo.
+Request Format The request does not require any elements empty request.
+Response Format The result returns a list of Category .
+Remarks The maximum time permitted in our system before the connection is closed is 240000 milliseconds.
+CategoryListRQ Example &amp;lt;CategoryListRQ&amp;gt; &amp;lt;/CategoryListRQ&amp;gt;  CategoryListRQ Description    Element Number Type Description     CategoryListRQ 1  Root node.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Legacy: Common Elements</title>
+      <link>https://docs.travelgatex.com/legacy/hotel/methods/messages/common-elements/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/legacy/hotel/methods/messages/common-elements/</guid>
+      <description>
+        
+        
+        This node will be in every request and response objects.
+The request object contains the supplier&amp;rsquo;s configuration, urls and credentials.
+The response object contains the status of the request and any possible errors as well as possible messages from the supplier (if previously requested).
+Common Elements RQ Example &amp;lt;HotelBaseRQ&amp;gt; &amp;lt;echoToken&amp;gt;TEST&amp;lt;/echoToken&amp;gt; &amp;lt;timeoutMilliseconds&amp;gt;20000&amp;lt;/timeoutMilliseconds&amp;gt; &amp;lt;source&amp;gt; &amp;lt;agencyCode&amp;gt;XXXX&amp;lt;/agencyCode&amp;gt; &amp;lt;languageCode&amp;gt;es&amp;lt;/languageCode&amp;gt; &amp;lt;/source&amp;gt; &amp;lt;filterAuditData&amp;gt; &amp;lt;registerTransactions&amp;gt;true&amp;lt;/registerTransactions&amp;gt; &amp;lt;/filterAuditData&amp;gt; &amp;lt;optionsQuota&amp;gt;500&amp;lt;/optionsQuota&amp;gt; &amp;lt;ContinuationToken expectedRange = &amp;quot;6000&amp;quot;&amp;gt;&amp;lt;/ContinuationToken&amp;gt; &amp;lt;Configuration&amp;gt; &amp;lt;User&amp;gt;USERXX&amp;lt;/User&amp;gt; &amp;lt;Password&amp;gt;PWXX&amp;lt;/Password&amp;gt; &amp;lt;UrlAvail&amp;gt;www.supplier.com/avail&amp;lt;/UrlAvail&amp;gt; &amp;lt;UrlReservation&amp;gt;www.supplier.com/reservation&amp;lt;/UrlReservation&amp;gt; &amp;lt;UrlValuation&amp;gt;www.supplier.com/valuation&amp;lt;/UrlValuation&amp;gt; &amp;lt;UrlGeneric&amp;gt;www.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Legacy: CurrencyList</title>
+      <link>https://docs.travelgatex.com/legacy/hotel/methods/messages/currencylist/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/legacy/hotel/methods/messages/currencylist/</guid>
+      <description>
+        
+        
+        Method Goals This method returns a list of currencies the supplier supports in Avail.
+Request Format The request does not require any elements. Empty request.
+Response Format The result returns a list of currencies.
+CurrencyListRQ Example &amp;lt;CurrencyListRQ&amp;gt; &amp;lt;/CurrencyListRQ&amp;gt;  CurrencyListRQ Description    Element Number Type Description     CurrencyListRQ 1  Root node.    CurrencyListRS Example &amp;lt;CurrencyListRS&amp;gt; &amp;lt;UpgradeUTCDate&amp;gt;2016-10-18T13:18:03+02:00&amp;lt;/UpgradeUTCDate&amp;gt; &amp;lt;Currencies&amp;gt; &amp;lt;Currency&amp;gt; &amp;lt;Code&amp;gt;EUR&amp;lt;/Code&amp;gt; &amp;lt;Name&amp;gt;Euro&amp;lt;/Name&amp;gt; &amp;lt;/Currency&amp;gt; &amp;lt;Currency&amp;gt; &amp;lt;Code&amp;gt;USD&amp;lt;/Code&amp;gt; &amp;lt;Name&amp;gt;Dollar&amp;lt;/Name&amp;gt; &amp;lt;/Currency&amp;gt; &amp;lt;/Currencies&amp;gt; &amp;lt;/CurrencyListRS&amp;gt;  CurrencyListRS Description    Element Number Type Description     CurrencyListRS 1  Root node.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Legacy: DescriptiveInfo</title>
+      <link>https://docs.travelgatex.com/legacy/hotel/methods/messages/descriptiveinfo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/legacy/hotel/methods/messages/descriptiveinfo/</guid>
+      <description>
+        
+        
+        Method Goals This method returns the details of a hotel (pictures, descriptions &amp;hellip;) in a given language.
+Request Format The request just requires the hotel code and language code (ISO-639-1) - this is specified within the source&amp;ndash;&amp;gt;languageCode).
+Response Format The result returns the details of that hotel.
+Remarks The maximum time permitted in our system before the connection is closed is 180000 milliseconds.
+DescriptiveInfoRQ Example &amp;lt;DescriptiveInfoRQ&amp;gt; &amp;lt;Hotel&amp;gt; &amp;lt;Code&amp;gt;524AC&amp;lt;/Code&amp;gt; &amp;lt;/Hotel&amp;gt; &amp;lt;/DescriptiveInfoRQ&amp;gt;  DescriptiveInfoRQ Description    Element Number Type Description     DescriptiveInfoRQ 1  Root node.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Legacy: DescriptiveInfoExtended (In development)</title>
+      <link>https://docs.travelgatex.com/legacy/hotel/methods/messages/descriptiveinfoextended/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/legacy/hotel/methods/messages/descriptiveinfoextended/</guid>
+      <description>
+        
+        
+        Method Goals This method returns 100% of the hotel information provided by the supplier.
+It allows you to map each hotel using your own criteria with the combination of contextItem_ plus data_ so you will have the information (extracted from the supplier&amp;rsquo;s documentation hierachy/fields descriptions) required to do so.
+Request Format After entering the hotel code, you can set language filters. We recommend that the first call is done without filters in order to ascertain which languages are provided by the supplier.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Legacy: GeographicDestinationTree</title>
+      <link>https://docs.travelgatex.com/legacy/hotel/methods/messages/geographicdestinationtree/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/legacy/hotel/methods/messages/geographicdestinationtree/</guid>
+      <description>
+        
+        
+        Method Goals This method returns the supplier&amp;rsquo;s geographic tree where each node indicates whether the request is accessible from availability, indicated with a parameter with values true or false. The main difference between the methods GeographicalTree and DestinationTree is that GeographicalTree has this boolean parameter.
+Request Format The request not requires any element, it is empty.
+Response Format The result returns a list of DestinationTree with corresponding sub-destinations.
+Remarks The maximum time permitted in our system before the connection is closed is 240000 milliseconds.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Legacy: HotelList</title>
+      <link>https://docs.travelgatex.com/legacy/hotel/methods/messages/hotellist/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/legacy/hotel/methods/messages/hotellist/</guid>
+      <description>
+        
+        
+        Method Goals This method returns a list of hotels with basic information (code, name, address, phone, etc.) for each hotel
+Request Format The request does not require any elements. Empty request.
+Response Format The result returns a list of Hotel (hotels).
+Remarks The maximum time permitted in our system before the connection is closed is 240000 milliseconds.
+This method may be preloaded in XML Travelgate&amp;rsquo;s system if it takes more than 3 minutes to download.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Legacy: Lists of Data</title>
+      <link>https://docs.travelgatex.com/legacy/hotel/methods/messages/listsdata/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/legacy/hotel/methods/messages/listsdata/</guid>
+      <description>
+        
+        
+        Method Goals This paragraph aims to return all of the data lists used in our system: language codes, error codes,currency list, credit cards, nationality and market.
+Language Codes    Language Code     English en   Spanish es   Portuguese pt   Italian it   French fr   German de   Brazilian br    Error codes    Code Description     101 System Exception (Exception not controlled or not classified as general exception).
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Legacy: MarketList</title>
+      <link>https://docs.travelgatex.com/legacy/hotel/methods/messages/marketlist/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/legacy/hotel/methods/messages/marketlist/</guid>
+      <description>
+        
+        
+        Method Goals This method aims to return a list of the available Markets, which will be used in the availability request.
+Request Format The request does not require any elements - empty request.
+Response Format The result returns a list of Market.
+Remarks The maximum time permitted in our system before the connection is closed is 240000 milliseconds. Most suppliers use a standard ISO - 3166_1_alfa_2, but it depends on each individual supplier.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Legacy: MealPlanList</title>
+      <link>https://docs.travelgatex.com/legacy/hotel/methods/messages/mealplanlist/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/legacy/hotel/methods/messages/mealplanlist/</guid>
+      <description>
+        
+        
+        Method Goals This method aims to return a list of the available MealPlans, which will be used in the availability response.
+Request Format The request does not require any elements - empty request.
+Response Format The result returns a list of MealPlan.
+Remarks The maximum time permitted in our system before the connection is closed is 240000 milliseconds.
+If the supplier has more than 100 mealplan codes, or more than 20 codes for one single mealplan, this code will be mapped depending on the supplier.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Legacy: MetaData</title>
+      <link>https://docs.travelgatex.com/legacy/hotel/methods/messages/metadata/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/legacy/hotel/methods/messages/metadata/</guid>
+      <description>
+        
+        
+        Method Goals This method provides information about the meta data of the supplier so that it can be effectively configured.
+Request Format The request does not require any elements - empty request.
+Response Format The XML response contains many elements of the supplier&amp;rsquo;s meta data: number of hotels, number of cities and number of areas available, maximum number of roomcandidate, maximum number of paxes in a roomcandidate, release days, minimum stay, list of languages supported &amp;hellip;
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Legacy: Reservation</title>
+      <link>https://docs.travelgatex.com/legacy/hotel/methods/messages/reservation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/legacy/hotel/methods/messages/reservation/</guid>
+      <description>
+        
+        
+        Method Goals This method aims to book an option.
+Request Format The request format works the same way as Valuation but with the list of passengers.
+Response Format The result returns the booking locator (booking code), which could be the supplier&amp;rsquo;s own code or the one sent in request.
+It also returns all the charges associated with the booking as well as its status.
+Remarks 180000 milliseconds is the maximum amount of time permitted in our system before the connection is closed.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Legacy: ReservationList</title>
+      <link>https://docs.travelgatex.com/legacy/hotel/methods/messages/reservationlist/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/legacy/hotel/methods/messages/reservationlist/</guid>
+      <description>
+        
+        
+        Method Goals This method aims to return a list of bookings for a given time period being that either booking date or the travelling date.
+Request Format The request requires one of the following data depending on provider:
+ DateType: indicates the date type: either booking creation date or booking start date Start: the date from End: the date to  Response Format The result returns a list of bookings details, with the same format as ReservationReadRS.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Legacy: ReservationRead</title>
+      <link>https://docs.travelgatex.com/legacy/hotel/methods/messages/reservationread/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/legacy/hotel/methods/messages/reservationread/</guid>
+      <description>
+        
+        
+        Method Goals This method aims to retrieve detailed information about a specific Reservation
+Request Format The request requires one of the following data depending on supplier:
+ Locators: booking codes (this element contains two elements Client (client&amp;rsquo;s booking code) and Provider (supplier&amp;rsquo;s booking code), one or both will be required depending on the supplier) Currency: the currency code CreationDate: the booking date StardDate: the check-in date EndDate: the check-out date HotelCode: Hotel code  Response Format The result returns the full details of a booking.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Legacy: RoomList</title>
+      <link>https://docs.travelgatex.com/legacy/hotel/methods/messages/roomlist/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/legacy/hotel/methods/messages/roomlist/</guid>
+      <description>
+        
+        
+        Method Goals This method aims to return a list of rooms, their codes as well as descriptions.
+Request Format The request does not require any elements - empty request.
+Response Format The result returns a list of RoomInfo.
+Remarks The maximum time permitted in our system before the connection is closed is 240000 milliseconds.
+This message must be implemented solely in case the supplier does not return room description in Avail.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Legacy: RuntimeConfiguration</title>
+      <link>https://docs.travelgatex.com/legacy/hotel/methods/messages/runtimeconfiguration/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/legacy/hotel/methods/messages/runtimeconfiguration/</guid>
+      <description>
+        
+        
+        Method Goals This message returns a template of the supplier&amp;rsquo;s configuration.
+Request Format The request does not require any elements, it is an empty request.
+Response Format The returned XML contains a template of all fields used by the supplier.
+RuntimeConfigurationRQ Example &amp;lt;RuntimeConfigurationRQ&amp;gt; &amp;lt;/RuntimeConfigurationRQ&amp;gt;  RuntimeConfigurationRQ Description    Element Number Type Description     RuntimeConfigurationRQ 1  Root node.    RuntimeConfigurationRS Example &amp;lt;RuntimeConfigurationRS&amp;gt; &amp;lt;Configuration&amp;gt; &amp;lt;User/&amp;gt; &amp;lt;Password/&amp;gt; &amp;lt;UrlGeneric/&amp;gt; &amp;lt;Parameters&amp;gt; &amp;lt;Parameter key = &amp;quot;agencia&amp;quot; value = &amp;quot;&amp;quot;/&amp;gt; &amp;lt;/Parameters&amp;gt; &amp;lt;/Configuration&amp;gt; &amp;lt;/RuntimeConfigurationRS&amp;gt;  ConfiguracionRunTimeRS Description    Element Number Type Description     RuntimeConfigurationRS 1  Root node.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Legacy: StaticConfiguration</title>
+      <link>https://docs.travelgatex.com/legacy/hotel/methods/messages/staticconfiguration/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/legacy/hotel/methods/messages/staticconfiguration/</guid>
+      <description>
+        
+        
+        Method Goals This method provides information about the static configuration of the supplier so that it can be effectively configured.
+Request Format The request does not require any elements - empty request.
+Response Format The XML response contains many elements of the supplier&amp;rsquo;s configuration: number of hotels, number of cities and number of areas available, maximum number of roomcandidate, maximum number of paxes in a roomcandidate, release days, minimum stay, list of languages supported &amp;hellip;
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Legacy: Valuation</title>
+      <link>https://docs.travelgatex.com/legacy/hotel/methods/messages/valuation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/legacy/hotel/methods/messages/valuation/</guid>
+      <description>
+        
+        
+        Method Goals This method aims to return the total price and cancellation policies of the Option selected in the previous step (Avail).
+Request Format The Valuation request format is similar to that of availabilityRQ. It&amp;rsquo;s here you will add data to the option selected.
+Response Format The returned XML contains the total price and list of cancellation policies.
+Remarks Our system allows for a maximum of 180000 milliseconds before the connection is closed.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Legacy: SOAP Examples</title>
+      <link>https://docs.travelgatex.com/legacy/hotel/methods/messages/soap-examples/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/legacy/hotel/methods/messages/soap-examples/</guid>
+      <description>
+        
+        
+        Avail &amp;lt;soapenv:Envelope xmlns:soapenv = &amp;quot;http://schemas.xmlsoap.org/soap/envelope/&amp;quot; xmlns:ns = &amp;quot;http://schemas.xmltravelgate.com/hub/2012/06&amp;quot; xmlns:wsse = &amp;quot;http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd&amp;quot;&amp;gt; &amp;lt;soapenv:Header&amp;gt; &amp;lt;wsse:Security&amp;gt; &amp;lt;wsse:UsernameToken&amp;gt; &amp;lt;wsse:Username&amp;gt;XXXXXX&amp;lt;/wsse:Username&amp;gt; &amp;lt;wsse:Password&amp;gt;XXXXXX&amp;lt;/wsse:Password&amp;gt; &amp;lt;/wsse:UsernameToken&amp;gt; &amp;lt;/wsse:Security&amp;gt; &amp;lt;/soapenv:Header&amp;gt; &amp;lt;soapenv:Body&amp;gt; &amp;lt;ns:Avail&amp;gt; &amp;lt;ns:availRQ&amp;gt; &amp;lt;ns:timeoutMilliseconds&amp;gt;18000&amp;lt;/ns:timeoutMilliseconds&amp;gt; &amp;lt;ns:version&amp;gt;1&amp;lt;/ns:version&amp;gt; &amp;lt;ns:providerRQs&amp;gt; &amp;lt;ns:ProviderRQ&amp;gt; &amp;lt;ns:code&amp;gt;XXX&amp;lt;/ns:code&amp;gt; &amp;lt;ns:id&amp;gt;1&amp;lt;/ns:id&amp;gt; &amp;lt;ns:rqXML&amp;gt; &amp;lt;AvailRQ&amp;gt; &amp;lt;timeoutMilliseconds&amp;gt;99999&amp;lt;/timeoutMilliseconds&amp;gt; &amp;lt;source&amp;gt; &amp;lt;languageCode&amp;gt;en&amp;lt;/languageCode&amp;gt; &amp;lt;/source&amp;gt; &amp;lt;filterAuditData&amp;gt; &amp;lt;registerTransactions&amp;gt;false&amp;lt;/registerTransactions&amp;gt; &amp;lt;/filterAuditData&amp;gt; &amp;lt;Configuration&amp;gt; &amp;lt;User&amp;gt;&amp;lt;/User&amp;gt; &amp;lt;Password&amp;gt;&amp;lt;/Password&amp;gt; &amp;lt;UrlAvail&amp;gt;http://www.test.net/test_XML_V10.php?&amp;lt;/UrlAvail&amp;gt; &amp;lt;UrlReservation&amp;gt;http://www.test.net/scr/reservation_xml.php&amp;lt;/UrlReservation&amp;gt; &amp;lt;Parameters&amp;gt; &amp;lt;Parameter key = &amp;quot;UrlListHoteles&amp;quot; value = &amp;quot;http://www.test.net/scr/searchxml/location.php?&amp;quot;&amp;gt;&amp;lt;/Parameter&amp;gt; &amp;lt;Parameter key = &amp;quot;UrlConsulta&amp;quot; value = &amp;quot;https://www.test.net/scr/xml/travelgate.php?&amp;quot;&amp;gt;&amp;lt;/Parameter&amp;gt; &amp;lt;Parameter key = &amp;quot;office&amp;quot; value = &amp;quot;55555&amp;quot;&amp;gt;&amp;lt;/Parameter&amp;gt; &amp;lt;Parameter key = &amp;quot;password&amp;quot; value = &amp;quot;XXXXXX&amp;quot;&amp;gt;&amp;lt;/Parameter&amp;gt; &amp;lt;/Parameters&amp;gt; &amp;lt;/Configuration&amp;gt; &amp;lt;AvailDestinations&amp;gt; &amp;lt;Destination type = &amp;quot;CTY&amp;quot; code = &amp;quot;XXX&amp;quot;/&amp;gt; &amp;lt;/AvailDestinations&amp;gt; &amp;lt;StartDate&amp;gt;08/08/2012&amp;lt;/StartDate&amp;gt; &amp;lt;EndDate&amp;gt;12/12/2012&amp;lt;/EndDate&amp;gt; &amp;lt;Currency&amp;gt;EUR&amp;lt;/Currency&amp;gt; &amp;lt;RoomCandidates&amp;gt; &amp;lt;RoomCandidate id = &amp;quot;1&amp;quot;&amp;gt; &amp;lt;Paxes&amp;gt; &amp;lt;Pax age = &amp;quot;30&amp;quot; id = &amp;quot;1&amp;quot;/&amp;gt; &amp;lt;Pax age = &amp;quot;30&amp;quot; id = &amp;quot;2&amp;quot;/&amp;gt; &amp;lt;/Paxes&amp;gt; &amp;lt;/RoomCandidate&amp;gt; &amp;lt;/RoomCandidates&amp;gt; &amp;lt;/AvailRQ&amp;gt; &amp;lt;/ns:rqXML&amp;gt; &amp;lt;/ns:ProviderRQ&amp;gt; &amp;lt;/ns:providerRQs&amp;gt; &amp;lt;/ns:availRQ&amp;gt; &amp;lt;/ns:Avail&amp;gt; &amp;lt;/soapenv:Body&amp;gt; &amp;lt;/soapenv:Envelope&amp;gt;  Multi Avail &amp;lt;soapenv:Envelope xmlns:soapenv = &amp;quot;http://schemas.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

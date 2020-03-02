@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>TravelgateX Documentation – Scalars</title>
+    <link>https://docs.travelgatex.com/logging/reference/scalars/</link>
+    <description>Recent changes in Scalars on TravelgateX Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <image>
+      <url>https://docs.travelgatex.com/img/hugo.png</url>
+      <title>GoHugo.io</title>
+      <link>https://docs.travelgatex.com/logging/reference/scalars/</link>
+    </image>
+    
+	    <atom:link href="https://docs.travelgatex.com/logging/reference/scalars/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Logging: Boolean</title>
+      <link>https://docs.travelgatex.com/logging/reference/scalars/boolean/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/logging/reference/scalars/boolean/</guid>
+      <description>
+        
+        
+         The Boolean scalar type represents true or false.
+GraphQL schema definition scalar BooleanRequired by PageInfo: OperationDetailed: Stats information per operationAccessData: SupplierData: Provider: Temporary type to use only during SQL server&amp;#39;s lifetimeOrganizationData: GroupCommonData: MemberData: RoleData: ResourceData: APIData: GroupData: ClientData:  
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Logging: DateTime</title>
+      <link>https://docs.travelgatex.com/logging/reference/scalars/datetime/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/logging/reference/scalars/datetime/</guid>
+      <description>
+        
+        
+        The DateTime type represents DateTime values. A good example might be a transaction TimeSpan. In queries or mutations, DateTime fields have to be specified in ISO 8601 format with enclosing double quotes: &amp;ldquo;2017-10-22T13:57:31.123Z&amp;rdquo;.
+GraphQL schema definition scalar DateTimeRequired by StatsFilterInput: Filters needed to do a search. Users (List of users), Suppliers (List of suppliers), ServiceApis (List of service apis), From (Start date of search - YYYY-MM-DD HH:mm:ss), To (End date of search - YYYY-MM-DD HH:mm:ss)Stats: The service used to access the stats of every connection that uses the HUBStatsData: Node: Access: An Access is a set of credentials and configuration in order to access the system of a Supplier.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Logging: DomainName</title>
+      <link>https://docs.travelgatex.com/logging/reference/scalars/domainname/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/logging/reference/scalars/domainname/</guid>
+      <description>
+        
+        
+         Scalar for type Domain
+GraphQL schema definition scalar DomainNameRequired by DomainData:  
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Logging: ID</title>
+      <link>https://docs.travelgatex.com/logging/reference/scalars/id/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/logging/reference/scalars/id/</guid>
+      <description>
+        
+        
+        The ID scalar type represents a unique identifier, often used to refetch an object or as key for a cache. The ID type appears in a JSON response as a String; however, it is not intended to be human-readable. When expected as an input type, any string (such as &amp;quot;4&amp;quot;) or integer (such as 4) input value will be accepted as an ID.
+GraphQL schema definition scalar IDRequired by Stats: The service used to access the stats of every connection that uses the HUBAdviseMessage: List of advise messages.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Logging: Int</title>
+      <link>https://docs.travelgatex.com/logging/reference/scalars/int/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/logging/reference/scalars/int/</guid>
+      <description>
+        
+        
+         The Int scalar type represents non-fractional signed whole numeric values. Int can represent values between -(2^31) and 2^31 - 1.
+GraphQL schema definition scalar IntRequired by Ratios: Ratios detailsOperationDetailed: Stats information per operationSupplierData: GroupData: StatsInfo: Details of an specific errorStatsAsset: Asset of an specific error 
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Logging: String</title>
+      <link>https://docs.travelgatex.com/logging/reference/scalars/string/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/logging/reference/scalars/string/</guid>
+      <description>
+        
+        
+         The String scalar type represents textual data, represented as UTF-8 character sequences. The String type is most often used by GraphQL to represent free-form human-readable text.
+GraphQL schema definition scalar StringRequired by StatsEdge: PageInfo: AdviseMessage: List of advise messages.AccessData: Error: Application errorsParameter: Parameters for additional information for the supplier&amp;#39;s configuration.SupplierData: Provider: Temporary type to use only during SQL server&amp;#39;s lifetimeAccessEdge: OrganizationData: GroupCommonData: MemberData: RoleEdge: RoleData: ResourceEdge: ResourceData: MemberEdge: APIEdge: APIData: OperationEdge: OperationData: ProductEdge: ProductData: SupplierEdge: ClientEdge: GroupEdge: GroupData: ManagedGroupEdge: ExternalMessage:  
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Logging: URI</title>
+      <link>https://docs.travelgatex.com/logging/reference/scalars/uri/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/logging/reference/scalars/uri/</guid>
+      <description>
+        
+        
+         The URI type represents a URI values. A good example mith be an Hotel Image URL. In queries or mutations, URI fields have to be specified in RFC 3986, RFC 3987, and RFC 6570 (level 4) compliant URI string format with enclosing double quotes: &amp;ldquo;http:\www.travelgatex.com&amp;rdquo;.
+GraphQL schema definition scalar URIRequired by Urls: Url&amp;#39;sStatsAsset: Asset of an specific error 
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

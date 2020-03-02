@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>TravelgateX Documentation – Enums</title>
+    <link>https://docs.travelgatex.com/alerts-x/reference/enums/</link>
+    <description>Recent changes in Enums on TravelgateX Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <image>
+      <url>https://docs.travelgatex.com/img/hugo.png</url>
+      <title>GoHugo.io</title>
+      <link>https://docs.travelgatex.com/alerts-x/reference/enums/</link>
+    </image>
+    
+	    <atom:link href="https://docs.travelgatex.com/alerts-x/reference/enums/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Alerts-X: AdviseMessageLevel</title>
+      <link>https://docs.travelgatex.com/alerts-x/reference/enums/advisemessagelevel/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/alerts-x/reference/enums/advisemessagelevel/</guid>
+      <description>
+        
+        
+         GraphQL schema definition enumAdviseMessageLevel{WARN,ERROR,INFO,}  Required by AdviseMessage:  
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Alerts-X: AlertGroups</title>
+      <link>https://docs.travelgatex.com/alerts-x/reference/enums/alertgroups/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/alerts-x/reference/enums/alertgroups/</guid>
+      <description>
+        
+        
+         GraphQL schema definition enumAlertGroups{ACCESS,CLIENT,SUPPLIER,OPERATION,HUB_STATUS,ERROR_CODE,ERROR_TYPE,GROUP_ORG_SELLER,GROUP_ORG_BUYER,GROUP_FOLDER_SELLER,GROUP_FOLDER_BUYER,GROUP_PRODUCT_SELLER,GROUP_PRODUCT_BUYER,}  
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Alerts-X: AlertGroupsInsights</title>
+      <link>https://docs.travelgatex.com/alerts-x/reference/enums/alertgroupsinsights/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/alerts-x/reference/enums/alertgroupsinsights/</guid>
+      <description>
+        
+        
+         GraphQL schema definition enumAlertGroupsInsights{ACCESS,CLIENT,SUPPLIER,OPERATION,GROUP_ORG_SELLER,GROUP_ORG_BUYER,GROUP_FOLDER_SELLER,GROUP_FOLDER_BUYER,GROUP_PRODUCT_SELLER,GROUP_PRODUCT_BUYER,}  
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Alerts-X: AlertType</title>
+      <link>https://docs.travelgatex.com/alerts-x/reference/enums/alerttype/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/alerts-x/reference/enums/alerttype/</guid>
+      <description>
+        
+        
+         GraphQL schema definition enumAlertType{ERROR_RATE,AVERAGE_TIME,NO_TRAFFIC,PEAK_TRAFFIC,PRICE,}  Required by AlertConfiguration:  
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Alerts-X: CheckPrice</title>
+      <link>https://docs.travelgatex.com/alerts-x/reference/enums/checkprice/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/alerts-x/reference/enums/checkprice/</guid>
+      <description>
+        
+        
+         GraphQL schema definition enumCheckPrice{AMOUNT,COMMISSION,ALL,}  Required by AlertPrice: Price contains the specific configuration for Price alert TypeAlertPriceInput: Price inputAlertPriceUpdateInput: Price update 
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Alerts-X: ComercialType</title>
+      <link>https://docs.travelgatex.com/alerts-x/reference/enums/comercialtype/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/alerts-x/reference/enums/comercialtype/</guid>
+      <description>
+        
+        
+         GraphQL schema definition enumComercialType{SELLER,BUYER,}  Required by AlertConfiguration: AlertGroupInput:  
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Alerts-X: EmailType</title>
+      <link>https://docs.travelgatex.com/alerts-x/reference/enums/emailtype/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/alerts-x/reference/enums/emailtype/</guid>
+      <description>
+        
+        
+         GraphQL schema definition enumEmailType{BCC,TO,}  Required by EmailInput:  
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Alerts-X: ErrorType</title>
+      <link>https://docs.travelgatex.com/alerts-x/reference/enums/errortype/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/alerts-x/reference/enums/errortype/</guid>
+      <description>
+        
+        
+         GraphQL schema definition enumErrorType{OK,PROVIDER,TIMEOUT,INTEGRATION,}  Required by ErrorTypeInput:  
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Alerts-X: EventType</title>
+      <link>https://docs.travelgatex.com/alerts-x/reference/enums/eventtype/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/alerts-x/reference/enums/eventtype/</guid>
+      <description>
+        
+        
+         GraphQL schema definition enumEventType{OK,ALERTING,}  Required by EventData: Event data 
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Alerts-X: GroupType</title>
+      <link>https://docs.travelgatex.com/alerts-x/reference/enums/grouptype/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/alerts-x/reference/enums/grouptype/</guid>
+      <description>
+        
+        
+         GraphQL schema definition enumGroupType{ROOT,ORG,GROUP,PROFILE,TEAM,FOLDER,PRODUCT,RESOURCE,SPECIFIC_RESOURCE,}  Required by GroupData: GroupCommonData: OrganizationData:  
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Alerts-X: HubStatus</title>
+      <link>https://docs.travelgatex.com/alerts-x/reference/enums/hubstatus/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/alerts-x/reference/enums/hubstatus/</guid>
+      <description>
+        
+        
+         GraphQL schema definition enumHubStatus{OK,EXCEPTION,TIMEOUT,UNDEFINED,}  Required by HubStatusInput:  
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Alerts-X: MemberType</title>
+      <link>https://docs.travelgatex.com/alerts-x/reference/enums/membertype/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/alerts-x/reference/enums/membertype/</guid>
+      <description>
+        
+        
+         GraphQL schema definition enumMemberType{USER,SERVICE_ACCOUNT,}  Required by MemberData:  
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Alerts-X: ModePrice</title>
+      <link>https://docs.travelgatex.com/alerts-x/reference/enums/modeprice/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/alerts-x/reference/enums/modeprice/</guid>
+      <description>
+        
+        
+         GraphQL schema definition enumModePrice{UNIT,PERCENTAGE,}  Required by AlertPrice: Price contains the specific configuration for Price alert TypeAlertPriceInput: Price inputAlertPriceUpdateInput: Price update 
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Alerts-X: OperationType</title>
+      <link>https://docs.travelgatex.com/alerts-x/reference/enums/operationtype/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/alerts-x/reference/enums/operationtype/</guid>
+      <description>
+        
+        
+         GraphQL schema definition enumOperationType{SEARCH,QUOTE,BOOKING,CANCEL,SCHEDULER,CREATE,READ,UPDATE,DELETE,EXECUTE,OTHER,}  
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Alerts-X: ProfileType</title>
+      <link>https://docs.travelgatex.com/alerts-x/reference/enums/profiletype/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/alerts-x/reference/enums/profiletype/</guid>
+      <description>
+        
+        
+         GraphQL schema definition enumProfileType{BUYER,SELLER,}  
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Alerts-X: RangePrice</title>
+      <link>https://docs.travelgatex.com/alerts-x/reference/enums/rangeprice/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/alerts-x/reference/enums/rangeprice/</guid>
+      <description>
+        
+        
+         GraphQL schema definition enumRangePrice{LESS,GREATER,}  Required by AlertPrice: Price contains the specific configuration for Price alert TypeAlertPriceInput: Price inputAlertPriceUpdateInput: Price update 
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Alerts-X: RateRulesType</title>
+      <link>https://docs.travelgatex.com/alerts-x/reference/enums/raterulestype/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/alerts-x/reference/enums/raterulestype/</guid>
+      <description>
+        
+        
+         GraphQL schema definition enumRateRulesType{PACKAGE,OLDER55,OLDER60,OLDER65,CANARY_RESIDENT,BALEARIC_RESIDENT,LARGE_FAMILY,HONEYMOON,PUBLIC_SERVANT,UNEMPLOYED,NORMAL,NON_REFUNDABLE,}  
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Alerts-X: RoleType</title>
+      <link>https://docs.travelgatex.com/alerts-x/reference/enums/roletype/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/alerts-x/reference/enums/roletype/</guid>
+      <description>
+        
+        
+         GraphQL schema definition enumRoleType{VIEWER,EDITOR,ADMIN,EXECUTOR,SPECIFIC,}  Required by RoleData:  
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Alerts-X: SharedType</title>
+      <link>https://docs.travelgatex.com/alerts-x/reference/enums/sharedtype/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/alerts-x/reference/enums/sharedtype/</guid>
+      <description>
+        
+        
+         GraphQL schema definition enumSharedType{TGX,GROUP,}  
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

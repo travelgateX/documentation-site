@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>TravelgateX Documentation – EFT - Esferatur Changelog</title>
+    <link>https://docs.travelgatex.com/integrations/flights/eft/changelog/</link>
+    <description>Recent changes in EFT - Esferatur Changelog on TravelgateX Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 27 Nov 2019 00:00:00 +0100</lastBuildDate>
+    <image>
+      <url>https://docs.travelgatex.com/img/hugo.png</url>
+      <title>GoHugo.io</title>
+      <link>https://docs.travelgatex.com/integrations/flights/eft/changelog/</link>
+    </image>
+    
+	    <atom:link href="https://docs.travelgatex.com/integrations/flights/eft/changelog/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Integrations: 2019-11-27</title>
+      <link>https://docs.travelgatex.com/integrations/flights/eft/changelog/2019-11-27/</link>
+      <pubDate>Wed, 27 Nov 2019 00:00:00 +0100</pubDate>
+      
+      <guid>https://docs.travelgatex.com/integrations/flights/eft/changelog/2019-11-27/</guid>
+      <description>
+        
+        
+         2019-11-27  The possibility of booking Open Jaw fares    tasasDU includes   
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

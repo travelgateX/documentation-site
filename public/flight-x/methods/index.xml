@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>TravelgateX Documentation – Methods</title>
+    <link>https://docs.travelgatex.com/flight-x/methods/</link>
+    <description>Recent changes in Methods on TravelgateX Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <image>
+      <url>https://docs.travelgatex.com/img/hugo.png</url>
+      <title>GoHugo.io</title>
+      <link>https://docs.travelgatex.com/flight-x/methods/</link>
+    </image>
+    
+	    <atom:link href="https://docs.travelgatex.com/flight-x/methods/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Flight-X: AirShopping</title>
+      <link>https://docs.travelgatex.com/flight-x/methods/airshopping/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/flight-x/methods/airshopping/</guid>
+      <description>
+        
+        
+        On this page you will learn more about the Flight-X&amp;rsquo;s AirShopping method
+Method Goals This method aims to return all the available flight offers matching the given request criteria.
+Request Format This method receives a IATA_AishoppingRQ object with a JSON format as request with a list of OriginDestCriteria, every element of this list must have a destination and an origin IATA airport codes and a departure date. Also you have to send a list of passengers with their type.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Flight-X: OrderCreate</title>
+      <link>https://docs.travelgatex.com/flight-x/methods/ordercreate/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/flight-x/methods/ordercreate/</guid>
+      <description>
+        
+        
+        On this page you will learn more about the Flight-X&amp;rsquo;s OrderCreate method
+Method Goals This method aims to purchase an Offer obtained in the Airshopping method response.
+Request Format This method receives a IATA_OrderCreateRQ object with a JSON format as request with one SelectedOffer. We only allow to book one offer at the same time. You have to sent a SelectedOffer with its reference to the shoping response (ShoppingResponseRefID) and all the references to its OfferItems.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

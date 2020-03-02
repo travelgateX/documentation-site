@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>TravelgateX Documentation – Datasets</title>
+    <link>https://docs.travelgatex.com/insights-x/datasets/</link>
+    <description>Recent changes in Datasets on TravelgateX Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <image>
+      <url>https://docs.travelgatex.com/img/hugo.png</url>
+      <title>GoHugo.io</title>
+      <link>https://docs.travelgatex.com/insights-x/datasets/</link>
+    </image>
+    
+	    <atom:link href="https://docs.travelgatex.com/insights-x/datasets/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Insights-X: Types of Datasets</title>
+      <link>https://docs.travelgatex.com/insights-x/datasets/types-of-datasets/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/insights-x/datasets/types-of-datasets/</guid>
+      <description>
+        
+        
+        This page describes how Insights-X shares different Datasets with customers.
+As a customer, you can access Insights-X data via BigQuery Dataset or as Exported Table Data to Cloud Storage
+BigQuery BigQuery is a “big data” SQL store invented by Google. Many massive Datasets, like all the code in GitHub and the complete history of the Bitcoin blockchain, are made available to the public through the Google BigQuery Datasets initiative.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Insights-X: Tooling</title>
+      <link>https://docs.travelgatex.com/insights-x/datasets/dataset-tooling/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/insights-x/datasets/dataset-tooling/</guid>
+      <description>
+        
+        
+        On this page you will learn more about TravelgateX free tools to Insights-X Datasets.
+Template reportings If you don&amp;rsquo;t have your own reporting tools as Tableau or PowerBI, the easiest way to interact with Insights-X datasets is via our free Google Data Studio Templates.
+   Dataset Version GDS Template     Partner seller 1.1 https://datastudio.google.com/s/nAuiuI9_l1M   Partner buyer 1.1 https://datastudio.google.com/open/1Yxjf0b5Krk47hA_O3IF8Kgd9lshe6lQY   Hotelier 1.0    Industry partner public 1.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

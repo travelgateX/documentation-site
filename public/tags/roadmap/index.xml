@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>TravelgateX Documentation – Roadmap</title>
+    <link>https://docs.travelgatex.com/tags/roadmap/</link>
+    <description>Recent changes in Roadmap on TravelgateX Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <image>
+      <url>https://docs.travelgatex.com/img/hugo.png</url>
+      <title>GoHugo.io</title>
+      <link>https://docs.travelgatex.com/tags/roadmap/</link>
+    </image>
+    
+	    <atom:link href="https://docs.travelgatex.com/tags/roadmap/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Flight-X: Roadmap</title>
+      <link>https://docs.travelgatex.com/flight-x/release-notes/roadmap/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/flight-x/release-notes/roadmap/</guid>
+      <description>
+        
+        
+         2019 Q4  NDC API
+ Availability/Shopping (AirShopping) Pricing/Quote (OfferPrice) Booking/Reservation (OrderCreate) Retrieve (OrderView) Ticketing/Issuance (AirDocIssue) Cancel (OrderCancel)  Backoffice + Web GUI
+ Customer Setup Access configuration Monitoring &amp;amp; Statistics Dashboard  CLI
+  2020 Q1  NDC API
+ Airline Profile (AirlineProfile) Preorder Ancillaries (AirShopping) Postorder Ancillaries (ServiceList, SeatAvailability, OrderRetrieve, OrderReshop, OrderChange)  Local Cache
+  
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Hotel-X: Roadmap</title>
+      <link>https://docs.travelgatex.com/hotel-x/release-notes/roadmap/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/hotel-x/release-notes/roadmap/</guid>
+      <description>
+        
+        
+        We have put together a GitHub Project where we will keep updating on the things we’ve in our plans.
+Here is the GitHub project with Public Roadmap of TravelgateX.
+The Project has a few columns that act as the status whereas cards are the items that we have in our plans. We have also labelled each issue so it would clarify if the item would be added in the HotelX, Documentation, etc&amp;hellip;
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Insights-X: Roadmap</title>
+      <link>https://docs.travelgatex.com/insights-x/release-notes/roadmap/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/insights-x/release-notes/roadmap/</guid>
+      <description>
+        
+        
+        We have created a GitHub Project where we will keep you updated with all the future modifications regarding this Project.
+Here you will find the GitHub project with the Public Roadmap of TravelgateX.
+The Project has a few columns that act as the status, whereas cards are the items that we have in our plans. We have also labelled each issue so it would clarify if the item would be added in the Insights-X, Documentation, etc&amp;hellip;
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Travelgatex: Roadmap</title>
+      <link>https://docs.travelgatex.com/travelgatex/release-notes/roadmap/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/travelgatex/release-notes/roadmap/</guid>
+      <description>
+        
+        
+        We have put together a GitHub Project where we will keep updating on the things we’ve in our plans.
+Here is the GitHub project with Public Roadmap of TravelgateX.
+The Project has a few columns that act as the status whereas cards are the items that we have in our plans. We have also labelled each issue so it would clarify if the item would be added in the HotelX, Documentation, etc&amp;hellip;
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

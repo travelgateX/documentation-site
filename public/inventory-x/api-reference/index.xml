@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>TravelgateX Documentation – API Reference</title>
+    <link>https://docs.travelgatex.com/inventory-x/api-reference/</link>
+    <description>Recent changes in API Reference on TravelgateX Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <image>
+      <url>https://docs.travelgatex.com/img/hugo.png</url>
+      <title>GoHugo.io</title>
+      <link>https://docs.travelgatex.com/inventory-x/api-reference/</link>
+    </image>
+    
+	    <atom:link href="https://docs.travelgatex.com/inventory-x/api-reference/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Inventory-X: Code List</title>
+      <link>https://docs.travelgatex.com/inventory-x/api-reference/codelist/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/inventory-x/api-reference/codelist/</guid>
+      <description>
+        
+        
+        List of Codes used in the Inventory-X API Error Codes    Error Code Error Description     -1 Validation error   1 POS credentials not found   2 HotelCode or RatePlanList not found   3 Rates not found   4 Incomplete Rate values   6 Incomplete AvailStatusMessage StatusApplicationControl Values   7 Incomplete AdditionalGuestAmount values   8 SellableProduct not found   9 Room not found in SellableProduct    Meal Plan Codes (OTA MPT)    Code Description     1 All inclusive   2 American   3 Bed &amp;amp; breakfast   4 Buffet breakfast   5 Caribbean breakfast   6 Continental breakfast   7 English breakfast   8 European plan   9 Family plan   10 Full board   11 Full breakfast   12 Half board/modified American plan   13 As brochured   14 Room only   15 Self catering   16 Bermuda   17 Dinner bed and breakfast plan   18 Family American   19 Breakfast   20 Modified   255 Full board And Drinks   256 Half board And Drinks   257 All inclusive Premium   258 Gala Dinner    Payment Type Codes    Payment Type Code Description     MerchantPayment The customer pays the client and the client will pay the provider.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

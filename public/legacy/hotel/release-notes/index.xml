@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>TravelgateX Documentation – Release notes</title>
+    <link>https://docs.travelgatex.com/legacy/hotel/release-notes/</link>
+    <description>Recent changes in Release notes on TravelgateX Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <image>
+      <url>https://docs.travelgatex.com/img/hugo.png</url>
+      <title>GoHugo.io</title>
+      <link>https://docs.travelgatex.com/legacy/hotel/release-notes/</link>
+    </image>
+    
+	    <atom:link href="https://docs.travelgatex.com/legacy/hotel/release-notes/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Legacy: Change Log</title>
+      <link>https://docs.travelgatex.com/legacy/hotel/release-notes/change-log/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/legacy/hotel/release-notes/change-log/</guid>
+      <description>
+        
+        
+        Version 1.0.22: Date 30/09/2019
+ Addition of tag AllowsNationality in MetaData. Adding AllowsNationality tag to MetaData response to inform if the supplier allows to receive the Nationality of the Holder of the booking.   &amp;lt;Generic&amp;gt; &amp;lt;AllowsNationality reviewDate = &amp;quot;06/09/2019&amp;quot;&amp;gt;true&amp;lt;/AllowsNationality&amp;gt; &amp;lt;RequiredNationality reviewDate = &amp;quot;06/09/2019&amp;quot;&amp;gt;true&amp;lt;/RequiredNationality&amp;gt; &amp;lt;AllowsOnRequest reviewDate = &amp;quot;06/09/2019&amp;quot;&amp;gt;false&amp;lt;/AllowsOnRequest&amp;gt; &amp;lt;/Generic&amp;gt;   Addition of Holder element in Reservation, ReservationRead and Cancellation requests. Adding Holder element tag to Reservation, ReservationRead and Cancellation requests.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

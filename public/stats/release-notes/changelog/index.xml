@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>TravelgateX Documentation – Stats changelog</title>
+    <link>https://docs.travelgatex.com/stats/release-notes/changelog/</link>
+    <description>Recent changes in Stats changelog on TravelgateX Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 19 Sep 2019 00:00:00 +0200</lastBuildDate>
+    <image>
+      <url>https://docs.travelgatex.com/img/hugo.png</url>
+      <title>GoHugo.io</title>
+      <link>https://docs.travelgatex.com/stats/release-notes/changelog/</link>
+    </image>
+    
+	    <atom:link href="https://docs.travelgatex.com/stats/release-notes/changelog/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Stats: 2019-09-19</title>
+      <link>https://docs.travelgatex.com/stats/release-notes/changelog/2019-09-19/</link>
+      <pubDate>Thu, 19 Sep 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://docs.travelgatex.com/stats/release-notes/changelog/2019-09-19/</guid>
+      <description>
+        
+        
+         2019-09-19  Updated changelog   
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Stats: Older</title>
+      <link>https://docs.travelgatex.com/stats/release-notes/changelog/older/</link>
+      <pubDate>Thu, 19 Sep 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://docs.travelgatex.com/stats/release-notes/changelog/older/</guid>
+      <description>
+        
+        
+        2019-08-02  Added a hard limit when an API&amp;rsquo;s response lasts more than 60 seconds. When application hard limit is surpassed, microservice will response with a graceful response (http_status code = 403).   2019-07-22  Added new input object timeRange that improves the time filters providing both a relative time filter and an absolute time filter.   2019-06-12  Fix an error that was causing to have empty operations in the response.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

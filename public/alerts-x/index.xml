@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>TravelgateX Documentation – Alerts-X</title>
+    <link>https://docs.travelgatex.com/alerts-x/</link>
+    <description>Recent changes in Alerts-X on TravelgateX Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <image>
+      <url>https://docs.travelgatex.com/img/hugo.png</url>
+      <title>GoHugo.io</title>
+      <link>https://docs.travelgatex.com/alerts-x/</link>
+    </image>
+    
+	    <atom:link href="https://docs.travelgatex.com/alerts-x/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Alerts-X: Overview</title>
+      <link>https://docs.travelgatex.com/alerts-x/overview/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/alerts-x/overview/</guid>
+      <description>
+        
+        
+        In order to analyze useful metrics about performance, Alerts-X extracts, loads and stores data from all TravelgateX products.
+Once the metrics are stored in our infrastructure, our service-alerts analyze your performance according to a configuration alert which can be created/updated or viewed using API alertsWorking with Alerts-X The most important use case working with Alerts is to query about your performance.
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

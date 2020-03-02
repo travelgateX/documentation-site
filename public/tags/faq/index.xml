@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>TravelgateX Documentation – Faq</title>
+    <link>https://docs.travelgatex.com/tags/faq/</link>
+    <description>Recent changes in Faq on TravelgateX Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <image>
+      <url>https://docs.travelgatex.com/img/hugo.png</url>
+      <title>GoHugo.io</title>
+      <link>https://docs.travelgatex.com/tags/faq/</link>
+    </image>
+    
+	    <atom:link href="https://docs.travelgatex.com/tags/faq/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Travelgatex: FAQs</title>
+      <link>https://docs.travelgatex.com/travelgatex/frequently-asked-questions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/travelgatex/frequently-asked-questions/</guid>
+      <description>
+        
+        
+        What is TravelgateX? TravelgateX platform provides a single API endpoint for all of our API products. This makes it easy for you to integrate our full travel catalog and services into your applications (regardless of whether you are integrating to a website, mobile app, widget, or other interface). Instead of having to deal with REST APIs, you&amp;rsquo;ll be able to use full poser of GraphQL to interact with your data.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

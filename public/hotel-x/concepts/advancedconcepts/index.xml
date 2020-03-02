@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>TravelgateX Documentation – Advanced Concepts</title>
+    <link>https://docs.travelgatex.com/hotel-x/concepts/advancedconcepts/</link>
+    <description>Recent changes in Advanced Concepts on TravelgateX Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <image>
+      <url>https://docs.travelgatex.com/img/hugo.png</url>
+      <title>GoHugo.io</title>
+      <link>https://docs.travelgatex.com/hotel-x/concepts/advancedconcepts/</link>
+    </image>
+    
+	    <atom:link href="https://docs.travelgatex.com/hotel-x/concepts/advancedconcepts/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Hotel-X: Errors and Warnings</title>
+      <link>https://docs.travelgatex.com/hotel-x/concepts/advancedconcepts/errorwarning/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/hotel-x/concepts/advancedconcepts/errorwarning/</guid>
+      <description>
+        
+        
+        In this chapter we will list the errors and warnings of HotelX booking flow.
+Error list In the table below, we have structured a relation of all the Errors that can be returned in HotelX booking flow
+   Code Type Description Explanation     ACCESS_ERROR VALIDATION_ERROR No valid accesses found The access is not found or it has no permission, or you are using a test access and you need to add the testMode.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Hotel-X: Settings</title>
+      <link>https://docs.travelgatex.com/hotel-x/concepts/advancedconcepts/settings/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/hotel-x/concepts/advancedconcepts/settings/</guid>
+      <description>
+        
+        
+        On this page you will learn more about settings in HotelX.
+What are settings? Settings are the common configuration that will be used in order to build the request to the supplier/s.
+There are two kind of settings, overridable and partially overridable. You can find the partially overridable settings in the first level of settings and are known as HotelX_Settings. These settings are formed by some non-overridable settings such as &amp;ldquo;group&amp;rdquo; and &amp;ldquo;testMode&amp;rdquo;, some overridable global settings such as &amp;ldquo;timeout&amp;rdquo;, &amp;ldquo;auditTransactions&amp;rdquo;, etc.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

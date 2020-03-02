@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>TravelgateX Documentation – Integrations Changelog</title>
+    <link>https://docs.travelgatex.com/community/integrations-changelog/</link>
+    <description>Recent changes in Integrations Changelog on TravelgateX Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <image>
+      <url>https://docs.travelgatex.com/img/hugo.png</url>
+      <title>GoHugo.io</title>
+      <link>https://docs.travelgatex.com/community/integrations-changelog/</link>
+    </image>
+    
+	    <atom:link href="https://docs.travelgatex.com/community/integrations-changelog/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Community: Public changelog example</title>
+      <link>https://docs.travelgatex.com/community/integrations-changelog/public-changelog/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/community/integrations-changelog/public-changelog/</guid>
+      <description>
+        
+        
+        Public changelog On the documentation an Integrations section will be maintained with the respectives changelogs as can be seen here, all integrations will have his own changelog, integrations will be grouped by lines (hotel, flights, payment).
+Changelogs will have a folder per day containing the releases done on that date. Inside an unique index.md will contain all the changes made.
+Thus on the public documentation site we&amp;rsquo;ll have (example for guestincomming at hotel line):
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Community: Integration changelog example</title>
+      <link>https://docs.travelgatex.com/community/integrations-changelog/integration-changelog/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/community/integrations-changelog/integration-changelog/</guid>
+      <description>
+        
+        
+        Integration changelog Each integration needs a changelog to inform about releases, roll backs and so.
+This changelog won&amp;rsquo;t be at the documentation page, and will be kept with the source code repository on a single file called &amp;ldquo;CHANGELOG.md&amp;rdquo;.
+This file will be copied on the documentation changelog by generating a folder per date with a single file called &amp;ldquo;index.md&amp;rdquo;.
+Thus on the public documentation site we&amp;rsquo;ll have:
+ &amp;hellip;\changelog\2000-01-31\index.md &amp;hellip;\changelog\2000-02-01\index.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>TravelgateX Documentation – Suppliers development</title>
+    <link>https://docs.travelgatex.com/legacy/hotel/how-to-guides/suppliers/</link>
+    <description>Recent changes in Suppliers development on TravelgateX Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <image>
+      <url>https://docs.travelgatex.com/img/hugo.png</url>
+      <title>GoHugo.io</title>
+      <link>https://docs.travelgatex.com/legacy/hotel/how-to-guides/suppliers/</link>
+    </image>
+    
+	    <atom:link href="https://docs.travelgatex.com/legacy/hotel/how-to-guides/suppliers/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Legacy: Overview</title>
+      <link>https://docs.travelgatex.com/legacy/hotel/how-to-guides/suppliers/overview/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/legacy/hotel/how-to-guides/suppliers/overview/</guid>
+      <description>
+        
+        
+        TravelgateX works like a switch connecting buyers to sellers and transforing the requests from TravelgateX&amp;rsquo;s API to the sullers API. But, when the seller is who integrates into TravelgateX&amp;rsquo;s API they will receive the same request the buyer sends, without any transformation. In other words, the seller will receive the same request the buyer sends.
+The seller has to be able to receive requests for TravelgateX&amp;rsquo;s API methods. In every request there is a configuration element with the credential information.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Legacy: Configuration</title>
+      <link>https://docs.travelgatex.com/legacy/hotel/how-to-guides/suppliers/configuration/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/legacy/hotel/how-to-guides/suppliers/configuration/</guid>
+      <description>
+        
+        
+        A Configuration element with the credentials, endpoints and extra needed parameters by the supplier will be received in the request from the buyer and will be sent to the supplier. In this configuration TravelgateX will receive the endpoints needed to send the request to the supplier (you can see the correlation between methods and enpoints used in the connectivity page).
+&amp;lt;Configuration&amp;gt; &amp;lt;User&amp;gt;&amp;lt;/User&amp;gt; &amp;lt;Password&amp;gt;&amp;lt;/Password&amp;gt; &amp;lt;UrlGeneric&amp;gt;&amp;lt;/UrlGeneric&amp;gt; &amp;lt;UrlAvail&amp;gt;&amp;lt;/UrlAvail&amp;gt; &amp;lt;UrlValuation&amp;gt;&amp;lt;/UrlValuation&amp;gt; &amp;lt;UrlReservation&amp;gt;&amp;lt;/UrlReservation&amp;gt; &amp;lt;Parameters&amp;gt; &amp;lt;Parameter key = &amp;quot;&amp;quot; value = &amp;quot;&amp;quot;/&amp;gt; &amp;lt;/Parameters&amp;gt; &amp;lt;/Configuration&amp;gt;  Configuration Description    Element Number Type Description     Configuration 1  The info required to access the supplier&amp;rsquo;s system.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Legacy: Connectivity</title>
+      <link>https://docs.travelgatex.com/legacy/hotel/how-to-guides/suppliers/connectivity/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/legacy/hotel/how-to-guides/suppliers/connectivity/</guid>
+      <description>
+        
+        
+        For connectivities we will use a POST request to the suppliers system.
+The headers we will use to send the POST request are:
+   Key Value     Content-Type text/xml; charset=utf-8   Accept application/xml   Accept-Encoding gzip   Connection Keep-Alive    The different methods from our API can be sent to 1 unique endpoint or to different enpoints. These endpoints will be set in the configuration TravelgateX receives from the buyer in each request.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Legacy: Errors</title>
+      <link>https://docs.travelgatex.com/legacy/hotel/how-to-guides/suppliers/errors/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/legacy/hotel/how-to-guides/suppliers/errors/</guid>
+      <description>
+        
+        
+        TravelgateX&amp;rsquo;s API implements an element to display errors in every method response.
+&amp;lt;applicationErrors&amp;gt; &amp;lt;type&amp;gt;&amp;lt;/type&amp;gt; &amp;lt;code&amp;gt;&amp;lt;/code&amp;gt; &amp;lt;description&amp;gt;&amp;lt;/description&amp;gt; &amp;lt;/applicationErrors&amp;gt;  Application errors Description    Element Number Type Description     applicationErrors 0..n  Application errors reported by supplier.   applicationErrors/type 1 String Error Type as specified by XML Travelgate.   applicationErrors/code 1 String Native error code reported by supplier.   applicationErrors/description 1 String Error description.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>TravelgateX Documentation – Schema</title>
+    <link>https://docs.travelgatex.com/paymentx/reference/schema/</link>
+    <description>Recent changes in Schema on TravelgateX Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <image>
+      <url>https://docs.travelgatex.com/img/hugo.png</url>
+      <title>GoHugo.io</title>
+      <link>https://docs.travelgatex.com/paymentx/reference/schema/</link>
+    </image>
+    
+	    <atom:link href="https://docs.travelgatex.com/paymentx/reference/schema/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Paymentx: PaymentXQuery</title>
+      <link>https://docs.travelgatex.com/paymentx/reference/schema/query/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/paymentx/reference/schema/query/</guid>
+      <description>
+        
+        
+         GraphQL schema definition type PaymentXQuery {vaultStatusService: AdviseMessage! allStoredCards(filter: PaymentXStoredCardFilterInput!,instanceCode: String!,): PaymentXStoredCardConnection! storedCard(criteria: PaymentXStoredCardIDInput!,): PaymentXStoredCard! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields vaultStatusService(AdviseMessage!):allStoredCards(PaymentXStoredCardConnection!):storedCard(PaymentXStoredCard!): 
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Paymentx: PaymentXMutation</title>
+      <link>https://docs.travelgatex.com/paymentx/reference/schema/mutation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/paymentx/reference/schema/mutation/</guid>
+      <description>
+        
+        
+         GraphQL schema definition type PaymentXMutation {storeCard(input: PaymentXStoredCardInput!,): PaymentXStoredCard! deleteStoredCard(criteria: PaymentXStoredCardIDInput!,): PaymentXStoredCard! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields storeCard(PaymentXStoredCard!):deleteStoredCard(PaymentXStoredCard!): 
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

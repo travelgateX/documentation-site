@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>TravelgateX Documentation – How-to guides</title>
+    <link>https://docs.travelgatex.com/logging/howtos/</link>
+    <description>Recent changes in How-to guides on TravelgateX Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <image>
+      <url>https://docs.travelgatex.com/img/hugo.png</url>
+      <title>GoHugo.io</title>
+      <link>https://docs.travelgatex.com/logging/howtos/</link>
+    </image>
+    
+	    <atom:link href="https://docs.travelgatex.com/logging/howtos/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Logging: Query Logging</title>
+      <link>https://docs.travelgatex.com/logging/howtos/howto-query-logging/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/logging/howtos/howto-query-logging/</guid>
+      <description>
+        
+        
+        This page shows you how to query Logging using API or TravelgateX Web.
+How to request You can query about your performance as a buyer or as a seller.
+Below are shown different examples for different casuistry:
+122d8186fb0ed7d5d886b00b3081cecb Testing /122d8186fb0ed7d5d886b00b3081cecb
+ #tab-holder {transform: scale(0);position: absolute;}#tab-holder.show-tabs {transform: scale(1);position: initial;}ul.tab-pannel-nav {margin-bottom: -32px;}ul.tabs {border-bottom: 1px solid #dee2e6;}li.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

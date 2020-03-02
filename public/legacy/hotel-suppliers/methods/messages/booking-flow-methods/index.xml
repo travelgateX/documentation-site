@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>TravelgateX Documentation – Booking Flow Methods</title>
+    <link>https://docs.travelgatex.com/legacy/hotel-suppliers/methods/messages/booking-flow-methods/</link>
+    <description>Recent changes in Booking Flow Methods on TravelgateX Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <image>
+      <url>https://docs.travelgatex.com/img/hugo.png</url>
+      <title>GoHugo.io</title>
+      <link>https://docs.travelgatex.com/legacy/hotel-suppliers/methods/messages/booking-flow-methods/</link>
+    </image>
+    
+	    <atom:link href="https://docs.travelgatex.com/legacy/hotel-suppliers/methods/messages/booking-flow-methods/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Legacy: Avail</title>
+      <link>https://docs.travelgatex.com/legacy/hotel-suppliers/methods/messages/booking-flow-methods/avail/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/legacy/hotel-suppliers/methods/messages/booking-flow-methods/avail/</guid>
+      <description>
+        
+        
+        Method Goals This method aims to return all the available options for a given date and itinerary. It does not filter different classes, times or fares. It will always retrieve all results returned by the supplier.
+Request Format The availability request is very straight forward. It only requires destination, travel dates and the number of pax in each room.
+Response Format Results are organized in this hierarchy=
+ Hotel :  A list with all the hotels, including hotel name and code, mealplans list, etc.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Legacy: Valuation</title>
+      <link>https://docs.travelgatex.com/legacy/hotel-suppliers/methods/messages/booking-flow-methods/valuation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/legacy/hotel-suppliers/methods/messages/booking-flow-methods/valuation/</guid>
+      <description>
+        
+        
+        Method Goals This method aims to return the total price and cancellation policies of the Option selected in the previous step (Avail).
+Request Format The Valuation request format is similar to that of availabilityRQ. It&amp;rsquo;s here you will add data to the option selected.
+Response Format The returned XML contains the total price and list of cancellation policies.
+Remarks Our system allows for a maximum of 180000 milliseconds before the connection is closed.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Legacy: Reservation</title>
+      <link>https://docs.travelgatex.com/legacy/hotel-suppliers/methods/messages/booking-flow-methods/reservation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/legacy/hotel-suppliers/methods/messages/booking-flow-methods/reservation/</guid>
+      <description>
+        
+        
+        Method Goals This method aims to book an option.
+Request Format The request format works the same way as Valuation but with the list of passengers.
+Response Format The result returns the booking locator (booking code), which could be the supplier&amp;rsquo;s own code or the one sent in request.
+It also returns all the charges associated with the booking as well as its status.
+Remarks 180000 milliseconds is the maximum amount of time permitted in our system before the connection is closed.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Legacy: Cancel</title>
+      <link>https://docs.travelgatex.com/legacy/hotel-suppliers/methods/messages/booking-flow-methods/cancel/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/legacy/hotel-suppliers/methods/messages/booking-flow-methods/cancel/</guid>
+      <description>
+        
+        
+        Method Goals This method aims to cancel a booking
+Request Format The request requires one or more of the following data, depending on the supplier:
+ Locators: booking codes - this element contains two elements, Client (client&amp;rsquo;s booking code) and Provider (supplier&amp;rsquo;s booking code). One or both will be required depending on the supplier hotelCode: the hotel code StartDate: the check-in date EndDate: the check-out date  Response Format The result returns a response with the booking status, the cancellation&amp;rsquo;s ID and the fee for that cancellation.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Legacy: ReservationRead</title>
+      <link>https://docs.travelgatex.com/legacy/hotel-suppliers/methods/messages/booking-flow-methods/reservationread/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/legacy/hotel-suppliers/methods/messages/booking-flow-methods/reservationread/</guid>
+      <description>
+        
+        
+        Method Goals This method aims to retrieve detailed information about a specific Reservation
+Request Format The request requires one of the following data depending on supplier:
+ Locators: booking codes (this element contains two elements Client (client&amp;rsquo;s booking code) and Provider (supplier&amp;rsquo;s booking code), one or both will be required depending on the supplier) Currency: the currency code CreationDate: the booking date StardDate: the check-in date EndDate: the check-out date HotelCode: Hotel code  Response Format The result returns the full details of a booking.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Legacy: ReservationList</title>
+      <link>https://docs.travelgatex.com/legacy/hotel-suppliers/methods/messages/booking-flow-methods/reservationlist/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/legacy/hotel-suppliers/methods/messages/booking-flow-methods/reservationlist/</guid>
+      <description>
+        
+        
+        Method Goals This method aims to return a list of bookings for a given time period being that either booking date or the travelling date.
+Request Format The request requires one of the following data depending on provider:
+ DateType: indicates the date type: either booking creation date or booking start date Start: the date from End: the date to  Response Format The result returns a list of bookings details, with the same format as ReservationReadRS.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

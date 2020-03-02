@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>TravelgateX Documentation – Input objects</title>
+    <link>https://docs.travelgatex.com/stats/reference/inputobjects/</link>
+    <description>Recent changes in Input objects on TravelgateX Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <image>
+      <url>https://docs.travelgatex.com/img/hugo.png</url>
+      <title>GoHugo.io</title>
+      <link>https://docs.travelgatex.com/stats/reference/inputobjects/</link>
+    </image>
+    
+	    <atom:link href="https://docs.travelgatex.com/stats/reference/inputobjects/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Stats: AbsoluteInput</title>
+      <link>https://docs.travelgatex.com/stats/reference/inputobjects/absoluteinput/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/stats/reference/inputobjects/absoluteinput/</guid>
+      <description>
+        
+        
+         GraphQL schema definition type AbsoluteInput {from: DateTime! to: DateTime! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields from(DateTime!):to(DateTime!): Required by TimeRangeInput:  
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Stats: AccessFilter</title>
+      <link>https://docs.travelgatex.com/stats/reference/inputobjects/accessfilter/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/stats/reference/inputobjects/accessfilter/</guid>
+      <description>
+        
+        
+         GraphQL schema definition type AccessFilter {accessID: [ID] group: [ID] owner: [ID!] Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields accessID([ID]):group([ID]):owner([ID!]): 
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Stats: ActiveFilterInput</title>
+      <link>https://docs.travelgatex.com/stats/reference/inputobjects/activefilterinput/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/stats/reference/inputobjects/activefilterinput/</guid>
+      <description>
+        
+        
+         GraphQL schema definition type ActiveFilterInput {requestMode: ModeType! codes: [ID!]! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields requestMode(ModeType!):codes([ID!]!): 
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Stats: ClientFilter</title>
+      <link>https://docs.travelgatex.com/stats/reference/inputobjects/clientfilter/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/stats/reference/inputobjects/clientfilter/</guid>
+      <description>
+        
+        
+        GraphQL schema definition type ClientFilter {clientID: [ID] name: [String!] groupID: [ID] isActive: Boolean owner: [ID!] Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields clientID([ID]):name([String!]):groupID([ID]):isActive(Boolean):owner([ID!
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Stats: RelativeInput</title>
+      <link>https://docs.travelgatex.com/stats/reference/inputobjects/relativeinput/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/stats/reference/inputobjects/relativeinput/</guid>
+      <description>
+        
+        
+         GraphQL schema definition type RelativeInput {from: Duration! to: Duration! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields from(Duration!):to(Duration!): Required by TimeRangeInput:  
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Stats: StatsFilterInput</title>
+      <link>https://docs.travelgatex.com/stats/reference/inputobjects/statsfilterinput/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/stats/reference/inputobjects/statsfilterinput/</guid>
+      <description>
+        
+        
+        GraphQL schema definition type StatsFilterInput {owners: [ID!] groups: [ID!] accesses: [ID!] suppliers: [ID!] clients: [ID!] mode: ModeType! serviceApis: [ServiceApiType!] operation: [ServiceOperationType!] serviceOperations: [ID!] from: DateTime to: DateTime timeRange: TimeRangeInput retrieveAssets: Boolean Show deprecated fields}window.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Stats: SupplierFilter</title>
+      <link>https://docs.travelgatex.com/stats/reference/inputobjects/supplierfilter/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/stats/reference/inputobjects/supplierfilter/</guid>
+      <description>
+        
+        
+        GraphQL schema definition type SupplierFilter {supplierID: [ID] accessID: [ID] groupID: [ID] isActive: Boolean serviceAPI: [Int] owner: [ID!] Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields supplierID([ID]):accessID([ID]):groupID([ID]):isActive(Boolean):serviceAPI([Int]):owner([ID!
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Stats: TimeRangeInput</title>
+      <link>https://docs.travelgatex.com/stats/reference/inputobjects/timerangeinput/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/stats/reference/inputobjects/timerangeinput/</guid>
+      <description>
+        
+        
+         GraphQL schema definition type TimeRangeInput {relative: RelativeInput absolute: AbsoluteInput Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields relative(RelativeInput):absolute(AbsoluteInput): Required by StatsFilterInput:  
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

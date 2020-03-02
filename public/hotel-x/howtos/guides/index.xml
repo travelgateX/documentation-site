@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>TravelgateX Documentation – Guides</title>
+    <link>https://docs.travelgatex.com/hotel-x/howtos/guides/</link>
+    <description>Recent changes in Guides on TravelgateX Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <image>
+      <url>https://docs.travelgatex.com/img/hugo.png</url>
+      <title>GoHugo.io</title>
+      <link>https://docs.travelgatex.com/hotel-x/howtos/guides/</link>
+    </image>
+    
+	    <atom:link href="https://docs.travelgatex.com/hotel-x/howtos/guides/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Hotel-X: Connect a New Supplier</title>
+      <link>https://docs.travelgatex.com/hotel-x/howtos/guides/howto-connect-supplier/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/hotel-x/howtos/guides/howto-connect-supplier/</guid>
+      <description>
+        
+        
+        In order to connect to a new Supplier please follow the steps below:
+ Login to our Connect Form Select the supplier you want to connect to and enter the connectivity credentials. A Jira ticket will be raised and you will receive a confirmation email. Our Activations Department will contact you when the process is ready.  In order to activate a new Supplier a few processes need to be executed - this process depends on each Supplier and it could take up to 24 hours.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Hotel-X: Useful information</title>
+      <link>https://docs.travelgatex.com/hotel-x/howtos/guides/howto-book/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/hotel-x/howtos/guides/howto-book/</guid>
+      <description>
+        
+        
+        HotelX Settings In HotelX there are different configuration level settings for a request. With these settings, you can configure some aspect of the request:
+   Field Description     context It indicates the context codes that you want to send and to receive.   Timeout It sets the requested timeout in the different query and mutation types:* search * quote * book (includes cancel and booking)    Language The language you want to use in the request.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

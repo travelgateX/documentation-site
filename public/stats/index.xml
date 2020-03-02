@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>TravelgateX Documentation – Stats</title>
+    <link>https://docs.travelgatex.com/stats/</link>
+    <description>Recent changes in Stats on TravelgateX Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <image>
+      <url>https://docs.travelgatex.com/img/hugo.png</url>
+      <title>GoHugo.io</title>
+      <link>https://docs.travelgatex.com/stats/</link>
+    </image>
+    
+	    <atom:link href="https://docs.travelgatex.com/stats/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Stats: Overview</title>
+      <link>https://docs.travelgatex.com/stats/overview/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/stats/overview/</guid>
+      <description>
+        
+        
+        In order to analyze useful metrics about performance, Stats extracts, loads and stores data from all TravelgateX products.
+Once the metrics are stored in our infrastructure, you can query and analyze your performance using API stats query or TravelgateX Stats Web
+  Working with Stats The most important use case working with Stats is to query about your performance.
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

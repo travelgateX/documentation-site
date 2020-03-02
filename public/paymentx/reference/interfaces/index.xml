@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>TravelgateX Documentation – Interfaces</title>
+    <link>https://docs.travelgatex.com/paymentx/reference/interfaces/</link>
+    <description>Recent changes in Interfaces on TravelgateX Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <image>
+      <url>https://docs.travelgatex.com/img/hugo.png</url>
+      <title>GoHugo.io</title>
+      <link>https://docs.travelgatex.com/paymentx/reference/interfaces/</link>
+    </image>
+    
+	    <atom:link href="https://docs.travelgatex.com/paymentx/reference/interfaces/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Paymentx: GroupCommonData</title>
+      <link>https://docs.travelgatex.com/paymentx/reference/interfaces/groupcommondata/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/paymentx/reference/interfaces/groupcommondata/</guid>
+      <description>
+        
+        
+        GraphQL schema definition interface GroupCommonData {id: ID! code: ID! label: String type: GroupType! info: String children(codes: [ID!],first: Int,last: Int,before: String,after: String,): GroupConnection owner: Member isEditable: Boolean!
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Paymentx: Node</title>
+      <link>https://docs.travelgatex.com/paymentx/reference/interfaces/node/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/paymentx/reference/interfaces/node/</guid>
+      <description>
+        
+        
+         GraphQL schema definition interface Node {code: ID! createdAt: DateTime! updatedAt: DateTime! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields code(ID!):createdAt(DateTime!):updatedAt(DateTime!): 
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

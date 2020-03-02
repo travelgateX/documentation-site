@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>TravelgateX Documentation – Community</title>
+    <link>https://docs.travelgatex.com/community/</link>
+    <description>Recent changes in Community on TravelgateX Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <image>
+      <url>https://docs.travelgatex.com/img/hugo.png</url>
+      <title>GoHugo.io</title>
+      <link>https://docs.travelgatex.com/community/</link>
+    </image>
+    
+	    <atom:link href="https://docs.travelgatex.com/community/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Community: Style Guide</title>
+      <link>https://docs.travelgatex.com/community/style-guide/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/community/style-guide/</guid>
+      <description>
+        
+        
+        This document provides guidance for contributors to the TravelgateX Platform Community site.
+ Caveats Types of documentation Designing a doc Visual assets File organization in GitHub General content guidelines General style guidelines Markdown usage Voice and tone Including source code API documentation Writing resources  Caveats Let&amp;rsquo;s get these things out of the way right up front:
+ Don&amp;rsquo;t sell or do marketing. -&amp;gt; TBD Don&amp;rsquo;t editorialize. Document. Assure that the content you&amp;rsquo;re writting is not duplicated on another page, avoid incosistences.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Community: Writting release notes</title>
+      <link>https://docs.travelgatex.com/community/release-notes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/community/release-notes/</guid>
+      <description>
+        
+        
+        This document assists on write release notes with the changelog of products.
+ Release Notes Organization How to keep a good changelog  General Principles What is a changelog? Why keep a changelog? Who needs a changelog?  How do I make a good changelog?  Guiding Principles Types of changes  How can I reduce the effort required to maintain a changelogs document? Can changelogs be bad?  Do not document commit log diffs Do not ignore deprecations Avoid confusing dates  Changelog example Reference table Writing resources  Release Notes Organization Release notes includes:
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Community: Using gist to include GraphQL examples</title>
+      <link>https://docs.travelgatex.com/community/gist/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/community/gist/</guid>
+      <description>
+        
+        
+        Using hists on md pages This document assists on using GIST to show GraphQl examples.
+To use Gist it&amp;rsquo;s needed to include the hists on the header and call it on the md page body.
+Setups on header On the page header we&amp;rsquo;ll keep the usual page fields needed (like title, pagetitle&amp;hellip;) and we&amp;rsquo;ll add a new key &amp;ldquo;gists&amp;rdquo; as a list of elements with this atributes:
+   Atribute Explanation     n The Gist title that will be shown   g The Gist Id something like: 765fa8dbddd6a17571feb012f9c876bc   o The language that must be in [&amp;ldquo;graphiql&amp;rdquo;, &amp;ldquo;curl&amp;rdquo;, &amp;ldquo;other&amp;rdquo;]   u The user Id that hosts the gist   ak The auth key of the referred user something like: 8777cfff-e333&amp;hellip;    EXAMPLE:
+        
+          [...]
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

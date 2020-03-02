@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>TravelgateX Documentation – Scalars</title>
+    <link>https://docs.travelgatex.com/mappea/reference/scalars/</link>
+    <description>Recent changes in Scalars on TravelgateX Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <image>
+      <url>https://docs.travelgatex.com/img/hugo.png</url>
+      <title>GoHugo.io</title>
+      <link>https://docs.travelgatex.com/mappea/reference/scalars/</link>
+    </image>
+    
+	    <atom:link href="https://docs.travelgatex.com/mappea/reference/scalars/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Mappea: Boolean</title>
+      <link>https://docs.travelgatex.com/mappea/reference/scalars/boolean/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/mappea/reference/scalars/boolean/</guid>
+      <description>
+        
+        
+         The Boolean scalar type represents true or false.
+GraphQL schema definition scalar BooleanRequired by SupplierData: Provider: ClientFilter: PageInfo: AccessData: ClientData: SupplierFilter: GroupData: GroupCommonData: MemberData: RoleData: ResourceData: APIData: ProfileData: OrganizationData: SystemData:  
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Mappea: Country</title>
+      <link>https://docs.travelgatex.com/mappea/reference/scalars/country/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/mappea/reference/scalars/country/</guid>
+      <description>
+        
+        
+         GraphQL schema definition scalar CountryRequired by OrganizationData:  
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Mappea: DateTime</title>
+      <link>https://docs.travelgatex.com/mappea/reference/scalars/datetime/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/mappea/reference/scalars/datetime/</guid>
+      <description>
+        
+        
+         GraphQL schema definition scalar DateTimeRequired by Supplier: Node: Organization: System: Access: Client: Group: Member: MacroPermission: Role: Resource: API: Operation: ManagedGroup: Profile: Entity: Domain: Product:  
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Mappea: DomainName</title>
+      <link>https://docs.travelgatex.com/mappea/reference/scalars/domainname/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/mappea/reference/scalars/domainname/</guid>
+      <description>
+        
+        
+         GraphQL schema definition scalar DomainNameRequired by DomainData:  
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Mappea: ID</title>
+      <link>https://docs.travelgatex.com/mappea/reference/scalars/id/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/mappea/reference/scalars/id/</guid>
+      <description>
+        
+        
+         The ID scalar type represents a unique identifier, often used to refetch an object or as key for a cache. The ID type appears in a JSON response as a String; however, it is not intended to be human-readable. When expected as an input type, any string (such as &amp;quot;4&amp;quot;) or integer (such as 4) input value will be accepted as an ID.
+GraphQL schema definition scalar IDRequired by MappeaMapSupplierInput: MappeaSupplierConfirmedInput: SupplierDetected: Supplier: SupplierData: Node: Provider: AccessFilter: Organization: ClientFilter: System: AdviseMessage: Access: AccessData: Parameter: Client: ClientData: Group: SupplierFilter: GroupData: Member: GroupCommonData: MemberData: MacroPermission: MacroPermissionData: Role: Resource: API: RoleData: ResourceData: APIData: Operation: OperationData: ManagedGroup: ManagedGroupData: Profile: ProfileData: Entity: OrganizationData: Domain: Product: ProductData: DomainData: SystemData:  
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Mappea: Int</title>
+      <link>https://docs.travelgatex.com/mappea/reference/scalars/int/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/mappea/reference/scalars/int/</guid>
+      <description>
+        
+        
+         The Int scalar type represents non-fractional signed whole numeric values. Int can represent values between -(2^31) and 2^31 - 1.
+GraphQL schema definition scalar IntRequired by File: GetMappeaStatsData: MappeaConfirmUploadInput: MappeaMapSupplierInput: UploadFileData: SupplierDetected: SupplierData: AccessConnection: GroupConnection: ClientConnection: AccessData: SupplierFilter: SupplierConnection: GroupData: MemberConnection: ProfileConnection:  
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Mappea: String</title>
+      <link>https://docs.travelgatex.com/mappea/reference/scalars/string/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/mappea/reference/scalars/string/</guid>
+      <description>
+        
+        
+         The String scalar type represents textual data, represented as UTF-8 character sequences. The String type is most often used by GraphQL to represent free-form human-readable text.
+GraphQL schema definition scalar StringRequired by MappeaGetMappeaStatsInput: Error: Warning: File: GetMappeaStatsData: MappeaUploadFileInput: UploadFileData: SupplierData: Provider: AccessEdge: PageInfo: AdviseMessage: AccessData: Parameter: GroupData: GroupCommonData: MemberData: MacroPermissionEdge: MacroPermissionData: RoleData: ResourceEdge: ResourceData: APIData: OperationEdge: OperationData: MemberEdge: APIEdge: ManagedGroupEdge: RoleEdge: ProfileEdge: ProfileData: EntityEdge: SupplierEdge: ExternalMessage: OrganizationData: ProductEdge: ProductData: GroupEdge: ClientEdge:  
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Mappea: URI</title>
+      <link>https://docs.travelgatex.com/mappea/reference/scalars/uri/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/mappea/reference/scalars/uri/</guid>
+      <description>
+        
+        
+         GraphQL schema definition scalar URIRequired by Urls:  
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

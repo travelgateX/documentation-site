@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>TravelgateX Documentation – SBR - Sabre Changelog</title>
+    <link>https://docs.travelgatex.com/integrations/flights/sbr/changelog/</link>
+    <description>Recent changes in SBR - Sabre Changelog on TravelgateX Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 08 Jan 2020 00:00:00 +0100</lastBuildDate>
+    <image>
+      <url>https://docs.travelgatex.com/img/hugo.png</url>
+      <title>GoHugo.io</title>
+      <link>https://docs.travelgatex.com/integrations/flights/sbr/changelog/</link>
+    </image>
+    
+	    <atom:link href="https://docs.travelgatex.com/integrations/flights/sbr/changelog/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Integrations: 2020-01-08</title>
+      <link>https://docs.travelgatex.com/integrations/flights/sbr/changelog/2020-01-08/</link>
+      <pubDate>Wed, 08 Jan 2020 00:00:00 +0100</pubDate>
+      
+      <guid>https://docs.travelgatex.com/integrations/flights/sbr/changelog/2020-01-08/</guid>
+      <description>
+        
+        
+         2020-01-08  Parsing of baggage with import=0 Parsing of included baggage   
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Integrations: 2019-11-27</title>
+      <link>https://docs.travelgatex.com/integrations/flights/sbr/changelog/2019-11-27/</link>
+      <pubDate>Wed, 27 Nov 2019 00:00:00 +0100</pubDate>
+      
+      <guid>https://docs.travelgatex.com/integrations/flights/sbr/changelog/2019-11-27/</guid>
+      <description>
+        
+        
+         2019-11-27  Now when it tries to add it checks if it is before and if it deletes it..   
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Integrations: 2019-11-25</title>
+      <link>https://docs.travelgatex.com/integrations/flights/sbr/changelog/2019-11-25/</link>
+      <pubDate>Mon, 25 Nov 2019 00:00:00 +0100</pubDate>
+      
+      <guid>https://docs.travelgatex.com/integrations/flights/sbr/changelog/2019-11-25/</guid>
+      <description>
+        
+        
+         2019-11-25  Added seats to bill with price 0 when not reserved because of &amp;ldquo;PNS not allowed&amp;rdquo; error.   
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Integrations: 2019-11-19</title>
+      <link>https://docs.travelgatex.com/integrations/flights/sbr/changelog/2019-11-19/</link>
+      <pubDate>Tue, 19 Nov 2019 00:00:00 +0100</pubDate>
+      
+      <guid>https://docs.travelgatex.com/integrations/flights/sbr/changelog/2019-11-19/</guid>
+      <description>
+        
+        
+         2019-11-19  Sending duplicated birthdates causing the error &amp;ldquo;DB already collected&amp;rdquo; on Reservation.   
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Integrations: 2019-11-15</title>
+      <link>https://docs.travelgatex.com/integrations/flights/sbr/changelog/2019-11-15/</link>
+      <pubDate>Fri, 15 Nov 2019 00:00:00 +0100</pubDate>
+      
+      <guid>https://docs.travelgatex.com/integrations/flights/sbr/changelog/2019-11-15/</guid>
+      <description>
+        
+        
+         2019-11-15  Now in reservation PassengerDetails we always send the element ReceivedFrom.   
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Integrations: 2019-11-13</title>
+      <link>https://docs.travelgatex.com/integrations/flights/sbr/changelog/2019-11-13/</link>
+      <pubDate>Wed, 13 Nov 2019 00:00:00 +0100</pubDate>
+      
+      <guid>https://docs.travelgatex.com/integrations/flights/sbr/changelog/2019-11-13/</guid>
+      <description>
+        
+        
+         2019-11-13  Now last ticketing date is returned in the response of RetrieveReservation.   
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

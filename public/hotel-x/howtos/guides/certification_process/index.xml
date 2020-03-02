@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>TravelgateX Documentation – Certification process</title>
+    <link>https://docs.travelgatex.com/hotel-x/howtos/guides/certification_process/</link>
+    <description>Recent changes in Certification process on TravelgateX Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <image>
+      <url>https://docs.travelgatex.com/img/hugo.png</url>
+      <title>GoHugo.io</title>
+      <link>https://docs.travelgatex.com/hotel-x/howtos/guides/certification_process/</link>
+    </image>
+    
+	    <atom:link href="https://docs.travelgatex.com/hotel-x/howtos/guides/certification_process/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Hotel-X: Certification Goals</title>
+      <link>https://docs.travelgatex.com/hotel-x/howtos/guides/certification_process/goals/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/hotel-x/howtos/guides/certification_process/goals/</guid>
+      <description>
+        
+        
+        The Certification process intention is to test and ensure that your integration is performed correctly, this means, that functionality and implementation of the relevant and mandatory information are done correctly and without errors. All of this is focused to avoid issues with the final consumer, or he/she being misled by any incorrect information or not desirable API uses. Before starting the certification process, make sure you have followed the Welcome Pack instructions.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Hotel-X: How to apply</title>
+      <link>https://docs.travelgatex.com/hotel-x/howtos/guides/certification_process/howtoapply/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/hotel-x/howtos/guides/certification_process/howtoapply/</guid>
+      <description>
+        
+        
+        Our Certification Process should be completed once you have finished the development.
+Once Certification Process logs have been delivered through our Customer Care service desk, we will review it and advise you once the integration is certified.
+ Within your WelcomePack email you should have received a user to access our customer care portal. Click on Certification Process option and upload or drag and drop your logs. You will be issued a WECARE ticket number.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Hotel-X: Use cases</title>
+      <link>https://docs.travelgatex.com/hotel-x/howtos/guides/certification_process/usecases/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/hotel-x/howtos/guides/certification_process/usecases/</guid>
+      <description>
+        
+        
+        To ensure that your connection to our HotelX API is set up correctly, you’ll need to make the following test scenario. You can choose the hotel and dates you prefer:
+ Case 1: 1 room with 2 Adults for a Package rate rule. Case 2: 1 room with 2 Adults and 1 room with 2 adults + 1 Child 5 years old for a non-refundable rate. Case 3: 1 room with 2 Adults and 1 room with 2 adults + 1 Child 5 years old and 1 room for 3 adults for a refundable rate.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>TravelgateX Documentation – Release Notes</title>
+    <link>https://docs.travelgatex.com/product_template/release-notes/</link>
+    <description>Recent changes in Release Notes on TravelgateX Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <image>
+      <url>https://docs.travelgatex.com/img/hugo.png</url>
+      <title>GoHugo.io</title>
+      <link>https://docs.travelgatex.com/product_template/release-notes/</link>
+    </image>
+    
+	    <atom:link href="https://docs.travelgatex.com/product_template/release-notes/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>PRODUCT_TEMPLATE: GraphQL Schema breaking changes</title>
+      <link>https://docs.travelgatex.com/product_template/release-notes/breaking-changes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/product_template/release-notes/breaking-changes/</guid>
+      <description>
+        
+        
+        Changes history of deprecated notes previously announced
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

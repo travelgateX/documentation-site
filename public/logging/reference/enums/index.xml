@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>TravelgateX Documentation – Enums</title>
+    <link>https://docs.travelgatex.com/logging/reference/enums/</link>
+    <description>Recent changes in Enums on TravelgateX Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <image>
+      <url>https://docs.travelgatex.com/img/hugo.png</url>
+      <title>GoHugo.io</title>
+      <link>https://docs.travelgatex.com/logging/reference/enums/</link>
+    </image>
+    
+	    <atom:link href="https://docs.travelgatex.com/logging/reference/enums/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Logging: AdviseMessageLevel</title>
+      <link>https://docs.travelgatex.com/logging/reference/enums/advisemessagelevel/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/logging/reference/enums/advisemessagelevel/</guid>
+      <description>
+        
+        
+         GraphQL schema definition enumAdviseMessageLevel{WARN,ERROR,INFO,}  Required by AdviseMessage: List of advise messages. 
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Logging: GroupType</title>
+      <link>https://docs.travelgatex.com/logging/reference/enums/grouptype/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/logging/reference/enums/grouptype/</guid>
+      <description>
+        
+        
+         GraphQL schema definition enumGroupType{ROOT,ORG,GROUP,PROFILE,TEAM,FOLDER,PRODUCT,RESOURCE,SPECIFIC_RESOURCE,}  Required by OrganizationData: GroupCommonData: GroupData:  
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Logging: MemberType</title>
+      <link>https://docs.travelgatex.com/logging/reference/enums/membertype/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/logging/reference/enums/membertype/</guid>
+      <description>
+        
+        
+         GraphQL schema definition enumMemberType{USER,SERVICE_ACCOUNT,}  Required by MemberData:  
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Logging: ModeType</title>
+      <link>https://docs.travelgatex.com/logging/reference/enums/modetype/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/logging/reference/enums/modetype/</guid>
+      <description>
+        
+        
+         Mode to select which kind of stats do you want query
+GraphQL schema definition enumModeType{BUYER,SELLER,}  Required by StatsFilterInput: Filters needed to do a search. Users (List of users), Suppliers (List of suppliers), ServiceApis (List of service apis), From (Start date of search - YYYY-MM-DD HH:mm:ss), To (End date of search - YYYY-MM-DD HH:mm:ss) 
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Logging: OperationType</title>
+      <link>https://docs.travelgatex.com/logging/reference/enums/operationtype/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/logging/reference/enums/operationtype/</guid>
+      <description>
+        
+        
+         GraphQL schema definition enumOperationType{SEARCH,QUOTE,BOOKING,CANCEL,SCHEDULER,CREATE,READ,UPDATE,DELETE,EXECUTE,OTHER,}  
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Logging: RateRulesType</title>
+      <link>https://docs.travelgatex.com/logging/reference/enums/raterulestype/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/logging/reference/enums/raterulestype/</guid>
+      <description>
+        
+        
+         Rate Rules
+GraphQL schema definition enumRateRulesType{PACKAGE,OLDER55,OLDER60,OLDER65,CANARY_RESIDENT,BALEARIC_RESIDENT,LARGE_FAMILY,HONEYMOON,PUBLIC_SERVANT,UNEMPLOYED,NORMAL,NON_REFUNDABLE,}  
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Logging: RoleType</title>
+      <link>https://docs.travelgatex.com/logging/reference/enums/roletype/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/logging/reference/enums/roletype/</guid>
+      <description>
+        
+        
+         GraphQL schema definition enumRoleType{VIEWER,EDITOR,ADMIN,EXECUTOR,SPECIFIC,}  Required by RoleData:  
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Logging: ServiceApiType</title>
+      <link>https://docs.travelgatex.com/logging/reference/enums/serviceapitype/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/logging/reference/enums/serviceapitype/</guid>
+      <description>
+        
+        
+         Services Api available.
+GraphQL schema definition enumServiceApiType{HOTEL,TRANSPORTATION,CAR,TRANSFERS,ACTIVITIES,VIRTUALACCOUNT,PAYMENT,PACKAGE,}  
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Logging: ServiceOperationType</title>
+      <link>https://docs.travelgatex.com/logging/reference/enums/serviceoperationtype/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/logging/reference/enums/serviceoperationtype/</guid>
+      <description>
+        
+        
+         GraphQL schema definition enumServiceOperationType{ALL,SEARCH,QUOTE,BOOKING,OTHER,}  
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Logging: StatsInfoTypes</title>
+      <link>https://docs.travelgatex.com/logging/reference/enums/statsinfotypes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/logging/reference/enums/statsinfotypes/</guid>
+      <description>
+        
+        
+         GraphQL schema definition enumStatsInfoTypes{ALL,OK,INTEGRATION,PROVIDER,COMMUNICATION,HUB,OTHER,}  Required by StatsInfo: Details of an specific error 
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

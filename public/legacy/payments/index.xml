@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>TravelgateX Documentation – Payments API</title>
+    <link>https://docs.travelgatex.com/legacy/payments/</link>
+    <description>Recent changes in Payments API on TravelgateX Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <image>
+      <url>https://docs.travelgatex.com/img/hugo.png</url>
+      <title>GoHugo.io</title>
+      <link>https://docs.travelgatex.com/legacy/payments/</link>
+    </image>
+    
+	    <atom:link href="https://docs.travelgatex.com/legacy/payments/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Legacy: Data Structure</title>
+      <link>https://docs.travelgatex.com/legacy/payments/data-structure/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/legacy/payments/data-structure/</guid>
+      <description>
+        
+        
+        The object of this document is to give an overview of the Payments API.
+You can read below about what changes might and what changes might not cause an error:
+ Changes that can cause an error:
+ Removing a field. Modifying the type of field or attribute. For example, passing a string type to numeric.  Changes that cannot cause an error:
+ Adding a new element or attribute. Modifying the order of elements or attributes.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Legacy: Error Codes</title>
+      <link>https://docs.travelgatex.com/legacy/payments/errorcodes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/legacy/payments/errorcodes/</guid>
+      <description>
+        
+        
+        Error Code Error Description     101 System exceptions. Exceptions not controlled or classified as generic exceptions.   102 Provider controlled error. The provider returned an error.   104 Timeout. Timeout during the operation execution.   201 In Details request reports the transaction was not found.   205 Supplier doesn&amp;rsquo;t accept this currency.   207 Malformed RQ. Supplier doesn&amp;rsquo;t accept the request.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Legacy: Common Structure</title>
+      <link>https://docs.travelgatex.com/legacy/payments/common-structure/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/legacy/payments/common-structure/</guid>
+      <description>
+        
+        
+        The following structure will be common through all transactions. Additionally every operation will have it&amp;rsquo;s specific elements.
+The request objects contains the supplier&amp;rsquo;s configuration, urls and credentials. The response object contains the operation details and errors if any.
+Common Structure RQ Example &amp;lt;MethodRQ&amp;gt; &amp;lt;timeoutMilliseconds&amp;gt;60000&amp;lt;/timeoutMilliseconds&amp;gt; &amp;lt;source&amp;gt; &amp;lt;languageCode&amp;gt;es&amp;lt;/languageCode&amp;gt; &amp;lt;/source&amp;gt; &amp;lt;filterAuditData&amp;gt; &amp;lt;registerTransactions&amp;gt;false&amp;lt;/registerTransactions&amp;gt; &amp;lt;/filterAuditData&amp;gt; &amp;lt;Configuration codeProvider = &amp;quot;SFT&amp;quot;&amp;gt; &amp;lt;Credentials user = &amp;quot;test53245&amp;quot; password = &amp;quot;pn_test_1&amp;quot;&amp;gt; &amp;lt;UrlGeneric&amp;gt;https://providerurl.com/api&amp;lt;/UrlGeneric&amp;gt; &amp;lt;UrlTransactionReport&amp;gt;https://providerurl.com/report&amp;lt;/UrlTransactionReport&amp;gt; &amp;lt;/Credentials&amp;gt; &amp;lt;Attributes&amp;gt; &amp;lt;Attribute key = &amp;quot; &amp;quot; value = &amp;quot; &amp;quot;/&amp;gt; .
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Legacy: Common Elements</title>
+      <link>https://docs.travelgatex.com/legacy/payments/common-elements/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/legacy/payments/common-elements/</guid>
+      <description>
+        
+        
+        In this section most common elements, which are used in various calls, will be explained.
+In some cases the root node name changes, in those cases the name provided by the specific call documentation prevails over the name stated here.
+Reasons Reasons Example &amp;lt;Reasons&amp;gt; &amp;lt;Reason Id = &amp;quot;Reference&amp;quot;&amp;gt;123456798&amp;lt;/Reason&amp;gt; ... &amp;lt;/Reasons&amp;gt;  Reasons Description    Element Number Type Description     Reasons   Reasons of the payment.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Legacy: Create Payment</title>
+      <link>https://docs.travelgatex.com/legacy/payments/methods/createpayment/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/legacy/payments/methods/createpayment/</guid>
+      <description>
+        
+        
+        Method Goals This method aims to create a payment request of the indicated amount.
+Request Format The CreatePayment request requires a Transaction object.
+Response Format The response contains a payment Id and a url to redirect the customer. If the payment doesn&amp;rsquo;t require the clients redirect it won&amp;rsquo;t return the &amp;ldquo;Redirects&amp;rdquo; object and will return information about the payment.
+CreatePaymentRQ Example &amp;lt;CreatePaymentRQ&amp;gt; &amp;lt;Configuracion/&amp;gt; &amp;lt;BaseCallBacks/&amp;gt; &amp;lt;TransactionDetails Id=&amp;quot;4235669432&amp;quot;&amp;gt; &amp;lt;SenderDetails&amp;gt; &amp;lt;SenderBankDetails&amp;gt; &amp;lt;Holder&amp;gt;Max Mustermann&amp;lt;/Holder&amp;gt; &amp;lt;BankAccount Number = &amp;quot; &amp;quot; SecurityCode = &amp;quot; &amp;quot;/&amp;gt; &amp;lt;CountryCode&amp;gt;&amp;lt;/CountryCode&amp;gt; &amp;lt;IBAN&amp;gt;DE11888888882222222222&amp;lt;/IBAN&amp;gt; &amp;lt;BIC&amp;gt;PNAGDE45920&amp;lt;/BIC&amp;gt; &amp;lt;/SenderBankDetails&amp;gt; &amp;lt;/SenderDetails&amp;gt; &amp;lt;/TransactionDetails&amp;gt; &amp;lt;CurrencyAmount CurrencyCode = &amp;quot;EUR&amp;quot; Amount = &amp;quot;2.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Legacy: Capture Payment</title>
+      <link>https://docs.travelgatex.com/legacy/payments/methods/capturepayment/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/legacy/payments/methods/capturepayment/</guid>
+      <description>
+        
+        
+        Method Goals This method aims to capture a payment. Some providers require to capture the payment to transfer the funds to the merchant, in this case you will need to do a CapturePayment call. If this call is needed you will receive a pending reason as &amp;ldquo;PendingCapture&amp;rdquo; in the ProcessNotification o the DetailsPayment response.
+Request Format The CapturePayment request requires a TransactionId and a CurrencyAmount object.
+Response Format The response contains information about the payment that has been captured.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Legacy: Details Payment</title>
+      <link>https://docs.travelgatex.com/legacy/payments/methods/detailspayment/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/legacy/payments/methods/detailspayment/</guid>
+      <description>
+        
+        
+        Method Goals This method aims to return information about a payment that has been confirmed. Payment details can be search by transaction id or by date (only if provider allows it, check StaticConfiguration).
+Request Format The PaymentDetails request requires a TransactionId object.
+Response Format The response contains information about the payment transaction which refers to the TransactionId sent in the request.
+DetailsPaymentRQ Example &amp;lt;DetailsPaymentRQ&amp;gt; &amp;lt;Transaction Id = &amp;quot;99999-53245-5483-4891&amp;quot; /&amp;gt; &amp;lt;TransactionStartTime&amp;gt;&amp;lt;/TransactionStartTime&amp;gt; &amp;lt;TransactionEndTime&amp;gt;&amp;lt;/TransactionEndTime&amp;gt; &amp;lt;/Transaction&amp;gt; &amp;lt;/DetailsPaymentRQ&amp;gt;  DetailsPaymentRQ    Element Number Type Description     DetailsPaymentRQ 1  Root node.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Legacy: Modify Payment</title>
+      <link>https://docs.travelgatex.com/legacy/payments/methods/modifypayment/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/legacy/payments/methods/modifypayment/</guid>
+      <description>
+        
+        
+        Method Goals This method aims to change the specification of an already created payment. Providers could allow complete modification, no modification at all or even just the modification of some parameters of the payment.
+Request Format The ModifyPayment request requires an ationType, indicating the type of modification. As well as an identification of the payment to update and the new values.
+Response Format The response contains information about the payment that has been modified.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Legacy: Process Notification</title>
+      <link>https://docs.travelgatex.com/legacy/payments/methods/processnotification/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/legacy/payments/methods/processnotification/</guid>
+      <description>
+        
+        
+        Method Goals This method aims to process the notification from a payment that has been created.
+Request Format The ProcessNotification request requires a HTTPResponse object.
+Response Format The response contains information about the notification that has been confirmed.
+ProcessNotificationRQ Example &amp;lt;ProcessNotificationRQ&amp;gt; &amp;lt;HTTPResponse&amp;gt; &amp;lt;Status&amp;gt;HTTP/1.1 200 OK&amp;lt;/Status&amp;gt; &amp;lt;Url&amp;gt;https://api.test.com/api/xml?seed=aaaaabbbbb1111122222&amp;lt;/Url&amp;gt; &amp;lt;Seed&amp;gt;aaaaabbbbb1111122222&amp;lt;/Seed&amp;gt; &amp;lt;Headers&amp;gt;&amp;lt;/Headers&amp;gt; &amp;lt;Body&amp;gt;&amp;amp;lt;status_notification&amp;amp;gt;&amp;amp;lt;transaction&amp;amp;gt;99999-53245-5483-4891&amp;amp;lt;/transaction&amp;amp;gt;&amp;amp;lt;time&amp;amp;gt;2010-04-14T19:01:08+02:00&amp;amp;lt;/time&amp;amp;gt;&amp;amp;lt;/status_notification&amp;amp;gt;&amp;lt;/Body&amp;gt; &amp;lt;/HTTPResponse&amp;gt; &amp;lt;/ProcessNotificationRQ&amp;gt;  ProcessNotificationRQ    Element Number Type Description     ProcessNotificationRQ 1  Root node.   HTTPResponse 1  Contains information of the notification sent by the provider.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Legacy: Refund Payment</title>
+      <link>https://docs.travelgatex.com/legacy/payments/methods/refundpayment/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/legacy/payments/methods/refundpayment/</guid>
+      <description>
+        
+        
+        Method Goals This method aims to refund a payment that has been confirmed.
+Request Format The RefundPayment request requires a TransactionId object and the amount to refund.
+Response Format The response contains information about the refund transaction.
+RefundPaymentRQ Example &amp;lt;RefundPaymentRQ&amp;gt; &amp;lt;Transaction Id = &amp;quot;99999-55555-3333-4891&amp;quot;&amp;gt; &amp;lt;CurrencyAmount CurrencyCode = &amp;quot;EUR&amp;quot; Amount = &amp;quot;2.20&amp;quot; /&amp;gt; &amp;lt;SenderDetails&amp;gt; &amp;lt;SenderBankDetails&amp;gt; &amp;lt;Holder&amp;gt;Max Samplemerchant&amp;lt;/Holder&amp;gt; &amp;lt;BankAccount Number = &amp;quot; &amp;quot; SecurityCode = &amp;quot; &amp;quot; /&amp;gt; &amp;lt;CountryCode&amp;gt;&amp;lt;/CountryCode&amp;gt; &amp;lt;IBAN&amp;gt;DE11888888889999999999&amp;lt;/IBAN&amp;gt; &amp;lt;BIC&amp;gt;PNAGDE00000&amp;lt;/BIC&amp;gt; &amp;lt;/SenderBankDetails&amp;gt; &amp;lt;/SenderDetails&amp;gt; &amp;lt;Reason&amp;gt; &amp;lt;Reason Id = &amp;quot; &amp;quot;&amp;gt;Refund OrderID 123456&amp;lt;/Reason&amp;gt; .
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Legacy: Runtime Configuration</title>
+      <link>https://docs.travelgatex.com/legacy/payments/methods/runtimeconfiguration/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/legacy/payments/methods/runtimeconfiguration/</guid>
+      <description>
+        
+        
+        Method Goals This method returns a list of Attributes that should be included in each request for the selected provider.
+Request Format The request only requires the provider code.
+Response Format The response contains a list of Attributes.
+RunTimeConfigurationRQ_ Example &amp;lt;RunTimeConfigurationRQ&amp;gt; &amp;lt;/RunTimeConfigurationRQ&amp;gt;  RunTimeConfiguration    Element Number Type Description     RunTimeConfigurationRQ 1  Root node.    RunTimeConfigurationRS Example &amp;lt;RunTimeConfigurationRS&amp;gt; &amp;lt;ConfigurationProvider&amp;gt; &amp;lt;Credentials user = &amp;quot; &amp;quot; password = &amp;quot; &amp;quot;&amp;gt; &amp;lt;UrlGeneric&amp;gt;&amp;lt;/UrlGeneric&amp;gt; &amp;lt;UrlTransactionReport xsi:nil = &amp;quot;true&amp;quot; /&amp;gt; &amp;lt;/Credentials&amp;gt; &amp;lt;Attributes&amp;gt; &amp;lt;Attribute key = &amp;quot; &amp;quot; value = &amp;quot; &amp;quot; /&amp;gt; &amp;lt;Attribute key = &amp;quot; &amp;quot; value = &amp;quot; &amp;quot; /&amp;gt; .
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Legacy: Static Configuration</title>
+      <link>https://docs.travelgatex.com/legacy/payments/methods/staticconfiguration/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/legacy/payments/methods/staticconfiguration/</guid>
+      <description>
+        
+        
+        Method Goals This method returns important information about the behavior of the integration.
+Request Format The request only requires the provider code.
+Response Format The response contains a list of parameters that will inform how to configure the integration.
+StaticConfigurationRQ_ Example &amp;lt;StaticConfigurationRQ&amp;gt; &amp;lt;/StaticConfigurationRQ&amp;gt;  StaticConfigurationRQ Only the structure defined on common-structure is needed
+StaticConfigurationRS Example &amp;lt;StaticConfigurationRS&amp;gt; &amp;lt;operationImplemented&amp;gt;True&amp;lt;/operationImplemented&amp;gt; &amp;lt;ImplementsRedirect&amp;gt;True&amp;lt;/ImplementsRedirect&amp;gt; &amp;lt;ImplementsRefund&amp;gt;True&amp;lt;/ImplementsRefund&amp;gt; &amp;lt;ImplementsDetails&amp;gt;True&amp;lt;/ImplementsDetails&amp;gt; &amp;lt;ImplementsDetailsByDate&amp;gt;True&amp;lt;/ImplementsDetailsByDate&amp;gt; &amp;lt;ImplementsSeedAuthentication&amp;gt;True&amp;lt;/ImplementsSeedAuthentication&amp;gt; &amp;lt;ImplementsItemsDetails&amp;gt;True&amp;lt;/ImplementsItemsDetails&amp;gt; &amp;lt;RequiresNotificationACK&amp;gt;True&amp;lt;/RequiresNotificationACK&amp;gt; &amp;lt;ImplementsUrls&amp;gt; &amp;lt;Url&amp;gt;Success&amp;lt;/Url&amp;gt; &amp;lt;Url&amp;gt;Fail&amp;lt;/Url&amp;gt; &amp;lt;Url&amp;gt;Notification&amp;lt;/Url&amp;gt; &amp;lt;UrlsNotifications&amp;gt; &amp;lt;Status&amp;gt;Denied&amp;lt;/Status&amp;gt; &amp;lt;Status&amp;gt;Received&amp;lt;/Status&amp;gt; &amp;lt;Status&amp;gt;Refunded&amp;lt;/Status&amp;gt; &amp;lt;/UrlsNotifications&amp;gt; &amp;lt;/ImplementsUrls&amp;gt; &amp;lt;/StaticConfigurationRS&amp;gt;  StaticConfigurationRS    Element Number Type Description     StaticConfigurationRS 1  Root node.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>TravelgateX Documentation – Insights Benchmark Dataset</title>
+    <link>https://docs.travelgatex.com/insights-x/datasets/dataset-content/benchmark/insights/</link>
+    <description>Recent changes in Insights Benchmark Dataset on TravelgateX Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <image>
+      <url>https://docs.travelgatex.com/img/hugo.png</url>
+      <title>GoHugo.io</title>
+      <link>https://docs.travelgatex.com/insights-x/datasets/dataset-content/benchmark/insights/</link>
+    </image>
+    
+	    <atom:link href="https://docs.travelgatex.com/insights-x/datasets/dataset-content/benchmark/insights/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Insights-X: Reference</title>
+      <link>https://docs.travelgatex.com/insights-x/datasets/dataset-content/benchmark/insights/dataset-reference-benchmark/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/insights-x/datasets/dataset-content/benchmark/insights/dataset-reference-benchmark/</guid>
+      <description>
+        
+        
+        On this page you will learn how the data is stored in Benchmark Dataset.
+Tables Data is stored in multiple tables depending on the kind of info that wants to be queried and depending on the level of aggregation:
+ Daily (agregation stored every day) Weekly (aggregation stored in the first monday of every week) Monthly (aggregation stored in the first day of the month)  The fields and explanation of tables are based on seller organization.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Insights-X: Concepts</title>
+      <link>https://docs.travelgatex.com/insights-x/datasets/dataset-content/benchmark/insights/dataset-concepts-benchmark/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/insights-x/datasets/dataset-content/benchmark/insights/dataset-concepts-benchmark/</guid>
+      <description>
+        
+        
+        On this page you will learn how to interpret the information in our datasets.
+Benchmark How to interpret the information of the differents benchmark tables.
+Overview On this page, you will learn how to interpret the differents fields of benchmark table.
+First of all, it&amp;rsquo;s important to know that the benchmark is given by 3 period of time:
+ Daily Weekly (starts on monday)
+ Monthly
+  and 3 levels of detail:
+        
+          [...]
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

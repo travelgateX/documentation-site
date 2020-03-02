@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>TravelgateX Documentation – AA - American Airlines Changelog</title>
+    <link>https://docs.travelgatex.com/integrations/flights/aa/changelog/</link>
+    <description>Recent changes in AA - American Airlines Changelog on TravelgateX Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 29 Nov 2019 00:00:00 +0100</lastBuildDate>
+    <image>
+      <url>https://docs.travelgatex.com/img/hugo.png</url>
+      <title>GoHugo.io</title>
+      <link>https://docs.travelgatex.com/integrations/flights/aa/changelog/</link>
+    </image>
+    
+	    <atom:link href="https://docs.travelgatex.com/integrations/flights/aa/changelog/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Integrations: 2019-11-29</title>
+      <link>https://docs.travelgatex.com/integrations/flights/aa/changelog/2019-11-29/</link>
+      <pubDate>Fri, 29 Nov 2019 00:00:00 +0100</pubDate>
+      
+      <guid>https://docs.travelgatex.com/integrations/flights/aa/changelog/2019-11-29/</guid>
+      <description>
+        
+        
+         2019-11-27  change to get item bags.   
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

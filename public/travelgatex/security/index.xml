@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>TravelgateX Documentation – Security</title>
+    <link>https://docs.travelgatex.com/travelgatex/security/</link>
+    <description>Recent changes in Security on TravelgateX Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <image>
+      <url>https://docs.travelgatex.com/img/hugo.png</url>
+      <title>GoHugo.io</title>
+      <link>https://docs.travelgatex.com/travelgatex/security/</link>
+    </image>
+    
+	    <atom:link href="https://docs.travelgatex.com/travelgatex/security/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Travelgatex: Overview</title>
+      <link>https://docs.travelgatex.com/travelgatex/security/overview/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/travelgatex/security/overview/</guid>
+      <description>
+        
+        
+        This page describes the how security is implemented in TravelgateX platform.
+Introduction TravelgateX offers a fine-grained access control and visibility for centrally managing Resources, which are granted to Partners belonging to Organizations.
+Authentication Authentication is the process of authorizing or making sure that the Partner is the correct one. Every request to TravelgateX GraphQL API must carry an Access Token whether it&amp;rsquo;s an API Key or a JSON Web Token (JWT).
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Travelgatex: Identity and access management</title>
+      <link>https://docs.travelgatex.com/travelgatex/security/identity-access-management/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/travelgatex/security/identity-access-management/</guid>
+      <description>
+        
+        
+        This section provides an overview of Identity and access management.
+TravelgateX identity and acccess management lets administrators authorize who can take action on specific resources, giving you full control and internal visibility to manage resources centrally.
+Identity and access management provides an unified view of your security policy across your entire organization, with built-in auditing to ease compliance processes.
+As an administrator, when you register with us, we provide you with login details to access your TravelgateX account, including a username and password.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

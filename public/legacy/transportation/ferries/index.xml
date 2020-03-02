@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>TravelgateX Documentation – Ferries API</title>
+    <link>https://docs.travelgatex.com/legacy/transportation/ferries/</link>
+    <description>Recent changes in Ferries API on TravelgateX Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <image>
+      <url>https://docs.travelgatex.com/img/hugo.png</url>
+      <title>GoHugo.io</title>
+      <link>https://docs.travelgatex.com/legacy/transportation/ferries/</link>
+    </image>
+    
+	    <atom:link href="https://docs.travelgatex.com/legacy/transportation/ferries/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Legacy: Availability</title>
+      <link>https://docs.travelgatex.com/legacy/transportation/ferries/avail/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/legacy/transportation/ferries/avail/</guid>
+      <description>
+        
+        
+        Method Goals This method aims to complete the common side of the petition with the ferries specifications, if any, and therefore have the complete petition for ferries.
+Request Format The request needs a list of journeys (each one with the desired dates and ports), a list of the passengers and an optional vehicle list.
+Response Format The response contains a list of fares with the available options.
+AvailabilityRQ &amp;lt;AvailabilityRQ xmlns:xsd = &amp;quot;http://www.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Legacy: Cancellation</title>
+      <link>https://docs.travelgatex.com/legacy/transportation/ferries/cancel/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/legacy/transportation/ferries/cancel/</guid>
+      <description>
+        
+        
+        Method Goals This method aims to cancel a booking.
+Request Format The request requires the booking code or locator.
+Response Format If the provider returns a Breakdown, this will be informed in CancellarionRS.
+CancellationRQ Example &amp;lt;CancellationRQ&amp;gt; &amp;lt;Locator&amp;gt;XXX&amp;lt;/Locator&amp;gt; &amp;lt;CancellationCosts&amp;gt;0&amp;lt;/CancellationCosts&amp;gt; &amp;lt;/CancellationRQ&amp;gt;  CancellationRQ Description    Element Number Type Description     CancellationRQ 1  Root node.   Locator 1  Contains a list of Tickets.   CancellationCosts 1  Contains details of the Ticket.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Legacy: Common Elements</title>
+      <link>https://docs.travelgatex.com/legacy/transportation/ferries/common-elements/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/legacy/transportation/ferries/common-elements/</guid>
+      <description>
+        
+        
+        Introduction In every petition there some nodes which will always appear, there for this chapter is dedicated for said nodes.
+Request Format The common elements in all of the petitions are: source of the petition, Timeout, the indication if you wish to register the transactions and the provider configuration.
+Response Format The response will contain the indication if the function is implemented or not, application errors, if any, the providers traces if requested and the response status.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Legacy: Errors</title>
+      <link>https://docs.travelgatex.com/legacy/transportation/ferries/error/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/legacy/transportation/ferries/error/</guid>
+      <description>
+        
+        
+        Error description    Possible Values Description     102 Supplier Error.   103 Duplicate Booking.   104 Supplier connection error.   105 Generic communication error.   188 Availability product not found.   191 Unknown error or Integration/Application error.   210 Payment card error.   211 Passenger error.   212 Delta price error.   345 Connection timeout.   346 Operation not implemented.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Legacy: Ferries Data Structure</title>
+      <link>https://docs.travelgatex.com/legacy/transportation/ferries/ferriesdatastructure/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/legacy/transportation/ferries/ferriesdatastructure/</guid>
+      <description>
+        
+        
+        The structure of the API specification follows a standard. This document intends to explain every aspect of this structure and their fields.
+The integration will have the following methods:
+   Method Input Output Required Description     Avail AvailabilityRQ AvailabilityRS Yes Makes a availability call   Valuation ValuationRQ ValuationRS Yes Makes a pre-booking   Reservation ReservationRQ ReservationRS Yes Makes a booking   Routes RoutesRQ RoutesRS Yes Gets a static routes list   RetrieveReservation RetrieveReservation RQ RetrieveReservation RS No Gets the details of a single booking   RetrieveReservation List RetrieveReservation ListRQ RetrieveReservation ListRS No Gets a list of bookings   Cancelation CancellationRQ CancellationRS No Cancels a booking    Each request sent to the service url requires a node called rqXML .
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Legacy: Reservation</title>
+      <link>https://docs.travelgatex.com/legacy/transportation/ferries/reservation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/legacy/transportation/ferries/reservation/</guid>
+      <description>
+        
+        
+        Method Goals This method aims to book one or more itineraries.
+Request Format The request format works the same way as the Valuation request. It can work with one Itinerary or with two.
+This request also holds the passengers and payment data.
+Response Format The result returns a list of Locator (booking codes). It can be the supplier&amp;rsquo;s or the one sent in the request. It also returns all the charges associated to the booking.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Legacy: RetrieveReservation</title>
+      <link>https://docs.travelgatex.com/legacy/transportation/ferries/retrievereservation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/legacy/transportation/ferries/retrievereservation/</guid>
+      <description>
+        
+        
+        Method Goals This method aims to retrieve a booking with its full details.
+Request Format The request requires the booking code or locator.
+Response Format The response contains the details of a booking.
+RetrieveReservationRQ Example &amp;lt;RetrieveReservationRQ xmlns:xsd = &amp;quot;http://www.w3.org/2001/XMLSchema&amp;quot; xmlns:xsi = &amp;quot;http://www.w3.org/2001/XMLSchema-instance&amp;quot;&amp;gt; &amp;lt;Configuration/&amp;gt; &amp;lt;ClientConfiguration/&amp;gt; &amp;lt;Locator&amp;gt;BFRFKVM&amp;lt;/Locator&amp;gt; &amp;lt;/RetrieveReservationRQ&amp;gt;  RetrieveReservationRQ Description    Element Number Type Description     RetrieveReservationRQ 1  Root node.   Locator 1 String Locator.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Legacy: RetrieveReservationList</title>
+      <link>https://docs.travelgatex.com/legacy/transportation/ferries/retrievereservationlist/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/legacy/transportation/ferries/retrievereservationlist/</guid>
+      <description>
+        
+        
+        Method Goals This method aims to return a list of bookings for a given time period being that either booking date or the travelling date.
+Request Format The request requires a date (of reservation or departure) and all the bookings that match this date will be returned.
+Response Format The response contains a list of bookings that match the requested date.
+RetrieveReservationListRQ Example &amp;lt;RetrieveReservationListRQ&amp;gt; &amp;lt;Configuration/&amp;gt; &amp;lt;ClientConfiguration currencyCode = &amp;quot;EUR&amp;quot;/&amp;gt; &amp;lt;ReservationDate&amp;gt;2014-03-04T00:00:00&amp;lt;/ReservationDate&amp;gt; &amp;lt;DepartureDate&amp;gt;2010-09-09T00:00:00&amp;lt;/DepartureDate&amp;gt; &amp;lt;ClientEmail&amp;gt;client@clientmail.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Legacy: Routes</title>
+      <link>https://docs.travelgatex.com/legacy/transportation/ferries/routes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/legacy/transportation/ferries/routes/</guid>
+      <description>
+        
+        
+        Method Goals This method aims to return all the available routes for the selected carrier.
+Request Format This request does not require any parameters.
+Response Format The result returns a list of Route with the corresponding time frame in which this route is valid.
+Remarks This method should be cached internally and only called once a week and in most cases once a month.
+RoutesRQ Example &amp;lt;RoutesRQ&amp;gt; &amp;lt;/RoutesRQ&amp;gt;  RoutesRQ Description    Element Number Type Description     RoutesRQ 1  Root node.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Legacy: Valuation</title>
+      <link>https://docs.travelgatex.com/legacy/transportation/ferries/valuation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/legacy/transportation/ferries/valuation/</guid>
+      <description>
+        
+        
+        Method Goals This method aims to do a prebook of the selected Option. This Option must be selected in the previous step ( Availability ).
+The Valuation request must be built from results of a single Availability. Mixing OneWay options from different Availability calls do not grant the correct functionability of the Valuation.
+Request Format The Valuation request can be done by two different ways: with a single Itinerary or multiple Itineraries.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

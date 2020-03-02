@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>TravelgateX Documentation – Nas - Norwegian Changelog</title>
+    <link>https://docs.travelgatex.com/integrations/flights/nas/changelog/</link>
+    <description>Recent changes in Nas - Norwegian Changelog on TravelgateX Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 11 Dec 2019 00:00:00 +0100</lastBuildDate>
+    <image>
+      <url>https://docs.travelgatex.com/img/hugo.png</url>
+      <title>GoHugo.io</title>
+      <link>https://docs.travelgatex.com/integrations/flights/nas/changelog/</link>
+    </image>
+    
+	    <atom:link href="https://docs.travelgatex.com/integrations/flights/nas/changelog/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Integrations: 2019-12-11</title>
+      <link>https://docs.travelgatex.com/integrations/flights/nas/changelog/2019-12-11/</link>
+      <pubDate>Wed, 11 Dec 2019 00:00:00 +0100</pubDate>
+      
+      <guid>https://docs.travelgatex.com/integrations/flights/nas/changelog/2019-12-11/</guid>
+      <description>
+        
+        
+         2019-12-11  List of routes offered   
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Integrations: 2019-12-02</title>
+      <link>https://docs.travelgatex.com/integrations/flights/nas/changelog/2019-12-02/</link>
+      <pubDate>Mon, 02 Dec 2019 00:00:00 +0100</pubDate>
+      
+      <guid>https://docs.travelgatex.com/integrations/flights/nas/changelog/2019-12-02/</guid>
+      <description>
+        
+        
+         2019-12-02  Seating references to flights   
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Integrations: 2019-11-28</title>
+      <link>https://docs.travelgatex.com/integrations/flights/nas/changelog/2019-11-28/</link>
+      <pubDate>Thu, 28 Nov 2019 00:00:00 +0100</pubDate>
+      
+      <guid>https://docs.travelgatex.com/integrations/flights/nas/changelog/2019-11-28/</guid>
+      <description>
+        
+        
+         2019-11-28  Charges for included baggage Number of baggage shown Baggage references to passengers   
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Integrations: 2019-11-14</title>
+      <link>https://docs.travelgatex.com/integrations/flights/nas/changelog/2019-11-14/</link>
+      <pubDate>Thu, 14 Nov 2019 00:00:00 +0100</pubDate>
+      
+      <guid>https://docs.travelgatex.com/integrations/flights/nas/changelog/2019-11-14/</guid>
+      <description>
+        
+        
+         2019-11-14  Transaction to get a list of supported routes.   
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>TravelgateX Documentation – Scalars</title>
+    <link>https://docs.travelgatex.com/alerts-x/reference/scalars/</link>
+    <description>Recent changes in Scalars on TravelgateX Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <image>
+      <url>https://docs.travelgatex.com/img/hugo.png</url>
+      <title>GoHugo.io</title>
+      <link>https://docs.travelgatex.com/alerts-x/reference/scalars/</link>
+    </image>
+    
+	    <atom:link href="https://docs.travelgatex.com/alerts-x/reference/scalars/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Alerts-X: Boolean</title>
+      <link>https://docs.travelgatex.com/alerts-x/reference/scalars/boolean/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/alerts-x/reference/scalars/boolean/</guid>
+      <description>
+        
+        
+        The Boolean scalar type represents true or false.
+GraphQL schema definition scalar BooleanRequired by AlertCriteriaInput: PageInfo: AlertData: AlertConfiguration: MemberData: GroupData: GroupCommonData: APIData: ResourceData: RoleData: AccessData: SupplierData: Provider: ClientFilter: SystemData: SupplierFilter: OrganizationData: ClientData: ProfileData: AlertInput: Alert information.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Alerts-X: Country</title>
+      <link>https://docs.travelgatex.com/alerts-x/reference/scalars/country/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/alerts-x/reference/scalars/country/</guid>
+      <description>
+        
+        
+         GraphQL schema definition scalar CountryRequired by OrganizationData:  
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Alerts-X: DateTime</title>
+      <link>https://docs.travelgatex.com/alerts-x/reference/scalars/datetime/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/alerts-x/reference/scalars/datetime/</guid>
+      <description>
+        
+        
+         GraphQL schema definition scalar DateTimeRequired by AlertFilterInput: Alert:  Alert nodeNode: Member: Group: API: Resource: Operation: ManagedGroup: Role: Access: Supplier: Organization: System: Domain: Product: Client: Profile: Entity: MacroPermission: Event: Event triggered 
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Alerts-X: DomainName</title>
+      <link>https://docs.travelgatex.com/alerts-x/reference/scalars/domainname/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/alerts-x/reference/scalars/domainname/</guid>
+      <description>
+        
+        
+         GraphQL schema definition scalar DomainNameRequired by DomainData:  
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Alerts-X: Email</title>
+      <link>https://docs.travelgatex.com/alerts-x/reference/scalars/email/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/alerts-x/reference/scalars/email/</guid>
+      <description>
+        
+        
+         GraphQL schema definition scalar Email
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Alerts-X: ID</title>
+      <link>https://docs.travelgatex.com/alerts-x/reference/scalars/id/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/alerts-x/reference/scalars/id/</guid>
+      <description>
+        
+        
+        The ID scalar type represents a unique identifier, often used to refetch an object or as key for a cache. The ID type appears in a JSON response as a String; however, it is not intended to be human-readable. When expected as an input type, any string (such as &amp;quot;4&amp;quot;) or integer (such as 4) input value will be accepted as an ID.
+GraphQL schema definition scalar IDRequired by Alert:  Alert nodeAlertData: AdviseMessage: Node: Member: MemberData: Group: GroupData: GroupCommonData: API: APIData: Resource: ResourceData: Operation: OperationData: ManagedGroup: ManagedGroupData: Role: RoleData: Access: AccessData: Supplier: Parameter: Organization: SupplierData: Provider: AccessFilter: ClientFilter: System: SystemData: SupplierFilter: OrganizationData: Domain: Product: ProductData: DomainData: Client: ClientData: Profile: ProfileData: Entity: MacroPermission: MacroPermissionData: Event: Event triggeredEventData: Event dataAlertInput: Alert information.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Alerts-X: Int</title>
+      <link>https://docs.travelgatex.com/alerts-x/reference/scalars/int/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/alerts-x/reference/scalars/int/</guid>
+      <description>
+        
+        
+        The Int scalar type represents non-fractional signed whole numeric values. Int can represent values between -(2^31) and 2^31 - 1.
+GraphQL schema definition scalar IntRequired by RelayInput: AlertConnection: Alert listAlertConfiguration: EventConnection: Events listAlertTypeConfiguration: Depending on the talert type, typeConfiguration will use some fields AlertPrice: Price contains the specific configuration for Price alert TypeGroupConnection: GroupData: MemberConnection: AccessConnection: SupplierConnection: ClientConnection: ProfileConnection: AccessData: SupplierData: SupplierFilter: AlertConfigurationInputNoTraffic: Configuration for NO_TRAFFIC alert type.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Alerts-X: String</title>
+      <link>https://docs.travelgatex.com/alerts-x/reference/scalars/string/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/alerts-x/reference/scalars/string/</guid>
+      <description>
+        
+        
+        The String scalar type represents textual data, represented as UTF-8 character sequences. The String type is most often used by GraphQL to represent free-form human-readable text.
+GraphQL schema definition scalar StringRequired by RelayInput: AlertEdge: PageInfo: AlertData: AdviseMessage: MemberData: GroupEdge: GroupData: GroupCommonData: MemberEdge: APIEdge: APIData: ResourceEdge: ResourceData: OperationEdge: OperationData: ManagedGroupEdge: RoleData: AccessEdge: AccessData: Error: Parameter: SupplierData: Provider: OrganizationData: ProductEdge: ProductData: SupplierEdge: ClientEdge: ProfileEdge: ProfileData: EntityEdge: RoleEdge: MacroPermissionEdge: MacroPermissionData: EventEdge: EventData: Event dataExternalMessage: AlertInput: Alert information.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Alerts-X: URI</title>
+      <link>https://docs.travelgatex.com/alerts-x/reference/scalars/uri/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/alerts-x/reference/scalars/uri/</guid>
+      <description>
+        
+        
+         GraphQL schema definition scalar URIRequired by Urls:  
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>TravelgateX Documentation – Scalars</title>
+    <link>https://docs.travelgatex.com/stats/reference/scalars/</link>
+    <description>Recent changes in Scalars on TravelgateX Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <image>
+      <url>https://docs.travelgatex.com/img/hugo.png</url>
+      <title>GoHugo.io</title>
+      <link>https://docs.travelgatex.com/stats/reference/scalars/</link>
+    </image>
+    
+	    <atom:link href="https://docs.travelgatex.com/stats/reference/scalars/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Stats: Boolean</title>
+      <link>https://docs.travelgatex.com/stats/reference/scalars/boolean/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/stats/reference/scalars/boolean/</guid>
+      <description>
+        
+        
+         The Boolean scalar type represents true or false.
+GraphQL schema definition scalar BooleanRequired by StatsFilterInput: PageInfo: OperationDetailed: AccessData: SupplierData: Provider: ClientFilter: SystemData: SupplierFilter: GroupData: GroupCommonData: MemberData: RoleData: ResourceData: APIData: ProfileData: OrganizationData: ClientData:  
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Stats: Country</title>
+      <link>https://docs.travelgatex.com/stats/reference/scalars/country/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/stats/reference/scalars/country/</guid>
+      <description>
+        
+        
+         GraphQL schema definition scalar CountryRequired by OrganizationData:  
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Stats: DateTime</title>
+      <link>https://docs.travelgatex.com/stats/reference/scalars/datetime/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/stats/reference/scalars/datetime/</guid>
+      <description>
+        
+        
+         GraphQL schema definition scalar DateTimeRequired by StatsFilterInput: AbsoluteInput: Stats: StatsData: Node: Access: Client: Supplier: Organization: System: Group: Member: MacroPermission: Role: Resource: API: Operation: ManagedGroup: Profile: Entity: Domain: Product: StatsAsset:  
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Stats: DomainName</title>
+      <link>https://docs.travelgatex.com/stats/reference/scalars/domainname/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/stats/reference/scalars/domainname/</guid>
+      <description>
+        
+        
+         GraphQL schema definition scalar DomainNameRequired by DomainData:  
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Stats: Duration</title>
+      <link>https://docs.travelgatex.com/stats/reference/scalars/duration/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/stats/reference/scalars/duration/</guid>
+      <description>
+        
+        
+         GraphQL schema definition scalar DurationRequired by RelativeInput:  
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Stats: ID</title>
+      <link>https://docs.travelgatex.com/stats/reference/scalars/id/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/stats/reference/scalars/id/</guid>
+      <description>
+        
+        
+         The ID scalar type represents a unique identifier, often used to refetch an object or as key for a cache. The ID type appears in a JSON response as a String; however, it is not intended to be human-readable. When expected as an input type, any string (such as &amp;quot;4&amp;quot;) or integer (such as 4) input value will be accepted as an ID.
+GraphQL schema definition scalar IDRequired by AdviseMessage: Stats: Node: Access: Client: AccessData: Supplier: Parameter: Organization: SupplierData: Provider: AccessFilter: ClientFilter: System: SystemData: Group: SupplierFilter: GroupData: Member: GroupCommonData: MemberData: MacroPermission: MacroPermissionData: Role: Resource: API: RoleData: ResourceData: APIData: Operation: OperationData: ManagedGroup: ManagedGroupData: Profile: ProfileData: Entity: OrganizationData: Domain: Product: ProductData: DomainData: ClientData: StatsInfo:  
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Stats: Int</title>
+      <link>https://docs.travelgatex.com/stats/reference/scalars/int/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/stats/reference/scalars/int/</guid>
+      <description>
+        
+        
+         The Int scalar type represents non-fractional signed whole numeric values. Int can represent values between -(2^31) and 2^31 - 1.
+GraphQL schema definition scalar IntRequired by Ratios: AccessData: GroupConnection: SupplierData: AccessConnection: ClientConnection: SupplierFilter: GroupData: MemberConnection: SupplierConnection: ProfileConnection: StatsInfo: StatsAsset:  
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Stats: Int64</title>
+      <link>https://docs.travelgatex.com/stats/reference/scalars/int64/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/stats/reference/scalars/int64/</guid>
+      <description>
+        
+        
+         GraphQL schema definition scalar Int64Required by StatsData: OperationDetailed: StatsInfo:  
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Stats: String</title>
+      <link>https://docs.travelgatex.com/stats/reference/scalars/string/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/stats/reference/scalars/string/</guid>
+      <description>
+        
+        
+         The String scalar type represents textual data, represented as UTF-8 character sequences. The String type is most often used by GraphQL to represent free-form human-readable text.
+GraphQL schema definition scalar StringRequired by StatsEdge: PageInfo: AdviseMessage: AccessData: Error: Parameter: SupplierData: Provider: AccessEdge: ClientEdge: GroupData: GroupCommonData: MemberData: MacroPermissionEdge: MacroPermissionData: RoleData: ResourceEdge: ResourceData: APIData: OperationEdge: OperationData: MemberEdge: APIEdge: ManagedGroupEdge: SupplierEdge: RoleEdge: ProfileEdge: ProfileData: EntityEdge: OrganizationData: ProductEdge: ProductData: GroupEdge: ExternalMessage: ConnectionEdge:  
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Stats: URI</title>
+      <link>https://docs.travelgatex.com/stats/reference/scalars/uri/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/stats/reference/scalars/uri/</guid>
+      <description>
+        
+        
+         GraphQL schema definition scalar URIRequired by Urls: StatsAsset:  
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

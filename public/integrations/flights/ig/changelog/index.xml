@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>TravelgateX Documentation – IG - MeridianaFly Changelog</title>
+    <link>https://docs.travelgatex.com/integrations/flights/ig/changelog/</link>
+    <description>Recent changes in IG - MeridianaFly Changelog on TravelgateX Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 02 Dec 2019 00:00:00 +0100</lastBuildDate>
+    <image>
+      <url>https://docs.travelgatex.com/img/hugo.png</url>
+      <title>GoHugo.io</title>
+      <link>https://docs.travelgatex.com/integrations/flights/ig/changelog/</link>
+    </image>
+    
+	    <atom:link href="https://docs.travelgatex.com/integrations/flights/ig/changelog/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Integrations: 2019-12-02</title>
+      <link>https://docs.travelgatex.com/integrations/flights/ig/changelog/2019-12-02/</link>
+      <pubDate>Mon, 02 Dec 2019 00:00:00 +0100</pubDate>
+      
+      <guid>https://docs.travelgatex.com/integrations/flights/ig/changelog/2019-12-02/</guid>
+      <description>
+        
+        
+         2019-12-02  framework to 4.6.2    when receiving RT request in 1 &amp;ldquo;Desglose&amp;rdquo;   
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

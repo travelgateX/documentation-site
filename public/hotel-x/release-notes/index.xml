@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>TravelgateX Documentation – Release Notes</title>
+    <link>https://docs.travelgatex.com/hotel-x/release-notes/</link>
+    <description>Recent changes in Release Notes on TravelgateX Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <image>
+      <url>https://docs.travelgatex.com/img/hugo.png</url>
+      <title>GoHugo.io</title>
+      <link>https://docs.travelgatex.com/hotel-x/release-notes/</link>
+    </image>
+    
+	    <atom:link href="https://docs.travelgatex.com/hotel-x/release-notes/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Hotel-X: Roadmap</title>
+      <link>https://docs.travelgatex.com/hotel-x/release-notes/roadmap/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/hotel-x/release-notes/roadmap/</guid>
+      <description>
+        
+        
+        We have put together a GitHub Project where we will keep updating on the things we’ve in our plans.
+Here is the GitHub project with Public Roadmap of TravelgateX.
+The Project has a few columns that act as the status whereas cards are the items that we have in our plans. We have also labelled each issue so it would clarify if the item would be added in the HotelX, Documentation, etc&amp;hellip;
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Hotel-X: GraphQL Schema Changes</title>
+      <link>https://docs.travelgatex.com/hotel-x/release-notes/graphql-schema-changes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/hotel-x/release-notes/graphql-schema-changes/</guid>
+      <description>
+        
+        
+        The GraphQL HotelX schema change log is a list of recent and upcoming changes to our GraphQL API schema. It includes backwards-compatible changes, schema previews, and upcoming breaking changes.
+Check out this list of new releases and changes applied on the HotelX GraphQL API.
+Under construction!We have logged this resource on our roadmap and we are currently working through extending all of the resources in our documentation. If you need specific resources (such as this page), please let us know by using one of the following channels:
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Hotel-X: GraphQL Schema breaking changes</title>
+      <link>https://docs.travelgatex.com/hotel-x/release-notes/breaking-changes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/hotel-x/release-notes/breaking-changes/</guid>
+      <description>
+        
+        
+        Changes history of deprecated notes previously announced2020-02-25  Deprecated accessCode from HotelCancelInput. Reason: Use new bookingID instead. Deprecated language from HotelCancelInput. Reason: Use new bookingID instead. Deprecated hotelCode from HotelCancelInput. Reason: Use new bookingID instead. Deprecated reference from HotelCancelInput. Reason: Use new bookingID instead. Deprecated accessCode from HotelCriteriaBookingInput. Reason: Use new bookingID instead. Deprecated language from HotelCriteriaBookingInput. Reason: Use new bookingID instead. Deprecated typeSearch from HotelCriteriaBookingInput. Reason: Use new bookingID instead.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>TravelgateX Documentation – Speed</title>
+    <link>https://docs.travelgatex.com/travelgatex/release-notes/products-changelogs/changelog-speed/</link>
+    <description>Recent changes in Speed on TravelgateX Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 08 Oct 2019 00:00:00 +0200</lastBuildDate>
+    <image>
+      <url>https://docs.travelgatex.com/img/hugo.png</url>
+      <title>GoHugo.io</title>
+      <link>https://docs.travelgatex.com/travelgatex/release-notes/products-changelogs/changelog-speed/</link>
+    </image>
+    
+	    <atom:link href="https://docs.travelgatex.com/travelgatex/release-notes/products-changelogs/changelog-speed/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Travelgatex: Speed</title>
+      <link>https://docs.travelgatex.com/travelgatex/release-notes/products-changelogs/changelog-speed/log/legacy/</link>
+      <pubDate>Tue, 08 Oct 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://docs.travelgatex.com/travelgatex/release-notes/products-changelogs/changelog-speed/log/legacy/</guid>
+      <description>
+        
+        
+        To make it easier for users and contributors to see precisely what notable changes have been made on the product.
+Product Page Link
+All notable changes to this product will be documented in this page.Under construction!We have logged this resource on our roadmap and we are currently working through extending all of the resources in our documentation. If you need specific resources (such as this page), please let us know by using one of the following channels:
+        
+          [...]
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,524 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>TravelgateX Documentation – Products Changelog</title>
+    <link>https://docs.travelgatex.com/tags/products-changelog/</link>
+    <description>Recent changes in Products Changelog on TravelgateX Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 15 Oct 2019 00:00:00 +0200</lastBuildDate>
+    <image>
+      <url>https://docs.travelgatex.com/img/hugo.png</url>
+      <title>GoHugo.io</title>
+      <link>https://docs.travelgatex.com/tags/products-changelog/</link>
+    </image>
+    
+	    <atom:link href="https://docs.travelgatex.com/tags/products-changelog/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Travelgatex: 2019-10-15</title>
+      <link>https://docs.travelgatex.com/travelgatex/release-notes/products-changelogs/changelog-web/log/2019-10-15/</link>
+      <pubDate>Tue, 15 Oct 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://docs.travelgatex.com/travelgatex/release-notes/products-changelogs/changelog-web/log/2019-10-15/</guid>
+      <description>
+        
+        
+         2019-10-15  ACCESES: Added shared field and allowed url edition in acceses. MENU: new horizontal menu.    CONNECT: Modified to choose client before hotelx. PUBLIC WEB: changed info searches/day in home.    PROFILES: tag error on removing category fixed. PRESS: Fixed media processing.   
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Travelgatex: 2019-10-09</title>
+      <link>https://docs.travelgatex.com/travelgatex/release-notes/products-changelogs/changelog-web/log/2019-10-09/</link>
+      <pubDate>Wed, 09 Oct 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://docs.travelgatex.com/travelgatex/release-notes/products-changelogs/changelog-web/log/2019-10-09/</guid>
+      <description>
+        
+        
+         2019-10-09  ALERTS: Added new filters and group by ALERTS: Add API and timesToRecovery    ALERTS: Added new responsive styles    ALERTS: fix on Status ALERTS: fix on Update Price   
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Travelgatex: 2019-09-16</title>
+      <link>https://docs.travelgatex.com/travelgatex/release-notes/products-changelogs/changelog-web/log/2019-09-16/</link>
+      <pubDate>Tue, 08 Oct 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://docs.travelgatex.com/travelgatex/release-notes/products-changelogs/changelog-web/log/2019-09-16/</guid>
+      <description>
+        
+        
+         2019-09-16  Connect: Added VCC to legacy Profiles: Enabled entity asignment to profiles IAM: Added pagination and info to orgs, and profiles page completed    Added gzip compression to calls to the gateway    Alerts: Fixed issue on create new alert Connect: Fixed dates activations   
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Travelgatex: ChannelX</title>
+      <link>https://docs.travelgatex.com/travelgatex/release-notes/products-changelogs/changelog-channelx/log/legacy/</link>
+      <pubDate>Tue, 08 Oct 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://docs.travelgatex.com/travelgatex/release-notes/products-changelogs/changelog-channelx/log/legacy/</guid>
+      <description>
+        
+        
+        To make it easier for users and contributors to see precisely what notable changes have been made on the product.
+Product Page Link
+All notable changes to this product will be documented in this page.Under construction!We have logged this resource on our roadmap and we are currently working through extending all of the resources in our documentation. If you need specific resources (such as this page), please let us know by using one of the following channels:
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Travelgatex: 2019-09-30</title>
+      <link>https://docs.travelgatex.com/travelgatex/release-notes/products-changelogs/changelog-web/log/2019-09-30/</link>
+      <pubDate>Mon, 30 Sep 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://docs.travelgatex.com/travelgatex/release-notes/products-changelogs/changelog-web/log/2019-09-30/</guid>
+      <description>
+        
+        
+         2019-09-30  ENTITIES: Modified access form to custom require runtime configuration    IAM: Changes on new macro roles ORGANIZATIONS: Changed filters to not appear on the request on missing    MEMBERS: Solved an error realated on updating api-keys after a new creation   
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Travelgatex: 2019-08-30</title>
+      <link>https://docs.travelgatex.com/travelgatex/release-notes/products-changelogs/changelog-web/log/2019-08-30/</link>
+      <pubDate>Fri, 30 Aug 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://docs.travelgatex.com/travelgatex/release-notes/products-changelogs/changelog-web/log/2019-08-30/</guid>
+      <description>
+        
+        
+         2019-08-30  IAM: Added owner filter to entities/admin-entities. added new tab for&amp;hellip; Logging: Added hotel reference Members: IAM-macro-roles, added tabs for simple and advanced Alerts: entities by buyer or seller    Logging: References now allows more than one option    Logging: Fixed logging with filter if your not logged on the page   
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Travelgatex: 2019-08-16</title>
+      <link>https://docs.travelgatex.com/travelgatex/release-notes/products-changelogs/changelog-web/log/2019-08-16/</link>
+      <pubDate>Fri, 16 Aug 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://docs.travelgatex.com/travelgatex/release-notes/products-changelogs/changelog-web/log/2019-08-16/</guid>
+      <description>
+        
+        
+         2019-08-16  Logging: Added new feature to set filters via url Alerts: added logic time alerts Connect: modified profile cals and addded premium partner option to connect    Accesses: improved refresh logic when updating accesses IAM Entities: Improved sorting in entities    B2B: Fixed required typename on apis   
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Travelgatex: 2019-07-31</title>
+      <link>https://docs.travelgatex.com/travelgatex/release-notes/products-changelogs/changelog-web/log/2019-07-31/</link>
+      <pubDate>Wed, 31 Jul 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://docs.travelgatex.com/travelgatex/release-notes/products-changelogs/changelog-web/log/2019-07-31/</guid>
+      <description>
+        
+        
+         2019-07-31  Alerts: Added sort to table Stats: traffic type selector Logging: Added column machine to results Logging: Selector items per page Error Messages: added hint description to error code table    Changed format of api-errors    Logging: Fixed error descriptions Profiles: fixed bug that prevented refresh on edit Logging: Added label when reference filters are disabled   
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Travelgatex: 2019-07-15</title>
+      <link>https://docs.travelgatex.com/travelgatex/release-notes/products-changelogs/changelog-web/log/2019-07-15/</link>
+      <pubDate>Mon, 15 Jul 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://docs.travelgatex.com/travelgatex/release-notes/products-changelogs/changelog-web/log/2019-07-15/</guid>
+      <description>
+        
+        
+         2019-07-15  Alerts: added configuration multiselectors Profiles: Fully enabled filter profiles Logging: Added new filter number of results Entities: Added sorting method Profiles: Updated query to look for stats and formated text in profiles    Logging: Filter errors refactored Logging: Added red control to non filled required filters Logging: Changed time to 24h mode, without am/pm    Logging: Logging table wasn&amp;rsquo;t showing the timestamps on firefox, now is fixed Logging: Enable showing organisation suppliers on SELLER mode Logging: Hide the table on no results   
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Travelgatex: 2019-06-28</title>
+      <link>https://docs.travelgatex.com/travelgatex/release-notes/products-changelogs/changelog-web/log/2019-06-28/</link>
+      <pubDate>Fri, 28 Jun 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://docs.travelgatex.com/travelgatex/release-notes/products-changelogs/changelog-web/log/2019-06-28/</guid>
+      <description>
+        
+        
+         2019-06-28  Logging-filter: Implemented ShowOnlyActives filter, added pagination to the results table Added Star-rating component at pages and changed text in people Created internal status page Alerts released on web    Logging-filter: Reorder filter columns, reorder table columns Changed the global header, alerts and organization selector.    Fix on Stats Calendar   
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Insights-X: 2019-11-28</title>
+      <link>https://docs.travelgatex.com/insights-x/release-notes/changelog/2019-11-28/</link>
+      <pubDate>Thu, 28 Nov 2019 00:00:00 +0100</pubDate>
+      
+      <guid>https://docs.travelgatex.com/insights-x/release-notes/changelog/2019-11-28/</guid>
+      <description>
+        
+        
+         2019-11-28  Added the fields client_owner and provider_owner in all the tables of the InsightsX Dataset.    Changed fields availability_index, booking_index and revenue_index by availability_best_compset, booking_best_compset and revenue_best_compset in benchmark tables.   
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Hotel-X: Changelog 2019-11-05</title>
+      <link>https://docs.travelgatex.com/hotel-x/release-notes/changelog/2019-11-05/</link>
+      <pubDate>Tue, 05 Nov 2019 00:00:00 +0100</pubDate>
+      
+      <guid>https://docs.travelgatex.com/hotel-x/release-notes/changelog/2019-11-05/</guid>
+      <description>
+        
+        
+        2020-02-26  Now the booking and cancel services allow the user to retrieve and cancel a book with the new field returned in book response bookingID. You can see more details of bookingID in the documentation here.   2020-02-25  Added new field bookingID into Reference (book, booking and cancel). This bookingID will be useful for booking retrieving and cancelling. Added new field bookingID into HotelCancelInput (cancel). Added new field bookingID into HotelCriteriaBookingInput (booking).
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Flight-X: 2019-10-31</title>
+      <link>https://docs.travelgatex.com/flight-x/release-notes/changelog/2019-10-31/</link>
+      <pubDate>Thu, 31 Oct 2019 00:00:00 +0100</pubDate>
+      
+      <guid>https://docs.travelgatex.com/flight-x/release-notes/changelog/2019-10-31/</guid>
+      <description>
+        
+        
+         2019-10-31  Released first pilot API version and web page for testing.   
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Travelgatex: FlightsX</title>
+      <link>https://docs.travelgatex.com/travelgatex/release-notes/products-changelogs/changelog-flightsx/log/legacy/</link>
+      <pubDate>Tue, 08 Oct 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://docs.travelgatex.com/travelgatex/release-notes/products-changelogs/changelog-flightsx/log/legacy/</guid>
+      <description>
+        
+        
+        To make it easier for users and contributors to see precisely what notable changes have been made on the product.
+Product Page Link
+All notable changes to this product will be documented in this page.Under construction!We have logged this resource on our roadmap and we are currently working through extending all of the resources in our documentation. If you need specific resources (such as this page), please let us know by using one of the following channels:
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Insights-X: 2019-10-04</title>
+      <link>https://docs.travelgatex.com/insights-x/release-notes/changelog/2019-10-04/</link>
+      <pubDate>Fri, 04 Oct 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://docs.travelgatex.com/insights-x/release-notes/changelog/2019-10-04/</guid>
+      <description>
+        
+        
+         2019-10-04  Added new table: daily_portfolio_stats_(buyer|seller)    Changed fields in daily_portfolio_(buyer|seller) table. Added field client_owner, removed fields client_id and username.   
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Stats: 2019-09-19</title>
+      <link>https://docs.travelgatex.com/stats/release-notes/changelog/2019-09-19/</link>
+      <pubDate>Thu, 19 Sep 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://docs.travelgatex.com/stats/release-notes/changelog/2019-09-19/</guid>
+      <description>
+        
+        
+         2019-09-19  Updated changelog   
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Alerts-X: Older</title>
+      <link>https://docs.travelgatex.com/alerts-x/release-notes/changelog/older/</link>
+      <pubDate>Thu, 19 Sep 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://docs.travelgatex.com/alerts-x/release-notes/changelog/older/</guid>
+      <description>
+        
+        
+        2019-08-21  Error to update alerts from price to an other alertType or vice versa.   2019-08-20  New Alert type available PRICE. With this alert type will be posible to set alerts which will advise of amount or commission anomalies for price.   2019-08-12  Error to update alerts in some cases.   2019-08-07  Now is Checked api, operation &amp;amp; errorCode inputs to be sure that exists or its combinations are posible.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Channel-X: Older</title>
+      <link>https://docs.travelgatex.com/channel-x/release-notes/changelog/older/</link>
+      <pubDate>Thu, 19 Sep 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://docs.travelgatex.com/channel-x/release-notes/changelog/older/</guid>
+      <description>
+        
+        
+         2019-06-04  Deletion order when value is -1   
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Distribution: Older</title>
+      <link>https://docs.travelgatex.com/distribution/release-notes/changelog/older/</link>
+      <pubDate>Thu, 19 Sep 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://docs.travelgatex.com/distribution/release-notes/changelog/older/</guid>
+      <description>
+        
+        
+         2019-09-10  Changelog example   
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Hotel-X: Older</title>
+      <link>https://docs.travelgatex.com/hotel-x/release-notes/changelog/older/</link>
+      <pubDate>Thu, 19 Sep 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://docs.travelgatex.com/hotel-x/release-notes/changelog/older/</guid>
+      <description>
+        
+        
+        2019-08-07  Fix Hotel-List repeated Hotels   2019-08-06  Add new enum type PaymentCardType which contain list of supported payment card. Add new field type of type PaymentCardType into PaymentCardInput and deprecate old field cardType Type HotelData introduces field RoomConnection (same type as Rooms service operation) Modified RoomData type by adding the new types RoomSource (string) and OccupancyStatic    Deprecated description from Bed (search) Deprecated KO in BookStatusType
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Insights-X: Older</title>
+      <link>https://docs.travelgatex.com/insights-x/release-notes/changelog/older/</link>
+      <pubDate>Thu, 19 Sep 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://docs.travelgatex.com/insights-x/release-notes/changelog/older/</guid>
+      <description>
+        
+        
+        2019-09-03  Added new table: benchmark_market_city_bw_(daily|weekly|monthly)_(buyer|seller). This one replaces insights_agg_(daily|weekly|monthly)_destination_tgx    Schema modified for tables: insights_(daily|weekly|monthly)_destination_(buyer|seller), insights_agg_(daily|weekly|monthly)_destination_(buyer|seller). Now, country field is outside the record.   2019-08-27  Added FAQs   2019-06-19  Added new tables: insights_(daily|weekly|monthly)_destination_(buyer|seller), insights_agg_(daily|weekly|monthly)_destination_(buyer|seller) and insights_agg_(daily|weekly|monthly)_destination_tgx   2019-06-05  Added new fields in portfolio: zone_1, zone_2, city, username. Added new metrics in portfolio: search_ok,search_nok, quote_ok, quote_nok, booking_ok, booking_nok, cancel_ok, cancel_nok, revenue_net and revenue_unknown.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Logging: Older</title>
+      <link>https://docs.travelgatex.com/logging/release-notes/changelog/older/</link>
+      <pubDate>Thu, 19 Sep 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://docs.travelgatex.com/logging/release-notes/changelog/older/</guid>
+      <description>
+        
+        
+        2019-08-30  Now quotes requested by Speed have the same sessionID that quotes requested by the client in order to identify them.    Now reference filters are arrays in order to be able to request multiple references at once.   2019-08-22  Added the field hotel in the input object reference from which bookings can be searched by the hotel&amp;rsquo;s reference.   2019-08-21  Added new input object timeRange that improves the time filters providing both a relative time filter and an absolute time filter.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Stats: Older</title>
+      <link>https://docs.travelgatex.com/stats/release-notes/changelog/older/</link>
+      <pubDate>Thu, 19 Sep 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://docs.travelgatex.com/stats/release-notes/changelog/older/</guid>
+      <description>
+        
+        
+        2019-08-02  Added a hard limit when an API&amp;rsquo;s response lasts more than 60 seconds. When application hard limit is surpassed, microservice will response with a graceful response (http_status code = 403).   2019-07-22  Added new input object timeRange that improves the time filters providing both a relative time filter and an absolute time filter.   2019-06-12  Fix an error that was causing to have empty operations in the response.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Travelgatex: Older</title>
+      <link>https://docs.travelgatex.com/travelgatex/release-notes/changelog/older/</link>
+      <pubDate>Thu, 19 Sep 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://docs.travelgatex.com/travelgatex/release-notes/changelog/older/</guid>
+      <description>
+        
+        
+        2019-08-29  GraphQL Schema updated.   2019-08-19  GraphQL Schema updated.   2019-08-08  GraphQL Schema updated.   2019-08-05  GraphQL Schema updated.   2019-07-31  New TravelgateX Slack Bot    GraphQL Schema updated.   2019-07-15  GraphQL Schema updated.   2019-07-04  GraphQL Schema updated.   2019-06-25  GraphQL Schema updated.   2019-06-13  GraphQL Schema updated.   2019-06-03  GraphQL Schema updated.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Travelgatex: Insights</title>
+      <link>https://docs.travelgatex.com/travelgatex/release-notes/products-changelogs/changelog-insights/log/legacy/</link>
+      <pubDate>Tue, 08 Oct 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://docs.travelgatex.com/travelgatex/release-notes/products-changelogs/changelog-insights/log/legacy/</guid>
+      <description>
+        
+        
+        To make it easier for users and contributors to see precisely what notable changes have been made on the product.
+Product Page Link
+All notable changes to this product will be documented in this page.Under construction!We have logged this resource on our roadmap and we are currently working through extending all of the resources in our documentation. If you need specific resources (such as this page), please let us know by using one of the following channels:
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Travelgatex: Inventory</title>
+      <link>https://docs.travelgatex.com/travelgatex/release-notes/products-changelogs/changelog-inventory/log/legacy/</link>
+      <pubDate>Tue, 08 Oct 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://docs.travelgatex.com/travelgatex/release-notes/products-changelogs/changelog-inventory/log/legacy/</guid>
+      <description>
+        
+        
+        To make it easier for users and contributors to see precisely what notable changes have been made on the product.
+Product Page Link
+All notable changes to this product will be documented in this page.Under construction!We have logged this resource on our roadmap and we are currently working through extending all of the resources in our documentation. If you need specific resources (such as this page), please let us know by using one of the following channels:
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Travelgatex: Mappea</title>
+      <link>https://docs.travelgatex.com/travelgatex/release-notes/products-changelogs/changelog-mappea/log/legacy/</link>
+      <pubDate>Tue, 08 Oct 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://docs.travelgatex.com/travelgatex/release-notes/products-changelogs/changelog-mappea/log/legacy/</guid>
+      <description>
+        
+        
+        To make it easier for users and contributors to see precisely what notable changes have been made on the product.
+Product Page Link
+All notable changes to this product will be documented in this page.Under construction!We have logged this resource on our roadmap and we are currently working through extending all of the resources in our documentation. If you need specific resources (such as this page), please let us know by using one of the following channels:
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Travelgatex: Speed</title>
+      <link>https://docs.travelgatex.com/travelgatex/release-notes/products-changelogs/changelog-speed/log/legacy/</link>
+      <pubDate>Tue, 08 Oct 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://docs.travelgatex.com/travelgatex/release-notes/products-changelogs/changelog-speed/log/legacy/</guid>
+      <description>
+        
+        
+        To make it easier for users and contributors to see precisely what notable changes have been made on the product.
+Product Page Link
+All notable changes to this product will be documented in this page.Under construction!We have logged this resource on our roadmap and we are currently working through extending all of the resources in our documentation. If you need specific resources (such as this page), please let us know by using one of the following channels:
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Travelgatex: Products changelogs</title>
+      <link>https://docs.travelgatex.com/travelgatex/release-notes/products-changelogs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/travelgatex/release-notes/products-changelogs/</guid>
+      <description>
+        
+        
+        ChannelXContains a curated, chronologically ordered list of notable changes
+FlightsXContains a curated, chronologically ordered list of notable changes
+MappeaContains a curated, chronologically ordered list of notable changes
+InventoryContains a curated, chronologically ordered list of notable changes
+SpeedContains a curated, chronologically ordered list of notable changes
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Travelgatex: Distribution</title>
+      <link>https://docs.travelgatex.com/travelgatex/release-notes/products-changelogs/changelog-distribution/log/legacy/</link>
+      <pubDate>Tue, 08 Oct 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://docs.travelgatex.com/travelgatex/release-notes/products-changelogs/changelog-distribution/log/legacy/</guid>
+      <description>
+        
+        
+        To make it easier for users and contributors to see precisely what notable changes have been made on the product.
+Product Page Link
+All notable changes to this product will be documented in this page.Under construction!We have logged this resource on our roadmap and we are currently working through extending all of the resources in our documentation. If you need specific resources (such as this page), please let us know by using one of the following channels:
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Travelgatex: Stats</title>
+      <link>https://docs.travelgatex.com/travelgatex/release-notes/products-changelogs/changelog-stats/log/legacy/</link>
+      <pubDate>Tue, 08 Oct 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://docs.travelgatex.com/travelgatex/release-notes/products-changelogs/changelog-stats/log/legacy/</guid>
+      <description>
+        
+        
+        To make it easier for users and contributors to see precisely what notable changes have been made on the product.
+Product Page Link
+All notable changes to this product will be documented in this page.Under construction!We have logged this resource on our roadmap and we are currently working through extending all of the resources in our documentation. If you need specific resources (such as this page), please let us know by using one of the following channels:
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Travelgatex: travelgatex.com</title>
+      <link>https://docs.travelgatex.com/travelgatex/release-notes/products-changelogs/changelog-web/log/legacy/</link>
+      <pubDate>Thu, 20 Jun 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://docs.travelgatex.com/travelgatex/release-notes/products-changelogs/changelog-web/log/legacy/</guid>
+      <description>
+        
+        
+        To make it easier for users and contributors to see precisely what notable changes have been made on the web.
+Web site Link
+All notable changes to this product will be documented in this page.2019-06-20  TEAMs: Improved TEAMs page to allow see teams to all TGX operators Stats: Now shows totals and percentatge on all headers IAM Members: Added icon type members to be more clean IAM Members: Improvement to keep groups open at IAM page    Profiles: Revised redirections to all profile pages IAM Members: fixed creation of new members solving issue on granting permissions IAM create organization: New organizations, pattern code has been changed to allow numbers on organization code Stats: stats view all adviseMessages and only reject if error   2019-06-06  IAM admin entities: UX improve, now expanded by default    IAM admin entities: The accesses list weren&amp;rsquo;t showing the supplier data asociated Stats: stats view all adviseMessages and only reject if error   2019-05-29  IAM members: added macro-roles for distribution IAM members: added macro-roles for alerts and agrupations IAM: added &amp;ldquo;suit organization&amp;rdquo; option to adapt organizations to IAM tree structure.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

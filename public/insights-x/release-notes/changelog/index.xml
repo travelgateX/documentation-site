@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>TravelgateX Documentation – Insights-X changelog</title>
+    <link>https://docs.travelgatex.com/insights-x/release-notes/changelog/</link>
+    <description>Recent changes in Insights-X changelog on TravelgateX Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 28 Nov 2019 00:00:00 +0100</lastBuildDate>
+    <image>
+      <url>https://docs.travelgatex.com/img/hugo.png</url>
+      <title>GoHugo.io</title>
+      <link>https://docs.travelgatex.com/insights-x/release-notes/changelog/</link>
+    </image>
+    
+	    <atom:link href="https://docs.travelgatex.com/insights-x/release-notes/changelog/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Insights-X: 2019-11-28</title>
+      <link>https://docs.travelgatex.com/insights-x/release-notes/changelog/2019-11-28/</link>
+      <pubDate>Thu, 28 Nov 2019 00:00:00 +0100</pubDate>
+      
+      <guid>https://docs.travelgatex.com/insights-x/release-notes/changelog/2019-11-28/</guid>
+      <description>
+        
+        
+         2019-11-28  Added the fields client_owner and provider_owner in all the tables of the InsightsX Dataset.    Changed fields availability_index, booking_index and revenue_index by availability_best_compset, booking_best_compset and revenue_best_compset in benchmark tables.   
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Insights-X: 2019-10-04</title>
+      <link>https://docs.travelgatex.com/insights-x/release-notes/changelog/2019-10-04/</link>
+      <pubDate>Fri, 04 Oct 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://docs.travelgatex.com/insights-x/release-notes/changelog/2019-10-04/</guid>
+      <description>
+        
+        
+         2019-10-04  Added new table: daily_portfolio_stats_(buyer|seller)    Changed fields in daily_portfolio_(buyer|seller) table. Added field client_owner, removed fields client_id and username.   
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Insights-X: Older</title>
+      <link>https://docs.travelgatex.com/insights-x/release-notes/changelog/older/</link>
+      <pubDate>Thu, 19 Sep 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://docs.travelgatex.com/insights-x/release-notes/changelog/older/</guid>
+      <description>
+        
+        
+        2019-09-03  Added new table: benchmark_market_city_bw_(daily|weekly|monthly)_(buyer|seller). This one replaces insights_agg_(daily|weekly|monthly)_destination_tgx    Schema modified for tables: insights_(daily|weekly|monthly)_destination_(buyer|seller), insights_agg_(daily|weekly|monthly)_destination_(buyer|seller). Now, country field is outside the record.   2019-08-27  Added FAQs   2019-06-19  Added new tables: insights_(daily|weekly|monthly)_destination_(buyer|seller), insights_agg_(daily|weekly|monthly)_destination_(buyer|seller) and insights_agg_(daily|weekly|monthly)_destination_tgx   2019-06-05  Added new fields in portfolio: zone_1, zone_2, city, username. Added new metrics in portfolio: search_ok,search_nok, quote_ok, quote_nok, booking_ok, booking_nok, cancel_ok, cancel_nok, revenue_net and revenue_unknown.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

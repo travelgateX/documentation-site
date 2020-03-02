@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>TravelgateX Documentation – API Methods</title>
+    <link>https://docs.travelgatex.com/legacy/hotel-suppliers/methods/messages/</link>
+    <description>Recent changes in API Methods on TravelgateX Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <image>
+      <url>https://docs.travelgatex.com/img/hugo.png</url>
+      <title>GoHugo.io</title>
+      <link>https://docs.travelgatex.com/legacy/hotel-suppliers/methods/messages/</link>
+    </image>
+    
+	    <atom:link href="https://docs.travelgatex.com/legacy/hotel-suppliers/methods/messages/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Legacy: Common Elements</title>
+      <link>https://docs.travelgatex.com/legacy/hotel-suppliers/methods/messages/common-elements/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/legacy/hotel-suppliers/methods/messages/common-elements/</guid>
+      <description>
+        
+        
+        This node will be in every request and response objects.
+The request object contains the supplier&amp;rsquo;s configuration, urls and credentials.
+The response object contains the status of the request and any possible errors as well as possible messages from the supplier (if previously requested).
+Common Elements RQ Example &amp;lt;HotelBaseRQ&amp;gt; &amp;lt;echoToken&amp;gt;TEST&amp;lt;/echoToken&amp;gt; &amp;lt;timeoutMilliseconds&amp;gt;20000&amp;lt;/timeoutMilliseconds&amp;gt; &amp;lt;source&amp;gt; &amp;lt;agencyCode&amp;gt;XXXX&amp;lt;/agencyCode&amp;gt; &amp;lt;languageCode&amp;gt;es&amp;lt;/languageCode&amp;gt; &amp;lt;/source&amp;gt; &amp;lt;filterAuditData&amp;gt; &amp;lt;registerTransactions&amp;gt;true&amp;lt;/registerTransactions&amp;gt; &amp;lt;/filterAuditData&amp;gt; &amp;lt;optionsQuota&amp;gt;500&amp;lt;/optionsQuota&amp;gt; &amp;lt;ContinuationToken expectedRange = &amp;quot;6000&amp;quot;&amp;gt;&amp;lt;/ContinuationToken&amp;gt; &amp;lt;Configuration&amp;gt; &amp;lt;User&amp;gt;USERXX&amp;lt;/User&amp;gt; &amp;lt;Password&amp;gt;PWXX&amp;lt;/Password&amp;gt; &amp;lt;UrlAvail&amp;gt;www.supplier.com/avail&amp;lt;/UrlAvail&amp;gt; &amp;lt;UrlReservation&amp;gt;www.supplier.com/reservation&amp;lt;/UrlReservation&amp;gt; &amp;lt;UrlValuation&amp;gt;www.supplier.com/valuation&amp;lt;/UrlValuation&amp;gt; &amp;lt;UrlGeneric&amp;gt;www.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Legacy: Lists of Data</title>
+      <link>https://docs.travelgatex.com/legacy/hotel-suppliers/methods/messages/listsdata/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/legacy/hotel-suppliers/methods/messages/listsdata/</guid>
+      <description>
+        
+        
+        Method Goals This paragraph aims to return all of the data lists used in our system: language codes, error codes,currency list, credit cards, nationality and market.
+Language Codes    Language Code     English en   Spanish es   Portuguese pt   Italian it   French fr   German de   Brazilian br    Error codes    Code Description     101 System Exception (Exception not controlled or not classified as general exception).
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Legacy: Examples</title>
+      <link>https://docs.travelgatex.com/legacy/hotel-suppliers/methods/messages/examples/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/legacy/hotel-suppliers/methods/messages/examples/</guid>
+      <description>
+        
+        
+        In this page you can download a Postman project where you will find an example of each request from TravelgateX API with the connectivity already configured.
+Only changes needed are the endpoint and the configuration in the requests:
+  You can download the Postman example project here
+Example of request the seller will receive from TravelgateX system:
+Post headers:
+Content-Type: text/xml; charset=utf-8 Accept: application/xml Expect: 100-continue Accept-Encoding: gzip Connection: Keep-Alive  Post body:
+        
+          [...]
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>TravelgateX Documentation – DE - Condor Changelog</title>
+    <link>https://docs.travelgatex.com/integrations/flights/de2/changelog/</link>
+    <description>Recent changes in DE - Condor Changelog on TravelgateX Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 20 Jan 2019 00:00:00 +0100</lastBuildDate>
+    <image>
+      <url>https://docs.travelgatex.com/img/hugo.png</url>
+      <title>GoHugo.io</title>
+      <link>https://docs.travelgatex.com/integrations/flights/de2/changelog/</link>
+    </image>
+    
+	    <atom:link href="https://docs.travelgatex.com/integrations/flights/de2/changelog/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Integrations: 2019-01-20</title>
+      <link>https://docs.travelgatex.com/integrations/flights/de2/changelog/2020-01-16/</link>
+      <pubDate>Sun, 20 Jan 2019 00:00:00 +0100</pubDate>
+      
+      <guid>https://docs.travelgatex.com/integrations/flights/de2/changelog/2020-01-16/</guid>
+      <description>
+        
+        
+        ##2019-01-20  ValoracionRS passenger reference issue
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

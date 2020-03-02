@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>TravelgateX Documentation – Scalars</title>
+    <link>https://docs.travelgatex.com/paymentx/reference/scalars/</link>
+    <description>Recent changes in Scalars on TravelgateX Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <image>
+      <url>https://docs.travelgatex.com/img/hugo.png</url>
+      <title>GoHugo.io</title>
+      <link>https://docs.travelgatex.com/paymentx/reference/scalars/</link>
+    </image>
+    
+	    <atom:link href="https://docs.travelgatex.com/paymentx/reference/scalars/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Paymentx: Boolean</title>
+      <link>https://docs.travelgatex.com/paymentx/reference/scalars/boolean/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/paymentx/reference/scalars/boolean/</guid>
+      <description>
+        
+        
+         The Boolean scalar type represents true or false.
+GraphQL schema definition scalar BooleanRequired by PageInfo: GroupData: GroupCommonData: MemberData: RoleData: ResourceData: APIData: AccessData: SupplierData: Provider: ClientFilter: SystemData: SupplierFilter: OrganizationData: ClientData: ProfileData:  
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Paymentx: CVC</title>
+      <link>https://docs.travelgatex.com/paymentx/reference/scalars/cvc/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/paymentx/reference/scalars/cvc/</guid>
+      <description>
+        
+        
+         GraphQL schema definition scalar CVCRequired by PaymentXStoredCardData: PaymentXStoredCardInput:  
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Paymentx: CardNumber</title>
+      <link>https://docs.travelgatex.com/paymentx/reference/scalars/cardnumber/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/paymentx/reference/scalars/cardnumber/</guid>
+      <description>
+        
+        
+         GraphQL schema definition scalar CardNumberRequired by PaymentXStoredCardData: PaymentXStoredCardInput:  
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Paymentx: Country</title>
+      <link>https://docs.travelgatex.com/paymentx/reference/scalars/country/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/paymentx/reference/scalars/country/</guid>
+      <description>
+        
+        
+         GraphQL schema definition scalar CountryRequired by OrganizationData:  
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Paymentx: Date</title>
+      <link>https://docs.travelgatex.com/paymentx/reference/scalars/date/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/paymentx/reference/scalars/date/</guid>
+      <description>
+        
+        
+         GraphQL schema definition scalar DateRequired by PaymentXStoredCardData: PaymentXStoredCardInput:  
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Paymentx: DateTime</title>
+      <link>https://docs.travelgatex.com/paymentx/reference/scalars/datetime/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/paymentx/reference/scalars/datetime/</guid>
+      <description>
+        
+        
+         GraphQL schema definition scalar DateTimeRequired by PaymentXStoredCardFilterInput: PaymentXStoredCard: Node: Group: PointOfSale: Member: MacroPermission: Role: Resource: API: Operation: ManagedGroup: Access: Supplier: Organization: System: Domain: Product: Client: Profile: Entity:  
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Paymentx: DomainName</title>
+      <link>https://docs.travelgatex.com/paymentx/reference/scalars/domainname/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/paymentx/reference/scalars/domainname/</guid>
+      <description>
+        
+        
+         GraphQL schema definition scalar DomainNameRequired by DomainData:  
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Paymentx: ID</title>
+      <link>https://docs.travelgatex.com/paymentx/reference/scalars/id/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/paymentx/reference/scalars/id/</guid>
+      <description>
+        
+        
+         The ID scalar type represents a unique identifier, often used to refetch an object or as key for a cache. The ID type appears in a JSON response as a String; however, it is not intended to be human-readable. When expected as an input type, any string (such as &amp;quot;4&amp;quot;) or integer (such as 4) input value will be accepted as an ID.
+GraphQL schema definition scalar IDRequired by AdviseMessage: PaymentXStoredCardIDInput: PaymentXStoredCard: Node: Group: PointOfSale: GroupData: Member: GroupCommonData: MemberData: MacroPermission: MacroPermissionData: Role: Resource: API: RoleData: ResourceData: APIData: Operation: OperationData: ManagedGroup: ManagedGroupData: Access: AccessData: Supplier: Parameter: Organization: SupplierData: Provider: AccessFilter: ClientFilter: System: SystemData: SupplierFilter: OrganizationData: Domain: Product: ProductData: DomainData: Client: ClientData: Profile: ProfileData: Entity: PointOfSaleData: PaymentXStoredCardInput:  
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Paymentx: Int</title>
+      <link>https://docs.travelgatex.com/paymentx/reference/scalars/int/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/paymentx/reference/scalars/int/</guid>
+      <description>
+        
+        
+         The Int scalar type represents non-fractional signed whole numeric values. Int can represent values between -(2^31) and 2^31 - 1.
+GraphQL schema definition scalar IntRequired by PaymentXExpireDate: GroupData: GroupConnection: MemberConnection: AccessConnection: SupplierConnection: ClientConnection: ProfileConnection: AccessData: SupplierData: SupplierFilter: ExpireDateInput:  
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Paymentx: String</title>
+      <link>https://docs.travelgatex.com/paymentx/reference/scalars/string/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/paymentx/reference/scalars/string/</guid>
+      <description>
+        
+        
+         The String scalar type represents textual data, represented as UTF-8 character sequences. The String type is most often used by GraphQL to represent free-form human-readable text.
+GraphQL schema definition scalar StringRequired by AdviseMessage: PaymentXStoredCardIDInput: ExternalMessage: HolderInput: PaymentXStoredCardEdge: PageInfo: PaymentXStoredCardData: Holder: GroupData: GroupCommonData: GroupEdge: MemberData: MacroPermissionEdge: MacroPermissionData: RoleData: ResourceEdge: ResourceData: APIData: OperationEdge: OperationData: MemberEdge: APIEdge: ManagedGroupEdge: AccessEdge: AccessData: Error: Parameter: SupplierData: Provider: OrganizationData: ProductEdge: ProductData: SupplierEdge: ClientEdge: RoleEdge: ProfileEdge: ProfileData: EntityEdge: PointOfSaleData: PaymentXStoredCardInput:  
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Paymentx: URI</title>
+      <link>https://docs.travelgatex.com/paymentx/reference/scalars/uri/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/paymentx/reference/scalars/uri/</guid>
+      <description>
+        
+        
+         GraphQL schema definition scalar URIRequired by Urls:  
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

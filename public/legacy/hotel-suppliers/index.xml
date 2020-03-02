@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>TravelgateX Documentation – Hotel Suppliers API</title>
+    <link>https://docs.travelgatex.com/legacy/hotel-suppliers/</link>
+    <description>Recent changes in Hotel Suppliers API on TravelgateX Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <image>
+      <url>https://docs.travelgatex.com/img/hugo.png</url>
+      <title>GoHugo.io</title>
+      <link>https://docs.travelgatex.com/legacy/hotel-suppliers/</link>
+    </image>
+    
+	    <atom:link href="https://docs.travelgatex.com/legacy/hotel-suppliers/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Legacy: Overview</title>
+      <link>https://docs.travelgatex.com/legacy/hotel-suppliers/overview/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/legacy/hotel-suppliers/overview/</guid>
+      <description>
+        
+        
+        Overview of product
+Travelgate-X offers the possibility for you to integrate our API and start selling to our portfolio of Buyers just as quick as you can finish the development! When you integrate our API, your system will be able to receive Travelgate&amp;rsquo;s methods and you will be ready to sell!
+To be able to explain exactly how this connectivity works we will define 3 concepts:
+ Buyer: system sending requests to obtain the product (availability) with the purpose of booking.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Legacy: FAQ</title>
+      <link>https://docs.travelgatex.com/legacy/hotel-suppliers/faq/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/legacy/hotel-suppliers/faq/</guid>
+      <description>
+        
+        
+        What is the workflow for hotel reservation?
+Our workflow has three mandatory steps: Availability (avail), Valuation and Reservation, always in this order. See Booking Flow page.
+What does PVP mean?
+PVP is public sale price in Spanish and it means the price you shoud sell the hotel to your customer. If it&amp;rsquo;s binding, you must sell at least at this price, not less. More info below.
+How does the price work and how should I interpret the value in the field &amp;ldquo;commission&amp;rdquo;?
+        
+          [...]
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

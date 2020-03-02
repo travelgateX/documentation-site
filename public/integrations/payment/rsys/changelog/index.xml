@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>TravelgateX Documentation – RSYS - Redsysx Changelog</title>
+    <link>https://docs.travelgatex.com/integrations/payment/rsys/changelog/</link>
+    <description>Recent changes in RSYS - Redsysx Changelog on TravelgateX Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 06 Feb 2020 00:00:00 +0100</lastBuildDate>
+    <image>
+      <url>https://docs.travelgatex.com/img/hugo.png</url>
+      <title>GoHugo.io</title>
+      <link>https://docs.travelgatex.com/integrations/payment/rsys/changelog/</link>
+    </image>
+    
+	    <atom:link href="https://docs.travelgatex.com/integrations/payment/rsys/changelog/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Integrations: 2020-02-06</title>
+      <link>https://docs.travelgatex.com/integrations/payment/rsys/changelog/2020-02-06/</link>
+      <pubDate>Thu, 06 Feb 2020 00:00:00 +0100</pubDate>
+      
+      <guid>https://docs.travelgatex.com/integrations/payment/rsys/changelog/2020-02-06/</guid>
+      <description>
+        
+        
+         2020-01-17  Fixed transaction code for refunds   
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Integrations: 2020-01-17</title>
+      <link>https://docs.travelgatex.com/integrations/payment/rsys/changelog/2020-01-17/</link>
+      <pubDate>Fri, 17 Jan 2020 00:00:00 +0100</pubDate>
+      
+      <guid>https://docs.travelgatex.com/integrations/payment/rsys/changelog/2020-01-17/</guid>
+      <description>
+        
+        
+         2020-01-17  Fixed languages codes   
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

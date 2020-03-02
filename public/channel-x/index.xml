@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>TravelgateX Documentation – Channel-X</title>
+    <link>https://docs.travelgatex.com/channel-x/</link>
+    <description>Recent changes in Channel-X on TravelgateX Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <image>
+      <url>https://docs.travelgatex.com/img/hugo.png</url>
+      <title>GoHugo.io</title>
+      <link>https://docs.travelgatex.com/channel-x/</link>
+    </image>
+    
+	    <atom:link href="https://docs.travelgatex.com/channel-x/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Channel-X: Overview</title>
+      <link>https://docs.travelgatex.com/channel-x/overview/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/channel-x/overview/</guid>
+      <description>
+        
+        
+        This tool extracts the product loaded at InventoryX and sends it to a third partner, normally an OTA. These clients will have the option of loading all the product in their system by selecting the Full Copy tab in InventoryX&amp;rsquo;s extranet, having the possibility to only select the hotels they are interested in copying. Also, each update the provider will be notified to the client in a smaller product request, as they will only receive information that has changed.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

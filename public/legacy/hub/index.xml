@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>TravelgateX Documentation – Hub Documentation</title>
+    <link>https://docs.travelgatex.com/legacy/hub/</link>
+    <description>Recent changes in Hub Documentation on TravelgateX Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <image>
+      <url>https://docs.travelgatex.com/img/hugo.png</url>
+      <title>GoHugo.io</title>
+      <link>https://docs.travelgatex.com/legacy/hub/</link>
+    </image>
+    
+	    <atom:link href="https://docs.travelgatex.com/legacy/hub/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Legacy: Changelog</title>
+      <link>https://docs.travelgatex.com/legacy/hub/change-log-front/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/legacy/hub/change-log-front/</guid>
+      <description>
+        
+        
+        ​
+2019-09-12 ​  Added log system to detect clients that not use Gzip. Added code to send requests to the new serviceIntegration. Added stats to check the requests of the clients. Added header TGX-Audit when audit is enabled by database. Added key in consul to set an environment as down. Usefull for deploys.  
+ Improve the cache of authorization permisions. This reduces the response time when caché is expired and must be reloaded.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Legacy: Data Structure</title>
+      <link>https://docs.travelgatex.com/legacy/hub/data-structure/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/legacy/hub/data-structure/</guid>
+      <description>
+        
+        
+        There is one XML API structure used for all integration services.
+The API structure has common elements and inside the body there are specific XML elements depending on the type of integration .
+For more detailed information on the specific XML elements inside the requests and response objects, please choose from the API documentations below:
+ Hotel API Transportation API Car API Transfers API Tour Activity API  API Methods All API methods support one supplier per transaction except for Availability.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Legacy: Example Code</title>
+      <link>https://docs.travelgatex.com/legacy/hub/example-codes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/legacy/hub/example-codes/</guid>
+      <description>
+        
+        
+        Visual Basic .NET Example Imports System.Net Imports System.ServiceModel.Channels Imports System.Security.Cryptography.X509Certificates Imports System.Net.Security Imports System.ServiceModel Imports ClientWCF.ServiceReferenceHotelInsecure Module ExampleConnectionVB Sub Main() HUB_Call() End Sub Public Sub HUB_Call() Dim timeout As Integer = 20000 &#39;Runtime Setted Dim user As String = &amp;quot;xxx&amp;quot; &#39;Provided by XML Travelgate Dim pass As String = &amp;quot;xxx&amp;quot; &#39;Provided by XML Travelgate &#39;&#39;Conexin por HTTP Dim url As String = &amp;quot;http://hubhotelbatch.xmltravelgate.com/Service/Travel/v2/HotelBatch.svc&amp;quot; Dim binding As Binding binding = CreateBinding(timeout) &#39;&#39;Conexin por HTTPS &#39;Dim url As String = &amp;quot;https://hubhotelbatch.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Legacy: Hub Quotas</title>
+      <link>https://docs.travelgatex.com/legacy/hub/quotas/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/legacy/hub/quotas/</guid>
+      <description>
+        
+        
+        This section enumerates basic quotas and throttling thresholds in XML Travelgate Hub:
+   Quota Name Scope Type Behaviour when exceeded Value     Message size for Http Request System-wide Static Incoming messages will be rejected and an exception will be received by the calling code. 128KB   Request Min. Timeout Milliseconds Travel Operation Static Incoming messages with less timeout will be rejected and an error will be received by the calling code.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

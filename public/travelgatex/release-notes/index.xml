@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>TravelgateX Documentation – Release Notes</title>
+    <link>https://docs.travelgatex.com/travelgatex/release-notes/</link>
+    <description>Recent changes in Release Notes on TravelgateX Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <image>
+      <url>https://docs.travelgatex.com/img/hugo.png</url>
+      <title>GoHugo.io</title>
+      <link>https://docs.travelgatex.com/travelgatex/release-notes/</link>
+    </image>
+    
+	    <atom:link href="https://docs.travelgatex.com/travelgatex/release-notes/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Travelgatex: Roadmap</title>
+      <link>https://docs.travelgatex.com/travelgatex/release-notes/roadmap/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/travelgatex/release-notes/roadmap/</guid>
+      <description>
+        
+        
+        We have put together a GitHub Project where we will keep updating on the things we’ve in our plans.
+Here is the GitHub project with Public Roadmap of TravelgateX.
+The Project has a few columns that act as the status whereas cards are the items that we have in our plans. We have also labelled each issue so it would clarify if the item would be added in the HotelX, Documentation, etc&amp;hellip;
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Travelgatex: GraphQL Schema Changes</title>
+      <link>https://docs.travelgatex.com/travelgatex/release-notes/graphql-schema-changes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/travelgatex/release-notes/graphql-schema-changes/</guid>
+      <description>
+        
+        
+        The GraphQL schema change log is a list of recent and upcoming changes to our GraphQL API schema. It includes backwards-compatible changes, schema previews, and upcoming breaking changes.
+Check out this list of new releases and changes applied on the TravelgateX GraphQL API.
+2020-01-07 ✅ Input field country was added to input object type UpdateGroupInput
+✅ Input field country was added to input object type CreateOrganizationInput
+✅ Input field deletedAt_gte was added to input object type HotelXHotelFilterInput
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Travelgatex: GraphQL Schema breaking changes</title>
+      <link>https://docs.travelgatex.com/travelgatex/release-notes/breaking-changes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/travelgatex/release-notes/breaking-changes/</guid>
+      <description>
+        
+        
+        Changes history of deprecated notes previously announcedUnreleased  Removal of distribute from AddOns. Reason: You can find it in distribution AddOn. Deprecated on 2018-05-21.To be removed soon. Removal of entities from AdminQuery. Reason: Only for statsX product. Use client, supplier, accesess queries. Deprecated on 2019-08-21.To be removed soon. Removal of type from AdviseMessage. Reason: . Deprecated on 2018-06-01.To be removed soon. Removal of description from Bed. Reason: Deprecated from 2019-07-29.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

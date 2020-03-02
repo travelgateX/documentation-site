@@ -1,0 +1,52 @@
+.autocomplete-suggestions {
+    text-align: left;
+    cursor: default;
+    background: #fff;
+    transition: left 0.1s ease-in-out;
+    -webkit-box-shadow: 1px 1px 3px 0 rgba(216, 227, 232, 0.49);
+    box-shadow: 1px 1px 3px 0 rgba(216, 227, 232, 0.49);
+    border-radius: 2px;
+    
+    /* core styles should not be changed */
+    position: absolute;
+    display: none;
+    z-index: 9999;
+    max-height: 70vh;
+    width: 265px;
+    overflow: hidden;
+    overflow-y: hidden;
+    box-sizing: border-box;
+    
+}
+.autocomplete-suggestion {
+    position: relative;
+    cursor: pointer;
+    padding: 7px;
+    line-height: 23px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #182945;
+    border-left: 3px solid transparent;
+}
+
+.autocomplete-suggestion b {
+    font-weight: normal;
+    color: #1f8dd6;
+}
+
+.autocomplete-suggestion.selected {
+    background-color:#f7f8f9;
+    border-left:3px solid #0754ae;
+    color: #182954;
+}
+
+.autocomplete-suggestion:hover {
+    background-color:#f7f8f9;
+    border-left:3px solid #0754ae;
+    color: #182954;
+}
+
+.autocomplete-suggestion > .context {
+    font-size: 12px;
+}

@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>TravelgateX Documentation – Input objects</title>
+    <link>https://docs.travelgatex.com/alerts-x/reference/inputobjects/</link>
+    <description>Recent changes in Input objects on TravelgateX Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <image>
+      <url>https://docs.travelgatex.com/img/hugo.png</url>
+      <title>GoHugo.io</title>
+      <link>https://docs.travelgatex.com/alerts-x/reference/inputobjects/</link>
+    </image>
+    
+	    <atom:link href="https://docs.travelgatex.com/alerts-x/reference/inputobjects/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Alerts-X: AccessFilter</title>
+      <link>https://docs.travelgatex.com/alerts-x/reference/inputobjects/accessfilter/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/alerts-x/reference/inputobjects/accessfilter/</guid>
+      <description>
+        
+        
+         GraphQL schema definition type AccessFilter {accessID: [ID] group: [ID] owner: [ID!] Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields accessID([ID]):group([ID]):owner([ID!]): 
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Alerts-X: AlertConfigurationInputAverageTime</title>
+      <link>https://docs.travelgatex.com/alerts-x/reference/inputobjects/alertconfigurationinputaveragetime/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/alerts-x/reference/inputobjects/alertconfigurationinputaveragetime/</guid>
+      <description>
+        
+        
+        Configuration for AVERAGE_TIME. Average time is used to verify requests times. There are 3 options: - OPTION 1: Can verify average time traffic of a time frame and compare it with an other time frame. (window and historical window) Must set field window and historical windows higher than 0. - OPTION 2: Can verify average time traffic of a time frame and compare it with the value max_average. Must set window higher than 0.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Alerts-X: AlertConfigurationInputErrorRate</title>
+      <link>https://docs.travelgatex.com/alerts-x/reference/inputobjects/alertconfigurationinputerrorrate/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/alerts-x/reference/inputobjects/alertconfigurationinputerrorrate/</guid>
+      <description>
+        
+        
+        Configuration for ERROR_RATE alert type. Error rate alert is used to verify traffic comparing its error codes. Ther are two options. - OPTION 1: Can verify traffic of a time frame. Must set window field higher than 0. - OPTION 2: Can verify traffic of a specific number of requests. Must set window field as 0 and minNumRequest higher than 0.
+GraphQL schema definition type AlertConfigurationInputErrorRate {toCheck: [Int!
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Alerts-X: AlertConfigurationInputNoTraffic</title>
+      <link>https://docs.travelgatex.com/alerts-x/reference/inputobjects/alertconfigurationinputnotraffic/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/alerts-x/reference/inputobjects/alertconfigurationinputnotraffic/</guid>
+      <description>
+        
+        
+        Configuration for NO_TRAFFIC alert type. No traffic alert is used to verify if there is traffic according to the parameters of the alert.
+GraphQL schema definition type AlertConfigurationInputNoTraffic {periodicity: Int window: Int timesToAlert: Int! timesToRecovery: Int noRecoveries: Boolean! stateChangesOnly: Boolean! minNumberRequests: Int! email: [EmailInput]! hubStatus: [HubStatusInput!
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Alerts-X: AlertConfigurationInputPeakTraffic</title>
+      <link>https://docs.travelgatex.com/alerts-x/reference/inputobjects/alertconfigurationinputpeaktraffic/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/alerts-x/reference/inputobjects/alertconfigurationinputpeaktraffic/</guid>
+      <description>
+        
+        
+        Configuration for PEAK_TRAFFIC alert type. Peak traffic is used to verify traffic comparing volum of requests between to time frame (window and historical window) .
+GraphQL schema definition type AlertConfigurationInputPeakTraffic {historicalWindow: Int offset: Int periodicity: Int window: Int! timesToAlert: Int! timesToRecovery: Int noRecoveries: Boolean! stateChangesOnly: Boolean! minNumberRequests: Int!
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Alerts-X: AlertConfigurationInputPrice</title>
+      <link>https://docs.travelgatex.com/alerts-x/reference/inputobjects/alertconfigurationinputprice/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/alerts-x/reference/inputobjects/alertconfigurationinputprice/</guid>
+      <description>
+        
+        
+        GraphQL schema definition type AlertConfigurationInputPrice {periodicity: Int! window: Int! timesToAlert: Int! timesToRecovery: Int noRecoveries: Boolean! stateChangesOnly: Boolean! minNumberRequests: Int! percentageToAlert: Int! email: [EmailInput]! supplier: [AlertObjectInput!] client: [AlertObjectInput!] group: [AlertGroupInput!] access: [AlertObjectInput!] operation: [AlertObjectInput!
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Alerts-X: AlertCriteriaInput</title>
+      <link>https://docs.travelgatex.com/alerts-x/reference/inputobjects/alertcriteriainput/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/alerts-x/reference/inputobjects/alertcriteriainput/</guid>
+      <description>
+        
+        
+         GraphQL schema definition type AlertCriteriaInput {alertCodes: [ID!] isActive: Boolean groups: [ID!] shared: [SharedType!] Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields alertCodes([ID!]):isActive(Boolean):groups([ID!]):shared([SharedType!]): 
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Alerts-X: AlertFilterInput</title>
+      <link>https://docs.travelgatex.com/alerts-x/reference/inputobjects/alertfilterinput/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/alerts-x/reference/inputobjects/alertfilterinput/</guid>
+      <description>
+        
+        
+        GraphQL schema definition type AlertFilterInput {AND: [AlertFilterInput!] OR: [AlertFilterInput!] createdAt_in: [DateTime!] createdAt_not_in: [DateTime!] createdAt_lt: DateTime createdAt_lte: DateTime createdAt_gt: DateTime createdAt_gte: DateTime updatedAt_in: [DateTime!] updatedAt_not_in: [DateTime!] updatedAt_lt: DateTime updatedAt_lte: DateTime updatedAt_gt: DateTime updatedAt_gte: DateTime Show deprecated fields}window.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Alerts-X: AlertGroupInput</title>
+      <link>https://docs.travelgatex.com/alerts-x/reference/inputobjects/alertgroupinput/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/alerts-x/reference/inputobjects/alertgroupinput/</guid>
+      <description>
+        
+        
+         GraphQL schema definition type AlertGroupInput {code: ID! comercialType: ComercialType! isInclusive: Boolean! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields code(ID!):comercialType(ComercialType!):isInclusive(Boolean!): 
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Alerts-X: AlertInput</title>
+      <link>https://docs.travelgatex.com/alerts-x/reference/inputobjects/alertinput/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/alerts-x/reference/inputobjects/alertinput/</guid>
+      <description>
+        
+        
+        Alert information. Only one configuration has to be set at once.
+GraphQL schema definition type AlertInput {name: String description: String configurationNoTraffic: AlertConfigurationInputNoTraffic configurationErrorRate: AlertConfigurationInputErrorRate configurationAverageTime: AlertConfigurationInputAverageTime configurationPeakTraffic: AlertConfigurationInputPeakTraffic configurationPrice: AlertConfigurationInputPrice isActive: Boolean! group: ID! Show deprecated fields}window.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Alerts-X: AlertObjectInput</title>
+      <link>https://docs.travelgatex.com/alerts-x/reference/inputobjects/alertobjectinput/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/alerts-x/reference/inputobjects/alertobjectinput/</guid>
+      <description>
+        
+        
+         GraphQL schema definition type AlertObjectInput {code: ID! isInclusive: Boolean! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields code(ID!):isInclusive(Boolean!): 
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Alerts-X: AlertPriceInput</title>
+      <link>https://docs.travelgatex.com/alerts-x/reference/inputobjects/alertpriceinput/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/alerts-x/reference/inputobjects/alertpriceinput/</guid>
+      <description>
+        
+        
+        Price input
+GraphQL schema definition type AlertPriceInput {mode: ModePrice! check: CheckPrice! range: RangePrice! amount: Int commission: Int Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields mode(ModePrice!):UNIT: to be informed for each transaction that matches the amount / commission PERCENTAGE: to be advise if a percentage of traffic matches the amount / commissioncheck(CheckPrice!
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Alerts-X: AlertPriceUpdateInput</title>
+      <link>https://docs.travelgatex.com/alerts-x/reference/inputobjects/alertpriceupdateinput/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/alerts-x/reference/inputobjects/alertpriceupdateinput/</guid>
+      <description>
+        
+        
+        Price update
+GraphQL schema definition type AlertPriceUpdateInput {mode: ModePrice check: CheckPrice range: RangePrice amount: Int commission: Int Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields mode(ModePrice):UNIT: to be informed for each transaction that matches the amount / commission PERCENTAGE: to be advise if a percentage of traffic matches the amount / commissioncheck(CheckPrice):Specify which field is going to be checked.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Alerts-X: AlertUpdateConfigurationInputAverageTime</title>
+      <link>https://docs.travelgatex.com/alerts-x/reference/inputobjects/alertupdateconfigurationinputaveragetime/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/alerts-x/reference/inputobjects/alertupdateconfigurationinputaveragetime/</guid>
+      <description>
+        
+        
+        Configuration for AVERAGE_TIME. Average time is used to verify requests times. There are 3 options: - OPTION 1: Can verify average time traffic of a time frame and compare it with an other time frame. (window and historical window) Must set field window and historical windows higher than 0. - OPTION 2: Can verify average time traffic of a time frame and compare it with the value max_average. Must set window higher than 0.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Alerts-X: AlertUpdateConfigurationInputErrorRate</title>
+      <link>https://docs.travelgatex.com/alerts-x/reference/inputobjects/alertupdateconfigurationinputerrorrate/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/alerts-x/reference/inputobjects/alertupdateconfigurationinputerrorrate/</guid>
+      <description>
+        
+        
+        Configuration update for error rate alert type. Error rate alert is used to verify traffic comparing its error codes. Ther are to options. - OPTION 1: Can verify traffic of a time frame. Set window field higher than 0. - OPTION 2: Can verify traffic of a specific number of requests. Set window fild as 0 and minNumRequest higher than 0.
+GraphQL schema definition type AlertUpdateConfigurationInputErrorRate {toCheck: [Int!
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Alerts-X: AlertUpdateConfigurationInputNoTraffic</title>
+      <link>https://docs.travelgatex.com/alerts-x/reference/inputobjects/alertupdateconfigurationinputnotraffic/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/alerts-x/reference/inputobjects/alertupdateconfigurationinputnotraffic/</guid>
+      <description>
+        
+        
+        Confiuration update for NO_TRAFFIC alert type. No traffic alert is used to verify if there is traffic according to the parameters of the alert.
+GraphQL schema definition type AlertUpdateConfigurationInputNoTraffic {periodicity: Int window: Int timesToAlert: Int timesToRecovery: Int noRecoveries: Boolean stateChangesOnly: Boolean minNumberRequests: Int email: [EmailInput] hubStatus: [HubStatusInput!
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Alerts-X: AlertUpdateConfigurationInputPeakTraffic</title>
+      <link>https://docs.travelgatex.com/alerts-x/reference/inputobjects/alertupdateconfigurationinputpeaktraffic/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/alerts-x/reference/inputobjects/alertupdateconfigurationinputpeaktraffic/</guid>
+      <description>
+        
+        
+        Configuration update for PEAK_TRAFFIC alert type. Peak traffic is used to verify traffic comparing volum of requests between to time frame (window and historical window) .
+GraphQL schema definition type AlertUpdateConfigurationInputPeakTraffic {historicalWindow: Int offset: Int periodicity: Int window: Int timesToAlert: Int timesToRecovery: Int noRecoveries: Boolean stateChangesOnly: Boolean minNumberRequests: Int percentageToAlert: Int email: [EmailInput] hubStatus: [HubStatusInput!
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Alerts-X: AlertUpdateConfigurationInputPrice</title>
+      <link>https://docs.travelgatex.com/alerts-x/reference/inputobjects/alertupdateconfigurationinputprice/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/alerts-x/reference/inputobjects/alertupdateconfigurationinputprice/</guid>
+      <description>
+        
+        
+        GraphQL schema definition type AlertUpdateConfigurationInputPrice {periodicity: Int window: Int timesToAlert: Int timesToRecovery: Int noRecoveries: Boolean stateChangesOnly: Boolean minNumberRequests: Int percentageToAlert: Int email: [EmailInput] supplier: [AlertObjectInput!] client: [AlertObjectInput!] group: [AlertGroupInput!] access: [AlertObjectInput!] operation: [AlertObjectInput!
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Alerts-X: AlertUpdateInput</title>
+      <link>https://docs.travelgatex.com/alerts-x/reference/inputobjects/alertupdateinput/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/alerts-x/reference/inputobjects/alertupdateinput/</guid>
+      <description>
+        
+        
+        GraphQL schema definition type AlertUpdateInput {name: String description: String configurationNoTraffic: AlertUpdateConfigurationInputNoTraffic configurationErrorRate: AlertUpdateConfigurationInputErrorRate configurationAverageTime: AlertUpdateConfigurationInputAverageTime configurationPeakTraffic: AlertUpdateConfigurationInputPeakTraffic configurationPrice: AlertUpdateConfigurationInputPrice isActive: Boolean delete: Boolean Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Alerts-X: ClientFilter</title>
+      <link>https://docs.travelgatex.com/alerts-x/reference/inputobjects/clientfilter/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/alerts-x/reference/inputobjects/clientfilter/</guid>
+      <description>
+        
+        
+        GraphQL schema definition type ClientFilter {clientID: [ID] name: [String!] groupID: [ID] isActive: Boolean owner: [ID!] Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields clientID([ID]):name([String!]):groupID([ID]):isActive(Boolean):owner([ID!
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Alerts-X: EmailInput</title>
+      <link>https://docs.travelgatex.com/alerts-x/reference/inputobjects/emailinput/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/alerts-x/reference/inputobjects/emailinput/</guid>
+      <description>
+        
+        
+        GraphQL schema definition type EmailInput {address: ID! type: EmailType! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields address(ID!):type(EmailType!): Required by AlertUpdateConfigurationInputNoTraffic: Confiuration update for NO_TRAFFIC alert type. No traffic alert is used to verify if there is traffic according to the parameters of the alert.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Alerts-X: ErrorCodeInput</title>
+      <link>https://docs.travelgatex.com/alerts-x/reference/inputobjects/errorcodeinput/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/alerts-x/reference/inputobjects/errorcodeinput/</guid>
+      <description>
+        
+        
+         GraphQL schema definition type ErrorCodeInput {code: Int! isInclusive: Boolean! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields code(Int!):isInclusive(Boolean!): 
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Alerts-X: ErrorTypeInput</title>
+      <link>https://docs.travelgatex.com/alerts-x/reference/inputobjects/errortypeinput/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/alerts-x/reference/inputobjects/errortypeinput/</guid>
+      <description>
+        
+        
+         GraphQL schema definition type ErrorTypeInput {code: ErrorType! isInclusive: Boolean! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields code(ErrorType!):isInclusive(Boolean!): 
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Alerts-X: HubStatusInput</title>
+      <link>https://docs.travelgatex.com/alerts-x/reference/inputobjects/hubstatusinput/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/alerts-x/reference/inputobjects/hubstatusinput/</guid>
+      <description>
+        
+        
+         GraphQL schema definition type HubStatusInput {code: HubStatus! isInclusive: Boolean! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields code(HubStatus!):isInclusive(Boolean!): 
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Alerts-X: RelayInput</title>
+      <link>https://docs.travelgatex.com/alerts-x/reference/inputobjects/relayinput/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/alerts-x/reference/inputobjects/relayinput/</guid>
+      <description>
+        
+        
+         GraphQL schema definition type RelayInput {first: Int last: Int before: String after: String Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields first(Int):last(Int):before(String):after(String): 
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Alerts-X: SupplierFilter</title>
+      <link>https://docs.travelgatex.com/alerts-x/reference/inputobjects/supplierfilter/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/alerts-x/reference/inputobjects/supplierfilter/</guid>
+      <description>
+        
+        
+        GraphQL schema definition type SupplierFilter {supplierID: [ID] accessID: [ID] groupID: [ID] isActive: Boolean serviceAPI: [Int] owner: [ID!] Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields supplierID([ID]):accessID([ID]):groupID([ID]):isActive(Boolean):serviceAPI([Int]):owner([ID!
+        
+          [...]
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

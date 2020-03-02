@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>TravelgateX Documentation – Flights API</title>
+    <link>https://docs.travelgatex.com/legacy/transportation/flights/</link>
+    <description>Recent changes in Flights API on TravelgateX Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <image>
+      <url>https://docs.travelgatex.com/img/hugo.png</url>
+      <title>GoHugo.io</title>
+      <link>https://docs.travelgatex.com/legacy/transportation/flights/</link>
+    </image>
+    
+	    <atom:link href="https://docs.travelgatex.com/legacy/transportation/flights/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Legacy: Avail</title>
+      <link>https://docs.travelgatex.com/legacy/transportation/flights/avail/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/legacy/transportation/flights/avail/</guid>
+      <description>
+        
+        
+        Method Goals This method aims to return all the available options for a given date and itinerary. It does not filter different classes, times or fares. It will always return all of the results returned by the provider.
+Request Format The common part of an availability request is very straight forward. It only requires the destination/s, the travelling dates, the paxes and the indication of the trip type.
+Response Format The response format will always be delivered in the node Transportation, which will be organized by two main nodes:
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Legacy: Cancellation</title>
+      <link>https://docs.travelgatex.com/legacy/transportation/flights/cancel/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/legacy/transportation/flights/cancel/</guid>
+      <description>
+        
+        
+        Method Goals This method aims to cancel a booking.
+Request Format The request requires the booking code or locator.
+Response Format The result returns empty response
+Remarks Not implemented by all suppliers
+CancellationRQ Description    Element Number Type Description     CancellationRQ 1  Root node.   Locator 1 String Contains the booking&amp;rsquo;s locator that want to be cancelled   CancellationCosts 0..1 Decimal Contains the amount of cancellation costs.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Legacy: Emit</title>
+      <link>https://docs.travelgatex.com/legacy/transportation/flights/emit/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/legacy/transportation/flights/emit/</guid>
+      <description>
+        
+        
+        Method Goals This method aims to issue the tickets.
+Request Format The request indicate the booking locator and the issue type (which tickets have to be issued: all, only passengers, only extras).
+Response Format The result returns a list of Locators (booking codes). It can be the supplier&amp;rsquo;s or the one sent in the request. It also returns all the charges associated to the booking, the passengers and the tickets issued (if any).
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Legacy: Flights Data Structure</title>
+      <link>https://docs.travelgatex.com/legacy/transportation/flights/flightsdatastructure/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/legacy/transportation/flights/flightsdatastructure/</guid>
+      <description>
+        
+        
+        API Structure The structure of the API specification follows a standard. This document intends to explain every aspect of this structure and their fields.
+The integration will have the following methods:
+   Element Input Output Required Description     Availability AvailabilityRQ AvailabilityRS Yes Return all the available options for a given date and itinerary. It does not filter different classes, times or fares. It will always return all of the results returned by the provider.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Legacy: Refund</title>
+      <link>https://docs.travelgatex.com/legacy/transportation/flights/refund/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/legacy/transportation/flights/refund/</guid>
+      <description>
+        
+        
+        Method Goals This method aims to refund tickets issued previously.
+Request Format The request must indicate the tickets to be refunded, the refund operation desired (informative or process) and the refund type (fare, taxes, etc.).
+Response Format The result returns a breakdown with all the amounts of the fare that will be refunded (Info) or that has been refunded (Process). The result returns also the tickets refunded (same ones of the request, only with the status updated), and it may return also a list of booking locators.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Legacy: Reservation</title>
+      <link>https://docs.travelgatex.com/legacy/transportation/flights/reservation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/legacy/transportation/flights/reservation/</guid>
+      <description>
+        
+        
+        Method Goals This method aims to book one or more Itineraries.
+Request Format The request format works the same way as the Valuation request. It can work with one or with two Itineraries. The request will also contain a list of Passengers and the PaymentInfo, such as payment method.
+Response Format The result returns a list of Locators (booking codes). It can be the supplier&amp;rsquo;s or the one sent in the request.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Legacy: RetrieveReservation</title>
+      <link>https://docs.travelgatex.com/legacy/transportation/flights/recover-reserve/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/legacy/transportation/flights/recover-reserve/</guid>
+      <description>
+        
+        
+        Method Goals This method aims to retrieve a booking with its full details.
+Request Format The booking can be retrieved by several methods, such as the locator of the booking, the email associated to it, passenger name/surname or other information relative to the itinerary itself.
+Response Format The result returns a list of Itineraries, Passengers, Segments and Booking Locators. It may return also the Payment Info of the booking and the information the client had provided to the provider, such as direction, phone number, etc.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Legacy: RetrieveReservationList</title>
+      <link>https://docs.travelgatex.com/legacy/transportation/flights/recover-reserve-list/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/legacy/transportation/flights/recover-reserve-list/</guid>
+      <description>
+        
+        
+        Method Goals This method aims to return a list of bookings for a given time period being that either booking date or the travelling date, among other filters available.
+Request Format The filter can be set between two time periods, search by email, origin, destination, agency, passenger name/surname, etc.
+Response Format The result return a briefing of the basic information of the bookings that match the query&amp;rsquo;s filters.
+Remarks Not implemented by all suppliers
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Legacy: Routes</title>
+      <link>https://docs.travelgatex.com/legacy/transportation/flights/routes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/legacy/transportation/flights/routes/</guid>
+      <description>
+        
+        
+        Method Goals This method aims to get the availability of routes of a supplier.
+Request Format In the request, it can be set an origin location, so the response would include only the routes which start with this origin, and an airline filtering.
+Response Format The result returns a list of locations and for each one, a destination tree.
+Remarks Not implemented by all suppliers. Some suppliers will return dates information for each destination tree.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Legacy: Supplements</title>
+      <link>https://docs.travelgatex.com/legacy/transportation/flights/supplements/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/legacy/transportation/flights/supplements/</guid>
+      <description>
+        
+        
+        Method Goals This method aims to get the available supplements and their price information (before or after a reservation has been done).
+Request Format The Supplements request can be done by two different ways: with a group of Itineraries (before a reservation) or with a booking locator (after a reservation).
+Response Format The result returns a list of the available supplements (seats, baggage, fare rules, payment methods, etc.)
+Remarks Not implemented by all suppliers
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Legacy: SupplementsReservation</title>
+      <link>https://docs.travelgatex.com/legacy/transportation/flights/supplementsreservation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/legacy/transportation/flights/supplementsreservation/</guid>
+      <description>
+        
+        
+        Method Goals This method aims to add supplements (seats, baggage, etc) to a reservation done previously.
+Request Format Must contain the Itineraries returned in SupplementsRS and any of the possible ways to retrieve the provider booking (by locator, by email, etc.)
+Response Format The result returns an invoice with all the supplement charges.
+Remarks Not implemented by all suppliers
+SupplementsReservationRQ Description    Element Number Type Description     SupplementsReservationRQ 1  Root node.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Legacy: Valuation</title>
+      <link>https://docs.travelgatex.com/legacy/transportation/flights/valuation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/legacy/transportation/flights/valuation/</guid>
+      <description>
+        
+        
+        Method Goals This method aims to return the total price of the selected Option. This Option must be selected in the previous step ( Availability ).
+Request Format The Valuation request can be done by two different ways: with a single Itinerary or multiple Itineraries.
+ Multiple Itineraries :  In this method, the request will have as many Itineraries as there are Journeys . Mainly used for one-way tickets.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

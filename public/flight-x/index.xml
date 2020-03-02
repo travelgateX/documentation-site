@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>TravelgateX Documentation – Flight-X</title>
+    <link>https://docs.travelgatex.com/flight-x/</link>
+    <description>Recent changes in Flight-X on TravelgateX Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <image>
+      <url>https://docs.travelgatex.com/img/hugo.png</url>
+      <title>GoHugo.io</title>
+      <link>https://docs.travelgatex.com/flight-x/</link>
+    </image>
+    
+	    <atom:link href="https://docs.travelgatex.com/flight-x/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Flight-X: Overview</title>
+      <link>https://docs.travelgatex.com/flight-x/overview/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/flight-x/overview/</guid>
+      <description>
+        
+        
+        Flight-X is TravelgateX’s first product for its Aviation Industry disruption proposition, built on top of a proprietary API, based on IATA’s NDC standard, for direct sellers and airlines integration. By using Flight-X you can direct access differentiated and personalized Airlines dynamic offers and products (flights, ancillaries, fare families) and Prices.
+Flight-X High Level Architecture Suppliers Currently we are seamlessly connected to more than 45 Suppliers (being direct and indirect airlines, GDSs, Aggregators, Consolidators among others), and we keep them all optimized so that response times are super fast and reliable.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Flight-X: Service Endpoints</title>
+      <link>https://docs.travelgatex.com/flight-x/service-endpoints/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/flight-x/service-endpoints/</guid>
+      <description>
+        
+        
+         Service Endpoints (To be used for Pilot Testing Purposes only) Our first API version is available through the following URLs:
+API endpoinds:
+  http://51.144.175.102/AirShopping http://51.144.175.102/OrderCreate   In order to test easily our new API we have made a web page where we can make requests to it. The web page is available through the following URL:
+Test API web page:
+  http://13.93.32.18/FlightX   
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

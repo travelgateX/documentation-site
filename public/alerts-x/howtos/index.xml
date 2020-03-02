@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>TravelgateX Documentation – How-to guides</title>
+    <link>https://docs.travelgatex.com/alerts-x/howtos/</link>
+    <description>Recent changes in How-to guides on TravelgateX Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <image>
+      <url>https://docs.travelgatex.com/img/hugo.png</url>
+      <title>GoHugo.io</title>
+      <link>https://docs.travelgatex.com/alerts-x/howtos/</link>
+    </image>
+    
+	    <atom:link href="https://docs.travelgatex.com/alerts-x/howtos/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Alerts-X: Create Alert</title>
+      <link>https://docs.travelgatex.com/alerts-x/howtos/howto-create-alerts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/alerts-x/howtos/howto-create-alerts/</guid>
+      <description>
+        
+        
+        This page shows you how to create Alerts using API or TravelgateX Web.
+How to request You must choose a type alert to create it. The alert types are: Error rate, No traffic, Average time and Peak traffic.
+There are different ways to configure the alert types. Below there are references of some values of configuration to create the alert needed.
+Error rate alert    WHAT IS NEEDED?
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Alerts-X: Query Alerts</title>
+      <link>https://docs.travelgatex.com/alerts-x/howtos/howto-query-alerts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/alerts-x/howtos/howto-query-alerts/</guid>
+      <description>
+        
+        
+        This page shows you how to query Alerts using API or TravelgateX Web.
+How to request &amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt; HEAD
+You must query about your alerts by their location group or their code. Also can be filtered by active alerts or not. You should query about your alerts by their ubication group or their code. They also can be filtered by active alerts or not active alerts. &amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt; 19fd7afc932b16704f2b83f0c92c4386b900d00f
+Below are shown examples for different casuistry:
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Alerts-X: Update Alert</title>
+      <link>https://docs.travelgatex.com/alerts-x/howtos/howto-update-alerts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/alerts-x/howtos/howto-update-alerts/</guid>
+      <description>
+        
+        
+        This page shows you how to update an alert using API or TravelgateX.
+How to request To update an alert you should input the alert code. Only data which needs to be updated needs to be input.
+Below are shown examples for different casuistry:
+ #tab-holder {transform: scale(0);position: absolute;}#tab-holder.show-tabs {transform: scale(1);position: initial;}ul.tab-pannel-nav {margin-bottom: -32px;}ul.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>TravelgateX Documentation – Messages</title>
+    <link>https://docs.travelgatex.com/inventory-x/api-reference/messages/</link>
+    <description>Recent changes in Messages on TravelgateX Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <image>
+      <url>https://docs.travelgatex.com/img/hugo.png</url>
+      <title>GoHugo.io</title>
+      <link>https://docs.travelgatex.com/inventory-x/api-reference/messages/</link>
+    </image>
+    
+	    <atom:link href="https://docs.travelgatex.com/inventory-x/api-reference/messages/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Inventory-X: Notify Messages</title>
+      <link>https://docs.travelgatex.com/inventory-x/api-reference/messages/notify-messages/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/inventory-x/api-reference/messages/notify-messages/</guid>
+      <description>
+        
+        
+        Notify messages are used by providers to load product and data into the TGX database.
+HotelRatePlanInventoryNotif Providers will send a HotelRatePlanInventoryNotifRQ message to push the Hotel SetUp information into the TGX database. TGX will process the data and respond with an error code if needed or success if everything is correct.
+HotelRatePlanInventoryNotifRQ XML Example
+&amp;lt;HotelRatePlanInventoryNotif xmlns = &amp;quot;http://schemas.xmltravelgate.com/hubpush/provider/2012/10&amp;quot;&amp;gt; &amp;lt;request PrimaryLangID = &amp;quot;ES&amp;quot; Version = &amp;quot;0&amp;quot;&amp;gt; &amp;lt;RatePlans HotelCode = &amp;quot;1&amp;quot; HotelStatusType = &amp;quot;Active&amp;quot; xmlns = &amp;quot;http://www.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Inventory-X: Retrieve Messages</title>
+      <link>https://docs.travelgatex.com/inventory-x/api-reference/messages/retrieve-messages/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/inventory-x/api-reference/messages/retrieve-messages/</guid>
+      <description>
+        
+        
+        Retrieve messages are used by the Providers to retrieve the data currently loaded in the TGX system.
+HotelRatePlanInventoryRetrieve Providers will send a HotelRatePlanInventoryRetrieveRQ message to retrieve a list of hotels, rate plans and rooms and their configurations. TGX will return a list of all active rooms and configurations. Inactive rate plans and rooms will not be returned in these messages.
+HotelRatePlanInventoryRetrieveRQ XML Example
+&amp;lt;HotelRatePlanInventoryRetrieve&amp;gt; &amp;lt;request PrimaryLangID = &amp;quot;ES&amp;quot;&amp;gt; &amp;lt;POS&amp;gt; &amp;lt;Source&amp;gt; &amp;lt;RequestorID ID = &amp;quot;Provider1&amp;quot;/&amp;gt; &amp;lt;BookingChannel&amp;gt; &amp;lt;CompanyName Code = &amp;quot;ClientTravelAgency1&amp;quot;/&amp;gt; &amp;lt;/BookingChannel&amp;gt; &amp;lt;TPA_Extensions&amp;gt; &amp;lt;Param key = &amp;quot;onlyActive&amp;quot; value = &amp;quot;0&amp;quot;/&amp;gt; &amp;lt;/TPA_Extensions&amp;gt; &amp;lt;/Source&amp;gt; &amp;lt;/POS&amp;gt; &amp;lt;RatePlans&amp;gt; &amp;lt;RatePlan&amp;gt; &amp;lt;HotelRef HotelCode = &amp;quot;1&amp;quot;/&amp;gt; &amp;lt;/RatePlan&amp;gt; &amp;lt;/RatePlans&amp;gt; &amp;lt;/request&amp;gt; &amp;lt;/HotelRatePlanInventoryRetrieve&amp;gt;     Element Number Type Description     HotelRatePlan/request 1  Root Node   @PrimaryLangID 1 String ISO Code Language   POS/Source/TPA_Extensions 0.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Inventory-X: Messages with OTA XSD structure</title>
+      <link>https://docs.travelgatex.com/inventory-x/api-reference/messages/messages-ota-xsd/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/inventory-x/api-reference/messages/messages-ota-xsd/</guid>
+      <description>
+        
+        
+         List of messages with OTA xsd structure used:    Method OTA RQ OTA RS Type Description     HotelRatePlan InventoryRetrieve OTA_HotelRatePlanRQ OTA_Hotel RatePlanRS Retrieve Retrieve static information of hotel seller inventory   HotelRatePlan Retrieve OTA_Hote lRatePlanRQ OTA_Hotel RatePlanRS Retrieve Retrieve rates of hotel seller   HotelAvail Retrieve OTA_Hotel AvailGetRQ OTA_Hotel AvailGetRS Retrieve Retrieve availability of hotel seller   HotelRes Retrieve OTA_ReadRQ OTA_HotelResRS Retrieve Retrieve reservations from user seller   HotelRate PlanNotify OTA_Hotel RatePlanNotifRQ OTA_Hotel RatePlanNotifRS Notify Notify rates to hotel seller   HotelAvail Notify OTA_Hotel AvailNotifRQ OTA_Hotel AvailNotifRS Notify Notify availability to hotel seller   HotelRes Retrieve OTA_Hotel ResRetrieveRQ OTA_Hotel ResRetrieveRS Retrieve Retrieve reservations from user seller    
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

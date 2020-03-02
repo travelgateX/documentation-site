@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>TravelgateX Documentation – Transportation API</title>
+    <link>https://docs.travelgatex.com/legacy/transportation/</link>
+    <description>Recent changes in Transportation API on TravelgateX Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <image>
+      <url>https://docs.travelgatex.com/img/hugo.png</url>
+      <title>GoHugo.io</title>
+      <link>https://docs.travelgatex.com/legacy/transportation/</link>
+    </image>
+    
+	    <atom:link href="https://docs.travelgatex.com/legacy/transportation/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Legacy: Change Log</title>
+      <link>https://docs.travelgatex.com/legacy/transportation/change-log/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/legacy/transportation/change-log/</guid>
+      <description>
+        
+        
+        Version 1.0.8: Date 24/07/2012
+: Added ConfigCompaniasDispo in the common RQ objects.
+|
+Version 1.0.9: Date 30/08/2012
+: Added Baggage List to Passenger in ResevaRQ.
+: Added baggage type in SuplementosRS.
+: Added special supplement in SuplementosRS.
+|
+Version 1.0.11: Date 09/01/2013
+: Added Generic Error Code.
+|
+Version 1.0.12: Date 30/03/2013
+: Added list of Locators to RespuestaRecuperarReserva and RespuestaRecuperarListaReserva.
+: Added some types to tiposImporteCargo.
+: Added number of stops in DisponibilidadRS.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Legacy: Common Elements</title>
+      <link>https://docs.travelgatex.com/legacy/transportation/common-elements/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/legacy/transportation/common-elements/</guid>
+      <description>
+        
+        
+        Introduction In every petition there some nodes which will always appear, there for this chapter is dedicated for said nodes.
+Request Format The common elements in all of the petitions are: source of the petition, Timeout, the indication if you wish to register the transactions and the provider configuration.
+Response Format The response will contain the indication if the function is implemented or not, application errors, if any, the providers traces if requested and the response status.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Legacy: Enumerates</title>
+      <link>https://docs.travelgatex.com/legacy/transportation/enum/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/legacy/transportation/enum/</guid>
+      <description>
+        
+        
+        Enumerate description Resident discount type    Possible Values Description     N None   BP Balearic Islands resident flying to mainland   BI Balearic Islands resident flying to another balearic island   DC Canarian Islands resident flying to another Canarian Island   RC Canarian Islands resident flying to mainland   RM Ceuta/Melilla resident   STR Italian resident discount   ELB Italian resident Elba   SDG Italian resident Sardegna   SLC Italian resident Sicily   RE Ceuta    Charge type    Possible Values Description     TAX Tax   CARD Card   BAGGAGE Baggage   CHECKIN Checkin   CARRIER_CHARGES Carrier charges   DU_TAX DU Taxes   BASE_AMOUNT Base import   DISCOUNT Discount   VEHICLE Vehicle   BANKING_CHARGES Bank charges   CURRENCY_CONVERSION_CHARGES Currency conversion charges   VEHICLE_FEE Vehicle fee   FEE Fee   SEAT Seat   SUPPLEMENT Supplement   TRAVELCARD Travel card   PET Pet   PET_FEE Pet fee   INSURANCE Insurance   FAST_TRACK Fast Track   PRIORITY_BOARDING Priority Boarding   BLOCK_FARE Fare lock   SPECIAL_ASSISTANCE Special assistance   PENALTY Penalty    Block Attribute Type    Possible Values Description     OVER_WING Over wing seat   MIDDLE Middle seat   AISLE Aisle seat   WINDOW Window seat   COMPARTMENT Compartment   LAVATORY Lavatory   LUGGAGE Luggage seat   PHONE Phone seat   POWER Power   TABLE Table   EXITROW Emergency exit   FEETBLOCKED Feet blocked seat   NO_CHILD No childs allowed seat   NO_INFANT No infants allowed seat   XL_SEAT XL seat   RESTRICTED Seat with some kind of restriction   HANDICAP Special seat for handicap people   QUIET Quiet seat   GROUPS Groups seat   NO_PET No pets allowed seat   BULKHEAD Bulk head seat   BLOCKED Blocked seat   UNKNOWN Unknown characterstic   LAST_OFF Last off    Refund type    Possible Values Description     ALL Fare and taxes will be refunded   FARE Only fare will be refunded   TAXES Only taxes will be refunded   AUTO GDS automatic ticket change   PARTIAL Partial refund.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

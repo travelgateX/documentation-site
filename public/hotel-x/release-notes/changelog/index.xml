@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>TravelgateX Documentation – Hotel-X Changelog</title>
+    <link>https://docs.travelgatex.com/hotel-x/release-notes/changelog/</link>
+    <description>Recent changes in Hotel-X Changelog on TravelgateX Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 05 Nov 2019 00:00:00 +0100</lastBuildDate>
+    <image>
+      <url>https://docs.travelgatex.com/img/hugo.png</url>
+      <title>GoHugo.io</title>
+      <link>https://docs.travelgatex.com/hotel-x/release-notes/changelog/</link>
+    </image>
+    
+	    <atom:link href="https://docs.travelgatex.com/hotel-x/release-notes/changelog/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Hotel-X: Changelog 2019-11-05</title>
+      <link>https://docs.travelgatex.com/hotel-x/release-notes/changelog/2019-11-05/</link>
+      <pubDate>Tue, 05 Nov 2019 00:00:00 +0100</pubDate>
+      
+      <guid>https://docs.travelgatex.com/hotel-x/release-notes/changelog/2019-11-05/</guid>
+      <description>
+        
+        
+        2020-02-26  Now the booking and cancel services allow the user to retrieve and cancel a book with the new field returned in book response bookingID. You can see more details of bookingID in the documentation here.   2020-02-25  Added new field bookingID into Reference (book, booking and cancel). This bookingID will be useful for booking retrieving and cancelling. Added new field bookingID into HotelCancelInput (cancel). Added new field bookingID into HotelCriteriaBookingInput (booking).
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Hotel-X: Older</title>
+      <link>https://docs.travelgatex.com/hotel-x/release-notes/changelog/older/</link>
+      <pubDate>Thu, 19 Sep 2019 00:00:00 +0200</pubDate>
+      
+      <guid>https://docs.travelgatex.com/hotel-x/release-notes/changelog/older/</guid>
+      <description>
+        
+        
+        2019-08-07  Fix Hotel-List repeated Hotels   2019-08-06  Add new enum type PaymentCardType which contain list of supported payment card. Add new field type of type PaymentCardType into PaymentCardInput and deprecate old field cardType Type HotelData introduces field RoomConnection (same type as Rooms service operation) Modified RoomData type by adding the new types RoomSource (string) and OccupancyStatic    Deprecated description from Bed (search) Deprecated KO in BookStatusType
+        
+          [...]
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

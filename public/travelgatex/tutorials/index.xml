@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>TravelgateX Documentation – Tutorials</title>
+    <link>https://docs.travelgatex.com/travelgatex/tutorials/</link>
+    <description>Recent changes in Tutorials on TravelgateX Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <image>
+      <url>https://docs.travelgatex.com/img/hugo.png</url>
+      <title>GoHugo.io</title>
+      <link>https://docs.travelgatex.com/travelgatex/tutorials/</link>
+    </image>
+    
+	    <atom:link href="https://docs.travelgatex.com/travelgatex/tutorials/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Travelgatex: Build An OTA</title>
+      <link>https://docs.travelgatex.com/travelgatex/tutorials/ota-site/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/travelgatex/tutorials/ota-site/</guid>
+      <description>
+        
+        
+        Creating your full OTA This topic describes how to build your own OTA using HotelX.
+Before you begin  Basic knowledge of Angular Read HotelX, which contains information about the HotelX API  Scenario: Create an Online Travel Agency written in Angular For this quickstart tutorial, we have prepared a repository that contains the full Angular code for the OTA clone. All you need to do is to get TravelgateX credentials and connect it with the Angular application.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Travelgatex: Configure HotelX Security</title>
+      <link>https://docs.travelgatex.com/travelgatex/tutorials/howto-configure-permissions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/travelgatex/tutorials/howto-configure-permissions/</guid>
+      <description>
+        
+        
+        Granting Permissions This topic describes how to configure permissions for a organization using HotelX and Stats.
+Before you begin  Read IAM, which contains information about how TravelgateX manages security Read HotelX, which contains information about the HotelX API  Scenario: Organization buying suppliers through HotelX In this scenario, organanization org_test logs on to TravelgateX in order to use HotelX to buy product from suppliers.
+Distribution will be made through 2 different channels, end users will use org_test_B2C_site whereas that org_test_B2B_site will be used for business users.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

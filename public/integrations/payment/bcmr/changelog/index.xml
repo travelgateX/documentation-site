@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>TravelgateX Documentation – BCMR - Bancomer Changelog</title>
+    <link>https://docs.travelgatex.com/integrations/payment/bcmr/changelog/</link>
+    <description>Recent changes in BCMR - Bancomer Changelog on TravelgateX Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 18 Dec 2019 00:00:00 +0100</lastBuildDate>
+    <image>
+      <url>https://docs.travelgatex.com/img/hugo.png</url>
+      <title>GoHugo.io</title>
+      <link>https://docs.travelgatex.com/integrations/payment/bcmr/changelog/</link>
+    </image>
+    
+	    <atom:link href="https://docs.travelgatex.com/integrations/payment/bcmr/changelog/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Integrations: 2019-12-18</title>
+      <link>https://docs.travelgatex.com/integrations/payment/bcmr/changelog/2019-12-18/</link>
+      <pubDate>Wed, 18 Dec 2019 00:00:00 +0100</pubDate>
+      
+      <guid>https://docs.travelgatex.com/integrations/payment/bcmr/changelog/2019-12-18/</guid>
+      <description>
+        
+        
+         2019-12-18  Fixed problem with phone numbers starting with &amp;lsquo;+&amp;rsquo;   
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Integrations: 2019-12-03</title>
+      <link>https://docs.travelgatex.com/integrations/payment/bcmr/changelog/2019-12-03/</link>
+      <pubDate>Tue, 03 Dec 2019 00:00:00 +0100</pubDate>
+      
+      <guid>https://docs.travelgatex.com/integrations/payment/bcmr/changelog/2019-12-03/</guid>
+      <description>
+        
+        
+         2019-12-03  MobilePhoneNumber value is now used if specified   
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>TravelgateX Documentation – Insights-X</title>
+    <link>https://docs.travelgatex.com/insights-x/</link>
+    <description>Recent changes in Insights-X on TravelgateX Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <image>
+      <url>https://docs.travelgatex.com/img/hugo.png</url>
+      <title>GoHugo.io</title>
+      <link>https://docs.travelgatex.com/insights-x/</link>
+    </image>
+    
+	    <atom:link href="https://docs.travelgatex.com/insights-x/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Insights-X: Overview</title>
+      <link>https://docs.travelgatex.com/insights-x/overview/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/insights-x/overview/</guid>
+      <description>
+        
+        
+        In order to analyze and produce useful insights, Insights-X extracts, loads and consolidates data from products like Hotel-X.
+Once the data is consolidated in our Data warehouse, we can share data depending on each partner&amp;rsquo;s relationship with TravelgateX:
+ Partners: e.g. OTAs and Wholesalers already connected to our platform, they will have access to accurate data regarding their performance, ratios, prices, product usage&amp;hellip; With these insights an accurate benchmarking against competitors is provided so that our partners can gain a competitive advantage.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Insights-X: Contents</title>
+      <link>https://docs.travelgatex.com/insights-x/content/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/insights-x/content/</guid>
+      <description>
+        
+        
+        What is the performance of your infrastructure? What hotelier product is being requested and booking around the world? How are you doing with respect to your competitors?
+Knowledge is power and that&amp;rsquo;s what the product Insights-X offers, based on more than 2 billion search requests and more than 20,000 bookings per day.
+In order to answer the three previous questions, the product has been designed in three parts, which we explain below:
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Insights-X: FAQs</title>
+      <link>https://docs.travelgatex.com/insights-x/faqs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/insights-x/faqs/</guid>
+      <description>
+        
+        
+        In order to analyze and access useful insights, we recommend you to read Insights-X FAQs.
+* Data sets and Reporting:  How do I get access to my data sets?  Insights-X data sets are stored in BigQuery. Once Insights-X is acquired, we will provide you with the credentials to access and connect to the database with your data sets.
+ How often are the data sets updated?  Insights-X stores data from all transactions passing through TravelgateX.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

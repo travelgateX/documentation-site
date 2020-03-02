@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>TravelgateX Documentation – LH - Lufthansa Changelog</title>
+    <link>https://docs.travelgatex.com/integrations/flights/lh/changelog/</link>
+    <description>Recent changes in LH - Lufthansa Changelog on TravelgateX Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 27 Nov 2019 00:00:00 +0100</lastBuildDate>
+    <image>
+      <url>https://docs.travelgatex.com/img/hugo.png</url>
+      <title>GoHugo.io</title>
+      <link>https://docs.travelgatex.com/integrations/flights/lh/changelog/</link>
+    </image>
+    
+	    <atom:link href="https://docs.travelgatex.com/integrations/flights/lh/changelog/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Integrations: 2019-11-27</title>
+      <link>https://docs.travelgatex.com/integrations/flights/lh/changelog/2019-11-27/</link>
+      <pubDate>Wed, 27 Nov 2019 00:00:00 +0100</pubDate>
+      
+      <guid>https://docs.travelgatex.com/integrations/flights/lh/changelog/2019-11-27/</guid>
+      <description>
+        
+        
+         2019-11-27  Error in Bags information Error in aplicaSegmentos when the flight is one-way .   
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

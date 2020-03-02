@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>TravelgateX Documentation – Enums</title>
+    <link>https://docs.travelgatex.com/paymentx/reference/enums/</link>
+    <description>Recent changes in Enums on TravelgateX Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <image>
+      <url>https://docs.travelgatex.com/img/hugo.png</url>
+      <title>GoHugo.io</title>
+      <link>https://docs.travelgatex.com/paymentx/reference/enums/</link>
+    </image>
+    
+	    <atom:link href="https://docs.travelgatex.com/paymentx/reference/enums/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Paymentx: AdviseMessageLevel</title>
+      <link>https://docs.travelgatex.com/paymentx/reference/enums/advisemessagelevel/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/paymentx/reference/enums/advisemessagelevel/</guid>
+      <description>
+        
+        
+         GraphQL schema definition enumAdviseMessageLevel{WARN,ERROR,INFO,}  Required by AdviseMessage:  
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Paymentx: GroupType</title>
+      <link>https://docs.travelgatex.com/paymentx/reference/enums/grouptype/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/paymentx/reference/enums/grouptype/</guid>
+      <description>
+        
+        
+         GraphQL schema definition enumGroupType{ROOT,ORG,GROUP,PROFILE,TEAM,FOLDER,PRODUCT,RESOURCE,SPECIFIC_RESOURCE,}  Required by GroupData: GroupCommonData: OrganizationData:  
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Paymentx: MemberType</title>
+      <link>https://docs.travelgatex.com/paymentx/reference/enums/membertype/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/paymentx/reference/enums/membertype/</guid>
+      <description>
+        
+        
+         GraphQL schema definition enumMemberType{USER,SERVICE_ACCOUNT,}  Required by MemberData:  
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Paymentx: OperationType</title>
+      <link>https://docs.travelgatex.com/paymentx/reference/enums/operationtype/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/paymentx/reference/enums/operationtype/</guid>
+      <description>
+        
+        
+         GraphQL schema definition enumOperationType{SEARCH,QUOTE,BOOKING,CANCEL,SCHEDULER,CREATE,READ,UPDATE,DELETE,EXECUTE,OTHER,}  
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Paymentx: ProfileType</title>
+      <link>https://docs.travelgatex.com/paymentx/reference/enums/profiletype/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/paymentx/reference/enums/profiletype/</guid>
+      <description>
+        
+        
+         GraphQL schema definition enumProfileType{BUYER,SELLER,}  
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Paymentx: RateRulesType</title>
+      <link>https://docs.travelgatex.com/paymentx/reference/enums/raterulestype/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/paymentx/reference/enums/raterulestype/</guid>
+      <description>
+        
+        
+         GraphQL schema definition enumRateRulesType{PACKAGE,OLDER55,OLDER60,OLDER65,CANARY_RESIDENT,BALEARIC_RESIDENT,LARGE_FAMILY,HONEYMOON,PUBLIC_SERVANT,UNEMPLOYED,NORMAL,NON_REFUNDABLE,}  
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Paymentx: RoleType</title>
+      <link>https://docs.travelgatex.com/paymentx/reference/enums/roletype/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/paymentx/reference/enums/roletype/</guid>
+      <description>
+        
+        
+         GraphQL schema definition enumRoleType{VIEWER,EDITOR,ADMIN,EXECUTOR,SPECIFIC,}  Required by RoleData:  
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>TravelgateX Documentation – Performance Dataset</title>
+    <link>https://docs.travelgatex.com/insights-x/datasets/dataset-content/performance/</link>
+    <description>Recent changes in Performance Dataset on TravelgateX Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <image>
+      <url>https://docs.travelgatex.com/img/hugo.png</url>
+      <title>GoHugo.io</title>
+      <link>https://docs.travelgatex.com/insights-x/datasets/dataset-content/performance/</link>
+    </image>
+    
+	    <atom:link href="https://docs.travelgatex.com/insights-x/datasets/dataset-content/performance/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Insights-X: Reference</title>
+      <link>https://docs.travelgatex.com/insights-x/datasets/dataset-content/performance/dataset-reference-performance/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/insights-x/datasets/dataset-content/performance/dataset-reference-performance/</guid>
+      <description>
+        
+        
+        On this page you will learn how the data is stored in Performance Dataset.
+Tables Data is stored in multiple tables depending on the kind of information that wants to be queried and depending on the level of aggregation:
+ Daily (agregation stored every day) Weekly (aggregation stored the first monday of every week) Monthly (aggregation stored the first day of the month)  Descriptions of each table and their correspondent fields are found below:
+        
+          [...]
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

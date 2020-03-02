@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>TravelgateX Documentation – Format files</title>
+    <link>https://docs.travelgatex.com/hotel-x/plugins/format-files/</link>
+    <description>Recent changes in Format files on TravelgateX Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <image>
+      <url>https://docs.travelgatex.com/img/hugo.png</url>
+      <title>GoHugo.io</title>
+      <link>https://docs.travelgatex.com/hotel-x/plugins/format-files/</link>
+    </image>
+    
+	    <atom:link href="https://docs.travelgatex.com/hotel-x/plugins/format-files/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Hotel-X: Commission supplier</title>
+      <link>https://docs.travelgatex.com/hotel-x/plugins/format-files/commission_supplier/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/hotel-x/plugins/format-files/commission_supplier/</guid>
+      <description>
+        
+        
+        The commission supplier file should be in the below format:
+Commission supplier File Format The file should be in the below format:
+ Encoding: UTF-8  File Name: commission_supplier.csv  supplier commission  Extension file: csv Headers:  supplier → supplier code commission → commission value, decimal separator must be point (&amp;ldquo;.&amp;rdquo;)  Delimiter: Comma (“,”) Separator for multiples codes in the same row: Semicolon (&amp;ldquo;;&amp;rdquo;) Directory: /F[folder code]_[unique code]/HotelX_[unique code]/  Sample File Name: commission_supplier.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Hotel-X: Hotel Commission</title>
+      <link>https://docs.travelgatex.com/hotel-x/plugins/format-files/commission_netprice/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/hotel-x/plugins/format-files/commission_netprice/</guid>
+      <description>
+        
+        
+        The commission file should be in the below format:
+Hotel Commission File Format The hotel commission file should be in the below format:
+ Encoding: UTF-8  File Name: commission_hotel.csv  commission hotel  Extension file: csv Headers:  supplier → supplier code  hotel → hotel code  commission → commission value, decimal separator must be point (&amp;ldquo;.&amp;rdquo;)  Delimiter: Comma (“,”) Separator for multiples codes in the same row: Semicolon (&amp;ldquo;;&amp;rdquo;) Directory: /F[folder code]_[unique code]/HotelX_[unique code]/  Sample File Name: commission_supplier.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Hotel-X: Group</title>
+      <link>https://docs.travelgatex.com/hotel-x/plugins/format-files/group/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/hotel-x/plugins/format-files/group/</guid>
+      <description>
+        
+        
+        The hotel group file should be in the below format:
+ Encoding: UTF-8  File Name: context_entity_group.csv  Context Entity (file will be indexed by this field). Format (indicates format file)  Extension file: csv Headers:  key → Entity. hotelCodes → hotel code chainCodes → chain code destinationCodes → destination code  Delimiter: Comma (“,”)  Directory: /F[folder code]\Maps/HotelX\Hotel/  Sample File Name: context_entity_group.csv
+Data:
+Hotel entity example
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Hotel-X: Commission</title>
+      <link>https://docs.travelgatex.com/hotel-x/plugins/format-files/commission/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/hotel-x/plugins/format-files/commission/</guid>
+      <description>
+        
+        
+        The commission file should be in the below format:
+ Encoding: UTF-8 File Name:  context sequential commission  Extension file: csv Headers:
+ ruleId → rule identifier clientTokens → client token used for index the rule supplierCodes → supplier code notSupplierCodes → supplier code creationDateFrom → start creation date Date format creationDateTo → end creation date Date format checkInFrom → checkin date Date format checkInTo → checkout date Date format hotelCodes → hotel code nothotelCodes → hotel code chainsCodes → chain code notChainCodes → chain code destinationCodes → destination code notDestinationCodes → destination code percentage → commission value, decimal separator must be point (&amp;ldquo;.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Hotel-X: Entity Table values</title>
+      <link>https://docs.travelgatex.com/hotel-x/plugins/format-files/entity_table/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/hotel-x/plugins/format-files/entity_table/</guid>
+      <description>
+        
+        
+        We have different combinations values from entities values this table show this combinations:
+   entity chainCodes destinationCodes hotelCodes     chain Yes No No   hotel No No Yes   destination No Yes No    
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Hotel-X: Safety margin</title>
+      <link>https://docs.travelgatex.com/hotel-x/plugins/format-files/safety_margin/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/hotel-x/plugins/format-files/safety_margin/</guid>
+      <description>
+        
+        
+        The safety margin file should be in the below format:
+ Encoding: UTF-8 File Name:  context sequential safetymargin  Extension file: csv Headers:
+ ruleId → rule identifier clientTokens → client Tokens* supplierCodes → supplier code notSupplierCodes → supplier code creationDateFrom → start creation date Date format creationDateTo → end creation date Date format checkInFrom → checkinfrom date Date format checkInTo → checkinto date Date format hotelCodes → hotel code nothotelCodes → hotel code chainsCodes → chain code notChainCodes → chain code destinationCodes → destination code notDestinationCodes → destination code percentage → commission value, decimal separator must be point (&amp;ldquo;.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Hotel-X: Supplier Order</title>
+      <link>https://docs.travelgatex.com/hotel-x/plugins/format-files/supplier_order/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/hotel-x/plugins/format-files/supplier_order/</guid>
+      <description>
+        
+        
+        The supplier order file should be in the below format:
+ Encoding: UTF-8 File Name:  supplier_order  Extension file: csv Headers:
+ ruleId → rule identifier supplierCodes → supplier code  List file fields
+|Field | Mandatory | Excluded fileds* | Multi-value | |---|---|---|---| |ruleId| Yes | - | No | |supplierCodes| Yes | - | Yes |  Delimiter: Comma (“,”)
+ Separator for multiples codes in the same row: Semicolon (&amp;ldquo;;&amp;rdquo;)
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Hotel-X: Net compare</title>
+      <link>https://docs.travelgatex.com/hotel-x/plugins/format-files/netcompare/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/hotel-x/plugins/format-files/netcompare/</guid>
+      <description>
+        
+        
+        The net compare file should be in the format below:
+ Encoding: UTF-8 File Name:  context sequential netCompare  Extension file: csv Headers:
+ ruleId → rule identifier clientTokens → client Tokens* supplierCodes → supplier code notSupplierCodes → supplier code bookingDateFrom → booking date from Date format bookingDateTo → booking date to Date format startDateFrom → start date from Date format startDateTo → start date to Date format hotelCodes → hotel code nothotelCodes → hotel code chainsCodes → chain code notChainCodes → chain code destinationCodes → destination code notDestinationCodes → destination code percentage → commission value, decimal separator must be point (&amp;ldquo;.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Hotel-X: Preference</title>
+      <link>https://docs.travelgatex.com/hotel-x/plugins/format-files/preference/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/hotel-x/plugins/format-files/preference/</guid>
+      <description>
+        
+        
+        The preference file should be in the below format:
+ Encoding: UTF-8 File Name:  context sequential preference  Extension file: csv Headers:
+ ruleId → rule identifier clientTokens → client Tokens* supplierCodes → supplier code notSupplierCodes → supplier code bookingDateFrom → booking date from Date format bookingDateTo → booking date to Date format startDateFrom → start date from Date format startDateTo → start date to Date format hotelCodes → hotel code nothotelCodes → hotel code chainsCodes → chain code notChainCodes → chain code destinationCodes → destination code notDestinationCodes → destination code percentage → commission value, decimal separator must be point (&amp;ldquo;.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

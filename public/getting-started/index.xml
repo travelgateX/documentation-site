@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>TravelgateX Documentation – Getting Started</title>
+    <link>https://docs.travelgatex.com/getting-started/</link>
+    <description>Recent changes in Getting Started on TravelgateX Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <image>
+      <url>https://docs.travelgatex.com/img/hugo.png</url>
+      <title>GoHugo.io</title>
+      <link>https://docs.travelgatex.com/getting-started/</link>
+    </image>
+    
+	    <atom:link href="https://docs.travelgatex.com/getting-started/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Getting-Started: Overview</title>
+      <link>https://docs.travelgatex.com/getting-started/overview/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/getting-started/overview/</guid>
+      <description>
+        
+        
+        TravelgateX provides a single API endpoint for all of our API products. This makes it easy for you to integrate our full travel catalog and services into your applications (regardless of whether you are integrating to a website, mobile app, widget, or other interface).
+Completely rebuilt in GraphQL from our many years of experience with travel XML integrations, we are offering state of the art, cutting edge API technology that is quick to learn and makes integration simple and fast.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Getting-Started: Quickstart</title>
+      <link>https://docs.travelgatex.com/getting-started/quickstart/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/getting-started/quickstart/</guid>
+      <description>
+        
+        
+        Four steps to using our API If you&amp;rsquo;re ready to start searching for a hotel, getting a quote and booking it right away, try out the TravelgateX API by following the steps below:
+ STEP 1: Get to know our APIs. Read through our documentation and test some sample calls in our API Playground. You can use a test API key and start experimenting with our APIs straight away.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Getting-Started: Concepts</title>
+      <link>https://docs.travelgatex.com/getting-started/concepts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/getting-started/concepts/</guid>
+      <description>
+        
+        
+        The TravelgateX platform and APIs all use a consistent set of basic concepts so that whatever API you use on our platform, you can be confident that it will work with the same definitions as all of the others you are familiar with.
+Here is an overview of the key concepts of our platform.
+Access An Access is a set of credentials and the authentication configuration that enables a Buyer to access a Supplier.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Getting-Started: Playground</title>
+      <link>https://docs.travelgatex.com/getting-started/playground/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/getting-started/playground/</guid>
+      <description>
+        
+        
+        Try it For Yourself API Playground is an interactive, fun, and super quick way to get to know our APIs.
+In the API Playground, as you start to type the query, it will autocomplete with the fields available to complete your query parameters. You can also click on the green Schema button on the right of the Playground window to learn more about our data model and to see all of the options available for building your query.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

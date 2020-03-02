@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>TravelgateX Documentation – Distribution-X</title>
+    <link>https://docs.travelgatex.com/distribution/</link>
+    <description>Recent changes in Distribution-X on TravelgateX Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <image>
+      <url>https://docs.travelgatex.com/img/hugo.png</url>
+      <title>GoHugo.io</title>
+      <link>https://docs.travelgatex.com/distribution/</link>
+    </image>
+    
+	    <atom:link href="https://docs.travelgatex.com/distribution/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Distribution: Overview</title>
+      <link>https://docs.travelgatex.com/distribution/overview/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/distribution/overview/</guid>
+      <description>
+        
+        
+        Text pending.
+Join us on Slack to talk with us about how to use HotelX in your websites, apps, and products. You can also send us a Jira service desk request. If you would like any new features or more information in our documentation, send us an issues request.
+
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

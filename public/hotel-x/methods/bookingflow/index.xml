@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>TravelgateX Documentation – Booking Flow</title>
+    <link>https://docs.travelgatex.com/hotel-x/methods/bookingflow/</link>
+    <description>Recent changes in Booking Flow on TravelgateX Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <image>
+      <url>https://docs.travelgatex.com/img/hugo.png</url>
+      <title>GoHugo.io</title>
+      <link>https://docs.travelgatex.com/hotel-x/methods/bookingflow/</link>
+    </image>
+    
+	    <atom:link href="https://docs.travelgatex.com/hotel-x/methods/bookingflow/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Hotel-X: Search</title>
+      <link>https://docs.travelgatex.com/hotel-x/methods/bookingflow/search/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/hotel-x/methods/bookingflow/search/</guid>
+      <description>
+        
+        
+        Search is the first operation in the booking flow. It allows to check which available rooms there are for the requested hotels or for the hotels in the requested destination for a given range of dates and for a given pax distribution. The operation could search over one or more sellers accesses.
+Depending seller, search operations involves use supplier&amp;rsquo;s cache.
+It returns a list of available options according to your search criteria.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Hotel-X: Quote</title>
+      <link>https://docs.travelgatex.com/hotel-x/methods/bookingflow/quote/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/hotel-x/methods/bookingflow/quote/</guid>
+      <description>
+        
+        
+        Quote is an operation used to assess and valuate the rate before the actual booking. It returns the same information as the Search response for a hotel rate with up-to-date price, along with additional information regarding the rate: rate breakdown and cancellation policies.
+Advanced criteria There are different parameters that can be set up in the request (The below ones are mandatory)
+ optionRefId: Identifier of the option chosen in Search.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Hotel-X: Book</title>
+      <link>https://docs.travelgatex.com/hotel-x/methods/bookingflow/book/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/hotel-x/methods/bookingflow/book/</guid>
+      <description>
+        
+        
+        This Book operation requests a reservation confirmation for the specified optionId returned in Quote.
+Advanced criteria Within the Query Variables, you should modify the optionRefId with the optionRefId value returned in the Quote response and send the Query with the other mandatory information.
+Also, please specify advanced criteria if it’s necessary:
+auditTransactions: It returns all the transactions exchanged with the supplier. We recommend to set it to &amp;ldquo;true&amp;rdquo; for possible claiming purposes with the supplier - if set to &amp;ldquo;true&amp;rdquo;, the system will return the logs from the supplier in the response.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

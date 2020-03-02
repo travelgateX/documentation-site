@@ -1,0 +1,741 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>TravelgateX Documentation – Input objects</title>
+    <link>https://docs.travelgatex.com/hotel-x/reference/inputobjects/</link>
+    <description>Recent changes in Input objects on TravelgateX Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <image>
+      <url>https://docs.travelgatex.com/img/hugo.png</url>
+      <title>GoHugo.io</title>
+      <link>https://docs.travelgatex.com/hotel-x/reference/inputobjects/</link>
+    </image>
+    
+	    <atom:link href="https://docs.travelgatex.com/hotel-x/reference/inputobjects/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Hotel-X: AccessFilter</title>
+      <link>https://docs.travelgatex.com/hotel-x/reference/inputobjects/accessfilter/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/hotel-x/reference/inputobjects/accessfilter/</guid>
+      <description>
+        
+        
+         GraphQL schema definition type AccessFilter {accessID: [ID] group: [ID] owner: [ID!] Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields accessID([ID]):group([ID]):owner([ID!]): 
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Hotel-X: AccessFilterInput</title>
+      <link>https://docs.travelgatex.com/hotel-x/reference/inputobjects/accessfilterinput/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/hotel-x/reference/inputobjects/accessfilterinput/</guid>
+      <description>
+        
+        
+         GraphQL schema definition type AccessFilterInput {includes: [ID!] excludes: [ID!] Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields includes([ID!]):excludes([ID!]): Required by FilterInput: HotelXFilterSearchInput:  
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Hotel-X: BookPaxInput</title>
+      <link>https://docs.travelgatex.com/hotel-x/reference/inputobjects/bookpaxinput/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/hotel-x/reference/inputobjects/bookpaxinput/</guid>
+      <description>
+        
+        
+         GraphQL schema definition type BookPaxInput {name: String! surname: String! age: Int! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields name(String!):surname(String!):age(Int!): 
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Hotel-X: BookReferenceInput</title>
+      <link>https://docs.travelgatex.com/hotel-x/reference/inputobjects/bookreferenceinput/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/hotel-x/reference/inputobjects/bookreferenceinput/</guid>
+      <description>
+        
+        
+         GraphQL schema definition type BookReferenceInput {client: String supplier: String Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields client(String):supplier(String): Required by HotelCancelInput:  
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Hotel-X: BookRoomInput</title>
+      <link>https://docs.travelgatex.com/hotel-x/reference/inputobjects/bookroominput/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/hotel-x/reference/inputobjects/bookroominput/</guid>
+      <description>
+        
+        
+         GraphQL schema definition type BookRoomInput {occupancyRefId: Int! paxes: [BookPaxInput!]! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields occupancyRefId(Int!):paxes([BookPaxInput!]!): 
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Hotel-X: BusinessRulesInput</title>
+      <link>https://docs.travelgatex.com/hotel-x/reference/inputobjects/businessrulesinput/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/hotel-x/reference/inputobjects/businessrulesinput/</guid>
+      <description>
+        
+        
+         GraphQL schema definition type BusinessRulesInput {optionsQuota: Int businessRulesType: BusinessRulesType Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields optionsQuota(Int):businessRulesType(BusinessRulesType): Required by HotelSettingsInput: SettingsBaseInput:  
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Hotel-X: ClientFilter</title>
+      <link>https://docs.travelgatex.com/hotel-x/reference/inputobjects/clientfilter/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/hotel-x/reference/inputobjects/clientfilter/</guid>
+      <description>
+        
+        
+        GraphQL schema definition type ClientFilter {clientID: [ID] name: [String!] groupID: [ID] isActive: Boolean owner: [ID!] Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields clientID([ID]):name([String!]):groupID([ID]):isActive(Boolean):owner([ID!
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Hotel-X: ConfigurationInput</title>
+      <link>https://docs.travelgatex.com/hotel-x/reference/inputobjects/configurationinput/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/hotel-x/reference/inputobjects/configurationinput/</guid>
+      <description>
+        
+        
+        GraphQL schema definition type ConfigurationInput {username: String password: String urls: UrlsInput! parameters: [ParameterInput!] markets: [String!] rateRules: [RateRulesType!] Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields username(String):password(String):urls(UrlsInput!
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Hotel-X: CriteriaBookingDatesInput</title>
+      <link>https://docs.travelgatex.com/hotel-x/reference/inputobjects/criteriabookingdatesinput/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/hotel-x/reference/inputobjects/criteriabookingdatesinput/</guid>
+      <description>
+        
+        
+         GraphQL schema definition type CriteriaBookingDatesInput {dateType: DateType! start: Date! end: Date! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields dateType(DateType!):start(Date!):end(Date!): Required by HotelCriteriaBookingInput:  
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Hotel-X: CriteriaBookingReferencesInput</title>
+      <link>https://docs.travelgatex.com/hotel-x/reference/inputobjects/criteriabookingreferencesinput/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/hotel-x/reference/inputobjects/criteriabookingreferencesinput/</guid>
+      <description>
+        
+        
+         GraphQL schema definition type CriteriaBookingReferencesInput {hotelCode: String! currency: Currency! references: [BookReferenceInput!]! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields hotelCode(String!):currency(Currency!):references([BookReferenceInput!]!): Required by HotelCriteriaBookingInput:  
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Hotel-X: DeltaPriceInput</title>
+      <link>https://docs.travelgatex.com/hotel-x/reference/inputobjects/deltapriceinput/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/hotel-x/reference/inputobjects/deltapriceinput/</guid>
+      <description>
+        
+        
+         GraphQL schema definition type DeltaPriceInput {amount: Float percent: Float applyBoth: Boolean! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields amount(Float):percent(Float):applyBoth(Boolean!): Required by HotelBookInput:  
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Hotel-X: ExpireDateInput</title>
+      <link>https://docs.travelgatex.com/hotel-x/reference/inputobjects/expiredateinput/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/hotel-x/reference/inputobjects/expiredateinput/</guid>
+      <description>
+        
+        
+         GraphQL schema definition type ExpireDateInput {month: Int! year: Int! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields month(Int!):year(Int!): Required by PaymentCardInput:  
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Hotel-X: FilterInput</title>
+      <link>https://docs.travelgatex.com/hotel-x/reference/inputobjects/filterinput/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/hotel-x/reference/inputobjects/filterinput/</guid>
+      <description>
+        
+        
+         GraphQL schema definition type FilterInput {access: AccessFilterInput rateRules: RateRulesFilterInput Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields access(AccessFilterInput):rateRules(RateRulesFilterInput): 
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Hotel-X: HolderInput</title>
+      <link>https://docs.travelgatex.com/hotel-x/reference/inputobjects/holderinput/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/hotel-x/reference/inputobjects/holderinput/</guid>
+      <description>
+        
+        
+         GraphQL schema definition type HolderInput {name: String! surname: String! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields name(String!):surname(String!): Required by HotelBookInput: PaymentCardInput:  
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Hotel-X: HotelBookInput</title>
+      <link>https://docs.travelgatex.com/hotel-x/reference/inputobjects/hotelbookinput/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/hotel-x/reference/inputobjects/hotelbookinput/</guid>
+      <description>
+        
+        
+        GraphQL schema definition type HotelBookInput {optionRefId: String! language: Language clientReference: String! deltaPrice: DeltaPriceInput paymentCard: PaymentCardInput remarks: String holder: HolderInput! rooms: [BookRoomInput!]! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Hotel-X: HotelCancelInput</title>
+      <link>https://docs.travelgatex.com/hotel-x/reference/inputobjects/hotelcancelinput/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/hotel-x/reference/inputobjects/hotelcancelinput/</guid>
+      <description>
+        
+        
+         GraphQL schema definition type HotelCancelInput {accessCode: String! language: Language hotelCode: String! reference: BookReferenceInput! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields accessCode(String!):language(Language):hotelCode(String!):reference(BookReferenceInput!): 
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Hotel-X: HotelCommitInput</title>
+      <link>https://docs.travelgatex.com/hotel-x/reference/inputobjects/hotelcommitinput/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/hotel-x/reference/inputobjects/hotelcommitinput/</guid>
+      <description>
+        
+        
+         GraphQL schema definition type HotelCommitInput {accessCode: String! language: Language commitReference: String reference: HotelXCommitReferenceInput Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields accessCode(String!):language(Language):commitReference(String):reference(HotelXCommitReferenceInput): 
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Hotel-X: HotelCriteriaBookingInput</title>
+      <link>https://docs.travelgatex.com/hotel-x/reference/inputobjects/hotelcriteriabookinginput/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/hotel-x/reference/inputobjects/hotelcriteriabookinginput/</guid>
+      <description>
+        
+        
+        GraphQL schema definition type HotelCriteriaBookingInput {accessCode: String! language: Language typeSearch: BookingCriteriaType! references: CriteriaBookingReferencesInput dates: CriteriaBookingDatesInput Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields accessCode(String!):language(Language):typeSearch(BookingCriteriaType!
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Hotel-X: HotelCriteriaQuoteInput</title>
+      <link>https://docs.travelgatex.com/hotel-x/reference/inputobjects/hotelcriteriaquoteinput/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/hotel-x/reference/inputobjects/hotelcriteriaquoteinput/</guid>
+      <description>
+        
+        
+         GraphQL schema definition type HotelCriteriaQuoteInput {optionRefId: String! language: Language Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields optionRefId(String!):language(Language): 
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Hotel-X: HotelCriteriaSearchInput</title>
+      <link>https://docs.travelgatex.com/hotel-x/reference/inputobjects/hotelcriteriasearchinput/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/hotel-x/reference/inputobjects/hotelcriteriasearchinput/</guid>
+      <description>
+        
+        
+        GraphQL schema definition type HotelCriteriaSearchInput {checkIn: Date! checkOut: Date! hotels: [String!] destinations: [String!] occupancies: [RoomInput!]! language: Language currency: Currency nationality: Country market: String markets: [String!] Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Hotel-X: HotelSettingsInput</title>
+      <link>https://docs.travelgatex.com/hotel-x/reference/inputobjects/hotelsettingsinput/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/hotel-x/reference/inputobjects/hotelsettingsinput/</guid>
+      <description>
+        
+        
+        GraphQL schema definition type HotelSettingsInput {context: String useContext: Boolean connectUser: String client: ID group: ID timeout: Int auditTransactions: Boolean businessRules: BusinessRulesInput suppliers: [HotelXSupplierInput!] plugins: [PluginStepInput!] testMode: Boolean clientTokens: [String!] commitRequired: Boolean Show deprecated fields}window.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Hotel-X: HotelXAccessInput</title>
+      <link>https://docs.travelgatex.com/hotel-x/reference/inputobjects/hotelxaccessinput/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/hotel-x/reference/inputobjects/hotelxaccessinput/</guid>
+      <description>
+        
+        
+         GraphQL schema definition type HotelXAccessInput {accessId: ID! configuration: ConfigurationInput settings: SettingsBaseInput Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields accessId(ID!):configuration(ConfigurationInput):settings(SettingsBaseInput): 
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Hotel-X: HotelXBoardQueryInput</title>
+      <link>https://docs.travelgatex.com/hotel-x/reference/inputobjects/hotelxboardqueryinput/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/hotel-x/reference/inputobjects/hotelxboardqueryinput/</guid>
+      <description>
+        
+        
+         GraphQL schema definition type HotelXBoardQueryInput {boardCodes: [String!] access: ID! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields boardCodes([String!]):access(ID!): 
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Hotel-X: HotelXBusinessRulesInput</title>
+      <link>https://docs.travelgatex.com/hotel-x/reference/inputobjects/hotelxbusinessrulesinput/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/hotel-x/reference/inputobjects/hotelxbusinessrulesinput/</guid>
+      <description>
+        
+        
+         GraphQL schema definition type HotelXBusinessRulesInput {optionsQuota: Int! businessRulesType: BusinessRulesType! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields optionsQuota(Int!):businessRulesType(BusinessRulesType!): Required by HotelXDefaultSettingsDataInput: HotelXCommonSettingsDataInput:  
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Hotel-X: HotelXCategoryQueryInput</title>
+      <link>https://docs.travelgatex.com/hotel-x/reference/inputobjects/hotelxcategoryqueryinput/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/hotel-x/reference/inputobjects/hotelxcategoryqueryinput/</guid>
+      <description>
+        
+        
+         GraphQL schema definition type HotelXCategoryQueryInput {categoryCodes: [String!] access: ID group: ID Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields categoryCodes([String!]):access(ID):group(ID): 
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Hotel-X: HotelXCommitReferenceInput</title>
+      <link>https://docs.travelgatex.com/hotel-x/reference/inputobjects/hotelxcommitreferenceinput/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/hotel-x/reference/inputobjects/hotelxcommitreferenceinput/</guid>
+      <description>
+        
+        
+         GraphQL schema definition type HotelXCommitReferenceInput {supplier: String client: String Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields supplier(String):client(String): Required by HotelCommitInput:  
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Hotel-X: HotelXCommonSettingsDataInput</title>
+      <link>https://docs.travelgatex.com/hotel-x/reference/inputobjects/hotelxcommonsettingsdatainput/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/hotel-x/reference/inputobjects/hotelxcommonsettingsdatainput/</guid>
+      <description>
+        
+        
+         GraphQL schema definition type HotelXCommonSettingsDataInput {currency: Currency! businessRules: HotelXBusinessRulesInput! timeout: TimeoutInput! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields currency(Currency!):businessRules(HotelXBusinessRulesInput!):timeout(TimeoutInput!): 
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Hotel-X: HotelXDefaultPluginInput</title>
+      <link>https://docs.travelgatex.com/hotel-x/reference/inputobjects/hotelxdefaultplugininput/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/hotel-x/reference/inputobjects/hotelxdefaultplugininput/</guid>
+      <description>
+        
+        
+        GraphQL schema definition type HotelXDefaultPluginInput {step: PluginStepType! type: PluginType! name: String! run: [ParameterInput!] init: [ParameterInput!] Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields step(PluginStepType!):type(PluginType!):name(String!
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Hotel-X: HotelXDefaultPluginStepInput</title>
+      <link>https://docs.travelgatex.com/hotel-x/reference/inputobjects/hotelxdefaultpluginstepinput/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/hotel-x/reference/inputobjects/hotelxdefaultpluginstepinput/</guid>
+      <description>
+        
+        
+         GraphQL schema definition type HotelXDefaultPluginStepInput {step: PluginStepType! plugins: [HotelXDefaultPluginInput!]! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields step(PluginStepType!):plugins([HotelXDefaultPluginInput!]!): 
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Hotel-X: HotelXDefaultSettingsDataInput</title>
+      <link>https://docs.travelgatex.com/hotel-x/reference/inputobjects/hotelxdefaultsettingsdatainput/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/hotel-x/reference/inputobjects/hotelxdefaultsettingsdatainput/</guid>
+      <description>
+        
+        
+        GraphQL schema definition type HotelXDefaultSettingsDataInput {context: String! language: Language! currency: Currency! nationality: Country! market: String markets: [String!] timeout: TimeoutInput! businessRules: HotelXBusinessRulesInput! defaultAccesses: [ID!] defaultPlugins: [HotelXDefaultPluginStepInput!] Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Hotel-X: HotelXDestinationListInput</title>
+      <link>https://docs.travelgatex.com/hotel-x/reference/inputobjects/hotelxdestinationlistinput/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/hotel-x/reference/inputobjects/hotelxdestinationlistinput/</guid>
+      <description>
+        
+        
+         GraphQL schema definition type HotelXDestinationListInput {access: ID group: ID destinationCodes: [String!] maxSize: Int Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields access(ID):group(ID):destinationCodes([String!]):maxSize(Int): 
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Hotel-X: HotelXDestinationSearcherInput</title>
+      <link>https://docs.travelgatex.com/hotel-x/reference/inputobjects/hotelxdestinationsearcherinput/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/hotel-x/reference/inputobjects/hotelxdestinationsearcherinput/</guid>
+      <description>
+        
+        
+         GraphQL schema definition type HotelXDestinationSearcherInput {access: ID! text: String! maxSize: Int Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields access(ID!):text(String!):maxSize(Int): 
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Hotel-X: HotelXFilterInput</title>
+      <link>https://docs.travelgatex.com/hotel-x/reference/inputobjects/hotelxfilterinput/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/hotel-x/reference/inputobjects/hotelxfilterinput/</guid>
+      <description>
+        
+        
+         GraphQL schema definition type HotelXFilterInput {plugin: HotelXPluginFilterInput Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields plugin(HotelXPluginFilterInput): 
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Hotel-X: HotelXFilterPluginTypeInput</title>
+      <link>https://docs.travelgatex.com/hotel-x/reference/inputobjects/hotelxfilterplugintypeinput/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/hotel-x/reference/inputobjects/hotelxfilterplugintypeinput/</guid>
+      <description>
+        
+        
+         GraphQL schema definition type HotelXFilterPluginTypeInput {step: PluginStepType! type: String! name: String! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields step(PluginStepType!):type(String!):name(String!): 
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Hotel-X: HotelXFilterSearchInput</title>
+      <link>https://docs.travelgatex.com/hotel-x/reference/inputobjects/hotelxfiltersearchinput/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/hotel-x/reference/inputobjects/hotelxfiltersearchinput/</guid>
+      <description>
+        
+        
+         GraphQL schema definition type HotelXFilterSearchInput {access: AccessFilterInput rateRules: RateRulesFilterInput plugin: HotelXPluginFilterInput Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields access(AccessFilterInput):rateRules(RateRulesFilterInput):plugin(HotelXPluginFilterInput): 
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Hotel-X: HotelXHotelFilterInput</title>
+      <link>https://docs.travelgatex.com/hotel-x/reference/inputobjects/hotelxhotelfilterinput/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/hotel-x/reference/inputobjects/hotelxhotelfilterinput/</guid>
+      <description>
+        
+        
+        GraphQL schema definition type HotelXHotelFilterInput {AND: [HotelXHotelFilterInput!] OR: [HotelXHotelFilterInput!] createdAt_in: [DateTime!] createdAt_not_in: [DateTime!] createdAt_lt: DateTime createdAt_lte: DateTime createdAt_gt: DateTime createdAt_gte: DateTime updatedAt_in: [DateTime!] updatedAt_not_in: [DateTime!] updatedAt_lt: DateTime updatedAt_lte: DateTime updatedAt_gt: DateTime updatedAt_gte: DateTime deletedAt_in: [DateTime!
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Hotel-X: HotelXHotelListInput</title>
+      <link>https://docs.travelgatex.com/hotel-x/reference/inputobjects/hotelxhotellistinput/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/hotel-x/reference/inputobjects/hotelxhotellistinput/</guid>
+      <description>
+        
+        
+        GraphQL schema definition type HotelXHotelListInput {access: ID hotelCodes: [String!] destinationCodes: [String!] countries: [Country!] ranks: [Int!] maxSize: Int group: ID Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Hotel-X: HotelXMapOptionInput</title>
+      <link>https://docs.travelgatex.com/hotel-x/reference/inputobjects/hotelxmapoptioninput/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/hotel-x/reference/inputobjects/hotelxmapoptioninput/</guid>
+      <description>
+        
+        
+         GraphQL schema definition type HotelXMapOptionInput {groupCode: ID! context: String! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields groupCode(ID!):context(String!): 
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Hotel-X: HotelXMetadataQueryInput</title>
+      <link>https://docs.travelgatex.com/hotel-x/reference/inputobjects/hotelxmetadataqueryinput/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/hotel-x/reference/inputobjects/hotelxmetadataqueryinput/</guid>
+      <description>
+        
+        
+         GraphQL schema definition type HotelXMetadataQueryInput {supplierCodes: [ID!] Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields supplierCodes([ID!]): 
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Hotel-X: HotelXPluginFilterInput</title>
+      <link>https://docs.travelgatex.com/hotel-x/reference/inputobjects/hotelxpluginfilterinput/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/hotel-x/reference/inputobjects/hotelxpluginfilterinput/</guid>
+      <description>
+        
+        
+         GraphQL schema definition type HotelXPluginFilterInput {includes: [HotelXFilterPluginTypeInput!] excludes: [HotelXFilterPluginTypeInput!] Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields includes([HotelXFilterPluginTypeInput!]):excludes([HotelXFilterPluginTypeInput!]): Required by HotelXFilterSearchInput: HotelXFilterInput:  
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Hotel-X: HotelXRoomQueryInput</title>
+      <link>https://docs.travelgatex.com/hotel-x/reference/inputobjects/hotelxroomqueryinput/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/hotel-x/reference/inputobjects/hotelxroomqueryinput/</guid>
+      <description>
+        
+        
+         GraphQL schema definition type HotelXRoomQueryInput {access: ID! roomCodes: [String!] maxSize: Int Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields access(ID!):roomCodes([String!]):maxSize(Int): 
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Hotel-X: HotelXSupplierInput</title>
+      <link>https://docs.travelgatex.com/hotel-x/reference/inputobjects/hotelxsupplierinput/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/hotel-x/reference/inputobjects/hotelxsupplierinput/</guid>
+      <description>
+        
+        
+         GraphQL schema definition type HotelXSupplierInput {settings: SettingsBaseInput code: String! accesses: [HotelXAccessInput!] Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields settings(SettingsBaseInput):code(String!):accesses([HotelXAccessInput!]): 
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Hotel-X: ParameterInput</title>
+      <link>https://docs.travelgatex.com/hotel-x/reference/inputobjects/parameterinput/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/hotel-x/reference/inputobjects/parameterinput/</guid>
+      <description>
+        
+        
+         GraphQL schema definition type ParameterInput {key: String! value: String! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields key(String!):value(String!): 
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Hotel-X: PaxInput</title>
+      <link>https://docs.travelgatex.com/hotel-x/reference/inputobjects/paxinput/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/hotel-x/reference/inputobjects/paxinput/</guid>
+      <description>
+        
+        
+         GraphQL schema definition type PaxInput {age: Int! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields age(Int!): 
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Hotel-X: PaymentCardInput</title>
+      <link>https://docs.travelgatex.com/hotel-x/reference/inputobjects/paymentcardinput/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/hotel-x/reference/inputobjects/paymentcardinput/</guid>
+      <description>
+        
+        
+        GraphQL schema definition type PaymentCardInput {cardType: String type: PaymentCardType holder: HolderInput! number: String! CVC: String! expire: ExpireDateInput! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields cardType(String):type(PaymentCardType):holder(HolderInput!
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Hotel-X: PluginStepInput</title>
+      <link>https://docs.travelgatex.com/hotel-x/reference/inputobjects/pluginstepinput/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/hotel-x/reference/inputobjects/pluginstepinput/</guid>
+      <description>
+        
+        
+         GraphQL schema definition type PluginStepInput {step: PluginStepType! pluginsType: [PluginsInput!] Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields step(PluginStepType!):pluginsType([PluginsInput!]): 
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Hotel-X: PluginsInput</title>
+      <link>https://docs.travelgatex.com/hotel-x/reference/inputobjects/pluginsinput/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/hotel-x/reference/inputobjects/pluginsinput/</guid>
+      <description>
+        
+        
+         GraphQL schema definition type PluginsInput {type: PluginType! name: String! parameters: [ParameterInput!] Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields type(PluginType!):name(String!):parameters([ParameterInput!]): 
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Hotel-X: RateRulesFilterInput</title>
+      <link>https://docs.travelgatex.com/hotel-x/reference/inputobjects/raterulesfilterinput/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/hotel-x/reference/inputobjects/raterulesfilterinput/</guid>
+      <description>
+        
+        
+         GraphQL schema definition type RateRulesFilterInput {includes: [RateRulesType!] excludes: [RateRulesType!] Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields includes([RateRulesType!]):excludes([RateRulesType!]): Required by FilterInput: HotelXFilterSearchInput:  
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Hotel-X: RelayInput</title>
+      <link>https://docs.travelgatex.com/hotel-x/reference/inputobjects/relayinput/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/hotel-x/reference/inputobjects/relayinput/</guid>
+      <description>
+        
+        
+         GraphQL schema definition type RelayInput {first: Int last: Int before: String after: String Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields first(Int):last(Int):before(String):after(String): 
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Hotel-X: RoomInput</title>
+      <link>https://docs.travelgatex.com/hotel-x/reference/inputobjects/roominput/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/hotel-x/reference/inputobjects/roominput/</guid>
+      <description>
+        
+        
+         GraphQL schema definition type RoomInput {paxes: [PaxInput!]! Show deprecated fields}window.onload = _ = {const deprecatedContainer = document.querySelectorAll(&#39;div.deprecated-entities-container&#39;)[0];if (deprecatedContainer.children.length) {const list = document.querySelectorAll(&#39;li.deprecated-button-container&#39;)[0];list.style.display = &#39;block&#39;;console.log(list.style);}}Fields paxes([PaxInput!]!): 
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>TravelgateX Documentation – Basic Concepts</title>
+    <link>https://docs.travelgatex.com/hotel-x/concepts/basicconcepts/</link>
+    <description>Recent changes in Basic Concepts on TravelgateX Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <image>
+      <url>https://docs.travelgatex.com/img/hugo.png</url>
+      <title>GoHugo.io</title>
+      <link>https://docs.travelgatex.com/hotel-x/concepts/basicconcepts/</link>
+    </image>
+    
+	    <atom:link href="https://docs.travelgatex.com/hotel-x/concepts/basicconcepts/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Hotel-X: Supplier, Access, Client and Context</title>
+      <link>https://docs.travelgatex.com/hotel-x/concepts/basicconcepts/supplier-access-client-context/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/hotel-x/concepts/basicconcepts/supplier-access-client-context/</guid>
+      <description>
+        
+        
+        Previously, we introduced an overarching definition of the main Core Entities applying to all Travelgate-X APIs. core concepts that apply to all TravelgateX APIs.
+Here, we want to dig in further on how those concepts are applied to Hotel-X API.
+Supplier A party that supplies accommodation services through a Supplier API implementation. Each Supplier has a Supplier code. These are unique values and they are used consistently throughout all TravelgateX implementations.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Hotel-X: Single Mode &amp; Multi Mode</title>
+      <link>https://docs.travelgatex.com/hotel-x/concepts/basicconcepts/single_multi_mode/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/hotel-x/concepts/basicconcepts/single_multi_mode/</guid>
+      <description>
+        
+        
+        Search Multi Mode is one of the main features of Hotel-X, even if you can use Search Multi Mode in Hotel-X
+Search Single Mode This mode is used when the client only wants to get options from a single access, for this, the client must indicate in the request the code of the access that they want to use. In the request have to use the access filter.
+{ &amp;quot;filter&amp;quot;: { &amp;quot;access&amp;quot;: { &amp;quot;includes&amp;quot;: [&amp;quot;yourAccess&amp;quot;] } } }
+        
+          [...]
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

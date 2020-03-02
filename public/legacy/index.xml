@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>TravelgateX Documentation – Legacy API</title>
+    <link>https://docs.travelgatex.com/legacy/</link>
+    <description>Recent changes in Legacy API on TravelgateX Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <image>
+      <url>https://docs.travelgatex.com/img/hugo.png</url>
+      <title>GoHugo.io</title>
+      <link>https://docs.travelgatex.com/legacy/</link>
+    </image>
+    
+	    <atom:link href="https://docs.travelgatex.com/legacy/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Legacy: Introduction</title>
+      <link>https://docs.travelgatex.com/legacy/intro/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/legacy/intro/</guid>
+      <description>
+        
+        
+        XML Travelgate Introduction XML Travelgate&amp;rsquo;s API allows clients to access content from XML Travelgate&amp;rsquo;s inventory of partners. Currently there are more than 600 suppliers including switching platforms, bedbanks, direct hotel chains, rent a car, ferries, rail, flights and activities companies connected to our system. Use this API to query, check for availability and book fares. It can be accessed by any third-party system such as tour-operator systems, B2C and B2B web applications or third-party applications.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Legacy: Service Endpoints</title>
+      <link>https://docs.travelgatex.com/legacy/service-endpoints/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/legacy/service-endpoints/</guid>
+      <description>
+        
+        
+        Service Endpoints (To be used for Testing Purposes only) You will be sent Production endpoints alongside your live access configuration once you have passed our certification process.
+WSDLs describing the structure of an XML request and response are available through the following URLs:
+Hotel API:
+  Endpoints to our system for the dynamic workflow (Avail, Valuation, Reservation, etc):    http://hubpublic.xmltravelgate.com/Service/Travel/v2/Hotel.svc https://hubpublic.xmltravelgate.com/Service/Travel/v2/HotelSecure.svc    Endpoints to our system for the static information (HotelList, DescriptiveInfo, GeographicDestinationTree, etc):    http://hubhotelbatch.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Legacy: Audience</title>
+      <link>https://docs.travelgatex.com/legacy/audience/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/legacy/audience/</guid>
+      <description>
+        
+        
+        This document is intended to a technical audience. Prior knowledge of XML is required. Although it is recommended to have prior knowledge of XML integrations with transfer services, travel services, airlines, ferries or railway carriers, it is not strictly necessary.
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Legacy: Documents goals</title>
+      <link>https://docs.travelgatex.com/legacy/documents-goals/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/legacy/documents-goals/</guid>
+      <description>
+        
+        
+        This document aims to explain all aspects of XML Travelgate&amp;rsquo;s Hotel API specification. In the following pages you will find detailed explanation of all Nodes, Elements and Attributes in every aspect of the API specification. It uses a very straightforward nomenclature that tries to define every aspect of the specification by the name.
+This documentation follows a standard. For every method there is:
+ Method Description
+ Method Goals: What does it do, how does it do it?
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Legacy: Anatomy of Request</title>
+      <link>https://docs.travelgatex.com/legacy/anatomy-request/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/legacy/anatomy-request/</guid>
+      <description>
+        
+        
+        The request is basically made up of two parts: the hub structure and then the XML request.
+The hub structure is a generic structure wrapping the XML request which will indicate the following information:
+ Hub credentials. Connection time out measured in Milliseconds. XML Travelgate&amp;rsquo;s API version - usually indicated with a 1. Code for the Supplier you wish to connect to. Id to correlate providerRQ in Request with Response  Observations:
+        
+          [...]
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>TravelgateX Documentation – Inventory-X</title>
+    <link>https://docs.travelgatex.com/inventory-x/</link>
+    <description>Recent changes in Inventory-X on TravelgateX Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <image>
+      <url>https://docs.travelgatex.com/img/hugo.png</url>
+      <title>GoHugo.io</title>
+      <link>https://docs.travelgatex.com/inventory-x/</link>
+    </image>
+    
+	    <atom:link href="https://docs.travelgatex.com/inventory-x/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Inventory-X: Overview</title>
+      <link>https://docs.travelgatex.com/inventory-x/overview/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/inventory-x/overview/</guid>
+      <description>
+        
+        
+        Inventory-X Overview Inventory-X permits Channel Managers and Product Distributors to push their product into a TravelgateX database, thus making it available for the TravelgateX buyers.
+The way Inventory-x works is the following. Channel Managers and Hotels will push data to InventoryX.
+ InventoryX will receive the data from the different channels and will store it in a common structure.
+ Then, this product can be consumed in 3 different ways:
+        
+          [...]
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Inventory-X: FAQ</title>
+      <link>https://docs.travelgatex.com/inventory-x/faq/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.travelgatex.com/inventory-x/faq/</guid>
+      <description>
+        
+        
+        Inventory-X FAQ What is standard occupancy?
+Standard occupancy is the standard number of Adult paxes of the room. For example, if the standard occupancy is 2. And the following is loaded&amp;hellip;
+&amp;lt;BaseByGuestAmts&amp;gt; &amp;lt;BaseByGuestAmt NumberOfGuests = &amp;quot;1&amp;quot; AmountAfterTax=&amp;quot;50.00&amp;quot;/&amp;gt; &amp;lt;BaseByGuestAmt NumberOfGuests = &amp;quot;2&amp;quot; AmountAfterTax=&amp;quot;100.00&amp;quot;/&amp;gt; &amp;lt;/BaseByGuestAmts&amp;gt;  &amp;hellip; The price of two paxes will be 100, and the price for one pax will be 50. Note that prices for pax under the standard occupancy must be specified and prices for babies under the standard occupancy will be 0.
+        
+          [...]
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>
