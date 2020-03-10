@@ -14,6 +14,580 @@ The GraphQL schema change log is a list of recent and upcoming changes to our Gr
 
 Check out this list of new releases and changes applied on the **TravelgateX GraphQL API**.
 
+## 2020-03-10
+
+🛑  Field `audit` was removed from object type `Query`
+
+🛑  Field `audit` was removed from object type `Mutation`
+
+🛑  Input field `AlertUpdateErrorRateComparativeConfigurationByTimeInput.windowing` changed type from `AlertCommonByTimeInput` to `AlertUpdateCommonByTimeInput`
+
+🛑  Input field `AlertUpdatePeakTrafficComparativeByTimeInput.configuration` changed type from `AlertUpdatePeakTrafficComprarativeConfigurationByTimeInput` to `AlertUpdatePeakTrafficComparativeConfigurationByTimeInput`
+
+🛑  Input field `AlertPeakTrafficComparativeByTimeInput.configuration` changed type from `AlertPeakTrafficComprarativeConfigurationByTimeInput!` to `AlertPeakTrafficComparativeConfigurationByTimeInput!`
+
+🛑  Type `AuditQuery` was removed
+
+🛑  Type `AuditMutation` was removed
+
+🛑  Type `AlertUpdatePeakTrafficComprarativeConfigurationByTimeInput` was removed
+
+🛑  Type `AlertPeakTrafficComprarativeConfigurationByTimeInput` was removed
+
+✅  Description ` The service used to access the stats of every connection that uses the HUB ` on type `AuditRule` has changed to `The service used to access the stats of every connection that uses the HUB`
+
+✅  Field `AuditRule.code` description changed from `GUID` to ``
+
+✅  Field `InsightsQuery.hotelXMappingReport` description changed from `## Retrieve Mapping Report for HotelX` to `Retrieve Mapping Report for HotelX`
+
+✅  Field `InsightsQuery.bookingsReport` description changed from `## Retrieve Bookings Details and Summary` to `Retrieve Bookings Details and Summary`
+
+✅  Field `logging` was added to object type `Mutation`
+
+✅  Field `allAuditRules` was added to object type `LoggingQuery`
+
+✅  Input field `AlertUpdatePriceRelativeConfigurationByTimeInput.relative` description changed from `` to `Common configuration of relative mode type`
+
+✅  Input field `AlertUpdatePriceRelativeConfigurationByTimeInput.common` description changed from `` to `Common configuration alert`
+
+✅  Input field `AlertUpdatePriceRelativeConfigurationByTimeInput.windowing` description changed from `` to `Common configuration for time window type`
+
+✅  Input field `AlertUpdatePriceRelativeConfigurationByTimeInput.price` description changed from `` to `Configuration of amount & commission values`
+
+✅  Input field `AlertUpdatePriceRelativeConfigurationByRequestsInput.relative` description changed from `` to `Common configuration of relative mode type`
+
+✅  Input field `AlertUpdatePriceRelativeConfigurationByRequestsInput.common` description changed from `` to `Common configuration alert`
+
+✅  Input field `AlertUpdatePriceRelativeConfigurationByRequestsInput.windowing` description changed from `` to `Common configuration for requests window type`
+
+✅  Input field `AlertUpdatePriceRelativeConfigurationByRequestsInput.price` description changed from `` to `Configuration of amount & commission values`
+
+✅  Input field `AlertUpdatePriceInput.amountBy` description changed from `` to `Amount can be checked by its total value or night`
+
+✅  Input field `AlertUpdatePriceInput.range` description changed from `Low or greater values of amount/commission (value included)` to `Low or greater values of amount/commission (value included) `
+
+✅  Input field `AlertUpdatePriceAbsoluteConfigurationByTimeInput.common` description changed from `` to `Common configuration alert`
+
+✅  Input field `AlertUpdatePriceAbsoluteConfigurationByTimeInput.windowing` description changed from `` to `Common configuration for time window type`
+
+✅  Input field `AlertUpdatePriceAbsoluteConfigurationByTimeInput.price` description changed from `` to `Configuration of amount & commission values`
+
+✅  Input field `AlertUpdatePriceAbsoluteConfigurationByRequestsInput.common` description changed from `` to `Common configuration alert`
+
+✅  Input field `AlertUpdatePriceAbsoluteConfigurationByRequestsInput.windowing` description changed from `` to `Common configuration for requests window type`
+
+✅  Input field `AlertUpdatePriceAbsoluteConfigurationByRequestsInput.price` description changed from `` to `Configuration of amount & commission values`
+
+✅  Input field `AlertUpdatePeakTrafficAbsoluteConfigurationByTimeInput.common` description changed from `` to `Common configuration alert`
+
+✅  Input field `AlertUpdatePeakTrafficAbsoluteConfigurationByTimeInput.windowing` description changed from `` to `Common configuration for time window type`
+
+✅  Input field `AlertUpdatePeakTrafficAbsoluteConfigurationByTimeInput.bounds` description changed from `` to `Limits for number of requests`
+
+✅  Input field `AlertUpdateErrorRateRelativeConfigurationByTimeInput.relative` description changed from `` to `Common configuration of relative mode type`
+
+✅  Input field `AlertUpdateErrorRateRelativeConfigurationByTimeInput.common` description changed from `` to `Common configuration alert`
+
+✅  Input field `AlertUpdateErrorRateRelativeConfigurationByTimeInput.windowing` description changed from `` to `Common configuration for time window type`
+
+✅  Input field `AlertUpdateErrorRateRelativeConfigurationByTimeInput.toCompare` description changed from `` to `Error codes to compare. By defaults all traffic is compared`
+
+✅  Input field `AlertUpdateErrorRateRelativeConfigurationByTimeInput.toCheck` description changed from `` to `Error codes to check. By default all error codes are checked`
+
+✅  Input field `AlertUpdateErrorRateRelativeConfigurationByRequestsInput.relative` description changed from `` to `Common configuration of relative mode type`
+
+✅  Input field `AlertUpdateErrorRateRelativeConfigurationByRequestsInput.common` description changed from `` to `Common configuration alert`
+
+✅  Input field `AlertUpdateErrorRateRelativeConfigurationByRequestsInput.windowing` description changed from `` to `Common configuration for requests window type`
+
+✅  Input field `AlertUpdateErrorRateRelativeConfigurationByRequestsInput.toCompare` description changed from `` to `Error codes to compare. By defaults all traffic is compared`
+
+✅  Input field `AlertUpdateErrorRateRelativeConfigurationByRequestsInput.toCheck` description changed from `` to `Error codes to check. By default all error codes are checked`
+
+✅  Input field `AlertUpdateErrorRateComparativeConfigurationByTimeInput.comparative` description changed from `` to `Common configuration of comparative mode type`
+
+✅  Input field `AlertUpdateErrorRateComparativeConfigurationByTimeInput.common` description changed from `` to `Common configuration alert`
+
+✅  Input field `AlertUpdateErrorRateComparativeConfigurationByTimeInput.windowing` description changed from `` to `Common configuration for time window type`
+
+✅  Input field `AlertUpdateErrorRateComparativeConfigurationByTimeInput.toCompare` description changed from `` to `Error codes to compare. By defaults all traffic is compared`
+
+✅  Input field `AlertUpdateErrorRateComparativeConfigurationByTimeInput.toCheck` description changed from `` to `Error codes to check. By default all error codes are checked`
+
+✅  Input field `AlertUpdateBoundsInput.lowerBound` description changed from `` to `Lower bound limit`
+
+✅  Input field `AlertUpdateBoundsInput.upperBound` description changed from `` to `Upper bound limit`
+
+✅  Input field `AlertUpdateBoundsInput.bound` description changed from `` to `Bound limits to be used`
+
+✅  Input field `AlertUpdateCommonRelativeInput.percentageToAlert` description changed from `` to `percentage to be considered status ALERTING`
+
+✅  Input field `AlertUpdateAverageTimeRelativeConfigurationByTimeInput.relative` description changed from `` to `Common configuration of relative mode type`
+
+✅  Input field `AlertUpdateAverageTimeRelativeConfigurationByTimeInput.common` description changed from `` to `Common configuration alert`
+
+✅  Input field `AlertUpdateAverageTimeRelativeConfigurationByTimeInput.windowing` description changed from `` to `Common configuration for time window type`
+
+✅  Input field `AlertUpdateAverageTimeRelativeConfigurationByTimeInput.maxAverageTime` description changed from `` to `Average time value not allowed in miliseconds`
+
+✅  Input field `AlertUpdateAverageTimeRelativeConfigurationByTimeInput.maxTime` description changed from `` to `Time value not allowed in miliseconds`
+
+✅  Input field `AlertUpdateAverageTimeRelativeConfigurationByRequestsInput.relative` description changed from `` to `Common configuration of relative mode type`
+
+✅  Input field `AlertUpdateAverageTimeRelativeConfigurationByRequestsInput.common` description changed from `` to `Common configuration alert`
+
+✅  Input field `AlertUpdateAverageTimeRelativeConfigurationByRequestsInput.windowing` description changed from `` to `Common configuration for requests window type`
+
+✅  Input field `AlertUpdateAverageTimeRelativeConfigurationByRequestsInput.maxAverageTime` description changed from `` to `Average time value not allowed in miliseconds`
+
+✅  Input field `AlertUpdateAverageTimeRelativeConfigurationByRequestsInput.maxTime` description changed from `` to `Time value not allowed in miliseconds`
+
+✅  Input field `AlertUpdateCommonComparativeInput.percentageToAlert` description changed from `` to `Percentage of traffic to be considered status ALERTING`
+
+✅  Input field `AlertUpdateCommonComparativeInput.variation` description changed from `` to `According to percentageToAlert value`
+
+✅  Input field `AlertUpdateCommonComparativeInput.offset` description changed from `` to `Time frame in minutes to set the beginning of historicalWindow`
+
+✅  Input field `AlertUpdateCommonComparativeInput.historicalWindow` description changed from `` to `The time frame in minutes to be used to compare with the window time frame`
+
+✅  Input field `AlertUpdateAverageTimeComparativeConfigurationByTimeInput.comparative` description changed from `` to `Common configuration of comparative mode type`
+
+✅  Input field `AlertUpdateAverageTimeComparativeConfigurationByTimeInput.common` description changed from `` to `Common configuration alert`
+
+✅  Input field `AlertUpdateAverageTimeComparativeConfigurationByTimeInput.windowing` description changed from `` to `Common configuration for time window type`
+
+✅  Input field `AlertUpdateCommonByTimeInput.minNumberRequests` description changed from `` to `Minimum number of requests must be in window to check the alert`
+
+✅  Input field `AlertUpdateCommonByTimeInput.window` description changed from `` to `The time frame in minutes`
+
+✅  Input field `AlertUpdateCommonByTimeInput.periodicity` description changed from `` to `Frequency of time in minutes in which the alert will be reviewed`
+
+✅  Input field `AlertUpdateCommonByRequestsInput.minNumberRequests` description changed from `` to `minimum number of requests to check the alert`
+
+✅  Input field `AlertUpdateAverageTimeAbsoluteConfigurationByTimeInput.common` description changed from `` to `Common configuration alert`
+
+✅  Input field `AlertUpdateAverageTimeAbsoluteConfigurationByTimeInput.windowing` description changed from `` to `Common configuration for time window type`
+
+✅  Input field `AlertUpdateAverageTimeAbsoluteConfigurationByTimeInput.requestsToAlert` description changed from `` to `Number of requests with anomaly to set alert in ALERTING status`
+
+✅  Input field `AlertUpdateAverageTimeAbsoluteConfigurationByTimeInput.maxAverageTime` description changed from `` to `Average time value not allowed in miliseconds`
+
+✅  Input field `AlertUpdateAverageTimeAbsoluteConfigurationByTimeInput.maxTime` description changed from `` to `Time value not allowed in miliseconds`
+
+✅  Input field `AlertUpdateAverageTimeAbsoluteConfigurationByRequestsInput.common` description changed from `` to `Common configuration alert`
+
+✅  Input field `AlertUpdateAverageTimeAbsoluteConfigurationByRequestsInput.windowing` description changed from `` to `Common configuration for requests window type`
+
+✅  Input field `AlertUpdateAverageTimeAbsoluteConfigurationByRequestsInput.requestsToAlert` description changed from `` to `Number of requests with anomaly to set alert in ALERTING status`
+
+✅  Input field `AlertUpdateAverageTimeAbsoluteConfigurationByRequestsInput.maxAverageTime` description changed from `` to `Average time value not allowed in miliseconds`
+
+✅  Input field `AlertUpdateAverageTimeAbsoluteConfigurationByRequestsInput.maxTime` description changed from `` to `Time value not allowed in miliseconds`
+
+✅  Input field `AlertPriceRelativeConfigurationByTimeInput.relative` description changed from `` to `Common configuration of relative mode type`
+
+✅  Input field `AlertPriceRelativeConfigurationByTimeInput.common` description changed from `` to `Common configuration alert`
+
+✅  Input field `AlertPriceRelativeConfigurationByTimeInput.windowing` description changed from `` to `Common configuration for time window type`
+
+✅  Input field `AlertPriceRelativeConfigurationByTimeInput.price` description changed from `` to `Configuration of amount & commission values`
+
+✅  Input field `AlertPriceRelativeConfigurationByRequestsInput.relative` description changed from `` to `Common configuration of relative mode type`
+
+✅  Input field `AlertPriceRelativeConfigurationByRequestsInput.common` description changed from `` to `Common configuration alert`
+
+✅  Input field `AlertPriceRelativeConfigurationByRequestsInput.windowing` description changed from `` to `Common configuration for requests window type`
+
+✅  Input field `AlertPriceRelativeConfigurationByRequestsInput.price` description changed from `` to `Configuration of amount & commission values`
+
+✅  Input field `AlertPriceInput.amountBy` description changed from `` to `Amount can be checked by its total value or night`
+
+✅  Input field `AlertPriceAbsoluteConfigurationByTimeInput.common` description changed from `` to `Common configuration alert`
+
+✅  Input field `AlertPriceAbsoluteConfigurationByTimeInput.windowing` description changed from `` to `Common configuration for time window type`
+
+✅  Input field `AlertPriceAbsoluteConfigurationByTimeInput.price` description changed from `` to `Configuration of amount & commission values`
+
+✅  Input field `AlertPriceAbsoluteConfigurationByRequestsInput.common` description changed from `` to `Common configuration alert`
+
+✅  Input field `AlertPriceAbsoluteConfigurationByRequestsInput.windowing` description changed from `` to `Common configuration for requests window type`
+
+✅  Input field `AlertPriceAbsoluteConfigurationByRequestsInput.price` description changed from `` to `Configuration of amount & commission values`
+
+✅  Input field `AlertPeakTrafficAbsoluteConfigurationByTimeInput.common` description changed from `` to `Common configuration alert`
+
+✅  Input field `AlertPeakTrafficAbsoluteConfigurationByTimeInput.windowing` description changed from `` to `Common configuration for requests window type`
+
+✅  Input field `AlertPeakTrafficAbsoluteConfigurationByTimeInput.bounds` description changed from `` to `Limits for number of requests`
+
+✅  Input field `AlertErrorRateRelativeConfigurationByTimeInput.relative` description changed from `` to `Common configuration of relative mode type`
+
+✅  Input field `AlertErrorRateRelativeConfigurationByTimeInput.common` description changed from `` to `Common configuration alert`
+
+✅  Input field `AlertErrorRateRelativeConfigurationByTimeInput.windowing` description changed from `` to `Common configuration for requests window type`
+
+✅  Input field `AlertErrorRateRelativeConfigurationByRequestsInput.relative` description changed from `` to `Common configuration of relative mode type`
+
+✅  Input field `AlertErrorRateRelativeConfigurationByRequestsInput.common` description changed from `` to `Common configuration alert`
+
+✅  Input field `AlertErrorRateRelativeConfigurationByRequestsInput.windowing` description changed from `` to `Common configuration for requests window type`
+
+✅  Input field `AlertErrorRateRelativeConfigurationByRequestsInput.toCompare` description changed from `By defaults all traffic is compared` to `Error codes to compare. By defaults all traffic is compared`
+
+✅  Input field `AlertErrorRateRelativeConfigurationByRequestsInput.toCheck` description changed from `By default all error codes are checked` to `Error codes to check. By default all error codes are checked`
+
+✅  Input field `AlertErrorRateComparativeConfigurationByTimeInput.comparative` description changed from `` to `Common configuration of comparative mode type`
+
+✅  Input field `AlertErrorRateComparativeConfigurationByTimeInput.common` description changed from `` to `Common configuration alert`
+
+✅  Input field `AlertErrorRateComparativeConfigurationByTimeInput.windowing` description changed from `` to `Common configuration for time window type`
+
+✅  Input field `AlertErrorRateComparativeConfigurationByTimeInput.toCompare` description changed from `By defaults all traffic is compared` to `Error codes to compare. By defaults all traffic is compared`
+
+✅  Input field `AlertErrorRateComparativeConfigurationByTimeInput.toCheck` description changed from `By default all error codes are checked` to `Error codes to check. By default all error codes are checked`
+
+✅  Input field `AlertGroupInput.isInclusive` description changed from `to indicate if tráfic with the code group has to be checked or not for this alert` to `Can be filtered traffic setting as inclusive or excludent`
+
+✅  Input field `AlertGroupInput.comercialType` description changed from `` to `SELLER or BUYER`
+
+✅  Input field `AlertGroupInput.code` description changed from `` to `Group code`
+
+✅  Input field `AlertObjectInput.isInclusive` description changed from `to indicate if tráfic with the code object has to be checked or not for this alert` to `Can be filtered traffic setting as inclusive or excludent`
+
+✅  Input field `AlertErrorTypeInput.isInclusive` description changed from `to indicate if tráfic with the error type code has to be checked or not for this alert` to `Can be filtered traffic setting as inclusive or excludent`
+
+✅  Input field `AlertErrorTypeInput.code` description changed from `` to `Error type code`
+
+✅  Input field `AlertErrorCodeInput.isInclusive` description changed from `` to `Can be filtered traffic setting as inclusive or excludent`
+
+✅  Input field `AlertErrorCodeInput.code` description changed from `` to `Error code`
+
+✅  Input field `AlertHubStatusInput.isInclusive` description changed from `` to `Can be filtered traffic setting as inclusive or excludent`
+
+✅  Input field `AlertHubStatusInput.code` description changed from `` to `Hub status code`
+
+✅  Input field `AlertEmailInput.type` description changed from `email type` to `Destination email type`
+
+✅  Input field `AlertEmailInput.address` description changed from `address ID` to `Email address`
+
+✅  Description `` on type `AlertBoundsInput` has changed to `Limit of requests to define`
+
+✅  Input field `AlertBoundsInput.lowerBound` description changed from `` to `Lower bound limit`
+
+✅  Input field `AlertBoundsInput.upperBound` description changed from `` to `Upper bound limit`
+
+✅  Input field `AlertBoundsInput.bound` description changed from `` to `Bound limits to be used`
+
+✅  Input field `AlertCommonRelativeInput.percentageToAlert` description changed from `percentage to be considered status ALERTING` to `percentage of traffic to be considered status ALERTING`
+
+✅  Input field `AlertAverageTimeRelativeConfigurationByTimeInput.relative` description changed from `` to `Common configuration of relative mode type`
+
+✅  Input field `AlertAverageTimeRelativeConfigurationByTimeInput.common` description changed from `` to `Common configuration alert`
+
+✅  Input field `AlertAverageTimeRelativeConfigurationByTimeInput.windowing` description changed from `` to `Common configuration of time window type`
+
+✅  Input field `AlertAverageTimeRelativeConfigurationByTimeInput.maxAverageTime` description changed from `Average time not allowed in miliseconds.` to `Average time not allowed in miliseconds`
+
+✅  Input field `AlertAverageTimeRelativeConfigurationByTimeInput.maxTime` description changed from `Time not allowed in miliseconds.` to `Time not allowed in miliseconds`
+
+✅  Input field `AlertAverageTimeRelativeConfigurationByRequestsInput.relative` description changed from `` to `Common configuration of relative mode type`
+
+✅  Input field `AlertAverageTimeRelativeConfigurationByRequestsInput.common` description changed from `` to `Common configuration alert`
+
+✅  Input field `AlertAverageTimeRelativeConfigurationByRequestsInput.windowing` description changed from `Average time not allowed in miliseconds.` to `Common configuration for requests window type`
+
+✅  Input field `AlertAverageTimeRelativeConfigurationByRequestsInput.maxTime` description changed from `Time not allowed in miliseconds.` to `Time not allowed in miliseconds`
+
+✅  Input field `maxAverageTime` was added to input object type `AlertAverageTimeRelativeConfigurationByRequestsInput`
+
+✅  Input field `AlertCommonComparativeInput.percentageToAlert` description changed from `According to percentageToAlert value` to `Percentage to be considered status ALERTING`
+
+✅  Input field `AlertCommonComparativeInput.variation` description changed from `Percentage to be considered status ALERTING` to `According to percentageToAlert value`
+
+✅  Input field `AlertAverageTimeComparativeConfigurationByTimeInput.comparative` description changed from `` to `Common configuration of comparative mode type`
+
+✅  Input field `AlertAverageTimeComparativeConfigurationByTimeInput.common` description changed from `` to `Common configuration alert`
+
+✅  Input field `AlertAverageTimeComparativeConfigurationByTimeInput.windowing` description changed from `` to `Common configuration for time window type.`
+
+✅  Input field `AlertCommonByTimeInput.minNumberRequests` description changed from `minimum number of requests to check the alert` to `Minimum number of requests must be in window to check the alert`
+
+✅  Input field `AlertAverageTimeAbsoluteConfigurationByTimeInput.common` description changed from `` to `Common configuration alert`
+
+✅  Input field `AlertAverageTimeAbsoluteConfigurationByTimeInput.windowing` description changed from `` to `Common configuration for time window type.`
+
+✅  Input field `AlertAverageTimeAbsoluteConfigurationByRequestsInput.common` description changed from `` to `Common configuration alert`
+
+✅  Input field `AlertAverageTimeAbsoluteConfigurationByRequestsInput.windowing` description changed from `` to `Common configuration for requests window type`
+
+✅  Input field `AlertAverageTimeAbsoluteConfigurationByRequestsInput.requestsToAlert` description changed from `Requests vs total requests checked to consider alert in ALERTING status.` to `Number of requests with anomaly to set alert in ALERTING status`
+
+✅  Input field `AlertAverageTimeAbsoluteConfigurationByRequestsInput.maxAverageTime` description changed from `Average time not allowed in miliseconds.` to `Average time not allowed in miliseconds`
+
+✅  Input field `AlertAverageTimeAbsoluteConfigurationByRequestsInput.maxTime` description changed from `Time not allowed in miliseconds.` to `Time not allowed in miliseconds`
+
+✅  Input field `AlertCriteriaInput.shared` description changed from `List of shared type  ` to `shared alerts`
+
+✅  Input field `AlertCriteriaInput.isActive` description changed from `active or not` to `enabled or desabled alerts`
+
+✅  Input field `AlertUpdatePriceAbsoluteByRequestsInput.isActive` description changed from `` to `To enable or desable the alert`
+
+✅  Input field `AlertUpdatePriceAbsoluteByRequestsInput.configuration` description changed from `` to `Configuration of the alert`
+
+✅  Input field `AlertUpdatePriceAbsoluteByRequestsInput.description` description changed from `` to `Description of the alert`
+
+✅  Input field `AlertUpdatePriceAbsoluteByRequestsInput.name` description changed from `` to `Name of the alert`
+
+✅  Input field `AlertUpdatePriceAbsoluteByTimeInput.isActive` description changed from `` to `To enable or desable the alert`
+
+✅  Input field `AlertUpdatePriceAbsoluteByTimeInput.configuration` description changed from `` to `Configuration of the alert`
+
+✅  Input field `AlertUpdatePriceAbsoluteByTimeInput.description` description changed from `` to `Description of the alert`
+
+✅  Input field `AlertUpdatePriceAbsoluteByTimeInput.name` description changed from `` to `Name of the alert`
+
+✅  Input field `AlertUpdatePriceRelativeByRequestsInput.isActive` description changed from `` to `To enable or desable the alert`
+
+✅  Input field `AlertUpdatePriceRelativeByRequestsInput.configuration` description changed from `` to `Configuration of the alert`
+
+✅  Input field `AlertUpdatePriceRelativeByRequestsInput.description` description changed from `` to `Description of the alert`
+
+✅  Input field `AlertUpdatePriceRelativeByRequestsInput.name` description changed from `` to `Name of the alert`
+
+✅  Input field `AlertUpdatePriceRelativeByTimeInput.isActive` description changed from `status` to `To enable or desable the alert`
+
+✅  Input field `AlertUpdatePriceRelativeByTimeInput.configuration` description changed from `configuration` to `Configuration of the alert`
+
+✅  Input field `AlertUpdatePriceRelativeByTimeInput.description` description changed from `description` to `Description of the alert`
+
+✅  Input field `AlertUpdatePriceRelativeByTimeInput.name` description changed from `name` to `Name of the alert`
+
+✅  Input field `AlertUpdatePeakTrafficComparativeByTimeInput.isActive` description changed from `` to `To enable or desable the alert`
+
+✅  Input field `AlertUpdatePeakTrafficComparativeByTimeInput.configuration` description changed from `` to `Configuration of the alert`
+
+✅  Input field `AlertUpdatePeakTrafficComparativeByTimeInput.description` description changed from `` to `Description of the alert`
+
+✅  Input field `AlertUpdatePeakTrafficComparativeByTimeInput.name` description changed from `` to `Name of the alert`
+
+✅  Input field `AlertUpdatePeakTrafficAbsoluteByTimeInput.isActive` description changed from `` to `To enable or desable the alert`
+
+✅  Input field `AlertUpdatePeakTrafficAbsoluteByTimeInput.configuration` description changed from `` to `Configuration of the alert`
+
+✅  Input field `AlertUpdatePeakTrafficAbsoluteByTimeInput.description` description changed from `` to `Description of the alert`
+
+✅  Input field `AlertUpdatePeakTrafficAbsoluteByTimeInput.name` description changed from `` to `Name of the alert`
+
+✅  Input field `AlertUpdateAverageTimeComparativeByTimeInput.isActive` description changed from `` to `To enable or desable the alert`
+
+✅  Input field `AlertUpdateAverageTimeComparativeByTimeInput.configuration` description changed from `` to `Configuration of the alert`
+
+✅  Input field `AlertUpdateAverageTimeComparativeByTimeInput.description` description changed from `` to `Description of the alert`
+
+✅  Input field `AlertUpdateAverageTimeComparativeByTimeInput.name` description changed from `` to `Name of the alert`
+
+✅  Input field `AlertUpdateAverageTimeAbsoluteByRequestsInput.isActive` description changed from `` to `To enable or desable the alert`
+
+✅  Input field `AlertUpdateAverageTimeAbsoluteByRequestsInput.configuration` description changed from `` to `Configuration of the alert`
+
+✅  Input field `AlertUpdateAverageTimeAbsoluteByRequestsInput.description` description changed from `` to `Description of the alert`
+
+✅  Input field `AlertUpdateAverageTimeAbsoluteByRequestsInput.name` description changed from `` to `Name of the alert`
+
+✅  Input field `AlertUpdateAverageTimeAbsoluteByTimeInput.isActive` description changed from `` to `To enable or desable the alert`
+
+✅  Input field `AlertUpdateAverageTimeAbsoluteByTimeInput.configuration` description changed from `` to `Configuration of the alert`
+
+✅  Input field `AlertUpdateAverageTimeAbsoluteByTimeInput.description` description changed from `` to `Description of the alert`
+
+✅  Input field `AlertUpdateAverageTimeAbsoluteByTimeInput.name` description changed from `` to `Name of the alert`
+
+✅  Input field `AlertUpdateAverageTimeRelativeByRequestsInput.isActive` description changed from `` to `To enable or desable the alert`
+
+✅  Input field `AlertUpdateAverageTimeRelativeByRequestsInput.configuration` description changed from `` to `Configuration of the alert`
+
+✅  Input field `AlertUpdateAverageTimeRelativeByRequestsInput.description` description changed from `` to `Description of the alert`
+
+✅  Input field `AlertUpdateAverageTimeRelativeByRequestsInput.name` description changed from `` to `Name of the alert`
+
+✅  Input field `AlertUpdateAverageTimeRelativeByTimeInput.isActive` description changed from `` to `To enable or desable the alert`
+
+✅  Input field `AlertUpdateAverageTimeRelativeByTimeInput.configuration` description changed from `` to `Configuration of the alert`
+
+✅  Input field `AlertUpdateAverageTimeRelativeByTimeInput.description` description changed from `` to `Description of the alert`
+
+✅  Input field `AlertUpdateAverageTimeRelativeByTimeInput.name` description changed from `` to `Name of the alert`
+
+✅  Input field `AlertUpdateErrorRateComparativeByTimeInput.isActive` description changed from `` to `To enable or desable the alert`
+
+✅  Input field `AlertUpdateErrorRateComparativeByTimeInput.configuration` description changed from `` to `Configuration of the alert`
+
+✅  Input field `AlertUpdateErrorRateComparativeByTimeInput.description` description changed from `` to `Description of the alert`
+
+✅  Input field `AlertUpdateErrorRateComparativeByTimeInput.name` description changed from `` to `Name of the alert`
+
+✅  Input field `AlertUpdateErrorRateRelativeByRequestsInput.isActive` description changed from `` to `To enable or desable the alert`
+
+✅  Input field `AlertUpdateErrorRateRelativeByRequestsInput.configuration` description changed from `` to `Configuration of the alert`
+
+✅  Input field `AlertUpdateErrorRateRelativeByRequestsInput.description` description changed from `` to `Description of the alert`
+
+✅  Input field `AlertUpdateErrorRateRelativeByRequestsInput.name` description changed from `` to `Name of the alert`
+
+✅  Input field `AlertUpdateErrorRateRelativeByTimeInput.isActive` description changed from `` to `To enable or desable the alert`
+
+✅  Input field `AlertUpdateErrorRateRelativeByTimeInput.configuration` description changed from `` to `Configuration of the alert`
+
+✅  Input field `AlertUpdateErrorRateRelativeByTimeInput.description` description changed from `` to `Description of the alert`
+
+✅  Input field `AlertUpdateErrorRateRelativeByTimeInput.name` description changed from `` to `Name of the alert`
+
+✅  Input field `AlertPriceAbsoluteByRequestsInput.group` description changed from `` to `groups where the alert is setted`
+
+✅  Input field `AlertPriceAbsoluteByRequestsInput.isActive` description changed from `` to `To enable or desable the alert`
+
+✅  Input field `AlertPriceAbsoluteByRequestsInput.configuration` description changed from `` to `Configuration of the alert`
+
+✅  Input field `AlertPriceAbsoluteByRequestsInput.description` description changed from `` to `Description of the alert`
+
+✅  Input field `AlertPriceAbsoluteByRequestsInput.name` description changed from `` to `Name of the alert`
+
+✅  Input field `AlertPriceAbsoluteByTimeInput.group` description changed from `` to `groups where the alert is setted`
+
+✅  Input field `AlertPriceAbsoluteByTimeInput.isActive` description changed from `` to `To enable or desable the alert`
+
+✅  Input field `AlertPriceAbsoluteByTimeInput.configuration` description changed from `` to `Configuration of the alert`
+
+✅  Input field `AlertPriceAbsoluteByTimeInput.description` description changed from `` to `Description of the alert`
+
+✅  Input field `AlertPriceAbsoluteByTimeInput.name` description changed from `` to `Name of the alert`
+
+✅  Input field `AlertPriceRelativeByRequestsInput.group` description changed from `` to `groups where the alert is setted`
+
+✅  Input field `AlertPriceRelativeByRequestsInput.isActive` description changed from `` to `To enable or desable the alert`
+
+✅  Input field `AlertPriceRelativeByRequestsInput.configuration` description changed from `` to `Configuration of the alert`
+
+✅  Input field `AlertPriceRelativeByRequestsInput.description` description changed from `` to `Description of the alert`
+
+✅  Input field `AlertPriceRelativeByRequestsInput.name` description changed from `` to `Name of the alert`
+
+✅  Input field `AlertPriceRelativeByTimeInput.group` description changed from `` to `groups where the alert is setted`
+
+✅  Input field `AlertPriceRelativeByTimeInput.isActive` description changed from `` to `To enable or desable the alert`
+
+✅  Input field `AlertPriceRelativeByTimeInput.configuration` description changed from `` to `Configuration of the alert`
+
+✅  Input field `AlertPriceRelativeByTimeInput.description` description changed from `` to `Description of the alert`
+
+✅  Input field `AlertPriceRelativeByTimeInput.name` description changed from `` to `Name of the alert`
+
+✅  Input field `AlertPeakTrafficComparativeByTimeInput.group` description changed from `` to `groups where the alert is setted`
+
+✅  Input field `AlertPeakTrafficComparativeByTimeInput.isActive` description changed from `` to `To enable or desable the alert`
+
+✅  Input field `AlertPeakTrafficComparativeByTimeInput.configuration` description changed from `` to `Configuration of the alert`
+
+✅  Input field `AlertPeakTrafficComparativeByTimeInput.description` description changed from `` to `Description of the alert`
+
+✅  Input field `AlertPeakTrafficComparativeByTimeInput.name` description changed from `` to `Name of the alert`
+
+✅  Input field `AlertPeakTrafficAbsoluteByTimeInput.group` description changed from `` to `groups where the alert is setted`
+
+✅  Input field `AlertPeakTrafficAbsoluteByTimeInput.isActive` description changed from `` to `To enable or desable the alert`
+
+✅  Input field `AlertPeakTrafficAbsoluteByTimeInput.configuration` description changed from `` to `Configuration of the alert`
+
+✅  Input field `AlertPeakTrafficAbsoluteByTimeInput.description` description changed from `` to `Description of the alert`
+
+✅  Input field `AlertPeakTrafficAbsoluteByTimeInput.name` description changed from `` to `Name of the alert`
+
+✅  Input field `AlertAverageTimeComparativeByTimeInput.group` description changed from `` to `Group where the alert is setted`
+
+✅  Input field `AlertAverageTimeComparativeByTimeInput.isActive` description changed from `` to `To enable or desable the alert`
+
+✅  Input field `AlertAverageTimeComparativeByTimeInput.configuration` description changed from `` to `Configuration of the alert`
+
+✅  Input field `AlertAverageTimeComparativeByTimeInput.description` description changed from `` to `Description of the alert`
+
+✅  Input field `AlertAverageTimeComparativeByTimeInput.name` description changed from `` to `Name of the alert`
+
+✅  Input field `AlertAverageTimeAbsoluteByRequestsInput.group` description changed from `` to `groups where the alert is setted`
+
+✅  Input field `AlertAverageTimeAbsoluteByRequestsInput.isActive` description changed from `` to `To enable or desable the alert`
+
+✅  Input field `AlertAverageTimeAbsoluteByRequestsInput.configuration` description changed from `` to `Configuration of the alert`
+
+✅  Input field `AlertAverageTimeAbsoluteByRequestsInput.description` description changed from `` to `Description of the alert`
+
+✅  Input field `AlertAverageTimeAbsoluteByRequestsInput.name` description changed from `` to `Name of the alert`
+
+✅  Input field `AlertAverageTimeAbsoluteByTimeInput.group` description changed from `` to `Group where the alert is setted`
+
+✅  Input field `AlertAverageTimeAbsoluteByTimeInput.isActive` description changed from `` to `To enable or desable the alert`
+
+✅  Input field `AlertAverageTimeAbsoluteByTimeInput.configuration` description changed from `` to `Configuration of the alert`
+
+✅  Input field `AlertAverageTimeAbsoluteByTimeInput.description` description changed from `` to `Description of the alert`
+
+✅  Input field `AlertAverageTimeAbsoluteByTimeInput.name` description changed from `` to `Name of the alert`
+
+✅  Input field `AlertAverageTimeRelativeByRequestsInput.group` description changed from `` to `groups where the alert is setted`
+
+✅  Input field `AlertAverageTimeRelativeByRequestsInput.isActive` description changed from `` to `To enable or desable the alert`
+
+✅  Input field `AlertAverageTimeRelativeByRequestsInput.configuration` description changed from `` to `Configuration of the alert`
+
+✅  Input field `AlertAverageTimeRelativeByRequestsInput.description` description changed from `` to `Description of the alert`
+
+✅  Input field `AlertAverageTimeRelativeByRequestsInput.name` description changed from `` to `Name of the alert`
+
+✅  Input field `AlertAverageTimeRelativeByTimeInput.group` description changed from `` to `groups where the alert is setted`
+
+✅  Input field `AlertAverageTimeRelativeByTimeInput.isActive` description changed from `` to `To enable or desable the alert`
+
+✅  Input field `AlertAverageTimeRelativeByTimeInput.configuration` description changed from `` to `Configuration of the alert`
+
+✅  Input field `AlertAverageTimeRelativeByTimeInput.description` description changed from `` to `Description of the alert`
+
+✅  Input field `AlertAverageTimeRelativeByTimeInput.name` description changed from `` to `Name of the alert`
+
+✅  Input field `AlertErrorRateComparativeByTimeInput.group` description changed from `` to `groups where the alert is setted`
+
+✅  Input field `AlertErrorRateComparativeByTimeInput.isActive` description changed from `` to `To enable or desable the alert`
+
+✅  Input field `AlertErrorRateComparativeByTimeInput.configuration` description changed from `` to `Configuration of the alert`
+
+✅  Input field `AlertErrorRateComparativeByTimeInput.description` description changed from `` to `Description of the alert`
+
+✅  Input field `AlertErrorRateComparativeByTimeInput.name` description changed from `` to `Name of the alert`
+
+✅  Input field `AlertErrorRateRelativeByRequestsInput.group` description changed from `` to `groups where the alert is setted`
+
+✅  Input field `AlertErrorRateRelativeByRequestsInput.isActive` description changed from `` to `To enable or desable the alert`
+
+✅  Input field `AlertErrorRateRelativeByRequestsInput.configuration` description changed from `` to `Configuration of the alert`
+
+✅  Input field `AlertErrorRateRelativeByRequestsInput.description` description changed from `` to `Description of the alert`
+
+✅  Input field `AlertErrorRateRelativeByRequestsInput.name` description changed from `` to `Name of the alert`
+
+✅  Input field `AlertErrorRateRelativeByTimeInput.group` description changed from `` to `groups where the alert is setted`
+
+✅  Input field `AlertErrorRateRelativeByTimeInput.isActive` description changed from `` to `To enable or desable the alert`
+
+✅  Input field `AlertErrorRateRelativeByTimeInput.configuration` description changed from `` to `Configuration of the alert`
+
+✅  Input field `AlertErrorRateRelativeByTimeInput.description` description changed from `` to `Description of the alert`
+
+✅  Input field `AlertErrorRateRelativeByTimeInput.name` description changed from `` to `Name of the alert`
+
+✅  Type `LoggingMutation` was added
+
+✅  Type `AlertUpdatePeakTrafficComparativeConfigurationByTimeInput` was added
+
+✅  Type `AlertPeakTrafficComparativeConfigurationByTimeInput` was added
+
 ## 2020-03-09
 
 ✅  Field `audit` was added to object type `Query`
