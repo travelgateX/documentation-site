@@ -12,21 +12,21 @@
         "n":"By Dates",
         "g":"310e5aab39ae09ddb5ba06cbaae8bcb6",
         "o":["graphiql"],
-        "u":"tgx-bot",
+        "u":"xsolano",
         "ak":"8626cf56-e364-4fd1-4fe0-311e23ac6355"
     }, 
     {
         "n":"By Reference",
         "g":"cca5c85b0cd1be29f86a67ecf38bb75a",
         "o":["graphiql"],
-        "u":"tgx-bot",
+        "u":"xsolano",
         "ak":"8626cf56-e364-4fd1-4fe0-311e23ac6355"
     },
     {
         "n":"By BookingID",
         "g":"af8923db89312e8f2cd85ed063b2fc15",
         "o":["graphiql"],
-        "u":"tgx-bot",
+        "u":"xsolano",
         "ak":"8626cf56-e364-4fd1-4fe0-311e23ac6355"
     }
         ]

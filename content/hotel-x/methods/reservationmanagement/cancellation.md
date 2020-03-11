@@ -12,14 +12,14 @@
         "n":"By Reference",
         "g":"8f7d0537b788553113ecfe0fd91308ce",
         "o":["graphiql"],
-        "u":"tgx-bot",
+        "u":"xsolano",
         "ak":"8626cf56-e364-4fd1-4fe0-311e23ac6355"
     },
     {
         "n":"By BookingID",
         "g":"928a838ee2775104f8211a1283bfa646",
         "o":["graphiql"],
-        "u":"tgx-bot",
+        "u":"xsolano",
         "ak":"8626cf56-e364-4fd1-4fe0-311e23ac6355"
     }
         ]
