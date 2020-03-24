@@ -426,7 +426,7 @@ Sets up inventory information that should be followed by the structure Hotel > R
             </Source>
         </POS>
         <AvailStatusMessages HotelCode = "12">
-            <AvailStatusMessage BookingLimit = "9">
+            <AvailStatusMessage BookingLimit = "9" BookingSold = "1">
                 <StatusApplicationControl Start = "2013-12-20" End = "2013-12-25" RatePlanCode = "BAR" InvCode = "APT" InvType = "ROOM"/>
                 <LengthsOfStay ArrivalDateBased = "true">
                     <LengthOfStay Time = "2" TimeUnit = "Day" MinMaxMessageType = "MinLOS"/>
@@ -451,6 +451,7 @@ Sets up inventory information that should be followed by the structure Hotel > R
 | @HotelCode				            | 1	      | String	 |                                                                       |
 | ../AvailStatusMessage            | 1..n	  |		       |							                                                         |
 | @BookingLimit				          | 0..1	  | Integer	 | *DV*. Number of available rooms per Room-RatePlan for the indicated dates                                                                  |
+| @BookingSold			          | 0..1	  | Integer	 | *DV*. Number of booked rooms per Room-RatePlan for the indicated dates. The available allotment is the difference between BookingLimit and BookingSold                                                                  |
 | AvailStatusMessage/StatusApplicationControl      | 1       |	         |						                                                           |
 | @Start				                | 1	      | Date	   | Start date						                                               |
 | @End  				                | 1	      | Date	   | End date						                                                 |
