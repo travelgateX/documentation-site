@@ -82,7 +82,7 @@ is closed.
 | CreationDate		| 1    		| String	| Creation date of booking.				|
 | HotelCode		| 1    		| String	| Hotel code.				|
 | Holder   				| 0..1		|		| Holder of the booking.  |
-| @title   				| 1		|		| Holder's title.  |
+| @title   				| 1		| String	| Holder's title. Possible values: Mr, Mrs, Miss, Ms.   |
 | @name   				| 1		|		| Holder's name.  |
 | @surname   				| 1		|		| Holder's surname.  |
 

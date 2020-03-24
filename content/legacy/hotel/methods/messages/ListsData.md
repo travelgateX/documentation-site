@@ -37,7 +37,7 @@ This paragraph aims to return all of the data lists used in our system: language
 
 | **Code**	| **Description**												|
 | ------------- | ------------------------------------------------------------------------------------------------------------- |
-|  101         	| System Exception (Exception not controlled or not classified as general exception).			|
+|  101         	| Unspecified Error (Exception not controlled or not classified as controlled error). This could be caused by an integration error or an unexpected supplier response. 		|
 |  102         	| Supplier Error.					|
 |  104         	| Timeout (Timeout during the execution of an operation (look in the common attribute timeout )).		|
 |  105         	| Communication Error. 		|

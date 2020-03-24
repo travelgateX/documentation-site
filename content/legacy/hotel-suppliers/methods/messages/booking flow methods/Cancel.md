@@ -73,8 +73,8 @@ is closed is **180000** milliseconds.
 | Locators   			| 1          	|		| Locator Information (it's mandatory to indicate either the client or supplier's).	|
 | Locators/Client		| 0..1 		| String	| Client locator.					|
 | Locators/Provider		| 0..1 		| String	| Supplier locator.					|
-| StartDate  			| 1    		| String	| Start date of booking.				|
-| EndDate    			| 1    		| String	| End date of booking.					|
+| StartDate  			| 1    		| String	| Start date of booking. Format dd/MM/yyyy					|
+| EndDate    			| 1    		| String	| End date of booking. Format dd/MM/yyyy						|
 | Holder   				| 0..1		|		| Holder of the booking.  |
 | @title   				| 1		|		| Holder's title.  |
 | @name   				| 1		|		| Holder's name.  |

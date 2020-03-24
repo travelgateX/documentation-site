@@ -84,8 +84,8 @@ Our system allows for a maximum of **180000** milliseconds before the connection
 | **Element**                            | **Number** | **Type** | **Description** |
 | -------------------------------------- | ---------- | -------- | --------------- |
 | ValuationRQ                            | 1          |          | Root node.      |
-| StartDate                              | 1          | String   | Start date of rate search. |
-| EndDate                                | 1          | String   | End date of rates search. |
+| StartDate                              | 1          | String   | Start date of rate search. Format dd/MM/yyyy	 |
+| EndDate                                | 1          | String   | End date of rates search. Format dd/MM/yyyy	 |
 | OnRequest                              | 1          | Boolean  | Indicates if you want to receive the on request options in AvailRS, as long as the supplier returns it in this method (see [MetaData](/legacy/hotel-suppliers/methods/messages/static-methods/metadata/)). |
 | BlockOption                            | 1          | Boolean  | Indicates if you want to block the option selected in AvailRS, as long as the supplier allows it in this method (see [MetaData](/legacy/hotel-suppliers/methods/messages/static-methods/metadata/)). |
 | MealPlanCode                           | 1          | String   | MealPlan code.  |
