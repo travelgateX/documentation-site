@@ -64,8 +64,8 @@ is closed, is of **240000** milliseconds.
 | --------------------- | ------------- | ------------- | ----------------------------------------------------- |
 | ReservationListRQ	| 1             |		| Root node.						|
 | DateType       	| 1      	| String 	| Type search (A = arrival date, B = booking creation). |
-| Start          	| 1      	| String 	| Start date.						|
-| End            	| 1      	| String 	| End date. 						|
+| Start          	| 1      	| String 	| Start date. Format dd/MM/yyyy							|
+| End            	| 1      	| String 	| End date. Format dd/MM/yyyy	 						|
 | Currency       	| 1      	| String 	| Currency code.					|
 
 

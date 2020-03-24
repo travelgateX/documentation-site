@@ -120,8 +120,8 @@ is closed.
 | AvailDestinations/Destination		| 1..n         	|		| Contains the list of destinations filters (hotels or cities or zones or geocodes). The number of Destinations is defined in [MetaData](/legacy/hotel-suppliers/methods/messages/static-methods/metadata/).	|
 | @type           			| 1     	| String	| Destination type (HOT, CTY, ZON, GEO). Clarification: ZONs contains CTYs. ZONs are higher nodes and CTY are lower nodes. It is not possible to mix types of destinations in the same request.  | 
 | @code           			| 1     	| String	| Native destination code as returned by supplier in *HotelList* or *AvailDestinationTree*.	|
-| StartDate            			| 1     	| String	| 'Search from' date.						|
-| EndDate              			| 1     	| String	| 'Search til' date.						|
+| StartDate            			| 1     	| String	| 'Search from' date.	Format dd/MM/yyyy					|
+| EndDate              			| 1     	| String	| 'Search til' date. Format dd/MM/yyyy							|
 | Currency             			| 1  	| String	| Currency requested if supported by supplier. 	|
 | Nationality          			| 1  	| String	| Nationality of the guest (use ISO3166_1_alfa_2). This information is mandatory. (see [MetaData](/legacy/hotel-suppliers/methods/messages/static-methods/metadata/) in order to verify if a supplier implements it).	|
 | Markets              			| 1         	|		| List of Market requested (see [MetaData](/legacy/hotel-suppliers/methods/messages/static-methods/metadata/) in order to verify if a supplier implements it).				|
@@ -365,8 +365,8 @@ is closed.
 |@code   | 1 | String| Feature code or text|
 | MealPlans/MealPlan/Options /Option/Rooms/Room /DailyPrices | 0..1 | 	| Specifies daily price, as long as the supplier returns it in this method (see [MetaData](/legacy/hotel-suppliers/methods/messages/static-methods/metadata/) in order to verify if a supplier implements it).	| 
 | MealPlans/MealPlan/Options /Option/Rooms/Room /DailyPrices/DailyPrice | 1..n | | Specifies the price for each day.			|
-| @effectiveDate 			| 1 		| String 	| Start date in which the price becomes effective.		|
-| @expireDate 				| 1 		| String 	| Expiry date of price.						|
+| @effectiveDate 			| 1 		| String 	| Start date in which the price becomes effective. Format dd/MM/yyyy			|
+| @expireDate 				| 1 		| String 	| Expiry date of price.	Format dd/MM/yyyy						|
 | MealPlans/MealPlan/Options /Option/Rooms/Room /DailyPrices/DailyPrice /Price| 1 | | Day price.					|
 | @currency 				| 1 		| String 	| Currency code.						|
 | @amount 				| 1 		| Decimal 	| Day Amount.							|
@@ -374,8 +374,8 @@ is closed.
 | @commission 				| 1 		| Decimal 	| Commission: -1 = not specified (information available in  contract with the supplier ), 0 = net price, X = % of the commission applied to the amount. |
 | MealPlans/MealPlan/Options /Option/Rooms/Room /DailyRatePlans | 0..1 | | Specifies the daily rate, as long as the supplier returns it in this method (see [MetaData](/legacy/hotel-suppliers/methods/messages/static-methods/metadata/) in order to verify if a supplier implements it).  |
 | MealPlans/MealPlan/Options /Option/Rooms/Room /DailyRatePlans/DailyRatePlan | 1..n | | Specifies the rates for each day.		|
-| @effectiveDate 			| 1 		| String 	| Start date in which the rate becomes effective.		|
-| @expireDate 				| 1 		| String 	| Expirty date of rate.			|
+| @effectiveDate 			| 1 		| String 	| Start date in which the rate becomes effective. Format dd/MM/yyyy			|
+| @expireDate 				| 1 		| String 	| Expirty date of rate. Format dd/MM/yyyy				|
 | @code 				| 1 		| String 	| Indicates the supplier's rate code. This code specifies the rate applied to those days.	|
 | @name 				| 0		| String 	| Indicates the supplier's rate name.	|
 | MealPlans/MealPlan/Options /Option/Rooms/Room /Price | 1 | 		| Room price.							|
@@ -418,8 +418,8 @@ is closed.
 | @quantity 				| 1 		| Integer 	| Indicates the quantity of field in the element "unit".		|
 | @unit 				| 0..1 		| String 	| Day or Hour.							|
 | MealPlans/MealPlan/Options /Option/Detail/POIs/POI /Services/Service/RangeDates| 0..1 | | Service date range (Only specified if durationType=Range).	|
-| @startDate 				| 1 		| String 	| Start date of service.					|
-| @endDate 				| 1 		| String 	| End date of service.						|
+| @startDate 				| 1 		| String 	| Start date of service. Format dd/MM/yyyy						|
+| @endDate 				| 1 		| String 	| End date of service. Format dd/MM/yyyy							|
 | MealPlans/MealPlan/Options /Option/Remarks | 0..1 	| 		| List of remarks (see [MetaData](/legacy/hotel-suppliers/methods/messages/static-methods/metadata/) in order to verify if a supplier implements it).						|
 | MealPlans/MealPlan/Options /Option/Remarks/Remark | 1..n | 		| Remark.							|
 | MealPlans/MealPlan/Options /Option/Offers | 0..1 	| 		| The supplier returns in response which offer is applicable for each option (see [MetaData](/legacy/hotel-suppliers/methods/messages/static-methods/metadata/) in order to verify if a supplier implements it).	|

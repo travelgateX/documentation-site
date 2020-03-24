@@ -77,12 +77,12 @@ is closed.
 | Locators/Client	| 0..1		| String	| Client locator.					|
 | Locators/Provider	| 0..1		| String	| Supplier locator.					|
 | Currency   		| 1    		| String	| Currency code.					|
-| StartDate  		| 1    		| String	| Start date of booking. 				|
-| EndDate    		| 1    		| String	| End date of booking.					|
-| CreationDate		| 1    		| String	| Creation date of booking.				|
+| StartDate  		| 1    		| String	| Start date of booking. Format dd/MM/yyyy	 				|
+| EndDate    		| 1    		| String	| End date of booking. Format dd/MM/yyyy						|
+| CreationDate		| 1    		| String	| Creation date of booking. Format dd/MM/yyyy					|
 | HotelCode		| 1    		| String	| Hotel code.				|
 | Holder   				| 0..1		|		| Holder of the booking.  |
-| @title   				| 1		|		| Holder's title.  |
+| @title   				| 1		| String	| Holder's title. Possible values: Mr, Mrs, Miss, Ms.   |
 | @name   				| 1		|		| Holder's name.  |
 | @surname   				| 1		|		| Holder's surname.  |
 
@@ -140,9 +140,9 @@ is closed.
 | Hotel/Code 				| 1 		| String	| Hotel Code.					|
 | Hotel/Name 				| 0..1 		| String	| Hotel Name.					|
 | Hotel/City 				| 0..1 		| String	| Hotel city.					|
-| Hotel/CreationDate			| 0..1 		| String 	| Date of booking.    			|
-| Hotel/StartDate			| 1    		| String	| Check-in date.			|
-| Hotel/EndDate				| 1    		| String	| Check out date.				|
+| Hotel/CreationDate			| 0..1 		| String 	| Date of booking. Format dd/MM/yyyy	    			|
+| Hotel/StartDate			| 1    		| String	| Check-in date. Format dd/MM/yyyy				|
+| Hotel/EndDate				| 1    		| String	| Check out date. Format dd/MM/yyyy					|
 | Hotel/MealPlanCode			| 0..1 		| String	| Booking Mealplan code.			|
 | Hotel/Holder				| 0..1 		| String	| Reservation Holder .				|
 | @name				| 1    		| String	| Holder name.					|

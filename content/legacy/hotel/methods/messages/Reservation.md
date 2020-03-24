@@ -65,12 +65,12 @@ is closed.
         <ResGuests> 
             <Guests>
                 <Guest roomCandidateId = "1" paxId = "1">
-                    <Title>Miss</Ttile>  
+                    <Title>Miss</Title>  
                     <GivenName>Test11</GivenName>
                     <SurName>TestAp11</SurName>
                 </Guest>
                 <Guest roomCandidateId = "1" paxId = "2">
-                    <Title>Mr</Ttile>  
+                    <Title>Mr</Title>  
                     <GivenName>Test12</GivenName>
                     <SurName>TestAp12</SurName>
                 </Guest>
@@ -143,7 +143,7 @@ is closed.
 | HotelCode     				| 1  		| String	| Hotel code.						|
 | Nationality   				| 1		| String	| Nationality of the Holder (use ISO3166_1_alfa_2 , see [MetaData](https://docs.travelgatex.com/legacy/docs/hotel/methods/metadata/) in order to verify if a supplier implements it).  |
 | Holder   				| 1		|		| Holder of the booking.  |
-| @title   				| 1		|		| Holder's title.  |
+| @title   				| 1		| String	| Holder's title. Possible values: Mr, Mrs, Miss, Ms.  |
 | @name   				| 1		|		| Holder's name.  |
 | @surname   				| 1		|		| Holder's surname.  |
 | Price         				| 1      	|		| Total price of this valuation.			|
@@ -156,7 +156,7 @@ is closed.
 | ResGuests/Guests/Guest			| 1..n    	|		| Detail of each passenger.	If the holder is also a passenger you need to add his/hers information in the gest list.			|
 | @roomCandidateId				| 1  		| Integer	| Room candidate Identifier				|
 | @paxId   					| 1  		| Integer	| Passenger id (starting at 1).				|
-| ResGuests/Guests/Guest/Title		| 1 	 	| String	| Guest's title.						|
+| ResGuests/Guests/Guest/Title		| 1 	 	| String	| Guest's title. Possible values: Mr, Mrs, Miss, Ms. 						|
 | ResGuests/Guests/Guest/GivenName		| 1 	 	| String	| Guest's given name.						|
 | ResGuests/Guests/Guest/SurName		| 1   		| String	| Guest's last name.						|
 | PaymentType   				| 1  		| String	| Indicates the type of payment. It can be MerchantPay, LaterPay, CardBookingPay or CardCheckInPay. Payment types are explained in "Detailed description" section, in this same page.			|

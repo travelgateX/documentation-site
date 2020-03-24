@@ -29,7 +29,7 @@ The integration will have the following methods:
 | Geographic DestinationTree | Geographic DestinationTreeRQ | Geographic DestinationTreeRS | Yes          | Returns a tree of supplier's destinations. |
 | HotelList                 | HotelListRQ                 | HotelListRS                 | Yes          | Returns a list of available hotels. |
 | Descriptive Info           | Descriptive InfoRQ           | Descriptive InfoRS           | Yes          | Retrieves information for current hotel such as photos, descriptions, amenities,etc as well as basic info (code,name, town, address, contact). |
-| RoomList                  | RoomListRQ                  | RoomListRS                  | No           | Returns available room types. |
+| RoomList                  | RoomListRQ                  | RoomListRS                  | Yes           | Returns available room types. |
 | MealPlanList              | MealPlanListRQ              | MealPlanListRS              | Yes          | Returns a list of available boards. |
 | CategoryList              | CategoryListRQ              | CategoryListRS              | Yes  	       | Returns a list of available categories. |
 | MarketList              | MarketListRQ              | MarketListRS              | No  	       | Returns a list of available markets. |
