@@ -5,9 +5,9 @@ description = ""
 icon = "fa-key"
 weight = 1
 alwaysopen = false
-isDirectory=true
+isDirectory= false
 +++
 
-## Resources
+## Credentials
 
 {{%custom-children%}}

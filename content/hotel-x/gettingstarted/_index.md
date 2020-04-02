@@ -5,6 +5,9 @@ description = ""
 icon = "fa-paper-plane"
 weight = 1
 alwaysopen = false
-isDirectory = false
+isDirectory = true
 +++ 
 
+## Getting Started
+
+{{%custom-children%}}
