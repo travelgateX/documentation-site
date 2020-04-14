@@ -41,7 +41,7 @@
         "o":["graphiql"],
         "u":"mikimartin88",
         "ak":"8626cf56-e364-4fd1-4fe0-311e23ac6355"
-    }
+    },
     {
         "n":"Hotels with dates filter",
         "g":"dd0ffb2f6cae6567cf5598963830e085",
