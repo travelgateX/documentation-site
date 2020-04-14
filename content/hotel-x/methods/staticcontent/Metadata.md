@@ -41,7 +41,7 @@
 The metadata query returns information about the metadata or restriction of supplier. In addition, the fields belows are used to verify the Search request input in order to avoid the unnecessary request to the supplier.
 
 - **maxNumberHotels**: Maximum number of hotels that can be requested.
-- **recommendedNumberHotels**: Recomended number of hotels that can be requested.
+- **recommendedNumberHotels**: Recommended number of hotels that can be requested.
 - **release**: Minimum days required in between booking date and checking date ( days in advance ). If the value is zero then there is no limitation.
 - **minimumStay**: Minimum number of days required for booking. If the value is zero then there is no limitation.
 - **maxStay**: Maximum number of days allowed for booking.
