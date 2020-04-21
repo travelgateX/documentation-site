@@ -5,7 +5,7 @@
 "icon": "fa-search-plus",
 "weight": 4,
 "alwaysopen": false,
-"default_ak": "64780338-49c8-4439-7c7d-d03c2033b145",
+"default_ak": "5067eb7a-6020-4621-79d3-1c5cd8c1d27b",
 "default_user": "",
 "gists": [
     {
@@ -13,14 +13,14 @@
         "g":"d68e218b7d2039d35b6b7d8ef58131d1",
         "o":["graphiql"],
         "u":"tgx-bot",
-        "ak":"64780338-49c8-4439-7c7d-d03c2033b145"
+        "ak":"5067eb7a-6020-4621-79d3-1c5cd8c1d27b"
     }, 
     {
         "n":"alert code",
         "g":"b6d2360840706de09b0c306ebdcbdc21",
         "o":["graphiql"],
         "u":"tgx-bot",
-        "ak":"64780338-49c8-4439-7c7d-d03c2033b145"
+        "ak":"5067eb7a-6020-4621-79d3-1c5cd8c1d27b"
     }
         ]
 }
