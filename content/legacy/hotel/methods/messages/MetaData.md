@@ -521,6 +521,10 @@ Clarification - All information contained within the Avail section relates to th
 
 ### Detailed description
 
+### Detailed description
+
+{{% alert theme="warning" %}}**Important**: values can be -1, this means the supplier has no restriction. For example, if MaxNumberHotels returns -1 means there is no maximum number of hotels to be set in a request.{{% /alert %}}
+
 **reviewDate attribute:**
 
 The attribute called reviewDate will let you know when the field was last reviewed, thus ensuring that you can trust the information as being up to date.
