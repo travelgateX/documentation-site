@@ -39,11 +39,7 @@
 }
 
 
-Search is the first operation in the booking flow. It allows to check which available rooms there are for the requested hotels or for the hotels in the requested destination for a given range of dates and for a given pax distribution. The operation could search over one or more sellers accesses.
-
-Depending seller, search operations involves use supplier's cache.
-
-It returns a list of available options according to your search criteria.
+Search is the first step in our booking flow. The goal is to check availability in the date range and pax specified for the requested hotels or for the hotels in the  destination requested. The call can search  one or more sellers' accesses. It returns a list of available options according to your search criteria.
 
 ## Advanced criteria
 There are  different parameters that can be set up in the request 
@@ -56,7 +52,7 @@ Mandatory
   - For multi-room bookings, this array will contain multiple elements (rooms). For each room you should specify its own occupancy.
 
 ## How to request
-There are different ways to request a Search. Below are shown different examples for different scenarios:
+There are different ways to perform a search request. Below are shown different examples for different scenarios:
 
 {{% graphiql-tabs %}}
 
@@ -65,9 +61,9 @@ There are different ways to request a Search. Below are shown different examples
 {{< graphiql-styles >}}
 {{% graphiql-script-tabs %}}
 
-## Bear in mind
+## Important Info
 
 {{% alert theme="warning" %}}
-Please, bear in mind that within the room structure response there is a **refundable** field. If that field is filled with _false_ it means that the room has 100% cancellation cost, so the room is not refundable.
-If the field returns a _null value_ it means that the provider is not able to return this info at this step.
+Please bear in mind that in the room structure response there is a **refundable** field. If that field is set to _false_, it means that the room has 100% cancellation cost, in other words, the room is NON-REFUNDABLE.
+If the field returns a _null value_,  it means that the seller is not able to return this info at this step. Some sellers do not return cancellation policies in availabilit. You can find out the specifities of each seller in their metadata.
 {{% /alert %}}
