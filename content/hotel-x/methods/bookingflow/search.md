@@ -42,14 +42,13 @@
 Search is the first step in our booking flow. The goal is to check availability in the date range and pax specified for the requested hotels or for the hotels in the  destination requested. The call can search  one or more sellers' accesses. It returns a list of available options according to your search criteria.
 
 ## Advanced criteria
-There are  different parameters that can be set up in the request 
-Mandatory
+There are  different parameters that can be set up in the request. Below are the mandatory parameters: 
 
 - CheckIn: check-in date for the booking. _Format: YYYY-MM-DD_
 - CheckOut: check-out date for the booking. _Format YYYY-MM-DD_
 - Hotels: List of hotel codes 
 - Occupancies: The occupancy you are requesting for each room.
-  - For multi-room bookings, this array will contain multiple elements (rooms). For each room you should specify its own occupancy.
+  - For multi-room bookings, this array will contain multiple elements (rooms). You will  need to detail the occupancy for each room requested.
 
 ## How to request
 There are different ways to perform a search request. Below are shown different examples for different scenarios:
