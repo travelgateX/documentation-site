@@ -1622,12 +1622,12 @@ Error Response
 
 | **Element**				| **Number**	| **Type**	| **Description**				|
 | ------------------------------------- | ------------- | ------------- | --------------------------------------------- |
-| OTA_HotelResRS		| 1     	|		| Root Node.					|
-| OTA_HotelResRS/Success	| 0..1    	|		| Should only be present if it was a successful response. The Errors node should not be present if the Success node is present. |
-| OTA_HotelResRS/Errors	| 0..1    	|		| Should only be present if it was a successful response. The Errors node should not be present if the Success node is present. |
+| OTA_HotelResNotifRS		| 1     	|		| Root Node.					|
+| OTA_HotelResNotifRS/Success	| 0..1    	|		| Should only be present if it was a successful response. The Errors node should not be present if the Success node is present. |
+| OTA_HotelResNotifRS/Errors	| 0..1    	|		| Should only be present if it was a successful response. The Errors node should not be present if the Success node is present. |
 | Errors/Error	| 1..n    	|		| Node containing the errors.|
 | @ResIDValue_				| 1 		| String	| Value of the id.				|
-| OTA_HotelResRS/HotelReservations | 0..1   	|		| Node containing the reservation. Only needed if locator is provided.		|
+| OTA_HotelResNotifRS/HotelReservations | 0..1   	|		| Node containing the reservation. Only needed if locator is provided.		|
 | HotelReservations/HotelReservation	| 1     	|		| Node containing information about the reservation.|
 | @ResStatus				| 1 		| String	| Status of the reservation. The possible status value is: 'Confirmed'|
 | ResGlobalInfo				| 1     	|		| Node containing general information about the reservation. |
