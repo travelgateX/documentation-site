@@ -175,7 +175,7 @@ is closed.
 | Hotel/Remarks				| 0..1 		| String	| Remarks.					|
 | TransactionStatus			| 1    		| Trans.	| Status.					|
 | TransactionStatus/ComunicationStatus	| 1    		| String	| Status communication (OFFLINE, OK and KO).	|
-| TransactionStatus/RSStatus		| 1    		| String	|  Response status - DESCONOCIDO (Unknown), EXISTE (Exists), EXISTECANCELADA (exists but it's cancelled), NO EXISTE (Does not exist). |
+| TransactionStatus/RSStatus		| 1    		| String	|  Response status - DESCONOCIDO (Unknown), EXISTE (Exists), EXISTECANCELADA (exists but it's cancelled), NO_EXISTE (Does not exist). |
 | TransactionStatus/ResStatus		| 1    		| String	| Status booking (OK = confirmed, RQ = on request, CN = cancelled, UN = unknown). |
                 
 
