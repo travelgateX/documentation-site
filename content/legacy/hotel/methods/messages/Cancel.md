@@ -93,7 +93,7 @@ is closed is **180000** milliseconds.
           <TransactionStatus>
                 <ComunicationStatus>OK</ComunicationStatus>
                 <RSStatus>EXISTE</RSStatus>
-                <ResStatus>OK</ResStatus>
+                <ResStatus>CN</ResStatus>
           </TransactionStatus>
          <Price  currency="EUR" amount="120.5" binding="false" commission="-1"/>
     </CancelRS>
