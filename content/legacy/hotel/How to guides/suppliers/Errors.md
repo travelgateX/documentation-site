@@ -22,7 +22,7 @@ TravelgateX's API implements an element to display errors in every method respon
 | **Element**                       | **Number** | **Type** | **Description**|
 | --------------------------------- | ---------- | -------- | -------------- |
 | applicationErrors                 | 0..n       |          | Application errors reported by supplier. |
-| applicationErrors/type            | 1          | String   | [Error Type as specified by XML Travelgate](https://docs.travelgatex.com/legacy/docs/hotel/methods/listsdata/#error-codes). |
+| applicationErrors/type            | 1          | String   | [Error Type as specified by XML Travelgate](/legacy/hotel/methods/messages/listsdata/#payment-types). |
 | applicationErrors/code            | 1          | String   | Native error code reported by supplier. |
 | applicationErrors/description     | 1          | String   | Error description. |
 | auditData                         | 1          |          | Data sent & received in the supplier's native format.|
