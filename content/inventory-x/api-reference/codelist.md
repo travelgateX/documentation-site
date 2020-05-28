@@ -52,6 +52,8 @@ isDirectory = false
 | 256      | Half board And Drinks				|
 | 257      | All inclusive Premium				|
 | 258      | Gala Dinner				        |
+| 259      | All Inclusive Light			        |
+| 260      | Bed and breakfast + Half board  |
 
 ## Payment Type Codes 
 
