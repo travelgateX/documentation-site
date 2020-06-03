@@ -39,6 +39,7 @@ This paragraph aims to return all of the data lists used in our system: language
 | ------------- | ------------------------------------------------------------------------------------------------------------- |
 |  101         	| Unspecified Error (Exception not controlled or not classified as controlled error). This could be caused by an integration error or an unexpected supplier response. 		|
 |  102         	| Supplier Error.					|
+|  103         	| Too many requests to the supplier.					|
 |  104         	| Timeout (Timeout during the execution of an operation (look in the common attribute timeout )).		|
 |  105         	| Communication Error. 		|
 |  204         	| Supplier returns 0 results in availability.									|

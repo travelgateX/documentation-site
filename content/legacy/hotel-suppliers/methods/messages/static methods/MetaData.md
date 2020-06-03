@@ -85,14 +85,14 @@ Clarification - All information contained within the Avail section relates to th
         <MinimumStay reviewDate = "20/06/2015">0</MinimumStay>
         <MaxStay reviewDate = "20/06/2015">0</MaxStay>
         <RoomCandidates>
-            <MaxNumberRoomCandidates reviewDate = "20/06/2015">0</MaxNumberRoomCandidates>
+            <MaxNumberRoomCandidates reviewDate = "20/06/2015">5</MaxNumberRoomCandidates>
             <PaxTypeRangeInRoomCandidates reviewDate = "20/06/2015">
                 <Candidate type = "Adult" min = "1" max = "3"/>
                 <Candidate type = "Child" min = "0" max = "2"/>
                 <Candidate type = "Infant" min = "0" max = "0"/>
             </PaxTypeRangeInRoomCandidates>
-            <MaxPaxInRoomCandidates reviewDate = "20/06/2015">0</MaxPaxInRoomCandidates>
-            <MaxPaxInAllRooms reviewDate = "20/06/2015">0</MaxPaxInAllRooms>
+            <MaxPaxInRoomCandidates reviewDate = "20/06/2015">3</MaxPaxInRoomCandidates>
+            <MaxPaxInAllRooms reviewDate = "20/06/2015">15</MaxPaxInAllRooms>
             <RequiredRoomWithSamePaxConfiguration>
                 <SamePaxNumber reviewDate = "20/06/2015">false</SamePaxNumber>
                 <SamePaxAge reviewDate = "20/06/2015">false</SamePaxAge>
@@ -301,9 +301,9 @@ Clarification - All information contained within the Avail section relates to th
 | @reviewDate 			| 1   		| String	| Informs of the date when the field was last reviewed. |
 | Avail/NumMarketsAllowed			| 1        	| Integer	| Number of markets supported by the supplier in the same request. |
 | @reviewDate 			| 1   		| String	| Informs of the date when the field was last reviewed. |
-| Avail/Release			| 1        	| Integer	| Minimum days required in between booking date and checking date ( days in advance ). If the value is zero then there is no limitation.	|
+| Avail/Release			| 1        	| Integer	| Minimum days required in between booking date and checking date ( days in advance ).	|
 | @reviewDate 			| 1   		| String	| Informs of the date when the field was last reviewed. |
-| Avail/MinimumStay			| 1        	| Integer	| Minimum number of days required for booking. If the value is zero then there is no limitation.  |
+| Avail/MinimumStay			| 1        	| Integer	| Minimum number of days required for booking.  |
 | @reviewDate 			| 1   		| String	| Informs of the date when the field was last reviewed. |
 | Avail/MaxStay			| 1        	| Integer	| Maximum number of days allowed for booking.  |
 | @reviewDate 			| 1   		| String	| Informs of the date when the field was last reviewed. |

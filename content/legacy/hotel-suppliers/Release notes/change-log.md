@@ -7,6 +7,21 @@ permalink = "/docs/hotel/change-log"
 weight = 1
 +++
 
+
+**Version 1.0.23:** Date 03/06/2020
+
+{{% release-notes-container type="a"%}}
+* **Addition of new typified error.** Adding error code 103 to identify when the error returned by the supplier is due to too many requests.
+{{% /release-notes-container %}}
+
+~~~xml
+<ApplicationError>
+    <type>103</type>
+    <description>TooManyRequests</description>
+    <httpStatusCode>429</httpStatusCode>
+</ApplicationError>
+~~~
+
 **Version 1.0.22:** Date 30/09/2019
 
 {{% release-notes-container type="a"%}}
