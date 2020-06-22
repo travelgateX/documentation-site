@@ -262,6 +262,18 @@ can have four values: OK, RQ, CN and UN.
 
 **Note:** *Keep the parameters in the valuation response to include them in the reservation request.*
 
+**Bookings not confirmed:**
+Only when the ResStatus = UN and an application error is also returned with type = 303 we can ensure the booking has not been confirmed in the supplier's system. 
+
+~~~xml
+<ApplicationError>
+    <type>303</type>
+    <description>Booking not confirmed</description>
+</ApplicationError>
+<ResStatus>UN</ResStatus>
+~~~
+
+If you receive ResStatus = UN but don't receive a 303 type application error then is the client's responsibility to check if the booking is OK as we can't ensure if the booking is confirmed or not.
 
 
 **MerchantPay, LaterPay, CardBookingPay & CardCheckInPay**

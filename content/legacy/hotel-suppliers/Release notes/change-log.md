@@ -7,6 +7,19 @@ permalink = "/docs/hotel/change-log"
 weight = 1
 +++
 
+**Version 1.0.24:** Date 22/06/2020
+
+{{% release-notes-container type="a"%}}
+* **Addition of new typified error.** Adding error code 303 to identify bookings that have not been confirmed in the supplier's system. This error will come with the ResStatus element as UN to identify bookings that haven't been confirmed only when the supplier can identify them.
+{{% /release-notes-container %}}
+
+~~~xml
+<ApplicationError>
+    <type>303</type>
+    <description>Booking not confirmed</description>
+</ApplicationError>
+<ResStatus>UN</ResStatus>
+~~~
 
 **Version 1.0.23:** Date 03/06/2020
 
