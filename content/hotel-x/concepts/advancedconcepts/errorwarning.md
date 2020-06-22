@@ -39,24 +39,6 @@ In the table below, we have structured a relation of all the **Warnings** that c
 |     WRONG_FIELD      |   PLUGIN_ERROR   | *According to the case* | It occurs when the input of the plugin is misintroduced or misconstructed|
 |      BLACKLIST       |   PLUGIN_ERROR   | *According to the case* | It occurs when the hotels or accesses are blacklisted|
 
-## Connection warnings
-
-This type of warnings contains the supplier original error codes. This type of error codes are classified as warning codes because whenever more than 1 supplier is requested, some of those suppliers may return an error while others may return the response, accordingly. In those cases, if at least one of the suppliers returns results an error cannot be returned, hence those results will be displayed in the response, and for those accesses which have not returned results a warning will be returned.
-
-
-|                Code                | Type  |       Description       | Explanation                  |
-| :--------------------------------: | :---: | ----------------------- | ---------------------------- |
-| *According to supplier error code* |  101  | *According to the case* | System Exception (Exception not controlled or not classified as general exception).|
-| *According to supplier error code* |  102  | *According to the case* | It contains supplier original error and code, for more detail you need to see description or contact the supplier |
-| *According to supplier error code* |  104  | *According to the case* | Timeout, timeout due to supplier, not HotelX system|
-| *According to supplier error code* |  105  | *According to the case* | Communication Error with a specific supplier|
-| *According to supplier error code* |  204  | No results found        | Supplier doesn't return any options|
-| *According to supplier error code* |  205  | *According to the case* | The Supplier doesn’t accept the occupancies configuration.|
-| *According to supplier error code* |  206  | *According to the case* | The Supplier doesn’t accept the dates RQ.|
-| *According to supplier error code* |  207  | *According to the case* | The Supplier doesn’t accept the request RQ.|
-| *According to supplier error code* |  301  | *According to the case* | Option not found in Quote.|
-
-
 ### Error 204 - No Results Found
 Error “204 No results found” is a common error that you can receive in the Search Query response. This error means that the product you are trying to obtain is not available.
 
@@ -65,5 +47,12 @@ There are several potential reasons as to why this error occurs:
 * The product is not available for the dates in the request.
 * The product is not available for the number of passengers selected in the request.
 * The product is not available for the destination selected in the request.
+* The product has been filtered by criteria applied in the pluggins.
 
-In case an error of this type is received, you should first contact the supplier directly on a commercial level and check with them whether there should be availability for the product you are trying to obtain with the specific search criteria (dates, passenger quantity, passenger age, destination you have chosen, etc.). In case the supplier confirms that there should be availability but you are still not obtaining it, you should contact our Customer Care department.
+In case an error of this type is received, you should first contact the supplier directly on a commercial level and check with them whether there should be availability for the product you are trying to obtain with the specific search criteria (dates, passenger quantity, passenger age, destination you have chosen, etc.). In case the supplier confirms that there should be availability but you are still not obtaining it, you should review the criteria set out in the pluggins you may be using, if you still can't find the problem please you should contact our Customer Care department.
+
+## Connection warnings
+
+This type of warnings contains the supplier original error codes. This type of error codes are classified as warning codes because whenever more than 1 supplier is requested, some of those suppliers may return an error while others may return the response, accordingly. In those cases, if at least one of the suppliers returns results an error cannot be returned, hence those results will be displayed in the response, and for those accesses which have not returned results a warning will be returned.
+
+[See list of supplier error codes](https://docs.travelgatex.com/legacy/hotel/methods/messages/listsdata/#error-codes)
