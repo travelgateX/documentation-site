@@ -1595,7 +1595,7 @@ Note that if the reservation fails into the Channel Manager's system , it will b
 Success Response
 
 ~~~xml
-    <OTA_HotelResNotifRS Timestamp = "2018-09-12T23:09:08+03:00">
+    <OTA_HotelResNotifRS xmlns = "http://www.opentravel.org/OTA/2003/05" Timestamp = "2018-09-12T23:09:08+03:00">
       <HotelReservations>
         <HotelReservation ResStatus = "Confirmed">
           <ResGlobalInfo>
@@ -1605,7 +1605,7 @@ Success Response
           </ResGlobalInfo>
         </HotelReservation>
       </HotelReservations>
-      <Success xmlns = "http://www.opentravel.org/OTA/2003/05"/>
+      <Success/>
     </OTA_HotelResNotifRS>
 ~~~
 
@@ -1613,8 +1613,8 @@ Success Response
 Error Response
 
 ~~~xml
-    <OTA_HotelResNotifRS>
-      <Errors xmlns = "http://www.opentravel.org/OTA/2003/05">
+    <OTA_HotelResNotifRS xmlns = "http://www.opentravel.org/OTA/2003/05" Timestamp = "2018-09-12T23:09:08+03:00">
+      <Errors>
         <Error ShortText = "Confirmation error" Code = "50">Hotel doesn't exist</Error>
       </Errors>
     </OTA_HotelResNotifRS>
@@ -1925,8 +1925,8 @@ During the cancellation process, we will send a CancelNotifRQ message to the Cha
 Success Response
 
 ~~~xml
-    <OTA_HotelResNotifRS>
-      <Success xmlns = "http://www.opentravel.org/OTA/2003/05"/>
+    <OTA_HotelResNotifRS xmlns = "http://www.opentravel.org/OTA/2003/05" Timestamp = "2018-09-12T23:09:08+03:00">
+      <Success/>
     </OTA_HotelResNotifRS>
 ~~~
 
@@ -1934,8 +1934,8 @@ Success Response
 Error Response
 
 ~~~xml
-    <OTA_HotelResNotifRS>
-      <Errors xmlns = "http://www.opentravel.org/OTA/2003/05">
+    <OTA_HotelResNotifRS xmlns = "http://www.opentravel.org/OTA/2003/05" Timestamp = "2018-09-12T23:09:08+03:00">
+      <Errors>
         <Error ShortText = "Cancellation error" Code = "60">Reservation doesn't exist</Error>
       </Errors>
     </OTA_HotelResNotifRS>
