@@ -48,6 +48,7 @@ This paragraph aims to return all of the data lists used in our system: language
 |  207         	| The Supplier doesn't accept the request RQ.									|
 |  301         	| Option not found in policies.											|
 |  302         	| Hotel Not Found in DescriptiveInfo.											|
+|  303         	| Booking not confirmed in the supplier's system.											|
   
 
 
