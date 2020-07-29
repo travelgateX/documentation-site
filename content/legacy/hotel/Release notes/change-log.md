@@ -18,7 +18,7 @@ weight = 1
 | mobile | Rate applicable to options booked by mobile. |
 | warranty | Rate applicable to options with cancellation warranty. |
   
-See full list at [Lists of Data](/legacy/hotel-suppliers/methods/messages/listsdata/#rate-conditions) page.
+See full list at [Lists of Data](/legacy/hotel/methods/messages/listsdata/#rate-conditions) page.
 
 {{% /release-notes-container %}}
 

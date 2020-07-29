@@ -342,7 +342,7 @@ is closed.
 | MealPlans/MealPlan/Options /Option/RateRules | 0..1 	| 		| Option restrictions.					|
 | MealPlans/MealPlan/Options /Option/RateRules/Rules | 0..n | 		| Rules.							|
 | MealPlans/MealPlan/Options /Option/RateRules/Rules /Rule | 1 | 	| Rule.								|
-| @type 				| 1 		| String 	| Possible values (NonRefundable, Older55, Package,...). See full list at [Lists of Data](/legacy/docs/hotel/methods/listsdata/#rate-conditions)	|
+| @type 				| 1 		| String 	| Possible values (NonRefundable, Older55, Package,...). See full list at [Lists of Data](/legacy/hotel/methods/messages/listsdata/#rate-conditions)	|
 | MealPlans/MealPlan/Options /Option/Rooms | 1 		| 		| Rooms in this option (room list).				|
 | MealPlans/MealPlan/Options /Option/Rooms/Room | 1..n 	| 		| Room details.						|
 | @id 					| 1 		| String 	| Room ID.					|
