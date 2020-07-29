@@ -118,3 +118,24 @@ We use a standard ISO - 3166_1_alfa_2.
 |  CardBookingPay      	| The payment is managed by the supplier. The payment is effectuated at the time of booking.			|
 |  CardChekInPay      	| The payment is managed by the supplier. The payment is effectuated at check in in the hotel.			|
 |  PayX      	| The payment is managed by TravelgateX's payment system.			|
+
+### Rate Conditions
+
+| **Codes**	| **Description**			|
+| ------------- | ----------------------------- |
+| NonRefundable | Cancellation fee is a 100% from the moment the reservation is create|
+| Older55 | Rate that can only be sold to people who are 55 yeasrs or older.|
+| Older60 | Rate that can only be sold to people who are 60 yeasrs or older.|
+| Older65 | Rate that can only be sold to people who are 65 yeasrs or older.|
+| Package | Rate can't be sold separately from another product attached to it, such as a flight.|
+| CanaryResident | Rate applicable to Canary Islands residents only.|
+| BalearicResident | Rate applicable to Balearic Islands residents only.|
+| largeFamily | Rate applied to large families and is determined by each supplier.Check *remarks* for more details.|
+| honeymoon | Rate applied to those who just got married and is determined by each supplier. Check *remarks* for more details. |
+| publicServant | Rate applicable to public servants only. |
+| unemployed | Rate applied to those without work. |
+| mobile | Rate applicable to options booked by mobile. |
+| warranty | Rate applicable to options with cancellation warranty. |
+
+
+

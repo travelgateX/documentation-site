@@ -10,6 +10,20 @@ weight = 1
 **Version 1.0.24:** Date 22/06/2020
 
 {{% release-notes-container type="a"%}}
+* **Addition of new rate conditions.** 2 new rate rule condition types added to the possible returned values: 
+
+| **Codes**	| **Description**			|
+| ------------- | ----------------------------- |
+| mobile | Rate applicable to options booked by mobile. |
+| warranty | Rate applicable to options with cancellation warranty. |
+  
+See full list at [Lists of Data](/legacy/hotel-suppliers/methods/messages/listsdata/#rate-conditions) page.
+
+{{% /release-notes-container %}}
+
+**Version 1.0.24:** Date 22/06/2020
+
+{{% release-notes-container type="a"%}}
 * **Addition of new typified error.** Adding error code 303 to identify bookings that have not been confirmed in the supplier's system. This error will come with the ResStatus element as UN to identify bookings that haven't been confirmed only when the supplier can identify them.
 {{% /release-notes-container %}}
 

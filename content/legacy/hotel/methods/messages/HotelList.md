@@ -154,7 +154,7 @@ The **ContinuationToken** can be used in this request - the specification can be
 | Town       				| 1    		| String	| Town.								|
 | ZipCode    				| 0..1    		| String	| ZipCode.							|
 | CountryISOCode			| 1    		| String	| CountryISOCode.						|
-| AvailDestination			| 0..1       	|		| Avail Destination (will only be returned if requested in availability, and the type is CTY).  |
+| AvailDestination			| 0..1       	|		| Avail Destination.  |
 | @code      				| 1    		| String	| Destination code.						|
 | @name      				| 1    		| String	| Destination name.						|
 | GeographicDestination			| 1          	|		| Geographic Destination.					|
