@@ -191,21 +191,21 @@ Clarification - All information contained within the Avail section relates to th
     <Batch>
         <InformExclusiveDeal reviewDate = "20/06/2015">false</InformExclusiveDeal>
         <HotelList>
-            <StaticType reviewDate = "20/06/2015">NotImplemented</StaticType>
+            <StaticType reviewDate = "20/06/2015">Offline</StaticType>
             <Languages>
                 <Language reviewDate = "20/06/2015">en</Language>
                 <Language reviewDate = "20/06/2015">es</Language>
             </Languages>
         </HotelList>
         <DescriptiveInfo>
-            <StaticType reviewDate = "20/06/2015">NotImplemented</StaticType>
+            <StaticType reviewDate = "20/06/2015">Offline</StaticType>
             <Languages>
                 <Language reviewDate = "20/06/2015">en</Language>
                 <Language reviewDate = "20/06/2015">es</Language>
             </Languages>
         </DescriptiveInfo>
         <GeographicDestinationTree>
-            <StaticType reviewDate = "20/06/2015">NotImplemented</StaticType>
+            <StaticType reviewDate = "20/06/2015">Offline</StaticType>
             <Languages>
                 <Language reviewDate = "20/06/2015">en</Language>
                 <Language reviewDate = "20/06/2015">es</Language>
@@ -218,33 +218,26 @@ Clarification - All information contained within the Avail section relates to th
             </Languages>
         </AvailDestinationTree>
         <RoomList>
-            <StaticType reviewDate = "20/06/2015">NotImplemented</StaticType>
+            <StaticType reviewDate = "20/06/2015">Offline</StaticType>
             <Languages>
                 <Language reviewDate = "20/06/2015">en</Language>
                 <Language reviewDate = "20/06/2015">es</Language>
             </Languages>
         </RoomList>
         <MealPlanList>
-            <StaticType reviewDate = "20/06/2015">NotImplemented</StaticType>
+            <StaticType reviewDate = "20/06/2015">Offline</StaticType>
             <Languages>
                 <Language reviewDate = "20/06/2015">en</Language>
                 <Language reviewDate = "20/06/2015">es</Language>
             </Languages>
         </MealPlanList>
         <CategoryList>
-            <StaticType reviewDate = "20/06/2015">NotImplemented</StaticType>
+            <StaticType reviewDate = "20/06/2015">Offline</StaticType>
             <Languages>
                 <Language reviewDate = "20/06/2015">en</Language>
                 <Language reviewDate = "20/06/2015">es</Language>
             </Languages>
         </CategoryList>
-        <DescriptiveInfoExtended>
-            <StaticType reviewDate = "20/06/2015">NotImplemented</StaticType>
-            <Languages>
-                <Language reviewDate = "20/06/2015">en</Language>
-                <Language reviewDate = "20/06/2015">es</Language>
-            </Languages>
-        </DescriptiveInfoExtended>
         <MarketList>
             <StaticType reviewDate = "20/06/2015">NotImplemented</StaticType>
             <Languages>
@@ -499,7 +492,7 @@ Clarification - All information contained within the Avail section relates to th
 | Batch/DescriptiveInfoExtended/Languages/Language			| 1..n        	| String	| Language code.		|
 | @reviewDate 			| 1   		| String	| Informs of the date when the field was last reviewed. |
 | Batch/MarketList			| 1        	| 	| Contains information regarding MarketList.		|
-| Batch/MarketList/StaticType			| 1        	| Enum	| Informs the static type.The possible values are:	Offline, OfflineCompleted or NotImplemented.	|
+| Batch/MarketList/StaticType			| 1        	| Enum	| Informs the static type.The possible values are:	Offline or NotImplemented.	|
 | @reviewDate 			| 1   		| String	| Informs of the date when the field was last reviewed.  |
 | Batch/MarketList/Languages			| 1        	| 	| 	List of languages.		|
 | Batch/MarketList/Languages/Language			| 1..n        	| String	| Language code.		|
