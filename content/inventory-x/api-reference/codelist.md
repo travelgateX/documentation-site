@@ -54,6 +54,7 @@ isDirectory = false
 | 258      | Gala Dinner				        |
 | 259      | All Inclusive Light			        |
 | 260      | Bed and breakfast + Half board  |
+| 261      | All Inclusive Limited  |
 
 ## Payment Type Codes 
 
