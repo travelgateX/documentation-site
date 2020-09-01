@@ -7,6 +7,14 @@ permalink = "/docs/hotel/change-log"
 weight = 1
 +++
 
+**Version 1.0.26:** Date 01/09/2020
+
+{{% release-notes-container type="c"%}}
+* **Hotel code in Reservation Read Response.** Hotel code not mandatory at Hotel element level in Reservation Read Response. 
+
+{{% /release-notes-container %}}
+
+
 **Version 1.0.24:** Date 22/06/2020
 
 {{% release-notes-container type="a"%}}
