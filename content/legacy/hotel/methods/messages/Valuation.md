@@ -188,7 +188,13 @@ Our system allows for a maximum of **180000** milliseconds before the connection
 | @binding				    | 1          | Boolean  | Identifies if is the price is binding (When true the sale price returned must not be less than the price informed. |
 | @commission				    | 1          | Decimal  | Commission: -1 = not specified (indicated in contract with supplier), 0 = net price, X = % of the commission applied to the amount. |
 | CancelPoliciesDescription                 | 0..1       | String   | Contains the cancellation penalties in free text (see [MetaData](https://docs.travelgatex.com/legacy/docs/hotel/methods/metadata/) in order to verify if a supplier implements it). |
- 
+| Option		|0..1	| Option quoted
+| Option/Rooms | 0..1 		| 		| Rooms in the option (room list).				|
+| Option/Rooms/Room | 1..n 	| 		| Room details.						|
+| @id 					| 1 		| String 	| Room ID.					|
+| @roomCandidateRefId 			| 1 		| Integer 	| Room candidate ID.					|
+| @code 				| 1 		| String 	| Room code has to be unique to identify a specific room type. If the RoomList Method is implemented, you can find the description of the room type in the RoomList. 							|
+| @description 				| 0..1 		| String 	| Room description. Mandatory if the supplier doesn't allow RoomList Method. If the supplier implements RoomList Method, this field could be empty.						|
 
 
 ### Detailed Description
