@@ -65,26 +65,26 @@ The maximum time permitted in our system before the connection is closed is **24
 ~~~xml
     <GeographicDestinationTreeRS>
         <UpgradeUTCDate>2016-10-18T13:18:03+02:00</UpgradeUTCDate>
-        <DestinationTree code = "ES" name = "España" avail = "False">
+        <DestinationTree code = "ES" name = "España" avail = "false">
             <DestinationLeaf code = "BAL"/>
             <DestinationLeaf code = "AST"/>
             <DestinationLeaf code = "AND"/>
         </DestinationTree>
-        <DestinationTree code= "IT" name = "Italia" avail = "False">
+        <DestinationTree code= "IT" name = "Italia" avail = "false">
             <DestinationLeaf code = "AA"/>
             <DestinationLeaf code = "BB"/>
             . . .
         </DestinationTree>
-        <DestinationTree code = "EN" name = "England" avail = "False">. . .</DestinationTree>
-        <DestinationTree code = "BAL" name = "Baleares" avail = "True">
+        <DestinationTree code = "EN" name = "England" avail = "false">. . .</DestinationTree>
+        <DestinationTree code = "BAL" name = "Baleares" avail = "true">
             <DestinationLeaf code = "PAL0"/>
             <DestinationLeaf code = "ALC0"/>
         </DestinationTree>
-        <DestinationTree code = "AST" name = "Asturias" avail = "True"/>
-        <DestinationTree code = "AND" name = "Andalucia" avail = "True"/>
+        <DestinationTree code = "AST" name = "Asturias" avail = "true"/>
+        <DestinationTree code = "AND" name = "Andalucia" avail = "true"/>
         . . .
-        <DestinationTree code = "PAL0" name = "Palma de Mallorca" avail = " True"/>
-        <DestinationTree code = "ALC0" name = "Alcudia" avail = " True"/>
+        <DestinationTree code = "PAL0" name = "Palma de Mallorca" avail = " true"/>
+        <DestinationTree code = "ALC0" name = "Alcudia" avail = "true"/>
         . . .
     </GeographicDestinationTreeRS>
 ~~~
@@ -113,30 +113,30 @@ The maximum time permitted in our system before the connection is closed is **24
 
 ~~~xml
     <GeographicDestinationTreeRS>
-     <DestinationTree code = "ES" name = "España" avail = "False">
+     <DestinationTree code = "ES" name = "España" avail = "false">
          <DestinationLeaf code = "BAL"/>
          <DestinationLeaf code = "AST"/>
          <DestinationLeaf code = "AND"/>
      </DestinationTree>
-     <DestinationTree code= "IT" name = "Italia" avail = "False">
+     <DestinationTree code= "IT" name = "Italia" avail = "false">
          <DestinationLeaf code = "AA"/>
          <DestinationLeaf code = "BB"/>
          . . .
      </DestinationTree>
-     <DestinationTree code = "EN" name = "England" avail = "False">. . .</DestinationTree>
+     <DestinationTree code = "EN" name = "England" avail = "false">. . .</DestinationTree>
 
-     <DestinationTree code = "BAL" name = "Baleares" avail = "True">
+     <DestinationTree code = "BAL" name = "Baleares" avail = "true">
          <DestinationLeaf code = "PAL0"/>
          <DestinationLeaf code = "ALC0"/>
      </DestinationTree>
-     <DestinationTree code = "PAL0" name = "Palma de Mallorca" avail = " True"/>
+     <DestinationTree code = "PAL0" name = "Palma de Mallorca" avail = "true"/>
          <DestinationLeaf code = "SAR"/>
          <DestinationLeaf code = "IND"/>
 
-     <DestinationTree code = "AST" name = "Asturias" avail = "True"/>
-     <DestinationTree code = "AND" name = "Andalucia" avail = "True"/>
+     <DestinationTree code = "AST" name = "Asturias" avail = "true"/>
+     <DestinationTree code = "AND" name = "Andalucia" avail = "true"/>
      . . .
-     <DestinationTree code = "ALC0" name = "Alcudia" avail = " True"/>
+     <DestinationTree code = "ALC0" name = "Alcudia" avail = "true"/>
      <DestinationTree code = "SAR" name = "Son Sardina" avail = "false"/>
      <DestinationTree code = "IND" name = "Indioteria" avail = "false"/>
      . . .
