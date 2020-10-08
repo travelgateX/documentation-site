@@ -60,7 +60,7 @@ is closed.
         <MealPlanCode>D</MealPlanCode>
         <HotelCode>10</HotelCode>
         <Nationality>ES</Nationality>
-        <Holder title = "Miss" name = "Test11" surname = "TestAp11"/>
+        <Holder title = "Miss" name = "Test11" surname = "TestAp11" email = "hotelemail@email.com"/>
         <Price currency = "EUR" amount = "36.20" binding = "false" commission = "-1"/>
         <ResGuests> 
             <Guests>
@@ -146,6 +146,7 @@ is closed.
 | @title   				| 1		| String	| Holder's title. Possible values: Mr, Mrs, Miss, Ms.  |
 | @name   				| 1		|		| Holder's name.  |
 | @surname   				| 1		|		| Holder's surname.  |
+| @email   				| 0..1		|		| Holder's email.  |
 | Price         				| 1      	|		| Total price of this valuation.			|
 | @currency					| 1  		| String	| Currency code.					|
 | @amount  					| 1  		| Decimal	| Option Amount.					|
