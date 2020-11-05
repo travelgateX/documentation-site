@@ -5,7 +5,7 @@
 "icon": "fa-search-plus",
 "weight": 4,
 "alwaysopen": false,
-"default_ak": "64780338-49c8-4439-7c7d-d03c2033b145",
+"default_ak": "5067eb7a-6020-4621-79d3-1c5cd8c1d27b",
 "default_user": "",
 "gists": [
     {
@@ -13,14 +13,14 @@
         "g":"122d8186fb0ed7d5d886b00b3081cecb",
         "o":["graphiql"],
         "u":"bsmarcosj",
-        "ak":"64780338-49c8-4439-7c7d-d03c2033b145"
+        "ak":"5067eb7a-6020-4621-79d3-1c5cd8c1d27b"
     }, 
     {
         "n":"Seller",
         "g":"22146f0cf8f73939e0a55c0274def86c",
         "o":["graphiql"],
         "u":"tgx-bot",
-        "ak":"64780338-49c8-4439-7c7d-d03c2033b145"
+        "ak":"5067eb7a-6020-4621-79d3-1c5cd8c1d27b"
     }
         ]
 }

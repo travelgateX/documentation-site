@@ -60,17 +60,17 @@ is closed.
         <MealPlanCode>D</MealPlanCode>
         <HotelCode>10</HotelCode>
         <Nationality>ES</Nationality>
-        <Holder title = "Miss" name = "Test11" surname = "TestAp11"/>
+        <Holder title = "Miss" name = "Test11" surname = "TestAp11" email = "hotelemail@email.com"/>
         <Price currency = "EUR" amount = "36.20" binding = "false" commission = "-1"/>
         <ResGuests> 
             <Guests>
                 <Guest roomCandidateId = "1" paxId = "1">
-                    <Title>Miss</Ttile>  
+                    <Title>Miss</Title>  
                     <GivenName>Test11</GivenName>
                     <SurName>TestAp11</SurName>
                 </Guest>
                 <Guest roomCandidateId = "1" paxId = "2">
-                    <Title>Mr</Ttile>  
+                    <Title>Mr</Title>  
                     <GivenName>Test12</GivenName>
                     <SurName>TestAp12</SurName>
                 </Guest>
@@ -143,9 +143,10 @@ is closed.
 | HotelCode     				| 1  		| String	| Hotel code.						|
 | Nationality   				| 1		| String	| Nationality of the Holder (use ISO3166_1_alfa_2 , see [MetaData](https://docs.travelgatex.com/legacy/docs/hotel/methods/metadata/) in order to verify if a supplier implements it).  |
 | Holder   				| 1		|		| Holder of the booking.  |
-| @title   				| 1		|		| Holder's title.  |
+| @title   				| 1		| String	| Holder's title. Possible values: Mr, Mrs, Miss, Ms.  |
 | @name   				| 1		|		| Holder's name.  |
 | @surname   				| 1		|		| Holder's surname.  |
+| @email   				| 0..1		|		| Holder's email.  |
 | Price         				| 1      	|		| Total price of this valuation.			|
 | @currency					| 1  		| String	| Currency code.					|
 | @amount  					| 1  		| Decimal	| Option Amount.					|
@@ -156,7 +157,7 @@ is closed.
 | ResGuests/Guests/Guest			| 1..n    	|		| Detail of each passenger.	If the holder is also a passenger you need to add his/hers information in the gest list.			|
 | @roomCandidateId				| 1  		| Integer	| Room candidate Identifier				|
 | @paxId   					| 1  		| Integer	| Passenger id (starting at 1).				|
-| ResGuests/Guests/Guest/Title		| 1 	 	| String	| Guest's title.						|
+| ResGuests/Guests/Guest/Title		| 1 	 	| String	| Guest's title. Possible values: Mr, Mrs, Miss, Ms. 						|
 | ResGuests/Guests/Guest/GivenName		| 1 	 	| String	| Guest's given name.						|
 | ResGuests/Guests/Guest/SurName		| 1   		| String	| Guest's last name.						|
 | PaymentType   				| 1  		| String	| Indicates the type of payment. It can be MerchantPay, LaterPay, CardBookingPay or CardCheckInPay. Payment types are explained in "Detailed description" section, in this same page.			|
@@ -210,7 +211,7 @@ is closed.
 | **Element**					| **Number**	| **Type**	| **Description**					|
 | --------------------------------------------- | ------------- | ------------- | ----------------------------------------------------- |
 | ReservationRS					| 1       	|		| Root node.						|
-| ProviderLocator 				| 1  		| String	| Booking ID in the Supplier´s system					|
+| ProviderLocator 				| 0..1  		| String	| Booking ID in the Supplier´s system. It will always be returned if the ResStatus is OK or RQ. It could not be returned when the ResStatus is CN or UN, depending if the supplier returns it. 					|
 | PropertyReservationNumber 				| 0..1  		| String	| Booking Number in the property´s system (see Metadata method in order to verify if a supplier implements it).	|
 | ResStatus					| 1  		| String	| reservation status  (OK = confirmed, RQ = on request, CN = cancelled, UN = unknown.	|
 | Price  					| 0..1     	|		| Total price of this reservation (see [MetaData](https://docs.travelgatex.com/legacy/docs/hotel/methods/metadata/) in order to verify if a supplier implements it).				|
@@ -262,6 +263,19 @@ can have four values: OK, RQ, CN and UN.
 
 **Note:** *Keep the parameters in the valuation response to include them in the reservation request.*
 
+
+**Bookings not confirmed:**
+Only when the ResStatus = UN and an application error is also returned with type = 303 we can ensure the booking has not been confirmed in the supplier's system. 
+
+~~~xml
+<ApplicationError>
+    <type>303</type>
+    <description>Booking not confirmed</description>
+</ApplicationError>
+<ResStatus>UN</ResStatus>
+~~~
+
+If you receive ResStatus = UN but don't receive a 303 type application error then is the client's responsibility to check if the booking is OK as we can't ensure if the booking is confirmed or not.
 
 
 **MerchantPay, LaterPay, CardBookingPay & CardCheckInPay**

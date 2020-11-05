@@ -1,19 +1,32 @@
-+++
-title = "Cancellation"
-pagetitle = "Cancellation"
-description = "How to cancel a booking"
-icon = "fa-calendar-times-o"
-weight = 2
-alwaysopen = false
-+++
+{
+"title": "Cancellation",
+"pagetitle": "Cancellation",
+"description": "How to cancel a booking",
+"icon": "fa-calendar-times-o",
+"weight": 2,
+"alwaysopen": false,
+"default_ak": "8626cf56-e364-4fd1-4fe0-311e23ac6355",
+"default_user": "",
+"gists": [
+    {
+        "n":"By Reference",
+        "g":"8f7d0537b788553113ecfe0fd91308ce",
+        "o":["graphiql"],
+        "u":"xsolano",
+        "ak":"8626cf56-e364-4fd1-4fe0-311e23ac6355"
+    },
+    {
+        "n":"By BookingID",
+        "g":"928a838ee2775104f8211a1283bfa646",
+        "o":["graphiql"],
+        "u":"xsolano",
+        "ak":"8626cf56-e364-4fd1-4fe0-311e23ac6355"
+    }
+        ]
+}
 
-{{< graphiql-script queries="[{\"apikey\":\"64780338-49c8-4439-7c7d-d03c2033b145\",\"gist\":\"https://gist.githubusercontent.com/tgx-bot/1b160cfcf47b1c4d1deada1a18ae98b6/raw\",\"divname\":\"div_cancellation\"}]" >}}
-{{< graphiql-styles >}}
-
-Cancellation operation that cancels the booking.
-Which time zone applies for the cancellation policies?
-NOTE: Cancellation always takes into account the day and time of the destination in order to calculate what cancellation policy should be applied.
-UTC time
+Cancellation operation allows you to cancel a booking.
+NOTE: Cancellation always takes into account the day and time of the destination in order to calculate what cancellation policy should be applied. UTC time.
 
 - When the booking is cancelled, the details of the cancelled booking are returned with the following information:
 - The booking status: CANCELLED
@@ -22,8 +35,22 @@ UTC time
 - Holder name
 
 ## Advanced criteria
-Explain different parameters can be set up on the request (indicate which ones are mandatory)
+There are two different types of cancellation:
+* By reference
+* By bookingID
 
 ## How to cancel 
-{{< graphiql-tags tag="div_cancellation" >}}
+{{% graphiql-tabs %}}
 
+8f7d0537b788553113ecfe0fd91308ce
+You can cancel bookings with the client reference or with the supplier reference.
+/8f7d0537b788553113ecfe0fd91308ce
+
+928a838ee2775104f8211a1283bfa646
+Bear in mind that you will have to carry the bookingID recieved in the **book** response if you want to cancel with this query.
+/928a838ee2775104f8211a1283bfa646
+
+{{% /graphiql-tabs %}}
+
+{{< graphiql-styles >}}
+{{% graphiql-script-tabs %}}

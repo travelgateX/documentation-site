@@ -7,7 +7,7 @@ weight = 4
 alwaysopen = false
 +++ 
 
-{{< graphiql-script queries="[{\"apikey\":\"64780338-49c8-4439-7c7d-d03c2033b145\",\"gist\":\"https://gist.githubusercontent.com/tgx-bot/74a01699ccc7f7a8f043f6583e64fcde/raw\",\"divname\":\"div_admin_destinations\"},{\"apikey\":\"64780338-49c8-4439-7c7d-d03c2033b145\",\"gist\":\"https://gist.githubusercontent.com/tgx-bot/f820c0508f7d47432eaad34823d426e0/raw\",\"divname\":\"div_searchbydestinations\"}]" >}}
+{{< graphiql-script queries="[{\"apikey\":\"5067eb7a-6020-4621-79d3-1c5cd8c1d27b\",\"gist\":\"https://gist.githubusercontent.com/tgx-bot/74a01699ccc7f7a8f043f6583e64fcde/raw\",\"divname\":\"div_admin_destinations\"},{\"apikey\":\"5067eb7a-6020-4621-79d3-1c5cd8c1d27b\",\"gist\":\"https://gist.githubusercontent.com/tgx-bot/f820c0508f7d47432eaad34823d426e0/raw\",\"divname\":\"div_searchbydestinations\"}]" >}}
 {{< graphiql-styles >}}
 
 Search by destination is a feature to search by destinations codes in the Search query. To use it, codes must be sent in 'CriteriaSearch'. Destination codes will be converted to hotel codes, then merged with the hotel codes sent in criteria if any, and finally the request will be sent to the supplier. In order to achieve the destination to hotel conversion, a source must be specified in a plugin.

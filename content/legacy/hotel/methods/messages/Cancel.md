@@ -76,7 +76,7 @@ is closed is **180000** milliseconds.
 | StartDate  			| 1    		| String	| Start date of booking.				|
 | EndDate    			| 1    		| String	| End date of booking.					|
 | Holder   				| 0..1		|		| Holder of the booking.  |
-| @title   				| 1		|		| Holder's title.  |
+| @title   				| 1		| String	| Holder's title. Possible values: Mr, Mrs, Miss, Ms.   |
 | @name   				| 1		|		| Holder's name.  |
 | @surname   				| 1		|		| Holder's surname.  |
 
@@ -93,7 +93,7 @@ is closed is **180000** milliseconds.
           <TransactionStatus>
                 <ComunicationStatus>OK</ComunicationStatus>
                 <RSStatus>EXISTE</RSStatus>
-                <ResStatus>OK</ResStatus>
+                <ResStatus>CN</ResStatus>
           </TransactionStatus>
          <Price  currency="EUR" amount="120.5" binding="false" commission="-1"/>
     </CancelRS>

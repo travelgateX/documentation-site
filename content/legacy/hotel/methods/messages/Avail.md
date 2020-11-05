@@ -342,7 +342,7 @@ is closed.
 | MealPlans/MealPlan/Options /Option/RateRules | 0..1 	| 		| Option restrictions.					|
 | MealPlans/MealPlan/Options /Option/RateRules/Rules | 0..n | 		| Rules.							|
 | MealPlans/MealPlan/Options /Option/RateRules/Rules /Rule | 1 | 	| Rule.								|
-| @type 				| 1 		| String 	| Possible values (NonRefundable, Older55, Package,...).	|
+| @type 				| 1 		| String 	| Possible values (NonRefundable, Older55, Package,...). See full list at [Lists of Data](/legacy/hotel/methods/messages/listsdata/#rate-conditions)	|
 | MealPlans/MealPlan/Options /Option/Rooms | 1 		| 		| Rooms in this option (room list).				|
 | MealPlans/MealPlan/Options /Option/Rooms/Room | 1..n 	| 		| Room details.						|
 | @id 					| 1 		| String 	| Room ID.					|
@@ -591,30 +591,6 @@ parameter <OnRequest> is set as true in the request. In case that the
 parameter <OnRequest> is set as false, the integration will filter
 this option in AvailRS only if the supplier provides us this information
 in the availability method.
-
-
-
-**Rate conditions:**
-
--   The extra fee for a **nonRefundable** cancellation is a 100% from
-    the moment the reservation is created.
--   The supplier can return options for pax: older than 55 years old,
-    i.e. options that can only be sold to people who are 55 and older.
-    In this case we will return the condition: rate 55 years old.
--   In the case of pax older than **60 years** and **65 years** the same
-    process applies.
--   The rate **package** means that the product can't be sold separately
-    from another product attached to it, such as a flight.
--   The rate **CanaryResident** is applicable to Canary Islands
-    residents only.
--   The rate **BalearicResident** is applicable to Balearic Islands
-    residents only.
--   The rate **largeFamily** is applied to large families and is
-    determined by each supplier.Check *remarks* for more details.
--   The rate **honeymoon** is applied to those who just got married and
-    is determined by each supplier. Check *remarks* for more details.
--   The rate **publicServant** is applicable to public servants only.
--   The rate **unemployed** is applied to those without work.
 
 **Offers:**
 

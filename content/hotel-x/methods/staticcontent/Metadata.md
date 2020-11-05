@@ -9,9 +9,9 @@
 "gists": [
     {
         "n":"Entire metadata",
-        "g":"3bcb4b18cfb0d2d6f0dc61138046fa39",
+        "g":"2ea2d08eb776766450a374719a10603e",
         "o":["graphiql"],
-        "u":"zechao",
+        "u":"rubencaballero",
         "ak":"8626cf56-e364-4fd1-4fe0-311e23ac6355"
     },
     {
@@ -30,9 +30,9 @@
     },
     {
         "n":"Supplier not accessible for current user",
-        "g":"8364c418de06a89f4021bb1f5cc8d53c",
+        "g":"175238573a34da7808da5c275591336c",
         "o":["graphiql"],
-        "u":"zechao",
+        "u":"rubencaballero",
         "ak":"8626cf56-e364-4fd1-4fe0-311e23ac6355"
     }
  ]
@@ -41,7 +41,7 @@
 The metadata query returns information about the metadata or restriction of supplier. In addition, the fields belows are used to verify the Search request input in order to avoid the unnecessary request to the supplier.
 
 - **maxNumberHotels**: Maximum number of hotels that can be requested.
-- **recommendedNumberHotels**: Recomended number of hotels that can be requested.
+- **recommendedNumberHotels**: Recommended number of hotels that can be requested.
 - **release**: Minimum days required in between booking date and checking date ( days in advance ). If the value is zero then there is no limitation.
 - **minimumStay**: Minimum number of days required for booking. If the value is zero then there is no limitation.
 - **maxStay**: Maximum number of days allowed for booking.

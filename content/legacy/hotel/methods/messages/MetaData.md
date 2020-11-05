@@ -100,7 +100,7 @@ Clarification - All information contained within the Avail section relates to th
             <AgeRange reviewDate = "11/11/2016">
                 <Age type = "Child" min = "2" max = "5"/>
             </AgeRange>
-        <RoomCandidates>
+        </RoomCandidates>
         <RateRules>
             <RateRule reviewDate = "20/06/2015">NonRefundable</RateRule>
             <RateRule reviewDate = "20/06/2015">largeFamily</RateRule>
@@ -521,7 +521,9 @@ Clarification - All information contained within the Avail section relates to th
 
 ### Detailed description
 
-{{% alert theme="warning" %}}**Important**: values can be -1, this means the supplier has no restriction.{{% /alert %}}
+### Detailed description
+
+{{% alert theme="warning" %}}**Important**: values can be -1, this means the supplier has no restriction. For example, if MaxNumberHotels returns -1 means there is no maximum number of hotels to be set in a request.{{% /alert %}}
 
 **reviewDate attribute:**
 

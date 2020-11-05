@@ -37,8 +37,9 @@ This paragraph aims to return all of the data lists used in our system: language
 
 | **Code**	| **Description**												|
 | ------------- | ------------------------------------------------------------------------------------------------------------- |
-|  101         	| System Exception (Exception not controlled or not classified as general exception).			|
+|  101         	| Unspecified Error (Exception not controlled or not classified as controlled error). This could be caused by an integration error or an unexpected supplier response. 		|
 |  102         	| Supplier Error.					|
+|  103         	| Too many requests to the supplier.					|
 |  104         	| Timeout (Timeout during the execution of an operation (look in the common attribute timeout )).		|
 |  105         	| Communication Error. 		|
 |  204         	| Supplier returns 0 results in availability.									|
@@ -47,6 +48,7 @@ This paragraph aims to return all of the data lists used in our system: language
 |  207         	| The Supplier doesn't accept the request RQ.									|
 |  301         	| Option not found in policies.											|
 |  302         	| Hotel Not Found in DescriptiveInfo.											|
+|  303         	| Booking not confirmed in the supplier's system.											|
   
 
 
@@ -124,3 +126,22 @@ We use a standard ISO - 3166_1_alfa_2.
 |  CardBookingPay      	| The payment is managed by the supplier. The payment is effectuated at the time of booking.			|
 |  CardChekInPay      	| The payment is managed by the supplier. The payment is effectuated at check in in the hotel.			|
 |  PayX      	| The payment is managed by TravelgateX's payment system.			|
+
+
+### Rate Conditions
+
+| **Codes**	| **Description**			|
+| ------------- | ----------------------------- |
+| NonRefundable | Cancellation fee is a 100% from the moment the reservation is create|
+| Older55 | Rate that can only be sold to people who are 55 yeasrs or older.|
+| Older60 | Rate that can only be sold to people who are 60 yeasrs or older.|
+| Older65 | Rate that can only be sold to people who are 65 yeasrs or older.|
+| Package | Rate can't be sold separately from another product attached to it, such as a flight.|
+| CanaryResident | Rate applicable to Canary Islands residents only.|
+| BalearicResident | Rate applicable to Balearic Islands residents only.|
+| largeFamily | Rate applied to large families and is determined by each supplier.Check *remarks* for more details.|
+| honeymoon | Rate applied to those who just got married and is determined by each supplier. Check *remarks* for more details. |
+| publicServant | Rate applicable to public servants only. |
+| unemployed | Rate applied to those without work. |
+| mobile | Rate applicable to options booked by mobile. |
+| warranty | Rate applicable to options with cancellation warranty. |

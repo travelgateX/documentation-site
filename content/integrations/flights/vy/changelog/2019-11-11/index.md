@@ -14,6 +14,7 @@ tags = ["integration-changelog"]
 
 ## 2019-11-11
 {{% release-notes-container type="a" %}}
+- The delta price control in the booking transaction 
 - Added priority boarding pricing in quote transaction.
 - Added functionalty to request priority boarding in book transaction.
 {{% /release-notes-container %}}

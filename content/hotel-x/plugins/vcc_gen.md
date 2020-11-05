@@ -27,19 +27,22 @@ The file should be in the below format:
 * **File Name**: [Context Source]\_sequential_genvcc.csv
 * **Header Row**: IdRule,ClientToken,NoClientToken,Supplier,NoSupplier,Hotels,NotHotels,Access,NoAccess,CardType,VccAccess
 
-    * IdRule: Unique identifier of the rule. 
+* IdRule: Unique identifier of the rule. Used only for debug.  
 
-    Criteria rows: 
-    * ClientToken, NoClientToken: List of `clienttoken` separated by ';'
-    * Supplier, NoSupplier: List of `supplier` codes separated by ';'
-	* Hotels, NoHotels: List of `hotels` codes separated by ';'
-    * Access, NoAccess: List of `access` codes separated by ';'
-	* CardType: Card Type of the virtual credit card to be created
-	* VccAccess: Virtual Credit Card access
+* Criteria columns: 
+   * ClientToken, NoClientToken: List of `clienttoken` separated by ';'
+   * Supplier, NoSupplier: List of `supplier` codes separated by ';'
+   * Hotels, NoHotels: List of `hotels` codes separated by ';'
+   * Access, NoAccess: List of `access` codes separated by ';'
+
+* Result columns: 
+   * CardType: Card Type of the virtual credit card to be created
+   * VccAccess: Virtual Credit Card access
     
-    You should bear in mind that this file is a collection of rules and we chose in every Book the first rule that matches the criteria sent in the Query. **You should specify the more restrictive rules on the top of the file.**
+    
+    _You should bear in mind that this file is a collection of rules and we chose in every Book the first rule that matches the criteria sent in the Query. **You should specify the more restrictive rules on the top of the file.**
     If there is no value for any rule criteria row, it means that any value in the request matches this row. 
-    It is important to indicate the contexts used in values on the rule criteria to improve rule matching.
+    It is important to indicate the contexts used in values on the rule criteria to improve rule matching._
 
 
 * **Delimiter**:  Comma (",")

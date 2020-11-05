@@ -5,22 +5,15 @@
 "icon": "fa-exchange",
 "weight": 2,
 "alwaysopen": false,
-"default_ak": "64780338-49c8-4439-7c7d-d03c2033b145",
+"default_ak": "8626cf56-e364-4fd1-4fe0-311e23ac6355",
 "default_user": "",
 "gists": [
     {
         "n":"1 Room",
-        "g":"666b32bc15f794d941a0549f56576994",
+        "g":"54d5fa6313c9eb80f916b8b1c63298c7",
         "o":["graphiql"],
-        "u":"tgx-bot",
-        "ak":"64780338-49c8-4439-7c7d-d03c2033b145"
-    }, 
-    {
-        "n":"2 Rooms",
-        "g":"22146f0cf8f73939e0a55c0274def86c",
-        "o":["graphiql"],
-        "u":"tgx-bot",
-        "ak":"64780338-49c8-4439-7c7d-d03c2033b145"
+        "u":"xsolano",
+        "ak":"8626cf56-e364-4fd1-4fe0-311e23ac6355"
     }
         ]
 }
@@ -40,13 +33,9 @@ Here you can find 2 examples of how to valuate an availability option, one for 1
 
 {{% graphiql-tabs %}}
 
-666b32bc15f794d941a0549f56576994
+54d5fa6313c9eb80f916b8b1c63298c7
 Please, bear in mind that you should place on _optionRefId_ field the value from the **_id_** field of the option you want to valuate from availability.
-/666b32bc15f794d941a0549f56576994
-
-22146f0cf8f73939e0a55c0274def86c
-Please, bear in mind that you should place on _optionRefId_ field the value from the **_id_** field of the option you want to valuate from availability.
-/22146f0cf8f73939e0a55c0274def86c
+/54d5fa6313c9eb80f916b8b1c63298c7
 
 {{% /graphiql-tabs %}}
 

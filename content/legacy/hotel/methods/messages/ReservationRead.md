@@ -82,7 +82,7 @@ is closed.
 | CreationDate		| 1    		| String	| Creation date of booking.				|
 | HotelCode		| 1    		| String	| Hotel code.				|
 | Holder   				| 0..1		|		| Holder of the booking.  |
-| @title   				| 1		|		| Holder's title.  |
+| @title   				| 1		| String	| Holder's title. Possible values: Mr, Mrs, Miss, Ms.   |
 | @name   				| 1		|		| Holder's name.  |
 | @surname   				| 1		|		| Holder's surname.  |
 
@@ -137,12 +137,12 @@ is closed.
 | Locators/Provider			| 0..1 		| String	| Supplier locator.				|
 | Locators/Property			| 0..1 		| String	| Property locator(see Metadata method in order to verify if a supplier implements it).				|
 | Hotel      				| 0..1       	|		| Hotel reservation.				|
-| Hotel/Code 				| 1 		| String	| Hotel Code.					|
+| Hotel/Code 				| 0..1 		| String	| Hotel Code.					|
 | Hotel/Name 				| 0..1 		| String	| Hotel Name.					|
 | Hotel/City 				| 0..1 		| String	| Hotel city.					|
 | Hotel/CreationDate			| 0..1 		| String 	| Date of booking.    			|
-| Hotel/StartDate			| 1    		| String	| Check-in date.			|
-| Hotel/EndDate				| 1    		| String	| Check out date.				|
+| Hotel/StartDate			| 0..1    		| String	| Check-in date.			|
+| Hotel/EndDate				| 0..1    		| String	| Check out date.				|
 | Hotel/MealPlanCode			| 0..1 		| String	| Booking Mealplan code.			|
 | Hotel/Holder				| 0..1 		| String	| Reservation Holder .				|
 | @name				| 1    		| String	| Holder name.					|
@@ -175,7 +175,7 @@ is closed.
 | Hotel/Remarks				| 0..1 		| String	| Remarks.					|
 | TransactionStatus			| 1    		| Trans.	| Status.					|
 | TransactionStatus/ComunicationStatus	| 1    		| String	| Status communication (OFFLINE, OK and KO).	|
-| TransactionStatus/RSStatus		| 1    		| String	|  Response status - DESCONOCIDO (Unknown), EXISTE (Exists), EXISTECANCELADA (exists but it's cancelled), NO EXISTE (Does not exist). |
+| TransactionStatus/RSStatus		| 1    		| String	|  Response status - DESCONOCIDO (Unknown), EXISTE (Exists), EXISTECANCELADA (exists but it's cancelled), NO_EXISTE (Does not exist). |
 | TransactionStatus/ResStatus		| 1    		| String	| Status booking (OK = confirmed, RQ = on request, CN = cancelled, UN = unknown). |
                 
 

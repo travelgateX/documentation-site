@@ -6,6 +6,58 @@ sidebar = "mydoc_sidebar"
 permalink = "/docs/hotel/change-log"
 weight = 1
 +++
+		|
+
+**Version 1.0.26:** Date 01/09/2020
+
+{{% release-notes-container type="c"%}}
+* **Hotel code in Reservation Read Response.** Hotel code not mandatory at Hotel element level in Reservation Read Response. 
+
+
+{{% /release-notes-container %}}
+
+**Version 1.0.25:** Date 28/07/2020
+
+{{% release-notes-container type="a"%}}
+* **Addition of new rate conditions.** 2 new rate rule condition types added to the possible returned values: 
+
+| **Codes**	| **Description**			|
+| ------------- | ----------------------------- |
+| mobile | Rate applicable to options booked by mobile. |
+| warranty | Rate applicable to options with cancellation warranty. |
+  
+See full list at [Lists of Data](/legacy/hotel/methods/messages/listsdata/#rate-conditions) page.
+
+{{% /release-notes-container %}}
+
+
+**Version 1.0.24:** Date 22/06/2020
+
+{{% release-notes-container type="a"%}}
+* **Addition of new typified error.** Adding error code 303 to identify bookings that have not been confirmed in the supplier's system. This error will come with the ResStatus element as UN to identify bookings that haven't been confirmed only when the supplier can identify them.
+{{% /release-notes-container %}}
+
+~~~xml
+<ApplicationError>
+    <type>303</type>
+    <description>Booking not confirmed</description>
+</ApplicationError>
+<ResStatus>UN</ResStatus>
+~~~
+
+**Version 1.0.23:** Date 03/06/2020
+
+{{% release-notes-container type="a"%}}
+* **Addition of new typified error.** Adding error code 103 to identify when the error returned by the supplier is due to too many requests.
+{{% /release-notes-container %}}
+
+~~~xml
+<ApplicationError>
+    <type>103</type>
+    <description>TooManyRequests</description>
+    <httpStatusCode>429</httpStatusCode>
+</ApplicationError>
+~~~
 
 **Version 1.0.22:** Date 30/09/2019
 
