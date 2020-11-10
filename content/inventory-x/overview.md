@@ -30,4 +30,4 @@ Channel Managers and Hotels will push data to InventoryX.
 
 You can find more information on how to connect to Inventory-X by consulting our [public API](https://docs.travelgatex.com/inventory-x/).
 
-If you are interested in connecting to Inventory-X as a client and not a Channel Manager, please visit our [product page](https://www.travelgatex.com/products/inventory-x) for mor information.
+If you are interested in connecting to Inventory-X as a client and not a Channel Manager, please visit our [product page](https://www.travelgatex.com/products/inventory-x) for more information.
