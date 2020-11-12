@@ -462,6 +462,18 @@ Our platform allows to return GIATA codes in our Hotels Query response. First of
 
 All our content calls return the static information supported by the supplier. It is not a per hotel content, but the total amount of room codes, board codes, destination codes and category codes that may be returned by the supplier.
 
+**How it is calculated the deadline of the CancelPolicy and why it is different from what I recieve from the supplier?**
+
+The deadline of the CancelPolicy is the final date in which no Cancellation fees will be applicated. Between this date and check-in date, Cancellation fees would be applicated.
+
+Some suppliers may return this date in their response. In this case, we'll simply return it in our deadline field. However, some suppliers don't return this date and we've to calculate it taking in mind the following input information:
+* Hours before: the hours left before the checkin date in which the client have time to cancel the book without fees penalties. This information is granted by the supplier.
+* Checkin date
+* Worse case scenario: there're countries with +13 UTC and others -13 UTC, so the worse case scenario would be that a person in +13 process a book in -13.
+
+With this in mind, we apply to the deadline date result the following calculation:
+deadline = checkin date - 26 - Hours Before
+
 
 
 
