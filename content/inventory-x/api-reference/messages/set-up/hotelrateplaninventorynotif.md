@@ -199,7 +199,7 @@ Providers will send a HotelRatePlanInventoryNotifRQ message to push the Hotel Se
                     </SellableProduct>
                 </SellableProducts>
 		<Taxes>
-		    <Tax Amount = "20" ChargeFrequency = "true">
+		    <Tax Amount = "20" ChargeFrequency = "PerNight" ChargeUnit = "">
 			<TaxDescription>
 			    <Text>city</Text>
 			</TaxDescription>
@@ -285,7 +285,7 @@ Providers will send a HotelRatePlanInventoryNotifRQ message to push the Hotel Se
 | @HotelStatusType			| 1	     | String	| Active or Deactivated.				        |
 | RatePlans/RatePlan			| 0..n	     |		| Present if rate exists.				|
 | @RatePlanCode				| 1	     | String	| Rate code.						|
-| @BaseRatePlanCode			| 0..1	     | String	| Rate code of the base RatePlan. Only used for derived rates. |
+| @BaseRatePlanCode			| 0..1	     | String	| Rate code of the base RatePlan. Only used for derived rates. |@BaseRatePlanCode			| 0..1	     | String	| Rate code of the base RatePlan. Only used for derived rates. |
 | @RateReturn			| 0..1	     | String	| Indicates if the Derived Rate Code should be passed to the channel manager in booking notifications or the Base Rate Code. Only used for derived rates. |
 | @RatePlanNotifType			| 0..1	     | String	| New, Delta or Remove |
 | @RatePlanStatusType			    | 1		 | String   | Active or Deactivated.				|
@@ -349,8 +349,8 @@ Providers will send a HotelRatePlanInventoryNotifRQ message to push the Hotel Se
 | RatePlans/RatePlan/Taxes | 0..1 |	 |	 			|
 | RatePlans/RatePlan/Taxes/Tax | 1..n |	 | Tax to apply to the room prices of the rate 			|
 | @Amount/Percent | 1 | Decimal | Indicates that the tax will be applied relative to an amoount or a percentage 		|
-| @ChargeFrequency | 0..1 | Boolean | If true indicates that tax is applied relative to the Amount of Nights booked  |
-| @ChargeUnit | 0..1 | Boolean | If true indicates that tax is applied relative to the Amount of Paxes booked  |
+| @ChargeFrequency | 1 | String | If PerNight indicates that tax is applied relative to the Amount of Nights booked  |
+| @ChargeUnit | 1 | String | If PerPax indicates that tax is applied relative to the Amount of Paxes booked  |
 | RatePlans/RatePlan/Taxes/Tax/TaxDescription | 1 |	 |  			|
 | RatePlans/RatePlan/Taxes/Tax/TaxDescription/Text | 1 | String	 | Description of tax type 			|
 | RatePlans/RatePlan/RatePlanInclusionsType |	0..1 |	 Only used for derived rates. |	 			|
