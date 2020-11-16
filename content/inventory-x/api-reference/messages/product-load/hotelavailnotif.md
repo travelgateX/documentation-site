@@ -3,7 +3,7 @@ title = "HotelAvailNotif"
 pagetitle = "HotelAvailNotif"
 description = "HotelAvailNotif message"
 icon = "fa-upload" 
-weight = 4
+weight = 1
 alwaysopen = false
 isDirectory = false
 +++

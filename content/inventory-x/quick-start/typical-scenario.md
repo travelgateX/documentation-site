@@ -1,7 +1,7 @@
 +++
 title = "Typical Scenarios"
 pagetitle = "Typical Scenarios"
-description = "Workflow explained in short"
+description = "Typical workflow explained"
 icon = "fa-sitemap" 
 weight = 2
 alwaysopen = false
@@ -32,7 +32,7 @@ isDirectory = false
 
 ## Optionally, check if synchronization is correct:
 
-1.  Providers retrieve dynamic rates using **HotelRatePlanRetrieve**
+1.  Providers retrieve dynamic rates using **HotelRatePlanRetrieve**.
 
 2.  Providers retrieve availability using **HotelAvailRetrieve**.
 

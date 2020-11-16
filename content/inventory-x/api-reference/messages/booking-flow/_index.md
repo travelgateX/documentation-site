@@ -8,6 +8,7 @@ alwaysopen = false
 isDirectory = false
 +++
 
-Providers can check up on their bookings if their implement HotelResRetrieve messages in order to obtain a list of bookings and they can receive an instant API notification from TGX with HotelResNotif for bookings or CancelNotif for cancellations.
+Providers can receive an instant API notification from TGX with HotelResNotif message for bookings and CancelNotif message for cancellations. If Provider doesn't allow push notifications to their system, it is possible to implement HotelResRetrieve messages in order to obtain a list of bookings from Inventory-X system.
+
 
 {{%custom-children%}}

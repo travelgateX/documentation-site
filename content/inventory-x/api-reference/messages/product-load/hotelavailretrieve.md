@@ -3,7 +3,7 @@ title = "HotelAvailRetrieve"
 pagetitle = "HotelAvailRetrieve"
 description = "HotelAvailRetrieve message"
 icon = "fa-download" 
-weight = 3
+weight = 2
 alwaysopen = false
 isDirectory = false
 +++
