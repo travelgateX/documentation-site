@@ -25,7 +25,6 @@ The request input is formed by 2 mandatory inputs: requestDate, mappingReport an
     * **RATE**
     * **BOARD**
     * **ROOM**
-    * **ROOM_HOTEL**
 
 * **Optional fields:**
   * **supplierCode_in:** List of suppliers.
@@ -75,7 +74,7 @@ Results are given in a csv file with an URL from Google Cloud Storage. Log into 
     "insights": {
       "hotelXMappingReport": {
         "data": {
-          "url": "https://storage.cloud.google.com/report-availability/45782.csv"
+          "url": "http://storage...../31965.csv"
         }
       }
     }
