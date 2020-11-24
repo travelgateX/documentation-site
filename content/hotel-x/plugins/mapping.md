@@ -7,18 +7,15 @@ weight = 2
 alwaysopen = false
 +++
 
-The map plugins are used to change the supplier codes to client codes or vice versa. There are four types:
+The map plugins are used to change the supplier codes to client codes or vice versa. There are these types:
 
-* Hotel map 
+* Hotel Map 
 * Board Map 
 * Room Map 
 * Rate Map 
+* Amenity Map 
 
 Our map formats share a common structure. In order to load your maps you just need to follow the instructions below:
-
-## Example files
-You can download example for the files structure [here](/content/sample_mapping.zip)
-
 
 ## Entity Maps
 
@@ -48,7 +45,7 @@ The file should be in the following format:
 
 ### File Names
 
-All map files must have the same name structure as follows - you need create a file for *Context Destionation*
+All map files must have the same name structure as follows - you need create a file for *Context Destination*
 
 |Entity|File Name|
 |---|----|
@@ -56,6 +53,7 @@ All map files must have the same name structure as follows - you need create a f
 |Board|[Context Source]\_[Context Destination]\_board\_map.csv|
 |Room|[Context Source]\_[Context Destination]\_room\_map.csv|
 |Rate|[Context Source]\_[Context Destination]\_rate\_map.csv|
+|Amenity|[Context Source]\_[Context Destination]\_amenity\_map.csv|
 
 ### Directories
 
@@ -65,10 +63,12 @@ All map files must have the same name structure as follows - you need create a f
 |Board|/F[folder code]\_[unique code]/HotelX\_[unique code]/Maps/Board/|
 |Room|/F[folder code]\_[unique code]/HotelX\_[unique code]/Maps/Room/|
 |Rate|/F[folder code]\_[unique code]/HotelX\_[unique code]/Maps/Rate/|
+|Amenity|/F[folder code]\_[unique code]/HotelX\_[unique code]/Maps/Amenity/|
 
 ### Sample Files
 
-Let's suppose we have the following client code and supplier code, then we need to create one file for each supplier we have
+Let's suppose we have the following client code and supplier code, then we need to create one file for each supplier we have:
+
 * Client code: GUE
 
 * Supplier Code: BVJ
@@ -82,76 +82,86 @@ Code Source, Code Destination
 10000,7604
 10000,1274249
 ```
+## How to use mapping
+Nowadays, mapping can be used in Booking-Flow and Content APIs.
+### Use in Booking-Flow
+There are two ways of using mapping in Booking-Flow:
+* If the context used in the query is different from supplier/s context that are used in the operation. 
+In that case, HotelX will try to map all entities(hotel, board, etc.)(but amenities) to query's context.
+* If the mapping plugin is requested (only boards and amenities), only entities requested in the query will be tried to map.
 
-## Plugin Name
+**Important**: Mapping in booking-flow is only usable in Search service.<br><br>
+Here you have the nodes where you can find mapped codes in Search response:<br><br>
+__Hotel__: search.options[*].hotelCode (hotelCodeSupplier will contain the hotel's code in supplier's context)<br>
+__Board__: search.options[*].boardCode (boardCodeSupplier will contain the board's code in supplier's context)<br>
+__Room__: search.options[*].rooms[*].code (supplierCode will contain the room's code in supplier's context)<br>
+__Rate__: search.options[*].rooms[*].ratePlans[*].code (supplierCode will contain the rate plan's code of the room in supplier's context)<br>
+__Amenity__: search.options[*].amenities[*].code and/or inside rooms[*] 
+(amenitySupplierCode will contain the amenity's code in supplier context)<br>
+ 
+Examples of plugin that executes board and/or amenity mapping:<br>
 
-|Entity Map|Plugin Name|
-|---|---|
-|Hotel|HotelMapX|
-|Board|BoardMapX|
-|Room|RoomMapX|
-|Rate|RateMapX|
+**Boards**:
+```json
+{
+    "plugins": {
+        "step": "RESPONSE_OPTION",
+        "pluginsType": [
+            {
+                "type": "BOARD_MAP",
+                "name": "board_mapX"
+            }
+        ]
+    }
+}
+``` 
+**Amenities:**
+```json
+{
+    "plugins": {
+        "step": "RESPONSE_OPTION",
+        "pluginsType": [
+            {
+                "type": "AMENITY_MAP",
+                "name": "amenity_mapX"
+            }
+        ]
+    }
+}
+``` 
+### Use in Content
+The use of mapping plugin in Content is entirely different from Booking-Flow. Nowadays only is available in Hotel-List query and only amenity map are available. 
+In order to request mapping in content (other entities mapping could be available in future), it is necessary to query the node mappings stored inside the entity:
+This node is a list of mappings that will store the code of the entity in supplier context and the context of the supplier. 
+Also, is necessary to indicate the group code and destination context in query variables.<br><br>
+
+How to request inside Hotel-List for amenities:<br>
+```graphql
+ allAmenities(mapOptions: [{ groupCode: $amenitiesGroupCode, context: $amenitiesContext }]) {
+              edges {
+                node {
+                  amenityData {
+                    amenityCode
+                    mappings {
+                      context
+                      code
+                    }
+                  }
+                }
+              }
+            }
+```
+
+MapOptions is a list of pair {groupCode, destinationContext}.The groupCode is the HotelX groups assigned to you (HotelX_...), <br> 
+and the destinationContext is the context you want to receive the codes<br> 
+For each pair in this list, the mapping will be applied for each amenity.<br>
+In other words, Hotel-List will change amenityCode to the context set in destinationContext<br>
 
 ## Other Maps
 
-### Other Maps in Booking API
+#### Room map by provider hotel
 
-#### Amenity mapping
-
-This plugin allows to convert the amenity codes from supplier context to a desired context. 
-
-Our map formats share a common structure. In order to load your maps you just need to follow the instructions below:
-
-##### File Format
-
-The file should be in the following format:
-
-* **Encoding**: UTF-8
-
-* **File Name**: [Context Source]\_[Context Destination]\_amenity\_map.csv
-
-  * Context Source: it corresponds to the code in desired context
-  
-  * Context Destination: it corresponds to the supplier context 
-
-    * Only one file for each supplier should be uploaded
-
-* **Header Row**:  Code Destination, Code Source
-
-  * Context Destination: it corresponds to the codes in desired context
-
-  * Context Source: it corresponds to the supplier codes    
-
-* **Delimiter**: Comma (",")
-
-* **Directory**: /F[folder code]\_[unique code]/HotelX\_[unique code]/Maps/Amenity/
-
-##### File Names
-
-The map files must have the same name structure as follows - you need create one file for any supplier context.
-
-[Context Source]\_[Context Destination]\_amenity\_map.csv|
-
-
-##### Sample Files
-
-Let's suppose we have the following client code and supplier code, then we need to create one file for each supplier we have
-* Client code: EXG
-
-* Supplier Code: GTRM2
-
-**Name**: EXG\_GTRM2\_amenity\_map.csv
-
-
-```csv
-Code Destination,Code Source
-FreeParking,free_parking
-FreeInternet,free_internet
-```
-
-#### Map by provider hotel
-
-This plugin allows to convert the room codes in supplier context but by hotel. Is the same plugin (room map) explained before but it offers the possibility to map by supplier and hotel. 
+This plugin allows to convert the room codes in supplier context but by the hotel. Is the same plugin (room map) explained before, but it offers the possibility to map by supplier and hotel. 
 
 ##### Format File
 
@@ -162,7 +172,7 @@ The file must be in the below format:
 * **Header Row**: Code Source,Code Destination
 * **Directory**: /F[folder code]\_[unique code]/HotelX\_[unique code]/Maps/
 
-If you are using a file of room map, is necessary that you modify this file adding a new column. Please, see the next example down:
+If you are using a file of room map, is necessary you modify this file adding a new column. Please, see the next example down:
 
 ##### Sample File
 
@@ -203,18 +213,44 @@ What happens if you use the combined plugin (room map and room map by provider h
     }
 }
 ```
+## Default Codes
 
-Besides, an alternative for room map is also shown below:
+This feature allows to set a default code for each code in the source (provider) context. The entities that can have default codes are:<br>
 
-## Modifying data
+* Board
+* Room
+* Rate
+* Amenity
+
+**Important**: this feature only must be used in Booking-Flow. Only one default code can be assigned to each supplier context.<br>
+In order to use this feature, it is necessary to append the default code to the FTP.<br><br>
+**Example file with default code**<br><br>
+File name: sourceContext_destinationContext_entity_map.csv
+```csv
+Code Source, Code Destination
+10000,7604
+10000,1274249
+MY_DEFAULT_CODE,*
+```
+**MY_DEFAULT_CODE** is the code that will be returned in response.<br><br>
+In the example above, all the codes of entity "entity" of provider with context destinationContext that not be found in the file, will be MY_DEFAULT_CODE in response.<br>
+<br>Remember that, if you do not use default codes, in case that a mapping is not found, and the option is not discarded, in the response you will receive:<br><br>
+code: codeInSupplierContext<br>
+supplierCode: codeInSupplierContext<br><br>
+This feature is useful for controlling not mapped codes, and in case that you use aggregation plugins, all this options will be grouped in the same group and discarded.
+## Modifying data through FTP
 
 **Once mapping files are loaded, we can perform the following operations on them:**
 
 ### Updating data 
 We have two options:
 
-1. Reprocessing the same data by renaming the file and just removing "_processed": **Example example_processed.csv --> example.csv**
+1. Reprocessing the same data by renaming the file and just removing "_processed".<br>
+Example: **SourceContext_DestinationContext_entity_map_processed.csv --> example.csv**
 2. Changing the data by deleting the processed file and uploading a new one with new information.
    
 ### Deleting data
 Uploading a new file only with headers (no information).
+```csv
+Code Source, Code Destination
+```
