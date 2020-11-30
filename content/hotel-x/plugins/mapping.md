@@ -14,6 +14,7 @@ The map plugins are used to change the supplier codes to client codes or vice ve
 * Room Map 
 * Rate Map 
 * Amenity Map 
+* Promotion Map
 
 Our map formats share a common structure. In order to load your maps you just need to follow the instructions below:
 
@@ -54,6 +55,7 @@ All map files must have the same name structure as follows - you need create a f
 |Room|[Context Source]\_[Context Destination]\_room\_map.csv|
 |Rate|[Context Source]\_[Context Destination]\_rate\_map.csv|
 |Amenity|[Context Source]\_[Context Destination]\_amenity\_map.csv|
+|Promotion|[Context Source]\_[Context Destination]\promotion\_map.csv|
 
 ### Directories
 
@@ -64,6 +66,7 @@ All map files must have the same name structure as follows - you need create a f
 |Room|/F[folder code]\_[unique code]/HotelX\_[unique code]/Maps/Room/|
 |Rate|/F[folder code]\_[unique code]/HotelX\_[unique code]/Maps/Rate/|
 |Amenity|/F[folder code]\_[unique code]/HotelX\_[unique code]/Maps/Amenity/|
+|Promotion|/F[folder code]\_[unique code]/HotelX\_[unique code]/Maps/Promotion/|
 
 ### Sample Files
 
@@ -87,8 +90,8 @@ Nowadays, mapping can be used in Booking-Flow and Content APIs.
 ### Use in Booking-Flow
 There are two ways of using mapping in Booking-Flow:
 * If the context used in the query is different from supplier/s context that are used in the operation. 
-In that case, HotelX will try to map all entities(hotel, board, etc.)(but amenities) to query's context.
-* If the mapping plugin is requested (only boards and amenities), only entities requested in the query will be tried to map.
+In that case, HotelX will try to map all entities(hotel, board, etc.)(but amenities and promotions) to query's context.
+* If the mapping plugin is requested (only boards, amenities and promotions), only entities requested in the query will be tried to map.
 
 **Important**: Mapping in booking-flow is only usable in Search service.<br><br>
 Here you have the nodes where you can find mapped codes in Search response:<br><br>
@@ -98,6 +101,7 @@ __Room__: search.options[*].rooms[*].code (supplierCode will contain the room's 
 __Rate__: search.options[*].rooms[*].ratePlans[*].code (supplierCode will contain the rate plan's code of the room in supplier's context)<br>
 __Amenity__: search.options[*].amenities[*].code and/or inside rooms[*] 
 (amenitySupplierCode will contain the amenity's code in supplier context)<br>
+__Promotion__: search.options[*].promotionCode (promotionCodeSupplier will contain the promotion's code in supplier's context)<br>
  
 Examples of plugin that executes board and/or amenity mapping:<br>
 
@@ -124,6 +128,20 @@ Examples of plugin that executes board and/or amenity mapping:<br>
             {
                 "type": "AMENITY_MAP",
                 "name": "amenity_mapX"
+            }
+        ]
+    }
+}
+```
+**Promotions**:
+```json
+{
+    "plugins": {
+        "step": "RESPONSE_OPTION",
+        "pluginsType": [
+            {
+                "type": "PROMOTION_MAP",
+                "name": "promotion_mapX"
             }
         ]
     }
