@@ -26,6 +26,7 @@ The request input is formed by 2 mandatory inputs: requestDate, mappingReport an
     * **BOARD**
     * **ROOM**
     * **HOTEL_ROOM**
+    * **PROMOTION**
 
 * **Optional fields:**
   * **supplierCode_in:** List of suppliers.
@@ -83,7 +84,7 @@ Results are given in a csv file with an URL from Google Cloud Storage. Log into 
 }
 ~~~
 
-# File Format (RATE / BOARD / ROOM)
+# File Format (RATE / BOARD / ROOM / PROMOTION)
 
 The file contains 6 columns separated by comma:
 
