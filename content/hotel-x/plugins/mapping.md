@@ -93,6 +93,29 @@ There are two ways of using mapping in Booking-Flow:
 In that case, HotelX will try to map all entities(hotel, board, etc.)(but amenities and promotions) to query's context.
 * If the mapping plugin is requested (only boards, amenities and promotions), only entities requested in the query will be tried to map.
 
+**Context in plugins via parameters**
+You can also specify a context for each of the plugins you'll use in your query. This context will be the context in which you want to map the supplier codes. To do so, you'll only need to specify it via parameters. This context, if specified, will have priority over the context specified via settings in your query. This in an example:
+
+```json
+{
+    "plugins": {
+        "step": "RESPONSE_OPTION",
+        "pluginsType": [
+            {
+                "type": "BOARD_MAP",
+                "name": "board_mapX",
+                "parameters": [
+                  {
+                    "key": "context",
+                    "value": "yourContext"
+                  }
+                ]
+            }
+        ]
+    }
+}
+``` 
+
 **Important**: Mapping in booking-flow is only usable in Search service.<br><br>
 Here you have the nodes where you can find mapped codes in Search response:<br><br>
 __Hotel__: search.options[*].hotelCode (hotelCodeSupplier will contain the hotel's code in supplier's context)<br>
