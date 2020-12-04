@@ -262,6 +262,7 @@ This feature allows to set a default code for each code in the source (provider)
 * Room
 * Rate
 * Amenity
+* Promotion
 
 **Important**: this feature only must be used in Booking-Flow. Only one default code can be assigned to each supplier context.<br>
 In order to use this feature, it is necessary to append the default code to the FTP.<br><br>
