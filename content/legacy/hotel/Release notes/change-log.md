@@ -8,7 +8,7 @@ weight = 1
 +++
 
 
-**Version 1.0.27:** Date 17/12/2020
+**Version 1.0.27:** Date 23/12/2020
 
 {{% release-notes-container type="a"%}}
 
