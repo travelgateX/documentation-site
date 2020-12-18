@@ -183,8 +183,8 @@ is closed.
 | CardInfo/ThreeDomainSecurity/CAVV             | 0..1  		| String	| Cardholder Authentication Verification Value.	|
 | CardInfo/ThreeDomainSecurity/PARes            | 0..1  		| String	| Payer Authentication Response.	|
 | CardInfo/ThreeDomainSecurity/PAResStatus      | 0..1  		| String	| Payer Authentication Response status. See values allowed at [PARes Status](https://docs.travelgatex.com/legacy/docs/hotel/methods/listsdata/).|
-| CardInfo/ThreeDomainSecurity/PARes            | 1  		| String	| Payer Authentication Response.	|
-| CardInfo/ThreeDomainSecurity/CardEnrolledStatus | 1  		| String	| Status of Authentication eligibility. See values allowed at [Card Enrollment Status](https://docs.travelgatex.com/legacy/docs/hotel/methods/listsdata/).	|
+| CardInfo/ThreeDomainSecurity/PARes            | 0..1  		| String	| Payer Authentication Response.	|
+| CardInfo/ThreeDomainSecurity/CardEnrolledStatus | 0..1  		| String	| Status of Authentication eligibility. See values allowed at [Card Enrollment Status](https://docs.travelgatex.com/legacy/docs/hotel/methods/listsdata/).	|
 | CardInfo/ThreeDomainSecurity/SignatureStatus  | 0..1  		| String	| Transaction Signature status.	See values allowed at [Signature Verification Status](https://docs.travelgatex.com/legacy/docs/hotel/methods/listsdata/).|
 | CardInfo/ThreeDomainSecurity/MerchantName     | 0..1  		| String	| Merchant name .	|
 | Rooms          				| 1      	|		| Rooms within this option (room list).			|
