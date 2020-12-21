@@ -14,6 +14,270 @@ The GraphQL schema change log is a list of recent and upcoming changes to our Gr
 
 Check out this list of new releases and changes applied on the **TravelgateX GraphQL API**.
 
+## 2020-12-21
+
+⚠️  Union member `Access` was added to Union type `Connection`
+
+✅  Input field `serviceApi` was added to input object type `ActiveFilterInput`
+
+✅  Input field `threeDomainSecurity` was added to input object type `PaymentCardInput`
+
+✅  Input field `virtualCreditCard` was added to input object type `PaymentCardInput`
+
+✅  Input field `isVCC` was added to input object type `PaymentCardInput`
+
+✅  Type `ThreeDSSignatureStatusType` was added
+
+✅  Type `ThreeDSCardEnrolledStatusType` was added
+
+✅  Type `PayerResponseStatusType` was added
+
+✅  Type `ThreeDomainSecurityInput` was added
+
+✅  Type `VirtualCreditCardInput` was added
+
+## 2020-12-03
+
+🛑  Enum value `ROOM_HOTEL` was removed from enum `MappingType`
+
+⚠️  Enum value `supplierOrganization` was added to enum `BookingsReportGroupByInput`
+
+⚠️  Enum value `clientOrganization` was added to enum `BookingsReportGroupByInput`
+
+⚠️  Enum value `PROMOTION` was added to enum `MappingType`
+
+⚠️  Enum value `PROMOTION_MAP` was added to enum `PluginType`
+
+✅  Field `clientOrganization` was added to object type `AggregateSum`
+
+✅  Field `supplierOrganization` was added to object type `AggregateSum`
+
+✅  Field `clientCode` was added to object type `AggregateSum`
+
+✅  Field `supplierCode` was added to object type `AggregateSum`
+
+✅  Field `destinationCountry` was added to object type `AggregateSum`
+
+✅  Field `supplierCode` was added to object type `Promotion`
+
+## 2020-11-23
+
+⚠️  Enum value `HOTEL_ROOM` was added to enum `MappingType`
+
+⚠️  Enum value `ORGANIZATION_BUYER_SELLER` was added to enum `OrganizationTemplate`
+
+⚠️  Enum value `ORGANIZATION_SELLER` was added to enum `OrganizationTemplate`
+
+⚠️  Enum value `ORGANIZATION_BUYER` was added to enum `OrganizationTemplate`
+
+✅  Field `isSeller` was added to object type `OrganizationData`
+
+✅  Field `isBuyer` was added to object type `OrganizationData`
+
+✅  Field `isSeller` was added to object type `GroupData`
+
+✅  Field `isBuyer` was added to object type `GroupData`
+
+## 2020-08-31
+
+✅  Field `HotelOptionQuote.searchPrice` description changed from `Specifies the price of the previous Search Option. Returned only if the shown Quote price differs from the price shown at the Search Option. If the price does not change, this field will be returned Null.` to `Specifies the price of the previous search option`
+
+✅  Field `rooms` was added to object type `HotelOptionQuote`
+
+✅  Input field `providerID` was added to input object type `AccessFilter`
+
+✅  Input field `supplierID` was added to input object type `AccessFilter`
+
+✅  Input field `isActive` was added to input object type `AccessFilter`
+
+✅  Input field `hasMaster` was added to input object type `AccessFilter`
+
+✅  Input field `providerID` was added to input object type `SupplierFilter`
+
+✅  Type `RoomOptionQuote` was added
+
+## 2020-07-27
+
+⚠️  Enum value `WARRANTY` was added to enum `RateRulesType`
+
+⚠️  Enum value `MOBILE` was added to enum `RateRulesType`
+
+✅  Description for enum value `RateRulesType.ESSENTIAL_WORKER` changed from `Special hotel rates for essential workers.` to `ESSENTIAL_WORKER are special hotel rates for essential workers.`
+
+✅  Description for enum value `RateRulesType.NON_REFUNDABLE` changed from `The rate non refundable is applied to non refundable options` to `NON_REFUNDABLE is applicable to non refundable options.`
+
+✅  Description for enum value `RateRulesType.NORMAL` changed from `The rate normal refers to options without RateRule` to `NORMAL are options without RateRule.`
+
+✅  Description for enum value `RateRulesType.UNEMPLOYED` changed from `The rate unemployed is applied to those without work.` to `UNEMPLOYED is applicable to those without work.`
+
+✅  Description for enum value `RateRulesType.PUBLIC_SERVANT` changed from `The rate publicServant is applicable to public servants only.` to `PUBLIC_SERVANT is applicable to public servants only.`
+
+✅  Description for enum value `RateRulesType.HONEYMOON` changed from `The rate honeymoon is applied to those who just got married and is determined by each supplier.` to `HONEYMOON is applicable to those who just got married and is determined by each supplier.`
+
+✅  Description for enum value `RateRulesType.LARGE_FAMILY` changed from `The rate largeFamily is applied to large families and is determined by each supplier` to `LARGE_FAMILY is applicable to large families and is determined by each supplier.`
+
+✅  Description for enum value `RateRulesType.BALEARIC_RESIDENT` changed from `The rate BalearicResident is applicable to Balearic Islands residents only.` to `BALEARIC_RESIDENT is applicable to Balearic Islands residents only.`
+
+✅  Description for enum value `RateRulesType.CANARY_RESIDENT` changed from `The rate CanaryResident is applicable to Canary Islands residents only.` to `CANARY_RESIDENT is applicable to Canary Islands residents only.`
+
+✅  Description for enum value `RateRulesType.OLDER65` changed from `Options that can only be sold to people who are 65 and older.` to `OLDER65 can only be sold to people who are 65 and older.`
+
+✅  Description for enum value `RateRulesType.OLDER60` changed from `Options that can only be sold to people who are 60 and older.` to `OLDER60 can only be sold to people who are 60 and older.`
+
+✅  Description for enum value `RateRulesType.OLDER55` changed from `Options that can only be sold to people who are 55 and older.` to `OLDER55 can only be sold to people who are 55 and older.`
+
+## 2020-05-28
+
+⚠️  Enum value `ESSENTIAL_WORKER` was added to enum `RateRulesType`
+
+## 2020-04-15
+
+🛑  Field `Partner` was removed from object type `AdminQuery`
+
+🛑  Field `PartnerData` was removed from object type `Partner`
+
+✅  Field `partner` was added to object type `AdminQuery`
+
+✅  Input field `title` was added to input object type `BookPaxInput`
+
+✅  Field `partnerData` was added to object type `Partner`
+
+✅  Input field `title` was added to input object type `HolderInput`
+
+✅  Type `PersonalTitleType` was added
+
+## 2020-03-31
+
+🛑  Field `informFees` was removed from object type `MetadataQuote`
+
+🛑  Field `allowsBlockOption` was removed from object type `MetadataQuote`
+
+🛑  Field `informRoomFees` was removed from object type `MetadataSearch`
+
+🛑  Field `informFees` was removed from object type `MetadataSearch`
+
+🛑  Field `informOffers` was removed from object type `MetadataSearch`
+
+🛑  Field `allowsBusinessRules` was removed from object type `MetadataSearch`
+
+🛑  Field `amenities` was removed from object type `MetadataContent`
+
+🛑  Field `currencies` was removed from object type `MetadataContent`
+
+🛑  Field `markets` was removed from object type `MetadataContent`
+
+🛑  Field `categories` was removed from object type `MetadataContent`
+
+🛑  Field `boards` was removed from object type `MetadataContent`
+
+🛑  Field `rooms` was removed from object type `MetadataContent`
+
+🛑  Field `destinations` was removed from object type `MetadataContent`
+
+🛑  Field `hotels` was removed from object type `MetadataContent`
+
+🛑  Field `informExclusiveDeal` was removed from object type `MetadataContent`
+
+🛑  Field `allowsClientLocator` was removed from object type `MetadataCancel`
+
+🛑  Field `allowsProvideLocator` was removed from object type `MetadataCancel`
+
+🛑  Field `implemented` was removed from object type `MetadataCancel`
+
+🛑  Field `informPropertyReservationNumber` was removed from object type `MetadataBooking`
+
+🛑  Field `allowsClientLocator` was removed from object type `MetadataBooking`
+
+🛑  Field `allowsProvideLocator` was removed from object type `MetadataBooking`
+
+🛑  Field `implemented` was removed from object type `MetadataBooking`
+
+🛑  Field `informPropertyReservationNumber` was removed from object type `MetadataBook`
+
+🛑  Field `content` was removed from object type `MetadataData`
+
+🛑  Field `bookingList` was removed from object type `MetadataData`
+
+🛑  Type `MetadataGeneric` was removed
+
+🛑  Type `MetadataStatic` was removed
+
+🛑  Type `MetadataBookingList` was removed
+
+⚠️  Enum value `AMENITY` was added to enum `MappingType`
+
+✅  Description for enum value `MappingType.BOARD` changed from `HOTEL - Comming soon` to ``
+
+✅  Field `mandatory` was added to object type `HotelRuntimeParameter`
+
+✅  Field `requiredNationality` was added to object type `MetadataQuote`
+
+✅  Field `informSurcharges` was added to object type `MetadataQuote`
+
+✅  Field `MetadataSearch.maxStay` description changed from `Maximum number of days allowed for booking. -1 means there is no restriction` to `Maximum number of days allowed for booking.`
+
+✅  Field `requiredNationality` was added to object type `MetadataSearch`
+
+✅  Field `informRoomSurcharges` was added to object type `MetadataSearch`
+
+✅  Field `informSurcharges` was added to object type `MetadataSearch`
+
+✅  Field `informPromotions` was added to object type `MetadataSearch`
+
+✅  Description `Contnet static metadata information, allow you know if some static information or API it's supported by the supplier` on type `MetadataContent` has changed to `Informs the  content information, return null if not implemented`
+
+✅  Field `languages` was added to object type `MetadataContent`
+
+✅  Field `mutableByClientReference` was added to object type `MetadataCancel`
+
+✅  Field `mutableBySupplierReference` was added to object type `MetadataCancel`
+
+✅  Field `MetadataBooking.informPriceCancel` description changed from `The supplier informs the cancellation price.` to `Informs the cancellation price.`
+
+✅  Field `MetadataBooking.informCancelPolicies` description changed from `Informs cancellation policies.` to `Informs the cancellation policies.`
+
+✅  Field `informHotelReference` was added to object type `MetadataBooking`
+
+✅  Field `queryableByCheckinDate` was added to object type `MetadataBooking`
+
+✅  Field `queryableByCreationDate` was added to object type `MetadataBooking`
+
+✅  Field `queryableByClientReference` was added to object type `MetadataBooking`
+
+✅  Field `queryableBySupplierReference` was added to object type `MetadataBooking`
+
+✅  Field `MetadataBook.informBillingSupplier` description changed from `Informs if the supplier returns the property reservation number.` to `Informs if the supplier billing code.`
+
+✅  Field `requiredNationality` was added to object type `MetadataBook`
+
+✅  Field `informHotelReference` was added to object type `MetadataBook`
+
+✅  Field `MetadataData.cancel` description changed from `Cancel medatadata` to `Cancel metadata`
+
+✅  Field `MetadataData.booking` description changed from `Booking medatadata` to `Booking metadata`
+
+✅  Field `MetadataData.book` description changed from `Book medatadata` to `Book metadata`
+
+✅  Field `MetadataData.quote` description changed from `Quote medatadata` to `Quote metadata`
+
+✅  Field `MetadataData.search` description changed from `Search medatadata` to `Search metadata`
+
+✅  Field `amenities` was added to object type `MetadataData`
+
+✅  Field `currencies` was added to object type `MetadataData`
+
+✅  Field `markets` was added to object type `MetadataData`
+
+✅  Field `categories` was added to object type `MetadataData`
+
+✅  Field `boards` was added to object type `MetadataData`
+
+✅  Field `rooms` was added to object type `MetadataData`
+
+✅  Field `destinations` was added to object type `MetadataData`
+
+✅  Field `hotels` was added to object type `MetadataData`
+
 ## 2020-03-10
 
 🛑  Field `audit` was removed from object type `Query`
