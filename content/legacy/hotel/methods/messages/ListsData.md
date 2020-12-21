@@ -128,6 +128,51 @@ We use a standard ISO - 3166_1_alfa_2.
 |  PayX      	| The payment is managed by TravelgateX's payment system.			|
 
 
+### Electronic Commerce Indicator Codes
+
+#### Visa, American Express, Diners Club and JCB
+
+| **ECI Value**	| **Description**	|
+| ------------- | ------------- |
+|  05           | 3DS authentication was successful, transactions are secured by 3DS.		|
+|  06           | Authentication was attempted but was not or could not be completed; possible reasons being either the card or its Issuing Bank has yet to participate in 3DS.		|
+|  07           | 3DS authentication is either failed or could not be attempted; possible reasons being both card and Issuing Bank are not secured by 3DS, technical errors, or improper configuration.		|
+
+#### MasterCard
+
+| **ECI Value**	| **Description**	|
+| ------------- | ------------- |
+|  00           | 3DS authentication is either failed or could not be attempted; possible reasons being both card and Issuing Bank are not secured by 3DS, technical errors, or improper configuration.		|
+|  01           | 3DS authentication was attempted but was not or could not be completed; possible reasons being either the card or its Issuing Bank has yet to participate in 3DS, or cardholder ran out of time to authorize.		|
+|  02           | 3DS authentication is successful.		|
+
+### PARes Status
+
+| **Status Value**	| **Description**	|
+| -------------     | ----------------- |
+|  Y                | Successful Authentication.	|
+|  N                | Failed Authentication.		|
+|  U                | Unable to complete Authentication.		|
+|  A                | Successful Attempts Transaction.		|
+|  B                | You can proceed to authorisation using the information received.		|
+|  R                | Authentication Rejected.		|
+
+### Card Enrollment Status
+
+| **Status Value**	| **Description**	|
+| -------------     | ----------------- |
+|  Y                | Cardholder is enrolled. Bank is participating in 3-D Secure protocol and will return the ACSUrl.	|
+|  N                | Cardholder Not Participating – Cardholder is not enrolled.		|
+|  U                | Unavailable. The DS or ACS is not available for authentication at the time of the request.		|
+
+### Signature Verification Status
+
+| **Status Value**	| **Description**	|
+| -------------     | ----------------- |
+|  Y                | Signature of the PARes has been validated successfully.	|
+|  N                | PARes could not be validated.	|
+
+
 ### Rate Conditions
 
 | **Codes**	| **Description**			|
