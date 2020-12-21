@@ -169,6 +169,24 @@ is closed.
 | CardInfo/ValidityDate/Month   				| 1  		| String	| Expiration month (2 characters).			|
 | CardInfo/ValidityDate/Year   				| 1  		| String	| Expiration year (2 characters).			|
 | CardInfo/CVC   				| 1  		| String	| Credit card security code.			|
+| CardInfo/isVCC   				| 1  		| Boolean	| Indicates if the card information provided is from a Virtual Credit Card or not.			|
+| CardInfo/VirtualCreditCard   				| 0..1  		|		|  Extra information if the card is a virtual credit card.			|
+| CardInfo/VirtualCreditCard/VCCActivationDate   				| 1  		| String	| Date from when the card can be charged. Format: DD/MM/YYYY.	|
+| CardInfo/VirtualCreditCard/VCCDeactivationDate   				| 1  		| String	| Date from when the card will no longer be chargeable. Format: DD/MM/YYYY.	|
+| CardInfo/VirtualCreditCard/VCCCurrentBalance   				| 1  		| String	| The amount which can be charged to the card.	|
+| CardInfo/VirtualCreditCard/VCCCurrencyCode   				| 1  		| String	| The ISO currency code of the VCCCurrentBalance.	|
+| CardInfo/ThreeDomainSecurity   				| 0..1  		|		| 3DS data and transaction results.			|
+| CardInfo/ThreeDomainSecurity/ThreeDSVersion   | 1  		| String	| Three Domain Security version used.	|
+| CardInfo/ThreeDomainSecurity/DSTransactionID  | 0..1 		| String	| Unique transaction identifier assigned by the Directory Server (DS) to identify a single transaction.	|
+| CardInfo/ThreeDomainSecurity/XID              | 0..1 		| String	| Transaction identifier resulting from authentication processing.	|
+| CardInfo/ThreeDomainSecurity/ECI              | 1  		| String	| Electronic Commerce Indicator. See values allowed at [ECI codes](https://docs.travelgatex.com/legacy/hotel-suppliers/methods/messages/listsdata/).|
+| CardInfo/ThreeDomainSecurity/CAVV             | 0..1  		| String	| Cardholder Authentication Verification Value.	|
+| CardInfo/ThreeDomainSecurity/PARes            | 0..1  		| String	| Payer Authentication Response.	|
+| CardInfo/ThreeDomainSecurity/PAResStatus      | 0..1  		| String	| Payer Authentication Response status. See values allowed at [PARes Status](https://docs.travelgatex.com/legacy/hotel-suppliers/methods/messages/listsdata/).|
+| CardInfo/ThreeDomainSecurity/PARes            | 0..1  		| String	| Payer Authentication Response.	|
+| CardInfo/ThreeDomainSecurity/CardEnrolledStatus | 0..1  		| String	| Status of Authentication eligibility. See values allowed at [Card Enrollment Status](https://docs.travelgatex.com/legacy/hotel-suppliers/methods/messages/listsdata/).	|
+| CardInfo/ThreeDomainSecurity/SignatureStatus  | 0..1  		| String	| Transaction Signature status.	See values allowed at [Signature Verification Status](https://docs.travelgatex.com/legacy/hotel-suppliers/methods/messages/listsdata/).|
+| CardInfo/ThreeDomainSecurity/MerchantName     | 0..1  		| String	| Merchant name.	|
 | Rooms          				| 1      	|		| Rooms within this option (room list).			|
 | Rooms/Room    				| 1..n    	|		| Detail of room. 					|
 | @id      					| 1  		| String	| Room identifier.				|
