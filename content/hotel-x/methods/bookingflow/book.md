@@ -47,3 +47,97 @@ Please, bear in mind that the clientReference should be different for every test
 
 {{< graphiql-styles >}}
 {{% graphiql-script-tabs %}}
+
+
+
+## Payment Card
+
+The example of payment card input 
+``` json
+{
+			"cardType": "VI",
+			"holder": {
+				"name": "test_name",
+				"surname": "test_surname"
+			},
+			"number": "4874495143042809",
+			"CVC": "330",
+			"expire": {
+				"month": 9,
+				"year": 2028
+			},
+			"isVCC": true,
+			"virtualCreditCard": {
+				"activationDate": "2020-10-02",
+				"deactivationDate": "2021-01-02",
+				"currentBalance": 50.58,
+				"currencyCode": "EUR"
+			},
+			"threeDomainSecurity": {
+				"version": "1.0.1",
+				"DSTransactionID": "transaction 1",
+				"XID": "id123456",
+				"ECI": "05",
+				"CAVV": "CAVV",
+				"payerResponse": "base64xml response",
+				"payerResponseStatus": "AUTHENTICATION_SUCCESS",
+				"cardEnrolledStatus": "CARD_ENROLLED",
+				"merchantName": "test_name",
+				"signatureStatus": "SIGNATURE_NOT_VALIDATED"
+			}
+		}
+```
+isVCC, virtualCreditCard and threeDomainSecurity, are all optionals
+
+### isVCC
+
+This field is optional, *isVCC = true* does not have to be mandatory to send 3DS or Virtual Credit Card, because neither of them is mandatory
+
+### Strong Customer Authentication (3DS) 
+
+The possible values for the threeDomainSecurity fields
+
+#### Visa, American Express, Diners Club and JCB
+
+| **ECI Value** | **Description**                                                                                                                                                                       |
+| ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 05            | 3DS authentication was successful, transactions are secured by 3DS.                                                                                                                   |
+| 06            | Authentication was attempted but was not or could not be completed; possible reasons being either the card or its Issuing Bank has yet to participate in 3DS.                         |
+| 07            | 3DS authentication is either failed or could not be attempted; possible reasons being both card and Issuing Bank are not secured by 3DS, technical errors, or improper configuration. |
+
+#### MasterCard
+
+| **ECI Value** | **Description**                                                                                                                                                                                               |
+| ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 00            | 3DS authentication is either failed or could not be attempted; possible reasons being both card and Issuing Bank are not secured by 3DS, technical errors, or improper configuration.                         |
+| 01            | 3DS authentication was attempted but was not or could not be completed; possible reasons being either the card or its Issuing Bank has yet to participate in 3DS, or cardholder ran out of time to authorize. |
+| 02            | 3DS authentication is successful.                                                                                                                                                                             |
+
+### Payer Response Status
+
+| **Status Value**              | **Description**                                                  |
+| ----------------------------- | ---------------------------------------------------------------- |
+| AUTHENTICATION_SUCCESS        | Successful Authentication.                                       |
+| AUTHENTICATION_FAILED         | Failed Authentication.                                           |
+| AUTHENTICATION_INCOMPLETE     | Unable to complete Authentication.                               |
+| TRANSACTION_ATTEMPT_SUCCESS_A | Successful Attempts Transaction.                                 |
+| TRANSACTION_ATTEMPT_SUCCESS_B | You can proceed to authorisation using the information received. |
+| AUTHENTICATION_REJECTED       | Authentication Rejected.                                         |
+
+
+
+### Card Enrollment Status
+
+| **Status Value**  | **Description**                                                                                  |
+| ----------------- | ------------------------------------------------------------------------------------------------ |
+| CARD_ENROLLED     | Cardholder is enrolled. Bank is participating in 3-D Secure protocol and will return the ACSUrl. |
+| CARD_NOT_ENROLLED | Cardholder Not Participating – Cardholder is not enrolled.                                       |
+| CANT_AUTHENTICATE | Unavailable. The DS or ACS is not available for authentication at the time of the request.       |
+
+### Signature Verification Status
+
+| **Status Value**        | **Description**                                         |
+| ----------------------- | ------------------------------------------------------- |
+| SIGNATURE_VALIDATED     | Signature of the PARes has been validated successfully. |
+| SIGNATURE_NOT_VALIDATED | PARes could not be validated.                           |
+
