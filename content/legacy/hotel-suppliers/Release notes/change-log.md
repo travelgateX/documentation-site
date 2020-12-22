@@ -7,6 +7,21 @@ permalink = "/docs/hotel/change-log"
 weight = 1
 +++
 
+**Version 1.0.27:** Date 21/12/2020
+
+{{% release-notes-container type="a"%}}
+
+ * **Strong Customer Authentication (3DS).** 3DS data can now be included with a Payment Card in a reservation in reservations alongside payment card data. You can find new field "ThreeDomainService" specification in [Reservation]((/legacy/hotel-suppliers/methods/messages/reservation) request.
+
+{{% /release-notes-container %}}
+
+{{% release-notes-container type="a"%}}
+
+ * **Virtual Credit Cards (VCC).** Extra information about Virtual Credit Cards can now be included with a Payment Card in a reservation. You can find new field "VirtualCreditCard" specification in [Reservation]((/legacy/hotel-suppliers/methods/messages/reservation) request.
+
+{{% /release-notes-container %}}
+
+
 **Version 1.0.26:** Date 01/09/2020
 
 {{% release-notes-container type="c"%}}
