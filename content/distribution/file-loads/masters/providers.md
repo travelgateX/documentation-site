@@ -57,7 +57,7 @@ It is an incremental load, so bear in mind these considerations:
 | -----------  | ------------------- | ------------------ | -------- | ---------------|
 | 0     	     | Yes                 |	Yes               | string   | Provider code
 | 1     	     | Yes                 |	Yes               | string   | Provider name
-| 2     	     | Yes                 |	Yes               | boolean  | Indicatse if the provider is Direct or Third.<ul><li>**_true_** → Direct / Own provider</li><li>**_false_** → Third / External provider</li></ul>
+| 2     	     | Yes                 |	Yes               | boolean  | Indicate if the provider is Direct or Third.<ul><li>**_true_** → Direct / Own provider</li><li>**_false_** → Third / External provider</li></ul>
 
 </br>
 

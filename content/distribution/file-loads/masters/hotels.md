@@ -57,7 +57,15 @@ It is an incremental load, so bear in mind these considerations:
 
 ## Control Lines
 
-  xxxxxxxxxxxxxxx
+* Control lines allow us to determine how the content of the file has to be interpreted.
+
+* This type of lines do not contain data, they contain orders for the process and these orders take effect from the control line forward, so control lines should be placed at the begining of the file (and after any header).
+
+* Each control operation has to be given on a separate line (one line one control operation).
+
+| **Control**          | **Description**     |
+| -------------------  | ------------------- | 
+| **@CTRL:separator=** | 	With the control line **@CTRL:separator=** followed by a character or string it can be defined the fields separator to be used, overwriting the default one or any previous definition. The specified character or string cannot be used inside data because fields would be gathered in a wrong way. </br></br> *Example of line to set <code>#</code> as the fields separator: <code>@CTRL:separator=#</code>*.
 
 </br>
 

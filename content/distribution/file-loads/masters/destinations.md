@@ -134,8 +134,8 @@ It is an incremental load, so take in account these considerations:
 
 | **Control**          | **Description**     |
 | -------------------  | ------------------- | 
-| **@CTRL:separator=** | 	With the control line **@CTRL:separator=** followed by a character or string it can be defined the fields separator to be used, overwriting the default one or any previous definition. The specified character or string cannot be used inside data because fields would be gathered in a wrong way. *Example of line to set <code>#</code> as the fields separator: <code>@CTRL:separator=#</code>*.
-| **@CTRL:separatorlist=** | 	With the control line **@CTRL:separatorlist=** followed by a character or string it can be defined the separator to be used with list items, overwriting the default one or any previous definition. The specified character or string cannot be used inside list data because list items would be gathered in a wrong way. *Example of line to set <code>_</code> as the list items separator: <code>@CTRL:separatorlist=_</code>*.
+| **@CTRL:separator=** | 	With the control line **@CTRL:separator=** followed by a character or string it can be defined the fields separator to be used, overwriting the default one or any previous definition. The specified character or string cannot be used inside data because fields would be gathered in a wrong way. *Example of line to set <code>#</code> as the fields separator: <code>@CTRL:separator=#</code>*.|
+| **@CTRL:separatorlist=** |  With the control line **@CTRL:separatorlist=** followed by a character or string it can be defined the separator to be used with list items, overwriting the default one or any previous definition. The specified character or string cannot be used inside list data because list items would be gathered in a wrong way. *Example of line to set <code>_</code> as the list items separator: <code>@CTRL:separatorlist=_</code>*.|
 
 </br>
 

@@ -9,7 +9,7 @@ alwaysopen = false
 
 Distribution-X distinguishes up to 3 levels in which we can organize product distribution: in each of these levels we can establish a set of rules, or even inherit them.
 
-{{% alert theme="info" %}}The entire set of rules and their operation are described in the documentation for the Rules Management Extranet. Please check [Rules Management](./../extranet/rules).{{% /alert %}}
+{{% alert theme="info" %}}The entire set of rules and their operation are described in the documentation for the Rules Management Extranet. Please check [Rules Management](./../../extranet/rules).{{% /alert %}}
 
 ## Organization: 1st level
 
@@ -40,5 +40,5 @@ We have an optional third level, which is the office level: an agency can have o
 At the office level we can define some price rules and they mainly inherit the rules of the agency and organization in which it is included. Like agencies, offices within the same organization also share the organization's masters of entities and rules.
 
 
-![Distribution structure scheme](./../images/distribution_structure.png "Distribution structure scheme")
+![Distribution structure scheme](./../../images/distribution_structure.png "Distribution structure scheme")
 

@@ -34,6 +34,6 @@ This extranet allows us to access the entire set of rules that Distribution-X ca
 
 ## FTP loads
 
-Main method of loading master entities into Distribution-X system. There is a complete documentation of how each load file that must be created. Please check [Masters load](./../file-loads/masters).
+Main method of loading master entities into Distribution-X system. There is a complete documentation of how each load file that must be created. Please check [Masters load](./../../file-loads/masters).
 
-Some business rules can be also set and loaded using FTP loads. Please check [Rules load](./../file-loads/rules).
+Some business rules can be also set and loaded using FTP loads. Please check [Rules load](./../../file-loads/rules).

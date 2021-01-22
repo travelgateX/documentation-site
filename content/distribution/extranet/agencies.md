@@ -44,8 +44,8 @@ Once this agency is created, it will be created by default as deactivated. To se
 
 To see the agency in more detail, and to be able to edit its business rules, you must press the rules button in the column that will take you to the specific configuration of the Agency. You have different rules configuration by agency: 
 
-1. **Config:** [Configuration settings](/rules/configuration/_index.md).
-2. **Selling:** [Selling Pricing rules](/rules/selling-pricing-rules/_index.md).
-3. **General:** [General stop sales](/rules/general-stop-sales/_index.md).
-4. **Specific:** [Specific stop sales](/rules/specific-stop-sales/_index.md).
+1. **Config:** [Configuration settings](./../rules/configuration).
+2. **Selling:** [Selling Pricing rules](./../rules/selling-pricing-rules).
+3. **General:** [General stop sales](./../rules/general-stop-sales).
+4. **Specific:** [Specific stop sales](./../rules/specific-stop-sales).
 

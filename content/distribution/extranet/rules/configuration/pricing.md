@@ -33,7 +33,7 @@ This rule can only be set by ``agency``.
 
 ![Distribution pricing Add Base To Selling Pricing Rules](./../../../../images/web/distribution_web_pricing_addbase.jpg "Distribution pricing Add Base To Selling Pricing Rules")
 
-This rule is related to the *base commission-markup* and the result of applying the [Selling Pricing Rules](./../../selling-pricing-rules/_index.md). With this rule it can be defined if the base commission-markup has always to be included on the selling price calculation or not. There are two modes of operation:
+This rule is related to the *base commission-markup* and the result of applying the [Selling Pricing Rules](./../../selling-pricing-rules). With this rule it can be defined if the base commission-markup has always to be included on the selling price calculation or not. There are two modes of operation:
 
 * **Add always base to Selling Pricing Rules:** the base commission-markup will always be included on the selling price calculation, even if there are being also applied *Selling Pricing Rules* or not.
 
@@ -50,7 +50,7 @@ This rule can be set by `agency` or by `organization` on general settings: when 
 
 ![Distribution pricing Minimum Selling Pricing Rules](./../../../../images/web/distribution_web_pricing_minimum.jpg "Distribution pricing Minimum Selling Pricing Rules")
 
-This rule is related to the total commission-markup obtained as result of applying all the [Selling Pricing Rules](./../../selling-pricing-rules/_index.md). This rule is not related to the base commission-markup and has no effect on it neither contemplates its value.
+This rule is related to the total commission-markup obtained as result of applying all the [Selling Pricing Rules](./../../selling-pricing-rules). This rule is not related to the base commission-markup and has no effect on it neither contemplates its value.
 
 With this rule it can be set a minimum value related to the result of applying the Selling Pricing Rules and it can be selected one of two modes of operation:
 

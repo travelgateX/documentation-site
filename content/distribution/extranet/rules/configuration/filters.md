@@ -57,7 +57,7 @@ This rule can only be set by ``agency``.
 
 If this filter is set with a list of Room Rates (codes) then it is applied the following condition to any selling for the agency: if a selling contains exclusively room rates of the list then this selling will be returned on the response, but if a selling has any room rate (or all) that is not in the list then this selling is discarded.
 
-As there is no master of Room Rates on Distribution-X this rule does not have a selector. To enter a new Room Rate on the list just type its code and press enter. If this rule is no set with a value then the previous condition will not be applied. By default filters are not activated.
+As there is not master of Room Rates on Distribution-X this rule does not have a selector. To enter a new Room Rate on the list just type its code and press enter. If this rule is no set with a value then the previous condition will not be applied. By default filters are not activated.
 
 This rule can only be set by ``agency``.
 

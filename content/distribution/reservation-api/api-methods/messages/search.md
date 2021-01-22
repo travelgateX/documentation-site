@@ -151,15 +151,15 @@ This method allows us to search for reservations mainly based on date filters, r
 | providerPrice      		| 1  |[price node](#price-node)| Provider price information.
 | quoteProviderPrice        | 1  |[price node](#price-node)| Provider price at the quote/pre-booking step.
 | officeCode               	| 0,1| string | If returned then this will be the code of the office.
-| accessCodeHX              | 1  | string | Code of the access used in [Hotel-X](./../../../../hotel-x/_index.md) layer to access the provider.
-| hotelProvCodeHX           | 1  | string | Code of the hotel on the provider system (used by [Hotel-X](./../../../../hotel-x/_index.md)).
+| accessCodeHX              | 1  | string | Code of the access used in [Hotel-X](./../../../../../hotel-x) layer to access the provider.
+| hotelProvCodeHX           | 1  | string | Code of the hotel on the provider system (used by [Hotel-X](./../../../../../hotel-x)).
 | correlationID           	| 0,1| string | Correlation ID.
 | reservationError          | 0,1| string | If the reservation is not on a well finished status (reservation or cancellation) then we can have some textual information about the error that caused that not well finished status.
 | reservationWarnings      	| 0,1|list string| If returned then it contains a list of tgx locators of reservations that have had problems registering on the main system and that have been stored on an auxiliary system. This information is indepent from the searching dates (will be given for any dates range).
 | cancellationWarnings      | 0,1|[price node](#price-node)| If returned then it contains a list of tgx locators of cancellations that have had problems registering on the main system and that have been stored on an auxiliary system. This information is indepent from the searching dates (will be given for any dates range).
 | error		                | 0,1|	node  | If there has been any error executing the operation we can receive this node with information about that error. </br></br>*We can also receive errors with the http status.*
-| error/code      		    | 1  | string | Error code. Check error codes [here](../code-list/error-codes.md).
-| error/description 	    | 1  | string | Error description. Check error descriptions [here](../code-list/error-codes.md).
+| error/code      		    | 1  | string | Error code. Check error codes [here](./../../code-list/error-codes).
+| error/description 	    | 1  | string | Error description. Check error descriptions [here](./../../code-list/error-codes).
 
 </br>
 

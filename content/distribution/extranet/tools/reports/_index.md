@@ -14,7 +14,7 @@ We can generate as many reports as we want, but there is a restriction of one ev
 
 To download any of the reports, you have to use its button in the *Download* column.
 
-![Distribution Reports](./../../../../images/web/distribution_web_reports.jpg "Distribution Reports")
+![Distribution Reports](./../../../images/web/distribution_web_reports.jpg "Distribution Reports")
 
 
 {{%custom-children%}}

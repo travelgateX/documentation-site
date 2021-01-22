@@ -50,7 +50,7 @@ In summary, all buyers must be integrated with our Legacy API or with Hotel-X, s
 ![Distribution scheme](./../images/distribution_scheme2.png "Distribution scheme")
 
 
-## Distribution-X: it is a reservations storage
+## Distribution-X: it is a reservation storage
 
 The main objective of Distribution-X is to act as a distribution module, mainly establishing the selling prices of the product and for this reason it also stores the reservations. The product information is saved both with the received configuration from supplier, and also with the business rules with which the reservation (or cancellation) has been made. At this point it should be clear that the information stored in Distribution-X will be out of sync with the supplier if any modification is made directly to the supplier without using the TravelgateX reservation flow: if the reservation is modified directly in the supplier, the reservation stored in Distribution-X will not be updated automatically (no self-sync mechanism is included). What Distribution-X offers are basic functionalities to modify reservations (either manually through the web or for an application through an API) but also in these cases reservations are modified within the Distribution-X storage system and are not synchronized with the supplier. It is the responsibility of the Distribution-X customer to maintain synchronization between systems in the case of actions outside the normal reservation flow.
 
@@ -61,7 +61,7 @@ The main objective of Distribution-X is to act as a distribution module, mainly 
 
 Distribution-X is also a master entities storage (static information specific to the organization, such as meal plan codes, suppliers, hotels, ...) for the following reasons:
 
-* To support static information operations: All the information linked to the static information operations (list of hotels with basic information, list of meal plans, list of suppliers, etc.) is extracted directly from the master entities storage of Distribution-X so that: no queries or requests are made to suppliers or other external systems . It is a way of having information controlled without depending on other systems.
+* To support static information operations: All the information linked to the static information operations (list of hotels with basic information, list of meal plans, list of suppliers, etc.) is extracted directly from the master entities storage of Distribution-X so that: no queries or requests are made to suppliers or other external systems. It is a way of having information controlled without depending on other systems.
 
 * To support the Rules Management Extranet
 
