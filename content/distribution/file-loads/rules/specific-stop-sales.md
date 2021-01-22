@@ -83,7 +83,7 @@ It is an absolute load, so bear in mind these considerations:
 
 </br>
 
-##Data Line fields
+## Data Line fields
   
 | **Position** | **Mandatory Field** | **Subfield Position** | **Mandatory Data** | **Type**               | **Description/Value** |
 | -----------  | ------------------- | --------------------- | ------------------ | ---------------------- | ---------------------

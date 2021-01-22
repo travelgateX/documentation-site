@@ -8,8 +8,6 @@ alwaysopen = false
 isDirectory = false
 +++
 
-# General rules
-
 ## Considerations
 
 It is an absolute load, so bear in mind these considerations:
@@ -60,7 +58,7 @@ The fields are separated by `#`. And if a field is a list of values it also has 
 </br>
 
 
-##Data Line fields
+## Data Line fields
   
 | **Position** | **Mandatory Field** | **Mandatory Data** | **Type**               | **Description/Value** |
 | -----------  | ------------------- | ------------------ | ---------------------- | ---------------------
@@ -73,8 +71,9 @@ The fields are separated by `#`. And if a field is a list of values it also has 
 
 ### Apendix: Rules table
 
-| **Rule Type** | **Values** | 
-| ------------- | ---------- | 
+
+| **Rule Type** | **Values** |
+| ------------- | ----------
 | COM    	    | Decimal value.               
 | DEF_MAR 	    | String value. It is the market.
 | SEL_REL	    | Integer value.
@@ -110,6 +109,8 @@ Each subfields has the following format:
 | 1                     | No                     | No                 | list                   | List of admitted currencies. *Example:* 1|*;GBP;USD <ul><li>This field has to start with "*;" and then the currencies have to be included with the separator ";" (it is not added to the end).</li><li>This subfield is mandatory with types 1 and 2.</li></ul>
 | 2                     | No                     | No                 | list                   | List of countries and their admitted currencies. *Example:* 2|*;GBP;USD|ES;EUR <ul><li>This field has to start with the country code folowed by "*;" and then the currencies have to be included with the separator ";" (it is not added to the end).</li><li>This subfield is optinal even with types 1 and 2.</li></ul>
 
+
+</br>
 
 **Examples of complete lines:**
 

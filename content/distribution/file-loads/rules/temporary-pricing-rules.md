@@ -8,8 +8,6 @@ alwaysopen = false
 isDirectory = false
 +++
 
-# Temporary Pricing Rules
-
 ## Considerations
 
 It is an absolute load, so bear in mind these considerations:
@@ -79,11 +77,11 @@ into the system to define the new `Temporary Pricing Rules`.
 | **@CTRL:separator=**	 | With the control line **@CTRL:separator=** followed by a character or string it can be defined the fields separator to be used, overwriting the default one or any previous definition. The specified character or string cannot be used inside data because fields would be gathered in a wrong way. </br></br>*Example of line to set `#` as the fields separator: `@CTRL:separator=#`*.  
 | **@CTRL:separatorsub=**  | With the control line **@CTRL:separatorsub=** followed by a character or string it can be defined the subfields separator to be used, overwriting the default one or any previous definition. The specified character or string cannot be used inside data because fields and subfields would be gathered in a wrong way. </br></br>*Example of line to set `-` as the subfields separator: `@CTRL:separatorsub=-`*.    
 | **@CTRL:separatorlist=** | With the control line** @CTRL:separatorlist=** followed by a character or string it can be defined the separator to be used with list items, overwriting the default one or any previous definition. The specified character or string cannot be used inside list data because list items would be gathered in a wrong way. </br></br>*Example of line to set `#` as the list items separator: `@CTRL:separatorlist=#`*.    
-| **@CTRL:remove**         | With the control line **@CTRL:remove** we order the process to remove all the specific stop sale rules that are currently on the system. See [Remove Data](remove-data). </br></br>*Example of line: @CTRL:remove*.
+| **@CTRL:remove**         | With the control line **@CTRL:remove** we order the process to remove all the specific stop sale rules that are currently on the system. See `Remove Data` section below. </br></br>*Example of line: @CTRL:remove*.
 
 </br>
 
-##Data Line fields
+## Data Line fields
   
 | **Position** | **Mandatory Field** | **Subfield Position** | **Mandatory Data** | **Type**               | **Description/Value** |
 | -----------  | ------------------- | --------------------- | ------------------ | ---------------------- | ---------------------
@@ -115,7 +113,6 @@ into the system to define the new `Temporary Pricing Rules`.
 | 14   	       | -                   | 0                     | Yes                | enumeration: 0,1,2,... | Defines if the rule is specific for a concret range of days of release from check-in or if it applies to any release. <ul><li>0 = No release. by default if this field does not exist or it is not defined.</li><li>1 = Range of days of release from check-in.</li></ul>
 | 14  	       | -                   | 1                     | -                  | integer                | Release: from (inclusive).
 | 14   	       | -                   | 2                     | -                  | integer                | Release: to (inclusive).
-
 | 15   	       | -                   | 0                     | Yes                | integer                | Defines if the rule is specific for a concret range of hours or if it applies to any hour. <ul><li>0 = All hours. by default if this field does not exist or it is not defined.</li><li>1 = Range of hours.</li></ul>
 | 15  	       | -                   | 1                     | -                  | hour                   | Hour: from.
 | 15   	       | -                   | 2                     | -                  | hour                   | Hour: to.
