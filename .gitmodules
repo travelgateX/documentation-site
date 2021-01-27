@@ -1,4 +1,4 @@
 [submodule "public"]
 	path = public
-	url = git@github.com:travelgateX/travelgatex.github.io.git
-	branch = master
+	url = https://github.com/travelgateX/travelgatex.github.io.git
+    branch = master
