@@ -11,6 +11,56 @@ date = 2019-09-19
 tags = ["products-changelog"]
 +++
 
+## 2021-02-09
+{{% release-notes-container type="c"%}}
+- [GraphQL Schema updated.](/travelgatex/release-notes/graphql-schema-changes/#2021-02-09)
+{{% /release-notes-container %}}
+
+## 2020-12-21
+{{% release-notes-container type="c"%}}
+- [GraphQL Schema updated.](/travelgatex/release-notes/graphql-schema-changes/#2020-12-21)
+{{% /release-notes-container %}}
+
+## 2020-12-03
+{{% release-notes-container type="c"%}}
+- [GraphQL Schema updated.](/travelgatex/release-notes/graphql-schema-changes/#2020-12-03)
+{{% /release-notes-container %}}
+
+## 2020-11-23
+{{% release-notes-container type="c"%}}
+- [GraphQL Schema updated.](/travelgatex/release-notes/graphql-schema-changes/#2020-11-23)
+{{% /release-notes-container %}}
+
+## 2020-08-31
+{{% release-notes-container type="c"%}}
+- [GraphQL Schema updated.](/travelgatex/release-notes/graphql-schema-changes/#2020-08-31)
+{{% /release-notes-container %}}
+
+## 2020-07-27
+{{% release-notes-container type="c"%}}
+- [GraphQL Schema updated.](/travelgatex/release-notes/graphql-schema-changes/#2020-07-27)
+{{% /release-notes-container %}}
+
+## 2020-05-28
+{{% release-notes-container type="c"%}}
+- [GraphQL Schema updated.](/travelgatex/release-notes/graphql-schema-changes/#2020-05-28)
+{{% /release-notes-container %}}
+
+## 2020-04-15
+{{% release-notes-container type="c"%}}
+- [GraphQL Schema updated.](/travelgatex/release-notes/graphql-schema-changes/#2019-08-29)
+{{% /release-notes-container %}}
+
+## 2020-03-31
+{{% release-notes-container type="c"%}}
+- [GraphQL Schema updated.](/travelgatex/release-notes/graphql-schema-changes/#2020-03-31)
+{{% /release-notes-container %}}
+
+## 2020-03-10
+{{% release-notes-container type="c"%}}
+- [GraphQL Schema updated.](/travelgatex/release-notes/graphql-schema-changes/#2020-03-10)
+{{% /release-notes-container %}}
+
 ## 2019-08-29
 {{% release-notes-container type="c"%}}
 - [GraphQL Schema updated.](/travelgatex/release-notes/graphql-schema-changes/#2019-08-29)
