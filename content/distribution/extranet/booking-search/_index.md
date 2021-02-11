@@ -40,9 +40,9 @@ Booking list allows you to filter by different conditions:
 </br>
 
 
-## Booking Search
+## Booking Read
 
-In order to obtain more details and information of a specific booking you can use the `Booking search` panel with one of the locators provided (Client, Provider or TGX).
+In order to obtain more details and information of a specific booking you can use the `Booking read` panel on the left with one of the locators (Client, Provider or TGX).
 
 For each booking you will find the following information:
 
