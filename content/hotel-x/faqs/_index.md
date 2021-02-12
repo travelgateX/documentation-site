@@ -462,17 +462,17 @@ Our platform allows to return GIATA codes in our Hotels Query response. First of
 
 All our content calls return the static information supported by the supplier. It is not a per hotel content, but the total amount of room codes, board codes, destination codes and category codes that may be returned by the supplier.
 
-**How it is calculated the deadline of the CancelPolicy and why it is different from what I recieve from the supplier?**
+**How it is calculated the CancelPolicy deadline and why it is different from what the supplier sent?**
 
-The deadline of the CancelPolicy is the final date in which no Cancellation fees will be applicated. Between this date and check-in date, Cancellation fees would be applicated.
+The deadline of the CancelPolicy is the final date in which no Cancellation fees will apply. After this date and until check in, Cancellation fees would apply to the booking.
 
-Some suppliers may return this date in their response. In this case, we'll simply return it in our deadline field. However, some suppliers don't return this date and we've to calculate it taking in mind the following input information:
-* Hours before: the hours left before the checkin date in which the client have time to cancel the book without fees penalties. This information is granted by the supplier.
-* Checkin date
-* Worse case scenario: there're countries with +13 UTC and others -13 UTC, so the worse case scenario would be that a person in +13 process a book in -13.
+In the case the Seller informs this date in their response, we’ll simply return it in our deadline field in the response. However, some Sellers don’t return this date in their response, so our logic is to calculate it is as follows: 
 
-With this in mind, we apply to the deadline date result the following calculation:
-deadline = checkin date - 26 - Hours Before
+* Hours before - number of hours left (before checkin date) for the client to cancel without incurring penalites. This information is passed by the Seller. 
+* Checkin date 
+* Worse case scenario: there are countries with +13 UTC and others -13 UTC, so the worse case scenario would be that a person in +13 performs a booking  -13.
+
+In this scenario,, we apply to the deadline date result the following logic: deadline = checkin date - 26 - Hours Before
 
 
 
