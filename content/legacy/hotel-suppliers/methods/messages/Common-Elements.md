@@ -95,7 +95,7 @@ This new tag will be used only for those suppliers returning a very large number
 ~~~xml
     <HotelBaseRS>
         <echoToken>TEST</echoToken>
-        <OperationImplemented>true</OperationImplemented>
+        <operationImplemented>true</operationImplemented>
         <ContinuationToken expectedRange = "4000">&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;ContinuationToken&gt;&lt;ContinuationToken&gt;&lt;Version&gt;2.0&lt;/Version&gt;&lt;Type&gt;Table&lt;/Type&gt;&lt;NextPartitionKey&gt;1!24!bG93Y29zdGhvbGlkYXlfWk1U&lt;/NextPartitionKey&gt;&lt;NextRowKey&gt;1!40!bG93Y29zdGhvbGlkYXlfWk1UXzBoNFIlMjNvcXBr&lt;/NextRowKey&gt;&lt;TargetLocation&gt;Primary&lt;/TargetLocation&gt;&lt;/ContinuationToken&gt;&lt;/ContinuationToken&gt;</ContinuationToken>
         <applicationErrors>
             <type>102</type>
@@ -125,7 +125,7 @@ This new tag will be used only for those suppliers returning a very large number
 | --------------------------------- | ---------- | -------- | -------------- |
 | HotelBaseRS                       | 1          |          | Root node.     |
 | echoToken                         | 0..1       | String   | Echo token to be returned in response (used for test purposes only). |
-| OperationImplemented              | 1          | Boolean  | Informs whether the method has been implemented by the supplier. |
+| operationImplemented              | 1          | Boolean  | Informs whether the method has been implemented by the supplier. |
 | ContinuationToken                 | 0..1       | String   | Internal Token to identify the next set of HotelList or the next set of RoomList. |
 | @expectedRange                    | 0..1       | Integer  | Number of hotels/rooms expected in HotelList/RoomList call. |
 | applicationErrors                 | 0..n       |          | Application errors reported by supplier. |
