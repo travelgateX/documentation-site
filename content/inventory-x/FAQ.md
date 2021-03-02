@@ -4,7 +4,7 @@ pagetitle = "FAQ"
 description = "Frequently asked questions"
 icon = "fa-question-circle"
 alwaysopen = false
-weight = 4
+weight = 5
 +++
 
 # Inventory-X FAQ

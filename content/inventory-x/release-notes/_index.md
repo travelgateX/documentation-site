@@ -3,7 +3,7 @@ title = "Release Notes"
 pagetitle = "Relese Notes"
 description = "Release Notes for Inventory-X"
 icon = "fa-map" 
-weight = 5
+weight = 6
 alwaysopen = false
 isDirectory = false
 +++
