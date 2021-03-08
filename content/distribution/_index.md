@@ -1,13 +1,13 @@
 +++
 title = "Distribution-X"
 pagetitle = "Distribution-X"
-description = "A comprehensive Business Rules Engine, right where you need it. When you need it!."
+description = "A comprehensive Business Rules Engine, right where you need it. When you need it!"
 weight = 5
 alwaysopen = false
 isDirectory = false
 +++
 
-Distribution-X is the solution that allows you, as a seller, to manage princing rules, filters and blacklists for each of your buyers connected trough TravelgateX. These rules can be applied at a channel, hotel or booking level, as well as applied to specific date ranges or markets, giving you the power to configure your company’s distribution strategy in a simple, user-friendly interface. Distribution-X rules will help your company maximise benefits while growing the overall sales by managing pricing and filters for each of your customers. Effortlessly, regardless if you have 1 or 1.000 customers. 
+Distribution-X is the solution that allows you, as a seller, to manage pricing rules, filters and blacklists for each of your buyers connected through TravelgateX. These rules can be applied at a channel, hotel or booking level, as well as applied to specific date ranges or markets, giving you the power to configure your company’s distribution strategy in a simple, user-friendly interface. Distribution-X rules will help your company maximise benefits while growing the overall sales by managing pricing and filters for each of your customers. Effortlessly, regardless if you have 1 or 1.000 customers. 
 
 * Define a general **commission/markup** or a specific one by hotel, meal plan, market, nationality, booking date, realease and more market conditions.
 * Work with **currencies**: block certain currencies by country or allow currency exchange.
