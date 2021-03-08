@@ -16,7 +16,7 @@ After selecting the client, the Channel Manager and the hotel you will be able t
 
 In the following panel you will be able to load all conditions for your derived rates.
 
-![Inventory-X Load Derived Rate](./../../../images/web/inventory_load_derivedrate.png "Inventory-X Load Derived Rate")
+![Inventory-X Load Derived Rate](./../../../../images/web/inventory_load_derivedrate.png "Inventory-X Load Derived Rate")
 
 </br>
 
@@ -37,6 +37,6 @@ In the following panel you will be able to load all conditions for your derived 
 
 {{% alert theme="error" %}} Please, remember that a Derived Rate shares the allotment with its base rate, that's why you can't load and specific allotment for a derived rate. {{% /alert %}}
 
-{{% alert theme="info" %}} Check our See [FAQ](./../../../FAQ/discount-supplement) for a complete example on how to create a full discount/supplement using Derived Rates. {{% /alert %}}
+{{% alert theme="info" %}} Check our See [FAQ](./../../faq/discount-supplement) for a complete example on how to create a full discount/supplement using Derived Rates. {{% /alert %}}
 
 {{%custom-children%}}

@@ -35,7 +35,7 @@ If you are a buyer and you want to connect with different Channel Managers you w
 
 If you are a Channel Manager or a supplier that wants to be integrated in a push connection, you have two options: 
 
-- Push API: Integrate with [Inventory-X API](/api-reference) and load your availability and prices for your different buyers trough a unique integration.
+- Push API: Integrate with [Inventory-X API](/inventory-x/api-reference) and load your availability and prices for your different buyers trough a unique integration.
 
-- Extranet: If you don't have an API and want to load your product manually, you can use our [Inventory-X extranet](/extranet). 
+- Extranet: If you don't have an API and want to load your product manually, you can use our [Inventory-X extranet](/inventory-x/extranet). 
 

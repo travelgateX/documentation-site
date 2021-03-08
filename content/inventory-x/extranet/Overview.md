@@ -26,6 +26,3 @@ Once you are logged in, you will be redirected to the home page or Landpage, whe
 {{% alert theme="info" %}}Inventory-X has different users permissions, so the functionalities will be shown in the extranet depending on your user type.{{% /alert %}}
 
 {{% alert theme="info" %}}Check our documentation to know how to work with the multiple functionalities in the extranet. You can also check our complementary [video tutorials](https://www.youtube.com/watch?v=r9_kMRU3RDs&list=PLQwI2TA5wZyaUQHldt7uzJabFOlW8irTh&index=1&ab_channel=TravelgateX).{{% /alert %}}
-
-
-

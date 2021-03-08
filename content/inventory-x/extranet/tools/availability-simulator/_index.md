@@ -2,7 +2,7 @@
 title = "Availability simulator"
 pagetitle = "Availability simulator"
 description = ""
-icon = "fa-file"
+icon = "fa-copy"
 weight = 2
 alwaysopen = false
 isDirectory=false

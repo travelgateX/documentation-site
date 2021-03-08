@@ -16,7 +16,7 @@ First, you will need to select the client and the Channel Manager in order to ke
 
 To load availability you should select `Availability`.
 
-![Inventory-X Manual Load Rate](./../../../images/web/inventory_manualload_rate.png "Inventory-X Manual Load Rate")
+![Inventory-X Manual Load Rate](./../../../../images/web/inventory_manualload_rate.png "Inventory-X Manual Load Rate")
 
 The new panel allows you to indicate the date range, rooms, allotment (number of rooms available) and conditions to be applied. Once you have introduced the data you want to apply, clicking ``Load Rate`` will save the changes. Doing this will overwrite the first loaded data for those dates, if any was loaded before.
 
@@ -38,7 +38,7 @@ The new panel allows you to indicate the date range, rooms, allotment (number of
 
 To load price you should select `Price` in the load type field.
 
-![Inventory-X Manual Load Rate](./../../../images/web/inventory_manualload_rate.png "Inventory-X Manual Load Rate")
+![Inventory-X Manual Load Rate](./../../../../images/web/inventory_manualload_rate.png "Inventory-X Manual Load Rate")
 
 This form allows you to load the 3 different types of price and extra passengers and meal plan supplements.
 
@@ -51,7 +51,7 @@ This form allows you to load the 3 different types of price and extra passengers
 
 Price per room allows you to load a price for the whole room and the option to add occupancy and meal plan supplements. 
 
-![Inventory-X Manual Load Rate](./../../../images/web/inventory_manualload_priceperroom.png "Inventory-X Manual Load Rate")
+![Inventory-X Manual Load Rate](./../../../../images/web/inventory_manualload_priceperroom.png "Inventory-X Manual Load Rate")
 
 All occupancies equal and below the room standard occupancy will have the price loaded in the `Room Price` field. If your room allows occupancies above the standard occupancy you can control the price for these extra passengers using the `Occupancy Supplements` option. You will be able to add different supplements by adult, child and baby and the supplement calculation can be done in multiple ways: 
 

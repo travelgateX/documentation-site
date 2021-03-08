@@ -1,8 +1,8 @@
 +++
-title = "Copy Tool"
-pagetitle = "Copy Tool"
-description = ""
-icon = "fa-file"
+title = "Delete product"
+pagetitle = "Delete product"
+description = "Delete the availability conditions and prices loaded in Inventory-X"
+icon = "fa-trash-alt"
 weight = 2
 alwaysopen = false
 isDirectory=false
