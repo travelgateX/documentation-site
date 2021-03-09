@@ -1,7 +1,7 @@
 +++
 title = "Overview"
 pagetitle = "Overview"
-description = "Invnetory-X Overview"
+description = "Inventory-X Overview"
 icon = "fa-info-circle"
 alwaysopen = false
 weight = 1
@@ -9,7 +9,7 @@ weight = 1
 
 # Inventory-X Overview
 
-Inventory-X permits Channel Managers and Product Distributors to push their product into a TravelgateX database, thus making it available for the TravelgateX buyers.
+Inventory-X allows Channel Managers and Product Distributors to push their product into a TravelgateX database, thus making it available for the TravelgateX buyers.
 
 ## The way Inventory-x works is the following
 
