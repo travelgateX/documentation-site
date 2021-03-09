@@ -27,7 +27,7 @@ Check how to load this information in [Masters load](file-loads/masters).
 
 Distribution-X provides two alternatives to check the booking information, you can either use the extranet or get the results with the [Reservation API](reservation-api).
 
-{{% alert theme="info" %}}Join us on [Slack](https://slack.travelgatex.com/) to discuss your integrations, or ask us questions via our [Help Center](https://knowledge.travelgatex.com/kb-tickets/new).{{% /alert %}}
+{{% alert theme="info" %}}Join us on [Slack](https://slack.travelgatex.com/) to discuss your connections, or ask us questions via our [HelpCentre](https://knowledge.travelgatex.com).{{% /alert %}}
 
 </br>
 
