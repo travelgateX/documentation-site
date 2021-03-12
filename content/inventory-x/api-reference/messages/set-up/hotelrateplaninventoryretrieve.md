@@ -9,7 +9,7 @@ isDirectory = false
 +++
 
 
-Providers will send a HotelRatePlanInventoryRetrieveRQ message to retrieve a list of hotels, rate plans and rooms and their configurations. TGX will return a list of all active rooms and configurations. ***Inactive rate plans and rooms will not be returned in these messages.***
+Providers send a HotelRatePlanInventoryRetrieveRQ message to retrieve a list of hotels, rate plans and rooms and their configurations. TGX then returns a list of all active rooms and configurations. ***Inactive rate plans and rooms will not be returned in these messages.***
 
 
 
@@ -48,10 +48,10 @@ Providers will send a HotelRatePlanInventoryRetrieveRQ message to retrieve a lis
 | ----------------------------- | ---------- | -------- | ------------------------------------------------------------- |
 | HotelRatePlan/request		| 1          | 		| Root Node							|
 | @PrimaryLangID		| 1   	     | String	| ISO Code Language						|
-| POS/Source/TPA_Extensions	| 0..1	     |	     	| Optional, empty only active inventory will be recieved.	|
+| POS/Source/TPA_Extensions	| 0..1	     |	     	| Optional, if empty only active inventory will be received.	|
 | Param       			| 1 	     | 		|								|
 | @key   			| 1   	     | String 	| onlyActive							|
-| @value			| 1  	     | String	| 1 - You will recieve all active inventory data. 0 - Active and deactivated inventory will be recieved. (Same case than wihout TPA_Extensions node.) |
+| @value			| 1  	     | String	| 1 - You will receive all active inventory data. 0 - Active and deactivated inventory will be received. (Same case as without TPA_Extensions node.) |
 | RatePlans/RatePlan/HotelRef	| 0..1       | 		| Contains hotel filter						|
 | @HotelCode			| 0..1	     | String	| If the hotel is not specified, it returns Rooms and Rates of all user’s hotels. |
 
