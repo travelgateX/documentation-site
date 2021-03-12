@@ -9,7 +9,7 @@ isDirectory = false
 +++
 
 
-Providers will send a HotelRatePlanInventoryNotifRQ message to push the Hotel SetUp information into the TGX database. TGX will process the data and respond with an error code if needed or success if everything is correct.
+Providers send a HotelRatePlanInventoryNotifRQ message to push the Hotel SetUp information into the TGX database. TGX then processes the data and responds with an error code if needed or success if everything is correct.
 
 
 
@@ -290,8 +290,8 @@ Providers will send a HotelRatePlanInventoryNotifRQ message to push the Hotel Se
 | @RatePlanNotifType			| 0..1	     | String	| New, Delta or Remove |
 | @RatePlanStatusType			    | 1		 | String   | Active or Deactivated.				|
 | @CurrencyCode				| 0..1	     | String	| ISO Currency (EUR). Not used for derived rates.	|
-| @Start      				    | 0..1 	 | Date	    | Start date of the rate booking window (Booking Dates for wich the rate will be available). |
-| @End        				    | 0..1	 | Date     | End date of the rate booking window (Booking Dates for wich the rate will be available). |
+| @Start      				    | 0..1 	 | Date	    | Start date of the rate booking window (Booking Dates for which the rate will be available). |
+| @End        				    | 0..1	 | Date     | End date of the rate booking window (Booking Dates for which the rate will be available). |
 | RatePlans/BookingRules		    | 0..1       |	    | Present if exists booking rules for the given RatePlan.|
 | BookingRules/BookingRule		    | 1..n       |	    | Booking rules.					|
 | @Code       				    | 0..1	 | String   | Code of the booking rule (empty if are viewships conditions). |
@@ -310,9 +310,9 @@ Providers will send a HotelRatePlanInventoryNotifRQ message to push the Hotel Se
 | BookingRule/Viewerships		    | 0..1       |	    | Present if exits viewerships conditions. 		|
 | BookingRule/Viewerships/Viewership	    | 1..n	 |	    |							|
 | BookingRule/Viewerships/Viewership/LocationCodes | 1   |	    | One node for each viewership condition.		|
-| @LocationCodesInclusive		    | 1 	 | Boolean  | When its true this rate can be request for next countryCode, when false can not be requested from this country. |
-| BookingRule/Viewerships/Viewership/LocationCodes/LocationCode | 0..1 |  | If is missing, applies to all countryCode againthe other viewership condition. |
-| @CountryCode				   | 1 		 | String   | Country ISO2 code from can or can not be requested this rate. |
+| @LocationCodesInclusive		    | 1 	 | Boolean  | When it's true, this rate can be request for next countryCode, when false cannot be requested for this country. |
+| BookingRule/Viewerships/Viewership/LocationCodes/LocationCode | 0..1 |  | If it's missing, applies to all countryCode againthe other viewership condition. |
+| @CountryCode				   | 1 		 | String   | Country ISO2 code from can or cannot be requested this rate. |
 | RatePlans/RatePlan/Rates		| 1	     |		|							|
 | RatePlans/RatePlan/Rates/Rate		| 1..n	     |		|							|
 | RatePlans/RatePlan/Rates/AdditionalGuestAmounts		| 1	     |		|							|
