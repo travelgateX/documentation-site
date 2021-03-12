@@ -8,9 +8,9 @@ alwaysopen = false
 isDirectory = false
 +++
 
-# Messages used in the Inventory-X API
+# Messages used in the Inventory API
 
-Inventory-X API's messages has been structured in three parts:
+Inventory's API messages have been structured in three parts:
 
 * **SetUp:** Messages to retrieve or notify the hotel, rate and room structure.
 * **Product Load:** Messages to load and read availability conditions and prices.
