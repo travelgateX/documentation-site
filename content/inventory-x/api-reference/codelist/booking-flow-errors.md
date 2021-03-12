@@ -9,7 +9,7 @@ isDirectory = false
 +++
 
 
-List of the possible errors that you could receive in the booking flow messages, that are HotelResNotif, CancelNotif or HotelResRetrieve.
+List of the possible errors you could receive in the booking flow messages that are HotelResNotif, CancelNotif or HotelResRetrieve.
 
 
 | **Error Code**	| **Error Description**						|
