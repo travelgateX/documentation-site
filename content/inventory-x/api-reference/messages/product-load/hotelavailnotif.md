@@ -10,7 +10,7 @@ isDirectory = false
 
 
 
-Providers will send a HotelAvailNotifRQ message to push availabilities for seller. TGX will process the data and respond with an error code if needed or success if everything is correct.
+Providers send a HotelAvailNotifRQ message to push availabilities for Seller. TGX will process the data and respond with an error code if needed or success if everything is correct.
 
 
 
@@ -123,7 +123,7 @@ Providers will send a HotelAvailNotifRQ message to push availabilities for selle
 | @Sat  				| 1	     | Boolean	| Indicates whether the AvailStatusMessage data applies to Saturdays. |
 | @Sun  				| 1          | Boolean	| Indicates whether the AvailStatusMessage data applies to Sundays. |
 | AvailStatusMessages/AvailStatusMessage/LengthsOfStay | 0..1 |	|							|
-| @ArrivalDateBased			| 0..1	     | Boolean	| When its true, the minimum and maximum stay is checked ONLY the first day of the availability, when false or not indicated, the minimum and maximum stay is checked all the availability days. If both values are needed two AvailStatusMessage must be send. |
+| @ArrivalDateBased			| 0..1	     | Boolean	| When it's true, the minimum and maximum stay is checked ONLY the first day of the availability, when false or not indicated, the minimum and maximum stay is checked all the availability days. If both values are needed two AvailStatusMessage must be sent. |
 | AvailStatusMessages/AvailStatusMessage/LengthsOfStay/LengthOfStay | 1..2 | |						|
 | @Time 				| 1	     | Integer	| Indicates the number of @TimeUnit for this stay.	|
 | @TimeUnit				| 1	     | String	| Day.							|
