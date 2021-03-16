@@ -1,13 +1,13 @@
 +++
 title = "Overview"
-pagetitle = "Insights-X Overview"
-description = "Insights-X Overview"
+pagetitle = "Insights Overview"
+description = "Insights Overview"
 icon = "fa-info-circle"
 weight = 1
 alwaysopen = false
 +++
 
-In order to analyze and **produce useful insights**, Insights-X extracts, loads and consolidates data from products like Hotel-X.  
+In order to analyze and **produce useful insights**, Insights extracts, loads and consolidates data from products like Hotel-X.  
 
 Once the data is consolidated in our Data warehouse, we can share data depending on each partner's relationship with TravelgateX:
 
@@ -21,7 +21,7 @@ Once the data is consolidated in our Data warehouse, we can share data depending
 
 
 ## Datasets
-Insights-X will allow access to [Datasets](/insights-x/datasets/) with structured data to perform any kind of analysis.
+Insights will allow access to [Datasets](/insights-x/datasets/) with structured data to perform any kind of analysis.
 
 We support different [Dataset publication formats](/insights-x/datasets/types-of-datasets/) which are documented [here](/insights-x/datasets/dataset-reference/)
 
@@ -30,7 +30,5 @@ If you don't have your own reporting tool, the easiest way to interact with Insi
 
 Find out more about TravelgateX free tools in [Dataset tooling](/insights-x/datasets/dataset-tooling/) 
 
-## API
-{{% alert theme="info" %}}Insights-X API, which allows to query insights using GraphqQL 'queries', is coming soon. 
-Please submit an issue to <a href="https://github.com/travelgateX/Issue-tracker">our issue tracker</a> if you require these API immediately.{{% /alert %}}
+
 
