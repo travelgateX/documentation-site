@@ -1,7 +1,7 @@
 +++
-title = "Hotel Suppliers API"
-pagetitle = "Hotel Suppliers API"
-description = "Read documentation on Hotel Suppliers API"
+title = "Hotel Pull Sellers API"
+pagetitle = "Hotel Pull Sellers API"
+description = "Read documentation on Hotel Pull Sellers API"
 icon = "fa-building" 
 weight = 7
 alwaysopen = false
