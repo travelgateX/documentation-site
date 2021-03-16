@@ -1,6 +1,6 @@
 +++
 title = "Datasets"
-pagetitle = "Insights-X Datasets"
+pagetitle = "Insights Datasets"
 description = "Understand Insights-X Datasets"
 icon = "fa-database" 
 weight = 3
