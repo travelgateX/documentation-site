@@ -1,6 +1,6 @@
 +++
-title = "Legacy API"
-pagetitle = "Legacy API"
+title = "Hotel Buyers API (legacy)"
+pagetitle = "Hotel Buyers API (legacy)"
 description = "Legacy system documentation"
 weight = 4
 alwaysopen = false
