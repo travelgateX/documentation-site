@@ -5,6 +5,7 @@ description = "NDC API for flight shopping and booking"
 weight = 10
 alwaysopen = false
 isDirectory = false
+hidden = true
 +++
 
 Is a new fast, easy, one-stop NDC 19.1 API for flight shopping and booking. 
