@@ -8,7 +8,7 @@ alwaysopen = false
 isDirectory=false
 +++
 
-In order to delete the availability conditions and prices loaded in Inventory-X for a specific hotel, you will need to go to the ‘Product’ tab and then select the ‘Delete Product’ option in the Inventory-X extranet.
+In order to delete the availability conditions and prices loaded in Inventory-X for a specific hotel, you will need to go to the ``Product`` tab and then select the ``Delete Product`` option in the Inventory-X extranet.
 
 ![Inventory-X Delete Product](./../../../images/web/inventory_deleteproduct1.png "Inventory-X Delete Product")
 
