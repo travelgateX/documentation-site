@@ -61,7 +61,7 @@ These mutations have the same settings configuration [**Click here to see config
 
     * Example : [Quote setting example](/hotel-x/quickstart#quote)
     
-Should you need to modify any fields of the database Settings, please contact with our support team.
+If you need to modify any fields of the database Settings, please contact with our support team.
 Please find an example of each type of the settings above: 
 
 [HotelX Settings](/hotel-x/reference/inputobjects/hotelsettingsinput/)
@@ -146,9 +146,11 @@ If we send a Query with the previous HotelX Settings, the configuration that wil
 As you can observe in GraphQL API Specifications, the input field "plugins" allows to insert plugins that will be executed during execution process. 
 
 ### Default Plugins
+
 Additionally, it is possible to load default plugins in our database. Currently, the only way to load these plugins in our database is contacting with our Customer Care team. These default plugins will be executed in all the Queries and Mutations specified above if no filters are specified. 
 
 ### Filter Plugins
+
 Besides, in the Query/Mutation Settings, there is a filter that allows to include or exclude the execution of any plugin. The way it works is similar to the Access Filter in Hotel-Search and it is only allowed specifying includes or excludes, not both. HotelX always reads Query/Mutation input plugins and then joins them to the loaded default plugins of our database, then applies the plugin filters.
 
 - On the one hand, if you specify plugins to be included, these plugins will be executed only if they are found in all the joined plugins (Query/Mutation input plugins in settings and Default plugins from database). 
@@ -156,3 +158,7 @@ Besides, in the Query/Mutation Settings, there is a filter that allows to includ
 - On the other hand, if you specify plugins be to excluded, these will be deleted from joined plugins and consequently not executed.
 
 The way of indicating which plugins we want to include/exclude is introducing Step, Type and Name of the plugin in the Query/Mutation.
+
+### Timeout
+
+The timeout is the timeout in milliseconds that will be applied to the connection with seller/sellers/supplier/s. If more than one supplier is requested, timeout will be applied to all suppliers and cut the connection with those suppliers that exceed this timeout. Travelgate will not close the connection with the client if this timeout is exceeded.
