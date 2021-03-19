@@ -15,11 +15,17 @@ isDirectory = false
 
 You can find it on our [`Schema`](https://api.travelgatex.com/) 
 
+**Is the timeout I've set in the settings, the time out in which travelgate will close the connection with us if it's exceeded?**
+
+No, setting's Ttimeout is the timeout in milliseconds that will be applied to the connection with seller/sellers/supplier/s. If more than one supplier is requested, timeout will be applied to all suppliers and cut the connection with those suppliers that exceed this timeout. Travelgate will not close the connection with the client if this timeout is exceeded.
+
 **Which are the languages allowed in HotelX?**
 
 The new aggregator allows every language, it will depend on each supplier.
 
 **In aggregator mode, is it possible to set a time out for each provider?**
+
+Bear in mind that timeout is the timeout in milliseconds that will be applied to the connection with seller/sellers/supplier/s. If more than one supplier is requested, timeout will be applied to all suppliers and cut the connection with those suppliers that exceed this timeout. Travelgate will not close the connection with the client if this timeout is exceeded.
 
 No, the time out will be applied to all providers, using the parameter setting: timeout.
 
@@ -61,6 +67,8 @@ Every time you activate a supplier, you receive an access code. This access code
 No, we use a test supplier (Hoteltest), so there is a limited number of hotels in the database to be used.
 
 **Which timeout should I send in each step?**
+
+Bear in mind that timeout is the timeout in milliseconds that will be applied to the connection with seller/sellers/supplier/s. If more than one supplier is requested, timeout will be applied to all suppliers and cut the connection with those suppliers that exceed this timeout. Travelgate will not close the connection with the client if this timeout is exceeded.
 
 Our system allows:
 * A maximum of 25000ms in Search.
