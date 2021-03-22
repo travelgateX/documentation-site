@@ -12,6 +12,10 @@ isDirectory=false
 
 First, you will need to select the client and the Channel Manager in order to keep on the process of loading conditions. Afterwards, you should indicate the hotel to which you want to load availability conditions or prices. Finally, in the `Choose your Load` field, select `Rates`. Once the rate is specified in the selectable, you will have to choose if you want to load prices or conditions using the `Load Type` field. 
 
+- [Load availability/allotment](#how-to-load-availability)
+- [Load prices](#how-to-load-prices)
+
+
 ## How to load Availability
 
 To load availability you should select `Availability`.
@@ -34,7 +38,7 @@ The new panel allows you to indicate the date range, rooms, allotment (number of
 * **Min Release:** Minimum number of days before the check-in date for which the product will be available to be booked.
 * **Max Release:** Maximum number of days before the check-in date for which the product will be available to be booked.
 
-### How to load Price
+### How to load Prices
 
 To load price you should select `Price` in the load type field.
 
