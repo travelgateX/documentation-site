@@ -8,6 +8,7 @@ alwaysopen = false
 isDirectory=false
 +++
 
+# SetUp
 
 The SetUp section enables you to configure the hotels you are going to buy from your connected channel managers or to create the main structure of your own product is you are going to use the extranet to load your static contracts. 
 
@@ -23,13 +24,15 @@ The configuration of the main structure used in Inventory is as follows:
 
 There are a series of hotels available that can have one or more rates. Each rate can also have one or more rooms.
 
-Optionally, you will be able to configure different discounts, supplement or night offers with the following:
+Optionally, you will be able to configurate different discounts, supplements or night offers with the following:
 
 * [Derived Rate (Discounts/Supplements)](#derived-rates)
 * [Free night offers](#free-night-offers)
 
 
 All these structures can be activated/deactivated or deleted. See [Activate/Deactivate/Delete](#activate/deactivate/delete) section for more details.
+
+In this page you can also find information about the [Wizard SetUp](#wizard-setup), created to help configure multiple hotels that share the same rates and rooms information.
 
 ## Hotel
 
@@ -119,6 +122,12 @@ The information needed to add a rate is listed below:
     * If an availability request is made between February 24 and February 28 (both days included) and if there is price and allotment loaded for this rate, there will be availability returned correctly in the search response.
     * If the availability request is made before February 24 or after February 29 there will be no availability because the request would not have been made in the indicated range.
 * **Markets:** This is a market filter. Clicking the ``+`` button on both Include or Exclude, allows you to add the country code of the market that you want to include or exclude. For example, if a rate includes the market "ES" and an availability search is made for the market "IT", there will not be availability returned, because "IT" is not an included market. On the other hand, if one market is excluded, for example "ES", there will be availability returned for all other markets except the Spanish. In case no market is indicated in these fields, no market filter will be applied.
+* **Payment Type:** Indicate the payment type to work with. If you don't have this field in your panel it means that the supplier or Channel Manager your are working with doesn´t allow credit payment and by default *"MerchantPayment"* is selected.
+    * **MerchantPayment:** The customer pays the client and the client will pay the provider.
+    * **DirectPayment:** The customer will have to use a credit card as a guarantee for the hotel and the payment will be done by the customer at check-in.
+    * **BookingDatePayment:** The client will use a credit card with the exact amount of the booking so they can pay the provider/hotel. The provider will charge the payment on the day of the reservation.
+    * **ArrivalDatePayment:** The client will use a credit card with the exact amount of the booking so they can pay the provider/hotel. The provider will charge the payment on the day of the check-in.
+* **Card Type:** List with different card types. Select the cards allowed between the client and the provider.
 * **Taxes:** Taxes that can be added to the rate. By default, there are no taxes in a rate, but they could be freely
 added once the checkbox of "Taxes" is checked: 
     * **Type:** the type that would take the value of the tax, it can be a % or an amount.
@@ -137,7 +146,7 @@ When a rate is added, it appears in the hotel node when you click the arrow that
 
 The next step is to add and configurate rooms to each rate. 
 
-### How to add a rate
+### How to add a room
 
 In order to add a new room, click in the ``Add Room`` button in the hotel row and a pop-up window appears where you will have to introduce the room information:
 
@@ -220,6 +229,49 @@ In the following image you will see the three action buttons to activate, deacti
 </br>
 
 In case there are any hotels, rates, derived rates or rooms deactivated, they will appear on a red background, as you can see in the previous image for hotel *"Just Sleep Jiaoxi"* 
+
+</br>
+
+# Wizard SetUp
+
+The Wizard Setup is a tool that is be really helpful when you have to create lots of the same rates and rooms for different hotels. 
+
+![Inventory-X Wizard SetUp](./../../../images/web/inventory_wizardsetup.png "Wizard Inventory-X")
+
+</br>
+
+You will be able to create hotels rates, rooms and cancellation policies and then create the relation among them. Once you have selected the client-channel relation, a Wizard SetUp view with four different sections will appear:
+
+![Inventory-X Wizard SetUp](./../../../images/web/inventory_wizardsetup1.png "Wizard Inventory-X")
+
+</br>
+
+The process is quite simple. In order to add a new hotel you will have to click the ``+`` button, situated at the bottom of the Hotels section. A row with a few fields that have to be completed will appear.
+
+Like in the SetUp tab, the field ``Name`` will be used for the names of hotels as you are introducing data. When you have found the hotel you want to add, it is necessary to click it. The fields ``Hotel Email``, ``CC Address`` and ``From Address`` might be changed if you want, however, it's not possible to leave any of them empty. You can add as many hotels as you want.
+
+Once there are hotels added you can set up rates. To do so, click the ``+`` button located at the bottom of the Rates section. A row will appear and you will need to complete the information regarding the rate. This information is the same that the one explained in the section [How to add a rate](#how-to-add-a-rate), except for the fields ``Active`` and ``All Dates``. All rates will be active and available always. If you want to change this fields, you will need to change it in the SetUp
+tab.
+
+![Inventory-X Wizard SetUp](./../../../images/web/inventory_wizardsetup2.png "Wizard Inventory-X")
+
+</br>
+
+Once the rate information is filled in, you can indicate which hotels this rate will apply to, as you can see in the previous screenshot.
+
+Once rates have been added you can keep on creating the cancellation policies. Click the blue button `+` located at the bottom of the Policies section. A new row will show up with a few fields regarding the cancellation policies that you would have to fill in. The functionality of the drop down multi selector will allow you to assign these cancellation policies to a specific Hotel – Rate pair that you want.
+
+![Inventory-X Wizard SetUp](./../../../images/web/inventory_wizardsetup3.png "Wizard Inventory-X")
+
+</br>
+
+Next step is to add the rooms that will be available for the different rates of each hotel. To do so, as mentioned before, you have to click the blue ``+`` button located at the bottom of the Rooms section and then you will be asked to fill in the room information. You should introduce the hotel name into the field *Name* and it will show you suggestions as you are introducing the name. Afterwards it will be necessary for you to introduce the standard occupancy, select the different occupancies allowed by the room (this will be indicated as follows: number of adult – number of children – number of babies) and the pairs Hotel – Rate that will have this room assigned to them.
+
+![Inventory-X Wizard SetUp](./../../../images/web/inventory_wizardsetup4.png "Wizard Inventory-X")
+
+</br>
+
+When this process of the creation is over, in order to save the configurations, you have to click the ``Save`` button. In case that there is an error, a message will appear at over the view indicating what has happened and keeping the data filled in. If there is no error and everything has worked correctly a pop-up window will appear, informing that everything is correct.
 
 
 {{%custom-children%}}

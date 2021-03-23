@@ -3,7 +3,7 @@ title = "API Reference"
 pagetitle = "API Reference"
 description = "Inventory-X API messages for sellers"
 icon = "fa-code" 
-weight = 2
+weight = 3
 alwaysopen = false
 isDirectory = false
 +++
