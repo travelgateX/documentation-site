@@ -5,6 +5,7 @@ description = "NDC API for flight shopping and booking"
 weight = 10
 alwaysopen = false
 isDirectory = false
+hidden = true
 +++
 
 Is a new fast, easy, one-stop NDC 19.1 API for flight shopping and booking. 
@@ -14,7 +15,7 @@ With Flight-X, you can connect to multiple NDC and non-NDC Suppliers and add bus
 There are no integration costs and you can integrate with hundreds of flights Suppliers.
 
 
-{{% alert theme="info" %}}Join us on [Slack](https://slack.travelgatex.com/) to discuss your integrations, or ask us questions via our [Jira Service desk](https://xmltravelgate.atlassian.net/servicedesk/customer/portal/7).{{% /alert %}}
+
 
 
 {{%custom-children%}}

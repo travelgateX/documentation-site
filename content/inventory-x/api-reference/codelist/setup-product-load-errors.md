@@ -9,7 +9,7 @@ isDirectory = false
 +++
 
 
-List of the possible errors that you could receive setting up and loading the product. That is in HotelRatePlanInventoryNotif, HotelRatePlanInventoryRetrieve, HotelAvailNotif, HotelAvailNotif, HotelRatePlanNotif or HotelRatePlanRetrieve.
+List of the possible errors you could receive setting up and loading the product (in HotelRatePlanInventoryNotif, HotelRatePlanInventoryRetrieve, HotelAvailNotif, HotelAvailNotif, HotelRatePlanNotif or HotelRatePlanRetrieve.)
 
 
 | **Error Code** | **Error Description**					                    |

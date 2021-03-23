@@ -4,6 +4,7 @@ pagetitle = "Introduction"
 description = "Introductory Guide"
 icon = "fa-info-circle"
 weight = 1
+hidden = true
 +++
 
 # XML Travelgate Introduction
@@ -16,5 +17,3 @@ range of Hotel Booking Channels (Sellers).
 
 The XML Travelgate Hub aims to be a single entry point for integrations of all types. It works on SOAP via http or https. A user/password is needed to access the web service.
 
-
-Please contact us on <sales@xmltravelgate.com> for more information.

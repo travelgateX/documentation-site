@@ -5,6 +5,8 @@ search = "Overview of product"
 sidebar = "mydoc_sidebar"
 icon = "fa-info-circle"
 weight = 1
+hidden = true
+
 +++
 
 **Overview of product**

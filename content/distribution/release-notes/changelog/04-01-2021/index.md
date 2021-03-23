@@ -11,7 +11,13 @@ date = 2019-09-19
 tags = ["products-changelog"]
 +++
 
+## 2021-02-16
+{{% release-notes-container type="a"%}}
+- Added new page to download reports for the booking list. Access is limited by user. Available at [Distribution-X extranet](https://travelb2b.xmltravelgate.com/) [Menu > Bookings > Booking List Reports].
+{{% /release-notes-container %}}
+
 ## 2020-01-08
 {{% release-notes-container type="a"%}}
 - Added new page to decrypt tokens of the booking flow. Access is limited by user. Available at [Distribution-X extranet](https://travelb2b.xmltravelgate.com/) [Menu > Tools > Decrypt Token].
 {{% /release-notes-container %}}
+

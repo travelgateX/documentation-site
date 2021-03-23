@@ -14,6 +14,30 @@ The GraphQL schema change log is a list of recent and upcoming changes to our Gr
 
 Check out this list of new releases and changes applied on the **TravelgateX GraphQL API**.
 
+## 2021-02-09
+
+🛑  Field `suitFolder` was removed from object type `AdminMutation`
+
+🛑  Enum value `FOLDER_DEFAULT` was removed from enum `FolderTemplate`
+
+🛑  Type `SuitFolderInput` was removed
+
+⚠️  Enum value `FOLDER_BUYER` was added to enum `FolderTemplate`
+
+⚠️  Enum value `FOLDER_SELLER` was added to enum `FolderTemplate`
+
+✅  Field `createFolder` was added to object type `AdminMutation`
+
+✅  Input field `trafficType` was added to input object type `StatsFilterInput`
+
+✅  Field `originMarket` was added to object type `AggregateSum`
+
+✅  Input field `isSeller` was added to input object type `UpdateGroupInput`
+
+✅  Input field `isBuyer` was added to input object type `UpdateGroupInput`
+
+✅  Type `CreateFolderInput` was added
+
 ## 2020-12-21
 
 ⚠️  Union member `Access` was added to Union type `Connection`

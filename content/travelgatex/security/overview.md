@@ -25,14 +25,14 @@ The correct way to send it to GraphQL server is via HTTP Header:
 {{% alert theme="warning" %}}All queries must include a HTTP Header with the API key inserted in the format: 
 * API key: `"Authorization: Apikey xxxxxxxxx"`
 
-If you wish to use test headers, insert `"Authorization":"Apikey 5067eb7a-6020-4621-79d3-1c5cd8c1d27b"`
+If you wish to use test headers, insert `"Authorization":"Apikey 8626cf56-e364-4fd1-4fe0-311e23ac6355"`
 {{% /alert %}}
  
 ```bash
 curl -X\
    POST\
    -H "Content-Type: application/json" \
-   -H "Authorization: Apikey 5067eb7a-6020-4621-79d3-1c5cd8c1d27b"  \
+   -H "Authorization: Apikey 8626cf56-e364-4fd1-4fe0-311e23ac6355"  \
    --data '{"query":"{searchStatusService{code description}}"}' \
    --compressed \
    https://api.travelgatex.com
@@ -40,7 +40,7 @@ curl -X\
 
 ### Creating an API Key
 
-{{% alert theme="info" %}}For development and testing purposes, please use the following Test API Key `5067eb7a-6020-4621-79d3-1c5cd8c1d27b`
+{{% alert theme="info" %}}For development and testing purposes, please use the following Test API Key `8626cf56-e364-4fd1-4fe0-311e23ac6355`
 {{% /alert %}}
 
 ### JSON Web Token (JWT)

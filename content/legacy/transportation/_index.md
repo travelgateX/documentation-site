@@ -5,6 +5,7 @@ description = "Read documentation on diferent Legacy APIs"
 icon = "fa-plane" 
 weight = 10
 alwaysopen = false
+hidden = true
 +++
 
-{{%custom-children%}}
+

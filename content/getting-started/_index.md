@@ -8,7 +8,7 @@ isDirectory=false
 +++
 
 **Welcome to TravelgateX!** 
-Learn the basics of using our APIs, and start making integrations quickly and securely.
+Learn the basics of using our APIs, and start building integrations quickly and securely.
 
 {{%custom-children%}}
 

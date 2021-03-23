@@ -1,7 +1,7 @@
 +++
 title = "SetUp"
 pagetitle = "Setup"
-description = "Configurate the SetUp and structure of your inventory"
+description = "Configure the SetUp and structure of your inventory"
 icon = "fa-hotel"
 weight = 1
 alwaysopen = false
@@ -10,13 +10,13 @@ isDirectory=false
 
 # SetUp
 
-The SetUp section will make you possible to configurate the hotels you are going to buy from your connected channel managers or to create the main structure of your own product is you are going to use the extranet to static contracts. 
+The SetUp section enables you to configure the hotels you are going to buy from your connected channel managers or to create the main structure of your own product is you are going to use the extranet to load your static contracts. 
 
-![Inventory-X SetUp](./../../../images/web/inventory_setup.png "Inventory-X SetUp")
+![Inventory SetUp](./../../../images/web/inventory_setup.png "Inventory SetUp")
 
 </br>
 
-The configuration of the main structure used in Inventory-X system is the following:
+The configuration of the main structure used in Inventory is as follows: 
 
 1. [Hotel](#hotel)
 2. [Rate](#rate)
@@ -36,38 +36,38 @@ In this page you can also find information about the [Wizard SetUp](#wizard-setu
 
 ## Hotel
 
-### How to check configurated hotels
+### How to view hotels already setup
 
-To visualize the hotels there are two ways of doing so. The first one is to visualize all the hotels for a relation of a ``Client – Supplier``, as in the previous image. On the other hand, you can know the suppliers or channel managers that contain a specific hotel. To filter way faster if you want to search directly for a certain hotel you will be able to check the checkbox of ``filter by hotels``, write down either the hotel code or name you want and complete it with one of the options that the autocomplete offers (the field left as blank would be filled automatically).
+There are two ways of checking hotels already configured: you can view all the hotels for a relation ``Client – Supplier``, as in the previous image. Alternatively, you can search  suppliers or channel managers that have a specific hotel. To filter is faster if you want to search for a particular hotel - tick the checkbox of ``filter by hotels``, type either the hotel code or name and complete it with one of the options that the autocomplete offers (the field left as blank would be filled automatically).
 
 
-![Inventory-X SetUp search](./../../../images/web/inventory_setup_search.png "Inventory-X SetUp search")
+![Inventory SetUp search](./../../../images/web/inventory_setup_search.png "Inventory SetUp search")
 
 </br>
 
-Click the button ``Filter Providers`` and in the drop-down menu a list of providers will appear, with only the ones that contains the selected hotel. Once you select one of those channels, only the configuration done for this hotel with this supplier will appear.
+Click the button ``Filter Providers`` and a list of providers that offer the selected hotel will appear in the drop-down menu. Once you select one of those channels, only the configuration done for this hotel with this supplier will appear.
 
 ### How to add a hotel
 
-To add a new hotel in your configuration you should click the `Add Hotel` button. A pop-up window will appear with information to fill in related to the hotel you are about to add:
+To add a new hotel in your configuration you should click the `Add Hotel` button. A pop-up window will appear with information to fill in relation to the hotel you are about to add:
 
-![Inventory-X SetUp Add Hotel](./../../../images/web/inventory_setup_addhotel.png "Inventory-X SetUp Add Hotel")
+![Inventory SetUp Add Hotel](./../../../images/web/inventory_setup_addhotel.png "Inventory SetUp Add Hotel")
 
 </br>
 
-* **Hotel name:** This autocomplete field will make suggestions while you are typing the hotel’s name. Inventory-X's system works with a master hotel data base where we store all the hotels used by our partners and their basic information. If the hotel you require is not available in the autocomplete field you can create it yourself clicking in the `Create Hotel` button. *See [How to create a new hotel](#how-to-create-a-new-hotel) section to know the basics on how to create a hotel.* Notice that if the hotel you want to add has already been added to this client-channel relation, it will not appear as a suggestion in the autocomplete field.
+* **Hotel name:** This autocomplete field makes suggestions while you are typing the hotel’s name. Inventory's system works with a master hotel database where we store all the basic information of the hotels setup by our Partners . If the hotel you require is not available in the autocomplete field you can create it yourself by clicking  the `Create Hotel` button. *See [How to create a new hotel](#how-to-create-a-new-hotel) section to learn the basics on how to create a hotel.* Notice that if the hotel you want to add has already been added to this client-channel relation, it will not appear as a suggestion in the autocomplete field.
 
-* **Hotel Email:** Hotel email configurated in Inventory-X's system. A notification email will be sent to when a booking or cancellation is made. If you don't want our system to send this notification to the hotel, you can uncheck the checkbox `Notify Booking`.
+* **Hotel Email:** Hotel email configurated in Inventory's system. This is the email address that will be used to notify the hotel when a booking or cancellation is made. If you don't want our system to send this notification to the hotel, you can uncheck the checkbox `Notify Booking`.
 
 * **CC Address:** CC email address to which a notification is sent when a booking or cancellation is made. If the checkbox `Use Client Email` is checked, by default, the client email is added. If you want to change the cc email address, you have to uncheck the checkbox and then modify the email address.
 
-* **From Address:** The notification email is always sent from a *no-reply* email address. Note that at the bottom of the email a message states that for any questions and queries, you should contact a specific email address. If the box is checked, the buyer email is added there by default. If you want to configure the email that will be indicated at the bottom of the notification email, uncheck the checkbox.
+* **From Address:** The notification email is always sent from a *no-reply* email address. Note that at the bottom of the email there is a message warning the reader that for any questions or queries, they should contact a specific email address. If the box is checked, the Buyer's email is added there by default. If you want to configure the email that will be indicated at the bottom of the notification email, uncheck the checkbox.
 
 Once added, the hotel will appear in a row in the SetUp menu, where you will be able to see its name and ID. You will be able to see this in a list among other hotels you have configured.
 
-In the following image you will be able to see an example of an email notification and the information it contains such as the locators, client, room, price, etc. This email is only **informative**. 
+The following image is an example of an email notification and the information it contains such as the locators, client, room, price, etc. This email is only **informative**. 
 
-![Inventory-X SetUp email notification](./../../../images/web/inventory_setup_email.png "Inventory-X SetUp email notification")
+![Inventory SetUp email notification](./../../../images/web/inventory_setup_email.png "Inventory SetUp email notification")
 
 </br>
 
@@ -76,9 +76,9 @@ In the following image you will be able to see an example of an email notificati
 
 ### How to create a new hotel
 
-If you don’t find the hotel you want to add in the autocomplete field you'll be given the option to create this hotel in our Data Base by clicking the button ``Create Hotel``. You will need to indicate the **hotel's** basic information in the following form: 
+If you cannotfind the hotel you want to add in the autocomplete field you'll be given the option to create this hotel in our DataBase by clicking the button ``Create Hotel``. You will need to indicate the **hotel's** basic information in the following form: 
 
-![Inventory-X SetUp Create Hotel](./../../../images/web/inventory_setup_createhotel.png "Inventory-X SetUp Create Hotel")
+![Inventory SetUp Create Hotel](./../../../images/web/inventory_setup_createhotel.png "Inventory SetUp Create Hotel")
 
 </br>
 
@@ -93,13 +93,13 @@ If you don’t find the hotel you want to add in the autocomplete field you'll b
 
 ## Rate
 
-Now that you have added the hotel it is time to add the rates and, afterwards, it will be necessary to add the rooms.
+Now that you have added the hotel it is time to add the rates and then the rooms.
 
 ### How to add a rate
 
 In order to add a new rate, click in the ``Add Rate`` button in the hotel row:
 
-![Inventory-X SetUp Add Rate](./../../../images/web/inventory_setup_addrate.png "Inventory-X SetUp Add Rate")
+![Inventory SetUp Add Rate](./../../../images/web/inventory_setup_addrate.png "Inventory SetUp Add Rate")
 
 </br>
 
@@ -118,10 +118,10 @@ The information needed to add a rate is listed below:
 * **Package:** Must be checked if the rate allows packages.
 * **Senior Rates:** You must select the correct value if the rate is for people over 55, 60 or 65 years of age. The default value is *Not selected*.
 * **Active:** Indicates whether or not the rate is active.
-* **All dates:** By default it is checked. If it is checked, the rate will be available always. If you uncheck the checkbox, two new fields will appear: From and To. These fields are the initial and final dates for when the rate will be available (dates when the availability request is done, not the stay dates). For example: if there is a date range from: `24/02/2020` to: `28/02/2020`:
+* **All dates:** By default it is checked. If it is checked, the rate will be available always. If you uncheck the checkbox, two new fields will appear: From and To. These fields are the initial and final dates for when the rate is available (dates when the availability request is done, not the stay dates). For example: if there is a date range from: `24/02/2020` to: `28/02/2020`:
     * If an availability request is made between February 24 and February 28 (both days included) and if there is price and allotment loaded for this rate, there will be availability returned correctly in the search response.
     * If the availability request is made before February 24 or after February 29 there will be no availability because the request would not have been made in the indicated range.
-* **Markets:** This is a market filter. Clicking the ``+`` button on both Include or Exclude, will allow you to add the country code of the market that you want to include or exclude. For example, if a rate includes the market "ES" and an availability search is made for the market "IT", there will not be availability returned, because "IT" is not an included market. On the other hand, if one market is excluded, for example "ES", there will be availability returned for all other markets except the Spanish. In case no market is indicated in these fields, no market filter will be applied.
+* **Markets:** This is a market filter. Clicking the ``+`` button on both Include or Exclude, allows you to add the country code of the market that you want to include or exclude. For example, if a rate includes the market "ES" and an availability search is made for the market "IT", there will not be availability returned, because "IT" is not an included market. On the other hand, if one market is excluded, for example "ES", there will be availability returned for all other markets except the Spanish. In case no market is indicated in these fields, no market filter will be applied.
 * **Payment Type:** Indicate the payment type to work with. If you don't have this field in your panel it means that the supplier or Channel Manager your are working with doesn´t allow credit payment and by default *"MerchantPayment"* is selected.
     * **MerchantPayment:** The customer pays the client and the client will pay the provider.
     * **DirectPayment:** The customer will have to use a credit card as a guarantee for the hotel and the payment will be done by the customer at check-in.
@@ -136,9 +136,9 @@ added once the checkbox of "Taxes" is checked:
     * **Per Night:** if checked, the tax will be applied for every night.
     * **Per Pax:** if checked, the tax will be applied for every pax.
     * **Add to final price:** if checked, the tax price will be included in the final price that the client will pay. If it is not checked, the tax will be informative to the final customer and should be paid for them at the hotel.
-* **Cancellation policy – Base:** Cancellation policies that can be applied to the rate. The rate will be non refundable if the checkbox ``No refund`` is checked. It is possible to apply a different type of cancellation policy by clicking the `+` button. You will be able to add as many policies as you need. All that is necessary is to indicate the days in advance before the arrival date, the type and the value of the policy. See [How to configurate different cancel policies](./../../faq/cancel-policies) section for some examples. 
+* **Cancellation policy – Base:** Cancellation policies that can be applied to the rate. The rate will be non refundable if the checkbox ``No refund`` is checked. It is possible to apply a different type of cancellation policy by clicking the `+` button. You can add as many policies as you need, all you need to do is indicate the days in advance before the arrival date, the type and the value of the policy. See [How to configurate different cancel policies](./../../faq/cancel-policies) section for some examples. 
 
-When a rate is added, it will appear in the hotel node when you click the arrow that appears on the left side of the hotel name.
+When a rate is added, it appears in the hotel node when you click the arrow that appears on the left side of the hotel name.
 
 </br>
 
@@ -148,15 +148,14 @@ The next step is to add and configurate rooms to each rate.
 
 ### How to add a room
 
-In order to add a new room, click in the ``Add Room`` button in the hotel row and a pop-up window will appear where you will have to introduce the room information:
+In order to add a new room, click in the ``Add Room`` button in the hotel row and a pop-up window appears where you will have to introduce the room information:
 
-![Inventory-X SetUp Add Room](./../../../images/web/inventory_setup_addroom.png "Inventory-X SetUp Add Room")
+![Inventory SetUp Add Room](./../../../images/web/inventory_setup_addroom.png "Inventory SetUp Add Room")
 
 </br>
 
-* **Code:** Room code. Must be unique per rate and it has to coincide with the code used by the channel.
-* **Name:** Room name. Autocomplete field that allows you you to select among the different rooms available. When you
-select one, the room code will be filled in automatically but you can change it. This field is just informative.
+* **Code:** Room code. Must be unique per rate and has to coincide with the code used by the channel.
+* **Name:** Room name. Autocomplete field that allows you to select among the different rooms available. When you select one, the room code will be filled in automatically but you can change it. This field is just informative.
 * **Standard Occupancy:** This field is useful to calculate the room amount when prices are loaded per passenger. Normally, it indicates the maximum number of adults (only adults) allowed for the room. 
 * **Occupancy only Adults:** Defines the occupancies of adults allowed for this room. (Dark Blue icons are adults).
 * **Occupancy Adults with Children:** Defines occupancies of adults and children allowed for this room. (Light Blue icons are children).
@@ -167,7 +166,7 @@ select one, the room code will be filled in automatically but you can change it.
 
 ## Derived Rates
 
-In Inventory-X you can create your own discounts or supplements using waht we call *Derived Rates*. These are rates that descend from non-derived rates and they may or may not modify some of the values of the base rate, such as cancellation policies or markets. The main use of the derived rates is to permit the loading of supplements or discounts for specific rooms from its base rate.
+In Inventory you can create your own discounts or supplements using what we call *Derived Rates*. These are rates that descend from non-derived rates and they may or may not modify some of the values of the base rate, such as cancellation policies or markets. The main use of the derived rates is to permit the loading of supplements or discounts for specific rooms from its base rate.
 
 To add a derived rate, first it is necessary to click the ``Add Derived Rate`` button for the same rate for which you want to create a derived rate and a pop-up window will appear for you to fill in the derived rate information.
 
@@ -180,15 +179,15 @@ The information needed to add a derived rate is listed below:
 * **Code:** Derived rate code. Must be unique per hotel. (it cannot coincide with any other rate or derived rate code in the same hotel).
 * **Name:** Derived rate name.
 * **Cancel policies from base rate:** Checkbox that will apply the cancel policies from the base rate to the derived rate depending on whether it is checked or not. If it is not checked, a form appears like the one seen previously when adding a rate, letting you add the cancel policies you may want for this derived rate.
-* **Markets from base rate:** Checkbox that will apply the markets from the base rate to the derived rate depending on whether it is checked or not. If it is not checked, a form appears like the one seen previously when adding a rate, letting you select any markets you may want included or excluded for this derived rate.
+* **Markets from base rate:** Checkbox that will apply the markets from the base rate to the derived rate depending on whether it is checked or not. If unchecked, a form appears like the one seen previously when adding a rate, letting you select any markets you may want included or excluded for this derived rate.
 * **Apply Package from base rate:** Checkbox that will apply the package conditions from the base rate depending on whether it is checked or not.
 * **Package:** Checkbox that informs if the amount is for a package depending on if it is checked or not.
 * **Active:** Checkbox to activate or deactivate the derived rate. If it is checked the derived rate is active.
-* **Apply Dates from base rate:** Checkbox used to apply the effective dates from the base rate. If it is not checked appears a form like the one explained previously when creating a rate.
-* **Board from base rate:** Checkbox used to apply the meal plan from the base rate. If it's not checked, the meal plan list will be enabled and you will be able to select the board of the derived rate.
+* **Apply Dates from base rate:** Checkbox used to apply the effective dates from the base rate. If unchecked, a form like the one explained previously when creating a rate will pop up.
+* **Board from base rate:** Checkbox used to apply the meal plan from the base rate. If unchecked, the meal plan list will be enabled and you will be able to select the board of the derived rate.
 * **Apply to all rooms:** Checkbox that will indicate whether the derived rate applies to all the rooms existing (or that will be added in the future) to the base rate. In case it is not selected, a list of rooms will appear, allowing you to select which rooms will be affected by the derived rate. It is mandatory to select at least one
-room in order to be able to save the derived rate. Bear in mind that if the derived rate only applies to a set of rooms, when a new room is added to the base rate, it will not have the derived rate’s conditions applied to it. To apply the conditions of the derived rate to said room, you will have to edit the derived rate.
-* **Apply Payments from Base Rate:** Checkbox that indicates if the *“Payment Type”* and *“Card Type"* are the same as the base rate. If so, it has to be selected. If not, you will be able to select this information from drop down menus, so that the derived rate can have its own payment types.
+room in order to be able to save the derived rate. Bear in mind that if the derived rate only applies to a set of rooms, when a new room is added to the base rate, it will not have the derived rate’s conditions applied to it. To apply the conditions of the derived rate to said room, you have to edit the derived rate.
+* **Apply Payments from Base Rate:** Checkbox that indicates if the *“Payment Type”* and *“Card Type"* are the same as the base rate. If so, it has to be selected. If not, you need to select this information from drop down menus, so that the derived rate can have its own payment types.
 * **Inform Base Rate:** Checkbox that indicates that the retrieve functions would return the name of the Base Rate instead of the derived rate’s name, if checked.
 * **Apply MealPlan Supplement from Base Rate:** Checkbox that allows the derived rate to have its own MealPlan Supplements. If checked, the derived rate would get the MealPlans of the base rate if any.
 
@@ -199,11 +198,11 @@ room in order to be able to save the derived rate. Bear in mind that if the deri
 
 ## Free Night Offers
 
-The Inventory-X extranet allows you to add free night offers to the rates and its rooms, indicating that in case the end customer stays a specific number of nights, they will get another number of nights for free. 
+The Inventory extranet allows you to add free night offers to the rates and its rooms, indicating that in case the end customer stays a specific number of nights, they will get another number of nights for free. 
 
-Firs step would be to click in the ``Add Offer`` button over the base rate for which you want to add the offer. A pop-up window will appear and then you will have to fill in the offer information.
+Firs step would be to click in the ``Add Offer`` button over the base rate for which you want to add the offer. A pop-up window appears for you to complete the following information.
 
-![Inventory-X SetUp Offer](./../../../images/web/inventory_setup_offer.png "Inventory-X SetUp Offer")
+![Inventory SetUp Offer](./../../../images/web/inventory_setup_offer.png "Inventory SetUp Offer")
 
 </br>
 
@@ -219,7 +218,7 @@ Firs step would be to click in the ``Add Offer`` button over the base rate for w
 
 ## Activate/Deactivate/Delete
 
-If a hotel, rate or room is deleted, it is erased in the system, so it is not possible to retrieve it. If you delete a hotel and you want to get it back you will have to set it up it again and it will be necessary to reload prices, allotment(number of rooms available), etc.
+If a hotel, rate or room is deleted, it is erased in the system, and it's not possible to retrieve it. The information is not recoverable, so if you deleted it by mistake, you will have to set it up it again and reload prices, allotment(number of rooms available), etc.
 
 If you deactivate a hotel, rate or room it will remain in the system but it will not be visible when doing an availability search request. To have the hotel, rate or room available again you will have to re-activate it.
 

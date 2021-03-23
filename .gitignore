@@ -6,3 +6,7 @@
 *.log
 
 package-lock.json
+/.idea/documentation-site.iml
+/.idea/modules.xml
+/.idea/vcs.xml
+/.idea/workspace.xml
