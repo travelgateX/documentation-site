@@ -10,7 +10,7 @@
 "gists": [
     {
         "n":"1 Room",
-        "g":"54d5fa6313c9eb80f916b8b1c63298c7",
+        "g":"9dbea409d3b01ed457754dd5f4d35ce5",
         "o":["graphiql"],
         "u":"xsolano",
         "ak":"8626cf56-e364-4fd1-4fe0-311e23ac6355"
@@ -33,9 +33,9 @@ Here you can find 2 examples of how to valuate an availability option, one for 1
 
 {{% graphiql-tabs %}}
 
-54d5fa6313c9eb80f916b8b1c63298c7
+9dbea409d3b01ed457754dd5f4d35ce5
 Please, bear in mind that you should place on _optionRefId_ field the value from the **_id_** field of the option you want to valuate from availability.
-/54d5fa6313c9eb80f916b8b1c63298c7
+/9dbea409d3b01ed457754dd5f4d35ce5
 
 {{% /graphiql-tabs %}}
 
