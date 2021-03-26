@@ -42,11 +42,6 @@ The aggregation mode currently only supports one mode "cheapest_price". You will
 |primaryKey|string|mandatory|It is the criteria used to aggregate, the value is a set of criteria separated by commas, the possible values are:<br>example: “hotel,supplier,room”|
 
 
-### Processor
-
-It's implemented as a [Processor plugin](/hotel-x/plugins/processor)
-
-
 ### Where to place
 
 Use this plugin by adding it to the [settings](https://docs.travelgatex.com/hotel-x/concepts/settings/) in your HotelX Search Query.

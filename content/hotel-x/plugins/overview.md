@@ -41,7 +41,7 @@ _Step_ is the minium container where _plugins_ are executed **sequentially**.
 
 Plugin types supported by [HotelX](/hotel-x/):
 
-* [Pre Step](../processor): First execution on every _step_.
+* [Pre Step]: First execution on every _step_.
 * [Hotel Map](../mapping): Hotel mapping codes.
 * [Board Map](../mapping): Board mapping codes.
 * [Room Map](../mapping): Room mapping codes.
@@ -49,7 +49,7 @@ Plugin types supported by [HotelX](/hotel-x/):
 * [Net Price](../net-price): Calculate the net price. 
 * [Markup](../markup): Markups to `supplier` price.
 * [Aggregation](../aggregation): Aggregate multiple `supplier` options.
-* [Post Step](../processor): Last execution on every _step_.
+* [Post Step]: Last execution on every _step_.
 
 
 ### Plugin Context Execution
@@ -65,15 +65,15 @@ With _context_ information developers can personalize _plugin_ features, more in
 
 ### Plugin Step Execution
 
-[HotelX](/hotel-x/) determine the order and [plugin types](#plugintypes) executed for each _step_.
+[HotelX](/hotel-x/) determines the order and [plugin types](#plugintypes) executed for each _step_.
 
 
 | | **search** | **quote** | **hotelBook** | **hotelCancel** |
 | --- | --- | --- | --- | --- |
-| _Request_ | [Pre Step](../processor)<br>[Hotel Map](../mapping)<br>[Post Step](../processor)|[Pre Step](../processor)<br>[Post Step](../processor)|[Pre Step](../processor)<br>[Post Step](../processor)|[Pre Step](../processor) <br>[Post Step](../processor)|[Post Step](../processor)|[Pre Step](../processor) <br>[Post Step](../processor)|
-| _Request Access_ | [Pre Step](../processor)<br>[Post Step](../processor) |[Pre Step](../processor) <br>[Post Step](../processor)|[Pre Step](../processor) <br>[Post Step](../processor)|[Pre Step](../processor) <br>[Post Step](../processor)|
-| _Response Option_ |[Pre Step](../processor)<br>[Board Map](../mapping)<br>[Room Map](../mapping)<br>[Rate Map](#../rate-map)<br>[Currency Conversion](../currency-conversion)<br>[Net Price](../net-price)<br>[CommissionX](../net-price#commissionX)<br>[Markup](../markup)<br>[Aggregation](../aggregation)<br>[Post Step](../processor)<br>[Safety Margin](../safety_margin)| [Pre Step](../processor)<br>[Board Map](../mapping)<br>[Room Map](../mapping)<br>[Currency Conversion](../currency-conversion)<br>[Net Price](../net-price)<br>[CommissionX](../net-price#commissionX)<br>[Markup](../markup)<br>[Post Step](../processor)|[Pre Step](../processor)<br>[Board Map](../mapping)<br>[Room Map](../mapping)<br>[Currency Conversion](../currency-conversion)<br>[Net Price](../net-price)<br>[CommissionX](../net-price#commissionX)<br>[Markup](../markup)<br>[Post Step](../processor) |[Pre Step](../processor)<br>[Board Map](../mapping)<br>[Room Map](../mapping)<br>[Currency Conversion](../currency-conversion)<br>[Net Price](../net-price)<br>[Post Step](../processor)|
-| _Response_ |[Pre Step](../processor)<br>[Aggregation](../aggregation)<br>[Post Step](../processor)|[Pre Step](../processor) <br>[Post Step](../processor)|[Pre Step](../processor) <br>[Post Step](../processor)|[Pre Step](../processor) <br>[Post Step](../processor)|
+| _Request_ | [Pre Step]<br>[Hotel Map](../mapping)<br>[Post Step]|[Pre Step]<br>[Post Step]|[Pre Step]<br>[Post Step]|[Pre Step] <br>[Post Step]|[Post Step]|[Pre Step] <br>[Post Step]|
+| _Request Access_ | [Pre Step]<br>[Post Step] |[Pre Step] <br>[Post Step]|[Pre Step] <br>[Post Step]|[Pre Step] <br>[Post Step]|
+| _Response Option_ |[Pre Step]<br>[Board Map](../mapping)<br>[Room Map](../mapping)<br>[Rate Map](#../rate-map)<br>[Currency Conversion](../currency-conversion)<br>[Net Price](../net-price)<br>[CommissionX](../net-price#commissionX)<br>[Markup](../markup)<br>[Aggregation](../aggregation)<br>[Post Step]<br>[Safety Margin](../safety_margin)| [Pre Step]<br>[Board Map](../mapping)<br>[Room Map](../mapping)<br>[Currency Conversion](../currency-conversion)<br>[Net Price](../net-price)<br>[CommissionX](../net-price#commissionX)<br>[Markup](../markup)<br>[Post Step]|[Pre Step]<br>[Board Map](../mapping)<br>[Room Map](../mapping)<br>[Currency Conversion](../currency-conversion)<br>[Net Price](../net-price)<br>[CommissionX](../net-price#commissionX)<br>[Markup](../markup)<br>[Post Step] |[Pre Step]<br>[Board Map](../mapping)<br>[Room Map](../mapping)<br>[Currency Conversion](../currency-conversion)<br>[Net Price](../net-price)<br>[Post Step]|
+| _Response_ |[Pre Step]<br>[Aggregation](../aggregation)<br>[Post Step]|[Pre Step] <br>[Post Step]|[Pre Step] <br>[Post Step]|[Pre Step] <br>[Post Step]|
 
 
 
