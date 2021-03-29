@@ -2,7 +2,7 @@
 title = "Distribution"
 pagetitle = "Distribution"
 description = "A comprehensive Business Rules Engine, right where you need it. When you need it!"
-weight = 5
+weight = 6
 alwaysopen = false
 isDirectory = false
 +++

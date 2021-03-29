@@ -2,7 +2,7 @@
 title = "Getting Started"
 pagetitle = "Getting Started with TravelgateX"
 description = ""
-weight = 1
+weight = 2
 alwaysopen = false
 isDirectory=false
 +++
