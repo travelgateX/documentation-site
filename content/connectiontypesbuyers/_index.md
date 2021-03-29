@@ -4,7 +4,7 @@ pagetitle = "Connection Types for Buyers"
 description = "Connection Types for Buyers"
 weight = 3
 alwaysopen = false
-aliases = ["/connectionstypesbuyers"]
+aliases = ["/connectiontypesbuyers"]
 isDirectory = false
 +++
 {{%custom-children%}}
