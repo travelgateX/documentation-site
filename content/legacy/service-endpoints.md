@@ -3,7 +3,7 @@ title = "Service Endpoints"
 pagetitle = "Service Endpoints"
 description = "Introduction to Service Endpoints"
 icon = "fa-dot-circle-o"
-weight = 2
+weight = 3
 +++
 
 # Service Endpoints (To be used for Testing Purposes only)

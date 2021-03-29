@@ -4,6 +4,7 @@ pagetitle = "Documents goals"
 description = "Documentation objectives"
 icon = "fa-bullseye"
 weight = 4
+hidden = true
 +++
 
 

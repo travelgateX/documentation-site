@@ -11,13 +11,13 @@ weight = 1
 
 {{% release-notes-container type="a"%}}
 
- * **Strong Customer Authentication (3DS).** 3DS data can now be included with a Payment Card in a reservation in reservations alongside payment card data. You can find new field "ThreeDomainService" specification in [Reservation]((/legacy/hotel-suppliers/methods/messages/reservation) request.
+ * **Strong Customer Authentication (3DS).** 3DS data can now be included with a Payment Card in a reservation in reservations alongside payment card data. You can find new field "ThreeDomainService" specification in [Reservation]((/hotelpullsellers/methods/messages/reservation) request.
 
 {{% /release-notes-container %}}
 
 {{% release-notes-container type="a"%}}
 
- * **Virtual Credit Cards (VCC).** Extra information about Virtual Credit Cards can now be included with a Payment Card in a reservation. You can find new field "VirtualCreditCard" specification in [Reservation]((/legacy/hotel-suppliers/methods/messages/reservation) request.
+ * **Virtual Credit Cards (VCC).** Extra information about Virtual Credit Cards can now be included with a Payment Card in a reservation. You can find new field "VirtualCreditCard" specification in [Reservation]((/hotelpullsellers/methods/messages/reservation) request.
 
 {{% /release-notes-container %}}
 
@@ -40,7 +40,7 @@ weight = 1
 | mobile | Rate applicable to options booked by mobile. |
 | warranty | Rate applicable to options with cancellation warranty. |
   
-See full list at [Lists of Data](/legacy/hotel-suppliers/methods/messages/listsdata/#rate-conditions) page.
+See full list at [Lists of Data](/hotelpullsellers/methods/messages/listsdata/#rate-conditions) page.
 
 {{% /release-notes-container %}}
 

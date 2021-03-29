@@ -85,7 +85,7 @@ The response object contains the status of the request and any possible errors a
 
 **optionsQuota:**
 
-This new tag will be used only for those suppliers returning a very large number of options, about 20.000+ in the same response. In order to avoid this, the client can set the numbers of options wanted by MealPlan, as long as the supplier returns it in this call (see [MetaData](/legacy/hotel-suppliers/methods/messages/static-methods/metadata/) *AllowsBusinessRules*). If the supplier has ImplementsBusinessRules = True, the client can then choose between differentbusiness rules to filter the options they are interested in (see in Avail). We also have established a system level limit, so that if the OptionsQuota set by the client is higher than the established limit we then use the smallest of those two values. 
+This new tag will be used only for those suppliers returning a very large number of options, about 20.000+ in the same response. In order to avoid this, the client can set the numbers of options wanted by MealPlan, as long as the supplier returns it in this call (see [MetaData](/hotelpullsellers/methods/messages/static-methods/metadata/) *AllowsBusinessRules*). If the supplier has ImplementsBusinessRules = True, the client can then choose between differentbusiness rules to filter the options they are interested in (see in Avail). We also have established a system level limit, so that if the OptionsQuota set by the client is higher than the established limit we then use the smallest of those two values. 
 
 
 
@@ -129,7 +129,7 @@ This new tag will be used only for those suppliers returning a very large number
 | ContinuationToken                 | 0..1       | String   | Internal Token to identify the next set of HotelList or the next set of RoomList. |
 | @expectedRange                    | 0..1       | Integer  | Number of hotels/rooms expected in HotelList/RoomList call. |
 | applicationErrors                 | 0..n       |          | Application errors reported by supplier. |
-| applicationErrors/type            | 1          | String   | [Error Type as specified by XML Travelgate](/legacy/hotel-suppliers/methods/messages/listsdata/#error-codes). |
+| applicationErrors/type            | 1          | String   | [Error Type as specified by XML Travelgate](/hotelpullsellers/methods/messages/listsdata/#error-codes). |
 | applicationErrors/code            | 1          | String   | Native error code reported by supplier. |
 | applicationErrors/description     | 1          | String   | Error description. |
 | auditData                         | 1          |          | Data sent & received in the supplier's native format.|
