@@ -4,6 +4,7 @@ pagetitle = "Anatomy of Request"
 description = "Introduction to Service Endpoints"
 icon = "fa-map"
 weight = 5
+hidden = true
 +++
 
 

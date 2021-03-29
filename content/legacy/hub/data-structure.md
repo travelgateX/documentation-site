@@ -17,10 +17,7 @@ requests and response objects, please choose from the API documentations below:
 
 
 -   [Hotel API](/docs/hotel/index)
--   [Transportation API](/docs/transportation/index)
--   [Car API](/docs/car/index)
--   [Transfers API](/docs/transfers/index)
--   [Tour Activity API](/docs/activities/index) 
+
 
 
 ## API Methods
