@@ -2,7 +2,7 @@
 title = "Alerts"
 pagetitle = "Be advised of any unusual performance"
 description = ""
-weight = 13
+weight = 9
 alwaysopen = false
 isDirectory = false
 +++
