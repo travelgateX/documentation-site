@@ -5,10 +5,10 @@ search = "Overview of product"
 sidebar = "mydoc_sidebar"
 icon = "fa-info-circle"
 weight = 1
-hidden = true
+
 
 +++
 
 **Overview of product**
 
-TravelgateX's API is a fast and transparent connectivity that allows clients to access content from TravelgateX's suppliers list. Currently there are more than 600 connectivities including tech partners, bedbanks and direct hotel chains connected to our system. Use this API to query, check for availability and book fares. It can be accessed by any third-party system such as tour-operator systems, B2C and B2B web applications or third-party applications. Scalability is not an issue. Our systems are used to heavy load and are monitored 24x7.
+This is our Hotel Buyers API LEGACY documentation to be used for reference only. If you would like to join Travelgate-X as a Buyer, please go to our Hotel-X Buyers API documentation for our latest API.
