@@ -39,4 +39,4 @@ The integration will have the following methods:
 
 The data structure will always have common elements in all objects as well as specific objects related to the operation
 
-You can find full specification of each method at the [Hotel API Methods](/legacy/hotel-suppliers/methods/) page.
+You can find full specification of each method at the [Hotel API Methods](/hotelpullsellers/methods/) page.

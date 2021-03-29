@@ -3,8 +3,7 @@ title = "Audience"
 pagetitle = "Audience"
 description = "Who is this document indented to?"
 icon = "fa-bullhorn"
-weight = 3
-hidden = true
+weight = 2
 +++
 
 This document is intended to a technical audience. Prior knowledge of XML is required. Although it is recommended to have prior knowledge of

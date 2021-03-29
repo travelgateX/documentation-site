@@ -9,7 +9,7 @@ weight = 4
 
 **What is the workflow for hotel reservation?**
 
-Our workflow has three mandatory steps: Availability (avail), Valuation and Reservation, always in this order. See [Booking Flow](/legacy/hotel-suppliers/how-to-guides/booking-flow/) page.
+Our workflow has three mandatory steps: Availability (avail), Valuation and Reservation, always in this order. See [Booking Flow](/hotelpullsellers/how-to-guides/booking-flow/) page.
 
 
 
@@ -32,7 +32,7 @@ Every option has a price and every price indicates the currency, the amount, if 
  - Commission = -1: the supplier has not supplied the sale price nor the commission. This information is obtained by signing a contract with the supplier.
  - Commission is greater than 0: X = % of the commission that is applied to the amount
 
-  Please click on [Avail](/legacy/hotel-suppliers/methods/messages/booking-flow-methods/avail/) for detailed examples.
+  Please click on [Avail](/hotelpullsellers/methods/messages/booking-flow-methods/avail/) for detailed examples.
 
 
 
