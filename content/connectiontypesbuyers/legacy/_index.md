@@ -1,7 +1,7 @@
 +++
-title = "Buyers API (legacy)"
-pagetitle = "Buyers API (legacy)"
-description = "Legacy system documentation"
+title = "Hotel Buyers API (legacy)"
+pagetitle = "Hotel Buyers API (legacy)"
+description = "Legacy API documentation"
 weight = 4
 alwaysopen = false
 isDirectory = false
