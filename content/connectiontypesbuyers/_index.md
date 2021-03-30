@@ -1,10 +1,10 @@
 +++
-title = "Connection Types for Buyers"
-pagetitle = "Connection Types for Buyers"
-description = "Connection Types for Buyers"
+title = "Connection Types - Buyers"
+pagetitle = "Connection Types - Buyers"
+description = "Connection Types - Buyers"
 weight = 3
 alwaysopen = false
-aliases = ["/connectionstypesbuyers"]
+aliases = ["/connectiontypesbuyers"]
 isDirectory = false
 +++
 {{%custom-children%}}
