@@ -3,7 +3,7 @@ title = "Copy Tool"
 pagetitle = "Copy Tool"
 description = "Copy configurations to make the SetUp process easier and faster"
 icon = "fa-copy"
-weight = 1
+weight = 3
 alwaysopen = false
 isDirectory=false
 +++

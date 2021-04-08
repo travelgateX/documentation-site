@@ -1,7 +1,7 @@
 +++
 title = "Reports"
 pagetitle = "Reports"
-description = ""
+description = "Generate CSV reports from loaded hotels and configurated blacklists"
 icon = "fa-file"
 weight = 2
 alwaysopen = false

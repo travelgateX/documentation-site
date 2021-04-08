@@ -3,7 +3,7 @@ title = "Delete product"
 pagetitle = "Delete product"
 description = "Delete the availability conditions and prices loaded in Inventory-X"
 icon = "fa-trash-alt"
-weight = 2
+weight = 4
 alwaysopen = false
 isDirectory=false
 +++
