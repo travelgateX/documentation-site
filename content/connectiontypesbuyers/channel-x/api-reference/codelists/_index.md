@@ -1,7 +1,7 @@
 +++
-title = "Code Lists"
-pagetitle = "Code Lists"
-description = "Static InventoryX information"
+title = "Code List"
+pagetitle = "Code List"
+description = "List of Channel-X codes"
 weight = 2
 icon="fa-book"
 alwaysopen = false

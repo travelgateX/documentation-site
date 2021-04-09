@@ -1,30 +1,44 @@
 +++
-title = "Documentation"
-pagetitle = "ChannelX API"
-description = "Guide to ChannelX"
+title = "API reference"
+pagetitle = "Channel-X API"
+description = "Channel-X API messages for buyers"
 weight = 2
 icon="fa-code"
 alwaysopen = false
 isDirectory = false
 +++
-The API described in this document is used to transmit rate, availability and inventory, data between ChannelX and a partner system. A full implementation of this API requires that the partner system provides a service endpoint that accepts requests from ChannelX of the following types: *HotelRatePlanInventoryNotif*, *HotelRatePlanNotif*, *HotelAvailNotif*.
+The API described in this document is used to transmit rate, availability and inventory, data between Channel-X and a partner system. A full implementation of this API requires that the partner system provides a service endpoint that accepts requests from Channel-X of the following types: *HotelRatePlanInventoryNotif*, *HotelRatePlanNotif*, *HotelAvailNotif*.
 
 {{%custom-children%}}
 
 ## Global Details
-### Protocol and Headers
-All requests are expected to be standard HTTP POST requests in which the POST body is the request XML and the Content-Type header is set to "application/xml".
 
-**Authentication**
+In this section you can find the three methods you need to implement to receive from Channel-X and all its specifications:
+
+* [HotelRatePlanInventoryNotif](#hotelrateplaninventorynotif)
+* [HotelRatePlanNotif](#hotelrateplannotif)
+* [HotelAvailNotif](#hotelavailnotif)
+
+### Protocol and Headers
+All requests are expected to be standard HTTP POST requests in which the POST body is the request XML and the Content-Type header is set to ``"application/xml"``.
+
+### Authentication
+
 Requests will be sent with a authentication encoded in *Base-64*. Credentials may be found in **Authorization** header tag, with value **Basic (encoded credentials)** as follows:\
 `Authorization: Basic aHR0cHM6Ly93d3cueW91dHViZS5jb20vd2F0Y2g/dj1RWWg2bVlJSkcyWQ==`
+
 ### Summary 
+
 BR = Only used for: 'Basic Rates'\
 DV = Only used for: 'Derived Rates'\
 N = Names allowed for a specific element
 
+</br>
+
+
 ## HotelRatePlanInventoryNotif
-Sets up inventory information that should be followed by the structure Hotel > Rate > Room.
+
+The ``HotelRatePlanInventoryNotif`` message contains information about the inventory setup information that should be followed by the structure: Hotel > Rate > Room.
 
 ```xml
 <HotelRatePlanInventoryNotif xmlns = "http://schemas.xmltravelgate.com/hubpush/provider/2012/10">
@@ -290,7 +304,12 @@ Sets up inventory information that should be followed by the structure Hotel > R
 | @key        			            | 1  		  | String	  | *N*: HotelNotifType						                                       |
 | @value      			            | 1  		  | String	  | *N*: New, Remove. To create a hotel or remove all the hotel setup.   |
 
+
+
 ## HotelRatePlanNotif 
+
+The ``HotelRatePlanNotif`` message contains information about rate prices.
+
 ```xml
 <HotelRatePlanNotif>
     <request>
@@ -412,7 +431,10 @@ Sets up inventory information that should be followed by the structure Hotel > R
 | @InvCode				              | 1	      | Integer	 | Sellable Product Code				|
 | @InvType				              | 1	      | Integer	 | *N*: ROOM. Sellable product type.				|
 
+
 ## HotelAvailNotif
+
+The ``HotelAvailNotif`` message contains information about rate availability and allotment conditions.
 
 ```xml 
 <HotelAvailNotif>
@@ -470,7 +492,10 @@ Sets up inventory information that should be followed by the structure Hotel > R
 | @MinAdvancedBookingOffset		  | 0..1	  | Integer	| Minimum number of days before the check-in date to be available to be booked. This restriction is usually used to offer discounts on early bookings. When value is *-1*, condition should be deleted from the system.                             |
 | @MaxAdvancedBookingOffset		  | 0..1	  | Integer	| Maximum number of days before the check-in date to be available to be booked. This restriction is usually used to offer last minute discounts on unsold inventory. When value is *-1*, condition should be deleted from the system.               |
 | @SellThroughOpenIndicator		  | 0..1	  | Boolean	| *BR*. Room-RatePlan can be sold with no limit if @Status is Open  |
-## Responses
+
+
+## Response messages
+
 Each request should provide a response for the same type of element that has been sent. For example, if a *HotelRatePlanNotif* request is received, a *HotelRatePlanNotif* response should be sent and so on.
 
 | **Possible combination Elements regarding Request** |
@@ -479,8 +504,12 @@ Each request should provide a response for the same type of element that has bee
 | HotelRatePlanNotifResponse / HotelRatePlanNotifResult  |
 | HotelRatePlanInventoryNotifResponse / HotelRatePlanInventoryNotifResult  |
 
-#### Success
+</br>
+
+### Success
+
 For all successful requests is expected to be returned a *Success* element in the response. On a *HotelAvailNotif* request it should be looking like the following:
+
 ```xml
 <HotelAvailNotifResponse xmlns = "http://schemas.xmltravelgate.com/hubpush/provider/2012/10">
     <HotelAvailNotifResult>
@@ -489,8 +518,12 @@ For all successful requests is expected to be returned a *Success* element in th
 </HotelAvailNotifResponse>
 ```
 
-#### Error
+</br>
+
+### Error
+
 On the other hand, when request provides any error, the response should look like:
+
 ```xml
 <HotelAvailNotifResponse xmlns = "http://schemas.xmltravelgate.com/hubpush/provider/2012/10">
     <HotelAvailNotifResult>
@@ -500,6 +533,7 @@ On the other hand, when request provides any error, the response should look lik
     </HotelAvailNotifResult>
 </HotelAvailNotifResponse>
 ```
+
 | **Element**	                  | **Rel** | **Type** | **Description**					                                             |
 | :---------------------------- | :-----: | :------: | --------------------------------------------------------------------- |
 | Errors | 1 | | |

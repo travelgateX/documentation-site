@@ -191,33 +191,24 @@ Providers will send a HotelRatePlanNotifRQ message to push Rate Plans to sellers
 
 
 
+</br>
+
 # ***Important information:***
 
-
--   The prices under the standard occupancy are ALWAYS loaded with **BaseByGuestAmts**.
--   Children and babies are not allowed in BaseByGuestAmts. Children and babies must always be defined in AdditionalGuestAmounts.
--   The possible Type values in the AdditionalGuestAmount tag are **Exclusive** and **not specified**.
-
-   > -   If there's **no value specified** then the price is a relative and it's added to the price of the current pax.
-   > -   If the value is **"Exclusive"** then the price is absolute and it's the total price of the current pax.
-
-- If NumberOfGuests is not specified in tag BaseByGuestAmt then Type="25" (price per room) or Type="14" (price per occupancy) must be specified. If Type="25" only one tag BaseByGuestAmt is allowed.
-
-
-- If the price is per room then all AdditionalGuestAmount must be
-    relative.
-
-
-- If the price is per occupancy then Type should be 14 and Code should
-be specified. 
-
-The occupancy code is defined by AdultNumber-ChildNumber-InfantNumber, for an occupancy of 2 adults, 1 child and 0 babies should be "2-1-0".
-
--   In the examples, the room uses are specified using = AdultNumber - ChildNumber - InfantNumber.
+* You must always load only *one* price type per message/notif. If you send different price type in the same message, our system will only use and load one with the following criteria: price by occupancy, price by guest/standard occupancy, price per room. If you send different price type for the same day in different messages, only the newest one would be loaded.
+* The prices under the standard occupancy are ALWAYS loaded with **BaseByGuestAmts**.
+* Children and babies are not allowed in ``BaseByGuestAmts``. Children and babies must always be defined in AdditionalGuestAmounts.
+* The possible Type values in the AdditionalGuestAmount tag are **Exclusive** and **not specified**.
+    * If there's **no value specified** then the price is a relative and it's added to the price of the current pax.
+    * If the value is **"Exclusive"** then the price is absolute and it's the total price of the current pax.
+* If NumberOfGuests is not specified in tag ``BaseByGuestAmt`` then ``Type="25"`` (price per room) or ``Type="14"`` (price per occupancy) must be specified. If ``Type="25"`` only one tag ``BaseByGuestAmt`` is allowed.
+* If the price is per room then all ``AdditionalGuestAmount`` must be relative.
+* If the price is per occupancy then ``Type`` should be ``14`` and ``Code`` should be specified. 
+* The occupancy code is defined by AdultNumber-ChildNumber-InfantNumber, for an occupancy of 2 adults, 1 child and 0 babies should be "2-1-0". In the examples, the room uses are specified using = AdultNumber - ChildNumber - InfantNumber.
 
 
 
-## **Notify amounts by Guests:**
+## **Notify amounts by Guests (Standard Occupancy):**
 
 Case 1:
 
