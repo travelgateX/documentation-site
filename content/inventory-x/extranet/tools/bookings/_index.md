@@ -2,7 +2,7 @@
 title = "Booking List & Price Details"
 pagetitle = "Booking List & Price Details"
 description = "Retrieve booking information from a specific hotel."
-icon = "fa-money-check-alt"
+icon = "fa-money-check"
 weight = 6
 alwaysopen = false
 isDirectory=false
