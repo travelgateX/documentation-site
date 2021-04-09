@@ -7,12 +7,12 @@ icon="fa-money"
 alwaysopen = false
 isDirectory = false
 +++
-Three price charging types are allowed: *price per Room*, *price per Pax* and *price per Occupancy*. When more than one price is charged for the same day, the lowest price will be returned as available price.
+Three price charging types are allowed: *price per Room*, *price per Pax* and *price per Occupancy*. When more than one price is charged for the same day, the newest price will be returned as available price.
 
 **Price per Room**\
 When a price is charged per Room means that all occupancies allowed in the room will have the same price. If an `AdditionalGuestAmount` are charged for occupancies over the standard occupancy, they will be applied.
 
-**Price per Pax**\
+**Price per Pax/Guest (Standard Occupancy)**\
 When a price is charged per Pax means that the price is for the number of guests specified.
 
 If `NumberOfGuests` is equal or under the standard occupancy, the price returned will have to be the same as the price charged. If `NumberOfGuests` is over the Standard Occupancy, the price is calculated from the Standard Occupancy price and the `AdditionalGuestAmount` charged.
