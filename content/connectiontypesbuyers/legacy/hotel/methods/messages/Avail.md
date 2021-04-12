@@ -688,6 +688,6 @@ can enjoy until 2 days of skipass in between the check in and check out.
 
 If the supplier is returning fees, we need to know whether those have to be paid when the consumer gets to the hotel or beforehand. Keep in mind the type of payment for the option and that payment of the fees is MANDATORY:
 
-* MerchantPay/CardBookingPay/CardChekInPay: if includedPriceOption = True the amount of the fee is already included in the price and is paid at the time of booking. If, however, includedPriceOption = False, said fee have to be paid in the hotel.
+* MerchantPay/CardBookingPay/CardCheckInPay: if includedPriceOption = True the amount of the fee is already included in the price and is paid at the time of booking. If, however, includedPriceOption = False, said fee have to be paid in the hotel.
 
 * LaterPay: In both cases if includedPriceOption = True/False,  the amount of the fee has to be paid in the hotel, as the type of payment is LaterPay. The difference is that if  includedPriceOption = False the client would have to sum the amount on their end. This is done if the supplier does not include it. This way, the client can show the fee on their web separated from the option price, and it’s now the client’s own decision how they should treat it.
