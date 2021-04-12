@@ -124,7 +124,7 @@ We use a standard ISO - 3166_1_alfa_2.
 |  MerchantPay      	| The payment is managed by the supplier.				|
 |  LaterPay      	| The payment is managed by the hotel. The customer will use a credit-card as a guarantee for the hotel and the payment will be completed at check in.		|
 |  CardBookingPay      	| The payment is managed by the supplier. The payment is effectuated at the time of booking.			|
-|  CardChekInPay      	| The payment is managed by the supplier. The payment is effectuated at check in in the hotel.			|
+|  CardCheckInPay      	| The payment is managed by the supplier. The payment is effectuated at check in in the hotel.			|
 |  PayX      	| The payment is managed by TravelgateX's payment system.			|
 
 
