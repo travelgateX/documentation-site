@@ -96,7 +96,7 @@ The **ContinuationToken** can be used in this request - the specification can be
                         <Card code="AX"/>
                         <Card code="CA"/>  
                     </Cards> 
-                <PaymentOptions/>               
+                </PaymentOptions>               
                 <ExclusiveDeal>true</ExclusiveDeal>     
                 <PropertyCategory>
                      <Code>1</Code>
@@ -174,7 +174,7 @@ The **ContinuationToken** can be used in this request - the specification can be
 | PaymentOptions/Cards/Card		| 1..n       	|		| Type of card allowed.    					|
 | @code 				| 1    		| String	| Code card (see *Lists of Data* (VI,AX,BV,CA...)).		|
 | ExclusiveDeal				| 0..1  	| Boolean	| Indicates that the Hotel has an Exclusive Deal.	|
-| PropertyCategory			| 0..1       	|		| Hotels property type. Similar to <Type>, but on supplier's side.  |
+| PropertyCategory			| 0..1       	|		| Hotels property type. Similar to Type, but on supplier's side.  |
 | PropertyCategory/Code			| 1    		| String	| Supplier's property code.       				|
 | PropertyCategory/Name			| 1    		| String	| Supplier's property name.					|
                      
