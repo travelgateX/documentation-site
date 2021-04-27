@@ -196,8 +196,8 @@ The ``HotelRatePlanInventoryNotif`` message contains information about the inven
 | @HotelCode				            | 1	      | String	 |                                                                       |
 | @HotelStatusType			        | 1	      | String	 | *N*: Active, Deactivated				                                         |
 | ../RatePlan  		                | 0..n	  |		       |                        				                                       |
-| @FreeChild				          | 1	      | Boolean	 | Indicates if the child is free at that rate. The price calculation should be done like this:  https://docs.travelgatex.com/inventory-x/extranet/faq/free-children-baby/ |
-| @FreeBaby				          | 1	      | Boolean	 | Indicates if the baby is free at that rate. The price calculation should be done like this:  https://docs.travelgatex.com/inventory-x/extranet/faq/free-children-baby/ |
+| @FreeChild				          | 1	      | Boolean	 | Indicates if the child is free at that rate. Find here the [price calculation](https://docs.travelgatex.com/inventory-x/extranet/faq/free-children-baby/)    |
+| @FreeBaby				          | 1	      | Boolean	 | Indicates if the baby is free at that rate. Find here the [price calculation](https://docs.travelgatex.com/inventory-x/extranet/faq/free-children-baby/) |
 | @RatePlanCode				          | 1	      | String	 | Rate code						                                                 |
 | @BaseRatePlanCode			        | 0..1	  | String	 | *DV*. Rate code of the base RatePlan                                  |
 | @RateReturn			              | 0..1	  | String	 | -                                                                     |
@@ -324,7 +324,7 @@ The ``HotelRatePlanNotif`` message contains information about rate prices.
             </Source>
         </POS>
         <RatePlans HotelCode = "HOT123">
-            <RatePlan RatePlanCode = "TAR333" CurrencyCode = "EUR" RatePlanStatusType = "Deactivated">
+            <RatePlan RatePlanCode = "TAR333" CurrencyCode = "EUR" FreeChild = "true" FreeBaby = "false" RatePlanStatusType = "Deactivated">
                 <Rates>
                     <Rate Start = "2013-04-01" End = "2013-12-31">
                         <BaseByGuestAmts>
@@ -396,6 +396,8 @@ The ``HotelRatePlanNotif`` message contains information about rate prices.
 | @HotelCode				            | 1	      | String	 |                                                                       |
 | ../RatePlan			                | 1..n	  |		       |                        				                                       |
 | @RatePlanCode				          | 1	      | String	 |          						                                                 |
+| @FreeChild				          | 1	      | Boolean	 | Indicates if the child is free at that rate. Find here the [price calculation](https://docs.travelgatex.com/inventory-x/extranet/faq/free-children-baby/)    |
+| @FreeBaby				          | 1	      | Boolean	 | Indicates if the baby is free at that rate. Find here the [price calculation](https://docs.travelgatex.com/inventory-x/extranet/faq/free-children-baby/) |
 | @RatePlanStatusType			      | 0..1	  | String	 | *N*: Active, Deactivated. Informative tag that indicates wheter RatePlan is active or not |
 | @BaseRatePlanCode			        | 0..1	  | String	 | *DV*. Rate code of the base RatePlan                                  |
 | @CurrencyCode				          | 0..1	  | String	 | *BR*. ISO Currency	                                             |
