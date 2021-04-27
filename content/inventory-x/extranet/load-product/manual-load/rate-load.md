@@ -85,12 +85,12 @@ If the room allows occupancies uses **above** the standard occupancy you can con
     * **3 adults (3-0-0):** 100€ *(room price)* + 50€ *(average price per pax: room price / standard occupancy, 100/2)* + 50€ *(adult amount supplement)* = 200€
     * **2 adults and 1 child (2-1-0):**  100€ *(room price)* + 0€ *(child exclusive supplement)* = 100€
 
-* **Percent:** This price is the percent obtained from the room price. If the price per room is 100€ and the first extra adult has a **percent** supplement, the final price in our example for different occupancies would be:
+* **Percent:** This price is the percent obtained from the average price per pax calculated from the room price. If the price per room is 100€ and the first extra adult has a **percent** of 10% supplement, the final price in our example for different occupancies would be:
 
    * **1 adult (1-0-0):** 100€ *(room price)*
     * **2 adults (2-0-0):** 100€ *(room price)*
     * **1 adult and 1 child (1-1-0):** 100€ *(room price)*
-    * **3 adults (3-0-0):** 100€ *(room price)* + 50€ *(50% of 100€)* = 150€
+    * **3 adults (3-0-0):** 100€ *(room price)* + 50€ *(average price per pax: room price / standard occupancy, 100/2)* + 5€ *(10% from 50 - average price per pax)* = 155€
     * **2 adults and 1 child (2-1-0):**  100€ *(room price)* + 0€ *(child exclusive supplement)* = 100€
 
 * **Exclusive:** This price is absolute. If the price per room is 100€ and the first extra adult has an **exclusive** supplement, the final price in our example for different occupancies would be:
