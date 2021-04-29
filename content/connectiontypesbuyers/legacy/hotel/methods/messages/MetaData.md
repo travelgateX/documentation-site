@@ -325,7 +325,7 @@ Clarification - All information contained within the Avail section relates to th
 | @reviewDate 			| 1   		| String	| Informs of the date when the field was last reviewed. |
 | Avail/RoomCandidates/RequiredRoomWithSamePaxConfiguration/SamePaxAge			| 1        	| Boolean	| Indicates whether all of the guests in a particular distribution must be the same age.		|
 | @reviewDate 			| 1   		| String	| Informs of the date when the field was last reviewed. |
-| Avail/RoomCandidates/AgeRange			| 0..1        	| 	| The age range used by the supplier.		|
+| Avail/RoomCandidates/AgeRange			| 1        	| 	| The age range used by the supplier.		|
 | @reviewDate 			| 1   		| String	| Informs of the date when the field was last reviewed. |
 | Avail/RoomCandidates/AgeRange/Age			| 1..n        	| 	| Age range.	|
 | @type 		| 1   		| String	| Type of classification according to age.(Adult, Child, Infant) |
