@@ -1,4 +1,4 @@
-baseURL = "https://docs.travelgatex.com/"
+baseURL = "https://travelgatex.com/"
 languageCode = "en-us"
 DefaultContentLanguage = "en"
 
@@ -66,8 +66,7 @@ discourseUrl = "http://community.travelgatex.com/"
 
   # Meta
   author = "TravelgateX"
-  description = "All you want and need to know about travelgateX state-of-the-art GraphQL APIs. Start your next travel project here."
-  email = "info@travelgatex.com"
+  description = "All you want and need to know about travelgateX APIs. Start your next travel project here."
   # Navigation
   [params.navigation]
     brand = '<img src="images/xtg_logo.svg"/>'
@@ -101,7 +100,7 @@ discourseUrl = "http://community.travelgatex.com/"
   # Hero section
   [params.hero]
     title = "A travel API you’ll &nbsp;&nbsp;<i title='love &#9825;' class='icon-heart'></i>"
-    subtitle = "APIs that connect buyers and suppliers across the Travel Industry.<p>Welcome to TravelgateX, the world’s most advanced and flexible GraphQL based Travel API.</p>"
+    subtitle = "Intuitive, flexible and customisable APIs connecting Buyers and Sellers across the Travel Industry.<p>Welcome to TravelgateX,  the world's largest network of travel companies in the world .</p>"
 
   # Intro section
   # Available icons: http://simplelineicons.com/
@@ -109,7 +108,7 @@ discourseUrl = "http://community.travelgatex.com/"
 
   [[params.intro.item]]
     title = "Getting Started"
-    description = "The inner workings of our APIs. Search, book, retrieve stats, mapping hotels and much more."
+    description = "The inner workings of our APIs. Shopping, management, content and much more."
     url = "getting-started/"
     button = "Go Get Started"
     icon = "icon-fire"
@@ -151,12 +150,12 @@ discourseUrl = "http://community.travelgatex.com/"
   [params.welcome]
     enable = true
     title = "Connecting the dots"
-    description = "With over 600 suppliers, and growing, our travel APIs focus on making sure you can integrate quickly and securely. Speed up integrations and search extensive supplier catalogues with record response time. Our APIs reduce time to market from 9 months to 2 weeks. See why OTA business developers say it is faster to use Travelgate than to do it themselves."
+    description = "With over 1000 Partners already connected, what are you waiting for? Our travel APIs focus on making sure you can integrate quickly and securely. Speed up your time-to-market and connect to an extensive & varied catalogue of Partners. See why OTA business developers say it is faster to use TravelgateX than to do it themselves."
 
   # Work section
   [params.work]
     enable = true
-    title = "Our products"
+    title = "Intuitive, easy-to-use APIs"
     description = "We’re true believers in the API first philosophy. Anything you can do on any of our sites and tools you can also do using the GraphQL API."
     footertext = 'APIs Made With &#9825; For Developers By Developers'
 
@@ -165,7 +164,7 @@ discourseUrl = "http://community.travelgatex.com/"
       img = "hotelx.svg"
       alt = "HotelX"
       title = "HotelX"
-      subtitle = "A single XML Integration to connect with more than 600 hotel product providers."
+      subtitle = "A single development connecting you to hundreds of hotel product providers."
 
     [[params.work.row]]
       url = "https://www.travelgatex.com/products/channelx"
@@ -318,50 +317,7 @@ discourseUrl = "http://community.travelgatex.com/"
         ["icon-dribbble", "#"]
       ]
 
-  # Counters section
-  [params.counters]
-    enable = true
-    title = "Stats"
-    background = "none"
-
-    [[params.counters.item]]
-      description = "Live Suppliers"
-      icon = "icon-briefcase"
-      from = 0
-      to = 623
-      interval = 50
-      speed = 2000
-
-    [[params.counters.item]]
-      description = "Searches per Minute"
-      icon = "icon-speedometer"
-      from = 0
-      to = 623456 
-      interval = 50
-      speed = 2200
-
-    [[params.counters.item]]
-      description = "Bookings Per Day"
-      icon = "icon-wallet"
-      from = 0
-      to = 23412
-      interval = 50
-      speed = 2000
-
-    [[params.counters.item]]
-      description = "Happy clients"
-      icon = "icon-people"
-      from = 0
-      to = 132
-      interval = 50
-      speed = 1000
-
-  # Contact section
-  [params.contact]
-    enable = true
-    map = true
-    title = "Get in touch"
-    description = "We´d love to hear from you! Drop us a line and we'll get back to you shortly."
+ 
 
     # Available icons: http://simplelineicons.com/
     details = [
