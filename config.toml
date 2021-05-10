@@ -70,13 +70,6 @@ discourseUrl = "http://community.travelgatex.com/"
   # Navigation
   [params.navigation]
     brand = '<img src="images/xtg_logo.svg"/>'
-    home = "Home"
-    welcome = "About us"
-    work = "Product"
-    testimonials = "Testimonials"
-    services = "Architecture"
-    about = "About"
-    contact = "Contact"
 
     # You can add custom links before or after the default links
     # Assign a weight to define the order
