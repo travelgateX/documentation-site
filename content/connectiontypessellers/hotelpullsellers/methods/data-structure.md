@@ -32,6 +32,7 @@ The integration will have the following methods:
 | RoomList                  | RoomListRQ                  | RoomListRS                  | Yes           | Returns available room types. |
 | MealPlanList              | MealPlanListRQ              | MealPlanListRS              | Yes          | Returns a list of available boards. |
 | CategoryList              | CategoryListRQ              | CategoryListRS              | Yes  	       | Returns a list of available categories. |
+| CurrencyList              | CurrencyListRQ              | CurrencyListRS              | No          | Returns a list of available currencies. |
 | MarketList              | MarketListRQ              | MarketListRS              | No  	       | Returns a list of available markets. |
 | Runtime Configuration      | Runtime ConfigurationRQ      | Runtime ConfigurationRS      | Yes          |Retrieves the supplier’s run-time configuration. |
 | MetaData       | MetaDataRQ       | MetaDataRS       | Yes          | Retrieves the supplier’s static configuration. |
