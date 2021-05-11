@@ -320,11 +320,11 @@ discourseUrl = "http://community.travelgatex.com/"
         ["icon-globe", '<a href="http://www.travelgatex.com/" target="_blank">travelgatex.com</a>']
       ]
 
-    name = "Full Name"
-    email = "Email"
-    phone = "Telephone"
-    message = "Message"
-    button = "Send message"
+    #name = "Full Name"
+    #email = "Email"
+    #phone = "Telephone"
+    #message = "Message"
+    #button = "Send message"
 
   # Footer section
   [params.footer]
