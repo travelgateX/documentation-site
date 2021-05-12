@@ -470,20 +470,35 @@ Our platform allows to return GIATA codes in our Hotels Query response. First of
 
 All our content calls return the static information supported by the supplier. It is not a per hotel content, but the total amount of room codes, board codes, destination codes and category codes that may be returned by the supplier.
 
+# CancelPenalty deadline
+
 **How it is calculated the CancelPolicy deadline and why it is different from what the supplier sent?**
 
-The deadline of the CancelPolicy is the final date in which no Cancellation fees will apply. After this date and until check in, Cancellation fees would apply to the booking.
+The deadline of the CancelPolicy is the final date(UTC) in which no Cancellation fees will apply. After this date and until check in, Cancellation fees would apply to the booking.
 
 In the case the Seller informs this date in their response, we’ll simply return it in our deadline field in the response. However, some Sellers don’t return this date in their response, so our logic is to calculate it is as follows: 
 
-* Hours before - number of hours left (before checkin date) for the client to cancel without incurring penalites. This information is passed by the Seller. 
-* Checkin date 
-* Worse case scenario: there are countries with +13 UTC and others -13 UTC, so the worse case scenario would be that a person in +13 performs a booking  -13.
+We get the information from [`cancelPenalty`](/hotel-x/reference/objects/cancelpenalty/)
+* _Hours before_ - number of hours left (before checkin date) for the client to cancel without incurring penalties. This information is passed by the Seller. 
+* _Checkin date_ - we get this date as UTC
 
-In this scenario,, we apply to the deadline date result the following logic: deadline = checkin date - 26 - Hours Before
+Worse case scenario: there are countries with +14 UTC and others -12 UTC, so the worse case scenario would be that a person in UTC+14 performs a booking in a property located in UTC-12.
 
+In this scenario, we apply to the deadline date result the following logic: 
 
+    deadline = checkin - safetyMargin - HoursBefore
 
+The safety margin in set to 14h. We do not have information about properties timezone, so we assume that checkin is UTC at 00:00:00Z
+
+***Example***
+
+_Checkin_ = 25 May 2021  
+_HoursBefore returned by the provider_ = 48h  
+_SafetyMargin_ = 14h  
+
+*****Calculated deadline*****
+
+    25/05/2021T00:00:00Z - hoursBefore (48) - safetyMargin(14) = 22/05/2021T10:00:00Z
 
 
 
