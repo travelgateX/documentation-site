@@ -91,7 +91,7 @@ Providers will send a HotelResRetrieveRQ message to retrieve a list of a seller'
                   </RatePlan>
                 </RatePlans>
                 <RoomRates>
-                  <RoomRate EffectiveDate = "2013-09-03" ExpireDate = "2013-09-07" RoomTypeCode = "STD1" InvBlockCode = "7" RatePlanCode = "BAR">
+                  <RoomRate BookingCode="1|30#30|12|2013-09-03|13|4510741|4510747|3|0|0" EffectiveDate = "2013-09-03" ExpireDate = "2013-09-07" RoomTypeCode = "STD1" InvBlockCode = "7" NumberOfUnits="5" RatePlanCode = "BAR" RoomID = "1">
                     <Rates>
                       <Rate EffectiveDate = "2013-09-03" ExpireDate = "2013-09-07">
                         <Base AmountBeforeTax = "200.00" AmountAfterTax = "200.00" CurrencyCode = "EUR"/>
@@ -224,11 +224,14 @@ Providers will send a HotelResRetrieveRQ message to retrieve a list of a seller'
 | Percent      				| 1 		| Decimal	| Commission of the RatePlane. 			|
 | RoomStay/RoomRates			| 1     	|		| Node containing information about RoomRates.	|
 | RoomRates/RoomRate			| 1     	|		| Node containing information about one RoomRate.|
+| @BookingCode				| 1 		| String	| TravelgateX internal data. Do not use.				|
 | @EffectiveDate			| 1 		| Date		| Effective date when the RoomRate start applying.|
 | @ExpireDate				| 1 		| Date		| Expire date when the RoomRate ends applying. Check out night minus 1. |
 | @RoomTypeCode				| 1 		| String	| Code of the Room.				|
 | @InvBlockCode				| 1 		| String	| Inventary block code.				|
 | @RatePlanCode				| 1 		| String	| Code of the RatePlan.				|
+| @RoomID				    | 1 		| String	|Id of the room.				|
+| @NumberOfUnits			| 1 		| String	|Number of rooms available for this room type.				|
 | RoomRate/Rates			| 1     	|		| Node containing information about the rates.	|
 | Rates/Rate    			| 1     	|		| Node containing information about one rate.	|
 | @EffectiveDate			| 1 		| Date		| Effective date when the Rate start applying.	|
