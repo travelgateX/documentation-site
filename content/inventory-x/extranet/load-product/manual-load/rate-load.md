@@ -27,7 +27,8 @@ The new panel allows you to indicate the date range, rooms, allotment (number of
 * **From - To:** Date range when the conditions will be applied.
 * **Applicable Days of Week:** Days of week in which the condition in the previous date range applies.
 * **All Rooms:** Rooms to which the conditions apply. In case the checkbox is not selected, a new field pop ups, allowing you to select the rooms you want it to apply
-* **Free sales:** Sign of free sales: there is no limit in the number of rooms to be sold. If you check "On" you will apply the free sales condition, if you check "Off" you will delete a free sales if one was previously loaded. If you check *unspecified* you won't apply any change (on/off) in the free sales condition. 
+* **Booking Limit:** Maximum number of rooms available to be sold.
+* **Free sales:** Sign of free sales: there is no limit in the number of rooms to be sold. If you check "On" you will apply the free sales condition, if you check "Off" you will delete a free sales if one was previously loaded. If you check *unspecified* you won't apply any change (on/off) in the free sales condition. If the "Booking Limit" field is indicated and the "Free sales" is "On", the free sales status will have priority and the booking limit will be ignored. 
 * **Close On Arrival:** Stop sales on arrival date: in the date range specified before it's not possible to check-in. If you check "On" you will apply the close on arrival condition, if you check "Off" you will delete a close on arrival condition if one was previously loaded. If you check *unspecified*, you won't apply any change (on/off) in the close on arrival condition.
 * **Close On Departure:** Stop sales on departure date: in the date range specified before is not possible to do a check-out. If you check "On" you will apply the close on departure condition, if you check "Off" you will delete a close on departure condition if one was previously loaded. If you check *unspecified* you won't apply any change (on/off) in the close on departure condition.
 * **Close Master:** Stop sales: in the date range specified before is not possible to stay, so the client will not receive availability for any stay that include those days.  If you check "On" you will apply the close master condition, if you check "Off" you will delete a close master condition  if one was previously loaded. If you check *unspecified* you won't apply any change (on/off) in the close master condition.
@@ -85,12 +86,12 @@ If the room allows occupancies uses **above** the standard occupancy you can con
     * **3 adults (3-0-0):** 100€ *(room price)* + 50€ *(average price per pax: room price / standard occupancy, 100/2)* + 50€ *(adult amount supplement)* = 200€
     * **2 adults and 1 child (2-1-0):**  100€ *(room price)* + 0€ *(child exclusive supplement)* = 100€
 
-* **Percent:** This price is the percent obtained from the room price. If the price per room is 100€ and the first extra adult has a **percent** supplement, the final price in our example for different occupancies would be:
+* **Percent:** This price is the percent obtained from the average price per pax calculated from the room price. If the price per room is 100€ and the first extra adult has a **percent** of 10% supplement, the final price in our example for different occupancies would be:
 
    * **1 adult (1-0-0):** 100€ *(room price)*
     * **2 adults (2-0-0):** 100€ *(room price)*
     * **1 adult and 1 child (1-1-0):** 100€ *(room price)*
-    * **3 adults (3-0-0):** 100€ *(room price)* + 50€ *(50% of 100€)* = 150€
+    * **3 adults (3-0-0):** 100€ *(room price)* + 50€ *(average price per pax: room price / standard occupancy, 100/2)* + 5€ *(10% from 50 - average price per pax)* = 155€
     * **2 adults and 1 child (2-1-0):**  100€ *(room price)* + 0€ *(child exclusive supplement)* = 100€
 
 * **Exclusive:** This price is absolute. If the price per room is 100€ and the first extra adult has an **exclusive** supplement, the final price in our example for different occupancies would be:

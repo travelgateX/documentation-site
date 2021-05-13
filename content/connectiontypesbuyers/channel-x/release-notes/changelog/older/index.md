@@ -11,6 +11,12 @@ date = 2019-09-19
 tags = ["products-changelog"]
 +++
 
+## 2021-05-10
+
+{{% release-notes-container type="a"%}}
+* Add FreeChild/Baby at RatePlan level in HotelRatePlanInventoryNotif and HotelRatePlanNotif requests. Please check our [API](https://docs.travelgatex.com/connectiontypesbuyers/channel-x/api-reference/) to find more information. 
+{{% /release-notes-container %}}
+
 ## 2019-06-04
 
 {{% release-notes-container type="a"%}}
