@@ -156,7 +156,7 @@ In order to add a new room, click in the ``Add Room`` button in the hotel row an
 </br>
 
 * **Code:** Room code. Must be unique per rate and has to coincide with the code used by the channel.
-* **Name:** Room name. Autocomplete field that allows you to select among the different rooms available. When you select one, the room code will be filled in automatically but you can change it. This field is just informative.
+* **Name:** Room name. Text field that allows you to introduce the room description that will be shown to your buyers. This field is just informative.
 * **Standard Occupancy:** This field is useful to calculate the room amount when prices are loaded per passenger. Normally, it indicates the maximum number of adults (only adults) allowed for the room. 
 * **Occupancy only Adults:** Defines the occupancies of adults allowed for this room. (Dark Blue icons are adults).
 * **Occupancy Adults with Children:** Defines occupancies of adults and children allowed for this room. (Light Blue icons are children).
