@@ -136,7 +136,8 @@ added once the checkbox of "Taxes" is checked:
     * **Per Night:** if checked, the tax will be applied for every night.
     * **Per Pax:** if checked, the tax will be applied for every pax.
     * **Add to final price:** if checked, the tax price will be included in the final price that the client will pay. If it is not checked, the tax will be informative to the final customer and should be paid for them at the hotel.
-* **Cancellation policy – Base:** Cancellation policies that can be applied to the rate. The rate will be non refundable if the checkbox ``No refund`` is checked. It is possible to apply a different type of cancellation policy by clicking the `+` button. You can add as many policies as you need, all you need to do is indicate the days in advance before the arrival date, the type and the value of the policy. See [How to configurate different cancel policies](./../../faq/cancel-policies) section for some examples. 
+* **Cancellation policy – Base:** Cancellation policies that can be applied to the rate. The rate will be non refundable if the checkbox ``No refund`` is checked. It is possible to apply a different type of cancellation policy by clicking the `+` button. You can add as many policies as you need, all you need to do is indicate the days in advance before the arrival date, the type and the value of the policy. See [How to configurate different cancel policies](./../../faq/cancel-policies) section for some examples.
+* **Cancellation policy - Calendar:** This option will only appear once you have created your rate previously with base cancel policies. The cancellation policy by calendar allows you to create specific cancel policies by day or date range. You can click the `Add range` button to specify a date range and the cancel policies. This new cancel policies by day will override the base cancel policies specified at rate level. If you want to remove a cancel policy by date you can click the `Delete range` button and specify your dates. You can also delete or check the cancel policies by day clicking in the day's number of the month.
 
 When a rate is added, it appears in the hotel node when you click the arrow that appears on the left side of the hotel name.
 
@@ -155,7 +156,7 @@ In order to add a new room, click in the ``Add Room`` button in the hotel row an
 </br>
 
 * **Code:** Room code. Must be unique per rate and has to coincide with the code used by the channel.
-* **Name:** Room name. Autocomplete field that allows you to select among the different rooms available. When you select one, the room code will be filled in automatically but you can change it. This field is just informative.
+* **Name:** Room name. Text field that allows you to introduce the room description that will be shown to your buyers. This field is just informative.
 * **Standard Occupancy:** This field is useful to calculate the room amount when prices are loaded per passenger. Normally, it indicates the maximum number of adults (only adults) allowed for the room. 
 * **Occupancy only Adults:** Defines the occupancies of adults allowed for this room. (Dark Blue icons are adults).
 * **Occupancy Adults with Children:** Defines occupancies of adults and children allowed for this room. (Light Blue icons are children).
