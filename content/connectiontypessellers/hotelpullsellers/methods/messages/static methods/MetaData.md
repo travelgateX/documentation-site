@@ -303,7 +303,7 @@ Clarification - All information contained within the Avail section relates to th
 | Avail/RoomCandidates			| 1        	|  | Contains information about the restrictions of the rooms.		|
 | Avail/RoomCandidates/MaxNumberRoomCandidates			| 1        	| Integer | Maximum number of room candidates that can be requested in the same avail request.		|
 | @reviewDate 			| 1   		| String	| Informs of the date when the field was last reviewed. |
-| Avail/RoomCandidates/PaxTypeRangeInRoomCandidates			| 0..1        	|  | Contains information about the age restrictions of the guests in a room.		|
+| Avail/RoomCandidates/PaxTypeRangeInRoomCandidates			| 1        	|  | Contains information about the age restrictions of the guests in a room.		|
 | @reviewDate 			| 1   		| String	| Informs of the date when the field was last reviewed. |
 | Avail/RoomCandidates/PaxTypeRangeInRoomCandidates/Candidate			| 1        	|  | Guest restrictions for each candidate type in a room.		|
 | @type		| 1        	| Enum | Candidate classification type.(Adult, Child, Infant)		|
@@ -318,9 +318,9 @@ Clarification - All information contained within the Avail section relates to th
 | @reviewDate 			| 1   		| String	| Informs of the date when the field was last reviewed. |
 | Avail/RoomCandidates/RequiredRoomWithSamePaxConfiguration/SamePaxAge			| 1        	| Boolean	| Indicates whether all of the guests in a particular distribution must be the same age.		|
 | @reviewDate 			| 1   		| String	| Informs of the date when the field was last reviewed. |
-| Avail/RoomCandidates/AgeRange			| 0..1        	| 	| The age range used by the supplier.		|
+| Avail/RoomCandidates/AgeRange			| 1        	| 	| The age range used by the supplier.		|
 | @reviewDate 			| 1   		| String	| Informs of the date when the field was last reviewed. |
-| Avail/RoomCandidates/AgeRange/Age			| 1..n        	| 	| Age range.	|
+| Avail/RoomCandidates/AgeRange/Age			| 1       	| 	| Age range.	|
 | @type 		| 1   		| String	| Type of classification according to age.(Adult, Child, Infant) |
 | @min 			| 1   		| String	| Minimum age in range. |
 | @max 			| 1		| String	|  Max age in range. |
