@@ -63,8 +63,8 @@
 ## Hotels
 
 Hotels Query returns a hotel list from one supplier's access. This entity contains static data about the hotel requested, such as code, name, location, and other information - You can find all these fields in the [graphQL api documentation](https://api.travelgatex.com/).
-This query allows many types of search. You can receive hotels with hotel codes or with minimal destination codes, you can also filter the results based on rank. In this sense, note that there are mandatory and optional fields that allow filtering the hotels returned in the response. 
-As for the response, if the number of hotels that have the selected provider is greater than 1000, these hotels will be returned in paginated responses. The full response is split into pages: By default, the maximum number of hotels returned in each page (response) is 1000, but it allows to request between 1 and 1000 hotels by filling in the field maxSize in the criteria. In order to obtain the next page of hotels, you need to fill in the token field, accordingly.
+This query allows many types of search. You can receive hotels with hotel codes or with minimal destination codes, you can also filter the results based on rank. In this sense, note that there are mandatory and optional fields that allow filtering the hotels returned to the response. 
+As for the response, if the number of hotels that have the selected provider is greater than 1000, these hotels will be returned in paginated responses. The full response is split into pages: By default, the maximum number of hotels returned in each page (response) is 1000, but it allows requesting between 1 and 1000 hotels by filling in the field maxSize in the criteria. In order to obtain the next page of hotels, you need to fill in the token field, accordingly.
 
 In order to enable all kind of search, input parameters must be filled and in some cases its possible to combine them for more accurate search. Also, there is some input parameters that must not be combined. This characteristic is explained later.
 
@@ -72,23 +72,28 @@ In order to enable all kind of search, input parameters must be filled and in so
 
 Criteria fields allow select provider (access) and allow to select the entity which will be used for search (search by hotel codes, search by destinations, search by countries,...).
 
-**Fields for selecting the access(supplier)**  
+**Fields for selecting the access or a supplier**  
 
-- *access*: it represents the access for which you want to receive the hotels information.
-- *group*: *only for internal processes. Please don't use.*
+- **access**: it represents the access for which you want to receive the hotel's information.
+- *group*: *only for internal processes. Please do not use.*
+- **supplierCode**: this field allows to request the portfolio of a supplier. Only supplier's owner can request it.
+
+
+*Only one of these fields can be included*
+
 
 **Fields for selecting the entity of search**
 
 These fields cannot be combined among themselves and all can be nil. In case that no one field is filled, all access hotels will be returned in a non paginated or paginated response/s. 
 
-- *hotelCodes*: it allows to search by hotel codes. These codes are the same that are used in search query.
-- *ranks*: it allows to filter by rank/s.
-- *supplierHotelCodes*: used for search by hotel codes in supplier's context.
-- *destinationCodes*: it allows to search hotels by minimal destination/s. A *minimal destination* is a destination that doesn't contain smaller destinations, only contains hotels.
-- *countries*: it allows to search hotels by country. Country/ies will be specified in ISO 3466-1 alpha-2 format(i.e "ES")
+- **hotelCodes**: it allows searching by hotel codes. These codes are the same that are used in search query.
+- **ranks**: it allows filtering by rank/s. *Note*: not implemented in 2020-03-02
+- **supplierHotelCodes**: used for search by hotel codes in supplier's context.
+- **destinationCodes**: it allows searching hotels by minimal destination/s. A *minimal destination* is a destination that doesn't contain smaller destinations, only contains hotels.
+- **countries**: it allows searching hotels by country. Country/ies will be specified in ISO 3466-1 alpha-2 format(i.e "ES")
 
 **Field for configure the response**
-- maxSize: it allows to specify the number of elements per page. The number of elements per page is maxSize if the number of hotels returned by the query sent is greater than maxSize. In this case, will be necessary to retrieve next/s page/s using token field. This use case will be explained later. 
+- **maxSize**: it allows to specify the number of elements per page. The number of elements per page is maxSize if the number of hotels returned by the query sent is greater than maxSize. In this case, will be necessary to retrieve next/s page/s using token field. This use case will be explained later. 
 
 ### Token
 The token allows to request the next page of hotels. The correct way of obtaining multiple pages of hotels is, in the first query:
@@ -96,37 +101,38 @@ The token allows to request the next page of hotels. The correct way of obtainin
 - maintain the parameter *token* empty in the request
 - request the field *token* in the graph response. 
 
-The value stored in field *token* in HotelConnection element in response, must be used in the subsequent query putting it in *token* input parameter. This process must be repeated setting the token of the previous response in the query parameter until the query return *"Hotels not found"*. In token queries, only *token* parameter must be filled.
+The value stored in the field *token* in HotelConnection element in response, must be used in the subsequent query putting it in *token* input parameter. This process must be repeated setting the token of the previous response in the query parameter until the query return *"Hotels not found"*. In token queries, only *token* parameter must be filled.
 
 ### Filter
-This field allows to make a more accurate query. Please, consider that is not necessary that AND and OR fields be filled, multiple filters can be used without the use of this fields. There is two kind of fields inside this filter:
+This field allows to make a more accurate query. Please, consider that is not necessary that AND and OR fields be filled, multiple filters can be used without the use of these fields. There are two kinds of fields inside this filter:
 
-- *Date filters*: in this API, an hotel can be created, updated and deleted. These *date filters* allow to search by dates in which the hotels has been created, updated or deleted.
+- **Date filters**: in this API, a hotel can be created, updated and deleted. These *date filters* allow searching by dates in which the hotels have been created, updated or deleted.
 
-- *Field filters*: these fields allow to search hotels that have information in indicated fields. It is possible to indicate these field filters: country, category, destination, name, coordinates.  
+
+- **Field filters**: these fields allow searching hotels that have information in indicated fields. It is possible to indicate these field filters: country, category, destination, name, coordinates.  
 
 
 ### Relay
-This field allows to search by relay type search. More about relay in: [relay](https://relay.dev/docs/en/introduction-to-relay)
+This field allows searching by relay type search. More about relay in: [relay](https://relay.dev/docs/en/introduction-to-relay)
 
 *Note*: not implemented in 2020-03-02
 
 ## Other particularities
 
-- Count field in HotelConnection is for internal use and does not refer to hotels returned. There is not any field that shows this information.
+- Count field in HotelConnection inform of the number of hotels that will be returned to the complete response for this concrete query (it includes pagination).
 
 - PageInfo element inside response must be used for relay search queries.
 
 ### GIATA Data
 
-GIATA information can be retrieved in node GiataData inside HotelData node. This information is not returned by default, please contact us if you need this information.
+GIATA information can be retrieved in the node GiataData inside HotelData node. This information is not returned by default, please contact us if you need this information.
 
 ### Mapping
-Mapping in this API differs lightly of booking flow mapping process. [https://docs.travelgatex.com/hotel-x/plugins/mapping/](Booking Flow Mapping)
+Mapping in this API differs lightly of booking flow mapping process. [Booking Flow Mapping](https://docs.travelgatex.com/hotel-x/plugins/mapping/)
 
 #### Amenity Map 
 
-This functionality allows to return amenity codes in the context that the client wants. This functionality needs a .csv file that will be loaded in our FTP system (same file for this API and Booking Flow).
+This functionality allows returning amenity codes in the context that the client wants. This functionality needs a .csv file that will be loaded in our FTP system (same file for this API and Booking Flow).
 
 ##### Format File
 
