@@ -310,7 +310,7 @@ Clarification - All information contained within the Avail section relates to th
 | Avail/RoomCandidates			| 1        	|  | Contains information about the restrictions of the rooms.		|
 | Avail/RoomCandidates/MaxNumberRoomCandidates			| 1        	| Integer | Maximum number of room candidates that can be requested in the same avail request.		|
 | @reviewDate 			| 1   		| String	| Informs of the date when the field was last reviewed. |
-| Avail/RoomCandidates/PaxTypeRangeInRoomCandidates			| 1        	|  | Contains information about the age restrictions of the guests in a room.		|
+| Avail/RoomCandidates/PaxTypeRangeInRoomCandidates			| 1000        	|  | Contains information about the age restrictions of the guests in a room.		|
 | @reviewDate 			| 1   		| String	| Informs of the date when the field was last reviewed. |
 | Avail/RoomCandidates/PaxTypeRangeInRoomCandidates/Candidate			| 1        	|  | Guest restrictions for each candidate type in a room.		|
 | @type		| 1        	| Enum | Candidate classification type.(Adult, Child, Infant)		|
