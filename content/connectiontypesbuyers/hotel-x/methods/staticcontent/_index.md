@@ -10,7 +10,7 @@ alwaysopen = false
 
 Learn how to manage the content calls such as Hotel-List, Hotel-Room, Hotel-Board, Hotel-Category, Destinations and Metadata. 
 
-We strongly recommend that our Buyers implement content calls as supplier codes might differ from the ones returned through our API. The metadata call is also extremely important when considering connecting a Seller, as it returns all the restrictions and settings for that Seller.
+{{% alert theme="info" %}}We strongly recommend that our Buyers implement content calls as supplier codes might differ from the ones returned through our API. The metadata call is also extremely important when considering connecting a Seller, as it returns all the restrictions and settings for that Seller. .{{% /alert %}}
 
 
 {{%custom-children%}}
