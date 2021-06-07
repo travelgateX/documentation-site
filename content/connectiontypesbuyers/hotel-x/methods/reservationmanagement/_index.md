@@ -1,6 +1,6 @@
 +++
-title = "Reservation Management"
-pagetitle = "Reservation Management"
+title = "Management"
+pagetitle = "Management"
 description = "Management operations for bookings performed via TGX"
 icon = "fa-suitcase"
 weight = 3
