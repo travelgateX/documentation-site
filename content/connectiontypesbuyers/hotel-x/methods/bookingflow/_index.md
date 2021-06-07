@@ -1,7 +1,7 @@
 +++
 title = "Booking Flow"
-pagetitle = "Booking Flow"
-description = "How to book"
+pagetitle = "Shopping"
+description = "How to perform a booking"
 icon = "fa-exchange"
 weight = 2
 alwaysopen = false
@@ -150,12 +150,12 @@ You can also consult the Schema through our [API playground](https://api.travelg
 
 {{% alert theme="warning" %}}
 
-**NOTE:** Remember that you can configure which fields you want to receive on the response, you just have to configure them on the correspondent graph query.
+**NOTE:** Remember that you can configure which fields you want to receive in the response, you just have to configure them on the correspondent graph query.
 {{% /alert %}}
 
 {{% alert theme="info" %}}
 **Suggestions**
-In order to help you during the booking process you can find several operations to get static data from the providers. You can find the info on our [Static content page](https://docs.travelgatex.com/connectiontypesbuyers/hotel-x/methods/staticcontent/).
+In order to help you during the booking process you can find several operations to get static data from the Sellers you're connected to. You can find the info on our [Content page](https://docs.travelgatex.com/connectiontypesbuyers/hotel-x/methods/staticcontent/).
 {{% /alert %}}
 
 

@@ -31,20 +31,22 @@ We recommend to set it to "true" for possible claiming purposes with the supplie
 
 {{% alert theme="info" %}} When making a booking, you get the **Book status** in the response of our API. There are 4 different status: 
 
-1. ***OK***:The reservation was completed with no problems.
-2. 
-3. ***ON_REQUEST***: The reservation was completed but the product is still not available, so the reservation goes into a waiting list. It is the Buyer’s responsibility to check if the booking is OK.
-4. 
-5. ***UNKNOWN***: The reservation process through TGX was completed but due to a supplier error or a timeout, the reservation status is unknown. It is the Buyer’s responsibility to check if the booking is OK. 
-6. 
-7. ***PENDING_COMMIT***: The payment has been confirmed in provider's side, but is necessary to make a commit in order to confirm the reservation.  .{{% /alert %}}
+1. ***OK***: The reservation was completed with no problems.
+
+2. ***ON_REQUEST***: The reservation was completed but the product is still not available, so the reservation goes into a waiting list. It is the Buyer’s responsibility to check if the booking is OK.
+ 
+3. ***UNKNOWN***: The reservation process through TGX was completed but due to a supplier error or a timeout, the reservation status is unknown. It is the Buyer’s responsibility to check if the booking is OK. 
+ 
+4. ***PENDING_COMMIT***: The payment has been confirmed in provider's side, but is necessary to make a commit in order to confirm the reservation.  .{{% /alert %}}
 
 ## How to confirm a reservation
 
 {{% graphiql-tabs %}}
 
 fb4cf9773a63b7bf222011c211de6b4a
-Please, bear in mind that the clientReference should be different for every test that you are performing.
+
+**Please note that the clientReference should be different for every test that you perform.**
+
 /fb4cf9773a63b7bf222011c211de6b4a
 
 {{% /graphiql-tabs %}}
@@ -56,7 +58,7 @@ Please, bear in mind that the clientReference should be different for every test
 
 ## Payment Card
 
-The example of payment card input 
+Example of payment card input 
 ``` json
 {
 			"cardType": "VI",

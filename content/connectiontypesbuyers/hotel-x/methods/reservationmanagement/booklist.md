@@ -1,7 +1,7 @@
 {
 "title": "Booking List",
 "pagetitle": "Booking List",
-"description": "How to request for booking detail",
+"description": "How to request a list of your bookings via TGX",
 "icon": "fa-list",
 "weight": 1,
 "alwaysopen": false,
@@ -44,9 +44,9 @@ The main information returned for each booking in the list is as follows:
 There are three different types of booking search:
 
 * By reference
-* 
+
 * By dates
-* 
+
 * By bookingID
 
 ## How to request
