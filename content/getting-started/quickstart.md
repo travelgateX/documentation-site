@@ -14,7 +14,7 @@ alwaysopen = false
 If you're ready to start searching for a hotel, getting a quote and booking it right away, try out the TravelgateX API by following the steps below:
 
 * **STEP 1:** Get to know our APIs. Read through our documentation and test some sample calls in our [API Playground](/getting-started/playground). You can use [a test API key](/travelgatex/overview) and start experimenting with our APIs straight away.
-* **STEP 2:** Sign an agreement with a hotel Seller to get access to their booking databases. You can see a full list of Sellers and contact the ones you want to connect with by visiting our [seller portfolio](https://app.travelgatex.com/network).
+* **STEP 2:** Sign an agreement with a hotel Seller to get access to their booking databases. You can see a full list of Sellers and contact the ones you want to connect with by visiting our [Seller portfolio](https://app.travelgatex.com/network).
 * **STEP 3:** Sign up for TravelgateX API access https://www.travelgatex.com/
 * **STEP 4:** Start generating new business! Read through our integration guides and start integrating our [HotelX API](/hotel-x) into your booking applications.
 * **BONUS STEP:** TravelgateX is using one of the latest and most advanced API technologies, GraphQL. It is quick to learn and immensely powerful. Check out our [free GraphQL guides](/learning-graphql/) to learn more about this cutting edge technology.
