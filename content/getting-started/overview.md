@@ -1,15 +1,16 @@
 +++
 title = "Overview"
 pagetitle = "Learn the basics"
-description = "See how the TravelgateX platform and APIs fit together"
+description = "Understanding our marketplace"
 icon = "fa-info-circle"
 weight = 1
 alwaysopen = false
 +++
 
-TravelgateX provides a single API endpoint for all of our API products. This makes it easy for you to integrate our full travel catalog and services into your applications (regardless of whether you are integrating to a website, mobile app, widget, or other interface).
+TravelgateX is an online B2B  marketplace providing seamless connectivity between travel companies  across the world. 
 
-Completely rebuilt in GraphQL from our many years of experience with travel XML integrations, we are offering state of the art, cutting edge API technology that is quick to learn and makes integration simple and fast. Our first API -- [HotelX](/hotel-x) -- is currently available and provides access to over 600 hotel booking suppliers, with thousands of properties available.
+
+Hotel-X is our Buyer's API, completely built in GraphQL from our many years of experience with travel XML integrations, it offers state of the art, cutting edge API technology that is quick to learn and makes integration simple and fast. 
 
 <svg class="platform_getting_started" width="779px" height="564px" viewBox="229 117 779 564" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <defs>
@@ -256,34 +257,34 @@ Completely rebuilt in GraphQL from our many years of experience with travel XML 
     </g>
 </svg>
 
-The TravelgateX platform supports both travel buyers and sellers.
+In our Network, we call _Partners_ all the travel companies connected to our APIS. Our Partners are Buyers, Sellers and Tech Partners.
 
-**BUYERS** are businesses that provide travel services to their customer base.
+**BUYERS** are companies that come to TGX to source hotel & accomodation product. 
 
-Buyers are:
+Buyers can be:
 
-* Online travel agents,
-* Travel apps,
-* Niche travel operators
- or 
-* Direct-to-consumer travel platforms.
+* Online travel agents
+* Travel Tech Service Providers
+* Tour operators
+* Wholesalers 
 
-As a buyer, you can use the TravelgateX platform and our [HotelX API](/hotel-x) to integrate a wide selection of realtime, hotel bed booking databases into your applications.
+As a Buyer, you connect once to our [HotelX API](/hotel-x) and get access to a wide selection of realtime, hotel bed booking databases into your applications.
 
-{{% alert theme="warning" %}}Our buyers first need to have an agreement with the hotel bed supplier in place, and once that has been arranged, you are able to connect to our HotelX API and to begin displaying hotel bed availability directly in your client applications and interfaces.
+{{% alert theme="warning" %}}Our Buyers need to have their own commercial agreement with the hotel accomodation supplier in place before requesting access to their system via TGX. Once that has been arranged, we will activate the connection between your system and the Seller's system in order to begin displaying hotel bed availability directly in your client applications and interfaces.
 {{% /alert %}}
 
 
-**SELLERS** are hotel bed and travel service providers who have an inventory of hotel beds (or travel services) that you want to make available for online booking.
+**SELLERS** are hotel and accomodation suppliers/providers that have an inventory of hotel beds available for online booking.
 
 Sellers are:
 
-* >B2B travel aggregators,
-* Travel fare aggregators and travel metasearch engines,
-* Large hotel chains,
-* Travel service catalogues, or 
-*  Direct-to-consumer travel platforms.
+* >B2B travel aggregators
+* Wholesalers
+* Travel metasearch engines
+* Large hotel chains
+* Incoming Agencies/DMCs 
+* Travel Tech Service Providers
 
-As a seller, TravelgateX connects to your realtime booking databases so that you can optimize your vacancies and make them available to buyers. Where you have made set pricing arrangements with particular buyers, specific pricing is displayed as per your agreements. TravelgateX supports suppliers to reach new buyers by helping make it easy for new buyers to sign up for hotel and travel service contracts via our platform.
 
-{{% alert theme="warning" %}}Our [HotelX API](/hotel-x) is now live and able to integrate thousands of hotel beds into your client applications. Check out our roadmap pages for details of our forthcoming APIs, including an optional Speed API to speed up response times and bookings to large hotel databases, our next-generation Mappea mapping API, and APIs that help you track statistics and travel demands so that you have better insight into tourism trends and changing consumer patterns.{{% /alert %}}
+As a Seller, TravelgateX connects your realtime booking databases and make them available to Buyers. Where you have made set pricing arrangements with particular Buyers, specific pricing is displayed as per your agreements. TravelgateX supports suppliers to reach new Buyers by helping make it easy for them to sign up for hotel and travel service contracts via our marketplace.
+
