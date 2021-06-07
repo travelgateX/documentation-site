@@ -155,7 +155,7 @@ You can also consult the Schema through our [API playground](https://api.travelg
 
 {{% alert theme="info" %}}
 **Suggestions**
-In order to help you during the booking process you can find several operations to get static data from the providers. You can find the info on our [Static content page](../../concepts/content/).
+In order to help you during the booking process you can find several operations to get static data from the providers. You can find the info on our [Static content page](https://docs.travelgatex.com/connectiontypesbuyers/hotel-x/methods/staticcontent/).
 {{% /alert %}}
 
 
