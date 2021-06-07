@@ -1,7 +1,7 @@
 +++
 title = "Booking Flow"
-pagetitle = "Booking Flow"
-description = "How to book"
+pagetitle = "Shopping"
+description = "How to perform a booking"
 icon = "fa-exchange"
 weight = 2
 alwaysopen = false
