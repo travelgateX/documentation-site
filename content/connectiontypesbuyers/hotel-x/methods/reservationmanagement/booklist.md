@@ -1,7 +1,7 @@
 {
 "title": "Booking List",
 "pagetitle": "Booking List",
-"description": "How to request for booking detail",
+"description": "How to request a list of your bookings via TGX",
 "icon": "fa-list",
 "weight": 1,
 "alwaysopen": false,
