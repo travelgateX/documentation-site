@@ -1,13 +1,15 @@
 +++
-title = "FaQ"
-pagetitle = "Frequently Asked Questions"
-description = "Discover ChannelX"
-weight = 2
+title = "FAQ"
+pagetitle = "FAQ"
+description = "Frequently asked questions"
+weight = 3
 icon="fa-users"
 alwaysopen = false
 isDirectory = false
 +++
+
 ## Generic
+
 **What is the timezone displayed in the messages?**\
 Time zone is always UTC.
 
@@ -74,7 +76,6 @@ The Closed On Arrival means that the check-in day cannot be the same day as the 
 **For the standard occupancy calculation, should the data from `<Quantities StandardNumBeds>` or `<BaseByGuestAmt NumberOfGuests>` be consumed?**\
 The first part indicates the StandardOccupancy number (value). The second indicates the format in which prices are returned when they are loaded by price. 
 
->Note: it is possible to load more than one price type at a time. Although it is not something that is done frequently, it can happen. If a channel manager loads more than one price type (i.e. by room and by pax) we will return the cheapest one in the Availability search response.
 
 **Both tax 'ChargeFrequency' and 'ChargeUnit' are optional bits of information. So, what happens if they are not returned in a push message we send you? Do you need to re-calculate the price from HotelRatePlanNotif (if have tax elements are returned), or are you able to assume AmountAfterTax is the final price?**\
 If these elements are not returned, then a fixed amount will be returned as a tax if you have set it up in the SetUp part of the extranet and depending on the type of tax you have set up. You always have to calculate the price that is returned in this tag with the tax.
