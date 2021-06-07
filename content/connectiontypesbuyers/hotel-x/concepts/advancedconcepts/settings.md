@@ -35,36 +35,36 @@ Settings can be applied to the following operations:
 
 ## Queries
 
-These queries have the same settings configuration [**Click here to see configuration**](/hotel-x/reference/inputobjects/hotelsettingsinput/)
+These queries have the same settings configuration [**Click here to see configuration**](/connectiontypesbuyers/hotel-x/reference/inputobjects/hotelsettingsinput/)
 
 * **Search**
 
-    * [Search setting example](/hotel-x/quickstart#search)
+    * [Search setting example](/connectiontypesbuyers/hotel-x/methods/bookingflow/search/)
 
 * **Quote**
 
-    * [Quote setting example](/hotel-x/quickstart#quote)
+    * [Quote setting example](connectiontypesbuyers/hotel-x/methods/bookingflow/quote/)
 
 * **Booking List**
 
-    * [Booking List setting example](/hotel-x/quickstart#bookinglist)
+    * [Booking List setting example](connectiontypesbuyers/hotel-x/methods/reservationmanagement/booklist/)
 
 ## Mutations
 
-These mutations have the same settings configuration [**Click here to see configuration**](/hotel-x/reference/inputobjects/hotelsettingsinput/)
+These mutations have the same settings configuration [**Click here to see configuration**](/connectiontypesbuyers/hotel-x/reference/inputobjects/hotelsettingsinput/)
 
 * **Book**
 
-    * Example : [Book setting example](/hotel-x/quickstart#book)
+    * Example : [Book setting example](/connectiontypesbuyers/hotel-x/methods/bookingflow/book/)
 
 * **Cancel**
 
-    * Example : [Quote setting example](/hotel-x/quickstart#quote)
+    * Example : [Quote setting example](/connectiontypesbuyers/hotel-x/methods/reservationmanagement/cancellation/)
     
-If you need to modify any fields of the database Settings, please contact with our support team.
+If you need to modify any fields of the database Settings, please contact our Help Center.
 Please find an example of each type of the settings above: 
 
-[HotelX Settings](/hotel-x/reference/inputobjects/hotelsettingsinput/)
+[HotelX Settings](/connectiontypesbuyers/hotel-x/reference/inputobjects/hotelsettingsinput/)
 Query/Mutation settings
 ```
 "settings": {
@@ -93,7 +93,7 @@ Query/Mutation settings
 }
 ```
 
-[Base Settings](/hotel-x/reference/inputobjects/settingsbaseinput/)
+[Base Settings](/connectiontypesbuyers/hotel-x/reference/inputobjects/hotelsettingsinput/)
 Access or supplier settings (from Query or database)
 ```
 "settings": {
@@ -129,7 +129,7 @@ Group or client database settings
 }
 ```
 
-If we send a Query with the previous HotelX Settings, the configuration that will be sent to the supplier is:
+If we send a Query with the previous HotelX Settings, the configuration that will be sent to the Seller is:
 
 - Context: "CONTEXT"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//From DB Default Settings<br />
 - Language: "en"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//From HotelX Query/Mutation Settings<br />
@@ -147,7 +147,7 @@ As you can observe in GraphQL API Specifications, the input field "plugins" allo
 
 ### Default Plugins
 
-Additionally, it is possible to load default plugins in our database. Currently, the only way to load these plugins in our database is contacting with our Customer Care team. These default plugins will be executed in all the Queries and Mutations specified above if no filters are specified. 
+Additionally, it is possible to load default plugins in our database. Currently, the only way to load these plugins in our database is contacting  our Customer Care team. These default plugins will be executed in all the Queries and Mutations specified above if no filters are specified. 
 
 ### Filter Plugins
 
