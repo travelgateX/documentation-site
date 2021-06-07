@@ -278,7 +278,7 @@ As a Buyer, you connect once to our [HotelX API](/hotel-x) and get access to a w
 
 Sellers are:
 
-* >B2B travel aggregators
+* B2B travel aggregators
 * Wholesalers
 * Travel metasearch engines
 * Large hotel chains
