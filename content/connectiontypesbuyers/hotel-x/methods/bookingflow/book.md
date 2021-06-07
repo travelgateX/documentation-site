@@ -31,7 +31,7 @@ We recommend to set it to "true" for possible claiming purposes with the supplie
 
 {{% alert theme="info" %}} When making a booking, you get the **Book status** in the response of our API. There are 4 different status: 
 
-1. ***OK***:The reservation was completed with no problems.
+1. ***OK***: The reservation was completed with no problems.
 
 2. ***ON_REQUEST***: The reservation was completed but the product is still not available, so the reservation goes into a waiting list. It is the Buyer’s responsibility to check if the booking is OK.
  
