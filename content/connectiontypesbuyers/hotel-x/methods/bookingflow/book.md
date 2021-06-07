@@ -44,7 +44,9 @@ We recommend to set it to "true" for possible claiming purposes with the supplie
 {{% graphiql-tabs %}}
 
 fb4cf9773a63b7bf222011c211de6b4a
-Please, bear in mind that the clientReference should be different for every test that you are performing.
+
+**Please note that the clientReference should be different for every test that you perform.**
+
 /fb4cf9773a63b7bf222011c211de6b4a
 
 {{% /graphiql-tabs %}}
@@ -56,7 +58,7 @@ Please, bear in mind that the clientReference should be different for every test
 
 ## Payment Card
 
-The example of payment card input 
+Example of payment card input 
 ``` json
 {
 			"cardType": "VI",
