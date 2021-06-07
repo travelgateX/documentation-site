@@ -9,4 +9,3 @@ alwaysopen = false
 
 {{%custom-children%}}
 
-Previous to know how, please take a look on the basic concepts.
