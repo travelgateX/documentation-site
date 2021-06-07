@@ -7,14 +7,13 @@ weight = 1
 alwaysopen = false
 +++
 
-Previously, we introduced an overarching definition of the main Core Entities applying to all Travelgate-X APIs. [core concepts that apply to all TravelgateX APIs](/getting-started/concepts/). 
+Previously, we introduced an overarching definition of the main Core Entities applying to Travelgate-X APIs [core concepts that apply to all TravelgateX APIs](/getting-started/concepts/). 
 
 Here, we want to dig in further on how those concepts are applied to Hotel-X API.
 
 ### Supplier
 
-A party that supplies accommodation services through a Supplier API implementation. Each `Supplier` has a `Supplier` code. These are unique values and they are used consistently throughout all TravelgateX implementations. See our [Supplier database](https://www.travelgatex.com/partners/seller), or ask us via our [Jira Service desk](https://xmltravelgate.atlassian.net/servicedesk/customer/portal/7) for a list of `Supplier` codes.
-
+A party that supplies accommodation services through a Supplier API implementation. Each `Supplier` has a `Supplier` code. These are unique values and they are used consistently throughout all TravelgateX implementations. 
 
 ### Access
 
@@ -48,7 +47,7 @@ A party that buys accommodation services through Hotel-X API implementation.`Cli
 
 * Room Codes 
 
-With our built-in solution, you are able to use your own context when requesting a Hotel-X operation. If you are a `Buyer`, you can map your context against your Supplier contexts.
+With our built-in solution, you are able to use your own context when requesting a Hotel-X operation. If you are a `Buyer`, you can map your context against your `Seller`/Supplier contexts.
 
 Should you be using the aggregator mode, we recommend that you use you own `Context`- in doing so, all supplier mappings will be solved/unified.
 

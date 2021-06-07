@@ -16,7 +16,7 @@ Inventory's API messages have been structured in three parts:
 * **Product Load:** Messages to load and read availability conditions and prices.
 * **Booking flow:** Messages to notify or retrieve bookings and cancellations.
 
-You will find detailed information and examples of each method in the *Messages* section. In *Code List* wou will find all codes used by the system.
+You will find detailed information and examples of each method in the *Messages* section. In *Code List* you will find all codes used by the system.
 
 
 

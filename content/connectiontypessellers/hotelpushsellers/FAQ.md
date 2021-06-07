@@ -7,7 +7,7 @@ alwaysopen = false
 weight = 5
 +++
 
-# Inventory-X FAQ
+# Hotel Push Sellers API FAQ
 
 ## What is standard occupancy?
 
