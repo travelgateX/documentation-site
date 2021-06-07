@@ -101,10 +101,10 @@ The token allows to request the next page of hotels. The correct way of obtainin
 - maintain the parameter *token* empty in the request
 - request the field *token* in the graph response. 
 
-The value stored in the field *token* in HotelConnection element in response, must be used in the subsequent query putting it in *token* input parameter. This process must be repeated setting the token of the previous response in the query parameter until the query return *"Hotels not found"*. In token queries, only *token* parameter must be filled.
+The value stored in the field *token* in HotelConnection element in response must be used in the subsequent query putting it in *token* input parameter. This process must be repeated setting the token of the previous response in the query parameter until the query return *"Hotels not found"*. In token queries, only *token* parameter must be filled.
 
 ### Filter
-This field allows to make a more accurate query. Please, consider that is not necessary that AND and OR fields be filled, multiple filters can be used without the use of these fields. There are two kinds of fields inside this filter:
+This field allows to make a more accurate query. Please consider that is not necessary that AND and OR fields be filled, multiple filters can be used without the use of these fields. There are two kinds of fields inside this filter:
 
 - **Date filters**: in this API, a hotel can be created, updated and deleted. These *date filters* allow searching by dates in which the hotels have been created, updated or deleted.
 
@@ -119,7 +119,7 @@ This field allows searching by relay type search. More about relay in: [relay](h
 
 ## Other particularities
 
-- Count field in HotelConnection inform of the number of hotels that will be returned to the complete response for this concrete query (it includes pagination).
+- Count field in HotelConnection informs of the number of hotels that will be returned to the complete response for this specific query (it includes pagination).
 
 - PageInfo element inside response must be used for relay search queries.
 
@@ -128,7 +128,7 @@ This field allows searching by relay type search. More about relay in: [relay](h
 GIATA information can be retrieved in the node GiataData inside HotelData node. This information is not returned by default, please contact us if you need this information.
 
 ### Mapping
-Mapping in this API differs lightly of booking flow mapping process. [Booking Flow Mapping](https://docs.travelgatex.com/hotel-x/plugins/mapping/)
+Mapping in this API differs slightly of booking flow mapping process. [Booking Flow Mapping](https://docs.travelgatex.com/connectiontypesbuyers/hotel-x/plugins/mapping/)
 
 #### Amenity Map 
 
