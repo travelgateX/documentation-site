@@ -22,3 +22,5 @@ Queries are interactive. You can use our [API Playground](https://api.travelgate
 
 ## Mutations 
 Mutations are methods that change the data on the server. That is, mutations make a physical change to the data. This can include inserting a new object in a database, or deleting, or updating a data record.
+
+Our booking flow can be found [here](https://docs.travelgatex.com/connectiontypesbuyers/hotel-x/methods/bookingflow/)
