@@ -30,7 +30,7 @@ Cancellation operation allows you to cancel a booking.
 {{% alert theme="info" %}}NOTE: Cancellation always takes into account the day and time of the destination in order to calculate what cancellation policy should be applied. UTC time..{{% /alert %}}
 
 - When the booking is cancelled, the details of the cancelled booking are returned with the following information:
-- 
+
 - The booking status: CANCELLED
 - Cancellation fees if applicable
 - Hotel, rooms and rates of the cancelled booking
