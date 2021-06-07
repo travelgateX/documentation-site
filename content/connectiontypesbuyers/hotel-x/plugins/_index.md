@@ -1,13 +1,13 @@
 +++
 title = "Plugins"
 pagetitle = "Plugins"
-description = "Additional logic to your App"
+description = "Additional logic to your Connection"
 icon = "fa-puzzle-piece"
 weight = 6
 alwaysopen = false
 isDirectory = false
 +++
-[HotelX](/hotel-x/) `Plugins` are the _secret sauce_ of the [HotelX](/hotel-x/) API. They can be used to fully customize the request and response in any way one can think.
+[HotelX](/hotel-x/) `Plugins` are the _secret sauce_ of the [HotelX](/hotel-x/) API. They can be used to fully customize the request and response in any way you wish.
 
 [HotelX](/hotel-x/) Plugins are a separate Go application, that get compiled into the main application and run natively in our servers.
 
