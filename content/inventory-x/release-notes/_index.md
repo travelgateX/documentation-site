@@ -8,9 +8,9 @@ alwaysopen = false
 isDirectory = false
 +++
 
-## 2021-05-17
+## 2021-06-04
 {{% release-notes-container type="a"%}}
-- Now it's possible to use a free room description in the [Inventory extranet](https://inventory.xmltravelgate.com/). This feature allows buyers and sellers to set, at rate level, the rooms descriptions they want to configurate without the need to open a ticket to our Help Center. [More info](https://docs.travelgatex.com/inventory-x/extranet/load-product/setup/).
+- Now it's possible to use a add your own room description in the [Inventory extranet](https://inventory.xmltravelgate.com/). This feature allows buyers and sellers to set, at rate level, the rooms descriptions they want to configurate without the need to open a ticket to our Help Center. [More info](https://docs.travelgatex.com/inventory-x/extranet/load-product/setup/).
 {{% /release-notes-container %}}
 
 ## 2020-11-25
