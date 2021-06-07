@@ -37,7 +37,7 @@ A party that buys accommodation services through Hotel-X API implementation.`Cli
 
 ### Context
 
-`Context` is the way how a client/supplier define hotel, board and room codes among others. Each `Profile` (either a `Buyer` or `Supplier`) can manage their own contexts or reuse existing ones. Different buyers or sellers can also manage the same codes context. For example, the `Supplier`[SmyRooms](https://www.travelgatex.com/partner/seller/smyrooms) uses LOGI contexts for their implementations.
+`Context` is the way how a client/supplier define hotel, board and room codes among others. Each `Profile` (either a `Buyer` or `Supplier`) can manage their own contexts or reuse existing ones. Different buyers or sellers can also manage the same codes context. For example, the `Supplier`[SmyRooms](https://app.travelgatex.com/network/smyrooms/) uses LOGI contexts for their implementations.
 
 `Context` applies to:
 
@@ -51,4 +51,4 @@ With our built-in solution, you are able to use your own context when requesting
 
 Should you be using the aggregator mode, we recommend that you use you own `Context`- in doing so, all supplier mappings will be solved/unified.
 
-{{% alert theme="info" %}}For more information on setting contexts, check out our <a href="/hotel-x/plugins/mapping/">**Plugin guide on Mapping**</a>.{{% /alert %}}
+{{% alert theme="info" %}}For more information on setting contexts, check out our [Plugin guide on Mapping](https://docs.travelgatex.com/connectiontypesbuyers/hotel-x/plugins/mapping/).{{% /alert %}}
