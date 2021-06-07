@@ -6,6 +6,7 @@ icon = "fa-paper-plane"
 weight = 1
 alwaysopen = false
 isDirectory = true
+hidden=true
 +++ 
 
 ## Getting Started
