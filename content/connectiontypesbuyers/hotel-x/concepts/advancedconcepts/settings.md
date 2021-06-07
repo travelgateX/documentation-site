@@ -35,36 +35,36 @@ Settings can be applied to the following operations:
 
 ## Queries
 
-These queries have the same settings configuration [**Click here to see configuration**](/connectiontypesbuyers/hotel-x/reference/inputobjects/hotelsettingsinput/)
+These queries have the same settings configuration [**Click here to see configuration**](https://docs.travelgatex.com/connectiontypesbuyers/hotel-x/reference/inputobjects/hotelsettingsinput/)
 
 * **Search**
 
-    * [Search setting example](/connectiontypesbuyers/hotel-x/methods/bookingflow/search/)
+    * [Search setting example](https://docs.travelgatex.com/connectiontypesbuyers/hotel-x/methods/bookingflow/search/)
 
 * **Quote**
 
-    * [Quote setting example](connectiontypesbuyers/hotel-x/methods/bookingflow/quote/)
+    * [Quote setting example](https://docs.travelgatex.com/connectiontypesbuyers/hotel-x/methods/bookingflow/quote/)
 
 * **Booking List**
 
-    * [Booking List setting example](connectiontypesbuyers/hotel-x/methods/reservationmanagement/booklist/)
+    * [Booking List setting example](https://docs.travelgatex.com/connectiontypesbuyers/hotel-x/methods/reservationmanagement/booklist/)
 
 ## Mutations
 
-These mutations have the same settings configuration [**Click here to see configuration**](/connectiontypesbuyers/hotel-x/reference/inputobjects/hotelsettingsinput/)
+These mutations have the same settings configuration [**Click here to see configuration**](https://docs.travelgatex.com/connectiontypesbuyers/hotel-x/reference/inputobjects/hotelsettingsinput/)
 
 * **Book**
 
-    * Example : [Book setting example](/connectiontypesbuyers/hotel-x/methods/bookingflow/book/)
+    * Example : [Book setting example](https://docs.travelgatex.com/connectiontypesbuyers/hotel-x/methods/bookingflow/book/)
 
 * **Cancel**
 
-    * Example : [Quote setting example](/connectiontypesbuyers/hotel-x/methods/reservationmanagement/cancellation/)
+    * Example : [Quote setting example](https://docs.travelgatex.com//connectiontypesbuyers/hotel-x/methods/reservationmanagement/cancellation/)
     
 If you need to modify any fields of the database Settings, please contact our Help Center.
 Please find an example of each type of the settings above: 
 
-[HotelX Settings](/connectiontypesbuyers/hotel-x/reference/inputobjects/hotelsettingsinput/)
+[HotelX Settings](https://docs.travelgatex.com/connectiontypesbuyers/hotel-x/reference/inputobjects/hotelsettingsinput/)
 Query/Mutation settings
 ```
 "settings": {
@@ -93,7 +93,7 @@ Query/Mutation settings
 }
 ```
 
-[Base Settings](/connectiontypesbuyers/hotel-x/reference/inputobjects/hotelsettingsinput/)
+[Base Settings](https://docs.travelgatex.com/connectiontypesbuyers/hotel-x/reference/inputobjects/hotelsettingsinput/)
 Access or supplier settings (from Query or database)
 ```
 "settings": {
