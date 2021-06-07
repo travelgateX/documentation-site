@@ -151,12 +151,13 @@ The next step is to add and configurate rooms to each rate.
 
 In order to add a new room, click in the ``Add Room`` button in the hotel row and a pop-up window appears where you will find two options:
 
-* **All room types:** Select from the autocomplete field a room code and description from your own room master list. Room code can be modified for this rate.
+1. **All room types:** Select from the autocomplete field a room code and description from your own room master list. Room code can be modified for this rate.
 
 ![Inventory SetUp Add Room](./../../../images/web/inventory_setup_addroom_AllRoomTypes.png "Inventory SetUp Add Room")
 
+</br>
 
-* **New room type:** Create a new room type, enter a code and a description for your own reference. Once saved, this room type will be added to the room master list and will appear as an option in ``All room types``.
+2. **New room type:** Create a new room type, enter a code and a description for your own reference. Once saved, this room type will be added to the room master list and will appear as an option in ``All room types``.
 
 ![Inventory SetUp Add Room](./../../../images/web/inventory_setup_addroom_NewRoomType.png "Inventory SetUp Add Room")
 

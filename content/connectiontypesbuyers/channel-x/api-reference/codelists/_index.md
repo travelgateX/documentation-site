@@ -3,7 +3,7 @@ title = "Code List"
 pagetitle = "Code List"
 description = "List of Channel-X codes"
 weight = 2
-icon="fa-book"
+icon="fa-list-ol"
 alwaysopen = false
 isDirectory = false
 +++
