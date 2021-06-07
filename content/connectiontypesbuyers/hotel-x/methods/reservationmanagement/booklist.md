@@ -32,8 +32,8 @@
         ]
 }
 
-The Booking operation allows to retrieve a booking (or bookings) with all its details from the booking reference locator.
-The most important information returned for each booking in the list is:
+The Booking List operation allows to retrieve a booking (or bookings) with all its details from the booking reference locator.
+The main information returned for each booking in the list is as follows:
 * Booking reference
 * Booking holder
 * Booking pax
@@ -64,11 +64,11 @@ Bear in mind that you will have to carry the bookingID recieved in the **book** 
 
 ## Bear in mind
 {{% alert theme="warning" %}}
-_Remember that you can choose which information you want to show_
+_Remember that you can choose the information you want displayed
 
-**Reference:** To show client or supplier booking reference
+**Reference:** To display client or supplier booking reference
 
-**Status:** To show the booking status
+**Status:** To display the booking status
 
 If you want to ask for one booking, you can send the client/supplier booking reference on the HotelCriteriaBooking
 {{% /alert %}}
