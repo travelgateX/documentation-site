@@ -8,22 +8,12 @@ alwaysopen = false
 tags = ["faq"]
 +++
 
-## What is TravelgateX?
+[What is TravelgateX?](https://knowledge.travelgatex.com/what-is-travelgate-x/)
 
-TravelgateX platform provides a single API endpoint for all of our API products. This makes it easy for you to integrate our full travel catalog and services into your applications (regardless of whether you are integrating to a website, mobile app, widget, or other interface). Instead of having to deal with REST APIs, you'll be able to use full poser of GraphQL to interact with your data.
+[What does TravelgateX not do?](https://knowledge.travelgatex.com/what-do-we-not-do/)
 
-GraphQL is the future of API development, many big companies (like Facebook, Twitter, Yelp, IBM and more) as well as smaller startups and teams are using it in production already today.
+[Do you have any traffic limitations?](https://knowledge.travelgatex.com/do-you-have-any-traffic-limitations)
 
-## How can I use TravelgateX?
+[What is your SLA?](https://knowledge.travelgatex.com/performance-sla)
 
-There are three major ways for using TravelgateX:
-
-- Implement [TravelgateX API](https://api.travelgatex.com/) as a app-to-app communication
-- Access [TravelgateX API](https://api.travelgatex.com/) directly from the frontend
-- Use [TravelgateX Site](https://www.travelgatex.com/)
-
-
-## Which Apikey do I have to use?
-
-- I already have the TGX Welcome Pack: Then you should use the Api Key facilitated.
-- I did not receive TGX Welcome Pack: Then you should use our dummy Api Key facilitated on our sample Playground.
+**Visit our [Help Center](https://landing.travelgatex.com/helpcenter) for more information**
