@@ -44,9 +44,9 @@ The main information returned for each booking in the list is as follows:
 There are three different types of booking search:
 
 * By reference
-* 
+
 * By dates
-* 
+
 * By bookingID
 
 ## How to request
