@@ -7,10 +7,15 @@ weight = 1
 alwaysopen = false
 +++
 
-TravelgateX is an online B2B  marketplace providing seamless connectivity between travel companies  across the world. 
+TravelgateX is an online B2B  marketplace providing seamless connectivity between travel companies  across the world. We have 3 APIs available for integration:
 
 
-Hotel-X is our Buyer's API, completely built in GraphQL from our many years of experience with travel XML integrations, it offers state of the art, cutting edge API technology that is quick to learn and makes integration simple and fast. 
+
+* **Hotel-X** is our Buyer's API, completely built in GraphQL from our many years of experience with travel XML integrations, it offers state of the art, cutting edge API technology that is quick to learn and makes integration simple and fast. 
+
+* **Hotel Pull Sellers API** is our generic pull API to which any hotel and accomodation supplier can connect to and immediately get access to 1000s of potential clients.
+
+* **Hotel Push Sellers API** is our generic push API to which channel managers connect to in order to get access to 1000s of potential clients with one single integration.
 
 <svg class="platform_getting_started" width="779px" height="564px" viewBox="229 117 779 564" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <defs>
