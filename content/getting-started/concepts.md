@@ -50,5 +50,6 @@ A `Context` refers to the `Supplier` codes the request is using. It's a way of s
 A `Product` is a TravelgateX platform API which is available for the consumption of Resources. We organize our APIs by similarity and common features. Our HotelX API is our first product now available for use in production environments.
 
  {{% alert theme="info" %}}Join us on [Slack](https://slack.travelgatex.com/) to talk with us about how to use TravelgateX APIs in your websites, apps, and products. 
- You can also send us a [Jira service desk request](https://xmltravelgate.atlassian.net/servicedesk/customer/portal/7). 
- If you would like any new features or more information in our documentation, send us an [issues request](https://github.com/travelgateX/Issue-tracker).{{% /alert %}}
+ You can also contact us via our [Help Center](https://landing.travelgatex.com/helpcenter). 
+
+ If you would like any new features or more information in our documentation, head to [TGX Community](https://community.travelgatex.com/)
