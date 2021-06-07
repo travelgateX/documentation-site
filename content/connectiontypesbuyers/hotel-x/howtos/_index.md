@@ -6,6 +6,7 @@ icon = "fa-laptop"
 weight = 3
 alwaysopen = false
 isDirectory=true
+hidden = true
 +++
 
 ## How-to Guides
