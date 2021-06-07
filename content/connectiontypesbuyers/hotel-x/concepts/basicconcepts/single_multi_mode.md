@@ -1,13 +1,13 @@
 +++
-title = "Single Mode & Multi Mode"
+title = "Single Mode & Multi Mode Searching"
 pagetitle = "Single Mode & Multi Mode"
-description = "Learn about search Multi Mode"
+description = "Learn about searching Multi Mode"
 icon = "fa-search-plus"
 weight = 2
 alwaysopen = false
 +++
 
-**Search Multi Mode** is one of the main features of Hotel-X, even if you can use **Search Multi Mode** in Hotel-X
+**Search Multi Mode** is one of the main features of Hotel-X.
 
 
 ## Search Single Mode
