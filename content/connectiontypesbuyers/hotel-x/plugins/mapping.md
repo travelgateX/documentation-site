@@ -1,13 +1,13 @@
 +++
 title = "Mapping"
-pagetitle = "HotelX Mapping"
-description = "Map different codes from different suppliers in order to get a de-duped response."
+pagetitle = "HotelX Feature: Mapping"
+description = "Map different codes from different Sellers in order to get a de-duped response."
 icon = "fa-sitemap"
 weight = 2
 alwaysopen = false
 +++
 
-The map plugins are used to change the supplier codes to client codes or vice versa. There are these types:
+The mapping feature is used to change the supplier's native codes to the Buyer's own codes or vice-versa. There are these types:
 
 * Hotel Map 
 * Board Map 
@@ -16,7 +16,7 @@ The map plugins are used to change the supplier codes to client codes or vice ve
 * Amenity Map 
 * Promotion Map
 
-Our map formats share a common structure. In order to load your maps you just need to follow the instructions below:
+Our mapping formats share a common structure. In order to load your maps you just need to follow the instructions below:
 
 ## Entity Maps
 
@@ -171,7 +171,8 @@ Examples of plugin that executes board and/or amenity mapping:<br>
 }
 ``` 
 ### Use in Content
-The use of mapping plugin in Content is entirely different from Booking-Flow. Nowadays only is available in Hotel-List query and only amenity map are available. 
+The use of mapping plugin in Content is entirely different from Booking-Flow.
+Currently this is only available in Hotel-List query and only amenity map are available. 
 In order to request mapping in content (other entities mapping could be available in future), it is necessary to query the node mappings stored inside the entity:
 This node is a list of mappings that will store the code of the entity in supplier context and the context of the supplier. 
 Also, is necessary to indicate the group code and destination context in query variables.<br><br>
@@ -202,7 +203,7 @@ In other words, Hotel-List will change amenityCode to the context set in destina
 
 #### Room map by provider hotel
 
-This plugin allows to convert the room codes in supplier context but by the hotel. Is the same plugin (room map) explained before, but it offers the possibility to map by supplier and hotel. 
+This plugin converts the room codes in the supplier's context by hotel. It's the same plugin (room map) as explained above, but it offers the possibility to map by supplier and hotel. 
 
 ##### Format File
 
@@ -213,7 +214,7 @@ The file must be in the below format:
 * **Header Row**: Code Source,Code Destination
 * **Directory**: /F[folder code]\_[unique code]/HotelX\_[unique code]/Maps/
 
-If you are using a file of room map, is necessary you modify this file adding a new column. Please, see the next example down:
+If you are using a file of room map, it's necessary to modify this file adding a new column. Please see the example below:
 
 ##### Sample File
 
@@ -232,9 +233,9 @@ Code Source,Code Destination,Code Hotel
 5,X5,
 ```
 
-How you can see, in the same file are combined maps with 3 values and maps with 2 values. The rows with two values are mapped by provider. The files with three values are mapped by provider and hotel. Is possible to use only the mapping by provider hotel, in this case, your file only has rows with three values.
+As you can see, the same file combined mappings with 3 values and mappings with 2 values. The rows with two values are mapped by supplier. The files with three values are mapped by supplier and hotel. It's possible to use only the mapping by supplier hotel, in this case, your file only has rows with three values.
 
-### How applies
+### Application
 
 What happens if you use the combined plugin (room map and room map by provider hotel)? In this case, all the rooms with provider hotel map will be mapped to your context (the context put in the first value of file's name (client context)) and the room codes that don't have provider hotel map, will be mapped with provider map code (in case that exist). If no map codes are found, the option can be discarded (this rule is configurable). 
 
