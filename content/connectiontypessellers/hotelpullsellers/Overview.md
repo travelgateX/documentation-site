@@ -1,12 +1,12 @@
 +++
 title = "Overview"
 keywords = "intro"
-search = "Overview of product"
+search = "Overview of API"
 sidebar = "mydoc_sidebar"
 weight = 1
 +++
 
-**Overview of product**
+**Overview of API**
 
 Travelgate-X offers the possibility for you to integrate our API and start selling to our portfolio of Buyers just as quick as you can finish the development! When you integrate our API, your system will be able to receive Travelgate's methods and you will be ready to sell!  
 
@@ -16,7 +16,7 @@ To be able to explain exactly how this connectivity works we will define 3 conce
 - TGX (TravelgateX): system connecting a buyer to a seller.
 - Seller: supplier of hotel product that will be bought by a buyer.
 
-A buyers request (for example an availability) can be explained in 6 steps:
+A Buyer's request (for example an availability) can be explained in 6 steps:
 
 1- A buyer sends a request in TGX's API format to TGX.
 
