@@ -10,4 +10,4 @@ tags = ["faq"]
 
 
 
-**Click [here](https://knowledge.travelgatex.com/working-with-travelgatex)**
+**Click [here](https://knowledge.travelgatex.com/working-with-travelgatex) for our most frequently asked questions about working with TravelgateX**
