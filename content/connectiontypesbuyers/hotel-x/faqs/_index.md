@@ -9,7 +9,7 @@ isDirectory = false
 +++ 
 
 
-Click [here](https://knowledge.travelgatex.com/buying-on-travelgatex) for our Hotel-X FAQ about.
+Click [here](https://knowledge.travelgatex.com/buying-on-travelgatex) for our Hotel-X FAQ.
 
 
 
