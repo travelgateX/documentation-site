@@ -35,8 +35,6 @@ It is an incremental load, so bear in mind these considerations:
 
 * Each line represents a unique hotel and contains all the information (fields) about it.
 
-* The first line is not a header line: it contains data directly. 
-
 * Inside a line fields are separated using the character `|`. This character can't be used inside data because fields would be gathered in a wrong way. 
 
 * The data of the fields is not encapsulated by `"` or any other character: the information must be included directly. 
