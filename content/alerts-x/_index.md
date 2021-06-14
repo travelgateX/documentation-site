@@ -5,6 +5,7 @@ description = ""
 weight = 9
 alwaysopen = false
 isDirectory = false
+hidden = true
 +++
 
 Alerts is a monitoring App which monitors any unusual performance accroding to the criteria you set for that connection.  
