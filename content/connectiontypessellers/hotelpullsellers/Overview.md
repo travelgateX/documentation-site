@@ -1,5 +1,7 @@
 +++
 title = "Overview"
+pagetitle = "Overview of Hotel Pull Sellers API"
+description = "Develop our API and connect your system to the markeplace"
 keywords = "intro"
 search = "Overview of API"
 sidebar = "mydoc_sidebar"
@@ -8,7 +10,8 @@ weight = 1
 
 **Overview of API**
 
-Travelgate-X offers the possibility for you to integrate our API and start selling to our portfolio of Buyers just as quick as you can finish the development! When you integrate our API, your system will be able to receive Travelgate's methods and you will be ready to sell!  
+Travelgate-X offers the possibility for you to integrate our API and start selling to our portfolio of Buyers just as quick as you can finish the development!
+When you integrate our API, your system will be able to receive Travelgate's methods and you will be ready to sell!  
 
 To be able to explain exactly how this connectivity works we will define 3 concepts:
 
