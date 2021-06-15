@@ -1,5 +1,4 @@
 +++
-title = "Channel-X"
 pagetitle = "Channel-X"
 description = "Receive product from your connected Channel Managers"
 weight = 2
