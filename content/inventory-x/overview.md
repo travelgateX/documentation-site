@@ -28,7 +28,7 @@ Channel Managers and Hotels will push data to Inventory.
 If you are a Buyer and you want to connect with different Channel Managers you will need the following: 
 
 1. Be a Buyer in TravelgateX platform
-2. Request the activation in our [connectform](https://www2.travelgatex.com/connect/form/legacy). 
+2. Request the activation of the Channel Manager logging into our [App](https://app.travelgatex.com/)
 2. Once the connection is made and delivered to you, use our [Inventory extranet](/inventory-x/extranet) to create the SetUp of the hotels, rates and rooms contracted with the hoteliers so the Channel Manager can map all this information and load availability and prices for you. We always recommend to start with a real pilot hotel before going live.
 
 ## I want to sell my inventory
