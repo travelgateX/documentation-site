@@ -92,4 +92,5 @@ It is an incremental load, so bear in mind these considerations:
 
 ~~~
 HotelCode|HotelName|Address|Longitude|Latitude|Phone|CategoryCode|CategoryName|Citycode|CityName|ISOCountryCode|ZIPCode|ChainCode|ChainName
+123|Hotel Test Distribution|Parc Bit, 1 (Mallorca)|39.637070|2.63170357|+34871968181|5|5 stars|16563|Palma de Mallorca|ES|||
 ~~~
