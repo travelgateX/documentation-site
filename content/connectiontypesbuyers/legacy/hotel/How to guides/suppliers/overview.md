@@ -7,9 +7,9 @@ permalink = "/docs/hotel/data-structure"
 weight = 1
 +++
 
-TravelgateX works like a switch connecting buyers to sellers and transforing the requests from TravelgateX's API to the sullers API. But, when the seller is who integrates into TravelgateX's API they will receive the same request the buyer sends, without any transformation. In other words, the seller will receive the same request the buyer sends.
+TravelgateX works like a switch connecting Buyers to Sellers and transforing the requests from TravelgateX's API to the Seller's API. But, when the Seller integrates into TravelgateX's API they will receive the same request the Buyer sends, without any transformation. In other words, the sSller will receive the same request the Buyer sends.
 
-The seller has to be able to receive requests for TravelgateX's API [methods](https://docs.travelgatex.com/legacy/hotel/methods/messages/). In every request there is a [configuration](/legacy/hotel/how-to-guides/suppliers/configuration/) element with the credential information.
+The Seller has to be able to receive requests for TravelgateX's API [methods](https://docs.travelgatex.com/legacy/hotel/methods/messages/). In every request there is a [configuration](/legacy/hotel/how-to-guides/suppliers/configuration/) element with the credential information.
 
 The connectivity will be by POST method, you can find more information at our [suppliers connectivity page](/legacy/hotel/how-to-guides/suppliers/connectivity/).
 
