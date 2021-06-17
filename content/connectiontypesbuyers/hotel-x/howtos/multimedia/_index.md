@@ -6,6 +6,7 @@ icon = "fa-file-video-o"
 weight = 1
 alwaysopen = false
 isDirectory=true
+hidden = true
 +++
 
 ## Multimedia
