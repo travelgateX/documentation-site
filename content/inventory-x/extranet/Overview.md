@@ -10,7 +10,7 @@ alwaysopen = false
 
 # Extranet Overview
 
-Inventory extranet allows you, as a Buyer, to configure the SetUp of the dynamic inventory you want to access from all the Channel Managers connected to you. You will have access to different tools, components and panels to create, modify or edit hotels, rates, rooms and sales conditions.
+The Inventory extranet allows the Buyer to access and configure the SetUp of the dynamic inventory from all the Channel Managers connected to you. You will have access to different tools, components and panels to create, modify or edit hotels, rates, rooms and sales conditions.
 
 Inventory is also available to load your own static contracts as a Seller: load allotment, prices, discounts, supplements...
 
