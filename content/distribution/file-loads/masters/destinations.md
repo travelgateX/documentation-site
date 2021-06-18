@@ -17,15 +17,15 @@ isDirectory=false
   
 It is an incremental load, so bear in mind these considerations:
 
-* If a meal plan exists then it is updated.
+* If a destination exists then it is updated.
 
-* If a meal plan does not exist then it is created.
+* If a destination does not exist then it is created.
  
-* Existing meal plans that are not referenced are not removed.
+* Existing destinations that are not referenced are not removed.
 
-* If an existing meal plan has to be removed from system then you have to contact with TravelgateX.
+* If an existing destination has to be removed from system then you have to contact with TravelgateX.
 
-* If there is any problem with a meal plan's information then it is omitted (and logged) but the load continues.
+* If there is any problem with a destination's information then it is omitted (and logged) but the load continues.
 
 </br>
 
@@ -69,10 +69,10 @@ It is an incremental load, so bear in mind these considerations:
   
 | **Position** | **Mandatory Field** | **Mandatory Data**	| **Type** | **Description**|
 | -----------  | ------------------- | ------------------ | -------- | ---------------|
-| 0     	     | Yes                 |	Yes               | string   | Destination Code. It can't be set to zero value. It is the code of the destination and it will be used for reference the node on the tree.
+| 0     	     | Yes                 |	Yes               | string   | Destination Code. It can't be set to zero value. It is the code of the destination and it will be used for reference the node on the tree. Note: *This code should be match the city code in the Hotel master file*. 
 | 1     	     | Yes                 |	-                 | string   | Empty field. It will be ignored.
-| 2     	     | Yes                 |	Yes               | string   | Destination name
-| 3     	     | Yes                 |	-                 | string   | ISO Country Code (2 chars)
+| 2     	     | Yes                 |	Yes               | string   | Destination name.
+| 3     	     | Yes                 |	-                 | string   | ISO Country Code (2 chars).
 | 4     	     | Yes                 |	-                 | string   | Parent destination code. If the destination has no parent then it has to be set to zero.
 
 </br>
