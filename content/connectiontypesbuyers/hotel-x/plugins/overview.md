@@ -28,7 +28,7 @@ _Plugins_ are custom code, executed in [HotelX](/hotel-x/) servers, that add or 
 
 _Step_ is the minium container where _plugins_ are executed **sequentially**.
 
-| Step | When is executed |
+| Step | When it's executed |
 | --- | --- |
 | _Request_ | _After_ `Client` requests message to [HotelX](/hotel-x/).|  
 | _Request Access_ | _Before_ send request to `Supplier` using `Access` and _after_ `Accesses` has been calculated.|
@@ -54,7 +54,7 @@ Plugin types supported by [HotelX](/hotel-x/):
 
 ### Plugin Context Execution
 
-Once _message_ enters on [HotelX](/hotel-x/) it flows over different _flows_ and _steps_. That's why  _plugins_ are executed in different _contexts_.
+Once _message_ hits [HotelX](/hotel-x/), it flows over different _flows_ and _steps_. That's why  _plugins_ are executed in different _contexts_.
 
 _Context_ allows:
 
@@ -82,7 +82,7 @@ With _context_ information developers can personalize _plugin_ features, more in
 ftp://ftp.xmltravelgate.com
 
 {{% alert theme="info" %}}
-You will receive access credentials to the FTP server with your Welcome Pack
+You will receive access credentials to the FTP server with your Onboarding Welcome Pack
 {{% /alert %}}
 
 ### Directory Format
