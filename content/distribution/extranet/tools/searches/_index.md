@@ -35,6 +35,12 @@ In this case the list of providers is filled in automatically, and we can search
 
 ![Distribution searches providers](./../../../images/web/distribution_web_searches_providers.jpg "Distribution searches providers")
 
+You will be able to add providers using the extranet or a [master file](https://docs.travelgatex.com/distribution/file-loads/masters/providers/). To add a provider you can click on the `+` button. You need to indicate the following information:
+
+* **Code:** The provider code in TravelgateX platform.
+* **Name:** The provider name you want to have for this supplier in the extranet.
+* **Direct:** You can specify if the supplier is direct or a third supplier. This will be useful when you add rules in Distribution and you want to filter by provider, because you will be able to indicate a specific provider or all providers that are "Third" or "Direct".
+
 
 ### Currencies
 
