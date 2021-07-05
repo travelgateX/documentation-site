@@ -1,11 +1,10 @@
 +++
 title = "Hotel Buyers API (legacy)"
 pagetitle = "Hotel Buyers API (legacy)"
-description = "Legacy API documentation"
-weight = 1
+description = "Read documentation on Hotel Buyers API (legacy)"
+icon = "fa-building" 
+weight = 6
 alwaysopen = false
-isDirectory = false
 +++
 
 {{%custom-children%}}
-
