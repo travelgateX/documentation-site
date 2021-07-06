@@ -93,7 +93,7 @@ discourseUrl = "http://community.travelgatex.com/"
   # Hero section
   [params.hero]
     title = "A travel API you’ll &nbsp;&nbsp;<i title='love &#9825;' class='icon-heart'></i>"
-    subtitle = "Intuitive, flexible and customisable APIs connecting Buyers and Sellers across the Travel Industry.<p>Welcome to TravelgateX,  the world's largest network of travel companies in the world .</p>"
+    subtitle = "Intuitive, flexible and customisable APIs connecting Buyers and Sellers across the Travel Industry.<p>Welcome to TravelgateX,  the world's largest network of travel connections.</p>"
 
   # Intro section
   # Available icons: http://simplelineicons.com/
