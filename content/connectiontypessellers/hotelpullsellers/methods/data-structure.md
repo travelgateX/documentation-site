@@ -25,7 +25,7 @@ The integration will have the following methods:
 
 | **Static Content Method**                | **Input**                   | **Output**                  | **Required** | **Description** |
 | ------------------------- | --------------------------- | --------------------------- | ------------ | --------------- |
-| AvailDestination Tree      | AvailDestination TreeRQ      | AvailDestination TreeRS      | No           | Returns a tree of available destinations. |
+| Configuration      | ConfigurationRQ      | ConfigurationRS      | Yes          |Retrieves the supplier’s configuration in order to build the activation form in our platform |
 | Geographic DestinationTree | Geographic DestinationTreeRQ | Geographic DestinationTreeRS | Yes          | Returns a tree of supplier's destinations. |
 | HotelList                 | HotelListRQ                 | HotelListRS                 | Yes          | Returns a list of available hotels. |
 | Descriptive Info           | Descriptive InfoRQ           | Descriptive InfoRS           | Yes          | Retrieves information for current hotel such as photos, descriptions, amenities,etc as well as basic info (code,name, town, address, contact). |
@@ -34,7 +34,6 @@ The integration will have the following methods:
 | CategoryList              | CategoryListRQ              | CategoryListRS              | Yes  	       | Returns a list of available categories. |
 | CurrencyList              | CurrencyListRQ              | CurrencyListRS              | No          | Returns a list of available currencies. |
 | MarketList              | MarketListRQ              | MarketListRS              | No  	       | Returns a list of available markets. |
-| Runtime Configuration      | Runtime ConfigurationRQ      | Runtime ConfigurationRS      | Yes          |Retrieves the supplier’s run-time configuration. |
 | MetaData       | MetaDataRQ       | MetaDataRS       | Yes          | Retrieves the supplier’s static configuration. |
 
 
