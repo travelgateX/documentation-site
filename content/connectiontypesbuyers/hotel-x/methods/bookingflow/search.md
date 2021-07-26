@@ -49,6 +49,13 @@ There are  different parameters that can be set up in the request. Below are the
 - Hotels: List of hotel codes 
 - Occupancies: The occupancy you are requesting for each room.
   - For multi-room bookings, this array will contain multiple elements (rooms). You will  need to detail the occupancy for each room requested.
+  - 
+## FilterSearch
+These filters can be used to accurate the response to your willingness.
+The possible filters are:
+By access: It is possible to indicate what accesses to use (includes) or excludes any of yours configured acccesses. Only one list can be specified (include or exclude lists). Using the access filter our system will only return options of those selected accesses.
+By raterule:  It is possible to filter the options returned by the suppliers depending on what raterules you want to return or exclude.
+By status: It is possible to filter the options returned by the suppliers, filtering those status you may or not be excluding or including options with the selected status.
 
 ## How to request
 There are different ways to perform a search request. Below are shown different examples for different scenarios:
