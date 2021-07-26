@@ -15,6 +15,8 @@ alwaysopen = false
 
 Rooms Query returns a simple rooms map that can include translations to other languages. You can search by room codes, if you don't introduce any room codes, you will receive all of them. The full response is split into pages. By default, the number of rooms in each page is 1000, however, you can choose the size with a value between 100 and 10000.
 
+Have in mind the response object roomData is shared with Hotels Query but not necessarily it will share the same data. For example with Hotels Query you may recieve "amenities" in roomData whereas in Rooms Query you'll not.
+
 #### Criteria
 **Mandatory fields**  
 - access-> It represents the access for which you want to receive the room description.  
