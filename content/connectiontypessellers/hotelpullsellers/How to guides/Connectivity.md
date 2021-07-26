@@ -18,7 +18,7 @@ The headers we will use to send the POST request are:
 | Accept-Encoding | gzip      |
 | Connection | Keep-Alive      |
 
-The different methods from our API can be sent to 1 unique endpoint or to different enpoints. These endpoints will be set in the [configuration](/hotelpullsellers/how-to-guides/configuration/) TravelgateX receives from the buyer in each request. Endpoints have to be **https** for **Reservation**, **Cancel**, **ReservationRead** and **ReservationList**, for **other request** they can be **http or https**.
+The different methods from our API can be sent to 1 unique endpoint or to different enpoints. These endpoints will be set in the [configuration](/connectiontypessellers/hotelpullsellers/how-to-guides/configuration/) TravelgateX receives from the buyer in each request. Endpoints have to be **https** for **Reservation**, **Cancel**, **ReservationRead** and **ReservationList**, for **other request** they can be **http or https**.
 
 ### Correlation endpoints
 
@@ -26,12 +26,6 @@ In this table you can find relation between TravelgateX's API method and the enp
 
 | **API Method**                | **Configuration Parameter Used**                   |
 | ------------------------- | --------------------------- |
-| Avail  | UrlAvail      |
-| Valuation  | UrlValuation      |
-| Reservation  | UrlReservation      |
-| Cancel  | UrlReservation      |
-| ReservationRead  | UrlReservation      |
-| ReservationList  | UrlReservation      |
-| All other requests  | UrlGeneric      |
+| All requests  | UrlGeneric      |
 
-We expect to receive always a 200 http status. If there is an error in the response it should be notified in the [ApplicationError tag](/hotelpullsellers/how-to-guides/errors/).
+We expect to receive always a 200 http status. If there is an error in the response it should be notified in the [ApplicationError tag](/connectiontypessellers/hotelpullsellers/how-to-guides/errors/).
