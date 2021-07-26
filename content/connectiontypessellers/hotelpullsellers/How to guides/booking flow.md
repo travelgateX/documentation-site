@@ -4,7 +4,7 @@ keywords= "common elements, elements, hotel"
 search= "Hotel - Bookinmg flow"
 sidebar= "mydoc_sidebar"
 permalink = "/docs/hotel/data-structure"
-weight = 1
+weight = 2
 hidden = false
 +++
 
@@ -18,6 +18,6 @@ A basic booking flow for buyers using TravelgateX system consists of 3 steps:
 
 To be able to do a booking through TravelgateX connectivities the 3 steps are mandatory.
 
-TravlgateX API also allows other requests such as [Cancel](/hotelpullsellers/methods/messages/booking-flow-methods/cancel/), [ReservationRead](/hotelpullsellers/methods/messages/booking-flow-methods/reservationread/) and [ReservationList](/hotelpullsellers/methods/messages/booking-flow-methods/reservationlist/), but this methods are not mandatory for a connectivity.
+TravelgateX API also allows other requests such as [Cancel](/hotelpullsellers/methods/messages/booking-flow-methods/cancel/), [ReservationRead](/hotelpullsellers/methods/messages/booking-flow-methods/reservationread/) and [ReservationList](/hotelpullsellers/methods/messages/booking-flow-methods/reservationlist/), but this methods are not mandatory for a connectivity.
 
 You can find a brief definition of the methods to implement, and if they are mandatory for the connectivity or not, in our [Data Structure page](/hotelpullsellers/methods/data-structure/).

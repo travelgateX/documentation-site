@@ -134,7 +134,7 @@ Therefore:
 -  **City:** Lowest node.
 -  **Zone:** Not the lowest node.
 
-![Diagrama1](/articles-pub/docs/hotel/images/diagrama2.png)
+![Diagrama1](/connectiontypessellers/hotelpullsellers/images/diagrama2.png)
 
 
 **Note:** *All the zones that appear in this particular call (DestinationsTree) are all accessible from availability.*

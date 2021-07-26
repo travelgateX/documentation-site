@@ -5,6 +5,7 @@ description = "Develop our API and connect your system to the markeplace"
 keywords = "intro"
 search = "Overview of API"
 sidebar = "mydoc_sidebar"
+icon = "fa-info-circle"
 weight = 1
 +++
 

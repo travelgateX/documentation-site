@@ -195,4 +195,8 @@ We use a standard ISO - 3166_1_alfa_2.
 | warranty | Rate applicable to options with cancellation warranty. |
 
 
+### Option Type
 
+| **Codes**	| **Description**			|
+| ------------- | ----------------------------- |
+| soloHotel | Option Type used for hotels | 
