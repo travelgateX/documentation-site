@@ -2,7 +2,7 @@
 title = "API Reference"
 pagetitle = "API Reference"
 description = "API Reference"
-icon = "fa-list" 
+icon = "fa-code" 
 weight = 3
 alwaysopen = false
 +++

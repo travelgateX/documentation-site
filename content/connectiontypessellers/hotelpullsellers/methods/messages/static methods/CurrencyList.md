@@ -5,6 +5,7 @@ search= "Hotel - Data Structure - CurrencyList"
 sidebar= "mydoc_sidebar"
 permalink= "/docs/hotel/DSF/CurrencyList"
 weight = 7
+icon = "fa-bitcoin"
 +++
 
 
@@ -31,6 +32,7 @@ The result returns a list of currencies.
 
 ### CurrencyListRQ Example
 
+In the request of this call it is only necessary to use the object: "HotelBaseRQ". You can find the info in the '[Common Elements](/connectiontypessellers/hotelpullsellers/methods/messages/common-elements/)' section.
 
 ~~~xml
     <CurrencyListRQ>

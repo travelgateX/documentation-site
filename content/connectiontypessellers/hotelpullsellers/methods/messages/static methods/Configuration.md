@@ -8,6 +8,8 @@ weight = 1
 icon = "fa-cog" 
 +++
 
+
+
 ### Method Goals
 
 
@@ -31,11 +33,13 @@ The returned XML contains a template of all connection fields used in order to c
 
 ### ConfigurationRQ Example
 
+In the request of this call it is only necessary to use the object: "HotelBaseRQ". You can find the info in the '[Common Elements](/connectiontypessellers/hotelpullsellers/methods/messages/common-elements/)' section.
 
 ~~~xml
     <ConfigurationRQ>
     </ConfigurationRQ>
 ~~~
+
 
 
 ### ConfigurationRQ Description
@@ -45,9 +49,7 @@ The returned XML contains a template of all connection fields used in order to c
 | **Element**			| **Number**	| **Type**	| **Description**	    |
 | ----------------------| ------------- | ----------| --------------------- |
 | ConfigurationRQ	    | 1          	|		    | Root node.		    |
-
-                 
-
+                
 
 
 ### ConfigurationRS Example
@@ -62,7 +64,7 @@ The returned XML contains a template of all connection fields used in order to c
             <ProviderTagName>Endpoint Supplier</ProviderTagName>
             <Show>true</Show>
             <Mandatory>true</Mandatory>
-            <Pattern>^(?:(http(s)?|ftp|file):\/\/)?[\w.-]+(?:\.[\w\.-]+)+[\w\-\._~:/?#[\]@!\$&amp;'\(\)\*\+,;=.]+$</Pattern>
+            <Pattern>^(?:(http(s)?|ftp|file):\/\/)?[\w.-]+(?:\.[\w\.-]+)+[\w\-\._~:/?#[\]@!\$&'\(\)\*\+,;=.]+$</Pattern>
             <DescriptionPattern>Please, this field expects the value of a url.</DescriptionPattern>
             <Description>Endpoint Supplier Restel</Description>
             <Type>uri</Type>
@@ -157,7 +159,7 @@ The returned XML contains a template of all connection fields used in order to c
             <TagRunTime>Parameter</TagRunTime>
             <Show>false</Show>
             <Mandatory>true</Mandatory>
-            <Pattern>^(?:(http(s)?|ftp|file):\/\/)?[\w.-]+(?:\.[\w\.-]+)+[\w\-\._~:/?#[\]@!\$&amp;'\(\)\*\+,;=.]+$</Pattern>
+            <Pattern>^(?:(http(s)?|ftp|file):\/\/)?[\w.-]+(?:\.[\w\.-]+)+[\w\-\._~:/?#[\]@!\$&'\(\)\*\+,;=.]+$</Pattern>
             <DescriptionPattern>Please, this field expects the value of a url.</DescriptionPattern>
             <Description>Url Room List</Description>
             <Type>uri</Type>
@@ -168,16 +170,16 @@ The returned XML contains a template of all connection fields used in order to c
 </ConfigurationRS>  
 ~~~  
 
+\
+\
 
-###
+This is the example of how the form is displayed with the previous xml response.
 
-This is the example of how the form is displayed with the previous xml response.  
 
-###
 
 ![This is the example of how the form is displayed with the previous xml response](/connectiontypessellers/hotelpullsellers/images/ExampleFormBuena.png)
 
-###
+
 
 
 ### ConfiguracionRS Description
@@ -201,8 +203,12 @@ This is the example of how the form is displayed with the previous xml response.
 | Parameters/Parameter/DefaultValue	            | 0..1         	| String   | Value by the default, if the Buyer do not change it, all connections to you are set up with this value. | 
 | Parameters/Parameter/ExampleValue	            | 0..1         	| String   | Value of the placeholder for this parameter in the form. If the Buyer do not fill the parameter, the value is empty				| 
 | Parameters/Parameter/PossibleValues	            | 0..1         	|   | 				| 
-| Parameters/Parameter/PossibleValues/PossibleValue	            | 1..n         	| String   | If you return a list of possible parameter values, in the connection form the Buyer only can choose one of this values.   |   
-  
+| Parameters/Parameter/PossibleValues/PossibleValue	            | 1..n         	| String   | If you return a list of possible parameter values, in the connection form the Buyer only can choose one of this values.|
+
+\
+\
+
+
 #### **Patterns**{#paterns}
 
 All the patterns must work with Golang and ECMAScript(javaScript). You can validate your regular expressions by this two laguanges at [regex101](https://regex101.com/).

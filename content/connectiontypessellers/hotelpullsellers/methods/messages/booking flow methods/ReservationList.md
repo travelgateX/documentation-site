@@ -5,6 +5,7 @@ search= "Hotel - Data Structure - ReservationList"
 sidebar= "mydoc_sidebar"
 permalink= "/docs/hotel/DSF/ReservationList"
 weight = 6
+icon = "fa-binoculars"
 +++
 
 
@@ -47,6 +48,7 @@ is closed, is of **240000** milliseconds.
 
 ### ReservationListRQ Example
 
+In the request for this call it is necessary to use the object: "HotelBaseRQ". You can find the information in the section '[Common elements](/connectiontypessellers/hotelpullsellers/methods/messages/common-elements/)'.
 
 ~~~xml
     <ReservationListRQ>
@@ -158,6 +160,6 @@ is closed, is of **240000** milliseconds.
 | --------------------------------------------- | ------------- | -------- | ------------------------------------------ |
 | ReservationListRS              		| 1             |	   | Root node.					|
 | ReservationListRS/Reservations 		| 0..1          |	   | Reservations.				|
-| ReservationListRS/Reservations/Reservation	| 1             |	   | Same structure as [ReservationReadRS](/hotelpullsellers/methods/messages/booking-flow-methods/reservationread/#reservationreadrs-description).	|
+| ReservationListRS/Reservations/Reservation	| 1             |	   | Same structure as [ReservationReadRS](/connectiontypessellers/hotelpullsellers/methods/messages/booking-flow-methods/reservationread/#reservationreadrs-description).	|
 
 

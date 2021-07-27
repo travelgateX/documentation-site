@@ -5,6 +5,7 @@ search= "Hotel - Data Structure - GeographicDestinationTree"
 sidebar= "mydoc_sidebar"
 permalink= "/docs/hotel/DSF/GeographicDestinationTree"
 weight = 10
+icon = "fa-tree"
 +++
 
 
@@ -41,6 +42,7 @@ The maximum time permitted in our system before the connection is closed is **24
 
 ### GeographicDestinationTreeRQ Example
 
+In the request of this call it is only necessary to use the object: "HotelBaseRQ". You can find the info in the '[Common Elements](/connectiontypessellers/hotelpullsellers/methods/messages/common-elements/)' section.
 
 ~~~xml
     <GeographicDestinationTreeRQ>
@@ -158,7 +160,7 @@ Therefore:
 -   **City:** Lowest accessible node.
 -   **Zone:** Not the lowest accessible node.
 
-![Diagrama1](/articles-pub/docs/hotel/images/diagrama1.png)
+![Diagrama1](/connectiontypessellers/hotelpullsellers/images/diagrama1.png)
 
  **Note:** *In rare occasions, it is possible to find nodes lower than cities, which won't be accessible, but the standard scenario is not to find lower nodes than cities.*
 

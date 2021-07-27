@@ -5,6 +5,7 @@ search= "Hotel - Data Structure - Avail"
 sidebar= "mydoc_sidebar"
 permalink= "/docs/hotel/DSF/Avail"
 weight = 1
+icon = "fa-calendar-check-o"
 +++
 
 
@@ -61,6 +62,7 @@ is closed.
 
 ### AvailRQ Example
 
+In the request for this call it is necessary to use the object: "HotelBaseRQ". You can find the information in the section '[Common elements](/connectiontypessellers/hotelpullsellers/methods/messages/common-elements/)'.
 
 ~~~xml
     <AvailRQ>

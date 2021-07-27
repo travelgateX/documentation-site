@@ -5,6 +5,7 @@ search= "Hotel - Data Structure - DescriptiveInfo"
 sidebar= "mydoc_sidebar"
 permalink= "/docs/hotel/DSF/DescriptiveInfo"
 weight = 8
+icon = "fa-object-ungroup"
 +++
 
 
@@ -41,6 +42,7 @@ is **180000** milliseconds.
 
 ### DescriptiveInfoRQ Example
 
+In the request for this call it is necessary to use the object: "HotelBaseRQ". You can find the information in the section '[Common elements](/connectiontypessellers/hotelpullsellers/methods/messages/common-elements/)'.
 
 ~~~xml
     <DescriptiveInfoRQ>
@@ -262,7 +264,7 @@ is **180000** milliseconds.
 | PaymentOptions			| 0..1 		| String	| Type of cards allowed by the supplier. This tag is only mandatory if payment type is different than *MerchantPay*.	 |
 | PaymentOptions/Cards/Cards		| 1          	|		| List of cards allowed.					|
 | PaymentOptions/Cards/Card		| 1..n       	|		| Type of card allowed. 						|
-| @code 				| 1    		| String	| Code of card. Se the full list of card codes at [Lists of Data](/hotelpullsellers/methods/messages/listsdata/#credit-cards).		|
+| @code 				| 1    		| String	| Code of card. Se the full list of card codes at [Lists of Data](/connectiontypessellers/hotelpullsellers/methods/messages/listsdata/#credit-cards).		|
 | ExclusiveDeal				| 0..1 		| Boolean 	| Indicates that a Hotel is an Exlusive Deal.	|
 | PropertyCategory			| 0..1       	|		| Hotels property type. Similar to Type tag, but on supplier's side. |
 | PropertyCategory/Code			| 1    		| String	| Supplier property code.					|
