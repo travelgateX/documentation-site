@@ -5,6 +5,7 @@ search= "Hotel - Data Structure - ReservationRead"
 sidebar= "mydoc_sidebar"
 permalink= "/docs/hotel/DSF/ReservationRead"
 weight = 5
+icon = "fa-search"
 +++
 
 
@@ -49,6 +50,7 @@ is closed.
 
 ### ReservationReadRQ Example
 
+In the request for this call it is necessary to use the object: "HotelBaseRQ". You can find the information in the section '[Common elements](/connectiontypessellers/hotelpullsellers/methods/messages/common-elements/)'.
 
 ~~~xml
     <ReservationReadRQ>

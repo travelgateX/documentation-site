@@ -5,6 +5,7 @@ search= "Hotel - Data Structure - HotelList"
 sidebar= "mydoc_sidebar"
 permalink= "/docs/hotel/DSF/HotelList"
 weight = 11
+icon = "fa-object-group"
 +++
 
 
@@ -43,6 +44,7 @@ The **ContinuationToken** can be used in this request - the specification can be
 
 ### HotelListRQ Example
 
+In the request of this call it is only necessary to use the object: "HotelBaseRQ". You can find the info in the '[Common Elements](/connectiontypessellers/hotelpullsellers/methods/messages/common-elements/)' section.
 
 ~~~xml
     <HotelListRQ>
@@ -142,7 +144,7 @@ The **ContinuationToken** can be used in this request - the specification can be
 | HotelListRS/UpgradeUTCDate		| 1       	|	DateTime	| Indicates the update date of the information in UTC format.	|
 | HotelListRS/Hotels/Hotel		| 0..n       	|		| Root node. Hotel sheet.          				|
 | Code       				| 1    		| String	| Internal code to perform availability and/or supplier code.	|
-| ProviderCode				| 0..1 		| String	| Internal code established by the supplier (see [MetaData](/hotelpullsellers/methods/messages/static-methods/metadata/)). |
+| ProviderCode				| 0..1 		| String	| Internal code established by the supplier (see [MetaData](/connectiontypessellers/hotelpullsellers/methods/messages/static-methods/metadata/)). |
 | GiataId    				| 0..1       	|		| Giata System ID.							|
 | @source    				| 0..1 		| String	| Giata url	|
 | @value     				| 0..1 		| String	| Giata code (more on detailed description)	|

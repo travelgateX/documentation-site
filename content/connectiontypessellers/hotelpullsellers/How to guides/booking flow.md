@@ -6,6 +6,7 @@ sidebar= "mydoc_sidebar"
 permalink = "/docs/hotel/data-structure"
 weight = 2
 hidden = false
+icon = "fa-book"
 +++
 
 **Booking flow**

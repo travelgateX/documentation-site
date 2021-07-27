@@ -5,6 +5,7 @@ search= "Hotel - Data Structure - MealPlanList"
 sidebar= "mydoc_sidebar"
 permalink= "/docs/hotel/DSF/MealPlanList"
 weight = 14
+icon = "fa-cutlery"
 +++
 
 
@@ -42,6 +43,7 @@ If the supplier has more than 100 mealplan codes, or more than 20 codes for one 
 
 ### MealPlanRQ Example
 
+In the request of this call it is only necessary to use the object: "HotelBaseRQ". You can find the info in the '[Common Elements](/connectiontypessellers/hotelpullsellers/methods/messages/common-elements/)' section.
 
 ~~~xml
     <MealPlanListRQ>

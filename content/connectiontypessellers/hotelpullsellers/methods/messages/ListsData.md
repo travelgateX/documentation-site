@@ -5,6 +5,7 @@ search= "Hotel - Data Structure - Lists of Data"
 sidebar= "mydoc_sidebar"
 permalink= "/docs/hotel/DSF/ListData"
 weight = 12
+icon = "fa-info-circle"
 +++
 
 

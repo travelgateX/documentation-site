@@ -5,6 +5,7 @@ search= "Hotel - Data Structure - RoomList"
 sidebar= "mydoc_sidebar"
 permalink= "/docs/hotel/DSF/RoomList"
 weight = 19
+icon = "fa-bed"
 +++
 
 
@@ -35,12 +36,13 @@ The result returns a list of *RoomInfo*.
 
 The maximum time permitted in our system before the connection is closed is **240000** milliseconds.
 
-This message must be implemented solely in case the supplier does not return room description in Avail. This requirement will be indicated in [MetaData](/hotelpullsellers/methods/messages/static-methods/metadata/).
+This message must be implemented solely in case the supplier does not return room description in Avail. This requirement will be indicated in [MetaData](/connectiontypessellers/hotelpullsellers/methods/messages/static-methods/metadata/).
 
 
 
 ### RoomListRQ Example
 
+In the request of this call it is only necessary to use the object: "HotelBaseRQ". You can find the info in the '[Common Elements](/connectiontypessellers/hotelpullsellers/methods/messages/common-elements/)' section.
 
 ~~~xml
     <RoomListRQ>

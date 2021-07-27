@@ -5,6 +5,7 @@ search= "Hotel - supplier"
 sidebar= "mydoc_sidebar"
 permalink = "/docs/hotel/supplier/connectivity"
 weight = 3
+icon = "fa-plug"
 +++
 
 For connectivities we will use a POST request to the suppliers system. 

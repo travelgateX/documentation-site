@@ -5,6 +5,7 @@ search= "Hotel - Data Structure - Common Elements"
 sidebar= "mydoc_sidebar"
 permalink= "/docs/hotel/DSF/Common-Elements"
 weight = 6
+icon = "fa-repeat"
 +++
 
 
