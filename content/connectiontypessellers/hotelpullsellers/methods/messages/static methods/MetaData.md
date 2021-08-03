@@ -57,9 +57,9 @@ In the request of this call it is only necessary to use the object: "HotelBaseRQ
 
 
   
-| **Element**			| **Number**	| **Type**	| **Description**	|
-| ----------------------------- | ------------- | ------------- | --------------------- |
-| MetaDataRQ		| 1          	|		| Root node.		|
+| **Element** | **Number** | **Type** | **Description** |
+|-------------|------------|----------|-----------------|
+| MetaDataRQ  | 1          |          | Root node.      |
 
 ### MetaDataRS Example
 
@@ -213,12 +213,6 @@ In the request of this call it is only necessary to use the object: "HotelBaseRQ
                 <Language reviewDate = "20/06/2015">es</Language>
             </Languages>
         </GeographicDestinationTree>
-        <AvailDestinationTree>
-            <StaticType reviewDate = "20/06/2015">NotImplemented</StaticType>
-            <Languages>
-                <Language reviewDate = "20/06/2015">en</Language>
-            </Languages>
-        </AvailDestinationTree>
         <RoomList>
             <StaticType reviewDate = "20/06/2015">Offline</StaticType>
             <Languages>
@@ -265,253 +259,241 @@ In the request of this call it is only necessary to use the object: "HotelBaseRQ
 
 ### MetaDataRS Description
 
-| **Element**				| **Number**	| **Type**	| **Description**						|
-| ------------------------------------- | ------------- | ------------- | ------------------------------------------------------------- |
-| MetaDataRS			| 1        	|		| Root node.							|
-| Avail			| 1        	| 	| Avail node.		|
-| Avail/Destinations			| 1        	| 	| Contains information regarding the destinations for *AvailRQ*.		|
-| Avail/Destinations/MaxNumberHotels			| 1        	| Integer	| Maximum number of hotels that can be requested. |
-| @reviewDate 			| 1   		| String	| Informs of the date when the field was last reviewed. |
-| Avail/Destinations/MaxNumberHotelsRecommended			| 1        	| Integer	| Maximum number of hotels recommended by the supplier.|
-| @reviewDate 			| 1   		| String	| Informs of the date when the field was last reviewed. |
-| Avail/Destinations/MaxNumberCities			| 1        	| Integer	| Maximum number of cities that can be requested.|
-| @reviewDate 			| 1   		| String	| Informs of the date when the field was last reviewed. |
-| Avail/Destinations/MaxNumberCitiesRecommended			| 1        	| Integer	| Maximum number of cities recommended by the supplier.|
-| @reviewDate 			| 1   		| String	| Informs of the date when the field was last reviewed. |
-| Avail/Destinations/MaxNumberZones			| 1        	| Integer	| Maximum number of zones that can be requested.|
-| @reviewDate 			| 1   		| String	| Informs of the date when the field was last reviewed. |
-| Avail/Destinations/MaxNumberZonesRecommended			| 1        	| Integer	| Maximum number of zones recommended by the supplier.|
-| @reviewDate 			| 1   		| String	| Informs of the date when the field was last reviewed. |
-| Avail/Destinations/MaxNumberGeoCodes			| 1        	| Integer	| Maximum number of GeoCodes that can be requested.|
-| @reviewDate 			| 1   		| String	| Informs of the date when the field was last reviewed. |
-| Avail/Destinations/ MaxNumberGeoCodesRecommended			| 1        	| Integer	| Maximum number of GeoCodes recommended by the supplier.|
-| @reviewDate 			| 1   		| String	| Informs of the date when the field was last reviewed. |
-| Avail/Destinations/HotelSameDestinationRestriction			| 1        	| Boolean | If the supplier allows the availability for N hotels, this tag indicates whether those hotels must be within the same destination.			|
-| @reviewDate 			| 1   		| String	| Informs of the date when the field was last reviewed. |
-| Avail/Destinations/DestinationSameCountryRestriction			| 1        	| Boolean | If the supplier allows the availability for N destinations, this tag indicates whether those destinations must be within the same country.		|
-| @reviewDate 			| 1   		| String	| Informs of the date when the field was last reviewed. |
-| Avail/AllowsCurrency			| 1        	| Boolean	| If true, it is possible to request the currency.	|
-| @reviewDate 			| 1   		| String	| Informs of the date when the field was last reviewed. |
-| Avail/AllowsBusinessRules			| 1        	| Boolean	| Specifies if this supplier allows *businessrules*.|
-| @reviewDate 			| 1   		| String	| Informs of the date when the field was last reviewed. |
-| Avail/NumMarketsAllowed			| 1        	| Integer	| Number of markets supported by the supplier in the same request. |
-| @reviewDate 			| 1   		| String	| Informs of the date when the field was last reviewed. |
-| Avail/Release			| 1        	| Integer	| Minimum days required in between booking date and checking date ( days in advance ).	|
-| @reviewDate 			| 1   		| String	| Informs of the date when the field was last reviewed. |
-| Avail/MinimumStay			| 1        	| Integer	| Minimum number of days required for booking.  |
-| @reviewDate 			| 1   		| String	| Informs of the date when the field was last reviewed. |
-| Avail/MaxStay			| 1        	| Integer	| Maximum number of days allowed for booking.  |
-| @reviewDate 			| 1   		| String	| Informs of the date when the field was last reviewed. |
-| Avail/RoomCandidates			| 1        	|  | Contains information about the restrictions of the rooms.		|
-| Avail/RoomCandidates/MaxNumberRoomCandidates			| 1        	| Integer | Maximum number of room candidates that can be requested in the same avail request.		|
-| @reviewDate 			| 1   		| String	| Informs of the date when the field was last reviewed. |
-| Avail/RoomCandidates/PaxTypeRangeInRoomCandidates			| 1        	|  | Contains information about the age restrictions of the guests in a room.		|
-| @reviewDate 			| 1   		| String	| Informs of the date when the field was last reviewed. |
-| Avail/RoomCandidates/PaxTypeRangeInRoomCandidates/Candidate			| 1        	|  | Guest restrictions for each candidate type in a room.		|
-| @type		| 1        	| Enum | Candidate classification type.(Adult, Child, Infant)		|
-| @min		| 1        	| Integer | Minimum required number of guest of this type.		|
-| @max		| 1        	| Integer | Maximum number of guest of this type allowed.		|
-| Avail/RoomCandidates/MaxPaxInRoomCandidates			| 1        	| Integer | Maximum number paxs in same room that can be requested in the same avail request.		|
-| @reviewDate 			| 1   		| String	| Informs of the date when the field was last reviewed. |
-| Avail/RoomCandidates/MaxPaxInAllRooms			| 1        	| Integer | Total amount of paxs that can be requested in the same avail request.	|
-| @reviewDate 			| 1   		| String	| Informs of the date when the field was last reviewed. |
-| Avail/RoomCandidates/RequiredRoomWithSamePaxConfiguration			| 1        	| 	| Indicates whether all of the distributions must have the same configuration.		|
-| Avail/RoomCandidates/RequiredRoomWithSamePaxConfiguration/SamePaxNumber			| 1        	| Boolean	| Indicates whether it is necessary that the number of guests be the same in all of the configurations.		|
-| @reviewDate 			| 1   		| String	| Informs of the date when the field was last reviewed. |
-| Avail/RoomCandidates/RequiredRoomWithSamePaxConfiguration/SamePaxAge			| 1        	| Boolean	| Indicates whether all of the guests in a particular distribution must be the same age.		|
-| @reviewDate 			| 1   		| String	| Informs of the date when the field was last reviewed. |
-| Avail/RoomCandidates/AgeRange			| 1        	| 	| The age range used by the supplier.		|
-| @reviewDate 			| 1   		| String	| Informs of the date when the field was last reviewed. |
-| Avail/RoomCandidates/AgeRange/Age			| 1       	| 	| Age range.	|
-| @type 		| 1   		| String	| Type of classification according to age.(Adult, Child, Infant) |
-| @min 			| 1   		| String	| Minimum age in range. |
-| @max 			| 1		| String	|  Max age in range. |
-| Avail/RateRules			| 1        	| 	| List of rate rule types.		|
-| Avail/RateRules/RateRule			| 1..n        	| Enum	| Rate rules supported by the supplier (You can check these Rate conditions in our Avail section).		|
-| @reviewDate 			| 1   		| String	| Informs of the date when the field was last reviewed. |
-| Avail/Beds			| 1        	| 	| Information about beds.		|
-| Avail/Beds/InformNumberOfUnits			| 1        	| Boolean | Indicates the number of units available per room.		|
-| @reviewDate 			| 1   		| String	| Informs of the date when the field was last reviewed. |
-| Avail/Beds/InformSharedBed			| 1        	| Boolean | Informs in availability response if beds in the room are shared. |
-| @reviewDate 			| 1   		| String	| Informs of the date when the field was last reviewed. |
-| Avail/Beds/InformBedType			| 1        	| Boolean	| Informs if the supplier returns the beds types.		|
-| @reviewDate 			| 1   		| String	| Informs of the date when the field was last reviewed. |
-| Avail/Beds/InformNumberOfBeds			| 1        	| Boolean 	| Informs if the supplier returns the number of beds for each room.		|
-| @reviewDate 			| 1   		| String	| Informs of the date when the field was last reviewed. |
-| Avail/InformBindingPrice			| 1        	| Boolean	| Supplier returns binding PVPs.		|
-| @reviewDate 			| 1   		| String	| Informs of the date when the field was last reviewed. |
-| Avail/InformCancelPolicies			| 1        	| Boolean	| Returns cancellation policies.	|
-| @reviewDate 			| 1   		| String	| Informs of the date when the field was last reviewed. |
-| Avail/InformRoomCancelPolicies 			| 1        	| Boolean	| Returns cancellation policies at room level.	|
-| @reviewDate 			| 1   		| String	| Informs of the date when the field was last reviewed. |
-| Avail/InformRoomFees			| 1        	| Boolean	| Returns fees at room level.	|
-| @reviewDate 			| 1   		| String	| Informs of the date when the field was last reviewed. |
-| Avail/ImplementsCombination			| 1        	| Boolean	| Informs whether the integration allows room combination or not.	|
-| @reviewDate 			| 1   		| String	| Informs of the date when the field was last reviewed. |
-| Avail/InformRemarks			| 1        	| Boolean	| Space available for any remarks or comments aimed at the client.	|
-| @reviewDate 			| 1   		| String	| Informs of the date when the field was last reviewed. |
-| Avail/PaymentTypes			| 1        	| 	| List of payment types accepted by the supplier.		|
-| Avail/PaymentTypes/PaymentType			| 1..n        	| 	| Indicates the types of payment (Merchant, Direct, ...).		|
-| @reviewDate 			| 1   		| String	| Informs of the date when the field was last reviewed. |
-| Avail/OptionTypes			| 1        	| 	| List of option types accepted by the supplier.		|
-| Avail/OptionTypes/OptionType			| 1..n        	| 	| Indicates the types of option.		|
-| @reviewDate 			| 1   		| String	| Informs of the date when the field was last reviewed. |
-| Avail/Languages			| 1        	| 	| List of languages.		|
-| Avail/Languages/Language			| 1..n        	| String	| 	Language code. 		|
-| @reviewDate 			| 1   		| String	| Informs of the date when the field was last reviewed. |
-| Avail/InformDailyPrice			| 1        	| Boolean	| Informs if the supplier returns the daily price. 		|
-| @reviewDate 			| 1   		| String	| Informs of the date when the field was last reviewed. |
-| Avail/InformDailyRatePlan			| 1        	| Boolean	| Informs if the supplier returns the daily rate.		|
-| @reviewDate 			| 1   		| String	| Informs of the date when the field was last reviewed. |
-| Avail/InformOffers			| 1        	| Boolean	| If true, the supplier returns the offers applied. 		|
-| @reviewDate 			| 1   		| String	| Informs of the date when the field was last reviewed. |
-| Avail/InformNRFRateByRoom			| 1        	| Boolean	| The supplier can inform in availability if the room is non-refundable. 		|
-| @reviewDate 			| 1   		| String	| Informs of the date when the field was last reviewed. |
-| Avail/InformFees			| 1        	| Boolean 	| Informs if the supplier returns fees.		|
-| @reviewDate 			| 1   		| String	| Informs of the date when the field was last reviewed. |
-| Valuation			| 1        	| 	| Valuation node.		|
-| Valuation/AllowsBlockOption			| 1        	| Boolean	| Informs if the supplier can block the option.		|
-| @reviewDate 			| 1   		| String	| Informs of the date when the field was last reviewed. |
-| Valuation/InformBindingPrice			| 1        	| Boolean	| Informs if the price is binding in valuation response.		|
-| @reviewDate 			| 1   		| String	| Informs of the date when the field was last reviewed. |
-| Valuation/InformNRFRate			| 1        	| Boolean	| The supplier can inform in valuation if the rate is non-refundable.	|
-| @reviewDate 			| 1   		| String	| Informs of the date when the field was last reviewed. |
-| Valuation/InformRemarks			| 1        	| Boolean	| Returns remarks.		|
-| @reviewDate 			| 1   		| String	| Informs of the date when the field was last reviewed. |
-| Valuation/InformCancelPolicies			| 1        	| Boolean 	| Informs cancellation policies.		|
-| @reviewDate 			| 1   		| String	| Informs of the date when the field was last reviewed. |
-| Valuation/InformCancelPoliciesDescription			| 1        	| Boolean	| Specifies if the supplier informs the cancel policies in free text.		|
-| @reviewDate 			| 1   		| String	| Informs of the date when the field was last reviewed. |
-| Valuation/InformFees			| 1        	| Boolean	| Informs if the supplier returns fees.		|
-| @reviewDate 			| 1   		| String	| Informs of the date when the field was last reviewed. |
-| Reservation			| 1        	| 	| Reservation node.		|
-| Reservation/AllowsDeltaPrice			| 1        	| Boolean	| Allows a margin stipulated by the client for booking with a higher price (delta).		|
-| @reviewDate 			| 1   		| String	| Informs of the date when the field was last reviewed. |
-| Reservation/InformPropertyReservationNumber			| 1        	| Boolean	| Informs if the supplier returns the property reservation number.		|
-| @reviewDate 			| 1   		| String	| Informs of the date when the field was last reviewed. |
-| Reservation/RequiredAllPassengers			| 1        	| Boolean	| Required data for all passengers (names and surnames).		|
-| @reviewDate 			| 1   		| String	| Informs of the date when the field was last reviewed. |
-| Reservation/AllowsRemarks			| 1        	| Boolean	| Informs if the supplier allows send remarks.		|
-| @reviewDate 			| 1   		| String	| Informs of the date when the field was last reviewed. |
-| Reservation/AllowsUrlCard			| 1        	| Boolean 	| Specifies if the supplier allows url card data encode when the paymente type is LaterPay.		|
-| @reviewDate 			| 1   		| String	| Informs of the date when the field was last reviewed. |
-| Reservation/InformBillingSupplier			| 1        	| Boolean	| Informs data of the external supplier in the booking.		|
-| @reviewDate 			| 1   		| String	| Informs of the date when the field was last reviewed. |
-| Reservation/InformPrice			| 1        	| Boolean 	| The supplier informs the booking price.		|
-| @reviewDate 			| 1   		| String	| Informs of the date when the field was last reviewed. |
-| Reservation/AllowsPreferences			| 0..1        	|  	| Preference filters allowed by the provider.		|
-| Reservation/AllowsPreferences/Preference		| 1        	|  	| Each filter of preference and its values.		|
-| @hotel		| 1        	| Boolean 	|  At the option / general level.		|
-| @room		| 1        	| Boolean 	|  At the room level.		|
-| Reservation/AllowsPreferences/Preference/PreferenceType		| 1        	|  	| Type of preference allowed. See types allowed in ** Reservation:** .		|
-| Reservation/AllowsPreferences/Preference/Value		| 1        	|  	| Definition of the type of preference.		|
-| @mandatory		| 1        	| Boolean 	| If it is necessary to pass a value in the Preference tag in reservation request.		|
-| @type		| 0..1       	| String 	| Type of the required value. (string, numeric, boolean)		|
-| ReservationRead			| 1        	| 	| ReservationRead node.		|
-| ReservationRead/InformPropertyReservationNumber			| 1        	| Boolean	| Informs if the supplier returns the property reservation number.		|
-| @reviewDate 			| 1   		| String	| Informs of the date when the field was last reviewed. |
-| ReservationRead/Implements			| 1        	| Boolean	| Informs if the supplier implements this method.		|
-| @reviewDate 			| 1   		| String	| Informs of the date when the field was last reviewed. |
-| ReservationRead/AllowsProvideLocator			| 1        	| Boolean	| The supplier allows provider locator.		|
-| @reviewDate 			| 1   		| String	| Informs of the date when the field was last reviewed. |
-| ReservationRead/AllowsClientLocator			| 1        	| Boolean	| The supplier allows client locator.	|
-| @reviewDate 			| 1   		| String	| Informs of the date when the field was last reviewed. |
-| ReservationRead/InformCancelPolicies			| 1        	| Boolean	| Informs cancellation policies.		|
-| @reviewDate 			| 1   		| String	| Informs of the date when the field was last reviewed. |
-| ReservationRead/InformPriceCancel			| 1        	| Boolean	| The supplier informs the cancellation price.		|
-| @reviewDate 			| 1   		| String	| Informs of the date when the field was last reviewed. |
-| ReservationList			| 1        	| 	| ReservationList node.		|
-| ReservationList/Implements			| 1        	| Boolean	| Informs if the supplier implements this method.	|
-| @reviewDate 			| 1   		| String	| Informs of the date when the field was last reviewed. |
-| ReservationList/InformPropertyReservationNumber			| 1        	| Boolean	| Informs if the supplier returns the property reservation number.		|
-| @reviewDate 			| 1   		| String	| Informs of the date when the field was last reviewed. |
-| ReservationList/AllowsCreationDate			| 1        	| Boolean	| The supplier allows search by creation date.	|
-| @reviewDate 			| 1   		| String	| Informs of the date when the field was last reviewed. |
-| ReservationList/AllowsCheckDate			| 1        	| Boolean	| The supplier allows search by check in date.		|
-| @reviewDate 			| 1   		| String	| Informs of the date when the field was last reviewed. |
-| ReservationList/InformCancelPolicies			| 1        	| Boolean	| Informs cancellation policies.		|
-| @reviewDate 			| 1   		| String	| Informs of the date when the field was last reviewed. |
-| ReservationList/InformPriceCancel			| 1        	| Boolean	| The supplier informs the cancellation price.	|
-| @reviewDate 			| 1   		| String	| Informs of the date when the field was last reviewed. |
-| Cancel			| 1        	| 	| Cancel node.		|
-| Cancel/Implements			| 1        	| Boolean	| Informs if the supplier implements this method.		|
-| @reviewDate 			| 1   		| String	| Informs of the date when the field was last reviewed. |
-| Cancel/AllowsProvideLocator			| 1        	| Boolean	| The supplier allows provider locator.		|
-| @reviewDate 			| 1   		| String	| Informs of the date when the field was last reviewed. |
-| Cancel/AllowsClientLocator			| 1        	| Boolean	| The supplier allows client locator.		|
-| @reviewDate 			| 1   		| String	| Informs of the date when the field was last reviewed. |
-| Cancel/InformPriceCancel			| 1        	| Boolean	| The supplier informs the cancellation price.			|
-| @reviewDate 			| 1   		| String	| Informs of the date when the field was last reviewed. |
-| Batch			| 1        	| 	| Batch node.		|
-| Batch/InformExclusiveDeal			| 1        	| Boolean	| The supplier indicates if a Hotel is an Exclusive Deal in HotelList and/or DescriptiveInfo.		|
-| @reviewDate 			| 1   		| String	| Informs of the date when the field was last reviewed. |
-| Batch/HotelList			| 1        	| 	| Contains information regarding HotelList.		|
-| Batch/HotelList/StaticType			| 1        	| Enum	| Informs the static type.The possible values are:	Offline, OfflineCompleted or NotImplemented.	|
-| @reviewDate 			| 1   		| String	| Informs of the date when the field was last reviewed.  |
-| Batch/HotelList/Languages			| 1        	| 	| 	List of languages.		|
-| Batch/HotelList/Languages/Language			| 1..n        	| String	| Language code.		|
-| @reviewDate 			| 1   		| String	| Informs of the date when the field was last reviewed. |
-| Batch/DescriptiveInfo			| 1        	| 	| Contains information regarding DescriptiveInfo.		|
-| Batch/DescriptiveInfo/StaticType			| 1        	| Enum	| Informs the static type.The possible values are:	Offline, OfflineCompleted or NotImplemented.	|
-| @reviewDate 			| 1   		| String	| Informs of the date when the field was last reviewed.  |
-| Batch/DescriptiveInfo/Languages			| 1        	| 	| 	List of languages.		|
-| Batch/DescriptiveInfo/Languages/Language			| 1..n        	| String	| Language code.		|
-| @reviewDate 			| 1   		| String	| Informs of the date when the field was last reviewed. |
-| Batch/GeographicDestinationTree			| 1        	| 	| Contains information regarding GeographicDestinationTree.		|
-| Batch/GeographicDestinationTree/StaticType			| 1        	| Enum	| Informs the static type.The possible values are:	Offline, OfflineCompleted or NotImplemented.	|
-| @reviewDate 			| 1   		| String	| Informs of the date when the field was last reviewed.  |
-| Batch/GeographicDestinationTree/Languages			| 1        	| 	| 	List of languages.		|
-| Batch/GeographicDestinationTree/ Languages/Language			| 1..n        	| String	| Language code.		|
-| @reviewDate 			| 1   		| String	| Informs of the date when the field was last reviewed. |
-| Batch/AvailDestinationTree			| 1        	| 	| Contains information regarding AvailDestinationTree.		|
-| Batch/AvailDestinationTree/StaticType			| 1        	| Enum	| Informs the static type.The possible values are:	Offline, OfflineCompleted or NotImplemented.	|
-| @reviewDate 			| 1   		| String	| Informs of the date when the field was last reviewed.  |
-| Batch/AvailDestinationTree/Languages			| 1        	| 	| 	List of languages.		|
-| Batch/AvailDestinationTree/Languages/Language			| 1..n        	| String	| Language code.		|
-| @reviewDate 			| 1   		| String	| Informs of the date when the field was last reviewed. |
-| Batch/RoomList			| 1        	| 	| Contains information regarding RoomList.		|
-| Batch/RoomList/StaticType			| 1        	| Enum	| Informs the static type.The possible values are:	Offline, OfflineCompleted or NotImplemented.	|
-| @reviewDate 			| 1   		| String	| Informs of the date when the field was last reviewed.  |
-| Batch/RoomList/Languages			| 1        	| 	| 	List of languages.		|
-| Batch/RoomList/Languages/Language			| 1..n        	| String	| Language code.		|
-| @reviewDate 			| 1   		| String	| Informs of the date when the field was last reviewed. |
-| Batch/MealPlanList			| 1        	| 	| Contains information regarding MealPlanList.		|
-| Batch/MealPlanList/StaticType			| 1        	| Enum	| Informs the static type.The possible values are:	Offline, OfflineCompleted or NotImplemented.	|
-| @reviewDate 			| 1   		| String	| Informs of the date when the field was last reviewed.  |
-| Batch/MealPlanList/Languages			| 1        	| 	| 	List of languages.		|
-| Batch/MealPlanList/Languages/Language			| 1..n        	| String	| Language code.		|
-| @reviewDate 			| 1   		| String	| Informs of the date when the field was last reviewed. |
-| Batch/CategoryList			| 1        	| 	| Contains information regarding CategoryList.		|
-| Batch/CategoryList/StaticType			| 1        	| Enum	| Informs the static type.The possible values are:	Offline, OfflineCompleted or NotImplemented.	|
-| @reviewDate 			| 1   		| String	| Informs of the date when the field was last reviewed.  |
-| Batch/CategoryList/Languages			| 1        	| 	| 	List of languages.		|
-| Batch/CategoryList/Languages/Language			| 1..n        	| String	| Language code.		|
-| @reviewDate 			| 1   		| String	| Informs of the date when the field was last reviewed. |
-| Batch/DescriptiveInfoExtended			| 1        	| 	| Contains information regarding DescriptiveInfoExtended. 		|
-| Batch/DescriptiveInfoExtended/StaticType			| 1        	| Enum	| Informs the static type.	The possible values are: Offline, OfflineCompleted or NotImplemented.	|
-| @reviewDate 			| 1   		| String	| Informs of the date when the field was last reviewed. |
-| Batch/DescriptiveInfoExtended/Languages			| 1        	| 	| 	List of languages.		|
-| Batch/DescriptiveInfoExtended/Languages/Language			| 1..n        	| String	| Language code.		|
-| @reviewDate 			| 1   		| String	| Informs of the date when the field was last reviewed. |
-| Batch/MarketList			| 1        	| 	| Contains information regarding MarketList.		|
-| Batch/MarketList/StaticType			| 1        	| Enum	| Informs the static type.The possible values are:	Offline or NotImplemented.	|
-| @reviewDate 			| 1   		| String	| Informs of the date when the field was last reviewed.  |
-| Batch/MarketList/Languages			| 1        	| 	| 	List of languages.		|
-| Batch/MarketList/Languages/Language			| 1..n        	| String	| Language code.		|
-| @reviewDate 			| 1   		| String	| Informs of the date when the field was last reviewed. |
-| Batch/CurrencyList			| 1        	| 	| Contains information regarding CurrencyList.	|
-| Batch/CurrencyList/StaticType			| 1        	| Enum	| Informs the static type.The possible values are:	Offline, OfflineCompleted or NotImplemented.	|
-| @reviewDate 			| 1   		| String	| Informs of the date when the field was last reviewed.  |
-| Batch/CurrencyList/Languages			| 1        	| 	| 	List of languages.		|
-| Batch/CurrencyList/Languages/Language			| 1..n        	| String	| Language code.		|
-| @reviewDate 			| 1   		| String	| Informs of the date when the field was last reviewed. |
-| Generic			| 1        	| 	| Generic node.		|
-| Generic/RequiredNationality			| 1        	| Boolean	| Informs if the supplier requires nationality in Avail, Valuation and Reservation.		|
-| @reviewDate 			| 1   		| String	| Informs of the date when the field was last reviewed. |
-| Generic/AllowsNationality			| 1        	| Boolean	| Informs if the supplier allows nationality in Avail, Valuation and Reservation.		|
-| @reviewDate 			| 1   		| String	| Informs of the date when the field was last reviewed. |
-| Generic/AllowsOnRequest			| 1        	| Boolean	| If true, the supplier informs the onrequest status option in Avail, Valuation, and Reservation.	|
-| @reviewDate 			| 1   		| String	| Informs of the date when the field was last reviewed. |
+| **Element**                                                             | **Number** | **Type** | **Description**                                                                                                                            |
+|-------------------------------------------------------------------------|------------|----------|--------------------------------------------------------------------------------------------------------------------------------------------|
+| MetaDataRS                                                              | 1          |          | Root node.                                                                                                                                 |
+| Avail                                                                   | 1          |          | Avail node.                                                                                                                                |
+| Avail/Destinations                                                      | 1          |          | Contains information regarding the destinations for *AvailRQ*.                                                                             |
+| Avail/Destinations/MaxNumberHotels                                      | 1          | Integer  | Maximum number of hotels that can be requested.                                                                                            |
+| @reviewDate                                                             | 1          | String   | Informs of the date when the field was last reviewed.                                                                                      |
+| Avail/Destinations/MaxNumberHotelsRecommended                           | 1          | Integer  | Maximum number of hotels recommended by the supplier.                                                                                      |
+| @reviewDate                                                             | 1          | String   | Informs of the date when the field was last reviewed.                                                                                      |
+| Avail/Destinations/MaxNumberCities                                      | 1          | Integer  | Maximum number of cities that can be requested.                                                                                            |
+| @reviewDate                                                             | 1          | String   | Informs of the date when the field was last reviewed.                                                                                      |
+| Avail/Destinations/MaxNumberCitiesRecommended                           | 1          | Integer  | Maximum number of cities recommended by the supplier.                                                                                      |
+| @reviewDate                                                             | 1          | String   | Informs of the date when the field was last reviewed.                                                                                      |
+| Avail/Destinations/MaxNumberZones                                       | 1          | Integer  | Maximum number of zones that can be requested.                                                                                             |
+| @reviewDate                                                             | 1          | String   | Informs of the date when the field was last reviewed.                                                                                      |
+| Avail/Destinations/MaxNumberZonesRecommended                            | 1          | Integer  | Maximum number of zones recommended by the supplier.                                                                                       |
+| @reviewDate                                                             | 1          | String   | Informs of the date when the field was last reviewed.                                                                                      |
+| Avail/Destinations/MaxNumberGeoCodes                                    | 1          | Integer  | Maximum number of GeoCodes that can be requested.                                                                                          |
+| @reviewDate                                                             | 1          | String   | Informs of the date when the field was last reviewed.                                                                                      |
+| Avail/Destinations/ MaxNumberGeoCodesRecommended                        | 1          | Integer  | Maximum number of GeoCodes recommended by the supplier.                                                                                    |
+| @reviewDate                                                             | 1          | String   | Informs of the date when the field was last reviewed.                                                                                      |
+| Avail/Destinations/HotelSameDestinationRestriction                      | 1          | Boolean  | If the supplier allows the availability for N hotels, this tag indicates whether those hotels must be within the same destination.         |
+| @reviewDate                                                             | 1          | String   | Informs of the date when the field was last reviewed.                                                                                      |
+| Avail/Destinations/DestinationSameCountryRestriction                    | 1          | Boolean  | If the supplier allows the availability for N destinations, this tag indicates whether those destinations must be within the same country. |
+| @reviewDate                                                             | 1          | String   | Informs of the date when the field was last reviewed.                                                                                      |
+| Avail/AllowsCurrency                                                    | 1          | Boolean  | If true, it is possible to request the currency.                                                                                           |
+| @reviewDate                                                             | 1          | String   | Informs of the date when the field was last reviewed.                                                                                      |
+| Avail/AllowsBusinessRules                                               | 1          | Boolean  | Specifies if this supplier allows *businessrules*.                                                                                         |
+| @reviewDate                                                             | 1          | String   | Informs of the date when the field was last reviewed.                                                                                      |
+| Avail/NumMarketsAllowed                                                 | 1          | Integer  | Number of markets supported by the supplier in the same request.                                                                           |
+| @reviewDate                                                             | 1          | String   | Informs of the date when the field was last reviewed.                                                                                      |
+| Avail/Release                                                           | 1          | Integer  | Minimum days required in between booking date and checking date ( days in advance ).                                                       |
+| @reviewDate                                                             | 1          | String   | Informs of the date when the field was last reviewed.                                                                                      |
+| Avail/MinimumStay                                                       | 1          | Integer  | Minimum number of days required for booking.                                                                                               |
+| @reviewDate                                                             | 1          | String   | Informs of the date when the field was last reviewed.                                                                                      |
+| Avail/MaxStay                                                           | 1          | Integer  | Maximum number of days allowed for booking.                                                                                                |
+| @reviewDate                                                             | 1          | String   | Informs of the date when the field was last reviewed.                                                                                      |
+| Avail/RoomCandidates                                                    | 1          |          | Contains information about the restrictions of the rooms.                                                                                  |
+| Avail/RoomCandidates/MaxNumberRoomCandidates                            | 1          | Integer  | Maximum number of room candidates that can be requested in the same avail request.                                                         |
+| @reviewDate                                                             | 1          | String   | Informs of the date when the field was last reviewed.                                                                                      |
+| Avail/RoomCandidates/PaxTypeRangeInRoomCandidates                       | 1          |          | Contains information about the age restrictions of the guests in a room.                                                                   |
+| @reviewDate                                                             | 1          | String   | Informs of the date when the field was last reviewed.                                                                                      |
+| Avail/RoomCandidates/PaxTypeRangeInRoomCandidates/Candidate             | 1          |          | Guest restrictions for each candidate type in a room.                                                                                      |
+| @type                                                                   | 1          | Enum     | Candidate classification type.(Adult, Child, Infant)                                                                                       |
+| @min                                                                    | 1          | Integer  | Minimum required number of guest of this type.                                                                                             |
+| @max                                                                    | 1          | Integer  | Maximum number of guest of this type allowed.                                                                                              |
+| Avail/RoomCandidates/MaxPaxInRoomCandidates                             | 1          | Integer  | Maximum number paxs in same room that can be requested in the same avail request.                                                          |
+| @reviewDate                                                             | 1          | String   | Informs of the date when the field was last reviewed.                                                                                      |
+| Avail/RoomCandidates/MaxPaxInAllRooms                                   | 1          | Integer  | Total amount of paxs that can be requested in the same avail request.                                                                      |
+| @reviewDate                                                             | 1          | String   | Informs of the date when the field was last reviewed.                                                                                      |
+| Avail/RoomCandidates/RequiredRoomWithSamePaxConfiguration               | 1          |          | Indicates whether all of the distributions must have the same configuration.                                                               |
+| Avail/RoomCandidates/RequiredRoomWithSamePaxConfiguration/SamePaxNumber | 1          | Boolean  | Indicates whether it is necessary that the number of guests be the same in all of the configurations.                                      |
+| @reviewDate                                                             | 1          | String   | Informs of the date when the field was last reviewed.                                                                                      |
+| Avail/RoomCandidates/RequiredRoomWithSamePaxConfiguration/SamePaxAge    | 1          | Boolean  | Indicates whether all of the guests in a particular distribution must be the same age.                                                     |
+| @reviewDate                                                             | 1          | String   | Informs of the date when the field was last reviewed.                                                                                      |
+| Avail/RoomCandidates/AgeRange                                           | 1          |          | The age range used by the supplier.                                                                                                        |
+| @reviewDate                                                             | 1          | String   | Informs of the date when the field was last reviewed.                                                                                      |
+| Avail/RoomCandidates/AgeRange/Age                                       | 1          |          | Age range.                                                                                                                                 |
+| @type                                                                   | 1          | String   | Type of classification according to age.(Adult, Child, Infant)                                                                             |
+| @min                                                                    | 1          | String   | Minimum age in range.                                                                                                                      |
+| @max                                                                    | 1          | String   | Max age in range.                                                                                                                          |
+| Avail/RateRules                                                         | 1          |          | List of rate rule types.                                                                                                                   |
+| Avail/RateRules/RateRule                                                | 1..n       | Enum     | Rate rules supported by the supplier (You can check these Rate conditions in our Avail section).                                           |
+| @reviewDate                                                             | 1          | String   | Informs of the date when the field was last reviewed.                                                                                      |
+| Avail/Beds                                                              | 1          |          | Information about beds.                                                                                                                    |
+| Avail/Beds/InformNumberOfUnits                                          | 1          | Boolean  | Indicates the number of units available per room.                                                                                          |
+| @reviewDate                                                             | 1          | String   | Informs of the date when the field was last reviewed.                                                                                      |
+| Avail/Beds/InformSharedBed                                              | 1          | Boolean  | Informs in availability response if beds in the room are shared.                                                                           |
+| @reviewDate                                                             | 1          | String   | Informs of the date when the field was last reviewed.                                                                                      |
+| Avail/Beds/InformBedType                                                | 1          | Boolean  | Informs if the supplier returns the beds types.                                                                                            |
+| @reviewDate                                                             | 1          | String   | Informs of the date when the field was last reviewed.                                                                                      |
+| Avail/Beds/InformNumberOfBeds                                           | 1          | Boolean  | Informs if the supplier returns the number of beds for each room.                                                                          |
+| @reviewDate                                                             | 1          | String   | Informs of the date when the field was last reviewed.                                                                                      |
+| Avail/InformBindingPrice                                                | 1          | Boolean  | Supplier returns binding PVPs.                                                                                                             |
+| @reviewDate                                                             | 1          | String   | Informs of the date when the field was last reviewed.                                                                                      |
+| Avail/InformCancelPolicies                                              | 1          | Boolean  | Returns cancellation policies.                                                                                                             |
+| @reviewDate                                                             | 1          | String   | Informs of the date when the field was last reviewed.                                                                                      |
+| Avail/InformRoomCancelPolicies                                          | 1          | Boolean  | Returns cancellation policies at room level.                                                                                               |
+| @reviewDate                                                             | 1          | String   | Informs of the date when the field was last reviewed.                                                                                      |
+| Avail/InformRoomFees                                                    | 1          | Boolean  | Returns fees at room level.                                                                                                                |
+| @reviewDate                                                             | 1          | String   | Informs of the date when the field was last reviewed.                                                                                      |
+| Avail/ImplementsCombination                                             | 1          | Boolean  | Informs whether the integration allows room combination or not.                                                                            |
+| @reviewDate                                                             | 1          | String   | Informs of the date when the field was last reviewed.                                                                                      |
+| Avail/InformRemarks                                                     | 1          | Boolean  | Space available for any remarks or comments aimed at the client.                                                                           |
+| @reviewDate                                                             | 1          | String   | Informs of the date when the field was last reviewed.                                                                                      |
+| Avail/PaymentTypes                                                      | 1          |          | List of payment types accepted by the supplier.                                                                                            |
+| Avail/PaymentTypes/PaymentType                                          | 1..n       |          | Indicates the types of payment (Merchant, Direct, ...).                                                                                    |
+| @reviewDate                                                             | 1          | String   | Informs of the date when the field was last reviewed.                                                                                      |
+| Avail/OptionTypes                                                       | 1          |          | List of option types accepted by the supplier.                                                                                             |
+| Avail/OptionTypes/OptionType                                            | 1..n       |          | Indicates the types of option.                                                                                                             |
+| @reviewDate                                                             | 1          | String   | Informs of the date when the field was last reviewed.                                                                                      |
+| Avail/Languages                                                         | 1          |          | List of languages.                                                                                                                         |
+| Avail/Languages/Language                                                | 1..n       | String   | Language code.                                                                                                                             |
+| @reviewDate                                                             | 1          | String   | Informs of the date when the field was last reviewed.                                                                                      |
+| Avail/InformDailyPrice                                                  | 1          | Boolean  | Informs if the supplier returns the daily price.                                                                                           |
+| @reviewDate                                                             | 1          | String   | Informs of the date when the field was last reviewed.                                                                                      |
+| Avail/InformDailyRatePlan                                               | 1          | Boolean  | Informs if the supplier returns the daily rate.                                                                                            |
+| @reviewDate                                                             | 1          | String   | Informs of the date when the field was last reviewed.                                                                                      |
+| Avail/InformOffers                                                      | 1          | Boolean  | If true, the supplier returns the offers applied.                                                                                          |
+| @reviewDate                                                             | 1          | String   | Informs of the date when the field was last reviewed.                                                                                      |
+| Avail/InformNRFRateByRoom                                               | 1          | Boolean  | The supplier can inform in availability if the room is non-refundable.                                                                     |
+| @reviewDate                                                             | 1          | String   | Informs of the date when the field was last reviewed.                                                                                      |
+| Avail/InformFees                                                        | 1          | Boolean  | Informs if the supplier returns fees.                                                                                                      |
+| @reviewDate                                                             | 1          | String   | Informs of the date when the field was last reviewed.                                                                                      |
+| Valuation                                                               | 1          |          | Valuation node.                                                                                                                            |
+| Valuation/AllowsBlockOption                                             | 1          | Boolean  | Informs if the supplier can block the option.                                                                                              |
+| @reviewDate                                                             | 1          | String   | Informs of the date when the field was last reviewed.                                                                                      |
+| Valuation/InformBindingPrice                                            | 1          | Boolean  | Informs if the price is binding in valuation response.                                                                                     |
+| @reviewDate                                                             | 1          | String   | Informs of the date when the field was last reviewed.                                                                                      |
+| Valuation/InformNRFRate                                                 | 1          | Boolean  | The supplier can inform in valuation if the rate is non-refundable.                                                                        |
+| @reviewDate                                                             | 1          | String   | Informs of the date when the field was last reviewed.                                                                                      |
+| Valuation/InformRemarks                                                 | 1          | Boolean  | Returns remarks.                                                                                                                           |
+| @reviewDate                                                             | 1          | String   | Informs of the date when the field was last reviewed.                                                                                      |
+| Valuation/InformCancelPolicies                                          | 1          | Boolean  | Informs cancellation policies.                                                                                                             |
+| @reviewDate                                                             | 1          | String   | Informs of the date when the field was last reviewed.                                                                                      |
+| Valuation/InformCancelPoliciesDescription                               | 1          | Boolean  | Specifies if the supplier informs the cancel policies in free text.                                                                        |
+| @reviewDate                                                             | 1          | String   | Informs of the date when the field was last reviewed.                                                                                      |
+| Valuation/InformFees                                                    | 1          | Boolean  | Informs if the supplier returns fees.                                                                                                      |
+| @reviewDate                                                             | 1          | String   | Informs of the date when the field was last reviewed.                                                                                      |
+| Reservation                                                             | 1          |          | Reservation node.                                                                                                                          |
+| Reservation/AllowsDeltaPrice                                            | 1          | Boolean  | Allows a margin stipulated by the client for booking with a higher price (delta).                                                          |
+| @reviewDate                                                             | 1          | String   | Informs of the date when the field was last reviewed.                                                                                      |
+| Reservation/InformPropertyReservationNumber                             | 1          | Boolean  | Informs if the supplier returns the property reservation number.                                                                           |
+| @reviewDate                                                             | 1          | String   | Informs of the date when the field was last reviewed.                                                                                      |
+| Reservation/RequiredAllPassengers                                       | 1          | Boolean  | Required data for all passengers (names and surnames).                                                                                     |
+| @reviewDate                                                             | 1          | String   | Informs of the date when the field was last reviewed.                                                                                      |
+| Reservation/AllowsRemarks                                               | 1          | Boolean  | Informs if the supplier allows send remarks.                                                                                               |
+| @reviewDate                                                             | 1          | String   | Informs of the date when the field was last reviewed.                                                                                      |
+| Reservation/AllowsUrlCard                                               | 1          | Boolean  | Specifies if the supplier allows url card data encode when the paymente type is LaterPay.                                                  |
+| @reviewDate                                                             | 1          | String   | Informs of the date when the field was last reviewed.                                                                                      |
+| Reservation/InformBillingSupplier                                       | 1          | Boolean  | Informs data of the external supplier in the booking.                                                                                      |
+| @reviewDate                                                             | 1          | String   | Informs of the date when the field was last reviewed.                                                                                      |
+| Reservation/InformPrice                                                 | 1          | Boolean  | The supplier informs the booking price.                                                                                                    |
+| @reviewDate                                                             | 1          | String   | Informs of the date when the field was last reviewed.                                                                                      |
+| Reservation/AllowsPreferences                                           | 0..1       |          | Preference filters allowed by the provider.                                                                                                |
+| Reservation/AllowsPreferences/Preference                                | 1          |          | Each filter of preference and its values.                                                                                                  |
+| @hotel                                                                  | 1          | Boolean  | At the option / general level.                                                                                                             |
+| @room                                                                   | 1          | Boolean  | At the room level.                                                                                                                         |
+| Reservation/AllowsPreferences/Preference/PreferenceType                 | 1          |          | Type of preference allowed. See types allowed in ** Reservation:** .                                                                       |
+| Reservation/AllowsPreferences/Preference/Value                          | 1          |          | Definition of the type of preference.                                                                                                      |
+| @mandatory                                                              | 1          | Boolean  | If it is necessary to pass a value in the Preference tag in reservation request.                                                           |
+| @type                                                                   | 0..1       | String   | Type of the required value. (string, numeric, boolean)                                                                                     |
+| ReservationRead                                                         | 1          |          | ReservationRead node.                                                                                                                      |
+| ReservationRead/InformPropertyReservationNumber                         | 1          | Boolean  | Informs if the supplier returns the property reservation number.                                                                           |
+| @reviewDate                                                             | 1          | String   | Informs of the date when the field was last reviewed.                                                                                      |
+| ReservationRead/Implements                                              | 1          | Boolean  | Informs if the supplier implements this method.                                                                                            |
+| @reviewDate                                                             | 1          | String   | Informs of the date when the field was last reviewed.                                                                                      |
+| ReservationRead/AllowsProvideLocator                                    | 1          | Boolean  | The supplier allows provider locator.                                                                                                      |
+| @reviewDate                                                             | 1          | String   | Informs of the date when the field was last reviewed.                                                                                      |
+| ReservationRead/AllowsClientLocator                                     | 1          | Boolean  | The supplier allows client locator.                                                                                                        |
+| @reviewDate                                                             | 1          | String   | Informs of the date when the field was last reviewed.                                                                                      |
+| ReservationRead/InformCancelPolicies                                    | 1          | Boolean  | Informs cancellation policies.                                                                                                             |
+| @reviewDate                                                             | 1          | String   | Informs of the date when the field was last reviewed.                                                                                      |
+| ReservationRead/InformPriceCancel                                       | 1          | Boolean  | The supplier informs the cancellation price.                                                                                               |
+| @reviewDate                                                             | 1          | String   | Informs of the date when the field was last reviewed.                                                                                      |
+| ReservationList                                                         | 1          |          | ReservationList node.                                                                                                                      |
+| ReservationList/Implements                                              | 1          | Boolean  | Informs if the supplier implements this method.                                                                                            |
+| @reviewDate                                                             | 1          | String   | Informs of the date when the field was last reviewed.                                                                                      |
+| ReservationList/InformPropertyReservationNumber                         | 1          | Boolean  | Informs if the supplier returns the property reservation number.                                                                           |
+| @reviewDate                                                             | 1          | String   | Informs of the date when the field was last reviewed.                                                                                      |
+| ReservationList/AllowsCreationDate                                      | 1          | Boolean  | The supplier allows search by creation date.                                                                                               |
+| @reviewDate                                                             | 1          | String   | Informs of the date when the field was last reviewed.                                                                                      |
+| ReservationList/AllowsCheckDate                                         | 1          | Boolean  | The supplier allows search by check in date.                                                                                               |
+| @reviewDate                                                             | 1          | String   | Informs of the date when the field was last reviewed.                                                                                      |
+| ReservationList/InformCancelPolicies                                    | 1          | Boolean  | Informs cancellation policies.                                                                                                             |
+| @reviewDate                                                             | 1          | String   | Informs of the date when the field was last reviewed.                                                                                      |
+| ReservationList/InformPriceCancel                                       | 1          | Boolean  | The supplier informs the cancellation price.                                                                                               |
+| @reviewDate                                                             | 1          | String   | Informs of the date when the field was last reviewed.                                                                                      |
+| Cancel                                                                  | 1          |          | Cancel node.                                                                                                                               |
+| Cancel/Implements                                                       | 1          | Boolean  | Informs if the supplier implements this method.                                                                                            |
+| @reviewDate                                                             | 1          | String   | Informs of the date when the field was last reviewed.                                                                                      |
+| Cancel/AllowsProvideLocator                                             | 1          | Boolean  | The supplier allows provider locator.                                                                                                      |
+| @reviewDate                                                             | 1          | String   | Informs of the date when the field was last reviewed.                                                                                      |
+| Cancel/AllowsClientLocator                                              | 1          | Boolean  | The supplier allows client locator.                                                                                                        |
+| @reviewDate                                                             | 1          | String   | Informs of the date when the field was last reviewed.                                                                                      |
+| Cancel/InformPriceCancel                                                | 1          | Boolean  | The supplier informs the cancellation price.                                                                                               |
+| @reviewDate                                                             | 1          | String   | Informs of the date when the field was last reviewed.                                                                                      |
+| Batch                                                                   | 1          |          | Batch node.                                                                                                                                |
+| Batch/InformExclusiveDeal                                               | 1          | Boolean  | The supplier indicates if a Hotel is an Exclusive Deal in HotelList and/or DescriptiveInfo.                                                |
+| @reviewDate                                                             | 1          | String   | Informs of the date when the field was last reviewed.                                                                                      |
+| Batch/HotelList                                                         | 1          |          | Contains information regarding HotelList.                                                                                                  |
+| Batch/HotelList/StaticType                                              | 1          | Enum     | Informs the static type.The possible values are:	Offline, OfflineCompleted or NotImplemented.                                              |
+| @reviewDate                                                             | 1          | String   | Informs of the date when the field was last reviewed.                                                                                      |
+| Batch/HotelList/Languages                                               | 1          |          | List of languages.                                                                                                                         |
+| Batch/HotelList/Languages/Language                                      | 1..n       | String   | Language code.                                                                                                                             |
+| @reviewDate                                                             | 1          | String   | Informs of the date when the field was last reviewed.                                                                                      |
+| Batch/DescriptiveInfo                                                   | 1          |          | Contains information regarding DescriptiveInfo.                                                                                            |
+| Batch/DescriptiveInfo/StaticType                                        | 1          | Enum     | Informs the static type.The possible values are:	Offline, OfflineCompleted or NotImplemented.                                              |
+| @reviewDate                                                             | 1          | String   | Informs of the date when the field was last reviewed.                                                                                      |
+| Batch/DescriptiveInfo/Languages                                         | 1          |          | List of languages.                                                                                                                         |
+| Batch/DescriptiveInfo/Languages/Language                                | 1..n       | String   | Language code.                                                                                                                             |
+| @reviewDate                                                             | 1          | String   | Informs of the date when the field was last reviewed.                                                                                      |
+| Batch/GeographicDestinationTree                                         | 1          |          | Contains information regarding GeographicDestinationTree.                                                                                  |
+| Batch/GeographicDestinationTree/StaticType                              | 1          | Enum     | Informs the static type.The possible values are:	Offline, OfflineCompleted or NotImplemented.                                              |
+| @reviewDate                                                             | 1          | String   | Informs of the date when the field was last reviewed.                                                                                      |
+| Batch/GeographicDestinationTree/Languages                               | 1          |          | List of languages.                                                                                                                         |
+| Batch/GeographicDestinationTree/ Languages/Language                     | 1..n       | String   | Language code.                                                                                                                             |
+| @reviewDate                                                             | 1          | String   | Informs of the date when the field was last reviewed.                                                                                      |
+| Batch/RoomList                                                          | 1          |          | Contains information regarding RoomList.                                                                                                   |
+| Batch/RoomList/StaticType                                               | 1          | Enum     | Informs the static type.The possible values are:	Offline, OfflineCompleted or NotImplemented.                                              |
+| @reviewDate                                                             | 1          | String   | Informs of the date when the field was last reviewed.                                                                                      |
+| Batch/RoomList/Languages                                                | 1          |          | List of languages.                                                                                                                         |
+| Batch/RoomList/Languages/Language                                       | 1..n       | String   | Language code.                                                                                                                             |
+| @reviewDate                                                             | 1          | String   | Informs of the date when the field was last reviewed.                                                                                      |
+| Batch/MealPlanList                                                      | 1          |          | Contains information regarding MealPlanList.                                                                                               |
+| Batch/MealPlanList/StaticType                                           | 1          | Enum     | Informs the static type.The possible values are:	Offline, OfflineCompleted or NotImplemented.                                              |
+| @reviewDate                                                             | 1          | String   | Informs of the date when the field was last reviewed.                                                                                      |
+| Batch/MealPlanList/Languages                                            | 1          |          | List of languages.                                                                                                                         |
+| Batch/MealPlanList/Languages/Language                                   | 1..n       | String   | Language code.                                                                                                                             |
+| @reviewDate                                                             | 1          | String   | Informs of the date when the field was last reviewed.                                                                                      |
+| Batch/CategoryList                                                      | 1          |          | Contains information regarding CategoryList.                                                                                               |
+| Batch/CategoryList/StaticType                                           | 1          | Enum     | Informs the static type.The possible values are:	Offline, OfflineCompleted or NotImplemented.                                              |
+| @reviewDate                                                             | 1          | String   | Informs of the date when the field was last reviewed.                                                                                      |
+| Batch/CategoryList/Languages                                            | 1          |          | List of languages.                                                                                                                         |
+| Batch/CategoryList/Languages/Language                                   | 1..n       | String   | Language code.                                                                                                                             |
+| @reviewDate                                                             | 1          | String   | Informs of the date when the field was last reviewed.                                                                                      |
+| Batch/MarketList                                                        | 1          |          | Contains information regarding MarketList.                                                                                                 |
+| Batch/MarketList/StaticType                                             | 1          | Enum     | Informs the static type.The possible values are:	Offline or NotImplemented.                                                                |
+| @reviewDate                                                             | 1          | String   | Informs of the date when the field was last reviewed.                                                                                      |
+| Batch/MarketList/Languages                                              | 1          |          | List of languages.                                                                                                                         |
+| Batch/MarketList/Languages/Language                                     | 1..n       | String   | Language code.                                                                                                                             |
+| @reviewDate                                                             | 1          | String   | Informs of the date when the field was last reviewed.                                                                                      |
+| Batch/CurrencyList                                                      | 1          |          | Contains information regarding CurrencyList.                                                                                               |
+| Batch/CurrencyList/StaticType                                           | 1          | Enum     | Informs the static type.The possible values are:	Offline, OfflineCompleted or NotImplemented.                                              |
+| @reviewDate                                                             | 1          | String   | Informs of the date when the field was last reviewed.                                                                                      |
+| Batch/CurrencyList/Languages                                            | 1          |          | List of languages.                                                                                                                         |
+| Batch/CurrencyList/Languages/Language                                   | 1..n       | String   | Language code.                                                                                                                             |
+| @reviewDate                                                             | 1          | String   | Informs of the date when the field was last reviewed.                                                                                      |
+| Generic                                                                 | 1          |          | Generic node.                                                                                                                              |
+| Generic/RequiredNationality                                             | 1          | Boolean  | Informs if the supplier requires nationality in Avail, Valuation and Reservation.                                                          |
+| @reviewDate                                                             | 1          | String   | Informs of the date when the field was last reviewed.                                                                                      |
+| Generic/AllowsNationality                                               | 1          | Boolean  | Informs if the supplier allows nationality in Avail, Valuation and Reservation.                                                            |
+| @reviewDate                                                             | 1          | String   | Informs of the date when the field was last reviewed.                                                                                      |
+| Generic/AllowsOnRequest                                                 | 1          | Boolean  | If true, the supplier informs the onrequest status option in Avail, Valuation, and Reservation.                                            |
+| @reviewDate                                                             | 1          | String   | Informs of the date when the field was last reviewed.                                                                                      |
 
 
 ### Detailed description
