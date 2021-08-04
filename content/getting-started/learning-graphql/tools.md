@@ -55,3 +55,6 @@ Build, create and play with queries, it's fun!
 Here's a list of even more tools, resources, etc.
 
 * [Awesome GraphQL](https://github.com/chentsulin/awesome-graphql)
+* Free online course: [Exploring GraQL: A Query Language for APIs](https://www.edx.org/course/exploring-graphql-a-query-language-for-apis)
+* [Official GraphQL site](https://graphql.org/learn/)
+* 
