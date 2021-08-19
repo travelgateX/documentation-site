@@ -86,14 +86,14 @@ If we want to block all hotels of two accesses in the Blacklist, we should confi
 If we want to block all hotels of two suppliers in the blacklist, we should configure the file as specified below: 
 
     IdRule,ClientToken,NoClientToken,Client,NoClient,Supplier,NoSupplier,Access,NoAccess,Context,NoContext,ContextSup,NoContextSup,Values
-    r3,,,,,,HOTELTEST;TESTPRV,,,,,,,"bl:(all||all)"
+    r3,,,,,HOTELTEST;TESTPRV,,,,,,,,"bl:(all||all)"
 
     With this input hotel: ["A","B","C"] after executing the plugin, we obtain hotels: [] 
 
 If we want to block all hotels except "A" and "B" of two suppliers in the blacklist, we should configure the file as specified below: 
 
     IdRule,ClientToken,NoClientToken,Client,NoClient,Supplier,NoSupplier,Access,NoAccess,Context,NoContext,ContextSup,NoContextSup,Values
-    r3,,,,,,HOTELTEST;TESTPRV,,,,,,,"wl:(all||A;B)"
+    r3,,,,,HOTELTEST;TESTPRV,,,,,,,,"wl:(all||A;B)"
 
     With this input hotel: ["A","B","C"] after executing the plugin, we obtain hotels: ["A","B"] 
 
