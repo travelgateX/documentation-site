@@ -27,7 +27,7 @@ Following the same example case, in the response you'll find the search options 
 
 The main goal we're seeking with this plugin is allow the client the possibility to configure the markets as he may find it suits better their supplier connections. The plugin also reduces the transactions processed through our system and to your connected suppliers, which may also improve the response time in some cases.
 
-Bear in mind that this plugin is **only available in Search** step and the market groups will not be recalculated after Search step. So if you take an option from Search that has been executed with market groups, those groups will remain the same through all the booking flow, even if you change those groups via ftp. This characteristic could also affect the interaction with other plugins like **markup** or **commission**, which recalculate the rules in Quote and Book steps.
+Bear in mind that this plugin is **only available in Search** step and the market groups will not be recalculated after Search step. So if you take an option from Search that has been executed with market groups, those groups will remain the same through all the booking flow, even if you change those groups via ftp. This characteristic could also affect the interaction with other plugins like **commission**, which recalculate the rules in Quote and Book steps.
 
 Loading a Market Group X configuration file is as easy as following the steps below:
 
