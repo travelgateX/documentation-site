@@ -30,9 +30,10 @@ The preference file should be in the below format:
     * _notChainCodes_  → chain code
     * _destinationCodes_  → destination code
     * _notDestinationCodes_  → destination code
+    * _status_  → option status (OK, RQ)  
+    * _notStatus_  → option status (OK, RQ)  
     * _percentage_  → commission value, decimal separator must be point (".") 
     * _filter_competitors_  → filter competitors  
-    * _status_  → option status (OK, RQ)  
 
     **client tokens** Identifier provided by the client that is used to filter which business rules can be applied for the sent request.
     
@@ -54,9 +55,10 @@ The preference file should be in the below format:
         |notChainCodes| No | chainsCodes | Yes |
         |DestinationCodes| No | notDestinationCodes | Yes |
         |notDestinationCodes| No | DestinationCodes | Yes |
+        |status| No | notStatus | Yes |
+        |notStatus| No | status | Yes |
         |percentage| Yes | - | No |
         |filter_competitors| Yes | - | Yes |
-        |status| No | - | Yes |
         *Excluded fields **Informed field will be ignored**
 
 * **Delimiter**:  Comma (“,”)
@@ -82,12 +84,12 @@ T9,subcanal-EROSKI_B2B,INT,,,,,,,,,,,BTEMX,5.0,TRUE
 **Multivalue field**
 ```csv
 ruleId,clientTokens,supplierCodes,notSupplierCodes,bookingDateFrom,bookingDateTo,startDateFrom,startDateTo,hotelCodes,notHotelCodes,chainCodes,notChainCodes,destinationCodes,notDestinationCodes,percentage,filter_competitors, status
-T1,,RIU,,,,,,,,,,,,999.00,TRUE,RQ;OK
-T3,,BAR,,,,,,,,,,,,999.00,FALSE,RQ
-T4,,SEN,,,,,,,,,,,,999.00,FALSE,RQ
-T7,,RHO,,,,,,,,,,,,10.0,FALSE,RQ
-T9,subcanal-EROSKI_B2B,INT,,,,,,,,,,,BTEMX,5.0,TRUE,OK
-T10,,GTA;HOBV2;TOU,,,,,,,,,,ACDMS,,5.5,FALSE,RQ;OK
+T1,,RIU,,,,,,,,,,,,RQ;OK,,999.00,TRUE
+T3,,BAR,,,,,,,,,,,,RQ,,999.00,FALSE
+T4,,SEN,,,,,,,,,,,,RQ,,999.00,FALSE
+T7,,RHO,,,,,,,,,,,,RQ,,10.0,FALSE
+T9,subcanal-EROSKI_B2B,INT,,,,,,,,,,,RQ,,BTEMX,5.0,TRUE
+T10,,GTA;HOBV2;TOU,,,,,,,,,,RQ;OK,,ACDMS,,5.5,FALSE
 ```
 
 ### **Date format** {#dateformat}
