@@ -36,8 +36,8 @@ We read sequentially the commission file if the columns **chainCodes,destination
 
 |Entity | chainCodes| destinationCodes| hotelCodes |
 |---------|---|---|---|
-|[hotel](/hotel-x/plugins/entity_table_file#hotel)| Yes | Yes | No |
-|[destination](/hotel-x/plugins/entity_table_file#destination)| Yes | No | Yes |
+|[hotel](connectiontypesbuyers/hotel-x/plugins/entity_table_file#hotel)| Yes | Yes | No |
+|[destination](connectiontypesbuyers/hotel-x/plugins/entity_table_file#destination)| Yes | No | Yes |
 
 ### Execution example
 if you want index by client tokens it is necessary to specify the client token as shown below, if the token is not specified, by default, the system will apply those rules that do not have client tokens.
