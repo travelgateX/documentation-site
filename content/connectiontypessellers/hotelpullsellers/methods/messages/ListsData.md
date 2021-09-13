@@ -202,3 +202,52 @@ We use a standard ISO - 3166_1_alfa_2.
 | **Codes** | **Description**             |
 |-----------|-----------------------------|
 | soloHotel | Option Type used for hotels |
+
+
+### View Codes
+
+| **Codes**        | **Description**                                                                                                  |
+|------------------|------------------------------------------------------------------------------------------------------------------|
+| Others           | Other View. |
+| Airport          | Airport View. |
+| Bay              | Bay View. |
+| Golf             | Golf View. |
+| Mountain         | Mountain View. |
+| Ocean            | Ocean View. |
+| Pool             | Pool View. |
+| River            | River View. |
+| Water            | Water View. |
+| Beach            | Beach View. |
+| Garden           | Garden View. |
+| Park             | Park View. |
+| Forest           | Forest View. |
+| RainForest       | RainForest View. |
+| Various          | Various Views. |
+| Countryside      | Countryside View. |
+| Sea              | Sea View. |
+
+### Room Classifications
+
+| **Codes**        | **Description**                                                                                                  |
+|------------------|------------------------------------------------------------------------------------------------------------------|
+| Others           | Other kind of room.|
+| House          | House. |
+| AllEstablishment              | All Establishment. |
+| Aparthotel             | Room is in a Aparthotel. |
+| Cave         | Cave Room. |
+| Plaza            | Plaza Room. |
+| Bed             | Bed |
+| Aparments            | Room is an apartment. |
+| Studios            | Studio Room. |
+| Cottage            | Cottage Room. |
+| Bungalow           | Bungalow |
+| JuniorSuite             | JuniorSuite Room |
+| Classic           | Classic Room. |
+| Comfort       | Classic Room. |
+| Deluxe          | Deluxe Room. |
+| DeluxeSuite      | Deluxe Suite. |
+| Economy              | Economy Room. |
+| Luxury       | Luxury Room. |
+| Premier          | Premier Room. |
+| Standard      | Standard Room. |
+| Superior              | Superior Room.|

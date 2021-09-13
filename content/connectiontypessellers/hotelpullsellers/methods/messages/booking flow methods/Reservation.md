@@ -90,7 +90,7 @@ In the request for this call it is necessary to use the object: "HotelBaseRQ". Y
             <CVC>123</CVC>
         </CardInfo>
         <Rooms>
-            <Room id = "4582" roomCandidateRefId = "1" code = "506" description = "Double Standard.."/>
+            <Room id = "4582" roomCandidateRefId = "1" code = "506" description = "Double Standard..">
             <Preferences>
                 <Preference type = "Smoker"/>
                 <Preference type = "NonSmoker"/>
@@ -99,9 +99,26 @@ In the request for this call it is necessary to use the object: "HotelBaseRQ". Y
                 <Preference type = "DoubleBed"/>
                 <Preference type = "TwinBeds"/>
             </Preferences>
+            </Room>
+            <Room id = "4583" roomCandidateRefId = "2" code = "507" description = "Twin Standard..">
+            <Preferences>
+                <Preference type = "Smoker"/>
+                <Preference type = "NonSmoker"/>
+                <Preference type = "ExtraBed"/>
+                <Preference type = "Cradle"/>
+                <Preference type = "DoubleBed"/>
+                <Preference type = "TwinBeds"/>
+            </Preferences>
+            </Room>
         </Rooms>
         <RoomCandidates>
             <RoomCandidate id = "1">
+                <Paxes>
+                    <Pax age = "30" id = "1"/>
+                    <Pax age = "30" id = "2"/>
+                </Paxes>
+            </RoomCandidate>
+            <RoomCandidate id = "2">
                 <Paxes>
                     <Pax age = "30" id = "1"/>
                     <Pax age = "30" id = "2"/>
@@ -202,7 +219,7 @@ In the request for this call it is necessary to use the object: "HotelBaseRQ". Y
 | @id      					| 1  		| Integer	| Id of the requested room (starting at 1).		|
 | RoomCandidates/RoomCandidate/Paxes/Pax	| 1..n    	|		| Pax required.						|
 | @age     					| 1  		| Integer	| Passenger age. 					|
-| @id      					| 1  		| Integer	| Passenger id (starting at 1). 			|
+| @id      					| 1  		| Integer	| Passenger id (starting at 1, this identifier is at room level). 			|
 | Remarks       				| 0..1    	| 		| Any customer comments for the supplier to consider (see [MetaData](/connectiontypessellers/hotelpullsellers/methods/messages/static-methods/metadata/) in order to verify if a supplier implements it).	|
 | Preferences    				| 0..1    	|		| Preference filters at the option / general level. 					|
 | Preferences/Preference   				| 1..n    	|		| Each filter of preference and its values. 		|

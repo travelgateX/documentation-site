@@ -100,7 +100,59 @@ In the request for this call it is necessary to use the object: "HotelBaseRQ". Y
         <ShortDescription>the hotel.....</ShortDescription>
         <LongDescription>the hotel....</LongDescription>
         <HowToGet></HowToGet>
-        <RoomDescription>....</RoomDescription>
+        <Rooms>
+            <Room code = "201232338" size = "0" quantity = "0" viewCode = "Others" classificationCode = "Others" occupancy = "0">
+                <Beds>
+                    <Bed numberOfBeds = "1" type = "QueenBed"/>
+                </Beds>
+                <Attributes>                      
+                    <Attribute>
+                        <Code>2403</Code>
+                        <Classification>HAB</Classification>
+                        <Description>Free WiFi</Description>
+                    </Attribute>
+                    <Attribute>
+                        <Code>2399</Code>
+                        <Classification>HAB</Classification>
+                        <Description>Flat-panel TV</Description>
+                    </Attribute>
+                    <Attribute>
+                        <Code>2398</Code>
+                        <Classification>HAB</Classification>
+                        <Description>Cable TV service</Description>
+                    </Attribute>
+                    <Attribute>
+                        <Code>4951</Code>
+                        <Classification>HAB</Classification>
+                        <Description>Free cribs/infant beds</Description>
+                    </Attribute>
+                    <Attribute>
+                        <Code>318</Code>
+                        <Classification>HAB</Classification>
+                        <Description>Balcony</Description>
+                    </Attribute>
+                </Attributes>
+                <Images>
+                    <Picture>
+                        <URL>https://i.travelapi.com/hotels/8000000/7770000/7769600/7769581/72588f9a_z.jpg</URL>
+                        <Classification>HAB</Classification>
+                        <UpgradeUTCDate>0001-01-01T00:00:00</UpgradeUTCDate>
+                    </Picture>
+                    <Picture>
+                        <URL>https://i.travelapi.com/hotels/8000000/7770000/7769600/7769581/bd3da76f_z.jpg</URL>
+                        <Classification>HAB</Classification>
+                        <UpgradeUTCDate>0001-01-01T00:00:00</UpgradeUTCDate>
+                    </Picture>
+                </Images>
+                <Description>Small Double Room with Balcony</Description>
+                <Views>
+                    <View>
+                        <Code>4219</Code>
+                        <Name>Mountain view</Name>
+                    </View>
+                </Views>
+            </Room>    
+        </Rooms>
         <SituationDescription>....</SituationDescription>
         <Attributes>
             <Attribute>
@@ -189,7 +241,7 @@ In the request for this call it is necessary to use the object: "HotelBaseRQ". Y
                 <Card code="AX"/>
                 <Card code="CA"/>
             </Cards>
-        <PaymentOptions/>
+        </PaymentOptions>
         <ExclusiveDeal>true</ExclusiveDeal>
         <PropertyCategory>
              <Code>1</Code>
@@ -236,10 +288,42 @@ In the request for this call it is necessary to use the object: "HotelBaseRQ". Y
 | BookingContact/Telephone		| 1    		| String	| Telephone. 							|
 | BookingContact/Fax			| 1    		| String	| Fax.   							|
 | Chaincode  				| 0..1 		| String	| Hotel chain code.							|
-| ShortDescription			| 0..1 		| String	| Short description.   						|
-| LongDescription			| 0..1 		| String	| Long description.    						|
+| ShortDescription			| 0..1 		| String	| A brief description of the hotel.   						|
+| LongDescription			| 0..1 		| String	| An extended description that can include remarks, observations and other relevant information about the hotel.    						|
 | HowToGet   				| 0..1 		| String	| Directions to the hotel.					|
-| RoomDescription			| 0..1 		| String	| Room description.   						|
+| Rooms			            | 0..1 		|   	| Rooms.   						|
+| Rooms/Room			            | 1..n 		|   	| Room.   						|
+| @code			            | 1 		|  String 	| Room Code.   						|
+| @size			            | 1 		|  Integer 	| Size of the room.						|
+| @quantity			            | 1 		|  Integer 	| Number of rooms availables at the hotel. 						|
+| @viewCode			            | 1 		|  String 	| Main view of the room. See the full list of card codes at [Lists of Data](/connectiontypessellers/hotelpullsellers/methods/messages/listsdata/#view-codes).					|
+| @classificationCode			            | 1 		|  String 	| Room classification code. See the full list of card codes at [Lists of Data](/connectiontypessellers/hotelpullsellers/methods/messages/listsdata/#room-classifications).						|
+| @occupancy			            | 1 		|  Integer 	| Number of rooms availables at the hotel. 						|
+| Rooms/Room/Description			            | 1 		|  String 	| Room Description.   						|
+| Rooms/Room/Beds			            | 0..1 		|   	| Room bedding.				|
+| @sharedBed			            | 1 		|   Boolean	| Indicates if it's a shared bed.				|
+| Rooms/Room/Beds/Bed			            | 1..n 		|   	| Number of beds allocated in the room.					|
+| @numberOfBeds			            | 1 		|   String	| Number of beds allocated in the room.				|
+| @type			            | 1 		|   String	| Type of bed. (Queen Bed, Single...)				|
+| Rooms/Room/RoomOccupancy			            | 1 		|   	| Room ocuppancy.						|
+| Rooms/Room/RoomOccupancy/Adults			            | 1 		|   	| Indicates ocuppancy for adults.						|
+| Rooms/Room/RoomOccupancy/Adults/Min			            | 1 		|  Integer 	| Indicates minimum number of adults.					|
+| Rooms/Room/RoomOccupancy/Adults/Max			            | 1 		|  Integer 	| Indicates maximum number of adults.					|
+| Rooms/Room/RoomOccupancy/Children			            | 1 		|   	| Indicates ocuppancy for children. 						|
+| Rooms/Room/RoomOccupancy/Children/Min			            | 1 		|  Integer 	| Indicates minimum number of children.					|
+| Rooms/Room/RoomOccupancy/Children/Max			            | 1 		|  Integer 	| Indicates maximum number of children.					|
+| Rooms/Room/RoomOccupancy/Infants			            | 1 		|   	| Indicates ocuppancy for infants 						|
+| Rooms/Room/RoomOccupancy/Infants/Min			            | 1 		|  Integer 	| Indicates minimum number of infants.					|
+| Rooms/Room/RoomOccupancy/Infants/Max			            | 1 		|  Integer 	| Indicates maximum number of infants.					|
+| Rooms/Room/RoomOccupancy/Total			            | 1 		|   	| Indicates total room ocuppancy without breakout per pax.					|
+| Rooms/Room/RoomOccupancy/Total/Min			            | 1 		|  Integer 	| Indicates minimum number of paxes.					|
+| Rooms/Room/RoomOccupancy/Total/Max			            | 1 		|  Integer 	| Indicates maximum number of paxes.					|
+| Rooms/Room/Views			            | 0..1 		|   	| Views of the room.					|
+| Rooms/Room/Views/View			            | 1..n 		|   	| List of views.					|
+| Rooms/Room/Views/View/Code			            | 1..n 		|  String 	| View code.				|
+| Rooms/Room/Views/View/Name			            | 1..n 		|  String 	| Name of the View.					|
+| Rooms/Room/Attributes			            | 1 		|   	| Room Attributes. (Follows same structure as Hotel Attributes)					|
+| Rooms/Room/Images			            | 1 		|   	| Room Images.	(Follows same structure as Hotel Images)				|
 | SituationDescription			| 0..1 		| String	| Area description.					|
 | RestaurantsDescription		| 0..1 		| String	| Restaurants description.					|
 | PoolsDescription			| 0..1 		| String	| Pools description.    					|
@@ -264,7 +348,7 @@ In the request for this call it is necessary to use the object: "HotelBaseRQ". Y
 | PaymentOptions			| 0..1 		| String	| Type of cards allowed by the supplier. This tag is only mandatory if payment type is different than *MerchantPay*.	 |
 | PaymentOptions/Cards/Cards		| 1          	|		| List of cards allowed.					|
 | PaymentOptions/Cards/Card		| 1..n       	|		| Type of card allowed. 						|
-| @code 				| 1    		| String	| Code of card. Se the full list of card codes at [Lists of Data](/connectiontypessellers/hotelpullsellers/methods/messages/listsdata/#credit-cards).		|
+| @code 				| 1    		| String	| Code of card. See the full list of card codes at [Lists of Data](/connectiontypessellers/hotelpullsellers/methods/messages/listsdata/#credit-cards).		|
 | ExclusiveDeal				| 0..1 		| Boolean 	| Indicates that a Hotel is an Exlusive Deal.	|
 | PropertyCategory			| 0..1       	|		| Hotels property type. Similar to Type tag, but on supplier's side. |
 | PropertyCategory/Code			| 1    		| String	| Supplier property code.					|
