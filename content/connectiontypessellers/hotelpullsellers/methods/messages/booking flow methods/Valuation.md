@@ -52,7 +52,6 @@ In the request for this call it is necessary to use the object: "HotelBaseRQ". Y
    <PaymentType>MerchantPay</PaymentType>
    <OptionType>Hotel</OptionType>
    <OnRequest>false</OnRequest>
-   <BlockOption>false</BlockOption>
    <Nationality>ES</Nationality>
    <Parameters>
        <Parameter key = "ID1" value = "ID#1#VR"/>
@@ -89,7 +88,6 @@ In the request for this call it is necessary to use the object: "HotelBaseRQ". Y
 | StartDate                              | 1          | String   | Start date of rate search. Format dd/MM/yyyy	 |
 | EndDate                                | 1          | String   | End date of rates search. Format dd/MM/yyyy	 |
 | OnRequest                              | 1          | Boolean  | Indicates if you want to receive the on request options in AvailRS, as long as the supplier returns it in this method (see [MetaData](/connectiontypessellers/hotelpullsellers/methods/messages/static-methods/metadata/)). |
-| BlockOption                            | 1          | Boolean  | Indicates if you want to block the option selected in AvailRS, as long as the supplier allows it in this method (see [MetaData](/connectiontypessellers/hotelpullsellers/methods/messages/static-methods/metadata/)). |
 | MealPlanCode                           | 1          | String   | MealPlan code.  |
 | HotelCode                              | 1          | String   | Hotel code.     |
 | PaymentType                            | 1          | String   | Indicates payment type (See full type list at [Lists of Data](/connectiontypessellers/hotelpullsellers/methods/messages/listsdata/#payment-types)). |
