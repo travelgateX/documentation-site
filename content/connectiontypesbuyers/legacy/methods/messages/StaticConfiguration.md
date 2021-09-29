@@ -1,5 +1,5 @@
 +++
-title= "StaticConfiguration"
+title= "StaticConfiguration (Deprecated)"
 keywords= "hotel, data structure, static configuration, static"
 search= "Hotel - Data Structure - StaticConfiguration"
 sidebar= "mydoc_sidebar"
@@ -7,7 +7,7 @@ permalink= "/docs/hotel/DSF/StaticConfiguration"
 weight = 21
 +++
 
-
+{{% alert theme="warning" %}}This method is deprecated, use [MetaData](/connectiontypesbuyers/legacy/methods/messages/metadata/) method{{% /alert %}}
 
 
 ### Method Goals
