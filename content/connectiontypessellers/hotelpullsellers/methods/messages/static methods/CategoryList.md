@@ -5,6 +5,7 @@ search= "Hotel - Data Structure - CategoryList"
 sidebar= "mydoc_sidebar"
 permalink= "/docs/hotel/DSF/CategoryList"
 weight = 5
+icon = "fa-star-half-empty" 
 +++
 
 
@@ -39,6 +40,7 @@ The maximum time permitted in our system before the connection is closed is **24
 
 ### CategoryListRQ Example
 
+In the request of this call it is only necessary to use the object: "HotelBaseRQ". You can find the info in the '[Common Elements](/connectiontypessellers/hotelpullsellers/methods/messages/common-elements/)' section.
 
 ~~~xml
     <CategoryListRQ>

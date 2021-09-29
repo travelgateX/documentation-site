@@ -5,6 +5,7 @@ search= "Hotel - Data Structure - MarketList"
 sidebar= "mydoc_sidebar"
 permalink= "/docs/hotel/DSF/MarketList"
 weight = 13
+icon = "fa-shopping-basket"
 +++
 
 
@@ -41,6 +42,7 @@ Most suppliers use a standard ISO - 3166_1_alfa_2, but it depends on each indivi
 
 ### MarketListRQ Example
 
+In the request of this call it is only necessary to use the object: "HotelBaseRQ". You can find the info in the '[Common Elements](/connectiontypessellers/hotelpullsellers/methods/messages/common-elements/)' section.
 
 ~~~xml
     <MarketListRQ>

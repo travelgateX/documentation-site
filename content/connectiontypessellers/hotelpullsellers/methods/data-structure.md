@@ -5,6 +5,7 @@ search= "Hotel - Data Structure"
 sidebar= "mydoc_sidebar"
 permalink = "/docs/hotel/data-structure"
 weight = 1
+icon = "fa-map-o"
 +++
 
 The structure of the API specification follows a standard. This document intends to explain every aspect of this structure and their fields. 
