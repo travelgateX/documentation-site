@@ -43,6 +43,7 @@ This paragraph aims to return all of the data lists used in our system: language
 | 103      | Too many requests.                                                                              |
 | 104      | Timeout (Timeout during the execution of an operation (look in the common attribute timeout )). |
 | 105      | Communication Error between your system and TravelgateX.                                        |
+| 201      | Hotels not found in HotelList                                                                   |
 | 204      | Your system does not return any results (For example no availability).                          |
 | 205      | Your system does not accept the distribution in the request.                                    |
 | 206      | Your system does not accept the dates of the request.                                           |
