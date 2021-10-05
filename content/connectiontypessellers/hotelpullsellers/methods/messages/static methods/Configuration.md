@@ -1,5 +1,5 @@
 +++
-title= "Configuration Method"
+title= "Configuration"
 keywords= "hotel, data structure, configuration, connection, template"
 search= "Hotel - Data Structure - Configuration"
 sidebar= "mydoc_sidebar"
@@ -7,6 +7,8 @@ permalink= "/docs/hotel/DSF/RuntimeConfiguration"
 weight = 1
 icon = "fa-cog" 
 +++
+
+
 
 ### Method Goals
 
@@ -31,12 +33,13 @@ The returned XML contains a template of all connection fields used in order to c
 
 ### ConfigurationRQ Example
 
+In the request of this call it is only necessary to use the object: "HotelBaseRQ". You can find the info in the '[Common Elements](/connectiontypessellers/hotelpullsellers/methods/messages/common-elements/)' section.
 
 ~~~xml
     <ConfigurationRQ>
-        <timeoutMilliseconds>2000</timeoutMilliseconds>
     </ConfigurationRQ>
 ~~~
+
 
 
 ### ConfigurationRQ Description
@@ -46,9 +49,7 @@ The returned XML contains a template of all connection fields used in order to c
 | **Element**			| **Number**	| **Type**	| **Description**	    |
 | ----------------------| ------------- | ----------| --------------------- |
 | ConfigurationRQ	    | 1          	|		    | Root node.		    |
-| ConfigurationRQ/timeoutMilliseconds	    | 1          	|		    | 	Maximum time for a response from the system.    |
-                 
-
+                
 
 
 ### ConfigurationRS Example
@@ -59,83 +60,126 @@ The returned XML contains a template of all connection fields used in order to c
     <operationImplemented>true</operationImplemented>
     <Parameters>
         <Parameter>
-            <TagRunTime>User</TagRunTime>
-            <ProviderTagName>AgentID</ProviderTagName>
-            <Show>true</Show>
-            <Mandatory>true</Mandatory>
-            <Pattern>[-A-Za-z0-9+&amp;@#/%=~_|]</Pattern>
-            <Description>User Name</Description>
-            <Type>string</Type>
-            <ApplyMethods>
-                <Method>Avail</Method>
-                <Method>Valuation</Method>
-                <Method>Reservation</Method>
-                <Method>ReservationRead</Method>
-                <Method>ReservationList</Method>
-                <Method>Cancel</Method>
-                <Method>HotelList</Method>
-                <Method>DescriptiveInfo</Method>
-                <Method>GeographicDestinationTree</Method>
-            </ApplyMethods>
-        </Parameter>
-        <Parameter>
-            <TagRunTime>Password</TagRunTime>
-            <ProviderTagName>Password</ProviderTagName>
-            <Show>true</Show>
-            <Mandatory>true</Mandatory>
-            <Pattern>[-A-Za-z0-9+&amp;@#/%=~_|]</Pattern>
-            <Description>User Password</Description>
-            <Type>string</Type>
-            <ApplyMethods>
-                <Method>Avail</Method>
-                <Method>Valuation</Method>
-                <Method>Reservation</Method>
-                <Method>ReservationRead</Method>
-                <Method>ReservationList</Method>
-                <Method>Cancel</Method>
-                <Method>HotelList</Method>
-                <Method>DescriptiveInfo</Method>
-                <Method>GeographicDestinationTree</Method>
-            </ApplyMethods>
-        </Parameter>
-        <Parameter>
             <TagRunTime>UrlGeneric</TagRunTime>
+            <ProviderTagName>Endpoint Supplier</ProviderTagName>
             <Show>true</Show>
             <Mandatory>true</Mandatory>
-            <Pattern>^(?:(http(s)?|ftp|file):\/\/)?[\w.-]+(?:\.[\w\.-]+)+[\w\-\._~:/?#[\]@!\$&amp;'\(\)\*\+,;=.]+$</Pattern>
-            <Description>Generic URL</Description>
+            <Pattern>^(?:(http(s)?|ftp|file):\/\/)?[\w.-]+(?:\.[\w\.-]+)+[\w\-\._~:/?#[\]@!\$&'\(\)\*\+,;=.]+$</Pattern>
+            <DescriptionPattern>Please, this field expects the value of a url.</DescriptionPattern>
+            <Description>Endpoint Supplier Restel</Description>
             <Type>uri</Type>
-            <ExampleValue>http://live.integraciones.ilunionhotels.com:5555/partner</ExampleValue>
-            <ApplyMethods>
-                <Method>Avail</Method>
-                <Method>Valuation</Method>
-                <Method>Reservation</Method>
-                <Method>ReservationRead</Method>
-                <Method>ReservationList</Method>
-                <Method>Cancel</Method>
-                <Method>HotelList</Method>
-                <Method>DescriptiveInfo</Method>
-                <Method>GeographicDestinationTree</Method>
-            </ApplyMethods>
+            <DefaultValue>http://xml.hotelresb2b.com/xml/listen_xml.jsp</DefaultValue>
+        </Parameter>
+        <Parameter>
+            <TagRunTime>Parameter</TagRunTime>
+            <ProviderTagName>codigousu</ProviderTagName>
+            <Show>true</Show>
+            <Mandatory>true</Mandatory>
+            <Description>User code, credentials</Description>
+            <Type>string</Type>
+            <Key>Usuario</Key>
+            <ExampleValue>TravelgateTest</ExampleValue>
+        </Parameter>
+        <Parameter>
+            <TagRunTime>Parameter</TagRunTime>
+            <ProviderTagName>clausu</ProviderTagName>
+            <Show>true</Show>
+            <Mandatory>true</Mandatory>
+            <Description>User Password, credentials</Description>
+            <Type>string</Type>
+            <Key>Password</Key>
+            <ExampleValue>travelgate123</ExampleValue>
+        </Parameter>
+        <Parameter>
+            <TagRunTime>Parameter</TagRunTime>
+            <ProviderTagName>afiliacio</ProviderTagName>
+            <Show>true</Show>
+            <Mandatory>true</Mandatory>
+            <Pattern>[A-Z]{2}</Pattern>
+            <DescriptionPattern>Please, this field expects a 2 digit uppercase character value.</DescriptionPattern>
+            <Description>Affiliation of the user, affiliation of the XML account created. Two digit code, exactly as it is supplied by HOTUSA.This code refers to which brand it belongs to</Description>
+            <Type>string</Type>
+            <Key>Afiliacion</Key>
+            <ExampleValue>TS</ExampleValue>
+        </Parameter>
+        <Parameter>
+            <TagRunTime>Parameter</TagRunTime>
+            <ProviderTagName>codusu</ProviderTagName>
+            <Show>true</Show>
+            <Mandatory>true</Mandatory>
+            <Pattern>[A-Z,0-9]{6}</Pattern>
+            <DescriptionPattern>Please, this field expects a value of 6 digits, uppercase or numeric characters.</DescriptionPattern>
+            <Description>User code</Description>
+            <Type>string</Type>
+            <Key>CodigoUsuario</Key>
+            <ExampleValue>D65934</ExampleValue>
+        </Parameter>
+        <Parameter>
+            <TagRunTime>Parameter</TagRunTime>
+            <ProviderTagName>secacc</ProviderTagName>
+            <Show>true</Show>
+            <Mandatory>true</Mandatory>
+            <Pattern>[0-9]{5,6}</Pattern>
+            <DescriptionPattern>Please, this field expects a value of 5 or 6 numeric digits.</DescriptionPattern>
+            <Description>Access code, access sequence</Description>
+            <Type>string</Type>
+            <Key>SecAcc</Key>
+            <ExampleValue>245698</ExampleValue>
         </Parameter>
         <Parameter>
             <TagRunTime>Parameter</TagRunTime>
             <Show>true</Show>
             <Mandatory>false</Mandatory>
-            <Pattern>[-A-Za-z0-9+&amp;@#/%=~_|]</Pattern>
-            <Description>Range of infants, children and adults. from 0 to 2 infants, from 3 to 12 children, 13+ adults</Description>
-            <Type>string</Type>
-            <Key>RangoEdades</Key>
-            <ExampleValue>2|12|18</ExampleValue>
-            <ApplyMethods>
-                <Method>Avail</Method>
-                <Method>Valuation</Method>
-                <Method>Reservation</Method>
-            </ApplyMethods>
+            <Pattern>true|false</Pattern>
+            <DescriptionPattern>Please, this field expects a boolean value, 'true' or 'false'</DescriptionPattern>
+            <Description>If the value is true, we show only the non-refundable options.</Description>
+            <Type>boolean</Type>
+            <Key>ShowRateNonRefundable</Key>
+            <DefaultValue>false</DefaultValue>
+            <PossibleValues>
+                <PossibleValue>true</PossibleValue>
+                <PossibleValue>false</PossibleValue>
+            </PossibleValues>
+        </Parameter>
+        <Parameter>
+            <TagRunTime>Parameter</TagRunTime>
+            <ProviderTagName>duplicidad</ProviderTagName>
+            <Show>false</Show>
+            <Mandatory>false</Mandatory>
+            <Description>Duplicity will serve to filter duplicates, that is, on some occasions,a hotel can offer us different offers, if we want them to appear all of them in the list, just do not include this tag or leave it to zero, if you want the list to appear of  better offers, label in value 1 (thebest offer criterion is based on this order: better availability / better price of the. first room / regime find).</Description>
+            <Type>numeric</Type>
+            <Key>duplicity</Key>
+            <DefaultValue>0</DefaultValue>
+            <PossibleValues>
+                <PossibleValue>0</PossibleValue>
+                <PossibleValue>1</PossibleValue>
+            </PossibleValues>
+        </Parameter>
+        <Parameter>
+            <TagRunTime>Parameter</TagRunTime>
+            <Show>false</Show>
+            <Mandatory>true</Mandatory>
+            <Pattern>^(?:(http(s)?|ftp|file):\/\/)?[\w.-]+(?:\.[\w\.-]+)+[\w\-\._~:/?#[\]@!\$&'\(\)\*\+,;=.]+$</Pattern>
+            <DescriptionPattern>Please, this field expects the value of a url.</DescriptionPattern>
+            <Description>Url Room List</Description>
+            <Type>uri</Type>
+            <Key>urlListRooms</Key>
+            <DefaultValue>http://xtghubstatic.blob.core.windows.net/int-static-hotel/HOT-RoomTypes.csv</DefaultValue>
         </Parameter>
     </Parameters>
-</ConfigurationRS>
-~~~
+</ConfigurationRS>  
+~~~  
+
+\
+\
+
+This is the example of how the form is displayed with the previous xml response.
+
+
+
+![This is the example of how the form is displayed with the previous xml response](/connectiontypessellers/hotelpullsellers/images/ExampleFormBuena.png)
+
+
 
 
 ### ConfiguracionRS Description
@@ -147,7 +191,7 @@ The returned XML contains a template of all connection fields used in order to c
 | ConfigurationRS	            | 1          	|		        | Root node.				            |
 | Parameters	                | 1          	|               | 				|
 | Parameters/Parameter	        | 1..n          |               | 				| 
-| Parameters/Parameter/TagRunTime |  1        	|Enum               | This is the tag of the configuration node in the requests that you want to contextualize in the activation form. Possible values: _User_, _Password_, _UrlAvail_, _UrlReservation_, _UrlValuation_, _UrlGeneric_, _Parameter_. See [Configuration] (/connectiontypessellers/hotelpullsellers/how-to-guides/configuration/)			| 
+| Parameters/Parameter/TagRunTime |  1        	|Enum               | This is the tag of the configuration node in the requests that you want to contextualize in the activation form. Possible values: _User_, _Password_, _UrlAvail_, _UrlReservation_, _UrlValuation_, _UrlGeneric_, _Parameter_. See [Configuration](/connectiontypessellers/hotelpullsellers/how-to-guides/configuration/)			| 
 | Parameters/Parameter/ProviderTagName	            | 1        	| String  | Name of the parameter in the activation form, as you use our PULL Seller API, it is recomendable to put similar names used on it in a human readbility format. For example: _Availability Url_, _Valuation Url_ ... If it is an extra parameter, you should put a name similar to the key used, and preferly with a human readbility format too. 				| 
 | Parameters/Parameter/Show	            | 1         	| Boolean				| Indicates if you want to show the parameter in the connection form or not. May be you want that some parameter to be filled internally and you do not want the Buyer fill it in. |
 | Parameters/Parameter/Mandatory	            | 1         	| Boolean  | Indicates if the parameter is compulsory or not in order to make a connection without any problem.		| 
@@ -159,12 +203,13 @@ The returned XML contains a template of all connection fields used in order to c
 | Parameters/Parameter/DefaultValue	            | 0..1         	| String   | Value by the default, if the Buyer do not change it, all connections to you are set up with this value. | 
 | Parameters/Parameter/ExampleValue	            | 0..1         	| String   | Value of the placeholder for this parameter in the form. If the Buyer do not fill the parameter, the value is empty				| 
 | Parameters/Parameter/PossibleValues	            | 0..1         	|   | 				| 
-| Parameters/Parameter/PossibleValues/PossibleValue	            | 1..n         	| String   | If you return a list of possible parameter values, in the connection form the Buyer only can choose one of this values.   | 
-| Parameters/Parameter/ApplyMethods	            | 1         	|   | 				| 
-| Parameters/Parameter/ApplyMethods/Method	            | 1..n         	|  Enum | Method where the parameter is used. The values are: _Avail_, _Cancel_, _CategoryList_, _CurrencyList_, _DescriptiveInfo_, _GeographicDestinationTree_, _HotelList_, _MarketList_, _MealPlanList_, _MetaData_, _Reservation_, _ReservationList_, _ReservationRead_, _RoomList_, _Valuation_| 
+| Parameters/Parameter/PossibleValues/PossibleValue	            | 1..n         	| String   | If you return a list of possible parameter values, in the connection form the Buyer only can choose one of this values.|
+
 \
 \
-#### **Patterns** {#paterns}
+
+
+#### **Patterns**{#paterns}
 
 All the patterns must work with Golang and ECMAScript(javaScript). You can validate your regular expressions by this two laguanges at [regex101](https://regex101.com/).
 

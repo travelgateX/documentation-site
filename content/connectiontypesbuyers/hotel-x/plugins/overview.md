@@ -47,7 +47,6 @@ Plugin types supported by [HotelX](/hotel-x/):
 * [Room Map](../mapping): Room mapping codes.
 * [Currency Conversion](../converter): Currency rate conversion.
 * [Net Price](../net-price): Calculate the net price. 
-* [Markup](../markup): Markups to `supplier` price.
 * [Aggregation](../aggregation): Aggregate multiple `supplier` options.
 * [Post Step]: Last execution on every _step_.
 
@@ -72,7 +71,7 @@ With _context_ information developers can personalize _plugin_ features, more in
 | --- | --- | --- | --- | --- |
 | _Request_ | [Pre Step]<br>[Hotel Map](../mapping)<br>[Post Step]|[Pre Step]<br>[Post Step]|[Pre Step]<br>[Post Step]|[Pre Step] <br>[Post Step]|[Post Step]|[Pre Step] <br>[Post Step]|
 | _Request Access_ | [Pre Step]<br>[Post Step] |[Pre Step] <br>[Post Step]|[Pre Step] <br>[Post Step]|[Pre Step] <br>[Post Step]|
-| _Response Option_ |[Pre Step]<br>[Board Map](../mapping)<br>[Room Map](../mapping)<br>[Rate Map](#../rate-map)<br>[Currency Conversion](../currency-conversion)<br>[Net Price](../net-price)<br>[CommissionX](../net-price#commissionX)<br>[Markup](../markup)<br>[Aggregation](../aggregation)<br>[Post Step]<br>[Safety Margin](../safety_margin)| [Pre Step]<br>[Board Map](../mapping)<br>[Room Map](../mapping)<br>[Currency Conversion](../currency-conversion)<br>[Net Price](../net-price)<br>[CommissionX](../net-price#commissionX)<br>[Markup](../markup)<br>[Post Step]|[Pre Step]<br>[Board Map](../mapping)<br>[Room Map](../mapping)<br>[Currency Conversion](../currency-conversion)<br>[Net Price](../net-price)<br>[CommissionX](../net-price#commissionX)<br>[Markup](../markup)<br>[Post Step] |[Pre Step]<br>[Board Map](../mapping)<br>[Room Map](../mapping)<br>[Currency Conversion](../currency-conversion)<br>[Net Price](../net-price)<br>[Post Step]|
+| _Response Option_ |[Pre Step]<br>[Board Map](../mapping)<br>[Room Map](../mapping)<br>[Rate Map](#../rate-map)<br>[Currency Conversion](../currency-conversion)<br>[Net Price](../net-price)<br>[CommissionX](../net-price#commissionX)<br>[Aggregation](../aggregation)<br>[Post Step]<br>[Safety Margin](../safety_margin)| [Pre Step]<br>[Board Map](../mapping)<br>[Room Map](../mapping)<br>[Currency Conversion](../currency-conversion)<br>[Net Price](../net-price)<br>[CommissionX](../net-price#commissionX)<br>[Post Step]|[Pre Step]<br>[Board Map](../mapping)<br>[Room Map](../mapping)<br>[Currency Conversion](../currency-conversion)<br>[Net Price](../net-price)<br>[CommissionX](../net-price#commissionX)<br>[Post Step] |[Pre Step]<br>[Board Map](../mapping)<br>[Room Map](../mapping)<br>[Currency Conversion](../currency-conversion)<br>[Net Price](../net-price)<br>[Post Step]|
 | _Response_ |[Pre Step]<br>[Aggregation](../aggregation)<br>[Post Step]|[Pre Step] <br>[Post Step]|[Pre Step] <br>[Post Step]|[Pre Step] <br>[Post Step]|
 
 

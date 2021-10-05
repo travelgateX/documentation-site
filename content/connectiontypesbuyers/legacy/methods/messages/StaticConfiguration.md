@@ -1,5 +1,5 @@
 +++
-title= "StaticConfiguration"
+title= "StaticConfiguration (Deprecated)"
 keywords= "hotel, data structure, static configuration, static"
 search= "Hotel - Data Structure - StaticConfiguration"
 sidebar= "mydoc_sidebar"
@@ -7,7 +7,7 @@ permalink= "/docs/hotel/DSF/StaticConfiguration"
 weight = 21
 +++
 
-
+{{% alert theme="warning" %}}**Important:** be aware that this method is [deprecated](https://knowledge.travelgatex.com/what-is-the-difference-between-staticconfiguration-legacy-and-metadata-legacy) and will not be updated. [MetaData](/connectiontypesbuyers/legacy/methods/messages/metadata/) is the new and improved version of StaticConfiguration.{{% /alert %}}
 
 
 ### Method Goals
@@ -291,7 +291,4 @@ These parameters are XMLTravelgate's internal parameters. They define the type o
 -   **NumMarketsAllowed**
 -   **ImplementsDescriptiveInfoExtended**
 -   **InformNumberOfUnits**
-
-
-{{% alert theme="warning" %}}**Important:** be aware that this method is now deprecated and will not be updated. MetaData is the new and improved version of StaticConfiguration.{{% /alert %}}
 

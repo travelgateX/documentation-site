@@ -5,6 +5,7 @@ search = "Hotel - Change Log"
 sidebar = "mydoc_sidebar"
 permalink = "/docs/hotel/change-log"
 weight = 1
+icon = "fa-exchange"
 +++
 
 **Version 1.0.27:** Date 21/12/2020

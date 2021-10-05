@@ -416,59 +416,6 @@ weight = 30
 ~~~
 
 
-### AvailDestinationTree
-
-
-~~~xml
-    <soapenv:Envelope xmlns:soapenv = "http://schemas.xmlsoap.org/soap/envelope/" 
-    xmlns:ns = "http://schemas.xmltravelgate.com/hub/2012/06" 
-    xmlns:wsse = "http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
-      <soapenv:Header>
-        <wsse:Security>
-          <wsse:UsernameToken>
-            <wsse:Username>XXXXXX</wsse:Username>
-            <wsse:Password>XXXXXX</wsse:Password>
-          </wsse:UsernameToken>
-        </wsse:Security>
-      </soapenv:Header>
-      <soapenv:Body>
-        <ns:AvailDestinationTree>
-          <ns:availDestinationTreeRQ>
-            <ns:timeoutMilliseconds>240000</ns:timeoutMilliseconds>
-            <ns:version>1</ns:version>
-            <ns:providerRQ>
-              <ns:code>XXX</ns:code>
-              <ns:id>1</ns:id>
-              <ns:rqXML>
-                <AvailDestinationTreeRQ xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd = "http://www.w3.org/2001/XMLSchema">
-                  <timeoutMilliseconds>999999</timeoutMilliseconds>
-                  <source>
-                    <languageCode>en</languageCode>
-                  </source>
-                  <filterAuditData>
-                    <registerTransactions>false</registerTransactions>
-                  </filterAuditData>
-                  <Configuration>
-                    <User></User>
-                    <Password></Password>
-                    <UrlGeneric>http://test.Service</UrlGeneric>
-                    <Parameters>
-                      <Parameter key = "UrlListHoteles" value = "http://www.test.net/scr/searchxml/location.php?"></Parameter>
-                      <Parameter key = "UrlConsulta" value = "https://www.test.net/scr/xml/travelgate.php?"></Parameter>
-                      <Parameter key = "office" value = "55555"></Parameter>
-                      <Parameter key = "password" value = "XXXXXX"></Parameter>
-                    </Parameters>
-                  </Configuration>
-                </AvailDestinationTreeRQ>
-              </ns:rqXML>
-            </ns:providerRQ>
-          </ns:availDestinationTreeRQ>
-        </ns:AvailDestinationTree>
-      </soapenv:Body>
-    </soapenv:Envelope>
-~~~
-
-
 ### Room List
 
 
@@ -869,59 +816,6 @@ weight = 30
             </ns:providerRQ>
           </ns:runtimeConfigurationRQ>
         </ns:RuntimeConfiguration>
-      </soapenv:Body>
-    </soapenv:Envelope>
-~~~
-
-
-### StaticConfiguration
-
-
-~~~xml
-    <soapenv:Envelope xmlns:soapenv = "http://schemas.xmlsoap.org/soap/envelope/" 
-    xmlns:ns = "http://schemas.xmltravelgate.com/hub/2012/06" 
-    xmlns:wsse = "http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
-      <soapenv:Header>
-        <wsse:Security>
-          <wsse:UsernameToken>
-            <wsse:Username>XXXXXX</wsse:Username>
-            <wsse:Password>XXXXXX</wsse:Password>
-          </wsse:UsernameToken>
-        </wsse:Security>
-      </soapenv:Header>
-      <soapenv:Body>
-        <ns:StaticConfiguration>
-          <ns:staticConfigurationRQ>
-            <ns:timeoutMilliseconds>10000</ns:timeoutMilliseconds>
-            <ns:version>1</ns:version>
-            <ns:providerRQ>
-              <ns:code>XXX</ns:code>
-              <ns:id>1</ns:id>
-              <ns:rqXML>
-                <StaticConfigurationRQ xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd = "http://www.w3.org/2001/XMLSchema">
-                  <timeoutMilliseconds>999999</timeoutMilliseconds>
-                  <source>
-                    <languageCode>en</languageCode>
-                  </source>
-                  <filterAuditData>
-                    <registerTransactions>false</registerTransactions>
-                  </filterAuditData>
-                  <Configuration>
-                    <User></User>
-                    <Password></Password>
-                    <UrlGeneric>http://test.Service</UrlGeneric>
-                    <Parameters>
-                      <Parameter key = "UrlListHoteles" value = "http://www.test.net/scr/searchxml/location.php?"></Parameter>
-                      <Parameter key = "UrlConsulta" value = "https://www.test.net/scr/xml/travelgate.php?"></Parameter>
-                      <Parameter key = "office" value = "55555"></Parameter>
-                      <Parameter key = "password" value = "XXXXXX"></Parameter>
-                    </Parameters>
-                  </Configuration>
-                </StaticConfigurationRQ>
-              </ns:rqXML>
-            </ns:providerRQ>
-          </ns:staticConfigurationRQ>
-        </ns:StaticConfiguration>
       </soapenv:Body>
     </soapenv:Envelope>
 ~~~
