@@ -9,18 +9,13 @@ alwaysopen = false
 
 Booking Persistence is a plugin that allows clients to store bookings.
 
+### What it does
 
-## Booking Persistence {#Booking Persistence} 
-
-### Goals 
-
-Booking Persistence is a plugin that allows clients to store bookings and avoid duplicated bookings. A **duplicated booking** is a booking that has the same cliente reference that other previous booking.  
-This plugin only can be executed in **book** service. 
-With this plugin, each booking (by clientReference) of an organization is unique. 
-Each booking done with this plugin will be stored until one day after booking checkout day. 
+Booking Persistence allows clients to store their bookings and avoid to duplicate them. Two bookings with the same client reference are considered **duplicated bookings**. With this plugin all the bookings of an organization will be unique (by clientReference). All the bookings will also be stored until the day after the checkout at the hotel.
+This plugin can only be executed in **book** service.
 An application/communication error during booking process will store a persistent booking with **UNKNOWN** status.
 In the following bookings with same client reference, the same response will be returned. In these cases, we don't send a request to the provider and the booking is read from database.
-This plugin is used for storing and retrieving the bookings. This two processes are executed transparently for the client in the booking process. 
+This plugin is used for storing and retrieving the bookings. This two processes are executed transparently for the client in the booking process.
 If the booking returned is a retrieved booking, the application will show a warning like this:
 
 ```json
@@ -55,18 +50,16 @@ If the booking returned is a retrieved booking, the application will show a warn
 }
 ```
 
+### How to use it
 
-### Flow
-![Booking Persistence Squema](https://docs.travelgatex.com/hotel-x/plugins/images/BookingPersistence.png)
+Use this plugin by adding it to the [settings](https://docs.travelgatex.com/connectiontypesbuyers/hotel-x/concepts/advancedconcepts/settings/) in your HotelX Search Query.
 
-### Files needed to use this plugin
-
-No files are needed in order to use this plugin.
-
+### Workflow
+![Booking Persistence Squema](https://docs.travelgatex.com/connectiontypesbuyers/hotel-x/plugins/images/BookingPersistence.png)
 
 ### Execution example
 
-```json
+```graphql
 mutation ($input: HotelBookInput!, $settings: HotelSettingsInput) {
   hotelX {
     book(input: $input, settings: $settings) {
@@ -217,3 +210,7 @@ mutation ($input: HotelBookInput!, $settings: HotelSettingsInput) {
 	}
 }
 ```
+
+### File format
+
+No files are needed in order to use this plugin.

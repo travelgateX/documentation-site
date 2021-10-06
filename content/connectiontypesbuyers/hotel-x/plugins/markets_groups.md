@@ -9,9 +9,7 @@ alwaysopen = false
 
 Market Group X is an optional plugin that allows the user to group the Search result by markets that share the same Options.
 
-## Market Group X {#market_groupX}
-
-### Goals
+### What it does {#market_groupX}
 
 The Market Group X plugin groups the input markets from Search depending on the agrupations you've decided before hand (with a configuration file. _More details regarding configuration below_.). In order to be able to use the plugin, you'll have to decide which markets to join for which supplier. This way the Search will only process as much transactions as groups has been formed by the plugin, since all of the markets of a same group, would return the same options.
 
@@ -29,6 +27,26 @@ The main goal we're seeking with this plugin is allow the client the possibility
 
 Bear in mind that this plugin is **only available in Search** step and the market groups will not be recalculated after Search step. So if you take an option from Search that has been executed with market groups, those groups will remain the same through all the booking flow, even if you change those groups via ftp. This characteristic could also affect the interaction with other plugins like **commission**, which recalculate the rules in Quote and Book steps.
 
+### How to use it
+
+Use this plugin by adding it to the [settings](https://docs.travelgatex.com/connectiontypesbuyers/hotel-x/concepts/advancedconcepts/settings/) in your HotelX Search Query. You'll also need to add a configuration file.
+
+### Execution example
+
+In order to use the plugin, we shoud send the following json in the query variables 
+
+```json
+		"plugins": [
+			{
+				"step": "REQUEST_ACCESS",
+				"pluginsType": {
+					"name": "market_groupX",
+					"type": "MARKETS_GROUP"
+				}
+			}
+		]
+```
+
 Loading a Market Group X configuration file is as easy as following the steps below:
 
 ## File Format
@@ -36,7 +54,7 @@ Loading a Market Group X configuration file is as easy as following the steps be
 The file should be in the below format:
 
 * **Encoding**: UTF-8
-* **File Name**: markets_groups.csv
+* **File Name**: `markets_groups.csv`
 * **Header Row**: Supplier,Markets,Other
 
     * Supplier: Identifier of the supplier (supplier code). 
@@ -63,20 +81,4 @@ The file should be in the below format:
     CAN,ES;EN#IT#FR#DE,false
     ELB,ES#EN#IT;FR#DE,false
     HOTELTEST,FR#ES;EN#DE,true
-```
-
-### Execution example
-
-In order to use the plugin, we shoud send the following json in the query variables 
-
-```json
-		"plugins": [
-			{
-				"step": "REQUEST_ACCESS",
-				"pluginsType": {
-					"name": "market_groupX",
-					"type": "MARKETS_GROUP"
-				}
-			}
-		]
 ```

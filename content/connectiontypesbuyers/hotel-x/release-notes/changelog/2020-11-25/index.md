@@ -15,4 +15,4 @@ tags = ["products-changelog"]
 {{% release-notes-container type="a"%}}
 - Now we send to [InsightsX](https://docs.travelgatex.com/insights-x/api/hotelx/howto/) mapping of Hotel, Board, Room and Rate to visualize the status of your mapping in the connectivities you have in a structured reports.
 
-- Add "Default Codes" to [Mapping Plugins](https://docs.travelgatex.com/hotel-x/plugins/mapping/), this feature allows to set a default code for each code in the source (provider) context.
+- Add "Default Codes" to [Mapping Plugins](https://docs.travelgatex.com/connectiontypesbuyers/hotel-x/plugins/mapping/), this feature allows to set a default code for each code in the source (provider) context.

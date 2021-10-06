@@ -1,25 +1,69 @@
 +++
 title = "Blacklist"
 pagetitle = "HotelX Blacklist"
-description = "Hotel codes Blacklist: filter out specific hotels from the Search query."
+description = "Hotel codes Blacklist: filter out specific hotels from the Search query"
 icon = "fa-flag"
 weight = 2
 alwaysopen = false
 +++
 
-The Blacklist plugin is used to ignore hotel code(s) when a Search query is executed. This means that all the hotels on the blacklist won't be requested to the supplier. You can apply also rules in order to block an entire supplier. _More details regarding configuration below_.
+The Blacklist plugin is used to ignore hotel code(s) when a Search query is executed.
+
+### What it does
+
+The Blacklist plugin will discard all the options in which the hotel code is blacklisted based on different files previosly uploaded in our system. This means that all the hotels on the blacklist won't be requested to the supplier. You can apply also rules in order to block an entire supplier. _More details regarding configuration below_.
+
+### How to use it
+
+Use this plugin by adding it to the [settings](https://docs.travelgatex.com/connectiontypesbuyers/hotel-x/concepts/advancedconcepts/settings/) in your HotelX Search Query.
 
 ## Definitions
-* **Client Token**: Dynamic parameter you can send on the RQ in case you want to apply specific rules of the blacklist
+* **Client Token**: Dynamic parameter you can send in the RQ in case you want to apply specific rules of the blacklist
 * **Client**: The client of HotelX to make requests. 
 * **Supplier**: The supplier you want to apply the rule/s. _You have to use the supplier code_
 * **Access**: The access code you want to apply the rule/s. _Maybe you want to block hotels for an specific access_
-* **Context**: The context you send on the RQ.
+* **Context**: The context you send in the RQ.
 * **ContextSup**: Every supplier has a context, it's used to build mapping files or to specify it on the RQ. _Context code is the one you receive with every activation delivery. You can also retrieve them by using our Admin query_ 
 
-Loading a Blacklist is as easy as following the steps below:
+### Execution example
 
-## File Format
+In order to use the plugin, you shoud send the following json in the query variables 
+
+```json
+		"plugins": [
+			{
+				"step": "REQUEST_ACCESS",
+				"pluginsType": {
+					"name": "blacklist",
+					"type": "PRE_STEP"
+				}
+			}
+		]
+```
+To apply specific rule, you should add client token in our request
+
+```json
+"settings": {
+		"context": null,
+		"client": "xtg",
+		"auditTransactions": true,
+		"testMode": true,
+		"clientTokens": [
+			"testToken"
+		],
+		"plugins": [
+            {
+				"step": "REQUEST_ACCESS",
+				"pluginsType": {
+					"name": "blacklist",
+					"type": "PRE_STEP"
+				}
+			}
+        ]
+	}
+```
+
+### File format
 
 The file should be in the below format:
 
@@ -110,45 +154,3 @@ If we want block all hotel codes from any supplier except some specified, we sho
     r3,,,,,,HOTELTEST;TESTPRV,,,,,,,bl:("all||all")
 
     With this input hotel: ["AB","CD"] after executing the plugin, we obtain hotels: ["123"] 
-
-       
-
-### Request example
-
-
-In order to use the plugin, we shoud send the following json in the query variables 
-
-```json
-		"plugins": [
-			{
-				"step": "REQUEST_ACCESS",
-				"pluginsType": {
-					"name": "blacklist",
-					"type": "PRE_STEP"
-				}
-			}
-		]
-```
-To apply specific rule, we should add client token in our request
-```json
-"settings": {
-		"context": null,
-		"client": "xtg",
-		"auditTransactions": true,
-		"testMode": true,
-		"clientTokens": [
-			"testToken"
-		],
-		"plugins": [
-            {
-				"step": "REQUEST_ACCESS",
-				"pluginsType": {
-					"name": "blacklist",
-					"type": "PRE_STEP"
-				}
-			}
-        ]
-	},
-```
-
-

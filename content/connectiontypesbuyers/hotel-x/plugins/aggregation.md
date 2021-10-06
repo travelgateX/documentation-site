@@ -7,11 +7,11 @@ weight = 3
 alwaysopen = false
 +++
 
-**Aggregation plugins** extends [HotelX](/hotel-x/) allowing aggregation `Supplier` options and responses using different business rules.
+**Aggregation plugin** extends [HotelX](/hotel-x/) allowing the aggregation of `Supplier` options using different business rules.
 
-### Aggregation Key
+### What it does
 
-Aggregate `Supplier` options based on _field keys_ applying a selector _function_ over _field values_.
+Aggregation plugin aggregate `Supplier` options based on _field keys_ applying a selector _function_ over _field values_.
 
 It's based on [SQL Aggregate Functions](https://www.postgresql.org/docs/current/static/functions-aggregate.html).
 
@@ -30,26 +30,25 @@ It's based on [SQL Aggregate Functions](https://www.postgresql.org/docs/current/
   * supplement
   * supplier
   * surcharges
+  * ratePlan
+  * status
 
-### Name
-The aggregation mode currently only supports one mode "cheapest_price". You will need to set this in the "name" field when using the plugin as shown in the example below.
+### How to use it
 
+Use this plugin by adding it to the [settings](https://docs.travelgatex.com/connectiontypesbuyers/hotel-x/concepts/advancedconcepts/settings/) in your HotelX Search Query.
 
 ### Parameters
 
 |key|value type|condition|description|
 |---|----|----|---|
-|primaryKey|string|mandatory|It is the criteria used to aggregate, the value is a set of criteria separated by commas, the possible values are:<br>example: “hotel,supplier,room”|
+|primaryKey|string|mandatory|It is the criteria used to aggregate, the value is a set of criteria separated by commas, the possible values are:<br>example: “hotel,supplier,room,status”|
 
-
-### Where to place
-
-Use this plugin by adding it to the [settings](https://docs.travelgatex.com/hotel-x/concepts/settings/) in your HotelX Search Query.
-
+### Name
+The aggregation mode only supports by now one mode: "cheapest_price". You will need to set this in the "name" field when using the plugin as shown in the example below.
 
 ### Execution example
 
-```
+```json
 {
     "plugins": {
         "step": "RESPONSE",
@@ -68,3 +67,7 @@ Use this plugin by adding it to the [settings](https://docs.travelgatex.com/hote
     }
 }
 ```
+
+### File format
+
+No files are needed in order to use this plugin.
