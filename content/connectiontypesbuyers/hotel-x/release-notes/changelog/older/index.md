@@ -60,8 +60,8 @@ tags = ["products-changelog"]
 ## 2019-06-19
 {{% release-notes-container type="a"%}}
 - New field in book, cancel and booking respone. booking/billingSupplierCode.
-- New blacklist file format. The values has changed to allow new features. You can see the documentation [here](https://docs.travelgatex.com/hotel-x/plugins/black-list/). 
-- New field for the commision file. Now you can put clienToken for each rule. You can see the documentation [here](https://docs.travelgatex.com/hotel-x/plugins/net-price/). 
+- New blacklist file format. The values has changed to allow new features. You can see the documentation [here](https://docs.travelgatex.com/connectiontypesbuyers/hotel-x/plugins/black-list/). 
+- New field for the commision file. Now you can put clienToken for each rule. You can see the documentation [here](https://docs.travelgatex.com/connectiontypesbuyers/hotel-x/plugins/net-price/). 
 - Internal system improvements. 
 {{% /release-notes-container %}}
 
@@ -115,7 +115,7 @@ tags = ["products-changelog"]
 
 ## 2019-02-26
 {{% release-notes-container type="a"%}}
-- New plugin, add parameter. You can see the documentation [here](https://docs.travelgatex.com/hotel-x/plugins/add_parameterx/).
+- New plugin, add parameter. You can see the documentation [here](https://docs.travelgatex.com/connectiontypesbuyers/hotel-x/plugins/add_parameterx/).
 {{% /release-notes-container %}}
 
 {{% release-notes-container type="f"%}}
@@ -248,7 +248,7 @@ Expire date of payment card in Book now accept the following format: month: 1 di
 
 ## 2018-09-03
 {{% release-notes-container type="f"%}}
-- Fix Exchange node empty if not CurrencyX (see doc in https://docs.travelgatex.com/hotel-x/plugins/converter/)
+- Fix Exchange node empty if not CurrencyX (see doc in https://docs.travelgatex.com/connectiontypesbuyers/hotel-x/plugins/converter/)
 - Fix bugs in Quote
 {{% /release-notes-container %}}
 {{% release-notes-container type="c"%}}
@@ -257,7 +257,7 @@ Expire date of payment card in Book now accept the following format: month: 1 di
 
 ## 2018-08-22
 {{% release-notes-container type="a"%}}
-- Settings heritage. [Guide](https://docs.travelgatex.com/hotel-x/concepts/settings/)
+- Settings heritage. [Guide](https://docs.travelgatex.com/connectiontypesbuyers/hotel-x/concepts/advancedconcepts/settings/)
 - Plugins filter
 {{% /release-notes-container %}}
 {{% release-notes-container type="f"%}}

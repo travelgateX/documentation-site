@@ -7,15 +7,17 @@ weight = 3
 alwaysopen = false
 +++
 
-Add Parameter is an optional plugin that allows parameters to be added to accesses used by different suppliers at a request level.
+Add Parameter is an optional plugin that allows parameters to be added or modified at request level.
 
-## Add Parameter {#addparameter}
+### What it does {#addparameter}
 
-### Goals
+The add parameter plugin **adds parameters in the configuration of the existing accesses**. By doing this, you can add parameters dynamically in request time to the existing accesses (see [Access configuration](https://docs.travelgatex.com/connectiontypesbuyers/hotel-x/concepts/basicconcepts/supplier-access-client-context/)). This plugin can be used in all the booking services.
 
-The add parameter plugin **adds parameters in the configuration of the existing accesses**. By doing this, you can add parameters dynamically in request time to the existing accesses (see [Access configuration](https://docs.travelgatex.com/hotel-x/concepts/accesses-supplier-context/)). This plugin can be used in all the booking services.
+You can also **replace** the value of an existing parameter by adding into the query a parameter with the same key as the one to be replaced.
 
-You can also **replace** the value of an existing parameter by adding into the query a parameter with the same key of another an existing parameter.
+### How to use it
+
+Use this plugin by adding it to the [settings](https://docs.travelgatex.com/connectiontypesbuyers/hotel-x/concepts/advancedconcepts/settings/) in your HotelX Search Query.
 
 ### Parameters
 
@@ -44,3 +46,7 @@ You can also **replace** the value of an existing parameter by adding into the q
 	   ]
 	}
 ```
+
+### File format
+
+No files are needed in order to use this plugin.

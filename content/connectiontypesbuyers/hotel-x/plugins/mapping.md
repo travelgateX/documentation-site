@@ -9,16 +9,14 @@ alwaysopen = false
 
 The mapping feature is used to change the supplier's native codes to the Buyer's own codes or vice-versa. There are these types:
 
-* Hotel Map 
-* Board Map 
-* Room Map 
-* Rate Map 
-* Amenity Map 
+* Hotel Map
+* Board Map
+* Room Map
+* Rate Map
+* Amenity Map
 * Promotion Map
 
 Our mapping formats share a common structure. In order to load your maps you just need to follow the instructions below:
-
-## Entity Maps
 
 ### File Format
 
@@ -34,7 +32,7 @@ The file should be in the following format:
 
     * 1 file for each supplier
 
-* **Header Row**: Code Source, Code Destination
+* **Header Row**: Code Source,Code Destination
 
   * Context Source: it corresponds to the client codes
 
@@ -76,7 +74,7 @@ Let's suppose we have the following client code and supplier code, then we need 
 
 * Supplier Code: BVJ
 
-**Name**: GUE\_BVJ\_hotel\_map.csv
+**Name**: `GUE_BVJ_hotel_map.csv`
 
 
 ```csv
@@ -118,15 +116,14 @@ You can also specify a context for each of the plugins you'll use in your query.
 
 **Important**: Mapping in booking-flow is only usable in Search service.<br><br>
 Here you have the nodes where you can find mapped codes in Search response:<br><br>
-__Hotel__: search.options[*].hotelCode (hotelCodeSupplier will contain the hotel's code in supplier's context)<br>
-__Board__: search.options[*].boardCode (boardCodeSupplier will contain the board's code in supplier's context)<br>
-__Room__: search.options[*].rooms[*].code (supplierCode will contain the room's code in supplier's context)<br>
-__Rate__: search.options[*].rooms[*].ratePlans[*].code (supplierCode will contain the rate plan's code of the room in supplier's context)<br>
-__Amenity__: search.options[*].amenities[*].code and/or inside rooms[*] 
-(amenitySupplierCode will contain the amenity's code in supplier context)<br>
-__Promotion__: search.options[*].promotionCode (promotionCodeSupplier will contain the promotion's code in supplier's context)<br>
+__Hotel__: search.options.hotelCode (hotelCodeSupplier will contain the hotel's code in supplier's context)<br>
+__Board__: search.options.boardCode (boardCodeSupplier will contain the board's code in supplier's context)<br>
+__Room__: search.options.rooms.code (supplierCode will contain the room's code in supplier's context)<br>
+__Rate__: search.options.rooms.ratePlans.code (supplierCode will contain the rate plan's code of the room in supplier's context)<br>
+__Amenity__: search.options.amenities.code and/or inside rooms (amenitySupplierCode will contain the amenity's code in supplier context)<br>
+__Promotion__: search.options.promotionCode (promotionCodeSupplier will contain the promotion's code in supplier's context)<br>
  
-Examples of plugin that executes board and/or amenity mapping:<br>
+Examples of plugin that executes board and/or amenity and/or promotion mapping:<br>
 
 **Boards**:
 ```json
@@ -173,9 +170,8 @@ Examples of plugin that executes board and/or amenity mapping:<br>
 ### Use in Content
 The use of mapping plugin in Content is entirely different from Booking-Flow.
 Currently this is only available in Hotel-List query and only amenity map are available. 
-In order to request mapping in content (other entities mapping could be available in future), it is necessary to query the node mappings stored inside the entity:
-This node is a list of mappings that will store the code of the entity in supplier context and the context of the supplier. 
-Also, is necessary to indicate the group code and destination context in query variables.<br><br>
+In order to request mapping in content, it is necessary to query an specific field called `mappings`. This field is a list of mappings that will contain the code of the entity amenity in supplier context and the context of the supplier. 
+It is also necessary to indicate the group code and destination context in query variables.<br><br>
 
 How to request inside Hotel-List for amenities:<br>
 ```graphql
@@ -194,10 +190,8 @@ How to request inside Hotel-List for amenities:<br>
             }
 ```
 
-MapOptions is a list of pair {groupCode, destinationContext}.The groupCode is the HotelX groups assigned to you (HotelX_...), <br> 
-and the destinationContext is the context you want to receive the codes<br> 
-For each pair in this list, the mapping will be applied for each amenity.<br>
-In other words, Hotel-List will change amenityCode to the context set in destinationContext<br>
+MapOptions is a list of {groupCode, context} pairs. The groupCode is the HotelX group assigned to your organization: (e.g. HotelX_...), and the context is the destinationContext you want to receive the codes in.<br> 
+For each pair in this list, the mapping will be applied for each amenity. In other words, Hotel-List will change amenityCode to the context set in destinationContext<br>
 
 ## Other Maps
 
@@ -211,7 +205,7 @@ The file must be in the below format:
 
 * **Encoding**: UTF-8 
 * **File Name**: [Context Source]\_[Context Destination]\_room\_map.csv
-* **Header Row**: Code Source,Code Destination
+* **Header Row**: Code Source,Code Destination,Code Hotel
 * **Directory**: /F[folder code]\_[unique code]/HotelX\_[unique code]/Maps/
 
 If you are using a file of room map, it's necessary to modify this file adding a new column. Please see the example below:
@@ -233,11 +227,11 @@ Code Source,Code Destination,Code Hotel
 5,X5,
 ```
 
-As you can see, the same file combined mappings with 3 values and mappings with 2 values. The rows with two values are mapped by supplier. The files with three values are mapped by supplier and hotel. It's possible to use only the mapping by supplier hotel, in this case, your file only has rows with three values.
+As you can see, the same file combined mappings with 3 values and mappings with 2 values. The rows with two values are mapped by supplier. The files with three values are mapped by supplier and hotel. It's possible to use only the mapping by supplier hotel, in this case, your file only will have rows with three values.
 
 ### Application
 
-What happens if you use the combined plugin (room map and room map by provider hotel)? In this case, all the rooms with provider hotel map will be mapped to your context (the context put in the first value of file's name (client context)) and the room codes that don't have provider hotel map, will be mapped with provider map code (in case that exist). If no map codes are found, the option can be discarded (this rule is configurable). 
+What happens if you use the combined plugin (room map and room map by provider hotel)? In this case, all the rooms with provider hotel map will be mapped to your context (the context put in the first value of file's name (client context)) and the room codes that don't have provider hotel map, will be mapped with provider map code (in case that exists). If no map codes are found, the option can be discarded (this rule is configurable, please contact us in order to change it and discard those options. By default, no options will be discarted). 
 
 ### Execution example
 
@@ -268,32 +262,21 @@ This feature allows to set a default code for each code in the source (provider)
 **Important**: this feature only must be used in Booking-Flow. Only one default code can be assigned to each supplier context.<br>
 In order to use this feature, it is necessary to append the default code to the FTP.<br><br>
 **Example file with default code**<br><br>
-File name: sourceContext_destinationContext_entity_map.csv
+File name: `sourceContext_destinationContext_entity_map.csv`
+
 ```csv
-Code Source, Code Destination
+Code Source,Code Destination
 10000,7604
 10000,1274249
 MY_DEFAULT_CODE,*
 ```
 **MY_DEFAULT_CODE** is the code that will be returned in response.<br><br>
-In the example above, all the codes of entity "entity" of provider with context destinationContext that not be found in the file, will be MY_DEFAULT_CODE in response.<br>
+In the example above, all the codes of entity "entity" of provider with context destinationContext that are not found in the file, will be MY_DEFAULT_CODE in response.<br>
 <br>Remember that, if you do not use default codes, in case that a mapping is not found, and the option is not discarded, in the response you will receive:<br><br>
 code: codeInSupplierContext<br>
 supplierCode: codeInSupplierContext<br><br>
-This feature is useful for controlling not mapped codes, and in case that you use aggregation plugins, all this options will be grouped in the same group and discarded.
+This feature is useful to control those codes which are not not mapped, and in case that you use aggregation plugins, all this options will be grouped in the same group and discarded.
 ## Modifying data through FTP
 
 **Once mapping files are loaded, we can perform the following operations on them:**
-
-### Updating data 
-We have two options:
-
-1. Reprocessing the same data by renaming the file and just removing "_processed".<br>
-Example: **SourceContext_DestinationContext_entity_map_processed.csv --> example.csv**
-2. Changing the data by deleting the processed file and uploading a new one with new information.
-   
-### Deleting data
-Uploading a new file only with headers (no information).
-```csv
-Code Source, Code Destination
-```
+[Update and Delete](/connectiontypesbuyers/hotel-x/plugins/overview/#update_ftp_data)

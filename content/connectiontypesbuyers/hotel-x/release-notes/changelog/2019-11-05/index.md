@@ -13,7 +13,7 @@ tags = ["products-changelog"]
 
 ## 2020-02-26
 {{% release-notes-container type="a"%}}
-- Now the booking and cancel services allow the user to retrieve and cancel a book with the new field returned in book response `bookingID`. You can see more details of `bookingID` in the documentation [here](https://docs.travelgatex.com/hotel-x/methods/reservationmanagement/booklist/).
+- Now the booking and cancel services allow the user to retrieve and cancel a book with the new field returned in book response `bookingID`. You can see more details of `bookingID` in the documentation [here](https://docs.travelgatex.com/connectiontypesbuyers/hotel-x/methods/reservationmanagement/booklist/).
 {{% /release-notes-container %}}
 
 ## 2020-02-25
@@ -36,13 +36,13 @@ tags = ["products-changelog"]
 
 ## 2020-02-05
 {{% release-notes-container type="a"%}}
-- We've launched a new API called `Metadata`, which allow you to retrieve the supplier information and configuration. You can see the documentation [here](https://docs.travelgatex.com/hotel-x/methods/staticcontent/metadata/). We have also introduced this API to our bookingflow, which allows us to block the invalid querys (those querys that does not match with the supplier configuration in the metadata) in order to optimize the traffic.
+- We've launched a new API called `Metadata`, which allow you to retrieve the supplier information and configuration. You can see the documentation [here](https://docs.travelgatex.com/connectiontypesbuyers/hotel-x/methods/staticcontent/metadata/). We have also introduced this API to our bookingflow, which allows us to block the invalid querys (those querys that does not match with the supplier configuration in the metadata) in order to optimize the traffic.
 {{% /release-notes-container %}}
 
 ## 2020-02-05
 {{% release-notes-container type="c"%}}
 - Internal changes. Removed field optionsQuota from optionid.
-- Now the plugin `Add Parameter` will also be able to replace the parameters that share the same key inside an specific configuration. You can see the documentation [here](https://docs.travelgatex.com/hotel-x/plugins/add_parameterx/).
+- Now the plugin `Add Parameter` will also be able to replace the parameters that share the same key inside an specific configuration. You can see the documentation [here](https://docs.travelgatex.com/connectiontypesbuyers/hotel-x/plugins/add_parameterx/).
 - Internal changes. Now the field market from optionid will contain all the markets related to the option, until now it was only prepared to return a single market.
 {{% /release-notes-container %}}
 
@@ -53,13 +53,13 @@ tags = ["products-changelog"]
 
 ## 2020-12-02
 {{% release-notes-container type="a"%}}
-- We've launched a new plugin called `Amenity Map` which allows the user to retrive amenities in the hotels service using another context different that supplier context. This functionality differs with other mappings because `mapping` has to be requested in query fields, not in plugin section. You can see the documentation [here](https://docs.travelgatex.com/hotel-x/plugins/mapping/).
+- We've launched a new plugin called `Amenity Map` which allows the user to retrive amenities in the hotels service using another context different that supplier context. This functionality differs with other mappings because `mapping` has to be requested in query fields, not in plugin section. You can see the documentation [here](https://docs.travelgatex.com/connectiontypesbuyers/hotel-x/plugins/mapping/).
 {{% /release-notes-container %}}
 
 ## 2019-11-28
 {{% release-notes-container type="a"%}}
 - Added new value `PAYX` to `PaymentType` enum (search).
-- We've launched a new plugin called `Virtual Credit Card Generator` which adds the possibility to create a virtual credit card at Book step, in order to pay the reservation’s import with it. You can see the documentation [here](https://docs.travelgatex.com/hotel-x/plugins/vcc_gen/).
+- We've launched a new plugin called `Virtual Credit Card Generator` which adds the possibility to create a virtual credit card at Book step, in order to pay the reservation’s import with it. You can see the documentation [here](https://docs.travelgatex.com/connectiontypesbuyers/hotel-x/plugins/vcc_gen/).
 
 ~~~json
 {
@@ -89,7 +89,7 @@ tags = ["products-changelog"]
 
 ## 2019-11-27
 {{% release-notes-container type="a"%}}
-- We've launched a new plugin called `Market Group X` that allows the user to group the Search result by markets that share the same Options. You can see the documentation [here](https://docs.travelgatex.com/hotel-x/plugins/markets_groups/).
+- We've launched a new plugin called `Market Group X` that allows the user to group the Search result by markets that share the same Options. You can see the documentation [here](https://docs.travelgatex.com/connectiontypesbuyers/hotel-x/plugins/markets_groups/).
 
 ~~~json
 {
@@ -116,7 +116,7 @@ tags = ["products-changelog"]
 
 ## 2019-11-05
 {{% release-notes-container type="a"%}}
-- New fields keys in `Aggregation Plugin` ("binding" and "refundable"). More information about Aggregation Plugin [here](https://docs.travelgatex.com/hotel-x/plugins/aggregation/). 
+- New fields keys in `Aggregation Plugin` ("binding" and "refundable"). More information about Aggregation Plugin [here](https://docs.travelgatex.com/connectiontypesbuyers/hotel-x/plugins/aggregation/). 
 
 ~~~json
 {

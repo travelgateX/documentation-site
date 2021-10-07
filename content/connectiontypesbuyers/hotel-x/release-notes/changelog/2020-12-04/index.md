@@ -13,6 +13,6 @@ tags = ["products-changelog"]
 
 ## 2020-12-04
 {{% release-notes-container type="a"%}}
-- We have added the feature of mapping promotions in booking-flow and default codes are implemented for promotions too. [Mapping Plugins](https://docs.travelgatex.com/hotel-x/plugins/mapping/)
+- We have added the feature of mapping promotions in booking-flow and default codes are implemented for promotions too. [Mapping Plugins](https://docs.travelgatex.com/connectiontypesbuyers/hotel-x/plugins/mapping/)
 
 - Now we send to [InsightsX](https://docs.travelgatex.com/insights-x/api/hotelx/howto/) mapping of Promotions to visualize the status of your mapping in the connectivities you have in a structured reports.
