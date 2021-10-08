@@ -35,7 +35,7 @@ To ensure the security of your data, we adhere to the highest standards in data 
 
 ### Setup
 
-To get your FTP Credential Details raise a _customer care request_ in [Helo Center]https://knowledge.travelgatex.com/).
+To get your FTP Credential Details raise a _customer care request_ in [Help Center](https://knowledge.travelgatex.com/).
 
 ### Naming Conventions
 
