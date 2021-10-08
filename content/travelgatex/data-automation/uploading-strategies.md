@@ -18,7 +18,7 @@ There are two ways of uploading data to the platform:
 
 While you can make your updates via a `mutation`, we have not yet written up resources to show you how to do that. 
 
-If you require these resources immediately, please contact us via <a href="https://slack.travelgatex.com/">Slack</a>, <a href="https://xmltravelgate.atlassian.net/servicedesk/customer/portal/7">Jira</a> or by <a href="https://github.com/travelgateX/Issue-tracker">raising an issue in GitHub</a>.{{% /alert %}}
+If you require these resources immediately, please contact us via <a href="https://knowledge.travelgatex.com//">help center</a> 
 
 ### Secure File Transfer Protocol (SFTP)
 
@@ -35,7 +35,7 @@ To ensure the security of your data, we adhere to the highest standards in data 
 
 ### Setup
 
-To get your FTP Credential Details raise a _customer care request_ in [Jira Service Desk](https://xmltravelgate.atlassian.net/servicedesk/customer/portal/7).
+To get your FTP Credential Details raise a _customer care request_ in [Helo Center]https://knowledge.travelgatex.com/).
 
 ### Naming Conventions
 
