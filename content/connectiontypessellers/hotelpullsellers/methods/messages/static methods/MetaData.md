@@ -175,6 +175,9 @@ In the request of this call it is only necessary to use the object: "HotelBaseRQ
         <AllowsClientLocator reviewDate = "20/06/2015">false</AllowsClientLocator>
         <InformCancelPolicies reviewDate = "20/06/2015">false</InformCancelPolicies>
         <InformPriceCancel reviewDate = "20/06/2015">false</InformPriceCancel>
+        <RequiredCheckInDate reviewDate = "18/10/2021">false</RequiredCheckInDate>
+        <RequiredCheckOutDate reviewDate = "18/10/2021">false</RequiredCheckOutDate>
+        <RequiredReservationDate reviewDate = "18/10/2021">false</RequiredReservationDate>
     </ReservationRead>
     <ReservationList>
         <Implements reviewDate = "20/06/2015">false</Implements>
@@ -413,6 +416,12 @@ In the request of this call it is only necessary to use the object: "HotelBaseRQ
 | ReservationRead/InformCancelPolicies                                    | 1          | Boolean  | Informs cancellation policies.                                                                                                             |
 | @reviewDate                                                             | 1          | String   | Informs of the date when the field was last reviewed.                                                                                      |
 | ReservationRead/InformPriceCancel                                       | 1          | Boolean  | The supplier informs the cancellation price.                                                                                               |
+| @reviewDate                                                             | 1          | String   | Informs of the date when the field was last reviewed.                                                                                      |
+| ReservationRead/RequiredCheckInDate                                       | 1          | Boolean  | The supplier informs if it requires the check-in date to return the reservation.                                                                                          |
+| @reviewDate                                                             | 1          | String   | Informs of the date when the field was last reviewed.                                                                                      |
+| ReservationRead/RequiredCheckOutDate                                       | 1          | Boolean  | The supplier informs if it requires the check-out date to return the reservation.                                                                                          |
+| @reviewDate                                                             | 1          | String   | Informs of the date when the field was last reviewed.                                                                                      |
+| ReservationRead/RequiredReservationDate                                       | 1          | Boolean  | The supplier informs if it requires the booking date to return the reservation.                                                                                          |
 | @reviewDate                                                             | 1          | String   | Informs of the date when the field was last reviewed.                                                                                      |
 | ReservationList                                                         | 1          |          | ReservationList node.                                                                                                                      |
 | ReservationList/Implements                                              | 1          | Boolean  | Informs if the supplier implements this method.                                                                                            |
