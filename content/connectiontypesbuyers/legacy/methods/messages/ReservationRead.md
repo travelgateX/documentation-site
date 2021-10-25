@@ -77,9 +77,9 @@ is closed.
 | Locators/Client	| 0..1		| String	| Client locator.					|
 | Locators/Provider	| 0..1		| String	| Supplier locator.					|
 | Currency   		| 1    		| String	| Currency code.					|
-| StartDate  		| 1    		| String	| Start date of booking. 				|
-| EndDate    		| 1    		| String	| End date of booking.					|
-| CreationDate		| 1    		| String	| Creation date of booking.				|
+| StartDate  		| 0..1    		| String	| Start date of booking. 				|
+| EndDate    		| 0..1    		| String	| End date of booking.					|
+| CreationDate		| 0..1    		| String	| Creation date of booking.				|
 | HotelCode		| 1    		| String	| Hotel code.				|
 | Holder   				| 0..1		|		| Holder of the booking.  |
 | @title   				| 1		| String	| Holder's title. Possible values: Mr, Mrs, Miss, Ms.   |
