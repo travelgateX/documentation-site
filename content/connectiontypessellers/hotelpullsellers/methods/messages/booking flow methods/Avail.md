@@ -396,7 +396,7 @@ In the request for this call it is necessary to use the object: "HotelBaseRQ". Y
 | @amount 				    | 1          | Decimal  | Fee Amount. |
 | @binding				    | 1          | Boolean  | Identifies if is the price is binding (When true the sale price returned must not be less than the price informed. |
 | @commission				    | 1          | Decimal  | Commission: -1 = not specified (indicated in contract with supplier), 0 = net price, X = % of the commission applied to the amount. |
-| MealPlans/MealPlan/Options /Option/Rooms/Room/CancelPenalties /CancelPenalty | 0..1|  | List of cancellation penalties. (see [MetaData](/connectiontypessellers/hotelpullsellers/methods/messages/static-methods/metadata/) in order to verify if a supplier implements it)				|
+| MealPlans/MealPlan/Options /Option/Rooms/Room/CancelPenalties /CancelPenalty | 0..1|  | List of cancellation penalties. (see [MetaData](/connectiontypessellers/hotelpullsellers/methods/messages/static-methods/metadata/) in order to verify if a supplier implements it). **Attention:**	When implementing policies at the room level, it is mandatory to add them at the option level. (If there is more than one room it is necessary to unify the policies to show them by option			|
 | MealPlans/MealPlan/Options /Option/Rooms/Room/CancelPenalties /CancelPenalty/HoursBefore| 1 | String | Number of hours prior to arrival day in which this Cancellation policy applies. | 
 | MealPlans/MealPlan/Options /Option/Rooms/Room/CancelPenalties /CancelPenalty | 1..n| | Contains the value to apply.				|
 | @type 				| 1 		| String 	| Type of penalty -possible values: "Noches" (nights), "Porcentaje" (percentage), "Importe" (price value).  |
@@ -570,9 +570,11 @@ modified in the remaining methods, like for example in valuation.*
 **Cancellation policies:**
 
 The cancellation policies or penalties may be displayed in the
-response, as long as the parameter <CancellationPolicies> is set as
+response, as long as the parameter *CancellationPolicies* o *RoomCancellationPolicies* is set as
 true in the request and that the supplier provides this information in
-the availability method.
+the availability method. The treatment of cancellation policies is explained in the following link: [CancelPenalty](/connectiontypessellers/hotelpullsellers/methods/messages/booking-flow-methods/valuation#detailed-description)
+
+**Attention:** When cancellation policies are requested (*CancellationPolicies*,*RoomCancellationPolicies*) you should always return them at Option level ([MealPlans/MealPlan/Options/Option/CancelPenalties/CancelPenalty](#AvailRS Description)). If CancellationPolicies is requested we should only receive them at option level, but if RoomCancellationPolicies is requested, we should receive them at option and room levels. Cancellation policies per room are complementary (extra information). 
 
 **HoursBefore:** cancellation fees applicable *x* number of hours before the check in date.
 
