@@ -71,7 +71,7 @@ The following image is an example of an email notification and the information i
 
 </br>
 
-{{% alert theme="info" %}}For DMC-X clients, price will not be included in the Inventory-X email notification.{{% /alert %}}
+{{% alert theme="info" %}}It is possible to add your logo to this email. To implement this functionality, please, contact with our CC landing page [CC landing page](https://landing.travelgatex.com/en-us/helpcenter) sending the logo you want to use.{{% /alert %}}
 
 
 ### How to create a new hotel
