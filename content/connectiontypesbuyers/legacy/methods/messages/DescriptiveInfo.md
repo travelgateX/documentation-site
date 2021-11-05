@@ -187,7 +187,7 @@ is **180000** milliseconds.
                 <Card code="AX"/>
                 <Card code="CA"/>
             </Cards>
-        <PaymentOptions/>
+        </PaymentOptions>
         <ExclusiveDeal>true</ExclusiveDeal>
         <PropertyCategory>
              <Code>1</Code>
