@@ -8,7 +8,6 @@ weight = 1
 +++
 
 The structure of the API specification follows a standard. This document intends to explain every aspect of this structure and their fields. 
-You can also download the XSD file containing each and every data structures of the API from [here](/legacy/docs/hotel/storage/hotel.xsd)
 
 You can read about what changes might and what changes might not cause an error, below:
 
@@ -42,10 +41,10 @@ The integration will have the following methods:
 | Static Configuration [(Deprecated)](https://knowledge.travelgatex.com/what-is-the-difference-between-staticconfiguration-legacy-and-metadata-legacy)       | StaticConfigurationRQ       | StaticConfigurationRS       | Retrieves the supplier’s static configuration. |
 | MetaData         | MetaDataRQ         |  MetaDataRS        | Meta data information. |
 
-Each request sent to  **service url** requires a node called *rqXML*. The current method's input object travels inside this node.
+Each request sent to  **service url** requires a node called *rqXML*. The current methods input object travels inside this node.
 
 
 The data structure will always have common elements in all objects as well as
 specific objects related to the operation
 
-You can find full specification of each method at the [Hotel API Methods](https://docs.travelgatex.com/legacy/docs/hotel/methods/) page.
+You can find full specification of each method at the [Hotel API Methods](https://docs.travelgatex.com/connectiontypesbuyers/legacy/methods/messages/) page.
