@@ -1,10 +1,11 @@
 +++
-title = "API Reference"
-pagetitle = "API Reference"
-description = "API Reference"
+title = "Methods"
+pagetitle = "Methods"
+description = "API Methods"
 icon = "fa-list" 
-weight = 3
+weight = 1
 alwaysopen = false
+isDirectory= true
 +++
 
 {{%custom-children%}}

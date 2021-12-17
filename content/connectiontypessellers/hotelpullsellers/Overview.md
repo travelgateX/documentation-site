@@ -6,7 +6,7 @@ keywords = "intro"
 search = "Overview of API"
 sidebar = "mydoc_sidebar"
 icon = "fa-info-circle"
-weight = 1
+weight = 3
 +++
 
 **Overview of API**
