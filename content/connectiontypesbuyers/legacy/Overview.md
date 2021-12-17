@@ -4,7 +4,7 @@ keywords = "intro"
 search = "Overview of product"
 sidebar = "mydoc_sidebar"
 icon = "fa-info-circle"
-weight = 1
+weight = 2
 
 
 +++

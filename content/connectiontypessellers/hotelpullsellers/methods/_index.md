@@ -1,9 +1,9 @@
 +++
-title = "API Reference"
-pagetitle = "API Reference"
-description = "API Reference"
-icon = "fa-code" 
-weight = 3
+title = "Methods"
+pagetitle = "Methods"
+description = "API Methods"
+icon = "fa-list" 
+weight = 1
 alwaysopen = false
 +++
 
