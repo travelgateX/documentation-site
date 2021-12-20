@@ -38,6 +38,10 @@ In order to use the plugin, we shoud send the following json in the query variab
 						{
 							"key": "expirationDate",
 							"value": "2020/05/25"
+						},
+						{
+							"key" : "useGross",
+							"value" : "true"
 						}
 					]
 				}
@@ -49,6 +53,8 @@ You should bear in mind that the parameters are **not mandatory**. In case those
 
 * Default activation date: **same day as the Book** has been processed through HotelX
 * Default expiration date: **one month later** after the **checkin** date of the hotel
+
+The **useGross** parameter is optional and it is used to specify if want charge the gross amount on the generated card. If this parameter is not specified **we will use the net amount**. 
 
 To apply specific rule, we should add client token in our request
 ```json
