@@ -53,6 +53,7 @@ There are  different parameters that can be set up in the request. Below are the
 ## FilterSearch
 These filters can be used to accurate the response to your willingness.
 The possible filters are:
+
 - By access: It is possible to indicate what accesses to use (includes) or excludes any of yours configured acccesses. Only one list can be specified (include or exclude lists). Using the access filter our system will only return options of those selected accesses.
 - By raterule:  It is possible to filter the options returned by the suppliers depending on what raterules you want to return or exclude: see our [FAQ](https://knowledge.travelgatex.com/which-are-the-possible-filters-in-the-search-request) for more information.
 - By status: It is possible to filter the options returned by the suppliers, filtering those status you may or not be excluding or including options with the selected status (possible status are OK and RQ).
