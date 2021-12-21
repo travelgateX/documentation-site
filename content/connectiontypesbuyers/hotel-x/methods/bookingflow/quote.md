@@ -29,7 +29,7 @@ There are different parameters that can be set up in the request (The below ones
 In the Query Variables, you must modify the optionRefId with the option id value returned in the search response and send the query.
 
 ## How to request 
-Here you can find 2 examples of how to valuate an availability option, one for 1 room and the other one for multi-room. </br>
+Here you can find an example of how to valuate an availability option for 1 room. </br>
 
 {{% graphiql-tabs %}}
 
