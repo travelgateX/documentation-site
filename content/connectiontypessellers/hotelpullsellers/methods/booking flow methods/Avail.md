@@ -131,7 +131,7 @@ In the request for this call it is necessary to use the object: "HotelBaseRQ". Y
 | RoomCandidates/RoomCandidate 		| 1..n         	|		| Room required.						|
 | @id             			| 1     	| Integer	| Id of the requested room (starting at 1).			|
 | RoomCandidates/RoomCandidate /Paxes/Pax | 1..n        |		|  Pax required.  						|
-| @age            			| 1     	| Integer	| Pax age.							|
+| @age            			| 1     	| Integer	| Passenger age on the day of check-in.							|
 | @id             			| 1     	| Integer	| Pax id (starts at 1).						|
 
 
@@ -565,6 +565,7 @@ depends on the supplier's request.
 **Note:** *Once the age as been established for each pax then it must not be
 modified in the remaining methods, like for example in valuation.*   
 
+**Important Information about PAX ages:** *The age of the passenger must coincide with the day of check-in at the hotel.*
 
 
 **Cancellation policies:**
