@@ -218,7 +218,7 @@ In the request for this call it is necessary to use the object: "HotelBaseRQ". Y
 | RoomCandidates/RoomCandidate			| 1..n    	|		| Room required.					|
 | @id      					| 1  		| Integer	| Id of the requested room (starting at 1).		|
 | RoomCandidates/RoomCandidate/Paxes/Pax	| 1..n    	|		| Pax required.						|
-| @age     					| 1  		| Integer	| Passenger age. 					|
+| @age     					| 1  		| Integer	| Passenger age on the day of check-in. 					|
 | @id      					| 1  		| Integer	| Passenger id (starting at 1, this identifier is at room level). 			|
 | Remarks       				| 0..1    	| 		| Any customer comments for the supplier to consider (see [MetaData](/connectiontypessellers/hotelpullsellers/methods/messages/static-methods/metadata/) in order to verify if a supplier implements it).	|
 | Preferences    				| 0..1    	|		| Preference filters at the option / general level. 					|

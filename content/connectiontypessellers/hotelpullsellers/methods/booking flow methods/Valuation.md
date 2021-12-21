@@ -102,7 +102,7 @@ In the request for this call it is necessary to use the object: "HotelBaseRQ". Y
 | RoomCandidates/RoomCandidate           | 1..n       |          | Room required.  |
 | @id                                    | 1          | Integer  | Id of requested room (starting at 1). |
 | RoomCandidates/RoomCandidate/Paxes/Pax | 1..n       |          | Pax required.   |
-| @age                                   | 1          | Integer  | Passenger age. |
+| @age                                   | 1          | Integer  | Passenger age on the day of check-in. |
 | @id                                    | 1          | Integer  | Passenger id (starting at 1). |
 | Parameters                             | 0..1       |          | Additional parameters reported in AvailRS. **If you receive parameters in AvailRS it is mandatory to send them exactly the same as received.** If you don't send exactly the same parameters as received the Valuation could fail. |
 | Parameters/Parameter                   | 0..n       |          | Additional parameter requiring integration. |
