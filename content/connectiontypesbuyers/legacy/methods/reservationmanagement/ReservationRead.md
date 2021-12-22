@@ -162,7 +162,7 @@ is closed.
 | Hotel/RoomCandidates/RoomCandidate	| 1..n       	|		| Room required.				|
 | @id					| 0..1 		| Integer	| Id of the requested room (starting at 1). 	|
 | RoomCandidates/RoomCandidate/Paxes/Pax| 1..n       	|		| Pax required.					|
-| @age					| 0..1 		| Integer	| Passenger age.				|
+| @age					| 0..1 		| Integer	| Passenger age on the day of check-in.				|
 | @id					| 0..1 		| Integer	| Id of the requested room (starting at 1).	|
 | Hotel/CancelPenaltiesCancelPenalties	| 0..1       	|		| Information of cancellation policies.		|
 | @nonRefundable			| 1    		| Boolean	| Indicate if this option is nonRefundable (true or false). |
