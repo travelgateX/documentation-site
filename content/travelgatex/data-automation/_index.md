@@ -24,7 +24,7 @@ Our APIs have been built from the ground up with performance in mind. That means
 
 The data we must store following specificitations:
 ### HotelX
-* [Mappings](connectiontypesbuyers/hotel-x/plugins/mapping/)
-* [Custom hotel lists](connectiontypesbuyers/hotel-x/concepts/content/)
+* [Mappings](https://docs.travelgatex.com/connectiontypesbuyers/hotel-x/plugins/mapping/)
+* [Custom hotel lists](https://docs.travelgatex.com/connectiontypesbuyers/hotel-x/methods/staticcontent/)
 
 {{%custom-children%}}
