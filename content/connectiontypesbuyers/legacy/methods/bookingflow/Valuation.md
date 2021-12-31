@@ -173,6 +173,7 @@ Our system allows for a maximum of **180000** milliseconds before the connection
 | @type					    | 1          | String   | Type of possible penalty values: “Noches” (nights) , “Porcentaje” (percentage) ,”Importe” (price value). |
 | @currency				    | 1          | String   | Currency code. |
 | @paymentType                            | 1          | String   | Indicates payment type of penalty (See full type list at [Lists of Data](https://docs.travelgatex.com/legacy/hotel/methods/messages/listsdata/)) . |
+| CancelPenalties/CancelPenalty/Deadline | 0..1          | String   | Cancellation fees will be applicabled between this date and check-in date. |
 | Remarks 				    | 0..1       | String   | Remarks (see [MetaData](https://docs.travelgatex.com/legacy/hotel/methods/messages/metadata/) in order to verify if a supplier implements it).       |
 | PaymentOptions			    | 0..1       | String   | Payment Types allowed by the supplier. This tag  is mandatory only if payment type is different than MerchantPay. |
 | PaymentOptions/Cards			    | 0..1		 | 	    | List of cards allowed. |
