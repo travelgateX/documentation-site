@@ -16,7 +16,7 @@ GraphQL is a query language, and as such it does exactly that: it queries server
 In GraphQL, the API specifications are called _schemas_. **A GraphQL `Schema` is a contract between the client and the server**. It defines how clients and servers can talk to each other and sets out what they expect from each other. This way, both know exactly what they can and cannot send to each other and what they'll get in response to that.
 
 There are a number of ways you can understand our `Schema`:
-<ul><li>You can see all elements of our data model by clicking on the green `Schema` button on the right hand side of our <a href="api.travelgatex.com">API playground</a>.</li>
+<ul><li>You can see all elements of our data model by clicking on the green `Schema` button on the right hand side of our <a href="https://api.travelgatex.com/">API playground</a>.</li>
 <li>You can review our Reference Documentation which provides a page by page analysis of all `Objects` and fields used in our `Schema`.</li>
   <li>You can see how all of the data fields are connected by exploring the <a href="https://api.travelgatex.com/voyager">GraphQL Voyager tool</a>.</li></ul>
   
