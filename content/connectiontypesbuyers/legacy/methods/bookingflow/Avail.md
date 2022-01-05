@@ -339,6 +339,7 @@ is closed.
 | MealPlans/MealPlan/Options /Option/CancelPenalties /CancelPenalty | 1..n| | Contains the value to apply.				|
 | @type 				| 1 		| String 	| Type of penalty -possible values: "Noches" (nights), "Porcentaje" (percentage), "Importe" (price value).  |
 | @currency 				| 1 		| String 	| Currency code.						|
+| MealPlans/MealPlan/Options /Option/CancelPenalties /CancelPenalty/Deadline| 0..1 | String | Cancellation fees will be applicabled between this date and check-in date. |
 | MealPlans/MealPlan/Options /Option/RateRules | 0..1 	| 		| Option restrictions.					|
 | MealPlans/MealPlan/Options /Option/RateRules/Rules | 0..n | 		| Rules.							|
 | MealPlans/MealPlan/Options /Option/RateRules/Rules /Rule | 1 | 	| Rule.								|
