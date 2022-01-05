@@ -17,7 +17,6 @@ This method aims to return the total price and cancellation policies of the *Opt
 selected  in the previous step (*Avail*).
 
 
-
 ### Request Format
 
 
@@ -124,10 +123,14 @@ In the request for this call it is necessary to use the object: "HotelBaseRQ". Y
         <CancelPenalties nonRefundable = "false">
             <CancelPenalty>
                 <HoursBefore>72</HoursBefore>
+                <Deadline>01/07/2016 05:00:00Z</Deadline>
+                <CalculatedDeadline>false</CalculatedDeadline>
                 <Penalty type = "Importe"  paymentType = "MerchantPay" currency = "EUR">25.00</Penalty>
             </CancelPenalty>
             <CancelPenalty>
                 <HoursBefore>48</HoursBefore>
+                <Deadline>02/07/2016 05:00:00Z</Deadline>
+                <CalculatedDeadline>false</CalculatedDeadline>
                 <Penalty type = "Importe"  paymentType = "MerchantPay" currency = "EUR">72.40</Penalty>
             </CancelPenalty>
         </CancelPenalties>
@@ -168,7 +171,9 @@ In the request for this call it is necessary to use the object: "HotelBaseRQ". Y
 | CancelPenalties                           | 1          |          | Cancellation policy details. |
 | @nonRefundable                            | 1          | Boolean  | Indicate if this option is nonRefundable (true or false). |
 | CancelPenalties/CancelPenalty             | 0..n       |          | Listing cancellation penalties. |
-| CancelPenalties/CancelPenalty/HoursBefore | 1          | String   | Number of hours prior to checkin date in which this Cancellation policy applies . |
+| CancelPenalties/CancelPenalty/HoursBefore | 1          | String   | Number of hours prior to checkin date in which this Cancellation policy applies. |
+| CancelPenalties/CancelPenalty/Deadline    | 1          | String   | Date on UTC Standard TimeZone in which this Cancellation policy applies.|
+| CancelPenalties/CancelPenalty/CalculatedDeadline | 1          | Boolean  | Indicate if the Deadline is returned by the supplier or it's been calculated by TravelGate. |
 | CancelPenalties/CancelPenalty/Penalty     | 1          |          | Contains the value to apply. |
 | @type					    | 1          | String   | Type of possible penalty values: “Noches” (nights) , “Porcentaje” (percentage) ,”Importe” (price value). |
 | @currency				    | 1          | String   | Currency code. |
@@ -211,6 +216,10 @@ Booking cancellation penalties are affected by the following elements:
 
 -   **HoursBefore:** cancellation fees applicable x number of hours before the check in date
 
+-   **Deadline:** cancellation fees applies from the date displayed on the deadline, which is on UTC Standard. For more information about how TimeZones are handled please check our [MetaData](/connectiontypessellers/hotelpullsellers/methods/messages/static-methods/metadata/) content.
+
+-   **CalculatedDeadline:** Specifies if the Deadline is returned by the supplier or it's been calculated by TravelGate.
+
 -   **Type:** There are three values that can be inside types:
 
 > -   *Noches:* indicates the number of nights to be penalized.
@@ -227,10 +236,14 @@ In this example you can see 2 *CancelPenalty* with different *HoursBefore*:
 <CancelPenalties nonRefundable = "false">
     <CancelPenalty>
         <HoursBefore>72</HoursBefore>
+        <Deadline>01/07/2016 05:00:00Z</Deadline>
+        <CalculatedDeadline>false</CalculatedDeadline>
         <Penalty type = "Importe" paymentType = "MerchantPay" currency = "EUR">25.00</Penalty>
     </CancelPenalty>
     <CancelPenalty>
         <HoursBefore>48</HoursBefore>
+        <Deadline>02/07/2016 05:00:00Z</Deadline>
+        <CalculatedDeadline>false</CalculatedDeadline>
         <Penalty type = "Importe" paymentType = "MerchantPay" currency = "EUR">72.40</Penalty>
     </CancelPenalty>
 </CancelPenalties>

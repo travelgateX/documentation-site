@@ -144,6 +144,7 @@ In the request of this call it is only necessary to use the object: "HotelBaseRQ
         <InformCancelPolicies reviewDate = "20/06/2015">false</InformCancelPolicies>
         <InformCancelPoliciesDescription reviewDate = "20/06/2015">false</InformCancelPoliciesDescription>
         <InformFees reviewDate = "20/06/2015">false</InformFees>
+        <TimeZone reviewDate = "04/01/2022">[eUtc.Utc_Unknown|eUtc.HotelLocalTime|eUtc.Utc_-14|...|eUtc.Utc_0|...|eUtc.Utc_14]</TimeZone>
     </Valuation>
     <Reservation>
         <AllowsDeltaPrice reviewDate = "20/06/2015">false</AllowsDeltaPrice>
@@ -381,6 +382,8 @@ In the request of this call it is only necessary to use the object: "HotelBaseRQ
 | @reviewDate                                                             | 1          | String   | Informs of the date when the field was last reviewed.                                                                                      |
 | Valuation/InformFees                                                    | 1          | Boolean  | Informs if the supplier returns fees.                                                                                                      |
 | @reviewDate                                                             | 1          | String   | Informs of the date when the field was last reviewed.                                                                                      |
+| Valuation/TimeZone                                                      | 1          | Enum     | Informs in which TimeZone are the hoursBefore and deadline values of cancelation policies.                                                                                                      |
+| @reviewDate                                                             | 1          | String   | Informs of the date when the field was last reviewed.                                                                                      |
 | Reservation                                                             | 1          |          | Reservation node.                                                                                                                          |
 | Reservation/AllowsDeltaPrice                                            | 1          | Boolean  | Allows a margin stipulated by the client for booking with a higher price (delta).                                                          |
 | @reviewDate                                                             | 1          | String   | Informs of the date when the field was last reviewed.                                                                                      |
@@ -528,6 +531,43 @@ Some tags were renamed, so that they follow a certain standard of coherence. Wit
 **Avail:**
 
 *MaxNumberHotelsRecommended, MaxNumberCitiesRecommended, MaxNumberZonesRecommended, MaxNumberGeoCodesRecommended:* These tags indicate what the recommended number of Cities/Hotels/Zones or Geocodes is for each supplier are. This means that even if a supplier allows for a search of up to 500 at a time, they may recommend that you do not exceed 200, thus way avoiding TimeOut errors and showing results in time. In the majority of cases the maximum number of hotels allowed is the same as the recommended number of hotels (MaxNumberHotels = MaxNumberHotelsRecommended). There are, however, a few cases in which it can be different.
+
+**Valuation:**
+
+*TimeZone*: This tag indicate in which timezone are the "hoursBefore" and "Deadline" fields of cancelation policies. The possible values are:
+~~~xml
+            Unknown
+            HotelLocalTime
+            UTC-12            
+            UTC-11            
+            UTC-10          
+            UTC-9
+            UTC-8
+            UTC-7
+            UTC-6
+            UTC-5
+            UTC-4
+            UTC-3
+            UTC-2
+            UTC-1
+            UTC+0
+            UTC+1
+            UTC+2
+            UTC+3
+            UTC+4
+            UTC+5
+            UTC+6
+            UTC+7
+            UTC+8
+            UTC+9
+            UTC+10
+            UTC+11
+            UTC+12
+            UTC+13
+            UTC+14
+~~~
+
+If "Unknown" or "HotelLocalTime" are selected we'll add an offset of +14 only to the Deadline in case it's calculated and not returned directly by the supplier on UTC Standard.
 
 **Reservation:**
 
