@@ -162,7 +162,7 @@ In the request for this call it is necessary to use the object: "HotelBaseRQ". Y
 | HotelCode     				| 1  		| String	| Hotel code.						|
 | Nationality   				| 1		| String	| Nationality of the Holder (use ISO3166_1_alfa_2 , see [MetaData](/connectiontypessellers/hotelpullsellers/methods/messages/static-methods/metadata/) in order to verify if a supplier implements it).  |
 | Holder   				| 1		|		| Holder of the booking.  |
-| @title   				| 1		| String	| Holder's title. Possible values: Mr, Mrs, Miss, Ms.   |
+| @title   				| 1		| Enum	| Holder's title. Possible values: 0 = Mr, 1 = Mrs, 2 = Miss, 3 = Ms.   |
 | @name   				| 1		|		| Holder's name.  |
 | @surname   				| 1		|		| Holder's surname.  |
 | @email   				| 0..1		|		| Holder's email.  |
@@ -170,13 +170,13 @@ In the request for this call it is necessary to use the object: "HotelBaseRQ". Y
 | @currency					| 1  		| String	| Currency code.					|
 | @amount  					| 1  		| Decimal	| Option Amount.					|
 | @binding 					| 1  		| Boolean	| Identifies if is the price is binding (When true the sale price returned **must** not be less than the price informed.  |
-| @commission					| 1  		| Decimal	| Commission (-1 = not specified, 0 = net price, X = % of the commission applied to the amount.	|
+| @commission					| 1  		| Decimal	| Commission (-1 = not specified, 0 = net price, X = % of the commission applied to the amount.)	|
 | ResGuests     				| 1      	|		| 				|
 | ResGuests/Guests				| 1      	|		| List of passengers.					|
 | ResGuests/Guests/Guest			| 1..n    	|		| Detail of each passenger.	If the holder is also a passenger you need to add his/hers information in the gest list.			|
 | @roomCandidateId				| 1  		| Integer	| Room candidate Identifier				|
 | @paxId   					| 1  		| Integer	| Passenger id (starting at 1).				|
-| ResGuests/Guests/Guest/Title		| 1 	 	| String	| Guest's title. Possible values: Mr, Mrs, Miss, Ms. 						|
+| ResGuests/Guests/Guest/Title		| 1 	 	| Enum	| Guest's title. Possible values: 0 = Mr, 1 = Mrs, 2 = Miss, 3 = Ms. 						|
 | ResGuests/Guests/Guest/GivenName		| 1 	 	| String	| Guest's given name.						|
 | ResGuests/Guests/Guest/SurName		| 1   		| String	| Guest's last name.						|
 | PaymentType   				| 1  		| String	| Indicates the type of payment. It can be MerchantPay, LaterPay, CardBookingPay or CardCheckInPay. Payment types are explained in "Detailed description" section, in this same page.			|
@@ -250,7 +250,7 @@ In the request for this call it is necessary to use the object: "HotelBaseRQ". Y
 | ReservationRS					| 1       	|		| Root node.						|
 | ProviderLocator 				| 1  		| String	| Booking ID in the Supplier´s system					|
 | PropertyReservationNumber 				| 0..1  		| String	| Booking Number in the property´s system (see Metadata method in order to verify if a supplier implements it).	|
-| ResStatus					| 1  		| String	| reservation status  (OK = confirmed, RQ = on request, CN = cancelled, UN = unknown.	|
+| ResStatus					| 1  		| String	| reservation status  (OK = confirmed, RQ = on request, CN = cancelled, UN = unknown.)	|
 | Price  					| 0..1     	|		| Total price of this reservation (see [MetaData](/connectiontypessellers/hotelpullsellers/methods/messages/static-methods/metadata/) in order to verify if a supplier implements it).				|
 | @currency					| 1  		| String	| Currency code.					|
 | @amount					| 1  		| Decimal	| Book Amount.						|
