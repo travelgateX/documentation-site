@@ -583,7 +583,7 @@ There are three values that can be inside types:
 
 > -   *Noches:* Indicates the number of nights to be penalized.
 
-> -   *Porcentaje:*Indicates the percentage to pay based on the option price.
+> -   *Porcentaje:* Indicates the percentage to pay based on the option price.
 
 > -   *Importe:* Indicates the exact amount  payable.
 
