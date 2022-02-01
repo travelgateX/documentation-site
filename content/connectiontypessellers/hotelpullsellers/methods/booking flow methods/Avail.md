@@ -153,12 +153,15 @@ In the request for this call it is necessary to use the object: "HotelBaseRQ". Y
                       <Fees>
                           <Fee includedPriceOption = "true" description = "TaxAndServiceFee" mandatory = "true" refundable = "false">
                               <Price currency = "EUR" amount = "8.11" binding = "false" commission = "-1"/>
+                              <Code>SPE</Code>
                           </Fee>
                       </Fees>
                       <CancelPenalties nonRefundable = "false">
                           <CancelPenalty>
                               <HoursBefore>24</HoursBefore>
                               <Penalty type = "Importe" currency = "EUR">20</Penalty>
+			                        <Deadline>01/07/2016 05:00:00Z</Deadline>
+                              <CalculatedDeadline>false</CalculatedDeadline>
                           </CancelPenalty>
                       </CancelPenalties>
                       <Beds sharedBed = "false">
@@ -192,6 +195,7 @@ In the request for this call it is necessary to use the object: "HotelBaseRQ". Y
                   <Fees>
                     <Fee includedPriceOption = "true" description = "TaxAndServiceFee" mandatory ="true" refundable="false">
                         <Price currency = "EUR" amount = "8.11" binding = "false" commission = "-1"/>
+			                  <Code>SPE</Code>
                     </Fee>
                   </Fees>
                 </Option>
@@ -278,6 +282,10 @@ In the request for this call it is necessary to use the object: "HotelBaseRQ". Y
                   <RateRules>
                     <Rules>
                       <Rule type = "NonRefundable"/>
+		                  <Rule type = "Negotiated">
+            		        <Code>REP</Code>
+            		        <Description>REPSOL</Description>
+        	            </Rule>
                     </Rules>
                   </RateRules>
                 </Option>
@@ -304,6 +312,8 @@ In the request for this call it is necessary to use the object: "HotelBaseRQ". Y
                     <CancelPenalty>
                       <HoursBefore>24</HoursBefore>
                       <Penalty type = "Importe" currency = "EUR">20</Penalty>
+		                  <Deadline>01/07/2016 05:00:00Z</Deadline>
+                      <CalculatedDeadline>false</CalculatedDeadline>
                     </CancelPenalty>
                   </CancelPenalties>
                 </Option>
@@ -336,15 +346,22 @@ In the request for this call it is necessary to use the object: "HotelBaseRQ". Y
 | MealPlans/MealPlan/Options /Option/Parameters/Parameter | 0..n | 	| Additional parameter requiring integration.		|
 | @key 					| 1 		| String 	| Contains the keyword/Id to identify a parameter.		|
 | @value 				| 1 		| String 	| Contains  parameter value.				|
-| MealPlans/MealPlan/Options /Option/CancelPenalties /CancelPenalty | 0..1|  | List of cancellation penalties. (see [MetaData](/connectiontypessellers/hotelpullsellers/methods/messages/static-methods/metadata/) in order to verify if a supplier implements it)				|
-| MealPlans/MealPlan/Options /Option/CancelPenalties /CancelPenalty/HoursBefore| 1 | String | Number of hours prior to arrival day in which this Cancellation policy applies. | 
-| MealPlans/MealPlan/Options /Option/CancelPenalties /CancelPenalty | 1..n| | Contains the value to apply.				|
-| @type 				| 1 		| String 	| Type of penalty -possible values: "Noches" (nights), "Porcentaje" (percentage), "Importe" (price value).  |
-| @currency 				| 1 		| String 	| Currency code.						|
+| MealPlans/MealPlan/Options /Option/CancelPenalties | 1          |          | Cancellation policy details. (see [MetaData](/connectiontypessellers/hotelpullsellers/methods/messages/static-methods/metadata/) in order to verify if a supplier implements it).|
+| @nonRefundable                            | 1          | Boolean  | Indicate if this option is nonRefundable (true or false). |
+| MealPlans/MealPlan/Options /Option/CancelPenalties/CancelPenalty             | 0..n       |          | Listing cancellation penalties. |
+| MealPlans/MealPlan/Options /Option/CancelPenalties/CancelPenalty/HoursBefore | 1          | String   | Number of hours prior to checkin date in which this Cancellation policy applies. |
+| MealPlans/MealPlan/Options /Option/CancelPenalties/CancelPenalty/Deadline    | 1          | String   | Date on UTC Standard TimeZone in which this Cancellation policy applies.|
+| MealPlans/MealPlan/Options /Option/CancelPenalties/CancelPenalty/CalculatedDeadline | 1          | Boolean  | Indicate if the Deadline is returned by the supplier or it's been calculated by TravelGate. true = has been calculated by XTG, false = bypass of supplier data without calculation|
+| MealPlans/MealPlan/Options /Option/CancelPenalties/CancelPenalty/Penalty     | 1          |          | Contains the value to apply. |
+| @type					    | 1          | String   | Type of possible penalty values: “Noches” (nights) , “Porcentaje” (percentage) ,”Importe” (price value). |
+| @currency				    | 1          | String   | Currency code. |
+| @paymentType                            | 1          | String   | Indicates payment type of penalty (See full type list at [Lists of Data](/connectiontypessellers/hotelpullsellers/methods/messages/listsdata/#payment-types)) . |
 | MealPlans/MealPlan/Options /Option/RateRules | 0..1 	| 		| Option restrictions.					|
 | MealPlans/MealPlan/Options /Option/RateRules/Rules | 0..n | 		| Rules.							|
 | MealPlans/MealPlan/Options /Option/RateRules/Rules /Rule | 1 | 	| Rule.								|
 | @type 				| 1 		| String 	| Possible values (NonRefundable, Older55, Package,...). See full list at [Lists of Data](/connectiontypessellers/hotelpullsellers/methods/messages/listsdata/#rate-conditions)	|
+| MealPlans/MealPlan/Options /Option/RateRules/Rules /Rule/Code | 1 | String	| Contains the Rate Rule code in case it has one. |
+| MealPlans/MealPlan/Options /Option/RateRules/Rules /Rule/Description | 1 | String	| Contains the Rate Rule description.	|
 | MealPlans/MealPlan/Options /Option/Rooms | 1 		| 		| Rooms in this option (room list).				|
 | MealPlans/MealPlan/Options /Option/Rooms/Room | 1..n 	| 		| Room details.						|
 | @id 					| 1 		| String 	| Room ID.					|
@@ -396,11 +413,17 @@ In the request for this call it is necessary to use the object: "HotelBaseRQ". Y
 | @amount 				    | 1          | Decimal  | Fee Amount. |
 | @binding				    | 1          | Boolean  | Identifies if is the price is binding (When true the sale price returned must not be less than the price informed. |
 | @commission				    | 1          | Decimal  | Commission: -1 = not specified (indicated in contract with supplier), 0 = net price, X = % of the commission applied to the amount. |
-| MealPlans/MealPlan/Options /Option/Rooms/Room/CancelPenalties /CancelPenalty | 0..1|  | List of cancellation penalties. (see [MetaData](/connectiontypessellers/hotelpullsellers/methods/messages/static-methods/metadata/) in order to verify if a supplier implements it). **Attention:**	When implementing policies at the room level, it is mandatory to add them at the option level. (If there is more than one room it is necessary to unify the policies to show them by option			|
-| MealPlans/MealPlan/Options /Option/Rooms/Room/CancelPenalties /CancelPenalty/HoursBefore| 1 | String | Number of hours prior to arrival day in which this Cancellation policy applies. | 
-| MealPlans/MealPlan/Options /Option/Rooms/Room/CancelPenalties /CancelPenalty | 1..n| | Contains the value to apply.				|
-| @type 				| 1 		| String 	| Type of penalty -possible values: "Noches" (nights), "Porcentaje" (percentage), "Importe" (price value).  |
-| @currency 				| 1 		| String 	| Currency code.						|
+| MealPlans/MealPlan/Options /Option/Rooms/Room/Fees/Fee/Code			    | 1          |   String       | Specifies the fee code in case it has one. |
+| MealPlans/MealPlan/Options /Option/Rooms/Room/CancelPenalties | 1          |          | Cancellation policy details. (see [MetaData](/connectiontypessellers/hotelpullsellers/methods/messages/static-methods/metadata/) in order to verify if a supplier implements it). **Attention:**	When implementing policies at the room level, it is mandatory to add them at the option level. (If there is more than one room it is necessary to unify the policies to show them by option|
+| @nonRefundable                            | 1          | Boolean  | Indicate if this option is nonRefundable (true or false). |
+| MealPlans/MealPlan/Options /Option/Rooms/Room/CancelPenalties/CancelPenalty             | 0..n       |          | Listing cancellation penalties. |
+| MealPlans/MealPlan/Options /Option/Rooms/Room/CancelPenalties/CancelPenalty/HoursBefore | 1          | String   | Number of hours prior to checkin date in which this Cancellation policy applies. |
+| MealPlans/MealPlan/Options /Option/Rooms/Room/CancelPenalties/CancelPenalty/Deadline    | 1          | String   | Date on UTC Standard TimeZone in which this Cancellation policy applies.|
+| MealPlans/MealPlan/Options /Option/Rooms/Room/CancelPenalties/CancelPenalty/CalculatedDeadline | 1          | Boolean  | Indicate if the Deadline is returned by the supplier or it's been calculated by TravelGate. true = has been calculated by XTG, false = bypass of supplier data without calculation|
+| MealPlans/MealPlan/Options /Option/Rooms/Room/CancelPenalties/CancelPenalty/Penalty     | 1          |          | Contains the value to apply. |
+| @type					    | 1          | String   | Type of possible penalty values: “Noches” (nights) , “Porcentaje” (percentage) ,”Importe” (price value). |
+| @currency				    | 1          | String   | Currency code. |
+| @paymentType                            | 1          | String   | Indicates payment type of penalty (See full type list at [Lists of Data](/connectiontypessellers/hotelpullsellers/methods/messages/listsdata/#payment-types)) . |
 | MealPlans/MealPlan/Options /Option/Price | 1 		| 		| Option price ( it is the total price of option).		|
 | @currency 				| 1 		| String 	| Currency code.						|
 | @amount 				| 1 		| Decimal 	| Option Amount.						|
@@ -435,6 +458,7 @@ In the request for this call it is necessary to use the object: "HotelBaseRQ". Y
 | @mandatory 				    | 1          | Boolean   | If the fee is obligatory, depending on the includedPriceOption to know if it is paid at the time of booking or at the hotel. In case it is false, it could be a fee such as "cleaning" that the consumer could hire if he wanted. |
 | @refundable 				    | 1          | Boolean   | This field will serve to know if the rate to be paid is returned, for example when it is a deposit type that is returned once the stay ends. |
 | MealPlans/MealPlan/Options /Option/Fees/Fee/Price			    | 1          |          | Contains details of price. |
+| MealPlans/MealPlan/Options /Option/Fees/Fee/Code			    | 1          |   String       | Specifies the fee code in case it has one. |
 | @currency 				    | 1          | String   | Currency code. |
 | @amount 				    | 1          | Decimal  | Fee Amount. |
 | @binding				    | 1          | Boolean  | Identifies if is the price is binding (When true the sale price returned must not be less than the price informed. |
@@ -578,6 +602,12 @@ the availability method. The treatment of cancellation policies is explained in 
 **Attention:** When cancellation policies are requested (*CancellationPolicies*,*RoomCancellationPolicies*) you should always return them at Option level ([MealPlans/MealPlan/Options/Option/CancelPenalties/CancelPenalty](#AvailRS Description)). If CancellationPolicies is requested we should only receive them at option level, but if RoomCancellationPolicies is requested, we should receive them at option and room levels. Cancellation policies per room are complementary (extra information). 
 
 **HoursBefore:** cancellation fees applicable *x* number of hours before the check in date.
+
+**Deadline:** cancellation fees applies from the date displayed on the deadline, which is on UTC Standard. For more information about how TimeZones are handled please check our [MetaData](/connectiontypessellers/hotelpullsellers/methods/messages/static-methods/metadata/) content.
+
+**CalculatedDeadline:** Specifies if the Deadline is returned by the supplier or it's been calculated by TravelGate.
+	true: the deadline has been converted to UTC-0 by XTG
+	false: the supplier returns the deadline on UTC-0, so no calculation is needed
 
 **Type:** 
 There are three values that can be inside types:
