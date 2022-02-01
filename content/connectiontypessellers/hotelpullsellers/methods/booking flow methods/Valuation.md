@@ -137,6 +137,7 @@ In the request for this call it is necessary to use the object: "HotelBaseRQ". Y
         <Fees>
             <Fee includedPriceOption = "true" description = "TaxAndServiceFee">
                 <Price currency = "EUR" amount = "8.11" binding = "false" commission = "-1"/>
+		        <Code>SPE</Code>
             </Fee>
         </Fees>
         <Remarks/>
@@ -173,7 +174,7 @@ In the request for this call it is necessary to use the object: "HotelBaseRQ". Y
 | CancelPenalties/CancelPenalty             | 0..n       |          | Listing cancellation penalties. |
 | CancelPenalties/CancelPenalty/HoursBefore | 1          | String   | Number of hours prior to checkin date in which this Cancellation policy applies. |
 | CancelPenalties/CancelPenalty/Deadline    | 1          | String   | Date on UTC Standard TimeZone in which this Cancellation policy applies.|
-| CancelPenalties/CancelPenalty/CalculatedDeadline | 1          | Boolean  | Indicate if the Deadline is returned by the supplier or it's been calculated by TravelGate. |
+| CancelPenalties/CancelPenalty/CalculatedDeadline | 1          | Boolean  | Indicate if the Deadline is returned by the supplier or it's been calculated by TravelGate. true = has been calculated by XTG, false = bypass of supplier data without calculation|
 | CancelPenalties/CancelPenalty/Penalty     | 1          |          | Contains the value to apply. |
 | @type					    | 1          | String   | Type of possible penalty values: “Noches” (nights) , “Porcentaje” (percentage) ,”Importe” (price value). |
 | @currency				    | 1          | String   | Currency code. |
@@ -188,6 +189,7 @@ In the request for this call it is necessary to use the object: "HotelBaseRQ". Y
 | @includedPriceOption			    | 1		 | Boolean  | Indicates if the fee is included or not in the final price (value indicated in the node Price in ValuationRS). |
 | @description				    | 1          | String   | Remarks regarding fee. |
 | Fees/Fee/Price			    | 1          |          | Contains details of price. |
+| Fees/Fee/Code			    	    | 1          |   String | Specifies the fee code in case it has one. |
 | @currency 				    | 1          | String   | Currency code. |
 | @amount 				    | 1          | Decimal  | Fee Amount. |
 | @binding				    | 1          | Boolean  | Identifies if is the price is binding (When true the sale price returned must not be less than the price informed. |
@@ -219,6 +221,8 @@ Booking cancellation penalties are affected by the following elements:
 -   **Deadline:** cancellation fees applies from the date displayed on the deadline, which is on UTC Standard. For more information about how TimeZones are handled please check our [MetaData](/connectiontypessellers/hotelpullsellers/methods/messages/static-methods/metadata/) content.
 
 -   **CalculatedDeadline:** Specifies if the Deadline is returned by the supplier or it's been calculated by TravelGate.
+	true: the deadline has been converted to UTC-0 by XTG
+	false: the supplier returns the deadline on UTC-0, so no calculation is needed
 
 -   **Type:** There are three values that can be inside types:
 

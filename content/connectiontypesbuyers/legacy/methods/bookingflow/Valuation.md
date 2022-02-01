@@ -138,6 +138,7 @@ Our system allows for a maximum of **180000** milliseconds before the connection
         <Fees>
             <Fee includedPriceOption = "true" description = "TaxAndServiceFee">
                 <Price currency = "EUR" amount = "8.11" binding = "false" commission = "-1"/>
+                <Code>SPE</Code>
             </Fee>
         </Fees>
         <Remarks/>
@@ -187,6 +188,7 @@ Our system allows for a maximum of **180000** milliseconds before the connection
 | @code   				    | 1          | String   | Code card. Se the full list of card codes at [Lists of Data](https://docs.travelgatex.com/legacy/hotel/methods/messages/listsdata/) |
 | Fees					    | 0..1       | 	    | Contains a list of fees. |
 | Fees/Fee				    | 1..n       |          | Contains details of the fee. |
+| Fees/Fee/Code			    	    | 1          |   String | Specifies the fee code in case it has one. |
 | @includedPriceOption			    | 1		 | Boolean  | Indicates if the fee is included or not in the final price (value indicated in the node Price in ValuationRS). |
 | @description				    | 1          | String   | Remarks regarding fee. |
 | Fees/Fee/Price			    | 1          |          | Contains details of price. |

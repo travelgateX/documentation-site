@@ -184,6 +184,7 @@ We use a standard ISO - 3166_1_alfa_2.
 | **Codes**        | **Description**                                                                                                  |
 |------------------|------------------------------------------------------------------------------------------------------------------|
 | NonRefundable    | Cancellation fee is a 100% from the moment the reservation is create                                             |
+| Negotiated       | Special rates the supplier offers to specific buyers. Each one has a code and a description.                     |
 | Older55          | Rate that can only be sold to people who are 55 yeasrs or older.                                                 |
 | Older60          | Rate that can only be sold to people who are 60 yeasrs or older.                                                 |
 | Older65          | Rate that can only be sold to people who are 65 yeasrs or older.                                                 |

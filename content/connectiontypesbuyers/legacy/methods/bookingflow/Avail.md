@@ -151,12 +151,15 @@ is closed.
                       <Fees>
                           <Fee includedPriceOption = "true" description = "TaxAndServiceFee" mandatory = "true" refundable = "false">
                               <Price currency = "EUR" amount = "8.11" binding = "false" commission = "-1"/>
+                              <Code>SPE</Code>
                           </Fee>
                       </Fees>
                       <CancelPenalties nonRefundable = "false">
                           <CancelPenalty>
                               <HoursBefore>24</HoursBefore>
                               <Penalty type = "Importe" currency = "EUR">20</Penalty>
+			                        <Deadline>01/07/2016 05:00:00Z</Deadline>
+                              <CalculatedDeadline>false</CalculatedDeadline>
                           </CancelPenalty>
                       </CancelPenalties>
                       <Beds sharedBed = "false">
@@ -190,6 +193,7 @@ is closed.
                   <Fees>
                     <Fee includedPriceOption = "true" description = "TaxAndServiceFee" mandatory ="true" refundable="false">
                         <Price currency = "EUR" amount = "8.11" binding = "false" commission = "-1"/>
+                        <Code>SPE</Code>
                     </Fee>
                   </Fees>
                 </Option>
@@ -276,6 +280,10 @@ is closed.
                   <RateRules>
                     <Rules>
                       <Rule type = "NonRefundable"/>
+                      <Rule type = "Negotiated">
+            		        <Code>REP</Code>
+            		        <Description>REPSOL</Description>
+        	            </Rule>
                     </Rules>
                   </RateRules>
                 </Option>
@@ -302,6 +310,8 @@ is closed.
                     <CancelPenalty>
                       <HoursBefore>24</HoursBefore>
                       <Penalty type = "Importe" currency = "EUR">20</Penalty>
+		                  <Deadline>01/07/2016 05:00:00Z</Deadline>
+                      <CalculatedDeadline>false</CalculatedDeadline>
                     </CancelPenalty>
                   </CancelPenalties>
                 </Option>
@@ -344,7 +354,9 @@ is closed.
 | MealPlans/MealPlan/Options /Option/RateRules | 0..1 	| 		| Option restrictions.					|
 | MealPlans/MealPlan/Options /Option/RateRules/Rules | 0..n | 		| Rules.							|
 | MealPlans/MealPlan/Options /Option/RateRules/Rules /Rule | 1 | 	| Rule.								|
-| @type 				| 1 		| String 	| Possible values (NonRefundable, Older55, Package,...). See full list at [Lists of Data](https://docs.travelgatex.com/legacy/hotel/methods/messages/listsdata/)	|
+| @type 				| 1 		| String 	| Possible values (NonRefundable, Older55, Package,...). See full list at [Lists of Data](https://docs.travelgatex.com/connectiontypessellers/hotelpullsellers/listsdata/#rate-conditions)	|
+| MealPlans/MealPlan/Options /Option/RateRules/Rules /Rule/Code | 1 | String	| Contains the Rate Rule code in case it has one. |
+| MealPlans/MealPlan/Options /Option/RateRules/Rules /Rule/Description | 1 | String	| Contains the Rate Rule description.	|
 | MealPlans/MealPlan/Options /Option/Rooms | 1 		| 		| Rooms in this option (room list).				|
 | MealPlans/MealPlan/Options /Option/Rooms/Room | 1..n 	| 		| Room details.						|
 | @id 					| 1 		| String 	| Room ID.					|
@@ -396,6 +408,7 @@ is closed.
 | @amount 				    | 1          | Decimal  | Fee Amount. |
 | @binding				    | 1          | Boolean  | Identifies if is the price is binding (When true the sale price returned must not be less than the price informed. |
 | @commission				    | 1          | Decimal  | Commission: -1 = not specified (indicated in contract with supplier), 0 = net price, X = % of the commission applied to the amount. |
+| MealPlans/MealPlan/Options /Option/Rooms/Room/Fees/Fee/Code			    | 1          |   String       | Specifies the fee code in case it has one. |
 | MealPlans/MealPlan/Options /Option/Rooms/Room/CancelPenalties /CancelPenalty | 0..1|  | List of cancellation penalties. (see [MetaData](https://docs.travelgatex.com/legacy/hotel/methods/messages/metadata/) in order to verify if a supplier implements it)				|
 | MealPlans/MealPlan/Options /Option/Rooms/Room/CancelPenalties /CancelPenalty/HoursBefore| 1 | String | Number of hours prior to arrival day in which this Cancellation policy applies. | 
 | MealPlans/MealPlan/Options /Option/Rooms/Room/CancelPenalties /CancelPenalty | 1..n| | Contains the value to apply.				|
@@ -441,7 +454,7 @@ is closed.
 | @amount 				    | 1          | Decimal  | Fee Amount. |
 | @binding				    | 1          | Boolean  | Identifies if is the price is binding (When true the sale price returned must not be less than the price informed. |
 | @commission				    | 1          | Decimal  | Commission: -1 = not specified (indicated in contract with supplier), 0 = net price, X = % of the commission applied to the amount. |
-
+| MealPlans/MealPlan/Options /Option/Fees/Fee/Code			    | 1          |   String       | Specifies the fee code in case it has one. |
 
 ### Detailed description
 
@@ -587,6 +600,11 @@ There are three values that can be inside types:
 
 > -   *Importe:* Indicates the exact amount  payable.
 
+**Deadline:** cancellation fees applies from the date displayed on the deadline, which is on UTC Standard. For more information about how TimeZones are handled please check our [MetaData](/connectiontypessellers/hotelpullsellers/methods/messages/static-methods/metadata/) content.
+
+**CalculatedDeadline:** Specifies if the Deadline is returned by the supplier or it's been calculated by TravelGate.
+	true: the deadline has been converted to UTC-0 by XTG
+	false: the supplier returns the deadline on UTC-0, so no calculation is needed
 
 **On Request:**
 
