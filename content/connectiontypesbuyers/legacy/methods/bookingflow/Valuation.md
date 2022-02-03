@@ -120,7 +120,7 @@ Our system allows for a maximum of **180000** milliseconds before the connection
             <Parameter key = "bd1" value = "43"/>
         </Parameters>
         <Status>OK</Status>
-        <Price currency = "EUR" amount = "36.20" binding = "false" commission = "-1"/>
+        <Price currency = "EUR" amount = "106.20" binding = "false" commission = "-1"/>
         <CancelPenalties nonRefundable = "false">
             <CancelPenalty>
                 <HoursBefore>72</HoursBefore>
@@ -138,7 +138,7 @@ Our system allows for a maximum of **180000** milliseconds before the connection
         <Fees>
             <Fee includedPriceOption = "true" description = "TaxAndServiceFee">
                 <Price currency = "EUR" amount = "8.11" binding = "false" commission = "-1"/>
-                <Code>SPE</Code>
+		        <Code>SPE</Code>
             </Fee>
         </Fees>
         <Remarks/>
