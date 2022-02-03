@@ -261,6 +261,12 @@ In the request of this call it is only necessary to use the object: "HotelBaseRQ
 </MetaDataRS>
 ~~~
 
+
+**Important information about Number (Cardinal):**
+
+Go to [Common-Elements](/connectiontypessellers/hotelpullsellers/methods/messages/common-elements/#Important) for more information.
+
+
 ### MetaDataRS Description
 
 | **Element**                                                             | **Number** | **Type** | **Description**                                                                                                                            |
@@ -318,9 +324,9 @@ In the request of this call it is only necessary to use the object: "HotelBaseRQ
 | @reviewDate                                                             | 1          | String   | Informs of the date when the field was last reviewed.                                                                                      |
 | Avail/RoomCandidates/RequiredRoomWithSamePaxConfiguration/SamePaxAge    | 1          | Boolean  | Indicates whether all of the guests in a particular distribution must be the same age.                                                     |
 | @reviewDate                                                             | 1          | String   | Informs of the date when the field was last reviewed.                                                                                      |
-| Avail/RoomCandidates/AgeRange                                           | 1          |          | The age range used by the supplier.                                                                                                        |
+| Avail/RoomCandidates/AgeRange                                           | 1..n          |          | The age range used by the supplier.                                                                                                        |
 | @reviewDate                                                             | 1          | String   | Informs of the date when the field was last reviewed.                                                                                      |
-| Avail/RoomCandidates/AgeRange/Age                                       | 1          |          | Age range.                                                                                                                                 |
+| Avail/RoomCandidates/AgeRange/Age                                       | 1..n          |          | Age range.                                                                                                                                 |
 | @type                                                                   | 1          | String   | Type of classification according to age.(Adult, Child, Infant)                                                                             |
 | @min                                                                    | 1          | String   | Minimum age in range.                                                                                                                      |
 | @max                                                                    | 1          | String   | Max age in range.                                                                                                                          |

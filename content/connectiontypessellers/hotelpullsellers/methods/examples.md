@@ -29,34 +29,43 @@ Connection: Keep-Alive
 ~~~
 Post body:
 ~~~xml
+
 <AvailRQ>
     <timeoutMilliseconds>24700</timeoutMilliseconds>
     <source>
         <languageCode>en</languageCode>
     </source>
+    <filterAuditData>
+        <registerTransactions>true</registerTransactions>
+    </filterAuditData>
     <optionsQuota>0</optionsQuota>
+    <hubUser>xxx</hubUser>
+    <hubProvider>XXX</hubProvider>
+    <hubProviderInstanceCode>XYX</hubProviderInstanceCode>
     <Configuration>
         <User>USERXX</User>
         <Password>PWXX</Password>
-        <UrlAvail>www.supplier.com/avail</UrlAvail>
-        <UrlReservation>www.supplier.com/reservation</UrlReservation>
-        <UrlValuation>www.supplier.com/valuation</UrlValuation>
         <UrlGeneric>www.supplier.com</UrlGeneric>
+        <UrlAvail>www.supplier.com/avail</UrlAvail>
+        <UrlValuation>www.supplier.com/valuation</UrlValuation>
+        <UrlReservation>www.supplier.com/reservation</UrlReservation>       
         <Parameters>
             <Parameter key = "param" value = "PWXML"/>
         </Parameters>
     </Configuration>
+    <SearchType>Combined</SearchType>
     <CancellationPolicies>false</CancellationPolicies>
     <RoomCancellationPolicies>false</RoomCancellationPolicies>
     <DailyPrices>false</DailyPrices>
     <DailyRatePlans>false</DailyRatePlans>
+    <Attributes>false</Attributes>
     <OnRequest>false</OnRequest>
     <BusinessRules>CheaperAmount</BusinessRules>
     <AvailDestinations>
-        <Destination type = "HOT" code = "5"/>
+        <Destination type = "HOT" code = "157"/>
     </AvailDestinations>
-    <StartDate>28/01/2022</StartDate>
-    <EndDate>29/01/2022</EndDate>
+    <StartDate>28/10/2022</StartDate>
+    <EndDate>29/10/2022</EndDate>
     <Currency>EUR</Currency>
     <Nationality>ES</Nationality>
     <Markets>
@@ -64,21 +73,23 @@ Post body:
         <Market>EN</Market>
     </Markets>
     <RoomCandidates>
-        <RoomCandidate id = "1">
+        <RoomCandidate cantidad = "1" id = "1">
             <Paxes>
                 <Pax age = "30" id = "1"/>
                 <Pax age = "30" id = "2"/>
             </Paxes>
         </RoomCandidate>
-        <RoomCandidate id = "2">
+        <RoomCandidate cantidad = "2" id = "2">
             <Paxes>
                 <Pax age = "35" id = "1"/>
                 <Pax age = "42" id = "2"/>
                 <Pax age = "5" id = "3"/>
             </Paxes>
         </RoomCandidate>
+        <Remarks>true</Remarks>
     </RoomCandidates>
 </AvailRQ>
+
 
 ~~~
 

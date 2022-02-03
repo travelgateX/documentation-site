@@ -78,6 +78,11 @@ In the request for this call it is necessary to use the object: "HotelBaseRQ". Y
 ~~~
 
 
+**Important information about Number (Cardinal):**
+
+Go to [Common-Elements](/connectiontypessellers/hotelpullsellers/methods/messages/common-elements/#Important) for more information.
+
+
 ### ValuationRQ Description
 
 
@@ -119,7 +124,7 @@ In the request for this call it is necessary to use the object: "HotelBaseRQ". Y
             <Parameter key = "bd1" value = "43"/>
         </Parameters>
         <Status>OK</Status>
-        <Price currency = "EUR" amount = "36.20" binding = "false" commission = "-1"/>
+        <Price currency = "EUR" amount = "106.20" binding = "false" commission = "-1"/>
         <CancelPenalties nonRefundable = "false">
             <CancelPenalty>
                 <HoursBefore>72</HoursBefore>

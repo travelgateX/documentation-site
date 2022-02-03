@@ -36,10 +36,34 @@ The returned XML contains a template of all connection fields used in order to c
 In the request of this call it is only necessary to use the object: "HotelBaseRQ". You can find the info in the '[Common Elements](/connectiontypessellers/hotelpullsellers/methods/messages/common-elements/)' section.
 
 ~~~xml
-    <ConfigurationRQ>
-    </ConfigurationRQ>
+    <ConfigurationRQ xmlns:xsd = "http://www.w3.org/2001/XMLSchema" xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance">
+    <timeoutMilliseconds>999999</timeoutMilliseconds>
+    <source>
+        <languageCode>en</languageCode>
+    </source>
+    <filterAuditData>
+        <registerTransactions>true</registerTransactions>
+    </filterAuditData>
+    <optionsQuota>0</optionsQuota>
+    <hubProvider>XXX</hubProvider>
+    <Configuration>
+        <User>USERXX</User>
+        <Password>PWXX</Password>
+        <UrlAvail>https://www.supplier.com/tgx</UrlAvail>
+        <UrlReservation>https://www.supplier.com/tgx</UrlReservation>
+        <UrlValuation>https://www.supplier.com/tgx</UrlValuation>
+        <UrlGeneric>https://www.supplier.com/tgx</UrlGeneric>
+        <Parameters>
+            <Parameter key = "param" value = "PWXML"/>
+        </Parameters>
+    </Configuration>
+</ConfigurationRQ>
 ~~~
 
+
+**Important information about Number (Cardinal):**
+
+Go to [Common-Elements](/connectiontypessellers/hotelpullsellers/methods/messages/common-elements/#Important) for more information.
 
 
 ### ConfigurationRQ Description
@@ -64,7 +88,7 @@ In the request of this call it is only necessary to use the object: "HotelBaseRQ
             <ProviderTagName>Endpoint Supplier</ProviderTagName>
             <Show>true</Show>
             <Mandatory>true</Mandatory>
-            <Pattern>^(?:(http(s)?|ftp|file):\/\/)?[\w.-]+(?:\.[\w\.-]+)+[\w\-\._~:/?#[\]@!\$&'\(\)\*\+,;=.]+$</Pattern>
+            <Pattern>^(?:(http(s)?|ftp|file):\/\/)?[\w.-]+(?:\.[\w\.-]+)+[\w\-\._~:/?#[\]@!\$&amp;'\(\)\*\+,;=.]+$</Pattern>
             <DescriptionPattern>Please, this field expects the value of a url.</DescriptionPattern>
             <Description>Endpoint Supplier Restel</Description>
             <Type>uri</Type>
@@ -159,7 +183,7 @@ In the request of this call it is only necessary to use the object: "HotelBaseRQ
             <TagRunTime>Parameter</TagRunTime>
             <Show>false</Show>
             <Mandatory>true</Mandatory>
-            <Pattern>^(?:(http(s)?|ftp|file):\/\/)?[\w.-]+(?:\.[\w\.-]+)+[\w\-\._~:/?#[\]@!\$&'\(\)\*\+,;=.]+$</Pattern>
+            <Pattern>^(?:(http(s)?|ftp|file):\/\/)?[\w.-]+(?:\.[\w\.-]+)+[\w\-\._~:/?#[\]@!\$&amp;'\(\)\*\+,;=.]+$</Pattern>
             <DescriptionPattern>Please, this field expects the value of a url.</DescriptionPattern>
             <Description>Url Room List</Description>
             <Type>uri</Type>
@@ -180,6 +204,9 @@ This is the example of how the form is displayed with the previous xml response.
 ![This is the example of how the form is displayed with the previous xml response](/connectiontypessellers/hotelpullsellers/images/ExampleFormBuena.png)
 
 
+**Important information about Number (Cardinal):**
+
+Go to [Common-Elements](/connectiontypessellers/hotelpullsellers/methods/messages/common-elements/#Important) for more information.
 
 
 ### ConfiguracionRS Description
