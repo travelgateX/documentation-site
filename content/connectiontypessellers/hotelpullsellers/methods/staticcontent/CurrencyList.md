@@ -42,7 +42,7 @@ In the request of this call it is only necessary to use the object: "HotelBaseRQ
 
 **Important information about Number (Cardinal):**
 
-Go to [Common-Elements](/connectiontypessellers/hotelpullsellers/methods/messages/common-elements/#Important) for more information.
+Go to [Common-Elements](/connectiontypessellers/hotelpullsellers/methods/common-elements/#Important) for more information.
 
 
 ### CurrencyListRQ Description

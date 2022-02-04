@@ -55,7 +55,7 @@ In the request for this call it is necessary to use the object: "HotelBaseRQ". Y
 
 **Important information about Number (Cardinal):**
 
-Go to [Common-Elements](/connectiontypessellers/hotelpullsellers/methods/messages/common-elements/#Important) for more information.
+Go to [Common-Elements](/connectiontypessellers/hotelpullsellers/methods/common-elements/#Important) for more information.
 
 
 ### DescriptiveInfoRQ Description

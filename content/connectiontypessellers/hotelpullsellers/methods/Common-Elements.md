@@ -47,11 +47,14 @@ The response object contains the status of the request and any possible errors a
 
 ### Important
 
-{{% alert theme="warning" %}}**Cardinal Number**: Indicates the number or quantity of elements of a set, whether this quantity is finite. And at the same time, whether or not it is mandatory:
--   1 = Mandatory (One)
--   1..n = Mandatory (One-to-Many)
--   0 = Optional (Zero)
--   0..n = Optional (Zero-to-Many)
+{{% alert theme="warning" %}}**Cardinal Number**: 
+
+Indicates the number or quantity of elements of a set, whether this quantity is finite. And at the same time, whether or not it is mandatory.
+
+> -  1 = Mandatory (One)
+> -  1..n = Mandatory (One-to-Many)
+> -  0 = Optional (Zero)
+> -  0..n = Optional (Zero-to-Many)
 {{% /alert %}}
 
 
