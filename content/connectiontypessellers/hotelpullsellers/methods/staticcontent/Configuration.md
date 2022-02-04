@@ -36,7 +36,7 @@ The returned XML contains a template of all connection fields used in order to c
 In the request of this call it is only necessary to use the object: "HotelBaseRQ". You can find the info in the '[Common Elements](/connectiontypessellers/hotelpullsellers/methods/messages/common-elements/)' section.
 
 ~~~xml
-    <ConfigurationRQ xmlns:xsd = "http://www.w3.org/2001/XMLSchema" xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance">
+<ConfigurationRQ xmlns:xsd = "http://www.w3.org/2001/XMLSchema" xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance">
     <timeoutMilliseconds>999999</timeoutMilliseconds>
     <source>
         <languageCode>en</languageCode>
@@ -63,7 +63,7 @@ In the request of this call it is only necessary to use the object: "HotelBaseRQ
 
 **Important information about Number (Cardinal):**
 
-Go to [Common-Elements](/connectiontypessellers/hotelpullsellers/methods/messages/common-elements/#Important) for more information.
+Go to [Common-Elements](/connectiontypessellers/hotelpullsellers/methods/common-elements/#Important) for more information.
 
 
 ### ConfigurationRQ Description
