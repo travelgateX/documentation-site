@@ -48,7 +48,7 @@ is closed, is of **240000** milliseconds.
 
 ### ReservationListRQ Example
 
-In the request for this call it is necessary to use the object: "HotelBaseRQ". You can find the information in the section '[Common elements](/connectiontypessellers/hotelpullsellers/methods/messages/common-elements/)'.
+In the request for this call it is necessary to use the object: "HotelBaseRQ". You can find the information in the section '[Common elements](/connectiontypessellers/hotelpullsellers/methods/common-elements/)'.
 
 ~~~xml
     <ReservationListRQ>
@@ -59,9 +59,11 @@ In the request for this call it is necessary to use the object: "HotelBaseRQ". Y
 ~~~
 
 
+
 **Important information about Number (Cardinal):**
 
 Go to [Common-Elements](/connectiontypessellers/hotelpullsellers/methods/common-elements/#Important) for more information.
+
 
 
 ### ReservationListRQ Description
@@ -78,7 +80,6 @@ Go to [Common-Elements](/connectiontypessellers/hotelpullsellers/methods/common-
 
 
 ### ReservationListRS Example
-
 
 ~~~xml
     <ReservationListRS>
@@ -156,6 +157,7 @@ Go to [Common-Elements](/connectiontypessellers/hotelpullsellers/methods/common-
         </Reservations>
     </ReservationListRS>
 ~~~
+
 
 
 ### ReservationListRS Description

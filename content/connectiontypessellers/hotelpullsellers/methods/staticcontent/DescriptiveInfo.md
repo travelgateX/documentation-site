@@ -42,7 +42,7 @@ is **180000** milliseconds.
 
 ### DescriptiveInfoRQ Example
 
-In the request for this call it is necessary to use the object: "HotelBaseRQ". You can find the information in the section '[Common elements](/connectiontypessellers/hotelpullsellers/methods/messages/common-elements/)'.
+In the request for this call it is necessary to use the object: "HotelBaseRQ". You can find the information in the section '[Common elements](/connectiontypessellers/hotelpullsellers/methods/common-elements/)'.
 
 ~~~xml
     <DescriptiveInfoRQ>
@@ -53,13 +53,14 @@ In the request for this call it is necessary to use the object: "HotelBaseRQ". Y
 ~~~
 
 
+
 **Important information about Number (Cardinal):**
 
 Go to [Common-Elements](/connectiontypessellers/hotelpullsellers/methods/common-elements/#Important) for more information.
 
 
-### DescriptiveInfoRQ Description
 
+### DescriptiveInfoRQ Description
 
 
 | **Element**				| **Number**	| **Type**	| **Description**				|
@@ -70,9 +71,7 @@ Go to [Common-Elements](/connectiontypessellers/hotelpullsellers/methods/common-
 
 
 
-
 ### DescriptiveInfoRS Example
-
 
 ~~~xml
     <DescriptiveInfoRS>
@@ -257,8 +256,8 @@ Go to [Common-Elements](/connectiontypessellers/hotelpullsellers/methods/common-
 ~~~
 
 
-### DescriptiveInfoRS Description
 
+### DescriptiveInfoRS Description
 
 
 | **Element**				| **Number**	| **Type**	| **Description**						|

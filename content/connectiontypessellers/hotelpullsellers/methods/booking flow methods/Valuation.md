@@ -40,7 +40,7 @@ Our system allows for a maximum of **180000** milliseconds before the connection
 
 ### ValuationRQ Example
 
-In the request for this call it is necessary to use the object: "HotelBaseRQ". You can find the information in the section '[Common elements](/connectiontypessellers/hotelpullsellers/methods/messages/common-elements/)'.
+In the request for this call it is necessary to use the object: "HotelBaseRQ". You can find the information in the section '[Common elements](/connectiontypessellers/hotelpullsellers/methods/common-elements/)'.
 
 ~~~xml
 <ValuationRQ>
@@ -78,9 +78,11 @@ In the request for this call it is necessary to use the object: "HotelBaseRQ". Y
 ~~~
 
 
+
 **Important information about Number (Cardinal):**
 
 Go to [Common-Elements](/connectiontypessellers/hotelpullsellers/methods/common-elements/#Important) for more information.
+
 
 
 ### ValuationRQ Description
@@ -116,7 +118,6 @@ Go to [Common-Elements](/connectiontypessellers/hotelpullsellers/methods/common-
 
 
 ### ValuationRS Example
-
 
 ~~~xml
     <ValuationRS>
@@ -156,6 +157,7 @@ Go to [Common-Elements](/connectiontypessellers/hotelpullsellers/methods/common-
        <CancelPoliciesDescription/>
     </ValuationRS>
 ~~~
+
 
 
 ### ValuationRS Description
@@ -212,10 +214,10 @@ There are some suppliers who use block allotments, sometimes called pre-confirma
 In that case, you will have 30 minutes to complete the booking, if  not, you will have to re-launch Valuation 30 minutes after the last request, normally just before booking request.
 
 
-
 **Status:**
 
 The valuation response depends if the parameter <OnRequest> is set: if it is set as false, the integration will filter this option.  If the supplier provides us a new status in ValuationRS, then we return an error because the supplier changed the status option.
+
 
 **CancelPenalty:**
 

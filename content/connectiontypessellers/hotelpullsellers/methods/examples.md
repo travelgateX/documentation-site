@@ -6,17 +6,21 @@ weight = 5
 icon = "fa-life-ring"
 +++
 
+
 In this page you can download a Postman project where you will find an example of each request from TravelgateX API with the connectivity already configured.
 
 Only changes needed are the endpoint and the configuration in the requests:
 
+
 {{< figure src="/images/hotel_suppliers_example_postman.png#center" attr="" >}}
+
+
 
 You can download the Postman example project [here](/content/API TravelGateX.postman_collection.zip)
 
 
 
-Example of request the seller will receive from TravelgateX system:
+*Example of request the seller will receive from TravelgateX system:*
 
 Post headers:
 
@@ -27,7 +31,9 @@ Expect: 100-continue
 Accept-Encoding: gzip
 Connection: Keep-Alive
 ~~~
+
 Post body:
+
 ~~~xml
 
 <AvailRQ>
@@ -43,12 +49,7 @@ Post body:
     <hubProvider>XXX</hubProvider>
     <hubProviderInstanceCode>XYX</hubProviderInstanceCode>
     <Configuration>
-        <User>USERXX</User>
-        <Password>PWXX</Password>
-        <UrlGeneric>www.supplier.com</UrlGeneric>
-        <UrlAvail>www.supplier.com/avail</UrlAvail>
-        <UrlValuation>www.supplier.com/valuation</UrlValuation>
-        <UrlReservation>www.supplier.com/reservation</UrlReservation>       
+        <UrlGeneric>www.supplier.com</UrlGeneric>      
         <Parameters>
             <Parameter key = "param" value = "PWXML"/>
         </Parameters>
@@ -89,7 +90,6 @@ Post body:
         <Remarks>true</Remarks>
     </RoomCandidates>
 </AvailRQ>
-
 
 ~~~
 

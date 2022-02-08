@@ -43,9 +43,10 @@ It is separated in the following sections:
 Clarification - All information contained within the Avail section relates to the availability method and all information contained within the Valuation section, relates to the valuation method, and so on.
 
 
+
 ### MetaDataRQ Example
 
-In the request of this call it is only necessary to use the object: "HotelBaseRQ". You can find the info in the '[Common Elements](/connectiontypessellers/hotelpullsellers/methods/messages/common-elements/)' section.
+In the request of this call it is only necessary to use the object: "HotelBaseRQ". You can find the info in the '[Common Elements](/connectiontypessellers/hotelpullsellers/methods/common-elements/)' section.
 
 ~~~xml
     <MetaDataRQ>
@@ -53,16 +54,23 @@ In the request of this call it is only necessary to use the object: "HotelBaseRQ
 ~~~
 
 
-### MetaDataRQ Description
 
+**Important information about Number (Cardinal):**
+
+Go to [Common-Elements](/connectiontypessellers/hotelpullsellers/methods/common-elements/#Important) for more information.
+
+
+
+### MetaDataRQ Description
 
   
 | **Element** | **Number** | **Type** | **Description** |
 |-------------|------------|----------|-----------------|
 | MetaDataRQ  | 1          |          | Root node.      |
 
-### MetaDataRS Example
 
+
+### MetaDataRS Example
 
 ~~~xml
     <MetaDataRS>
@@ -100,7 +108,9 @@ In the request of this call it is only necessary to use the object: "HotelBaseRQ
                 <SamePaxAge reviewDate = "20/06/2015">false</SamePaxAge>
             </RequiredRoomWithSamePaxConfiguration>
             <AgeRange reviewDate = "11/11/2016">
-                <Age type = "Child" min = "2" max = "5"/>
+                <Age type = "Adult" min = "18" max = "99"/>
+                <Age type = "Child" min = "2" max = "17"/>
+                <Age type = "Infant" min = "0" max = "1"/>
             </AgeRange>
         </RoomCandidates>
         <RateRules>
@@ -262,12 +272,9 @@ In the request of this call it is only necessary to use the object: "HotelBaseRQ
 ~~~
 
 
-**Important information about Number (Cardinal):**
-
-Go to [Common-Elements](/connectiontypessellers/hotelpullsellers/methods/common-elements/#Important) for more information.
-
 
 ### MetaDataRS Description
+
 
 | **Element**                                                             | **Number** | **Type** | **Description**                                                                                                                            |
 |-------------------------------------------------------------------------|------------|----------|--------------------------------------------------------------------------------------------------------------------------------------------|
@@ -514,13 +521,16 @@ Go to [Common-Elements](/connectiontypessellers/hotelpullsellers/methods/common-
 | @reviewDate                                                             | 1          | String   | Informs of the date when the field was last reviewed.                                                                                      |
 
 
+
 ### Detailed description
 
 {{% alert theme="warning" %}}**Important**: values can be -1, this means the supplier has no restriction. For example, if MaxNumberHotels returns -1 means there is no maximum number of hotels to be set in a request.{{% /alert %}}
 
+
 **reviewDate attribute:**
 
 The attribute called reviewDate will let you know when the field was last reviewed, thus ensuring that you can trust the information as being up to date.
+
 
 **Tags structure:**
 
@@ -534,9 +544,11 @@ Some tags were renamed, so that they follow a certain standard of coherence. Wit
 
 - *Allows:* It indicates whether an optional field in our RQ is allowed to display additional items. For example the onrequest in availability.
 
+
 **Avail:**
 
 *MaxNumberHotelsRecommended, MaxNumberCitiesRecommended, MaxNumberZonesRecommended, MaxNumberGeoCodesRecommended:* These tags indicate what the recommended number of Cities/Hotels/Zones or Geocodes is for each supplier are. This means that even if a supplier allows for a search of up to 500 at a time, they may recommend that you do not exceed 200, thus way avoiding TimeOut errors and showing results in time. In the majority of cases the maximum number of hotels allowed is the same as the recommended number of hotels (MaxNumberHotels = MaxNumberHotelsRecommended). There are, however, a few cases in which it can be different.
+
 
 **Valuation:**
 
@@ -573,7 +585,9 @@ Some tags were renamed, so that they follow a certain standard of coherence. Wit
             UTC+14
 ~~~
 
+
 If "Unknown" or "HotelLocalTime" are selected we'll add an offset of +14 only to the Deadline in case it's calculated and not returned directly by the supplier on UTC Standard.
+
 
 **Reservation:**
 
@@ -582,6 +596,7 @@ If "Unknown" or "HotelLocalTime" are selected we'll add an offset of +14 only to
    - **Preference**: Each of these tags will specify the type of preference allowed and at what level it can be requested
     - hotel => at the option / general level.
     - room => at room level.
+
    - **PreferenceType**: The types that allow, the possible values are:
     - Smoker
     - NonSmoker
@@ -599,13 +614,17 @@ If "Unknown" or "HotelLocalTime" are selected we'll add an offset of +14 only to
     - WithoutVoucher
                     
    - **Value** :
+
     - **mandatory**: Here we will specify if it is necessary to pass a value in the Preference tag in reservation request.
+
     - **type**: Then you must specify the type of value that can be sent in tag type. This type is an Enum that could be:
         - string
         - numeric
         - boolean
-                 
+
+
    - **Example 1**:
+
      - MetaData:
      ~~~xml
          <Preference hotel = "false" room = "true">
@@ -613,11 +632,14 @@ If "Unknown" or "HotelLocalTime" are selected we'll add an offset of +14 only to
             <Value mandatory = "false"/>
          </Preference>
      ~~~
+
      - Reservation:
      ~~~xml
           <Preference type = "Smoker"></Preference>
      ~~~
+
    - **Example 2**:
+
      - MetaData:
      ~~~xml
          <Preference hotel = "false" room = "true">
@@ -625,14 +647,17 @@ If "Unknown" or "HotelLocalTime" are selected we'll add an offset of +14 only to
             <Value mandatory = "true" type = "string"/>
          </Preference>
      ~~~
+
      - Reservation:
      ~~~xml
           <Preference type = "LateArrival">14:00</Preference>
      ~~~
 
+
 **Reservation Read, ReservationList:**
 
 *InformPriceCancel:* In case the booking status is CN, this field allows us to show the price of the cancellation and not the price of the booking. 
+
 
 **Batch:**
 

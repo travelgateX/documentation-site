@@ -44,7 +44,7 @@ The **ContinuationToken** can be used in this request - the specification can be
 
 ### HotelListRQ Example
 
-In the request of this call it is only necessary to use the object: "HotelBaseRQ". You can find the info in the '[Common Elements](/connectiontypessellers/hotelpullsellers/methods/messages/common-elements/)' section.
+In the request of this call it is only necessary to use the object: "HotelBaseRQ". You can find the info in the '[Common Elements](/connectiontypessellers/hotelpullsellers/methods/common-elements/)' section.
 
 ~~~xml
     <HotelListRQ>
@@ -52,13 +52,14 @@ In the request of this call it is only necessary to use the object: "HotelBaseRQ
 ~~~
 
 
+
 **Important information about Number (Cardinal):**
 
 Go to [Common-Elements](/connectiontypessellers/hotelpullsellers/methods/common-elements/#Important) for more information.
 
 
-### HotelListRQ Description
 
+### HotelListRQ Description
 
 
 | **Element**		| **Number**	| **Type**	| **Description**	|
@@ -68,7 +69,6 @@ Go to [Common-Elements](/connectiontypessellers/hotelpullsellers/methods/common-
 
 
 ### HotelListRS Example
-
 
 ~~~xml
     <HotelListRS>
@@ -140,8 +140,8 @@ Go to [Common-Elements](/connectiontypessellers/hotelpullsellers/methods/common-
 ~~~
 
 
-### HotelListRS Description
 
+### HotelListRS Description
 
 
 | **Element**				| **Number**	| **Type**	| **Description**						|
@@ -186,8 +186,6 @@ Go to [Common-Elements](/connectiontypessellers/hotelpullsellers/methods/common-
 | PropertyCategory/Name			| 1    		| String	| Supplier's property name.					|
                      
  
-
-
 
 ### Detailed Description
 

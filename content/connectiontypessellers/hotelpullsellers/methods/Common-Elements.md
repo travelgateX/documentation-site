@@ -21,7 +21,6 @@ The response object contains the status of the request and any possible errors a
 
 ### Common Elements RQ Example
 
-
 ~~~xml
     <HotelBaseRQ>
         <timeoutMilliseconds>20000</timeoutMilliseconds>
@@ -45,6 +44,7 @@ The response object contains the status of the request and any possible errors a
 ~~~
 
 
+
 ### Important
 
 {{% alert theme="warning" %}}**Cardinal Number**: 
@@ -58,8 +58,8 @@ Indicates the number or quantity of elements of a set, whether this quantity is 
 {{% /alert %}}
 
 
-### Common Elements RQ Description
 
+### Common Elements RQ Description
 
 
 | **Element**                          | **Number** | **Type** | **Description** |
@@ -79,9 +79,7 @@ Indicates the number or quantity of elements of a set, whether this quantity is 
 | @value                               | 1          | String   | Contains the parameter values |
 
 
-
 ### Common Elements RS Example
-
 
 ~~~xml
     <HotelBaseRS>
