@@ -40,7 +40,8 @@ The maximum time permitted in our system before the connection is closed is **24
 
 ### CategoryListRQ Example
 
-In the request of this call it is only necessary to use the object: "HotelBaseRQ". You can find the info in the '[Common Elements](/connectiontypessellers/hotelpullsellers/methods/messages/common-elements/)' section.
+In the request of this call it is only necessary to use the object: "HotelBaseRQ". You can find the info in the '[Common Elements](/connectiontypessellers/hotelpullsellers/methods/common-elements/)' section.
+
 
 ~~~xml
     <CategoryListRQ>
@@ -48,13 +49,14 @@ In the request of this call it is only necessary to use the object: "HotelBaseRQ
 ~~~
 
 
+
 **Important information about Number (Cardinal):**
 
 Go to [Common-Elements](/connectiontypessellers/hotelpullsellers/methods/common-elements/#Important) for more information.
 
 
-### CategoryListRQ Description
 
+### CategoryListRQ Description
 
 
 | **Element**			| **Number**	| **Type**	| **Description**		|
@@ -63,9 +65,7 @@ Go to [Common-Elements](/connectiontypessellers/hotelpullsellers/methods/common-
 
 
 
-
 ### CategoryListRS Example
-
 
 ~~~xml
     <CategoryListRS>
@@ -86,8 +86,8 @@ Go to [Common-Elements](/connectiontypessellers/hotelpullsellers/methods/common-
 ~~~
 
 
-### CategoryListRS Description
 
+### CategoryListRS Description
 
 
 | **Element**			| **Number**	| **Type**	| **Description**		|

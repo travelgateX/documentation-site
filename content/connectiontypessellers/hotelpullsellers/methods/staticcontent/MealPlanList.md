@@ -43,7 +43,7 @@ If the supplier has more than 100 mealplan codes, or more than 20 codes for one 
 
 ### MealPlanRQ Example
 
-In the request of this call it is only necessary to use the object: "HotelBaseRQ". You can find the info in the '[Common Elements](/connectiontypessellers/hotelpullsellers/methods/messages/common-elements/)' section.
+In the request of this call it is only necessary to use the object: "HotelBaseRQ". You can find the info in the '[Common Elements](/connectiontypessellers/hotelpullsellers/methods/common-elements/)' section.
 
 ~~~xml
     <MealPlanListRQ>
@@ -51,14 +51,14 @@ In the request of this call it is only necessary to use the object: "HotelBaseRQ
 ~~~
 
 
+
 **Important information about Number (Cardinal):**
 
 Go to [Common-Elements](/connectiontypessellers/hotelpullsellers/methods/common-elements/#Important) for more information.
 
 
+
 ### MealPlanListRQ Description
-
-
 
 
 | **Element**		| **Number** | **Type** | **Description**		|
@@ -68,7 +68,6 @@ Go to [Common-Elements](/connectiontypessellers/hotelpullsellers/methods/common-
 
 
 ### MealPlanListRS Example
-
 
 ~~~xml
     <MealPlanListRS>
@@ -89,9 +88,8 @@ Go to [Common-Elements](/connectiontypessellers/hotelpullsellers/methods/common-
 ~~~
 
 
+
 ### MealPlanListRS Description
-
-
 
 
 | **Element**		| **Number** | **Type** | **Description**	|

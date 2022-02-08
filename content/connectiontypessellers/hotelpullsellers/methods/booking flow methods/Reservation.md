@@ -47,7 +47,7 @@ is closed.
 
 ### ReservationRQ Example
 
-In the request for this call it is necessary to use the object: "HotelBaseRQ". You can find the information in the section '[Common elements](/connectiontypessellers/hotelpullsellers/methods/messages/common-elements/)'.
+In the request for this call it is necessary to use the object: "HotelBaseRQ". You can find the information in the section '[Common elements](/connectiontypessellers/hotelpullsellers/methods/common-elements/)'.
 
 ~~~xml
     <ReservationRQ>
@@ -139,13 +139,14 @@ In the request for this call it is necessary to use the object: "HotelBaseRQ". Y
 ~~~
 
 
+
 **Important information about Number (Cardinal):**
 
 Go to [Common-Elements](/connectiontypessellers/hotelpullsellers/methods/common-elements/#Important) for more information.
 
 
-### ReservationRQ Description
 
+### ReservationRQ Description
 
 
 | **Element**					| **Number**	| **Type**	| **Description**					|
@@ -232,9 +233,7 @@ Go to [Common-Elements](/connectiontypessellers/hotelpullsellers/methods/common-
   
 
 
-
 ### ReservationRS Example
-
 
 ~~~xml
     <ReservationRS>
@@ -246,8 +245,8 @@ Go to [Common-Elements](/connectiontypessellers/hotelpullsellers/methods/common-
 ~~~
 
 
-### ReservationRS Description
 
+### ReservationRS Description
 
 
 | **Element**					| **Number**	| **Type**	| **Description**					|
@@ -266,7 +265,6 @@ Go to [Common-Elements](/connectiontypessellers/hotelpullsellers/methods/common-
 | Payable					| 0..1     	|		| Payable.						|
 | @value					| 1       	|		| Informs Payable.					|
   
-
 
 
 ### Detailed description
@@ -302,8 +300,8 @@ can have four values: OK, RQ, CN and UN.
    It is the client's responsibility to check if the booking is OK.
 
 
-
 **Note:** *Keep the parameters in the valuation response to include them in the reservation request.*
+
 
 **Bookings not confirmed:**
 Only when the ResStatus = UN and an application error is also returned with type = 303 we can ensure the booking has not been confirmed in the supplier's system. 
@@ -351,6 +349,7 @@ If the payment is done by credit card, is it mandatory to specify the payment ty
 ~~~
 
 
+
 ### DeltaPrice description
 
 
@@ -371,6 +370,7 @@ or equal to the price showed in valuation).
 This field is implemented if it's native to the supplier or if another availability/valuation request needs to be done in Reservation. In case the supplier blocks the option in valuation, reservation
 will be done automatically in reservation method. This information is available in the Static configuration of
 each supplier.
+
 
 ### Price difference between the Reservation and Valuation methods
 
@@ -394,6 +394,7 @@ Valuation:
 ~~~xml 
 <Price currency = "EUR" amount = "110" binding = "false" commission = "0"/>
 ~~~
+
 Reservation: 
 ~~~xml 
 <Price currency = "EUR" amount = "110" binding = "false" commission = "0"/>

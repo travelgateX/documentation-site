@@ -32,7 +32,7 @@ The result returns a list of currencies.
 
 ### CurrencyListRQ Example
 
-In the request of this call it is only necessary to use the object: "HotelBaseRQ". You can find the info in the '[Common Elements](/connectiontypessellers/hotelpullsellers/methods/messages/common-elements/)' section.
+In the request of this call it is only necessary to use the object: "HotelBaseRQ". You can find the info in the '[Common Elements](/connectiontypessellers/hotelpullsellers/methods/common-elements/)' section.
 
 ~~~xml
     <CurrencyListRQ>
@@ -40,13 +40,14 @@ In the request of this call it is only necessary to use the object: "HotelBaseRQ
 ~~~
 
 
+
 **Important information about Number (Cardinal):**
 
 Go to [Common-Elements](/connectiontypessellers/hotelpullsellers/methods/common-elements/#Important) for more information.
 
 
-### CurrencyListRQ Description
 
+### CurrencyListRQ Description
 
 
 | **Element**			| **Number**	| **Type**	| **Description**			|
@@ -55,9 +56,7 @@ Go to [Common-Elements](/connectiontypessellers/hotelpullsellers/methods/common-
 
 
 
-
 ### CurrencyListRS Example
-
 
 ~~~xml
     <CurrencyListRS>
@@ -76,8 +75,8 @@ Go to [Common-Elements](/connectiontypessellers/hotelpullsellers/methods/common-
 ~~~
 
 
-### CurrencyListRS Description
 
+### CurrencyListRS Description
 
 
 | **Element**			| **Number**	| **Type**	| **Description**			|

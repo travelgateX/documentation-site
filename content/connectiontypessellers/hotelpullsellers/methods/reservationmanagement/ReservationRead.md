@@ -50,7 +50,7 @@ is closed.
 
 ### ReservationReadRQ Example
 
-In the request for this call it is necessary to use the object: "HotelBaseRQ". You can find the information in the section '[Common elements](/connectiontypessellers/hotelpullsellers/methods/messages/common-elements/)'.
+In the request for this call it is necessary to use the object: "HotelBaseRQ". You can find the information in the section '[Common elements](/connectiontypessellers/hotelpullsellers/methods/common-elements/)'.
 
 ~~~xml
     <ReservationReadRQ>
@@ -68,13 +68,14 @@ In the request for this call it is necessary to use the object: "HotelBaseRQ". Y
 ~~~
 
 
+
 **Important information about Number (Cardinal):**
 
 Go to [Common-Elements](/connectiontypessellers/hotelpullsellers/methods/common-elements/#Important) for more information.
 
 
-### ReservationReadRQ Description
 
+### ReservationReadRQ Description
 
   
 | **Element** 		| **Number**	| **Type**	| **Description**					|
@@ -96,7 +97,6 @@ Go to [Common-Elements](/connectiontypessellers/hotelpullsellers/methods/common-
 
 
 ### ReservationReadRS Example
-
 
 ~~~xml
     <ReservationReadRS>
@@ -132,8 +132,8 @@ Go to [Common-Elements](/connectiontypessellers/hotelpullsellers/methods/common-
 ~~~
 
 
-### ReservationReadRS Description
 
+### ReservationReadRS Description
 
   
 | **Element**				| **Number**	| **Type**	| **Description**				|

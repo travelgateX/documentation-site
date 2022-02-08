@@ -42,7 +42,7 @@ This message must be implemented solely in case the supplier does not return roo
 
 ### RoomListRQ Example
 
-In the request of this call it is only necessary to use the object: "HotelBaseRQ". You can find the info in the '[Common Elements](/connectiontypessellers/hotelpullsellers/methods/messages/common-elements/)' section.
+In the request of this call it is only necessary to use the object: "HotelBaseRQ". You can find the info in the '[Common Elements](/connectiontypessellers/hotelpullsellers/methods/common-elements/)' section.
 
 ~~~xml
     <RoomListRQ>
@@ -50,20 +50,20 @@ In the request of this call it is only necessary to use the object: "HotelBaseRQ
 ~~~
 
 
+
 **Important information about Number (Cardinal):**
 
 Go to [Common-Elements](/connectiontypessellers/hotelpullsellers/methods/common-elements/#Important) for more information.
 
 
-### RoomListRQ Description
 
+### RoomListRQ Description
 
 
 | **Element**		| **Number**	| **Type**	| **Description**	|
 | --------------------- | ------------- | ------------- | --------------------- |
 | RoomListRQ 		| 1          	|		| Root node.		|
   
-
 
 
 ### RoomListRS Example
@@ -88,8 +88,8 @@ Go to [Common-Elements](/connectiontypessellers/hotelpullsellers/methods/common-
 ~~~
 
 
-### RoomListRS Description
 
+### RoomListRS Description
 
 
 | **Element**		| **Number**	| **Type**	| **Description**	|

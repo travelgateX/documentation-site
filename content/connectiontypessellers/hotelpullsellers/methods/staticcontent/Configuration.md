@@ -33,7 +33,8 @@ The returned XML contains a template of all connection fields used in order to c
 
 ### ConfigurationRQ Example
 
-In the request of this call it is only necessary to use the object: "HotelBaseRQ". You can find the info in the '[Common Elements](/connectiontypessellers/hotelpullsellers/methods/messages/common-elements/)' section.
+In the request of this call it is only necessary to use the object: "HotelBaseRQ". You can find the info in the '[Common Elements](/connectiontypessellers/hotelpullsellers/methods/common-elements/)' section.
+
 
 ~~~xml
 <ConfigurationRQ xmlns:xsd = "http://www.w3.org/2001/XMLSchema" xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance">
@@ -47,11 +48,6 @@ In the request of this call it is only necessary to use the object: "HotelBaseRQ
     <optionsQuota>0</optionsQuota>
     <hubProvider>XXX</hubProvider>
     <Configuration>
-        <User>USERXX</User>
-        <Password>PWXX</Password>
-        <UrlAvail>https://www.supplier.com/tgx</UrlAvail>
-        <UrlReservation>https://www.supplier.com/tgx</UrlReservation>
-        <UrlValuation>https://www.supplier.com/tgx</UrlValuation>
         <UrlGeneric>https://www.supplier.com/tgx</UrlGeneric>
         <Parameters>
             <Parameter key = "param" value = "PWXML"/>
@@ -61,13 +57,14 @@ In the request of this call it is only necessary to use the object: "HotelBaseRQ
 ~~~
 
 
+
 **Important information about Number (Cardinal):**
 
 Go to [Common-Elements](/connectiontypessellers/hotelpullsellers/methods/common-elements/#Important) for more information.
 
 
-### ConfigurationRQ Description
 
+### ConfigurationRQ Description
 
 
 | **Element**			| **Number**	| **Type**	| **Description**	    |
@@ -77,7 +74,6 @@ Go to [Common-Elements](/connectiontypessellers/hotelpullsellers/methods/common-
 
 
 ### ConfigurationRS Example
-
 
 ~~~xml
 <ConfigurationRS xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd = "http://www.w3.org/2001/XMLSchema">
@@ -204,13 +200,8 @@ This is the example of how the form is displayed with the previous xml response.
 ![This is the example of how the form is displayed with the previous xml response](/connectiontypessellers/hotelpullsellers/images/ExampleFormBuena.png)
 
 
-**Important information about Number (Cardinal):**
-
-Go to [Common-Elements](/connectiontypessellers/hotelpullsellers/methods/messages/common-elements/#Important) for more information.
-
 
 ### ConfiguracionRS Description
-
 
  
 | **Element**			| **Number**	| **Type**	| **Description**			|

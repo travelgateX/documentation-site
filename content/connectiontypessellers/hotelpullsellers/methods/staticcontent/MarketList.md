@@ -42,7 +42,7 @@ Most suppliers use a standard ISO - 3166_1_alfa_2, but it depends on each indivi
 
 ### MarketListRQ Example
 
-In the request of this call it is only necessary to use the object: "HotelBaseRQ". You can find the info in the '[Common Elements](/connectiontypessellers/hotelpullsellers/methods/messages/common-elements/)' section.
+In the request of this call it is only necessary to use the object: "HotelBaseRQ". You can find the info in the '[Common Elements](/connectiontypessellers/hotelpullsellers/methods/common-elements/)' section.
 
 ~~~xml
     <MarketListRQ>
@@ -50,14 +50,14 @@ In the request of this call it is only necessary to use the object: "HotelBaseRQ
 ~~~
 
 
+
 **Important information about Number (Cardinal):**
 
 Go to [Common-Elements](/connectiontypessellers/hotelpullsellers/methods/common-elements/#Important) for more information.
 
 
+
 ### MarketListRQ Description
-
-
 
 
 | **Element**		| **Number** | **Type** | **Description**		|
@@ -67,7 +67,6 @@ Go to [Common-Elements](/connectiontypessellers/hotelpullsellers/methods/common-
 
 
 ### MarketListRS Example
-
 
 ~~~xml
     <MarketListRS>
@@ -90,9 +89,8 @@ Go to [Common-Elements](/connectiontypessellers/hotelpullsellers/methods/common-
 ~~~
 
 
+
 ### MarketListRS Description
-
-
 
 
 | **Element**		| **Number** | **Type** | **Description**	|
@@ -103,6 +101,7 @@ Go to [Common-Elements](/connectiontypessellers/hotelpullsellers/methods/common-
 | Market/Code	| 1         	| String		| Code.			|
 | Market/Name	| 1          	| String		| Name.			|
 | Market/GroupCode	| 0..1          	| String		| Indicates if the supplier groups different markets together and what the group is called.			|
+
 
 **GroupCode:**
 

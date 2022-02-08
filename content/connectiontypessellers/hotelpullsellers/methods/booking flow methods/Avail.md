@@ -49,7 +49,6 @@ The price returned should be "all inclusive". All fares, taxes and
 discounts are included in the total price.
 
 
-
 ### Observations
 
 
@@ -62,7 +61,7 @@ is closed.
 
 ### AvailRQ Example
 
-In the request for this call it is necessary to use the object: "HotelBaseRQ". You can find the information in the section '[Common elements](/connectiontypessellers/hotelpullsellers/methods/messages/common-elements/)'.
+In the request for this call it is necessary to use the object: "HotelBaseRQ". You can find the information in the section '[Common elements](/connectiontypessellers/hotelpullsellers/methods/common-elements/)'.
 
 ~~~xml
     <AvailRQ>
@@ -106,13 +105,14 @@ In the request for this call it is necessary to use the object: "HotelBaseRQ". Y
 ~~~
 
 
+
 **Important information about Number (Cardinal):**
 
 Go to [Common-Elements](/connectiontypessellers/hotelpullsellers/methods/common-elements/#Important) for more information.
 
 
-### AvailRQ Description
 
+### AvailRQ Description
 
 
 | **Element**				| **Number**	| **Type**	| **Description**						|
@@ -142,7 +142,6 @@ Go to [Common-Elements](/connectiontypessellers/hotelpullsellers/methods/common-
 
 
 ### AvailRS Example
-
 
 ~~~xml
     <AvailRS xmlns:xsd = "http://www.w3.org/2001/XMLSchema" xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance">
@@ -332,7 +331,10 @@ Go to [Common-Elements](/connectiontypessellers/hotelpullsellers/methods/common-
     </AvailRS>
 ~~~
 
+
+
 ### AvailRS Description
+
 
 | **Element**				| **Number**	| **Type**	| **Description**						|
 | ------------------------------------- | ------------- | ------------- | ------------------------------------------------------------- |
@@ -470,7 +472,9 @@ Go to [Common-Elements](/connectiontypessellers/hotelpullsellers/methods/common-
 | @commission				    | 1          | Decimal  | Commission: -1 = not specified (indicated in contract with supplier), 0 = net price, X = % of the commission applied to the amount. |
 
 
+
 ### Detailed description
+
 
 **AvailDestinations:**
 
@@ -514,7 +518,6 @@ Currently, the client can configure the following BusinessRules:
   BusinessRule is applied by default.
 
 
-
 **Price, binding price and commission:**
 
 Every option has a price and every price indicates the currency,
@@ -538,6 +541,7 @@ client can sell the product for a lower price.
 ~~~xml
     <Price currency = "EUR" amount = "200" binding = "false" commission = "-1"/>
 ~~~
+
 We have no way of knowing if the price is PVP or net, given that
 the commission is not sent to us via XML. The commission is established
 by contract.
@@ -545,20 +549,22 @@ by contract.
 ~~~xml
     <Price currency = "EUR" amount = "300" binding = "true" commission = "-1"/>
 ~~~
+
 The price is PVP, the commission is not sent to us via XML. The
 commission is established by contract.
 
 ~~~xml
     <Price currency = "EUR" amount = "150" binding = "true/false" commission = "20"/>
 ~~~
+
 The price is PVP with a commission of 20%. The binding in this case can
 be true or false.
 
 ~~~xml
     <Price currency = "EUR" amount = "100" binding = "false" commission = "0"/>
 ~~~
-The price is net.
 
+The price is net.
 
 
 **Currency:**
@@ -574,7 +580,6 @@ guarantee that the response will be returned in the currency you requested, as w
 always work with the native code of the supplier. For example if you
 requested EUR but the supplier only works with GBP, the supplier will
 return in GBP, and we will pass it on to you in GBP.
-
 
 
 **PAX ages:**
@@ -632,9 +637,11 @@ parameter <OnRequest> is set as false, the integration will filter
 this option in AvailRS only if the supplier provides us this information
 in the availability method.
 
+
 **Offers:**
 
 Depending on the supplier, the information concerning offers can be displayed at a room level or in the option level in AvailRS.
+
 
 **Status options:**
 
@@ -648,9 +655,6 @@ In the case  the client doesn't want to display the options in a
 status RQ, we can filter the options as long as the supplier specifies
 the status and the <OnRequest> tag is set in AvailRQ. In
 case the supplier doesn't specify the status, the element AllowOnRequest in [MetaData](/connectiontypessellers/hotelpullsellers/methods/messages/static-methods/metadata/) needs to be set as FALSE.
-
-
-
 
 
 **POI cases Examples:**
@@ -675,7 +679,6 @@ Case 1:
 Specifying the quantity is unnecessary as the start and end dates for the service have already been set.
 
 
-
 Case 2:
 
 ~~~xml
@@ -693,7 +696,6 @@ Case 2:
 
 In this case, quantity is applicable for the entire stay, i.e., the client
 can enjoy the skipass for 5 hours any day of the stay.
-
 
 
 Case 3:
@@ -715,7 +717,6 @@ In this case, quantity is applicable for the entire stay, i.e., the client
 can enjoy until 2 days of skipass in between the check in and check out.
 
 
-
 **Note:** *Keep the parameters in the avail response to include them in the valuation request.*
 
 ~~~xml
@@ -723,6 +724,7 @@ can enjoy until 2 days of skipass in between the check in and check out.
        <Parameter key = "sesion" value = "888de014"/>
     </Parameters>
 ~~~
+
 
 **Fees:**
 

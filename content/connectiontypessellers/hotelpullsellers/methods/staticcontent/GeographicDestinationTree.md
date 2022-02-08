@@ -42,7 +42,7 @@ The maximum time permitted in our system before the connection is closed is **24
 
 ### GeographicDestinationTreeRQ Example
 
-In the request of this call it is only necessary to use the object: "HotelBaseRQ". You can find the info in the '[Common Elements](/connectiontypessellers/hotelpullsellers/methods/messages/common-elements/)' section.
+In the request of this call it is only necessary to use the object: "HotelBaseRQ". You can find the info in the '[Common Elements](/connectiontypessellers/hotelpullsellers/methods/common-elements/)' section.
 
 ~~~xml
     <GeographicDestinationTreeRQ>
@@ -50,14 +50,14 @@ In the request of this call it is only necessary to use the object: "HotelBaseRQ
 ~~~
 
 
+
 **Important information about Number (Cardinal):**
 
 Go to [Common-Elements](/connectiontypessellers/hotelpullsellers/methods/common-elements/#Important) for more information.
 
 
+
 ### GeographicDestinationTreeRQ Description
-
-
 
 
 | **Element**		      | **Number** | **Type** | **Description**	|
@@ -67,7 +67,6 @@ Go to [Common-Elements](/connectiontypessellers/hotelpullsellers/methods/common-
 
 
 ### GeographicDestinationTreeRS Example
-
 
 ~~~xml
     <GeographicDestinationTreeRS>
@@ -97,9 +96,8 @@ Go to [Common-Elements](/connectiontypessellers/hotelpullsellers/methods/common-
 ~~~
 
 
+
 ### GeographicDestinationTreeRS Description
-
-
 
 
 | **Element**			| **Number** | **Type** | **Description**	|
@@ -116,7 +114,6 @@ Go to [Common-Elements](/connectiontypessellers/hotelpullsellers/methods/common-
 
 
 ### Detailed description
-
 
 ~~~xml
     <GeographicDestinationTreeRS>
@@ -149,6 +146,7 @@ Go to [Common-Elements](/connectiontypessellers/hotelpullsellers/methods/common-
      . . .
     </GeographicDestinationTreeRS>
 ~~~
+
 
 
 There are two essential definitions which need to be clear in order to understand the difference between city and zone:
