@@ -118,20 +118,20 @@ Go to [Common-Elements](/connectiontypessellers/hotelpullsellers/methods/common-
 | **Element**				| **Number**	| **Type**	| **Description**						|
 | ------------------------------------- | ------------- | ------------- | ------------------------------------------------------------- |
 | AvailRQ               		| 1            	|		| Root node.							|
-| CancellationPolicies 			| 1     	| Boolean	| Indicates if you want to receive the cancellation policies in AvailRS, as long as the supplier returns it in this method (see [MetaData](/connectiontypessellers/hotelpullsellers/methods/messages/static-methods/metadata/)] in order to verify if a supplier implements it).	|
+| CancellationPolicies 			| 1     	| Boolean	| Indicates if you want to receive the cancellation policies in AvailRS, as long as the supplier returns it in this method (see [MetaData](/connectiontypessellers/hotelpullsellers/methods/staticcontent/metadata/)] in order to verify if a supplier implements it).	|
 | RoomCancellationPolicies 			| 1     	| Boolean	| Indicates if you want to receive the cancellation policies at room level in AvailRS, as long as the supplier returns it in this method (see Metadata method in order to verify if a supplier implements it).	|
-| DailyPrices					| 0..1			| Boolean	|  Indicates if you want to receive the daily prices at room level in AvailRS, as long as the supplier returns it in this method (see [MetaData](/connectiontypessellers/hotelpullsellers/methods/messages/static-methods/metadata/) in order to verify if a supplier implements it).		|
-| DailyRatePlans				| 0..1			| Boolean	|  Indicates if you want to receive the daily rate plans at room level in AvailRS, as long as the supplier returns it in this method (see [MetaData](/connectiontypessellers/hotelpullsellers/methods/messages/static-methods/metadata/) in order to verify if a supplier implements it).		|
-| OnRequest            			| 1     	| Boolean	| Indicates if you want to receive the onrequest options in AvailRS, as long as the supplier returns it in this method (see [MetaData](/connectiontypessellers/hotelpullsellers/methods/messages/static-methods/metadata/) in order to verify if a supplier implements it).		|
-| BusinessRules        			| 1            	|		| Indicates the business rules the client wants to apply in availability, as long as the supplier returns it in this method (see [MetaData](/connectiontypessellers/hotelpullsellers/methods/messages/static-methods/metadata/) in order to verify if a supplier implements it).	|
-| AvailDestinations/Destination		| 1..n         	|		| Contains the list of destinations filters (hotels or cities or zones or geocodes). The number of Destinations is defined in [MetaData](/connectiontypessellers/hotelpullsellers/methods/messages/static-methods/metadata/).	|
+| DailyPrices					| 0..1			| Boolean	|  Indicates if you want to receive the daily prices at room level in AvailRS, as long as the supplier returns it in this method (see [MetaData](/connectiontypessellers/hotelpullsellers/methods/staticcontent/metadata/) in order to verify if a supplier implements it).		|
+| DailyRatePlans				| 0..1			| Boolean	|  Indicates if you want to receive the daily rate plans at room level in AvailRS, as long as the supplier returns it in this method (see [MetaData](/connectiontypessellers/hotelpullsellers/methods/staticcontent/metadata/) in order to verify if a supplier implements it).		|
+| OnRequest            			| 1     	| Boolean	| Indicates if you want to receive the onrequest options in AvailRS, as long as the supplier returns it in this method (see [MetaData](/connectiontypessellers/hotelpullsellers/methods/staticcontent/metadata/) in order to verify if a supplier implements it).		|
+| BusinessRules        			| 1            	|		| Indicates the business rules the client wants to apply in availability, as long as the supplier returns it in this method (see [MetaData](/connectiontypessellers/hotelpullsellers/methods/staticcontent/metadata/) in order to verify if a supplier implements it).	|
+| AvailDestinations/Destination		| 1..n         	|		| Contains the list of destinations filters (hotels or cities or zones or geocodes). The number of Destinations is defined in [MetaData](/connectiontypessellers/hotelpullsellers/methods/staticcontent/metadata/).	|
 | @type           			| 1     	| String	| Destination type (HOT, CTY, ZON, GEO). Clarification: ZONs contains CTYs. ZONs are higher nodes and CTY are lower nodes. It is not possible to mix types of destinations in the same request.  | 
 | @code           			| 1     	| String	| Native destination code as returned by supplier in *HotelList* or *AvailDestinationTree*.	|
 | StartDate            			| 1     	| String	| 'Search from' date.	Format dd/MM/yyyy					|
 | EndDate              			| 1     	| String	| 'Search til' date. Format dd/MM/yyyy							|
 | Currency             			| 1  	| String	| Currency requested if supported by supplier. 	|
-| Nationality          			| 1  	| String	| Nationality of the guest (use ISO3166_1_alfa_2). This information is mandatory. (see [MetaData](/connectiontypessellers/hotelpullsellers/methods/messages/static-methods/metadata/) in order to verify if a supplier implements it).	|
-| Markets              			| 1         	|		| List of Market requested (see [MetaData](/connectiontypessellers/hotelpullsellers/methods/messages/static-methods/metadata/) in order to verify if a supplier implements it).				|
+| Nationality          			| 1  	| String	| Nationality of the guest (use ISO3166_1_alfa_2). This information is mandatory. (see [MetaData](/connectiontypessellers/hotelpullsellers/methods/staticcontent/metadata/) in order to verify if a supplier implements it).	|
+| Markets              			| 1         	|		| List of Market requested (see [MetaData](/connectiontypessellers/hotelpullsellers/methods/staticcontent/metadata/) in order to verify if a supplier implements it).				|
 | Markets/Market       			| 1..n  	| String	| Targeted zone/ country/ Point of sale.			|
 | RoomCandidates/RoomCandidate 		| 1..n         	|		| Room required.						|
 | @id             			| 1     	| Integer	| Id of the requested room (starting at 1).			|
@@ -164,7 +164,7 @@ Go to [Common-Elements](/connectiontypessellers/hotelpullsellers/methods/common-
                           <CancelPenalty>
                               <HoursBefore>24</HoursBefore>
                               <Penalty type = "Importe" currency = "EUR">20</Penalty>
-			                        <Deadline>01/07/2016 05:00:00Z</Deadline>
+			                        <Deadline>01/07/2016T05:00:00Z</Deadline>
                               <CalculatedDeadline>false</CalculatedDeadline>
                           </CancelPenalty>
                       </CancelPenalties>
@@ -316,7 +316,7 @@ Go to [Common-Elements](/connectiontypessellers/hotelpullsellers/methods/common-
                     <CancelPenalty>
                       <HoursBefore>24</HoursBefore>
                       <Penalty type = "Importe" currency = "EUR">20</Penalty>
-		                  <Deadline>01/07/2016 05:00:00Z</Deadline>
+		                  <Deadline>01/07/2016T05:00:00Z</Deadline>
                       <CalculatedDeadline>false</CalculatedDeadline>
                     </CancelPenalty>
                   </CancelPenalties>
@@ -346,27 +346,27 @@ Go to [Common-Elements](/connectiontypessellers/hotelpullsellers/methods/common-
 | @code 				| 1 		| String 	| MealPlan code.						|
 | MealPlans/MealPlan/Options 		| 1 		| 		| List of options					|
 | MealPlans/MealPlan /Options/Option 	| 1..n 		| 		| Detail of option.						|
-| @type 				| 1 		| String 	| Indicates option type [Lists of Data](/connectiontypessellers/hotelpullsellers/methods/messages/listsdata/#option-type)	|
-| @paymentType 				| 1 		| String 	| Indicates payment type (See full type list at [Lists of Data](/connectiontypessellers/hotelpullsellers/methods/messages/listsdata/#payment-types)) .	|
+| @type 				| 1 		| String 	| Indicates option type [Lists of Data](/connectiontypessellers/hotelpullsellers/listsdata/#option-type)	|
+| @paymentType 				| 1 		| String 	| Indicates payment type (See full type list at [Lists of Data](/connectiontypessellers/hotelpullsellers/listsdata/#payment-types)) .	|
 | @status 				| 1 		| String 	| Status option (OK = available, RQ = on request).		|
 | MealPlans/MealPlan/Options /Option/Parameters | 0..1 	| 		| Additional parameters that must be reported on the ValuationRQ. Parameters, if this option is required.	  |
 | MealPlans/MealPlan/Options /Option/Parameters/Parameter | 0..n | 	| Additional parameter requiring integration.		|
 | @key 					| 1 		| String 	| Contains the keyword/Id to identify a parameter.		|
 | @value 				| 1 		| String 	| Contains  parameter value.				|
-| MealPlans/MealPlan/Options /Option/CancelPenalties | 1          |          | Cancellation policy details. (see [MetaData](/connectiontypessellers/hotelpullsellers/methods/messages/static-methods/metadata/) in order to verify if a supplier implements it).|
+| MealPlans/MealPlan/Options /Option/CancelPenalties | 1          |          | Cancellation policy details. (see [MetaData](/connectiontypessellers/hotelpullsellers/methods/staticcontent/metadata/) in order to verify if a supplier implements it).|
 | @nonRefundable                            | 1          | Boolean  | Indicate if this option is nonRefundable (true or false). |
 | MealPlans/MealPlan/Options /Option/CancelPenalties/CancelPenalty             | 0..n       |          | Listing cancellation penalties. |
 | MealPlans/MealPlan/Options /Option/CancelPenalties/CancelPenalty/HoursBefore | 1          | String   | Number of hours prior to checkin date in which this Cancellation policy applies. |
-| MealPlans/MealPlan/Options /Option/CancelPenalties/CancelPenalty/Deadline    | 1          | String   | Date on UTC Standard TimeZone in which this Cancellation policy applies.|
-| MealPlans/MealPlan/Options /Option/CancelPenalties/CancelPenalty/CalculatedDeadline | 1          | Boolean  | Indicate if the Deadline is returned by the supplier or it's been calculated by TravelGate. true = has been calculated by XTG, false = bypass of supplier data without calculation|
+| MealPlans/MealPlan/Options /Option/CancelPenalties/CancelPenalty/Deadline    | 1          | String   | Date on UTC Standard TimeZone in which this Cancellation policy applies (ISO 8601 e.g: 01/07/2016T05:00:00Z) |
+| MealPlans/MealPlan/Options /Option/CancelPenalties/CancelPenalty/CalculatedDeadline | 1          | Boolean  | Indicate if the Deadline is returned by the supplier or it's been calculated by TravelGate. true = has been calculated by XTG, false = bypass of supplier data without calculation |
 | MealPlans/MealPlan/Options /Option/CancelPenalties/CancelPenalty/Penalty     | 1          |          | Contains the value to apply. |
 | @type					    | 1          | String   | Type of possible penalty values: “Noches” (nights) , “Porcentaje” (percentage) ,”Importe” (price value). |
 | @currency				    | 1          | String   | Currency code. |
-| @paymentType                            | 1          | String   | Indicates payment type of penalty (See full type list at [Lists of Data](/connectiontypessellers/hotelpullsellers/methods/messages/listsdata/#payment-types)) . |
+| @paymentType                            | 1          | String   | Indicates payment type of penalty (See full type list at [Lists of Data](/connectiontypessellers/hotelpullsellers/listsdata/#payment-types)) . |
 | MealPlans/MealPlan/Options /Option/RateRules | 0..1 	| 		| Option restrictions.					|
 | MealPlans/MealPlan/Options /Option/RateRules/Rules | 0..n | 		| Rules.							|
 | MealPlans/MealPlan/Options /Option/RateRules/Rules /Rule | 1 | 	| Rule.								|
-| @type 				| 1 		| String 	| Possible values (NonRefundable, Older55, Package,...). See full list at [Lists of Data](/connectiontypessellers/hotelpullsellers/methods/messages/listsdata/#rate-conditions)	|
+| @type 				| 1 		| String 	| Possible values (NonRefundable, Older55, Package,...). See full list at [Lists of Data](/connectiontypessellers/hotelpullsellers/listsdata/#rate-conditions)	|
 | MealPlans/MealPlan/Options /Option/RateRules/Rules /Rule/Code | 1 | String	| Contains the Rate Rule code in case it has one. |
 | MealPlans/MealPlan/Options /Option/RateRules/Rules /Rule/Description | 1 | String	| Contains the Rate Rule description.	|
 | MealPlans/MealPlan/Options /Option/Rooms | 1 		| 		| Rooms in this option (room list).				|
@@ -376,12 +376,12 @@ Go to [Common-Elements](/connectiontypessellers/hotelpullsellers/methods/common-
 | @code 				| 1 		| String 	| Room code has to be unique to identify a specific room type. If the RoomList Method is implemented, you can find the description of the room type in the RoomList. 							|
 | @description 				| 0..1 		| String 	| Room description. Mandatory if the supplier doesn't allow RoomList Method. If the supplier implements RoomList Method, this field could be empty.						|
 | @nonRefundable 			| 0..1 		| String 	| Identifies if the room is refundable or not.			|
-| @numberOfUnits 			| 0..1 		| Integer 	| Number of rooms available with the same type (see [MetaData](/connectiontypessellers/hotelpullsellers/methods/messages/static-methods/metadata/)).	|
-| MealPlans/MealPlan/Options /Option/Rooms/Room/Offers | 0..1 	| 		| The supplier returns in response which offer is applicable for each room (see [MetaData](/connectiontypessellers/hotelpullsellers/methods/messages/static-methods/metadata/) in order to verify if a supplier implements it).	|
+| @numberOfUnits 			| 0..1 		| Integer 	| Number of rooms available with the same type (see [MetaData](/connectiontypessellers/hotelpullsellers/methods/staticcontent/metadata/)).	|
+| MealPlans/MealPlan/Options /Option/Rooms/Room/Offers | 0..1 	| 		| The supplier returns in response which offer is applicable for each room (see [MetaData](/connectiontypessellers/hotelpullsellers/methods/staticcontent/metadata/) in order to verify if a supplier implements it).	|
 | MealPlans/MealPlan/Options /Option/Rooms/Room/Offers/Offer | 1..n | 		| List of offers.						|
 | @code 				| 1 		| String 	| Contains the code to identify a offer.			|
 | @name 				| 1 		| String 	| Contains the name of the offer.				|
-| MealPlans/MealPlan/Options /Option/Rooms/Room/Beds | 0..1 | 		| Detail of beds (see [MetaData](/connectiontypessellers/hotelpullsellers/methods/messages/static-methods/metadata/) in order to verify if a supplier implements it).						|
+| MealPlans/MealPlan/Options /Option/Rooms/Room/Beds | 0..1 | 		| Detail of beds (see [MetaData](/connectiontypessellers/hotelpullsellers/methods/staticcontent/metadata/) in order to verify if a supplier implements it).						|
 | @sharedBed 				| 0..1 		| Boolean 	| Specifies if the beds in the room are shared.			|
 | MealPlans/MealPlan/Options /Option/Rooms/Room /Beds/Bed | 0..n | 	| Identifies types of beds.					|
 | @numberOfBeds 			| 0..1 		| String 	| Indicates number of beds in the room.				|
@@ -389,7 +389,7 @@ Go to [Common-Elements](/connectiontypessellers/hotelpullsellers/methods/common-
 | MealPlans/MealPlan/Options /Option/Rooms/Room /Features | 0..1 | 	| Features of this room (features list).	| 
 | MealPlans/MealPlan/Options /Option/Rooms/Room /Features/Feature | 1..n | 	| Detail of feature	| 
 |@code   | 1 | String| Feature code or text|
-| MealPlans/MealPlan/Options /Option/Rooms/Room /DailyPrices | 0..1 | 	| Specifies daily price, as long as the supplier returns it in this method (see [MetaData](/connectiontypessellers/hotelpullsellers/methods/messages/static-methods/metadata/) in order to verify if a supplier implements it).	| 
+| MealPlans/MealPlan/Options /Option/Rooms/Room /DailyPrices | 0..1 | 	| Specifies daily price, as long as the supplier returns it in this method (see [MetaData](/connectiontypessellers/hotelpullsellers/methods/staticcontent/metadata/) in order to verify if a supplier implements it).	| 
 | MealPlans/MealPlan/Options /Option/Rooms/Room /DailyPrices/DailyPrice | 1..n | | Specifies the price for each day.			|
 | @effectiveDate 			| 1 		| String 	| Start date in which the price becomes effective. Format dd/MM/yyyy			|
 | @expireDate 				| 1 		| String 	| Expiry date of price.	Format dd/MM/yyyy						|
@@ -398,7 +398,7 @@ Go to [Common-Elements](/connectiontypessellers/hotelpullsellers/methods/common-
 | @amount 				| 1 		| Decimal 	| Day Amount.							|
 | @binding 				| 1 		| Boolean 	| Identifies if the price is binding (When true, the sale price returned **must** not be less than the price informed. |
 | @commission 				| 1 		| Decimal 	| Commission: -1 = not specified (information available in  contract with the supplier ), 0 = net price, X = % of the commission applied to the amount. |
-| MealPlans/MealPlan/Options /Option/Rooms/Room /DailyRatePlans | 0..1 | | Specifies the daily rate, as long as the supplier returns it in this method (see [MetaData](/connectiontypessellers/hotelpullsellers/methods/messages/static-methods/metadata/) in order to verify if a supplier implements it).  |
+| MealPlans/MealPlan/Options /Option/Rooms/Room /DailyRatePlans | 0..1 | | Specifies the daily rate, as long as the supplier returns it in this method (see [MetaData](/connectiontypessellers/hotelpullsellers/methods/staticcontent/metadata/) in order to verify if a supplier implements it).  |
 | MealPlans/MealPlan/Options /Option/Rooms/Room /DailyRatePlans/DailyRatePlan | 1..n | | Specifies the rates for each day.		|
 | @effectiveDate 			| 1 		| String 	| Start date in which the rate becomes effective. Format dd/MM/yyyy			|
 | @expireDate 				| 1 		| String 	| Expirty date of rate. Format dd/MM/yyyy				|
@@ -421,22 +421,22 @@ Go to [Common-Elements](/connectiontypessellers/hotelpullsellers/methods/common-
 | @binding				    | 1          | Boolean  | Identifies if is the price is binding (When true the sale price returned must not be less than the price informed. |
 | @commission				    | 1          | Decimal  | Commission: -1 = not specified (indicated in contract with supplier), 0 = net price, X = % of the commission applied to the amount. |
 | MealPlans/MealPlan/Options /Option/Rooms/Room/Fees/Fee/Code			    | 1          |   String       | Specifies the fee code in case it has one. |
-| MealPlans/MealPlan/Options /Option/Rooms/Room/CancelPenalties | 1          |          | Cancellation policy details. (see [MetaData](/connectiontypessellers/hotelpullsellers/methods/messages/static-methods/metadata/) in order to verify if a supplier implements it). **Attention:**	When implementing policies at the room level, it is mandatory to add them at the option level. (If there is more than one room it is necessary to unify the policies to show them by option|
+| MealPlans/MealPlan/Options /Option/Rooms/Room/CancelPenalties | 1          |          | Cancellation policy details. (see [MetaData](/connectiontypessellers/hotelpullsellers/methods/staticcontent/metadata/) in order to verify if a supplier implements it). **Attention:**	When implementing policies at the room level, it is mandatory to add them at the option level. (If there is more than one room it is necessary to unify the policies to show them by option|
 | @nonRefundable                            | 1          | Boolean  | Indicate if this option is nonRefundable (true or false). |
 | MealPlans/MealPlan/Options /Option/Rooms/Room/CancelPenalties/CancelPenalty             | 0..n       |          | Listing cancellation penalties. |
 | MealPlans/MealPlan/Options /Option/Rooms/Room/CancelPenalties/CancelPenalty/HoursBefore | 1          | String   | Number of hours prior to checkin date in which this Cancellation policy applies. |
-| MealPlans/MealPlan/Options /Option/Rooms/Room/CancelPenalties/CancelPenalty/Deadline    | 1          | String   | Date on UTC Standard TimeZone in which this Cancellation policy applies.|
-| MealPlans/MealPlan/Options /Option/Rooms/Room/CancelPenalties/CancelPenalty/CalculatedDeadline | 1          | Boolean  | Indicate if the Deadline is returned by the supplier or it's been calculated by TravelGate. true = has been calculated by XTG, false = bypass of supplier data without calculation|
+| MealPlans/MealPlan/Options /Option/Rooms/Room/CancelPenalties/CancelPenalty/Deadline    | 1          | String   | Date on UTC Standard TimeZone in which this Cancellation policy applies (ISO 8601 e.g: 01/07/2016T05:00:00Z) |
+| MealPlans/MealPlan/Options /Option/Rooms/Room/CancelPenalties/CancelPenalty/CalculatedDeadline | 1          | Boolean  | Indicate if the Deadline is returned by the supplier or it's been calculated by TravelGate. true = has been calculated by XTG, false = bypass of supplier data without calculation |
 | MealPlans/MealPlan/Options /Option/Rooms/Room/CancelPenalties/CancelPenalty/Penalty     | 1          |          | Contains the value to apply. |
 | @type					    | 1          | String   | Type of possible penalty values: “Noches” (nights) , “Porcentaje” (percentage) ,”Importe” (price value). |
 | @currency				    | 1          | String   | Currency code. |
-| @paymentType                            | 1          | String   | Indicates payment type of penalty (See full type list at [Lists of Data](/connectiontypessellers/hotelpullsellers/methods/messages/listsdata/#payment-types)) . |
+| @paymentType                            | 1          | String   | Indicates payment type of penalty (See full type list at [Lists of Data](/connectiontypessellers/hotelpullsellers/listsdata/#payment-types)) . |
 | MealPlans/MealPlan/Options /Option/Price | 1 		| 		| Option price ( it is the total price of option).		|
 | @currency 				| 1 		| String 	| Currency code.						|
 | @amount 				| 1 		| Decimal 	| Option Amount.						|
 | @binding 				| 1 		| Boolean 	| Identifies if is the price is binding (When true the sale price returned **must** not be less than the price informed.|
 | @commission 				| 1 		| Decimal 	| Commission:  -1 = not specified (information available in  contract with the supplier ), 0 = net price, X = % of the commission applied to the amount.	|
-| MealPlans/MealPlan/Options /Option/Detail | 0..1 	| 		| Detail of option (if the option is different from the type\<\> Hotel and see [MetaData](/connectiontypessellers/hotelpullsellers/methods/messages/static-methods/metadata/) in order to verify if a supplier implements it).  |
+| MealPlans/MealPlan/Options /Option/Detail | 0..1 	| 		| Detail of option (if the option is different from the type\<\> Hotel and see [MetaData](/connectiontypessellers/hotelpullsellers/methods/staticcontent/metadata/) in order to verify if a supplier implements it).  |
 | MealPlans/MealPlan/Options /Option/Detail/POIs | 1 	| 		| Points of interest.						|
 | MealPlans/MealPlan/Options /Option/Detail/POIs/POI | 1..n | 		| Point of interest.						|
 | @code 				| 1 		| String 	| POI code.							|
@@ -452,9 +452,9 @@ Go to [Common-Elements](/connectiontypessellers/hotelpullsellers/methods/common-
 | MealPlans/MealPlan/Options /Option/Detail/POIs/POI /Services/Service/RangeDates| 0..1 | | Service date range (Only specified if durationType=Range).	|
 | @startDate 				| 1 		| String 	| Start date of service. Format dd/MM/yyyy						|
 | @endDate 				| 1 		| String 	| End date of service. Format dd/MM/yyyy							|
-| MealPlans/MealPlan/Options /Option/Remarks | 0..1 	| 		| List of remarks (see [MetaData](/connectiontypessellers/hotelpullsellers/methods/messages/static-methods/metadata/) in order to verify if a supplier implements it).						|
+| MealPlans/MealPlan/Options /Option/Remarks | 0..1 	| 		| List of remarks (see [MetaData](/connectiontypessellers/hotelpullsellers/methods/staticcontent/metadata/) in order to verify if a supplier implements it).						|
 | MealPlans/MealPlan/Options /Option/Remarks/Remark | 1..n | 		| Remark.							|
-| MealPlans/MealPlan/Options /Option/Offers | 0..1 	| 		| The supplier returns in response which offer is applicable for each option (see [MetaData](/connectiontypessellers/hotelpullsellers/methods/messages/static-methods/metadata/) in order to verify if a supplier implements it).	|
+| MealPlans/MealPlan/Options /Option/Offers | 0..1 	| 		| The supplier returns in response which offer is applicable for each option (see [MetaData](/connectiontypessellers/hotelpullsellers/methods/staticcontent/metadata/) in order to verify if a supplier implements it).	|
 | MealPlans/MealPlan/Options /Option/Offers/Offer | 1..n | 		| List of offers.						|
 | @code 				| 1 		| String 	| Contains the code to identify a offer.			|
 | @name 				| 1 		| String 	| Contains the name of the offer.				|
@@ -480,7 +480,7 @@ Go to [Common-Elements](/connectiontypessellers/hotelpullsellers/methods/common-
 
 AvailDestinations indicates what destinations will be requested to the supplier. 
 
-Hotel codes or other destination codes must be defined using information specified in  [MetaData](/connectiontypessellers/hotelpullsellers/methods/messages/static-methods/metadata/).
+Hotel codes or other destination codes must be defined using information specified in  [MetaData](/connectiontypessellers/hotelpullsellers/methods/staticcontent/metadata/).
 
 *MaxNumberHotels*, *MaxNumberCities*, *MaxNumberZones* and *MaxNumberGeoCodes* indicates how client should group avail requests to supplier.
 
@@ -489,7 +489,7 @@ It's the client's resposability to do performance tests in order to determine wh
 
 **BusinessRules:**
 
-BusinessRules uses *optionsQuota*, go to [Common-Elements](/connectiontypessellers/hotelpullsellers/methods/messages/common-elements/) for more
+BusinessRules uses *optionsQuota*, go to [Common-Elements](/connectiontypessellers/hotelpullsellers/methods/common-elements/) for more
 information.
 
 This tag will only be used for suppliers availability responses
@@ -607,17 +607,19 @@ modified in the remaining methods, like for example in valuation.*
 The cancellation policies or penalties may be displayed in the
 response, as long as the parameter *CancellationPolicies* o *RoomCancellationPolicies* is set as
 true in the request and that the supplier provides this information in
-the availability method. The treatment of cancellation policies is explained in the following link: [CancelPenalty](/connectiontypessellers/hotelpullsellers/methods/messages/booking-flow-methods/valuation#detailed-description)
+the availability method. The treatment of cancellation policies is explained in the following link: [CancelPenalty](/connectiontypessellers/hotelpullsellers/methods/booking-flow-methods/valuation/#detailed-description)
 
 **Attention:** When cancellation policies are requested (*CancellationPolicies*,*RoomCancellationPolicies*) you should always return them at Option level ([MealPlans/MealPlan/Options/Option/CancelPenalties/CancelPenalty](#AvailRS Description)). If CancellationPolicies is requested we should only receive them at option level, but if RoomCancellationPolicies is requested, we should receive them at option and room levels. Cancellation policies per room are complementary (extra information). 
 
+
 **HoursBefore:** cancellation fees applicable *x* number of hours before the check in date.
 
-**Deadline:** cancellation fees applies from the date displayed on the deadline, which is on UTC Standard. For more information about how TimeZones are handled please check our [MetaData](/connectiontypessellers/hotelpullsellers/methods/messages/static-methods/metadata/) content.
+**Deadline:** cancellation fees applies from the date displayed on the deadline, which is on UTC Standard. For more information about how TimeZones are handled please check our [MetaData](/connectiontypessellers/hotelpullsellers/methods/staticcontent/metadata/) content.
 
-**CalculatedDeadline:** Specifies if the Deadline is returned by the supplier or it's been calculated by TravelGate.
-	true: the deadline has been converted to UTC-0 by XTG
-	false: the supplier returns the deadline on UTC-0, so no calculation is needed
+-   **CalculatedDeadline:** Specifies if the Deadline is returned by the supplier or it's been calculated by TravelGate according to **ISO 8601**
+	true: The deadline has been converted to UTC-0 by XTG.
+	false: The supplier returns the deadline on UTC-0, so no calculation is needed.
+
 
 **Type:** 
 There are three values that can be inside types:
@@ -654,7 +656,7 @@ The possible values in status in response are OK or RQ:
 In the case  the client doesn't want to display the options in a
 status RQ, we can filter the options as long as the supplier specifies
 the status and the <OnRequest> tag is set in AvailRQ. In
-case the supplier doesn't specify the status, the element AllowOnRequest in [MetaData](/connectiontypessellers/hotelpullsellers/methods/messages/static-methods/metadata/) needs to be set as FALSE.
+case the supplier doesn't specify the status, the element AllowOnRequest in [MetaData](/connectiontypessellers/hotelpullsellers/methods/staticcontent/metadata/) needs to be set as FALSE.
 
 
 **POI cases Examples:**

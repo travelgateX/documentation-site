@@ -113,7 +113,7 @@ Indicates the number or quantity of elements of a set, whether this quantity is 
 | HotelBaseRS                       | 1          |          | Root node.     |
 | operationImplemented              | 1          | Boolean  | Informs whether the method has been implemented by the supplier. |
 | applicationErrors                 | 0..n       |          | Application errors reported by supplier. |
-| applicationErrors/type            | 1          | String   | [Error Type as specified by XML Travelgate](/hotelpullsellers/methods/messages/listsdata/#error-codes). |
+| applicationErrors/type            | 1          | String   | [Error Type as specified by XML Travelgate](/connectiontypessellers/hotelpullsellers/listsdata/#error-codes). |
 | applicationErrors/code            | 1          | String   | Native error code reported by supplier. |
 | applicationErrors/description     | 1          | String   | Error description. |
 | auditData                         | 1          |          | Data sent & received in the supplier's native format.|

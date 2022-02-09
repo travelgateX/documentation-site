@@ -36,7 +36,7 @@ The result returns a list of *RoomInfo*.
 
 The maximum time permitted in our system before the connection is closed is **240000** milliseconds.
 
-This message must be implemented solely in case the supplier does not return room description in Avail. This requirement will be indicated in [MetaData](/connectiontypessellers/hotelpullsellers/methods/messages/static-methods/metadata/).
+This message must be implemented solely in case the supplier does not return room description in Avail. This requirement will be indicated in [MetaData](/connectiontypessellers/hotelpullsellers/methods/staticcontent/metadata/).
 
 
 

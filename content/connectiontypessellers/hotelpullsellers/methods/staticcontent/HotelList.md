@@ -149,7 +149,7 @@ Go to [Common-Elements](/connectiontypessellers/hotelpullsellers/methods/common-
 | HotelListRS/UpgradeUTCDate		| 1       	|	DateTime	| Indicates the update date of the information in UTC format.	|
 | HotelListRS/Hotels/Hotel		| 0..n       	|		| Root node. Hotel sheet.          				|
 | Code       				| 1    		| String	| Internal code to perform availability and/or supplier code.	|
-| ProviderCode				| 0..1 		| String	| Internal code established by the supplier (see [MetaData](/connectiontypessellers/hotelpullsellers/methods/messages/static-methods/metadata/)). |
+| ProviderCode				| 0..1 		| String	| Internal code established by the supplier (see [MetaData](/connectiontypessellers/hotelpullsellers/methods/staticcontent/metadata/)). |
 | GiataId    				| 0..1       	|		| Giata System ID.							|
 | @source    				| 0..1 		| String	| Giata url	|
 | @value     				| 0..1 		| String	| Giata code (more on detailed description)	|

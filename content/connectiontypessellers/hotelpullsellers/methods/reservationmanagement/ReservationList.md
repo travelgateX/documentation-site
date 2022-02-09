@@ -167,6 +167,6 @@ Go to [Common-Elements](/connectiontypessellers/hotelpullsellers/methods/common-
 | --------------------------------------------- | ------------- | -------- | ------------------------------------------ |
 | ReservationListRS              		| 1             |	   | Root node.					|
 | ReservationListRS/Reservations 		| 0..1          |	   | Reservations.				|
-| ReservationListRS/Reservations/Reservation	| 1             |	   | Same structure as [ReservationReadRS](/connectiontypessellers/hotelpullsellers/methods/messages/booking-flow-methods/reservationread/#reservationreadrs-description).	|
+| ReservationListRS/Reservations/Reservation	| 1             |	   | Same structure as [ReservationReadRS](/connectiontypessellers/hotelpullsellers/methods/reservationmanagement/reservationread/#reservationreadrs-description).	|
 
 

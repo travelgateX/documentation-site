@@ -115,7 +115,7 @@ Go to [Common-Elements](/connectiontypessellers/hotelpullsellers/methods/common-
 | CancelRS   				| 1          	|		| Root node.							|
 | ProviderLocator			| 1    		| String	| Supplier locator.						|
 | CancelId   				| 0..1 		| String	| Cancellation id.  						|
-| Price      				| 0..1       	|		| Fee for the cancellation. (see [MetaData](/connectiontypessellers/hotelpullsellers/methods/messages/static-methods/metadata/) in order to verify if supplier informs of it).						|
+| Price      				| 0..1       	|		| Fee for the cancellation. (see [MetaData](/connectiontypessellers/hotelpullsellers/methods/staticcontent/metadata/) in order to verify if supplier informs of it).						|
 | @currency  				| 1    		| String	| Currency code. 						|
 | @amount    				| 1    		| Decimal	| Amount.  						|
 | @binding   				| 1    		| Boolean	| Identifies if the price is binding (When it true the sale price returned **must** not be less than the price informed. |

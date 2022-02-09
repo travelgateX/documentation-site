@@ -93,10 +93,10 @@ Go to [Common-Elements](/connectiontypessellers/hotelpullsellers/methods/common-
 | ValuationRQ                            | 1          |          | Root node.      |
 | StartDate                              | 1          | String   | Start date of rate search. Format dd/MM/yyyy	 |
 | EndDate                                | 1          | String   | End date of rates search. Format dd/MM/yyyy	 |
-| OnRequest                              | 1          | Boolean  | Indicates if you want to receive the on request options in AvailRS, as long as the supplier returns it in this method (see [MetaData](/connectiontypessellers/hotelpullsellers/methods/messages/static-methods/metadata/)). |
+| OnRequest                              | 1          | Boolean  | Indicates if you want to receive the on request options in AvailRS, as long as the supplier returns it in this method (see [MetaData](/connectiontypessellers/hotelpullsellers/methods/staticcontent/metadata/)). |
 | MealPlanCode                           | 1          | String   | MealPlan code.  |
 | HotelCode                              | 1          | String   | Hotel code.     |
-| PaymentType                            | 1          | String   | Indicates payment type (See full type list at [Lists of Data](/connectiontypessellers/hotelpullsellers/methods/messages/listsdata/#payment-types)). |
+| PaymentType                            | 1          | String   | Indicates payment type (See full type list at [Lists of Data](/connectiontypessellers/hotelpullsellers/listsdata/#payment-types)). |
 | OptionType                             | 1          | String   | Indicates option types. |
 | Nationality                            | 1       | String   | Guest nationality (use ISO3166_1_alfa_2). |
 | Rooms                                  | 1          |          | Rooms in this option (room list). |
@@ -129,13 +129,13 @@ Go to [Common-Elements](/connectiontypessellers/hotelpullsellers/methods/common-
         <CancelPenalties nonRefundable = "false">
             <CancelPenalty>
                 <HoursBefore>72</HoursBefore>
-                <Deadline>01/07/2016 05:00:00Z</Deadline>
+                <Deadline>01/07/2016T05:00:00Z</Deadline>
                 <CalculatedDeadline>false</CalculatedDeadline>
                 <Penalty type = "Importe"  paymentType = "MerchantPay" currency = "EUR">25.00</Penalty>
             </CancelPenalty>
             <CancelPenalty>
                 <HoursBefore>48</HoursBefore>
-                <Deadline>02/07/2016 05:00:00Z</Deadline>
+                <Deadline>02/07/2016T05:00:00Z</Deadline>
                 <CalculatedDeadline>false</CalculatedDeadline>
                 <Penalty type = "Importe"  paymentType = "MerchantPay" currency = "EUR">72.40</Penalty>
             </CancelPenalty>
@@ -179,18 +179,18 @@ Go to [Common-Elements](/connectiontypessellers/hotelpullsellers/methods/common-
 | CancelPenalties                           | 1          |          | Cancellation policy details. |
 | @nonRefundable                            | 1          | Boolean  | Indicate if this option is nonRefundable (true or false). |
 | CancelPenalties/CancelPenalty             | 0..n       |          | Listing cancellation penalties. |
-| CancelPenalties/CancelPenalty/HoursBefore | 1          | String   | Number of hours prior to checkin date in which this Cancellation policy applies. |
-| CancelPenalties/CancelPenalty/Deadline    | 1          | String   | Date on UTC Standard TimeZone in which this Cancellation policy applies.|
-| CancelPenalties/CancelPenalty/CalculatedDeadline | 1          | Boolean  | Indicate if the Deadline is returned by the supplier or it's been calculated by TravelGate. true = has been calculated by XTG, false = bypass of supplier data without calculation|
+| CancelPenalties/CancelPenalty/HoursBefore | 1          | String   | Number of hours prior to checkin date in which this Cancellation policy applies |
+| CancelPenalties/CancelPenalty/Deadline    | 1          | String   | Date on UTC Standard TimeZone in which this Cancellation policy applies (ISO 8601 e.g: 01/07/2016T05:00:00Z) |
+| CancelPenalties/CancelPenalty/CalculatedDeadline | 1          | Boolean  | Indicate if the Deadline is returned by the supplier or it's been calculated by TravelGate. true = has been calculated by XTG, false = bypass of supplier data without calculation |
 | CancelPenalties/CancelPenalty/Penalty     | 1          |          | Contains the value to apply. |
 | @type					    | 1          | String   | Type of possible penalty values: “Noches” (nights) , “Porcentaje” (percentage) ,”Importe” (price value). |
 | @currency				    | 1          | String   | Currency code. |
-| @paymentType                            | 1          | String   | Indicates payment type of penalty (See full type list at [Lists of Data](/connectiontypessellers/hotelpullsellers/methods/messages/listsdata/#payment-types)) . |
-| Remarks 				    | 0..1       | String   | Remarks (see [MetaData](/connectiontypessellers/hotelpullsellers/methods/messages/static-methods/metadata/) in order to verify if a supplier implements it).       |
+| @paymentType                            | 1          | String   | Indicates payment type of penalty (See full type list at [Lists of Data](/connectiontypessellers/hotelpullsellers/listsdata/#payment-types)) . |
+| Remarks 				    | 0..1       | String   | Remarks (see [MetaData](/connectiontypessellers/hotelpullsellers/methods/staticcontent/metadata/) in order to verify if a supplier implements it).       |
 | PaymentOptions			    | 0..1       | String   | Payment Types allowed by the supplier. This tag  is mandatory only if payment type is different than MerchantPay. |
 | PaymentOptions/Cards			    | 0..1		 | 	    | List of cards allowed. |
 | PaymentOptions/Cards/Card		    | 1..n       |          | Details of card. |
-| @code   				    | 1          | String   | Code card. Se the full list of card codes at [Lists of Data](/connectiontypessellers/hotelpullsellers/methods/messages/listsdata/#credit-cards) |
+| @code   				    | 1          | String   | Code card. Se the full list of card codes at [Lists of Data](/connectiontypessellers/hotelpullsellers/listsdata/#credit-cards) |
 | Fees					    | 0..1       | 	    | Contains a list of fees. |
 | Fees/Fee				    | 1..n       |          | Contains details of the fee. |
 | @includedPriceOption			    | 1		 | Boolean  | Indicates if the fee is included or not in the final price (value indicated in the node Price in ValuationRS). |
@@ -201,14 +201,14 @@ Go to [Common-Elements](/connectiontypessellers/hotelpullsellers/methods/common-
 | @amount 				    | 1          | Decimal  | Fee Amount. |
 | @binding				    | 1          | Boolean  | Identifies if is the price is binding (When true the sale price returned must not be less than the price informed. |
 | @commission				    | 1          | Decimal  | Commission: -1 = not specified (indicated in contract with supplier), 0 = net price, X = % of the commission applied to the amount. |
-| CancelPoliciesDescription                 | 0..1       | String   | Contains the cancellation penalties in free text (see [MetaData](/connectiontypessellers/hotelpullsellers/methods/messages/static-methods/metadata/) in order to verify if a supplier implements it). |
+| CancelPoliciesDescription                 | 0..1       | String   | Contains the cancellation penalties in free text (see [MetaData](/connectiontypessellers/hotelpullsellers/methods/staticcontent/metadata/) in order to verify if a supplier implements it). |
  
 
 
 ### Detailed Description
 
 
-**Suppliers with block allotment **
+**Suppliers with block allotment**
 
 There are some suppliers who use block allotments, sometimes called pre-confirmation or quote.
 In that case, you will have 30 minutes to complete the booking, if  not, you will have to re-launch Valuation 30 minutes after the last request, normally just before booking request.
@@ -223,37 +223,39 @@ The valuation response depends if the parameter <OnRequest> is set: if it is set
 
 Booking cancellation penalties are affected by the following elements:
 
--   **HoursBefore:** cancellation fees applicable x number of hours before the check in date
+**HoursBefore:** cancellation fees applicable *x* number of hours before the check in date.
 
--   **Deadline:** cancellation fees applies from the date displayed on the deadline, which is on UTC Standard. For more information about how TimeZones are handled please check our [MetaData](/connectiontypessellers/hotelpullsellers/methods/messages/static-methods/metadata/) content.
+**Deadline:** cancellation fees applies from the date displayed on the deadline, which is on UTC Standard. For more information about how TimeZones are handled please check our [MetaData](/connectiontypessellers/hotelpullsellers/methods/staticcontent/metadata/) content.
 
--   **CalculatedDeadline:** Specifies if the Deadline is returned by the supplier or it's been calculated by TravelGate.
-	true: the deadline has been converted to UTC-0 by XTG
-	false: the supplier returns the deadline on UTC-0, so no calculation is needed
+-   **CalculatedDeadline:** Specifies if the Deadline is returned by the supplier or it's been calculated by TravelGate according to **ISO 8601**
+	true: The deadline has been converted to UTC-0 by XTG.
+	false: The supplier returns the deadline on UTC-0, so no calculation is needed.
 
--   **Type:** There are three values that can be inside types:
 
-> -   *Noches:* indicates the number of nights to be penalized.
+**Type:** 
+There are three values that can be inside types:
 
-> -   *Porcentaje:* indicates the percentage to pay based on the option price.
+> -   *Noches:* Indicates the number of nights to be penalized.
 
-> -   *Importe:* indicates the exact amount payable
+> -   *Porcentaje:* Indicates the percentage to pay based on the option price.
+
+> -   *Importe:* Indicates the exact amount  payable.
 
 -   **Currency:** currency of the penalty fee.
 
-In this example you can see 2 *CancelPenalty* with different *HoursBefore*:
+In this example you can see 2 **CancelPenalty** with different **HoursBefore**:
 
 ~~~xml
 <CancelPenalties nonRefundable = "false">
     <CancelPenalty>
         <HoursBefore>72</HoursBefore>
-        <Deadline>01/07/2016 05:00:00Z</Deadline>
+        <Deadline>01/07/2016T05:00:00Z</Deadline>
         <CalculatedDeadline>false</CalculatedDeadline>
         <Penalty type = "Importe" paymentType = "MerchantPay" currency = "EUR">25.00</Penalty>
     </CancelPenalty>
     <CancelPenalty>
         <HoursBefore>48</HoursBefore>
-        <Deadline>02/07/2016 05:00:00Z</Deadline>
+        <Deadline>02/07/2016T05:00:00Z</Deadline>
         <CalculatedDeadline>false</CalculatedDeadline>
         <Penalty type = "Importe" paymentType = "MerchantPay" currency = "EUR">72.40</Penalty>
     </CancelPenalty>

@@ -300,8 +300,8 @@ Go to [Common-Elements](/connectiontypessellers/hotelpullsellers/methods/common-
 | @code			            | 1 		|  String 	| Room Code.   						|
 | @size			            | 1 		|  Integer 	| Size of the room.						|
 | @quantity			            | 1 		|  Integer 	| Number of rooms availables at the hotel. 						|
-| @viewCode			            | 1 		|  String 	| Main view of the room. See the full list of card codes at [Lists of Data](/connectiontypessellers/hotelpullsellers/methods/messages/listsdata/#view-codes).					|
-| @classificationCode			            | 1 		|  String 	| Room classification code. See the full list of card codes at [Lists of Data](/connectiontypessellers/hotelpullsellers/methods/messages/listsdata/#room-classifications).						|
+| @viewCode			            | 1 		|  String 	| Main view of the room. See the full list of card codes at [Lists of Data](/connectiontypessellers/hotelpullsellers/listsdata/#view-codes).					|
+| @classificationCode			            | 1 		|  String 	| Room classification code. See the full list of card codes at [Lists of Data](/connectiontypessellers/hotelpullsellers/listsdata/#room-classifications).						|
 | @occupancy			            | 1 		|  Integer 	| Number of rooms availables at the hotel. 						|
 | Rooms/Room/Description			            | 1 		|  String 	| Room Description.   						|
 | Rooms/Room/Beds			            | 0..1 		|   	| Room bedding.				|
@@ -352,7 +352,7 @@ Go to [Common-Elements](/connectiontypessellers/hotelpullsellers/methods/common-
 | PaymentOptions			| 0..1 		| String	| Type of cards allowed by the supplier. This tag is only mandatory if payment type is different than *MerchantPay*.	 |
 | PaymentOptions/Cards/Cards		| 1          	|		| List of cards allowed.					|
 | PaymentOptions/Cards/Card		| 1..n       	|		| Type of card allowed. 						|
-| @code 				| 1    		| String	| Code of card. See the full list of card codes at [Lists of Data](/connectiontypessellers/hotelpullsellers/methods/messages/listsdata/#credit-cards).		|
+| @code 				| 1    		| String	| Code of card. See the full list of card codes at [Lists of Data](/connectiontypessellers/hotelpullsellers/listsdata/#credit-cards).		|
 | ExclusiveDeal				| 0..1 		| Boolean 	| Indicates that a Hotel is an Exlusive Deal.	|
 | PropertyCategory			| 0..1       	|		| Hotels property type. Similar to Type tag, but on supplier's side. |
 | PropertyCategory/Code			| 1    		| String	| Supplier property code.					|
