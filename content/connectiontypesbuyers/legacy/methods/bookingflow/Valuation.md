@@ -86,11 +86,11 @@ Our system allows for a maximum of **180000** milliseconds before the connection
 | ValuationRQ                            | 1          |          | Root node.      |
 | StartDate                              | 1          | String   | Start date of rate search. |
 | EndDate                                | 1          | String   | End date of rates search. |
-| OnRequest                              | 1          | Boolean  | Indicates if you want to receive the on request options in AvailRS, as long as the supplier returns it in this method (see [MetaData](https://docs.travelgatex.com/legacy/hotel/methods/messages/metadata/)). |
-| BlockOption                            | 1          | Boolean  | Indicates if you want to block the option selected in AvailRS, as long as the supplier allows it in this method (see [MetaData](https://docs.travelgatex.com/legacy/hotel/methods/messages/metadata/)). |
+| OnRequest                              | 1          | Boolean  | Indicates if you want to receive the on request options in AvailRS, as long as the supplier returns it in this method (see [MetaData](/connectiontypessellers/hotelpullsellers/methods/staticcontent/metadata/)). |
+| BlockOption                            | 1          | Boolean  | Indicates if you want to block the option selected in AvailRS, as long as the supplier allows it in this method (see [MetaData](/connectiontypessellers/hotelpullsellers/methods/staticcontent/metadata/)). |
 | MealPlanCode                           | 1          | String   | MealPlan code.  |
 | HotelCode                              | 1          | String   | Hotel code.     |
-| PaymentType                            | 1          | String   | Indicates payment type (See full type list at [Lists of Data](https://docs.travelgatex.com/legacy/hotel/methods/messages/listsdata/)). |
+| PaymentType                            | 1          | String   | Indicates payment type (See full type list at [Lists of Data](/connectiontypessellers/hotelpullsellers/listsdata/)). |
 | OptionType                             | 1          | String   | Indicates option types. |
 | Nationality                            | 1       | String   | Guest nationality (use ISO3166_1_alfa_2). |
 | Rooms                                  | 1          |          | Rooms in this option (room list). |
@@ -177,15 +177,15 @@ Our system allows for a maximum of **180000** milliseconds before the connection
 | CancelPenalties/CancelPenalty/Deadline    | 1          | String   | Date on UTC Standard TimeZone in which this Cancellation policy applies.|
 | CancelPenalties/CancelPenalty/CalculatedDeadline | 1          | Boolean  | Indicate if the Deadline is returned by the supplier or it's been calculated by TravelGate. |
 | CancelPenalties/CancelPenalty/Penalty     | 1          |          | Contains the value to apply. |
-| @type					    | 1          | String   | Type of possible penalty values: “Noches” (nights) , “Porcentaje” (percentage) ,”Importe” (price value). |
+| @type					    | 1          | String   | Type of possible penalty values: “Noches” (nights) , “Porcentaje” (percentage) ,"Importe" (price value). |
 | @currency				    | 1          | String   | Currency code. |
-| @paymentType                            | 1          | String   | Indicates payment type of penalty (See full type list at [Lists of Data](https://docs.travelgatex.com/legacy/hotel/methods/messages/listsdata/)) . |
+| @paymentType                            | 1          | String   | Indicates payment type of penalty (See full type list at [Lists of Data](/connectiontypessellers/hotelpullsellers/listsdata/)) . |
 | CancelPenalties/CancelPenalty/Deadline | 0..1          | String   | Cancellation fees will be applicabled between this date and check-in date. |
-| Remarks 				    | 0..1       | String   | Remarks (see [MetaData](https://docs.travelgatex.com/legacy/hotel/methods/messages/metadata/) in order to verify if a supplier implements it).       |
+| Remarks 				    | 0..1       | String   | Remarks (see [MetaData](/connectiontypessellers/hotelpullsellers/methods/staticcontent/metadata/) in order to verify if a supplier implements it).       |
 | PaymentOptions			    | 0..1       | String   | Payment Types allowed by the supplier. This tag  is mandatory only if payment type is different than MerchantPay. |
 | PaymentOptions/Cards			    | 0..1		 | 	    | List of cards allowed. |
 | PaymentOptions/Cards/Card		    | 1..n       |          | Details of card. |
-| @code   				    | 1          | String   | Code card. Se the full list of card codes at [Lists of Data](https://docs.travelgatex.com/legacy/hotel/methods/messages/listsdata/) |
+| @code   				    | 1          | String   | Code card. Se the full list of card codes at [Lists of Data](/connectiontypessellers/hotelpullsellers/listsdata/) |
 | Fees					    | 0..1       | 	    | Contains a list of fees. |
 | Fees/Fee				    | 1..n       |          | Contains details of the fee. |
 | Fees/Fee/Code			    	    | 1          |   String | Specifies the fee code in case it has one. |
@@ -196,7 +196,7 @@ Our system allows for a maximum of **180000** milliseconds before the connection
 | @amount 				    | 1          | Decimal  | Fee Amount. |
 | @binding				    | 1          | Boolean  | Identifies if is the price is binding (When true the sale price returned must not be less than the price informed. |
 | @commission				    | 1          | Decimal  | Commission: -1 = not specified (indicated in contract with supplier), 0 = net price, X = % of the commission applied to the amount. |
-| CancelPoliciesDescription                 | 0..1       | String   | Contains the cancellation penalties in free text (see [MetaData](https://docs.travelgatex.com/legacy/hotel/methods/messages/metadata/) in order to verify if a supplier implements it). |
+| CancelPoliciesDescription                 | 0..1       | String   | Contains the cancellation penalties in free text (see [MetaData](/connectiontypessellers/hotelpullsellers/methods/staticcontent/metadata/) in order to verify if a supplier implements it). |
 | Option		|0..1	| Option quoted
 | Option/Rooms | 0..1 		| 		| Rooms in the option (room list).				|
 | Option/Rooms/Room | 1..n 	| 		| Room details.						|

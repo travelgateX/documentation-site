@@ -44,7 +44,7 @@ Clarification - All information contained within the Avail section relates to th
 
 ### MetaDataRQ Example
 
-In the request of this call it is only necessary to use the object: "HotelBaseRQ". You can find the info in the '[Common Elements](/connectiontypessellers/hotelpullsellers/methods/messages/common-elements/)' section
+In the request of this call it is only necessary to use the object: "HotelBaseRQ". You can find the info in the '[Common Elements](/connectiontypessellers/hotelpullsellers/methods/common-elements/)' section
 
 ~~~xml
     <MetaDataRQ>

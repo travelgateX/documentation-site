@@ -35,10 +35,10 @@ A Buyer's request (for example an availability) can be explained in 6 steps:
 6- Buyer receives the response in TGX's format.
 
 
-The seller has to be able to receive requests for TravelgateX's API [methods](/hotelpullsellers/methods/messages/). In every request there is a [configuration](/hotelpullsellers/how-to-guides/configuration/) element with the credential information.
+The seller has to be able to receive requests for TravelgateX's API [methods](/connectiontypessellers/hotelpullsellers/methods/). In every request there is a [configuration](/connectiontypessellers/hotelpullsellers/how-to-guides/configuration/) element with the credential information.
 
-This connectivity will be by POST method, you can find more information at our [suppliers connectivity page](/hotelpullsellers/how-to-guides/connectivity/)
+This connectivity will be by POST method, you can find more information at our [suppliers connectivity page](/connectiontypessellers/hotelpullsellers/how-to-guides/connectivity/)
 
-You can find a brief definition of the methods to implement, and if they are mandatory for the connectivity or not, in our [Data Structure page](/hotelpullsellers/methods/data-structure/).
+You can find a brief definition of the methods to implement, and if they are mandatory for the connectivity or not, in our [Data Structure page](/connectiontypessellers/hotelpullsellers/data-structure/).
 
-Also, it is highly recommended to have a look at our [booking flow](/hotelpullsellers/how-to-guides/booking-flow/) to understand exactly how the clients will work with the connectivity.
+Also, it is highly recommended to have a look at our [booking flow](/connectiontypessellers/hotelpullsellers/how-to-guides/booking-flow/) to understand exactly how the clients will work with the connectivity.

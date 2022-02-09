@@ -153,12 +153,12 @@ Go to [Common-Elements](/connectiontypessellers/hotelpullsellers/methods/common-
 | --------------------------------------------- | ------------- | ------------- | ----------------------------------------------------- |
 | ReservationRQ 				| 1      	|		| Root node.						|
 | ClientLocator 				| 1  		| String	| Booking ID in client's system.					|
-| OnRequest     				| 1  		| Boolean	| Indicates if you want to receive the onrequest options in AvailRS, as long as the supplier returns it in this method (see [MetaData](/connectiontypessellers/hotelpullsellers/methods/messages/static-methods/metadata/) in order to verify if a supplier implements it).	|
+| OnRequest     				| 1  		| Boolean	| Indicates if you want to receive the onrequest options in AvailRS, as long as the supplier returns it in this method (see [MetaData](/connectiontypessellers/hotelpullsellers/methods/staticcontent/metadata/) in order to verify if a supplier implements it).	|
 | Parameters    				| 0..1    	|		| Parameters for additional information that have been reported in ValuationRS.	|
 | Parameters/Parameter				| 1..n    	|		| List of parameters.					|
 | @key     					| 1  		| String	| Contains the keyword/Id to identify a parameter.	|
 | @value   					| 1  		| String	| Contains the value of the parameter.			|
-| DeltaPrice    				| 0..1    	|		| Indicates price variation permitted by the client (see [MetaData](/connectiontypessellers/hotelpullsellers/methods/messages/static-methods/metadata/) in order to verify if a supplier implements it). You can find more information with examples at [the bottom of this page](/connectiontypessellers/hotelpullsellers/methods/messages/booking-flow-methods//reservation/#deltaprice-description).	|
+| DeltaPrice    				| 0..1    	|		| Indicates price variation permitted by the client (see [MetaData](/connectiontypessellers/hotelpullsellers/methods/staticcontent/metadata/) in order to verify if a supplier implements it). You can find more information with examples at [the bottom of this page](/connectiontypessellers/hotelpullsellers/methods/booking-flow-methods/reservation/#deltaprice-description).	|
 | @amount  					| 0..1		| String	| Amount (in the currency returned into the option) that is accepted by the client to be higher than the valuation price. |
 | @percent 					| 0..1		| String	| Percentage accepted by the client to be higher than the valuation price.	|
 | @applyBoth					| 1  		| Boolean	| Indicates that the range between valuation price and the new price does not exceed the amount and/or porcentage indicated by the client.  |
@@ -166,7 +166,7 @@ Go to [Common-Elements](/connectiontypessellers/hotelpullsellers/methods/common-
 | EndDate       				| 1  		| String	| End date to search rates. Format dd/MM/yyyy					|
 | MealPlanCode  				| 1  		| String	| MealPlan code.					|
 | HotelCode     				| 1  		| String	| Hotel code.						|
-| Nationality   				| 1		| String	| Nationality of the Holder (use ISO3166_1_alfa_2 , see [MetaData](/connectiontypessellers/hotelpullsellers/methods/messages/static-methods/metadata/) in order to verify if a supplier implements it).  |
+| Nationality   				| 1		| String	| Nationality of the Holder (use ISO3166_1_alfa_2 , see [MetaData](/connectiontypessellers/hotelpullsellers/methods/staticcontent/metadata/) in order to verify if a supplier implements it).  |
 | Holder   				| 1		|		| Holder of the booking.  |
 | @title   				| 1		| Enum	| Holder's title. Possible values: 0 = Mr, 1 = Mrs, 2 = Miss, 3 = Ms.   |
 | @name   				| 1		|		| Holder's name.  |
@@ -187,7 +187,7 @@ Go to [Common-Elements](/connectiontypessellers/hotelpullsellers/methods/common-
 | ResGuests/Guests/Guest/SurName		| 1   		| String	| Guest's last name.						|
 | PaymentType   				| 1  		| String	| Indicates the type of payment. It can be MerchantPay, LaterPay, CardBookingPay or CardCheckInPay. Payment types are explained in "Detailed description" section, in this same page.			|
 | CardInfo   				| 0..1  		|		| Credit card details.			|
-| CardInfo/CardCode   				| 1  		| String	| Indicates the type of credit card. See types allowed at [Credit Card Types](/connectiontypessellers/hotelpullsellers/methods/messages/listsdata/#credit-cards)			|
+| CardInfo/CardCode   				| 1  		| String	| Indicates the type of credit card. See types allowed at [Credit Card Types](/connectiontypessellers/hotelpullsellers/listsdata/#credit-cards)			|
 | CardInfo/Number   				| 1  		| String	| Credit card number.			| 
 | CardInfo/Holder   				| 1  		| String	| Credit card holder.			|
 | CardInfo/ValidityDate   				| 1  		|		| 			|
@@ -204,13 +204,13 @@ Go to [Common-Elements](/connectiontypessellers/hotelpullsellers/methods/common-
 | CardInfo/ThreeDomainSecurity/ThreeDSVersion   | 1  		| String	| Three Domain Security version used.	|
 | CardInfo/ThreeDomainSecurity/DSTransactionID  | 0..1 		| String	| Unique transaction identifier assigned by the Directory Server (DS) to identify a single transaction.	|
 | CardInfo/ThreeDomainSecurity/XID              | 0..1 		| String	| Transaction identifier resulting from authentication processing.	|
-| CardInfo/ThreeDomainSecurity/ECI              | 1  		| String	| Electronic Commerce Indicator. See values allowed at [ECI codes](/connectiontypessellers/hotelpullsellers/methods/messages/listsdata/#electronic-commerce-indicator-codes).|
+| CardInfo/ThreeDomainSecurity/ECI              | 1  		| String	| Electronic Commerce Indicator. See values allowed at [ECI codes](/connectiontypessellers/hotelpullsellers/listsdata/#electronic-commerce-indicator-codes).|
 | CardInfo/ThreeDomainSecurity/CAVV             | 0..1  		| String	| Cardholder Authentication Verification Value.	|
 | CardInfo/ThreeDomainSecurity/PARes            | 0..1  		| String	| Payer Authentication Response.	|
-| CardInfo/ThreeDomainSecurity/PAResStatus      | 0..1  		| String	| Payer Authentication Response status. See values allowed at [PARes Status](/connectiontypessellers/hotelpullsellers/methods/messages/listsdata/#pares-status).|
+| CardInfo/ThreeDomainSecurity/PAResStatus      | 0..1  		| String	| Payer Authentication Response status. See values allowed at [PARes Status](/connectiontypessellers/hotelpullsellers/listsdata/#pares-status).|
 | CardInfo/ThreeDomainSecurity/PARes            | 0..1  		| String	| Payer Authentication Response.	|
-| CardInfo/ThreeDomainSecurity/CardEnrolledStatus | 0..1  		| String	| Status of Authentication eligibility. See values allowed at [Card Enrollment Status](/connectiontypessellers/hotelpullsellers/methods/messages/listsdata/#card-enrollment-status).	|
-| CardInfo/ThreeDomainSecurity/SignatureStatus  | 0..1  		| String	| Transaction Signature status.	See values allowed at [Signature Verification Status](/connectiontypessellers/hotelpullsellers/methods/messages/listsdata/#signature-verification-status).|
+| CardInfo/ThreeDomainSecurity/CardEnrolledStatus | 0..1  		| String	| Status of Authentication eligibility. See values allowed at [Card Enrollment Status](/connectiontypessellers/hotelpullsellers/listsdata/#card-enrollment-status).	|
+| CardInfo/ThreeDomainSecurity/SignatureStatus  | 0..1  		| String	| Transaction Signature status.	See values allowed at [Signature Verification Status](/connectiontypessellers/hotelpullsellers/listsdata/#signature-verification-status).|
 | CardInfo/ThreeDomainSecurity/MerchantName     | 0..1  		| String	| Merchant name.	|
 | Rooms          				| 1      	|		| Rooms within this option (room list).			|
 | Rooms/Room    				| 1..n    	|		| Detail of room. 					|
@@ -226,7 +226,7 @@ Go to [Common-Elements](/connectiontypessellers/hotelpullsellers/methods/common-
 | RoomCandidates/RoomCandidate/Paxes/Pax	| 1..n    	|		| Pax required.						|
 | @age     					| 1  		| Integer	| Passenger age on the day of check-in. 					|
 | @id      					| 1  		| Integer	| Passenger id (starting at 1, this identifier is at room level). 			|
-| Remarks       				| 0..1    	| 		| Any customer comments for the supplier to consider (see [MetaData](/connectiontypessellers/hotelpullsellers/methods/messages/static-methods/metadata/) in order to verify if a supplier implements it).	|
+| Remarks       				| 0..1    	| 		| Any customer comments for the supplier to consider (see [MetaData](/connectiontypessellers/hotelpullsellers/methods/staticcontent/metadata/) in order to verify if a supplier implements it).	|
 | Preferences    				| 0..1    	|		| Preference filters at the option / general level. 					|
 | Preferences/Preference   				| 1..n    	|		| Each filter of preference and its values. 		|
 | @type   				| 1    	|		| Type of preference allowed. See types allowed in ** PreferenceType:**  					|
@@ -255,13 +255,13 @@ Go to [Common-Elements](/connectiontypessellers/hotelpullsellers/methods/common-
 | ProviderLocator 				| 1  		| String	| Booking ID in the Supplier´s system					|
 | PropertyReservationNumber 				| 0..1  		| String	| Booking Number in the property´s system (see Metadata method in order to verify if a supplier implements it).	|
 | ResStatus					| 1  		| String	| reservation status  (OK = confirmed, RQ = on request, CN = cancelled, UN = unknown.)	|
-| Price  					| 0..1     	|		| Total price of this reservation (see [MetaData](/connectiontypessellers/hotelpullsellers/methods/messages/static-methods/metadata/) in order to verify if a supplier implements it).				|
+| Price  					| 0..1     	|		| Total price of this reservation (see [MetaData](/connectiontypessellers/hotelpullsellers/methods/staticcontent/metadata/) in order to verify if a supplier implements it).				|
 | @currency					| 1  		| String	| Currency code.					|
 | @amount					| 1  		| Decimal	| Book Amount.						|
 | @binding					| 1  		| Boolean	| Identifies if is the price is binding (when true the sale price returned **must** not be less than the price informed. |
 | @commission					| 1  		| Decimal	| Commission (-1 = not specified, 0 = net price, X = % of the commission that applies to the amount.	|
 | Remarks					| 0..1		| String	| Any remarks about this reservation			|
-| BillingSupplierCode				| 0..1		| String	| Supplier's billing code. Will be returned if the supplier has different billing accounts and this is informed in the reservation (see [MetaData](/connectiontypessellers/hotelpullsellers/methods/messages/static-methods/metadata/) in order to verify if a supplier implements it).	|
+| BillingSupplierCode				| 0..1		| String	| Supplier's billing code. Will be returned if the supplier has different billing accounts and this is informed in the reservation (see [MetaData](/connectiontypessellers/hotelpullsellers/methods/staticcontent/metadata/) in order to verify if a supplier implements it).	|
 | Payable					| 0..1     	|		| Payable.						|
 | @value					| 1       	|		| Informs Payable.					|
   

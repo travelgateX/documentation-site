@@ -7,7 +7,7 @@ permalink= "/docs/hotel/DSF/StaticConfiguration"
 weight = 14
 +++
 
-{{% alert theme="warning" %}}**Important:** be aware that this method is [deprecated](https://knowledge.travelgatex.com/what-is-the-difference-between-staticconfiguration-legacy-and-metadata-legacy) and will not be updated. [MetaData](/connectiontypesbuyers/legacy/methods/messages/metadata/) is the new and improved version of StaticConfiguration.{{% /alert %}}
+{{% alert theme="warning" %}}**Important:** be aware that this method is [deprecated](https://knowledge.travelgatex.com/what-is-the-difference-between-staticconfiguration-legacy-and-metadata-legacy) and will not be updated. [MetaData](/connectiontypessellers/hotelpullsellers/methods/staticcontent/metadata/) is the new and improved version of StaticConfiguration.{{% /alert %}}
 
 
 ### Method Goals

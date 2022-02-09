@@ -12,12 +12,11 @@ icon = "fa-info-circle"
 
 ### Method Goals
 
-
 This paragraph aims to return all of the data lists used in our system: language codes, error codes,currency list, credit cards, nationality and market.
 
 
-### Language Codes
 
+### Language Codes
 
 | **Language** | **Code** |
 |--------------|----------|
@@ -31,10 +30,7 @@ This paragraph aims to return all of the data lists used in our system: language
 
 
 
-
 ### Error codes
-
-
 
 | **Code** | **Description**                                                                                 |
 |----------|-------------------------------------------------------------------------------------------------|
@@ -54,9 +50,8 @@ This paragraph aims to return all of the data lists used in our system: language
 09:50 AM
 
 
+
 ### Credit Cards
-
-
 
 | **Codes** | **Names**                 |
 |-----------|---------------------------|
@@ -86,9 +81,7 @@ This paragraph aims to return all of the data lists used in our system: language
 
 
 
-
 ### Currency codes
-
 
 Our system uses a standard ISO - 3 for all suppliers.
 
@@ -96,22 +89,17 @@ Our system uses a standard ISO - 3 for all suppliers.
 
 ### Markets
 
-
 Most suppliers use a standard ISO - 3166_1_alfa_2, but it depends on each individual supplier.
-
 
 
 
 ### Nationality
 
-
 We use a standard ISO - 3166_1_alfa_2.
 
 
 
-
 ### Payment Types
-
 
 | **Codes**      | **Description**                                                                                                                                      |
 |----------------|------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -133,6 +121,8 @@ We use a standard ISO - 3166_1_alfa_2.
 | 06            | Authentication was attempted but was not or could not be completed; possible reasons being either the card or its Issuing Bank has yet to participate in 3DS.                         |
 | 07            | 3DS authentication is either failed or could not be attempted; possible reasons being both card and Issuing Bank are not secured by 3DS, technical errors, or improper configuration. |
 
+
+
 #### MasterCard
 
 | **ECI Value** | **Description**                                                                                                                                                                                               |
@@ -140,7 +130,6 @@ We use a standard ISO - 3166_1_alfa_2.
 | 00            | 3DS authentication is either failed or could not be attempted; possible reasons being both card and Issuing Bank are not secured by 3DS, technical errors, or improper configuration.                         |
 | 01            | 3DS authentication was attempted but was not or could not be completed; possible reasons being either the card or its Issuing Bank has yet to participate in 3DS, or cardholder ran out of time to authorize. |
 | 02            | 3DS authentication is successful.                                                                                                                                                                             |
-
 
 
 
@@ -157,7 +146,6 @@ We use a standard ISO - 3166_1_alfa_2.
 
 
 
-
 ### Card Enrollment Status
 
 | **Status Value** | **Description**                                                                                  |
@@ -168,14 +156,12 @@ We use a standard ISO - 3166_1_alfa_2.
 
 
 
-
 ### Signature Verification Status
 
 | **Status Value** | **Description**                                         |
 |------------------|---------------------------------------------------------|
 | Y                | Signature of the PARes has been validated successfully. |
 | N                | PARes could not be validated.                           |
-
 
 
 
@@ -199,11 +185,13 @@ We use a standard ISO - 3166_1_alfa_2.
 | warranty         | Rate applicable to options with cancellation warranty.                                                           |
 
 
+
 ### Option Type
 
 | **Codes** | **Description**             |
 |-----------|-----------------------------|
 | soloHotel | Option Type used for hotels |
+
 
 
 ### View Codes
@@ -227,6 +215,8 @@ We use a standard ISO - 3166_1_alfa_2.
 | Various          | Various Views. |
 | Countryside      | Countryside View. |
 | Sea              | Sea View. |
+
+
 
 ### Room Classifications
 
