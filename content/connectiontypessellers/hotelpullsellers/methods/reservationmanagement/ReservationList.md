@@ -82,80 +82,84 @@ Go to [Common-Elements](/connectiontypessellers/hotelpullsellers/methods/common-
 ### ReservationListRS Example
 
 ~~~xml
-    <ReservationListRS>
-        <Reservations>
-            <Reservation>
-                <auditData>
-                    <timeStamp>2014-01-21T15:12:12.0558866+00:00</timeStamp>
-                    <processTimeMilliseconds>0</processTimeMilliseconds>
-                </auditData>
-                <operationImplemented>true</operationImplemented>
-                <Locators>
-                    <Client>2196</Client>
-                    <Provider>1AAAA966</Provider>
-                    <Property>HCN8273</Property>
-                </Locators>
-                <Hotel>
-                    <Name>LAS VEGAS (BENIDORM)</Name>
-                    <Code>58475</Code>
-                    <CreationDate>30/09/2013</CreationDate>
-                    <StartDate>25/01/2014</StartDate>
-                    <EndDate>16/02/2014</EndDate>
-                    <Holder name = "AAAA" surname = "Test"/>
-                    <Price currency = "EUR" amount = "658.94" binding = "false" commission = "-1"/>
-                    <Rooms>
-                        <Room id = "27441" roomCandidateRefId = "1" description = "Doble Standard"/>
-                    </Rooms>
-                    <CancelPenalties nonRefundable = "false">
-                        <CancelPenalty>
-                            <HoursBefore>72</HoursBefore>
-                            <Penalty type = "Importe" paymentType = "pagoMinorista" currency = "EUR">29.95</Penalty>
-                        </CancelPenalty>
-                    </CancelPenalties>
-                </Hotel>
-                <TransactionStatus>
-                    <ComunicationStatus>OK</ComunicationStatus>
-                    <RSStatus>EXISTE</RSStatus>
-                    <ResStatus>OK</ResStatus>
-                </TransactionStatus>
-            </Reservation>
-            <Reservation>
-                <auditData>
-                    <timeStamp>2014-01-21T15:12:12.6657414+00:00</timeStamp>
-                    <processTimeMilliseconds>0</processTimeMilliseconds>
-                </auditData>
-                <operationImplemented>true</operationImplemented>
-                <Locators>
-                    <Client>2578478</Client>
-                    <Provider>10TTT31</Provider>
-                </Locators>
-                <Hotel>
-                    <Name>LEO</Name>
-                    <Code>10</Code>
-                    <CreationDate>17/01/2014</CreationDate>
-                    <StartDate>28/01/2014</StartDate>
-                    <EndDate>29/01/2014</EndDate>
-                    <Holder name = "Test11" surname = "TestAp11"/>
-                    <Price currency = "EUR" amount = "36.20" binding = "false" commission = "-1"/>
-                    <Rooms>
-                        <Room id = "4582" roomCandidateRefId = "1" description = "Doble Standard.."/>
-                    </Rooms>
-                    <CancelPenalties nonRefundable = "false">
-                        <CancelPenalty>
-                            <HoursBefore>120</HoursBefore>
-                            <Penalty type = "Importe" paymentType = "pagoMinorista" currency = "EUR">72.40</Penalty>
-                        </CancelPenalty>
-                    </CancelPenalties>
-                </Hotel>
-                <TransactionStatus>
-                    <ComunicationStatus>OK</ComunicationStatus>
-                    <RSStatus>EXISTE</RSStatus>
-                    <ResStatus>OK</ResStatus>
-                </TransactionStatus>
-            </Reservation>
-    ...
-        </Reservations>
-    </ReservationListRS>
+<ReservationListRS>
+    <Reservations>
+        <Reservation>
+            <auditData>
+                <timeStamp>2014-01-21T15:12:12.0558866+00:00</timeStamp>
+                <processTimeMilliseconds>0</processTimeMilliseconds>
+            </auditData>
+            <operationImplemented>true</operationImplemented>
+            <Locators>
+                <Client>2196</Client>
+                <Provider>1AAAA966</Provider>
+                <Property>HCN8273</Property>
+            </Locators>
+            <Hotel>
+                <Name>LAS VEGAS (BENIDORM)</Name>
+                <Code>58475</Code>
+                <CreationDate>30/09/2013</CreationDate>
+                <StartDate>25/01/2014</StartDate>
+                <EndDate>16/02/2014</EndDate>
+                <Holder name = "AAAA" surname = "Test"/>
+                <Price currency = "EUR" amount = "658.94" binding = "false" commission = "-1"/>
+                <Rooms>
+                    <Room id = "27441" roomCandidateRefId = "1" description = "Doble Standard"/>
+                </Rooms>
+                <CancelPenalties nonRefundable = "false">
+                    <CancelPenalty>
+                        <HoursBefore>72</HoursBefore>
+                        <Deadline>01/01/2014T05:00:00Z</Deadline>
+                        <CalculatedDeadline>false</CalculatedDeadline>
+                        <Penalty type = "Importe" paymentType = "pagoMinorista" currency = "EUR">29.95</Penalty>
+                    </CancelPenalty>
+                </CancelPenalties>
+            </Hotel>
+            <TransactionStatus>
+                <ComunicationStatus>OK</ComunicationStatus>
+                <RSStatus>EXISTE</RSStatus>
+                <ResStatus>OK</ResStatus>
+            </TransactionStatus>
+        </Reservation>
+        <Reservation>
+            <auditData>
+                <timeStamp>2014-01-21T15:12:12.6657414+00:00</timeStamp>
+                <processTimeMilliseconds>0</processTimeMilliseconds>
+            </auditData>
+            <operationImplemented>true</operationImplemented>
+            <Locators>
+                <Client>2578478</Client>
+                <Provider>10TTT31</Provider>
+            </Locators>
+            <Hotel>
+                <Name>LEO</Name>
+                <Code>10</Code>
+                <CreationDate>17/01/2014</CreationDate>
+                <StartDate>28/01/2014</StartDate>
+                <EndDate>29/01/2014</EndDate>
+                <Holder name = "Test11" surname = "TestAp11"/>
+                <Price currency = "EUR" amount = "36.20" binding = "false" commission = "-1"/>
+                <Rooms>
+                    <Room id = "4582" roomCandidateRefId = "1" description = "Doble Standard.."/>
+                </Rooms>
+                <CancelPenalties nonRefundable = "false">
+                    <CancelPenalty>
+                        <HoursBefore>120</HoursBefore>
+                        <Deadline>01/01/2014T05:00:00Z</Deadline>
+                        <CalculatedDeadline>false</CalculatedDeadline>
+                        <Penalty type = "Importe" paymentType = "pagoMinorista" currency = "EUR">72.40</Penalty>
+                    </CancelPenalty>
+                </CancelPenalties>
+            </Hotel>
+            <TransactionStatus>
+                <ComunicationStatus>OK</ComunicationStatus>
+                <RSStatus>EXISTE</RSStatus>
+                <ResStatus>OK</ResStatus>
+            </TransactionStatus>
+        </Reservation>
+        ...
+    </Reservations>
+</ReservationListRS>
 ~~~
 
 

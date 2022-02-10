@@ -53,18 +53,18 @@ is closed.
 In the request for this call it is necessary to use the object: "HotelBaseRQ". You can find the information in the section '[Common elements](/connectiontypessellers/hotelpullsellers/methods/common-elements/)'.
 
 ~~~xml
-    <ReservationReadRQ>
-        <Locators>
-            <Client>5356342</Client>
-            <Provider>MGNZ12345</Provider>
-        </Locators>
-        <Currency>EUR</Currency>
-        <StartDate>28/01/2014</StartDate>
-        <EndDate>29/01/2014</EndDate>
-        <CreationDate>17/01/2014</CreationDate>
-        <HotelCode>AAA</HotelCode>
-        <Holder title = "Miss" name = "Test11" surname = "TestAp11"/>
-    </ReservationReadRQ>
+<ReservationReadRQ>
+    <Locators>
+        <Client>5356342</Client>
+        <Provider>MGNZ12345</Provider>
+    </Locators>
+    <Currency>EUR</Currency>
+    <StartDate>28/01/2014</StartDate>
+    <EndDate>29/01/2014</EndDate>
+    <CreationDate>17/01/2014</CreationDate>
+    <HotelCode>AAA</HotelCode>
+    <Holder title = "Miss" name = "Test11" surname = "TestAp11"/>
+</ReservationReadRQ>
 ~~~
 
 
@@ -99,36 +99,38 @@ Go to [Common-Elements](/connectiontypessellers/hotelpullsellers/methods/common-
 ### ReservationReadRS Example
 
 ~~~xml
-    <ReservationReadRS>
-          <Locators>
-                    <Client>2578478</Client>
-                    <Provider>10TTT31</Provider>
-                    <Property>HCN8273</Property>
-                </Locators>
-                <Hotel>
-                    <Name>LEO</Name>
-                    <Code>10</Code>
-                    <CreationDate>17/01/2014</CreationDate>
-                    <StartDate>28/01/2014</StartDate>
-                    <EndDate>29/01/2014</EndDate>
-                    <Holder name = "Test11" surname = "TestAp11"/>
-                    <Price currency = "EUR" amount = "36.20" binding = "false" commission = "-1"/>
-                    <Rooms>
-                        <Room id = "4582" roomCandidateRefId = "1" description = "Standard.."/>
-                    </Rooms>
-                    <CancelPenalties nonRefundable = "false">
-                        <CancelPenalty>
-                            <HoursBefore>120</HoursBefore>
-                            <Penalty type = "Importe" paymentType = "MerchantPay" currency = "EUR">72.40</Penalty>
-                        </CancelPenalty>
-                    </CancelPenalties>
-                </Hotel>
-                <TransactionStatus>
-                    <ComunicationStatus>OK</ComunicationStatus>
-                    <RSStatus>EXISTE</RSStatus>
-                    <ResStatus>OK</ResStatus>
-                </TransactionStatus>
-    </ReservationReadRS>
+<ReservationReadRS>
+    <Locators>
+        <Client>2578478</Client>
+        <Provider>10TTT31</Provider>
+        <Property>HCN8273</Property>
+    </Locators>
+    <Hotel>
+        <Name>LEO</Name>
+        <Code>10</Code>
+        <CreationDate>17/01/2016</CreationDate>
+        <StartDate>28/01/2016</StartDate>
+        <EndDate>29/01/2014</EndDate>
+        <Holder name = "Test11" surname = "TestAp11"/>
+        <Price currency = "EUR" amount = "36.20" binding = "false" commission = "-1"/>
+        <Rooms>
+            <Room id = "4582" roomCandidateRefId = "1" description = "Standard.."/>
+        </Rooms>
+        <CancelPenalties nonRefundable = "false">
+            <CancelPenalty>
+                <HoursBefore>120</HoursBefore>
+                <Deadline>01/01/2016T05:00:00Z</Deadline>
+                <CalculatedDeadline>false</CalculatedDeadline>
+                <Penalty type = "Importe" paymentType = "MerchantPay" currency = "EUR">72.40</Penalty>
+            </CancelPenalty>
+        </CancelPenalties>
+    </Hotel>
+    <TransactionStatus>
+        <ComunicationStatus>OK</ComunicationStatus>
+        <RSStatus>EXISTE</RSStatus>
+        <ResStatus>OK</ResStatus>
+    </TransactionStatus>
+</ReservationReadRS>
 ~~~
 
 
@@ -174,7 +176,9 @@ Go to [Common-Elements](/connectiontypessellers/hotelpullsellers/methods/common-
 | Hotel/CancelPenaltiesCancelPenalties	| 0..1       	|		| Information of cancellation policies.		|
 | @nonRefundable			| 1    		| Boolean	| Indicate if this option is nonRefundable (true or false). |
 | Hotel/CancelPenalties/CancelPenalty	| 0..n       	|		| Listing of cancellation penalties.		|
-| Hotel/CancelPenalties/CancelPenalty/HoursBefore | 1	|	String	|Number of hours prior to arrival day in which this Cancellation policy applies. |
+| Hotel/CancelPenalties/CancelPenalty/HoursBefore | 1	|	String	| Number of hours prior to arrival day in which this Cancellation policy applies. |
+| Hotel/CancelPenalties/CancelPenalty/Deadline    | 1          | String   | Date on UTC Standard TimeZone in which this Cancellation policy applies (ISO 8601 e.g: 01/07/2016T05:00:00Z)  |
+| Hotel/CancelPenalties/CancelPenalty/CalculatedDeadline | 1          | Boolean  |  Indicate if the Deadline is returned by the supplier or it's been calculated by TravelGate -> *true* = has been calculated by XTG / *false* = bypass of supplier data without calculation |
 | Hotel/CancelPenalties/CancelPenalty/Penalty |   1 	|         	| Contains the value to apply.			|
 | @type 				| 1    		| String	| Type of penalty Possible values: "Noches" (nights) , "Porcentaje" (percentage) ,"Importe" (price value). |
 | @paymentType				| 1    		| String	| Indicates payment type.		|

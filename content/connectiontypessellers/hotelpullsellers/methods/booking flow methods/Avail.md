@@ -64,44 +64,45 @@ is closed.
 In the request for this call it is necessary to use the object: "HotelBaseRQ". You can find the information in the section '[Common elements](/connectiontypessellers/hotelpullsellers/methods/common-elements/)'.
 
 ~~~xml
-    <AvailRQ>
-        <CancellationPolicies>false</CancellationPolicies>
-        <RoomCancellationPolicies>false</RoomCancellationPolicies>
-        <DailyPrices>false</DailyPrices>
-        <DailyRatePlans>false</DailyRatePlans>
-        <OnRequest>false</OnRequest>
-        <BusinessRules>CheaperAmount</BusinessRules>
-        <AvailDestinations> list of destinations
-            <Destination type = "CTY" code = "5"/>
-            <Destination type = "CTY" code = "15"/>
-            ....
-        </AvailDestinations>
-        <StartDate>28/01/2014</StartDate>
-        <EndDate>29/01/2014</EndDate>
-        <Currency>EUR</Currency>
-        <Nationality>ES</Nationality>
-        <Markets>
-            <Market>ES</Market>
-            <Market>EN</Market>
-            ....
-        </Markets>
-        <RoomCandidates>
-            <RoomCandidate id = "1">
-                <Paxes>
-                    <Pax age = "30" id = "1"/>
-                    <Pax age = "30" id = "2"/>
-                </Paxes>
-            </RoomCandidate>
-            <RoomCandidate id = "2">
-                <Paxes>
-                    <Pax age = "35" id = "1"/>
-                    <Pax age = "42" id = "2"/>
-                    <Pax age = "5" id = "3"/>
-                </Paxes>
-            </RoomCandidate>
-            ....
-        </RoomCandidates>
-    </AvailRQ>
+<AvailRQ>
+    <CancellationPolicies>false</CancellationPolicies>
+    <RoomCancellationPolicies>false</RoomCancellationPolicies>
+    <DailyPrices>false</DailyPrices>
+    <DailyRatePlans>false</DailyRatePlans>
+    <OnRequest>false</OnRequest>
+    <BusinessRules>CheaperAmount</BusinessRules>
+    <AvailDestinations>
+        list of destinations
+        <Destination type = "CTY" code = "5"/>
+        <Destination type = "CTY" code = "15"/>
+        ....
+    </AvailDestinations>
+    <StartDate>28/01/2014</StartDate>
+    <EndDate>29/01/2014</EndDate>
+    <Currency>EUR</Currency>
+    <Nationality>ES</Nationality>
+    <Markets>
+        <Market>ES</Market>
+        <Market>EN</Market>
+        ....
+    </Markets>
+    <RoomCandidates>
+        <RoomCandidate id = "1">
+            <Paxes>
+                <Pax age = "30" id = "1"/>
+                <Pax age = "30" id = "2"/>
+            </Paxes>
+        </RoomCandidate>
+        <RoomCandidate id = "2">
+            <Paxes>
+                <Pax age = "35" id = "1"/>
+                <Pax age = "42" id = "2"/>
+                <Pax age = "5" id = "3"/>
+            </Paxes>
+        </RoomCandidate>
+        ....
+    </RoomCandidates>
+</AvailRQ>
 ~~~
 
 
@@ -144,191 +145,182 @@ Go to [Common-Elements](/connectiontypessellers/hotelpullsellers/methods/common-
 ### AvailRS Example
 
 ~~~xml
-    <AvailRS xmlns:xsd = "http://www.w3.org/2001/XMLSchema" xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance">
-      <Hotels>
+<AvailRS xmlns:xsd = "http://www.w3.org/2001/XMLSchema" xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance">
+    <Hotels>
         <Hotel code = "10" name = "LEO">
-          <MealPlans>
-            <MealPlan code = "D">
-              <Options>
-                <Option type = "Hotel" paymentType = "MerchantPay" status = "OK">
-                  <Rooms>
-                    <Room id = "4145" roomCandidateRefId = "1" code = "DBL#STAND" description = "Doble Standard" nonRefundable = "false" numberOfUnits = "5" >
-                      <Price currency = "EUR" amount = "36.20" binding = "false" commission = "-1"/>
-                      <Fees>
-                          <Fee includedPriceOption = "true" description = "TaxAndServiceFee" mandatory = "true" refundable = "false">
-                              <Price currency = "EUR" amount = "8.11" binding = "false" commission = "-1"/>
-                              <Code>SPE</Code>
-                          </Fee>
-                      </Fees>
-                      <CancelPenalties nonRefundable = "false">
-                          <CancelPenalty>
-                              <HoursBefore>24</HoursBefore>
-                              <Penalty type = "Importe" currency = "EUR">20</Penalty>
-			                        <Deadline>01/07/2016T05:00:00Z</Deadline>
-                              <CalculatedDeadline>false</CalculatedDeadline>
-                          </CancelPenalty>
-                      </CancelPenalties>
-                      <Beds sharedBed = "false">
-                        <Bed numberOfBeds = "1" type = "Doble"/>
-                      </Beds>
-                      <Features>
-                         <Feature code = "Double with spa"/>
-                      </Features>
-                      <DailyPrices>
-                        <DailyPrice effectiveDate = "28/01/2014" expireDate = "29/01/2014">
-                          <Price
-                            currency = "EUR"
-                            amount = "36.20"
-                            binding = "false"
-                            commission = "-1"/>
-                        </DailyPrice>
-                      </DailyPrices>
-                      <DailyRatePlans>
-                        <DailyRatePlan
-                            effectiveDate = "28/01/2014"
-                            expireDate = "29/01/2014"
-                            code = "XAD"
-                            name = "Flexy Rate Only Adults"/>
-                      </DailyRatePlans>                      
-                    </Room>
-                  </Rooms>
-                  <Price currency = "EUR" amount = "36.20" binding = "false" commission = "-1"/>
-                  <Offers>
-                    <Offer code = "EBI" name = "Early booking"/>
-                  </Offers>
-                  <Fees>
-                    <Fee includedPriceOption = "true" description = "TaxAndServiceFee" mandatory ="true" refundable="false">
-                        <Price currency = "EUR" amount = "8.11" binding = "false" commission = "-1"/>
-			                  <Code>SPE</Code>
-                    </Fee>
-                  </Fees>
-                </Option>
-              </Options>
-            </MealPlan>
-            <MealPlan code = "M">
-              <Options>
-                <Option type = "Hotel" paymentType = "MerchantPay" status = "OK">
-                  <Rooms>
-                    <Room id = "4146" roomCandidateRefId = "1" code = "TWN#STAND" description = "Twin Standard" nonRefundable = "false" numberOfUnits = "5">
-                      <Price currency = "EUR" amount = "42.90" binding = "false" commission = "-1"/>
-                      <Offers>
-                        <Offer code = "EBI" name = "Early booking"/>
-                      </Offers>
-                    <Beds sharedBed = "false">
-                        <Bed numberOfBeds = "2" type = "Twin"/>
-                    </Beds>
-                    <DailyPrices>
-                        <DailyPrice effectiveDate = "28/01/2014" expireDate = "29/01/2014">
-                            <Price
-                                currency = "EUR"
-                                amount = "42.90"
-                                binding = "false"
-                                commission = "-1"/>
-                        </DailyPrice>
-                    </DailyPrices>
-                    <DailyRatePlans>
-                        <DailyRatePlan
-                            effectiveDate = "28/01/2014"
-                            expireDate = "29/01/2014"
-                            code = "XAT"
-                            name="Flexy Rate"/>
-                    </DailyRatePlans>
-                    </Room>
-                  </Rooms>
-                  <Price currency = "EUR" amount = "42.90" binding = "false" commission = "-1"/>
-                </Option>
-              </Options>
-              ...
-            </MealPlan>
-            <MealPlan code = "MP">
-              <Options>
-                <Option type = "HotelSkiPass" paymentType = "MerchantPay" status = "OK">
-                  <Rooms>
-                    <Room id = "4145" roomCandidateRefId = "1" code = "DBL#STAND" description = "Doble Standard" nonRefundable = "false">
-                      <Price currency = "EUR" amount = "636.80" binding = "false" commission = "-1"/>
-                    </Room>
-                  </Rooms>
-                  <Detail>
-                    <POIs>
-                      <POI code = "8A" Description = "Andorra">
-                        <Services>
-                          <Service type = "SkiPass" code = "F1" description = "Forfait" durationType = "Range" quantity = "0" unit = "Day">
-                            <RangeDates startDate = "28/01/2014" endDate = "29/01/2014"/>
-                          </Service>
-                        </Services>
-                      </POI>
-                    </POIs>
-                  </Detail>
-                  <Price currency = "EUR" amount = "636.80" binding = "false" commission = "-1"/>
-                  <Parameters>
-                    <Parameter key = "sesion" value = "888de014"/>
-                  </Parameters>
-                </Option>
-                <Option type = "HotelSkiPass" paymentType = "MerchantPay" status = "OK">
-                  <Rooms>
-                    <Room id = "4145" roomCandidateRefId = "1" code = "DBL#STAND" description = "Doble Standard" nonRefundable = "false">
-                      <Price currency = "EUR" amount = "636.80" binding = "false" commission = "-1"/>
-                    </Room>
-                  </Rooms>
-                  <Detail>
-                    <POIs>
-                      <POI code = "8A" Description = "Andorra">
-                        <Services>
-                          <Service type = "SkiPass" code = "F1" description = "Forfait" durationType = "Open" quantity = "5" unit = "Hour"></Service>
-                        </Services>
-                      </POI>
-                    </POIs>
-                  </Detail>
-                  <Price currency = "EUR" amount = "636.80" binding = "false" commission = "-1"/>
-                  <Parameters>
-                    <Parameter key = "sesion" value = "888de014"/>
-                  </Parameters>
-                  <RateRules>
-                    <Rules>
-                      <Rule type = "NonRefundable"/>
-		                  <Rule type = "Negotiated">
-            		        <Code>REP</Code>
-            		        <Description>REPSOL</Description>
-        	            </Rule>
-                    </Rules>
-                  </RateRules>
-                </Option>
-                <Option type = "HotelSkiPass" paymentType = "MerchantPay" status = "OK">
-                  <Rooms>
-                    <Room id = "4145" roomCandidateRefId = "1" code = "DBL#STAND" description = "Doble Standard" nonRefundable = "false">
-                      <Price currency = "EUR" amount = "636.80" binding = "false" commission = "-1"/>
-                    </Room>
-                  </Rooms>
-                  <Detail>
-                    <POIs>
-                      <POI code = "8A" Description = "Andorra">
-                        <Services>
-                          <Service type = "SkiPass" code = "F1" description = "Forfait" durationType = "Open" quantity = "2" unit = "Day"></Service>
-                        </Services>
-                      </POI>
-                    </POIs>
-                  </Detail>
-                  <Price currency = "EUR" amount = "636.80" binding = "false" commission = "-1"/>
-                  <Parameters>
-                    <Parameter key = "sesion" value = "888de014"/>
-                  </Parameters>
-                  <CancelPenalties nonRefundable = "false">
-                    <CancelPenalty>
-                      <HoursBefore>24</HoursBefore>
-                      <Penalty type = "Importe" currency = "EUR">20</Penalty>
-		                  <Deadline>01/07/2016T05:00:00Z</Deadline>
-                      <CalculatedDeadline>false</CalculatedDeadline>
-                    </CancelPenalty>
-                  </CancelPenalties>
-                </Option>
-              </Options>
-            </MealPlan>
-            ...
-          </MealPlans>
+            <MealPlans>
+                <MealPlan code = "D">
+                    <Options>
+                        <Option type = "Hotel" paymentType = "MerchantPay" status = "OK">
+                            <Rooms>
+                                <Room id = "4145" roomCandidateRefId = "1" code = "DBL#STAND" description = "Doble Standard" nonRefundable = "false" numberOfUnits = "5">
+                                    <Price currency = "EUR" amount = "36.20" binding = "false" commission = "-1"/>
+                                    <Fees>
+                                        <Fee includedPriceOption = "true" description = "TaxAndServiceFee" mandatory = "true" refundable = "false">
+                                            <Price currency = "EUR" amount = "8.11" binding = "false" commission = "-1"/>
+                                            <Code>SPE</Code>
+                                        </Fee>
+                                    </Fees>
+                                    <CancelPenalties nonRefundable = "false">
+                                        <CancelPenalty>
+                                            <HoursBefore>24</HoursBefore>
+                                            <Penalty type = "Importe" currency = "EUR">20</Penalty>
+                                            <Deadline>01/07/2016T05:00:00Z</Deadline>
+                                            <CalculatedDeadline>false</CalculatedDeadline>
+                                        </CancelPenalty>
+                                    </CancelPenalties>
+                                    <Beds sharedBed = "false">
+                                        <Bed numberOfBeds = "1" type = "Doble"/>
+                                    </Beds>
+                                    <Features>
+                                        <Feature code = "Double with spa"/>
+                                    </Features>
+                                    <DailyPrices>
+                                        <DailyPrice effectiveDate = "28/01/2014" expireDate = "29/01/2014">
+                                            <Price currency = "EUR" amount = "36.20" binding = "false" commission = "-1"/>
+                                        </DailyPrice>
+                                    </DailyPrices>
+                                    <DailyRatePlans>
+                                        <DailyRatePlan effectiveDate = "28/01/2014" expireDate = "29/01/2014" code = "XAD" name = "Flexy Rate Only Adults"/>
+                                    </DailyRatePlans>
+                                </Room>
+                            </Rooms>
+                            <Price currency = "EUR" amount = "36.20" binding = "false" commission = "-1"/>
+                            <Offers>
+                                <Offer code = "EBI" name = "Early booking"/>
+                            </Offers>
+                            <Fees>
+                                <Fee includedPriceOption = "true" description = "TaxAndServiceFee" mandatory = "true" refundable = "false">
+                                    <Price currency = "EUR" amount = "8.11" binding = "false" commission = "-1"/>
+                                    <Code>SPE</Code>
+                                </Fee>
+                            </Fees>
+                        </Option>
+                    </Options>
+                </MealPlan>
+                <MealPlan code = "M">
+                    <Options>
+                        <Option type = "Hotel" paymentType = "MerchantPay" status = "OK">
+                            <Rooms>
+                                <Room id = "4146" roomCandidateRefId = "1" code = "TWN#STAND" description = "Twin Standard" nonRefundable = "false" numberOfUnits = "5">
+                                    <Price currency = "EUR" amount = "42.90" binding = "false" commission = "-1"/>
+                                    <Offers>
+                                        <Offer code = "EBI" name = "Early booking"/>
+                                    </Offers>
+                                    <Beds sharedBed = "false">
+                                        <Bed numberOfBeds = "2" type = "Twin"/>
+                                    </Beds>
+                                    <DailyPrices>
+                                        <DailyPrice effectiveDate = "28/01/2014" expireDate = "29/01/2014">
+                                            <Price currency = "EUR" amount = "42.90" binding = "false" commission = "-1"/>
+                                        </DailyPrice>
+                                    </DailyPrices>
+                                    <DailyRatePlans>
+                                        <DailyRatePlan effectiveDate = "28/01/2014" expireDate = "29/01/2014" code = "XAT" name = "Flexy Rate"/>
+                                    </DailyRatePlans>
+                                </Room>
+                            </Rooms>
+                            <Price currency = "EUR" amount = "42.90" binding = "false" commission = "-1"/>
+                        </Option>
+                    </Options>
+                    ...
+                </MealPlan>
+                <MealPlan code = "MP">
+                    <Options>
+                        <Option type = "HotelSkiPass" paymentType = "MerchantPay" status = "OK">
+                            <Rooms>
+                                <Room id = "4145" roomCandidateRefId = "1" code = "DBL#STAND" description = "Doble Standard" nonRefundable = "false">
+                                    <Price currency = "EUR" amount = "636.80" binding = "false" commission = "-1"/>
+                                </Room>
+                            </Rooms>
+                            <Detail>
+                                <POIs>
+                                    <POI code = "8A" Description = "Andorra">
+                                        <Services>
+                                            <Service type = "SkiPass" code = "F1" description = "Forfait" durationType = "Range" quantity = "0" unit = "Day">
+                                                <RangeDates startDate = "28/01/2014" endDate = "29/01/2014"/>
+                                            </Service>
+                                        </Services>
+                                    </POI>
+                                </POIs>
+                            </Detail>
+                            <Price currency = "EUR" amount = "636.80" binding = "false" commission = "-1"/>
+                            <Parameters>
+                                <Parameter key = "sesion" value = "888de014"/>
+                            </Parameters>
+                        </Option>
+                        <Option type = "HotelSkiPass" paymentType = "MerchantPay" status = "OK">
+                            <Rooms>
+                                <Room id = "4145" roomCandidateRefId = "1" code = "DBL#STAND" description = "Doble Standard" nonRefundable = "false">
+                                    <Price currency = "EUR" amount = "636.80" binding = "false" commission = "-1"/>
+                                </Room>
+                            </Rooms>
+                            <Detail>
+                                <POIs>
+                                    <POI code = "8A" Description = "Andorra">
+                                        <Services>
+                                            <Service type = "SkiPass" code = "F1" description = "Forfait" durationType = "Open" quantity = "5" unit = "Hour"></Service>
+                                        </Services>
+                                    </POI>
+                                </POIs>
+                            </Detail>
+                            <Price currency = "EUR" amount = "636.80" binding = "false" commission = "-1"/>
+                            <Parameters>
+                                <Parameter key = "sesion" value = "888de014"/>
+                            </Parameters>
+                            <RateRules>
+                                <Rules>
+                                    <Rule type = "NonRefundable"/>
+                                    <Rule type = "Negociated">
+                                        <Rates>
+                                            <Rate Code = "BAR">
+                                                <Description>Bar descr</Description>
+                                                <Restrictions>
+                                                    <Restriction type = "Company" Code = "REP">Repsol</Restriction>
+                                                    <Restriction type = "Company" Code = "PEP">Cedipsa</Restriction>
+                                                </Restrictions>
+                                            </Rate>
+                                        </Rates>
+                                    </Rule>
+                                </Rules>
+                            </RateRules>
+                        </Option>
+                        <Option type = "HotelSkiPass" paymentType = "MerchantPay" status = "OK">
+                            <Rooms>
+                                <Room id = "4145" roomCandidateRefId = "1" code = "DBL#STAND" description = "Doble Standard" nonRefundable = "false">
+                                    <Price currency = "EUR" amount = "636.80" binding = "false" commission = "-1"/>
+                                </Room>
+                            </Rooms>
+                            <Detail>
+                                <POIs>
+                                    <POI code = "8A" Description = "Andorra">
+                                        <Services>
+                                            <Service type = "SkiPass" code = "F1" description = "Forfait" durationType = "Open" quantity = "2" unit = "Day"></Service>
+                                        </Services>
+                                    </POI>
+                                </POIs>
+                            </Detail>
+                            <Price currency = "EUR" amount = "636.80" binding = "false" commission = "-1"/>
+                            <Parameters>
+                                <Parameter key = "sesion" value = "888de014"/>
+                            </Parameters>
+                            <CancelPenalties nonRefundable = "false">
+                                <CancelPenalty>
+                                    <HoursBefore>24</HoursBefore>
+                                    <Penalty type = "Importe" currency = "EUR">20</Penalty>
+                                    <Deadline>01/07/2016T05:00:00Z</Deadline>
+                                    <CalculatedDeadline>false</CalculatedDeadline>
+                                </CancelPenalty>
+                            </CancelPenalties>
+                        </Option>
+                    </Options>
+                </MealPlan>
+                ...
+            </MealPlans>
         </Hotel>
         ...
-      </Hotels>
-    </AvailRS>
+    </Hotels>
+</AvailRS>
 ~~~
 
 
@@ -341,131 +333,137 @@ Go to [Common-Elements](/connectiontypessellers/hotelpullsellers/methods/common-
 | AvailRS/Hotels/Hotel 			| 0..n 		| 		| Root node.							|
 | @code 				| 1 		| String 	| Hotel code.							|
 | @name 				| 0..1 		| String 	| Hotel name.							|
-| MealPlans 				| 1 		| 		| Retrieves a list of available mealplans for this hotel.					|
-| MealPlans/MealPlan 			| 1..n 		| 		| List of mealplan types.				|
+| MealPlans /				| 1 		| 		| Retrieves a list of available mealplans for this hotel.					|
+| MealPlans /MealPlan /			| 1..n 		| 		| List of mealplan types.				|
 | @code 				| 1 		| String 	| MealPlan code.						|
-| MealPlans/MealPlan/Options 		| 1 		| 		| List of options					|
-| MealPlans/MealPlan /Options/Option 	| 1..n 		| 		| Detail of option.						|
-| @type 				| 1 		| String 	| Indicates option type [Lists of Data](/connectiontypessellers/hotelpullsellers/listsdata/#option-type)	|
-| @paymentType 				| 1 		| String 	| Indicates payment type (See full type list at [Lists of Data](/connectiontypessellers/hotelpullsellers/listsdata/#payment-types)) .	|
+| MealPlans /MealPlan /Options /		| 1 		| 		| List of options					|
+| MealPlans /MealPlan /Options /Option 	| 1..n 		| 		| Detail of option.						|
+| @type 				| 1 		| String 	| Indicates option type [Lists of Data](/connectiontypessellers/hotelpullsellers/listsdata/#Option-Type)	|
+| @paymentType 				| 1 		| String 	| Indicates payment type (See full type list at [Lists of Data](/connectiontypessellers/hotelpullsellers/listsdata/#Payment-Types)) .	|
 | @status 				| 1 		| String 	| Status option (OK = available, RQ = on request).		|
-| MealPlans/MealPlan/Options /Option/Parameters | 0..1 	| 		| Additional parameters that must be reported on the ValuationRQ. Parameters, if this option is required.	  |
-| MealPlans/MealPlan/Options /Option/Parameters/Parameter | 0..n | 	| Additional parameter requiring integration.		|
+| MealPlans /MealPlan/Options /Option/Parameters / | 0..1 	| 		| Additional parameters that must be reported on the ValuationRQ. Parameters, if this option is required.	  |
+| MealPlans /MealPlan/Options /Option/Parameters /Parameter | 0..n | 	| Additional parameter requiring integration.		|
 | @key 					| 1 		| String 	| Contains the keyword/Id to identify a parameter.		|
 | @value 				| 1 		| String 	| Contains  parameter value.				|
-| MealPlans/MealPlan/Options /Option/CancelPenalties | 1          |          | Cancellation policy details. (see [MetaData](/connectiontypessellers/hotelpullsellers/methods/staticcontent/metadata/) in order to verify if a supplier implements it).|
+| MealPlans /MealPlan/Options /Option/CancelPenalties / | 1          |          | Cancellation policy details. (see [MetaData](/connectiontypessellers/hotelpullsellers/methods/staticcontent/metadata/) in order to verify if a supplier implements it).|
 | @nonRefundable                            | 1          | Boolean  | Indicate if this option is nonRefundable (true or false). |
-| MealPlans/MealPlan/Options /Option/CancelPenalties/CancelPenalty             | 0..n       |          | Listing cancellation penalties. |
-| MealPlans/MealPlan/Options /Option/CancelPenalties/CancelPenalty/HoursBefore | 1          | String   | Number of hours prior to checkin date in which this Cancellation policy applies. |
-| MealPlans/MealPlan/Options /Option/CancelPenalties/CancelPenalty/Deadline    | 1          | String   | Date on UTC Standard TimeZone in which this Cancellation policy applies (ISO 8601 e.g: 01/07/2016T05:00:00Z) |
-| MealPlans/MealPlan/Options /Option/CancelPenalties/CancelPenalty/CalculatedDeadline | 1          | Boolean  | Indicate if the Deadline is returned by the supplier or it's been calculated by TravelGate. true = has been calculated by XTG, false = bypass of supplier data without calculation |
-| MealPlans/MealPlan/Options /Option/CancelPenalties/CancelPenalty/Penalty     | 1          |          | Contains the value to apply. |
-| @type					    | 1          | String   | Type of possible penalty values: “Noches” (nights) , “Porcentaje” (percentage) ,”Importe” (price value). |
+| MealPlans /MealPlan/Options /Option/CancelPenalties /CancelPenalty             | 0..n       |          | Listing cancellation penalties. |
+| MealPlans /MealPlan/Options /Option/CancelPenalties /CancelPenalty/HoursBefore | 1          | String   | Number of hours prior to checkin date in which this Cancellation policy applies. |
+| MealPlans /MealPlan/Options /Option/CancelPenalties /CancelPenalty/Deadline    | 1          | String   | Date on UTC Standard TimeZone in which this Cancellation policy applies (ISO 8601 e.g: 01/07/2016T05:00:00Z) |
+| MealPlans /MealPlan/Options /Option/CancelPenalties /CancelPenalty/CalculatedDeadline | 1          | Boolean  |  Indicate if the Deadline is returned by the supplier or it's been calculated by TravelGate -> *true* = has been calculated by XTG / *false* = bypass of supplier data without calculation |
+| MealPlans /MealPlan/Options /Option/CancelPenalties /CancelPenalty/Penalty     | 1          |          | Contains the value to apply. |
+| @type					    | 1          | String   | Type of possible penalty values: "Noches" (nights) , "Porcentaje" (percentage) , "Importe" (price value). |
 | @currency				    | 1          | String   | Currency code. |
-| @paymentType                            | 1          | String   | Indicates payment type of penalty (See full type list at [Lists of Data](/connectiontypessellers/hotelpullsellers/listsdata/#payment-types)) . |
-| MealPlans/MealPlan/Options /Option/RateRules | 0..1 	| 		| Option restrictions.					|
-| MealPlans/MealPlan/Options /Option/RateRules/Rules | 0..n | 		| Rules.							|
-| MealPlans/MealPlan/Options /Option/RateRules/Rules /Rule | 1 | 	| Rule.								|
-| @type 				| 1 		| String 	| Possible values (NonRefundable, Older55, Package,...). See full list at [Lists of Data](/connectiontypessellers/hotelpullsellers/listsdata/#rate-conditions)	|
-| MealPlans/MealPlan/Options /Option/RateRules/Rules /Rule/Code | 1 | String	| Contains the Rate Rule code in case it has one. |
-| MealPlans/MealPlan/Options /Option/RateRules/Rules /Rule/Description | 1 | String	| Contains the Rate Rule description.	|
-| MealPlans/MealPlan/Options /Option/Rooms | 1 		| 		| Rooms in this option (room list).				|
-| MealPlans/MealPlan/Options /Option/Rooms/Room | 1..n 	| 		| Room details.						|
+| @paymentType                            | 1          | String   | Indicates payment type of penalty (See full type list at [Lists of Data](/connectiontypessellers/hotelpullsellers/listsdata/#Payment-Types)) . |
+| MealPlans /MealPlan/Options /Option/RateRules / | 0..1 	| 		| Option rate rules.					|
+| MealPlans /MealPlan/Options /Option/RateRules /Rules | 0..n | 		| Rules.							|
+| MealPlans /MealPlan/Options /Option/RateRules /Rules /Rule | 1 | 	| Rule.								|
+| @type 				| 1 		| String 	| Possible values: NonRefundable, Older55, Package, Negociated.. See full list at [Lists of Data](/connectiontypessellers/hotelpullsellers/listsdata/#Rate-Conditions)	|
+| MealPlans /MealPlan/Options /Option/RateRules /Rules /Rule/Rates / | 0..n | 		| Rates.							|
+| MealPlans /MealPlan/Options /Option/RateRules /Rules /Rule/Rates /Rate | 1..n | 		| Rate.							|
+| @code 				| 1 		| String 	| Contains the rate rule code.	|
+| MealPlans /MealPlan/Options /Option/RateRules /Rules /Rule/Rates /Rate/Description | 1 | String	| Contains the rate rule description.	|
+| MealPlans /MealPlan/Options /Option/RateRules /Rules /Rule/Restrictions / | 0..n | 		| Restrictions for the rate rule.							|
+| MealPlans /MealPlan/Options /Option/RateRules /Rules /Rule/Restrictions /Restriction | 1..n | 		| Restriction for this rate rule.							|
+| @type 				| 1 		| Enum 	| This restriction affects: 1 -> Company, 2 -> Market, 3 -> Others.. See the list at [Lists of Data](/connectiontypessellers/hotelpullsellers/listsdata/#Restriction-Type |
+| @code 				| 1 		| String 	| Contains the restriction code.	|
+| MealPlans /MealPlan/Options /Option/Rooms / | 1 		| 		| Rooms in this option (room list).				|
+| MealPlans /MealPlan/Options /Option/Rooms /Room | 1..n 	| 		| Room details.						|
 | @id 					| 1 		| String 	| Room ID.					|
 | @roomCandidateRefId 			| 1 		| Integer 	| Room candidate ID.					|
 | @code 				| 1 		| String 	| Room code has to be unique to identify a specific room type. If the RoomList Method is implemented, you can find the description of the room type in the RoomList. 							|
 | @description 				| 0..1 		| String 	| Room description. Mandatory if the supplier doesn't allow RoomList Method. If the supplier implements RoomList Method, this field could be empty.						|
 | @nonRefundable 			| 0..1 		| String 	| Identifies if the room is refundable or not.			|
 | @numberOfUnits 			| 0..1 		| Integer 	| Number of rooms available with the same type (see [MetaData](/connectiontypessellers/hotelpullsellers/methods/staticcontent/metadata/)).	|
-| MealPlans/MealPlan/Options /Option/Rooms/Room/Offers | 0..1 	| 		| The supplier returns in response which offer is applicable for each room (see [MetaData](/connectiontypessellers/hotelpullsellers/methods/staticcontent/metadata/) in order to verify if a supplier implements it).	|
-| MealPlans/MealPlan/Options /Option/Rooms/Room/Offers/Offer | 1..n | 		| List of offers.						|
+| MealPlans /MealPlan/Options /Option/Rooms /Room/Offers | 0..1 	| 		| The supplier returns in response which offer is applicable for each room (see [MetaData](/connectiontypessellers/hotelpullsellers/methods/staticcontent/metadata/) in order to verify if a supplier implements it).	|
+| MealPlans /MealPlan/Options /Option/Rooms /Room/Offers /Offer | 1..n | 		| List of offers.						|
 | @code 				| 1 		| String 	| Contains the code to identify a offer.			|
 | @name 				| 1 		| String 	| Contains the name of the offer.				|
-| MealPlans/MealPlan/Options /Option/Rooms/Room/Beds | 0..1 | 		| Detail of beds (see [MetaData](/connectiontypessellers/hotelpullsellers/methods/staticcontent/metadata/) in order to verify if a supplier implements it).						|
+| MealPlans /MealPlan/Options /Option/Rooms /Room/Beds | 0..1 | 		| Detail of beds (see [MetaData](/connectiontypessellers/hotelpullsellers/methods/staticcontent/metadata/) in order to verify if a supplier implements it).						|
 | @sharedBed 				| 0..1 		| Boolean 	| Specifies if the beds in the room are shared.			|
-| MealPlans/MealPlan/Options /Option/Rooms/Room /Beds/Bed | 0..n | 	| Identifies types of beds.					|
+| MealPlans /MealPlan/Options /Option/Rooms /Room /Beds/Bed | 0..n | 	| Identifies types of beds.					|
 | @numberOfBeds 			| 0..1 		| String 	| Indicates number of beds in the room.				|
 | @type 				| 0..1 		| String 	| Indicates the type of bed.					|
-| MealPlans/MealPlan/Options /Option/Rooms/Room /Features | 0..1 | 	| Features of this room (features list).	| 
-| MealPlans/MealPlan/Options /Option/Rooms/Room /Features/Feature | 1..n | 	| Detail of feature	| 
+| MealPlans /MealPlan/Options /Option/Rooms /Room /Features | 0..1 | 	| Features of this room (features list).	| 
+| MealPlans /MealPlan/Options /Option/Rooms /Room /Features/Feature | 1..n | 	| Detail of feature	| 
 |@code   | 1 | String| Feature code or text|
-| MealPlans/MealPlan/Options /Option/Rooms/Room /DailyPrices | 0..1 | 	| Specifies daily price, as long as the supplier returns it in this method (see [MetaData](/connectiontypessellers/hotelpullsellers/methods/staticcontent/metadata/) in order to verify if a supplier implements it).	| 
-| MealPlans/MealPlan/Options /Option/Rooms/Room /DailyPrices/DailyPrice | 1..n | | Specifies the price for each day.			|
+| MealPlans /MealPlan/Options /Option/Rooms /Room /DailyPrices | 0..1 | 	| Specifies daily price, as long as the supplier returns it in this method (see [MetaData](/connectiontypessellers/hotelpullsellers/methods/staticcontent/metadata/) in order to verify if a supplier implements it).	| 
+| MealPlans /MealPlan/Options /Option/Rooms /Room /DailyPrices/DailyPrice | 1..n | | Specifies the price for each day.			|
 | @effectiveDate 			| 1 		| String 	| Start date in which the price becomes effective. Format dd/MM/yyyy			|
 | @expireDate 				| 1 		| String 	| Expiry date of price.	Format dd/MM/yyyy						|
-| MealPlans/MealPlan/Options /Option/Rooms/Room /DailyPrices/DailyPrice /Price| 1 | | Day price.					|
+| MealPlans /MealPlan/Options /Option/Rooms /Room /DailyPrices/DailyPrice /Price| 1 | | Day price.					|
 | @currency 				| 1 		| String 	| Currency code.						|
 | @amount 				| 1 		| Decimal 	| Day Amount.							|
 | @binding 				| 1 		| Boolean 	| Identifies if the price is binding (When true, the sale price returned **must** not be less than the price informed. |
 | @commission 				| 1 		| Decimal 	| Commission: -1 = not specified (information available in  contract with the supplier ), 0 = net price, X = % of the commission applied to the amount. |
-| MealPlans/MealPlan/Options /Option/Rooms/Room /DailyRatePlans | 0..1 | | Specifies the daily rate, as long as the supplier returns it in this method (see [MetaData](/connectiontypessellers/hotelpullsellers/methods/staticcontent/metadata/) in order to verify if a supplier implements it).  |
-| MealPlans/MealPlan/Options /Option/Rooms/Room /DailyRatePlans/DailyRatePlan | 1..n | | Specifies the rates for each day.		|
+| MealPlans /MealPlan/Options /Option/Rooms /Room /DailyRatePlans | 0..1 | | Specifies the daily rate, as long as the supplier returns it in this method (see [MetaData](/connectiontypessellers/hotelpullsellers/methods/staticcontent/metadata/) in order to verify if a supplier implements it).  |
+| MealPlans /MealPlan/Options /Option/Rooms /Room /DailyRatePlans/DailyRatePlan | 1..n | | Specifies the rates for each day.		|
 | @effectiveDate 			| 1 		| String 	| Start date in which the rate becomes effective. Format dd/MM/yyyy			|
 | @expireDate 				| 1 		| String 	| Expirty date of rate. Format dd/MM/yyyy				|
 | @code 				| 1 		| String 	| Indicates the supplier's rate code. This code specifies the rate applied to those days.	|
 | @name 				| 0		| String 	| Indicates the supplier's rate name.	|
-| MealPlans/MealPlan/Options /Option/Rooms/Room /Price | 1 | 		| Room price.							|
+| MealPlans /MealPlan/Options /Option/Rooms /Room /Price | 1 | 		| Room price.							|
 | @currency 				| 1 		| String 	| Currency code.						|
 | @amount 				| 1 		| Decimal 	| Room Amount.							|
 | @binding 				| 1 		| Boolean 	| Identifies if is the price is binding (When true the sale price returned **must** not be less than the price informed).|
 | @commission 				| 1 		| Decimal 	| Commission: -1 = not specified (information available in  contract with the supplier ), 0 = net price, X = % of the commission applied to the amount.  |
-| MealPlans/MealPlan/Options /Option/Rooms/Room/Fees					    | 0..1       | 	    | Contains a list of fees. |
-| MealPlans/MealPlan/Options /Option/Rooms/Room/Fees/Fee				    | 1..n       |      | Contains details of the fee. |
+| MealPlans /MealPlan/Options /Option/Rooms /Room/Fees					    | 0..1       | 	    | Contains a list of fees. |
+| MealPlans /MealPlan/Options /Option/Rooms /Room/Fees /Fee				    | 1..n       |      | Contains details of the fee. |
 | @includedPriceOption			    | 1		 | Boolean  | Indicates if the fee is included or not in the final price. |
 | @description				    | 1          | String   | Remarks regarding fee. |
 | @mandatory 				    | 1          | Boolean   | If the fee is obligatory, depending on the includedPriceOption to know if it is paid at the time of booking or at the hotel. In case it is false, it could be a fee such as "cleaning" that the consumer could hire if he wanted. |
 | @refundable 				    | 1          | Boolean   | This field will serve to know if the rate to be paid is returned, for example when it is a deposit type that is returned once the stay ends. |
-| MealPlans/MealPlan/Options /Option/Rooms/Room/Fees/Fee/Price			    | 1          |          | Contains details of price. |
+| MealPlans /MealPlan/Options /Option/Rooms /Room/Fees /Fee/Price			    | 1          |          | Contains details of price. |
 | @currency 				    | 1          | String   | Currency code. |
 | @amount 				    | 1          | Decimal  | Fee Amount. |
 | @binding				    | 1          | Boolean  | Identifies if is the price is binding (When true the sale price returned must not be less than the price informed. |
 | @commission				    | 1          | Decimal  | Commission: -1 = not specified (indicated in contract with supplier), 0 = net price, X = % of the commission applied to the amount. |
-| MealPlans/MealPlan/Options /Option/Rooms/Room/Fees/Fee/Code			    | 1          |   String       | Specifies the fee code in case it has one. |
-| MealPlans/MealPlan/Options /Option/Rooms/Room/CancelPenalties | 1          |          | Cancellation policy details. (see [MetaData](/connectiontypessellers/hotelpullsellers/methods/staticcontent/metadata/) in order to verify if a supplier implements it). **Attention:**	When implementing policies at the room level, it is mandatory to add them at the option level. (If there is more than one room it is necessary to unify the policies to show them by option|
+| MealPlans /MealPlan/Options /Option/Rooms /Room/Fees /Fee/Code			    | 1          |   String       | Specifies the fee code in case it has one. |
+| MealPlans /MealPlan/Options /Option/Rooms /Room/CancelPenalties | 1          |          | Cancellation policy details. (see [MetaData](/connectiontypessellers/hotelpullsellers/methods/staticcontent/metadata/) in order to verify if a supplier implements it). **Attention:**	When implementing policies at the room level, it is mandatory to add them at the option level. (If there is more than one room it is necessary to unify the policies to show them by option|
 | @nonRefundable                            | 1          | Boolean  | Indicate if this option is nonRefundable (true or false). |
-| MealPlans/MealPlan/Options /Option/Rooms/Room/CancelPenalties/CancelPenalty             | 0..n       |          | Listing cancellation penalties. |
-| MealPlans/MealPlan/Options /Option/Rooms/Room/CancelPenalties/CancelPenalty/HoursBefore | 1          | String   | Number of hours prior to checkin date in which this Cancellation policy applies. |
-| MealPlans/MealPlan/Options /Option/Rooms/Room/CancelPenalties/CancelPenalty/Deadline    | 1          | String   | Date on UTC Standard TimeZone in which this Cancellation policy applies (ISO 8601 e.g: 01/07/2016T05:00:00Z) |
-| MealPlans/MealPlan/Options /Option/Rooms/Room/CancelPenalties/CancelPenalty/CalculatedDeadline | 1          | Boolean  | Indicate if the Deadline is returned by the supplier or it's been calculated by TravelGate. true = has been calculated by XTG, false = bypass of supplier data without calculation |
-| MealPlans/MealPlan/Options /Option/Rooms/Room/CancelPenalties/CancelPenalty/Penalty     | 1          |          | Contains the value to apply. |
-| @type					    | 1          | String   | Type of possible penalty values: “Noches” (nights) , “Porcentaje” (percentage) ,”Importe” (price value). |
+| MealPlans /MealPlan/Options /Option/Rooms /Room/CancelPenalties/CancelPenalty             | 0..n       |          | Listing cancellation penalties. |
+| MealPlans /MealPlan/Options /Option/Rooms /Room/CancelPenalties/CancelPenalty/HoursBefore | 1          | String   | Number of hours prior to checkin date in which this Cancellation policy applies. |
+| MealPlans /MealPlan/Options /Option/Rooms /Room/CancelPenalties/CancelPenalty/Deadline    | 1          | String   | Date on UTC Standard TimeZone in which this Cancellation policy applies (ISO 8601 e.g: 01/07/2016T05:00:00Z) |
+| MealPlans /MealPlan/Options /Option/Rooms /Room/CancelPenalties/CancelPenalty/CalculatedDeadline | 1          | Boolean  |  Indicate if the Deadline is returned by the supplier or it's been calculated by TravelGate -> *true* = has been calculated by XTG / *false* = bypass of supplier data without calculation |
+| MealPlans /MealPlan/Options /Option/Rooms /Room/CancelPenalties/CancelPenalty/Penalty     | 1          |          | Contains the value to apply. |
+| @type					    | 1          | String   | Type of possible penalty values: "Noches" (nights) , "Porcentaje" (percentage) , "Importe" (price value). |
 | @currency				    | 1          | String   | Currency code. |
-| @paymentType                            | 1          | String   | Indicates payment type of penalty (See full type list at [Lists of Data](/connectiontypessellers/hotelpullsellers/listsdata/#payment-types)) . |
-| MealPlans/MealPlan/Options /Option/Price | 1 		| 		| Option price ( it is the total price of option).		|
+| @paymentType                            | 1          | String   | Indicates payment type of penalty (See full type list at [Lists of Data](/connectiontypessellers/hotelpullsellers/listsdata/#Payment-Types)) . |
+| MealPlans /MealPlan/Options /Option/Price | 1 		| 		| Option price ( it is the total price of option).		|
 | @currency 				| 1 		| String 	| Currency code.						|
 | @amount 				| 1 		| Decimal 	| Option Amount.						|
 | @binding 				| 1 		| Boolean 	| Identifies if is the price is binding (When true the sale price returned **must** not be less than the price informed.|
 | @commission 				| 1 		| Decimal 	| Commission:  -1 = not specified (information available in  contract with the supplier ), 0 = net price, X = % of the commission applied to the amount.	|
-| MealPlans/MealPlan/Options /Option/Detail | 0..1 	| 		| Detail of option (if the option is different from the type\<\> Hotel and see [MetaData](/connectiontypessellers/hotelpullsellers/methods/staticcontent/metadata/) in order to verify if a supplier implements it).  |
-| MealPlans/MealPlan/Options /Option/Detail/POIs | 1 	| 		| Points of interest.						|
-| MealPlans/MealPlan/Options /Option/Detail/POIs/POI | 1..n | 		| Point of interest.						|
+| MealPlans /MealPlan/Options /Option/Detail | 0..1 	| 		| Detail of option (if the option is different from the type\<\> Hotel and see [MetaData](/connectiontypessellers/hotelpullsellers/methods/staticcontent/metadata/) in order to verify if a supplier implements it).  |
+| MealPlans /MealPlan/Options /Option/Detail/POIs / | 1 	| 		| Points of interest.						|
+| MealPlans /MealPlan/Options /Option/Detail/POIs /POI | 1..n | 		| Point of interest.						|
 | @code 				| 1 		| String 	| POI code.							|
 | @description 				| 1 		| String 	| POI description.						|
-| MealPlans/MealPlan/Options /Option/Detail/POIs/POI /Services | 1 | 	| Services containing this POI.				|
-| MealPlans/MealPlan/Options /Option/Detail/POIs/POI	/Services/Service | 1..n | | Service detail.					|
+| MealPlans /MealPlan/Options /Option/Detail/POIs /POI /Services / | 1 | 	| Services containing this POI.				|
+| MealPlans /MealPlan/Options /Option/Detail/POIs /POI	/Services /Service | 1..n | | Service detail.					|
 | @type 				| 1 		| String 	| Service type (SkiPass, Lessons, Meals, Equipment, Ticket, Transfers or Gala).	|
 | @code 				| 1 		| String 	| Service code.							|
 | @description 				| 1 		| String 	| Service description.						|
 | @durationType 			| 1 		| String 	|  Date of service. If durationType = Range, then date range is set and the element "RangeDates" is returned. If durationType = Open, not restricted by date. Elements "quantity" and "unit" are returned to specify type and quantity.|
 | @quantity 				| 1 		| Integer 	| Indicates the quantity of field in the element "unit".		|
 | @unit 				| 0..1 		| String 	| Day or Hour.							|
-| MealPlans/MealPlan/Options /Option/Detail/POIs/POI /Services/Service/RangeDates| 0..1 | | Service date range (Only specified if durationType=Range).	|
+| MealPlans /MealPlan/Options /Option/Detail/POIs /POI /Services /Service/RangeDates| 0..1 | | Service date range (Only specified if durationType=Range).	|
 | @startDate 				| 1 		| String 	| Start date of service. Format dd/MM/yyyy						|
 | @endDate 				| 1 		| String 	| End date of service. Format dd/MM/yyyy							|
-| MealPlans/MealPlan/Options /Option/Remarks | 0..1 	| 		| List of remarks (see [MetaData](/connectiontypessellers/hotelpullsellers/methods/staticcontent/metadata/) in order to verify if a supplier implements it).						|
-| MealPlans/MealPlan/Options /Option/Remarks/Remark | 1..n | 		| Remark.							|
-| MealPlans/MealPlan/Options /Option/Offers | 0..1 	| 		| The supplier returns in response which offer is applicable for each option (see [MetaData](/connectiontypessellers/hotelpullsellers/methods/staticcontent/metadata/) in order to verify if a supplier implements it).	|
-| MealPlans/MealPlan/Options /Option/Offers/Offer | 1..n | 		| List of offers.						|
+| MealPlans /MealPlan/Options /Option/Remarks / | 0..1 	| 		| List of remarks (see [MetaData](/connectiontypessellers/hotelpullsellers/methods/staticcontent/metadata/) in order to verify if a supplier implements it).						|
+| MealPlans /MealPlan/Options /Option/Remarks /Remark | 1..n | 		| Remark.							|
+| MealPlans /MealPlan/Options /Option/Offers / | 0..1 	| 		| The supplier returns in response which offer is applicable for each option (see [MetaData](/connectiontypessellers/hotelpullsellers/methods/staticcontent/metadata/) in order to verify if a supplier implements it).	|
+| MealPlans /MealPlan/Options /Option/Offers /Offer | 1..n | 		| List of offers.						|
 | @code 				| 1 		| String 	| Contains the code to identify a offer.			|
 | @name 				| 1 		| String 	| Contains the name of the offer.				|
-| MealPlans/MealPlan/Options /Option/Fees					    | 0..1       | 	    | Contains a list of fees. |
-| MealPlans/MealPlan/Options /Option/Fees/Fee				    | 1..n       |      | Contains details of the fee. |
+| MealPlans /MealPlan/Options /Option/Fees /					    | 0..1       | 	    | Contains a list of fees. |
+| MealPlans /MealPlan/Options /Option/Fees /Fee				    | 1..n       |      | Contains details of the fee. |
 | @includedPriceOption			    | 1		 | Boolean  | Indicates if the fee is included or not in the final price. |
 | @description				    | 1          | String   | Remarks regarding fee. |
 | @mandatory 				    | 1          | Boolean   | If the fee is obligatory, depending on the includedPriceOption to know if it is paid at the time of booking or at the hotel. In case it is false, it could be a fee such as "cleaning" that the consumer could hire if he wanted. |
 | @refundable 				    | 1          | Boolean   | This field will serve to know if the rate to be paid is returned, for example when it is a deposit type that is returned once the stay ends. |
-| MealPlans/MealPlan/Options /Option/Fees/Fee/Price			    | 1          |          | Contains details of price. |
-| MealPlans/MealPlan/Options /Option/Fees/Fee/Code			    | 1          |   String       | Specifies the fee code in case it has one. |
+| MealPlans /MealPlan/Options /Option/Fees /Fee/Price			    | 1          |          | Contains details of price. |
+| MealPlans /MealPlan/Options /Option/Fees /Fee/Code			    | 1          |   String       | Specifies the fee code in case it has one. |
 | @currency 				    | 1          | String   | Currency code. |
 | @amount 				    | 1          | Decimal  | Fee Amount. |
 | @binding				    | 1          | Boolean  | Identifies if is the price is binding (When true the sale price returned must not be less than the price informed. |
@@ -617,11 +615,14 @@ the availability method. The treatment of cancellation policies is explained in 
 **Deadline:** cancellation fees applies from the date displayed on the deadline, which is on UTC Standard. For more information about how TimeZones are handled please check our [MetaData](/connectiontypessellers/hotelpullsellers/methods/staticcontent/metadata/) content.
 
 -   **CalculatedDeadline:** Specifies if the Deadline is returned by the supplier or it's been calculated by TravelGate according to **ISO 8601**
-	true: The deadline has been converted to UTC-0 by XTG.
-	false: The supplier returns the deadline on UTC-0, so no calculation is needed.
+	
+> -   *true:* The deadline has been converted to UTC-0 by XTG.
+
+> -   *false:* The supplier returns the deadline on UTC-0, so no calculation is needed.
 
 
 **Type:** 
+
 There are three values that can be inside types:
 
 > -   *Noches:* Indicates the number of nights to be penalized.

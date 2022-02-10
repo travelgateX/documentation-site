@@ -47,7 +47,6 @@ This paragraph aims to return all of the data lists used in our system: language
 | 301      | Option not found in policies.                                                                   |
 | 302      | Hotel Not Found in DescriptiveInfo.                                                             |
 | 303      | The booking has not been confirmed on your system.                                              |
-09:50 AM
 
 
 
@@ -183,6 +182,16 @@ We use a standard ISO - 3166_1_alfa_2.
 | unemployed       | Rate applied to those without work.                                                                              |
 | mobile           | Rate applicable to options booked by mobile.                                                                     |
 | warranty         | Rate applicable to options with cancellation warranty.                                                           |
+
+
+
+### Restriction Type
+
+| **Enum**         | **Type**        |
+|------------------|-----------------|
+| 1                | Company         |
+| 2                |  Market         |
+| 3                | Others          |
 
 
 

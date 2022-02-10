@@ -78,6 +78,7 @@ Our system allows for a maximum of **180000** milliseconds before the connection
 ~~~
 
 
+
 ### ValuationRQ Description
 
 
@@ -115,42 +116,42 @@ Our system allows for a maximum of **180000** milliseconds before the connection
 
 
 ~~~xml
-    <ValuationRS>
-        <Parameters>
-            <Parameter key = "bd1" value = "43"/>
-        </Parameters>
-        <Status>OK</Status>
-        <Price currency = "EUR" amount = "106.20" binding = "false" commission = "-1"/>
-        <CancelPenalties nonRefundable = "false">
-            <CancelPenalty>
-                <HoursBefore>72</HoursBefore>
-                <Deadline>01/07/2016 05:00:00Z</Deadline>
-                <CalculatedDeadline>false</CalculatedDeadline>
-                <Penalty type = "Importe"  paymentType = "MerchantPay" currency = "EUR">25.00</Penalty>
-            </CancelPenalty>
-            <CancelPenalty>
-                <HoursBefore>48</HoursBefore>
-                <Deadline>02/07/2016 05:00:00Z</Deadline>
-                <CalculatedDeadline>false</CalculatedDeadline>
-                <Penalty type = "Importe"  paymentType = "MerchantPay" currency = "EUR">72.40</Penalty>
-            </CancelPenalty>
-        </CancelPenalties>
-        <Fees>
-            <Fee includedPriceOption = "true" description = "TaxAndServiceFee">
-                <Price currency = "EUR" amount = "8.11" binding = "false" commission = "-1"/>
-		        <Code>SPE</Code>
-            </Fee>
-        </Fees>
-        <Remarks/>
-        <PaymentOptions cash="false" bankAcct="false">
-            <Cards>
-                <Card code="VI"/>
-                <Card code="AX"/>
-                <Card code="CA"/>  
-            </Cards> 
-        <PaymentOptions/>       
-       <CancelPoliciesDescription/>
-    </ValuationRS>
+<ValuationRS xmlns:xsd = "http://www.w3.org/2001/XMLSchema" xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance">
+    <Parameters>
+        <Parameter key = "bd1" value = "43"/>
+    </Parameters>
+    <Status>OK</Status>
+    <Price currency = "EUR" amount = "106.20" binding = "false" commission = "-1"/>
+    <CancelPenalties nonRefundable = "false">
+        <CancelPenalty>
+            <HoursBefore>72</HoursBefore>
+            <Deadline>01/07/2016T05:00:00Z</Deadline>
+            <CalculatedDeadline>false</CalculatedDeadline>
+            <Penalty type = "Importe" paymentType = "MerchantPay" currency = "EUR">25.00</Penalty>
+        </CancelPenalty>
+        <CancelPenalty>
+            <HoursBefore>48</HoursBefore>
+            <Deadline>02/07/2016T05:00:00Z</Deadline>
+            <CalculatedDeadline>false</CalculatedDeadline>
+            <Penalty type = "Importe" paymentType = "MerchantPay" currency = "EUR">72.40</Penalty>
+        </CancelPenalty>
+    </CancelPenalties>
+    <Fees>
+        <Fee includedPriceOption = "true" description = "TaxAndServiceFee">
+            <Price currency = "EUR" amount = "8.11" binding = "false" commission = "-1"/>
+            <Code>SPE</Code>
+        </Fee>
+    </Fees>
+    <Remarks/>
+    <PaymentOptions cash = "false" bankAcct = "false">
+        <Cards>
+            <Card code = "VI"/>
+            <Card code = "AX"/>
+            <Card code = "CA"/>
+        </Cards>
+    </PaymentOptions>
+    <CancelPoliciesDescription/>
+</ValuationRS>
 ~~~
 
 
@@ -174,10 +175,10 @@ Our system allows for a maximum of **180000** milliseconds before the connection
 | @nonRefundable                            | 1          | Boolean  | Indicate if this option is nonRefundable (true or false). |
 | CancelPenalties/CancelPenalty             | 0..n       |          | Listing cancellation penalties. |
 | CancelPenalties/CancelPenalty/HoursBefore | 1          | String   | Number of hours prior to checkin date in which this Cancellation policy applies . |
-| CancelPenalties/CancelPenalty/Deadline    | 1          | String   | Date on UTC Standard TimeZone in which this Cancellation policy applies.|
-| CancelPenalties/CancelPenalty/CalculatedDeadline | 1          | Boolean  | Indicate if the Deadline is returned by the supplier or it's been calculated by TravelGate. |
+| CancelPenalties/CancelPenalty/Deadline    | 1          | String   | Date on UTC Standard TimeZone in which this Cancellation policy applies (ISO 8601 e.g: 01/07/2016T05:00:00Z)  |
+| CancelPenalties/CancelPenalty/CalculatedDeadline | 1          | Boolean  |  Indicate if the Deadline is returned by the supplier or it's been calculated by TravelGate -> *true* = has been calculated by XTG / *false* = bypass of supplier data without calculation |
 | CancelPenalties/CancelPenalty/Penalty     | 1          |          | Contains the value to apply. |
-| @type					    | 1          | String   | Type of possible penalty values: “Noches” (nights) , “Porcentaje” (percentage) ,"Importe" (price value). |
+| @type					    | 1          | String   | Type of possible penalty values: "Noches" (nights) , "Porcentaje" (percentage) ,"Importe" (price value). |
 | @currency				    | 1          | String   | Currency code. |
 | @paymentType                            | 1          | String   | Indicates payment type of penalty (See full type list at [Lists of Data](/connectiontypessellers/hotelpullsellers/listsdata/)) . |
 | CancelPenalties/CancelPenalty/Deadline | 0..1          | String   | Cancellation fees will be applicabled between this date and check-in date. |
@@ -228,7 +229,12 @@ Booking cancellation penalties are affected by the following elements:
 
 -   **Deadline:** cancellation fees applies from the date displayed on the deadline, which is on UTC Standard. For more information about how TimeZones are handled please check our [MetaData](/connectiontypessellers/hotelpullsellers/methods/messages/static-methods/metadata/) content.
 
--   **CalculatedDeadline:** Specifies if the Deadline is returned by the supplier or it's been calculated by TravelGate.
+-   **CalculatedDeadline:** Specifies if the Deadline is returned by the supplier or it's been calculated by TravelGate according to **ISO 8601**
+	
+> -   *true:* The deadline has been converted to UTC-0 by XTG.
+
+> -   *false:* The supplier returns the deadline on UTC-0, so no calculation is needed.
+
 
 -   **Type:** There are three values that can be inside types:
 
@@ -240,19 +246,20 @@ Booking cancellation penalties are affected by the following elements:
 
 -   **Currency:** currency of the penalty fee.
 
+
 In this example you can see 2 *CancelPenalty* with different *HoursBefore*:
 
 ~~~xml
 <CancelPenalties nonRefundable = "false">
     <CancelPenalty>
         <HoursBefore>72</HoursBefore>
-        <Deadline>01/07/2016 05:00:00Z</Deadline>
+        <Deadline>01/07/2016T05:00:00Z</Deadline>
         <CalculatedDeadline>false</CalculatedDeadline>
         <Penalty type = "Importe" paymentType = "MerchantPay" currency = "EUR">25.00</Penalty>
     </CancelPenalty>
     <CancelPenalty>
         <HoursBefore>48</HoursBefore>
-        <Deadline>02/07/2016 05:00:00Z</Deadline>
+        <Deadline>02/07/2016T05:00:00Z</Deadline>
         <CalculatedDeadline>false</CalculatedDeadline>
         <Penalty type = "Importe" paymentType = "MerchantPay" currency = "EUR">72.40</Penalty>
     </CancelPenalty>

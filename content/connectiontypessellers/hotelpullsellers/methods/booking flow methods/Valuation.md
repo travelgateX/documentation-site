@@ -44,36 +44,36 @@ In the request for this call it is necessary to use the object: "HotelBaseRQ". Y
 
 ~~~xml
 <ValuationRQ>
-   <StartDate>04/07/2016</StartDate>
-   <EndDate>11/07/2016</EndDate>
-   <MealPlanCode>15</MealPlanCode>
-   <HotelCode>6259</HotelCode>
-   <PaymentType>MerchantPay</PaymentType>
-   <OptionType>Hotel</OptionType>
-   <OnRequest>false</OnRequest>
-   <Nationality>ES</Nationality>
-   <Parameters>
-       <Parameter key = "ID1" value = "ID#1#VR"/>
-       <Parameter key = "ID2" value = "ID#2#FGR#45187#10-5"/>
-       <Parameter key = "PSR" value = "511.28"/>
-   </Parameters>
-   <Rooms>
-       <Room id = "ITD10" roomCandidateRefId = "1" code = "TW" description = "Twinn"/>
-       <Room id = "IOG22" roomCandidateRefId = "2" code = "IND" description = "Individual"/>
-   </Rooms>
-   <RoomCandidates>
-       <RoomCandidate id = "1">
-           <Paxes>
-               <Pax age = "30" id = "1"/>
-               <Pax age = "30" id = "2"/>
-           </Paxes>
-       </RoomCandidate>
-       <RoomCandidate id = "2">
-           <Paxes>
-               <Pax age = "30" id = "1"/>
-           </Paxes>
-       </RoomCandidate>
-   </RoomCandidates>
+    <StartDate>04/07/2016</StartDate>
+    <EndDate>11/07/2016</EndDate>
+    <MealPlanCode>15</MealPlanCode>
+    <HotelCode>6259</HotelCode>
+    <PaymentType>MerchantPay</PaymentType>
+    <OptionType>Hotel</OptionType>
+    <OnRequest>false</OnRequest>
+    <Nationality>ES</Nationality>
+    <Parameters>
+        <Parameter key = "ID1" value = "ID#1#VR"/>
+        <Parameter key = "ID2" value = "ID#2#FGR#45187#10-5"/>
+        <Parameter key = "PSR" value = "511.28"/>
+    </Parameters>
+    <Rooms>
+        <Room id = "ITD10" roomCandidateRefId = "1" code = "TW" description = "Twinn"/>
+        <Room id = "IOG22" roomCandidateRefId = "2" code = "IND" description = "Individual"/>
+    </Rooms>
+    <RoomCandidates>
+        <RoomCandidate id = "1">
+            <Paxes>
+                <Pax age = "30" id = "1"/>
+                <Pax age = "30" id = "2"/>
+            </Paxes>
+        </RoomCandidate>
+        <RoomCandidate id = "2">
+            <Paxes>
+                <Pax age = "30" id = "1"/>
+            </Paxes>
+        </RoomCandidate>
+    </RoomCandidates>
 </ValuationRQ>
 ~~~
 
@@ -96,7 +96,7 @@ Go to [Common-Elements](/connectiontypessellers/hotelpullsellers/methods/common-
 | OnRequest                              | 1          | Boolean  | Indicates if you want to receive the on request options in AvailRS, as long as the supplier returns it in this method (see [MetaData](/connectiontypessellers/hotelpullsellers/methods/staticcontent/metadata/)). |
 | MealPlanCode                           | 1          | String   | MealPlan code.  |
 | HotelCode                              | 1          | String   | Hotel code.     |
-| PaymentType                            | 1          | String   | Indicates payment type (See full type list at [Lists of Data](/connectiontypessellers/hotelpullsellers/listsdata/#payment-types)). |
+| PaymentType                            | 1          | String   | Indicates payment type (See full type list at [Lists of Data](/connectiontypessellers/hotelpullsellers/listsdata/#Payment-Types)). |
 | OptionType                             | 1          | String   | Indicates option types. |
 | Nationality                            | 1       | String   | Guest nationality (use ISO3166_1_alfa_2). |
 | Rooms                                  | 1          |          | Rooms in this option (room list). |
@@ -120,42 +120,42 @@ Go to [Common-Elements](/connectiontypessellers/hotelpullsellers/methods/common-
 ### ValuationRS Example
 
 ~~~xml
-    <ValuationRS>
-        <Parameters>
-            <Parameter key = "bd1" value = "43"/>
-        </Parameters>
-        <Status>OK</Status>
-        <Price currency = "EUR" amount = "106.20" binding = "false" commission = "-1"/>
-        <CancelPenalties nonRefundable = "false">
-            <CancelPenalty>
-                <HoursBefore>72</HoursBefore>
-                <Deadline>01/07/2016T05:00:00Z</Deadline>
-                <CalculatedDeadline>false</CalculatedDeadline>
-                <Penalty type = "Importe"  paymentType = "MerchantPay" currency = "EUR">25.00</Penalty>
-            </CancelPenalty>
-            <CancelPenalty>
-                <HoursBefore>48</HoursBefore>
-                <Deadline>02/07/2016T05:00:00Z</Deadline>
-                <CalculatedDeadline>false</CalculatedDeadline>
-                <Penalty type = "Importe"  paymentType = "MerchantPay" currency = "EUR">72.40</Penalty>
-            </CancelPenalty>
-        </CancelPenalties>
-        <Fees>
-            <Fee includedPriceOption = "true" description = "TaxAndServiceFee">
-                <Price currency = "EUR" amount = "8.11" binding = "false" commission = "-1"/>
-		        <Code>SPE</Code>
-            </Fee>
-        </Fees>
-        <Remarks/>
-        <PaymentOptions cash="false" bankAcct="false">
-            <Cards>
-                <Card code="VI"/>
-                <Card code="AX"/>
-                <Card code="CA"/>  
-            </Cards> 
-        <PaymentOptions/>       
-       <CancelPoliciesDescription/>
-    </ValuationRS>
+<ValuationRS>
+    <Parameters>
+        <Parameter key = "bd1" value = "43"/>
+    </Parameters>
+    <Status>OK</Status>
+    <Price currency = "EUR" amount = "106.20" binding = "false" commission = "-1"/>
+    <CancelPenalties nonRefundable = "false">
+        <CancelPenalty>
+            <HoursBefore>72</HoursBefore>
+            <Deadline>01/07/2016T05:00:00Z</Deadline>
+            <CalculatedDeadline>false</CalculatedDeadline>
+            <Penalty type = "Importe" paymentType = "MerchantPay" currency = "EUR">25.00</Penalty>
+        </CancelPenalty>
+        <CancelPenalty>
+            <HoursBefore>48</HoursBefore>
+            <Deadline>02/07/2016T05:00:00Z</Deadline>
+            <CalculatedDeadline>false</CalculatedDeadline>
+            <Penalty type = "Importe" paymentType = "MerchantPay" currency = "EUR">72.40</Penalty>
+        </CancelPenalty>
+    </CancelPenalties>
+    <Fees>
+        <Fee includedPriceOption = "true" description = "TaxAndServiceFee">
+            <Price currency = "EUR" amount = "8.11" binding = "false" commission = "-1"/>
+            <Code>SPE</Code>
+        </Fee>
+    </Fees>
+    <Remarks/>
+    <PaymentOptions cash = "false" bankAcct = "false">
+        <Cards>
+            <Card code = "VI"/>
+            <Card code = "AX"/>
+            <Card code = "CA"/>
+        </Cards>
+    </PaymentOptions>
+    <CancelPoliciesDescription/>
+</ValuationRS>
 ~~~
 
 
@@ -181,11 +181,11 @@ Go to [Common-Elements](/connectiontypessellers/hotelpullsellers/methods/common-
 | CancelPenalties/CancelPenalty             | 0..n       |          | Listing cancellation penalties. |
 | CancelPenalties/CancelPenalty/HoursBefore | 1          | String   | Number of hours prior to checkin date in which this Cancellation policy applies |
 | CancelPenalties/CancelPenalty/Deadline    | 1          | String   | Date on UTC Standard TimeZone in which this Cancellation policy applies (ISO 8601 e.g: 01/07/2016T05:00:00Z) |
-| CancelPenalties/CancelPenalty/CalculatedDeadline | 1          | Boolean  | Indicate if the Deadline is returned by the supplier or it's been calculated by TravelGate. true = has been calculated by XTG, false = bypass of supplier data without calculation |
+| CancelPenalties/CancelPenalty/CalculatedDeadline | 1          | Boolean  |  Indicate if the Deadline is returned by the supplier or it's been calculated by TravelGate -> *true* = has been calculated by XTG / *false* = bypass of supplier data without calculation |
 | CancelPenalties/CancelPenalty/Penalty     | 1          |          | Contains the value to apply. |
-| @type					    | 1          | String   | Type of possible penalty values: “Noches” (nights) , “Porcentaje” (percentage) ,”Importe” (price value). |
+| @type					    | 1          | String   | Type of possible penalty values: "Noches" (nights) , "Porcentaje" (percentage) , "Importe" (price value). |
 | @currency				    | 1          | String   | Currency code. |
-| @paymentType                            | 1          | String   | Indicates payment type of penalty (See full type list at [Lists of Data](/connectiontypessellers/hotelpullsellers/listsdata/#payment-types)) . |
+| @paymentType                            | 1          | String   | Indicates payment type of penalty (See full type list at [Lists of Data](/connectiontypessellers/hotelpullsellers/listsdata/#Payment-Types)) . |
 | Remarks 				    | 0..1       | String   | Remarks (see [MetaData](/connectiontypessellers/hotelpullsellers/methods/staticcontent/metadata/) in order to verify if a supplier implements it).       |
 | PaymentOptions			    | 0..1       | String   | Payment Types allowed by the supplier. This tag  is mandatory only if payment type is different than MerchantPay. |
 | PaymentOptions/Cards			    | 0..1		 | 	    | List of cards allowed. |
@@ -228,11 +228,14 @@ Booking cancellation penalties are affected by the following elements:
 **Deadline:** cancellation fees applies from the date displayed on the deadline, which is on UTC Standard. For more information about how TimeZones are handled please check our [MetaData](/connectiontypessellers/hotelpullsellers/methods/staticcontent/metadata/) content.
 
 -   **CalculatedDeadline:** Specifies if the Deadline is returned by the supplier or it's been calculated by TravelGate according to **ISO 8601**
-	true: The deadline has been converted to UTC-0 by XTG.
-	false: The supplier returns the deadline on UTC-0, so no calculation is needed.
+	
+> -   *true:* The deadline has been converted to UTC-0 by XTG.
+
+> -   *false:* The supplier returns the deadline on UTC-0, so no calculation is needed.
 
 
 **Type:** 
+
 There are three values that can be inside types:
 
 > -   *Noches:* Indicates the number of nights to be penalized.
