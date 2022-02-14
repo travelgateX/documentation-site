@@ -104,11 +104,11 @@ Go to [Common-Elements](/connectiontypessellers/hotelpullsellers/methods/common-
 | ----------------------------- | ---------- | -------- | --------------------- |
 | GeographicDestinationTreeRS	| 1          | 		| Root node.		|
 | UpgradeUTCDate		| 1       	|	DateTime	| Indicates the update date of the information in UTC format.	|
-| DestinationTree		| 1..n       | 		| Father node.		|
+| DestinationTree /		| 1..n       | 		| Father node.		|
 | @code | 1 | String | |
 | @name | 1 | String | |
 | @avail | 1 | Boolean | |
-| DestinationTree/DestinationLeaf		| 0..n      |		| Childs node.		|
+| DestinationTree /DestinationLeaf		| 0..n      |		| Childs node.		|
 | @code | 1 | String | |
 
 

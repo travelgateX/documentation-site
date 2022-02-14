@@ -35,7 +35,7 @@ The result returns a list of *RoomInfo*.
 
 The maximum time permitted in our system before the connection is closed is **240000** milliseconds.
 
-This message must be implemented solely in case the supplier does not return room description in Avail. This requirement will be indicated in [MetaData](https://docs.travelgatex.com/connectiontypesbuyers/legacy/methods/staticcontent/metadata/).
+This message must be implemented solely in case the supplier does not return room description in Avail. This requirement will be indicated in [MetaData](/connectiontypesbuyers/legacy/methods/staticcontent/metadata/).
 
 
 
@@ -48,8 +48,8 @@ This message must be implemented solely in case the supplier does not return roo
 ~~~
 
 
-### RoomListRQ Description
 
+### RoomListRQ Description
 
 
 | **Element**		| **Number**	| **Type**	| **Description**	|
@@ -81,23 +81,25 @@ This message must be implemented solely in case the supplier does not return roo
 ~~~
 
 
-### RoomListRS Description
 
+### RoomListRS Description
 
 
 | **Element**		| **Number**	| **Type**	| **Description**	|
 | --------------------- | ------------- | ------------- | --------------------- |
-| RoomListRS/UpgradeUTCDate		| 1       	|	DateTime	| Indicates the update date of the information in UTC format.	|
-| RoomListRS/RoomsInfo 		| 1          	|		| Root node, list of rooms		|
-|RoomInfo | 1..n ||Room info.|
-|RoomInfo/Code | 1 | String | Code. |
-|RoomInfo/Name | 1 | String | Name. |
+| RoomListRS /UpgradeUTCDate		| 1       	|	DateTime	| Indicates the update date of the information in UTC format.	|
+| RoomListRS /RoomsInfo /		| 1          	|		| Root node, list of rooms		|
+|RoomInfo / | 1..n ||Room info.|
+|RoomInfo /Code | 1 | String | Code. |
+|RoomInfo /Name | 1 | String | Name. |
 
 
 
 ### Detailed description 
 
 
+
 **Room types & languages**
+
 
 You can define in AvailRQ (Common Elements) which language you want the room description returned in  - as long as the supplier supports the selected language, otherwise the default language is most commonly English. The standard languages are: English & Spanish.

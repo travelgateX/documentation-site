@@ -35,12 +35,11 @@ The result returns a list of *Market*.
 
 
 The maximum time permitted in our system before the connection is closed is  **240000** milliseconds.
-Most suppliers use a standard ISO - 3166_1_alfa_2, but it depends on each individual supplier.
+Most suppliers use a standard **ISO-3166_1_alfa_2**, but it depends on each individual supplier.
 
 
 
 ### MarketListRQ Example
-
 
 ~~~xml
     <MarketListRQ>
@@ -48,9 +47,8 @@ Most suppliers use a standard ISO - 3166_1_alfa_2, but it depends on each indivi
 ~~~
 
 
+
 ### MarketListRQ Description
-
-
 
 
 | **Element**		| **Number** | **Type** | **Description**		|
@@ -60,7 +58,6 @@ Most suppliers use a standard ISO - 3166_1_alfa_2, but it depends on each indivi
 
 
 ### MarketListRS Example
-
 
 ~~~xml
     <MarketListRS>
@@ -83,19 +80,19 @@ Most suppliers use a standard ISO - 3166_1_alfa_2, but it depends on each indivi
 ~~~
 
 
+
 ### MarketListRS Description
-
-
 
 
 | **Element**		| **Number** | **Type** | **Description**	|
 | --------------------- | ---------- | -------- | --------------------- |
-| MarketListRS/UpgradeUTCDate		| 1       	|	DateTime	| Indicates the update date of the information in UTC format.	|
-| MarketListRS/Markets	| 1          |		| Root node, list of markets.		|
-| Market	| 1..n          	| 		| Market.			|
-| Market/Code	| 1         	| String		| Code.			|
-| Market/Name	| 1          	| String		| Name.			|
-| Market/GroupCode	| 0..1          	| String		| Indicates if the supplier groups different markets together and what the group is called.			|
+| MarketListRS /UpgradeUTCDate		| 1       	|	DateTime	| Indicates the update date of the information in UTC format.	|
+| MarketListRS /Markets /	| 1          |		| Root node, list of markets.		|
+| Markets /Market	| 1..n          	| 		| Market.			|
+| Markets /Market/Code	| 1         	| String		| Code.			|
+| Markets /Market/Name	| 1          	| String		| Name.			|
+| Markets /Market/GroupCode	| 0..1          	| String		| Indicates if the supplier groups different markets together and what the group is called.			|
+
 
 **GroupCode:**
 

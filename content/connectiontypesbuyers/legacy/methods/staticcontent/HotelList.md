@@ -37,7 +37,7 @@ The maximum time permitted in our system before the connection is closed is **24
 
 This method may be preloaded in **XML Travelgate**'s system if it takes more than 3 minutes to download.
 
-The **ContinuationToken** can be used in this request - the specification can be found in the Common-Elements section_.
+The **ContinuationToken** can be used in this request - the specification can be found in the '[Common Elements](/connectiontypesbuyers/legacy/methods/common-elements/)' section.
 
 
 
@@ -139,18 +139,18 @@ The **ContinuationToken** can be used in this request - the specification can be
 
 | **Element**				| **Number**	| **Type**	| **Description**						|
 | ------------------------------------- | ------------- | ------------- | ------------------------------------------------------------- |
-| HotelListRS/UpgradeUTCDate		| 1       	|	DateTime	| Indicates the update date of the information in UTC format.	|
-| HotelListRS/Hotels/Hotel		| 0..n       	|		| Root node. Hotel sheet.          				|
+| HotelListRS /UpgradeUTCDate		| 1       	|	DateTime	| Indicates the update date of the information in UTC format.	|
+| HotelListRS /Hotels /Hotel		| 0..n       	|		| Root node. Hotel sheet.          				|
 | Code       				| 1    		| String	| Internal code to perform availability and/or supplier code.	|
-| ProviderCode				| 0..1 		| String	| Internal code established by the supplier (see [MetaData](https://docs.travelgatex.com/connectiontypesbuyers/legacy/methods/staticcontent/metadata/)). |
+| ProviderCode				| 0..1 		| String	| Internal code established by the supplier (see [MetaData](/connectiontypesbuyers/legacy/methods/staticcontent/metadata/)). |
 | GiataId    				| 0..1       	|		| Giata System ID.							|
 | @source    				| 0..1 		| String	| Giata url	|
 | @value     				| 0..1 		| String	| Giata code (more on detailed description)	|
 | Name       				| 1    		| String	| Name.								|
 | Address    				| 1    		| String	| Address.							|
-| Airports 				| 0..1       	|		| List of airports.							|
-| Airports/Airport			| 1..n       	|		| Specific airport near the hotel.	|
-| Airports/Airport/IATACode		| 1    		| String	| IATA airport Code.								|
+| Airports / 				| 0..1       	|		| List of airports.							|
+| Airports /Airport			| 1..n       	|		| Specific airport near the hotel.	|
+| Airports /Airport/IATACode		| 1    		| String	| IATA airport Code.								|
 | Town       				| 1    		| String	| Town.								|
 | ZipCode    				| 0..1    		| String	| ZipCode.							|
 | CountryISOCode			| 1    		| String	| CountryISOCode.						|
@@ -163,20 +163,20 @@ The **ContinuationToken** can be used in this request - the specification can be
 | @avail      				| 1    		| Boolean	| Indicates if it is allowed in availability.		|
 | Latitude   				| 0..1    		| String	| Latitude.							|
 | Longitude  				| 0..1    		| String	| Longitude.							|
-| Contact    				| 0..1          	|		| Contact.							|
-| Contact/Email				| 0..1    		| String	| Email.							|
-| Contact/Telephone			| 0..1    		| String	| Telephone.							|
-| Contact/Fax				| 0..1    		| String	| Fax. 								|
+| Contact /    				| 0..1          	|		| Contact.							|
+| Contact /Email				| 0..1    		| String	| Email.							|
+| Contact /Telephone			| 0..1    		| String	| Telephone.							|
+| Contact /Fax				| 0..1    		| String	| Fax. 								|
 | CategoryCode				| 1    		| String	| CategoryCode.							|
 | Type       				| 0..1 		| String	| Hotel type: please see detailed description	|
-| PaymentOptions			| 0..1 		| String	| Type of cards allowed by the supplier. This tag is only mandatory if payment type is different than *MerchantPay*.	|				|
-| PaymentOptions/Cards/Cards		| 1          	|		| List of cards allowed.					|
-| PaymentOptions/Cards/Card		| 1..n       	|		| Type of card allowed.    					|
+| PaymentOptions /			| 0..1 		| String	| Type of cards allowed by the supplier. This tag is only mandatory if payment type is different than *MerchantPay*.	|				|
+| PaymentOptions /Cards /		| 1          	|		| List of cards allowed.					|
+| PaymentOptions /Cards /Card		| 1..n       	|		| Type of card allowed.    					|
 | @code 				| 1    		| String	| Code card (see *Lists of Data* (VI,AX,BV,CA...)).		|
 | ExclusiveDeal				| 0..1  	| Boolean	| Indicates that the Hotel has an Exclusive Deal.	|
-| PropertyCategory			| 0..1       	|		| Hotels property type. Similar to Type, but on supplier's side.  |
-| PropertyCategory/Code			| 1    		| String	| Supplier's property code.       				|
-| PropertyCategory/Name			| 1    		| String	| Supplier's property name.					|
+| PropertyCategory /			| 0..1       	|		| Hotels property type. Similar to Type, but on supplier's side.  |
+| PropertyCategory /Code		| 1    		| String	| Supplier's property code.       				|
+| PropertyCategory /Name		| 1    		| String	| Supplier's property name.					|
                      
  
 
@@ -249,16 +249,12 @@ D (Disco Club)
 
 **Supplier Code:**
 
-The hotel code can be returned combined with other codes, like the city
-code. In this case, it's necessary to perform an availability request.
-I.e, if you are making an availability search by hotel code and the
-city code is also needed, our system will combine them so you can
-use it in Availability request. In this case, the code will be the one
-generated by us, combining the hotel code and the city code, and not
-the supplier's native code. This can also happen with other code types
-instead of city code (i.e. country code).In these cases we return
-the *ProviderCode* tag containing the internal code used by the
-supplier (see [MetaData](https://docs.travelgatex.com/connectiontypesbuyers/legacy/methods/staticcontent/metadata/)).
+The hotel code can be returned combined with other codes, like the city code. In this case, it's necessary to perform an availability request.
+
+e.g, if you are making an availability search by hotel code and the city code is also needed, our system will combine them so you can use it in Availability request. 
+
+In this case, the code will be the one generated by us, combining the hotel code and the city code, and not the supplier's native code. 
+This can also happen with other code types instead of city code (i.e. country code). In these cases we return the *ProviderCode* tag containing the internal code used by the supplier (see [MetaData](/connectiontypesbuyers/legacy/methods/staticcontent/metadata/)).
 
 
 

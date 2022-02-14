@@ -57,9 +57,9 @@ is **180000** milliseconds.
 
 | **Element**				| **Number**	| **Type**	| **Description**				|
 | ------------------------------------- | ------------- | ------------- | --------------------------------------------- |
-| DescriptiveInfoRQ			| 1          	|		| Root node.					|
-| DescriptiveInfoRQ/Hotel		| 1    		| String	| Hotel requested.				|
-| DescriptiveInfoRQ/Hotel/Code		| 1    		| String	| Code.						|
+| DescriptiveInfoRQ	/		| 1          	|		| Root node.					|
+| DescriptiveInfoRQ /Hotel /		| 1    		| String	| Hotel requested.				|
+| DescriptiveInfoRQ /Hotel/ Code	| 1    		| String	| Code.						|
 
 
 
@@ -204,14 +204,14 @@ is **180000** milliseconds.
 
 | **Element**				| **Number**	| **Type**	| **Description**						|
 | ------------------------------------- | ------------- | ------------- | ------------------------------------------------------------- |
-| DescriptiveInfoRS/UpgradeUTCDate		| 1       	|	DateTime	| Indicates the update date of the information in UTC format.	|
-| DescriptiveInfoRS/Hotel		| 0..n       	|		| Root node. Hotel sheet.					|
+| DescriptiveInfoRS /UpgradeUTCDate		| 1       	|	DateTime	| Indicates the update date of the information in UTC format.	|
+| DescriptiveInfoRS /Hotel		| 0..n       	|		| Root node. Hotel sheet.					|
 | Code       				| 1    		| String	| Code.								|
 | Name       				| 1    		| String	| Name.								|
 | Address    				| 1    		| String	| Address.							|
-| Airports 				| 0..1       	|		| List of airports.							|
-| Airports/Airport			| 1..n       	|		| Specific airport near the hotel.	|
-| Airports/Airport/IATACode		| 1    		| String	| IATA airport Code.								|
+| Airports /				| 0..1       	|		| List of airports.							|
+| Airports /Airport			| 1..n       	|		| Specific airport near the hotel.	|
+| Airports /Airport/IATACode		| 1    		| String	| IATA airport Code.								|
 | Town       				| 1    		| String	| Town.    							|
 | ZipCode    				| 1    		| String	| ZipCode.							|
 | CountryISOCode			| 1    		| String	| Country ISOCode.						|
@@ -224,15 +224,15 @@ is **180000** milliseconds.
 | @avail     				| 1    		| Boolean	| Indicates if the code can be used in Avail.		|
 | Latitude   				| 0..1    		| String	| Latitude.							|
 | Longitude  				| 0..1    		| String	| Longitude.							|
-| Contact    				| 0..1       	|		| Hotel contact information.							|
-| Contact/Email				| 1    		| String	| Email.							|
-| Contact/Telephone			| 1    		| String	| Telephone.							|
-| Contact/Fax				| 1    		| String	| Fax.								|
+| Contact /   				| 0..1       	|		| Hotel contact information.							|
+| Contact /Email				| 1    		| String	| Email.							|
+| Contact /Telephone			| 1    		| String	| Telephone.							|
+| Contact /Fax				| 1    		| String	| Fax.								|
 | CategoryCode				| 1    		| String	| Category code.							|
-| BookingContact			| 0..1       	|		| Booking dept contact.						|
-| BookingContact/Email			| 1    		| String	| Email.							|
-| BookingContact/Telephone		| 1    		| String	| Telephone. 							|
-| BookingContact/Fax			| 1    		| String	| Fax.   							|
+| BookingContact /			| 0..1       	|		| Booking dept contact.						|
+| BookingContact /Email			| 1    		| String	| Email.							|
+| BookingContact /Telephone		| 1    		| String	| Telephone. 							|
+| BookingContact /Fax			| 1    		| String	| Fax.   							|
 | Chaincode  				| 0..1 		| String	| Hotel chain code.							|
 | ShortDescription			| 0..1 		| String	| Short description.   						|
 | LongDescription			| 0..1 		| String	| Long description.    						|
@@ -244,29 +244,29 @@ is **180000** milliseconds.
 | ActivitiesDescription			| 0..1 		| String	| Activities description.					|
 | ServicesDescription			| 0..1 		| String	| Services description.						|
 | AdditionalDetails			| 0..1 		| String	| Additional details.						|
-| Attributes 				| 0..1       	|		| Attributes.							|
-| Attributes/Attribute			| 1..n       	|		| Specific attributes of the hotel, such as wi-fi.	|
-| Attributes/Attribute/Code		| 1    		| String	| Code.								|
-| Attributes/Attribute/Value		| 1    		| String	| Value.							|
-| Attributes/Attribute/Classification	| 1    		| String	| Classification ( HOT=hotel, HAB=room, SER=service and GRAL=generic). |
-| Attributes/Attribute/Description		| 0..1    		| String	| Description.							|
-| Images     				| 0..1       	|		| Images.							|
-| Images/Picture			| 1..n       	|		| Picture.     							|
-| Images/Picture/Url			| 1    		| String	| Url.								|
-| Images/Picture/Classification		| 1    		| String	| Classification (HOT=hotel, HAB=room, SER=service and GRAL=generic). |
-| Images/Picture/Ordered		| 0..1 		| String	| Images should be ordered from 1 onward. 1 is top.		|
-| Images/Picture/Description		| 0..1    		| String	| Description.							|
-| Images/Picture/Code			| 0..1    		| String	| Code.								|
-| Images/Picture/UpgradeUTCDate			| 0..1    		| DateTime	| Indicates the upgrade date of the picture in UTC format.	|
+| Attributes /				| 0..1       	|		| Attributes.							|
+| Attributes /Attribute			| 1..n       	|		| Specific attributes of the hotel, such as wi-fi.	|
+| Attributes /Attribute/Code		| 1    		| String	| Code.								|
+| Attributes /Attribute/Value		| 1    		| String	| Value.							|
+| Attributes /Attribute/Classification	| 1    		| String	| Classification ( HOT=hotel, HAB=room, SER=service and GRAL=generic). |
+| Attributes /Attribute/Description		| 0..1    		| String	| Description.							|
+| Images /    				| 0..1       	|		| Images.							|
+| Images /Picture			| 1..n       	|		| Picture.     							|
+| Images /Picture/Url			| 1    		| String	| Url.								|
+| Images /Picture/Classification		| 1    		| String	| Classification (HOT=hotel, HAB=room, SER=service and GRAL=generic). |
+| Images /Picture/Ordered		| 0..1 		| String	| Images should be ordered from 1 onward. 1 is top.		|
+| Images /Picture/Description		| 0..1    		| String	| Description.							|
+| Images /Picture/Code			| 0..1    		| String	| Code.								|
+| Images /Picture/UpgradeUTCDate			| 0..1    		| DateTime	| Indicates the upgrade date of the picture in UTC format.	|
 | LocationType				| 0..1 		| String	| Location code.							|
-| PaymentOptions			| 0..1 		| String	| Type of cards allowed by the supplier. This tag is only mandatory if payment type is different than *MerchantPay*.	 |
-| PaymentOptions/Cards/Cards		| 1          	|		| List of cards allowed.					|
-| PaymentOptions/Cards/Card		| 1..n       	|		| Type of card allowed. 						|
-| @code 				| 1    		| String	| Code of card. Se the full list of card codes at [Lists of Data](https://docs.travelgatex.com/connectiontypesbuyers/legacy/methods/staticcontent/listsdata/).		|
+| PaymentOptions /			| 0..1 		| String	| Type of cards allowed by the supplier. This tag is only mandatory if payment type is different than *MerchantPay*.	 |
+| PaymentOptions /Cards /		| 1          	|		| List of cards allowed.					|
+| PaymentOptions /Cards /Card		| 1..n       	|		| Type of card allowed. 						|
+| @code 				| 1    		| String	| Code of card. Se the full list of card codes at [Lists of Data](/connectiontypesbuyers/legacy/methods/staticcontent/listsdata/).		|
 | ExclusiveDeal				| 0..1 		| Boolean 	| Indicates that a Hotel is an Exlusive Deal.	|
-| PropertyCategory			| 0..1       	|		| Hotels property type. Similar to Type tag, but on supplier's side. |
-| PropertyCategory/Code			| 1    		| String	| Supplier property code.					|
-| PropertyCategory/Name			| 1    		| String	| Supplier property name.					|
+| PropertyCategory /			| 0..1       	|		| Hotels property type. Similar to Type tag, but on supplier's side. |
+| PropertyCategory /Code			| 1    		| String	| Supplier property code.					|
+| PropertyCategory /Name			| 1    		| String	| Supplier property name.					|
 
 
 

@@ -166,8 +166,8 @@ Go to [Common-Elements](/connectiontypessellers/hotelpullsellers/methods/common-
 | **Element**                               | **Number** | **Type** | **Description** |
 | ----------------------------------------- | ---------- | -------- | --------------- |
 | ValuationRS                               | 1          |          | Root node.      |
-| Parameters                                | 0..1       |          | Parameters for additional information. |
-| Parameters/Parameter                      | 1..n       |          | List of parameters. |
+| Parameters /                              | 0..1       |          | Parameters for additional information. |
+| Parameters /Parameter                     | 1..n       |          | List of parameters. |
 | @key                                      | 1          | String   | Contains the keyword/Id to identify a parameter. |
 | @value                                    | 1          | String   | Contains parameter value. |
 | Status                                    | 1          |          | Status option (OK = available, RQ = on request). |
@@ -176,27 +176,27 @@ Go to [Common-Elements](/connectiontypessellers/hotelpullsellers/methods/common-
 | @amount                                   | 1          | Decimal  | Option Amount. |
 | @binding                                  | 1          | Boolean  | Identifies if the price is binding (When true the sale price returned must not be less than the price informed). |
 | @commission                               | 1          | Decimal  | Commission: -1 = not specified (indicated in contract with the supplier), 0 = net price, X = % of the commission applied to the amount. |
-| CancelPenalties                           | 1          |          | Cancellation policy details. |
+| CancelPenalties /                         | 1          |          | Cancellation policy details. |
 | @nonRefundable                            | 1          | Boolean  | Indicate if this option is nonRefundable (true or false). |
-| CancelPenalties/CancelPenalty             | 0..n       |          | Listing cancellation penalties. |
-| CancelPenalties/CancelPenalty/HoursBefore | 1          | String   | Number of hours prior to checkin date in which this Cancellation policy applies |
-| CancelPenalties/CancelPenalty/Deadline    | 1          | String   | Date on UTC Standard TimeZone in which this Cancellation policy applies (ISO 8601 e.g: 01/07/2016T05:00:00Z) |
-| CancelPenalties/CancelPenalty/CalculatedDeadline | 1          | Boolean  |  Indicate if the Deadline is returned by the supplier or it's been calculated by TravelGate -> *true* = has been calculated by XTG / *false* = bypass of supplier data without calculation |
-| CancelPenalties/CancelPenalty/Penalty     | 1          |          | Contains the value to apply. |
+| CancelPenalties /CancelPenalty            | 0..n       |          | Listing cancellation penalties. |
+| CancelPenalties /CancelPenalty/HoursBefore | 1          | String   | Number of hours prior to checkin date in which this Cancellation policy applies |
+| CancelPenalties /CancelPenalty/Deadline   | 1          | String   | Date on UTC Standard TimeZone in which this Cancellation policy applies (ISO 8601 e.g: 01/07/2016T05:00:00Z) |
+| CancelPenalties /CancelPenalty/CalculatedDeadline | 1          | Boolean  |  Indicate if the Deadline is returned by the supplier or it's been calculated by TravelGate -> *true* = has been calculated by XTG / *false* = bypass of supplier data without calculation |
+| CancelPenalties /CancelPenalty/Penalty     | 1          |          | Contains the value to apply. |
 | @type					    | 1          | String   | Type of possible penalty values: "Noches" (nights) , "Porcentaje" (percentage) , "Importe" (price value). |
 | @currency				    | 1          | String   | Currency code. |
 | @paymentType                            | 1          | String   | Indicates payment type of penalty (See full type list at [Lists of Data](/connectiontypessellers/hotelpullsellers/listsdata/#Payment-Types)) . |
 | Remarks 				    | 0..1       | String   | Remarks (see [MetaData](/connectiontypessellers/hotelpullsellers/methods/staticcontent/metadata/) in order to verify if a supplier implements it).       |
-| PaymentOptions			    | 0..1       | String   | Payment Types allowed by the supplier. This tag  is mandatory only if payment type is different than MerchantPay. |
-| PaymentOptions/Cards			    | 0..1		 | 	    | List of cards allowed. |
-| PaymentOptions/Cards/Card		    | 1..n       |          | Details of card. |
+| PaymentOptions	/		    | 0..1       | String   | Payment Types allowed by the supplier. This tag  is mandatory only if payment type is different than MerchantPay. |
+| PaymentOptions /Cards			    | 0..1		 | 	    | List of cards allowed. |
+| PaymentOptions /Cards/Card	    | 1..n       |          | Details of card. |
 | @code   				    | 1          | String   | Code card. Se the full list of card codes at [Lists of Data](/connectiontypessellers/hotelpullsellers/listsdata/#credit-cards) |
-| Fees					    | 0..1       | 	    | Contains a list of fees. |
-| Fees/Fee				    | 1..n       |          | Contains details of the fee. |
+| Fees	/				    | 0..1       | 	    | Contains a list of fees. |
+| Fees /Fee				    | 1..n       |          | Contains details of the fee. |
 | @includedPriceOption			    | 1		 | Boolean  | Indicates if the fee is included or not in the final price (value indicated in the node Price in ValuationRS). |
 | @description				    | 1          | String   | Remarks regarding fee. |
-| Fees/Fee/Price			    | 1          |          | Contains details of price. |
-| Fees/Fee/Code			    	    | 1          |   String | Specifies the fee code in case it has one. |
+| Fees /Fee/Price			    | 1          |          | Contains details of price. |
+| Fees /Fee/Code			    	    | 1          |   String | Specifies the fee code in case it has one. |
 | @currency 				    | 1          | String   | Currency code. |
 | @amount 				    | 1          | Decimal  | Fee Amount. |
 | @binding				    | 1          | Boolean  | Identifies if is the price is binding (When true the sale price returned must not be less than the price informed. |

@@ -66,17 +66,18 @@ Indicates the number or quantity of elements of a set, whether this quantity is 
 | ------------------------------------ | ---------- | -------- | --------------- |
 | HotelBaseRQ                          | 1          |          | Root node. |
 | timeoutMilliseconds                  | 1          | Integer  | Maximum time for a response from the supplier's system. |
-| source                               | 1          |          |  	Information about source requesting the operation. |
-| source/agencyCode                    | 0..1       | String   |  	Agency code requesting the operation (deprecated). |
-| source/languageCode                  | 1          | String   |  	Language code (ISO 3166-1 alpha-2) format lowercase. |
-| filterAuditData                      | 1          |          | Activates transaction data sent & received in the supplier's native format. |
-| filterAuditData/registerTransactions | 1          | Boolean  | Returns all the transactions (XMLs) exchanged with the supplier.
-| Configuration                        | 1          |          | The info required to access the supplier's system. |
-| Configuration/UrlGeneric             | 0..1       | String   | Supplier URL used for multiple methods.|
-| Configuration/Parameters             | 0..1       |          | Parameters for additional information. |
-| Configuration/Parameters/Parameter   | 0..n       |          | List of parameters. |
+| source /                             | 1          |          |  	Information about source requesting the operation. |
+| source /agencyCode                   | 0..1       | String   |  	Agency code requesting the operation (deprecated). |
+| source /languageCode                 | 1          | String   |  	Language code (ISO 3166-1 alpha-2) format lowercase. |
+| filterAuditData /                    | 1          |          | Activates transaction data sent & received in the supplier's native format. |
+| filterAuditData /registerTransactions | 1          | Boolean  | Returns all the transactions (XMLs) exchanged with the supplier. |
+| Configuration /                      | 1          |          | The info required to access the supplier's system. |
+| Configuration /UrlGeneric            | 0..1       | String   | Supplier URL used for multiple methods.|
+| Configuration /Parameters /          | 0..1       |          | Parameters for additional information. |
+| Configuration /Parameters /Parameter | 0..n       |          | List of parameters. |
 | @key                                 | 1          | String   | Contains the keyword/Id to identify a parameter. |
 | @value                               | 1          | String   | Contains the parameter values |
+
 
 
 ### Common Elements RS Example
@@ -105,6 +106,7 @@ Indicates the number or quantity of elements of a set, whether this quantity is 
 ~~~
 
 
+
 ### Common Elements RS Description
 
 
@@ -112,17 +114,17 @@ Indicates the number or quantity of elements of a set, whether this quantity is 
 | --------------------------------- | ---------- | -------- | -------------- |
 | HotelBaseRS                       | 1          |          | Root node.     |
 | operationImplemented              | 1          | Boolean  | Informs whether the method has been implemented by the supplier. |
-| applicationErrors                 | 0..n       |          | Application errors reported by supplier. |
-| applicationErrors/type            | 1          | String   | [Error Type as specified by XML Travelgate](/connectiontypessellers/hotelpullsellers/listsdata/#error-codes). |
-| applicationErrors/code            | 1          | String   | Native error code reported by supplier. |
-| applicationErrors/description     | 1          | String   | Error description. |
-| auditData                         | 1          |          | Data sent & received in the supplier's native format.|
-| auditData/transactions            | 0..n       |          | List of transactions data. |
-| auditData/transactions/timeStamp  | 1          | Integer  | TimeStamp of each transaction. |
-| auditData/transactions/RQ         | 1          | String   | Transaction Request. |
-| auditData/transactions/RS         | 1          | String   | Transaction Response. |
-| auditData/timeStamp                | 1          | Integer  | Time when the request has been processed.  |
-| auditData/processTimeMilliseconds | 1          | Integer  | Process time in milliseconds |
+| applicationErrors /                | 0..n       |          | Application errors reported by supplier. |
+| applicationErrors /type            | 1          | String   | [Error Type as specified by XML Travelgate](/connectiontypessellers/hotelpullsellers/listsdata/#error-codes). |
+| applicationErrors /code            | 1          | String   | Native error code reported by supplier. |
+| applicationErrors /description     | 1          | String   | Error description. |
+| auditData /                        | 1          |          | Data sent & received in the supplier's native format.|
+| auditData /transactions /          | 0..n       |          | List of transactions data. |
+| auditData /transactions /timeStamp | 1          | Integer  | TimeStamp of each transaction. |
+| auditData /transactions /RQ        | 1          | String   | Transaction Request. |
+| auditData /transactions /RS        | 1          | String   | Transaction Response. |
+| auditData /timeStamp               | 1          | Integer  | Time when the request has been processed.  |
+| auditData /processTimeMilliseconds | 1          | Integer  | Process time in milliseconds |
 
 
 

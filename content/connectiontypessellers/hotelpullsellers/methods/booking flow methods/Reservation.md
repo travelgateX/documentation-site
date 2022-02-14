@@ -154,8 +154,8 @@ Go to [Common-Elements](/connectiontypessellers/hotelpullsellers/methods/common-
 | ReservationRQ 				| 1      	|		| Root node.						|
 | ClientLocator 				| 1  		| String	| Booking ID in client's system.					|
 | OnRequest     				| 1  		| Boolean	| Indicates if you want to receive the onrequest options in AvailRS, as long as the supplier returns it in this method (see [MetaData](/connectiontypessellers/hotelpullsellers/methods/staticcontent/metadata/) in order to verify if a supplier implements it).	|
-| Parameters    				| 0..1    	|		| Parameters for additional information that have been reported in ValuationRS.	|
-| Parameters/Parameter				| 1..n    	|		| List of parameters.					|
+| Parameters /   				| 0..1    	|		| List of parameters.	|
+| Parameters /Parameter				| 1..n    	|		| Parameters for additional information that have been reported in ValuationRS.					|
 | @key     					| 1  		| String	| Contains the keyword/Id to identify a parameter.	|
 | @value   					| 1  		| String	| Contains the value of the parameter.			|
 | DeltaPrice    				| 0..1    	|		| Indicates price variation permitted by the client (see [MetaData](/connectiontypessellers/hotelpullsellers/methods/staticcontent/metadata/) in order to verify if a supplier implements it). You can find more information with examples at [the bottom of this page](/connectiontypessellers/hotelpullsellers/methods/booking-flow-methods/reservation/#deltaprice-description).	|
@@ -177,59 +177,59 @@ Go to [Common-Elements](/connectiontypessellers/hotelpullsellers/methods/common-
 | @amount  					| 1  		| Decimal	| Option Amount.					|
 | @binding 					| 1  		| Boolean	| Identifies if is the price is binding (When true the sale price returned **must** not be less than the price informed.  |
 | @commission					| 1  		| Decimal	| Commission (-1 = not specified, 0 = net price, X = % of the commission applied to the amount.)	|
-| ResGuests     				| 1      	|		| 				|
-| ResGuests/Guests				| 1      	|		| List of passengers.					|
-| ResGuests/Guests/Guest			| 1..n    	|		| Detail of each passenger.	If the holder is also a passenger you need to add his/hers information in the gest list.			|
+| ResGuests /    				| 1      	|		| List of passengers.				|
+| ResGuests /Guests				| 1      	|		| Passengers.					|
+| ResGuests /Guests/Guest			| 1..n    	|		| Detail of each passenger.	If the holder is also a passenger you need to add his/hers information in the gest list.			|
 | @roomCandidateId				| 1  		| Integer	| Room candidate Identifier				|
 | @paxId   					| 1  		| Integer	| Passenger id (starting at 1).				|
-| ResGuests/Guests/Guest/Title		| 1 	 	| Enum	| Guest's title. Possible values: 0 = Mr, 1 = Mrs, 2 = Miss, 3 = Ms. 						|
-| ResGuests/Guests/Guest/GivenName		| 1 	 	| String	| Guest's given name.						|
-| ResGuests/Guests/Guest/SurName		| 1   		| String	| Guest's last name.						|
+| ResGuests /Guests/Guest/Title		| 1 	 	| Enum	| Guest's title. Possible values: 0 = Mr, 1 = Mrs, 2 = Miss, 3 = Ms. 						|
+| ResGuests /Guests/Guest/GivenName		| 1 	 	| String	| Guest's given name.						|
+| ResGuests /Guests/Guest/SurName		| 1   		| String	| Guest's last name.						|
 | PaymentType   				| 1  		| String	| Indicates the type of payment. It can be MerchantPay, LaterPay, CardBookingPay or CardCheckInPay. Payment types are explained in "Detailed description" section, in this same page.			|
-| CardInfo   				| 0..1  		|		| Credit card details.			|
-| CardInfo/CardCode   				| 1  		| String	| Indicates the type of credit card. See types allowed at [Credit Card Types](/connectiontypessellers/hotelpullsellers/listsdata/#credit-cards)			|
-| CardInfo/Number   				| 1  		| String	| Credit card number.			| 
-| CardInfo/Holder   				| 1  		| String	| Credit card holder.			|
-| CardInfo/ValidityDate   				| 1  		|		| 			|
-| CardInfo/ValidityDate/Month   				| 1  		| String	| Expiration month (2 characters).			|
-| CardInfo/ValidityDate/Year   				| 1  		| String	| Expiration year (2 characters).			|
-| CardInfo/CVC   				| 1  		| String	| Credit card security code.			|
-| CardInfo/isVCC   				| 1  		| Boolean	| Indicates if the card information provided is from a Virtual Credit Card or not.			|
-| CardInfo/VirtualCreditCard   				| 0..1  		|		|  Extra information if the card is a virtual credit card.			|
-| CardInfo/VirtualCreditCard/VCCActivationDate   				| 1  		| String	| Date from when the card can be charged. Format: DD/MM/YYYY.	|
-| CardInfo/VirtualCreditCard/VCCDeactivationDate   				| 1  		| String	| Date from when the card will no longer be chargeable. Format: DD/MM/YYYY.	|
-| CardInfo/VirtualCreditCard/VCCCurrentBalance   				| 1  		| String	| The amount which can be charged to the card.	|
-| CardInfo/VirtualCreditCard/VCCCurrencyCode   				| 1  		| String	| The ISO currency code of the VCCCurrentBalance.	|
-| CardInfo/ThreeDomainSecurity   				| 0..1  		|		| 3DS data and transaction results.			|
-| CardInfo/ThreeDomainSecurity/ThreeDSVersion   | 1  		| String	| Three Domain Security version used.	|
-| CardInfo/ThreeDomainSecurity/DSTransactionID  | 0..1 		| String	| Unique transaction identifier assigned by the Directory Server (DS) to identify a single transaction.	|
-| CardInfo/ThreeDomainSecurity/XID              | 0..1 		| String	| Transaction identifier resulting from authentication processing.	|
-| CardInfo/ThreeDomainSecurity/ECI              | 1  		| String	| Electronic Commerce Indicator. See values allowed at [ECI codes](/connectiontypessellers/hotelpullsellers/listsdata/#electronic-commerce-indicator-codes).|
-| CardInfo/ThreeDomainSecurity/CAVV             | 0..1  		| String	| Cardholder Authentication Verification Value.	|
-| CardInfo/ThreeDomainSecurity/PARes            | 0..1  		| String	| Payer Authentication Response.	|
-| CardInfo/ThreeDomainSecurity/PAResStatus      | 0..1  		| String	| Payer Authentication Response status. See values allowed at [PARes Status](/connectiontypessellers/hotelpullsellers/listsdata/#pares-status).|
-| CardInfo/ThreeDomainSecurity/PARes            | 0..1  		| String	| Payer Authentication Response.	|
-| CardInfo/ThreeDomainSecurity/CardEnrolledStatus | 0..1  		| String	| Status of Authentication eligibility. See values allowed at [Card Enrollment Status](/connectiontypessellers/hotelpullsellers/listsdata/#card-enrollment-status).	|
-| CardInfo/ThreeDomainSecurity/SignatureStatus  | 0..1  		| String	| Transaction Signature status.	See values allowed at [Signature Verification Status](/connectiontypessellers/hotelpullsellers/listsdata/#signature-verification-status).|
-| CardInfo/ThreeDomainSecurity/MerchantName     | 0..1  		| String	| Merchant name.	|
-| Rooms          				| 1      	|		| Rooms within this option (room list).			|
-| Rooms/Room    				| 1..n    	|		| Detail of room. 					|
+| CardInfo /  				| 0..1  		|		| Credit card details.			|
+| CardInfo /CardCode   				| 1  		| String	| Indicates the type of credit card. See types allowed at [Credit Card Types](/connectiontypessellers/hotelpullsellers/listsdata/#credit-cards)			|
+| CardInfo /Number   				| 1  		| String	| Credit card number.			| 
+| CardInfo /Holder   				| 1  		| String	| Credit card holder.			|
+| CardInfo /ValidityDate   				| 1  		|		| 			|
+| CardInfo /ValidityDate/Month   				| 1  		| String	| Expiration month (2 characters).			|
+| CardInfo /ValidityDate/Year   				| 1  		| String	| Expiration year (2 characters).			|
+| CardInfo /CVC   				| 1  		| String	| Credit card security code.			|
+| CardInfo /isVCC   				| 1  		| Boolean	| Indicates if the card information provided is from a Virtual Credit Card or not.			|
+| CardInfo /VirtualCreditCard   				| 0..1  		|		|  Extra information if the card is a virtual credit card.			|
+| CardInfo /VirtualCreditCard/VCCActivationDate   				| 1  		| String	| Date from when the card can be charged. Format: DD/MM/YYYY.	|
+| CardInfo /VirtualCreditCard/VCCDeactivationDate   				| 1  		| String	| Date from when the card will no longer be chargeable. Format: DD/MM/YYYY.	|
+| CardInfo /VirtualCreditCard/VCCCurrentBalance   				| 1  		| String	| The amount which can be charged to the card.	|
+| CardInfo /VirtualCreditCard/VCCCurrencyCode   				| 1  		| String	| The ISO currency code of the VCCCurrentBalance.	|
+| CardInfo /ThreeDomainSecurity   				| 0..1  		|		| 3DS data and transaction results.			|
+| CardInfo /ThreeDomainSecurity/ThreeDSVersion   | 1  		| String	| Three Domain Security version used.	|
+| CardInfo /ThreeDomainSecurity/DSTransactionID  | 0..1 		| String	| Unique transaction identifier assigned by the Directory Server (DS) to identify a single transaction.	|
+| CardInfo /ThreeDomainSecurity/XID              | 0..1 		| String	| Transaction identifier resulting from authentication processing.	|
+| CardInfo /ThreeDomainSecurity/ECI              | 1  		| String	| Electronic Commerce Indicator. See values allowed at [ECI codes](/connectiontypessellers/hotelpullsellers/listsdata/#electronic-commerce-indicator-codes).|
+| CardInfo /ThreeDomainSecurity/CAVV             | 0..1  		| String	| Cardholder Authentication Verification Value.	|
+| CardInfo /ThreeDomainSecurity/PARes            | 0..1  		| String	| Payer Authentication Response.	|
+| CardInfo /ThreeDomainSecurity/PAResStatus      | 0..1  		| String	| Payer Authentication Response status. See values allowed at [PARes Status](/connectiontypessellers/hotelpullsellers/listsdata/#pares-status).|
+| CardInfo /ThreeDomainSecurity/PARes            | 0..1  		| String	| Payer Authentication Response.	|
+| CardInfo /ThreeDomainSecurity/CardEnrolledStatus | 0..1  		| String	| Status of Authentication eligibility. See values allowed at [Card Enrollment Status](/connectiontypessellers/hotelpullsellers/listsdata/#card-enrollment-status).	|
+| CardInfo /ThreeDomainSecurity/SignatureStatus  | 0..1  		| String	| Transaction Signature status.	See values allowed at [Signature Verification Status](/connectiontypessellers/hotelpullsellers/listsdata/#signature-verification-status).|
+| CardInfo /ThreeDomainSecurity/MerchantName     | 0..1  		| String	| Merchant name.	|
+| Rooms /         				| 1      	|		| Rooms within this option (room list).			|
+| Rooms /Room    				| 1..n    	|		| Detail of room. 					|
 | @id      					| 1  		| String	| Room identifier.				|
 | @roomCandidateRefId				| 1  		| Integer	| Room candidate identifier.				|
 | @code    					| 1  		| String	| Room code.						|
 | @description					| 1  		| String	| Room description.					|
-| Rooms/Preferences    				| 0..1    	|		| Preference filters at room level. 					|
-| Rooms/Preferences/Preference   				| 1..n    	|		| Each filter of preference and its values. 		|
-| @type   				| 1    	|		| Type of preference allowed. See types allowed in ** PreferenceType:**  					|
-| RoomCandidates/RoomCandidate			| 1..n    	|		| Room required.					|
+| Rooms /Preferences / 				| 0..1    	|		| Preference filters at room level. 					|
+| Rooms /Preferences /Preference   				| 1..n    	|		| Each filter of preference and its values. 		|
+| @type   				| 1    	|		| Type of preference allowed. See types allowed in **PreferenceType** further down this page   					|
+| RoomCandidates /RoomCandidate			| 1..n    	|		| Room required.					|
 | @id      					| 1  		| Integer	| Id of the requested room (starting at 1).		|
-| RoomCandidates/RoomCandidate/Paxes/Pax	| 1..n    	|		| Pax required.						|
+| RoomCandidates /RoomCandidate/Paxes /Pax	| 1..n    	|		| Pax required.						|
 | @age     					| 1  		| Integer	| Passenger age on the day of check-in. 					|
 | @id      					| 1  		| Integer	| Passenger id (starting at 1, this identifier is at room level). 			|
 | Remarks       				| 0..1    	| 		| Any customer comments for the supplier to consider (see [MetaData](/connectiontypessellers/hotelpullsellers/methods/staticcontent/metadata/) in order to verify if a supplier implements it).	|
-| Preferences    				| 0..1    	|		| Preference filters at the option / general level. 					|
-| Preferences/Preference   				| 1..n    	|		| Each filter of preference and its values. 		|
-| @type   				| 1    	|		| Type of preference allowed. See types allowed in ** PreferenceType:**  					|
+| Preferences /   				| 0..1    	|		| Preference filters at the option / general level. 					|
+| Preferences /Preference   				| 1..n    	|		| Each filter of preference and its values. 		|
+| @type   				| 1    	|		| Type of preference allowed. See types allowed in **PreferenceType** further down this page  					|
   
 
 
@@ -298,6 +298,9 @@ can have four values: OK, RQ, CN and UN.
     the system will immediately cancel the reservation to prevent further possible errors.
 -   *UN:* The reservation was completed but due to a supplier error or a timeout, the reservation status is unknown.
    It is the client's responsibility to check if the booking is OK.
+
+
+{{% alert theme="warning" %}}**Important:** be aware that you can receive an error and a reservation status OK in the same response, in this case the booking is confirmed. You should always consider the reservation status returned.{{% /alert %}}
 
 
 **Note:** *Keep the parameters in the valuation response to include them in the reservation request.*

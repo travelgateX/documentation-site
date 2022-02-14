@@ -85,9 +85,9 @@ The maximum time permitted in our system before the connection is closed is **24
 
 | **Element**			| **Number**	| **Type**	| **Description**		|
 | ----------------------------- | ------------- | ------------- | ----------------------------- |
-| CategoryListRS/UpgradeUTCDate		| 1       	|	DateTime	| Indicates the update date of the information in UTC format.	|
-| CategoryListRS/Categories		| 1          	|		| Root node, list of categories.			|
-| Category    	| 1..n          	| 		|         Category.			|
-| Category/Code	| 1         	| String		| Code.			|
-| Category/Name	| 1         	| String		| Name.			|
+| CategoryListRS /UpgradeUTCDate		| 1       	|	DateTime	| Indicates the update date of the information in UTC format.	|
+| CategoryListRS /Categories		| 1          	|		| Root node, list of categories.			|
+| Category /    	| 1..n          	| 		|         Category.			|
+| Category /Code	| 1         	| String		| Code.			|
+| Category /Name	| 1         	| String		| Name.			|
 

@@ -207,21 +207,21 @@ This is the example of how the form is displayed with the previous xml response.
 | **Element**			| **Number**	| **Type**	| **Description**			|
 | ----------------------------- | ------------- | ------------- | ------------------------------------- |
 | ConfigurationRS	            | 1          	|		        | Root node.				            |
-| Parameters	                | 1          	|               | 				|
-| Parameters/Parameter	        | 1..n          |               | 				| 
-| Parameters/Parameter/TagRunTime |  1        	|Enum               | This is the tag of the configuration node in the requests that you want to contextualize in the activation form. Possible values: _User_, _Password_, _UrlAvail_, _UrlReservation_, _UrlValuation_, _UrlGeneric_, _Parameter_. See [Configuration](/connectiontypessellers/hotelpullsellers/how-to-guides/configuration/)			| 
-| Parameters/Parameter/ProviderTagName	            | 1        	| String  | Name of the parameter in the activation form, as you use our PULL Seller API, it is recomendable to put similar names used on it in a human readbility format. For example: _Availability Url_, _Valuation Url_ ... If it is an extra parameter, you should put a name similar to the key used, and preferly with a human readbility format too. 				| 
-| Parameters/Parameter/Show	            | 1         	| Boolean				| Indicates if you want to show the parameter in the connection form or not. May be you want that some parameter to be filled internally and you do not want the Buyer fill it in. |
-| Parameters/Parameter/Mandatory	            | 1         	| Boolean  | Indicates if the parameter is compulsory or not in order to make a connection without any problem.		| 
-| Parameters/Parameter/Type	            |1          	| Enum  |  The parameter value data type. Posible types are:  _eString_, _eBoolean_, _eUri_. 				| 
-| Parameters/Parameter/Pattern	            |0..1          	| String  | Regular expression to validate the parameter value. If the parameter type is _eBoolean_ or _eUri_ the pattern is mandatory, and has a specific regular expresion. You can find more information about patterns [here](#patterns). If the type is _eString_ or you add the tag _PossibleValues_ the pattern is not mandatory.| 
-| Parameters/Parameter/DescriptionPattern	            |0..1          	|String   | This is the error that the Buyer see if the parameter value do not validate the pattern. Please, fill this node if you want to expedite your connections and avoid future issues.				| 
-| Parameters/Parameter/Description	            |0..1          	|String   |  Value of the tooltip that explains the parameter. Avoid use an only word, avoid use the same value than _ProviderTagName_, and if it is an aditional parameter, avoid use the same value than _Key_. Please, fill this information to help the Buyer to connect you.| 
-| Parameters/Parameter/Key	            |0..1          	| String   | Value of the _key_ attribute as you accept in the xml requests in _Configuration_ node.				| 
-| Parameters/Parameter/DefaultValue	            | 0..1         	| String   | Value by the default, if the Buyer do not change it, all connections to you are set up with this value. | 
-| Parameters/Parameter/ExampleValue	            | 0..1         	| String   | Value of the placeholder for this parameter in the form. If the Buyer do not fill the parameter, the value is empty				| 
-| Parameters/Parameter/PossibleValues	            | 0..1         	|   | 				| 
-| Parameters/Parameter/PossibleValues/PossibleValue	            | 1..n         	| String   | If you return a list of possible parameter values, in the connection form the Buyer only can choose one of this values.|
+| Parameters /	                | 1          	|               | 				|
+| Parameters /Parameter	        | 1..n          |               | 				| 
+| Parameters /Parameter/TagRunTime |  1        	|Enum               | This is the tag of the configuration node in the requests that you want to contextualize in the activation form. Possible values: _User_, _Password_, _UrlAvail_, _UrlReservation_, _UrlValuation_, _UrlGeneric_, _Parameter_. See [Configuration](/connectiontypessellers/hotelpullsellers/how-to-guides/configuration/)			| 
+| Parameters /Parameter/ProviderTagName	            | 1        	| String  | Name of the parameter in the activation form, as you use our PULL Seller API, it is recomendable to put similar names used on it in a human readbility format. For example: _Availability Url_, _Valuation Url_ ... If it is an extra parameter, you should put a name similar to the key used, and preferly with a human readbility format too. 				| 
+| Parameters /Parameter/Show	            | 1         	| Boolean				| Indicates if you want to show the parameter in the connection form or not. May be you want that some parameter to be filled internally and you do not want the Buyer fill it in. |
+| Parameters /Parameter/Mandatory	            | 1         	| Boolean  | Indicates if the parameter is compulsory or not in order to make a connection without any problem.		| 
+| Parameters /Parameter/Type	            |1          	| Enum  |  The parameter value data type. Posible types are:  _eString_, _eBoolean_, _eUri_. 				| 
+| Parameters /Parameter/Pattern	            |0..1          	| String  | Regular expression to validate the parameter value. If the parameter type is _eBoolean_ or _eUri_ the pattern is mandatory, and has a specific regular expresion. You can find more information about patterns [here](#patterns). If the type is _eString_ or you add the tag _PossibleValues_ the pattern is not mandatory.| 
+| Parameters /Parameter/DescriptionPattern	            |0..1          	|String   | This is the error that the Buyer see if the parameter value do not validate the pattern. Please, fill this node if you want to expedite your connections and avoid future issues.				| 
+| Parameters /Parameter/Description	            |0..1          	|String   |  Value of the tooltip that explains the parameter. Avoid use an only word, avoid use the same value than _ProviderTagName_, and if it is an aditional parameter, avoid use the same value than _Key_. Please, fill this information to help the Buyer to connect you.| 
+| Parameters /Parameter/Key	            |0..1          	| String   | Value of the _key_ attribute as you accept in the xml requests in _Configuration_ node.				| 
+| Parameters /Parameter/DefaultValue	            | 0..1         	| String   | Value by the default, if the Buyer do not change it, all connections to you are set up with this value. | 
+| Parameters /Parameter/ExampleValue	            | 0..1         	| String   | Value of the placeholder for this parameter in the form. If the Buyer do not fill the parameter, the value is empty				| 
+| Parameters /Parameter/PossibleValues	            | 0..1         	|   | 				| 
+| Parameters /Parameter/PossibleValues/PossibleValue	            | 1..n         	| String   | If you return a list of possible parameter values, in the connection form the Buyer only can choose one of this values.|
 
 \
 \

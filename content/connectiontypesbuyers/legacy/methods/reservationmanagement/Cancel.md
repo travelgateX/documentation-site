@@ -70,9 +70,9 @@ is closed is **180000** milliseconds.
 | ----------------------------- | ------------- | ------------- | ----------------------------------------------------- |
 | CancelRQ   			| 1          	|		| Root node.						|
 | @hotelCode 			| 1    		| String	| Hotel code.						|
-| Locators   			| 1          	|		| Locator Information (it's mandatory to indicate either the client or supplier's).	|
-| Locators/Client		| 0..1 		| String	| Client locator.					|
-| Locators/Provider		| 0..1 		| String	| Supplier locator.					|
+| Locators /  			| 1          	|		| Locator Information (it's mandatory to indicate either the client or supplier's).	|
+| Locators /Client		| 0..1 		| String	| Client locator.					|
+| Locators /Provider	| 0..1 		| String	| Supplier locator.					|
 | StartDate  			| 1    		| String	| Start date of booking.				|
 | EndDate    			| 1    		| String	| End date of booking.					|
 | Holder   				| 0..1		|		| Holder of the booking.  |
@@ -109,15 +109,15 @@ is closed is **180000** milliseconds.
 | CancelRS   				| 1          	|		| Root node.							|
 | ProviderLocator			| 1    		| String	| Supplier locator.						|
 | CancelId   				| 0..1 		| String	| Cancellation id.  						|
-| Price      				| 0..1       	|		| Fee for the cancellation. (see [MetaData](https://docs.travelgatex.com/legacy/docs/hotel/methods/metadata/) in order to verify if supplier informs of it).						|
+| Price      				| 0..1       	|		| Fee for the cancellation. (see [MetaData](/connectiontypesbuyers/legacy/methods/staticcontent/metadata/) in order to verify if supplier informs of it).						|
 | @currency  				| 1    		| String	| Currency code. 						|
 | @amount    				| 1    		| Decimal	| Amount.  						|
 | @binding   				| 1    		| Boolean	| Identifies if the price is binding (When it true the sale price returned **must** not be less than the price informed. |
 | @commission				| 1    		| Decimal	| Commission (-1 = not specified - specified in the supplier contract, 0 = net price, X = % of the commission that applies to the amount).		|
-| TransactionStatus			| 1          	|		| Transaction Status.						|
-| TransactionStatus/ComunicationStatus	| 1    		| String	| Status communication (OFFLINE, OK and KO).			|
-| TransactionStatus/RSStatus		| 1    		| String	| Status response: DESCONOCIDO - Unknown; EXISTE - Exists; EXISTECANCELADA - Cancelled; NO_EXISTE - Does not exist	|
-| TransactionStatus/ResStatus		| 1    		| String	| Status of the booking (OK = confirmed, RQ = on request, CN = cancelled, UN = unknown).	|
+| TransactionStatus	/		| 1          	|		| Transaction Status.						|
+| TransactionStatus /ComunicationStatus	| 1    		| String	| Status communication (OFFLINE, OK and KO).			|
+| TransactionStatus /RSStatus		| 1    		| String	| Status response: DESCONOCIDO - Unknown; EXISTE - Exists; EXISTECANCELADA - Cancelled; NO_EXISTE - Does not exist	|
+| TransactionStatus /ResStatus		| 1    		| String	| Status of the booking (OK = confirmed, RQ = on request, CN = cancelled, UN = unknown).	|
 
 
 
