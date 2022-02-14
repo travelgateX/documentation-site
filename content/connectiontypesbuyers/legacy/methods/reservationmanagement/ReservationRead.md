@@ -73,9 +73,9 @@ is closed.
 | **Element** 		| **Number**	| **Type**	| **Description**					|
 | --------------------- | ------------- | ------------- | ----------------------------------------------------- |
 | ReservationReadRQ	| 1		|		| Root node.						|
-| Locators   		| 1|		| Information about the locators (it is mandatory to indicate either client or supplier's locator). |
-| Locators/Client	| 0..1		| String	| Client locator.					|
-| Locators/Provider	| 0..1		| String	| Supplier locator.					|
+| Locators /  		| 1 |		| Information about the locators (it is mandatory to indicate either client or supplier's locator). |
+| Locators /Client	| 0..1		| String	| Client locator.					|
+| Locators /Provider	| 0..1		| String	| Supplier locator.					|
 | Currency   		| 1    		| String	| Currency code.					|
 | StartDate  		| 0..1    		| String	| Start date of booking. 				|
 | EndDate    		| 0..1    		| String	| End date of booking.					|
@@ -134,52 +134,52 @@ is closed.
 | **Element**				| **Number**	| **Type**	| **Description**				|
 | ------------------------------------- | ------------- | ------------- | --------------------------------------------- |
 | ReservationReadRS			| 1 |   	| Root node.					|
-| Locators   				   | 1 |		|Information about the locators.|
-| Locators/Client			| 0..1 		| String	| Client locator.				|
-| Locators/Provider			| 0..1 		| String	| Supplier locator.				|
-| Locators/Property			| 0..1 		| String	| Property locator(see Metadata method in order to verify if a supplier implements it).				|
-| Hotel      				| 0..1       	|		| Hotel reservation.				|
-| Hotel/Code 				| 0..1 		| String	| Hotel Code.					|
-| Hotel/Name 				| 0..1 		| String	| Hotel Name.					|
-| Hotel/City 				| 0..1 		| String	| Hotel city.					|
-| Hotel/CreationDate			| 0..1 		| String 	| Date of booking.    			|
-| Hotel/StartDate			| 0..1    		| String	| Check-in date.			|
-| Hotel/EndDate				| 0..1    		| String	| Check out date.				|
-| Hotel/MealPlanCode			| 0..1 		| String	| Booking Mealplan code.			|
-| Hotel/Holder				| 0..1 		| String	| Reservation Holder .				|
+| Locators /   				   | 1 |		|Information about the locators.|
+| Locators /Client			| 0..1 		| String	| Client locator.				|
+| Locators /Provider		| 0..1 		| String	| Supplier locator.				|
+| Locators /Property		| 0..1 		| String	| Property locator(see Metadata method in order to verify if a supplier implements it).				|
+| Hotel /      				| 0..1       	|		| Hotel reservation.				|
+| Hotel /Code 				| 0..1 		| String	| Hotel Code.					|
+| Hotel /Name 				| 0..1 		| String	| Hotel Name.					|
+| Hotel /City 				| 0..1 		| String	| Hotel city.					|
+| Hotel /CreationDate			| 0..1 		| String 	| Date of booking.    			|
+| Hotel /StartDate			| 0..1    		| String	| Check-in date.			|
+| Hotel /EndDate				| 0..1    		| String	| Check out date.				|
+| Hotel /MealPlanCode			| 0..1 		| String	| Booking Mealplan code.			|
+| Hotel /Holder				| 0..1 		| String	| Reservation Holder .				|
 | @name				| 1    		| String	| Holder name.					|
 | @surname				| 1    		| String	| Holder surname.				|
-| Hotel/Price				| 1    		| String	| Price of the reservation.   				|
+| Hotel /Price				| 1    		| String	| Price of the reservation.   				|
 | @currency				| 1    		| String	|		Displays the currency provided by the supplier				|
 | @amount				| 1    		| Decimal	| Total amount for the booking.					|
 | @binding				| 1    		| Boolean	| Identifies if is the price is binding (When true the sale price returned must not be less than the price informed). |
 | @commission				| 1    		| Decimal	| Commission (-1 = not specified), 0 = net  price, X = % of the commission applied to the amount . |
-| Hotel/Rooms				| 0..1       	|		| List of rooms reserved				|
-| Hotel/Rooms/Room			| 1..n       	|		| Details of room reserved.				|
+| Hotel /Rooms	/			| 0..1       	|		| List of rooms reserved				|
+| Hotel /Rooms /Room		| 1..n       	|		| Details of room reserved.				|
 | @id   				| 0..1 		| String	| Identifier of the room.			|
 | @roomCandidateRefId			| 0..1 		| Integer	| Identifier of room candidate.			|
 | @code 				| 0..1 		| String	| Room code.     				|
 | @description				| 0..1 		| String	| Room description.				|
-| Hotel/RoomCandidates			| 0..1       	|		| Rooms requested at the time of booking.|
-| Hotel/RoomCandidates/RoomCandidate	| 1..n       	|		| Room required.				|
+| Hotel /RoomCandidates	/		| 0..1       	|		| Rooms requested at the time of booking.|
+| Hotel /RoomCandidates /RoomCandidate	| 1..n       	|		| Room required.				|
 | @id					| 0..1 		| Integer	| Id of the requested room (starting at 1). 	|
-| RoomCandidates/RoomCandidate/Paxes/Pax| 1..n       	|		| Pax required.					|
+| RoomCandidates /RoomCandidate/Paxes /Pax | 1..n       	|		| Pax required.					|
 | @age					| 0..1 		| Integer	| Passenger age on the day of check-in.				|
 | @id					| 0..1 		| Integer	| Id of the requested room (starting at 1).	|
-| Hotel/CancelPenaltiesCancelPenalties	| 0..1       	|		| Information of cancellation policies.		|
+| Hotel /CancelPenaltiesCancelPenalties	| 0..1       	|		| Information of cancellation policies.		|
 | @nonRefundable			| 1    		| Boolean	| Indicate if this option is nonRefundable (true or false). |
-| Hotel/CancelPenalties/CancelPenalty	| 0..n       	|		| Listing of cancellation penalties.		|
-| Hotel/CancelPenalties/CancelPenalty/HoursBefore | 1	|	String	|Number of hours prior to arrival day in which this Cancellation policy applies. |
-| Hotel/CancelPenalties/CancelPenalty/Deadline    | 1          | String   | Date on UTC Standard TimeZone in which this Cancellation policy applies (ISO 8601 e.g: 01/07/2016T05:00:00Z)  |
-| Hotel/CancelPenalties/CancelPenalty/CalculatedDeadline | 1          | Boolean  |  Indicate if the Deadline is returned by the supplier or it's been calculated by TravelGate -> *true* = has been calculated by XTG / *false* = bypass of supplier data without calculation |
-| Hotel/CancelPenalties/CancelPenalty/Penalty |   1 	|         	| Contains the value to apply.			|
+| Hotel /CancelPenalties /CancelPenalty	| 0..n       	|		| Listing of cancellation penalties.		|
+| Hotel /CancelPenalties /CancelPenalty/HoursBefore | 1	|	String	|Number of hours prior to arrival day in which this Cancellation policy applies. |
+| Hotel /CancelPenalties /CancelPenalty/Deadline    | 1          | String   | Date on UTC Standard TimeZone in which this Cancellation policy applies (ISO 8601 e.g: 01/07/2016T05:00:00Z)  |
+| Hotel /CancelPenalties /CancelPenalty/CalculatedDeadline | 1          | Boolean  |  Indicate if the Deadline is returned by the supplier or it's been calculated by TravelGate -> *true* = has been calculated by XTG / *false* = bypass of supplier data without calculation |
+| Hotel /CancelPenalties /CancelPenalty/Penalty |   1 	|         	| Contains the value to apply.			|
 | @type 				| 1    		| String	| Type of penalty Possible values: "Noches" (nights) , "Porcentaje" (percentage) ,"Importe" (price value). |
 | @paymentType				| 1    		| String	| Indicates payment type.		|
 | @currency				| 1    		| String	| Currency code.				|
-| Hotel/Remarks				| 0..1 		| String	| Remarks.					|
-| TransactionStatus			| 1    		| Trans.	| Status.					|
-| TransactionStatus/ComunicationStatus	| 1    		| String	| Status communication (OFFLINE, OK and KO).	|
-| TransactionStatus/RSStatus		| 1    		| String	|  Response status - DESCONOCIDO (Unknown), EXISTE (Exists), EXISTECANCELADA (exists but it's cancelled), NO_EXISTE (Does not exist). |
-| TransactionStatus/ResStatus		| 1    		| String	| Status booking (OK = confirmed, RQ = on request, CN = cancelled, UN = unknown). |
+| Hotel /Remarks				| 0..1 		| String	| Remarks.					|
+| TransactionStatus	/		| 1    		| Trans.	| Status.					|
+| TransactionStatus /ComunicationStatus	| 1    		| String	| Status communication (OFFLINE, OK and KO).	|
+| TransactionStatus /RSStatus		| 1    		| String	|  Response status - DESCONOCIDO (Unknown), EXISTE (Exists), EXISTECANCELADA (exists but it's cancelled), NO_EXISTE (Does not exist). |
+| TransactionStatus /ResStatus		| 1    		| String	| Status booking (OK = confirmed, RQ = on request, CN = cancelled, UN = unknown). |
                 
 

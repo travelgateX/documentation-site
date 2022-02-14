@@ -50,8 +50,8 @@ The response object contains the status of the request and any possible errors a
 ~~~
 
 
-### Common Elements RQ Description
 
+### Common Elements RQ Description
 
 
 | **Element**                          | **Number** | **Type** | **Description** |
@@ -59,23 +59,23 @@ The response object contains the status of the request and any possible errors a
 | HotelBaseRQ                          | 1          |          | Root node. |
 | echoToken                            | 0..1       | String   | Echo token to be returned in response (used for test purposes only). 
 | timeoutMilliseconds                  | 1          | Integer  | Maximum time for a response from the supplier's system. |
-| source                               | 1          |          |  	Information about source requesting the operation. |
-| source/agencyCode                    | 0..1       | String   |  	Agency code requesting the operation (deprecated). |
-| source/languageCode                  | 1          | String   |  	Language code (ISO 3166-1 alpha-2) format lowercase. |
-| filterAuditData                      | 1          |          | Activates transaction data sent & received in the supplier's native format. |
-| filterAuditData/registerTransactions | 1          | Boolean  | Returns all the transactions (XMLs) exchanged with the supplier.|
+| source /                             | 1          |          |  	Information about source requesting the operation. |
+| source /agencyCode                   | 0..1       | String   |  	Agency code requesting the operation (deprecated). |
+| source /languageCode                 | 1          | String   |  	Language code (ISO 3166-1 alpha-2) format lowercase. |
+| filterAuditData /                    | 1          |          | Activates transaction data sent & received in the supplier's native format. |
+| filterAuditData /registerTransactions | 1          | Boolean  | Returns all the transactions (XMLs) exchanged with the supplier.|
 | optionsQuota                         | 0..1       | Integer  | Sets the max number of options by MealPlan. |
 | ContinuationToken                    | 0..1       | String   | Internal Token to identify the next set of HotelList or RoomList. |
 | @expectedRange                       | 0..1       | Integer  |  	Number of hotels expected in HotelList call. |
-| Configuration                        | 1          |          | The info required to access the supplier's system. |
-| Configuration/User                   | 0..1       | String   | User code to connect to supplier. |
-| Configuration/Password               | 0..1       | String   | Password for the connection. |
-| Configuration/UrlGeneric             | 0..1       | String   | Supplier URL used for multiple methods.|
-| Configuration/UrlAvail               | 0..1       | String   | Specific Url for Availability method. |
-| Configuration/UrlValuation           | 0..1       | String   | Specific Url for Valuation method. |
-| Configuration/UrlReservation         | 0..1       | String   | Specific Url for Reservation method. |
-| Configuration/Parameters             | 0..1       |          | Parameters for additional information. |
-| Configuration/Parameters/Parameter   | 0..n       |          | List of parameters. |
+| Configuration /                      | 1          |          | The info required to access the supplier's system. |
+| Configuration /User                  | 0..1       | String   | User code to connect to supplier. |
+| Configuration /Password              | 0..1       | String   | Password for the connection. |
+| Configuration /UrlGeneric            | 0..1       | String   | Supplier URL used for multiple methods.|
+| Configuration /UrlAvail              | 0..1       | String   | Specific Url for Availability method. |
+| Configuration /UrlValuation          | 0..1       | String   | Specific Url for Valuation method. |
+| Configuration /UrlReservation        | 0..1       | String   | Specific Url for Reservation method. |
+| Configuration /Parameters /          | 0..1       |          | Parameters for additional information. |
+| Configuration /Parameters /Parameter | 0..n       |          | List of parameters. |
 | @key                                 | 1          | String   | Contains the keyword/Id to identify a parameter. |
 | @value                               | 1          | String   | Contains the parameter values |
 
@@ -83,9 +83,10 @@ The response object contains the status of the request and any possible errors a
 
 ### Detailed description
 
+
 **optionsQuota:**
 
-This new tag will be used only for those suppliers returning a very large number of options, about 20.000+ in the same response. In order to avoid this, the client can set the numbers of options wanted by MealPlan, as long as the supplier returns it in this call (see [MetaData](https://docs.travelgatex.com/connectiontypesbuyers/legacy/methods/staticcontent/metadata/) *AllowsBusinessRules*). If the supplier has ImplementsBusinessRules = True, the client can then choose between differentbusiness rules to filter the options they are interested in (see in Avail). We also have established a system level limit, so that if the OptionsQuota set by the client is higher than the established limit we then use the smallest of those two values. 
+This new tag will be used only for those suppliers returning a very large number of options, about 20.000+ in the same response. In order to avoid this, the client can set the numbers of options wanted by MealPlan, as long as the supplier returns it in this call (see [MetaData](/connectiontypesbuyers/legacy/methods/staticcontent/metadata/) *AllowsBusinessRules*). If the supplier has ImplementsBusinessRules = True, the client can then choose between differentbusiness rules to filter the options they are interested in (see in Avail). We also have established a system level limit, so that if the OptionsQuota set by the client is higher than the established limit we then use the smallest of those two values. 
 
 
 
@@ -118,6 +119,7 @@ This new tag will be used only for those suppliers returning a very large number
 ~~~
 
 
+
 ### Common Elements RS Description
 
 
@@ -128,17 +130,17 @@ This new tag will be used only for those suppliers returning a very large number
 | OperationImplemented              | 1          | Boolean  | Informs whether the method has been implemented by the supplier. |
 | ContinuationToken                 | 0..1       | String   | Internal Token to identify the next set of HotelList or the next set of RoomList. |
 | @expectedRange                    | 0..1       | Integer  | Number of hotels/rooms expected in HotelList/RoomList call. |
-| applicationErrors                 | 0..n       |          | Application errors reported by supplier. |
-| applicationErrors/type            | 1          | String   | [Error Type as specified by XML Travelgate](https://docs.travelgatex.com/legacy/hotel/methods/messages/listsdata/#error-codes). |
-| applicationErrors/code            | 1          | String   | Native error code reported by supplier. |
-| applicationErrors/description     | 1          | String   | Error description. |
-| auditData                         | 1          |          | Data sent & received in the supplier's native format.|
-| auditData/transactions            | 0..n       |          | List of transactions data. |
-| auditData/transactions/timeStamp  | 1          | Integer  | TimeStamp of each transaction. |
-| auditData/transactions/RQ         | 1          | String   | Transaction Request. |
-| auditData/transactions/RS         | 1          | String   | Transaction Response. |
-| auditData/timeStamp                | 1          | Integer  | Time when the request has been processed.  |
-| auditData/processTimeMilliseconds | 1          | Integer  | Process time in milliseconds |
+| applicationErrors /               | 0..n       |          | Application errors reported by supplier. |
+| applicationErrors /type           | 1          | String   | [Error Type as specified by XML Travelgate](/connectiontypesbuyers/legacy/listsdata/#error-codes). |
+| applicationErrors /code           | 1          | String   | Native error code reported by supplier. |
+| applicationErrors /description    | 1          | String   | Error description. |
+| auditData /                       | 1          |          | Data sent & received in the supplier's native format.|
+| auditData /transactions /         | 0..n       |          | List of transactions data. |
+| auditData /transactions /timeStamp | 1          | Integer  | TimeStamp of each transaction. |
+| auditData /transactions /RQ       | 1          | String   | Transaction Request. |
+| auditData /transactions /RS       | 1          | String   | Transaction Response. |
+| auditData /timeStamp              | 1          | Integer  | Time when the request has been processed.  |
+| auditData /processTimeMilliseconds | 1          | Integer  | Process time in milliseconds |
 
 
 
@@ -160,6 +162,7 @@ ContinuationToken field is no longer returned in the response (see the example
 in Common Elements RS). Once the tag is not returned the hotel list or the room list are
 complete. The value of this tag is an internal Token identifying
 the next set of HotelList/RoomList to be returned.
+
 
 **expectedRange** :
 

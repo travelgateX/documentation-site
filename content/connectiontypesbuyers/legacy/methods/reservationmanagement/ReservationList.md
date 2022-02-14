@@ -161,7 +161,7 @@ is closed, is of **240000** milliseconds.
 | **Element**					| **Number**	| **Type** | **Description**				|
 | --------------------------------------------- | ------------- | -------- | ------------------------------------------ |
 | ReservationListRS              		| 1             |	   | Root node.					|
-| ReservationListRS/Reservations 		| 0..1          |	   | Reservations.				|
-| ReservationListRS/Reservations/Reservation	| 1             |	   | Same structure as [ReservationReadRS](https://docs.travelgatex.com/connectiontypesbuyers/legacy/methods/reservationmanagement/reservationread/).	|
+| ReservationListRS /Reservations /		| 0..1          |	   | Reservations.				|
+| ReservationListRS /Reservations /Reservation	| 1             |	   | Same structure as [ReservationReadRS](/connectiontypesbuyers/legacy/methods/reservationmanagement/reservationread/).	|
 
 

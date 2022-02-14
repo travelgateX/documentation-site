@@ -7,7 +7,7 @@ permalink= "/docs/hotel/DSF/StaticConfiguration"
 weight = 14
 +++
 
-{{% alert theme="warning" %}}**Important:** be aware that this method is [deprecated](https://knowledge.travelgatex.com/what-is-the-difference-between-staticconfiguration-legacy-and-metadata-legacy) and will not be updated. [MetaData](/connectiontypessellers/hotelpullsellers/methods/staticcontent/metadata/) is the new and improved version of StaticConfiguration.{{% /alert %}}
+{{% alert theme="warning" %}}**Important:** be aware that this method is [deprecated](https://knowledge.travelgatex.com/what-is-the-difference-between-staticconfiguration-legacy-and-metadata-legacy) and will not be updated. [MetaData](/connectiontypesbuyers/legacy/methods/staticcontent/metadata/) is the new and improved version of StaticConfiguration.{{% /alert %}}
 
 
 ### Method Goals
@@ -28,10 +28,7 @@ The request does not require any elements - empty request.
 ### Response Format
 
 
-The XML response contains many elements of the supplier's configuration: number of
-hotels, number of cities and number of areas available, maximum number of
-*roomcandidate*, maximum number of paxes in a *roomcandidate*, release days,
-minimum stay, list of languages supported ...
+The XML response contains many elements of the supplier's configuration: number of hotels, number of cities and number of areas available, maximum number of *roomcandidate*, maximum number of paxes in a *roomcandidate*, release days, minimum stay, list of languages supported ...
 
 
 
@@ -44,8 +41,8 @@ minimum stay, list of languages supported ...
 ~~~
 
 
-### StaticConfigurationRQ Description
 
+### StaticConfigurationRQ Description
 
   
 | **Element**			| **Number**	| **Type**	| **Description**	|
@@ -165,8 +162,8 @@ minimum stay, list of languages supported ...
 ~~~
 
 
-### StaticConfigurationRS Description
 
+### StaticConfigurationRS Description
 
 
 | **Element**				| **Number**	| **Type**	| **Description**						|
@@ -258,6 +255,7 @@ minimum stay, list of languages supported ...
 | DestinationRegex /Regex			| 1..n		| String | Regex. |
 
 
+
 ### Detailed description
 
 
@@ -269,6 +267,7 @@ These parameters are XMLTravelgate's internal parameters. They define the type o
 
 
 **The following tags are set as FALSE by default:**
+
 (This is either because the supplier doesn't support it or because is has not been updated yet)
 
 -   **ImplementsDailyRatePlan**

@@ -32,22 +32,20 @@ The returned XML contains a template of all fields used by the supplier.
 
 ### RuntimeConfigurationRQ Example
 
-
 ~~~xml
     <RuntimeConfigurationRQ>
     </RuntimeConfigurationRQ>
 ~~~
 
 
-### RuntimeConfigurationRQ Description
 
+### RuntimeConfigurationRQ Description
 
 
 | **Element**			| **Number**	| **Type**	| **Description**	|
 | ----------------------------- | ------------- | ------------- | --------------------- |
 | RuntimeConfigurationRQ	| 1          	|		| Root node.		|
                  
-
 
 
 ### RuntimeConfigurationRS Example
@@ -67,8 +65,8 @@ The returned XML contains a template of all fields used by the supplier.
 ~~~
 
 
-### ConfiguracionRunTimeRS Description
 
+### ConfiguracionRunTimeRS Description
 
  
 | **Element**			| **Number**	| **Type**	| **Description**			|

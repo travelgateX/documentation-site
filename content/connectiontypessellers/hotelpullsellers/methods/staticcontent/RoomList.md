@@ -94,17 +94,19 @@ Go to [Common-Elements](/connectiontypessellers/hotelpullsellers/methods/common-
 
 | **Element**		| **Number**	| **Type**	| **Description**	|
 | --------------------- | ------------- | ------------- | --------------------- |
-| RoomListRS/UpgradeUTCDate		| 1       	|	DateTime	| Indicates the update date of the information in UTC format.	|
-| RoomListRS/RoomsInfo 		| 1          	|		| Root node, list of rooms		|
-|RoomInfo | 1..n ||Room info.|
-|RoomInfo/Code | 1 | String | Code. |
-|RoomInfo/Name | 1 | String | Name. |
+| RoomListRS/ UpgradeUTCDate		| 1       	|	DateTime	| Indicates the update date of the information in UTC format.	|
+| RoomListRS/ RoomsInfo /		| 1          	|		| Root node, list of rooms		|
+|RoomInfo / | 1..n ||Room info.|
+|RoomInfo /Code | 1 | String | Code. |
+|RoomInfo /Name | 1 | String | Name. |
 
 
 
 ### Detailed description 
 
 
+
 **Room types & languages**
+
 
 You can define in AvailRQ (Common Elements) which language you want the room description returned in  - as long as the supplier supports the selected language, otherwise the default language is most commonly English. The standard languages are: English & Spanish.

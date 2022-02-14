@@ -87,26 +87,26 @@ Our system allows for a maximum of **180000** milliseconds before the connection
 | ValuationRQ                            | 1          |          | Root node.      |
 | StartDate                              | 1          | String   | Start date of rate search. |
 | EndDate                                | 1          | String   | End date of rates search. |
-| OnRequest                              | 1          | Boolean  | Indicates if you want to receive the on request options in AvailRS, as long as the supplier returns it in this method (see [MetaData](/connectiontypessellers/hotelpullsellers/methods/staticcontent/metadata/)). |
-| BlockOption                            | 1          | Boolean  | Indicates if you want to block the option selected in AvailRS, as long as the supplier allows it in this method (see [MetaData](/connectiontypessellers/hotelpullsellers/methods/staticcontent/metadata/)). |
+| OnRequest                              | 1          | Boolean  | Indicates if you want to receive the on request options in AvailRS, as long as the supplier returns it in this method (see [MetaData](/connectiontypesbuyers/legacy/methods/staticcontent/metadata/)). |
+| BlockOption                            | 1          | Boolean  | Indicates if you want to block the option selected in AvailRS, as long as the supplier allows it in this method (see [MetaData](/connectiontypesbuyers/legacy/methods/staticcontent/metadata/)). |
 | MealPlanCode                           | 1          | String   | MealPlan code.  |
 | HotelCode                              | 1          | String   | Hotel code.     |
-| PaymentType                            | 1          | String   | Indicates payment type (See full type list at [Lists of Data](/connectiontypessellers/hotelpullsellers/listsdata/)). |
+| PaymentType                            | 1          | String   | Indicates payment type (See full type list at [Lists of Data](/connectiontypesbuyers/legacy/listsdata/)). |
 | OptionType                             | 1          | String   | Indicates option types. |
 | Nationality                            | 1       | String   | Guest nationality (use ISO3166_1_alfa_2). |
-| Rooms                                  | 1          |          | Rooms in this option (room list). |
-| Rooms/Room                             | 1..n       |          | Room Details. |
+| Rooms /                                | 1          |          | Rooms in this option (room list). |
+| Rooms /Room                            | 1..n       |          | Room Details. |
 | @id                                    | 1          | String   | Room Identifier. |
 | @roomCandidateRefId                    | 1          | Integer  | Room candidate Identifier. |
 | @code                                  | 1          | String   | Room code.      |
 | @description                           | 1          | String   | Room description. |
-| RoomCandidates/RoomCandidate           | 1..n       |          | Room required.  |
+| RoomCandidates /RoomCandidate          | 1..n       |          | Room required.  |
 | @id                                    | 1          | Integer  | Id of requested room (starting at 1). |
-| RoomCandidates/RoomCandidate/Paxes/Pax | 1..n       |          | Pax required.   |
+| RoomCandidates /RoomCandidate/Paxes/Pax | 1..n       |          | Pax required.   |
 | @age                                   | 1          | Integer  | Passenger age on the day of check-in. |
 | @id                                    | 1          | Integer  | Passenger id (starting at 1). |
-| Parameters                             | 0..1       |          | Additional parameters reported in AvailRS. **If you receive parameters in AvailRS it is mandatory to send them exactly the same as received.** If you don't send exactly the same parameters as received the Valuation could fail. |
-| Parameters/Parameter                   | 0..n       |          | Additional parameter requiring integration. |
+| Parameters /                           | 0..1       |          | Additional parameters reported in AvailRS. **If you receive parameters in AvailRS it is mandatory to send them exactly the same as received.** If you don't send exactly the same parameters as received the Valuation could fail. |
+| Parameters /Parameter                  | 0..n       |          | Additional parameter requiring integration. |
 | @key                                   | 1          | String   | Contains keyword/Id to identify a parameter. |
 | @value                                 | 1          | String   | Contains parameter value. |
 
@@ -161,8 +161,8 @@ Our system allows for a maximum of **180000** milliseconds before the connection
 | **Element**                               | **Number** | **Type** | **Description** |
 | ----------------------------------------- | ---------- | -------- | --------------- |
 | ValuationRS                               | 1          |          | Root node.      |
-| Parameters                                | 0..1       |          | Parameters for additional information. |
-| Parameters/Parameter                      | 1..n       |          | List of parameters. |
+| Parameters /                              | 0..1       |          | Parameters for additional information. |
+| Parameters /Parameter                     | 1..n       |          | List of parameters. |
 | @key                                      | 1          | String   | Contains the keyword/Id to identify a parameter. |
 | @value                                    | 1          | String   | Contains parameter value. |
 | Status                                    | 1          |          | Status option (OK = available, RQ = on request). |
@@ -171,36 +171,36 @@ Our system allows for a maximum of **180000** milliseconds before the connection
 | @amount                                   | 1          | Decimal  | Option Amount. |
 | @binding                                  | 1          | Boolean  | Identifies if the price is binding (When true the sale price returned must not be less than the price informed). |
 | @commission                               | 1          | Decimal  | Commission: -1 = not specified (indicated in contract with the supplier), 0 = net price, X = % of the commission applied to the amount. |
-| CancelPenalties                           | 1          |          | Cancellation policy details. |
+| CancelPenalties /                         | 1          |          | Cancellation policy details. |
 | @nonRefundable                            | 1          | Boolean  | Indicate if this option is nonRefundable (true or false). |
-| CancelPenalties/CancelPenalty             | 0..n       |          | Listing cancellation penalties. |
-| CancelPenalties/CancelPenalty/HoursBefore | 1          | String   | Number of hours prior to checkin date in which this Cancellation policy applies . |
-| CancelPenalties/CancelPenalty/Deadline    | 1          | String   | Date on UTC Standard TimeZone in which this Cancellation policy applies (ISO 8601 e.g: 01/07/2016T05:00:00Z)  |
-| CancelPenalties/CancelPenalty/CalculatedDeadline | 1          | Boolean  |  Indicate if the Deadline is returned by the supplier or it's been calculated by TravelGate -> *true* = has been calculated by XTG / *false* = bypass of supplier data without calculation |
-| CancelPenalties/CancelPenalty/Penalty     | 1          |          | Contains the value to apply. |
+| CancelPenalties /CancelPenalty            | 0..n       |          | Listing cancellation penalties. |
+| CancelPenalties /CancelPenalty/HoursBefore | 1          | String   | Number of hours prior to checkin date in which this Cancellation policy applies . |
+| CancelPenalties /CancelPenalty/Deadline    | 1          | String   | Date on UTC Standard TimeZone in which this Cancellation policy applies (ISO 8601 e.g: 01/07/2016T05:00:00Z)  |
+| CancelPenalties /CancelPenalty/CalculatedDeadline | 1          | Boolean  |  Indicate if the Deadline is returned by the supplier or it's been calculated by TravelGate -> *true* = has been calculated by XTG / *false* = bypass of supplier data without calculation |
+| CancelPenalties /CancelPenalty/Penalty     | 1          |          | Contains the value to apply. |
 | @type					    | 1          | String   | Type of possible penalty values: "Noches" (nights) , "Porcentaje" (percentage) ,"Importe" (price value). |
 | @currency				    | 1          | String   | Currency code. |
-| @paymentType                            | 1          | String   | Indicates payment type of penalty (See full type list at [Lists of Data](/connectiontypessellers/hotelpullsellers/listsdata/)) . |
-| CancelPenalties/CancelPenalty/Deadline | 0..1          | String   | Cancellation fees will be applicabled between this date and check-in date. |
-| Remarks 				    | 0..1       | String   | Remarks (see [MetaData](/connectiontypessellers/hotelpullsellers/methods/staticcontent/metadata/) in order to verify if a supplier implements it).       |
-| PaymentOptions			    | 0..1       | String   | Payment Types allowed by the supplier. This tag  is mandatory only if payment type is different than MerchantPay. |
-| PaymentOptions/Cards			    | 0..1		 | 	    | List of cards allowed. |
-| PaymentOptions/Cards/Card		    | 1..n       |          | Details of card. |
-| @code   				    | 1          | String   | Code card. Se the full list of card codes at [Lists of Data](/connectiontypessellers/hotelpullsellers/listsdata/) |
-| Fees					    | 0..1       | 	    | Contains a list of fees. |
-| Fees/Fee				    | 1..n       |          | Contains details of the fee. |
-| Fees/Fee/Code			    	    | 1          |   String | Specifies the fee code in case it has one. |
+| @paymentType                            | 1          | String   | Indicates payment type of penalty (See full type list at [Lists of Data](/connectiontypesbuyers/legacy/listsdata/)) . |
+| CancelPenalties /CancelPenalty/Deadline | 0..1          | String   | Cancellation fees will be applicabled between this date and check-in date. |
+| Remarks 				    | 0..1       | String   | Remarks (see [MetaData](/connectiontypesbuyers/legacy/methods/staticcontent/metadata/) in order to verify if a supplier implements it).       |
+| PaymentOptions /		       | 0..1       | String   | Payment Types allowed by the supplier. This tag  is mandatory only if payment type is different than MerchantPay. |
+| PaymentOptions /Cards			   | 0..1		 | 	    | List of cards allowed. |
+| PaymentOptions /Cards/Card	   | 1..n       |          | Details of card. |
+| @code   				    | 1          | String   | Code card. Se the full list of card codes at [Lists of Data](/connectiontypesbuyers/legacy/listsdata/) |
+| Fees /				    | 0..1       | 	    | Contains a list of fees. |
+| Fees /Fee				    | 1..n       |          | Contains details of the fee. |
+| Fees /Fee/Code		    	    | 1          |   String | Specifies the fee code in case it has one. |
 | @includedPriceOption			    | 1		 | Boolean  | Indicates if the fee is included or not in the final price (value indicated in the node Price in ValuationRS). |
 | @description				    | 1          | String   | Remarks regarding fee. |
-| Fees/Fee/Price			    | 1          |          | Contains details of price. |
+| Fees /Fee/Price			    | 1          |          | Contains details of price. |
 | @currency 				    | 1          | String   | Currency code. |
 | @amount 				    | 1          | Decimal  | Fee Amount. |
 | @binding				    | 1          | Boolean  | Identifies if is the price is binding (When true the sale price returned must not be less than the price informed. |
 | @commission				    | 1          | Decimal  | Commission: -1 = not specified (indicated in contract with supplier), 0 = net price, X = % of the commission applied to the amount. |
-| CancelPoliciesDescription                 | 0..1       | String   | Contains the cancellation penalties in free text (see [MetaData](/connectiontypessellers/hotelpullsellers/methods/staticcontent/metadata/) in order to verify if a supplier implements it). |
-| Option		|0..1	| Option quoted
-| Option/Rooms | 0..1 		| 		| Rooms in the option (room list).				|
-| Option/Rooms/Room | 1..n 	| 		| Room details.						|
+| CancelPoliciesDescription                 | 0..1       | String   | Contains the cancellation penalties in free text (see [MetaData](/connectiontypesbuyers/legacy/methods/staticcontent/metadata/) in order to verify if a supplier implements it). |
+| Option /		|0..1	| Option quoted
+| Option /Rooms / | 0..1 		| 		| Rooms in the option (room list).				|
+| Option /Rooms /Room | 1..n 	| 		| Room details.						|
 | @id 					| 1 		| String 	| Room ID.					|
 | @roomCandidateRefId 			| 1 		| Integer 	| Room candidate ID.					|
 | @code 				| 1 		| String 	| Room code has to be unique to identify a specific room type. If the RoomList Method is implemented, you can find the description of the room type in the RoomList. 							|
@@ -210,7 +210,7 @@ Our system allows for a maximum of **180000** milliseconds before the connection
 ### Detailed Description
 
 
-**Suppliers with block allotment **
+*Suppliers with block allotment*
 
 There are some suppliers who use block allotments, sometimes called pre-confirmation or quote.
 In that case, you will have 30 minutes to complete the booking, if  not, you will have to re-launch Valuation 30 minutes after the last request, normally just before booking request.
@@ -227,7 +227,7 @@ Booking cancellation penalties are affected by the following elements:
 
 -   **HoursBefore:** cancellation fees applicable x number of hours before the check in date
 
--   **Deadline:** cancellation fees applies from the date displayed on the deadline, which is on UTC Standard. For more information about how TimeZones are handled please check our [MetaData](/connectiontypessellers/hotelpullsellers/methods/messages/static-methods/metadata/) content.
+-   **Deadline:** cancellation fees applies from the date displayed on the deadline, which is on UTC Standard. For more information about how TimeZones are handled please check our [MetaData](/connectiontypesbuyers/legacy/methods/staticcontent/metadata/) content.
 
 -   **CalculatedDeadline:** Specifies if the Deadline is returned by the supplier or it's been calculated by TravelGate according to **ISO 8601**
 	

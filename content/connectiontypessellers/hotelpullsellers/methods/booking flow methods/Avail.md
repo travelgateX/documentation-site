@@ -365,7 +365,7 @@ Go to [Common-Elements](/connectiontypessellers/hotelpullsellers/methods/common-
 | MealPlans /MealPlan/Options /Option/RateRules /Rules /Rule/Rates /Rate/Description | 1 | String	| Contains the rate rule description.	|
 | MealPlans /MealPlan/Options /Option/RateRules /Rules /Rule/Restrictions / | 0..n | 		| Restrictions for the rate rule.							|
 | MealPlans /MealPlan/Options /Option/RateRules /Rules /Rule/Restrictions /Restriction | 1..n | 		| Restriction for this rate rule.							|
-| @type 				| 1 		| Enum 	| This restriction affects: 1 -> Company, 2 -> Market, 3 -> Others.. See the list at [Lists of Data](/connectiontypessellers/hotelpullsellers/listsdata/#Restriction-Type |
+| @type 				| 1 		| Enum 	| This restriction affects: 1 -> Company, 2 -> Market, 3 -> Others.. See the list at [Lists of Data](/connectiontypessellers/hotelpullsellers/listsdata/#Restriction-Type) |
 | @code 				| 1 		| String 	| Contains the restriction code.	|
 | MealPlans /MealPlan/Options /Option/Rooms / | 1 		| 		| Rooms in this option (room list).				|
 | MealPlans /MealPlan/Options /Option/Rooms /Room | 1..n 	| 		| Room details.						|
@@ -394,8 +394,8 @@ Go to [Common-Elements](/connectiontypessellers/hotelpullsellers/methods/common-
 | MealPlans /MealPlan/Options /Option/Rooms /Room /DailyPrices/DailyPrice /Price| 1 | | Day price.					|
 | @currency 				| 1 		| String 	| Currency code.						|
 | @amount 				| 1 		| Decimal 	| Day Amount.							|
-| @binding 				| 1 		| Boolean 	| Identifies if the price is binding (When true, the sale price returned **must** not be less than the price informed. |
-| @commission 				| 1 		| Decimal 	| Commission: -1 = not specified (information available in  contract with the supplier ), 0 = net price, X = % of the commission applied to the amount. |
+| @binding 				| 1 		| Boolean 	| Identifies if the price is binding (When true, the sale price returned **must** not be less than the price informed) |
+| @commission 				| 1 		| Decimal 	| Commission: -1 = not specified (information available in  contract with the supplier), 0 = net price, X = % of the commission applied to the amount. |
 | MealPlans /MealPlan/Options /Option/Rooms /Room /DailyRatePlans | 0..1 | | Specifies the daily rate, as long as the supplier returns it in this method (see [MetaData](/connectiontypessellers/hotelpullsellers/methods/staticcontent/metadata/) in order to verify if a supplier implements it).  |
 | MealPlans /MealPlan/Options /Option/Rooms /Room /DailyRatePlans/DailyRatePlan | 1..n | | Specifies the rates for each day.		|
 | @effectiveDate 			| 1 		| String 	| Start date in which the rate becomes effective. Format dd/MM/yyyy			|
@@ -405,8 +405,8 @@ Go to [Common-Elements](/connectiontypessellers/hotelpullsellers/methods/common-
 | MealPlans /MealPlan/Options /Option/Rooms /Room /Price | 1 | 		| Room price.							|
 | @currency 				| 1 		| String 	| Currency code.						|
 | @amount 				| 1 		| Decimal 	| Room Amount.							|
-| @binding 				| 1 		| Boolean 	| Identifies if is the price is binding (When true the sale price returned **must** not be less than the price informed).|
-| @commission 				| 1 		| Decimal 	| Commission: -1 = not specified (information available in  contract with the supplier ), 0 = net price, X = % of the commission applied to the amount.  |
+| @binding 				| 1 		| Boolean 	| Identifies if is the price is binding (When true the sale price returned **must** not be less than the price informed) |
+| @commission 				| 1 		| Decimal 	| Commission: -1 = not specified (information available in  contract with the supplier), 0 = net price, X = % of the commission applied to the amount.  |
 | MealPlans /MealPlan/Options /Option/Rooms /Room/Fees					    | 0..1       | 	    | Contains a list of fees. |
 | MealPlans /MealPlan/Options /Option/Rooms /Room/Fees /Fee				    | 1..n       |      | Contains details of the fee. |
 | @includedPriceOption			    | 1		 | Boolean  | Indicates if the fee is included or not in the final price. |
@@ -416,7 +416,7 @@ Go to [Common-Elements](/connectiontypessellers/hotelpullsellers/methods/common-
 | MealPlans /MealPlan/Options /Option/Rooms /Room/Fees /Fee/Price			    | 1          |          | Contains details of price. |
 | @currency 				    | 1          | String   | Currency code. |
 | @amount 				    | 1          | Decimal  | Fee Amount. |
-| @binding				    | 1          | Boolean  | Identifies if is the price is binding (When true the sale price returned must not be less than the price informed. |
+| @binding				    | 1          | Boolean  | Identifies if is the price is binding (When true the sale price returned **must** not be less than the price informed) |
 | @commission				    | 1          | Decimal  | Commission: -1 = not specified (indicated in contract with supplier), 0 = net price, X = % of the commission applied to the amount. |
 | MealPlans /MealPlan/Options /Option/Rooms /Room/Fees /Fee/Code			    | 1          |   String       | Specifies the fee code in case it has one. |
 | MealPlans /MealPlan/Options /Option/Rooms /Room/CancelPenalties | 1          |          | Cancellation policy details. (see [MetaData](/connectiontypessellers/hotelpullsellers/methods/staticcontent/metadata/) in order to verify if a supplier implements it). **Attention:**	When implementing policies at the room level, it is mandatory to add them at the option level. (If there is more than one room it is necessary to unify the policies to show them by option|
@@ -432,8 +432,8 @@ Go to [Common-Elements](/connectiontypessellers/hotelpullsellers/methods/common-
 | MealPlans /MealPlan/Options /Option/Price | 1 		| 		| Option price ( it is the total price of option).		|
 | @currency 				| 1 		| String 	| Currency code.						|
 | @amount 				| 1 		| Decimal 	| Option Amount.						|
-| @binding 				| 1 		| Boolean 	| Identifies if is the price is binding (When true the sale price returned **must** not be less than the price informed.|
-| @commission 				| 1 		| Decimal 	| Commission:  -1 = not specified (information available in  contract with the supplier ), 0 = net price, X = % of the commission applied to the amount.	|
+| @binding 				| 1 		| Boolean 	| Identifies if is the price is binding (When true the sale price returned **must** not be less than the price informed) |
+| @commission 				| 1 		| Decimal 	| Commission:  -1 = not specified (information available in  contract with the supplier), 0 = net price, X = % of the commission applied to the amount.	|
 | MealPlans /MealPlan/Options /Option/Detail | 0..1 	| 		| Detail of option (if the option is different from the type\<\> Hotel and see [MetaData](/connectiontypessellers/hotelpullsellers/methods/staticcontent/metadata/) in order to verify if a supplier implements it).  |
 | MealPlans /MealPlan/Options /Option/Detail/POIs / | 1 	| 		| Points of interest.						|
 | MealPlans /MealPlan/Options /Option/Detail/POIs /POI | 1..n | 		| Point of interest.						|
@@ -466,7 +466,7 @@ Go to [Common-Elements](/connectiontypessellers/hotelpullsellers/methods/common-
 | MealPlans /MealPlan/Options /Option/Fees /Fee/Code			    | 1          |   String       | Specifies the fee code in case it has one. |
 | @currency 				    | 1          | String   | Currency code. |
 | @amount 				    | 1          | Decimal  | Fee Amount. |
-| @binding				    | 1          | Boolean  | Identifies if is the price is binding (When true the sale price returned must not be less than the price informed. |
+| @binding				    | 1          | Boolean  | Identifies if is the price is binding (When true the sale price returned **must** not be less than the price informed) |
 | @commission				    | 1          | Decimal  | Commission: -1 = not specified (indicated in contract with supplier), 0 = net price, X = % of the commission applied to the amount. |
 
 
@@ -529,10 +529,10 @@ client can sell the product for a lower price.
 
 -   *Commission:*
 
-   > -   Commission = 0: the price returned is net.
-   > -   Commission = -1: the supplier has not supplied the sale price
-   >     nor the commission. This information is in the commercial contract with the supplier.
-   > -   Commission is greater than 0: X = % of the commission applied to the amount
+> -   *Commission* = 0: the price returned is net.
+> -   *Commission* = -1: the supplier has not supplied the sale price
+>     nor the commission. This information is in the commercial contract with the supplier.
+> -   *Commission* is greater than 0: X = % of the commission applied to the amount
 
 *Below are 4 possible scenarios:*
 

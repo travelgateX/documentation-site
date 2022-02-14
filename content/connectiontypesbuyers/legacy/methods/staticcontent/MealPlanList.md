@@ -69,11 +69,11 @@ If the supplier has more than 100 mealplan codes, or more than 20 codes for one 
         <MealPlans>
             <MealPlan>
                 <Code>BB</Code>
-                <Name>Bed and breakfast.</Name>
+                <Name>Bed and breakfast</Name>
             </MealPlan>
             <MealPlan>
                 <Code>HB</Code>
-                <Name>Half board./Name>
+                <Name>Half board</Name>
             </MealPlan>
             …
             <MealPlan/>
@@ -89,11 +89,11 @@ If the supplier has more than 100 mealplan codes, or more than 20 codes for one 
 
 | **Element**		| **Number** | **Type** | **Description**	|
 | --------------------- | ---------- | -------- | --------------------- |
-| MealPlanListRS/UpgradeUTCDate		| 1       	|	DateTime	| Indicates the update date of the information in UTC format.	|
-| MealPlanListRS/MealPlans	| 1          |		| Root node, list of mealplans.		|
-| MealPlan	| 1..n          	| 		| MealPlan.			|
-| MealPlan/Code	| 1         	| String		| Code.			|
-| MealPlan/Name	| 1          	| String		| Name.			|
+| MealPlanListRS /UpgradeUTCDate		| 1       	|	DateTime	| Indicates the update date of the information in UTC format.	|
+| MealPlanListRS /MealPlans /	| 1          |		| Root node, list of mealplans.		|
+| MealPlans /MealPlan	| 1..n          	| 		| MealPlan.			|
+| MealPlans /MealPlan/Code	| 1         	| String		| Code.			|
+| MealPlans /MealPlan/Name	| 1          	| String		| Name.			|
 
                        
 
