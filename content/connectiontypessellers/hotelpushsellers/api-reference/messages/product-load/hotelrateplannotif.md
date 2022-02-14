@@ -180,7 +180,6 @@ Providers will send a HotelRatePlanNotifRQ message to push Rate Plans to sellers
 | @Start 				| 1	    | Date	| Start date of this supplement.			|
 | @End   				| 1	    | Date	| End date of this supplement.				|
 | @AgeQualifyingCode			| 0..1	    | Integer	| Age qualifyingCode which affects this supplement (10 - Adult,8 - Child,7 - Infant). Not allowed if charging board supplement by occupancy. |
-| @ChargeTypeCode			| 0..1	    | String	| Indicates the board supplement occupancy. Only allowed if charging board supplement by occupancy. The occupancy code is defined by AdultNumber-ChildNumber-InfantNumber. @ChargeTypeCode for an occupancy of 2 adults, 1 child and 0 babies would be "2-1-0". |
 | @Amount				| 1	    | Decimal	| Amount of supplement.					|
 | @SupplementType			| 1	    | String	| (Board).						|
 | @InvCode				| 1	    | String	| OTA MPT Code if @SupplementType is Board. 		|
