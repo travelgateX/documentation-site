@@ -15,21 +15,21 @@ isDirectory=false
   
 It is an incremental load, so bear in mind these considerations:
     
-* If a meal plan exists then it is updated.
+* If a hotels exists then it is updated.
 
-* If a meal plan does not exist then it is created.
+* If a hotel does not exist then it is created.
 
-* Existing meal plans that are not referenced are not removed.
+* Existing hotel that are not referenced are not removed.
 
-* If an existing meal plan has to be removed from system then you have to contact with TravelgateX.
+* If an existing hotel has to be removed from system then you have to contact with TravelgateX.
 
-* If there is any problem with a meal plan's information then it is omitted (and logged) but the load continues.
+* If there is any problem with a hotel's information then it is omitted (and logged) but the load continues.
 
 </br>
 
 ## Specifications
 
-* File name: **`Master_HotelInfo.csv`** or **`Master_Portfolio.csv`**
+* File name: **`Master_HotelInfo`**.
 
 * Each line represents a resource for a hotel.
 
@@ -58,7 +58,7 @@ It is an incremental load, so bear in mind these considerations:
 | **Position** | **Mandatory Field** | **Mandatory Data**	| **Type** | **Description**|
 | -----------  | ------------------- | ------------------ | -------- | ---------------|
 | 0     	     | Yes                 |	Yes               | string   | Hotel code
-| 1     	     | Yes                 |	Yes               | string   | Type of the hotel resource:<ul>* **Img** = Image</li>* **Prop** = Property Type</li>* **Note** = Additional Notes</li>* **Attr** = Attribute</li>* **Sdesc** = Short Description</li>* **Ldesc** = Long Description</li></ul>
+| 1     	     | Yes                 |	Yes               | string   | Type of the hotel resource:<ul><li>**Img** = Image</li><li>**Prop** = Property Type</li><li>**Note** = Additional Notes</li><li>**Attr** = Attribute</li><li>**Sdesc** = Short Description</li><li>**Ldesc** = Long Description</li></ul>
 | 2     	     | Yes                 |	-                 | string   | Attribute code. </br></br>*This field is only mandatory it the resource type is "Attr".*
 | 3     	     | Yes                 |	-                 | string   | Attribute type. </br></br>*This field is only mandatory it the resource type is "Attr".*
 | 4     	     | Yes                 |	Yes               | string   | Value of the resource
