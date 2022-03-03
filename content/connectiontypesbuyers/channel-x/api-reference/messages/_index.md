@@ -47,7 +47,7 @@ The ``HotelRatePlanInventoryNotif`` message contains information about the inven
 <HotelRatePlanInventoryNotif xmlns = "http://schemas.xmltravelgate.com/hubpush/provider/2012/10">
     <request PrimaryLangID = "ES" Version = "0">
         <RatePlans HotelCode = "1" HotelStatusType = "Active" xmlns = "http://www.opentravel.org/OTA/2003/05">
-            <RatePlan Duration = "0" CurrencyCode = "EUR" RatePlanCode = "BAR" FreeChild = "true" FreeBaby = "false" RatePlanStatusType = "Active" RatePlanNotifType = "New">
+            <RatePlan Duration = "0" CurrencyCode = "EUR" RatePlanCode = "BAR" FreeChild = "true" FreeBaby = "false" RatePlanStatusType = "Active" RatePlanNotifType = "New" YieldableIndicator="true">
                 <BookingRules>
                     <BookingRule>
                         <CancelPenalties>
@@ -207,6 +207,7 @@ The ``HotelRatePlanInventoryNotif`` message contains information about the inven
 | @RatePlanNotifType			      | 0..1	  | String	 | *N*: New, Delta, Remove                                                  |
 | @RatePlanStatusType			      | 1		    | String   | *N*: Active, Deactivated				                                         |
 | @CurrencyCode				          | 0..1	  | String	 | *BR*. ISO Currency (EUR)	                                             |
+| @YieldableIndicator			    | 0..1	 | Boolean  | Used to indicate the rate plan is subject to yield management logic. When false, the rate plan is not yieldable. When true or it's not returned, the rate plan is yieldable.|
 | @Start      				          | 0..1 	  | Date	   | Booking Start Date for which the rate will be available.               |
 | @End        				          | 0..1	  | Date     | Booking Start Date for which the rate will be available.               |
 | RatePlan/BookingRules            	    | 0..1    |	         |                                                                       |
