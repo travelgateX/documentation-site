@@ -274,7 +274,7 @@ In the previous example we received one hotel, one Rate Plan and 2 rooms. One of
 | RatePlans/RatePlan			    | 0..n    	 |	    | Present when rates exists.			|
 | @RatePlanCode				    | 1 	 | String   | Rate plan code. 					|
 | @RatePlanStatusType			    | 1		 | String   | Active or Deactivated.				|
-| @RatePlanType				    | 0..1	 | Integer  | OTA RPT Code (11 - Package). 			|
+| @RatePlanType				    | 0..1	 | Integer  | OTA RPT Code (0 Not Selected, 10 - Negotiated, 11 - Package). 			|
 | @YieldableIndicator			    | 0..1	 | Boolean  | Used to indicate the rate plan is subject to yield management logic. When false, the rate plan is not yieldable. When true or it's not returned, the rate plan is yieldable.|
 | @CurrencyCode				     0..1	 | String   | ISO Currency (EUR). Only null for derived rates. 	|
 | @Start      				    | 0..1 	 | Date	    | Start date of the rate booking window (Booking Dates for wich the rate will be available). |

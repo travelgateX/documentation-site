@@ -27,7 +27,7 @@ Providers send a HotelRatePlanInventoryNotifRQ message to push the Hotel SetUp i
 <HotelRatePlanInventoryNotif xmlns = "http://schemas.xmltravelgate.com/hubpush/provider/2012/10">
     <request PrimaryLangID = "ES" Version = "0">
         <RatePlans HotelCode = "1" HotelStatusType = "Active" xmlns = "http://www.opentravel.org/OTA/2003/05">
-            <RatePlan Duration = "0" CurrencyCode = "EUR" RatePlanCode = "BAR" RatePlanStatusType = "Active" RatePlanNotifType = "New">
+            <RatePlan Duration = "0" CurrencyCode = "EUR" RatePlanCode = "BAR" RatePlanStatusType = "Active" RatePlanNotifType = "New" RatePlanType = "0">
 		<BookingRules>
 		    <BookingRule>
 			<CancelPenalties>
@@ -226,7 +226,7 @@ Providers send a HotelRatePlanInventoryNotifRQ message to push the Hotel SetUp i
 <HotelRatePlanInventoryNotif xmlns = "http://schemas.xmltravelgate.com/hubpush/provider/2012/10">
     <request PrimaryLangID = "ES" Version = "0">
         <RatePlans HotelCode = "1" HotelStatusType = "Active" xmlns = "http://www.opentravel.org/OTA/2003/05">
-            <RatePlan BaseRatePlanCode = "BAR" RatePlanStatusType = "Active" RatePlanCode = "DERIVED" RateReturn = "false">
+            <RatePlan BaseRatePlanCode = "BAR" RatePlanStatusType = "Active" RatePlanCode = "DERIVED" RateReturn = "false"  RatePlanType = "0">
 		<RatePlanInclusionsType>
                     <RatePlanInclusionDescription>
                         <Name>BaseMealPlanSupplement</Name>
@@ -292,6 +292,7 @@ Providers send a HotelRatePlanInventoryNotifRQ message to push the Hotel SetUp i
 | @CurrencyCode				| 0..1	     | String	| ISO Currency (EUR). Not used for derived rates.	|
 | @Start      				    | 0..1 	 | Date	    | Start date of the rate booking window (Booking Dates for which the rate will be available). |
 | @End        				    | 0..1	 | Date     | End date of the rate booking window (Booking Dates for which the rate will be available). |
+| @RatePlanType        				    | 0..1	 | String     | Rate rule to apply. 0 - No selected, 11 - Package, 10 - Negotiated. If the attribute is not present and it is a base rate, the value will be 0, if it is a derived rate, the value will be the same as the parent rate.   |
 | RatePlans/BookingRules		    | 0..1       |	    | Present if exists booking rules for the given RatePlan.|
 | BookingRules/BookingRule		    | 1..n       |	    | Booking rules.					|
 | @Code       				    | 0..1	 | String   | Code of the booking rule (empty if are viewships conditions). |

@@ -99,7 +99,7 @@ Now that you have added the hotel it is time to add the rates and then the rooms
 
 In order to add a new rate, click in the ``Add Rate`` button in the hotel row:
 
-![Inventory SetUp Add Rate](./../../../images/web/inventory_setup_addrate.png "Inventory SetUp Add Rate")
+![Inventory SetUp Add Rate](./../../../images/web/inventory_setup_addrate.JPG "Inventory SetUp Add Rate")
 
 </br>
 
@@ -115,7 +115,7 @@ The information needed to add a rate is listed below:
 * **Currency:** Currency applied to the rate.
 * **Commission:** Percentage of commission applied. This is only informative.
 * **Binding Price:** Must be checked if the price is binding.
-* **Package:** Must be checked if the rate allows packages.
+* **Rate Rule:** Rate rule to apply to this rate. Not Selected (0), Negotiated (10), Package (11). The default value is *Not selected*.
 * **Senior Rates:** You must select the correct value if the rate is for people over 55, 60 or 65 years of age. The default value is *Not selected*.
 * **Active:** Indicates whether or not the rate is active.
 * **All dates:** By default it is checked. If it is checked, the rate will be available always. If you uncheck the checkbox, two new fields will appear: From and To. These fields are the initial and final dates for when the rate is available (dates when the availability request is done, not the stay dates). For example: if there is a date range from: `24/02/2020` to: `28/02/2020`:
@@ -179,7 +179,7 @@ In Inventory you can create your own discounts or supplements using what we call
 
 To add a derived rate, first it is necessary to click the ``Add Derived Rate`` button for the same rate for which you want to create a derived rate and a pop-up window will appear for you to fill in the derived rate information.
 
-![Inventory-X SetUp Derived Rate](./../../../images/web/inventory_setup_derivedrate.png "Inventory-X SetUp Derived Rate")
+![Inventory-X SetUp Derived Rate](./../../../images/web/inventory_setup_derivedrate.JPG "Inventory-X SetUp Derived Rate")
 
 </br>
 
@@ -189,8 +189,8 @@ The information needed to add a derived rate is listed below:
 * **Name:** Derived rate name.
 * **Cancel policies from base rate:** Checkbox that will apply the cancel policies from the base rate to the derived rate depending on whether it is checked or not. If it is not checked, a form appears like the one seen previously when adding a rate, letting you add the cancel policies you may want for this derived rate.
 * **Markets from base rate:** Checkbox that will apply the markets from the base rate to the derived rate depending on whether it is checked or not. If unchecked, a form appears like the one seen previously when adding a rate, letting you select any markets you may want included or excluded for this derived rate.
-* **Apply Package from base rate:** Checkbox that will apply the package conditions from the base rate depending on whether it is checked or not.
-* **Package:** Checkbox that informs if the amount is for a package depending on if it is checked or not.
+* **Apply Rate Rule from base rate:** Checkbox that will apply the same rate rule from the base rate depending on whether it is checked or not.
+* **Rate Rule:** Rate rule to select if you do not want apply the same than the base rate.
 * **Active:** Checkbox to activate or deactivate the derived rate. If it is checked the derived rate is active.
 * **Apply Dates from base rate:** Checkbox used to apply the effective dates from the base rate. If unchecked, a form like the one explained previously when creating a rate will pop up.
 * **Board from base rate:** Checkbox used to apply the meal plan from the base rate. If unchecked, the meal plan list will be enabled and you will be able to select the board of the derived rate.
