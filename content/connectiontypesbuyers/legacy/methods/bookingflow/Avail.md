@@ -263,7 +263,7 @@ is closed.
                             <RateRules>
                                 <Rules>
                                     <Rule type = "NonRefundable"/>
-                                    <Rule type = "Negociated">
+                                    <Rule type = "Negotiated">
                                         <Rates>
                                             <Rate Code = "BAR">
                                                 <Description>Bar descr</Description>
@@ -344,13 +344,13 @@ is closed.
 | MealPlans /MealPlan/Options /Option/CancelPenalties /CancelPenalty/CalculatedDeadline| 0..1 | Boolean |  Indicate if the Deadline is returned by the supplier or it's been calculated by TravelGate -> *true* = has been calculated by XTG, *false* = bypass of supplier data without calculation |
 | MealPlans /MealPlan/Options /Option/CancelPenalties /CancelPenalty/Deadline| 0..1 | String | Date on UTC Standard TimeZone in which this Cancellation policy applies (ISO 8601 e.g: 01/07/2016T05:00:00Z)  |
 | MealPlans /MealPlan/Options /Option/RateRules / | 0..1 	| 		| Option rate rules.					|
-| MealPlans /MealPlan/Options /Option/RateRules /Rules | 0..n | 		| Rules.							|
-| MealPlans /MealPlan/Options /Option/RateRules /Rules /Rule | 1 | 	| Rule.								|
+| MealPlans /MealPlan/Options /Option/RateRules /Rules | 1 | 		| Rules.							|
+| MealPlans /MealPlan/Options /Option/RateRules /Rules /Rule | 1..n | 	| Rule.								|
 | @type 				| 1 		| String 	| Possible values: NonRefundable, Older55, Package, Negociated.. See full list at [Lists of Data](/connectiontypesbuyers/legacy/listsdata/#Rate-Conditions)	|
-| MealPlans /MealPlan/Options /Option/RateRules /Rules /Rule/Rates / | 0..n | 		| Rates.							|
+| MealPlans /MealPlan/Options /Option/RateRules /Rules /Rule/Rates / | 0..1 | 		| Rates.							|
 | MealPlans /MealPlan/Options /Option/RateRules /Rules /Rule/Rates /Rate | 1..n | 		| Rate.							|
-| @code 				| 1 		| String 	| Contains the rate rule code.	|
-| MealPlans /MealPlan/Options /Option/RateRules /Rules /Rule/Rates /Rate/Description | 1 | String	| Contains the rate rule description.	|
+| @code 				| 0..1 		| String 	| Contains the rate rule code.	|
+| MealPlans /MealPlan/Options /Option/RateRules /Rules /Rule/Rates /Rate/Description | 0..1 | String	| Contains the rate rule description.	|
 | MealPlans /MealPlan/Options /Option/RateRules /Rules /Rule/Restrictions / | 0..n | 		| Restrictions for the rate rule.							|
 | MealPlans /MealPlan/Options /Option/RateRules /Rules /Rule/Restrictions /Restriction | 1..n | 		| Restriction for this rate rule.							|
 | @type 				| 1 		| Enum 	| This restriction affects: 1 -> Company, 2 -> Market, 3 -> Others.. See the list at [Lists of Data](/connectiontypesbuyers/legacy/listsdata/#Restriction-Type) |
