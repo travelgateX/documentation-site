@@ -346,7 +346,7 @@ is closed.
 | MealPlans /MealPlan/Options /Option/RateRules / | 0..1 	| 		| Option rate rules.					|
 | MealPlans /MealPlan/Options /Option/RateRules /Rules | 1 | 		| Rules.							|
 | MealPlans /MealPlan/Options /Option/RateRules /Rules /Rule | 1..n | 	| Rule.								|
-| @type 				| 1 		| String 	| Possible values: NonRefundable, Older55, Package, Negociated.. See full list at [Lists of Data](/connectiontypesbuyers/legacy/listsdata/#Rate-Conditions)	|
+| @type 				| 1 		| String 	| Possible values: NonRefundable, Older55, Package, Negotiated.. See full list at [Lists of Data](/connectiontypesbuyers/legacy/listsdata/#Rate-Conditions)	|
 | MealPlans /MealPlan/Options /Option/RateRules /Rules /Rule/Rates / | 0..1 | 		| Rates.							|
 | MealPlans /MealPlan/Options /Option/RateRules /Rules /Rule/Rates /Rate | 1..n | 		| Rate.							|
 | @code 				| 0..1 		| String 	| Contains the rate rule code.	|
