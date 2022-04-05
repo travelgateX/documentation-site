@@ -349,11 +349,13 @@ Providers send a HotelRatePlanInventoryNotifRQ message to push the Hotel SetUp i
 | RatePlans/RatePlan/SellableProduct/GuestRoom/Description/Text | 1 | String | Room description.			|
 | RatePlans/RatePlan/Taxes | 0..1 |	 |	 			|
 | RatePlans/RatePlan/Taxes/Tax | 1..n |	 | Tax to apply to the room prices of the rate 			|
-| @Amount/Percent | 1 | Decimal | Indicates that the tax will be applied relative to an amoount or a percentage 		|
+| @Amount | 0..1 | Decimal | Indicates that the tax will be applied relative to an amount. The tax has to be specified as Amount or Percent not both at the same time.|
+| @Percent | 0..1 | Decimal | Indicates that the tax will be applied relative to a percentage. The tax has to be specified as Amount or Percent not both at the same time.|
 | @ChargeFrequency | 1 | String | If PerNight indicates that tax is applied relative to the Amount of Nights booked  |
 | @ChargeUnit | 1 | String | If PerPax indicates that tax is applied relative to the Amount of Paxes booked  |
+| @Type | 0..1 | String | If Inclusive indicates that tax has to be added to the final price. If Type is different than Inclusive or is not present the tax is only informative.  |
 | RatePlans/RatePlan/Taxes/Tax/TaxDescription | 1 |	 |  			|
-| RatePlans/RatePlan/Taxes/Tax/TaxDescription/Text | 1 | String	 | Description of tax type 			|
+| RatePlans/RatePlan/Taxes/Tax/TaxDescription/Text | 1 | String	 | Description of tax type. Values:  "City", "Local","Resort Fee", "Supplement to be paid on spot"|
 | RatePlans/RatePlan/RatePlanInclusionsType |	0..1 |	 Only used for derived rates. |	 			|
 | RatePlans/RatePlan/RatePlanInclusionsType/RatePlanInclusionDescription |	1 |	 Only used for derived rates. |	 			|
 | RatePlans/RatePlan/RatePlanInclusionsType/RatePlanInclusionDescription/Name |	1 |	 |	If present, derived rate will apply base rate meal plan supplements. Value = BaseMealPlanSupplement. Only used for derived rates.			|
