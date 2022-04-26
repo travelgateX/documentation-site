@@ -32,7 +32,6 @@ Optionally, you will be able to configurate different discounts, supplements or 
 
 All these structures can be activated/deactivated or deleted. See [Activate/Deactivate/Delete](#activate/deactivate/delete) section for more details.
 
-In this page you can also find information about the [Wizard SetUp](#wizard-setup), created to help configure multiple hotels that share the same rates and rooms information.
 
 ## Hotel
 
@@ -99,7 +98,7 @@ Now that you have added the hotel it is time to add the rates and then the rooms
 
 In order to add a new rate, click in the ``Add Rate`` button in the hotel row:
 
-![Inventory SetUp Add Rate](./../../../images/web/inventory_setup_addrate.JPG "Inventory SetUp Add Rate")
+![Inventory SetUp Add Rate](./../../../images/web/inventory_setup_addrate.png "Inventory SetUp Add Rate")
 
 </br>
 
@@ -138,6 +137,8 @@ added once the checkbox of "Taxes" is checked:
     * **Add to final price:** if checked, the tax price will be included in the final price that the client will pay. If it is not checked, the tax will be informative to the final customer and should be paid for them at the hotel.
 * **Cancellation policy – Base:** Cancellation policies that can be applied to the rate. The rate will be non refundable if the checkbox ``No refund`` is checked. It is possible to apply a different type of cancellation policy by clicking the `+` button. You can add as many policies as you need, all you need to do is indicate the days in advance before the arrival date, the type and the value of the policy. See [How to configurate different cancel policies](./../../faq/cancel-policies) section for some examples.
 * **Cancellation policy - Calendar:** This option will only appear once you have created your rate previously with base cancel policies. The cancellation policy by calendar allows you to create specific cancel policies by day or date range. You can click the `Add range` button to specify a date range and the cancel policies. This new cancel policies by day will override the base cancel policies specified at rate level. If you want to remove a cancel policy by date you can click the `Delete range` button and specify your dates. You can also delete or check the cancel policies by day clicking in the day's number of the month.
+* **Specific Clients:** If you want to inform that this rate is only for a list of specific clients check this option and add both Code (code that represent your client) and Description (normally the name of the client). You can add maximum 15 clients. The client codes have to be unique on the same rate.  
+
 
 When a rate is added, it appears in the hotel node when you click the arrow that appears on the left side of the hotel name.
 
@@ -238,49 +239,6 @@ In the following image you will see the three action buttons to activate, deacti
 </br>
 
 In case there are any hotels, rates, derived rates or rooms deactivated, they will appear on a red background, as you can see in the previous image for hotel *"Just Sleep Jiaoxi"* 
-
-</br>
-
-# Wizard SetUp
-
-The Wizard Setup is a tool that is be really helpful when you have to create lots of the same rates and rooms for different hotels. 
-
-![Inventory-X Wizard SetUp](./../../../images/web/inventory_wizardsetup.png "Wizard Inventory-X")
-
-</br>
-
-You will be able to create hotels rates, rooms and cancellation policies and then create the relation among them. Once you have selected the client-channel relation, a Wizard SetUp view with four different sections will appear:
-
-![Inventory-X Wizard SetUp](./../../../images/web/inventory_wizardsetup1.png "Wizard Inventory-X")
-
-</br>
-
-The process is quite simple. In order to add a new hotel you will have to click the ``+`` button, situated at the bottom of the Hotels section. A row with a few fields that have to be completed will appear.
-
-Like in the SetUp tab, the field ``Name`` will be used for the names of hotels as you are introducing data. When you have found the hotel you want to add, it is necessary to click it. The fields ``Hotel Email``, ``CC Address`` and ``From Address`` might be changed if you want, however, it's not possible to leave any of them empty. You can add as many hotels as you want.
-
-Once there are hotels added you can set up rates. To do so, click the ``+`` button located at the bottom of the Rates section. A row will appear and you will need to complete the information regarding the rate. This information is the same that the one explained in the section [How to add a rate](#how-to-add-a-rate), except for the fields ``Active`` and ``All Dates``. All rates will be active and available always. If you want to change this fields, you will need to change it in the SetUp
-tab.
-
-![Inventory-X Wizard SetUp](./../../../images/web/inventory_wizardsetup2.png "Wizard Inventory-X")
-
-</br>
-
-Once the rate information is filled in, you can indicate which hotels this rate will apply to, as you can see in the previous screenshot.
-
-Once rates have been added you can keep on creating the cancellation policies. Click the blue button `+` located at the bottom of the Policies section. A new row will show up with a few fields regarding the cancellation policies that you would have to fill in. The functionality of the drop down multi selector will allow you to assign these cancellation policies to a specific Hotel – Rate pair that you want.
-
-![Inventory-X Wizard SetUp](./../../../images/web/inventory_wizardsetup3.png "Wizard Inventory-X")
-
-</br>
-
-Next step is to add the rooms that will be available for the different rates of each hotel. To do so, as mentioned before, you have to click the blue ``+`` button located at the bottom of the Rooms section and then you will be asked to fill in the room information. You should introduce the hotel name into the field *Name* and it will show you suggestions as you are introducing the name. Afterwards it will be necessary for you to introduce the standard occupancy, select the different occupancies allowed by the room (this will be indicated as follows: number of adult – number of children – number of babies) and the pairs Hotel – Rate that will have this room assigned to them.
-
-![Inventory-X Wizard SetUp](./../../../images/web/inventory_wizardsetup4.png "Wizard Inventory-X")
-
-</br>
-
-When this process of the creation is over, in order to save the configurations, you have to click the ``Save`` button. In case that there is an error, a message will appear at over the view indicating what has happened and keeping the data filled in. If there is no error and everything has worked correctly a pop-up window will appear, informing that everything is correct.
 
 
 {{%custom-children%}}

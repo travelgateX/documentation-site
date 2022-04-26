@@ -198,13 +198,20 @@ Providers send a HotelRatePlanInventoryNotifRQ message to push the Hotel SetUp i
                         </GuestRoom>
                     </SellableProduct>
                 </SellableProducts>
-		<Taxes>
-		    <Tax Amount = "20" ChargeFrequency = "PerNight" ChargeUnit = "">
-			<TaxDescription>
-			    <Text>city</Text>
-			</TaxDescription>
-		    </Tax>
-		</Taxes>
+		        <Taxes>
+		            <Tax Amount = "20" ChargeFrequency = "PerNight" ChargeUnit = "">
+			            <TaxDescription>
+			            <Text>city</Text>
+			            </TaxDescription>
+		            </Tax>
+		        </Taxes>
+                <AdditionalDetails>
+                    <AdditionalDetail Code="REP" Type="39">
+                        <DetailDescription>
+                            <Text>Repsol</Text>
+                        </DetailDescription>
+                    </AdditionalDetail>
+                </AdditionalDetails>
                 <Description>
                     <Text>bb</Text>
                 </Description>
@@ -385,6 +392,12 @@ Providers send a HotelRatePlanInventoryNotifRQ message to push the Hotel SetUp i
 | @NightsDiscounted | 1 | String | Nights the offer will discount from the total stay amount. |
 | @DiscountPattern | 1 | String | Booking night/s the offer will dicount. Possible values are First, Last or Cheapest.  |
 | RatePlans/RatePlan/Offers/Offer/OfferDescription/Text | 1 | String | Offer desription. |
+| RatePlans/RatePlan/AdditionalDetails | 0..1 |  | Rate plan additional details |
+| RatePlans/RatePlan/AdditionalDetails/AdditionalDetail | 0..n |  | List of additional details |
+| @Code | 1 | String | Trading partner code associated with the detail |
+| @Type | 1 | String | Define the information. Only allowed "39" (Contract/negotiated booking information)|
+| RatePlans/RatePlan/AdditionalDetails/AdditionalDetail/DetailDescription | 1 |  | Details Description |
+| RatePlans/RatePlan/AdditionalDetails/AdditionalDetail/DetailDescription/Text | 1 | String | Description. If additional details type is "39", the name of the trading partner for this rate.  |
 | TPA_Extensions			   	| 0..1    	|		| Optional, only added when create or delete an hotel. |
 | TPA_Extensions/Attribute            		| 1       	|		|							|
 | @key        			| 1  		| String	| HotelNotifType.						|
