@@ -47,7 +47,7 @@ The ``HotelRatePlanInventoryNotif`` message contains information about the inven
 <HotelRatePlanInventoryNotif xmlns = "http://schemas.xmltravelgate.com/hubpush/provider/2012/10">
     <request PrimaryLangID = "ES" Version = "0">
         <RatePlans HotelCode = "1" HotelStatusType = "Active" xmlns = "http://www.opentravel.org/OTA/2003/05">
-            <RatePlan Duration = "0" CurrencyCode = "EUR" RatePlanCode = "BAR" FreeChild = "true" FreeBaby = "false" RatePlanStatusType = "Active" RatePlanNotifType = "New" YieldableIndicator="true">
+            <RatePlan Duration = "0" CurrencyCode = "EUR" RatePlanCode = "BAR" FreeChild = "true" FreeBaby = "false" RatePlanStatusType = "Active" RatePlanNotifType = "New" YieldableIndicator="true" RatePlanType = "0">
                 <BookingRules>
                     <BookingRule>
                         <CancelPenalties>
@@ -210,6 +210,7 @@ The ``HotelRatePlanInventoryNotif`` message contains information about the inven
 | @YieldableIndicator			    | 0..1	 | Boolean  | Used to indicate the rate plan is subject to yield management logic. When false, the rate plan is not yieldable. When true or it's not returned, the rate plan is yieldable.|
 | @Start      				          | 0..1 	  | Date	   | Booking Start Date for which the rate will be available.               |
 | @End        				          | 0..1	  | Date     | Booking Start Date for which the rate will be available.               |
+| @RatePlanType        				  | 0..1	  | String     | Rate rule to apply. 0 - No selected, 11 - Package, 10 - Negotiated. If the attribute is not present and it is a base rate, the value is 0, if it is a derived rate, the value is the same as the parent rate.               |
 | RatePlan/BookingRules            	    | 0..1    |	         |                                                                       |
 | ../BookingRule		                | 1..n    |	         | 					                                                             |
 | @Code       				          | 0..1	  | String   | Empty if there are viewships conditions                               |
@@ -270,6 +271,7 @@ The ``HotelRatePlanInventoryNotif`` message contains information about the inven
 | @Amount/Percent               | 1       | Decimal   | Tax will be applied relative to an amount or a percentage            |
 | @ChargeFrequency              | 0..1    | Boolean   | Tax is/isn't applied relative to the Amount of Nights booked         |
 | @ChargeUnit                   | 0..1    | Boolean   | Tax is/isn't applied relative to the Amount of Paxes booked          |
+| @Type                   | 0..1    | String   | If Inclusive indicates that tax has to be added to the final price. If Type is different than Inclusive or is not present the tax is only informative.         |
 | ../TaxDescription                | 1       |	          |  			                                                               |
 | ../Text                          | 1       | String	  | Description of tax type 			                                       |
 | ../RatePlanInclusionsType        |	0..1    |	          | *DV*                  			                                         |

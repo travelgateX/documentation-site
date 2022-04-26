@@ -180,6 +180,56 @@ is **180000** milliseconds.
                 <UpgradeUTCDate>2016-10-18T13:18:03+02:00</UpgradeUTCDate>
             </Picture>
         </Images>
+        <Rooms>
+            <Room code = "821">
+                <Beds>
+                    <Bed numberOfBeds = "1" type = "SINGLE"/>
+                </Beds>
+                <RoomOccupancy>
+                    <Adults>
+                        <Min>1</Min>
+                        <Max>1</Max>
+                    </Adults>
+                    <Children>
+                        <Min>0</Min>
+                        <Max>0</Max>
+                    </Children>
+                    <Infants>
+                        <Min>0</Min>
+                        <Max>0</Max>
+                    </Infants>
+                    <Total>
+                        <Min>1</Min>
+                        <Max>1</Max>
+                    </Total>
+                </RoomOccupancy>
+                <Attributes>
+                    <Attribute>
+                        <Code>01</Code>
+                        <Classification>HAB</Classification>
+                        <Description>Private bathroom</Description>
+                    </Attribute>
+                </Attributes>
+                <Images>
+                    <Picture>
+                        <Code>01</Code>
+                        <URL>http://www.images.net/infor/work/imagen/hotel_room_02/M.jpg</URL>
+                        <Classification>HAB</Classification>
+                        <Ordered>1</Ordered>
+                        <Description>Room</Description>
+                        <UpgradeUTCDate>0001-01-01T00:00:00</UpgradeUTCDate>
+                    </Picture>
+                </Images>
+                <Description>Standard Single room</Description>
+                <Views>
+                    <View>
+                        <Code>01</Code>
+                        <Name>Sea view</Name>
+                    </View>
+                </Views>
+                <Area>25</Area>
+            </Room>
+        </Rooms>
         <LocationType>City</LocationType>
         <PaymentOptions cash="false" bankAcct="false">
             <Cards>
@@ -258,6 +308,45 @@ is **180000** milliseconds.
 | Images /Picture/Description		| 0..1    		| String	| Description.							|
 | Images /Picture/Code			| 0..1    		| String	| Code.								|
 | Images /Picture/UpgradeUTCDate			| 0..1    		| DateTime	| Indicates the upgrade date of the picture in UTC format.	|
+| Rooms /    				| 0..1       	|		| Hotel rooms.							|
+| Rooms /Room    				| 1..n       	|		| List of rooms.							|
+| @code      				| 1    		| String	| Room code.						|
+| Rooms /Room/Beds  				| 0..1       	|		| Room beds.							|
+| Rooms /Room/Beds/Bed  				| 1..n       	|		| List of beds.							|
+| @numberOfBeds      				| 0..1    		| String	| Indicates number of beds in the room.						|
+| @type      				| 0..1    		| String	| Indicates the type of bed.						|
+| Rooms /Room/RoomOccupancy  				| 0..1       	|		| Indicates the amount of each occupant type staying in the room.							|
+| Rooms /Room/RoomOccupancy/Adults  				| 1       	|		| Indicates the amount of adults staying in the room (minimum and maximum).							|
+| Rooms /Room/RoomOccupancy/Adults/Min  				| 1       	| Integer	    | Indicates the minimum amount of adults staying in the room.							|
+| Rooms /Room/RoomOccupancy/Adults/Max  				| 1       	| Integer	    | Indicates the maximum amount of adults staying in the room.							|
+| Rooms /Room/RoomOccupancy/Children  				| 1       	|		| Indicates the amount of children staying in the room (minimum and maximum).							|
+| Rooms /Room/RoomOccupancy/Children/Min  				| 1       	| Integer	    | Indicates the minimum amount of children staying in the room.							|
+| Rooms /Room/RoomOccupancy/Children/Max  				| 1       	| Integer	    | Indicates the maximum amount of children staying in the room.							|
+| Rooms /Room/RoomOccupancy/Infants  				| 1       	|		| Indicates the amount of infants staying in the room (minimum and maximum).							|
+| Rooms /Room/RoomOccupancy/Infants/Min  				| 1       	| Integer	    | Indicates the minimum amount of infants staying in the room.							|
+| Rooms /Room/RoomOccupancy/Infants/Max  				| 1       	| Integer	    | Indicates the maximum amount of infants staying in the room.							|
+| Rooms /Room/RoomOccupancy/Total  				| 1       	|		| Indicates the total amount of occupants staying in the room (minimum and maximum).							|
+| Rooms /Room/RoomOccupancy/Total/Min  				| 1       	| Integer	    | Indicates the minimum total amount of occupants staying in the room.							|
+| Rooms /Room/RoomOccupancy/Total/Max  				| 1       	| Integer	    | Indicates the maximum total amount of occupants staying in the room.							|
+| Rooms /Room/Attributes/				| 0..1       	|		| Attributes.							|
+| Rooms /Room/Attributes/Attribute			| 1..n       	|		| Specific attributes of the room, such as wi-fi.	|
+| Rooms /Room/Attributes/Attribute/Code		| 1    		| String	| Code.								|
+| Rooms /Room/Attributes/Attribute/Classification	| 1    		| String	| HAB=room |
+| Rooms /Room/Attributes/Attribute/Description		| 0..1    		| String	| Description.
+| Rooms /Room/Images/    				| 0..1       	|		| Images.							|
+| Rooms /Room/Images/Picture			| 1..n       	|		| Picture.     							|
+| Rooms /Room/Images/Picture/Url			| 1    		| String	| Url.								|
+| Rooms /Room/Images/Picture/Classification		| 1    		| String	| HAB=room |
+| Rooms /Room/Images/Picture/Ordered		| 0..1 		| String	| Images should be ordered from 1 onward. 1 is top.		|
+| Rooms /Room/Images/Picture/Description		| 0..1    		| String	| Description.							|
+| Rooms /Room/Images/Picture/Code			| 0..1    		| String	| Code.								|
+| Rooms /Room/Images/Picture/UpgradeUTCDate			| 0..1    		| DateTime	| Indicates the upgrade date of the picture in UTC format.	|
+| Rooms /Room/Description  				| 0..1       	| String	| Room description.							|
+| Rooms /Room/Views/    				| 0..1       	|		| Views.							|
+| Rooms /Room/Views/View			| 1..n       	|		| List of room views.     							|
+| Rooms /Room/Views/View/Code			| 1    		| String	| View code.								|
+| Rooms /Room/Views/View/Name		| 1    		| String	| View name.								|
+| Rooms /Room/Area		| 0..1    		| String	| Room area.								|
 | LocationType				| 0..1 		| String	| Location code.							|
 | PaymentOptions /			| 0..1 		| String	| Type of cards allowed by the supplier. This tag is only mandatory if payment type is different than *MerchantPay*.	 |
 | PaymentOptions /Cards /		| 1          	|		| List of cards allowed.					|
