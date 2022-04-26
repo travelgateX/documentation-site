@@ -170,6 +170,13 @@ Providers send a HotelRatePlanInventoryRetrieveRQ message to retrieve a list of 
                 </GuestRoom>
               </SellableProduct>
             </SellableProducts>
+            <AdditionalDetails>
+              <AdditionalDetail Code="REP" Type="39">
+                <DetailDescription>
+                  <Text>Repsol</Text>
+                </DetailDescription>
+              </AdditionalDetail>
+            </AdditionalDetails>
           </RatePlan>
         </RatePlans>
       </HotelRatePlanInventoryRetrieveResult>
@@ -354,3 +361,9 @@ In the previous example we received one hotel, one Rate Plan and 2 rooms. One of
 | @MaxOccupancy				   | 1 		 | Integer  | Max occupation.  					|
 | @AgeQualifyingCode			   | 1 		 | Integer  | (10 - Adult,8 - Child,7 - Infant).		|
 | RatePlans/RatePlan/SellableProduct/GuestRoom/Description/Text | 1 | String | Room description.			|
+| RatePlans/RatePlan/AdditionalDetails | 0..1 |  | Rate plan additional details |
+| RatePlans/RatePlan/AdditionalDetails/AdditionalDetail | 0..n |  | List of additional details |
+| @Code | 1 | String  | Trading partner code associated with the detail. |
+| @Type | 1 | String | Define the information. Only allowed "39" (Contract/negotiated booking information)|
+| RatePlans/RatePlan/AdditionalDetails/AdditionalDetail/DetailDescription | 1 |  | Details Description |
+| RatePlans/RatePlan/AdditionalDetails/AdditionalDetail/DetailDescription/Text | 1 | String  | Description. If additional details type is "39", the name of the trading partner for this rate.  |

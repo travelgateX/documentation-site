@@ -22,7 +22,7 @@ First, it is necessary to create the Derived Rate in the *SetUp* section. Once t
 
 A pop up window will appear for you to fill in the derived rate information:
 
-![Inventory-X SetUp Derived Rate](./../../../images/web/inventory_setup_derivedrate2.png "Inventory-X SetUp Derived Rate")
+![Inventory-X SetUp Derived Rate](./../../../images/web/inventory_setup_derivedrate2.JPG "Inventory-X SetUp Derived Rate")
 
 </br>
 
@@ -30,8 +30,8 @@ A pop up window will appear for you to fill in the derived rate information:
 * **Name:** Derived rate name.
 * **Cancel policies from base rate:** Checkbox that will apply the cancel policies from the base rate to the derived rate depending on whether it is checked or not. If it is not checked, a form appears like the one seen previously when adding a rate, letting you add the cancel policies you may want for this derived rate.
 * **Markets from base rate:** Checkbox that will apply the markets from the base rate to the derived rate depending on whether it is checked or not. If it is not checked, a form appears like the one seen previously when adding a rate, letting you select any markets you may want included or excluded for this derived rate.
-* **Apply Package from base rate:** Checkbox that will apply the package conditions from the base rate depending on whether it is checked or not.
-* **Package:** Checkbox that informs if the amount is for a package depending on if it is checked or not.
+* **Apply Rate Rule from base rate:** Checkbox that will apply the rate rule conditions from the base rate depending on whether it is checked or not.
+* **Rate Rule:** Rate rule to select if you do not want apply the same than the base rate.
 * **Active:** Checkbox to activate or deactivate the derived rate. If it is checked the derived rate is active.
 * **Apply Dates from base rate:** Checkbox used to apply the effective dates from the base rate. If it is not checked appears a form like the one explained previously when creating a rate.
 * **Board from base rate:** Checkbox used to apply the meal plan from the base rate. If it's not checked, the meal plan list will be enabled and you will be able to select the board of the derived rate.
@@ -40,6 +40,7 @@ room in order to be able to save the derived rate. Bear in mind that if the deri
 * **Apply Payments from Base Rate:** Checkbox that indicates if the *“Payment Type”* and *“Card Type"* are the same as the base rate. If so, it has to be selected. If not, you will be able to select this information from drop down menus, so that the derived rate can have its own payment types.
 * **Inform Base Rate:** Checkbox that indicates that the retrieve functions would return the name of the Base Rate instead of the derived rate’s name, if checked.
 * **Apply MealPlan Supplement from Base Rate:** Checkbox that allows the derived rate to have its own MealPlan Supplements. If checked, the derived rate would get the MealPlans of the base rate if any.
+* **Apply Specific Clients from Base Rate:** Checkbox that allows the derived rate to have its own Specific Clients. If checked, the derived rate would get the Specific Clients of the base rate if any.
 
 In our example we have created a derived rate specifying its code and name as a discount and we’ve indicated that we only want this discount to be applied to our *‘Double room’*. All other conditions will remain the same as its base rate. 
 
