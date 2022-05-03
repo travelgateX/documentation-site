@@ -1,7 +1,7 @@
 +++
 title = "Getting Started"
 pagetitle = "Admin Getting Started"
-description = "Basic information to start with"
+description = "Basic information to start with Admin"
 icon = "fa-paper-plane"
 alwaysopen = false
 isDirectory=false
