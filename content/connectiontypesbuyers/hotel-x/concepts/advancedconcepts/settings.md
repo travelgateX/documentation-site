@@ -14,7 +14,7 @@ Settings are the common configuration that will be used in order to build the re
 
 There are two kind of settings, overridable and partially overridable. You can find the partially overridable settings in the first level of settings and are known as HotelX_Settings. These settings are formed by some non-overridable settings such as "group" and "testMode", some overridable global settings such as "timeout", "auditTransactions", etc., and some overridable baseSettings such as "businessRules".
 
-We have several levels of settings that can be combined in order to build customised settings. The hierarchy of heritage and type of settings for each level is:
+There are several levels of settings that can be combined in order to build customised settings. The hierarchy of heritage and type of settings for each level is:
 
 0 - Criteria common settings fields (currency, auditTransactions, businessRules, etc.)<br />
 1 - Access Settings [Base Settings]<br />
@@ -27,7 +27,25 @@ We have several levels of settings that can be combined in order to build custom
 
 Any field that is empty in one level, will be filled in with the value of the following level.
 
-A special case is input fields specified in Criteria: if one field of Criteria is specified in settings, the value of Criteria is the most significant. It is mandatory that after the settings heritage flow, each field of Default Settings will be filled, because these settings will be sent to supplier.
+There is a special case, which is the Criteria fields specified in the query. Those have preference over the values in database. If those are empty in the query, they will be filled from the values in the database setted up early.
+
+### Which settings are mandatory and from where are comming from?
+
+- **Context**: Mandatory. This field has to be filled in the query or in default settings<br />
+- **Client**: Mandatory. Has to be filled in the query<br />
+- **Group**: Optional. If it's not filled in the query, it will be taken from our internal database<br />
+- **Timeout**: Mandatory. This field has to be filled in the query or in default settings<br />
+- **AuditTransactions**: Optional<br />
+- **BusinessRules**: Mandatory. This field has to be filled in the query or in default settings<br />
+- **Suppliers**: Optional<br />
+- **Plugins**: Optional<br />
+- **TestMode**: Optional<br />
+- **ClientTokens**: Optional<br />
+- **CommitRequired**: Optional<br />
+- **Language**: Mandatory. This field has to be filled in the query (Criteria) or in default settings<br />
+- **Currency**: Mandatory. This field has to be filled in the query (Criteria) or in default settings<br />
+- **Nationality**: Mandatory. This field has to be filled in the query (Criteria) or in default settings<br />
+- **Markets**: Mandatory. This field has to be filled in the query (Criteria) or in default settings<br />
 
 ### Where can Settings be applied?
 
