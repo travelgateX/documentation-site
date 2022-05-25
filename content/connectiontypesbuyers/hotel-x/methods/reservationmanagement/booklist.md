@@ -34,10 +34,15 @@
 
 The Booking List operation allows to retrieve a booking (or bookings) with all its details from the booking reference locator.
 The main information returned for each booking in the list is as follows:
+
 * Booking reference
+
 * Booking holder
+
 * Booking pax
+
 * Hotel, rooms and boards confirmed
+
 * Booking rates
 
 ## Advanced criteria
