@@ -8,7 +8,7 @@ alwaysopen = false
 isDirectory=false
 +++
 
-[Search](#search), [Quote](#quote) and [Book](#book) transactions must be executed sequentally in order to book hotel rooms in a Seller.
+[Search](https://docs.travelgatex.com/connectiontypesbuyers/hotel-x/methods/bookingflow/search/), [Quote](https://docs.travelgatex.com/connectiontypesbuyers/hotel-x/methods/bookingflow/quote/) and [Book](https://docs.travelgatex.com/connectiontypesbuyers/hotel-x/methods/bookingflow/book/) transactions must be executed sequentally in order to book hotel rooms in a Seller.
 
 <!-- {{< figure src="/images/booking_flow.png#center" alt="High Level HotelX Architecture" attr="" >}} -->
 
