@@ -283,12 +283,13 @@ In the previous example we received one hotel, one Rate Plan and 2 rooms. One of
 | @RatePlanStatusType			    | 1		 | String   | Active or Deactivated.				|
 | @RatePlanType				    | 0..1	 | Integer  | OTA RPT Code (0 Not Selected, 10 - Negotiated, 11 - Package). 			|
 | @YieldableIndicator			    | 0..1	 | Boolean  | Used to indicate the rate plan is subject to yield management logic. When false, the rate plan is not yieldable. When true or it's not returned, the rate plan is yieldable.|
-| @CurrencyCode				     0..1	 | String   | ISO Currency (EUR). Only null for derived rates. 	|
+| @CurrencyCode				    | 0..1	 | String   | ISO Currency (EUR). Only null for derived rates. 	|
 | @Start      				    | 0..1 	 | Date	    | Start date of the rate booking window (Booking Dates for wich the rate will be available). |
 | @End        				    | 0..1	 | Date     | End date of the rate booking window (Booking Dates for wich the rate will be available). |
 | @Duration				    | 0..1  	 | String   | Duration of the rate booking window. Only present if Start and End are not. When present value is always 0 and means the rate has no booking window (available all dates). |
-| _@BaseRatePlanCode			    | 0..1 	 | String   | Rate plan code of the base rate plan. Only returned for derived rates. |
-| _@RatePlanStatusType			    | 1 	 | String   | Indicates if the rate plan is active or not for this dates. Possible values: "Active", "Deactivated". |
+| @BaseRatePlanCode			    | 0..1 	 | String   | Rate plan code of the base rate plan. Only returned for derived rates. |
+| @RatePlanStatusType			    | 1 	 | String   | Indicates if the rate plan is active or not for this dates. Possible values: "Active", "Deactivated". |
+| @PromotionCode        				    | 0..1	 | String     | Promotion code to apply. 25 - Senior_55  26 - Senior_60, 27 - Senior_65. If the attribute is not present there is no promotion code. Not applicable for derived rates.|
 | RatePlans/RatePlan/Description/Text	    | 1     	 |	    | Description of rate. 				|
 | RatePlans/BookingRules		    | 0..1       |	    | Present if exists booking rules for the given RatePlan.|
 | BookingRules/BookingRule		    | 1..n       |	    | Booking rules.					|
