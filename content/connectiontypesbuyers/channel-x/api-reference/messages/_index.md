@@ -211,6 +211,7 @@ The ``HotelRatePlanInventoryNotif`` message contains information about the inven
 | @Start      				          | 0..1 	  | Date	   | Booking Start Date for which the rate will be available.               |
 | @End        				          | 0..1	  | Date     | Booking Start Date for which the rate will be available.               |
 | @RatePlanType        				  | 0..1	  | String     | Rate rule to apply. 0 - No selected, 11 - Package, 10 - Negotiated. If the attribute is not present and it is a base rate, the value is 0, if it is a derived rate, the value is the same as the parent rate.               |
+| @PromotionCode        				    | 0..1	 | String     | Promotion code to apply. 25 - Senior_55  26 - Senior_60, 27 - Senior_65. If the attribute is not present there is no promotion code. Not applicable for derived rates.|
 | RatePlan/BookingRules            	    | 0..1    |	         |                                                                       |
 | ../BookingRule		                | 1..n    |	         | 					                                                             |
 | @Code       				          | 0..1	  | String   | Empty if there are viewships conditions                               |
