@@ -83,11 +83,6 @@ discourseUrl = "http://community.travelgatex.com/"
       url = "/getting-started/"
       name = "Get Started"
       weight = 10
-    [[menu.prepend]]
-     url = "https://slack.travelgatex.com/"
-     name = '<img alt="slack travelgatex" src="https://slack.travelgatex.com/badge.svg" />'
-     weight = 11
-     hrefTargetBlank = true
 
 
   # Hero section
