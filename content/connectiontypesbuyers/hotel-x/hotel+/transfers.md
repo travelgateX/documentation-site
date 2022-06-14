@@ -200,6 +200,12 @@ The request is as follows:
 
 ```
 
+A succesful response looks like this:
+
+```json
+
+```
+
 ### Status
 
 If you need to retrieve the booked transfer information you can use the Booking List Query sending the reference of every transfer previously booked.
@@ -210,9 +216,13 @@ Within the HotelCriteriaBookingInput you will find an AppInput property which le
 
 ```
 
+>The response structure is the same as the book response.
+
 ### Cancel
 
 
 ```json
 
 ```
+
+>The response structure is the same as the book response.
