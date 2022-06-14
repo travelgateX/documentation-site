@@ -290,6 +290,8 @@ In the previous example we received one hotel, one Rate Plan and 2 rooms. One of
 | @BaseRatePlanCode			    | 0..1 	 | String   | Rate plan code of the base rate plan. Only returned for derived rates. |
 | @RatePlanStatusType			    | 1 	 | String   | Indicates if the rate plan is active or not for this dates. Possible values: "Active", "Deactivated". |
 | @PromotionCode        				    | 0..1	 | String     | Promotion code to apply. 25 - Senior_55  26 - Senior_60, 27 - Senior_65. If the attribute is not present there is no promotion code. Not applicable for derived rates.|
+| @FreeBaby        				    | 1	 | Boolean     | Free babies promotion|
+| @FreeChild        				    | 1	 | Boolean     | Free children promotion |
 | RatePlans/RatePlan/Description/Text	    | 1     	 |	    | Description of rate. 				|
 | RatePlans/BookingRules		    | 0..1       |	    | Present if exists booking rules for the given RatePlan.|
 | BookingRules/BookingRule		    | 1..n       |	    | Booking rules.					|
