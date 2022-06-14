@@ -189,24 +189,188 @@ This is the response structure (removed data information for brevity):
 
 Once you have selected the required transfer options you need to include the corresponding option identifiers into the Book Mutation.
 
-Within the HotelXMutation.Book there is a property called **AppInput** which lets you add information required to confirm the service.
+Within the HotelXMutation.Book there is a property called [**AppInput**](https://docs.travelgatex.com/connectiontypesbuyers/hotel-x/reference/inputobjects/appInput/) which lets you add information required to confirm the service.
 
 For example, to book a round-trip transfer you must specify two appInputs, one for arrival and another one for departure.
 
 The request is as follows:
 
+```json
+  [
+    {
+      "where": {
+        "code": "transferApp"
+      },
+      "data": {
+        "parameters": [
+          {
+            "key": "optionIdArrival",
+            "value": "U2VydmFudHJpcFRyYW5zZmVyc0FwcHxWRlZOTms1VVNYZFBSR1JxVDBSVmRGbFVXVEphUXpBd1RsZGFhMHhVYTNoWk1rMTBUbGRTYUU0eVNYcGFSRmxucHNhRmg2UlhSUk1FVXhVa1ZaZWsxRVRrVlBWRWt3V0hwRmQwMUV3VDA4Mj0="
+          },
+          {
+            "key": "flightNumber",
+            "value": "UX5498"
+          }
+        ]
+      }
+    },
+    {
+      "where": {
+        "code": "transferApp"
+      },
+      "data": {
+        "parameters": [
+          {
+            "key": "optionIdReturn",
+            "value": "U2VydmFudHJpcFRyYW5zZmVyc0FwcHxWRlZOTms1VVNYZFBSR1JxVDBSVmRGbFVXVEphUXpBd1RsZGFhMHhVYTNoWk1rMTBUbGRTYUU0eVNYcGFSRmxucHNhRmg2UlhSUk1FVXhVa1ZaZWsxRVRrVlBWRWt3V0hwRmQwMUV3VDA4Mj0="
+          },
+          {
+            "key": "flightNumber",
+            "value": "UX5478"
+          }
+        ]
+      }
+    }
+  ]
+```
+
+Additionally, in order to book Hotel + transfer, it is necessary to include all the [**holder's**](https://docs.travelgatex.com/connectiontypesbuyers/hotel-x/reference/inputobjects/holderInput/) information:
 
 ```json
+{
+    "name": "John",
+    "surname": "Doe",
+    "contactInfo": {
+        "phone": {
+            "countryCode": "+34",
+            "number": "621457814"
+        },
+        "email": "john@doe.com"
+    }
+}
+```
+
+
+A successful response looks like this:
+
+```json
+{
+	"data": {...},
+	"extensions": {
+		"appStore": {
+			"apps": [
+				{
+					"code": "ServantripTransfersApp",
+					"data": {
+						"holder": {
+							"email": "john@doe.com",
+							"name": "John",
+							"phone": {
+								"countryCode": "34",
+								"number": "634819425"
+							},
+							"surname": "Doe"
+						},
+						"reference": {
+							"bookingId": "MjE0NzAxMTgxMA==",
+							"provider": "0037F21D",
+							"supplier": "57846320"
+						},
+						"transfers": [
+							{
+								"dropOffCode": "10523647",
+								"image": "https://media.servantrip.com/resources/img/Transfer-Sedan.png",
+								"name": "Private Standard Sedan",
+								"options": [
+									{
+										"baggage": [
+											{
+												"quantity": 3,
+												"type": "standard_suitcase"
+											}
+										],
+										"cancelPolicy": {
+											"cancelPenalties": [
+												{
+													"amount": 100,
+													"deadline": "2022-06-10T15:10:01.2504168+00:00",
+													"penaltyType": "PERCENT"
+												}
+											],
+											"refundable": true
+										},
+										"optionId": "VFVNNk5USXdPRGRqT0RVdFlUWTJaQzAwTldaa0xUa3hZMk10TldSaE4ySXpaRFl6TnpsaFh6RXRRMEUxUkVZek1ETkVPVEkwWHpFd01EST0=",
+										"paxLimit": 3,
+										"price": {
+											"currency": "EUR",
+											"net": 49.32
+										},
+										"tags": [
+											"private",
+											"meet_greet",
+											"direct_ride",
+											"refundable",
+											"no_weelchair_adapted",
+											"no_green_friendly"
+										]
+									}
+								],
+								"pickUpCode": "BCN",
+								"vehicle": "VW Passat, Skoda Octavia or similar"
+							},
+							{
+								"dropOffCode": "BCN",
+								"image": "https://media.servantrip.com/resources/img/Transfer-Sedan.png",
+								"name": "Private Standard Sedan",
+								"options": [
+									{
+										"baggage": [
+											{
+												"quantity": 3,
+												"type": "standard_suitcase"
+											}
+										],
+										"cancelPolicy": {
+											"cancelPenalties": [
+												{
+													"amount": 100,
+													"deadline": "2022-06-10T15:10:01.2504176+00:00",
+													"penaltyType": "PERCENT"
+												}
+											],
+											"refundable": true
+										},
+										"optionId": "VFVNNk5USXdPRGRqT0RVdFlUWTJaQzAwTldaa0xUa3hZMk10TldSaE4ySXpaRFlnpsaFh6RXRRMEUxUkVZek1ETkVPVEkwWHpFd01EwT082=",
+										"paxLimit": 3,
+										"price": {
+											"currency": "EUR",
+											"net": 49.32
+										},
+										"tags": [
+											"private",
+											"meet_greet",
+											"direct_ride",
+											"refundable",
+											"no_weelchair_adapted",
+											"no_green_friendly"
+										]
+									}
+								],
+								"pickUpCode": "10523647",
+								"vehicle": "VW Passat, Skoda Octavia or similar"
+							}
+						]
+					},
+					"schema": "AppSchemaTransferBook"
+				}
+			]
+		}
+	}
+}
 
 ```
 
-A succesful response looks like this:
-
-```json
-
-```
-
-### Status
+### Booking
 
 If you need to retrieve the booked transfer information you can use the Booking List Query sending the reference of every transfer previously booked.
 
