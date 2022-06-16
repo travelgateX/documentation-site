@@ -30,7 +30,9 @@ Providers send a HotelRatePlanInventoryRetrieveRQ message to retrieve a list of 
               <CompanyName Code = "ClientTravelAgency1"/>
             </BookingChannel>
             <TPA_Extensions>
-              <Param key = "onlyActive" value = "0"/>
+               <Params>
+                 <Param key = "onlyActive" value = "0"/>
+               </Params>
             </TPA_Extensions>
           </Source>
         </POS>
@@ -49,7 +51,8 @@ Providers send a HotelRatePlanInventoryRetrieveRQ message to retrieve a list of 
 | HotelRatePlan/request		| 1          | 		| Root Node							|
 | @PrimaryLangID		| 1   	     | String	| ISO Code Language						|
 | POS/Source/TPA_Extensions	| 0..1	     |	     	| Optional, if empty only active inventory will be received.	|
-| Param       			| 1 	     | 		|								|
+| POS/Source/TPA_Extensions/Params	| 0..1	     |	     	| 	|
+| POS/Source/TPA_Extensions/Param/Param       			| 0..N 	     | 		|								|
 | @key   			| 1   	     | String 	| onlyActive							|
 | @value			| 1  	     | String	| 1 - You will receive all active inventory data. 0 - Active and deactivated inventory will be received. (Same case as without TPA_Extensions node.) |
 | RatePlans/RatePlan/HotelRef	| 0..1       | 		| Contains hotel filter						|
@@ -67,7 +70,7 @@ Providers send a HotelRatePlanInventoryRetrieveRQ message to retrieve a list of 
     <HotelRatePlanInventoryRetrieveResponse xmlns = "http://schemas.xmltravelgate.com/hubpush/provider/2012/10">
       <HotelRatePlanInventoryRetrieveResult Version = "0">
         <Success xmlns = "http://www.opentravel.org/OTA/2003/05"/>
-        <RatePlans HotelCode = "1" HotelName = "Hotel Travelgate" xmlns = "http://www.opentravel.org/OTA/2003/05">
+        <RatePlans HotelCode = "1" HotelName = "Hotel Travelgate" HotelStatusType = "Active" xmlns = "http://www.opentravel.org/OTA/2003/05">
           <RatePlan RatePlanCode = "PACK" RatePlanType = "11" YieldableIndicator = "false" CurrencyCode = "EUR" RatePlanStatusType = "Active" Start = "2016-01-01" End = "2016-05-01">
             <BookingRules>
               <BookingRule Code = "1 Noche">
@@ -198,7 +201,7 @@ In the previous example we received one hotel, one Rate Plan and 2 rooms. One of
     <HotelRatePlanInventoryRetrieveResponse xmlns = "http://schemas.xmltravelgate.com/hubpush/provider/2012/10">
         <HotelRatePlanInventoryRetrieveResult Version = "0">
             <Success xmlns = "http://www.opentravel.org/OTA/2003/05"/>
-            <RatePlans HotelCode = "1" HotelName = "Hotel Test Pruebas Travelgate " xmlns = "http://www.opentravel.org/OTA/2003/05">
+            <RatePlans HotelCode = "1" HotelName = "Hotel Test Pruebas Travelgate" HotelStatusType = "Active" xmlns = "http://www.opentravel.org/OTA/2003/05">
                 <RatePlan RatePlanCode = "DRVT" BaseRatePlanCode = "SRATE2" RatePlanStatusType = "Active">
                     <SellableProducts>
                         <SellableProduct InvCode = "TRP" InvType = "ROOM" InvStatusType = "Active">
@@ -278,6 +281,7 @@ In the previous example we received one hotel, one Rate Plan and 2 rooms. One of
 | RatePlans         			    | 0..1    	 |	    | Present when sucess 				|
 | @HotelCode				    | 1  	 | String   | Hotel code whose information is provided by the method. |
 | @HotelName				    | 1 	 | String   | Hotel name.					|
+| @HotelStatusType | 1		 | String   | Active or Deactivated.				|
 | RatePlans/RatePlan			    | 0..n    	 |	    | Present when rates exists.			|
 | @RatePlanCode				    | 1 	 | String   | Rate plan code. 					|
 | @RatePlanStatusType			    | 1		 | String   | Active or Deactivated.				|
