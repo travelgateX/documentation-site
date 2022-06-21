@@ -1,7 +1,7 @@
 +++
 title = "Release Notes"
 pagetitle = "Relese Notes"
-description = "Release Notes for Inventory-X"
+description = "Release Notes for Inventory"
 icon = "fa-map" 
 weight = 6
 alwaysopen = false
