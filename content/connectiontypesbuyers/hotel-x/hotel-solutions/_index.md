@@ -8,8 +8,8 @@ alwaysopen = false
 isDirectory = false
 +++
 
+Here at Travelgate, we are developing a series of new added value solutions to the buyers of accommodation product.
 
-
-For more information contact us at [Hotel+](https://landing.travelgatex.com/hotel-solutions?hsLang=en)
+For more information visit [Hotel+](https://landing.travelgatex.com/hotel-solutions?hsLang=en)
 
 {{%custom-children%}}

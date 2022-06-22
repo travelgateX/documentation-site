@@ -7,20 +7,20 @@ weight = 3
 alwaysopen = false
 +++
 
-Hotel + Transfers lets you add transfer options from hotel nearby airports with minimum effort. 
+This solution lets you add transfer options from hotels and nearby airports to your hotel shopping flow with minimum effort.
 
-## What it does? {#transfers}
+## What does it do? {#transfers}
 
-We use the Hotel geolocation to identify nearby airports, look for available transfers with our connected providers and return them in the [Quote](/connectiontypesbuyers/hotel-x/methods/bookingflow/quote/) response, within the graphql extensions section.
+We use the Hotel geolocation to identify nearby airports, look for available transfers with our connected providers and return them in the [Quote](/connectiontypesbuyers/hotel-x/methods/bookingflow/quote/) response, within the GraphQL Extensions section.
 
-## How to use it?
+## How to implement it?
 
 As a Buyer, you'll need to be connected to our latest API, [Hotel-X](/connectiontypesbuyers/hotel-x/). From there, in just a few steps you can start booking one-way or round-trip transfers as an added value to your hotel offering.
 
-1. **Activate** Transfers App in your organization.
+1. Obtain your development and/or production **API Key** from Servantrip and share it with us.
 2. Start a **Hotel Search as you normally would**.
-3. When you make a **Hotel Quote**, you will receive a **list of available transfers** back and forth to the selected hotel from nearby airports, without changes in the Hotel Quote request.
-4. In **Hotel Book** we need the **Transfer Option Identifier**, returned in step (3), plus the flight number and contact details (email and phone) to successfully complete the book.
+3. Without changes in the **Hotel Quote** request, you will receive a **list of available transfers** back and forth to the selected hotel from nearby airports.
+4. In **Hotel Book** we need the **Transfer Option Identifier**, returned in step (3), plus the flight number and contact details (email and phone) to successfully complete the booking process.
 
 
 {{% alert theme="info" %}}
@@ -33,17 +33,18 @@ The reason the final client's contact details are mandatory is so that the trans
 This workflow assumes that you have previously activated the Hotel+Transfer feature.
 {{% /alert %}}
 
+### Search
+No changes are required in this step.
 
 ### Quote
 
-You don’t have to add anything to your current structure. We will use the hotel geolocation to identify nearby airports as well as the check-in and check-out dates for arrival and departure respectively, and also the number of guests will determine the passengers to transfer.
+You don’t have to add anything to your current structure as we will use the hotel geolocation to identify nearby airports as well as the check-in and check-out dates for arrival and departure respectively, and also the number of guests will determine the passengers to transfer.
 
-Within the current hotel information, you will find a list of transfer options which includes information about the pick-up and drop-off locations, images, vehicle types, price, cancellation policies, paxes and baggage limits.
+Within the current hotel information, you will find a list of transfer options which includes information about the pick-up and drop-off locations, images, vehicle types, price, cancellation policies, paxes and baggage limits. This information is in the GraphQL Extensions section of the response.
 
 Every transfer option comes with an OptionId that uniquely identifies the product. This identifier will be required to book a transfer in the book step.
 
 This is the response structure (removed data information for brevity):
-
 
 ```json
 {
@@ -301,11 +302,11 @@ This is the response structure (removed data information for brevity):
 
 ### Book
 
-Once you have selected the required transfer options you need to include the corresponding option identifiers into the Book Mutation.
+Once you have selected the required transfer options you need to include the corresponding option identifiers in the Book Mutation.
 
 Within the HotelXMutation.Book there is a property called [**AppsInput**](/connectiontypesbuyers/hotel-x/reference/inputobjects/appsinput/) which lets you add information required to confirm the service.
 
-For example, to book a round-trip transfer you must specify two appInputs, one for arrival and another one for departure.
+For example, to book a round-trip transfer you must specify two appsInput, one for arrival and another one for departure.
 
 This is an example of the variable structure:
 
@@ -537,4 +538,4 @@ To cancel a transfer book use the following structure including **BookingId** an
 
 >The response structure is the same as the book response.
 
-You can see that status has changed to *cancelled*.
+You can see that status has the value "cancelled".
