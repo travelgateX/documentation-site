@@ -35,7 +35,7 @@ Descriptions of each table and their correspondent fields are found below:
 
 
 ## hotel\_rates\_weekly\_seller
-This table contains the total of ok searches and bookings and cancellation requests and responses times for the buyer|seller and for TravelgateX. The buyers|sellers that aren't connected are aggregated in "others" for the seller case and "OTHERS" for the buyers case.
+This table contains the total of searches (with net and unknown commission) and ok bookings requests and the minimum price for search and booking requests for my organization and all my competitive set (compset). The metrics are aggregated by check in week, market source, hotel and destination of the hotel.
 
 
 __Fields__
@@ -43,7 +43,7 @@ __Fields__
 * **checkin_week (TIMESTAMP).** Week by check-in date in UTC (format: YYYY-MM-DD hh:mm:ss). Date shown corresponds to Monday day.
 * **market (STRING).** Source market code (ISO 3166-2).
 * **hotel\_code (STRING).** Own hotel code.
-* **hotel\_name    (STRING).** Hotel name.
+* **hotel\_name    (STRING).** Own hotel name.
 * **search\_ok\_net (NUMBER).** Quantity of searches with available options and net price.
 * **search\_ok\_net\_compset (NUMBER).** Quantity of searches with available options and net price in the competitive set.
 * **search\_ok\_unknown (NUMBER).** Quantity of searches with available options and unknown price type.
