@@ -18,9 +18,11 @@ Data is stored in multiple tables depending on the kind of information that want
 * **Insights Agg:** contains information similar to Insights but with a bigger aggregation. The fields _check\_in_, _adults_, _children_ and _infants_ have disappeared.
 * **Insights Destination:** contains information from searches, quotes, bookings and revenue aggregated per buyer, seller, search date, check in date, nights, market, number of rooms, quantity of paxes and location (country + Administrative Zone 1 + Administrative Zone 2 + City) by day|month. 
 * **Insights Destination Agg:** contains information similar to Insights Destination but with a bigger aggregation. The fields _check\_in_, _adults_, _children_ and _infants_ have disappeared.
-* **Effective Bookings:** contains specific information about bookings and their current status (OK or Cancelled).
+* **Insights Hotel Destination:** contains combined information of Insights Agg and Insights Destination Agg, in the same table you have metrics by hotel code and its destination, also with cancellation metrics. The fields _pax\_type_, _nights_, _market_ and _num\_rooms_ and _username_ have disappeared.
+* **Effective Bookings:** contains specific information about bookings and their current status (OK or Cancelled). 
 * **Portfolio:** contains information to know which hotels over supplier's portfolio are being queried by the clients. This can be helpful to know which percentage over portfolio is mapped by the client.
 * **Portfolio Stats:** contains information to measure the evolution of the daily\_portfolio\_(buyer|seller) table. This can be helpful to know if you are getting better results in your portfolio optimization.
+
 
 
 Also, some table has a different level of aggregation:
@@ -326,6 +328,70 @@ __Preview__
 | client A  | provider X  | Org Name 1      | Org Name 1     | false | 2019-06-17 00:00:00 UTC | 5              | 2      | ES     | 1         | 2        | ES                   | Comunidad de Madrid | Provincia de Madrid | Opera             | 188                        | 3                              | 127                     | 3                         |                               |                        | 1                           |                                 |                          | 83.340515                          | 1372.92                            | 79190.58911099887                  | 163.2                                  | 413.07836319871626                     | 800.2783631987163                      | 275.23                            | 275.23                            | 825.69                            |                                       |                                       |                                       | 275.23                              | 275.23                              | 275.23                              |                                         |                                         |                                         |
 | client A  | provider Y  | Org Name 2      | Org Name 2     | false | 2019-06-17 00:00:00 UTC | 4              | 8      | CO     | 1         | 1        | ES                   | Comunidad de Madrid | Provincia de Madrid | Chueca            | 81                         |                                | 92                      | 1                         |                               |                        | 1                           |                                 |                          | 148.14701791922977                 | 1712.7577783721138                 | 61912.03550860302                  |                                        |                                        |                                        | 165.32049567620578                | 165.32049567620578                | 165.32049567620578                |                                       |                                       |                                       | 148.14700919818134                  | 148.14700919818134                  | 148.14700919818134                  |                                         |                                         |                                         |
 | client B  | provider X  | Org Name 3      | Org Name 3     | false | 2019-06-17 00:00:00 UTC | 8              | 7      | CO     | 1         | 1        | ES                   | Comunidad de Madrid | Provincia de Madrid | Bilbao            | 30                         | 10                             | 27                      | 1                         |                               |                        | 1                           |                                 |                          | 89.69198537933495                  | 2519.0036551662656                 | 26465.12476598021                  | 1000.0445751983597                     | 1176.4999554248018                     | 11059.106713024874                     | 111.74110724792726                | 111.74110724792726                | 111.74110724792726                |                                       |                                       |                                       | 100.13417054461978                  | 100.13417054461978                  | 100.13417054461978                  |                                         |                                         |                                         |
+
+
+## insights\_hotel\_destination\_(daily|monthly)\_(buyer|seller)
+This table contains combined information of Insights Agg and Insights Destination Agg, in the same table you have metrics by hotel code and its destination, also with cancellation metrics. The fields _pax\_type_, _nights_, _market_ and _num\_rooms_ and _username_ have disappeared.
+
+__fields__
+
+* **client\_owner    (STRING).** Organization's name of the client.
+* **provider\_owner (STRING).** Organization's name of the provider.
+* **client\_id    (STRING).** Client unique ID.
+* **provider\_id (STRING).** Provider unique ID.
+* **search\_date (TIMESTAMP).** Search date in UTC (format: YYYY-MM-DD hh:mm:ss).
+* **__booking_window__ (NUMBER).** It is an enumeration to describe how far away is the check-in date.
+    * __1__ = Last second (0-1 day).
+    * __2__ = Last minute (2-3 days).
+    * __3__ = About 1 week (4-7 days).
+    * __4__ = About 2 weeks (8-14 days).
+    * __5__ = About 1 month (15-30 days)
+    * __6__ = About 2 months (31-60 days).
+    * __7__ = About 3 months (61-90 days).
+    * __8__ = More than 3 months (90+ days).
+* **country (STRING).** Country ISO2 code. E.g. ES (Spain)
+* **zone_1 (STRING).** Administrative first level zone. E.g. Comunidad de Madrid
+* **zone_2 (STRING).** Administrative second level zone E.g. Madrid city
+* **search\_ok (NUMBER).** Quantity of searches that returned any available hotel for above key (search_date, booking_window...).
+* **search\_nok (NUMBER).** Quantity of searches that didn't return any available hotels for above key.
+* **quote\_ok (NUMBER).** Quantity of quotes that returned a correct result for above key.
+* **quote\_nok (NUMBER).** Quantity of quotes that returned a wrong result for above key.
+* **booking\_ok\_net (NUMBER).** Quantity of confirmed bookings for above key where we have the net amount in EUR.
+* **booking\_ok\_unknown (NUMBER).** Quantity of confirmed bookings for above key where we have the amount in EUR but it may have applied commissions.
+* **booking\_nok (NUMBER).** Quantity of failed bookings for above key.
+* **cancel\_ok\_net (NUMBER).** Quantity of cancellations that returned a correct result for above key where we have the net amount in EUR.
+* **cancel\_ok\_unknown (NUMBER).** Quantity of cancellations that returned a correct result for above key where we have the amount in EUR but it may have applied commissions.
+* **cancel\_nok (NUMBER).** Quantity of failed cancellations for above key.
+* **tot_amount_booking_net (NUMBER).** Total net amount of confirmed bookings for above key.
+* **tot_amount_booking_unknown (NUMBER).** Total amount of confirmed bookings for above key when we don't know if any commission is applied.
+* **tot_amount_cancel_net (NUMBER).** Total net amount of bookings cancelled for above key.
+* **tot_amount_cancel_unknown (NUMBER).** Total amount of bookings cancelled  for above key when we don't know if any commission is applied.
+* **hotels (STRUCT).** Repeated field that contains info about hotels for above key.
+    * **code (STRING).** Hotel unique ID.
+    * **name (STRING).** Hotel name.
+    * **city (STRING).** City name of the hotel. If the city is big enough this level shows the neighbourghood. E.G. Chamberí
+    * **search\_ok (NUMBER).** Quantity of searches with available options for above key and hotel.
+    * **search\_nok (NUMBER).** Quantity of searches without available options for above key and hotel..
+    * **quote\_ok (NUMBER).** Quantity of quotes for above key and hotel.
+    * **quote\_nok (NUMBER).** Quantity of failed quotes for above key and hotel.
+    * **booking\_ok\_net (NUMBER).** Quantity of bookings for above key and hotel with net price available.
+    * **booking\_ok\_unknown (NUMBER).** Quantity of bookings for above key and hotel with a price where we don't know if any commission is applied.
+    * **booking\_nok (NUMBER).** Quantity of failed bookings for above key and hotel.
+    * **cancel\_ok\_net (NUMBER).** Quantity of cancellations for above key and hotel with net price available.
+    * **cancel\_ok\_unknown (NUMBER).** Quantity of cancellations for above key and hotel with a price where we don't know if any commission is applied.
+    * **cancel\_nok (NUMBER).** Quantity of failed cancellations for above key and hotel.
+    * **tot\_amount\_booking\_net (NUMBER).** Total net amount of booking for that hotel.
+    * **tot\_amount\_booking\_unknown (NUMBER).** Total amount of booking for that hotel (Commission not available).
+    * **tot\_amount\_cancel\_net (NUMBER).** Total net amount of bookings cancelled for that hotel.
+    * **tot\_amount\_cancel\_unknown (NUMBER).** Total amount  of bookings cancelled for that hotel (Commission not available).
+
+__Preview__ 
+
+| client\_owner | client\_id | provider\_owner | provider\_id | search\_date            | booking\_window | country | zone\_1             | zone\_2             | search\_ok | search\_nok | quote\_ok | quote\_nok | booking\_ok\_net | booking\_ok\_unknow | booking\_nok | cancel\_ok\_net | cancel\_ok\_unknow | booking\_nok | tot\_amount\_booking\_net | tot\_amount\_booking\_unknown | tot\_amount\_cancel\_net | tot\_amount\cancel\_unknown | hotels.code | hotels.name  | hotels.city | hotels.search\_ok | hotels.search\_nok | hotels.quote\_ok | hotels.quote\_nok | hotels.booking\_ok\_net | hotels.booking\_ok\_unknown | hotels.booking\_nok | hotels.cancel\_ok\_net | hotels.cancel\_ok\_unknown | hotels.cancel\_nok | hotels.tot\_amount\_booking\_net | hotels.tot\_amount\_booking\_unknown | hotels.tot\_amount\cancel\_net | hotels.tot\_amount\cancel\_unknown |
+|---------------|------------|-----------------|--------------|-------------------------|-----------------|---------|---------------------|---------------------|------------|-------------|-----------|------------|------------------|---------------------|--------------|-----------------|--------------------|--------------|---------------------------|-------------------------------|--------------------------|-----------------------------|-------------|--------------|-------------|-------------------|--------------------|------------------|-------------------|-------------------------|-----------------------------|---------------------|------------------------|----------------------------|--------------------|----------------------------------|--------------------------------------|--------------------------------|------------------------------------|
+| org buyer A   | client A   | org seller X    | provider X   | 2019-01-13 00:00:00 UTC | 3               | ES      | Comunidad de Madrid | Provincia de Madrid | 13         | 11          | _null_    | _null_     | _null_           | _null_              | _null_       | _null_          | _null_             | _null_       | _null_                    | _null_                        | _null_                   | _null_                      | 641443      | Hotel name 1 | Opera       | 13                | _null_             | _null_           | _null_            | _null_                  | _null_                      | _null_              | _null_                 | _null_                     | _null_             | _null_                           | _null_                               | _null_                         | _null_                             |
+|               |            |                 |              |                         |                 |         |                     |                     |            |             |           |            |                  |                     |              |                 |                    |              |                           |                               |                          |                             | 551568      | Hotel name 2 | Bilbao      | _null_            | _null_             | _null_           | _null_            | _null_                  | _null_                      | _null_              | _null_                 | _null_                     | _null_             | _null_                           | _null_                               | _null_                         | _null_                             |
+| org buyer B   | client B   | org seller Y    | provider Y   | 2019-01-13 00:00:00 UTC | 3               | ES      | Comunidad de Madrid | Provincia de Madrid | 6          | 1           | 3         | _null_     | 1                | _null_              | _null_       | 1               | _null_             | _null_       | 398.84                    | _null_                        | 398.84                   | _null_                      | 299         | Hotel name 3 | Opera       | _null_            | 1                  | _null_           | _null_            | 1                       | _null_                      | _null_              | 1                      | _null_                     | _null_             | 398.84                           | _null_                               | 398.84                         | _null_                             |
 
 ## effective\_bookings\_(buyer|seller)
 This table contains specific information about bookings done and their current status (Ok or cancelled).
