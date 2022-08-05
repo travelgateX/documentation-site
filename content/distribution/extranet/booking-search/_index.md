@@ -1,21 +1,21 @@
 +++
 title = "Booking Panel"
 pagetitle = "Booking Panel"
-description = "Panel that allows you to check your reservations and its details"
+description = "Panel that allows you to check your reservations and their details"
 icon = "fa-search"
 weight = 4
 alwaysopen = false
 isDirectory=false
 +++
 
-The booking panel tool allows you to obtain a list of all your agencies bookings and cancellations and get more detail information about it. To obtain a list with base information you can use the `Booking List` panel. To check a specific booking and obtain all its details you can use the `Booking Read` panel. 
+The booking panel tool allows you to obtain a list of all your agencies bookings and cancellations and get more detailed information about it. To obtain a list with base information you can use the `Booking List` panel. To check a specific booking and obtain all its details you can use the `Booking Read` panel. 
 </br>
 
 ![Distribution Booking Search tool](./../../images/web/distribution_web_bookingsearch.jpg "Distribution Booking Search tool")
 
 </br>
 
-To see and download a list of detailed bookings you can use the `Booking Reports` panel (this funcionality especially used for our DMC clients).
+You can also download a .csv file with a detailed report of your bookings from our section `Booking List Reports` (this functionality is especially used by our DMC clients).
 
 </br>
 
@@ -29,11 +29,11 @@ Booking list allows you to filter by different conditions:
 
 * Dates:
     * Booking dates: The date range when the booking was confirmed by the agency.
-    * Check-in date: The date range when the booking check-in is included. 
+    * Check-in date: The date range of the booking check-in. 
 * Transaction type/status:
-    * Include cancellations: List with both effective bookings and cancelled ones. 
-    * Only cancellations: List with only cancelled bookings.
-    * Only errors: List with bookings that failed and couldn't be confirmed successfully.
+    * Include cancellations: List of both effective and cancelled bookings. 
+    * Only cancellations: List of only cancelled bookings.
+    * Only errors: List of bookings that failed and couldn't be confirmed successfully.
 * Hotel:
     * Name: Filter bookings by hotel name.
     * Code: Filter bookings by hotel code.
@@ -49,7 +49,7 @@ Booking list allows you to filter by different conditions:
 
 ## Booking Read
 
-In order to obtain more details and information of a specific booking you can use the `Booking read` panel on the left with one of the locators (Client, Provider or TGX).
+In order to obtain more detailed information of a specific booking you can use the `Booking read` panel on the left and filter by one of the booking locators (Client, Provider or TGX).
 
 For each booking you will find the following information:
 
@@ -61,8 +61,8 @@ For each booking you will find the following information:
     * Supplier
     * Access
 * Configuration
-    * * Hotel: Hotel code and name
-    * * Check-in date
+    * Hotel: Hotel code and name
+    * Check-in date
     * Check-out date
     * Mealplan
     * Market
@@ -94,15 +94,15 @@ For each booking you will find the following information:
   
 ## Booking List Reports
 
-The booking reports tool allows you to obtain a file with all the bookings that have been done inside the parameters reports specified. The search parameters will be same as can be seen in the Booking Read.
+The booking reports tool allows you to obtain a file with all the bookings that have been done inside the report parameters specified. The search parameters will be the same as can be seen in the Booking Read.
 
-Notice that a Report name it is asked to you (with alfanumeric format), however, to ensure the uniqueness of the name, a datetime format will be added at the beginning of the name.
+Note that even though you should add a valid name to the report (alphanumeric format) our system will also add a datetime format at the beginning of this name in order to ensure it is unique.
 
 The display of the reports created can be shown in the List of Reports. There are two importants thing to know:
 
-   * Only one report can be generated every 15 minutes. So, once a generation is asked, the user has to wait 15 minutes to ask for the other one.
+   * Only one report can be generated every 15 minutes. So, once a generation is asked, the user should wait 15 minutes to ask for a new one.
     
-   * The generation of the report is not instant but it might take some time, depending on the volume of bookings to return. If Generation Status is equal to “Executing” the file is not done yet. So the download will not be able until the file is finished
+   * The generation of the report is not instant and it might take some time, depending on the volume of bookings to return. If Generation Status is equal to “Executing” the file is not processed yet, so it is still not available.
 
 ![Distribution Booking Report Status](./../../images/web/distribution_web_bookingreportstatus.jpg "Distribution Booking Report Status")
       
