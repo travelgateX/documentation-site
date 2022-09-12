@@ -37,6 +37,6 @@ In the following panel you will be able to load all conditions for your derived 
 
 {{% alert theme="error" %}} Please, remember that a Derived Rate shares the allotment with its base rate, that's why you can't load and specific allotment for a derived rate. {{% /alert %}}
 
-{{% alert theme="info" %}} Check our See [FAQ](./../../faq/discount-supplement) for a complete example on how to create a full discount/supplement using Derived Rates. {{% /alert %}}
+{{% alert theme="info" %}} Check our See [FAQ](https://docs.travelgatex.com/inventory-x/extranet/faq/discount-supplement/) for a complete example on how to create a full discount/supplement using Derived Rates. {{% /alert %}}
 
 {{%custom-children%}}
