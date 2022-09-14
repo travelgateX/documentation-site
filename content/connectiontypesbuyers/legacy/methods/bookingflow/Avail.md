@@ -319,139 +319,139 @@ is closed.
 ### AvailRS Description
 
 
-| **Element**				| **Number**	| **Type**	| **Description**						|
-| ------------------------------------- | ------------- | ------------- | ------------------------------------------------------------- |
-| AvailRS/Hotels/Hotel 			| 0..n 		| 		| Root node.							|
-| @code 				| 1 		| String 	| Hotel code.							|
-| @name 				| 0..1 		| String 	| Hotel name.							|
-| MealPlans 				| 1 		| 		| Retrieves a list of available mealplans for this hotel.					|
-| MealPlans /MealPlan 			| 1..n 		| 		| List of mealplan types.				|
-| @code 				| 1 		| String 	| MealPlan code.						|
-| MealPlans /MealPlan/Options /		| 1 		| 		| List of options					|
-| MealPlans /MealPlan /Options /Option 	| 1..n 		| 		| Detail of option.						|
-| @type 				| 1 		| String 	| Indicates option type (only hotel, hotel with ski pass, hotel with entrance...).	|
-| @paymentType 				| 1 		| String 	| Indicates payment type (See full type list at [Lists of Data](/connectiontypesbuyers/legacy/listsdata/)) .	|
-| @status 				| 1 		| String 	| Status option (OK = available, RQ = on request).		|
-| MealPlans /MealPlan/Options /Option/Parameters / | 0..1 	| 		| Additional parameters that must be reported on the ValuationRQ. Parameters, if this option is required.	  |
-| MealPlans /MealPlan/Options /Option/Parameters /Parameter | 0..n | 	| Additional parameter requiring integration.		|
-| @key 					| 1 		| String 	| Contains the keyword/Id to identify a parameter.		|
-| @value 				| 1 		| String 	| Contains  parameter value.				|
-| MealPlans /MealPlan/Options /Option/CancelPenalties /CancelPenalty | 0..1|  | List of cancellation penalties. (see [MetaData](/connectiontypesbuyers/legacy/methods/staticcontent/metadata/) in order to verify if a supplier implements it)				|
-| MealPlans /MealPlan/Options /Option/CancelPenalties /CancelPenalty/HoursBefore| 1 | String | Number of hours prior to arrival day in which this Cancellation policy applies. | 
-| MealPlans /MealPlan/Options /Option/CancelPenalties /CancelPenalty | 1..n| | Contains the value to apply.				|
-| @type 				| 1 		| String 	| Type of penalty -possible values: "Noches" (nights), "Porcentaje" (percentage), "Importe" (price value).  |
-| @currency 				| 1 		| String 	| Currency code.						|
-| MealPlans /MealPlan/Options /Option/CancelPenalties /CancelPenalty/CalculatedDeadline| 0..1 | Boolean |  Indicate if the Deadline is returned by the supplier or it's been calculated by TravelGate -> *true* = has been calculated by XTG, *false* = bypass of supplier data without calculation |
-| MealPlans /MealPlan/Options /Option/CancelPenalties /CancelPenalty/Deadline| 0..1 | String | Date on UTC Standard TimeZone in which this Cancellation policy applies (ISO 8601 e.g: 01/07/2016T05:00:00Z)  |
-| MealPlans /MealPlan/Options /Option/RateRules / | 0..1 	| 		| Option rate rules.					|
-| MealPlans /MealPlan/Options /Option/RateRules /Rules | 1 | 		| Rules.							|
-| MealPlans /MealPlan/Options /Option/RateRules /Rules /Rule | 1..n | 	| Rule.								|
-| @type 				| 1 		| String 	| Possible values: NonRefundable, Older55, Package, Negotiated.. See full list at [Lists of Data](/connectiontypesbuyers/legacy/listsdata/#Rate-Conditions)	|
-| MealPlans /MealPlan/Options /Option/RateRules /Rules /Rule/Rates / | 0..1 | 		| Rates.							|
-| MealPlans /MealPlan/Options /Option/RateRules /Rules /Rule/Rates /Rate | 1..n | 		| Rate.							|
-| @code 				| 0..1 		| String 	| Contains the rate rule code.	|
-| MealPlans /MealPlan/Options /Option/RateRules /Rules /Rule/Rates /Rate/Description | 0..1 | String	| Contains the rate rule description.	|
-| MealPlans /MealPlan/Options /Option/RateRules /Rules /Rule/Restrictions / | 0..n | 		| Restrictions for the rate rule.							|
-| MealPlans /MealPlan/Options /Option/RateRules /Rules /Rule/Restrictions /Restriction | 1..n | 		| Restriction for this rate rule.							|
-| @type 				| 1 		| Enum 	| This restriction affects: 1 -> Company, 2 -> Market, 3 -> Others.. See the list at [Lists of Data](/connectiontypesbuyers/legacy/listsdata/#Restriction-Type) |
-| @code 				| 1 		| String 	| Contains the restriction code.	|
-| MealPlans /MealPlan/Options /Option/Rooms / | 1 		| 		| Rooms in this option (room list).				|
-| MealPlans /MealPlan/Options /Option/Rooms /Room | 1..n 	| 		| Room details.						|
-| @id 					| 1 		| String 	| Room ID.					|
-| @roomCandidateRefId 			| 1 		| Integer 	| Room candidate ID.					|
-| @code 				| 1 		| String 	| Room code has to be unique to identify a specific room type. If the RoomList Method is implemented, you can find the description of the room type in the RoomList. 							|
-| @description 				| 0..1 		| String 	| Room description. Mandatory if the supplier doesn't allow RoomList Method. If the supplier implements RoomList Method, this field could be empty.						|
-| @nonRefundable 			| 0..1 		| String 	| Identifies if the room is refundable or not.			|
-| @numberOfUnits 			| 0..1 		| Integer 	| Number of rooms available with the same type (see [MetaData](/connectiontypesbuyers/legacy/methods/staticcontent/metadata/) in order to verify if a supplier implements it).	|
-| MealPlans /MealPlan/Options /Option/Rooms /Room/Offers/Offer | 1..n | 		| List of offers.						|
-| @code 				| 1 		| String 	| Contains the code to identify a offer.			|
-| @name 				| 1 		| String 	| Contains the name of the offer.				|
-| MealPlans /MealPlan/Options /Option/Rooms /Room/Beds / | 0..1 | 		| Detail of beds (see [MetaData](/connectiontypesbuyers/legacy/methods/staticcontent/metadata/) in order to verify if a supplier implements it).						|
-| @sharedBed 				| 0..1 		| Boolean 	| Specifies if the beds in the room are shared.			|
-| MealPlans /MealPlan/Options /Option/Rooms /Room /Beds /Bed | 0..n | 	| Identifies types of beds.					|
-| @numberOfBeds 			| 0..1 		| String 	| Indicates number of beds in the room.				|
-| @type 				| 0..1 		| String 	| Indicates the type of bed.					|
-| MealPlans /MealPlan/Options /Option/Rooms /Room /Features / | 0..1 | 	| Features of this room (features list).	| 
-| MealPlans /MealPlan/Options /Option/Rooms /Room /Features /Feature | 1..n | 	| Detail of feature	| 
-|@code   | 1 | String| Feature code or text|
-| MealPlans /MealPlan/Options /Option/Rooms /Room /DailyPrices | 0..1 | 	| Specifies daily price, as long as the supplier returns it in this method (see [MetaData](/connectiontypesbuyers/legacy/methods/staticcontent/metadata/) in order to verify if a supplier implements it).	| 
-| MealPlans /MealPlan/Options /Option/Rooms /Room /DailyPrices/DailyPrice | 1..n | | Specifies the price for each day.			|
-| @effectiveDate 			| 1 		| String 	| Start date in which the price becomes effective.		|
-| @expireDate 				| 1 		| String 	| Expiry date of price.						|
-| MealPlans /MealPlan/Options /Option/Rooms /Room /DailyPrices/DailyPrice /Price| 1 | | Day price.					|
-| @currency 				| 1 		| String 	| Currency code.						|
-| @amount 				| 1 		| Decimal 	| Day Amount.							|
-| @binding 				| 1 		| Boolean 	| Identifies if the price is binding (When true, the sale price returned **must** not be less than the price informed) |
-| @commission 				| 1 		| Decimal 	| Commission: -1 = not specified (information available in  contract with the supplier), 0 = net price, X = % of the commission applied to the amount. |
-| MealPlans /MealPlan/Options /Option/Rooms /Room /DailyRatePlans / | 0..1 | | Specifies the daily rate, as long as the supplier returns it in this method (see [MetaData](/connectiontypesbuyers/legacy/methods/staticcontent/metadata/) in order to verify if a supplier implements it).  |
-| MealPlans /MealPlan/Options /Option/Rooms /Room /DailyRatePlans /DailyRatePlan | 1..n | | Specifies the rates for each day.		|
-| @effectiveDate 			| 1 		| String 	| Start date in which the rate becomes effective.		|
-| @expireDate 				| 1 		| String 	| Expirty date of rate.			|
-| @code 				| 1 		| String 	| Indicates the supplier's rate code. This code specifies the rate applied to those days.	|
-| @name 				| 0		| String 	| Indicates the supplier's rate name.	|
-| MealPlans /MealPlan/Options /Option/Rooms /Room /Price | 1 | 		| Room price.							|
-| @currency 				| 1 		| String 	| Currency code.						|
-| @amount 				| 1 		| Decimal 	| Room Amount.							|
-| @binding 				| 1 		| Boolean 	| Identifies if is the price is binding (When true the sale price returned **must** not be less than the price informed) |
-| @commission 				| 1 		| Decimal 	| Commission: -1 = not specified (information available in  contract with the supplier), 0 = net price, X = % of the commission applied to the amount.  |
-| MealPlans /MealPlan/Options /Option/Rooms /Room/Fees /				    | 0..1       | 	    | Contains a list of fees. |
-| MealPlans /MealPlan/Options /Option/Rooms /Room/Fees /Fee				    | 1..n       |      | Contains details of the fee. |
-| @includedPriceOption			    | 1		 | Boolean  | Indicates if the fee is included or not in the final price. |
-| @description				    | 1          | String   | Remarks regarding fee. |
-| @mandatory 				    | 1          | Boolean   | If the fee is obligatory, depending on the includedPriceOption to know if it is paid at the time of booking or at the hotel. In case it is false, it could be a fee such as "cleaning" that the consumer could hire if he wanted. |
-| @refundable 				    | 1          | Boolean   | This field will serve to know if the rate to be paid is returned, for example when it is a deposit type that is returned once the stay ends. |
-| MealPlans /MealPlan/Options /Option/Rooms /Room/Fees /Fee/Price			    | 1          |          | Contains details of price. |
-| @currency 				    | 1          | String   | Currency code. |
-| @amount 				    | 1          | Decimal  | Fee Amount. |
-| @binding				    | 1          | Boolean  | Identifies if is the price is binding (When true the sale price returned **must** not be less than the price informed) |
-| @commission				    | 1          | Decimal  | Commission: -1 = not specified (indicated in contract with supplier), 0 = net price, X = % of the commission applied to the amount. |
-| MealPlans /MealPlan/Options /Option/Rooms /Room/Fees /Fee/Code			    | 1          |   String       | Specifies the fee code in case it has one. |
-| MealPlans /MealPlan/Options /Option/Rooms /Room/CancelPenalties /CancelPenalty | 0..1|  | List of cancellation penalties. (see [MetaData](/connectiontypesbuyers/legacy/methods/staticcontent/metadata/) in order to verify if a supplier implements it)				|
-| MealPlans /MealPlan/Options /Option/Rooms /Room/CancelPenalties /CancelPenalty/HoursBefore| 1 | String | Number of hours prior to arrival day in which this Cancellation policy applies. | 
-| MealPlans /MealPlan/Options /Option/Rooms /Room/CancelPenalties /CancelPenalty | 1..n| | Contains the value to apply.				|
-| @type 				| 1 		| String 	| Type of penalty -possible values: "Noches" (nights), "Porcentaje" (percentage), "Importe" (price value).  |
-| @currency 				| 1 		| String 	| Currency code.						|
-| MealPlans /MealPlan/Options /Option/Rooms /Room/CancelPenalties /CancelPenalty/CalculatedDeadline| 0..1 | Boolean |  Indicate if the Deadline is returned by the supplier or it's been calculated by TravelGate -> *true* = has been calculated by XTG, *false* = bypass of supplier data without calculation |
-| MealPlans /MealPlan/Options /Option/Rooms /Room/CancelPenalties /CancelPenalty/Deadline| 0..1 | String | Date on UTC Standard TimeZone in which this Cancellation policy applies (ISO 8601 e.g: 01/07/2016T05:00:00Z)  | 
-| MealPlans /MealPlan/Options /Option/Price | 1 		| 		| Option price ( it is the total price of option).		|
-| @currency 				| 1 		| String 	| Currency code.						|
-| @amount 				| 1 		| Decimal 	| Option Amount.						|
-| @binding 				| 1 		| Boolean 	| Identifies if is the price is binding (When true the sale price returned **must** not be less than the price informed) |
-| @commission 				| 1 		| Decimal 	| Commission:  -1 = not specified (information available in  contract with the supplier), 0 = net price, X = % of the commission applied to the amount.	|
-| MealPlans /MealPlan/Options /Option/Detail | 0..1 	| 		| Detail of option (if the option is different from the type\<\> Hotel and see [MetaData](/connectiontypesbuyers/legacy/methods/staticcontent/metadata/) in order to verify if a supplier implements it).  |
-| MealPlans /MealPlan/Options /Option/Detail/POIs | 1 	| 		| Points of interest.						|
-| MealPlans /MealPlan/Options /Option/Detail/POIs/POI | 1..n | 		| Point of interest.						|
-| @code 				| 1 		| String 	| POI code.							|
-| @description 				| 1 		| String 	| POI description.						|
-| MealPlans /MealPlan/Options /Option/Detail/POIs/POI /Services | 1 | 	| Services containing this POI.				|
-| MealPlans /MealPlan/Options /Option/Detail/POIs/POI	/Services/Service | 1..n | | Service detail.					|
-| @type 				| 1 		| String 	| Service type (SkiPass, Lessons, Meals, Equipment, Ticket, Transfers or Gala).	|
-| @code 				| 1 		| String 	| Service code.							|
-| @description 				| 1 		| String 	| Service description.						|
-| @durationType 			| 1 		| String 	|  Date of service. If durationType = Range, then date range is set and the element "RangeDates" is returned. If durationType = Open, not restricted by date. Elements "quantity" and "unit" are returned to specify type and quantity.|
-| @quantity 				| 1 		| Integer 	| Indicates the quantity of field in the element "unit".		|
-| @unit 				| 0..1 		| String 	| Day or Hour.							|
-| MealPlans /MealPlan/Options /Option/Detail/POIs/POI /Services/Service/RangeDates| 0..1 | | Service date range (Only specified if durationType=Range).	|
-| @startDate 				| 1 		| String 	| Start date of service.					|
-| @endDate 				| 1 		| String 	| End date of service.						|
-| MealPlans /MealPlan/Options /Option/Remarks | 0..1 	| 		| List of remarks (see [MetaData](/connectiontypesbuyers/legacy/methods/staticcontent/metadata/) in order to verify if a supplier implements it).						|
-| MealPlans /MealPlan/Options /Option/Remarks/Remark | 1..n | 		| Remark.							|
-| MealPlans /MealPlan/Options /Option/Offers | 0..1 	| 		| The supplier returns in response which offer is applicable for each option (see [MetaData](/connectiontypesbuyers/legacy/methods/staticcontent/metadata/) in order to verify if a supplier implements it).	|
-| MealPlans /MealPlan/Options /Option/Offers/Offer | 1..n | 		| List of offers.						|
-| @code 				| 1 		| String 	| Contains the code to identify a offer.			|
-| @name 				| 1 		| String 	| Contains the name of the offer.				|
-| MealPlans /MealPlan/Options /Option/Fees /				    | 0..1       | 	    | Contains a list of fees. |
-| MealPlans /MealPlan/Options /Option/Fees /Fee				    | 1..n       |      | Contains details of the fee. |
-| @includedPriceOption			    | 1		 | Boolean  | Indicates if the fee is included or not in the final price. |
-| @description				    | 1          | String   | Remarks regarding fee. |
-| @mandatory 				    | 1          | Boolean   | If the fee is obligatory, depending on the includedPriceOption to know if it is paid at the time of booking or at the hotel. In case it is false, it could be a fee such as "cleaning" that the consumer could hire if he wanted. |
-| @refundable 				    | 1          | Boolean   | This field will serve to know if the rate to be paid is returned, for example when it is a deposit type that is returned once the stay ends. |
-| MealPlans /MealPlan/Options /Option/Fees /Fee/Price			    | 1          |          | Contains details of price. |
-| @currency 				    | 1          | String   | Currency code. |
-| @amount 				    | 1          | Decimal  | Fee Amount. |
-| @binding				    | 1          | Boolean  | Identifies if is the price is binding (When true the sale price returned **must** not be less than the price informed) |
-| @commission				    | 1          | Decimal  | Commission: -1 = not specified (indicated in contract with supplier), 0 = net price, X = % of the commission applied to the amount. |
-| MealPlans /MealPlan/Options /Option/Fees /Fee/Code		    | 1          |   String       | Specifies the fee code in case it has one. |
+| **Element**				            | **Number**    | **Type**	    | **Description**						                                                        |
+| ------------------------------------- | ------------- | ------------- | --------------------------------------------------------------------------------------------- |
+| AvailRS/Hotels/Hotel 			        | 0..n 		    | 		        | Root node.							                                                        |
+| @code 				                | 1 		    | String 	    | Hotel code.							                                                        |
+| @name 				                | 0..1 		    | String 	    | Hotel name.							                                                        |
+| MealPlans 				            | 1 		    | 		        | Retrieves a list of available mealplans for this hotel.		                                |
+| MealPlans/ MealPlan 			        | 1..n 		    | 		        | List of mealplan types.				                                                        |
+| @code 				                | 1 		    | String 	    | MealPlan code.						                                                        |
+| MealPlans/ MealPlan/ Options/		    | 1 		    | 		        | List of options					                                                            |
+| MealPlans/ MealPlan/ Options/ Option 	| 1..n 		    | 		        | Detail of option.						                                                        |
+| @type 				                | 1 		    | String 	    | Indicates option type (only hotel, hotel with ski pass, hotel with entrance...).              |
+| @paymentType 				            | 1 		    | String 	    | Indicates payment type (See full type list at [Lists of Data](/connectiontypesbuyers/legacy/listsdata/)). |
+| @status 				                | 1 		    | String 	    | Status option (OK = available, RQ = on request).		                                        |
+| MealPlans/ MealPlan/ Options/ Option/ Parameters/ | 0..1 |  | Additional parameters that must be reported on the ValuationRQ. Parameters, if this option is required. |
+| MealPlans/ MealPlan/ Options/ Option/ Parameters/ Parameter | 0..n | 	| Additional parameter requiring integration.		                                            |
+| @key 					                | 1 		    | String 	    | Contains the keyword/Id to identify a parameter.		                                        |
+| @value 				                | 1 		    | String 	    | Contains  parameter value.				                                                    |
+| MealPlans/ MealPlan/ Options/ Option/ CancelPenalties/ CancelPenalty | 0..1 |  | List of cancellation penalties. (see [MetaData](/connectiontypesbuyers/legacy/methods/staticcontent/metadata/) in order to verify if a supplier implements it). |
+| MealPlans/ MealPlan/ Options/ Option/ CancelPenalties/ CancelPenalty/ HoursBefore| 1 | String | Number of hours prior to arrival day in which this Cancellation policy applies. | 
+| MealPlans/ MealPlan/ Options/ Option/ CancelPenalties/ CancelPenalty | 1..n |  | Contains the value to apply.				                                            |
+| @type 				                | 1 		    | String 	    | Type of penalty -possible values: "Noches" (nights), "Porcentaje" (percentage), "Importe" (price value). |
+| @currency 				            | 1 		    | String 	    | Currency code.						                                                        |
+| MealPlans/ MealPlan/ Options/ Option/ CancelPenalties/ CancelPenalty/ CalculatedDeadline | 0..1 | Boolean | Indicate if the Deadline is returned by the supplier or it's been calculated by TravelGate -> *true* = has been calculated by XTG, *false* = bypass of supplier data without calculation. |
+| MealPlans/ MealPlan/ Options/ Option/ CancelPenalties/ CancelPenalty/ Deadline | 0..1 | String | Date on UTC Standard TimeZone in which this Cancellation policy applies (ISO 8601 e.g: 01/07/2016T05:00:00Z). |
+| MealPlans/ MealPlan/ Options/ Option/ RateRules/ | 0..1 | 		    | Option rate rules.					                                                        |
+| MealPlans/ MealPlan/ Options/ Option/ RateRules/ Rules/ | 1 | 		| Rules.							                                                            |
+| MealPlans/ MealPlan/ Options/ Option/ RateRules/ Rules/ Rule | 1..n | | Rule.								                                                            |
+| @type 				                | 1 		    | String 	    | Possible values: NonRefundable, Older55, Package, Negotiated, Custom.. See full list at [Lists of Data](/connectiontypesbuyers/legacy/listsdata/#Rate-Conditions). |
+| MealPlans/ MealPlan/ Options/ Option/ RateRules/ Rules/ Rule/ Rates/ | 0..1 |  | Rates.							                                                    |
+| MealPlans/ MealPlan/ Options/ Option/ RateRules/ Rules/ Rule/ Rates/ Rate | 1..n |  | Rate.							                                                |
+| @code 				                | 0..1 		    | String 	    | Contains the rate rule code.	                                                                |
+| MealPlans/ MealPlan/ Options/ Option/ RateRules/ Rules/ Rule/ Rates/ Rate/ Description | 0..1 | String | Contains the rate rule description.	                        |
+| MealPlans/ MealPlan/ Options/ Option/ RateRules/ Rules/ Rule/ Restrictions/ | 0..n | 	| Restrictions for the rate rule.							                    |
+| MealPlans/ MealPlan/ Options/ Option/ RateRules/ Rules/ Rule/ Restrictions/ Restriction | 1..n | 	| Restriction for this rate rule.							        |
+| @type 				                | 1 		    | Enum 	        | This restriction affects: 1 -> Company, 2 -> Market, 3 -> Others.. See the list at [Lists of Data](/connectiontypesbuyers/legacy/listsdata/#Restriction-Type). |
+| @code 				                | 1 		    | String 	    | Contains the restriction code.	                                                            |
+| MealPlans/ MealPlan/ Options/ Option/ Rooms/ | 1 		| 		        | Rooms in this option (room list).				                                                |
+| MealPlans/ MealPlan/ Options/ Option/ Rooms/ Room | 1..n 	| 		    | Room details.						                                                            |
+| @id 					                | 1 		    | String 	    | Room ID.					                                                                    |
+| @roomCandidateRefId 			        | 1 		    | Integer 	    | Room candidate ID.					                                                        |
+| @code 				                | 1 		    | String 	    | Room code has to be unique to identify a specific room type. If the RoomList Method is implemented, you can find the description of the room type in the RoomList. |
+| @description 				            | 0..1 		    | String 	    | Room description. Mandatory if the supplier doesn't allow RoomList Method. If the supplier implements RoomList Method, this field could be empty.	|
+| @nonRefundable 			            | 0..1 		    | String 	    | Identifies if the room is refundable or not.			                                        |
+| @numberOfUnits 			            | 0..1 		    | Integer 	    | Number of rooms available with the same type (see [MetaData](/connectiontypesbuyers/legacy/methods/staticcontent/metadata/) in order to verify if a supplier implements it). |
+| MealPlans/ MealPlan/ Options/ Option/ Rooms/ Room/ Offers/ Offer | 1..n |  | List of offers.						                                                    |
+| @code 				                | 1 		    | String 	    | Contains the code to identify a offer.			                                            |
+| @name 				                | 1 		    | String 	    | Contains the name of the offer.				                                                |
+| MealPlans/ MealPlan/ Options/ Option/ Rooms/ Room/ Beds/ | 0..1 |  | Detail of beds (see [MetaData](/connectiontypesbuyers/legacy/methods/staticcontent/metadata/) in order to verify if a supplier implements it). |
+| @sharedBed 				            | 0..1 		    | Boolean 	    | Specifies if the beds in the room are shared.			                                        |
+| MealPlans/ MealPlan/ Options/ Option/ Rooms/ Room/ Beds/ Bed | 0..n |  | Identifies types of beds.					                                                |
+| @numberOfBeds 			            | 0..1 		    | String 	    | Indicates number of beds in the room.				                                            |
+| @type 				                | 0..1 		    | String 	    | Indicates the type of bed.					                                                |
+| MealPlans/ MealPlan/ Options/ Option/ Rooms/ Room/ Features/ | 0..1 | 	| Features of this room (features list).	                                                | 
+| MealPlans/ MealPlan/ Options/ Option/ Rooms/ Room/ Features/ Feature | 1..n |  | Detail of feature.	                                                                | 
+|@code                                  | 1             | String        | Feature code or text.                                                                         |
+| MealPlans/ MealPlan/ Options/ Option/ Rooms/ Room/ DailyPrices/ | 0..1 | 	| Specifies daily price, as long as the supplier returns it in this method (see [MetaData](/connectiontypesbuyers/legacy/methods/staticcontent/metadata/) in order to verify if a supplier implements it). | 
+| MealPlans/ MealPlan/ Options/ Option/ Rooms/ Room/ DailyPrices/ DailyPrice | 1..n |  | Specifies the price for each day.			                                    |
+| @effectiveDate 			            | 1 		    | String 	    | Start date in which the price becomes effective.		                                        |
+| @expireDate 				            | 1 		    | String 	    | Expiry date of price.						                                                    |
+| MealPlans/ MealPlan/ Options/ Option/ Rooms/ Room/ DailyPrices/ DailyPrice/ Price | 1 |  | Day price.					                                                |
+| @currency 				            | 1 		    | String 	    | Currency code.						                                                        |
+| @amount 				                | 1 		    | Decimal 	    | Day Amount.							                                                        |
+| @binding 				                | 1 		    | Boolean 	    | Identifies if the price is binding (When true, the sale price returned **must** not be less than the price informed). |
+| @commission 				            | 1 		    | Decimal 	    | Commission: -1 = not specified (information available in  contract with the supplier), 0 = net price, X = % of the commission applied to the amount. |
+| MealPlans/ MealPlan/ Options/ Option/ Rooms/ Room/ DailyRatePlans/ | 0..1 |  | Specifies the daily rate, as long as the supplier returns it in this method (see [MetaData](/connectiontypesbuyers/legacy/methods/staticcontent/metadata/) in order to verify if a supplier implements it). |
+| MealPlans/ MealPlan/ Options/ Option/ Rooms/ Room/ DailyRatePlans/ DailyRatePlan | 1..n |  | Specifies the rates for each day.		                                |
+| @effectiveDate 			            | 1 		    | String 	    | Start date in which the rate becomes effective.		                                        |
+| @expireDate 				            | 1 		    | String 	    | Expirty date of rate.			                                                                |
+| @code 				                | 1 		    | String 	    | Indicates the supplier's rate code. This code specifies the rate applied to those days.	    |
+| @name 				                | 0		        | String 	    | Indicates the supplier's rate name.	                                                        |
+| MealPlans/ MealPlan/ Options/ Option/ Rooms/ Room/ Price | 1 |  | Room price.							                                                                |
+| @currency 				            | 1 		    | String 	    | Currency code.						                                                        |
+| @amount 				                | 1 		    | Decimal 	    | Room Amount.							                                                        |
+| @binding 				                | 1 		    | Boolean 	    | Identifies if is the price is binding (When true the sale price returned **must** not be less than the price informed). |
+| @commission 				            | 1 		    | Decimal 	    | Commission: -1 = not specified (information available in  contract with the supplier), 0 = net price, X = % of the commission applied to the amount. |
+| MealPlans/ MealPlan/ Options/ Option/ Rooms/ Room/ Fees/ | 0..1 |     | Contains a list of fees.                                                                      |
+| MealPlans/ MealPlan/ Options/ Option/ Rooms/ Room/ Fees/ Fee | 1..n | | Contains details of the fee.                                                                  |
+| @includedPriceOption			        | 1		        | Boolean       | Indicates if the fee is included or not in the final price.                                   |
+| @description				            | 1             | String        | Remarks regarding fee.                                                                        |
+| @mandatory 				            | 1             | Boolean       | If the fee is obligatory, depending on the includedPriceOption to know if it is paid at the time of booking or at the hotel. In case it is false, it could be a fee such as "cleaning" that the consumer could hire if he wanted. |
+| @refundable 				            | 1             | Boolean       | This field will serve to know if the rate to be paid is returned, for example when it is a deposit type that is returned once the stay ends. |
+| MealPlans/ MealPlan/ Options/ Option/ Rooms/ Room/ Fees/ Fee/ Price | 1 | | Contains details of price.                                                                |
+| @currency 				            | 1             | String        | Currency code.                                                                                |
+| @amount 				                | 1             | Decimal       | Fee Amount.                                                                                   |
+| @binding				                | 1             | Boolean       | Identifies if is the price is binding (When true the sale price returned **must** not be less than the price informed). |
+| @commission				            | 1             | Decimal       | Commission: -1 = not specified (indicated in contract with supplier), 0 = net price, X = % of the commission applied to the amount. |
+| MealPlans/ MealPlan/ Options/ Option/ Rooms/ Room/ Fees/ Fee/ Code | 1 | String | Specifies the fee code in case it has one.                                          |
+| MealPlans/ MealPlan/ Options/ Option/ Rooms/ Room/ CancelPenalties/ CancelPenalty | 0..1|  | List of cancellation penalties. (see [MetaData](/connectiontypesbuyers/legacy/methods/staticcontent/metadata/) in order to verify if a supplier implements it). |
+| MealPlans/ MealPlan/ Options/ Option/ Rooms/ Room/ CancelPenalties/ CancelPenalty/ HoursBefore | 1 | String | Number of hours prior to arrival day in which this Cancellation policy applies. |
+| MealPlans/ MealPlan/ Options/ Option/ Rooms/ Room/ CancelPenalties/ CancelPenalty | 1..n |  | Contains the value to apply.				                            |
+| @type 				                | 1 		    | String 	    | Type of penalty -possible values: "Noches" (nights), "Porcentaje" (percentage), "Importe" (price value). |
+| @currency 				            | 1 		    | String 	    | Currency code.						                                                        |
+| MealPlans/ MealPlan/ Options/ Option/ Rooms/ Room/ CancelPenalties/ CancelPenalty/ CalculatedDeadline | 0..1 | Boolean | Indicate if the Deadline is returned by the supplier or it's been calculated by TravelGate -> *true* = has been calculated by XTG, *false* = bypass of supplier data without calculation. |
+| MealPlans/ MealPlan/ Options/ Option/ Rooms/ Room/ CancelPenalties/ CancelPenalty/ Deadline | 0..1 | String | Date on UTC Standard TimeZone in which this Cancellation policy applies (ISO 8601 e.g: 01/07/2016T05:00:00Z). | 
+| MealPlans/ MealPlan/ Options/ Option/ Price | 1       | 		        | Option price ( it is the total price of option).		                                        |
+| @currency 				            | 1 		    | String 	    | Currency code.						                                        |
+| @amount 				                | 1 		    | Decimal 	    | Option Amount.						|
+| @binding 				                | 1 		    | Boolean 	    | Identifies if is the price is binding (When true the sale price returned **must** not be less than the price informed). |
+| @commission 				            | 1 		    | Decimal 	    | Commission:  -1 = not specified (information available in  contract with the supplier), 0 = net price, X = % of the commission applied to the amount.	|
+| MealPlans/ MealPlan/ Options/ Option/ Detail | 0..1 	| 		        | Detail of option (if the option is different from the type\<\> Hotel and see [MetaData](/connectiontypesbuyers/legacy/methods/staticcontent/metadata/) in order to verify if a supplier implements it). |
+| MealPlans/ MealPlan/ Options/ Option/ Detail/ POIs/ | 1 | 		    | Points of interest.						                                                    |
+| MealPlans/ MealPlan/ Options/ Option/ Detail/ POIs/ POI/ | 1..n | 	| Point of interest.						                                                    |
+| @code 				                | 1 		    | String 	    | POI code.							                                                            |
+| @description 				            | 1 		    | String 	    | POI description.						                                                        |
+| MealPlans/ MealPlan/ Options/ Option/ Detail/ POIs/ POI/ Services/ | 1 | | Services containing this POI.				                                                |
+| MealPlans/ MealPlan/ Options/ Option/ Detail/ POIs/ POI/ Services/ Service | 1..n | | Service detail.					                                                |
+| @type 				                | 1 		    | String 	    | Service type (SkiPass, Lessons, Meals, Equipment, Ticket, Transfers or Gala).	                |
+| @code 				                | 1 		    | String 	    | Service code.							                                                        |
+| @description 				            | 1 		    | String 	    | Service description.						                                                    |
+| @durationType 			            | 1 		    | String 	    | Date of service. If durationType = Range, then date range is set and the element "RangeDates" is returned. If durationType = Open, not restricted by date. Elements "quantity" and "unit" are returned to specify type and quantity. |
+| @quantity 				            | 1 		    | Integer 	    | Indicates the quantity of field in the element "unit".		                                |
+| @unit 				                | 0..1 		    | String 	    | Day or Hour.							                                                        |
+| MealPlans/ MealPlan/ Options/ Option/ Detail/ POIs/ POI/ Services/ Service/ RangeDates | 0..1 | | Service date range (Only specified if durationType=Range).	        |
+| @startDate 				            | 1 		    | String 	    | Start date of service.					                                                    |
+| @endDate 				                | 1 		    | String 	    | End date of service.						                                                    |
+| MealPlans/ MealPlan/ Options/ Option/ Remarks | 0..1  |               | List of remarks (see [MetaData](/connectiontypesbuyers/legacy/methods/staticcontent/metadata/) in order to verify if a supplier implements it). |
+| MealPlans/ MealPlan/ Options/ Option/ Remarks/ Remark | 1..n | 		| Remark.							                                                            |
+| MealPlans/ MealPlan/ Options/ Option/ Offers | 0..1 	| 		        | The supplier returns in response which offer is applicable for each option (see [MetaData](/connectiontypesbuyers/legacy/methods/staticcontent/metadata/) in order to verify if a supplier implements it). |
+| MealPlans/ MealPlan/ Options/ Option/ Offers/ Offer | 1..n | 		    | List of offers.						                                                        |
+| @code 				                | 1 		    | String 	    | Contains the code to identify a offer.			                                            |
+| @name 				                | 1 		    | String 	    | Contains the name of the offer.				                                                |
+| MealPlans/ MealPlan/ Options/ Option/ Fees/ | 0..1    |               | Contains a list of fees.                                                                      |
+| MealPlans/ MealPlan/ Options/ Option/ Fees/ Fee | 1..n |              | Contains details of the fee.                                                                  |
+| @includedPriceOption			        | 1		        | Boolean       | Indicates if the fee is included or not in the final price.                                   |
+| @description				            | 1             | String        | Remarks regarding fee.                                                                        |
+| @mandatory 				            | 1             | Boolean       | If the fee is obligatory, depending on the includedPriceOption to know if it is paid at the time of booking or at the hotel. In case it is false, it could be a fee such as "cleaning" that the consumer could hire if he wanted. |
+| @refundable 				            | 1             | Boolean       | This field will serve to know if the rate to be paid is returned, for example when it is a deposit type that is returned once the stay ends. |
+| MealPlans/ MealPlan/ Options/ Option/ Fees/ Fee/ Price | 1 |          | Contains details of price.                                                                    |
+| @currency 				            | 1             | String        | Currency code.                                                                                |
+| @amount 				                | 1             | Decimal       | Fee Amount.                                                                                   |
+| @binding				                | 1             | Boolean       | Identifies if is the price is binding (When true the sale price returned **must** not be less than the price informed). |
+| @commission	                        | 1             | Decimal       | Commission: -1 = not specified (indicated in contract with supplier), 0 = net price, X = % of the commission applied to the amount. |
+| MealPlans/ MealPlan/ Options/ Option/ Fees/ Fee/ Code | 1 | String    | Specifies the fee code in case it has one.                                                    |
 
 
 

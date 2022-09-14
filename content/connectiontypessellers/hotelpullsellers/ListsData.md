@@ -114,21 +114,21 @@ We use a standard ISO - 3166_1_alfa_2.
 
 #### Visa, American Express, Diners Club and JCB
 
-| **ECI Value** | **Description**                                                                                                                                                                       |
-|---------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 05            | 3DS authentication was successful, transactions are secured by 3DS.                                                                                                                   |
-| 06            | Authentication was attempted but was not or could not be completed; possible reasons being either the card or its Issuing Bank has yet to participate in 3DS.                         |
+| **ECI Value** | **Description**                                                                                                                                               |
+|---------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 05            | 3DS authentication was successful, transactions are secured by 3DS.                                                                                           |
+| 06            | Authentication was attempted but was not or could not be completed; possible reasons being either the card or its Issuing Bank has yet to participate in 3DS. |
 | 07            | 3DS authentication is either failed or could not be attempted; possible reasons being both card and Issuing Bank are not secured by 3DS, technical errors, or improper configuration. |
 
 
 
 #### MasterCard
 
-| **ECI Value** | **Description**                                                                                                                                                                                               |
-|---------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 00            | 3DS authentication is either failed or could not be attempted; possible reasons being both card and Issuing Bank are not secured by 3DS, technical errors, or improper configuration.                         |
+| **ECI Value** | **Description**                                                                                                                                                |
+|---------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 00            | 3DS authentication is either failed or could not be attempted; possible reasons being both card and Issuing Bank are not secured by 3DS, technical errors, or improper configuration. |
 | 01            | 3DS authentication was attempted but was not or could not be completed; possible reasons being either the card or its Issuing Bank has yet to participate in 3DS, or cardholder ran out of time to authorize. |
-| 02            | 3DS authentication is successful.                                                                                                                                                                             |
+| 02            | 3DS authentication is successful.                                                                                                                              |
 
 
 
@@ -168,20 +168,21 @@ We use a standard ISO - 3166_1_alfa_2.
 
 | **Codes**        | **Description**                                                                                                  |
 |------------------|------------------------------------------------------------------------------------------------------------------|
-| NonRefundable    | Cancellation fee is a 100% from the moment the reservation is create                                             |
+| NonRefundable    | Cancellation fee is a 100% from the moment the reservation is create.                                            |
 | Negotiated       | Special rates the supplier offers to specific buyers. Each one has a code and a description.                     |
+| Custom           | A way of setting less standardized rates. Can specify the restrictions that it deems convenient and that are not typified by TGX. |
 | Older55          | Rate that can only be sold to people who are 55 yeasrs or older.                                                 |
 | Older60          | Rate that can only be sold to people who are 60 yeasrs or older.                                                 |
 | Older65          | Rate that can only be sold to people who are 65 yeasrs or older.                                                 |
 | Package          | Rate can't be sold separately from another product attached to it, such as a flight.                             |
 | CanaryResident   | Rate applicable to Canary Islands residents only.                                                                |
 | BalearicResident | Rate applicable to Balearic Islands residents only.                                                              |
-| largeFamily      | Rate applied to large families and is determined by each supplier.Check *remarks* for more details.              |
-| honeymoon        | Rate applied to those who just got married and is determined by each supplier. Check *remarks* for more details. |
-| publicServant    | Rate applicable to public servants only.                                                                         |
-| unemployed       | Rate applied to those without work.                                                                              |
-| mobile           | Rate applicable to options booked by mobile.                                                                     |
-| warranty         | Rate applicable to options with cancellation warranty.                                                           |
+| LargeFamily      | Rate applied to large families and is determined by each supplier.Check *remarks* for more details.              |
+| Honeymoon        | Rate applied to those who just got married and is determined by each supplier. Check *remarks* for more details. |
+| PublicServant    | Rate applicable to public servants only.                                                                         |
+| Unemployed       | Rate applied to those without work.                                                                              |
+| Mobile           | Rate applicable to options booked by mobile.                                                                     |
+| Warranty         | Rate applicable to options with cancellation warranty.                                                           |
 
 
 
@@ -205,50 +206,50 @@ We use a standard ISO - 3166_1_alfa_2.
 
 ### View Codes
 
-| **Codes**        | **Description**                                                                                                  |
-|------------------|------------------------------------------------------------------------------------------------------------------|
-| Others           | Other View. |
-| Airport          | Airport View. |
-| Bay              | Bay View. |
-| Golf             | Golf View. |
-| Mountain         | Mountain View. |
-| Ocean            | Ocean View. |
-| Pool             | Pool View. |
-| River            | River View. |
-| Water            | Water View. |
-| Beach            | Beach View. |
-| Garden           | Garden View. |
-| Park             | Park View. |
-| Forest           | Forest View. |
-| RainForest       | RainForest View. |
-| Various          | Various Views. |
-| Countryside      | Countryside View. |
-| Sea              | Sea View. |
+| **Codes**        | **Description**            |
+|------------------|----------------------------|
+| Others           | Other View.                |
+| Airport          | Airport View.              |
+| Bay              | Bay View.                  |
+| Golf             | Golf View.                 |
+| Mountain         | Mountain View.             |
+| Ocean            | Ocean View.                |
+| Pool             | Pool View.                 |
+| River            | River View.                |
+| Water            | Water View.                |
+| Beach            | Beach View.                |
+| Garden           | Garden View.               |
+| Park             | Park View.                 |
+| Forest           | Forest View.               |
+| RainForest       | RainForest View.           |
+| Various          | Various Views.             |
+| Countryside      | Countryside View.          |
+| Sea              | Sea View.                  |
 
 
 
 ### Room Classifications
 
-| **Codes**        | **Description**                                                                                                  |
-|------------------|------------------------------------------------------------------------------------------------------------------|
-| Others           | Other kind of room.|
-| House          | House. |
-| AllEstablishment              | All Establishment. |
-| Aparthotel             | Room is in a Aparthotel. |
-| Cave         | Cave Room. |
-| Plaza            | Plaza Room. |
-| Bed             | Bed |
-| Aparments            | Room is an apartment. |
-| Studios            | Studio Room. |
-| Cottage            | Cottage Room. |
-| Bungalow           | Bungalow |
-| JuniorSuite             | JuniorSuite Room |
-| Classic           | Classic Room. |
-| Comfort       | Classic Room. |
-| Deluxe          | Deluxe Room. |
-| DeluxeSuite      | Deluxe Suite. |
-| Economy              | Economy Room. |
-| Luxury       | Luxury Room. |
-| Premier          | Premier Room. |
-| Standard      | Standard Room. |
-| Superior              | Superior Room.|
+| **Codes**         | **Description**                   |
+|-------------------|-----------------------------------|
+| Others            | Other kind of room                |
+| House             | House                             |
+| AllEstablishment  | All Establishment                 |
+| Aparthotel        | Room is in a Aparthotel           |
+| Cave              | Cave Room                         |
+| Plaza             | Plaza Room                        |
+| Bed               | Bed                               |
+| Aparments         | Room is an apartment              |
+| Studios           | Studio Room                       |
+| Cottage           | Cottage Room                      |
+| Bungalow          | Bungalow                          |
+| JuniorSuite       | JuniorSuite Room                  |
+| Classic           | Classic Room                      |
+| Comfort           | Classic Room                      |
+| Deluxe            | Deluxe Room                       |
+| DeluxeSuite       | Deluxe Suite                      |
+| Economy           | Economy Room                      |
+| Luxury            | Luxury Room                       |
+| Premier           | Premier Room                      |
+| Standard          | Standard Room                     |
+| Superior          | Superior Room                     |

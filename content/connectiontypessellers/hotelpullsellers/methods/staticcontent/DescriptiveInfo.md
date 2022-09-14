@@ -308,19 +308,6 @@ Go to [Common-Elements](/connectiontypessellers/hotelpullsellers/methods/common-
 | Rooms/ Room/ Beds/ Bed	                | 1..n 	       |   	         | Number of beds allocated in the room.					            |
 | @numberOfBeds			                    | 1 		   | String	     | Number of beds allocated in the room.				                |
 | @type			                            | 1 		   | String	     | Type of bed. (Queen Bed, Single...)				                    |
-| Rooms/ Room/ RoomOccupancy/	            | 1 		   |   	         | Room ocuppancy.						                                |
-| Rooms/ Room/ RoomOccupancy/ Adults/	    | 1 		   |   	         | Indicates ocuppancy for adults.						                |
-| Rooms/ Room/ RoomOccupancy/ Adults/ Min	| 1 		   | Integer 	 | Indicates minimum number of adults.					                |
-| Rooms/ Room/ RoomOccupancy/ Adults/ Max	| 1 		   | Integer 	 | Indicates maximum number of adults.					                |
-| Rooms/ Room/ RoomOccupancy/ Children/	    | 1 		   |   	         | Indicates ocuppancy for children. 						            |
-| Rooms/ Room/ RoomOccupancy/ Children/ Min	| 1 		   | Integer 	 | Indicates minimum number of children.					            |
-| Rooms/ Room/ RoomOccupancy/ Children/ Max	| 1 		   | Integer 	 | Indicates maximum number of children.					            |
-| Rooms/ Room/ RoomOccupancy/ Infants/	    | 1 		   |   	         | Indicates ocuppancy for infants. 						            |
-| Rooms/ Room/ RoomOccupancy/ Infants/ Min  | 1 		   | Integer 	 | Indicates minimum number of infants.					                |
-| Rooms/ Room/ RoomOccupancy/ Infants/ Max  | 1 		   | Integer 	 | Indicates maximum number of infants.					                |
-| Rooms/ Room/ RoomOccupancy/ Total/	    | 1 		   |   	         | Indicates total room ocuppancy without breakout per pax.			    |
-| Rooms/ Room/ RoomOccupancy/ Total/ Min    | 1 		   | Integer 	 | Indicates minimum number of paxes.					                |
-| Rooms/ Room/ RoomOccupancy/ Total/ Max    | 1 		   | Integer 	 | Indicates maximum number of paxes.					                |
 | Rooms/ Room/ Views/		                | 0..1 		   |   	         | Views of the room.					                                |
 | Rooms/ Room/ Views/ View	                | 1..n 		   |   	         | List of views.					                                    |
 | Rooms/ Room/ Views/ View/ Code	        | 1..n 		   | String 	 | View code.				                                            |
