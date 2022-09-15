@@ -14,7 +14,6 @@ If you don't have your own reporting tools as Tableau or PowerBI, the easiest wa
 | Dataset information          | Version          | GDS Template  |
 | -------------    |:----------------:| -----------:  |
 | **Seller**: Performance, Insights and Benchmark (Performance and Insights level)    | 2.0              |   https://datastudio.google.com/s/rhHCR2SAoRQ           |
-| **Seller**: Benchmark (Hotel Rates level) | 1.0              |   https://datastudio.google.com/s/swxOIFWDGMY          |
 | **Buyer**: Performance, Insights and Benchmark (Performance and Insights level)  | 2.0              |   https://datastudio.google.com/s/hW8TCMldzhU           |
 
 
