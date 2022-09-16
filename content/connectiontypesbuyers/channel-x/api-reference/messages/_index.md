@@ -210,7 +210,7 @@ The ``HotelRatePlanInventoryNotif`` message contains information about the inven
 | @YieldableIndicator			    | 0..1	 | Boolean  | Used to indicate the rate plan is subject to yield management logic. When false, the rate plan is not yieldable. When true or it's not returned, the rate plan is yieldable.|
 | @Start      				          | 0..1 	  | Date	   | Booking Start Date for which the rate will be available.               |
 | @End        				          | 0..1	  | Date     | Booking Start Date for which the rate will be available.               |
-| @RatePlanType        				  | 0..1	  | String     | Rate rule to apply. 0 - No selected, 11 - Package, 10 - Negotiated. If the attribute is not present and it is a base rate, the value is 0, if it is a derived rate, the value is the same as the parent rate.               |
+| @RatePlanType        				  | 0..1	  | String     | Rate rule to apply. 0 - No selected, 7 - Large Family, 8 - Public Servant, 10 - Negotiated, 11 - Package, 34 - Canary Resident, 35 - Balearic Resident, 36 - Honeymoon. If the attribute is not present and it is a base rate, the value is 0, if it is a derived rate, the value is the same as the parent rate.               |
 | @PromotionCode        				    | 0..1	 | String     | Promotion code to apply. 25 - Senior_55  26 - Senior_60, 27 - Senior_65. If the attribute is not present there is no promotion code. Not applicable for derived rates.|
 | RatePlan/BookingRules            	    | 0..1    |	         |                                                                       |
 | ../BookingRule		                | 1..n    |	         | 					                                                             |
