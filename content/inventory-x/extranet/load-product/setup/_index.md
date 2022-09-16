@@ -114,7 +114,7 @@ The information needed to add a rate is listed below:
 * **Currency:** Currency applied to the rate.
 * **Commission:** Percentage of commission applied. This is only informative.
 * **Binding Price:** Must be checked if the price is binding.
-* **Rate Rule:** Rate rule to apply to this rate. Not Selected (0), Negotiated (10), Package (11). The default value is *Not selected*.
+* **Rate Rule:** Rate rule to apply to this rate. Not Selected (0), Large Family (7), Public Servant (8), Negotiated (10), Package (11), Canary Resident (34), Balearic Resident (35), Honeymoon (36). The default value is *Not selected*.
 * **Senior Rates:** You must select the correct value if the rate is for people over 55, 60 or 65 years of age. The default value is *Not selected*.
 * **Active:** Indicates whether or not the rate is active.
 * **All dates:** By default it is checked. If it is checked, the rate will be available always. If you uncheck the checkbox, two new fields will appear: From and To. These fields are the initial and final dates for when the rate is available (dates when the availability request is done, not the stay dates). For example: if there is a date range from: `24/02/2020` to: `28/02/2020`:
