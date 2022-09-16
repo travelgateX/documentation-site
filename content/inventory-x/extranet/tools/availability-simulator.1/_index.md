@@ -18,7 +18,7 @@ First step will be to indicate the desired Client-Provider connection and then t
 
 * **Hotel**: Hotel name or ID to request for.
 * **Dates:** Check-in and check-out date to request for.
-* **Rate Rules**: Check `Package` if you also want to receive package rates. Check `Negotiated` if you also want to receive negotiated rates.
+* **Rate Rules**: In case you need to search and filter a particular rate rule, check the option required: `Large Family`, `Public Servant`, `Negotiated`, `Package`, `Canary Resident`, `Balearic Resident`, `Honeymoon`. Rates without rule assigned will be returned.
 * **Markets**: Optional filter if you only want to receive rates allowed for specific markets.
 * **Rooms**: Number of rooms to request for.
 * **Paxes and ages**: Number of pax in each room and their age.
