@@ -1,6 +1,6 @@
 +++
 title = "Discount/Supplement using derived rates"
-pagetitle = "How to create a discount or supplement using derived rates?"
+pagetitle = "How to create a discount or supplement using derived rates"
 description = "Know how the create and configurate different discounts or supplements"
 icon = "fa-file"
 weight = 1
