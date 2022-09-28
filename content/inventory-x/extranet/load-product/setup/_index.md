@@ -192,6 +192,8 @@ The information needed to add a derived rate is listed below:
 * **Markets from base rate:** Checkbox that will apply the markets from the base rate to the derived rate depending on whether it is checked or not. If unchecked, a form appears like the one seen previously when adding a rate, letting you select any markets you may want included or excluded for this derived rate.
 * **Apply Rate Rule from base rate:** Checkbox that will apply the same rate rule from the base rate depending on whether it is checked or not.
 * **Rate Rule:** Rate rule to select if you do not want apply the same than the base rate.
+* **Apply Senior Rate from base rate:** Checkbox that will apply the same senior rate from the base rate depending on whether it is checked or not.
+* **Senior Rates:** Senior rate to select if you do not want apply the same than the base rate.
 * **Active:** Checkbox to activate or deactivate the derived rate. If it is checked the derived rate is active.
 * **Apply Dates from base rate:** Checkbox used to apply the effective dates from the base rate. If unchecked, a form like the one explained previously when creating a rate will pop up.
 * **Board from base rate:** Checkbox used to apply the meal plan from the base rate. If unchecked, the meal plan list will be enabled and you will be able to select the board of the derived rate.
