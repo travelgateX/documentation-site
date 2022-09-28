@@ -501,13 +501,13 @@ The ``HotelAvailNotif`` message contains information about rate availability and
 | AvailStatusMessage/LengthsOfStay                 | 0..1    |	         |							                                                         |
 | @ArrivalDateBased			        | 0..1	  | Boolean	 | **true**: the Minimum and Maximum Stay is checked ONLY the first day of the availability. **false or null**: the Minimum and Maximum Stay is checked all the availability days. If both values are needed, two AvailStatusMessage will be sent. |
 | ../LengthOfStay                  | 1..2    |         |						                                                             |
-| @Time 				                | 1	      | Integer	| Indicates the number of @TimeUnit for this stay. When value is *-1*, condition should be deleted from the system.	                     |
+| @Time 				                | 1	      | Integer	| Indicates the number of @TimeUnit for this stay. When value is *0* or *-1*, condition should be deleted from the system.	                     |
 | @TimeUnit				              | 1	      | String	| *N*: Day 						                                                   |
 | @MinMaxMessageType			      | 1	      | String	| *N*: MinLOS, MaxLOS. Minimum or maximum stay                           |
 | AvailStatusMessage/RestrictionStatus             | 0..1    |         |							                                                           |
 | @Status				                | 0..1	  | String	| *N*: Open Close	                                                       |
 | @Restriction				          | 0..1	  | String	| *N*: Master, Arrival, Departure.                                       |  
-| @MinAdvancedBookingOffset		  | 0..1	  | Integer	| Minimum number of days before the check-in date to be available to be booked. This restriction is usually used to offer discounts on early bookings. When value is *-1*, condition should be deleted from the system.                             |
+| @MinAdvancedBookingOffset		  | 0..1	  | Integer	| Minimum number of days before the check-in date to be available to be booked. This restriction is usually used to offer discounts on early bookings. When value is *0* or *-1*, condition should be deleted from the system.                             |
 | @MaxAdvancedBookingOffset		  | 0..1	  | Integer	| Maximum number of days before the check-in date to be available to be booked. This restriction is usually used to offer last minute discounts on unsold inventory. When value is *-1*, condition should be deleted from the system.               |
 | @SellThroughOpenIndicator		  | 0..1	  | Boolean	| *BR*. Room-RatePlan can be sold with no limit if @Status is Open  |
 
