@@ -31,7 +31,7 @@ Providers will send a HotelRatePlanNotifRQ message to push Rate Plans to sellers
           </Source>
         </POS>
         <RatePlans HotelCode = "HOT123">
-          <RatePlan RatePlanCode = "TAR321" CurrencyCode = "EUR" RatePlanStatusType = "Active">
+          <RatePlan RatePlanCode = "TAR321" CurrencyCode = "EUR">
             <Rates>
               <Rate Start = "2007-04-01" End = "2007-12-31">
                 <BaseByGuestAmts>
@@ -153,7 +153,7 @@ Providers will send a HotelRatePlanNotifRQ message to push Rate Plans to sellers
 | @HotelCode				| 1	     | String	| Hotel code whose information is provided by the method. |
 | RatePlans/RatePlan			| 1..n	     |		| Present if rate exists.				|
 | @RatePlanCode				| 1	     | String	| Rate code.						|
-| @RatePlanStatusType			| 0..1	     | String	| Active or Deactivated (You can save prices with initial status deactivated if you want). If this attribute is missing, the price will be saved as active. |
+| @RatePlanStatusType			| 0..1	     | String	| Active or Deactivated (You can save prices with initial status deactivated if you want). If this attribute is missing, the price is saved as active. This is only valid for derived rates, the prices for a base rate always are saved as active. This attribute does not deactivate the rate.|
 | @BaseRatePlanCode			| 0..1	     | String	| Rate code of the base RatePlan. Only used for derived rates. |
 | @CurrencyCode				| 0..1	     | String	| ISO Currency (EUR). Not used for derived rates.	|
 | RatePlans/RatePlan/Rates/Rate		| 1	     |		|							|

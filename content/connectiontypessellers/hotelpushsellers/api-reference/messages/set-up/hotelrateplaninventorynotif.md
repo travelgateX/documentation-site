@@ -295,7 +295,7 @@ Providers send a HotelRatePlanInventoryNotifRQ message to push the Hotel SetUp i
 | @BaseRatePlanCode			| 0..1	     | String	| Rate code of the base RatePlan. Only used for derived rates. |@BaseRatePlanCode			| 0..1	     | String	| Rate code of the base RatePlan. Only used for derived rates. |
 | @RateReturn			| 0..1	     | String	| Indicates if the Derived Rate Code should be passed to the channel manager in booking notifications or the Base Rate Code. Only used for derived rates. |
 | @RatePlanNotifType			| 0..1	     | String	| New, Delta or Remove |
-| @RatePlanStatusType			    | 1		 | String   | Active or Deactivated.				|
+| @RatePlanStatusType			    | 1		 | String   | Active or Deactivated. This attribute activates or deactivates the rate.				|
 | @CurrencyCode				| 0..1	     | String	| ISO Currency (EUR). Not used for derived rates.	|
 | @Start      				    | 0..1 	 | Date	    | Start date of the rate booking window (Booking Dates for which the rate will be available). |
 | @End        				    | 0..1	 | Date     | End date of the rate booking window (Booking Dates for which the rate will be available). |
