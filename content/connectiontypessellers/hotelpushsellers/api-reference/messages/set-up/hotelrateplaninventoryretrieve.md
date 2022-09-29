@@ -293,7 +293,7 @@ In the previous example we received one hotel, one Rate Plan and 2 rooms. One of
 | @Duration				    | 0..1  	 | String   | Duration of the rate booking window. Only present if Start and End are not. When present value is always 0 and means the rate has no booking window (available all dates). |
 | @BaseRatePlanCode			    | 0..1 	 | String   | Rate plan code of the base rate plan. Only returned for derived rates. |
 | @RatePlanStatusType			    | 1 	 | String   | Indicates if the rate plan is active or not for this dates. Possible values: "Active", "Deactivated". |
-| @PromotionCode        				    | 0..1	 | String     | Promotion code to apply. 25 - Senior_55  26 - Senior_60, 27 - Senior_65. If the attribute is not present there is no promotion code. Not applicable for derived rates.|
+| @PromotionCode        				    | 0..1	 | String     | Promotion code to apply. 0 - NoPromotion, 25 - Senior55  26 - Senior60, 27 - Senior65. If the attribute is not present or its value is 0 there is no promotion|
 | @FreeBaby        				    | 1	 | Boolean     | Free babies promotion|
 | @FreeChild        				    | 1	 | Boolean     | Free children promotion |
 | RatePlans/RatePlan/Description/Text	    | 1     	 |	    | Description of rate. 				|

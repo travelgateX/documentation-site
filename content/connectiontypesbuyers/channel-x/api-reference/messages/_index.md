@@ -211,7 +211,7 @@ The ``HotelRatePlanInventoryNotif`` message contains information about the inven
 | @Start      				          | 0..1 	  | Date	   | Booking Start Date for which the rate will be available.               |
 | @End        				          | 0..1	  | Date     | Booking Start Date for which the rate will be available.               |
 | @RatePlanType        				  | 0..1	  | String     | Rate rule to apply. 0 - No selected, 7 - Large Family, 8 - Public Servant, 10 - Negotiated, 11 - Package, 34 - Canary Resident, 35 - Balearic Resident, 36 - Honeymoon. If the attribute is not present and it is a base rate, the value is 0, if it is a derived rate, the value is the same as the parent rate.               |
-| @PromotionCode        				    | 0..1	 | String     | Promotion code to apply. 25 - Senior_55  26 - Senior_60, 27 - Senior_65. If the attribute is not present there is no promotion code. Not applicable for derived rates.|
+| @PromotionCode        				    | 0..1	 | String     | Promotion code to apply. 0 - NoPromotion, 25 - Senior55  26 - Senior60, 27 - Senior65. If the attribute is not present or its value is 0 there is no promotion|
 | RatePlan/BookingRules            	    | 0..1    |	         |                                                                       |
 | ../BookingRule		                | 1..n    |	         | 					                                                             |
 | @Code       				          | 0..1	  | String   | Empty if there are viewships conditions                               |
@@ -501,13 +501,13 @@ The ``HotelAvailNotif`` message contains information about rate availability and
 | AvailStatusMessage/LengthsOfStay                 | 0..1    |	         |							                                                         |
 | @ArrivalDateBased			        | 0..1	  | Boolean	 | **true**: the Minimum and Maximum Stay is checked ONLY the first day of the availability. **false or null**: the Minimum and Maximum Stay is checked all the availability days. If both values are needed, two AvailStatusMessage will be sent. |
 | ../LengthOfStay                  | 1..2    |         |						                                                             |
-| @Time 				                | 1	      | Integer	| Indicates the number of @TimeUnit for this stay. When value is *-1*, condition should be deleted from the system.	                     |
+| @Time 				                | 1	      | Integer	| Indicates the number of @TimeUnit for this stay. When value is *0* or *-1*, condition should be deleted from the system.	                     |
 | @TimeUnit				              | 1	      | String	| *N*: Day 						                                                   |
 | @MinMaxMessageType			      | 1	      | String	| *N*: MinLOS, MaxLOS. Minimum or maximum stay                           |
 | AvailStatusMessage/RestrictionStatus             | 0..1    |         |							                                                           |
 | @Status				                | 0..1	  | String	| *N*: Open Close	                                                       |
 | @Restriction				          | 0..1	  | String	| *N*: Master, Arrival, Departure.                                       |  
-| @MinAdvancedBookingOffset		  | 0..1	  | Integer	| Minimum number of days before the check-in date to be available to be booked. This restriction is usually used to offer discounts on early bookings. When value is *-1*, condition should be deleted from the system.                             |
+| @MinAdvancedBookingOffset		  | 0..1	  | Integer	| Minimum number of days before the check-in date to be available to be booked. This restriction is usually used to offer discounts on early bookings. When value is *0* or *-1*, condition should be deleted from the system.                             |
 | @MaxAdvancedBookingOffset		  | 0..1	  | Integer	| Maximum number of days before the check-in date to be available to be booked. This restriction is usually used to offer last minute discounts on unsold inventory. When value is *-1*, condition should be deleted from the system.               |
 | @SellThroughOpenIndicator		  | 0..1	  | Boolean	| *BR*. Room-RatePlan can be sold with no limit if @Status is Open  |
 
