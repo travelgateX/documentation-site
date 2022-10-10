@@ -397,3 +397,15 @@ Error Response
 | HotelReservationIDs/HotelReservationID | 2     	|		| Node containing information of one reservation id. |
 | @ResIDValue				| 1 		| String	| Value of the id.				|
 | @ResIDSourceContext			| 1 		| String	| Id context.					|
+
+
+## Authentication and Headers
+
+Our system send these messages without SOAP envelop, directly the OTA_HotelResRS, as POST request with the following headers:
+
+```
+  Content-Type: application/xml; charset=utf-8
+  Authorization: Basic XXXXXXXXXXXXXXXXX
+```
+
+[Here](https://en.wikipedia.org/wiki/Basic_access_authentication) you can find what is Basic authentication

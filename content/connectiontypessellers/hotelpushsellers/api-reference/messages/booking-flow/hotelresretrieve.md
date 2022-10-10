@@ -12,6 +12,9 @@ isDirectory = false
 
 Providers will send a HotelResRetrieveRQ message to retrieve a list of a seller's reservations.
 
+{{% alert theme="warning" %}}
+You can find the authentication method for these messages [here](/connectiontypessellers/hotelpushsellers/api-reference/messages/set-up/authentication/)
+{{% /alert %}}
 
 
 ## HotelResRetrieveRQ
