@@ -3,9 +3,8 @@ title = "Hotel Rates Benchmark Dataset"
 pagetitle = "Hotel Rates Benchmark Dataset"
 description = "Understand Hotel Rates Benchmark Dataset"
 icon = "fa-tag" 
-weight = 3
-alwaysopen = false
 hidden = true
+alwaysopen = false
 +++
 
 On this page you will learn how the data is stored in Benchmark Hotel Rates Dataset and how to interpret the differents table fields.
