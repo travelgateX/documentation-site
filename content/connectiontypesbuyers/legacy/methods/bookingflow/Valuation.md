@@ -125,13 +125,13 @@ Our system allows for a maximum of **180000** milliseconds before the connection
     <CancelPenalties nonRefundable = "false">
         <CancelPenalty>
             <HoursBefore>72</HoursBefore>
-            <Deadline>01/07/2016T05:00:00Z</Deadline>
+            <Deadline>2016-07-01T05:00:00Z</Deadline>
             <CalculatedDeadline>false</CalculatedDeadline>
             <Penalty type = "Importe" paymentType = "MerchantPay" currency = "EUR">25.00</Penalty>
         </CancelPenalty>
         <CancelPenalty>
             <HoursBefore>48</HoursBefore>
-            <Deadline>02/07/2016T05:00:00Z</Deadline>
+            <Deadline>2016-07-02T05:00:00Z</Deadline>
             <CalculatedDeadline>false</CalculatedDeadline>
             <Penalty type = "Importe" paymentType = "MerchantPay" currency = "EUR">72.40</Penalty>
         </CancelPenalty>
@@ -175,7 +175,7 @@ Our system allows for a maximum of **180000** milliseconds before the connection
 | @nonRefundable                            | 1          | Boolean  | Indicate if this option is nonRefundable (true or false). |
 | CancelPenalties /CancelPenalty            | 0..n       |          | Listing cancellation penalties. |
 | CancelPenalties /CancelPenalty/HoursBefore | 1          | String   | Number of hours prior to checkin date in which this Cancellation policy applies . |
-| CancelPenalties /CancelPenalty/Deadline    | 1          | String   | Date on UTC Standard TimeZone in which this Cancellation policy applies (ISO 8601 e.g: 01/07/2016T05:00:00Z)  |
+| CancelPenalties /CancelPenalty/Deadline    | 1          | String   | Date on UTC Standard TimeZone in which this Cancellation policy applies (ISO 8601 e.g: 2016-07-01T05:00:00Z)  |
 | CancelPenalties /CancelPenalty/CalculatedDeadline | 1          | Boolean  |  Indicate if the Deadline is returned by the supplier or it's been calculated by TravelGate -> *true* = has been calculated by XTG / *false* = bypass of supplier data without calculation |
 | CancelPenalties /CancelPenalty/Penalty     | 1          |          | Contains the value to apply. |
 | @type					    | 1          | String   | Type of possible penalty values: "Noches" (nights) , "Porcentaje" (percentage) ,"Importe" (price value). |
@@ -253,13 +253,13 @@ In this example you can see 2 *CancelPenalty* with different *HoursBefore*:
 <CancelPenalties nonRefundable = "false">
     <CancelPenalty>
         <HoursBefore>72</HoursBefore>
-        <Deadline>01/07/2016T05:00:00Z</Deadline>
+        <Deadline>2016-07-01T05:00:00Z</Deadline>
         <CalculatedDeadline>false</CalculatedDeadline>
         <Penalty type = "Importe" paymentType = "MerchantPay" currency = "EUR">25.00</Penalty>
     </CancelPenalty>
     <CancelPenalty>
         <HoursBefore>48</HoursBefore>
-        <Deadline>02/07/2016T05:00:00Z</Deadline>
+        <Deadline>2016-07-02T05:00:00Z</Deadline>
         <CalculatedDeadline>false</CalculatedDeadline>
         <Penalty type = "Importe" paymentType = "MerchantPay" currency = "EUR">72.40</Penalty>
     </CancelPenalty>
