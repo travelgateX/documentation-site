@@ -101,7 +101,7 @@ is closed, is of **240000** milliseconds.
                 <CancelPenalties nonRefundable = "false">
                     <CancelPenalty>
                         <HoursBefore>72</HoursBefore>
-                        <Deadline>01/01/2014T05:00:00Z</Deadline>
+                        <Deadline>2014-01-01T05:00:00Z</Deadline>
                         <CalculatedDeadline>false</CalculatedDeadline>
                         <Penalty type = "Importe" paymentType = "pagoMinorista" currency = "EUR">29.95</Penalty>
                     </CancelPenalty>
@@ -137,7 +137,7 @@ is closed, is of **240000** milliseconds.
                 <CancelPenalties nonRefundable = "false">
                     <CancelPenalty>
                         <HoursBefore>120</HoursBefore>
-                        <Deadline>01/01/2014T05:00:00Z</Deadline>
+                        <Deadline>2014-01-01T05:00:00Z</Deadline>
                         <CalculatedDeadline>false</CalculatedDeadline>
                         <Penalty type = "Importe" paymentType = "pagoMinorista" currency = "EUR">72.40</Penalty>
                     </CancelPenalty>

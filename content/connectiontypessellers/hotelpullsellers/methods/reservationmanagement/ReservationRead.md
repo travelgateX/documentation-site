@@ -110,7 +110,7 @@ Go to [Common-Elements](/connectiontypessellers/hotelpullsellers/methods/common-
         <Code>10</Code>
         <CreationDate>17/01/2016</CreationDate>
         <StartDate>28/01/2016</StartDate>
-        <EndDate>29/01/2014</EndDate>
+        <EndDate>29/01/2016</EndDate>
         <Holder name = "Test11" surname = "TestAp11"/>
         <Price currency = "EUR" amount = "36.20" binding = "false" commission = "-1"/>
         <Rooms>
@@ -119,7 +119,7 @@ Go to [Common-Elements](/connectiontypessellers/hotelpullsellers/methods/common-
         <CancelPenalties nonRefundable = "false">
             <CancelPenalty>
                 <HoursBefore>120</HoursBefore>
-                <Deadline>01/01/2016T05:00:00Z</Deadline>
+                <Deadline>2016-01-01T05:00:00Z</Deadline>
                 <CalculatedDeadline>false</CalculatedDeadline>
                 <Penalty type = "Importe" paymentType = "MerchantPay" currency = "EUR">72.40</Penalty>
             </CancelPenalty>
@@ -177,7 +177,7 @@ Go to [Common-Elements](/connectiontypessellers/hotelpullsellers/methods/common-
 | @nonRefundable			| 1    		| Boolean	| Indicate if this option is nonRefundable (true or false). |
 | Hotel /CancelPenalties /CancelPenalty	| 0..n       	|		| Listing of cancellation penalties.		|
 | Hotel /CancelPenalties /CancelPenalty/HoursBefore | 1	|	String	| Number of hours prior to arrival day in which this Cancellation policy applies. |
-| Hotel /CancelPenalties /CancelPenalty/Deadline    | 1          | String   | Date on UTC Standard TimeZone in which this Cancellation policy applies (ISO 8601 e.g: 01/07/2016T05:00:00Z)  |
+| Hotel /CancelPenalties /CancelPenalty/Deadline    | 1          | String   | Date on UTC Standard TimeZone in which this Cancellation policy applies (ISO 8601 e.g: 2016-07-01T05:00:00Z)  |
 | Hotel /CancelPenalties /CancelPenalty/CalculatedDeadline | 1          | Boolean  |  Indicate if the Deadline is returned by the supplier or it's been calculated by TravelGate -> *true* = has been calculated by XTG / *false* = bypass of supplier data without calculation |
 | Hotel /CancelPenalties /CancelPenalty/Penalty |   1 	|         	| Contains the value to apply.			|
 | @type 				| 1    		| String	| Type of penalty Possible values: "Noches" (nights) , "Porcentaje" (percentage) ,"Importe" (price value). |

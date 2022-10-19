@@ -157,7 +157,7 @@ is closed.
                                         <CancelPenalty>
                                             <HoursBefore>24</HoursBefore>
                                             <Penalty type = "Importe" currency = "EUR">20</Penalty>
-                                            <Deadline>01/07/2016T05:00:00Z</Deadline>
+                                            <Deadline>2016-07-01T05:00:00Z</Deadline>
                                             <CalculatedDeadline>false</CalculatedDeadline>
                                         </CancelPenalty>
                                     </CancelPenalties>
@@ -300,7 +300,7 @@ is closed.
                                 <CancelPenalty>
                                     <HoursBefore>24</HoursBefore>
                                     <Penalty type = "Importe" currency = "EUR">20</Penalty>
-                                    <Deadline>01/07/2016T05:00:00Z</Deadline>
+                                    <Deadline>2016-07-01T05:00:00Z</Deadline>
                                     <CalculatedDeadline>false</CalculatedDeadline>
                                 </CancelPenalty>
                             </CancelPenalties>
@@ -342,7 +342,7 @@ is closed.
 | @type 				                | 1 		    | String 	    | Type of penalty -possible values: "Noches" (nights), "Porcentaje" (percentage), "Importe" (price value). |
 | @currency 				            | 1 		    | String 	    | Currency code.						                                                        |
 | MealPlans/ MealPlan/ Options/ Option/ CancelPenalties/ CancelPenalty/ CalculatedDeadline | 0..1 | Boolean | Indicate if the Deadline is returned by the supplier or it's been calculated by TravelGate -> *true* = has been calculated by XTG, *false* = bypass of supplier data without calculation. |
-| MealPlans/ MealPlan/ Options/ Option/ CancelPenalties/ CancelPenalty/ Deadline | 0..1 | String | Date on UTC Standard TimeZone in which this Cancellation policy applies (ISO 8601 e.g: 01/07/2016T05:00:00Z). |
+| MealPlans/ MealPlan/ Options/ Option/ CancelPenalties/ CancelPenalty/ Deadline | 0..1 | String | Date on UTC Standard TimeZone in which this Cancellation policy applies (ISO 8601 e.g: 2016-07-01T05:00:00Z). |
 | MealPlans/ MealPlan/ Options/ Option/ RateRules/ | 0..1 | 		    | Option rate rules.					                                                        |
 | MealPlans/ MealPlan/ Options/ Option/ RateRules/ Rules/ | 1 | 		| Rules.							                                                            |
 | MealPlans/ MealPlan/ Options/ Option/ RateRules/ Rules/ Rule | 1..n | | Rule.								                                                            |
@@ -412,7 +412,7 @@ is closed.
 | @type 				                | 1 		    | String 	    | Type of penalty -possible values: "Noches" (nights), "Porcentaje" (percentage), "Importe" (price value). |
 | @currency 				            | 1 		    | String 	    | Currency code.						                                                        |
 | MealPlans/ MealPlan/ Options/ Option/ Rooms/ Room/ CancelPenalties/ CancelPenalty/ CalculatedDeadline | 0..1 | Boolean | Indicate if the Deadline is returned by the supplier or it's been calculated by TravelGate -> *true* = has been calculated by XTG, *false* = bypass of supplier data without calculation. |
-| MealPlans/ MealPlan/ Options/ Option/ Rooms/ Room/ CancelPenalties/ CancelPenalty/ Deadline | 0..1 | String | Date on UTC Standard TimeZone in which this Cancellation policy applies (ISO 8601 e.g: 01/07/2016T05:00:00Z). | 
+| MealPlans/ MealPlan/ Options/ Option/ Rooms/ Room/ CancelPenalties/ CancelPenalty/ Deadline | 0..1 | String | Date on UTC Standard TimeZone in which this Cancellation policy applies (ISO 8601 e.g: 2016-07-01T05:00:00Z). | 
 | MealPlans/ MealPlan/ Options/ Option/ Price | 1       | 		        | Option price ( it is the total price of option).		                                        |
 | @currency 				            | 1 		    | String 	    | Currency code.						                                        |
 | @amount 				                | 1 		    | Decimal 	    | Option Amount.						|
