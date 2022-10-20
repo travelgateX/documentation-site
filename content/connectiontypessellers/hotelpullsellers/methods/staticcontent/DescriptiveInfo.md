@@ -63,11 +63,11 @@ Go to [Common-Elements](/connectiontypessellers/hotelpullsellers/methods/common-
 ### DescriptiveInfoRQ Description
 
 
-| **Element**				    | **Number**	| **Type**	 | **Description**				|
-| ----------------------------- | ------------- | ---------- | -----------------------------|
-| DescriptiveInfoRQ			    | 1             |		     | Root node.					|
-| DescriptiveInfoRQ/ Hotel/     | 1    		    | String	 | Hotel requested.				|
-| DescriptiveInfoRQ/ Hotel/Code	| 1    	        | String	 | Code.						|
+| **Element**				            | **Number**	| **Type**	    | **Description**				                |
+| ------------------------------------- | ------------- | ------------- | --------------------------------------------- |
+| DescriptiveInfoRQ/		            | 1          	|		        | Root node.					                |
+| DescriptiveInfoRQ/ Hotel/		        | 1    		    | String	    | Hotel requested.				                |
+| DescriptiveInfoRQ/ Hotel/ Code	    | 1    		    | String	    | Code.						                    |
 
 
 
@@ -237,7 +237,57 @@ Go to [Common-Elements](/connectiontypessellers/hotelpullsellers/methods/common-
                 <Code>100</Code>
                 <UpgradeUTCDate>2016-10-18T13:18:03+02:00</UpgradeUTCDate>
             </Picture>
-        </Images>
+        </Images>        
+        <Rooms>
+            <Room code = "821">
+                <Beds>
+                    <Bed numberOfBeds = "1" type = "SINGLE"/>
+                </Beds>
+                <RoomOccupancy>
+                    <Adults>
+                        <Min>1</Min>
+                        <Max>1</Max>
+                    </Adults>
+                    <Children>
+                        <Min>0</Min>
+                        <Max>0</Max>
+                    </Children>
+                    <Infants>
+                        <Min>0</Min>
+                        <Max>0</Max>
+                    </Infants>
+                    <Total>
+                        <Min>1</Min>
+                        <Max>1</Max>
+                    </Total>
+                </RoomOccupancy>
+                <Attributes>
+                    <Attribute>
+                        <Code>01</Code>
+                        <Classification>HAB</Classification>
+                        <Description>Private bathroom</Description>
+                    </Attribute>
+                </Attributes>
+                <Images>
+                    <Picture>
+                        <Code>01</Code>
+                        <URL>http://www.images.net/infor/work/imagen/hotel_room_02/M.jpg</URL>
+                        <Classification>HAB</Classification>
+                        <Ordered>1</Ordered>
+                        <Description>Room</Description>
+                        <UpgradeUTCDate>0001-01-01T00:00:00</UpgradeUTCDate>
+                    </Picture>
+                </Images>
+                <Description>Standard Single room</Description>
+                <Views>
+                    <View>
+                        <Code>01</Code>
+                        <Name>Sea view</Name>
+                    </View>
+                </Views>
+                <Area>25</Area>
+            </Room>
+        </Rooms>
         <LocationType>City</LocationType>
         <PaymentOptions cash="false" bankAcct="false">
             <Cards>
@@ -260,89 +310,126 @@ Go to [Common-Elements](/connectiontypessellers/hotelpullsellers/methods/common-
 ### DescriptiveInfoRS Description
 
 
-| **Element**				                | **Number**   | **Type**	 | **Description**						                                |
-| ------------------------------------------| ------------ | ----------- | -------------------------------------------------------------------- |
-| DescriptiveInfoRS/ UpgradeUTCDate	        | 1       	   | DateTime    | Indicates the update date of the information in UTC format.	        |
-| DescriptiveInfoRS/ Hotel	                | 0..n         |		     | Root node. Hotel sheet.					                            |
-| Code       				                | 1    		   | String	     | Code.								                                |
-| Name       				                | 1    		   | String	     | Name.								                                |
-| Address    				                | 1    		   | String	     | Address.							                                    |
-| Airports/			    	                | 0..1         |		     | List of airports.							                        |
-| Airports/ Airport			                | 1..n         |		     | Specific airport near the hotel.	                                    |
-| Airports/ Airport/ IATACode	            | 1    		   | String	     | IATA airport Code.								                    |
-| Town       				                | 1    		   | String	     | Town.    							                                |
-| ZipCode    				                | 1    		   | String	     | ZipCode.							                                    |
-| CountryISOCode			                | 1    		   | String	     | Country ISOCode.						                                |
-| AvailDestination			                | 0..1     	   |		     | Avail destination (will only be returned if requested in Avail, and the type is CTY). |
-| @code      				                | 1    		   | String	     | Destination code.						                            |
-| @name      				                | 1    		   | String	     | Destination name. 						                            |
-| GeographicDestination		                | 1        	   |		     | Geographic destination.					                            |
-| @code      				                | 1    		   | String	     | Destination code.						                            |
-| @name      				                | 1    		   | String	     | Destination name.						                            |
-| @avail     				                | 1    		   | Boolean	 | Indicates if the code can be used in Avail.		                    |
-| Latitude   				                | 0..1  	   | String	     | Latitude.							                                |
-| Longitude  				                | 0..1  	   | String	     | Longitude.							                                |
-| Contact/   				                | 0..1     	   |		     | Hotel contact information.							                |
-| Contact/ Email			                | 1    		   | String	     | Email.							                                    |
-| Contact/ Telephone		                | 1    		   | String	     | Telephone.							                                |
-| Contact/ Fax				                | 1    		   | String	     | Fax.								                                    |
-| CategoryCode				                | 1    		   | String	     | Category code.							                            |
-| BookingContact/			                | 0..1     	   |		     | Booking dept contact.						                        |
-| BookingContact/ Email		                | 1    		   | String	     | Email.							                                    |
-| BookingContact/ Telephone	                | 1    		   | String	     | Telephone. 							                                |
-| BookingContact/ Fax		                | 1    		   | String	     | Fax.   							                                    |
-| Chaincode  				                | 0..1 		   | String	     | Hotel chain code.							                        |
-| ShortDescription			                | 0..1 		   | String	     | A brief description of the hotel.   						            |
-| LongDescription			                | 0..1 		   | String	     | An extended description that can include remarks, observations and other relevant information about the hotel. |
-| HowToGet  			                    | 0..1 		   | String	     | Directions to the hotel.					                            |
-| Rooms/		                            | 0..1 		   |   	         | Rooms.   						                                    |
-| Rooms/ Room			                    | 1..n 		   |   	         | Room.   						                                        |
-| @code			                            | 1 		   | String 	 | Room Code.   						                                |
-| @size			                            | 1 		   | Integer 	 | Size of the room.						                            |
-| @viewCode			                        | 1 		   | String 	 | Main view of the room. See the full list of card codes at [Lists of Data](/connectiontypessellers/hotelpullsellers/listsdata/#view-codes). |
-| @classificationCode		                | 1 		   | String 	 | Room classification code. See the full list of card codes at [Lists of Data](/connectiontypessellers/hotelpullsellers/listsdata/#room-classifications). |
-| @occupancy			                    | 1 		   | Integer 	 | Number of rooms availables at the hotel. 						    |
-| Rooms/ Room/ Description	                | 1 		   | String 	 | Room Description.   						                            |
-| Rooms/ Room/ Beds/		                | 0..1 	       |   	         | Room bedding.				                                        |
-| @sharedBed			                    | 1 		   | Boolean	 | Indicates if it's a shared bed.				                        |
-| Rooms/ Room/ Beds/ Bed	                | 1..n 	       |   	         | Number of beds allocated in the room.					            |
-| @numberOfBeds			                    | 1 		   | String	     | Number of beds allocated in the room.				                |
-| @type			                            | 1 		   | String	     | Type of bed. (Queen Bed, Single...)				                    |
-| Rooms/ Room/ Views/		                | 0..1 		   |   	         | Views of the room.					                                |
-| Rooms/ Room/ Views/ View	                | 1..n 		   |   	         | List of views.					                                    |
-| Rooms/ Room/ Views/ View/ Code	        | 1..n 		   | String 	 | View code.				                                            |
-| Rooms/ Room/ Views/ View/ Name	        | 1..n 		   | String 	 | Name of the View.					                                |
-| Rooms/ Room/ Attributes	                | 1 		   |          	 | Room Attributes. (Follows same structure as Hotel Attributes)	    |
-| Rooms/ Room/ Images		                | 1 		   |   	         | Room Images.	(Follows same structure as Hotel Images)			    |
-| SituationDescription		                | 0..1 		   | String	     | Area description.					                                |
-| RestaurantsDescription	                | 0..1 		   | String	     | Restaurants description.					                            |
-| PoolsDescription			                | 0..1 		   | String	     | Pools description.    					                            |
-| ActivitiesDescription		                | 0..1 		   | String	     | Activities description.					                            |
-| ServicesDescription		                | 0..1 		   | String	     | Services description.						                        |
-| AdditionalDetails			                | 0..1 		   | String	     | Additional details.						                            |
-| Attributes/				                | 0..1         |		     | Attributes.							                                |
-| Attributes/ Attribute/	                | 1..n         |		     | Specific attributes of the hotel, such as wi-fi.	                    |
-| Attributes/ Attribute/ Code               | 1    		   | String	     | Code.								                                |
-| Attributes/ Attribute/ Value	            | 1    		   | String	     | Value.							                                    |
-| Attributes/ Attribute/ Classification	    | 1    		   | String	     | Classification ( HOT=hotel, HAB=room, SER=service and GRAL=generic). |
-| Attributes/ Attribute/ Description	    | 0..1         | String	     | Description.							                                |
-| Images/    				                | 0..1         |		     | Images.							                                    |
-| Images/ Picture/			                | 1..n         |		     | Picture.     							                            |
-| Images/ Picture/ Url		                | 1    		   | String	     | Url.								                                    |
-| Images/ Picture/ Classification	        | 1    		   | String	     | Classification (HOT=hotel, HAB=room, SER=service and GRAL=generic).  |
-| Images/ Picture/ Ordered	                | 0..1 		   | String	     | Images should be ordered from 1 onward. 1 is top.		            |
-| Images/ Picture/ Description	            | 0..1  	   | String	     | Description.							                                |
-| Images/ Picture/ Code		                | 0..1    	   | String	     | Code.								                                |
-| Images/ Picture/ UpgradeUTCDate	        | 0..1    	   | DateTime	 | Indicates the upgrade date of the picture in UTC format.	            |
-| LocationType				                | 0..1 		   | String	     | Location code.							                            |
-| PaymentOptions/			                | 0..1 		   | String	     | Type of cards allowed by the supplier. This tag is only mandatory if payment type is different than *MerchantPay*. |
-| PaymentOptions/ Cards/	                | 1            |		     | List of cards allowed.					                            |
-| PaymentOptions/ Cards/ Card	            | 1..n         |		     | Type of card allowed. 						                        |
-| @code 				                    | 1    		   | String	     | Code of card. See the full list of card codes at [Lists of Data](/connectiontypessellers/hotelpullsellers/listsdata/#credit-cards). |
-| ExclusiveDeal				                | 0..1 		   | Boolean 	 | Indicates that a Hotel is an Exlusive Deal.	                        |
-| PropertyCategory/			                | 0..1         |		     | Hotels property type. Similar to Type tag, but on supplier's side.   |
-| PropertyCategory/ Code	                | 1    		   | String	     | Supplier property code.					                            |
-| PropertyCategory/ Name	                | 1    		   | String	     | Supplier property name.					                            |
-
-
+| **Element**				                            | **Number**  | **Type**    | **Description**						                                                 |
+| ----------------------------------------------------- | ----------- | ----------- | -------------------------------------------------------------------------------------- |
+| DescriptiveInfoRS/ UpgradeUTCDate	                    | 1       	  | DateTime    | Indicates the update date of the information in UTC format.	                         |
+| DescriptiveInfoRS/ Hotel	                            | 0..n        |		        | Root node. Hotel sheet.					                                             |
+| Code       				                            | 1    		  | String	    | Code.								                                                     |
+| Name       				                            | 1    		  | String	    | Name.								                                                     |
+| Address    				                            | 1    		  | String	    | Address.							                                                     |
+| Airports/			    	                            | 0..1        |		        | List of airports.							                                             |
+| Airports/ Airport			                            | 1..n        |		        | Specific airport near the hotel.	                                                     |
+| Airports/ Airport/ IATACode	                        | 1    		  | String	    | IATA airport Code.								                                     |
+| Town       				                            | 1    		  | String	    | Town.    							                                                     |
+| ZipCode    				                            | 1    		  | String	    | ZipCode.							                                                     |
+| CountryISOCode			                            | 1    		  | String	    | Country ISOCode.						                                                 |
+| AvailDestination			                            | 0..1     	  |		        | Avail destination (will only be returned if requested in Avail, and the type is CTY).  |
+| @code      				                            | 1    		  | String	    | Destination code.						                                                 |
+| @name      				                            | 1    		  | String	    | Destination name. 						                                             |
+| GeographicDestination		                            | 1        	  |		        | Geographic destination.					                                             |
+| @code      				                            | 1    		  | String	    | Destination code.						                                                 |
+| @name      				                            | 1    		  | String	    | Destination name.						                                                 |
+| @avail     				                            | 1    		  | Boolean	    | Indicates if the code can be used in Avail.		                                     |
+| Latitude   				                            | 0..1  	  | String	    | Latitude.							                                                     |
+| Longitude  				                            | 0..1  	  | String	    | Longitude.							                                                 |
+| Contact/   				                            | 0..1     	  |		        | Hotel contact information.							                                 |
+| Contact/ Email			                            | 1    		  | String	    | Email.							                                                     |
+| Contact/ Telephone		                            | 1    		  | String	    | Telephone.							                                                 |
+| Contact/ Fax				                            | 1    		  | String	    | Fax.								                                                     |
+| CategoryCode				                            | 1    		  | String	    | Category code.							                                             |
+| BookingContact/			                            | 0..1     	  |		        | Booking dept contact.						                                             |
+| BookingContact/ Email		                            | 1    		  | String	    | Email.							                                                     |
+| BookingContact/ Telephone	                            | 1    		  | String	    | Telephone. 							                                                 |
+| BookingContact/ Fax		                            | 1    		  | String	    | Fax.   							                                                     |
+| Chaincode  				                            | 0..1 		  | String	    | Hotel chain code.							                                             |
+| ShortDescription			                            | 0..1 		  | String	    | A brief description of the hotel.   						                             |
+| LongDescription			                            | 0..1 		  | String	    | An extended description that can include remarks, observations and other relevant information about the hotel. |
+| HowToGet  			                                | 0..1 		  | String	    | Directions to the hotel.					                                             |
+| Rooms/		                                        | 0..1 		  |   	        | Rooms.   						                                                         |
+| Rooms/ Room			                                | 1..n 		  |   	        | Room.   						                                                         |
+| @code			                                        | 1 		  | String 	    | Room Code.   						                                                     |
+| @size			                                        | 1 		  | Integer 	| Size of the room.						                                                 |
+| @viewCode			                                    | 1 		  | String 	    | Main view of the room. See the full list of card codes at [Lists of Data](/connectiontypessellers/hotelpullsellers/listsdata/#view-codes). |
+| @classificationCode		                            | 1 		  | String 	    | Room classification code. See the full list of card codes at [Lists of Data](/connectiontypessellers/hotelpullsellers/listsdata/#room-classifications). |
+| @occupancy			                                | 1 		  | Integer 	| Number of rooms availables at the hotel. 						                         |
+| Rooms/ Room/ Description	                            | 1 		  | String 	    | Room Description.   						                                             |
+| Rooms/ Room/ Beds/		                            | 0..1 	      |   	        | Room bedding.				                                                             |
+| @sharedBed			                                | 1 		  | Boolean	    | Indicates if it's a shared bed.				                                         |
+| Rooms/ Room/ Beds/ Bed	                            | 1..n 	      |   	        | Number of beds allocated in the room.					                                 |
+| @numberOfBeds			                                | 1 		  | String	    | Number of beds allocated in the room.				                                     |
+| @type			                                        | 1 		  | String	    | Type of bed. (Queen Bed, Single...)				                                     |
+| Rooms/ Room/ Views/		                            | 0..1 		  |   	        | Views of the room.					                                                 |
+| Rooms/ Room/ Views/ View	                            | 1..n 		  |   	        | List of views.					                                                     |
+| Rooms/ Room/ Views/ View/ Code	                    | 1..n 		  | String 	    | View code.				                                                             |
+| Rooms/ Room/ Views/ View/ Name	                    | 1..n 		  | String 	    | Name of the View.					                                                     |
+| Rooms/ Room/ Attributes	                            | 1 		  |          	| Room Attributes. (Follows same structure as Hotel Attributes)	                         |
+| Rooms/ Room/ Images		                            | 1 		  |   	        | Room Images.	(Follows same structure as Hotel Images)			                     |
+| SituationDescription		                            | 0..1 		  | String	    | Area description.					                                                     |
+| RestaurantsDescription	                            | 0..1 		  | String	    | Restaurants description.					                                             |
+| PoolsDescription			                            | 0..1 		  | String	    | Pools description.    					                                             |
+| ActivitiesDescription		                            | 0..1 		  | String	    | Activities description.					                                             |
+| ServicesDescription		                            | 0..1 		  | String	    | Services description.						                                             |
+| AdditionalDetails			                            | 0..1 		  | String	    | Additional details.						                                             |
+| Attributes/				                            | 0..1        |		        | Attributes.							                                                 |
+| Attributes/ Attribute/	                            | 1..n        |		        | Specific attributes of the hotel, such as wi-fi.	                                     |
+| Attributes/ Attribute/ Code                           | 1    		  | String	    | Code.								                                                     |
+| Attributes/ Attribute/ Value	                        | 1    		  | String	    | Value.							                                                     |
+| Attributes/ Attribute/ Classification	                | 1    		  | String	    | Classification ( HOT=hotel, HAB=room, SER=service and GRAL=generic).                   |
+| Attributes/ Attribute/ Description	                | 0..1        | String	    | Description.							                                                 |
+| Images/    				                            | 0..1        |		        | Images.							                                                     |
+| Images/ Picture/			                            | 1..n        |		        | Picture.     							                                                 |
+| Images/ Picture/ Url		                            | 1    		  | String	    | Url.								                                                     |
+| Images/ Picture/ Classification	                    | 1    		  | String	    | Classification (HOT=hotel, HAB=room, SER=service and GRAL=generic).                    |
+| Images/ Picture/ Ordered	                            | 0..1 		  | String	    | Images should be ordered from 1 onward. 1 is top.		                                 |
+| Images/ Picture/ Description	                        | 0..1  	  | String	    | Description.							                                                 |
+| Images/ Picture/ Code		                            | 0..1    	  | String	    | Code.								                                                     |
+| Images/ Picture/ UpgradeUTCDate	                    | 0..1    	  | DateTime	| Indicates the upgrade date of the picture in UTC format.	                             |
+| Rooms/    			            	                | 0..1        |		        | Hotel rooms.							                                                 |
+| Rooms/ Room/     				                        | 1..n        |		        | List of rooms.							                                             |
+| @code      				                            | 1    		  | String	    | Room code.						                                                     |
+| Rooms/ Room/ Beds/  				                    | 0..1        |		        | Room beds.							                                                 |
+| Rooms/ Room/ Beds/ Bed/  				                | 1..n        |		        | List of beds.							                                                 |
+| @numberOfBeds      			    	                | 0..1    	  | String	    | Indicates number of beds in the room.						                             |
+| @type      				                            | 0..1    	  | String	    | Indicates the type of bed.						                                     |
+| Rooms/ Room/ RoomOccupancy/   				        | 0..1        |		        | Indicates the amount of each occupant type staying in the room.						 |
+| Rooms/ Room/ RoomOccupancy/ Adults/ 			        | 1       	  |		        | Indicates the amount of adults staying in the room (minimum and maximum).				 |
+| Rooms/ Room/ RoomOccupancy/ Adults/ Min  		        | 1       	  | Integer	    | Indicates the minimum amount of adults staying in the room.							 |
+| Rooms/ Room/ RoomOccupancy/ Adults/ Max  		        | 1       	  | Integer	    | Indicates the maximum amount of adults staying in the room.							 |
+| Rooms/ Room/ RoomOccupancy/ Children/  		        | 1           |		        | Indicates the amount of children staying in the room (minimum and maximum).       	 |
+| Rooms/ Room/ RoomOccupancy/ Children/ Min             | 1       	  | Integer	    | Indicates the minimum amount of children staying in the room.					    	 |
+| Rooms/ Room/ RoomOccupancy/ Children/ Max  	        | 1       	  | Integer	    | Indicates the maximum amount of children staying in the room.							 |
+| Rooms/ Room/ RoomOccupancy/ Infants  			        | 1       	  |	            | Indicates the amount of infants staying in the room (minimum and maximum).             |
+| Rooms/ Room/ RoomOccupancy/ Infants/ Min  	        | 1       	  | Integer	    | Indicates the minimum amount of infants staying in the room.							 |
+| Rooms/ Room/ RoomOccupancy/ Infants/ Max  	        | 1       	  | Integer	    | Indicates the maximum amount of infants staying in the room.						     |
+| Rooms/ Room/ RoomOccupancy/ Total/			        | 1       	  |		        | Indicates the total amount of occupants staying in the room (minimum and maximum).	 |
+| Rooms/ Room/ RoomOccupancy/ Total/ Min  		        | 1       	  | Integer	    | Indicates the minimum total amount of occupants staying in the room.	                 |
+| Rooms/ Room/ RoomOccupancy/ Total/ Max  		        | 1       	  | Integer	    | Indicates the maximum total amount of occupants staying in the room.	                 |
+| Rooms/ Room/ Attributes/				                | 0..1        |		        | Attributes.							                                                 |
+| Rooms/ Room/ Attributes/ Attribute/			        | 1..n        |		        | Specific attributes of the room, such as wi-fi.	                                     |
+| Rooms/ Room/ Attributes/ Attribute/ Code		        | 1    		  | String	    | Code.								                                                     |
+| Rooms/ Room/ Attributes/ Attribute/ Classification    | 1    		  | String	    | HAB=room.                                                                              |
+| Rooms/ Room/ Attributes/ Attribute/ Description       | 0..1    	  | String	    | Description.                                                                           |
+| Rooms/ Room/ Images/    				                | 0..1        |		        | Images.							                                                     |
+| Rooms/ Room/ Images/ Picture/			                | 1..n        |		        | Picture.     							                                                 |
+| Rooms/ Room/ Images/ Picture/ Url			            | 1    		  | String	    | Url.								                                                     |
+| Rooms/ Room/ Images/ Picture/ Classification		    | 1    		  | String	    | HAB=room.                                                                              |
+| Rooms/ Room/ Images/ Picture/ Ordered		            | 0..1 		  | String	    | Images should be ordered from 1 onward. 1 is top.		                                 |
+| Rooms/ Room/ Images/ Picture/ Description		        | 0..1    	  | String	    | Description.							                                                 |
+| Rooms/ Room/ Images/ Picture/ Code			        | 0..1    	  | String	    | Code.								                                                     |
+| Rooms/ Room/ Images/ Picture/ UpgradeUTCDate	 	    | 0..1    	  | DateTime 	| Indicates the upgrade date of the picture in UTC format.                               |
+| Rooms/ Room/ Description  				            | 0..1        | String	    | Room description.							                                             |
+| Rooms/ Room/ Views/    				                | 0..1        |		        | Views.							                                                     |
+| Rooms/ Room/ Views/ View/			                    | 1..n        |		        | List of room views.     							                                     |
+| Rooms/ Room/ Views/ View/ Code		                | 1    		  | String	    | View code.								                                             |
+| Rooms/ Room/ Views/ View/ Name                		| 1    		  | String	    | View name.								                                             |
+| Rooms/ Room/ Area/		                            | 0..1    	  | String	    | Room area.								                                             |
+| LocationType				                            | 0..1 		  | String	    | Location code.							                                             |
+| PaymentOptions/			                            | 0..1 		  | String	    | Type of cards allowed by the supplier. This tag is only mandatory if payment type is different than *MerchantPay*. |
+| PaymentOptions/ Cards/	                            | 1           |		        | List of cards allowed.					                                             |
+| PaymentOptions/ Cards/ Card	                        | 1..n        |		        | Type of card allowed. 						                                         |
+| @code 				                                | 1    		  | String	    | Code of card. See the full list of card codes at [Lists of Data](/connectiontypessellers/hotelpullsellers/listsdata/#credit-cards). |
+| ExclusiveDeal				                            | 0..1 		  | Boolean 	| Indicates that a Hotel is an Exlusive Deal.	                                         |
+| PropertyCategory/			                            | 0..1        |		        | Hotels property type. Similar to Type tag, but on supplier's side.                     |
+| PropertyCategory/ Code	                            | 1    		  | String	    | Supplier property code.					                                             |
+| PropertyCategory/ Name	                            | 1    		  | String	    | Supplier property name.					                                             |
 
