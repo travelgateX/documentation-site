@@ -15,6 +15,7 @@ The mapping feature is used to change the supplier's native codes to the Buyer's
 * Rate Map
 * Amenity Map
 * Promotion Map
+* Room Description Map
 
 Our mapping formats share a common structure. In order to load your maps you just need to follow the instructions below:
 
@@ -54,6 +55,7 @@ All map files must have the same name structure as follows - you need create a f
 |Rate|[Context Source]\_[Context Destination]\_rate\_map.csv|
 |Amenity|[Context Source]\_[Context Destination]\_amenity\_map.csv|
 |Promotion|[Context Source]\_[Context Destination]\promotion\_map.csv|
+|Room Description|[Context Source]\_[Context Destination]\roomdescription\_map.csv|
 
 ### Directories
 
@@ -65,6 +67,7 @@ All map files must have the same name structure as follows - you need create a f
 |Rate|/F[folder code]\_[unique code]/HotelX\_[unique code]/Maps/Rate/|
 |Amenity|/F[folder code]\_[unique code]/HotelX\_[unique code]/Maps/Amenity/|
 |Promotion|/F[folder code]\_[unique code]/HotelX\_[unique code]/Maps/Promotion/|
+|Room Description|/F[folder code]\_[unique code]/HotelX\_[unique code]/Maps/Room/|
 
 ### Sample Files
 
@@ -122,6 +125,7 @@ __Room__: search.options.rooms.code (supplierCode will contain the room's code i
 __Rate__: search.options.rooms.ratePlans.code (supplierCode will contain the rate plan's code of the room in supplier's context)<br>
 __Amenity__: search.options.amenities.code and/or inside rooms (amenitySupplierCode will contain the amenity's code in supplier context)<br>
 __Promotion__: search.options.promotionCode (promotionCodeSupplier will contain the promotion's code in supplier's context)<br>
+__Room Description__: search.options.rooms.code (code will contain the description maped code and supplierCode will contain the room's code in supplier's context)<br>
  
 Examples of plugin that executes board and/or amenity and/or promotion mapping:<br>
 
@@ -162,6 +166,21 @@ Examples of plugin that executes board and/or amenity and/or promotion mapping:<
             {
                 "type": "PROMOTION_MAP",
                 "name": "promotion_mapX"
+            }
+        ]
+    }
+}
+``` 
+**Room descriptions**:
+```json
+{
+    "plugins": {
+        "step": "RESPONSE_OPTION",
+        "pluginsType": [
+            {
+                "type": "ROOM_MAP",
+                "name": "room_map",
+                "parameters":[{"key":"description", "value":"true"}]
             }
         ]
     }
@@ -249,6 +268,31 @@ What happens if you use the combined plugin (room map and room map by provider h
     }
 }
 ```
+
+#### Room Description map by provider hotel
+
+It works the same way as room map by provider hotel plugin, but it uses the provider room description to map the room code in the hotelx response.
+
+### Execution example
+
+In this example the context applied by the plugin will be used instead of the settings context.
+
+```json
+{
+    "plugins": {
+        "step": "RESPONSE_OPTION",
+        "pluginsType": [
+            {
+                "type": "ROOM_MAP",
+                "name": "room_map",
+                "parameters":[{"key":"description", "value":"true"},{"key":"hotel", "value":"true"},{"key":"context", "value":"CTX"}]
+            }
+        ]
+    }
+}
+```
+
+
 ## Default Codes
 
 This feature allows to set a default code for each code in the source (provider) context. The entities that can have default codes are:<br>
@@ -258,6 +302,7 @@ This feature allows to set a default code for each code in the source (provider)
 * Rate
 * Amenity
 * Promotion
+* Room Description
 
 **Important**: this feature only must be used in Booking-Flow. Only one default code can be assigned to each supplier context.<br>
 In order to use this feature, it is necessary to append the default code to the FTP.<br><br>
