@@ -27,7 +27,7 @@ Here are a few things you can do that will increase the likelihood of your pull 
 
 ## Installing
 
-- Install [Hugo](https://gohugo.io/)
+- Install [Hugo](https://gohugo.io/) version 0.54
 - Clone the repo:
 
 `git clone git@github.com:travelgateX/documentation-site.git`
