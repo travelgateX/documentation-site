@@ -10,7 +10,7 @@ isDirectory=false
 
 Management operations allows you to operate over the performed bookings with a specific Seller.
 
-There are two main operations to manage bookings:
+There are three main operations to manage bookings:
 
 ## Reservation Management
 {{%custom-children%}}
