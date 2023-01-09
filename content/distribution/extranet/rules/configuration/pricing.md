@@ -72,3 +72,17 @@ The value of this rule is gathered on the availability search and then it is app
 By default the value for an agency inherits the one set on the general settings.
 
 This rule can be set by `agency` or by `organization` on general settings: when defined by agency it can be chosen to set a concrete behaviour or to inherit the value set on the general settings.
+
+
+## Negative Business Rules
+
+![Distribution pricing Negative Business Rules](./../../../../images/web/distribution_web_pricing_negativebusiness.jpg "Distribution pricing Negative Business Rules")
+
+This rule allows the Selling Price to be lower than the Purchasing Price. This is allowed through the Selling Pricing Rules at the agency level when negative markup/comission is set.
+
+The value of this rule is gathered on the availability search and then it is applied also on the quote and booking with the original read value.
+
+By default the value for an agency is `Do not allow negative business rules`, meaning that Selling will never be lower than Purchasing. If allowed, the selling pricing rule, or the combination of rules, will apply even if Selling Price is lower than Purchasing price.
+
+This rule can only be set by `agency` and it will never be active, in order to prevent manual loading mistakes.
+

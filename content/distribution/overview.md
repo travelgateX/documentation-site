@@ -15,7 +15,7 @@ Distribution is a rules engine for the distribution of hotel products. The main 
 
 ### Pricing Rules
 
-The main potential of Distribution lies in the versatility when it comes to defining complex rules to define the sales price. The different rules are calculated to obtain a percentage to be applied to the purchase price: it is not possible to define a fixed amount (fee). Rules can be defined to set both positive and negative percentages, but Distribution will never sell below the purchase price.
+The main potential of Distribution lies in the versatility when it comes to defining complex rules to define the sales price. The different rules are calculated to obtain a percentage to be applied to the purchase price: it is not possible to define a fixed amount (fee). Rules can be defined to set both positive and negative percentages. By default, Distribution-X will never sell below the purchase price. To change it, you can activate the rule [Negative Business Rules](./../../distribution/extranet/rules/configuration/pricing)
 
 ### Blacklist rules
 
