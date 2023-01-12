@@ -8,7 +8,9 @@ alwaysopen = false
 isDirectory = false
 +++
 
-Distribution allows you to make a currency exchange from the currency your suppliers provide you to the currency that your buyers are requesting you. The currency exchange used by default in Distribution is updated every day from the European Central Bank. However, you can customize your own currency exchange using the [currency exchange master file](https://docs.travelgatex.com/distribution/file-loads/masters/currencies/) to indicate your own base currencye and the exchanges you prefer. 
+Distribution allows you to make a currency exchange from the currency your suppliers provide you to the currency that your buyers are requesting you. The currency exchange used by default in Distribution is updated every day from the European Central Bank. However, you can customize your own currency exchange using the [currency exchange master file](https://docs.travelgatex.com/distribution/file-loads/masters/currencies/) to indicate your own base currencye and the exchanges you prefer.
+
+{{% alert theme="info" %}}The number of currencies offered by the European Central Bank (ECB) is [limited](https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html), so in case you need a currency that is not supported by ECB, we can set up an additional exchange supplier offering more than 150 currencies. This option could be also used meanwhile you use ECB exchange for your main currencies. As this is a customized option, we are at your disposal through our ticketing service in order to assist you with your currencies customization in Distribution.{{% /alert %}}
 
 {{% alert theme="info" %}}Is possible to check the exact currency exchange that Distribution is using in that moment in the [Searches panel](https://docs.travelgatex.com/distribution/extranet/tools/searches/) at the extranet.{{% /alert %}}
 
