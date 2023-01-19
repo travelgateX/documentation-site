@@ -8,38 +8,132 @@ alwaysopen = false
 isDirectory = false
 +++
 
-## Global Details
+# Global Details
 
-In this section you can find the three methods you need to implement to receive from Channel-X and all its specifications:
+In this section, you will find some details to take into account to develop ChannelX succesfull and the specification of the methods to be developed.
 
-* [HotelRatePlanInventoryNotif](#hotelrateplaninventorynotif)
-* [HotelRatePlanNotif](#hotelrateplannotif)
-* [HotelAvailNotif](#hotelavailnotif)
+* [Protocol and headers](#protocol-and-Headers)
+* [Timeout and responses](#timeout-and-responses)
+* [Error Handling](#error-handling)
+* [Requests](#requests)
 
 
-</br>
+## Protocol and headers
 
-### Protocol and Headers
+All requests are expected to be standard HTTP POST requests in which the POST body is the request XML on a SOAP envelope like the [following](#soap-envelope-example) and the Content-Type header is set to ``"text/xml;charset=UTF-8"``.
 
-All requests are expected to be standard HTTP POST requests in which the POST body is the request XML and the Content-Type header is set to ``"application/xml"``.
+
+### SOAPAction header
+
+All requests come with a **SOAPAction** header corresponding to the transmitted message. The possible Soap actions are:
+
+ * http://schemas.xmltravelgate.com/hubpush/provider/2012/10/IProviderGen/HotelAvailNotif 
+ * http://schemas.xmltravelgate.com/hubpush/provider/2012/10/IProviderGen/HotelRatePlanNotif
+ * http://schemas.xmltravelgate.com/hubpush/provider/2012/10/IProviderGen/HotelRatePlanInventoryNotif 
+
+
+### Soap Envelope example
+
+```xml
+<s:Envelope xmlns:s = "http://schemas.xmlsoap.org/soap/envelope/" xmlns:u = "http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+    <s:Header>
+    <o:Security s:mustUnderstand = "1" xmlns:o = "http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+        <o:UsernameToken u:Id = "uuid-d740d5c0-ebc5-45c7-bd74-62b20c963d85-7">
+            <o:Username> username  </o:Username>
+            <o:Password Type = "http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText"> password </o:Password>
+        </o:UsernameToken>
+    </o:Security>
+    </s:Header>
+    <s:Body xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd = "http://www.w3.org/2001/XMLSchema">
+        The content request
+    </s:Body>
+</s:Envelope>
+```
 
 ### Authentication
 
-Requests will be sent with a authentication encoded in *Base-64*. Credentials may be found in **Authorization** header tag, with value **Basic (encoded credentials)** as follows:
+Requests come with an authentication encoded in *Base-64*. Credentials may be found in **Authorization** header tag, with value **Basic (encoded credentials)** as follows:
 
 `Authorization: Basic aHR0cHM6Ly93d3cueW91dHViZS5jb20vd2F0Y2g/dj1RWWg2bVlJSkcyWQ==`
 
-### Summary 
+The user and password to be set and the endpoint that receive the requests has to be informed us in order to configure your ChannelX.  
+
+
+## Timeout and responses
+
+ChannelX waits for **5000ms** a HTTP 200 OK and a non-null response with a *Success* element in the response, or if you have a controlled error you can send us an error response.
+
+
+### Response messages
+
+Each request should provide a response for the same type of element that has been sent. For example, if a *HotelRatePlanNotif* request is received, a *HotelRatePlanNotif* response should be sent and so on. [Here](#requests) you have the specification of the posible requests.
+
+| **Possible combination Elements regarding Request** |
+| :---------------------------- |
+| HotelAvailNotifResponse / HotelAvailNotifResult  |
+| HotelRatePlanNotifResponse / HotelRatePlanNotifResult  |
+| HotelRatePlanInventoryNotifResponse / HotelRatePlanInventoryNotifResult  |
+
+<br/>
+
+**Success**
+
+For all successful requests is expected to be returned a *Success* element in the response. On a *HotelAvailNotif* request it should be looking like the following:
+
+```xml
+<HotelAvailNotifResponse xmlns = "http://schemas.xmltravelgate.com/hubpush/provider/2012/10">
+    <HotelAvailNotifResult>
+        <Success xmlns = "http://www.opentravel.org/OTA/2003/05"/>
+    </HotelAvailNotifResult>
+</HotelAvailNotifResponse>
+```
+
+<br/>
+
+**Error**
+
+On the other hand, when request provides any error, the response should look like:
+
+```xml
+<HotelAvailNotifResponse xmlns = "http://schemas.xmltravelgate.com/hubpush/provider/2012/10">
+    <HotelAvailNotifResult>
+        <Errors xmlns = "http://www.opentravel.org/OTA/2003/05">
+            <Error ShortText = "AvailStatusMessages not found" Code = "2"/>
+        </Errors>
+    </HotelAvailNotifResult>
+</HotelAvailNotifResponse>
+```
+
+| **Element**	                  | **Rel** | **Type** | **Description**					                                             |
+| :---------------------------- | :-----: | :------: | --------------------------------------------------------------------- |
+| Errors | 1 | | |
+| Error | 1..n | | Displays error information that has occurred in the system |
+| @ShortText | 1 | String | Brief description of the error |
+| @Code | 1 | Integer | Check *General Details > Error Table* |
+
+
+## Error Handling
+
+First of all, If your system does not respond to us on time or you return an error response, in order to follow the message sequence sent by the suppliers and get closer to real-time, we do not retry the messages again.
+
+On the other hand, based on this real-time principle, we recommend that your system process our requests with 100ms on average.
+
+
+## Requests
+
+In this section you have the specification of the requests.
+
+
+### Acronyms
+
+On the the following espcification you can find the following acronyms:
 
 BR = Only used for: 'Basic Rates'\
 DV = Only used for: 'Derived Rates'\
 N = Names allowed for a specific element
 
 
-</br>
-
-
-## HotelRatePlanInventoryNotif
+### HotelRatePlanInventoryNotif
 
 The ``HotelRatePlanInventoryNotif`` message contains information about the inventory setup information that should be followed by the structure: Hotel > Rate > Room.
 
@@ -138,6 +232,7 @@ The ``HotelRatePlanInventoryNotif`` message contains information about the inven
     </request>
 </HotelRatePlanInventoryNotif>
 ```
+<br/>
 
 **Example for Derived RatePlan**
 ```xml
@@ -157,6 +252,8 @@ The ``HotelRatePlanInventoryNotif`` message contains information about the inven
     </RatePlans>
 </HotelRatePlanInventoryNotif>
 ```
+
+<br/>
 
 **Example for Offers**
 ```xml
@@ -314,10 +411,7 @@ The ``HotelRatePlanInventoryNotif`` message contains information about the inven
 | @value      			            | 1  		  | String	  | *N*: New, Remove. To create a hotel or remove all the hotel setup.   |
 
 
-</br>
-
-
-## HotelRatePlanNotif 
+### HotelRatePlanNotif 
 
 The ``HotelRatePlanNotif`` message contains information about rate prices.
 
@@ -370,6 +464,8 @@ The ``HotelRatePlanNotif`` message contains information about rate prices.
     </request>
 </HotelRatePlanNotif>
 ```
+
+<br/>
 
 **Example for Derived RatePlan**
 ```xml
@@ -446,11 +542,7 @@ The ``HotelRatePlanNotif`` message contains information about rate prices.
 
 
 
-</br>
-
-
-
-## HotelAvailNotif
+### HotelAvailNotif
 
 The ``HotelAvailNotif`` message contains information about rate availability and allotment conditions.
 
@@ -511,55 +603,5 @@ The ``HotelAvailNotif`` message contains information about rate availability and
 | @MaxAdvancedBookingOffset		  | 0..1	  | Integer	| Maximum number of days before the check-in date to be available to be booked. This restriction is usually used to offer last minute discounts on unsold inventory. When value is *-1*, condition should be deleted from the system.               |
 | @SellThroughOpenIndicator		  | 0..1	  | Boolean	| *BR*. Room-RatePlan can be sold with no limit if @Status is Open  |
 
-
-</br>
-
-
-## Response messages
-
-Each request should provide a response for the same type of element that has been sent. For example, if a *HotelRatePlanNotif* request is received, a *HotelRatePlanNotif* response should be sent and so on.
-
-| **Possible combination Elements regarding Request** |
-| :---------------------------- |
-| HotelAvailNotifResponse / HotelAvailNotifResult  |
-| HotelRatePlanNotifResponse / HotelRatePlanNotifResult  |
-| HotelRatePlanInventoryNotifResponse / HotelRatePlanInventoryNotifResult  |
-
-</br>
-
-### Success
-
-For all successful requests is expected to be returned a *Success* element in the response. On a *HotelAvailNotif* request it should be looking like the following:
-
-```xml
-<HotelAvailNotifResponse xmlns = "http://schemas.xmltravelgate.com/hubpush/provider/2012/10">
-    <HotelAvailNotifResult>
-        <Success xmlns = "http://www.opentravel.org/OTA/2003/05"/>
-    </HotelAvailNotifResult>
-</HotelAvailNotifResponse>
-```
-
-</br>
-
-### Error
-
-On the other hand, when request provides any error, the response should look like:
-
-```xml
-<HotelAvailNotifResponse xmlns = "http://schemas.xmltravelgate.com/hubpush/provider/2012/10">
-    <HotelAvailNotifResult>
-        <Errors xmlns = "http://www.opentravel.org/OTA/2003/05">
-            <Error ShortText = "AvailStatusMessages not found" Code = "2"/>
-        </Errors>
-    </HotelAvailNotifResult>
-</HotelAvailNotifResponse>
-```
-
-| **Element**	                  | **Rel** | **Type** | **Description**					                                             |
-| :---------------------------- | :-----: | :------: | --------------------------------------------------------------------- |
-| Errors | 1 | | |
-| Error | 1..n | | Displays error information that has occurred in the system |
-| @ShortText | 1 | String | Brief description of the error |
-| @Code | 1 | Integer | Check *General Details > Error Table* |
 {{%custom-children%}}
 
