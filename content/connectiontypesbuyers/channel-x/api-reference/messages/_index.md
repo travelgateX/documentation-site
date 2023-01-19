@@ -121,12 +121,12 @@ On the other hand, based on this real-time principle, we recommend that your sys
 
 ## Requests
 
-In this section you have the specification of the requests.
+In this section, you have the specification of the requests.
 
 
 ### Acronyms
 
-On the the following espcification you can find the following acronyms:
+On the the following specification you can find the following acronyms:
 
 BR = Only used for: 'Basic Rates'\
 DV = Only used for: 'Derived Rates'\
