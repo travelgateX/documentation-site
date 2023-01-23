@@ -66,7 +66,7 @@ ChannelX waits for **5000ms** a HTTP 200 OK and a non-null response with a *Succ
 
 ### Response messages
 
-Each request should provide a response for the same type of element that has been sent. For example, if a *HotelRatePlanNotif* request is received, a *HotelRatePlanNotif* response should be sent and so on. [Here](#requests) you have the specification of the posible requests.
+Each request should provide a response for the same type of element that has been sent. For example, if a *HotelRatePlanNotif* request is received, a *HotelRatePlanNotif* response should be sent and so on. [Here](#requests) you have the specification of the possible requests.
 
 | **Possible combination Elements regarding Request** |
 | :---------------------------- |
@@ -121,7 +121,7 @@ On the other hand, based on this real-time principle, we recommend that your sys
 
 ## Requests
 
-In this section, you have the specification of the requests.
+The requests from ChannelX have a **5MB maximum size**, without include the headers and the Soap envelope. In this section, you have the specification of these requests.
 
 
 ### Acronyms
