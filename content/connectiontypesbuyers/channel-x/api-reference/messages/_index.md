@@ -10,7 +10,7 @@ isDirectory = false
 
 # Global Details
 
-In this section, you will find some details to take into account to develop ChannelX succesfull and the specification of the methods to be developed.
+In this section, you will find some details to take into account to develop ChannelX successfully and the specification of the methods to be developed.
 
 * [Protocol and headers](#protocol-and-Headers)
 * [Timeout and responses](#timeout-and-responses)
@@ -20,19 +20,19 @@ In this section, you will find some details to take into account to develop Chan
 
 ## Protocol and headers
 
-All requests are expected to be standard HTTP POST requests in which the POST body is the request XML on a SOAP envelope like the [following](#soap-envelope-example) and the Content-Type header is set to ``"text/xml;charset=UTF-8"``.
+All requests are expected to be standard HTTP POST requests in which the POST body is the request XML in a SOAP envelope like the [following](#soap-envelope-example) and the **Content-Type** header is set to ``"text/xml;charset=UTF-8"``.
 
 
 ### SOAPAction header
 
-All requests come with a **SOAPAction** header corresponding to the transmitted message. The possible Soap actions are:
+All requests come with a **SOAPAction** header corresponding to the transmitted message. The possible SOAP actions are:
 
  * http://schemas.xmltravelgate.com/hubpush/provider/2012/10/IProviderGen/HotelAvailNotif 
  * http://schemas.xmltravelgate.com/hubpush/provider/2012/10/IProviderGen/HotelRatePlanNotif
  * http://schemas.xmltravelgate.com/hubpush/provider/2012/10/IProviderGen/HotelRatePlanInventoryNotif 
 
 
-### Soap Envelope example
+### SOAP Envelope example
 
 ```xml
 <s:Envelope xmlns:s = "http://schemas.xmlsoap.org/soap/envelope/" xmlns:u = "http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
@@ -52,16 +52,16 @@ All requests come with a **SOAPAction** header corresponding to the transmitted 
 
 ### Authentication
 
-Requests come with an authentication encoded in *Base-64*. Credentials may be found in **Authorization** header tag, with value **Basic (encoded credentials)** as follows:
+Requests come with a *Base-64* encoded authentication. Credentials may be found in **Authorization** header tag, with value **Basic (encoded credentials)** as follows:
 
 `Authorization: Basic aHR0cHM6Ly93d3cueW91dHViZS5jb20vd2F0Y2g/dj1RWWg2bVlJSkcyWQ==`
 
-The user and password to be set and the endpoint that receive the requests has to be informed us in order to configure your ChannelX.  
+The user and password to be set and the endpoint that receives the requests have to be informed to us in order to configure your ChannelX.  
 
 
 ## Timeout and responses
 
-ChannelX waits for **5000ms** a HTTP 200 OK and a non-null response with a *Success* element in the response, or if you have a controlled error you can send us an error response.
+ChannelX waits for **5000ms** an HTTP 200 OK and a non-null response with a *Success* element in the response, or if you have a controlled error you can send us an error response.
 
 
 ### Response messages
@@ -78,7 +78,7 @@ Each request should provide a response for the same type of element that has bee
 
 **Success**
 
-For all successful requests is expected to be returned a *Success* element in the response. On a *HotelAvailNotif* request it should be looking like the following:
+For all successful requests, a *Success* element is expected to be returned in the response. For a *HotelAvailNotif* request it should be like the following:
 
 ```xml
 <HotelAvailNotifResponse xmlns = "http://schemas.xmltravelgate.com/hubpush/provider/2012/10">
@@ -92,7 +92,7 @@ For all successful requests is expected to be returned a *Success* element in th
 
 **Error**
 
-On the other hand, when request provides any error, the response should look like:
+On the other hand, when request provides any error, the response should be like:
 
 ```xml
 <HotelAvailNotifResponse xmlns = "http://schemas.xmltravelgate.com/hubpush/provider/2012/10">
@@ -109,19 +109,19 @@ On the other hand, when request provides any error, the response should look lik
 | Errors | 1 | | |
 | Error | 1..n | | Displays error information that has occurred in the system |
 | @ShortText | 1 | String | Brief description of the error |
-| @Code | 1 | Integer | Check *General Details > Error Table* |
+| @Code | 1 | Integer | Check [General Details > Error Table](https://docs.travelgatex.com/connectiontypesbuyers/channel-x/api-reference/codelists/) |
 
 
 ## Error Handling
 
-First of all, If your system does not respond to us on time or you return an error response, in order to follow the message sequence sent by the suppliers and get closer to real-time, we do not retry the messages again.
+First of all, if your system does not respond to us on time or it returns an error response, in order to get closer to real-time, we do not retry the messages again.
 
-On the other hand, based on this real-time principle, we recommend that your system process our requests with 100ms on average.
+Based on this real-time principle, we recommend that your system processes our requests within 100ms on average.
 
 
 ## Requests
 
-The requests from ChannelX have a **5MB maximum size**, without include the headers and the Soap envelope. In this section, you have the specification of these requests.
+The requests from ChannelX have a **5MB maximum size**, without including the headers and the SOAP envelope. In this section, you have the specification of these requests.
 
 
 ### Acronyms
@@ -311,7 +311,7 @@ The ``HotelRatePlanInventoryNotif`` message contains information about the inven
 | @PromotionCode        				    | 0..1	 | String     | Promotion code to apply. 0 - NoPromotion, 25 - Senior55  26 - Senior60, 27 - Senior65. If the attribute is not present or its value is 0 there is no promotion|
 | RatePlan/BookingRules            	    | 0..1    |	         |                                                                       |
 | ../BookingRule		                | 1..n    |	         | 					                                                             |
-| @Code       				          | 0..1	  | String   | Empty if there are viewships conditions                               |
+| @Code       				          | 0..1	  | String   | Empty if there are viewerships conditions                               |
 | ../CancelPenalties               | 1       | 	       |                                               	                       |
 | ../CancelPenalty                 | 1..n    |	         |              					                                               |
 | @NonRefundable			          | 1 	    | Boolean  |                                                 	                     |
@@ -323,7 +323,7 @@ The ``HotelRatePlanInventoryNotif`` message contains information about the inven
 | @NmbrOfNights				          | 0..1	  | Integer  | Number of nights that will be charged                                 |
 | @Percent    				          | 0..1	  | Decimal  | Percent of the total amount that will be charged in case of cancellation applying the current cancel penalty |
 | @Amount     				          | 0..1	  | Decimal   | Amount that will be charged                                          |
-| @CurrencyCode				          | 0..1	  | String    | Must be present if amount tag is present                             |
+| @CurrencyCode				          | 0..1	  | String    | Must be present if the amount tag is present                             |
 | ../Viewerships		                | 0..1    |	          |                                          		                         |
 | ../Viewership	                  | 1..n	  |	          |							                                                         |
 | ../LocationCodes                 | 1       |	          |                                       		                           |
