@@ -25,7 +25,7 @@ In the following panel you will be able to load different stop sales for your of
 * **Close On Departure:** Stop sales on departure date: in the date range specified before is not possible to do a check-out with the offer. If you check "On" you will apply the close on departure condition, if you check "Off" you will delete a close on departure condition if it was previously load and if you check *unspecified* you won't apply any change (on/off) in the close on departure condition.
 * **Close Master:** Stop sales: in the date range specified before is not possible to stay with the offer, so the client will not receive availability with free night offers for any stay that include those days.  If you check "On" you will apply the close master condition, if you check "Off" you will delete a close master condition if it was previously load and if you check *unspecified* you won't apply any change (on/off) in the close master condition.
 
-{{% alert theme="warning" %}} Please, remember that the offer availability days and min/max length of stay it can be updated in the [SetUp section](./../setup).{{% /alert %}}
+{{% alert theme="warning" %}} Please, remember that the offer availability days and min/max length of stay it can be updated in the [SetUp section](./../../load-product/setup).{{% /alert %}}
 
 
 {{%custom-children%}}
