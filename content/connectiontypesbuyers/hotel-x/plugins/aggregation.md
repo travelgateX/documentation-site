@@ -32,6 +32,7 @@ It's based on [SQL Aggregate Functions](https://www.postgresql.org/docs/current/
   * surcharges
   * ratePlan
   * status
+  * eqRates
 
 ### How to use it
 
@@ -71,3 +72,39 @@ The aggregation mode only supports by now one mode: "cheapest_price". You will n
 ### File format
 
 No files are needed in order to use this plugin.
+
+### PrimaryKey "eqRates" option
+
+```json
+{
+    "plugins": {
+        "step": "RESPONSE",
+        "pluginsType": [
+            {
+                "type": "AGGREGATION",
+                "name": "cheapest_price",
+                "parameters": [
+                    {
+                        "key": "primaryKey",
+                        "value": "hotel,supplier,room,eqRates"
+                    }
+                ]
+            }
+        ]
+    }
+}
+```
+
+This will combine the rateRules and ratePlans of an option and group all of the options, based on the file uploaded CTX_rateplanraterule.csv via ftp:
+
+```csv
+Code Source,Code Tgx,Code Destination
+Null,NON_REFUNDABLE,NRF
+NOREEMBOLSABLE,Null,NRF
+PUBLICA,Null,Null - Standard
+Null,NON_REFUNDABLE;PACKAGE,NRF/Package
+Null,PACKAGE,Packageb
+OPACANRF,Null,NRF/Package
+```
+
+With this csv uploaded, for example all the options with ratePlan code "NOREEMBOLSABLE" and without any rateRules, will compte with each other. Also, all the options without ratePlan code or without ratePlan mapped and rateRules "NON_REFUNDABLE" will compete each other.
