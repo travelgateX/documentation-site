@@ -212,6 +212,12 @@ Providers send a HotelRatePlanInventoryNotifRQ message to push the Hotel SetUp i
                         </DetailDescription>
                     </AdditionalDetail>
                 </AdditionalDetails>
+                <Fees>
+                    <AmendFees>
+                        <AmendFee Amount = "4" CurrencyCode = "EUR" ChargeUnit = "20"/>
+                        <AmendFee Percent = "5" CurrencyCode = "EUR" ChargeUnit = "15"/>
+                    </AmendFees>
+                </Fees>
                 <Description>
                     <Text>bb</Text>
                 </Description>
@@ -403,6 +409,12 @@ Providers send a HotelRatePlanInventoryNotifRQ message to push the Hotel SetUp i
 | @Type | 1 | String | Define the information. Only allowed "39" (Contract/negotiated booking information)|
 | RatePlans/RatePlan/AdditionalDetails/AdditionalDetail/DetailDescription | 1 |  | Details Description |
 | RatePlans/RatePlan/AdditionalDetails/AdditionalDetail/DetailDescription/Text | 1 | String | Description. If additional details type is "39", the name of the trading partner for this rate.  |
+| RatePlans/RatePlan/Fees | 0..1 |  | Rate plan Fees |
+| RatePlans/RatePlan/Fees/AmendFees | 0..n |  | List of Amend Fees. Only present when IsModifiable equals true and the modifications apply fees. |
+| RatePlans/RatePlan/Fees/AmendFees/AmendFee | 1..n |  | Amend Fee |
+| @Amount | 0..1 | Decimal  | Amount that will be charged in case of modifications applying the current fee|
+| @Percent | 0..1 | Decimal | Percent that will be charged in case of modifications applying the current fee|
+| @ChargeUnit | 1 | Integer | Indicates the days before check-in to apply the Amend Fees|
 | TPA_Extensions			   	| 0..1    	|		| Optional, only added when create or delete an hotel. |
 | TPA_Extensions/Attribute            		| 1       	|		|							|
 | @key        			| 1  		| String	| HotelNotifType.						|

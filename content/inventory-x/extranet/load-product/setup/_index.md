@@ -98,7 +98,7 @@ Now that you have added the hotel it is time to add the rates and then the rooms
 
 In order to add a new rate, click in the ``Add Rate`` button in the hotel row:
 
-![Inventory SetUp Add Rate](./../../../images/web/inventory_setup_addrate.png "Inventory SetUp Add Rate")
+![Inventory SetUp Add Rate](./../../../images/web/inventory_setup_addratetotal.png "Inventory SetUp Add Rate")
 
 </br>
 
@@ -138,6 +138,9 @@ added once the checkbox of "Taxes" is checked:
 * **Cancellation policy – Base:** Cancellation policies that can be applied to the rate. The rate will be non refundable if the checkbox ``No refund`` is checked. It is possible to apply a different type of cancellation policy by clicking the `+` button. You can add as many policies as you need, all you need to do is indicate the days in advance before the arrival date, the type and the value of the policy. See [How to configurate different cancel policies](./../../faq/cancel-policies) section for some examples.
 * **Cancellation policy - Calendar:** This option will only appear once you have created your rate previously with base cancel policies. The cancellation policy by calendar allows you to create specific cancel policies by day or date range. You can click the `Add range` button to specify a date range and the cancel policies. This new cancel policies by day will override the base cancel policies specified at rate level. If you want to remove a cancel policy by date you can click the `Delete range` button and specify your dates. You can also delete or check the cancel policies by day clicking in the day's number of the month.
 * **Specific Clients:** If you want to inform that this rate is only for a list of specific clients check this option and add both Code (code that represent your client) and Description (normally the name of the client). You can add maximum 15 clients. The client codes have to be unique on the same rate.  
+* **Amendments policy:** Informs if a Rate is modifiable and their fees if any is applied. When the checkbox `Amendments allowed` is checked, the rate allows modifications. If the modifications implies fees, they can be added through the `+` button to setup the rate amend fees. All you need to do is to indicate the days in advance before the arrival date, type (between amount and percent) and amount. If no fee is required, then you don't need to specify it. 
+
+{{% alert theme="info" %}} As a reminder, the total amount of a **modification** is the addition of amend fee, applicable cancellation changes and rate variance. This criteria will build the new amount to be quoted in any Amend request. Total amended price = cancellation policy fee i(if applicable) + amend fee + new price  {{% /alert %}}
 
 
 When a rate is added, it appears in the hotel node when you click the arrow that appears on the left side of the hotel name.
@@ -180,7 +183,7 @@ In Inventory you can create your own discounts or supplements using what we call
 
 To add a derived rate, first it is necessary to click the ``Add Derived Rate`` button for the same rate for which you want to create a derived rate and a pop-up window will appear for you to fill in the derived rate information.
 
-![Inventory-X SetUp Derived Rate](./../../../images/web/inventory_setup_derivedrate.JPG "Inventory-X SetUp Derived Rate")
+![Inventory-X SetUp Derived Rate](./../../../images/web/inventory_setup_derivedrateamend.png "Inventory-X SetUp Derived Rate")
 
 </br>
 
@@ -202,6 +205,8 @@ room in order to be able to save the derived rate. Bear in mind that if the deri
 * **Apply Payments from Base Rate:** Checkbox that indicates if the *“Payment Type”* and *“Card Type"* are the same as the base rate. If so, it has to be selected. If not, you need to select this information from drop down menus, so that the derived rate can have its own payment types.
 * **Inform Base Rate:** Checkbox that indicates that the retrieve functions would return the name of the Base Rate instead of the derived rate’s name, if checked.
 * **Apply MealPlan Supplement from Base Rate:** Checkbox that allows the derived rate to have its own MealPlan Supplements. If checked, the derived rate would get the MealPlans of the base rate if any.
+* **Apply Specific Clients from Base Rate:** Checkbox that allows the derived rate to have its own Specific Clients. If checked, the derived rate would get them of the base rate if any.
+* **Apply Amend Fees from Base Rate:** Checkbox that allows the derived rate to be modifiable and to have its own Amends Fees. If checked, the derived rate will inherit from the base rate, if any.
 
 
 {{% alert theme="info" %}} See [How to create discounts and supplements](./../../faq/discount-supplement) section for a complete example. {{% /alert %}}
