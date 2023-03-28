@@ -179,7 +179,7 @@ Go to [Common-Elements](/connectiontypessellers/hotelpullsellers/methods/common-
 | Hotel /CancelPenalties /CancelPenalty/HoursBefore | 1	|	String	| Number of hours prior to arrival day in which this Cancellation policy applies. |
 | Hotel /CancelPenalties /CancelPenalty/Deadline    | 1          | String   | Date on UTC Standard TimeZone in which this Cancellation policy applies (ISO 8601 e.g: 2016-07-01T05:00:00Z)  |
 | Hotel /CancelPenalties /CancelPenalty/CalculatedDeadline | 1          | Boolean  |  Indicate if the Deadline is returned by the supplier or it's been calculated by TravelGate -> *true* = has been calculated by XTG / *false* = bypass of supplier data without calculation |
-| Hotel /CancelPenalties /CancelPenalty/Penalty |   1 	|         	| Contains the value to apply.			|
+| Hotel /CancelPenalties /CancelPenalty/Penalty |   1 	|         	| Contains the value to be applied in net price.			|
 | @type 				| 1    		| String	| Type of penalty Possible values: "Noches" (nights) , "Porcentaje" (percentage) ,"Importe" (price value). |
 | @paymentType				| 1    		| String	| Indicates payment type.		|
 | @currency				| 1    		| String	| Currency code.				|

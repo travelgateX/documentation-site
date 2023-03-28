@@ -182,7 +182,7 @@ Go to [Common-Elements](/connectiontypessellers/hotelpullsellers/methods/common-
 | CancelPenalties /CancelPenalty/HoursBefore | 1          | String   | Number of hours prior to checkin date in which this Cancellation policy applies |
 | CancelPenalties /CancelPenalty/Deadline   | 1          | String   | Date on UTC Standard TimeZone in which this Cancellation policy applies (ISO 8601 e.g: 2016-07-01T05:00:00Z) |
 | CancelPenalties /CancelPenalty/CalculatedDeadline | 1          | Boolean  |  Indicate if the Deadline is returned by the supplier or it's been calculated by TravelGate -> *true* = has been calculated by XTG / *false* = bypass of supplier data without calculation |
-| CancelPenalties /CancelPenalty/Penalty     | 1          |          | Contains the value to apply. |
+| CancelPenalties /CancelPenalty/Penalty     | 1          |          | Contains the value to be applied in net price. |
 | @type					    | 1          | String   | Type of possible penalty values: "Noches" (nights) , "Porcentaje" (percentage) , "Importe" (price value). |
 | @currency				    | 1          | String   | Currency code. |
 | @paymentType                            | 1          | String   | Indicates payment type of penalty (See full type list at [Lists of Data](/connectiontypessellers/hotelpullsellers/listsdata/#Payment-Types)) . |
@@ -242,7 +242,7 @@ There are three values that can be inside types:
 
 > -   *Porcentaje:* Indicates the percentage to pay based on the option price.
 
-> -   *Importe:* Indicates the exact amount  payable.
+> -   *Importe:* Indicates the exact amount payable in net price.
 
 -   **Currency:** currency of the penalty fee.
 

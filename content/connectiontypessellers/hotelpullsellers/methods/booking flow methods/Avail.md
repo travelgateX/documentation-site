@@ -351,7 +351,7 @@ Go to [Common-Elements](/connectiontypessellers/hotelpullsellers/methods/common-
 | MealPlans/ MealPlan/ Options/ Option/ CancelPenalties/ CancelPenalty/ HoursBefore | 1 | String | Number of hours prior to checkin date in which this Cancellation policy applies. |
 | MealPlans/ MealPlan/ Options/ Option/ CancelPenalties/ CancelPenalty/ Deadline | 1 | String | Date on UTC Standard TimeZone in which this Cancellation policy applies (ISO 8601 e.g: 2016-07-01T05:00:00Z). |
 | MealPlans/ MealPlan/ Options/ Option/ CancelPenalties/ CancelPenalty/ CalculatedDeadline | 1 | Boolean | Indicate if the Deadline is returned by the supplier or it's been calculated by TravelGate -> *true* = has been calculated by XTG / *false* = bypass of supplier data without calculation. |
-| MealPlans/ MealPlan/ Options/ Option/ CancelPenalties/ CancelPenalty/ Penalty | 1 |  | Contains the value to apply.                                               |
+| MealPlans/ MealPlan/ Options/ Option/ CancelPenalties/ CancelPenalty/ Penalty | 1 |  | Contains the value to be applied in net price.                                               |
 | @type					                | 1           | String      | Type of possible penalty values: "Noches" (nights) , "Porcentaje" (percentage) , "Importe" (price value). |
 | @currency				                | 1           | String      | Currency code.                                                                                |
 | @paymentType                          | 1           | String      | Indicates payment type of penalty (See full type list at [Lists of Data](/connectiontypessellers/hotelpullsellers/listsdata/#Payment-Types)). |
