@@ -47,6 +47,28 @@ Here are a few things you can do that will increase the likelihood of your pull 
 
 - View your changes locally at `http://localhost:1313/`
 
+## Node Instalation
+
+- Install Node js: https://nodejs.org/es/download/
+
+- Install windows package manager chocolatey: https://chocolatey.org/
+
+- Install [Hugo](https://gohugo.io/) version 0.54
+
+`choco install hugo --version 0.54`
+ 
+- Clone the repo:
+
+`git clone git@github.com:travelgateX/documentation-site.git`
+
+- Go into the repository folder
+
+`cd documentation-site`
+
+- Run node 
+
+`npm run up`
+
 ## Deployment
 
 The website is hosted in [Github Pages](https://pages.github.com/).
