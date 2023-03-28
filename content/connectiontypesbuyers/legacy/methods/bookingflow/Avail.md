@@ -338,7 +338,7 @@ is closed.
 | @value 				                | 1 		    | String 	    | Contains  parameter value.				                                                    |
 | MealPlans/ MealPlan/ Options/ Option/ CancelPenalties/ CancelPenalty | 0..1 |  | List of cancellation penalties. (see [MetaData](/connectiontypesbuyers/legacy/methods/staticcontent/metadata/) in order to verify if a supplier implements it). |
 | MealPlans/ MealPlan/ Options/ Option/ CancelPenalties/ CancelPenalty/ HoursBefore| 1 | String | Number of hours prior to arrival day in which this Cancellation policy applies. | 
-| MealPlans/ MealPlan/ Options/ Option/ CancelPenalties/ CancelPenalty | 1..n |  | Contains the value to apply.				                                            |
+| MealPlans/ MealPlan/ Options/ Option/ CancelPenalties/ CancelPenalty | 1..n |  | Contains the value to be applied in net price.				                                            |
 | @type 				                | 1 		    | String 	    | Type of penalty -possible values: "Noches" (nights), "Porcentaje" (percentage), "Importe" (price value). |
 | @currency 				            | 1 		    | String 	    | Currency code.						                                                        |
 | MealPlans/ MealPlan/ Options/ Option/ CancelPenalties/ CancelPenalty/ CalculatedDeadline | 0..1 | Boolean | Indicate if the Deadline is returned by the supplier or it's been calculated by TravelGate -> *true* = has been calculated by XTG, *false* = bypass of supplier data without calculation. |
