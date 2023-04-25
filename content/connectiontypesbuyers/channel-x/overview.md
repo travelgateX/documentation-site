@@ -8,7 +8,7 @@ alwaysopen = false
 +++
 Channel-X extracts the product loaded by Channel Managers into our *Inventory* system and sends it to a third partner, normally an *OTA*. As a Buyer, you will have the option of loading all the product into your system by selecting the *Full Copy* tab in *Inventory*'s extranet, having the possibility to only select the hotels you are interested in copying. Also, each update the Channel Manager does, will be notified in a smaller product request, as you will only receive information that has changed. This is due to the ability of Channel-X to detect what information has changed and which is duplicated.
 
-The connection with Channel Managers through TravelgateX has a previous step where the Buyer, using the [Inventory](https://docs.travelgatex.com/inventory-x/) extranet, configures the SetUp of the hotels, rates and rooms contracted with the hoteliers so the Channel Manager can map all this information and load availability and prices for you.
+The connection with Channel Managers through TravelgateX has a previous step where the Buyer, using the [Inventory](https://docs.travelgatex.com/inventory/) extranet, configures the SetUp of the hotels, rates and rooms contracted with the hoteliers so the Channel Manager can map all this information and load availability and prices for you.
 
 {{< figure src="/images/channelx_diagram.png#center" attr="" >}}
 
