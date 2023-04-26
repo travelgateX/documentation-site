@@ -37,7 +37,7 @@ For example, if the standard occupancy is 2. And the following is loaded...
 </AdditionalGuestAmounts>
 ~~~ 
 
-... The price for one pax will be 50, this is 100/2.  The price of two paxes will be 100 but the price for three paxes will be 200 = 100 + (100/2 + 50). There are more details in the section [`HotelRatePlanNotif`](/inventory-x/api-reference/messages/product-load/hotelrateplannotif/)  message.
+... The price for one pax will be 50, this is 100/2.  The price of two paxes will be 100 but the price for three paxes will be 200 = 100 + (100/2 + 50). There are more details in the section [`HotelRatePlanNotif`](/inventory/api-reference/messages/product-load/hotelrateplannotif/)  message.
 
 
 

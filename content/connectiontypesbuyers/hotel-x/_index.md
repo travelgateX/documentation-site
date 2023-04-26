@@ -14,5 +14,7 @@ You can build on your connectivity a robust business logic by using easily a fir
 
 {{% alert theme="info" %}}A **plugin** is a piece of code that is executed inside our application that gives you an extra functionality over the requests/responses such as currency conversion.Plugins are a core package in the [Go Programming language](https://golang.org/). You can learn more about how to use plugins [here](https://golang.org/pkg/plugin/) .{{% /alert %}}
 
+{{% alert theme="info" %}}The API may change without prior notice. New fields without values may appear. Your application should be able to handle them. If you need help, please refer to the documentation or contact us.{{% /alert %}}
+
 Using Hotel-X, you will be able to empower your travel websites and apps, expand your catalogue of hotel booking services and improve hotel search times and accuracy by customizing aggregated responses based on your prefered criteria.
 

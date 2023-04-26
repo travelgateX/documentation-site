@@ -8,7 +8,7 @@ alwaysopen = false
 isDirectory=false
 +++
 
-In the [Setup section](https://docs.travelgatex.com/inventory-x/extranet/load-product/setup/) you are able to add cancel policies when you create your rates. You will be able to add as many policies as you need. All that is necessary is to indicate the days in advance before the arrival date, the type and the value of the policy.
+In the [Setup section](https://docs.travelgatex.com/inventory/extranet/load-product/setup/) you are able to add cancel policies when you create your rates. You will be able to add as many policies as you need. All that is necessary is to indicate the days in advance before the arrival date, the type and the value of the policy.
 
 Let's clarify these options with a few examples:
 
