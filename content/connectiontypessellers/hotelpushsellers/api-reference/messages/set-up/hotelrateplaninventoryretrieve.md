@@ -72,6 +72,7 @@ Providers send a HotelRatePlanInventoryRetrieveRQ message to retrieve a list of 
         <Success xmlns = "http://www.opentravel.org/OTA/2003/05"/>
         <RatePlans HotelCode = "1" HotelName = "Hotel Travelgate" HotelStatusType = "Active" xmlns = "http://www.opentravel.org/OTA/2003/05">
           <RatePlan RatePlanCode = "PACK" RatePlanType = "11" YieldableIndicator = "false" CurrencyCode = "EUR" RatePlanStatusType = "Active" IsModifiable = "true" Start = "2016-01-01" End = "2016-05-01">
+            <Commission Percent="10"/>
             <BookingRules>
               <BookingRule Code = "1 Noche">
                 <CancelPenalties>
@@ -303,8 +304,10 @@ In the previous example we received one hotel, one Rate Plan and 2 rooms. One of
 | @FreeBaby        				    | 1	 | Boolean     | Free babies promotion|
 | @FreeChild        				    | 1	 | Boolean     | Free children promotion |
 | @IsModifiable        				    | 0..1	 | Boolean     | If present and equals true, the rate will allow modifications. To apply fees, check Amend Fees. |
-| RatePlans/RatePlan/Description/Text	    | 1     	 |	    | Description of rate. 				|
-| RatePlans/BookingRules		    | 0..1       |	    | Present if exists booking rules for the given RatePlan.|
+| RatePlan/Description/Text	    | 1     	 |	    | Description of rate. 				|
+| RatePlan/Commission            	    | 0..1    |	         |                                                                       |
+| @Percent           	                | 1       |Decimal	 | Commision percentage applied                                          |
+| RatePlan/BookingRules		    | 0..1       |	    | Present if exists booking rules for the given RatePlan.|
 | BookingRules/BookingRule		    | 1..n       |	    | Booking rules.					|
 | @Code       				    | 0..1	 | String   | Code of the booking rule (empty if are viewships conditions). |
 | BookingRule/CancelPenalties		    | 1          | 	    | Cancel penalties of the current booking rule.	|
@@ -375,6 +378,12 @@ In the previous example we received one hotel, one Rate Plan and 2 rooms. One of
 | @MaxOccupancy				   | 1 		 | Integer  | Max occupation.  					|
 | @AgeQualifyingCode			   | 1 		 | Integer  | (10 - Adult,8 - Child,7 - Infant).		|
 | RatePlans/RatePlan/SellableProduct/GuestRoom/Description/Text | 1 | String | Room description.			|
+| RatePlans/RatePlan/AdditionalDetails | 0..1 |  | Rate plan additional details |
+| RatePlans/RatePlan/AdditionalDetails/AdditionalDetail | 0..n |  | List of additional details |
+| @Code | 1 | String | Trading partner code associated with the detail |
+| @Type | 1 | String | Define the information. Only allowed "39" (Contract/negotiated booking information)|
+| RatePlans/RatePlan/AdditionalDetails/AdditionalDetail/DetailDescription | 1 |  | Details Description |
+| RatePlans/RatePlan/AdditionalDetails/AdditionalDetail/DetailDescription/Text | 1 | String | Description. If additional details type is "39", the name of the trading partner for this rate.  |
 | RatePlans/RatePlan/Fees | 0..1 |  | Rate plan Fees |
 | RatePlans/RatePlan/Fees/AmendFees | 0..n |  | List of Amend Fees. Only present when IsModifiable equals true and the modifications apply fees. |
 | RatePlans/RatePlan/Fees/AmendFees/AmendFee | 1..n |  | Amend Fee |
