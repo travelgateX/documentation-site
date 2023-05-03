@@ -84,6 +84,8 @@ It is an incremental load, so bear in mind these considerations:
 ~~~
 
 
+
+
 # How to add a destination group
   
 ## Considerations
@@ -94,11 +96,11 @@ It is an incremental load, so take in account these considerations:
 
 * If a group does not exist then it is created.
 
-* Existing meal plans that are not referenced are not removed.
+* Existing groups that are not referenced are not removed.
 
-* If an existing meal plan has to be removed from system then you have to contact with TravelgateX.
+* If an existing group has to be removed from system then you have to contact with TravelgateX.
 
-* If there is any problem with a meal plan's information then it is omitted (and logged) but the load continues.
+* If there is any problem with a group's information then it is omitted (and logged) but the load continues.
 
 </br>
 
@@ -106,7 +108,7 @@ It is an incremental load, so take in account these considerations:
   
 * File name: **`Master_DestinationsGroups.csv`**.
 
-* Each line represents a unique destination and contains all the information (fields) about it.
+* Each line represents a unique destination group and contains all the information (fields) about it.
 
 * The first line is not a header line: it contains data directly.
 
