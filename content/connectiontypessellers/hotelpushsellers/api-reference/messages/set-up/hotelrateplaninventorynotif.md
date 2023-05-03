@@ -310,7 +310,7 @@ Providers send a HotelRatePlanInventoryNotifRQ message to push the Hotel SetUp i
 | @FreeBaby        				    | 1	 | Boolean     | Free babies promotion|
 | @FreeChild        				    | 1	 | Boolean     | Free children promotion |
 | RatePlan/Commission            	    | 0..1    |	         |                                                                       |
-| @Percent           	                | 1       |Decimal	 | Commision percentage applied                                          |
+| @Percent           	                | 1       |Decimal	 | Commission percentage applied                                          |
 | RatePlan/BookingRules		    | 0..1       |	    | Present if exists booking rules for the given RatePlan.|
 | BookingRules/BookingRule		    | 1..n       |	    | Booking rules.					|
 | @Code       				    | 0..1	 | String   | Code of the booking rule (empty if are viewships conditions). |

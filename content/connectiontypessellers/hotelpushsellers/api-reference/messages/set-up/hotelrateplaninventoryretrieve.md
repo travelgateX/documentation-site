@@ -306,7 +306,7 @@ In the previous example we received one hotel, one Rate Plan and 2 rooms. One of
 | @IsModifiable        				    | 0..1	 | Boolean     | If present and equals true, the rate will allow modifications. To apply fees, check Amend Fees. |
 | RatePlan/Description/Text	    | 1     	 |	    | Description of rate. 				|
 | RatePlan/Commission            	    | 0..1    |	         |                                                                       |
-| @Percent           	                | 1       |Decimal	 | Commision percentage applied                                          |
+| @Percent           	                | 1       |Decimal	 | Commission percentage applied                                          |
 | RatePlan/BookingRules		    | 0..1       |	    | Present if exists booking rules for the given RatePlan.|
 | BookingRules/BookingRule		    | 1..n       |	    | Booking rules.					|
 | @Code       				    | 0..1	 | String   | Code of the booking rule (empty if are viewships conditions). |

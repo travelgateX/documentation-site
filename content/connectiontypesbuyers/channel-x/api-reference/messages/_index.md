@@ -321,7 +321,7 @@ The ``HotelRatePlanInventoryNotif`` message contains information about the inven
 | @RatePlanType        				  | 0..1	  | String     | Rate rule to apply. 0 - No selected, 7 - Large Family, 8 - Public Servant, 10 - Negotiated, 11 - Package, 34 - Canary Resident, 35 - Balearic Resident, 36 - Honeymoon. If the attribute is not present and it is a base rate, the value is 0, if it is a derived rate, the value is the same as the parent rate.               |
 | @PromotionCode        				    | 0..1	 | String     | Promotion code to apply. 0 - NoPromotion, 25 - Senior55  26 - Senior60, 27 - Senior65. If the attribute is not present or its value is 0 there is no promotion|
 | RatePlan/Commission            	    | 0..1    |	         |                                                                       |
-| @Percent           	                | 1       |Decimal	 | Commision percentage applied                                          |
+| @Percent           	                | 1       |Decimal	 | Commission percentage applied                                          |
 | RatePlan/BookingRules            	    | 0..1    |	         |                                                                       |
 | ../BookingRule		                | 1..n    |	         | 					                                                             |
 | @Code       				          | 0..1	  | String   | Empty if there are viewerships conditions                               |
