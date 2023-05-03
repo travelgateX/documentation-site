@@ -10,7 +10,7 @@ isDirectory=false
 
 # What is the meaning of *office*?
 
-xxxx
+An office is a lower level than an agency. An agency can have several offices.
 
 </br>
 
@@ -22,15 +22,15 @@ xxxx
   
 It is an incremental load, so bear in mind these considerations:
     
-* If an agency exists then it is updated.
+* If an office exists then it is updated.
 
-* If an agency does not exist then it is created.
+* If an office does not exist then it is created.
 
-* Existing agencies that are not referenced are not removed.
+* Existing offices that are not referenced are not removed.
 
-* If an existing agency has to be removed from system then you have to contact with TravelgateX.
+* If an existing office has to be removed from system then you have to contact with TravelgateX.
 
-* If there is any problem with an agency's information then it is omitted (and logged) but the load continues.
+* If there is any problem with an office's information then it is omitted (and logged) but the load continues.
 
 </br>
 
@@ -38,7 +38,7 @@ It is an incremental load, so bear in mind these considerations:
   
 * File name: **`Master_Offices.csv`**.
 
-* Each line represents a unique agency and contains all the information (fields) about it. 
+* Each line represents a unique office and contains all the information (fields) about it. 
 * The first line is not a header line: it contains data directly.
 
 * Inside a line fields are separated using the character `#`. This character can't be used inside data because fields would be gathered in a wrong way.
