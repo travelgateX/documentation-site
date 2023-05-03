@@ -17,11 +17,11 @@ isDirectory=false
   
 It is an incremental load, so bear in mind these considerations:
     
-* If a meal plan exists then it is updated. 
-* If a meal plan does not exist then it is created. 
-* Existing meal plans that are not referenced are not removed. 
-* If an existing meal plan has to be removed from system then you have to contact with TravelgateX. 
-* If there is any problem with a meal plan's information then it is omitted (and logged) but the load continues.
+* If a provider exists then it is updated. 
+* If a provider does not exist then it is created. 
+* Existing providers that are not referenced are not removed. 
+* If an existing provider has to be removed from system then you have to contact with TravelgateX. 
+* If there is any problem with a provider's information then it is omitted (and logged) but the load continues.
 
 </br>
 
