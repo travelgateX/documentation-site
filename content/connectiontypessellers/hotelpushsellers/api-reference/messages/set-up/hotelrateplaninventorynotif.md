@@ -28,33 +28,34 @@ Providers send a HotelRatePlanInventoryNotifRQ message to push the Hotel SetUp i
     <request PrimaryLangID = "ES" Version = "0">
         <RatePlans HotelCode = "1" HotelStatusType = "Active" xmlns = "http://www.opentravel.org/OTA/2003/05">
             <RatePlan Duration = "0" CurrencyCode = "EUR" RatePlanCode = "BAR" RatePlanStatusType = "Active" RatePlanNotifType = "New" RatePlanType = "0">
-		<BookingRules>
-		    <BookingRule>
-			<CancelPenalties>
-			    <CancelPenalty>
-				<Deadline OffsetTimeUnit = "Day" OffsetUnitMultiplier = "20" OffsetDropTime = "BeforeArrival"/>
-				<AmountPercent NmbrOfNights = "3"/>
-			    </CancelPenalty>
-			    <CancelPenalty Start = "2018-03-01" End = "2018-03-06">
-				<Deadline OffsetTimeUnit = "Day" OffsetUnitMultiplier = "10" OffsetDropTime = "BeforeArrival"/>
+                <Commission Percent="10"/>
+                <BookingRules>
+                    <BookingRule>
+                        <CancelPenalties>
+                            <CancelPenalty>
+                                <Deadline OffsetTimeUnit = "Day" OffsetUnitMultiplier = "20" OffsetDropTime = "BeforeArrival"/>
+                                <AmountPercent NmbrOfNights = "3"/>
+                            </CancelPenalty>
+                            <CancelPenalty Start = "2018-03-01" End = "2018-03-06">
+                                <Deadline OffsetTimeUnit = "Day" OffsetUnitMultiplier = "10" OffsetDropTime = "BeforeArrival"/>
                                 <AmountPercent Amount = "10"/>
-			    </CancelPenalty>
-			    <CancelPenalty NonRefundable = "true" Start = "2018-03-13" End = "2018-03-15"/>
-			</CancelPenalties>
-		    </BookingRule>
-		    <BookingRule>
-                	<Viewerships>
-			   <Viewership>
-                    	       <LocationCodes LocationCodesInclusive = "true">
-                      	           <LocationCode CountryCode = "ES"/>
-                               </LocationCodes>
-                           </Viewership>
-                           <Viewership>
-                               <LocationCodes LocationCodesInclusive = "false"/>
-                           </Viewership>
+                            </CancelPenalty>
+                            <CancelPenalty NonRefundable = "true" Start = "2018-03-13" End = "2018-03-15"/>
+                        </CancelPenalties>
+                    </BookingRule>
+                    <BookingRule>
+                        <Viewerships>
+                            <Viewership>
+                                <LocationCodes LocationCodesInclusive = "true">
+                                    <LocationCode CountryCode = "ES"/>
+                                </LocationCodes>
+                            </Viewership>
+                            <Viewership>
+                                <LocationCodes LocationCodesInclusive = "false"/>
+                            </Viewership>
                         </Viewerships>
-                     </BookingRule>
-		</BookingRules>
+                    </BookingRule>
+                </BookingRules>
                 <Rates>
                     <Rate>
                         <AdditionalGuestAmounts>
@@ -63,70 +64,70 @@ Providers send a HotelRatePlanInventoryNotifRQ message to push the Hotel SetUp i
                         </AdditionalGuestAmounts>
                         <PaymentPolicies>
                             <GuaranteePayment PaymentCode = "MerchantPayment"/>
-                            <GuaranteePayment PaymentCode="DirectPayment">
+                            <GuaranteePayment PaymentCode = "DirectPayment">
                                 <AcceptedPayments>
-				    <AcceptedPayment>
-				      <PaymentCard CardCode="VI" />
-				    </AcceptedPayment>
-				    <AcceptedPayment>
-				      <PaymentCard CardCode="AX" />
-				    </AcceptedPayment>
-				    <AcceptedPayment>
-				      <PaymentCard CardCode="CA" />
-				    </AcceptedPayment>
-				    <AcceptedPayment>
-				      <PaymentCard CardCode="DS" />
-				    </AcceptedPayment>
-				    <AcceptedPayment>
-				      <PaymentCard CardCode="L" />
-				    </AcceptedPayment>
-				    <AcceptedPayment>
-				      <PaymentCard CardCode="EU" />
-				    </AcceptedPayment>
+                                    <AcceptedPayment>
+                                        <PaymentCard CardCode = "VI"/>
+                                    </AcceptedPayment>
+                                    <AcceptedPayment>
+                                        <PaymentCard CardCode = "AX"/>
+                                    </AcceptedPayment>
+                                    <AcceptedPayment>
+                                        <PaymentCard CardCode = "CA"/>
+                                    </AcceptedPayment>
+                                    <AcceptedPayment>
+                                        <PaymentCard CardCode = "DS"/>
+                                    </AcceptedPayment>
+                                    <AcceptedPayment>
+                                        <PaymentCard CardCode = "L"/>
+                                    </AcceptedPayment>
+                                    <AcceptedPayment>
+                                        <PaymentCard CardCode = "EU"/>
+                                    </AcceptedPayment>
                                 </AcceptedPayments>
                             </GuaranteePayment>
-                            <GuaranteePayment PaymentCode="BookingDatePayment">
+                            <GuaranteePayment PaymentCode = "BookingDatePayment">
                                 <AcceptedPayments>
-				    <AcceptedPayment>
-				      <PaymentCard CardCode="VI" />
-				    </AcceptedPayment>
-				    <AcceptedPayment>
-				      <PaymentCard CardCode="AX" />
-				    </AcceptedPayment>
-				    <AcceptedPayment>
-				      <PaymentCard CardCode="CA" />
-				    </AcceptedPayment>
-				    <AcceptedPayment>
-				      <PaymentCard CardCode="DS" />
-				    </AcceptedPayment>
-				    <AcceptedPayment>
-				      <PaymentCard CardCode="L" />
-				    </AcceptedPayment>
-				    <AcceptedPayment>
-				      <PaymentCard CardCode="EU" />
-				    </AcceptedPayment>
+                                    <AcceptedPayment>
+                                        <PaymentCard CardCode = "VI"/>
+                                    </AcceptedPayment>
+                                    <AcceptedPayment>
+                                        <PaymentCard CardCode = "AX"/>
+                                    </AcceptedPayment>
+                                    <AcceptedPayment>
+                                        <PaymentCard CardCode = "CA"/>
+                                    </AcceptedPayment>
+                                    <AcceptedPayment>
+                                        <PaymentCard CardCode = "DS"/>
+                                    </AcceptedPayment>
+                                    <AcceptedPayment>
+                                        <PaymentCard CardCode = "L"/>
+                                    </AcceptedPayment>
+                                    <AcceptedPayment>
+                                        <PaymentCard CardCode = "EU"/>
+                                    </AcceptedPayment>
                                 </AcceptedPayments>
                             </GuaranteePayment>
-                            <GuaranteePayment PaymentCode="ArrivalDatePayment">
+                            <GuaranteePayment PaymentCode = "ArrivalDatePayment">
                                 <AcceptedPayments>
-				    <AcceptedPayment>
-				      <PaymentCard CardCode="VI" />
-				    </AcceptedPayment>
-				    <AcceptedPayment>
-				      <PaymentCard CardCode="AX" />
-				    </AcceptedPayment>
-				    <AcceptedPayment>
-				      <PaymentCard CardCode="CA" />
-				    </AcceptedPayment>
-				    <AcceptedPayment>
-				      <PaymentCard CardCode="DS" />
-				    </AcceptedPayment>
-				    <AcceptedPayment>
-				      <PaymentCard CardCode="L" />
-				    </AcceptedPayment>
-				    <AcceptedPayment>
-				      <PaymentCard CardCode="EU" />
-				    </AcceptedPayment>
+                                    <AcceptedPayment>
+                                        <PaymentCard CardCode = "VI"/>
+                                    </AcceptedPayment>
+                                    <AcceptedPayment>
+                                        <PaymentCard CardCode = "AX"/>
+                                    </AcceptedPayment>
+                                    <AcceptedPayment>
+                                        <PaymentCard CardCode = "CA"/>
+                                    </AcceptedPayment>
+                                    <AcceptedPayment>
+                                        <PaymentCard CardCode = "DS"/>
+                                    </AcceptedPayment>
+                                    <AcceptedPayment>
+                                        <PaymentCard CardCode = "L"/>
+                                    </AcceptedPayment>
+                                    <AcceptedPayment>
+                                        <PaymentCard CardCode = "EU"/>
+                                    </AcceptedPayment>
                                 </AcceptedPayments>
                             </GuaranteePayment>
                         </PaymentPolicies>
@@ -187,7 +188,7 @@ Providers send a HotelRatePlanInventoryNotifRQ message to push the Hotel SetUp i
                             </Description>
                         </GuestRoom>
                     </SellableProduct>
-                    <SellableProduct InvCode = "JSUIT" InvType = "ROOM" InvStatusType = "Active" InvNotifType = "New"> 
+                    <SellableProduct InvCode = "JSUIT" InvType = "ROOM" InvStatusType = "Active" InvNotifType = "New">
                         <GuestRoom>
                             <Quantities StandardNumBeds = "2"/>
                             <Occupancy MinOccupancy = "3" MaxOccupancy = "3" AgeQualifyingCode = "10"/>
@@ -198,15 +199,15 @@ Providers send a HotelRatePlanInventoryNotifRQ message to push the Hotel SetUp i
                         </GuestRoom>
                     </SellableProduct>
                 </SellableProducts>
-		        <Taxes>
-		            <Tax Amount = "20" ChargeFrequency = "PerNight" ChargeUnit = "">
-			            <TaxDescription>
-			            <Text>city</Text>
-			            </TaxDescription>
-		            </Tax>
-		        </Taxes>
+                <Taxes>
+                    <Tax Amount = "20" ChargeFrequency = "PerNight" ChargeUnit = "">
+                        <TaxDescription>
+                            <Text>city</Text>
+                        </TaxDescription>
+                    </Tax>
+                </Taxes>
                 <AdditionalDetails>
-                    <AdditionalDetail Code="REP" Type="39">
+                    <AdditionalDetail Code = "REP" Type = "39">
                         <DetailDescription>
                             <Text>Repsol</Text>
                         </DetailDescription>
@@ -228,7 +229,6 @@ Providers send a HotelRatePlanInventoryNotifRQ message to push the Hotel SetUp i
         </TPA_Extensions>
     </request>
 </HotelRatePlanInventoryNotif>
-
 ~~~
 
 
@@ -309,7 +309,9 @@ Providers send a HotelRatePlanInventoryNotifRQ message to push the Hotel SetUp i
 | @PromotionCode        				    | 0..1	 | String     | Promotion code to apply. 0 - NoPromotion, 25 - Senior55  26 - Senior60, 27 - Senior65. If the attribute is not present and it is a Base rate there is no promotion code (same as sent 0), but if it is a derived rate, this inherits de base rate promotion.|
 | @FreeBaby        				    | 1	 | Boolean     | Free babies promotion|
 | @FreeChild        				    | 1	 | Boolean     | Free children promotion |
-| RatePlans/BookingRules		    | 0..1       |	    | Present if exists booking rules for the given RatePlan.|
+| RatePlan/Commission            	    | 0..1    |	         |                                                                       |
+| @Percent           	                | 1       |Decimal	 | Commission percentage applied                                          |
+| RatePlan/BookingRules		    | 0..1       |	    | Present if exists booking rules for the given RatePlan.|
 | BookingRules/BookingRule		    | 1..n       |	    | Booking rules.					|
 | @Code       				    | 0..1	 | String   | Code of the booking rule (empty if are viewships conditions). |
 | BookingRule/CancelPenalties		    | 1          | 	    | Cancel penalties of the current booking rule.	|

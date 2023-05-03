@@ -22,6 +22,8 @@ In this section, you will find some details to take into account to develop Chan
 
 All requests are expected to be standard HTTP POST requests in which the POST body is the request XML in a SOAP envelope like the [following](#soap-envelope-example) and the **Content-Type** header is set to ``"text/xml;charset=UTF-8"``.
 
+By default, the requests are not compressed, but you can choose the following compression `gzip`, `deflate` and `br`, let us know if you want to receive the requests compressed.
+
 
 ### SOAPAction header
 
@@ -130,6 +132,7 @@ On the the following specification you can find the following acronyms:
 
 BR = Only used for: 'Basic Rates'\
 DV = Only used for: 'Derived Rates'\
+OF = Only used for: 'Offers'\
 N = Names allowed for a specific element
 
 
@@ -142,6 +145,7 @@ The ``HotelRatePlanInventoryNotif`` message contains information about the inven
     <request PrimaryLangID = "ES" Version = "0">
         <RatePlans HotelCode = "1" HotelStatusType = "Active" xmlns = "http://www.opentravel.org/OTA/2003/05">
             <RatePlan Duration = "0" CurrencyCode = "EUR" RatePlanCode = "BAR" FreeChild = "true" FreeBaby = "false" RatePlanStatusType = "Active" RatePlanNotifType = "New" YieldableIndicator="true" RatePlanType = "0">
+                <Commission Percent="10"/>
                 <BookingRules>
                     <BookingRule>
                         <CancelPenalties>
@@ -221,6 +225,13 @@ The ``HotelRatePlanInventoryNotif`` message contains information about the inven
                         </TaxDescription>
                     </Tax>
                 </Taxes>
+                <AdditionalDetails>
+                    <AdditionalDetail Code = "REP" Type = "39">
+                        <DetailDescription>
+                            <Text>Repsol</Text>
+                        </DetailDescription>
+                    </AdditionalDetail>
+                </AdditionalDetails>
                 <Description>
                     <Text>bb</Text>
                 </Description>
@@ -309,6 +320,8 @@ The ``HotelRatePlanInventoryNotif`` message contains information about the inven
 | @End        				          | 0..1	  | Date     | Booking Start Date for which the rate will be available.               |
 | @RatePlanType        				  | 0..1	  | String     | Rate rule to apply. 0 - No selected, 7 - Large Family, 8 - Public Servant, 10 - Negotiated, 11 - Package, 34 - Canary Resident, 35 - Balearic Resident, 36 - Honeymoon. If the attribute is not present and it is a base rate, the value is 0, if it is a derived rate, the value is the same as the parent rate.               |
 | @PromotionCode        				    | 0..1	 | String     | Promotion code to apply. 0 - NoPromotion, 25 - Senior55  26 - Senior60, 27 - Senior65. If the attribute is not present or its value is 0 there is no promotion|
+| RatePlan/Commission            	    | 0..1    |	         |                                                                       |
+| @Percent           	                | 1       |Decimal	 | Commission percentage applied                                          |
 | RatePlan/BookingRules            	    | 0..1    |	         |                                                                       |
 | ../BookingRule		                | 1..n    |	         | 					                                                             |
 | @Code       				          | 0..1	  | String   | Empty if there are viewerships conditions                               |
@@ -405,6 +418,12 @@ The ``HotelRatePlanInventoryNotif`` message contains information about the inven
 | @DiscountPattern              | 1       | String    | *N*: First, Last, Cheapest. Booking night/s the offer will dicount   |
 | ../OfferDescription                          | 0..1       |     | Offer description                         
 | ../Text                          | 1       | String    |                                                      |
+| RatePlan/AdditionalDetails | 0..1 |  | Rate plan additional details |
+| ../AdditionalDetail | 0..n |  | List of additional details |
+| @Code | 1 | String | Trading partner code associated with the detail |
+| @Type | 1 | String | Define the information. Only allowed "39" (Contract/negotiated booking information)|
+| ../DetailDescription | 1 |  | Details Description |
+| ../Text | 1 | String | Description. If additional details type is "39", the name of the trading partner for this rate.  |
 | ../TPA_Extensions			   	      | 0..1    |		        | Only added when creating or deleting a hotel                 |
 | ../TPA_Extensions/Attribute      | 1       |		        |							                                                         |
 | @key        			            | 1  		  | String	  | *N*: HotelNotifType						                                       |
@@ -574,6 +593,30 @@ The ``HotelAvailNotif`` message contains information about rate availability and
     </request>
 </HotelAvailNotif>
 ```
+<br/>
+
+**Example for Offers**
+```xml
+<HotelAvailNotif>
+    <request>
+        <POS>
+            <Source>
+                <RequestorID ID = "Provider1"></RequestorID>
+                <BookingChannel>
+                    <CompanyName Code = "ClientTravelAgency1"></CompanyName>
+                </BookingChannel>
+            </Source>
+        </POS>
+        <AvailStatusMessages HotelCode = "12">
+            <AvailStatusMessage>
+                <StatusApplicationControl Start = "2013-12-20" End = "2013-12-21" RatePlanCode = "LOWCOST" PromotionCode = "OfferCode" Mon = "true" Tue = "true" Weds = "true" Thur = "true" Fri = "true" Sat = "true" Sun = "true"/>
+                <RestrictionStatus Restriction = "Master" Status = "Close"/>
+            </AvailStatusMessage>
+        </AvailStatusMessages>
+    </request>
+</HotelAvailNotif>
+```
+
 
 | **Element**	                  | **Rel** | **Type** | **Description**					                                             |
 | :---------------------------- | :-----: | :------: | --------------------------------------------------------------------- |
@@ -590,6 +633,14 @@ The ``HotelAvailNotif`` message contains information about rate availability and
 | @RatePlanCode				          | 1	      | String	 |                                                       |
 | @InvCode				              | 0..1	  | String	 | *BR*. Room Code		                             |
 | @InvType				              | 0..1	  | String	 | *BR*. *N*: ROOM	                     |
+| @PromotionCode				              | 0..1	  | String	 | *OF*. *N*: Offer Code	                     |
+| @Mon				              | 0..1	  | Boolean	 | If true or attribute is not present, there is availability on Monday.                     |
+| @Tue				              | 0..1	  | Boolean	 | If true or attribute is not present, there is availability on Tuesday.                   |
+| @Weds				              | 0..1	  | Boolean	 | If true or attribute is not present, there is availability on Wednesday.                   |
+| @Thur				              | 0..1	  | Boolean	 | If true or attribute is not present, there is availability on Thurday.                   |
+| @Fri				              | 0..1	  | Boolean	 | If true or attribute is not present, there is availability on Friday.                   |
+| @Sat				              | 0..1	  | Boolean	 | If true or attribute is not present, there is availability on Saturday.                   |
+| @Sat				              | 0..1	  | Boolean	 | If true or attribute is not present, there is availability on Sunday.                   |
 | AvailStatusMessage/LengthsOfStay                 | 0..1    |	         |							                                                         |
 | @ArrivalDateBased			        | 0..1	  | Boolean	 | **true**: the Minimum and Maximum Stay is checked ONLY the first day of the availability. **false or null**: the Minimum and Maximum Stay is checked all the availability days. If both values are needed, two AvailStatusMessage will be sent. |
 | ../LengthOfStay                  | 1..2    |         |						                                                             |

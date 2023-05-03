@@ -61,7 +61,7 @@ tags = ["products-changelog"]
 {{% release-notes-container type="a"%}}
 - New field in book, cancel and booking respone. booking/billingSupplierCode.
 - New blacklist file format. The values has changed to allow new features. You can see the documentation [here](https://docs.travelgatex.com/connectiontypesbuyers/hotel-x/plugins/black-list/). 
-- New field for the commision file. Now you can put clienToken for each rule. You can see the documentation [here](https://docs.travelgatex.com/connectiontypesbuyers/hotel-x/plugins/net-price/). 
+- New field for the commission file. Now you can put clienToken for each rule. You can see the documentation [here](https://docs.travelgatex.com/connectiontypesbuyers/hotel-x/plugins/net-price/). 
 - Internal system improvements. 
 {{% /release-notes-container %}}
 
