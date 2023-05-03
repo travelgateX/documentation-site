@@ -9,7 +9,7 @@ isDirectory=false
 +++
 
 
-# How to add a provider
+# How to add a room
 
 </br>
 
@@ -17,15 +17,15 @@ isDirectory=false
   
 It is an incremental load, so bear in mind these considerations:
     
-* If a meal plan exists then it is updated.
+* If a room exists then it is updated.
 
-* If a meal plan does not exist then it is created.
+* If a room does not exist then it is created.
 
-* Existing meal plans that are not referenced are not removed.
+* Existing rooms that are not referenced are not removed.
 
-* If an existing meal plan has to be removed from system then you have to contact with TravelgateX.
+* If an existing room has to be removed from system then you have to contact with TravelgateX.
 
-* If there is any problem with a meal plan's information then it is omitted (and logged) but the load continues.
+* If there is any problem with a room's information then it is omitted (and logged) but the load continues.
 
 </br>
 
