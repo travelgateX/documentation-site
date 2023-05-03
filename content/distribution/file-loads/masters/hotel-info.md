@@ -15,13 +15,13 @@ isDirectory=false
   
 It is an incremental load, so bear in mind these considerations:
     
-* If a hotels exists then it is updated.
+* If a hotel info exists then it is updated.
 
-* If a hotel does not exist then it is created.
+* If a hotel info does not exist then it is created.
 
-* Existing hotel that are not referenced are not removed.
+* Existing hotels info that are not referenced are not removed.
 
-* If an existing hotel has to be removed from system then you have to contact with TravelgateX.
+* If an existing hotel info has to be removed from system then you have to contact with TravelgateX.
 
 * If there is any problem with a hotel's information then it is omitted (and logged) but the load continues.
 
