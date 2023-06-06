@@ -10,9 +10,9 @@
 "gists": [
     {
         "n":"1 Room",
-        "g":"fb4cf9773a63b7bf222011c211de6b4a",
+        "g":"deacdd9a1c3d28ceb99dcc080aa65910",
         "o":["graphiql"],
-        "u":"xsolano",
+        "u":"tgx-bot",
         "ak":"8626cf56-e364-4fd1-4fe0-311e23ac6355"
     }
         ]
@@ -40,6 +40,8 @@ We recommend to set it to "true" for possible claiming purposes with the supplie
 4. ***PENDING_COMMIT***: The payment has been confirmed in provider's side, but is necessary to make a commit in order to confirm the reservation.  .{{% /alert %}}
 
 ## How to confirm a reservation
+
+{{% alert theme="info" %}} Make sure to change the value of the "clientReference" field so that the Book can be confirmed correctly .{{% /alert %}}
 
 {{% graphiql-tabs %}}
 

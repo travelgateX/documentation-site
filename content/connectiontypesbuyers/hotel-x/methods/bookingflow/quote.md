@@ -10,9 +10,9 @@
 "gists": [
     {
         "n":"1 Room",
-        "g":"9dbea409d3b01ed457754dd5f4d35ce5",
+        "g":"f1b36786ec86f488c69e096b08e9c958",
         "o":["graphiql"],
-        "u":"xsolano",
+        "u":"tgx-bot",
         "ak":"8626cf56-e364-4fd1-4fe0-311e23ac6355"
     }
         ]
