@@ -10,23 +10,23 @@
 "gists": [
     {
         "n":"By Dates",
-        "g":"310e5aab39ae09ddb5ba06cbaae8bcb6",
+        "g":"84bbc88b7c79cdd6938e4e247cd62282",
         "o":["graphiql"],
-        "u":"xsolano",
+        "u":"tgx-bot",
         "ak":"8626cf56-e364-4fd1-4fe0-311e23ac6355"
     }, 
     {
         "n":"By Reference",
-        "g":"cca5c85b0cd1be29f86a67ecf38bb75a",
+        "g":"192f710296322616e3c38a5bf9caf459",
         "o":["graphiql"],
-        "u":"xsolano",
+        "u":"tgx-bot",
         "ak":"8626cf56-e364-4fd1-4fe0-311e23ac6355"
     },
     {
         "n":"By BookingID",
-        "g":"af8923db89312e8f2cd85ed063b2fc15",
+        "g":"a913a1d40212b6cab1ba3cb9192cb3dc",
         "o":["graphiql"],
-        "u":"xsolano",
+        "u":"tgx-bot",
         "ak":"8626cf56-e364-4fd1-4fe0-311e23ac6355"
     }
         ]
@@ -55,6 +55,9 @@ There are three different types of booking search:
 * By bookingID
 
 ## How to request
+
+{{% alert theme="info" %}} Remember to provide updated information for Booking requests .{{% /alert %}}
+
 {{% graphiql-tabs %}}
 
 cca5c85b0cd1be29f86a67ecf38bb75a

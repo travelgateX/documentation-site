@@ -9,30 +9,30 @@
 "gists": [
     {
         "n":"1 Room - 2 Adults",
-        "g":"765fa8dbddd6a17571feb012f9c876bc",
+        "g":"3cdf31ad2da2f1950338a14193e76ab2",
         "o":["graphiql"],
-        "u":"rubencaballero",
+        "u":"tgx-bot",
         "ak":"8626cf56-e364-4fd1-4fe0-311e23ac6355"
     }, 
     {
         "n":"1 Room - 2 Adults 1 Child",
-        "g":"16c1401dff3146bd4685c1a018dce96a",
+        "g":"8be4328a99cd4310f58418f5131a038c",
         "o":["graphiql"],
-        "u":"rubencaballero",
+        "u":"tgx-bot",
         "ak":"8626cf56-e364-4fd1-4fe0-311e23ac6355"
     },
     {
         "n":"2 Rooms - 2 Adults + 2 Adults",
-        "g":"b5db36ad7084adbdf100c9b4491d7d43",
+        "g":"eee8e0b4cf1297803eb6e030c58b208f",
         "o":["graphiql"],
-        "u":"rubencaballero",
+        "u":"tgx-bot",
         "ak":"8626cf56-e364-4fd1-4fe0-311e23ac6355"
     },
     {
         "n":"2 Rooms - 2 Adults 1 Child + 2 Adults",
-        "g":"f8a762bb1efc34f2ff61dd7929d7aa10",
+        "g":"a356ad77fadf8231f69c6515ef2317b4",
         "o":["graphiql"],
-        "u":"rubencaballero",
+        "u":"tgx-bot",
         "ak":"8626cf56-e364-4fd1-4fe0-311e23ac6355"
     }
  ]
