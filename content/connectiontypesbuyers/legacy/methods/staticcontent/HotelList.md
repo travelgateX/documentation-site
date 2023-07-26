@@ -161,8 +161,8 @@ The **ContinuationToken** can be used in this request - the specification can be
 | @code      				| 1    		| String	| Destination code.						|
 | @name      				| 1    		| String	| Destination name.						|
 | @avail      				| 1    		| Boolean	| Indicates if it is allowed in availability.		|
-| Latitude   				| 0..1    		| String	| Latitude.							|
-| Longitude  				| 0..1    		| String	| Longitude.							|
+| Latitude   				| 0..1    		| String	| Latitude.	Format is Decimal Degrees (e.g., 37.207295).								|
+| Longitude  				| 0..1    		| String	| Longitude. Format is Decimal Degrees (e.g., -7.23768).							|
 | Contact /    				| 0..1          	|		| Contact.							|
 | Contact /Email				| 0..1    		| String	| Email.							|
 | Contact /Telephone			| 0..1    		| String	| Telephone.							|
