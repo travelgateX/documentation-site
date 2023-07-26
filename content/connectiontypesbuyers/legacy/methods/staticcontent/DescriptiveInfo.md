@@ -324,8 +324,8 @@ is **180000** milliseconds.
 | @code      				                            | 1    		 | String	    | Destination code.						                                                |
 | @name      				                            | 1    		 | String	    | Destination name.						                                                |
 | @avail     				                            | 1    		 | Boolean	    | Indicates if the code can be used in Avail.                                           |
-| Latitude   				                            | 0..1    	 | String	    | Latitude.							                                                    |
-| Longitude  				                            | 0..1    	 | String	    | Longitude.							                                                |
+| Latitude   				                            | 0..1    	 | String	    | Latitude.	Format is Decimal Degrees (e.g., 37.207295).							                                                    |
+| Longitude  				                            | 0..1    	 | String	    | Longitude. Format is Decimal Degrees (e.g., -7.23768).							                                                |
 | Contact/   				                            | 0..1       |		        | Hotel contact information.							                                |
 | Contact/ Email				                        | 1    		 | String	    | Email.							                                                    |
 | Contact/ Telephone			                        | 1    		 | String	    | Telephone.							                                                |
