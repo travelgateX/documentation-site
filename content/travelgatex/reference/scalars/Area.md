@@ -1,6 +1,6 @@
 {
   "title": "Area",
-  "description": "",
+  "description": "Without any examples in the data, I can't update this - currently assuming this is a double?",
   "weight": 1,
   "fields": null,
   "requireby": [
