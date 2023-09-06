@@ -59,7 +59,7 @@ tags = ["products-changelog"]
 ## 2019-11-28
 {{% release-notes-container type="a"%}}
 - Added new value `PAYX` to `PaymentType` enum (search).
-- We've launched a new plugin called `Virtual Credit Card Generator` which adds the possibility to create a virtual credit card at Book step, in order to pay the reservation’s import with it. You can see the documentation [here](https://docs.travelgatex.com/connectiontypesbuyers/hotel-x/plugins/vcc_gen/).
+- We've launched a new plugin called `Virtual Credit Card Generator` which adds the possibility to create a virtual credit card at Book step, in order to pay the reservation’s import with it. You can see the documentation [here](https://docs.travelgatex.com/connectiontypesbuyers/hotel-x/plugins/vcc/).
 
 ~~~json
 {
