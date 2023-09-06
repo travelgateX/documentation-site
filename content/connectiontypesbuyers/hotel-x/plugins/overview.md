@@ -69,7 +69,7 @@ Plugin types supported by [HotelX](/hotel-x/):
 * [market_groupX](../markets_groups): Groups the Search result by markets that share the same product.
 * [preference](../preference): To give preference to the options that match the preference rules.
 * [safety_margin](../safety_margin): Discards those options that have a commission higher than expected.
-* [genvcc](../vcc_gen): Creates a virtual credit card at Book step.
+* [virtual_credit_card](../vcc): Allows creating and cancelling virtual credit cards and use it booking-flow process.
 
 ### Plugin Context Execution
 
@@ -87,7 +87,7 @@ _Context_ allows:
 
 | | **search** | **quote** | **hotelBook** | **hotelCancel** | **hotelBooking** |
 | --- | --- | --- | --- | --- | --- |
-| _Request_ | [PRE_STEP]<br>[HOTEL_MAP](../mapping)<br>[POST_STEP]|[PRE_STEP]<br>[POST_STEP]|[PRE_STEP]<br>[booking_detail_persistence](../booking_persistence)<br>[genvcc](../vcc_gen)<br>[POST_STEP]|[PRE_STEP] <br>[POST_STEP]|[PRE_STEP] <br>[POST_STEP]|[PRE_STEP] <br>[POST_STEP]|
+| _Request_ | [PRE_STEP]<br>[HOTEL_MAP](../mapping)<br>[POST_STEP]|[PRE_STEP]<br>[POST_STEP]|[PRE_STEP]<br>[booking_detail_persistence](../booking_persistence)<br>[genvcc](../vcc)<br>[POST_STEP]|[PRE_STEP] <br>[POST_STEP]|[PRE_STEP] <br>[POST_STEP]|[PRE_STEP] <br>[POST_STEP]|
 | _Request Access_ | [PRE_STEP]<br>[add_parameterX](../add_parameterx)<br>[MARKETS_GROUP](../markets_groups)<br>[blacklist](../black-list)<br>[POST_STEP] |[PRE_STEP]<br>[add_parameterX](../add_parameterx)<br>[POST_STEP]|[PRE_STEP]<br>[add_parameterX](../add_parameterx)<br>[POST_STEP]|[PRE_STEP]<br>[add_parameterX](../add_parameterx)<br>[POST_STEP]|[PRE_STEP]<br>[add_parameterX](../add_parameterx)<br>[POST_STEP]|
 | _Response Option_ |[PRE_STEP]<br>[BOARD_MAP](../mapping)<br>[ROOM_MAP](../mapping)<br>[AMENITY_MAP](../mapping)<br>[PROMOTION_MAP](../mapping)<br>[CURRENCY_CONVERSION](../converter)<br>[COMMISSION](../net-price)<br>[safety_margin](../safety_margin)<br>[POST_STEP]| [PRE_STEP][CURRENCY_CONVERSION](../converter)<br>[COMMISSION](../net-price)<br>[POST_STEP]|[PRE_STEP]<br>[CURRENCY_CONVERSION](../converter)<br>[COMMISSION](../net-price)<br>[POST_STEP] |[PRE_STEP]<br>[CURRENCY_CONVERSION](../converter)<br>[COMMISSION](../net-price)<br>[POST_STEP]|[PRE_STEP]<br>[CURRENCY_CONVERSION](../converter)<br>[COMMISSION](../net-price)<br>[POST_STEP]|
 | _Response_ |[PRE_STEP]<br>[AGGREGATION](../aggregation)<br>[preference](../preference)[POST_STEP]|[PRE_STEP] <br>[POST_STEP]|[PRE_STEP] <br>[POST_STEP]|[PRE_STEP] <br>[POST_STEP]|[PRE_STEP] <br>[POST_STEP]|
