@@ -38,3 +38,4 @@ isDirectory = false
 | 259      | All Inclusive Light			    |
 | 260      | Bed and breakfast + Half board     |
 | 261      | All Inclusive Limited              |
+| 262      | Bed and Brunch             |
