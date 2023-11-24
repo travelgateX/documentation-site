@@ -185,8 +185,8 @@ Providers will send a HotelRatePlanNotifRQ message to push Rate Plans to sellers
 | @InvCode				| 1	    | String	| OTA MPT Code if @SupplementType is Board. 		|
 | RatePlans/RatePlan/SellableProducts	| 0..1	    |		| List of sellable products. Null for derived rates. 	|
 | RatePlans/SellableProducts/SellableProduct | 1..n |		|							|
-| @InvCode				| 1	    | Integer	| Sellable Product Code.				|
-| @InvType				| 1	    | Integer	| Sellable product type (ROOM).				|
+| @InvCode				| 1	    | String	| Sellable Product Code.				|
+| @InvType				| 1	    | String	| Sellable product type (ROOM).				|
 
 
 
